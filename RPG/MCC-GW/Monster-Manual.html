@@ -87,7 +87,7 @@ layout: null
 						<h2 id="details{{forloop.index}}">{{ Monster.Name }} {{ Monster.Common_Name }}</h2>
 					{% endif %}
 
-					<img style="float: right;" src="https://www.tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ Monster.Name }}.png" width="25%" onError="this.onerror=null;this.src='https://www.tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
+					<img style="float: right;" src="https://www.tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ Monster.Name }}.png" height="200" onError="this.onerror=null;this.src='https://www.tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
 
 					{% if Monster.Author != "" %}
 						<strong>Reported By:</strong> {{ Monster.Author }}
