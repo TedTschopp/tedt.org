@@ -1,5 +1,5 @@
 ---
-title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World does Alignment
+title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does Alignment
 date: 2018-11-19T21:04:42-07:00
 author:
   name: Ted Tschopp
@@ -12,8 +12,8 @@ excerpt: |
 
 layout: post
 guid: 70784432-5397-425b-88f9-b18292b6afed
-permalink: /2022/04/24/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/
-image: 	/wp-content/uploads/2018/05/community-life.png
+permalink: /2022/04/24/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-Does-Alignment/
+image: 	/wp-content/uploads/2022/04/24/community-life.png
 image-credits: Art from Gamma World 6th Edition
 categories:
   - Role Playing Games
