@@ -58,13 +58,13 @@ layout: null
 				</ol>
                 <hr>
 
-				{% for Story in sorted_SwissStories %}
-					<h2><a id="details{{Story.Count}">{{ Story.Title1 }}</a></h2>
-                    <h3> {{ Story.Field1</h3>
-                    <p> Source: {{ Story.Title }}</p>
-                    <p> Category: {{ Story.Fiel2 }} </p>
-                    <p> Category: {{ Story.Fiel2 }} </p>
-                    <p> {{ Story.Text }} </p>
+				{% for Story-details in sorted_SwissStories %}
+					<h2><a id="details{{Story.Count}">{{ Story-details.Title1 }}</a></h2>
+                    <h3> {{ Story-details.Field1</h3>
+                    <p> Source: {{ Story-details.Title }}</p>
+                    <p> Category: {{ Story-details.Fiel2 }} </p>
+                    <p> Category: {{ Story-details.Fiel2 }} </p>
+                    <p> {{ Story-details.Text }} </p>
                     <hr>
 
 				{% endfor %}
