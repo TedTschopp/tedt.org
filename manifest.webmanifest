@@ -4,6 +4,7 @@
 	"launch_path": "/index.html",
 	"description": "Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet",
 	"icons":
+
 	{
 	  "36": "/img/android-chrome-36x36.png",
 	  "48": "/img/android-chrome-48x48.png",
@@ -20,14 +21,17 @@
 	  "256": "/img/android-chrome-256x256.png",
 	  "512": "/img/android-chrome-512x512.png"
 	},
+
 	"developer":
 	{
 	  "name": "Ted Tschopp",
 	  "url": "https://tedt.org"
 	},
+
 	"installs_allowed_from": [
 	  "*"
 	],
+
 	"default_locale": "en",
 	"permissions":
 	{},
