@@ -1,0 +1,84 @@
+---
+layout: null
+---
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Stories of Switzerland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://www.tedt.org/css/gamma-world-cards.css" rel="stylesheet">
+
+    <style type="text/css">
+        
+        a[hreflang]:after { 
+            content: " [" attr(linkstatus) "]"; 
+            color: #999;
+            vertical-align: super;
+            font-size: 70%;
+            } 
+
+    </style>
+
+    <script src="https://www.tedt.org/js/jscii.js"></script>
+
+</head>
+
+<body>
+    <Table>
+        <tr>
+            <td id=papermargin_left>
+            </td>
+            <td id="paper_printarea" class="tech-v">
+                <p><a href="https://www.tedt.org/RPG/MCC-GW/">Back</a></p>
+                <figure>
+                    <img class="img-responsive img-thumbnail" src="https://www.tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
+                    <pre id="ascii-container-image"></pre>
+                    <figcaption>Stories of Switzerland</figcaption>
+                </figure>
+
+			<h1>The Stories of Switzerland:</h1>
+				{% assign sorted_SwissStories = site.data.swiss-stories %}
+
+				{% comment %}
+				{% assign sorted_SwissStories = site.data.SwissStories.Creatures | sort: 'Name' %}
+				{% endcomment %}
+
+                {% for Story in sorted_SwissStories %}
+                    <h2>{{ Story.Title1 }} by {{ Story.Title }}</h2>
+                    <h3> {{ Story.Field1 }}</h3>
+                    <p> Source: {{ Story.Title }}</p>
+                    <p> Category: {{ Story.Fiel2 }} </p>
+                    <p> {{ Story.Text }} </p>
+                    <hr>
+				{% endfor %}
+
+                <hr>
+
+				{% for Story-details in sorted_SwissStories %}
+
+				{% endfor %}
+
+
+
+			</td>
+            <td id="papermargin_right">
+            </td>
+        </tr>
+    </Table>
+    <script>
+        // put in the image
+        var imgJscii = new Jscii({
+            width: 150,
+            color: true,
+            el: document.getElementById('jscii-element-image'),
+            fn: function(str) {
+                document.getElementById('ascii-container-image').innerHTML = str;
+            }
+        });
+        document.getElementById('jscii-element-image').style.display = 'none';
+    </script>
+</body>
