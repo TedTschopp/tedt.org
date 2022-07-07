@@ -4,8 +4,8 @@ date: 2018-10-14T17:37:12-07:00
 update: 2018-10-14T16:44:34-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    The following is a conversion of rules for Gamma World's Traditional weapons in Mutant Crawl Classic.  

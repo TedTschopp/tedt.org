@@ -4,8 +4,8 @@ title: Collaboration Lessons Learned from Tasmania
 date: 2011-06-03T16:35:45+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 139343f6-841a-48c8-b020-30fe8b70e885

@@ -4,8 +4,8 @@ title: Another Idea for a Tool
 date: 2007-03-15T18:34:40+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: b448cf2f-3b0f-4549-8a5a-055ec6845b2e

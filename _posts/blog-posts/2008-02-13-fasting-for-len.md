@@ -4,8 +4,8 @@ title: Fasting for Lent
 date: 2008-02-13T16:15:39+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 4c5c466f-239b-479f-a36f-9084f3688e4f

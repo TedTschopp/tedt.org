@@ -4,8 +4,8 @@ title: Hell and Christianity
 date: 2005-10-24T14:05:54+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 25d4365c-1bb8-474b-ba52-56622b8ea9c3

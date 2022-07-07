@@ -3,8 +3,8 @@ title: Of Maps and Monsters, the Right way to Populate a World Part I
 date: 2018-05-11T21:04:42-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: 
 excerpt: |

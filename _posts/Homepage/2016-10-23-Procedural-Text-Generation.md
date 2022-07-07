@@ -5,8 +5,8 @@ title-url: https://tedtschopp.github.io/randomtables/
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    An application that generates text using procedural methods. 
@@ -25,7 +25,7 @@ image: /img/Text-Generation.jpg
 image-credits: Text Generation Code by Ted Tschopp
 image-credits-title: Text Generation Code
 image-credits-artist: Ted Tschopp
-image-credits-URL: https://www.tedt.org
+image-credits-URL: https://tedt.org
 categories: home
 order: 7
 ---

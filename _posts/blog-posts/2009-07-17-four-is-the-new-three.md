@@ -4,8 +4,8 @@ title: Four is the new Three
 date: 2009-07-17T11:50:58+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 9b29b1f8-66f5-435b-a0a6-36b104dc6f82

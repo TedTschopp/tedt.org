@@ -4,8 +4,8 @@ date: 2018-07-27T17:37:12-07:00
 update: 2018-07-28T16:44:34-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    During the days of Tech Level VI, a lot of time was spent by Artificial Intelligences and bioengineers to come up with ways to modify humans, animals, and plants.  During this time all sort of transhumanism and animal / plant uplifting took place.  After the cataclysm many of these strains granted their species advantages in survival.   The following attempts to recreate the understanding these people had and make sense of this information.

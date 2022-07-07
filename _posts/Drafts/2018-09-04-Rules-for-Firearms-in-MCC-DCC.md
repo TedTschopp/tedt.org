@@ -4,8 +4,8 @@ date: 2018-09-04T17:37:12-07:00
 update: 2018-09-04T16:44:34-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    The following rules are what I have collected from around the internet for the use of firearms in MCC & DCC.  I will be playtesting these by converting a Gamma World module to MCC. 

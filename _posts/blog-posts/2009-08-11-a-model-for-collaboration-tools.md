@@ -4,8 +4,8 @@ title: A Model for Collaboration Tools
 date: 2009-08-11T15:09:58+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: d2917662-5d88-4ebb-8b7a-f4c86949bec0

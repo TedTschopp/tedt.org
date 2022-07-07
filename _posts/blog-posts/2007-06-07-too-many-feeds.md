@@ -4,8 +4,8 @@ title: Too many feeds
 date: 2007-06-07T18:53:36+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 064921a7-6a93-4047-a8a5-47d924cbbf95

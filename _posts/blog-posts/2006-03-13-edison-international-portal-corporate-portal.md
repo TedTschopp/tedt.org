@@ -4,8 +4,8 @@ title: Edison International Portal - Corporate Portal
 date: 2006-03-13T16:55:12+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 28f59393-e650-4af3-a324-02a9b137ac50

@@ -4,8 +4,8 @@ title: Playing it Cool, Playing it Fast!
 date: 2006-12-27T23:50:07+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 766623be-b111-4258-9a8c-061ece6cadc0

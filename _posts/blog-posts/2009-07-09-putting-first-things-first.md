@@ -4,8 +4,8 @@ title: Putting First Things First
 date: 2009-07-09T10:48:39+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 39d83599-6538-47bf-ad4b-415a0426b359

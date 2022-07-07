@@ -4,8 +4,8 @@ title: Corporate Intranet Redesign
 date: 2004-03-13T16:58:14+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 4cd4ec68-a79c-40b8-b85f-52d77fbfcab6

@@ -3,8 +3,8 @@ title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World 
 date: 2022-04-24T17:42:44-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: 
 excerpt: |

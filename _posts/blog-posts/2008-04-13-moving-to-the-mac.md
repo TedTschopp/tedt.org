@@ -4,8 +4,8 @@ title: Moving to the Mac
 date: 2008-04-13T22:54:26+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: d1449d92-cde6-40f3-a68c-532d2d5fdcd3

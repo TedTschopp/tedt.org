@@ -4,8 +4,8 @@ title: Shadows and Symbols
 date: 2006-12-20T11:32:34+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 9b6eda43-2311-4038-afa0-4106bc4ab8c5

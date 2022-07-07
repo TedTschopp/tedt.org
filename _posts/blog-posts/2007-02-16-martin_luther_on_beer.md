@@ -4,8 +4,8 @@ title: Martin Luther on Beer
 date: 2007-02-16T10:24:23+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 8676f676-eb73-4d6b-977a-b5423ef31059

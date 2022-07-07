@@ -4,8 +4,8 @@ title: Switching from NewGator to Google Reader
 date: 2009-05-27T22:57:46+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: c7bd5507-0ed9-48b7-bef6-ba31a37796fe

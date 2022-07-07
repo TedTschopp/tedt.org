@@ -4,8 +4,8 @@ title: Ideas to Think About - Life and Taxes
 date: 2007-09-26T16:31:50+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: eca1c1ee-efc8-453b-8791-4dc4ca8227bb

@@ -4,8 +4,8 @@ title: HTML5 / JavaScript Version of Windows
 date: 2013-11-27T14:34:55+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 excerpt: |
   What you are seeing is an HTML5 / JavaScript version of Windows 7 running in the cloud they launch Photoshop and then a 3D game using the Unreal tournament engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running in Firefox using just using HTML5 and JavaScript.

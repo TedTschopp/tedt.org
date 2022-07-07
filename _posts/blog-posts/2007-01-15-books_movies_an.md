@@ -4,8 +4,8 @@ title: Books, Movies, and The Children of Men
 date: 2007-01-15T16:51:39+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 97a7bdd5-16ba-47eb-a098-fbf1782f16c2

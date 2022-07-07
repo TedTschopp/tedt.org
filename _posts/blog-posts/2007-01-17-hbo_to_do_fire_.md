@@ -4,8 +4,8 @@ title: HBO to do Fire and Ice series - and George Cloony to do Diamond Age
 date: 2007-01-17T15:23:42+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 7558f4ff-87c8-42c3-89f9-c35fcd4f7156

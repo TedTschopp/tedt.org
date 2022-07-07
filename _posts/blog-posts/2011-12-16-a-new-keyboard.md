@@ -4,8 +4,8 @@ title: A New Keyboard
 date: 2011-12-16T06:34:33+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 2ff999c5-2e4b-4689-85d1-6e24dc035dc1

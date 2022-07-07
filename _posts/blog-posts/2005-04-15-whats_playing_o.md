@@ -4,8 +4,8 @@ title: What's Playing on KROQ
 date: 2005-04-15T09:42:50+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 75ec84d5-052d-4f3d-aea1-60d3846ba921

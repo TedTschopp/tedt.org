@@ -4,8 +4,8 @@ title: Rain in Los Angeles
 date: 2006-12-18T11:28:23+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 5c22a9d8-7406-44f6-984a-3208042ec265

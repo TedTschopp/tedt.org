@@ -4,8 +4,8 @@ title: User Interfaces in 2017
 date: 2012-08-26T17:38:23+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 excerpt: With the release of the Mac Book this year that included a high resolution monitor, I have been thinking a lot about user interfaces and their future.
 

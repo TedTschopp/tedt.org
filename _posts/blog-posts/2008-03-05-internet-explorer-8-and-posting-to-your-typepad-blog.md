@@ -4,8 +4,8 @@ title: Internet Explorer 8 and posting to your Typepad Blog
 date: 2008-03-05T23:55:06+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 89326e70-d65a-4c85-8d88-3caa537e7f5c

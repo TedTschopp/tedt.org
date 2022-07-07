@@ -5,8 +5,8 @@ title-url: http://www.theonering.com/
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.  

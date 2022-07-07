@@ -4,8 +4,8 @@ title: Safari on Windows - Apple's Smart Client Play
 date: 2007-06-19T00:28:18+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: e743c18d-c004-4c15-a657-7c34f32116d8

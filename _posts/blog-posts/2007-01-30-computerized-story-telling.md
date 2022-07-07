@@ -4,8 +4,8 @@ title: Computerized Story Telling
 date: 2007-01-30T00:34:46+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 4ebd6f3b-6d08-44db-8f6d-b1e2920f2049

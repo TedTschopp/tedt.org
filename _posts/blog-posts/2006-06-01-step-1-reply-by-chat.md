@@ -4,8 +4,8 @@ title: Step 1 - Reply by Chat
 date: 2006-06-01T21:33:53+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 199e35fe-9f8f-41b5-a635-0b2e2b0d69e4

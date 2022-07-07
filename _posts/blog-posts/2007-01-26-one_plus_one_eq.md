@@ -4,8 +4,8 @@ title: One Plus One Equals Three for Very Large Values of One
 date: 2007-01-26T12:49:19+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: f90e2057-bc36-4ee5-87c5-bb4835abcd7e

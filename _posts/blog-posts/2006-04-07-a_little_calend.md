@@ -4,8 +4,8 @@ title: A Little Calendar App I'm building
 date: 2006-04-07T17:57:34+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 6aa28676-c0d7-4f35-b348-4258ea3ce342

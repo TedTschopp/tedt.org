@@ -3,8 +3,8 @@ title: Power Cells from Gamma World in MCC & DCC
 date: 2018-11-02T10:37:12-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    The following is an integration of rules for Gamma World's Power Cells with  Mutant Crawl Classic.  

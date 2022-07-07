@@ -4,8 +4,8 @@ title: More on the Switch to my Mac
 date: 2008-03-17T00:19:54+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: fdacab89-38c6-4625-93ff-54094a9fbd56

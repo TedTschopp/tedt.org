@@ -4,8 +4,8 @@ title: The Google Browser/OS
 date: 2004-08-25T16:08:24+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: f3857b90-e751-4853-8f6e-90b936fac80f

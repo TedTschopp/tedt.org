@@ -4,8 +4,8 @@ title: MyEdison.com - Corporate Portal
 date: 2005-03-13T19:37:44+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: ad0ccc7f-87fe-41af-986d-212fc43d4e04

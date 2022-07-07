@@ -4,8 +4,8 @@ title: Program - Currently Listening to now live
 date: 2004-05-21T09:43:20+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 5a3cd62d-c94f-4f67-8504-7dead22e0a28

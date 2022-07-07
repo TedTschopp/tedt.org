@@ -4,8 +4,8 @@ title: More on the Fast for Lent
 date: 2008-02-19T17:45:53+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 5be2c380-c65b-4ca6-957d-7626f2e41a98

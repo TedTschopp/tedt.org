@@ -4,8 +4,8 @@ title: Conference Room Names
 date: 2007-01-29T13:57:08+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 9efa86eb-262d-4e81-b063-244e603a0637

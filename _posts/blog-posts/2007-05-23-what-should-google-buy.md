@@ -4,8 +4,8 @@ title: What Should Google Buy
 date: 2007-05-23T01:51:30+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 976d5096-5387-4179-af9a-6e494b50cb2a

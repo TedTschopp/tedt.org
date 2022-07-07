@@ -4,8 +4,8 @@ title: Enterprise Technology Architect for Digital at Southern California Edison
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    Technology architect responsible SCE's digital portfolio of over 500 properties and $30M annual budget providing strategy, technology road map, and product management for digital solutions.   
@@ -22,10 +22,10 @@ bullets:
 
 guid: 24ccc6a5-f9e8-4278-a610-cd6aabec11d9
 image: /img/web.jpg
-image-credits: Spider's Web with Raindrops by Pexels https://www.tedt.org/img/web.jpg  
+image-credits: Spider's Web with Raindrops by Pexels https://tedt.org/img/web.jpg  
 image-credits-title: Spider's Web with Raindrops
 image-credits-artist: Pexels
-image-credits-URL: https://www.tedt.org/img/web.jpg
+image-credits-URL: https://tedt.org/img/web.jpg
 categories: home
 order: 2
 ---

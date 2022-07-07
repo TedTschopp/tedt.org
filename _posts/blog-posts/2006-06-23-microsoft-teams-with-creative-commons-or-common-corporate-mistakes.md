@@ -4,8 +4,8 @@ title: Microsoft teams with Creative Commons or Common Corporate Mistakes
 date: 2006-06-23T23:50:37+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: b0cd4204-75b3-40ef-b90f-b672c919e4a2

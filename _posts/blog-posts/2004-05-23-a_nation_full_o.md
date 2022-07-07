@@ -4,8 +4,8 @@ title: A Nation Full of Directors
 date: 2004-05-23T10:32:48+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: b5391e04-26d5-43c5-93c9-1932ccd05ae5

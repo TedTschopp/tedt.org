@@ -4,8 +4,8 @@ title: Thoughts on Narrative
 date: 2008-09-01T12:43:02+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 42c85abf-76c2-47b2-b0c9-2130800d2697

@@ -4,8 +4,8 @@ title: Edison.com Redesign - Corporate Website
 date: 2005-03-13T17:06:31+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 6b0aee16-61b3-4f48-9ce6-e4953971b1a5

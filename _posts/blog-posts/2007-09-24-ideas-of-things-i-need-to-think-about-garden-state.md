@@ -4,8 +4,8 @@ title: Ideas of things I need to think about - Garden State
 date: 2007-09-24T18:48:17+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: eeb92c15-7422-41c7-9075-be04e977cf0e

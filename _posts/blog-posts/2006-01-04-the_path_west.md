@@ -4,8 +4,8 @@ title: The Path West
 date: 2006-01-04T14:22:11+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: c46fe241-f632-4429-9b89-bf70b5ea22df

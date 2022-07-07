@@ -4,8 +4,8 @@ title: A Beginning
 date: 2007-01-23T13:54:06+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: f5b58be0-9210-4f82-8d0f-d57a79431df9

@@ -1,5 +1,5 @@
-siteurl: https://www.tedt.org
-#baseurl: https://www.tedt.org/
+siteurl: https://tedt.org
+#baseurl: https://tedt.org/
 
 # Build Settings
 sass:
@@ -16,8 +16,8 @@ owner:
 authors:
   tschopp:
     name: Ted Tschopp
-    url: https://www.tedt.org/
-    avatar: https://www.tedt.org/img/thumb3.jpg
+    url: https://tedt.org/
+    avatar: https://tedt.org/img/thumb3.jpg
     givenname: Ted
     familyname: Tschopp
     othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
@@ -42,8 +42,8 @@ authors:
 
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
   givenname: Ted
   familyname: Tschopp
   othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
@@ -132,7 +132,7 @@ gravatar:
 
 
 # The Logo of the site
-logo: https://www.tedt.org/img/android-chrome-512x512.png
+logo: https://tedt.org/img/android-chrome-512x512.png
 
 # The title tag of the site
 title: Ted Tschopp

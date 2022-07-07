@@ -4,8 +4,8 @@ title: Web Services, Web Services, Web Services
 date: 2007-01-26T15:27:06+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 5076e5bd-f37b-46d6-8381-3b53326a886c

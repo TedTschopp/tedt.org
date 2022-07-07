@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://www.tedt.org/sitemap.xml
+sitemap: https://tedt.org/sitemap.xml

@@ -4,8 +4,8 @@ title: The Purpose of Community - Protection of the Commons
 date: 2010-05-19T10:20:45+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 501175c6-692e-46de-9ae5-ca1b3a4e7690

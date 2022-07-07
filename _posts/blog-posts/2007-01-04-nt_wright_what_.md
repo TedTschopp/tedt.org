@@ -4,8 +4,8 @@ title: What is Christianity?
 date: 2007-01-04T15:53:03+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 excerpt: |
   The following quote is from N.T. Wright and it is his summary of what Christianity is.

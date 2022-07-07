@@ -4,8 +4,8 @@ title: Sex, Gardening, and Science
 date: 2007-01-16T11:10:00+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 2bc2eebf-bfbe-45d6-9bbd-b642cc596694

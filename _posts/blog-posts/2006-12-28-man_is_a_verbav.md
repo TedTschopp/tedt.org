@@ -4,8 +4,8 @@ title: Man is a Verbavore
 date: 2006-12-28T17:55:10+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 30a5a540-3245-4c01-b4f2-050f7c759831

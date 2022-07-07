@@ -4,8 +4,8 @@ title: Privacy Policy
 date: 1993-01-01T08:41:00+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 
 layout: post

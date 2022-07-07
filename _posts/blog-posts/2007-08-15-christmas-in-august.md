@@ -4,8 +4,8 @@ title: Christmas in August
 date: 2007-08-15T21:59:18+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 7bf52b51-dc5c-4533-ae4f-e55f850da699

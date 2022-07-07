@@ -4,8 +4,8 @@ title: Android is Knotts Berry Farm as iOS is to Disneyland
 date: 2011-12-24T09:12:25+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 306b8f7b-3d49-4c6c-806b-eb1b4c72f58d

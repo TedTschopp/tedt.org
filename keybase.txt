@@ -4,7 +4,7 @@ https://keybase.io/tedtschopp
 
 I hereby claim:
 
-  * I am an admin of https://www.tedt.org
+  * I am an admin of https://tedt.org
   * I am tedtschopp (https://keybase.io/tedtschopp) on keybase.
   * I have a public key ASBwVc3l3puiNCpM_P_aTfS9mYJsgStt_KEM6VnwACmhywo
 

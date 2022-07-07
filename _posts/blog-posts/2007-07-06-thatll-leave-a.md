@@ -4,8 +4,8 @@ title: That'll Leave a Mark
 date: 2007-07-06T18:31:28+00:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 layout: post
 
 guid: 686e26a3-30fd-4b6b-94bc-9198beea49e9

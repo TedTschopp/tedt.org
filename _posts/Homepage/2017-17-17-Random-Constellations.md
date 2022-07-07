@@ -5,8 +5,8 @@ title-url: https://tedtschopp.github.io/Random-Constellations/
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    An application I threw together to output a bunch of Procedurally generated star constellations. 

@@ -4,8 +4,8 @@ title: Enterprise Technology Architect for Automation at Southern California Edi
 date: 2018-06-03T07:11:51-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: Technology architect responsible SCE's Automation portfolio providing strategy, technology road map, and product management for automation solutions.   
 excerpt: Technology architect responsible SCE's Automation portfolio providing strategy, technology road map, and product management for automation solutions.   
@@ -19,10 +19,10 @@ bullets:
 
 guid: 92f94969-58b1-47de-8034-7b808ed7eb9e
 image: /img/automation.jpg
-image-credits: Automate / Turn On by Pixabay https://www.tedt.org/img/automation.jpg  
+image-credits: Automate / Turn On by Pixabay https://tedt.org/img/automation.jpg  
 image-credits-title: Automate / Turn On
 image-credits-artist: Pixabay
-image-credits-URL: https://www.tedt.org/img/automation.jpg
+image-credits-URL: https://tedt.org/img/automation.jpg
 categories: home
 order: 3
 ---

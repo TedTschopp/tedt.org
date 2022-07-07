@@ -5,8 +5,8 @@ title-url: https://www.sce.com/
 date: 2018-06-03T07:11:51-07:00
 author:
   name: Ted Tschopp
-  url: https://www.tedt.org/
-  avatar: https://www.tedt.org/img/thumb3.jpg
+  url: https://tedt.org/
+  avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.   
@@ -28,7 +28,7 @@ bullets:
 
 guid: 93ba20f1f-0a7b-4220-8310-675cf52ab9b4
 image: /img/sce_com.jpg
-image-credits: SCE.com by Ted Tschopp https://www.tedt.org/img/automation.jpg  
+image-credits: SCE.com by Ted Tschopp https://tedt.org/img/automation.jpg  
 image-credits-title: SCE.com
 image-credits-artist: Ted Tschopp
 image-credits-URL: https://www.sce.com/
