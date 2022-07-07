@@ -38,9 +38,6 @@
 	    "name": "Ted Tschopp's Homepage",
 	    "description": "Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet"
 	  }
-	}
-   
-	"theme_color": "#222222
-   "
-   }
-   
+	},
+	"theme_color": "#222222"
+}
