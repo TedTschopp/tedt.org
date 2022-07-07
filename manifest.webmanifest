@@ -1,3 +1,46 @@
----
-layout: manifest
----
+{
+	"version": "1.0.0",
+	"name": "Ted Tschopp's Homepage",
+	"launch_path": "/index.html",
+	"description": "Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet",
+	"icons":
+	{
+	  "36": "/img/android-chrome-36x36.png",
+	  "48": "/img/android-chrome-48x48.png",
+	  "57": "/img/apple-touch-icon-57x57.png",
+	  "60": "/img/apple-touch-icon-60x60.png",
+	  "72": "/img/apple-touch-icon-72x72.png",
+	  "128": "/img/favicon-128x128.png",
+	  "114": "/img/apple-touch-icon-114x114.png",
+	  "144": "/img/android-chrome-144x144.png",
+	  "152": "/img/apple-touch-icon-152x152.png",
+	  "180": "/img/apple-touch-icon-180x180.png",
+	  "192": "/img/android-chrome-192x192.png",
+	  "384": "/img/android-chrome-384x384.png",
+	  "256": "/img/android-chrome-256x256.png",
+	  "512": "/img/android-chrome-512x512.png",
+	},
+	"developer":
+	{
+	  "name": "Ted Tschopp",
+	  "url": "https://tedt.org"
+	},
+	"installs_allowed_from": [
+	  "*"
+	],
+	"default_locale": "en",
+	"permissions":
+	{},
+	"locales":
+	{
+	  "en":
+	  {
+	    "name": "Ted Tschopp's Homepage",
+	    "description": "Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet"
+	  }
+	}
+   
+	"theme_color": "#222222
+   "
+   }
+   
