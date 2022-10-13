@@ -8,7 +8,7 @@ layout: null
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gamma World Creatures in MCC</title>
+    <title>Quotes Ted Likes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://tedt.org/css/gamma-world-cards.css" rel="stylesheet">
 
@@ -33,14 +33,12 @@ layout: null
             <td id=papermargin_left>
             </td>
             <td id="paper_printarea" class="tech-v">
-                <p><a href="https://tedt.org/RPG/MCC-GW/">Back</a></p>
+                <p><a href="https://tedt.org/">Back</a></p>
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
-                    <pre id="ascii-container-image"></pre>
-                    <figcaption>The Creatures of Gamma World</figcaption>
+                    <img class="img-responsive img-thumbnail" src="https://tedt.org/quotes/media/quotes.jpeg">
                 </figure>
 
-			<h1>The Creatures of Gamma World:</h1>
+			<h1>Ted's Collection of Quotes:</h1>
 				{% assign Quotes = site.data.Quotebook %}
 
 				{% comment %}
@@ -49,13 +47,13 @@ layout: null
 				<ol>
 
 				{% for Quote in Quotes %}
-					<li><a href="#details{{ forloop.index }}">
+					<li>
 						{% if Quote.quote != "" %}
 							{{ Quote.quote }}</br>
-							{{ Quote.author}} in {{ Quote.Source}}
-							{{ Quote.tags}}
+							{{ Quote.author}} in {{ Quote.source}}<br>
+							({{ Quote.tags}})
 						{% endif %}
-					</a></li>
+					</li>
 				{% endfor %}
 				</ol>
 			</td>
