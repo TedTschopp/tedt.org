@@ -1,0 +1,84 @@
+---
+layout: null
+---
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gamma World Creatures in MCC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://tedt.org/css/gamma-world-cards.css" rel="stylesheet">
+
+    <style type="text/css">
+        
+        a[hreflang]:after { 
+            content: " [" attr(linkstatus) "]"; 
+            color: #999;
+            vertical-align: super;
+            font-size: 70%;
+            } 
+
+    </style>
+
+    <script src="https://tedt.org/js/jscii.js"></script>
+
+</head>
+
+<body>
+    <Table>
+        <tr>
+            <td id=papermargin_left>
+            </td>
+            <td id="paper_printarea" class="tech-v">
+                <p><a href="https://tedt.org/RPG/MCC-GW/">Back</a></p>
+                <figure>
+                    <img class="img-responsive img-thumbnail" src="https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
+                    <pre id="ascii-container-image"></pre>
+                    <figcaption>The Creatures of Gamma World</figcaption>
+                </figure>
+
+			<h1>The Creatures of Gamma World:</h1>
+				{% assign Quotes = site.data.Quotebook %}
+
+				{% comment %}
+				{% assign Quotes = site.data.GammaWorldFixed.Creatures | sort: 'Name' %}
+				{% endcomment %}
+				<ol>
+
+				{% for Quote in Quotes %}
+					<li><a href="#details{{ forloop.index }}">
+						{% if Quote.quote != "" %}
+							{{ Quote.quote }}</br>
+							{{ Quote.author}} in {{ Quote.Source}}
+							{{ Quote.tags}}
+						{% endif %}
+					</a></li>
+				{% endfor %}
+				</ol>
+			</td>
+            <td id="papermargin_right">
+            </td>
+        </tr>
+    </Table>
+    <script>
+        // put in the image
+        var imgJscii = new Jscii({
+            width: 150,
+            color: true,
+            el: document.getElementById('jscii-element-image'),
+            fn: function(str) {
+                document.getElementById('ascii-container-image').innerHTML = str;
+            }
+        });
+        document.getElementById('jscii-element-image').style.display = 'none';
+    </script>
+</body>
+
+
+
+
+
+
