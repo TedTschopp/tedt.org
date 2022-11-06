@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Senior Enterprise Architect, Software at Southern California Edison
+title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
