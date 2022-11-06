@@ -538,7 +538,7 @@
               {% if site.mastadon_username %}
               <li class="list-inline-item mr-3">
                 {% assign mastadon_strings = site.mastadon_username | split: "@" %}
-                <a href="href=https://{{site.mastadon_strings[1]}}/@{{site.mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
+                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
               </li>
               {% else %}
               {% endif %}
