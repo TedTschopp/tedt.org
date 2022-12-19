@@ -168,7 +168,7 @@ links:
     # Mastodon
   - Name: Mastodon
     URL: twit.social
-    Username: @TedT
+    Username: \@TedT
     Icon-Class: fa-brands fa-mastodon
     Color: '#6364ff'
     Text_Color: '#ffffff'
