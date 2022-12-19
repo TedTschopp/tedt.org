@@ -202,29 +202,6 @@ links:
     Color: '#00ab6c'
     Text_Color: '#ffffff'
 
-    # DEV.TO
-  - Name: Dev.to
-    URL: 'https://dev.to'
-    Username: tedtschopp
-    Icon-Class: fab fa-dev
-    Color: '#ffffff'
-    Text_Color: '#000000'
-
-    # REDDIT
-  - Name: Reddit
-    URL: http://reddit.com/u
-    Username: TedTschopp
-    Color: '#FF4500'
-    Icon-Class: fab fa-reddit-alien
-
-    # STEAM
-  - Name: Steam
-    URL: https://steamcommunity.com/id
-    Username: 'TedTschopp'
-    Color: '#66c0f4'
-    Text_Color: '#000000'
-    Icon-Class: fab fa-steam
-
     # VIMEO
   - Name: Vimeo
     URL: 'https://vimeo.com'
@@ -240,6 +217,30 @@ links:
     Icon-Class: fas fa-mug-hot
     Color: '#FFDD00'
     Text_Color: '#000000'
+
+
+  #   # DEV.TO
+  # - Name: Dev.to
+  #   URL: 'https://dev.to'
+  #   Username: tedtschopp
+  #   Icon-Class: fab fa-dev
+  #   Color: '#ffffff'
+  #   Text_Color: '#000000'
+
+  #   # REDDIT
+  # - Name: Reddit
+  #  URL: http://reddit.com/u
+  #  Username: TedTschopp
+  #  Color: '#FF4500'
+  #  Icon-Class: fab fa-reddit-alien
+
+  #  # STEAM
+  #- Name: Steam
+  #  URL: https://steamcommunity.com/id
+  #  Username: 'TedTschopp'
+  #  Color: '#66c0f4'
+  #  Text_Color: '#000000'
+  #  Icon-Class: fab fa-steam
 
 
   #   # TWITTER
