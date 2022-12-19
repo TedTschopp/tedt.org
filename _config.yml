@@ -59,7 +59,6 @@ author:
   github_username: TedTschopp
   linkedin_username: tedtschopp
   facebook_username: ted.tschopp
-  google_username: TedTschopp
   youtube_username: TedTschopp
   pinterest_username: TedTschopp
   reddit_username: tedtschopp
@@ -67,6 +66,9 @@ author:
   quora_username: Ted-Tschopp
   indiewebcamp_username: Www.tedt.org
   mastadon_username: TedT@twit.social
+#  google_username: TedTschopp
+
+
 
 
 # First Name / Given Name / Common Name
@@ -96,7 +98,6 @@ twitter_username: TedTschopp
 github_username: TedTschopp
 linkedin_username: tedtschopp
 facebook_username: ted.tschopp
-google_username: TedTschopp
 youtube_username: TedTschopp
 pinterest_username: TedTschopp
 reddit_username: tedtschopp
@@ -105,7 +106,7 @@ quora_username: Ted-Tschopp
 indiewebcamp_username: Www.tedt.org
 mastadon_username: TedT@twit.social
 
-# Other Ssytems to integrate
+# Other Sytems to integrate
 dropbox:
 evernote:
 
@@ -131,6 +132,7 @@ Steam: //steamcommunity.com/id/theothesilly/
 withings:
 yammer:
 gravatar: 
+# google_username: TedTschopp
 
 
 
@@ -163,47 +165,20 @@ links:
 
   # IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
     
-    # FACEBOOK
-  - Name: Facebook
-    URL: https://www.facebook.com
-    Username: ted.tschopp
-    Color: '#3b5998'
-    Icon-Class: fab fa-facebook
+    # Mastodon
+  - Name: Mastodon
+    URL: twit.social
+    Username: @TedT
+    Icon-Class: fa-brands fa-mastodon
+    Color: '#6364ff'
+    Text_Color: '#ffffff'
 
-    # INSTAGRAM
-    # - Name: Instagram
-    # URL: https://www.instagram.com
-    # Username: harsh98trivedi
-    # Color: '#DD2A7B'
-    # Icon-Class: fab fa-instagram
-
-    # TWITTER
-  - Name: Twitter
-    URL: https://twitter.com
-    Username: TedTschopp
-    Color: '#1DA1F2'
-    Icon-Class: fab fa-twitter
-
-    # CLUBHOUSE
-    # - Name: Clubhouse
-    # URL: https://www.clubhouse.com
-    # Username: '@harsh98trivedi'
-    # Color: '#f1c40f'
-    # Icon-Class: fas fa-hand-paper -mt-0.5
-    
     # LINKEDIN
   - Name: LinkedIn
     URL: https://www.linkedin.com/in
     Username: harsh98trivedi
     Color: '#2867B2'
     Icon-Class: fab fa-linkedin-in
-
-    # YOUTUBE
-    # - Name: YouTube
-    # URL: https://www.youtube.com/channel
-    # Username: UCS3zvA_2r1iGT7MB3NVCGAw
-    # Color: '#ff0000'
-    # Icon-Class: fab fa-youtube
 
     # GITHUB
   - Name: GitHub
@@ -219,13 +194,36 @@ links:
     Color: '#e17055'
     Text_Color: '#ffffff'
 
-    # TWITCH
-    # - Name: Twitch
-    # URL: 'https://twitch.tv'
-    # Username: harsh98trivedi
-    # Icon-Class: fab fa-twitch
-    # Color: '#9147fe'
-    # Text_Color: '#ffffff'
+    # MEDIUM
+  - Name: Medium
+    URL: 'https://medium.com'
+    Username: '@TedTschopp'
+    Icon-Class: fab fa-medium-m
+    Color: '#00ab6c'
+    Text_Color: '#ffffff'
+
+    # DEV.TO
+  - Name: Dev.to
+    URL: 'https://dev.to'
+    Username: tedtschopp
+    Icon-Class: fab fa-dev
+    Color: '#ffffff'
+    Text_Color: '#000000'
+
+    # REDDIT
+  - Name: Reddit
+    URL: http://reddit.com/u
+    Username: TedTschopp
+    Color: '#FF4500'
+    Icon-Class: fab fa-reddit-alien
+
+    # STEAM
+  - Name: Steam
+    URL: https://steamcommunity.com/id
+    Username: 'TedTschopp'
+    Color: '#66c0f4'
+    Text_Color: '#000000'
+    Icon-Class: fab fa-steam
 
     # VIMEO
   - Name: Vimeo
@@ -235,24 +233,69 @@ links:
     Color: '#1ab7ea'
     Text_Color: '#ffffff'
 
-    # MESSENGER
-  - Name: Messenger
-    URL: https://m.me
-    Username: TedTschopp
-    Color: '#006AFF'
-    Icon-Class: fab fa-facebook-messenger
+  # BUY ME A COFFEE
+  - Name: BuyMeACoffee
+    URL: 'https://buymeacoffee.com'
+    Username: TedT
+    Icon-Class: fas fa-mug-hot
+    Color: '#FFDD00'
+    Text_Color: '#000000'
 
-    # REDDIT
-  - Name: Reddit
-    URL: http://reddit.com/u
-    Username: TedTschopp
-    Color: '#FF4500'
-    Icon-Class: fab fa-reddit-alien
+
+  #   # TWITTER
+  # - Name: Twitter
+  #  URL: https://twitter.com
+  #  Username: TedTschopp
+  #  Color: '#1DA1F2'
+  #  Icon-Class: fab fa-twitter
+
+    # FACEBOOK
+  # - Name: Facebook
+  #  URL: https://www.facebook.com
+  #  Username: ted.tschopp
+  #  Color: '#3b5998'
+  #  Icon-Class: fab fa-facebook
+
+  #  # MESSENGER
+  #- Name: Messenger
+  #  URL: https://m.me
+  #  Username: TedTschopp
+  #  Color: '#006AFF'
+  #  Icon-Class: fab fa-facebook-messenger
+
+    # INSTAGRAM
+    # - Name: Instagram
+    # URL: https://www.instagram.com
+    # Username: harsh98trivedi
+    # Color: '#DD2A7B'
+    # Icon-Class: fab fa-instagram
+
+    # CLUBHOUSE
+    # - Name: Clubhouse
+    # URL: https://www.clubhouse.com
+    # Username: '@harsh98trivedi'
+    # Color: '#f1c40f'
+    # Icon-Class: fas fa-hand-paper -mt-0.5
+
+    # YOUTUBE
+    # - Name: YouTube
+    # URL: https://www.youtube.com/channel
+    # Username: UCS3zvA_2r1iGT7MB3NVCGAw
+    # Color: '#ff0000'
+    # Icon-Class: fab fa-youtube
+
+    # TWITCH
+    # - Name: Twitch
+    # URL: 'https://twitch.tv'
+    # Username: harsh98trivedi
+    # Icon-Class: fab fa-twitch
+    # Color: '#9147fe'
+    # Text_Color: '#ffffff'
 
   #   # WHATSAPP
   # - Name: WhatsApp
   #   URL: https://wa.me
-  #   Username: '+1123456789'
+  #   Username: '+6262553757'
   #   Color: '#25d366'
   #   Icon-Class: fab fa-whatsapp
 
@@ -266,18 +309,10 @@ links:
   #  # SNAPCHAT
   #- Name: Snapchat
   #  URL: https://www.snapchat.com/add
-  #  Username: 'harsh98trivedi'
+  #  Username: 'TedTschopp'
   #  Color: '#FFFC00'
   #  Text_Color: '#000000'
   #  Icon-Class: fab fa-snapchat-ghost
-
-    # STEAM
-  - Name: Steam
-    URL: https://steamcommunity.com/id
-    Username: 'TedTschopp'
-    Color: '#66c0f4'
-    Text_Color: '#000000'
-    Icon-Class: fab fa-steam
 
   #   # DISCORD
   # - Name: Discord
@@ -345,22 +380,6 @@ links:
   #   Color: '#FE2C55'
   #   Icon-Class: fab fa-tiktok
 
-    # MEDIUM
-  - Name: Medium
-    URL: 'https://medium.com'
-    Username: '@TedTschopp'
-    Icon-Class: fab fa-medium-m
-    Color: '#00ab6c'
-    Text_Color: '#ffffff'
-
-    # DEV.TO
-  - Name: Dev.to
-    URL: 'https://dev.to'
-    Username: tedtschopp
-    Icon-Class: fab fa-dev
-    Color: '#ffffff'
-    Text_Color: '#000000'
-
   #   # TUMBLR
   # - Name: Tumblr
   #   URL: https://www.tumblr.com
@@ -368,23 +387,15 @@ links:
   #   Color: '#35465c'
   #   Icon-Class: fab fa-tumblr
 
-  # BUY ME A COFFEE
-  - Name: BuyMeACoffee
-    URL: 'https://buymeacoffee.com'
-    Username: TedT
-    Icon-Class: fas fa-mug-hot
-    Color: '#FFDD00'
-    Text_Color: '#000000'
-
   #  # CUSTOM LINK
   #- Name: Blog
-  #  URL: https://harsh98trivedi.github.io/blog
+  #  URL: https://#
   #  Icon-Class: fas fa-link
   #  Color: '#ffb142'
   #  Text_Color: '#ffffff'
 
   #- Name: Links
-  #  URL: https://github.com/harsh98trivedi/links
+  #  URL: https://#
   #  Icon-Class: fas fa-link
   #  Color: '#d94869'
   #  Text_Color: '#ffffff'
