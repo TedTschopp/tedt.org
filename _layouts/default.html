@@ -80,6 +80,11 @@
           type="text/css">
     <!-- END OF CSS INCLUDE -->
 
+    <!-- Fonts for the link-tree -->
+    <link rel="stylesheet"
+          href="{{site.siteurl}}/css/Link-Tree.css" 
+          type="text/css">
+
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
 
@@ -110,7 +115,7 @@
         <a name="link-tree"></a>
         <div class="row no-gutters">
           <div class="col-lg-6 text-white showcase-img" ><img src="/img/TechTree.png" class="img-responsive img-thumbnail" alt="Social Media Tree by GDJ from OpenClipArt - https://openclipart.org/artist/GDJ"></div>
-            <div class="col-lg-6 my-auto showcase-text">
+            <div id="social-links" class="col-lg-6 my-auto showcase-text">
               <h2>Links around the Internet </h2>
               <p class="lead mb-0">A collection of links to my other places around the internet </p>
               {% include link-tree.html %}
