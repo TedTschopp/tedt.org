@@ -2,6 +2,8 @@
 
 {% if link.URL %}
 
+<!-- {{link.URL}}{% if link.Username %}/{{link.Username}}{% endif %} -->
+
 <a class="flex" href="{{link.URL}}{% if link.Username %}/{{link.Username}}{% endif %}" target="_blank"
         rel="noopener noreferrer">
         <button id="social-links"
