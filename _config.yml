@@ -137,13 +137,14 @@ gravatar:
 
 
 # The Logo of the site
-logo: https://tedt.org/img/android-chrome-512x512.png
+logo: https://tedt.org/img/Site-Logo.png
+title_image: https://tedt.org/img/Site-Logo.png
 
 # The title tag of the site
 title: Ted Tschopp
 
 #description of the site for meta tags
-description: Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet
+description: Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet.
 
 # Site's name
 name: Ted Tschopp's Homepage
