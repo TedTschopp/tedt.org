@@ -139,7 +139,7 @@ gravatar:
 # The Logo of the site
 logo: https://tedt.org/img/Site-Logo.png
 title_image: https://tedt.org/img/Site-Logo.png
-
+title_image_alt: 'Logo for Ted Tschopp'
 # The title tag of the site
 title: Ted Tschopp
 
