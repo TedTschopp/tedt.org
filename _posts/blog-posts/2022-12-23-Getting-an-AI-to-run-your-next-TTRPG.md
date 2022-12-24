@@ -1,6 +1,6 @@
 ---
-id: 12428
-title: [Under Development] Getting an AI to Run Your Next TTRPG 
+id: 124281
+title: Getting an AI to Run Your Next TTRPG 
 date: 2022-12-23T16:15:17-08:00 
 author:
   name: Ted Tschopp
@@ -21,7 +21,6 @@ image-credits-title: OSR Role Playing Game Dice
 image-credits-artist: Jim Wampler
 categories:
   - Role Playing Games
-  - Draft
 ---
 
 I have spent a long part of my Christmas vacation figuring out how to drive an AI Chatbot (https://chat.openai.com/chat) to help people run Role Playing Games. 
