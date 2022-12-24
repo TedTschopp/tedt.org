@@ -116,8 +116,8 @@
         <div class="row no-gutters">
           <div class="col-lg-6 text-white showcase-img" ><img src="/img/TechTree.png" class="img-responsive img-thumbnail" alt="Social Media Tree by GDJ from OpenClipArt - https://openclipart.org/artist/GDJ"></div>
             <div class="col-lg-6 my-auto showcase-text">
-              <h2>Links around the Internet </h2>
-              <p class="lead mb-0">A collection of links to my other places around the internet </p>
+              <h2>Links to Me Around the Internet </h2>
+              <p class="lead mb-0">A collection of links to my other places around the internet.</p>
               <span id="social-links">{% include link-tree.html %}</span>
             </div>
           </div>
@@ -126,7 +126,7 @@
           <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/blog.jpg" class="img-responsive img-thumbnail" alt=""></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Ted Tschopp's Blog</h2>
-            <p class="lead mb-0">A collection of writings I have put online over the years.  Some of it is really bad, and some of it I am proud of.  All of it can be made better</p>
+            <p class="lead mb-0">A collection of writings I have put online over the years.  Some of it is really bad, and some of it I am proud of.  All of it can be made better:</p>
             <ul>
                 {% assign count = 0 %}
                 {% for post in site.posts %}
@@ -141,9 +141,7 @@
                         {% endif %}
                       <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
-                        {% if count == 1 %}
-                            <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
-                        {% endif %}
+                        <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
                       </li>
                     {% endif %}
                 {% endfor %}
