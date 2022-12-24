@@ -455,9 +455,9 @@ give me a resume for Sister Mary
 >
 >Publications:
 >
->*   "The Elder One: An Analysis of an Ancient Myth" (Journal of Archaeological >Studies, 2018)
+>*   "The Elder One: An Analysis of an Ancient Myth" (Journal of Archaeological Studies, 2018)
 >*   "Rituals and Sacrifices in Ancient Cultures" (Archaeological Review, 2016)
->*   "The Power of the Elder One: An Exploration of Ancient Myths and Legends" >(Ancient History Quarterly, 2014)
+>*   "The Power of the Elder One: An Exploration of Ancient Myths and Legends" (Ancient History Quarterly, 2014)
 
 
 give me a resume for Brother John
@@ -489,9 +489,9 @@ give me a resume for Brother John
 >
 >Publications:
 >
->*   "Security Measures for Cult Activities" (Cult of the Elder One newsletter, >2020)
->*   "Effective Methods for Protecting the Elder One" (Cult of the Elder One >newsletter, 2018)
->*   "The Importance of Security in Cult Activities" (Cult of the Elder One >newsletter, 2016)
+>*   "Security Measures for Cult Activities" (Cult of the Elder One newsletter, 2020)
+>*   "Effective Methods for Protecting the Elder One" (Cult of the Elder One newsletter, 2018)
+>*   "The Importance of Security in Cult Activities" (Cult of the Elder One newsletter, 2016)
 
 
 give me a resume for Sister Elizabeth
@@ -523,9 +523,9 @@ give me a resume for Sister Elizabeth
 >
 >Publications:
 >
->*   "Effective Strategies for Recruiting New Members" (Cult of the Elder One >newsletter, 2020)
->*   "The Power of Propaganda in Cult Recruitment" (Cult of the Elder One >newsletter, 2018)
->*   "The Importance of Recruitment in Cult Activities" (Cult of the Elder One >newsletter, 2016)
+>*   "Effective Strategies for Recruiting New Members" (Cult of the Elder One newsletter, 2020)
+>*   "The Power of Propaganda in Cult Recruitment" (Cult of the Elder One newsletter, 2018)
+>*   "The Importance of Recruitment in Cult Activities" (Cult of the Elder One newsletter, 2016)
 
 
 give me a resume for Brother Michael
