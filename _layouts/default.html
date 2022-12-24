@@ -159,9 +159,7 @@
             {% for post in posts-drafts limit:5 %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
-                {% if forloop.first %}
-                    <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
-                {% endif %} 
+                <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
               </li>
             {% endfor %}
             </ul>
@@ -302,6 +300,8 @@
                         <a href="{{ post-url }}" id="social-share-{{this-post.slug}}">{{ post-title }}</a>
                             {% if post-content.size != 0 %}
                               <p id="social-share-content-{{this-post.slug}}">{{ post-content }}</p>
+                            {% else %} 
+                              <p id="social-share-content-{{this-post.slug}}">No Details</p>
                             {% endif %}
                         </li>
                     {% endif %}

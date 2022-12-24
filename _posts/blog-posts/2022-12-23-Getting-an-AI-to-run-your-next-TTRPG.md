@@ -559,8 +559,8 @@ give me a resume for Brother Michael
 >
 >Publications:
 >
->*   "The Elder One: An Analysis of Ancient Artifacts and Their Uses" (Journal of >Archaeological Studies, 2018)
->*   "The Power of Ancient Artifacts in Cult Activities" (Archaeological Review, >2016)
+>*   "The Elder One: An Analysis of Ancient Artifacts and Their Uses" (Journal of Archaeological Studies, 2018)
+>*   "The Power of Ancient Artifacts in Cult Activities" (Archaeological Review, 2016)
 >*   "The Role of Ancient Artifacts in the Worship of the Elder One" (Ancient >History Quarterly, 2014)
 
 give me a resume for Sister Caroline
