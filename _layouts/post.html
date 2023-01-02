@@ -94,15 +94,6 @@
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include top-of-body.html %}
 
-    <!-- Navigation -->
-    <!--
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
-      </div>
-    </nav> -->
-
     {% include bootstrap4-navigation.html %}
 
 
@@ -326,7 +317,15 @@
                         <span class="float-md-right"><a href="{{next_url}}">{{next_title}} &raquo;</a></span>
                     </div>
                 </div>
- 
+
+                <div class="hidden">
+                    Previous: {{ page.previous | jsonify }} <br> 
+                        Next: {{ page.next | jsonify }} <br> 
+                    
+
+                </div>
+
+
                 <hr>
 
                 {% include comments-webmentions.html %}

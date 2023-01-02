@@ -196,3 +196,8 @@ figcaption {
 				-3px  0px 0px #ff001b;
 		 color: #212529; 
    }
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
