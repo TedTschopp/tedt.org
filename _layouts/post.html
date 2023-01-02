@@ -328,7 +328,7 @@
 
                             {% if prev.title == null or prev.title == empty or prev.title == '' %}
                                 {% if prev.layout == 'micropubpost' %}
-                                    {% assign prevtitle = prev.mf-checkin[0].properties.name %}
+                                    {% assign prevtitle = 'Check In: ' + prev.mf-checkin[0].properties.name %}
                                 {% else %}
                                     {% assign prevtitle = "WIP" %}
                                 {% endif %}
@@ -342,8 +342,8 @@
                             {% assign nexturl = next.url %}
 
                             {% if next.title == null or next.title == empty or next.title == '' %}
-                                {% if prev.layout == 'micropubpost' %}
-                                    {% assign nexttitle = prev.mf-checkin[0].properties.name %}
+                                {% if next.layout == 'micropubpost' %}
+                                    {% assign nexttitle = 'Check In: ' + next.mf-checkin[0].properties.name %}
                                 {% else %}
                                     {% assign nexttitle = "WIP" %}
                                 {% endif %}
@@ -359,10 +359,10 @@
                 {% if prevurl or nexturl %}
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}</span>
+                            <span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ prevtitle}}</a>{% endif %}</span>
                         </div>
                         <div class="col-md-6 text-center">
-                            <span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}</span>
+                            <span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
                         </div>
                     </div>
                 {% endif %}
