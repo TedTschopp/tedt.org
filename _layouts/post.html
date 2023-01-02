@@ -327,7 +327,7 @@
         
 
                             {% if prev.title == null or prev.title == empty or prev.title == '' %}
-                                {% if.prev.layout = 'micropubpost' %}
+                                {% if.prev.layout == 'micropubpost' %}
                                     {% assign nexttitle = prev.mf-checkin[0].properties.name %}
                                 {% else %}
                                     {% assign nexttitle = "WIP" %}
