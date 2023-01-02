@@ -331,9 +331,13 @@
                         {% unless forloop.last %}
                             {% assign next = document[forloop.index] %}
                             {% assign nexturl = next.url %}
-                            {% assign nexttitle = next.title %}
+
+                            {% if next.title == null or next.title == empty %}
+                                {% assign nexttitle = "WIP" %}
+                            {% else%}
+                                {% assign nexttitle = next.title %}
+                            {% endif %}
                         {% endunless %}
-        
                     {% endif %}
         
                     {% assign prev = links %}
@@ -341,8 +345,12 @@
         
                 {% if prevurl or nexturl %}
                     <div class="row">
-                        <div class="col-md-6 text-center"><span class="float-md-left"></div>{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}</span></div>
-                        <div class="col-md-6 text-center"><span class="float-md-right"></div>{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}</span></div>
+                        <div class="col-md-6 text-center">
+                            <span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}</span>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}</span>
+                        </div>
                     </div>
                 {% endif %}
 
