@@ -325,7 +325,16 @@
                         {% unless forloop.first %}
                             {% assign prevurl = prev.url %}
         
-                            {% assign prevtitle = prev.title %}
+
+                            {% if prev.title == null or prev.title == empty or prev.title == '' %}
+                                {% if.prev.layout = 'micropubpost' %}
+                                    {% assign nexttitle = prev.mf-checkin[0].properties.name %}
+                                {% else %}
+                                    {% assign nexttitle = "WIP" %}
+                                {% endif %}
+                            {% else%}
+                                {% assign prevtitle = prev.title %}
+                            {% endif %}
                         {% endunless %}
         
                         {% unless forloop.last %}
