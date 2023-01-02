@@ -11,7 +11,7 @@
 	font-weight: normal;
 	font-style: normal;
  }
-
+ 
  @font-face {
 	font-family: 'CHECKBK0';
 	src: url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff2') format('woff2'),
@@ -19,7 +19,7 @@
 	font-weight: normal;
 	font-style: normal;
  }
-
+ 
  @font-face {
 	font-family: 'lowwe';
 	src: url('https://tedt.org/RPG/MCC-GW/media/lowwe.woff2') format('woff2'),
@@ -27,8 +27,8 @@
 	font-weight: normal;
 	font-style: normal;
  }
-
-
+ 
+ 
  @font-face {
 	font-family: 'lp1_regular';
 	src: url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.eot');
@@ -37,21 +37,11 @@
 	font-weight: 400;
 	font-style: normal;
  }
-
  @font-face {
 	font-family: 'Duvall';
 	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.eot');
 	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff2') format('woff2'),
 	url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
- }
-
- @font-face {
-	font-family: 'GameEmpire';
-	src: url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.eot');
-	src: url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.woff2') format('woff2'),
-	url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
  }
@@ -111,44 +101,98 @@ figcaption {
 .lead > .p-author > .u-photo:hover {
 	text-decoration: none;
 }
-
-.GameEmpire {
-	font-family: "GameEmpire", serif;
-	color: #FFFFFF;
-	text-shadow: -3px -3px 3px #FF0000, 
-			    3px  3px 3px #FF0000,
-			    3px -3px 3px #FF0000, 
-			   -3px  3px 3px #FF0000, 
-			    0px  3px 3px #FF0000, 
-			    0px -3px 3px #FF0000, 
-			    3px  0px 3px #FF0000, 
-			   -3px  0px 3px #FF0000;
- }
- .MCC 
- {
-	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
-	text-shadow: -4px -4px 0px #ffe205, 
-			    4px  4px 0px #ffe205, 
-			    4px -4px 0px #ffe205, 
-			   -4px  4px 0px #ffe205, 
-			    0px  4px 0px #ffe205, 
-			    0px -4px 0px #ffe205, 
-			    4px  0px 0px #ffe205, 
-			   -4px  0px 0px #ffe205, 
-				 
-			   -6px -6px 0px #018249, 
-			    6px  6px 0px #018249,
-			    6px -6px 0px #018249, 
-			   -6px  6px 0px #018249, 
-			    0px  6px 0px #018249, 
-			    0px -6px 0px #018249, 
-			    6px  0px 0px #018249, 
-			   -6px  0px 0px #018249;
-	    color: #018249;
- }
-
+    .DCC 
+	{
+	    font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    text-shadow: -2px -2px 0px #eae221, 
+				   2px  2px 0px #eae221, 
+				   2px -2px 0px #eae221, 
+				  -2px  2px 0px #eae221, 
+				   0px  2px 0px #eae221, 
+				   0px -2px 0px #eae221, 
+				   2px  0px 0px #eae221, 
+				  -2px  0px 0px #eae221;
+					
+		   color: #ff001b;
+	}
+ 
+    .MCC 
+    {
+	    font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    text-shadow: -2px -2px 0px #ffe205, 
+				   2px  2px 0px #ffe205, 
+				   2px -2px 0px #ffe205, 
+				  -2px  2px 0px #ffe205, 
+				   0px  2px 0px #ffe205, 
+				   0px -2px 0px #ffe205, 
+				   2px  0px 0px #ffe205, 
+				  -2px  0px 0px #ffe205; 
+		   color: #018249;
+	}
  .GammaWorld {
 	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #DC143C; 
 	font-weight: bold;
+	/* color: Crimson */
  }
+ 
+	a:hover .MCC
+	{
+	  font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	  text-shadow:  -2px -2px 0px #ffe205, 
+				  2px  2px 0px #ffe205, 
+				  2px -2px 0px #ffe205, 
+				 -2px  2px 0px #ffe205, 
+				  0px  2px 0px #ffe205, 
+				  0px -2px 0px #ffe205, 
+				  2px  0px 0px #ffe205, 
+				 -2px  0px 0px #ffe205, 
+				   
+				-3px -3px 0px #018249, 
+				 3px  3px 0px #018249,
+				 3px -3px 0px #018249, 
+				-3px  3px 0px #018249, 
+				 0px  3px 0px #018249, 
+				 0px -3px 0px #018249, 
+				 3px  0px 0px #018249, 
+				-3px  0px 0px #018249;
+		   color: #018249;
+   }
+ 
+   a:hover .DCC
+   {
+	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow:  -2px -2px 0px #eae221, 
+				2px  2px 0px #eae221, 
+				2px -2px 0px #eae221, 
+			    -2px  2px 0px #eae221, 
+				0px  2px 0px #eae221, 
+				0px -2px 0px #eae221, 
+				2px  0px 0px #eae221, 
+			    -2px  0px 0px #eae221, 
+				 
+			   -3px -3px 0px #ff001b, 
+			    3px  3px 0px #ff001b,
+			    3px -3px 0px #ff001b, 
+			   -3px  3px 0px #ff001b, 
+			    0px  3px 0px #ff001b, 
+			    0px -3px 0px #ff001b, 
+			    3px  0px 0px #ff001b, 
+			   -3px  0px 0px #ff001b;
+		 color: #ff001b;
+ }
+ 
+ a:hover .GammaWorld 
+   {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	text-shadow:   -3px -3px 0px #ff001b, 
+				 3px  3px 0px #ff001b,
+				 3px -3px 0px #ff001b, 
+				-3px  3px 0px #ff001b, 
+				 0px  3px 0px #ff001b, 
+				 0px -3px 0px #ff001b, 
+				 3px  0px 0px #ff001b, 
+				-3px  0px 0px #ff001b;
+		 color: #212529; 
+   }
