@@ -332,7 +332,7 @@
                             {% assign next = document[forloop.index] %}
                             {% assign nexturl = next.url %}
 
-                            {% if next.title == null or next.title == empty or next.title = '' %}
+                            {% if next.title == null or next.title == empty or next.title == '' %}
                                 {% assign nexttitle = "WIP" %}
                             {% else%}
                                 {% assign nexttitle = next.title %}
