@@ -1,7 +1,7 @@
 ---
 id: 124288
 title: Wodan's Revenge
-date: 22023-01-01T17:18:27-08:00 
+date: 2023-01-01T17:18:27-08:00 
 author:
   name: Ted Tschopp
   url: https://tedt.org
@@ -20,6 +20,9 @@ image-credits-title: Woden's Revenge
 image-credits-artist: Stable Diffusion 2.1
 categories:
   - Swiss Folklore
+tags:
+  - Folklore
+
 ---
 # Wodan's Revenge
 
