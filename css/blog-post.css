@@ -4,6 +4,58 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ @font-face {
+	font-family: 'IrwinAllen';
+	src: url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff2') format('woff2'),
+	url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'CHECKBK0';
+	src: url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff2') format('woff2'),
+	url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'lowwe';
+	src: url('https://tedt.org/RPG/MCC-GW/media/lowwe.woff2') format('woff2'),
+	url('https://tedt.org/RPG/MCC-GW/media/lowwe.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
+
+ @font-face {
+	font-family: 'lp1_regular';
+	src: url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.eot');
+	src: url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.woff') format('woff'),
+	url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Duvall';
+	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.eot');
+	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff2') format('woff2'),
+	url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'GameEmpire';
+	src: url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.eot');
+	src: url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.woff2') format('woff2'),
+	url('https://tedt.org/RPG/MCC-GW/media/Algerian-Basic-D-OT_3025.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
@@ -60,3 +112,43 @@ figcaption {
 	text-decoration: none;
 }
 
+.GameEmpire {
+	font-family: "GameEmpire", serif;
+	color: #FFFFFF;
+	text-shadow: -3px -3px 3px #FF0000, 
+			    3px  3px 3px #FF0000,
+			    3px -3px 3px #FF0000, 
+			   -3px  3px 3px #FF0000, 
+			    0px  3px 3px #FF0000, 
+			    0px -3px 3px #FF0000, 
+			    3px  0px 3px #FF0000, 
+			   -3px  0px 3px #FF0000;
+ }
+ .MCC 
+ {
+	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: -4px -4px 0px #ffe205, 
+			    4px  4px 0px #ffe205, 
+			    4px -4px 0px #ffe205, 
+			   -4px  4px 0px #ffe205, 
+			    0px  4px 0px #ffe205, 
+			    0px -4px 0px #ffe205, 
+			    4px  0px 0px #ffe205, 
+			   -4px  0px 0px #ffe205, 
+				 
+			   -6px -6px 0px #018249, 
+			    6px  6px 0px #018249,
+			    6px -6px 0px #018249, 
+			   -6px  6px 0px #018249, 
+			    0px  6px 0px #018249, 
+			    0px -6px 0px #018249, 
+			    6px  0px 0px #018249, 
+			   -6px  0px 0px #018249;
+	    color: #018249;
+ }
+
+ .GammaWorld {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #DC143C; 
+	font-weight: bold;
+ }
