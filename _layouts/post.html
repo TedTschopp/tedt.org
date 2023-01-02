@@ -328,9 +328,9 @@
 
                             {% if prev.title == null or prev.title == empty or prev.title == '' %}
                                 {% if.prev.layout == 'micropubpost' %}
-                                    {% assign nexttitle = prev.mf-checkin[0].properties.name %}
+                                    {% assign prevtitle = prev.mf-checkin[0].properties.name %}
                                 {% else %}
-                                    {% assign nexttitle = "WIP" %}
+                                    {% assign prevtitle = "WIP" %}
                                 {% endif %}
                             {% else%}
                                 {% assign prevtitle = prev.title %}
@@ -342,7 +342,11 @@
                             {% assign nexturl = next.url %}
 
                             {% if next.title == null or next.title == empty or next.title == '' %}
-                                {% assign nexttitle = "WIP" %}
+                                {% if.prev.layout == 'micropubpost' %}
+                                    {% assign nexttitle = prev.mf-checkin[0].properties.name %}
+                                {% else %}
+                                    {% assign nexttitle = "WIP" %}
+                                {% endif %}
                             {% else%}
                                 {% assign nexttitle = next.title %}
                             {% endif %}
