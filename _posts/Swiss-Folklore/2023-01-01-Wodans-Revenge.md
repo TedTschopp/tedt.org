@@ -1,5 +1,5 @@
 ---
-id: 124282
+id: 124288
 title: Wodan's Revenge
 date: 22023-01-01T17:18:27-08:00 
 author:
@@ -34,5 +34,3 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
 >Thus he once came down the Rhone in the old splendor on a high-built wave, like sitting on a war horse, holding a battle sword in one hand and the globe in the other. Then he shouted, River, rise! and the Rhone rose at his command, flooded the bank and, devastating the whole area, swept away part of St. Maurice; only the place where the altar to the new god was erected remained intact. Only then did Wodan realize his powerlessness against the Christian god.
 >
 >Never again since that time has he shown himself to mankind, never again has he dared to try again to found his kingdom among them. Only at night, at certain times of the year, he still lets himself be heard in the roar of the storm, high up on the glaciers, between rocks and stones, in the gloomy forest floor, but more to torment himself than to the harm of mankind. Unseen by their eyes, he then walks along in a hideous procession, Freya, his wife, once a kind goddess, now an evil sorceress, at his side, and what is eternally damned follows him: Suicides, drunkards, unbaptized dead children, beheaded and hanged malefactors, voluptuous women, witches and sorcerers, bloodthirsty mermaids and mischievous gnomes, in short, the host of all those evil spirits whose realm is the rocks and glaciers of the Alps, and whose number is so great that, if they were to share the same, hardly a pound of the mighty mass of ice and rock would fall to each one. Thus sank Wodan, once worshipped by the people as a holy god.
-
-
