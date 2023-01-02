@@ -107,396 +107,287 @@
 
 
 
-
-
-    <!-- Masthead -->
-    <section class="showcase">
-     <div class="container-fluid p-0">
-        <a name="link-tree"></a>
-        <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/TechTree.png" class="img-responsive img-thumbnail" alt="Social Media Tree by GDJ from OpenClipArt - https://openclipart.org/artist/GDJ"></div>
-            <div class="col-lg-6 my-auto showcase-text">
-              <h2>Links to Me Around the Internet </h2>
-              <p class="lead mb-0">A collection of links to my other places around the internet.</p>
-              <span id="social-links">{% include link-tree.html %}</span>
-            </div>
-          </div>
-        <a name="blog"></a>
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/blog.jpg" class="img-responsive img-thumbnail" alt=""></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Ted Tschopp's Blog</h2>
-            <p class="lead mb-0">A collection of writings I have put online over the years.  Some of it is really bad, and some of it I am proud of.  All of it can be made better:</p>
-            <ul>
-                {% assign count = 0 %}
-                {% for post in site.posts %}
-                    {% if post.categories contains "Draft" or post.categories contains "home" %}
-                        <!-- Do Nothing -->
-                    {% elsif post.layout contains "micropubpost" %}
-                        <!-- Do Nothing -->
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                <article class="h-entry">
+                    <!-- Title -->
+                    <h1 class="p-name">{{ page.title }}</h1>
+                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                    {% if page.author.name %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
                     {% else %}
-                        {% assign count = count | plus: 1 %}
-                        {% if count > 5 %}
-                            {% break %}
-                        {% endif %}
-                      <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                        <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
-                      </li>
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
                     {% endif %}
-                {% endfor %}
-            </ul> 
-          </div>
-        </div>
-        <a name="draft"></a>
-        <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Ted Tschopp's Role Playing Game Drafts</h2>
-            <p class="lead mb-0">A collection of writings on Role Playing Games I am working on at this time.  Some of it is really bad, and some of it I am proud of.  All of it can be made better.</p>
-            <ul>
-            {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
-            {% for post in posts-drafts limit:5 %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
-              </li>
-            {% endfor %}
-            </ul>
-          </div>
-        </div>
-        <a name="social"></a>
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/SocialNetwork.jpg" class="img-responsive img-thumbnail" alt=""></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Ted Tschopp's Social Media Posts</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-            <ul>
-                {% assign count = 0 %}
-                {% for this-post in site.posts %}
-                    {% if this-post.layout contains "micropubpost" %}
-                        {% assign post-title = "" %}
-                        {% assign post-url = "" %}
-                        {% assign post-content = "" %}
 
-                        {% assign count = count | plus: 1 %}
-                        {% if count > 5 %}
-                            {% break %}
+                    <hr>
+                    
+                    {% include publish-and-update-date-time-v2.html %}
+
+                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
+
+                    <img class="webmention-svg" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+
+                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                    {% assign categories = page.categories %}
+                    {% for category in categories %}<span class="p-category">
+                        {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                        {% if forloop.length == 1 %}
+                            {{thiscategory}}
+                        {% elsif forloop.last and forloop.length == 2 %}
+                            and {{thiscategory}}
+                        {% elsif forloop.last %}
+                            and {{thiscategory}}
+                        {% else %}
+                            {{thiscategory}}, 
                         {% endif %}
+                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                            {% assign this_is_a_draft = true %}
+                        {% endif %}</span>
+                    {% endfor %}</br>
 
-                        {% assign post-url = this-post.url %}
+                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
 
-                        {% if this-post.mf-item[0].type[0] == "h-product" %}
-                            {% if this-post.mf-rating[0] == 5 %}
-                                {% assign post-title = "⭐️⭐️⭐️⭐️⭐️" %}
-                            {% elsif this-post.mf-rating[0] == 4 %}
-                                {% assign post-title = "⭐️⭐️⭐️⭐️🌑" %}
-                            {% elsif this-post.mf-rating[0] == 3 %}
-                                {% assign post-title = "⭐️⭐️⭐️🌑🌑" %}
-                            {% elsif this-post.mf-rating[0]== 2 %}
-                                {% assign post-title = "⭐️⭐️🌑🌑🌑" %}
-                            {% elsif this-post.mf-rating[0] == 1 %}
-                                {% assign post-title = "⭐️🌑🌑🌑🌑" %}
-                            {% else %}
-                                {% assign post-title = "🌑🌑🌑🌑🌑" %}
-                            {% endif %}
-                            {% assign post-title = post-title | append: this-post.mf-item[0].properties.name[0] %}
-                            {% assign post-content = this-post.mf-summary %}
+                    <hr>
+
+                    <!-- <p class="lead">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p> -->
+
+                    <!-- Preview Image -->
+                    <!--
+                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
+                        and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
+
+                        -->
+
+                    {% if page.image %}
+                    <figure>
+                    <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{page.image_alt}} by {{page.image_credits}}">
+                      <figcaption>
+                        {% if page.image-credits-URL or page.image-credits-title %}
+                            <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
+                        {% elsif page.image-credits %}
+                          {{page.image_alt}} by {{page.image_credits}}
+                        {% else %}
+                            Unknown
                         {% endif %}
-                        
-                        {% if this-post.mf-checkin[0].type[0] == "h-card" %}
-                            {% assign post-title = "🌎 " | append: this-post.mf-checkin[0].properties.name[0] %}
-                        {% endif %}
-                         
-                        {% if this-post.category contains "links" %}
-                            {% assign post-title   = "🔗 " | append: this-post.title %}
-                            {% assign post-url     = this-post.mf-bookmark-of[0] %}
-                            {% assign post-content = this-post.content %}
-                        {% endif %}
-
-                        {% if this-post.mf-like-of[0] contains "http" %}
-                            {% assign post-url = this-post.mf-like-of[0] %}
-                            {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
-                        {% elsif this-post.mf-in-reply-to[0] contains "http" %}
-                            {% assign post-url = this-post.mf-in-reply-to[0] %}
-                            {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
-                        {% elsif this-post.mf-repost-of[0] contains "http" %}
-                            {% assign post-url = this-post.mf-repost-of[0] %}
-                            {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
-                        {% endif %}
-
-                        {% if this-post.mf-itinerary[0].type[0] contains "h-leg" %}
-                            {% for leg in this-post.mf-itinerary %}
-
-                                {% if leg.properties.transit-type contains "air" %}
-                                    {% assign post-title = post-title | append: "✈️ " %}
-                                {% elsif leg.properties.transit-type contains "train" %}
-                                    {% assign post-title = post-title | append: "🚂" %}
-                                {% elsif leg.properties.transit-type contains "bus" %}
-                                    {% assign post-title = post-title | append: "🚌" %}
-                                {% elsif leg.properties.transit-type contains "boat" %}
-                                    {% assign post-title = post-title | append: "🛥️" %}
-                                {% else %}
-                                    {% assign post-title = post-title | append: "🗺️" %}
-                                {% endif %}
-                                {% assign post-title = post-title | append:  leg.properties.origin[0] %}
-                                {% assign post-title = post-title | append:  " to " %}
-                                {% assign post-title = post-title | append:  leg.properties.destination[0] %}
-                                {% assign post-title = post-title | append:  " via " %}
-                                {% assign post-title = post-title | append:  leg.properties.operator[0] %}
-                                {% assign post-title = post-title | append:  " #" %}
-                                {% assign post-title = post-title | append:  leg.properties.number[0] %}
-                                {% if forloop.last == false %}
-                                    {% assign post-title = post-title | append:  " <br> " %}
-                                {% else %}
-
-                                {% endif %}
-
-                            {% endfor %}
-                        {% endif %}
-
-
-                        {% if post-content == null or post-content == empty %}
-                            {% assign post-content = this-post.content %}
-                        {% endif %}
-                        {% assign post-content = post-content | strip %}
-                        <li>
-                        <a href="{{ post-url }}" id="social-share-{{this-post.slug}}">{{ post-title }}</a>
-                            {% if post-content.size != 0 %}
-                              <p id="social-share-content-{{this-post.slug}}">{{ post-content }}</p>
-                            {% else %} 
-                              <p id="social-share-content-{{this-post.slug}}">No Details</p>
-                            {% endif %}
-                        </li>
+                      </figcaption>
+                    </figure>
                     {% endif %}
-                {% endfor %}
-            </ul> 
-          </div>
-        </div>
-      </div>
-  {% assign sorted_homepage = (site.categories.['home'] | sort: 'order' %}
-  {% assign count = 0 %}
-  {% for post in sorted_homepage %}
-      {% assign count = count | plus: 1 %}
-      {% assign mod = count | modulo: 2 %}
-      <a name="{{ post.title | slugify}}"></a>
 
-      <div class="row no-gutters">
+                    <hr>
 
-        {% if mod != 1 %}<!-- odd -->
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        {% else %}
-        <div class="col-lg-6 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-        {% endif %}
+                    <!-- In the event of a draft include a progress bar -->
+                    {% assign draftstatus = page.draft-status %}
+                    {% if this_is_a_draft == true %}
+                        <aside class="well">
+                            {% if draftstatus == "notes" or draftstatus == "" %}
+                                <strong>Notes:</strong>
+                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
+                            {% elsif draftstatus == "unit" %}
+                                <strong>Unit Testing:</strong>
+                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
+                            {% elsif draftstatus == "integration" %}
+                                <strong>Integration Testing:</strong>
+                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
+                            {% elsif draftstatus == "component" %}
+                                <strong>Component Testing:</strong>
+                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
+                            {% elsif draftstatus == "system" %}
+                                <strong>System Testing:</strong>
+                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
+                            {% elsif draftstatus == "alpha" %}
+                                <strong>Alpha Testing:</strong>
+                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
+                            {% elsif draftstatus == "beta" %}
+                                <strong>Beta Testing:</strong>
+                                <p>This project is complete and it has had feedback from the public. </p>
+                            {% elsif draftstatus == "pre-release" %}
+                                <strong>Pre-Release:</strong>
+                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
+                            {% endif %}
+                            <div class="progress-clear">
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "notes" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "unit" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "integration" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "component" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "system" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "alpha" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "beta" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "pre-release" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                            </div>                            
+                            <div class="progress">
+                                <div class="progress-bar notes" role="progressbar" style="width:12.5%">
+                                    Notes
+                                </div>
+                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
+                                    Unit
+                                </div>
+                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
+                                    Int.
+                                </div>
+                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
+                                    Comp.
+                                </div>
+                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
+                                    System
+                                </div>
+                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
+                                    Alpha
+                                </div>
+                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
+                                    Beta
+                                </div>
+                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
+                                    Pre.
+                                </div>
+                            </div>
+                        </aside>
+                        {% endif %}
 
-          {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-              <h2><a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a></h2>
-          {% else %}
-              <h2>{{ post.title}}</h2>
-          {% endif %}
-          <p class="lead mb-0">{{ post.description}}</p>
-          <ul>    
-              {% for bullet in post.bullets %}
-                  <li>{{ bullet }}</li>
-              {% endfor %}
-          </ul>
-
-        </div>
-      </div>
-  {% endfor %}
-    </section>
 
 
+                    <!-- Post Content -->
+                    <span class="e-content">{{ content }}</span>
 
-    <!-- Icons Grid -->
-    <!--
-    <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h3>Fully Responsive</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
-              </div>
-              <h3>Bootstrap 4 Ready</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
-              </div>
-              <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
+                    <hr>
+                </article>
 
-    <!-- Testimonials -->
-    <!--
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Margaret E.</h5>
-              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-              <h5>Fred S.</h5>
-              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Sarah W.</h5>
-              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- Call to Action -->
-    <!--
-    <section class="call-to-action text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                <!--Next and Previous Articles -->
+                {% if page.previous.url %}
+                    {% assign previous_url = page.previous.url %}
+                    {% assign previous_title = page.previous.title %}
+                {% else %}
+                    {% assign previous_url = site.siteurl %}
+                    {% assign previous_title = "Home" %}
+                {% endif %}
+                {% if page.next.url %}
+                    {% assign next_url = page.next.url %}
+                    {% assign next_title = page.next.title %}
+                {% else %}
+                    {% assign next_url = site.siteurl %}
+                    {% assign next_title = "Home" %}
+                {% endif %}
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <span class="float-md-left"><a href="{{previous_url}}">&laquo; {{previous_title}}</a></span>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <span class="float-md-right"><a href="{{next_url}}">{{next_title}} &raquo;</a></span>
+                    </div>
                 </div>
-                <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+ 
+                <hr>
+
+                {% include comments-webmentions.html %}
+
+                {% include comments.html %}
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- TODO: Google Custom Search -->
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    {% include google-search.html %}
                 </div>
-              </div>
-            </form>
-          </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+
+
+                    <div class="post-categories">
+                        {% assign categories = page.categories %}
+                        {% for category in categories %}
+                            <h4>Latest in <a href="{{site.siteurl}}/category/{{category|slugize}}">{{category}}</a></h4>
+                                <div class="row">
+                                <div class="col-lg-12">
+                                    <ul lass="list-unstyled">
+                                        {% for post in site.categories[category] limit:5 %}
+                                        <li><a href="{{site.siteurl}}{{ post.url }}">{{ post.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>                
+                </div>
+
+
+                <!-- Side Widget Well -->
+                <!-- This is the flipboard widget example 
+                <div class="well">
+                    <a data-flip-widget="mag" href="https://flipboard.com/@tedtschopp/technology-trends-of-tomorrow-qnepnf10y">View my Flipboard Magazine.</a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
+                </div>
+                -->
+
+
+
+            </div>
+
         </div>
-      </div>
-    </section>
-    -->
+        <!-- /.row -->
 
-
-    <header class="masthead text-white text-center" id="about">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row vcard" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
-          <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
-            <img src="/img/thumb3.jpg" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-            <h3><span class="p-job-title">Enterprise Technology Architect <br> &#x27E8; Web &#x27E9;&#x27E8; Mobile &#x27E9;&#x27E8; Consumer Technology &#x27E9;&#x27E8; Automation &#x27E9;</span></h3>
-            <hr class="intro-divider"> 
-            <span class="p-adr d-none">
-                <span class="p-locality">{{ site.locality }}</span>,
-                <span class="p-region">{{ site.region }}</span>
-                <span class="p-country-name">{{ site.country }}</span>
-            </span>
-            <span class="p-note">
-              {% for paragraphs in site.biography %}
-                {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
-                <p class="lead">{{paragraph}}</p>
-                {% endfor %}
-            </span>
-            <ul class="list-inline mb-0">
-                  {% if site.keybaseio_username %}
-                  <li class="list-inline-item mr-3">
-                    <a href="https://keybase.io/{{ site.keybaseio_username }}" rel="me" class="btn btn-default btn-lg" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fab fa-keybase fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  </li>
-                  <li class="list-inline-item mr-3">
-                    <a href="{{ site.siteurl }}/pgp-public-key.txt" rel="me pgpkey" class="btn btn-default btn-lg pgpkey" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fas fa-key fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  </li>
-                  {% else %}
-                  {% endif %}
-                  {% if site.email %}
-                  <li class="list-inline-item mr-3">
-                    <a href="mailto:{{ site.email }} " rel="me" class="btn btn-default btn-lg u-email" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fas fa-envelope fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  {% else %}
-                  {% endif %}
-                  {% if site.whatsapp_username %}
-                  <li class="list-inline-item mr-3">
-                    <a href="https://api.whatsapp.com/send?phone={{ site.whatsapp_username }}" rel="me" class="btn btn-default btn-lg u-url" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fab fa-whatsapp fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  {% else %}
-                  {% endif %}
-                  {% if site.phonenumber %}
-                  <li class="list-inline-item mr-3">
-                    <a href="tel:{{ site.phonenumber }}" rel="me" class="btn btn-default btn-lg p-tel" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fas fa-phone fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  </li>
-                  {% else %}
-                  {% endif %}
-                  <li class="list-inline-item ">
-                    <a href="{{ site.siteurl }}" rel="me" class="btn btn-default btn-lg u-url" style="color:white" onmouseout="this.style.color='white'" onmouseover="this.style.color='#C0C0C080'"><i class="fas fa-home fa-2x fa-fw"></i> <span class="network-name"></span></a>
-                  </li>
-              </ul>
-          </div>
-      </div>
+        <hr>
     </div>
-  </header>
-    <!-- Footer -->
+    <!-- /.container -->
+
+
+
+  <!-- Footer -->
     <footer class="footer bg-light">
       <div class="container">
         <div class="row">
