@@ -13,7 +13,6 @@
 	{% assign next_title = "Home" %}
 {% endif %}
 
-
 {% assign  document = site.posts | sort: "date" | reversed %}
 {% for links in document %}
 	{% if links.title == page.title %}
@@ -59,14 +58,13 @@
 		{% assign nexttitle = 'Home' %}
 	{% endif %} 
 
-
-<div class="row">
-    <div class="col-md-6 text-center">
-	   <span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ prevtitle}}</a>{% endif %}</span>
-    </div>
-    <div class="col-md-6 text-center">
-	   <span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
-    </div>
-</div>
+	<div class="row">
+	<div class="col-md-6 text-center">
+		<span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ prevtitle}}</a>{% endif %}</span>
+	</div>
+	<div class="col-md-6 text-center">
+		<span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
+	</div>
+	</div>
 
 {% endif %}
