@@ -445,7 +445,7 @@
     <header class="masthead text-white text-center" id="about">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row vcard" id="hcard-{{ site.givenname }}-{{ site.familyname }}" class="u-url u-uid">
+        <div class="row vcard" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
           <div class="col-xl-9 mx-auto">
             <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
             <img src="/img/thumb3.jpg" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
@@ -503,7 +503,7 @@
           <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
-                <a href="https://tedt.org/">Home</a>
+                <a href="https://tedt.org/" class="u-url u-uid">Ted Tschopp</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
@@ -536,7 +536,7 @@
             <ul class="list-inline mb-0">
               {% if site.github_username %}
               <li class="list-inline-item mr-3">
-                  <a href="https://github.com/{{ site.github_username }}/" rel="me"><i class="fab fa-github fa-lg fa-fw"></i></a>
+                  <a href="https://github.com/{{ site.github_username }}/" rel="me" class="u-url"><i class="fab fa-github fa-lg fa-fw"></i></a>
               </li>
               {% else %}
               {% endif %}
@@ -549,31 +549,31 @@
               {% if site.mastadon_username %}
               <li class="list-inline-item mr-3">
                 {% assign mastadon_strings = site.mastadon_username | split: "@" %}
-                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
+                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me" class="u-url"><i class="fa-brands fa-mastodon"></i></a>
               </li>
               {% else %}
               {% endif %}
               {% if site.youtube_username %}
               <li class="list-inline-item mr-3">
-                  <a href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
+                  <a href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me" class="u-url"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
               </li>
               {% else %}
               {% endif %}
               {% if site.reddit_username %}
               <li class="list-inline-item mr-3">
-                  <a href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me"><i class="fab fa-reddit fa-lg fa-fw"></i></a>
+                  <a href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me" class="u-url"><i class="fab fa-reddit fa-lg fa-fw"></i></a>
               </li>
               {% else %}
               {% endif %}
               {% if site.quora_username %}
               <li class="list-inline-item mr-3">
-                  <a href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me"><i class="fab fa-quora fa-lg fa-fw"></i></a>
+                  <a href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me" class="u-url"><i class="fab fa-quora fa-lg fa-fw"></i></a>
               </li>
               {% else %}
               {% endif %}
               {% if site.indiewebcamp_username %}
               <li class="list-inline-item mr-3">
-                  <a href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me"><i class="fas fa-external-link-alt fa-lg fa-fw"></i></a>
+                  <a href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me" class="u-url"><i class="fas fa-external-link-alt fa-lg fa-fw"></i></a>
               </li>
               {% else %}
               {% endif %}
