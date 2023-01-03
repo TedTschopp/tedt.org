@@ -176,29 +176,8 @@
  
 
                 <!--Next and Previous Articles -->
-                <!-- TODO: Add Social -->
-                {% if page.previous.url %}
-                    {% assign previous_url = page.previous.url %}
-                    {% assign previous_title = page.previous.title %}
-                {% else %}
-                    {% assign previous_url = site.siteurl %}
-                    {% assign previous_title = "Home" %}
-                {% endif %}
-                {% if page.next.url %}
-                    {% assign next_url = page.next.url %}
-                    {% assign next_title = page.next.title %}
-                {% else %}
-                    {% assign next_url = site.siteurl %}
-                    {% assign next_title = "Home" %}
-                {% endif %}
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <span class="float-md-left"><a href="{{previous_url}}">&laquo; {{previous_title}}</a></span>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <span class="float-md-right"><a href="{{next_url}}">{{next_title}} &raquo;</a></span>
-                    </div>
-                </div>
+                {% include next_and_previous.html %}
+
                 <hr>
 
                 {% include comments-webmentions.html %}
