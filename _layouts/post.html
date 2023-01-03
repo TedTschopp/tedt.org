@@ -309,14 +309,7 @@
                     {% assign next_url = site.siteurl %}
                     {% assign next_title = "Home" %}
                 {% endif %}
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <span class="float-md-left"><a href="{{previous_url}}">&laquo; {{previous_title}}</a></span>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <span class="float-md-right"><a href="{{next_url}}">{{next_title}} &raquo;</a></span>
-                    </div>
-                </div>
+
 
                 {% assign  document = site.posts | sort: "date" | reversed %}
                 {% for links in document %}
@@ -325,7 +318,7 @@
                             {% assign prevurl = prev.url %}
                             {% if prev.title == null or prev.title == empty or prev.title == '' %}
                                 {% if prev.layout == 'micropubpost' %}
-                                    {% assign prevtitle = 'Check In: ' | append: prev.mf-checkin[0].properties.name[0] %}
+                                    {% assign prevtitle = 'Checked Into ' | append: prev.mf-checkin[0].properties.name[0] %}
                                 {% else %}
                                     {% assign prevtitle = "WIP" %}
                                 {% endif %}
@@ -340,7 +333,7 @@
 
                             {% if next.title == null or next.title == empty or next.title == '' %}
                                 {% if next.layout == 'micropubpost' %}
-                                    {% assign nexttitle = 'Check In: ' | append: next.mf-checkin[0].properties.name[0] %}
+                                    {% assign nexttitle = 'Checked Into: ' | append: next.mf-checkin[0].properties.name[0] %}
                                 {% else %}
                                     {% assign nexttitle = "WIP" %}
                                 {% endif %}
@@ -348,10 +341,6 @@
                                 {% assign nexttitle = next.title %}
                             {% endif %}
                         {% endunless %}
-                        {% if forloop.last %}
-                            {% assign next_url = site.siteurl %}
-                            {% assign next_title = "Home" %}
-                        {% endif %}
                     {% endif %}
         
                     {% assign prev = links %}
@@ -363,7 +352,7 @@
                             <span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ prevtitle}}</a>{% endif %}</span>
                         </div>
                         <div class="col-md-6 text-center">
-                            <span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
+                            <span class="float-md-right">{% if next_title == 'Home%}{% assign nexturl = next_url %}{% assign nexttitle = 'Home' %} {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
                         </div>
                     </div>
                 {% endif %}
