@@ -8,6 +8,11 @@ include: ['_pages']
 
 timezone: America/Los_Angeles
 
+collections:
+  GammaWorld:
+   output: true
+   permalink: /:collection/:name
+
 owner:
   disqus-shortname: tedtschopp
 
