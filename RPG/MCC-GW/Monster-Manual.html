@@ -41,9 +41,12 @@ layout: null
                 </figure>
 
 			<h1>The Creatures of Gamma World:</h1>
-				{% assign sorted_GammaWorldFixed = site.data.GammaWorldv5.CreaturesV5 | sort: 'Name' %}
+				{% assign sorted_GammaWorldFixed = site.data.GammaWorldv6.CreaturesV5 | sort: 'Name' %}
+
+
 
 				{% comment %}
+				{% assign sorted_GammaWorldFixed = site.data.GammaWorldv5.CreaturesV5 | sort: 'Name' %}
 				{% assign sorted_GammaWorldFixed = site.data.GammaWorldFixed.Creatures | sort: 'Name' %}
 				{% endcomment %}
 				<ol>
