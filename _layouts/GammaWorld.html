@@ -121,7 +121,7 @@
 						<strong>Armor: </strong>More observations needed
 					{% endif %}</br>
 					{% if page.Size != "" %}
-						<strong>Size:</strong> {{ page.Size }} {% if page.Size_Measurement != "" }{{Size_Measurement}}{{%endif%}}
+						<strong>Size:</strong> {{ page.Size }} {% if page.Size_Measurement != "" %}{{Size_Measurement}}{{% endif %}}
 					{% else %}
 						<strong>Size:</strong> Unknown
 					{% endif %}</p>
