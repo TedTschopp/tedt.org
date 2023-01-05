@@ -120,7 +120,7 @@
 						<strong>Armor: </strong>More observations needed
 					{% endif %}</br>
 					{% if page.Size != "" %}
-						<strong>Size:</strong> {{ page.Size }}
+						<strong>Size:</strong> {{ page.Size }} {% if page.Size_Measurement != "" }{{Size_Measurement}}{{%endif%}}
 					{% else %}
 						<strong>Size:</strong> Unknown
 					{% endif %}</p>
@@ -134,9 +134,12 @@
 					<p>{% if page.New_Attack_1 != "" %}
 						<strong>Attack: </strong>{{ page.New_Attack_1 }}
 						{% if page.New_Attack_2 != "" %}
-							{{ page.New_Attack_1 }}
-						{% endif %}</p>
-						{% else %}
+							<br>{{ page.New_Attack_2 }}
+							{% if page.New_Attack_3 != "" &}
+								<br>{{page.New_Attack_3}}
+							{% endif %}</p>
+						{% endif %}
+					{% else %}
 						<strong>Attack: </strong>More observations needed
 					{% endif %}</p>
 
@@ -149,6 +152,9 @@
 									<strong>MS: </strong>More observations needed
 								{% endif %}
 
+							</td>
+							<td>
+								&nbsp;
 							</td>
 							<td>
 								{% if page.PS != "" %}
@@ -167,6 +173,9 @@
 								{% endif %}
 							</td>
 							<td>
+								&nbsp;
+							</td>
+							<td>
 							{% if page.DX != "" %}
 								<strong>DX: </strong>{{ page.DX }}
 							{% else %}
@@ -183,6 +192,9 @@
 								{% endif %}
 							</td>
 							<td>
+								&nbsp;
+							</td>
+							<td>
 								{% if page.CN != "" %}
 									<strong>CN: </strong>{{ page.CN }}
 								{% else %}
@@ -191,6 +203,11 @@
 							</td>
 						</tr>
 					</table>
+					{% if page.Role_In_Gamma_World = "Robot"}<p>
+					Brain Type: {{page.Brain Type / CPU}}
+					Mission: {{page.mission}}
+					</p>
+					{% endif %}
 					<p>{% if page.Frequency != "" %}
 						<strong>Frequency:</strong> {{ page.Frequency }}
 					{% else %}
@@ -232,26 +249,33 @@
 						<strong>Artifacts:</strong> Unknown
 					{% endif %} </p>
 
-					{% if page.New_Description != "" %}
-						{% if page.Description_Output != "" %}
-						<p><strong>Description (Initial Observation):</strong> {{ page.Description_Output }}</p>
-						<p><strong>Description (Observation 1):</strong> {{ page.New_Description }}</p>
-						{% else %}
-							<p><strong>Description:</strong> {{ page.New_Description }}</p>
-						{% endif %}
-					{% else %}
-						{% if page.Description_Output != "" %}
-							<p><strong>Description:</strong> {{ page.Description_Output }}</p>
-						{% else %}
-							<p><strong>Description:</strong> Unknown </p>
+					{% if page.Description != "" %}
+						<p><strong>Description (Initial Observations):</strong> {{ page.Description }}</p>
+						{% if page.New_Description != "" %}
+						<p><strong>Description (Additional Observations):</strong> {{ page.New_Description }}</p>
 						{% endif %}
 					{% endif %}
 
+					{% if page.Equipment != "" %}
+						<p><strong>Equipment:</strong> {{ page.Equipment }}</p>
+					{% endif %}
 
-					{% if page.Combat != "" %}
-						<p><strong>Combat:</strong> {{ page.Combat }}</p>
+					{% if page.Reactions != "" %}
+						<p><strong>Reactions:</strong> {{ page.Reactions }}</p>
 					{% else %}
-						<p><strong>Combat:</strong> Unobserved in Combat</p>
+						<p><strong>Reactions:</strong> No known interactions</p>
+					{% endif %}
+
+					{% if page.Behavior != "" %}
+						<p><strong>Behavior:</strong> {{ page.Behavior }}</p>
+					{% else %}
+						<p><strong>Behavior:</strong> Behavior modeling incomplete</p>
+					{% endif %}
+
+					{% if page.Repair_and_Healing != "" %}
+						<p><strong>Repair and Healing:</strong> {{ page.Repair_and_Healing }}</p>
+					{% else %}
+						<p><strong>Behavior:</strong> Behavior not recorded</p>
 					{% endif %}
 
 					{% if page.Society != "" %}
@@ -260,11 +284,7 @@
 						<p><strong>Society:</strong> Anthropological studies incomplete</p>
 					{% endif %}
 
-					{% if page.Behavior != "" %}
-						<p><strong>Behavior:</strong> {{ page.Behavior }}</p>
-					{% else %}
-						<p><strong>Behavior:</strong> Behavior modeling incomplete</p>
-					{% endif %}
+
 					<hr>
 
 <br>

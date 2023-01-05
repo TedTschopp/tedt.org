@@ -11,7 +11,7 @@ timezone: America/Los_Angeles
 collections:
   GammaWorld:
    output: true
-   permalink: /:collection/:name
+   permalink: /:collection/:title
 
 owner:
   disqus-shortname: tedtschopp
