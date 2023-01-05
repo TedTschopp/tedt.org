@@ -97,7 +97,8 @@
 					{% endif %}
 					
 
-					<p>{% if page.Number_Appearing_Dice != "" %}
+					<p>
+					{% if page.Number_Appearing_Dice != "" %}
 						<strong>Number Appearing: </strong>{{ page.Number_Appearing_Dice }}
 					{% else %}
 						<strong>Number Appearing: </strong>More observations needed
@@ -131,7 +132,8 @@
 						<p><strong>Movement: </strong>More observations needed</p>
 					{% endif %}
 
-					<p>{% if page.New_Attack_1 != "" %}
+					<p>
+					{% if page.New_Attack_1 != "" %}
 						<strong>Attack: </strong>{{ page.New_Attack_1 }}
 						{% if page.New_Attack_2 != "" %}
 							<br>{{ page.New_Attack_2 }}
@@ -176,11 +178,11 @@
 								&nbsp;
 							</td>
 							<td>
-							{% if page.DX != "" %}
-								<strong>DX: </strong>{{ page.DX }}
-							{% else %}
-								<strong>DX: </strong>More observations needed
-							{% endif %}
+								{% if page.DX != "" %}
+									<strong>DX: </strong>{{ page.DX }}
+								{% else %}
+									<strong>DX: </strong>More observations needed
+								{% endif %}
 							</td>
 						</tr>
 						<tr>
@@ -203,9 +205,9 @@
 							</td>
 						</tr>
 					</table>
-					{% if page.Role_In_Gamma_World = "Robot"}<p>
-					Brain Type: {{page.Brain Type / CPU}}
-					Mission: {{page.mission}}
+					{% if page.Role_In_Gamma_World = "Robot" %}<p>
+						Brain Type: {{page.Brain Type / CPU}}
+						Mission: {{page.mission}}
 					</p>
 					{% endif %}
 					<p>{% if page.Frequency != "" %}
