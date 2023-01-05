@@ -205,11 +205,11 @@
 							</td>
 						</tr>
 					</table>
-					{% if page.Role_In_Gamma_World = "Robot" %}<p>
-						Brain Type: {{page.Brain Type / CPU}}
+					<p>{% if page.Role_In_Gamma_World = "Robot" %}
+						
 						Mission: {{page.mission}}
-					</p>
 					{% endif %}
+					</p>
 					<p>{% if page.Frequency != "" %}
 						<strong>Frequency:</strong> {{ page.Frequency }}
 					{% else %}
@@ -254,7 +254,7 @@
 					{% if page.Description != "" %}
 						<p><strong>Description (Initial Observations):</strong> {{ page.Description }}</p>
 						{% if page.New_Description != "" %}
-						<p><strong>Description (Additional Observations):</strong> {{ page.New_Description }}</p>
+							<p><strong>Description (Additional Observations):</strong> {{ page.New_Description }}</p>
 						{% endif %}
 					{% endif %}
 
