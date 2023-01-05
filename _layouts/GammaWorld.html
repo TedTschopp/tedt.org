@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="">
 
 <head>
     <meta charset="utf-8">
@@ -19,11 +19,13 @@
     <!-- Twitter Meta Tags. -->
     {% include twitter-card-metadata.jekyll %}
 
+
+    <title>{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://tedt.org/css/gamma-world-cards.css" rel="stylesheet">
 
     <style type="text/css">
-
-
+        
         a[hreflang]:after { 
             content: " [" attr(linkstatus) "]"; 
             color: #999;
@@ -31,15 +33,9 @@
             font-size: 70%;
             } 
 
-        #paper_printarea {
-            font-size: 1em;
-
-        }
-
     </style>
 
     <script src="https://tedt.org/js/jscii.js"></script>
-
 
 </head>
 
@@ -49,197 +45,230 @@
             <td id=papermargin_left>
             </td>
             <td id="paper_printarea" class="tech-v">
-                <!-- Blog Post -->
-                <article class="h-entry">
-                    <!-- Title -->
-                    <h1 class="p-name">{{ page.title }}</h1>
-                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                    {% if page.author.name %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
-                    {% else %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
-                    {% endif %}
+                <p><a href="https://tedt.org/RPG/MCC-GW/">Back</a></p>
+                <figure>
+                    <img class="img-responsive img-thumbnail" src="https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
+                    <pre id="ascii-container-image"></pre>
+                    <figcaption>The Creatures of Gamma World</figcaption>
+                </figure>
 
-                    <hr>
-                    
-                    {% include publish-and-update-date-time-v2.html %}
-
-                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
-
-                    <img class="webmention-svg" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
-
-                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
-                    {% assign categories = page.categories %}
-                    {% for category in categories %}<span class="p-category">
-                        {% capture thiscategory %}{{ category | strip }}{% endcapture %}
-                        {% if forloop.length == 1 %}
-                            {{thiscategory}}
-                        {% elsif forloop.last and forloop.length == 2 %}
-                            and {{thiscategory}}
-                        {% elsif forloop.last %}
-                            and {{thiscategory}}
-                        {% else %}
-                            {{thiscategory}}, 
-                        {% endif %}
-                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
-                            {% assign this_is_a_draft = true %}
-                        {% endif %}</span>
-                    {% endfor %}</br>
-
-                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
-
-                    <hr>
-
-                    <!-- <p class="lead">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p> -->
-
-                    <!-- Preview Image -->
-                    <!--
-                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
-                        and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
-
-                        -->
-
-                    {% if page.image %}
-                    <figure>
-                        <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" id="jscii-element-image" alt="{{page.image-credits}}">
-                        <pre id="ascii-container-image"></pre>
-                          <figcaption>
-                            {% if page.image-credits-URL or page.image-credits-title %}
-                                <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
-                            {% elsif page.image-credits %}
-                                {{page.image-credits}}
-                            {% else %}
-                                Unknown
-                            {% endif %}
-                          </figcaption>
-                    </figure>
-                    {% endif %}
-
-                    <hr>
-
-                    <!-- In the event of a draft include a progress bar -->
-                    {% assign draftstatus = page.draft-status %}
-                    {% if this_is_a_draft == true %}
-                        <aside class="well">
-                            {% if draftstatus == "notes" or draftstatus == "" %}
-                                <strong>Notes:</strong>
-                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
-                            {% elsif draftstatus == "unit" %}
-                                <strong>Unit Testing:</strong>
-                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
-                            {% elsif draftstatus == "integration" %}
-                                <strong>Integration Testing:</strong>
-                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
-                            {% elsif draftstatus == "component" %}
-                                <strong>Component Testing:</strong>
-                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
-                            {% elsif draftstatus == "system" %}
-                                <strong>System Testing:</strong>
-                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
-                            {% elsif draftstatus == "alpha" %}
-                                <strong>Alpha Testing:</strong>
-                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
-                            {% elsif draftstatus == "beta" %}
-                                <strong>Beta Testing:</strong>
-                                <p>This project is complete and it has had feedback from the public. </p>
-                            {% elsif draftstatus == "pre-release" %}
-                                <strong>Pre-Release:</strong>
-                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
-                            {% endif %}
-                            <div class="progress-clear">
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "notes" or draftstatus == "" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "unit" or draftstatus == "" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "integration" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "component" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "system" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "alpha" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "beta" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "pre-release" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                            </div>                            
-                            <div class="progress">
-                                <div class="progress-bar notes" role="progressbar" style="width:12.5%">
-                                    Notes
-                                </div>
-                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
-                                    Unit
-                                </div>
-                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
-                                    Int.
-                                </div>
-                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
-                                    Comp.
-                                </div>
-                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
-                                    System
-                                </div>
-                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
-                                    Alpha
-                                </div>
-                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
-                                    Beta
-                                </div>
-                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
-                                    Pre.
-                                </div>
-                            </div>
-                        </aside>
-                        {% endif %}
+			        <h1>{{page.title}}:</h1>
 
 
+					{% if Page.Monster_Name != "" %}
+						<h2 id="details{{forloop.index}}">{{ Page.Monster_Name }}</h2>
+					{% else %}
+						<h2 id="details{{forloop.index}}">{{ Page.Name }} {{ Page.Common_Name }}</h2>
+					{% endif %}
 
-                    <!-- Post Content -->
-                    <span class="e-content">{{ content }}</span>
+					<img style="float: right;" src="https://tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ Page.Name }}.png" height="200" onError="this.onerror=null;this.src='https://tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
 
-                    <hr>
-                </article>
+					{% if Page.Author != "" %}
+						<strong>Reported By:</strong> {{ Page.Author }}
+					{% else %}
+						<strong>Reported By:</strong> unknown contributor
+					{% endif %}
+					{% if Page.Source != "" %}
+						in {{ Page.Source }}
+					{% else %}
+						in <i>data source corrupted</i>.
+					{% endif %}
+
+
+					{% if Page.Role_In_Gamma_World != "" %}
+						<p><strong>Role:</strong> {{ Page.Role_In_Gamma_World }}
+					{% else %}
+						<p><strong>Role:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Base_Stock != "" %}
+						<strong>Base Stock:</strong> {{ Page.Base_Stock }} </p>
+					{% else %}
+						<strong>Base Stock:</strong> Unknown </p>
+					{% endif %}
+
+					{% if Page.Normal_Text != "" %}
+						<p><strong>MCC Stat Block:</strong> {{ Page.Normal_Text }}
+					{% else %}
+						<p>Conversion Not Complete
+					{% endif %}</br>
+					{% if Page.Mutations != "" %}
+						<strong>Mutations: </strong>{{ Page.Mutations }}</p>
+					{% else %}
+						<strong>Mutations: </strong>Unknown</p>
+					{% endif %}
+					
+
+					<p>{% if Page.Number_Appearing_Dice != "" %}
+						<strong>Number Appearing: </strong>{{ Page.Number_Appearing_Dice }}
+					{% else %}
+						<strong>Number Appearing: </strong>More observations needed
+					{% endif %}</br>
+					{% if Page.Morale != "" %}
+						<strong>Morale: </strong>{{ Page.Morale }}
+					{% else %}
+						<strong>Morale: </strong>More observations needed
+					{% endif %}</br>
+
+					{% if Page.New_HD_xdx_plus_minus != "" %}
+						<strong>Hit Dice: </strong>{{ Page.New_HD_xdx_plus_minus }}
+					{% else %}
+						<strong>Hit Dice: </strong>More observations needed
+					{% endif %}</br>
+
+					{% if Page.Armor != "" %}
+						<strong>Armor: </strong>{{ Page.Armor }} ({{ Page.AC_xx }})
+					{% else %}
+						<strong>Armor: </strong>More observations needed
+					{% endif %}</br>
+					{% if Page.Size != "" %}
+						<strong>Size:</strong> {{ Page.Size }}
+					{% else %}
+						<strong>Size:</strong> Unknown
+					{% endif %}</p>
+
+					{% if Page.MV_xx != "" %}
+						<p><strong>Movement: </strong>{{ Page.MV_xx }}</p>
+					{% else %}
+						<p><strong>Movement: </strong>More observations needed</p>
+					{% endif %}
+
+					<p>{% if Page.New_Attack_1 != "" %}
+						<strong>Attack: </strong>{{ Page.New_Attack_1 }}
+						{% if Page.New_Attack_2 != "" %}
+							{{ Page.New_Attack_1 }}
+						{% endif %}</p>
+						{% else %}
+						<strong>Attack: </strong>More observations needed
+					{% endif %}</p>
+
+					<table>
+						<tr>
+							<td>
+								{% if Page.MS != "" %}
+									<strong>MS: </strong>{{ Page.MS }}
+								{% else %}
+									<strong>MS: </strong>More observations needed
+								{% endif %}
+
+							</td>
+							<td>
+								{% if Page.PS != "" %}
+									<strong>PS: </strong>{{ Page.PS }}
+								{% else %}
+									<strong>PS: </strong>More observations needed
+								{% endif %}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{% if Page.IN != "" %}
+									<strong>IN: </strong>{{ Page.IN }}
+								{% else %}
+									<strong>IN: </strong>More observations needed
+								{% endif %}
+							</td>
+							<td>
+							{% if Page.DX != "" %}
+								<strong>DX: </strong>{{ Page.DX }}
+							{% else %}
+								<strong>DX: </strong>More observations needed
+							{% endif %}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{% if Page.CH != "" %}
+									<strong>CH: </strong>{{ Page.CH }}
+								{% else %}
+									<strong>CH: </strong>More observations needed
+								{% endif %}
+							</td>
+							<td>
+								{% if Page.CN != "" %}
+									<strong>CN: </strong>{{ Page.CN }}
+								{% else %}
+									<strong>CN: </strong>More observations needed
+								{% endif %}
+							</td>
+						</tr>
+					</table>
+					<p>{% if Page.Frequency != "" %}
+						<strong>Frequency:</strong> {{ Page.Frequency }}
+					{% else %}
+						<strong>Frequency:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Organization != "" %}
+						<strong>Organization:</strong> {{ Page.Organization }}
+					{% else %}
+						<strong>Organization:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Activity_Cycle != "" %}
+						<strong>Activity Cycle:</strong> {{ Page.Activity_Cycle }}
+					{% else %}
+						<strong>Activity Cycle:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Diet != "" %}
+						<strong>Diet:</strong> {{ Page.Diet }}
+					{% else %}
+						<strong>Diet:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Habitat != "" %}
+						<strong>Habitat:</strong> {{ Page.Habitat }}
+					{% else %}
+						<strong>Habitat:</strong> Unknown
+					{% endif %}</br>
+					{% if Page.Tech_Level != 0 %}
+						<strong>Tech Level:</strong> {{ Page.Tech_Level }} 
+						{% if Page.Tech_Max != 0 %}
+							- {{ Page.Tech_Max }}
+						{% else %}
+							unknown 
+						{% endif %}
+					{% else %}
+						<strong>Tech Level:</strong> Unknown </p>
+					{% endif %}</br>
+					{% if Page.Artifacts != "" %}
+						<strong>Artifacts:</strong> {{ Page.Artifacts }}
+					{% else %}
+						<strong>Artifacts:</strong> Unknown
+					{% endif %} </p>
+
+					{% if Page.New_Description != "" %}
+						{% if Page.Description_Output != "" %}
+						<p><strong>Description (Initial Observation):</strong> {{ Page.Description_Output }}</p>
+						<p><strong>Description (Observation 1):</strong> {{ Page.New_Description }}</p>
+						{% else %}
+							<p><strong>Description:</strong> {{ Page.New_Description }}</p>
+						{% endif %}
+					{% else %}
+						{% if Page.Description_Output != "" %}
+							<p><strong>Description:</strong> {{ Page.Description_Output }}</p>
+						{% else %}
+							<p><strong>Description:</strong> Unknown </p>
+						{% endif %}
+					{% endif %}
+
+
+					{% if Page.Combat != "" %}
+						<p><strong>Combat:</strong> {{ Page.Combat }}</p>
+					{% else %}
+						<p><strong>Combat:</strong> Unobserved in Combat</p>
+					{% endif %}
+
+					{% if Page.Society != "" %}
+						<p><strong>Society:</strong> {{ Page.Society }}</p>
+					{% else %}
+						<p><strong>Society:</strong> Anthropological studies incomplete</p>
+					{% endif %}
+
+					{% if Page.Behavior != "" %}
+						<p><strong>Behavior:</strong> {{ Page.Behavior }}</p>
+					{% else %}
+						<p><strong>Behavior:</strong> Behavior modeling incomplete</p>
+					{% endif %}
+					<hr>
+
+<br>
 
                 <!--Next and Previous Articles -->
                 {% if page.previous.url %}
@@ -270,22 +299,32 @@
                 {% include comments-webmentions.html %}
 
                 {% include comments.html %}
-
-                <script>
-                    // put in the image
-                    var imgJscii = new Jscii({
-                        width: 100,
-                        color: true,
-                        el: document.getElementById('jscii-element-image'),
-                        fn: function(str) {
-                            document.getElementById('ascii-container-image').innerHTML = str;
-                        }
-                    });
-                    document.getElementById('jscii-element-image').style.display = 'none';
-                </script>
             </td>
             <td id="papermargin_right">
             </td>
         </tr>
     </Table>
-</body>     
+    <script>
+        // put in the image
+        var imgJscii = new Jscii({
+            width: 150,
+            color: true,
+            el: document.getElementById('jscii-element-image'),
+            fn: function(str) {
+                document.getElementById('ascii-container-image').innerHTML = str;
+            }
+        });
+        document.getElementById('jscii-element-image').style.display = 'none';
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
