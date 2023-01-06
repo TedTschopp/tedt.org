@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
+<head>
     <meta charset="utf-8">
 
     <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
@@ -10,7 +8,7 @@
 
     {% include calculate-variables.html %}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -19,84 +17,28 @@
 
     <!-- SEO Metadata -->
     {% include meta-data-seo.html %}
-
+    
     <!-- PWA Header Includes -->
     {% include pwa-header-includes.html %}
 
     <!-- News Feed Meta Tags. -->
-    {% include feeds.html %}
+    {% include feeds.jekyll %}
 
-    <!-- Bootstrap core CSS -->
-    <!-- START OF CSS INCLUDE -->
+    <!-- Twitter Meta Tags. -->
+    {% include twitter-card-metadata.jekyll %}
 
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-          crossorigin="anonymous">
-
-    <!-- TODO: Add Dark Mode Back -->
-
-    <!-- Custom CSS -->
-    {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
-    <link rel="stylesheet"
-          href="css/bootstrap4-landing-page.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    {% else %}    
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/blog-post.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/webmention.css" >
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/solarized-dark.css" >
-    {% endif %}
-
-    <!-- Custom Fonts -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-          crossorigin="anonymous">
-    
-    <link rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
-          crossorigin="anonymous">
-
-    {% if this_is_a_draft == true %}
-    <link rel="preload"
-          href="{{site.siteurl}}/css/handwriting-draft_free-version.woff2" 
-          as="font" 
-          type="font/woff2" 
-          crossorigin>
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/draft-blog-post.css">
-    {% endif %}
-
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet"
-          href="vendor/simple-line-icons/css/simple-line-icons.css" 
-          type="text/css">
-    <!-- END OF CSS INCLUDE -->
-
-    <!-- Fonts for the link-tree -->
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/Link-Tree.css" 
-          type="text/css">
+    <!-- Bootstrap Core CSS -->
+    {% include all-css-includes.html %}
 
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
 
-  </head>
+</head>
 
-  <body>
-    <!-- Legacy Browser Redirect & Google Tag Manager -->
+<body>
     {% include top-of-body.html %}
 
     {% include bootstrap4-navigation.html %}
-
-
 
     <!-- Page Content -->
     <div class="container">
@@ -273,116 +215,20 @@
                 </div>
             </div>    {% endcomment %}
         </div>
-
         <!-- /.row -->
-
         <hr>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
     </div>
     <!-- /.container -->
 
+    <!-- jQuery -->
+    {% include js-jquery.html %}
 
-
-  <!-- Footer -->
-    <footer class="footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-                <a href="https://tedt.org/">Home</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="https://tedt.org/#about">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="https://tedt.org/#contact">Contact</a>
-              </li>
-              <!--
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li> -->
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="https://tedt.org/1993/01/01/privacy-policy/">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
-          </div>
-          <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
-           {% if site.github_username or
-                  site.linkedin_username or
-                  site.mastadon_username or
-                  site.youtube_username or
-                  site.reddit_username or
-                  site.indiewebcamp_username or
-                  site.quora_username %}
-            <ul class="list-inline mb-0">
-              {% if site.github_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://github.com/{{ site.github_username }}/" rel="me"><i class="fab fa-github fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.linkedin_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" rel="me"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.mastadon_username %}
-              <li class="list-inline-item mr-3">
-                {% assign mastadon_strings = site.mastadon_username | split: "@" %}
-                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.youtube_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.reddit_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me"><i class="fab fa-reddit fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.quora_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me"><i class="fab fa-quora fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              {% if site.indiewebcamp_username %}
-              <li class="list-inline-item mr-3">
-                  <a href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me"><i class="fas fa-external-link-alt fa-lg fa-fw"></i></a>
-              </li>
-              {% else %}
-              {% endif %}
-              <li class="list-inline-item">
-                <a href="{{ site.siteurl }}" rel="me" >
-                  <i class="fas fa-home fa-lg fa-fw"></i>
-                </a>
-              </li>
-            </ul>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    {% include js-bootstrap.html %}
 
     <!-- Google Analytics JavaScript -->
     {% include js-google-analytics.html %}
@@ -394,6 +240,6 @@
     <script src="{{site.siteurl}}/js/webmention-min.js" type="text/javascript" async=""></script>
     {% include webmention-io-all-templates.html %}
 
-  </body>
+</body>
 
 </html>
