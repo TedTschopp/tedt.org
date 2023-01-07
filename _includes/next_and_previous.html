@@ -13,7 +13,7 @@
 	{% assign next_title = "Home" %}
 {% endif %}
 
-{% assign  document = site.posts | sort: "date" | reversed %}
+{% assign  document = site.documents | sort: "date" | reversed %}
 {% for links in document %}
 	{% if links.title == page.title %}
 		{% unless forloop.first %}
