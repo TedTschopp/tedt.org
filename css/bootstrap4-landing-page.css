@@ -284,6 +284,9 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
-
+.hidden {
+  display: block;
+  visibility: hidden;
+}
 
 
