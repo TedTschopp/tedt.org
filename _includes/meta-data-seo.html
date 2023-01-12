@@ -12,15 +12,32 @@
 <!--  {{full-page-url }} -->
 
 	<!-- TODO do I need different layouts -->
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	{% assign this_page = page %}
+	{% assign page_layout = this_page.layout %}
+	{% if this_page.title == null or this_page.title == empty or this_page.title == '' %}
+		{% if page_layout == 'micropubpost' %}
+			{% assign this_page_title = 'Checked Into ' | append: this_page.mf-checkin[0].properties.name[0] %}
+		{% else %}
+			{% if site.title == null or site.title == empty or site.title == '' %}
+				{% assign this_page_title = "Title: NA" %}
+			{% else %}
+				{% assign this_page_title = site.title %}
+			{% endif %}
+		{% endif %}
+	{% else%}
+		{% assign this_page_title = this_page.title %}
+	{% endif %}
+
+	<title>{{ this_page_title }}</title>
     <!-- TODO: Add Multiple Authors -->
     <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
     <link rel="author" href="/humans.txt">
     <link rel="copyright" href="/copyright.html">
-	<link rel="canonical" href="{{ site.siteurl }}/{{ page.url }}" />
-	<!-- TODO add Syndication URLs for Posse data-->
+    <link rel="canonical" href="{{ site.siteurl }}/{{ page.url }}" />
+    <!-- TODO add Syndication URLs for Posse data-->
 
-	<!-- Add a switch to turn this on and off via YML file -->
+    <!-- Add a switch to turn this on and off via YML file -->
     <!-- Search engine robots Meta Tags. -->
     <!-- Disable from all search engines.-->
     <!--<meta name="robots" content="noindex, nofollow, noodp, noydir, noarchive">-->
@@ -40,7 +57,7 @@
 	    <meta property="og:image"            content="https://tedt.org/img/webpage_thumbnail.png">
 	    <meta property="og:image:alt"        content="{{site.name}}">
 	    <meta property="og:site_name"        content="{{ site.name }}">
-	    <meta property="og:title"            content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	    <meta property="og:title"            content="{{ this_page_title }}">
 	    <meta property="og:description"      content="{{ site.description }}">
 	    <meta property="og:type"             content="website">
 	    <meta property="og:url"              content="{{ home-page-url }}">
