@@ -1,4 +1,7 @@
 {% if page.previous.url %}
+	{% assign previous_page = page.previous %}
+	{% assign previous_layout = previous_page.layout %}
+	{{previous_layout}}
 	{% assign previous_url = page.previous.url %}
 	{% assign previous_title = page.previous.title %}
 {% else %}
