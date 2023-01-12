@@ -3,7 +3,7 @@
 	{% assign previous_layout = previous_page.layout %}
 	{% if page.previous.title == null or page.previous.title == empty or page.previous.title == '' %}
 		{% if previous_layout == 'micropubpost' %}
-			{% assign previous_title = 'Checked Into ' | append: page.prev.mf-checkin[0].properties.name[0] %}
+			{% assign previous_title = 'Checked Into ' | append: previous_page.mf-checkin[0].properties.name[0] %}
 		{% else %}
 			{% assign previous_title = "Title: NA" %}
 		{% endif %}
