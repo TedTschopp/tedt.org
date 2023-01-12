@@ -1,73 +1,46 @@
 {% if page.previous.url %}
 	{% assign previous_page = page.previous %}
 	{% assign previous_layout = previous_page.layout %}
-	{{previous_layout}}
+	{% if page.previous.title == null or page.previous.title == empty or page.previous.title == '' %}
+		{% if previous_layout == 'micropubpost' %}
+			{% assign previous_title = 'Checked Into ' | append: page.prev.mf-checkin[0].properties.name[0] %}
+		{% else %}
+			{% assign previous_title = "Title: NA" %}
+		{% endif %}
+	{% else%}
+		{% assign previous_title = page.previous.title %}
+	{% endif %}
 	{% assign previous_url = page.previous.url %}
-	{% assign previous_title = page.previous.title %}
 {% else %}
 	{% assign previous_url = site.siteurl %}
 	{% assign previous_title = "Home" %}
 {% endif %}
 {% if page.next.url %}
+	{% assign next_page = page.next %}
+	{% assign next_layout = next_page.layout %}
+	{% if page.next.title == null or page.next.title == empty or page.next.title == '' %}
+		{% if next_layout == 'micropubpost' %}
+			{% assign next_title = 'Checked Into: ' | append: page.next.mf-checkin[0].properties.name[0] %}
+		{% else %}
+			{% assign next_title = "Title: NA" %}
+		{% endif %}
+	{% else%}
+		{% assign next_title = page.next.title %}
+	{% endif %}
 	{% assign next_url = page.next.url %}
-	{% assign next_title = page.next.title %}
+
 {% else %}
 	{% assign next_url = site.siteurl %}
 	{% assign next_title = "Home" %}
 {% endif %}
 
-{% assign  document = site.documents | sort: "date" | reversed %}
-{% for links in document %}
-	{% if links.title == page.title %}
-		{% unless forloop.first %}
-			{% assign prevurl = prev.url %}
-			{% if prev.title == null or prev.title == empty or prev.title == '' %}
-				{% if prev.layout == 'micropubpost' %}
-					{% assign prevtitle = 'Checked Into ' | append: prev.mf-checkin[0].properties.name[0] %}
-				{% else %}
-					{% assign prevtitle = "WIP" %}
-				{% endif %}
-			{% else%}
-				{% assign prevtitle = prev.title %}
-			{% endif %}
-		{% endunless %}
-
-		{% unless forloop.last %}
-			{% assign next = document[forloop.index] %}
-			{% assign nexturl = next.url %}
-
-			{% if next.title == null or next.title == empty or next.title == '' %}
-				{% if next.layout == 'micropubpost' %}
-					{% assign nexttitle = 'Checked Into: ' | append: next.mf-checkin[0].properties.name[0] %}
-				{% else %}
-					{% assign nexttitle = "WIP" %}
-				{% endif %}
-			{% else%}
-				{% assign nexttitle = next.title %}
-			{% endif %}
-		{% endunless %}
-	{% endif %}
-
-	{% assign prev = links %}
-{% endfor %}
-
-{% if prevurl or nexturl %}
-	{% if previous_title == 'Home'%}
-		{% assign prevurl = previous_url %}
-		{% assign nexttitle = 'Home' %}
-	{% endif %} 
-	{% if next_title == 'Home'%}
-		{% assign nexturl = next_url %}
-		{% assign nexttitle = 'Home' %}
-	{% endif %} 
-
+{% if previous_url or next_url %}
 	<div class="row">
 	<div class="col-md-6 text-center">
-		<span class="float-md-left">{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ prevtitle}}</a>{% endif %}</span>
+		<span class="float-md-left">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</span>
 	</div>
 	<div class="col-md-6 text-center">
-		<span class="float-md-right">{% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
+		<span class="float-md-right">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
 	</div>
 	</div>
-
 {% endif %}
