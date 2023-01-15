@@ -215,9 +215,11 @@ figcaption {
 	background-color: #fff3c9;
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
 }
 
-.folklore:first-letter {
+.folklore p:first-of-type:first-letter {
 	font-family: "UngerFrakturZierbuchstaben", serif;
 	float: left;
 	font-size: 5rem;
@@ -235,7 +237,6 @@ figcaption {
 	margin: auto;
 	text-align: center;
 	font-weight: normal;
-
 }
 
 .folklore h2 {
