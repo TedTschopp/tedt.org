@@ -201,3 +201,93 @@ figcaption {
 	display: none;
 	visibility: hidden;
 }
+
+.folklore {
+	font-family: 'Cedarville Cursive', cursive;
+	float: left;
+	font-size: 4rem;
+	line-height: 0.65;
+	margin: 0.1em 0.1em 0.2em 0;
+	color: #8b0000;
+	background-color: #fff3c9;
+	margin: auto;
+	max-width: 600px;
+}
+
+.folklore h1 {
+	font-family: "IM Fell DW Pica SC", serif;
+	color: #8b0000;
+	font-size: 3.5rem;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+
+}
+
+.folklore h2 {
+	font-family: "IM Fell DW Pica SC", serif;
+	font-weight: normal;
+	color: #8b0000;
+	font-size: 3rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+.folklore h3 {
+	font-family: "IM Fell DW Pica SC", serif;
+	font-weight: normal;
+	font-size: 2.5rem;
+	color: #8b0000;
+	margin-bottom: 10px;
+}
+
+.folklore h4 {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 2rem;
+	color: #8b0000;
+}
+
+.folklore h5 {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.5rem;
+	color: #8b0000;
+}
+
+.folklore h6 {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.35rem;
+	color: #8b0000;
+}
+
+.folklore b, th {
+	color: #8b0000;
+	font-family: "IM Fell DW Pica SC", serif;
+	font-weight: normal;
+}
+
+.folklore table {
+  border: 3px solid #8b0000;
+  border-collapse: collapse;
+
+}
+
+.folklore th, td {
+	border: 0.5px solid #8b0000;
+	padding: 5px;
+}
+
+
+.has-dropcap:first-letter {
+  font-family: "IM Fell DW Pica SC", serif;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+  color: #8b0000;
+}
