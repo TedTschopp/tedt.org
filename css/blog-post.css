@@ -202,17 +202,31 @@ figcaption {
 	visibility: hidden;
 }
 
+@font-face {
+	font-family: 'UngerFrakturZierbuchstaben';
+	src: url('UngerFrakturZierbuchstaben.woff2') format('woff2'),
+	    url('UngerFrakturZierbuchstaben.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+
 .folklore {
 	font-family: 'Cedarville Cursive', cursive;
+	background-color: #fff3c9;
+	margin: auto;
+	max-width: 600px;
+}
+
+.folklore:first-letter {
+	font-family: "UngerFrakturZierbuchstaben", serif;
 	float: left;
 	font-size: 4rem;
 	line-height: 0.65;
 	margin: 0.1em 0.1em 0.2em 0;
 	color: #8b0000;
-	background-color: #fff3c9;
-	margin: auto;
-	max-width: 600px;
-}
+   }
+
+
 
 .folklore h1 {
 	font-family: "IM Fell DW Pica SC", serif;
