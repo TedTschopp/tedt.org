@@ -210,6 +210,9 @@ figcaption {
 	font-style: normal;
  }
 
+ @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+
 .folklore {
 	font-family: 'Cedarville Cursive', cursive;
 	background-color: #fff3c9;
@@ -227,8 +230,6 @@ figcaption {
 	margin: 0.1em 0.1em 0.2em 0;
 	color: #8b0000;
    }
-
-
 
 .folklore h1 {
 	font-family: "IM Fell DW Pica SC", serif;
@@ -296,7 +297,6 @@ figcaption {
 	border: 0.5px solid #8b0000;
 	padding: 5px;
 }
-
 
 .has-dropcap:first-letter {
   font-family: "IM Fell DW Pica SC", serif;

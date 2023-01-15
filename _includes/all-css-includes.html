@@ -12,10 +12,14 @@
     <link href="{{site.siteurl}}/css/solarized-dark.css" rel="stylesheet">
     {% endif %}
 
-    <!-- Custom Fonts -->
-    {% include css-font-awesome.html %}
-    
     {% if this_is_a_draft == true %}
-        <link rel="preload" href="{{site.siteurl}}/css/handwriting-draft_free-version.woff2" as="font" type="font/woff2" crossorigin>
         <link href="{{site.siteurl}}/css/draft-blog-post.css" rel="stylesheet">
     {% endif %}
+
+
+
+    <!-- Custom Fonts -->
+    {% include css-font-awesome.html %}
+
+    <link rel="preload" href="{{site.siteurl}}/css/handwriting-draft_free-version.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{site.siteurl}}/font/UngerFrakturZierbuchstaben.woff22" as="font" type="font/woff2" crossorigin>
