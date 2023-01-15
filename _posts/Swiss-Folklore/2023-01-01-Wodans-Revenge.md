@@ -24,15 +24,14 @@ tags:
   - Folklore
 
 ---
-# Wodan's Revenge
-
 C. Kohlrusch, Schweizerisches Sagenbuch. Based on oral traditions, chronicles and other printed and manuscript sources. Leipzig 1854.
 
 Read in by the Mutabor Fairy Tale Foundation
 
 Translated by Ted Tschopp using various online tools and edited for my enjoyment. 
 
-> When the pagan deities succumbed to the victorious Christianity and also the inhabitants of Vaud swore to the new doctrine, the resentment of the defeated against their former followers was so great that they sought to harm them as much as possible in their temporal good by the elements over which they had not yet completely lost power at that time, in order to punish them for their apostasy and to make their faith in the new god waver again. First of all it was Wodan, the first of the pagan gods, who took such revenge. Sometimes he roared as an unleashed storm, sometimes on the cloud of thunder, destroying the fields and crops of rich and poor.
+> # Wodan's Revenge
+>When the pagan deities succumbed to the victorious Christianity and also the inhabitants of Vaud swore to the new doctrine, the resentment of the defeated against their former followers was so great that they sought to harm them as much as possible in their temporal good by the elements over which they had not yet completely lost power at that time, in order to punish them for their apostasy and to make their faith in the new god waver again. First of all it was Wodan, the first of the pagan gods, who took such revenge. Sometimes he roared as an unleashed storm, sometimes on the cloud of thunder, destroying the fields and crops of rich and poor.
 >
 >Thus he once came down the Rhone in the old splendor on a high-built wave, like sitting on a war horse, holding a battle sword in one hand and the globe in the other. Then he shouted, River, rise! and the Rhone rose at his command, flooded the bank and, devastating the whole area, swept away part of St. Maurice; only the place where the altar to the new god was erected remained intact. Only then did Wodan realize his powerlessness against the Christian god.
 >
