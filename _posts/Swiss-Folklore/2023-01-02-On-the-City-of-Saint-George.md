@@ -38,7 +38,6 @@ tags:
 > According to O. Giger.
 {: .folklore }
 
-
 Source: Legends of the Canton St. Gallen, Jakob Kuoni, St. Gallen 1903, No. 360, p. 201f
 
 Read in by the Mutabor Fairy Tale Foundation.
