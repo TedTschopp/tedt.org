@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
  @font-face {
 	font-family: 'IrwinAllen';
 	src: url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff2') format('woff2'),
@@ -205,12 +207,26 @@ figcaption {
 @font-face {
 	font-family: 'UngerFrakturZierbuchstaben';
 	src: url('UngerFrakturZierbuchstaben.woff2') format('woff2'),
-	    url('UngerFrakturZierbuchstaben.woff') format('woff');
+	     url('UngerFrakturZierbuchstaben.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cedarville Cursive';
+	src: url('CedarvilleCursive-Regular.ttf') format('truetype');
+ }
+ @font-face {
+	font-family: 'IM Fell DW Pica SC';
+	src: url('IMFellDWPicaSC-Regular.ttf') format('truetype');
+ }
+ @font-face {
+	font-family: 'IM Fell DW Pica';
+	src: url('IMFellDWPica-Regular.ttf') format('truetype');
  }
 
- @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+
 
 
 .folklore {
