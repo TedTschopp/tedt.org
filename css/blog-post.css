@@ -213,24 +213,24 @@ figcaption {
 }
 
 @font-face {
-	font-family: 'Cedarville Cursive';
+	font-family: 'CedarvilleCursive';
 	src: url('CedarvilleCursive-Regular.ttf') format('truetype');
  }
  @font-face {
-	font-family: 'IM Fell DW Pica SC';
+	font-family: 'IMFellDWPicaSC';
 	src: url('IMFellDWPicaSC-Regular.ttf') format('truetype');
  }
  @font-face {
-	font-family: 'IM Fell DW Pica';
+	font-family: 'IMFellDWPica';
 	src: url('IMFellDWPica-Regular.ttf') format('truetype');
- }
+}
 
 
 
 
 
 .folklore {
-	font-family: 'Cedarville Cursive', cursive;
+	font-family: 'CedarvilleCursive', cursive;
 	background-color: #fff3c9;
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
@@ -248,7 +248,7 @@ figcaption {
    }
 
 .folklore h1 {
-	font-family: 'IM Fell DW Pica SC', serif;
+	font-family: 'IMFellDWPicaSC', serif;
 	color: #8b0000;
 	font-size: 3.5rem;
 	margin: auto;
@@ -257,7 +257,7 @@ figcaption {
 }
 
 .folklore h2 {
-	font-family: 'IM Fell DW Pica SC', serif;
+	font-family: 'IMFellDWPicaSC', serif;
 	font-weight: normal;
 	color: #8b0000;
 	font-size: 3rem;
@@ -266,7 +266,7 @@ figcaption {
 }
 
 .folklore h3 {
-	font-family: 'IM Fell DW Pica SC', serif;
+	font-family: 'IMFellDWPicaSC', serif;
 	font-weight: normal;
 	font-size: 2.5rem;
 	color: #8b0000;
@@ -274,7 +274,7 @@ figcaption {
 }
 
 .folklore h4 {
-	font-family: 'IM Fell DW Pica', serif;
+	font-family: 'IMFellDWPica', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 2rem;
@@ -282,7 +282,7 @@ figcaption {
 }
 
 .folklore h5 {
-	font-family: 'IM Fell DW Pica', serif;
+	font-family: 'IMFellDWPica', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.5rem;
@@ -290,7 +290,7 @@ figcaption {
 }
 
 .folklore h6 {
-	font-family: 'IM Fell DW Pica', serif;
+	font-family: 'IMFellDWPica', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.35rem;
@@ -299,7 +299,7 @@ figcaption {
 
 .folklore b, th {
 	color: #8b0000;
-	font-family: 'IM Fell DW Pica SC', serif;
+	font-family: 'IMFellDWPicaSC', serif;
 	font-weight: normal;
 }
 
@@ -315,7 +315,7 @@ figcaption {
 }
 
 .has-dropcap:first-letter {
-  font-family: 'IM Fell DW Pica SC', serif;
+  font-family: 'IMFellDWPicaSC', serif;
   float: left;
   font-size: 4rem;
   line-height: 0.65;

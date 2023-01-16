@@ -24,9 +24,13 @@ tags:
   - Folklore
 
 ---
-C. Kohlrusch, Schweizerisches Sagenbuch. Based on oral traditions, chronicles and other printed and manuscript sources. Leipzig 1854.
+The Swiss Book of Legends:
 
-Read in by the Mutabor Fairy Tale Foundation
+According to oral traditions, chronicles and other printed and handwritten sources and is accompanied by explanatory notes.
+
+Explanatory Notes by C. Kohlrusch.
+
+Leipzig 1854.
 
 Translated by Ted Tschopp using various online tools and edited for my enjoyment. 
 
