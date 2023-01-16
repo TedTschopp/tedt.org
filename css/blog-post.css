@@ -207,7 +207,11 @@ figcaption {
 @font-face {
 	font-family: 'UngerFrakturZierbuchstaben';
 	src: url('UngerFrakturZierbuchstaben.woff2') format('woff2'),
-	     url('UngerFrakturZierbuchstaben.woff') format('woff');
+	url('UngerFrakturZierbuchstaben.woff') format('woff'),
+	url('UngerFrakturZierbuchstaben.ttf') format('truetype'),
+	url('UngerFrakturZierbuchstaben.otf') format('opentype')
+		
+		;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -224,6 +228,20 @@ figcaption {
 	font-family: 'IMFellDWPica';
 	src: url('IMFellDWPica-Regular.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'coelnische_current_fraktur';
+	src: url('COELCF__.TTF') format('truetype');
+ }
+ @font-face {
+	font-family: 'strassburgfraktur';
+	src: url('strassburgfraktur.ttf') format('truetype');
+ }
+ @font-face {
+	font-family: 'RegentUNZ';
+	src: url('RegentUNZ.ttf') format('truetype');
+ }
+
+ 
 
 
 
