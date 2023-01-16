@@ -209,11 +209,11 @@ figcaption {
 	src: url('UngerFrakturZierbuchstaben.woff2') format('woff2'),
 	url('UngerFrakturZierbuchstaben.woff') format('woff'),
 	url('UngerFrakturZierbuchstaben.ttf') format('truetype'),
-	url('UngerFrakturZierbuchstaben.otf') format('opentype')
-		
-		;
+	url('UngerFrakturZierbuchstaben.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
+	/* ONLY GOOD FOR FIRST LETTER ILLUMINATED GERMAN FONT */
+
 }
 
 @font-face {
@@ -231,20 +231,18 @@ figcaption {
 @font-face {
 	font-family: 'coelnische_current_fraktur';
 	src: url('COELCF__.TTF') format('truetype');
+	/* FANCY CAPITAL LETTERS AND GOOD TITLE FONT FOR LOWER CASE */
  }
  @font-face {
 	font-family: 'strassburgfraktur';
 	src: url('strassburgfraktur.ttf') format('truetype');
- }
+	/* SUPER FANCY CAPITAL LETTERS AND OK NORMAL FONT FOR LOWERCASE */
+}
  @font-face {
 	font-family: 'RegentUNZ';
 	src: url('RegentUNZ.ttf') format('truetype');
+	/* GREAT TITLE CASE FONT */
  }
-
- 
-
-
-
 
 
 .folklore {
@@ -257,7 +255,7 @@ figcaption {
 }
 
 .folklore p:first-of-type:first-letter {
-	font-family: 'UngerFrakturZierbuchstaben', serif;
+	font-family: 'coelnische_current_fraktur', serif;
 	float: left;
 	font-size: 5rem;
 	line-height: 0.65;
@@ -266,7 +264,7 @@ figcaption {
    }
 
 .folklore h1 {
-	font-family: 'IMFellDWPicaSC', serif;
+	font-family: 'RegentUNZ', serif;
 	color: #8b0000;
 	font-size: 3.5rem;
 	margin: auto;
