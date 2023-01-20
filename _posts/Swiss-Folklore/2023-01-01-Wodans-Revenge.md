@@ -30,7 +30,7 @@ tags:
 >
 >Thus he once came down the Rhône in the old splendor on a high-built wave, like sitting on a war horse, holding a battle sword in one hand and the globe in the other. Then he shouted, "River, Rise!" and the Rhône rose at his command, flooded the bank and, devastating the whole area, swept away part of St. Maurice.  The only place unharmed by the flood was the place where the altar to the new God was erected. Only then did Wodan realize his powerlessness against the Christian God.
 >
->Never again since that time has Wodan shown himself to mankind, never again has he dared to try again to found his kingdom among them. Only at night, at certain times of the year, he still lets himself be heard in the roar of the storm, high up on the glaciers, between rocks and stones, in the gloomy forest floor, but more to torment himself than to the harm of mankind. Unseen by human eyes, he then walks along them in a hideous procession, Freya, his wife, once a kind goddess, now an evil sorceress, at his side, and what is eternally damned follows him: Suicides, drunkards, unbaptized dead children, beheaded and hanged malefactors, [voluptuous women]{#what}[^1], witches and sorcerers, bloodthirsty mermaids and mischievous gnomes, in short, the host of all those evil spirits whose realm is the rocks and glaciers of the Alps.  It is said that heir number is so great that, if they were to divide amongst themselves those rocks and glaciers, hardly a pound of the mighty mass of ice and rock would be given to each one. 
+>Never again since that time has Wodan shown himself to mankind, never again has he dared to try again to found his kingdom among them. Only at night, at certain times of the year, he still lets himself be heard in the roar of the storm, high up on the glaciers, between rocks and stones, in the gloomy forest floor, but more to torment himself than to the harm of mankind. Unseen by human eyes, he then walks along them in a hideous procession, Freya, his wife, once a kind goddess, now an evil sorceress, at his side, and what is eternally damned follows him: Suicides, drunkards, unbaptized dead children, beheaded and hanged malefactors, [voluptuous women](#what){: .who}[^1], witches and sorcerers, bloodthirsty mermaids and mischievous gnomes, in short, the host of all those evil spirits whose realm is the rocks and glaciers of the Alps.  It is said that heir number is so great that, if they were to divide amongst themselves those rocks and glaciers, hardly a pound of the mighty mass of ice and rock would be given to each one. 
 >
 >Thus sank Wodan, once worshipped by the people as a holy god.
 {: .folklore }
@@ -47,7 +47,6 @@ Leipzig 1854.
 Translated by Ted Tschopp using various online tools and edited for my enjoyment. 
 
 <script>
-
 import { annotate, annotationGroup } from 'rough-notation';
 
 const a1 = annotate(document.querySelector('#wodans-revenge'), { type: 'underline' });
