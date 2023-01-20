@@ -44,4 +44,3 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
 >Thus sank Wodan, once worshipped by the people as a holy god.
 {: .folklore }
 [^1]: I wonder if this translation is wrong.
-{: .folklore }
