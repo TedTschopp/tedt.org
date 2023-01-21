@@ -52,14 +52,14 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
   const annotationGroup = RoughNotation.annotationGroup;
 
   const a1 = annotate(document.querySelector('#wodans-revenge'), { type: 'underline' });
+  const a2 = annotate(document.querySelector('#post-6095685911'), { type: 'bracket' }); 
   const a3 = annotate(document.querySelector('.who'), { type: 'circle' });
 
-  /* const a2 = annotate(document.querySelector('#e3'), { type: 'box' }); */
-
   a1.color = '#8b0000';
-   a3.color = '#8b0000';
+  a2.color = '#8b0000';
+  a3.color = '#8b0000';
 
-  const ag = annotationGroup([a1,a3]);
+  const ag = annotationGroup([a1,a2,a3]);
 
    ag.show();
 
