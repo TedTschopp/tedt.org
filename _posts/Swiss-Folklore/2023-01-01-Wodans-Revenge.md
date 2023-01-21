@@ -46,7 +46,7 @@ Leipzig 1854.
 
 Translated by Ted Tschopp using various online tools and edited for my enjoyment.
 
-<script type="text/javascript">
+<script defer type="text/javascript">
 
   const annotate = RoughNotation.annotate;
   const annotationGroup = RoughNotation.annotationGroup;
@@ -56,6 +56,7 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
   const a3 = annotate(document.querySelector('.who'), { type: 'circle' });
 
   a1.color = '#8b0000';
+  a1.padding = "-5";
   a2.color = '#8b0000';
   a3.color = '#8b0000';
 
