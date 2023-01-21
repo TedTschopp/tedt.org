@@ -52,7 +52,7 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
   const annotationGroup = RoughNotation.annotationGroup;
 
   const a1 = annotate(document.querySelector('#wodans-revenge'), { type: 'underline' });
-  const a3 = annotate(document.querySelector('.what'), { type: 'circle' });
+  const a3 = annotate(document.querySelector('.who'), { type: 'circle' });
 
   /* const a2 = annotate(document.querySelector('#e3'), { type: 'box' }); */
 
