@@ -47,7 +47,7 @@ Leipzig 1854.
 Translated by Ted Tschopp using various online tools and edited for my enjoyment.
 
 <script>
-import { annotate, annotationGroup } from 'rough-notation';
+import { annotate, annotationGroup } from "rough-notation";
 
 const a1 = annotate(document.querySelector('#wodans-revenge'), { type: 'underline' });
 const a3 = annotate(document.querySelector('#what'), { type: 'circle' });
