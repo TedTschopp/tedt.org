@@ -44,7 +44,7 @@ Explanatory Notes by C. Kohlrusch.
 
 Leipzig 1854.
 
-Translated by Ted Tschopp using various online tools and edited for my enjoyment. 
+Translated by Ted Tschopp using various online tools and edited for my enjoyment.
 
 <script>
 import { annotate, annotationGroup } from 'rough-notation';
