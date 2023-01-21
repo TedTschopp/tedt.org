@@ -54,7 +54,7 @@ Translated by Ted Tschopp using various online tools and edited for my enjoyment
   /* const a1 = annotate(document.querySelector('#wodans-revenge'), { type: 'underline' }); */
   const a3 = annotate(document.querySelector('.who'), { type: 'circle' });
 
-  a3.color = '#8b0000';
+  a3.color = 'rgb(139,0,0,.66)';
 
   const ag = annotationGroup([a3]);
 
