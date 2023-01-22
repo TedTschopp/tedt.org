@@ -25,27 +25,38 @@ tags:
   - Folklore
 
 ---
-> # On the City of Saint Geroge
+
+> <ins>Legends of the Canton St. Gallen</ins>
+> 
+> by Jakob Kuoni
+> 
+> St. Gallen 1903, No. 360, p. 201f
 >
+{: .reference }
+
+> # On the City of Saint Geroge
+> ## According to Dr. E. Buss
+> 
 > Wodan, the god of the winds, is also the god of the creatures of the night. 
 > 
-> In Christian times, St. George, the patron Saint of knights and rich lords, often took his place. In fact, the old pilgrimage church is dedicated to St. George, and the noisy retinue of the pagan god sometimes becomes an army of restless spirits that still fill with their haunting the areas where their lord and master was once most eagerly worshipped. St. George's Hill is an ancient cultural site; it was a natural sacrificial altar for pagan feasts; a Roman fort also stood on it, then in the Middle Ages a small Beguinage Monastery, all of which folklore has recorded in its legends down to our time. 
+> In Christian times, St. George, the patron Saint of knights and rich lords, often took his place. In fact, the old pilgrimage church is dedicated to St. George, and the noisy retinue of the pagan god sometimes becomes an army of restless spirits that still fill with their haunting the areas where their lord and master was once most eagerly worshipped. St. George's Hill is an ancient cultural site; it was a natural sacrificial altar for pagan feasts; a Roman fort also stood on it, then in the Middle Ages a small Beguinage Monastery, all of which folklore has recorded in its legends down to our time.
+>
+> ---
 > 
-> According to Dr. E. Buss
+>  ## According to O. Giger
 > 
-> * * *
+> Traveling pilgrims have peered into the rock face through the mountain cliff and discovered immeasurable treasures of gold and silver there, as on the higher stone wall and in the golden hole of the nearby Alp Sennis.  The stones of this area are said to have turned into gold for the traders from Venice, and from it they are said to have taken all their riches.
 > 
-> Traveling pilgrims have peered into the rock face through the mountain cliff and discovered immeasurable treasures of gold and silver there, as on the higher stone wall and in the golden hole of the nearby Alp Sennis.  The stones of this area are said to have turned into gold for the traders from Venice, and from it they are said to have taken all their riches. 
-> 
-> On the heights of the smooth rock face, inaccessible to ordinary people, there is a collection of buildings and in the middle of them several chapels.  Someplace among those chapels there is a door that leads inside the mountain to its hidden treasures. This door opens at certain times, even in broad daylight. When this happens men, who look like clergymen come out, climb up the rock face to the top, one does not understand how, and sun their vestments and all kinds of precious artifacts there between the chapels. During this time, no one dared to climb the heights. When they have solarized their treasures long enough, they return, and disappear into the mountainside, and the door closes again. 
+> On the heights of the smooth rock face, inaccessible to ordinary people, there is a collection of buildings and in the middle of them several chapels.  Someplace among those chapels there is a door that leads inside the mountain to its hidden treasures. This door opens at certain times, even in broad daylight. When this happens men, who look like clergymen come out, climb up the rock face to the top, one does not understand how, and sun their vestments and all kinds of precious artifacts there between the chapels. During this time, no one dared to climb the heights. When they have solarized their treasures long enough, they return, and disappear into the mountainside, and the door closes again.
 > 
 > At night, however, much more sinister things happen on the heights. Often, when in the villages of Flums or Bärschis the bells have struck the midnight hour and the valley lies in deepest darkness, the mountain suddenly becomes light up there, and one sees black figures setting something up between the the two chapels.  Then the figures appear to tirelessly throw two golden balls at giant silver pins.  Down below  you can clearly hear the muffled rolling of the balls, the falling of the pins they hit, and the confused voices of the men.  This goes on until on the stroke of one o'clock everything suddenly falls silent and they all disappear. 
 > 
 > Some of the black figures wear white headgear, but for most of them there is nothing white left. Those with white clothing are said to be redeemable still, while the latter are not.
-> 
-> According to O. Giger.
 {: .folklore }
 
-Source: Legends of the Canton St. Gallen, Jakob Kuoni, St. Gallen 1903, No. 360, p. 201f
-
-Read in by the Mutabor Fairy Tale Foundation.
+> ###### As noted by: T. Tschopp
+> 
+> There is an interesting connection here between St. George, Oden, and the Wild Huntsman.  An additional detail missing from the above legends and myths is that mountain in question above is one of the few active volcanos in Europe.  Additionally, this whole area spoken of above is on the border between Germany, Switzerland, and the old Habsburg empire.  
+>
+> One wonders how much truth there is in the old priests of Oden becoming followers of St. George and then burying their ritualistic objects under the crest of the mountain in secret chambers within the caldera of the Volcano.  The Monastery was moved to a spot along the Rhine river in the early 11th century and it became a castle from that point on.  Volcanos themselves are great source of gold, diamonds, garnet, sapphires, opals, olivine, basalt, obsidian, nickle, lead, zinc, and Bauxite.  This is probably the source of riches spoken of in the myth.
+{: .notes }
