@@ -213,52 +213,95 @@ figcaption {
 	font-weight: normal;
 	font-style: normal;
 	/* ONLY GOOD FOR FIRST LETTER ILLUMINATED GERMAN FONT */
-
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
 	font-family: 'CedarvilleCursive';
 	src: url('CedarvilleCursive-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IMFellDWPicaSC';
 	src: url('IMFellDWPicaSC-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IMFellDWPica';
 	src: url('IMFellDWPica-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 @font-face {
 	font-family: 'coelnische_current_fraktur';
 	src: url('COELCF__.TTF') format('truetype');
 	/* FANCY CAPITAL LETTERS AND GOOD TITLE FONT FOR LOWER CASE */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'strassburgfraktur';
 	src: url('strassburgfraktur.ttf') format('truetype');
 	/* SUPER FANCY CAPITAL LETTERS AND OK NORMAL FONT FOR LOWERCASE */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
  @font-face {
 	font-family: 'RegentUNZ';
 	src: url('RegentUNZ.ttf') format('truetype');
 	/* GREAT TITLE CASE FONT */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'SkennertonFraktur';
 	src: url('SkennertonFraktur.ttf') format('truetype');
 	/* SUPER normal german font errored  */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 @font-face {
 	font-family: 'Hillal';
 	src: url('Hillal.ttf') format('truetype'),
 	url('Hillal.otf') format('opentype');
 	/* Normal hand written font */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 @font-face {
 	font-family: 'DanaLibraryHand-Regular';
 	src: url('DanaLibraryHand-Regular.otf') format('opentype');
 	/* Library card hand  */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
+
+@font-face {
+	font-family: 'AntiquarianScribe';
+	src: url('AntiquarianScribe.eot'); /* IE9 Compat Modes */
+	src: url('AntiquarianScribe.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
+		url('AntiquarianScribe.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('AntiquarianScribe.svg#AntiquarianScribe') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+/* Webfont: AntiquarianScribe */
+}
+
 
 
 .folklore {
@@ -434,7 +477,7 @@ figcaption {
 
 
 .notes {
-	font-family: 'Hillal', serif;
+	font-family: 'AntiquarianScribe', serif;
 	background-color: #fff3c9;
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
@@ -443,7 +486,7 @@ figcaption {
 }
 
 .notes p:first-of-type:first-letter {
-	font-family: 'coelnische_current_fraktur', serif;
+	font-family: 'AntiquarianScribe', serif;
 	float: left;
 	font-size: 5rem;
 	line-height: 0.65;
@@ -452,7 +495,7 @@ figcaption {
    }
 
 .notes h1 {
-	font-family: 'IMFellDWPicaSC', serif;
+	font-family: 'AntiquarianScribe', serif;
 	color: #8b0000;
 	font-size: 3.5rem;
 	margin: auto;
@@ -461,7 +504,7 @@ figcaption {
 }
 
 .notes h2 {
-	font-family: 'IMFellDWPicaSC', serif;
+	font-family: 'AntiquarianScribe', serif;
 	font-weight: normal;
 	color: #8b0000;
 	font-size: 3rem;
@@ -470,7 +513,7 @@ figcaption {
 }
 
 .notes h3 {
-	font-family: 'IMFellDWPicaSC', serif;
+	font-family: 'AntiquarianScribe', serif;
 	font-weight: normal;
 	font-size: 2.5rem;
 	color: #8b0000;
@@ -478,7 +521,7 @@ figcaption {
 }
 
 .notes h4 {
-	font-family: 'IMFellDWPica', serif;
+	font-family: 'AntiquarianScribe', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 2rem;
@@ -486,7 +529,7 @@ figcaption {
 }
 
 .notes h5 {
-	font-family: 'IMFellDWPica', serif;
+	font-family: 'AntiquarianScribe', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.5rem;
@@ -494,7 +537,7 @@ figcaption {
 }
 
 .notes h6 {
-	font-family: 'IMFellDWPica', serif;
+	font-family: 'AntiquarianScribe', serif;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.35rem;
@@ -517,7 +560,7 @@ figcaption {
 }
 
 .notes sup {
-	font-family: 'Hillal', serif;
+	font-family: 'AntiquarianScribe', serif;
 	color: #8b0000;
 }
 
