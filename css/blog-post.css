@@ -243,10 +243,26 @@ figcaption {
 	src: url('RegentUNZ.ttf') format('truetype');
 	/* GREAT TITLE CASE FONT */
  }
+ @font-face {
+	font-family: 'SkennertonFraktur';
+	src: url('SkennertonFraktur.ttf') format('truetype');
+	/* SUPER normal german font errored  */
+}
+@font-face {
+	font-family: 'Hillal';
+	src: url('Hillal.ttf') format('truetype'),
+	url('Hillal.otf') format('opentype');
+	/* Normal hand written font */
+}
+@font-face {
+	font-family: 'DanaLibraryHand-Regular';
+	src: url('DanaLibraryHand-Regular.otf') format('opentype');
+	/* Library card hand  */
+}
 
 
 .folklore {
-	font-family: 'IMFellDWPica', serif;
+	font-family: 'SkennertonFraktur', serif;
 	background-color: #fff3c9;
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
@@ -315,8 +331,6 @@ figcaption {
 
 .folklore b, th {
 	color: #8b0000;
-	font-family: 'IMFellDWPicaSC', serif;
-	font-weight: normal;
 }
 
 .folklore table {
@@ -334,6 +348,182 @@ figcaption {
 	font-family: 'coelnische_current_fraktur', serif;
 	color: #8b0000;
 }
+
+
+
+
+.reference {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	background-color: #fff3c9;
+	margin: auto;
+	padding: 2rem 3rem 1rem 3rem;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+
+.reference h1 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	color: #8b0000;
+	font-size: 3.5rem;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+
+.reference h2 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	font-weight: normal;
+	color: #8b0000;
+	font-size: 3rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+.reference h3 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	font-weight: normal;
+	font-size: 2.5rem;
+	color: #8b0000;
+	margin-bottom: 10px;
+}
+
+.reference h4 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 2rem;
+	color: #8b0000;
+}
+
+.reference h5 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.5rem;
+	color: #8b0000;
+}
+
+.reference h6 {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.35rem;
+	color: #8b0000;
+}
+
+.reference b, th {
+	color: #8b0000;
+}
+
+.reference table {
+  border: 3px solid #8b0000;
+  border-collapse: collapse;
+
+}
+
+.reference th, td {
+	border: 0.5px solid #8b0000;
+	padding: 5px;
+}
+
+.reference sup {
+	font-family: 'DanaLibraryHand-Regular', serif;
+	color: #8b0000;
+}
+
+
+
+.notes {
+	font-family: 'Hillal', serif;
+	background-color: #fff3c9;
+	margin: auto;
+	padding: 2rem 3rem 1rem 3rem;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+
+.notes p:first-of-type:first-letter {
+	font-family: 'coelnische_current_fraktur', serif;
+	float: left;
+	font-size: 5rem;
+	line-height: 0.65;
+	margin: 0.1em 0.1em 0.2em 0;
+	color: #8b0000;
+   }
+
+.notes h1 {
+	font-family: 'IMFellDWPicaSC', serif;
+	color: #8b0000;
+	font-size: 3.5rem;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+
+.notes h2 {
+	font-family: 'IMFellDWPicaSC', serif;
+	font-weight: normal;
+	color: #8b0000;
+	font-size: 3rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+.notes h3 {
+	font-family: 'IMFellDWPicaSC', serif;
+	font-weight: normal;
+	font-size: 2.5rem;
+	color: #8b0000;
+	margin-bottom: 10px;
+}
+
+.notes h4 {
+	font-family: 'IMFellDWPica', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 2rem;
+	color: #8b0000;
+}
+
+.notes h5 {
+	font-family: 'IMFellDWPica', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.5rem;
+	color: #8b0000;
+}
+
+.notes h6 {
+	font-family: 'IMFellDWPica', serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.35rem;
+	color: #8b0000;
+}
+
+.notes b, th {
+	color: #8b0000;
+}
+
+.notes table {
+  border: 3px solid #8b0000;
+  border-collapse: collapse;
+
+}
+
+.notes th, td {
+	border: 0.5px solid #8b0000;
+	padding: 5px;
+}
+
+.notes sup {
+	font-family: 'Hillal', serif;
+	color: #8b0000;
+}
+
+
+
+
 
 .has-dropcap:first-letter {
   font-family: 'IMFellDWPicaSC', serif;
