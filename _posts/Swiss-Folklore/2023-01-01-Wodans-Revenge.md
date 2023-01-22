@@ -33,6 +33,8 @@ tags:
 >
 {: .reference }
 
+---
+
 > # Wodan's Revenge
 >
 >When the pagan deities succumbed to the Christianity and also the inhabitants of Vaud swore to the its new doctrine, the resentment of the defeated gods against their former followers was so great that they sought to harm them as much as possible in their temporal good by the elements over which they had not yet completely lost power at that time, in order to punish them for their apostasy and to make their faith in the new god waver. First of all it was Wodan, the first of the pagan gods, who took such revenge. Sometimes he roared as an unleashed storm, sometimes on the cloud of thunder, destroying the fields and crops of rich and poor.
@@ -44,9 +46,9 @@ tags:
 >Thus sank Wodan, once worshipped by the people as a holy god.
 {: .folklore }
 
-> _C. Kohlrusch's Notes _
-{: .reference }
+---
 
+> _As noted by: C. Kohlrusch _
 > Legends of nocturnal processions of ghosts, which at certain times of the year can be heard in the air with a terrible noise, are at home not only in Switzerland, but in all parts of the sky. But wherever one meets them, they owe their first appearance to the sonorous vibrations of the air, which are wont to precede great changes in temperature; That is why it is also said in the legend of the WuütiSsheere that is at its most mad at Christmas time, at which time violent nightly storms usually announce the beginning of winter. As far as the legend of the raging army or Wütisheere, as it is called in the Bernese Oberland, is concerned, it is very old and is closely connected to the highest deity of our pagan ancestors, Wodan, as is his name, furious army, southern German: Muotes Heer, originally meant nothing else than the Wuotane army. Our ancestors thought of the all-father Odin, Othan, Wuotan or Wodan among other expressions of his all-pervading power as the guide of the battles and as the guide of the heroes who fell in battle in their heavenly hunting pleasures in Valhalla, which they carried over their heads to the sound of the air heard. At Scchonen, a peculiar noise, probably originating from seabirds, which can be heard on the evenings of December, is still called Odens Jagd. However, the sensuous myth in which paganism had clothed the natural phenomenon of the howling storm wind was later obscured by the victorious Christianity, in that here, as everywhere else where the remains of the old faith could not be completely supplanted, the same were replaced by ugly, distorting additions or tried to bring changes into another terrifying version. Thus it transformed the almighty sky-god Odin or Wodan into the devil, and the spirits of the happily departed heroes led by him into the souls of the eternally damned, who, as a raging host, that deity in her new form at the spear, superstitious minds at that moment> fill noFg with fear and screams. But the fact that the devil in the above saga relinquishes his office as leader of the raging army to the gigantic Uroin inhabitants of the country (the idea that giants are his leaders is the more general one in Switzerland) lies in the close connection which, according to the Christian mythical point of view between the idea of ​​the devil and that of the giants, a point to which we shall return later.
 >
 > An interesting compilation of sonorous aerial phenomena, which called into existence myths analogous to the raging army, is brought by F. Nork after a collection of testimonies from credible travelers about the so-called “voices from above” published by the university chancellor Autenrieth in Tübingen. Thus the Englishman Davy relates that in Ceylon in April, at the beginning of the rainy season there, he heard the "demon bird" of the natives in the flat, wooded part of the island, which no one had yet seen from, therefore he applies to the inhabitants as a messenger of death.
