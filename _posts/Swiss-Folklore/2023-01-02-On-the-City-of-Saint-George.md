@@ -1,6 +1,6 @@
 ---
 id: 124289
-title: On the City of Saint George
+title: On the Mountain of Saint George
 date: 2023-01-02T09:26:36-08:00
 author:
   name: Ted Tschopp
@@ -16,7 +16,7 @@ permalink: /2023/01/02/2023-01-02-On-the-City-of-Saint-George/
 image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
 image_alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae of Matthaeus Merian.
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
-image-credits-title: STEIN AM RHEIN - STENIUM AD RHENUM
+image-credits-title: Stein am Rhein – Stenium ad Rhenum
 image-credits-artist: Matthäus Merian (*1593 - †1650)
 categories:
   - Swiss Folklore
@@ -34,16 +34,16 @@ tags:
 >
 {: .reference }
 
-> # On the City of Saint Geroge
-> ## According to Dr. E. Buss
+> # On the Mountain of Saint Geroge
+> ###### According to Dr. E. Buss
 > 
-> Wodan, the god of the winds, is also the god of the creatures of the night. 
+> Wodan, the god of the winds, is also the god of the creatures of the night.
 > 
 > In Christian times, St. George, the patron Saint of knights and rich lords, often took his place. In fact, the old pilgrimage church is dedicated to St. George, and the noisy retinue of the pagan god sometimes becomes an army of restless spirits that still fill with their haunting the areas where their lord and master was once most eagerly worshipped. St. George's Hill is an ancient cultural site; it was a natural sacrificial altar for pagan feasts; a Roman fort also stood on it, then in the Middle Ages a small Beguinage Monastery, all of which folklore has recorded in its legends down to our time.
 >
 > ---
 > 
->  ## According to O. Giger
+> ###### According to O. Giger
 > 
 > Traveling pilgrims have peered into the rock face through the mountain cliff and discovered immeasurable treasures of gold and silver there, as on the higher stone wall and in the golden hole of the nearby Alp Sennis.  The stones of this area are said to have turned into gold for the traders from Venice, and from it they are said to have taken all their riches.
 > 
