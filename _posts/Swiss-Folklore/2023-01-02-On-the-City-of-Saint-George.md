@@ -34,6 +34,8 @@ tags:
 >
 {: .reference }
 
+---
+
 > # On the Mountain of Saint Geroge
 > ###### According to Dr. E. Buss
 > 
@@ -53,6 +55,8 @@ tags:
 > 
 > Some of the black figures wear white headgear, but for most of them there is nothing white left. Those with white clothing are said to be redeemable still, while the latter are not.
 {: .folklore }
+
+---
 
 > ###### As noted by: T. Tschopp
 > 
