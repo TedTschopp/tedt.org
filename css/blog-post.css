@@ -302,6 +302,18 @@ figcaption {
 /* Webfont: AntiquarianScribe */
 }
 
+@font-face {
+	font-family: 'TerraIgnota';
+	src: url('TerraIgnota.eot'); /* IE9 Compat Modes */
+	src: url('TerraIgnota.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('TerraIgnota.woff') format('woff'), /* Modern Browsers */
+		url('TerraIgnota.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('TerraIgnota.svg#TerraIgnota') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	/* Webfont: TerraIgnota */
+}
 
 
 .folklore {
@@ -482,11 +494,11 @@ figcaption {
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
 	line-height: 2.5rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .notes p:first-of-type:first-letter {
-	font-family: 'AntiquarianScribe', serif;
+	font-family: 'TerraIgnota', serif;
 	float: left;
 	font-size: 5rem;
 	line-height: 0.65;
@@ -562,17 +574,4 @@ figcaption {
 .notes sup {
 	font-family: 'AntiquarianScribe', serif;
 	color: #8b0000;
-}
-
-
-
-
-
-.has-dropcap:first-letter {
-  font-family: 'IMFellDWPicaSC', serif;
-  float: left;
-  font-size: 4rem;
-  line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0;
-  color: #8b0000;
 }
