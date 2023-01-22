@@ -325,7 +325,7 @@ figcaption {
 	font-size: 1.5rem;
 }
 
-.folklore p:first-of-type:first-letter {
+.folklore p:first-letter {
 	font-family: 'coelnische_current_fraktur', serif;
 	float: left;
 	font-size: 5rem;
@@ -497,7 +497,7 @@ figcaption {
 	font-size: 2rem;
 }
 
-.notes p:first-of-type:first-letter {
+.notes p:first-letter {
 	font-family: 'TerraIgnota', serif;
 	float: left;
 	font-size: 5rem;
