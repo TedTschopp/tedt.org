@@ -20,7 +20,12 @@ image-credits-title: Stein am Rhein – Stenium ad Rhenum
 image-credits-artist: Matthäus Merian (*1593 - †1650)
 categories:
   - Swiss Folklore
-  - Folklore
+  - St. George
+  - Odin
+  - Dragon
+  - Venetian
+  - Treasure
+  - Men in Black
 tags:
   - Folklore
 
@@ -98,7 +103,7 @@ tags:
 
 [^2]: The hill here called St. George's Hill is today called Hohentwiel, and it is an extinct volcano.
 
-[^3]: A Beguine  Monestary is a complex that is created for Beguine who were a religious order of women were not nuns.  
+[^3]: A Beguine Monestary is a complex that is created for Beguine who were a religious order of women were not nuns.  
 
 [^4]: Martin Luther had no army, but there was what is now called the German Peasants' War at this time.  
 
