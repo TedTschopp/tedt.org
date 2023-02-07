@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.534Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.019Z'
 title: Boomblossom
 GenericName: ''
 Name: Boomblossom
@@ -34,7 +35,7 @@ CN: '9'
 MS: '#N/A'
 CH: '14'
 IN: '#N/A'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 2 Limb Strike (2)
 Attack_2: ''
 Attack_3: ''

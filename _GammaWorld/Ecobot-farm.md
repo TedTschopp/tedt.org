@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.537Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.020Z'
 title: Ecobot - farm
 GenericName: ''
 Name: Ecobot - farm
@@ -34,7 +35,7 @@ CN: ''
 MS: ''
 CH: ''
 IN: ''
-Brain Type / CPU: '2 - 4: Literal'
+Brain-CPU Type: '2 - 4: Literal'
 Attack_1: Stun Ray Pistol (0) r20'
 Attack_2: ''
 Attack_3: ''

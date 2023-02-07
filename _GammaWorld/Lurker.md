@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.543Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.021Z'
 title: Lurker
 GenericName: ''
 Name: Lurker
@@ -34,7 +35,7 @@ CN: '11'
 MS: '15'
 CH: '2'
 IN: '3'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Bite (18)
 Attack_2: 2 Claws (10)
 Attack_3: 2 Darts (8) r30'

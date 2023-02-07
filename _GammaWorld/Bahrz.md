@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.533Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.019Z'
 title: Bahrz
 GenericName: ''
 Name: Bahrz
@@ -34,7 +35,7 @@ CN: '10'
 MS: '12'
 CH: '7'
 IN: '16'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 2 Claws (4)
 Attack_2: 1 Bite (6)
 Attack_3: 1 Hug (18)

@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.545Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.022Z'
 title: Anthropos
 GenericName: ''
 Name: Orlen
@@ -34,7 +35,7 @@ CN: '11'
 MS: '15'
 CH: '11'
 IN: '13'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 2 Weapons (12)
 Attack_2: ''
 Attack_3: ''

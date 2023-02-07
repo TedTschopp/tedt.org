@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.549Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.023Z'
 title: Spiny
 GenericName: ''
 Name: Spiny
@@ -34,7 +35,7 @@ CN: '12'
 MS: '7'
 CH: '1'
 IN: '2'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: Tail Slap (11)
 Attack_2: ''
 Attack_3: ''

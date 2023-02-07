@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.536Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.020Z'
 title: Croaker
 GenericName: ''
 Name: Croaker
@@ -34,7 +35,7 @@ CN: '7'
 MS: '7'
 CH: '5'
 IN: '2'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: Bite (3)
 Attack_2: ''
 Attack_3: ''

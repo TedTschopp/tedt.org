@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.545Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.022Z'
 title: Par-rana
 GenericName: ''
 Name: Par-rana
@@ -34,7 +35,7 @@ CN: '6'
 MS: '2'
 CH: '2'
 IN: '2'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Bite (6)
 Attack_2: ''
 Attack_3: ''

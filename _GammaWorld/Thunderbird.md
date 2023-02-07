@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.551Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.023Z'
 title: Thunder Bird
 GenericName: ''
 Name: Thunderbird
@@ -34,7 +35,7 @@ CN: '13'
 MS: '9'
 CH: '13'
 IN: '11'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Beak (14)
 Attack_2: 1 Claws (12)
 Attack_3: ''

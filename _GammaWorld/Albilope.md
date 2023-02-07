@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.532Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.019Z'
 title: Albilope
 GenericName: y
 Name: Albilope
@@ -34,7 +35,7 @@ CN: '9'
 MS: '10'
 CH: '9'
 IN: '6'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Horn (12)
 Attack_2: 1 Bite (6)
 Attack_3: ''

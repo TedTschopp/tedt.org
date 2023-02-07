@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.552Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.024Z'
 title: X.M.A.S
 GenericName: ''
 Name: X.M.A.S
@@ -34,7 +35,7 @@ CN: ''
 MS: '10'
 CH: ''
 IN: '12'
-Brain Type / CPU: '17 - 18: Personality'
+Brain-CPU Type: '17 - 18: Personality'
 Attack_1: 1 Fist (50)
 Attack_2: ''
 Attack_3: ''

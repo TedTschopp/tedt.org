@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.547Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.022Z'
 title: Screamer
 GenericName: ''
 Name: Screamer
@@ -34,7 +35,7 @@ CN: '16'
 MS: '7'
 CH: '4'
 IN: '11'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Touch (0)
 Attack_2: ''
 Attack_3: ''

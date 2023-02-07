@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.535Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.019Z'
 title: Bulo
 GenericName: ''
 Name: Bulo
@@ -34,7 +35,7 @@ CN: '12'
 MS: '7'
 CH: '7'
 IN: '4'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Butt (10)
 Attack_2: 1 Trample (30)
 Attack_3: 1 Bite (8)

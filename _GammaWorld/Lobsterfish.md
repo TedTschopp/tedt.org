@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.543Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.021Z'
 title: Lobsterfish
 GenericName: ''
 Name: Lobsterfish
@@ -34,7 +35,7 @@ CN: '5'
 MS: '3'
 CH: '2'
 IN: '1'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: Bite (1)
 Attack_2: ''
 Attack_3: ''

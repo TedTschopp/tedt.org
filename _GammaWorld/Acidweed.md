@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.532Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.019Z'
 title: Acidweed
 GenericName: Yes
 Name: Acidweed
@@ -34,7 +35,7 @@ CN: '10'
 MS: '14'
 CH: '0'
 IN: '2'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 2 Thorns (6)
 Attack_2: ''
 Attack_3: ''

@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.544Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.022Z'
 title: Mingos
 GenericName: ''
 Name: Mingos
@@ -34,7 +35,7 @@ CN: '10'
 MS: '11'
 CH: '6'
 IN: '9'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Beak (12)
 Attack_2: ''
 Attack_3: ''

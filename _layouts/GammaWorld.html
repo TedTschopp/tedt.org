@@ -50,243 +50,238 @@
                     <pre id="ascii-container-image"></pre>
                 </figure>
 
+                         {% if page.Monster_Name != "" %}
+                              <h2 >{{ page.Monster_Name }}</h2>
+                         {% else %}
+                              <h2 >{{ page.Name }} {{ page.Common_Name }}</h2>
+                         {% endif %}
+
+                         <img style="float: right;" src="https://tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ page.Name }}.png" width="50%" onError="this.onerror=null;this.src='https://tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
+
+                         {% if page.Author != "" %}
+                              <strong>Reported By:</strong> {{ page.Author }}
+                         {% else %}
+                              <strong>Reported By:</strong> unknown contributor
+                         {% endif %}
+                         {% if page.Source != "" %}
+                              in {{ page.Source }}
+                         {% else %}
+                              in <i>data source corrupted</i>.
+                         {% endif %}
 
 
-					{% if page.Monster_Name != "" %}
-						<h2 >{{ page.Monster_Name }}</h2>
-					{% else %}
-						<h2 >{{ page.Name }} {{ page.Common_Name }}</h2>
-					{% endif %}
+                         {% if page.Role_In_Gamma_World != "" %}
+                              <p><strong>Role:</strong> {{ page.Role_In_Gamma_World }}
+                         {% else %}
+                              <p><strong>Role:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Base_Stock != "" %}
+                              <strong>Base Stock:</strong> {{ page.Base_Stock }} </p>
+                         {% else %}
+                              <strong>Base Stock:</strong> Unknown </p>
+                         {% endif %}
 
-					<img style="float: right;" src="https://tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ page.Name }}.png" width="50%" onError="this.onerror=null;this.src='https://tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
+                         {% if page.Normal_Text != "" %}
+                              <p><strong>MCC Stat Block:</strong> {{ page.Normal_Text }}
+                         {% else %}
+                              <p>Conversion Not Complete
+                         {% endif %}</br>
+                         {% if page.Mutations != "" %}
+                              <strong>Mutations: </strong>{{ page.Mutations }}</p>
+                         {% else %}
+                              <strong>Mutations: </strong>Unknown</p>
+                         {% endif %}
+                         
 
-					{% if page.Author != "" %}
-						<strong>Reported By:</strong> {{ page.Author }}
-					{% else %}
-						<strong>Reported By:</strong> unknown contributor
-					{% endif %}
-					{% if page.Source != "" %}
-						in {{ page.Source }}
-					{% else %}
-						in <i>data source corrupted</i>.
-					{% endif %}
+                         <p>
+                         {% if page.Number_Appearing_Dice != "" %}
+                              <strong>Number Appearing: </strong>{{ page.Number_Appearing_Dice }}
+                         {% else %}
+                              <strong>Number Appearing: </strong>More observations needed
+                         {% endif %}</br>
+                         {% if page.Morale != "" %}
+                              <strong>Morale: </strong>{{ page.Morale }}
+                         {% else %}
+                              <strong>Morale: </strong>More observations needed
+                         {% endif %}</br>
 
+                         {% if page.New_HD_xdx_plus_minus != "" %}
+                              <strong>Hit Dice: </strong>{{ page.New_HD_xdx_plus_minus }}
+                         {% else %}
+                              <strong>Hit Dice: </strong>More observations needed
+                         {% endif %}</br>
 
-					{% if page.Role_In_Gamma_World != "" %}
-						<p><strong>Role:</strong> {{ page.Role_In_Gamma_World }}
-					{% else %}
-						<p><strong>Role:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Base_Stock != "" %}
-						<strong>Base Stock:</strong> {{ page.Base_Stock }} </p>
-					{% else %}
-						<strong>Base Stock:</strong> Unknown </p>
-					{% endif %}
+                         {% if page.Armor != "" %}
+                              <strong>Armor: </strong>{{ page.Armor }} ({{ page.AC_xx }})
+                         {% else %}
+                              <strong>Armor: </strong>More observations needed
+                         {% endif %}</br>
+                         {% if page.Size != "" %}
+                              <strong>Size:</strong> {{ page.Size }} {% if page.Size_Measurement != "" %}{{Size_Measurement}}{% endif %}
+                         {% else %}
+                              <strong>Size:</strong> Unknown
+                         {% endif %}</p>
 
-					{% if page.Normal_Text != "" %}
-						<p><strong>MCC Stat Block:</strong> {{ page.Normal_Text }}
-					{% else %}
-						<p>Conversion Not Complete
-					{% endif %}</br>
-					{% if page.Mutations != "" %}
-						<strong>Mutations: </strong>{{ page.Mutations }}</p>
-					{% else %}
-						<strong>Mutations: </strong>Unknown</p>
-					{% endif %}
-					
+                         {% if page.MV_xx != "" %}
+                              <p><strong>Movement: </strong>{{ page.MV_xx }}</p>
+                         {% else %}
+                              <p><strong>Movement: </strong>More observations needed</p>
+                         {% endif %}
 
-					<p>
-					{% if page.Number_Appearing_Dice != "" %}
-						<strong>Number Appearing: </strong>{{ page.Number_Appearing_Dice }}
-					{% else %}
-						<strong>Number Appearing: </strong>More observations needed
-					{% endif %}</br>
-					{% if page.Morale != "" %}
-						<strong>Morale: </strong>{{ page.Morale }}
-					{% else %}
-						<strong>Morale: </strong>More observations needed
-					{% endif %}</br>
+                         <p>
+                         {% if page.New_Attack_1 != "" %}
+                              <strong>Attack: </strong>{{ page.New_Attack_1 }}
+                              {% if page.New_Attack_2 != "" %}
+                                   <br>{{ page.New_Attack_2 }}
+                                   {% if page.New_Attack_3 != "" %}
+                                        <br>{{page.New_Attack_3}}
+                                   {% endif %}</p>
+                              {% endif %}
+                         {% else %}
+                              <strong>Attack: </strong>More observations needed
+                         {% endif %}</p>
 
-					{% if page.New_HD_xdx_plus_minus != "" %}
-						<strong>Hit Dice: </strong>{{ page.New_HD_xdx_plus_minus }}
-					{% else %}
-						<strong>Hit Dice: </strong>More observations needed
-					{% endif %}</br>
+                         <table>
+                              <tr>
+                                   <td>
+                                        {% if page.MS != "" %}
+                                             <strong>MS: </strong>{{ page.MS }}
+                                        {% else %}
+                                             <strong>MS: </strong>More observations needed
+                                        {% endif %}
 
-					{% if page.Armor != "" %}
-						<strong>Armor: </strong>{{ page.Armor }} ({{ page.AC_xx }})
-					{% else %}
-						<strong>Armor: </strong>More observations needed
-					{% endif %}</br>
-					{% if page.Size != "" %}
-						<strong>Size:</strong> {{ page.Size }} {% if page.Size_Measurement != "" %}{{Size_Measurement}}{% endif %}
-					{% else %}
-						<strong>Size:</strong> Unknown
-					{% endif %}</p>
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.PS != "" %}
+                                             <strong>PS: </strong>{{ page.PS }}
+                                        {% else %}
+                                             <strong>PS: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        {% if page.IN != "" %}
+                                             <strong>IN: </strong>{{ page.IN }}
+                                        {% else %}
+                                             <strong>IN: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.DX != "" %}
+                                             <strong>DX: </strong>{{ page.DX }}
+                                        {% else %}
+                                             <strong>DX: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        {% if page.CH != "" %}
+                                             <strong>CH: </strong>{{ page.CH }}
+                                        {% else %}
+                                             <strong>CH: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.CN != "" %}
+                                             <strong>CN: </strong>{{ page.CN }}
+                                        {% else %}
+                                             <strong>CN: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                         </table>
+                         <p>{% if page.Role_In_Gamma_World == "Robot" %}
+                              Mission: {{page.mission}}
+                         {% endif %}
+                         </p>
+                         <p>{% if page.Frequency != "" %}
+                              <strong>Frequency:</strong> {{ page.Frequency }}
+                         {% else %}
+                              <strong>Frequency:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Organization != "" %}
+                              <strong>Organization:</strong> {{ page.Organization }}
+                         {% else %}
+                              <strong>Organization:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Activity_Cycle != "" %}
+                              <strong>Activity Cycle:</strong> {{ page.Activity_Cycle }}
+                         {% else %}
+                              <strong>Activity Cycle:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Diet != "" %}
+                              <strong>Diet:</strong> {{ page.Diet }}
+                         {% else %}
+                              <strong>Diet:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Habitat != "" %}
+                              <strong>Habitat:</strong> {{ page.Habitat }}
+                         {% else %}
+                              <strong>Habitat:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.Tech_Level != 0 %}
+                              <strong>Tech Level:</strong> {{ page.Tech_Level }} 
+                              {% if page.Tech_Max != 0 %}
+                                   - {{ page.Tech_Max }}
+                              {% else %}
+                                   unknown 
+                              {% endif %}
+                         {% else %}
+                              <strong>Tech Level:</strong> Unknown </p>
+                         {% endif %}</br>
+                         {% if page.Artifacts != "" %}
+                              <strong>Artifacts:</strong> {{ page.Artifacts }}
+                         {% else %}
+                              <strong>Artifacts:</strong> Unknown
+                         {% endif %} </p>
 
-					{% if page.MV_xx != "" %}
-						<p><strong>Movement: </strong>{{ page.MV_xx }}</p>
-					{% else %}
-						<p><strong>Movement: </strong>More observations needed</p>
-					{% endif %}
+                         {% if page.Description != "" %}
+                              <p><strong>Description (Initial Observations):</strong> {{ page.Description }}</p>
+                              {% if page.New_Description != "" %}
+                                   <p><strong>Description (Additional Observations):</strong> {{ page.New_Description }}</p>
+                              {% endif %}
+                         {% endif %}
 
-					<p>
-					{% if page.New_Attack_1 != "" %}
-						<strong>Attack: </strong>{{ page.New_Attack_1 }}
-						{% if page.New_Attack_2 != "" %}
-							<br>{{ page.New_Attack_2 }}
-							{% if page.New_Attack_3 != "" %}
-								<br>{{page.New_Attack_3}}
-							{% endif %}</p>
-						{% endif %}
-					{% else %}
-						<strong>Attack: </strong>More observations needed
-					{% endif %}</p>
+                         {% if page.Equipment != "" %}
+                              <p><strong>Equipment:</strong> {{ page.Equipment }}</p>
+                         {% endif %}
 
-					<table>
-						<tr>
-							<td>
-								{% if page.MS != "" %}
-									<strong>MS: </strong>{{ page.MS }}
-								{% else %}
-									<strong>MS: </strong>More observations needed
-								{% endif %}
+                         {% if page.Reactions != "" %}
+                              <p><strong>Reactions:</strong> {{ page.Reactions }}</p>
+                         {% else %}
+                              <p><strong>Reactions:</strong> No known interactions</p>
+                         {% endif %}
 
-							</td>
-							<td>
-								&nbsp;
-							</td>
-							<td>
-								{% if page.PS != "" %}
-									<strong>PS: </strong>{{ page.PS }}
-								{% else %}
-									<strong>PS: </strong>More observations needed
-								{% endif %}
-							</td>
-						</tr>
-						<tr>
-							<td>
-								{% if page.IN != "" %}
-									<strong>IN: </strong>{{ page.IN }}
-								{% else %}
-									<strong>IN: </strong>More observations needed
-								{% endif %}
-							</td>
-							<td>
-								&nbsp;
-							</td>
-							<td>
-								{% if page.DX != "" %}
-									<strong>DX: </strong>{{ page.DX }}
-								{% else %}
-									<strong>DX: </strong>More observations needed
-								{% endif %}
-							</td>
-						</tr>
-						<tr>
-							<td>
-								{% if page.CH != "" %}
-									<strong>CH: </strong>{{ page.CH }}
-								{% else %}
-									<strong>CH: </strong>More observations needed
-								{% endif %}
-							</td>
-							<td>
-								&nbsp;
-							</td>
-							<td>
-								{% if page.CN != "" %}
-									<strong>CN: </strong>{{ page.CN }}
-								{% else %}
-									<strong>CN: </strong>More observations needed
-								{% endif %}
-							</td>
-						</tr>
-					</table>
-					<p>{% if page.Role_In_Gamma_World == "Robot" %}
-						Mission: {{page.mission}}
-					{% endif %}
-					</p>
-					<p>{% if page.Frequency != "" %}
-						<strong>Frequency:</strong> {{ page.Frequency }}
-					{% else %}
-						<strong>Frequency:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Organization != "" %}
-						<strong>Organization:</strong> {{ page.Organization }}
-					{% else %}
-						<strong>Organization:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Activity_Cycle != "" %}
-						<strong>Activity Cycle:</strong> {{ page.Activity_Cycle }}
-					{% else %}
-						<strong>Activity Cycle:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Diet != "" %}
-						<strong>Diet:</strong> {{ page.Diet }}
-					{% else %}
-						<strong>Diet:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Habitat != "" %}
-						<strong>Habitat:</strong> {{ page.Habitat }}
-					{% else %}
-						<strong>Habitat:</strong> Unknown
-					{% endif %}</br>
-					{% if page.Tech_Level != 0 %}
-						<strong>Tech Level:</strong> {{ page.Tech_Level }} 
-						{% if page.Tech_Max != 0 %}
-							- {{ page.Tech_Max }}
-						{% else %}
-							unknown 
-						{% endif %}
-					{% else %}
-						<strong>Tech Level:</strong> Unknown </p>
-					{% endif %}</br>
-					{% if page.Artifacts != "" %}
-						<strong>Artifacts:</strong> {{ page.Artifacts }}
-					{% else %}
-						<strong>Artifacts:</strong> Unknown
-					{% endif %} </p>
+                         {% if page.Behavior != "" %}
+                              <p><strong>Behavior:</strong> {{ page.Behavior }}</p>
+                         {% else %}
+                              <p><strong>Behavior:</strong> Behavior modeling incomplete</p>
+                         {% endif %}
 
-					{% if page.Description != "" %}
-						<p><strong>Description (Initial Observations):</strong> {{ page.Description }}</p>
-						{% if page.New_Description != "" %}
-							<p><strong>Description (Additional Observations):</strong> {{ page.New_Description }}</p>
-						{% endif %}
-					{% endif %}
+                         {% if page.Repair_and_Healing != "" %}
+                              <p><strong>Repair and Healing:</strong> {{ page.Repair_and_Healing }}</p>
+                         {% else %}
+                              <p><strong>Behavior:</strong> Behavior not recorded</p>
+                         {% endif %}
 
-					{% if page.Equipment != "" %}
-						<p><strong>Equipment:</strong> {{ page.Equipment }}</p>
-					{% endif %}
+                         {% if page.Society != "" %}
+                              <p><strong>Society:</strong> {{ page.Society }}</p>
+                         {% else %}
+                              <p><strong>Society:</strong> Anthropological studies incomplete</p>
+                         {% endif %}
 
-					{% if page.Reactions != "" %}
-						<p><strong>Reactions:</strong> {{ page.Reactions }}</p>
-					{% else %}
-						<p><strong>Reactions:</strong> No known interactions</p>
-					{% endif %}
-
-					{% if page.Behavior != "" %}
-						<p><strong>Behavior:</strong> {{ page.Behavior }}</p>
-					{% else %}
-						<p><strong>Behavior:</strong> Behavior modeling incomplete</p>
-					{% endif %}
-
-					{% if page.Repair_and_Healing != "" %}
-						<p><strong>Repair and Healing:</strong> {{ page.Repair_and_Healing }}</p>
-					{% else %}
-						<p><strong>Behavior:</strong> Behavior not recorded</p>
-					{% endif %}
-
-					{% if page.Society != "" %}
-						<p><strong>Society:</strong> {{ page.Society }}</p>
-					{% else %}
-						<p><strong>Society:</strong> Anthropological studies incomplete</p>
-					{% endif %}
-
-
-					<hr>
-
-<br>
+                         <hr><br>
 
                 <!--Next and Previous Articles -->
                 {% if page.previous.url %}

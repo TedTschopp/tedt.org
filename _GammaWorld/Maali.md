@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.543Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.021Z'
 title: Maali
 GenericName: ''
 Name: Maali
@@ -34,7 +35,7 @@ CN: '11'
 MS: '16'
 CH: '4'
 IN: '10'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Antler (16)
 Attack_2: 2 Claws (6)
 Attack_3: ''

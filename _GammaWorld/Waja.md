@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.552Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.024Z'
 title: Waja
 GenericName: ''
 Name: Waja
@@ -34,7 +35,7 @@ CN: '8'
 MS: '18'
 CH: '9'
 IN: '4'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 1 Dagger (4)
 Attack_2: ''
 Attack_3: ''

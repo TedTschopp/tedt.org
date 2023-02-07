@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.539Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.020Z'
 title: Glower
 GenericName: ''
 Name: Glower
@@ -34,7 +35,7 @@ CN: '9'
 MS: '0'
 CH: '0'
 IN: '2'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: ''
 Attack_2: ''
 Attack_3: ''

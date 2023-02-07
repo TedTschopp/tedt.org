@@ -1,6 +1,7 @@
 ---
 layout: GammaWorld
-date: '2023-01-04T23:10:05.537Z'
+categories: Gamma World Bestiary
+date: '2023-02-07T18:57:12.020Z'
 title: Digger
 GenericName: ''
 Name: Digger
@@ -34,7 +35,7 @@ CN: '16'
 MS: '13'
 CH: '11'
 IN: '16'
-Brain Type / CPU: ''
+Brain-CPU Type: ''
 Attack_1: 2 Claws (10)
 Attack_2: 1 Weapon (6)
 Attack_3: ''
