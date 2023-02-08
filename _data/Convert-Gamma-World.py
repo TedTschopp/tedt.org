@@ -3,7 +3,7 @@ import sys
 import json
 from ruamel.yaml import YAML
 
-in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv7.json' # Change me!
+in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv9.json' # Change me!
 
 with open(in_file_path,'r') as in_json_file:
 

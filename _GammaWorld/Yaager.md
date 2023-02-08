@@ -1,15 +1,18 @@
 ---
 layout: GammaWorld
-categories: Gamma World Bestiary
-date: '2023-02-07T18:57:12.019Z'
-title: Airshoon
-GenericName: y
-Name: Airshoon
+categories:
+- Gamma World
+- Gamma World Bestiary
+- Bestiary
+date: '2023-02-08T00:16:44.844Z'
+title: Yaager
+GenericName: ''
+Name: Yaager
 Common_Name: ''
 Other_Names: ''
 Generic_Name: ''
-Source: Polyhedron 02
-Author: James M. Ward
+Source: Polyhedron 144
+Author: ''
 MCC Race: ''
 Role_In_Gamma_World: ''
 Number_Appearing_Dice: ''
@@ -67,7 +70,7 @@ Restorationsist: ''
 Healers: ''
 Iron_Society: ''
 Humans: ''
-Monster_Name: Airshoon
+Monster_Name: Yaager
 Number_appearing: '1'
 Number_appearing_Single: ''
 Init: '#N/A'

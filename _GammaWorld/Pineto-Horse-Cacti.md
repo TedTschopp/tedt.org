@@ -1,7 +1,10 @@
 ---
 layout: GammaWorld
-categories: Gamma World Bestiary
-date: '2023-02-07T18:57:12.022Z'
+categories:
+- Gamma World
+- Gamma World Bestiary
+- Bestiary
+date: '2023-02-08T00:16:44.843Z'
 title: Hose Cactus
 GenericName: ''
 Name: Pineto

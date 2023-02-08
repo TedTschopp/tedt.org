@@ -1,17 +1,20 @@
 ---
 layout: GammaWorld
-categories: Gamma World Bestiary
-date: '2023-02-07T18:57:12.024Z'
-title: Yellow Belly
+categories:
+- Gamma World
+- Gamma World Bestiary
+- Bestiary
+date: '2023-02-08T00:16:44.841Z'
+title: Captain Gelmar
 GenericName: ''
-Name: Yellow Belly
+Name: Captain Gelmar
 Common_Name: ''
 Other_Names: ''
 Generic_Name: ''
-Source: MM2
-Author: Derek M. Holland
+Source: GW05 - Rapture of the Deep
+Author: ''
 MCC Race: ''
-Role_In_Gamma_World: ''
+Role_In_Gamma_World: NPC
 Number_Appearing_Dice: ''
 Morale: ''
 Hit_Dice: ''
@@ -67,7 +70,7 @@ Restorationsist: ''
 Healers: ''
 Iron_Society: ''
 Humans: ''
-Monster_Name: Yellow Belly
+Monster_Name: Captain Gelmar
 Number_appearing: '1'
 Number_appearing_Single: ''
 Init: '#N/A'
