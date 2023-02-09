@@ -11,11 +11,17 @@ with open(in_file_path,'r') as in_json_file:
     json_obj_list = json.load(in_json_file)
 
     for json_obj in json_obj_list['CreaturesV5']:
-        filename='creature_'+json_obj['title']+'-'+json_obj['common_name']+'.yaml'
+        filename = json_obj['title']+'.md'
         filename = filename.replace("/","-")
         filename = filename.replace(",","-")
-        filename = filename.replace(" ","_")
-        filename = filename.replace("'","-")
+        filename = filename.replace(" ","-")
+        filename = filename.replace("'","")
+        filename = filename.replace("»","-")
+        filename = filename.replace("«","-")
+        filename = filename.replace("--","-")
+        filename = filename.replace("---","-")
+        filename = filename.replace("----","-")
+        filename = filename.replace("-.",".")
 
         print (filename)
 
