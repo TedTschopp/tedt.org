@@ -167,4 +167,5 @@ players: "Par-rana; '';Description: This creature is an odd fusion of a Parakeet
   \ and hunt together in large schools. They will go into a feeding frenzy much like\
   \ Herkels, but while in the frenzy a random number of the group will emit high-pitched\
   \ Sonic Blasts.|"
-...
+---
+</br>

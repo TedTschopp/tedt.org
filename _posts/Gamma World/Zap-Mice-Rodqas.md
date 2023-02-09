@@ -176,4 +176,5 @@ players: "Rodqas; 'Zap Mice';Description: Rodquas are mutated cousins of the com
   \ has no known origin, but does not dissipate with use.  Equiptment: The Rodqas\
   \ always have a nest hidden in a tiny corner or niche somewhere, there is always\
   \ a 10% chance that they will have some small, valuable object there.|"
-...
+---
+</br>

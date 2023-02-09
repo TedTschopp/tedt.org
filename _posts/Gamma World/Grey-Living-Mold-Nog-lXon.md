@@ -182,4 +182,5 @@ players: "Nog l'Xon; 'Grey Living Mold';Description: A Two Meter cigar-shaped qu
   \  They are symbioticly linked with their host.  They are immune to most forms of\
   \ attack.  They take half damage from Fire (not heat).  Cold Attacks do double damage\
   \ to them.  They are immune to chemical defoliants.|"
-...
+---
+</br>

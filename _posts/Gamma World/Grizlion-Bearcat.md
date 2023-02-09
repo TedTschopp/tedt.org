@@ -222,4 +222,5 @@ players: "Bearcat; 'Grizlion';Description: Also called the grizlion, this fearso
   \ Thankfully, bearcats live in forested hills and mountains, usually far from civilization.\
   \ During particularly harsh winters, however, bearcats have been known to come down\
   \ to lower altitudes and find food in or near settled areas. |"
-...
+---
+</br>

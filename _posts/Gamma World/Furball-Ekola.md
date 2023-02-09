@@ -185,4 +185,5 @@ players: "Ekola ; 'Furball';Description: The Ekola are 6 inch long mammals that 
   \ pets and can be trained numerous tricks and commands.  They can learn 1d16 separate\
   \ command phrases.  They are hunted in the wilderness for their warm fur to line\
   \ gloves and shoes.   |"
-...
+---
+</br>

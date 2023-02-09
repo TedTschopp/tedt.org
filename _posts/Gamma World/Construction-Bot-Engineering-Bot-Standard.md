@@ -172,4 +172,5 @@ players: "Engineering Bot, Standard; 'Construction Bot';Description: This unit i
   \ beam can lift 500 kilograms at a 10-meter range. The unit has the same special\
   \ features and materials as the Engineering Bot-Light and is sealed for underwater\
   \ operations.|"
-...
+---
+</br>

@@ -197,4 +197,5 @@ players: "Android; 'Warrior';Description: Man-made beings with red hued skin and
   \ are quite proficient in these outcomes and will selflessly sacrificed themselves\
   \ for the good of their mission or team.Society: Androids do not have a society.\
   \  They serve whomever created them.|"
-...
+---
+</br>

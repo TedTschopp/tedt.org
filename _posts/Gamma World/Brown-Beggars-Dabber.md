@@ -235,4 +235,5 @@ players: "Dabber; 'Brown Beggars';Description: One Meter tall mutated racoons th
   \ dabber runs away. Often (90% of the time), the dabber then comes back with up\
   \ to seven friends to take the object, and anything else that strikes his and their\
   \ fancy.|"
-...
+---
+</br>

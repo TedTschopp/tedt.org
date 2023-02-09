@@ -225,4 +225,5 @@ players: "Warbot; 'Warbot';Description: This vaguely turtle-shaped unit is 9 met
   \ accomplish assigned Military objectives, including, but not limited to the destruction\
   \ of soldiers and materials of the enemy.  To defend the soldiers and materials\
   \ of its base.  Its secondary goal is to avoid harming non-combatants.|"
-...
+---
+</br>

@@ -258,4 +258,5 @@ players: "Sre'froth; 'Invisible Glider';Description: Sre'froth are lifeofrms tha
   \ body heat through ba'mutan hides and those characters protected by such can pass\
   \ by sre'froth undetected. Ruins, caves, deep woods, buildings, and canyons are\
   \ their favorite environs but they can be found anywhere. |"
-...
+---
+</br>

@@ -235,4 +235,5 @@ players: "Horl Choo; 'Porcupine Plants';Description: The horl choo is an odd bla
   \ intelligent by most standards, they're just hunting machines. They spore once\
   \ per year, using slain prey to host the spores where a young horl choo will grow\
   \ over the course of a few weeks before shuffling off on its own to hunt.|"
-...
+---
+</br>

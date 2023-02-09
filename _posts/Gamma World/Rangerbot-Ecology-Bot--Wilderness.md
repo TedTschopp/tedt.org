@@ -204,4 +204,5 @@ players: "Ecology Bot - Wilderness; 'Rangerbot';Description: This mechanical For
   \ The kit also has surgical tools for the Robot's use. Behavior:This Robot is usually\
   \ found in forests or mountains in a Programmed state.Mission: To care for the crops,\
   \ animals, buildings and grounds of wilderness parkland.|"
-...
+---
+</br>

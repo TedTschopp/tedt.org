@@ -185,4 +185,5 @@ players: "Blassut; 'Giant Moth';Description: This creature looks somewhat like t
   \ put it out.  The greatest threat that Blassurt's present is that they will attract\
   \ a Tsorsut who eat Blassuts.  Every two turns that a Blassut is in the area there\
   \ is a 35% chance a Tsorsut will attack.|"
-...
+---
+</br>

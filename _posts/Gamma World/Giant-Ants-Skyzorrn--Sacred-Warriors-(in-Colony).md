@@ -273,4 +273,5 @@ players: "Skyzorr'n - Sacred Warriors (in Colony); 'Giant Ants';Description: Sky
   \ their queen desires. Skyzorr'n peons or warriors are often hired out as guards\
   \ or workers in exchange for payment. This also gives the queen a way of gaining\
   \ information and keeping track of the activities of other societies.|"
-...
+---
+</br>

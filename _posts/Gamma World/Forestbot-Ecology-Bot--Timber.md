@@ -180,4 +180,5 @@ players: "Ecology Bot - Timber; 'Forestbot';Description: This gigantic robot was
   \ with a large paint gun that is capable of doing 1d10 damage from impact and permanently\
   \ staining whatever it hits. Mission: To care for the crops, animals, buildings\
   \ and grounds of a Forest.|"
-...
+---
+</br>

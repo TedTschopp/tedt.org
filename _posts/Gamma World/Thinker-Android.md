@@ -218,4 +218,5 @@ players: "Android; 'Thinker';Description: Man-made beings with red hued skin and
   \ or computers that dispatched them on their mission if things go wrong.  They see\
   \ Warrior and Worker Androids as tools to accomplish and report back on their missions.Society:\
   \ Androids do not have a society.  They serve whomever created them.|"
-...
+---
+</br>

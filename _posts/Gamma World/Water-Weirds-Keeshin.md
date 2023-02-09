@@ -217,4 +217,5 @@ players: "Keeshin; 'Water Weirds';Description: Keeshin are albino mutant frogs, 
   \ and the female lays eggs in the water that hatch into dozens of keeshin tadpoles,\
   \ few of which survive to maturity. Mature keeshin telekinetically build stone dwellings\
   \ under water, partially filled with air, to store their goods and hide from danger.|"
-...
+---
+</br>

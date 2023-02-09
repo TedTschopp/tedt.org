@@ -229,4 +229,5 @@ players: "Kai Lin; 'Lizard Bushes';Description: At first glance, a kai lin looks
   \ intelligent and have a pack-structure, cooperating for mutual survival. They reproduce\
   \ by producing shoots that root into the ground and mature over the course of 6-8\
   \ weeks before uprooting and becoming adult kai lin.|"
-...
+---
+</br>

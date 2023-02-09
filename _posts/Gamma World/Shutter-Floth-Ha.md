@@ -266,4 +266,5 @@ players: "Floth-Ha; 'Shutter';Description: Floth-Ha are mutated \"common house\"
   \ Even in death, the creatures remain affixed. For obvious reasons, the Shutters'\
   \ wings are very valuable in Gamma Terra, and will fetch the handsome price of 8,500\
   \ domars for just 1 of a set of wings.|"
-...
+---
+</br>

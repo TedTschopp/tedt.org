@@ -214,4 +214,5 @@ players: "Ba'mutan; 'Rock that Gasses';Description: Ba'mutan are gentle herbivor
   \ a cloud that has a 25' radius centered on creature.  The gas dissipates after\
   \ 1d10+2 turns.  Any creature not completely protected from the environment takes\
   \ 3d10 damage per turn of exposure, and their vision is obscured.  |"
-...
+---
+</br>

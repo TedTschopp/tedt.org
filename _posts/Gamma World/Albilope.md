@@ -231,4 +231,5 @@ players: "Albilope; '';Description: This slenderly built creature is easily reco
   \ have been known to viciously attack vulnerable prey.Their great speed allows them\
   \ to catch unsuspecting creatures,but more import-antly it permits them to escape\
   \ most of the predators found in this area.|"
-...
+---
+</br>

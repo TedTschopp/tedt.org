@@ -190,4 +190,5 @@ players: "Equinoid; 'Man-Beast';Description: These vaguely centaur-like creature
   \ with at least one Tech Level 3 or 4 weapon, usually a paralysis rod and flamethrowerSociety:\
   \ Equinoids seek to rebuild an advanced civilization modeled on that of the Ancients;\
   \ they are thus sympathetic to the Restorationsis.|"
-...
+---
+</br>

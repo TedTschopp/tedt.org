@@ -232,4 +232,5 @@ players: "Bu'Tal; 'Ambush Bug';Description: Ambush bugs can vary slightly in col
   \ hit successfully, but are dipped in intensity 15 sleep poison. This poison functions\
   \ like paralytic poison, but never goes above Stage III. Stage III is 'asleep.'\
   \ It lasts an hour.|"
-...
+---
+</br>

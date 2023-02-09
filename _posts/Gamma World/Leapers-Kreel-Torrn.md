@@ -215,4 +215,5 @@ players: "Kreel Torrn; 'Leapers';Description: Kreel torrn are large, bipedal gra
   \ to wait in complete darkness, using ultravision to find their marks. Kreel torrn\
   \ are opportunists and flee if their position becomes untenable. They can sometimes\
   \ be hired so long as the work is not too hard and the pay is good.|"
-...
+---
+</br>

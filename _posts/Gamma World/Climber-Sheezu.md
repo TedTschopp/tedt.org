@@ -207,4 +207,5 @@ players: "Sheezu; 'Climber';Description: Ger'tal are mutant water striders. They
   \ never use their claws or bite and acid unless they feel extremely threatened.\
   \ A qualified animal trainer can teach a sheezu a maximum of three commands or tricks\"\
   . |"
-...
+---
+</br>

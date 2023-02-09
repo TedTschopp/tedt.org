@@ -176,4 +176,5 @@ players: "Water Bear; 'Sea Cow';Description: This highly mutated arachnid is con
   \ ram the aggressor, if moving away does not work. Many undersea races farm water\
   \ bears for food. It is almost to the point of cattle, but water bears can live\
   \ in the wild without supervision.|"
-...
+---
+</br>

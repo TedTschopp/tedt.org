@@ -231,4 +231,5 @@ players: "Ribbets; 'Flying Frogs';Description: The frequent compan- ions of lils
   \ the skin flaps on their sides, behind their forelegs. They cannot take off from\
   \ ground level, and generally glide from tree to tree. They can move 1 m horizontally\
   \ for every 1 m altitude with which they start.|"
-...
+---
+</br>

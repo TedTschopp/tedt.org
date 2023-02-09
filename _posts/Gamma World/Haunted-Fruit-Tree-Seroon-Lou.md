@@ -283,4 +283,5 @@ players: "Seroon Lou; 'Haunted Fruit Tree';Description: Floth-Ha are mutated 'co
   \ dragging them underwater to feed its root cluster.Society: Seroon lou are semi-intelligent,\
   \ but can't be bargained with. They sometimes hide among clusters of narl ep, where\
   \ they spring amushes on their prey.|"
-...
+---
+</br>

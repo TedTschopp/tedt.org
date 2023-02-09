@@ -206,4 +206,5 @@ players: "Ert; 'Stonefish';Description: The ert is a normal looking fish with si
   \ bodies or one or more predators. Each summer the ert spawn and hundreds of them\
   \ make their way upstream. They are particularly dangerous at this time and likely\
   \ to attack other creatures that approach their spawning grounds.|"
-...
+---
+</br>

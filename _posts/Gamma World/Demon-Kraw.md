@@ -200,4 +200,5 @@ players: "Kraw; 'Demon';Description: Kraw are repulsive looking creatures that r
   \ that it covers all opponents in a 10 meter radius (1d7).  Kraw can use this power\
   \ only twice a day.  They usually employ other creatures through summoning to fight\
   \ for them.Equiptment: Kraw do not collect or use any equiptment.|"
-...
+---
+</br>

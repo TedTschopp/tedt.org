@@ -188,4 +188,5 @@ players: "Shez'ur; 'Spiked Flyer';Description: Maroon Birds, 16cm in length, cov
   \ through the swarm.  Movement is reduced to one quarter if more than 30 birds attack.\
   \  They are generally peaceful, unless their nests are threatened or loud noises\
   \ frighten them.|"
-...
+---
+</br>

@@ -212,4 +212,5 @@ players: "Sea Serpent, Black; '';Description: Black sea serpents are mutated sna
   \ during the winter on land in deep mud. The snakes are considered a major threat\
   \ to the fishermen of both bodies of water. They do not congregate, except during\
   \ mating, when up to 10 males try to mate with a single female.|"
-...
+---
+</br>

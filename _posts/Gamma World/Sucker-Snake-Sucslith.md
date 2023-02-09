@@ -233,4 +233,5 @@ players: "Sucslith; 'Sucker Snake';Description: The entire body of a sucslith, u
   \ its appendages for combat. Then, the sucslith drops down on the hapless victim\
   \ and enters the web, biting until the creature is dead. Unfortunately, sucsliths\
   \ can be found anywhere, though they tend to avoid deserts and deathlands. |"
-...
+---
+</br>

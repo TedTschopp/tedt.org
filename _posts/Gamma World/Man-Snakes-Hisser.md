@@ -321,4 +321,5 @@ players: "Hisser; 'Man Snakes';Description: A hissers is a 3-meter long mutant s
   \ size, the matriach chooses a young female to begin a new tribe, taking some of\
   \ the males with her. Hiss matriarchs are powerful, utterly ruthless creatures,\
   \ dedicated to the good of the tribe.|"
-...
+---
+</br>

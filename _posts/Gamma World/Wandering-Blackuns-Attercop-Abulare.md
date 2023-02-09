@@ -239,4 +239,5 @@ players: "Attercop Abulare; 'Wandering Blackuns';Description: Attercops, also kn
   \ Any loot found in an Attercop's web is merely indigestible waste to the spider.\
   \  The Lil, commonly take refuge within or behind attercop webs, although some fall\
   \ prey to the spider. |"
-...
+---
+</br>

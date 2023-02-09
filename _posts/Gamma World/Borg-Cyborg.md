@@ -233,4 +233,5 @@ players: "Cyborg; 'Borg';Description: Cyborgs were once Ancient humans who, in o
   \ screwdriver, vibrosaw, and protein analyzer.  Cyborgs may be armed with other\
   \ weapons that they use with their human hands.  Cyborgs are rarely encountered\
   \ and most often will be in command of other robots.|"
-...
+---
+</br>

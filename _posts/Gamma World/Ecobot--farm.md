@@ -181,4 +181,5 @@ players: "Ecobot - farm; '';Description: An ecobot is basically humanoid, and is
   \  It has a polite but firm, male voice.Mission: To Care for the crops, animals,\
   \ buildings, grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer,\
   \ soil analyzer, shovel, IR camera, radio, spotlights, and a stun ray pistol|"
-...
+---
+</br>

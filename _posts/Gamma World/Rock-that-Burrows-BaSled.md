@@ -210,4 +210,5 @@ players: "Ba'Sled; 'Rock that Burrows';Description: Based appear as gray, hunche
   \ addition to their murderous claws they also have a sonic roar that can only be\
   \ used once a day.  This attack does 1d5 damage to everything 15 feet in front of\
   \ the roaring Based.  They are immune to their own sonic roars.|"
-...
+---
+</br>

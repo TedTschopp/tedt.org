@@ -174,4 +174,5 @@ players: "Android; 'Worker';Description: Man-made beings with red hued skin and 
   \ their orders from first Thinkers and then warriors in the event of combat situations.\
   \  They will selflessly sacrificed themselves for the good of the mission or cause.Society:\
   \ Androids do not have a society.  They serve whomever created them.|"
-...
+---
+</br>

@@ -149,4 +149,5 @@ normal_text: ''
 description_output: ''
 final_output: ''
 players: ''
-...
+---
+</br>

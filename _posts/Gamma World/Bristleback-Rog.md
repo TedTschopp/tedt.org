@@ -181,4 +181,5 @@ players: "Rog; 'Bristleback';Description: Rogs, the most common meat and domesti
   \ down the ridge of their spine. They suffer from periodic amnesia, although most\
   \ farmers just assume that they are stupid. The milk from a rog is slightly sweet\
   \ and very nutritious. Its skin and fur can be made into cloth.|"
-...
+---
+</br>

@@ -230,4 +230,5 @@ players: "Crep, Pink; 'Water Crep';Description: The water crep has a pink flower
   \ local animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
   \ crep plants grow rooted for a season before gaining mobility and moving off on\
   \ their own in search of prey.|"
-...
+---
+</br>

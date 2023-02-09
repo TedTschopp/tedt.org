@@ -152,4 +152,5 @@ description_output: ''
 final_output: "Hyri'xon 'Living Ice Mold' (1): Init -3; atk see description; AC 10;\
   \ HD 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Hyri'xon; 'Living Ice Mold';|
-...
+---
+</br>

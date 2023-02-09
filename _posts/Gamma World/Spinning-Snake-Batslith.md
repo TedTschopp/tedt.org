@@ -192,4 +192,5 @@ players: "Batslith; 'Spinning Snake';Description: A batslith is a beautifully co
   \ at 1d3-2 increase in severity to 5 bites at 1d3 hitting up to 5 seperate opponents\
   \ within 5 meters.  Equiptment: A batslith keeps no equiptment.Society: A batlist\
   \ has no nest.  It usually lives, travel, and attack in groups.|"
-...
+---
+</br>

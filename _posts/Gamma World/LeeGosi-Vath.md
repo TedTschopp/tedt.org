@@ -223,4 +223,5 @@ players: "Vath; 'Lee'Gosi';Description: Perhaps the most hideous of all of the G
   \ the weather gets cold (Skin Structure Change). These creatures make their homes\
   \ in caves and other dark places, although unlike their ancestors, they travel during\
   \ the day as well as night.|"
-...
+---
+</br>

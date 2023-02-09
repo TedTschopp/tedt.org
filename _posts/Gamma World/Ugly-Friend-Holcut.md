@@ -176,4 +176,5 @@ players: "Holcut; 'Ugly Friend';Description: The Holcut stand 4 feet tall at the
   \ of gas attack.Behavior:They love wallowing in the mud.  They make excellent pets.\
   \  If they are encountered in the wild, they are extremely dangerous and are fearsome\
   \ predators.|"
-...
+---
+</br>

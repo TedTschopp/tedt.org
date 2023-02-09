@@ -242,4 +242,5 @@ players: "Jaget; 'Savannah Cats';Description: Mutated Jaguars prowl the vast gra
   \ their substantial mental powers, jagets are often desired as followers or hirelings\
   \ of other species. Jagets love bright, shiny objects and often slip into human\
   \ camps to pilfer small artifacts.|"
-...
+---
+</br>

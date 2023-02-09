@@ -226,4 +226,5 @@ players: "Hawkoid; 'Terrorbirds';Description: Mutated sparrowhawks that grow to 
   \ land, preferring to levitate even when fighting or talking. The ability to fly\
   \ is so precious to them that if for some reason a Hawkoid loses it, it enters a\
   \ self-induced coma and wills itself to death.|"
-...
+---
+</br>

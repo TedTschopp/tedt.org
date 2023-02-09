@@ -151,4 +151,5 @@ description_output: ''
 final_output: "Police Robot (1d6 (3)): Init +6; atk see description; AC 13; HD 5D12\
   \ hp 33 each; MV 30' ; 1d20; SV Fort +1, Ref +3, Will +1"
 players: Police Robot; '';|
-...
+---
+</br>

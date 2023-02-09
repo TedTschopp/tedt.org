@@ -258,4 +258,5 @@ players: "Hogart; 'Thunderbirds';Description: This mutant snake has changed beyo
   \ tails. Their wing feathers are highly prized for decorative pur- poses, and four\
   \ sacks full of feathers (as much as can be taken from a hogart) would be worth\
   \ about 150 gold pieces.|"
-...
+---
+</br>

@@ -234,4 +234,5 @@ players: "Security Robotoid; 'Security Bot';Description: This is an upright-walk
   \ entry of persons onto company land and buildings.  To prevent damage to corporate\
   \ property.  To assist employees.Equiptment: 1 x Built in Radio1 x directional spotlight1\
   \ x loudspeaker1 x siren1 x IR Camera1 x Telescope1 x Motion Detector1 x video recorder|"
-...
+---
+</br>

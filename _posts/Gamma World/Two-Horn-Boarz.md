@@ -223,4 +223,5 @@ players: "Boarz; 'Two Horn';Description: These bipedal, humanoid boars are one o
   \ and Zoopremists, but only as guerilla warriors or terrorists. They are openly\
   \ hostile to the Peace Brigade (Racketeers with no sense of Morality or Honor) and\
   \ Ranks of the Fit (whom they consider stupid zealots).|"
-...
+---
+</br>

@@ -168,4 +168,5 @@ players: "Killer Kelp; '';Description: This kelp can sense any nearby movement t
   \ followed by the dissolving juices. It will continue this sequence until either\
   \ the victim or the plant dies. Any creature which falls victim to this plant will\
   \ become fertilizer for future generations of killer kelp.|"
-...
+---
+</br>

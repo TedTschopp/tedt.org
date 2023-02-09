@@ -204,4 +204,5 @@ players: "Hydrozoan; 'Sea Medusae';Description: Hydrozoans are two meter tall je
   \ but their most feared ability is their poisonous skin which turns victims to stone\
   \ (exactly as per Ert in the rulebook - but will cause damage even if the victim\
   \ doesn't turn to stone).|"
-...
+---
+</br>

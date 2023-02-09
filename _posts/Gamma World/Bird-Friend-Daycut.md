@@ -193,4 +193,5 @@ players: "Daycut; 'Bird Friend';Description: (Mount) Daycuts are four-meter tall
   \ over its fallen rider, protecting him, instead of fleeting to safety.  Inline\
   \ some other mounts they have no ability to pick a rider backup and return him to\
   \ safety.|"
-...
+---
+</br>

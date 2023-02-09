@@ -269,4 +269,5 @@ players: "Fen; 'Man-Fish';Description: Intelligent humanoids that have adapted t
   \ most prevalent in coastal areas and near large lakes. They are basically friendly\
   \ and harmless, desiring only to live and let live.  Fens retreat back to the water\
   \ when they are outnumbered by surface creatures.|"
-...
+---
+</br>

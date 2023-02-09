@@ -272,4 +272,5 @@ players: "Mountain Men; 'Squatches';Description: Vast tracts of North Americas w
   \ exists between the two racesMountain men appear to be large brown gorillalike\
   \ beings who walk erect Their thick fur keeps out the cold and serves as their only\
   \ body armor|"
-...
+---
+</br>

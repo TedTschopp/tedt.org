@@ -168,4 +168,5 @@ final_output: "Bu'Daan 'That Which Flies the Moon' (1d2 (1)): Init +11; atk bite
 players: "Bu'Daan; 'That Which Flies the Moon';Description: The Bu'Daan resembles\
   \ a huge Weasel with great bat wings and is extremely rare.  It usually lives in\
   \ high areas and its fur brings an enormous price.  |"
-...
+---
+</br>

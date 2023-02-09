@@ -156,4 +156,5 @@ final_output: "Mutated Rat (10d5 (30)): Init +1; atk bite melee  (1d3-1); AC 12;
   \ use their light wave manipulation to become invisible."
 players: Mutated Rat; '';Behavior:When half their number is defeated, they will use
   their light wave manipulation to become invisible.|
-...
+---
+</br>

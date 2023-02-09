@@ -199,4 +199,5 @@ players: "Glower; '';Description: These mutant fungi always live near or in radi
   \ poison if swallowed by any creature (Int 16). However, when these mutated fungi\
   \ are boiled down, they produce an antidote for Int 16 poisons.Each square meter\
   \ of this growth will yield one dose of this anti-dote.|"
-...
+---
+</br>

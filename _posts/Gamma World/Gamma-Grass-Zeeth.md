@@ -252,4 +252,5 @@ players: "Zeeth; 'Gamma Grass';Description: Zeeth are blades of purple grass tha
   \ corpse.Society: Zeeth are usually found in clumps or clusters on open plains and\
   \ clearings in temperate environments. They go to seed in summer, dying out in the\
   \ autumn and winter, with new zeeth sprouting from their hosts in the spring.|"
-...
+---
+</br>

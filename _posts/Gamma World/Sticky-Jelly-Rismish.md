@@ -195,4 +195,5 @@ players: "Rismish; 'Sticky Jelly';Description: Rismish comes in a variety of col
   \  Rishmish can only be harmed by fire, and then only take 1/4 the usual damage.\
   \  A character held fast to a rismish that is being burned will take half damage\
   \ from the fire for a maximum of two actions.  |"
-...
+---
+</br>

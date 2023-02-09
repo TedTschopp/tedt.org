@@ -215,4 +215,5 @@ players: "Ert Telden; 'Firefish';Description: Ert telden are sleek fish up to a 
   \ villages and tribes in Gamma Terra understake the dangerous task of capturing\
   \ or raising ert telden, keeping them in shallow pools and flinging them over walls\
   \ by hand or by catapult as weapons.|"
-...
+---
+</br>

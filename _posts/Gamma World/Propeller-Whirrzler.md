@@ -223,4 +223,5 @@ players: "Whirrzler; 'Propeller';Description: Whirrzlers are carnivorous desert 
   \ in radioac- tive deathlands are assumed to be immune to radiation.1d81 - Immunity2\
   \ - Cold3 - Heat4 - Light and lasers Electricity5 - Sonic blast and blasters 6 -\
   \ Radiation7 - Life leech8 - Molecular disruption|"
-...
+---
+</br>

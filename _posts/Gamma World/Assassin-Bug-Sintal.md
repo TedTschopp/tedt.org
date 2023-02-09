@@ -195,4 +195,5 @@ players: "Sin'tal; 'Assassin Bug';Description: These insects are giant assassin 
   \ with its claws OR bite, but not both in the same round.Sin'tal hunt in small packs\
   \ in order to bring down large prey. They breed in the fall and the egg masses are\
   \ layed on very large trees in the canopy.|"
-...
+---
+</br>

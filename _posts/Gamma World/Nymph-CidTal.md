@@ -180,4 +180,5 @@ players: "Cid'Tal; 'Nymph';Description: This mutant cicada is the terror of gree
   \ does 7d6 points of damage. It can be used 1/5 rounds. Remember to check equipment\
   \ damage!It is unknown where the nymphs lair. The adults live for 3-4 weeks during\
   \ the summer. Also the cid'tal appears only once per 17 years (and in great numbers).|"
-...
+---
+</br>

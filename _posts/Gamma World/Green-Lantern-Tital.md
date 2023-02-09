@@ -194,4 +194,5 @@ players: "Ti'tal; 'Green Lantern';Description: This is a huge metallic green tig
   \ in the areas that they are found. They do, on occasion try to communicate with\
   \ other intelligent beings, but it is unknown why, as they tend to eat those they\
   \ speak to.|"
-...
+---
+</br>

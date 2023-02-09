@@ -223,4 +223,5 @@ players: "Cren Tosh; 'Lizard Fish';Description: The cren tosh (or \"lizard fish\
   \ line their nests with shiny pebbles and objects they have collected, and lay their\
   \ eggs there. They defend the nest fiercely until the eggs hatch, then the young\
   \ cren tosh are left on their own.|"
-...
+---
+</br>

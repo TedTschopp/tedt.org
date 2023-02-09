@@ -153,4 +153,5 @@ description_output: ''
 final_output: "Unsut 'Spider Friend' (1d8 (4)): Init +7; atk acid spit +5 (1d3+3,\
   \ 100'); AC 15; HD 7D7 hp 28 each; MV 45' ; 1d20; SV Fort +2, Ref +3, Will +0"
 players: Unsut; 'Spider Friend';|
-...
+---
+</br>

@@ -157,4 +157,5 @@ final_output: "Android 'High Thinker' (1): Init +7; atk weapon melee +2 (1d4); A
 players: "Android; 'High Thinker';Description: Man-made beings with red hued skin\
   \ and blank stares.Behavior:equipment: Communicator, Control Baton, Stim Dose, Mind\
   \ Booster|"
-...
+---
+</br>

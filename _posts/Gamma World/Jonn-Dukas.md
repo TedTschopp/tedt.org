@@ -151,4 +151,5 @@ description_output: ''
 final_output: 'Jonn Dukas (1): Init -3; atk see description; AC 10; HD 1D12 hp 7;
   NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 players: Jonn Dukas; '';|
-...
+---
+</br>

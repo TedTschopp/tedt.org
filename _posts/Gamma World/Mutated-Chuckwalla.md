@@ -154,4 +154,5 @@ final_output: "Mutated Chuckwalla (1d2 (1)): Init +4; atk bite melee +2 (1d6); A
   \ 14; HD 6D7 hp 24; MV 23' or Burrow 5' ; 1d20; SV Fort +1, Ref +1, Will +0(P) heightened\
   \ intelligence, and symbiotic attachment (M) reflection"
 players: Mutated Chuckwalla; '';|
-...
+---
+</br>

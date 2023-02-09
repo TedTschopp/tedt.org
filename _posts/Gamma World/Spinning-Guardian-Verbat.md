@@ -251,4 +251,5 @@ players: "Verbat; 'Spinning Guardian';Description: A Verbat is an intelligent cr
   \ paying toll more than 4 times), imformation may be gained, by payment or otherwise,\
   \ from the Verbat.  This information always concerns the area the Verbat patrolls.\
   \ |"
-...
+---
+</br>

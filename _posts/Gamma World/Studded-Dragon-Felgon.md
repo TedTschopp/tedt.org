@@ -182,4 +182,5 @@ players: "Felgon; 'Studded Dragon';Description: This gon is six meters long with
   \ seek each other out and mate.  A female will ensure the eggs are hidden well underground\
   \ and protect the clutch until they are ready to hatch.  The mother will then leave\
   \ the clutch a day or two before the eggs hatch.|"
-...
+---
+</br>

@@ -219,4 +219,5 @@ players: "General Household Robotoid; 'Bot';Description: These are the most huma
   \ and hot plate in the palms. It has a replay video screen built into its chest.\
   \ Generally, the house would have re-mote cameras that the robot could monitor or\
   \ display on the same video screen. |"
-...
+---
+</br>

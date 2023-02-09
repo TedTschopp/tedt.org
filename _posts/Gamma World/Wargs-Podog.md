@@ -254,4 +254,5 @@ players: "Podog; 'Wargs';Description: The Podogs are huge mutated mastiffs that 
   \ to be saddled and ridden by a stranger' In thr wild, podogs are clever and dangerous\
   \ hunters, using thrir sound imitation to maximum effect and making fast, hit-andrun\
   \ attacks to weaken strong prey. |"
-...
+---
+</br>

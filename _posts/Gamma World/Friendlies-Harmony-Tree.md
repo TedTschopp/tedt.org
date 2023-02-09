@@ -361,4 +361,5 @@ players: "Harmony Tree; 'Friendlies';Description: There is a 20% chance that pla
   \ and of course a character must survive the poison to gain the mental strength.\
   \ The poisonous effects of all harmony fruit eaten in one day are cumulative, so\
   \ two harmony fruit will act as intensity 14 poison.|"
-...
+---
+</br>

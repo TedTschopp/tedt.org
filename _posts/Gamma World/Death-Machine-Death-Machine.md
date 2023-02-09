@@ -247,4 +247,5 @@ players: "Death Machine; 'Death Machine';Description: This 15 meter long, 9 mete
   \ of damage per minute.  When reduced to less than 50 hit points it can only repair\
   \ 1 hitpoint a minute.  Some death machines may shutdown when reduced to 20 hit\
   \ points so that they may repair themselves and attack later.|"
-...
+---
+</br>

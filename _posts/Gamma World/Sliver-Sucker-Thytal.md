@@ -185,4 +185,5 @@ players: "Thy'tal; 'Sliver Sucker';Description: This is a giant silverfish. They
   \ sometimes used by evil, greedy people to convert prisoners into silver. Its life\
   \ cycle is unknown as all are attacked unpon sight. A dead  Thy'tal yields 200-500kg\
   \ of silver.|"
-...
+---
+</br>

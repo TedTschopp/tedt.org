@@ -294,4 +294,5 @@ players: "Dagmits; 'Purple Pygmies';Description: The few expeditions that have m
   \ of poison intensity 9.Combat: They attack almost anything that moves, but are\
   \ terrified of large, self-propelled machines such as robots and vehicles (they\
   \ do not usually recognize androids as machines until too late, however). |"
-...
+---
+</br>

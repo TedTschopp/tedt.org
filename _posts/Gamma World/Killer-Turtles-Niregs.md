@@ -219,4 +219,5 @@ players: "Niregs; 'Killer Turtles';Description: Each head will have seperate Men
   \ nireg (if willing) can carry up to 200 kg at full speed over any terrain but the\
   \ rockiest, and can haul up to 400 kg at half speed over smooth ground or roads.\
   \ Niregs typically have a single name despite having two separate personalities.|"
-...
+---
+</br>

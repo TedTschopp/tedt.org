@@ -207,4 +207,5 @@ players: "Barxyn; 'Smokie';Description: This fearsome mutant bear usually lives 
   \ fur that is multicolored brown, yellow, and green in patches. When hungry, the\
   \ barxyn delight in burning trapped creatures out of their hiding places with Pyrokinesis\
   \ powers (hence the name, Smokie)|"
-...
+---
+</br>

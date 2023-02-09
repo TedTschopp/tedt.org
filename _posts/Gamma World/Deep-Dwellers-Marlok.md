@@ -277,4 +277,5 @@ players: "Marlok; 'Deep Dwellers';Description: Marloks look like Pure Strain Hum
   \ base chance of any of the participants dying is only 1% ( + 1% for each minute\
   \ of contact). All involved in the mass mind share a weak tele- pathic link while\
   \ in contact, between those in the link who are touching.|"
-...
+---
+</br>

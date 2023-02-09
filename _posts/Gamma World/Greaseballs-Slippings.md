@@ -223,4 +223,5 @@ players: "Slippings; 'Greaseballs';Description: Slippigs resemble the pink, curl
   \ ously hurt by poison, radiation, or disease is easy to catch, but dangerous to\
   \ eat. Only the considerable fecundity of slippigs has enabled them to survive as\
   \ a species.|"
-...
+---
+</br>

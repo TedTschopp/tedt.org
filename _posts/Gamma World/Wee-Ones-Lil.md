@@ -236,4 +236,5 @@ players: "Lil; 'Wee Ones';Description: These small winged humanoids are only 20 
   \ to aid travelers who have not caused them any problems. Lil often have artifacts\
   \ of great sophistication, but their ability to use such items is limited by their\
   \ size. Nonartifact items are always Tech Level I or II.|"
-...
+---
+</br>

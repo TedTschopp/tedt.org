@@ -200,4 +200,5 @@ players: "Giggle Bugs (Moths); '';Description: Ba'mutan are gentle herbivores th
   \ extinct and the only surviving creatures are herd animals.  This means that groups\
   \ of these creatures will be found together and attacking one to extract its pearl\
   \ will cause the whole herd to panic and attack.|"
-...
+---
+</br>

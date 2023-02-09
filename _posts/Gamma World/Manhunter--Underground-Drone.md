@@ -241,4 +241,5 @@ players: "Manhunter - Underground Drone; '';Description: This cyber is also cov-
   \ for characters who are nearly dead. Up to four man-sized beings (500 kilograms)\
   \ may be kept in the chamber.The upper surface of the Manhunter also carries a number\
   \ of special probes, described below.|"
-...
+---
+</br>

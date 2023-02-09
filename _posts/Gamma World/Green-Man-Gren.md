@@ -292,4 +292,5 @@ players: "Gren; 'Green Man';Description: Grens look like Green skinned pure stra
   \ don't need to hunt or farm for their food, their day-to-day life is fairly idyllic,\
   \ save for warding off predators and other hazards. They often build their homes\
   \ among the treetops, away from the dangers on the forest floor.|"
-...
+---
+</br>

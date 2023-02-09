@@ -152,4 +152,5 @@ description_output: ''
 final_output: "Waldis 'Sage of Melkath' (1): Init +2; atk see description; AC 18;\
   \ HD 4D12 hp 26; MV 60' ; 1d20; SV Fort +1, Ref +0, Will +0None"
 players: Waldis; 'Sage of Melkath';|
-...
+---
+</br>

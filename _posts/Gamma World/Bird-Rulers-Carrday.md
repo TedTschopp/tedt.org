@@ -159,4 +159,5 @@ final_output: "Carrday 'Bird Rulers' (1d20 (10)): Init -3; atk see description; 
 players: "Carrday; 'Bird Rulers';Society: Seps tend to hunt singly, although they're\
   \ sometimes encountered in small 'schools' of up to six. They inhabit deserts and\
   \ other sandy regions.|"
-...
+---
+</br>

@@ -166,4 +166,5 @@ players: "Slake; 'Giant Sea Slug';Description: These giant slugs have elongated 
   \ hiding in the sand and rarely in the corals. They are about 12-15 meters long\
   \ and are a dull gray. Some races use them as food livestock (1d6 in a domesticated\
   \ herd).|"
-...
+---
+</br>

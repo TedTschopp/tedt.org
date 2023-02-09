@@ -184,4 +184,5 @@ players: "Yexil; 'Orange Scarfers';Description: The Yexil stands 3 meters tall, 
   \ clothing of all types and find synthetics especially tasty.  In fact, the snappier\
   \ the outfit, the better yexils like the taste.  They will often trade \"useless\"\
   \ artifacts for \"food\" of this type.|"
-...
+---
+</br>

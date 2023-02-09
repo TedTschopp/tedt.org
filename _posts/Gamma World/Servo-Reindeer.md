@@ -191,4 +191,5 @@ players: "Servo Reindeer; '';Description: The S. Reindeer was originally designe
   \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
   \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
   \ situations where it can be easily destroyed.|"
-...
+---
+</br>

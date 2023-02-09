@@ -215,4 +215,5 @@ players: "Nurglez; 'Plague Beetle';Description: The plague beetle is a giant sca
   \ After the survivors flee, the Beetles feast. They then go back to scavenging in\
   \ the wilds, if possible.GMs are urged to use this critter sparingly, as you can\
   \ depopulate large areas with these!|"
-...
+---
+</br>

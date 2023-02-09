@@ -307,4 +307,5 @@ players: "Katkin; 'Cat Folk';Description: Katkins are similar in appearance to c
   \ to build cabins. Contact with the outside world is normally limited to a few select\
   \ traders. Katkins are the mortal foes of Squeekers. They will attack these vermin\
   \ whenever encountered, although not by foolhardy means.|"
-...
+---
+</br>

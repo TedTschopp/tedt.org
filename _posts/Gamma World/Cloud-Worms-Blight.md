@@ -221,4 +221,5 @@ players: "Blight; 'Cloud Worms';Description: A blight is a large, worm-like crea
   \ on prey. They're usually solitary, but sometimes found in mated pairs. They lay\
   \ clutches of eggs that hatch into young blights. The young eat their unhatched\
   \ siblings before flying off on their own.|"
-...
+---
+</br>

@@ -173,4 +173,5 @@ players: "Menarl; 'Slime Devils';Description: 10 Meter long intelligent water sn
   \ on request, but without training they will only use simple weapons.  In the wild\
   \ they prey on water birds and the presence of any sort of bird will send them into\
   \ a frenzy.|"
-...
+---
+</br>

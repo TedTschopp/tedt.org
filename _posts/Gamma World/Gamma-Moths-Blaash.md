@@ -173,4 +173,5 @@ players: "Blaash; 'Gamma Moths';Description: A mutated gypsy moth over 1 meter l
   \ glow. Once it makes a kill, it will stop whatever else it is doing and attempt\
   \ to eat the kill unless it is attack or it feels that its food is being threatened.\
   \  It is attracted to bright lights and is unaffected by radiation.  |"
-...
+---
+</br>

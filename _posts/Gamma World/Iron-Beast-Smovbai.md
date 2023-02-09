@@ -199,4 +199,5 @@ players: "Smovbai; 'Iron Beast';Description: (Mount) The Smovbai is a short, six
   \ has a -2 AC each to the next round in an attempt to continue the attack.  If the\
   \ target fails this, then they lose their movement and take another Charge and trample\
   \ attack.|"
-...
+---
+</br>

@@ -152,4 +152,5 @@ description_output: ''
 final_output: "Y'Zor 'He who is a warrior' (1d6 (3)): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Y'Zor; 'He who is a warrior';|
-...
+---
+</br>

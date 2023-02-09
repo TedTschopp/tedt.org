@@ -152,4 +152,5 @@ description_output: ''
 final_output: "General Robotoid 'Waiter Bots' (1d6 (3)): Init +1; atk see description;\
   \ AC 15; HD 2D12 hp 13 each; MV 15' ; 1d20; SV Fort +1, Ref +0, Will +0"
 players: General Robotoid; 'Waiter Bots';|
-...
+---
+</br>

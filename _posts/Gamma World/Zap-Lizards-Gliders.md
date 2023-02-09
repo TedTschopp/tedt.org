@@ -229,4 +229,5 @@ players: "Gliders; 'Zap Lizards';Description: Gliders are large lizards which po
   \ Gliders possess a low-grade form of radiation eyes (2d6 Intensity Level radia-\
   \ tion per shot) that is emitted as beams of green laser light. They use this attack\
   \ only against large creatures, and never against creatures they intend to eat.|"
-...
+---
+</br>

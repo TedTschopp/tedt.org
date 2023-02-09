@@ -175,4 +175,5 @@ players: "Smokerth; 'Flaming Bush';Description: Smokerths are harmless little bu
   \ flare, and easy method of starting a campfire, etc. Smokerths can be found in\
   \ every climate but the arctic cold. They never grow close enough to each other\
   \ to start a chain-reaction and a forest fire.  |"
-...
+---
+</br>

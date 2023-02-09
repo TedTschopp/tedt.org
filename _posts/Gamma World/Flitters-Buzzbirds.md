@@ -265,4 +265,5 @@ players: "Buzzbirds; 'Flitters';Description: This white tree looks like a banyan
   \ hit and double damage for two turns or for the buzz duration, which- ever is longer.10\
   \ Creature attacks the nearest object, as above. If no object is within arms reach,\
   \ the creature may attack the ground (but not itself or its own gear).|"
-...
+---
+</br>

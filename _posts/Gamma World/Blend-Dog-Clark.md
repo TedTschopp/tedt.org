@@ -218,4 +218,5 @@ players: "Clark; 'Blend Dog';Description: Truly neither fish nor fowl, the terl 
   \ if nothing appropriate is available, in dens on the ground. The females give birth\
   \ late in spring to litters of 2D4 pups. The pups, if caught at an early age, can\
   \ easily be domesticated. Wolf climbers can not be domesticated however.|"
-...
+---
+</br>

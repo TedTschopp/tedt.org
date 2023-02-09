@@ -233,4 +233,5 @@ players: "Firebugs; 'The Black Plague';Description: These vicious and destructiv
   \ they are nearly impossible to catch, even though flightless, as they put up their\
   \ force fields and hop 50 m in one jump, 5 times per Action Turn (ten times at fast\
   \ speed).Firebugs are glossy black in color, with orange-red eyes like burning coals.|"
-...
+---
+</br>

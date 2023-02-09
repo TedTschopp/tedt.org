@@ -208,4 +208,5 @@ players: "Ber Lep; 'Sweetpads';Description: Ber lep are mutant lily pads that gr
   \ Ber lep grow in areas of still water, like lakes or swamps. They feed on water\
   \ minerals as well as small creatures they dissolve on their surfaces. They are\
   \ unintelligent and incapable of movement.|"
-...
+---
+</br>

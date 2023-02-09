@@ -198,4 +198,5 @@ players: "Ba'crolbai; 'Endlessly Running Beast';Description: The land cred has a
   \ They migrate slowly, killing off local animal life and leaving a 'trail' of crep\
   \ seedlings in their path. Immature crep plants grow rooted for a season before\
   \ gaining mobility and moving off on their own in search of prey.|"
-...
+---
+</br>

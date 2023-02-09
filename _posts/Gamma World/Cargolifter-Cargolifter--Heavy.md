@@ -185,4 +185,5 @@ players: "Cargolifter - Heavy; 'Cargolifter';Description: A Mutated thornbush th
   \ trunk and the root ball.  They are extremely valueable as mounts, and it is very\
   \ difficult to catch them and then even harder to tame them.  However those that\
   \ are are considered excellent mounts.|"
-...
+---
+</br>

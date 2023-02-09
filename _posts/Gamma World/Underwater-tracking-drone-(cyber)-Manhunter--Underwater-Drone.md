@@ -214,4 +214,5 @@ players: "Manhunter - Underwater Drone; 'Underwater tracking drone (cyber)';Desc
   \ erful light that blinds characters looking directly at it for 1d6 action turns\
   \ out to 30 meters. The cyber has a tractor/pressor beam capable of lifting and\
   \ carrying up to 200 kilograms.|"
-...
+---
+</br>

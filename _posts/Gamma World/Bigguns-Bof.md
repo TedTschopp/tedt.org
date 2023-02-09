@@ -198,4 +198,5 @@ players: "Bof; 'Bigguns';Description: Bofs are 2.5 meter tall buffalo who walk o
   \ enough to attract females and start their own herds.  A bof may show loyalty to\
   \ an individual who has saved his life; this will override all thoughts on double\
   \ crossing the person that saved them.|"
-...
+---
+</br>

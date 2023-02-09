@@ -225,4 +225,5 @@ players: "Lordia Orp; 'Scorpion Folk';Description: The Lorida Orp has the browni
   \ will have to deal with very irate and protective females and even the young will\
   \ fight. If any children are killed the Lorida Orp tribe will track the wrong doers\
   \ back to their village and kill any adult they find as well as burn everything.|"
-...
+---
+</br>

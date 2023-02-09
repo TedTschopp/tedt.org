@@ -204,4 +204,5 @@ players: "S're'daan; 'That Which is Dependable';Description: The S're'dan is a m
   \ them.  There have been many recorded cases where a S're'dan will burrow under\
   \ a fallen master, work them onto its back and return back to the settlement with\
   \ them.  S're'daan prefer plains and verldlands.|"
-...
+---
+</br>

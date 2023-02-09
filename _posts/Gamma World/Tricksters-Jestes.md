@@ -218,4 +218,5 @@ players: "Jestes; 'Tricksters';Description: These short, elfin- looking humans a
   \ ease (for example, pistols instead of rifles).Jestes enjoy the company of friendly\
   \ mutant animals, grens, and wardents. They dislike androids greatly and hate robots,\
   \ reserving their more malicious tricks for these two groups of beings.|"
-...
+---
+</br>

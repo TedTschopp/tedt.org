@@ -190,4 +190,5 @@ players: "Mutated Houseplant; '';Description: Originally this creature was a sma
   \ have been severed, the mutant plant will start flinging explosive seed pods at\
   \ the party. Each pod may be thrown up to 20 meters, exploding on contact for 5d6\
   \ points of damage in a two-meter radius. The plant has only 10 pods.|"
-...
+---
+</br>

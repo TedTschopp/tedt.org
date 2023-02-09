@@ -176,4 +176,5 @@ players: "Frid Esk; 'Phoenix Hedge';Description: Phoenix hedges are long low hed
   \ of the Frid Esk are exposed they will emit a radiation plaster of 1d6+6 intensity\
   \ to everyone within 30 feet.  The jaws amd spikes are hidden under large leaves\
   \ and can not normally be seen.  |"
-...
+---
+</br>

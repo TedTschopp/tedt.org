@@ -229,4 +229,5 @@ players: "Thunderbird; '';Description: These great mutated bald eagles take thei
   \ can stretch for dozens of kilometers in all directions from its nest (usually\
   \ nestled in a high mountain crag). It does not allow other large predators to hunt\
   \ in its territory, taking on yexil, mantids, and even kamodos without fear. |"
-...
+---
+</br>

@@ -201,4 +201,5 @@ players: "Manhunter - Communications Drone; '';Description: These data-probes ar
   \ probes are also equipped with an electrical defense shield that does 1d10 hp damage\
   \ to characters touching them. The probes themselves cannot attack, and flee as\
   \ soon as they have registered the posi- tion of the desired hiding group.|"
-...
+---
+</br>

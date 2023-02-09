@@ -194,4 +194,5 @@ players: "Sea Serpent, Green; '';Description: This serpent is a mutated eel. Oth
   \ the serpent bites the whole crew to death before feeding. If it fails a moral\
   \ check, the serpent generates fear and flees.They breed in the late summer at depths\
   \ of 40-60 feet. They rarely come to the serface and will attack ships only if starving.|"
-...
+---
+</br>

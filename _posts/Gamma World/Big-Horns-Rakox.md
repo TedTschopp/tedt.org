@@ -228,4 +228,5 @@ players: "Rakox; 'Big Horns';Description: These oxen are slow but powerful mutat
   \ hide can be cured and used , but it is less serviceable than rog hide (see the\
   \ \"Campaign \" chapter). The horns are hollowed out and made into musical instruments\
   \ or storage containers , like gunpowder horns. |"
-...
+---
+</br>

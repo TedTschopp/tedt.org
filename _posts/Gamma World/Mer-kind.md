@@ -175,4 +175,5 @@ players: "Mer-kind; '';Description: Mer-kind are half-man, half-fish beings (hum
   \ to be in trouble. Of the many intelligent beings living in the strange seas of\
   \ Gamma World, they are perhaps the most noble. They are able to survive for short\
   \ periods of time above the surface.|"
-...
+---
+</br>

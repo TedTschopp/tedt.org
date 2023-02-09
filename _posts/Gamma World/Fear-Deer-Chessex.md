@@ -220,4 +220,5 @@ players: "Chessex; 'Fear Deer';Description: The chessex are small, mutated deer 
   \ weapons and traps to bring down chessex. Because of their mutations, these creatures\
   \ cannot be domesticated. Chessex have learned to travel radioactive lands in order\
   \ to escape hunters.|"
-...
+---
+</br>

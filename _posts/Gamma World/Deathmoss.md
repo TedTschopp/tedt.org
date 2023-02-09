@@ -209,4 +209,5 @@ players: "Deathmoss; '';Description: Deathmoss is a lush, soft-looking, moss-lik
   \ purple-veined gray fruit, when eaten, increases all five senses [sight, smell,\
   \ hearing, touch and taste) for one hour, but thereafter causes a 50% loss of normal\
   \ senses for another hour.|"
-...
+---
+</br>

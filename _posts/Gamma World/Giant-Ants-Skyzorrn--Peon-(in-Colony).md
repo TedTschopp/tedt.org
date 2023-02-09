@@ -282,4 +282,5 @@ players: "Skyzorr'n - Peon (in Colony); 'Giant Ants';Description: Skyzorr'n are 
   \ races for the treasure their queen desires. Skyzorr'n peons or warriors are often\
   \ hired out as guards or workers in exchange for payment. This also gives the queen\
   \ a way of gaining information and keeping track of the activities of other societies.|"
-...
+---
+</br>

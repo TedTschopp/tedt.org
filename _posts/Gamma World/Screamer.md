@@ -235,4 +235,5 @@ players: "Screamer; '';Description: Very little is known about this strange and 
   \ heat and cold-based attacks. They possess the abilities of directional sense and\
   \ life leech, the Iatter with a ronge of 20 meters (mental strength 12). In addition,\
   \ the touch of a screamer gives a sudden lase of intensity 13 radiation to its victim.|"
-...
+---
+</br>

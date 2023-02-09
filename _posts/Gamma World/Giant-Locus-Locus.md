@@ -189,4 +189,5 @@ players: "Locus; 'Giant Locus';Description: These domestic cat sized giant flyin
   \ Locus will swarm to form new hives. During this Hiveswarm time they will be encountered\
   \ in numbers of 80-400 and they will attack anything in their path (To use as food,\
   \ for the new hive).|"
-...
+---
+</br>

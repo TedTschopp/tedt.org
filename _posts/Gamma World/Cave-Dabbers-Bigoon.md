@@ -214,4 +214,5 @@ players: "Bigoon; 'Cave Dabbers';Description: One glance easily identifies a big
   \ A lone bigoon is usually a rogue male. If three or more are encountered, they\
   \ are likely to be a mother and her immature young. Bigoons are all capable of climbing\
   \ trees sturdy enough to hold their weight.|"
-...
+---
+</br>

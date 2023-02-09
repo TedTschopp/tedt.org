@@ -176,4 +176,5 @@ players: "Jemagon; 'Glass Dragon';Description: This gon is eight meters long and
   \ it will be at a -4 to hit.  A Jemagon can spit a clear contact poison at a range\
   \ fo 13 meters (I14)Equiptment: These transparent creatuers hoard delicate items,\
   \ usually very rare artifacts.|"
-...
+---
+</br>

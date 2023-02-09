@@ -166,4 +166,5 @@ players: "Drona; '';Description: Physically tallker then average and considered 
   \ by most.  The colors of his skin are in constant state of change, frequently betraying\
   \ his feelings.  He usually cloths himself in colorful patterns rather than animal\
   \ fursEquiptment: Battle Axe|"
-...
+---
+</br>

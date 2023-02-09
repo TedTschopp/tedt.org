@@ -210,4 +210,5 @@ players: "Markus Dema; '';Society: A verbat usually stakes out an area and keeps
   \ with a Verbat (passing though his area and paying toll more than 4 times), imformation\
   \ may be gained, by payment or otherwise, from the Verbat.  This information always\
   \ concerns the area the Verbat patrolls. |"
-...
+---
+</br>

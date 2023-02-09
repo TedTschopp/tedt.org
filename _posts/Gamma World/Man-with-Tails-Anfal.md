@@ -152,4 +152,5 @@ description_output: ''
 final_output: "Anfal 'Man with Tails' (1d12 (6)): Init -3; atk see description; AC\
   \ 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Anfal; 'Man with Tails';|
-...
+---
+</br>

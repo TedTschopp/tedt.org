@@ -194,4 +194,5 @@ players: "Kooda; '';Description: This mutated descendant of the great barracuda 
   \ use their highly evolved instincts to take advantage of the disorder that occurs\
   \ around dusk, when the nighttime fish switch places with the daytime fish. It is\
   \ at this time, when their prey least expect it, that Koodas make their attack.|"
-...
+---
+</br>

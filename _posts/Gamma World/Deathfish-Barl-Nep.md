@@ -215,4 +215,5 @@ players: "Barl Nep; 'Deathfish';Description: The barl nep is a mutant form of ca
   \ its radioactive oil, it can be extracted from its body with a successful skill\
   \ check. Barl nep are considered a delicacy in some parts of Gamma Terra, provided\
   \ they're properly prepared.|"
-...
+---
+</br>

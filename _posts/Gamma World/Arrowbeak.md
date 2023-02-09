@@ -224,4 +224,5 @@ players: "Arrowbeak; '';Description: Their coloration is normally dark brown, wi
   \ off to roost and deliver an egg. If an attacker fails, she will generally harass\
   \ the party to protect the successful individuals. Males will not usually participate\
   \ in combat except when attacked.|"
-...
+---
+</br>

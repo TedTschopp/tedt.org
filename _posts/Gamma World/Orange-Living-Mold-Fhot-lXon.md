@@ -176,4 +176,5 @@ players: "Fhot l'Xon; 'Orange Living Mold';Description: A two meter tall egg-sha
   \ and 'eyes' combine to give the n'thlai radar/sonar and 360 degree sight.  They\
   \ can not be surprised. Vegetarians, Nature Worshippers, Healers, Comando Fighters.\
   \  |"
-...
+---
+</br>

@@ -156,4 +156,5 @@ final_output: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 1
   \ each turn"
 players: "Abomination Claw; '';Description: Large claws attached to tendrils that\
   \ act as legs.Behavior:Can leap 2 meters in any direction each turn|"
-...
+---
+</br>

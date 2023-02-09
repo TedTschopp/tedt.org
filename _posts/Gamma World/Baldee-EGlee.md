@@ -231,4 +231,5 @@ players: "E'Glee; 'Baldee';Description: These huge winged creatures are the muta
   \ of fire (Pyrophobia), smoke, and steam. Seeing or coming close to any fire larger\
   \ than a bonfire sends them into an uncontrollable panic. E'glee heal damage by\
   \ Regeneration.|"
-...
+---
+</br>

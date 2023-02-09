@@ -170,4 +170,5 @@ players: "Gator; 'Green Hissers';Description: One to Two Meter long mutated Alli
   \ tentacles will parale on contact (Treat as a Mental Attack Save vs. Will at DC\
   \ 15).  They are immune to radiation.  They are solitary by nature, but will congregate\
   \ in groups of 10d6 to spawn in the springtime.|"
-...
+---
+</br>

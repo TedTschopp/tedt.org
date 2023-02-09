@@ -237,4 +237,5 @@ players: "Canopus Plague Victim; 'Zombie';Description: The figure appears humano
   \ leave the plague-zombies behind. The space station has remained functioning, but\
   \ plague zombies wander the rooms and halls in an endless search for uninfected\
   \ humans.|"
-...
+---
+</br>

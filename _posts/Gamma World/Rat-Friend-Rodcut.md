@@ -181,4 +181,5 @@ players: "Rodcut; 'Rat Friend';Description: The rodcut are mutated descendents o
   \ alone and have no loot.  They usually know each oterh's whereabouts by signs and\
   \ markers they leave about.  In cases where a large number of adventurers have been\
   \ threatened, an entire pack of rodcust have stepped in and saved the day.|"
-...
+---
+</br>

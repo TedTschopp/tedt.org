@@ -210,4 +210,5 @@ players: "Mut Choo; 'Gas Plant';Description: Mut choo are 3 to 4m diameter plant
   \ damage to all within 7m.       Mut choo prefer to live in areas like jungles,\
   \ forests, swamp lands, and other locales with overhanging vegetation. They are\
   \ sometimes found in caves or ancient ruins.    |"
-...
+---
+</br>

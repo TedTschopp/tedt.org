@@ -173,4 +173,5 @@ players: "Supervisory Borg; 'BossBot';Description: This unit's 1 meter tall huma
   \ that allow them to control all other Robots as if they had a Stage IV I.D. They\
   \ can communicate with Think Tanks and Cybernetic Installations on whose behalf\
   \ they will usually function. |"
-...
+---
+</br>

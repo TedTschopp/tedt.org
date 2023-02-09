@@ -166,4 +166,5 @@ players: "Slashworm; '';Description: These carnivorous worms have 6 long blades,
   \ wounds. They are .5 to .75 meters long and are light blue in color. They hunt\
   \ in packs of 10 to 20 and migrate up and down the Lantik coast following several\
   \ preferred prey species.|"
-...
+---
+</br>

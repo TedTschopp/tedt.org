@@ -217,4 +217,5 @@ players: "Guman; 'Flat Render';Description: Guman are only found underground as 
   \ who have lived through guman mental control will suddenly find that they have\
   \ a skill or talent they never had before.  Apparently guman carry around residual\
   \ memories from other victims and these are someitmes transferred to new victims.|"
-...
+---
+</br>

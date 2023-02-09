@@ -314,4 +314,5 @@ players: "Moklas; 'Sea Devils';Description: During the twentieth century the wor
   \ The eggs hatch within a month and the young moklas then stay with the nearest\
   \ local herd of their own species Moklas reach adulthood after a period of 1015\
   \ years and have a lifespan of over 500 years|"
-...
+---
+</br>

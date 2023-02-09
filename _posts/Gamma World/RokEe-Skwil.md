@@ -223,4 +223,5 @@ players: "Skwil; 'Rok'Ee';Description: Skwil are dog-sized mutant squirrels that
   \ from neighboring trees or bushes into their paws. Although these mutants are very\
   \ sensitive to pain (Doubled Pain [D]) they overcome this debilitating defect by\
   \ employing their powerful mutation, Total Healing.|"
-...
+---
+</br>

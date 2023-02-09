@@ -243,4 +243,5 @@ players: "Inslith; 'Black Snake';Description: An Inslith is a long, thin, black 
   \ can be made into armor by any hunter with a roll against Agility DC 15.  It requires\
   \ 100 skins to make a set of armor for a human sized creature.  The armor will be\
   \ AC 4 and includes a helm, but not a shield.  The armor is acid proof.|"
-...
+---
+</br>

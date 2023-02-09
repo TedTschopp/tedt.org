@@ -208,4 +208,5 @@ players: "Parn; 'Sword Beetles';Description: The parn or \"sword beetle\" is one
   \ lays her eggs in a buried nest before abandoning them to their fate. Most young\
   \ parn don't survive the first few months of life. Those that do grow to maturity\
   \ within a year.|"
-...
+---
+</br>

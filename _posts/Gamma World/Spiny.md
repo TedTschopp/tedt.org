@@ -197,4 +197,5 @@ players: "Spiny; '';Description: Though primarily nocturnal, these large quill-c
   \ come together to mate in autumn, after which the male remains to protect the pregnant\
   \ female in her den. Young are born in late spring and the male leaves soon afterward.\
   \ |"
-...
+---
+</br>

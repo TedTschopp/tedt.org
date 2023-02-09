@@ -157,4 +157,5 @@ final_output: "Mutated Scorpion (1d2 (1)): Init +5; atk 2 x pincers melee +3 (1d
   \ has Poison of DC 14"
 players: "Mutated Scorpion; '';Description: Large ScorpionBehavior:Stinger has Poison\
   \ of DC 14|"
-...
+---
+</br>

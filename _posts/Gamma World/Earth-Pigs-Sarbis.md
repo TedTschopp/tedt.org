@@ -310,4 +310,5 @@ players: "Sarbis; 'Earth Pigs';Description: The sarbis looks strikingly like a 2
   \ much of the raw minerals for Gamma World societies.  There value in this capacity,\
   \ plus their dangerous nature when crossed, have made them better allies than slaves\
   \ or subjects.|"
-...
+---
+</br>

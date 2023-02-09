@@ -240,4 +240,5 @@ players: "Pineto; 'Horse Cacti';Description: A Mutated thornbush that is neither
   \ everyone else to run.  Intelligent races, such as sleeths, have tamed pinetos\
   \ and used them as beasts of burden and riding animals. In this respect, they have\
   \ the same endurance and load-bearing qualities as a normal horse. |"
-...
+---
+</br>

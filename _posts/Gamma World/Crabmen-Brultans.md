@@ -168,4 +168,5 @@ players: "Brultans; 'Crabmen';Description: These large man-like crabs can be fou
   \ of their mutations. They are able to manipulate many types of weapons, though\
   \ they prefer pole arms the most. Even if they are unarmed their claws can still\
   \ do considerable damage - or blast an opponent with bolts of radiation.|"
-...
+---
+</br>

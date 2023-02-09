@@ -195,4 +195,5 @@ players: "Ape, Carnivorous; 'Magilla';Description: The carnivorous ape is a larg
   \ flash of light to blind and stun its prey. It then attacks by biting or constriction,\
   \ grabbing its prey in a powerful hold. It prefers to attack single creatures or\
   \ small groups, but it will always attack when it feels its territory is threatened.|"
-...
+---
+</br>

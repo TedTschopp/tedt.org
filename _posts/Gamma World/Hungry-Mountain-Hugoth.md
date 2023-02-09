@@ -155,4 +155,5 @@ final_output: "Hugoth 'Hungry Mountain' (1): Init +4; atk gore melee +8 (1d8+6) 
   \ trample melee +8 (1d5+6); AC 15; HD 8D7 hp 32; MV 25' ; 1d20; SV Fort +6, Ref\
   \ +0, Will +1(P) Two Trunks, Head Generation (20), (M) Thought Imitation (8)"
 players: Hugoth; 'Hungry Mountain';|
-...
+---
+</br>

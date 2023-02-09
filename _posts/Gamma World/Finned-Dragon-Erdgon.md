@@ -190,4 +190,5 @@ players: "Erdgon; 'Finned Dragon';Description: This goin has a white srreaked sk
   \ out and mate.  A female will ensure the eggs are hidden well underground and protect\
   \ the clutch until they are ready to hatch.  The mother will then leave the clutch\
   \ a day or two before the eggs hatch.|"
-...
+---
+</br>

@@ -183,4 +183,5 @@ players: "Slimer; 'Blue Snail';Description: These large snails have blue skin an
   \ slime burns until washed off with water or alcohol.  Slimers are dangerous pests\
   \ in inhabited regions, but do perform an important duty of eating dead plant and\
   \ animal matter (carrion). They are preyed upon by animals immune to acid.|"
-...
+---
+</br>

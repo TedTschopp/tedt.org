@@ -187,4 +187,5 @@ players: "Rrerslith; 'Cold Snake';Description: A rrerslith is a venomous snake w
   \ Rrerslith love to collect shiny objects and there is usually a hidden treasure\
   \ trove somewhere close to a Rrerslith nest (each nest is sually occupied by at\
   \ least two rrerslith)|"
-...
+---
+</br>

@@ -182,4 +182,5 @@ players: "Euryl; 'Mayday Bug';Description: The euryl looks like most aquatic ins
   \ are non combative, and will not attack things larger than itself unless provoked.\
   \ It uses detect life to sense prey and predators. If attacked it will try to flee.Euryl\
   \ are hunted for food by MA and MH. In some areas they are an important farmed animal.|"
-...
+---
+</br>

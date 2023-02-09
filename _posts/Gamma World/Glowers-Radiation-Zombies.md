@@ -202,4 +202,5 @@ players: "Radiation Zombies; 'Glowers';Description: Radiation Zombies are surviv
   \ be contaminated with 3d6 Intensity radiation. This will be uniform for each individual\
   \ within the entire group. Any contact with a radiation zombie will require an immediate\
   \ check on the radiation table to determine the damage caused by the radioactivity.|"
-...
+---
+</br>

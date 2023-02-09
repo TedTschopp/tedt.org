@@ -334,4 +334,5 @@ players: "Shreelon; 'Alien';Description: The Shreelon were first mentioned in `R
   \ in the rulebook. They are able to dominate a subject without actually leaving\
   \ their own body  if the victim dies, regardless of range, the controller is uninjured.\
   \ If control is broken the victim will not remember being controlled.|"
-...
+---
+</br>

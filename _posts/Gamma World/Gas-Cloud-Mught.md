@@ -217,4 +217,5 @@ players: "Mught; 'Gas Cloud';Description: Mught are gaseous creatures that live 
   \ found around charged energy cells, electrocal generating equiptment, or operational\
   \ machines.  While Mught do not have any treasure of their own, they are often an\
   \ indicator of operational look admist junk.|"
-...
+---
+</br>

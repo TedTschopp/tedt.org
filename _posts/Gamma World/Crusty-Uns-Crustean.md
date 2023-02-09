@@ -259,4 +259,5 @@ players: "Crustean; 'Crusty 'Uns';Description: hese solitary, omnivorous scaveng
   \ in treasure and artifacts, although they understand other creatures' desire for\
   \ them. A visible crustean looks like a brown and black mottled crab about the size\
   \ of a derby hat, with long legs and very large, powerful claws.|"
-...
+---
+</br>

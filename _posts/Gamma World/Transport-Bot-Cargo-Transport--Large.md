@@ -168,4 +168,5 @@ players: "Cargo Transport - Large; 'Transport Bot';Mission: To move great quanti
   \ of cargo from one location to another.Equiptment: 4 x 6 meter tentacles that can\
   \ lift 500 kilograms each or 2000 kilograms collectively.1 x tractor/pressor beam\
   \ that can lift 1800 kilograms at a 30 meter range. |"
-...
+---
+</br>

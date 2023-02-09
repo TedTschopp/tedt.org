@@ -196,4 +196,5 @@ players: "Psirens; 'Mind Singers';Description: These foul sea creatures look ver
   \ into the mind with Beguiling or Mental paralysis. The later is the preferred method\
   \ to finish off their victims, as it keeps the Psirens out of harms way (and leaves\
   \ their meal undamaged).|"
-...
+---
+</br>

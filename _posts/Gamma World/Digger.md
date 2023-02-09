@@ -211,4 +211,5 @@ players: "Digger; '';Description: Diggers are a civilized breed of mutant armadi
   \ as Medicine Paints (a.k.a. Neutralizing Pigments), available in the New West.\
   \ They also make moonshine vodka and know the secret of gunpowder. Diggers are generally\
   \ non- violent, but will fight if cornered.|"
-...
+---
+</br>

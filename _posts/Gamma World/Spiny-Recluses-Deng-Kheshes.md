@@ -252,4 +252,5 @@ players: "Deng Kheshes; 'Spiny Recluses';Description:  Garrels are agile mam- ma
   \ of another garrels stunning force attack. If both of the previous powers have\
   \ been used and the garrel is still in danger, it will then attack its pursuer,\
   \ biting with its sharp teeth and never relenting.|"
-...
+---
+</br>

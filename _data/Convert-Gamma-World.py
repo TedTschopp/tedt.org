@@ -29,6 +29,7 @@ with open(in_file_path,'r') as in_json_file:
         with open(filename, 'w') as out_yaml_file:
             yaml = YAML()
             yaml.explicit_start = True
-            yaml.explicit_end = True
             yaml.default_flow_style = False
             yaml.dump(json_obj, out_yaml_file)
+            out_yaml_file.write("---\n")
+            out_yaml_file.write("</br>")

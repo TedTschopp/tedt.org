@@ -274,4 +274,5 @@ players: "Tarn Zeb; '';Description: This carnivorous horror arose from the fusio
   \ effect.The Tarn Zeb is a vicious opponent, but it knows that it is a solitary\
   \ being and will retreat if it feels overly threatened after engaging its opponent\
   \ or opponents in battle.|"
-...
+---
+</br>

@@ -201,4 +201,5 @@ players: "Security Robot at Mindkeep; 'Security Bot Mk II';Description: This is 
   \ can not be subdued.  They are programmed to deny access to certain restricted\
   \ areas.  They have command circuits that allow them to summon medical robots and\
   \ engineering robots as necessary.|"
-...
+---
+</br>

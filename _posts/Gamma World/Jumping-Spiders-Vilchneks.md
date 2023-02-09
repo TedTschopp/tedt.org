@@ -199,4 +199,5 @@ players: "Vilchneks; 'Jumping Spiders';Description: Vilchneks are predatory spid
   \ They can cover up to 12 m in a single leap. Their fear impulse is set off only\
   \ by birds and other winged creatures at least as large as themselves, and they\
   \ may not notice furled wings.|"
-...
+---
+</br>

@@ -186,4 +186,5 @@ players: "Xanqas; 'Shocking Mildew';Description: Xanquas does not look like ordi
   \ automatic if the plant is touched or attacked at range.  Water thrown on the Xanqas\
   \ will short circut it for 1d8+2 turns.  Acid intensity 5 or greater will destroy\
   \ it , as will any chemcical defoliant. |"
-...
+---
+</br>

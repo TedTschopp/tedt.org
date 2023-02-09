@@ -231,4 +231,5 @@ players: "Yellow Winislean; 'Yellow Tanglers';Description: Win Seen are ground c
   \ chopped up and cooked down to yield a thick paste that serves as a poison antidote.\
   \ A dose of it swallowed or applied to a poisoned wound provides a -2 step bonus\
   \ on the Constitution feat check. A single plant yields ten doses of the antidote.|"
-...
+---
+</br>

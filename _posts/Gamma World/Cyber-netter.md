@@ -237,4 +237,5 @@ players: "Cyber-netter; '';Description: Adventurers in the Great Lakes region of
   \ beam equipment, and then carried away. No one knows where they are taken or what\
   \ happens to them after that. The machine emits coded radio signals from time to\
   \ time, but they are not decipherable, and no receiving station is known.|"
-...
+---
+</br>

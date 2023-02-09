@@ -233,4 +233,5 @@ players: "Otis; 'Buffalo Explorer';Description: The horl choo is an odd black pl
   \ creature. A horl choo bristles and flings its spines when threatened as well,\
   \ and is capable of 'dropping' spines (releasing the fiber connecting them to its\
   \ body) in order to flee.|"
-...
+---
+</br>

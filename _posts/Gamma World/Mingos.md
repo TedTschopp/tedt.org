@@ -177,4 +177,5 @@ players: "Mingos; '';Description: Mingos are birdlike creatures descended from F
   \ standing along shores, but find prey easier to catch in the open sea. They no\
   \ longer have the capability to fly because of their water adaptations. They have\
   \ been known to attack humans/humanoids when hungry.|"
-...
+---
+</br>

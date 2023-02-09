@@ -643,4 +643,5 @@ players: "Robohunter; 'Robotic Hunter/Tracker';Description: The Robohunter was s
   \ made by Knights of Genetic Purity or other groups.The arms of this unit are capable\
   \ of sustaining 40 hp damage before being destroyed, and the tentacles take 30 hp\
   \ damage before being useless. A fist strike from a Robohunter does 4d6 hp damage.|"
-...
+---
+</br>

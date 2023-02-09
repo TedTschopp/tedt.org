@@ -215,4 +215,5 @@ players: "Juggernaut; 'Rampants';Description: The juggernaut is a large rhinocer
   \ are found only in North America, they were not originally native to this land.\
   \ They are descended from zoo specimens that escaped confinement during the Social\
   \ Wars.|"
-...
+---
+</br>

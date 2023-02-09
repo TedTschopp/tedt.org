@@ -218,4 +218,5 @@ players: "Defense Attack Borg; 'Borg';Description: This 3 meter diameter sphere 
   \ as rare as Death Machines.Healing / Repair: A Defense Borg can repair 1 point\
   \ of Damage per turn until it suffers half damage then it can only repair 1 hitpoint\
   \ of damage per minute.|"
-...
+---
+</br>

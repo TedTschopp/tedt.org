@@ -218,4 +218,5 @@ players: "Rust'ee; 'Hulk Mollusk';Description: These are mutated garden snails t
   \ of them where enough metal exists (e.g. old scrap yards, parking lots, and industrial\
   \ ruins).Archivists have been known to keep rust'ee as guard beasts to deter any\
   \ who would try to steal from their holy lands.|"
-...
+---
+</br>

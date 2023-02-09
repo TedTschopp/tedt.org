@@ -305,4 +305,5 @@ players: "Reptoads; '';Description: Reptoads appear to be nothing more than norm
   \ with anyone  not even the Red Death. They care nothing for treasure or artifacts.\
   \ The only creature feared by a reptoad is a sleeth, for a sleeth can dispel all\
   \ of a reptoads repulsion fields just as if they were force fields.|"
-...
+---
+</br>

@@ -160,4 +160,5 @@ final_output: "Jeremiah Coot (1): Init +7; atk hawkins x 50 musket melee +3 (1d1
 players: "Jeremiah Coot; '';Description: Jeremiah is as nutty as a fruitcake.  He\
   \ lives in Mindkeep's upper levels and sometimes goes outside through the roof hatch\
   \ when the |"
-...
+---
+</br>

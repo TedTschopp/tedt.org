@@ -210,4 +210,5 @@ players: "Bahrz; '';Description: There is always a 40% chance there are 1d4 addi
   \ the Bahrz will automatically teleport to their den. If surprised, they can still\
   \ attack as a traditional bear doing 1d4, 1d4, 1d6 of damage (Claw, Claw, Bite)\
   \ plus a 3d6 crush hug if both foreclaws hit. |"
-...
+---
+</br>

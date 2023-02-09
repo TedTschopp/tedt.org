@@ -217,4 +217,5 @@ players: "Howler; 'Wolf Folk';Description: These bipedal, human- oid wolves are 
   \ Howlers resemble the Ancients concept of werewolves in many ways.Howlers will\
   \ usually possess several items of Tech Level II. They will only associate with\
   \ other mutant animals, and are quite rare at present.|"
-...
+---
+</br>

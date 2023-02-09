@@ -187,4 +187,5 @@ players: "Slimy Grazer; '';Description: Slimy grazers are giant sea slugs found 
   \ otherwise they are solitary except during the fall mating season. Even then, they\
   \ do not search each other out, but will mate if they come in contact with each\
   \ other.|"
-...
+---
+</br>

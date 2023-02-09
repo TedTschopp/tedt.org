@@ -152,4 +152,5 @@ description_output: ''
 final_output: "Irnslith 'Ribbon Snake' (1): Init -3; atk see description; AC 10; HD\
   \ 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Irnslith; 'Ribbon Snake';|
-...
+---
+</br>

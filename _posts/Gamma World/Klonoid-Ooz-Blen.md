@@ -254,4 +254,5 @@ players: "Ooz Blen; 'Klonoid';Description: The Ooz Blen numbers and hitdice are 
   \ The ooz blen will absorb one-half the damage from radiation.INTENSITY NEW COLOR1-5\
   \ Blue 6-14 Red 15+ GreenThe color changes actually help a creature survive radiation\
   \ by giving warning through the color change and absorbing damage from harmful radiation.|"
-...
+---
+</br>

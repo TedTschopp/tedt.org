@@ -195,4 +195,5 @@ players: "Sea Lilies Patch; 'Sea Lilies';Description: Sea lilies are cousins to 
   \ water is also attacked. Their defenses are based on the fact that they are submerged;\
   \ if they are brought up on land, they have no armor and are totally defenseless\
   \ (-4 to ranged /melee attacks).|"
-...
+---
+</br>

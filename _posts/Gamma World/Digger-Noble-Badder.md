@@ -256,4 +256,5 @@ players: "Badder; 'Digger Noble';Description: 1.5 Meter-tall humanoid badgers. B
   \ and young. They are able to trade with other humanoids or intelligent creatures,\
   \ since their reputation as thieves and brigands precedes them. This causes them\
   \ to steal and kill for equipment even more.|"
-...
+---
+</br>

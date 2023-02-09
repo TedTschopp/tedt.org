@@ -229,4 +229,5 @@ players: "Dyllon; 'Prickly Folk';Description: Dyllon are a race of insular mutan
   \ as protection for the village. All Dyllon are immune to the effects of the Bobs\
   \ mutations. Any Bob has a 40% chance of possessing a weapon of TL IV or higher.\
   \ Other dyllon may also have artifacts (15%)|"
-...
+---
+</br>

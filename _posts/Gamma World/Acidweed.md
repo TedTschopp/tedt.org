@@ -183,4 +183,5 @@ players: "Acidweed; '';Description: This small bush is covered with oval dark gr
   \ thorns. If attacked with fire, it will try to drive the attacker away with gas\
   \ (85%) or will give up(15%).Acidweeds reproduce every 5 years; only 20% of the\
   \ seeds are viable. It absorbs prey through its root system.|"
-...
+---
+</br>

@@ -203,4 +203,5 @@ players: "Whirrzlers; 'Propeller Plants';Description: Whirrzlers are light metal
   \ creatures with AC 1 or 2 only once before flying away, since this hurts their\
   \ leaves (doing l-4 hp damage to them).Society: Whirrzlers clump together while\
   \ they are dormant.  |"
-...
+---
+</br>

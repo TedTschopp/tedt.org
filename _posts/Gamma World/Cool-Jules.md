@@ -152,4 +152,5 @@ description_output: ''
 final_output: 'Cool Jules (1): Init +6; atk battle axe melee +4 (1d6+1); AC 13; HD
   11D5 hp 33; NO MOVEMENT; 1d20+1d16; SV Fort +1, Ref +0, Will +0'
 players: Cool Jules; '';|
-...
+---
+</br>

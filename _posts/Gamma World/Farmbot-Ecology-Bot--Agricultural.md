@@ -198,4 +198,5 @@ players: "Ecology Bot - Agricultural; 'Farmbot';Description: These 3 x 6 x 1 met
   \ wants a Robot reprogrammed to use them in this role, the GM must decide what damage\
   \ they do and how effective they are.Behavior:These Robots are common in rural areas.Mission:\
   \ To care for the crops, animals, buildings and grounds of a farm.|"
-...
+---
+</br>

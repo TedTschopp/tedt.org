@@ -240,4 +240,5 @@ players: "Prot Ep; 'Defense Tree';Description: Prot eps are the most ancient of 
   \ but cannot even change their color. They only die of old age, and that is after\
   \ thousands of years. Anyone attempting to make armor from a prot ep will discover\
   \ that any bark or leaves crumble to dust 1d6 hours after they are removed.  |"
-...
+---
+</br>

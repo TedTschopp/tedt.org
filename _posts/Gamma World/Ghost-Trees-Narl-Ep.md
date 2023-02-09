@@ -245,4 +245,5 @@ players: "Narl Ep; 'Ghost Trees';Description: This white tree looks like a banya
   \ ripe, the pods burst open with a sonic blast, scatting a number of seeds to the\
   \ wind. Since a sharp blow will crack a pod, some try to harvest narl ep seed pods\
   \ for use as crude grenades.|"
-...
+---
+</br>

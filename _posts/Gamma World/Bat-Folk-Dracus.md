@@ -223,4 +223,5 @@ players: "Dracus; 'Bat Folk';Description: Dracs are mutant, humanoid-shaped bats
   \ usually the leader of a hunting pack, will have some equipment of Tech Level II.\
   \ Dracs will only associate with their own kind. They will never become hirelings\
   \ or followers.|"
-...
+---
+</br>

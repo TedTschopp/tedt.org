@@ -200,4 +200,5 @@ players: "Omnitar; 'Mirrored Ones';Description: The omnitar are atmovores, that 
   \ to hit. If more that 750 points of damage are pumped into them, they will shatter\
   \ causing fragmentation damage (5d10) to everything within a 10m radius.       \
   \ Omnitars are usually found on plains, gentle rolling hills, and forests.   |"
-...
+---
+</br>

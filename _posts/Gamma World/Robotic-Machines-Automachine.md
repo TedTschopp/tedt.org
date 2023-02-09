@@ -175,4 +175,5 @@ players: "Automachine; 'Robotic Machines';Behavior:Auto Machines are equipped wi
   \ Thrower B), welding roches, pain spray, heat lamps (treat as laser pistol for\
   \ damage), metal punch (treat as knives), wire binders, or water jets and brushes.Mission:\
   \ To complete the mission for whatever appliance that they are imbedded in.  |"
-...
+---
+</br>

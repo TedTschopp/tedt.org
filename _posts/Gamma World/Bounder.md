@@ -171,4 +171,5 @@ players: "Bounder; '';Description: At first glance, a kai lin looks like an odd 
   \ like a snake and rough, green scales. But in fact the kai lin is not an animal,\
   \ but a mutant breed of plant. Its 'scales' are rough bark and its 'claws' a thorny\
   \ pads and its 'tail' is a trailing root cluster.|"
-...
+---
+</br>

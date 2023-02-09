@@ -168,4 +168,5 @@ players: "Ny'an; 'Deadly Tail';Description: Ny'an are leathery, mammalian creatu
   \ with two wings, no legs, and a long tail with a stinger.  At a quick glance they\
   \ can be mistaken for obbs.  Ny'an prefer caverns, ruins, and other dimly lit areas\
   \ where they can lurk about.  |"
-...
+---
+</br>

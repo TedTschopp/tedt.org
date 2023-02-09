@@ -175,4 +175,5 @@ players: "Sea Spider; 'Salt Spider';Description: A giant cross between a crab an
   \ Then it goes and picks the victim to pieces with its claws while the victim is\
   \ still stuck fast. The sea spider is immune to the stickiness of the web due to\
   \ body excretions.|"
-...
+---
+</br>

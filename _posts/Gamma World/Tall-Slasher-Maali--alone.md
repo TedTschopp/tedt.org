@@ -289,4 +289,5 @@ players: "Maali - alone; 'Tall Slasher';Description: The maali are bipedal desce
   \ and three javelins. They have escaped destruction by Quade's constructs because\
   \ of their various mutations, their raw physical power, and their knowledge of the\
   \ land.|"
-...
+---
+</br>

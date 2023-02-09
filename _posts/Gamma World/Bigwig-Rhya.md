@@ -186,4 +186,5 @@ players: "Rhya; 'Bigwig';Description: This huge mutant beetle is elongate (think
   \ is excreted on to the mandibles. A rhya tries not to move much and thus will rarely\
   \ hunt down escaped prey. If a predator shows up, a rhya will withdraw its breathing\
   \ tubes and rely on its gills.|"
-...
+---
+</br>

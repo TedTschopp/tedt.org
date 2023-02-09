@@ -226,4 +226,5 @@ players: "Green Winislean; 'Green Tanglers';Description: Win Seen are ground cov
   \ serves as a poison antidote. A dose of it swallowed or applied to a poisoned wound\
   \ provides a -2 step bonus on the Constitution feat check. A single plant yields\
   \ ten doses of the antidote.|"
-...
+---
+</br>

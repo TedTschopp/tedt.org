@@ -151,4 +151,5 @@ description_output: ''
 final_output: "Alynor d'Vrie (1): Init +3; atk see description; AC 10; HD 5D12 hp\
   \ 33; NO MOVEMENT; 1d20; SV Fort +1, Ref +0, Will +0"
 players: Alynor d'Vrie; '';|
-...
+---
+</br>

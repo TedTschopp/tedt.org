@@ -182,4 +182,5 @@ players: "Juggernaut; 'Big Daddy';Description: This is a giant daddy - long - le
   \ It will retreat only when it fails morale or losses 3+ legs.They are a very important\
   \ organism, as they keep mutant insect populations down, where they live. When intelligent\
   \ beings see them, they tend to run away- which is good for both parties.|"
-...
+---
+</br>

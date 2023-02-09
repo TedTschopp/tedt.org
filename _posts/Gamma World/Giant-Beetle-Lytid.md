@@ -178,4 +178,5 @@ players: "Lytid; 'Giant Beetle';Description: hese giant beetles are feared all o
   \ on the subspecies.They breed in the fall; laying each egg in the base of a tree.\
   \ The young slowly kill the tree, finally breaking out in April. Whole groves are\
   \ destroyed this way.|"
-...
+---
+</br>

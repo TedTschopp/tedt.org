@@ -168,4 +168,5 @@ players: "Nos'ferat; 'Mutated monkey';Description: The Nos'Ferat are nocturnal, 
   \ monkeys.  They are light sensitive, primarily nocturnal, and travel in numbers\
   \ more often than not.  They give off an earthy odor at all times, which can be\
   \ a tip-off for the wary adventurer|"
-...
+---
+</br>

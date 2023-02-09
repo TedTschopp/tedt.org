@@ -167,4 +167,5 @@ players: "Che'Tal; 'Greater Bloodwing';Description: Giant deer flies, che'tal ha
   \ yellow eyes, black spotted wings, and a dark brown body with light brown stripes.Behavior:They\
   \ have a nasty bite. After finding prey with sonar, che'tal attack with confusion\
   \ or a roar. After that, they use mutations or a bite randomly.|"
-...
+---
+</br>

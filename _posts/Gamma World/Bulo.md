@@ -241,4 +241,5 @@ players: "Bulo; '';Description: This massive mutated buffalo weighs well over a 
   \ around. Finally,the power to shape- change allows the Bulo to change form into\
   \ any one of the following three flying insect-like creatures; a Blaash, a Blight,\
   \ or a Cal Then.|"
-...
+---
+</br>

@@ -277,4 +277,5 @@ players: "Maali; '';Description: These solitary creatures are rarely seen and on
   \ mutants into epileptic trances (Epilepsy defect).Maali will remain motionless\
   \ for a period of about 10 minutes when robotic units are first seen,then afterwards\
   \ they will react normally.|"
-...
+---
+</br>

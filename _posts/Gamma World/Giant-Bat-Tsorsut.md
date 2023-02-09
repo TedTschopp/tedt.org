@@ -219,4 +219,5 @@ players: "Tsorsut; 'Giant Bat';Description: The Tsorsut is a huge creature desce
   \ rounds before using that attack again.  Tsorsut will always counter attack with\
   \ attacked, and will continue to do so until they are certain any attackers are\
   \ cowe.|"
-...
+---
+</br>

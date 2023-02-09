@@ -251,4 +251,5 @@ players: "Serf; 'Thought Masters';Description: Serfs are semi-nomadic mutated hu
   \ the Ministers of Thought, never leaves Gra Rad.  Its memvers believe that a serf\
   \ leader called the Forstar will be born to their caln there, and will lead the\
   \ serfs to create a great new Nation.|"
-...
+---
+</br>

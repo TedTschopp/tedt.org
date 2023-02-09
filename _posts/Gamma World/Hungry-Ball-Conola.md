@@ -234,4 +234,5 @@ players: "Conola; 'Hungry Ball';Description: Conola are large, living spheres co
   \ system, the cleaning is not always apparent because places like that cannot be\
   \ thorougly cleaned.  Only with a conola comes across something more than half its\
   \ diameter in sie will it slow down to digest it a section at a time.  |"
-...
+---
+</br>

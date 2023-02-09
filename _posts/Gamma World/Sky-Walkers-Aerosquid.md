@@ -302,4 +302,5 @@ players: "Aerosquid; 'Sky Walkers';Description: The aero squid is an amphibious 
   \ only be surprised by flying creatures (or swimming creatures in the water). Such\
   \ creatures will surprise on a 1-3, since the aero squid's only functional sense\
   \ is sight.|"
-...
+---
+</br>

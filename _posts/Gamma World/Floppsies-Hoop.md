@@ -238,4 +238,5 @@ players: "Hoop; 'Floppsies';Description: Mutated Rabbitoid creatures averaging 2
   \ and a community's leader is always called \"general.\" Hoops try to gather as\
   \ many artifacts as they can to \"maintain combat superiority.\" They consider \"\
   floppsies\" a derogatory term.|"
-...
+---
+</br>

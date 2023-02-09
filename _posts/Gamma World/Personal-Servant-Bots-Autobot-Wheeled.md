@@ -202,4 +202,5 @@ players: "Autobot, Wheeled; 'Personal Servant Bots';Description: Autobots are 1 
   \ for the pre-holocaust humans.Equiptment: Plugin tools pertinent to programmed\
   \ tasks such as vacuum hoses, flame throwers, drills, water and wax jets, buffers,\
   \ vibrosaws. infant changing stations, etc...|"
-...
+---
+</br>

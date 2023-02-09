@@ -266,4 +266,5 @@ players: "Scorpito; 'Thrum';Description: A scorpito is a mutated form of scorpio
   \ swarms typically do not stay in one area for very long. They can essentially be\
   \ considered nomadic. Potential prey usually becomes scarce after the animals in\
   \ an area learn to associate the thrumming noise of the swarm with danger.|"
-...
+---
+</br>

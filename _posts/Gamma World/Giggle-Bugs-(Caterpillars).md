@@ -255,4 +255,5 @@ players: "Giggle Bugs (Caterpillars); '';Description: Giggle bugs spend most of 
   \ March as huge, gaudy moths that live only long enough to mate and lay eggs. The\
   \ eggs take a full year to hatch. Eggs, pupae, and adult moths are all harlequin-colored;\
   \ they cannot excite laughter as the caterpillars do, but they are equally poisonous.|"
-...
+---
+</br>

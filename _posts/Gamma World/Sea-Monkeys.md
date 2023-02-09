@@ -188,4 +188,5 @@ players: "Sea Monkeys; '';Description: Sea Monkeys are a generally peaceful grou
   \ throwing small objects, making a chaotic ruckus as they move rapidly in an out\
   \ of reach. If harmed they will fight back by scratching or biting. They cannot\
   \ survive out of water.|"
-...
+---
+</br>

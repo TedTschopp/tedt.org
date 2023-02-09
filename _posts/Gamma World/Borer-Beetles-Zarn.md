@@ -234,4 +234,5 @@ players: "Zarn; 'Borer Beetles';Description: The zarn or \"boring beetle\" is an
   \ Zarn are found thoughtout Gamma Terra and are considered dangerous vermin to be\
   \ wiped out. They're most common in wilderness areas, but they've been known to\
   \ infest more civilized parts before their presence is discovered.|"
-...
+---
+</br>

@@ -227,4 +227,5 @@ players: "Carrin; 'Dark Emperors';Description: Three meter tall mutated vultures
   \ consumption. Carrin society is a complicated structure where the wealthy make\
   \ the rules and Machiavellian political intrigue is common. Currying favour and\
   \ double-crossing is a way of life. Most Carrin schemes are elaborate, twisted plots.|"
-...
+---
+</br>

@@ -169,4 +169,5 @@ players: "Mantis; 'Green Renders';Description: Giant Praying Mantises that stand
   \ smart enough to avoid and stop attacking prey that is clearly stronger.  They\
   \ can be recruited to help others when food is offered. They are however not intelligent\
   \ enough to be considered a hireling.|"
-...
+---
+</br>

@@ -208,4 +208,5 @@ players: "Lukalukas; 'Gobblers';Description: These terrestrial birds are heavy a
   \ of eating plants with bacterial symbiosis (which does not harm or leave any symptomatic\
   \ marks on the bird), they should be thoroughly cooked before eating. If not, there\
   \ is a 60% chance that any lukaluka is carrying a random plant-carried disease.|"
-...
+---
+</br>

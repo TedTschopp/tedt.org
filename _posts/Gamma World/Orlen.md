@@ -224,4 +224,5 @@ players: "Orlen; '';Description: These 9 feet tall humanoids have two heads and 
   \ a stable race of humans from before the great disaster.  This story says that\
   \ humans from that time speak of a great thinker named Aristophanes whose goal was\
   \ to reunite humanity to its orignal form before their war with the Gods.|"
-...
+---
+</br>

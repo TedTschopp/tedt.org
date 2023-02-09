@@ -168,4 +168,5 @@ players: "Shield Worm; '';Description: The worm is covered with plates of chitin
   \ plates of chitin that are used to make arms (blades) and armor. A shield worm\
   \ is 6 to 8 meters long and has 2 plates for every meter. They are usually harvested\
   \ when they are .5 meters in diameter and grow back in a month.|"
-...
+---
+</br>

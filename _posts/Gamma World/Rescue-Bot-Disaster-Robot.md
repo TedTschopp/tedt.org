@@ -237,4 +237,5 @@ players: "Disaster Robot; 'Rescue Bot';Description: The top of this oval robot l
   \ x Geiger Counter,1 x Medkit Tech Level 51 x Remote Hand4 x Fire Extinguishers4\
   \ x Air Fliters4 x oxygen tanks1 x Stun Ray Pistol1 x laser Pistol1 x screamer1\
   \ x chainsaw|"
-...
+---
+</br>

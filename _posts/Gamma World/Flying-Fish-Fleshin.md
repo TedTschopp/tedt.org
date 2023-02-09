@@ -250,4 +250,5 @@ players: "Fleshin; 'Flying Fish';Description: These 6 foot long fish live only i
   \ attack results in a landing on dry land.  the fleshin shapchanges into a gator.\
   \  It may or may not head for the open water, depending upon the situation and whether\
   \ or not it is subject to bloodlust at that moment.  |"
-...
+---
+</br>

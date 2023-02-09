@@ -256,4 +256,5 @@ players: "Cark; 'Blend Dog';Description: Physically, these dogs appear to be nor
   \ used , but it is less serviceable than rog hide (see the 'Campaign ' chapter).\
   \ The horns are hollowed out and made into musical instruments or storage containers\
   \ , like gunpowder horns. |"
-...
+---
+</br>

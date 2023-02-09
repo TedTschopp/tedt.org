@@ -210,4 +210,5 @@ players: "Sho'day; 'Bird of the Moonlight';Description: (Pet) Sho'day are noctur
   \ have the talent of training animals, the bird has been exposed to the trainer\
   \ since being a chick, and suitable time and experience is dedicated to the task\
   \  (up to the Judge)|"
-...
+---
+</br>

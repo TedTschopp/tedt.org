@@ -284,4 +284,5 @@ players: "Draguns; 'Sea Gators';Description: Draguns still resemble their ancest
   \ dragun has 1d4 such stones which may be fired at any particular time.If a dragun\
   \ senses any sort of poison gas on the water's surface, it immediately submerges\
   \ and flees the area.|"
-...
+---
+</br>

@@ -193,4 +193,5 @@ players: "Abomination; '';Description: The abomination is part plant and part li
   \ affected.  They are affected by anybody else's life leech as individual creatures.\
   \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
   \ needs four limbs to remain mobile, the others will leave and attack on their own.|"
-...
+---
+</br>

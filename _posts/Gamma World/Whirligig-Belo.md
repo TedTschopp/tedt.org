@@ -190,4 +190,5 @@ players: "Belo; 'Whirligig';Description: Ert telden are sleek fish up to a meter
   \ or killed, ert telden screte an oil that causes their flesh to burn fiercely on\
   \ contact with air. When removed from the water, an ert telden becomes extremely\
   \ hot, the following round, it explodes, doing damage like an incendiary grenade.|"
-...
+---
+</br>

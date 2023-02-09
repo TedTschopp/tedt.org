@@ -231,4 +231,5 @@ players: "Ed Ep; 'Paradise Tree';Description: The paradise tree is very rare and
   \ of any level for 1d6 hours.Macadamia (1 / 5)  This nut acts as the light generatoin\
   \ power when cracked open.  Its hull is very thin and if thrown it will crack open.\
   \  Pine Nut (1 / tree) The GM decides the effect of this nut.|"
-...
+---
+</br>

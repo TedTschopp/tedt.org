@@ -177,4 +177,5 @@ players: "Kamodo; 'Thunder Lizard';Description: This 18 meter tall mutated fores
   \ is very fond of insects and birds.  It will take naps lasting several days after\
   \ a particularly fulfilling meal, though they are light sleepers.  They prefer open\
   \ country such as plains and swamps, but can also be found in wooded regions|"
-...
+---
+</br>

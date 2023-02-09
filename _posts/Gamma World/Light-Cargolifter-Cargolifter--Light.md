@@ -169,4 +169,5 @@ players: "Cargolifter - Light; 'Light Cargolifter';Description: This 6 x 3 x 1 m
   \ the following: a 6 meter crane with a 3 pronged claw able to lift 900 kilograms,\
   \ four 6 meter tentacles able to lift 500 kilograms each and a tractor/pressor beam\
   \ able to lift 1800 kilograms at a 30-meter range.|"
-...
+---
+</br>

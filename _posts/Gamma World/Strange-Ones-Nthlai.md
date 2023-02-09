@@ -202,4 +202,5 @@ players: "N'thlai; 'Strange Ones';Description: The N'thlai are three meters tall
   \ feelers and \"eyes\" combine to give the n'thlai radar/sonar and 360 degree sight.\
   \  They can not be surprised. Vegetarians, Nature Worshippers, Healers, Comando\
   \ Fighters.  |"
-...
+---
+</br>

@@ -580,4 +580,5 @@ players: "Manhunter; 'Robotic Hunter';Description: This incredibly fast tracking
   \ uses possible) to destroy ground cover for hiding fugitives. The unit can immerse\
   \ its entire self in water, but is incapable of combat while in this environ- ment.\
   \ It has special remote-controlled drone units which are described below.|"
-...
+---
+</br>

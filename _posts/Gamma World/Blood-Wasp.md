@@ -227,4 +227,5 @@ players: "Blood Wasp; '';Description: loodwasps are burrowing wasps about 10cm l
   \ off. The victim does not have the insanity mutation permanently.blood wasps emit\
   \ the patrolling pheromone when they are not feeding or fighting. blood wasps emit\
   \ the warning pheromone when they are feeding, fighting, or attacking.|"
-...
+---
+</br>

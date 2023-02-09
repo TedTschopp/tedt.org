@@ -193,4 +193,5 @@ players: "Bumbles; 'Bee Folk';Description: These giant, mutated bees are only fo
   \ that attack them or try to rob their underground nests. They can be recruited\
   \ or hired with offers of food.Some are occasionally trained as mounts, but their\
   \ displacement and energy nega- tion mutations discourage this practice.|"
-...
+---
+</br>

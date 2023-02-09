@@ -235,4 +235,5 @@ players: "Waja; '';Description: He slouches to 1.5 meters tall.  His large ears 
   \ he might use a molecular disruption.  AFterwards he always denies any accusations,\
   \ for good or bad, regarding his role in battle. Equiptment: Rags, dagger, Walking\
   \ Staff, assorted JunkSociety: N/A|"
-...
+---
+</br>

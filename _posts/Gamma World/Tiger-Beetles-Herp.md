@@ -204,4 +204,5 @@ players: "Herp; 'Tiger Beetles';Description: Herps are mutant beetles that grow 
   \ Herps fight even each other to protect their hunting grounds. They only cooperate\
   \ in order to mate, with the female herp laying several large, rubbery eggs that\
   \ hatch out into smaller herps, which scuttle off on their own.|"
-...
+---
+</br>

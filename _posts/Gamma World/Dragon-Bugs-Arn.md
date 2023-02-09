@@ -179,4 +179,5 @@ players: "Arn; 'Dragon Bugs';Description: Cal then or 'winged rippers' are mutan
   \ or cornered. Society: Arns are found in small swarms of up to a dozen in the wild.\
   \ They're omnivores, but only eat relatively small creatures or carrion. Arns are\
   \ egg-layers, and can only be domesticated while very young.|"
-...
+---
+</br>

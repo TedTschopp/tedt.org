@@ -191,4 +191,5 @@ players: "Rakrod; 'Horned Rats';Description: Rakrods are mutated cousins of the 
   \ in its victim.   Equiptment: Rakrods are unconcerned with technology or equipment.\
   \  They will scavange for food and nest material, thus shredding material in their\
   \ hunt for these materials.|"
-...
+---
+</br>

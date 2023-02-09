@@ -234,4 +234,5 @@ players: "Nep Ep; 'Death Trees';Description: The narl ep resembles any of a myri
   \ any item is in useable shape, it will have a small hole bored into it and will\
   \ always be drained of all power. Even those items beyond repair may still be scavenged\
   \ for parts or as curiosities.   |"
-...
+---
+</br>

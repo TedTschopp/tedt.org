@@ -218,4 +218,5 @@ players: "Terl; 'Tree Fish';Description: Truly neither fish nor fowl, the terl i
   \ but usually appear singly. Females lay their eggs in shallow water, where they\
   \ hatch into immature terl that immediately fly away and never return to the watery\
   \ environment.|"
-...
+---
+</br>

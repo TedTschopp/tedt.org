@@ -227,4 +227,5 @@ players: "Blaster Blossom; 'Zappers';Description: The few expeditions that have 
   \ turns, within a 15 m radius. If the spores ever kill the creature who touched\
   \ the plant, they will grow in the dead body and become 1-3 new blaster blossoms\
   \ within three days.|"
-...
+---
+</br>

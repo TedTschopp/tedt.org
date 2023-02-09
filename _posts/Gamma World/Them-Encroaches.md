@@ -271,4 +271,5 @@ players: "Encroaches; 'Them';Description: Encroaches are found wherever food to 
   \ the gear behind. Cities that have had experience with encroaches will ordinarily\
   \ have devised horrible forms of execution specifically for any person or creature\
   \ that infests the town with them.|"
-...
+---
+</br>

@@ -228,4 +228,5 @@ players: "Armada; 'Man-o-War';Description: No doubt about it, the brilliant hues
   \ balloons from a distance, but this should be done carefully, because the gas inside\
   \ has a tendency to explode, blanketing a 10m area with loose filaments and tentacles\
   \ segments, which usually take a couple days to lose their potency.|"
-...
+---
+</br>

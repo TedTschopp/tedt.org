@@ -223,4 +223,5 @@ players: "Industrial Robot ; '';Description: There are two 6-meter-long tentacle
   \ the tasks performed by the robot are done with its tentacles. The claw is used\
   \ for the few tasks that require fine manipulations. The tentacles have a DX of\
   \ 10 and a PS of 30, while the claw has a DX of 15 and a PS of 10. |"
-...
+---
+</br>

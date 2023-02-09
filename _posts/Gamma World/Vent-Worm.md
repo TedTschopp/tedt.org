@@ -189,4 +189,5 @@ players: "Vent Worm; '';Description: Each worm is between .25 and 1 meter long a
   \ d6 and 6d10 points of damage depending on the temperature (190 F to 600 F) and\
   \ the protection the diver has.  When a worm retreats inside its sheath it has an\
   \ AC increased to 5.|"
-...
+---
+</br>

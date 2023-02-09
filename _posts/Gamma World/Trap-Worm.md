@@ -169,4 +169,5 @@ players: "Trap Worm; '';Description: These worms have 12 tentacles that extend f
   \ a circle.Behavior:When suitable prey (10-45 Kg) swims over or comes in contact\
   \ with a tentacle, it attempts to grasp the prey and draw it to the mouth (which\
   \ takes 3 rounds). The worm is 4 to 6 meters long and can change color.|"
-...
+---
+</br>

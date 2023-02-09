@@ -261,4 +261,5 @@ players: "Ameebies (as blob); 'Shapeless Ones';Description: Ameebies may be desc
   \ that they use budding or fission. Ameebies cannot be contacted by using telepathic\
   \ powers of any sort. For some reason, they seem to avoid their own kind, and are\
   \ only encountered singly.|"
-...
+---
+</br>

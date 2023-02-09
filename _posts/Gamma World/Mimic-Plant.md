@@ -204,4 +204,5 @@ players: "Mimic Plant; '';Description: Mimic plants are mutated orchids that gro
   \ turns equal to 11 minus the victim's armor class. The tentacle will withdraw as\
   \ soon as the victim fights back. No plant will attack two crea-tures, and no creature\
   \ will be attacked by more than one plant each day.|"
-...
+---
+</br>

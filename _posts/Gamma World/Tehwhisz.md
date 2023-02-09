@@ -223,4 +223,5 @@ players: "Tehwhisz; '';Description: A twisted, ugly head lies atop the hill.  it
   \ always done so honestly.  Tehwhisz can usually identify any contrary intention\
   \ or lie.  The Judge is free to use Tehwhisz for any purposes, create new powers,\
   \ or add more to those which already exist in her arsenal.|"
-...
+---
+</br>

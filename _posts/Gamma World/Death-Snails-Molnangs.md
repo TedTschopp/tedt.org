@@ -292,4 +292,5 @@ players: "Molnangs; 'Death Snails';Description: Horribly dangerous and destructi
   \ The shell weighs 500-800 kg and is worth twice that in gold pieces to someone\
   \ who can make use of it.Molnangs are seldom hired or recruited because it is all\
   \ but impossible to safely communicate with them.|"
-...
+---
+</br>

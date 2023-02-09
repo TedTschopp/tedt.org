@@ -192,4 +192,5 @@ players: "Boomerth; 'Bang Bush';Description: The boomerth looks like any one of 
   \ If the cherries are picked and pickled properly they will maintain their explosive\
   \ capabilities.  This is done by low tech level societies and archaic alliances.\
   \ |"
-...
+---
+</br>

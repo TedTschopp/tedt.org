@@ -213,4 +213,5 @@ players: "Vene'aMub; 'Villain that Hides and Kills';Description: The Vene'a'mub 
   \ with their hands while swinging their mace-like tail over their body and down\
   \ on the meal\". Given enough time, a vene'a'mub can crack open almost anything,\
   \ except a ba'mutan. They are curious, very tenacious, and are found in most climates.|"
-...
+---
+</br>

@@ -233,4 +233,5 @@ players: "Kep; 'Sand Devils';Description: The kep is a plant consisting of a dee
   \ above them, so the areas where they grow tend to be barren soil, sometimes clearings\
   \ amdist other vegetation. A mature kep produces a single mobile seed once per season,\
   \ which burrows out of the ground scurries off in search of a place to root.|"
-...
+---
+</br>

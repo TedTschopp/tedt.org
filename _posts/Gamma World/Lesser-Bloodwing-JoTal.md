@@ -171,4 +171,5 @@ players: "Jo'Tal; 'Lesser Bloodwing';Description: Giant black flies, jo'tal have
   \ prey is detected, the swarm attacks within a silence field. They use gas and bites\
   \ to immobilize the prey for feeding. If the swarms moral fails it generates fear\
   \ and flees.|"
-...
+---
+</br>

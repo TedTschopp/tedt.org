@@ -183,4 +183,5 @@ players: "Medical Robotoid; 'Medbot';Description: This upright-walking, 2 meter 
   \ perform complex surgery, if necessary. It heals characters at the same rate as\
   \ a Medi-kit (1d10+20 hit points of damage to Pure Strain Humans and 1d10+10 hit\
   \ points of damage to Humanoids and Mutated Animals).|"
-...
+---
+</br>

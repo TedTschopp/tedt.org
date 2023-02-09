@@ -244,4 +244,5 @@ players: "Gallus Gallus 5-13; '';Description: The hideous result of an accidenta
   \ these mutant chickens is their lack of resistance to poison of any type.Poison\
   \ is instant death to the Gallus Gallus 5/13 unless the correct antidote is immediately\
   \ administered. Even then there is only a 50% chance that the mutant will live.|"
-...
+---
+</br>

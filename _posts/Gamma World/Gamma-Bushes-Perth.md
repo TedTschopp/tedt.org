@@ -236,4 +236,5 @@ players: "Perth; 'Gamma Bushes';Description: This is a two meter tall palm-like 
   \ flower, harvested and sun-dried for three days, can be ground into a powder. When\
   \ ingested, it grants a +2 step bonus on Resolve checks for healing wounds. A single\
   \ perth yields up to 20 doses of the powder.|"
-...
+---
+</br>

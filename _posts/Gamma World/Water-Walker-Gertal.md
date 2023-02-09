@@ -185,4 +185,5 @@ players: "Ger'tal; 'Water Walker';Description: Ger'tal are mutant water striders
   \ its stunning force and uses it. Anyone not stunned is bitten or irradiated to\
   \ death.Ger'tal are found in clumps- that is in groups that have no interaction\
   \ between members. They feed on anything living or dead on or near the water.|"
-...
+---
+</br>

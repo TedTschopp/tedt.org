@@ -180,4 +180,5 @@ players: "Shinarl; 'Watery Slime';Description: Shinarl is a translucent sheet of
   \ both through its acidic properties (I8) and through it spoisnous properties (I8).\
   \    Shinarl can be harmed only by radioactivity, electricity, sonic, stun, or chemical\
   \ defoliants.|"
-...
+---
+</br>

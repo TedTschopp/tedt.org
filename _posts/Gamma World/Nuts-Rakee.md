@@ -189,4 +189,5 @@ players: "Rakee; 'Nuts';Description: They appear as 1 meter tall flying squirrel
   \ they Rakee will find someone else to attack and follow. If the opponent does engage,\
   \ than the Rakee will bind themselves to this new master until someone more powerful\
   \ comes along and impresses the Rakee.|"
-...
+---
+</br>

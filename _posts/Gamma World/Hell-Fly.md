@@ -180,4 +180,5 @@ players: "Hell Fly; '';Description: giant butterflies with red and yellow markin
   \ keep the food from moving until they hatch. If the eggs are elim- inated (inventive\
   \ GMs will thing of how), the affected PC/animal/NPC can be restored to normal.\
   \ Hellflies live only for 2 weeks and do not feed.|"
-...
+---
+</br>

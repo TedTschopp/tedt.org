@@ -231,4 +231,5 @@ players: "Ark; 'Hound Folk';Description: Intelligent man-dogs over two meters ta
   \ Ignore them if rolled as loot. However, Tech V and VI artifacts are worshipped\
   \ as totems. The alpha male's first wife is charged with the care and transportation\
   \ of the totems. They consider human hands to be a great delicacy.|"
-...
+---
+</br>

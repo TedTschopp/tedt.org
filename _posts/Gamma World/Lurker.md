@@ -220,4 +220,5 @@ players: "Lurker; '';Description: The lurker barely resembles its ancestors. The
   \ encountered, it will be either a mating pair or a female and her young. These\
   \ young lurkers have only half the hit dice of their parents and their poison intensity\
   \ level is 8-12.|"
-...
+---
+</br>

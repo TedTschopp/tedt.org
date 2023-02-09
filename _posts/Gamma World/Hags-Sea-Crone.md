@@ -171,4 +171,5 @@ players: "Sea Crone; 'Hags';Description: Sea Crones are evil tempered sea dwelli
   \ They sometimes have a pet or pets in their company which they use for various\
   \ purposes. They generally attack using their mutations, but if pressed will use\
   \ their bony claws.|"
-...
+---
+</br>

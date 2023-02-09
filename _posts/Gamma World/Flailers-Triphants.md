@@ -297,4 +297,5 @@ players: "Triphants; 'Flailers';Description: 20% of the time these creatures are
   \ heavy lifting and carrying tasks. Triphants can pick up loads of up to 200 kg\
   \ in each trunk, and can carry up to 1000 kg easily if it is distributed over their\
   \ backs. A triphant can break through a reinforced wooden door in one Action Turn.|"
-...
+---
+</br>

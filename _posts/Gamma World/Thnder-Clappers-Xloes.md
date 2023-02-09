@@ -207,4 +207,5 @@ players: "Xloes; 'Thnder Clappers';Description: This mutated snake grows to a ma
   \ against furtherattacks of this sort, and they do not have to flee.Xloes live in\
   \ any climate save arctic and high mountainous regions. They prefer fresh-water\
   \ lakes, probably because of the abundance of wildlife in these areas.|"
-...
+---
+</br>

@@ -196,4 +196,5 @@ players: "Quanakus; 'Moving Barricade';Description: This brilliantly striped ins
   \ up to four passengers and quite a lot of cargo  at one time. It can travel over\
   \ most terrain, including up formidable cliffs, and is too dumb to bolt. It can\
   \ be found in most terrains and is quite dangerous in the wild.   |"
-...
+---
+</br>

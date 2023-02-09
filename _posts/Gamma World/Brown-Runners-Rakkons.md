@@ -206,4 +206,5 @@ players: "Rakkons; 'Brown Runners';Description: The bandit-masked rakkons may be
   \ employ them as pets or steeds. Rakkons otherwise enjoy some popularity as pets\
   \ among those who like big, shaggy, inoffensive creatures. Trained rakkons are excellent\
   \ with children.|"
-...
+---
+</br>

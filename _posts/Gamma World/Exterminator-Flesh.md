@@ -379,4 +379,5 @@ players: "Exterminator, Flesh; '';Description: An Exterminator is an upright-wal
   \ them. The vaults close up within ten minutes after opening and have so far withstood\
   \ all attempts at re- opening them. It is believed that the vaults have been scattered\
   \ throughout the continent and possibly the world.|"
-...
+---
+</br>

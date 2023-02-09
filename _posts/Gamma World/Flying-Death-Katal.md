@@ -190,4 +190,5 @@ players: "Ka'tal; 'Flying Death';Description: Ka'tal are mutant darners (the lar
   \ the missile. If ground prey is weak, the ka'tal will land and bite it to death.Ka'tal\
   \ may be found in groups, but they ignore each other (so a group may last only a\
   \ day, a week or more).|"
-...
+---
+</br>

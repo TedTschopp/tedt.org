@@ -226,4 +226,5 @@ players: "Giant Potato Bug; 'Taterbug';Description: These giant, docile herbivor
   \ potato bugs (or sow bugs or pill bugs) are very important to the plains ecosystem.\
   \ They are hunted by specialized carnivores (like the Ti'tal and the obb) that can\
   \ break through the bugs' armor.|"
-...
+---
+</br>

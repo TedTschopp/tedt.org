@@ -186,4 +186,5 @@ players: "Engineering Bot, Heavy Duty; 'Heavy Construction Bot';Description: Thi
   \ lasers, atomic torches and power tools. Most units also have 6d12 triangular duralloy\
   \ sheets and a supply of assorted rivets, plates, bolts, etc. plus the special tools\
   \ needed to use them. All units are sealed for underwater use.|"
-...
+---
+</br>

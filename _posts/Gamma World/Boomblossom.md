@@ -201,4 +201,5 @@ players: "Boomblossom; '';Description: These intelligent, mutated descendants of
   \ consider more useful to them. When a boomblossom group becomes too large for the\
   \ land to support them, a group will break away from the main group to form a new\
   \ community.|"
-...
+---
+</br>

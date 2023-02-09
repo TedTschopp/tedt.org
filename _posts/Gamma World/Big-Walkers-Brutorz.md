@@ -242,4 +242,5 @@ players: "Brutorz; 'Big Walkers';Description: A two meter tall horse that can ca
   \ toward the creature, can never hope to gain the brutorz as an ally. Brutorz willingly\
   \ serve as draft animals, but refuse bits. bridles, or confining harnesses. They\
   \ have a PS of 26 and can carry three normal men comfortably|"
-...
+---
+</br>

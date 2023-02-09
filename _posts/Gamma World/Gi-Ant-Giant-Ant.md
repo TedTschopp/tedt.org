@@ -175,4 +175,5 @@ players: "Giant Ant; 'Gi-Ant';Description: Large Ants the Size of Horses Behavio
   \ free, 4- one arm held, 5- two arms held, 6- all arms held. One subsequent rounds,\
   \ the ant does bite damage. Only a tough PS check (or the death of the ant) will\
   \ free the target. If the ant does not grab it will use its sting on the target.|"
-...
+---
+</br>

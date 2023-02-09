@@ -223,4 +223,5 @@ players: "Sasquatch; 'Bigfoot';Description: Once docile and secretive inhabitant
   \ lofty mountain ranges. They respect humans and most other sentient racesas long\
   \ as those species don't cross the sasquatchbut don't trust the technologically\
   \ altered androids. |"
-...
+---
+</br>

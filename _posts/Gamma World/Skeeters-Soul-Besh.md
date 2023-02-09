@@ -176,4 +176,5 @@ players: "Soul Besh; 'Skeeters';Description: These mutated Mosquitoes grow up to
   \  The Sol Besh will then do double damage to all paralyzed victims until they are\
   \ dead.  The exoskeleton of a dead Soul Besh may be boiled down into 15 doses of\
   \ Intinisty 18 Poison antidote. |"
-...
+---
+</br>

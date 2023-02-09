@@ -238,4 +238,5 @@ players: "Croaker; '';Description: This mutated descendant of the Cane Toad look
   \ together in groups for mutual protection and for breeding. They spawn year-round\
   \ with suitable temperature and rainfall. Eggs are laid in long-standing water -\
   \ ditches, canals, streams, and ponds.|"
-...
+---
+</br>

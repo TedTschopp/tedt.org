@@ -188,4 +188,5 @@ players: "Mutha; 'Land Worm';Description: These immense worms have a brown or ta
   \ weak and can be tricked or controlled easily.The only reason there are not more\
   \ worms is that cannibalism is common and food (soil organic matter) is rare down\
   \ deep. They fear water because they can not swim and will drown quickly if submerged.|"
-...
+---
+</br>

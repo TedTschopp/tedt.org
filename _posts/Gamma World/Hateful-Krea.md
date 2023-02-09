@@ -176,4 +176,5 @@ players: "Krea; 'Hateful';Description: The Krea looks like a nightmare.  It is a
   \ are incredibly destructive just for the sheer cruelty of it.  In addition to their\
   \ fearsome attacks, they can teleport every third turn up to 100' away as long as\
   \ the distance is in line of sight.|"
-...
+---
+</br>

@@ -568,4 +568,5 @@ players: "Cybohunter; 'Cybernetic Hunter/Tracker';Description: Cybohunters are t
   \ hunter never has physical or defective mental mutations (such units are de- stroyed\
   \ by these defects over time). At- tacks using mental powers can be made normally\
   \ on the Cybohunter.|"
-...
+---
+</br>

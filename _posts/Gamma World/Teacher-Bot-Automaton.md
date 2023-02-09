@@ -214,4 +214,5 @@ players: "Automaton; 'Teacher Bot';Description: Automatons are two-meter-tall ro
   \ x doses of adhesive 1 x half strength medkitHealing / Repair: They can repair\
   \ themselves at the rate of 5 points a day until half-damaged, after which they\
   \ repair at a rate of 1 point a day.|"
-...
+---
+</br>

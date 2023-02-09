@@ -161,4 +161,5 @@ final_output: "Android 'Body Guard' (1d3 (2)): Init +6; atk weapon melee +6 (1d1
 players: "Android; 'Body Guard';Description: Man-made beings with red hued skin and\
   \ blank stares.Behavior:equipment: Powered Battle Armor, Laser Pistol, Vibro Blade,\
   \ Stun Whip, 2 Stun Grenades, Accelera dose, Interra Shot|"
-...
+---
+</br>

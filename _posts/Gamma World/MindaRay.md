@@ -188,4 +188,5 @@ players: "MindaRay; '';Description: This creature is a detached part of a sentie
   \ creature which is controlled by the Minda Ray can breathe both water (after 10-20\
   \ seconds) and on land, as the ray breathes for the creature underwater and the\
   \ land animal can breathe for both creatures on land.|"
-...
+---
+</br>

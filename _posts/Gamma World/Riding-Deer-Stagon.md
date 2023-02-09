@@ -337,4 +337,5 @@ players: "Stagon; 'Riding Deer';Description: The stagon is a mutated whitetail d
   \ mark his territory and polish his antlers. To mark areas they regularly pass through,\
   \ bucks make scrapes. Often occurring in patterns known as scrape lines, scrapes\
   \ are areas where a buck has used his front hooves to expose bare earth.|"
-...
+---
+</br>

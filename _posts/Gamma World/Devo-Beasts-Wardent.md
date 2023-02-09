@@ -248,4 +248,5 @@ players: "Wardent; 'Devo Beasts';Description: One Meter tall humanoids covered i
   \ found or acquired that they have found or acquired through trade.  Their insatiable\
   \ curiosity means that any usable artifacts which fall into their hands will soon\
   \ yield up their secrets or be broken. |"
-...
+---
+</br>

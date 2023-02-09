@@ -174,4 +174,5 @@ players: "Wed l'Xon; 'Red Living Mold';Description: The tall, deep red living mo
   \ are symbioticly linked with their host.  They are immune to most forms of attack.\
   \  They take half damage from Fire (not heat).  Cold Attacks do double damage to\
   \ them.  They are immune to chemical defoliants.|"
-...
+---
+</br>

@@ -208,4 +208,5 @@ players: "Letharp; '';Description: Letharp are huge, bottom-feeding fish which r
   \ this unpredictable behavior boats are often smashed or holed by frightened letharp.Knowledgeable\
   \ mariners are reported to paint the bottoms of their vessels a bright yellow-orange,\
   \ far this color tends to repel or possibly reassure the would- be attacker.|"
-...
+---
+</br>

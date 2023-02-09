@@ -290,4 +290,5 @@ players: "Buggem; 'Termite Folk';Description: It is rumored that the Buggers app
   \ brothers' actions. In addition. these biological freaks use archaic weaponry such\
   \ as blasters, lasers, and death roy projectors whenever such advanced weapons ore\
   \ available.|"
-...
+---
+</br>

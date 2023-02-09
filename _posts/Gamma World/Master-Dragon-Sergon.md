@@ -242,4 +242,5 @@ players: "Sergon; 'Master Dragon';Description: This gon is the king of the speci
   \ it back to their cache.  Sergon have been known to buy their lives from adventureing\
   \ parties through use of these expensive bribes.  Sergon have been known to take\
   \ expensive bribes for the release of a prisoner.|"
-...
+---
+</br>

@@ -213,4 +213,5 @@ players: "Debgon; 'Crested Dragon';Description: This gon is the smallest of the 
   \ for characters who are smaller. Each suit will take at least 2d3 weeks to create.\
   \ The armor class of the suit will be 2 and the suit will be allow the wearer to\
   \ take half damage from laser and heat attacks.|"
-...
+---
+</br>

@@ -167,4 +167,5 @@ players: "Krone; '';Society: Sarbis form large communities called 'camps.'  Ther
   \ are usually miners and provide much of the raw minerals for Gamma World societies.\
   \  There value in this capacity, plus their dangerous nature when crossed, have\
   \ made them better allies than slaves or subjects.|"
-...
+---
+</br>

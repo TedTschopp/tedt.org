@@ -203,4 +203,5 @@ players: "Hell Worm; '';Description: A hellworm is a giant caterpillar with oran
   \ cavern systems found deep inside and feed on blights, yexils, yfiefs, parns, and\
   \ mantas. They ignore and are ignored by obbs; they are preyed upon by the Kraak\
   \ (see Overlord of Bonparr).|"
-...
+---
+</br>

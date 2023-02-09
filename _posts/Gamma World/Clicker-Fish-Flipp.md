@@ -231,4 +231,5 @@ players: "Flipp; 'Clicker Fish';Description: The flipp's true physical form has 
   \ attempt to alter history, but apparently they are not being taken seriously since\
   \ the future Gamma World still exists. Still, all the flipps with Time Manipulation\
   \ will eventually try to go back and warn of the danger to come.|"
-...
+---
+</br>

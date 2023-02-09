@@ -174,4 +174,5 @@ players: "Horsy; 'Sea Stallion';Description: Horsy (sometimes spelled Horsea) ar
   \ Their only attack consists of smashing into an opponent. The Horsy must have enough\
   \ room to move in order to use this attack. Horsy are quite loyal creatures whether\
   \ it's to a family group or rider.|"
-...
+---
+</br>

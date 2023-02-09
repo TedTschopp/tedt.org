@@ -208,4 +208,5 @@ players: "Sep, Sand; 'Land Sharks';Description: Seps are mutated sharks that hav
   \ Once killed, the prey is dragged below-ground and eaten.Society: Seps tend to\
   \ hunt singly, although they're sometimes encountered in small \"schools\" of up\
   \ to six. They inhabit deserts and other sandy regions.|"
-...
+---
+</br>

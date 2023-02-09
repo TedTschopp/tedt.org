@@ -290,4 +290,5 @@ players: "Hopper; 'Jackalopes';Description: Hoppers are herd animals that are mu
   \ have domesticated hoppers as riding animals and (sometimes) beasts of burden,\
   \ although they're not capable of carrying very heavy loads. Hopper meat is also\
   \ a staple of many cultures' diets, and their fur makes soft clothes and blankets.|"
-...
+---
+</br>

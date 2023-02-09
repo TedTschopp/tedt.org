@@ -171,4 +171,5 @@ players: "Staph; '';Description: These mutant beetles are the bane to all fungi 
   \ do 1d2. Staph attack prey in swarms, trying to cut the fungi to pieces.Though\
   \ staph eat any fungi, they just love obb flesh. Many are never seen as they burrow\
   \ in old logs, eating the fungi rotting the wood.|"
-...
+---
+</br>

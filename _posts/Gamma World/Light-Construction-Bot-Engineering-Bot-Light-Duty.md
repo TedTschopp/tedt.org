@@ -174,4 +174,5 @@ players: "Engineering Bot, Light Duty; 'Light Construction Bot';Description: Thi
   \ beam that can move 500 kilograms at a 12-meter range. Special equipment includes\
   \ a sonic torch, micro-laser, power winches and power tools. Small numbers of replacement\
   \ parts are stored inside its steel hull. It can operate underwater and in near-vacuum.|"
-...
+---
+</br>

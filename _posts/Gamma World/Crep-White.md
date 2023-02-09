@@ -151,4 +151,5 @@ description_output: ''
 final_output: 'Crep,White (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO
   MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 players: Crep,White; '';|
-...
+---
+</br>

@@ -216,4 +216,5 @@ players: "Obb; 'Flying Eyes';Description: An obb or \"flying eye,\" looks vaguel
   \ but it's unclear just how intelligent they are. Their minds are entirely alien\
   \ and they don't seem to follow what most creatures would consider logic or reason.\
   \ They're solitary creatures, having no need for social structures of any kind.|"
-...
+---
+</br>

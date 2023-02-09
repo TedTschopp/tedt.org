@@ -238,4 +238,5 @@ players: "Squeeker; 'King Rats';Description: Mutated Rats that are 5 times the s
   \ Hissers, in particular, keep pens of the animals for use both in the hunt and\
   \ as food.  Indeed it is likely that the hisser immunity to sonic blasts developed\
   \ slowly from a close relationship Squeekers. |"
-...
+---
+</br>

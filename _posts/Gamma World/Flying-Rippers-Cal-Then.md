@@ -211,4 +211,5 @@ players: "Cal Then; 'Flying Rippers';Description: An obb or 'flying eye,' looks 
   \ and other creatures to a cal then's hunting ground to feed on the leftovers. They\
   \ are sometimes encountered in mated pairs, but mate only briefly. The female lays\
   \ a clutch of eggs, but does not care for the young.|"
-...
+---
+</br>

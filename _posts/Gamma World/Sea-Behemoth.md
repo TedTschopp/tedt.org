@@ -175,4 +175,5 @@ players: "Sea Behemoth; '';Description: Sea Behemoths are little more than gigan
   \ in their area. In most cases they will have no additional mutations (other than\
   \ their monstrous size), but some may have numerous mutations which they will use\
   \ to full effect.|"
-...
+---
+</br>

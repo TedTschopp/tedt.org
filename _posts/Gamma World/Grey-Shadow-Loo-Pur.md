@@ -217,4 +217,5 @@ players: "Loo Pur; 'Grey Shadow';Description: Loo purs are cunning, carnivorous,
   \ (limited by their physical constraints and their mutational defect  see below).\
   \ All of these mutated wolves are afraid of electrical power, robots, etc. (Energy\
   \ Sensitivity Defect) and will avoid such items at all cost.|"
-...
+---
+</br>

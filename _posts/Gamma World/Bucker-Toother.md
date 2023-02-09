@@ -250,4 +250,5 @@ players: "Toother; 'Bucker';Description: These mutant descendents of the beaver 
   \ one complex to another they simply teleport themselves. Toothers will generally\
   \ avoid contact with other beings unless those beings demonstrate friendliness and\
   \ great natural abilities.|"
-...
+---
+</br>

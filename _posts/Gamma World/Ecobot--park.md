@@ -183,4 +183,5 @@ players: "Ecobot - park; '';Description: An ecobot is basically humanoid, and is
   \ buildings, grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer,\
   \ soil analyzer, shovel, IR camera, 5x range telescope, radio, spotlights, stun\
   \ ray pistol, and chainsaw|"
-...
+---
+</br>

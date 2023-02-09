@@ -260,4 +260,5 @@ players: "Centisteed; 'Fast Trotters';Description: The centisteed is a mutant st
   \ One serf clan, the Ministers of Thought, never leaves Gra Rad.  Its memvers believe\
   \ that a serf leader called the Forstar will be born to their caln there, and will\
   \ lead the serfs to create a great new Nation.|"
-...
+---
+</br>

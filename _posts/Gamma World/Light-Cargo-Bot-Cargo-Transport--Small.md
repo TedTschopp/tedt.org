@@ -180,4 +180,5 @@ players: "Cargo Transport - Small; 'Light Cargo Bot';Description: This unit is t
   \ of items.Mission: To move small pieces of more delicate cargo from one location\
   \ to another.Equiptment: 2 x 6 meter tentacles, each able to lift 100 kilograms\
   \ 1 x tractor/pressor beam able to lift 1800 kilograms at a 12 meter range.|"
-...
+---
+</br>

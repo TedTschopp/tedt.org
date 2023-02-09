@@ -168,4 +168,5 @@ players: "Tremorworm; 'Graboid';Description: A big worm with 4 tentacles with mo
   \ from its own mouth. The mouth has 3 sections that look like beaks.Behavior:A graboid\
   \ attacks from underground using its tentacles to ensnare its prey, then it draws\
   \ the prey to its mouth and tries to swallow the prey.|"
-...
+---
+</br>

@@ -177,4 +177,5 @@ players: "Blood Bird; 'Red Deaths';Description: The blood bird, also know as the
   \ blood bird carries two long spurs that apparently serve no purpose.  Its eyes\
   \ are exceptionally keen.Behavior:This bird will make its Radiation attack affecting\
   \ everyone in 6 meters.  It is resistant to all Mental Attacks.|"
-...
+---
+</br>
