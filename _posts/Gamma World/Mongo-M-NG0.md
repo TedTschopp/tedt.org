@@ -1,7 +1,9 @@
 ---
 ID: 71378
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4d255e8e-142f-41a8-9956-062e7199a343
 date: '2023-02-09T16:46:31.481Z'
 title: Mongo «M-NG0»

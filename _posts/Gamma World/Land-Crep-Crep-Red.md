@@ -1,7 +1,9 @@
 ---
 ID: 71138
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3131f64a-e6a4-474a-bef8-5679a1cb4fc9
 date: '2023-02-09T16:46:31.478Z'
 title: Land Crep «Crep, Red»

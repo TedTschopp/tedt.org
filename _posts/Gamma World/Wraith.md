@@ -1,7 +1,9 @@
 ---
 ID: 71699
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3f1d6baf-77c5-4277-9fff-2b6f5fa3d2c7
 date: '2023-02-09T16:46:31.485Z'
 title: Wraith

@@ -1,7 +1,9 @@
 ---
 ID: 71469
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: bc291f4c-2301-458b-bf46-b24f24191466
 date: '2023-02-09T16:46:31.482Z'
 title: Plainsmen

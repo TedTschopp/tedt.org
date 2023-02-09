@@ -1,7 +1,9 @@
 ---
 ID: 71427
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a6847d77-a8dc-4d85-a606-98d10b2b17bf
 date: '2023-02-09T16:46:31.481Z'
 title: Mutated Scorpion

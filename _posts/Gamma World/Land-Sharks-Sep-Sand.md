@@ -1,7 +1,9 @@
 ---
 ID: 71537
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c990c404-a887-4239-8d13-ab78cdf63b71
 date: '2023-02-09T16:46:31.483Z'
 title: Land Sharks «Sep, Sand»

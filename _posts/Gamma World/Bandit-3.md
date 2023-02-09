@@ -1,7 +1,9 @@
 ---
 ID: 71044
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c1b6b3b1-b187-45ab-8354-54ddb0e06972
 date: '2023-02-09T16:46:31.477Z'
 title: Bandit 3

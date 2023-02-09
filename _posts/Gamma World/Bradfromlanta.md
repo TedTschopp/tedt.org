@@ -1,7 +1,9 @@
 ---
 ID: 71083
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8606e5fe-073c-4415-b674-23cb470d478c
 date: '2023-02-09T16:46:31.477Z'
 title: Bradfromlanta

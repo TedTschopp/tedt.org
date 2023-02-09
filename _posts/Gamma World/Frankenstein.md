@@ -1,7 +1,9 @@
 ---
 ID: 71227
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b100b6c0-a773-4545-9fda-aa4da56d2d60
 date: '2023-02-09T16:46:31.479Z'
 title: Frankenstein

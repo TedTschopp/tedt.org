@@ -1,7 +1,9 @@
 ---
 ID: 71513
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: fba754a2-8b6a-46b1-a47b-73207dbd14bf
 date: '2023-02-09T16:46:31.483Z'
 title: Ryco

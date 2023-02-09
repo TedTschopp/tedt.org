@@ -1,7 +1,9 @@
 ---
 ID: 71462
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f5d7c878-76c0-4373-86c8-602f552a5ca2
 date: '2023-02-09T16:46:31.482Z'
 title: Sword Beetles «Parn»

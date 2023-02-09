@@ -1,7 +1,9 @@
 ---
 ID: 71706
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 963030ae-3820-4358-b2f7-9d1e3729328b
 date: '2023-02-09T16:46:31.485Z'
 title: Yaager

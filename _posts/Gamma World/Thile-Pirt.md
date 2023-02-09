@@ -1,7 +1,9 @@
 ---
 ID: 71644
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 158f03a5-2335-480d-88f8-4ca7618e6d29
 date: '2023-02-09T16:46:31.484Z'
 title: Thile Pirt

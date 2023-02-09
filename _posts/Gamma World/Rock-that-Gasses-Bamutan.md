@@ -1,7 +1,9 @@
 ---
 ID: 71036
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4808496a-c56e-4627-8a14-ab10f6b59658
 date: '2023-02-09T16:46:31.476Z'
 title: Rock that Gasses «Ba'mutan»

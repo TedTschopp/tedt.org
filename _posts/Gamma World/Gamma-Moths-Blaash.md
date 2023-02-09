@@ -1,7 +1,9 @@
 ---
 ID: 71066
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 02d0b668-425f-4e7b-9a0b-e695a73da863
 date: '2023-02-09T16:46:31.477Z'
 title: Gamma Moths «Blaash»

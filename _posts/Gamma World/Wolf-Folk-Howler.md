@@ -1,7 +1,9 @@
 ---
 ID: 71297
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ea1814a5-cd01-4a8e-a654-484dc860a180
 date: '2023-02-09T16:46:31.480Z'
 title: Wolf Folk «Howler»

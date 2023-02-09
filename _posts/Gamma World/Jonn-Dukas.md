@@ -1,7 +1,9 @@
 ---
 ID: 71326
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c4205004-4be4-478f-80d8-3372f8d5409c
 date: '2023-02-09T16:46:31.480Z'
 title: Jonn Dukas

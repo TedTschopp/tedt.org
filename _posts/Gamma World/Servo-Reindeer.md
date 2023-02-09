@@ -1,7 +1,9 @@
 ---
 ID: 71544
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c8e15f36-fd34-456f-ace9-feab6f90c341
 date: '2023-02-09T16:46:31.483Z'
 title: Servo Reindeer

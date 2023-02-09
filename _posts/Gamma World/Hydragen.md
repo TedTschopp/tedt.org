@@ -1,7 +1,9 @@
 ---
 ID: 71305
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f53df1bf-93b1-4d3d-a2ea-438b8f6dbf62
 date: '2023-02-09T16:46:31.480Z'
 title: Hydragen

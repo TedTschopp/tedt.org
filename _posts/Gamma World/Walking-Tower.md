@@ -1,7 +1,9 @@
 ---
 ID: 71682
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a6f74b93-3871-4842-8a59-664ea80c8255
 date: '2023-02-09T16:46:31.485Z'
 title: Walking Tower

@@ -1,7 +1,9 @@
 ---
 ID: 71473
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: dbad849b-f8d9-4a43-94ed-7b8fd9111791
 date: '2023-02-09T16:46:31.482Z'
 title: Police Robot

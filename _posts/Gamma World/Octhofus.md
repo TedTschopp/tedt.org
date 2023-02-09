@@ -1,7 +1,9 @@
 ---
 ID: 71452
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 807fe3e8-2af5-48c2-9cf5-a2fbf0ea48ff
 date: '2023-02-09T16:46:31.482Z'
 title: Octhofus

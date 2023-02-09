@@ -1,7 +1,9 @@
 ---
 ID: 71198
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6c07f61d-d121-41fd-b010-e0dd2c3c6889
 date: '2023-02-09T16:46:31.479Z'
 title: Man-Beast «Equinoid»

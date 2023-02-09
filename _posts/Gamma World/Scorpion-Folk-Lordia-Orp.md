@@ -1,7 +1,9 @@
 ---
 ID: 71372
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a15d054d-11e1-4874-85b9-4ff9b25c5ef9
 date: '2023-02-09T16:46:31.481Z'
 title: Scorpion Folk «Lordia Orp»

@@ -1,7 +1,9 @@
 ---
 ID: 71564
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7f209a5d-f2c0-4e9f-b2eb-7a38ea53ca8e
 date: '2023-02-09T16:46:31.483Z'
 title: Assassin Bug «Sin'tal»

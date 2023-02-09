@@ -1,7 +1,9 @@
 ---
 ID: 71407
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a27d4847-375f-4a4d-930a-afcf040b1315
 date: '2023-02-09T16:46:31.481Z'
 title: Mingos

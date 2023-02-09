@@ -1,7 +1,9 @@
 ---
 ID: 71081
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3226782d-f814-4143-bfac-a0a54cbc62dc
 date: '2023-02-09T16:46:31.477Z'
 title: Boris

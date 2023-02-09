@@ -1,7 +1,9 @@
 ---
 ID: 71060
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: bbfd8d1f-d7de-4396-963e-ac312e140636
 date: '2023-02-09T16:46:31.477Z'
 title: Bearwyrm

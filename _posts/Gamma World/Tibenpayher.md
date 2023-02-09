@@ -1,7 +1,9 @@
 ---
 ID: 71652
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ea97c5ba-87ab-4189-bf79-f8ee818ab095
 date: '2023-02-09T16:46:31.484Z'
 title: Tibenpayher

@@ -1,7 +1,9 @@
 ---
 ID: 71711
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: fef9189b-c25e-4f7f-a16d-a983569c4d19
 date: '2023-02-09T16:46:31.485Z'
 title: Zayshin

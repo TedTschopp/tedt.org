@@ -1,7 +1,9 @@
 ---
 ID: 71621
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6eb20074-ca0a-466c-abc3-ca9639c25686
 date: '2023-02-09T16:46:31.484Z'
 title: Tangh

@@ -1,7 +1,9 @@
 ---
 ID: 71507
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 84097912-2761-4aa8-8289-2732ba882321
 date: '2023-02-09T16:46:31.482Z'
 title: Rat Friend «Rodcut»

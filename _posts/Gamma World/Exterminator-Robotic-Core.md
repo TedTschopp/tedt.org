@@ -1,7 +1,9 @@
 ---
 ID: 71206
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7c0e03b8-c211-4b19-840b-0cb53d402451
 date: '2023-02-09T16:46:31.479Z'
 title: Exterminator, Robotic Core

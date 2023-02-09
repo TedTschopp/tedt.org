@@ -1,7 +1,9 @@
 ---
 ID: 71099
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0bb22bf3-6bec-4082-adc8-695c16b1d404
 date: '2023-02-09T16:46:31.477Z'
 title: Flying Rippers «Cal Then»

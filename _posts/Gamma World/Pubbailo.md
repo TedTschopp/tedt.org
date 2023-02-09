@@ -1,7 +1,9 @@
 ---
 ID: 71480
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 43cd3759-8325-45b0-a33f-180cc6307774
 date: '2023-02-09T16:46:31.482Z'
 title: Pubbailo

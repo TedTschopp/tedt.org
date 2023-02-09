@@ -1,7 +1,9 @@
 ---
 ID: 71245
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ddc06de7-450d-4612-ae9a-2397cfc46da7
 date: '2023-02-09T16:46:31.479Z'
 title: Genetic Flagellant

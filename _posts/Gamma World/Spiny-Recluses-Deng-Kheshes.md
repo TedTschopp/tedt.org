@@ -1,7 +1,9 @@
 ---
 ID: 71163
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0dde3ec0-c551-488d-8f08-62ace20e0916
 date: '2023-02-09T16:46:31.478Z'
 title: Spiny Recluses «Deng Kheshes»

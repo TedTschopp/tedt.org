@@ -1,7 +1,9 @@
 ---
 ID: 71216
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e58cf7e8-6da4-4276-87f0-5e9d7ecbff6f
 date: '2023-02-09T16:46:31.479Z'
 title: Filamentron

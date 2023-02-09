@@ -1,7 +1,9 @@
 ---
 ID: 71295
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e0704f84-1b3d-49ef-b180-561c9ba58812
 date: '2023-02-09T16:46:31.480Z'
 title: Hot Desert

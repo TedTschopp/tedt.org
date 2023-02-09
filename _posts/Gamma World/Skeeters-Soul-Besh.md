@@ -1,7 +1,9 @@
 ---
 ID: 71592
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d3cd6656-cd61-4926-9a8e-ba0e7d6c32e3
 date: '2023-02-09T16:46:31.483Z'
 title: Skeeters «Soul Besh»

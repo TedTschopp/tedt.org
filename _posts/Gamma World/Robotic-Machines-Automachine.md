@@ -1,7 +1,9 @@
 ---
 ID: 71032
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 727f15ed-5314-49d5-b4d0-fd5fa59b4018
 date: '2023-02-09T16:46:31.476Z'
 title: Robotic Machines «Automachine»

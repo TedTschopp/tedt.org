@@ -1,7 +1,9 @@
 ---
 ID: 71627
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d4769782-3822-4837-9b95-c5e2c612d4f0
 date: '2023-02-09T16:46:31.484Z'
 title: Tank 4

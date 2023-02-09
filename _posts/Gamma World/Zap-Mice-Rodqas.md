@@ -1,7 +1,9 @@
 ---
 ID: 71508
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f8e780b0-66d0-4433-b559-6a5031182bf0
 date: '2023-02-09T16:46:31.482Z'
 title: Zap Mice «Rodqas»

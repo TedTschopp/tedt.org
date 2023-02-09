@@ -1,7 +1,9 @@
 ---
 ID: 71279
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4d6ff314-5946-4451-b9b4-4dfcb703e11d
 date: '2023-02-09T16:46:31.480Z'
 title: Hell Worm

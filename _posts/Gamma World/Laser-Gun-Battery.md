@@ -1,7 +1,9 @@
 ---
 ID: 71358
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: dbc015dd-a41b-40af-9945-2feb3c0bbc02
 date: '2023-02-09T16:46:31.481Z'
 title: Laser Gun Battery

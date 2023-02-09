@@ -1,7 +1,9 @@
 ---
 ID: 71143
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 13611b25-7275-46a4-9934-f9a9ce7aa814
 date: '2023-02-09T16:46:31.478Z'
 title: Cuttleimp

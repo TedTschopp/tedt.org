@@ -1,7 +1,9 @@
 ---
 ID: 71259
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ba4db5f8-99b7-4832-9654-69faf2647bfc
 date: '2023-02-09T16:46:31.479Z'
 title: Green Hissers

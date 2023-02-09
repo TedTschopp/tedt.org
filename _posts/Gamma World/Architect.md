@@ -1,7 +1,9 @@
 ---
 ID: 71021
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f826b2d2-51d8-4af4-afd0-deb34c73401e
 date: '2023-02-09T16:46:31.476Z'
 title: Architect

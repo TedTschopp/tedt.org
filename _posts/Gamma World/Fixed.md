@@ -1,7 +1,9 @@
 ---
 ID: 71628
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1a9ceeca-2d9e-4888-b5a6-b433f542b7d3
 date: '2023-02-09T16:46:31.484Z'
 title: Fixed

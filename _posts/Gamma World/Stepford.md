@@ -1,7 +1,9 @@
 ---
 ID: 71610
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e935fd80-e7ac-4f2a-a5b3-e1f601c0deea
 date: '2023-02-09T16:46:31.484Z'
 title: Stepford

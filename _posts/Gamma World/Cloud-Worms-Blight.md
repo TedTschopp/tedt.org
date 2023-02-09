@@ -1,7 +1,9 @@
 ---
 ID: 71072
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a279ca40-9835-4b74-bb37-b00132229fe2
 date: '2023-02-09T16:46:31.477Z'
 title: Cloud Worms «Blight»

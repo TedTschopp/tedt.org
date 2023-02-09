@@ -1,7 +1,9 @@
 ---
 ID: 71003
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 171ee0fd-5cae-47c4-803e-88af53d418c0
 date: '2023-02-09T16:46:31.476Z'
 title: Advoid

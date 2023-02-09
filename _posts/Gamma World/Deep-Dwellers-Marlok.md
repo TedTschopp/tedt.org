@@ -1,7 +1,9 @@
 ---
 ID: 71393
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c168d2df-7ee5-4a1b-aec1-0f86b9cd6c37
 date: '2023-02-09T16:46:31.481Z'
 title: Deep Dwellers «Marlok»

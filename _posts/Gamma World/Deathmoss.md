@@ -1,7 +1,9 @@
 ---
 ID: 71157
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6ecbef68-ff83-4c98-a5ed-6e8d9c8ac764
 date: '2023-02-09T16:46:31.478Z'
 title: Deathmoss

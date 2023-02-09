@@ -1,7 +1,9 @@
 ---
 ID: 71383
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: cffac070-5803-4e3a-8bd5-8ef003486b49
 date: '2023-02-09T16:46:31.481Z'
 title: Major Konnar

@@ -1,7 +1,9 @@
 ---
 ID: 71398
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 11506081-862f-496e-8ef9-d3eab4cfe202
 date: '2023-02-09T16:46:31.481Z'
 title: Slime Devils «Menarl»

@@ -1,7 +1,9 @@
 ---
 ID: 71042
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 11baa62a-23c0-4180-8eeb-d176a8f8bb20
 date: '2023-02-09T16:46:31.477Z'
 title: Bandit 1

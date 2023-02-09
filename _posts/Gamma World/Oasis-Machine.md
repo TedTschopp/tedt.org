@@ -1,7 +1,9 @@
 ---
 ID: 71450
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b5d0c4de-78a3-4146-b757-c97dc7cec902
 date: '2023-02-09T16:46:31.482Z'
 title: Oasis Machine

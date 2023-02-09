@@ -1,7 +1,9 @@
 ---
 ID: 71320
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0c3b9b02-eab3-404f-bb83-faee61f979a7
 date: '2023-02-09T16:46:31.480Z'
 title: Jeremiah Coot

@@ -1,7 +1,9 @@
 ---
 ID: 71161
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 556afcf7-b115-4979-837c-6106870a8b30
 date: '2023-02-09T16:46:31.478Z'
 title: Borg «Defense Attack Borg»

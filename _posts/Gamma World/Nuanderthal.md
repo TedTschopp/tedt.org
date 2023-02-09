@@ -1,7 +1,9 @@
 ---
 ID: 71446
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b62be063-6348-46e3-9dbf-2e72d323c6ec
 date: '2023-02-09T16:46:31.482Z'
 title: Nuanderthal

@@ -1,7 +1,9 @@
 ---
 ID: 71691
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 695033ba-1e05-4b3c-8c70-b11b63983c0e
 date: '2023-02-09T16:46:31.485Z'
 title: Wessex

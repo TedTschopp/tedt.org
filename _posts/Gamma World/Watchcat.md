@@ -1,7 +1,9 @@
 ---
 ID: 71685
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8f020b82-d109-4f49-a608-3aa3457c0b0b
 date: '2023-02-09T16:46:31.485Z'
 title: Watchcat

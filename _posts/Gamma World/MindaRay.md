@@ -1,7 +1,9 @@
 ---
 ID: 71406
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6509e85e-1f03-4969-94f6-5c4dfed31e66
 date: '2023-02-09T16:46:31.481Z'
 title: MindaRay

@@ -1,7 +1,9 @@
 ---
 ID: 71499
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: dcb52c87-e429-4a4a-8c07-edbc11198eb2
 date: '2023-02-09T16:46:31.482Z'
 title: Ren

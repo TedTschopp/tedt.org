@@ -1,7 +1,9 @@
 ---
 ID: 71594
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 83dd8c96-8aef-4f44-b533-4588b3d4857c
 date: '2023-02-09T16:46:31.483Z'
 title: Speedo

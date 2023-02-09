@@ -1,7 +1,9 @@
 ---
 ID: 71460
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1aad16c0-048e-42b5-ba8c-58f5d37097e2
 date: '2023-02-09T16:46:31.482Z'
 title: Pako

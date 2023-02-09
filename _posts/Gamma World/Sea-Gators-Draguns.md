@@ -1,7 +1,9 @@
 ---
 ID: 71172
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 228f301a-f34d-4a33-ad71-a4b6f6c12064
 date: '2023-02-09T16:46:31.478Z'
 title: Sea Gators «Draguns»

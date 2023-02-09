@@ -1,7 +1,9 @@
 ---
 ID: 71128
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f0621a52-1722-4e07-9323-83a7af029c51
 date: '2023-02-09T16:46:31.478Z'
 title: Communa Larva

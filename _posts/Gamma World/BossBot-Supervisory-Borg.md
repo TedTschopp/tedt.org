@@ -1,7 +1,9 @@
 ---
 ID: 71616
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4ac5659a-fb0a-4eb5-a13c-2f824a923864
 date: '2023-02-09T16:46:31.484Z'
 title: BossBot «Supervisory Borg»

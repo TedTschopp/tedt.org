@@ -1,7 +1,9 @@
 ---
 ID: 71408
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a2a74351-12b1-4815-9ba4-83ec2f3ca274
 date: '2023-02-09T16:46:31.481Z'
 title: Miniature Animal, Medium

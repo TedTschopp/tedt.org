@@ -1,7 +1,9 @@
 ---
 ID: 71583
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 83a246f2-3a96-4c13-b674-f3c448e67ada
 date: '2023-02-09T16:46:31.483Z'
 title: Small Mutant Spider

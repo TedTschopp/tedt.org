@@ -1,7 +1,9 @@
 ---
 ID: 71566
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 24e529d3-0e37-4c84-9be6-2252b8096923
 date: '2023-02-09T16:46:31.483Z'
 title: Rok'Ee «Skwil»

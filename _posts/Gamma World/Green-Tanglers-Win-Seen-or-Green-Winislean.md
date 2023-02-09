@@ -1,7 +1,9 @@
 ---
 ID: 71696
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: df7c0e7f-e2cc-40b7-b7ce-c60811899e6c
 date: '2023-02-09T16:46:31.485Z'
 title: Green Tanglers «Win Seen or Green Winislean»

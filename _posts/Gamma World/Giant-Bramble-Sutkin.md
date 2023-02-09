@@ -1,7 +1,9 @@
 ---
 ID: 71618
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 54a59b1a-0724-407d-b2f8-dd212cde4abf
 date: '2023-02-09T16:46:31.484Z'
 title: Giant Bramble «Sutkin»

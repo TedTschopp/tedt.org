@@ -1,7 +1,9 @@
 ---
 ID: 71512
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 469327cd-d64c-4c3e-9ed5-2d1c6de9db55
 date: '2023-02-09T16:46:31.482Z'
 title: Hulk Mollusk «Rust'ee»

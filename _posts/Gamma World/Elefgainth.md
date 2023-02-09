@@ -1,7 +1,9 @@
 ---
 ID: 71190
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 35bdb7ac-7311-4b57-8b6b-92ec348b90e3
 date: '2023-02-09T16:46:31.478Z'
 title: Elefgainth

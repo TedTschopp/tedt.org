@@ -1,7 +1,9 @@
 ---
 ID: 71606
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c53f64ee-e3da-4c83-8375-d5c13a5df980
 date: '2023-02-09T16:46:31.484Z'
 title: Riding Deer «Stagon»

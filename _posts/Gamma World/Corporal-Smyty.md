@@ -1,7 +1,9 @@
 ---
 ID: 71133
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 370523a7-ac1c-4625-921a-f05e41a3a827
 date: '2023-02-09T16:46:31.478Z'
 title: Corporal Smyty

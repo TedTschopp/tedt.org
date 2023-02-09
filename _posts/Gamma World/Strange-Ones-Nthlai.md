@@ -1,7 +1,9 @@
 ---
 ID: 71430
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 370c7358-5962-407f-bed8-378fe92c1f3c
 date: '2023-02-09T16:46:31.482Z'
 title: Strange Ones «N'thlai»

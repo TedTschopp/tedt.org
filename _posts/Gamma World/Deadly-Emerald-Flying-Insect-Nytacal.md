@@ -1,7 +1,9 @@
 ---
 ID: 71449
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 580a1cd7-5b40-4045-9305-397d6d4396ca
 date: '2023-02-09T16:46:31.482Z'
 title: Deadly Emerald Flying Insect «Nytacal»

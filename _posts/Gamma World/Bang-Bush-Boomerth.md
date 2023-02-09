@@ -1,7 +1,9 @@
 ---
 ID: 71080
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0a0ec501-8aea-4cd9-8b82-0c5892bfc6e2
 date: '2023-02-09T16:46:31.477Z'
 title: Bang Bush «Boomerth»

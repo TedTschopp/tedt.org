@@ -1,7 +1,9 @@
 ---
 ID: 71357
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5dc1b59d-d5e4-4b68-aa22-ec19ebb4b989
 date: '2023-02-09T16:46:31.481Z'
 title: Larry

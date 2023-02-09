@@ -1,7 +1,9 @@
 ---
 ID: 71175
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 391c1399-f1dd-4aa5-8b53-c7752a204b66
 date: '2023-02-09T16:46:31.478Z'
 title: Dry Grass

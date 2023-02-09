@@ -1,7 +1,9 @@
 ---
 ID: 71179
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: afe8a485-aabd-4d67-b7cd-013a8174c420
 date: '2023-02-09T16:46:31.478Z'
 title: Echost

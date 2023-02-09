@@ -1,7 +1,9 @@
 ---
 ID: 71107
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 16cad72e-00ab-43f0-9acf-32a72b1ce10f
 date: '2023-02-09T16:46:31.477Z'
 title: Bird Rulers «Carrday»

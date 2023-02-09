@@ -1,7 +1,9 @@
 ---
 ID: 71362
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e0b420aa-f628-4e36-96fa-38b6dc59c03d
 date: '2023-02-09T16:46:31.481Z'
 title: Life Leech

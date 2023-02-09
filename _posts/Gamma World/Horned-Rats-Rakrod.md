@@ -1,7 +1,9 @@
 ---
 ID: 71489
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2d54e245-8464-43b0-9ab1-ee735d7050cb
 date: '2023-02-09T16:46:31.482Z'
 title: Horned Rats «Rakrod»

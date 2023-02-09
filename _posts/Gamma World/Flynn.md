@@ -1,7 +1,9 @@
 ---
 ID: 71224
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 926bad80-e883-426f-8c36-9f61d865b6d9
 date: '2023-02-09T16:46:31.479Z'
 title: Flynn

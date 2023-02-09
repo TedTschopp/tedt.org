@@ -1,7 +1,9 @@
 ---
 ID: 71598
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1b51c318-e03a-4d59-bd72-e5d40fb5812b
 date: '2023-02-09T16:46:31.483Z'
 title: Spiny Craw

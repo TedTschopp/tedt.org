@@ -1,7 +1,9 @@
 ---
 ID: 71118
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f3b995ad-1361-4a21-935e-c83eb7d179fb
 date: '2023-02-09T16:46:31.477Z'
 title: Chowpuff

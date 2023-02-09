@@ -1,7 +1,9 @@
 ---
 ID: 71409
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c619f917-62cb-4845-a42f-9c00565cb8e9
 date: '2023-02-09T16:46:31.481Z'
 title: Miniature Animal, Tiny

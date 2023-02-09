@@ -1,7 +1,9 @@
 ---
 ID: 71631
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2cb87d5a-ac73-4725-8cd7-6fbe8239ab77
 date: '2023-02-09T16:46:31.484Z'
 title: Teakettler

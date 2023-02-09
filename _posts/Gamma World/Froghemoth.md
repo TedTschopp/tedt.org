@@ -1,7 +1,9 @@
 ---
 ID: 71231
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ed3b4064-bbc1-4567-a6c2-a50bddbb9125
 date: '2023-02-09T16:46:31.479Z'
 title: Froghemoth

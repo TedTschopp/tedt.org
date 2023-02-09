@@ -1,7 +1,9 @@
 ---
 ID: 71243
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1029abef-be13-4e42-9f76-2b5e42d6691e
 date: '2023-02-09T16:46:31.479Z'
 title: Bot «General Household Robotoid»

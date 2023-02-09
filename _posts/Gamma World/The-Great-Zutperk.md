@@ -1,7 +1,9 @@
 ---
 ID: 71714
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: afdfe2f9-e37d-49fe-9703-fb3b764a09dc
 date: '2023-02-09T16:46:31.485Z'
 title: The Great «Zutperk»

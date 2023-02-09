@@ -1,7 +1,9 @@
 ---
 ID: 71402
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d15466e5-cc27-4002-8ab5-b9789ab65b52
 date: '2023-02-09T16:46:31.481Z'
 title: Metrovore Swarm

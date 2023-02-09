@@ -1,7 +1,9 @@
 ---
 ID: 71058
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9187bb7e-e661-4b7e-8d8d-76724080c177
 date: '2023-02-09T16:46:31.477Z'
 title: Battle Bot «Battlebot»

@@ -1,7 +1,9 @@
 ---
 ID: 71567
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6f7aafa3-7b08-4b15-9b4b-4339e88ab8a5
 date: '2023-02-09T16:46:31.483Z'
 title: Skyshark

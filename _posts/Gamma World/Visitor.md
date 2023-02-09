@@ -1,7 +1,9 @@
 ---
 ID: 71679
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e97d00a6-8416-43ea-9b14-fdb64c76534b
 date: '2023-02-09T16:46:31.485Z'
 title: Visitor

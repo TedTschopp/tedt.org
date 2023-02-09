@@ -1,7 +1,9 @@
 ---
 ID: 71434
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 072151bb-9f37-49ca-8602-4b1005e5ed05
 date: '2023-02-09T16:46:31.482Z'
 title: Necrophage

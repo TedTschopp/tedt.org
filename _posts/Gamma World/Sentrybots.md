@@ -1,7 +1,9 @@
 ---
 ID: 71538
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 77817f26-63a1-40b6-a0df-0c22615fc86a
 date: '2023-02-09T16:46:31.483Z'
 title: Sentrybots

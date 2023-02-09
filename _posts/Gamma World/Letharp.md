@@ -1,7 +1,9 @@
 ---
 ID: 71360
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: eba1e28a-f6af-4ca3-93fb-6aca9bd197a7
 date: '2023-02-09T16:46:31.481Z'
 title: Letharp

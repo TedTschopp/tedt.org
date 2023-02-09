@@ -1,7 +1,9 @@
 ---
 ID: 71091
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ef4b3818-e627-4571-804f-04d5dbfd0a84
 date: '2023-02-09T16:46:31.477Z'
 title: That Which Flies the Moon «Bu'Daan»

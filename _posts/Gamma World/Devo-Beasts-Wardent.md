@@ -1,7 +1,9 @@
 ---
 ID: 71684
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 427d593c-e368-42e1-ba63-4e6c5d0a44e0
 date: '2023-02-09T16:46:31.485Z'
 title: Devo Beasts «Wardent»

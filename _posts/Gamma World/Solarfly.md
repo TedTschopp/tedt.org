@@ -1,7 +1,9 @@
 ---
 ID: 71588
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9ed680e1-7b58-4c5b-a0ea-3efad3e47258
 date: '2023-02-09T16:46:31.483Z'
 title: Solarfly

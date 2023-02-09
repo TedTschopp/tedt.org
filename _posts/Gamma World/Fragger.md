@@ -1,7 +1,9 @@
 ---
 ID: 71225
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 03f93498-21d7-4cf1-853e-3ab0de3d20ad
 date: '2023-02-09T16:46:31.479Z'
 title: Fragger

@@ -1,7 +1,9 @@
 ---
 ID: 71262
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f98a3567-0915-42dc-9eb5-040ec796a62d
 date: '2023-02-09T16:46:31.479Z'
 title: Green Man «Gren»

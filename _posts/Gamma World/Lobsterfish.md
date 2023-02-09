@@ -1,7 +1,9 @@
 ---
 ID: 71366
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ea9c581e-ad05-462f-bdaa-8f5c26eeae8a
 date: '2023-02-09T16:46:31.481Z'
 title: Lobsterfish

@@ -1,7 +1,9 @@
 ---
 ID: 71539
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4603acb8-767a-459e-a3ef-9740faebaaf9
 date: '2023-02-09T16:46:31.483Z'
 title: Land Sharks «Sep, Snow»

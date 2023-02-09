@@ -1,7 +1,9 @@
 ---
 ID: 71098
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ba104693-dbc3-4877-8cfb-9b01590aa2d7
 date: '2023-02-09T16:46:31.477Z'
 title: Cana

@@ -1,7 +1,9 @@
 ---
 ID: 71694
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1665ebca-8b77-41c9-a071-7b51b3c44020
 date: '2023-02-09T16:46:31.485Z'
 title: Propeller «Whirrzler»

@@ -1,7 +1,9 @@
 ---
 ID: 71478
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0aae65b3-2a78-4002-a7d6-be2e35ffb17b
 date: '2023-02-09T16:46:31.482Z'
 title: Defense Tree «Prot Ep»

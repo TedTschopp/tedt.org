@@ -1,7 +1,9 @@
 ---
 ID: 71713
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1d158204-0845-4b05-9d3e-007185e21e8e
 date: '2023-02-09T16:46:31.485Z'
 title: Deadun «Zombie»

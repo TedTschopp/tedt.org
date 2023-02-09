@@ -1,7 +1,9 @@
 ---
 ID: 71028
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3ca64bee-fefa-4c4e-bd11-53ba972e5e5a
 date: '2023-02-09T16:46:31.476Z'
 title: Blackuns «Attercop»

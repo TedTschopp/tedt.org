@@ -1,7 +1,9 @@
 ---
 ID: 71466
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8f4be4ae-ee21-4732-a7a8-060563e2772f
 date: '2023-02-09T16:46:31.482Z'
 title: Photo-Shop Bot

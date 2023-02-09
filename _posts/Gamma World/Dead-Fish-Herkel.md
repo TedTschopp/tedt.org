@@ -1,7 +1,9 @@
 ---
 ID: 71281
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 432f2208-1424-4c40-820e-5f76581d97ac
 date: '2023-02-09T16:46:31.480Z'
 title: Dead Fish «Herkel»

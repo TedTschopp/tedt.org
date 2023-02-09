@@ -1,7 +1,9 @@
 ---
 ID: 71365
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a36396f4-50a3-46a3-84a0-06ee3e29fc55
 date: '2023-02-09T16:46:31.481Z'
 title: Lizard Steeds

@@ -1,7 +1,9 @@
 ---
 ID: 71272
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ff57f400-c9cf-49d1-bd91-220e2c5e72d4
 date: '2023-02-09T16:46:31.480Z'
 title: Friendlies «Harmony Tree»

@@ -1,7 +1,9 @@
 ---
 ID: 71412
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c40f2329-e46e-411e-af4e-35465a9c2cf5
 date: '2023-02-09T16:46:31.481Z'
 title: Mississippi Brainhound

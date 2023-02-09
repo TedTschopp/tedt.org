@@ -1,7 +1,9 @@
 ---
 ID: 71589
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e84e349c-1cc0-48c9-8712-c753c82f9fbd
 date: '2023-02-09T16:46:31.483Z'
 title: Soldier Robot

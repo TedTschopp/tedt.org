@@ -1,7 +1,9 @@
 ---
 ID: 71235
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 17b93255-b05d-4b26-94ea-50c06fc1d5ce
 date: '2023-02-09T16:46:31.479Z'
 title: Gallus Gallus 5-13

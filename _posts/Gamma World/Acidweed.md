@@ -1,7 +1,9 @@
 ---
 ID: 71002
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8642d578-7e20-4407-b7a2-8c54c7d1f3a5
 date: '2023-02-09T16:46:31.476Z'
 title: Acidweed

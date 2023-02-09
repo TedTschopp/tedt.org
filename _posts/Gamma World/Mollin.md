@@ -1,7 +1,9 @@
 ---
 ID: 71416
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: daefb415-12ec-423f-bf79-dddfb8edaa16
 date: '2023-02-09T16:46:31.481Z'
 title: Mollin

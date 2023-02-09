@@ -1,7 +1,9 @@
 ---
 ID: 71274
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0d921262-9469-4b26-85dc-c8c6fb774f5c
 date: '2023-02-09T16:46:31.480Z'
 title: Hawk Wolf

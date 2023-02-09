@@ -1,7 +1,9 @@
 ---
 ID: 71309
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7b2e7708-9631-43c3-8689-0259b6b09b58
 date: '2023-02-09T16:46:31.480Z'
 title: Industrial Robot

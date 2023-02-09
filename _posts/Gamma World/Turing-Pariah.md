@@ -1,7 +1,9 @@
 ---
 ID: 71666
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 44660c36-0e2a-4fc9-be38-b1b4f5f95785
 date: '2023-02-09T16:46:31.484Z'
 title: Turing Pariah

@@ -1,7 +1,9 @@
 ---
 ID: 71105
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: eedbc16f-d7cd-461e-88ae-b9a8d661320e
 date: '2023-02-09T16:46:31.477Z'
 title: Light Cargolifter «Cargolifter - Light»

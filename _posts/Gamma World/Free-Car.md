@@ -1,7 +1,9 @@
 ---
 ID: 71228
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9a7d7cc8-d3fa-49ce-9a79-267351d3c877
 date: '2023-02-09T16:46:31.479Z'
 title: Free Car

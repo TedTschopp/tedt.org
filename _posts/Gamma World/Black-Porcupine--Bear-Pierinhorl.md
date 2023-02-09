@@ -1,7 +1,9 @@
 ---
 ID: 71467
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 318aeba8-dae6-40c1-8d9b-3154624a9ea8
 date: '2023-02-09T16:46:31.482Z'
 title: Black Porcupine / Bear «Pierinhorl»

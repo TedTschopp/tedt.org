@@ -1,7 +1,9 @@
 ---
 ID: 71522
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2ad56e27-bfac-4ac6-8821-6eef9d46bff4
 date: '2023-02-09T16:46:31.483Z'
 title: Tree Gator «Screps»

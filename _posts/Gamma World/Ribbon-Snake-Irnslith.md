@@ -1,7 +1,9 @@
 ---
 ID: 71313
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 640b3d77-d458-46b8-be31-9e2edda2e713
 date: '2023-02-09T16:46:31.480Z'
 title: Ribbon Snake «Irnslith»

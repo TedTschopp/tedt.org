@@ -1,7 +1,9 @@
 ---
 ID: 71019
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9c5276d0-812d-4270-b377-2ed6b9581aa8
 date: '2023-02-09T16:46:31.476Z'
 title: Magilla «Ape, Carnivorous»

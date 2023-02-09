@@ -1,7 +1,9 @@
 ---
 ID: 71077
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: cf0d3c1c-0c1a-41ba-a844-518e83ed0309
 date: '2023-02-09T16:46:31.477Z'
 title: Bigguns «Bof»

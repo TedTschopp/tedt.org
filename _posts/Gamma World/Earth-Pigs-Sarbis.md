@@ -1,7 +1,9 @@
 ---
 ID: 71515
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c871cec1-cf5a-43e5-ad72-3ec3433d60e2
 date: '2023-02-09T16:46:31.483Z'
 title: Earth Pigs «Sarbis»

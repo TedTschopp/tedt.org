@@ -1,7 +1,9 @@
 ---
 ID: 71556
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e0de338b-d2a4-4414-874f-8504a59a3afa
 date: '2023-02-09T16:46:31.483Z'
 title: Alien «Shreelon»

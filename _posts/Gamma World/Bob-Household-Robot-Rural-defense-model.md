@@ -1,7 +1,9 @@
 ---
 ID: 71296
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 94277642-b643-47cc-9c99-1667e31f8abc
 date: '2023-02-09T16:46:31.480Z'
 title: Bob «Household Robot, Rural defense model»

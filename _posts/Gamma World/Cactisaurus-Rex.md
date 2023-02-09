@@ -1,7 +1,9 @@
 ---
 ID: 71097
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0307fd7d-ccd2-40ac-9b7e-d740d98cbf5d
 date: '2023-02-09T16:46:31.477Z'
 title: Cactisaurus Rex

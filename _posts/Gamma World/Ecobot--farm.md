@@ -1,7 +1,9 @@
 ---
 ID: 71180
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 29a0b514-49ae-47aa-bf6d-bc9c44321e09
 date: '2023-02-09T16:46:31.478Z'
 title: Ecobot - farm

@@ -1,7 +1,9 @@
 ---
 ID: 71645
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 632f8ea1-3944-4316-9a3c-aceccd250dd0
 date: '2023-02-09T16:46:31.484Z'
 title: Thra

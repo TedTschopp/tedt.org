@@ -1,7 +1,9 @@
 ---
 ID: 71132
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2f7858f0-3717-4329-9ce7-15e0fbbf8caf
 date: '2023-02-09T16:46:31.478Z'
 title: Coote

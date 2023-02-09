@@ -1,7 +1,9 @@
 ---
 ID: 71417
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d9ecdd11-e497-47b4-b1c7-d853825506a9
 date: '2023-02-09T16:46:31.481Z'
 title: Death Snails «Molnangs»

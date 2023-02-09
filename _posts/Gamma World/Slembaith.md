@@ -1,7 +1,9 @@
 ---
 ID: 71578
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 34a658b0-f51b-4e2b-8bfa-ee0f6367a6ca
 date: '2023-02-09T16:46:31.483Z'
 title: Slembaith

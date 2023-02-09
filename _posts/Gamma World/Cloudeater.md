@@ -1,7 +1,9 @@
 ---
 ID: 71125
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: cfe285df-29a5-4059-909b-444a5d13e2c2
 date: '2023-02-09T16:46:31.478Z'
 title: Cloudeater

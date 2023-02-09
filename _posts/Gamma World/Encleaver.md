@@ -1,7 +1,9 @@
 ---
 ID: 71191
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6cd20adc-4e0d-4b9f-a68a-1cdf5f8cdb90
 date: '2023-02-09T16:46:31.478Z'
 title: Encleaver

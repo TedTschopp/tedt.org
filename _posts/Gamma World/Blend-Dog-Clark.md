@@ -1,7 +1,9 @@
 ---
 ID: 71122
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 20d8f011-7cc7-4b6a-8063-63c4872d8f5d
 date: '2023-02-09T16:46:31.478Z'
 title: Blend Dog «Clark»

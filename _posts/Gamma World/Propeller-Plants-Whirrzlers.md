@@ -1,7 +1,9 @@
 ---
 ID: 71695
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f89f2616-40a7-4951-b537-e345ca24f7e0
 date: '2023-02-09T16:46:31.485Z'
 title: Propeller Plants «Whirrzlers»

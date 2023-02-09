@@ -1,7 +1,9 @@
 ---
 ID: 71152
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f8b32fd0-9cd4-4ee3-8995-fb197906364d
 date: '2023-02-09T16:46:31.478Z'
 title: Purple Pygmies «Dagmits»

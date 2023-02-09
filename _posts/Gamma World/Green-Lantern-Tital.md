@@ -1,7 +1,9 @@
 ---
 ID: 71651
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2bb05319-045a-4aab-9d84-fd3de6184e87
 date: '2023-02-09T16:46:31.484Z'
 title: Green Lantern «Ti'tal»

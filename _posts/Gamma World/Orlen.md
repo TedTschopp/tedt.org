@@ -1,7 +1,9 @@
 ---
 ID: 71458
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8a07469d-850e-45e1-b1f6-9351f9836169
 date: '2023-02-09T16:46:31.482Z'
 title: Orlen

@@ -1,7 +1,9 @@
 ---
 ID: 71308
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 362afa97-4d2a-41cb-a164-4f5dbb644c11
 date: '2023-02-09T16:46:31.480Z'
 title: Black Block «Indie»

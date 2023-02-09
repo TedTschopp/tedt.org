@@ -1,7 +1,9 @@
 ---
 ID: 71693
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a005a752-c65b-4a93-ab47-d14e7220578c
 date: '2023-02-09T16:46:31.485Z'
 title: Westford

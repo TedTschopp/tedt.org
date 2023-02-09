@@ -1,7 +1,9 @@
 ---
 ID: 71088
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d3c3d3ab-f6ce-4d67-ba4d-9ae0af42f455
 date: '2023-02-09T16:46:31.477Z'
 title: Crabmen «Brultans»

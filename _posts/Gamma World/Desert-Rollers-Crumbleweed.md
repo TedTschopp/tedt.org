@@ -1,7 +1,9 @@
 ---
 ID: 71141
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8c016938-ee27-4e6f-ba6a-07b4bd1e0afd
 date: '2023-02-09T16:46:31.478Z'
 title: Desert Rollers «Crumbleweed»

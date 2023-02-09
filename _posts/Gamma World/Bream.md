@@ -1,7 +1,9 @@
 ---
 ID: 71086
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 16418537-ecb8-468a-a2d7-1a2b61f0a434
 date: '2023-02-09T16:46:31.477Z'
 title: Bream

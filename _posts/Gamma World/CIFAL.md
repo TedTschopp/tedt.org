@@ -1,7 +1,9 @@
 ---
 ID: 71120
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4c867a4e-70b3-499c-9ab6-681a7bbf1718
 date: '2023-02-09T16:46:31.478Z'
 title: CIFAL

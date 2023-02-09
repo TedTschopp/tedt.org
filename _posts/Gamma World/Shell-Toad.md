@@ -1,7 +1,9 @@
 ---
 ID: 71547
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d511ea28-39ce-468f-815f-4e252567774f
 date: '2023-02-09T16:46:31.483Z'
 title: Shell Toad

@@ -1,7 +1,9 @@
 ---
 ID: 71189
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 75648205-6b90-4da8-92b1-a55f6059b9e8
 date: '2023-02-09T16:46:31.478Z'
 title: Furball «Ekola »

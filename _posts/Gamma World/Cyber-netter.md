@@ -1,7 +1,9 @@
 ---
 ID: 71144
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a54a0487-1ac5-4869-bab1-5a13322f7ec4
 date: '2023-02-09T16:46:31.478Z'
 title: Cyber-netter

@@ -1,7 +1,9 @@
 ---
 ID: 71529
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1bce2228-21a6-4095-b526-3d9ae493bb19
 date: '2023-02-09T16:46:31.483Z'
 title: Salt Spider «Sea Spider»

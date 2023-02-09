@@ -1,7 +1,9 @@
 ---
 ID: 71199
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6d05a8f3-4e24-48ed-8abd-46b5905a94e6
 date: '2023-02-09T16:46:31.479Z'
 title: Finned Dragon «Erdgon»

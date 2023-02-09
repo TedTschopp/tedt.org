@@ -1,7 +1,9 @@
 ---
 ID: 71316
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d6369ba6-5258-4463-a8aa-152cc7c3f6c7
 date: '2023-02-09T16:46:31.480Z'
 title: Itchy's Other Horse

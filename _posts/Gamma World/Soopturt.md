@@ -1,7 +1,9 @@
 ---
 ID: 71590
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9802b253-0a37-4808-afe7-a0ad532d9ace
 date: '2023-02-09T16:46:31.483Z'
 title: Soopturt

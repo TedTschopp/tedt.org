@@ -1,7 +1,9 @@
 ---
 ID: 71238
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9469f685-6087-4261-b603-07a3d893f3be
 date: '2023-02-09T16:46:31.479Z'
 title: Garf

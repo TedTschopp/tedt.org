@@ -1,7 +1,9 @@
 ---
 ID: 71343
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7714e5cd-4d4b-41c9-8211-b3d0af86a059
 date: '2023-02-09T16:46:31.480Z'
 title: EndedHere

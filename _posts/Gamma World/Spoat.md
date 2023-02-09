@@ -1,7 +1,9 @@
 ---
 ID: 71601
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3f73d821-3aac-4035-b92f-49085f9c5f78
 date: '2023-02-09T16:46:31.484Z'
 title: Spoat

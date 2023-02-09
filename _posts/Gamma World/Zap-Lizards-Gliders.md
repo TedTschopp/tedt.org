@@ -1,7 +1,9 @@
 ---
 ID: 71254
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 80de2fa4-ff2f-4671-9207-993c58e40369
 date: '2023-02-09T16:46:31.479Z'
 title: Zap Lizards «Gliders»

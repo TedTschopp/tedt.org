@@ -1,7 +1,9 @@
 ---
 ID: 71435
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 401d1d40-3eb8-43e4-a50e-9796f3fa2eeb
 date: '2023-02-09T16:46:31.482Z'
 title: Tech Bane «NeepNeep»

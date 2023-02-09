@@ -1,7 +1,9 @@
 ---
 ID: 71197
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f250146e-d6e3-4628-8ef9-60ad442aed3a
 date: '2023-02-09T16:46:31.479Z'
 title: Engineering Robot

@@ -1,7 +1,9 @@
 ---
 ID: 71611
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7bba2448-8433-4648-8dd2-dae7d975c9d8
 date: '2023-02-09T16:46:31.484Z'
 title: Sticky

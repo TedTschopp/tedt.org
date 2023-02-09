@@ -1,7 +1,9 @@
 ---
 ID: 71182
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5fc659ef-fa43-4eba-a375-54fdf0469d60
 date: '2023-02-09T16:46:31.478Z'
 title: Farmbot «Ecology Bot - Agricultural»

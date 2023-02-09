@@ -1,7 +1,9 @@
 ---
 ID: 71317
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7a0afb38-ecfb-474e-9bb7-a2e215351880
 date: '2023-02-09T16:46:31.480Z'
 title: Jadea

@@ -1,7 +1,9 @@
 ---
 ID: 71703
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 820135e9-db2a-4c52-8ac4-e6e7a0f0ad6a
 date: '2023-02-09T16:46:31.485Z'
 title: Thnder Clappers «Xloes»

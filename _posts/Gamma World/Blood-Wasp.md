@@ -1,7 +1,9 @@
 ---
 ID: 71075
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4ab0643d-7003-4e51-8868-f770c3f3991b
 date: '2023-02-09T16:46:31.477Z'
 title: Blood Wasp

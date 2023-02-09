@@ -1,7 +1,9 @@
 ---
 ID: 71493
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 21d2bb67-885f-4bbf-82d6-39885371271d
 date: '2023-02-09T16:46:31.482Z'
 title: Raydium, Alpha

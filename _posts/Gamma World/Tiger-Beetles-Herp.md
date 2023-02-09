@@ -1,7 +1,9 @@
 ---
 ID: 71282
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0b017698-f398-4a52-812a-b52c4f0c9233
 date: '2023-02-09T16:46:31.480Z'
 title: Tiger Beetles «Herp»

@@ -1,7 +1,9 @@
 ---
 ID: 71444
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: df545d8f-2cc2-418d-89bb-3dea36a4368f
 date: '2023-02-09T16:46:31.482Z'
 title: North «Nort»

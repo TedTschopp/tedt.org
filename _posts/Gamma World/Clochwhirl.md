@@ -1,7 +1,9 @@
 ---
 ID: 71124
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d2d7a110-2399-4f8c-816d-0018fe9e057d
 date: '2023-02-09T16:46:31.478Z'
 title: Clochwhirl

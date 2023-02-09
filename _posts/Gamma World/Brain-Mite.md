@@ -1,7 +1,9 @@
 ---
 ID: 71084
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9b09fd80-31b7-4fd5-a1fa-7196285c4835
 date: '2023-02-09T16:46:31.477Z'
 title: Brain Mite

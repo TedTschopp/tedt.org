@@ -1,7 +1,9 @@
 ---
 ID: 71591
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a1ba1af8-7d74-4611-8b3d-23d81c2cd40f
 date: '2023-02-09T16:46:31.483Z'
 title: Sorbel

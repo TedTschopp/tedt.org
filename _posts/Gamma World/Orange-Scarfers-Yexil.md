@@ -1,7 +1,9 @@
 ---
 ID: 71708
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 49fe7704-eb5e-4979-ad5b-f8a850b53c28
 date: '2023-02-09T16:46:31.485Z'
 title: Orange Scarfers «Yexil»

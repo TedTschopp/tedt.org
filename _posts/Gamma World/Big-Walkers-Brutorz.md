@@ -1,7 +1,9 @@
 ---
 ID: 71089
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e71885a1-1b5b-4a4f-8ae0-f78edfe38996
 date: '2023-02-09T16:46:31.477Z'
 title: Big Walkers «Brutorz»

@@ -1,7 +1,9 @@
 ---
 ID: 71338
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 08766af7-bdef-4f6d-b46b-37086215d1f1
 date: '2023-02-09T16:46:31.480Z'
 title: Cat Folk «Katkin»

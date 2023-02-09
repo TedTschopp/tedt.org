@@ -1,7 +1,9 @@
 ---
 ID: 71294
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 91bfe769-e743-4901-8cfd-8049d2c8287f
 date: '2023-02-09T16:46:31.480Z'
 title: Horsy

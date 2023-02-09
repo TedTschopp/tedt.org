@@ -1,7 +1,9 @@
 ---
 ID: 71268
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8fa86979-2816-4ace-a148-f93f3eea9ab2
 date: '2023-02-09T16:46:31.479Z'
 title: Gurosh

@@ -1,7 +1,9 @@
 ---
 ID: 71471
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 68e4cd41-8306-4fac-986a-ab161ff53688
 date: '2023-02-09T16:46:31.482Z'
 title: Wargs «Podog»

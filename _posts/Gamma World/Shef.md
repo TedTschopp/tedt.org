@@ -1,7 +1,9 @@
 ---
 ID: 71546
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ab898027-c96d-4215-a735-d5eb0317159b
 date: '2023-02-09T16:46:31.483Z'
 title: Shef

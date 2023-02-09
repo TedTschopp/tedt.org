@@ -1,7 +1,9 @@
 ---
 ID: 71637
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 42abe2fa-4eba-40e2-9e70-26eb15ef6972
 date: '2023-02-09T16:46:31.484Z'
 title: Terrorbird

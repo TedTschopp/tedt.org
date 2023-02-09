@@ -1,7 +1,9 @@
 ---
 ID: 71056
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 435d5523-7b92-4169-8577-8818a4a32542
 date: '2023-02-09T16:46:31.477Z'
 title: Spinning Snake «Batslith»

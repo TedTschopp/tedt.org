@@ -1,7 +1,9 @@
 ---
 ID: 71658
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 283eb5b7-ee35-48ca-8761-3af1d4825124
 date: '2023-02-09T16:46:31.484Z'
 title: Tracker

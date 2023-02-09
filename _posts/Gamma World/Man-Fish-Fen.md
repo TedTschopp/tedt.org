@@ -1,7 +1,9 @@
 ---
 ID: 71211
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7130ff36-9519-42e5-ad7e-ce12b00a24ba
 date: '2023-02-09T16:46:31.479Z'
 title: Man-Fish «Fen»

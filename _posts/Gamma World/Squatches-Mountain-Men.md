@@ -1,7 +1,9 @@
 ---
 ID: 71418
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f102fe3b-6c54-4c43-adf7-247cfd303508
 date: '2023-02-09T16:46:31.481Z'
 title: Squatches «Mountain Men»

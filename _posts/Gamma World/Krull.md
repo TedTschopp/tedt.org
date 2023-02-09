@@ -1,7 +1,9 @@
 ---
 ID: 71352
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9bc18896-5cf2-4218-ba75-ad92af5e0c85
 date: '2023-02-09T16:46:31.480Z'
 title: Krull

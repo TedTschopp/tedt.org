@@ -1,7 +1,9 @@
 ---
 ID: 71677
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 95342ed4-9f35-45ed-a2bb-43cc7c9ac657
 date: '2023-02-09T16:46:31.485Z'
 title: Jumping Spiders «Vilchneks»

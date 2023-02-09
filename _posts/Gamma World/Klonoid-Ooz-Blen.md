@@ -1,7 +1,9 @@
 ---
 ID: 71455
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: afcefaff-9bf1-4c34-b82a-6d727998eb05
 date: '2023-02-09T16:46:31.482Z'
 title: Klonoid «Ooz Blen»

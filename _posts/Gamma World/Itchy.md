@@ -1,7 +1,9 @@
 ---
 ID: 71314
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5e44f4e5-9acd-4e75-bd3d-1cafaceedcb2
 date: '2023-02-09T16:46:31.480Z'
 title: Itchy

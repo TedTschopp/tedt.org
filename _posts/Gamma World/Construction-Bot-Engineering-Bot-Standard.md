@@ -1,7 +1,9 @@
 ---
 ID: 71196
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e0078f51-93bd-43b1-9a82-73d74c409eca
 date: '2023-02-09T16:46:31.479Z'
 title: Construction Bot «Engineering Bot, Standard»

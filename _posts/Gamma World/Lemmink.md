@@ -1,7 +1,9 @@
 ---
 ID: 71359
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3ac2ff46-845d-47ab-9ec0-7a30703ae132
 date: '2023-02-09T16:46:31.481Z'
 title: Lemmink

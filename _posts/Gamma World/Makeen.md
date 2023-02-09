@@ -1,7 +1,9 @@
 ---
 ID: 71384
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3a1867d0-cbbe-43a8-a453-78ae93364984
 date: '2023-02-09T16:46:31.481Z'
 title: Makeen

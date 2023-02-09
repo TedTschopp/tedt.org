@@ -1,7 +1,9 @@
 ---
 ID: 71697
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e17b4bda-83a8-4089-bcc4-b88a42f5a451
 date: '2023-02-09T16:46:31.485Z'
 title: Yellow Tanglers «Win Seen or Yellow Winislean»

@@ -1,7 +1,9 @@
 ---
 ID: 71487
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3a171bed-cb7b-435c-9621-0f706dfef13d
 date: '2023-02-09T16:46:31.482Z'
 title: Brown Runners «Rakkons»

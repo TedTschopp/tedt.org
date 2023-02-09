@@ -1,7 +1,9 @@
 ---
 ID: 71454
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 910c003c-9687-4ca4-8c47-4ab1dfef0e4a
 date: '2023-02-09T16:46:31.482Z'
 title: Mirrored Ones «Omnitar»

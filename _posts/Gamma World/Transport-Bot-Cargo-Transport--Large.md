@@ -1,7 +1,9 @@
 ---
 ID: 71102
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 50c83b23-65af-42e3-869c-7b076cb62eac
 date: '2023-02-09T16:46:31.477Z'
 title: Transport Bot «Cargo Transport - Large»

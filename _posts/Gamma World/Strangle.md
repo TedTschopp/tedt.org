@@ -1,7 +1,9 @@
 ---
 ID: 71613
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 73673f24-485a-4793-94df-61dfb74e0693
 date: '2023-02-09T16:46:31.484Z'
 title: Strangle

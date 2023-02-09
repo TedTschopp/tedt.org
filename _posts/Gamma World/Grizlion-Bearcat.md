@@ -1,7 +1,9 @@
 ---
 ID: 71059
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 318d35b9-aefd-4b62-b073-cd6428d9d279
 date: '2023-02-09T16:46:31.477Z'
 title: Grizlion «Bearcat»

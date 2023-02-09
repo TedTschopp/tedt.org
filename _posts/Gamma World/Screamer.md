@@ -1,7 +1,9 @@
 ---
 ID: 71521
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9ab4121b-1d6a-4bd9-865c-e0e383ea4f9c
 date: '2023-02-09T16:46:31.483Z'
 title: Screamer

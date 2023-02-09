@@ -1,7 +1,9 @@
 ---
 ID: 71054
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 736d3785-a7ee-4701-9320-ca127ca17b71
 date: '2023-02-09T16:46:31.477Z'
 title: Smokie «Barxyn»

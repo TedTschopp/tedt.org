@@ -1,7 +1,9 @@
 ---
 ID: 71135
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e3d075f5-f583-4021-9d0e-f37d4f841504
 date: '2023-02-09T16:46:31.478Z'
 title: Cratical

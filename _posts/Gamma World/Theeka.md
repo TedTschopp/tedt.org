@@ -1,7 +1,9 @@
 ---
 ID: 71643
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d1561773-5a7e-4698-893b-615bc01cb818
 date: '2023-02-09T16:46:31.484Z'
 title: Theeka

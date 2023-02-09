@@ -1,7 +1,9 @@
 ---
 ID: 71303
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 48a8fddf-7684-4572-bdb5-44734fe5655f
 date: '2023-02-09T16:46:31.480Z'
 title: Hybrid-Climate Animal

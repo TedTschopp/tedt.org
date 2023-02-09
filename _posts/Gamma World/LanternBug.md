@@ -1,7 +1,9 @@
 ---
 ID: 71356
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 91e8d6a8-f536-4571-8a0d-23bcaae6dde1
 date: '2023-02-09T16:46:31.481Z'
 title: LanternBug

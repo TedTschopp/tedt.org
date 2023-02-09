@@ -1,7 +1,9 @@
 ---
 ID: 71624
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9a47a004-e004-44d6-ba96-c944b1eba516
 date: '2023-02-09T16:46:31.484Z'
 title: Tank 1 - Far West

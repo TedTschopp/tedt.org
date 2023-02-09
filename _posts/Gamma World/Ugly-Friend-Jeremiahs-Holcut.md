@@ -1,7 +1,9 @@
 ---
 ID: 71321
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2d3102a6-c980-46f5-ab8f-551291601d5d
 date: '2023-02-09T16:46:31.480Z'
 title: Ugly Friend «Jeremiah's Holcut»

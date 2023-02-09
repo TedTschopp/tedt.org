@@ -1,7 +1,9 @@
 ---
 ID: 71168
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 94b2a432-de02-4fe9-876c-323ce980a5a5
 date: '2023-02-09T16:46:31.478Z'
 title: Rescue Bot «Disaster Robot»

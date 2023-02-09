@@ -1,7 +1,9 @@
 ---
 ID: 71421
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9aea8b87-432b-44ca-88ae-e5418e46a06e
 date: '2023-02-09T16:46:31.481Z'
 title: Gas Plant «Mut Choo»

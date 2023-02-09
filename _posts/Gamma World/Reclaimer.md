@@ -1,7 +1,9 @@
 ---
 ID: 71498
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f18095aa-d8f2-4630-b985-0a250060859a
 date: '2023-02-09T16:46:31.482Z'
 title: Reclaimer

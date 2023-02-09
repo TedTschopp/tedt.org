@@ -1,7 +1,9 @@
 ---
 ID: 71249
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b18a5737-9b0b-4801-8a0d-492323ac6035
 date: '2023-02-09T16:46:31.479Z'
 title: Gi-Ant «Giant Ant»

@@ -1,7 +1,9 @@
 ---
 ID: 71437
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 950ace93-d65c-4071-b84c-c043ab2f02ec
 date: '2023-02-09T16:46:31.482Z'
 title: NewFlesh

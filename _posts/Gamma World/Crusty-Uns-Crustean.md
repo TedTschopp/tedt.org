@@ -1,7 +1,9 @@
 ---
 ID: 71142
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c76a02c0-a2fa-438b-b016-ea877fd55163
 date: '2023-02-09T16:46:31.478Z'
 title: Crusty 'Uns «Crustean»

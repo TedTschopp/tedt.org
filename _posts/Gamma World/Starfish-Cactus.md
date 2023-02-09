@@ -1,7 +1,9 @@
 ---
 ID: 71609
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3084c033-f75b-4b15-9527-9993c753473e
 date: '2023-02-09T16:46:31.484Z'
 title: Starfish Cactus

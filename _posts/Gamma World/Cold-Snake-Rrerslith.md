@@ -1,7 +1,9 @@
 ---
 ID: 71511
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 884ab76f-fcb5-498c-92e3-fc294f17e179
 date: '2023-02-09T16:46:31.482Z'
 title: Cold Snake «Rrerslith»

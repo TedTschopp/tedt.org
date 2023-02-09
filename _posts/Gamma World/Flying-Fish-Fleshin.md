@@ -1,7 +1,9 @@
 ---
 ID: 71220
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7a19d627-037b-4ac1-874e-858d03b00769
 date: '2023-02-09T16:46:31.479Z'
 title: Flying Fish «Fleshin»

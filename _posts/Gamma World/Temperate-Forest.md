@@ -1,7 +1,9 @@
 ---
 ID: 71634
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0eef549f-c6b2-47fa-91aa-193af3be9a1a
 date: '2023-02-09T16:46:31.484Z'
 title: Temperate Forest

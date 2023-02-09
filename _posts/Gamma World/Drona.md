@@ -1,7 +1,9 @@
 ---
 ID: 71174
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b5a83710-d099-4195-923b-6cf6caee8c86
 date: '2023-02-09T16:46:31.478Z'
 title: Drona

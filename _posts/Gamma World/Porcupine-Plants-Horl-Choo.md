@@ -1,7 +1,9 @@
 ---
 ID: 71291
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d1a34d24-d4b3-4b60-91d9-ee8f54e4f386
 date: '2023-02-09T16:46:31.480Z'
 title: Porcupine Plants «Horl Choo»

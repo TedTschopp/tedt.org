@@ -1,7 +1,9 @@
 ---
 ID: 71160
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5a5a158e-706f-48f1-ac76-b785f10156ba
 date: '2023-02-09T16:46:31.478Z'
 title: Debris Removal System

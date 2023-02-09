@@ -1,7 +1,9 @@
 ---
 ID: 71265
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7e4678b3-fedd-46a0-86b5-9b1bac245626
 date: '2023-02-09T16:46:31.479Z'
 title: Grillandi

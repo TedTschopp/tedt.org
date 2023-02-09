@@ -1,7 +1,9 @@
 ---
 ID: 71392
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 658b1a25-cb87-4b15-b944-7c58eb9a7c12
 date: '2023-02-09T16:46:31.481Z'
 title: Markus Dema

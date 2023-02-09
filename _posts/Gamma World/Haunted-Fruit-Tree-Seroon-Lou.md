@@ -1,7 +1,9 @@
 ---
 ID: 71543
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 498cc99c-c365-436e-b964-ec94b7bbd8ff
 date: '2023-02-09T16:46:31.483Z'
 title: Haunted Fruit Tree «Seroon Lou»

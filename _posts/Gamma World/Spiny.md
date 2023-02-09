@@ -1,7 +1,9 @@
 ---
 ID: 71597
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f95d58a6-5db0-47b4-bea2-d9c3b1b2fab1
 date: '2023-02-09T16:46:31.483Z'
 title: Spiny

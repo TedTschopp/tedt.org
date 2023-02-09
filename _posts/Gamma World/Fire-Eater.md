@@ -1,7 +1,9 @@
 ---
 ID: 71217
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: de4d7c1e-1786-4155-a242-3dd7f1ca38bd
 date: '2023-02-09T16:46:31.479Z'
 title: Fire Eater

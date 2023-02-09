@@ -1,7 +1,9 @@
 ---
 ID: 71533
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2531f606-fb68-45f0-9023-144b3ddc9ccf
 date: '2023-02-09T16:46:31.483Z'
 title: Security Bot «Security Robotoid»

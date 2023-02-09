@@ -1,7 +1,9 @@
 ---
 ID: 71270
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f544aed8-6a8b-4e0c-b963-3ddd1c1c72df
 date: '2023-02-09T16:46:31.479Z'
 title: Snow Dragon «Hargon»

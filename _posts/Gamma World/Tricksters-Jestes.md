@@ -1,7 +1,9 @@
 ---
 ID: 71322
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 82153b28-30f3-4d24-913d-d6c3493ccdee
 date: '2023-02-09T16:46:31.480Z'
 title: Tricksters «Jestes»

@@ -1,7 +1,9 @@
 ---
 ID: 71209
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3d20f577-cb19-492d-b55d-bb20874bb316
 date: '2023-02-09T16:46:31.479Z'
 title: Fashen

@@ -1,7 +1,9 @@
 ---
 ID: 71041
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 234249e9-794b-498f-a76b-22a911cbb873
 date: '2023-02-09T16:46:31.476Z'
 title: Bahrz

@@ -1,7 +1,9 @@
 ---
 ID: 71646
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e88c37d0-a518-4ec9-97b1-6b2e181d7760
 date: '2023-02-09T16:46:31.484Z'
 title: Thrasher

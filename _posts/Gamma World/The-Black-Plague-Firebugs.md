@@ -1,7 +1,9 @@
 ---
 ID: 71218
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5b16c30c-a4b4-45a7-8263-d69e249cd890
 date: '2023-02-09T16:46:31.479Z'
 title: The Black Plague «Firebugs»

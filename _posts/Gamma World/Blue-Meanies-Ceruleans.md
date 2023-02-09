@@ -1,7 +1,9 @@
 ---
 ID: 71111
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c9ed810b-d08d-4bcf-8202-ac776cb8be79
 date: '2023-02-09T16:46:31.477Z'
 title: Blue Meanies «Ceruleans»

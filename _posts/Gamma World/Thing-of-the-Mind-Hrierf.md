@@ -1,7 +1,9 @@
 ---
 ID: 71298
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e3621f88-e5c3-4103-bb42-b11a99e44d58
 date: '2023-02-09T16:46:31.480Z'
 title: Thing of the Mind «Hrierf»

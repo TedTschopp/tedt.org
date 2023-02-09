@@ -1,7 +1,9 @@
 ---
 ID: 71339
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 87072341-a02c-4e73-b95e-9b72ed19f454
 date: '2023-02-09T16:46:31.480Z'
 title: Water Weirds «Keeshin»

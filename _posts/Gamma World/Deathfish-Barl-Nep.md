@@ -1,7 +1,9 @@
 ---
 ID: 71051
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 992a3833-0a9c-49df-a4ca-eaa23e0eb46f
 date: '2023-02-09T16:46:31.477Z'
 title: Deathfish «Barl Nep»

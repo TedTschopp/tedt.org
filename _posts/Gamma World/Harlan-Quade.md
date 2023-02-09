@@ -1,7 +1,9 @@
 ---
 ID: 71271
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6b66c75a-cffd-41bd-b733-9c83ef13a3e9
 date: '2023-02-09T16:46:31.479Z'
 title: Harlan Quade

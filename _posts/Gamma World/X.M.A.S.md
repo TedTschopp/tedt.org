@@ -1,7 +1,9 @@
 ---
 ID: 71701
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9361d4f4-205c-4177-8907-2f13827de92f
 date: '2023-02-09T16:46:31.485Z'
 title: X.M.A.S

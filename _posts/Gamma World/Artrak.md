@@ -1,7 +1,9 @@
 ---
 ID: 71026
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 28a89d76-122e-4264-83e3-16ac80e76fbf
 date: '2023-02-09T16:46:31.476Z'
 title: Artrak

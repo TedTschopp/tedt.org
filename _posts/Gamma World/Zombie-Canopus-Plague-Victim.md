@@ -1,7 +1,9 @@
 ---
 ID: 71100
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1a44d379-9e69-4520-b1d6-6401ac77420c
 date: '2023-02-09T16:46:31.477Z'
 title: Zombie «Canopus Plague Victim»

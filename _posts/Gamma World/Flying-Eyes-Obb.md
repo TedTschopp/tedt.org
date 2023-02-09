@@ -1,7 +1,9 @@
 ---
 ID: 71451
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 457c17d6-939f-4480-a166-1c84df27b4e2
 date: '2023-02-09T16:46:31.482Z'
 title: Flying Eyes «Obb»

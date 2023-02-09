@@ -1,7 +1,9 @@
 ---
 ID: 71034
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 247067f1-888e-4376-992e-5d7d766f4a05
 date: '2023-02-09T16:46:31.476Z'
 title: Axel

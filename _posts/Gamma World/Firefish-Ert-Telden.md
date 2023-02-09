@@ -1,7 +1,9 @@
 ---
 ID: 71202
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1fdf0c21-61e9-44f3-bb51-73d99ad5aef6
 date: '2023-02-09T16:46:31.479Z'
 title: Firefish «Ert Telden»

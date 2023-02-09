@@ -1,7 +1,9 @@
 ---
 ID: 71069
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e67da143-ef49-40bc-81a8-3c9567f28d98
 date: '2023-02-09T16:46:31.477Z'
 title: Rammers «Blade Whale»

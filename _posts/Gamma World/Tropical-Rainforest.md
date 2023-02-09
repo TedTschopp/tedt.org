@@ -1,7 +1,9 @@
 ---
 ID: 71664
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f4aeede6-b312-44c9-9c1e-025ac2a3f160
 date: '2023-02-09T16:46:31.484Z'
 title: Tropical Rainforest

@@ -1,7 +1,9 @@
 ---
 ID: 71000
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 20744a4e-93e1-45e8-ad38-a29775c26795
 date: '2023-02-09T16:46:31.476Z'
 title: Abomination

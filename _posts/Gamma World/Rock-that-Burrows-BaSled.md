@@ -1,7 +1,9 @@
 ---
 ID: 71037
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: aed7679b-5f2c-4c37-a7b7-d02b0269f5b6
 date: '2023-02-09T16:46:31.476Z'
 title: Rock that Burrows «Ba'Sled»

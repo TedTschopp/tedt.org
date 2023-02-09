@@ -1,7 +1,9 @@
 ---
 ID: 71006
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 77c18625-d286-492f-b7e1-cc04ceb39d6a
 date: '2023-02-09T16:46:31.476Z'
 title: Airshoon

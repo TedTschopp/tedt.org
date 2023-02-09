@@ -1,7 +1,9 @@
 ---
 ID: 71385
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 50e21570-d92c-42a5-aa75-556f0d1bc33e
 date: '2023-02-09T16:46:31.481Z'
 title: Mal Tonas

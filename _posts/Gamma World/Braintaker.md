@@ -1,7 +1,9 @@
 ---
 ID: 71085
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a037971d-f4b1-4ed5-8d3d-7eb3b9ffb4c6
 date: '2023-02-09T16:46:31.477Z'
 title: Braintaker

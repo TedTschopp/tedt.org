@@ -1,7 +1,9 @@
 ---
 ID: 71277
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f4ee42da-8155-46b9-b1b3-96388ca68d53
 date: '2023-02-09T16:46:31.480Z'
 title: Hekal and Jekal

@@ -1,7 +1,9 @@
 ---
 ID: 71167
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a8cee49f-4e27-4b53-a6c9-e3c03f1e9cbb
 date: '2023-02-09T16:46:31.478Z'
 title: Digger

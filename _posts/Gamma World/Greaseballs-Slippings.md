@@ -1,7 +1,9 @@
 ---
 ID: 71581
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: cf9c2d2c-9d65-4ab9-911b-b4f829fbe328
 date: '2023-02-09T16:46:31.483Z'
 title: Greaseballs «Slippings»

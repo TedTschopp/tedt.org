@@ -1,7 +1,9 @@
 ---
 ID: 71399
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e00b3e74-5675-420a-a155-b5482ea87aef
 date: '2023-02-09T16:46:31.481Z'
 title: Mentus

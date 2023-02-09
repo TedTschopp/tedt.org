@@ -1,7 +1,9 @@
 ---
 ID: 71510
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5e14b9b0-dbd8-4a8c-b0f5-ffb8df423506
 date: '2023-02-09T16:46:31.482Z'
 title: Rojak

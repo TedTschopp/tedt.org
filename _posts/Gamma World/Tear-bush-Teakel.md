@@ -1,7 +1,9 @@
 ---
 ID: 71630
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1f3c2453-378d-4f82-a29e-a1abb6bf0a96
 date: '2023-02-09T16:46:31.484Z'
 title: Tear bush «Teakel»

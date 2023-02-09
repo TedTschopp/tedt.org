@@ -1,7 +1,9 @@
 ---
 ID: 71207
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: fdb8ec8b-2eb8-4884-9599-5fd6946879dc
 date: '2023-02-09T16:46:31.479Z'
 title: Eyebane

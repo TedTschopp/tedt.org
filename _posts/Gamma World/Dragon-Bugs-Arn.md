@@ -1,7 +1,9 @@
 ---
 ID: 71024
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e5ffb193-3336-46fb-8e94-4bf413ecd3d9
 date: '2023-02-09T16:46:31.476Z'
 title: Dragon Bugs «Arn»

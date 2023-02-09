@@ -1,7 +1,9 @@
 ---
 ID: 71109
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ce0d84c4-ebb0-4b04-a2b1-f004e2ea260e
 date: '2023-02-09T16:46:31.477Z'
 title: Carrin Mech

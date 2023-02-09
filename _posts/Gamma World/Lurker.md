@@ -1,7 +1,9 @@
 ---
 ID: 71376
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4268361c-c986-4e12-a73f-ccc34db0b12a
 date: '2023-02-09T16:46:31.481Z'
 title: Lurker

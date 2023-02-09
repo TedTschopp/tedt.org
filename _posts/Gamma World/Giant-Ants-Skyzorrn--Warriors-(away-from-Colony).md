@@ -1,7 +1,9 @@
 ---
 ID: 71573
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5973a596-849c-4b10-830b-3c4ed98b4571
 date: '2023-02-09T16:46:31.483Z'
 title: Giant Ants «Skyzorr'n - Warriors (away from Colony)»

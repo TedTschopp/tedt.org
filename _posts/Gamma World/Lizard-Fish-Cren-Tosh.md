@@ -1,7 +1,9 @@
 ---
 ID: 71136
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 02d42049-4c22-407d-8a0f-3a2955ed3bb6
 date: '2023-02-09T16:46:31.478Z'
 title: Lizard Fish «Cren Tosh»

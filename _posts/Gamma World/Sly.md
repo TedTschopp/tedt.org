@@ -1,7 +1,9 @@
 ---
 ID: 71582
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: aaad41bf-67b2-4637-aff4-d43a9c26d055
 date: '2023-02-09T16:46:31.483Z'
 title: Sly

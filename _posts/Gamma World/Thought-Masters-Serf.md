@@ -1,7 +1,9 @@
 ---
 ID: 71540
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3f3a82a4-81a6-4884-8bb3-17c3ab9310f0
 date: '2023-02-09T16:46:31.483Z'
 title: Thought Masters «Serf»

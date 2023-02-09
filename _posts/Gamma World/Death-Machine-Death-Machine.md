@@ -1,7 +1,9 @@
 ---
 ID: 71156
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 627d9874-fa1f-4abd-a952-d8062afa023c
 date: '2023-02-09T16:46:31.478Z'
 title: Death Machine «Death Machine»

@@ -1,7 +1,9 @@
 ---
 ID: 71256
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f618bcfa-f8e9-4da1-837a-2c6d19e2894c
 date: '2023-02-09T16:46:31.479Z'
 title: Glower

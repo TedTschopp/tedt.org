@@ -1,7 +1,9 @@
 ---
 ID: 71114
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d3309011-2f46-4d85-b41e-79769ff33b05
 date: '2023-02-09T16:46:31.477Z'
 title: Fear Deer «Chessex»

@@ -1,7 +1,9 @@
 ---
 ID: 71614
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d6211c6a-eaff-419f-bce6-ff4d26e9da39
 date: '2023-02-09T16:46:31.484Z'
 title: Stupmers «Stuhumphagas»

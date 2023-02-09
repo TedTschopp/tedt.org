@@ -1,7 +1,9 @@
 ---
 ID: 71555
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a2f3887e-aa4c-4739-9ca0-9e1fb2c0fdf4
 date: '2023-02-09T16:46:31.483Z'
 title: Shrike

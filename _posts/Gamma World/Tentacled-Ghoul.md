@@ -1,7 +1,9 @@
 ---
 ID: 71635
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e302a682-9aef-43b5-bdce-c5c330290326
 date: '2023-02-09T16:46:31.484Z'
 title: Tentacled Ghoul

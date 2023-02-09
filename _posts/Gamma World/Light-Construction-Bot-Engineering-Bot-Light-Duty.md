@@ -1,7 +1,9 @@
 ---
 ID: 71195
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 77017e9a-0892-4103-b260-8ac5a7e2a297
 date: '2023-02-09T16:46:31.479Z'
 title: Light Construction Bot «Engineering Bot, Light Duty»

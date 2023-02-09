@@ -1,7 +1,9 @@
 ---
 ID: 71148
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7006586b-265c-4fa0-ac7f-4e1657250f60
 date: '2023-02-09T16:46:31.478Z'
 title: Yellow Living Mold «Cyn I'xon»

@@ -1,7 +1,9 @@
 ---
 ID: 71353
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: af293b7f-15d4-415e-8a15-23b12b7727a3
 date: '2023-02-09T16:46:31.480Z'
 title: Kud'zu Hert'l'cul

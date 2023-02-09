@@ -1,7 +1,9 @@
 ---
 ID: 71443
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 79885820-1ad5-4ebe-a17b-1236e8bdbfb8
 date: '2023-02-09T16:46:31.482Z'
 title: Norien

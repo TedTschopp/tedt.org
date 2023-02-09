@@ -1,7 +1,9 @@
 ---
 ID: 71110
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4d1402f0-ea28-4d19-986d-458ad7df5f89
 date: '2023-02-09T16:46:31.477Z'
 title: Fast Trotters «Centisteed»

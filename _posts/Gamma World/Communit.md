@@ -1,7 +1,9 @@
 ---
 ID: 71129
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e084bc82-2608-411a-a872-3f42e165698d
 date: '2023-02-09T16:46:31.478Z'
 title: Communit

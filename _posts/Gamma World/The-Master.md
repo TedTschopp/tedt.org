@@ -1,7 +1,9 @@
 ---
 ID: 71641
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 426bafca-e079-4ec5-b3d0-3dfe7778f51d
 date: '2023-02-09T16:46:31.484Z'
 title: The Master

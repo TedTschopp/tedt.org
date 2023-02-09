@@ -1,7 +1,9 @@
 ---
 ID: 71373
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 10f6dc31-bd0a-4525-8d8b-1e7be2723631
 date: '2023-02-09T16:46:31.481Z'
 title: Luk

@@ -1,7 +1,9 @@
 ---
 ID: 71306
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 11080412-57be-4bb3-a06f-44a9a1ce4a65
 date: '2023-02-09T16:46:31.480Z'
 title: Sea Medusae «Hydrozoan»

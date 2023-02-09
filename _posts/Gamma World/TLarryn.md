@@ -1,7 +1,9 @@
 ---
 ID: 71620
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 50589e5a-95f7-4b49-a5c5-75885754df6d
 date: '2023-02-09T16:46:31.484Z'
 title: T'Larryn

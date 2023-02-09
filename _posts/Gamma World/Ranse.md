@@ -1,7 +1,9 @@
 ---
 ID: 71490
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7278cc96-9bb8-4353-b411-14eb67b21297
 date: '2023-02-09T16:46:31.482Z'
 title: Ranse

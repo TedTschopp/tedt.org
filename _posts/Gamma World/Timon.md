@@ -1,7 +1,9 @@
 ---
 ID: 71654
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ae185c18-53fa-4a92-aa52-dbfd469cbe8c
 date: '2023-02-09T16:46:31.484Z'
 title: Timon

@@ -1,7 +1,9 @@
 ---
 ID: 71424
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8813b355-0a66-4660-bb4d-762fe25e9a40
 date: '2023-02-09T16:46:31.481Z'
 title: Mutated Houseplant

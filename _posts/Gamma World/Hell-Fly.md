@@ -1,7 +1,9 @@
 ---
 ID: 71278
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ff5f1ba3-5de3-4040-a976-091ee25e9d43
 date: '2023-02-09T16:46:31.480Z'
 title: Hell Fly

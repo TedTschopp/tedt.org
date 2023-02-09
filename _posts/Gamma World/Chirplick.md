@@ -1,7 +1,9 @@
 ---
 ID: 71115
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b6fb94f3-4bb5-4095-a103-0a0953404991
 date: '2023-02-09T16:46:31.477Z'
 title: Chirplick

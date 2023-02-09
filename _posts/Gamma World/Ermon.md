@@ -1,7 +1,9 @@
 ---
 ID: 71200
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0d006225-1cc0-489f-a1fd-9470344fc154
 date: '2023-02-09T16:46:31.479Z'
 title: Ermon

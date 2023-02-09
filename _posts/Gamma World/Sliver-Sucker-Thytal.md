@@ -1,7 +1,9 @@
 ---
 ID: 71650
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c7b3725f-ff07-40fb-b0cf-277f08ce0c92
 date: '2023-02-09T16:46:31.484Z'
 title: Sliver Sucker «Thy'tal»

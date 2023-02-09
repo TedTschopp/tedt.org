@@ -1,7 +1,9 @@
 ---
 ID: 71073
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0bda46de-8092-4949-a01a-26b5c0f5c019
 date: '2023-02-09T16:46:31.477Z'
 title: Blob

@@ -1,7 +1,9 @@
 ---
 ID: 71134
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 28449227-2d09-4c9a-800d-cc7e1d9e2a96
 date: '2023-02-09T16:46:31.478Z'
 title: Cradengeen

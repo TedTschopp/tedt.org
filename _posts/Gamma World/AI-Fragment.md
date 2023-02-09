@@ -1,7 +1,9 @@
 ---
 ID: 71005
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e7f4af5d-7e15-4a78-ae68-e7a13a861969
 date: '2023-02-09T16:46:31.476Z'
 title: AI Fragment

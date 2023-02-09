@@ -1,7 +1,9 @@
 ---
 ID: 71033
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 895cafe7-7e46-4f98-8604-5f1e6b9d4ea9
 date: '2023-02-09T16:46:31.476Z'
 title: Teacher Bot «Automaton»

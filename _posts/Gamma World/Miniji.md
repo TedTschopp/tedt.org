@@ -1,7 +1,9 @@
 ---
 ID: 71410
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e6def725-9f0d-4958-82f2-496f4167668c
 date: '2023-02-09T16:46:31.481Z'
 title: Miniji

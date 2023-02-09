@@ -1,7 +1,9 @@
 ---
 ID: 71380
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f95bb7d3-ee9a-42db-b139-1295dfd5a230
 date: '2023-02-09T16:46:31.481Z'
 title: Tall Slasher «Maali - alone»

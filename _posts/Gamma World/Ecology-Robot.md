@@ -1,7 +1,9 @@
 ---
 ID: 71186
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 99f02268-e3b0-44ad-aff5-33ee0a0831cc
 date: '2023-02-09T16:46:31.478Z'
 title: Ecology Robot

@@ -1,7 +1,9 @@
 ---
 ID: 71459
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 372cedc2-8eaa-4eff-9c5a-b69732a5bce4
 date: '2023-02-09T16:46:31.482Z'
 title: Buffalo Explorer «Otis»

@@ -1,7 +1,9 @@
 ---
 ID: 71647
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2002807a-ed3b-403d-b2f6-b783acb2281f
 date: '2023-02-09T16:46:31.484Z'
 title: Thunderbird

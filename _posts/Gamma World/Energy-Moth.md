@@ -1,7 +1,9 @@
 ---
 ID: 71193
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 63a51c03-df5f-412c-b297-082343d7421d
 date: '2023-02-09T16:46:31.478Z'
 title: Energy Moth

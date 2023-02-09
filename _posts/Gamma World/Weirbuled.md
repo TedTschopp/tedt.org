@@ -1,7 +1,9 @@
 ---
 ID: 71689
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9930ac2f-9895-46cb-9159-12889cf6616d
 date: '2023-02-09T16:46:31.485Z'
 title: Weirbuled

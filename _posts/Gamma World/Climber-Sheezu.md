@@ -1,7 +1,9 @@
 ---
 ID: 71545
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a754ad93-e740-443b-9f14-4ff614fb796f
 date: '2023-02-09T16:46:31.483Z'
 title: Climber «Sheezu»

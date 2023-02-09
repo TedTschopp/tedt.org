@@ -1,7 +1,9 @@
 ---
 ID: 71106
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 31285b28-71d4-415b-97e7-6bdd32d289b9
 date: '2023-02-09T16:46:31.477Z'
 title: Blend Dog «Cark»

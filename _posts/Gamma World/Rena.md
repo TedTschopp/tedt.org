@@ -1,7 +1,9 @@
 ---
 ID: 71500
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: cf73e412-19e1-4ee2-86f5-241c74fa83a0
 date: '2023-02-09T16:46:31.482Z'
 title: Rena

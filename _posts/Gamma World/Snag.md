@@ -1,7 +1,9 @@
 ---
 ID: 71587
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e80c2d61-9f3a-4476-8956-50c3206e4073
 date: '2023-02-09T16:46:31.483Z'
 title: Snag

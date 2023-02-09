@@ -1,7 +1,9 @@
 ---
 ID: 71177
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2dc91317-a580-46db-92de-be07a508b2b3
 date: '2023-02-09T16:46:31.478Z'
 title: Prickly Folk «Dyllon»

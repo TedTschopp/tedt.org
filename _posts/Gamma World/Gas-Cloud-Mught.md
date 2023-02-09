@@ -1,7 +1,9 @@
 ---
 ID: 71419
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2fb39889-279c-4a6c-92a4-27a4f6f67fd9
 date: '2023-02-09T16:46:31.481Z'
 title: Gas Cloud «Mught»

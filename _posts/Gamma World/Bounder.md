@@ -1,7 +1,9 @@
 ---
 ID: 71082
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7a7373c6-883d-4218-a322-54fa1e7176a1
 date: '2023-02-09T16:46:31.477Z'
 title: Bounder

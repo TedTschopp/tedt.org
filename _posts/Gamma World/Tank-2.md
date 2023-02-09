@@ -1,7 +1,9 @@
 ---
 ID: 71625
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d75b88c0-b776-42c5-bba0-f586f876790f
 date: '2023-02-09T16:46:31.484Z'
 title: Tank 2

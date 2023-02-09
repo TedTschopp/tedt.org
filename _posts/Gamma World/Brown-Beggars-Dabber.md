@@ -1,7 +1,9 @@
 ---
 ID: 71151
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 794573a6-a187-459d-8bdb-3155f45749fa
 date: '2023-02-09T16:46:31.478Z'
 title: Brown Beggars «Dabber»

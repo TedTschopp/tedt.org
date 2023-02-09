@@ -1,7 +1,9 @@
 ---
 ID: 71465
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 80ccaaf7-a91d-4061-81b7-8d7fb4a9a025
 date: '2023-02-09T16:46:31.482Z'
 title: Petrotter

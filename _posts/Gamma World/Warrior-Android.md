@@ -1,7 +1,9 @@
 ---
 ID: 71015
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 731c7195-3dae-4f58-b5c1-b0e52cab165e
 date: '2023-02-09T16:46:31.476Z'
 title: Warrior «Android»

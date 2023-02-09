@@ -1,7 +1,9 @@
 ---
 ID: 71404
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a2b76eb9-33af-4d42-9669-04bd82c6ded0
 date: '2023-02-09T16:46:31.481Z'
 title: Mimic

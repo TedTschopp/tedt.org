@@ -1,7 +1,9 @@
 ---
 ID: 71496
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ef924c25-25ff-41e5-9861-192ed1f0f6a2
 date: '2023-02-09T16:46:31.482Z'
 title: Razorgrass

@@ -1,7 +1,9 @@
 ---
 ID: 71436
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c0e30429-7806-4a1a-85a8-f1e98d580489
 date: '2023-02-09T16:46:31.482Z'
 title: Death Trees «Nep Ep»

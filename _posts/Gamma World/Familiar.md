@@ -1,7 +1,9 @@
 ---
 ID: 71208
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9aac2208-a3dc-409f-bb8e-cccf8feaf1dc
 date: '2023-02-09T16:46:31.479Z'
 title: Familiar

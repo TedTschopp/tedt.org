@@ -1,7 +1,9 @@
 ---
 ID: 71387
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: da6d62ce-74db-41cb-aab6-d5873d667624
 date: '2023-02-09T16:46:31.481Z'
 title: Manhunter - Communications Drone

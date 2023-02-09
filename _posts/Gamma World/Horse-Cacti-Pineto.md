@@ -1,7 +1,9 @@
 ---
 ID: 71468
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6c6290ae-9ba2-46d0-a30c-e531fa4b6386
 date: '2023-02-09T16:46:31.482Z'
 title: Horse Cacti «Pineto»

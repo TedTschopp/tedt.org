@@ -1,7 +1,9 @@
 ---
 ID: 71022
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0cf58865-2254-4fec-b11a-501ae8012824
 date: '2023-02-09T16:46:31.476Z'
 title: Hound Folk «Ark»

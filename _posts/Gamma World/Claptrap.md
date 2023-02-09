@@ -1,7 +1,9 @@
 ---
 ID: 71121
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4465d28a-17a5-43ae-bc42-69df4f0bb677
 date: '2023-02-09T16:46:31.478Z'
 title: Claptrap

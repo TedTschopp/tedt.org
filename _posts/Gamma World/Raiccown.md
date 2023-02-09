@@ -1,7 +1,9 @@
 ---
 ID: 71485
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 151fdfb2-5296-4af7-9300-37997168b5be
 date: '2023-02-09T16:46:31.482Z'
 title: Raiccown

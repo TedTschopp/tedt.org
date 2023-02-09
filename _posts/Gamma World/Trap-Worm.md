@@ -1,7 +1,9 @@
 ---
 ID: 71659
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ad3821b5-0650-4fc3-941f-d8220860d3e5
 date: '2023-02-09T16:46:31.484Z'
 title: Trap Worm

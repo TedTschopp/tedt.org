@@ -1,7 +1,9 @@
 ---
 ID: 71386
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 95deff83-343c-40b9-b3ee-035516ea8027
 date: '2023-02-09T16:46:31.481Z'
 title: Robotic Hunter «Manhunter»

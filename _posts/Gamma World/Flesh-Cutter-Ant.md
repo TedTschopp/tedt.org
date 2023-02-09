@@ -1,7 +1,9 @@
 ---
 ID: 71219
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e24a44bb-8168-407d-8413-750ef53f0273
 date: '2023-02-09T16:46:31.479Z'
 title: Flesh Cutter Ant

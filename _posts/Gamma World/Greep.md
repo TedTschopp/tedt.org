@@ -1,7 +1,9 @@
 ---
 ID: 71260
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 3c6975df-4b84-477a-83b4-240365c05b79
 date: '2023-02-09T16:46:31.479Z'
 title: Greep

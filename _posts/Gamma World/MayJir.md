@@ -1,7 +1,9 @@
 ---
 ID: 71394
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: aab35a61-aad3-47f5-b950-f257f4b5ae57
 date: '2023-02-09T16:46:31.481Z'
 title: May'Jir

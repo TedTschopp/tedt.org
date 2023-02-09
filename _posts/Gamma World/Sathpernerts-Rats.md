@@ -1,7 +1,9 @@
 ---
 ID: 71517
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 44fd43b8-4522-4b8c-8630-829f5691ba41
 date: '2023-02-09T16:46:31.483Z'
 title: Sathpernert's Rats

@@ -1,7 +1,9 @@
 ---
 ID: 71039
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1896776a-dc78-47d4-8d4e-8321ae0fe118
 date: '2023-02-09T16:46:31.476Z'
 title: Digger Folk «Badder»

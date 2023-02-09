@@ -1,7 +1,9 @@
 ---
 ID: 71482
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9bdd630a-458a-4642-ab91-a62c82392238
 date: '2023-02-09T16:46:31.482Z'
 title: Heer Kitties «Purrlions»

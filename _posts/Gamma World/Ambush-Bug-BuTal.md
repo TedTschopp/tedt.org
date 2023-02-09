@@ -1,7 +1,9 @@
 ---
 ID: 71092
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7e5c3c6d-b6a4-46cb-9e2c-261bc1d2b551
 date: '2023-02-09T16:46:31.477Z'
 title: Ambush Bug «Bu'Tal»

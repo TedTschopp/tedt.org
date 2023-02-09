@@ -1,7 +1,9 @@
 ---
 ID: 71593
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: fbad831d-88ed-4015-9b03-aaa9c2454317
 date: '2023-02-09T16:46:31.483Z'
 title: Souls'ker

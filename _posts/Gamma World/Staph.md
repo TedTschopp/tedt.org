@@ -1,7 +1,9 @@
 ---
 ID: 71608
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 02f9345f-67c7-4cfd-90a3-11c79306d988
 date: '2023-02-09T16:46:31.484Z'
 title: Staph

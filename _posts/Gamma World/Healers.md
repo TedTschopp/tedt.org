@@ -1,7 +1,9 @@
 ---
 ID: 71276
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 36259f03-c7ab-430a-b927-1b6a25cc5114
 date: '2023-02-09T16:46:31.480Z'
 title: Healers

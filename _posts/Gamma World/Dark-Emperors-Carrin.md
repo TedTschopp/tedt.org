@@ -1,7 +1,9 @@
 ---
 ID: 71108
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 492e5571-8e0d-4e79-a189-16b0f14c0f1d
 date: '2023-02-09T16:46:31.477Z'
 title: Dark Emperors «Carrin»

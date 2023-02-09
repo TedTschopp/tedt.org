@@ -1,7 +1,9 @@
 ---
 ID: 71149
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f570a5ec-73e9-4285-9a94-a993f76bb1ed
 date: '2023-02-09T16:46:31.478Z'
 title: Czhar-Teroth

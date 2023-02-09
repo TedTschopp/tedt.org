@@ -1,7 +1,9 @@
 ---
 ID: 71010
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 50f61c67-f516-4d48-b677-29d4ec086831
 date: '2023-02-09T16:46:31.476Z'
 title: Shapeless Ones «Ameebies (as blob)»

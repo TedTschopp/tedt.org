@@ -1,7 +1,9 @@
 ---
 ID: 71530
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 63c7457e-ae61-4e90-a1ea-68695ea58602
 date: '2023-02-09T16:46:31.483Z'
 title: Sea Spider

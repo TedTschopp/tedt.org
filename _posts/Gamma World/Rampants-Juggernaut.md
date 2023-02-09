@@ -1,7 +1,9 @@
 ---
 ID: 71327
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: d6f138f5-3300-4eb1-896b-62973e75c7ab
 date: '2023-02-09T16:46:31.480Z'
 title: Rampants «Juggernaut»

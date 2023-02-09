@@ -1,7 +1,9 @@
 ---
 ID: 71153
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4ea63da8-b1c9-4551-9830-0d634d4862dc
 date: '2023-02-09T16:46:31.478Z'
 title: Darel

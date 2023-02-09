@@ -1,7 +1,9 @@
 ---
 ID: 71178
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f6640e4d-c899-4259-99ce-71d56f35c046
 date: '2023-02-09T16:46:31.478Z'
 title: Baldee «E'Glee»

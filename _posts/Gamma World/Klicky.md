@@ -1,7 +1,9 @@
 ---
 ID: 71346
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b579279d-4c20-4df4-864b-11e069f9646e
 date: '2023-02-09T16:46:31.480Z'
 title: Klicky

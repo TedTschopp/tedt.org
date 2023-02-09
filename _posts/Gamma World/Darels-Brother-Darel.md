@@ -1,7 +1,9 @@
 ---
 ID: 71154
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b58eb840-d8bc-4fde-86f9-d1e8986cb095
 date: '2023-02-09T16:46:31.478Z'
 title: Darel's Brother «Darel»

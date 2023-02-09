@@ -1,7 +1,9 @@
 ---
 ID: 71552
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b8685019-f83d-4368-ae96-198b1688a6b0
 date: '2023-02-09T16:46:31.483Z'
 title: Bird of the Moonlight «Sho'day»

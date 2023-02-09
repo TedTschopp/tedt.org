@@ -1,7 +1,9 @@
 ---
 ID: 71076
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5f87bbe6-3fdd-46e8-9637-c3f3c3ca9331
 date: '2023-02-09T16:46:31.477Z'
 title: Two Horn «Boarz»

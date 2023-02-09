@@ -1,7 +1,9 @@
 ---
 ID: 71147
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b68a7d58-2062-4fb9-aa84-8cedc9c8a207
 date: '2023-02-09T16:46:31.478Z'
 title: Cycloptron

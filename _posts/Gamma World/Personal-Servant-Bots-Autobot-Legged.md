@@ -1,7 +1,9 @@
 ---
 ID: 71030
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: c1a26936-7b08-4a1d-bbb9-853c55f4371b
 date: '2023-02-09T16:46:31.476Z'
 title: Personal Servant Bots «Autobot, Legged»

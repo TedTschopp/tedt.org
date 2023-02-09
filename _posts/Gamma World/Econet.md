@@ -1,7 +1,9 @@
 ---
 ID: 71187
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1f8ea73d-89c3-4939-97f5-047df67ee40e
 date: '2023-02-09T16:46:31.478Z'
 title: Econet

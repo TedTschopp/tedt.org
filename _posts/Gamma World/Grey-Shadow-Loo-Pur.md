@@ -1,7 +1,9 @@
 ---
 ID: 71371
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 04ecec83-be9c-45b2-bd19-05fe215586a4
 date: '2023-02-09T16:46:31.481Z'
 title: Grey Shadow «Loo Pur»

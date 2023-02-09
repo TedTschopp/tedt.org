@@ -1,7 +1,9 @@
 ---
 ID: 71286
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 00b60278-d9f7-44c3-b2b5-70d67059c104
 date: '2023-02-09T16:46:31.480Z'
 title: Hogle

@@ -1,7 +1,9 @@
 ---
 ID: 71184
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5a51cd53-f74f-4bcb-b6d4-05462b6f29a3
 date: '2023-02-09T16:46:31.478Z'
 title: Forestbot «Ecology Bot - Timber»

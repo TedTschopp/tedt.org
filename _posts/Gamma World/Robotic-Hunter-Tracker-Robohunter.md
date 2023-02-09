@@ -1,7 +1,9 @@
 ---
 ID: 71506
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: bc5fb0d0-3eeb-42d4-9200-72be1a6bce3d
 date: '2023-02-09T16:46:31.482Z'
 title: Robotic Hunter/Tracker «Robohunter»

@@ -1,7 +1,9 @@
 ---
 ID: 71671
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 97071a29-8f9d-4f4d-b4a6-4e30d787762c
 date: '2023-02-09T16:46:31.484Z'
 title: That which is hideous «V'ath»

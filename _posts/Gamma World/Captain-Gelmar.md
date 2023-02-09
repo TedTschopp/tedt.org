@@ -1,7 +1,9 @@
 ---
 ID: 71101
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a3bc2e14-ef5e-41d3-9dd3-3145272df3c8
 date: '2023-02-09T16:46:31.477Z'
 title: Captain Gelmar

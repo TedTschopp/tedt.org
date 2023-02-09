@@ -1,7 +1,9 @@
 ---
 ID: 71615
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: bc0ff160-d4cc-453e-9142-407db8d71c2c
 date: '2023-02-09T16:46:31.484Z'
 title: Sucker Snake «Sucslith»

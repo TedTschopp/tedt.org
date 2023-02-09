@@ -1,7 +1,9 @@
 ---
 ID: 71062
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: dd5bcdeb-8d00-428e-81c5-4a8f91b09821
 date: '2023-02-09T16:46:31.477Z'
 title: Whirligig «Belo»

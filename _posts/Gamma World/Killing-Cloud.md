@@ -1,7 +1,9 @@
 ---
 ID: 71345
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e6223fa4-9f15-49df-aa06-ced6a1a77b14
 date: '2023-02-09T16:46:31.480Z'
 title: Killing Cloud

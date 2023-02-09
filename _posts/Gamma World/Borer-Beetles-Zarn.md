@@ -1,7 +1,9 @@
 ---
 ID: 71710
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2f625326-f210-4024-a3c0-f9d043ffdd77
 date: '2023-02-09T16:46:31.485Z'
 title: Borer Beetles «Zarn»

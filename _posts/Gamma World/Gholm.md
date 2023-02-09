@@ -1,7 +1,9 @@
 ---
 ID: 71248
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 94cfede6-a6e6-4e9b-91de-e4adc36d54c8
 date: '2023-02-09T16:46:31.479Z'
 title: Ghol'm

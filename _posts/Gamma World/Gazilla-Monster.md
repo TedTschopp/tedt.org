@@ -1,7 +1,9 @@
 ---
 ID: 71241
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a27d641e-85c2-413a-963f-23d9be34be40
 date: '2023-02-09T16:46:31.479Z'
 title: Gazilla Monster

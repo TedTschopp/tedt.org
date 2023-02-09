@@ -1,7 +1,9 @@
 ---
 ID: 71663
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: f0b920be-623c-4d02-868a-8d98e630bcc3
 date: '2023-02-09T16:46:31.484Z'
 title: Tropical Grass

@@ -1,7 +1,9 @@
 ---
 ID: 71023
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 2270ab80-7fff-442f-a21b-0f318a340770
 date: '2023-02-09T16:46:31.476Z'
 title: Man-o-War «Armada»

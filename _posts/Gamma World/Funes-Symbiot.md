@@ -1,7 +1,9 @@
 ---
 ID: 71233
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 29021675-20e3-47cc-b67d-f28be2d0c45a
 date: '2023-02-09T16:46:31.479Z'
 title: Funes' Symbiot

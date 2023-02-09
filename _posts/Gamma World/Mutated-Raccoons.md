@@ -1,7 +1,9 @@
 ---
 ID: 71425
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7b589cb5-404b-4eb8-8379-55f6e8d67b1d
 date: '2023-02-09T16:46:31.481Z'
 title: Mutated Raccoons

@@ -1,7 +1,9 @@
 ---
 ID: 71403
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 4ad32295-113a-4e36-862b-5a9ec2b1abab
 date: '2023-02-09T16:46:31.481Z'
 title: Microreebdor

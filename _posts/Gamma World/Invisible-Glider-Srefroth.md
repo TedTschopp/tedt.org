@@ -1,7 +1,9 @@
 ---
 ID: 71605
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 6862de90-464c-4724-a36f-8fc0cf2e3767
 date: '2023-02-09T16:46:31.484Z'
 title: Invisible Glider «Sre'froth»

@@ -1,7 +1,9 @@
 ---
 ID: 71065
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 48f70cb5-cdbc-41c0-af30-6cc22e68f898
 date: '2023-02-09T16:46:31.477Z'
 title: Biohazard Drone

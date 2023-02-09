@@ -1,7 +1,9 @@
 ---
 ID: 71439
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1381cc6e-696a-4ecd-ac3b-84c27b33fb90
 date: '2023-02-09T16:46:31.482Z'
 title: Killer Turtles «Niregs»

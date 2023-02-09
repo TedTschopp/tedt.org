@@ -1,7 +1,9 @@
 ---
 ID: 71525
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: ca7f5dc5-3208-4e78-b8b3-b86da4cd25ba
 date: '2023-02-09T16:46:31.483Z'
 title: Sea Lilies «Sea Lilies Patch»

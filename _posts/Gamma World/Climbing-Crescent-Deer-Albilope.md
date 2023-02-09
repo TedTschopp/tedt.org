@@ -1,7 +1,9 @@
 ---
 ID: 71008
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8d916ddc-92be-443a-852b-acb19ecf1d84
 date: '2023-02-09T16:46:31.476Z'
 title: Climbing, Crescent Deer «Albilope»

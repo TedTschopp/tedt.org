@@ -1,7 +1,9 @@
 ---
 ID: 71304
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 21ec11b2-47f1-4558-a0fe-8201a507723a
 date: '2023-02-09T16:46:31.480Z'
 title: Hydra

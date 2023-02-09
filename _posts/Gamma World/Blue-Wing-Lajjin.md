@@ -1,7 +1,9 @@
 ---
 ID: 71354
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 250f89c0-caff-43eb-ba35-ac5fc8053c9c
 date: '2023-02-09T16:46:31.480Z'
 title: Blue Wing «Lajjin »

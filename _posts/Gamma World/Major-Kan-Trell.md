@@ -1,7 +1,9 @@
 ---
 ID: 71382
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 23554437-6c43-4502-8233-5982c947a645
 date: '2023-02-09T16:46:31.481Z'
 title: Major Kan-Trell

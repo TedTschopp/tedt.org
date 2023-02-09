@@ -1,7 +1,9 @@
 ---
 ID: 71047
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b1a6cc88-400f-40b9-9796-10a3a64f3cd4
 date: '2023-02-09T16:46:31.477Z'
 title: Bandit Droid

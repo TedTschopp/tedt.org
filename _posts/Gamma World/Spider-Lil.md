@@ -1,7 +1,9 @@
 ---
 ID: 71595
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 8f601a5b-37ba-4b98-94bd-830600e7f036
 date: '2023-02-09T16:46:31.483Z'
 title: Spider Lil

@@ -1,7 +1,9 @@
 ---
 ID: 71388
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 709c3cf9-26cc-4e67-9530-fbd174c51457
 date: '2023-02-09T16:46:31.481Z'
 title: Manhunter - Underground Drone

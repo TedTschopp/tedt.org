@@ -1,7 +1,9 @@
 ---
 ID: 71607
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 5df5d992-d8c6-41ce-a03e-453f590b666b
 date: '2023-02-09T16:46:31.484Z'
 title: Standardized

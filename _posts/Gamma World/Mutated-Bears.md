@@ -1,7 +1,9 @@
 ---
 ID: 71422
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0b1b5d47-bc22-412b-a7b3-fcf023868d92
 date: '2023-02-09T16:46:31.481Z'
 title: Mutated Bears

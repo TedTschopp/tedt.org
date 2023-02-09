@@ -1,7 +1,9 @@
 ---
 ID: 71223
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 003b12f3-3d0f-4342-ab14-371590e50f82
 date: '2023-02-09T16:46:31.479Z'
 title: Fluter

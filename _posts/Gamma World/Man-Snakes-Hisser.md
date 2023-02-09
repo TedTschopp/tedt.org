@@ -1,7 +1,9 @@
 ---
 ID: 71284
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: dc606d67-430b-4ae2-971e-aa4d98a4686b
 date: '2023-02-09T16:46:31.480Z'
 title: Man Snakes «Hisser»

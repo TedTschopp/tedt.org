@@ -1,7 +1,9 @@
 ---
 ID: 71363
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: a5486b07-6940-43b7-b73e-04fbbf30c35d
 date: '2023-02-09T16:46:31.481Z'
 title: Wee Ones «Lil»

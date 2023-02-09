@@ -1,7 +1,9 @@
 ---
 ID: 71050
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9f58bd26-7ad4-40a0-9276-3b2ffad92c93
 date: '2023-02-09T16:46:31.477Z'
 title: Barfly

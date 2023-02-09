@@ -1,7 +1,9 @@
 ---
 ID: 71318
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 92bb84f5-1da4-43b9-8afd-d1010542b4dd
 date: '2023-02-09T16:46:31.480Z'
 title: Savannah Cats «Jaget»

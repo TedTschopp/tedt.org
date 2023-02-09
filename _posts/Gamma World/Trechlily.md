@@ -1,7 +1,9 @@
 ---
 ID: 71660
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7ef45420-6726-4015-8b2f-fac4a1aed105
 date: '2023-02-09T16:46:31.484Z'
 title: Trechlily

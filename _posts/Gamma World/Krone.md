@@ -1,7 +1,9 @@
 ---
 ID: 71351
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 87fab7ac-a753-48c2-acff-19a5ea18925f
 date: '2023-02-09T16:46:31.480Z'
 title: Krone

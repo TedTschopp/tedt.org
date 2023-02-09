@@ -1,7 +1,9 @@
 ---
 ID: 71324
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 78e23d21-e2fa-468a-bd09-cbc55c46255f
 date: '2023-02-09T16:46:31.480Z'
 title: Lesser Bloodwing «Jo'Tal»

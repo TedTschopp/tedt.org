@@ -1,7 +1,9 @@
 ---
 ID: 71367
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e9da8e1d-e2cf-4015-9eb6-e68e77a63880
 date: '2023-02-09T16:46:31.481Z'
 title: Locobot «Locomotive Control Bot»

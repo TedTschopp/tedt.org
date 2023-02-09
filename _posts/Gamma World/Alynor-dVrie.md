@@ -1,7 +1,9 @@
 ---
 ID: 71009
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 792b1b6a-c2de-490d-a5ba-da2626c9d54a
 date: '2023-02-09T16:46:31.476Z'
 title: Alynor d'Vrie

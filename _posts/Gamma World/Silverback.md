@@ -1,7 +1,9 @@
 ---
 ID: 71563
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0372f611-bed4-46c6-9df7-46a75b30901d
 date: '2023-02-09T16:46:31.483Z'
 title: Silverback

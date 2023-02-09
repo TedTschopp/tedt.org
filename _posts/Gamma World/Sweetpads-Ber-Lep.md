@@ -1,7 +1,9 @@
 ---
 ID: 71063
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 02847d4b-a6bd-4636-8230-9f1d4fd37b36
 date: '2023-02-09T16:46:31.477Z'
 title: Sweetpads «Ber Lep»

@@ -1,7 +1,9 @@
 ---
 ID: 71680
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: e258043b-0566-41f6-9a4a-dc9c3e2d3e88
 date: '2023-02-09T16:46:31.485Z'
 title: Waja

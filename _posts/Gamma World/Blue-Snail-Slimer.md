@@ -1,7 +1,9 @@
 ---
 ID: 71579
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: b6954938-a460-4696-9d0f-8361d61c1d07
 date: '2023-02-09T16:46:31.483Z'
 title: Blue Snail «Slimer»

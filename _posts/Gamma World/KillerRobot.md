@@ -1,7 +1,9 @@
 ---
 ID: 71344
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 9d1193fe-32e3-41b2-b26b-32a747d7673d
 date: '2023-02-09T16:46:31.480Z'
 title: KillerRobot

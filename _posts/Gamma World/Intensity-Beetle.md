@@ -1,7 +1,9 @@
 ---
 ID: 71312
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: fb438bc2-dbe6-48da-9def-badf3d6d9060
 date: '2023-02-09T16:46:31.480Z'
 title: Intensity Beetle

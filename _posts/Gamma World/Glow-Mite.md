@@ -1,7 +1,9 @@
 ---
 ID: 71255
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 61ff5a07-dc70-4f5e-b83d-3bc430af4eec
 date: '2023-02-09T16:46:31.479Z'
 title: Glow Mite

@@ -1,7 +1,9 @@
 ---
 ID: 71501
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 7b936422-53c0-4eea-93a4-404ae3224121
 date: '2023-02-09T16:46:31.482Z'
 title: Reptoads

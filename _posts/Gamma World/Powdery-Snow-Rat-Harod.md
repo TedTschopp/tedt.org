@@ -1,7 +1,9 @@
 ---
 ID: 71273
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 0d63fd54-615e-42fe-8ec6-ae685020d4fe
 date: '2023-02-09T16:46:31.480Z'
 title: Powdery Snow Rat «Harod»

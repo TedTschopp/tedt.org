@@ -1,7 +1,9 @@
 ---
 ID: 71649
 layout: GammaWorld
-categories: '{Gamma World, Beastiary}'
+categories:
+- Gamma World
+- Bestiary
 guid: 1a4b1e43-7efc-4c41-8443-91209114625f
 date: '2023-02-09T16:46:31.484Z'
 title: Thuntra
