@@ -1,63 +1,67 @@
 ---
+ID: 71075
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: 4ab0643d-7003-4e51-8868-f770c3f3991b
+date: '2023-02-09T16:46:31.477Z'
 title: Blood Wasp
-GenericName: ''
-Name: Blood Wasp
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW04 - The Mind Masters
-Author: Phil Taterczynski
-MCC Race: Animal
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: 2d20+5
-Morale: '5'
-Hit_Dice: '2'
-Armor: '4'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '1'
-Air_Speed: '6'
-Water_Speed: ''
-Burrowing_Speed: '1'
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '2'
-DX: '15'
-CN: '2'
-MS: '2'
-CH: '1'
-IN: '2'
-Brain-CPU Type: ''
-Attack_1: 1 Sting (1)
-Attack_2: 1 Bite (4)
-Attack_3: ''
-Mutations: Warning, Patrolling, and Death Pheromones (see New Mutations)
-Size: Tiny
-Size_Measurement: 10cm
-Frequency: Rare
-Organization: ''
-Activity_Cycle: ''
-Diet: Carnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Underground, Plains, Forests
-Base_Stock: Wasp
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: loodwasps are burrowing wasps about 10cm long. They exhibit some traits
+creature_name_index: Blood Wasp
+notes: ''
+genericname: ''
+creature_name: Blood Wasp
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW04 - The Mind Masters
+author: ''
+name: Phil Taterczynski
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: Monster
+number_appearing_dice: 2d20+5
+morale: '5'
+hit_dice: '2'
+armor: '4'
+control: ''
+sensors: ''
+power: ''
+land_speed: '1'
+air_speed: '6'
+water_speed: ''
+burrowing_speed: '1'
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '2'
+dx: '15'
+cn: '2'
+ms: '2'
+ch: '1'
+in: '2'
+brain-cpu type: ''
+attack_1: 1 Sting (1)
+attack_2: 1 Bite (4)
+attack_3: ''
+mutations: Warning, Patrolling, and Death Pheromones (see New Mutations)
+size: Tiny
+size_measurement: 10cm
+frequency: Rare
+organization: ''
+activity_cycle: ''
+diet: Carnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Underground, Plains, Forests
+base_stock: Wasp
+robot_classification: ''
+status: ''
+mission: ''
+description: loodwasps are burrowing wasps about 10cm long. They exhibit some traits
   of both solitary and social insects; blood wasps live singly, in burrows, with 2d20+5
   burrows located in a region of 1 hectare. Their behaviour is controlled by pheromones.
   blood wasps wait in their burrows for prey.blood wasps sense their prey by smell
@@ -76,89 +80,149 @@ Description: loodwasps are burrowing wasps about 10cm long. They exhibit some tr
   permanently.blood wasps emit the patrolling pheromone when they are not feeding
   or fighting. blood wasps emit the warning pheromone when they are feeding, fighting,
   or attacking.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Blood Wasp
-Number_appearing: 2d20+5 (26)
-Number_appearing_Single: '26'
-Init: '+2'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Blood Wasp (2d20+5 (26)): Init +2'
-PS_-_C: '2'
-DX_-_C: '15'
-CN_-_C: '2'
-MS_-_C: '2'
-CH_-_C: '1'
-IN_-_C: '2'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '1'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '2'
-Plus_to_hit_and_damage_Melee_From_Stats: '-3'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '-2'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: '1'
-Attack_1_Attack_Name: Sting
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '3'
-Attack_1_Bonus_to_Hit: '-2'
-Attack_1_Bonus_to_Damage: '-3'
-New_Attack_1: Sting melee -2 (1d3-3)
-Attack_2_Number_of_Attacks: '1'
-Attack_2_Attack_Name: Bite
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '4'
-Attack_2_Bonus_to_Hit: '-2'
-Attack_2_Bonus_to_Damage: '-3'
-New_Attack_2: Bite melee -2 (1d4-3)
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk sting melee
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Blood Wasp
+number_appearing: 2d20+5 (26)
+number_appearing_single: '26'
+init: '+2'
+monster_name_xx_number_if_applicable_init_+-x: 'Blood Wasp (2d20+5 (26)): Init +2'
+ps_-_c: '2'
+dx_-_c: '15'
+cn_-_c: '2'
+ms_-_c: '2'
+ch_-_c: '1'
+in_-_c: '2'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '2'
+plus_to_hit_and_damage_melee_from_stats: '-3'
+plus_to_melee_from_level: ''
+plus_to_melee: '-2'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: '1'
+attack_1_attack_name: Sting
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '3'
+attack_1_bonus_to_hit: '-2'
+attack_1_bonus_to_damage: '-3'
+new_attack_1: Sting melee -2 (1d3-3)
+attack_2_number_of_attacks: '1'
+attack_2_attack_name: Bite
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '4'
+attack_2_bonus_to_hit: '-2'
+attack_2_bonus_to_damage: '-3'
+new_attack_2: Bite melee -2 (1d4-3)
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk sting melee
   -2 (1d3-3) and bite melee -2 (1d4-3)
-AC_xx: AC 14
-Effective_Class_Level: '1'
-New_Level: '1'
-New_Hit_Dice: HD 1D7
-New_HD_xdx_plus_minus: HD 1D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 4 each
-New_Hit_Points: '4'
-D6_Hitdice: '2'
-Total_GW_hit_points_plus_Constant: '12'
-MV_xx: MV 1' or Fly 8' or Burrow 1'
-Walk: 1'
-Fly: Fly 8'
-Swim: ''
-Burrow: Burrow 1'
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort -3, Ref +1, Will -3
-Fort_Save: '-3'
-Ref_Save: '1'
-Will: '-3'
-Normal_Text: "Blood Wasp (2d20+5 (26)): Init +2; atk sting melee -2 (1d3-3) and bite\
+ac_xx: AC 14
+effective_class_level: '1'
+new_level: '1'
+new_hit_dice: HD 1D7
+new_hd_xdx_plus_minus: HD 1D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 4 each
+new_hit_points: '4'
+d6_hitdice: '2'
+total_gw_hit_points_plus_constant: '12'
+mv_xx: MV 1' or Fly 8' or Burrow 1'
+walk: 1'
+fly: Fly 8'
+swim: ''
+burrow: Burrow 1'
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort -3, Ref +1, Will -3
+fort_save: '-3'
+ref_save: '1'
+will: '-3'
+normal_text: "Blood Wasp (2d20+5 (26)): Init +2; atk sting melee -2 (1d3-3) and bite\
   \ melee -2 (1d4-3); AC 14; HD 1D7 hp 4 each; MV 1' or Fly 8' or Burrow 1' ; 1d20;\
   \ SV Fort -3, Ref +1, Will -3"
+description_output: "Description: loodwasps are burrowing wasps about 10cm long. They\
+  \ exhibit some traits of both solitary and social insects; blood wasps live singly,\
+  \ in burrows, with 2d20+5 burrows located in a region of 1 hectare. Their behaviour\
+  \ is controlled by pheromones. blood wasps wait in their burrows for prey.blood\
+  \ wasps sense their prey by smell within a range of 30m (plus or minus 10m for wind\
+  \ direction if any). They can also sense prey by feeling ground vibrations within\
+  \ a range of 5cm per kg of the prey.A Blood Wasp attacks with a dashing flight and\
+  \ a sting, delivering 1hp of damage and a paralyzing poison of intensity 14. The\
+  \ poison leaves its prey immobile, but conscious, while the Blood Wasp burrows one-half\
+  \ centimeter into its preys flesh and sucks 3 ml of blood. This causes 1d4+1 more\
+  \ points of damage. When the first attacker is through feeding it will leave. Then,\
+  \ other blood wasps will approach and feed until the poison wears off or until all\
+  \ the wasps in range of the first attacker's Pheromone mutation have fed. Victims\
+  \ of blood wasps must pass an attribute check for MS each search turn, while the\
+  \ blood wasps' poison is in effect. If the victim fails an attribute check, he will\
+  \ suffer the irrational effects of the Insanity [D] mutation when the poison wears\
+  \ off. The victim does not have the insanity mutation permanently.blood wasps emit\
+  \ the patrolling pheromone when they are not feeding or fighting. blood wasps emit\
+  \ the warning pheromone when they are feeding, fighting, or attacking."
+final_output: "Blood Wasp (2d20+5 (26)): Init +2; atk sting melee -2 (1d3-3) and bite\
+  \ melee -2 (1d4-3); AC 14; HD 1D7 hp 4 each; MV 1' or Fly 8' or Burrow 1' ; 1d20;\
+  \ SV Fort -3, Ref +1, Will -3Warning, Patrolling, and Death Pheromones (see New\
+  \ Mutations)Description: loodwasps are burrowing wasps about 10cm long. They exhibit\
+  \ some traits of both solitary and social insects; blood wasps live singly, in burrows,\
+  \ with 2d20+5 burrows located in a region of 1 hectare. Their behaviour is controlled\
+  \ by pheromones. blood wasps wait in their burrows for prey.blood wasps sense their\
+  \ prey by smell within a range of 30m (plus or minus 10m for wind direction if any).\
+  \ They can also sense prey by feeling ground vibrations within a range of 5cm per\
+  \ kg of the prey.A Blood Wasp attacks with a dashing flight and a sting, delivering\
+  \ 1hp of damage and a paralyzing poison of intensity 14. The poison leaves its prey\
+  \ immobile, but conscious, while the Blood Wasp burrows one-half centimeter into\
+  \ its preys flesh and sucks 3 ml of blood. This causes 1d4+1 more points of damage.\
+  \ When the first attacker is through feeding it will leave. Then, other blood wasps\
+  \ will approach and feed until the poison wears off or until all the wasps in range\
+  \ of the first attacker's Pheromone mutation have fed. Victims of blood wasps must\
+  \ pass an attribute check for MS each search turn, while the blood wasps' poison\
+  \ is in effect. If the victim fails an attribute check, he will suffer the irrational\
+  \ effects of the Insanity [D] mutation when the poison wears off. The victim does\
+  \ not have the insanity mutation permanently.blood wasps emit the patrolling pheromone\
+  \ when they are not feeding or fighting. blood wasps emit the warning pheromone\
+  \ when they are feeding, fighting, or attacking."
+players: "Blood Wasp; '';Description: loodwasps are burrowing wasps about 10cm long.\
+  \ They exhibit some traits of both solitary and social insects; blood wasps live\
+  \ singly, in burrows, with 2d20+5 burrows located in a region of 1 hectare. Their\
+  \ behaviour is controlled by pheromones. blood wasps wait in their burrows for prey.blood\
+  \ wasps sense their prey by smell within a range of 30m (plus or minus 10m for wind\
+  \ direction if any). They can also sense prey by feeling ground vibrations within\
+  \ a range of 5cm per kg of the prey.A Blood Wasp attacks with a dashing flight and\
+  \ a sting, delivering 1hp of damage and a paralyzing poison of intensity 14. The\
+  \ poison leaves its prey immobile, but conscious, while the Blood Wasp burrows one-half\
+  \ centimeter into its preys flesh and sucks 3 ml of blood. This causes 1d4+1 more\
+  \ points of damage. When the first attacker is through feeding it will leave. Then,\
+  \ other blood wasps will approach and feed until the poison wears off or until all\
+  \ the wasps in range of the first attacker's Pheromone mutation have fed. Victims\
+  \ of blood wasps must pass an attribute check for MS each search turn, while the\
+  \ blood wasps' poison is in effect. If the victim fails an attribute check, he will\
+  \ suffer the irrational effects of the Insanity [D] mutation when the poison wears\
+  \ off. The victim does not have the insanity mutation permanently.blood wasps emit\
+  \ the patrolling pheromone when they are not feeding or fighting. blood wasps emit\
+  \ the warning pheromone when they are feeding, fighting, or attacking.|"
 ...

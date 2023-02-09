@@ -1,155 +1,194 @@
 ---
+ID: 71000
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: 20744a4e-93e1-45e8-ad38-a29775c26795
+date: '2023-02-09T16:46:31.476Z'
 title: Abomination
-GenericName: Yes
-Name: Abomination
-Common_Name: ''
-Other_Names: ''
-Generic_Name: Abomination
-Source: GW07 Module
-Author: Bruce Nesmith
-MCC Race: Plant
-Role_In_Gamma_World: Unique
-Number_Appearing_Dice: '1'
-Morale: '9'
-Hit_Dice: '12'
-Armor: '7'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '9'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '360'
-DX: '12'
-CN: '21'
-MS: '18'
-CH: '5'
-IN: '1'
-Brain-CPU Type: ''
-Attack_1: 9 Claws (5)
-Attack_2: ''
-Attack_3: ''
-Mutations: (P) Photosynthetic Skin (28), Skeltal enhancement (18), Speed Increase
+creature_name_index: Abomination
+notes: ''
+genericname: Yes
+creature_name: Abomination
+common_name: ''
+other_names: ''
+generic_name: Abomination
+source: GW07 Module
+author: ''
+name: Bruce Nesmith
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Unique
+number_appearing_dice: '1'
+morale: '9'
+hit_dice: '12'
+armor: '7'
+control: ''
+sensors: ''
+power: ''
+land_speed: '9'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '360'
+dx: '12'
+cn: '21'
+ms: '18'
+ch: '5'
+in: '1'
+brain-cpu type: ''
+attack_1: 9 Claws (5)
+attack_2: ''
+attack_3: ''
+mutations: (P) Photosynthetic Skin (28), Skeltal enhancement (18), Speed Increase
   (14), Duality (15), Enhanced Smell (12)(PL) Divisional body segments (15)(M) Phobia
   - Androids (16), Fear Generation (10), Temporal Fugue (12), Life Leech (14), Cryokinesis(8)
-Size: ''
-Size_Measurement: ''
-Frequency: ''
-Organization: ''
-Activity_Cycle: ''
-Diet: ''
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: ''
-Base_Stock: ''
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: The abomination is part plant and part lizard.  Its origin is lost in
+size: ''
+size_measurement: ''
+frequency: ''
+organization: ''
+activity_cycle: ''
+diet: ''
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: ''
+base_stock: ''
+robot_classification: ''
+status: ''
+mission: ''
+description: The abomination is part plant and part lizard.  Its origin is lost in
   the mists of time, but it is known that no other creature like it exists on the
   continent.  The scaled / bark body has no defined shape to it, 3 foot long claws
   tipped limbs stick out at seemingly random places.  Its head is flat bony protrusion
   with a mass of short thick tentacle / branches surrounding it like a collar.  Its
   mouth is toothless, merely an entrance to the acid filled belly.
-Equipment: ''
-Reactions: ''
-Behavior: While using life leech, any of its temporal fugue copies are not affected.  They
+equipment: ''
+reactions: ''
+behavior: While using life leech, any of its temporal fugue copies are not affected.  They
   are affected by anybody else's life leech as individual creatures.  This is not
   the same as the anti-life leech mutation.When in combat, the abomination needs four
   limbs to remain mobile, the others will leave and attack on their own.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Abomination
-Number_appearing: '1'
-Number_appearing_Single: '1'
-Init: '+5'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Abomination (1): Init +5'
-PS_-_C: '360'
-DX_-_C: '12'
-CN_-_C: '21'
-MS_-_C: '18'
-CH_-_C: '5'
-IN_-_C: '1'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '3'
-Plus_to_hit_and_damage_Melee_From_Stats: '6'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '9'
-Plus_to_Generic_Attack_from_Level: '3'
-Attack_1_Number_of_Attacks: '9'
-Attack_1_Attack_Name: Claws
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '5'
-Attack_1_Bonus_to_Hit: '9'
-Attack_1_Bonus_to_Damage: '6'
-New_Attack_1: 9 x Claws melee +9 (1d5+6)
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 9 x claws melee
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Abomination
+number_appearing: '1'
+number_appearing_single: '1'
+init: '+5'
+monster_name_xx_number_if_applicable_init_+-x: 'Abomination (1): Init +5'
+ps_-_c: '360'
+dx_-_c: '12'
+cn_-_c: '21'
+ms_-_c: '18'
+ch_-_c: '5'
+in_-_c: '1'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: ''
+plus_to_range: '3'
+plus_to_hit_and_damage_melee_from_stats: '6'
+plus_to_melee_from_level: ''
+plus_to_melee: '9'
+plus_to_generic_attack_from_level: '3'
+attack_1_number_of_attacks: '9'
+attack_1_attack_name: Claws
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '5'
+attack_1_bonus_to_hit: '9'
+attack_1_bonus_to_damage: '6'
+new_attack_1: 9 x Claws melee +9 (1d5+6)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 9 x claws melee
   +9 (1d5+6)
-AC_xx: AC 17
-Effective_Class_Level: '5'
-New_Level: '9'
-New_Hit_Dice: HD 9D5
-New_HD_xdx_plus_minus: HD 9D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 27
-New_Hit_Points: '27'
-D6_Hitdice: '12'
-Total_GW_hit_points_plus_Constant: '72'
-MV_xx: MV 11'
-Walk: 11'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20+1d14
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +4, Ref +0, Will +3
-Fort_Save: '4'
-Ref_Save: '0'
-Will: '3'
-Normal_Text: "Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD\
+ac_xx: AC 17
+effective_class_level: '5'
+new_level: '9'
+new_hit_dice: HD 9D5
+new_hd_xdx_plus_minus: HD 9D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 27
+new_hit_points: '27'
+d6_hitdice: '12'
+total_gw_hit_points_plus_constant: '72'
+mv_xx: MV 11'
+walk: 11'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20+1d14
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +4, Ref +0, Will +3
+fort_save: '4'
+ref_save: '0'
+will: '3'
+normal_text: "Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD\
   \ 9D5 hp 27; MV 11' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3"
+description_output: "Description: The abomination is part plant and part lizard. \
+  \ Its origin is lost in the mists of time, but it is known that no other creature\
+  \ like it exists on the continent.  The scaled / bark body has no defined shape\
+  \ to it, 3 foot long claws tipped limbs stick out at seemingly random places.  Its\
+  \ head is flat bony protrusion with a mass of short thick tentacle / branches surrounding\
+  \ it like a collar.  Its mouth is toothless, merely an entrance to the acid filled\
+  \ belly.Behavior:While using life leech, any of its temporal fugue copies are not\
+  \ affected.  They are affected by anybody else's life leech as individual creatures.\
+  \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
+  \ needs four limbs to remain mobile, the others will leave and attack on their own."
+final_output: "Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD\
+  \ 9D5 hp 27; MV 11' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3(P) Photosynthetic Skin\
+  \ (28), Skeltal enhancement (18), Speed Increase (14), Duality (15), Enhanced Smell\
+  \ (12)(PL) Divisional body segments (15)(M) Phobia - Androids (16), Fear Generation\
+  \ (10), Temporal Fugue (12), Life Leech (14), Cryokinesis(8)Description: The abomination\
+  \ is part plant and part lizard.  Its origin is lost in the mists of time, but it\
+  \ is known that no other creature like it exists on the continent.  The scaled /\
+  \ bark body has no defined shape to it, 3 foot long claws tipped limbs stick out\
+  \ at seemingly random places.  Its head is flat bony protrusion with a mass of short\
+  \ thick tentacle / branches surrounding it like a collar.  Its mouth is toothless,\
+  \ merely an entrance to the acid filled belly.Behavior:While using life leech, any\
+  \ of its temporal fugue copies are not affected.  They are affected by anybody else's\
+  \ life leech as individual creatures.  This is not the same as the anti-life leech\
+  \ mutation.When in combat, the abomination needs four limbs to remain mobile, the\
+  \ others will leave and attack on their own."
+players: "Abomination; '';Description: The abomination is part plant and part lizard.\
+  \  Its origin is lost in the mists of time, but it is known that no other creature\
+  \ like it exists on the continent.  The scaled / bark body has no defined shape\
+  \ to it, 3 foot long claws tipped limbs stick out at seemingly random places.  Its\
+  \ head is flat bony protrusion with a mass of short thick tentacle / branches surrounding\
+  \ it like a collar.  Its mouth is toothless, merely an entrance to the acid filled\
+  \ belly.Behavior:While using life leech, any of its temporal fugue copies are not\
+  \ affected.  They are affected by anybody else's life leech as individual creatures.\
+  \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
+  \ needs four limbs to remain mobile, the others will leave and attack on their own.|"
 ...

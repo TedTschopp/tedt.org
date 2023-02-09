@@ -1,63 +1,67 @@
 ---
+ID: 71544
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.843Z'
+categories: '{Gamma World, Beastiary}'
+guid: c8e15f36-fd34-456f-ace9-feab6f90c341
+date: '2023-02-09T16:46:31.483Z'
 title: Servo Reindeer
-GenericName: ''
-Name: Servo Reindeer
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: Polyhedron 15
-Author: James M. Ward
-MCC Race: 'PSH: Sentinel'
-Role_In_Gamma_World: Robot
-Number_Appearing_Dice: '8'
-Morale: ''
-Hit_Dice: 12d6
-Armor: '2'
-Control: A
-Sensors: A/B
-Power: A/D/EB
-Land_Speed: ''
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '552'
-DX: '12'
-CN: ''
-MS: ''
-CH: ''
-IN: ''
-Brain-CPU Type: '15 - 16: Rational'
-Attack_1: ''
-Attack_2: ''
-Attack_3: ''
-Mutations: ''
-Size: Large
-Size_Measurement: ''
-Frequency: Extremely Rare
-Organization: ''
-Activity_Cycle: Christmas Time
-Diet: ''
-Tech_Level: ''
-Tech_Max: ''
-Artifacts: ''
-Habitat: ''
-Base_Stock: ''
-Robot_Classification: ''
-Status: '2000'
-Mission: ''
-Description: The S. Reindeer was originally designed to serve as a surplus pulling
+creature_name_index: Servo Reindeer
+notes: ''
+genericname: ''
+creature_name: Servo Reindeer
+common_name: ''
+other_names: ''
+generic_name: ''
+source: Polyhedron 15
+author: ''
+name: James M. Ward
+url: ''
+avatar: ''
+mcc_race: 'PSH: Sentinel'
+role_in_gamma_world: Robot
+number_appearing_dice: '8'
+morale: ''
+hit_dice: 12d6
+armor: '2'
+control: A
+sensors: A/B
+power: A/D/EB
+land_speed: ''
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '552'
+dx: '12'
+cn: ''
+ms: ''
+ch: ''
+in: ''
+brain-cpu type: '15 - 16: Rational'
+attack_1: ''
+attack_2: ''
+attack_3: ''
+mutations: ''
+size: Large
+size_measurement: ''
+frequency: Extremely Rare
+organization: ''
+activity_cycle: Christmas Time
+diet: ''
+tech_level: ''
+tech_max: ''
+artifacts: ''
+habitat: ''
+base_stock: ''
+robot_classification: ''
+status: '2000'
+mission: ''
+description: The S. Reindeer was originally designed to serve as a surplus pulling
   unit for the X.M.A.S. unit's sleigh. It has been modified to act as Fire Support
   for the protection of the X.M.A.S. unit. Its systems are internal. Mini-missile
   launcher (20d10) Flame Thrower (10d10)All units, including the laser weapons, are
@@ -68,87 +72,121 @@ Description: The S. Reindeer was originally designed to serve as a surplus pulli
   return to the factory at maximum speed. Although the X.M.A.S. unit is programmed
   to be jolly, it will not allow itself to get into situations where it can be easily
   destroyed.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Servo Reindeer
-Number_appearing: 8 (8)
-Number_appearing_Single: '8'
-Init: '+7'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Servo Reindeer (8 (8)): Init +7'
-PS_-_C: '552'
-DX_-_C: '12'
-CN_-_C: ''
-MS_-_C: ''
-CH_-_C: ''
-IN_-_C: ''
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '7'
-Plus_to_hit_and_damage_Melee_From_Stats: '6'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '13'
-Plus_to_Generic_Attack_from_Level: '7'
-Attack_1_Number_of_Attacks: ''
-Attack_1_Attack_Name: ''
-Attack_1_Type: ''
-Attack_1_Range: ''
-Attack_1_Attack_Dice: ''
-Attack_1_Bonus_to_Hit: ''
-Attack_1_Bonus_to_Damage: ''
-New_Attack_1: See Description
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
-AC_xx: AC 12
-Effective_Class_Level: '7'
-New_Level: '13'
-New_Hit_Dice: HD 13D12
-New_HD_xdx_plus_minus: HD 13D12
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 85 each
-New_Hit_Points: '85'
-D6_Hitdice: '42'
-Total_GW_hit_points_plus_Constant: '252'
-MV_xx: NO MOVEMENT
-Walk: ''
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20+1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +0, Will -3
-Fort_Save: '0'
-Ref_Save: '0'
-Will: '-3'
-Normal_Text: 'Servo Reindeer (8 (8)): Init +7; atk see description; AC 12; HD 13D12
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Servo Reindeer
+number_appearing: 8 (8)
+number_appearing_single: '8'
+init: '+7'
+monster_name_xx_number_if_applicable_init_+-x: 'Servo Reindeer (8 (8)): Init +7'
+ps_-_c: '552'
+dx_-_c: '12'
+cn_-_c: ''
+ms_-_c: ''
+ch_-_c: ''
+in_-_c: ''
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: ''
+plus_to_range: '7'
+plus_to_hit_and_damage_melee_from_stats: '6'
+plus_to_melee_from_level: ''
+plus_to_melee: '13'
+plus_to_generic_attack_from_level: '7'
+attack_1_number_of_attacks: ''
+attack_1_attack_name: ''
+attack_1_type: ''
+attack_1_range: ''
+attack_1_attack_dice: ''
+attack_1_bonus_to_hit: ''
+attack_1_bonus_to_damage: ''
+new_attack_1: See Description
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
+ac_xx: AC 12
+effective_class_level: '7'
+new_level: '13'
+new_hit_dice: HD 13D12
+new_hd_xdx_plus_minus: HD 13D12
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 85 each
+new_hit_points: '85'
+d6_hitdice: '42'
+total_gw_hit_points_plus_constant: '252'
+mv_xx: NO MOVEMENT
+walk: ''
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20+1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will -3
+fort_save: '0'
+ref_save: '0'
+will: '-3'
+normal_text: 'Servo Reindeer (8 (8)): Init +7; atk see description; AC 12; HD 13D12
   hp 85 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref +0, Will -3'
+description_output: "Description: The S. Reindeer was originally designed to serve\
+  \ as a surplus pulling unit for the X.M.A.S. unit's sleigh. It has been modified\
+  \ to act as Fire Support for the protection of the X.M.A.S. unit. Its systems are\
+  \ internal. Mini-missile launcher (20d10) Flame Thrower (10d10)All units, including\
+  \ the laser weapons, are powered by broadcast power from the robot factory, giving\
+  \ units a range of 500 kilometers. The S. Reindeer will react to any physical attack\
+  \ with the flame thrower in their tails. Their mini-missiles are shot on the instructions\
+  \ of the X.M.A.S. unit. If the X.M.A.S. unit is destroyed, the X Unit Sleigh and\
+  \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
+  \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
+  \ situations where it can be easily destroyed."
+final_output: "Servo Reindeer (8 (8)): Init +7; atk see description; AC 12; HD 13D12\
+  \ hp 85 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref +0, Will -3Description: The\
+  \ S. Reindeer was originally designed to serve as a surplus pulling unit for the\
+  \ X.M.A.S. unit's sleigh. It has been modified to act as Fire Support for the protection\
+  \ of the X.M.A.S. unit. Its systems are internal. Mini-missile launcher (20d10)\
+  \ Flame Thrower (10d10)All units, including the laser weapons, are powered by broadcast\
+  \ power from the robot factory, giving units a range of 500 kilometers. The S. Reindeer\
+  \ will react to any physical attack with the flame thrower in their tails. Their\
+  \ mini-missiles are shot on the instructions of the X.M.A.S. unit. If the X.M.A.S.\
+  \ unit is destroyed, the X Unit Sleigh and remaining S. Reindeer will return to\
+  \ the factory at maximum speed. Although the X.M.A.S. unit is programmed to be jolly,\
+  \ it will not allow itself to get into situations where it can be easily destroyed."
+players: "Servo Reindeer; '';Description: The S. Reindeer was originally designed\
+  \ to serve as a surplus pulling unit for the X.M.A.S. unit's sleigh. It has been\
+  \ modified to act as Fire Support for the protection of the X.M.A.S. unit. Its systems\
+  \ are internal. Mini-missile launcher (20d10) Flame Thrower (10d10)All units, including\
+  \ the laser weapons, are powered by broadcast power from the robot factory, giving\
+  \ units a range of 500 kilometers. The S. Reindeer will react to any physical attack\
+  \ with the flame thrower in their tails. Their mini-missiles are shot on the instructions\
+  \ of the X.M.A.S. unit. If the X.M.A.S. unit is destroyed, the X Unit Sleigh and\
+  \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
+  \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
+  \ situations where it can be easily destroyed.|"
 ...

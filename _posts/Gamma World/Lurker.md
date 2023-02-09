@@ -1,68 +1,72 @@
 ---
+ID: 71376
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.842Z'
+categories: '{Gamma World, Beastiary}'
+guid: 4268361c-c986-4e12-a73f-ccc34db0b12a
+date: '2023-02-09T16:46:31.481Z'
 title: Lurker
-GenericName: ''
-Name: Lurker
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: 'John Traglio (Apocalyptic Post #3)'
-MCC Race: Animal
-Role_In_Gamma_World: ''
-Number_Appearing_Dice: 1d4-2
-Morale: '6'
-Hit_Dice: '10'
-Armor: '6'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '3'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '16'
-DX: '13'
-CN: '11'
-MS: '15'
-CH: '2'
-IN: '3'
-Brain-CPU Type: ''
-Attack_1: 1 Bite (18)
-Attack_2: 2 Claws (10)
-Attack_3: 2 Darts (8) r30'
-Mutations: Taller; New Body Parts; Modified Body Parts; Total Carapace
-Size: Large
-Size_Measurement: 2 Meters at Shoulder
-Frequency: Uncommon
-Organization: ''
-Activity_Cycle: ''
-Diet: Carnivore (Large Animals)
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Forest or Jungle
-Base_Stock: Green Lynx Spider
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: The lurker barely resembles its ancestors. The body is heavily plated
+creature_name_index: Lurker
+notes: ''
+genericname: ''
+creature_name: Lurker
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: John Traglio
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: ''
+number_appearing_dice: 1d4-2
+morale: '6'
+hit_dice: '10'
+armor: '6'
+control: ''
+sensors: ''
+power: ''
+land_speed: '3'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '16'
+dx: '13'
+cn: '11'
+ms: '15'
+ch: '2'
+in: '3'
+brain-cpu type: ''
+attack_1: 1 Bite (18)
+attack_2: 2 Claws (10)
+attack_3: 2 Darts (8) r30'
+mutations: Taller; New Body Parts; Modified Body Parts; Total Carapace
+size: Large
+size_measurement: 2 Meters at Shoulder
+frequency: Uncommon
+organization: ''
+activity_cycle: ''
+diet: Carnivore (Large Animals)
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Forest or Jungle
+base_stock: Green Lynx Spider
+robot_classification: ''
+status: ''
+mission: ''
+description: The lurker barely resembles its ancestors. The body is heavily plated
   and the first pair of legs end in long, barbed hooks. All of the legs are covered
   in green fur, matching the coloration of the body.
-Equipment: ''
-Reactions: ''
-Behavior: the cephalothorax has two long growths on it that fire darts. When the darts
+equipment: ''
+reactions: ''
+behavior: the cephalothorax has two long growths on it that fire darts. When the darts
   are fired, spinnerets on the edge of the "harpoon" guns attach webbing to them enabling
   the lurker to reel in prey. Each harpoon gun can fire 8 darts a day.The poison of
   the darts is of a paralytic origin with a "D" resulting in paralyzation for 1d8+12
@@ -76,86 +80,142 @@ Behavior: the cephalothorax has two long growths on it that fire darts. When the
   attempt to run off.If more than one lurker is encountered, it will be either a mating
   pair or a female and her young. These young lurkers have only half the hit dice
   of their parents and their poison intensity level is 8-12.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Lurker
-Number_appearing: 1d4-2 (0)
-Number_appearing_Single: '0'
-Init: '+4'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Lurker (1d4-2 (0)): Init +4'
-PS_-_C: '16'
-DX_-_C: '13'
-CN_-_C: '11'
-MS_-_C: '15'
-CH_-_C: '2'
-IN_-_C: '3'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '1'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '3'
-Plus_to_hit_and_damage_Melee_From_Stats: '2'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '4'
-Plus_to_Generic_Attack_from_Level: '2'
-Attack_1_Number_of_Attacks: '1'
-Attack_1_Attack_Name: Bite
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '16'
-Attack_1_Bonus_to_Hit: '4'
-Attack_1_Bonus_to_Damage: '2'
-New_Attack_1: Bite melee +4 (1d16+2)
-Attack_2_Number_of_Attacks: '2'
-Attack_2_Attack_Name: Claws
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '10'
-Attack_2_Bonus_to_Hit: '4'
-Attack_2_Bonus_to_Damage: '2'
-New_Attack_2: 2 x Claws melee +4 (1d10+2)
-Attack_3_Number_of_Attacks: '2'
-Attack_3_Attack_Name: Darts
-Attack_3_Type: range
-Attack_3_Range: 30'
-Attack_3_Attack_Dice: '8'
-Attack_3_Bonus_to_Hit: '3'
-Attack_3_Bonus_to_Damage: '1'
-New_Attack_3: 2 x Darts +3 (1d8+1, 30')
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk bite melee +4
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Lurker
+number_appearing: 1d4-2 (0)
+number_appearing_single: '0'
+init: '+4'
+monster_name_xx_number_if_applicable_init_+-x: 'Lurker (1d4-2 (0)): Init +4'
+ps_-_c: '16'
+dx_-_c: '13'
+cn_-_c: '11'
+ms_-_c: '15'
+ch_-_c: '2'
+in_-_c: '3'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '3'
+plus_to_hit_and_damage_melee_from_stats: '2'
+plus_to_melee_from_level: ''
+plus_to_melee: '4'
+plus_to_generic_attack_from_level: '2'
+attack_1_number_of_attacks: '1'
+attack_1_attack_name: Bite
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '16'
+attack_1_bonus_to_hit: '4'
+attack_1_bonus_to_damage: '2'
+new_attack_1: Bite melee +4 (1d16+2)
+attack_2_number_of_attacks: '2'
+attack_2_attack_name: Claws
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '10'
+attack_2_bonus_to_hit: '4'
+attack_2_bonus_to_damage: '2'
+new_attack_2: 2 x Claws melee +4 (1d10+2)
+attack_3_number_of_attacks: '2'
+attack_3_attack_name: Darts
+attack_3_type: range
+attack_3_range: 30'
+attack_3_attack_dice: '8'
+attack_3_bonus_to_hit: '3'
+attack_3_bonus_to_damage: '1'
+new_attack_3: 2 x Darts +3 (1d8+1, 30')
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk bite melee +4
   (1d16+2) and 2 x claws melee +4 (1d10+2) and 2 x darts +3 (1d8+1, 30')
-AC_xx: AC 16
-Effective_Class_Level: '3'
-New_Level: '5'
-New_Hit_Dice: HD 5D7
-New_HD_xdx_plus_minus: HD 5D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 20
-New_Hit_Points: '20'
-D6_Hitdice: '10'
-Total_GW_hit_points_plus_Constant: '60'
-MV_xx: MV 4'
-Walk: 4'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +1, Will +1
-Fort_Save: '0'
-Ref_Save: '1'
-Will: '1'
-Normal_Text: "Lurker (1d4-2 (0)): Init +4; atk bite melee +4 (1d16+2) and 2 x claws\
+ac_xx: AC 16
+effective_class_level: '3'
+new_level: '5'
+new_hit_dice: HD 5D7
+new_hd_xdx_plus_minus: HD 5D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 20
+new_hit_points: '20'
+d6_hitdice: '10'
+total_gw_hit_points_plus_constant: '60'
+mv_xx: MV 4'
+walk: 4'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will +1
+fort_save: '0'
+ref_save: '1'
+will: '1'
+normal_text: "Lurker (1d4-2 (0)): Init +4; atk bite melee +4 (1d16+2) and 2 x claws\
   \ melee +4 (1d10+2) and 2 x darts +3 (1d8+1, 30'); AC 16; HD 5D7 hp 20; MV 4' ;\
   \ 1d20; SV Fort +0, Ref +1, Will +1"
+description_output: 'Description: The lurker barely resembles its ancestors. The body
+  is heavily plated and the first pair of legs end in long, barbed hooks. All of the
+  legs are covered in green fur, matching the coloration of the body. Behavior:the
+  cephalothorax has two long growths on it that fire darts. When the darts are fired,
+  spinnerets on the edge of the "harpoon" guns attach webbing to them enabling the
+  lurker to reel in prey. Each harpoon gun can fire 8 darts a day.The poison of the
+  darts is of a paralytic origin with a "D" resulting in paralyzation for 1d8+12 rounds,
+  while that of the fangs is a neurotoxin with a "D" resulting in death.A lurker will
+  usually cover the ground of a large area and cover the web with debris. When a victim
+  gets entang-led in the web, the lurker will start firing its darts at the prey.
+  If the victim falls to paralyzation, the lurker will emerge from his ambush spot
+  and web up the victim and drag him off to be consumed at a later date. If the victim
+  is still standing after all darts are fired, the lurker will emerge and attack with
+  fangs and hooks. If the lurker is losing badly in a battle, it will attempt to run
+  off.If more than one lurker is encountered, it will be either a mating pair or a
+  female and her young. These young lurkers have only half the hit dice of their parents
+  and their poison intensity level is 8-12.'
+final_output: "Lurker (1d4-2 (0)): Init +4; atk bite melee +4 (1d16+2) and 2 x claws\
+  \ melee +4 (1d10+2) and 2 x darts +3 (1d8+1, 30'); AC 16; HD 5D7 hp 20; MV 4' ;\
+  \ 1d20; SV Fort +0, Ref +1, Will +1Taller; New Body Parts; Modified Body Parts;\
+  \ Total CarapaceDescription: The lurker barely resembles its ancestors. The body\
+  \ is heavily plated and the first pair of legs end in long, barbed hooks. All of\
+  \ the legs are covered in green fur, matching the coloration of the body. Behavior:the\
+  \ cephalothorax has two long growths on it that fire darts. When the darts are fired,\
+  \ spinnerets on the edge of the \"harpoon\" guns attach webbing to them enabling\
+  \ the lurker to reel in prey. Each harpoon gun can fire 8 darts a day.The poison\
+  \ of the darts is of a paralytic origin with a \"D\" resulting in paralyzation for\
+  \ 1d8+12 rounds, while that of the fangs is a neurotoxin with a \"D\" resulting\
+  \ in death.A lurker will usually cover the ground of a large area and cover the\
+  \ web with debris. When a victim gets entang-led in the web, the lurker will start\
+  \ firing its darts at the prey. If the victim falls to paralyzation, the lurker\
+  \ will emerge from his ambush spot and web up the victim and drag him off to be\
+  \ consumed at a later date. If the victim is still standing after all darts are\
+  \ fired, the lurker will emerge and attack with fangs and hooks. If the lurker is\
+  \ losing badly in a battle, it will attempt to run off.If more than one lurker is\
+  \ encountered, it will be either a mating pair or a female and her young. These\
+  \ young lurkers have only half the hit dice of their parents and their poison intensity\
+  \ level is 8-12."
+players: "Lurker; '';Description: The lurker barely resembles its ancestors. The body\
+  \ is heavily plated and the first pair of legs end in long, barbed hooks. All of\
+  \ the legs are covered in green fur, matching the coloration of the body. Behavior:the\
+  \ cephalothorax has two long growths on it that fire darts. When the darts are fired,\
+  \ spinnerets on the edge of the \"harpoon\" guns attach webbing to them enabling\
+  \ the lurker to reel in prey. Each harpoon gun can fire 8 darts a day.The poison\
+  \ of the darts is of a paralytic origin with a \"D\" resulting in paralyzation for\
+  \ 1d8+12 rounds, while that of the fangs is a neurotoxin with a \"D\" resulting\
+  \ in death.A lurker will usually cover the ground of a large area and cover the\
+  \ web with debris. When a victim gets entang-led in the web, the lurker will start\
+  \ firing its darts at the prey. If the victim falls to paralyzation, the lurker\
+  \ will emerge from his ambush spot and web up the victim and drag him off to be\
+  \ consumed at a later date. If the victim is still standing after all darts are\
+  \ fired, the lurker will emerge and attack with fangs and hooks. If the lurker is\
+  \ losing badly in a battle, it will attempt to run off.If more than one lurker is\
+  \ encountered, it will be either a mating pair or a female and her young. These\
+  \ young lurkers have only half the hit dice of their parents and their poison intensity\
+  \ level is 8-12.|"
 ...

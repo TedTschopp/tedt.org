@@ -1,64 +1,68 @@
 ---
+ID: 71079
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: d180d000-18b7-45f3-8c79-345d2a690591
+date: '2023-02-09T16:46:31.477Z'
 title: Boomblossom
-GenericName: ''
-Name: Boomblossom
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW05
-Author: Zirra Scrohunter
-MCC Race: Plant
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: 2d10
-Morale: '7'
-Hit_Dice: '8'
-Armor: '9'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: 12/900/18
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '10'
-DX: '10'
-CN: '9'
-MS: '#N/A'
-CH: '14'
-IN: '#N/A'
-Brain-CPU Type: ''
-Attack_1: 2 Limb Strike (2)
-Attack_2: ''
-Attack_3: ''
-Mutations: Beguiling, Contact Poison Sap, Explosive Seeds, Force Field, Generation,
+creature_name_index: Boomblossom
+notes: ''
+genericname: ''
+creature_name: Boomblossom
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW05
+author: ''
+name: Zirra Scrohunter
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Monster
+number_appearing_dice: 2d10
+morale: '7'
+hit_dice: '8'
+armor: '9'
+control: ''
+sensors: ''
+power: ''
+land_speed: 12/900/18
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '10'
+dx: '10'
+cn: '9'
+ms: '#N/A'
+ch: '14'
+in: '#N/A'
+brain-cpu type: ''
+attack_1: 2 Limb Strike (2)
+attack_2: ''
+attack_3: ''
+mutations: Beguiling, Contact Poison Sap, Explosive Seeds, Force Field, Generation,
   Modified Vines (Manipulation Vines), Telekinesis, Telepathy, Thorns/Spikes (Thorns)
-Size: Tiny
-Size_Measurement: 180 to 250cm
-Frequency: Rare
-Organization: Branble of Rose Bushes
-Activity_Cycle: Day
-Diet: Minerals from soil
-Tech_Level: '1'
-Tech_Max: '6'
-Artifacts: ''
-Habitat: Swamps and thickets, marshy shores of streams, ponds, and lakes
-Base_Stock: Swamp Rose
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: These intelligent, mutated descendants of the Swamp Rose retain their
+size: Tiny
+size_measurement: 180 to 250cm
+frequency: Rare
+organization: Branble of Rose Bushes
+activity_cycle: Day
+diet: Minerals from soil
+tech_level: '1'
+tech_max: '6'
+artifacts: ''
+habitat: Swamps and thickets, marshy shores of streams, ponds, and lakes
+base_stock: Swamp Rose
+robot_classification: ''
+status: ''
+mission: ''
+description: These intelligent, mutated descendants of the Swamp Rose retain their
   blossoms (a dark rose- pink color) longer than their ancestors, keeping them from
   mid-spring until almost autumn. Other than that, they look like humanoid shaped
   plants.Boomblossoms will make use of any artifacts they have at hand in combat.
@@ -75,87 +79,124 @@ Description: These intelligent, mutated descendants of the Swamp Rose retain the
   use. They will often trade artifacts for items they consider more useful to them.
   When a boomblossom group becomes too large for the land to support them, a group
   will break away from the main group to form a new community.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Boomblossom
-Number_appearing: 2d10 (11)
-Number_appearing_Single: '11'
-Init: '+3'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Boomblossom (2d10 (11)): Init +3'
-PS_-_C: '10'
-DX_-_C: '10'
-CN_-_C: '9'
-MS_-_C: '#N/A'
-CH_-_C: '14'
-IN_-_C: '#N/A'
-Weapon: Natural Weapon Preferred
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '2'
-Plus_to_hit_and_damage_Melee_From_Stats: '0'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '2'
-Plus_to_Generic_Attack_from_Level: '2'
-Attack_1_Number_of_Attacks: '2'
-Attack_1_Attack_Name: Limb Strike
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '3'
-Attack_1_Bonus_to_Hit: '2'
-Attack_1_Bonus_to_Damage: '0'
-New_Attack_1: 2 x Limb Strike melee +2 (1d3)
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x limb strike
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Boomblossom
+number_appearing: 2d10 (11)
+number_appearing_single: '11'
+init: '+3'
+monster_name_xx_number_if_applicable_init_+-x: 'Boomblossom (2d10 (11)): Init +3'
+ps_-_c: '10'
+dx_-_c: '10'
+cn_-_c: '9'
+ms_-_c: '#N/A'
+ch_-_c: '14'
+in_-_c: '#N/A'
+weapon: Natural Weapon Preferred
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: ''
+plus_to_range: '2'
+plus_to_hit_and_damage_melee_from_stats: '0'
+plus_to_melee_from_level: ''
+plus_to_melee: '2'
+plus_to_generic_attack_from_level: '2'
+attack_1_number_of_attacks: '2'
+attack_1_attack_name: Limb Strike
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '3'
+attack_1_bonus_to_hit: '2'
+attack_1_bonus_to_damage: '0'
+new_attack_1: 2 x Limb Strike melee +2 (1d3)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x limb strike
   melee +2 (1d3)
-AC_xx: AC 19
-Effective_Class_Level: '3'
-New_Level: '6'
-New_Hit_Dice: HD 6D5
-New_HD_xdx_plus_minus: HD 6D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 18 each
-New_Hit_Points: '18'
-D6_Hitdice: '8'
-Total_GW_hit_points_plus_Constant: '48'
-MV_xx: MV 23'
-Walk: 23'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: '#N/A'
-Fort_Save: '0'
-Ref_Save: '0'
-Will: '#N/A'
-Normal_Text: '#N/A'
+ac_xx: AC 19
+effective_class_level: '3'
+new_level: '6'
+new_hit_dice: HD 6D5
+new_hd_xdx_plus_minus: HD 6D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 18 each
+new_hit_points: '18'
+d6_hitdice: '8'
+total_gw_hit_points_plus_constant: '48'
+mv_xx: MV 23'
+walk: 23'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: '#N/A'
+fort_save: '0'
+ref_save: '0'
+will: '#N/A'
+normal_text: '#N/A'
+description_output: "Description: These intelligent, mutated descendants of the Swamp\
+  \ Rose retain their blossoms (a dark rose- pink color) longer than their ancestors,\
+  \ keeping them from mid-spring until almost autumn. Other than that, they look like\
+  \ humanoid shaped plants.Boomblossoms will make use of any artifacts they have at\
+  \ hand in combat. They are by no means stupid, however, and understand there are\
+  \ times when it's better to not use technology. Whether or not they use artifacts,\
+  \ they often will use their beguiling power before entering combat.They communicate\
+  \ with each other (and other creatures) telepathically, and co-ordinate their actions\
+  \ so as to not get in each other's way. If, for some reason, they do not use artifacts,\
+  \ they are quite capable of handling themselves in combat, having thorns and contact\
+  \ poison sap in melee, and explosive seeds (which is how they got the name `boomblossoms')\
+  \ for ranged combat.Boomblossom seeds sprout in the spring and are nonsentient and\
+  \ immobile for their first year of life. In the spring of their second year, they\
+  \ become mobile and quickly learn the value of teamwork and of the power of Ancient\
+  \ artifacts, which they readily use. They will often trade artifacts for items they\
+  \ consider more useful to them. When a boomblossom group becomes too large for the\
+  \ land to support them, a group will break away from the main group to form a new\
+  \ community."
+final_output: '#N/A'
+players: "Boomblossom; '';Description: These intelligent, mutated descendants of the\
+  \ Swamp Rose retain their blossoms (a dark rose- pink color) longer than their ancestors,\
+  \ keeping them from mid-spring until almost autumn. Other than that, they look like\
+  \ humanoid shaped plants.Boomblossoms will make use of any artifacts they have at\
+  \ hand in combat. They are by no means stupid, however, and understand there are\
+  \ times when it's better to not use technology. Whether or not they use artifacts,\
+  \ they often will use their beguiling power before entering combat.They communicate\
+  \ with each other (and other creatures) telepathically, and co-ordinate their actions\
+  \ so as to not get in each other's way. If, for some reason, they do not use artifacts,\
+  \ they are quite capable of handling themselves in combat, having thorns and contact\
+  \ poison sap in melee, and explosive seeds (which is how they got the name `boomblossoms')\
+  \ for ranged combat.Boomblossom seeds sprout in the spring and are nonsentient and\
+  \ immobile for their first year of life. In the spring of their second year, they\
+  \ become mobile and quickly learn the value of teamwork and of the power of Ancient\
+  \ artifacts, which they readily use. They will often trade artifacts for items they\
+  \ consider more useful to them. When a boomblossom group becomes too large for the\
+  \ land to support them, a group will break away from the main group to form a new\
+  \ community.|"
 ...

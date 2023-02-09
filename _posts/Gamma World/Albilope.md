@@ -1,69 +1,73 @@
 ---
+ID: 71007
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: 752e4915-2353-4865-9a18-125eb45839a1
+date: '2023-02-09T16:46:31.476Z'
 title: Albilope
-GenericName: y
-Name: Albilope
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW02 - Famine in Far-Go
-Author: Michael Price
-MCC Race: Animal
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: 2d6
-Morale: '5'
-Hit_Dice: '6'
-Armor: '1'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: 21/1400/42
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '6'
-DX: '14'
-CN: '9'
-MS: '10'
-CH: '9'
-IN: '6'
-Brain-CPU Type: ''
-Attack_1: 1 Horn (12)
-Attack_2: 1 Bite (6)
-Attack_3: ''
-Mutations: Anti-Life Leech; Light Generation
-Size: Medium
-Size_Measurement: 1.5 Meters
-Frequency: Common
-Organization: ''
-Activity_Cycle: ''
-Diet: Omnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Temperate and Artic Plains
-Base_Stock: Antelope
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: This slenderly built creature is easily recognized because of its snowy
+creature_name_index: Albilope
+notes: ''
+genericname: y
+creature_name: Albilope
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW02 - Famine in Far-Go
+author: ''
+name: Michael Price
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: Monster
+number_appearing_dice: 2d6
+morale: '5'
+hit_dice: '6'
+armor: '1'
+control: ''
+sensors: ''
+power: ''
+land_speed: 21/1400/42
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '6'
+dx: '14'
+cn: '9'
+ms: '10'
+ch: '9'
+in: '6'
+brain-cpu type: ''
+attack_1: 1 Horn (12)
+attack_2: 1 Bite (6)
+attack_3: ''
+mutations: Anti-Life Leech; Light Generation
+size: Medium
+size_measurement: 1.5 Meters
+frequency: Common
+organization: ''
+activity_cycle: ''
+diet: Omnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Temperate and Artic Plains
+base_stock: Antelope
+robot_classification: ''
+status: ''
+mission: ''
+description: This slenderly built creature is easily recognized because of its snowy
   white fur and glowing pink eyes.The albilope,a descendent of the antelope,still
   has the general appearance of its fore-runner except for two noticeable changes;it
   is an albino and it has a unique two-pronged horn in the middle of its forehead.
-Equipment: ''
-Reactions: ''
-Behavior: The albino nature of this mutant resulted because of the anti-life leeching
+equipment: ''
+reactions: ''
+behavior: The albino nature of this mutant resulted because of the anti-life leeching
   power that developed, and it is believed that the alibilope is one of the first
   creatures to have evolved with this powerful ability.A thick fur appeared on mutants
   as a means of protecting themselves against both the cold and harmful radiation.
@@ -79,85 +83,150 @@ Behavior: The albino nature of this mutant resulted because of the anti-life lee
   but when hungry,they have been known to viciously attack vulnerable prey.Their great
   speed allows them to catch unsuspecting creatures,but more import-antly it permits
   them to escape most of the predators found in this area.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Albilope
-Number_appearing: 2d6 (7)
-Number_appearing_Single: '7'
-Init: '+3'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Albilope (2d6 (7)): Init +3'
-PS_-_C: '6'
-DX_-_C: '14'
-CN_-_C: '9'
-MS_-_C: '10'
-CH_-_C: '9'
-IN_-_C: '6'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '1'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '2'
-Plus_to_hit_and_damage_Melee_From_Stats: '-1'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '0'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: '1'
-Attack_1_Attack_Name: Horn
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '12'
-Attack_1_Bonus_to_Hit: '0'
-Attack_1_Bonus_to_Damage: '-1'
-New_Attack_1: Horn melee  (1d12-1)
-Attack_2_Number_of_Attacks: '1'
-Attack_2_Attack_Name: Bite
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '6'
-Attack_2_Bonus_to_Hit: '0'
-Attack_2_Bonus_to_Damage: '-1'
-New_Attack_2: Bite melee  (1d6-1)
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk horn melee  (1d12-1)
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Albilope
+number_appearing: 2d6 (7)
+number_appearing_single: '7'
+init: '+3'
+monster_name_xx_number_if_applicable_init_+-x: 'Albilope (2d6 (7)): Init +3'
+ps_-_c: '6'
+dx_-_c: '14'
+cn_-_c: '9'
+ms_-_c: '10'
+ch_-_c: '9'
+in_-_c: '6'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '2'
+plus_to_hit_and_damage_melee_from_stats: '-1'
+plus_to_melee_from_level: ''
+plus_to_melee: '0'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: '1'
+attack_1_attack_name: Horn
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '12'
+attack_1_bonus_to_hit: '0'
+attack_1_bonus_to_damage: '-1'
+new_attack_1: Horn melee  (1d12-1)
+attack_2_number_of_attacks: '1'
+attack_2_attack_name: Bite
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '6'
+attack_2_bonus_to_hit: '0'
+attack_2_bonus_to_damage: '-1'
+new_attack_2: Bite melee  (1d6-1)
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk horn melee  (1d12-1)
   and bite melee  (1d6-1)
-AC_xx: AC 11
-Effective_Class_Level: '2'
-New_Level: '3'
-New_Hit_Dice: HD 3D7
-New_HD_xdx_plus_minus: HD 3D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
-New_Hit_Points: '12'
-D6_Hitdice: '6'
-Total_GW_hit_points_plus_Constant: '36'
-MV_xx: MV 53'
-Walk: 53'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +1, Will +0
-Fort_Save: '0'
-Ref_Save: '1'
-Will: '0'
-Normal_Text: "Albilope (2d6 (7)): Init +3; atk horn melee  (1d12-1) and bite melee\
+ac_xx: AC 11
+effective_class_level: '2'
+new_level: '3'
+new_hit_dice: HD 3D7
+new_hd_xdx_plus_minus: HD 3D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
+new_hit_points: '12'
+d6_hitdice: '6'
+total_gw_hit_points_plus_constant: '36'
+mv_xx: MV 53'
+walk: 53'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will +0
+fort_save: '0'
+ref_save: '1'
+will: '0'
+normal_text: "Albilope (2d6 (7)): Init +3; atk horn melee  (1d12-1) and bite melee\
   \  (1d6-1); AC 11; HD 3D7 hp 12 each; MV 53' ; 1d20; SV Fort +0, Ref +1, Will +0"
+description_output: "Description: This slenderly built creature is easily recognized\
+  \ because of its snowy white fur and glowing pink eyes.The albilope,a descendent\
+  \ of the antelope,still has the general appearance of its fore-runner except for\
+  \ two noticeable changes;it is an albino and it has a unique two-pronged horn in\
+  \ the middle of its forehead.Behavior:The albino nature of this mutant resulted\
+  \ because of the anti-life leeching power that developed, and it is believed that\
+  \ the alibilope is one of the first creatures to have evolved with this powerful\
+  \ ability.A thick fur appeared on mutants as a means of protecting themselves against\
+  \ both the cold and harmful radiation. Albilopes are immune to cold attacks and\
+  \ their thick, white furry coat effectively doubles their constitution score (from\
+  \ 8 to 16) when determining the results of radiation exposure on the Radiation Matrix.\
+  \ In addition to its distinctive albino look,the Albilope possess a single deadly\
+  \ horn in the center of its forehead.This 30 centimeter tall Y-shaped horn has a\
+  \ saw toothed edge and is razor sharp.Any wounds delivered by the alibilope's horn\
+  \ will inflict 3-12 points of damage on the round it hits and will result in 1-4\
+  \ more points of damage each round after-ward due to the excessive bleeding caused\
+  \ by the cut. The bleeding can be stopped if the wound is attended to and properly\
+  \ treated. Albilopes are omnivores that usually eat plants, but when hungry,they\
+  \ have been known to viciously attack vulnerable prey.Their great speed allows them\
+  \ to catch unsuspecting creatures,but more import-antly it permits them to escape\
+  \ most of the predators found in this area."
+final_output: "Albilope (2d6 (7)): Init +3; atk horn melee  (1d12-1) and bite melee\
+  \  (1d6-1); AC 11; HD 3D7 hp 12 each; MV 53' ; 1d20; SV Fort +0, Ref +1, Will +0Anti-Life\
+  \ Leech; Light GenerationDescription: This slenderly built creature is easily recognized\
+  \ because of its snowy white fur and glowing pink eyes.The albilope,a descendent\
+  \ of the antelope,still has the general appearance of its fore-runner except for\
+  \ two noticeable changes;it is an albino and it has a unique two-pronged horn in\
+  \ the middle of its forehead.Behavior:The albino nature of this mutant resulted\
+  \ because of the anti-life leeching power that developed, and it is believed that\
+  \ the alibilope is one of the first creatures to have evolved with this powerful\
+  \ ability.A thick fur appeared on mutants as a means of protecting themselves against\
+  \ both the cold and harmful radiation. Albilopes are immune to cold attacks and\
+  \ their thick, white furry coat effectively doubles their constitution score (from\
+  \ 8 to 16) when determining the results of radiation exposure on the Radiation Matrix.\
+  \ In addition to its distinctive albino look,the Albilope possess a single deadly\
+  \ horn in the center of its forehead.This 30 centimeter tall Y-shaped horn has a\
+  \ saw toothed edge and is razor sharp.Any wounds delivered by the alibilope's horn\
+  \ will inflict 3-12 points of damage on the round it hits and will result in 1-4\
+  \ more points of damage each round after-ward due to the excessive bleeding caused\
+  \ by the cut. The bleeding can be stopped if the wound is attended to and properly\
+  \ treated. Albilopes are omnivores that usually eat plants, but when hungry,they\
+  \ have been known to viciously attack vulnerable prey.Their great speed allows them\
+  \ to catch unsuspecting creatures,but more import-antly it permits them to escape\
+  \ most of the predators found in this area."
+players: "Albilope; '';Description: This slenderly built creature is easily recognized\
+  \ because of its snowy white fur and glowing pink eyes.The albilope,a descendent\
+  \ of the antelope,still has the general appearance of its fore-runner except for\
+  \ two noticeable changes;it is an albino and it has a unique two-pronged horn in\
+  \ the middle of its forehead.Behavior:The albino nature of this mutant resulted\
+  \ because of the anti-life leeching power that developed, and it is believed that\
+  \ the alibilope is one of the first creatures to have evolved with this powerful\
+  \ ability.A thick fur appeared on mutants as a means of protecting themselves against\
+  \ both the cold and harmful radiation. Albilopes are immune to cold attacks and\
+  \ their thick, white furry coat effectively doubles their constitution score (from\
+  \ 8 to 16) when determining the results of radiation exposure on the Radiation Matrix.\
+  \ In addition to its distinctive albino look,the Albilope possess a single deadly\
+  \ horn in the center of its forehead.This 30 centimeter tall Y-shaped horn has a\
+  \ saw toothed edge and is razor sharp.Any wounds delivered by the alibilope's horn\
+  \ will inflict 3-12 points of damage on the round it hits and will result in 1-4\
+  \ more points of damage each round after-ward due to the excessive bleeding caused\
+  \ by the cut. The bleeding can be stopped if the wound is attended to and properly\
+  \ treated. Albilopes are omnivores that usually eat plants, but when hungry,they\
+  \ have been known to viciously attack vulnerable prey.Their great speed allows them\
+  \ to catch unsuspecting creatures,but more import-antly it permits them to escape\
+  \ most of the predators found in this area.|"
 ...

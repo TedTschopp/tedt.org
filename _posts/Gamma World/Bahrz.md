@@ -1,72 +1,76 @@
 ---
+ID: 71041
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: 234249e9-794b-498f-a76b-22a911cbb873
+date: '2023-02-09T16:46:31.476Z'
 title: Bahrz
-GenericName: ''
-Name: Bahrz
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: Dirk T. Collins
-MCC Race: Animal
-Role_In_Gamma_World: ''
-Number_Appearing_Dice: 1d4
-Morale: '7'
-Hit_Dice: '6'
-Armor: '2'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: 6/600/12
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '16'
-DX: '9'
-CN: '10'
-MS: '12'
-CH: '7'
-IN: '16'
-Brain-CPU Type: ''
-Attack_1: 2 Claws (4)
-Attack_2: 1 Bite (6)
-Attack_3: 1 Hug (18)
-Mutations: Regeneration; Light Generation; Chameleon Powers; Partial Carapace; Mental
+creature_name_index: Bahrz
+notes: ''
+genericname: ''
+creature_name: Bahrz
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: Dirk T. Collins
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: ''
+number_appearing_dice: 1d4
+morale: '7'
+hit_dice: '6'
+armor: '2'
+control: ''
+sensors: ''
+power: ''
+land_speed: 6/600/12
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '16'
+dx: '9'
+cn: '10'
+ms: '12'
+ch: '7'
+in: '16'
+brain-cpu type: ''
+attack_1: 2 Claws (4)
+attack_2: 1 Bite (6)
+attack_3: 1 Hug (18)
+mutations: Regeneration; Light Generation; Chameleon Powers; Partial Carapace; Mental
   Control; Heightened Intelligence x2; Teleportation
-Size: Large
-Size_Measurement: 2m
-Frequency: Uncommon
-Organization: ''
-Activity_Cycle: ''
-Diet: Omnivore
-Tech_Level: '2'
-Tech_Max: '4'
-Artifacts: ''
-Habitat: Mountains and Forests
-Base_Stock: Brown Bear
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: There is always a 40% chance there are 1d4 additional bears in the immediate
+size: Large
+size_measurement: 2m
+frequency: Uncommon
+organization: ''
+activity_cycle: ''
+diet: Omnivore
+tech_level: '2'
+tech_max: '4'
+artifacts: ''
+habitat: Mountains and Forests
+base_stock: Brown Bear
+robot_classification: ''
+status: ''
+mission: ''
+description: There is always a 40% chance there are 1d4 additional bears in the immediate
   vicinity of a Bahrz as the Bahrz has taken upon itself the task of serving as a
   protector for the normal bear population. When encountering any bears in the Rocky
   Mountains, there is also a 10% chance one or more Bahrz are present as well. Bahrz
   sometimes will go into population centers to trade information for goods and services.
   Bahrz are especially aggressive with hunters and trappers.
-Equipment: ''
-Reactions: ''
-Behavior: These Intelligent black bears are fearsome opponents if provoked with the
+equipment: ''
+reactions: ''
+behavior: These Intelligent black bears are fearsome opponents if provoked with the
   ability to camouflage itself and blend into the surrounding terrain, and with the
   ability to regenerate up to 30 hit points a day. The Bahrz have a protective armored
   shell around their ribcage and upper back as well. In Combat the Bahrz preferred
@@ -75,86 +79,133 @@ Behavior: These Intelligent black bears are fearsome opponents if provoked with 
   teleport to their den. If surprised, they can still attack as a traditional bear
   doing 1d4, 1d4, 1d6 of damage (Claw, Claw, Bite) plus a 3d6 crush hug if both foreclaws
   hit.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Bahrz
-Number_appearing: 1d4 (2)
-Number_appearing_Single: '2'
-Init: '+2'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Bahrz (1d4 (2)): Init +2'
-PS_-_C: '16'
-DX_-_C: '9'
-CN_-_C: '10'
-MS_-_C: '12'
-CH_-_C: '7'
-IN_-_C: '16'
-Weapon: Natural Weapon Preferred
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '1'
-Plus_to_hit_and_damage_Melee_From_Stats: '2'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '3'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: '2'
-Attack_1_Attack_Name: Claws
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '4'
-Attack_1_Bonus_to_Hit: '3'
-Attack_1_Bonus_to_Damage: '2'
-New_Attack_1: 2 x Claws melee +3 (1d4+2)
-Attack_2_Number_of_Attacks: '1'
-Attack_2_Attack_Name: Bite
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '6'
-Attack_2_Bonus_to_Hit: '3'
-Attack_2_Bonus_to_Damage: '2'
-New_Attack_2: Bite melee +3 (1d6+2)
-Attack_3_Number_of_Attacks: '1'
-Attack_3_Attack_Name: Hug
-Attack_3_Type: melee
-Attack_3_Range: ''
-Attack_3_Attack_Dice: '16'
-Attack_3_Bonus_to_Hit: '3'
-Attack_3_Bonus_to_Damage: '2'
-New_Attack_3: Hug melee +3 (1d16+2)
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x claws melee
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Bahrz
+number_appearing: 1d4 (2)
+number_appearing_single: '2'
+init: '+2'
+monster_name_xx_number_if_applicable_init_+-x: 'Bahrz (1d4 (2)): Init +2'
+ps_-_c: '16'
+dx_-_c: '9'
+cn_-_c: '10'
+ms_-_c: '12'
+ch_-_c: '7'
+in_-_c: '16'
+weapon: Natural Weapon Preferred
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: ''
+plus_to_range: '1'
+plus_to_hit_and_damage_melee_from_stats: '2'
+plus_to_melee_from_level: ''
+plus_to_melee: '3'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: '2'
+attack_1_attack_name: Claws
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '4'
+attack_1_bonus_to_hit: '3'
+attack_1_bonus_to_damage: '2'
+new_attack_1: 2 x Claws melee +3 (1d4+2)
+attack_2_number_of_attacks: '1'
+attack_2_attack_name: Bite
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '6'
+attack_2_bonus_to_hit: '3'
+attack_2_bonus_to_damage: '2'
+new_attack_2: Bite melee +3 (1d6+2)
+attack_3_number_of_attacks: '1'
+attack_3_attack_name: Hug
+attack_3_type: melee
+attack_3_range: ''
+attack_3_attack_dice: '16'
+attack_3_bonus_to_hit: '3'
+attack_3_bonus_to_damage: '2'
+new_attack_3: Hug melee +3 (1d16+2)
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x claws melee
   +3 (1d4+2) and bite melee +3 (1d6+2) and hug melee +3 (1d16+2)
-AC_xx: AC 12
-Effective_Class_Level: '2'
-New_Level: '3'
-New_Hit_Dice: HD 3D7
-New_HD_xdx_plus_minus: HD 3D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
-New_Hit_Points: '12'
-D6_Hitdice: '6'
-Total_GW_hit_points_plus_Constant: '36'
-MV_xx: MV 15'
-Walk: 15'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +0, Will +0
-Fort_Save: '0'
-Ref_Save: '0'
-Will: '0'
-Normal_Text: "Bahrz (1d4 (2)): Init +2; atk 2 x claws melee +3 (1d4+2) and bite melee\
+ac_xx: AC 12
+effective_class_level: '2'
+new_level: '3'
+new_hit_dice: HD 3D7
+new_hd_xdx_plus_minus: HD 3D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
+new_hit_points: '12'
+d6_hitdice: '6'
+total_gw_hit_points_plus_constant: '36'
+mv_xx: MV 15'
+walk: 15'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will +0
+fort_save: '0'
+ref_save: '0'
+will: '0'
+normal_text: "Bahrz (1d4 (2)): Init +2; atk 2 x claws melee +3 (1d4+2) and bite melee\
   \ +3 (1d6+2) and hug melee +3 (1d16+2); AC 12; HD 3D7 hp 12 each; MV 15' ; 1d20;\
   \ SV Fort +0, Ref +0, Will +0"
+description_output: 'Description: There is always a 40% chance there are 1d4 additional
+  bears in the immediate vicinity of a Bahrz as the Bahrz has taken upon itself the
+  task of serving as a protector for the normal bear population. When encountering
+  any bears in the Rocky Mountains, there is also a 10% chance one or more Bahrz are
+  present as well. Bahrz sometimes will go into population centers to trade information
+  for goods and services. Bahrz are especially aggressive with hunters and trappers.Behavior:These
+  Intelligent black bears are fearsome opponents if provoked with the ability to camouflage
+  itself and blend into the surrounding terrain, and with the ability to regenerate
+  up to 30 hit points a day. The Bahrz have a protective armored shell around their
+  ribcage and upper back as well. In Combat the Bahrz preferred attack method is to
+  generate a light flash, then select one target that still has vision for mental
+  control. If threatened with death the Bahrz will automatically teleport to their
+  den. If surprised, they can still attack as a traditional bear doing 1d4, 1d4, 1d6
+  of damage (Claw, Claw, Bite) plus a 3d6 crush hug if both foreclaws hit.'
+final_output: "Bahrz (1d4 (2)): Init +2; atk 2 x claws melee +3 (1d4+2) and bite melee\
+  \ +3 (1d6+2) and hug melee +3 (1d16+2); AC 12; HD 3D7 hp 12 each; MV 15' ; 1d20;\
+  \ SV Fort +0, Ref +0, Will +0Regeneration; Light Generation; Chameleon Powers; Partial\
+  \ Carapace; Mental Control; Heightened Intelligence x2; TeleportationDescription:\
+  \ There is always a 40% chance there are 1d4 additional bears in the immediate vicinity\
+  \ of a Bahrz as the Bahrz has taken upon itself the task of serving as a protector\
+  \ for the normal bear population. When encountering any bears in the Rocky Mountains,\
+  \ there is also a 10% chance one or more Bahrz are present as well. Bahrz sometimes\
+  \ will go into population centers to trade information for goods and services. Bahrz\
+  \ are especially aggressive with hunters and trappers.Behavior:These Intelligent\
+  \ black bears are fearsome opponents if provoked with the ability to camouflage\
+  \ itself and blend into the surrounding terrain, and with the ability to regenerate\
+  \ up to 30 hit points a day. The Bahrz have a protective armored shell around their\
+  \ ribcage and upper back as well. In Combat the Bahrz preferred attack method is\
+  \ to generate a light flash, then select one target that still has vision for mental\
+  \ control. If threatened with death the Bahrz will automatically teleport to their\
+  \ den. If surprised, they can still attack as a traditional bear doing 1d4, 1d4,\
+  \ 1d6 of damage (Claw, Claw, Bite) plus a 3d6 crush hug if both foreclaws hit."
+players: "Bahrz; '';Description: There is always a 40% chance there are 1d4 additional\
+  \ bears in the immediate vicinity of a Bahrz as the Bahrz has taken upon itself\
+  \ the task of serving as a protector for the normal bear population. When encountering\
+  \ any bears in the Rocky Mountains, there is also a 10% chance one or more Bahrz\
+  \ are present as well. Bahrz sometimes will go into population centers to trade\
+  \ information for goods and services. Bahrz are especially aggressive with hunters\
+  \ and trappers.Behavior:These Intelligent black bears are fearsome opponents if\
+  \ provoked with the ability to camouflage itself and blend into the surrounding\
+  \ terrain, and with the ability to regenerate up to 30 hit points a day. The Bahrz\
+  \ have a protective armored shell around their ribcage and upper back as well. In\
+  \ Combat the Bahrz preferred attack method is to generate a light flash, then select\
+  \ one target that still has vision for mental control. If threatened with death\
+  \ the Bahrz will automatically teleport to their den. If surprised, they can still\
+  \ attack as a traditional bear doing 1d4, 1d4, 1d6 of damage (Claw, Claw, Bite)\
+  \ plus a 3d6 crush hug if both foreclaws hit. |"
 ...

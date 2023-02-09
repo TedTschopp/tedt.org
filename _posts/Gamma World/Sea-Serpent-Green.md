@@ -1,64 +1,68 @@
 ---
+ID: 71528
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.843Z'
+categories: '{Gamma World, Beastiary}'
+guid: 0908f7e1-ef48-4029-a131-038dc2bfeee2
+date: '2023-02-09T16:46:31.483Z'
 title: Sea Serpent, Green
-GenericName: ''
-Name: Sea Serpent, Green
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: Derek M. Holland
-MCC Race: Animal
-Role_In_Gamma_World: ''
-Number_Appearing_Dice: 1d2
-Morale: '8'
-Hit_Dice: '64'
-Armor: '7'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: ''
-Air_Speed: ''
-Water_Speed: 12/900/18
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '61'
-DX: '13'
-CN: '20'
-MS: '11'
-CH: '2'
-IN: '3'
-Brain-CPU Type: ''
-Attack_1: 1 bite (40)
-Attack_2: 1 tail (30)
-Attack_3: 1 Constriction (96)
-Mutations: Kinetic absorption; Hands (eyes) of power (gravity pulse); Regen- eration;
+creature_name_index: Sea Serpent, Green
+notes: ''
+genericname: ''
+creature_name: Sea Serpent, Green
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: Derek M. Holland
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: ''
+number_appearing_dice: 1d2
+morale: '8'
+hit_dice: '64'
+armor: '7'
+control: ''
+sensors: ''
+power: ''
+land_speed: ''
+air_speed: ''
+water_speed: 12/900/18
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '61'
+dx: '13'
+cn: '20'
+ms: '11'
+ch: '2'
+in: '3'
+brain-cpu type: ''
+attack_1: 1 bite (40)
+attack_2: 1 tail (30)
+attack_3: 1 Constriction (96)
+mutations: Kinetic absorption; Hands (eyes) of power (gravity pulse); Regen- eration;
   Sonic Blast; Sonar; Duality; Magnetic Control; Telekinesis; Fear Generation
-Size: Gargantuan
-Size_Measurement: 30m
-Frequency: Very Rare
-Organization: ''
-Activity_Cycle: ''
-Diet: Carnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Ocean / Large Lakes
-Base_Stock: Eel
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: This serpent is a mutated eel. Other than it size, it appears no different.It
+size: Gargantuan
+size_measurement: 30m
+frequency: Very Rare
+organization: ''
+activity_cycle: ''
+diet: Carnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Ocean / Large Lakes
+base_stock: Eel
+robot_classification: ''
+status: ''
+mission: ''
+description: This serpent is a mutated eel. Other than it size, it appears no different.It
   hunts by sonar. If attacking another creature, the serpent uses its eyes to slow
   the prey, then its bite and tail whip to slay the prey. When attacking ships, the
   green slows the ship, then uses magnetic control and TK to unarm the crew. Next
@@ -68,90 +72,124 @@ Description: This serpent is a mutated eel. Other than it size, it appears no di
   feeding. If it fails a moral check, the serpent generates fear and flees.They breed
   in the late summer at depths of 40-60 feet. They rarely come to the serface and
   will attack ships only if starving.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Sea Serpent, Green
-Number_appearing: 1d2 (1)
-Number_appearing_Single: '1'
-Init: '+11'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Sea Serpent, Green (1d2 (1)): Init
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Sea Serpent, Green
+number_appearing: 1d2 (1)
+number_appearing_single: '1'
+init: '+11'
+monster_name_xx_number_if_applicable_init_+-x: 'Sea Serpent, Green (1d2 (1)): Init
   +11'
-PS_-_C: '61'
-DX_-_C: '13'
-CN_-_C: '20'
-MS_-_C: '11'
-CH_-_C: '2'
-IN_-_C: '3'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '1'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '6'
-Plus_to_hit_and_damage_Melee_From_Stats: '6'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '11'
-Plus_to_Generic_Attack_from_Level: '5'
-Attack_1_Number_of_Attacks: '1'
-Attack_1_Attack_Name: bite
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '30'
-Attack_1_Bonus_to_Hit: '11'
-Attack_1_Bonus_to_Damage: '6'
-New_Attack_1: bite melee +11 (1d30+6)
-Attack_2_Number_of_Attacks: '1'
-Attack_2_Attack_Name: tail
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '30'
-Attack_2_Bonus_to_Hit: '11'
-Attack_2_Bonus_to_Damage: '6'
-New_Attack_2: tail melee +11 (1d30+6)
-Attack_3_Number_of_Attacks: '1'
-Attack_3_Attack_Name: Constriction
-Attack_3_Type: melee
-Attack_3_Range: ''
-Attack_3_Attack_Dice: '30'
-Attack_3_Bonus_to_Hit: '11'
-Attack_3_Bonus_to_Damage: '6'
-New_Attack_3: Constriction melee +11 (1d30+6)
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk bite melee +11
+ps_-_c: '61'
+dx_-_c: '13'
+cn_-_c: '20'
+ms_-_c: '11'
+ch_-_c: '2'
+in_-_c: '3'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '6'
+plus_to_hit_and_damage_melee_from_stats: '6'
+plus_to_melee_from_level: ''
+plus_to_melee: '11'
+plus_to_generic_attack_from_level: '5'
+attack_1_number_of_attacks: '1'
+attack_1_attack_name: bite
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '30'
+attack_1_bonus_to_hit: '11'
+attack_1_bonus_to_damage: '6'
+new_attack_1: bite melee +11 (1d30+6)
+attack_2_number_of_attacks: '1'
+attack_2_attack_name: tail
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '30'
+attack_2_bonus_to_hit: '11'
+attack_2_bonus_to_damage: '6'
+new_attack_2: tail melee +11 (1d30+6)
+attack_3_number_of_attacks: '1'
+attack_3_attack_name: Constriction
+attack_3_type: melee
+attack_3_range: ''
+attack_3_attack_dice: '30'
+attack_3_bonus_to_hit: '11'
+attack_3_bonus_to_damage: '6'
+new_attack_3: Constriction melee +11 (1d30+6)
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk bite melee +11
   (1d30+6) and tail melee +11 (1d30+6) and constriction melee +11 (1d30+6)
-AC_xx: AC 17
-Effective_Class_Level: '10'
-New_Level: '34'
-New_Hit_Dice: HD 34D7
-New_HD_xdx_plus_minus: HD 34D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 136
-New_Hit_Points: '136'
-D6_Hitdice: '64'
-Total_GW_hit_points_plus_Constant: '384'
-MV_xx: MV Swim 23'
-Walk: ''
-Fly: ''
-Swim: Swim 23'
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20+1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +4, Ref +1, Will +0
-Fort_Save: '4'
-Ref_Save: '1'
-Will: '0'
-Normal_Text: "Sea Serpent, Green (1d2 (1)): Init +11; atk bite melee +11 (1d30+6)\
+ac_xx: AC 17
+effective_class_level: '10'
+new_level: '34'
+new_hit_dice: HD 34D7
+new_hd_xdx_plus_minus: HD 34D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 136
+new_hit_points: '136'
+d6_hitdice: '64'
+total_gw_hit_points_plus_constant: '384'
+mv_xx: MV Swim 23'
+walk: ''
+fly: ''
+swim: Swim 23'
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20+1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +4, Ref +1, Will +0
+fort_save: '4'
+ref_save: '1'
+will: '0'
+normal_text: "Sea Serpent, Green (1d2 (1)): Init +11; atk bite melee +11 (1d30+6)\
   \ and tail melee +11 (1d30+6) and constriction melee +11 (1d30+6); AC 17; HD 34D7\
   \ hp 136; MV Swim 23' ; 1d20+1d20; SV Fort +4, Ref +1, Will +0"
+description_output: 'Description: This serpent is a mutated eel. Other than it size,
+  it appears no different.It hunts by sonar. If attacking another creature, the serpent
+  uses its eyes to slow the prey, then its bite and tail whip to slay the prey. When
+  attacking ships, the green slows the ship, then uses magnetic control and TK to
+  unarm the crew. Next it activates kinetic absorption, roars at the ship nand constricts
+  it. The ship must be made of wodd and be between 4 and 8 meters in lenght for constriction
+  to be successful. After the ship sinks, the serpent bites the whole crew to death
+  before feeding. If it fails a moral check, the serpent generates fear and flees.They
+  breed in the late summer at depths of 40-60 feet. They rarely come to the serface
+  and will attack ships only if starving.'
+final_output: "Sea Serpent, Green (1d2 (1)): Init +11; atk bite melee +11 (1d30+6)\
+  \ and tail melee +11 (1d30+6) and constriction melee +11 (1d30+6); AC 17; HD 34D7\
+  \ hp 136; MV Swim 23' ; 1d20+1d20; SV Fort +4, Ref +1, Will +0Kinetic absorption;\
+  \ Hands (eyes) of power (gravity pulse); Regen- eration; Sonic Blast; Sonar; Duality;\
+  \ Magnetic Control; Telekinesis; Fear GenerationDescription: This serpent is a mutated\
+  \ eel. Other than it size, it appears no different.It hunts by sonar. If attacking\
+  \ another creature, the serpent uses its eyes to slow the prey, then its bite and\
+  \ tail whip to slay the prey. When attacking ships, the green slows the ship, then\
+  \ uses magnetic control and TK to unarm the crew. Next it activates kinetic absorption,\
+  \ roars at the ship nand constricts it. The ship must be made of wodd and be between\
+  \ 4 and 8 meters in lenght for constriction to be successful. After the ship sinks,\
+  \ the serpent bites the whole crew to death before feeding. If it fails a moral\
+  \ check, the serpent generates fear and flees.They breed in the late summer at depths\
+  \ of 40-60 feet. They rarely come to the serface and will attack ships only if starving."
+players: "Sea Serpent, Green; '';Description: This serpent is a mutated eel. Other\
+  \ than it size, it appears no different.It hunts by sonar. If attacking another\
+  \ creature, the serpent uses its eyes to slow the prey, then its bite and tail whip\
+  \ to slay the prey. When attacking ships, the green slows the ship, then uses magnetic\
+  \ control and TK to unarm the crew. Next it activates kinetic absorption, roars\
+  \ at the ship nand constricts it. The ship must be made of wodd and be between 4\
+  \ and 8 meters in lenght for constriction to be successful. After the ship sinks,\
+  \ the serpent bites the whole crew to death before feeding. If it fails a moral\
+  \ check, the serpent generates fear and flees.They breed in the late summer at depths\
+  \ of 40-60 feet. They rarely come to the serface and will attack ships only if starving.|"
 ...

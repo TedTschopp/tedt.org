@@ -1,149 +1,170 @@
 ---
+ID: 71659
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.844Z'
+categories: '{Gamma World, Beastiary}'
+guid: ad3821b5-0650-4fc3-941f-d8220860d3e5
+date: '2023-02-09T16:46:31.484Z'
 title: Trap Worm
-GenericName: ''
-Name: Trap Worm
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: ''
-MCC Race: Animal
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: '1'
-Morale: '5'
-Hit_Dice: '12'
-Armor: '8'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: ''
-Air_Speed: ''
-Water_Speed: 4/400/6
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '16'
-DX: '15'
-CN: '12'
-MS: '1'
-CH: '1'
-IN: '1'
-Brain-CPU Type: ''
-Attack_1: 12 Tentacles (4)
-Attack_2: 1 bite (10)
-Attack_3: ''
-Mutations: None
-Size: Large
-Size_Measurement: 4-6 Meters long
-Frequency: Rare
-Organization: ''
-Activity_Cycle: ''
-Diet: Carnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Oceans
-Base_Stock: Worm
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: These worms have 12 tentacles that extend from around the mouth. They
+creature_name_index: Trap Worm
+notes: ''
+genericname: ''
+creature_name: Trap Worm
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: ''
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: Monster
+number_appearing_dice: '1'
+morale: '5'
+hit_dice: '12'
+armor: '8'
+control: ''
+sensors: ''
+power: ''
+land_speed: ''
+air_speed: ''
+water_speed: 4/400/6
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '16'
+dx: '15'
+cn: '12'
+ms: '1'
+ch: '1'
+in: '1'
+brain-cpu type: ''
+attack_1: 12 Tentacles (4)
+attack_2: 1 bite (10)
+attack_3: ''
+mutations: None
+size: Large
+size_measurement: 4-6 Meters long
+frequency: Rare
+organization: ''
+activity_cycle: ''
+diet: Carnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Oceans
+base_stock: Worm
+robot_classification: ''
+status: ''
+mission: ''
+description: These worms have 12 tentacles that extend from around the mouth. They
   dig a burrow in the coral and lay the tentacles out in a circle.
-Equipment: ''
-Reactions: ''
-Behavior: When suitable prey (10-45 Kg) swims over or comes in contact with a tentacle,
+equipment: ''
+reactions: ''
+behavior: When suitable prey (10-45 Kg) swims over or comes in contact with a tentacle,
   it attempts to grasp the prey and draw it to the mouth (which takes 3 rounds). The
   worm is 4 to 6 meters long and can change color.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Trap Worm
-Number_appearing: '1'
-Number_appearing_Single: '1'
-Init: '+4'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Trap Worm (1): Init +4'
-PS_-_C: '16'
-DX_-_C: '15'
-CN_-_C: '12'
-MS_-_C: '1'
-CH_-_C: '1'
-IN_-_C: '1'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '1'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '3'
-Plus_to_hit_and_damage_Melee_From_Stats: '2'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '4'
-Plus_to_Generic_Attack_from_Level: '2'
-Attack_1_Number_of_Attacks: '12'
-Attack_1_Attack_Name: Tentacles
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '4'
-Attack_1_Bonus_to_Hit: '4'
-Attack_1_Bonus_to_Damage: '2'
-New_Attack_1: 12 x Tentacles melee +4 (1d4+2)
-Attack_2_Number_of_Attacks: '1'
-Attack_2_Attack_Name: bite
-Attack_2_Type: melee
-Attack_2_Range: ''
-Attack_2_Attack_Dice: '10'
-Attack_2_Bonus_to_Hit: '4'
-Attack_2_Bonus_to_Damage: '2'
-New_Attack_2: bite melee +4 (1d10+2)
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 12 x tentacles
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Trap Worm
+number_appearing: '1'
+number_appearing_single: '1'
+init: '+4'
+monster_name_xx_number_if_applicable_init_+-x: 'Trap Worm (1): Init +4'
+ps_-_c: '16'
+dx_-_c: '15'
+cn_-_c: '12'
+ms_-_c: '1'
+ch_-_c: '1'
+in_-_c: '1'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '3'
+plus_to_hit_and_damage_melee_from_stats: '2'
+plus_to_melee_from_level: ''
+plus_to_melee: '4'
+plus_to_generic_attack_from_level: '2'
+attack_1_number_of_attacks: '12'
+attack_1_attack_name: Tentacles
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '4'
+attack_1_bonus_to_hit: '4'
+attack_1_bonus_to_damage: '2'
+new_attack_1: 12 x Tentacles melee +4 (1d4+2)
+attack_2_number_of_attacks: '1'
+attack_2_attack_name: bite
+attack_2_type: melee
+attack_2_range: ''
+attack_2_attack_dice: '10'
+attack_2_bonus_to_hit: '4'
+attack_2_bonus_to_damage: '2'
+new_attack_2: bite melee +4 (1d10+2)
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 12 x tentacles
   melee +4 (1d4+2) and bite melee +4 (1d10+2)
-AC_xx: AC 18
-Effective_Class_Level: '3'
-New_Level: '6'
-New_Hit_Dice: HD 6D7
-New_HD_xdx_plus_minus: HD 6D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 24
-New_Hit_Points: '24'
-D6_Hitdice: '12'
-Total_GW_hit_points_plus_Constant: '72'
-MV_xx: MV Swim 8'
-Walk: ''
-Fly: ''
-Swim: Swim 8'
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +1, Will -3
-Fort_Save: '0'
-Ref_Save: '1'
-Will: '-3'
-Normal_Text: "Trap Worm (1): Init +4; atk 12 x tentacles melee +4 (1d4+2) and bite\
+ac_xx: AC 18
+effective_class_level: '3'
+new_level: '6'
+new_hit_dice: HD 6D7
+new_hd_xdx_plus_minus: HD 6D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 24
+new_hit_points: '24'
+d6_hitdice: '12'
+total_gw_hit_points_plus_constant: '72'
+mv_xx: MV Swim 8'
+walk: ''
+fly: ''
+swim: Swim 8'
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will -3
+fort_save: '0'
+ref_save: '1'
+will: '-3'
+normal_text: "Trap Worm (1): Init +4; atk 12 x tentacles melee +4 (1d4+2) and bite\
   \ melee +4 (1d10+2); AC 18; HD 6D7 hp 24; MV Swim 8' ; 1d20; SV Fort +0, Ref +1,\
   \ Will -3"
+description_output: 'Description: These worms have 12 tentacles that extend from around
+  the mouth. They dig a burrow in the coral and lay the tentacles out in a circle.Behavior:When
+  suitable prey (10-45 Kg) swims over or comes in contact with a tentacle, it attempts
+  to grasp the prey and draw it to the mouth (which takes 3 rounds). The worm is 4
+  to 6 meters long and can change color.'
+final_output: "Trap Worm (1): Init +4; atk 12 x tentacles melee +4 (1d4+2) and bite\
+  \ melee +4 (1d10+2); AC 18; HD 6D7 hp 24; MV Swim 8' ; 1d20; SV Fort +0, Ref +1,\
+  \ Will -3NoneDescription: These worms have 12 tentacles that extend from around\
+  \ the mouth. They dig a burrow in the coral and lay the tentacles out in a circle.Behavior:When\
+  \ suitable prey (10-45 Kg) swims over or comes in contact with a tentacle, it attempts\
+  \ to grasp the prey and draw it to the mouth (which takes 3 rounds). The worm is\
+  \ 4 to 6 meters long and can change color."
+players: "Trap Worm; '';Description: These worms have 12 tentacles that extend from\
+  \ around the mouth. They dig a burrow in the coral and lay the tentacles out in\
+  \ a circle.Behavior:When suitable prey (10-45 Kg) swims over or comes in contact\
+  \ with a tentacle, it attempts to grasp the prey and draw it to the mouth (which\
+  \ takes 3 rounds). The worm is 4 to 6 meters long and can change color.|"
 ...

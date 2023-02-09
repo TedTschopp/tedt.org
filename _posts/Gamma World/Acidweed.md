@@ -1,154 +1,184 @@
 ---
+ID: 71002
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
+categories: '{Gamma World, Beastiary}'
+guid: 8642d578-7e20-4407-b7a2-8c54c7d1f3a5
+date: '2023-02-09T16:46:31.476Z'
 title: Acidweed
-GenericName: Yes
-Name: Acidweed
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: Derek M. Holland
-MCC Race: Plant
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: 1d3
-Morale: '10'
-Hit_Dice: '8'
-Armor: '5'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '0'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '0'
-DX: '0'
-CN: '10'
-MS: '14'
-CH: '0'
-IN: '2'
-Brain-CPU Type: ''
-Attack_1: 2 Thorns (6)
-Attack_2: ''
-Attack_3: ''
-Mutations: Gas Generation (burning), Dissolving Juices- Continuously produces dissolving
+creature_name_index: Acidweed
+notes: ''
+genericname: Yes
+creature_name: Acidweed
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: Derek M. Holland
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Monster
+number_appearing_dice: 1d3
+morale: '10'
+hit_dice: '8'
+armor: '5'
+control: ''
+sensors: ''
+power: ''
+land_speed: '0'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '0'
+dx: '0'
+cn: '10'
+ms: '14'
+ch: '0'
+in: '2'
+brain-cpu type: ''
+attack_1: 2 Thorns (6)
+attack_2: ''
+attack_3: ''
+mutations: Gas Generation (burning), Dissolving Juices- Continuously produces dissolving
   juices, Thorns, Attraction Odor [D], Fruit (acid berries 3d6 pts of dmg/berry 2-12
   berries/plant), Immunity (acids), Phobia[D] (fire), Illusion Generation - Unlimited
   use of Illusion
-Size: Small
-Size_Measurement: 1.3 Meters Tall
-Frequency: Uncommon
-Organization: Related Cluster of Plants
-Activity_Cycle: Day
-Diet: Carnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: ''
-Base_Stock: ''
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: This small bush is covered with oval dark green leaves that drip with
+size: Small
+size_measurement: 1.3 Meters Tall
+frequency: Uncommon
+organization: Related Cluster of Plants
+activity_cycle: Day
+diet: Carnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: ''
+base_stock: ''
+robot_classification: ''
+status: ''
+mission: ''
+description: This small bush is covered with oval dark green leaves that drip with
   acid and 3cm thorns. In the spring it produces acidless yellow flowers. It covers
   it self with the illusion of a nearby bush to hide from prey.Herbivores following
   the sweet odor of a weed will be attacked with gas and thorns. If attacked with
   fire, it will try to drive the attacker away with gas (85%) or will give up(15%).Acidweeds
   reproduce every 5 years; only 20% of the seeds are viable. It absorbs prey through
   its root system.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Acidweed
-Number_appearing: 1d3 (2)
-Number_appearing_Single: '2'
-Init: '+0'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Acidweed (1d3 (2)): Init +0'
-PS_-_C: '0'
-DX_-_C: '0'
-CN_-_C: '10'
-MS_-_C: '14'
-CH_-_C: '0'
-IN_-_C: '2'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '-3'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '-1'
-Plus_to_hit_and_damage_Melee_From_Stats: '-3'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '-1'
-Plus_to_Generic_Attack_from_Level: '2'
-Attack_1_Number_of_Attacks: '2'
-Attack_1_Attack_Name: Thorns
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '6'
-Attack_1_Bonus_to_Hit: '-1'
-Attack_1_Bonus_to_Damage: '-3'
-New_Attack_1: 2 x Thorns melee -1 (1d6-3)
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x thorns melee
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Acidweed
+number_appearing: 1d3 (2)
+number_appearing_single: '2'
+init: '+0'
+monster_name_xx_number_if_applicable_init_+-x: 'Acidweed (1d3 (2)): Init +0'
+ps_-_c: '0'
+dx_-_c: '0'
+cn_-_c: '10'
+ms_-_c: '14'
+ch_-_c: '0'
+in_-_c: '2'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '-3'
+plus_to_range_from_level: ''
+plus_to_range: '-1'
+plus_to_hit_and_damage_melee_from_stats: '-3'
+plus_to_melee_from_level: ''
+plus_to_melee: '-1'
+plus_to_generic_attack_from_level: '2'
+attack_1_number_of_attacks: '2'
+attack_1_attack_name: Thorns
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '6'
+attack_1_bonus_to_hit: '-1'
+attack_1_bonus_to_damage: '-3'
+new_attack_1: 2 x Thorns melee -1 (1d6-3)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x thorns melee
   -1 (1d6-3)
-AC_xx: AC 15
-Effective_Class_Level: '3'
-New_Level: '6'
-New_Hit_Dice: HD 6D5
-New_HD_xdx_plus_minus: HD 6D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 18 each
-New_Hit_Points: '18'
-D6_Hitdice: '8'
-Total_GW_hit_points_plus_Constant: '48'
-MV_xx: NO MOVEMENT
-Walk: ''
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref -3, Will +1
-Fort_Save: '0'
-Ref_Save: '-3'
-Will: '1'
-Normal_Text: 'Acidweed (1d3 (2)): Init +0; atk 2 x thorns melee -1 (1d6-3); AC 15;
+ac_xx: AC 15
+effective_class_level: '3'
+new_level: '6'
+new_hit_dice: HD 6D5
+new_hd_xdx_plus_minus: HD 6D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 18 each
+new_hit_points: '18'
+d6_hitdice: '8'
+total_gw_hit_points_plus_constant: '48'
+mv_xx: NO MOVEMENT
+walk: ''
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref -3, Will +1
+fort_save: '0'
+ref_save: '-3'
+will: '1'
+normal_text: 'Acidweed (1d3 (2)): Init +0; atk 2 x thorns melee -1 (1d6-3); AC 15;
   HD 6D5 hp 18 each; NO MOVEMENT; 1d20; SV Fort +0, Ref -3, Will +1'
+description_output: 'Description: This small bush is covered with oval dark green
+  leaves that drip with acid and 3cm thorns. In the spring it produces acidless yellow
+  flowers. It covers it self with the illusion of a nearby bush to hide from prey.Herbivores
+  following the sweet odor of a weed will be attacked with gas and thorns. If attacked
+  with fire, it will try to drive the attacker away with gas (85%) or will give up(15%).Acidweeds
+  reproduce every 5 years; only 20% of the seeds are viable. It absorbs prey through
+  its root system.'
+final_output: 'Acidweed (1d3 (2)): Init +0; atk 2 x thorns melee -1 (1d6-3); AC 15;
+  HD 6D5 hp 18 each; NO MOVEMENT; 1d20; SV Fort +0, Ref -3, Will +1Gas Generation
+  (burning), Dissolving Juices- Continuously produces dissolving juices, Thorns, Attraction
+  Odor [D], Fruit (acid berries 3d6 pts of dmg/berry 2-12 berries/plant), Immunity
+  (acids), Phobia[D] (fire), Illusion Generation - Unlimited use of IllusionDescription:
+  This small bush is covered with oval dark green leaves that drip with acid and 3cm
+  thorns. In the spring it produces acidless yellow flowers. It covers it self with
+  the illusion of a nearby bush to hide from prey.Herbivores following the sweet odor
+  of a weed will be attacked with gas and thorns. If attacked with fire, it will try
+  to drive the attacker away with gas (85%) or will give up(15%).Acidweeds reproduce
+  every 5 years; only 20% of the seeds are viable. It absorbs prey through its root
+  system.'
+players: "Acidweed; '';Description: This small bush is covered with oval dark green\
+  \ leaves that drip with acid and 3cm thorns. In the spring it produces acidless\
+  \ yellow flowers. It covers it self with the illusion of a nearby bush to hide from\
+  \ prey.Herbivores following the sweet odor of a weed will be attacked with gas and\
+  \ thorns. If attacked with fire, it will try to drive the attacker away with gas\
+  \ (85%) or will give up(15%).Acidweeds reproduce every 5 years; only 20% of the\
+  \ seeds are viable. It absorbs prey through its root system.|"
 ...

@@ -1,150 +1,176 @@
 ---
+ID: 71562
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.843Z'
+categories: '{Gamma World, Beastiary}'
+guid: e9cc5506-92ef-4f03-8ed2-ae035b3ab56e
+date: '2023-02-09T16:46:31.483Z'
 title: Silus
-GenericName: ''
-Name: Silus
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW07 Module
-Author: Bruce Nesmith
-MCC Race: Plant
-Role_In_Gamma_World: NPC
-Number_Appearing_Dice: '1'
-Morale: ''
-Hit_Dice: ''
-Armor: ''
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: ''
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: ''
-DX: ''
-CN: ''
-MS: ''
-CH: ''
-IN: ''
-Brain-CPU Type: ''
-Attack_1: ''
-Attack_2: ''
-Attack_3: ''
-Mutations: ''
-Size: ''
-Size_Measurement: ''
-Frequency: ''
-Organization: ''
-Activity_Cycle: ''
-Diet: ''
-Tech_Level: ''
-Tech_Max: ''
-Artifacts: ''
-Habitat: ''
-Base_Stock: Human
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: ''
-Equipment: ''
-Reactions: ''
-Behavior: If attacking flying prey, a ka'tal will come from behind , forming a 'net'
+creature_name_index: Silus
+notes: ''
+genericname: ''
+creature_name: Silus
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW07 Module
+author: ''
+name: Bruce Nesmith
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: NPC
+number_appearing_dice: '1'
+morale: ''
+hit_dice: ''
+armor: ''
+control: ''
+sensors: ''
+power: ''
+land_speed: ''
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: ''
+dx: ''
+cn: ''
+ms: ''
+ch: ''
+in: ''
+brain-cpu type: ''
+attack_1: ''
+attack_2: ''
+attack_3: ''
+mutations: ''
+size: ''
+size_measurement: ''
+frequency: ''
+organization: ''
+activity_cycle: ''
+diet: ''
+tech_level: ''
+tech_max: ''
+artifacts: ''
+habitat: ''
+base_stock: Human
+robot_classification: ''
+status: ''
+mission: ''
+description: ''
+equipment: ''
+reactions: ''
+behavior: If attacking flying prey, a ka'tal will come from behind , forming a 'net'
   with their legs to snatch up the prey. If it is to fast, the ka'tal will use atmokinesis
   to speed up (to 52). Ground targets are attacked with eye rays. If attacked with
   missiles, the 'death will raise a force field and attack the creature who threw
   the missile. If ground prey is weak, the ka'tal will land and bite it to death.Ka'tal
   may be found in groups, but they ignore each other (so a group may last only a day,
   a week or more).
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Silus
-Number_appearing: '1'
-Number_appearing_Single: '1'
-Init: '-3'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Silus (1): Init -3'
-PS_-_C: ''
-DX_-_C: ''
-CN_-_C: ''
-MS_-_C: ''
-CH_-_C: ''
-IN_-_C: ''
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '-3'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '-3'
-Plus_to_hit_and_damage_Melee_From_Stats: '-3'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '-3'
-Plus_to_Generic_Attack_from_Level: '0'
-Attack_1_Number_of_Attacks: ''
-Attack_1_Attack_Name: ''
-Attack_1_Type: ''
-Attack_1_Range: ''
-Attack_1_Attack_Dice: ''
-Attack_1_Bonus_to_Hit: ''
-Attack_1_Bonus_to_Damage: ''
-New_Attack_1: See Description
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
-AC_xx: AC 10
-Effective_Class_Level: '1'
-New_Level: '1'
-New_Hit_Dice: HD 1D5
-New_HD_xdx_plus_minus: HD 1D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 3
-New_Hit_Points: '3'
-D6_Hitdice: ''
-Total_GW_hit_points_plus_Constant: '0'
-MV_xx: NO MOVEMENT
-Walk: ''
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort -3, Ref -3, Will -3
-Fort_Save: '-3'
-Ref_Save: '-3'
-Will: '-3'
-Normal_Text: 'Silus (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Silus
+number_appearing: '1'
+number_appearing_single: '1'
+init: '-3'
+monster_name_xx_number_if_applicable_init_+-x: 'Silus (1): Init -3'
+ps_-_c: ''
+dx_-_c: ''
+cn_-_c: ''
+ms_-_c: ''
+ch_-_c: ''
+in_-_c: ''
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '-3'
+plus_to_range_from_level: ''
+plus_to_range: '-3'
+plus_to_hit_and_damage_melee_from_stats: '-3'
+plus_to_melee_from_level: ''
+plus_to_melee: '-3'
+plus_to_generic_attack_from_level: '0'
+attack_1_number_of_attacks: ''
+attack_1_attack_name: ''
+attack_1_type: ''
+attack_1_range: ''
+attack_1_attack_dice: ''
+attack_1_bonus_to_hit: ''
+attack_1_bonus_to_damage: ''
+new_attack_1: See Description
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
+ac_xx: AC 10
+effective_class_level: '1'
+new_level: '1'
+new_hit_dice: HD 1D5
+new_hd_xdx_plus_minus: HD 1D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 3
+new_hit_points: '3'
+d6_hitdice: ''
+total_gw_hit_points_plus_constant: '0'
+mv_xx: NO MOVEMENT
+walk: ''
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort -3, Ref -3, Will -3
+fort_save: '-3'
+ref_save: '-3'
+will: '-3'
+normal_text: 'Silus (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
+description_output: Behavior:If attacking flying prey, a ka'tal will come from behind
+  , forming a 'net' with their legs to snatch up the prey. If it is to fast, the ka'tal
+  will use atmokinesis to speed up (to 52). Ground targets are attacked with eye rays.
+  If attacked with missiles, the 'death will raise a force field and attack the creature
+  who threw the missile. If ground prey is weak, the ka'tal will land and bite it
+  to death.Ka'tal may be found in groups, but they ignore each other (so a group may
+  last only a day, a week or more).
+final_output: "Silus (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;\
+  \ 1d20; SV Fort -3, Ref -3, Will -3Behavior:If attacking flying prey, a ka'tal will\
+  \ come from behind , forming a 'net' with their legs to snatch up the prey. If it\
+  \ is to fast, the ka'tal will use atmokinesis to speed up (to 52). Ground targets\
+  \ are attacked with eye rays. If attacked with missiles, the 'death will raise a\
+  \ force field and attack the creature who threw the missile. If ground prey is weak,\
+  \ the ka'tal will land and bite it to death.Ka'tal may be found in groups, but they\
+  \ ignore each other (so a group may last only a day, a week or more)."
+players: Silus; '';Behavior:If attacking flying prey, a ka'tal will come from behind
+  , forming a 'net' with their legs to snatch up the prey. If it is to fast, the ka'tal
+  will use atmokinesis to speed up (to 52). Ground targets are attacked with eye rays.
+  If attacked with missiles, the 'death will raise a force field and attack the creature
+  who threw the missile. If ground prey is weak, the ka'tal will land and bite it
+  to death.Ka'tal may be found in groups, but they ignore each other (so a group may
+  last only a day, a week or more).|
 ...

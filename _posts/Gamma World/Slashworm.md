@@ -1,147 +1,167 @@
 ---
+ID: 71576
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.843Z'
+categories: '{Gamma World, Beastiary}'
+guid: 92534f63-d914-4e97-8395-1972399541c0
+date: '2023-02-09T16:46:31.483Z'
 title: Slashworm
-GenericName: ''
-Name: Slashworm
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: MM2
-Author: Derek M. Holland
-MCC Race: Animal
-Role_In_Gamma_World: ''
-Number_Appearing_Dice: 1d10+10
-Morale: '8'
-Hit_Dice: '5'
-Armor: '4'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: ''
-Air_Speed: ''
-Water_Speed: 12/900/18
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '8'
-DX: '17'
-CN: '5'
-MS: '5'
-CH: '1'
-IN: '1'
-Brain-CPU Type: ''
-Attack_1: 3 Slash (8)
-Attack_2: ''
-Attack_3: ''
-Mutations: None
-Size: Small
-Size_Measurement: .5 - .75 M
-Frequency: Rare
-Organization: ''
-Activity_Cycle: ''
-Diet: Carnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Oceans
-Base_Stock: Worm
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: These carnivorous worms have 6 long blades, 3 on each side
-Equipment: ''
-Reactions: ''
-Behavior: The Slashworm uses its blades to kill prey by making bleeding wounds. They
+creature_name_index: Slashworm
+notes: ''
+genericname: ''
+creature_name: Slashworm
+common_name: ''
+other_names: ''
+generic_name: ''
+source: MM2
+author: ''
+name: Derek M. Holland
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: ''
+number_appearing_dice: 1d10+10
+morale: '8'
+hit_dice: '5'
+armor: '4'
+control: ''
+sensors: ''
+power: ''
+land_speed: ''
+air_speed: ''
+water_speed: 12/900/18
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '8'
+dx: '17'
+cn: '5'
+ms: '5'
+ch: '1'
+in: '1'
+brain-cpu type: ''
+attack_1: 3 Slash (8)
+attack_2: ''
+attack_3: ''
+mutations: None
+size: Small
+size_measurement: .5 - .75 M
+frequency: Rare
+organization: ''
+activity_cycle: ''
+diet: Carnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Oceans
+base_stock: Worm
+robot_classification: ''
+status: ''
+mission: ''
+description: These carnivorous worms have 6 long blades, 3 on each side
+equipment: ''
+reactions: ''
+behavior: The Slashworm uses its blades to kill prey by making bleeding wounds. They
   are .5 to .75 meters long and are light blue in color. They hunt in packs of 10
   to 20 and migrate up and down the Lantik coast following several preferred prey
   species.
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Slashworm
-Number_appearing: 1d10+10 (15)
-Number_appearing_Single: '15'
-Init: '+4'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Slashworm (1d10+10 (15)): Init +4'
-PS_-_C: '8'
-DX_-_C: '17'
-CN_-_C: '5'
-MS_-_C: '5'
-CH_-_C: '1'
-IN_-_C: '1'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '2'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '3'
-Plus_to_hit_and_damage_Melee_From_Stats: '-1'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '0'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: '3'
-Attack_1_Attack_Name: Slash
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '8'
-Attack_1_Bonus_to_Hit: '0'
-Attack_1_Bonus_to_Damage: '-1'
-New_Attack_1: 3 x Slash melee  (1d8-1)
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 3 x slash melee  (1d8-1)
-AC_xx: AC 14
-Effective_Class_Level: '2'
-New_Level: '3'
-New_Hit_Dice: HD 3D7
-New_HD_xdx_plus_minus: HD 3D7
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
-New_Hit_Points: '12'
-D6_Hitdice: '5'
-Total_GW_hit_points_plus_Constant: '30'
-MV_xx: MV Swim 23'
-Walk: ''
-Fly: ''
-Swim: Swim 23'
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort -2, Ref +2, Will -2
-Fort_Save: '-2'
-Ref_Save: '2'
-Will: '-2'
-Normal_Text: "Slashworm (1d10+10 (15)): Init +4; atk 3 x slash melee  (1d8-1); AC\
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Slashworm
+number_appearing: 1d10+10 (15)
+number_appearing_single: '15'
+init: '+4'
+monster_name_xx_number_if_applicable_init_+-x: 'Slashworm (1d10+10 (15)): Init +4'
+ps_-_c: '8'
+dx_-_c: '17'
+cn_-_c: '5'
+ms_-_c: '5'
+ch_-_c: '1'
+in_-_c: '1'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '2'
+plus_to_range_from_level: ''
+plus_to_range: '3'
+plus_to_hit_and_damage_melee_from_stats: '-1'
+plus_to_melee_from_level: ''
+plus_to_melee: '0'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: '3'
+attack_1_attack_name: Slash
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '8'
+attack_1_bonus_to_hit: '0'
+attack_1_bonus_to_damage: '-1'
+new_attack_1: 3 x Slash melee  (1d8-1)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 3 x slash melee  (1d8-1)
+ac_xx: AC 14
+effective_class_level: '2'
+new_level: '3'
+new_hit_dice: HD 3D7
+new_hd_xdx_plus_minus: HD 3D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12 each
+new_hit_points: '12'
+d6_hitdice: '5'
+total_gw_hit_points_plus_constant: '30'
+mv_xx: MV Swim 23'
+walk: ''
+fly: ''
+swim: Swim 23'
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort -2, Ref +2, Will -2
+fort_save: '-2'
+ref_save: '2'
+will: '-2'
+normal_text: "Slashworm (1d10+10 (15)): Init +4; atk 3 x slash melee  (1d8-1); AC\
   \ 14; HD 3D7 hp 12 each; MV Swim 23' ; 1d20; SV Fort -2, Ref +2, Will -2"
+description_output: 'Description: These carnivorous worms have 6 long blades, 3 on
+  each sideBehavior:The Slashworm uses its blades to kill prey by making bleeding
+  wounds. They are .5 to .75 meters long and are light blue in color. They hunt in
+  packs of 10 to 20 and migrate up and down the Lantik coast following several preferred
+  prey species.'
+final_output: "Slashworm (1d10+10 (15)): Init +4; atk 3 x slash melee  (1d8-1); AC\
+  \ 14; HD 3D7 hp 12 each; MV Swim 23' ; 1d20; SV Fort -2, Ref +2, Will -2NoneDescription:\
+  \ These carnivorous worms have 6 long blades, 3 on each sideBehavior:The Slashworm\
+  \ uses its blades to kill prey by making bleeding wounds. They are .5 to .75 meters\
+  \ long and are light blue in color. They hunt in packs of 10 to 20 and migrate up\
+  \ and down the Lantik coast following several preferred prey species."
+players: "Slashworm; '';Description: These carnivorous worms have 6 long blades, 3\
+  \ on each sideBehavior:The Slashworm uses its blades to kill prey by making bleeding\
+  \ wounds. They are .5 to .75 meters long and are light blue in color. They hunt\
+  \ in packs of 10 to 20 and migrate up and down the Lantik coast following several\
+  \ preferred prey species.|"
 ...

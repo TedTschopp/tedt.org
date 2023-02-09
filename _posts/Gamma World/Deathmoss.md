@@ -1,63 +1,67 @@
 ---
+ID: 71157
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.842Z'
+categories: '{Gamma World, Beastiary}'
+guid: 6ecbef68-ff83-4c98-a5ed-6e8d9c8ac764
+date: '2023-02-09T16:46:31.478Z'
 title: Deathmoss
-GenericName: ''
-Name: Deathmoss
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW01 - The Legion of Gold
-Author: Gary Gygax, Paul Reiche III (GW1 Legion of Gold)
-MCC Race: Plant
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: '1'
-Morale: '0'
-Hit_Dice: '3'
-Armor: '9'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '0'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '5'
-DX: '0'
-CN: '3'
-MS: '3'
-CH: '0'
-IN: '2'
-Brain-CPU Type: ''
-Attack_1: ''
-Attack_2: ''
-Attack_3: ''
-Mutations: Berries, Sense Heightening
-Size: Medium
-Size_Measurement: 1 Meter patch
-Frequency: Rare
-Organization: Patch
-Activity_Cycle: Any
-Diet: Carnvore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Temperate or tropical forests
-Base_Stock: Grass
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: Deathmoss is a lush, soft-looking, moss-like plant which appears to be
+creature_name_index: Deathmoss
+notes: ''
+genericname: ''
+creature_name: Deathmoss
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW01 - The Legion of Gold
+author: ''
+name: Gary Gygax, Paul Reiche III (GW1 Legion of Gold)
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Monster
+number_appearing_dice: '1'
+morale: '0'
+hit_dice: '3'
+armor: '9'
+control: ''
+sensors: ''
+power: ''
+land_speed: '0'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '5'
+dx: '0'
+cn: '3'
+ms: '3'
+ch: '0'
+in: '2'
+brain-cpu type: ''
+attack_1: ''
+attack_2: ''
+attack_3: ''
+mutations: Berries, Sense Heightening
+size: Medium
+size_measurement: 1 Meter patch
+frequency: Rare
+organization: Patch
+activity_cycle: Any
+diet: Carnvore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Temperate or tropical forests
+base_stock: Grass
+robot_classification: ''
+status: ''
+mission: ''
+description: Deathmoss is a lush, soft-looking, moss-like plant which appears to be
   no different from other growths of similar plants. Creatures seem to be naturally
   attracted to its springy surface and comfortable bed. This is unfortunate for them
   but assures the deathmoss of food and propagation.This plant has developed an aromatic
@@ -72,87 +76,135 @@ Description: Deathmoss is a lush, soft-looking, moss-like plant which appears to
   develops berries to attract new prey. This purple-veined gray fruit, when eaten,
   increases all five senses [sight, smell, hearing, touch and taste) for one hour,
   but thereafter causes a 50% loss of normal senses for another hour.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Deathmoss
-Number_appearing: '1'
-Number_appearing_Single: '1'
-Init: '-2'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Deathmoss (1): Init -2'
-PS_-_C: '5'
-DX_-_C: '0'
-CN_-_C: '3'
-MS_-_C: '3'
-CH_-_C: '0'
-IN_-_C: '2'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '-3'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '-3'
-Plus_to_hit_and_damage_Melee_From_Stats: '-2'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '-2'
-Plus_to_Generic_Attack_from_Level: '0'
-Attack_1_Number_of_Attacks: ''
-Attack_1_Attack_Name: ''
-Attack_1_Type: ''
-Attack_1_Range: ''
-Attack_1_Attack_Dice: ''
-Attack_1_Bonus_to_Hit: ''
-Attack_1_Bonus_to_Damage: ''
-New_Attack_1: See Description
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
-AC_xx: AC 19
-Effective_Class_Level: '1'
-New_Level: '2'
-New_Hit_Dice: HD 2D5
-New_HD_xdx_plus_minus: HD 2D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 6
-New_Hit_Points: '6'
-D6_Hitdice: '3'
-Total_GW_hit_points_plus_Constant: '18'
-MV_xx: NO MOVEMENT
-Walk: ''
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort -3, Ref -3, Will -3
-Fort_Save: '-3'
-Ref_Save: '-3'
-Will: '-3'
-Normal_Text: 'Deathmoss (1): Init -2; atk see description; AC 19; HD 2D5 hp 6; NO
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Deathmoss
+number_appearing: '1'
+number_appearing_single: '1'
+init: '-2'
+monster_name_xx_number_if_applicable_init_+-x: 'Deathmoss (1): Init -2'
+ps_-_c: '5'
+dx_-_c: '0'
+cn_-_c: '3'
+ms_-_c: '3'
+ch_-_c: '0'
+in_-_c: '2'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '-3'
+plus_to_range_from_level: ''
+plus_to_range: '-3'
+plus_to_hit_and_damage_melee_from_stats: '-2'
+plus_to_melee_from_level: ''
+plus_to_melee: '-2'
+plus_to_generic_attack_from_level: '0'
+attack_1_number_of_attacks: ''
+attack_1_attack_name: ''
+attack_1_type: ''
+attack_1_range: ''
+attack_1_attack_dice: ''
+attack_1_bonus_to_hit: ''
+attack_1_bonus_to_damage: ''
+new_attack_1: See Description
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
+ac_xx: AC 19
+effective_class_level: '1'
+new_level: '2'
+new_hit_dice: HD 2D5
+new_hd_xdx_plus_minus: HD 2D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 6
+new_hit_points: '6'
+d6_hitdice: '3'
+total_gw_hit_points_plus_constant: '18'
+mv_xx: NO MOVEMENT
+walk: ''
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort -3, Ref -3, Will -3
+fort_save: '-3'
+ref_save: '-3'
+will: '-3'
+normal_text: 'Deathmoss (1): Init -2; atk see description; AC 19; HD 2D5 hp 6; NO
   MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
+description_output: 'Description: Deathmoss is a lush, soft-looking, moss-like plant
+  which appears to be no different from other growths of similar plants. Creatures
+  seem to be naturally attracted to its springy surface and comfortable bed. This
+  is unfortunate for them but assures the deathmoss of food and propagation.This plant
+  has developed an aromatic sap which is released when its stems and leaves are bruised
+  by weight.The power of the sap is equal to intensity 12 poison, and any creature
+  which succumbs to it falls into a comatose sleep. (Dice of damage results indicate
+  only a proportionate lowering of resistance to the aromatic power next melee round
+  if the victim remains within one meter of the bruised plants, or directly above
+  them.) The deathmoss has developed boring root tendrils, which penetrate the flesh
+  of comatose creatures and inject dissolving juices which bring a nutrient sludge
+  to the roots in a short time. Thus fed, the deathmoss both grows up to one-square
+  meter per feeding and develops berries to attract new prey. This purple-veined gray
+  fruit, when eaten, increases all five senses [sight, smell, hearing, touch and taste)
+  for one hour, but thereafter causes a 50% loss of normal senses for another hour.'
+final_output: 'Deathmoss (1): Init -2; atk see description; AC 19; HD 2D5 hp 6; NO
+  MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3Berries, Sense HeighteningDescription:
+  Deathmoss is a lush, soft-looking, moss-like plant which appears to be no different
+  from other growths of similar plants. Creatures seem to be naturally attracted to
+  its springy surface and comfortable bed. This is unfortunate for them but assures
+  the deathmoss of food and propagation.This plant has developed an aromatic sap which
+  is released when its stems and leaves are bruised by weight.The power of the sap
+  is equal to intensity 12 poison, and any creature which succumbs to it falls into
+  a comatose sleep. (Dice of damage results indicate only a proportionate lowering
+  of resistance to the aromatic power next melee round if the victim remains within
+  one meter of the bruised plants, or directly above them.) The deathmoss has developed
+  boring root tendrils, which penetrate the flesh of comatose creatures and inject
+  dissolving juices which bring a nutrient sludge to the roots in a short time. Thus
+  fed, the deathmoss both grows up to one-square meter per feeding and develops berries
+  to attract new prey. This purple-veined gray fruit, when eaten, increases all five
+  senses [sight, smell, hearing, touch and taste) for one hour, but thereafter causes
+  a 50% loss of normal senses for another hour.'
+players: "Deathmoss; '';Description: Deathmoss is a lush, soft-looking, moss-like\
+  \ plant which appears to be no different from other growths of similar plants. Creatures\
+  \ seem to be naturally attracted to its springy surface and comfortable bed. This\
+  \ is unfortunate for them but assures the deathmoss of food and propagation.This\
+  \ plant has developed an aromatic sap which is released when its stems and leaves\
+  \ are bruised by weight.The power of the sap is equal to intensity 12 poison, and\
+  \ any creature which succumbs to it falls into a comatose sleep. (Dice of damage\
+  \ results indicate only a proportionate lowering of resistance to the aromatic power\
+  \ next melee round if the victim remains within one meter of the bruised plants,\
+  \ or directly above them.) The deathmoss has developed boring root tendrils, which\
+  \ penetrate the flesh of comatose creatures and inject dissolving juices which bring\
+  \ a nutrient sludge to the roots in a short time. Thus fed, the deathmoss both grows\
+  \ up to one-square meter per feeding and develops berries to attract new prey. This\
+  \ purple-veined gray fruit, when eaten, increases all five senses [sight, smell,\
+  \ hearing, touch and taste) for one hour, but thereafter causes a 50% loss of normal\
+  \ senses for another hour.|"
 ...

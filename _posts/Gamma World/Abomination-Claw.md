@@ -1,145 +1,157 @@
 ---
+ID: 71001
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.841Z'
-title: Claws of the Abomination
-GenericName: Yes
-Name: Abomination Claw
-Common_Name: ''
-Other_Names: ''
-Generic_Name: Claws of the Abomination
-Source: GW07 Module
-Author: Bruce Nesmith
-MCC Race: Plant
-Role_In_Gamma_World: Unique
-Number_Appearing_Dice: '1'
-Morale: '9'
-Hit_Dice: '5'
-Armor: '7'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '2'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '10'
-DX: '10'
-CN: '10'
-MS: '18'
-CH: '5'
-IN: '1'
-Brain-CPU Type: ''
-Attack_1: 2 Claws (5)
-Attack_2: ''
-Attack_3: ''
-Mutations: ''
-Size: ''
-Size_Measurement: ''
-Frequency: ''
-Organization: ''
-Activity_Cycle: ''
-Diet: ''
-Tech_Level: ''
-Tech_Max: ''
-Artifacts: ''
-Habitat: ''
-Base_Stock: ''
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: Large claws attached to tendrils that act as legs.
-Equipment: ''
-Reactions: ''
-Behavior: Can leap 2 meters in any direction each turn
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Abomination Claw
-Number_appearing: '1'
-Number_appearing_Single: '1'
-Init: '+2'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Abomination Claw (1): Init +2'
-PS_-_C: '10'
-DX_-_C: '10'
-CN_-_C: '10'
-MS_-_C: '18'
-CH_-_C: '5'
-IN_-_C: '1'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '1'
-Plus_to_hit_and_damage_Melee_From_Stats: '0'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '1'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: '2'
-Attack_1_Attack_Name: Claws
-Attack_1_Type: melee
-Attack_1_Range: ''
-Attack_1_Attack_Dice: '5'
-Attack_1_Bonus_to_Hit: '1'
-Attack_1_Bonus_to_Damage: '0'
-New_Attack_1: 2 x Claws melee +1 (1d5)
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x claws melee
+categories: '{Gamma World, Beastiary}'
+guid: 896a9b8c-388d-4e6e-a9e6-deab2afdf4e1
+date: '2023-02-09T16:46:31.476Z'
+title: Abomination Claw
+creature_name_index: Abomination Claw
+notes: ''
+genericname: Yes
+creature_name: Abomination Claw
+common_name: ''
+other_names: ''
+generic_name: Claws of the Abomination
+source: GW07 Module
+author: ''
+name: Bruce Nesmith
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Unique
+number_appearing_dice: '1'
+morale: '9'
+hit_dice: '5'
+armor: '7'
+control: ''
+sensors: ''
+power: ''
+land_speed: '2'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '10'
+dx: '10'
+cn: '10'
+ms: '18'
+ch: '5'
+in: '1'
+brain-cpu type: ''
+attack_1: 2 Claws (5)
+attack_2: ''
+attack_3: ''
+mutations: ''
+size: ''
+size_measurement: ''
+frequency: ''
+organization: ''
+activity_cycle: ''
+diet: ''
+tech_level: ''
+tech_max: ''
+artifacts: ''
+habitat: ''
+base_stock: ''
+robot_classification: ''
+status: ''
+mission: ''
+description: Large claws attached to tendrils that act as legs.
+equipment: ''
+reactions: ''
+behavior: Can leap 2 meters in any direction each turn
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Abomination Claw
+number_appearing: '1'
+number_appearing_single: '1'
+init: '+2'
+monster_name_xx_number_if_applicable_init_+-x: 'Abomination Claw (1): Init +2'
+ps_-_c: '10'
+dx_-_c: '10'
+cn_-_c: '10'
+ms_-_c: '18'
+ch_-_c: '5'
+in_-_c: '1'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: ''
+plus_to_range: '1'
+plus_to_hit_and_damage_melee_from_stats: '0'
+plus_to_melee_from_level: ''
+plus_to_melee: '1'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: '2'
+attack_1_attack_name: Claws
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '5'
+attack_1_bonus_to_hit: '1'
+attack_1_bonus_to_damage: '0'
+new_attack_1: 2 x Claws melee +1 (1d5)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk 2 x claws melee
   +1 (1d5)
-AC_xx: AC 17
-Effective_Class_Level: '2'
-New_Level: '4'
-New_Hit_Dice: HD 4D5
-New_HD_xdx_plus_minus: HD 4D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12
-New_Hit_Points: '12'
-D6_Hitdice: '5'
-Total_GW_hit_points_plus_Constant: '30'
-MV_xx: MV 3'
-Walk: 3'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref +0, Will +3
-Fort_Save: '0'
-Ref_Save: '0'
-Will: '3'
-Normal_Text: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;\
+ac_xx: AC 17
+effective_class_level: '2'
+new_level: '4'
+new_hit_dice: HD 4D5
+new_hd_xdx_plus_minus: HD 4D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 12
+new_hit_points: '12'
+d6_hitdice: '5'
+total_gw_hit_points_plus_constant: '30'
+mv_xx: MV 3'
+walk: 3'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will +3
+fort_save: '0'
+ref_save: '0'
+will: '3'
+normal_text: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;\
   \ HD 4D5 hp 12; MV 3' ; 1d20; SV Fort +0, Ref +0, Will +3"
+description_output: 'Description: Large claws attached to tendrils that act as legs.Behavior:Can
+  leap 2 meters in any direction each turn'
+final_output: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;\
+  \ HD 4D5 hp 12; MV 3' ; 1d20; SV Fort +0, Ref +0, Will +3Description: Large claws\
+  \ attached to tendrils that act as legs.Behavior:Can leap 2 meters in any direction\
+  \ each turn"
+players: "Abomination Claw; '';Description: Large claws attached to tendrils that\
+  \ act as legs.Behavior:Can leap 2 meters in any direction each turn|"
 ...

@@ -1,69 +1,73 @@
 ---
+ID: 71180
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.842Z'
+categories: '{Gamma World, Beastiary}'
+guid: 29a0b514-49ae-47aa-bf6d-bc9c44321e09
+date: '2023-02-09T16:46:31.478Z'
 title: Ecobot - farm
-GenericName: ''
-Name: Ecobot - farm
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: Ted Tschopp
-Author: Ted Tschopp
-MCC Race: ''
-Role_In_Gamma_World: Robot
-Number_Appearing_Dice: ''
-Morale: ''
-Hit_Dice: ''
-Armor: '4'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '8'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '20'
-DX: '10'
-CN: ''
-MS: ''
-CH: ''
-IN: ''
-Brain-CPU Type: '2 - 4: Literal'
-Attack_1: Stun Ray Pistol (0) r20'
-Attack_2: ''
-Attack_3: ''
-Mutations: ''
-Size: ''
-Size_Measurement: ''
-Frequency: ''
-Organization: ''
-Activity_Cycle: ''
-Diet: ''
-Tech_Level: ''
-Tech_Max: ''
-Artifacts: ''
-Habitat: ''
-Base_Stock: ''
-Robot_Classification: ''
-Status: ''
-Mission: To Care for the crops, animals, buildings, grounds of a farm
-Description: 'An ecobot is basically humanoid, and is most notable feature is its
+creature_name_index: Ecobot - farm
+notes: ''
+genericname: ''
+creature_name: Ecobot - farm
+common_name: ''
+other_names: ''
+generic_name: ''
+source: Ted Tschopp
+author: ''
+name: Ted Tschopp
+url: ''
+avatar: ''
+mcc_race: ''
+role_in_gamma_world: Robot
+number_appearing_dice: ''
+morale: ''
+hit_dice: ''
+armor: '4'
+control: ''
+sensors: ''
+power: ''
+land_speed: '8'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '20'
+dx: '10'
+cn: ''
+ms: ''
+ch: ''
+in: ''
+brain-cpu type: '2 - 4: Literal'
+attack_1: Stun Ray Pistol (0) r20'
+attack_2: ''
+attack_3: ''
+mutations: ''
+size: ''
+size_measurement: ''
+frequency: ''
+organization: ''
+activity_cycle: ''
+diet: ''
+tech_level: ''
+tech_max: ''
+artifacts: ''
+habitat: ''
+base_stock: ''
+robot_classification: ''
+status: ''
+mission: To Care for the crops, animals, buildings, grounds of a farm
+description: 'An ecobot is basically humanoid, and is most notable feature is its
   four evenly spaced arms.  It has two legs and 1 1/2 meter long arms with hand manipulators.  Half
   of its large, barrel-like chest is a sorage tank (100 liters) for whatever needs
   to be carried: seed, water, milk, feed. etc.  It has a polite but firm, male voice.'
-Equipment: The ecobot comes standard with an envirolyzer, soil analyzer, shovel, IR
+equipment: The ecobot comes standard with an envirolyzer, soil analyzer, shovel, IR
   camera, radio, spotlights, and a stun ray pistol
-Reactions: A common I.D. card allows the operator to com-mand the robot to perform
+reactions: A common I.D. card allows the operator to com-mand the robot to perform
   any menial farm/landscaping chore or to temporarily stop whatever it is doing. A
   supervisor's card can reprioritize the chores or command the ecobot to perform nonfarm-related
   or nonpark-related tasks, so long as it doesn't leave the farm or park property.
@@ -80,84 +84,99 @@ Reactions: A common I.D. card allows the operator to com-mand the robot to perfo
   doesn't interrupt traf-fic patterns. In a park, plants are allowed to grow wild
   only in the natural areas. Sentient plants in a landscaped area will he cut down
   and removed.
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Ecobot - farm
-Number_appearing: '1'
-Number_appearing_Single: ''
-Init: '#N/A'
-Monster_Name_xx_number_if_applicable_Init_+-x: '#N/A'
-PS_-_C: '20'
-DX_-_C: '10'
-CN_-_C: ''
-MS_-_C: ''
-CH_-_C: ''
-IN_-_C: ''
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '0'
-Plus_to_Range_from_Level: '#N/A'
-Plus_to_Range: '#N/A'
-Plus_to_hit_and_damage_Melee_From_Stats: '4'
-Plus_to_Melee_from_Level: '#N/A'
-Plus_to_Melee: '#N/A'
-Plus_to_Generic_Attack_from_Level: '#N/A'
-Attack_1_Number_of_Attacks: Stun
-Attack_1_Attack_Name: Ray Pistol
-Attack_1_Type: range
-Attack_1_Range: 20'
-Attack_1_Attack_Dice: '3'
-Attack_1_Bonus_to_Hit: '#N/A'
-Attack_1_Bonus_to_Damage: '0'
-New_Attack_1: '#N/A'
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: '#N/A'
-AC_xx: AC 14
-Effective_Class_Level: '#N/A'
-New_Level: '#N/A'
-New_Hit_Dice: '#N/A'
-New_HD_xdx_plus_minus: '#N/A'
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: '#N/A'
-New_Hit_Points: '#N/A'
-D6_Hitdice: ''
-Total_GW_hit_points_plus_Constant: '0'
-MV_xx: MV 10'
-Walk: 10'
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: '#N/A'
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +1, Ref +0, Will -3
-Fort_Save: '1'
-Ref_Save: '0'
-Will: '-3'
-Normal_Text: '#N/A'
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Ecobot - farm
+number_appearing: '1'
+number_appearing_single: ''
+init: '#N/A'
+monster_name_xx_number_if_applicable_init_+-x: '#N/A'
+ps_-_c: '20'
+dx_-_c: '10'
+cn_-_c: ''
+ms_-_c: ''
+ch_-_c: ''
+in_-_c: ''
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '0'
+plus_to_range_from_level: '#N/A'
+plus_to_range: '#N/A'
+plus_to_hit_and_damage_melee_from_stats: '4'
+plus_to_melee_from_level: '#N/A'
+plus_to_melee: '#N/A'
+plus_to_generic_attack_from_level: '#N/A'
+attack_1_number_of_attacks: Stun
+attack_1_attack_name: Ray Pistol
+attack_1_type: range
+attack_1_range: 20'
+attack_1_attack_dice: '3'
+attack_1_bonus_to_hit: '#N/A'
+attack_1_bonus_to_damage: '0'
+new_attack_1: '#N/A'
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: '#N/A'
+ac_xx: AC 14
+effective_class_level: '#N/A'
+new_level: '#N/A'
+new_hit_dice: '#N/A'
+new_hd_xdx_plus_minus: '#N/A'
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: '#N/A'
+new_hit_points: '#N/A'
+d6_hitdice: ''
+total_gw_hit_points_plus_constant: '0'
+mv_xx: MV 10'
+walk: 10'
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: '#N/A'
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref +0, Will -3
+fort_save: '1'
+ref_save: '0'
+will: '-3'
+normal_text: '#N/A'
+description_output: 'Description: An ecobot is basically humanoid, and is most notable
+  feature is its four evenly spaced arms.  It has two legs and 1 1/2 meter long arms
+  with hand manipulators.  Half of its large, barrel-like chest is a sorage tank (100
+  liters) for whatever needs to be carried: seed, water, milk, feed. etc.  It has
+  a polite but firm, male voice.Mission: To Care for the crops, animals, buildings,
+  grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer, soil
+  analyzer, shovel, IR camera, radio, spotlights, and a stun ray pistol'
+final_output: '#N/A'
+players: "Ecobot - farm; '';Description: An ecobot is basically humanoid, and is most\
+  \ notable feature is its four evenly spaced arms.  It has two legs and 1 1/2 meter\
+  \ long arms with hand manipulators.  Half of its large, barrel-like chest is a sorage\
+  \ tank (100 liters) for whatever needs to be carried: seed, water, milk, feed. etc.\
+  \  It has a polite but firm, male voice.Mission: To Care for the crops, animals,\
+  \ buildings, grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer,\
+  \ soil analyzer, shovel, IR camera, radio, spotlights, and a stun ray pistol|"
 ...

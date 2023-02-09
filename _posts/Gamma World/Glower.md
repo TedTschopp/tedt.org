@@ -1,63 +1,67 @@
 ---
+ID: 71256
 layout: GammaWorld
-categories:
-- Gamma World
-- Gamma World Bestiary
-- Bestiary
-date: '2023-02-08T00:16:44.842Z'
+categories: '{Gamma World, Beastiary}'
+guid: f618bcfa-f8e9-4da1-837a-2c6d19e2894c
+date: '2023-02-09T16:46:31.479Z'
 title: Glower
-GenericName: ''
-Name: Glower
-Common_Name: ''
-Other_Names: ''
-Generic_Name: ''
-Source: GW02 - Famine in Far-Go
-Author: Michael Price
-MCC Race: Plant
-Role_In_Gamma_World: Monster
-Number_Appearing_Dice: 1d4
-Morale: '1'
-Hit_Dice: '4'
-Armor: '10'
-Control: ''
-Sensors: ''
-Power: ''
-Land_Speed: '0'
-Air_Speed: ''
-Water_Speed: ''
-Burrowing_Speed: ''
-Climbing_Speed: ''
-Wheeled_Speed: ''
-Tread_Speed: ''
-Rotors_Speed: ''
-Hoverfan_Speed: ''
-Gav_Pod_Speed: ''
-PS: '0'
-DX: '0'
-CN: '9'
-MS: '0'
-CH: '0'
-IN: '2'
-Brain-CPU Type: ''
-Attack_1: ''
-Attack_2: ''
-Attack_3: ''
-Mutations: Dissolving Juices; Gas Generation- sleep
-Size: Medium
-Size_Measurement: 1 square meter
-Frequency: Uncommon
-Organization: Patch
-Activity_Cycle: Any
-Diet: Omnivore
-Tech_Level: '0'
-Tech_Max: '0'
-Artifacts: ''
-Habitat: Near lakes or ponds
-Base_Stock: Fungi
-Robot_Classification: ''
-Status: ''
-Mission: ''
-Description: These mutant fungi always live near or in radiation zones,and if possible
+creature_name_index: Glower
+notes: ''
+genericname: ''
+creature_name: Glower
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW02 - Famine in Far-Go
+author: ''
+name: Michael Price
+url: ''
+avatar: ''
+mcc_race: Plant
+role_in_gamma_world: Monster
+number_appearing_dice: 1d4
+morale: '1'
+hit_dice: '4'
+armor: '10'
+control: ''
+sensors: ''
+power: ''
+land_speed: '0'
+air_speed: ''
+water_speed: ''
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '0'
+dx: '0'
+cn: '9'
+ms: '0'
+ch: '0'
+in: '2'
+brain-cpu type: ''
+attack_1: ''
+attack_2: ''
+attack_3: ''
+mutations: Dissolving Juices; Gas Generation- sleep
+size: Medium
+size_measurement: 1 square meter
+frequency: Uncommon
+organization: Patch
+activity_cycle: Any
+diet: Omnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Near lakes or ponds
+base_stock: Fungi
+robot_classification: ''
+status: ''
+mission: ''
+description: These mutant fungi always live near or in radiation zones,and if possible
   will grow next to sources of water.They appear to be glowing reddish slime growths
   whose light slowly pulsates; hence the name Glowers.Growing on rocks and stones
   is their preferred place of habitat. Being near a river, stream, pond, or lake helps
@@ -69,87 +73,128 @@ Description: These mutant fungi always live near or in radiation zones,and if po
   glowing mutants are a deadly poison if swallowed by any creature (Int 16). However,
   when these mutated fungi are boiled down, they produce an antidote for Int 16 poisons.Each
   square meter of this growth will yield one dose of this anti-dote.
-Equipment: ''
-Reactions: ''
-Behavior: ''
-Repair_and_Healing: ''
-New_Description: ''
-Combat: ''
-Society: ''
-Brotherhood_of_Thought: ''
-Restorationsist: ''
-Healers: ''
-Iron_Society: ''
-Humans: ''
-Monster_Name: Glower
-Number_appearing: 1d4 (2)
-Number_appearing_Single: '2'
-Init: '-2'
-Monster_Name_xx_number_if_applicable_Init_+-x: 'Glower (1d4 (2)): Init -2'
-PS_-_C: '0'
-DX_-_C: '0'
-CN_-_C: '9'
-MS_-_C: '0'
-CH_-_C: '0'
-IN_-_C: '2'
-Weapon: Low Tech Level
-Plus_to_hit_and_damage_Range_from_Stats: '-3'
-Plus_to_Range_from_Level: ''
-Plus_to_Range: '-2'
-Plus_to_hit_and_damage_Melee_From_Stats: '-3'
-Plus_to_Melee_from_Level: ''
-Plus_to_Melee: '-2'
-Plus_to_Generic_Attack_from_Level: '1'
-Attack_1_Number_of_Attacks: ''
-Attack_1_Attack_Name: ''
-Attack_1_Type: ''
-Attack_1_Range: ''
-Attack_1_Attack_Dice: ''
-Attack_1_Bonus_to_Hit: ''
-Attack_1_Bonus_to_Damage: ''
-New_Attack_1: See Description
-Attack_2_Number_of_Attacks: ''
-Attack_2_Attack_Name: ''
-Attack_2_Type: ''
-Attack_2_Range: ''
-Attack_2_Attack_Dice: ''
-Attack_2_Bonus_to_Hit: ''
-Attack_2_Bonus_to_Damage: ''
-New_Attack_2: ''
-Attack_3_Number_of_Attacks: ''
-Attack_3_Attack_Name: ''
-Attack_3_Type: ''
-Attack_3_Range: ''
-Attack_3_Attack_Dice: ''
-Attack_3_Bonus_to_Hit: ''
-Attack_3_Bonus_to_Damage: ''
-New_Attack_3: ''
-Atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
-AC_xx: AC 20
-Effective_Class_Level: '2'
-New_Level: '3'
-New_Hit_Dice: HD 3D5
-New_HD_xdx_plus_minus: HD 3D5
-New_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 9 each
-New_Hit_Points: '9'
-D6_Hitdice: '4'
-Total_GW_hit_points_plus_Constant: '24'
-MV_xx: NO MOVEMENT
-Walk: ''
-Fly: ''
-Swim: ''
-Burrow: ''
-Climb: ''
-Wheels: ''
-Treads: ''
-Rotors: ''
-Hoverfans: ''
-GravPods: ''
-New_Action_Dice: 1d20
-SV_Fort_+-x_Ref_+-x_Will_+-x: SV Fort +0, Ref -3, Will -3
-Fort_Save: '0'
-Ref_Save: '-3'
-Will: '-3'
-Normal_Text: 'Glower (1d4 (2)): Init -2; atk see description; AC 20; HD 3D5 hp 9 each;
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Glower
+number_appearing: 1d4 (2)
+number_appearing_single: '2'
+init: '-2'
+monster_name_xx_number_if_applicable_init_+-x: 'Glower (1d4 (2)): Init -2'
+ps_-_c: '0'
+dx_-_c: '0'
+cn_-_c: '9'
+ms_-_c: '0'
+ch_-_c: '0'
+in_-_c: '2'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '-3'
+plus_to_range_from_level: ''
+plus_to_range: '-2'
+plus_to_hit_and_damage_melee_from_stats: '-3'
+plus_to_melee_from_level: ''
+plus_to_melee: '-2'
+plus_to_generic_attack_from_level: '1'
+attack_1_number_of_attacks: ''
+attack_1_attack_name: ''
+attack_1_type: ''
+attack_1_range: ''
+attack_1_attack_dice: ''
+attack_1_bonus_to_hit: ''
+attack_1_bonus_to_damage: ''
+new_attack_1: See Description
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk see description
+ac_xx: AC 20
+effective_class_level: '2'
+new_level: '3'
+new_hit_dice: HD 3D5
+new_hd_xdx_plus_minus: HD 3D5
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 9 each
+new_hit_points: '9'
+d6_hitdice: '4'
+total_gw_hit_points_plus_constant: '24'
+mv_xx: NO MOVEMENT
+walk: ''
+fly: ''
+swim: ''
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref -3, Will -3
+fort_save: '0'
+ref_save: '-3'
+will: '-3'
+normal_text: 'Glower (1d4 (2)): Init -2; atk see description; AC 20; HD 3D5 hp 9 each;
   NO MOVEMENT; 1d20; SV Fort +0, Ref -3, Will -3'
+description_output: "Description: These mutant fungi always live near or in radiation\
+  \ zones,and if possible will grow next to sources of water.They appear to be glowing\
+  \ reddish slime growths whose light slowly pulsates; hence the name Glowers.Growing\
+  \ on rocks and stones is their preferred place of habitat. Being near a river, stream,\
+  \ pond, or lake helps them to ensnare unsuspecting creatures that come to drink.\
+  \ Glowers grow to a height of only 5 cm and live in densely clumped patches.The\
+  \ Glowers release their Sleep Gas when touched by any living creature trying to\
+  \ put their victim into a deep sleep.If the creature falls asleep and lands on top\
+  \ of the mutant fungi, their dissolving juices will then go to work to break down\
+  \ the creature's body into digestible enzymes.These glowing mutants are a deadly\
+  \ poison if swallowed by any creature (Int 16). However, when these mutated fungi\
+  \ are boiled down, they produce an antidote for Int 16 poisons.Each square meter\
+  \ of this growth will yield one dose of this anti-dote."
+final_output: "Glower (1d4 (2)): Init -2; atk see description; AC 20; HD 3D5 hp 9\
+  \ each; NO MOVEMENT; 1d20; SV Fort +0, Ref -3, Will -3Dissolving Juices; Gas Generation-\
+  \ sleepDescription: These mutant fungi always live near or in radiation zones,and\
+  \ if possible will grow next to sources of water.They appear to be glowing reddish\
+  \ slime growths whose light slowly pulsates; hence the name Glowers.Growing on rocks\
+  \ and stones is their preferred place of habitat. Being near a river, stream, pond,\
+  \ or lake helps them to ensnare unsuspecting creatures that come to drink. Glowers\
+  \ grow to a height of only 5 cm and live in densely clumped patches.The Glowers\
+  \ release their Sleep Gas when touched by any living creature trying to put their\
+  \ victim into a deep sleep.If the creature falls asleep and lands on top of the\
+  \ mutant fungi, their dissolving juices will then go to work to break down the creature's\
+  \ body into digestible enzymes.These glowing mutants are a deadly poison if swallowed\
+  \ by any creature (Int 16). However, when these mutated fungi are boiled down, they\
+  \ produce an antidote for Int 16 poisons.Each square meter of this growth will yield\
+  \ one dose of this anti-dote."
+players: "Glower; '';Description: These mutant fungi always live near or in radiation\
+  \ zones,and if possible will grow next to sources of water.They appear to be glowing\
+  \ reddish slime growths whose light slowly pulsates; hence the name Glowers.Growing\
+  \ on rocks and stones is their preferred place of habitat. Being near a river, stream,\
+  \ pond, or lake helps them to ensnare unsuspecting creatures that come to drink.\
+  \ Glowers grow to a height of only 5 cm and live in densely clumped patches.The\
+  \ Glowers release their Sleep Gas when touched by any living creature trying to\
+  \ put their victim into a deep sleep.If the creature falls asleep and lands on top\
+  \ of the mutant fungi, their dissolving juices will then go to work to break down\
+  \ the creature's body into digestible enzymes.These glowing mutants are a deadly\
+  \ poison if swallowed by any creature (Int 16). However, when these mutated fungi\
+  \ are boiled down, they produce an antidote for Int 16 poisons.Each square meter\
+  \ of this growth will yield one dose of this anti-dote.|"
 ...
