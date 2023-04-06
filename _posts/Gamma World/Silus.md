@@ -2,7 +2,9 @@
 ID: 71562
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fac286ac-aa0d-40be-b29b-788d7c7938e7
 date: '2023-04-06T22:58:17.056Z'
 title: Silus

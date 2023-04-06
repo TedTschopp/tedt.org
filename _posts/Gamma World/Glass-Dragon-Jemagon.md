@@ -2,7 +2,9 @@
 ID: 71319
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bbb38954-20ac-4082-8e1c-20af34807ecc
 date: '2023-04-06T22:58:17.054Z'
 title: Glass Dragon «Jemagon»

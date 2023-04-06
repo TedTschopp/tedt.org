@@ -2,7 +2,9 @@
 ID: 71702
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 354f5f50-01c9-4187-8da5-04560616a031
 date: '2023-04-06T22:58:17.056Z'
 title: Shocking Mildew «Xanqas»

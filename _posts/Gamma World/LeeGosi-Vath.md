@@ -2,7 +2,9 @@
 ID: 71672
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 74419e1f-702e-4210-90d2-fa5203fd6d21
 date: '2023-04-06T22:58:17.056Z'
 title: Lee'Gosi «Vath»

@@ -2,7 +2,9 @@
 ID: 71061
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 490d9087-e2d7-4d43-afde-c1f7cb0bab4c
 date: '2023-04-06T22:58:17.053Z'
 title: Beauty, the visious, mutated decrative plant

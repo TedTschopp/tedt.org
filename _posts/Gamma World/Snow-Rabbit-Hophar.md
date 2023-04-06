@@ -2,7 +2,9 @@
 ID: 71289
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 937983c5-3c27-46a2-b32b-742d8b29d7aa
 date: '2023-04-06T22:58:17.054Z'
 title: Snow Rabbit «Hophar»

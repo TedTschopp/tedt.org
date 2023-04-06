@@ -2,7 +2,9 @@
 ID: 71629
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9360ce67-c5f5-4a28-8b5e-4b5f3f009d0c
 date: '2023-04-06T22:58:17.056Z'
 title: Tarn Zeb

@@ -2,7 +2,9 @@
 ID: 71483
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9cacb0ab-c8a0-42a8-8a38-f3eb81ec9a89
 date: '2023-04-06T22:58:17.055Z'
 title: Moving Barricade «Quanakus»

@@ -2,7 +2,9 @@
 ID: 71406
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 070a10e7-20da-42b6-a983-64acb70ec3f1
 date: '2023-04-06T22:58:17.055Z'
 title: MindaRay

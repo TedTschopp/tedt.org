@@ -2,7 +2,9 @@
 ID: 71475
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: afba65fc-a3a2-4784-ba4d-a4038713dcef
 date: '2023-04-06T22:58:17.055Z'
 title: Pret of the Order of the Blessed Nano

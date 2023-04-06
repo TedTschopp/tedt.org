@@ -2,7 +2,9 @@
 ID: 71502
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a1016201-b8b8-4461-864b-f61d9d8ffe92
 date: '2023-04-06T22:58:17.055Z'
 title: Bigwig «Rhya»

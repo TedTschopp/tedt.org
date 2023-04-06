@@ -2,7 +2,9 @@
 ID: 71426
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: eafaf102-1b31-4f30-8f18-0dcda723d520
 date: '2023-04-06T22:58:17.055Z'
 title: Mutated Rat

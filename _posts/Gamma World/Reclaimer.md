@@ -2,7 +2,9 @@
 ID: 71498
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a98fa379-8465-45b9-bc97-9130f0d44cb1
 date: '2023-04-06T22:58:17.055Z'
 title: Reclaimer

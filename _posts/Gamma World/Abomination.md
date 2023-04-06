@@ -2,7 +2,9 @@
 ID: 71000
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7f37bf20-77d3-4508-a094-52d374f54404
 date: '2023-04-06T22:58:17.052Z'
 title: Abomination

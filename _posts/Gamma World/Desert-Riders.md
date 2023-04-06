@@ -2,7 +2,9 @@
 ID: 71165
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a7041818-01d0-4f2f-bfcf-d0e89c6e8e2d
 date: '2023-04-06T22:58:17.053Z'
 title: Desert Riders

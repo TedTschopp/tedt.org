@@ -2,7 +2,9 @@
 ID: 71210
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 175b3ca1-199b-402e-8409-66d0b7852127
 date: '2023-04-06T22:58:17.054Z'
 title: Studded Dragon «Felgon»

@@ -2,7 +2,9 @@
 ID: 71504
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 70987ad5-ef84-4b9b-beb2-a857037409ac
 date: '2023-04-06T22:58:17.055Z'
 title: Flying Frogs «Ribbets»

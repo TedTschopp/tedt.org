@@ -2,7 +2,9 @@
 ID: 71481
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f493250e-90c4-4688-9881-e8e85a157d79
 date: '2023-04-06T22:58:17.055Z'
 title: Puff Cactus

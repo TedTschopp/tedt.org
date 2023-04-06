@@ -2,7 +2,9 @@
 ID: 71260
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8b5b13ac-f36e-4b0a-aae1-6aeef65153fd
 date: '2023-04-06T22:58:17.054Z'
 title: Greep

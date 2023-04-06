@@ -2,7 +2,9 @@
 ID: 71622
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9b6f1ad0-9fb4-4cbf-911a-4ba6e32507f3
 date: '2023-04-06T22:58:17.056Z'
 title: Tanglepus

@@ -2,7 +2,9 @@
 ID: 71029
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0e100ae9-4115-4cc0-bc28-dff117f65d5f
 date: '2023-04-06T22:58:17.053Z'
 title: Wandering Blackuns «Attercop Abulare»

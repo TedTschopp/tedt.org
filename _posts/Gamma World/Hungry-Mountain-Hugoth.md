@@ -2,7 +2,9 @@
 ID: 71300
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1bb73476-723e-4c16-8520-02398a69ae44
 date: '2023-04-06T22:58:17.054Z'
 title: Hungry Mountain «Hugoth»

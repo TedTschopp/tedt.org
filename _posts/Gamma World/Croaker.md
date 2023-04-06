@@ -2,7 +2,9 @@
 ID: 71140
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e14cc7e0-eacb-48e9-ada1-0f2d7e895fa0
 date: '2023-04-06T22:58:17.053Z'
 title: Croaker

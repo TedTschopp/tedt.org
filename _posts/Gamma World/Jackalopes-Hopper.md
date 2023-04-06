@@ -2,7 +2,9 @@
 ID: 71290
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ab610bbb-f86b-4d96-a607-223c13336f2d
 date: '2023-04-06T22:58:17.054Z'
 title: Jackalopes «Hopper»

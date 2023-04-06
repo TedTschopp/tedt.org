@@ -2,7 +2,9 @@
 ID: 71074
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 88aedf42-5cb4-49bc-9e60-63e9054d14e4
 date: '2023-04-06T22:58:17.053Z'
 title: Red Deaths «Blood Bird»

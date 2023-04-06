@@ -2,7 +2,9 @@
 ID: 71461
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2026374a-ab1a-4942-9926-0af508802558
 date: '2023-04-06T22:58:17.055Z'
 title: Par-rana

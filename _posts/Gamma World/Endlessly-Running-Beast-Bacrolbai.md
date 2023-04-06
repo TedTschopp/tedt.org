@@ -2,7 +2,9 @@
 ID: 71035
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 01f28c09-59d3-4650-b0a7-3efdc725136c
 date: '2023-04-06T22:58:17.053Z'
 title: Endlessly Running Beast «Ba'crolbai»

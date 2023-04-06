@@ -2,7 +2,9 @@
 ID: 71588
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1f2ba259-a7c8-40a8-94ae-23bde68a9985
 date: '2023-04-06T22:58:17.056Z'
 title: Solarfly

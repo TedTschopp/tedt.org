@@ -2,7 +2,9 @@
 ID: 71538
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6cadd348-e4a7-4fca-874d-25b731f53c5f
 date: '2023-04-06T22:58:17.056Z'
 title: Sentrybots

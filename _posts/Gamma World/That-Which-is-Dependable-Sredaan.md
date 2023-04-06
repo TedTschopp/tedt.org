@@ -2,7 +2,9 @@
 ID: 71514
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6a01e0d9-f460-4f55-9787-afd9c1cfc70c
 date: '2023-04-06T22:58:17.055Z'
 title: That Which is Dependable «S're'daan»

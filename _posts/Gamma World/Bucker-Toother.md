@@ -2,7 +2,9 @@
 ID: 71656
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ffbd8b7e-d792-459f-96f4-a1f1f5bb2202
 date: '2023-04-06T22:58:17.056Z'
 title: Bucker «Toother»

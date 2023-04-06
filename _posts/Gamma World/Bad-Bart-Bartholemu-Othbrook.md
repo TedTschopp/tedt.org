@@ -2,7 +2,9 @@
 ID: 71052
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 63813756-2c24-4d1b-9cb1-ac017e9509eb
 date: '2023-04-06T22:58:17.053Z'
 title: Bad Bart «Bartholemu Othbrook»

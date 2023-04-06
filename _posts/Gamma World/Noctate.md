@@ -2,7 +2,9 @@
 ID: 71441
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 72423de6-4402-430d-ae96-4bec179886bc
 date: '2023-04-06T22:58:17.055Z'
 title: Noctate

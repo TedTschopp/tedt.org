@@ -2,7 +2,9 @@
 ID: 71287
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fa7e6679-dfb9-422a-8052-d2f89e8b8415
 date: '2023-04-06T22:58:17.054Z'
 title: Ugly Friend «Holcut»

@@ -2,7 +2,9 @@
 ID: 71095
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 222002f7-2af7-419e-9814-d345e41588b9
 date: '2023-04-06T22:58:17.053Z'
 title: Bee Folk «Bumbles»

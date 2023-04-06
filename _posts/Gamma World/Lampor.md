@@ -2,7 +2,9 @@
 ID: 71355
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 62c01595-ef3b-4c3e-ad9c-ad490ce92360
 date: '2023-04-06T22:58:17.054Z'
 title: Lampor

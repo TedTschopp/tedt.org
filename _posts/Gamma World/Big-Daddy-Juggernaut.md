@@ -2,7 +2,9 @@
 ID: 71328
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: da5722fc-63b7-44dc-898d-dc7af83bb599
 date: '2023-04-06T22:58:17.054Z'
 title: Big Daddy «Juggernaut»

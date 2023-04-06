@@ -2,7 +2,9 @@
 ID: 71293
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: deb25845-2a3f-426a-9f34-0b134a13ca1c
 date: '2023-04-06T22:58:17.054Z'
 title: Sea Stallion «Horsy»

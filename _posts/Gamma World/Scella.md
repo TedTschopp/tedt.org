@@ -2,7 +2,9 @@
 ID: 71519
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c32b4280-336b-497e-9033-72b3ab2270fe
 date: '2023-04-06T22:58:17.055Z'
 title: Scella

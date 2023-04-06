@@ -2,7 +2,9 @@
 ID: 71602
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bc45d352-249d-48ef-bfd2-063e996e270c
 date: '2023-04-06T22:58:17.056Z'
 title: Sprey

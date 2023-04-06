@@ -2,7 +2,9 @@
 ID: 71158
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a0fe72c7-5264-4f64-be71-426ad742d37d
 date: '2023-04-06T22:58:17.053Z'
 title: Deathsire

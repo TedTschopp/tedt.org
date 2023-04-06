@@ -2,7 +2,9 @@
 ID: 71275
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ef4478de-6e41-49b3-91a3-7c4bbdf8160d
 date: '2023-04-06T22:58:17.054Z'
 title: Terrorbirds «Hawkoid»

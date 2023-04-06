@@ -2,7 +2,9 @@
 ID: 71542
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e0edd5e5-54ba-45a9-8564-5ce9fd8f0662
 date: '2023-04-06T22:58:17.056Z'
 title: Master Dragon «Sergon»

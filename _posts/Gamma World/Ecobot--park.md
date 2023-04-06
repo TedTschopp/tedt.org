@@ -2,7 +2,9 @@
 ID: 71181
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 33106a6a-e783-4f03-918c-c6ecfcf3cffe
 date: '2023-04-06T22:58:17.053Z'
 title: Ecobot - park

@@ -2,7 +2,9 @@
 ID: 71623
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 071ef0c3-cadf-4724-9ed6-d7443a52c5b3
 date: '2023-04-06T22:58:17.056Z'
 title: Tani

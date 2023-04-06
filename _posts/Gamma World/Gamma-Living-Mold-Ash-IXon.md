@@ -2,7 +2,9 @@
 ID: 71027
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 93ca2de8-8480-4476-b48d-965be46b58a3
 date: '2023-04-06T22:58:17.053Z'
 title: Gamma Living Mold «Ash I'Xon»

@@ -2,7 +2,9 @@
 ID: 71705
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0a753080-838d-4e71-badc-e123f554c3da
 date: '2023-04-06T22:58:17.056Z'
 title: He who is a warrior «Y'Zor»

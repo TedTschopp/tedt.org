@@ -2,7 +2,9 @@
 ID: 71433
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 112fde8d-670b-4546-ac94-6bc8f6d56964
 date: '2023-04-06T22:58:17.055Z'
 title: Ghost Trees «Narl Ep»

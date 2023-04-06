@@ -2,7 +2,9 @@
 ID: 71528
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3ba34dd5-fffd-419b-852d-92990b06f10c
 date: '2023-04-06T22:58:17.055Z'
 title: Sea Serpent, Green

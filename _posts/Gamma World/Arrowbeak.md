@@ -2,7 +2,9 @@
 ID: 71025
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7496ea1d-eb1e-4a35-8d7d-5a4cb90602f9
 date: '2023-04-06T22:58:17.053Z'
 title: Arrowbeak

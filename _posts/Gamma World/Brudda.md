@@ -2,7 +2,9 @@
 ID: 71087
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3b800163-f20b-44b2-9981-8012a7483910
 date: '2023-04-06T22:58:17.053Z'
 title: Brudda

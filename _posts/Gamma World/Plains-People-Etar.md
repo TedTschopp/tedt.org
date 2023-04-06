@@ -2,7 +2,9 @@
 ID: 71203
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e192c436-91dd-45bd-b785-6f3a4b4970f2
 date: '2023-04-06T22:58:17.054Z'
 title: Plains People «Etar»

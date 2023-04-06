@@ -2,7 +2,9 @@
 ID: 71491
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 73dacf07-ed57-4dd8-ac78-9bb42621686d
 date: '2023-04-06T22:58:17.055Z'
 title: Rastagator

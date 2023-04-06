@@ -2,7 +2,9 @@
 ID: 71221
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3c4f75d8-81e6-45d0-b5dd-91755f2b39c7
 date: '2023-04-06T22:58:17.054Z'
 title: Clicker Fish «Flipp»

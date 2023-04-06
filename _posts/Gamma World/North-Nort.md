@@ -2,7 +2,9 @@
 ID: 71444
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: eee91a86-145c-4a41-aa9e-2b50022c72cc
 date: '2023-04-06T22:58:17.055Z'
 title: North «Nort»

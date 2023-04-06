@@ -2,7 +2,9 @@
 ID: 71369
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5d8b24f4-c74b-4f23-afc3-3665ac5d9333
 date: '2023-04-06T22:58:17.054Z'
 title: Lohan

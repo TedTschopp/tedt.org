@@ -2,7 +2,9 @@
 ID: 71218
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 62b4bcb9-f672-4633-8ef6-d8883cb63d83
 date: '2023-04-06T22:58:17.054Z'
 title: The Black Plague «Firebugs»

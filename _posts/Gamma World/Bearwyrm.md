@@ -2,7 +2,9 @@
 ID: 71060
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 730ed672-bde5-49fc-ae0b-3fc001d39f32
 date: '2023-04-06T22:58:17.053Z'
 title: Bearwyrm

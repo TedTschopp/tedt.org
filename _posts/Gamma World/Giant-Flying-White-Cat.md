@@ -2,7 +2,9 @@
 ID: 71250
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: aa68abd4-a87c-40c9-ae03-18400a57894b
 date: '2023-04-06T22:58:17.054Z'
 title: Giant Flying White Cat

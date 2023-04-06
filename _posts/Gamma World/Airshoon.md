@@ -2,7 +2,9 @@
 ID: 71006
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f26703e7-f818-4944-986b-80a53eafdfba
 date: '2023-04-06T22:58:17.053Z'
 title: Airshoon

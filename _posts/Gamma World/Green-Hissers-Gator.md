@@ -2,7 +2,9 @@
 ID: 71240
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bb4479d3-6985-4055-b3cc-5c1fa59d62f0
 date: '2023-04-06T22:58:17.054Z'
 title: Green Hissers «Gator»

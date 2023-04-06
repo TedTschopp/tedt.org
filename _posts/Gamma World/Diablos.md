@@ -2,7 +2,9 @@
 ID: 71166
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6c0fe3d7-9914-4e23-a27a-d19f421bc701
 date: '2023-04-06T22:58:17.053Z'
 title: Diablos

@@ -2,7 +2,9 @@
 ID: 71315
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 725ad878-0362-4c68-84cd-aacef86a04f8
 date: '2023-04-06T22:58:17.054Z'
 title: Itchy's Horse

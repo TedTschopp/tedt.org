@@ -2,7 +2,9 @@
 ID: 71085
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ada495b6-46d7-498f-a10a-a223bd676656
 date: '2023-04-06T22:58:17.053Z'
 title: Braintaker

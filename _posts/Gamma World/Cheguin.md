@@ -2,7 +2,9 @@
 ID: 71113
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d40672d6-30a7-428b-82ca-c17f225e714d
 date: '2023-04-06T22:58:17.053Z'
 title: Cheguin

@@ -2,7 +2,9 @@
 ID: 71232
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 14f068c2-465f-499a-b6a9-bf8c228d0d7d
 date: '2023-04-06T22:58:17.054Z'
 title: Gliding Dragon «Frothgon»

@@ -2,7 +2,9 @@
 ID: 71500
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 35ee2530-1cae-441e-8c09-92d59009ec63
 date: '2023-04-06T22:58:17.055Z'
 title: Rena

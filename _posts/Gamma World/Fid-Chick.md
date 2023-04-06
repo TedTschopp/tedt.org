@@ -2,7 +2,9 @@
 ID: 71215
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 27d65ccd-a07e-40af-bccf-8c288472ea42
 date: '2023-04-06T22:58:17.054Z'
 title: Fid-Chick

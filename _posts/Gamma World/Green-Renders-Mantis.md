@@ -2,7 +2,9 @@
 ID: 71390
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 048cf7c4-c572-4f19-b74e-3f58c39444e3
 date: '2023-04-06T22:58:17.055Z'
 title: Green Renders «Mantis»

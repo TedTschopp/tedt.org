@@ -2,7 +2,9 @@
 ID: 71131
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 510fe67a-57b7-43e7-b3ff-82c2fb0e07cf
 date: '2023-04-06T22:58:17.053Z'
 title: Cool Jules

@@ -2,7 +2,9 @@
 ID: 71121
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 810f76ba-2327-4785-963a-5bbdd1b8b8e8
 date: '2023-04-06T22:58:17.053Z'
 title: Claptrap

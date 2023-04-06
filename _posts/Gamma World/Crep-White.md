@@ -2,7 +2,9 @@
 ID: 71139
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a7e3534c-c282-44d0-b991-a18cb60edf70
 date: '2023-04-06T22:58:17.053Z'
 title: Crep,White

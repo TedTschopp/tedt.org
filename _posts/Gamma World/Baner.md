@@ -2,7 +2,9 @@
 ID: 71049
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2db55921-6651-4d2d-825e-dbd80fbe3fbe
 date: '2023-04-06T22:58:17.053Z'
 title: Baner

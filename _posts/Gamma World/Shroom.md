@@ -2,7 +2,9 @@
 ID: 71557
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b395e8ea-44e3-45d2-b6c9-3f324ecabb6c
 date: '2023-04-06T22:58:17.056Z'
 title: Shroom

@@ -2,7 +2,9 @@
 ID: 71239
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: dbc53e0a-1a12-4b75-a794-a14ee0c7d630
 date: '2023-04-06T22:58:17.054Z'
 title: Sneakers «Garrel»

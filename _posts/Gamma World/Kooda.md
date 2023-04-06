@@ -2,7 +2,9 @@
 ID: 71347
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4bbaa619-3c69-4bd3-ae21-acc9264d4eea
 date: '2023-04-06T22:58:17.054Z'
 title: Kooda

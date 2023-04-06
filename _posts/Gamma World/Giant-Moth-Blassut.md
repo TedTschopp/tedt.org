@@ -2,7 +2,9 @@
 ID: 71070
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b19514e2-90d7-4b58-b06f-484aef6cbe77
 date: '2023-04-06T22:58:17.053Z'
 title: Giant Moth «Blassut»

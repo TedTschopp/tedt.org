@@ -2,7 +2,9 @@
 ID: 71510
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 561cfde7-052b-4413-9a95-1688b608e199
 date: '2023-04-06T22:58:17.055Z'
 title: Rojak

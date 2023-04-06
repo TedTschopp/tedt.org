@@ -2,7 +2,9 @@
 ID: 71527
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b0eada6a-f4f0-46cf-b94e-265b03a57547
 date: '2023-04-06T22:58:17.055Z'
 title: Sea Serpent, Black

@@ -2,7 +2,9 @@
 ID: 71627
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 24cb4278-9e35-4ed1-aea9-71ca2a1ff79a
 date: '2023-04-06T22:58:17.056Z'
 title: Tank 4

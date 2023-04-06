@@ -2,7 +2,9 @@
 ID: 71167
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0cbbfbdc-5377-4c88-8126-7370eedbc75d
 date: '2023-04-06T22:58:17.053Z'
 title: Digger

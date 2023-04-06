@@ -2,7 +2,9 @@
 ID: 71350
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9314d68d-7a5c-42be-b6b9-b0fe66281e7b
 date: '2023-04-06T22:58:17.054Z'
 title: Leapers «Kreel Torrn»

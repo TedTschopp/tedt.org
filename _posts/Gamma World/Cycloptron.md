@@ -2,7 +2,9 @@
 ID: 71147
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f56f7155-dd22-425a-a3aa-22cee1621683
 date: '2023-04-06T22:58:17.053Z'
 title: Cycloptron

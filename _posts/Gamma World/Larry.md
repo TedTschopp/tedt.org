@@ -2,7 +2,9 @@
 ID: 71357
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 45f9c430-3f8f-4905-8eab-1fa1f9717870
 date: '2023-04-06T22:58:17.054Z'
 title: Larry

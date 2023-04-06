@@ -2,7 +2,9 @@
 ID: 71146
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a6548543-b316-4d72-bd30-1e300f5e0dea
 date: '2023-04-06T22:58:17.053Z'
 title: Borg «Cyborg»

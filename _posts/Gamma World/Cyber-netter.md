@@ -2,7 +2,9 @@
 ID: 71144
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4e9d3afb-f159-4882-8bf0-4f72e4fafe42
 date: '2023-04-06T22:58:17.053Z'
 title: Cyber-netter

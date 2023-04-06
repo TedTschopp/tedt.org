@@ -2,7 +2,9 @@
 ID: 71229
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f9fa56f2-ef75-4ab7-a121-a33e15766bf5
 date: '2023-04-06T22:58:17.054Z'
 title: Freleng

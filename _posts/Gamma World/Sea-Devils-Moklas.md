@@ -2,7 +2,9 @@
 ID: 71415
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6ef072da-e77f-42bb-9cf1-f7f3e8c1a19d
 date: '2023-04-06T22:58:17.055Z'
 title: Sea Devils «Moklas»

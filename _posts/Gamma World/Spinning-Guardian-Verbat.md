@@ -2,7 +2,9 @@
 ID: 71676
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 22b70c01-f91a-4fe2-b228-1300f0c4de4d
 date: '2023-04-06T22:58:17.056Z'
 title: Spinning Guardian «Verbat»

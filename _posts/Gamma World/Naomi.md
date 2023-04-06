@@ -2,7 +2,9 @@
 ID: 71432
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 388e9100-2366-49bc-a9c4-fb2ad0a2a086
 date: '2023-04-06T22:58:17.055Z'
 title: Naomi

@@ -2,7 +2,9 @@
 ID: 71678
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 08d2ae5a-6950-4009-8432-c934cde7deb7
 date: '2023-04-06T22:58:17.056Z'
 title: Virguven

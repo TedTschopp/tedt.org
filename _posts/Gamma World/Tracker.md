@@ -2,7 +2,9 @@
 ID: 71658
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9571232a-dfb9-4124-b623-2dd22fff1fda
 date: '2023-04-06T22:58:17.056Z'
 title: Tracker

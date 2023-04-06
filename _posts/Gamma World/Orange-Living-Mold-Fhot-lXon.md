@@ -2,7 +2,9 @@
 ID: 71214
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 192f7561-4540-45a5-a4f3-13a2e3a49826
 date: '2023-04-06T22:58:17.054Z'
 title: Orange Living Mold «Fhot l'Xon»

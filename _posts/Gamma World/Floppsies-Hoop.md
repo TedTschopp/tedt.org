@@ -2,7 +2,9 @@
 ID: 71288
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 35246aa3-f3a4-485d-a3ef-86765fee007f
 date: '2023-04-06T22:58:17.054Z'
 title: Floppsies «Hoop»

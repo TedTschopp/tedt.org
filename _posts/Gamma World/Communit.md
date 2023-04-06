@@ -2,7 +2,9 @@
 ID: 71129
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 13365eda-2a4d-4218-b200-67101fad4d9d
 date: '2023-04-06T22:58:17.053Z'
 title: Communit

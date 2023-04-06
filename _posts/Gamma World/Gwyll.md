@@ -2,7 +2,9 @@
 ID: 71269
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 747e2a40-7b83-4f81-9e78-ed2f3b218f2b
 date: '2023-04-06T22:58:17.054Z'
 title: Gwyll

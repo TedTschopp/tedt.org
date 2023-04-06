@@ -2,7 +2,9 @@
 ID: 71675
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5c437753-01a0-4eed-b117-24e1149d8154
 date: '2023-04-06T22:58:17.056Z'
 title: Vent Worm

@@ -2,7 +2,9 @@
 ID: 71494
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9974f5d2-46d0-445c-a809-fdef98953599
 date: '2023-04-06T22:58:17.055Z'
 title: Raydium, Beta

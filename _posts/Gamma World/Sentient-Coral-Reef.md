@@ -2,7 +2,9 @@
 ID: 71536
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ebce2dce-51f0-4f22-bf05-52a5242b73e3
 date: '2023-04-06T22:58:17.055Z'
 title: Sentient Coral Reef

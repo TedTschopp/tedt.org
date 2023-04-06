@@ -2,7 +2,9 @@
 ID: 71711
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a695452b-118b-4b48-8be1-d6cb399b06dc
 date: '2023-04-06T22:58:17.056Z'
 title: Zayshin

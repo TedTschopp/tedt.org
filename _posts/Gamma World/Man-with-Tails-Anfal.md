@@ -2,7 +2,9 @@
 ID: 71017
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e92ceb36-d140-4189-b61d-e91d12497eef
 date: '2023-04-06T22:58:17.053Z'
 title: Man with Tails «Anfal»

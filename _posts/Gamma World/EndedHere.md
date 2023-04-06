@@ -2,7 +2,9 @@
 ID: 71343
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0a3bcc14-1306-4672-b0b1-fd627928c85a
 date: '2023-04-06T22:58:17.054Z'
 title: EndedHere

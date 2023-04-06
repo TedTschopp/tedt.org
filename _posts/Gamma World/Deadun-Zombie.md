@@ -2,7 +2,9 @@
 ID: 71713
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f451abae-2dd7-4ef2-b6cd-9d92c03e1775
 date: '2023-04-06T22:58:17.056Z'
 title: Deadun «Zombie»

@@ -2,7 +2,9 @@
 ID: 71524
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0d93645b-c44a-4367-9807-613d9b02e4f5
 date: '2023-04-06T22:58:17.055Z'
 title: Hags «Sea Crone»

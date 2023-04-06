@@ -2,7 +2,9 @@
 ID: 71230
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 125ae1cc-ca6a-4880-9358-e5dbb29412a9
 date: '2023-04-06T22:58:17.054Z'
 title: Phoenix Hedge «Frid Esk»

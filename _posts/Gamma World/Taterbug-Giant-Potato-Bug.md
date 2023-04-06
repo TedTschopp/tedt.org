@@ -2,7 +2,9 @@
 ID: 71251
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: dd961797-2bab-44f1-9d80-b3014ea14a69
 date: '2023-04-06T22:58:17.054Z'
 title: Taterbug «Giant Potato Bug»

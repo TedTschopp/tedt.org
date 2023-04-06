@@ -2,7 +2,9 @@
 ID: 71423
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bfccf98a-eacf-473a-9ead-8ac31c80495e
 date: '2023-04-06T22:58:17.055Z'
 title: Mutated Chuckwalla

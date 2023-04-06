@@ -2,7 +2,9 @@
 ID: 71094
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ed5ed55a-13bb-443d-be76-0e60c8002534
 date: '2023-04-06T22:58:17.053Z'
 title: Bulo

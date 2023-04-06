@@ -2,7 +2,9 @@
 ID: 71159
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8ac416e3-3bcb-47f3-84ae-2425e96b5a9b
 date: '2023-04-06T22:58:17.053Z'
 title: Crested Dragon «Debgon»

@@ -2,7 +2,9 @@
 ID: 71253
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 74bf619e-c0ed-4b3c-a5a2-6decdeb5fa43
 date: '2023-04-06T22:58:17.054Z'
 title: Giggle Bugs (Moths)

@@ -2,7 +2,9 @@
 ID: 71007
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5b405f87-16ba-4b73-8ebf-d9a1f5924aa0
 date: '2023-04-06T22:58:17.053Z'
 title: Albilope

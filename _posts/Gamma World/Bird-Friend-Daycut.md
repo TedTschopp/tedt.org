@@ -2,7 +2,9 @@
 ID: 71155
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 12c9d202-582f-4a76-94b5-987a5ed73b20
 date: '2023-04-06T22:58:17.053Z'
 title: Bird Friend «Daycut»

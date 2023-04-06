@@ -2,7 +2,9 @@
 ID: 71150
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: dbcb5e69-e7ce-42a4-888a-306413120ef8
 date: '2023-04-06T22:58:17.053Z'
 title: Czonk

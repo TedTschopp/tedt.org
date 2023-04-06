@@ -2,7 +2,9 @@
 ID: 71628
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9ac187d8-22bf-46d3-bd08-08b7f9c45209
 date: '2023-04-06T22:58:17.056Z'
 title: Fixed

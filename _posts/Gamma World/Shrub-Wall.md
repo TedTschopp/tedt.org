@@ -2,7 +2,9 @@
 ID: 71559
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 590b35fb-fe97-4ee0-8e11-3a2208d11243
 date: '2023-04-06T22:58:17.056Z'
 title: Shrub Wall

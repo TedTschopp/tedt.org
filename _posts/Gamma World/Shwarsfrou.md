@@ -2,7 +2,9 @@
 ID: 71558
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: be55efff-86ba-47cf-baf3-f20ffd0a485b
 date: '2023-04-06T22:58:17.056Z'
 title: Shwarsfrou

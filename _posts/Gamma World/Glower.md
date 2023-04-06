@@ -2,7 +2,9 @@
 ID: 71256
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8e7646e9-8717-4d08-9790-a5fcfef89a73
 date: '2023-04-06T22:58:17.054Z'
 title: Glower

@@ -2,7 +2,9 @@
 ID: 71264
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a2a12453-a1f3-42d9-81cc-67b4a9dc6f4f
 date: '2023-04-06T22:58:17.054Z'
 title: Green Living Mold «Gri'xon»

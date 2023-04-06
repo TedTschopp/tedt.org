@@ -2,7 +2,9 @@
 ID: 71497
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 42800be3-922a-4b4a-94eb-3dd4762a7ebc
 date: '2023-04-06T22:58:17.055Z'
 title: Rebuilt

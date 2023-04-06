@@ -2,7 +2,9 @@
 ID: 71311
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a6e6646f-727e-427e-a7c1-adb10b1b6cbe
 date: '2023-04-06T22:58:17.054Z'
 title: Black Snake «Inslith»

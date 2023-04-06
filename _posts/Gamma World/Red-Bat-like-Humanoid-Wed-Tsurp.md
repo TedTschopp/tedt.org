@@ -2,7 +2,9 @@
 ID: 71688
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 31a4912d-7b93-476f-9e4d-632374921122
 date: '2023-04-06T22:58:17.056Z'
 title: Red Bat-like Humanoid «Wed Tsurp»

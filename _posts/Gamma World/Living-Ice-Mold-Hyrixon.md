@@ -2,7 +2,9 @@
 ID: 71307
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7b4a7d50-41b8-47b5-aaef-18f9f13c1b22
 date: '2023-04-06T22:58:17.054Z'
 title: Living Ice Mold «Hyri'xon»

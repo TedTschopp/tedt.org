@@ -2,7 +2,9 @@
 ID: 71344
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 01d2c147-dd64-420a-858e-37db0deb1e6a
 date: '2023-04-06T22:58:17.054Z'
 title: KillerRobot

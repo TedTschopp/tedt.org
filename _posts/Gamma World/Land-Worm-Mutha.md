@@ -2,7 +2,9 @@
 ID: 71428
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 97798ea5-800f-4efc-ba72-a5992b7652a2
 date: '2023-04-06T22:58:17.055Z'
 title: Land Worm «Mutha»

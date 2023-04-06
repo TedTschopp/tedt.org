@@ -2,7 +2,9 @@
 ID: 71565
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 626d4fc4-976c-408d-ab25-d7f3f7db1e8e
 date: '2023-04-06T22:58:17.056Z'
 title: Skaig

@@ -2,7 +2,9 @@
 ID: 71698
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0aade28d-bd21-4199-a31c-4688526346ef
 date: '2023-04-06T22:58:17.056Z'
 title: Shining Being «Woo'N»

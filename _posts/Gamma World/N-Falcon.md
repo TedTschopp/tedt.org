@@ -2,7 +2,9 @@
 ID: 71429
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8280fb68-ff7f-4ce5-b8c9-be2da95110bc
 date: '2023-04-06T22:58:17.055Z'
 title: N-Falcon

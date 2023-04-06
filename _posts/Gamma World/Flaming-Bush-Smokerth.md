@@ -2,7 +2,9 @@
 ID: 71585
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 766f7577-7f5a-4fba-a1d5-da9880927c88
 date: '2023-04-06T22:58:17.056Z'
 title: Flaming Bush «Smokerth»

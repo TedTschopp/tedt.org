@@ -2,7 +2,9 @@
 ID: 71712
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1bc15366-2055-4b4c-a47f-275884d84293
 date: '2023-04-06T22:58:17.056Z'
 title: Gamma Grass «Zeeth»

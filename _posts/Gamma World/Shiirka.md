@@ -2,7 +2,9 @@
 ID: 71550
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cb61ac7f-e910-477e-8d51-406f87afeda8
 date: '2023-04-06T22:58:17.056Z'
 title: Shiir'ka

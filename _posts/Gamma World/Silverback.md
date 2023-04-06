@@ -2,7 +2,9 @@
 ID: 71563
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 01792bbe-ab83-43cb-a3bc-6126a47f1fd1
 date: '2023-04-06T22:58:17.056Z'
 title: Silverback

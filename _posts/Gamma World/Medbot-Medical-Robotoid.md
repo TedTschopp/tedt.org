@@ -2,7 +2,9 @@
 ID: 71395
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c2aaaf81-817b-4a1d-93be-0090f8619b98
 date: '2023-04-06T22:58:17.055Z'
 title: Medbot «Medical Robotoid»

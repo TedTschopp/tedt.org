@@ -2,7 +2,9 @@
 ID: 71548
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bc52205e-9a95-4702-928e-b96de7cb3f5b
 date: '2023-04-06T22:58:17.056Z'
 title: Spiked Flyer «Shez'ur»

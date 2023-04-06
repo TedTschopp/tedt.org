@@ -2,7 +2,9 @@
 ID: 71470
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ad696442-0460-4196-a6e9-c80b3d9e1fbc
 date: '2023-04-06T22:58:17.055Z'
 title: Pocket Assassin

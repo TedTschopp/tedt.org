@@ -2,7 +2,9 @@
 ID: 71608
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2ffe2f1b-ebeb-40cb-ab9e-79118ab0e6f0
 date: '2023-04-06T22:58:17.056Z'
 title: Staph

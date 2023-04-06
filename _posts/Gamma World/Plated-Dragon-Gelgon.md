@@ -2,7 +2,9 @@
 ID: 71242
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b01a0d66-8840-4ffa-96ee-2bb92fd09325
 date: '2023-04-06T22:58:17.054Z'
 title: Plated Dragon «Gelgon»

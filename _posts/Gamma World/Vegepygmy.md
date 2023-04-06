@@ -2,7 +2,9 @@
 ID: 71673
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ffa4748d-42f7-4b2e-bea1-46d6c3586272
 date: '2023-04-06T22:58:17.056Z'
 title: Vegepygmy

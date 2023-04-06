@@ -2,7 +2,9 @@
 ID: 71518
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 035e05d1-e9c5-4493-9344-79c2e9fa377a
 date: '2023-04-06T22:58:17.055Z'
 title: Oscar «Scar»

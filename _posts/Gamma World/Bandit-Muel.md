@@ -2,7 +2,9 @@
 ID: 71048
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 299596b8-868b-42fc-9451-7882a03ed760
 date: '2023-04-06T22:58:17.053Z'
 title: Bandit Muel

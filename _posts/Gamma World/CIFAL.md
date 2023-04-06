@@ -2,7 +2,9 @@
 ID: 71120
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9b1bf608-8bd0-4216-9acd-a0b87a357a24
 date: '2023-04-06T22:58:17.053Z'
 title: CIFAL

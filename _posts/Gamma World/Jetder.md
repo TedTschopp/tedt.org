@@ -2,7 +2,9 @@
 ID: 71323
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 125cfb56-a6ed-452b-bb9d-0050ba022d97
 date: '2023-04-06T22:58:17.054Z'
 title: Jetder

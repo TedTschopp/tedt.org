@@ -2,7 +2,9 @@
 ID: 71266
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c0fef13f-e011-4ab0-9de4-44c8abcdf3fc
 date: '2023-04-06T22:58:17.054Z'
 title: Grimlock Horde (15)

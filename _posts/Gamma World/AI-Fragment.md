@@ -2,7 +2,9 @@
 ID: 71005
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c055deea-a9f6-4d5f-babf-07685dbc0099
 date: '2023-04-06T22:58:17.053Z'
 title: AI Fragment

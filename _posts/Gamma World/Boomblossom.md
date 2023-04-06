@@ -2,7 +2,9 @@
 ID: 71079
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e3a2b327-2bab-42e2-a127-21a01b79ca70
 date: '2023-04-06T22:58:17.053Z'
 title: Boomblossom

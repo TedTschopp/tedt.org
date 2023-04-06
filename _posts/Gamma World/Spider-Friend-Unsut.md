@@ -2,7 +2,9 @@
 ID: 71670
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 26fa4d2c-7033-40e5-9118-8024f77e4248
 date: '2023-04-06T22:58:17.056Z'
 title: Spider Friend «Unsut»

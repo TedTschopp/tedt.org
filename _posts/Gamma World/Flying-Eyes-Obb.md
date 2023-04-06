@@ -2,7 +2,9 @@
 ID: 71451
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ac1ea745-18c8-4857-90a2-b55e2a2ebeba
 date: '2023-04-06T22:58:17.055Z'
 title: Flying Eyes «Obb»

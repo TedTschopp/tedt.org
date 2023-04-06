@@ -2,7 +2,9 @@
 ID: 71714
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6695c505-1149-4b15-8b5f-c6cea063439f
 date: '2023-04-06T22:58:17.056Z'
 title: The Great «Zutperk»

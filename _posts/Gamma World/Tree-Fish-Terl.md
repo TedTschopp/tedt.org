@@ -2,7 +2,9 @@
 ID: 71636
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 85505a36-ff34-4fdf-b98c-d44c18f8a6e4
 date: '2023-04-06T22:58:17.056Z'
 title: Tree Fish «Terl»

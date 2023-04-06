@@ -2,7 +2,9 @@
 ID: 71671
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: db217edd-53cc-485a-ab4c-15e177bd8f63
 date: '2023-04-06T22:58:17.056Z'
 title: That which is hideous «V'ath»

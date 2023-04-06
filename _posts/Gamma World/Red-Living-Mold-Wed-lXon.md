@@ -2,7 +2,9 @@
 ID: 71687
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9d020ee8-f444-4ac9-9389-c4c93e46a245
 date: '2023-04-06T22:58:17.056Z'
 title: Red Living Mold «Wed l'Xon»

@@ -2,7 +2,9 @@
 ID: 71034
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b6ceca7b-605f-4163-9f1f-a49d9583cc6c
 date: '2023-04-06T22:58:17.053Z'
 title: Axel

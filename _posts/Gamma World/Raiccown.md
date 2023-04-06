@@ -2,7 +2,9 @@
 ID: 71485
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f64eb1fa-0b57-4b44-9340-53aa34899179
 date: '2023-04-06T22:58:17.055Z'
 title: Raiccown

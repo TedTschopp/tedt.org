@@ -2,7 +2,9 @@
 ID: 71531
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a9cc6113-78fc-47c5-8152-15abc56e0d1a
 date: '2023-04-06T22:58:17.055Z'
 title: Security Bot Mk II «Security Robot at Mindkeep»

@@ -2,7 +2,9 @@
 ID: 71040
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ac6eea88-4ac3-4ae5-a578-60e59e83267c
 date: '2023-04-06T22:58:17.053Z'
 title: Digging Dragon «Badgon»

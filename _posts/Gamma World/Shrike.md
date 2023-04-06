@@ -2,7 +2,9 @@
 ID: 71555
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5517e67c-c63b-4fb6-8043-41123d0105a0
 date: '2023-04-06T22:58:17.056Z'
 title: Shrike

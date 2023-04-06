@@ -2,7 +2,9 @@
 ID: 71001
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 72135a7e-3580-4b54-8fd8-c3b0d4a8fe37
 date: '2023-04-06T22:58:17.053Z'
 title: Abomination Claw

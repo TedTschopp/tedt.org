@@ -2,7 +2,9 @@
 ID: 71332
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a4870976-30de-40a0-b37f-8ca3c2b50c1d
 date: '2023-04-06T22:58:17.054Z'
 title: Flying Death «Ka'tal»

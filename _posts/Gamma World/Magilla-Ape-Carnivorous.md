@@ -2,7 +2,9 @@
 ID: 71019
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 03d48479-32e3-43c5-ae08-4cff8046bbe0
 date: '2023-04-06T22:58:17.053Z'
 title: Magilla «Ape, Carnivorous»

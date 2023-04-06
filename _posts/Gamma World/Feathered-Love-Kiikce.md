@@ -2,7 +2,9 @@
 ID: 71342
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8ea50bf7-7e07-4ca4-af24-cc9f71b2d04f
 date: '2023-04-06T22:58:17.054Z'
 title: Feathered Love «Kiikce»

@@ -2,7 +2,9 @@
 ID: 71164
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9fc92e4e-291c-4d92-9a13-e5899f2c4cdf
 date: '2023-04-06T22:58:17.053Z'
 title: Deranged

@@ -2,7 +2,9 @@
 ID: 71358
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b4d40b60-dcb0-43e6-bfdb-73d164d14d5b
 date: '2023-04-06T22:58:17.054Z'
 title: Laser Gun Battery

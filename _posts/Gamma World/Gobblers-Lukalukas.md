@@ -2,7 +2,9 @@
 ID: 71374
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 543bf501-40e2-43ab-8872-524ba024ee3a
 date: '2023-04-06T22:58:17.055Z'
 title: Gobblers «Lukalukas»

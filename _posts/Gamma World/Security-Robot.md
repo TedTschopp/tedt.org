@@ -2,7 +2,9 @@
 ID: 71532
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: aca7fc88-e754-4082-9e31-30e2d0beaae3
 date: '2023-04-06T22:58:17.055Z'
 title: Security Robot

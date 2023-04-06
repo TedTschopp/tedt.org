@@ -2,7 +2,9 @@
 ID: 71566
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c21d1520-c9f5-4e20-93b0-b0e99a7b64b3
 date: '2023-04-06T22:58:17.056Z'
 title: Rok'Ee «Skwil»

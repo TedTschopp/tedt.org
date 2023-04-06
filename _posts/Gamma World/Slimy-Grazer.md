@@ -2,7 +2,9 @@
 ID: 71580
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0f20ae31-e282-446f-b532-4698b887d1d6
 date: '2023-04-06T22:58:17.056Z'
 title: Slimy Grazer

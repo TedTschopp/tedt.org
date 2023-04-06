@@ -2,7 +2,9 @@
 ID: 71709
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a091953a-5d30-4f12-b145-3a06d7aeb4c2
 date: '2023-04-06T22:58:17.056Z'
 title: Yukon

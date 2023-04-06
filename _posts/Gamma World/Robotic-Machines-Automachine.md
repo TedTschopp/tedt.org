@@ -2,7 +2,9 @@
 ID: 71032
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c9124a94-7585-447d-aee9-fd8a53424505
 date: '2023-04-06T22:58:17.053Z'
 title: Robotic Machines «Automachine»

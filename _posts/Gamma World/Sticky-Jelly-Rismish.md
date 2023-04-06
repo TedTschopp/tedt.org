@@ -2,7 +2,9 @@
 ID: 71505
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 014029e0-74de-4aed-a7a7-8489917a321d
 date: '2023-04-06T22:58:17.055Z'
 title: Sticky Jelly «Rismish»

@@ -2,7 +2,9 @@
 ID: 71448
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a0a16dac-cdf0-4f58-a889-5217f0156f5a
 date: '2023-04-06T22:58:17.055Z'
 title: Deadly Tail «Ny'an»

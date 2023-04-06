@@ -2,7 +2,9 @@
 ID: 71162
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1f6f8be0-f303-407c-81a8-a57644efd687
 date: '2023-04-06T22:58:17.053Z'
 title: Dek'r

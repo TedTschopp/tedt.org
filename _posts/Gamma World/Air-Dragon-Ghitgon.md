@@ -2,7 +2,9 @@
 ID: 71247
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: abf59948-bef1-4f76-b316-f57ea0ce0eff
 date: '2023-04-06T22:58:17.054Z'
 title: Air Dragon «Ghitgon»

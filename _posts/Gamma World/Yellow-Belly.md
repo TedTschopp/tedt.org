@@ -2,7 +2,9 @@
 ID: 71707
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c9ec061e-c215-4575-a1c8-5df5bbbe710b
 date: '2023-04-06T22:58:17.056Z'
 title: Yellow Belly

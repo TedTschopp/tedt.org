@@ -2,7 +2,9 @@
 ID: 71366
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2a92b24b-215e-4861-8651-d8ddaeadf662
 date: '2023-04-06T22:58:17.054Z'
 title: Lobsterfish

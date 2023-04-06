@@ -2,7 +2,9 @@
 ID: 71112
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0e1652ab-0758-45fd-8662-6592b0629285
 date: '2023-04-06T22:58:17.053Z'
 title: Greater Bloodwing «Che'Tal»

@@ -2,7 +2,9 @@
 ID: 71526
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 42de08bf-4974-4ef8-a089-d8c3eb8e3afd
 date: '2023-04-06T22:58:17.055Z'
 title: Sea Monkeys

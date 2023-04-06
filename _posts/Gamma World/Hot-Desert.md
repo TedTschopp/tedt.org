@@ -2,7 +2,9 @@
 ID: 71295
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 80ab54ae-9ae7-4a30-8e49-2cb024bddc55
 date: '2023-04-06T22:58:17.054Z'
 title: Hot Desert

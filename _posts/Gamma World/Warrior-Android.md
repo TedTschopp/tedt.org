@@ -2,7 +2,9 @@
 ID: 71015
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 89777ba8-bd27-4cc0-9804-d1d643ee1778
 date: '2023-04-06T22:58:17.053Z'
 title: Warrior «Android»

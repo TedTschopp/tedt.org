@@ -2,7 +2,9 @@
 ID: 71509
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 236f935a-1f80-4572-a9ad-1620c500c1fa
 date: '2023-04-06T22:58:17.055Z'
 title: Bristleback «Rog»

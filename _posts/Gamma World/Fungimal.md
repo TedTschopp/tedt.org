@@ -2,7 +2,9 @@
 ID: 71234
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bed71c5e-ad55-4c7f-a259-ff692071d6e4
 date: '2023-04-06T22:58:17.054Z'
 title: Fungimal

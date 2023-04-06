@@ -2,7 +2,9 @@
 ID: 71577
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cf5b7cdd-da62-45ed-8e49-445b319d61ff
 date: '2023-04-06T22:58:17.056Z'
 title: Seer Lizards «Sleeth»

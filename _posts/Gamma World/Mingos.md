@@ -2,7 +2,9 @@
 ID: 71407
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6fea39f1-88db-4410-9c5c-285ab8163441
 date: '2023-04-06T22:58:17.055Z'
 title: Mingos

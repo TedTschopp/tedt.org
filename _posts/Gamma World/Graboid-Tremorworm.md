@@ -2,7 +2,9 @@
 ID: 71661
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0604a7b5-a686-43fa-b983-8d564b5f15bd
 date: '2023-04-06T22:58:17.056Z'
 title: Graboid «Tremorworm»

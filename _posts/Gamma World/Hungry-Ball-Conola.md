@@ -2,7 +2,9 @@
 ID: 71130
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6c40a4de-19f7-4b47-a15d-1534889990df
 date: '2023-04-06T22:58:17.053Z'
 title: Hungry Ball «Conola»

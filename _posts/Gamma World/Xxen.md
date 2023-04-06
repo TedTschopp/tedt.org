@@ -2,7 +2,9 @@
 ID: 71704
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6e4affa9-b9d0-48bb-bfd2-edd32899c041
 date: '2023-04-06T22:58:17.056Z'
 title: Xxen

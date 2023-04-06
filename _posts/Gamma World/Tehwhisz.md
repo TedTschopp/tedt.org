@@ -2,7 +2,9 @@
 ID: 71632
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6837e159-c7ed-437b-bf5e-3a3fe7e47c5a
 date: '2023-04-06T22:58:17.056Z'
 title: Tehwhisz

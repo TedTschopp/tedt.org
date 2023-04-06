@@ -2,7 +2,9 @@
 ID: 71477
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ece8864f-7a4f-42a0-9f37-d476e947d014
 date: '2023-04-06T22:58:17.055Z'
 title: Pretexis

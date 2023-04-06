@@ -2,7 +2,9 @@
 ID: 71394
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5d3d49f0-cf25-4c1a-85bb-fad5917de64b
 date: '2023-04-06T22:58:17.055Z'
 title: May'Jir

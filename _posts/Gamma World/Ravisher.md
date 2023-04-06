@@ -2,7 +2,9 @@
 ID: 71492
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 85d63c5f-1dba-41b5-99d9-80ff8a36b8cd
 date: '2023-04-06T22:58:17.055Z'
 title: Ravisher

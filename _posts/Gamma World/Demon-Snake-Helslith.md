@@ -2,7 +2,9 @@
 ID: 71280
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c8a02dbb-b663-45eb-8986-4205879cffc6
 date: '2023-04-06T22:58:17.054Z'
 title: Demon Snake «Helslith»

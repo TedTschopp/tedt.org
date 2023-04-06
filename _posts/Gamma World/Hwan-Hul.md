@@ -2,7 +2,9 @@
 ID: 71302
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 62295fa1-3782-4bb1-8578-1f786016b661
 date: '2023-04-06T22:58:17.054Z'
 title: Hwan Hul

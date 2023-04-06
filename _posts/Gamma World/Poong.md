@@ -2,7 +2,9 @@
 ID: 71474
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 071e8b04-8c53-4262-94d3-e91ae461cc8b
 date: '2023-04-06T22:58:17.055Z'
 title: Poong

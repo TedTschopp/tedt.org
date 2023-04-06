@@ -2,7 +2,9 @@
 ID: 71685
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b92095df-502f-438f-9a67-b4c69f151fb5
 date: '2023-04-06T22:58:17.056Z'
 title: Watchcat

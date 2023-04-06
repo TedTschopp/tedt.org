@@ -2,7 +2,9 @@
 ID: 71071
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a9b1de9e-4387-498f-ad7f-8ccfd8dd9add
 date: '2023-04-06T22:58:17.053Z'
 title: Zappers «Blaster Blossom»

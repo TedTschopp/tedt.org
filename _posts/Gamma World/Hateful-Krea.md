@@ -2,7 +2,9 @@
 ID: 71349
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 762ae56c-1a49-48ec-b769-c3c6da0cd082
 date: '2023-04-06T22:58:17.054Z'
 title: Hateful «Krea»

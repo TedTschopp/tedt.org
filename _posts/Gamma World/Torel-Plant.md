@@ -2,7 +2,9 @@
 ID: 71657
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7c07f422-7329-4fbd-8883-cd94900395cf
 date: '2023-04-06T22:58:17.056Z'
 title: Torel Plant

@@ -2,7 +2,9 @@
 ID: 71617
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0f8c1247-0f9f-4b0c-b721-613a409d2ee8
 date: '2023-04-06T22:58:17.056Z'
 title: Giant Porcupine «Suthorl»

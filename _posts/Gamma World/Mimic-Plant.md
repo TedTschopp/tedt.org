@@ -2,7 +2,9 @@
 ID: 71405
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 778b25a5-ceeb-4be2-8e7f-1d0c361ad44c
 date: '2023-04-06T22:58:17.055Z'
 title: Mimic Plant

@@ -2,7 +2,9 @@
 ID: 71252
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cb1885a7-51b7-4151-9e01-6eebe7ff76f1
 date: '2023-04-06T22:58:17.054Z'
 title: Giggle Bugs (Caterpillars)

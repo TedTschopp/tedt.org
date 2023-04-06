@@ -2,7 +2,9 @@
 ID: 71057
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f1044d0a-63db-433e-819e-e6fec464ddf1
 date: '2023-04-06T22:58:17.053Z'
 title: Bear

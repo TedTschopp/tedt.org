@@ -2,7 +2,9 @@
 ID: 71611
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d990adb8-8207-4901-a3e8-3ba851515890
 date: '2023-04-06T22:58:17.056Z'
 title: Sticky

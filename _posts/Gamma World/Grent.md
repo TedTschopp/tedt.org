@@ -2,7 +2,9 @@
 ID: 71263
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bb3c016c-c8bc-4818-bfea-563bc00c7ff1
 date: '2023-04-06T22:58:17.054Z'
 title: Grent

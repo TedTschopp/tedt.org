@@ -2,7 +2,9 @@
 ID: 71201
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 028c6781-d9a0-448c-ae29-04fca3025421
 date: '2023-04-06T22:58:17.053Z'
 title: Stonefish «Ert»

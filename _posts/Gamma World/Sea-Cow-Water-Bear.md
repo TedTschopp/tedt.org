@@ -2,7 +2,9 @@
 ID: 71686
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5d1dce46-96c4-4071-8865-8f8c94e41793
 date: '2023-04-06T22:58:17.056Z'
 title: Sea Cow «Water Bear»

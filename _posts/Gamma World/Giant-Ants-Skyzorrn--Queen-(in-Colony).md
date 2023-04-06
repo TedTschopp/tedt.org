@@ -2,7 +2,9 @@
 ID: 71570
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cd5e8430-15b9-43a6-9e3b-73514e173591
 date: '2023-04-06T22:58:17.056Z'
 title: Giant Ants «Skyzorr'n - Queen (in Colony)»

@@ -2,7 +2,9 @@
 ID: 71021
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 808a9d5e-6eb9-4208-a437-a24c362a13aa
 date: '2023-04-06T22:58:17.053Z'
 title: Architect

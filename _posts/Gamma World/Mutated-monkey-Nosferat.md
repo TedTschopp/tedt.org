@@ -2,7 +2,9 @@
 ID: 71445
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4e7c6657-b925-452f-91dc-1ca0e18d4bed
 date: '2023-04-06T22:58:17.055Z'
 title: Mutated monkey «Nos'ferat»

@@ -2,7 +2,9 @@
 ID: 71292
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c74ee907-7b74-4eb8-a578-9fd4798fbe03
 date: '2023-04-06T22:58:17.054Z'
 title: Horl Ep

@@ -2,7 +2,9 @@
 ID: 71517
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3d9d0698-7ebd-4f4d-9b6a-24e02e9ba1ae
 date: '2023-04-06T22:58:17.055Z'
 title: Sathpernert's Rats

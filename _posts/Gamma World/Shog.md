@@ -2,7 +2,9 @@
 ID: 71553
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d9edba47-1fb9-4181-add4-890c0676b99b
 date: '2023-04-06T22:58:17.056Z'
 title: Shog

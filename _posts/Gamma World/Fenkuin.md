@@ -2,7 +2,9 @@
 ID: 71212
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cc363416-469f-4439-a4ce-5e350698a5cb
 date: '2023-04-06T22:58:17.054Z'
 title: Fenkuin

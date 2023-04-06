@@ -2,7 +2,9 @@
 ID: 71603
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c95de0cd-1fc9-439c-9c70-49c30cb6b11c
 date: '2023-04-06T22:58:17.056Z'
 title: Squeaker

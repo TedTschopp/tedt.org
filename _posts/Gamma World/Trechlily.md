@@ -2,7 +2,9 @@
 ID: 71660
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 68311f0a-ae32-49bd-a930-27f722b2981a
 date: '2023-04-06T22:58:17.056Z'
 title: Trechlily

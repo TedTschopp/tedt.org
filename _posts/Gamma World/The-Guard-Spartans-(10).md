@@ -2,7 +2,9 @@
 ID: 71640
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ba927c09-6eaf-46d6-934c-c871af430975
 date: '2023-04-06T22:58:17.056Z'
 title: The Guard Spartans (10)

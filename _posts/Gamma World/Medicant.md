@@ -2,7 +2,9 @@
 ID: 71396
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7fb1ec39-4418-4ec7-ac75-5137ef085adc
 date: '2023-04-06T22:58:17.055Z'
 title: Medicant

@@ -2,7 +2,9 @@
 ID: 71600
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fcd5868e-5739-44c9-ac9c-0fb3e519ab5c
 date: '2023-04-06T22:58:17.056Z'
 title: Bot Bashers «Spitter»

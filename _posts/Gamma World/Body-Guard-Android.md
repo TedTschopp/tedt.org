@@ -2,7 +2,9 @@
 ID: 71016
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a07ac128-2028-4225-baf0-e2e5227a00a1
 date: '2023-04-06T22:58:17.053Z'
 title: Body Guard «Android»

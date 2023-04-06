@@ -2,7 +2,9 @@
 ID: 71642
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8a4324a4-e3df-4f35-9f2e-5a471584e9c9
 date: '2023-04-06T22:58:17.056Z'
 title: The Trek Droid

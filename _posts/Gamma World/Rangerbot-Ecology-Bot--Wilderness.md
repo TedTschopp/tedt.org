@@ -2,7 +2,9 @@
 ID: 71185
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 306a587e-ec15-4b04-b7ce-8ebabac0c89e
 date: '2023-04-06T22:58:17.053Z'
 title: Rangerbot «Ecology Bot - Wilderness»

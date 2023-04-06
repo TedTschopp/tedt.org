@@ -2,7 +2,9 @@
 ID: 71024
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 318d4d37-54e2-4a30-9f70-0ca45aacfd38
 date: '2023-04-06T22:58:17.053Z'
 title: Dragon Bugs «Arn»

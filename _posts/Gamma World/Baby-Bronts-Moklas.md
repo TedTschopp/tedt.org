@@ -2,7 +2,9 @@
 ID: 71414
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fe0a3f89-1147-4a88-a530-829fc26ae993
 date: '2023-04-06T22:58:17.055Z'
 title: Baby Bronts «Moklas»

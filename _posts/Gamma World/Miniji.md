@@ -2,7 +2,9 @@
 ID: 71410
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 220676f8-cb43-4633-bad9-ea316bc8ff9d
 date: '2023-04-06T22:58:17.055Z'
 title: Miniji

@@ -2,7 +2,9 @@
 ID: 71654
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 739f2bc1-a2e8-402c-980a-889efde76898
 date: '2023-04-06T22:58:17.056Z'
 title: Timon

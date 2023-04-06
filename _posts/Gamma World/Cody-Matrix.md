@@ -2,7 +2,9 @@
 ID: 71126
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b5231cb5-56c2-4f7a-bcbf-9c04cd1cc775
 date: '2023-04-06T22:58:17.053Z'
 title: Cody Matrix

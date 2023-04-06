@@ -2,7 +2,9 @@
 ID: 71700
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0a96ba85-62c1-4d4a-8e69-661ff7cf55c8
 date: '2023-04-06T22:58:17.056Z'
 title: X Unit Sleigh

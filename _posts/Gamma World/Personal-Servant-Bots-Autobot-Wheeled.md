@@ -2,7 +2,9 @@
 ID: 71031
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3b5ce066-88fc-4081-84c3-1a98f5b3d784
 date: '2023-04-06T22:58:17.053Z'
 title: Personal Servant Bots «Autobot, Wheeled»

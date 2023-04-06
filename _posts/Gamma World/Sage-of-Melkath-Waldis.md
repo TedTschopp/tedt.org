@@ -2,7 +2,9 @@
 ID: 71681
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3ce4ae04-439b-4c7f-a363-4cb793cc5a8f
 date: '2023-04-06T22:58:17.056Z'
 title: Sage of Melkath «Waldis»

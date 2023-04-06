@@ -2,7 +2,9 @@
 ID: 71090
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9e384af6-2397-4597-bb56-6c1cf70995cd
 date: '2023-04-06T22:58:17.053Z'
 title: Brutus

@@ -2,7 +2,9 @@
 ID: 71208
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d272ad83-67d1-4b83-ab56-b2742d09644d
 date: '2023-04-06T22:58:17.054Z'
 title: Familiar

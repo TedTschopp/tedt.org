@@ -2,7 +2,9 @@
 ID: 71397
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: db6ca11b-4abc-4e50-b6b7-05252d9a1c6c
 date: '2023-04-06T22:58:17.055Z'
 title: Mediterranean

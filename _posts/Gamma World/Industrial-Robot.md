@@ -2,7 +2,9 @@
 ID: 71309
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 72c4cf88-8587-47b4-9e94-aa6c088c21fb
 date: '2023-04-06T22:58:17.054Z'
 title: Industrial Robot

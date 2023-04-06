@@ -2,7 +2,9 @@
 ID: 71503
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f4302d64-cba8-49f2-ac3d-94dfe51e117d
 date: '2023-04-06T22:58:17.055Z'
 title: Rhya

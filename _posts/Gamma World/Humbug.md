@@ -2,7 +2,9 @@
 ID: 71301
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f568233a-b48a-41d7-b0e5-a8248f0d6f6d
 date: '2023-04-06T22:58:17.054Z'
 title: Humbug

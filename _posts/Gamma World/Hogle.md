@@ -2,7 +2,9 @@
 ID: 71286
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 03f5ae40-3124-4a75-bc56-f745a28d3dd3
 date: '2023-04-06T22:58:17.054Z'
 title: Hogle

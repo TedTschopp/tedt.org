@@ -2,7 +2,9 @@
 ID: 71598
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bacdec85-5e9d-4602-96e7-7a640055d1df
 date: '2023-04-06T22:58:17.056Z'
 title: Spiny Craw

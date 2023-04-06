@@ -2,7 +2,9 @@
 ID: 71457
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e1ea8ca9-d4e4-40cf-b399-1d548b303948
 date: '2023-04-06T22:58:17.055Z'
 title: Orcoid

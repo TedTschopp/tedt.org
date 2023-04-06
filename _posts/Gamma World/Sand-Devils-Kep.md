@@ -2,7 +2,9 @@
 ID: 71341
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: dcf24417-ea6a-418a-8153-22ead1863fea
 date: '2023-04-06T22:58:17.054Z'
 title: Sand Devils «Kep»

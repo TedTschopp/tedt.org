@@ -2,7 +2,9 @@
 ID: 71325
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 25e0972d-0a16-4e49-8afb-16dfd98785df
 date: '2023-04-06T22:58:17.054Z'
 title: Jocko

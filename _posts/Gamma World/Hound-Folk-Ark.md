@@ -2,7 +2,9 @@
 ID: 71022
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 083aa364-46a7-48f1-ae17-39f53b0bfa15
 date: '2023-04-06T22:58:17.053Z'
 title: Hound Folk «Ark»

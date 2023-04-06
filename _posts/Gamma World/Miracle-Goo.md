@@ -2,7 +2,9 @@
 ID: 71411
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: dff388dd-69aa-41c3-8b9d-2e298b15a387
 date: '2023-04-06T22:58:17.055Z'
 title: Miracle Goo

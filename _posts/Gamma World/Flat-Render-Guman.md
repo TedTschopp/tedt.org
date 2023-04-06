@@ -2,7 +2,9 @@
 ID: 71267
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9f05cfd5-cbdc-4523-8a92-d85534578355
 date: '2023-04-06T22:58:17.054Z'
 title: Flat Render «Guman»

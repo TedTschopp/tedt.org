@@ -2,7 +2,9 @@
 ID: 71211
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 19231172-355e-4c19-b5f7-70400da79c27
 date: '2023-04-06T22:58:17.054Z'
 title: Man-Fish «Fen»

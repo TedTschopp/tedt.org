@@ -2,7 +2,9 @@
 ID: 71310
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e9ddaf3b-25e2-4f78-9173-bf58f0f46889
 date: '2023-04-06T22:58:17.054Z'
 title: Black Living Mold «Ini'xon»

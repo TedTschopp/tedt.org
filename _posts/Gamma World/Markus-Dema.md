@@ -2,7 +2,9 @@
 ID: 71392
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ff676bcf-e4d3-4c6e-99af-428250ffd9c8
 date: '2023-04-06T22:58:17.055Z'
 title: Markus Dema

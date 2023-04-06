@@ -2,7 +2,9 @@
 ID: 71285
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ce0583e8-af89-4cf4-9fba-07e3649f7113
 date: '2023-04-06T22:58:17.054Z'
 title: Thunderbirds «Hogart»

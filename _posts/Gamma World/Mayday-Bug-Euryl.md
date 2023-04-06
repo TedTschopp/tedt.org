@@ -2,7 +2,9 @@
 ID: 71204
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 28ec720e-ae0f-474e-8445-f5d67b6c3dc9
 date: '2023-04-06T22:58:17.054Z'
 title: Mayday Bug «Euryl»

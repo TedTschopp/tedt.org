@@ -2,7 +2,9 @@
 ID: 71104
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c748eabc-8f9a-49cd-ad60-1cb8c7cf2cc4
 date: '2023-04-06T22:58:17.053Z'
 title: Cargolifter «Cargolifter - Heavy»

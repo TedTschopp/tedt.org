@@ -2,7 +2,9 @@
 ID: 71667
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 3dee699a-6dfd-46ef-9cb7-40782754f4bf
 date: '2023-04-06T22:58:17.056Z'
 title: Ty'ghone

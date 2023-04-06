@@ -2,7 +2,9 @@
 ID: 71604
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 19b4e8a3-8342-4421-811e-d010fd8d8d86
 date: '2023-04-06T22:58:17.056Z'
 title: King Rats «Squeeker»

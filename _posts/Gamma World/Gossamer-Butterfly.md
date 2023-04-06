@@ -2,7 +2,9 @@
 ID: 71258
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b3b5eb43-0910-4cfb-8422-8d1ffc1ffab3
 date: '2023-04-06T22:58:17.054Z'
 title: Gossamer Butterfly

@@ -2,7 +2,9 @@
 ID: 71453
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 122f3cd4-b9e3-4228-ace4-ac3261b4088b
 date: '2023-04-06T22:58:17.055Z'
 title: Octhofus, Kianth

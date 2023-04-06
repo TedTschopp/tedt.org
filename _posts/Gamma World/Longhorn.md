@@ -2,7 +2,9 @@
 ID: 71370
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9d682b5b-f04c-4815-9364-dab52b6d4ef5
 date: '2023-04-06T22:58:17.055Z'
 title: Longhorn

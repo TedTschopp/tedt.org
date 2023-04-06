@@ -2,7 +2,9 @@
 ID: 71575
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6ad03736-adf5-4c63-aee5-fade61e19ec1
 date: '2023-04-06T22:58:17.056Z'
 title: Giant Sea Slug «Slake»

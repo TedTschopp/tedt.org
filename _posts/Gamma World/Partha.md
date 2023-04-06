@@ -2,7 +2,9 @@
 ID: 71463
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4fcc9412-8b7d-4846-b548-724b0669db00
 date: '2023-04-06T22:58:17.055Z'
 title: Partha

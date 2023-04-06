@@ -2,7 +2,9 @@
 ID: 71398
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: db4cceab-a26b-4bae-8d1b-612c4e4dc01d
 date: '2023-04-06T22:58:17.055Z'
 title: Slime Devils «Menarl»

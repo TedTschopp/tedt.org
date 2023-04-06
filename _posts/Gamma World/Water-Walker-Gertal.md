@@ -2,7 +2,9 @@
 ID: 71246
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d2eb24a4-4a21-417e-9deb-b3b10e861754
 date: '2023-04-06T22:58:17.054Z'
 title: Water Walker «Ger'tal»

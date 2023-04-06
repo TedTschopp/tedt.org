@@ -2,7 +2,9 @@
 ID: 71194
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ae13d232-91d4-40dd-b70a-835bf1242140
 date: '2023-04-06T22:58:17.053Z'
 title: Heavy Construction Bot «Engineering Bot, Heavy Duty»

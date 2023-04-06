@@ -2,7 +2,9 @@
 ID: 71312
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ec14d39b-67dd-454a-80db-ec2c3371d022
 date: '2023-04-06T22:58:17.054Z'
 title: Intensity Beetle

@@ -2,7 +2,9 @@
 ID: 71216
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 0aa4718c-54d2-495b-bb5c-106feba03e1c
 date: '2023-04-06T22:58:17.054Z'
 title: Filamentron

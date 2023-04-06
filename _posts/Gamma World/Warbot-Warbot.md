@@ -2,7 +2,9 @@
 ID: 71683
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4b9ab699-0b2b-433d-8e55-1ccc3ebda992
 date: '2023-04-06T22:58:17.056Z'
 title: Warbot «Warbot»

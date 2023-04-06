@@ -2,7 +2,9 @@
 ID: 71586
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d998d42b-6f43-4757-9e27-379bbd9b67b9
 date: '2023-04-06T22:58:17.056Z'
 title: Iron Beast «Smovbai»

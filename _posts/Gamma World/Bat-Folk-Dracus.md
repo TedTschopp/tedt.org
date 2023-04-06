@@ -2,7 +2,9 @@
 ID: 71171
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: cdd78857-bd56-434b-873e-b11e172a0264
 date: '2023-04-06T22:58:17.053Z'
 title: Bat Folk «Dracus»

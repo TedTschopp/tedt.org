@@ -2,7 +2,9 @@
 ID: 71665
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b0f00748-345d-47ed-acd2-322fc39ebd9c
 date: '2023-04-06T22:58:17.056Z'
 title: Giant Bat «Tsorsut»

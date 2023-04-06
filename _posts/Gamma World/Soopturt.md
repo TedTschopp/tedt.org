@@ -2,7 +2,9 @@
 ID: 71590
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 31b60302-e178-4dc5-ac80-1e01f8770a4b
 date: '2023-04-06T22:58:17.056Z'
 title: Soopturt

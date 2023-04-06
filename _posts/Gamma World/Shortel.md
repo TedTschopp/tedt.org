@@ -2,7 +2,9 @@
 ID: 71554
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 00987e82-8fca-4df8-98ac-e0a2f6ecea5c
 date: '2023-04-06T22:58:17.056Z'
 title: Shortel

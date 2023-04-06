@@ -2,7 +2,9 @@
 ID: 71638
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b5f2cb2b-3a35-4b29-b4c3-836a1b04d078
 date: '2023-04-06T22:58:17.056Z'
 title: Tesseract Spider

@@ -2,7 +2,9 @@
 ID: 71096
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c15b3d17-fb77-42c3-804d-bd6a2643462f
 date: '2023-04-06T22:58:17.053Z'
 title: Flitters «Buzzbirds»

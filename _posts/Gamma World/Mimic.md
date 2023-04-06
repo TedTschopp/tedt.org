@@ -2,7 +2,9 @@
 ID: 71404
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5dba1974-527e-4823-8f84-9c4d497d4b14
 date: '2023-04-06T22:58:17.055Z'
 title: Mimic

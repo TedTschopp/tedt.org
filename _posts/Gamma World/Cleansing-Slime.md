@@ -2,7 +2,9 @@
 ID: 71123
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fc746ff5-119a-4874-80c8-09977a73d809
 date: '2023-04-06T22:58:17.053Z'
 title: Cleansing Slime

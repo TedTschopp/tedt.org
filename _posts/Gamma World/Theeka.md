@@ -2,7 +2,9 @@
 ID: 71643
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 93f1b9dc-919a-4ac8-85e6-a36ec8418dfe
 date: '2023-04-06T22:58:17.056Z'
 title: Theeka

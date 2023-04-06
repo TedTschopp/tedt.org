@@ -2,7 +2,9 @@
 ID: 71464
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8ebb7eca-a91b-4a42-a027-6e534330f364
 date: '2023-04-06T22:58:17.055Z'
 title: Gamma Bushes «Perth»

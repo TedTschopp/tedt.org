@@ -2,7 +2,9 @@
 ID: 71012
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c9b534ea-3877-4d37-963f-24365d39c38c
 date: '2023-04-06T22:58:17.053Z'
 title: Thinker «Android»

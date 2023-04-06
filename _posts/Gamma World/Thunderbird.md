@@ -2,7 +2,9 @@
 ID: 71647
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b89fe164-86e3-4568-b417-f9bc17713fca
 date: '2023-04-06T22:58:17.056Z'
 title: Thunderbird

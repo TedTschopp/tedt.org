@@ -2,7 +2,9 @@
 ID: 71236
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b2c559b1-cd69-4d6d-b4c4-d6a551c8ac7a
 date: '2023-04-06T22:58:17.054Z'
 title: Flying Lobster «Garbug»

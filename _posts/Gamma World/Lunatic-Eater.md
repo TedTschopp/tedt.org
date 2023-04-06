@@ -2,7 +2,9 @@
 ID: 71375
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: aa3fda29-d7dd-4668-b69e-53afa9aef966
 date: '2023-04-06T22:58:17.055Z'
 title: Lunatic Eater

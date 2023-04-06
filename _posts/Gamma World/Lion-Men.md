@@ -2,7 +2,9 @@
 ID: 71364
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bba98f16-a27a-43cc-b1fc-5101edae337a
 date: '2023-04-06T22:58:17.054Z'
 title: Lion Men

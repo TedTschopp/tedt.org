@@ -2,7 +2,9 @@
 ID: 71516
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4d00105a-58f6-4884-b6a9-7cb28de0f419
 date: '2023-04-06T22:58:17.055Z'
 title: Bigfoot «Sasquatch»

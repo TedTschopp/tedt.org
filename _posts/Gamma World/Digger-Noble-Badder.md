@@ -2,7 +2,9 @@
 ID: 71038
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 236eaec7-b4ae-44e0-b347-0a65ec7d6e2c
 date: '2023-04-06T22:58:17.053Z'
 title: Digger Noble «Badder»

@@ -2,7 +2,9 @@
 ID: 71226
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4aa446c5-7196-4359-9e8d-c80d250397a5
 date: '2023-04-06T22:58:17.054Z'
 title: Frakenpet

@@ -2,7 +2,9 @@
 ID: 71003
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5158fc4b-200d-4a11-a5be-08b260082338
 date: '2023-04-06T22:58:17.053Z'
 title: Advoid

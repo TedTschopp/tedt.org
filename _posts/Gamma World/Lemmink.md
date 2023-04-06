@@ -2,7 +2,9 @@
 ID: 71359
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ef3b53ba-23fb-4e9f-b8fd-31a6a7e9f733
 date: '2023-04-06T22:58:17.054Z'
 title: Lemmink

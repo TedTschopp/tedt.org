@@ -2,7 +2,9 @@
 ID: 71354
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 23e15ced-486f-42d8-ac7e-f15cbeaa2bae
 date: '2023-04-06T22:58:17.054Z'
 title: Blue Wing «Lajjin »

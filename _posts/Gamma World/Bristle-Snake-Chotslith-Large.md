@@ -2,7 +2,9 @@
 ID: 71116
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 08bfb287-5e01-4018-b810-347d1ec19201
 date: '2023-04-06T22:58:17.053Z'
 title: Bristle Snake «Chotslith, Large»

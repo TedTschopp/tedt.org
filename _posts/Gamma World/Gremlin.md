@@ -2,7 +2,9 @@
 ID: 71261
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 41a2c5c9-3784-4e1f-9d05-36dcba191ff8
 date: '2023-04-06T22:58:17.054Z'
 title: Gremlin

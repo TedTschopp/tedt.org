@@ -2,7 +2,9 @@
 ID: 71447
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2a225b37-f506-499e-9ce0-8609013b4962
 date: '2023-04-06T22:58:17.055Z'
 title: Plague Beetle «Nurglez»

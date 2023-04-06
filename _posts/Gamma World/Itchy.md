@@ -2,7 +2,9 @@
 ID: 71314
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: c30e7342-4fc3-467f-aa9c-214a94956421
 date: '2023-04-06T22:58:17.054Z'
 title: Itchy

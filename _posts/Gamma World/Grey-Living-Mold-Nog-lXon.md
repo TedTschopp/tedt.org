@@ -2,7 +2,9 @@
 ID: 71442
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4cbaa87b-a32d-440d-b2a1-e751e45b01f6
 date: '2023-04-06T22:58:17.055Z'
 title: Grey Living Mold «Nog l'Xon»

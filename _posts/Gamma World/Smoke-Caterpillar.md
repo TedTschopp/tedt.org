@@ -2,7 +2,9 @@
 ID: 71584
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ba89a54f-3ee9-4609-8004-7fce28ffa33a
 date: '2023-04-06T22:58:17.056Z'
 title: Smoke Caterpillar

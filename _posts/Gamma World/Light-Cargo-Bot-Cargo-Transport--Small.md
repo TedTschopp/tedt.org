@@ -2,7 +2,9 @@
 ID: 71103
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d708ad6b-5b48-47b3-b6c0-4ba3e2dcb501
 date: '2023-04-06T22:58:17.053Z'
 title: Light Cargo Bot «Cargo Transport - Small»

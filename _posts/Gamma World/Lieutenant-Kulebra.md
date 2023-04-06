@@ -2,7 +2,9 @@
 ID: 71361
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8a929ac2-4aac-416f-95f9-f2236d652cff
 date: '2023-04-06T22:58:17.054Z'
 title: Lieutenant Kulebra

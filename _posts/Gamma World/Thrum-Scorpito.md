@@ -2,7 +2,9 @@
 ID: 71520
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 703a8983-b7fc-4337-9012-1c9d43315483
 date: '2023-04-06T22:58:17.055Z'
 title: Thrum «Scorpito»

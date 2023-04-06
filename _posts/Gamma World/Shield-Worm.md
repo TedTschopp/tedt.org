@@ -2,7 +2,9 @@
 ID: 71549
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5278b2b3-cf29-4f90-9d04-e22b14603fb9
 date: '2023-04-06T22:58:17.056Z'
 title: Shield Worm

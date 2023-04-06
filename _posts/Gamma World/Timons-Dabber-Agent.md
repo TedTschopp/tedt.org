@@ -2,7 +2,9 @@
 ID: 71655
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 99d7be3b-78c4-4fff-9171-40ed5af12d76
 date: '2023-04-06T22:58:17.056Z'
 title: Timon's Dabber Agent

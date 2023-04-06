@@ -2,7 +2,9 @@
 ID: 71641
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ae3c59ea-7467-42b9-8a20-a891350ff855
 date: '2023-04-06T22:58:17.056Z'
 title: The Master

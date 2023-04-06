@@ -2,7 +2,9 @@
 ID: 71075
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 09f7f83c-2f61-4aeb-aa8e-6517e64788fa
 date: '2023-04-06T22:58:17.053Z'
 title: Blood Wasp

@@ -2,7 +2,9 @@
 ID: 71243
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 09fa08d1-2efd-4a27-ac89-ad323d1b5527
 date: '2023-04-06T22:58:17.054Z'
 title: Bot «General Household Robotoid»

@@ -2,7 +2,9 @@
 ID: 71612
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 536ced59-da10-48c7-b548-a4fc4c57e52d
 date: '2023-04-06T22:58:17.056Z'
 title: Stilt Palm

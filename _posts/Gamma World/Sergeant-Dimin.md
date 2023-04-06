@@ -2,7 +2,9 @@
 ID: 71541
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 744da0e7-e1f8-482c-a74c-8f7e4833e83c
 date: '2023-04-06T22:58:17.056Z'
 title: Sergeant Dimin

@@ -2,7 +2,9 @@
 ID: 71119
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5edc6f38-25df-485d-8ce0-c1b3074fd841
 date: '2023-04-06T22:58:17.053Z'
 title: Nymph «Cid'Tal»

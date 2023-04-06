@@ -2,7 +2,9 @@
 ID: 71662
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1e26ae93-3e1d-4e51-9713-06319c8a600c
 date: '2023-04-06T22:58:17.056Z'
 title: Flailers «Triphants»

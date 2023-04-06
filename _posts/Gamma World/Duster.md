@@ -2,7 +2,9 @@
 ID: 71176
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 99019c21-2980-4d8b-b901-46e18f2fbc0f
 date: '2023-04-06T22:58:17.053Z'
 title: Duster

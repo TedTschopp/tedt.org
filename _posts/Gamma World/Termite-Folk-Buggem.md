@@ -2,7 +2,9 @@
 ID: 71093
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2113ad32-6b17-47fd-95ac-9cbe64a4d6a6
 date: '2023-04-06T22:58:17.053Z'
 title: Termite Folk «Buggem»

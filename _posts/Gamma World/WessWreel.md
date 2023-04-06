@@ -2,7 +2,9 @@
 ID: 71692
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ff064cf6-3904-4064-b44a-3bde2c7b5625
 date: '2023-04-06T22:58:17.056Z'
 title: WessWreel

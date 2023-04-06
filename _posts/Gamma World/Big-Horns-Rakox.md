@@ -2,7 +2,9 @@
 ID: 71488
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 09930368-60f5-43b0-9bd5-374ca12d7b2f
 date: '2023-04-06T22:58:17.055Z'
 title: Big Horns «Rakox»

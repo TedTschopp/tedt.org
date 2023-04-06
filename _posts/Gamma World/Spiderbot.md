@@ -2,7 +2,9 @@
 ID: 71596
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 313e1cc2-db4f-47ae-840a-5455c9957a70
 date: '2023-04-06T22:58:17.056Z'
 title: Spiderbot

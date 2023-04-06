@@ -2,7 +2,9 @@
 ID: 71045
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a4d91564-9eec-4f64-b74e-bcc0508e0c20
 date: '2023-04-06T22:58:17.053Z'
 title: Bandit 4

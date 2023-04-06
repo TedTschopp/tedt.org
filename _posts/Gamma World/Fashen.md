@@ -2,7 +2,9 @@
 ID: 71209
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: db9053a4-eeeb-4002-862e-82e84d016887
 date: '2023-04-06T22:58:17.054Z'
 title: Fashen

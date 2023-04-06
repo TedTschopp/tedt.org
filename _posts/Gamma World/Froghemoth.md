@@ -2,7 +2,9 @@
 ID: 71231
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 69e4b005-168d-4284-b9c9-61d9f859437a
 date: '2023-04-06T22:58:17.054Z'
 title: Froghemoth

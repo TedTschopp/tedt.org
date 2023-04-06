@@ -2,7 +2,9 @@
 ID: 71157
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4c535fe3-1d92-48d8-8b18-a99a20db1578
 date: '2023-04-06T22:58:17.053Z'
 title: Deathmoss

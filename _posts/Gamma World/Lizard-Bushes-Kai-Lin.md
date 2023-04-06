@@ -2,7 +2,9 @@
 ID: 71334
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b2517638-d15a-49c9-8fe0-92117c36d5a6
 date: '2023-04-06T22:58:17.054Z'
 title: Lizard Bushes «Kai Lin»

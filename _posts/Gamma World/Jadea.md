@@ -2,7 +2,9 @@
 ID: 71317
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 535e8272-3aab-4613-a07d-50fcba4b6c89
 date: '2023-04-06T22:58:17.054Z'
 title: Jadea

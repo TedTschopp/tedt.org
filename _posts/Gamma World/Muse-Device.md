@@ -2,7 +2,9 @@
 ID: 71420
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 49a731fa-2467-4a99-bbe9-d08389f85434
 date: '2023-04-06T22:58:17.055Z'
 title: Muse Device

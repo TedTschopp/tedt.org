@@ -2,7 +2,9 @@
 ID: 71540
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9ea2a85b-e8ad-453f-9fdd-b90beaac8980
 date: '2023-04-06T22:58:17.056Z'
 title: Thought Masters «Serf»

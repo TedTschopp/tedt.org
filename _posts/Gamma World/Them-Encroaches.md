@@ -2,7 +2,9 @@
 ID: 71192
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ca6affea-27c4-477c-8480-a825f3e2d572
 date: '2023-04-06T22:58:17.053Z'
 title: Them «Encroaches»

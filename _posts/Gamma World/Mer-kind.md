@@ -2,7 +2,9 @@
 ID: 71400
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7a0db917-2f23-40e5-b7e2-009647f8560a
 date: '2023-04-06T22:58:17.055Z'
 title: Mer-kind

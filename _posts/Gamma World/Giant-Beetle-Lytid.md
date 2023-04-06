@@ -2,7 +2,9 @@
 ID: 71377
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e148489e-3df9-4b02-a5a8-8c6848531e01
 date: '2023-04-06T22:58:17.055Z'
 title: Giant Beetle «Lytid»

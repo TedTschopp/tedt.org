@@ -2,7 +2,9 @@
 ID: 71621
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 68c6d13b-a721-4238-a518-39aa9ef3180c
 date: '2023-04-06T22:58:17.056Z'
 title: Tangh

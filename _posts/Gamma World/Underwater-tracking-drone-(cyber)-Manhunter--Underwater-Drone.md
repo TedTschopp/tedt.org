@@ -2,7 +2,9 @@
 ID: 71389
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bf93f510-d354-4734-9810-07dc17b00a0f
 date: '2023-04-06T22:58:17.055Z'
 title: Underwater tracking drone (cyber) «Manhunter - Underwater Drone»

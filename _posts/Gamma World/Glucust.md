@@ -2,7 +2,9 @@
 ID: 71257
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 481ea7f6-6b75-44df-9c29-8a17b76d6c77
 date: '2023-04-06T22:58:17.054Z'
 title: Glucust

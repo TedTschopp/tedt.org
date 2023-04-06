@@ -2,7 +2,9 @@
 ID: 71578
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 553d9b02-7c45-4532-aaa3-f95db9594b66
 date: '2023-04-06T22:58:17.056Z'
 title: Slembaith

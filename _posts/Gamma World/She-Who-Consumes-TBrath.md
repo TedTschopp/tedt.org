@@ -2,7 +2,9 @@
 ID: 71619
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b8dac1b9-d61a-4a20-9a4d-a6148b8ce406
 date: '2023-04-06T22:58:17.056Z'
 title: She Who Consumes «T'Brath»

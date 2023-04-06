@@ -2,7 +2,9 @@
 ID: 71137
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 64188f64-4613-4167-b4d8-f91f3a4e3afb
 date: '2023-04-06T22:58:17.053Z'
 title: Water Crep «Crep, Pink»

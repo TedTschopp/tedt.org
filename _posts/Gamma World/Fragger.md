@@ -2,7 +2,9 @@
 ID: 71225
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: bd6def42-6b96-4300-9857-603fd3b5c8c4
 date: '2023-04-06T22:58:17.054Z'
 title: Fragger

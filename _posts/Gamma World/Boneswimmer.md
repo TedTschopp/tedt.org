@@ -2,7 +2,9 @@
 ID: 71078
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 382f6191-ccde-4237-9b6c-836c6a1f6c20
 date: '2023-04-06T22:58:17.053Z'
 title: Boneswimmer

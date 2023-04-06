@@ -2,7 +2,9 @@
 ID: 71669
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 9531349d-3313-4366-95a2-9c08e840dd24
 date: '2023-04-06T22:58:17.056Z'
 title: Ultravore

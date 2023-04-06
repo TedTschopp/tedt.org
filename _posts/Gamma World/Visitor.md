@@ -2,7 +2,9 @@
 ID: 71679
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e3b84b02-062b-43ea-aed1-27e444d5c082
 date: '2023-04-06T22:58:17.056Z'
 title: Visitor

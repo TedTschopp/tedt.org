@@ -2,7 +2,9 @@
 ID: 71401
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: a9feb0cf-dd40-49e1-ae57-2c365d7b2c5e
 date: '2023-04-06T22:58:17.055Z'
 title: Metal Microbe

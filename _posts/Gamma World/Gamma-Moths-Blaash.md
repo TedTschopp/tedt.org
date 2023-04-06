@@ -2,7 +2,9 @@
 ID: 71066
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d7ae6cf5-0268-4f1e-8e3b-741811f71e2c
 date: '2023-04-06T22:58:17.053Z'
 title: Gamma Moths «Blaash»

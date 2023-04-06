@@ -2,7 +2,9 @@
 ID: 71004
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: de9b8c7e-1552-413d-ab75-1e62a5e73734
 date: '2023-04-06T22:58:17.053Z'
 title: Sky Walkers «Aerosquid»

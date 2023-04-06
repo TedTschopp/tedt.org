@@ -2,7 +2,9 @@
 ID: 71213
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: d943d5db-0323-41c3-94d6-97e084c5081b
 date: '2023-04-06T22:58:17.054Z'
 title: Feral Machine

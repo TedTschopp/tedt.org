@@ -2,7 +2,9 @@
 ID: 71205
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 099c6f8c-977d-4b36-9008-44ef5b719738
 date: '2023-04-06T22:58:17.054Z'
 title: Exterminator, Flesh

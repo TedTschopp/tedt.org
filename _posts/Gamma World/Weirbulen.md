@@ -2,7 +2,9 @@
 ID: 71690
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 09cd1745-21d0-491f-91d3-6e652b87ca47
 date: '2023-04-06T22:58:17.056Z'
 title: Weirbulen

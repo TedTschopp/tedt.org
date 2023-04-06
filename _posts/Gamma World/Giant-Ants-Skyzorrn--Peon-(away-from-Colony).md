@@ -2,7 +2,9 @@
 ID: 71568
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 23ecbab2-18ab-4c9a-a15d-ce82e57f0e89
 date: '2023-04-06T22:58:17.056Z'
 title: Giant Ants «Skyzorr'n - Peon (away from Colony)»

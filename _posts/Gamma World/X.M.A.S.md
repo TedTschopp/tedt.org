@@ -2,7 +2,9 @@
 ID: 71701
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 5a16b391-1844-4e21-8c4d-354dbe462f34
 date: '2023-04-06T22:58:17.056Z'
 title: X.M.A.S

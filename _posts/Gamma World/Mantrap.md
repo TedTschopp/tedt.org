@@ -2,7 +2,9 @@
 ID: 71391
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 8d243e56-75c3-49d6-b33f-76b93a842d0d
 date: '2023-04-06T22:58:17.055Z'
 title: Mantrap

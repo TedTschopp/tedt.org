@@ -2,7 +2,9 @@
 ID: 71576
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: f99e515b-0165-4462-b972-429bea7566b9
 date: '2023-04-06T22:58:17.056Z'
 title: Slashworm

@@ -2,7 +2,9 @@
 ID: 71169
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ae61254f-d8dc-4863-8f28-d6847bf52b9e
 date: '2023-04-06T22:58:17.053Z'
 title: Doc Shadow

@@ -2,7 +2,9 @@
 ID: 71244
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: e642aa36-fcd0-4d74-bb18-5325e7c2b1b4
 date: '2023-04-06T22:58:17.054Z'
 title: Waiter Bots «General Robotoid»

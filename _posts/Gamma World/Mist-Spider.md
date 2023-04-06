@@ -2,7 +2,9 @@
 ID: 71413
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: fc3720fb-02b1-4677-8e93-2b506337d61e
 date: '2023-04-06T22:58:17.055Z'
 title: Mist Spider

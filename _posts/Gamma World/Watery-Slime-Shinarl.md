@@ -2,7 +2,9 @@
 ID: 71551
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 91466661-3e6b-49bc-bad2-94a89b3a9b7f
 date: '2023-04-06T22:58:17.056Z'
 title: Watery Slime «Shinarl»

@@ -2,7 +2,9 @@
 ID: 71013
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 4b1ade05-070a-4618-9dc6-7ce862afae92
 date: '2023-04-06T22:58:17.053Z'
 title: Worker «Android»

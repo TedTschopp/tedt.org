@@ -2,7 +2,9 @@
 ID: 71438
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 6f1a91d4-153e-467f-9975-a4f45733481f
 date: '2023-04-06T22:58:17.055Z'
 title: Nik'toth

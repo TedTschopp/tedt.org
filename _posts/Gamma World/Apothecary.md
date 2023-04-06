@@ -2,7 +2,9 @@
 ID: 71020
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2610cee0-7b9d-4673-a97e-0c37272d43e6
 date: '2023-04-06T22:58:17.053Z'
 title: Apothecary

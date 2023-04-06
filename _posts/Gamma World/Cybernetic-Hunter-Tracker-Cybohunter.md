@@ -2,7 +2,9 @@
 ID: 71145
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: db067255-f711-428f-95da-b1605d972f85
 date: '2023-04-06T22:58:17.053Z'
 title: Cybernetic Hunter/Tracker «Cybohunter»

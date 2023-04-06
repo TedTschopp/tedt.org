@@ -2,7 +2,9 @@
 ID: 71479
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: ff9e2392-fdfb-42f7-8f2c-43d960d2e52a
 date: '2023-04-06T22:58:17.055Z'
 title: Mind Singers «Psirens»

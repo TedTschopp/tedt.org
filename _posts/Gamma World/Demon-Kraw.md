@@ -2,7 +2,9 @@
 ID: 71348
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 2e8473e4-46f0-4f20-bb95-283589a40b5d
 date: '2023-04-06T22:58:17.054Z'
 title: Demon «Kraw»

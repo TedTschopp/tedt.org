@@ -2,7 +2,9 @@
 ID: 71674
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: b59a4869-aa5f-4895-a163-eb72d337d0b5
 date: '2023-04-06T22:58:17.056Z'
 title: Villain that Hides and Kills «Vene'aMub»

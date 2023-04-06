@@ -2,7 +2,9 @@
 ID: 71368
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 7dd3aaf9-f9ef-4988-976e-3f4568d4a50c
 date: '2023-04-06T22:58:17.054Z'
 title: Giant Locus «Locus»

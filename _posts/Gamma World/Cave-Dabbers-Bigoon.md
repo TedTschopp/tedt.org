@@ -2,7 +2,9 @@
 ID: 71064
 layout: GammaWorld
 permalink: /Gamma-World-Bestiary/
-categories: '["Gamma World", "Bestiary"]'
+categories:
+- Gamma World
+- Bestiary
 guid: 1ca5b9e4-5673-4ae0-8b60-4ab3d960d5d4
 date: '2023-04-06T22:58:17.053Z'
 title: Cave Dabbers «Bigoon»
