@@ -1,0 +1,180 @@
+---
+ID: 71407
+layout: GammaWorld
+permalink: /Gamma-World-Bestiary/
+categories: '["Gamma World", "Bestiary"]'
+guid: 6fea39f1-88db-4410-9c5c-285ab8163441
+date: '2023-04-06T22:58:17.055Z'
+title: Mingos
+creature_name_index: Mingos
+notes: ''
+genericname: ''
+creature_name: Mingos
+common_name: ''
+other_names: ''
+generic_name: ''
+source: GW05 - Rapture of the Deep
+author: ''
+name: Les Braun
+url: ''
+avatar: ''
+mcc_race: Animal
+role_in_gamma_world: Monster
+number_appearing_dice: 1d20
+morale: 1d6+2
+hit_dice: 3d6
+armor: '8'
+control: ''
+sensors: ''
+power: ''
+land_speed: 4/400/15
+air_speed: ''
+water_speed: 12/900/15
+burrowing_speed: ''
+climbing_speed: ''
+wheeled_speed: ''
+tread_speed: ''
+rotors_speed: ''
+hoverfan_speed: ''
+gav_pod_speed: ''
+ps: '13'
+dx: '15'
+cn: '10'
+ms: '11'
+ch: '6'
+in: '9'
+brain-cpu type: ''
+attack_1: 1 Beak (12)
+attack_2: ''
+attack_3: ''
+mutations: Gills, Sonar
+size: Small
+size_measurement: 1 Meter tall
+frequency: Uncommon
+organization: Flocks
+activity_cycle: Day
+diet: Omnivore
+tech_level: '0'
+tech_max: '0'
+artifacts: ''
+habitat: Coastal regions of the ocean out
+base_stock: Flamingo
+robot_classification: ''
+status: ''
+mission: ''
+description: Mingos are birdlike creatures descended from Flamingos. They are now
+  more at home in the water than they are on land. Mingos travel in groups to hunt
+  down their meals, often looking like a large school of long legged fish when encountered
+  underwater. They still retain the ability to hunt while standing along shores, but
+  find prey easier to catch in the open sea. They no longer have the capability to
+  fly because of their water adaptations. They have been known to attack humans/humanoids
+  when hungry.
+equipment: ''
+reactions: ''
+behavior: ''
+repair_and_healing: ''
+new_description: ''
+combat: ''
+society: ''
+brotherhood_of_thought: ''
+restorationsist: ''
+healers: ''
+iron_society: ''
+humans: ''
+monster_name: Mingos
+number_appearing: 1d20 (10)
+number_appearing_single: '10'
+init: '+4'
+monster_name_xx_number_if_applicable_init_+-x: 'Mingos (1d20 (10)): Init +4'
+ps_-_c: '13'
+dx_-_c: '15'
+cn_-_c: '10'
+ms_-_c: '11'
+ch_-_c: '6'
+in_-_c: '9'
+weapon: Low Tech Level
+plus_to_hit_and_damage_range_from_stats: '1'
+plus_to_range_from_level: ''
+plus_to_range: '3'
+plus_to_hit_and_damage_melee_from_stats: '1'
+plus_to_melee_from_level: ''
+plus_to_melee: '3'
+plus_to_generic_attack_from_level: '2'
+attack_1_number_of_attacks: '1'
+attack_1_attack_name: Beak
+attack_1_type: melee
+attack_1_range: ''
+attack_1_attack_dice: '12'
+attack_1_bonus_to_hit: '3'
+attack_1_bonus_to_damage: '1'
+new_attack_1: Beak melee +3 (1d12+1)
+attack_2_number_of_attacks: ''
+attack_2_attack_name: ''
+attack_2_type: ''
+attack_2_range: ''
+attack_2_attack_dice: ''
+attack_2_bonus_to_hit: ''
+attack_2_bonus_to_damage: ''
+new_attack_2: ''
+attack_3_number_of_attacks: ''
+attack_3_attack_name: ''
+attack_3_type: ''
+attack_3_range: ''
+attack_3_attack_dice: ''
+attack_3_bonus_to_hit: ''
+attack_3_bonus_to_damage: ''
+new_attack_3: ''
+atk_weapon_+-x_melee_xdx_andor_weapon_+-x_missile_fire_xdx_range: atk beak melee +3
+  (1d12+1)
+ac_xx: AC 18
+effective_class_level: '3'
+new_level: '5'
+new_hit_dice: HD 5D7
+new_hd_xdx_plus_minus: HD 5D7
+new_hp_xx_or_hp_xx_each_or_hp_xx_xx_xx: hp 20 each
+new_hit_points: '20'
+d6_hitdice: '10'
+total_gw_hit_points_plus_constant: '60'
+mv_xx: MV 19' or Swim 19'
+walk: 19'
+fly: ''
+swim: Swim 19'
+burrow: ''
+climb: ''
+wheels: ''
+treads: ''
+rotors: ''
+hoverfans: ''
+gravpods: ''
+new_action_dice: 1d20
+sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will +0
+fort_save: '0'
+ref_save: '1'
+will: '0'
+normal_text: "Mingos (1d20 (10)): Init +4; atk beak melee +3 (1d12+1); AC 18; HD 5D7\
+  \ hp 20 each; MV 19' or Swim 19' ; 1d20; SV Fort +0, Ref +1, Will +0"
+description_output: 'Description: Mingos are birdlike creatures descended from Flamingos.
+  They are now more at home in the water than they are on land. Mingos travel in groups
+  to hunt down their meals, often looking like a large school of long legged fish
+  when encountered underwater. They still retain the ability to hunt while standing
+  along shores, but find prey easier to catch in the open sea. They no longer have
+  the capability to fly because of their water adaptations. They have been known to
+  attack humans/humanoids when hungry.'
+final_output: "Mingos (1d20 (10)): Init +4; atk beak melee +3 (1d12+1); AC 18; HD\
+  \ 5D7 hp 20 each; MV 19' or Swim 19' ; 1d20; SV Fort +0, Ref +1, Will +0Gills, SonarDescription:\
+  \ Mingos are birdlike creatures descended from Flamingos. They are now more at home\
+  \ in the water than they are on land. Mingos travel in groups to hunt down their\
+  \ meals, often looking like a large school of long legged fish when encountered\
+  \ underwater. They still retain the ability to hunt while standing along shores,\
+  \ but find prey easier to catch in the open sea. They no longer have the capability\
+  \ to fly because of their water adaptations. They have been known to attack humans/humanoids\
+  \ when hungry."
+players: "Mingos; '';Description: Mingos are birdlike creatures descended from Flamingos.\
+  \ They are now more at home in the water than they are on land. Mingos travel in\
+  \ groups to hunt down their meals, often looking like a large school of long legged\
+  \ fish when encountered underwater. They still retain the ability to hunt while\
+  \ standing along shores, but find prey easier to catch in the open sea. They no\
+  \ longer have the capability to fly because of their water adaptations. They have\
+  \ been known to attack humans/humanoids when hungry.|"
+---
+</br>
