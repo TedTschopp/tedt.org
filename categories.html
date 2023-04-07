@@ -18,7 +18,7 @@ redirect_from:
                 <p class="lead">A collection of all the categories on the site. </p>
 
 
-{% assign categories_list = site.categories | sort: 'order' %}
+{% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
       <li><a href="#{{ category | downcase }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
