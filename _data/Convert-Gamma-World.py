@@ -3,6 +3,10 @@ import sys
 import json
 from ruamel.yaml import YAML
 
+from datetime import date
+
+todays_date = date.today()
+
 in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv11.json' # Change me!
 
 with open(in_file_path,'r') as in_json_file:
@@ -11,7 +15,7 @@ with open(in_file_path,'r') as in_json_file:
     json_obj_list = json.load(in_json_file)
 
     for json_obj in json_obj_list['CreaturesV5']:
-        filename = json_obj['title']+'.md'
+        filename = todays_date.year+'-'+todays_date.month+'-'+todays_date.day+'-'+json_obj['title']+'.md'
         filename = filename.replace("/","-")
         filename = filename.replace(",","-")
         filename = filename.replace(" ","-")
