@@ -1,12 +1,11 @@
 ---
-ID: 71325
-layout: GammaWorld
+id: 71325
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 25e0972d-0a16-4e49-8afb-16dfd98785df
-date: '2023-04-06T22:58:17.054Z'
 title: Jocko
 creature_name_index: Jocko
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Jocko; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

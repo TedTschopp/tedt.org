@@ -1,12 +1,11 @@
 ---
-ID: 71406
-layout: GammaWorld
+id: 71406
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 070a10e7-20da-42b6-a983-64acb70ec3f1
-date: '2023-04-06T22:58:17.055Z'
 title: MindaRay
 creature_name_index: MindaRay
 notes: ''
@@ -189,5 +188,6 @@ players: "MindaRay; '';Description: This creature is a detached part of a sentie
   \ creature which is controlled by the Minda Ray can breathe both water (after 10-20\
   \ seconds) and on land, as the ray breathes for the creature underwater and the\
   \ land animal can breathe for both creatures on land.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

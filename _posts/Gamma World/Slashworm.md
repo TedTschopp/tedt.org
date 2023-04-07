@@ -1,12 +1,11 @@
 ---
-ID: 71576
-layout: GammaWorld
+id: 71576
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f99e515b-0165-4462-b972-429bea7566b9
-date: '2023-04-06T22:58:17.056Z'
 title: Slashworm
 creature_name_index: Slashworm
 notes: ''
@@ -167,5 +166,6 @@ players: "Slashworm; '';Description: These carnivorous worms have 6 long blades,
   \ wounds. They are .5 to .75 meters long and are light blue in color. They hunt\
   \ in packs of 10 to 20 and migrate up and down the Lantik coast following several\
   \ preferred prey species.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

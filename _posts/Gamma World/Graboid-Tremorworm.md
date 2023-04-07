@@ -1,12 +1,11 @@
 ---
-ID: 71661
-layout: GammaWorld
+id: 71661
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0604a7b5-a686-43fa-b983-8d564b5f15bd
-date: '2023-04-06T22:58:17.056Z'
 title: Graboid «Tremorworm»
 creature_name_index: Tremorworm
 notes: ''
@@ -169,5 +168,6 @@ players: "Tremorworm; 'Graboid';Description: A big worm with 4 tentacles with mo
   \ from its own mouth. The mouth has 3 sections that look like beaks.Behavior:A graboid\
   \ attacks from underground using its tentacles to ensnare its prey, then it draws\
   \ the prey to its mouth and tries to swallow the prey.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

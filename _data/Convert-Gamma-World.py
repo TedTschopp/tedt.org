@@ -31,5 +31,6 @@ with open(in_file_path,'r') as in_json_file:
             yaml.explicit_start = True
             yaml.default_flow_style = False
             yaml.dump(json_obj, out_yaml_file)
+            out_yaml_file.write("date: 2023-04-06T03:13:00+00:00\n") # Change Me!
             out_yaml_file.write("---\n")
             out_yaml_file.write("</br>")

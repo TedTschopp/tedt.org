@@ -1,12 +1,11 @@
 ---
-ID: 71041
-layout: GammaWorld
+id: 71041
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2b26770a-b500-42a4-a58a-4b3a4ac6d813
-date: '2023-04-06T22:58:17.053Z'
 title: Bahrz
 creature_name_index: Bahrz
 notes: ''
@@ -211,5 +210,6 @@ players: "Bahrz; '';Description: There is always a 40% chance there are 1d4 addi
   \ the Bahrz will automatically teleport to their den. If surprised, they can still\
   \ attack as a traditional bear doing 1d4, 1d4, 1d6 of damage (Claw, Claw, Bite)\
   \ plus a 3d6 crush hug if both foreclaws hit. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

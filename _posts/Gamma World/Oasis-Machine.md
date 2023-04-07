@@ -1,12 +1,11 @@
 ---
-ID: 71450
-layout: GammaWorld
+id: 71450
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 044a44a2-8c48-4b25-92a6-d64ecff04d27
-date: '2023-04-06T22:58:17.055Z'
 title: Oasis Machine
 creature_name_index: Oasis Machine
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Oasis Machine; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

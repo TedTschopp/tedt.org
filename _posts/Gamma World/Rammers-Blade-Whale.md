@@ -1,12 +1,11 @@
 ---
-ID: 71069
-layout: GammaWorld
+id: 71069
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b66b4a5c-d71f-45b4-b743-526abb9875fe
-date: '2023-04-06T22:58:17.053Z'
 title: Rammers «Blade Whale»
 creature_name_index: Blade Whale
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Blade Whale; 'Rammers';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

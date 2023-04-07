@@ -1,12 +1,11 @@
 ---
-ID: 71509
-layout: GammaWorld
+id: 71509
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 236f935a-1f80-4572-a9ad-1620c500c1fa
-date: '2023-04-06T22:58:17.055Z'
 title: Bristleback «Rog»
 creature_name_index: Rog
 notes: ''
@@ -182,5 +181,6 @@ players: "Rog; 'Bristleback';Description: Rogs, the most common meat and domesti
   \ down the ridge of their spine. They suffer from periodic amnesia, although most\
   \ farmers just assume that they are stupid. The milk from a rog is slightly sweet\
   \ and very nutritious. Its skin and fur can be made into cloth.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

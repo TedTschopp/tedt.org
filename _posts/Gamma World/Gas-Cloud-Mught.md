@@ -1,12 +1,11 @@
 ---
-ID: 71419
-layout: GammaWorld
+id: 71419
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 01cc4f1a-db61-4523-a3cd-bbc32657cbcb
-date: '2023-04-06T22:58:17.055Z'
 title: Gas Cloud «Mught»
 creature_name_index: Mught
 notes: ''
@@ -218,5 +217,6 @@ players: "Mught; 'Gas Cloud';Description: Mught are gaseous creatures that live 
   \ found around charged energy cells, electrocal generating equiptment, or operational\
   \ machines.  While Mught do not have any treasure of their own, they are often an\
   \ indicator of operational look admist junk.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

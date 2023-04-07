@@ -1,12 +1,11 @@
 ---
-ID: 71225
-layout: GammaWorld
+id: 71225
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bd6def42-6b96-4300-9857-603fd3b5c8c4
-date: '2023-04-06T22:58:17.054Z'
 title: Fragger
 creature_name_index: Fragger
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Fragger; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

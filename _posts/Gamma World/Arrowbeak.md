@@ -1,12 +1,11 @@
 ---
-ID: 71025
-layout: GammaWorld
+id: 71025
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7496ea1d-eb1e-4a35-8d7d-5a4cb90602f9
-date: '2023-04-06T22:58:17.053Z'
 title: Arrowbeak
 creature_name_index: Arrowbeak
 notes: ''
@@ -225,5 +224,6 @@ players: "Arrowbeak; '';Description: Their coloration is normally dark brown, wi
   \ off to roost and deliver an egg. If an attacker fails, she will generally harass\
   \ the party to protect the successful individuals. Males will not usually participate\
   \ in combat except when attacked.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

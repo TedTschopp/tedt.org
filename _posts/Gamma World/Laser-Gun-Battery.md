@@ -1,12 +1,11 @@
 ---
-ID: 71358
-layout: GammaWorld
+id: 71358
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b4d40b60-dcb0-43e6-bfdb-73d164d14d5b
-date: '2023-04-06T22:58:17.054Z'
 title: Laser Gun Battery
 creature_name_index: Laser Gun Battery
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Laser Gun Battery; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

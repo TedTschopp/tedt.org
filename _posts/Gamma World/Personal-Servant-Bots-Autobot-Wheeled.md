@@ -1,12 +1,11 @@
 ---
-ID: 71031
-layout: GammaWorld
+id: 71031
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3b5ce066-88fc-4081-84c3-1a98f5b3d784
-date: '2023-04-06T22:58:17.053Z'
 title: Personal Servant Bots «Autobot, Wheeled»
 creature_name_index: Autobot, Wheeled
 notes: ''
@@ -203,5 +202,6 @@ players: "Autobot, Wheeled; 'Personal Servant Bots';Description: Autobots are 1 
   \ for the pre-holocaust humans.Equiptment: Plugin tools pertinent to programmed\
   \ tasks such as vacuum hoses, flame throwers, drills, water and wax jets, buffers,\
   \ vibrosaws. infant changing stations, etc...|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

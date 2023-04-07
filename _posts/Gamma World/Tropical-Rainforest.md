@@ -1,12 +1,11 @@
 ---
-ID: 71664
-layout: GammaWorld
+id: 71664
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 22cf3134-9533-450d-8d53-38278187d324
-date: '2023-04-06T22:58:17.056Z'
 title: Tropical Rainforest
 creature_name_index: Tropical Rainforest
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tropical Rainforest ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

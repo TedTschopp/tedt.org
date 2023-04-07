@@ -1,12 +1,11 @@
 ---
-ID: 71604
-layout: GammaWorld
+id: 71604
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 19b4e8a3-8342-4421-811e-d010fd8d8d86
-date: '2023-04-06T22:58:17.056Z'
 title: King Rats «Squeeker»
 creature_name_index: Squeeker
 notes: ''
@@ -239,5 +238,6 @@ players: "Squeeker; 'King Rats';Description: Mutated Rats that are 5 times the s
   \ Hissers, in particular, keep pens of the animals for use both in the hunt and\
   \ as food.  Indeed it is likely that the hisser immunity to sonic blasts developed\
   \ slowly from a close relationship Squeekers. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

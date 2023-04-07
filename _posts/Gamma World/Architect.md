@@ -1,12 +1,11 @@
 ---
-ID: 71021
-layout: GammaWorld
+id: 71021
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 808a9d5e-6eb9-4208-a437-a24c362a13aa
-date: '2023-04-06T22:58:17.053Z'
 title: Architect
 creature_name_index: Architect
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Architect; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

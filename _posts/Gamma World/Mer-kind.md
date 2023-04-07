@@ -1,12 +1,11 @@
 ---
-ID: 71400
-layout: GammaWorld
+id: 71400
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7a0db917-2f23-40e5-b7e2-009647f8560a
-date: '2023-04-06T22:58:17.055Z'
 title: Mer-kind
 creature_name_index: Mer-kind
 notes: ''
@@ -176,5 +175,6 @@ players: "Mer-kind; '';Description: Mer-kind are half-man, half-fish beings (hum
   \ to be in trouble. Of the many intelligent beings living in the strange seas of\
   \ Gamma World, they are perhaps the most noble. They are able to survive for short\
   \ periods of time above the surface.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

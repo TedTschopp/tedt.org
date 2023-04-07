@@ -1,12 +1,11 @@
 ---
-ID: 71194
-layout: GammaWorld
+id: 71194
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ae13d232-91d4-40dd-b70a-835bf1242140
-date: '2023-04-06T22:58:17.053Z'
 title: Heavy Construction Bot «Engineering Bot, Heavy Duty»
 creature_name_index: Engineering Bot, Heavy Duty
 notes: ''
@@ -187,5 +186,6 @@ players: "Engineering Bot, Heavy Duty; 'Heavy Construction Bot';Description: Thi
   \ lasers, atomic torches and power tools. Most units also have 6d12 triangular duralloy\
   \ sheets and a supply of assorted rivets, plates, bolts, etc. plus the special tools\
   \ needed to use them. All units are sealed for underwater use.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

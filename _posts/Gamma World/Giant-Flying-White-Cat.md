@@ -1,12 +1,11 @@
 ---
-ID: 71250
-layout: GammaWorld
+id: 71250
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: aa68abd4-a87c-40c9-ae03-18400a57894b
-date: '2023-04-06T22:58:17.054Z'
 title: Giant Flying White Cat
 creature_name_index: Giant Flying White Cat
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Giant Flying White Cat; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

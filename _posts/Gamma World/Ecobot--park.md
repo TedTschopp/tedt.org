@@ -1,12 +1,11 @@
 ---
-ID: 71181
-layout: GammaWorld
+id: 71181
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 33106a6a-e783-4f03-918c-c6ecfcf3cffe
-date: '2023-04-06T22:58:17.053Z'
 title: Ecobot - park
 creature_name_index: Ecobot - park
 notes: ''
@@ -184,5 +183,6 @@ players: "Ecobot - park; '';Description: An ecobot is basically humanoid, and is
   \ buildings, grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer,\
   \ soil analyzer, shovel, IR camera, 5x range telescope, radio, spotlights, stun\
   \ ray pistol, and chainsaw|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

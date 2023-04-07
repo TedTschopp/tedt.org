@@ -1,12 +1,11 @@
 ---
-ID: 71602
-layout: GammaWorld
+id: 71602
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bc45d352-249d-48ef-bfd2-063e996e270c
-date: '2023-04-06T22:58:17.056Z'
 title: Sprey
 creature_name_index: Sprey
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sprey; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

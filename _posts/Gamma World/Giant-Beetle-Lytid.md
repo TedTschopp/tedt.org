@@ -1,12 +1,11 @@
 ---
-ID: 71377
-layout: GammaWorld
+id: 71377
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e148489e-3df9-4b02-a5a8-8c6848531e01
-date: '2023-04-06T22:58:17.055Z'
 title: Giant Beetle «Lytid»
 creature_name_index: Lytid
 notes: ''
@@ -179,5 +178,6 @@ players: "Lytid; 'Giant Beetle';Description: hese giant beetles are feared all o
   \ on the subspecies.They breed in the fall; laying each egg in the base of a tree.\
   \ The young slowly kill the tree, finally breaking out in April. Whole groves are\
   \ destroyed this way.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

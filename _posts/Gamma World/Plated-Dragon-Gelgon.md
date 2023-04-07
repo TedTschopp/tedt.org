@@ -1,12 +1,11 @@
 ---
-ID: 71242
-layout: GammaWorld
+id: 71242
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b01a0d66-8840-4ffa-96ee-2bb92fd09325
-date: '2023-04-06T22:58:17.054Z'
 title: Plated Dragon «Gelgon»
 creature_name_index: Gelgon
 notes: ''
@@ -217,5 +216,6 @@ players: "Gelgon; 'Plated Dragon';Description: (Pet) Sho'day are nocturnal birds
   \ the eggs are hidden well underground and protect the clutch until they are ready\
   \ to hatch.  The mother will then leave the clutch a day or two before the eggs\
   \ hatch.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

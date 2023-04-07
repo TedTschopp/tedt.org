@@ -1,12 +1,11 @@
 ---
-ID: 71257
-layout: GammaWorld
+id: 71257
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 481ea7f6-6b75-44df-9c29-8a17b76d6c77
-date: '2023-04-06T22:58:17.054Z'
 title: Glucust
 creature_name_index: Glucust
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Glucust; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

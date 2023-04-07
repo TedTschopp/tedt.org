@@ -1,12 +1,11 @@
 ---
-ID: 71165
-layout: GammaWorld
+id: 71165
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a7041818-01d0-4f2f-bfcf-d0e89c6e8e2d
-date: '2023-04-06T22:58:17.053Z'
 title: Desert Riders
 creature_name_index: Desert Riders
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Desert Riders; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

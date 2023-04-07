@@ -1,12 +1,11 @@
 ---
-ID: 71464
-layout: GammaWorld
+id: 71464
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8ebb7eca-a91b-4a42-a027-6e534330f364
-date: '2023-04-06T22:58:17.055Z'
 title: Gamma Bushes «Perth»
 creature_name_index: Perth
 notes: ''
@@ -237,5 +236,6 @@ players: "Perth; 'Gamma Bushes';Description: This is a two meter tall palm-like 
   \ flower, harvested and sun-dried for three days, can be ground into a powder. When\
   \ ingested, it grants a +2 step bonus on Resolve checks for healing wounds. A single\
   \ perth yields up to 20 doses of the powder.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

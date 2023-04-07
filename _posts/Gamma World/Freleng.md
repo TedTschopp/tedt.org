@@ -1,12 +1,11 @@
 ---
-ID: 71229
-layout: GammaWorld
+id: 71229
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f9fa56f2-ef75-4ab7-a121-a33e15766bf5
-date: '2023-04-06T22:58:17.054Z'
 title: Freleng
 creature_name_index: Freleng
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Freleng (1): Init -3; atk see description; AC 10; HD 1D12 hp 7; NO
   MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 players: Freleng; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71122
-layout: GammaWorld
+id: 71122
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 99dff17b-3eff-4a57-8b86-44b5c6205281
-date: '2023-04-06T22:58:17.053Z'
 title: Blend Dog «Clark»
 creature_name_index: Clark
 notes: ''
@@ -219,5 +218,6 @@ players: "Clark; 'Blend Dog';Description: Truly neither fish nor fowl, the terl 
   \ if nothing appropriate is available, in dens on the ground. The females give birth\
   \ late in spring to litters of 2D4 pups. The pups, if caught at an early age, can\
   \ easily be domesticated. Wolf climbers can not be domesticated however.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

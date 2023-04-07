@@ -1,12 +1,11 @@
 ---
-ID: 71670
-layout: GammaWorld
+id: 71670
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 26fa4d2c-7033-40e5-9118-8024f77e4248
-date: '2023-04-06T22:58:17.056Z'
 title: Spider Friend «Unsut»
 creature_name_index: Unsut
 notes: ''
@@ -154,5 +153,6 @@ description_output: ''
 final_output: "Unsut 'Spider Friend' (1d8 (4)): Init +7; atk acid spit +5 (1d3+3,\
   \ 100'); AC 15; HD 7D7 hp 28 each; MV 45' ; 1d20; SV Fort +2, Ref +3, Will +0"
 players: Unsut; 'Spider Friend';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

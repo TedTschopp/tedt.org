@@ -1,12 +1,11 @@
 ---
-ID: 71115
-layout: GammaWorld
+id: 71115
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5e4fa71a-44ca-4843-ad7c-ee99ecf328df
-date: '2023-04-06T22:58:17.053Z'
 title: Chirplick
 creature_name_index: Chirplick
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Chirplick; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

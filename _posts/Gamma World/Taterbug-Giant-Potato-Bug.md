@@ -1,12 +1,11 @@
 ---
-ID: 71251
-layout: GammaWorld
+id: 71251
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dd961797-2bab-44f1-9d80-b3014ea14a69
-date: '2023-04-06T22:58:17.054Z'
 title: Taterbug «Giant Potato Bug»
 creature_name_index: Giant Potato Bug
 notes: ''
@@ -227,5 +226,6 @@ players: "Giant Potato Bug; 'Taterbug';Description: These giant, docile herbivor
   \ potato bugs (or sow bugs or pill bugs) are very important to the plains ecosystem.\
   \ They are hunted by specialized carnivores (like the Ti'tal and the obb) that can\
   \ break through the bugs' armor.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

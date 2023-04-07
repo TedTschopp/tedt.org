@@ -1,12 +1,11 @@
 ---
-ID: 71462
-layout: GammaWorld
+id: 71462
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: df3365d3-5202-4683-a4db-198134af5706
-date: '2023-04-06T22:58:17.055Z'
 title: Sword Beetles «Parn»
 creature_name_index: Parn
 notes: ''
@@ -209,5 +208,6 @@ players: "Parn; 'Sword Beetles';Description: The parn or \"sword beetle\" is one
   \ lays her eggs in a buried nest before abandoning them to their fate. Most young\
   \ parn don't survive the first few months of life. Those that do grow to maturity\
   \ within a year.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

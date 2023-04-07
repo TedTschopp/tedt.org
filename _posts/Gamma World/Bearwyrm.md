@@ -1,12 +1,11 @@
 ---
-ID: 71060
-layout: GammaWorld
+id: 71060
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 730ed672-bde5-49fc-ae0b-3fc001d39f32
-date: '2023-04-06T22:58:17.053Z'
 title: Bearwyrm
 creature_name_index: Bearwyrm
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bearwyrm; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

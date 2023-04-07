@@ -1,12 +1,11 @@
 ---
-ID: 71595
-layout: GammaWorld
+id: 71595
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: feadc5d8-22eb-466b-8ee8-c2cd5ea52cc2
-date: '2023-04-06T22:58:17.056Z'
 title: Spider Lil
 creature_name_index: Spider Lil
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Spider Lil; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

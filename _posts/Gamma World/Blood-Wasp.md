@@ -1,12 +1,11 @@
 ---
-ID: 71075
-layout: GammaWorld
+id: 71075
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 09f7f83c-2f61-4aeb-aa8e-6517e64788fa
-date: '2023-04-06T22:58:17.053Z'
 title: Blood Wasp
 creature_name_index: Blood Wasp
 notes: ''
@@ -228,5 +227,6 @@ players: "Blood Wasp; '';Description: loodwasps are burrowing wasps about 10cm l
   \ off. The victim does not have the insanity mutation permanently.blood wasps emit\
   \ the patrolling pheromone when they are not feeding or fighting. blood wasps emit\
   \ the warning pheromone when they are feeding, fighting, or attacking.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

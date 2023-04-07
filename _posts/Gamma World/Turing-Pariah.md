@@ -1,12 +1,11 @@
 ---
-ID: 71666
-layout: GammaWorld
+id: 71666
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a7f36ef8-e39d-478a-ba5c-20e6bb61f1e6
-date: '2023-04-06T22:58:17.056Z'
 title: Turing Pariah
 creature_name_index: Turing Pariah
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Turing Pariah; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

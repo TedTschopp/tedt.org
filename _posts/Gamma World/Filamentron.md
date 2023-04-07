@@ -1,12 +1,11 @@
 ---
-ID: 71216
-layout: GammaWorld
+id: 71216
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0aa4718c-54d2-495b-bb5c-106feba03e1c
-date: '2023-04-06T22:58:17.054Z'
 title: Filamentron
 creature_name_index: Filamentron
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Filamentron; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71651
-layout: GammaWorld
+id: 71651
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a02fd839-4b8a-439e-9d5c-07eeca018f67
-date: '2023-04-06T22:58:17.056Z'
 title: Green Lantern «Ti'tal»
 creature_name_index: Ti'tal
 notes: ''
@@ -195,5 +194,6 @@ players: "Ti'tal; 'Green Lantern';Description: This is a huge metallic green tig
   \ in the areas that they are found. They do, on occasion try to communicate with\
   \ other intelligent beings, but it is unknown why, as they tend to eat those they\
   \ speak to.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

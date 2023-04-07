@@ -1,12 +1,11 @@
 ---
-ID: 71047
-layout: GammaWorld
+id: 71047
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 18c034a1-9a31-4532-8db9-3d59ad3a53be
-date: '2023-04-06T22:58:17.053Z'
 title: Bandit Droid
 creature_name_index: Bandit Droid
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bandit Droid; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

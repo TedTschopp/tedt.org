@@ -1,12 +1,11 @@
 ---
-ID: 71036
-layout: GammaWorld
+id: 71036
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6c116e60-b05a-4768-aa28-d554726fa2f0
-date: '2023-04-06T22:58:17.053Z'
 title: Rock that Gasses «Ba'mutan»
 creature_name_index: Ba'mutan
 notes: ''
@@ -215,5 +214,6 @@ players: "Ba'mutan; 'Rock that Gasses';Description: Ba'mutan are gentle herbivor
   \ a cloud that has a 25' radius centered on creature.  The gas dissipates after\
   \ 1d10+2 turns.  Any creature not completely protected from the environment takes\
   \ 3d10 damage per turn of exposure, and their vision is obscured.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

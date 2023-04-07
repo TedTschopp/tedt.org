@@ -1,12 +1,11 @@
 ---
-ID: 71428
-layout: GammaWorld
+id: 71428
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 97798ea5-800f-4efc-ba72-a5992b7652a2
-date: '2023-04-06T22:58:17.055Z'
 title: Land Worm «Mutha»
 creature_name_index: Mutha
 notes: ''
@@ -189,5 +188,6 @@ players: "Mutha; 'Land Worm';Description: These immense worms have a brown or ta
   \ weak and can be tricked or controlled easily.The only reason there are not more\
   \ worms is that cannibalism is common and food (soil organic matter) is rare down\
   \ deep. They fear water because they can not swim and will drown quickly if submerged.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

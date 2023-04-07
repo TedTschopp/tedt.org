@@ -1,12 +1,11 @@
 ---
-ID: 71294
-layout: GammaWorld
+id: 71294
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 79527af5-73b2-4206-8a00-ec5acb8de72c
-date: '2023-04-06T22:58:17.054Z'
 title: Horsy
 creature_name_index: Horsy
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Horsy; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

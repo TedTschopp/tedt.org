@@ -1,12 +1,11 @@
 ---
-ID: 71112
-layout: GammaWorld
+id: 71112
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0e1652ab-0758-45fd-8662-6592b0629285
-date: '2023-04-06T22:58:17.053Z'
 title: Greater Bloodwing «Che'Tal»
 creature_name_index: Che'Tal
 notes: ''
@@ -168,5 +167,6 @@ players: "Che'Tal; 'Greater Bloodwing';Description: Giant deer flies, che'tal ha
   \ yellow eyes, black spotted wings, and a dark brown body with light brown stripes.Behavior:They\
   \ have a nasty bite. After finding prey with sonar, che'tal attack with confusion\
   \ or a roar. After that, they use mutations or a bite randomly.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

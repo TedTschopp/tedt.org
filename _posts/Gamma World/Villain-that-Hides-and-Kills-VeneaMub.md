@@ -1,12 +1,11 @@
 ---
-ID: 71674
-layout: GammaWorld
+id: 71674
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b59a4869-aa5f-4895-a163-eb72d337d0b5
-date: '2023-04-06T22:58:17.056Z'
 title: Villain that Hides and Kills «Vene'aMub»
 creature_name_index: Vene'aMub
 notes: ''
@@ -214,5 +213,6 @@ players: "Vene'aMub; 'Villain that Hides and Kills';Description: The Vene'a'mub 
   \ with their hands while swinging their mace-like tail over their body and down\
   \ on the meal\". Given enough time, a vene'a'mub can crack open almost anything,\
   \ except a ba'mutan. They are curious, very tenacious, and are found in most climates.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

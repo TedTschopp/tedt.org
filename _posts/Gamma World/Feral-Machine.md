@@ -1,12 +1,11 @@
 ---
-ID: 71213
-layout: GammaWorld
+id: 71213
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d943d5db-0323-41c3-94d6-97e084c5081b
-date: '2023-04-06T22:58:17.054Z'
 title: Feral Machine
 creature_name_index: Feral Machine
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Feral Machine; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

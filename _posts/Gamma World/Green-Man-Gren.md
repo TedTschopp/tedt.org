@@ -1,12 +1,11 @@
 ---
-ID: 71262
-layout: GammaWorld
+id: 71262
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 858e2241-8a6a-459c-b0ea-fe211095fb33
-date: '2023-04-06T22:58:17.054Z'
 title: Green Man «Gren»
 creature_name_index: Gren
 notes: ''
@@ -293,5 +292,6 @@ players: "Gren; 'Green Man';Description: Grens look like Green skinned pure stra
   \ don't need to hunt or farm for their food, their day-to-day life is fairly idyllic,\
   \ save for warding off predators and other hazards. They often build their homes\
   \ among the treetops, away from the dangers on the forest floor.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71050
-layout: GammaWorld
+id: 71050
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a19d9fbf-c12e-4b92-a1eb-67e907f15ccb
-date: '2023-04-06T22:58:17.053Z'
 title: Barfly
 creature_name_index: Barfly
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Barfly; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

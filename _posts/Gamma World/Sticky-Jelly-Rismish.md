@@ -1,12 +1,11 @@
 ---
-ID: 71505
-layout: GammaWorld
+id: 71505
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 014029e0-74de-4aed-a7a7-8489917a321d
-date: '2023-04-06T22:58:17.055Z'
 title: Sticky Jelly «Rismish»
 creature_name_index: Rismish
 notes: ''
@@ -196,5 +195,6 @@ players: "Rismish; 'Sticky Jelly';Description: Rismish comes in a variety of col
   \  Rishmish can only be harmed by fire, and then only take 1/4 the usual damage.\
   \  A character held fast to a rismish that is being burned will take half damage\
   \ from the fire for a maximum of two actions.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

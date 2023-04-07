@@ -1,12 +1,11 @@
 ---
-ID: 71448
-layout: GammaWorld
+id: 71448
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a0a16dac-cdf0-4f58-a889-5217f0156f5a
-date: '2023-04-06T22:58:17.055Z'
 title: Deadly Tail «Ny'an»
 creature_name_index: Ny'an
 notes: ''
@@ -169,5 +168,6 @@ players: "Ny'an; 'Deadly Tail';Description: Ny'an are leathery, mammalian creatu
   \ with two wings, no legs, and a long tail with a stinger.  At a quick glance they\
   \ can be mistaken for obbs.  Ny'an prefer caverns, ruins, and other dimly lit areas\
   \ where they can lurk about.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

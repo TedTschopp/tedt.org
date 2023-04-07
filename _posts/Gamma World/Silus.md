@@ -1,12 +1,11 @@
 ---
-ID: 71562
-layout: GammaWorld
+id: 71562
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fac286ac-aa0d-40be-b29b-788d7c7938e7
-date: '2023-04-06T22:58:17.056Z'
 title: Silus
 creature_name_index: Silus
 notes: ''
@@ -176,5 +175,6 @@ players: Silus; '';Behavior:If attacking flying prey, a ka'tal will come from be
   who threw the missile. If ground prey is weak, the ka'tal will land and bite it
   to death.Ka'tal may be found in groups, but they ignore each other (so a group may
   last only a day, a week or more).|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71629
-layout: GammaWorld
+id: 71629
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9360ce67-c5f5-4a28-8b5e-4b5f3f009d0c
-date: '2023-04-06T22:58:17.056Z'
 title: Tarn Zeb
 creature_name_index: Tarn Zeb
 notes: ''
@@ -275,5 +274,6 @@ players: "Tarn Zeb; '';Description: This carnivorous horror arose from the fusio
   \ effect.The Tarn Zeb is a vicious opponent, but it knows that it is a solitary\
   \ being and will retreat if it feels overly threatened after engaging its opponent\
   \ or opponents in battle.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

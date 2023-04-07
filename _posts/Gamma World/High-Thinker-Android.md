@@ -1,12 +1,11 @@
 ---
-ID: 71014
-layout: GammaWorld
+id: 71014
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 73f4a3f1-0b2a-4401-978a-4065256a3f31
-date: '2023-04-06T22:58:17.053Z'
 title: High Thinker «Android»
 creature_name_index: Android
 notes: ''
@@ -158,5 +157,6 @@ final_output: "Android 'High Thinker' (1): Init +7; atk weapon melee +2 (1d4); A
 players: "Android; 'High Thinker';Description: Man-made beings with red hued skin\
   \ and blank stares.Behavior:equipment: Communicator, Control Baton, Stim Dose, Mind\
   \ Booster|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

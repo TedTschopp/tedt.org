@@ -1,12 +1,11 @@
 ---
-ID: 71468
-layout: GammaWorld
+id: 71468
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b7483fe7-21b4-4c76-95a0-2bc649df10ad
-date: '2023-04-06T22:58:17.055Z'
 title: Horse Cacti «Pineto»
 creature_name_index: Pineto
 notes: ''
@@ -241,5 +240,6 @@ players: "Pineto; 'Horse Cacti';Description: A Mutated thornbush that is neither
   \ everyone else to run.  Intelligent races, such as sleeths, have tamed pinetos\
   \ and used them as beasts of burden and riding animals. In this respect, they have\
   \ the same endurance and load-bearing qualities as a normal horse. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

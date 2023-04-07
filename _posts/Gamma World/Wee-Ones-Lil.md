@@ -1,12 +1,11 @@
 ---
-ID: 71363
-layout: GammaWorld
+id: 71363
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b0e36b83-b256-4bd0-a8e8-f735c7ef071d
-date: '2023-04-06T22:58:17.054Z'
 title: Wee Ones «Lil»
 creature_name_index: Lil
 notes: ''
@@ -237,5 +236,6 @@ players: "Lil; 'Wee Ones';Description: These small winged humanoids are only 20 
   \ to aid travelers who have not caused them any problems. Lil often have artifacts\
   \ of great sophistication, but their ability to use such items is limited by their\
   \ size. Nonartifact items are always Tech Level I or II.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

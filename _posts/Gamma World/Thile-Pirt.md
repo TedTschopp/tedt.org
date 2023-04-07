@@ -1,12 +1,11 @@
 ---
-ID: 71644
-layout: GammaWorld
+id: 71644
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a9a64689-53d1-4d73-b9b1-a30fd50e09a2
-date: '2023-04-06T22:58:17.056Z'
 title: Thile Pirt
 creature_name_index: Thile Pirt
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Thile Pirt; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

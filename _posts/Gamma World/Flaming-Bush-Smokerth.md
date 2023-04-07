@@ -1,12 +1,11 @@
 ---
-ID: 71585
-layout: GammaWorld
+id: 71585
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 766f7577-7f5a-4fba-a1d5-da9880927c88
-date: '2023-04-06T22:58:17.056Z'
 title: Flaming Bush «Smokerth»
 creature_name_index: Smokerth
 notes: ''
@@ -176,5 +175,6 @@ players: "Smokerth; 'Flaming Bush';Description: Smokerths are harmless little bu
   \ flare, and easy method of starting a campfire, etc. Smokerths can be found in\
   \ every climate but the arctic cold. They never grow close enough to each other\
   \ to start a chain-reaction and a forest fire.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

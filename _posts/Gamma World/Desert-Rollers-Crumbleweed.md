@@ -1,12 +1,11 @@
 ---
-ID: 71141
-layout: GammaWorld
+id: 71141
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7449c3fd-ffc6-4a6c-b6b1-21992d7822b6
-date: '2023-04-06T22:58:17.053Z'
 title: Desert Rollers «Crumbleweed»
 creature_name_index: Crumbleweed
 notes: ''
@@ -311,5 +310,6 @@ players: "Crumbleweed; 'Desert Rollers';Description: The crumbleweed grows from 
   \ smell wont detect an oncoming crumbleweed, while heightened hearing picks up a\
   \ faint, wispy crunching sound that does not sound dangerous to anyone who has not\
   \ had experience with crumbleweed.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71243
-layout: GammaWorld
+id: 71243
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 09fa08d1-2efd-4a27-ac89-ad323d1b5527
-date: '2023-04-06T22:58:17.054Z'
 title: Bot «General Household Robotoid»
 creature_name_index: General Household Robotoid
 notes: ''
@@ -220,5 +219,6 @@ players: "General Household Robotoid; 'Bot';Description: These are the most huma
   \ and hot plate in the palms. It has a replay video screen built into its chest.\
   \ Generally, the house would have re-mote cameras that the robot could monitor or\
   \ display on the same video screen. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

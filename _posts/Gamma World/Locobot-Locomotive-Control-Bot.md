@@ -1,12 +1,11 @@
 ---
-ID: 71367
-layout: GammaWorld
+id: 71367
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6fa0e1cf-df5e-4d77-8ff8-f356a0bfe4b1
-date: '2023-04-06T22:58:17.054Z'
 title: Locobot «Locomotive Control Bot»
 creature_name_index: Locomotive Control Bot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Locomotive Control Bot; 'Locobot';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

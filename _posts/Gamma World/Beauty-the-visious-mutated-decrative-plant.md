@@ -1,12 +1,11 @@
 ---
-ID: 71061
-layout: GammaWorld
+id: 71061
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 490d9087-e2d7-4d43-afde-c1f7cb0bab4c
-date: '2023-04-06T22:58:17.053Z'
 title: Beauty, the visious, mutated decrative plant
 creature_name_index: Beauty, the visious, mutated decrative plant
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Beauty, the visious, mutated decrative plant; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

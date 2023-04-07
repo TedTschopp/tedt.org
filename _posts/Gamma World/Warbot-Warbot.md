@@ -1,12 +1,11 @@
 ---
-ID: 71683
-layout: GammaWorld
+id: 71683
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4b9ab699-0b2b-433d-8e55-1ccc3ebda992
-date: '2023-04-06T22:58:17.056Z'
 title: Warbot «Warbot»
 creature_name_index: Warbot
 notes: ''
@@ -226,5 +225,6 @@ players: "Warbot; 'Warbot';Description: This vaguely turtle-shaped unit is 9 met
   \ accomplish assigned Military objectives, including, but not limited to the destruction\
   \ of soldiers and materials of the enemy.  To defend the soldiers and materials\
   \ of its base.  Its secondary goal is to avoid harming non-combatants.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

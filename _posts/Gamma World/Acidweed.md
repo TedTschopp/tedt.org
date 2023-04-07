@@ -1,12 +1,11 @@
 ---
-ID: 71002
-layout: GammaWorld
+id: 71002
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f01e5cef-649b-4ac1-aa83-6767db4dace2
-date: '2023-04-06T22:58:17.053Z'
 title: Acidweed
 creature_name_index: Acidweed
 notes: ''
@@ -184,5 +183,6 @@ players: "Acidweed; '';Description: This small bush is covered with oval dark gr
   \ thorns. If attacked with fire, it will try to drive the attacker away with gas\
   \ (85%) or will give up(15%).Acidweeds reproduce every 5 years; only 20% of the\
   \ seeds are viable. It absorbs prey through its root system.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71135
-layout: GammaWorld
+id: 71135
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0fb39c4b-8360-4235-863b-d1a3cb72818e
-date: '2023-04-06T22:58:17.053Z'
 title: Cratical
 creature_name_index: Cratical
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cratical; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

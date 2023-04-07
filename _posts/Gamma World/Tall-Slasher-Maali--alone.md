@@ -1,12 +1,11 @@
 ---
-ID: 71380
-layout: GammaWorld
+id: 71380
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a4bd26ff-3048-4e4f-a164-1037351d2a69
-date: '2023-04-06T22:58:17.055Z'
 title: Tall Slasher «Maali - alone»
 creature_name_index: Maali - alone
 notes: ''
@@ -290,5 +289,6 @@ players: "Maali - alone; 'Tall Slasher';Description: The maali are bipedal desce
   \ and three javelins. They have escaped destruction by Quade's constructs because\
   \ of their various mutations, their raw physical power, and their knowledge of the\
   \ land.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

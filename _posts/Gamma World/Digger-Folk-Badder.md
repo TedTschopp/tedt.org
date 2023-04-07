@@ -1,12 +1,11 @@
 ---
-ID: 71039
-layout: GammaWorld
+id: 71039
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 07556846-c9ab-4fb6-ad4a-19ee5397a20c
-date: '2023-04-06T22:58:17.053Z'
 title: Digger Folk «Badder»
 creature_name_index: Badder
 notes: ''
@@ -257,5 +256,6 @@ players: "Badder; 'Digger Folk';Description: 1.5 Meter-tall humanoid badgers. Ba
   \ and young. They are able to trade with other humanoids or intelligent creatures,\
   \ since their reputation as thieves and brigands precedes them. This causes them\
   \ to steal and kill for equipment even more.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

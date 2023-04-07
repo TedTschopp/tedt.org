@@ -1,12 +1,11 @@
 ---
-ID: 71067
-layout: GammaWorld
+id: 71067
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7095dc46-31bc-408c-adc7-45baf7992bde
-date: '2023-04-06T22:58:17.053Z'
 title: Black Harvester
 creature_name_index: Black Harvester
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Black Harvester; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

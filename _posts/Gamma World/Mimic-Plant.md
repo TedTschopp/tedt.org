@@ -1,12 +1,11 @@
 ---
-ID: 71405
-layout: GammaWorld
+id: 71405
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 778b25a5-ceeb-4be2-8e7f-1d0c361ad44c
-date: '2023-04-06T22:58:17.055Z'
 title: Mimic Plant
 creature_name_index: Mimic Plant
 notes: ''
@@ -205,5 +204,6 @@ players: "Mimic Plant; '';Description: Mimic plants are mutated orchids that gro
   \ turns equal to 11 minus the victim's armor class. The tentacle will withdraw as\
   \ soon as the victim fights back. No plant will attack two crea-tures, and no creature\
   \ will be attacked by more than one plant each day.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

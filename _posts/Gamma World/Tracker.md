@@ -1,12 +1,11 @@
 ---
-ID: 71658
-layout: GammaWorld
+id: 71658
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9571232a-dfb9-4124-b623-2dd22fff1fda
-date: '2023-04-06T22:58:17.056Z'
 title: Tracker
 creature_name_index: Tracker
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tracker; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

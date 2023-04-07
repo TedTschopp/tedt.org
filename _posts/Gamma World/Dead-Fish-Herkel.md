@@ -1,12 +1,11 @@
 ---
-ID: 71281
-layout: GammaWorld
+id: 71281
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 143d062b-adc7-41e0-b965-d6fe21a1752f
-date: '2023-04-06T22:58:17.054Z'
 title: Dead Fish «Herkel»
 creature_name_index: Herkel
 notes: ''
@@ -216,5 +215,6 @@ players: "Herkel; 'Dead Fish';Description: The herkel is a small (half-meter lon
   \ frenzy, and they'll even attack each other in such cases.Society: Herkel are found\
   \ in freshwater rivers and lakes throughout Gamma Terra. They migrate frequently\
   \ so as not to deplete their food sources.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

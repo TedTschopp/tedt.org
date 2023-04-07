@@ -1,12 +1,11 @@
 ---
-ID: 71613
-layout: GammaWorld
+id: 71613
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 53d530fe-b989-4121-8edf-8f12f26ca162
-date: '2023-04-06T22:58:17.056Z'
 title: Strangle
 creature_name_index: Strangle
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Strangle; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

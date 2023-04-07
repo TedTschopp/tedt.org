@@ -1,12 +1,11 @@
 ---
-ID: 71494
-layout: GammaWorld
+id: 71494
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9974f5d2-46d0-445c-a809-fdef98953599
-date: '2023-04-06T22:58:17.055Z'
 title: Raydium, Beta
 creature_name_index: Raydium, Beta
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Raydium, Beta; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

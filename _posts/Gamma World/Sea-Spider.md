@@ -1,12 +1,11 @@
 ---
-ID: 71530
-layout: GammaWorld
+id: 71530
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d019812d-1d8c-4c46-b4b1-25efb866dab3
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Spider
 creature_name_index: Sea Spider
 notes: ''
@@ -175,5 +174,6 @@ players: "Sea Spider; '';Description: A giant cross between a crab and spider ab
   \ rock outcropping) until its prey exhausts itself in the web. Then it goes and\
   \ picks the victim to pieces with its claws while the victim is still stuck fast.\
   \  The sea spider is immune to the stickiness of the web due to body excretions.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

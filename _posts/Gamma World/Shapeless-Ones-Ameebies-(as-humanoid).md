@@ -1,12 +1,11 @@
 ---
-ID: 71011
-layout: GammaWorld
+id: 71011
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a830acb7-b7fc-4190-8677-477d1105b14d
-date: '2023-04-06T22:58:17.053Z'
 title: Shapeless Ones «Ameebies (as humanoid)»
 creature_name_index: Ameebies (as humanoid)
 notes: ''
@@ -268,5 +267,6 @@ players: "Ameebies (as humanoid); 'Shapeless Ones';Description: Ameebies may be 
   \ that they use budding or fission. Ameebies cannot be contacted by using telepathic\
   \ powers of any sort. For some reason, they seem to avoid their own kind, and are\
   \ only encountered singly.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71328
-layout: GammaWorld
+id: 71328
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: da5722fc-63b7-44dc-898d-dc7af83bb599
-date: '2023-04-06T22:58:17.054Z'
 title: Big Daddy «Juggernaut»
 creature_name_index: Juggernaut
 notes: Fixed - Add rules for the Ert
@@ -183,5 +182,6 @@ players: "Juggernaut; 'Big Daddy';Description: This is a giant daddy - long - le
   \ It will retreat only when it fails morale or losses 3+ legs.They are a very important\
   \ organism, as they keep mutant insect populations down, where they live. When intelligent\
   \ beings see them, they tend to run away- which is good for both parties.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

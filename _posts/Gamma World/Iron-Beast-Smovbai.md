@@ -1,12 +1,11 @@
 ---
-ID: 71586
-layout: GammaWorld
+id: 71586
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d998d42b-6f43-4757-9e27-379bbd9b67b9
-date: '2023-04-06T22:58:17.056Z'
 title: Iron Beast «Smovbai»
 creature_name_index: Smovbai
 notes: ''
@@ -200,5 +199,6 @@ players: "Smovbai; 'Iron Beast';Description: (Mount) The Smovbai is a short, six
   \ has a -2 AC each to the next round in an attempt to continue the attack.  If the\
   \ target fails this, then they lose their movement and take another Charge and trample\
   \ attack.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

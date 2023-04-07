@@ -1,12 +1,11 @@
 ---
-ID: 71469
-layout: GammaWorld
+id: 71469
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a0c63d21-7112-4c63-b00d-6c036be8fdf5
-date: '2023-04-06T22:58:17.055Z'
 title: Plainsmen
 creature_name_index: Plainsmen
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Plainsmen; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

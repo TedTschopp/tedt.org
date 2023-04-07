@@ -1,12 +1,11 @@
 ---
-ID: 71632
-layout: GammaWorld
+id: 71632
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6837e159-c7ed-437b-bf5e-3a3fe7e47c5a
-date: '2023-04-06T22:58:17.056Z'
 title: Tehwhisz
 creature_name_index: Tehwhisz
 notes: ''
@@ -224,5 +223,6 @@ players: "Tehwhisz; '';Description: A twisted, ugly head lies atop the hill.  it
   \ always done so honestly.  Tehwhisz can usually identify any contrary intention\
   \ or lie.  The Judge is free to use Tehwhisz for any purposes, create new powers,\
   \ or add more to those which already exist in her arsenal.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

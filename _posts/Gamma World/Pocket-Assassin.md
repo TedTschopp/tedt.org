@@ -1,12 +1,11 @@
 ---
-ID: 71470
-layout: GammaWorld
+id: 71470
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ad696442-0460-4196-a6e9-c80b3d9e1fbc
-date: '2023-04-06T22:58:17.055Z'
 title: Pocket Assassin
 creature_name_index: Pocket Assassin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Pocket Assassin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71575
-layout: GammaWorld
+id: 71575
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6ad03736-adf5-4c63-aee5-fade61e19ec1
-date: '2023-04-06T22:58:17.056Z'
 title: Giant Sea Slug «Slake»
 creature_name_index: Slake
 notes: ''
@@ -167,5 +166,6 @@ players: "Slake; 'Giant Sea Slug';Description: These giant slugs have elongated 
   \ hiding in the sand and rarely in the corals. They are about 12-15 meters long\
   \ and are a dull gray. Some races use them as food livestock (1d6 in a domesticated\
   \ herd).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71350
-layout: GammaWorld
+id: 71350
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9314d68d-7a5c-42be-b6b9-b0fe66281e7b
-date: '2023-04-06T22:58:17.054Z'
 title: Leapers «Kreel Torrn»
 creature_name_index: Kreel Torrn
 notes: ''
@@ -216,5 +215,6 @@ players: "Kreel Torrn; 'Leapers';Description: Kreel torrn are large, bipedal gra
   \ to wait in complete darkness, using ultravision to find their marks. Kreel torrn\
   \ are opportunists and flee if their position becomes untenable. They can sometimes\
   \ be hired so long as the work is not too hard and the pay is good.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

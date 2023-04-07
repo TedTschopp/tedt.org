@@ -1,12 +1,11 @@
 ---
-ID: 71479
-layout: GammaWorld
+id: 71479
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ff9e2392-fdfb-42f7-8f2c-43d960d2e52a
-date: '2023-04-06T22:58:17.055Z'
 title: Mind Singers «Psirens»
 creature_name_index: Psirens
 notes: ''
@@ -197,5 +196,6 @@ players: "Psirens; 'Mind Singers';Description: These foul sea creatures look ver
   \ into the mind with Beguiling or Mental paralysis. The later is the preferred method\
   \ to finish off their victims, as it keeps the Psirens out of harms way (and leaves\
   \ their meal undamaged).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

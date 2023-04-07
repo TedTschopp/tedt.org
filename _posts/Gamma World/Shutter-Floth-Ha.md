@@ -1,12 +1,11 @@
 ---
-ID: 71222
-layout: GammaWorld
+id: 71222
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6faaeaee-d097-4bc0-93db-873756691456
-date: '2023-04-06T22:58:17.054Z'
 title: Shutter «Floth-Ha»
 creature_name_index: Floth-Ha
 notes: ''
@@ -267,5 +266,6 @@ players: "Floth-Ha; 'Shutter';Description: Floth-Ha are mutated \"common house\"
   \ Even in death, the creatures remain affixed. For obvious reasons, the Shutters'\
   \ wings are very valuable in Gamma Terra, and will fetch the handsome price of 8,500\
   \ domars for just 1 of a set of wings.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

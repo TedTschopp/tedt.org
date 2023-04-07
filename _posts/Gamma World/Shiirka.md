@@ -1,12 +1,11 @@
 ---
-ID: 71550
-layout: GammaWorld
+id: 71550
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cb61ac7f-e910-477e-8d51-406f87afeda8
-date: '2023-04-06T22:58:17.056Z'
 title: Shiir'ka
 creature_name_index: Shiir'ka
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Shiir'ka (1): Init -3; atk see description; AC 10; HD 1D7 hp 4; NO\
   \ MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Shiir'ka; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

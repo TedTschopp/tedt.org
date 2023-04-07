@@ -1,12 +1,11 @@
 ---
-ID: 71193
-layout: GammaWorld
+id: 71193
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8d1116f8-6c7a-45f2-b3cf-a83759fa4560
-date: '2023-04-06T22:58:17.053Z'
 title: Energy Moth
 creature_name_index: Energy Moth
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Energy Moth; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

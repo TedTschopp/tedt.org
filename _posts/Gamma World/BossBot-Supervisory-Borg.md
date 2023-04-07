@@ -1,12 +1,11 @@
 ---
-ID: 71616
-layout: GammaWorld
+id: 71616
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0f66ccb0-2a86-4e00-86ab-a70bb023408f
-date: '2023-04-06T22:58:17.056Z'
 title: BossBot «Supervisory Borg»
 creature_name_index: Supervisory Borg
 notes: ''
@@ -174,5 +173,6 @@ players: "Supervisory Borg; 'BossBot';Description: This unit's 1 meter tall huma
   \ that allow them to control all other Robots as if they had a Stage IV I.D. They\
   \ can communicate with Think Tanks and Cybernetic Installations on whose behalf\
   \ they will usually function. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71355
-layout: GammaWorld
+id: 71355
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 62c01595-ef3b-4c3e-ad9c-ad490ce92360
-date: '2023-04-06T22:58:17.054Z'
 title: Lampor
 creature_name_index: Lampor
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Lampor; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

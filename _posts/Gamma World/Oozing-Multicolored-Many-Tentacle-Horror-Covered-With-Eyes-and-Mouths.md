@@ -1,12 +1,11 @@
 ---
-ID: 71456
-layout: GammaWorld
+id: 71456
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ece6e0be-94d9-4ccb-9caa-b0970c7a7297
-date: '2023-04-06T22:58:17.055Z'
 title: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes and Mouths
 creature_name_index: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes
   and Mouths
@@ -152,5 +151,6 @@ description_output: ''
 final_output: '#N/A'
 players: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes and Mouths;
   '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71539
-layout: GammaWorld
+id: 71539
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e8f9d5e0-a5ed-4430-ad98-f6f8b48acdae
-date: '2023-04-06T22:58:17.056Z'
 title: Land Sharks «Sep, Snow»
 creature_name_index: Sep, Snow
 notes: ''
@@ -209,5 +208,6 @@ players: "Sep, Snow; 'Land Sharks';Description: Seps are mutated sharks that hav
   \ from a different direction. Once killed, the prey is dragged below-ground and\
   \ eaten.Society: Seps tend to hunt singly, although they're sometimes encountered\
   \ in small \"schools\" of up to six. They inhabit deserts and other sandy regions.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

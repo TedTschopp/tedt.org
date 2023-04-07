@@ -1,12 +1,11 @@
 ---
-ID: 71144
-layout: GammaWorld
+id: 71144
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4e9d3afb-f159-4882-8bf0-4f72e4fafe42
-date: '2023-04-06T22:58:17.053Z'
 title: Cyber-netter
 creature_name_index: Cyber-netter
 notes: ''
@@ -238,5 +237,6 @@ players: "Cyber-netter; '';Description: Adventurers in the Great Lakes region of
   \ beam equipment, and then carried away. No one knows where they are taken or what\
   \ happens to them after that. The machine emits coded radio signals from time to\
   \ time, but they are not decipherable, and no receiving station is known.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71382
-layout: GammaWorld
+id: 71382
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b5d67f69-0076-407a-b7c2-f3aacf453659
-date: '2023-04-06T22:58:17.055Z'
 title: Major Kan-Trell
 creature_name_index: Major Kan-Trell
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Major Kan-Trell ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

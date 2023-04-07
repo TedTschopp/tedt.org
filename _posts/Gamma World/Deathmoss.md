@@ -1,12 +1,11 @@
 ---
-ID: 71157
-layout: GammaWorld
+id: 71157
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4c535fe3-1d92-48d8-8b18-a99a20db1578
-date: '2023-04-06T22:58:17.053Z'
 title: Deathmoss
 creature_name_index: Deathmoss
 notes: ''
@@ -210,5 +209,6 @@ players: "Deathmoss; '';Description: Deathmoss is a lush, soft-looking, moss-lik
   \ purple-veined gray fruit, when eaten, increases all five senses [sight, smell,\
   \ hearing, touch and taste) for one hour, but thereafter causes a 50% loss of normal\
   \ senses for another hour.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

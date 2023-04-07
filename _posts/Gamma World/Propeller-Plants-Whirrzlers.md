@@ -1,12 +1,11 @@
 ---
-ID: 71695
-layout: GammaWorld
+id: 71695
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 330f23b7-9c88-4e25-8ed4-c7ce918633fb
-date: '2023-04-06T22:58:17.056Z'
 title: Propeller Plants «Whirrzlers»
 creature_name_index: Whirrzlers
 notes: ''
@@ -204,5 +203,6 @@ players: "Whirrzlers; 'Propeller Plants';Description: Whirrzlers are light metal
   \ creatures with AC 1 or 2 only once before flying away, since this hurts their\
   \ leaves (doing l-4 hp damage to them).Society: Whirrzlers clump together while\
   \ they are dormant.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

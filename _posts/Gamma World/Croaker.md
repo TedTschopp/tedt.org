@@ -1,12 +1,11 @@
 ---
-ID: 71140
-layout: GammaWorld
+id: 71140
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e14cc7e0-eacb-48e9-ada1-0f2d7e895fa0
-date: '2023-04-06T22:58:17.053Z'
 title: Croaker
 creature_name_index: Croaker
 notes: ''
@@ -239,5 +238,6 @@ players: "Croaker; '';Description: This mutated descendant of the Cane Toad look
   \ together in groups for mutual protection and for breeding. They spawn year-round\
   \ with suitable temperature and rainfall. Eggs are laid in long-standing water -\
   \ ditches, canals, streams, and ponds.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

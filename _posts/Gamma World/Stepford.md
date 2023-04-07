@@ -1,12 +1,11 @@
 ---
-ID: 71610
-layout: GammaWorld
+id: 71610
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1fb968b3-8fb8-4d09-8c4d-a706acff73d5
-date: '2023-04-06T22:58:17.056Z'
 title: Stepford
 creature_name_index: Stepford
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Stepford; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

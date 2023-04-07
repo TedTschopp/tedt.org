@@ -1,12 +1,11 @@
 ---
-ID: 71434
-layout: GammaWorld
+id: 71434
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3cdbc7ba-cce9-4b05-bed7-021e34e28cde
-date: '2023-04-06T22:58:17.055Z'
 title: Necrophage
 creature_name_index: Necrophage
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Necrophage; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

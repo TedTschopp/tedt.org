@@ -1,12 +1,11 @@
 ---
-ID: 71682
-layout: GammaWorld
+id: 71682
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 96bed9ba-4422-4f06-b7ff-a36ed5502c23
-date: '2023-04-06T22:58:17.056Z'
 title: Walking Tower
 creature_name_index: Walking Tower
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Walking Tower; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

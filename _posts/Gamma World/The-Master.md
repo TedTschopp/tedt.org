@@ -1,12 +1,11 @@
 ---
-ID: 71641
-layout: GammaWorld
+id: 71641
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ae3c59ea-7467-42b9-8a20-a891350ff855
-date: '2023-04-06T22:58:17.056Z'
 title: The Master
 creature_name_index: The Master
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: The Master; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

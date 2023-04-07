@@ -1,12 +1,11 @@
 ---
-ID: 71230
-layout: GammaWorld
+id: 71230
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 125ae1cc-ca6a-4880-9358-e5dbb29412a9
-date: '2023-04-06T22:58:17.054Z'
 title: Phoenix Hedge «Frid Esk»
 creature_name_index: Frid Esk
 notes: ''
@@ -177,5 +176,6 @@ players: "Frid Esk; 'Phoenix Hedge';Description: Phoenix hedges are long low hed
   \ of the Frid Esk are exposed they will emit a radiation plaster of 1d6+6 intensity\
   \ to everyone within 30 feet.  The jaws amd spikes are hidden under large leaves\
   \ and can not normally be seen.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71231
-layout: GammaWorld
+id: 71231
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 69e4b005-168d-4284-b9c9-61d9f859437a
-date: '2023-04-06T22:58:17.054Z'
 title: Froghemoth
 creature_name_index: Froghemoth
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Froghemoth; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71442
-layout: GammaWorld
+id: 71442
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4cbaa87b-a32d-440d-b2a1-e751e45b01f6
-date: '2023-04-06T22:58:17.055Z'
 title: Grey Living Mold «Nog l'Xon»
 creature_name_index: Nog l'Xon
 notes: ''
@@ -183,5 +182,6 @@ players: "Nog l'Xon; 'Grey Living Mold';Description: A Two Meter cigar-shaped qu
   \  They are symbioticly linked with their host.  They are immune to most forms of\
   \ attack.  They take half damage from Fire (not heat).  Cold Attacks do double damage\
   \ to them.  They are immune to chemical defoliants.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71427
-layout: GammaWorld
+id: 71427
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6f8e4a51-5625-4305-9848-7380957ba813
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated Scorpion
 creature_name_index: Mutated Scorpion
 notes: ''
@@ -158,5 +157,6 @@ final_output: "Mutated Scorpion (1d2 (1)): Init +5; atk 2 x pincers melee +3 (1d
   \ has Poison of DC 14"
 players: "Mutated Scorpion; '';Description: Large ScorpionBehavior:Stinger has Poison\
   \ of DC 14|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

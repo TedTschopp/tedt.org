@@ -1,12 +1,11 @@
 ---
-ID: 71280
-layout: GammaWorld
+id: 71280
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c8a02dbb-b663-45eb-8986-4205879cffc6
-date: '2023-04-06T22:58:17.054Z'
 title: Demon Snake «Helslith»
 creature_name_index: Helslith
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Helslith 'Demon Snake' (1): Init -3; atk see description; AC 10; HD\
   \ 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Helslith; 'Demon Snake';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

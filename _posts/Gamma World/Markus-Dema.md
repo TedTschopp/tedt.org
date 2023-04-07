@@ -1,12 +1,11 @@
 ---
-ID: 71392
-layout: GammaWorld
+id: 71392
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ff676bcf-e4d3-4c6e-99af-428250ffd9c8
-date: '2023-04-06T22:58:17.055Z'
 title: Markus Dema
 creature_name_index: Markus Dema
 notes: ''
@@ -211,5 +210,6 @@ players: "Markus Dema; '';Society: A verbat usually stakes out an area and keeps
   \ with a Verbat (passing though his area and paying toll more than 4 times), imformation\
   \ may be gained, by payment or otherwise, from the Verbat.  This information always\
   \ concerns the area the Verbat patrolls. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

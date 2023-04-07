@@ -1,12 +1,11 @@
 ---
-ID: 71038
-layout: GammaWorld
+id: 71038
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 236eaec7-b4ae-44e0-b347-0a65ec7d6e2c
-date: '2023-04-06T22:58:17.053Z'
 title: Digger Noble «Badder»
 creature_name_index: Badder
 notes: ''
@@ -257,5 +256,6 @@ players: "Badder; 'Digger Noble';Description: 1.5 Meter-tall humanoid badgers. B
   \ and young. They are able to trade with other humanoids or intelligent creatures,\
   \ since their reputation as thieves and brigands precedes them. This causes them\
   \ to steal and kill for equipment even more.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

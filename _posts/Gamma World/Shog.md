@@ -1,12 +1,11 @@
 ---
-ID: 71553
-layout: GammaWorld
+id: 71553
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d9edba47-1fb9-4181-add4-890c0676b99b
-date: '2023-04-06T22:58:17.056Z'
 title: Shog
 creature_name_index: Shog
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shog; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

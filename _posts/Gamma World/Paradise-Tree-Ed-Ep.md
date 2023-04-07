@@ -1,12 +1,11 @@
 ---
-ID: 71188
-layout: GammaWorld
+id: 71188
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 96443b23-3872-435b-8a13-d8a4d7a02eaa
-date: '2023-04-06T22:58:17.053Z'
 title: Paradise Tree «Ed Ep»
 creature_name_index: Ed Ep
 notes: ''
@@ -232,5 +231,6 @@ players: "Ed Ep; 'Paradise Tree';Description: The paradise tree is very rare and
   \ of any level for 1d6 hours.Macadamia (1 / 5)  This nut acts as the light generatoin\
   \ power when cracked open.  Its hull is very thin and if thrown it will crack open.\
   \  Pine Nut (1 / tree) The GM decides the effect of this nut.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

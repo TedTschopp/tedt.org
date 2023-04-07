@@ -1,12 +1,11 @@
 ---
-ID: 71647
-layout: GammaWorld
+id: 71647
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b89fe164-86e3-4568-b417-f9bc17713fca
-date: '2023-04-06T22:58:17.056Z'
 title: Thunderbird
 creature_name_index: Thunderbird
 notes: ''
@@ -230,5 +229,6 @@ players: "Thunderbird; '';Description: These great mutated bald eagles take thei
   \ can stretch for dozens of kilometers in all directions from its nest (usually\
   \ nestled in a high mountain crag). It does not allow other large predators to hunt\
   \ in its territory, taking on yexil, mantids, and even kamodos without fear. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

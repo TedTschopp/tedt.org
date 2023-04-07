@@ -1,12 +1,11 @@
 ---
-ID: 71490
-layout: GammaWorld
+id: 71490
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9f53d276-e69f-479e-acb5-a9a9bf7d1afc
-date: '2023-04-06T22:58:17.055Z'
 title: Ranse
 creature_name_index: Ranse
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Ranse (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Ranse; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

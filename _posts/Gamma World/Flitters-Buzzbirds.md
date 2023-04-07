@@ -1,12 +1,11 @@
 ---
-ID: 71096
-layout: GammaWorld
+id: 71096
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c15b3d17-fb77-42c3-804d-bd6a2643462f
-date: '2023-04-06T22:58:17.053Z'
 title: Flitters «Buzzbirds»
 creature_name_index: Buzzbirds
 notes: ''
@@ -266,5 +265,6 @@ players: "Buzzbirds; 'Flitters';Description: This white tree looks like a banyan
   \ hit and double damage for two turns or for the buzz duration, which- ever is longer.10\
   \ Creature attacks the nearest object, as above. If no object is within arms reach,\
   \ the creature may attack the ground (but not itself or its own gear).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

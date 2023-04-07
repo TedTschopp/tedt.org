@@ -1,12 +1,11 @@
 ---
-ID: 71062
-layout: GammaWorld
+id: 71062
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3a3d587b-1b31-498c-a15d-deb6efc4d410
-date: '2023-04-06T22:58:17.053Z'
 title: Whirligig «Belo»
 creature_name_index: Belo
 notes: ''
@@ -191,5 +190,6 @@ players: "Belo; 'Whirligig';Description: Ert telden are sleek fish up to a meter
   \ or killed, ert telden screte an oil that causes their flesh to burn fiercely on\
   \ contact with air. When removed from the water, an ert telden becomes extremely\
   \ hot, the following round, it explodes, doing damage like an incendiary grenade.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

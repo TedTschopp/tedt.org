@@ -1,12 +1,11 @@
 ---
-ID: 71643
-layout: GammaWorld
+id: 71643
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 93f1b9dc-919a-4ac8-85e6-a36ec8418dfe
-date: '2023-04-06T22:58:17.056Z'
 title: Theeka
 creature_name_index: Theeka
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Theeka; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

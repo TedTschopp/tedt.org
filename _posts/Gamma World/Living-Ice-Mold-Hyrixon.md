@@ -1,12 +1,11 @@
 ---
-ID: 71307
-layout: GammaWorld
+id: 71307
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7b4a7d50-41b8-47b5-aaef-18f9f13c1b22
-date: '2023-04-06T22:58:17.054Z'
 title: Living Ice Mold «Hyri'xon»
 creature_name_index: Hyri'xon
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Hyri'xon 'Living Ice Mold' (1): Init -3; atk see description; AC 10;\
   \ HD 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Hyri'xon; 'Living Ice Mold';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

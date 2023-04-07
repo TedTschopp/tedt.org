@@ -1,12 +1,11 @@
 ---
-ID: 71702
-layout: GammaWorld
+id: 71702
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 354f5f50-01c9-4187-8da5-04560616a031
-date: '2023-04-06T22:58:17.056Z'
 title: Shocking Mildew «Xanqas»
 creature_name_index: Xanqas
 notes: ''
@@ -187,5 +186,6 @@ players: "Xanqas; 'Shocking Mildew';Description: Xanquas does not look like ordi
   \ automatic if the plant is touched or attacked at range.  Water thrown on the Xanqas\
   \ will short circut it for 1d8+2 turns.  Acid intensity 5 or greater will destroy\
   \ it , as will any chemcical defoliant. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

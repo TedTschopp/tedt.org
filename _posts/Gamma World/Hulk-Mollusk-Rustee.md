@@ -1,12 +1,11 @@
 ---
-ID: 71512
-layout: GammaWorld
+id: 71512
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ade35190-e60f-439a-ad52-e1b598fc22da
-date: '2023-04-06T22:58:17.055Z'
 title: Hulk Mollusk «Rust'ee»
 creature_name_index: Rust'ee
 notes: ''
@@ -219,5 +218,6 @@ players: "Rust'ee; 'Hulk Mollusk';Description: These are mutated garden snails t
   \ of them where enough metal exists (e.g. old scrap yards, parking lots, and industrial\
   \ ruins).Archivists have been known to keep rust'ee as guard beasts to deter any\
   \ who would try to steal from their holy lands.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

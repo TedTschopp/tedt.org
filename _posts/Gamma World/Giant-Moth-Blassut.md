@@ -1,12 +1,11 @@
 ---
-ID: 71070
-layout: GammaWorld
+id: 71070
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b19514e2-90d7-4b58-b06f-484aef6cbe77
-date: '2023-04-06T22:58:17.053Z'
 title: Giant Moth «Blassut»
 creature_name_index: Blassut
 notes: ''
@@ -186,5 +185,6 @@ players: "Blassut; 'Giant Moth';Description: This creature looks somewhat like t
   \ put it out.  The greatest threat that Blassurt's present is that they will attract\
   \ a Tsorsut who eat Blassuts.  Every two turns that a Blassut is in the area there\
   \ is a 35% chance a Tsorsut will attack.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

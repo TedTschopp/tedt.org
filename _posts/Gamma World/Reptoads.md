@@ -1,12 +1,11 @@
 ---
-ID: 71501
-layout: GammaWorld
+id: 71501
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b3cda8c5-63c0-4e42-a0b3-d41226a1bc67
-date: '2023-04-06T22:58:17.055Z'
 title: Reptoads
 creature_name_index: Reptoads
 notes: ''
@@ -306,5 +305,6 @@ players: "Reptoads; '';Description: Reptoads appear to be nothing more than norm
   \ with anyone  not even the Red Death. They care nothing for treasure or artifacts.\
   \ The only creature feared by a reptoad is a sleeth, for a sleeth can dispel all\
   \ of a reptoads repulsion fields just as if they were force fields.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

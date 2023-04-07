@@ -1,12 +1,11 @@
 ---
-ID: 71176
-layout: GammaWorld
+id: 71176
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 99019c21-2980-4d8b-b901-46e18f2fbc0f
-date: '2023-04-06T22:58:17.053Z'
 title: Duster
 creature_name_index: Duster
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Duster; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

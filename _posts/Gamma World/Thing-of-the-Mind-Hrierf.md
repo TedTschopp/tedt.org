@@ -1,12 +1,11 @@
 ---
-ID: 71298
-layout: GammaWorld
+id: 71298
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 18a0a024-2014-4c73-92a5-579d1ba57b1c
-date: '2023-04-06T22:58:17.054Z'
 title: Thing of the Mind «Hrierf»
 creature_name_index: Hrierf
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Hrierf 'Thing of the Mind' (1): Init -3; atk see description; AC 10;\
   \ HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Hrierf; 'Thing of the Mind';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

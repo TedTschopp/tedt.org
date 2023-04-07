@@ -1,12 +1,11 @@
 ---
-ID: 71514
-layout: GammaWorld
+id: 71514
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6a01e0d9-f460-4f55-9787-afd9c1cfc70c
-date: '2023-04-06T22:58:17.055Z'
 title: That Which is Dependable «S're'daan»
 creature_name_index: S're'daan
 notes: ''
@@ -205,5 +204,6 @@ players: "S're'daan; 'That Which is Dependable';Description: The S're'dan is a m
   \ them.  There have been many recorded cases where a S're'dan will burrow under\
   \ a fallen master, work them onto its back and return back to the settlement with\
   \ them.  S're'daan prefer plains and verldlands.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

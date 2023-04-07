@@ -1,12 +1,11 @@
 ---
-ID: 71102
-layout: GammaWorld
+id: 71102
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7e86f23b-f02f-42a9-85d3-461b78847b78
-date: '2023-04-06T22:58:17.053Z'
 title: Transport Bot «Cargo Transport - Large»
 creature_name_index: Cargo Transport - Large
 notes: ''
@@ -169,5 +168,6 @@ players: "Cargo Transport - Large; 'Transport Bot';Mission: To move great quanti
   \ of cargo from one location to another.Equiptment: 4 x 6 meter tentacles that can\
   \ lift 500 kilograms each or 2000 kilograms collectively.1 x tractor/pressor beam\
   \ that can lift 1800 kilograms at a 30 meter range. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

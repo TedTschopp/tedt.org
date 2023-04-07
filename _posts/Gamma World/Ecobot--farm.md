@@ -1,12 +1,11 @@
 ---
-ID: 71180
-layout: GammaWorld
+id: 71180
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 25f88962-d9e9-43a3-a0ba-595648305538
-date: '2023-04-06T22:58:17.053Z'
 title: Ecobot - farm
 creature_name_index: Ecobot - farm
 notes: ''
@@ -182,5 +181,6 @@ players: "Ecobot - farm; '';Description: An ecobot is basically humanoid, and is
   \  It has a polite but firm, male voice.Mission: To Care for the crops, animals,\
   \ buildings, grounds of a farmEquiptment: The ecobot comes standard with an envirolyzer,\
   \ soil analyzer, shovel, IR camera, radio, spotlights, and a stun ray pistol|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

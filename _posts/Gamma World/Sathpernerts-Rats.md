@@ -1,12 +1,11 @@
 ---
-ID: 71517
-layout: GammaWorld
+id: 71517
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3d9d0698-7ebd-4f4d-9b6a-24e02e9ba1ae
-date: '2023-04-06T22:58:17.055Z'
 title: Sathpernert's Rats
 creature_name_index: Sathpernert's Rats
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sathpernert's Rats; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

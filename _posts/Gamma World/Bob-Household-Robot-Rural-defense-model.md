@@ -1,12 +1,11 @@
 ---
-ID: 71296
-layout: GammaWorld
+id: 71296
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3dd88c10-9aba-47c6-bcd1-309466e70f61
-date: '2023-04-06T22:58:17.054Z'
 title: Bob «Household Robot, Rural defense model»
 creature_name_index: Household Robot, Rural defense model
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Household Robot, Rural defense model; 'Bob';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

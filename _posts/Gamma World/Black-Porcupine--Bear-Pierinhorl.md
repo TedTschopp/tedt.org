@@ -1,12 +1,11 @@
 ---
-ID: 71467
-layout: GammaWorld
+id: 71467
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 74eb5397-6843-4b41-9d1a-7995d579144c
-date: '2023-04-06T22:58:17.055Z'
 title: Black Porcupine / Bear «Pierinhorl»
 creature_name_index: Pierinhorl
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Pierinhorl 'Black Porcupine / Bear' (1): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Pierinhorl; 'Black Porcupine / Bear';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

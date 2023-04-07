@@ -1,12 +1,11 @@
 ---
-ID: 71711
-layout: GammaWorld
+id: 71711
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a695452b-118b-4b48-8be1-d6cb399b06dc
-date: '2023-04-06T22:58:17.056Z'
 title: Zayshin
 creature_name_index: Zayshin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Zayshin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

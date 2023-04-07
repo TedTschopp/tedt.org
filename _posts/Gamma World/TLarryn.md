@@ -1,12 +1,11 @@
 ---
-ID: 71620
-layout: GammaWorld
+id: 71620
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 306a1564-4a88-4300-86fb-aa347612a2fe
-date: '2023-04-06T22:58:17.056Z'
 title: T'Larryn
 creature_name_index: T'Larryn
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: T'Larryn; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

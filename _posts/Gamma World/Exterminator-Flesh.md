@@ -1,12 +1,11 @@
 ---
-ID: 71205
-layout: GammaWorld
+id: 71205
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 099c6f8c-977d-4b36-9008-44ef5b719738
-date: '2023-04-06T22:58:17.054Z'
 title: Exterminator, Flesh
 creature_name_index: Exterminator, Flesh
 notes: ''
@@ -380,5 +379,6 @@ players: "Exterminator, Flesh; '';Description: An Exterminator is an upright-wal
   \ them. The vaults close up within ten minutes after opening and have so far withstood\
   \ all attempts at re- opening them. It is believed that the vaults have been scattered\
   \ throughout the continent and possibly the world.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

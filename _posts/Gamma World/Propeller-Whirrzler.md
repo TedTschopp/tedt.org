@@ -1,12 +1,11 @@
 ---
-ID: 71694
-layout: GammaWorld
+id: 71694
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5f37523c-a25d-4c4d-82e4-d1f0139079a9
-date: '2023-04-06T22:58:17.056Z'
 title: Propeller «Whirrzler»
 creature_name_index: Whirrzler
 notes: ''
@@ -224,5 +223,6 @@ players: "Whirrzler; 'Propeller';Description: Whirrzlers are carnivorous desert 
   \ in radioac- tive deathlands are assumed to be immune to radiation.1d81 - Immunity2\
   \ - Cold3 - Heat4 - Light and lasers Electricity5 - Sonic blast and blasters 6 -\
   \ Radiation7 - Life leech8 - Molecular disruption|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

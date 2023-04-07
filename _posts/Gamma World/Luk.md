@@ -1,12 +1,11 @@
 ---
-ID: 71373
-layout: GammaWorld
+id: 71373
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6bc54cf1-2b2b-413c-a67f-1e561369caf3
-date: '2023-04-06T22:58:17.055Z'
 title: Luk
 creature_name_index: Luk
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Luk; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

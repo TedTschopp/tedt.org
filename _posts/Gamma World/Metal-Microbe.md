@@ -1,12 +1,11 @@
 ---
-ID: 71401
-layout: GammaWorld
+id: 71401
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a9feb0cf-dd40-49e1-ae57-2c365d7b2c5e
-date: '2023-04-06T22:58:17.055Z'
 title: Metal Microbe
 creature_name_index: Metal Microbe
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Metal Microbe; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

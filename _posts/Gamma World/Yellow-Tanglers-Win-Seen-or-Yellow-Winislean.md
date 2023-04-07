@@ -1,12 +1,11 @@
 ---
-ID: 71697
-layout: GammaWorld
+id: 71697
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 40bd0e38-6c92-4028-a9fb-47d47025d5bc
-date: '2023-04-06T22:58:17.056Z'
 title: Yellow Tanglers «Win Seen or Yellow Winislean»
 creature_name_index: Win Seen or Yellow Winislean
 notes: ''
@@ -232,5 +231,6 @@ players: "Yellow Winislean; 'Yellow Tanglers';Description: Win Seen are ground c
   \ chopped up and cooked down to yield a thick paste that serves as a poison antidote.\
   \ A dose of it swallowed or applied to a poisoned wound provides a -2 step bonus\
   \ on the Constitution feat check. A single plant yields ten doses of the antidote.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

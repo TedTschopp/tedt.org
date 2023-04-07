@@ -1,12 +1,11 @@
 ---
-ID: 71113
-layout: GammaWorld
+id: 71113
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d40672d6-30a7-428b-82ca-c17f225e714d
-date: '2023-04-06T22:58:17.053Z'
 title: Cheguin
 creature_name_index: Cheguin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cheguin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

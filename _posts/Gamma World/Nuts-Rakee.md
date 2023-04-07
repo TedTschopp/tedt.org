@@ -1,12 +1,11 @@
 ---
-ID: 71486
-layout: GammaWorld
+id: 71486
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5bb8955a-befa-4d2a-bbed-ba7750b3464f
-date: '2023-04-06T22:58:17.055Z'
 title: Nuts «Rakee»
 creature_name_index: Rakee
 notes: ''
@@ -190,5 +189,6 @@ players: "Rakee; 'Nuts';Description: They appear as 1 meter tall flying squirrel
   \ they Rakee will find someone else to attack and follow. If the opponent does engage,\
   \ than the Rakee will bind themselves to this new master until someone more powerful\
   \ comes along and impresses the Rakee.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

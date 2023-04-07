@@ -1,12 +1,11 @@
 ---
-ID: 71638
-layout: GammaWorld
+id: 71638
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b5f2cb2b-3a35-4b29-b4c3-836a1b04d078
-date: '2023-04-06T22:58:17.056Z'
 title: Tesseract Spider
 creature_name_index: Tesseract Spider
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tesseract Spider; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

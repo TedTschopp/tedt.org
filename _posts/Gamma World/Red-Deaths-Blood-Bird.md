@@ -1,12 +1,11 @@
 ---
-ID: 71074
-layout: GammaWorld
+id: 71074
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 88aedf42-5cb4-49bc-9e60-63e9054d14e4
-date: '2023-04-06T22:58:17.053Z'
 title: Red Deaths «Blood Bird»
 creature_name_index: Blood Bird
 notes: ''
@@ -178,5 +177,6 @@ players: "Blood Bird; 'Red Deaths';Description: The blood bird, also know as the
   \ blood bird carries two long spurs that apparently serve no purpose.  Its eyes\
   \ are exceptionally keen.Behavior:This bird will make its Radiation attack affecting\
   \ everyone in 6 meters.  It is resistant to all Mental Attacks.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

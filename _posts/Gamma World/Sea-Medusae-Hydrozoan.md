@@ -1,12 +1,11 @@
 ---
-ID: 71306
-layout: GammaWorld
+id: 71306
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ee199b42-6400-4c93-8368-d30e47202ab7
-date: '2023-04-06T22:58:17.054Z'
 title: Sea Medusae «Hydrozoan»
 creature_name_index: Hydrozoan
 notes: ''
@@ -205,5 +204,6 @@ players: "Hydrozoan; 'Sea Medusae';Description: Hydrozoans are two meter tall je
   \ but their most feared ability is their poisonous skin which turns victims to stone\
   \ (exactly as per Ert in the rulebook - but will cause damage even if the victim\
   \ doesn't turn to stone).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

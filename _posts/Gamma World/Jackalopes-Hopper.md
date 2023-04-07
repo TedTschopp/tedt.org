@@ -1,12 +1,11 @@
 ---
-ID: 71290
-layout: GammaWorld
+id: 71290
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ab610bbb-f86b-4d96-a607-223c13336f2d
-date: '2023-04-06T22:58:17.054Z'
 title: Jackalopes «Hopper»
 creature_name_index: Hopper
 notes: ''
@@ -291,5 +290,6 @@ players: "Hopper; 'Jackalopes';Description: Hoppers are herd animals that are mu
   \ have domesticated hoppers as riding animals and (sometimes) beasts of burden,\
   \ although they're not capable of carrying very heavy loads. Hopper meat is also\
   \ a staple of many cultures' diets, and their fur makes soft clothes and blankets.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71130
-layout: GammaWorld
+id: 71130
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6c40a4de-19f7-4b47-a15d-1534889990df
-date: '2023-04-06T22:58:17.053Z'
 title: Hungry Ball «Conola»
 creature_name_index: Conola
 notes: ''
@@ -235,5 +234,6 @@ players: "Conola; 'Hungry Ball';Description: Conola are large, living spheres co
   \ system, the cleaning is not always apparent because places like that cannot be\
   \ thorougly cleaned.  Only with a conola comes across something more than half its\
   \ diameter in sie will it slow down to digest it a section at a time.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

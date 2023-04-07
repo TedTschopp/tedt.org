@@ -1,12 +1,11 @@
 ---
-ID: 71701
-layout: GammaWorld
+id: 71701
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5a16b391-1844-4e21-8c4d-354dbe462f34
-date: '2023-04-06T22:58:17.056Z'
 title: X.M.A.S
 creature_name_index: X.M.A.S
 notes: ''
@@ -224,5 +223,6 @@ players: "X.M.A.S; '';Description: The X.M.A.S unit was oringnally designed to s
   \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
   \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
   \ situations where it can be easily destroyed.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

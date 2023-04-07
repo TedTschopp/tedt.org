@@ -1,12 +1,11 @@
 ---
-ID: 71282
-layout: GammaWorld
+id: 71282
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ab77a491-2426-409c-b377-1349a88582e8
-date: '2023-04-06T22:58:17.054Z'
 title: Tiger Beetles «Herp»
 creature_name_index: Herp
 notes: ''
@@ -205,5 +204,6 @@ players: "Herp; 'Tiger Beetles';Description: Herps are mutant beetles that grow 
   \ Herps fight even each other to protect their hunting grounds. They only cooperate\
   \ in order to mate, with the female herp laying several large, rubbery eggs that\
   \ hatch out into smaller herps, which scuttle off on their own.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

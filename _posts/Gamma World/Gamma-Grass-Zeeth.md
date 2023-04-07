@@ -1,12 +1,11 @@
 ---
-ID: 71712
-layout: GammaWorld
+id: 71712
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1bc15366-2055-4b4c-a47f-275884d84293
-date: '2023-04-06T22:58:17.056Z'
 title: Gamma Grass «Zeeth»
 creature_name_index: Zeeth
 notes: ''
@@ -253,5 +252,6 @@ players: "Zeeth; 'Gamma Grass';Description: Zeeth are blades of purple grass tha
   \ corpse.Society: Zeeth are usually found in clumps or clusters on open plains and\
   \ clearings in temperate environments. They go to seed in summer, dying out in the\
   \ autumn and winter, with new zeeth sprouting from their hosts in the spring.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

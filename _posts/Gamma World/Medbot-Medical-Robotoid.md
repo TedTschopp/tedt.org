@@ -1,12 +1,11 @@
 ---
-ID: 71395
-layout: GammaWorld
+id: 71395
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c2aaaf81-817b-4a1d-93be-0090f8619b98
-date: '2023-04-06T22:58:17.055Z'
 title: Medbot «Medical Robotoid»
 creature_name_index: Medical Robotoid
 notes: ''
@@ -184,5 +183,6 @@ players: "Medical Robotoid; 'Medbot';Description: This upright-walking, 2 meter 
   \ perform complex surgery, if necessary. It heals characters at the same rate as\
   \ a Medi-kit (1d10+20 hit points of damage to Pure Strain Humans and 1d10+10 hit\
   \ points of damage to Humanoids and Mutated Animals).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

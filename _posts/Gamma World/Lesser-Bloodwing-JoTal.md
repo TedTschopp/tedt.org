@@ -1,12 +1,11 @@
 ---
-ID: 71324
-layout: GammaWorld
+id: 71324
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 82facbe9-cd05-4451-a75d-6f88435e4e42
-date: '2023-04-06T22:58:17.054Z'
 title: Lesser Bloodwing «Jo'Tal»
 creature_name_index: Jo'Tal
 notes: ''
@@ -172,5 +171,6 @@ players: "Jo'Tal; 'Lesser Bloodwing';Description: Giant black flies, jo'tal have
   \ prey is detected, the swarm attacks within a silence field. They use gas and bites\
   \ to immobilize the prey for feeding. If the swarms moral fails it generates fear\
   \ and flees.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

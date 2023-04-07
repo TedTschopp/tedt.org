@@ -1,12 +1,11 @@
 ---
-ID: 71297
-layout: GammaWorld
+id: 71297
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 26bb5b72-e71c-46f8-8990-8f555e0826a3
-date: '2023-04-06T22:58:17.054Z'
 title: Wolf Folk «Howler»
 creature_name_index: Howler
 notes: ''
@@ -218,5 +217,6 @@ players: "Howler; 'Wolf Folk';Description: These bipedal, human- oid wolves are 
   \ Howlers resemble the Ancients concept of werewolves in many ways.Howlers will\
   \ usually possess several items of Tech Level II. They will only associate with\
   \ other mutant animals, and are quite rare at present.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71672
-layout: GammaWorld
+id: 71672
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 74419e1f-702e-4210-90d2-fa5203fd6d21
-date: '2023-04-06T22:58:17.056Z'
 title: Lee'Gosi «Vath»
 creature_name_index: Vath
 notes: ''
@@ -224,5 +223,6 @@ players: "Vath; 'Lee'Gosi';Description: Perhaps the most hideous of all of the G
   \ the weather gets cold (Skin Structure Change). These creatures make their homes\
   \ in caves and other dark places, although unlike their ancestors, they travel during\
   \ the day as well as night.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

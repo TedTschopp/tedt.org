@@ -1,12 +1,11 @@
 ---
-ID: 71104
-layout: GammaWorld
+id: 71104
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c748eabc-8f9a-49cd-ad60-1cb8c7cf2cc4
-date: '2023-04-06T22:58:17.053Z'
 title: Cargolifter «Cargolifter - Heavy»
 creature_name_index: Cargolifter - Heavy
 notes: ''
@@ -186,5 +185,6 @@ players: "Cargolifter - Heavy; 'Cargolifter';Description: A Mutated thornbush th
   \ trunk and the root ball.  They are extremely valueable as mounts, and it is very\
   \ difficult to catch them and then even harder to tame them.  However those that\
   \ are are considered excellent mounts.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

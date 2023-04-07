@@ -1,12 +1,11 @@
 ---
-ID: 71423
-layout: GammaWorld
+id: 71423
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bfccf98a-eacf-473a-9ead-8ac31c80495e
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated Chuckwalla
 creature_name_index: Mutated Chuckwalla
 notes: ''
@@ -155,5 +154,6 @@ final_output: "Mutated Chuckwalla (1d2 (1)): Init +4; atk bite melee +2 (1d6); A
   \ 14; HD 6D7 hp 24; MV 23' or Burrow 5' ; 1d20; SV Fort +1, Ref +1, Will +0(P) heightened\
   \ intelligence, and symbiotic attachment (M) reflection"
 players: Mutated Chuckwalla; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

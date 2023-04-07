@@ -1,12 +1,11 @@
 ---
-ID: 71337
-layout: GammaWorld
+id: 71337
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b983ef62-bae3-44ca-995f-107b8542de48
-date: '2023-04-06T22:58:17.054Z'
 title: Thunder Lizard «Kamodo»
 creature_name_index: Kamodo
 notes: Fixed
@@ -178,5 +177,6 @@ players: "Kamodo; 'Thunder Lizard';Description: This 18 meter tall mutated fores
   \ is very fond of insects and birds.  It will take naps lasting several days after\
   \ a particularly fulfilling meal, though they are light sleepers.  They prefer open\
   \ country such as plains and swamps, but can also be found in wooded regions|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

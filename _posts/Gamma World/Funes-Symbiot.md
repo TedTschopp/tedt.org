@@ -1,12 +1,11 @@
 ---
-ID: 71233
-layout: GammaWorld
+id: 71233
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dfc3615f-8de7-458c-8aba-e413063cd7c9
-date: '2023-04-06T22:58:17.054Z'
 title: Funes' Symbiot
 creature_name_index: Funes' Symbiot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Funes' Symbiot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

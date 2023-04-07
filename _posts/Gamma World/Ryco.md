@@ -1,12 +1,11 @@
 ---
-ID: 71513
-layout: GammaWorld
+id: 71513
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f70af6ba-983f-4cd0-a75d-08ce53f150e5
-date: '2023-04-06T22:58:17.055Z'
 title: Ryco
 creature_name_index: Ryco
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ryco; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

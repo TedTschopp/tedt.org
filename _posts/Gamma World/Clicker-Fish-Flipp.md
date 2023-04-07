@@ -1,12 +1,11 @@
 ---
-ID: 71221
-layout: GammaWorld
+id: 71221
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3c4f75d8-81e6-45d0-b5dd-91755f2b39c7
-date: '2023-04-06T22:58:17.054Z'
 title: Clicker Fish «Flipp»
 creature_name_index: Flipp
 notes: ''
@@ -232,5 +231,6 @@ players: "Flipp; 'Clicker Fish';Description: The flipp's true physical form has 
   \ attempt to alter history, but apparently they are not being taken seriously since\
   \ the future Gamma World still exists. Still, all the flipps with Time Manipulation\
   \ will eventually try to go back and warn of the danger to come.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

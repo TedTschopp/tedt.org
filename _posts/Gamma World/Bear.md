@@ -1,12 +1,11 @@
 ---
-ID: 71057
-layout: GammaWorld
+id: 71057
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f1044d0a-63db-433e-819e-e6fec464ddf1
-date: '2023-04-06T22:58:17.053Z'
 title: Bear
 creature_name_index: Bear
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bear; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

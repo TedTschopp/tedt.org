@@ -1,12 +1,11 @@
 ---
-ID: 71272
-layout: GammaWorld
+id: 71272
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4825ba15-ea44-4b19-bb43-c8de072a0961
-date: '2023-04-06T22:58:17.054Z'
 title: Friendlies «Harmony Tree»
 creature_name_index: Harmony Tree
 notes: ''
@@ -362,5 +361,6 @@ players: "Harmony Tree; 'Friendlies';Description: There is a 20% chance that pla
   \ and of course a character must survive the poison to gain the mental strength.\
   \ The poisonous effects of all harmony fruit eaten in one day are cumulative, so\
   \ two harmony fruit will act as intensity 14 poison.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

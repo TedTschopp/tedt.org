@@ -1,12 +1,11 @@
 ---
-ID: 71148
-layout: GammaWorld
+id: 71148
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 190dd0fc-8409-4a52-a1b4-4d81f3b64b1e
-date: '2023-04-06T22:58:17.053Z'
 title: Yellow Living Mold «Cyn I'xon»
 creature_name_index: Cyn I'xon
 notes: ''
@@ -316,5 +315,6 @@ players: "Cyn I'xon; 'Yellow Living Mold';Description: The sarbis looks striking
   \ and threat . All trading in the camp is controlled by the strong man or his minions.\
   \ Sarbises will often buy artifacts useful to mining, sometimes offering other artifacts\
   \ or to make useful implements in exchange.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

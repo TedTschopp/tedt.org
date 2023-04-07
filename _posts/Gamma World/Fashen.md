@@ -1,12 +1,11 @@
 ---
-ID: 71209
-layout: GammaWorld
+id: 71209
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db9053a4-eeeb-4002-862e-82e84d016887
-date: '2023-04-06T22:58:17.054Z'
 title: Fashen
 creature_name_index: Fashen
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Fashen; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

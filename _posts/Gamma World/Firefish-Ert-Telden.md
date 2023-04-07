@@ -1,12 +1,11 @@
 ---
-ID: 71202
-layout: GammaWorld
+id: 71202
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4451972e-8ba8-4bb1-b325-7baaafdba958
-date: '2023-04-06T22:58:17.054Z'
 title: Firefish «Ert Telden»
 creature_name_index: Ert Telden
 notes: ''
@@ -216,5 +215,6 @@ players: "Ert Telden; 'Firefish';Description: Ert telden are sleek fish up to a 
   \ villages and tribes in Gamma Terra understake the dangerous task of capturing\
   \ or raising ert telden, keeping them in shallow pools and flinging them over walls\
   \ by hand or by catapult as weapons.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

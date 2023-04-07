@@ -1,12 +1,11 @@
 ---
-ID: 71681
-layout: GammaWorld
+id: 71681
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3ce4ae04-439b-4c7f-a363-4cb793cc5a8f
-date: '2023-04-06T22:58:17.056Z'
 title: Sage of Melkath «Waldis»
 creature_name_index: Waldis
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Waldis 'Sage of Melkath' (1): Init +2; atk see description; AC 18;\
   \ HD 4D12 hp 26; MV 60' ; 1d20; SV Fort +1, Ref +0, Will +0None"
 players: Waldis; 'Sage of Melkath';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

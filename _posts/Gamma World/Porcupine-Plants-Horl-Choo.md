@@ -1,12 +1,11 @@
 ---
-ID: 71291
-layout: GammaWorld
+id: 71291
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db93d641-9c14-469a-ad0d-668c4e045fa0
-date: '2023-04-06T22:58:17.054Z'
 title: Porcupine Plants «Horl Choo»
 creature_name_index: Horl Choo
 notes: ''
@@ -236,5 +235,6 @@ players: "Horl Choo; 'Porcupine Plants';Description: The horl choo is an odd bla
   \ intelligent by most standards, they're just hunting machines. They spore once\
   \ per year, using slain prey to host the spores where a young horl choo will grow\
   \ over the course of a few weeks before shuffling off on its own to hunt.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

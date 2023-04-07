@@ -1,12 +1,11 @@
 ---
-ID: 71475
-layout: GammaWorld
+id: 71475
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: afba65fc-a3a2-4784-ba4d-a4038713dcef
-date: '2023-04-06T22:58:17.055Z'
 title: Pret of the Order of the Blessed Nano
 creature_name_index: Pret of the Order of the Blessed Nano
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Pret of the Order of the Blessed Nano; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

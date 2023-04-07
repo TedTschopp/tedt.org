@@ -1,12 +1,11 @@
 ---
-ID: 71582
-layout: GammaWorld
+id: 71582
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 59cef2ec-1fed-4fa7-aa07-fac9dbfe5435
-date: '2023-04-06T22:58:17.056Z'
 title: Sly
 creature_name_index: Sly
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Sly (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Sly; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

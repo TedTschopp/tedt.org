@@ -1,12 +1,11 @@
 ---
-ID: 71348
-layout: GammaWorld
+id: 71348
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2e8473e4-46f0-4f20-bb95-283589a40b5d
-date: '2023-04-06T22:58:17.054Z'
 title: Demon «Kraw»
 creature_name_index: Kraw
 notes: ''
@@ -201,5 +200,6 @@ players: "Kraw; 'Demon';Description: Kraw are repulsive looking creatures that r
   \ that it covers all opponents in a 10 meter radius (1d7).  Kraw can use this power\
   \ only twice a day.  They usually employ other creatures through summoning to fight\
   \ for them.Equiptment: Kraw do not collect or use any equiptment.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

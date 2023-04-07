@@ -1,12 +1,11 @@
 ---
-ID: 71142
-layout: GammaWorld
+id: 71142
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b8645760-5b54-49c6-b87a-f3a074c4c7e2
-date: '2023-04-06T22:58:17.053Z'
 title: Crusty 'Uns «Crustean»
 creature_name_index: Crustean
 notes: ''
@@ -260,5 +259,6 @@ players: "Crustean; 'Crusty 'Uns';Description: hese solitary, omnivorous scaveng
   \ in treasure and artifacts, although they understand other creatures' desire for\
   \ them. A visible crustean looks like a brown and black mottled crab about the size\
   \ of a derby hat, with long legs and very large, powerful claws.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

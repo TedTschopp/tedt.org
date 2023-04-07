@@ -1,12 +1,11 @@
 ---
-ID: 71579
-layout: GammaWorld
+id: 71579
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6c00b883-3208-471f-9f80-17d43ce5a299
-date: '2023-04-06T22:58:17.056Z'
 title: Blue Snail «Slimer»
 creature_name_index: Slimer
 notes: ''
@@ -184,5 +183,6 @@ players: "Slimer; 'Blue Snail';Description: These large snails have blue skin an
   \ slime burns until washed off with water or alcohol.  Slimers are dangerous pests\
   \ in inhabited regions, but do perform an important duty of eating dead plant and\
   \ animal matter (carrion). They are preyed upon by animals immune to acid.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

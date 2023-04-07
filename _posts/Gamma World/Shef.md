@@ -1,12 +1,11 @@
 ---
-ID: 71546
-layout: GammaWorld
+id: 71546
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 90203792-876d-410a-8916-9e6da1976940
-date: '2023-04-06T22:58:17.056Z'
 title: Shef
 creature_name_index: Shef
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shef; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

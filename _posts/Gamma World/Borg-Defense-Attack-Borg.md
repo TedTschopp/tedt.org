@@ -1,12 +1,11 @@
 ---
-ID: 71161
-layout: GammaWorld
+id: 71161
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b4e77c9a-490e-44bc-86c1-110e0f4c8317
-date: '2023-04-06T22:58:17.053Z'
 title: Borg «Defense Attack Borg»
 creature_name_index: Defense Attack Borg
 notes: ''
@@ -219,5 +218,6 @@ players: "Defense Attack Borg; 'Borg';Description: This 3 meter diameter sphere 
   \ as rare as Death Machines.Healing / Repair: A Defense Borg can repair 1 point\
   \ of Damage per turn until it suffers half damage then it can only repair 1 hitpoint\
   \ of damage per minute.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

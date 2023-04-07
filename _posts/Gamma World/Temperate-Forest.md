@@ -1,12 +1,11 @@
 ---
-ID: 71634
-layout: GammaWorld
+id: 71634
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 871f1341-dcf7-48ef-8cb0-8df31bb04f82
-date: '2023-04-06T22:58:17.056Z'
 title: Temperate Forest
 creature_name_index: Temperate Forest
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Temperate Forest; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

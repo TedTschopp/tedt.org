@@ -1,12 +1,11 @@
 ---
-ID: 71314
-layout: GammaWorld
+id: 71314
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c30e7342-4fc3-467f-aa9c-214a94956421
-date: '2023-04-06T22:58:17.054Z'
 title: Itchy
 creature_name_index: Itchy
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Itchy; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71309
-layout: GammaWorld
+id: 71309
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 72c4cf88-8587-47b4-9e94-aa6c088c21fb
-date: '2023-04-06T22:58:17.054Z'
 title: Industrial Robot
 creature_name_index: Industrial Robot
 notes: ''
@@ -224,5 +223,6 @@ players: "Industrial Robot ; '';Description: There are two 6-meter-long tentacle
   \ the tasks performed by the robot are done with its tentacles. The claw is used\
   \ for the few tasks that require fine manipulations. The tentacles have a DX of\
   \ 10 and a PS of 30, while the claw has a DX of 15 and a PS of 10. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

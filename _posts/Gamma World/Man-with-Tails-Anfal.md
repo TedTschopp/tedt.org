@@ -1,12 +1,11 @@
 ---
-ID: 71017
-layout: GammaWorld
+id: 71017
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e92ceb36-d140-4189-b61d-e91d12497eef
-date: '2023-04-06T22:58:17.053Z'
 title: Man with Tails «Anfal»
 creature_name_index: Anfal
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Anfal 'Man with Tails' (1d12 (6)): Init -3; atk see description; AC\
   \ 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Anfal; 'Man with Tails';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

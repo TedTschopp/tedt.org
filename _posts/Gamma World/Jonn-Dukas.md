@@ -1,12 +1,11 @@
 ---
-ID: 71326
-layout: GammaWorld
+id: 71326
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: aae1792f-6887-49c3-80c8-3ad7472b6132
-date: '2023-04-06T22:58:17.054Z'
 title: Jonn Dukas
 creature_name_index: Jonn Dukas
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Jonn Dukas (1): Init -3; atk see description; AC 10; HD 1D12 hp 7;
   NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 players: Jonn Dukas; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

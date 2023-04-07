@@ -1,12 +1,11 @@
 ---
-ID: 71699
-layout: GammaWorld
+id: 71699
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ecd66fc6-f731-4b7d-a34b-4b5cc3b40fde
-date: '2023-04-06T22:58:17.056Z'
 title: Wraith
 creature_name_index: Wraith
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Wraith; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

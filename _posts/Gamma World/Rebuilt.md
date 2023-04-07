@@ -1,12 +1,11 @@
 ---
-ID: 71497
-layout: GammaWorld
+id: 71497
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 42800be3-922a-4b4a-94eb-3dd4762a7ebc
-date: '2023-04-06T22:58:17.055Z'
 title: Rebuilt
 creature_name_index: Rebuilt
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Rebuilt; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

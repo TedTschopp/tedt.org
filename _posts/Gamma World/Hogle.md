@@ -1,12 +1,11 @@
 ---
-ID: 71286
-layout: GammaWorld
+id: 71286
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 03f5ae40-3124-4a75-bc56-f745a28d3dd3
-date: '2023-04-06T22:58:17.054Z'
 title: Hogle
 creature_name_index: Hogle
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hogle; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

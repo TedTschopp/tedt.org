@@ -1,12 +1,11 @@
 ---
-ID: 71299
-layout: GammaWorld
+id: 71299
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b906e840-e21e-4d4d-818f-8c35a135451d
-date: '2023-04-06T22:58:17.054Z'
 title: Gi-Ant «Huge Giant Ant»
 creature_name_index: Huge Giant Ant
 notes: ''
@@ -176,5 +175,6 @@ players: "Huge Giant Ant; 'Gi-Ant';Description: Large Ants the Size of Elephants
   \ free, 4- one arm held, 5- two arms held, 6- all arms held. One subsequent rounds,\
   \ the ant does bite damage. Only a tough PS check (or the death of the ant) will\
   \ free the target. If the ant does not grab it will use its sting on the target.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

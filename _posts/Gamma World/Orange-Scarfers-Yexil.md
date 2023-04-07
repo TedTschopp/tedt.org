@@ -1,12 +1,11 @@
 ---
-ID: 71708
-layout: GammaWorld
+id: 71708
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fd3e64aa-d6e9-4307-8296-ff3a22ced967
-date: '2023-04-06T22:58:17.056Z'
 title: Orange Scarfers «Yexil»
 creature_name_index: Yexil
 notes: ''
@@ -185,5 +184,6 @@ players: "Yexil; 'Orange Scarfers';Description: The Yexil stands 3 meters tall, 
   \ clothing of all types and find synthetics especially tasty.  In fact, the snappier\
   \ the outfit, the better yexils like the taste.  They will often trade \"useless\"\
   \ artifacts for \"food\" of this type.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

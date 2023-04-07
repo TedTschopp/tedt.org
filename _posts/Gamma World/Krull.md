@@ -1,12 +1,11 @@
 ---
-ID: 71352
-layout: GammaWorld
+id: 71352
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5a27eedc-4038-4d8c-bd24-8e0acb309dac
-date: '2023-04-06T22:58:17.054Z'
 title: Krull
 creature_name_index: Krull
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Krull; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

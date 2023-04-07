@@ -1,12 +1,11 @@
 ---
-ID: 71598
-layout: GammaWorld
+id: 71598
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bacdec85-5e9d-4602-96e7-7a640055d1df
-date: '2023-04-06T22:58:17.056Z'
 title: Spiny Craw
 creature_name_index: Spiny Craw
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Spiny Craw; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

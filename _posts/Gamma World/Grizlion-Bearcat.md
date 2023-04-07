@@ -1,12 +1,11 @@
 ---
-ID: 71059
-layout: GammaWorld
+id: 71059
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b4111fb6-c730-47b0-8909-337b1df62fdf
-date: '2023-04-06T22:58:17.053Z'
 title: Grizlion «Bearcat»
 creature_name_index: Bearcat
 notes: ''
@@ -223,5 +222,6 @@ players: "Bearcat; 'Grizlion';Description: Also called the grizlion, this fearso
   \ Thankfully, bearcats live in forested hills and mountains, usually far from civilization.\
   \ During particularly harsh winters, however, bearcats have been known to come down\
   \ to lower altitudes and find food in or near settled areas. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

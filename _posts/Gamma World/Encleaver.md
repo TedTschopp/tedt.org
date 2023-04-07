@@ -1,12 +1,11 @@
 ---
-ID: 71191
-layout: GammaWorld
+id: 71191
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 92ef2116-3201-4e35-ac12-d0a64e5868a2
-date: '2023-04-06T22:58:17.053Z'
 title: Encleaver
 creature_name_index: Encleaver
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Encleaver; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

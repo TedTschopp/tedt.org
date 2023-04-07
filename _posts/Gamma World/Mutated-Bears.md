@@ -1,12 +1,11 @@
 ---
-ID: 71422
-layout: GammaWorld
+id: 71422
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 13bad7e7-cc93-4f03-82c9-8061fa6fac77
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated Bears
 creature_name_index: Mutated Bears
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mutated Bears; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

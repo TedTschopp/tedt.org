@@ -1,12 +1,11 @@
 ---
-ID: 71707
-layout: GammaWorld
+id: 71707
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c9ec061e-c215-4575-a1c8-5df5bbbe710b
-date: '2023-04-06T22:58:17.056Z'
 title: Yellow Belly
 creature_name_index: Yellow Belly
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Yellow Belly; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

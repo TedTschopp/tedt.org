@@ -1,12 +1,11 @@
 ---
-ID: 71416
-layout: GammaWorld
+id: 71416
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d336c32b-0c20-49f1-afd8-a04bdd1f60c5
-date: '2023-04-06T22:58:17.055Z'
 title: Mollin
 creature_name_index: Mollin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mollin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

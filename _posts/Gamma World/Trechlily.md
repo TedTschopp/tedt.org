@@ -1,12 +1,11 @@
 ---
-ID: 71660
-layout: GammaWorld
+id: 71660
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 68311f0a-ae32-49bd-a930-27f722b2981a
-date: '2023-04-06T22:58:17.056Z'
 title: Trechlily
 creature_name_index: Trechlily
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Trechlily; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

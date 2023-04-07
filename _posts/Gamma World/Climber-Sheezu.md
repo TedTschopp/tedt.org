@@ -1,12 +1,11 @@
 ---
-ID: 71545
-layout: GammaWorld
+id: 71545
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f43bd9ee-465d-42f8-a3cd-302243a15f8f
-date: '2023-04-06T22:58:17.056Z'
 title: Climber «Sheezu»
 creature_name_index: Sheezu
 notes: ''
@@ -208,5 +207,6 @@ players: "Sheezu; 'Climber';Description: Ger'tal are mutant water striders. They
   \ never use their claws or bite and acid unless they feel extremely threatened.\
   \ A qualified animal trainer can teach a sheezu a maximum of three commands or tricks\"\
   . |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

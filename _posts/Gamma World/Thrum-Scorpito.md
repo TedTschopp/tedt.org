@@ -1,12 +1,11 @@
 ---
-ID: 71520
-layout: GammaWorld
+id: 71520
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 703a8983-b7fc-4337-9012-1c9d43315483
-date: '2023-04-06T22:58:17.055Z'
 title: Thrum «Scorpito»
 creature_name_index: Scorpito
 notes: ''
@@ -267,5 +266,6 @@ players: "Scorpito; 'Thrum';Description: A scorpito is a mutated form of scorpio
   \ swarms typically do not stay in one area for very long. They can essentially be\
   \ considered nomadic. Potential prey usually becomes scarce after the animals in\
   \ an area learn to associate the thrumming noise of the swarm with danger.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

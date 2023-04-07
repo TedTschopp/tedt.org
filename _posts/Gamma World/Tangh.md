@@ -1,12 +1,11 @@
 ---
-ID: 71621
-layout: GammaWorld
+id: 71621
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 68c6d13b-a721-4238-a518-39aa9ef3180c
-date: '2023-04-06T22:58:17.056Z'
 title: Tangh
 creature_name_index: Tangh
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tangh; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71258
-layout: GammaWorld
+id: 71258
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b3b5eb43-0910-4cfb-8422-8d1ffc1ffab3
-date: '2023-04-06T22:58:17.054Z'
 title: Gossamer Butterfly
 creature_name_index: Gossamer Butterfly
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Gossamer Butterfly; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

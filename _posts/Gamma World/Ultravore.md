@@ -1,12 +1,11 @@
 ---
-ID: 71669
-layout: GammaWorld
+id: 71669
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9531349d-3313-4366-95a2-9c08e840dd24
-date: '2023-04-06T22:58:17.056Z'
 title: Ultravore
 creature_name_index: Ultravore
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ultravore; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

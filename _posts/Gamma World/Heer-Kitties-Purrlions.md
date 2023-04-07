@@ -1,12 +1,11 @@
 ---
-ID: 71482
-layout: GammaWorld
+id: 71482
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5d548c45-a78e-4375-84ad-425d256d3dde
-date: '2023-04-06T22:58:17.055Z'
 title: Heer Kitties «Purrlions»
 creature_name_index: Purrlions
 notes: ''
@@ -191,5 +190,6 @@ players: "Purrlions; 'Heer Kitties';Description: Purrlions are among the largest
   \ for certain smelly herbs and flowers, particularly catnip. Certain forms of mutant\
   \ catnip cause purrlions to behave in a dazed and irrational manner, though the\
   \ purrlions usually cause no injury to anyone while under the effects of this substance.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

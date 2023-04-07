@@ -1,12 +1,11 @@
 ---
-ID: 71706
-layout: GammaWorld
+id: 71706
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 642a0018-6b15-4731-bcd0-7a217b40f4e5
-date: '2023-04-06T22:58:17.056Z'
 title: Yaager
 creature_name_index: Yaager
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Yaager; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

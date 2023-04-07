@@ -1,12 +1,11 @@
 ---
-ID: 71304
-layout: GammaWorld
+id: 71304
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b68a07bb-4b67-423d-a233-83b735373dc9
-date: '2023-04-06T22:58:17.054Z'
 title: Hydra
 creature_name_index: Hydra
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hydra; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

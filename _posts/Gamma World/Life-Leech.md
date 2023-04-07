@@ -1,12 +1,11 @@
 ---
-ID: 71362
-layout: GammaWorld
+id: 71362
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4ea2574d-ae9c-4e0d-96b5-11a9489ff2c9
-date: '2023-04-06T22:58:17.054Z'
 title: Life Leech
 creature_name_index: Life Leech
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Life Leech; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

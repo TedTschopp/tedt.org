@@ -1,12 +1,11 @@
 ---
-ID: 71347
-layout: GammaWorld
+id: 71347
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4bbaa619-3c69-4bd3-ae21-acc9264d4eea
-date: '2023-04-06T22:58:17.054Z'
 title: Kooda
 creature_name_index: Kooda
 notes: ''
@@ -195,5 +194,6 @@ players: "Kooda; '';Description: This mutated descendant of the great barracuda 
   \ use their highly evolved instincts to take advantage of the disorder that occurs\
   \ around dusk, when the nighttime fish switch places with the daytime fish. It is\
   \ at this time, when their prey least expect it, that Koodas make their attack.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

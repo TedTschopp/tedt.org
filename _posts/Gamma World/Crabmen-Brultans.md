@@ -1,12 +1,11 @@
 ---
-ID: 71088
-layout: GammaWorld
+id: 71088
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7b743b94-a9f3-464f-98e0-c4e3bdfaace7
-date: '2023-04-06T22:58:17.053Z'
 title: Crabmen «Brultans»
 creature_name_index: Brultans
 notes: ''
@@ -169,5 +168,6 @@ players: "Brultans; 'Crabmen';Description: These large man-like crabs can be fou
   \ of their mutations. They are able to manipulate many types of weapons, though\
   \ they prefer pole arms the most. Even if they are unarmed their claws can still\
   \ do considerable damage - or blast an opponent with bolts of radiation.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

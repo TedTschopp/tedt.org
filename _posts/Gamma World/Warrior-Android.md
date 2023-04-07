@@ -1,12 +1,11 @@
 ---
-ID: 71015
-layout: GammaWorld
+id: 71015
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 89777ba8-bd27-4cc0-9804-d1d643ee1778
-date: '2023-04-06T22:58:17.053Z'
 title: Warrior «Android»
 creature_name_index: Android
 notes: ''
@@ -198,5 +197,6 @@ players: "Android; 'Warrior';Description: Man-made beings with red hued skin and
   \ are quite proficient in these outcomes and will selflessly sacrificed themselves\
   \ for the good of their mission or team.Society: Androids do not have a society.\
   \  They serve whomever created them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

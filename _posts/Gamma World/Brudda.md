@@ -1,12 +1,11 @@
 ---
-ID: 71087
-layout: GammaWorld
+id: 71087
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3b800163-f20b-44b2-9981-8012a7483910
-date: '2023-04-06T22:58:17.053Z'
 title: Brudda
 creature_name_index: Brudda
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Brudda; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

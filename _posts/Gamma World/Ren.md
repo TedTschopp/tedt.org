@@ -1,12 +1,11 @@
 ---
-ID: 71499
-layout: GammaWorld
+id: 71499
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0194dec7-3efb-42e3-ba51-be61ddf6fc6a
-date: '2023-04-06T22:58:17.055Z'
 title: Ren
 creature_name_index: Ren
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ren; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

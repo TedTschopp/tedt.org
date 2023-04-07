@@ -1,12 +1,11 @@
 ---
-ID: 71310
-layout: GammaWorld
+id: 71310
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e9ddaf3b-25e2-4f78-9173-bf58f0f46889
-date: '2023-04-06T22:58:17.054Z'
 title: Black Living Mold «Ini'xon»
 creature_name_index: Ini'xon
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Ini'xon 'Black Living Mold' (1): Init -3; atk see description; AC 10;\
   \ HD 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Ini'xon; 'Black Living Mold';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

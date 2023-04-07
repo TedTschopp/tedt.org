@@ -1,12 +1,11 @@
 ---
-ID: 71279
-layout: GammaWorld
+id: 71279
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6a7037c7-53e7-408e-9d4f-659309bd6f81
-date: '2023-04-06T22:58:17.054Z'
 title: Hell Worm
 creature_name_index: Hell Worm
 notes: ''
@@ -204,5 +203,6 @@ players: "Hell Worm; '';Description: A hellworm is a giant caterpillar with oran
   \ cavern systems found deep inside and feed on blights, yexils, yfiefs, parns, and\
   \ mantas. They ignore and are ignored by obbs; they are preyed upon by the Kraak\
   \ (see Overlord of Bonparr).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

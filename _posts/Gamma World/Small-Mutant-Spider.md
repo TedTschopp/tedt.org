@@ -1,12 +1,11 @@
 ---
-ID: 71583
-layout: GammaWorld
+id: 71583
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cec88dba-9128-4323-87f4-1cfc354224d6
-date: '2023-04-06T22:58:17.056Z'
 title: Small Mutant Spider
 creature_name_index: Small Mutant Spider
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Small Mutant Spider; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71292
-layout: GammaWorld
+id: 71292
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c74ee907-7b74-4eb8-a578-9fd4798fbe03
-date: '2023-04-06T22:58:17.054Z'
 title: Horl Ep
 creature_name_index: Horl Ep
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Horl Ep; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

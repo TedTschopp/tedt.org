@@ -1,12 +1,11 @@
 ---
-ID: 71534
-layout: GammaWorld
+id: 71534
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5673c4c2-d00d-4391-be38-705ad4e6ae3d
-date: '2023-04-06T22:58:17.055Z'
 title: Sensorium Rig
 creature_name_index: Sensorium Rig
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sensorium Rig; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

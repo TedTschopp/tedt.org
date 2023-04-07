@@ -1,12 +1,11 @@
 ---
-ID: 71675
-layout: GammaWorld
+id: 71675
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5c437753-01a0-4eed-b117-24e1149d8154
-date: '2023-04-06T22:58:17.056Z'
 title: Vent Worm
 creature_name_index: Vent Worm
 notes: ''
@@ -190,5 +189,6 @@ players: "Vent Worm; '';Description: Each worm is between .25 and 1 meter long a
   \ d6 and 6d10 points of damage depending on the temperature (190 F to 600 F) and\
   \ the protection the diver has.  When a worm retreats inside its sheath it has an\
   \ AC increased to 5.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

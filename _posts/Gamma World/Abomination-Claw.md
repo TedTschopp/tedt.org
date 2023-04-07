@@ -1,12 +1,11 @@
 ---
-ID: 71001
-layout: GammaWorld
+id: 71001
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 72135a7e-3580-4b54-8fd8-c3b0d4a8fe37
-date: '2023-04-06T22:58:17.053Z'
 title: Abomination Claw
 creature_name_index: Abomination Claw
 notes: ''
@@ -157,5 +156,6 @@ final_output: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 1
   \ each turn"
 players: "Abomination Claw; '';Description: Large claws attached to tendrils that\
   \ act as legs.Behavior:Can leap 2 meters in any direction each turn|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

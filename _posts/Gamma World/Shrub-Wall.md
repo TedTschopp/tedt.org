@@ -1,12 +1,11 @@
 ---
-ID: 71559
-layout: GammaWorld
+id: 71559
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 590b35fb-fe97-4ee0-8e11-3a2208d11243
-date: '2023-04-06T22:58:17.056Z'
 title: Shrub Wall
 creature_name_index: Shrub Wall
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shrub Wall; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

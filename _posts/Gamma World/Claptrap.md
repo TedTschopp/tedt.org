@@ -1,12 +1,11 @@
 ---
-ID: 71121
-layout: GammaWorld
+id: 71121
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 810f76ba-2327-4785-963a-5bbdd1b8b8e8
-date: '2023-04-06T22:58:17.053Z'
 title: Claptrap
 creature_name_index: Claptrap
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Claptrap; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

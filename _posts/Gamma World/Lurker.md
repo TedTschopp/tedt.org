@@ -1,12 +1,11 @@
 ---
-ID: 71376
-layout: GammaWorld
+id: 71376
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6617b8a4-2033-45cf-99f8-2f54f0cedb12
-date: '2023-04-06T22:58:17.055Z'
 title: Lurker
 creature_name_index: Lurker
 notes: ''
@@ -221,5 +220,6 @@ players: "Lurker; '';Description: The lurker barely resembles its ancestors. The
   \ encountered, it will be either a mating pair or a female and her young. These\
   \ young lurkers have only half the hit dice of their parents and their poison intensity\
   \ level is 8-12.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

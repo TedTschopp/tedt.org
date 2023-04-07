@@ -1,12 +1,11 @@
 ---
-ID: 71240
-layout: GammaWorld
+id: 71240
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bb4479d3-6985-4055-b3cc-5c1fa59d62f0
-date: '2023-04-06T22:58:17.054Z'
 title: Green Hissers «Gator»
 creature_name_index: Gator
 notes: ''
@@ -171,5 +170,6 @@ players: "Gator; 'Green Hissers';Description: One to Two Meter long mutated Alli
   \ tentacles will parale on contact (Treat as a Mental Attack Save vs. Will at DC\
   \ 15).  They are immune to radiation.  They are solitary by nature, but will congregate\
   \ in groups of 10d6 to spawn in the springtime.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

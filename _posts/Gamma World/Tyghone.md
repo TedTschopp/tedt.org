@@ -1,12 +1,11 @@
 ---
-ID: 71667
-layout: GammaWorld
+id: 71667
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3dee699a-6dfd-46ef-9cb7-40782754f4bf
-date: '2023-04-06T22:58:17.056Z'
 title: Ty'ghone
 creature_name_index: Ty'ghone
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ty'ghone; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

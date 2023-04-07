@@ -1,12 +1,11 @@
 ---
-ID: 71178
-layout: GammaWorld
+id: 71178
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a71ee1f6-60e3-4fa0-833e-84d169cf1132
-date: '2023-04-06T22:58:17.053Z'
 title: Baldee «E'Glee»
 creature_name_index: E'Glee
 notes: ''
@@ -232,5 +231,6 @@ players: "E'Glee; 'Baldee';Description: These huge winged creatures are the muta
   \ of fire (Pyrophobia), smoke, and steam. Seeing or coming close to any fire larger\
   \ than a bonfire sends them into an uncontrollable panic. E'glee heal damage by\
   \ Regeneration.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

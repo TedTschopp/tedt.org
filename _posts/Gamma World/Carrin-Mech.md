@@ -1,12 +1,11 @@
 ---
-ID: 71109
-layout: GammaWorld
+id: 71109
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: af3a93a5-02c3-4a90-b9b0-620e690f5e84
-date: '2023-04-06T22:58:17.053Z'
 title: Carrin Mech
 creature_name_index: Carrin Mech
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Carrin Mech; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71480
-layout: GammaWorld
+id: 71480
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c63f2762-84ef-48e4-99c5-fd8e050853ab
-date: '2023-04-06T22:58:17.055Z'
 title: Pubbailo
 creature_name_index: Pubbailo
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Pubbailo; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

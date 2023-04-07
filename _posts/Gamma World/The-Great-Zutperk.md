@@ -1,12 +1,11 @@
 ---
-ID: 71714
-layout: GammaWorld
+id: 71714
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6695c505-1149-4b15-8b5f-c6cea063439f
-date: '2023-04-06T22:58:17.056Z'
 title: The Great «Zutperk»
 creature_name_index: Zutperk
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Zutperk; 'The Great';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71019
-layout: GammaWorld
+id: 71019
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 03d48479-32e3-43c5-ae08-4cff8046bbe0
-date: '2023-04-06T22:58:17.053Z'
 title: Magilla «Ape, Carnivorous»
 creature_name_index: Ape, Carnivorous
 notes: ''
@@ -196,5 +195,6 @@ players: "Ape, Carnivorous; 'Magilla';Description: The carnivorous ape is a larg
   \ flash of light to blind and stun its prey. It then attacks by biting or constriction,\
   \ grabbing its prey in a powerful hold. It prefers to attack single creatures or\
   \ small groups, but it will always attack when it feels its territory is threatened.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

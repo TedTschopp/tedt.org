@@ -1,12 +1,11 @@
 ---
-ID: 71386
-layout: GammaWorld
+id: 71386
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3f05c72d-90a4-4d2c-aa9d-0819e4697edd
-date: '2023-04-06T22:58:17.055Z'
 title: Robotic Hunter «Manhunter»
 creature_name_index: Manhunter
 notes: ''
@@ -581,5 +580,6 @@ players: "Manhunter; 'Robotic Hunter';Description: This incredibly fast tracking
   \ uses possible) to destroy ground cover for hiding fugitives. The unit can immerse\
   \ its entire self in water, but is incapable of combat while in this environ- ment.\
   \ It has special remote-controlled drone units which are described below.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

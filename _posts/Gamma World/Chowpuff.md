@@ -1,12 +1,11 @@
 ---
-ID: 71118
-layout: GammaWorld
+id: 71118
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f1f4b911-afc9-4718-a4c3-4f512ee6ad1d
-date: '2023-04-06T22:58:17.053Z'
 title: Chowpuff
 creature_name_index: Chowpuff
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Chowpuff; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71516
-layout: GammaWorld
+id: 71516
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4d00105a-58f6-4884-b6a9-7cb28de0f419
-date: '2023-04-06T22:58:17.055Z'
 title: Bigfoot «Sasquatch»
 creature_name_index: Sasquatch
 notes: ''
@@ -224,5 +223,6 @@ players: "Sasquatch; 'Bigfoot';Description: Once docile and secretive inhabitant
   \ lofty mountain ranges. They respect humans and most other sentient racesas long\
   \ as those species don't cross the sasquatchbut don't trust the technologically\
   \ altered androids. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

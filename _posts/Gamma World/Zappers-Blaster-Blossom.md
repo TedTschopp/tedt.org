@@ -1,12 +1,11 @@
 ---
-ID: 71071
-layout: GammaWorld
+id: 71071
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a9b1de9e-4387-498f-ad7f-8ccfd8dd9add
-date: '2023-04-06T22:58:17.053Z'
 title: Zappers «Blaster Blossom»
 creature_name_index: Blaster Blossom
 notes: ''
@@ -228,5 +227,6 @@ players: "Blaster Blossom; 'Zappers';Description: The few expeditions that have 
   \ turns, within a 15 m radius. If the spores ever kill the creature who touched\
   \ the plant, they will grow in the dead body and become 1-3 new blaster blossoms\
   \ within three days.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71407
-layout: GammaWorld
+id: 71407
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6fea39f1-88db-4410-9c5c-285ab8163441
-date: '2023-04-06T22:58:17.055Z'
 title: Mingos
 creature_name_index: Mingos
 notes: ''
@@ -178,5 +177,6 @@ players: "Mingos; '';Description: Mingos are birdlike creatures descended from F
   \ standing along shores, but find prey easier to catch in the open sea. They no\
   \ longer have the capability to fly because of their water adaptations. They have\
   \ been known to attack humans/humanoids when hungry.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

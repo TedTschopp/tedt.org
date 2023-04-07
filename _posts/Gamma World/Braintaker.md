@@ -1,12 +1,11 @@
 ---
-ID: 71085
-layout: GammaWorld
+id: 71085
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ada495b6-46d7-498f-a10a-a223bd676656
-date: '2023-04-06T22:58:17.053Z'
 title: Braintaker
 creature_name_index: Braintaker
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Braintaker; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71522
-layout: GammaWorld
+id: 71522
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 47e4ab8d-c25f-48ae-8fe1-ab508cd8fad2
-date: '2023-04-06T22:58:17.055Z'
 title: Tree Gator «Screps»
 creature_name_index: Screps
 notes: ''
@@ -252,5 +251,6 @@ players: "Screps; 'Tree Gator';Description: A small, tree-dwelling variety of mu
   \ very large, but it is raven- ously carnivorous and possesses a strong form of\
   \ mental shield. Screps hate these creatures, known as guans, and often recruit\
   \ friends to fight them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

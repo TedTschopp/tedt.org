@@ -1,12 +1,11 @@
 ---
-ID: 71076
-layout: GammaWorld
+id: 71076
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cab1ee4e-30f6-438f-91e3-4940a9cb2fad
-date: '2023-04-06T22:58:17.053Z'
 title: Two Horn «Boarz»
 creature_name_index: Boarz
 notes: ''
@@ -224,5 +223,6 @@ players: "Boarz; 'Two Horn';Description: These bipedal, humanoid boars are one o
   \ and Zoopremists, but only as guerilla warriors or terrorists. They are openly\
   \ hostile to the Peace Brigade (Racketeers with no sense of Morality or Honor) and\
   \ Ranks of the Fit (whom they consider stupid zealots).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

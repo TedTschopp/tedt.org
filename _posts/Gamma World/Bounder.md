@@ -1,12 +1,11 @@
 ---
-ID: 71082
-layout: GammaWorld
+id: 71082
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 722674c1-8e06-477d-8285-7ff2df154fc6
-date: '2023-04-06T22:58:17.053Z'
 title: Bounder
 creature_name_index: Bounder
 notes: ''
@@ -172,5 +171,6 @@ players: "Bounder; '';Description: At first glance, a kai lin looks like an odd 
   \ like a snake and rough, green scales. But in fact the kai lin is not an animal,\
   \ but a mutant breed of plant. Its 'scales' are rough bark and its 'claws' a thorny\
   \ pads and its 'tail' is a trailing root cluster.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

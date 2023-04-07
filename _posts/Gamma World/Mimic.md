@@ -1,12 +1,11 @@
 ---
-ID: 71404
-layout: GammaWorld
+id: 71404
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5dba1974-527e-4823-8f84-9c4d497d4b14
-date: '2023-04-06T22:58:17.055Z'
 title: Mimic
 creature_name_index: Mimic
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mimic; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

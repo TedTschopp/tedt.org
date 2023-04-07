@@ -1,12 +1,11 @@
 ---
-ID: 71688
-layout: GammaWorld
+id: 71688
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 31a4912d-7b93-476f-9e4d-632374921122
-date: '2023-04-06T22:58:17.056Z'
 title: Red Bat-like Humanoid «Wed Tsurp»
 creature_name_index: Wed Tsurp
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Wed Tsurp 'Red Bat-like Humanoid' (2d12 (13)): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Wed Tsurp; 'Red Bat-like Humanoid';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

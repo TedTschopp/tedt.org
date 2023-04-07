@@ -1,12 +1,11 @@
 ---
-ID: 71092
-layout: GammaWorld
+id: 71092
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8540e685-c600-4b79-b73b-c6ed8cc0e87c
-date: '2023-04-06T22:58:17.053Z'
 title: Ambush Bug «Bu'Tal»
 creature_name_index: Bu'Tal
 notes: ''
@@ -233,5 +232,6 @@ players: "Bu'Tal; 'Ambush Bug';Description: Ambush bugs can vary slightly in col
   \ hit successfully, but are dipped in intensity 15 sleep poison. This poison functions\
   \ like paralytic poison, but never goes above Stage III. Stage III is 'asleep.'\
   \ It lasts an hour.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

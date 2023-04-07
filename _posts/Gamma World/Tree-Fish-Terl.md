@@ -1,12 +1,11 @@
 ---
-ID: 71636
-layout: GammaWorld
+id: 71636
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 85505a36-ff34-4fdf-b98c-d44c18f8a6e4
-date: '2023-04-06T22:58:17.056Z'
 title: Tree Fish «Terl»
 creature_name_index: Terl
 notes: ''
@@ -219,5 +218,6 @@ players: "Terl; 'Tree Fish';Description: Truly neither fish nor fowl, the terl i
   \ but usually appear singly. Females lay their eggs in shallow water, where they\
   \ hatch into immature terl that immediately fly away and never return to the watery\
   \ environment.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71072
-layout: GammaWorld
+id: 71072
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 71db4e16-b0fb-4f98-99d1-684ead512a48
-date: '2023-04-06T22:58:17.053Z'
 title: Cloud Worms «Blight»
 creature_name_index: Blight
 notes: ''
@@ -222,5 +221,6 @@ players: "Blight; 'Cloud Worms';Description: A blight is a large, worm-like crea
   \ on prey. They're usually solitary, but sometimes found in mated pairs. They lay\
   \ clutches of eggs that hatch into young blights. The young eat their unhatched\
   \ siblings before flying off on their own.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

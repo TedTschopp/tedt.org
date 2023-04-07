@@ -1,12 +1,11 @@
 ---
-ID: 71269
-layout: GammaWorld
+id: 71269
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 747e2a40-7b83-4f81-9e78-ed2f3b218f2b
-date: '2023-04-06T22:58:17.054Z'
 title: Gwyll
 creature_name_index: Gwyll
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Gwyll; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

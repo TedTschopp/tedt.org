@@ -1,12 +1,11 @@
 ---
-ID: 71252
-layout: GammaWorld
+id: 71252
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cb1885a7-51b7-4151-9e01-6eebe7ff76f1
-date: '2023-04-06T22:58:17.054Z'
 title: Giggle Bugs (Caterpillars)
 creature_name_index: Giggle Bugs (Caterpillars)
 notes: ''
@@ -256,5 +255,6 @@ players: "Giggle Bugs (Caterpillars); '';Description: Giggle bugs spend most of 
   \ March as huge, gaudy moths that live only long enough to mate and lay eggs. The\
   \ eggs take a full year to hatch. Eggs, pupae, and adult moths are all harlequin-colored;\
   \ they cannot excite laughter as the caterpillars do, but they are equally poisonous.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

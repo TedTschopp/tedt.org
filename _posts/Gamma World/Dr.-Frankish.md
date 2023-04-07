@@ -1,12 +1,11 @@
 ---
-ID: 71170
-layout: GammaWorld
+id: 71170
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3770d724-5758-460c-8351-a2fa996716a9
-date: '2023-04-06T22:58:17.053Z'
 title: Dr. Frankish
 creature_name_index: Dr. Frankish
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Dr. Frankish; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

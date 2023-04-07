@@ -1,12 +1,11 @@
 ---
-ID: 71203
-layout: GammaWorld
+id: 71203
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e192c436-91dd-45bd-b785-6f3a4b4970f2
-date: '2023-04-06T22:58:17.054Z'
 title: Plains People «Etar»
 creature_name_index: Etar
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Etar 'Plains People' (1): Init -3; atk see description; AC 10; HD 1D7\
   \ hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Etar; 'Plains People';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

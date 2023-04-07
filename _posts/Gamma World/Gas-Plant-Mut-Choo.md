@@ -1,12 +1,11 @@
 ---
-ID: 71421
-layout: GammaWorld
+id: 71421
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b7569aec-aa27-4212-ad14-9465a8114545
-date: '2023-04-06T22:58:17.055Z'
 title: Gas Plant «Mut Choo»
 creature_name_index: Mut Choo
 notes: ''
@@ -211,5 +210,6 @@ players: "Mut Choo; 'Gas Plant';Description: Mut choo are 3 to 4m diameter plant
   \ damage to all within 7m.       Mut choo prefer to live in areas like jungles,\
   \ forests, swamp lands, and other locales with overhanging vegetation. They are\
   \ sometimes found in caves or ancient ruins.    |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

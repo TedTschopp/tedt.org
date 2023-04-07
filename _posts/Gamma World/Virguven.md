@@ -1,12 +1,11 @@
 ---
-ID: 71678
-layout: GammaWorld
+id: 71678
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 08d2ae5a-6950-4009-8432-c934cde7deb7
-date: '2023-04-06T22:58:17.056Z'
 title: Virguven
 creature_name_index: Virguven
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Virguven; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

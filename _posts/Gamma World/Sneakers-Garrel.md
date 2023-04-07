@@ -1,12 +1,11 @@
 ---
-ID: 71239
-layout: GammaWorld
+id: 71239
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dbc53e0a-1a12-4b75-a794-a14ee0c7d630
-date: '2023-04-06T22:58:17.054Z'
 title: Sneakers «Garrel»
 creature_name_index: Garrel
 notes: ''
@@ -253,5 +252,6 @@ players: "Garrel; 'Sneakers';Description:  Garrels are agile mam- mals of reason
   \ of another garrels stunning force attack. If both of the previous powers have\
   \ been used and the garrel is still in danger, it will then attack its pursuer,\
   \ biting with its sharp teeth and never relenting.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

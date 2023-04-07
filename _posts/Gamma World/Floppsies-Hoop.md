@@ -1,12 +1,11 @@
 ---
-ID: 71288
-layout: GammaWorld
+id: 71288
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 35246aa3-f3a4-485d-a3ef-86765fee007f
-date: '2023-04-06T22:58:17.054Z'
 title: Floppsies «Hoop»
 creature_name_index: Hoop
 notes: ''
@@ -239,5 +238,6 @@ players: "Hoop; 'Floppsies';Description: Mutated Rabbitoid creatures averaging 2
   \ and a community's leader is always called \"general.\" Hoops try to gather as\
   \ many artifacts as they can to \"maintain combat superiority.\" They consider \"\
   floppsies\" a derogatory term.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

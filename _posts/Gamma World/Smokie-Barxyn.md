@@ -1,12 +1,11 @@
 ---
-ID: 71054
-layout: GammaWorld
+id: 71054
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 06dd543a-4085-49a1-8509-40d1d0e7d49c
-date: '2023-04-06T22:58:17.053Z'
 title: Smokie «Barxyn»
 creature_name_index: Barxyn
 notes: ''
@@ -208,5 +207,6 @@ players: "Barxyn; 'Smokie';Description: This fearsome mutant bear usually lives 
   \ fur that is multicolored brown, yellow, and green in patches. When hungry, the\
   \ barxyn delight in burning trapped creatures out of their hiding places with Pyrokinesis\
   \ powers (hence the name, Smokie)|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

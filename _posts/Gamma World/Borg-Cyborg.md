@@ -1,12 +1,11 @@
 ---
-ID: 71146
-layout: GammaWorld
+id: 71146
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a6548543-b316-4d72-bd30-1e300f5e0dea
-date: '2023-04-06T22:58:17.053Z'
 title: Borg «Cyborg»
 creature_name_index: Cyborg
 notes: ''
@@ -234,5 +233,6 @@ players: "Cyborg; 'Borg';Description: Cyborgs were once Ancient humans who, in o
   \ screwdriver, vibrosaw, and protein analyzer.  Cyborgs may be armed with other\
   \ weapons that they use with their human hands.  Cyborgs are rarely encountered\
   \ and most often will be in command of other robots.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

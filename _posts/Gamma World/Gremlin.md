@@ -1,12 +1,11 @@
 ---
-ID: 71261
-layout: GammaWorld
+id: 71261
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 41a2c5c9-3784-4e1f-9d05-36dcba191ff8
-date: '2023-04-06T22:58:17.054Z'
 title: Gremlin
 creature_name_index: Gremlin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Gremlin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

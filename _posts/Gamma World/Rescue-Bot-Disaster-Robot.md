@@ -1,12 +1,11 @@
 ---
-ID: 71168
-layout: GammaWorld
+id: 71168
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a09f75f2-74ce-4e25-b76c-abaae4fbf17f
-date: '2023-04-06T22:58:17.053Z'
 title: Rescue Bot «Disaster Robot»
 creature_name_index: Disaster Robot
 notes: ''
@@ -238,5 +237,6 @@ players: "Disaster Robot; 'Rescue Bot';Description: The top of this oval robot l
   \ x Geiger Counter,1 x Medkit Tech Level 51 x Remote Hand4 x Fire Extinguishers4\
   \ x Air Fliters4 x oxygen tanks1 x Stun Ray Pistol1 x laser Pistol1 x screamer1\
   \ x chainsaw|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

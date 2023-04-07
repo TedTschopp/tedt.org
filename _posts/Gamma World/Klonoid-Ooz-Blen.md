@@ -1,12 +1,11 @@
 ---
-ID: 71455
-layout: GammaWorld
+id: 71455
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9473ea65-e732-4671-883e-3b18e13ee5be
-date: '2023-04-06T22:58:17.055Z'
 title: Klonoid «Ooz Blen»
 creature_name_index: Ooz Blen
 notes: ''
@@ -255,5 +254,6 @@ players: "Ooz Blen; 'Klonoid';Description: The Ooz Blen numbers and hitdice are 
   \ The ooz blen will absorb one-half the damage from radiation.INTENSITY NEW COLOR1-5\
   \ Blue 6-14 Red 15+ GreenThe color changes actually help a creature survive radiation\
   \ by giving warning through the color change and absorbing damage from harmful radiation.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

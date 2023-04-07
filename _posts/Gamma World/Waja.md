@@ -1,12 +1,11 @@
 ---
-ID: 71680
-layout: GammaWorld
+id: 71680
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 234977b1-262c-4c0f-848c-c3f261f15e72
-date: '2023-04-06T22:58:17.056Z'
 title: Waja
 creature_name_index: Waja
 notes: ''
@@ -236,5 +235,6 @@ players: "Waja; '';Description: He slouches to 1.5 meters tall.  His large ears 
   \ he might use a molecular disruption.  AFterwards he always denies any accusations,\
   \ for good or bad, regarding his role in battle. Equiptment: Rags, dagger, Walking\
   \ Staff, assorted JunkSociety: N/A|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

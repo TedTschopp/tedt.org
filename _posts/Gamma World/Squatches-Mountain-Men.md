@@ -1,12 +1,11 @@
 ---
-ID: 71418
-layout: GammaWorld
+id: 71418
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b2a5e0c3-6c07-48d1-b6be-b8913e77483b
-date: '2023-04-06T22:58:17.055Z'
 title: Squatches «Mountain Men»
 creature_name_index: Mountain Men
 notes: ''
@@ -273,5 +272,6 @@ players: "Mountain Men; 'Squatches';Description: Vast tracts of North Americas w
   \ exists between the two racesMountain men appear to be large brown gorillalike\
   \ beings who walk erect Their thick fur keeps out the cold and serves as their only\
   \ body armor|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

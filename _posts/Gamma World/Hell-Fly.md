@@ -1,12 +1,11 @@
 ---
-ID: 71278
-layout: GammaWorld
+id: 71278
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0d5b2df0-a9cf-4c5e-9c6c-f18d007816b5
-date: '2023-04-06T22:58:17.054Z'
 title: Hell Fly
 creature_name_index: Hell Fly
 notes: ''
@@ -181,5 +180,6 @@ players: "Hell Fly; '';Description: giant butterflies with red and yellow markin
   \ keep the food from moving until they hatch. If the eggs are elim- inated (inventive\
   \ GMs will thing of how), the affected PC/animal/NPC can be restored to normal.\
   \ Hellflies live only for 2 weeks and do not feed.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

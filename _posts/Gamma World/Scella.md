@@ -1,12 +1,11 @@
 ---
-ID: 71519
-layout: GammaWorld
+id: 71519
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c32b4280-336b-497e-9033-72b3ab2270fe
-date: '2023-04-06T22:58:17.055Z'
 title: Scella
 creature_name_index: Scella
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Scella; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

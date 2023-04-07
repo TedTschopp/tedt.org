@@ -1,12 +1,11 @@
 ---
-ID: 71244
-layout: GammaWorld
+id: 71244
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e642aa36-fcd0-4d74-bb18-5325e7c2b1b4
-date: '2023-04-06T22:58:17.054Z'
 title: Waiter Bots «General Robotoid»
 creature_name_index: General Robotoid
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "General Robotoid 'Waiter Bots' (1d6 (3)): Init +1; atk see description;\
   \ AC 15; HD 2D12 hp 13 each; MV 15' ; 1d20; SV Fort +1, Ref +0, Will +0"
 players: General Robotoid; 'Waiter Bots';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

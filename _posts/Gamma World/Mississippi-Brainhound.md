@@ -1,12 +1,11 @@
 ---
-ID: 71412
-layout: GammaWorld
+id: 71412
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ffb4452e-aedb-4b2d-9960-26be82d478e9
-date: '2023-04-06T22:58:17.055Z'
 title: Mississippi Brainhound
 creature_name_index: Mississippi Brainhound
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mississippi Brainhound; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

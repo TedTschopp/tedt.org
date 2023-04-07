@@ -1,12 +1,11 @@
 ---
-ID: 71365
-layout: GammaWorld
+id: 71365
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9b55f71e-555c-4efb-b7c4-7333cee56bf5
-date: '2023-04-06T22:58:17.054Z'
 title: Lizard Steeds
 creature_name_index: Lizard Steeds
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Lizard Steeds; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

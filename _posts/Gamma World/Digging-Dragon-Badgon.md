@@ -1,12 +1,11 @@
 ---
-ID: 71040
-layout: GammaWorld
+id: 71040
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ac6eea88-4ac3-4ae5-a578-60e59e83267c
-date: '2023-04-06T22:58:17.053Z'
 title: Digging Dragon «Badgon»
 creature_name_index: Badgon
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Badgon 'Digging Dragon' (1): Init -3; atk see description; AC 10; HD\
   \ 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Badgon; 'Digging Dragon';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

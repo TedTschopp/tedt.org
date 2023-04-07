@@ -1,12 +1,11 @@
 ---
-ID: 71360
-layout: GammaWorld
+id: 71360
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0c5c0c95-a34b-46e8-85a9-746757b63410
-date: '2023-04-06T22:58:17.054Z'
 title: Letharp
 creature_name_index: Letharp
 notes: ''
@@ -209,5 +208,6 @@ players: "Letharp; '';Description: Letharp are huge, bottom-feeding fish which r
   \ this unpredictable behavior boats are often smashed or holed by frightened letharp.Knowledgeable\
   \ mariners are reported to paint the bottoms of their vessels a bright yellow-orange,\
   \ far this color tends to repel or possibly reassure the would- be attacker.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

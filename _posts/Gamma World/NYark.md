@@ -1,12 +1,11 @@
 ---
-ID: 71431
-layout: GammaWorld
+id: 71431
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 711b7858-1d2d-4fea-a4a2-efd0b76729e8
-date: '2023-04-06T22:58:17.055Z'
 title: N'Yark
 creature_name_index: N'Yark
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "N'Yark (1): Init -3; atk see description; AC 10; HD 1D5 hp 3; NO MOVEMENT;\
   \ 1d20; SV Fort -3, Ref -3, Will -3"
 players: N'Yark; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71016
-layout: GammaWorld
+id: 71016
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a07ac128-2028-4225-baf0-e2e5227a00a1
-date: '2023-04-06T22:58:17.053Z'
 title: Body Guard «Android»
 creature_name_index: Android
 notes: ''
@@ -162,5 +161,6 @@ final_output: "Android 'Body Guard' (1d3 (2)): Init +6; atk weapon melee +6 (1d1
 players: "Android; 'Body Guard';Description: Man-made beings with red hued skin and\
   \ blank stares.Behavior:equipment: Powered Battle Armor, Laser Pistol, Vibro Blade,\
   \ Stun Whip, 2 Stun Grenades, Accelera dose, Interra Shot|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

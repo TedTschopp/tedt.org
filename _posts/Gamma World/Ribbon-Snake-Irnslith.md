@@ -1,12 +1,11 @@
 ---
-ID: 71313
-layout: GammaWorld
+id: 71313
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c71e2dd4-f21c-4027-9c94-e7b4be3c1af0
-date: '2023-04-06T22:58:17.054Z'
 title: Ribbon Snake «Irnslith»
 creature_name_index: Irnslith
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Irnslith 'Ribbon Snake' (1): Init -3; atk see description; AC 10; HD\
   \ 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Irnslith; 'Ribbon Snake';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

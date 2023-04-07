@@ -1,12 +1,11 @@
 ---
-ID: 71665
-layout: GammaWorld
+id: 71665
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b0f00748-345d-47ed-acd2-322fc39ebd9c
-date: '2023-04-06T22:58:17.056Z'
 title: Giant Bat «Tsorsut»
 creature_name_index: Tsorsut
 notes: ''
@@ -220,5 +219,6 @@ players: "Tsorsut; 'Giant Bat';Description: The Tsorsut is a huge creature desce
   \ rounds before using that attack again.  Tsorsut will always counter attack with\
   \ attacked, and will continue to do so until they are certain any attackers are\
   \ cowe.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

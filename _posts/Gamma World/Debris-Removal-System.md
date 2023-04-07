@@ -1,12 +1,11 @@
 ---
-ID: 71160
-layout: GammaWorld
+id: 71160
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b8b49381-7a69-49ca-bac5-0f2a888c6059
-date: '2023-04-06T22:58:17.053Z'
 title: Debris Removal System
 creature_name_index: Debris Removal System
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Debris Removal System; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

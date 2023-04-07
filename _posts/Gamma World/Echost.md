@@ -1,12 +1,11 @@
 ---
-ID: 71179
-layout: GammaWorld
+id: 71179
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a55f8f9a-4be4-4715-86fb-219e42fdde5c
-date: '2023-04-06T22:58:17.053Z'
 title: Echost
 creature_name_index: Echost
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Echost; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

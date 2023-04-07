@@ -1,12 +1,11 @@
 ---
-ID: 71466
-layout: GammaWorld
+id: 71466
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6102a369-31e6-46e9-b0f6-e12c459a16ac
-date: '2023-04-06T22:58:17.055Z'
 title: Photo-Shop Bot
 creature_name_index: Photo-Shop Bot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Photo-Shop Bot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71502
-layout: GammaWorld
+id: 71502
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a1016201-b8b8-4461-864b-f61d9d8ffe92
-date: '2023-04-06T22:58:17.055Z'
 title: Bigwig «Rhya»
 creature_name_index: Rhya
 notes: ''
@@ -187,5 +186,6 @@ players: "Rhya; 'Bigwig';Description: This huge mutant beetle is elongate (think
   \ is excreted on to the mandibles. A rhya tries not to move much and thus will rarely\
   \ hunt down escaped prey. If a predator shows up, a rhya will withdraw its breathing\
   \ tubes and rely on its gills.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

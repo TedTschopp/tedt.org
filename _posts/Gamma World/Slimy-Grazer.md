@@ -1,12 +1,11 @@
 ---
-ID: 71580
-layout: GammaWorld
+id: 71580
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0f20ae31-e282-446f-b532-4698b887d1d6
-date: '2023-04-06T22:58:17.056Z'
 title: Slimy Grazer
 creature_name_index: Slimy Grazer
 notes: ''
@@ -188,5 +187,6 @@ players: "Slimy Grazer; '';Description: Slimy grazers are giant sea slugs found 
   \ otherwise they are solitary except during the fall mating season. Even then, they\
   \ do not search each other out, but will mate if they come in contact with each\
   \ other.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

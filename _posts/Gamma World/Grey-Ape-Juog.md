@@ -1,12 +1,11 @@
 ---
-ID: 71330
-layout: GammaWorld
+id: 71330
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f868bebc-1322-4e33-b5df-3eca3a1f6052
-date: '2023-04-06T22:58:17.054Z'
 title: Grey Ape «Juog»
 creature_name_index: Juog
 notes: Fixed
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Juog 'Grey Ape' (1): Init -3; atk see description; AC 10; HD 1D7 hp\
   \ 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Juog; 'Grey Ape';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71566
-layout: GammaWorld
+id: 71566
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c21d1520-c9f5-4e20-93b0-b0e99a7b64b3
-date: '2023-04-06T22:58:17.056Z'
 title: Rok'Ee «Skwil»
 creature_name_index: Skwil
 notes: ''
@@ -224,5 +223,6 @@ players: "Skwil; 'Rok'Ee';Description: Skwil are dog-sized mutant squirrels that
   \ from neighboring trees or bushes into their paws. Although these mutants are very\
   \ sensitive to pain (Doubled Pain [D]) they overcome this debilitating defect by\
   \ employing their powerful mutation, Total Healing.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

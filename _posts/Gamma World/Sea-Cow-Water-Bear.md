@@ -1,12 +1,11 @@
 ---
-ID: 71686
-layout: GammaWorld
+id: 71686
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5d1dce46-96c4-4071-8865-8f8c94e41793
-date: '2023-04-06T22:58:17.056Z'
 title: Sea Cow «Water Bear»
 creature_name_index: Water Bear
 notes: ''
@@ -177,5 +176,6 @@ players: "Water Bear; 'Sea Cow';Description: This highly mutated arachnid is con
   \ ram the aggressor, if moving away does not work. Many undersea races farm water\
   \ bears for food. It is almost to the point of cattle, but water bears can live\
   \ in the wild without supervision.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

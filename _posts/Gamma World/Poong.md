@@ -1,12 +1,11 @@
 ---
-ID: 71474
-layout: GammaWorld
+id: 71474
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 071e8b04-8c53-4262-94d3-e91ae461cc8b
-date: '2023-04-06T22:58:17.055Z'
 title: Poong
 creature_name_index: Poong
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Poong; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

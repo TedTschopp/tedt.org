@@ -1,12 +1,11 @@
 ---
-ID: 71078
-layout: GammaWorld
+id: 71078
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 382f6191-ccde-4237-9b6c-836c6a1f6c20
-date: '2023-04-06T22:58:17.053Z'
 title: Boneswimmer
 creature_name_index: Boneswimmer
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Boneswimmer; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

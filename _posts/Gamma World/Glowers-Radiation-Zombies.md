@@ -1,12 +1,11 @@
 ---
-ID: 71484
-layout: GammaWorld
+id: 71484
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6bf9bb31-0da2-4cd8-bd72-1d6b4c242f96
-date: '2023-04-06T22:58:17.055Z'
 title: Glowers «Radiation Zombies»
 creature_name_index: Radiation Zombies
 notes: ''
@@ -203,5 +202,6 @@ players: "Radiation Zombies; 'Glowers';Description: Radiation Zombies are surviv
   \ be contaminated with 3d6 Intensity radiation. This will be uniform for each individual\
   \ within the entire group. Any contact with a radiation zombie will require an immediate\
   \ check on the radiation table to determine the damage caused by the radioactivity.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

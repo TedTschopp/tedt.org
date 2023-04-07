@@ -1,12 +1,11 @@
 ---
-ID: 71625
-layout: GammaWorld
+id: 71625
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 12937cc5-dbb5-4116-b6ea-da6288eddf56
-date: '2023-04-06T22:58:17.056Z'
 title: Tank 2
 creature_name_index: Tank 2
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tank 2; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

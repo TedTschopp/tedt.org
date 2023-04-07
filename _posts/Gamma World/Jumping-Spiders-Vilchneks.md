@@ -1,12 +1,11 @@
 ---
-ID: 71677
-layout: GammaWorld
+id: 71677
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bed80e28-c372-4537-9e4a-49ff4a9f8f4b
-date: '2023-04-06T22:58:17.056Z'
 title: Jumping Spiders «Vilchneks»
 creature_name_index: Vilchneks
 notes: ''
@@ -200,5 +199,6 @@ players: "Vilchneks; 'Jumping Spiders';Description: Vilchneks are predatory spid
   \ They can cover up to 12 m in a single leap. Their fear impulse is set off only\
   \ by birds and other winged creatures at least as large as themselves, and they\
   \ may not notice furled wings.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

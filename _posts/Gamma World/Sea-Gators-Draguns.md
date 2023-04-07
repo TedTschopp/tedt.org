@@ -1,12 +1,11 @@
 ---
-ID: 71172
-layout: GammaWorld
+id: 71172
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7bf99829-f572-4982-b223-98d07ae70bb1
-date: '2023-04-06T22:58:17.053Z'
 title: Sea Gators «Draguns»
 creature_name_index: Draguns
 notes: ''
@@ -285,5 +284,6 @@ players: "Draguns; 'Sea Gators';Description: Draguns still resemble their ancest
   \ dragun has 1d4 such stones which may be fired at any particular time.If a dragun\
   \ senses any sort of poison gas on the water's surface, it immediately submerges\
   \ and flees the area.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

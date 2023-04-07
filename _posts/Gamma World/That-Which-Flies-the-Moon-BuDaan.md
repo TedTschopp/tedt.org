@@ -1,12 +1,11 @@
 ---
-ID: 71091
-layout: GammaWorld
+id: 71091
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 16f1240c-5433-409f-b852-df5877e4f474
-date: '2023-04-06T22:58:17.053Z'
 title: That Which Flies the Moon «Bu'Daan»
 creature_name_index: Bu'Daan
 notes: ''
@@ -169,5 +168,6 @@ final_output: "Bu'Daan 'That Which Flies the Moon' (1d2 (1)): Init +11; atk bite
 players: "Bu'Daan; 'That Which Flies the Moon';Description: The Bu'Daan resembles\
   \ a huge Weasel with great bat wings and is extremely rare.  It usually lives in\
   \ high areas and its fur brings an enormous price.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

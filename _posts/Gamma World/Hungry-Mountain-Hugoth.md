@@ -1,12 +1,11 @@
 ---
-ID: 71300
-layout: GammaWorld
+id: 71300
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1bb73476-723e-4c16-8520-02398a69ae44
-date: '2023-04-06T22:58:17.054Z'
 title: Hungry Mountain «Hugoth»
 creature_name_index: Hugoth
 notes: ''
@@ -156,5 +155,6 @@ final_output: "Hugoth 'Hungry Mountain' (1): Init +4; atk gore melee +8 (1d8+6) 
   \ trample melee +8 (1d5+6); AC 15; HD 8D7 hp 32; MV 25' ; 1d20; SV Fort +6, Ref\
   \ +0, Will +1(P) Two Trunks, Head Generation (20), (M) Thought Imitation (8)"
 players: Hugoth; 'Hungry Mountain';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

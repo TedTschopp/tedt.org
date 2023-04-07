@@ -1,12 +1,11 @@
 ---
-ID: 71710
-layout: GammaWorld
+id: 71710
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 197f673d-3e52-466c-b8cb-2a8628421395
-date: '2023-04-06T22:58:17.056Z'
 title: Borer Beetles «Zarn»
 creature_name_index: Zarn
 notes: ''
@@ -235,5 +234,6 @@ players: "Zarn; 'Borer Beetles';Description: The zarn or \"boring beetle\" is an
   \ Zarn are found thoughtout Gamma Terra and are considered dangerous vermin to be\
   \ wiped out. They're most common in wilderness areas, but they've been known to\
   \ infest more civilized parts before their presence is discovered.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

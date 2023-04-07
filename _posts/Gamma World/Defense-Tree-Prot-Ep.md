@@ -1,12 +1,11 @@
 ---
-ID: 71478
-layout: GammaWorld
+id: 71478
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ede2c31d-170e-428f-abc6-0e0c9535013f
-date: '2023-04-06T22:58:17.055Z'
 title: Defense Tree «Prot Ep»
 creature_name_index: Prot Ep
 notes: ''
@@ -241,5 +240,6 @@ players: "Prot Ep; 'Defense Tree';Description: Prot eps are the most ancient of 
   \ but cannot even change their color. They only die of old age, and that is after\
   \ thousands of years. Anyone attempting to make armor from a prot ep will discover\
   \ that any bark or leaves crumble to dust 1d6 hours after they are removed.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

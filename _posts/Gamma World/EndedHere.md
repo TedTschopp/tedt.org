@@ -1,12 +1,11 @@
 ---
-ID: 71343
-layout: GammaWorld
+id: 71343
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0a3bcc14-1306-4672-b0b1-fd627928c85a
-date: '2023-04-06T22:58:17.054Z'
 title: EndedHere
 creature_name_index: Killer Kelp
 notes: EndedHere
@@ -169,5 +168,6 @@ players: "Killer Kelp; '';Description: This kelp can sense any nearby movement t
   \ followed by the dissolving juices. It will continue this sequence until either\
   \ the victim or the plant dies. Any creature which falls victim to this plant will\
   \ become fertilizer for future generations of killer kelp.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

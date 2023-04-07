@@ -1,12 +1,11 @@
 ---
-ID: 71590
-layout: GammaWorld
+id: 71590
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 31b60302-e178-4dc5-ac80-1e01f8770a4b
-date: '2023-04-06T22:58:17.056Z'
 title: Soopturt
 creature_name_index: Soopturt
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Soopturt; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

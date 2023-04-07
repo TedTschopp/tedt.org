@@ -1,12 +1,11 @@
 ---
-ID: 71668
-layout: GammaWorld
+id: 71668
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9f9b1251-f202-473c-9718-82a64803e555
-date: '2023-04-06T22:58:17.056Z'
 title: Tyrant
 creature_name_index: Tyrant
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tyrant; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71184
-layout: GammaWorld
+id: 71184
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5bd730b9-adca-492e-be0a-a023dc6d9182
-date: '2023-04-06T22:58:17.053Z'
 title: Forestbot «Ecology Bot - Timber»
 creature_name_index: Ecology Bot - Timber
 notes: ''
@@ -181,5 +180,6 @@ players: "Ecology Bot - Timber; 'Forestbot';Description: This gigantic robot was
   \ with a large paint gun that is capable of doing 1d10 damage from impact and permanently\
   \ staining whatever it hits. Mission: To care for the crops, animals, buildings\
   \ and grounds of a Forest.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

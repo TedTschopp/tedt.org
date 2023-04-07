@@ -1,12 +1,11 @@
 ---
-ID: 71659
-layout: GammaWorld
+id: 71659
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a22fb40a-623d-41c7-9a22-4606755e1a67
-date: '2023-04-06T22:58:17.056Z'
 title: Trap Worm
 creature_name_index: Trap Worm
 notes: ''
@@ -170,5 +169,6 @@ players: "Trap Worm; '';Description: These worms have 12 tentacles that extend f
   \ a circle.Behavior:When suitable prey (10-45 Kg) swims over or comes in contact\
   \ with a tentacle, it attempts to grasp the prey and draw it to the mouth (which\
   \ takes 3 rounds). The worm is 4 to 6 meters long and can change color.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

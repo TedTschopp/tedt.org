@@ -1,12 +1,11 @@
 ---
-ID: 71498
-layout: GammaWorld
+id: 71498
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a98fa379-8465-45b9-bc97-9130f0d44cb1
-date: '2023-04-06T22:58:17.055Z'
 title: Reclaimer
 creature_name_index: Reclaimer
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Reclaimer; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

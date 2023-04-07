@@ -1,12 +1,11 @@
 ---
-ID: 71493
-layout: GammaWorld
+id: 71493
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e6d245f5-f306-4c39-b380-f4f391ed87df
-date: '2023-04-06T22:58:17.055Z'
 title: Raydium, Alpha
 creature_name_index: Raydium, Alpha
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Raydium, Alpha; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

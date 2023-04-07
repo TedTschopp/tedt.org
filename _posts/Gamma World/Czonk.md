@@ -1,12 +1,11 @@
 ---
-ID: 71150
-layout: GammaWorld
+id: 71150
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dbcb5e69-e7ce-42a4-888a-306413120ef8
-date: '2023-04-06T22:58:17.053Z'
 title: Czonk
 creature_name_index: Czonk
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Czonk (1): Init -3; atk see description; AC 10; HD 1D7 hp 4; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Czonk; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71312
-layout: GammaWorld
+id: 71312
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ec14d39b-67dd-454a-80db-ec2c3371d022
-date: '2023-04-06T22:58:17.054Z'
 title: Intensity Beetle
 creature_name_index: Intensity Beetle
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Intensity Beetle; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

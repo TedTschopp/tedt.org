@@ -1,12 +1,11 @@
 ---
-ID: 71334
-layout: GammaWorld
+id: 71334
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b2517638-d15a-49c9-8fe0-92117c36d5a6
-date: '2023-04-06T22:58:17.054Z'
 title: Lizard Bushes «Kai Lin»
 creature_name_index: Kai Lin
 notes: Fixed
@@ -230,5 +229,6 @@ players: "Kai Lin; 'Lizard Bushes';Description: At first glance, a kai lin looks
   \ intelligent and have a pack-structure, cooperating for mutual survival. They reproduce\
   \ by producing shoots that root into the ground and mature over the course of 6-8\
   \ weeks before uprooting and becoming adult kai lin.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

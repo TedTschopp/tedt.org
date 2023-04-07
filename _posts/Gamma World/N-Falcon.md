@@ -1,12 +1,11 @@
 ---
-ID: 71429
-layout: GammaWorld
+id: 71429
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8280fb68-ff7f-4ce5-b8c9-be2da95110bc
-date: '2023-04-06T22:58:17.055Z'
 title: N-Falcon
 creature_name_index: N-Falcon
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: N-Falcon; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

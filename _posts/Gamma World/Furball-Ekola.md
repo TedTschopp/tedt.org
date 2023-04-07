@@ -1,12 +1,11 @@
 ---
-ID: 71189
-layout: GammaWorld
+id: 71189
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 530f2d90-85e8-4ad3-8f7c-ff1b51d115b9
-date: '2023-04-06T22:58:17.053Z'
 title: Furball «Ekola »
 creature_name_index: Ekola
 notes: ''
@@ -186,5 +185,6 @@ players: "Ekola ; 'Furball';Description: The Ekola are 6 inch long mammals that 
   \ pets and can be trained numerous tricks and commands.  They can learn 1d16 separate\
   \ command phrases.  They are hunted in the wilderness for their warm fur to line\
   \ gloves and shoes.   |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

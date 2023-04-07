@@ -1,12 +1,11 @@
 ---
-ID: 71201
-layout: GammaWorld
+id: 71201
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 028c6781-d9a0-448c-ae29-04fca3025421
-date: '2023-04-06T22:58:17.053Z'
 title: Stonefish «Ert»
 creature_name_index: Ert
 notes: ''
@@ -207,5 +206,6 @@ players: "Ert; 'Stonefish';Description: The ert is a normal looking fish with si
   \ bodies or one or more predators. Each summer the ert spawn and hundreds of them\
   \ make their way upstream. They are particularly dangerous at this time and likely\
   \ to attack other creatures that approach their spawning grounds.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

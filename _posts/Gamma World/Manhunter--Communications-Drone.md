@@ -1,12 +1,11 @@
 ---
-ID: 71387
-layout: GammaWorld
+id: 71387
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 992d5cdf-c315-4645-bba4-495a35f6fd8c
-date: '2023-04-06T22:58:17.055Z'
 title: Manhunter - Communications Drone
 creature_name_index: Manhunter - Communications Drone
 notes: ''
@@ -202,5 +201,6 @@ players: "Manhunter - Communications Drone; '';Description: These data-probes ar
   \ probes are also equipped with an electrical defense shield that does 1d10 hp damage\
   \ to characters touching them. The probes themselves cannot attack, and flee as\
   \ soon as they have registered the posi- tion of the desired hiding group.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

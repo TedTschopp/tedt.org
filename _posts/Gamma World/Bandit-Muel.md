@@ -1,12 +1,11 @@
 ---
-ID: 71048
-layout: GammaWorld
+id: 71048
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 299596b8-868b-42fc-9451-7882a03ed760
-date: '2023-04-06T22:58:17.053Z'
 title: Bandit Muel
 creature_name_index: Bandit Muel
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bandit Muel; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

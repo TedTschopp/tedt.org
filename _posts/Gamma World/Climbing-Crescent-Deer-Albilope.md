@@ -1,12 +1,11 @@
 ---
-ID: 71008
-layout: GammaWorld
+id: 71008
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5f23d615-45fe-4fe4-b1a4-2feba55ec62b
-date: '2023-04-06T22:58:17.053Z'
 title: Climbing, Crescent Deer «Albilope»
 creature_name_index: Albilope
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Albilope 'Climbing, Crescent Deer' (1): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Albilope; 'Climbing, Crescent Deer';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

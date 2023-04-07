@@ -1,12 +1,11 @@
 ---
-ID: 71260
-layout: GammaWorld
+id: 71260
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8b5b13ac-f36e-4b0a-aae1-6aeef65153fd
-date: '2023-04-06T22:58:17.054Z'
 title: Greep
 creature_name_index: Greep
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Greep; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

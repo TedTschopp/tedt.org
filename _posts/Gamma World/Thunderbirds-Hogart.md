@@ -1,12 +1,11 @@
 ---
-ID: 71285
-layout: GammaWorld
+id: 71285
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ce0583e8-af89-4cf4-9fba-07e3649f7113
-date: '2023-04-06T22:58:17.054Z'
 title: Thunderbirds «Hogart»
 creature_name_index: Hogart
 notes: ''
@@ -259,5 +258,6 @@ players: "Hogart; 'Thunderbirds';Description: This mutant snake has changed beyo
   \ tails. Their wing feathers are highly prized for decorative pur- poses, and four\
   \ sacks full of feathers (as much as can be taken from a hogart) would be worth\
   \ about 150 gold pieces.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

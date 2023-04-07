@@ -1,12 +1,11 @@
 ---
-ID: 71540
-layout: GammaWorld
+id: 71540
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9ea2a85b-e8ad-453f-9fdd-b90beaac8980
-date: '2023-04-06T22:58:17.056Z'
 title: Thought Masters «Serf»
 creature_name_index: Serf
 notes: ''
@@ -252,5 +251,6 @@ players: "Serf; 'Thought Masters';Description: Serfs are semi-nomadic mutated hu
   \ the Ministers of Thought, never leaves Gra Rad.  Its memvers believe that a serf\
   \ leader called the Forstar will be born to their caln there, and will lead the\
   \ serfs to create a great new Nation.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

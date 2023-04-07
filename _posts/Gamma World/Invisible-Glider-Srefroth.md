@@ -1,12 +1,11 @@
 ---
-ID: 71605
-layout: GammaWorld
+id: 71605
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a4723e6f-ae18-4f84-8f14-928d592a2633
-date: '2023-04-06T22:58:17.056Z'
 title: Invisible Glider «Sre'froth»
 creature_name_index: Sre'froth
 notes: ''
@@ -259,5 +258,6 @@ players: "Sre'froth; 'Invisible Glider';Description: Sre'froth are lifeofrms tha
   \ body heat through ba'mutan hides and those characters protected by such can pass\
   \ by sre'froth undetected. Ruins, caves, deep woods, buildings, and canyons are\
   \ their favorite environs but they can be found anywhere. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

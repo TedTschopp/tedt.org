@@ -1,12 +1,11 @@
 ---
-ID: 71414
-layout: GammaWorld
+id: 71414
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fe0a3f89-1147-4a88-a530-829fc26ae993
-date: '2023-04-06T22:58:17.055Z'
 title: Baby Bronts «Moklas»
 creature_name_index: Moklas
 notes: ''
@@ -312,5 +311,6 @@ players: "Moklas; 'Baby Bronts';Description: During the twentieth century the wo
   \ The eggs hatch within a month and the young moklas then stay with the nearest\
   \ local herd of their own species Moklas reach adulthood after a period of 1015\
   \ years and have a lifespan of over 500 years|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

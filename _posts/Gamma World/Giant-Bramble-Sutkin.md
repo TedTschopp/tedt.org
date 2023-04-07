@@ -1,12 +1,11 @@
 ---
-ID: 71618
-layout: GammaWorld
+id: 71618
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 139642fc-2b62-4344-9b10-96c1259af5fc
-date: '2023-04-06T22:58:17.056Z'
 title: Giant Bramble «Sutkin»
 creature_name_index: Sutkin
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Sutkin 'Giant Bramble' (1): Init -3; atk see description; AC 10; HD\
   \ 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Sutkin; 'Giant Bramble';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

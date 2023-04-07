@@ -1,12 +1,11 @@
 ---
-ID: 71287
-layout: GammaWorld
+id: 71287
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fa7e6679-dfb9-422a-8052-d2f89e8b8415
-date: '2023-04-06T22:58:17.054Z'
 title: Ugly Friend «Holcut»
 creature_name_index: Holcut
 notes: ''
@@ -177,5 +176,6 @@ players: "Holcut; 'Ugly Friend';Description: The Holcut stand 4 feet tall at the
   \ of gas attack.Behavior:They love wallowing in the mud.  They make excellent pets.\
   \  If they are encountered in the wild, they are extremely dangerous and are fearsome\
   \ predators.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

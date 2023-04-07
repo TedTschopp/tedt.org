@@ -1,12 +1,11 @@
 ---
-ID: 71319
-layout: GammaWorld
+id: 71319
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bbb38954-20ac-4082-8e1c-20af34807ecc
-date: '2023-04-06T22:58:17.054Z'
 title: Glass Dragon «Jemagon»
 creature_name_index: Jemagon
 notes: ''
@@ -177,5 +176,6 @@ players: "Jemagon; 'Glass Dragon';Description: This gon is eight meters long and
   \ it will be at a -4 to hit.  A Jemagon can spit a clear contact poison at a range\
   \ fo 13 meters (I14)Equiptment: These transparent creatuers hoard delicate items,\
   \ usually very rare artifacts.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

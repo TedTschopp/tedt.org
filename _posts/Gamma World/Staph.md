@@ -1,12 +1,11 @@
 ---
-ID: 71608
-layout: GammaWorld
+id: 71608
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2ffe2f1b-ebeb-40cb-ab9e-79118ab0e6f0
-date: '2023-04-06T22:58:17.056Z'
 title: Staph
 creature_name_index: Staph
 notes: ''
@@ -172,5 +171,6 @@ players: "Staph; '';Description: These mutant beetles are the bane to all fungi 
   \ do 1d2. Staph attack prey in swarms, trying to cut the fungi to pieces.Though\
   \ staph eat any fungi, they just love obb flesh. Many are never seen as they burrow\
   \ in old logs, eating the fungi rotting the wood.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

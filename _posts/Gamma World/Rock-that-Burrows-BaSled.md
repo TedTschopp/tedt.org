@@ -1,12 +1,11 @@
 ---
-ID: 71037
-layout: GammaWorld
+id: 71037
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d303b83e-c12f-4b58-aedf-17ac7de6ca78
-date: '2023-04-06T22:58:17.053Z'
 title: Rock that Burrows «Ba'Sled»
 creature_name_index: Ba'Sled
 notes: ''
@@ -211,5 +210,6 @@ players: "Ba'Sled; 'Rock that Burrows';Description: Based appear as gray, hunche
   \ addition to their murderous claws they also have a sonic roar that can only be\
   \ used once a day.  This attack does 1d5 damage to everything 15 feet in front of\
   \ the roaring Based.  They are immune to their own sonic roars.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

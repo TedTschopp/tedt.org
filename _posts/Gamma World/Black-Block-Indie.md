@@ -1,12 +1,11 @@
 ---
-ID: 71308
-layout: GammaWorld
+id: 71308
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2fc4daa4-27f2-44be-b2dc-9f8bb20ef377
-date: '2023-04-06T22:58:17.054Z'
 title: Black Block «Indie»
 creature_name_index: Indie
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Indie 'Black Block' (1): Init -3; atk see description; AC 10; HD 1D7\
   \ hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Indie; 'Black Block';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

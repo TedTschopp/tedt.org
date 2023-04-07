@@ -1,12 +1,11 @@
 ---
-ID: 71689
-layout: GammaWorld
+id: 71689
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cbd041c1-eb3d-4aaa-a4fe-a22478004b2b
-date: '2023-04-06T22:58:17.056Z'
 title: Weirbuled
 creature_name_index: Weirbuled
 notes: ''
@@ -212,5 +211,6 @@ players: "Weirbuled; '';Description: These one- to two- meter long fish are a de
   \ reported that truly giant weirbuleds of three or more meters length hove been\
   \ seen, and such creatures would undoubtedly have more virulent acids. These reports\
   \ have not been confirmed, although claims of sighting these large creatures persist.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71378
-layout: GammaWorld
+id: 71378
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f20adb18-b845-4596-a3a4-0be96c174e69
-date: '2023-04-06T22:58:17.055Z'
 title: Mongo «M-NG0»
 creature_name_index: M-NG0
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: M-NG0; 'Mongo';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

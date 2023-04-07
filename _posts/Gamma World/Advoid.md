@@ -1,12 +1,11 @@
 ---
-ID: 71003
-layout: GammaWorld
+id: 71003
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5158fc4b-200d-4a11-a5be-08b260082338
-date: '2023-04-06T22:58:17.053Z'
 title: Advoid
 creature_name_index: Advoid
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Advoid; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

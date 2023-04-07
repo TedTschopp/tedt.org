@@ -1,12 +1,11 @@
 ---
-ID: 71547
-layout: GammaWorld
+id: 71547
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 93e6c605-6d0e-4be6-bea9-54df13191bb0
-date: '2023-04-06T22:58:17.056Z'
 title: Shell Toad
 creature_name_index: Shell Toad
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shell Toad; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

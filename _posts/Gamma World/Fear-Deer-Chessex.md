@@ -1,12 +1,11 @@
 ---
-ID: 71114
-layout: GammaWorld
+id: 71114
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 02fa081b-08fe-455c-ab55-317aa72de4c4
-date: '2023-04-06T22:58:17.053Z'
 title: Fear Deer «Chessex»
 creature_name_index: Chessex
 notes: ''
@@ -221,5 +220,6 @@ players: "Chessex; 'Fear Deer';Description: The chessex are small, mutated deer 
   \ weapons and traps to bring down chessex. Because of their mutations, these creatures\
   \ cannot be domesticated. Chessex have learned to travel radioactive lands in order\
   \ to escape hunters.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71507
-layout: GammaWorld
+id: 71507
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a5238716-688d-45df-a989-6c9cebea20d8
-date: '2023-04-06T22:58:17.055Z'
 title: Rat Friend «Rodcut»
 creature_name_index: Rodcut
 notes: ''
@@ -182,5 +181,6 @@ players: "Rodcut; 'Rat Friend';Description: The rodcut are mutated descendents o
   \ alone and have no loot.  They usually know each oterh's whereabouts by signs and\
   \ markers they leave about.  In cases where a large number of adventurers have been\
   \ threatened, an entire pack of rodcust have stepped in and saved the day.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

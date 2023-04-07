@@ -1,12 +1,11 @@
 ---
-ID: 71215
-layout: GammaWorld
+id: 71215
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 27d65ccd-a07e-40af-bccf-8c288472ea42
-date: '2023-04-06T22:58:17.054Z'
 title: Fid-Chick
 creature_name_index: Fid-Chick
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Fid-Chick; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

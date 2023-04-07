@@ -1,12 +1,11 @@
 ---
-ID: 71398
-layout: GammaWorld
+id: 71398
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db4cceab-a26b-4bae-8d1b-612c4e4dc01d
-date: '2023-04-06T22:58:17.055Z'
 title: Slime Devils «Menarl»
 creature_name_index: Menarl
 notes: ''
@@ -174,5 +173,6 @@ players: "Menarl; 'Slime Devils';Description: 10 Meter long intelligent water sn
   \ on request, but without training they will only use simple weapons.  In the wild\
   \ they prey on water birds and the presence of any sort of bird will send them into\
   \ a frenzy.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

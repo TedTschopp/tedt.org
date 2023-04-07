@@ -1,12 +1,11 @@
 ---
-ID: 71549
-layout: GammaWorld
+id: 71549
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5278b2b3-cf29-4f90-9d04-e22b14603fb9
-date: '2023-04-06T22:58:17.056Z'
 title: Shield Worm
 creature_name_index: Shield Worm
 notes: ''
@@ -169,5 +168,6 @@ players: "Shield Worm; '';Description: The worm is covered with plates of chitin
   \ plates of chitin that are used to make arms (blades) and armor. A shield worm\
   \ is 6 to 8 meters long and has 2 plates for every meter. They are usually harvested\
   \ when they are .5 meters in diameter and grow back in a month.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

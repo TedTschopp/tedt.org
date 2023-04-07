@@ -1,12 +1,11 @@
 ---
-ID: 71035
-layout: GammaWorld
+id: 71035
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 01f28c09-59d3-4650-b0a7-3efdc725136c
-date: '2023-04-06T22:58:17.053Z'
 title: Endlessly Running Beast «Ba'crolbai»
 creature_name_index: Ba'crolbai
 notes: ''
@@ -199,5 +198,6 @@ players: "Ba'crolbai; 'Endlessly Running Beast';Description: The land cred has a
   \ They migrate slowly, killing off local animal life and leaving a 'trail' of crep\
   \ seedlings in their path. Immature crep plants grow rooted for a season before\
   \ gaining mobility and moving off on their own in search of prey.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

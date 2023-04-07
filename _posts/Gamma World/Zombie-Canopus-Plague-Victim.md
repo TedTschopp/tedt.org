@@ -1,12 +1,11 @@
 ---
-ID: 71100
-layout: GammaWorld
+id: 71100
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0d68783b-2d0a-411a-85b0-5e4726709e8e
-date: '2023-04-06T22:58:17.053Z'
 title: Zombie «Canopus Plague Victim»
 creature_name_index: Canopus Plague Victim
 notes: ''
@@ -238,5 +237,6 @@ players: "Canopus Plague Victim; 'Zombie';Description: The figure appears humano
   \ leave the plague-zombies behind. The space station has remained functioning, but\
   \ plague zombies wander the rooms and halls in an endless search for uninfected\
   \ humans.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71578
-layout: GammaWorld
+id: 71578
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 553d9b02-7c45-4532-aaa3-f95db9594b66
-date: '2023-04-06T22:58:17.056Z'
 title: Slembaith
 creature_name_index: Slembaith
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Slembaith; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

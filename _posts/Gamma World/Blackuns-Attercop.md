@@ -1,12 +1,11 @@
 ---
-ID: 71028
-layout: GammaWorld
+id: 71028
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bdedcd98-abae-4c41-b954-1670bc8b22a7
-date: '2023-04-06T22:58:17.053Z'
 title: Blackuns «Attercop»
 creature_name_index: Attercop
 notes: ''
@@ -186,5 +185,6 @@ normal_text: ''
 description_output: ''
 final_output: ''
 players: ''
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71584
-layout: GammaWorld
+id: 71584
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ba89a54f-3ee9-4609-8004-7fce28ffa33a
-date: '2023-04-06T22:58:17.056Z'
 title: Smoke Caterpillar
 creature_name_index: Smoke Caterpillar
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Smoke Caterpillar; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

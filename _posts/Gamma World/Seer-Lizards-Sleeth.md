@@ -1,12 +1,11 @@
 ---
-ID: 71577
-layout: GammaWorld
+id: 71577
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cf5b7cdd-da62-45ed-8e49-445b319d61ff
-date: '2023-04-06T22:58:17.056Z'
 title: Seer Lizards «Sleeth»
 creature_name_index: Sleeth
 notes: ''
@@ -246,5 +245,6 @@ players: "Sleeth; 'Seer Lizards';Description: Sleeths are highly intelligent mut
   \ villages and towns. They make full use of their plant control ability. Though\
   \ sleeth villages and towns are mostly Tech Level III, they almost always contain\
   \ high-tech items. These items are put to easse living contiinos and for defense.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

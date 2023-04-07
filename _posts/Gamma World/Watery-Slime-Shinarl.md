@@ -1,12 +1,11 @@
 ---
-ID: 71551
-layout: GammaWorld
+id: 71551
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 91466661-3e6b-49bc-bad2-94a89b3a9b7f
-date: '2023-04-06T22:58:17.056Z'
 title: Watery Slime «Shinarl»
 creature_name_index: Shinarl
 notes: ''
@@ -181,5 +180,6 @@ players: "Shinarl; 'Watery Slime';Description: Shinarl is a translucent sheet of
   \ both through its acidic properties (I8) and through it spoisnous properties (I8).\
   \    Shinarl can be harmed only by radioactivity, electricity, sonic, stun, or chemical\
   \ defoliants.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

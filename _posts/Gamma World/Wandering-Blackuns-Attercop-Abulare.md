@@ -1,12 +1,11 @@
 ---
-ID: 71029
-layout: GammaWorld
+id: 71029
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0e100ae9-4115-4cc0-bc28-dff117f65d5f
-date: '2023-04-06T22:58:17.053Z'
 title: Wandering Blackuns «Attercop Abulare»
 creature_name_index: Attercop Abulare
 notes: ''
@@ -240,5 +239,6 @@ players: "Attercop Abulare; 'Wandering Blackuns';Description: Attercops, also kn
   \ Any loot found in an Attercop's web is merely indigestible waste to the spider.\
   \  The Lil, commonly take refuge within or behind attercop webs, although some fall\
   \ prey to the spider. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

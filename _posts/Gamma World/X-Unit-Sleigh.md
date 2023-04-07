@@ -1,12 +1,11 @@
 ---
-ID: 71700
-layout: GammaWorld
+id: 71700
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0a96ba85-62c1-4d4a-8e69-661ff7cf55c8
-date: '2023-04-06T22:58:17.056Z'
 title: X Unit Sleigh
 creature_name_index: X Unit Sleigh
 notes: ''
@@ -203,5 +202,6 @@ players: "X Unit Sleigh; '';Description: This unit was originally designed to be
   \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
   \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
   \ situations where it can be easily destroyed.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

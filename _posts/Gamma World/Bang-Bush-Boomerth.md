@@ -1,12 +1,11 @@
 ---
-ID: 71080
-layout: GammaWorld
+id: 71080
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6fc36594-d397-46a1-9285-996c2e752030
-date: '2023-04-06T22:58:17.053Z'
 title: Bang Bush «Boomerth»
 creature_name_index: Boomerth
 notes: ''
@@ -193,5 +192,6 @@ players: "Boomerth; 'Bang Bush';Description: The boomerth looks like any one of 
   \ If the cherries are picked and pickled properly they will maintain their explosive\
   \ capabilities.  This is done by low tech level societies and archaic alliances.\
   \ |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

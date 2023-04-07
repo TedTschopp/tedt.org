@@ -1,12 +1,11 @@
 ---
-ID: 71368
-layout: GammaWorld
+id: 71368
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7dd3aaf9-f9ef-4988-976e-3f4568d4a50c
-date: '2023-04-06T22:58:17.054Z'
 title: Giant Locus «Locus»
 creature_name_index: Locus
 notes: ''
@@ -190,5 +189,6 @@ players: "Locus; 'Giant Locus';Description: These domestic cat sized giant flyin
   \ Locus will swarm to form new hives. During this Hiveswarm time they will be encountered\
   \ in numbers of 80-400 and they will attack anything in their path (To use as food,\
   \ for the new hive).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

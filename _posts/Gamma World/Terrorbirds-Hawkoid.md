@@ -1,12 +1,11 @@
 ---
-ID: 71275
-layout: GammaWorld
+id: 71275
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ef4478de-6e41-49b3-91a3-7c4bbdf8160d
-date: '2023-04-06T22:58:17.054Z'
 title: Terrorbirds «Hawkoid»
 creature_name_index: Hawkoid
 notes: ''
@@ -227,5 +226,6 @@ players: "Hawkoid; 'Terrorbirds';Description: Mutated sparrowhawks that grow to 
   \ land, preferring to levitate even when fighting or talking. The ability to fly\
   \ is so precious to them that if for some reason a Hawkoid loses it, it enters a\
   \ self-induced coma and wills itself to death.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

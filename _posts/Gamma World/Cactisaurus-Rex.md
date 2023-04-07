@@ -1,12 +1,11 @@
 ---
-ID: 71097
-layout: GammaWorld
+id: 71097
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b7d4dc9a-6d86-49a3-b3cc-ebf73418fa68
-date: '2023-04-06T22:58:17.053Z'
 title: Cactisaurus Rex
 creature_name_index: Cactisaurus Rex
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cactisaurus Rex; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

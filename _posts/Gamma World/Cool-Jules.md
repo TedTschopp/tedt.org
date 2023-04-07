@@ -1,12 +1,11 @@
 ---
-ID: 71131
-layout: GammaWorld
+id: 71131
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 510fe67a-57b7-43e7-b3ff-82c2fb0e07cf
-date: '2023-04-06T22:58:17.053Z'
 title: Cool Jules
 creature_name_index: Cool Jules
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: 'Cool Jules (1): Init +6; atk battle axe melee +4 (1d6+1); AC 13; HD
   11D5 hp 33; NO MOVEMENT; 1d20+1d16; SV Fort +1, Ref +0, Will +0'
 players: Cool Jules; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

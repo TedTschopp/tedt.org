@@ -1,12 +1,11 @@
 ---
-ID: 71548
-layout: GammaWorld
+id: 71548
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bc52205e-9a95-4702-928e-b96de7cb3f5b
-date: '2023-04-06T22:58:17.056Z'
 title: Spiked Flyer «Shez'ur»
 creature_name_index: Shez'ur
 notes: ''
@@ -189,5 +188,6 @@ players: "Shez'ur; 'Spiked Flyer';Description: Maroon Birds, 16cm in length, cov
   \ through the swarm.  Movement is reduced to one quarter if more than 30 birds attack.\
   \  They are generally peaceful, unless their nests are threatened or loud noises\
   \ frighten them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

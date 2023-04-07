@@ -1,12 +1,11 @@
 ---
-ID: 71134
-layout: GammaWorld
+id: 71134
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 21dcbbc9-7fee-4a0b-89a6-0bd135321f5a
-date: '2023-04-06T22:58:17.053Z'
 title: Cradengeen
 creature_name_index: Cradengeen
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cradengeen; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

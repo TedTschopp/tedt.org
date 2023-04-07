@@ -1,12 +1,11 @@
 ---
-ID: 71557
-layout: GammaWorld
+id: 71557
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b395e8ea-44e3-45d2-b6c9-3f324ecabb6c
-date: '2023-04-06T22:58:17.056Z'
 title: Shroom
 creature_name_index: Shroom
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shroom; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

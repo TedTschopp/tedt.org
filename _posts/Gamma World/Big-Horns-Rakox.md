@@ -1,12 +1,11 @@
 ---
-ID: 71488
-layout: GammaWorld
+id: 71488
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 09930368-60f5-43b0-9bd5-374ca12d7b2f
-date: '2023-04-06T22:58:17.055Z'
 title: Big Horns «Rakox»
 creature_name_index: Rakox
 notes: ''
@@ -229,5 +228,6 @@ players: "Rakox; 'Big Horns';Description: These oxen are slow but powerful mutat
   \ hide can be cured and used , but it is less serviceable than rog hide (see the\
   \ \"Campaign \" chapter). The horns are hollowed out and made into musical instruments\
   \ or storage containers , like gunpowder horns. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

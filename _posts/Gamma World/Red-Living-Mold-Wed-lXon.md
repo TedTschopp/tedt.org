@@ -1,12 +1,11 @@
 ---
-ID: 71687
-layout: GammaWorld
+id: 71687
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9d020ee8-f444-4ac9-9389-c4c93e46a245
-date: '2023-04-06T22:58:17.056Z'
 title: Red Living Mold «Wed l'Xon»
 creature_name_index: Wed l'Xon
 notes: ''
@@ -175,5 +174,6 @@ players: "Wed l'Xon; 'Red Living Mold';Description: The tall, deep red living mo
   \ are symbioticly linked with their host.  They are immune to most forms of attack.\
   \  They take half damage from Fire (not heat).  Cold Attacks do double damage to\
   \ them.  They are immune to chemical defoliants.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

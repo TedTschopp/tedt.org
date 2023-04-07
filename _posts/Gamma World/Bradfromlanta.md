@@ -1,12 +1,11 @@
 ---
-ID: 71083
-layout: GammaWorld
+id: 71083
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 66b6ede5-440c-41af-92cf-8308cfafa26e
-date: '2023-04-06T22:58:17.053Z'
 title: Bradfromlanta
 creature_name_index: Bradfromlanta
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bradfromlanta; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71228
-layout: GammaWorld
+id: 71228
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cec24ef0-7451-48f3-be85-f2a1c79f835f
-date: '2023-04-06T22:58:17.054Z'
 title: Free Car
 creature_name_index: Free Car
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Free Car; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

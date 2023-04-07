@@ -1,12 +1,11 @@
 ---
-ID: 71611
-layout: GammaWorld
+id: 71611
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d990adb8-8207-4901-a3e8-3ba851515890
-date: '2023-04-06T22:58:17.056Z'
 title: Sticky
 creature_name_index: Sticky
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sticky; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

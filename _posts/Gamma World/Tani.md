@@ -1,12 +1,11 @@
 ---
-ID: 71623
-layout: GammaWorld
+id: 71623
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 071ef0c3-cadf-4724-9ed6-d7443a52c5b3
-date: '2023-04-06T22:58:17.056Z'
 title: Tani
 creature_name_index: Tani
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tani; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

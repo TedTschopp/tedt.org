@@ -1,12 +1,11 @@
 ---
-ID: 71645
-layout: GammaWorld
+id: 71645
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a8311a30-8737-4021-a99d-2bb1ff33d344
-date: '2023-04-06T22:58:17.056Z'
 title: Thra
 creature_name_index: Thra
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Thra; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

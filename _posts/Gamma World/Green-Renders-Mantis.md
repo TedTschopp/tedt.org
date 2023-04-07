@@ -1,12 +1,11 @@
 ---
-ID: 71390
-layout: GammaWorld
+id: 71390
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 048cf7c4-c572-4f19-b74e-3f58c39444e3
-date: '2023-04-06T22:58:17.055Z'
 title: Green Renders «Mantis»
 creature_name_index: Mantis
 notes: ''
@@ -170,5 +169,6 @@ players: "Mantis; 'Green Renders';Description: Giant Praying Mantises that stand
   \ smart enough to avoid and stop attacking prey that is clearly stronger.  They\
   \ can be recruited to help others when food is offered. They are however not intelligent\
   \ enough to be considered a hireling.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

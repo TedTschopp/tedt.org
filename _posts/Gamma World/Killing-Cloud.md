@@ -1,12 +1,11 @@
 ---
-ID: 71345
-layout: GammaWorld
+id: 71345
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c2fc4d0c-33e2-41d7-845b-2340e2237d00
-date: '2023-04-06T22:58:17.054Z'
 title: Killing Cloud
 creature_name_index: Killing Cloud
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Killing Cloud; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

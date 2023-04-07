@@ -1,12 +1,11 @@
 ---
-ID: 71197
-layout: GammaWorld
+id: 71197
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 20b925c2-6740-4383-ac35-7b07543d9153
-date: '2023-04-06T22:58:17.053Z'
 title: Engineering Robot
 creature_name_index: Engineering Robot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Engineering Robot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71145
-layout: GammaWorld
+id: 71145
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db067255-f711-428f-95da-b1605d972f85
-date: '2023-04-06T22:58:17.053Z'
 title: Cybernetic Hunter/Tracker «Cybohunter»
 creature_name_index: Cybohunter
 notes: ''
@@ -569,5 +568,6 @@ players: "Cybohunter; 'Cybernetic Hunter/Tracker';Description: Cybohunters are t
   \ hunter never has physical or defective mental mutations (such units are de- stroyed\
   \ by these defects over time). At- tacks using mental powers can be made normally\
   \ on the Cybohunter.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

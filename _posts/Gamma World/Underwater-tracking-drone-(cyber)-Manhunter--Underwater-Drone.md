@@ -1,12 +1,11 @@
 ---
-ID: 71389
-layout: GammaWorld
+id: 71389
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bf93f510-d354-4734-9810-07dc17b00a0f
-date: '2023-04-06T22:58:17.055Z'
 title: Underwater tracking drone (cyber) «Manhunter - Underwater Drone»
 creature_name_index: Manhunter - Underwater Drone
 notes: ''
@@ -215,5 +214,6 @@ players: "Manhunter - Underwater Drone; 'Underwater tracking drone (cyber)';Desc
   \ erful light that blinds characters looking directly at it for 1d6 action turns\
   \ out to 30 meters. The cyber has a tractor/pressor beam capable of lifting and\
   \ carrying up to 200 kilograms.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

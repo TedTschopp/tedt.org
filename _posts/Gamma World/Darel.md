@@ -1,12 +1,11 @@
 ---
-ID: 71153
-layout: GammaWorld
+id: 71153
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d0b0a2c4-f8ec-4040-9b67-99be9040d0b3
-date: '2023-04-06T22:58:17.053Z'
 title: Darel
 creature_name_index: Darel
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Darel; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

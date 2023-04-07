@@ -1,12 +1,11 @@
 ---
-ID: 71521
-layout: GammaWorld
+id: 71521
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 59eca60b-7447-4689-b67e-0d485be58259
-date: '2023-04-06T22:58:17.055Z'
 title: Screamer
 creature_name_index: Screamer
 notes: ''
@@ -236,5 +235,6 @@ players: "Screamer; '';Description: Very little is known about this strange and 
   \ heat and cold-based attacks. They possess the abilities of directional sense and\
   \ life leech, the Iatter with a ronge of 20 meters (mental strength 12). In addition,\
   \ the touch of a screamer gives a sudden lase of intensity 13 radiation to its victim.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71099
-layout: GammaWorld
+id: 71099
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c9aa816e-65b8-43be-bae5-c0bdd298b0c5
-date: '2023-04-06T22:58:17.053Z'
 title: Flying Rippers «Cal Then»
 creature_name_index: Cal Then
 notes: ''
@@ -212,5 +211,6 @@ players: "Cal Then; 'Flying Rippers';Description: An obb or 'flying eye,' looks 
   \ and other creatures to a cal then's hunting ground to feed on the leftovers. They\
   \ are sometimes encountered in mated pairs, but mate only briefly. The female lays\
   \ a clutch of eggs, but does not care for the young.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

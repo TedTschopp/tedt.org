@@ -1,12 +1,11 @@
 ---
-ID: 71463
-layout: GammaWorld
+id: 71463
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4fcc9412-8b7d-4846-b548-724b0669db00
-date: '2023-04-06T22:58:17.055Z'
 title: Partha
 creature_name_index: Partha
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Partha (1): Init -3; atk see description; AC 10; HD 1D7 hp 4; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Partha; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

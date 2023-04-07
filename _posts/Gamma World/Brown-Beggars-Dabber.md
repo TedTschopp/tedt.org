@@ -1,12 +1,11 @@
 ---
-ID: 71151
-layout: GammaWorld
+id: 71151
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d68cc0c4-9adb-40a2-82e1-eff103ef7f64
-date: '2023-04-06T22:58:17.053Z'
 title: Brown Beggars «Dabber»
 creature_name_index: Dabber
 notes: ''
@@ -236,5 +235,6 @@ players: "Dabber; 'Brown Beggars';Description: One Meter tall mutated racoons th
   \ dabber runs away. Often (90% of the time), the dabber then comes back with up\
   \ to seven friends to take the object, and anything else that strikes his and their\
   \ fancy.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

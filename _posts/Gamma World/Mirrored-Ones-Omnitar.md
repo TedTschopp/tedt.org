@@ -1,12 +1,11 @@
 ---
-ID: 71454
-layout: GammaWorld
+id: 71454
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9cae61e1-f381-44f8-9aa4-6c04a71a0373
-date: '2023-04-06T22:58:17.055Z'
 title: Mirrored Ones «Omnitar»
 creature_name_index: Omnitar
 notes: ''
@@ -201,5 +200,6 @@ players: "Omnitar; 'Mirrored Ones';Description: The omnitar are atmovores, that 
   \ to hit. If more that 750 points of damage are pumped into them, they will shatter\
   \ causing fragmentation damage (5d10) to everything within a 10m radius.       \
   \ Omnitars are usually found on plains, gentle rolling hills, and forests.   |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

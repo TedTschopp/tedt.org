@@ -1,12 +1,11 @@
 ---
-ID: 71136
-layout: GammaWorld
+id: 71136
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1ff43154-10ff-481b-b8bc-194559182695
-date: '2023-04-06T22:58:17.053Z'
 title: Lizard Fish «Cren Tosh»
 creature_name_index: Cren Tosh
 notes: ''
@@ -224,5 +223,6 @@ players: "Cren Tosh; 'Lizard Fish';Description: The cren tosh (or \"lizard fish\
   \ line their nests with shiny pebbles and objects they have collected, and lay their\
   \ eggs there. They defend the nest fiercely until the eggs hatch, then the young\
   \ cren tosh are left on their own.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

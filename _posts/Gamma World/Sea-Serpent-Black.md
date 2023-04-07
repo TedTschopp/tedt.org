@@ -1,12 +1,11 @@
 ---
-ID: 71527
-layout: GammaWorld
+id: 71527
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b0eada6a-f4f0-46cf-b94e-265b03a57547
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Serpent, Black
 creature_name_index: Sea Serpent, Black
 notes: ''
@@ -213,5 +212,6 @@ players: "Sea Serpent, Black; '';Description: Black sea serpents are mutated sna
   \ during the winter on land in deep mud. The snakes are considered a major threat\
   \ to the fishermen of both bodies of water. They do not congregate, except during\
   \ mating, when up to 10 males try to mate with a single female.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

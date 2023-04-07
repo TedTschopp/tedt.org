@@ -1,12 +1,11 @@
 ---
-ID: 71371
-layout: GammaWorld
+id: 71371
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 92d05718-9b9f-4108-86d8-2478313129f2
-date: '2023-04-06T22:58:17.055Z'
 title: Grey Shadow «Loo Pur»
 creature_name_index: Loo Pur
 notes: ''
@@ -218,5 +217,6 @@ players: "Loo Pur; 'Grey Shadow';Description: Loo purs are cunning, carnivorous,
   \ (limited by their physical constraints and their mutational defect  see below).\
   \ All of these mutated wolves are afraid of electrical power, robots, etc. (Energy\
   \ Sensitivity Defect) and will avoid such items at all cost.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

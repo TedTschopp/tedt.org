@@ -1,12 +1,11 @@
 ---
-ID: 71532
-layout: GammaWorld
+id: 71532
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: aca7fc88-e754-4082-9e31-30e2d0beaae3
-date: '2023-04-06T22:58:17.055Z'
 title: Security Robot
 creature_name_index: Security Robot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Security Robot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

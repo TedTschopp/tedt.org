@@ -1,12 +1,11 @@
 ---
-ID: 71022
-layout: GammaWorld
+id: 71022
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 083aa364-46a7-48f1-ae17-39f53b0bfa15
-date: '2023-04-06T22:58:17.053Z'
 title: Hound Folk «Ark»
 creature_name_index: Ark
 notes: ''
@@ -232,5 +231,6 @@ players: "Ark; 'Hound Folk';Description: Intelligent man-dogs over two meters ta
   \ Ignore them if rolled as loot. However, Tech V and VI artifacts are worshipped\
   \ as totems. The alpha male's first wife is charged with the care and transportation\
   \ of the totems. They consider human hands to be a great delicacy.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

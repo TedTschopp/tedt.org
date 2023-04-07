@@ -1,12 +1,11 @@
 ---
-ID: 71126
-layout: GammaWorld
+id: 71126
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b5231cb5-56c2-4f7a-bcbf-9c04cd1cc775
-date: '2023-04-06T22:58:17.053Z'
 title: Cody Matrix
 creature_name_index: Cody Matrix
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cody Matrix ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

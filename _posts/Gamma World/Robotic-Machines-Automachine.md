@@ -1,12 +1,11 @@
 ---
-ID: 71032
-layout: GammaWorld
+id: 71032
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c9124a94-7585-447d-aee9-fd8a53424505
-date: '2023-04-06T22:58:17.053Z'
 title: Robotic Machines «Automachine»
 creature_name_index: Automachine
 notes: ''
@@ -176,5 +175,6 @@ players: "Automachine; 'Robotic Machines';Behavior:Auto Machines are equipped wi
   \ Thrower B), welding roches, pain spray, heat lamps (treat as laser pistol for\
   \ damage), metal punch (treat as knives), wire binders, or water jets and brushes.Mission:\
   \ To complete the mission for whatever appliance that they are imbedded in.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

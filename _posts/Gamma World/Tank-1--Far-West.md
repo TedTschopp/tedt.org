@@ -1,12 +1,11 @@
 ---
-ID: 71624
-layout: GammaWorld
+id: 71624
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 95d7315f-5e33-42e1-995f-6c552fa26550
-date: '2023-04-06T22:58:17.056Z'
 title: Tank 1 - Far West
 creature_name_index: Tank 1 - Far West
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tank 1 - Far West; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

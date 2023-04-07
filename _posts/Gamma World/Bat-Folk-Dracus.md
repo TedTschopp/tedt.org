@@ -1,12 +1,11 @@
 ---
-ID: 71171
-layout: GammaWorld
+id: 71171
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cdd78857-bd56-434b-873e-b11e172a0264
-date: '2023-04-06T22:58:17.053Z'
 title: Bat Folk «Dracus»
 creature_name_index: Dracus
 notes: ''
@@ -224,5 +223,6 @@ players: "Dracus; 'Bat Folk';Description: Dracs are mutant, humanoid-shaped bats
   \ usually the leader of a hunting pack, will have some equipment of Tech Level II.\
   \ Dracs will only associate with their own kind. They will never become hirelings\
   \ or followers.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

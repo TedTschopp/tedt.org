@@ -1,12 +1,11 @@
 ---
-ID: 71256
-layout: GammaWorld
+id: 71256
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8e7646e9-8717-4d08-9790-a5fcfef89a73
-date: '2023-04-06T22:58:17.054Z'
 title: Glower
 creature_name_index: Glower
 notes: ''
@@ -200,5 +199,6 @@ players: "Glower; '';Description: These mutant fungi always live near or in radi
   \ poison if swallowed by any creature (Int 16). However, when these mutated fungi\
   \ are boiled down, they produce an antidote for Int 16 poisons.Each square meter\
   \ of this growth will yield one dose of this anti-dote.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

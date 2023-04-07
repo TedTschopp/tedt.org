@@ -1,12 +1,11 @@
 ---
-ID: 71439
-layout: GammaWorld
+id: 71439
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 778fbf81-01cf-429a-9b51-d130487b9ee9
-date: '2023-04-06T22:58:17.055Z'
 title: Killer Turtles «Niregs»
 creature_name_index: Niregs
 notes: ''
@@ -220,5 +219,6 @@ players: "Niregs; 'Killer Turtles';Description: Each head will have seperate Men
   \ nireg (if willing) can carry up to 200 kg at full speed over any terrain but the\
   \ rockiest, and can haul up to 400 kg at half speed over smooth ground or roads.\
   \ Niregs typically have a single name despite having two separate personalities.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71413
-layout: GammaWorld
+id: 71413
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fc3720fb-02b1-4677-8e93-2b506337d61e
-date: '2023-04-06T22:58:17.055Z'
 title: Mist Spider
 creature_name_index: Mist Spider
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mist Spider; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

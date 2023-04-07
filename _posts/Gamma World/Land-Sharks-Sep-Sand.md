@@ -1,12 +1,11 @@
 ---
-ID: 71537
-layout: GammaWorld
+id: 71537
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3f5ad3cd-9a32-4b6a-9588-d3817fdf803f
-date: '2023-04-06T22:58:17.055Z'
 title: Land Sharks «Sep, Sand»
 creature_name_index: Sep, Sand
 notes: ''
@@ -209,5 +208,6 @@ players: "Sep, Sand; 'Land Sharks';Description: Seps are mutated sharks that hav
   \ Once killed, the prey is dragged below-ground and eaten.Society: Seps tend to\
   \ hunt singly, although they're sometimes encountered in small \"schools\" of up\
   \ to six. They inhabit deserts and other sandy regions.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

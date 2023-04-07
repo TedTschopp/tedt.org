@@ -1,12 +1,11 @@
 ---
-ID: 71033
-layout: GammaWorld
+id: 71033
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fe16a2d7-dbc4-4f85-bcd1-d6df78de54b3
-date: '2023-04-06T22:58:17.053Z'
 title: Teacher Bot «Automaton»
 creature_name_index: Automaton
 notes: ''
@@ -215,5 +214,6 @@ players: "Automaton; 'Teacher Bot';Description: Automatons are two-meter-tall ro
   \ x doses of adhesive 1 x half strength medkitHealing / Repair: They can repair\
   \ themselves at the rate of 5 points a day until half-damaged, after which they\
   \ repair at a rate of 1 point a day.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

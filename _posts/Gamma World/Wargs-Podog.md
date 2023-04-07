@@ -1,12 +1,11 @@
 ---
-ID: 71471
-layout: GammaWorld
+id: 71471
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 22cea7e9-cf95-4017-807e-fb211d0c8bbb
-date: '2023-04-06T22:58:17.055Z'
 title: Wargs «Podog»
 creature_name_index: Podog
 notes: ''
@@ -255,5 +254,6 @@ players: "Podog; 'Wargs';Description: The Podogs are huge mutated mastiffs that 
   \ to be saddled and ridden by a stranger' In thr wild, podogs are clever and dangerous\
   \ hunters, using thrir sound imitation to maximum effect and making fast, hit-andrun\
   \ attacks to weaken strong prey. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

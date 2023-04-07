@@ -1,12 +1,11 @@
 ---
-ID: 71111
-layout: GammaWorld
+id: 71111
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dfc46caf-be00-48ae-96cc-f6a8de556cf9
-date: '2023-04-06T22:58:17.053Z'
 title: Blue Meanies «Ceruleans»
 creature_name_index: Ceruleans
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ceruleans; 'Blue Meanies';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

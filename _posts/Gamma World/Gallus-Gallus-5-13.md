@@ -1,12 +1,11 @@
 ---
-ID: 71235
-layout: GammaWorld
+id: 71235
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 97c42fed-09d2-4b11-8c0f-ccff68813bb3
-date: '2023-04-06T22:58:17.054Z'
 title: Gallus Gallus 5-13
 creature_name_index: Gallus Gallus 5-13
 notes: ''
@@ -245,5 +244,6 @@ players: "Gallus Gallus 5-13; '';Description: The hideous result of an accidenta
   \ these mutant chickens is their lack of resistance to poison of any type.Poison\
   \ is instant death to the Gallus Gallus 5/13 unless the correct antidote is immediately\
   \ administered. Even then there is only a 50% chance that the mutant will live.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

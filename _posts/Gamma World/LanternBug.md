@@ -1,12 +1,11 @@
 ---
-ID: 71356
-layout: GammaWorld
+id: 71356
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c4ee1021-cb42-43fd-9bf7-1cccc15e511b
-date: '2023-04-06T22:58:17.054Z'
 title: LanternBug
 creature_name_index: LanternBug
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: LanternBug; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

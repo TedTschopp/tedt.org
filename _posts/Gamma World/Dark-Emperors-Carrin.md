@@ -1,12 +1,11 @@
 ---
-ID: 71108
-layout: GammaWorld
+id: 71108
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 051aa496-6678-4d79-84df-676f2ffab583
-date: '2023-04-06T22:58:17.053Z'
 title: Dark Emperors «Carrin»
 creature_name_index: Carrin
 notes: ''
@@ -228,5 +227,6 @@ players: "Carrin; 'Dark Emperors';Description: Three meter tall mutated vultures
   \ consumption. Carrin society is a complicated structure where the wealthy make\
   \ the rules and Machiavellian political intrigue is common. Currying favour and\
   \ double-crossing is a way of life. Most Carrin schemes are elaborate, twisted plots.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

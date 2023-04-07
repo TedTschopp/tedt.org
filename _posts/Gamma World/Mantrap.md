@@ -1,12 +1,11 @@
 ---
-ID: 71391
-layout: GammaWorld
+id: 71391
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8d243e56-75c3-49d6-b33f-76b93a842d0d
-date: '2023-04-06T22:58:17.055Z'
 title: Mantrap
 creature_name_index: Mantrap
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mantrap; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

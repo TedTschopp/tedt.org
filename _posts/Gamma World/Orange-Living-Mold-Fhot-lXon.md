@@ -1,12 +1,11 @@
 ---
-ID: 71214
-layout: GammaWorld
+id: 71214
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 192f7561-4540-45a5-a4f3-13a2e3a49826
-date: '2023-04-06T22:58:17.054Z'
 title: Orange Living Mold «Fhot l'Xon»
 creature_name_index: Fhot l'Xon
 notes: ''
@@ -177,5 +176,6 @@ players: "Fhot l'Xon; 'Orange Living Mold';Description: A two meter tall egg-sha
   \ and 'eyes' combine to give the n'thlai radar/sonar and 360 degree sight.  They\
   \ can not be surprised. Vegetarians, Nature Worshippers, Healers, Comando Fighters.\
   \  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

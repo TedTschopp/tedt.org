@@ -1,12 +1,11 @@
 ---
-ID: 71208
-layout: GammaWorld
+id: 71208
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d272ad83-67d1-4b83-ab56-b2742d09644d
-date: '2023-04-06T22:58:17.054Z'
 title: Familiar
 creature_name_index: Familiar
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Familiar; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

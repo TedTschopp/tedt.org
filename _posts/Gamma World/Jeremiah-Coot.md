@@ -1,12 +1,11 @@
 ---
-ID: 71320
-layout: GammaWorld
+id: 71320
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c5b28464-3559-4533-ae58-36fe5b87e27e
-date: '2023-04-06T22:58:17.054Z'
 title: Jeremiah Coot
 creature_name_index: Jeremiah Coot
 notes: ''
@@ -161,5 +160,6 @@ final_output: "Jeremiah Coot (1): Init +7; atk hawkins x 50 musket melee +3 (1d1
 players: "Jeremiah Coot; '';Description: Jeremiah is as nutty as a fruitcake.  He\
   \ lives in Mindkeep's upper levels and sometimes goes outside through the roof hatch\
   \ when the |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

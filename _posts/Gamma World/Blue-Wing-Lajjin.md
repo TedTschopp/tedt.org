@@ -1,12 +1,11 @@
 ---
-ID: 71354
-layout: GammaWorld
+id: 71354
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 23e15ced-486f-42d8-ac7e-f15cbeaa2bae
-date: '2023-04-06T22:58:17.054Z'
 title: Blue Wing «Lajjin »
 creature_name_index: Lajjin
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Lajjin  'Blue Wing' (1): Init -3; atk see description; AC 10; HD 1D5\
   \ hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Lajjin ; 'Blue Wing';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71079
-layout: GammaWorld
+id: 71079
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e3a2b327-2bab-42e2-a127-21a01b79ca70
-date: '2023-04-06T22:58:17.053Z'
 title: Boomblossom
 creature_name_index: Boomblossom
 notes: ''
@@ -202,5 +201,6 @@ players: "Boomblossom; '';Description: These intelligent, mutated descendants of
   \ consider more useful to them. When a boomblossom group becomes too large for the\
   \ land to support them, a group will break away from the main group to form a new\
   \ community.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

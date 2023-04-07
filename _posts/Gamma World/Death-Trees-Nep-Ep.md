@@ -1,12 +1,11 @@
 ---
-ID: 71436
-layout: GammaWorld
+id: 71436
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1a637757-5d0f-4a66-8b0c-24929409c430
-date: '2023-04-06T22:58:17.055Z'
 title: Death Trees «Nep Ep»
 creature_name_index: Nep Ep
 notes: ''
@@ -235,5 +234,6 @@ players: "Nep Ep; 'Death Trees';Description: The narl ep resembles any of a myri
   \ any item is in useable shape, it will have a small hole bored into it and will\
   \ always be drained of all power. Even those items beyond repair may still be scavenged\
   \ for parts or as curiosities.   |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71138
-layout: GammaWorld
+id: 71138
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a2826360-b64b-4c9a-863b-0875459408d3
-date: '2023-04-06T22:58:17.053Z'
 title: Land Crep «Crep, Red»
 creature_name_index: Crep, Red
 notes: ''
@@ -203,5 +202,6 @@ players: "Crep, Red; 'Land Crep';Description: The zarn or 'boring beetle' is an 
   \ local animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
   \ crep plants grow rooted for a season before gaining mobility and moving off on\
   \ their own in search of prey.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

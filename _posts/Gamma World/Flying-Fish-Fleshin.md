@@ -1,12 +1,11 @@
 ---
-ID: 71220
-layout: GammaWorld
+id: 71220
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 05ad172e-ebda-41e4-b4dc-de73fba9a46a
-date: '2023-04-06T22:58:17.054Z'
 title: Flying Fish «Fleshin»
 creature_name_index: Fleshin
 notes: ''
@@ -251,5 +250,6 @@ players: "Fleshin; 'Flying Fish';Description: These 6 foot long fish live only i
   \ attack results in a landing on dry land.  the fleshin shapchanges into a gator.\
   \  It may or may not head for the open water, depending upon the situation and whether\
   \ or not it is subject to bloodlust at that moment.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

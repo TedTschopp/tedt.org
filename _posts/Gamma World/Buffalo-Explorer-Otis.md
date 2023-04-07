@@ -1,12 +1,11 @@
 ---
-ID: 71459
-layout: GammaWorld
+id: 71459
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9dc5333e-0504-4477-a479-73d749ff4e0f
-date: '2023-04-06T22:58:17.055Z'
 title: Buffalo Explorer «Otis»
 creature_name_index: Otis
 notes: ''
@@ -234,5 +233,6 @@ players: "Otis; 'Buffalo Explorer';Description: The horl choo is an odd black pl
   \ creature. A horl choo bristles and flings its spines when threatened as well,\
   \ and is capable of 'dropping' spines (releasing the fiber connecting them to its\
   \ body) in order to flee.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

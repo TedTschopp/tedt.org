@@ -1,12 +1,11 @@
 ---
-ID: 71374
-layout: GammaWorld
+id: 71374
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 543bf501-40e2-43ab-8872-524ba024ee3a
-date: '2023-04-06T22:58:17.055Z'
 title: Gobblers «Lukalukas»
 creature_name_index: Lukalukas
 notes: ''
@@ -209,5 +208,6 @@ players: "Lukalukas; 'Gobblers';Description: These terrestrial birds are heavy a
   \ of eating plants with bacterial symbiosis (which does not harm or leave any symptomatic\
   \ marks on the bird), they should be thoroughly cooked before eating. If not, there\
   \ is a 60% chance that any lukaluka is carrying a random plant-carried disease.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

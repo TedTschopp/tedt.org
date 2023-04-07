@@ -1,12 +1,11 @@
 ---
-ID: 71218
-layout: GammaWorld
+id: 71218
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 62b4bcb9-f672-4633-8ef6-d8883cb63d83
-date: '2023-04-06T22:58:17.054Z'
 title: The Black Plague «Firebugs»
 creature_name_index: Firebugs
 notes: ''
@@ -234,5 +233,6 @@ players: "Firebugs; 'The Black Plague';Description: These vicious and destructiv
   \ they are nearly impossible to catch, even though flightless, as they put up their\
   \ force fields and hop 50 m in one jump, 5 times per Action Turn (ten times at fast\
   \ speed).Firebugs are glossy black in color, with orange-red eyes like burning coals.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

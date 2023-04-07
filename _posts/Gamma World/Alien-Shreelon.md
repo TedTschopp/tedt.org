@@ -1,12 +1,11 @@
 ---
-ID: 71556
-layout: GammaWorld
+id: 71556
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7c98c7a2-5865-421c-8d49-037a8dbdf1eb
-date: '2023-04-06T22:58:17.056Z'
 title: Alien «Shreelon»
 creature_name_index: Shreelon
 notes: ''
@@ -335,5 +334,6 @@ players: "Shreelon; 'Alien';Description: The Shreelon were first mentioned in `R
   \ in the rulebook. They are able to dominate a subject without actually leaving\
   \ their own body  if the victim dies, regardless of range, the controller is uninjured.\
   \ If control is broken the victim will not remember being controlled.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

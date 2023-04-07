@@ -1,12 +1,11 @@
 ---
-ID: 71327
-layout: GammaWorld
+id: 71327
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 88c31194-9c47-49ef-8fe4-08f14da9f88d
-date: '2023-04-06T22:58:17.054Z'
 title: Rampants «Juggernaut»
 creature_name_index: Juggernaut
 notes: Fixed
@@ -216,5 +215,6 @@ players: "Juggernaut; 'Rampants';Description: The juggernaut is a large rhinocer
   \ are found only in North America, they were not originally native to this land.\
   \ They are descended from zoo specimens that escaped confinement during the Social\
   \ Wars.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

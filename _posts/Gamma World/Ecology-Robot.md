@@ -1,12 +1,11 @@
 ---
-ID: 71186
-layout: GammaWorld
+id: 71186
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 676aff6f-966e-48b5-af88-39c21100dd68
-date: '2023-04-06T22:58:17.053Z'
 title: Ecology Robot
 creature_name_index: Ecology Robot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ecology Robot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

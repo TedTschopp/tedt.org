@@ -1,12 +1,11 @@
 ---
-ID: 71561
-layout: GammaWorld
+id: 71561
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4743c70c-2afa-4966-a192-51c16b248657
-date: '2023-04-06T22:58:17.056Z'
 title: Green Stalkers «Sifoner»
 creature_name_index: Sifoner
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sifoner; 'Green Stalkers';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

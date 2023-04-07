@@ -1,12 +1,11 @@
 ---
-ID: 71589
-layout: GammaWorld
+id: 71589
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: aa0990d5-4275-4d0b-94fe-9a2b5404dade
-date: '2023-04-06T22:58:17.056Z'
 title: Soldier Robot
 creature_name_index: Soldier Robot
 notes: ''
@@ -150,5 +149,6 @@ normal_text: ''
 description_output: ''
 final_output: ''
 players: ''
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

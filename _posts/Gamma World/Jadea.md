@@ -1,12 +1,11 @@
 ---
-ID: 71317
-layout: GammaWorld
+id: 71317
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 535e8272-3aab-4613-a07d-50fcba4b6c89
-date: '2023-04-06T22:58:17.054Z'
 title: Jadea
 creature_name_index: Jadea
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Jadea; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

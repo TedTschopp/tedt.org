@@ -1,12 +1,11 @@
 ---
-ID: 71195
-layout: GammaWorld
+id: 71195
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f9574072-2a71-4588-9c81-31a4293b0f78
-date: '2023-04-06T22:58:17.053Z'
 title: Light Construction Bot «Engineering Bot, Light Duty»
 creature_name_index: Engineering Bot, Light Duty
 notes: ''
@@ -175,5 +174,6 @@ players: "Engineering Bot, Light Duty; 'Light Construction Bot';Description: Thi
   \ beam that can move 500 kilograms at a 12-meter range. Special equipment includes\
   \ a sonic torch, micro-laser, power winches and power tools. Small numbers of replacement\
   \ parts are stored inside its steel hull. It can operate underwater and in near-vacuum.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

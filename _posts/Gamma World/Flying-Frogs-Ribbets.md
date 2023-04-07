@@ -1,12 +1,11 @@
 ---
-ID: 71504
-layout: GammaWorld
+id: 71504
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 70987ad5-ef84-4b9b-beb2-a857037409ac
-date: '2023-04-06T22:58:17.055Z'
 title: Flying Frogs «Ribbets»
 creature_name_index: Ribbets
 notes: ''
@@ -232,5 +231,6 @@ players: "Ribbets; 'Flying Frogs';Description: The frequent compan- ions of lils
   \ the skin flaps on their sides, behind their forelegs. They cannot take off from\
   \ ground level, and generally glide from tree to tree. They can move 1 m horizontally\
   \ for every 1 m altitude with which they start.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

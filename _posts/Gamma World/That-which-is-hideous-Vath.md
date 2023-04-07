@@ -1,12 +1,11 @@
 ---
-ID: 71671
-layout: GammaWorld
+id: 71671
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db217edd-53cc-485a-ab4c-15e177bd8f63
-date: '2023-04-06T22:58:17.056Z'
 title: That which is hideous «V'ath»
 creature_name_index: V'ath
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "V'ath 'That which is hideous' (1): Init -3; atk see description; AC\
   \ 10; HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: V'ath; 'That which is hideous';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

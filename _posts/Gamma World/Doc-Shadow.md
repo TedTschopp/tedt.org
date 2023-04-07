@@ -1,12 +1,11 @@
 ---
-ID: 71169
-layout: GammaWorld
+id: 71169
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ae61254f-d8dc-4863-8f28-d6847bf52b9e
-date: '2023-04-06T22:58:17.053Z'
 title: Doc Shadow
 creature_name_index: Doc Shadow
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Doc Shadow; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

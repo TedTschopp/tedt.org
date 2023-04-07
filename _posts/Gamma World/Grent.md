@@ -1,12 +1,11 @@
 ---
-ID: 71263
-layout: GammaWorld
+id: 71263
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bb3c016c-c8bc-4818-bfea-563bc00c7ff1
-date: '2023-04-06T22:58:17.054Z'
 title: Grent
 creature_name_index: Grent
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Grent; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71370
-layout: GammaWorld
+id: 71370
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9d682b5b-f04c-4815-9364-dab52b6d4ef5
-date: '2023-04-06T22:58:17.055Z'
 title: Longhorn
 creature_name_index: Longhorn
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Longhorn; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

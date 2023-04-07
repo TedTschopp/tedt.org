@@ -1,12 +1,11 @@
 ---
-ID: 71408
-layout: GammaWorld
+id: 71408
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8221fdf9-e7bb-46dc-a584-577c9e4b28a4
-date: '2023-04-06T22:58:17.055Z'
 title: Miniature Animal, Medium
 creature_name_index: Miniature Animal, Medium
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Miniature Animal, Medium; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71587
-layout: GammaWorld
+id: 71587
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 08d6e83e-1e54-4864-8397-0ed8e12359f2
-date: '2023-04-06T22:58:17.056Z'
 title: Snag
 creature_name_index: Snag
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Snag; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

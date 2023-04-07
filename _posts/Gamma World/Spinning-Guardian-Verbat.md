@@ -1,12 +1,11 @@
 ---
-ID: 71676
-layout: GammaWorld
+id: 71676
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 22b70c01-f91a-4fe2-b228-1300f0c4de4d
-date: '2023-04-06T22:58:17.056Z'
 title: Spinning Guardian «Verbat»
 creature_name_index: Verbat
 notes: ''
@@ -252,5 +251,6 @@ players: "Verbat; 'Spinning Guardian';Description: A Verbat is an intelligent cr
   \ paying toll more than 4 times), imformation may be gained, by payment or otherwise,\
   \ from the Verbat.  This information always concerns the area the Verbat patrolls.\
   \ |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

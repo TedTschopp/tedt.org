@@ -1,12 +1,11 @@
 ---
-ID: 71266
-layout: GammaWorld
+id: 71266
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c0fef13f-e011-4ab0-9de4-44c8abcdf3fc
-date: '2023-04-06T22:58:17.054Z'
 title: Grimlock Horde (15)
 creature_name_index: Grimlock Horde (15)
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Grimlock Horde (15); '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

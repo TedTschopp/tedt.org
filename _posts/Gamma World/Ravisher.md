@@ -1,12 +1,11 @@
 ---
-ID: 71492
-layout: GammaWorld
+id: 71492
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 85d63c5f-1dba-41b5-99d9-80ff8a36b8cd
-date: '2023-04-06T22:58:17.055Z'
 title: Ravisher
 creature_name_index: Ravisher
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Ravisher ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

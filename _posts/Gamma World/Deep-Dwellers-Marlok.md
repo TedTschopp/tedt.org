@@ -1,12 +1,11 @@
 ---
-ID: 71393
-layout: GammaWorld
+id: 71393
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: eadec706-63a7-43d7-81c0-939d09fc78f8
-date: '2023-04-06T22:58:17.055Z'
 title: Deep Dwellers «Marlok»
 creature_name_index: Marlok
 notes: ''
@@ -278,5 +277,6 @@ players: "Marlok; 'Deep Dwellers';Description: Marloks look like Pure Strain Hum
   \ base chance of any of the participants dying is only 1% ( + 1% for each minute\
   \ of contact). All involved in the mass mind share a weak tele- pathic link while\
   \ in contact, between those in the link who are touching.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

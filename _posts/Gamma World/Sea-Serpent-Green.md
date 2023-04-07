@@ -1,12 +1,11 @@
 ---
-ID: 71528
-layout: GammaWorld
+id: 71528
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3ba34dd5-fffd-419b-852d-92990b06f10c
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Serpent, Green
 creature_name_index: Sea Serpent, Green
 notes: ''
@@ -195,5 +194,6 @@ players: "Sea Serpent, Green; '';Description: This serpent is a mutated eel. Oth
   \ the serpent bites the whole crew to death before feeding. If it fails a moral\
   \ check, the serpent generates fear and flees.They breed in the late summer at depths\
   \ of 40-60 feet. They rarely come to the serface and will attack ships only if starving.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

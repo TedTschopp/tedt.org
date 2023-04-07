@@ -1,12 +1,11 @@
 ---
-ID: 71064
-layout: GammaWorld
+id: 71064
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1ca5b9e4-5673-4ae0-8b60-4ab3d960d5d4
-date: '2023-04-06T22:58:17.053Z'
 title: Cave Dabbers «Bigoon»
 creature_name_index: Bigoon
 notes: ''
@@ -215,5 +214,6 @@ players: "Bigoon; 'Cave Dabbers';Description: One glance easily identifies a big
   \ A lone bigoon is usually a rogue male. If three or more are encountered, they\
   \ are likely to be a mother and her immature young. Bigoons are all capable of climbing\
   \ trees sturdy enough to hold their weight.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

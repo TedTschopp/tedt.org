@@ -1,12 +1,11 @@
 ---
-ID: 71693
-layout: GammaWorld
+id: 71693
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bdea9757-574b-4f8a-99e3-1ce180ba3bc9
-date: '2023-04-06T22:58:17.056Z'
 title: Westford
 creature_name_index: Westford
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Westford; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

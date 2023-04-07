@@ -1,12 +1,11 @@
 ---
-ID: 71477
-layout: GammaWorld
+id: 71477
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ece8864f-7a4f-42a0-9f37-d476e947d014
-date: '2023-04-06T22:58:17.055Z'
 title: Pretexis
 creature_name_index: Pretexis
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Pretexis; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

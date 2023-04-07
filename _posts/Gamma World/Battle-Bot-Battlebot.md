@@ -1,12 +1,11 @@
 ---
-ID: 71058
-layout: GammaWorld
+id: 71058
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 529b2e3e-2e7c-4b29-8ba7-a785febebf55
-date: '2023-04-06T22:58:17.053Z'
 title: Battle Bot «Battlebot»
 creature_name_index: Battlebot
 notes: ''
@@ -162,5 +161,6 @@ normal_text: ''
 description_output: ''
 final_output: ''
 players: ''
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

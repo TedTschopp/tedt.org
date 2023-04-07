@@ -1,12 +1,11 @@
 ---
-ID: 71684
-layout: GammaWorld
+id: 71684
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6eb68304-fa70-4332-9c94-b1493c8e9666
-date: '2023-04-06T22:58:17.056Z'
 title: Devo Beasts «Wardent»
 creature_name_index: Wardent
 notes: ''
@@ -249,5 +248,6 @@ players: "Wardent; 'Devo Beasts';Description: One Meter tall humanoids covered i
   \ found or acquired that they have found or acquired through trade.  Their insatiable\
   \ curiosity means that any usable artifacts which fall into their hands will soon\
   \ yield up their secrets or be broken. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

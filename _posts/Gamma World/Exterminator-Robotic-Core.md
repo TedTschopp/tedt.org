@@ -1,12 +1,11 @@
 ---
-ID: 71206
-layout: GammaWorld
+id: 71206
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8ae33e00-b5b4-4cb4-b03c-50d7a4ca6d0c
-date: '2023-04-06T22:58:17.054Z'
 title: Exterminator, Robotic Core
 creature_name_index: Exterminator, Robotic Core
 notes: ''
@@ -381,5 +380,6 @@ players: "Exterminator, Robotic Core; '';Description: An Exterminator is an upri
   \ them. The vaults close up within ten minutes after opening and have so far withstood\
   \ all attempts at re- opening them. It is believed that the vaults have been scattered\
   \ throughout the continent and possibly the world.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

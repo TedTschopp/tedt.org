@@ -1,12 +1,11 @@
 ---
-ID: 71027
-layout: GammaWorld
+id: 71027
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 93ca2de8-8480-4476-b48d-965be46b58a3
-date: '2023-04-06T22:58:17.053Z'
 title: Gamma Living Mold «Ash I'Xon»
 creature_name_index: Ash I'Xon
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Ash I'Xon 'Gamma Living Mold' (1): Init -3; atk see description; AC\
   \ 10; HD 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Ash I'Xon; 'Gamma Living Mold';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

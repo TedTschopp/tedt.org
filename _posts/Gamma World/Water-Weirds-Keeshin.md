@@ -1,12 +1,11 @@
 ---
-ID: 71339
-layout: GammaWorld
+id: 71339
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a22e0ef2-1791-4c31-b3df-6e0bced39739
-date: '2023-04-06T22:58:17.054Z'
 title: Water Weirds «Keeshin»
 creature_name_index: Keeshin
 notes: Fixed
@@ -218,5 +217,6 @@ players: "Keeshin; 'Water Weirds';Description: Keeshin are albino mutant frogs, 
   \ and the female lays eggs in the water that hatch into dozens of keeshin tadpoles,\
   \ few of which survive to maturity. Mature keeshin telekinetically build stone dwellings\
   \ under water, partially filled with air, to store their goods and hide from danger.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

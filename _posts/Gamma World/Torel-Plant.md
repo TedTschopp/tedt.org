@@ -1,12 +1,11 @@
 ---
-ID: 71657
-layout: GammaWorld
+id: 71657
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7c07f422-7329-4fbd-8883-cd94900395cf
-date: '2023-04-06T22:58:17.056Z'
 title: Torel Plant
 creature_name_index: Torel Plant
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Torel Plant; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

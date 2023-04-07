@@ -1,12 +1,11 @@
 ---
-ID: 71105
-layout: GammaWorld
+id: 71105
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fc943e20-1d71-48a3-88c9-e98cd0a7e027
-date: '2023-04-06T22:58:17.053Z'
 title: Light Cargolifter «Cargolifter - Light»
 creature_name_index: Cargolifter - Light
 notes: ''
@@ -170,5 +169,6 @@ players: "Cargolifter - Light; 'Light Cargolifter';Description: This 6 x 3 x 1 m
   \ the following: a 6 meter crane with a 3 pronged claw able to lift 900 kilograms,\
   \ four 6 meter tentacles able to lift 500 kilograms each and a tractor/pressor beam\
   \ able to lift 1800 kilograms at a 30-meter range.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

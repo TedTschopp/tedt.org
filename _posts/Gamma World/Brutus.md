@@ -1,12 +1,11 @@
 ---
-ID: 71090
-layout: GammaWorld
+id: 71090
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9e384af6-2397-4597-bb56-6c1cf70995cd
-date: '2023-04-06T22:58:17.053Z'
 title: Brutus
 creature_name_index: Brutus
 notes: ''
@@ -169,5 +168,6 @@ players: "Brutus; '';Combat: Keeshin are intelligent creatures, but not friendly
   \ and they're more than willing to kill or intimidate to get what they want. They've\
   \ been known to set up 'tolls' across rivers and lakes where they live. They dislike\
   \ physical conflict, prefering to use their mutations in combat.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

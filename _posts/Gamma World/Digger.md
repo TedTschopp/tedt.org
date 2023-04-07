@@ -1,12 +1,11 @@
 ---
-ID: 71167
-layout: GammaWorld
+id: 71167
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0cbbfbdc-5377-4c88-8126-7370eedbc75d
-date: '2023-04-06T22:58:17.053Z'
 title: Digger
 creature_name_index: Digger
 notes: ''
@@ -212,5 +211,6 @@ players: "Digger; '';Description: Diggers are a civilized breed of mutant armadi
   \ as Medicine Paints (a.k.a. Neutralizing Pigments), available in the New West.\
   \ They also make moonshine vodka and know the secret of gunpowder. Diggers are generally\
   \ non- violent, but will fight if cornered.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

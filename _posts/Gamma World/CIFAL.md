@@ -1,12 +1,11 @@
 ---
-ID: 71120
-layout: GammaWorld
+id: 71120
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9b1bf608-8bd0-4216-9acd-a0b87a357a24
-date: '2023-04-06T22:58:17.053Z'
 title: CIFAL
 creature_name_index: CIFAL
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: CIFAL; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71332
-layout: GammaWorld
+id: 71332
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a4870976-30de-40a0-b37f-8ca3c2b50c1d
-date: '2023-04-06T22:58:17.054Z'
 title: Flying Death «Ka'tal»
 creature_name_index: Ka'tal
 notes: Fixed
@@ -191,5 +190,6 @@ players: "Ka'tal; 'Flying Death';Description: Ka'tal are mutant darners (the lar
   \ the missile. If ground prey is weak, the ka'tal will land and bite it to death.Ka'tal\
   \ may be found in groups, but they ignore each other (so a group may last only a\
   \ day, a week or more).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

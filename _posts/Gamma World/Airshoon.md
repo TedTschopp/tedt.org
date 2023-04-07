@@ -1,12 +1,11 @@
 ---
-ID: 71006
-layout: GammaWorld
+id: 71006
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f26703e7-f818-4944-986b-80a53eafdfba
-date: '2023-04-06T22:58:17.053Z'
 title: Airshoon
 creature_name_index: Airshoon
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Airshoon; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

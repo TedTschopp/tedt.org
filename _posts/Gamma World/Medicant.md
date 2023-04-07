@@ -1,12 +1,11 @@
 ---
-ID: 71396
-layout: GammaWorld
+id: 71396
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7fb1ec39-4418-4ec7-ac75-5137ef085adc
-date: '2023-04-06T22:58:17.055Z'
 title: Medicant
 creature_name_index: Medicant
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Medicant; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

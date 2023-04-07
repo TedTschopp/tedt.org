@@ -1,12 +1,11 @@
 ---
-ID: 71318
-layout: GammaWorld
+id: 71318
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fcea4490-65d6-4eff-b5e1-13ab8cf4c67b
-date: '2023-04-06T22:58:17.054Z'
 title: Savannah Cats «Jaget»
 creature_name_index: Jaget
 notes: ''
@@ -243,5 +242,6 @@ players: "Jaget; 'Savannah Cats';Description: Mutated Jaguars prowl the vast gra
   \ their substantial mental powers, jagets are often desired as followers or hirelings\
   \ of other species. Jagets love bright, shiny objects and often slip into human\
   \ camps to pilfer small artifacts.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

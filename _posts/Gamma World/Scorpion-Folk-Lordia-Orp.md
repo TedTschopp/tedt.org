@@ -1,12 +1,11 @@
 ---
-ID: 71372
-layout: GammaWorld
+id: 71372
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 35681fe2-dd45-4dc7-8e44-5ac3014f57c3
-date: '2023-04-06T22:58:17.055Z'
 title: Scorpion Folk «Lordia Orp»
 creature_name_index: Lordia Orp
 notes: ''
@@ -226,5 +225,6 @@ players: "Lordia Orp; 'Scorpion Folk';Description: The Lorida Orp has the browni
   \ will have to deal with very irate and protective females and even the young will\
   \ fight. If any children are killed the Lorida Orp tribe will track the wrong doers\
   \ back to their village and kill any adult they find as well as burn everything.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

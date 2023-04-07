@@ -1,12 +1,11 @@
 ---
-ID: 71449
-layout: GammaWorld
+id: 71449
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bfe11484-370a-49d8-8cba-d478f35a5ab6
-date: '2023-04-06T22:58:17.055Z'
 title: Deadly Emerald Flying Insect «Nytacal»
 creature_name_index: Nytacal
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Nytacal 'Deadly Emerald Flying Insect' (1): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Nytacal; 'Deadly Emerald Flying Insect';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

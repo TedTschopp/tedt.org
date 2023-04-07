@@ -1,12 +1,11 @@
 ---
-ID: 71063
-layout: GammaWorld
+id: 71063
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 73271aad-31d9-4692-9fea-d7e269db8d73
-date: '2023-04-06T22:58:17.053Z'
 title: Sweetpads «Ber Lep»
 creature_name_index: Ber Lep
 notes: ''
@@ -209,5 +208,6 @@ players: "Ber Lep; 'Sweetpads';Description: Ber lep are mutant lily pads that gr
   \ Ber lep grow in areas of still water, like lakes or swamps. They feed on water\
   \ minerals as well as small creatures they dissolve on their surfaces. They are\
   \ unintelligent and incapable of movement.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

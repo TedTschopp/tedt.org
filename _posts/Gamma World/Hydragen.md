@@ -1,12 +1,11 @@
 ---
-ID: 71305
-layout: GammaWorld
+id: 71305
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7e904f68-7544-42f9-8a9d-4ce95cd6011a
-date: '2023-04-06T22:58:17.054Z'
 title: Hydragen
 creature_name_index: Hydragen
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hydragen; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

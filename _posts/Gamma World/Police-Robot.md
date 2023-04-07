@@ -1,12 +1,11 @@
 ---
-ID: 71473
-layout: GammaWorld
+id: 71473
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1d57fcf1-5fc0-4692-813a-c2464af34123
-date: '2023-04-06T22:58:17.055Z'
 title: Police Robot
 creature_name_index: Police Robot
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Police Robot (1d6 (3)): Init +6; atk see description; AC 13; HD 5D12\
   \ hp 33 each; MV 30' ; 1d20; SV Fort +1, Ref +3, Will +1"
 players: Police Robot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

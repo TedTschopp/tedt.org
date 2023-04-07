@@ -1,12 +1,11 @@
 ---
-ID: 71081
-layout: GammaWorld
+id: 71081
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0ff609b4-7fd7-43b4-83d7-38612cd32111
-date: '2023-04-06T22:58:17.053Z'
 title: Boris
 creature_name_index: Boris
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Boris; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

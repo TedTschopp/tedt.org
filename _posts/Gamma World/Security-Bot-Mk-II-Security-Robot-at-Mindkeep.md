@@ -1,12 +1,11 @@
 ---
-ID: 71531
-layout: GammaWorld
+id: 71531
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a9cc6113-78fc-47c5-8152-15abc56e0d1a
-date: '2023-04-06T22:58:17.055Z'
 title: Security Bot Mk II «Security Robot at Mindkeep»
 creature_name_index: Security Robot at Mindkeep
 notes: ''
@@ -202,5 +201,6 @@ players: "Security Robot at Mindkeep; 'Security Bot Mk II';Description: This is 
   \ can not be subdued.  They are programmed to deny access to certain restricted\
   \ areas.  They have command circuits that allow them to summon medical robots and\
   \ engineering robots as necessary.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

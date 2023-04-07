@@ -1,12 +1,11 @@
 ---
-ID: 71544
-layout: GammaWorld
+id: 71544
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7d9f077e-d817-44ae-9271-2b0ce75df6ce
-date: '2023-04-06T22:58:17.056Z'
 title: Servo Reindeer
 creature_name_index: Servo Reindeer
 notes: ''
@@ -192,5 +191,6 @@ players: "Servo Reindeer; '';Description: The S. Reindeer was originally designe
   \ remaining S. Reindeer will return to the factory at maximum speed. Although the\
   \ X.M.A.S. unit is programmed to be jolly, it will not allow itself to get into\
   \ situations where it can be easily destroyed.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

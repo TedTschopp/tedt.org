@@ -1,12 +1,11 @@
 ---
-ID: 71381
-layout: GammaWorld
+id: 71381
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cb1b0be8-197e-42cd-be3c-edea74744364
-date: '2023-04-06T22:58:17.055Z'
 title: Tall Slasher «Maali-Village»
 creature_name_index: Maali-Village
 notes: ''
@@ -290,5 +289,6 @@ players: "Maali-Village; 'Tall Slasher';Description: The maali are bipedal desce
   \ and three javelins. They have escaped destruction by Quade's constructs because\
   \ of their various mutations, their raw physical power, and their knowledge of the\
   \ land.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

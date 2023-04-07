@@ -1,12 +1,11 @@
 ---
-ID: 71152
-layout: GammaWorld
+id: 71152
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fdbbeee1-15bc-4666-a652-35a990f6cae0
-date: '2023-04-06T22:58:17.053Z'
 title: Purple Pygmies «Dagmits»
 creature_name_index: Dagmits
 notes: ''
@@ -295,5 +294,6 @@ players: "Dagmits; 'Purple Pygmies';Description: The few expeditions that have m
   \ of poison intensity 9.Combat: They attack almost anything that moves, but are\
   \ terrified of large, self-propelled machines such as robots and vehicles (they\
   \ do not usually recognize androids as machines until too late, however). |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

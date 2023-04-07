@@ -1,12 +1,11 @@
 ---
-ID: 71588
-layout: GammaWorld
+id: 71588
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 1f2ba259-a7c8-40a8-94ae-23bde68a9985
-date: '2023-04-06T22:58:17.056Z'
 title: Solarfly
 creature_name_index: Solarfly
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Solarfly; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

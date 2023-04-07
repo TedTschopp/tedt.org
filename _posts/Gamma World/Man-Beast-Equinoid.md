@@ -1,12 +1,11 @@
 ---
-ID: 71198
-layout: GammaWorld
+id: 71198
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2c2ba5c1-2c74-4ab5-a1bb-33b09954c494
-date: '2023-04-06T22:58:17.053Z'
 title: Man-Beast «Equinoid»
 creature_name_index: Equinoid
 notes: Fixed
@@ -191,5 +190,6 @@ players: "Equinoid; 'Man-Beast';Description: These vaguely centaur-like creature
   \ with at least one Tech Level 3 or 4 weapon, usually a paralysis rod and flamethrowerSociety:\
   \ Equinoids seek to rebuild an advanced civilization modeled on that of the Ancients;\
   \ they are thus sympathetic to the Restorationsis.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

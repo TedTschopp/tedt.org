@@ -1,12 +1,11 @@
 ---
-ID: 71004
-layout: GammaWorld
+id: 71004
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: de9b8c7e-1552-413d-ab75-1e62a5e73734
-date: '2023-04-06T22:58:17.053Z'
 title: Sky Walkers «Aerosquid»
 creature_name_index: Aerosquid
 notes: ''
@@ -303,5 +302,6 @@ players: "Aerosquid; 'Sky Walkers';Description: The aero squid is an amphibious 
   \ only be surprised by flying creatures (or swimming creatures in the water). Such\
   \ creatures will surprise on a 1-3, since the aero squid's only functional sense\
   \ is sight.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

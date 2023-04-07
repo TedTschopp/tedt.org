@@ -1,12 +1,11 @@
 ---
-ID: 71458
-layout: GammaWorld
+id: 71458
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9f0a620c-0cef-4ad7-87f6-09536520a27e
-date: '2023-04-06T22:58:17.055Z'
 title: Orlen
 creature_name_index: Orlen
 notes: ''
@@ -225,5 +224,6 @@ players: "Orlen; '';Description: These 9 feet tall humanoids have two heads and 
   \ a stable race of humans from before the great disaster.  This story says that\
   \ humans from that time speak of a great thinker named Aristophanes whose goal was\
   \ to reunite humanity to its orignal form before their war with the Gods.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

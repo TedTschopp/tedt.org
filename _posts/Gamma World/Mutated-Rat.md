@@ -1,12 +1,11 @@
 ---
-ID: 71426
-layout: GammaWorld
+id: 71426
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: eafaf102-1b31-4f30-8f18-0dcda723d520
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated Rat
 creature_name_index: Mutated Rat
 notes: ''
@@ -157,5 +156,6 @@ final_output: "Mutated Rat (10d5 (30)): Init +1; atk bite melee  (1d3-1); AC 12;
   \ use their light wave manipulation to become invisible."
 players: Mutated Rat; '';Behavior:When half their number is defeated, they will use
   their light wave manipulation to become invisible.|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

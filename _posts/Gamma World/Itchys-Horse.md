@@ -1,12 +1,11 @@
 ---
-ID: 71315
-layout: GammaWorld
+id: 71315
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 725ad878-0362-4c68-84cd-aacef86a04f8
-date: '2023-04-06T22:58:17.054Z'
 title: Itchy's Horse
 creature_name_index: Itchy's Horse
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Itchy's Horse; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

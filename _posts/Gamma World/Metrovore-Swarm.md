@@ -1,12 +1,11 @@
 ---
-ID: 71402
-layout: GammaWorld
+id: 71402
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 96eb36d5-0e1c-4c62-9d27-ac503e988f28
-date: '2023-04-06T22:58:17.055Z'
 title: Metrovore Swarm
 creature_name_index: Metrovore Swarm
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Metrovore Swarm; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

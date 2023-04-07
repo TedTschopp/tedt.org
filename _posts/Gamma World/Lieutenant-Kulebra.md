@@ -1,12 +1,11 @@
 ---
-ID: 71361
-layout: GammaWorld
+id: 71361
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8a929ac2-4aac-416f-95f9-f2236d652cff
-date: '2023-04-06T22:58:17.054Z'
 title: Lieutenant Kulebra
 creature_name_index: Lieutenant Kulebra
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Lieutenant Kulebra; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

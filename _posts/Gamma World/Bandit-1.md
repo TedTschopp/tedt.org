@@ -1,12 +1,11 @@
 ---
-ID: 71042
-layout: GammaWorld
+id: 71042
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d2393622-acf6-4978-8b8c-29c4300b232a
-date: '2023-04-06T22:58:17.053Z'
 title: Bandit 1
 creature_name_index: Bandit 1
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bandit 1; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

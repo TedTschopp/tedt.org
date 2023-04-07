@@ -1,12 +1,11 @@
 ---
-ID: 71159
-layout: GammaWorld
+id: 71159
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8ac416e3-3bcb-47f3-84ae-2425e96b5a9b
-date: '2023-04-06T22:58:17.053Z'
 title: Crested Dragon «Debgon»
 creature_name_index: Debgon
 notes: ''
@@ -214,5 +213,6 @@ players: "Debgon; 'Crested Dragon';Description: This gon is the smallest of the 
   \ for characters who are smaller. Each suit will take at least 2d3 weeks to create.\
   \ The armor class of the suit will be 2 and the suit will be allow the wearer to\
   \ take half damage from laser and heat attacks.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

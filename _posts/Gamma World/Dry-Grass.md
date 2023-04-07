@@ -1,12 +1,11 @@
 ---
-ID: 71175
-layout: GammaWorld
+id: 71175
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bdf613a0-d99b-4a95-98af-c99faea759d2
-date: '2023-04-06T22:58:17.053Z'
 title: Dry Grass
 creature_name_index: Dry Grass
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Dry Grass; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

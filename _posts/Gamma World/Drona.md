@@ -1,12 +1,11 @@
 ---
-ID: 71174
-layout: GammaWorld
+id: 71174
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5d73a47f-bc19-4602-b7f7-8b304c778ac9
-date: '2023-04-06T22:58:17.053Z'
 title: Drona
 creature_name_index: Drona
 notes: ''
@@ -167,5 +166,6 @@ players: "Drona; '';Description: Physically tallker then average and considered 
   \ by most.  The colors of his skin are in constant state of change, frequently betraying\
   \ his feelings.  He usually cloths himself in colorful patterns rather than animal\
   \ fursEquiptment: Battle Axe|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

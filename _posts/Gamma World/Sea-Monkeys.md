@@ -1,12 +1,11 @@
 ---
-ID: 71526
-layout: GammaWorld
+id: 71526
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 42de08bf-4974-4ef8-a089-d8c3eb8e3afd
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Monkeys
 creature_name_index: Sea Monkeys
 notes: ''
@@ -189,5 +188,6 @@ players: "Sea Monkeys; '';Description: Sea Monkeys are a generally peaceful grou
   \ throwing small objects, making a chaotic ruckus as they move rapidly in an out\
   \ of reach. If harmed they will fight back by scratching or biting. They cannot\
   \ survive out of water.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

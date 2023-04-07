@@ -1,12 +1,11 @@
 ---
-ID: 71277
-layout: GammaWorld
+id: 71277
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6142e185-818d-4d7c-9092-4026b0b8f0a7
-date: '2023-04-06T22:58:17.054Z'
 title: Hekal and Jekal
 creature_name_index: Hekal and Jekal
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hekal and Jekal; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

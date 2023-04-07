@@ -1,12 +1,11 @@
 ---
-ID: 71525
-layout: GammaWorld
+id: 71525
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 538ddbaf-2f82-43fa-ace6-7c0d7ea65b7c
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Lilies «Sea Lilies Patch»
 creature_name_index: Sea Lilies Patch
 notes: ''
@@ -196,5 +195,6 @@ players: "Sea Lilies Patch; 'Sea Lilies';Description: Sea lilies are cousins to 
   \ water is also attacked. Their defenses are based on the fact that they are submerged;\
   \ if they are brought up on land, they have no armor and are totally defenseless\
   \ (-4 to ranged /melee attacks).|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

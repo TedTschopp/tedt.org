@@ -1,12 +1,11 @@
 ---
-ID: 71415
-layout: GammaWorld
+id: 71415
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6ef072da-e77f-42bb-9cf1-f7f3e8c1a19d
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Devils «Moklas»
 creature_name_index: Moklas
 notes: ''
@@ -315,5 +314,6 @@ players: "Moklas; 'Sea Devils';Description: During the twentieth century the wor
   \ The eggs hatch within a month and the young moklas then stay with the nearest\
   \ local herd of their own species Moklas reach adulthood after a period of 1015\
   \ years and have a lifespan of over 500 years|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71441
-layout: GammaWorld
+id: 71441
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 72423de6-4402-430d-ae96-4bec179886bc
-date: '2023-04-06T22:58:17.055Z'
 title: Noctate
 creature_name_index: Noctate
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Noctate; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

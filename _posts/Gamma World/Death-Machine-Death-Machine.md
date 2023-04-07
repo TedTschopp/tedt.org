@@ -1,12 +1,11 @@
 ---
-ID: 71156
-layout: GammaWorld
+id: 71156
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 05471306-8e32-4f00-9811-b695863f4cd4
-date: '2023-04-06T22:58:17.053Z'
 title: Death Machine «Death Machine»
 creature_name_index: Death Machine
 notes: ''
@@ -248,5 +247,6 @@ players: "Death Machine; 'Death Machine';Description: This 15 meter long, 9 mete
   \ of damage per minute.  When reduced to less than 50 hit points it can only repair\
   \ 1 hitpoint a minute.  Some death machines may shutdown when reduced to 20 hit\
   \ points so that they may repair themselves and attack later.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71445
-layout: GammaWorld
+id: 71445
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4e7c6657-b925-452f-91dc-1ca0e18d4bed
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated monkey «Nos'ferat»
 creature_name_index: Nos'ferat
 notes: ''
@@ -169,5 +168,6 @@ players: "Nos'ferat; 'Mutated monkey';Description: The Nos'Ferat are nocturnal, 
   \ monkeys.  They are light sensitive, primarily nocturnal, and travel in numbers\
   \ more often than not.  They give off an earthy odor at all times, which can be\
   \ a tip-off for the wary adventurer|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

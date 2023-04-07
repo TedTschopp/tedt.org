@@ -1,12 +1,11 @@
 ---
-ID: 71600
-layout: GammaWorld
+id: 71600
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fcd5868e-5739-44c9-ac9c-0fb3e519ab5c
-date: '2023-04-06T22:58:17.056Z'
 title: Bot Bashers «Spitter»
 creature_name_index: Spitter
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Spitter; 'Bot Bashers';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

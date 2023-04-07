@@ -1,12 +1,11 @@
 ---
-ID: 71276
-layout: GammaWorld
+id: 71276
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 663ef954-cc30-489b-86d0-2d84a2abd5f3
-date: '2023-04-06T22:58:17.054Z'
 title: Healers
 creature_name_index: Healers
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Healers; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

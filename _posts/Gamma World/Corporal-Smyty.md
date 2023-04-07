@@ -1,12 +1,11 @@
 ---
-ID: 71133
-layout: GammaWorld
+id: 71133
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f408ada5-2434-4ff2-847d-f401f5c5a7b8
-date: '2023-04-06T22:58:17.053Z'
 title: Corporal Smyty
 creature_name_index: Corporal Smyty
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Corporal Smyty; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

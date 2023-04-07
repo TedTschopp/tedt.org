@@ -1,12 +1,11 @@
 ---
-ID: 71129
-layout: GammaWorld
+id: 71129
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 13365eda-2a4d-4218-b200-67101fad4d9d
-date: '2023-04-06T22:58:17.053Z'
 title: Communit
 creature_name_index: Communit
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Communit; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

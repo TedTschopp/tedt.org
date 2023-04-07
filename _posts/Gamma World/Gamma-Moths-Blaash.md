@@ -1,12 +1,11 @@
 ---
-ID: 71066
-layout: GammaWorld
+id: 71066
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d7ae6cf5-0268-4f1e-8e3b-741811f71e2c
-date: '2023-04-06T22:58:17.053Z'
 title: Gamma Moths «Blaash»
 creature_name_index: Blaash
 notes: ''
@@ -174,5 +173,6 @@ players: "Blaash; 'Gamma Moths';Description: A mutated gypsy moth over 1 meter l
   \ glow. Once it makes a kill, it will stop whatever else it is doing and attempt\
   \ to eat the kill unless it is attack or it feels that its food is being threatened.\
   \  It is attracted to bright lights and is unaffected by radiation.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

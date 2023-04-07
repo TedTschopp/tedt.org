@@ -1,12 +1,11 @@
 ---
-ID: 71411
-layout: GammaWorld
+id: 71411
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dff388dd-69aa-41c3-8b9d-2e298b15a387
-date: '2023-04-06T22:58:17.055Z'
 title: Miracle Goo
 creature_name_index: Miracle Goo
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Miracle Goo; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

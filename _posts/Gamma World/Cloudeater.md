@@ -1,12 +1,11 @@
 ---
-ID: 71125
-layout: GammaWorld
+id: 71125
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c70426d7-da9d-494e-86df-221fff65a73b
-date: '2023-04-06T22:58:17.053Z'
 title: Cloudeater
 creature_name_index: Cloudeater
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cloudeater; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

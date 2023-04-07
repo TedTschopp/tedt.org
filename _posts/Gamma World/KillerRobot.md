@@ -1,12 +1,11 @@
 ---
-ID: 71344
-layout: GammaWorld
+id: 71344
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 01d2c147-dd64-420a-858e-37db0deb1e6a
-date: '2023-04-06T22:58:17.054Z'
 title: KillerRobot
 creature_name_index: KillerRobot
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'KillerRobot (1): Init -3; atk see description; AC 10; HD 1D12 hp 7;
   NO MOVEMENT; 1d20; SV Fort +0, Ref -3, Will -3'
 players: KillerRobot; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

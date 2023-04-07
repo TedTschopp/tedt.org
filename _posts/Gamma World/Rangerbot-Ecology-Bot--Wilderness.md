@@ -1,12 +1,11 @@
 ---
-ID: 71185
-layout: GammaWorld
+id: 71185
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 306a587e-ec15-4b04-b7ce-8ebabac0c89e
-date: '2023-04-06T22:58:17.053Z'
 title: Rangerbot «Ecology Bot - Wilderness»
 creature_name_index: Ecology Bot - Wilderness
 notes: ''
@@ -205,5 +204,6 @@ players: "Ecology Bot - Wilderness; 'Rangerbot';Description: This mechanical For
   \ The kit also has surgical tools for the Robot's use. Behavior:This Robot is usually\
   \ found in forests or mountains in a Programmed state.Mission: To care for the crops,\
   \ animals, buildings and grounds of wilderness parkland.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

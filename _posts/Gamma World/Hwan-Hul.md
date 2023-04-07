@@ -1,12 +1,11 @@
 ---
-ID: 71302
-layout: GammaWorld
+id: 71302
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 62295fa1-3782-4bb1-8578-1f786016b661
-date: '2023-04-06T22:58:17.054Z'
 title: Hwan Hul
 creature_name_index: Hwan Hul
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hwan Hul ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

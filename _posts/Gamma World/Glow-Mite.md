@@ -1,12 +1,11 @@
 ---
-ID: 71255
-layout: GammaWorld
+id: 71255
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 886f6573-87f5-40b9-a5d8-b564f267473b
-date: '2023-04-06T22:58:17.054Z'
 title: Glow Mite
 creature_name_index: Glow Mite
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Glow Mite; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

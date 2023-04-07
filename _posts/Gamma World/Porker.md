@@ -1,12 +1,11 @@
 ---
-ID: 71476
-layout: GammaWorld
+id: 71476
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 13d05f09-ddb9-433f-85a2-8983f87d8855
-date: '2023-04-06T22:58:17.055Z'
 title: Porker
 creature_name_index: Porker
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Porker; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

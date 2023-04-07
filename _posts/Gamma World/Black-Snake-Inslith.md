@@ -1,12 +1,11 @@
 ---
-ID: 71311
-layout: GammaWorld
+id: 71311
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a6e6646f-727e-427e-a7c1-adb10b1b6cbe
-date: '2023-04-06T22:58:17.054Z'
 title: Black Snake «Inslith»
 creature_name_index: Inslith
 notes: ''
@@ -244,5 +243,6 @@ players: "Inslith; 'Black Snake';Description: An Inslith is a long, thin, black 
   \ can be made into armor by any hunter with a roll against Agility DC 15.  It requires\
   \ 100 skins to make a set of armor for a human sized creature.  The armor will be\
   \ AC 4 and includes a helm, but not a shield.  The armor is acid proof.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

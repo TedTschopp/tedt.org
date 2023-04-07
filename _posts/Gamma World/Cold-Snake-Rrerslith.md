@@ -1,12 +1,11 @@
 ---
-ID: 71511
-layout: GammaWorld
+id: 71511
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b67ba782-d48b-494f-b9c8-a5e5bcf4cd16
-date: '2023-04-06T22:58:17.055Z'
 title: Cold Snake «Rrerslith»
 creature_name_index: Rrerslith
 notes: ''
@@ -188,5 +187,6 @@ players: "Rrerslith; 'Cold Snake';Description: A rrerslith is a venomous snake w
   \ Rrerslith love to collect shiny objects and there is usually a hidden treasure\
   \ trove somewhere close to a Rrerslith nest (each nest is sually occupied by at\
   \ least two rrerslith)|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

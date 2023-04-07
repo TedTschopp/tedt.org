@@ -1,12 +1,11 @@
 ---
-ID: 71496
-layout: GammaWorld
+id: 71496
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e20d4e96-ca08-49d2-8a3d-a49e5163fcfa
-date: '2023-04-06T22:58:17.055Z'
 title: Razorgrass
 creature_name_index: Razorgrass
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Razorgrass; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

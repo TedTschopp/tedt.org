@@ -1,12 +1,11 @@
 ---
-ID: 71338
-layout: GammaWorld
+id: 71338
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b6569e04-4d92-4231-9be5-7f4eb76bdbdb
-date: '2023-04-06T22:58:17.054Z'
 title: Cat Folk «Katkin»
 creature_name_index: Katkin
 notes: Fixed
@@ -308,5 +307,6 @@ players: "Katkin; 'Cat Folk';Description: Katkins are similar in appearance to c
   \ to build cabins. Contact with the outside world is normally limited to a few select\
   \ traders. Katkins are the mortal foes of Squeekers. They will attack these vermin\
   \ whenever encountered, although not by foolhardy means.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

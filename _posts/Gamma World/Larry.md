@@ -1,12 +1,11 @@
 ---
-ID: 71357
-layout: GammaWorld
+id: 71357
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 45f9c430-3f8f-4905-8eab-1fa1f9717870
-date: '2023-04-06T22:58:17.054Z'
 title: Larry
 creature_name_index: Larry
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Larry; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

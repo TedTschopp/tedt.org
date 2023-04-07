@@ -1,12 +1,11 @@
 ---
-ID: 71107
-layout: GammaWorld
+id: 71107
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4d8004fe-470a-4e32-b8d1-e3a777f2e938
-date: '2023-04-06T22:58:17.053Z'
 title: Bird Rulers «Carrday»
 creature_name_index: Carrday
 notes: ''
@@ -160,5 +159,6 @@ final_output: "Carrday 'Bird Rulers' (1d20 (10)): Init -3; atk see description; 
 players: "Carrday; 'Bird Rulers';Society: Seps tend to hunt singly, although they're\
   \ sometimes encountered in small 'schools' of up to six. They inhabit deserts and\
   \ other sandy regions.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71155
-layout: GammaWorld
+id: 71155
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 12c9d202-582f-4a76-94b5-987a5ed73b20
-date: '2023-04-06T22:58:17.053Z'
 title: Bird Friend «Daycut»
 creature_name_index: Daycut
 notes: ''
@@ -194,5 +193,6 @@ players: "Daycut; 'Bird Friend';Description: (Mount) Daycuts are four-meter tall
   \ over its fallen rider, protecting him, instead of fleeting to safety.  Inline\
   \ some other mounts they have no ability to pick a rider backup and return him to\
   \ safety.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

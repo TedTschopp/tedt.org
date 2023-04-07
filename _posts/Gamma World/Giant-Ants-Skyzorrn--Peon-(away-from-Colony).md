@@ -1,12 +1,11 @@
 ---
-ID: 71568
-layout: GammaWorld
+id: 71568
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 23ecbab2-18ab-4c9a-a15d-ce82e57f0e89
-date: '2023-04-06T22:58:17.056Z'
 title: Giant Ants «Skyzorr'n - Peon (away from Colony)»
 creature_name_index: Skyzorr'n - Peon (away from Colony)
 notes: ''
@@ -232,5 +231,6 @@ players: "Skyzorr'n - Peon (away from Colony); 'Giant Ants';Description: Skyzorr
   \ races for the treasure their queen desires. Skyzorr'n peons or warriors are often\
   \ hired out as guards or workers in exchange for payment. This also gives the queen\
   \ a way of gaining information and keeping track of the activities of other societies.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

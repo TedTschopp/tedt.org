@@ -1,12 +1,11 @@
 ---
-ID: 71597
-layout: GammaWorld
+id: 71597
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d7b90bf7-4549-4bf8-92a6-e24ffcb28c65
-date: '2023-04-06T22:58:17.056Z'
 title: Spiny
 creature_name_index: Spiny
 notes: ''
@@ -198,5 +197,6 @@ players: "Spiny; '';Description: Though primarily nocturnal, these large quill-c
   \ come together to mate in autumn, after which the male remains to protect the pregnant\
   \ female in her den. Young are born in late spring and the male leaves soon afterward.\
   \ |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

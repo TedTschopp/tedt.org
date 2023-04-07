@@ -1,12 +1,11 @@
 ---
-ID: 71270
-layout: GammaWorld
+id: 71270
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fc85e9a8-8b05-4e7e-a49c-c205a47b600e
-date: '2023-04-06T22:58:17.054Z'
 title: Snow Dragon «Hargon»
 creature_name_index: Hargon
 notes: Validate
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Hargon 'Snow Dragon' (1): Init -3; atk see description; AC 10; HD 1D7\
   \ hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Hargon; 'Snow Dragon';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

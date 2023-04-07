@@ -1,12 +1,11 @@
 ---
-ID: 71086
-layout: GammaWorld
+id: 71086
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8d2b819b-79b2-4c1b-beaa-a697049b11a6
-date: '2023-04-06T22:58:17.053Z'
 title: Bream
 creature_name_index: Bream
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Bream ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

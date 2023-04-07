@@ -1,12 +1,11 @@
 ---
-ID: 71705
-layout: GammaWorld
+id: 71705
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0a753080-838d-4e71-badc-e123f554c3da
-date: '2023-04-06T22:58:17.056Z'
 title: He who is a warrior «Y'Zor»
 creature_name_index: Y'Zor
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Y'Zor 'He who is a warrior' (1d6 (3)): Init -3; atk see description;\
   \ AC 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Y'Zor; 'He who is a warrior';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

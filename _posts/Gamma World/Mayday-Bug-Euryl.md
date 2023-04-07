@@ -1,12 +1,11 @@
 ---
-ID: 71204
-layout: GammaWorld
+id: 71204
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 28ec720e-ae0f-474e-8445-f5d67b6c3dc9
-date: '2023-04-06T22:58:17.054Z'
 title: Mayday Bug «Euryl»
 creature_name_index: Euryl
 notes: ''
@@ -183,5 +182,6 @@ players: "Euryl; 'Mayday Bug';Description: The euryl looks like most aquatic ins
   \ are non combative, and will not attack things larger than itself unless provoked.\
   \ It uses detect life to sense prey and predators. If attacked it will try to flee.Euryl\
   \ are hunted for food by MA and MH. In some areas they are an important farmed animal.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

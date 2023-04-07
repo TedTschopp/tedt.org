@@ -1,12 +1,11 @@
 ---
-ID: 71601
-layout: GammaWorld
+id: 71601
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 110bae86-3def-4bbd-a9c1-6a9fdf5f0724
-date: '2023-04-06T22:58:17.056Z'
 title: Spoat
 creature_name_index: Spoat
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Spoat; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

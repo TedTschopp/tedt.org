@@ -1,12 +1,11 @@
 ---
-ID: 71349
-layout: GammaWorld
+id: 71349
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 762ae56c-1a49-48ec-b769-c3c6da0cd082
-date: '2023-04-06T22:58:17.054Z'
 title: Hateful «Krea»
 creature_name_index: Krea
 notes: ''
@@ -177,5 +176,6 @@ players: "Krea; 'Hateful';Description: The Krea looks like a nightmare.  It is a
   \ are incredibly destructive just for the sheer cruelty of it.  In addition to their\
   \ fearsome attacks, they can teleport every third turn up to 100' away as long as\
   \ the distance is in line of sight.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

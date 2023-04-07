@@ -1,12 +1,11 @@
 ---
-ID: 71628
-layout: GammaWorld
+id: 71628
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9ac187d8-22bf-46d3-bd08-08b7f9c45209
-date: '2023-04-06T22:58:17.056Z'
 title: Fixed
 creature_name_index: TarHorror
 notes: Fixed
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: TarHorror; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

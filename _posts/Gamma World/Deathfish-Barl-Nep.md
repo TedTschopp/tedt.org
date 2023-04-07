@@ -1,12 +1,11 @@
 ---
-ID: 71051
-layout: GammaWorld
+id: 71051
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7509518b-117a-4c61-8fcf-5663cfd9bd18
-date: '2023-04-06T22:58:17.053Z'
 title: Deathfish «Barl Nep»
 creature_name_index: Barl Nep
 notes: ''
@@ -216,5 +215,6 @@ players: "Barl Nep; 'Deathfish';Description: The barl nep is a mutant form of ca
   \ its radioactive oil, it can be extracted from its body with a successful skill\
   \ check. Barl nep are considered a delicacy in some parts of Gamma Terra, provided\
   \ they're properly prepared.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

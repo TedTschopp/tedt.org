@@ -1,12 +1,11 @@
 ---
-ID: 71639
-layout: GammaWorld
+id: 71639
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c6ff4661-d3aa-4b27-9a81-fc37da172bb7
-date: '2023-04-06T22:58:17.056Z'
 title: The Companion
 creature_name_index: The Companion
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: The Companion; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

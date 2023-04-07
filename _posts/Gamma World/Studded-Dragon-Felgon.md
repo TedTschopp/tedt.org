@@ -1,12 +1,11 @@
 ---
-ID: 71210
-layout: GammaWorld
+id: 71210
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 175b3ca1-199b-402e-8409-66d0b7852127
-date: '2023-04-06T22:58:17.054Z'
 title: Studded Dragon «Felgon»
 creature_name_index: Felgon
 notes: ''
@@ -183,5 +182,6 @@ players: "Felgon; 'Studded Dragon';Description: This gon is six meters long with
   \ seek each other out and mate.  A female will ensure the eggs are hidden well underground\
   \ and protect the clutch until they are ready to hatch.  The mother will then leave\
   \ the clutch a day or two before the eggs hatch.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

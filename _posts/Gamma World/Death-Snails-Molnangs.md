@@ -1,12 +1,11 @@
 ---
-ID: 71417
-layout: GammaWorld
+id: 71417
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0dd49fc1-39e2-46d0-8486-0e51b366c9b8
-date: '2023-04-06T22:58:17.055Z'
 title: Death Snails «Molnangs»
 creature_name_index: Molnangs
 notes: ''
@@ -293,5 +292,6 @@ players: "Molnangs; 'Death Snails';Description: Horribly dangerous and destructi
   \ The shell weighs 500-800 kg and is worth twice that in gold pieces to someone\
   \ who can make use of it.Molnangs are seldom hired or recruited because it is all\
   \ but impossible to safely communicate with them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

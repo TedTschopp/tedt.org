@@ -1,12 +1,11 @@
 ---
-ID: 71635
-layout: GammaWorld
+id: 71635
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d7bd16f2-cc77-4b27-b7fd-bce113579571
-date: '2023-04-06T22:58:17.056Z'
 title: Tentacled Ghoul
 creature_name_index: Tentacled Ghoul
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Tentacled Ghoul; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

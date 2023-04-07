@@ -1,12 +1,11 @@
 ---
-ID: 71223
-layout: GammaWorld
+id: 71223
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 17520b36-149d-4b72-b560-1f21ff12ddfd
-date: '2023-04-06T22:58:17.054Z'
 title: Fluter
 creature_name_index: Fluter
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Fluter; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

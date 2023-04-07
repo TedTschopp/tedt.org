@@ -1,12 +1,11 @@
 ---
-ID: 71420
-layout: GammaWorld
+id: 71420
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 49a731fa-2467-4a99-bbe9-d08389f85434
-date: '2023-04-06T22:58:17.055Z'
 title: Muse Device
 creature_name_index: Muse Device
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Muse Device; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71592
-layout: GammaWorld
+id: 71592
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fc1d3a07-cde1-4877-ba8c-b7ab9345e0fc
-date: '2023-04-06T22:58:17.056Z'
 title: Skeeters «Soul Besh»
 creature_name_index: Soul Besh
 notes: ''
@@ -177,5 +176,6 @@ players: "Soul Besh; 'Skeeters';Description: These mutated Mosquitoes grow up to
   \  The Sol Besh will then do double damage to all paralyzed victims until they are\
   \ dead.  The exoskeleton of a dead Soul Besh may be boiled down into 15 doses of\
   \ Intinisty 18 Poison antidote. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

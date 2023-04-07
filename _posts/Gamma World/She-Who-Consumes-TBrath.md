@@ -1,12 +1,11 @@
 ---
-ID: 71619
-layout: GammaWorld
+id: 71619
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b8dac1b9-d61a-4a20-9a4d-a6148b8ce406
-date: '2023-04-06T22:58:17.056Z'
 title: She Who Consumes «T'Brath»
 creature_name_index: T'Brath
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "T'Brath 'She Who Consumes' (1): Init -3; atk see description; AC 10;\
   \ HD 1D5 hp 3; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: T'Brath; 'She Who Consumes';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

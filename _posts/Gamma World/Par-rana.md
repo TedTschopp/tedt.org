@@ -1,12 +1,11 @@
 ---
-ID: 71461
-layout: GammaWorld
+id: 71461
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2026374a-ab1a-4942-9926-0af508802558
-date: '2023-04-06T22:58:17.055Z'
 title: Par-rana
 creature_name_index: Par-rana
 notes: ''
@@ -168,5 +167,6 @@ players: "Par-rana; '';Description: This creature is an odd fusion of a Parakeet
   \ and hunt together in large schools. They will go into a feeding frenzy much like\
   \ Herkels, but while in the frenzy a random number of the group will emit high-pitched\
   \ Sonic Blasts.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

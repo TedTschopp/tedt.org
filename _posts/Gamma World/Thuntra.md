@@ -1,12 +1,11 @@
 ---
-ID: 71649
-layout: GammaWorld
+id: 71649
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8ab5defd-3538-46c7-9264-8052da331ae6
-date: '2023-04-06T22:58:17.056Z'
 title: Thuntra
 creature_name_index: Thuntra
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Thuntra ; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71177
-layout: GammaWorld
+id: 71177
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 984b381d-a215-4970-9f65-f8566b0afa3f
-date: '2023-04-06T22:58:17.053Z'
 title: Prickly Folk «Dyllon»
 creature_name_index: Dyllon
 notes: ''
@@ -230,5 +229,6 @@ players: "Dyllon; 'Prickly Folk';Description: Dyllon are a race of insular mutan
   \ as protection for the village. All Dyllon are immune to the effects of the Bobs\
   \ mutations. Any Bob has a 40% chance of possessing a weapon of TL IV or higher.\
   \ Other dyllon may also have artifacts (15%)|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71510
-layout: GammaWorld
+id: 71510
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 561cfde7-052b-4413-9a95-1688b608e199
-date: '2023-04-06T22:58:17.055Z'
 title: Rojak
 creature_name_index: Rojak
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Rojak (1): Init -3; atk see description; AC 10; HD 1D12 hp 7; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Rojak; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71246
-layout: GammaWorld
+id: 71246
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d2eb24a4-4a21-417e-9deb-b3b10e861754
-date: '2023-04-06T22:58:17.054Z'
 title: Water Walker «Ger'tal»
 creature_name_index: Ger'tal
 notes: ''
@@ -186,5 +185,6 @@ players: "Ger'tal; 'Water Walker';Description: Ger'tal are mutant water striders
   \ its stunning force and uses it. Anyone not stunned is bitten or irradiated to\
   \ death.Ger'tal are found in clumps- that is in groups that have no interaction\
   \ between members. They feed on anything living or dead on or near the water.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71094
-layout: GammaWorld
+id: 71094
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ed5ed55a-13bb-443d-be76-0e60c8002534
-date: '2023-04-06T22:58:17.053Z'
 title: Bulo
 creature_name_index: Bulo
 notes: ''
@@ -242,5 +241,6 @@ players: "Bulo; '';Description: This massive mutated buffalo weighs well over a 
   \ around. Finally,the power to shape- change allows the Bulo to change form into\
   \ any one of the following three flying insect-like creatures; a Blaash, a Blight,\
   \ or a Cal Then.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

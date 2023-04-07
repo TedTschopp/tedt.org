@@ -1,12 +1,11 @@
 ---
-ID: 71187
-layout: GammaWorld
+id: 71187
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 962efa7d-b1ea-4bd0-9fca-53c7ed87756e
-date: '2023-04-06T22:58:17.053Z'
 title: Econet
 creature_name_index: Econet
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Econet; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

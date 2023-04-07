@@ -1,12 +1,11 @@
 ---
-ID: 71273
-layout: GammaWorld
+id: 71273
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a4f5b804-a72a-434c-b7b1-ac6b83e03e57
-date: '2023-04-06T22:58:17.054Z'
 title: Powdery Snow Rat «Harod»
 creature_name_index: Harod
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Harod 'Powdery Snow Rat' (1): Init -3; atk see description; AC 10;\
   \ HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Harod; 'Powdery Snow Rat';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

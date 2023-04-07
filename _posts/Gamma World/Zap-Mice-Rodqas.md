@@ -1,12 +1,11 @@
 ---
-ID: 71508
-layout: GammaWorld
+id: 71508
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 18f58f59-e11d-44f7-879d-538fab83757d
-date: '2023-04-06T22:58:17.055Z'
 title: Zap Mice «Rodqas»
 creature_name_index: Rodqas
 notes: ''
@@ -177,5 +176,6 @@ players: "Rodqas; 'Zap Mice';Description: Rodquas are mutated cousins of the com
   \ has no known origin, but does not dissipate with use.  Equiptment: The Rodqas\
   \ always have a nest hidden in a tiny corner or niche somewhere, there is always\
   \ a 10% chance that they will have some small, valuable object there.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

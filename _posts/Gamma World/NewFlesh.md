@@ -1,12 +1,11 @@
 ---
-ID: 71437
-layout: GammaWorld
+id: 71437
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a72d239f-20c8-4772-ae6f-50e5c5da257b
-date: '2023-04-06T22:58:17.055Z'
 title: NewFlesh
 creature_name_index: NewFlesh
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: NewFlesh; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

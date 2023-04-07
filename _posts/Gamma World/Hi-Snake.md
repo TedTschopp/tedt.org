@@ -1,12 +1,11 @@
 ---
-ID: 71283
-layout: GammaWorld
+id: 71283
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4a347b23-a814-4479-8270-b2b977149393
-date: '2023-04-06T22:58:17.054Z'
 title: Hi Snake
 creature_name_index: Hi Snake
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hi Snake; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

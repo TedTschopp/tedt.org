@@ -1,12 +1,11 @@
 ---
-ID: 71219
-layout: GammaWorld
+id: 71219
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 07e09f53-d864-4d91-8d7a-867d30e58115
-date: '2023-04-06T22:58:17.054Z'
 title: Flesh Cutter Ant
 creature_name_index: Flesh Cutter Ant
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Flesh Cutter Ant; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

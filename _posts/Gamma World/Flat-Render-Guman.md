@@ -1,12 +1,11 @@
 ---
-ID: 71267
-layout: GammaWorld
+id: 71267
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9f05cfd5-cbdc-4523-8a92-d85534578355
-date: '2023-04-06T22:58:17.054Z'
 title: Flat Render «Guman»
 creature_name_index: Guman
 notes: ''
@@ -218,5 +217,6 @@ players: "Guman; 'Flat Render';Description: Guman are only found underground as 
   \ who have lived through guman mental control will suddenly find that they have\
   \ a skill or talent they never had before.  Apparently guman carry around residual\
   \ memories from other victims and these are someitmes transferred to new victims.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

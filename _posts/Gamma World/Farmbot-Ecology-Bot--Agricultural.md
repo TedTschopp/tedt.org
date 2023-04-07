@@ -1,12 +1,11 @@
 ---
-ID: 71182
-layout: GammaWorld
+id: 71182
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5b12a145-5028-4305-b37a-591150aa1acc
-date: '2023-04-06T22:58:17.053Z'
 title: Farmbot «Ecology Bot - Agricultural»
 creature_name_index: Ecology Bot - Agricultural
 notes: ''
@@ -199,5 +198,6 @@ players: "Ecology Bot - Agricultural; 'Farmbot';Description: These 3 x 6 x 1 met
   \ wants a Robot reprogrammed to use them in this role, the GM must decide what damage\
   \ they do and how effective they are.Behavior:These Robots are common in rural areas.Mission:\
   \ To care for the crops, animals, buildings and grounds of a farm.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

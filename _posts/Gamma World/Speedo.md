@@ -1,12 +1,11 @@
 ---
-ID: 71594
-layout: GammaWorld
+id: 71594
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7709cc6a-84c9-4b6f-a8a7-3527ebd8ce33
-date: '2023-04-06T22:58:17.056Z'
 title: Speedo
 creature_name_index: Speedo
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Speedo; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71385
-layout: GammaWorld
+id: 71385
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 85b6da51-06ce-4917-8937-a71ba0603643
-date: '2023-04-06T22:58:17.055Z'
 title: Mal Tonas
 creature_name_index: Mal Tonas
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mal Tonas; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

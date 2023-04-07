@@ -1,12 +1,11 @@
 ---
-ID: 71293
-layout: GammaWorld
+id: 71293
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: deb25845-2a3f-426a-9f34-0b134a13ca1c
-date: '2023-04-06T22:58:17.054Z'
 title: Sea Stallion «Horsy»
 creature_name_index: Horsy
 notes: ''
@@ -175,5 +174,6 @@ players: "Horsy; 'Sea Stallion';Description: Horsy (sometimes spelled Horsea) ar
   \ Their only attack consists of smashing into an opponent. The Horsy must have enough\
   \ room to move in order to use this attack. Horsy are quite loyal creatures whether\
   \ it's to a family group or rider.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

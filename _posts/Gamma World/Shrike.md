@@ -1,12 +1,11 @@
 ---
-ID: 71555
-layout: GammaWorld
+id: 71555
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5517e67c-c63b-4fb6-8043-41123d0105a0
-date: '2023-04-06T22:58:17.056Z'
 title: Shrike
 creature_name_index: Shrike
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Shrike; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71137
-layout: GammaWorld
+id: 71137
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 64188f64-4613-4167-b4d8-f91f3a4e3afb
-date: '2023-04-06T22:58:17.053Z'
 title: Water Crep «Crep, Pink»
 creature_name_index: Crep, Pink
 notes: ''
@@ -231,5 +230,6 @@ players: "Crep, Pink; 'Water Crep';Description: The water crep has a pink flower
   \ local animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
   \ crep plants grow rooted for a season before gaining mobility and moving off on\
   \ their own in search of prey.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

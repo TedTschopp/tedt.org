@@ -1,12 +1,11 @@
 ---
-ID: 71698
-layout: GammaWorld
+id: 71698
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0aade28d-bd21-4199-a31c-4688526346ef
-date: '2023-04-06T22:58:17.056Z'
 title: Shining Being «Woo'N»
 creature_name_index: Woo'N
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Woo'N 'Shining Being' (1): Init -3; atk see description; AC 10; HD\
   \ 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Woo'N; 'Shining Being';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

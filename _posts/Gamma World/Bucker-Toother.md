@@ -1,12 +1,11 @@
 ---
-ID: 71656
-layout: GammaWorld
+id: 71656
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ffbd8b7e-d792-459f-96f4-a1f1f5bb2202
-date: '2023-04-06T22:58:17.056Z'
 title: Bucker «Toother»
 creature_name_index: Toother
 notes: ''
@@ -251,5 +250,6 @@ players: "Toother; 'Bucker';Description: These mutant descendents of the beaver 
   \ one complex to another they simply teleport themselves. Toothers will generally\
   \ avoid contact with other beings unless those beings demonstrate friendliness and\
   \ great natural abilities.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71341
-layout: GammaWorld
+id: 71341
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dcf24417-ea6a-418a-8153-22ead1863fea
-date: '2023-04-06T22:58:17.054Z'
 title: Sand Devils «Kep»
 creature_name_index: Kep
 notes: Fixed
@@ -234,5 +233,6 @@ players: "Kep; 'Sand Devils';Description: The kep is a plant consisting of a dee
   \ above them, so the areas where they grow tend to be barren soil, sometimes clearings\
   \ amdist other vegetation. A mature kep produces a single mobile seed once per season,\
   \ which burrows out of the ground scurries off in search of a place to root.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

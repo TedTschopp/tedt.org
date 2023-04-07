@@ -1,12 +1,11 @@
 ---
-ID: 71241
-layout: GammaWorld
+id: 71241
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 08fb883d-958e-4a64-bb20-004548ca5b93
-date: '2023-04-06T22:58:17.054Z'
 title: Gazilla Monster
 creature_name_index: Gazilla Monster
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Gazilla Monster; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

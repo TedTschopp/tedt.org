@@ -1,12 +1,11 @@
 ---
-ID: 71552
-layout: GammaWorld
+id: 71552
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0210036d-086f-4127-ae92-b1e749ce5555
-date: '2023-04-06T22:58:17.056Z'
 title: Bird of the Moonlight «Sho'day»
 creature_name_index: Sho'day
 notes: ''
@@ -211,5 +210,6 @@ players: "Sho'day; 'Bird of the Moonlight';Description: (Pet) Sho'day are noctur
   \ have the talent of training animals, the bird has been exposed to the trainer\
   \ since being a chick, and suitable time and experience is dedicated to the task\
   \  (up to the Judge)|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

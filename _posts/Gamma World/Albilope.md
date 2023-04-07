@@ -1,12 +1,11 @@
 ---
-ID: 71007
-layout: GammaWorld
+id: 71007
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5b405f87-16ba-4b73-8ebf-d9a1f5924aa0
-date: '2023-04-06T22:58:17.053Z'
 title: Albilope
 creature_name_index: Albilope
 notes: ''
@@ -232,5 +231,6 @@ players: "Albilope; '';Description: This slenderly built creature is easily reco
   \ have been known to viciously attack vulnerable prey.Their great speed allows them\
   \ to catch unsuspecting creatures,but more import-antly it permits them to escape\
   \ most of the predators found in this area.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

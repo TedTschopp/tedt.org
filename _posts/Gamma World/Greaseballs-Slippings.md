@@ -1,12 +1,11 @@
 ---
-ID: 71581
-layout: GammaWorld
+id: 71581
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5e47cbac-68e6-4696-945d-5f515729ddea
-date: '2023-04-06T22:58:17.056Z'
 title: Greaseballs «Slippings»
 creature_name_index: Slippings
 notes: ''
@@ -224,5 +223,6 @@ players: "Slippings; 'Greaseballs';Description: Slippigs resemble the pink, curl
   \ ously hurt by poison, radiation, or disease is easy to catch, but dangerous to\
   \ eat. Only the considerable fecundity of slippigs has enabled them to survive as\
   \ a species.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

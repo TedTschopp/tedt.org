@@ -1,12 +1,11 @@
 ---
-ID: 71673
-layout: GammaWorld
+id: 71673
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ffa4748d-42f7-4b2e-bea1-46d6c3586272
-date: '2023-04-06T22:58:17.056Z'
 title: Vegepygmy
 creature_name_index: Vegepygmy
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Vegepygmy; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

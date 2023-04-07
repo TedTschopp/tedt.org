@@ -1,12 +1,11 @@
 ---
-ID: 71394
-layout: GammaWorld
+id: 71394
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5d3d49f0-cf25-4c1a-85bb-fad5917de64b
-date: '2023-04-06T22:58:17.055Z'
 title: May'Jir
 creature_name_index: May'Jir
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "May'Jir (1): Init -3; atk see description; AC 10; HD 1D7 hp 4; NO MOVEMENT;\
   \ 1d20; SV Fort -3, Ref -3, Will -3"
 players: May'Jir; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

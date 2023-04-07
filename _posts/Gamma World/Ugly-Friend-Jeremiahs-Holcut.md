@@ -1,12 +1,11 @@
 ---
-ID: 71321
-layout: GammaWorld
+id: 71321
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 3f2b37e0-c78a-4499-bbb0-09e2cdc95470
-date: '2023-04-06T22:58:17.054Z'
 title: Ugly Friend «Jeremiah's Holcut»
 creature_name_index: Jeremiah's Holcut
 notes: ''
@@ -177,5 +176,6 @@ players: "Jeremiah's Holcut; 'Ugly Friend';Description: The Holcut stand 4 feet 
   \ are immune to any sort of gas attack.Behavior:They love wallowing in the mud.\
   \  They make excellent pets.  If they are encountered in the wild, they are extremely\
   \ dangerous and are fearsome predators.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

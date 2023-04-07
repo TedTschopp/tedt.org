@@ -1,12 +1,11 @@
 ---
-ID: 71379
-layout: GammaWorld
+id: 71379
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 926f37f4-8013-4067-85ce-aadf141c33a8
-date: '2023-04-06T22:58:17.055Z'
 title: Maali
 creature_name_index: Maali
 notes: ''
@@ -278,5 +277,6 @@ players: "Maali; '';Description: These solitary creatures are rarely seen and on
   \ mutants into epileptic trances (Epilepsy defect).Maali will remain motionless\
   \ for a period of about 10 minutes when robotic units are first seen,then afterwards\
   \ they will react normally.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

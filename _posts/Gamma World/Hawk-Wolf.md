@@ -1,12 +1,11 @@
 ---
-ID: 71274
-layout: GammaWorld
+id: 71274
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 6174352c-1b8a-4196-9d5f-ec7ba6fa38d5
-date: '2023-04-06T22:58:17.054Z'
 title: Hawk Wolf
 creature_name_index: Hawk Wolf
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Hawk Wolf; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

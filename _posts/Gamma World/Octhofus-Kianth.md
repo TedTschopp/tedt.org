@@ -1,12 +1,11 @@
 ---
-ID: 71453
-layout: GammaWorld
+id: 71453
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 122f3cd4-b9e3-4228-ace4-ac3261b4088b
-date: '2023-04-06T22:58:17.055Z'
 title: Octhofus, Kianth
 creature_name_index: Octhofus, Kianth
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Octhofus, Kianth; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71384
-layout: GammaWorld
+id: 71384
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 63161da7-562b-4907-bc54-748d0d04a4ed
-date: '2023-04-06T22:58:17.055Z'
 title: Makeen
 creature_name_index: Makeen
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Makeen; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

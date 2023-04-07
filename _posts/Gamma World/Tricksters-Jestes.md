@@ -1,12 +1,11 @@
 ---
-ID: 71322
-layout: GammaWorld
+id: 71322
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: fa809f62-1064-42de-a846-5196f83b8e9b
-date: '2023-04-06T22:58:17.054Z'
 title: Tricksters «Jestes»
 creature_name_index: Jestes
 notes: ''
@@ -219,5 +218,6 @@ players: "Jestes; 'Tricksters';Description: These short, elfin- looking humans a
   \ ease (for example, pistols instead of rifles).Jestes enjoy the company of friendly\
   \ mutant animals, grens, and wardents. They dislike androids greatly and hate robots,\
   \ reserving their more malicious tricks for these two groups of beings.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

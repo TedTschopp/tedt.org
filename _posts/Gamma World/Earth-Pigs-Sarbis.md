@@ -1,12 +1,11 @@
 ---
-ID: 71515
-layout: GammaWorld
+id: 71515
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: dbb91236-eb91-47e6-ae2c-d7af8511e9a0
-date: '2023-04-06T22:58:17.055Z'
 title: Earth Pigs «Sarbis»
 creature_name_index: Sarbis
 notes: ''
@@ -311,5 +310,6 @@ players: "Sarbis; 'Earth Pigs';Description: The sarbis looks strikingly like a 2
   \ much of the raw minerals for Gamma World societies.  There value in this capacity,\
   \ plus their dangerous nature when crossed, have made them better allies than slaves\
   \ or subjects.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

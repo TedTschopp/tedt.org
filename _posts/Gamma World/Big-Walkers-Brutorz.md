@@ -1,12 +1,11 @@
 ---
-ID: 71089
-layout: GammaWorld
+id: 71089
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4685499f-6534-4770-b40d-662789d0c776
-date: '2023-04-06T22:58:17.053Z'
 title: Big Walkers «Brutorz»
 creature_name_index: Brutorz
 notes: ''
@@ -243,5 +242,6 @@ players: "Brutorz; 'Big Walkers';Description: A two meter tall horse that can ca
   \ toward the creature, can never hope to gain the brutorz as an ally. Brutorz willingly\
   \ serve as draft animals, but refuse bits. bridles, or confining harnesses. They\
   \ have a PS of 26 and can carry three normal men comfortably|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

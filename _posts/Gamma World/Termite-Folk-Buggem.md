@@ -1,12 +1,11 @@
 ---
-ID: 71093
-layout: GammaWorld
+id: 71093
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2113ad32-6b17-47fd-95ac-9cbe64a4d6a6
-date: '2023-04-06T22:58:17.053Z'
 title: Termite Folk «Buggem»
 creature_name_index: Buggem
 notes: ''
@@ -291,5 +290,6 @@ players: "Buggem; 'Termite Folk';Description: It is rumored that the Buggers app
   \ brothers' actions. In addition. these biological freaks use archaic weaponry such\
   \ as blasters, lasers, and death roy projectors whenever such advanced weapons ore\
   \ available.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

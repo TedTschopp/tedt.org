@@ -1,12 +1,11 @@
 ---
-ID: 71460
-layout: GammaWorld
+id: 71460
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e89f9379-3ff1-4413-94da-412ae53f597e
-date: '2023-04-06T22:58:17.055Z'
 title: Pako
 creature_name_index: Pako
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Pako; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

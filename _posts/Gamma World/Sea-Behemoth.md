@@ -1,12 +1,11 @@
 ---
-ID: 71523
-layout: GammaWorld
+id: 71523
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8bac8167-e058-4996-93a2-38cda3dfb268
-date: '2023-04-06T22:58:17.055Z'
 title: Sea Behemoth
 creature_name_index: Sea Behemoth
 notes: ''
@@ -176,5 +175,6 @@ players: "Sea Behemoth; '';Description: Sea Behemoths are little more than gigan
   \ in their area. In most cases they will have no additional mutations (other than\
   \ their monstrous size), but some may have numerous mutations which they will use\
   \ to full effect.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

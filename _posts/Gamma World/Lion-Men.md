@@ -1,12 +1,11 @@
 ---
-ID: 71364
-layout: GammaWorld
+id: 71364
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: bba98f16-a27a-43cc-b1fc-5101edae337a
-date: '2023-04-06T22:58:17.054Z'
 title: Lion Men
 creature_name_index: Lion Men
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Lion Men; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

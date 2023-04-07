@@ -1,12 +1,11 @@
 ---
-ID: 71190
-layout: GammaWorld
+id: 71190
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 336e7bf0-5b66-4e5d-949b-b39642576b0b
-date: '2023-04-06T22:58:17.053Z'
 title: Elefgainth
 creature_name_index: Elefgainth
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Elefgainth; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

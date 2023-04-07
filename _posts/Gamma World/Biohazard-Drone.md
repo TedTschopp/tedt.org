@@ -1,12 +1,11 @@
 ---
-ID: 71065
-layout: GammaWorld
+id: 71065
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 639639bb-dbaf-4cbe-baf4-78f8d2bb501f
-date: '2023-04-06T22:58:17.053Z'
 title: Biohazard Drone
 creature_name_index: Biohazard Drone
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Biohazard Drone; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

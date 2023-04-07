@@ -1,12 +1,11 @@
 ---
-ID: 71685
-layout: GammaWorld
+id: 71685
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b92095df-502f-438f-9a67-b4c69f151fb5
-date: '2023-04-06T22:58:17.056Z'
 title: Watchcat
 creature_name_index: Watchcat
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Watchcat; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

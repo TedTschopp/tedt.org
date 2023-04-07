@@ -1,12 +1,11 @@
 ---
-ID: 71655
-layout: GammaWorld
+id: 71655
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 99d7be3b-78c4-4fff-9171-40ed5af12d76
-date: '2023-04-06T22:58:17.056Z'
 title: Timon's Dabber Agent
 creature_name_index: Timon's Dabber Agent
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Timon's Dabber Agent (1): Init -3; atk see description; AC 10; HD 1D7\
   \ hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Timon's Dabber Agent; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

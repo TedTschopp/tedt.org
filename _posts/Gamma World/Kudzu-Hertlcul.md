@@ -1,12 +1,11 @@
 ---
-ID: 71353
-layout: GammaWorld
+id: 71353
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5a415604-3961-46fd-b904-24b5f14e36cd
-date: '2023-04-06T22:58:17.054Z'
 title: Kud'zu Hert'l'cul
 creature_name_index: Kud'zu Hert'l'cul
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Kud'zu Hert'l'cul; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

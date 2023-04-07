@@ -1,12 +1,11 @@
 ---
-ID: 71196
-layout: GammaWorld
+id: 71196
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2ac3e92d-fd19-4251-ba48-87a03fb53137
-date: '2023-04-06T22:58:17.053Z'
 title: Construction Bot «Engineering Bot, Standard»
 creature_name_index: Engineering Bot, Standard
 notes: ''
@@ -173,5 +172,6 @@ players: "Engineering Bot, Standard; 'Construction Bot';Description: This unit i
   \ beam can lift 500 kilograms at a 10-meter range. The unit has the same special\
   \ features and materials as the Engineering Bot-Light and is sealed for underwater\
   \ operations.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71607
-layout: GammaWorld
+id: 71607
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d60931a0-8e98-4f92-9064-fbfad2dce261
-date: '2023-04-06T22:58:17.056Z'
 title: Standardized
 creature_name_index: Standardized
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Standardized; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

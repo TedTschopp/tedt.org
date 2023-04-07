@@ -1,12 +1,11 @@
 ---
-ID: 71351
-layout: GammaWorld
+id: 71351
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 09a785ef-c6b2-4d89-aed2-e1871d902144
-date: '2023-04-06T22:58:17.054Z'
 title: Krone
 creature_name_index: Krone
 notes: ''
@@ -168,5 +167,6 @@ players: "Krone; '';Society: Sarbis form large communities called 'camps.'  Ther
   \ are usually miners and provide much of the raw minerals for Gamma World societies.\
   \  There value in this capacity, plus their dangerous nature when crossed, have\
   \ made them better allies than slaves or subjects.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

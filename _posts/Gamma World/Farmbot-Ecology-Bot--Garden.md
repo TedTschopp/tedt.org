@@ -1,12 +1,11 @@
 ---
-ID: 71183
-layout: GammaWorld
+id: 71183
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c9ea284d-6389-46df-96cf-cc579cb34780
-date: '2023-04-06T22:58:17.053Z'
 title: Farmbot «Ecology Bot - Garden»
 creature_name_index: Ecology Bot - Garden
 notes: ''
@@ -199,5 +198,6 @@ players: "Ecology Bot - Garden; 'Farmbot';Description: These 3 x 6 x 1 meter ovo
   \ to use them in this role, the GM must decide what damage they do and how effective\
   \ they are.Behavior:These Robots are common in rural areas.Mission: To care for\
   \ the crops, animals, buildings and grounds of a farm.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

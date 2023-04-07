@@ -1,12 +1,11 @@
 ---
-ID: 71095
-layout: GammaWorld
+id: 71095
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 222002f7-2af7-419e-9814-d345e41588b9
-date: '2023-04-06T22:58:17.053Z'
 title: Bee Folk «Bumbles»
 creature_name_index: Bumbles
 notes: ''
@@ -194,5 +193,6 @@ players: "Bumbles; 'Bee Folk';Description: These giant, mutated bees are only fo
   \ that attack them or try to rob their underground nests. They can be recruited\
   \ or hired with offers of food.Some are occasionally trained as mounts, but their\
   \ displacement and energy nega- tion mutations discourage this practice.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

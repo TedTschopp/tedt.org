@@ -1,12 +1,11 @@
 ---
-ID: 71541
-layout: GammaWorld
+id: 71541
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 744da0e7-e1f8-482c-a74c-8f7e4833e83c
-date: '2023-04-06T22:58:17.056Z'
 title: Sergeant Dimin
 creature_name_index: Sergeant Dimin
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sergeant Dimin; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

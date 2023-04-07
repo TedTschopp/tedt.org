@@ -1,12 +1,11 @@
 ---
-ID: 71430
-layout: GammaWorld
+id: 71430
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 26b6cb21-c418-45a7-9205-af5756bf9232
-date: '2023-04-06T22:58:17.055Z'
 title: Strange Ones «N'thlai»
 creature_name_index: N'thlai
 notes: ''
@@ -203,5 +202,6 @@ players: "N'thlai; 'Strange Ones';Description: The N'thlai are three meters tall
   \ feelers and \"eyes\" combine to give the n'thlai radar/sonar and 360 degree sight.\
   \  They can not be surprised. Vegetarians, Nature Worshippers, Healers, Comando\
   \ Fighters.  |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

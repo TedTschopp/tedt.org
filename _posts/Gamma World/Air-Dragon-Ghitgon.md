@@ -1,12 +1,11 @@
 ---
-ID: 71247
-layout: GammaWorld
+id: 71247
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: abf59948-bef1-4f76-b316-f57ea0ce0eff
-date: '2023-04-06T22:58:17.054Z'
 title: Air Dragon «Ghitgon»
 creature_name_index: Ghitgon
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Ghitgon 'Air Dragon' (1): Init -3; atk see description; AC 10; HD 1D7\
   \ hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Ghitgon; 'Air Dragon';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

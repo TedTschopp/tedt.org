@@ -1,12 +1,11 @@
 ---
-ID: 71403
-layout: GammaWorld
+id: 71403
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 89ff8a8c-6298-46f9-b68c-41658c65ca14
-date: '2023-04-06T22:58:17.055Z'
 title: Microreebdor
 creature_name_index: Microreebdor
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Microreebdor; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

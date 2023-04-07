@@ -1,12 +1,11 @@
 ---
-ID: 71615
-layout: GammaWorld
+id: 71615
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7b94e6af-3711-42a3-a875-2194fced742f
-date: '2023-04-06T22:58:17.056Z'
 title: Sucker Snake «Sucslith»
 creature_name_index: Sucslith
 notes: ''
@@ -234,5 +233,6 @@ players: "Sucslith; 'Sucker Snake';Description: The entire body of a sucslith, u
   \ its appendages for combat. Then, the sucslith drops down on the hapless victim\
   \ and enters the web, biting until the creature is dead. Unfortunately, sucsliths\
   \ can be found anywhere, though they tend to avoid deserts and deathlands. |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

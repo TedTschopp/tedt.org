@@ -1,12 +1,11 @@
 ---
-ID: 71447
-layout: GammaWorld
+id: 71447
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2a225b37-f506-499e-9ce0-8609013b4962
-date: '2023-04-06T22:58:17.055Z'
 title: Plague Beetle «Nurglez»
 creature_name_index: Nurglez
 notes: ''
@@ -216,5 +215,6 @@ players: "Nurglez; 'Plague Beetle';Description: The plague beetle is a giant sca
   \ After the survivors flee, the Beetles feast. They then go back to scavenging in\
   \ the wilds, if possible.GMs are urged to use this critter sparingly, as you can\
   \ depopulate large areas with these!|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

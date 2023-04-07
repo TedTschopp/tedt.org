@@ -1,12 +1,11 @@
 ---
-ID: 71253
-layout: GammaWorld
+id: 71253
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 74bf619e-c0ed-4b3c-a5a2-6decdeb5fa43
-date: '2023-04-06T22:58:17.054Z'
 title: Giggle Bugs (Moths)
 creature_name_index: Giggle Bugs (Moths)
 notes: ''
@@ -201,5 +200,6 @@ players: "Giggle Bugs (Moths); '';Description: Ba'mutan are gentle herbivores th
   \ extinct and the only surviving creatures are herd animals.  This means that groups\
   \ of these creatures will be found together and attacking one to extract its pearl\
   \ will cause the whole herd to panic and attack.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

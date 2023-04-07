@@ -1,12 +1,11 @@
 ---
-ID: 71713
-layout: GammaWorld
+id: 71713
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f451abae-2dd7-4ef2-b6cd-9d92c03e1775
-date: '2023-04-06T22:58:17.056Z'
 title: Deadun «Zombie»
 creature_name_index: Zombie
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Zombie; 'Deadun';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

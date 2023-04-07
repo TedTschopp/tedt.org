@@ -1,12 +1,11 @@
 ---
-ID: 71543
-layout: GammaWorld
+id: 71543
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c79ce403-2a39-460c-8144-a406b3be9678
-date: '2023-04-06T22:58:17.056Z'
 title: Haunted Fruit Tree «Seroon Lou»
 creature_name_index: Seroon Lou
 notes: ''
@@ -284,5 +283,6 @@ players: "Seroon Lou; 'Haunted Fruit Tree';Description: Floth-Ha are mutated 'co
   \ dragging them underwater to feed its root cluster.Society: Seroon lou are semi-intelligent,\
   \ but can't be bargained with. They sometimes hide among clusters of narl ep, where\
   \ they spring amushes on their prey.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

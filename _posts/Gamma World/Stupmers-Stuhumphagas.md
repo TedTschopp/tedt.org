@@ -1,12 +1,11 @@
 ---
-ID: 71614
-layout: GammaWorld
+id: 71614
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 19f821d7-1c00-49ce-8727-6743523ccf71
-date: '2023-04-06T22:58:17.056Z'
 title: Stupmers «Stuhumphagas»
 creature_name_index: Stuhumphagas
 notes: ''
@@ -302,5 +301,6 @@ players: "Stuhumphagas; 'Stupmers';Description: These gigantic, kindly natured t
   \  The hot water they dwell in inflicts between d6 and 6d10 points of damage depending\
   \ on the temperature (190 F to 600 F) and the protection the diver has.  When a\
   \ worm retreats inside its sheath it has an AC increased to 5.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

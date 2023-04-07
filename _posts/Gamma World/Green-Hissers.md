@@ -1,12 +1,11 @@
 ---
-ID: 71259
-layout: GammaWorld
+id: 71259
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c3dc2b98-b93c-4c3e-8247-b2225226b42d
-date: '2023-04-06T22:58:17.054Z'
 title: Green Hissers
 creature_name_index: Green Hissers
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Green Hissers; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71542
-layout: GammaWorld
+id: 71542
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: e0edd5e5-54ba-45a9-8564-5ce9fd8f0662
-date: '2023-04-06T22:58:17.056Z'
 title: Master Dragon «Sergon»
 creature_name_index: Sergon
 notes: ''
@@ -243,5 +242,6 @@ players: "Sergon; 'Master Dragon';Description: This gon is the king of the speci
   \ it back to their cache.  Sergon have been known to buy their lives from adventureing\
   \ parties through use of these expensive bribes.  Sergon have been known to take\
   \ expensive bribes for the release of a prisoner.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

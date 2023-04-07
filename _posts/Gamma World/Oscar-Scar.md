@@ -1,12 +1,11 @@
 ---
-ID: 71518
-layout: GammaWorld
+id: 71518
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 035e05d1-e9c5-4493-9344-79c2e9fa377a
-date: '2023-04-06T22:58:17.055Z'
 title: Oscar «Scar»
 creature_name_index: Scar
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Scar 'Oscar' (1): Init -3; atk see description; AC 10; HD 1D7 hp 4;\
   \ NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Scar; 'Oscar';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

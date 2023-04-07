@@ -1,12 +1,11 @@
 ---
-ID: 71143
-layout: GammaWorld
+id: 71143
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a7155315-9b65-415d-a59e-aa31b6562087
-date: '2023-04-06T22:58:17.053Z'
 title: Cuttleimp
 creature_name_index: Cuttleimp
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Cuttleimp; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

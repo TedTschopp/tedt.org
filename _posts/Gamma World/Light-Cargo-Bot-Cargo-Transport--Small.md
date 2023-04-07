@@ -1,12 +1,11 @@
 ---
-ID: 71103
-layout: GammaWorld
+id: 71103
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: d708ad6b-5b48-47b3-b6c0-4ba3e2dcb501
-date: '2023-04-06T22:58:17.053Z'
 title: Light Cargo Bot «Cargo Transport - Small»
 creature_name_index: Cargo Transport - Small
 notes: ''
@@ -181,5 +180,6 @@ players: "Cargo Transport - Small; 'Light Cargo Bot';Description: This unit is t
   \ of items.Mission: To move small pieces of more delicate cargo from one location\
   \ to another.Equiptment: 2 x 6 meter tentacles, each able to lift 100 kilograms\
   \ 1 x tractor/pressor beam able to lift 1800 kilograms at a 12 meter range.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

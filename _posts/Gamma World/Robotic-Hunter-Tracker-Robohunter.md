@@ -1,12 +1,11 @@
 ---
-ID: 71506
-layout: GammaWorld
+id: 71506
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c280dedf-b00e-4623-948b-e25cdca93920
-date: '2023-04-06T22:58:17.055Z'
 title: Robotic Hunter/Tracker «Robohunter»
 creature_name_index: Robohunter
 notes: ''
@@ -644,5 +643,6 @@ players: "Robohunter; 'Robotic Hunter/Tracker';Description: The Robohunter was s
   \ made by Knights of Genetic Purity or other groups.The arms of this unit are capable\
   \ of sustaining 40 hp damage before being destroyed, and the tentacles take 30 hp\
   \ damage before being useless. A fist strike from a Robohunter does 4d6 hp damage.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

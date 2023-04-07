@@ -1,12 +1,11 @@
 ---
-ID: 71173
-layout: GammaWorld
+id: 71173
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 705c0857-0124-4374-b0ee-562c154725ce
-date: '2023-04-06T22:58:17.053Z'
 title: Drake Tribian
 creature_name_index: Drake Tribian
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Drake Tribian; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

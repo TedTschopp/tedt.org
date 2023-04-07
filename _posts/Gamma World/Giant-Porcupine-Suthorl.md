@@ -1,12 +1,11 @@
 ---
-ID: 71617
-layout: GammaWorld
+id: 71617
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0f8c1247-0f9f-4b0c-b721-613a409d2ee8
-date: '2023-04-06T22:58:17.056Z'
 title: Giant Porcupine «Suthorl»
 creature_name_index: Suthorl
 notes: ''
@@ -153,5 +152,6 @@ description_output: ''
 final_output: "Suthorl 'Giant Porcupine' (1): Init -3; atk see description; AC 10;\
   \ HD 1D7 hp 4; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
 players: Suthorl; 'Giant Porcupine';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

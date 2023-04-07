@@ -1,12 +1,11 @@
 ---
-ID: 71481
-layout: GammaWorld
+id: 71481
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f493250e-90c4-4688-9881-e8e85a157d79
-date: '2023-04-06T22:58:17.055Z'
 title: Puff Cactus
 creature_name_index: Puff Cactus
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Puff Cactus; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

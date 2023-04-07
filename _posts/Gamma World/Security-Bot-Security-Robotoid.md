@@ -1,12 +1,11 @@
 ---
-ID: 71533
-layout: GammaWorld
+id: 71533
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 43b1d7ed-3d38-4045-be10-f7754b165bb8
-date: '2023-04-06T22:58:17.055Z'
 title: Security Bot «Security Robotoid»
 creature_name_index: Security Robotoid
 notes: ''
@@ -235,5 +234,6 @@ players: "Security Robotoid; 'Security Bot';Description: This is an upright-walk
   \ entry of persons onto company land and buildings.  To prevent damage to corporate\
   \ property.  To assist employees.Equiptment: 1 x Built in Radio1 x directional spotlight1\
   \ x loudspeaker1 x siren1 x IR Camera1 x Telescope1 x Motion Detector1 x video recorder|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

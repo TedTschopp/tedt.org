@@ -1,12 +1,11 @@
 ---
-ID: 71487
-layout: GammaWorld
+id: 71487
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b42dc188-a48a-491f-96f1-96d987c3c39d
-date: '2023-04-06T22:58:17.055Z'
 title: Brown Runners «Rakkons»
 creature_name_index: Rakkons
 notes: ''
@@ -207,5 +206,6 @@ players: "Rakkons; 'Brown Runners';Description: The bandit-masked rakkons may be
   \ employ them as pets or steeds. Rakkons otherwise enjoy some popularity as pets\
   \ among those who like big, shaggy, inoffensive creatures. Trained rakkons are excellent\
   \ with children.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

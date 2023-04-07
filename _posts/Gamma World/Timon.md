@@ -1,12 +1,11 @@
 ---
-ID: 71654
-layout: GammaWorld
+id: 71654
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 739f2bc1-a2e8-402c-980a-889efde76898
-date: '2023-04-06T22:58:17.056Z'
 title: Timon
 creature_name_index: Timon
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: 'Timon (1): Init -3; atk see description; AC 10; HD 1D7 hp 4; NO MOVEMENT;
   1d20; SV Fort -3, Ref -3, Will -3'
 players: Timon; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

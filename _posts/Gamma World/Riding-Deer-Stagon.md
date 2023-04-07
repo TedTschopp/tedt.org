@@ -1,12 +1,11 @@
 ---
-ID: 71606
-layout: GammaWorld
+id: 71606
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 82090580-0f60-462f-9adc-117b83135ff5
-date: '2023-04-06T22:58:17.056Z'
 title: Riding Deer «Stagon»
 creature_name_index: Stagon
 notes: ''
@@ -338,5 +337,6 @@ players: "Stagon; 'Riding Deer';Description: The stagon is a mutated whitetail d
   \ mark his territory and polish his antlers. To mark areas they regularly pass through,\
   \ bucks make scrapes. Often occurring in patterns known as scrape lines, scrapes\
   \ are areas where a buck has used his front hooves to expose bare earth.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

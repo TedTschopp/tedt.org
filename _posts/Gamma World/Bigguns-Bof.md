@@ -1,12 +1,11 @@
 ---
-ID: 71077
-layout: GammaWorld
+id: 71077
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 085f57d8-06f6-490f-be66-44f822eacd8d
-date: '2023-04-06T22:58:17.053Z'
 title: Bigguns «Bof»
 creature_name_index: Bof
 notes: ''
@@ -199,5 +198,6 @@ players: "Bof; 'Bigguns';Description: Bofs are 2.5 meter tall buffalo who walk o
   \ enough to attract females and start their own herds.  A bof may show loyalty to\
   \ an individual who has saved his life; this will override all thoughts on double\
   \ crossing the person that saved them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

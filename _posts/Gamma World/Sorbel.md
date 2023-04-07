@@ -1,12 +1,11 @@
 ---
-ID: 71591
-layout: GammaWorld
+id: 71591
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0d2dfe82-4216-4073-aae0-5856876f0e92
-date: '2023-04-06T22:58:17.056Z'
 title: Sorbel
 creature_name_index: Sorbel
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Sorbel; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

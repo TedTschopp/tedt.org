@@ -1,12 +1,11 @@
 ---
-ID: 71000
-layout: GammaWorld
+id: 71000
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7f37bf20-77d3-4508-a094-52d374f54404
-date: '2023-04-06T22:58:17.052Z'
 title: Abomination
 creature_name_index: Abomination
 notes: ''
@@ -194,5 +193,6 @@ players: "Abomination; '';Description: The abomination is part plant and part li
   \ affected.  They are affected by anybody else's life leech as individual creatures.\
   \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
   \ needs four limbs to remain mobile, the others will leave and attack on their own.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

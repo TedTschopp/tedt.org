@@ -1,12 +1,11 @@
 ---
-ID: 71631
-layout: GammaWorld
+id: 71631
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0bd5e04e-9292-4828-bcd6-2e0cd219dea5
-date: '2023-04-06T22:58:17.056Z'
 title: Teakettler
 creature_name_index: Teakettler
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Teakettler; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

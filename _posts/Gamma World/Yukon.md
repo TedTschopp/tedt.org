@@ -1,12 +1,11 @@
 ---
-ID: 71709
-layout: GammaWorld
+id: 71709
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: a091953a-5d30-4f12-b145-3a06d7aeb4c2
-date: '2023-04-06T22:58:17.056Z'
 title: Yukon
 creature_name_index: Yukon
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Yukon; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

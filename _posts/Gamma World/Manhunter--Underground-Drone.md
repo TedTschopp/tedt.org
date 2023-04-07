@@ -1,12 +1,11 @@
 ---
-ID: 71388
-layout: GammaWorld
+id: 71388
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 622e03b6-3aa7-486a-841b-bd5cb0ebccdf
-date: '2023-04-06T22:58:17.055Z'
 title: Manhunter - Underground Drone
 creature_name_index: Manhunter - Underground Drone
 notes: ''
@@ -242,5 +241,6 @@ players: "Manhunter - Underground Drone; '';Description: This cyber is also cov-
   \ for characters who are nearly dead. Up to four man-sized beings (500 kilograms)\
   \ may be kept in the chamber.The upper surface of the Manhunter also carries a number\
   \ of special probes, described below.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

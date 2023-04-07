@@ -1,12 +1,11 @@
 ---
-ID: 71593
-layout: GammaWorld
+id: 71593
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 748e41cd-0b4d-494d-93f0-c265a0ba88a0
-date: '2023-04-06T22:58:17.056Z'
 title: Souls'ker
 creature_name_index: Souls'ker
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Souls'ker; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

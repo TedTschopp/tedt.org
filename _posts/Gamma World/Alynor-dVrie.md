@@ -1,12 +1,11 @@
 ---
-ID: 71009
-layout: GammaWorld
+id: 71009
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 8800861b-d6fa-4d1c-9a79-3ed2dd3fd189
-date: '2023-04-06T22:58:17.053Z'
 title: Alynor d'Vrie
 creature_name_index: Alynor d'Vrie
 notes: ''
@@ -152,5 +151,6 @@ description_output: ''
 final_output: "Alynor d'Vrie (1): Init +3; atk see description; AC 10; HD 5D12 hp\
   \ 33; NO MOVEMENT; 1d20; SV Fort +1, Ref +0, Will +0"
 players: Alynor d'Vrie; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

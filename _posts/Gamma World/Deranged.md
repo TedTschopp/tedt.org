@@ -1,12 +1,11 @@
 ---
-ID: 71164
-layout: GammaWorld
+id: 71164
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9fc92e4e-291c-4d92-9a13-e5899f2c4cdf
-date: '2023-04-06T22:58:17.053Z'
 title: Deranged
 creature_name_index: Deranged
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Deranged; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

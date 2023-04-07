@@ -1,12 +1,11 @@
 ---
-ID: 71024
-layout: GammaWorld
+id: 71024
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 318d4d37-54e2-4a30-9f70-0ca45aacfd38
-date: '2023-04-06T22:58:17.053Z'
 title: Dragon Bugs «Arn»
 creature_name_index: Arn
 notes: ''
@@ -180,5 +179,6 @@ players: "Arn; 'Dragon Bugs';Description: Cal then or 'winged rippers' are mutan
   \ or cornered. Society: Arns are found in small swarms of up to a dozen in the wild.\
   \ They're omnivores, but only eat relatively small creatures or carrion. Arns are\
   \ egg-layers, and can only be domesticated while very young.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

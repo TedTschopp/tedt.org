@@ -1,12 +1,11 @@
 ---
-ID: 71424
-layout: GammaWorld
+id: 71424
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 4d32d0b7-4403-47fa-8211-5e84f93f7af4
-date: '2023-04-06T22:58:17.055Z'
 title: Mutated Houseplant
 creature_name_index: Mutated Houseplant
 notes: ''
@@ -191,5 +190,6 @@ players: "Mutated Houseplant; '';Description: Originally this creature was a sma
   \ have been severed, the mutant plant will start flinging explosive seed pods at\
   \ the party. Each pod may be thrown up to 20 meters, exploding on contact for 5d6\
   \ points of damage in a two-meter radius. The plant has only 10 pods.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

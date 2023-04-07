@@ -1,12 +1,11 @@
 ---
-ID: 71110
-layout: GammaWorld
+id: 71110
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5a27854a-9af3-4ede-8a8c-33875b08aac1
-date: '2023-04-06T22:58:17.053Z'
 title: Fast Trotters «Centisteed»
 creature_name_index: Centisteed
 notes: ''
@@ -261,5 +260,6 @@ players: "Centisteed; 'Fast Trotters';Description: The centisteed is a mutant st
   \ One serf clan, the Ministers of Thought, never leaves Gra Rad.  Its memvers believe\
   \ that a serf leader called the Forstar will be born to their caln there, and will\
   \ lead the serfs to create a great new Nation.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

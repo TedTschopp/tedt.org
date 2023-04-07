@@ -1,12 +1,11 @@
 ---
-ID: 71696
-layout: GammaWorld
+id: 71696
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: f6ce11cb-2b28-4f20-9f53-cb8e86d80711
-date: '2023-04-06T22:58:17.056Z'
 title: Green Tanglers «Win Seen or Green Winislean»
 creature_name_index: Win Seen or Green Winislean
 notes: ''
@@ -227,5 +226,6 @@ players: "Green Winislean; 'Green Tanglers';Description: Win Seen are ground cov
   \ serves as a poison antidote. A dose of it swallowed or applied to a poisoned wound\
   \ provides a -2 step bonus on the Constitution feat check. A single plant yields\
   \ ten doses of the antidote.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

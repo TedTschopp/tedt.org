@@ -1,12 +1,11 @@
 ---
-ID: 71023
-layout: GammaWorld
+id: 71023
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cf2bb61c-f138-4548-afb3-6db9b5d77c0f
-date: '2023-04-06T22:58:17.053Z'
 title: Man-o-War «Armada»
 creature_name_index: Armada
 notes: ''
@@ -229,5 +228,6 @@ players: "Armada; 'Man-o-War';Description: No doubt about it, the brilliant hues
   \ balloons from a distance, but this should be done carefully, because the gas inside\
   \ has a tendency to explode, blanketing a 10m area with loose filaments and tentacles\
   \ segments, which usually take a couple days to lose their potency.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

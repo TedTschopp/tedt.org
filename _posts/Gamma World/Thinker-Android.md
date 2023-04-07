@@ -1,12 +1,11 @@
 ---
-ID: 71012
-layout: GammaWorld
+id: 71012
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c9b534ea-3877-4d37-963f-24365d39c38c
-date: '2023-04-06T22:58:17.053Z'
 title: Thinker «Android»
 creature_name_index: Android
 notes: ''
@@ -219,5 +218,6 @@ players: "Android; 'Thinker';Description: Man-made beings with red hued skin and
   \ or computers that dispatched them on their mission if things go wrong.  They see\
   \ Warrior and Worker Androids as tools to accomplish and report back on their missions.Society:\
   \ Androids do not have a society.  They serve whomever created them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

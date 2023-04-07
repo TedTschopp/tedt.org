@@ -1,12 +1,11 @@
 ---
-ID: 71524
-layout: GammaWorld
+id: 71524
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0d93645b-c44a-4367-9807-613d9b02e4f5
-date: '2023-04-06T22:58:17.055Z'
 title: Hags «Sea Crone»
 creature_name_index: Sea Crone
 notes: ''
@@ -172,5 +171,6 @@ players: "Sea Crone; 'Hags';Description: Sea Crones are evil tempered sea dwelli
   \ They sometimes have a pet or pets in their company which they use for various\
   \ purposes. They generally attack using their mutations, but if pressed will use\
   \ their bony claws.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

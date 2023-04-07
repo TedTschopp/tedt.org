@@ -1,12 +1,11 @@
 ---
-ID: 71128
-layout: GammaWorld
+id: 71128
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 995fb651-bfa5-4d89-9a32-df97a47ae1ff
-date: '2023-04-06T22:58:17.053Z'
 title: Communa Larva
 creature_name_index: Communa Larva
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Communa Larva; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

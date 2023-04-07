@@ -1,12 +1,11 @@
 ---
-ID: 71211
-layout: GammaWorld
+id: 71211
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 19231172-355e-4c19-b5f7-70400da79c27
-date: '2023-04-06T22:58:17.054Z'
 title: Man-Fish «Fen»
 creature_name_index: Fen
 notes: ''
@@ -270,5 +269,6 @@ players: "Fen; 'Man-Fish';Description: Intelligent humanoids that have adapted t
   \ most prevalent in coastal areas and near large lakes. They are basically friendly\
   \ and harmless, desiring only to live and let live.  Fens retreat back to the water\
   \ when they are outnumbered by surface creatures.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

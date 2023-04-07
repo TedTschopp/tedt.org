@@ -1,12 +1,11 @@
 ---
-ID: 71691
-layout: GammaWorld
+id: 71691
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: cfde8411-0ec4-4c9a-9902-d5ed2cf75101
-date: '2023-04-06T22:58:17.056Z'
 title: Wessex
 creature_name_index: Wessex
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Wessex; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

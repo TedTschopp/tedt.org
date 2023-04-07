@@ -1,12 +1,11 @@
 ---
-ID: 71564
-layout: GammaWorld
+id: 71564
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 7924db31-8214-4106-98d3-f8fa3954bea8
-date: '2023-04-06T22:58:17.056Z'
 title: Assassin Bug «Sin'tal»
 creature_name_index: Sin'tal
 notes: ''
@@ -196,5 +195,6 @@ players: "Sin'tal; 'Assassin Bug';Description: These insects are giant assassin 
   \ with its claws OR bite, but not both in the same round.Sin'tal hunt in small packs\
   \ in order to bring down large prey. They breed in the fall and the egg masses are\
   \ layed on very large trees in the canopy.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

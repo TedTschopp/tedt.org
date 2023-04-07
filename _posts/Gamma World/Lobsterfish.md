@@ -1,12 +1,11 @@
 ---
-ID: 71366
-layout: GammaWorld
+id: 71366
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 2a92b24b-215e-4861-8651-d8ddaeadf662
-date: '2023-04-06T22:58:17.054Z'
 title: Lobsterfish
 creature_name_index: Lobsterfish
 notes: ''
@@ -166,5 +165,6 @@ players: "Lobsterfish; '';Description: These look like a 20-50 cm long seabass w
   \ 8 spiny legs sticking out of their sides. They are nearly harmless, but can be\
   \ annoying. They sometimes (1 in 4) mindlessly attack anything that moves. On a\
   \ roll of natural 20 they score 1 point of damage. They are rather tasty if cooked.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

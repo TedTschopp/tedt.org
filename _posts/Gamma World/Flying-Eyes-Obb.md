@@ -1,12 +1,11 @@
 ---
-ID: 71451
-layout: GammaWorld
+id: 71451
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ac1ea745-18c8-4857-90a2-b55e2a2ebeba
-date: '2023-04-06T22:58:17.055Z'
 title: Flying Eyes «Obb»
 creature_name_index: Obb
 notes: ''
@@ -217,5 +216,6 @@ players: "Obb; 'Flying Eyes';Description: An obb or \"flying eye,\" looks vaguel
   \ but it's unclear just how intelligent they are. Their minds are entirely alien\
   \ and they don't seem to follow what most creatures would consider logic or reason.\
   \ They're solitary creatures, having no need for social structures of any kind.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

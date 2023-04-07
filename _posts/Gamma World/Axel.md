@@ -1,12 +1,11 @@
 ---
-ID: 71034
-layout: GammaWorld
+id: 71034
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: b6ceca7b-605f-4163-9f1f-a49d9583cc6c
-date: '2023-04-06T22:58:17.053Z'
 title: Axel
 creature_name_index: Axel
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Axel; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

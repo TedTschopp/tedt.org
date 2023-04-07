@@ -1,12 +1,11 @@
 ---
-ID: 71005
-layout: GammaWorld
+id: 71005
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: c055deea-a9f6-4d5f-babf-07685dbc0099
-date: '2023-04-06T22:58:17.053Z'
 title: AI Fragment
 creature_name_index: AI Fragment
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: AI Fragment; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

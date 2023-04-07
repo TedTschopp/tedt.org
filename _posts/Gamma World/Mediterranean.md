@@ -1,12 +1,11 @@
 ---
-ID: 71397
-layout: GammaWorld
+id: 71397
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: db6ca11b-4abc-4e50-b6b7-05252d9a1c6c
-date: '2023-04-06T22:58:17.055Z'
 title: Mediterranean
 creature_name_index: Mediterranean
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Mediterranean; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

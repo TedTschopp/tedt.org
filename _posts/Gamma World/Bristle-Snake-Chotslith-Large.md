@@ -1,12 +1,11 @@
 ---
-ID: 71116
-layout: GammaWorld
+id: 71116
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 08bfb287-5e01-4018-b810-347d1ec19201
-date: '2023-04-06T22:58:17.053Z'
 title: Bristle Snake «Chotslith, Large»
 creature_name_index: Chotslith, Large
 notes: ''
@@ -192,5 +191,6 @@ players: "Chotslith, Large; 'Bristle Snake';Description: The Choslith is a mutat
   \ turn the Choslith will attempt one additional coil per turn up to the maximum.\
   \  Each coil will do its damage individually.  To remove a coil the victim must\
   \ roll a Strength Context.  The Chotslith has a +4 modifier to that roll.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

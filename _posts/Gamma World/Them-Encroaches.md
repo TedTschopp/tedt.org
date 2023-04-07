@@ -1,12 +1,11 @@
 ---
-ID: 71192
-layout: GammaWorld
+id: 71192
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: ca6affea-27c4-477c-8480-a825f3e2d572
-date: '2023-04-06T22:58:17.053Z'
 title: Them «Encroaches»
 creature_name_index: Encroaches
 notes: ''
@@ -272,5 +271,6 @@ players: "Encroaches; 'Them';Description: Encroaches are found wherever food to 
   \ the gear behind. Cities that have had experience with encroaches will ordinarily\
   \ have devised horrible forms of execution specifically for any person or creature\
   \ that infests the town with them.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

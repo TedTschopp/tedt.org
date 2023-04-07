@@ -1,12 +1,11 @@
 ---
-ID: 71489
-layout: GammaWorld
+id: 71489
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 5beff42b-6c93-47c7-a3a3-4d3029b3958b
-date: '2023-04-06T22:58:17.055Z'
 title: Horned Rats «Rakrod»
 creature_name_index: Rakrod
 notes: ''
@@ -192,5 +191,6 @@ players: "Rakrod; 'Horned Rats';Description: Rakrods are mutated cousins of the 
   \ in its victim.   Equiptment: Rakrods are unconcerned with technology or equipment.\
   \  They will scavange for food and nest material, thus shredding material in their\
   \ hunt for these materials.|"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

@@ -1,12 +1,11 @@
 ---
-ID: 71073
-layout: GammaWorld
+id: 71073
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 0ca8ca2d-03e9-44ad-8a3d-b6c9d42dbe12
-date: '2023-04-06T22:58:17.053Z'
 title: Blob
 creature_name_index: Blob
 notes: ''
@@ -150,5 +149,6 @@ normal_text: '#N/A'
 description_output: ''
 final_output: '#N/A'
 players: Blob; '';|
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>

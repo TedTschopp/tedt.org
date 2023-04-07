@@ -1,12 +1,11 @@
 ---
-ID: 71483
-layout: GammaWorld
+id: 71483
+layout: gammaworld
 permalink: /Gamma-World-Bestiary/
 categories:
 - Gamma World
 - Bestiary
 guid: 9cacb0ab-c8a0-42a8-8a38-f3eb81ec9a89
-date: '2023-04-06T22:58:17.055Z'
 title: Moving Barricade «Quanakus»
 creature_name_index: Quanakus
 notes: ''
@@ -197,5 +196,6 @@ players: "Quanakus; 'Moving Barricade';Description: This brilliantly striped ins
   \ up to four passengers and quite a lot of cargo  at one time. It can travel over\
   \ most terrain, including up formidable cliffs, and is too dumb to bolt. It can\
   \ be found in most terrains and is quite dangerous in the wild.   |"
+date: 2023-04-06T03:13:00+00:00
 ---
 </br>
