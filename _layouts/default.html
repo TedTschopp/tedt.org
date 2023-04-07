@@ -310,7 +310,7 @@
           </div>
         </div>
       </div>
-  {% assign sorted_homepage = (site.categories.['home'] | sort: 'order' %}
+  {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
   {% assign count = 0 %}
   {% for post in sorted_homepage %}
       {% assign count = count | plus: 1 %}
