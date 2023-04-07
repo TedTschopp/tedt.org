@@ -1,7 +1,7 @@
 ---
 id: 71554
 layout: gammaworld
-permalink: /Gamma-World-Bestiary/
+permalink: /Gamma-World-Bestiary/:title:output_ext
 categories:
 - Gamma World
 - Bestiary
