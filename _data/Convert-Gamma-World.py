@@ -12,7 +12,7 @@ date_time = datetime.fromtimestamp(datetime.now().timestamp()) # Fix and Merge w
 
 todays_date = date.today()
 
-in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv12.json' # Change me!
+in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv12.json' # Change me to pull directly in from Google Sheets at somepoint!
 
 with open(in_file_path,'r') as in_json_file:
 
