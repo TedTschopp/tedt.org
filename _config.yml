@@ -70,7 +70,8 @@ author:
   instagram_username: tedtschopp
   quora_username: Ted-Tschopp
   indiewebcamp_username: Www.tedt.org
-  mastadon_username: TedT@twit.social
+  mastadon_username: TedT@mastodon.social
+  #mastadon_username: TedT@twit.social
 #  google_username: TedTschopp
 
 
@@ -109,7 +110,8 @@ reddit_username: tedtschopp
 instagram_username: tedtschopp
 quora_username: Ted-Tschopp
 indiewebcamp_username: Www.tedt.org
-mastadon_username: TedT@twit.social
+mastadon_username: TedT@mastodon.social
+#mastadon_username: TedT@twit.social
 
 # Other Sytems to integrate
 dropbox:

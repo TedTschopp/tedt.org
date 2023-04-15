@@ -3,16 +3,26 @@ import sys
 import json
 from ruamel.yaml import YAML
 
-
 from datetime import datetime  
 from datetime import date
-
 
 date_time = datetime.fromtimestamp(datetime.now().timestamp()) # Fix and Merge with next line.
 
 todays_date = date.today()
 
 in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv12.json' # Change me to pull directly in from Google Sheets at somepoint!
+
+a = 1
+b = 2
+c = 3
+
+if a == b:
+  print ("a=b")
+elif b == c:
+  print ("b=c")
+else: 
+  print("whatever dude")
+
 
 with open(in_file_path,'r') as in_json_file:
 
@@ -51,5 +61,4 @@ with open(in_file_path,'r') as in_json_file:
             out_yaml_file.write("- MCC"+"\n")
             out_yaml_file.write("- Mutant Crawl Classics\n")
             out_yaml_file.write("date: "+str(date_time)+"\n")
-#           out_yaml_file.write("date: 2023-04-06T03:13:00+00:00\n") # Change Me!
             out_yaml_file.write("---\n")
