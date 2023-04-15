@@ -44,7 +44,8 @@ authors:
     instagram_username: tedtschopp
     quora_username: Ted-Tschopp
     indiewebcamp_username: Www.tedt.org
-    mastadon_username: TedT@twit.social
+    mastadon_username: TedT@mastodon.social
+    #mastadon_username: TedT@twit.social
 
 author:
   name: Ted Tschopp
@@ -171,9 +172,17 @@ links:
 
   # IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
     
+#    # Mastodon
+#  - Name: Mastodon
+#    URL: https://twit.social
+#    Username: '@TedT'
+#    Icon-Class: fa-brands fa-mastodon
+#    Color: '#595aff'
+#    Text_Color: '#ffffff'
+
     # Mastodon
   - Name: Mastodon
-    URL: https://twit.social
+    URL: https://Mastodon.social
     Username: '@TedT'
     Icon-Class: fa-brands fa-mastodon
     Color: '#595aff'
