@@ -126,7 +126,11 @@
             <ul>
                 {% assign count = 0 %}
                 {% for post in site.posts %}
-                    {% if post.categories contains "Bestiary" or "Draft" or post.categories contains "home" %}
+                    {% if post.categories contains "Bestiary" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "Draft" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "home" %}
                         <!-- Do Nothing -->
                     {% elsif post.layout contains "micropubpost" %}
                         <!-- Do Nothing -->
