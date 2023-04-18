@@ -290,7 +290,17 @@ footer.footer {
 }
 
 #social-links {
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
   text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#teds-fixing {
+  
+
 }
