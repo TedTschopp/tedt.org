@@ -291,9 +291,7 @@ footer.footer {
 
 #social-links {
   height: 100%;
-  border: 1px solid red;
   width: 100%;
-  display: flex;
   text-align: center;
   margin: 0 auto;
   justify-content: center;
@@ -301,6 +299,5 @@ footer.footer {
 }
 
 #teds-fixing {
-  
-
+  display: flex; 
 }
