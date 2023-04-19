@@ -132,6 +132,15 @@
                         <!-- Do Nothing -->
                     {% elsif post.categories contains "home" %}
                         <!-- Do Nothing -->
+                    {% elsif post.categories contains "Swiss Folklore" %}
+                      {% assign count = count | plus: 1 %}
+                      {% if count > 5 %}
+                          {% break %}
+                      {% endif %}
+                      <li>Swiss Folklore
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
+                      </li>
                     {% elsif post.layout contains "micropubpost" %}
                         <!-- Do Nothing -->
                     {% else %}
