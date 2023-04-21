@@ -150,7 +150,7 @@
                         {% endif %}
                       <li>
                         {% for category in post.categories %}
-                          [{{category|first}}] | 
+                          [{{ category }}] | 
                         {% endfor %}
                         <a href="{{ post.url }}">{{ post.title }}</a>
                         <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
