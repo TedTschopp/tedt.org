@@ -19,15 +19,13 @@ image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerla
 image-credits-title: Stein am Rhein – Stenium ad Rhenum
 image-credits-artist: Matthäus Merian (*1593 - †1650)
 categories:
-  - Swiss Folklore
+  - Folklore
   - St. George
   - Odin
   - Dragon
   - Venetian
   - Treasure
   - Men in Black
-tags:
-  - Folklore
 
 ---
 
