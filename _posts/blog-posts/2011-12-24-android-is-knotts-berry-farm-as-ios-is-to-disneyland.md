@@ -13,7 +13,7 @@ permalink: /2011/12/24/android-is-knotts-berry-farm-as-ios-is-to-disneyland/
 image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e1371582793846.jpg
 categories:
   - Computers
-  - iPad
+  - Mobile
   - Web
 ---
 I recently had an opportunity to return to Knott's Berry Farm after many years. I had a wonderful time with the family and due to my AAA membership I was able to get in for around $40. I felt it was money well spent. However on my trip around the part I noticed a couple things that caused me to pause and think.

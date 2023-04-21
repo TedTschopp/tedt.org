@@ -13,7 +13,7 @@ permalink: /2011/06/03/collaboration-lessons-learned-from-tasmania/
 image: /wp-content/uploads/2011/06/800px-tessellated_pavement_sunrise_landscape.jpg
 categories:
   - Collaboration
-  - Enterprise 2.0
+  - Enterprise
 tags:
   - linkedin
 ---
