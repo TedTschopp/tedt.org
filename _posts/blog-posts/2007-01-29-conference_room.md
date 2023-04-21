@@ -11,7 +11,6 @@ layout: post
 guid: 9efa86eb-262d-4e81-b063-244e603a0637
 permalink: /2007/01/29/conference_room/
 categories:
-  - Cool
   - Work
 ---
 At work we are putting together a list of conference room names for our new building.&nbsp; We have buildings that dedicate their names to places in Star Wars.&nbsp; We have other buildings that have names based on countries.&nbsp; Another building has rooms dedicated to places we do business.

@@ -13,7 +13,6 @@ permalink: /2007/01/30/computerized-story-telling/
 categories:
   - Books
   - Computers
-  - Cool
 ---
 I found an article today on [Digg](http://digg.com/software/Forget_1000_monkeys_could_a_PC_write_Shakespeare)&#160;about computers writing stories.&#160; While I do think this is possible, I have yet to hear anyone getting close.&#160; [Music](http://arts.ucsc.edu/faculty/cope/mp3page.htm) has been done, and done so well that it’s causing people in to rethink what creativity means.
 

@@ -12,7 +12,6 @@ guid: 7bf52b51-dc5c-4533-ae4f-e55f850da699
 permalink: /2007/08/15/christmas-in-august/
 categories:
   - Books
-  - Cool
 ---
 It’s August already and it seems that yesterday was January.  Most of my plans for this year have been dashed to pieces to lay neglected on the side of the speeding highway that this last year has turned into.
 

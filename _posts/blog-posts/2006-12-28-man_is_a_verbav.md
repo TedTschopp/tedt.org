@@ -12,8 +12,6 @@ guid: 30a5a540-3245-4c01-b4f2-050f7c759831
 permalink: /2006/12/28/man_is_a_verbav/
 categories:
   - Religion
-tags:
-  - Main Menu
 ---
 Last night I was listening to a radio program that a former pastor of mine is featured on and they brought up the fact that man is a “word-eater.”  I don’t know about the rest of you, but I know that I look forward to reading large books and thinking about the thoughts of others communicated via words.
 

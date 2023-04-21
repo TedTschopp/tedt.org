@@ -11,7 +11,7 @@ layout: post
 guid: 8676f676-eb73-4d6b-977a-b5423ef31059
 permalink: /2007/02/16/martin_luther_on_beer/
 categories:
-  - Food and Drink
+  - Beer
   - Quotes
   - Religion
 ---

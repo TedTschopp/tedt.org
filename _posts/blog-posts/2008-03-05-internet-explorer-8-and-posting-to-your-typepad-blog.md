@@ -13,7 +13,6 @@ permalink: /2008/03/05/internet-explorer-8-and-posting-to-your-typepad-blog/
 categories:
   - Programming
   - Web
-  - Weblogs
 ---
 I downloaded IE8 today and noticed it had a new way to post to Microsoft’s blog by highlighting some text and sending it off to their blogging service.
 
