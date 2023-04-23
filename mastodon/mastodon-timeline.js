@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		hashtag_name: '',
 
 		// Maximum amount of toots to get (default: 20).
-		toots_limit: '5',
+		toots_limit: '3',
 
 		// Hide boosted toots (default: don't hide).
-		hide_reblog: false,
+		hide_reblog: true,
 
 		// Hide replies toots (default: don't hide).
 		hide_replies: false,
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		text_max_lines: '0',
 
 		// Customize the text of the link pointing to the Mastodon page (appears after the last toot).
-		link_see_more: 'See more posts at Mastodon'
+		link_see_more: 'See more of Ted'
 	});
 });
 
