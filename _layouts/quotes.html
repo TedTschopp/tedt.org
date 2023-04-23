@@ -106,22 +106,17 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
-                    <h1 class="p-name">{{ page.title }}</h1>
+                    <h1 class="p-name">{{ page.title }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                    {% if page.author.name %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                    {% if page.author %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</a></p>
                     {% else %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                        <p class="lead">by unknown</p>
                     {% endif %}
-
                     <hr>
-                    
                     {% include publish-and-update-date-time-v2.html %}
-
                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
-
                     <img class="webmention-svg" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
-
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
                     {% for category in categories %}<span class="p-category">
@@ -289,7 +284,7 @@
 
 
                     <!-- Post Content -->
-                    <span class="e-content">{{ content }}</span>
+                    <span class="e-content">{{ author }} in {{ source }}</br> {{ quote }}</span>
 
                     <hr>
                 </article>

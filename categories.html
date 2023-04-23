@@ -31,7 +31,7 @@ redirect_from:
 {% assign categories_list = nil %}
 </ul>
 
-{% for category in site.categories %}
+{% for category in site.categories | sort: categories %}
   <h3 id="{{ category[0] | downcase }}">{{ category[0] | capitalize }}</h3>
   <ul>
     {% assign pages_list = category[1] %}
