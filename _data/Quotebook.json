@@ -1,4 +1,5 @@
-[
+{
+  "BooksV1": [
   {
     "quote": "The highest moment in a man's career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life.",
     "author": "Oscar Wilde",
@@ -9,7 +10,7 @@
   },
   {
     "quote": "It is not our part to master all the tides of the world, but to do what is in us for the succor of those years wherein we are set, uprooting the evil in the fields that we know, so that those who live after may have clean earth to till. What weather they shall have is not ours to rule.",
-    "author": " ",
+    "author": "J.R.R. Tolkien",
     "source": "Return of the King",
     "profileID": "5",
     "tags": "Evil",
@@ -33,7 +34,7 @@
   },
   {
     "quote": "“I wish it need not have happened in my time,” said Frodo.\n“So do I,” said Gandalf, \"and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.”",
-    "author": " ",
+    "author": "J.R.R. Tolkien",
     "source": "The Fellowship Of The Rings",
     "profileID": "5",
     "tags": "Depression",
@@ -97,7 +98,7 @@
   },
   {
     "quote": "It is not the critic who counts;\nnot the man who points out how the strong man stumbles,\nor where the doer of deeds could have done them better.\nThe credit belongs to the man who is actually in the arena,\nwhose face is marred by dust and sweat and blood;\nwho strives valiantly; who errs,\nwho comes short again and again,\nbecause there is no effort without error and shortcoming;\nbut who does actually strive to do the deeds;\nwho knows great enthusiasms,\nthe great devotions;\nwho spends himself in a worthy cause;\nwho at the best knows in the end the triumph of high achievement,\nand who at the worst,\nif he fails,\nat least fails while daring greatly,\nso that his place shall never be with those cold and timid souls who neither know victory nor defeat.",
-    "author": " ",
+    "author": "Theodore Roosevelt",
     "source": "The Man in the Arena",
     "profileID": "5",
     "tags": "",
@@ -113,7 +114,7 @@
   },
   {
     "quote": "What a dreadful, fear-darkened, sorrow-laden world we live in…  It is our duty to keep the Flag of the World flying: but it takes now a sturdier and more sublime patriotism than it did then.  …It is not for us to choose the times into which we are born, but to do what we could to repair them; but the spirit of wickedness in high places is now so powerful and so many headed in its incarnations that there seems nothing more to do than to personally refuse to worship any of the hydra’s heads.",
-    "author": "JRR Tolkien",
+    "author": "J.R.R. Tolkien",
     "source": "Letters",
     "profileID": "4",
     "tags": "Evil,Politics",
@@ -121,7 +122,7 @@
   },
   {
     "quote": "I have claimed that Escape is one of the main functions of fairy-stories, and since I do not disapprove of them, it is plain that I do not accept the tone of scorn or pity with which “Escape” is now so often used: a tone for which the uses of the word outside literary criticism give no warrant at all. In what the misusers are fond of calling Real Life, Escape is evidently as a rule very practical, and may even be heroic. In real life it is difficult to blame it, unless it fails; in criticism it would seem to be the worse the better it succeeds. Evidently we are faced by a misuse of words, and also by a confusion of thought. Why should a man be scorned if, finding himself in prison, he tries to get out and go home? Or if, when he cannot do so, he thinks and talks about other topics than jailers and prison-walls? The world outside has not become less real because the prisoner cannot see it. In using escape in this way the critics have chosen the wrong word, and, what is more, they are confusing, not always by sincere error, the Escape of the Prisoner with the Flight of the Deserter.\n \nJust so a Party-spokesman might have labelled departure from the misery of the Führer’s or any other Reich and even criticism of it as treachery. In the same way these critics, to make confusion worse, and so to bring into contempt their opponents, stick their label of scorn not only on to Desertion, but on to real Escape, and what are often its companions, Disgust, Anger, Condemnation, and Revolt. Not only do they confound the escape of the prisoner with the flight of the deserter; but they would seem to prefer the acquiescence of the “quisling” to the resistance of the patriot. To such thinking you have only to say “the land you loved is doomed” to excuse any treachery, indeed to glorify it.",
-    "author": " ",
+    "author": "J.R.R. Tolkien",
     "source": "On Fairy Tales",
     "profileID": "5",
     "tags": "Escape",
@@ -129,7 +130,7 @@
   },
   {
     "quote": "“A modern man,” said Dr. Cyrus Pym, “must, if he be thoughtful, approach the problem of marriage with some caution. Marriage is a stage — doubtless a suitable stage — in the long advance of mankind towards a goal which we cannot as yet conceive; which we are not, perhaps, as yet fitted even to desire. What, gentlemen, is the ethical position of marriage? Have we outlived it?”\n\n“Outlived it?” broke out Moon; “why, nobody’s ever survived it! Look at all the people married since Adam and Eve — and all as dead as mutton.”\n\n“This is no doubt an inter-pellation joc’lar in its character,” said Dr. Pym frigidly. “I cannot tell what may be Mr. Moon’s matured and ethical view of marriage –”\n\n“I can tell,” said Michael savagely, out of the gloom. “Marriage is a duel to the death, which no man of honour should decline.”\n\n“Michael,” said Arthur Inglewood in a low voice, “you must keep quiet.”",
-    "author": " ",
+    "author": "G.K. Chesterton",
     "source": "Manalive",
     "profileID": "4",
     "tags": "Marriage",
@@ -137,7 +138,7 @@
   },
   {
     "quote": "The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.",
-    "author": "JRR Tolkien",
+    "author": "J.R.R. Tolkien",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -177,7 +178,7 @@
   },
   {
     "quote": "The real test of being in the presence of God is, that you either forget about yourself altogether or see yourself as a small, dirty object.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "Mere Christanity",
     "profileID": "5",
     "tags": "Christianity,God",
@@ -201,7 +202,7 @@
   },
   {
     "quote": "There are no ordinary people. You have never talked to a mere mortal. Nations, cultures, arts, civilizations–these are mortal, and their life is to ours as the life of a gnat. But it is immortals whom we joke with, work with, marry, snub, and exploit–immortal horrors or everlasting splendours. This does not mean that we are to be perpetually solemn. We must play. But our merriment must be of the kind (and it is, in fact, the merriest kind) which exists between people who have, from the outset, taken each other seriously–no flippancy, no superiority, no presumption.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "The Weight Of Glory",
     "profileID": "0",
     "tags": "",
@@ -217,7 +218,7 @@
   },
   {
     "quote": "I live in the Managerial Age, in a world of \"Admin.\" The greatest evil is not now done in those sordid \"dens of crime\" that Dickens loved to paint. It is not done even in concentration camps and labour camps. In those we see its final result. But it is conceived and ordered (moved, seconded, carried, and minuted) in clean, carpeted, warmed and well-lighted offices, by quiet men with white collars and cut fingernails and smooth-shaven cheeks who do not need to raise their voices. Hence, naturally enough, my symbol for Hell is something like the bureaucracy of a police state or the office of a thoroughly nasty business concern.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -225,7 +226,7 @@
   },
   {
     "quote": "Do not let us mistake necessary evils for good.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -233,7 +234,7 @@
   },
   {
     "quote": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive. It would be better to live under robber barons than under omnipotent moral busybodies. The robber baron’s cruelty may sometimes sleep, his cupidity may at some point be satiated; but those who torment us for our own good will torment us without end for they do so with the approval of their own conscience.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "God In the Dock",
     "profileID": "0",
     "tags": "",
@@ -313,7 +314,7 @@
   },
   {
     "quote": "You cannot study Pleasure in the moment of the nuptial embrace, nor repentance while repenting, nor analyze the nature of humour while roaring with laughter.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "God In the Dock",
     "profileID": "0",
     "tags": "",
@@ -321,7 +322,7 @@
   },
   {
     "quote": "Question: Do you feel, then, that modern culture is being de-Christianized?\nLewis: I cannot speak to the political aspects of the question, but I have some definite views about the de-Christianizing of the church. I believe that there are many accommodating preachers, and too many practitioners in the church who are not believers. Jesus Christ did not say, ‘Go into all the world and tell the world that it is quite right.’ The Gospel is something completely different. In fact, it is directly opposed to the world.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "Sherwood Eliot Wirt Interview on CBN",
     "profileID": "0",
     "tags": "",
@@ -329,7 +330,7 @@
   },
   {
     "quote": "The great difficulty is to get modern audiences to realize that you are preaching Christianity soley and simply because you happen to think it true; they always suppose you are preaching it because you like it or think it good for society or something of that sort. Now a clearly maintanied distinction between what the Faith actually says and what you would like it to have said or what you understand or what you personally find helpful or think probable, forces your audience to realize that you are tied to your data just as the scientist is tied by the results of the experiments; that you are not just saying what you like. This immediately helps them realize that what is being discussed is a question about objective fact — not gas about ideals and points of view.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "Mere Christanity",
     "profileID": "0",
     "tags": "",
@@ -337,7 +338,7 @@
   },
   {
     "quote": "I didn’t go to religion to make me happy. I always knew a bottle of Port would do that. If you want a religion to make you feel really comfortable, I certainly don’t recommend Christianity.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "God In the Dock",
     "profileID": "0",
     "tags": "",
@@ -361,7 +362,7 @@
   },
   {
     "quote": "There is no safe investment. To love at all is to be vulnerable. Love anything and your heart will certainly be wrung and possibly be broken. If you want to make sure of keeping it intact, you must give your heart to no-one...   Wrap it carefully around with hobbies and little luxuries; avoid all entanglements; lock it up safe in the casket or coffin of your selfishness. But in that casket-safe, dark, motionless, airless-it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable. The alternative to tragedy, or at least to the risk of tragedy, is damnation. The only place outside heaven where you can be perfectly safe from all the dangers and perturbations of love is hell.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "The Four Loves",
     "profileID": "0",
     "tags": "",
@@ -409,7 +410,7 @@
   },
   {
     "quote": "Children have one kind of silliness, as you know, and grown-ups have another kind.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -433,8 +434,8 @@
   },
   {
     "quote": "The perfect piece of software is very sterile. It’s like a samurai sword hanging in a museum without a swordsman or a battle to use it in.",
-    "author": " ",
-    "source": " ",
+    "author": "Jinsoo An",
+    "source": "Chat Transcript with Jinsoo An",
     "profileID": "0",
     "tags": "Ideas to refine,Process,Technology,Tools",
     "date": "09-06-2014 09:14:07"
@@ -465,8 +466,8 @@
   },
   {
     "quote": "\"I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.\"\n\n\"You pull a face and poke it towards the stage, and we lah-di-dah, we sing and dance and tumble around. And all you see up here, it's not people, you don't see people up here it's all fodder. And the faker the fodder, the more you love it, because fake fodder's the only thing that works any more. Fake fodder is all we can stomach. Actually, not quite all; real pain, real viciousness, that, we can take.\"\n\n\"Yeah, stick a fat man up a pole and we'll laugh ourselves feral, because we've earned the right. We've done cell time and he's slacking, the scum, so ha-ha-ha at him! Because we're so out of our minds with desperation, we don't know any better. All we know is fake fodder and buying shit. That's how we speak to each other, how we express ourselves is buying shit.\"\n\n\"What, I have a dream? The peak of our dreams is a new app for our Dopple, it doesn't exist! It's not even there! We buy shit that's not even there. Show us something real and free and beautiful. You couldn't. Yeah? It'll break us. We're too numb for it. I might as well choke. It's only so much wonder we can bear. That's why when you find any wonder whatsoever; you dole it out in meagre portions.\"\n\n\"And only then until it's augmented, packaged, and plumped through 10,000 pre-assigned filters till it's nothing more than a meaningless series of lights, while we ride day in day out, going where? Powering what? All tiny cells and tiny screens and bigger cells and bigger screens and fuck you!\"\n\n\"Fuck you, that's what it boils down to. It's Fuck you for sitting there and slowly making things worse. Fuck you and your spotlight and your sanctimonious faces. Fuck you all for thinking the one thing I came close to never meant anything. For oozing around it and crushing it into a bone, into a joke. One more ugly joke in a kingdom of millions. Fuck you for happening. Fuck you for me, for us, for everyone. Fuck you!\"",
-    "author": " ",
-    "source": "Black Mirror",
+    "author": "Charlie Brooker and Konnie Huq",
+    "source": "Black Mirror: Fifteen Million Merits",
     "profileID": "0",
     "tags": "",
     "date": "09-03-2014 14:31:52"
@@ -481,7 +482,7 @@
   },
   {
     "quote": "MDM has become table stakes; it is no longer a meaningful point of differentiation. The differentiation for BlackBerry in the future will be our ability to enable secure, productive mobile communications, collaboration and applications.",
-    "author": "BLackberry PR",
+    "author": "Blackberry PR",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -552,7 +553,7 @@
     "date": "09-03-2014 14:23:59"
   },
   {
-    "quote": "Architecture is the unnecessary design elements of a structure that make it livable.",
+    "quote": "Architecture is the unnecessary design elements of a structure that make it livable and sustainable.",
     "author": "Oscar Tschopp",
     "source": " ",
     "profileID": "0",
@@ -577,7 +578,7 @@
   },
   {
     "quote": "Fantasy remains a human right; we make in our measure and in our derivative mode...",
-    "author": "JRR Tolkien",
+    "author": "J.R.R. Tolkien",
     "source": "On Farie Tales",
     "profileID": "0",
     "tags": "",
@@ -601,8 +602,8 @@
   },
   {
     "quote": "If you take a flat map\nAnd move wooden blocks upon it strategically,\nThe thing looks well, the blocks behave as they should.\nThe science of war is moving live men like blocks.\nAnd getting the blocks into place at a fixed moment.\nBut it takes time to mold your men into blocks\nAnd flat maps turn into country where creeks and gullies\nHamper your wooden squares. They stick in the brush,\nThey are tired and rest, they straggle after ripe blackberries,\nAnd you cannot lift them up in your hand and move them.\n--A string of blocks curling smoothly around the left\nOf another string of blocks and crunching it up--\nIt is all so clear in the maps, so clear in the mind,\nBut the orders are slow, the men in the blocks are slow\nTo move, when they start they take too long on the way--\nThe General loses his stars and the block-men die\nIn unstrategic defiance of martial law\nBecause still used to just being men, not block-parts.",
-    "author": " ",
-    "source": " ",
+    "author": "Stephen Vincent Benet",
+    "source": "John Brown's Body",
     "profileID": "5",
     "tags": "Blocks,Management,Strategy,War",
     "date": "09-03-2014 14:16:59"
@@ -625,7 +626,7 @@
   },
   {
     "quote": "We are told that Christ was killed for us, that His death has washed out our sins, and that by dying He has disabled death itself. That is the formula. That is Christianity. That is what has to be believed. Any theories we build up as to how Christ's death did all this are, in my view, quite secondary: mere plans or diagrams to be left alone if they do not help us, and, if they do help us, not to be confused with the thing itself.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": " ",
     "profileID": "0",
     "tags": "",
@@ -633,7 +634,7 @@
   },
   {
     "quote": "How can they (i.e. the gods) meet us face to face till we have faces? The idea was that a human being must become real before it can expect to receive any message from the superhuman; that is, it must be speaking with its own voice (not one of its borrowed voices), expressing its actual desires (not what it imagines that it desires), being for good or ill itself, not any mask, veil, or persona.",
-    "author": "CS Lewis",
+    "author": "C.S. Lewis",
     "source": "a letter to Dorothea Conybeare on Till We Have Faces",
     "profileID": "0",
     "tags": "",
@@ -649,13 +650,11 @@
   },
   {
     "quote": "The sweetest thing in all my life has been the longing — to reach the Mountain, to find the place where all the beauty came from — my country, the place where I ought to have been born. Do you think it all meant nothing, all the longing? The longing for home? For indeed it now feels not like going, but like going back.",
-    "author": " ",
-    "source": " ",
+    "author": "C.S. Lewis",
+    "source": "Till We Have Faces",
     "profileID": "0",
     "tags": "",
     "date": "08-28-2014 06:58:58"
-  },
-  {
-    "quote": ""
   }
 ]
+}
