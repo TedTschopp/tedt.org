@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
 
     <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
@@ -26,9 +24,7 @@
     <!-- News Feed Meta Tags. -->
     {% include feeds.html %}
 
-    <!-- Bootstrap core CSS -->
     <!-- START OF CSS INCLUDE -->
-
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -85,23 +81,17 @@
           href="{{site.siteurl}}/css/Link-Tree.css" 
           type="text/css">
 
+<!-- Mastodon Stuff-->
+    <link rel="stylesheet" href="mastodon/mastodon-timeline.css">
+    <script src='mastodon/mastodon-timeline.js'></script>
+
+
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
-
   </head>
-
   <body>
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include top-of-body.html %}
-
-    <!-- Navigation -->
-    <!--
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
-      </div>
-    </nav> -->
 
     {% include bootstrap4-navigation.html %}
 
@@ -177,7 +167,33 @@
             </ul>
           </div>
         </div>
-        <a name="social"></a>
+
+
+
+
+
+
+
+      <a name="social"></a>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/SocialNetwork.jpg" class="img-responsive img-thumbnail" alt=""></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Ted Tschopp's Social Media Posts</h2>
+          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+
+          <div class="mt-timeline">
+            <div id="mt-body" class="mt-body" role="feed">
+                <div class="loading-spinner"></div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+
+
+<!--        <a name="social"></a>
         <div class="row no-gutters">
           <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/SocialNetwork.jpg" class="img-responsive img-thumbnail" alt=""></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -275,7 +291,6 @@
 
                         {% if this-post.mf-itinerary[0].type[0] contains "h-leg" %}
                             {% for leg in this-post.mf-itinerary %}
-
                                 {% if leg.properties.transit-type contains "air" %}
                                     {% assign post-title = post-title | append: "✈️ " %}
                                 {% elsif leg.properties.transit-type contains "train" %}
@@ -299,10 +314,8 @@
                                 {% else %}
 
                                 {% endif %}
-
                             {% endfor %}
                         {% endif %}
-
 
                         {% if post-content == null or post-content == empty %}
                             {% assign post-content = this-post.content %}
@@ -321,7 +334,7 @@
             </ul> 
           </div>
         </div>
-      </div>
+      </div>-->
   {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
   {% assign count = 0 %}
   {% for post in sorted_homepage %}
@@ -362,7 +375,7 @@
           <div class="col-xl-9 mx-auto">
             <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
             <img src="/img/thumb3.jpg" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-            <h3><span class="p-job-title">Enterprise Technology Architect</h3>
+            <h3><span class="p-job-title">Enterprise Architect</h3>
             <hr class="intro-divider"> 
             <span class="p-adr d-none">
                 <span class="p-locality">{{ site.locality }}</span>,
