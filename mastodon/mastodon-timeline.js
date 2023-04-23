@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		hashtag_name: '',
 
 		// Maximum amount of toots to get (default: 20).
-		toots_limit: '5',
+		toots_limit: '3',
 
 		// Hide boosted toots (default: don't hide).
 		hide_reblog: false,
