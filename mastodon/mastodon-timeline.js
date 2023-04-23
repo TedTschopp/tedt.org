@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		default_theme: 'light',
 
 		// Your Mastodon instance.
-		instance_url: 'https://mastodon.social',
+		instance_url: 'https://twit.social',
 
 		// Choose type of toots to show in the timeline: 'local', 'profile', 'hashtag' (default: local).
 		timeline_type: 'profile',
 
 		// Your user ID on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
-		user_id: '110181534829616990',
+		user_id: '109286944787814808',
 
 		// Your user name on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
 		profile_name: 'tedt',
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		text_max_lines: '0',
 
 		// Customize the text of the link pointing to the Mastodon page (appears after the last toot).
-		link_see_more: 'See more of Ted'
+		link_see_more: 'More on Mastodon'
 	});
 });
 
