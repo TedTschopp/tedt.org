@@ -11,9 +11,11 @@ layout: post
 guid: 8676f676-eb73-4d6b-977a-b5423ef31059
 permalink: /2007/02/16/martin_luther_on_beer/
 categories:
-  - Beer
   - Quotes
   - Religion
+tags:
+  - Beer
+  - Martin Luther
 ---
 A couple weeks ago, I mentioned the following letter of Martin Luther to a friend of mine after drinking some beer that disagreed with us.  Last night we went out for some more beer, and he brought the letter up again.  I told him to check my blog and I would post the text of the letter.  I figured I might as well, cross post this to several of my blogs.
 

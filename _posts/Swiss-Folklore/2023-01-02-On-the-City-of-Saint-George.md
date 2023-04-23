@@ -20,6 +20,7 @@ image-credits-title: Stein am Rhein – Stenium ad Rhenum
 image-credits-artist: Matthäus Merian (*1593 - †1650)
 categories:
   - Folklore
+tags:
   - St. George
   - Odin
   - Dragon

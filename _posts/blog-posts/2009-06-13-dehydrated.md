@@ -12,7 +12,7 @@ guid: https://tedt.org/2009/06/13/dehydrated/
 permalink: /2009/06/13/dehydrated/
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-26-36-pm1.png
 categories:
-  - Fiction
+  - Personal Writing
 ---
 I was asked to put together a short story describing someone in a world not unlike the one presented to us in X-Files or Fringe. This is the first draft after about 60 minutes of work. Perhaps I'll do more in the future. The story is titled Dehydrated.
 

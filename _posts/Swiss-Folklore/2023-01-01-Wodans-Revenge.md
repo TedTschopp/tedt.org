@@ -20,11 +20,9 @@ image-credits-title: Woden's Revenge
 image-credits-artist: Stable Diffusion 2.1
 categories:
   - Folklore
+tags:
   - Odin
   - Rhône
-tags:
-  - Folklore
-
 ---
 
 > <ins>**The Swiss Book of Legends**</ins>

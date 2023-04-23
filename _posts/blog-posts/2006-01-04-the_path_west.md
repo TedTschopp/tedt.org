@@ -11,8 +11,7 @@ layout: post
 guid: c46fe241-f632-4429-9b89-bf70b5ea22df
 permalink: /2006/01/04/the_path_west/
 categories:
-  - Writing
-  - Fiction
+  - Personal Writing
 ---
 
 Slowly slip the sands of time  
