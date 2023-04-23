@@ -1,7 +1,5 @@
 ---
-quote: MDM has become table stakes; it is no longer a meaningful point of differentiation.
-  The differentiation for BlackBerry in the future will be our ability to enable secure,
-  productive mobile communications, collaboration and applications.
+quote: MDM has become table stakes; it is no longer a meaningful point of differentiation. The differentiation for BlackBerry in the future will be our ability to enable secure, productive mobile communications, collaboration and applications.
 author: Blackberry PR
 source: ' '
 profileID: '0'

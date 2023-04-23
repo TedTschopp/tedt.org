@@ -1,6 +1,5 @@
 ---
-quote: Success is a lousy teacher. It seduces smart people into thinking they can’t
-  lose. And it’s an unreliable guide to the future.
+quote: Success is a lousy teacher. It seduces smart people into thinking they can’t lose. And it’s an unreliable guide to the future.
 author: Bill Gates
 source: ' '
 profileID: '0'

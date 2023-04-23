@@ -1,8 +1,7 @@
 ---
-quote: 'The one single way in which we can choose to not get old: by choosing not
-  to  be militant nativists of the era in which we first got laid.'
+quote: 'The one single way in which we can choose to not get old: by choosing not to be militant nativists of the era in which we first got laid.'
 author: William Gibson
-source: ' '
+source: 'Twitter - https://twitter.com/greatdismal/status/453367121754333184?s=61&t=xLITO7YGW5a-jEqio72W9A'
 profileID: '0'
 tags: ''
 date: 09-03-2014 14:12:25

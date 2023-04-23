@@ -54,7 +54,7 @@ quote: "• Anything you buy, you must maintain. A purchase is just the beginnin
   \ dismiss it. Some of\nthe best new things are old things re-imagined.\n• Find the\
   \ minimum amount of technology that will maximize your options.\uFEFF"
 author: Kevin Kelly
-source: ' '
+source: '68 Bits of Unsolicited Advice'
 profileID: '0'
 tags: ''
 date: 09-03-2014 14:30:06

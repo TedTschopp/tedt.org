@@ -20,7 +20,7 @@ quote: "If you can keep your head when all about you  \n    Are losing theirs an
   \ sixty seconds’ worth of distance run,  \nYours is the Earth and everything that’s\
   \ in it,  \n    And—which is more—you’ll be a Man, my son!"
 author: Rudyard Kipling
-source: ' '
+source: 'If'
 profileID: '5'
 tags: ''
 date: 03-12-2018 13:10:40

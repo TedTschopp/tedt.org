@@ -1,5 +1,5 @@
 ---
-quote: Announcing your plans is a good way to hear god laugh.
+quote: Announcing your plans is a good way to hear God laugh.
 author: Al Swearengen
 source: Deadwood 2004
 profileID: '0'

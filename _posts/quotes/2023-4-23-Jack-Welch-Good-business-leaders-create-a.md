@@ -2,7 +2,7 @@
 quote: Good business leaders create a vision, articulate the vision, passionately
   own the vision, and relentlessly drive it to completion.
 author: Jack Welch
-source: ' '
+source: 'Interview with Harvard Business Review - source: 'Interview with Harvard Business Review - https://hbr.org/2015/01/what-makes-a-great-leader'
 profileID: '0'
 tags: ''
 date: 10-10-2014 14:42:48

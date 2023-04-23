@@ -3,7 +3,7 @@ quote: '"I’ve missed more than 9000 shots in my career. I’ve lost almost 300
   26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed
   over and over and over again in my life. And that is why I succeed."'
 author: Michael Jordan
-source: ' '
+source: 'Air Jordan Commercial'
 profileID: '0'
 tags: ''
 date: 10-10-2014 14:42:15

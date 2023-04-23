@@ -1,6 +1,5 @@
 ---
-quote: It is difficult to get a man to understand something, when his salary depends
-  upon his not understanding it!
+quote: It is difficult to get a man to understand something, when his salary depends upon his not understanding it!
 author: Upton Sinclair
 source: 'I, Candidate for Governor: And How I Got Licked'
 profileID: '0'
