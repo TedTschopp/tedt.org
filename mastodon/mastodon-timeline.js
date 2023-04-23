@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		user_id: '109286944787814808',
 
 		// Your user name on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
-		profile_name: 'tedt',
+		profile_name: '@tedt',
 
 		// The name of the hashtag. Leave empty if you didn't choose 'hashtag' as type of timeline.
 		hashtag_name: '',
