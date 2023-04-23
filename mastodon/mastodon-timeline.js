@@ -9,19 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
 		container_body_id: 'mt-body',
 
 		// Preferred color theme: 'light', 'dark' or 'auto' (default: auto).
-		default_theme: 'auto',
+		default_theme: 'light',
 
 		// Your Mastodon instance.
-		instance_url: 'https://mastodon.online',
+		instance_url: 'https://mastodon.social',
 
 		// Choose type of toots to show in the timeline: 'local', 'profile', 'hashtag' (default: local).
-		timeline_type: 'local',
+		timeline_type: 'profile',
 
 		// Your user ID on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
-		user_id: '',
+		user_id: 'tedt',
 
 		// Your user name on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
-		profile_name: '',
+		profile_name: 'tedt',
 
 		// The name of the hashtag. Leave empty if you didn't choose 'hashtag' as type of timeline.
 		hashtag_name: '',
