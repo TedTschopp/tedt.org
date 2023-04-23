@@ -24,7 +24,7 @@ image-credits-artist: Dan Hainsworth
 image-credits-URL: https://www.etsy.com/shop/dthains
 categories:
   - Role Playing Games
-  - DCC
+  - Dungeon Crawl Classics
   - Religion
   - Middle-earth
   - Draft

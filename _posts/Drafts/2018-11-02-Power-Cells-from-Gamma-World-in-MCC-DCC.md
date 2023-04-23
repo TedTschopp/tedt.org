@@ -27,7 +27,7 @@ image-credits-URL: https://artofjoshhaberman.blogspot.com/2012/08/district-9-ali
 categories:
   - Role Playing Games
   - Gamma World
-  - MCC
+  - Mutant Crawl Classics
   - Draft
 draft-status: Alpha
 ---

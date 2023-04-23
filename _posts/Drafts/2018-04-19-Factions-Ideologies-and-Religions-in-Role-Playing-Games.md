@@ -22,6 +22,7 @@ categories:
   - Religion
   - Politics
   - Gamma World
+  - Mutant Crawl Classics
   - Draft
 draft-status: integration
 ---

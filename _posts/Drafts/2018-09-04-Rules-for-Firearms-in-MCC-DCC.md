@@ -27,8 +27,9 @@ image-credits-URL: https://larsson.artstation.com/projects/qOJQn
 categories:
   - Role Playing Games
   - Gamma World
-  - MCC
   - Draft
+  - Mutant Crawl Classics
+  - Dungeon Crawl Classics
 draft-status: Alpha
 ---
 

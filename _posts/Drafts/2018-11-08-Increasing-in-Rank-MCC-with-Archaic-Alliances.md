@@ -23,7 +23,7 @@ image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
 categories:
   - Role Playing Games
   - Gamma World
-  - MCC
+  - Mutant Crawl Classics
   - Draft
 draft-status: Alpha
 ---

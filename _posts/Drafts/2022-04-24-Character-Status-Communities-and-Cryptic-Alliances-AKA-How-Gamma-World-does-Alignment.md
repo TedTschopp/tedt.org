@@ -18,7 +18,7 @@ image-credits: Art from Gamma World 6th Edition
 categories:
   - Role Playing Games
   - Gamma World
-  - MCC
+  - Mutant Crawl Classics
   - Draft
 draft-status: notes
 mathjax: true

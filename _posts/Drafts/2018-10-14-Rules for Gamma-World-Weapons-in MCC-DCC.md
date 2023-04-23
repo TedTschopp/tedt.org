@@ -28,7 +28,8 @@ image-credits-URL: https://www.artstation.com/artwork/lqz25
 categories:
   - Role Playing Games
   - Gamma World
-  - MCC
+  - Mutant Crawl Classics
+  - Dungeon Crawl Classics
   - Draft
 draft-status: Alpha
 ---

@@ -228,7 +228,6 @@ layout: gammaworld
 categories:
 - Gamma World
 - Bestiary
-- MCC
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35.650441
 ---
