@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		timeline_type: 'profile',
 
 		// Your user ID on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
-		user_id: 'tedt',
+		user_id: '110181534829616990',
 
 		// Your user name on Mastodon instance. Leave empty if you didn't choose 'profile' as type of timeline.
 		profile_name: 'tedt',
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		hashtag_name: '',
 
 		// Maximum amount of toots to get (default: 20).
-		toots_limit: '20',
+		toots_limit: '5',
 
 		// Hide boosted toots (default: don't hide).
 		hide_reblog: false,
