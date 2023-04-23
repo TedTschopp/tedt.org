@@ -1,6 +1,6 @@
 ---
 id: 487
-title: Playing it Cool, Playing it Fast!
+title: Playing it Cool, Playing it Fast! Playing it on the Computer
 date: 2006-12-27T23:50:07+00:00
 author:
   name: Ted Tschopp
@@ -11,7 +11,7 @@ layout: post
 guid: 766623be-b111-4258-9a8c-061ece6cadc0
 permalink: /2006/12/27/playing-it-cool-playing-it-fast/
 categories:
-  - Music
+  - Computers
 ---
 So I copied my entire iTunes music library to my iBook today.&#160; I had to leave my podcasts and my audible subscriptions and audio books on the PC as they took up about 20gb.&#160; After everything was transfered I installed [Tangerine](http://www.potionfactory.com/tangerine/)&#160;and pointed it at my iTunes collection.&#160; The program takes a look at each song and figures out the beats per minute and the intensity of each beat.&#160; It will then allow you to put together playlists based on the tempo of the music.&#160; So if you are in a mellow mood you can have it pick all slow songs.&#160; If you are racing around with your head in your hands trying to get everything done, crank the BPM up to above 130.&#160; This application is very cool, and I hope that Apple will fold this functionality into iTunes in the future.&#160; Additionally, I hope someone comes out with a decent version for the PC.&#160; I tried several Windows applicaitons that were like Tangerine, but none of them could compare.
 
