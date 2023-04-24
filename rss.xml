@@ -92,7 +92,15 @@ layout: null
           {% if post-content == null or post-content == empty %}
               {% assign post-content = post.content %}
           {% endif %}
-          {% assign post-content = post-content | strip_html %}
+        {% assign post-content = post-content | strip_html %}
+        {% elsif post.categories contains "Bestiary" %}
+            <!-- Do Nothing -->
+        {% elsif post.categories contains "Draft" %}
+            <!-- Do Nothing -->
+        {% elsif post.categories contains "Quotes" %}
+            <!-- Do Nothing -->
+        {% elsif post.categories contains "home" %}
+            <!-- Do Nothing -->
         {% else %}
           {% if post.title == null or post.title == empty %}
             {% assign post-title = "None" %}
