@@ -18,7 +18,7 @@ date: 2023-04-23 11:44:45.180083
 
 "Yeah, stick a fat man up a pole and we'll laugh ourselves feral, because we've earned the right. We've done cell time and he's slacking, the scum, so ha-ha-ha at him! Because we're so out of our minds with desperation, we don't know any better. All we know is fake fodder and buying shit. That's how we speak to each other, how we express ourselves is buying shit.
 
-"What, I have a dream? The peak of our dreams is a new app for our Dopple, it doesn't exist! It's not even there! We buy shit that's not even there. Show us something real and free and beautiful. You couldn't. Yeah? It'll break us. We're too numb for it. I might as well choke. It's only so much wonder we can bear. That's why when you find any wonder whatsoever; you dole it out in meagre portions.
+"What, I have a dream? The peak of our dreams is a new app for our Dopple, it doesn't exist! It's not even there! We buy shit that's not even there. Show us something real and free and beautiful. You couldn't. Yeah? It'll break us. We're too numb for it. I might as well choke. It's only so much wonder we can bear. That's why when you find any wonder whatsoever; you dole it out in meager portions.
 
 "And only then until it's augmented, packaged, and plumped through 10,000 pre-assigned filters till it's nothing more than a meaningless series of lights, while we ride day in day out, going where? Powering what? All tiny cells and tiny screens and bigger cells and bigger screens and fuck you!
 

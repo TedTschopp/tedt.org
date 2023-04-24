@@ -12,3 +12,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.

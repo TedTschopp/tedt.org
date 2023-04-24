@@ -13,4 +13,5 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+
 Good business leaders create a vision, articulate the vision, passionately own the vision, and relentlessly drive it to completion.
