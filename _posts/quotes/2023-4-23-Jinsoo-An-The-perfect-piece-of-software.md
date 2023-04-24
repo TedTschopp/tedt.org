@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+The perfect piece of software is very sterile. It’s like a samurai sword hanging in a museum without a swordsman or a battle to use it in.

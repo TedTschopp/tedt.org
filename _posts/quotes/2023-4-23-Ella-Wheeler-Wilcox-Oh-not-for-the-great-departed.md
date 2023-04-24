@@ -27,3 +27,90 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+"Oh, not for the great departed
+
+Who formed our country’s laws,
+
+And not for the bravest-hearted
+
+Who died in freedom’s cause;
+
+And not for some living hero,
+
+
+
+To whom all bend the knee,
+
+My muse shall raise her song of praise,
+
+But for the Man to be.
+
+For out of the strife which women
+
+Are passing through today,
+
+A man that is more than human
+
+Shall surely be born, I say;
+
+A man in whose pure spirit
+
+
+
+No dross of self will lurk,
+
+A man who is strong to cope with wrong,
+
+A Man who is proud to work.
+
+A man with hope undaunted,
+
+A man with God-like power,
+
+Shall come when he is wanted,
+
+Shall come at the needed hour.
+
+He shall silence the din and clamor
+
+Of clan disputing clan,
+
+And toil’s long fight with purse-proud might
+
+Shall triumph through this Man.
+
+I know he is coming, coming,
+
+To help, to guide, to save.
+
+Though I hear no martial drumming
+
+And see no flags that wave.
+
+
+
+But the great soul-travail of woman,
+
+And the bold, free thought unfurled,
+
+And heralds that say he is on the way,
+
+The coming Man of the world.
+
+Mourn not for the vanished ages
+
+With their grand, heroic men,
+
+Who dwell in history’s pages
+
+
+
+And live in the poet’s pen.
+
+For the grandest times are before us,
+
+And the world is yet to see
+
+The noblest work of this old earth
+
+In the Men that are to be."

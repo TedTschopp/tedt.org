@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Men are generally idle, and ready to satisfy themselves, and intimidate the  industry of others, by calling that impossible which is only difficult.

@@ -14,3 +14,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other mens lives.

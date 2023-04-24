@@ -12,3 +12,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Thinking is the hardest work there is, which is probably the reason why so few engage in it.

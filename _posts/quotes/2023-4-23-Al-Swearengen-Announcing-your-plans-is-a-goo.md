@@ -12,3 +12,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Announcing your plans is a good way to hear God laugh.

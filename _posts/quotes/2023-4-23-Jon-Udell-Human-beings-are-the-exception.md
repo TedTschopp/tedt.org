@@ -12,3 +12,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Human beings are the exception handlers in all workflows.

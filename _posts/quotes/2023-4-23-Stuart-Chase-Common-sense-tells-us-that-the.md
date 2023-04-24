@@ -14,3 +14,6 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Common sense tells us that the world is flat, that the sun goes around the
+  earth, that heavy bodies always fall faster than light bodies, that boats made of
+  iron will sink.

@@ -12,3 +12,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+It is difficult to get a man to understand something, when his salary depends upon his not understanding it!

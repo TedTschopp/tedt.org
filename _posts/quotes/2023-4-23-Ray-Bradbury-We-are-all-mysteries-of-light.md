@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+We are all mysteries of light and dark. There are no true conservatives, liberals, etc, in the world. Only people.

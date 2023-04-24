@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Our Lord God deals with countries and cities, as I do with an old hedge-stick, when it displeases me; I pluck it up and burn it, and stick another in its stead.

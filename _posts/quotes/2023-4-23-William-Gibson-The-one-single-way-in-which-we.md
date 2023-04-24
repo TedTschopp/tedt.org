@@ -12,3 +12,5 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+
+The one single way in which we can choose to not get old: by choosing not to be militant nativists of the era in which we first got laid.

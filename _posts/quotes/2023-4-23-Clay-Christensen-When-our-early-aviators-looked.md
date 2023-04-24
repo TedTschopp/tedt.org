@@ -15,3 +15,7 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+'When our early aviators looked at the world’s “best practice” fliers—birds—they
+  saw two things almost all these had in common: wings and feathers. So, they strapped
+  on wings and feathers, climbed to the top of cathedral spires, jumped off and flapped
+  hard. It rarely worked out well.'

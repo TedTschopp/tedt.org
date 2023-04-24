@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Governors should be wise, of a courageous spirit, and should know how to rule alone without their counsellors.

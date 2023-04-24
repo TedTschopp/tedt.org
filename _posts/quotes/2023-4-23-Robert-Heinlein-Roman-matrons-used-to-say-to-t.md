@@ -12,3 +12,5 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+
+Roman matrons used to say to their sons: ‘Come back with your shield, or on it.’ Later on, this custom declined. So did Rome."

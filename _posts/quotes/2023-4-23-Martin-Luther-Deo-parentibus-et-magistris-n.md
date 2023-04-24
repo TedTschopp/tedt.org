@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Deo, parentibus et magistris non potest satis gratiae rependi. – To God, to parents, and to teachers we can never render sufficient gratitude and compensation.

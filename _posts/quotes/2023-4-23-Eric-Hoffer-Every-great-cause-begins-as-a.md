@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+ Every great cause begins as a movement, becomes a business, and eventually degenerates into a racket.

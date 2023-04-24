@@ -13,3 +13,4 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
+Architecture is the unnecessary design elements of a structure that make it livable and sustainable.
