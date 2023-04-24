@@ -116,15 +116,13 @@
             <ul>
                 {% assign count = 0 %}
                 {% for post in site.posts %}
-                    {% if post.categories contains "Bestiary" %}
+                    {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                         <!-- Do Nothing -->
-                    {% elsif post.categories contains "Draft" %}
+                    {% elsif post.categories contains "Draft" or post.category == "Draft" %}
                         <!-- Do Nothing -->
-                    {% elsif post.categories contains "Quotes" %}
+                    {% elsif post.categories contains "Quotes" or post.category == "Quotes" or post.layout contains "quotes" %}
                         <!-- Do Nothing -->
-                    {% elsif post.layout contains "quotes" %}
-                        <!-- Do Nothing -->
-                    {% elsif post.categories contains "home" %}
+                    {% elsif post.categories contains "home" or post.category == "home" %}
                         <!-- Do Nothing -->
                     {% elsif post.layout contains "micropubpost" %}
                         <!-- Do Nothing -->
