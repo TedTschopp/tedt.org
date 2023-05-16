@@ -6,6 +6,12 @@ sass:
   sass_dir: _sass
 include: ['_pages']
 
+wlinks:
+  symbol: #
+  check: complete
+  title: Anchor
+
+
 timezone: America/Los_Angeles
 
 collections:
