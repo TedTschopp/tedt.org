@@ -1,5 +1,5 @@
 ---
-id: 124281
+id: 124282
 title: AI User Interfaces and Experiences in 2023
 date: 2023-05-16T08:28:17-08:00 
 author:
@@ -7,8 +7,7 @@ author:
   url: https://tedt.org
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-excerpt: |
-  The original computer output interface was the printer.  You entered a program into the computer, and the computer responded on a printer with the answers.  Overtime this changed to a screen, but the idea of a program that you enter and the computer responds with an answer is still the fundamental idea of one User Interface paradigm. 
+excerpt: The original computer output interface was the printer.  You entered a program into the computer, and the computer responded on a printer with the answers.  Overtime this changed to a screen, but the idea of a program that you enter and the computer responds with an answer is still the fundamental idea of one User Interface paradigm. 
 
 layout: post
 
@@ -29,6 +28,7 @@ categories:
   - OpenAI
   - Microsoft
 ---
+
 Last week was Google IO, and I'm a little disappointed.   Google has been getting their lunch eaten by OpenAI and GPT-3, and I think they are starting to fighting back with new product launches and features are going to start coming very fast and furious.  But a lot of this stuff is coming soon or coming this fall. That's the evidence that Google is behind the eight ball on this.  This also suggests that over the last six months there really was a massive internal shift at Google towards getting this stuff out the door.  The open question is can Google out code Microsoft at this point.
  
 As all this stuff sort of comes out, I think that many vastly under estimated how fundamental certain user interface ideas are.
