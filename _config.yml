@@ -117,8 +117,8 @@ reddit_username: tedtschopp
 instagram_username: tedtschopp
 quora_username: Ted-Tschopp
 indiewebcamp_username: Www.tedt.org
-mastadon_username: TedT@mastodon.social
-#mastadon_username: TedT@twit.social
+#mastadon_username: TedT@mastodon.social
+mastadon_username: TedT@twit.social
 
 # Other Sytems to integrate
 dropbox:
@@ -188,7 +188,7 @@ links:
 
     # Mastodon
   - Name: Mastodon
-    URL: https://Mastodon.social
+    URL: https://twit.social
     Username: '@TedT'
     Icon-Class: fa-brands fa-mastodon
     Color: '#595aff'
@@ -291,24 +291,17 @@ links:
     # Color: '#DD2A7B'
     # Icon-Class: fab fa-instagram
 
-    # CLUBHOUSE
-    # - Name: Clubhouse
-    # URL: https://www.clubhouse.com
-    # Username: '@harsh98trivedi'
-    # Color: '#f1c40f'
-    # Icon-Class: fas fa-hand-paper -mt-0.5
-
     # YOUTUBE
     # - Name: YouTube
     # URL: https://www.youtube.com/channel
-    # Username: UCS3zvA_2r1iGT7MB3NVCGAw
+    # Username: UC4Q8pXroTVyXrIxg2u82pwg
     # Color: '#ff0000'
     # Icon-Class: fab fa-youtube
 
     # TWITCH
     # - Name: Twitch
     # URL: 'https://twitch.tv'
-    # Username: harsh98trivedi
+    # Username: tedtschopp
     # Icon-Class: fab fa-twitch
     # Color: '#9147fe'
     # Text_Color: '#ffffff'

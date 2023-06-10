@@ -35,7 +35,7 @@ layout: null
             {% continue %}  
         {% else %}
           {% assign count = count | plus: 1 %}
-          {% if count > 35 %}
+          {% if count > 15 %}
               {% break %}
           {% endif %}
           {% if post.title == null or post.title == empty %}

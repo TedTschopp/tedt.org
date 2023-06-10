@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		container_body_id: 'mt-body',
 
 		// Preferred color theme: 'light', 'dark' or 'auto' (default: auto).
-		default_theme: 'light',
+		default_theme: 'auto',
 
 		// Your Mastodon instance.
 		instance_url: 'https://twit.social',
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		hide_replies: false,
 
 		// Limit the text content to a maximum number of lines (default: unlimited).
-		text_max_lines: '0',
+		text_max_lines: '5',
 
 		// Customize the text of the link pointing to the Mastodon page (appears after the last toot).
-		link_see_more: 'More on Mastodon'
+		link_see_more: 'More @TedT on Twit.Social'
 	});
 });
 
