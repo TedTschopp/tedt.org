@@ -186,6 +186,15 @@ links:
 #    Color: '#595aff'
 #    Text_Color: '#ffffff'
 
+    # Threads
+  - Name: Threads
+    URL: https://threads.net/
+    Username: '@TedTschopp'
+    Icon-Class: fa-solid fa-at
+    Color: '#000000'
+    Text_Color: '#ffffff'
+
+
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
