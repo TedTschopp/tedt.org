@@ -348,7 +348,7 @@ links:
     Username: TheoTheSilly
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
-    Text_Color: '#3A3A3A'
+    Text_Color: '#FFFFFF'
 
   # Steam
   - Name: Steam
@@ -357,7 +357,6 @@ links:
     Icon-Class: fa-brands fa-steam
     Color: '#66c0f4'
     Text_Color: '#171a21'
-
 
   # YOUTUBE
   - Name: YouTube
@@ -368,7 +367,7 @@ links:
 
   # Foursquare
   - Name: Foursquare
-    URL: foursquare.com 
+    URL: https://foursquare.com
     Username: tedtschopp
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
@@ -376,7 +375,7 @@ links:
 
   # Quora
   - Name: Quora
-    URL: https://www.quora.com/profile/
+    URL: https://www.quora.com/profile
     Username: Ted-Tschopp
     Icon-Class: fa fa-quora
     Color: '#ffffff'
@@ -398,15 +397,15 @@ links:
     Icon-Class: fab fa-snapchat-ghost
 
   # Keybase
-  - Name: Keybaswe
-    URL: https://keybase.io/
+  - Name: Keybase
+    URL: https://keybase.io
     Username: 'tedtschopp'
     Color: '#4866b0'
     Text_Color: '#ffffff'
     Icon-Class: fa-brands fa-keybase
 
   # Indie Web Camp
-  - Name: Indiewebcamp
+  - Name: Indieweb
     URL: https://indieweb.org/User:Www.tedt.org
     Icon-Class: fa-duotone fa-browser
     Color: '#000000'
