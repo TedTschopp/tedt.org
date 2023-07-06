@@ -143,7 +143,7 @@ tumblr: https://www.tumblr.com/blog/tedtschopp                         # Done
 vimeo: //vimeo.com/tedtschop                                           # Done
 windowslive:
 xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
-Steam: //steamcommunity.com/id/theothesilly/
+Steam: //steamcommunity.com/id/theothesilly/                           # Done
 withings:
 yammer:
 gravatar: 
@@ -266,7 +266,7 @@ links:
   # INSTAGRAM
   - Name: Instagram
     URL: https://www.instagram.com
-    Username: Ted Tschopp
+    Username: TedTschopp
     Color: '#DD2A7B'
     Icon-Class: fab fa-instagram
 
@@ -294,7 +294,7 @@ links:
 
   # TUMBLR
   - Name: Tumblr
-    URL: https://www.tumblr.com
+    URL: https://www.tumblr.com/blog/
     Username: tedtschopp
     Color: '#35465c'
     Icon-Class: fab fa-tumblr
@@ -310,11 +310,10 @@ links:
   # STEAM
   - Name: Steam
     URL: https://steamcommunity.com/id
-    Username: 'TedTschopp'
+    Username: 'theothesilly'
     Color: '#66c0f4'
     Text_Color: '#000000'
     Icon-Class: fab fa-steam
-
 
   # TWITTER
   - Name: Twitter
@@ -339,7 +338,7 @@ links:
 
   # Vimeo
   - Name: Vimeo
-    URL: https://vimeo.com/tedtschop
+    URL: https://vimeo.com/
     Username: tedtschop
     Icon-Class: fa fa-vimeo
     Color: '#1ab7ea'
