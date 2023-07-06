@@ -289,10 +289,8 @@
 <style>
     /* The link is a Dave Winer Link */
     .Winerlink {
-    color: rgb(128, 0, 128);
     cursor: auto;
     display: inline;
-    font-size: 10px;
     height: auto;
     line-height: 30px;
     text-decoration: none;
@@ -329,7 +327,7 @@
 
                             // Create the closing anchor tag
                             const closingAnchor = doc.createElement("a");
-                            closingAnchor.href = `#`+firstFiveLetters;
+                            closingAnchor.href = `#`+firstFiveLetters+'&#:~:text='+paragraphText;
                             closingAnchor.textContent = `¶`;
                             closingAnchor.classList.add("Winerlink");
                             paragraph.appendChild(closingAnchor);
