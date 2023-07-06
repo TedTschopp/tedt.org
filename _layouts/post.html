@@ -286,24 +286,23 @@
                         </aside>
                         {% endif %}
 
-<style>
-    /* The link is a Dave Winer Link */
-    .Winerlink {
-    cursor: auto;
-    display: inline;
-    height: auto;
-    line-height: 30px;
-    text-decoration: none;
-    text-decoration-line: none;
-    width: auto;
-    float: right
-    }
-    .WinerAnchor {
-    scroll-margin-top: 100px;
-    }
-</style>
-
-
+                    <style>
+                        /* The link is a Dave Winer Link */
+                        .Winerlink {
+                            cursor: auto;
+                            display: inline;
+                            height: auto;
+                            line-height: 30px;
+                            text-decoration: none;
+                            text-decoration-line: none;
+                            width: auto;
+                            float: right
+                        }
+                        .WinerAnchor {
+                            /* So as to ensure that its not at the top of the page */
+                            scroll-margin-top: 100px;
+                        }
+                    </style>
 
                     <!-- Post Content -->
                     <script>
@@ -327,7 +326,7 @@
 
                             // Create the closing anchor tag
                             const closingAnchor = doc.createElement("a");
-                            closingAnchor.href = `#`+firstFiveLetters+'#:~:text='+paragraphText.trim().split(" ").slice(0, 10).join(" ");
+                            closingAnchor.href = '#:~:text='+paragraphText.trim().split(" ").slice(0, 10).join(" ")+`@#`+firstFiveLetters;
                             closingAnchor.textContent = `¶`;
                             closingAnchor.classList.add("Winerlink");
                             paragraph.appendChild(closingAnchor);
