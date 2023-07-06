@@ -292,9 +292,9 @@
 {% capture newline %}
 {% endcapture %}
 
-                    {% assign content_split_by_paragraph = content | split {{newline}}}
+                    {% assign content_by_p = content | split '{{newline}}' }
 
-                    {% for paragraph in content_split_by_paragraph %}
+                    {% for paragraph in content_by_p %}
                         <span class="e-content hidden">{{ paragraph }}</span>
                     {% endfor %}
 
