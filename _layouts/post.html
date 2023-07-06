@@ -298,8 +298,7 @@
     text-decoration: none;
     text-decoration-line: none;
     width: auto;
-    -webkit-user-drag: auto;
-    -webkit-user-select: text;
+    float: right
     }
 </style>
 
@@ -318,7 +317,10 @@
                             // Put an Anchor Tag at the beginning and end of each paragraph
                             for (var i = 0; i < paragraphs.length; i++) {
                                 var paragraph = paragraphs[i];
+                                var paragraph_innerHTML = paragraph.innerHTML;
+
                                 var firstLetters = getFirstLetters(paragraph.innerText);
+
                                 var anchor_before = document.createElement('a');
                                 anchor_before.name = firstLetters;                            
                                 
@@ -329,11 +331,9 @@
                                 
                                 var span = document.createElement('span');
                                 span.className = 'paragraph'+i;
-    
-                                // paragraph.insertBefore(anchor_after, paragraph.firstChild);
-                                paragraph.insertBefore(anchor_before, paragraph.firstChild);
-                                paragraph.parentNode.insertBefore(anchor_after, paragraph.lastChild);
-
+                                
+                                paragraphs[i] = anchor_before + paragraph_innerHTML + anchor_after;
+                                
                             }
 
                             // Return the modified HTML
