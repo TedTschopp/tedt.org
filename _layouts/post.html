@@ -325,12 +325,12 @@
                                 var anchor_after = document.createElement('a');
                                 anchor_after.href = "#"+firstLetters;
                                 anchor_after.className = "Winerlink";
-                                anchor_after.innerText = "#";                           
+                                anchor_after.innerText = "¶";                           
                                 
                                 var span = document.createElement('span');
                                 span.className = 'paragraph'+i;
     
-                                paragraph.insertBefore(anchor_after, paragraph.firstChild);
+                                // paragraph.insertBefore(anchor_after, paragraph.firstChild);
                                 paragraph.insertBefore(anchor_before, paragraph.firstChild);
                                 paragraph.parentNode.insertBefore(anchor_after, paragraph.lastChild);
 
