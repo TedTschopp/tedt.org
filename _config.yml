@@ -50,8 +50,9 @@ authors:
     instagram_username: tedtschopp
     quora_username: Ted-Tschopp
     indiewebcamp_username: Www.tedt.org
-    mastadon_username: TedT@mastodon.social
-    #mastadon_username: TedT@twit.social
+    #mastadon_username: TedT@mastodon.social
+    mastadon_username: TedT@twit.social
+    threads_username: TedTschopp@twit.social
 
 author:
   name: Ted Tschopp
@@ -77,8 +78,9 @@ author:
   instagram_username: tedtschopp
   quora_username: Ted-Tschopp
   indiewebcamp_username: Www.tedt.org
-  mastadon_username: TedT@mastodon.social
-  #mastadon_username: TedT@twit.social
+  #mastadon_username: TedT@mastodon.social
+  mastadon_username: TedT@twit.social
+  threads_username: TedTschopp@twit.social
 #  google_username: TedTschopp
 
 
@@ -117,8 +119,8 @@ reddit_username: tedtschopp
 instagram_username: tedtschopp
 quora_username: Ted-Tschopp
 indiewebcamp_username: Www.tedt.org
-#mastadon_username: TedT@mastodon.social
 mastadon_username: TedT@twit.social
+threads_username: TedTschopp@twit.social
 
 # Other Sytems to integrate
 dropbox:
@@ -131,17 +133,16 @@ fitbit: //www.fitbit.com/user/242JHZ
 foursquare: //foursquare.com/theothesilly
 flickr: 
 force:
-goodreads: //www.goodreads.com/TedTschopp
-instagram: www.instagram.com/tedtschopp/
-meetup: //www.meetup.com/members/45846/
-runkeeper: //runkeeper.com/user/TedTschopp
-soundcloud: //soundcloud.com/ted-tschopp
-tripit: //www.tripit.com/people/TedTschopp
-twitch: https://www.twitch.tv/theothesilly
-tumblr:
-vimeo: //vimeo.com/tedtschop
+goodreads: //www.goodreads.com/TedTschopp                              # Done
+instagram: www.instagram.com/tedtschopp/                               # Done
+meetup: //www.meetup.com/members/45846/                                # Done
+runkeeper: //runkeeper.com/user/TedTschopp                            
+soundcloud: //soundcloud.com/ted-tschopp                               # Done
+twitch: https://www.twitch.tv/tedtschopp                               # Done
+tumblr: https://www.tumblr.com/blog/tedtschopp                         # Done
+vimeo: //vimeo.com/tedtschop                                           # Done
 windowslive:
-xboxlive:
+xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
 Steam: //steamcommunity.com/id/theothesilly/
 withings:
 yammer:
@@ -188,12 +189,11 @@ links:
 
     # Threads
   - Name: Threads
-    URL: https://threads.net/
+    URL: https://threads.net
     Username: '@TedTschopp'
     Icon-Class: fa-solid fa-at
     Color: '#000000'
     Text_Color: '#ffffff'
-
 
     # Mastodon
   - Name: Mastodon
@@ -255,50 +255,112 @@ links:
     Color: '#FF4500'
     Icon-Class: fab fa-reddit-alien
 
-  #   # DEV.TO
-  # - Name: Dev.to
-  #   URL: 'https://dev.to'
-  #   Username: tedtschopp
-  #   Icon-Class: fab fa-dev
-  #   Color: '#ffffff'
-  #   Text_Color: '#000000'
+  # GOODREADS
+  - Name: Goodreads
+    URL: https://threads.net
+    Username: '@TedTschopp'
+    Icon-Class: fab fa-goodreads
+    Color: '#e9e5cd'
+    Text_Color: '#553b08'
 
-  #  # STEAM
-  #- Name: Steam
-  #  URL: https://steamcommunity.com/id
-  #  Username: 'TedTschopp'
-  #  Color: '#66c0f4'
-  #  Text_Color: '#000000'
-  #  Icon-Class: fab fa-steam
+  # INSTAGRAM
+  - Name: Instagram
+    URL: https://www.instagram.com
+    Username: Ted Tschopp
+    Color: '#DD2A7B'
+    Icon-Class: fab fa-instagram
+
+  # Meetup
+  - Name: Meetup
+    URL: 'https://www.meetup.com/members/45846/'
+    Icon-Class: fa-brands fa-meetup
+    Color: '#ED1C40'
+    Text_Color: '#FFFFFF'
+
+  # SOUNDCLOUD
+  - Name: SoundCloud
+    URL: https://www.soundcloud.com
+    Username: ted-tschopp
+    Color: '#FE5000'
+    Icon-Class: fab fa-soundcloud
+
+  # TWITCH
+  - Name: Twitch
+    URL: 'https://twitch.tv'
+    Username: tedtschopp
+    Icon-Class: fab fa-twitch
+    Color: '#9147fe'
+    Text_Color: '#ffffff'
+
+  # TUMBLR
+  - Name: Tumblr
+    URL: https://www.tumblr.com
+    Username: tedtschopp
+    Color: '#35465c'
+    Icon-Class: fab fa-tumblr
+
+  # DEV.TO
+  - Name: Dev.to
+    URL: 'https://dev.to'
+    Username: tedtschopp
+    Icon-Class: fab fa-dev
+    Color: '#ffffff'
+    Text_Color: '#000000'
+
+  # STEAM
+  - Name: Steam
+    URL: https://steamcommunity.com/id
+    Username: 'TedTschopp'
+    Color: '#66c0f4'
+    Text_Color: '#000000'
+    Icon-Class: fab fa-steam
 
 
-  #   # TWITTER
-  # - Name: Twitter
-  #  URL: https://twitter.com
-  #  Username: TedTschopp
-  #  Color: '#1DA1F2'
-  #  Icon-Class: fab fa-twitter
+  # TWITTER
+  - Name: Twitter
+    URL: https://twitter.com
+    Username: TedTschopp
+    Color: '#1DA1F2'
+    Icon-Class: fab fa-twitter
 
-    # FACEBOOK
-  # - Name: Facebook
-  #  URL: https://www.facebook.com
-  #  Username: ted.tschopp
-  #  Color: '#3b5998'
-  #  Icon-Class: fab fa-facebook
+  # FACEBOOK
+  - Name: Facebook
+    URL: https://www.facebook.com
+    Username: ted.tschopp
+    Color: '#3b5998'
+    Icon-Class: fab fa-facebook
 
-  #  # MESSENGER
-  #- Name: Messenger
-  #  URL: https://m.me
-  #  Username: TedTschopp
-  #  Color: '#006AFF'
-  #  Icon-Class: fab fa-facebook-messenger
+  # MESSENGER
+  - Name: Messenger
+    URL: https://m.me
+    Username: TedTschopp
+    Color: '#006AFF'
+    Icon-Class: fab fa-facebook-messenger
 
-    # INSTAGRAM
-    # - Name: Instagram
-    # URL: https://www.instagram.com
-    # Username: harsh98trivedi
-    # Color: '#DD2A7B'
-    # Icon-Class: fab fa-instagram
+  # Vimeo
+  - Name: Vimeo
+    URL: https://vimeo.com/tedtschop
+    Username: tedtschop
+    Icon-Class: fa fa-vimeo
+    Color: '#1ab7ea'
+    Text_Color: '#ffffff'
+ 
+  # XBOX
+  - Name: xBox
+    URL: https://account.xbox.com/en-us/profile?gamertag=
+    Username: TheoTheSilly
+    Icon-Class: fa-brands fa-xbox
+    Color: '#107C10'
+    Text_Color: '#3A3A3A'
+
+  # Steam
+  - Name: Steam
+    URL: https://steamcommunity.com/id/
+    Username: theothesilly
+    Icon-Class: fa-brands fa-steam
+    Color: '#66c0f4'
+    Text_Color: '#171a21'
+
 
     # YOUTUBE
     # - Name: YouTube
@@ -307,13 +369,7 @@ links:
     # Color: '#ff0000'
     # Icon-Class: fab fa-youtube
 
-    # TWITCH
-    # - Name: Twitch
-    # URL: 'https://twitch.tv'
-    # Username: tedtschopp
-    # Icon-Class: fab fa-twitch
-    # Color: '#9147fe'
-    # Text_Color: '#ffffff'
+
 
   #   # WHATSAPP
   # - Name: WhatsApp
@@ -403,12 +459,7 @@ links:
   #   Color: '#FE2C55'
   #   Icon-Class: fab fa-tiktok
 
-  #   # TUMBLR
-  # - Name: Tumblr
-  #   URL: https://www.tumblr.com
-  #   Username: 
-  #   Color: '#35465c'
-  #   Icon-Class: fab fa-tumblr
+
 
   #  # CUSTOM LINK
   #- Name: Blog
