@@ -327,7 +327,7 @@
 
                             // Create the closing anchor tag
                             const closingAnchor = doc.createElement("a");
-                            closingAnchor.href = `#`+firstFiveLetters+'&#:~:text='+paragraphText;
+                            closingAnchor.href = `#`+firstFiveLetters+'#:~:text='+paragraphText.trim().split(" ").slice(0, 10).join(" ");
                             closingAnchor.textContent = `¶`;
                             closingAnchor.classList.add("Winerlink");
                             paragraph.appendChild(closingAnchor);
