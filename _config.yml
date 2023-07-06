@@ -104,7 +104,7 @@ biography:
 
 
 # Verison
-version: 1.0.0
+version: 1.5.0
 
 email: ted@tschopp.org
 phonenumber: 
@@ -407,7 +407,7 @@ links:
   # Indie Web Camp
   - Name: Indieweb
     URL: https://indieweb.org/User:Www.tedt.org
-    Icon-Class: fa-duotone fa-browser
+    Icon-Class: fa-solid fa-blog
     Color: '#000000'
     Text_Color: '#ffffff'
 
@@ -415,7 +415,7 @@ links:
   - Name: Blog
     URL: https://www.tedt.org
     Icon-Class: fas fa-home fa-lg fa-fw
-    Color: '#ffb142'
+    Color: '#000000'
     Text_Color: '#ffffff'
 
   # WHATSAPP
