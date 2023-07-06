@@ -289,12 +289,20 @@
 
 
                     <!-- Post Content -->
+                    <span class="e-content hidden">
 {% capture newline %}
-{% endcapture %}
+{% endcapture %}{{newline}}t
+{{newline}}e
+{{newline}}d
+{{newline}}t
+{{newline}}s
+{{newline}}c
+{{newline}}h
+{{newline}}o
+{{newline}}p</span>
+                    {% assign paragraphs = content | split '{{newline}}' }
 
-                    {% assign content_by_p = content | split '{{newline}}' }
-
-                    {% for paragraph in content_by_p %}
+                    {% for paragraph in paragraphs %}
                         <span class="e-content hidden">{{ paragraph }}</span>
                     {% endfor %}
 
