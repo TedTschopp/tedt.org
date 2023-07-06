@@ -289,20 +289,39 @@
 
 
                     <!-- Post Content -->
-                    <span class="e-content hidden">
-{% capture newline %}
-{% endcapture %}{{newline}}t
-{{newline}}e
-{{newline}}d
-{{newline}}t
-{{newline}}s
-{{newline}}c
-{{newline}}h
-{{newline}}o
-{{newline}}p</span>
+                    <script>
+                        function wrapParagraphsWithSpan(html) {
+                        // Create a temporary container element
+                        var container = document.createElement('div');
+                        container.innerHTML = html;
+
+                        // Get all the paragraph elements
+                        var paragraphs = container.getElementsByTagName('p');
+
+                        // Wrap each paragraph with a span
+                        for (var i = 0; i < paragraphs.length; i++) {
+                            var paragraph = paragraphs[i];
+                            var span = document.createElement('span');
+                            span.className = 'paragraph'+i;
+                            span.innerHTML = paragraph.innerHTML;
+                            paragraph.innerHTML = '';
+                            paragraph.appendChild(span);
+                        }
+
+                        // Return the modified HTML
+                        return container.innerHTML;
+                        }
+                    </script>
+
+                    <span class="e-content" id="main_content">{{ content }}</span>
+
+                    <script>
+                        var main_content = document.getElementById('main_content');
+                        main_content.innerHTML = wrapParagraphsWithSpan(main_content.innerHTML);
+                    </script>
 
 
-                    <span class="e-content">{{ content }}</span>
+
 
                     <hr>
                 </article>
