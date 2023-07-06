@@ -286,6 +286,23 @@
                         </aside>
                         {% endif %}
 
+<style>
+    /* The link is a Dave Winer Link */
+    Winerlink {
+    color: rgb(128, 0, 128);
+    cursor: auto;
+    display: inline;
+    font-size: 10px;
+    height: auto;
+    line-height: 30px;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: auto;
+    -webkit-user-drag: auto;
+    -webkit-user-select: text;
+    }
+</style>
+
 
 
                     <!-- Post Content -->
@@ -301,16 +318,34 @@
                         // Wrap each paragraph with a span
                         for (var i = 0; i < paragraphs.length; i++) {
                             var paragraph = paragraphs[i];
+                            var firstLetters = getFirstLetters(paragraph.innerText);
+                            var anchor_before = document.createElement('a');
+                            anchor_before.name = firstLetters;                            
+                            
+                            var anchor_after = document.createElement('a');
+                            anchor_after.href = "#"+firstLetters;
+                            anchor_after.className = "Winerlink";
+                            anchor_after.innerText = "#";                           
+                            
                             var span = document.createElement('span');
                             span.className = 'paragraph'+i;
-                            span.innerHTML = paragraph.innerHTML;
-                            paragraph.innerHTML = '';
-                            paragraph.appendChild(span);
+ 
+                            paragraph.insertBefore(anchor_href, paragraph.firstChild);
+                            paragraph.parentNode.insertBefore(anchorAfter, paragraph.nextSibling);
+
                         }
 
                         // Return the modified HTML
                         return container.innerHTML;
                         }
+                        function getFirstLetters(text) {
+                            var words = text.split(' ');
+                            var firstLetters = words.slice(0, 5).map(function(word) {
+                                return word.charAt(0);
+                            });
+                            return firstLetters.join('');
+                        }
+
                     </script>
 
                     <span class="e-content" id="main_content">{{ content }}</span>
