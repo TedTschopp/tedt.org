@@ -294,7 +294,7 @@ links:
 
   # TUMBLR
   - Name: Tumblr
-    URL: https://www.tumblr.com/blog/
+    URL: https://www.tumblr.com/blog
     Username: tedtschopp
     Color: '#35465c'
     Icon-Class: fab fa-tumblr
