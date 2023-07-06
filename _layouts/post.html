@@ -330,8 +330,9 @@
                                 var span = document.createElement('span');
                                 span.className = 'paragraph'+i;
     
+                                paragraph.insertBefore(anchor_after, paragraph.firstChild);
                                 paragraph.insertBefore(anchor_before, paragraph.firstChild);
-                                paragraph.parentNode.insertBefore(anchor_after, paragraph.nextSibling);
+                                paragraph.parentNode.insertBefore(anchor_after, paragraph.lastChild);
 
                             }
 
