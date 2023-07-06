@@ -306,45 +306,27 @@
 
                     <!-- Post Content -->
                     <script>
-                        function wrapParagraphsWithSpan(html) {
-                            // Create a temporary container element
-                            var container = document.createElement('div');
-                            container.innerHTML = html;
+                        function addAnchorTagsToParagraphs(html) {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const paragraphs = doc.getElementsByTagName('p');
 
-                            // Get all the paragraph elements
-                            var paragraphs = container.getElementsByTagName('p');
+                        for (const element of paragraphs) {
+                            const paragraph = element;
+                            const text = paragraph.textContent.trim();
+                            const words = text.split(' ');
 
-                            // Put an Anchor Tag at the beginning and end of each paragraph
-                            for (var i = 0; i < paragraphs.length; i++) {
-                                var paragraph = paragraphs[i];
-                                var paragraph_innerHTML = paragraph.innerHTML;
-
-                                var firstLetters = getFirstLetters(paragraph.innerText);
-
-                                var anchor_before = document.createElement('a');
-                                anchor_before.name = firstLetters;                            
-                                
-                                var anchor_after = document.createElement('a');
-                                anchor_after.href = "#"+firstLetters;
-                                anchor_after.className = "Winerlink";
-                                anchor_after.innerText = "¶";                           
-                                
-                                var span = document.createElement('span');
-                                span.className = 'paragraph'+i;
-                                
-                                paragraphs[i] = anchor_before + paragraph_innerHTML + anchor_after;
-                                
+                            if (words.length >= 5) {
+                            const firstFiveWords = words.slice(0, 5).join(' ');
+                            const anchorName = firstFiveWords.charAt(0).toLowerCase();
+                            const anchor = document.createElement('a');
+                            anchor.name = anchorName;
+                            paragraph.insertAdjacentElement('afterbegin', anchor);
+                            paragraph.insertAdjacentHTML('beforeend', `<a class='Winerlink" href="#${anchorName}"></a>`);
                             }
-
-                            // Return the modified HTML
-                            return container.innerHTML;
                         }
-                        function getFirstLetters(text) {
-                            var words = text.split(' ');
-                            var firstLetters = words.slice(0, 5).map(function(word) {
-                                return word.charAt(0);
-                            });
-                            return firstLetters.join('');
+
+                        return doc.documentElement.outerHTML;
                         }
 
                     </script>
@@ -353,7 +335,7 @@
 
                     <script>
                         var main_content = document.getElementById('main_content');
-                        main_content.innerHTML = wrapParagraphsWithSpan(main_content.innerHTML);
+                        main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
                     </script>
 
 
