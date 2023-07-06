@@ -288,7 +288,7 @@
 
 <style>
     /* The link is a Dave Winer Link */
-    Winerlink {
+    .Winerlink {
     color: rgb(128, 0, 128);
     cursor: auto;
     display: inline;
@@ -299,6 +299,9 @@
     text-decoration-line: none;
     width: auto;
     float: right
+    }
+    .WinerAnchor {
+    scroll-margin-top: 100px;
     }
 </style>
 
@@ -319,6 +322,8 @@
 
                             // Create the opening anchor tag
                             const openingAnchor = doc.createElement("a");
+                            openingAnchor.classList.add("WinerAnchor");
+                            openingAnchor.id = firstFiveLetters;
                             openingAnchor.name = firstFiveLetters;
                             paragraph.insertBefore(openingAnchor, paragraph.firstChild);
 
