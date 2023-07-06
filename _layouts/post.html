@@ -308,35 +308,35 @@
                     <!-- Post Content -->
                     <script>
                         function wrapParagraphsWithSpan(html) {
-                        // Create a temporary container element
-                        var container = document.createElement('div');
-                        container.innerHTML = html;
+                            // Create a temporary container element
+                            var container = document.createElement('div');
+                            container.innerHTML = html;
 
-                        // Get all the paragraph elements
-                        var paragraphs = container.getElementsByTagName('p');
+                            // Get all the paragraph elements
+                            var paragraphs = container.getElementsByTagName('p');
 
-                        // Wrap each paragraph with a span
-                        for (var i = 0; i < paragraphs.length; i++) {
-                            var paragraph = paragraphs[i];
-                            var firstLetters = getFirstLetters(paragraph.innerText);
-                            var anchor_before = document.createElement('a');
-                            anchor_before.name = firstLetters;                            
-                            
-                            var anchor_after = document.createElement('a');
-                            anchor_after.href = "#"+firstLetters;
-                            anchor_after.className = "Winerlink";
-                            anchor_after.innerText = "#";                           
-                            
-                            var span = document.createElement('span');
-                            span.className = 'paragraph'+i;
- 
-                            paragraph.insertBefore(anchor_href, paragraph.firstChild);
-                            paragraph.parentNode.insertBefore(anchorAfter, paragraph.nextSibling);
+                            // Put an Anchor Tag at the beginning and end of each paragraph
+                            for (var i = 0; i < paragraphs.length; i++) {
+                                var paragraph = paragraphs[i];
+                                var firstLetters = getFirstLetters(paragraph.innerText);
+                                var anchor_before = document.createElement('a');
+                                anchor_before.name = firstLetters;                            
+                                
+                                var anchor_after = document.createElement('a');
+                                anchor_after.href = "#"+firstLetters;
+                                anchor_after.className = "Winerlink";
+                                anchor_after.innerText = "#";                           
+                                
+                                var span = document.createElement('span');
+                                span.className = 'paragraph'+i;
+    
+                                paragraph.insertBefore(anchor_before, paragraph.firstChild);
+                                paragraph.parentNode.insertBefore(anchor_after, paragraph.nextSibling);
 
-                        }
+                            }
 
-                        // Return the modified HTML
-                        return container.innerHTML;
+                            // Return the modified HTML
+                            return container.innerHTML;
                         }
                         function getFirstLetters(text) {
                             var words = text.split(' ');
