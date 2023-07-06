@@ -289,11 +289,11 @@
 
 
                     <!-- Post Content -->
-                    {% assign content_split_by_paragraph = content | split "<p>"}
+                    {% assign content_split_by_paragraph = content+"<p></p>" | split "<p>"}
 
-                        {% for paragraph in content_split_by_paragraph %}
-                            <span class="e-content hidden">{{ paragraph }}</span>
-                        {% endfor %}
+                    {% for paragraph in content_split_by_paragraph %}
+                        <span class="e-content hidden">{{ paragraph }}</span>
+                    {% endfor %}
 
                     <span class="e-content">{{ content }}</span>
 
