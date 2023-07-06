@@ -108,45 +108,43 @@ version: 1.0.0
 
 email: ted@tschopp.org
 phonenumber: 
-keybaseio_username: tedtschopp
-twitter_username: TedTschopp
-github_username: TedTschopp
-linkedin_username: tedtschopp
-facebook_username: ted.tschopp
-youtube_username: TedTschopp
-pinterest_username: TedTschopp
-reddit_username: tedtschopp
-instagram_username: tedtschopp
-quora_username: Ted-Tschopp
-indiewebcamp_username: Www.tedt.org
-mastadon_username: TedT@twit.social
-threads_username: TedTschopp@twit.social
-
-# Other Sytems to integrate
-dropbox:
-evernote:
-
-rabbitmq: 
-angellist: tedtschopp
-
-fitbit: //www.fitbit.com/user/242JHZ
-foursquare: //foursquare.com/theothesilly
-flickr: 
-force:
+indiewebcamp_username: Www.tedt.org                                    # Done
+github_username: TedTschopp                                            # Done
+quora_username: Ted-Tschopp                                            # Done
+pinterest_username: TedTschopp                                         # Done
+youtube_username: TedTschopp                                           # done
+linkedin_username: tedtschopp                                          # Done
+facebook_username: ted.tschopp                                         # Done
+reddit_username: tedtschopp                                            # Done
+twitter_username: TedTschopp                                           # Done
+threads_username: TedTschopp@threads.net                               # Done
+mastadon_username: TedT@twit.social                                    # Done
+instagram_username: tedtschopp                                         # Done
+foursquare: //foursquare.com/tedtschopp                                # Done
 goodreads: //www.goodreads.com/TedTschopp                              # Done
 instagram: www.instagram.com/tedtschopp/                               # Done
 meetup: //www.meetup.com/members/45846/                                # Done
-runkeeper: //runkeeper.com/user/TedTschopp                            
 soundcloud: //soundcloud.com/ted-tschopp                               # Done
 twitch: https://www.twitch.tv/tedtschopp                               # Done
 tumblr: https://www.tumblr.com/blog/tedtschopp                         # Done
 vimeo: //vimeo.com/tedtschop                                           # Done
-windowslive:
 xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
 Steam: //steamcommunity.com/id/theothesilly/                           # Done
+keybaseio_username: tedtschopp                                         # Done  
+
+
+fitbit: //www.fitbit.com/user/242JHZ
+runkeeper: //runkeeper.com/user/TedTschopp                            
+angellist: tedtschopp
+dropbox:
+evernote:
+flickr: 
+force:
+windowslive:
 withings:
 yammer:
 gravatar: 
+rabbitmq: 
 # google_username: TedTschopp
 
 # The Logo of the site
@@ -361,21 +359,72 @@ links:
     Text_Color: '#171a21'
 
 
-    # YOUTUBE
-    # - Name: YouTube
-    # URL: https://www.youtube.com/channel
-    # Username: UC4Q8pXroTVyXrIxg2u82pwg
-    # Color: '#ff0000'
-    # Icon-Class: fab fa-youtube
+  # YOUTUBE
+  - Name: YouTube
+    URL: https://www.youtube.com/channel
+    Username: UC4Q8pXroTVyXrIxg2u82pwg
+    Color: '#ff0000'
+    Icon-Class: fab fa-youtube
 
+  # Foursquare
+  - Name: Foursquare
+    URL: foursquare.com 
+    Username: tedtschopp
+    Icon-Class: fab fa-foursquare
+    Color: '#0072b1'
+    Text_Color: '#eeebac'
 
+  # Quora
+  - Name: Quora
+    URL: https://www.quora.com/profile/
+    Username: Ted-Tschopp
+    Icon-Class: fa fa-quora
+    Color: '#ffffff'
+    Text_Color: '#B92B27'
 
-  #   # WHATSAPP
-  # - Name: WhatsApp
-  #   URL: https://wa.me
-  #   Username: '+6262553757'
-  #   Color: '#25d366'
-  #   Icon-Class: fab fa-whatsapp
+  # PINTEREST
+  - Name: Pinterest
+    URL: https://pinterest.com
+    Username: 'tedtschopp'
+    Color: '#E60023'
+    Icon-Class: fab fa-pinterest
+
+  # SNAPCHAT
+  - Name: Snapchat
+    URL: https://www.snapchat.com/add
+    Username: 'TedTschopp'
+    Color: '#FFFC00'
+    Text_Color: '#000000'
+    Icon-Class: fab fa-snapchat-ghost
+
+  # Keybase
+  - Name: Keybaswe
+    URL: https://keybase.io/
+    Username: 'tedtschopp'
+    Color: '#4866b0'
+    Text_Color: '#ffffff'
+    Icon-Class: fa-brands fa-keybase
+
+  # Indie Web Camp
+  - Name: Indiewebcamp
+    URL: https://indieweb.org/User:Www.tedt.org
+    Icon-Class: fa-duotone fa-browser
+    Color: '#000000'
+    Text_Color: '#ffffff'
+
+  # Homepage
+  - Name: Blog
+    URL: https://www.tedt.org
+    Icon-Class: fas fa-home fa-lg fa-fw
+    Color: '#ffb142'
+    Text_Color: '#ffffff'
+
+  # WHATSAPP
+  - Name: WhatsApp
+    URL: https://wa.me
+    Username: '+6262553757'
+    Color: '#25d366'
+    Icon-Class: fab fa-whatsapp
 
   #  # TELEGRAM
   #- Name: Telegram
@@ -384,13 +433,6 @@ links:
   #  Color: '#0088cc'
   #  Icon-Class: fab fa-telegram-plane
 
-  #  # SNAPCHAT
-  #- Name: Snapchat
-  #  URL: https://www.snapchat.com/add
-  #  Username: 'TedTschopp'
-  #  Color: '#FFFC00'
-  #  Text_Color: '#000000'
-  #  Icon-Class: fab fa-snapchat-ghost
 
   #   # DISCORD
   # - Name: Discord
@@ -399,13 +441,6 @@ links:
   #   Icon-Class: fab fa-discord
   #   Color: '#5865F2'
   #   Text_Color: '#ffffff'
-
-  #  # PINTEREST
-  #- Name: Pinterest
-  #  URL: https://pinterest.com
-  #  Username: 'harsh98trivedi'
-  #  Color: '#E60023'
-  #  Icon-Class: fab fa-pinterest
 
   #  # BEHANCE
   #- Name: Behance
