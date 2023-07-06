@@ -32,10 +32,6 @@ What happens when, after several years of working (and avoiding the serpent), th
 
 > Then the angel<span class="footnote"><font color="#666666">&#160;</font></span>showed me the river of the water of life, bright as crystal, flowing from the throne of God and of the Lamb through the middle of the street of the city; also, on either side of the river, the tree of life<span class="footnote"><font color="#666666">&#160;</font></span>with its twelve kinds of fruit, yielding its fruit each month. The leaves of the tree were for the healing of the nations. No longer will there be anything accursed…
 
-<p>
-  Our final look at the Garden is here.&#160; We see a city has sprung up around the tree of life, on either side of the river, and that the fruit from the tree is bearing fruit, and that this fruit is healing and removing the curse.&#160;
-</p>
+Our final look at the Garden is here.&#160; We see a city has sprung up around the tree of life, on either side of the river, and that the fruit from the tree is bearing fruit, and that this fruit is healing and removing the curse.&#160;
 
-<p>
-  So, the effects of the fall and it’s curse are only temporary.&#160; But my question still stands?&#160; What is the limit of the Garden?&#160; How far will it extend?&#160; Just to the edge of the city which has grown up around the banks?&#160; How about to the edge of the state?&#160; Will it be only to those of a given country, or just to those individuals of a given race?&#160; Will you be the one who plants the first tree on the moon?&#160; Are the stars really that far away when you have forever?&#160; Perhaps they are in need of a couple gardeners.
-</p>
+So, the effects of the fall and it’s curse are only temporary.&#160; But my question still stands?&#160; What is the limit of the Garden?&#160; How far will it extend?&#160; Just to the edge of the city which has grown up around the banks?&#160; How about to the edge of the state?&#160; Will it be only to those of a given country, or just to those individuals of a given race?&#160; Will you be the one who plants the first tree on the moon?&#160; Are the stars really that far away when you have forever?&#160; Perhaps they are in need of a couple gardeners.
