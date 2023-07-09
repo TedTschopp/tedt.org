@@ -1,10 +1,5 @@
 ---
-quote: Information wants to be free. Information also wants to be expensive. Information
-  wants to be free because it has become so cheap to distribute, copy, and recombine
-  — too cheap to meter. It wants to be expensive because it can be immeasurably valuable
-  to the recipient. That tension will not go away. It leads to endless wrenching debate
-  about price, copyright, ‘intellectual property’, the moral rightness of casual distribution,
-  because each round of new devices makes the tension worse, not better.
+quote: Information wants to be free. Information also wants to be expensive.
 author: Stewart Brand
 source: '1984 at the first Hackers’ Conference - Printed in May 1985 Whole Earth Review'
 profileID: '0'
