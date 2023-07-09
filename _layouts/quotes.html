@@ -106,7 +106,11 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
-                    <h1 class="p-name">{{ page.title }}...</h1>
+                    {% assign words = page.content | split: ' ' %}
+                    {% assign first_7_words = words | slice: 0, 7 %}
+                    {{ first_7_words | join: ' ' }}
+
+                    <h1 class="p-name">{{ first_7_words }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
                         <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</a></p>
@@ -115,8 +119,6 @@
                     {% endif %}
                     <hr>
                     {% include publish-and-update-date-time-v2.html %}
-                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
-                    <img class="webmention-svg" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
                     {% for category in categories %}<span class="p-category">
@@ -134,8 +136,6 @@
                             {% assign this_is_a_draft = true %}
                         {% endif %}</span>
                     {% endfor %}</br>
-
-                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
 
                     <hr>
 
@@ -161,131 +161,85 @@
                         {% endif %}
                       </figcaption>
                     </figure>
-                    {% endif %}
-
                     <hr>
-
-                    <!-- In the event of a draft include a progress bar -->
-                    {% assign draftstatus = page.draft-status %}
-                    {% if this_is_a_draft == true %}
-                        <aside class="well">
-                            {% if draftstatus == "notes" or draftstatus == "" %}
-                                <strong>Notes:</strong>
-                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
-                            {% elsif draftstatus == "unit" %}
-                                <strong>Unit Testing:</strong>
-                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
-                            {% elsif draftstatus == "integration" %}
-                                <strong>Integration Testing:</strong>
-                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
-                            {% elsif draftstatus == "component" %}
-                                <strong>Component Testing:</strong>
-                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
-                            {% elsif draftstatus == "system" %}
-                                <strong>System Testing:</strong>
-                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
-                            {% elsif draftstatus == "alpha" %}
-                                <strong>Alpha Testing:</strong>
-                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
-                            {% elsif draftstatus == "beta" %}
-                                <strong>Beta Testing:</strong>
-                                <p>This project is complete and it has had feedback from the public. </p>
-                            {% elsif draftstatus == "pre-release" %}
-                                <strong>Pre-Release:</strong>
-                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
-                            {% endif %}
-                            <div class="progress-clear">
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "notes" or draftstatus == "" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "unit" or draftstatus == "" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "integration" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "component" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "system" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "alpha" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "beta" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "pre-release" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
-                                    {% endif %}
-                                </div>
-                            </div>                            
-                            <div class="progress">
-                                <div class="progress-bar notes" role="progressbar" style="width:12.5%">
-                                    Notes
-                                </div>
-                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
-                                    Unit
-                                </div>
-                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
-                                    Int.
-                                </div>
-                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
-                                    Comp.
-                                </div>
-                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
-                                    System
-                                </div>
-                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
-                                    Alpha
-                                </div>
-                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
-                                    Beta
-                                </div>
-                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
-                                    Pre.
-                                </div>
-                            </div>
-                        </aside>
-                        {% endif %}
-
+                    {% endif %}
 
 
                     <!-- Post Content -->
-                    <span class="e-content">{{ page.author }} in {{ page.source }}</br> {{ page.content }}</span>
+                    <span class="e-content">
+                        <h2>{{ page.author }} in {{ page.source }}</h2> 
 
+                        <style>
+                            /* The link is a Dave Winer Link */
+                            .Winerlink {
+                                cursor: pointer;
+                                display: inline;
+                                height: auto;
+                                line-height: 30px;
+                                text-decoration: none;
+                                text-decoration-line: none;
+                                width: auto;
+                                float: right
+                            }
+                            .WinerAnchor {
+                                /* So as to ensure that its not at the top of the page where menu bars might be on top of it*/
+                                scroll-margin-top: 100px;
+                            }
+                        </style>
+    
+                        <!-- Post Content -->
+                        <script>
+                            function addAnchorTagsToParagraphs(html) {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, "text/html");
+                            const paragraphs = doc.querySelectorAll("p");
+    
+                            paragraphs.forEach((paragraph) => {
+                                const paragraphText = paragraph.textContent.trim();
+                                const words = paragraphText.split(" ");
+                                const firstFiveWords = words.slice(0, 5).join(" ");
+                                const firstFiveLetters = concatenateFirstLetters(firstFiveWords);
+    
+                                // Create the opening anchor tag
+                                const openingAnchor = doc.createElement("a");
+                                openingAnchor.classList.add("WinerAnchor");
+                                openingAnchor.id = firstFiveLetters;
+                                openingAnchor.name = firstFiveLetters;
+                                paragraph.insertBefore(openingAnchor, paragraph.firstChild);
+    
+                                // Create the closing anchor tag
+                                const closingAnchor = doc.createElement("a");
+                                closingAnchor.href = `#`+firstFiveLetters;
+                                closingAnchor.textContent = `¶`;
+                                closingAnchor.classList.add("Winerlink");
+                                paragraph.appendChild(closingAnchor);
+                            });
+    
+                            return doc.documentElement.innerHTML;
+                            }
+    
+                            function concatenateFirstLetters(text) {
+                                const words = text.split(" ");
+                                const firstFiveWords = words.slice(0, 5);
+                                const firstLetters = firstFiveWords.map(word => word.charAt(0).toUpperCase());
+                                
+                                while (firstLetters.length < 5) {
+                                    // Add a null character to the array in the event that there are less than 5 words.  Not the best, but it should work.
+                                    firstLetters.push('␀');
+                                }
+                                
+                                const concatenatedLetters = firstLetters.join("").toLowerCase();
+    
+                                return concatenatedLetters;
+                            }
+                        </script>
+    
+                        <span class="e-content" id="main_content">{{ page.content }}</span>
+    
+                        <script>
+                            var main_content = document.getElementById('main_content');
+                            main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+                        </script>
                     <hr>
                 </article>
 
@@ -294,9 +248,12 @@
 
                 <hr>
 
-                {% include comments-webmentions.html %}
-
-                {% include comments.html %}
+                {% 
+                
+                #    include comments-webmentions.html 
+                #    include comments.html %
+                
+                }
 
             </div>
 
