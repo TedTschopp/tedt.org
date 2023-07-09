@@ -1,7 +1,8 @@
 ---
 quote: If you don’t like change, you’re going to like irrelevance even less.
 author: Eric Shinseki
-source: 'Article in the New York Times - https://www.nytimes.com/2009/11/11/us/politics/11vets.html'
+source: 'Article in the New York Times'
+source-url: https://www.nytimes.com/2009/11/11/us/politics/11vets.html
 profileID: '0'
 tags: ''
 date: 10-10-2014 14:41:04

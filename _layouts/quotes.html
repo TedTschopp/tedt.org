@@ -165,9 +165,14 @@
 
                     <!-- Post Content -->
                     <span class="e-content">
-                        <h3><u>{{ page.author }}</u></h2> 
-                        <h4>{{ page.source }}</h3>
-
+                        <h3><u>{{ page.author }}</u></h3> 
+                        {% if page.source-url %}
+                            <h4><a href="{{page.source-url}}" target="_new">{{ page.source }}</a>&NonBreakingSpace;<a href="{{page.source-url}}" target="_new"><i class="fa fa-external-link" aria-hidden="true"></i></a></h4>
+                        {% elsif page.image-credits %}
+                            <h4>{{ page.source }}</h4>
+                        {% else %}
+                            Unknown
+                        {% endif %}
                         <style>
                             /* The link is a Dave Winer Link */
                             .Winerlink {
