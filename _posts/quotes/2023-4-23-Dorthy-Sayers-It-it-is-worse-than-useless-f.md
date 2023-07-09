@@ -1,5 +1,5 @@
 ---
-quote: '"It it is worse than useless for Christians to talk about the importance of
+quote: It it is worse than useless for Christians to talk about the importance of
   Christian morality, unless they are prepared to take their stand upon the fundamentals
   of Christian theology. It is a lie to say that dogma does not matter; it matters
   enormously. It is fatal to let people suppose that Christianity is only a mode of
@@ -13,7 +13,7 @@ quote: '"It it is worse than useless for Christians to talk about the importance
   the Church teaches about God or man or society or the person of Jesus Christ….  …Theologically
   this country is at present is in a state of utter chaos established in the name
   of religious toleration and rapidly degenerating into flight from reason and the
-  death of hope.  "'
+  death of hope.
 author: Dorthy Sayers
 source: Creed Of Chaos
 profileID: '0'
@@ -26,7 +26,7 @@ categories:
 - Quotes
 date: 2023-04-23 11:44:45.180083
 ---
-'"It it is worse than useless for Christians to talk about the importance of
+It it is worse than useless for Christians to talk about the importance of
   Christian morality, unless they are prepared to take their stand upon the fundamentals
   of Christian theology. It is a lie to say that dogma does not matter; it matters
   enormously. It is fatal to let people suppose that Christianity is only a mode of
@@ -40,4 +40,4 @@ date: 2023-04-23 11:44:45.180083
   the Church teaches about God or man or society or the person of Jesus Christ….  …Theologically
   this country is at present is in a state of utter chaos established in the name
   of religious toleration and rapidly degenerating into flight from reason and the
-  death of hope.  "'
+  death of hope.

@@ -28,11 +28,11 @@ If you take a flat map \
 And move wooden blocks upon it strategically, \
 The  thing looks well, the blocks behave as they should. \
 The science of war is moving  live men like blocks. \
-And getting the blocks into place at a fixed moment. \
+And getting the blocks into place at a fixed moment.
 
 But it takes time to mold your men into blocks \
 And flat maps turn into country  where creeks and gullies \
-Hamper your wooden squares. They stick in the brush, \
+Hamper your wooden squares. They stick in the brush,
 
 They are tired and rest, they straggle after ripe blackberries, \
 And you cannot  lift them up in your hand and move them. \
@@ -40,7 +40,7 @@ And you cannot  lift them up in your hand and move them. \
 Of another string of blocks and crunching it up-- \
 It is all  so clear in the maps, so clear in the mind, \
 But the orders are slow, the men  in the blocks are slow \
-To move, when they start they take too long on the way-- \
+To move, when they start they take too long on the way--
 
 The General loses his stars and the block-men die \
 In unstrategic defiance of martial law \

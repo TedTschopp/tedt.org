@@ -37,7 +37,7 @@ Who died in freedom’s cause;
 
 And not for some living hero,
 
-
+---
 
 To whom all bend the knee,
 
@@ -55,7 +55,7 @@ Shall surely be born, I say;
 
 A man in whose pure spirit
 
-
+---
 
 No dross of self will lurk,
 
@@ -87,7 +87,7 @@ Though I hear no martial drumming
 
 And see no flags that wave.
 
-
+---
 
 But the great soul-travail of woman,
 
@@ -103,7 +103,7 @@ With their grand, heroic men,
 
 Who dwell in history’s pages
 
-
+---
 
 And live in the poet’s pen.
 
