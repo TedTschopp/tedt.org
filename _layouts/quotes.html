@@ -106,11 +106,7 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
-                    {% assign words = page.content | split: ' ' %}
-                    {% assign first_7_words = words | slice: 0, 7 %}
-                    {{ first_7_words | join: ' ' }}
-
-                    <h1 class="p-name">{{ first_7_words }}...</h1>
+                    <h1 class="p-name">{{ page.content | split: ' ' | first: 7 | join: ' ' }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
                         <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</a></p>
