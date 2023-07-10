@@ -132,10 +132,7 @@
                         {% if lowercaseWords contains word %}
                             {% assign isLowercase = true %}
                         {% endif %}
-                        
 
-
-                        {% if isFirstWord or isLastWord or not isLowercase %}
 
                         {% if isFirstWord %}
                             {% assign titleCaseWord = word | capitalize %}
