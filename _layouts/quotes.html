@@ -126,14 +126,12 @@
                         {% if lowercaseWords contains word %}
                             {% assign isLowercase = true %}
                         {% endif %}
-
-                        {% capture titleCaseWord %}
-                            {% if isFirstWord or isLastWord or not isLowercase %}
-                                {{ word | capitalize }}
-                            {% else %}
-                                {{ word }}
-                            {% endif %}
-                        {% endcapture %}
+                        
+                        {% if isFirstWord or isLastWord or not isLowercase %}
+                            {% capture titleCaseWord %}{{ word | capitalize }}{% endcapture %}
+                        {% else %}
+                            {% capture titleCaseWord %}{{ word }}{% endcapture %}
+                        {% endif %}
 
                         {% assign words[forloop.index0] = titleCaseWord %}
                     {% endfor %}
