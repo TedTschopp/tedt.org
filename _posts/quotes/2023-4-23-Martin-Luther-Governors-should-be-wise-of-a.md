@@ -1,6 +1,5 @@
 ---
-quote: Governors should be wise, of a courageous spirit, and should know how to rule
-  alone without their counsellors.
+quote: Governors should be wise, of a courageous spirit, and should know how to rule alone without their counsellors.
 author: Martin Luther
 source: 'Table Talk - OF PRINCES AND POTENTATES - DCCXVII'
 profileID: '0'

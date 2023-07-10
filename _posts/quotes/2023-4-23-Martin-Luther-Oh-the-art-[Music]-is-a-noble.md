@@ -1,8 +1,5 @@
 ---
-quote: Oh, the art [Music] is a noble commodity. One shouldn’t use it for pay, for
-  purse or coffer. The art is easy to practice, is esteemed everywhere, benefits all
-  people, and nevertheless preserves its own integrity. Yet nobody wants to learn
-  or love it.
+quote: Oh, the art [Music] is a noble commodity. One shouldn’t use it for pay, for purse or coffer.
 author: Martin Luther
 source: ' '
 profileID: '0'

@@ -1,6 +1,5 @@
 ---
-quote: Men are generally idle, and ready to satisfy themselves, and intimidate the
-  industry of others, by calling that impossible which is only difficult.
+quote: Men are generally idle, and ready to satisfy themselves, and intimidate the industry of others, by calling that impossible which is only difficult.
 author: Samuel Johnson
 source: Herman Boerhaave
 profileID: '0'

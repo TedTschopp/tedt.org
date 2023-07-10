@@ -1,6 +1,5 @@
 ---
-quote: We are all mysteries of light and dark. There are no true conservatives, liberals,
-  etc, in the world. Only people.
+quote: We are all mysteries of light and dark. There are no true conservatives, liberals, etc, in the world. Only people.
 author: Ray Bradbury
 source: I Am Not Afraid of Robots. I Am afraid Of People.
 profileID: '0'

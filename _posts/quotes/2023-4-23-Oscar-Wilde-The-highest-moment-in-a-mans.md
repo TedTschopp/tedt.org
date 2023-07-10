@@ -1,6 +1,5 @@
 ---
-quote: The highest moment in a man's career may be the hour when he kneels in the
-  dust and beats upon his breast and tells all the sins of his life.
+quote: The highest moment in a man's career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life.
 author: Oscar Wilde
 source: De Profundis
 profileID: '0'

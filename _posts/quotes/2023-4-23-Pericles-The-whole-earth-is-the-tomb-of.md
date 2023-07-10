@@ -1,7 +1,5 @@
 ---
-quote: The whole earth is the tomb of heroic men and their story is not given only
-  on stone over their clay but abides everywhere without visible symbol woven into
-  the stuff of other mens lives.
+quote: The whole earth is the tomb of heroic men
 author: Pericles
 source: 'History of the Peloponnesian War'
 profileID: '0'

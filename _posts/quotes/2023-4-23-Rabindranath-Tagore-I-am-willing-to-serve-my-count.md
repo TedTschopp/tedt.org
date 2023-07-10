@@ -1,7 +1,5 @@
 ---
-quote: I am willing to serve my country, but my worship I reserve for that which is
-  far greater than my country. To worship my country as a god is to bring a curse
-  upon it.
+quote: I am willing to serve my country, but my worship I reserve for that which is far greater than my country.
 author: Rabindranath Tagore
 source: The Home and the World
 profileID: '0'

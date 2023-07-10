@@ -1,6 +1,5 @@
 ---
-quote: Deo, parentibus et magistris non potest satis gratiae rependi. – To God, to
-  parents, and to teachers we can never render sufficient gratitude and compensation.
+quote: Deo, parentibus et magistris non potest satis gratiae rependi. – To God, to parents, and to teachers we can never render sufficient gratitude and compensation.
 author: Martin Luther
 source: Explanation Of the 4th Commandment
 profileID: '0'

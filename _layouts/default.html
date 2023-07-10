@@ -136,6 +136,7 @@
                         {% for category in post.categories %}
                           [<a href="category/{{ category }}">{{ category }}</a>] 
                         {% endfor %}
+
                         <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
                       </li>
                     {% endif %}

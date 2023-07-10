@@ -1,5 +1,5 @@
 ---
-quote: In life you have to do a lot of things you don't fucking want to do. Many times, that's what the fuck life is... one vile fucking task after another.
+quote: Many times, that's what the fuck life is...
 author: Al Swearengen
 source: Deadwood 2004
 profileID: '0'

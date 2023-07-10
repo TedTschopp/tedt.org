@@ -1,7 +1,5 @@
 ---
-quote: Common sense tells us that the world is flat, that the sun goes around the
-  earth, that heavy bodies always fall faster than light bodies, that boats made of
-  iron will sink.
+quote: Common sense tells us that the world is flat
 author: Stuart Chase
 source: The Proper Study Of Mankind
 profileID: '5'
