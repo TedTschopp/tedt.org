@@ -128,9 +128,9 @@
                         {% endif %}
                         
                         {% if isFirstWord or isLastWord or not isLowercase %}
-                            {% capture titleCaseWord %}{{ word | capitalize }}{% endcapture %}
+                            {% assign titleCaseWord = word | capitalize %}
                         {% else %}
-                            {% capture titleCaseWord %}{{ word }}{% endcapture %}
+                            {% assign titleCaseWord = word %}
                         {% endif %}
 
                         {% assign words[forloop.index0] = titleCaseWord %}
