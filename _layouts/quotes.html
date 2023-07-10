@@ -106,7 +106,8 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
-                    {% assign words = page.content | split: ' ' %}
+                    {% assign plainText = page.content | strip_html | strip_newlines %}
+                    {% assign words = plainText | split: ' ' %}
                     {% assign first_7_words = words | slice: 0, 7 %}
                     <h1 class="p-name">{{ first_7_words | join: ' ' }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
