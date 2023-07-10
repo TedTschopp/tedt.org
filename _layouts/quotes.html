@@ -106,35 +106,38 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
+                    <!-- First get the first 7 words of the Content -->
+
                     {% assign plainText = page.content | strip_html | strip_newlines %}
                     {% assign stringWithoutCommas = plainText | replace: ',', '' %}
                     {% assign words = stringWithoutCommas | split: ' ' %}
                     {% assign first_7_words = words | slice: 0, 7 %}
 
                     <!-- Calculate Title Case per NYT -->
+
                     {% assign lowercaseWords = "a,an,the,and,but,or,nor,for,so,yet,at,by,in,of,on,to,up,about,across,after,along,amid,around,as,before,behind,below,beside,between,beyond,during,except,from,inside,into,like,near,off,on,onto,out,outside,over,past,through,throughout,till,toward,under,underneath,until,unto,upon,with,within,without" | split: ',' %}
 
                     {% assign words = first_7_words | downcase | split: ' ' %}
 
                     {% for word in words %}
-                    {% assign isFirstWord = forloop.first %}
-                    {% assign isLastWord = forloop.last %}
-                    {% assign isLowercase = lowercaseWords contains word %}
+                        {% assign isFirstWord = forloop.first %}
+                        {% assign isLastWord = forloop.last %}
+                        {% assign isLowercase = lowercaseWords contains word %}
 
-                    {% capture titleCaseWord %}
-                        {% if isFirstWord or isLastWord or not isLowercase %}
-                        {{ word | capitalize }}
-                        {% else %}
-                        {{ word }}
-                        {% endif %}
-                    {% endcapture %}
+                        {% capture titleCaseWord %}
+                            {% if isFirstWord or isLastWord or not isLowercase %}
+                                {{ word | capitalize }}
+                            {% else %}
+                                {{ word }}
+                            {% endif %}
+                        {% endcapture %}
 
-                    {% assign words[forloop.index0] = titleCaseWord %}
+                        {% assign words[forloop.index0] = titleCaseWord %}
                     {% endfor %}
 
                     {% assign titleCaseString = words | join: ' ' %}
 
-                    <h1 class="p-name">{{ titleCaseString | join: ' ' }}...</h1>
+                    <h1 class="p-name">{{ titleCaseString }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
                         {% if page.author.url %}
