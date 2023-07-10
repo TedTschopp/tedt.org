@@ -134,10 +134,10 @@
                             {% assign titleCaseWord = word | capitalize %}
                         {% endif %}
 
-                        {% assign words[forloop.index0] = titleCaseWord %}
+                        {% assign WordsInTitle[forloop.index0] = titleCaseWord %}
                     {% endfor %}
 
-                    {% assign titleCaseString = words | join: ' ' %}
+                    {% assign titleCaseString = WordsInTitle | join: ' ' %}
 
                     <h1 class="p-name">{{ titleCaseString }}...</h1>
                   <!-- Author TODO: Fix this to be dynamic for more than one author. -->
