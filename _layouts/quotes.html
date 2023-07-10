@@ -120,8 +120,14 @@
                     {% assign words = first_7_words | downcase | split: ' ' %}
 
                     {% for word in words %}
-                        {% assign isFirstWord = forloop.first %}
-                        {% assign isLastWord = forloop.last %}
+                        {% if forloop.first == true %}
+                            {% assign isFirstWord = forloop.first %}
+                        {% endif %}
+
+                        {% if forloop.last == true %}
+                            {% assign isLastWord = forloop.last %}
+                        {% endif %}
+
                         {% assign isLowercase = false %}
                         {% if lowercaseWords contains word %}
                             {% assign isLowercase = true %}
