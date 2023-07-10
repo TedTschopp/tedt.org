@@ -110,8 +110,8 @@
 
                     {% assign plainText = page.content | strip_html | strip_newlines %}
                     {% assign stringWithoutCommas = plainText | replace: ',', '' %}
-                    {% assign words = stringWithoutCommas | split: ' ' %}
-                    {% assign first_7_words = words | slice: 0, 7 %}
+                    {% assign wordstoconvert = stringWithoutCommas | split: ' ' %}
+                    {% assign first_7_words = wordstoconvert | slice: 0, 7 %}
 
                     <!-- Calculate Title Case per NYT -->
 
@@ -145,7 +145,7 @@
                     {% assign titleCaseString = words | join: ' ' %}
 
                     <h1 class="p-name">{{ titleCaseString }}...</h1>
-                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                  <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
                         {% if page.author.url %}
                             {% if page.author.avatar %}
