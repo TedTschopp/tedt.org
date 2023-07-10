@@ -112,7 +112,19 @@
                     <h1 class="p-name">{{ first_7_words | join: ' ' }}...</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</a></p>
+                        {% if page.author.url %}
+                            {% if page.author.avatar %}
+                                <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</a></p>
+                            {% else %}
+                                <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}">{{page.author}}</a></p>
+                            {% endif %
+                        {% else %}
+                            {% if page.author.avatar %}
+                                <p class="lead">by <img src="{{page.author.avatar}}" class="u-photo">{{page.author}}</p>
+                            {% else %}
+                                <p class="lead">by {{page.author}}</p>
+                            {% endif %}
+                        {% endif %
                     {% else %}
                         <p class="lead">by unknown</p>
                     {% endif %}
@@ -286,9 +298,7 @@
             </div>
 
         </div>
-        <!-- /.row -->
 
-        <hr>
     </div>
     <!-- /.container -->
 
