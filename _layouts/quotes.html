@@ -120,6 +120,7 @@
                     {% assign words = first_7_words | downcase | split: ' ' %}
                     {% assign WordsInTitle = first_7_words | downcase | split: ' ' %}
 
+                    <h1 class="p-name">
                     {% for word in words %}
                         {% assign titleCaseWord = word | capitalize %}
 
@@ -136,11 +137,12 @@
                         {% endif %}
 
                         {% assign WordsInTitle[forloop.index0] = titleCaseWord %}
+                        {{ titleCaseWord }}
                     {% endfor %}
 
                     {% assign titleCaseString = WordsInTitle | join: ' ' %}
 
-                    <h1 class="p-name">{{ titleCaseString }}...</h1>
+                    {{ titleCaseString }}...</h1>
                   <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author %}
                         {% if page.author.url %}
