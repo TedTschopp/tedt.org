@@ -120,27 +120,17 @@
                     {% assign words = first_7_words | downcase | split: ' ' %}
 
                     {% for word in words %}
+                        {% assign titleCaseWord = word | capitalize %}
+
+                        {% if lowercaseWords contains word %}
+                            {% assign titleCaseWord = word %}
+                        {% endif %}
+
                         {% if forloop.first == true %}
-                            {% assign isFirstWord = forloop.first %}
+                            {% assign titleCaseWord = word | capitalize %}
                         {% endif %}
 
                         {% if forloop.last == true %}
-                            {% assign isLastWord = forloop.last %}
-                        {% endif %}
-
-                        {% assign isLowercase = false %}
-                        {% if lowercaseWords contains word %}
-                            {% assign isLowercase = true %}
-                        {% endif %}
-
-
-                        {% if isFirstWord %}
-                            {% assign titleCaseWord = word | capitalize %}
-                        {% elsif isLastWord %}
-                            {% assign titleCaseWord = word | capitalize %}
-                        {% elsif isLowercase %}
-                            {% assign titleCaseWord = word %}
-                        {% else %}
                             {% assign titleCaseWord = word | capitalize %}
                         {% endif %}
 
