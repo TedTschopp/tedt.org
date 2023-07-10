@@ -133,10 +133,18 @@
                             {% assign isLowercase = true %}
                         {% endif %}
                         
+
+
                         {% if isFirstWord or isLastWord or not isLowercase %}
+
+                        {% if isFirstWord %}
                             {% assign titleCaseWord = word | capitalize %}
-                        {% else %}
+                        {% elsif isLastWord %}
+                            {% assign titleCaseWord = word | capitalize %}
+                        {% elsif isLowercase %}
                             {% assign titleCaseWord = word %}
+                        {% else %}
+                            {% assign titleCaseWord = word | capitalize %}
                         {% endif %}
 
                         {% assign words[forloop.index0] = titleCaseWord %}
