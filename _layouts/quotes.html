@@ -122,7 +122,10 @@
                     {% for word in words %}
                         {% assign isFirstWord = forloop.first %}
                         {% assign isLastWord = forloop.last %}
-                        {% capture isLowercase %}{% if lowercaseWords contains word %}true{% endif %}{% endcapture %}
+                        {% assign isLowercase = false %}
+                        {% if lowercaseWords contains word %}
+                            {% assign isLowercase = true %}
+                        {% endif %}
 
                         {% capture titleCaseWord %}
                             {% if isFirstWord or isLastWord or not isLowercase %}
