@@ -118,6 +118,7 @@
                     {% assign lowercaseWords = "a,an,the,and,but,or,nor,for,so,yet,at,by,in,of,on,to,up,about,across,after,along,amid,around,as,before,behind,below,beside,between,beyond,during,except,from,inside,into,like,near,off,on,onto,out,outside,over,past,through,throughout,till,toward,under,underneath,until,unto,upon,with,within,without" | split: ',' %}
 
                     {% assign words = first_7_words | downcase | split: ' ' %}
+                    {% assign WordsInTitle = first_7_words | downcase | split: ' ' %}
 
                     {% for word in words %}
                         {% assign titleCaseWord = word | capitalize %}
