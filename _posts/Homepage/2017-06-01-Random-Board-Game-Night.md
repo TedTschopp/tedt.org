@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twitterbot - Random Board Game Night
+title: Mastodon Bots - Random Board Game Night
 title-url: https://tschopp.net/@bots
 date: 2018-06-03T07:11:42-07:00
 author:
