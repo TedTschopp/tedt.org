@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitterbot - Random Board Game Night
-title-url: https://twitter.com/randomgamenight
+title-url: https://tschopp.net/@bots
 date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
@@ -24,7 +24,7 @@ guid: 6874d05e-dafe-4e56-80c9-d3f3b911a61b
 image: /img/boardgamenight.jpg
 image-credits: Board Game Night by Geoffrey Fairchild https://www.flickr.com/photos/gcfairch/4421257399/in/photolist-7Kb6Us-7wwKqo-7JG6MR
 image-credits-title: Board Game Night
-image-credits-artist: Geoffrey Fairchild 
+image-credits-artist: Geoffrey Fairchild
 image-credits-URL: https://www.flickr.com/photos/gcfairch/4421257399/in/photolist-7Kb6Us-7wwKqo-7JG6MR
 categories: home
 order: 8
