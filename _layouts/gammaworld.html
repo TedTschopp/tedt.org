@@ -294,14 +294,14 @@
 
                          {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
 
-                         {% for post in gammaWorldPosts %}
-                              {% if post.categories contains 'Bestiary' %}
-                                   {% if post.source == lastpost.source %}
-                                        <p>{{ post.title }}</p>
+                         {% for Bestiary in gammaWorldPosts %}
+                              {% if Bestiary.categories contains 'Bestiary' %}
+                                   {% if Bestiary.source == lastpost.source %}
+                                        <p>{{ Bestiary.title }}</p>
                                    {% else %}
-                                        <h4>{{ post.source }}</h4><p>{{post.title}}</td>
+                                        <h4>{{ Bestiary.source }}</h4><p>{{Bestiary.title}}</td>
                                    {% endif %}
-                                   {% assign lastpost = post %}
+                                   {% assign lastpost = Bestiary %}
                               {% endif %}
                          {% endfor %}
 
