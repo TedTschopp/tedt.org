@@ -293,6 +293,7 @@
 
 
                          {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+                         {% assign lastpost = "" %}
 
                          {% for Bestiary in gammaWorldPosts %}
                               {% if Bestiary.categories contains 'Bestiary' %}
