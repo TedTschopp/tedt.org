@@ -292,7 +292,7 @@
 
 
 
-                         {% assign gammaWorldBestiaryPosts = site.posts | where_exp: 'post', 'post.categories contains "Gamma World" and post.categories contains "Bestiary"' | sort: 'source' %}
+                         {% assign gammaWorldBestiaryPosts = site.posts | where_exp: "post", "post.categories contains 'Gamma World' and post.categories contains 'Bestiary'" | sort: "source" %}
 
                          {% for post in gammaWorldBestiaryPosts %}
                               {% assign lastpost = post %}
