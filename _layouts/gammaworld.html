@@ -291,9 +291,6 @@
                          <hr><br>
 
 
-
-
-
                 <!--Next and Previous Articles -->
                 {% if page.previous.url %}
                     {% assign previous_url = page.previous.url %}
@@ -309,6 +306,19 @@
                     {% assign next_url = site.siteurl %}
                     {% assign next_title = "Home" %}
                 {% endif %}
+
+
+
+
+                {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+
+                {% for Bestiary in gammaWorldPosts %}
+                  <!-- Display post content here -->
+                  <p>{{ Bestiary.title}}</p>
+                {% endfor %}
+
+
+
                 <div class="row">
                     <div class="col-md-6 text-center">
                         <span class="float-md-left"><a href="{{previous_url}}">&laquo; {{previous_title}}</a></span>
