@@ -44,7 +44,6 @@
             } 
 
     </style>
-
     <script src="https://tedt.org/js/jscii.js"></script>
 
 </head>
@@ -290,6 +289,17 @@
                          {% endif %}
 
                          <hr><br>
+
+
+                         {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+
+                         {% for post in gammaWorldPosts %}
+                                   <p>{{ post.source }} - {{post.title}}</p>
+
+                         {% endfor %}
+                         
+
+
 
                 <!--Next and Previous Articles -->
                 {% if page.previous.url %}
