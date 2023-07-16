@@ -314,6 +314,10 @@
 
                 {% for Bestiary in gammaWorldPosts %}
                     {% if Bestiary.categories contains  'Bestiary'%}
+                         {% if Bestiary.source != PreviousBestiarySource %}
+                              <h3>{{Bestiary.source}}</h3>
+                              {% assign PreviousBestiarySource = Bestiary.source %}
+                         {% endif %}
                        <p>{{Bestiary.source}} - {{ Bestiary.title}}</p>
                     {% endif %}
                 {% endfor %}
