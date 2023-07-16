@@ -7,7 +7,7 @@ creature_name: Disaster Robot
 common_name: Rescue Bot
 other_names: ''
 generic_name: Rescue Bot
-source: 4th Edition Gamma World
+source: 4th Edition
 author: ''
 name: ''
 url: ''

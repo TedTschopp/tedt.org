@@ -7,7 +7,7 @@ creature_name: Stagon
 common_name: Riding Deer
 other_names: ''
 generic_name: Swamp Donkey
-source: 4th Edition Gamma World
+source: 4th Edition
 author: ''
 name: ''
 url: ''

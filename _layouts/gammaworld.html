@@ -328,13 +328,13 @@
                                    color: #202122;
                                    direction: ltr;
                                    display: block;
-                                   font-size: 12.6px;
-                                   line-height: 20.16px;
-                                   list-style-type: decimal;
-                                   margin-bottom: 6.3px;
-                                   margin-top: 3.78px;
+                                   font-size: 1em;
+                                   line-height: 1.5em;
+                                   list-style-type: lower-greek;
+                                   margin-bottom: .5em;
+                                   margin-top: .25em;
                                    width: 100%;">
-                                   <ul class="references">
+                                   <ol class="references">
                               {% assign PreviousBestiarySource = Bestiary.source %}
                          {% endif %}
 
@@ -342,10 +342,10 @@
                          {% assign strippedString = BestiaryTitle | replace: "«", "" | replace: "»", "" %}
                          {% assign capitalizedString = strippedString | split: " " | map: "capitalize" | join: " " %}
                          {% assign permalink = capitalizedString | slugify %}
-                         <li><span class="reference-text"><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{Bestiary.title}} » {{ BestiaryTitle }} » {{ BestiaryTitle | split: " " | map: "capitalize" | join: " " }}</a></span></li>
+                         <li><span class="reference-text"><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{Bestiary.title}} » {{ BestiaryTitle }} » {{ strippedString }} » {{capitalizedString}} > {{permalink}}</a></span></li>
                        {% endif %}
                 {% endfor %}
-               </ul></div>
+               </ol></div>
 
 
                 <div class="row">

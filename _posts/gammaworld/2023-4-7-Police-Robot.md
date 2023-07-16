@@ -7,7 +7,7 @@ creature_name: Police Robot
 common_name: ''
 other_names: ''
 generic_name: Police Bot
-source: 4th Edition Gamma World
+source: 4th Edition
 author: ''
 name: ''
 url: ''

@@ -7,7 +7,7 @@ creature_name: Industrial Robot
 common_name: ''
 other_names: ''
 generic_name: Industrial Bot
-source: 4th Edition Gamma World
+source: 4th Edition
 author: ''
 name: ''
 url: ''

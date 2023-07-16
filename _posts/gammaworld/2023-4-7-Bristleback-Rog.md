@@ -7,7 +7,7 @@ creature_name: Rog
 common_name: Bristleback
 other_names: ''
 generic_name: Bushpig
-source: 4th Edition Gamma World
+source: 4th Edition
 author: ''
 name: ''
 url: ''
