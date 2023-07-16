@@ -321,7 +321,7 @@
                               </ul></div>
                               <h4><u>{{Bestiary.source}}</u></h4>
                               <div style="break-inside: avoid-page;
-                                   column-width: 20em;
+                                   column-width: 30em;
                                    column-fill: balance;
                                    column-gap: 2em;
                                    column-rule: 1px #202122;
@@ -330,11 +330,10 @@
                                    display: block;
                                    font-size: 1em;
                                    line-height: 1.5em;
-                                   list-style-type: lower-greek;
                                    margin-bottom: .5em;
                                    margin-top: .25em;
                                    width: 100%;">
-                                   <ol style="list-style-type: lower-greek;">
+                                   <ol style="list-style-type: none;">
                               {% assign PreviousBestiarySource = Bestiary.source %}
                          {% endif %}
 
@@ -348,15 +347,13 @@
                          {% for word in words %}
                            {% assign capitalizedWord = word | capitalize %}
                            {% assign capitalizedpermalink = capitalizedpermalink | append: capitalizedWord %}
-                           {% if forloop.last %}
-                               <!-- This is the last item -->
-                           {% else %}
+                           {% if forloop.last %}{% else %}
                                {% assign capitalizedpermalink = capitalizedpermalink | append: "-" %}
                            {% endif %}
                          {% endfor %}
 
                          {% if Bestiary.title != page.title %}
-                              <li><span><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}} {{permalink}}</a></span></li>
+                              <li><span><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}}</a></span></li>
                          {% else %}
                               <li><span><STRONG>{{Bestiary.title}}</STRONG></span></li>
                          {% endif %}
@@ -387,7 +384,7 @@
     <script>
         // put in the image
         var imgJscii = new Jscii({
-            width: 150,
+            width: 500,
             color: true,
             el: document.getElementById('jscii-element-image'),
             fn: function(str) {
