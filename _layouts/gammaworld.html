@@ -325,7 +325,6 @@
                                    column-width: 252px;
                                    direction: ltr;
                                    display: block;
-                                   font-family: sans-serif;
                                    font-size: 12.6px;
                                    line-height: 20.16px;
                                    list-style-type: decimal;
@@ -336,19 +335,13 @@
                               {% assign PreviousBestiarySource = Bestiary.source %}
                          {% endif %}
 
-                         {% assign myString = Bestiary.title %}
-                         {% assign capitalizedString = myString | split: " " | map: "capitalize" | join: " " %}
+                         {% assign BestiaryTitle = Bestiary.title %}
+                         {% assign capitalizedString = BestiaryTitle | split: " " | map: "capitalize" | join: " " %}
                          {% assign permalink = capitalizedString | slugify %}
-                         {{ permalink }}
-                       
                          <li><span class="reference-text"><a href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{ Bestiary.title}}</a></span></li>
-
-
-
-
                        {% endif %}
                 {% endfor %}
-
+               </ul></div>
 
 
                 <div class="row">
