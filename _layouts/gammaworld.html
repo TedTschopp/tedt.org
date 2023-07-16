@@ -313,8 +313,9 @@
                 {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
 
                 {% for Bestiary in gammaWorldPosts %}
-                  <!-- Display post content here -->
-                  <p>{{ Bestiary.title}}</p>
+                    {% if Bestiary.categories contains  'Bestiary'}
+                       <p>{{Bestiary.source}} - {{ Bestiary.title}}</p>
+                    {% endif %}
                 {% endfor %}
 
 
