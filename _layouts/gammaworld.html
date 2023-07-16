@@ -340,7 +340,17 @@
 
                          {% assign BestiaryTitle = Bestiary.title %}
                          {% assign strippedString = BestiaryTitle | replace: "«", "" | replace: "»", "" %}
-                         {% assign capitalizedString = strippedString | split: " " | map: "capitalize" | join: " " %}
+
+                         {% assign words = strippedString | split: " " %}
+                         {% assign capitalizedWords = "" %}
+                         
+                         {% for word in words %}
+                           {% assign capitalizedWord = word | capitalize %}
+                           {% assign capitalizedWords = capitalizedWords | append: capitalizedWord | append: " " %}
+                         {% endfor %}
+                         
+                         {% assign capitalizedString = capitalizedWords | strip %}
+
                          {% assign permalink = capitalizedString | slugify %}
                          <li><span class="reference-text"><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{Bestiary.title}} » {{ BestiaryTitle }} » {{ strippedString }} » {{capitalizedString}} > {{permalink}}</a></span></li>
                        {% endif %}
