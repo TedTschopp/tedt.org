@@ -321,8 +321,10 @@
                               </ul></div>
                               <h4><u>{{Bestiary.source}}</u></h4>
                               <div style="column-width: 20em;
-                                   color: rgb(32, 33, 34);
-                                   column-width: 252px;
+                                   column-fill: balance;
+                                   column-gap: 2em;
+                                   column-rule: 1px #202122;
+                                   color: #202122;
                                    direction: ltr;
                                    display: block;
                                    font-size: 12.6px;
@@ -338,7 +340,7 @@
                          {% assign BestiaryTitle = Bestiary.title %}
                          {% assign capitalizedString = BestiaryTitle | split: " " | map: "capitalize" | join: " " %}
                          {% assign permalink = capitalizedString | slugify %}
-                         <li><span class="reference-text"><a href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{ Bestiary.title}}</a></span></li>
+                         <li><span class="reference-text"><a href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{Bestiary.title}} » {{ BestiaryTitle }} » {{ BestiaryTitle | split: " " | map: "capitalize" | join: " " }}</a></span></li>
                        {% endif %}
                 {% endfor %}
                </ul></div>
