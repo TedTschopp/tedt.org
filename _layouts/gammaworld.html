@@ -311,16 +311,42 @@
 
 
                 {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+                <h3><u>Additional Creatures</u></h3><div><ul class="references">
+
                 {% assign PreviousBestiarySource = "" %}
 
                 {% for Bestiary in gammaWorldPosts %}
                     {% if Bestiary.categories contains  'Bestiary'%}
                          {% if Bestiary.source != PreviousBestiarySource %}
-                              <h3><u>{{Bestiary.source}}</u></h3>
+                              </ul></div>
+                              <h4><u>{{Bestiary.source}}</u></h4>
+                              <div style="column-width: 20em;
+                                   color: rgb(32, 33, 34);
+                                   column-width: 252px;
+                                   direction: ltr;
+                                   display: block;
+                                   font-family: sans-serif;
+                                   font-size: 12.6px;
+                                   line-height: 20.16px;
+                                   list-style-type: decimal;
+                                   margin-bottom: 6.3px;
+                                   margin-top: 3.78px;
+                                   width: 100%;">
+                                   <ul class="references">
                               {% assign PreviousBestiarySource = Bestiary.source %}
                          {% endif %}
-                       <p><a href="https://tedt.org/Gamma-World-Bestiary/{{Bestiary.title | slugify }}.html">{{ Bestiary.title}}</a></p>
-                    {% endif %}
+
+                         {% assign myString = Bestiary.title %}
+                         {% assign capitalizedString = myString | split: " " | map: "capitalize" | join: " " %}
+                         {% assign permalink = capitalizedString | slugify %}
+                         {{ permalink }}
+                       
+                         <li><span class="reference-text"><a href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{ Bestiary.title}}</a></span></li>
+
+
+
+
+                       {% endif %}
                 {% endfor %}
 
 
