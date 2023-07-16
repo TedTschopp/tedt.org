@@ -345,7 +345,7 @@
                          {% assign capitalizedWords = words | map: "capitalize" %}
                          {% assign capitalizedpermalink = capitalizedWords | join: "-" %}
 
-                         <li><span><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{permalink}}.html">{{Bestiary.title}} » {{ capitalizedpermalink }}</a></span></li>
+                         <li><span><a style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}} » {{ capitalizedpermalink }}</a></span></li>
                        {% endif %}
                 {% endfor %}
                </ol></div>
