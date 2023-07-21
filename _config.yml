@@ -230,28 +230,28 @@ links:
     Color: '#00ab6c'
     Text_Color: '#ffffff'
 
-    # VIMEO
-  - Name: Vimeo
-    URL: 'https://vimeo.com'
-    Username: TedTschopp
-    Icon-Class: fab fa-vimeo-v
-    Color: '#1ab7ea'
-    Text_Color: '#ffffff'
+ #   # VIMEO
+ # - Name: Vimeo
+ #   URL: 'https://vimeo.com'
+ #   Username: TedTschopp
+ #   Icon-Class: fab fa-vimeo-v
+ #   Color: '#1ab7ea'
+ #   Text_Color: '#ffffff'
 
-  # BUY ME A COFFEE
-  - Name: BuyMeACoffee
-    URL: 'https://buymeacoffee.com'
-    Username: TedT
-    Icon-Class: fas fa-mug-hot
-    Color: '#FFDD00'
-    Text_Color: '#000000'
+ # # BUY ME A COFFEE
+ # - Name: BuyMeACoffee
+ #   URL: 'https://buymeacoffee.com'
+ #   Username: TedT
+ #   Icon-Class: fas fa-mug-hot
+ #   Color: '#FFDD00'
+ #   Text_Color: '#000000'
 
-  # REDDIT
-  - Name: Reddit
-    URL: http://reddit.com/u
-    Username: TedTschopp
-    Color: '#FF4500'
-    Icon-Class: fab fa-reddit-alien
+ # # REDDIT
+ # - Name: Reddit
+ #   URL: http://reddit.com/u
+ #   Username: TedTschopp
+ #   Color: '#FF4500'
+ #   Icon-Class: fab fa-reddit-alien
 
   # GOODREADS
   - Name: Goodreads
@@ -261,26 +261,26 @@ links:
     Color: '#e9e5cd'
     Text_Color: '#553b08'
 
-  # INSTAGRAM
-  - Name: Instagram
-    URL: https://www.instagram.com
-    Username: TedTschopp
-    Color: '#DD2A7B'
-    Icon-Class: fab fa-instagram
+ # # INSTAGRAM
+ # - Name: Instagram
+ #   URL: https://www.instagram.com
+ #   Username: TedTschopp
+ #   Color: '#DD2A7B'
+ #   Icon-Class: fab fa-instagram
 
-  # Meetup
-  - Name: Meetup
-    URL: 'https://www.meetup.com/members/45846/'
-    Icon-Class: fa-brands fa-meetup
-    Color: '#ED1C40'
-    Text_Color: '#FFFFFF'
+ # # Meetup
+ # - Name: Meetup
+ #   URL: 'https://www.meetup.com/members/45846/'
+ #   Icon-Class: fa-brands fa-meetup
+ #   Color: '#ED1C40'
+ #   Text_Color: '#FFFFFF'
 
-  # SOUNDCLOUD
-  - Name: SoundCloud
-    URL: https://www.soundcloud.com
-    Username: ted-tschopp
-    Color: '#FE5000'
-    Icon-Class: fab fa-soundcloud
+ # # SOUNDCLOUD
+ # - Name: SoundCloud
+ #   URL: https://www.soundcloud.com
+ #   Username: ted-tschopp
+ #   Color: '#FE5000'
+ #   Icon-Class: fab fa-soundcloud
 
   # TWITCH
   - Name: Twitch
@@ -290,20 +290,20 @@ links:
     Color: '#9147fe'
     Text_Color: '#ffffff'
 
-  # TUMBLR
-  - Name: Tumblr
-    URL: https://www.tumblr.com/blog
-    Username: tedtschopp
-    Color: '#35465c'
-    Icon-Class: fab fa-tumblr
+ # # TUMBLR
+ # - Name: Tumblr
+ #   URL: https://www.tumblr.com/blog
+ #   Username: tedtschopp
+ #   Color: '#35465c'
+ #   Icon-Class: fab fa-tumblr
 
-  # DEV.TO
-  - Name: Dev.to
-    URL: 'https://dev.to'
-    Username: tedtschopp
-    Icon-Class: fab fa-dev
-    Color: '#ffffff'
-    Text_Color: '#000000'
+ # # DEV.TO
+ # - Name: Dev.to
+ #   URL: 'https://dev.to'
+ #   Username: tedtschopp
+ #   Icon-Class: fab fa-dev
+ #   Color: '#ffffff'
+ #   Text_Color: '#000000'
 
   # STEAM
   - Name: Steam
@@ -334,13 +334,13 @@ links:
     Color: '#006AFF'
     Icon-Class: fab fa-facebook-messenger
 
-  # Vimeo
-  - Name: Vimeo
-    URL: https://vimeo.com/
-    Username: tedtschop
-    Icon-Class: fa fa-vimeo
-    Color: '#1ab7ea'
-    Text_Color: '#ffffff'
+ # # Vimeo
+ # - Name: Vimeo
+ #   URL: https://vimeo.com/
+ #   Username: tedtschop
+ #   Icon-Class: fa fa-vimeo
+ #   Color: '#1ab7ea'
+ #   Text_Color: '#ffffff'
  
   # XBOX
   - Name: xBox
@@ -350,14 +350,6 @@ links:
     Color: '#107C10'
     Text_Color: '#FFFFFF'
 
-  # Steam
-  - Name: Steam
-    URL: https://steamcommunity.com/id/
-    Username: theothesilly
-    Icon-Class: fa-brands fa-steam
-    Color: '#66c0f4'
-    Text_Color: '#171a21'
-
   # YOUTUBE
   - Name: YouTube
     URL: https://www.youtube.com/channel
@@ -365,36 +357,36 @@ links:
     Color: '#ff0000'
     Icon-Class: fab fa-youtube
 
-  # Foursquare
-  - Name: Foursquare
-    URL: https://foursquare.com
-    Username: tedtschopp
-    Icon-Class: fab fa-foursquare
-    Color: '#0072b1'
-    Text_Color: '#eeebac'
+ # # Foursquare
+ # - Name: Foursquare
+ #   URL: https://foursquare.com
+ #   Username: tedtschopp
+ #   Icon-Class: fab fa-foursquare
+ #   Color: '#0072b1'
+ #   Text_Color: '#eeebac'
 
-  # Quora
-  - Name: Quora
-    URL: https://www.quora.com/profile
-    Username: Ted-Tschopp
-    Icon-Class: fa fa-quora
-    Color: '#ffffff'
-    Text_Color: '#B92B27'
+ # # Quora
+ # - Name: Quora
+ #   URL: https://www.quora.com/profile
+ #   Username: Ted-Tschopp
+ #   Icon-Class: fa fa-quora
+ #   Color: '#ffffff'
+ #   Text_Color: '#B92B27'
 
-  # PINTEREST
-  - Name: Pinterest
-    URL: https://pinterest.com
-    Username: 'tedtschopp'
-    Color: '#E60023'
-    Icon-Class: fab fa-pinterest
+ # # PINTEREST
+ # - Name: Pinterest
+ #   URL: https://pinterest.com
+ #   Username: 'tedtschopp'
+ #   Color: '#E60023'
+ #   Icon-Class: fab fa-pinterest
 
-  # SNAPCHAT
-  - Name: Snapchat
-    URL: https://www.snapchat.com/add
-    Username: 'TedTschopp'
-    Color: '#FFFC00'
-    Text_Color: '#000000'
-    Icon-Class: fab fa-snapchat-ghost
+ # # SNAPCHAT
+ # - Name: Snapchat
+ #   URL: https://www.snapchat.com/add
+ #   Username: 'TedTschopp'
+ #   Color: '#FFFC00'
+ #   Text_Color: '#000000'
+ #   Icon-Class: fab fa-snapchat-ghost
 
   # Keybase
   - Name: Keybase
@@ -404,12 +396,12 @@ links:
     Text_Color: '#ffffff'
     Icon-Class: fa-brands fa-keybase
 
-  # Indie Web Camp
-  - Name: Indieweb
-    URL: https://indieweb.org/User:Www.tedt.org
-    Icon-Class: fa-solid fa-blog
-    Color: '#000000'
-    Text_Color: '#ffffff'
+ # # Indie Web Camp
+ # - Name: Indieweb
+ #   URL: https://indieweb.org/User:Www.tedt.org
+ #   Icon-Class: fa-solid fa-blog
+ #   Color: '#000000'
+ #   Text_Color: '#ffffff'
 
   # Homepage
   - Name: Blog
@@ -418,12 +410,12 @@ links:
     Color: '#000000'
     Text_Color: '#ffffff'
 
-  # WHATSAPP
-  - Name: WhatsApp
-    URL: https://wa.me
-    Username: '+6262553757'
-    Color: '#25d366'
-    Icon-Class: fab fa-whatsapp
+  # # WHATSAPP
+  # - Name: WhatsApp
+  #   URL: https://wa.me
+  #   Username: '+6262553757'
+  #   Color: '#25d366'
+  #   Icon-Class: fab fa-whatsapp
 
   #  # TELEGRAM
   #- Name: Telegram
