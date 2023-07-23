@@ -172,15 +172,15 @@ contribute to Total.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
-## Bringing it all Together
+# Bringing it all Together
 
-### Physical Aspects
+## Physical Aspects
 
-#### Muscle Characteristics
+### Muscle Characteristics
 
 **Muscle** represents the overall strength of the being.
 
-##### Ranged Combat Skill
+#### Ranged Combat Skill
 
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
 
@@ -202,7 +202,7 @@ Typical Tasks and their Difficulty Modifiers
 | Nearly Impossible | Fire at someone who is behind full cover through a crack in that cover                                      |
 | Godly             | Fire at someone who is behind full cover through a crack, past a group of your allies all while it is dark. |
 
-##### Athletics Skill
+#### Athletics Skill
 
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
 
@@ -224,7 +224,7 @@ Typical Tasks and their Difficulty Modifiers
 | Nearly Impossible | Swim in rough waters while wearing full metal armor                                                                                                                                                                                                                                       |
 | Godly             | Swim upstream in rough waters while wearing full metal armor while pulling a rowboat without capsizing the passengers in the rowboat.                                                                                                                                                     |
 
-##### Melee Combat Skill
+#### Melee Combat Skill
 
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
 
@@ -244,11 +244,11 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 | Nearly Impossible | Break metal armor with a common one-handed weapon                                                                                                 |
 | Godly             | Break metal armor with a stick, twig, or reed.                                                                                                    |
 
-#### Agility Characteristics
+### Agility Characteristics
 
 **Agility** represents the overall flexibility and grace of movement of the being.
 
-##### Stealth Skill
+#### Stealth Skill
 
 Make a Stealth check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard. You must be out of sight of those you intend to deceive when this skill check is made.
 
@@ -268,7 +268,7 @@ Typical Specializations: Shadowing, and Forward Observer
 | Nearly Impossible | Blend in and disappear while the center of attention on stage                                      |
 | Godly             | Vanish while you are the center of attention of trained observers.                                 |
 
-##### Acrobatics Skill
+#### Acrobatics Skill
 
 Your Acrobatics check covers your attempt to do something that will exert yourself physically related to your grace and dexterity. Examples of this might be trying to stay on your feet in when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a
 rocking ship's deck. You might also need a Acrobatics check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.
@@ -289,7 +289,7 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 | Nearly Impossible | Walk across a thin rope                                                                                                                                 |
 | Godly             | Walk across a strand of silk in a the middle of a raging storm                                                                                          |
 
-##### Sleight of Hand Skill
+#### Sleight of Hand Skill
 
 Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Sleight of Hand check. You might also need a Sleight of Hand check to determine whether you can lift a coin purse off another 
 person or slip something out of another person's pocket. 
@@ -310,11 +310,11 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 | Nearly Impossible | Remove a money pouch from a money belt that is worn under the victims small-cloths.                                                                     |
 | Godly             | Remove a money pouch from a money belt that is worn under a watchful victims small-cloths who knows you are going to steal from them                    |
 
-#### Stamina Characteristics
+### Stamina Characteristics
 
 **Stamina** represents the overall ability that being can push themselves physically.
 
-##### Drive / Ride / Pilot Skill
+#### Drive / Ride / Pilot Skill
 
 Whenever you attempt to ride a horse for a long period of time or over rough terrain, pilot a boat down a raids or a busy river, or operate a method of transportation in any way that is taxing in any way you will need to make a Drive / Ride / Pilot roll to stay on the task and successfully arrive at your destination.
 
@@ -334,7 +334,7 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 | Nearly Impossible | Sail or pilot a vehicle on treacherous terrain it wasn't made for (a rowboat in a storm or a 2 wheel drive passenger vehicle in a swamp).                                                                                           |
 | Godly             | Sail or pilot a vehicle on terrain that doesn't make sense. For example, Row a boat up a hill. Drive a 2 wheeled passenger vehicle under a lake.                                                                                    |
 
-##### Ruggedness Skill
+#### Ruggedness Skill
 
 Make a Ruggedness check when you attempt to Force open a stuck, locked, or barred door, break free of bonds, push through a tunnel that is too small. You might also need a Ruggedness check to see if you can hang on to a wagon while being dragged behind it, tip over a statue, or keep a boulder from rolling.
 
@@ -354,7 +354,7 @@ Typical Specializations:
 | Nearly Impossible | Win a drinking contest and then find your way home safely without first resting                                                                                                                                                                               |
 | Godly             | Win a drinking contest against a known drunk and a dance contest against a professional dancer. At the same time.                                                                                                                                             |
 
-##### Unarmed Combat Skill
+#### Unarmed Combat Skill
 
 Your Unarmed Combat ability check measures your character's ability to attack and survive in an unarmed combat.
 
@@ -374,13 +374,13 @@ Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestli
 | Nearly Impossible | Break metallic armor with a punch or kick.                                                                                                                                                                                                                    |
 | Godly             | Break metallic armor with a touch                                                                                                                                                                                                                             |
 
-### Mental Aspects
+## Mental Aspects
 
-#### Intellect Characteristic
+### Intellect Characteristic
 
 **Intellect** represents the overall ability of the being to mentally understand the world around them.
 
-##### Social Sciences Skill
+#### Social Sciences Skill
 
 Your Social Science check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.
 
@@ -400,7 +400,7 @@ Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, P
 | Nearly Impossible | Understand the lineage and ethnicity of someone based on observation only                                                                                                                                                                                     |
 | Godly             | Identify a common person using by their burial marker, tombstone, or other obscure information about them. Discover an ancient secret, no longer known to any mortals.                                                                                        |
 
-##### Life Sciences Skill
+#### Life Sciences Skill
 
 A life sciences check lets you try to stabilize a dying companion or diagnose an illness as well as allow you to recall other important information about living organisms.
 
@@ -420,7 +420,7 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 | Nearly Impossible | Attend to someone in critical condition who has died of physical body trauma                                                                                                                                                                                  |
 | Godly             | Reattach limbs, set broken bones, and grow them with herbal remedies and simple tools                                                                                                                                                                         |
 
-##### Physical Sciences / Survival Skill
+#### Physical Sciences / Survival Skill
 
 Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
 
@@ -440,11 +440,11 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 | Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |
 | Godly             | Construct a fire under water                                                                                                                                                                                                                                  |
 
-#### Reasoning Characteristics
+### Reasoning Characteristics
 
 **Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
 
-##### Engineering Skill
+#### Engineering Skill
 
 
 **Description of the Engineering skill:**
@@ -488,8 +488,7 @@ Engineering measures the ability to apply technological knowledge and expertise 
 | Nearly Impossible   | Developing and constructing a prototype of a teleportation device.                                                                                                                                                                                                                                                                                                                     |
 | Godly               | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world.                                                                                                                                                                                     |
 
-
-##### Insight Skill
+#### Insight Skill
 
 **Description of the Insight skill:**
 Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
@@ -533,7 +532,7 @@ Insight measures the ability to discern the true intentions and emotions of othe
 | Godly               | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
 
 
-##### Investigation Skill
+#### Investigation Skill
 
 When you look around for clues and make deductions based on those clues,
 you make an Investigation check. You might deduce the location of a
@@ -542,9 +541,6 @@ weapon dealt it, or determine the weakest point in a tunnel that could
 cause it to collapse.
 
 Typical Specializations: Crime Scene Analysis, Forensic Examination, Fingerprints and Traces, Ballistics Investigation, Trace Evidence Interpretation, Deductive Reasoning, Surveillance Techniques, Witness Interviewing, Cold Case Investigation, Pattern Recognition, Footprint and Tire Track Analysis, Document Analysis, Cyber Investigation, Cryptography and Codebreaking
-
-
-
 
 | Level of Difficulty | Investigation  |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -560,12 +556,12 @@ Typical Specializations: Crime Scene Analysis, Forensic Examination, Fingerprint
 | Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years. |
 | Godly | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
 
-#### Acuity Characteristics
+### Acuity Characteristics
 
 **Acuity** represents the overall ability of the being to harmonize
 conflicts in their understanding by pushing themselves mentally.
 
-##### Traditions Skill
+#### Traditions Skill
 
 The Traditions skill encompasses a deep understanding of cultural norms, social etiquettes, and bureaucratic systems within various groups and organizations. Possessing this skill allows individuals to navigate complex social situations with ease, whether dealing with different ethnicities, religious communities, governmental bodies, or informal social circles. It enables them to grasp the unspoken rules, greetings, taboos, and bureaucratic requirements crucial for successful interactions, ensuring smooth dealings and favorable outcomes.
 
@@ -588,7 +584,7 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 | Godly                    | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy.                                                                                                                                                                                                                                    |
 
 
-##### Perception Skill
+#### Perception Skill
 
 The Perception skill represents an individual's heightened awareness and keenness of their senses, enabling them to spot, hear, or detect the presence of concealed or obscured elements in their surroundings. This skill is crucial for eavesdropping on conversations, detecting hidden threats, and noticing subtle clues or danger in various environments. Whether it's spotting lurking enemies in the shadows or identifying concealed objects behind closed doors, Perception allows characters to remain vigilant and attentive to their environment.
 
@@ -610,9 +606,7 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 | Nearly Impossible        | Seeing through a powerful illusion that even confounds other skilled magic users.                                                                                                                                                                                                                                                                     |
 | Godly                    | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells.                                                                                                                                                                                                                                                                           |
 
-
-
-##### Formal Sciences Skill
+#### Formal Sciences Skill
 
 Your Formal Science skill is used when you are attempting to understand
 any formal system such as logic, mathematics, statistics, information
@@ -659,16 +653,14 @@ Here's the merged table with Formal Sciences Examples aligned with their respect
 | Nearly Impossible        | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                              |
 | Godly                    | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                                                 |
 
+## Social Aspects
 
-
-### Social Aspects
-
-#### Manners Characteristics
+### Manners Characteristics
 
 **Manners** represents the overall ability of the being to socially
 understand the world around them
 
-##### Style Skill
+#### Style Skill
 
 Style is the ability to understand the mindset of the public or a specific audience and skillfully create cultural artifacts, such as dresses, paintings, sculptures, poems, or other artistic pursuits, to delight and captivate them. It involves a keen sense of aesthetics, creativity, and the capacity to evoke emotions through artistic expression.
 
@@ -711,8 +703,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 |Nearly Impossible|Creating an iconic and trendsetting fashion collection that influences the industry.|
 |Godly|Choreographing an extraordinary and groundbreaking dance performance that leaves audiences in awe.|
 
-
-##### Performance Skill
+#### Performance Skill
 
 **Description of the Performance skill:** Performance is the ability to captivate and delight an audience through various forms of entertainment, such as music, dance, acting, storytelling, or other artistic expressions. It involves a combination of talent, skill, charisma, and stage presence to evoke emotions, engage the audience, and leave a lasting impression.
 
@@ -752,8 +743,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 | Nearly Impossible        | Engaging a diverse crowd through an improvised stand-up comedy act.                                                                                                                                                                                                                                                                                     |
 | Godly                    | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved.                                                                                                                                                                                                                                           |
 
-
-##### Etiquette Skill
+#### Etiquette Skill
 
 **Description of the Etiquette skill:** Etiquette is the art of knowing and applying the proper social customs, protocols, and behaviors in various situations to interact gracefully with individuals from different backgrounds. It involves understanding the appropriate ways to communicate, behave, and show respect to others, ensuring smooth interactions and fostering positive relationships.
 
@@ -796,12 +786,12 @@ Style is the ability to understand the mindset of the public or a specific audie
 |Nearly Impossible | Seduce someone who knows you don't share compatible sexual values.                                                                                                                                                                                            |
 | Godly             | Successfully mediating and resolving intense conflicts between warring factions or nations with superior diplomacy and tact. |
 
-#### Personality Characteristics
+### Personality Characteristics
 
 **Personality** represents the overall ability of the being to conform
 their own actions to create the outcomes they want.
 
-##### Deception Skill
+#### Deception Skill
 
 **Description of the Deception Skill:**
 The Deception skill measures the ability to convincingly hide the truth, whether through verbal means or actions. This skill encompasses a wide range of deceptive practices, from misleading others through ambiguity to outright lying. Characters proficient in Deception can fast-talk guards, con merchants, earn money through gambling, pass themselves off in disguises, offer false assurances to dull suspicions, or maintain a straight face while telling blatant lies.
@@ -844,7 +834,7 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 | Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.                                                                                                                                                                                                                                                   |
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept.                                                                                                                                                                                                      | A Deception check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Examples include: lie to your spouse and make them believe it; bluster and blather your way out of responsibility; use innuendo to say one thing and mean another thing; engage in wordplay to appear smarter; blend into a crowd; bluff your way into a dinner party; understand secret languages without training in the skill; appear innocent in front of a professional interrogator; lie to your parents and make them believe it; lie to someone about an observable fact or something about themselves and have them believe it. |
 
-##### Persuasion Skill
+#### Persuasion Skill
 
 Persuasion is the ability to influence others using tact, social graces, and good nature. It involves fostering friendships, making cordial requests, and exhibiting proper etiquette. With persuasion, you can convince people to see things from your perspective, negotiate peace between warring tribes, inspire crowds, or gain favor with influential figures."
 
@@ -885,7 +875,7 @@ Specializations for the Persuasion skill:
 | Nearly Impossible | Convince the Greek kings to make war on Troy now that Paris has stolen Helen of Sparta. Convince King Priam and Queen Hecuba of Troy that Alexander / Paris's idea of stealing Helena was a good idea and support him.                                                                      |
 | Godly             | Convince a spirit to share their true name with you. Convince a dragon to tell you the secret location of its horde                                                                                                                                                                         |
 
-##### Intimidation Skill
+#### Intimidation Skill
 
 "Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions."
 
@@ -926,12 +916,11 @@ Specializations for the Intimidation skill:
 |Nearly Impossible|Confronting a legendary dragon or a fearsome supernatural being, commanding them to obey or leave an area. Force a king or high priest to abandon their post for their crimes.|
 |Godly|Instilling dread in a cosmic entity or otherworldly being, making them hesitate to challenge your will. Force a king or high priest to abandon their post for your crimes.|
 
-
-#### Identity Characteristics
+### Identity Characteristics
 
 **Identity** represents the overall ability of the being to harmonize conflicts in the society they exist in by pushing themselves socially.
 
-##### Bureaucracy Skill
+#### Bureaucracy Skill
 
 The skill Bureaucracy means you need to understand the bureaucratic structures of a group and how they can be used to create the outcomes you need. This can be understanding how local politicians work, how to incentivize law enforcement, or the rules of churches or other formalized social structures of a corporation or social group.
 
@@ -972,7 +961,7 @@ Specializations for Bureaucracy:
 |Nearly Impossible|Spearheading a global humanitarian initiative that involves coordination with multiple international organizations and governments.|
 |Godly|Initiating and leading a massive, worldwide bureaucratic reform movement that reshapes how governments and organizations function and interact on a global scale.|
 
-##### Animal Handling Skill
+#### Animal Handling Skill
 
 The skill Animal Handling means when there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, you might need an Animal Handling check. You also make an Animal Handling check to control your mount when you attempt a risky maneuver.
 
@@ -1013,8 +1002,7 @@ Specializations for Animal Handling:
 |Nearly Impossible|Rehabilitating a severely injured and frightened wild animal to the point where it can be released back into its natural habitat. Groom an undomesticated wild beast.|
 |Godly|Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.|
 
-
-##### Leadership Skill
+#### Leadership Skill
 
 The Leadership skill is the ability to inspire others to become the best versions of themselves, guiding and motivating them towards a common goal while fostering a positive and empowering environment.
 
@@ -1040,7 +1028,6 @@ Specializations for Leadership:
 19. Building a Supportive Network
 20. Ethical and Responsible Leadership
 
-
 | Level of Difficulty             | Leadership Skill                                                                                                                                                                                                                                                                                                                                                |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically guiding a group of children in a fun and educational activity. Incite peasants to violence in the wake of a doom, curse, or other form of spiritual influence.                                                                                                                                                                                                                                            |
@@ -1055,12 +1042,9 @@ Specializations for Leadership:
 | Nearly Impossible | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                                                       |
 | Godly             | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                                                       |
 
+## Spirituality Aspects
 
-
-
-### Spirituality Aspects
-
-#### Skepticism Characteristics
+### Skepticism Characteristics
 
 In the realm of Skepticism, you will encounter three distinct branches: Arcane, Gnostic, and Chaos.
 
@@ -1070,7 +1054,7 @@ Moving on to Gnostic magic, you delve deep into esoteric knowledge and hidden tr
 
 Then comes Chaos magic, where skepticism takes a different turn. Rather than seeking well-defined systems, you embrace the unpredictable and chaotic nature of magic itself. You find power in the fluidity of belief and the ability to shift paradigms, drawing from various traditions and symbols without becoming tied to any one of them. Your skepticism becomes a weapon against dogma, allowing you to remain adaptable and open-minded.
 
-##### Spells of the Skeptic
+#### Spells of the Skeptic
 
 - **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
 - **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
@@ -1090,7 +1074,7 @@ Then comes Chaos magic, where skepticism takes a different turn. Rather than see
 
 As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
 
-##### Ethereal  
+#### Ethereal  
 
 TODO: Fix this
 
@@ -1102,7 +1086,7 @@ own to chart.
 
 Ultimately, being an Arcane mage transcends mere power and knowledge. It is a journey of self-discovery and understanding, where you become a beacon of mystic wisdom and a guardian of the sacred secrets that shape existence itself.
 
-###### Ethereal Archetypes
+##### Ethereal Archetypes
 
 - **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
 - **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
@@ -1115,7 +1099,7 @@ Ultimately, being an Arcane mage transcends mere power and knowledge. It is a jo
 
 These Ethereal Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
-###### Unique Ethereal Magical Spells
+##### Unique Ethereal Magical Spells
 
 - **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
 - **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
@@ -1146,7 +1130,7 @@ These Ethereal Caster archetypes bring a sense of wonder and mystique to fiction
 
 Please note that the difficulty ratings provided in the table are relative and can vary depending on the specific system or setting in which the magical practice is being used.
 
-##### Gnosis
+#### Gnosis
 
 As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
 
@@ -1154,7 +1138,7 @@ In this mystical tradition, you encounter the idea of the Demiurge, an imperfect
 
 Throughout your quest, you encounter potent symbols like the Ouroboros and the Tree of Life, aiding in contemplation and meditation, guiding you towards a deeper understanding of the universe and your place in it. As you embrace this inward journey, shedding illusions and gaining profound insights, you experience a transformation that awakens the spiritual dimensions of reality within you. The Gnostic path leads you to discover the oneness that unites all beings, fostering a profound and enlightening experience of self-discovery and spiritual growth.
 
-###### Gnostic Archtypes
+##### Gnostic Archtypes
 
 - **The Seeker:** This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
 - **The Savior:** The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
@@ -1163,7 +1147,7 @@ Throughout your quest, you encounter potent symbols like the Ouroboros and the T
 - **The Chosen One:** This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.
 - **The Redeemer:** The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
 
-###### Unique Gnostic Magical Spells
+##### Unique Gnostic Magical Spells
 
 - **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
 - **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
@@ -1196,7 +1180,7 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 | Nearly Impossible | Transcending the material world entirely or unraveling the secrets of the Demiurge's creation to rewrite the cosmic order. These acts shape the course of history.                                                 |
 | Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
 
-##### Chaos
+#### Chaos
 
 In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
 
@@ -1204,7 +1188,7 @@ As you delve deeper into Chaos mysticism, you discover the art of sigilization�
 
 In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmony. You understand that chaos and order, creation and destruction, are not opposing forces but essential parts of the cosmic dance. Embracing the unknown becomes a source of strength as you navigate the ever-changing currents of existence. You become the weaver of possibilities, the dancer of chaos, and the shaper of your own reality. Through this transformative journey, you experience the profound joy of exploring the boundless realms of consciousness.
 
-#### Chaos Archtypes
+##### Chaos Archtypes
 
 - **The Trickster:** This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.
 - **The Shapeshifter:** Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.
@@ -1216,7 +1200,7 @@ In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmon
 - **The Unconventional Hero:** Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.
 - **The Laughing Mystic:** This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.
 
-#### Unique Chaos Magical Spells
+##### Unique Chaos Magical Spells
 
 - **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
 - **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
@@ -1371,7 +1355,7 @@ Remember that as a Physical Adept, your spells revolve around maintaining harmon
 
 As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
 
-##### Order Skill
+##### Order 
 
 In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
 
@@ -1417,7 +1401,7 @@ These spells exemplify the precise, structured, and balanced nature of Order Mag
 | Nearly Impossible | In an act of ultimate mastery, weave together the threads of time and space, temporarily freezing the progression of time in an entire realm to restore order to the chaotic world. This legendary task is the epitome of Order magic and will immortalize the mage's name in history.               |
 | Godly             | Achieve absolute synchronization with the cosmic forces, becoming one with the fabric of reality itself. In this transcendent state, the mage temporarily attains godlike powers, bringing complete balance and harmony to the universe for a fleeting moment before returning to their mortal form. |
 
-#### Mystery Characteristics
+### Mystery Characteristics
 
 Finally, you encounter the enigmatic realm of Mystery, where three paths beckon: Metaphysics, Animism, and Shamanism.
 
@@ -1427,7 +1411,7 @@ As an Animist, you understand that all things possess a spiritual essence. You c
 
 Lastly, Shamanism leads you on a path of spiritual connection and healing. Your faith lies in the guidance of ancestral spirits and totemic beings. As you journey between the physical and spiritual realms, you serve as an intermediary, bringing wisdom, healing, and balance to your community. Your mystical experiences empower you to traverse the veil between worlds.
 
-##### Unique Magical Spells to Mystery
+#### Unique Magical Spells to Mystery
 
 - **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
 - **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
@@ -1447,7 +1431,7 @@ Lastly, Shamanism leads you on a path of spiritual connection and healing. Your 
 
 These spells draw upon the mysteries of the universe, tapping into psychic abilities, manipulating ethereal energies, and exploring the realms beyond ordinary comprehension. As a practitioner of Mystery magic, you possess a unique set of skills that allow you to traverse the boundaries of reality and harness the profound forces of the unknown.
 
-##### Metaphysics  
+#### Metaphysics  
 
 In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
 
@@ -1455,7 +1439,7 @@ Psionics expands your horizons with a broader range of psychic phenomena. Astral
 
 In your pursuit of mastering Metaphysics, you realize that these abilities go beyond mere tricks. Instead, they represent a profound interplay between consciousness and reality. By honing your mind and embracing the mysteries of existence, you unlock the true potential of these extraordinary gifts, elevating your understanding of the universe and your place within it.
 
-#### Metaphysical Archtypes
+##### Metaphysical Archtypes
 
 - **The Psychic Seer:** This archetype embodies the concept of clairvoyance and precognition. The Psychic Seer possesses the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate.
 - **The Manipulator:** Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.
@@ -1464,7 +1448,7 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 - **The Empathic Healer:** Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.
 - **The  Oracle:** Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinies and guide pivotal decisions.
 
-#### Unique Metaphysical Magical Spells
+##### Unique Metaphysical Magical Spells
 
 - **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
 - **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
@@ -1497,7 +1481,7 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 | Nearly Impossible | Using astral projection to venture into the depths of an uncharted, otherworldly realm and returning with profound knowledge or a rare artifact.                                                                           |
 | Godly             | Achieving an extraordinary feat of time manipulation, briefly altering the timeline to prevent a catastrophic event or restore harmony to a torn reality, requiring the cooperation of other powerful beings or artifacts. |
 
-##### Animism Skill
+#### Animism
 
 In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
 
@@ -1505,7 +1489,7 @@ As an Animist, you become attuned to the rhythms of nature, sensing the whispers
 
 Your empathy grows, allowing you to perceive the hidden spiritual essence within others, healing their wounds and bringing harmony to their souls. Animism becomes more than just a belief system; it transforms your way of life, instilling wonder in the ordinary and fostering a sense of interconnectedness with all living beings. As an Animist, you embrace the eternal spirit flowing through everything, forever changed by the profound wisdom of this magical world.
 
-#### Animism Archtypes
+##### Animism Archtypes
 
 - **Spirit Whisperer:** The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.
 - **Elemental Shaper:** The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.
@@ -1515,7 +1499,7 @@ Your empathy grows, allowing you to perceive the hidden spiritual essence within
 - **Ancestral Channeler:** The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.
 - **Communal Weave:** The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.
 
-#### Unique Animism Magical Spells
+##### Unique Animism Magical Spells
 
 - **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
 - **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
@@ -1546,7 +1530,7 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 | Nearly Impossible | Attempting to commune with the ancient spirits of a long-lost civilization that holds the key to unlocking powerful secrets of the universe, requiring a group of legendary Animists to channel their collective energies and focus to maintain the connection.                                    |
 | Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
 
-##### Shamanism Skill
+#### Shamanism
 
 Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
 
@@ -1554,7 +1538,7 @@ In Shamanism, you enter altered states of consciousness through various methods 
 
 The practice of Shamanism requires a profound sense of humility and respect for the spirits and the natural world. You embrace the responsibility of maintaining harmony with the ecosystem and fostering reverence for the interconnected web of life. Your role as a shaman is that of a guardian, a healer, and a spiritual guide, guided by the ethereal forces that shape the cosmos.
 
-#### Shamanism Archtypes
+##### Shamanism Archtypes
 
 - **The Wise Shaman:** This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.
 - **The Nature Channeler:** This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.
@@ -1563,7 +1547,7 @@ The practice of Shamanism requires a profound sense of humility and respect for 
 - **The Balance Keeper:** The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.
 - **The Shadow Shaman:** This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.
 
-#### Unique Shamanism Magical Spells
+##### Unique Shamanism Magical Spells
 
 - **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
 - **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
