@@ -25,7 +25,7 @@ categories:
   - FAME
   - The Märchen Engine
   - Draft
-draft-status: notes
+draft-status: integration
 mathjax: true
 ---
 <style>
