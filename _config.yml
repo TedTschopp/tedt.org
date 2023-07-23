@@ -189,7 +189,7 @@ links:
   - Name: Threads
     URL: https://threads.net
     Username: '@TedTschopp'
-    Icon-Class: fa-solid fa-at
+    Icon-Class: fa-solid fa-t
     Color: '#000000'
     Text_Color: '#ffffff'
 
