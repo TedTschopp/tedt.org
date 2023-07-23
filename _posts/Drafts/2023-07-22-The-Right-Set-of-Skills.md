@@ -195,12 +195,10 @@ characteristics.
 > -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
 > You can roll this instead of because you are to get this answer even though you have no formal training in the gods of your religion, which would be Theurgy.
 
-▩ = Skilled - Skilled. Contributes to Total.
-
 ▣ = Competent – You have experiences of being successful at this level.
 However, you have not had formal training at this level. You may only
 use the Aspects and Characteristics associated with this Knowledge Area
-at this level. Additionally, some equiptment and actions require formal training.  
+at this level. Remember, Some equipment, weapons, and actions require professional training to use them.
 
 ▢ = Unskilled - You have no Experience and you are not Skilled. Does not
 contribute to Total.
