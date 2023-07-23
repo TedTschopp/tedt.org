@@ -175,7 +175,7 @@ Each Level in a knowledge area represents a grade level with level 0 being the k
 
 # Bringing it all Together
 
-## Physical Aspects
+## Fitness Aspects
 
 ### Muscle Characteristics
 
@@ -375,7 +375,7 @@ Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestli
 | Nearly Impossible | Break metallic armor with a punch or kick.                                                                                                                                                                                                                    |
 | Godly             | Break metallic armor with a touch                                                                                                                                                                                                                             |
 
-## Mental Aspects
+## Academic Aspects
 
 ### Intellect Characteristic
 
@@ -654,7 +654,7 @@ Here's the merged table with Formal Sciences Examples aligned with their respect
 | Nearly Impossible        | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                              |
 | Godly                    | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                                                 |
 
-## Social Aspects
+## Emotional Aspects
 
 ### Manners Characteristics
 
@@ -1043,7 +1043,7 @@ Specializations for Leadership:
 | Nearly Impossible | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                                                       |
 | Godly             | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                                                       |
 
-## Spirituality Aspects
+## Mystical Aspects
 
 ### Skepticism Characteristics
 
