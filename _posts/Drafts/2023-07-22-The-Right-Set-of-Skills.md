@@ -43,6 +43,9 @@ mathjax: true
   - [Aspects](#aspects){: .WinerAnchor}
   - [Characteristics](#characteristics){: .WinerAnchor}
   - [Knowledge Areas](#knowledge-areas){: .WinerAnchor}
+  - [Task Resolution](#task-resolution){: .WinerAnchor}
+    - [Difficulty](#difficulty){: .WinerAnchor}
+    - [Effect: Degrees of Effect Defined](#effect-degrees-of-effect-defined){: .WinerAnchor}
 - [Bringing it all Together](#bringing-it-all-together){: .WinerAnchor}
   - [Fitness Aspects](#fitness-aspects){: .WinerAnchor}
     - [Muscle Characteristics](#muscle-characteristics){: .WinerAnchor}
@@ -75,7 +78,7 @@ mathjax: true
       - [Style Knowledge Areas](#style-knowledge-areas){: .WinerAnchor}
       - [Performance Knowledge Areas](#performance-knowledge-areas){: .WinerAnchor}
       - [Etiquette Knowledge Areas](#etiquette-knowledge-areas){: .WinerAnchor}
-    - [Personality Characteristics](#personality-characteristics{: .WinerAnchor})
+    - [Personality Characteristics](#personality-characteristics){: .WinerAnchor}
       - [Deception Knowledge Areas](#deception-knowledge-areas){: .WinerAnchor}
       - [Persuasion Knowledge Areas](#persuasion-knowledge-areas){: .WinerAnchor}
       - [Intimidation Knowledge Areas](#intimidation-knowledge-areas){: .WinerAnchor}
@@ -256,6 +259,76 @@ Total.
 ▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
+
+## Task Resolution
+
+The Märchen Engine allows play players to pick between several different
+mechanics to resolve actions. They are as follows: D10, D20, D100, 2d6,
+3d6, and 4d7.
+
+Using the Märchen Engine, when you make a die roll to resolve an action
+by rolling the chosen set of dice and checking to see what the σ is for
+those results. Now add all the Dice Modifiers (⚅) for the given
+situation to the σ. This will give you a final number. This is called a
+check. You always want to roll high on a check. The symbol of ⥣
+represents the number required for a success when you do not need to
+determine a σ.
+
+| σ  | 1d20  | 2d6     | 2d8   | 3d6     | 4d7     | 8D4(dreidels) | D100    |
+|----|-------|---------|-------|---------|---------|---------------|---------|
+| -4 | 1-3   | NA      | 2     | 3       | 4       | 8 - 9         | 1       |
+| -3 | 4-5   | 2       | 3-4   | 4 – 5   | 5 – 7   | 10 – 11       | 2 – 3   |
+| -2 | 6-7   | 3 – 4   | 5-6   | 6 – 7   | 8 – 11  | 12 – 15       | 4 – 18  |
+| -1 | 8-10  | 5 – 7   | 7-8   | 8 – 11  | 12 – 16 | 16 – 20       | 19 – 51 |
+| ⥣  | 11    | 8       | 9     | 12      | 17      | 21            | 52      |
+| 1  | 11-13 | 8 – 9   | 10-11 | 12 – 13 | 17 – 20 | 21 – 24       | 52 – 81 |
+| 2  | 14-15 | 10 – 11 | 12-13 | 14 – 15 | 21 – 24 | 25 – 28       | 82 – 96 |
+| 3  | 16-17 | 12      | 14-15 | 16 – 17 | 25 – 27 | 29 – 30       | 97 – 99 |
+| 4  | 18-20 | NA      | 16    | 18      | 28      | 31 – 32       | 100     |
+
+### Difficulty
+
+A check's Difficulty is a number set by the Referee that modifies your
+check result. When no Difficulty is given, the assumed Difficulty is
+⚅+0. So, for a task with a Difficulty of ⚅+2, you must add +2 to the
+check result. You succeed on a total of the Success Number (⥣) or
+better. The list of Difficulty ratings can be found in the Task
+Difficulty table.
+
+| Difficulty        |                                                                                                                                                                                                                                                                                                                                             | D20 | 2d6 | 2d8 | 3d6 | 4d7 | 8D4(dreidels) | D100 |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----|:----|:----|:----|:----|:--------------|:-----|
+| Trivial           | Something that is automatically done                                                                                                                                                                                                                                                                                                        |     |     | 8   | 9   | 15  |               |      |
+| Simple            | Requires a minimum level of competence or a bit of luck toaccomplish.                                                                                                                                                                                                                                                                       | 5   | 6   | 6   | 7   | 10  |               |      |
+| Easy              | Requires a minimum level of competence or a bit of luck toaccomplish.                                                                                                                                                                                                                                                                       | 10  | 4   | 5   | 5   | 5   |               |      |
+| Routine           | Requires a bit more competence to accomplish. Can be completed moreoften than not by a character with natural aptitude.                                                                                                                                                                                                                     | 15  | 2   | 3   | 3   | 4   |               |      |
+| Average           | Requires a bit more competence to accomplish. Can be completed moreoften than not by a character if they have received exposure to theskill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                  |     | 0   | 0   | 0   | 0   |               |      |
+| Difficult         | Generally anything that takes actual training. This is the skilledwork of a professional doing what they are paid to do. Include anythingbeyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luckto pull it off (or maybe some specialized training). | 20  | -2  | -3  | -3  | -4  |               |      |
+| Very Difficult    | Even with a bit of training and skill you still need some luck topull it off (or maybe some specialized training). Include anythingbeyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                              | 25  | -4  | -5  | -5  | -5  |               |      |
+| Formidable        | Achievable only by especially talented individuals. Nobody elseshould even bother trying. This is on the level of superstars.                                                                                                                                                                                                               | 30  | -6  | -6  | -7  | -10 |               |      |
+| Heroic            | Achievable only by the most trained, experienced, and talentedsuperstars, and they probably still need help to pull it off. This is aonce or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                |     |     | -8  | -9  | -15 |               |      |
+| Nearly Impossible | An epic feat on which legendary tales are based on. The namedmasters of a skill come from acts such as these. You will be in thehistory books.                                                                                                                                                                                              |     |     |     |     | -25 |               |      |
+| Godly             | Can't be done without assistance unless you're basically ademigod.                                                                                                                                                                                                                                                                          |     |     |     |     | -30 |               |      |
+
+In some cases, the consequences of a check vary based on how much the
+check result is above or below the target of 8. The difference between
+the check result and the target of 8 is called the Effect.
+
+### Effect: Degrees of Effect Defined
+
+There are nine separate ways a predicament can be resolved:
+
+| Degree of Effect | Final σ | ± %  | -0 | \- | \+ | +0 | Final Result |
+|------------------|---------|------|----|----|----|----|--------------|
+| Catastrophic     | -4      | 400% | 7  | 8  | 1  | 0  | 4            |
+| Costly           | -3      | 200% | 6  | 7  | 2  | 1  | 5 – 7        |
+| Fail             | -2      | 150% | 5  | 6  | 3  | 2  | 8 – 11       |
+| Minor Fail       | -1      | 100% | 4  | 5  | 4  | 3  | 12 – 14      |
+| Fail in Style    | -1      | 100% | 4  | 5  | 4  | 3  | 15           |
+| Tie              | 0       | 100% | 3  | 4  | 5  | 4  | 16           |
+| Succeed          | 1       | 100% | 3  | 4  | 5  | 4  | 17 – 20      |
+| Succeed In Style | 2       | 75%  | 2  | 3  | 6  | 5  | 21 – 24      |
+| Critical         | 3       | 50%  | 1  | 2  | 7  | 6  | 25 – 27      |
+| Serendipitous    | 4       | 25%  | 0  | 1  | 8  | 7  | 28           |
 
 # Bringing it all Together
 
