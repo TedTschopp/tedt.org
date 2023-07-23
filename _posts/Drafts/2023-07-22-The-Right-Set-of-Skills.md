@@ -37,11 +37,89 @@ mathjax: true
 }
 </style>
 
-# Contents
-{:.no_toc}
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+
+# Contents
+- [Contents](#contents){.WinerAnchor}
+- [Creating Characters](#creating-characters){.WinerAnchor}
+  - [Aspects](#aspects){.WinerAnchor}
+  - [Characteristics](#characteristics){.WinerAnchor}
+  - [Knowledge Areas](#knowledge-areas){.WinerAnchor}
+- [Bringing it all Together](#bringing-it-all-together){.WinerAnchor}
+  - [Fitness Aspects](#fitness-aspects){.WinerAnchor}
+    - [Muscle Characteristics](#muscle-characteristics){.WinerAnchor}
+      - [Ranged Combat Skill](#ranged-combat-skill){.WinerAnchor}
+      - [Athletics Skill](#athletics-skill){.WinerAnchor}
+      - [Melee Combat Skill](#melee-combat-skill){.WinerAnchor}
+    - [Agility Characteristics](#agility-characteristics){.WinerAnchor}
+      - [Stealth Skill](#stealth-skill){.WinerAnchor}
+      - [Acrobatics Skill](#acrobatics-skill){.WinerAnchor}
+      - [Sleight of Hand Skill](#sleight-of-hand-skill){.WinerAnchor}
+    - [Stamina Characteristics](#stamina-characteristics){.WinerAnchor}
+      - [Drive / Ride / Pilot Skill](#drive--ride--pilot-skill){.WinerAnchor}
+      - [Ruggedness Skill](#ruggedness-skill){.WinerAnchor}
+      - [Unarmed Combat Skill](#unarmed-combat-skill){.WinerAnchor}
+  - [Academic Aspects](#academic-aspects){.WinerAnchor}
+    - [Intellect Characteristic](#intellect-characteristic){.WinerAnchor}
+      - [Social Sciences Skill](#social-sciences-skill){.WinerAnchor}
+      - [Life Sciences Skill](#life-sciences-skill){.WinerAnchor}
+      - [Physical Sciences / Survival Skill](#physical-sciences--survival-skill){.WinerAnchor}
+    - [Reasoning Characteristics](#reasoning-characteristics){.WinerAnchor}
+      - [Engineering Skill](#engineering-skill){.WinerAnchor}
+      - [Insight Skill](#insight-skill){.WinerAnchor}
+      - [Investigation Skill](#investigation-skill){.WinerAnchor}
+    - [Acuity Characteristics](#acuity-characteristics){.WinerAnchor}
+      - [Traditions Skill](#traditions-skill){.WinerAnchor}
+      - [Perception Skill](#perception-skill){.WinerAnchor}
+      - [Formal Sciences Skill](#formal-sciences-skill){.WinerAnchor}
+  - [Emotional Aspects](#emotional-aspects){.WinerAnchor}
+    - [Manners Characteristics](#manners-characteristics){.WinerAnchor}
+      - [Style Skill](#style-skill){.WinerAnchor}
+      - [Performance Skill](#performance-skill){.WinerAnchor}
+      - [Etiquette Skill](#etiquette-skill){.WinerAnchor}
+    - [Personality Characteristics](#personality-characteristics){.WinerAnchor}
+      - [Deception Skill](#deception-skill){.WinerAnchor}
+      - [Persuasion Skill](#persuasion-skill){.WinerAnchor}
+      - [Intimidation Skill](#intimidation-skill){.WinerAnchor}
+    - [Identity Characteristics](#identity-characteristics){.WinerAnchor}
+      - [Bureaucracy Skill](#bureaucracy-skill){.WinerAnchor}
+      - [Animal Handling Skill](#animal-handling-skill){.WinerAnchor}
+      - [Leadership Skill](#leadership-skill){.WinerAnchor}
+  - [Mystical Aspects](#mystical-aspects){.WinerAnchor}
+    - [Skepticism Characteristics](#skepticism-characteristics){.WinerAnchor}
+      - [Spells of the Skeptic](#spells-of-the-skeptic){.WinerAnchor}
+      - [Ethereal](#ethereal){.WinerAnchor}
+        - [Ethereal Archetypes](#ethereal-archetypes){.WinerAnchor}
+        - [Unique Ethereal Magical Spells](#unique-ethereal-magical-spells){.WinerAnchor}
+      - [Gnosis](#gnosis){.WinerAnchor}
+        - [Gnostic Archtypes](#gnostic-archtypes){.WinerAnchor}
+        - [Unique Gnostic Magical Spells](#unique-gnostic-magical-spells){.WinerAnchor}
+      - [Chaos](#chaos){.WinerAnchor}
+        - [Chaos Archtypes](#chaos-archtypes){.WinerAnchor}
+        - [Unique Chaos Magical Spells](#unique-chaos-magical-spells){.WinerAnchor}
+    - [Faith Characteristics](#faith-characteristics){.WinerAnchor}
+      - [Spells Unique to Faith](#spells-unique-to-faith){.WinerAnchor}
+      - [Theurgy Skill](#theurgy-skill){.WinerAnchor}
+        - [Theurgy Archtypes](#theurgy-archtypes){.WinerAnchor}
+        - [Unique Theurgy Magical Spells](#unique-theurgy-magical-spells){.WinerAnchor}
+      - [Adept](#adept){.WinerAnchor}
+        - [Adept Archtypes](#adept-archtypes){.WinerAnchor}
+        - [Unique Adept Magical Spells](#unique-adept-magical-spells){.WinerAnchor}
+      - [Order](#order){.WinerAnchor}
+        - [Order Archtypes](#order-archtypes){.WinerAnchor}
+        - [Unique Order Magical Spells](#unique-order-magical-spells){.WinerAnchor}
+    - [Mystery Characteristics](#mystery-characteristics){.WinerAnchor}
+      - [Unique Magical Spells to Mystery](#unique-magical-spells-to-mystery){.WinerAnchor}
+      - [Metaphysics](#metaphysics){.WinerAnchor}
+        - [Metaphysical Archtypes](#metaphysical-archtypes){.WinerAnchor}
+        - [Unique Metaphysical Magical Spells](#unique-metaphysical-magical-spells){.WinerAnchor}
+      - [Animism](#animism){.WinerAnchor}
+        - [Animism Archtypes](#animism-archtypes){.WinerAnchor}
+        - [Unique Animism Magical Spells](#unique-animism-magical-spells){.WinerAnchor}
+      - [Shamanism](#shamanism){.WinerAnchor}
+        - [Shamanism Archtypes](#shamanism-archtypes){.WinerAnchor}
+        - [Unique Shamanism Magical Spells](#unique-shamanism-magical-spells){.WinerAnchor}
+
 
 # Creating Characters
 
