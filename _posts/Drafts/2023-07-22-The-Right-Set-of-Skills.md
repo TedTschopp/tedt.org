@@ -37,88 +37,86 @@ mathjax: true
 }
 </style>
 
-
-
 # Contents
-- [Contents](#contents){.WinerAnchor}
-- [Creating Characters](#creating-characters){.WinerAnchor}
-  - [Aspects](#aspects){.WinerAnchor}
-  - [Characteristics](#characteristics){.WinerAnchor}
-  - [Knowledge Areas](#knowledge-areas){.WinerAnchor}
-- [Bringing it all Together](#bringing-it-all-together){.WinerAnchor}
-  - [Fitness Aspects](#fitness-aspects){.WinerAnchor}
-    - [Muscle Characteristics](#muscle-characteristics){.WinerAnchor}
-      - [Ranged Combat Knowledge Areas](#ranged-combat-knowledge-areas){.WinerAnchor}
-      - [Athletics Knowledge Areas](#athletics-knowledge-areas){.WinerAnchor}
-      - [Melee Combat Knowledge Areas](#melee-combat-knowledge-areas){.WinerAnchor}
-    - [Agility Characteristics](#agility-characteristics){.WinerAnchor}
-      - [Stealth Knowledge Areas](#stealth-knowledge-areas){.WinerAnchor}
-      - [Acrobatics Knowledge Areas](#acrobatics-knowledge-areas){.WinerAnchor}
-      - [Sleight of Hand Knowledge Areas](#sleight-of-hand-knowledge-areas){.WinerAnchor}
-    - [Stamina Characteristics](#stamina-characteristics){.WinerAnchor}
-      - [Drive / Ride / Pilot Knowledge Areas](#drive--ride--pilot-knowledge-areas){.WinerAnchor}
-      - [Ruggedness Knowledge Areas](#ruggedness-knowledge-areas){.WinerAnchor}
-      - [Unarmed Combat Knowledge Areas](#unarmed-combat-knowledge-areas){.WinerAnchor}
-  - [Academic Aspects](#academic-aspects){.WinerAnchor}
-    - [Intellect Characteristic](#intellect-characteristic){.WinerAnchor}
-      - [Social Sciences Knowledge Areas](#social-sciences-knowledge-areas){.WinerAnchor}
-      - [Life Sciences Knowledge Areas](#life-sciences-knowledge-areas){.WinerAnchor}
-      - [Physical Sciences / Survival Knowledge Areas](#physical-sciences--survival-knowledge-areas){.WinerAnchor}
-    - [Reasoning Characteristics](#reasoning-characteristics){.WinerAnchor}
-      - [Engineering Knowledge Areas](#engineering-knowledge-areas){.WinerAnchor}
-      - [Insight Knowledge Areas](#insight-knowledge-areas){.WinerAnchor}
-      - [Investigation Knowledge Areas](#investigation-knowledge-areas){.WinerAnchor}
-    - [Acuity Characteristics](#acuity-characteristics){.WinerAnchor}
-      - [Traditions Knowledge Areas](#traditions-knowledge-areas){.WinerAnchor}
-      - [Perception Knowledge Areas](#perception-knowledge-areas){.WinerAnchor}
-      - [Formal Sciences Knowledge Areas](#formal-sciences-knowledge-areas){.WinerAnchor}
-  - [Emotional Aspects](#emotional-aspects){.WinerAnchor}
-    - [Manners Characteristics](#manners-characteristics){.WinerAnchor}
-      - [Style Knowledge Areas](#style-knowledge-areas){.WinerAnchor}
-      - [Performance Knowledge Areas](#performance-knowledge-areas){.WinerAnchor}
-      - [Etiquette Knowledge Areas](#etiquette-knowledge-areas){.WinerAnchor}
-    - [Personality Characteristics](#personality-characteristics){.WinerAnchor}
-      - [Deception Knowledge Areas](#deception-knowledge-areas){.WinerAnchor}
-      - [Persuasion Knowledge Areas](#persuasion-knowledge-areas){.WinerAnchor}
-      - [Intimidation Knowledge Areas](#intimidation-knowledge-areas){.WinerAnchor}
-    - [Identity Characteristics](#identity-characteristics){.WinerAnchor}
-      - [Bureaucracy Knowledge Areas](#bureaucracy-knowledge-areas){.WinerAnchor}
-      - [Animal Handling Knowledge Areas](#animal-handling-knowledge-areas){.WinerAnchor}
-      - [Leadership Knowledge Areas](#leadership-knowledge-areas){.WinerAnchor}
-  - [Mystical Aspects](#mystical-aspects){.WinerAnchor}
-    - [Skepticism Characteristics](#skepticism-characteristics){.WinerAnchor}
-      - [Spells of the Skeptic](#spells-of-the-skeptic){.WinerAnchor}
-      - [Ethereal Knowledge Areas](#ethereal-knowledge-areas){.WinerAnchor}
-        - [Ethereal Archetypes](#ethereal-archetypes){.WinerAnchor}
-        - [Unique Ethereal Magical Spells](#unique-ethereal-magical-spells){.WinerAnchor}
-      - [Gnosis Knowledge Areas](#gnosis-knowledge-areas){.WinerAnchor}
-        - [Gnostic Archtypes](#gnostic-archtypes){.WinerAnchor}
-        - [Unique Gnostic Magical Spells](#unique-gnostic-magical-spells){.WinerAnchor}
-      - [Chaos Knowledge Areas](#chaos-knowledge-areas){.WinerAnchor}
-        - [Chaos Archtypes](#chaos-archtypes){.WinerAnchor}
-        - [Unique Chaos Magical Spells](#unique-chaos-magical-spells){.WinerAnchor}
-    - [Faith Characteristics](#faith-characteristics){.WinerAnchor}
-      - [Spells Unique to Faith](#spells-unique-to-faith){.WinerAnchor}
-      - [Theurgy Knowledge Areas](#theurgy-knowledge-areas){.WinerAnchor}
-        - [Theurgy Archtypes](#theurgy-archtypes){.WinerAnchor}
-        - [Unique Theurgy Magical Spells](#unique-theurgy-magical-spells){.WinerAnchor}
-      - [Adept Knowledge Areas](#adept-knowledge-areas){.WinerAnchor}
-        - [Adept Archtypes](#adept-archtypes){.WinerAnchor}
-        - [Unique Adept Magical Spells](#unique-adept-magical-spells){.WinerAnchor}
-      - [Order Knowledge Areas](#order-knowledge-areas){.WinerAnchor}
-        - [Order Archtypes](#order-archtypes){.WinerAnchor}
-        - [Unique Order Magical Spells](#unique-order-magical-spells){.WinerAnchor}
-    - [Mystery Characteristics](#mystery-characteristics){.WinerAnchor}
-      - [Unique Magical Spells to Mystery](#unique-magical-spells-to-mystery){.WinerAnchor}
-      - [Metaphysics Knowledge Areas](#metaphysics-knowledge-areas){.WinerAnchor}
-        - [Metaphysical Archtypes](#metaphysical-archtypes){.WinerAnchor}
-        - [Unique Metaphysical Magical Spells](#unique-metaphysical-magical-spells){.WinerAnchor}
-      - [Animism Knowledge Areas](#animism-knowledge-areas){.WinerAnchor}
-        - [Animism Archtypes](#animism-archtypes){.WinerAnchor}
-        - [Unique Animism Magical Spells](#unique-animism-magical-spells){.WinerAnchor}
-      - [Shamanism Knowledge Areas](#shamanism-knowledge-areas){.WinerAnchor}
-        - [Shamanism Archtypes](#shamanism-archtypes){.WinerAnchor}
-        - [Unique Shamanism Magical Spells](#unique-shamanism-magical-spells){.WinerAnchor}
+- [Contents](#contents){: .WinerAnchor}
+- [Creating Characters](#creating-characters){: .WinerAnchor}
+  - [Aspects](#aspects){: .WinerAnchor}
+  - [Characteristics](#characteristics){: .WinerAnchor}
+  - [Knowledge Areas](#knowledge-areas){: .WinerAnchor}
+- [Bringing it all Together](#bringing-it-all-together){: .WinerAnchor}
+  - [Fitness Aspects](#fitness-aspects){: .WinerAnchor}
+    - [Muscle Characteristics](#muscle-characteristics){: .WinerAnchor}
+      - [Ranged Combat Knowledge Areas](#ranged-combat-knowledge-areas){: .WinerAnchor}
+      - [Athletics Knowledge Areas](#athletics-knowledge-areas){: .WinerAnchor}
+      - [Melee Combat Knowledge Areas](#melee-combat-knowledge-areas){: .WinerAnchor}
+    - [Agility Characteristics](#agility-characteristics){: .WinerAnchor}
+      - [Stealth Knowledge Areas](#stealth-knowledge-areas){: .WinerAnchor}
+      - [Acrobatics Knowledge Areas](#acrobatics-knowledge-areas){: .WinerAnchor}
+      - [Sleight of Hand Knowledge Areas](#sleight-of-hand-knowledge-areas){: .WinerAnchor}
+    - [Stamina Characteristics](#stamina-characteristics){: .WinerAnchor}
+      - [Drive / Ride / Pilot Knowledge Areas](#drive--ride--pilot-knowledge-areas){: .WinerAnchor}
+      - [Ruggedness Knowledge Areas](#ruggedness-knowledge-areas){: .WinerAnchor}
+      - [Unarmed Combat Knowledge Areas](#unarmed-combat-knowledge-areas){: .WinerAnchor}
+  - [Academic Aspects](#academic-aspects){: .WinerAnchor}
+    - [Intellect Characteristic](#intellect-characteristic){: .WinerAnchor}
+      - [Social Sciences Knowledge Areas](#social-sciences-knowledge-areas){: .WinerAnchor}
+      - [Life Sciences Knowledge Areas](#life-sciences-knowledge-areas){: .WinerAnchor}
+      - [Physical Sciences / Survival Knowledge Areas](#physical-sciences--survival-knowledge-areas){: .WinerAnchor}
+    - [Reasoning Characteristics](#reasoning-characteristics){: .WinerAnchor}
+      - [Engineering Knowledge Areas](#engineering-knowledge-areas){: .WinerAnchor}
+      - [Insight Knowledge Areas](#insight-knowledge-areas){: .WinerAnchor}
+      - [Investigation Knowledge Areas](#investigation-knowledge-areas){: .WinerAnchor}
+    - [Acuity Characteristics](#acuity-characteristics){: .WinerAnchor}
+      - [Traditions Knowledge Areas](#traditions-knowledge-areas){: .WinerAnchor}
+      - [Perception Knowledge Areas](#perception-knowledge-areas){: .WinerAnchor}
+      - [Formal Sciences Knowledge Areas](#formal-sciences-knowledge-areas){: .WinerAnchor}
+  - [Emotional Aspects](#emotional-aspects){: .WinerAnchor}
+    - [Manners Characteristics](#manners-characteristics){: .WinerAnchor}
+      - [Style Knowledge Areas](#style-knowledge-areas){: .WinerAnchor}
+      - [Performance Knowledge Areas](#performance-knowledge-areas){: .WinerAnchor}
+      - [Etiquette Knowledge Areas](#etiquette-knowledge-areas){: .WinerAnchor}
+    - [Personality Characteristics](#personality-characteristics{: .WinerAnchor})
+      - [Deception Knowledge Areas](#deception-knowledge-areas){: .WinerAnchor}
+      - [Persuasion Knowledge Areas](#persuasion-knowledge-areas){: .WinerAnchor}
+      - [Intimidation Knowledge Areas](#intimidation-knowledge-areas){: .WinerAnchor}
+    - [Identity Characteristics](#identity-characteristics){: .WinerAnchor}
+      - [Bureaucracy Knowledge Areas](#bureaucracy-knowledge-areas){: .WinerAnchor}
+      - [Animal Handling Knowledge Areas](#animal-handling-knowledge-areas){: .WinerAnchor}
+      - [Leadership Knowledge Areas](#leadership-knowledge-areas){: .WinerAnchor}
+  - [Mystical Aspects](#mystical-aspects){: .WinerAnchor}
+    - [Skepticism Characteristics](#skepticism-characteristics){: .WinerAnchor}
+      - [Spells of the Skeptic](#spells-of-the-skeptic){: .WinerAnchor}
+      - [Ethereal Knowledge Areas](#ethereal-knowledge-areas){: .WinerAnchor}
+        - [Ethereal Archetypes](#ethereal-archetypes){: .WinerAnchor}
+        - [Unique Ethereal Magical Spells](#unique-ethereal-magical-spells){: .WinerAnchor}
+      - [Gnosis Knowledge Areas](#gnosis-knowledge-areas){: .WinerAnchor}
+        - [Gnostic Archtypes](#gnostic-archtypes){: .WinerAnchor}
+        - [Unique Gnostic Magical Spells](#unique-gnostic-magical-spells){: .WinerAnchor}
+      - [Chaos Knowledge Areas](#chaos-knowledge-areas){: .WinerAnchor}
+        - [Chaos Archtypes](#chaos-archtypes){: .WinerAnchor}
+        - [Unique Chaos Magical Spells](#unique-chaos-magical-spells){: .WinerAnchor}
+    - [Faith Characteristics](#faith-characteristics){: .WinerAnchor}
+      - [Spells Unique to Faith](#spells-unique-to-faith){: .WinerAnchor}
+      - [Theurgy Knowledge Areas](#theurgy-knowledge-areas){: .WinerAnchor}
+        - [Theurgy Archtypes](#theurgy-archtypes){: .WinerAnchor}
+        - [Unique Theurgy Magical Spells](#unique-theurgy-magical-spells){: .WinerAnchor}
+      - [Adept Knowledge Areas](#adept-knowledge-areas){: .WinerAnchor}
+        - [Adept Archtypes](#adept-archtypes){: .WinerAnchor}
+        - [Unique Adept Magical Spells](#unique-adept-magical-spells){: .WinerAnchor}
+      - [Order Knowledge Areas](#order-knowledge-areas){: .WinerAnchor}
+        - [Order Archtypes](#order-archtypes){: .WinerAnchor}
+        - [Unique Order Magical Spells](#unique-order-magical-spells){: .WinerAnchor}
+    - [Mystery Characteristics](#mystery-characteristics){: .WinerAnchor}
+      - [Unique Magical Spells to Mystery](#unique-magical-spells-to-mystery){: .WinerAnchor}
+      - [Metaphysics Knowledge Areas](#metaphysics-knowledge-areas){: .WinerAnchor}
+        - [Metaphysical Archtypes](#metaphysical-archtypes){: .WinerAnchor}
+        - [Unique Metaphysical Magical Spells](#unique-metaphysical-magical-spells){: .WinerAnchor}
+      - [Animism Knowledge Areas](#animism-knowledge-areas){: .WinerAnchor}
+        - [Animism Archtypes](#animism-archtypes){: .WinerAnchor}
+        - [Unique Animism Magical Spells](#unique-animism-magical-spells){: .WinerAnchor}
+      - [Shamanism Knowledge Areas](#shamanism-knowledge-areas){: .WinerAnchor}
+        - [Shamanism Archtypes](#shamanism-archtypes){: .WinerAnchor}
+        - [Unique Shamanism Magical Spells](#unique-shamanism-magical-spells){: .WinerAnchor}
 
 # Creating Characters
 

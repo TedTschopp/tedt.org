@@ -36,6 +36,7 @@ draft-status: Alpha
 
 
 # Contents
+
 {:.no_toc}
 
 * Will be replaced with the ToC, excluding the "Contents" header
@@ -59,6 +60,7 @@ The following rules are based on my play testing of running Gamma World in MCC. 
 {: .well .table .table-striped}
 
 ### Mark V Blaster Pistol
+
 This unusual weapon’s ray weakens the nuclear force binding the the nuclei of atoms. All things touched by the beam disintegrate cleanly without dust or odor. This creates light, intense heat, and very little noise, and leaves an impressive 10cm hole in the target. Even the air is affected, making the beam visible as a white, near instantaneous streak. 
 
 ### Mark VII Blaster Rifle
@@ -66,9 +68,10 @@ This unusual weapon’s ray weakens the nuclear force binding the the nuclei of 
 This is a larger more effective version of the Mark V that fits into the form factor of a rifle that weakens the nuclear force binding the the nuclei of atoms. All things touched by the beam disintegrate cleanly without dust or odor. This creates light, intense heat, and very little noise, and leaves an impressive 10cm hole in the target. Even the air is affected, making the beam visible as a white, near instantaneous streak. 
 
 ### Mark XII Blaster Pistol
+
 The Mark XII Blaster is an experimental weapon built right before the great disaster  It is the favored weapon of the Knights of Genetic Purity. The Purists use this ultra-powerful beamed weapon to annihilate any visibly mutated human on sight or keep their armies of slaves in line. 
 
-## Black Ray 
+## Black Ray
 
 | Type   | Name             | TL| Comp| Range    | Radius | Dmg | Power | Ammo | Rate of Fire | Speed | Weight | Cost | Value |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
@@ -78,16 +81,19 @@ The Mark XII Blaster is an experimental weapon built right before the great disa
 {: .well .table .table-striped}
 
 ### Black Ray Pistol
+
 The ultimate hand-held weapon, it is powered by a Chemical Energy Cell good for 4 shots. Fortunately, few Black Ray Pistols are available. They instantly kill an organic target not protected by a Force Field, but have no effect on inorganic or dead organic matter or on those inside a Force Field. 
 
 This looks like a clear plastic gun stock holding a black crystal 1 foot lozenge as the barrel.  Energy is channeled from the energy cell through the crystal.  The crystal is charged if a black liquid smoke movement is seen within the crystal.  If there is no movement within the crystal, or the crystal is shattered, it needs to be replaced. 
 
 ### Black Ray Rifle
+
 The ultimate hand-held weapon, it is powered by 2 Chemical Energy Cell good for 4 shots (total). Fortunately, very few Black Ray Rifles are available. They instantly kill an organic target not protected by a Force Field, but have no effect on inorganic or dead organic matter or on those inside a Force Field. 
 
 This looks like a clear plastic rifle stock holding a black crystal 2 foot lozenge as the barrel.  Energy is channeled from the energy cell through the crystal.  The crystal is charged if a black liquid smoke movement is seen within the crystal.  If there is no movement within the crystal, or the crystal is shattered, it needs to be replaced. 
 
 ### Black Ray Cannon
+
 This dangerous piece of 24th century direct fire field gun is similar to those usually found on Warbots. It causes instant death to living targets not protected by force field. It does no damage to inanimate (non-living) targets, or targets protected by a force field.
 
 Awesomely lethal, it is almost never seen on a mobile platform, but rather as a fixed direct fire gun piece, usually supplied with Nuclear power and controlled by an automated system (cybernetic installation, think tank, etc...) or operated manually from a nearby bunker. In this configuration, the weapon has unlimited power available for firing. The black ray cannon is only very rarely seen as a field piece, mounted on a wheeled or anti-grav base that can be towed behind a vehicle. 
@@ -142,10 +148,10 @@ This is a metal disk about the size of a normal human hand. One side is strongly
 
 ## Neural Bite
 
-| Type   | Name               | TL  | Comp| Range | Radius | Dmg            | Power    | Ammo | Rate of Fire | Speed | Weight | Cost      | Value |
-| :----: | :------------:     | :-: | :-: | :-:   | :----: | :-:            | :------: | :-:  | :---------:  | :-:   | :-:    | :-:       | :-:   |  
-| Melee  | Neural Bite Mark I | 5   | 3   | Melee |        | Stun           | N/A      | 8    | 1            | N/A   | 1/2kg  | 1,200 Ð   | 600   |
-| Range  | Neural Bite Mark II| 7   | 3   | 50    |        | Stun           | Nx1      | 4    | 1            | N/A   | 1kg    | Priceless | Rank  |
+| Type  |        Name         | TL | Comp | Range | Radius | Dmg  | Power | Ammo | Rate of Fire | Speed | Weight |   Cost    | Value |
+|:-----:|:-------------------:|:--:|:----:|:-----:|:------:|:----:|:-----:|:----:|:------------:|:-----:|:------:|:---------:|:-----:|
+| Melee | Neural Bite Mark I  | 5  |  3   | Melee |        | Stun |  N/A  |  8   |      1       |  N/A  | 1/2kg  |  1,200 Ð  |  600  |
+| Range | Neural Bite Mark II | 7  |  3   |  50   |        | Stun |  Nx1  |  4   |      1       |  N/A  |  1kg   | Priceless | Rank  |
 {: .well .table .table-striped}
 
 There are two weapons with the name Neural Bite.  The first one is an actual whip with poison.  The second one is a ranged version of this weapon that was inspired by the Neural Bite wip.
@@ -156,9 +162,9 @@ Mark II: This looks like a silver metal ring, 1 foot in diameter, and bears a va
 
 ## Popper Pellet
 
-| Type   | Name            | TL  | Comp| Range       | Radius | Dmg            | Power    | Ammo | Rate of Fire | Speed | Weight | Cost      | Value |
-| :----: | :------------:  | :-: | :-: | :-:         | :----: | :-:            | :------: | :-:  | :---------:  | :-:   | :-:    | :-:       | :-:   |  
-| Range  | Popper Pellet   | 6   | 3   | Thrown      |        | See Below      | N/A      | 1    | 1            | N/A   | 5g     | 250 Ð     | 25    |
+| Type  |     Name      | TL | Comp | Range  | Radius |    Dmg    | Power | Ammo | Rate of Fire | Speed | Weight | Cost  | Value |
+|:-----:|:-------------:|:--:|:----:|:------:|:------:|:---------:|:-----:|:----:|:------------:|:-----:|:------:|:-----:|:-----:|
+| Range | Popper Pellet | 6  |  3   | Thrown |        | See Below |  N/A  |  1   |      1       |  N/A  |   5g   | 250 Ð |  25   |
 {: .well .table .table-striped}
 
 The popper pellet is an ocher kernel about the size of a large marble. To activate the item, the user throws it into an activated force field. Once it makes contact with a force field of any kind (excluding Mutational Force Fields), the popper pellet instantly gains the necessary power it needs from the field. Once attached, the popper pellet cloaks itself from IR, UV, and visible light, making it invisible to most individuals and sensors. It travels to the highest point of the force field (above the head for most powered armors and above the turret for tanks or robots).
@@ -170,9 +176,9 @@ When a popper pellet is thrown at a force field, the individual sees the popper 
 
 ## Smart Dart
 
-| Type   | Name            | TL  | Comp| Range       | Radius | Dmg            | Power    | Ammo | Rate of Fire | Speed | Weight | Cost      | Value |
-| :----: | :------------:  | :-: | :-: | :-:         | :----: | :-:            | :------: | :-:  | :---------:  | :-:   | :-:    | :-:       | :-:  |  
-| Range  | Smart Dart      | 6   | 6   | Thrown + 40 |   30'  | 3d6 Electrical | Chemical | 1    | 1            | N/A   | 1kg    | Priceless | Rank |
+| Type  |    Name    | TL | Comp |    Range    | Radius |      Dmg       |  Power   | Ammo | Rate of Fire | Speed | Weight |   Cost    | Value |
+|:-----:|:----------:|:--:|:----:|:-----------:|:------:|:--------------:|:--------:|:----:|:------------:|:-----:|:------:|:---------:|:-----:|
+| Range | Smart Dart | 6  |  6   | Thrown + 40 |  30'   | 3d6 Electrical | Chemical |  1   |      1       |  N/A  |  1kg   | Priceless | Rank  |
 {: .well .table .table-striped}
 
 This looks like a double-sized flint arrowhead with iridescent edges.  When activated or flung at a target it homes in on the targets form and aura.  The victim must make a Reflex save each turn to avoid the dart, but the dart continues to attack the target until it strikes something.  When it hits it erupts in a flashing ball of electricity, harming all within 30 feet. 
@@ -181,18 +187,18 @@ Once the Smart Dart is discharged it falls to the ground needing to be recharged
 
 ## Slither Helix
 
-| Type   | Name            | TL  | Comp| Range | Radius | Dmg | Power   | Ammo | Rate of Fire | Speed | Weight | Cost      | Value |
-| :----: | :------------:  | :-: | :-: | :-:   | :----: | :-: | :-:     | :-:  | :---------:  | :-:   | :-:    | :-:       | :-:  |  
-| Range | Slither Helix | 6 | 6 | Thrown + 30 | | 1d3 Progressive +1d | 1xSolar | 1 | 1 | N/A | 1kg | Priceless | Rank |
+| Type  |     Name      | TL | Comp |    Range    | Radius |         Dmg         |  Power  | Ammo | Rate of Fire | Speed | Weight |   Cost    | Value |
+|:-----:|:-------------:|:--:|:----:|:-----------:|:------:|:-------------------:|:-------:|:----:|:------------:|:-----:|:------:|:---------:|:-----:|
+| Range | Slither Helix | 6  |  6   | Thrown + 30 |        | 1d3 Progressive +1d | 1xSolar |  1   |      1       |  N/A  |  1kg   | Priceless | Rank  |
 {: .well .table .table-striped}
 
 This looks like a rainbow-colored ribbon 10' long.  When activated it animates and slithers after its target, attacking with its energized touch.  If struck a victim may make a REF Save to avoid being wrapped up in the Helix.  The victim takes progressive damage (save vs. Fortitude) each each turn it misses the Fortitude save.  The Slither Helix has 25 hit points.  It can only be harmed by physical damage.
 
 ## Stinger Crystal
 
-| Type   | Name            | TL  | Comp| Range | Radius | Dmg | Power   | Ammo | Rate of Fire | Speed | Weight | Cost      | Value |
-| :----: | :------------:  | :-: | :-: | :-:   | :----: | :-: | :-:     | :-:  | :---------:  | :-:   | :-:    | :-:       | :-:  |  
-| Range  | Stinger Crystal | 7   | 6   | 30    |        | 1d6 | 1xSolar | 1    | 1            | N/A   | 1kg    | Priceless | Rank |
+| Type  |      Name       | TL | Comp | Range | Radius | Dmg |  Power  | Ammo | Rate of Fire | Speed | Weight |   Cost    | Value |
+|:-----:|:---------------:|:--:|:----:|:-----:|:------:|:---:|:-------:|:----:|:------------:|:-----:|:------:|:---------:|:-----:|
+| Range | Stinger Crystal | 7  |  6   |  30   |        | 1d6 | 1xSolar |  1   |      1       |  N/A  |  1kg   | Priceless | Rank  |
 {: .well .table .table-striped}
 
 Stinger Crystal  This diamond shaped arrow is multicolored. when activated it springs into the air, hovering and spinning at the users shoulder.  It can be used either to strike a foe with a melee attack or block a physical or energy attack.  When blocking, the Crystal has 50 hit points.
