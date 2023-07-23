@@ -185,11 +185,11 @@ characteristics.
 > EXAMPLE: You come across a leather sling. You want to know the religious significance of a religious sling being carried by the guards at your local temple. Your character is physicall very weak, but is an Adept following in the traditions of the Martial Arts Mystic.
 > You have a Mystical (Aspect) of 2
 > You have a Faith (Characteristic) of 2
-> You have a Adept of 2 
+> You have a Adept (Knowledge Area) of 2
 > You have a Theurgy (Local Religions) of unskilled.
 > You have a Fitness (Aspect) of -2
 > You have a Muscle (Characteristic) of -1
-> You have a Ranged Combat of 1 and you are skilled in it.  
+> You have a Ranged Combat (Knowledge Area) of 1 and you are skilled in it.  
 > So you roll can roll 
 > 2 (Mystical Aspect) + 2 (Faith Characteristic) + 1 (Ranged Combat Knowledge Area) = DM+5 versus
 > -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
