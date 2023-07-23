@@ -18,7 +18,8 @@ excerpt: |
 
 layout: post
 guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
-image: 	/media/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
+permalink: /2023/07/22/The-Right-Set-of-Skills/
+image: /media/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
 image-credits: MidJourney using a prompt from this article
 categories:
   - Role Playing Games
