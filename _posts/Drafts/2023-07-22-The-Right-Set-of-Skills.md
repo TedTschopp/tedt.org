@@ -20,7 +20,9 @@ layout: post
 guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
 permalink: /2023/07/22/The-Right-Set-of-Skills/
 image: /media/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
-image-credits: MidJourney using a prompt from this article
+image-credits: Photo by Ted Tschopp using Midjourney
+image_alt: Photo by Ted Tschopp using Midjourney
+  
 categories:
   - Role Playing Games
   - FAME
@@ -34,7 +36,6 @@ mathjax: true
   width: 50%;
 }
 </style>
-
 
 # Contents
 {:.no_toc}
@@ -345,7 +346,7 @@ Typical Specializations:
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Take one shot of alcohol and not be affected                                                                                                                                                                                                                  |
 | Simple            | Resist the effects of dysentery after eating infected food.                                                                                                                                                                                                   |
-| Easy              | Resist Catacomb Crud                                                                                                                                                                                                                                                      |
+| Easy              | Resist Catacomb Crud                                                                                                                                                                                                                                          |
 | Routine           | Withstand the effects of one dose of poison.                                                                                                                                                                                                                  |
 | Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
 | Difficult         | Resist the effects of a venereal disease, if exposed.                                                                                                                                                                                                         |
@@ -447,11 +448,11 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 
 #### Engineering Skill
 
-
 **Description of the Engineering skill:**
 Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
 
 **Specializations for Engineering:**
+
 1. Architecture
 2. Armorer
 3. Blacksmithing
@@ -475,19 +476,19 @@ Engineering measures the ability to apply technological knowledge and expertise 
 
 **Table with Engineering skill and examples for each level of difficulty:**
 
-| Level of Difficulty | Engineering Skill                                                                                                                                                                                                                                                                                                                                                                      |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial             | Repairing a simple, everyday household gadget.                                                                                                                                                                                                                                                                                                                                         |
-| Simple              | Building a small toy or crafting a basic wooden chair.                                                                                                                                                                                                                                                                                                                                  |
-| Easy                | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                                                                                                                                                                                                              |
-| Routine             | Designing and building a small wooden bridge over a stream.                                                                                                                                                                                                                                                                                                                             |
-| Average             | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                                                                                                                                                                                                            |
-| Difficult           | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                                                                                                                                                                                                      |
-| Very Difficult      | Designing and constructing a functioning steam-powered engine.                                                                                                                                                                                                                                                                                                                         |
-| Formidable          | Creating an advanced automaton with artificial intelligence.                                                                                                                                                                                                                                                                                                                           |
-| Heroic              | Designing and building a fully functional airship for long-distance travel.                                                                                                                                                                                                                                                                                                           |
-| Nearly Impossible   | Developing and constructing a prototype of a teleportation device.                                                                                                                                                                                                                                                                                                                     |
-| Godly               | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world.                                                                                                                                                                                     |
+| Level of Difficulty | Engineering Skill                                                                                                                                                                                       |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Repairing a simple, everyday household gadget.                                                                                                                                                          |
+| Simple              | Building a small toy or crafting a basic wooden chair.                                                                                                                                                  |
+| Easy                | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                              |
+| Routine             | Designing and building a small wooden bridge over a stream.                                                                                                                                             |
+| Average             | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                               |
+| Difficult           | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                      |
+| Very Difficult      | Designing and constructing a functioning steam-powered engine.                                                                                                                                          |
+| Formidable          | Creating an advanced automaton with artificial intelligence.                                                                                                                                            |
+| Heroic              | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
+| Nearly Impossible   | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
+| Godly               | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
 
 #### Insight Skill
 
@@ -495,6 +496,7 @@ Engineering measures the ability to apply technological knowledge and expertise 
 Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
 
 **Specializations for Insight:**
+
 1. Lie Detection
 2. Emotional Analysis
 3. Body Language Reading
@@ -518,20 +520,19 @@ Insight measures the ability to discern the true intentions and emotions of othe
 
 **Table with Insight skill and examples for each level of difficulty:**
 
-| Level of Difficulty | Insight Skill                                                                                                                                                                                                                                                                                                                                 |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial             | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                              |
-| Simple              | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                 |
-| Easy                | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                          |
-| Routine             | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                              |
-| Average             | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                      |
-| Difficult           | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                              |
-| Very Difficult      | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                   |
-| Formidable          | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                           |
-| Heroic              | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                         |
-| Nearly Impossible   | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                  |
+| Level of Difficulty | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
+| Simple              | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                                               |
+| Easy                | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                                                    |
+| Routine             | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                                                          |
+| Average             | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                                                   |
+| Difficult           | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                                                          |
+| Very Difficult      | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                                              |
+| Formidable          | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                                                       |
+| Heroic              | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
+| Nearly Impossible   | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
 | Godly               | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
-
 
 #### Investigation Skill
 
@@ -543,19 +544,19 @@ cause it to collapse.
 
 Typical Specializations: Crime Scene Analysis, Forensic Examination, Fingerprints and Traces, Ballistics Investigation, Trace Evidence Interpretation, Deductive Reasoning, Surveillance Techniques, Witness Interviewing, Cold Case Investigation, Pattern Recognition, Footprint and Tire Track Analysis, Document Analysis, Cyber Investigation, Cryptography and Codebreaking
 
-| Level of Difficulty | Investigation  |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial | Automatically noticing an open book on a desk in a well-lit room. |
-| Simple | Spotting a trail of muddy footprints leading to a nearby shed. |
-| Easy | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design. |
-| Routine | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database. |
-| Average | Determining the cause of a minor fire by examining burn patterns and evidence in a room. |
-| Difficult | Investigating a complex financial fraud case involving multiple suspects and intricate transactions. |
-| Very Difficult | Deciphering a highly encrypted and encoded message that requires specialized skills and tools. |
-| Formidable | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence. |
-| Heroic | Solving an intricate and convoluted mystery that has stumped the best detectives for months. |
-| Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years. |
-| Godly | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
+| Level of Difficulty | Investigation                                                                                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
+| Simple              | Spotting a trail of muddy footprints leading to a nearby shed.                                                                                                        |
+| Easy                | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design.                                                                             |
+| Routine             | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database.                                                                      |
+| Average             | Determining the cause of a minor fire by examining burn patterns and evidence in a room.                                                                              |
+| Difficult           | Investigating a complex financial fraud case involving multiple suspects and intricate transactions.                                                                  |
+| Very Difficult      | Deciphering a highly encrypted and encoded message that requires specialized skills and tools.                                                                        |
+| Formidable          | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence.                                                                       |
+| Heroic              | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
+| Nearly Impossible   | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
+| Godly               | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
 
 ### Acuity Characteristics
 
@@ -570,20 +571,19 @@ Specializations:
 
 Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions, Diplomatic Protocols, Corporate Procedures, Military Hierarchy, Academic Traditions, Legal Protocols, Wedding and Funeral Customs, Tribal Traditions, Social Gathering Etiquette, Urban vs. Rural Social Norms, Navigating Political Hierarchies, Clan or Family Structures, Rituals and Ceremonies, Trade and Business Practices, Social Media Etiquette, Navigating Secret Societies, Customs of Specific Historical Periods
 
-| Level of Difficulty       | Traditions                                                                                                                                                                                                                                                                                                                                    |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial                  | Greeting someone with a handshake in a typical social setting.                                                                                                                                                                                                                                                                                       |
-| Simple                   | Offering a polite bow as a sign of respect in a foreign culture.                                                                                                                                                                                                                                                                                      |
-| Easy                     | Using the appropriate honorifics when addressing someone of higher status.                                                                                                                                                                                                                                                                           |
-| Routine                  | Understanding the expected gift-giving customs during a religious festival.                                                                                                                                                                                                                                                                           |
-| Average                  | Navigating the bureaucratic process to obtain a marriage license in a different country.                                                                                                                                                                                                                                                             |
-| Difficult                | Successfully negotiating a business deal while adhering to specific cultural protocols.                                                                                                                                                                                                                                                              |
-| Very Difficult           | Organizing a formal diplomatic reception, ensuring all customs and rituals are followed flawlessly.                                                                                                                                                                                                                                                  |
-| Formidable               | Mediating a delicate dispute between two historically antagonistic tribal groups.                                                                                                                                                                                                                                                                     |
-| Heroic                   | Representing a nation at an international summit and skillfully navigating various cultural nuances.                                                                                                                                                                                                                                                  |
-| Nearly Impossible        | Mediating peace talks between warring factions with deeply entrenched cultural hostilities.                                                                                                                                                                                                                                                           |
-| Godly                    | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy.                                                                                                                                                                                                                                    |
-
+| Level of Difficulty | Traditions                                                                                                          |
+|---------------------|---------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Greeting someone with a handshake in a typical social setting.                                                      |
+| Simple              | Offering a polite bow as a sign of respect in a foreign culture.                                                    |
+| Easy                | Using the appropriate honorifics when addressing someone of higher status.                                          |
+| Routine             | Understanding the expected gift-giving customs during a religious festival.                                         |
+| Average             | Navigating the bureaucratic process to obtain a marriage license in a different country.                            |
+| Difficult           | Successfully negotiating a business deal while adhering to specific cultural protocols.                             |
+| Very Difficult      | Organizing a formal diplomatic reception, ensuring all customs and rituals are followed flawlessly.                 |
+| Formidable          | Mediating a delicate dispute between two historically antagonistic tribal groups.                                   |
+| Heroic              | Representing a nation at an international summit and skillfully navigating various cultural nuances.                |
+| Nearly Impossible   | Mediating peace talks between warring factions with deeply entrenched cultural hostilities.                         |
+| Godly               | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy. |
 
 #### Perception Skill
 
@@ -592,20 +592,19 @@ The Perception skill represents an individual's heightened awareness and keennes
 **Specializations for Perception Skill:**
 Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light Vision, Night Vision, Hearing Whispers, Hidden Object Detection, Ambush Spotting, Eavesdropping, Identifying Camouflaged Objects, Identifying Fake or Forged Documents, Sensing Deception in Facial Expressions, Identifying Poisonous Substances by Smell, Identifying Danger in Natural Environments (e.g., quicksand, traps), Identifying Concealed Weaponry,  Spotting Invisible or Ethereal Entities, Detecting Magic Auras, Identifying Weak Points in Structures or Obstacles
 
-
-| Level of Difficulty       | Perception                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial                  | Automatically noticing a brightly colored object in plain sight.                                                                                                                                                                                                                                                                                     |
-| Simple                   | Hearing a distant conversation if the speakers are talking loudly.                                                                                                                                                                                                                                                                                   |
-| Easy                     | Spotting a footprint on a well-lit path.                                                                                                                                                                                                                                                                                                              |
-| Routine                  | Detecting the faint smell of smoke from a nearby campfire.                                                                                                                                                                                                                                                                                           |
-| Average                  | Noticing a hidden door in a room with a casual glance.                                                                                                                                                                                                                                                                                                |
-| Difficult                | Using acute hearing to eavesdrop on a whispered conversation from a distance.                                                                                                                                                                                                                                                                         |
-| Very Difficult           | Spotting the subtle movement of a concealed assassin in a crowded market.                                                                                                                                                                                                                                                                              |
-| Formidable               | Identifying the distinct smell of a particular type of poison lingering in the air.                                                                                                                                                                                                                                                                    |
-| Heroic                   | Detecting a concealed trap in a complex labyrinth without any prior knowledge of its existence.                                                                                                                                                                                                                                                       |
-| Nearly Impossible        | Seeing through a powerful illusion that even confounds other skilled magic users.                                                                                                                                                                                                                                                                     |
-| Godly                    | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells.                                                                                                                                                                                                                                                                           |
+| Level of Difficulty | Perception                                                                                                                 |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically noticing a brightly colored object in plain sight.                                                           |
+| Simple              | Hearing a distant conversation if the speakers are talking loudly.                                                         |
+| Easy                | Spotting a footprint on a well-lit path.                                                                                   |
+| Routine             | Detecting the faint smell of smoke from a nearby campfire.                                                                 |
+| Average             | Noticing a hidden door in a room with a casual glance.                                                                     |
+| Difficult           | Using acute hearing to eavesdrop on a whispered conversation from a distance.                                              |
+| Very Difficult      | Spotting the subtle movement of a concealed assassin in a crowded market.                                                  |
+| Formidable          | Identifying the distinct smell of a particular type of poison lingering in the air.                                        |
+| Heroic              | Detecting a concealed trap in a complex labyrinth without any prior knowledge of its existence.                            |
+| Nearly Impossible   | Seeing through a powerful illusion that even confounds other skilled magic users.                                          |
+| Godly               | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells. |
 
 #### Formal Sciences Skill
 
@@ -615,11 +614,11 @@ theory, game theory, or decision theory. This skill is also used in
 conjunction with another skill when someone wishes to advance the craft
 of that other skill formally.
 
-
 **Description of Formal Sciences Skill:**
 The Formal Sciences skill involves understanding and manipulating formal systems such as logic, mathematics, statistics, information theory, game theory, and decision theory. Individuals with this skill can analyze complex data, make precise calculations, and grasp the underlying principles governing formal structures. Moreover, they can apply this knowledge to advance other skills formally, enhancing their expertise in various fields.
 
 **Specializations for Formal Sciences Skill:**
+
 1. Algebraic Geometry (Algebraic Structures and Geometry)
 2. Applied Game Theory (Strategies for Casino Games)
 3. Behavioral Economics (Psychological Aspects of Gambling and Risk Management)
@@ -640,19 +639,19 @@ The Formal Sciences skill involves understanding and manipulating formal systems
 
 Here's the merged table with Formal Sciences Examples aligned with their respective difficulty levels:
 
-| Level of Difficulty       | Formal Sciences                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial                  | Automatically solving simple arithmetic problems or play a common board game and enjoy yourself.                                                                                                                                                                                                                                                  |
-| Simple                   | Calculating a basic statistical average from a small dataset or play and win a card or board game against someone who is unfamiliar with the game.                                                                                                                                                                                                 |
-| Easy                     | Applying basic algebra to solve a straightforward equation or fix the outcome of an animal fight.                                                                                                                                                                                                                                                  |
-| Routine                  | Using probability theory to assess the likelihood of an event occurring or play and win chess, go, or other game against someone of the same mental acuity and skill level as you.                                                                                                                                                                 |
-| Average                  | Applying statistical analysis to identify trends in a dataset or requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
-| Difficult                | Using game theory to devise a winning strategy in a complex board game or guess the number of marbles in a jar.                                                                                                                                                                                                                                    |
-| Very Difficult           | Solving a complex mathematical theorem or conjecture with rigorous proofs or fix the outcome of a boxing match.                                                                                                                                                                                                                                     |
-| Formidable               | Designing an advanced algorithm for data compression in computer science or play and fix a game of chance against someone who has considerably more mental acuity and skill than you.                                                                                                                                                            |
-| Heroic                   | Developing a groundbreaking mathematical model to explain a natural phenomenon or guess the next card to be drawn in a deck.                                                                                                                                                                                                                         |
-| Nearly Impossible        | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                              |
-| Godly                    | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                                                 |
+| Level of Difficulty | Formal Sciences                                                                                                                                                                                                                                                                                                                |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically solving simple arithmetic problems or play a common board game and enjoy yourself.                                                                                                                                                                                                                               |
+| Simple              | Calculating a basic statistical average from a small dataset or play and win a card or board game against someone who is unfamiliar with the game.                                                                                                                                                                             |
+| Easy                | Applying basic algebra to solve a straightforward equation or fix the outcome of an animal fight.                                                                                                                                                                                                                              |
+| Routine             | Using probability theory to assess the likelihood of an event occurring or play and win chess, go, or other game against someone of the same mental acuity and skill level as you.                                                                                                                                             |
+| Average             | Applying statistical analysis to identify trends in a dataset or requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
+| Difficult           | Using game theory to devise a winning strategy in a complex board game or guess the number of marbles in a jar.                                                                                                                                                                                                                |
+| Very Difficult      | Solving a complex mathematical theorem or conjecture with rigorous proofs or fix the outcome of a boxing match.                                                                                                                                                                                                                |
+| Formidable          | Designing an advanced algorithm for data compression in computer science or play and fix a game of chance against someone who has considerably more mental acuity and skill than you.                                                                                                                                          |
+| Heroic              | Developing a groundbreaking mathematical model to explain a natural phenomenon or guess the next card to be drawn in a deck.                                                                                                                                                                                                   |
+| Nearly Impossible   | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                          |
+| Godly               | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                             |
 
 ## Emotional Aspects
 
@@ -690,25 +689,26 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 **Table with Style skill specializations and difficulty levels:**
 
-|Level of Difficulty|Style Skill |
-|---|---|
-|Trivial|Automatically matching colors and patterns in an outfit.|
-|Simple|Creating a visually appealing flower arrangement.|
-|Easy|Crafting a heartfelt poem for a close friend.|
-|Routine|Painting a landscape scene that conveys a sense of tranquility.|
-|Average|Designing an attractive and functional interior space for a small apartment.|
-|Difficult|Composing a captivating symphony for an orchestra.|
-|Very Difficult|Directing and producing an emotionally impactful short film.|
-|Formidable|Designing a breathtaking and innovative architectural structure.|
-|Heroic|Writing a critically acclaimed novel that resonates with readers worldwide.|
-|Nearly Impossible|Creating an iconic and trendsetting fashion collection that influences the industry.|
-|Godly|Choreographing an extraordinary and groundbreaking dance performance that leaves audiences in awe.|
+| Level of Difficulty | Style Skill                                                                                        |
+|---------------------|----------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically matching colors and patterns in an outfit.                                           |
+| Simple              | Creating a visually appealing flower arrangement.                                                  |
+| Easy                | Crafting a heartfelt poem for a close friend.                                                      |
+| Routine             | Painting a landscape scene that conveys a sense of tranquility.                                    |
+| Average             | Designing an attractive and functional interior space for a small apartment.                       |
+| Difficult           | Composing a captivating symphony for an orchestra.                                                 |
+| Very Difficult      | Directing and producing an emotionally impactful short film.                                       |
+| Formidable          | Designing a breathtaking and innovative architectural structure.                                   |
+| Heroic              | Writing a critically acclaimed novel that resonates with readers worldwide.                        |
+| Nearly Impossible   | Creating an iconic and trendsetting fashion collection that influences the industry.               |
+| Godly               | Choreographing an extraordinary and groundbreaking dance performance that leaves audiences in awe. |
 
 #### Performance Skill
 
 **Description of the Performance skill:** Performance is the ability to captivate and delight an audience through various forms of entertainment, such as music, dance, acting, storytelling, or other artistic expressions. It involves a combination of talent, skill, charisma, and stage presence to evoke emotions, engage the audience, and leave a lasting impression.
 
 **Specializations for the Performance skill:**
+
 1. Vocal Singing
 2. Instrumental Music (Piano, Guitar, Violin, etc.)
 3. Dance (Ballet, Contemporary, Hip-hop, etc.)
@@ -730,19 +730,19 @@ Style is the ability to understand the mindset of the public or a specific audie
 19. Drag Performances
 20. Cultural Traditional Performances (Hula Dance, Kabuki Theater, etc.)
 
-| Level of Difficulty  | Performance Skill                                                                                                                                                                                                                                                                                                                      |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial                  | Automatic humming or tapping along with a familiar tune.                                                                                                                                                                                                                                                                                                 |
-| Simple                   | Playing a basic song on a musical instrument without errors.                                                                                                                                                                                                                                                                                             |
-| Easy                     | Dancing to a popular song with simple choreography.                                                                                                                                                                                                                                                                                                      |
-| Routine                  | Delivering a monologue with clear articulation and expression.                                                                                                                                                                                                                                                                                           |
-| Average                  | Performing a well-known song with emotion and vocal control.                                                                                                                                                                                                                                                                                             |
-| Difficult                | Mastering complex dance routines with precision and grace.                                                                                                                                                                                                                                                                                               |
-| Very Difficult           | Acting in a leading role of a challenging theatrical production.                                                                                                                                                                                                                                                                                         |
-| Formidable               | Singing an operatic aria with impeccable technique and emotion.                                                                                                                                                                                                                                                                                         |
-| Heroic                   | Executing a flawlessly choreographed dance performance in front of a large audience.                                                                                                                                                                                                                                                                    |
-| Nearly Impossible        | Engaging a diverse crowd through an improvised stand-up comedy act.                                                                                                                                                                                                                                                                                     |
-| Godly                    | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved.                                                                                                                                                                                                                                           |
+| Level of Difficulty | Performance Skill                                                                                              |
+|---------------------|----------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatic humming or tapping along with a familiar tune.                                                       |
+| Simple              | Playing a basic song on a musical instrument without errors.                                                   |
+| Easy                | Dancing to a popular song with simple choreography.                                                            |
+| Routine             | Delivering a monologue with clear articulation and expression.                                                 |
+| Average             | Performing a well-known song with emotion and vocal control.                                                   |
+| Difficult           | Mastering complex dance routines with precision and grace.                                                     |
+| Very Difficult      | Acting in a leading role of a challenging theatrical production.                                               |
+| Formidable          | Singing an operatic aria with impeccable technique and emotion.                                                |
+| Heroic              | Executing a flawlessly choreographed dance performance in front of a large audience.                           |
+| Nearly Impossible   | Engaging a diverse crowd through an improvised stand-up comedy act.                                            |
+| Godly               | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved. |
 
 #### Etiquette Skill
 
@@ -773,19 +773,19 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 **Table with Etiquette skill specializations and difficulty levels:**
 
-| Skill             | Etiquette                                                                                                                                                                                                                                                     |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Act with common graces among a group of your peers.   Saying "please" and "thank you" automatically in everyday interactions.                                                                                                                                                                                                        |
-| Simple            | Act in such a way as to not stick out in a crowd of your peers. Properly greeting someone with a smile and handshake.                                                                                                                                                                                                |
-| Easy              | Act with common graces among a group of people who are not of your class so as not to attract attention. Knowing when to use formal or informal language in a conversation.                                                                                                                                                       |
-| Routine           | Socially interact with people and leave a pleasant impression without backgrounds / social standing getting in the way.     Demonstrating good table manners during a casual meal with friends.                                                                                                                                  |
-|Average|Understanding appropriate dress code for different social events.|
-| Difficult         | Mastering business etiquette in professional settings and meetings.  Socially interact with people and leave a pleasant impression even though they know your background / social standing demands other reactions.                                                                                                                |
-| Very Difficult    | Navigating cultural customs and norms when traveling internationally.  Entice and convince someone of a given proposition outside your Social Class even though they know your baackground / social standing demands other reacitons.                                                                                                |
-|Formidable|Representing a company or government in diplomatic and protocol matters.|
-|Heroic|Delivering a flawless and engaging public speech to a large audience|
-|Nearly Impossible | Seduce someone who knows you don't share compatible sexual values.                                                                                                                                                                                            |
-| Godly             | Successfully mediating and resolving intense conflicts between warring factions or nations with superior diplomacy and tact. |
+| Skill             | Etiquette                                                                                                                                                                                                                             |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Act with common graces among a group of your peers.   Saying "please" and "thank you" automatically in everyday interactions.                                                                                                         |
+| Simple            | Act in such a way as to not stick out in a crowd of your peers. Properly greeting someone with a smile and handshake.                                                                                                                 |
+| Easy              | Act with common graces among a group of people who are not of your class so as not to attract attention. Knowing when to use formal or informal language in a conversation.                                                           |
+| Routine           | Socially interact with people and leave a pleasant impression without backgrounds / social standing getting in the way.     Demonstrating good table manners during a casual meal with friends.                                       |
+| Average           | Understanding appropriate dress code for different social events.                                                                                                                                                                     |
+| Difficult         | Mastering business etiquette in professional settings and meetings.  Socially interact with people and leave a pleasant impression even though they know your background / social standing demands other reactions.                   |
+| Very Difficult    | Navigating cultural customs and norms when traveling internationally.  Entice and convince someone of a given proposition outside your Social Class even though they know your baackground / social standing demands other reacitons. |
+| Formidable        | Representing a company or government in diplomatic and protocol matters.                                                                                                                                                              |
+| Heroic            | Delivering a flawless and engaging public speech to a large audience                                                                                                                                                                  |
+| Nearly Impossible | Seduce someone who knows you don't share compatible sexual values.                                                                                                                                                                    |
+| Godly             | Successfully mediating and resolving intense conflicts between warring factions or nations with superior diplomacy and tact.                                                                                                          |
 
 ### Personality Characteristics
 
@@ -798,6 +798,7 @@ their own actions to create the outcomes they want.
 The Deception skill measures the ability to convincingly hide the truth, whether through verbal means or actions. This skill encompasses a wide range of deceptive practices, from misleading others through ambiguity to outright lying. Characters proficient in Deception can fast-talk guards, con merchants, earn money through gambling, pass themselves off in disguises, offer false assurances to dull suspicions, or maintain a straight face while telling blatant lies.
 
 **Specializations for the Deception Skill:**
+
 1. Misdirection and Sleight of Hand
 2. False Identity Creation
 3. Verbal Persuasion and Manipulation
@@ -821,18 +822,18 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 
 **Table with Deception Skill added:**
 
-| Level of Difficulty             | Deception Skill                                                                                                                                                                                                                                                                                                                                                   |
-|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically putting on a friendly demeanor with strangers.                                                                                                                                                                                                                                                                                                            |
-| Simple            | Successfully passing off a small fib in casual conversation.                                                                                                                                                                                                                                                                                                         |
-| Easy              | Using slight misdirection to lead someone away from a sensitive topic.                                                                                                                                                                                                                                                                                                 |
-| Routine           | Convincing others of a minor falsehood with a composed delivery.                                                                                                                                                                                                                                                                                                       |
-| Average           | Keeping a straight face while telling a small lie even under scrutiny.                                                                                                                                                                                                                                                                                                 |
-| Difficult         | Successfully using charm and persuasion to manipulate someone into making a favorable decision.                                                                                                                                                                                                                                                                           |
-| Very Difficult    | Convincing a group of people that you are someone else entirely, and getting them to believe your fabricated identity.                                                                                                                                                                                                                                                 |
-| Formidable        | Pulling off a long con to gain the trust of influential figures and extract valuable information.                                                                                                                                                                                                                                                                          |
-| Heroic            | Disguising yourself as a high-ranking authority figure and giving a convincing speech to rally a crowd in support of a cause.                                                                                                                                                                                                                                          |
-| Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.                                                                                                                                                                                                                                                   |
+| Level of Difficulty | Deception Skill                                                                                                               |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically putting on a friendly demeanor with strangers.                                                                  |
+| Simple              | Successfully passing off a small fib in casual conversation.                                                                  |
+| Easy                | Using slight misdirection to lead someone away from a sensitive topic.                                                        |
+| Routine             | Convincing others of a minor falsehood with a composed delivery.                                                              |
+| Average             | Keeping a straight face while telling a small lie even under scrutiny.                                                        |
+| Difficult           | Successfully using charm and persuasion to manipulate someone into making a favorable decision.                               |
+| Very Difficult      | Convincing a group of people that you are someone else entirely, and getting them to believe your fabricated identity.        |
+| Formidable          | Pulling off a long con to gain the trust of influential figures and extract valuable information.                             |
+| Heroic              | Disguising yourself as a high-ranking authority figure and giving a convincing speech to rally a crowd in support of a cause. |
+| Nearly Impossible   | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.          |
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept.                                                                                                                                                                                                      | A Deception check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Examples include: lie to your spouse and make them believe it; bluster and blather your way out of responsibility; use innuendo to say one thing and mean another thing; engage in wordplay to appear smarter; blend into a crowd; bluff your way into a dinner party; understand secret languages without training in the skill; appear innocent in front of a professional interrogator; lie to your parents and make them believe it; lie to someone about an observable fact or something about themselves and have them believe it. |
 
 #### Persuasion Skill
@@ -903,19 +904,19 @@ Specializations for the Intimidation skill:
 19. Group Intimidation Tactics: Coordinating with allies to project overwhelming force and intimidate larger groups.
 20. Instilling Dread: Cultivating an aura of dread and terror that makes opponents hesitate to challenge you.
 
-|evel of Difficulty|Intimidation Skill |
-|---|---|
-|Trivial|Automatically asserting authority in a non-threatening manner to gain compliance. Convince a child to run.|
-|Simple|Scaring off a small animal or non-aggressive individual with a forceful presence. Bully your way to the front of a line.|
-|Easy|Using a stern tone and confident demeanor to deter a misbehaving child. Insinuate violence through force of presence and words. Scare a coward into handing over something of small value.|
-|Routine|Intimidating a group of rowdy patrons in a tavern to keep the peace. Cause innocent people to cow before you in a public place.|
-|Average|Coercing a minor criminal into revealing some information through veiled threats. Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent.|
-|Difficult|Intimidating a rival gang to abandon their turf without resorting to violence. Shove or push someone out of your way. Get information out of an uncooperative captive. Convince thugs to back down.|
-|Very Difficult|Imposing fear on a powerful and dangerous enemy, making them think twice about attacking. Convince the police to look the other way this time. Make a government functionary sign an arbitrary document.|
-|Formidable|Intimidating a ruthless crime lord to release hostages and withdraw his forces. Make a threatening gesture to force a guard to abandon their post. Stop a mob in their tracks. Cause a creature who is larger and stronger to flee.|
-|Heroic|Inspiring terror in an entire army through sheer force of presence, causing them to retreat without a fight. Force an undefeated rival to kneel before you to kiss your boots.|
-|Nearly Impossible|Confronting a legendary dragon or a fearsome supernatural being, commanding them to obey or leave an area. Force a king or high priest to abandon their post for their crimes.|
-|Godly|Instilling dread in a cosmic entity or otherworldly being, making them hesitate to challenge your will. Force a king or high priest to abandon their post for your crimes.|
+| evel of Difficulty | Intimidation Skill                                                                                                                                                                                                                                                                                                                              |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial            | Automatically asserting authority in a non-threatening manner to gain compliance. Convince a child to run.                                                                                                                                                                                                                                      |
+| Simple             | Scaring off a small animal or non-aggressive individual with a forceful presence. Bully your way to the front of a line.                                                                                                                                                                                                                        |
+| Easy               | Using a stern tone and confident demeanor to deter a misbehaving child. Insinuate violence through force of presence and words. Scare a coward into handing over something of small value.                                                                                                                                                      |
+| Routine            | Intimidating a group of rowdy patrons in a tavern to keep the peace. Cause innocent people to cow before you in a public place.                                                                                                                                                                                                                 |
+| Average            | Coercing a minor criminal into revealing some information through veiled threats. Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
+| Difficult          | Intimidating a rival gang to abandon their turf without resorting to violence. Shove or push someone out of your way. Get information out of an uncooperative captive. Convince thugs to back down.                                                                                                                                             |
+| Very Difficult     | Imposing fear on a powerful and dangerous enemy, making them think twice about attacking. Convince the police to look the other way this time. Make a government functionary sign an arbitrary document.                                                                                                                                        |
+| Formidable         | Intimidating a ruthless crime lord to release hostages and withdraw his forces. Make a threatening gesture to force a guard to abandon their post. Stop a mob in their tracks. Cause a creature who is larger and stronger to flee.                                                                                                             |
+| Heroic             | Inspiring terror in an entire army through sheer force of presence, causing them to retreat without a fight. Force an undefeated rival to kneel before you to kiss your boots.                                                                                                                                                                  |
+| Nearly Impossible  | Confronting a legendary dragon or a fearsome supernatural being, commanding them to obey or leave an area. Force a king or high priest to abandon their post for their crimes.                                                                                                                                                                  |
+| Godly              | Instilling dread in a cosmic entity or otherworldly being, making them hesitate to challenge your will. Force a king or high priest to abandon their post for your crimes.                                                                                                                                                                      |
 
 ### Identity Characteristics
 
@@ -948,19 +949,19 @@ Specializations for Bureaucracy:
 19. Crisis Management: Using bureaucratic expertise to navigate and manage crises and emergencies.
 20. Societal Reform: Initiating and leading bureaucratic-driven efforts to reform societal structures and norms.
 
-|Level of Difficulty|Bureaucracy Skill |
-|---|---|
-|Trivial|Automatically understanding the basic organizational structure of a small local community group.|
-|Simple|Applying for permits or licenses required for a small event or business.|
-|Easy|Navigating the bureaucratic processes to secure funding for a community project.|
-|Routine|Effectively using bureaucratic channels to gain access to government resources.|
-|Average|Understanding and manipulating the bureaucratic processes of a mid-sized company to push through a new initiative.|
-|Difficult|Developing a strategic plan to influence the policies of a large corporation.|
-|Very Difficult|Orchestrating a campaign to influence public policy at a national level.|
-|Formidable|Successfully negotiating complex bureaucratic hurdles to establish a new international partnership.|
-|Heroic|Convincing multiple government bodies to work together on a large-scale infrastructure project.|
-|Nearly Impossible|Spearheading a global humanitarian initiative that involves coordination with multiple international organizations and governments.|
-|Godly|Initiating and leading a massive, worldwide bureaucratic reform movement that reshapes how governments and organizations function and interact on a global scale.|
+| Level of Difficulty | Bureaucracy Skill                                                                                                                                                 |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically understanding the basic organizational structure of a small local community group.                                                                  |
+| Simple              | Applying for permits or licenses required for a small event or business.                                                                                          |
+| Easy                | Navigating the bureaucratic processes to secure funding for a community project.                                                                                  |
+| Routine             | Effectively using bureaucratic channels to gain access to government resources.                                                                                   |
+| Average             | Understanding and manipulating the bureaucratic processes of a mid-sized company to push through a new initiative.                                                |
+| Difficult           | Developing a strategic plan to influence the policies of a large corporation.                                                                                     |
+| Very Difficult      | Orchestrating a campaign to influence public policy at a national level.                                                                                          |
+| Formidable          | Successfully negotiating complex bureaucratic hurdles to establish a new international partnership.                                                               |
+| Heroic              | Convincing multiple government bodies to work together on a large-scale infrastructure project.                                                                   |
+| Nearly Impossible   | Spearheading a global humanitarian initiative that involves coordination with multiple international organizations and governments.                               |
+| Godly               | Initiating and leading a massive, worldwide bureaucratic reform movement that reshapes how governments and organizations function and interact on a global scale. |
 
 #### Animal Handling Skill
 
@@ -989,25 +990,26 @@ Specializations for Animal Handling:
 19. Animal-Assisted Therapy: Using animals as part of therapeutic interventions to improve physical or emotional well-being.
 20. Wildlife Conservation: Participating in conservation efforts to protect and preserve wildlife and their habitats.
 
-|Level of Difficulty|Animal Handling  |
-|---|---|
-|Trivial|Automatically calming a domesticated cat or dog that's a familiar pet. Groom an undomesticated creature classified as an Animal.|
-|Simple|Successfully coaxing a skittish horse to approach and eat from your hand. Shoe a horse or groom a domestic animal.|
-|Easy|Calming down a barking dog in a friendly manner. Teach a simple trick to an animal, like fetch, sit or lay down. Calm a domesticated animal, stabilize a dying creature outside of combat, diagnose a common ailment.|
-|Routine|Keeping a group of farm animals from getting spooked by sudden loud noises. Rustle up a flock of sheep without a sheepdog.|
-|Average|Training a dog to follow basic commands like "sit" and "stay."|
-|Difficult|Herding a group of cattle across a wide and open field. Calm a frightened horse. Calm a wild but otherwise peaceful animal, intuit an animal’s emotional state, set a broken bone, perform a complex maneuver while mounted, stabilize a dying creature in the middle of combat, diagnose an uncommon ailment.|
-|Very Difficult|Earning the trust of a wild animal and coaxing it into allowing a veterinarian to examine and treat it. Break a young domesticated horse. Intuit a hostile animal’s next action, control an untrained mount, diagnose a rare ailment.|
-|Formidable|Successfully training a falcon to return to your wrist on command during a hunting session. Calm a frightened stampede of kine. Calm a dangerous wild animal, diagnose magical and divine ailments.|
-|Heroic|Calming a herd of stampeding wild horses to prevent injuries to both horses and people. Break a wild horse for riding.|
-|Nearly Impossible|Rehabilitating a severely injured and frightened wild animal to the point where it can be released back into its natural habitat. Groom an undomesticated wild beast.|
-|Godly|Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.|
+| Level of Difficulty | Animal Handling                                                                                                                                                                                                                                                                                                |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically calming a domesticated cat or dog that's a familiar pet. Groom an undomesticated creature classified as an Animal.                                                                                                                                                                               |
+| Simple              | Successfully coaxing a skittish horse to approach and eat from your hand. Shoe a horse or groom a domestic animal.                                                                                                                                                                                             |
+| Easy                | Calming down a barking dog in a friendly manner. Teach a simple trick to an animal, like fetch, sit or lay down. Calm a domesticated animal, stabilize a dying creature outside of combat, diagnose a common ailment.                                                                                          |
+| Routine             | Keeping a group of farm animals from getting spooked by sudden loud noises. Rustle up a flock of sheep without a sheepdog.                                                                                                                                                                                     |
+| Average             | Training a dog to follow basic commands like "sit" and "stay."                                                                                                                                                                                                                                                 |
+| Difficult           | Herding a group of cattle across a wide and open field. Calm a frightened horse. Calm a wild but otherwise peaceful animal, intuit an animal’s emotional state, set a broken bone, perform a complex maneuver while mounted, stabilize a dying creature in the middle of combat, diagnose an uncommon ailment. |
+| Very Difficult      | Earning the trust of a wild animal and coaxing it into allowing a veterinarian to examine and treat it. Break a young domesticated horse. Intuit a hostile animal’s next action, control an untrained mount, diagnose a rare ailment.                                                                          |
+| Formidable          | Successfully training a falcon to return to your wrist on command during a hunting session. Calm a frightened stampede of kine. Calm a dangerous wild animal, diagnose magical and divine ailments.                                                                                                            |
+| Heroic              | Calming a herd of stampeding wild horses to prevent injuries to both horses and people. Break a wild horse for riding.                                                                                                                                                                                         |
+| Nearly Impossible   | Rehabilitating a severely injured and frightened wild animal to the point where it can be released back into its natural habitat. Groom an undomesticated wild beast.                                                                                                                                          |
+| Godly               | Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.                                                                                                                                             |
 
 #### Leadership Skill
 
 The Leadership skill is the ability to inspire others to become the best versions of themselves, guiding and motivating them towards a common goal while fostering a positive and empowering environment.
 
 Specializations for Leadership:
+
 1. Motivational Speaking
 2. Team Building
 3. Conflict Resolution
@@ -1029,19 +1031,19 @@ Specializations for Leadership:
 19. Building a Supportive Network
 20. Ethical and Responsible Leadership
 
-| Level of Difficulty             | Leadership Skill                                                                                                                                                                                                                                                                                                                                                |
-|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically guiding a group of children in a fun and educational activity. Incite peasants to violence in the wake of a doom, curse, or other form of spiritual influence.                                                                                                                                                                                                                                            |
-| Simple            | Rallying a small group of friends or peers to support a common cause. Convince a close friend to lift their spirits in the wake of harm.                                                                                                                                                                                                                                       |
-| Easy              | Encouraging a team of volunteers to work together effectively during a community project. Spread rumors and news among crowds of people.                                                                                                                                                                                                                                         |
-| Routine           | Leading a small team in a non-critical task, such as organizing a social event. Use Inspiring others in combat while you are obviously Wounded.                                                                                                                                                                                                                                        |
-| Average           | Taking charge of a workgroup and motivating them to achieve a set of specific goals. Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
-| Difficult         | Leading a company-wide initiative and inspiring all employees to embrace a major change. Convince your flock to change their principles in the name of their god.                                                                                                                                                                                                                 |
-| Very Difficult    | Uniting different factions with conflicting interests to collaborate on a complex project. Command a military campaign to besiege a stronghold.                                                                                                                                                                                                                                |
-| Formidable        | Inspiring a large audience during a public speech or presentation. Uplift a congregation who’ve lost their faith in their god.                                                                                                                                                                                                                                                 |
-| Heroic            | Taking charge of a military unit in a high-stakes combat situation and leading them to victory. Convince Humanoids who were once your enemies to fight alongside you.                                                                                                                                                                                                         |
-| Nearly Impossible | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                                                       |
-| Godly             | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                                                       |
+| Level of Difficulty | Leadership Skill                                                                                                                                                                                                                                                                                                                                   |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial             | Automatically guiding a group of children in a fun and educational activity. Incite peasants to violence in the wake of a doom, curse, or other form of spiritual influence.                                                                                                                                                                       |
+| Simple              | Rallying a small group of friends or peers to support a common cause. Convince a close friend to lift their spirits in the wake of harm.                                                                                                                                                                                                           |
+| Easy                | Encouraging a team of volunteers to work together effectively during a community project. Spread rumors and news among crowds of people.                                                                                                                                                                                                           |
+| Routine             | Leading a small team in a non-critical task, such as organizing a social event. Use Inspiring others in combat while you are obviously Wounded.                                                                                                                                                                                                    |
+| Average             | Taking charge of a workgroup and motivating them to achieve a set of specific goals. Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
+| Difficult           | Leading a company-wide initiative and inspiring all employees to embrace a major change. Convince your flock to change their principles in the name of their god.                                                                                                                                                                                  |
+| Very Difficult      | Uniting different factions with conflicting interests to collaborate on a complex project. Command a military campaign to besiege a stronghold.                                                                                                                                                                                                    |
+| Formidable          | Inspiring a large audience during a public speech or presentation. Uplift a congregation who’ve lost their faith in their god.                                                                                                                                                                                                                     |
+| Heroic              | Taking charge of a military unit in a high-stakes combat situation and leading them to victory. Convince Humanoids who were once your enemies to fight alongside you.                                                                                                                                                                              |
+| Nearly Impossible   | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                            |
+| Godly               | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                           |
 
 ## Mystical Aspects
 
@@ -1057,21 +1059,21 @@ Then comes Chaos magic, where skepticism takes a different turn. Rather than see
 
 #### Spells of the Skeptic
 
-- **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
-- **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
-- **Chaos Infusion:** Harness the power of chaos to enhance unpredictability and adaptability in your spells, confounding opponents and destabilizing magical constructs.
-- **Reality Distortion:** Temporarily alter the perception of reality around you, creating illusions that challenge the senses and perceptions of others.
-- **Skeptic's Aura:** Create a field of skeptical energy that weakens or nullifies the magical effects of others within its radius.
-- **Precision Binding:** Craft intricate magical barriers or bindings with precise geometrical symbols, making them more resilient and challenging to break.
-- **Gnostic Resonance:** Establish a psychic connection with other Gnostic practitioners, allowing for the exchange of knowledge and insights.
-- **Chaos Merge:** Temporarily blend multiple magical traditions or paradigms, combining their strengths into a potent and unpredictable fusion.
-- **Analytical Recall:** Enhance your memory and recall abilities, enabling you to store and access vast amounts of magical knowledge.
-- **Skeptic's Disguise:** Conceal your magical presence from others, appearing as a non-magical individual to avoid detection or unwanted attention.
-- **Elemental Deciphering:** Analyze and understand the elemental composition of objects or magical phenomena, unraveling their intrinsic properties.
-- **Gnostic Empathy:** Develop a heightened understanding of others' emotions and intentions, aiding in negotiations and detecting hidden agendas.
-- **Chaos Confluence:** Merge the energies of chaos into your spells, enhancing their versatility and adaptability on the fly.
-- **Rational Shielding:** Create magical barriers based on logical principles, making them more resistant to manipulation or exploitation.
-- **Skeptic's Rejection:** Nullify the effects of illusions or deceptive magic, seeing through false appearances and revealing the truth.
+* **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
+* **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
+* **Chaos Infusion:** Harness the power of chaos to enhance unpredictability and adaptability in your spells, confounding opponents and destabilizing magical constructs.
+* **Reality Distortion:** Temporarily alter the perception of reality around you, creating illusions that challenge the senses and perceptions of others.
+* **Skeptic's Aura:** Create a field of skeptical energy that weakens or nullifies the magical effects of others within its radius.
+* **Precision Binding:** Craft intricate magical barriers or bindings with precise geometrical symbols, making them more resilient and challenging to break.
+* **Gnostic Resonance:** Establish a psychic connection with other Gnostic practitioners, allowing for the exchange of knowledge and insights.
+* **Chaos Merge:** Temporarily blend multiple magical traditions or paradigms, combining their strengths into a potent and unpredictable fusion.
+* **Analytical Recall:** Enhance your memory and recall abilities, enabling you to store and access vast amounts of magical knowledge.
+* **Skeptic's Disguise:** Conceal your magical presence from others, appearing as a non-magical individual to avoid detection or unwanted attention.
+* **Elemental Deciphering:** Analyze and understand the elemental composition of objects or magical phenomena, unraveling their intrinsic properties.
+* **Gnostic Empathy:** Develop a heightened understanding of others' emotions and intentions, aiding in negotiations and detecting hidden agendas.
+* **Chaos Confluence:** Merge the energies of chaos into your spells, enhancing their versatility and adaptability on the fly.
+* **Rational Shielding:** Create magical barriers based on logical principles, making them more resistant to manipulation or exploitation.
+* **Skeptic's Rejection:** Nullify the effects of illusions or deceptive magic, seeing through false appearances and revealing the truth.
 
 As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
 
@@ -1089,29 +1091,29 @@ Ultimately, being an Arcane mage transcends mere power and knowledge. It is a jo
 
 ##### Ethereal Archetypes
 
-- **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
-- **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
-- **The Elemental Mage:** This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.
-- **The Astral Traveler:** This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries.
-- **The Soul Binder:** The Soul Binder delves into the realm of souls and spirits, wielding powers to commune with the deceased or harnessing spectral energies in battle. They can bind souls to objects, summon ethereal allies, or even temporarily possess other beings. This archetype often grapples with moral dilemmas, as their powers touch upon the boundaries between life and death.
-- **The Celestial Sorcerer:** This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.
-- **The Time Weaver:** The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.
-- **The Planar Gatekeeper:** The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.
+* **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
+* **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
+* **The Elemental Mage:** This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.
+* **The Astral Traveler:** This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries.
+* **The Soul Binder:** The Soul Binder delves into the realm of souls and spirits, wielding powers to commune with the deceased or harnessing spectral energies in battle. They can bind souls to objects, summon ethereal allies, or even temporarily possess other beings. This archetype often grapples with moral dilemmas, as their powers touch upon the boundaries between life and death.
+* **The Celestial Sorcerer:** This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.
+* **The Time Weaver:** The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.
+* **The Planar Gatekeeper:** The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.
 
 These Ethereal Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
 ##### Unique Ethereal Magical Spells
 
-- **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
-- **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
-- **Arcane Symphony:** Harness the harmonious energies of the cosmos to create a mesmerizing symphony of arcane power. This spell can awe and mesmerize those who hear it, potentially disrupting enemies or gathering allies to your cause.
-- **Temporal Rupture:** Temporarily disrupt the flow of time in a localized area, causing objects and individuals to move at different rates. This spell can slow down or speed up time, granting you a tactical advantage in combat or time-sensitive situations.
-- **Soul Ephemera:** Extract fragments of souls from living beings and spirits, which can be used as a source of power for other spells or stored for later use. This spell allows you to manipulate the essence of life itself.
-- **Celestial Infusion:** Draw upon the power of celestial bodies to infuse your spells with cosmic energy. This spell enhances your magical attacks, granting them the properties of stars, moons, or meteors.
-- **Planar Binding:** Open portals to other planes of existence and summon beings from different realms to aid you in your endeavors. This spell allows you to call upon extraplanar entities for assistance or knowledge.
-- **Ethereal Ward:** Create a protective barrier that shields against ethereal and magical attacks. This spell can repel or absorb mystical energies, providing a powerful defense against other spellcasters.
-- **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
-- **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
+* **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
+* **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
+* **Arcane Symphony:** Harness the harmonious energies of the cosmos to create a mesmerizing symphony of arcane power. This spell can awe and mesmerize those who hear it, potentially disrupting enemies or gathering allies to your cause.
+* **Temporal Rupture:** Temporarily disrupt the flow of time in a localized area, causing objects and individuals to move at different rates. This spell can slow down or speed up time, granting you a tactical advantage in combat or time-sensitive situations.
+* **Soul Ephemera:** Extract fragments of souls from living beings and spirits, which can be used as a source of power for other spells or stored for later use. This spell allows you to manipulate the essence of life itself.
+* **Celestial Infusion:** Draw upon the power of celestial bodies to infuse your spells with cosmic energy. This spell enhances your magical attacks, granting them the properties of stars, moons, or meteors.
+* **Planar Binding:** Open portals to other planes of existence and summon beings from different realms to aid you in your endeavors. This spell allows you to call upon extraplanar entities for assistance or knowledge.
+* **Ethereal Ward:** Create a protective barrier that shields against ethereal and magical attacks. This spell can repel or absorb mystical energies, providing a powerful defense against other spellcasters.
+* **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
+* **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
 
 These Ethereal Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
@@ -1141,27 +1143,27 @@ Throughout your quest, you encounter potent symbols like the Ouroboros and the T
 
 ##### Gnostic Archtypes
 
-- **The Seeker:** This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
-- **The Savior:** The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
-- **The Rebel:** The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.
-- **The Martyr:** This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.
-- **The Chosen One:** This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.
-- **The Redeemer:** The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
+* **The Seeker:** This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
+* **The Savior:** The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
+* **The Rebel:** The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.
+* **The Martyr:** This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.
+* **The Chosen One:** This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.
+* **The Redeemer:** The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
 
 ##### Unique Gnostic Magical Spells
 
-- **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
-- **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
-- **Sophia's Guidance:** Channeling the wisdom of the Divine Feminine, this spell allows you to receive guidance and intuition when facing difficult decisions or challenges on your path.
-- **Demiurge's Illusion:** By manipulating the illusions of the material world, you can create distractions or temporary alterations to the perception of others. This spell might be useful for misdirection or protection.
-- **Ouroboros' Renewal:** Utilizing the symbolism of the eternal cycle, this spell grants you the ability to rejuvenate yourself or others, healing wounds and restoring vitality.
-- **Aeonic Alignment:** Through ritual and meditation, you can align yourself with the cosmic forces of the aeons, gaining access to their power and protection.
-- **Tree of Life Manifestation:** Drawing upon the interconnectedness of all existence, this spell allows you to establish a telepathic link with others or project your thoughts across great distances.
-- **Sacred Names Enchantment:** By invoking the names of powerful divine beings, you can imbue objects with special properties or create charms for protection and luck.
-- **Divine Spark Ignition:** This spell awakens the dormant divine spark within others, triggering their spiritual awakening and the pursuit of gnosis.
-- **Gnostic Shield:** Using your knowledge of higher truths, you can create a protective shield that repels negative energies and safeguards against psychic attacks.
-- **Emanation of Light:** Channeling the divine light, you can emit a radiant glow that dispels darkness and fills the surroundings with spiritual clarity.
-- **Liberation's Embrace:** This spell grants a momentary experience of transcendence, allowing you or others to briefly escape the limitations of the material world and experience the oneness of all things.
+* **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
+* **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
+* **Sophia's Guidance:** Channeling the wisdom of the Divine Feminine, this spell allows you to receive guidance and intuition when facing difficult decisions or challenges on your path.
+* **Demiurge's Illusion:** By manipulating the illusions of the material world, you can create distractions or temporary alterations to the perception of others. This spell might be useful for misdirection or protection.
+* **Ouroboros' Renewal:** Utilizing the symbolism of the eternal cycle, this spell grants you the ability to rejuvenate yourself or others, healing wounds and restoring vitality.
+* **Aeonic Alignment:** Through ritual and meditation, you can align yourself with the cosmic forces of the aeons, gaining access to their power and protection.
+* **Tree of Life Manifestation:** Drawing upon the interconnectedness of all existence, this spell allows you to establish a telepathic link with others or project your thoughts across great distances.
+* **Sacred Names Enchantment:** By invoking the names of powerful divine beings, you can imbue objects with special properties or create charms for protection and luck.
+* **Divine Spark Ignition:** This spell awakens the dormant divine spark within others, triggering their spiritual awakening and the pursuit of gnosis.
+* **Gnostic Shield:** Using your knowledge of higher truths, you can create a protective shield that repels negative energies and safeguards against psychic attacks.
+* **Emanation of Light:** Channeling the divine light, you can emit a radiant glow that dispels darkness and fills the surroundings with spiritual clarity.
+* **Liberation's Embrace:** This spell grants a momentary experience of transcendence, allowing you or others to briefly escape the limitations of the material world and experience the oneness of all things.
 
 These spells reflect the unique and profound nature of your magical abilities, inspired by the Gnostic traditions' spiritual insights and themes. Each spell involves a deep connection to the divine and the pursuit of higher knowledge, empowering you to navigate the complexities of the spiritual realm and bring about positive transformations in the world around you.
 
@@ -1191,30 +1193,30 @@ In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmon
 
 ##### Chaos Archtypes
 
-- **The Trickster:** This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.
-- **The Shapeshifter:** Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.
-- **The Wild Sorcerer:** This character is a conduit of raw magical power, with spells and abilities that are never the same twice. Their magic is untamed, with unpredictable consequences, making them both a force to be reckoned with and a potential source of chaos in any story.
-- **The Symbolic Weaver:** Representing the sigilization aspect of Chaos magic, this character can manipulate symbols and beliefs to manifest their desires. They draw power from the interconnected web of reality and can reshape the world through their understanding of the underlying symbolism.
-- **The Paradox Embracer:** This archetype navigates the complexities of existence with ease, embracing contradictory aspects of life and harmonizing opposites. They possess wisdom beyond conventional understanding, seeing unity within chaos and finding balance in apparent discord.
-- **The Reality Bender:** These characters can bend and warp reality itself, making the impossible possible. Their mastery of Chaos magic allows them to alter the fabric of existence, defying conventional laws and creating awe-inspiring feats of magic.
-- **The Intuitive Instigator:** This character relies on instinct and intuition, channeling the chaotic flow of the universe to make impactful decisions and drive change. They have a natural talent for reading the currents of fate and influencing events in subtle yet profound ways.
-- **The Unconventional Hero:** Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.
-- **The Laughing Mystic:** This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.
+* **The Trickster:** This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.
+* **The Shapeshifter:** Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.
+* **The Wild Sorcerer:** This character is a conduit of raw magical power, with spells and abilities that are never the same twice. Their magic is untamed, with unpredictable consequences, making them both a force to be reckoned with and a potential source of chaos in any story.
+* **The Symbolic Weaver:** Representing the sigilization aspect of Chaos magic, this character can manipulate symbols and beliefs to manifest their desires. They draw power from the interconnected web of reality and can reshape the world through their understanding of the underlying symbolism.
+* **The Paradox Embracer:** This archetype navigates the complexities of existence with ease, embracing contradictory aspects of life and harmonizing opposites. They possess wisdom beyond conventional understanding, seeing unity within chaos and finding balance in apparent discord.
+* **The Reality Bender:** These characters can bend and warp reality itself, making the impossible possible. Their mastery of Chaos magic allows them to alter the fabric of existence, defying conventional laws and creating awe-inspiring feats of magic.
+* **The Intuitive Instigator:** This character relies on instinct and intuition, channeling the chaotic flow of the universe to make impactful decisions and drive change. They have a natural talent for reading the currents of fate and influencing events in subtle yet profound ways.
+* **The Unconventional Hero:** Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.
+* **The Laughing Mystic:** This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.
 
 ##### Unique Chaos Magical Spells
 
-- **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
-- **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
-- **Shifting Shadows:** Manipulate shadows to create illusory forms or to merge with them, granting temporary invisibility or the ability to move through walls and obstacles.
-- **Chaotic Fusion:** Merge multiple elements or energies into a swirling vortex, releasing a devastating blast of combined power, the result of which is never the same twice.
-- **Paradoxical Mirror:** Create a mirror that reflects the intentions of attackers back upon themselves, causing them to experience the effects of their own spells or attacks.
-- **Sigil of Serendipity:** Draw a powerful sigil that brings good fortune and unexpected opportunities to the caster and their allies, turning potential misfortune into advantageous outcomes.
-- **Humorous Hex:** Cast a spell that causes uncontrollable fits of laughter in the target, incapacitating them with mirth and reducing their ability to focus or take actions.
-- **Chaos Labyrinth:** Summon an ever-changing maze filled with illusions and challenges. The maze shifts and reshapes continuously, making it difficult for intruders to find their way through.
-- **Quantum Blink:** Perform short-range teleportation, but the destination is randomly determined, making it a daring and unpredictable escape or attack maneuver.
-- **Reality Whirlpool:** Summon a swirling vortex of chaotic energies that disrupts magical spells and causes disturbances in the surrounding environment.
-- **Ephemeral Euphony:** Create a harmonious melody or dissonant cacophony, imbued with chaotic energy. The sound can either heal or induce confusion and madness in those who hear it.
-- **Serendipitous Surge:** Channel a surge of magical energy that grants temporary enhancements to the caster's abilities, but the specific enhancements vary with each casting.
+* **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
+* **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
+* **Shifting Shadows:** Manipulate shadows to create illusory forms or to merge with them, granting temporary invisibility or the ability to move through walls and obstacles.
+* **Chaotic Fusion:** Merge multiple elements or energies into a swirling vortex, releasing a devastating blast of combined power, the result of which is never the same twice.
+* **Paradoxical Mirror:** Create a mirror that reflects the intentions of attackers back upon themselves, causing them to experience the effects of their own spells or attacks.
+* **Sigil of Serendipity:** Draw a powerful sigil that brings good fortune and unexpected opportunities to the caster and their allies, turning potential misfortune into advantageous outcomes.
+* **Humorous Hex:** Cast a spell that causes uncontrollable fits of laughter in the target, incapacitating them with mirth and reducing their ability to focus or take actions.
+* **Chaos Labyrinth:** Summon an ever-changing maze filled with illusions and challenges. The maze shifts and reshapes continuously, making it difficult for intruders to find their way through.
+* **Quantum Blink:** Perform short-range teleportation, but the destination is randomly determined, making it a daring and unpredictable escape or attack maneuver.
+* **Reality Whirlpool:** Summon a swirling vortex of chaotic energies that disrupts magical spells and causes disturbances in the surrounding environment.
+* **Ephemeral Euphony:** Create a harmonious melody or dissonant cacophony, imbued with chaotic energy. The sound can either heal or induce confusion and madness in those who hear it.
+* **Serendipitous Surge:** Channel a surge of magical energy that grants temporary enhancements to the caster's abilities, but the specific enhancements vary with each casting.
 
 Remember, these spells reflect the unpredictable and ever-changing nature of Chaos magic. Each time they are cast, their effects might differ slightly, adding an element of surprise and wonder to the practitioner's magical repertoire.
 
@@ -1232,7 +1234,7 @@ Remember, these spells reflect the unpredictable and ever-changing nature of Cha
 | Nearly Impossible | Weaving a tapestry of chaotic energy that temporarily reshapes reality within a limited area, creating a surreal and mesmerizing dreamscape. Chaos magicians perform this epic feat, leaving an unforgettable mark in history books as the named masters of their magical craft.                                  |
 | Godly             | Infusing themselves with the pure essence of Chaos, transforming into a semi-divine avatar of unpredictability, capable of altering the very fabric of existence on a cosmic scale. Chaos practitioners, virtually demigods in their abilities, achieve this godly status with exceptional talent and assistance. |
 
-#### Faith Characteristics
+### Faith Characteristics
 
 You will find that the domain of Faith is divided into three branches of exploration: Theurgy, Physical Adapt, and Order.
 
@@ -1242,27 +1244,27 @@ On the other hand, Physical Adaptation relies on your faith in the body's inhere
 
 In the realm of Order, your faith lies in structured systems and cosmic balance. You believe in the harmony and equilibrium of the universe, and through precise rituals and adherence to cosmic laws, you seek to maintain that order. Your faith grants you the ability to wield powerful forces, maintaining stability and influencing the natural flow of events.
 
-##### Spells Unique to Faith
+#### Spells Unique to Faith
 
-- **Divine Blessing:** Channel the power of celestial beings to bestow blessings upon yourself or others, enhancing abilities and providing protection.
-- **Ancestral Guidance:** Commune with your ancestors' spirits, seeking guidance and wisdom from the past.
-- **Mystic Convocation:** Conduct elaborate rituals to gather divine energies, empowering you and those around you with enhanced magical abilities.
-- **Nature's Call:** Invoke the spirits of nature to aid in healing, restoration, and nurturing of the environment.
-- **Cosmic Balance:** Align the cosmic forces to restore harmony and equilibrium in any situation or location.
-- **Celestial Shield:** Create a protective barrier infused with divine energy, guarding against malevolent forces and harmful magic.
-- **Sacred Oath:** Form a sacred pact with a higher power, granting you temporary access to specific divine abilities or insights.
-- **Cleansing Purge:** Cleanse a person or place from malevolent energies or curses, restoring purity and balance.
-- **Guiding Light:** Summon a radiant aura that illuminates the path ahead, guiding you and your allies through darkness or confusion.
-- **Empathic Aura:** Project an empathic aura to soothe emotions, promote understanding, and foster unity among individuals.
-- **Spiritual Resonance:** Harmonize with the spiritual essence of living beings, allowing you to understand their emotions and intentions.
-- **Karmic Justice:** Invoke the principle of karma to bring balance and justice to a situation, causing the repercussions of actions to unfold accordingly.
-- **Astral Projection:** Project your consciousness into the astral plane, exploring distant realms or communicating with celestial entities.
-- **Divine Intervention:** Call upon higher powers in times of dire need, allowing them to intervene and alter the course of events.
-- **Harmony's Embrace:** Generate a tranquil aura that pacifies conflicts and fosters cooperation among individuals or groups.
+* **Divine Blessing:** Channel the power of celestial beings to bestow blessings upon yourself or others, enhancing abilities and providing protection.
+* **Ancestral Guidance:** Commune with your ancestors' spirits, seeking guidance and wisdom from the past.
+* **Mystic Convocation:** Conduct elaborate rituals to gather divine energies, empowering you and those around you with enhanced magical abilities.
+* **Nature's Call:** Invoke the spirits of nature to aid in healing, restoration, and nurturing of the environment.
+* **Cosmic Balance:** Align the cosmic forces to restore harmony and equilibrium in any situation or location.
+* **Celestial Shield:** Create a protective barrier infused with divine energy, guarding against malevolent forces and harmful magic.
+* **Sacred Oath:** Form a sacred pact with a higher power, granting you temporary access to specific divine abilities or insights.
+* **Cleansing Purge:** Cleanse a person or place from malevolent energies or curses, restoring purity and balance.
+* **Guiding Light:** Summon a radiant aura that illuminates the path ahead, guiding you and your allies through darkness or confusion.
+* **Empathic Aura:** Project an empathic aura to soothe emotions, promote understanding, and foster unity among individuals.
+* **Spiritual Resonance:** Harmonize with the spiritual essence of living beings, allowing you to understand their emotions and intentions.
+* **Karmic Justice:** Invoke the principle of karma to bring balance and justice to a situation, causing the repercussions of actions to unfold accordingly.
+* **Astral Projection:** Project your consciousness into the astral plane, exploring distant realms or communicating with celestial entities.
+* **Divine Intervention:** Call upon higher powers in times of dire need, allowing them to intervene and alter the course of events.
+* **Harmony's Embrace:** Generate a tranquil aura that pacifies conflicts and fosters cooperation among individuals or groups.
 
 These spells draw upon your unwavering faith and connection to higher forces, granting you unique abilities that set you apart from other magical backgrounds. As a practitioner of Faith magic, you wield divine energies to bring healing, protection, guidance, and balance to the world around you.
 
-##### Theurgy Skill
+#### Theurgy Skill
 
 In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
 
@@ -1270,28 +1272,28 @@ As you progress, you confront your ego and strive for inner purity, understandin
 
 Your magical journey becomes an expression of your soul, a reflection of your yearnings for unity with the divine. Theurgy is not about gaining power but about living in harmony with the cosmic order, acting as a channel for divine grace, and embodying wisdom and love in your life. As you continue to embrace Theurgy, it becomes a lifelong pursuit, enriching every aspect of your existence and deepening your connection to the mysteries of the heart.
 
-###### Theurgy Archtypes
+##### Theurgy Archtypes
 
-- **The Prophet:** This archetype is a master of Theurgy, possessing the ability to connect with higher beings or deities to channel their powers and wisdom. They serve as intermediaries between the mortal world and the divine realms, acting as vessels for divine energy and guidance. The Prophet often grapples with the weight of this responsibility, as they must maintain their inner purity and moral integrity to commune with the divine successfully.
-- **The Mystic:** This character is deeply steeped in the knowledge and philosophy of Theurgy, understanding the intricate symbols, rituals, and cosmic forces. The Mystic is a wise and enigmatic figure who imparts profound teachings and insights to others. They may guide heroes on their quests, decipher cryptic prophecies, and uncover hidden truths that shape the course of the story.
-- **The Paladin:** This archetype embodies the protective aspect of Theurgy. They are skilled in using magical rituals to create wards, shields, and barriers that safeguard people and places from malevolent forces. The Paladin often dedicates themselves to defending sacred sites, temples, or ancient artifacts that hold immense power.
-- **The Healer:** This character possesses exceptional healing abilities, drawing on Theurgy to mend wounds, cure ailments, and restore vitality. The Healer is compassionate and altruistic, using their powers to aid others and alleviate suffering. Their presence in a story can add a sense of hope and renewal, especially in times of adversity.
-- **The Scholar:** This archetype represents a character who tirelessly studies the ancient texts and mystical arts of Theurgy. They may be motivated by a thirst for knowledge, seeking to unlock the secrets of the universe or to unravel the mysteries of long-forgotten civilizations. The Scholar's expertise can be a valuable resource for protagonists seeking to understand or counter magical threats.
-- **The Judge:** This character is devoted to preserving the balance between opposing cosmic forces, recognizing that Theurgy's power can disrupt the harmony of the universe if misused. They may be tasked with preventing the rise of dark entities or restoring equilibrium when chaos threatens to overwhelm the world.
-- **The Pilgrim:** This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.
+* **The Prophet:** This archetype is a master of Theurgy, possessing the ability to connect with higher beings or deities to channel their powers and wisdom. They serve as intermediaries between the mortal world and the divine realms, acting as vessels for divine energy and guidance. The Prophet often grapples with the weight of this responsibility, as they must maintain their inner purity and moral integrity to commune with the divine successfully.
+* **The Mystic:** This character is deeply steeped in the knowledge and philosophy of Theurgy, understanding the intricate symbols, rituals, and cosmic forces. The Mystic is a wise and enigmatic figure who imparts profound teachings and insights to others. They may guide heroes on their quests, decipher cryptic prophecies, and uncover hidden truths that shape the course of the story.
+* **The Paladin:** This archetype embodies the protective aspect of Theurgy. They are skilled in using magical rituals to create wards, shields, and barriers that safeguard people and places from malevolent forces. The Paladin often dedicates themselves to defending sacred sites, temples, or ancient artifacts that hold immense power.
+* **The Healer:** This character possesses exceptional healing abilities, drawing on Theurgy to mend wounds, cure ailments, and restore vitality. The Healer is compassionate and altruistic, using their powers to aid others and alleviate suffering. Their presence in a story can add a sense of hope and renewal, especially in times of adversity.
+* **The Scholar:** This archetype represents a character who tirelessly studies the ancient texts and mystical arts of Theurgy. They may be motivated by a thirst for knowledge, seeking to unlock the secrets of the universe or to unravel the mysteries of long-forgotten civilizations. The Scholar's expertise can be a valuable resource for protagonists seeking to understand or counter magical threats.
+* **The Judge:** This character is devoted to preserving the balance between opposing cosmic forces, recognizing that Theurgy's power can disrupt the harmony of the universe if misused. They may be tasked with preventing the rise of dark entities or restoring equilibrium when chaos threatens to overwhelm the world.
+* **The Pilgrim:** This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.
 
-###### Unique Theurgy Magical Spells
+##### Unique Theurgy Magical Spells
 
-- **Celestial Communion:** This spell allows the caster to establish a direct communication link with a celestial entity or a deity, seeking guidance, wisdom, or divine blessings. The caster must demonstrate profound respect and sincerity to establish and maintain this connection.
-- **Arcane Equilibrium:** This spell enables the Theurgist to restore balance to a chaotic situation. It can pacify raging storms, quell violent conflicts, or stabilize unruly magical energies, aligning them with the cosmic order.
-- **Veil of Sanctity:** The caster weaves a protective shield of divine energy that shields an area or individual from malevolent forces and dark influences. This veil repels negative entities and grants temporary immunity to harmful magical effects.
-- **Healing Resonance:** The Theurgic Healer channels celestial energies to accelerate the natural healing processes within a person, mending wounds and curing ailments beyond ordinary means. This spell also offers solace and peace to the afflicted.
-- **Symbol of Truth:** This spell imbues a sacred symbol or sigil with divine truth, revealing hidden secrets, illusions, and deceit. The symbol's presence can expose lies and dispel illusions, making it a potent tool for discovering the truth.
-- **Transcendent Empowerment:** The Ascendant Seeker can tap into their inner spiritual potential to temporarily enhance their magical abilities, granting them a surge of power and insight for a short duration.
-- **Astral Projection:** The Theurgy practitioner can send their consciousness beyond the physical realm, exploring other planes of existence, and communicating with celestial beings or ancestral spirits.
-- **Timeless Illumination:** By invoking ancient cosmic wisdom, the Arcane Scholar gains profound insights into mysteries of the universe or forgotten lore. This spell can unlock forgotten knowledge and reveal the true nature of artifacts or ancient writings.
-- **Divine Aura:** The Sacred Guardian envelops themselves or others in a luminous aura that wards off dark entities and provides protection against malevolent magical attacks.
-- **Harmonious Resonance:** This spell enables the Theurgist to resonate with the natural rhythm of the cosmos, gaining heightened intuition and foresight, allowing them to make informed decisions and navigate challenges with clarity.
+* **Celestial Communion:** This spell allows the caster to establish a direct communication link with a celestial entity or a deity, seeking guidance, wisdom, or divine blessings. The caster must demonstrate profound respect and sincerity to establish and maintain this connection.
+* **Arcane Equilibrium:** This spell enables the Theurgist to restore balance to a chaotic situation. It can pacify raging storms, quell violent conflicts, or stabilize unruly magical energies, aligning them with the cosmic order.
+* **Veil of Sanctity:** The caster weaves a protective shield of divine energy that shields an area or individual from malevolent forces and dark influences. This veil repels negative entities and grants temporary immunity to harmful magical effects.
+* **Healing Resonance:** The Theurgic Healer channels celestial energies to accelerate the natural healing processes within a person, mending wounds and curing ailments beyond ordinary means. This spell also offers solace and peace to the afflicted.
+* **Symbol of Truth:** This spell imbues a sacred symbol or sigil with divine truth, revealing hidden secrets, illusions, and deceit. The symbol's presence can expose lies and dispel illusions, making it a potent tool for discovering the truth.
+* **Transcendent Empowerment:** The Ascendant Seeker can tap into their inner spiritual potential to temporarily enhance their magical abilities, granting them a surge of power and insight for a short duration.
+* **Astral Projection:** The Theurgy practitioner can send their consciousness beyond the physical realm, exploring other planes of existence, and communicating with celestial beings or ancestral spirits.
+* **Timeless Illumination:** By invoking ancient cosmic wisdom, the Arcane Scholar gains profound insights into mysteries of the universe or forgotten lore. This spell can unlock forgotten knowledge and reveal the true nature of artifacts or ancient writings.
+* **Divine Aura:** The Sacred Guardian envelops themselves or others in a luminous aura that wards off dark entities and provides protection against malevolent magical attacks.
+* **Harmonious Resonance:** This spell enables the Theurgist to resonate with the natural rhythm of the cosmos, gaining heightened intuition and foresight, allowing them to make informed decisions and navigate challenges with clarity.
 
 These unique Theurgy spells showcase the character's special connection to the divine and their ability to harness celestial energies for various purposes. Each spell reflects the deeper themes of spiritual growth, cosmic balance, and the quest for enlightenment that are inherent in Theurgy.
 
@@ -1309,7 +1311,7 @@ These unique Theurgy spells showcase the character's special connection to the d
 | Nearly Impossible | Ascending to a higher plane of existence temporarily to gain profound insights and wisdom from celestial beings.                                                                                                                                                                                                                                                                                                           |
 | Godly             | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
 
-##### Adept
+#### Adept
 
 You awaken your inner essence, becoming an Adept, a master of magic and mysticism. Your body and mind harmoniously blend, allowing you to perform superhuman feats through the manipulation of vital energy within your body known as "Chi" or "Qi." This connection between mind and muscle enables you to push your physical limits and perceive the world differently, spotting subtle energies invisible to others.
 
@@ -1317,26 +1319,26 @@ As an Adept, you discover your role as a conduit for the universal energy flowin
 
 Your journey as an Adept is one of self-discovery and self-mastery. By continuously pushing your own boundaries and aligning with the greater forces at play, you embrace the wisdom of ages and become a guardian of balance. Let the quest to unlock your full magical potential guide you as you walk this path, always remembering that true power lies not in domination but in alignment with the greater mysteries of existence.
 
-###### Adept Archtypes
+##### Adept Archtypes
 
-- **The Martial Mystic:** This archetype embodies the perfect fusion of physical prowess and mystical powers. They are formidable warriors who can channel their inner energy to enhance their combat abilities significantly. They often possess a serene demeanor, relying on their disciplined minds to outmaneuver opponents and only using their full magical potential when necessary. Examples:
-- **The Nature's Guardian:** These Adepts draw their magical powers from the natural world, becoming protectors of the environment and its inhabitants. They can communicate with animals, manipulate plant life, and control the elements to safeguard the balance of nature.
-- **The Healer Warrior:** This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.
-- **The Wandering Sage:** This archetype is a wise and mysterious figure who roams the world, seeking enlightenment. They have a deep understanding of the mystical arts and often serve as mentors to other characters on their journeys. Their physical abilities and prowess are a testament to their years of training and self-discovery.  
-- **The Hidden Assassin:** This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace.
+* **The Martial Mystic:** This archetype embodies the perfect fusion of physical prowess and mystical powers. They are formidable warriors who can channel their inner energy to enhance their combat abilities significantly. They often possess a serene demeanor, relying on their disciplined minds to outmaneuver opponents and only using their full magical potential when necessary. Examples:
+* **The Nature's Guardian:** These Adepts draw their magical powers from the natural world, becoming protectors of the environment and its inhabitants. They can communicate with animals, manipulate plant life, and control the elements to safeguard the balance of nature.
+* **The Healer Warrior:** This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.
+* **The Wandering Sage:** This archetype is a wise and mysterious figure who roams the world, seeking enlightenment. They have a deep understanding of the mystical arts and often serve as mentors to other characters on their journeys. Their physical abilities and prowess are a testament to their years of training and self-discovery.  
+* **The Hidden Assassin:** This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace.
 
-###### Unique Adept Magical Spells
+##### Unique Adept Magical Spells
 
-- **Chi-Enhanced Strike:** Infuse your physical attacks with raw mystical energy, allowing your strikes to carry an extra punch. Your blows become charged with Chi, granting them the ability to bypass certain defenses or even disrupt magical barriers.
-- **Ethereal Step:** Temporarily phase out of the physical plane, becoming intangible for a short period. This spell grants you the ability to avoid physical attacks, pass through obstacles, or move swiftly through difficult terrain.
-- **Vital Energy Channeling:** Harness the life force within your body to heal wounds and rejuvenate yourself or others. By channeling your Chi into others, you can aid in their recovery from injuries or illnesses.
-- **Elemental Fusion:** Merge your mastery of physicality with the elements. Combine your attacks with elemental forces like fire, ice, or lightning to unleash devastating strikes that leave a lasting impact on your opponents.
-- **Nature's Embrace:** Form an empathic connection with the natural world, allowing you to communicate with animals and plants. This spell grants you insights into the environment, helping you navigate and gather valuable information.
-- **Mystic Resilience:** Temporarily fortify your body with mystical energy, granting you enhanced resilience and endurance. This spell can make you temporarily resistant to physical harm or the effects of other magical spells.
-- **Flowing Harmony:** Enter a state of perfect balance and harmony, where your physical and mystical energies synchronize seamlessly. In this state, your movements become graceful, and you can effortlessly evade attacks or perform complex maneuvers.
-- **Shadow Blend:** Merge with the shadows, becoming nearly invisible in dim light or darkness. This spell allows you to move stealthily and remain undetected by most forms of visual detection.
-- **Energy Infusion:** Imbue weapons or objects with your Chi, enhancing their properties. You can turn a simple weapon into a powerful magical tool or temporarily empower objects for specific purposes.
-- **Elemental Transmutation:** Convert one element into another by manipulating its atomic structure. This unique spell allows you to transform elements, providing diverse tactical options in various situations.
+* **Chi-Enhanced Strike:** Infuse your physical attacks with raw mystical energy, allowing your strikes to carry an extra punch. Your blows become charged with Chi, granting them the ability to bypass certain defenses or even disrupt magical barriers.
+* **Ethereal Step:** Temporarily phase out of the physical plane, becoming intangible for a short period. This spell grants you the ability to avoid physical attacks, pass through obstacles, or move swiftly through difficult terrain.
+* **Vital Energy Channeling:** Harness the life force within your body to heal wounds and rejuvenate yourself or others. By channeling your Chi into others, you can aid in their recovery from injuries or illnesses.
+* **Elemental Fusion:** Merge your mastery of physicality with the elements. Combine your attacks with elemental forces like fire, ice, or lightning to unleash devastating strikes that leave a lasting impact on your opponents.
+* **Nature's Embrace:** Form an empathic connection with the natural world, allowing you to communicate with animals and plants. This spell grants you insights into the environment, helping you navigate and gather valuable information.
+* **Mystic Resilience:** Temporarily fortify your body with mystical energy, granting you enhanced resilience and endurance. This spell can make you temporarily resistant to physical harm or the effects of other magical spells.
+* **Flowing Harmony:** Enter a state of perfect balance and harmony, where your physical and mystical energies synchronize seamlessly. In this state, your movements become graceful, and you can effortlessly evade attacks or perform complex maneuvers.
+* **Shadow Blend:** Merge with the shadows, becoming nearly invisible in dim light or darkness. This spell allows you to move stealthily and remain undetected by most forms of visual detection.
+* **Energy Infusion:** Imbue weapons or objects with your Chi, enhancing their properties. You can turn a simple weapon into a powerful magical tool or temporarily empower objects for specific purposes.
+* **Elemental Transmutation:** Convert one element into another by manipulating its atomic structure. This unique spell allows you to transform elements, providing diverse tactical options in various situations.
 
 Remember that as a Physical Adept, your spells revolve around maintaining harmony and balance between the physical and mystical aspects of yourself. Each spell reflects your connection to the world and your unique ability to blend magic and martial prowess seamlessly.
 
@@ -1356,7 +1358,7 @@ Remember that as a Physical Adept, your spells revolve around maintaining harmon
 
 As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
 
-##### Order 
+#### Order 
 
 In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
 
@@ -1366,25 +1368,25 @@ While the pursuit of order offers great power, it also presents challenges. Adhe
 
 Overall, your journey in the Order branch of magic is one of constant refinement and unwavering commitment to knowledge. As you unlock the mysteries of the universe, the cosmos responds to your disciplined approach, granting you wisdom and clarity. Embrace the order, and the magic of the cosmos will reveal itself to you.
 
-###### Order Archtypes
+##### Order Archtypes
 
-- **The Archivist:** This archetype is the epitome of knowledge and wisdom. The Archivist dedicates their life to the preservation and study of ancient tomes, grimoires, and arcane texts. They possess a vast understanding of magical lore, and their power comes from their ability to access and interpret the accumulated wisdom of ages.
-- **The Alchemist:** This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered.
-- **The Artificer:** This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.
-- **The Elementalist:** This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.
+* **The Archivist:** This archetype is the epitome of knowledge and wisdom. The Archivist dedicates their life to the preservation and study of ancient tomes, grimoires, and arcane texts. They possess a vast understanding of magical lore, and their power comes from their ability to access and interpret the accumulated wisdom of ages.
+* **The Alchemist:** This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered.
+* **The Artificer:** This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.
+* **The Elementalist:** This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.
 
-###### Unique Order Magical Spells
+##### Unique Order Magical Spells
 
-- **Chrono-script:** This spell allows the caster to create temporal runes that record events and knowledge in a structured manner. These runes can be stored in enchanted archives and accessed by others, ensuring that valuable information is never lost to the passage of time.
-- **Symphony of Elements:** By orchestrating a precise sequence of gestures and incantations, the caster can summon and harmonize the elemental forces, combining them in a powerful and controlled manner. This spell allows the caster to wield the combined might of multiple elements simultaneously.
-- **Cognitive Bind:** The caster can weave a spell that links the thoughts and knowledge of individuals within a specified area. This connection fosters understanding and cooperation among the linked minds, facilitating the exchange of ideas and strategies.
-- **Kaleidoscopic Array:** By arranging crystals in a particular geometric pattern and channeling magic through them, the caster creates a multi-faceted barrier. This enchantment refracts incoming spells and energies, breaking them down into more manageable, harmless components.
-- **Regimen of Enchanting:** This spell enables the caster to conduct an intricate enchanting ritual that imbues objects with long-lasting magical properties. The enchanted items forged through this process are highly stable and retain their powers for extended periods.
-- **Harmony's Embrace:** By invoking the essence of harmony and order, the caster can soothe conflicts and quell chaotic energies within an area. This spell restores balance and calms unrest, fostering a sense of tranquility and cooperation among those affected.
-- **Paradoxial Insight:** The caster gains the ability to briefly peer into the temporal and causal weave of events. This spell allows them to foresee potential consequences of specific actions, aiding in strategic decision-making.
-- **Architect's Resilience:** When this spell is cast, it temporarily strengthens the structural integrity of buildings and barriers, making them highly resistant to destruction and breaches. This is especially useful during sieges or when protecting vital locations.
-- **Sage's Exchange:** Through this spell, the caster can create a magical link between two locations. This allows individuals to communicate and send small objects instantaneously between the linked points, bypassing physical barriers and distances.
-- **Harmonious Panoply:** This spell enhances the caster's abilities to coordinate and synchronize with their allies during combat. It fosters a seamless collaboration, enabling them to act in perfect harmony and anticipate each other's moves.
+* **Chrono-script:** This spell allows the caster to create temporal runes that record events and knowledge in a structured manner. These runes can be stored in enchanted archives and accessed by others, ensuring that valuable information is never lost to the passage of time.
+* **Symphony of Elements:** By orchestrating a precise sequence of gestures and incantations, the caster can summon and harmonize the elemental forces, combining them in a powerful and controlled manner. This spell allows the caster to wield the combined might of multiple elements simultaneously.
+* **Cognitive Bind:** The caster can weave a spell that links the thoughts and knowledge of individuals within a specified area. This connection fosters understanding and cooperation among the linked minds, facilitating the exchange of ideas and strategies.
+* **Kaleidoscopic Array:** By arranging crystals in a particular geometric pattern and channeling magic through them, the caster creates a multi-faceted barrier. This enchantment refracts incoming spells and energies, breaking them down into more manageable, harmless components.
+* **Regimen of Enchanting:** This spell enables the caster to conduct an intricate enchanting ritual that imbues objects with long-lasting magical properties. The enchanted items forged through this process are highly stable and retain their powers for extended periods.
+* **Harmony's Embrace:** By invoking the essence of harmony and order, the caster can soothe conflicts and quell chaotic energies within an area. This spell restores balance and calms unrest, fostering a sense of tranquility and cooperation among those affected.
+* **Paradoxial Insight:** The caster gains the ability to briefly peer into the temporal and causal weave of events. This spell allows them to foresee potential consequences of specific actions, aiding in strategic decision-making.
+* **Architect's Resilience:** When this spell is cast, it temporarily strengthens the structural integrity of buildings and barriers, making them highly resistant to destruction and breaches. This is especially useful during sieges or when protecting vital locations.
+* **Sage's Exchange:** Through this spell, the caster can create a magical link between two locations. This allows individuals to communicate and send small objects instantaneously between the linked points, bypassing physical barriers and distances.
+* **Harmonious Panoply:** This spell enhances the caster's abilities to coordinate and synchronize with their allies during combat. It fosters a seamless collaboration, enabling them to act in perfect harmony and anticipate each other's moves.
 
 These spells exemplify the precise, structured, and balanced nature of Order Magic. Each spell serves a specific purpose, often involving careful planning, intricate rituals, and a deep understanding of the forces that govern the world.
 
@@ -1414,21 +1416,21 @@ Lastly, Shamanism leads you on a path of spiritual connection and healing. Your 
 
 #### Unique Magical Spells to Mystery
 
-- **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
-- **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
-- **Soul Bond:** Form a temporary connection with another being, allowing you to share emotions, thoughts, and experiences.
-- **Mystic Veil:** Shroud yourself or others in an aura of secrecy, making them invisible to the mundane eye and hard to detect by magical means.
-- **Metaphysical Enigma:** Unleash a surge of metaphysical energy, disrupting the flow of magic and causing confusion among spellcasters.
-- **Dreamwalker's Journey:** Enter the dreams of individuals, influencing their subconscious or gathering information from their dreamscapes.
-- **Elemental Fusion:** Combine the power of different elements to create unique and potent elemental manifestations.
-- **Psychic Surge:** Channel psychic energy to amplify your magical abilities or temporarily enhance physical attributes.
-- **Spiritual Mending:** Heal spiritual wounds and emotional traumas, restoring balance and inner harmony.
-- **Cosmic Attunement:** Commune with cosmic entities and receive revelations or cosmic insights beyond mortal understanding.
-- **Shapeshifter's Mirage:** Temporarily alter your appearance or transform into a creature of the mystical realms.
-- **Anima Manipulation:** Harness the animating essence of life to influence the growth and behavior of plants and animals.
-- **Astral Beacon:** Create a beacon of energy that serves as a guiding point or communication hub across great distances.
-- **Temporal Shift:** Temporarily manipulate time's flow, slowing or hastening events within a limited area.
-- **Chaosweave:** Merge different magical energies to form a chaotic weave of power, unleashing unpredictable effects.
+* **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
+* **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
+* **Soul Bond:** Form a temporary connection with another being, allowing you to share emotions, thoughts, and experiences.
+* **Mystic Veil:** Shroud yourself or others in an aura of secrecy, making them invisible to the mundane eye and hard to detect by magical means.
+* **Metaphysical Enigma:** Unleash a surge of metaphysical energy, disrupting the flow of magic and causing confusion among spellcasters.
+* **Dreamwalker's Journey:** Enter the dreams of individuals, influencing their subconscious or gathering information from their dreamscapes.
+* **Elemental Fusion:** Combine the power of different elements to create unique and potent elemental manifestations.
+* **Psychic Surge:** Channel psychic energy to amplify your magical abilities or temporarily enhance physical attributes.
+* **Spiritual Mending:** Heal spiritual wounds and emotional traumas, restoring balance and inner harmony.
+* **Cosmic Attunement:** Commune with cosmic entities and receive revelations or cosmic insights beyond mortal understanding.
+* **Shapeshifter's Mirage:** Temporarily alter your appearance or transform into a creature of the mystical realms.
+* **Anima Manipulation:** Harness the animating essence of life to influence the growth and behavior of plants and animals.
+* **Astral Beacon:** Create a beacon of energy that serves as a guiding point or communication hub across great distances.
+* **Temporal Shift:** Temporarily manipulate time's flow, slowing or hastening events within a limited area.
+* **Chaosweave:** Merge different magical energies to form a chaotic weave of power, unleashing unpredictable effects.
 
 These spells draw upon the mysteries of the universe, tapping into psychic abilities, manipulating ethereal energies, and exploring the realms beyond ordinary comprehension. As a practitioner of Mystery magic, you possess a unique set of skills that allow you to traverse the boundaries of reality and harness the profound forces of the unknown.
 
@@ -1442,27 +1444,27 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 
 ##### Metaphysical Archtypes
 
-- **The Psychic Seer:** This archetype embodies the concept of clairvoyance and precognition. The Psychic Seer possesses the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate.
-- **The Manipulator:** Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.
-- **The Traveler:** Representing the practice of astral projection, this archetype ventures beyond the confines of the physical body to explore ethereal realms and dimensions. The Traveler often uncovers hidden knowledge and encounters beings from other planes, offering a bridge between the material and spiritual worlds.
-- **The Time Bender:** This archetype draws inspiration from those with precognitive abilities who can see potential futures or alter the timeline itself. The Time Bender grapples with ethical dilemmas, considering the consequences of changing events or preserving the natural flow of time.
-- **The Empathic Healer:** Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.
-- **The  Oracle:** Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinies and guide pivotal decisions.
+* **The Psychic Seer:** This archetype embodies the concept of clairvoyance and precognition. The Psychic Seer possesses the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate.
+* **The Manipulator:** Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.
+* **The Traveler:** Representing the practice of astral projection, this archetype ventures beyond the confines of the physical body to explore ethereal realms and dimensions. The Traveler often uncovers hidden knowledge and encounters beings from other planes, offering a bridge between the material and spiritual worlds.
+* **The Time Bender:** This archetype draws inspiration from those with precognitive abilities who can see potential futures or alter the timeline itself. The Time Bender grapples with ethical dilemmas, considering the consequences of changing events or preserving the natural flow of time.
+* **The Empathic Healer:** Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.
+* **The Oracle:** Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinies and guide pivotal decisions.
 
 ##### Unique Metaphysical Magical Spells
 
-- **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
-- **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
-- **Astral Passage:** This spell enables you and others to project your consciousness beyond the physical realm, traversing various planes and dimensions to uncover hidden secrets or seek guidance.
-- **Temporal Echo:** By tapping into the flow of time, you can leave a trace of your consciousness in the past or future, allowing you to observe events unfolding in those moments and interact with them indirectly.
-- **Mindforge:** Mindforge empowers you to create and shape constructs using pure thought. These constructs can serve various purposes, from guardians and defenders to tools and companions.
-- **Divination Nexus:** This powerful spell grants you a heightened sense of precognition, allowing you to see potential outcomes and the ripple effects of your actions, aiding in decision-making.
-- **Ethereal Embrace:** With Ethereal Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
-- **Psionic Rift:** This spell opens a temporary gateway to other planes or distant locations, enabling you to gather knowledge or transport yourself and others instantaneously.
-- **Harmonic Resonance:** Harmonic Resonance aligns the energy of the mind and body, promoting healing and restoration, and even mending psychic wounds caused by mental attacks or trauma.
-- **Foresight's Grace:** By invoking Foresight's Grace, you grant yourself or others heightened awareness, reflexes, and intuition, enhancing their abilities during critical moments.
-- **Illusion Unveiled:** With this spell, you can pierce through illusions and glamours, revealing the truth behind deceptive appearances and uncovering hidden truths.
-- **Psychokinetic Symphony:** Psychokinetic Symphony allows you to manipulate multiple objects simultaneously with incredible precision, creating intricate displays of telekinetic prowess.
+* **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
+* **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
+* **Astral Passage:** This spell enables you and others to project your consciousness beyond the physical realm, traversing various planes and dimensions to uncover hidden secrets or seek guidance.
+* **Temporal Echo:** By tapping into the flow of time, you can leave a trace of your consciousness in the past or future, allowing you to observe events unfolding in those moments and interact with them indirectly.
+* **Mindforge:** Mindforge empowers you to create and shape constructs using pure thought. These constructs can serve various purposes, from guardians and defenders to tools and companions.
+* **Divination Nexus:** This powerful spell grants you a heightened sense of precognition, allowing you to see potential outcomes and the ripple effects of your actions, aiding in decision-making.
+* **Ethereal Embrace:** With Ethereal Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
+* **Psionic Rift:** This spell opens a temporary gateway to other planes or distant locations, enabling you to gather knowledge or transport yourself and others instantaneously.
+* **Harmonic Resonance:** Harmonic Resonance aligns the energy of the mind and body, promoting healing and restoration, and even mending psychic wounds caused by mental attacks or trauma.
+* **Foresight's Grace:** By invoking Foresight's Grace, you grant yourself or others heightened awareness, reflexes, and intuition, enhancing their abilities during critical moments.
+* **Illusion Unveiled:** With this spell, you can pierce through illusions and glamours, revealing the truth behind deceptive appearances and uncovering hidden truths.
+* **Psychokinetic Symphony:** Psychokinetic Symphony allows you to manipulate multiple objects simultaneously with incredible precision, creating intricate displays of telekinetic prowess.
 
 Remember that these spells are unique to your background in Metaphysics and reflect the deep connection you have with the mystical forces of ESP and Psionics. Each spell embodies the essence of your metaphysical knowledge, offering a distinct and awe-inspiring set of abilities in the world of magic and fantasy.
 
@@ -1492,26 +1494,26 @@ Your empathy grows, allowing you to perceive the hidden spiritual essence within
 
 ##### Animism Archtypes
 
-- **Spirit Whisperer:** The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.
-- **Elemental Shaper:** The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.
-- **Nature Healer:** The Nature Healer is an archetype gifted with the power to heal wounds and ailments, not just on a physical level but also on a spiritual and emotional one. They draw upon the life force present in plants, rivers, and animals to mend broken spirits and restore balance to troubled souls. Their touch brings forth rejuvenation and renewal to both individuals and the natural world.
-- **Shapeshifter:** The Shapeshifter is a mystical being who can transform into various animals or even merge partially with the spirits of nature. Through this ability, they gain unique traits and strengths from different creatures, granting them incredible versatility in navigating through diverse challenges. They can become the swift wolf, the wise owl, or the elusive fox, adapting to any situation.
-- **Guardian of the Wild:** The Guardian of the Wild is a fierce protector of the natural order. They defend the sacred sites, creatures, and ancient spirits from external threats, often serving as a bridge between the physical and spiritual realms. With an unyielding determination, they safeguard the balance of life, using their powers to deter those who would harm the natural world.
-- **Ancestral Channeler:** The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.
-- **Communal Weave:** The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.
+* **Spirit Whisperer:** The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.
+* **Elemental Shaper:** The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.
+* **Nature Healer:** The Nature Healer is an archetype gifted with the power to heal wounds and ailments, not just on a physical level but also on a spiritual and emotional one. They draw upon the life force present in plants, rivers, and animals to mend broken spirits and restore balance to troubled souls. Their touch brings forth rejuvenation and renewal to both individuals and the natural world.
+* **Shapeshifter:** The Shapeshifter is a mystical being who can transform into various animals or even merge partially with the spirits of nature. Through this ability, they gain unique traits and strengths from different creatures, granting them incredible versatility in navigating through diverse challenges. They can become the swift wolf, the wise owl, or the elusive fox, adapting to any situation.
+* **Guardian of the Wild:** The Guardian of the Wild is a fierce protector of the natural order. They defend the sacred sites, creatures, and ancient spirits from external threats, often serving as a bridge between the physical and spiritual realms. With an unyielding determination, they safeguard the balance of life, using their powers to deter those who would harm the natural world.
+* **Ancestral Channeler:** The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.
+* **Communal Weave:** The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.
 
 ##### Unique Animism Magical Spells
 
-- **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
-- **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
-- **Nature's Embrace:** Envelops the caster or a target in a protective aura formed from the essence of nature. This shield grants resistance against elemental attacks and negative energy, offering a temporary sanctuary from harm.
-- **Spiritual Healing:** A potent healing spell that not only restores physical wounds but also mends the spiritual and emotional well-being of the recipient. The spell draws upon the life force of the surrounding environment to aid in the healing process.
-- **Wild Shape:** Allows the caster to temporarily transform into an animal of their choosing. While in animal form, the caster gains the abilities and instincts of the chosen creature, granting them unique advantages in exploration and combat.
-- **Harmony's Call:** Enables the caster to harmonize the energies of living beings in a specific area, quelling conflicts and calming aggressive tendencies. This spell fosters empathy and understanding, promoting peace among both humans and creatures.
-- **Animate Nature:** Breathes life into inanimate objects, briefly imbuing them with the essence of nature. These animated objects can assist the caster or perform simple tasks, such as carrying items or providing distraction in battle.
-- **Soothing Whispers:** Uses the gentle whispers of nature spirits to soothe and pacify aggressive creatures or individuals. The spell induces a calming effect, reducing hostility and making it easier to negotiate or escape potentially dangerous situations.
-- **Ancestral Guidance:** Calls upon the wisdom and knowledge of the caster's ancestors, providing valuable insights or ancient techniques to aid in solving problems or overcoming challenges.
-- **Spiritual Nexus:** Creates a sacred space that acts as a gateway between the physical and spiritual realms. This nexus enhances the caster's magical abilities, increases their connection to the spirits, and facilitates more profound and powerful spellcasting.
+* **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
+* **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
+* **Nature's Embrace:** Envelops the caster or a target in a protective aura formed from the essence of nature. This shield grants resistance against elemental attacks and negative energy, offering a temporary sanctuary from harm.
+* **Spiritual Healing:** A potent healing spell that not only restores physical wounds but also mends the spiritual and emotional well-being of the recipient. The spell draws upon the life force of the surrounding environment to aid in the healing process.
+* **Wild Shape:** Allows the caster to temporarily transform into an animal of their choosing. While in animal form, the caster gains the abilities and instincts of the chosen creature, granting them unique advantages in exploration and combat.
+* **Harmony's Call:** Enables the caster to harmonize the energies of living beings in a specific area, quelling conflicts and calming aggressive tendencies. This spell fosters empathy and understanding, promoting peace among both humans and creatures.
+* **Animate Nature:** Breathes life into inanimate objects, briefly imbuing them with the essence of nature. These animated objects can assist the caster or perform simple tasks, such as carrying items or providing distraction in battle.
+* **Soothing Whispers:** Uses the gentle whispers of nature spirits to soothe and pacify aggressive creatures or individuals. The spell induces a calming effect, reducing hostility and making it easier to negotiate or escape potentially dangerous situations.
+* **Ancestral Guidance:** Calls upon the wisdom and knowledge of the caster's ancestors, providing valuable insights or ancient techniques to aid in solving problems or overcoming challenges.
+* **Spiritual Nexus:** Creates a sacred space that acts as a gateway between the physical and spiritual realms. This nexus enhances the caster's magical abilities, increases their connection to the spirits, and facilitates more profound and powerful spellcasting.
 
 These unique spells embody the essence of Animism Magic, offering a profound connection with nature, a deep understanding of the spirits, and the ability to influence the world through the spiritual essence that permeates all things.
 
@@ -1541,30 +1543,30 @@ The practice of Shamanism requires a profound sense of humility and respect for 
 
 ##### Shamanism Archtypes
 
-- **The Wise Shaman:** This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.
-- **The Nature Channeler:** This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.
-- **The Spirit Walker:** The Spirit Walker is a shamanic archetype who has the ability to traverse between the physical and spiritual realms. They enter altered states of consciousness to connect with spirits, receive visions, and gain supernatural powers. This character may journey to the underworld, commune with ancestors, or seek guidance from powerful spirits.
-- **The Healer:** This archetype embodies the shaman's role as a powerful healer. They can cure ailments, both physical and spiritual, using their knowledge of herbs, rituals, and energy manipulation. The Healer often acts as a benevolent figure, offering aid and support to those in need.
-- **The Balance Keeper:** The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.
-- **The Shadow Shaman:** This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.
+* **The Wise Shaman:** This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.
+* **The Nature Channeler:** This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.
+* **The Spirit Walker:** The Spirit Walker is a shamanic archetype who has the ability to traverse between the physical and spiritual realms. They enter altered states of consciousness to connect with spirits, receive visions, and gain supernatural powers. This character may journey to the underworld, commune with ancestors, or seek guidance from powerful spirits.
+* **The Healer:** This archetype embodies the shaman's role as a powerful healer. They can cure ailments, both physical and spiritual, using their knowledge of herbs, rituals, and energy manipulation. The Healer often acts as a benevolent figure, offering aid and support to those in need.
+* **The Balance Keeper:** The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.
+* **The Shadow Shaman:** This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.
 
 ##### Unique Shamanism Magical Spells
 
-- **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
-- **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
-- **Ancestral Vision:** Enables the shaman to experience visions or memories from their ancestors, gaining insights and knowledge from past generations.
-- **Nature's Embrace:** Calls upon the power of the natural world to heal wounds, cure diseases, or revitalize living beings.
-- **Soul Retrieval:** Travels into the spirit realm to find and restore lost or fragmented parts of someone's soul, promoting healing and wholeness.
-- **Spiritual Warding:** Creates a protective barrier against malevolent spirits or negative energies, safeguarding a person or location.
-- **Dance of the Northern Lights:** A mesmerizing ritual dance that can evoke the aurora borealis, influencing luck, prosperity, and fortune.
-- **Plant Speak:** Allows the shaman to understand the language of plants, receiving messages or information from the flora around them.
-- **Eclipse's Gaze:** During a solar or lunar eclipse, the shaman gains heightened powers, accessing unique abilities and knowledge.
-- **Familiar Bond:** Forms a deep bond with an animal spirit, summoning the spirit to assist the shaman during their journeys.
-- **Dreamweaver's Lullaby:** Induces a magical slumber, enabling the shaman to enter another's dreams to offer guidance or deliver messages.
-- **Soulflight:** Projects the shaman's consciousness into the spirit realm, allowing them to explore distant places or seek specific spirits for aid.
-- **Nature's Wrath:** Calls upon the fury of the natural elements to unleash devastating attacks against foes.
-- **Rite of Passage:** A powerful ritual that marks a significant moment in someone's life, bestowing blessings or unlocking hidden potential.
-- **Sacred Grove:** Creates a mystical sanctuary where the shaman can communicate with spirits, hold ceremonies, or offer prayers.
+* **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
+* **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
+* **Ancestral Vision:** Enables the shaman to experience visions or memories from their ancestors, gaining insights and knowledge from past generations.
+* **Nature's Embrace:** Calls upon the power of the natural world to heal wounds, cure diseases, or revitalize living beings.
+* **Soul Retrieval:** Travels into the spirit realm to find and restore lost or fragmented parts of someone's soul, promoting healing and wholeness.
+* **Spiritual Warding:** Creates a protective barrier against malevolent spirits or negative energies, safeguarding a person or location.
+* **Dance of the Northern Lights:** A mesmerizing ritual dance that can evoke the aurora borealis, influencing luck, prosperity, and fortune.
+* **Plant Speak:** Allows the shaman to understand the language of plants, receiving messages or information from the flora around them.
+* **Eclipse's Gaze:** During a solar or lunar eclipse, the shaman gains heightened powers, accessing unique abilities and knowledge.
+* **Familiar Bond:** Forms a deep bond with an animal spirit, summoning the spirit to assist the shaman during their journeys.
+* **Dreamweaver's Lullaby:** Induces a magical slumber, enabling the shaman to enter another's dreams to offer guidance or deliver messages.
+* **Soulflight:** Projects the shaman's consciousness into the spirit realm, allowing them to explore distant places or seek specific spirits for aid.
+* **Nature's Wrath:** Calls upon the fury of the natural elements to unleash devastating attacks against foes.
+* **Rite of Passage:** A powerful ritual that marks a significant moment in someone's life, bestowing blessings or unlocking hidden potential.
+* **Sacred Grove:** Creates a mystical sanctuary where the shaman can communicate with spirits, hold ceremonies, or offer prayers.
 
 These unique spells reflect the shaman's profound connection to nature, spirits, and the unseen world, showcasing their ability to tap into the mystical forces of the universe to achieve various extraordinary feats.
 
