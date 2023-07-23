@@ -182,18 +182,22 @@ Aspect in question when rolling the skill.
 - If you are formally trained in a skill, you can also use the skill under other aspects and
 characteristics.
 
-> EXAMPLE: You come across a leather sling. You want to know the religious significance of a religious sling being carried by the guards at your local temple. Your character is physicall very weak, but is an Adept following in the traditions of the Martial Arts Mystic.
-> You have a Mystical (Aspect) of 2
-> You have a Faith (Characteristic) of 2
-> You have a Adept (Knowledge Area) of 2
-> You have a Theurgy (Local Religions) of unskilled.
-> You have a Fitness (Aspect) of -2
-> You have a Muscle (Characteristic) of -1
-> You have a Ranged Combat (Knowledge Area) of 1 and you are skilled in it.  
-> So you roll: 
-> 2 (Mystical Aspect) + 2 (Faith Characteristic) + 1 (Ranged Combat Knowledge Area) = DM+5 versus
-> -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
-> You can roll this instead of because you are to get this answer even though you have no formal training in the gods of your religion, which would be Theurgy.
+EXAMPLE: You come across a leather sling. You want to know the religious significance of a religious sling being carried by the guards at your local temple. Your character is physicall very weak, but is an Adept following in the traditions of the Martial Arts Mystic.
+
+- You have a Mystical (Aspect) of 2
+- You have a Faith (Characteristic) of 2
+- You have a Adept (Knowledge Area) of 2
+- You have a Theurgy (Local Religions) of unskilled.
+- You have a Fitness (Aspect) of -2
+- You have a Muscle (Characteristic) of -1
+- You have a Ranged Combat (Knowledge Area) of 1 and you are skilled in it.  
+
+So you roll:
+- 2 (Mystical Aspect) + 2 (Faith Characteristic) + 1 (Ranged Combat Knowledge Area) = DM+5 versus
+- -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
+
+You can roll this because you are to get this answer even though you have no formal training in the gods of your religion, which would be Theurgy.
+
 
 ▣ = Competent – You have experiences of being successful at this level.
 However, you have not had formal training at this level. You may only
@@ -298,7 +302,7 @@ Difficulty table.
 | Easy              | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                       | 10  | 4   | 5   | 5   | 5   |               |      |
 | Routine           | Requires a bit more competence to accomplish. Can be completed more often than not by a character with natural aptitude.                                                                                                                                                                                                                     | 15  | 2   | 3   | 3   | 4   |               |      |
 | Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                  |     | 0   | 0   | 0   | 0   |               |      |
-| Difficult         | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luckto pull it off (or maybe some specialized training). | 20  | -2  | -3  | -3  | -4  |               |      |
+| Difficult         | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). | 20  | -2  | -3  | -3  | -4  |               |      |
 | Very Difficult    | Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). Include anything beyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                              | 25  | -4  | -5  | -5  | -5  |               |      |
 | Formidable        | Achievable only by especially talented individuals. Nobody else should even bother trying. This is on the level of superstars.                                                                                                                                                                                                               | 30  | -6  | -6  | -7  | -10 |               |      |
 | Heroic            | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                |     |     | -8  | -9  | -15 |               |      |
