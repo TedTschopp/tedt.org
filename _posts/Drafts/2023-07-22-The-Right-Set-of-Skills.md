@@ -171,24 +171,34 @@ actions. The experience gained in this manner distinguishes demonstrated
 skill from demonstrated competency.
 
 ▩ = Skilled – You are formally trained in this area. Some equipment,
-weapons, and actions require professional training to use them. If you
-are attempting something that requires formal skill in an area and you
+weapons, and actions require professional training to use them.
+
+- If you are attempting something that requires formal skill in an area and you
 do not have any, you take a DM-1 to the Characteristic and a DM-1 to the
-Aspect in question when rolling the skill. If you are formally trained
-in a skill, you can also use the skill under other aspects and
-characteristics. For example you come across a leather sling. You want
-to know the religious significance of a religious sling being carried by
-the guards at your local temple. You have a ranged combat of 1. You have
-a Mystical of 2 and a faith of 2. So you roll 2 + 2 + 1 to get this
-answer even though you have no formal training in the gods of your
-religion, which would be Theurgy.
+Aspect in question when rolling the skill.
+- If you are formally trained in a skill, you can also use the skill under other aspects and
+characteristics.
+
+> EXAMPLE: You come across a leather sling. You want to know the religious significance of a religious sling being carried by the guards at your local temple. Your character is physicall very weak, but is an Adept following in the traditions of the Martial Arts Mystic.
+> You have a Mystical (Aspect) of 2
+> You have a Faith (Characteristic) of 2
+> You have a Adept of 2 
+> You have a Theurgy (Local Religions) of unskilled.
+> You have a Fitness (Aspect) of -2
+> You have a Muscle (Characteristic) of -1
+> You have a Ranged Combat of 1 and you are skilled in it.  
+> So you roll can roll 
+> 2 (Mystical Aspect) + 2 (Faith Characteristic) + 1 (Ranged Combat Knowledge Area) = DM+5 versus
+> -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
+> You can roll this instead of because you are to get this answer even though you have no formal training in the gods of your religion, which would be Theurgy.
 
 ▣ = Competent – You have experiences of being successful at this level.
 However, you have not had formal training at this level. You may only
 use the Aspects and Characteristics associated with this Knowledge Area
-at this level.
+at this level. 
 
-□ = You have no experience at this level.
+▢ = Unskilled - You have no Experience and you are ot Skilled. Does not
+contribute to Total.
 
 ▩ = Skilled - Skilled. Contributes to Total.
 
@@ -197,10 +207,8 @@ at this level.
 ▣ = Competent - Experienced, but not Skilled. Does not contribute to
 Total.
 
-▢ = Unskilled - You have no Experience and you are ot Skilled. Does not
-contribute to Total.
 
-| Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Skills            | +1 2 3 4 | Total |
+| Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
 |-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
 | Fitness   | □ □ □ □   | □ □ □ □  | Muscle         | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |
 |           |           |          |                |           |          | Athletics         | □ □ □ □  |       |
