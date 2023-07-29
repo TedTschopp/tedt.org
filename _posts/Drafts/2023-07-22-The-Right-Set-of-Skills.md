@@ -19,7 +19,7 @@ excerpt: |
 layout: post
 guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
 permalink: /2023/07/22/The-Right-Set-of-Skills/
-image: /media/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
+image: /img/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
 image-credits: Photo by Ted Tschopp using Midjourney
 image_alt: Photo by Ted Tschopp using Midjourney
   

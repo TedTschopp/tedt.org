@@ -16,7 +16,7 @@ seo_description: |
 
 layout: MCC-GW
 guid: 2f4b8d5c-cf2a-4030-a6bf-0279eada7693
-image: 	/media/2018-07-28/ola-larsson-genlabbalpha.jpg
+image: 	/img/2018-07-28/ola-larsson-genlabbalpha.jpg
 image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
 image-credits-title: Genelab Alpha
 image-credits-artist: Ola Larsson

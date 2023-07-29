@@ -19,7 +19,7 @@ seo_description: |
 layout: MCC-GW
 guid: 4c02a988-5ea1-4ea1-8567-616e64d683c1
 permalink: /2018/09/04/Firearms-in-MCC-DCC/
-image:  /media/2018-09-04/MCC-Guns.jpg
+image:  /img/2018-09-04/MCC-Guns.jpg
 image-credits: Weapon & Prop Concepts by Matthew Harris https://megalomatthew.artstation.com/
 image-credits-title: Weapon & Prop Concepts
 image-credits-artist: Matthew Harris
