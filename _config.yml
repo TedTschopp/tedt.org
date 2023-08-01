@@ -194,13 +194,6 @@ links:
 
     # BlueSky
   - Name: BlueSky
-    URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
-    Icon-Class: fa-solid fa-cloud
-    Color: '#0085FF'
-    Text_Color: '#ffffff'
-
-    # BlueSky
-  - Name: BlueSky
     URL: https://bsky.app/profile/
     Username: tedt.org
     Icon-Class: fa-solid fa-cloud
