@@ -326,7 +326,7 @@ links:
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'
-    Icon-Class: fab fa-twitter
+    Icon-Class: fa-solid fa-xmark
 
   # FACEBOOK
   - Name: Facebook
