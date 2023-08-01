@@ -329,11 +329,10 @@ links:
     Icon-Class: fab fa-steam
 
   # TWITTER
-  - Name: Twitter
+  - Name: 𝕏
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'
-    Icon-Class: fa-solid fa-xmark
 
   # FACEBOOK
   - Name: Facebook
