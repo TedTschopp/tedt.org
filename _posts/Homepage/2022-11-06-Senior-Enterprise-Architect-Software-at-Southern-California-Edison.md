@@ -23,9 +23,9 @@ bullets:
   - Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.
 
 guid: 24ccc6a5-f9e8-4278-a610-cd6aabec11d9
-image: /img/Ted-Tschopp-Senior-Enterprise-Architect.png
+image: /img/Ted-Tschopp-Seniot-Enterprise-Architect-aesthetic-of-Leonardo-Da-Vinci.png
 image-credits: Ted Tschopp and Midjourney
-image-credits-title: Ted Tschopp as Senior Enterprise Architect
+image-credits-title: Ted Tschopp as Senior Enterprise Architect in the Aesthetic of Leonardo Da Vinci
 image-credits-artist: Ted Tschopp and Midjourney
 categories: home
 order: 2
