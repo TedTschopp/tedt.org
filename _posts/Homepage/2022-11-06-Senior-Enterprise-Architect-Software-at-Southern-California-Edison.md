@@ -9,20 +9,30 @@ author:
   avatar: https://tedt.org/img/thumb3.jpg
 
 description: |
-  Enterprise Technology Architect responsible for SCE's IT software engineering and development strategies. Build and maintain SCE's strategy, technology road map, and platform management direction for over five hundred properties in this space using multiple architectural models. 
+  As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
+
 excerpt: |
-   Enterprise Technology Architect responsible for SCE's IT software engineering and development strategies. Build and maintain SCE's strategy, technology road map, and platform management direction for over five hundred properties in this space using multiple architectural models.
+  As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
+
 seo_description: |
-  Enterprise Technology Architect responsible for SCE's IT software engineering and development strategies. Build and maintain SCE's strategy, technology road map, and platform management direction for over five hundred properties in this space using multiple architectural models.
+  As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
+
+bullets:
+  - Maintained a broad cross-domain understanding, developed new processes, standards, operational plans, and domain standards.
+  - Authored white papers providing in-depth problem analysis and tradeoff discussions, and ensured overall product, platform, and project technical quality.
+  - Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.
 
 guid: 24ccc6a5-f9e8-4278-a610-cd6aabec11d9
-image: /img/startae-team-7tXA8xwe4W4-unsplash.jpg
-image-credits: Startaê Team by Startaê Team - https://unsplash.com/photos/7tXA8xwe4W4
-image-credits-title: Startaê Team
-image-credits-artist: Startaê Team
-image-credits-URL: https://unsplash.com/photos/7tXA8xwe4W4
+image: /img/Ted-Tschopp-Senior-Enterprise-Architect.png
+image-credits: Ted Tschopp and Midjourney
+image-credits-title: Ted Tschopp as Senior Enterprise Architect
+image-credits-artist: Ted Tschopp and Midjourney
 categories: home
 order: 2
 ---
 
-Build a holistic view of the current and future state architecture for all software and products that links technology architectures to business capabilities and processes for SCE using multiple architectural models and views building SCE’s strategy, technology road map, and product management direction for over 500 properties.
+As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
+
+- Maintained a broad cross-domain understanding, developed new processes, standards, operational plans, and domain standards.
+- Authored white papers providing in-depth problem analysis and tradeoff discussions, and ensured overall product, platform, and project technical quality.
+- Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.

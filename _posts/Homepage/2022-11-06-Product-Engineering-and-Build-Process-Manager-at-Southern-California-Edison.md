@@ -26,11 +26,10 @@ bullets:
 
 
 guid: 92f94969-58b1-47de-8034-7b808ed7eb9e
-image: /img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg
-image-credits: Software by Fotis Fotopoulos on Unsplash
-image-credits-title: Automate 
-image-credits-artist: Fotis Fotopoulos
-image-credits-URL: https://unsplash.com/photos/DuHKoV44prg
+image: /img/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.png
+image-credits: MidJourney and Ted Tschopp 
+image-credits-title: Ted Tschopp as Product Engineering and Build Process Manager 
+image-credits-artist: MidJourney and Ted Tschopp 
 categories: home
 order: 3
 ---
