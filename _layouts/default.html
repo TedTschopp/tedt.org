@@ -96,32 +96,33 @@
     {% include bootstrap4-navigation.html %}
 
     <!-- Masthead -->
+
+    <style>
+      .ted-centered {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow:1px 1px 10px #000, 1px 1px 10px #000;
+        font-family: Lato, sans-serif; 
+        font-weight: 900;
+        font-style: italic;
+      }
+  </style>
+
     <section class="showcase">
      <div class="container-fluid p-0">
         <a name="link-tree"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/Social-Media-tree.png" class="img-responsive img-thumbnail" alt="Photo by Alexander Shatov on Unsplash - https://unsplash.com/@alexbemore"></div>
+          <div class="col-lg-6 text-white showcase-img" ><img src="/img/Social-Media-tree.png" class="img-responsive img-thumbnail" alt="Photo by Alexander Shatov on Unsplash - https://unsplash.com/@alexbemore"><div class="ted-centered">Links to Me Around the Internet</div></div>
             <div class="col-lg-6 my-auto showcase-text">
-              <h2>Links to Me Around the Internet </h2>
               <p class="lead mb-0">A collection of links to my other places around the internet.</p>
               <div id="teds-fixing"><span id="social-links">{% include link-tree.html %}</span></div>
             </div>
           </div>
         <a name="blog"></a>
         <div class="row no-gutters">
-          <style>
-              .ted-centered {
-                position: absolute;
-                top: 90%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-shadow:1px 1px 10px #000, 1px 1px 10px #000;
-                font-family: Lato, sans-serif; 
-                font-weight: 900;
-                font-style: italic;
-              }
-          </style>
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_An_ethereal_landscape_where_a_futuristic_city_skyline.png" class="img-responsive img-thumbnail" alt=""> <div class="ted-centered">Ted Tschopp's Blog</div></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_An_ethereal_landscape_where_a_futuristic_city_skyline.png" class="img-responsive img-thumbnail" alt=""><div class="ted-centered">Ted Tschopp's Blog</div></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <p class="lead mb-0">Welcome to a multifaceted exploration of technology, theology, and creativity, bridging the old and the new, the profound and the playful. This blog is a crossroads of thoughtful analysis and personal experiences in the realms of faith, technology, corporate environments, and narrative arts. Here, you'll delve into deep discussions on religions in the digital age, critique and prediction of UI/UX trends, the design and function of collaboration tools, and personal insights into storytelling and popular media. With a tone that balances contemplation, engagement, and humor, this blog invites anyone intrigued by thoughtful discourse on a wide range of interconnected topics, offering a unique lens through which to view our complex world.</p>
             <ul>
@@ -157,9 +158,8 @@
         </div>
         <a name="draft"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"></div>
+          <div class="col-lg-6 text-white showcase-img" ><img src="/img/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"><div class="ted-centered">Ted Tschopp's Role Playing Game Drafts</div></div>
           <div class="col-lg-6 my-auto showcase-text">
-            <h2>Ted Tschopp's Role Playing Game Drafts</h2>
             <p class="lead mb-0">A collection of writings on Role Playing Games I am working on at this time.  Some of it is really bad, and some of it I am proud of.  All of it can be made better.</p>
             <ul>
             {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
@@ -174,9 +174,8 @@
         </div>
         <a name="social"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.png" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.png" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney">Ted Tschopp's Social Media Posts</div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Ted Tschopp's Social Media Posts</h2>
             <p class="lead mb-0">My posts over on Mastodon</p>
 
             <div class="mt-timeline">
