@@ -140,7 +140,7 @@
                         <!-- Do Nothing -->
                     {% else %}
                         {% assign count = count | plus: 1 %}
-                        {% if count > 5 %}
+                        {% if count > 3 %}
                             {% break %}
                         {% endif %}
                       <li>
@@ -164,7 +164,7 @@
             <p class="lead mb-0">A collection of writings on Role Playing Games I am working on at this time.  Some of it is really bad, and some of it I am proud of.  All of it can be made better.</p>
             <ul>
             {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
-            {% for post in posts-drafts limit:5 %}
+            {% for post in posts-drafts limit:3 %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
