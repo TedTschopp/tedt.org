@@ -24,5 +24,8 @@ jobs:
         pip install bs4 feedgen requests
 
     - name: Generate RSS Feed
+      env:
+        WEBSITE_USERNAME: ${{ secrets.WEBSITE_USERNAME }}
+        WEBSITE_PASSWORD: ${{ secrets.WEBSITE_PASSWORD }}
       run: |
         python generate_rss.py
