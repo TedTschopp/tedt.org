@@ -25,7 +25,7 @@ jobs:
 
     - name: Generate RSS Feed
       env:
-        WEBSITE_USERNAME: ${{ secrets.WEBSITE_USERNAME }}
-        WEBSITE_PASSWORD: ${{ secrets.WEBSITE_PASSWORD }}
+        WEBSITE_USERNAME: ${{ secrets.WEBSITE_MIDJOURNEY_USERNAME }}
+        WEBSITE_PASSWORD: ${{ secrets.WEBSITE_MIDJOURNEY_PASSWORD }}
       run: |
         python generate_rss.py
