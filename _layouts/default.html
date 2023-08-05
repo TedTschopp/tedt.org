@@ -49,39 +49,24 @@
           href="{{site.siteurl}}/css/solarized-dark.css" >
     {% endif %}
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-          crossorigin="anonymous">
-    
-    <link rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
-          crossorigin="anonymous">
-
-    {% if this_is_a_draft == true %}
-    <link rel="preload"
-          href="{{site.siteurl}}/css/handwriting-draft_free-version.woff2" 
-          as="font" 
-          type="font/woff2" 
-          crossorigin>
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/draft-blog-post.css">
-    {% endif %}
-
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet"
-          href="vendor/simple-line-icons/css/simple-line-icons.css" 
-          type="text/css">
-    <!-- END OF CSS INCLUDE -->
-
-    <!-- Fonts for the link-tree -->
+    <!-- CSS for the link-tree -->
     <link rel="stylesheet"
           href="{{site.siteurl}}/css/Link-Tree.css" 
           type="text/css">
 
-<!-- Mastodon Stuff-->
+    <!-- END OF CSS INCLUDE -->
+
+    <!-- Custom Fonts -->
+    {% include js-fontawsome.html %}
+
+    {% if this_is_a_draft == true %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    {% endif %}
+
+
+    <!-- Mastodon Stuff-->
     <link rel="stylesheet" href="mastodon/mastodon-timeline.css">
     <script src='mastodon/mastodon-timeline.js'></script>
 
@@ -97,34 +82,22 @@
 
     <!-- Masthead -->
 
-    <style>
-      .ted-centered {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-shadow:1px 1px 10px #000, 1px 1px 10px #000;
-        font-family: Lato, sans-serif; 
-        font-weight: 900;
-        font-style: italic;
-        font-size: 2.5rem;
-      }
-  </style>
-
     <section class="showcase">
      <div class="container-fluid p-0">
         <a name="link-tree"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/Social-Media-tree.png" class="img-responsive img-thumbnail" alt="Photo by Alexander Shatov on Unsplash - https://unsplash.com/@alexbemore"><div class="ted-centered">Links to Me</div></div>
+          <div class="col-lg-6 text-white showcase-img" ><img src="/img/Social-Media-tree.png" class="img-responsive img-thumbnail" alt="Photo by Alexander Shatov on Unsplash - https://unsplash.com/@alexbemore"></div>
             <div class="col-lg-6 my-auto showcase-text">
+              <h2>Elsewhere Online</h2>
               <p class="lead mb-0">A collection of links to my other places around the internet.</p>
               <div id="teds-fixing"><span id="social-links">{% include link-tree.html %}</span></div>
             </div>
           </div>
         <a name="blog"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_An_ethereal_landscape_where_a_futuristic_city_skyline.png" class="img-responsive img-thumbnail" alt=""><div class="ted-centered">Blog</div></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_An_ethereal_landscape_where_a_futuristic_city_skyline.png" class="img-responsive img-thumbnail" alt=""></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Blog</h2>
             <p class="lead mb-0">Welcome to a multifaceted exploration of technology, theology, and creativity, bridging the old and the new, the profound and the playful. This blog is a crossroads of thoughtful analysis and personal experiences in the realms of faith, technology, corporate environments, and narrative arts. Here, you'll delve into deep discussions on religions in the digital age, critique and prediction of UI/UX trends, the design and function of collaboration tools, and personal insights into storytelling and popular media. With a tone that balances contemplation, engagement, and humor, this blog invites anyone intrigued by thoughtful discourse on a wide range of interconnected topics, offering a unique lens through which to view our complex world.</p>
             <ul>
                 {% assign count = 0 %}
@@ -159,8 +132,9 @@
         </div>
         <a name="draft"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" ><img src="/img/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"><div class="ted-centered">Role Playing Game Drafts</div></div>
+          <div class="col-lg-6 text-white showcase-img" ><img src="/img/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"></div>
           <div class="col-lg-6 my-auto showcase-text">
+            <h2>Role Playing Game Posts</h2>
             <p class="lead mb-0">A collection of writings on Role Playing Games I am working on at this time.  Some of it is really bad, and some of it I am proud of.  All of it can be made better.</p>
             <ul>
             {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
@@ -175,10 +149,10 @@
         </div>
         <a name="social"></a>
         <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.png" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"><div class="ted-centered">Social Media Posts</div></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.png" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Social Media Posts</h2>
             <p class="lead mb-0">My posts over on Mastodon</p>
-
             <div class="mt-timeline">
               <div id="mt-body" class="mt-body" role="feed">
                   <div class="loading-spinner"></div>
@@ -341,10 +315,10 @@
       <div class="row no-gutters">
 
         {% if mod != 1 %}<!-- odd -->
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><div class="ted-centered">{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</div></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         {% else %}
-          <div class="col-lg-6 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><div class="ted-centered">{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</div></div>
+          <div class="col-lg-6 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2></div>
           <div class="col-lg-6 my-auto showcase-text">
         {% endif %}
 
