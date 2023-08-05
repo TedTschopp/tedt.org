@@ -36,6 +36,15 @@
 
     <!-- TODO: Add Dark Mode Back -->
 
+    <!-- Custom Fonts -->
+    {% if this_is_a_draft == true %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    {% endif %}
+
+    {% include js-fontawsome.html %}
+
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
     <link rel="stylesheet"
@@ -52,24 +61,26 @@
     <link rel="stylesheet"
           href="{{site.siteurl}}/css/solarized-dark.css" >
     {% endif %}
-    <!-- END OF CSS INCLUDE -->
-
-    <!-- Custom Fonts -->
-    {% include js-fontawsome.html %}
 
     {% if this_is_a_draft == true %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{{site.siteurl}}/css/draft-blog-post.css" >
     {% endif %}
 
-    <!-- Fonts for the link-tree -->
+    <!-- CSS for the link-tree -->
     <link rel="stylesheet"
           href="{{site.siteurl}}/css/Link-Tree.css" 
           type="text/css">
 
+    <!-- Mastodon Stuff-->
+    <link rel="stylesheet" href="mastodon/mastodon-timeline.css">
+    <script src='mastodon/mastodon-timeline.js'></script>
+
+    <!-- END OF CSS INCLUDE -->
+
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
+
 
   </head>
 
@@ -78,8 +89,6 @@
     {% include top-of-body.html %}
 
     {% include bootstrap4-navigation.html %}
-
-
 
     <!-- Page Content -->
     <div class="container">
