@@ -315,13 +315,14 @@
       <div class="row no-gutters">
 
         {% if mod != 1 %}<!-- odd -->
-          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         {% else %}
-          <div class="col-lg-6 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"><h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2></div>
+          <div class="col-lg-6 text-white showcase-img"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
           <div class="col-lg-6 my-auto showcase-text">
         {% endif %}
 
+        <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2>        
         <p class="lead mb-0">{{ post.description}}</p>
         <ul>    
             {% for bullet in post.bullets %}
