@@ -7,6 +7,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin&display=swap');
 
 
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredericka+the+Great&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 @font-face {
     font-family: 'IrwinAllen';
     src: url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff2') format('woff2'),
@@ -152,6 +154,7 @@ a:hover .GammaWorld
 
 body {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
 h1,
@@ -161,7 +164,9 @@ h4,
 h5,
 h6 {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 h1,
@@ -169,7 +174,8 @@ h2,
 h3,
 h4 {
     font-family: "Cormorant Garamond",serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-style: italic;
     font-size: 2rem;
 }
 
