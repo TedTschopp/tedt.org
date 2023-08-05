@@ -1,6 +1,6 @@
 
 @font-face {
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Fredericka the Great';
 }
 article > h1,
 article > h2,
@@ -14,7 +14,7 @@ article > .h3,
 article > .h4,
 article > .h5,
 article > .h6 {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
   	color: inherit;
 }
 /*
