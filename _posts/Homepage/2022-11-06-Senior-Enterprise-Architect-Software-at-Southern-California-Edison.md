@@ -22,8 +22,10 @@ bullets:
   - Authored white papers providing in-depth problem analysis and tradeoff discussions, and ensured overall product, platform, and project technical quality.
   - Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.
 
+
+
 guid: 24ccc6a5-f9e8-4278-a610-cd6aabec11d9
-image: /img/home/ted-tschopp-seniot-enterprise-architect-aesthetic-of-leonardo-da-vinci.jpg
+image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v2.jpg
 image-credits: Ted Tschopp and Midjourney
 image-credits-title: Ted Tschopp as Senior Enterprise Architect in the Aesthetic of Leonardo Da Vinci
 image-credits-artist: Ted Tschopp and Midjourney
