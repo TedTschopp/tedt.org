@@ -1,11 +1,15 @@
+    <!-- JQuery -->
     {% include js-jquery.html %}
 
+    <!-- Font Awsome -->
     {% include js-fontawsome.html %}
 
+    <!-- Bootstrap -->
     {% include js-bootstrap.html %}
 
     {% if page.mathjax %}
-      <script type="text/javascript" async
+    <!-- mathjax -->
+    <script type="text/javascript" async
          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
       </script>
     {% endif %}
@@ -27,6 +31,7 @@
     <!-- Start of Rough Notation Code --->
     {% include rough-notation.html %}
     
+{% comment %}    
     <!-- Start of Async Drift Code --->
     <!-- include js-drift.html --->
 
@@ -38,3 +43,4 @@
 
     <!-- Start Clarity Code -->
     <!-- {% include js-clarity.html %} -->
+{% endcomment %}    
