@@ -26,7 +26,7 @@ bullets:
 
 
 guid: 92f94969-58b1-47de-8034-7b808ed7eb9e
-image: /img/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.png
+image: /img/home/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.jpg
 image-credits: MidJourney and Ted Tschopp 
 image-credits-title: Ted Tschopp as Product Engineering and Build Process Manager 
 image-credits-artist: MidJourney and Ted Tschopp 

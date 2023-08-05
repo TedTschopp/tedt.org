@@ -21,7 +21,7 @@ bullets:
   - Ranked as a top 10,000 website by Alexa
 
 guid: 781155aa-86f7-41cb-81a7-cfd36934cb90
-image: /img/tolkienonline.jpg
+image: /img/home/tolkienonline.jpg
 image-credits: Countdown to the Lord of the Rings by Ted Tschopp http://www.theonering.com  
 image-credits-title: Countdown to the Lord of the Rings
 image-credits-artist: Ted Tschopp
