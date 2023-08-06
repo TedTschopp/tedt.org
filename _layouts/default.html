@@ -120,7 +120,7 @@
                           [<a href="category/{{ category }}">{{ category }}</a>] 
                         {% endfor %}
 
-                        <p>{{ post.excerpt |truncat ehtml | truncatewords: 20 }}</p>
+                        <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
                       </li>
                     {% endif %}
                 {% endfor %}
