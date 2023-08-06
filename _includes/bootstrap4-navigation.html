@@ -1,4 +1,6 @@
     <!-- Navigation -->
+{% comments %}
+
     <!--<nav class="navbar navbar-light bg-light fixed-top topnav navbar-expand-md" role="navigation"> -->
     <nav class="navbar fixed-top topnav navbar-expand-md" role="navigation">
         <div class="container topnav">
@@ -12,9 +14,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a href="https://tedt.org/RPG/MCC-GW/" class="nav-link"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span> Rules</a></li>
-                    <li class="nav-item"><a href="{{site.siteurl}}/#about" class="nav-link">About Ted</a></li>
-                    <li class="nav-item"><a href="{{site.siteurl}}/#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"></li>
+                    <li class="nav-item"><a href="" class="nav-link">About Ted</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
                     <li class="dropdown nav-item mr-auto">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -29,3 +31,51 @@
             </div>
         </div>
     </nav>
+
+{% endcomments %}
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span> Rules</a></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                    {% assign sorted_homepage = (site.categories.['home'] | sort: 'order' %}
+                    {% for post in sorted_homepage %}
+                        <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}/#contact">Contact</a>
+              </li>
+            </ul>
+            <!--
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            -->
+          </div>
+        </div>
+      </nav>
+      
