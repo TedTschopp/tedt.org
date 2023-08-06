@@ -20,7 +20,7 @@
                     <li class="dropdown nav-item mr-auto">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                           {% assign sorted_homepage = (site.categories.['home'] | sort: 'order' %}
+                           {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
                             {% for post in sorted_homepage %}
                                 <a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a>
                             {% endfor %}
@@ -59,7 +59,7 @@
                   Projects
                 </a>
                 <ul class="dropdown-menu">
-                    {% assign sorted_homepage = (site.categories.['home'] | sort: 'order' %}
+                    {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
                     {% for post in sorted_homepage %}
                         <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
                     {% endfor %}
