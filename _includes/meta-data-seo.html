@@ -23,7 +23,7 @@
     <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
     <link rel="author" href="/humans.txt">
     <link rel="copyright" href="/copyright.html">
-    <link rel="canonical" href="{{ site.siteurl }}/{{ page.url }}" />
+    <link rel="canonical" href="{{ site.siteurl }}{{ page.url }}" />
 
 	{% if full-page-url == home-page-url %}
 	    <!-- Search Eengine and Browser Meta Tags. -->
@@ -127,7 +127,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.siteurl }}/img/apple-touch-icon-180x180.png">
 
     <!-- Apple Safari Pinned Site. -->
-    <!-- TODO Remove Tschopp.svg specific SVG -->
     <link rel="mask-icon" href="{{ site.siteurl }}/img/Tschopp.svg" color="black">
 
     <!-- Google Chrome. -->
@@ -146,38 +145,6 @@
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="{{ site.siteurl }}/img/apple-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#222222">
-    <!-- Windows Internet Explorer. -->
-    <meta http-equiv="cleartype"                   content="on">
-    <meta name="skype_toolbar"                     content="skype_toolbar_parser_compatible">
-    <meta name="msapplication-tap-highlight"       content="no">
-    <meta name="application-name"                  content="{{ site.name }}">
-    <meta name="msapplication-tooltip"             content="{{ site.name }}">
-    <meta name="msapplication-starturl"            content="/">
-    <meta name="msapplication-square150x150logo"   content="{{ site.siteurl }}/img/mstile-150x150.png">
-    <meta name="msapplication-square310x310logo"   content="{{ site.siteurl }}/img/mstile-310x310.png">
-    <meta name="msapplication-square70x70logo"     content="{{ site.siteurl }}/img/mstile-70x70.png">
-    <meta name="msapplication-wide310x150logo"     content="{{ site.siteurl }}/img/mstile-310x150.png">
-    <meta name="msapplication-navbutton-color"     content="#FF3300">
-    <meta name="msapplication-TileColor"           content="#FF3300">
-    <meta name="msapplication-TileImage"           content="{{ site.siteurl }}/img/mstile-144x144.png">
-    <meta name="msapplication-task-separator"      content="1">
-    <meta name="msapplication-task"                content="name=Contact {{ site.givenname }};
-                                                            action-uri=./#contact;
-                                                            icon-uri=./img/favicon.ico">
-    <meta name="msapplication-task"                content="name={{ site.givenname }}'s Projects;
-                                                            action-uri=./#projects;
-                                                            icon-uri=./img/favicon.ico">
-    <meta name="msapplication-allowDomainApiCalls" content="false">
-    <meta name="msapplication-allowDomainMetaTags" content="false">
-    <meta name="msapplication-window"              content="width=1024;height=768">
-    <!--
-    <meta name="msapplication-badge"               content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
-    <meta name="msapplication-notification"        content="frequency=60;polling-uri=http://example.com/livetile">
-    -->
-
     <!-- Pinterest. -->
     <!-- Prevents sharing of content by Pinterest users. -->
     <!-- <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!"> -->
@@ -187,7 +154,7 @@
 {% comment %}
 
 <!-- Begin Jekyll SEO tag v{{ seo_tag.version }} -->
-{% if seo_tag.title? %}
+{% if seo_tag.title %}
   <title>{{ seo_tag.title }}</title>
 {% endif %}
 
