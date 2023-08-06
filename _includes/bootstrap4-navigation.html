@@ -1,45 +1,45 @@
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-          <div class="float-end">  
-            <a class="navbar-brand" href="#"><img src="img/Tschopp.svg" height="42" width="42"></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span> Rules</a></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                        {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
-                        {% for post in sorted_homepage %}
-                            <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
-                        {% endfor %}
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/Tschopp.svg" height="42" width="42"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span> Rules</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
+                                {% for post in sorted_homepage %}
+                                    <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}/#contact">Contact</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ site.siteurl }}/#contact">Contact</a>
-                </li>
-                </ul>
                 <!--
                 <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 -->
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
-      
+        </nav>
+
+        
+
