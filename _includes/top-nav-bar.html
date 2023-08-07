@@ -1,5 +1,10 @@
     <!-- Navigation -->
+
+        {% if page.url == site.siteurl %}
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        {% else %}
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        {% endif %}
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="https://tedt.org/img/Tschopp.svg" height="42" width="42"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
