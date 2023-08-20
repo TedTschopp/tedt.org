@@ -404,6 +404,10 @@ figcaption {
 	color: #8b0000;
 }
 
+.folklore p {
+	color: #3B4248;
+
+}
 
 
 
@@ -521,6 +525,12 @@ figcaption {
 	color: #8b0000;
 }
 
+.reference p {
+	color: #3B4248;
+
+}
+
+
 
 .notes {
 	font-family: 'AntiquarianScribe', serif;
@@ -607,7 +617,10 @@ figcaption {
 	color: #8b0000;
 }
 
+.notes p {
+	color: #3B4248;
 
+}
 
 
 
