@@ -106,7 +106,12 @@
                     <img class="webmention-svg" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
 
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
-                    {% assign categories = page.categories %}
+
+                    {% if page.category %}
+                        {% assign categories = page.category %}
+                    {% else %}
+                        {% assign categories = page.categories %}
+                    {% endif %}
                     {% for category in categories %}<span class="p-category">
                         {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                         {% if forloop.length == 1 %}
