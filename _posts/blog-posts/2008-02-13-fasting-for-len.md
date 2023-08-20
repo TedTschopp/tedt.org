@@ -1,12 +1,18 @@
 ---
 id: 307
-title: Fasting for Lent
+title: "My Lenten Journey: A Commitment to Fasting and Reflection"
+subtitle: "A Personal Experience with Liquid Fasting during the Lenten Season"
 date: 2008-02-13T16:15:39+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+description: "Join the author in exploring a personal journey through Lent, embracing a unique fasting practice of consuming only liquids during daylight hours. This narrative highlights the challenges and reflections associated with this spiritual practice."
+keywords: "Lent, fasting, spiritual journey, liquid fasting, Jamba Juice, tea, reflection, religious practice, personal growth"
+picture_description: "An image of a sunrise, representing the start of the fasting period, with various glasses of tea and juice, symbolizing the liquids consumed during the fast."
+call_to_action: "What are your experiences with fasting or unique practices during Lent? Share your insights, challenges, and triumphs in the comments below. Your journey might inspire others!"
 
 guid: 4c5c466f-239b-479f-a36f-9084f3688e4f
 permalink: /2008/02/13/fasting-for-len/

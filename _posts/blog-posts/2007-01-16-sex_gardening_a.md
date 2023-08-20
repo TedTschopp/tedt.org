@@ -1,12 +1,19 @@
 ---
 id: 95
-title: Sex, Gardening, and Science
+title: "Sex, Gardening, and Science: Reflections on Humanity, Family, and Theology"
+subtitle: "A Theological Exploration of Sexuality, Science, Relationships, and the Nature of Evil in the Light of Genesis"
 date: 2007-01-16T11:10:00+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+description: "This article presents an intricate examination of the themes present in 'Children of Men,' including humanity, family, sexuality, science, and relationships. Drawing connections to the Garden of Eden's story, the author explores the nature of evil and the eternal aspects of our existence, ultimately tying it to the Christian faith and the promise of redemption."
+keywords: "Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships, Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith"
+picture_description: "An image combining the book cover of 'Children of Men,' a depiction of the Garden of Eden, and symbolic representations of the themes such as a DNA helix for science, intertwined hands for relationships, and an apple for temptation. The collage symbolizes the multifaceted exploration of the book's themes in relation to theology."
+
+
 
 guid: 2bc2eebf-bfbe-45d6-9bbd-b642cc596694
 permalink: /2007/01/16/sex_gardening_a/

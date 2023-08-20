@@ -1,12 +1,20 @@
 ---
 id: 439
-title: Martin Luther on Beer
+title: "Martin Luther on Beer: A Historical Perspective"
+subtitle: "The Theological Brew: Reflections and Quotes on Beer and Moderation"
 date: 2007-02-16T10:24:23+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+
+
+description: "This article explores various quotes and letters of Martin Luther concerning beer, sobriety, and the Christian perspective on drinking. From humorous anecdotes to serious reflections on moderation, the text provides a unique insight into the thoughts of one of Christianity's most prominent figures."
+keywords: "Martin Luther, beer, moderation, Christianity, theology, history, soberness, gluttony, drunkenness, quotations, Lutheran tradition"
+picture_description: "An image of a vintage beer mug juxtaposed with an old parchment containing Martin Luther's handwriting, symbolizing the historical connection between theological reflections and beer in Luther's time."
+
 
 guid: 8676f676-eb73-4d6b-977a-b5423ef31059
 permalink: /2007/02/16/martin_luther_on_beer/

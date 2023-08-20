@@ -1,15 +1,23 @@
 ---
 id: 112
-title: Shadows and Symbols
+title: "From Shadows to Light: A Journey Through Fantasy Literature"
+subtitle: "Exploring the Love of Fantasy, Romanticism, and the Quest for Meaning"
 date: 2006-12-20T11:32:34+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
+
+description: "This article delves into the author's lifelong fascination with fantasy literature, starting from childhood favorites like 'The Chronicles of Narnia' and 'The Hobbit.' It explores the transition from innocent wonder to darker themes, ultimately leading to a profound understanding of the light and symbols behind the shadows."
+keywords: "Fantasy Literature, Romanticism, Shadows, Light, Chronicles of Narnia, The Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love, Symbolism, Newbery Awards"
+picture_description: "An image of an open book, with intricate shadows cast from symbolic shapes above. The shadows twist and slither on the page, drawing attention to the hidden shapes that create them. A soft light emanates from the background, symbolizing the overarching theme of light and understanding explored in the article."
+
+
+
 guid: 9b6eda43-2311-4038-afa0-4106bc4ab8c5
-permalink: /2006/12/20/shadows_and_sym/
+permalink: /2006/12/20/From-Shadows-to-Light/
 categories:
   - Books
 
@@ -18,8 +26,8 @@ categories:
 
 Many people who get to know me soon find out that I&rsquo;m a lover of things that are fantastic.&nbsp; I was first introduced to the worlds of the imagination when my mother use to read to me the books that had won Newbery awards.&nbsp; I can still remember _Island of the Blue Dolphins_, _Mrs. Frisby and the Rats of NIHM_, and _A Wrinkle in Time_.&nbsp; In these she would sprinkled Chronicles of Narnia and the Hobbit.&nbsp; It should be no wonder that I adore stories of strange beasts and noble kings.&nbsp; If I ever met a talking rodent my first thought would not be to question my sanity, but to question my new friend if he had ever heard of [Reepicheep](http://en.wikipedia.org/wiki/Reepicheep).&nbsp; 
 
-As I have grown older I have gravitated towards individuals who also have a love for these things.&nbsp; In some of these people, instead of finding that same &ldquo;childish&rdquo; love of the new&nbsp;I find they resonate with the perversity and darkness that the author mentions above.&nbsp; I had never thought of the descent into perversity and darkness as a process that started with the love of Romanticism.&nbsp; But&nbsp;I can&rsquo;t help shake statements above.&nbsp; It starts to explain the reason why so many fellow fanboy and girls struggle with some very dark and deviant behaviours.&nbsp; 
+As I have grown older I have gravitated towards individuals who also have a love for these things.&nbsp; In some of these people, instead of finding that same &ldquo;childish&rdquo; love of the new&nbsp;I find they resonate with the perversity and darkness that the author mentions above.&nbsp; I had never thought of the descent into perversity and darkness as a process that started with the love of Romanticism.&nbsp; But&nbsp;I can&rsquo;t help shake statements above.&nbsp; It starts to explain the reason why so many fellow fanboy and girls struggle with some very dark and deviant behaviors.&nbsp; 
 
 Over the years, I have read and watched some very dark and strange things in the hope of reconnecting with the feelings I got when I first heard that there was a hobbit who lived in a hole in the ground.&nbsp; After a while I realized the foolishness in exploring more adult and darker themed fictions which were said to match my age or demographic.&nbsp; I realized that I was chasing shadows.&nbsp; I would stare at the shapes and marvel how they twisted.&nbsp; I would revel in the way they could make me shudder.&nbsp; 
 
-I look back on those days in amazement and wonder. How could I be so chilish, when I was thinking I was so adult.&nbsp; It wasn&rsquo;t the dark shadows that were so fascinating.&nbsp; It wasn&rsquo;t their twisting and writhing that was so hypnotizing.&nbsp;&nbsp;It&rsquo;s not the shadows that&nbsp;are so finely detailed, its the symbols and shapes that cast the shadows that hold the intricacies.&nbsp;&nbsp;&nbsp;It&rsquo;s not that the shadows slither, it&rsquo;s an illusion caused by the shapes and symbols as they bow down and worship the light.&nbsp; As life moves towards its conculsion, I&rsquo;m finding that what is really facinating is the light who is&nbsp;the Father of the lights, with whom there is no variation, or shadow of turning.
+I look back on those days in amazement and wonder. How could I be so childish, when I was thinking I was so adult.&nbsp; It wasn&rsquo;t the dark shadows that were so fascinating.&nbsp; It wasn&rsquo;t their twisting and writhing that was so hypnotizing.&nbsp;&nbsp;It&rsquo;s not the shadows that&nbsp;are so finely detailed, its the symbols and shapes that cast the shadows that hold the intricacies.&nbsp;&nbsp;&nbsp;It&rsquo;s not that the shadows slither, it&rsquo;s an illusion caused by the shapes and symbols as they bow down and worship the light.&nbsp; As life moves towards its conclusion, I&rsquo;m finding that what is really fascinating is the light who is&nbsp;the Father of the lights, with whom there is no variation, or shadow of turning.

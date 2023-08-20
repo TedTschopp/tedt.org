@@ -1,12 +1,19 @@
 ---
 id: 470
-title: Too many feeds
+title: "The Complexity of Managing 212 RSS Feeds: A Blogger's Challenge"
+subtitle: "Navigating the Maze of Information: Tools, Workflows, and Overload"
 date: 2007-06-07T18:53:36+00:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+
+description: "The author shares their experience with managing 212 different RSS feeds and blogs, highlighting the struggles with taxonomy, workflow, scanning articles, linkblogs, and the limits of current feed reading applications. This article provides a unique perspective on the challenges faced by avid content consumers and hints at potential areas for improvement in RSS reader technology."
+keywords: "RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD, linkblogs, reading overload, scanning articles, information overload, feed reading applications"
+picture_description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
+
 
 guid: 064921a7-6a93-4047-a8a5-47d924cbbf95
 permalink: /2007/06/07/too-many-feeds/

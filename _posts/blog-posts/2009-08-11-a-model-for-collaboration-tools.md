@@ -1,12 +1,20 @@
 ---
 id: 289
-title: A Model for Collaboration Tools
+title: "Enhancing Collaboration in the Corporate World: A Comprehensive Model"
+subtitle: "Understanding the Role of IT in Collaboration: Bridging Gaps and Leaving Lasting Artifacts"
 date: 2009-08-11T15:09:58+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+
+description: "This article explores the intricate dynamics of collaboration in a modern corporate environment. Through the lens of Information Technology, it identifies key problems and offers a detailed model for improving collaboration. The model categorizes collaboration by audience, artifact, and time, creating a practical framework for understanding and improving the collaboration process."
+keywords: "collaboration, corporate environment, Information Technology, mediation gap, artifacts, communication, knowledge management, email, written, verbal, visual, real time, queued, long term, static, permanent"
+picture_description: "A well-structured diagram showcasing the Model for Collaboration, highlighting the three properties - Audience, Artifacts, and Time - and their respective categories. This visual representation serves as a concise overview of the collaboration process, emphasizing the intricate interplay between these elements."
+call_to_action: "Do you recognize these collaboration challenges in your workplace? How have you addressed them? Share your thoughts and experiences in the comments, and join us in the pursuit of more effective and meaningful collaboration."
+
 
 guid: d2917662-5d88-4ebb-8b7a-f4c86949bec0
 permalink: /2009/08/11/a-model-for-collaboration-tools/
@@ -42,5 +50,3 @@ Taking a look at Artifacts, we will divide this into three categories.  Written
 The final property to look at is time.  I will break up time into 4 separate categories.  The first category is Real time.  This type of collaboration leaves very little in terms of artifacts, however it is where most collaboration takes place.  The second category is Queued.  This type of collaboration is unique in that the artifacts are generally consumed by the recipient.  Think email or voice mail, after you have heard a voice mail, you no longer need it.  The third category is Long Term.  These are artifacts that are needed longer than queued, however they are not static or permanent.  The fourth as I have already mentioned is Static or permanent. The difference between the third and the fourth is that the third category has a sense of draft or work in progress where the fourth has a sense of artifact of record.
 
 Now that we have all our attributes on the table.  Lets look at the model.
-
-In my next post I will detail out each of the boxes in the model, and start looking at how the model can be used.

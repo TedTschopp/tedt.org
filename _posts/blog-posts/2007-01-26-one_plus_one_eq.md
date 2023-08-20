@@ -1,15 +1,23 @@
 ---
 id: 87
-title: One Plus One Equals Three for Very Large Values of One
+title: "Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective"
+subtitle: "Exploring the Existence of External Standards and Human Value"
 date: 2007-01-26T12:49:19+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
+
+description: "This article delves into the concept of universal standards for intelligence, wisdom, beauty, and manners, comparing them to a measurable external standard. It further emphasizes the intrinsic value of individuals irrespective of their adherence to these standards, and ties into broader themes of history, religion, and politics."
+keywords:  Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value, Religion, Politics
+picture_description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
+
+
+
 guid: f90e2057-bc36-4ee5-87c5-bb4835abcd7e
-permalink: /2007/01/26/one_plus_one_eq/
+permalink: /2007/01/26/Universal-Standards-of-Conduct-Beauty-and-Truth/
 categories:
   - Religion
 ---
@@ -21,7 +29,7 @@ There are several traps that must be avoided here at this point.&nbsp; The first
 
 It&rsquo;s like the metric system.&nbsp; 
 
-> The meter was originally defined as 1/40,000,000th of the polar circumference of the Earth, then as the length of a particular bar of platinum-iridium alloy; then in terms of the wavelength of light emitted by a specified atomic transition; and now is defined as the distance travelled by light in an absolute vacuum during 1/299,792,458 of a second. &mdash; [Wikipedia](http://en.wikipedia.org/wiki/Metric_system) entry 
+> The meter was originally defined as 1/40,000,000th of the polar circumference of the Earth, then as the length of a particular bar of platinum-iridium alloy; then in terms of the wavelength of light emitted by a specified atomic transition; and now is defined as the distance traveled by light in an absolute vacuum during 1/299,792,458 of a second. &mdash; [Wikipedia](http://en.wikipedia.org/wiki/Metric_system) entry 
 
 On a side note, the reason for the change was that each time the standard was moved to something less and less variable.&nbsp; The size of the earth changes over time, the length of a bar erodes over time.&nbsp; The wavelength of light emitted differs based on the composition of the atmosphere.&nbsp; Finally they settled on the speed of light in a vacuum (which is a constant).&nbsp; In science the reason for all this is that when you have a disagreement on the measure of something, you can always go back and find the standard and re-calibrate your calculations.
 
@@ -41,8 +49,8 @@ Again, why do I bring this all up?&nbsp;&nbsp;We are ripe for the picking.&nbsp;
 
 Asking the question of &ldquo;What is next, and how soon?&rdquo; is a bit pointless.&nbsp; As the answer is always the same.&nbsp; &ldquo;It gets worse, and it will be soon.&rdquo;&nbsp; The better question to ask is &ldquo;What can I do?&rdquo;
 
-The answer to this question is two fold.&nbsp; One, accept, understand, internalise, and live the idea that there are universal standards for conduct, beauty, and truth.&nbsp; Two, accept, understand, internalise, and live the idea that a person&rsquo;s value is not a function of their ability to keep the universal standard.&nbsp; Sadly few people will take this route.&nbsp; Non-Christians will have a hard time with the idea of universal standards.&nbsp; Christians will have a hard time with the idea of value being based on something other than conformity to the universal standard.&nbsp; 
+The answer to this question is two fold.&nbsp; One, accept, understand, internalize, and live the idea that there are universal standards for conduct, beauty, and truth.&nbsp; Two, accept, understand, internalize, and live the idea that a person&rsquo;s value is not a function of their ability to keep the universal standard.&nbsp; Sadly few people will take this route.&nbsp; Non-Christians will have a hard time with the idea of universal standards.&nbsp; Christians will have a hard time with the idea of value being based on something other than conformity to the universal standard.&nbsp; 
 
-True Christianity holds that there are universal standards and value is based on the fact that all humans look like the creator of the universe.&nbsp; It&rsquo;s a value that humans as well as the creator recognise as valuable.&nbsp; The answer to the question of &ldquo;What do you get the person who has everything?&rdquo; is &ldquo;A miniature version of themselves.&rdquo;&nbsp; Sin, according to true Christianity, is the measure of how well we keep the universal standard.&nbsp; Our value as humans is not based on how much we sin or how little we sin.&nbsp; It&rsquo;s based on the fact that under all the grime of sin that covers us, we still look like the creator.&nbsp; The true message of Christianity is that the Creator of the universe entered the universe to clean all the grime off of us and to give us his clothing so that we could be a miniature version of Him.&nbsp; This is why the bible uses the term &ldquo;sons of God&rdquo; to refer to those who end up in heaven.&nbsp; 
+True Christianity holds that there are universal standards and value is based on the fact that all humans look like the creator of the universe.&nbsp; It&rsquo;s a value that humans as well as the creator recognize as valuable.&nbsp; The answer to the question of &ldquo;What do you get the person who has everything?&rdquo; is &ldquo;A miniature version of themselves.&rdquo;&nbsp; Sin, according to true Christianity, is the measure of how well we keep the universal standard.&nbsp; Our value as humans is not based on how much we sin or how little we sin.&nbsp; It&rsquo;s based on the fact that under all the grime of sin that covers us, we still look like the creator.&nbsp; The true message of Christianity is that the Creator of the universe entered the universe to clean all the grime off of us and to give us his clothing so that we could be a miniature version of Him.&nbsp; This is why the bible uses the term &ldquo;sons of God&rdquo; to refer to those who end up in heaven.&nbsp; 
 
 So to go all the way back to the beginning.&nbsp; Some people are just idiots, other people are rude, and finally some people are just downright ugly.&nbsp; Or to state it in a better way, sometimes, I am just an a rude, ugly, idiot.&nbsp; I have hope in the fact that some day I will stand before the creator wearing His cloths and I will be free of all this idiocy, ugliness, and rude manners.&nbsp; 

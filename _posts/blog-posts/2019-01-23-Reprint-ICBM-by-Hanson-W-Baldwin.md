@@ -10,6 +10,9 @@ author:
 excerpt: |
   IT WILL not be long. In ten years—five years, perhaps only two or three —the historic count-down will start: "Ten — nine — eight — seven — six — five — four — three — two — one —" At zero a new era will open up on the earth—the era of push-button war.
 
+description: "REPRINT: An exploration of the Cold War-era race between the United States and the Soviet Union to develop the first intercontinental ballistic missile (ICBM). Highlighting the technological, strategic, and political implications, it examines the reasons behind potential U.S. lag in this critical contest. The author emphasizes the urgent need for public awareness and informed democratic decision-making on this vital matter of national security, technological innovation, and global power dynamics."
+
+
 layout: post
 
 guid: 7a6805c0-d19d-4397-8ff5-ebe515ae289b

@@ -1,21 +1,28 @@
 ---
 id: 1348
-title: HTML5 / JavaScript Version of Windows
+title: "The Future of Web-Based Computing: Revolutionizing the Creative Industry"
+subtitle: "How HTML5 and JavaScript Are Bringing Hollywood and Gaming Tools to Your Browser"
 date: 2013-11-27T14:34:55+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 excerpt: |
   What you are seeing is an HTML5 / JavaScript version of Windows 7 running in the cloud they launch Photoshop and then a 3D game using the Unreal tournament engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running in Firefox using just using HTML5 and JavaScript.
   
   Let that sink in for a moment.
 
+description: "This article showcases videos of a MacBook Pro running Windows 7 that launches complex applications like Photoshop and Unreal tournament engine entirely through a browser using HTML5 and JavaScript. With the backing of influential advisors, companies like oToy are working towards making advanced tools accessible via browsers. The article predicts that within the next 3-5 years, most desktop applications will have web versions, marking a significant shift in the industry."
+keywords: "HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photoshop, Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft"
+
+
+
+
 layout: post
 
 guid: 0704acdf-a373-4c5b-b27f-c20ef7a392ec
-permalink: /2013/11/27/html5-javascript-version-of-of-windows/
+permalink: /2013/11/27/The-Future-of-Web-Based-Computing/
 image: /wp-content/uploads/2013/11/javascript.jpg
 categories:
   - Computers

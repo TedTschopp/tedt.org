@@ -1,12 +1,19 @@
 ---
 id: 288
-title: The Purpose of Community - Protection of the Commons
+title: "Defending the Commons: Lessons from Robin Hood on Building Community"
+subtitle: "Understanding Community through the Lens of Robin Hood: What the Commons Mean to Us"
 date: 2010-05-19T10:20:45+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+description: "A thoughtful exploration of the concept of community and the common good, using the story of Robin Hood as a metaphor. This article delves into the core questions about what binds a community together, how to nurture it, and what it takes to defend the shared values and goals that make it thrive."
+keywords: "Robin Hood, community, common good, Russell Crowe, Nottingham, garden metaphor, protection, values, shared goals, collaboration"
+picture_description: "An evocative image of Robin Hood, the legendary outlaw, symbolizing the fight for the common good and the protection of shared values. It serves as a visual metaphor for the unifying principles that bind and define a community."
+call_to_action: "What are the 'commons' in your community that you cherish and defend? How do you nurture and grow those shared values? Join the conversation below to explore these vital questions and share your insights on building and sustaining a thriving community."
+
 
 guid: 501175c6-692e-46de-9ae5-ca1b3a4e7690
 permalink: /2010/05/19/the-purpose-of-community-protection-of-the-commons/

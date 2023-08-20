@@ -1,15 +1,17 @@
 ---
 id: 238
-title: Happy Advent
+title: "An Unexpected Spiritual Journey: A Day at Disneyland"
+subtitle: A Rainy Day Adventure Leads to an Unforgettable Christmas Experience
+keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spiritual Experience, Rainy Day, Toon Town, Small World, Grumpy Jester Hat, Luke Chapter 2, Christ
 date: 2003-12-19T08:41:00+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
 description: |
-   What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   
+   What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   Join the author on a surprising trip to Disneyland where a rainy day turned into a powerful and emotional Christmas experience. From joyful rides to a candlelight procession, this account captures the spirit of Advent in a way that is both profound and unexpected.
 excerpt: |
    What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   
 seo_description: |

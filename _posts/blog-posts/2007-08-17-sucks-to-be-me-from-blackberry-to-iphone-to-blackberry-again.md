@@ -4,8 +4,8 @@ title: Sucks to be me - From Blackberry to iPhone to Blackberry Again
 date: 2007-08-17T16:29:55+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
 guid: 26ca4c54-46a6-4498-b0f0-3d368c2fe27f

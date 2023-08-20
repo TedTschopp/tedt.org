@@ -4,8 +4,8 @@ title: Example of XMLHttpRequest
 date: 2005-03-11T01:49:55+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
 guid: 4bf037e2-35de-43dc-b271-67c0fa10951f

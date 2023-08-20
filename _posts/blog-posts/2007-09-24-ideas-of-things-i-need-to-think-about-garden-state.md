@@ -1,21 +1,31 @@
 ---
 id: 461
-title: Ideas of things I need to think about - Garden State
+title: "The Limitless Garden: A Theological Exploration of Eden"
+subtitle: "Understanding the Boundaries and Potential of the Garden of Eden"
 date: 2007-09-24T18:48:17+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
+description: "This thought-provoking article delves into the biblical descriptions of the Garden of Eden and questions its boundaries. It explores the limitless nature of the garden, its extension possibilities, and contemplates profound spiritual questions about growth, dominion, and the future."
+keywords: "Garden of Eden, theology, spiritual growth, limitless, tree of life, tree of knowledge, Bible, creation, cosmos, mankind's role"
+picture_description: "An image depicting the lush Garden of Eden with the tree of life at its center, surrounded by flowing rivers, and extending infinitely towards the horizon, symbolizing the limitless nature of the garden."
+call_to_action: "What are your thoughts on the boundless nature of the Garden of Eden? How do you perceive its extension and growth in relation to mankind's purpose? Share your insights and join the conversation in the comments below. Let's explore these profound questions together."
+
+
+image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
+  
+image-credits-title: The Limitless Garden
+image-credits-artist: Ted Tschopp and Midjourney
+
 guid: eeb92c15-7422-41c7-9075-be04e977cf0e
-permalink: /2007/09/24/ideas-of-things-i-need-to-think-about-garden-state/
+permalink: /2007/09/24/The-Limitless-Garden-A-Theological-Exploration-of-Eden/
 categories:
   - Religion
   - Science
 ---
-This has nothing to do with New Jersey or emo Jewish twenty somehtings trying to deal with life.&#160; This is a blog post that I am making to capture a couple ideas I have bouncing around in my head that need further refinement:
-
 > “Be fruitful and multiply and fill the earth and subdue it and have dominion over the fish of the sea and over the birds of the heavens and over every living thing that moves on the earth.
 > 
 > “Behold, I have given you every plant yielding seed that is on the face of all the earth, and every tree with seed in its fruit. You shall have them for food. And to every beast of the earth and to every bird of the heavens and to everything that creeps on the earth, everything that has the breath of life, I have given every green plant for food.”

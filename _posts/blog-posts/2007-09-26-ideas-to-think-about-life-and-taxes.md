@@ -1,15 +1,22 @@
 ---
 id: 460
-title: Ideas to Think About - Life and Taxes
+title: "Exploring Taxonomy: A Thought-Provoking Talk by Alex Wright"
+subtitle: "Understanding the Universality of Taxonomies in Human Cultures"
 date: 2007-09-26T16:31:50+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
+description: "This article delves into a talk by Alex Wright at the Long Now Foundation, exploring the fascinating concept of taxonomy across different societies. It questions why taxonomies are universally 5 or 6 levels deep and examines theories, including connections to family structure and genetics."
+keywords: "taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, human cultures, family structure, genetics, categorization"
+picture_description: "An image illustrating different levels of taxonomy, possibly showing a tree-like diagram that categorizes elements into 5 or 6 levels, representing the universal depth of taxonomies mentioned in the talk."
+call_to_action: "What are your thoughts on the universal structure of taxonomies? Have you ever considered how categorization plays a role in our understanding of the world? Share your thoughts and insights in the comments below. Let's engage in a thought-provoking discussion!"
+
+
 guid: eca1c1ee-efc8-453b-8791-4dc4ca8227bb
-permalink: /2007/09/26/ideas-to-think-about-life-and-taxes/
+permalink: /2007/09/26/Exploring-Taxonomy-A-Thought-Provoking-Talk-by-Alex-Wright/
 categories:
   - Web
   - Science
@@ -26,6 +33,3 @@ There are several guesses.&#160; One has to do with the depth of families; you, 
 
 That’s an interesting idea, but also controversial even among evolutionary biologists.&#160; I think the idea above is interesting, but it is just as scientifically mythological as other anthropological mythologies.&#160; As a religious person I would love to have seen Adam apply the first Taxonomy.&#160; 
 
-Next Ideas to Think About:&#160; The House of Memories
-
-&#160;

@@ -1,16 +1,25 @@
 ---
 id: 291
-title: Dehydrated
+title: "Dehydrated"
 date: 2009-06-13T12:06:54+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-guid: https://tedt.org/2009/06/13/dehydrated/
+description: "A mysterious girl named Alice is found wandering. The medical examination reveals more questions than answers, and the protagonist's discovery in his front yard leaves him forever changed. A story that delves into the unknown, leaving readers to ponder what lies just beyond the realm of human understanding."
+keywords: "mystery, supernatural, X-Files, Fringe, transformation, short story, Dehydrated, Alice, intrigue, psychological"
+picture_description: "An image of a young, thin girl with black hair, hiding her face. Her eyes are an intense ice blue, and a green garland with budding flowers is seen intertwined in her hair. In the background, there's a mysterious tree with red flowers and black branches, symbolizing her connection to something beyond our understanding."
+call_to_action: "What do you think happened to Alice? Share your interpretations, thoughts, and feelings about this mysterious tale in the comments below. Join the conversation and explore the enigmatic world presented in 'Dehydrated.'"
+
+guid: 4fe8721b-675c-4720-96b8-7050ca295595
 permalink: /2009/06/13/dehydrated/
-image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-26-36-pm1.png
+
+image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg
+  
+image-credits-title: Dehydrated
+image-credits-artist: Ted Tschopp and Midjourney
 categories:
   - Personal Writing
 ---

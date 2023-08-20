@@ -1,12 +1,19 @@
 ---
 id: 303
-title: More on the Fast for Lent
+title: "The Power of Choice: A Reflection on Free Will and Fasting"
+subtitle: "An Exploration of Conscious Decisions During Lenten Season"
 date: 2008-02-19T17:45:53+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+description: "An insightful examination of free will, personal choice, fasting, and spiritual reflection, connecting these concepts with religion and personal responsibility."
+keywords: "free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom of the Will, spirituality, self-control, ethics, morality"
+picture_description: "An image of a fork in the road, symbolizing the choices we make in life, with a subtle overlay of a fasting plate or spiritual symbols to represent the connection between choice and faith."
+call_to_action: "Feel free to share your thoughts on free will and the choices we make every day. How do you exercise your freedom? Join the conversation in the comments below!"
+
 
 guid: 5be2c380-c65b-4ca6-957d-7626f2e41a98
 permalink: /2008/02/19/more-on-the-fas/

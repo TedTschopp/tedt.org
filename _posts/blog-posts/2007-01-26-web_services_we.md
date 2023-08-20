@@ -4,15 +4,22 @@ title: Web Services, Web Services, Web Services
 date: 2007-01-26T15:27:06+00:00
 author:
   name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  url: https://tedt.org
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
+
+title: "Exploring Web Services, Computing Theory, and the Future of Technology"
+subtitle: "A Comprehensive Insight into the Next Generation of Online Integration"
+description: "An in-depth article providing an understanding of web services, computing theory, and a look at the future. Geared towards those in the enterprise and web development sectors, this article explains web services from a practical standpoint and explores future opportunities in dividing them into data, calculation, and display services."
+keywords: "web services, enterprise architecture, computing theory, data services, calculation services, display services, technology convergence, security, quality assurance, web development"
+picture_description: "An image illustrating the interconnectivity between computers through web services. It can depict servers communicating through a web interface, symbolizing the various aspects of data services, calculation services, and display services."
+
 
 guid: 5076e5bd-f37b-46d6-8381-3b53326a886c
 permalink: /2007/01/26/web_services_we/
 categories:
   - Computers
-  - Web
+  - Internet
 ---
 **<u>Background  
 </u>**Over the last couple of years I have been working on large enterprise projects for a large corporation.&nbsp; I am recognised at the company a leading web developer.&nbsp; I am being groomed to become an Enterprise Architect. One of the things that keeps me up at night is a convergence of a technology called Web Services.
@@ -30,11 +37,3 @@ I don&rsquo;t want to get into all the nit-picky details but all these additiona
 </u>**One important thing to think about with computer is that there are basically 3 parts of any computer.&nbsp; There is a display&nbsp;or output of information.&nbsp; There is a calculating of information.&nbsp; Finally there is some form of storage.&nbsp; So lets look at the computer I am writing this on.&nbsp;&nbsp;There is the 21inch&nbsp;monitor.&nbsp; That is out output.&nbsp; Another part of the computer is the CPU.&nbsp; The computer I have in front of me has a 2.1ghz Intel Dual Core 2.&nbsp; This is the calculating unit for this computer.&nbsp; Finally I have a 100GB hard drive and 3GB of ram.&nbsp; This is the data storage.
 
 Today I am not seeing this model being used in web services.&nbsp; I think there is an opportunity to divide web services up into the following categories.&nbsp; The first would be Data Services for the storage and retrieval of data.&nbsp; The second type of web services would be calculation services.&nbsp; Finally we would have a web service for output.
-
-Over the next couple of weeks, I will be filling in each of these and the requirements needed for each.
-
-**<u>Data Services</u>**
-
-**<u>Calculation Services</u>**
-
-**<u>Display Services</u>**
