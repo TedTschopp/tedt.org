@@ -9,6 +9,8 @@ author:
 
 excerpt: Wodan, the god of the winds, is also the god of the creatures of the night. In Christian times, St. George, the patron Saint of knights and rich lords, often took his place.
 
+description: On the Mountain of Saint George, discover a rich tapestry of legends weaving together Wodan, the god of winds, and St. George, the patron Saint of knights. Explore ancient cultural sites, immeasurable treasures, and hidden secrets within the mountain. Witness tales of fiery dragons, brave knights, restless spirits, and the intriguing connection between ancient gods, rituals, and natural treasures, in a region that bridges Germany, Switzerland, and the old Habsburg empire.
+
 layout: post
 
 guid: 4569431d-6cc4-411f-8935-0a8697074352

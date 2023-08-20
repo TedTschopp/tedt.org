@@ -8,6 +8,9 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 excerpt: Thus sank Wodan, once worshipped by the people as a holy god.
+description: Wodan's Revenge narrates the tale of the once-worshipped pagan god Wodan, who sought vengeance against those who turned to Christianity. This rich folklore describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
+
+
 
 layout: post
 
