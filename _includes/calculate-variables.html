@@ -6,12 +6,18 @@
 {% assign stripped-content = page.content | strip_html | strip %} 
 
 
-<!-- Calculate the pages Exerpt if one isn't present -->
-{% if page.excerpt != "" %}
-    {% assign SEO_description = page.excerpt | strip_html %}
-{% elsif page.description != "" %}
-    {% assign SEO_description = page.description | strip_html %}
+<!-- Calculate the pages description if one isn't present -->
+{% if page.description == null or page.description == empty %}
+  {% if page.excerpt != "" %}
+      {% assign SEO_description = page.excerpt | strip_html %}
+  {% else %}
+      {% assign SEO_description = stripped-content | truncatewords: 50, "" %}
+  {% endif %}
+{% else %}
+    {% assign SEO_description = page.description %}
 {% endif %}
+
+{% assign SEO_description = SEO_description | strip_newlines %}
 
 <!-- Category work -->
 {% assign categories = page.categories %}

@@ -1,8 +1,19 @@
 ---
 layout: post
-supress_winerlinks: true
-
 ---
+
+<!-- Calculate the pages description if one isn't present -->
+{% if page.description == null or page.description == empty %}
+  {% if page.excerpt != "" %}
+      {% assign SEO_description = page.excerpt | strip_html %}
+  {% else %}
+      {% assign SEO_description = stripped-content %}
+  {% endif %}
+{% else %}
+    {% assign SEO_description = page.description %}
+{% endif %}
+
+<p>{{ SEO_description }}</p>
 
 <ol>
 {% for post in site.categories[page.category] %}
