@@ -15,8 +15,7 @@ keywords: "collaboration tools, communication, office environment, value proposi
 picture_description: "An image showing a variety of collaboration tools such as pens, paper, telephones, and modern digital platforms, representing the seamless integration of traditional and modern means of communication in a thriving office environment."
 call_to_action: "How do you utilize collaboration tools in your workplace? Share your thoughts and experiences in the comments below. Let’s explore together how we can break down barriers and create more value through effective collaboration."
 
-image: img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.jpg
-  
+image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.jpg
 image-credits-title: Collaboration Tools
 image-credits-artist: Ted Tschopp and Midjourney
 
