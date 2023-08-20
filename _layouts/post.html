@@ -358,44 +358,37 @@
 
                         // Function to find the div with a role attribute equal to "doc-endnotes"
                         function processEndnotes() {
-                            // 1. Scan for a DIV with a Role="doc-endnotes"
-                            const divs = document.querySelectorAll('div[role="doc-endnotes"]');
 
-                            divs.forEach((div) => {
-                            // 2. Look for an Ordered List of List Elements within that Div
-                            const orderedLists = div.querySelectorAll('ol');
+                            // Find the DIV with role="doc-endnotes"
+                            let div = document.querySelector('div[role="doc-endnotes"]');
 
-                            orderedLists.forEach((ol) => {
-                                // 3. Loop over all List elements
-                                const listElements = ol.querySelectorAll('li');
+                            // Check if the div exists
+                            if (div) {
+                            // Find the ordered list within that div
+                            let ol = div.querySelector('ol');
 
-                                listElements.forEach((li) => {
-                                // 4. Look for an Anchor tag within that List Element that has a role="doc-backlink"
-                                const anchorTags = li.querySelectorAll('a[role="doc-backlink"]');
+                            // Check if the ordered list exists
+                            if (ol) {
+                                // Loop over all list elements
+                                ol.querySelectorAll('li').forEach(li => {
+                                // Get the ID of the list element
+                                let id = li.id;
 
-                                anchorTags.forEach((a) => {
-                                    // 5. Make Note of that Anchor Tag's HREF
-                                    const href = a.getAttribute('href');
+                                // Make note of that ID and look through the document for an anchor tag with matching href
+                                let anchor = document.querySelector(`a[href="#${id}"]`);
 
-                                    const hrefCleaned = href.slice(1, 2) + href.slice(6);                                    
+                                // Check if the anchor exists
+                                if (anchor) {
+                                    // Create an aside tag and set its content to the ID of the anchor tag
+                                    let aside = document.createElement('aside');
+                                    aside.textContent = id;
 
-                                    console.log(hrefCleaned);
-
-                                    // 6. Look through the whole document for another Anchor Tag that has an ID that is the same as the HREF without the #
-                                    const targetAnchor = document.querySelector(hrefCleaned);
-
-                                    if (targetAnchor) {
-                                    // 7. At the end of this new Anchor tag with the ID that is the same as the HREF without the #, add an Aside Tag
-                                    const aside = document.createElement('aside');
-
-                                    // 8. Make the contents of the Aside tag be the ID of the Anchor Tag
-                                    aside.textContent = href.replace('#', '');
-                                    targetAnchor.parentNode.insertBefore(aside, targetAnchor.nextSibling);
-                                    }
+                                    // Append the aside tag to the end of the anchor tag
+                                    anchor.appendChild(aside);
+                                }
                                 });
-                                });
-                            });
-                            });
+                            }
+                            }
 
                         }
 
