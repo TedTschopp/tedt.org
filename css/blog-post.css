@@ -558,6 +558,7 @@ figcaption {
 	font-size: 1.5rem;
 	position: relative;
 	font-weight: normal;
+	color: #8b0000;
 }
 
 .notes h2 {
@@ -566,6 +567,7 @@ figcaption {
 	font-size: 3rem;
 	text-decoration: solid;
 	margin-bottom: 0px;
+	color: #8b0000;
 }
 
 .notes h3 {
@@ -573,6 +575,7 @@ figcaption {
 	font-weight: normal;
 	font-size: 2.5rem;
 	margin-bottom: 10px;
+	color: #8b0000;
 }
 
 .notes h4 {
@@ -580,6 +583,7 @@ figcaption {
 	font-weight: normal;
 	font-style: italic;
 	font-size: 2rem;
+	color: #8b0000;
 }
 
 .notes h5 {
@@ -587,6 +591,7 @@ figcaption {
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.5rem;
+	color: #8b0000;
 }
 
 .notes h6 {
@@ -594,6 +599,7 @@ figcaption {
 	font-weight: normal;
 	font-style: italic;
 	font-size: 1.35rem;
+	color: #8b0000;
 }
 
 .notes b, th {
