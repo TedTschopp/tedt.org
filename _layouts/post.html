@@ -356,16 +356,47 @@
                             return concatenatedLetters;
                         }
 
+                        // Function to find the div with a role attribute equal to "doc-endnotes"
+                        function processEndnotes() {
+                            var endnotesDiv = document.querySelector('div[role="doc-endnotes"]');
+                            if (endnotesDiv) {
+                                var orderedList = endnotesDiv.querySelector('ol');
+                                if (orderedList) {
+                                orderedList.querySelectorAll('li').forEach(function(listItem) {
+                                    var linkElement = listItem.querySelector('a');
+                                    if (linkElement && linkElement.id) {
+                                    var correspondingAnchor = document.querySelector('a[href="#' + linkElement.id + '"]');
+                                    if (correspondingAnchor) {
+                                        var asideElement = document.createElement('aside');
+                                        // Insert content into the aside tag here if necessary
+                                        // asideElement.textContent = "Your content here";
+
+                                        // Insert the aside tag after the corresponding anchor tag
+                                        correspondingAnchor.parentNode.insertBefore(asideElement, correspondingAnchor.nextSibling);
+                                    }
+                                    }
+                                });
+                                }
+                            }
+                        }
+
+
+
+                        
                     </script>
                     {% if page.subtitle %}
-                    <h2>page.subtitle</h2>
+                    <h2>{{page.subtitle}}</h2>
                     {% endif %}
 
                     <span class="e-content" id="main_content">{{ content }}</span>
 
                     <script>
+                        // Call the function to initiate the process
+                        processEndnotes();
+
                         var main_content = document.getElementById('main_content');
                         main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+
                     </script>
 
 
@@ -397,9 +428,7 @@
                                 <div class="col-lg-12">
                                     <ul lass="list-unstyled">
                                         {% for post in site.categories[category] limit:5 %}
-                                        <li><dl><dt><a href="{{ post.url | absolute_url }}">
-                                            {{ post.title }}
-                                          </a></dt><dd>{{ post.description | truncatewords: 20 }}</dd></dl></li>
+                                        <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </div>
