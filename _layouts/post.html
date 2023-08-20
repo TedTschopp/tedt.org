@@ -355,7 +355,8 @@
 
                             return concatenatedLetters;
                         }
-
+                        
+                        /*  This function is used to move the footnotes into asides.  Still needs alot of work 
                         // Function to find the div with a role attribute equal to "doc-endnotes"
                         function processEndnotes() {
 
@@ -393,7 +394,7 @@
                             }
                             }
 
-                        }
+                        } /* End of processEndnotes function */
 
 
 
@@ -407,7 +408,7 @@
 
                     <script>
                         // Call the function to initiate the process
-                        processEndnotes();
+                        // processEndnotes();
 
                         var main_content = document.getElementById('main_content');
                         main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);

@@ -15,11 +15,14 @@ layout: post
 
 guid: 678c71f9-60b4-4baf-b5e4-e62c41161fa3
 permalink: /2023/01/01/Wodens-Revenge/
+
 image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
-image_alt: MidJourney AI Generated Image prompt =   "Painting of Wodan coming down the a large river sitting on a water horse holding a battle sword in one hand and the globe in the other the river floods the bank and devastates a medieval city. In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
-image-credits-URL: #
+
+image_alt: "Painting of Wodan coming down the a large river sitting on a water horse holding a battle sword in one hand and the globe in the other the river floods the bank and devastates a medieval city. In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
+
 image-credits-title: Woden's Revenge
-image-credits-artist: Midjourney 
+image-credits-artist: Ted Tschopp and Midjourney 
+
 categories:
   - Folklore
 tags:
