@@ -383,8 +383,11 @@
                                     let aside = document.createElement('aside');
                                     aside.textContent = id;
 
+                                    aside.className = 'asidenote';
+
+
                                     // Append the aside tag to the end of the anchor tag
-                                    anchor.insertAdjacentElement('afterend', aside);
+                                    anchor.insertAdjacentElement('beforeend', aside);
                                 }
                                 });
                             }

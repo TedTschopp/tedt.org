@@ -628,7 +628,12 @@ figcaption {
 
 }
 
-
+.asidenote {
+	left: 100px;
+	position: relative;
+	color: #3B4248;
+	font-family: 'DanaLibraryHand-Regular', serif;
+}
 
 #parchment {
 	position: absolute;
