@@ -138,7 +138,6 @@
                         -->
 
                     {% if page.image %}
-                    <figure>
                         {% if page.image_alt %}
                             {% assign image_alt = page.image_alt %}
                         {% else %}
@@ -161,20 +160,18 @@
                             {% assign image_credits = "Unknown" %}
                         {% endif %}
 
+                        <figure>
+                            <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{image_alt}} by {{image_credits}}">
+                            <figcaption>
 
-
-
-                      <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{image_alt}} by {{image_credits}}">
-                      <figcaption>
-
-                            {% if page.image-credits-URL %}
-                                <a target="_new" href="{{page.image-credits-URL}}">"{{image_credits_title}}" by {{image-credits}}</a>
-                            {% else %}
-                                "{{image_credits_title}}" by {{image-credits}}
-                            {% endif %}
-                        
-                      </figcaption>
-                    </figure>
+                                {% if page.image-credits-URL %}
+                                    <a target="_new" href="{{page.image-credits-URL}}">"{{image_credits_title}}" by {{image-credits}}</a>
+                                {% else %}
+                                    "{{image_credits_title}}" by {{image-credits}}
+                                {% endif %}
+                                
+                            </figcaption>
+                        </figure>
                     {% endif %}
 
                     <hr>
@@ -360,7 +357,7 @@
                         }
 
                     </script>
-                    {% if page.subtitle}
+                    {% if page.subtitle %}
                     <h2>page.subtitle</h2>
                     {% endif %}
 
