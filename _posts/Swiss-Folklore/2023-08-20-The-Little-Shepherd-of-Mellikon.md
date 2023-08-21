@@ -70,11 +70,11 @@ MagicalIdeas: Haunting of granary, banishment of spirit
 
 ---
 
-> # From the Swabian War - Benedikt Fontana
+> # The Little Shepherd of Mellikon
 > 
 > At the time when the county of Baden was still ruled by three communities (by the three places of Bern, Zurich, and Glarus), a young nobleman from Uri lived in the little village of Mellikon, located in the Zurzach district near the Rhine River. He owned the most beautiful meadows and fertile fields, and a pretty mansion with a chapel beside it was his summer residence. However, not trusting anyone from Baden and Aargau, he had appointed a man from Uri to manage his farms. This steward pleased him so much that the young nobleman often told the Schwarzheinrich farmer that since he had this overseer, money was raining into his coffers through the roof.
 >
 > Gradually, this steward got to know the merry brothers in Mellikon and Reckingen and paid their bills whenever he drank and played with them. But to continue his extravagant lifestyle, he had to steal from the young nobleman. He sold several quarters of grain to the Obermüller of Reckingen at a ridiculously low price. They had loaded a sleigh with stolen grain one winter night, and the manager was about to carry the last sack behind the house when he fell down the stairs and died instantly. The miller left the scoundrel lying and rushed home with his cheap load. The next morning, a shoemaker from Rümikon found the dead man under his burden. But at the same time, there was a sighing and rumbling in the granary, so no one dared to go up there anymore.
 >
 >To get rid of this evil spirit, the young nobleman turned to a Capuchin monk in the monastery at Baden, who successfully banished it into a cave in the Neuburgerhalde. The spirit still appears from time to time under a hole in the rock and mocks the people who look up at him. The people simply know him as the Little Shepherd.
-
+{: .folklore }
