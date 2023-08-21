@@ -1,7 +1,7 @@
 ---
 id: 12428935
 title: The Army in Schrattenberg
-date: 2023-08-20 16:54:49
+date: 2023-08-20 18:54:49
 author:
   name: Ted Tschopp
   url: https://tedt.org
@@ -22,8 +22,6 @@ image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Wa
 image_alt: The mysterious army leader and his warriors sleep at the tables.
 image-credits-title: "The Mysterious Army Leader Sleeps"
 image-credits-artist: Ted Tschopp and Midjourney
-
-
 
 
 categories:
