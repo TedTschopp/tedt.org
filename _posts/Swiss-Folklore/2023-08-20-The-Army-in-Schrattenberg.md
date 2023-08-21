@@ -65,6 +65,29 @@ Monster or Magical or Religious Ideas:
   - A hidden underground world filled with warriors and treasures.
   - Supernatural beings with time prediction.
   - Magical properties, including disappearing entrances and magical doors.
+
+tags: 
+  - Swiss Legends
+  - Folklore
+  - Magic
+  - Hidden Treasures
+  - Warriors
+  - Mystical
+  - Underground World
+  - Time Prediction
+  - Supernatural
+  - Escholzmatt
+  - Gurnigel
+  - Schrattenberg
+  - Fantasy
+  - Adventure
+  - Cultural Heritage
+  - Mountains
+  - Mythology
+  - Enchantment
+  - Historical
+  - Ethereal
+
 ---
 
 > <ins>Sagen, Customs, Legends from the five places Lucerne, Uri, Schwyz, Unterwalden, and Zug, Lucerne, Volume 1, Page 293</ins>
