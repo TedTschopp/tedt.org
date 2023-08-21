@@ -28,27 +28,7 @@ image-credits-artist: Ted Tschopp and Midjourney
 
 categories:
   - Folklore
-tags:
-  - Switzerland
-  - Mellikon
-  - Aargau
-  - Legends
-  - Folklore
-  - Ghost
-  - Haunting
-  - Capuchin Monk
-  - Neuburgerhalde
-  - Theft
-  - Mystery
-  - Banishment
-  - Supernatural
-  - Evil Spirit
-  - Early Modern Period
-  - County of Baden
-  - Rhine River
-  - Nobility
-  - Rural Life
-  - Cultural Heritage
+
 
 location: Escholzmatt, Switzerland
 longitude: 46.8911
