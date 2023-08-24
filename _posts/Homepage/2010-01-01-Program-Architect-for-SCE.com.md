@@ -32,7 +32,7 @@ image-credits: SCE.com by Ted Tschopp
 image-credits-title: SCE.com
 image-credits-artist: Ted Tschopp
 image-credits-URL: https://www.sce.com/
-categories: home
+categories: Home
 order: 4
 ---
 

@@ -26,7 +26,7 @@ image-credits: Countdown to the Lord of the Rings by Ted Tschopp http://www.theo
 image-credits-title: Countdown to the Lord of the Rings
 image-credits-artist: Ted Tschopp
 image-credits-URL: http://www.theonering.com  
-categories: home
+categories: Home
 order: 5
 ---
 

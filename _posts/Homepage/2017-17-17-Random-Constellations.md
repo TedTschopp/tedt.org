@@ -18,7 +18,7 @@ seo_description: |
 
 guid: b077b681-ef10-4e23-9411-1f33b9a1bc87
 image: /img/home/Ted_Tschopp_an_image_of_a_sky_filled_with_stars_on_a_dark_night.jpg
-categories: home
+categories: Home
 order: 9
 ---
 

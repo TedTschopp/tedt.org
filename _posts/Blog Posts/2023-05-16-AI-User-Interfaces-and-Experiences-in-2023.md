@@ -22,7 +22,6 @@ image-credits-URL: https://unsplash.com/photos/n2ILm0aTCYo?utm_source=unsplash&u
 image-credits-title: Printing Press
 image-credits-artist: Hannes Wolf
 categories:
-  - User Experience
   - Computers
 ---
 

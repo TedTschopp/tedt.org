@@ -26,7 +26,7 @@ image-credits: Text Generation Code by Ted Tschopp
 image-credits-title: Text Generation Code
 image-credits-artist: Ted Tschopp
 image-credits-URL: https://tedt.org
-categories: home
+categories: Home
 order: 7
 ---
 

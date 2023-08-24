@@ -30,7 +30,7 @@ image: /img/home/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.jpg
 image-credits: MidJourney and Ted Tschopp 
 image-credits-title: Ted Tschopp as Product Engineering and Build Process Manager 
 image-credits-artist: MidJourney and Ted Tschopp 
-categories: home
+categories: Home
 order: 3
 ---
 

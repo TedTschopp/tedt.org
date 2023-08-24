@@ -25,7 +25,7 @@ image: /img/home/Ted-Tschopp-board-game-table.jpg
 image-credits: Board Game Night by Ted Tschopp and Midjourney
 image-credits-title: Board Game Night
 image-credits-artist: Ted Tschopp
-categories: home
+categories: Home
 order: 8
 ---
 

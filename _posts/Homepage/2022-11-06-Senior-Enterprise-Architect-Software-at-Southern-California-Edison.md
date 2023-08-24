@@ -29,7 +29,7 @@ image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v2.jpg
 image-credits: Ted Tschopp and Midjourney
 image-credits-title: Ted Tschopp as Senior Enterprise Architect in the Aesthetic of Leonardo Da Vinci
 image-credits-artist: Ted Tschopp and Midjourney
-categories: home
+categories: Home
 order: 2
 ---
 

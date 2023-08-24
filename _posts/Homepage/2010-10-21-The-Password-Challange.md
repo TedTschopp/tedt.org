@@ -26,7 +26,7 @@ image-credits: Password List by Ted Tschopp https://github.com/TedTschopp/The-Pa
 image-credits-title: Password List
 image-credits-artist: Ted Tschopp
 image-credits-URL: https://github.com/TedTschopp/The-Password-Challange
-categories: home
+categories: Home
 order: 6
 ---
 
