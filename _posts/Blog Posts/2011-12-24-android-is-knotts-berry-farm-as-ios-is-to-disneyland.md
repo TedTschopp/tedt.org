@@ -22,7 +22,6 @@ image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e13715827938
 categories:
   - Computers
   - Mobile
-  - Web
 ---
 I recently had an opportunity to return to Knott's Berry Farm after many years. I had a wonderful time with the family and due to my AAA membership I was able to get in for around $40. I felt it was money well spent. However on my trip around the part I noticed a couple things that caused me to pause and think.
 

@@ -26,7 +26,6 @@ permalink: /2013/11/27/The-Future-of-Web-Based-Computing/
 image: /wp-content/uploads/2013/11/javascript.jpg
 categories:
   - Computers
-  - Web
 ---
 Take a look at the following video:
 

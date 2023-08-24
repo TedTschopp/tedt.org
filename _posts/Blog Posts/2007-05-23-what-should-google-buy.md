@@ -21,7 +21,6 @@ guid: 976d5096-5387-4179-af9a-6e494b50cb2a
 permalink: /2007/05/23/what-should-google-buy/
 categories:
   - Computers
-  - Web
 ---
 A while back someone asked me what I think Google should buy next.&#160; I was reminded of the conversation today by a co-worker so I dug up my response.&#160; The post still makes a whole lot of sense even if it’s over two years old.
 

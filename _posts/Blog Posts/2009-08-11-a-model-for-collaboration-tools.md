@@ -21,7 +21,7 @@ permalink: /2009/08/11/a-model-for-collaboration-tools/
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-04-09-pm.png
 categories:
   - Computers
-  - Work
+  - Communications
 tags:
   - linkedin
 ---

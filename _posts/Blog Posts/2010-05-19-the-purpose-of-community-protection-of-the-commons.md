@@ -20,7 +20,7 @@ permalink: /2010/05/19/the-purpose-of-community-protection-of-the-commons/
 image: /wp-content/uploads/2013/06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 categories:
   - Computers
-  - Work
+  - Communications
 tags:
   - Film
   - linkedin

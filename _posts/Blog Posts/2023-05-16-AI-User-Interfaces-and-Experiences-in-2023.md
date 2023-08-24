@@ -22,10 +22,8 @@ image-credits-URL: https://unsplash.com/photos/n2ILm0aTCYo?utm_source=unsplash&u
 image-credits-title: Printing Press
 image-credits-artist: Hannes Wolf
 categories:
-  - AI
   - User Experience
   - Computers
-  - Enterprise
 ---
 
 Last week was Google IO, and I'm a little disappointed.   Google has been getting their lunch eaten by OpenAI and GPT-3, and I think they are starting to fighting back with new product launches and features are going to start coming very fast and furious.  But a lot of this stuff is coming soon or coming this fall. That's the evidence that Google is behind the eight ball on this.  This also suggests that over the last six months there really was a massive internal shift at Google towards getting this stuff out the door.  The open question is can Google out code Microsoft at this point.

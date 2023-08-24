@@ -11,7 +11,7 @@ layout: post
 guid: b0cd4204-75b3-40ef-b90f-b672c919e4a2
 permalink: /2006/06/23/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/
 categories:
-  - Web
+  - Computers
 ---
 Microsoft tonight [announced a new partnership](http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx) with [Creative Commons](http://creativecommons.org/), the organization dedicated to providing content producers a legal alternative to “all rights reserved” copyright law, to offer a new tool for easy insertion of Creative Commons licenses into works created with Microsoft Office.
 

@@ -20,7 +20,6 @@ image-credits: |
 categories:
   - Role Playing Games
   - Religion
-  - Politics
   - Gamma World
   - Mutant Crawl Classics
   - Draft

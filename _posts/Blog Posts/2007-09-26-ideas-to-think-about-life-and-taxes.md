@@ -18,7 +18,7 @@ call_to_action: "What are your thoughts on the universal structure of taxonomies
 guid: eca1c1ee-efc8-453b-8791-4dc4ca8227bb
 permalink: /2007/09/26/Exploring-Taxonomy-A-Thought-Provoking-Talk-by-Alex-Wright/
 categories:
-  - Web
+  - Computers
   - Science
 ---
 I recently heard [Alex Wright](http://www.alexwright.org/) speak at the [Long Now Foundation](http://www.longnow.org/)&#160;via their [podcast](http://www.longnow.org/projects/seminars/SALT.xml).&#160; It made me think of a couple things.

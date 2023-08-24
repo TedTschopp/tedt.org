@@ -12,7 +12,6 @@ guid: 4bf037e2-35de-43dc-b271-67c0fa10951f
 permalink: /2005/03/11/example-of-xmlhttprequest/
 categories:
   - Computers
-  - Web
 ---
 I'm working on this at work, and I'd like to use some of the ideas on my personal sites as well.  I thought I'd post this, as it doesn't yet contain anything to amazing or too specific to my work's enviroment.
 

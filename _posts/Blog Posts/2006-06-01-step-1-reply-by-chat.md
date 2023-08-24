@@ -11,7 +11,7 @@ layout: post
 guid: 199e35fe-9f8f-41b5-a635-0b2e2b0d69e4
 permalink: /2006/06/01/step-1-reply-by-chat/
 categories:
-  - Web
+  - Computers
 ---
 I have always thought that the logical direction for chat and email was the same.&#160; At some point in the future the only difference between them will be if you are there to answer the chat.&#160; Looks like Google gets this as well.&#160; 
 

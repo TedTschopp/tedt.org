@@ -20,9 +20,8 @@ guid: 39d83599-6538-47bf-ad4b-415a0426b359
 permalink: /2009/07/09/The-Three-Types-of-People-in-Conversations/
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-12-47-pm.png
 categories:
-  - Collaboration
+  - Communications
   - Computers
-  - Enterprise
 ---
 The first is that there are three basic types of people.  There are people who start conversations.  There are people who participate in conversations.  Finally there are people who listen to conversations.
 

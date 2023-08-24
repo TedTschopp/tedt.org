@@ -34,3 +34,9 @@ Check the strength of your password based on mathematical models that take into 
 * Includes a dictionary of the most common passwords
 * Includes a dictionary of the most common English words
 * Includes a dictionary of the most common passwords that have been hacked already
+
+
+**Password Challenge 5.0:** A software that tests the strength of a password based on various criteria and calculates its bits of entropy, complexity, and speed to hack.
+**Test Your Password:** A section that allows the user to enter a password and see its score and details. The user can also choose whether the attacker has access to the machine and whether the password is hidden or not.
+**Score Details:** A section that shows how the score is calculated based on additions and deductions. It also shows the disqualifications and warnings for common, dictionary, or hacked passwords.
+**Speed to Hack Password:** A section that shows how long it would take to hack the password.

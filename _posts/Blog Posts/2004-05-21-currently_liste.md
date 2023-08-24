@@ -16,7 +16,6 @@ guid: 5a3cd62d-c94f-4f67-8504-7dead22e0a28
 permalink: /2004/05/21/currently_liste/
 categories:
   - Computers
-  - Web
 ---
 Ok, So I have iTunes running here at work, and I have Typepad running. So now the two of them are working together. This program below will update TypePad list of songs with the latest tunes you are listening to. You will need to instert your List ID, Username, and Password instead of the ************'s.
 

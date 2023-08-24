@@ -12,7 +12,6 @@ guid: 4cd4ec68-a79c-40b8-b85f-52d77fbfcab6
 permalink: /2004/03/13/corporate-intranet-redesign/
 categories:
   - Projects
-  - Work
 image: wp-content/uploads/2011/02/edna-sce-com_1-768x779.png
 image-credits: SCE Intranet by Ted Tschopp  
 ---

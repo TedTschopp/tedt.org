@@ -12,6 +12,7 @@ guid: 26ca4c54-46a6-4498-b0f0-3d368c2fe27f
 permalink: /2007/08/17/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/
 categories:
   - Computers
+  - Mobile
 ---
 Well I broke my iPhone. I dropped it at lunch today and the glass shattered. 
 

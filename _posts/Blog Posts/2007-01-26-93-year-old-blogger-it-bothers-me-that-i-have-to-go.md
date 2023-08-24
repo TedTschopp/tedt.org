@@ -11,7 +11,7 @@ layout: post
 guid: 07db18f9-a62c-4daf-b93b-f1e7a4868aa2
 permalink: /2007/01/26/93-year-old-blogger-it-bothers-me-that-i-have-to-go/
 categories:
-  - Web
+  - Computers
 ---
 I saw this on Digg, and thought I would like to share it with my friends, and save a copy of it for myself. 
 

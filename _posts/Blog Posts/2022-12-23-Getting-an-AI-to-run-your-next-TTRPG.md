@@ -21,6 +21,7 @@ image-credits-title: OSR Role Playing Game Dice
 image-credits-artist: Jim Wampler
 categories:
   - Role Playing Games
+  - Computers
 ---
 
 I have spent a long part of my Christmas vacation figuring out how to drive an AI Chatbot (https://chat.openai.com/chat) to help people run Role Playing Games. 

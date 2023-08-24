@@ -22,9 +22,8 @@ image-credits-artist: Ted Tschopp and Midjourney
 guid: fe15202c-5003-4886-8c40-3a1a6e469a5a
 permalink: /2009/07/08/The-Power-of-Collaboration-Tools-Treating-Them-Like-Pen-and-Paper/
 categories:
-  - Collaboration
+  - Communications
   - Computers
-  - Enterprise
 ---
 The key approach to collaboration tools is to treat them like Pen and Paper. They are like Conference Rooms. They are like the telephones. Each of these tools do not have a whole lot of restrictions placed on them in the office environment. A collaboration tool is only as useful as it is used. To put barriers to use in place only reduces the number of people who are going to use them.
 

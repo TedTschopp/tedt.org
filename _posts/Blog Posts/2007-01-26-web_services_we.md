@@ -19,7 +19,6 @@ guid: 5076e5bd-f37b-46d6-8381-3b53326a886c
 permalink: /2007/01/26/web_services_we/
 categories:
   - Computers
-  - Internet
 ---
 **<u>Background  
 </u>**Over the last couple of years I have been working on large enterprise projects for a large corporation.&nbsp; I am recognised at the company a leading web developer.&nbsp; I am being groomed to become an Enterprise Architect. One of the things that keeps me up at night is a convergence of a technology called Web Services.

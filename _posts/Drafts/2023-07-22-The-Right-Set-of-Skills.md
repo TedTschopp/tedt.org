@@ -25,7 +25,6 @@ image_alt: Photo by Ted Tschopp using Midjourney
   
 categories:
   - Role Playing Games
-  - FAME
   - The Märchen Engine
   - Draft
 draft-status: integration
