@@ -5,7 +5,7 @@ date: 2004-03-13T16:58:14+00:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
 guid: 4cd4ec68-a79c-40b8-b85f-52d77fbfcab6

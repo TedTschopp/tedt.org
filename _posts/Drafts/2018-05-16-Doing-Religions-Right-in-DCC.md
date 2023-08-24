@@ -5,7 +5,7 @@ update: 2018-05-23T16:44:34-07:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 description: |
    Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games.  These are my notes on how to get DCC closer to a relgious system that works for a believer and a role player.   

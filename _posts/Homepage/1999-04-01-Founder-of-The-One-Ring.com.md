@@ -6,7 +6,7 @@ date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.  

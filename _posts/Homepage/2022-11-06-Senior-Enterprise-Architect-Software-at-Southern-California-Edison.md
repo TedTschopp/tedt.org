@@ -6,7 +6,7 @@ date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 description: |
   As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.

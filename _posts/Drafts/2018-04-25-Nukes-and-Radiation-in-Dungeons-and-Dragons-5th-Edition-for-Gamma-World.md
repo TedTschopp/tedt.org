@@ -5,7 +5,7 @@ date: 2018-04-25T02:20:00+00:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 excerpt: |
    I plan on having two systems for Radiation Damage in my D&D 5e Gamma World system.  The first is a realisitic system that will be used for dramatic purposes... ...the second system will basically set a CON Save vs a DC that is based on the Radiation Intensity

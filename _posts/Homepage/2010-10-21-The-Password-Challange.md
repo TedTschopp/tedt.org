@@ -6,7 +6,7 @@ date: 2018-06-03T07:11:42-07:00
 author:
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://tedt.org/img/thumb3.jpg
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 description: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
