@@ -2,6 +2,22 @@
 layout: post
 ---
 
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign category = page.category | downcase | slugify %}
+  {% assign image = category | append: ".png" %}
+{% endif %}
+
+{% if image %}
+  <figure>
+      <img class="img-responsive img-thumbnail" src="{{site.siteurl}}img/categories/{{ page.image }}" alt="{{page.category}}">
+  </figure>
+{% endif %}
+
+
+
+
 <!-- Calculate the pages description if one isn't present -->
 {% if page.description == null or page.description == empty %}
   {% if page.excerpt != "" %}
