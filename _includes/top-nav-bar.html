@@ -29,7 +29,7 @@
                             Projects
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                {% assign sorted_homepage = site.categories.['home'] | sort: 'order' %}
+                                {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
                                 {% for post in sorted_homepage %}
                                     <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
                                 {% endfor %}
