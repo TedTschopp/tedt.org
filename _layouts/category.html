@@ -241,7 +241,28 @@
 
             </div>
 
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
 
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <div class="post-categories">
+                        <h4>All Categories</h4>
+                        <ul>
+                          {% for category in site.categories %}
+                            <li>
+                              <a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}">
+                                {{ category[0] }} ({{ category[1].size }})
+                              </a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+
+                      </div>
+                </div>
+
+              </div>
         </div>
         <!-- /.row -->
 
