@@ -26,7 +26,7 @@ categories:
   - Role Playing Games
   - Dungeon Crawl Classics
   - Religion
-  - Middle-Earth
+  - Middle-earth
   - Draft
 draft-status: notes
 ---
