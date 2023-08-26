@@ -251,7 +251,7 @@
                 <!-- Blog Categories Well -->
                 <div class="well">
                     <div class="post-categories">
-                        {% assign categories = page.categories %}
+                        {% assign categories = site.categories %}
                         {% for category in categories %}
                             <h4>Latest in <a href="{{site.siteurl}}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
