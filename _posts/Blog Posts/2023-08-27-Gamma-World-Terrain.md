@@ -20,6 +20,7 @@ image-credits-artist:
 categories:
   - Gamma World
 ---
+The following was a prompt experiment in Midjourney.  My goal was to create a series of background or header images that felt like they were imagery from Gamma World.  Here is a what came out.
 
 
 <div class="container">

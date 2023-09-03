@@ -339,6 +339,10 @@ There are nine separate ways a predicament can be resolved:
 
 #### Ranged Combat Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid" alt="image"></a>
+</div>
+
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
 
 Typical Specializations: Artillery, Beam Weapons, Blowpipe, Bolas, Bow, Crossbow, Dropping, Fast-Draw, Guns, Innate Attack, Lasso, Liquid Projector, Net, Sling, Spear Thrower, Throwing Art, Thrown Weapon, and Gunner
@@ -361,6 +365,10 @@ Typical Tasks and their Difficulty Modifiers
 
 #### Athletics Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid" alt="image"></a>
+</div>
+
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
 
 Typical Specializations: Bicycling, Body Sense, Breath Control, Climbing, Flying, Free Fall, Hiking, Jumping, Lifting, Mount, Parachuting, Running, Scuba, Sports, Swimming, Throwing, Climbing, Parachuting, Scuba, Climbing, Scuba, Skating, Skiing, Parachuting, Scuba, and Zero G
@@ -382,6 +390,10 @@ Typical Tasks and their Difficulty Modifiers
 | Godly             | Swim upstream in rough waters while wearing full metal armor while pulling a rowboat without capsizing the passengers in the rowboat.                                                                                                                                                     |
 
 #### Melee Combat Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid" alt="image"></a>
+</div>
 
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
 
@@ -407,6 +419,10 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 
 #### Stealth Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid" alt="image"></a>
+</div>
+
 Make a Stealth check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard. You must be out of sight of those you intend to deceive when this skill check is made.
 
 Typical Specializations: Shadowing, and Forward Observer
@@ -426,6 +442,10 @@ Typical Specializations: Shadowing, and Forward Observer
 | Godly             | Vanish while you are the center of attention of trained observers.                                 |
 
 #### Acrobatics Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid" alt="image"></a>
+</div>
 
 Your Acrobatics check covers your attempt to do something that will exert yourself physically related to your grace and dexterity. Examples of this might be trying to stay on your feet in when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a
 rocking ship's deck. You might also need a Acrobatics check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.
@@ -447,6 +467,10 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 | Godly             | Walk across a strand of silk in a the middle of a raging storm                                                                                          |
 
 #### Sleight of Hand Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid" alt="image"></a>
+</div>
 
 Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Sleight of Hand check. You might also need a Sleight of Hand check to determine whether you can lift a coin purse off another 
 person or slip something out of another person's pocket. 
@@ -473,6 +497,10 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 
 #### Drive / Ride / Pilot Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid" alt="image"></a>
+</div>
+
 Whenever you attempt to ride a horse for a long period of time or over rough terrain, pilot a boat down a raids or a busy river, or operate a method of transportation in any way that is taxing in any way you will need to make a Drive / Ride / Pilot roll to stay on the task and successfully arrive at your destination.
 
 Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit, Bicycling, Boating, Crewman, Driving, Freight Handling, Piloting, Seamanship, Shiphandling, Spacer, Submarine, Submariner, Teamster
@@ -493,6 +521,10 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 
 #### Ruggedness Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid" alt="image"></a>
+</div>
+
 Make a Ruggedness check when you attempt to Force open a stuck, locked, or barred door, break free of bonds, push through a tunnel that is too small. You might also need a Ruggedness check to see if you can hang on to a wagon while being dragged behind it, tip over a statue, or keep a boulder from rolling.
 
 Typical Specializations:
@@ -512,6 +544,11 @@ Typical Specializations:
 | Godly             | Win a drinking contest against a known drunk and a dance contest against a professional dancer. At the same time.                                                                                                                                             |
 
 #### Unarmed Combat Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid" alt="image"></a>
+</div>
+
 
 Your Unarmed Combat ability check measures your character's ability to attack and survive in an unarmed combat.
 
@@ -539,6 +576,10 @@ Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestli
 
 #### Social Sciences Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid" alt="image"></a>
+</div>
+
 Your Social Science check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.
 
 Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, Psychology, Military Science, Intelligence Analysis, Interrogation, Occultism, Criminology, Law, Literature, Public Speaking, Teaching, Writing, Politics, Teaching, Anthropology, Archaeology, Cartography, Criminology, Economics, Political Science, Geography, History, Law, Linguistics, Literature, Paleontology, Philosophy, Psychology, Sociology, Theology, Smuggling, Writing
@@ -559,6 +600,10 @@ Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, P
 
 #### Life Sciences Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid" alt="image"></a>
+</div>
+
 A life sciences check lets you try to stabilize a dying companion or diagnose an illness as well as allow you to recall other important information about living organisms.
 
 Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, Esoteric Medicine, Epidemiology, First Aid, Hypnotism, Pharmacy, Physician, Surgery, Veterinary, Brain Hacking, Biology, Physiology, Herb Lore, Biology, Farming, Gardening, Herb Lore, Naturalist, Paleontology, Herbal Pharmacy, and Forensics
@@ -578,6 +623,10 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 | Godly             | Reattach limbs, set broken bones, and grow them with herbal remedies and simple tools                                                                                                                                                                         |
 
 #### Physical Sciences / Survival Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid" alt="image"></a>
+</div>
 
 Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
 
@@ -602,6 +651,8 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 **Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
 
 #### Engineering Knowledge Areas
+
+
 
 **Description of the Engineering skill:**
 Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
@@ -647,6 +698,10 @@ Engineering measures the ability to apply technological knowledge and expertise 
 
 #### Insight Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid" alt="image"></a>
+</div>
+
 **Description of the Insight skill:**
 Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
 
@@ -691,6 +746,10 @@ Insight measures the ability to discern the true intentions and emotions of othe
 
 #### Investigation Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid" alt="image"></a>
+</div>
+
 When you look around for clues and make deductions based on those clues,
 you make an Investigation check. You might deduce the location of a
 hidden object, discern from the appearance of a wound what kind of
@@ -720,6 +779,10 @@ conflicts in their understanding by pushing themselves mentally.
 
 #### Traditions Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid" alt="image"></a>
+</div>
+
 The Traditions skill encompasses a deep understanding of cultural norms, social etiquettes, and bureaucratic systems within various groups and organizations. Possessing this skill allows individuals to navigate complex social situations with ease, whether dealing with different ethnicities, religious communities, governmental bodies, or informal social circles. It enables them to grasp the unspoken rules, greetings, taboos, and bureaucratic requirements crucial for successful interactions, ensuring smooth dealings and favorable outcomes.
 
 Specializations:
@@ -742,6 +805,10 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 
 #### Perception Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid" alt="image"></a>
+</div>
+
 The Perception skill represents an individual's heightened awareness and keenness of their senses, enabling them to spot, hear, or detect the presence of concealed or obscured elements in their surroundings. This skill is crucial for eavesdropping on conversations, detecting hidden threats, and noticing subtle clues or danger in various environments. Whether it's spotting lurking enemies in the shadows or identifying concealed objects behind closed doors, Perception allows characters to remain vigilant and attentive to their environment.
 
 **Specializations for Perception Skill:**
@@ -762,6 +829,10 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 | Godly             | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells. |
 
 #### Formal Sciences Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid" alt="image"></a>
+</div>
 
 Your Formal Science skill is used when you are attempting to understand
 any formal system such as logic, mathematics, statistics, information
