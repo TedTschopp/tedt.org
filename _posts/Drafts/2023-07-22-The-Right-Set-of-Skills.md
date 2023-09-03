@@ -652,7 +652,9 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 
 #### Engineering Knowledge Areas
 
-
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid" alt="image"></a>
+</div>
 
 **Description of the Engineering skill:**
 Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
@@ -888,6 +890,10 @@ understand the world around them
 
 #### Style Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid" alt="image"></a>
+</div>
+
 Style is the ability to understand the mindset of the public or a specific audience and skillfully create cultural artifacts, such as dresses, paintings, sculptures, poems, or other artistic pursuits, to delight and captivate them. It involves a keen sense of aesthetics, creativity, and the capacity to evoke emotions through artistic expression.
 
 **Specializations for the Style skill:**
@@ -931,6 +937,10 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 #### Performance Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid" alt="image"></a>
+</div>
+
 **Description of the Performance skill:** Performance is the ability to captivate and delight an audience through various forms of entertainment, such as music, dance, acting, storytelling, or other artistic expressions. It involves a combination of talent, skill, charisma, and stage presence to evoke emotions, engage the audience, and leave a lasting impression.
 
 **Specializations for the Performance skill:**
@@ -971,6 +981,11 @@ Style is the ability to understand the mindset of the public or a specific audie
 | Godly             | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved. |
 
 #### Etiquette Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid" alt="image"></a>
+</div>
+
 
 **Description of the Etiquette skill:** Etiquette is the art of knowing and applying the proper social customs, protocols, and behaviors in various situations to interact gracefully with individuals from different backgrounds. It involves understanding the appropriate ways to communicate, behave, and show respect to others, ensuring smooth interactions and fostering positive relationships.
 
@@ -1020,12 +1035,17 @@ their own actions to create the outcomes they want.
 
 #### Deception Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid" alt="image"></a>
+</div>
+
+
 **Description of the Deception Skill:**
 The Deception skill measures the ability to convincingly hide the truth, whether through verbal means or actions. This skill encompasses a wide range of deceptive practices, from misleading others through ambiguity to outright lying. Characters proficient in Deception can fast-talk guards, con merchants, earn money through gambling, pass themselves off in disguises, offer false assurances to dull suspicions, or maintain a straight face while telling blatant lies.
 
 **Specializations for the Deception Skill:**
 
-1. Misdirection and Sleight of Hand
+1. Misdirection
 2. False Identity Creation
 3. Verbal Persuasion and Manipulation
 4. Impersonation and Mimicry
@@ -1063,6 +1083,10 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept.                                                                                                                                                                                                      | A Deception check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Examples include: lie to your spouse and make them believe it; bluster and blather your way out of responsibility; use innuendo to say one thing and mean another thing; engage in wordplay to appear smarter; blend into a crowd; bluff your way into a dinner party; understand secret languages without training in the skill; appear innocent in front of a professional interrogator; lie to your parents and make them believe it; lie to someone about an observable fact or something about themselves and have them believe it. |
 
 #### Persuasion Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid" alt="image"></a>
+</div>
 
 Persuasion is the ability to influence others using tact, social graces, and good nature. It involves fostering friendships, making cordial requests, and exhibiting proper etiquette. With persuasion, you can convince people to see things from your perspective, negotiate peace between warring tribes, inspire crowds, or gain favor with influential figures."
 
@@ -1105,7 +1129,11 @@ Specializations for the Persuasion skill:
 
 #### Intimidation Knowledge Areas
 
-"Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions."
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid" alt="image"></a>
+</div>
+
+Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions."
 
 Specializations for the Intimidation skill:
 
@@ -1150,6 +1178,10 @@ Specializations for the Intimidation skill:
 
 #### Bureaucracy Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid" alt="image"></a>
+</div>
+
 The skill Bureaucracy means you need to understand the bureaucratic structures of a group and how they can be used to create the outcomes you need. This can be understanding how local politicians work, how to incentivize law enforcement, or the rules of churches or other formalized social structures of a corporation or social group.
 
 Specializations for Bureaucracy:
@@ -1191,6 +1223,10 @@ Specializations for Bureaucracy:
 
 #### Animal Handling Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid" alt="image"></a>
+</div>
+
 The skill Animal Handling means when there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, you might need an Animal Handling check. You also make an Animal Handling check to control your mount when you attempt a risky maneuver.
 
 Specializations for Animal Handling:
@@ -1231,6 +1267,10 @@ Specializations for Animal Handling:
 | Godly             | Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.                                                                                                                                             |
 
 #### Leadership Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid" alt="image"></a>
+</div>
 
 The Leadership skill is the ability to inspire others to become the best versions of themselves, guiding and motivating them towards a common goal while fostering a positive and empowering environment.
 
@@ -1305,6 +1345,10 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 #### Ethereal Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid" alt="image"></a>
+</div>
+
 TODO: Fix this
 
 In the realm of Ethereal magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations.
@@ -1361,6 +1405,10 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 #### Gnosis Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid" alt="image"></a>
+</div>
+
 As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
 
 In this mystical tradition, you encounter the idea of the Demiurge, an imperfect creator deity, and learn to view the material world as a flawed creation, seeking escape to return to your divine origins. Along the way, you must navigate through challenges posed by archons, malevolent entities that attempt to hinder your spiritual progress. Yet armed with gnosis, you can overcome these obstacles and grow stronger in your connection to the divine source.
@@ -1410,6 +1458,10 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 | Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
 
 #### Chaos Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid" alt="image"></a>
+</div>
 
 In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
 
@@ -1491,6 +1543,10 @@ In the realm of Order, your faith lies in structured systems and cosmic balance.
 These spells draw upon your unwavering faith and connection to higher forces, granting you unique abilities that set you apart from other magical backgrounds. As a practitioner of Faith magic, you wield divine energies to bring healing, protection, guidance, and balance to the world around you.
 
 #### Theurgy Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid" alt="image"></a>
+</div>
 
 In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
 
@@ -1586,6 +1642,10 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 #### Order Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid" alt="image"></a>
+</div>
+
 In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
 
 With mastery over the forces of nature, you manipulate energies to bring about specific outcomes. Whether it's crafting protective wards, commanding elemental forces, or unraveling ancient texts, you approach each task with intellect and unwavering focus. Your spells are reliable and potent, a testament to your dedication to precision.
@@ -1662,6 +1722,10 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 #### Metaphysics Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid" alt="image"></a>
+</div>
+
 In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
 
 Psionics expands your horizons with a broader range of psychic phenomena. Astral projection allows you to leave your physical body, exploring different planes of existence. Remote viewing empowers you to perceive distant or hidden targets, unraveling secret information and potential future outcomes. Psychometry unlocks the ability to gain insights about objects or people by touching them, revealing their history and essence.
@@ -1712,6 +1776,10 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 #### Animism Knowledge Areas
 
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid" alt="image"></a>
+</div>
+
 In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
 
 As an Animist, you become attuned to the rhythms of nature, sensing the whispers of the wind, the murmurs of flowing water, and the pulse of the earth. You forge deep connections with the spirits, learning to call upon their powers to aid you in various endeavors. However, you understand that this magic comes with responsibility, requiring respect and reciprocity to preserve the sanctity of the spirits' domains and maintain balance with the energies of the world.
@@ -1760,6 +1828,10 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 | Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
 
 #### Shamanism Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6">
+    <a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid" alt="image"></a>
+</div>
 
 Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
 
