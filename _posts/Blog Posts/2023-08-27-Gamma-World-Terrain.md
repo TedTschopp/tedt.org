@@ -20,11 +20,38 @@ image-credits-artist:
 categories:
   - Gamma World
 ---
-<div class="container">
+
+
+{% assign target_sum = 12 %}
+{% assign current_sum = 0 %}
+{% assign numbers = "" %}
+{% assign numbers_count = 0 %}
+
+{% for i in (1..11) %}
+  {% if current_sum < target_sum %}
+    {% assign random_number = target_sum | minus: current_sum | divided_by: 2 %}
+    {% assign random_number = random_number | plus: 1 %}
+    {% assign current_sum = current_sum | plus: random_number %}
+    {% assign numbers = numbers | append: random_number | append: ", " %}
+    {% assign numbers_count = numbers_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign remaining = target_sum | minus: current_sum %}
+{% assign numbers = numbers | append: remaining %}
+
+Numbers that add up to 12: {{ numbers }}
+Total Numbers: {{ numbers_count | plus: 1 }}
+
+
+
+
+    <div class="container">
+        <div class="row">
+            
             <div class="col-md-4 mt-3 col-lg-3">
                 <img src="/img/Gamma-World/Backdrops/Artic-001.png" class="img-fluid" alt="image">
             </div>
-        
             <div class="col-md-4 mt-3 col-lg-3">
                 <img src="/img/Gamma-World/Backdrops/Artic-002.png" class="img-fluid" alt="image">
             </div>
@@ -469,4 +496,5 @@ categories:
                 <img src="/img/Gamma-World/Backdrops/Wilderness-004.png" class="img-fluid" alt="image">
             </div>
         
+        </div>
     </div>
