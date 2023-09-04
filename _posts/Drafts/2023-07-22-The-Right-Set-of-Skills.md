@@ -946,7 +946,7 @@ understand the world around them
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Style is knowing who you are, what you want to say, and not giving a damn. -- Orsen Welles </figcaption>
 </figure>
 </div>
 
@@ -996,7 +996,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">I'm just a musical prostitute, my dear. -- Freddie Mercury </figcaption>
 </figure>
 </div>
 
@@ -1044,7 +1044,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">I was raised right — I talk about people behind their backs. It's called manners.  -- Kathy Griffin</figcaption>
 </figure>
 </div>
 
@@ -1100,7 +1100,7 @@ their own actions to create the outcomes they want.
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Man is not what he thinks he is, he is what he hides. --André Malraux  </figcaption>
 </figure>
 </div>
 
@@ -1152,7 +1152,7 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Don't raise your voice, improve your argument. -- Desmond Tutu </figcaption>
 </figure>
 </div>
 
@@ -1200,7 +1200,7 @@ Specializations for the Persuasion skill:
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Bernardo was right, If one of you was lying in the street bleeding, I'd walk by and spit on you.  -- West Side Story </figcaption>
 </figure>
 </div>
 
@@ -1252,7 +1252,7 @@ Specializations for the Intimidation skill:
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Bureaucracies, I've suggested, are not themselves forms of stupidity so much as they are ways of organizing stupidity--of managing relationships that are already characterized by extremely unequal structures of imagination... --  David Graeber</figcaption>
 </figure>
 </div>
 
@@ -1300,7 +1300,7 @@ Specializations for Bureaucracy:
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">How you treat animals will tell me what kind of person you are. -— Karen Becker </figcaption>
 </figure>
 </div>
 
@@ -1348,7 +1348,7 @@ Specializations for Animal Handling:
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Our chief want is someone who will inspire us to be what we know we could be. –- Ralph Waldo Emerson</figcaption>
 </figure>
 </div>
 
@@ -1428,7 +1428,7 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
 </figure>
 </div>
 
@@ -1491,7 +1491,7 @@ Please note that the difficulty ratings provided in the table are relative and c
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
 </figure>
 </div>
 
@@ -1548,7 +1548,7 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
 </figure>
 </div>
 
@@ -1636,7 +1636,7 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
 </figure>
 </div>
 
@@ -1686,6 +1686,13 @@ These unique Theurgy spells showcase the character's special connection to the d
 | Godly             | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
 
 #### Adept Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+<a href="/img/skills/Adept.png"><img src="/img/skills/Adept.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
+</figure>
+</div>
 
 You awaken your inner essence, becoming an Adept, a master of magic and mysticism. Your body and mind harmoniously blend, allowing you to perform superhuman feats through the manipulation of vital energy within your body known as "Chi" or "Qi." This connection between mind and muscle enables you to push your physical limits and perceive the world differently, spotting subtle energies invisible to others.
 
@@ -1737,7 +1744,7 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
 </figure>
 </div>
 
@@ -1820,7 +1827,7 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
 </figure>
 </div>
 
@@ -1877,7 +1884,7 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
 </figure>
 </div>
 
@@ -1933,7 +1940,7 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
 </figure>
 </div>
 
