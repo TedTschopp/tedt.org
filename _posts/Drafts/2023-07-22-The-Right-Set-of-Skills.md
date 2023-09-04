@@ -343,6 +343,7 @@ There are nine separate ways a predicament can be resolved:
 <figure class="figure"> 
 <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Two Lawman advance on barricaded bandits</figcapture>
+</figure>
 </div>
 
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
@@ -370,7 +371,7 @@ Typical Tasks and their Difficulty Modifiers
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">World Class Athletes push their whole being to achieve their results, but they couldn't do what they do without a certain level of physicality</figcaption>
+<figcaption class="figure-caption">Saul hurled his spear at David. But David dodged out of the way, and leaving the spear stuck in the wall, he fled and escaped into the night. -- 1 Samuel 19:10</figcaption>
 </figure>
 </div>
 
@@ -399,7 +400,7 @@ Typical Tasks and their Difficulty Modifiers
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Two Assassin from rival factions have found each other in the alley's of the old city</figcaption>
+<figcaption class="figure-caption">A sword never kills anybody; it is a tool in the killer's hand. -- Seneca</figcaption>
 </figure>
 </div>
 
@@ -430,7 +431,7 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Sometimes you can hide in plain sight by just pulling up your hoodie an blending into the bleak background</figcaption>
+<figcaption class="figure-caption">The trick to not being discovered until it is too late is to become part of the expected surroundings. Stealth is more the art of blending in with the background than sneaking through dark shadows.  Raymond E. Feist</figcaption>
 </figure>
 </div>
 
@@ -457,7 +458,7 @@ Typical Specializations: Shadowing, and Forward Observer
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Some times its more about acrobatics then it is about dancing</figcaption>
+<figcaption class="figure-caption">Risking your own life in order to entertain others is the height of stupidity. -- Mokokoma Mokhonoana</figcaption>
 </figure>
 </div>
 
@@ -485,7 +486,7 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Pick a card, any card... </figcaption>
+<figcaption class="figure-caption">Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss </figcaption>
 </figure>
 </div>
 
@@ -517,7 +518,7 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Driving, Riding, or piloting any animal or vehicle takes a lot of strength and endurance.</figcaption>
+<figcaption class="figure-caption">On my tombstone they will carve, "IT NEVER GOT FAST ENOUGH FOR ME." -- Hunter S. Thompson</figcaption>
 </figure>
 </div>
 
@@ -544,7 +545,7 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Never underestimate the strength of the common man.</figcaption>
+<figcaption class="figure-caption">Not all that have fallen are vanquished. -- J.R.R. Tolkien</figcaption>
 </figure>
 </div>
 
@@ -571,7 +572,7 @@ Typical Specializations:
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">In order for a martial combat system to be valuable, practitioners must be able to close with their opponent AND be willing to take the blows of their sparring partner in practice.  Otherwise it remains a Performing Art</figcaption>
+<figcaption class="figure-caption">My arms are too short to box with God. -- Johnny Cash</figcaption>
 </figure>
 </div>
 
@@ -741,7 +742,7 @@ Engineering measures the ability to apply technological knowledge and expertise 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
 </figure>
 </div>
 
@@ -792,7 +793,7 @@ Insight measures the ability to discern the true intentions and emotions of othe
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
 </figure>
 </div>
 
@@ -828,7 +829,7 @@ conflicts in their understanding by pushing themselves mentally.
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about. --G.K Chesterton, Orthodoxy </figcaption>
 </figure>
 </div>
 
@@ -857,7 +858,7 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats </figcaption>
 </figure>
 </div>
 
@@ -885,7 +886,7 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption"> </figcaption>
+<figcaption class="figure-caption">Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead </figcaption>
 </figure>
 </div>
 
