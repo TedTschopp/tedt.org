@@ -339,8 +339,10 @@ There are nine separate ways a predicament can be resolved:
 
 #### Ranged Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+    <figure class="figure"> 
+    <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+    <figcaption class="figure-caption">Two Lawman advance on barricaded bandits</figcapture>
 </div>
 
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
@@ -365,8 +367,11 @@ Typical Tasks and their Difficulty Modifiers
 
 #### Athletics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+  <figure class="figure">
+      <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail" alt="image"></a>
+      <figcaption class="figure-caption">World Class Athletes push their whole being to achieve their results, but they couldn't do what they do without a certain level of physicality</figcaption>
+  </figure>
 </div>
 
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
@@ -391,8 +396,11 @@ Typical Tasks and their Difficulty Modifiers
 
 #### Melee Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Two Assassin from rival factions have found each other in the alley's of the old city</figcaption>
+</figure>
 </div>
 
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
@@ -419,8 +427,11 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 
 #### Stealth Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Sometimes you can hide in plain sight by just pulling up your hoodie an blending into the bleak background</figcaption>
+</figure>
 </div>
 
 Make a Stealth check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard. You must be out of sight of those you intend to deceive when this skill check is made.
@@ -443,8 +454,11 @@ Typical Specializations: Shadowing, and Forward Observer
 
 #### Acrobatics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Some times its more about acrobatics then it is about dancing</figcaption>
+</figure>
 </div>
 
 Your Acrobatics check covers your attempt to do something that will exert yourself physically related to your grace and dexterity. Examples of this might be trying to stay on your feet in when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a
@@ -468,8 +482,11 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 
 #### Sleight of Hand Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Pick a card, any card... </figcaption>
+</figure>
 </div>
 
 Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Sleight of Hand check. You might also need a Sleight of Hand check to determine whether you can lift a coin purse off another 
@@ -497,8 +514,11 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 
 #### Drive / Ride / Pilot Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Driving, Riding, or piloting any animal or vehicle takes a lot of strength and endurance.</figcaption>
+</figure>
 </div>
 
 Whenever you attempt to ride a horse for a long period of time or over rough terrain, pilot a boat down a raids or a busy river, or operate a method of transportation in any way that is taxing in any way you will need to make a Drive / Ride / Pilot roll to stay on the task and successfully arrive at your destination.
@@ -521,8 +541,11 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 
 #### Ruggedness Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Never underestimate the strength of the common man.</figcaption>
+</figure>
 </div>
 
 Make a Ruggedness check when you attempt to Force open a stuck, locked, or barred door, break free of bonds, push through a tunnel that is too small. You might also need a Ruggedness check to see if you can hang on to a wagon while being dragged behind it, tip over a statue, or keep a boulder from rolling.
@@ -545,8 +568,11 @@ Typical Specializations:
 
 #### Unarmed Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">In order for a martial combat system to be valuable, practitioners must be able to close with their opponent AND be willing to take the blows of their sparring partner in practice.  Otherwise it remains a Performing Art</figcaption>
+</figure>
 </div>
 
 
@@ -576,8 +602,11 @@ Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestli
 
 #### Social Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist. </figcaption>
+</figure>
 </div>
 
 Your Social Science check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.
@@ -600,8 +629,11 @@ Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, P
 
 #### Life Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή - Metaphysics by Aristotle</figcaption>
+</figure>
 </div>
 
 A life sciences check lets you try to stabilize a dying companion or diagnose an illness as well as allow you to recall other important information about living organisms.
@@ -624,8 +656,11 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 
 #### Physical Sciences / Survival Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky</figcaption>
+</figure>
 </div>
 
 Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
@@ -652,8 +687,11 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 
 #### Engineering Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
+</figure>
 </div>
 
 **Description of the Engineering skill:**
@@ -700,8 +738,11 @@ Engineering measures the ability to apply technological knowledge and expertise 
 
 #### Insight Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 **Description of the Insight skill:**
@@ -748,8 +789,11 @@ Insight measures the ability to discern the true intentions and emotions of othe
 
 #### Investigation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 When you look around for clues and make deductions based on those clues,
@@ -781,8 +825,11 @@ conflicts in their understanding by pushing themselves mentally.
 
 #### Traditions Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 The Traditions skill encompasses a deep understanding of cultural norms, social etiquettes, and bureaucratic systems within various groups and organizations. Possessing this skill allows individuals to navigate complex social situations with ease, whether dealing with different ethnicities, religious communities, governmental bodies, or informal social circles. It enables them to grasp the unspoken rules, greetings, taboos, and bureaucratic requirements crucial for successful interactions, ensuring smooth dealings and favorable outcomes.
@@ -807,8 +854,11 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 
 #### Perception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 The Perception skill represents an individual's heightened awareness and keenness of their senses, enabling them to spot, hear, or detect the presence of concealed or obscured elements in their surroundings. This skill is crucial for eavesdropping on conversations, detecting hidden threats, and noticing subtle clues or danger in various environments. Whether it's spotting lurking enemies in the shadows or identifying concealed objects behind closed doors, Perception allows characters to remain vigilant and attentive to their environment.
@@ -832,8 +882,11 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 
 #### Formal Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 Your Formal Science skill is used when you are attempting to understand
@@ -890,8 +943,11 @@ understand the world around them
 
 #### Style Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 Style is the ability to understand the mindset of the public or a specific audience and skillfully create cultural artifacts, such as dresses, paintings, sculptures, poems, or other artistic pursuits, to delight and captivate them. It involves a keen sense of aesthetics, creativity, and the capacity to evoke emotions through artistic expression.
@@ -937,8 +993,11 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 #### Performance Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 **Description of the Performance skill:** Performance is the ability to captivate and delight an audience through various forms of entertainment, such as music, dance, acting, storytelling, or other artistic expressions. It involves a combination of talent, skill, charisma, and stage presence to evoke emotions, engage the audience, and leave a lasting impression.
@@ -982,8 +1041,11 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 #### Etiquette Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 
@@ -1035,8 +1097,11 @@ their own actions to create the outcomes they want.
 
 #### Deception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 
@@ -1084,8 +1149,11 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 
 #### Persuasion Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 Persuasion is the ability to influence others using tact, social graces, and good nature. It involves fostering friendships, making cordial requests, and exhibiting proper etiquette. With persuasion, you can convince people to see things from your perspective, negotiate peace between warring tribes, inspire crowds, or gain favor with influential figures."
@@ -1129,8 +1197,11 @@ Specializations for the Persuasion skill:
 
 #### Intimidation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions."
@@ -1178,8 +1249,11 @@ Specializations for the Intimidation skill:
 
 #### Bureaucracy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 The skill Bureaucracy means you need to understand the bureaucratic structures of a group and how they can be used to create the outcomes you need. This can be understanding how local politicians work, how to incentivize law enforcement, or the rules of churches or other formalized social structures of a corporation or social group.
@@ -1223,8 +1297,11 @@ Specializations for Bureaucracy:
 
 #### Animal Handling Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 The skill Animal Handling means when there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, you might need an Animal Handling check. You also make an Animal Handling check to control your mount when you attempt a risky maneuver.
@@ -1268,8 +1345,11 @@ Specializations for Animal Handling:
 
 #### Leadership Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 The Leadership skill is the ability to inspire others to become the best versions of themselves, guiding and motivating them towards a common goal while fostering a positive and empowering environment.
@@ -1345,8 +1425,11 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 #### Ethereal Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 TODO: Fix this
@@ -1405,8 +1488,11 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 #### Gnosis Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
@@ -1459,8 +1545,11 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 #### Chaos Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
@@ -1544,8 +1633,11 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 #### Theurgy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
@@ -1642,8 +1734,11 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 #### Order Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
@@ -1722,8 +1817,11 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 #### Metaphysics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
@@ -1776,8 +1874,11 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 #### Animism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
@@ -1829,8 +1930,11 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 #### Shamanism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6">
-    <a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid" alt="image"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-right">
+<figure class="figure">
+    <a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption"> </figcaption>
+</figure>
 </div>
 
 Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
