@@ -339,12 +339,12 @@ There are nine separate ways a predicament can be resolved:
 
 #### Ranged Combat Knowledge Areas
 
+
 <div class="col-md-4 mt-3 col-lg-6 float-right">
-<figure class="figure"> 
+<figure class="figure">
 <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Two Lawman advance on barricaded bandits</figcapture>
-</figure>
-</div>
+<figcaption class="figure-caption">Saul hurled his spear at David. But David dodged out of the way, and leaving the spear stuck in the wall, he fled and escaped into the night. -- 1 Samuel 19:10</figcaption></figure></div>
+
 
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
 
@@ -368,12 +368,16 @@ Typical Tasks and their Difficulty Modifiers
 
 #### Athletics Knowledge Areas
 
+
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
 <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail" alt="image"></a>
-<figcaption class="figure-caption">Saul hurled his spear at David. But David dodged out of the way, and leaving the spear stuck in the wall, he fled and escaped into the night. -- 1 Samuel 19:10</figcaption>
+<figcaption class="figure-caption">Your body is the church where Nature asks to be reverenced. -- Marquis de Sade</figcaption>
 </figure>
 </div>
+
+
+
 
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
 
