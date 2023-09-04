@@ -340,9 +340,9 @@ There are nine separate ways a predicament can be resolved:
 #### Ranged Combat Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
-    <figure class="figure"> 
-    <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
-    <figcaption class="figure-caption">Two Lawman advance on barricaded bandits</figcapture>
+<figure class="figure"> 
+<a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">Two Lawman advance on barricaded bandits</figcapture>
 </div>
 
 Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
@@ -368,10 +368,10 @@ Typical Tasks and their Difficulty Modifiers
 #### Athletics Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
-  <figure class="figure">
-      <a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail" alt="image"></a>
-      <figcaption class="figure-caption">World Class Athletes push their whole being to achieve their results, but they couldn't do what they do without a certain level of physicality</figcaption>
-  </figure>
+<figure class="figure">
+<a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail" alt="image"></a>
+<figcaption class="figure-caption">World Class Athletes push their whole being to achieve their results, but they couldn't do what they do without a certain level of physicality</figcaption>
+</figure>
 </div>
 
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
@@ -398,7 +398,7 @@ Typical Tasks and their Difficulty Modifiers
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Two Assassin from rival factions have found each other in the alley's of the old city</figcaption>
 </figure>
 </div>
@@ -429,7 +429,7 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Sometimes you can hide in plain sight by just pulling up your hoodie an blending into the bleak background</figcaption>
 </figure>
 </div>
@@ -456,7 +456,7 @@ Typical Specializations: Shadowing, and Forward Observer
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Some times its more about acrobatics then it is about dancing</figcaption>
 </figure>
 </div>
@@ -484,7 +484,7 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Pick a card, any card... </figcaption>
 </figure>
 </div>
@@ -516,7 +516,7 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Driving, Riding, or piloting any animal or vehicle takes a lot of strength and endurance.</figcaption>
 </figure>
 </div>
@@ -543,7 +543,7 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Never underestimate the strength of the common man.</figcaption>
 </figure>
 </div>
@@ -570,7 +570,7 @@ Typical Specializations:
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">In order for a martial combat system to be valuable, practitioners must be able to close with their opponent AND be willing to take the blows of their sparring partner in practice.  Otherwise it remains a Performing Art</figcaption>
 </figure>
 </div>
@@ -604,7 +604,7 @@ Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestli
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist. </figcaption>
 </figure>
 </div>
@@ -631,7 +631,7 @@ Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, P
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή - Metaphysics by Aristotle</figcaption>
 </figure>
 </div>
@@ -658,7 +658,7 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky</figcaption>
 </figure>
 </div>
@@ -689,7 +689,7 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
 </figure>
 </div>
@@ -740,7 +740,7 @@ Engineering measures the ability to apply technological knowledge and expertise 
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -791,7 +791,7 @@ Insight measures the ability to discern the true intentions and emotions of othe
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -827,7 +827,7 @@ conflicts in their understanding by pushing themselves mentally.
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -856,7 +856,7 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -884,7 +884,7 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -945,7 +945,7 @@ understand the world around them
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -995,7 +995,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1043,7 +1043,7 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1099,7 +1099,7 @@ their own actions to create the outcomes they want.
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1151,7 +1151,7 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1199,7 +1199,7 @@ Specializations for the Persuasion skill:
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1251,7 +1251,7 @@ Specializations for the Intimidation skill:
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1299,7 +1299,7 @@ Specializations for Bureaucracy:
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1347,7 +1347,7 @@ Specializations for Animal Handling:
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1427,7 +1427,7 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1490,7 +1490,7 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1547,7 +1547,7 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1635,7 +1635,7 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1736,7 +1736,7 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1819,7 +1819,7 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1876,7 +1876,7 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
@@ -1932,7 +1932,7 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 <div class="col-md-4 mt-3 col-lg-6 float-right">
 <figure class="figure">
-    <a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail" alt="image"></a>
+<a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail" alt="image"></a>
 <figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
