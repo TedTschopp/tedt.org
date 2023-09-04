@@ -348,25 +348,48 @@ There are nine separate ways a predicament can be resolved:
 </div>
 
 
-Your Ranged Combat ability check measures your character's ability to attack and survive in a ranged combat. This skill also allows you to maintain the general quality of a ranged weapon and to perform general maintenance to ensure their continued use. It will, however, not allow you to build, repair, or Jury rig a solution.
+**Description of Ranged Combat:**
+Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossbows, and firearms, to accurately hit targets from a distance. This skill encompasses a variety of techniques, including aiming, shooting mechanics, and target assessment, as well as specialized knowledge of the different types of ranged weapons available.
 
-Typical Specializations: Artillery, Beam Weapons, Blowpipe, Bolas, Bow, Crossbow, Dropping, Fast-Draw, Guns, Innate Attack, Lasso, Liquid Projector, Net, Sling, Spear Thrower, Throwing Art, Thrown Weapon, and Gunner
+**Specializations for Ranged Combat:**
 
-Typical Tasks and their Difficulty Modifiers
+1. **Archery**: Skillful long-range bow shooting.
+2. **Crossbowmanship**: Precision shooting with crossbows.
+3. **Handgun Shooting**: Short-range accuracy with handguns.
+4. **Rifle Shooting**: Long-range, precise rifle firing.
+5. **Shotgun Shooting**: Close-range, spread-fire proficiency.
+6. **Sniper Shooting**: Extreme long-range, stealthy shooting.
+7. **Skeet Shooting**: Hitting fast-moving clay targets.
+8. **Tactical Shooting**: Shooting techniques in combat scenarios.
+9. **Quick Draw**: Rapid weapon drawing and firing.
+10. **Throwing Knives**: Accurate knife throwing at targets.
+11. **Javelin Throwing**: Throwing javelins for distance and accuracy.
+12. **Dart Shooting**: Accurate short-range dart throwing.
+13. **Blowdart Shooting**: Using a blowpipe to shoot darts.
+14. **Sling Shooting**: Using a sling to launch projectiles.
+15. **Mounted Archery**: Bow shooting while riding.
+16. **Moving Target Shooting**: Hitting targets in motion.
+17. **Long-Distance Shooting**: Extreme-range shooting accuracy.
+18. **Close Quarters Shooting**: Proficiency in tight spaces.
+19. **Dual-Wielding Handguns**: Managing two handguns simultaneously.
+20. **Energy Weaponry**: Mastery over futuristic energy weapons.
 
-| Difficulty        | Ranged Combat                                                                                               |
-|-------------------|-------------------------------------------------------------------------------------------------------------|
-| Trivial           | Fire a shot at a person who is helpless                                                                     |
-| Simple            | Fire a shot at someone who is climbing a wall or tree                                                       |
-| Easy              | Fire a shot at someone who is moving away                                                                   |
-| Routine           | Fire a shot at someone who is pinned against a wall or corner                                               |
-| Average           | Fire a shot at someone who is standing down range                                                           |
-| Difficult         | Fire a warning shot at someone's feet                                                                       |
-| Very Difficult    | Fire a shot at someone on riding on an animal or in a vehicle                                               |
-| Formidable        | Fire into a group of people where you have the chance for friendly fire                                     |
-| Heroic            | Fire at someone in the dark                                                                                 |
-| Nearly Impossible | Fire at someone who is behind full cover through a crack in that cover                                      |
-| Godly             | Fire at someone who is behind full cover through a crack, past a group of your allies all while it is dark. |
+**Table for Ranged Combat skill and examples for each level of difficulty:**
+
+| Difficulty         | Examples                                                                                                                                                                                                                       |
+|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial            | Shooting a target at point-blank range                                                                                                                                                                                         |
+| Simple             | Hitting a stationary target from 10 yards away                                                                                                                                                                                 |
+| Easy               | Hitting a moving target at 10 yards                                                                                                                                                                                            |
+| Routine            | Hitting a bullseye on a stationary target from 20 yards away                                                                                                                                                                   |
+| Average            | Hitting multiple moving targets from 20 yards                                                                                                                                                                                  |
+| Difficult          | Hitting a bullseye on a moving target from 50 yards away                                                                                                                                                                       |
+| Very Difficult     | Hitting a small, fast-moving target from 100 yards away                                                                                                                                                                        |
+| Formidable         | Hitting a target obscured by environmental conditions (e.g., wind, rain) from 150 yards away                                                                                                                                    |
+| Heroic             | Sniping a target accurately from a distance of over 1 mile away                                                                                                                                                                |
+| Nearly Impossible  | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                                |
+| Godly              | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
+
 
 #### Athletics Knowledge Areas
 
@@ -382,7 +405,29 @@ Your Athletics check covers difficult situations you want to do something that r
 
 Typical Specializations: Bicycling, Body Sense, Breath Control, Climbing, Flying, Free Fall, Hiking, Jumping, Lifting, Mount, Parachuting, Running, Scuba, Sports, Swimming, Throwing, Climbing, Parachuting, Scuba, Climbing, Scuba, Skating, Skiing, Parachuting, Scuba, and Zero G
 
-Typical Tasks and their Difficulty Modifiers
+Specializations for Athletics:
+1. **Sprinting**: Short, high-speed runs.
+2. **Long-distance running**: Extended runs focusing on stamina.
+3. **High jump**: Vertical leaps over a bar.
+4. **Bicycling**: Riding and maneuvering a bike.
+5. **Breath Control**: Mastery over breathing for endurance.
+6. **Climbing**: Ascending vertical or near-vertical objects.
+7. **Swimming**: Moving through water via limbs.
+8. **Weightlifting**: Lifting heavy weights for strength.
+9. **Parkour**: Urban obstacle course running.
+10. **Gymnastics**: Controlled bodily movements and flips.
+11. **Rowing**: Propelling a boat using oars.
+12. **Scuba Diving**: Underwater exploration with gear.
+13. **Decathlon**: Ten track and field events.
+14. **Diving**: Controlled descent into water.
+15. **Acrobatics**: Skillful, agile bodily movements.
+16. **Long Jumping**: Horizontal leaps for distance.
+17. **Hiking**: Long, strenuous walks outdoors.
+18. **Zero-G Movement**: Moving in weightless environments.
+19. **CrossFit**: Varied, high-intensity workouts.
+20. **Mountaineering**: Climbing and navigating mountains.
+
+**Table for Athletics skill and examples for each level of difficulty:**
 
 | Difficulty        | Athletics                                                                                                                                                                                                                                                                                 |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -409,7 +454,26 @@ Typical Tasks and their Difficulty Modifiers
 
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
 
-Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sword, Force Whip, Garrote, Jitte/Sai, Knife, Kusari, Lance, Main-Gauche, Melee Weapon, Monowire Whip, Parry Missile Weapons, Polearm, Rapier, Saber, Shield, Shortsword, Smallsword, Spear, Staff, Tonfa, Two-Handed Axe/Mace, Two-Handed Flail, Two-Handed Sword, and Whip
+1. **Dagger**: A small, easily concealed weapon.
+2. **Shortsword**: A one-handed, lightweight slashing weapon.
+3. **Longsword**: A versatile one- or two-handed weapon.
+4. **Greatsword**: A massive two-handed sword for powerful blows.
+5. **Mace**: A club-like weapon, often with a spiked or flanged head.
+6. **Flail**: A chain weapon with a striking head, difficult to block or parry.
+7. **Warhammer**: A one-handed hammer designed for combat, often with a spike on one side.
+8. **Battleaxe**: A hefty one-handed axe.
+9. **Greataxe**: A massive two-handed axe.
+10. **Spear**: A long-shafted weapon with a pointed tip, good for thrusting and throwing.
+11. **Halberd**: A polearm with an axe blade, often with a spike or hook.
+12. **Glaive**: A polearm with a large, single-edged blade at the end.
+13. **Quarterstaff**: A simple but versatile long wooden stick.
+14. **Whip**: A flexible, long-tailed weapon, good for disarming.
+15. **Rapier**: A slender, sharply pointed sword, often used for fencing.
+16. **Scimitar**: A curved sword optimized for slashing.
+17. **Morningstar**: A spiked ball attached to a handle, similar to a mace but with longer reach.
+18. **Kukri**: A forward-curved knife, often associated with the Gurkhas.
+19. **Katanas**: A curved, slender, single-edged blade with a circular or squared guard.
+20. **Energy Sword**: A futuristic weapon with a blade made of energy or plasma.
 
 | Difficulty        | Melee Combat                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -438,9 +502,33 @@ Typical Specializations: Axe/Mace, Broadsword, Cloak, Fast Draw, Flail, Force Sw
 </figure>
 </div>
 
-Make a Stealth check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard. You must be out of sight of those you intend to deceive when this skill check is made.
+**Description of Stealth:**
+Stealth is the art and practice of moving quietly, remaining unseen, and evading detection. It is often used for a range of activities, from reconnaissance to theft to survival. It incorporates elements of body control, understanding of one's environment, and concealment techniques.
 
-Typical Specializations: Shadowing, and Forward Observer
+**Specializations for Stealth:**
+
+1. **Camouflage**: Blending into surroundings to evade visual detection.
+2. **Shadowing**: Discreetly following a subject without being noticed.
+3. **Silent Movement**: Moving noiselessly to avoid auditory detection.
+4. **Urban Stealth**: Concealment and evasion tactics in city environments.
+5. **Wilderness Stealth**: Navigating natural terrains without detection.
+6. **Nighttime Stealth**: Specialized techniques for evading detection in darkness.
+7. **Disguise**: Changing appearance to avoid recognition.
+8. **Distraction Techniques**: Using diversions to divert attention.
+9. **Lockpicking**: Opening locks without a key.
+10. **Evasion**: Actively avoiding capture or detection.
+11. **Hide in Plain Sight**: Evading notice within crowded or obvious places.
+12. **Electronic Countermeasures**: Utilizing technology to impede detection systems.
+13. **Tactical Stealth**: Stealth used in military or strategic scenarios.
+14. **Reconnaissance**: Gathering information without being detected.
+15. **Social Engineering Stealth**: Manipulating people to achieve stealth.
+16. **Parkour for Stealth**: Using agile movements to navigate while undetected.
+17. **Aerial Stealth (drones, hang gliders, etc.)**: Stealthy aerial maneuvers.
+18. **Underwater Stealth**: Avoiding detection in aquatic environments.
+19. **Snow and Ice Stealth**: Specialized stealth in snowy and icy terrains.
+20. **Vehicle Stealth**: Using vehicles to evade detection.
+
+**Table with Stealth skill and examples for each level of difficulty:**
 
 | Difficulty        | Stealth                                                                                            |
 |-------------------|----------------------------------------------------------------------------------------------------|
@@ -465,10 +553,33 @@ Typical Specializations: Shadowing, and Forward Observer
 </figure>
 </div>
 
-Your Acrobatics check covers your attempt to do something that will exert yourself physically related to your grace and dexterity. Examples of this might be trying to stay on your feet in when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a
-rocking ship's deck. You might also need a Acrobatics check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.
+**Description of Acrobatics:**
+Acrobatics is the skill of performing complex bodily movements that require agility and coordination. This skill encompasses everything from basic somersaults to intricate flips and twists.
 
-Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
+**Specializations for Acrobatics:**
+
+1. **Tumbling**: Maneuvers that involve rolls, flips, and quick ground movements.
+2. **Aerial Silks**: Acrobatics using fabric hung from a ceiling.
+3. **Parkour**: Urban acrobatics involving climbing and leaping off structures.
+4. **Pole Acrobatics**: Performing spins, climbs, and holds on a vertical pole.
+5. **Hand Balancing**: The art of balancing solely on one’s hands.
+6. **Contortion**: Flexibility-intensive feats like twisting and bending.
+7. **Juggling**: Skillful manipulation of objects in the air.
+8. **Trapeze**: Swinging and aerial acts performed on a trapeze bar.
+9. **Hoop Acrobatics**: Using a hoop for spinning and aerial maneuvers.
+10. **Capoeira**: A Brazilian martial art that incorporates acrobatics.
+11. **Slacklining**: Balancing on a narrow, suspended piece of webbing.
+12. **Vaulting**: Acrobatics performed on horseback.
+13. **Stunts**: Acrobatics designed for entertainment or film.
+14. **Balance Beam**: Acrobatics on a narrow, elevated beam.
+15. **Tricking**: A blend of flips, kicks, and twists usually done on flat ground.
+16. **Cyr Wheel**: Acrobatics using a large, rolling ring.
+17. **Fire Dancing**: Incorporating fire into acrobatic performance.
+18. **Skydiving Acrobatics**: Maneuvers performed while free-falling.
+19. **Synchronized Acrobatics**: Choreographed team-based acrobatics.
+20. **Chinese Pole**: Climbing, sliding, and holding poses on a vertical pole.
+
+**Table with Acrobatics skill and examples for each level of difficulty:**
 
 | Difficulty        | Acrobatics                                                                                                                                              |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -493,10 +604,34 @@ Acrobatics, Aerobatics, Aquabatics, Escape, Gymnastics, Contortionist
 </figure>
 </div>
 
-Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Sleight of Hand check. You might also need a Sleight of Hand check to determine whether you can lift a coin purse off another 
-person or slip something out of another person's pocket. 
+**Description of Sleight of Hand:**
+Sleight of Hand is the art of manual dexterity, trickery, and swift, agile hand movements. It includes a range of activities from pickpocketing and lock picking to magic tricks and deception.
 
-Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandling, Pickpocket, Holdout
+**Specializations for Sleight of Hand:**
+
+1. **Filch**: The art of subtly stealing objects without detection.
+2. **Holdout**: Concealing items on one's person effectively.
+3. **Lockpicking**: Skillful manipulation of lock mechanisms.
+4. **Panhandling**: Begging for money or goods deceptively.
+5. **Pickpocket**: Removing items from a person's pockets without notice.
+6. **Coin Tricks**: Mastering tricks involving coins.
+7. **Card Handling**: Skill in shuffling, dealing, and manipulating cards.
+8. **Prestidigitation**: Performing small-scale magic tricks.
+9. **Cup and Balls**: Classic trick involving three cups and a ball.
+10. **Misdirection**: Creating distractions to divert attention.
+11. **Object Vanishing**: Making small items disappear.
+12. **Stage Tricks**: Techniques for theatrical performances.
+13. **Dice Manipulation**: Controlling the outcome of dice rolls.
+14. **Forgery**: Creating false documents or signatures.
+15. **Juggling**: The art of keeping multiple objects in the air.
+16. **Escape Artistry**: Escaping from restraints or locked rooms.
+17. **Close-up Magic**: Performing magic tricks in close proximity.
+18. **Staging**: Setting up an environment for tricks or deception.
+19. **Watch Stealing**: Removing a watch from a person's wrist.
+20. **Flourishing**: Performing complex decorative maneuvers with cards, coins, etc.
+
+**Table with Sleight of Hand skill and examples for each level of difficulty:**
+
 
 | Difficulty        | Sleight of Hand                                                                                                                                         |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -525,9 +660,31 @@ Typical Specializations: Sleight of Hand, Filch, Holdout, Lockpicking, Panhandli
 </figure>
 </div>
 
-Whenever you attempt to ride a horse for a long period of time or over rough terrain, pilot a boat down a raids or a busy river, or operate a method of transportation in any way that is taxing in any way you will need to make a Drive / Ride / Pilot roll to stay on the task and successfully arrive at your destination.
+**Description of Drive/Ride/Pilot:**
+The skill of Drive/Ride/Pilot encompasses the ability to control and maneuver various types of vehicles, ranging from simple mounts to complex machinery like spaceships. This skill includes not just the physical handling but also the situational awareness required to operate these vehicles safely and efficiently.
 
-Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit, Bicycling, Boating, Crewman, Driving, Freight Handling, Piloting, Seamanship, Shiphandling, Spacer, Submarine, Submariner, Teamster
+**Specializations for Drive/Ride/Pilot:**
+
+1. **Mount**: Specializes in riding animals like horses, camels, or other beasts.
+2. **Riding**: Focused on riding personal vehicles like motorcycles or scooters.
+3. **Freight Handling**: Specializes in operating vehicles designed for transporting goods.
+4. **Battlesuit**: Proficient in controlling powered armor or exoskeletons in combat.
+5. **Bicycling**: Specializes in riding and handling bicycles in various terrains.
+6. **Boating**: Skilled in operating small boats, canoes, and kayaks.
+7. **Crewman**: Specialized in assisting in the operation of larger vehicles or ships.
+8. **Driving**: General skill in operating cars, trucks, or buses.
+9. **Piloting**: Specializes in flying airplanes, helicopters, or drones.
+10. **Seamanship**: Skilled in the operation and navigation of larger sea vessels.
+11. **Shiphandling**: Specialized in commanding larger, complex sea vessels.
+12. **Spacer**: Specializes in the piloting and management of spaceships.
+13. **Submariner**: Skilled in the operation of underwater vehicles like submarines.
+14. **Teamster**: Specialized in managing teams of animals for transportation.
+15. **Trains**: Specializes in operating and managing trains.
+16. **Hovercraft**: Skilled in piloting hovercraft on water or land.
+17. **Urban Driving**: Specializes in navigating through complex city terrains.
+18. **Off-Road Driving**: Proficient in operating vehicles on uneven terrains.
+19. **Flight Stunts**: Specializes in performing stunts and maneuvers while flying.
+20. **Emergency Response**: Specializes in operating emergency vehicles effectively.
 
 | Difficulty        | Drive / Ride / Pilot                                                                                                                                                                                                                |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -552,9 +709,33 @@ Typical Specializations: Mount, Riding, Freight Handling, Airshipman, Battlesuit
 </figure>
 </div>
 
-Make a Ruggedness check when you attempt to Force open a stuck, locked, or barred door, break free of bonds, push through a tunnel that is too small. You might also need a Ruggedness check to see if you can hang on to a wagon while being dragged behind it, tip over a statue, or keep a boulder from rolling.
+**Description of Ruggedness:**
+Ruggedness is the skill associated with physical endurance, resilience, and strength. It comes into play when someone needs to push their body to the limit, whether that's breaking free from constraints, resisting illness, or participating in feats of physical prowess like drinking contests or forcing open locked doors.
 
-Typical Specializations:
+**Specializations for Ruggedness:**
+
+1. **Strength Training**: Focused on muscle building and raw power.
+2. **Endurance**: Specializing in long-lasting stamina.
+3. **Disease Resistance**: Trained to resist diseases and infections.
+4. **Lock Breaking**: Skilled in breaking through locks or barricades.
+5. **Alcohol Tolerance**: Developed resistance to alcohol.
+6. **Pain Tolerance**: Skilled in enduring physical discomfort.
+7. **Environmental Resistance**: Adapted to harsh environments.
+8. **Mental Toughness**: Resilience against mental fatigue.
+9. **Survival Instincts**: Training in survival scenarios.
+10. **Breath Control**: Expertise in controlled breathing techniques.
+11. **Flexibility**: Able to maneuver in tight spaces.
+12. **Cold Resistance**: Adapted to cold temperatures.
+13. **Heat Resistance**: Adapted to hot environments.
+14. **Quick Recovery**: Quick to recover from physical strain.
+15. **Injury Resistance**: Reduced susceptibility to injuries.
+16. **High-Altitude Adaptation**: Adapted to low-oxygen environments.
+17. **Poison Resistance**: Able to resist poisonous substances.
+18. **Heavy Lifting**: Skilled in lifting heavy objects.
+19. **Fear Resistance**: Less affected by fear-inducing situations.
+20. **Elemental Resistance**: Adapted to resist elemental factors like fire or electricity.
+
+**Table with Ruggedness skill and examples for each level of difficulty:**
 
 | Difficulty        | Ruggedness                                                                                                                                                                                                                                                    |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -580,9 +761,33 @@ Typical Specializations:
 </div>
 
 
-Your Unarmed Combat ability check measures your character's ability to attack and survive in an unarmed combat.
+**Description of Unarmed Combat:**
+Unarmed combat refers to fighting techniques that do not involve the use of weapons. It encompasses a variety of styles, including martial arts, boxing, and wrestling, focusing on strikes, grapples, and defense.
 
-Typical Specializations: Boxing, Brawling, Judo, Karate, Sumo Wrestling, Wrestling
+**Specializations for Unarmed Combat:**
+
+1. **Boxing**: Focuses on punches, footwork, and dodging.
+2. **Kickboxing**: Incorporates kicks and punches for a balanced approach.
+3. **Wrestling**: Grappling techniques aimed at pinning or submitting the opponent.
+4. **Judo**: Specializes in throws and joint locks.
+5. **Jiu-Jitsu**: Emphasizes ground combat and submission holds.
+6. **Muay Thai**: Utilizes elbows, knees, and clinch fighting.
+7. **Capoeira**: Incorporates dance and acrobatics into combat.
+8. **Krav Maga**: Aimed at practical self-defense, including disarming techniques.
+9. **Tai Chi**: Focuses on balance, slow movements, and counter-attacks.
+10. **Aikido**: Utilizes the opponent's force against them through joint locks.
+11. **Sumo**: Specializes in pushing the opponent out of a designated area.
+12. **Sambo**: A Russian martial art that combines strikes and grappling.
+13. **Systema**: Focuses on natural movements and efficiency.
+14. **Taekwondo**: Emphasizes high kicks and jumping/spinning kicks.
+15. **Karate**: Focuses on striking techniques like punching, kicking, and knee strikes.
+16. **Jeet Kune Do**: Bruce Lee's philosophy that advocates for no fixed form.
+17. **Silat**: A martial art from Southeast Asia, focusing on strikes and weapon use.
+18. **Kung Fu**: A broad term for Chinese martial arts, focusing on various techniques.
+19. **Savate**: French boxing that includes high kicks and open-hand strikes.
+20. **MMA (Mixed Martial Arts)**: A combination of various martial arts for full-contact fights.
+
+**Table with Unarmed Combat skill and examples for each level of difficulty:**
 
 | Difficulty        | Unarmed                                                                                                                                                                                                                                                       |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
