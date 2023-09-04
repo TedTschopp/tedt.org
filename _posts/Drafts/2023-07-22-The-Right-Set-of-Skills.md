@@ -340,9 +340,9 @@ There are nine separate ways a predicament can be resolved:
 #### Ranged Combat Knowledge Areas
 
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
-<figure class="figure float-right">
-<a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure float-end">
+<a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">No wise man ever took a handgun to a gun fight.  Fast is fine, but accuracy is final.  -- Wyatt Earp</figcaption>
 </figure>
 </div>
@@ -394,9 +394,9 @@ Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossb
 #### Athletics Knowledge Areas
 
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Athletics.png"><img src="/img/skills/Athletics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Your body is the church where Nature asks to be reverenced. -- Marquis de Sade</figcaption>
 </figure>
 </div>
@@ -445,9 +445,9 @@ Specializations for Athletics:
 
 #### Melee Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Melee Combat.png"><img src="/img/skills/Melee Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">A sword never kills anybody; it is a tool in the killer's hand. -- Seneca</figcaption>
 </figure>
 </div>
@@ -495,9 +495,9 @@ Melee combat measures your character's ability to attack and survive in armed me
 
 #### Stealth Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Stealth.png"><img src="/img/skills/Stealth.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The trick to not being discovered until it is too late is to become part of the expected surroundings. Stealth is more the art of blending in with the background than sneaking through dark shadows.  Raymond E. Feist</figcaption>
 </figure>
 </div>
@@ -546,9 +546,9 @@ Stealth is the art and practice of moving quietly, remaining unseen, and evading
 
 #### Acrobatics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Acrobatics.png"><img src="/img/skills/Acrobatics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Risking your own life in order to entertain others is the height of stupidity. -- Mokokoma Mokhonoana</figcaption>
 </figure>
 </div>
@@ -597,9 +597,9 @@ Acrobatics is the skill of performing complex bodily movements that require agil
 
 #### Sleight of Hand Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Slight of Hand.png"><img src="/img/skills/Slight of Hand.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss </figcaption>
 </figure>
 </div>
@@ -653,9 +653,9 @@ Sleight of Hand is the art of manual dexterity, trickery, and swift, agile hand 
 
 #### Drive / Ride / Pilot Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Drive-Ride-Pilot.png"><img src="/img/skills/Drive-Ride-Pilot.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">On my tombstone they will carve, "IT NEVER GOT FAST ENOUGH FOR ME." -- Hunter S. Thompson</figcaption>
 </figure>
 </div>
@@ -702,9 +702,9 @@ The skill of Drive/Ride/Pilot encompasses the ability to control and maneuver va
 
 #### Ruggedness Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Ruggedness.png"><img src="/img/skills/Ruggedness.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Not all that have fallen are vanquished. -- J.R.R. Tolkien</figcaption>
 </figure>
 </div>
@@ -753,9 +753,9 @@ Ruggedness is the skill associated with physical endurance, resilience, and stre
 
 #### Unarmed Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Unarmed Combat.png"><img src="/img/skills/Unarmed Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">My arms are too short to box with God. -- Johnny Cash</figcaption>
 </figure>
 </div>
@@ -811,16 +811,45 @@ Unarmed combat refers to fighting techniques that do not involve the use of weap
 
 #### Social Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Social Sciences.png"><img src="/img/skills/Social Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist. </figcaption>
 </figure>
 </div>
 
-Your Social Science check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.
+**Description of Social Sciences:**
 
-Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, Psychology, Military Science, Intelligence Analysis, Interrogation, Occultism, Criminology, Law, Literature, Public Speaking, Teaching, Writing, Politics, Teaching, Anthropology, Archaeology, Cartography, Criminology, Economics, Political Science, Geography, History, Law, Linguistics, Literature, Paleontology, Philosophy, Psychology, Sociology, Theology, Smuggling, Writing
+Social sciences encompass the study of human society, behavior, and social interactions, often through systematic methods of empirical investigation and analysis.
+
+**Examples of Use in Game:**
+Social Science skills can be useful in TTRPGs when the party needs to understand a society quickly to navigate its complexities, when forming alliances, or when trying to alter the course of events within a community. It could also help in interpreting historical texts, solving social dilemmas, or predicting the behavior of NPCs.
+
+
+**Specializations for Social Sciences:**
+
+1. **Sociology**: The study of social behavior and society structures.
+2. **Psychology**: Study of human mind and behavior.
+3. **Anthropology**: Study of human societies, past and present.
+4. **Political Science**: Study of governmental systems and political behavior.
+5. **Economics**: Study of resource distribution and consumption.
+6. **Geography**: Study of places and human-environment interaction.
+7. **Criminology**: Study of crime, criminal behavior, and law enforcement.
+8. **Social Work**: Applied science for improving the human condition.
+9. **Communication Studies**: Study of human communication methods.
+10. **Linguistics**: Study of language and its structure.
+11. **History**: Study of past human events.
+12. **Gender Studies**: Exploration of gender roles and equality.
+13. **Ethnic Studies**: Study of racial and ethnic groups.
+14. **Philosophy**: Examination of fundamental questions about existence.
+15. **Religious Studies**: Study of religious beliefs, practices, and institutions.
+16. **Human Resource Management**: Study of effective personnel management.
+17. **Education Studies**: Study of teaching methods and educational systems.
+18. **Cultural Studies**: Analysis of cultural artifacts and practices.
+19. **Environmental Studies**: Study of human-environment interactions.
+20. **Public Policy**: Study of governmental decisions and their impact.
+
+**Table with Social Sciences skill and examples for each level of difficulty:**
 
 | Difficulty        | Social Sciences                                                                                                                                                                                                                                               |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -838,9 +867,9 @@ Typical Specializations: Accounting, Economics, Finance, Law, Market Analysis, P
 
 #### Life Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Life Sciences.png"><img src="/img/skills/Life Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή - Metaphysics by Aristotle</figcaption>
 </figure>
 </div>
@@ -865,9 +894,9 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 
 #### Physical Sciences / Survival Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Physical Sciences.png"><img src="/img/skills/Physical Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky</figcaption>
 </figure>
 </div>
@@ -896,9 +925,9 @@ Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology,
 
 #### Engineering Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Engineering.png"><img src="/img/skills/Engineering.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
 </figure>
 </div>
@@ -947,9 +976,9 @@ Engineering measures the ability to apply technological knowledge and expertise 
 
 #### Insight Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Insight.png"><img src="/img/skills/Insight.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
 </figure>
 </div>
@@ -998,9 +1027,9 @@ Insight measures the ability to discern the true intentions and emotions of othe
 
 #### Investigation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Investigation.png"><img src="/img/skills/Investigation.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
 </figure>
 </div>
@@ -1034,9 +1063,9 @@ conflicts in their understanding by pushing themselves mentally.
 
 #### Traditions Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Traditions.png"><img src="/img/skills/Traditions.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about. --G.K Chesterton, Orthodoxy </figcaption>
 </figure>
 </div>
@@ -1063,9 +1092,9 @@ Cultural Etiquette, Religious Customs, Government Bureaucracy, Ethnic Traditions
 
 #### Perception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Perception.png"><img src="/img/skills/Perception.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats </figcaption>
 </figure>
 </div>
@@ -1091,9 +1120,9 @@ Visual Acuity, Auditory Sensitivity, Keen Smell., Tactile Awareness, Low-Light V
 
 #### Formal Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Formal Sciences.png"><img src="/img/skills/Formal Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead </figcaption>
 </figure>
 </div>
@@ -1152,9 +1181,9 @@ understand the world around them
 
 #### Style Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Style.png"><img src="/img/skills/Style.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Style is knowing who you are, what you want to say, and not giving a damn. -- Orsen Welles </figcaption>
 </figure>
 </div>
@@ -1202,9 +1231,9 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 #### Performance Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Performance.png"><img src="/img/skills/Performance.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">I'm just a musical prostitute, my dear. -- Freddie Mercury </figcaption>
 </figure>
 </div>
@@ -1250,9 +1279,9 @@ Style is the ability to understand the mindset of the public or a specific audie
 
 #### Etiquette Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Etiquette.png"><img src="/img/skills/Etiquette.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">I was raised right — I talk about people behind their backs. It's called manners.  -- Kathy Griffin</figcaption>
 </figure>
 </div>
@@ -1306,9 +1335,9 @@ their own actions to create the outcomes they want.
 
 #### Deception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Deception.png"><img src="/img/skills/Deception.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Man is not what he thinks he is, he is what he hides. --André Malraux  </figcaption>
 </figure>
 </div>
@@ -1358,9 +1387,9 @@ The Deception skill measures the ability to convincingly hide the truth, whether
 
 #### Persuasion Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Persuasion.png"><img src="/img/skills/Persuasion.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Don't raise your voice, improve your argument. -- Desmond Tutu </figcaption>
 </figure>
 </div>
@@ -1406,9 +1435,9 @@ Specializations for the Persuasion skill:
 
 #### Intimidation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Intimidation.png"><img src="/img/skills/Intimidation.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Bernardo was right, If one of you was lying in the street bleeding, I'd walk by and spit on you.  -- West Side Story </figcaption>
 </figure>
 </div>
@@ -1458,9 +1487,9 @@ Specializations for the Intimidation skill:
 
 #### Bureaucracy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Bureaucracy.png"><img src="/img/skills/Bureaucracy.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Bureaucracies, I've suggested, are not themselves forms of stupidity so much as they are ways of organizing stupidity--of managing relationships that are already characterized by extremely unequal structures of imagination... --  David Graeber</figcaption>
 </figure>
 </div>
@@ -1506,9 +1535,9 @@ Specializations for Bureaucracy:
 
 #### Animal Handling Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Animal Handling.png"><img src="/img/skills/Animal Handling.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">How you treat animals will tell me what kind of person you are. -— Karen Becker </figcaption>
 </figure>
 </div>
@@ -1554,9 +1583,9 @@ Specializations for Animal Handling:
 
 #### Leadership Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Leadership.png"><img src="/img/skills/Leadership.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Our chief want is someone who will inspire us to be what we know we could be. –- Ralph Waldo Emerson</figcaption>
 </figure>
 </div>
@@ -1634,9 +1663,9 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 #### Ethereal Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
 </figure>
 </div>
@@ -1697,9 +1726,9 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 #### Gnosis Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Ethereal.png"><img src="/img/skills/Ethereal.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
 </figure>
 </div>
@@ -1754,9 +1783,9 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 #### Chaos Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Chaos.png"><img src="/img/skills/Chaos.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
 </figure>
 </div>
@@ -1842,9 +1871,9 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 #### Theurgy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Theurgy.png"><img src="/img/skills/Theurgy.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
 </figure>
 </div>
@@ -1896,9 +1925,9 @@ These unique Theurgy spells showcase the character's special connection to the d
 
 #### Adept Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Adept.png"><img src="/img/skills/Adept.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Adept.png"><img src="/img/skills/Adept.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
 </figure>
 </div>
@@ -1950,9 +1979,9 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 #### Order Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Order.png"><img src="/img/skills/Order.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
 </figure>
 </div>
@@ -2033,9 +2062,9 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 #### Metaphysics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Metaphysics.png"><img src="/img/skills/Metaphysics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
 </figure>
 </div>
@@ -2090,9 +2119,9 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 #### Animism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Animism.png"><img src="/img/skills/Animism.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
 </figure>
 </div>
@@ -2146,9 +2175,9 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 #### Shamanism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-right">
+<div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail figure-img float-right"></a>
+<a href="/img/skills/Shamanism.png"><img src="/img/skills/Shamanism.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
 </figure>
 </div>
