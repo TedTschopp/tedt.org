@@ -874,9 +874,36 @@ Social Science skills can be useful in TTRPGs when the party needs to understand
 </figure>
 </div>
 
-A life sciences check lets you try to stabilize a dying companion or diagnose an illness as well as allow you to recall other important information about living organisms.
+**Description of Life Sciences:**
+Life Sciences encompass the study of living organisms and their interactions with the environment. This skill covers a broad range of knowledge and applications, from medical treatments to bioengineering, and is crucial in both everyday life and specialized professions.
 
-Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, Esoteric Medicine, Epidemiology, First Aid, Hypnotism, Pharmacy, Physician, Surgery, Veterinary, Brain Hacking, Biology, Physiology, Herb Lore, Biology, Farming, Gardening, Herb Lore, Naturalist, Paleontology, Herbal Pharmacy, and Forensics
+**Examples of Use:**
+In a TTRPG conflict resolution, Life Sciences could be used to identify the nature of a mysterious disease affecting a town, or to concoct an antidote for a rare poison. A specialized character might even perform surgery under combat conditions.
+
+**Specializations for Life Sciences:**
+
+1. **Poisons**: Understanding toxic substances and their effects.
+2. **Bioengineering**: Manipulating biological systems for specific outcomes.
+3. **Pharmacy**: Knowledge of medications and their administration.
+4. **Diagnosis**: Identifying medical conditions through symptoms and tests.
+5. **Medical Treatment**: Providing general medical care to patients.
+6. **Esoteric Medicine**: Unconventional medical practices and theories.
+7. **Epidemiology**: Study of the spread and control of diseases.
+8. **First Aid**: Immediate and temporary medical care.
+9. **Physician**: Comprehensive medical care, including diagnosis and treatment.
+10. **Surgery**: Performing medical operations to treat conditions.
+11. **Veterinary**: Medical treatment of animals.
+12. **Brain Hacking**: Manipulating neurological processes.
+13. **Biology**: Study of living organisms and life processes.
+14. **Physiology**: Study of bodily functions and mechanisms.
+15. **Herb Lore**: Knowledge of plants and their medicinal properties.
+16. **Farming**: Agricultural practices to produce food and other products.
+17. **Gardening**: Cultivating plants in a controlled environment.
+18. **Naturalist**: Understanding of natural environments and ecosystems.
+19. **Paleontology**: Study of the history of life through fossils.
+20. **Forensics**: Application of science to solve crimes.
+
+**Table with Life Sciences skill and examples for each level of difficulty:**
 
 | Skill             | Life Sciences                                                                                                                                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -901,9 +928,40 @@ Typical Specializations: Poisons, Bioengineering, Pharmacy, Diagnosis, Medical, 
 </figure>
 </div>
 
+
+**Description of Physical Sciences/Survival:**
+Physical Sciences/Survival encompasses the scientific knowledge and practical skills needed for understanding the natural world and surviving in various environments. This skill set ranges from academic disciplines like chemistry and geology to practical survival techniques like tracking and fishing.
+
+**Examples of Use:**
+Physical Sciences/Survival skill can be crucial in various conflict resolutions. For instance, characters might use Meteorology to predict an incoming storm to gain a tactical advantage, or Urban Survival to navigate through a dangerous cityscape evading capture. This skill set can offer creative ways to solve problems and overcome challenges in both natural and urban environments.
+
 Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
 
-Typical Specializations: Astronomy, Chemistry, Geology, Metallurgy, Meteorology, Naturalist, Paleontology, Camouflage, Fishing, Hiking, Mimic Animal & Bird Sounds, Naturalist, Navigation, Prospecting, Survival, Tracking, Weather Sense, Forensics, Streetwise, Urban Survival
+
+**Specializations for Physical Sciences/Survival:**
+
+1. **Astronomy**: Study of celestial objects, including navigation by stars.
+2. **Chemistry**: Understanding of elements, compounds, and chemical reactions.
+3. **Geology**: Study of Earth's structure, materials, and geological history.
+4. **Metallurgy**: Understanding metals, their extraction, and alloy creation.
+5. **Meteorology**: Study of weather patterns and atmospheric phenomena.
+6. **Naturalist**: Identification and understanding of plants and animals.
+7. **Camouflage**: Skill in blending into natural environments.
+8. **Fishing**: Knowledge of fish habitats and effective angling techniques.
+9. **Hiking**: Endurance and knowledge for long treks across various terrains.
+10. **Mimic Animal & Bird Sounds**: Imitating animal sounds for hunting or camouflage.
+11. **Navigation**: Reading maps, compasses, and natural landmarks.
+12. **Prospecting**: Skill in locating valuable minerals and resources.
+13. **Survival**: General skills in surviving harsh conditions.
+14. **Tracking**: Ability to follow signs and trails of animals or people.
+15. **Weather Sense**: Ability to predict upcoming weather without instruments.
+16. **Forensics**: Scientific investigation of crime scenes.
+17. **Streetwise**: Navigating and surviving in urban settings.
+18. **Urban Survival**: Skills in surviving within a city environment during crises.
+19. **Edible Plant Identification**: Recognizing safe and unsafe flora for consumption.
+20. **First Aid**: Basic medical skills to treat injuries in the wilderness.
+
+**Table with Physical Sciences/Survival skill and examples for each level of difficulty:**
 
 | Difficulty        | Survival                                                                                                                                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
