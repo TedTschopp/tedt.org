@@ -339,7 +339,6 @@ There are nine separate ways a predicament can be resolved:
 
 #### Ranged Combat Knowledge Areas
 
-
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure float-end">
 <a href="/img/skills/Ranged Combat.png"><img src="/img/skills/Ranged Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -347,11 +346,15 @@ There are nine separate ways a predicament can be resolved:
 </figure>
 </div>
 
+##### Description of Ranged Combat
 
-**Description of Ranged Combat:**
 Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossbows, and firearms, to accurately hit targets from a distance. This skill encompasses a variety of techniques, including aiming, shooting mechanics, and target assessment, as well as specialized knowledge of the different types of ranged weapons available.
 
-**Specializations for Ranged Combat:**
+##### Examples from Fiction
+
+In J.R.R. Tolkien's "The Lord of the Rings," Legolas the Elf is a master of ranged combat. With his keen Elven eyesight and unmatched agility, he uses his longbow to take down foes from great distances. During the Battle of Helm's Deep, Legolas stands atop the fortress wall, his eyes scanning the sea of Uruk-hai laying siege to the stronghold. As the enemy begins to scale the walls, Legolas draws his bow with fluid grace, nocking an arrow and letting it fly. The arrow finds its mark, piercing the heart of an Uruk-hai and causing it to tumble down, taking several others with it. His actions not only thin the ranks of the enemy but also boost the morale of the defenders. Legolas' skill in ranged combat turns him into a one-elf artillery, providing his allies with the support they need to hold the line and eventually win the battle.
+
+##### Specializations for Ranged Combat:
 
 1. **Archery**: Skillful long-range bow shooting.
 2. **Crossbowmanship**: Precision shooting with crossbows.
@@ -374,7 +377,7 @@ Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossb
 19. **Dual-Wielding Handguns**: Managing two handguns simultaneously.
 20. **Energy Weaponry**: Mastery over futuristic energy weapons.
 
-**Table for Ranged Combat skill and examples for each level of difficulty:**
+##### Table for Ranged Combat skill and examples for each level of difficulty
 
 | Difficulty         | Examples                                                                                                                                                                                                                       |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -390,9 +393,7 @@ Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossb
 | Nearly Impossible  | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                                |
 | Godly              | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
 
-
 #### Athletics Knowledge Areas
-
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -401,11 +402,16 @@ Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossb
 </figure>
 </div>
 
+##### Description of Athletics
+
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
 
-Typical Specializations: Bicycling, Body Sense, Breath Control, Climbing, Flying, Free Fall, Hiking, Jumping, Lifting, Mount, Parachuting, Running, Scuba, Sports, Swimming, Throwing, Climbing, Parachuting, Scuba, Climbing, Scuba, Skating, Skiing, Parachuting, Scuba, and Zero G
+##### Examples of Athletics from Fiction
 
-Specializations for Athletics:
+In Frank Herbert's "Dune," Paul Atreides demonstrates his Athletics skill through his mastery of sand traversal on the desert planet of Arrakis. Specializing in endurance and strength, Paul learns to walk without rhythm across the sand dunes to avoid attracting the deadly sandworms. This skill is crucial for survival and allows him to lead his Fremen warriors on long treks across the desert. During the siege of Arrakeen, Paul's Athletics skill is further highlighted as he physically overpowers enemy soldiers in hand-to-hand combat, using his strength and endurance to outlast them. His Athletics skill isn't about flashy moves; it's about the gritty, sustained physical effort that allows him to adapt and thrive in one of the harshest environments imaginable.
+
+##### Specializations for Athletics
+
 1. **Sprinting**: Short, high-speed runs.
 2. **Long-distance running**: Extended runs focusing on stamina.
 3. **High jump**: Vertical leaps over a bar.
@@ -427,7 +433,7 @@ Specializations for Athletics:
 19. **CrossFit**: Varied, high-intensity workouts.
 20. **Mountaineering**: Climbing and navigating mountains.
 
-**Table for Athletics skill and examples for each level of difficulty:**
+#### Table for Athletics skill and examples for each level of difficulty
 
 | Difficulty        | Athletics                                                                                                                                                                                                                                                                                 |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -452,7 +458,16 @@ Specializations for Athletics:
 </figure>
 </div>
 
+##### Description of Melee Combat
+
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
+
+##### Examples of Melee Combat from Fiction
+
+In Bernard Cornwell's "The Last Kingdom" series, the protagonist Uhtred of Bebbanburg is a master of melee combat, particularly with his favored weapon, the sword Serpent-Breath. Born a Saxon but raised by Vikings, Uhtred is a fusion of both cultures' fighting styles. In the heat of battle, he demonstrates not just brute strength but also tactical acumen. He knows when to strike, when to parry, and when to hold back. His skill allows him to adapt to different situations, whether he's fighting in a shield wall or engaging in one-on-one combat. Uhtred's ability to use improvised weapons, like a seax (a type of knife) or even a simple wooden staff, often turns the tide in desperate situations. While he can maintain his weapons by sharpening them and ensuring their general quality, he relies on skilled craftsmen for any significant repairs or modifications. His prowess in melee combat is a key factor in his survival and success in the turbulent times of 9th-century England.
+
+
+##### Specializations for Melee Combat
 
 1. **Dagger**: A small, easily concealed weapon.
 2. **Shortsword**: A one-handed, lightweight slashing weapon.
@@ -475,6 +490,8 @@ Melee combat measures your character's ability to attack and survive in armed me
 19. **Katanas**: A curved, slender, single-edged blade with a circular or squared guard.
 20. **Energy Sword**: A futuristic weapon with a blade made of energy or plasma.
 
+##### Table with Melee Combat skill and examples for each level of difficulty
+
 | Difficulty        | Melee Combat                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Sharpen your knife at the beginning of the day. Oil and wrap a weapon to keep it from getting rusted. Strike a Foe who is Helpless                |
@@ -491,7 +508,7 @@ Melee combat measures your character's ability to attack and survive in armed me
 
 ### Agility Characteristics
 
-**Agility** represents the overall flexibility and grace of movement of the being.
+Agility represents the overall flexibility and grace of movement of the being.
 
 #### Stealth Knowledge Areas
 
@@ -502,10 +519,15 @@ Melee combat measures your character's ability to attack and survive in armed me
 </figure>
 </div>
 
-**Description of Stealth:**
+##### Description of Stealth
+
 Stealth is the art and practice of moving quietly, remaining unseen, and evading detection. It is often used for a range of activities, from reconnaissance to theft to survival. It incorporates elements of body control, understanding of one's environment, and concealment techniques.
 
-**Specializations for Stealth:**
+##### Examples of Stealth from Fiction
+
+In the historical fiction novel "The Count of Monte Cristo" by Alexandre Dumas, Edmond Dantès, who later becomes the Count, is a master of stealth and subterfuge. After being unjustly imprisoned, Dantès meticulously plans his escape from the Château d'If. His understanding of the prison's layout, the guards' routines, and the environmental factors like the tides, allows him to execute a daring escape. He uses his body control to minimize noise as he moves, and his understanding of concealment techniques to hide in plain sight, often under the very noses of his jailers. Once free, he employs these stealth skills in various disguises and aliases, infiltrating high society to exact his revenge. Whether he's sneaking into a guarded mansion to retrieve a hidden treasure or eavesdropping on his enemies to gather information, Dantès' skill in stealth is paramount to his schemes. His ability to blend into his surroundings, move without making a sound, and remain undetected even in high-risk situations makes him a formidable character and a master of stealth.
+
+##### Specializations for Stealth
 
 1. **Camouflage**: Blending into surroundings to evade visual detection.
 2. **Shadowing**: Discreetly following a subject without being noticed.
@@ -528,7 +550,7 @@ Stealth is the art and practice of moving quietly, remaining unseen, and evading
 19. **Snow and Ice Stealth**: Specialized stealth in snowy and icy terrains.
 20. **Vehicle Stealth**: Using vehicles to evade detection.
 
-**Table with Stealth skill and examples for each level of difficulty:**
+##### Table with Stealth skill and examples for each level of difficulty:
 
 | Difficulty        | Stealth                                                                                            |
 |-------------------|----------------------------------------------------------------------------------------------------|
