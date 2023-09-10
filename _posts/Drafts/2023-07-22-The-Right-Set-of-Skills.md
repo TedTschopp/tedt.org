@@ -40,10 +40,7 @@ mathjax: true
   - [Aspects](#aspects)
   - [Characteristics](#characteristics)
   - [Knowledge Areas](#knowledge-areas)
-  - [Task Resolution](#task-resolution)
-    - [Difficulty](#difficulty)
-    - [Effect: Degrees of Effect Defined](#effect-degrees-of-effect-defined)
-- [Bringing it all Together](#bringing-it-all-together)
+- [Bringing the Skills All Together](#bringing-the-skills-all-together)
   - [Fitness Aspects](#fitness-aspects)
     - [Muscle Characteristics](#muscle-characteristics)
       - [Ranged Combat Knowledge Areas](#ranged-combat-knowledge-areas)
@@ -252,6 +249,18 @@ mathjax: true
       - [Shamanism Knowledge Areas](#shamanism-knowledge-areas)
         - [Shamanism Archtypes](#shamanism-archtypes)
         - [Unique Shamanism Magical Spells](#unique-shamanism-magical-spells)
+  - [Task Resolution](#task-resolution)
+    - [In Brief](#in-brief)
+      - [Degrees of Effect Defined](#degrees-of-effect-defined)
+        - [Fail Catastrophically](#fail-catastrophically)
+        - [Costly](#costly)
+        - [Fail](#fail)
+        - [Fail in Style](#fail-in-style)
+        - [Tie](#tie)
+        - [Succeed](#succeed)
+        - [Succeed in Style](#succeed-in-style)
+        - [Critical Success](#critical-success)
+        - [Serendipitous Success](#serendipitous-success)
 
 # Creating Characters
 
@@ -305,41 +314,6 @@ setting where you take full responsibility and accountability for your
 actions. The experience gained in this manner distinguishes demonstrated
 skill from demonstrated competency.
 
-▩ = Skilled – You are formally trained in this area. Some equipment,
-weapons, and actions require professional training to use them.
-
-- If you are attempting something that requires formal skill in an area and you
-do not have any, you take a DM-1 to the Characteristic and a DM-1 to the
-Aspect in question when rolling the skill.
-- If you are formally trained in a skill, you can also use the skill under other aspects and
-characteristics.
-
-EXAMPLE: You come across a leather sling. You want to know the religious significance of a religious sling being carried by the guards at your local temple. Your character is physicall very weak, but is an Adept following in the traditions of the Martial Arts Mystic.
-
-- You have a Mystical (Aspect) of 2
-- You have a Faith (Characteristic) of 2
-- You have a Adept (Knowledge Area) of 2
-- You have a Theurgy (Local Religions) of unskilled.
-- You have a Fitness (Aspect) of -2
-- You have a Muscle (Characteristic) of -1
-- You have a Ranged Combat (Knowledge Area) of 1 and you are skilled in it.  
-
-So you roll:
-- 2 (Mystical Aspect) + 2 (Faith Characteristic) + 1 (Ranged Combat Knowledge Area) = DM+5 versus
-- -2 (Fitness Aspect) + -2 (Muscle Characteristic) + 1 (Ranged Combat Knowledge Areas) = DM-3
-
-You can roll this because you are to get this answer even though you have no formal training in the gods of your religion, which would be Theurgy.
-
-▣ = Competent – You have experiences of being successful at this level.
-However, you have not had formal training at this level. You may only
-use the Aspects and Characteristics associated with this Knowledge Area
-at this level. Remember, some equipment, weapons, and actions require professional training to use them.
-
-▢ = Unskilled - You have no Experience and you are not Skilled. Does not
-contribute to Total.
-
-☒ = Damaged - Skilled, but Damaged. Does not contribute to Total.
-
 | Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
 |-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
 | Fitness   | □ □ □ □   | □ □ □ □  | Muscle         | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |
@@ -389,77 +363,7 @@ contribute to Total.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
-## Task Resolution
-
-The Märchen Engine allows play players to pick between several different
-mechanics to resolve actions. They are as follows: D10, D20, D100, 2d6,
-3d6, and 4d7.
-
-Using the Märchen Engine, when you make a die roll to resolve an action
-by rolling the chosen set of dice and checking to see what the σ is for
-those results. Now add all the Dice Modifiers (⚅) for the given
-situation to the σ. This will give you a final number. This is called a
-check. You always want to roll high on a check. The symbol of ⥣
-represents the number required for a success when you do not need to
-determine a σ.
-
-| σ  | 1d20  | 2d6     | 2d8   | 3d6     | 4d7     | 8D4(dreidels) | D100    |
-|----|-------|---------|-------|---------|---------|---------------|---------|
-| -4 | 1-3   | NA      | 2     | 3       | 4       | 8 - 9         | 1       |
-| -3 | 4-5   | 2       | 3-4   | 4 – 5   | 5 – 7   | 10 – 11       | 2 – 3   |
-| -2 | 6-7   | 3 – 4   | 5-6   | 6 – 7   | 8 – 11  | 12 – 15       | 4 – 18  |
-| -1 | 8-10  | 5 – 7   | 7-8   | 8 – 11  | 12 – 16 | 16 – 20       | 19 – 51 |
-| ⥣  | 11    | 8       | 9     | 12      | 17      | 21            | 52      |
-| 1  | 11-13 | 8 – 9   | 10-11 | 12 – 13 | 17 – 20 | 21 – 24       | 52 – 81 |
-| 2  | 14-15 | 10 – 11 | 12-13 | 14 – 15 | 21 – 24 | 25 – 28       | 82 – 96 |
-| 3  | 16-17 | 12      | 14-15 | 16 – 17 | 25 – 27 | 29 – 30       | 97 – 99 |
-| 4  | 18-20 | NA      | 16    | 18      | 28      | 31 – 32       | 100     |
-
-### Difficulty
-
-A check's Difficulty is a number set by the Referee that modifies your
-check result. When no Difficulty is given, the assumed Difficulty is
-⚅+0. So, for a task with a Difficulty of ⚅+2, you must add +2 to the
-check result. You succeed on a total of the Success Number (⥣) or
-better. The list of Difficulty ratings can be found in the Task
-Difficulty table.
-
-| Difficulty        |                                                                                                                                                                                                                                                                                                                                             | D20 | 2d6 | 2d8 | 3d6 | 4d7 | 8D4(dreidels) | D100 |
-|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----|:----|:----|:----|:----|:--------------|:-----|
-| Trivial           | Something that is automatically done                                                                                                                                                                                                                                                                                                        |     |     | 8   | 9   | 15  |               |      |
-| Simple            | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                       | 5   | 6   | 6   | 7   | 10  |               |      |
-| Easy              | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                       | 10  | 4   | 5   | 5   | 5   |               |      |
-| Routine           | Requires a bit more competence to accomplish. Can be completed more often than not by a character with natural aptitude.                                                                                                                                                                                                                     | 15  | 2   | 3   | 3   | 4   |               |      |
-| Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                  |     | 0   | 0   | 0   | 0   |               |      |
-| Difficult         | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). | 20  | -2  | -3  | -3  | -4  |               |      |
-| Very Difficult    | Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). Include anything beyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                              | 25  | -4  | -5  | -5  | -5  |               |      |
-| Formidable        | Achievable only by especially talented individuals. Nobody else should even bother trying. This is on the level of superstars.                                                                                                                                                                                                               | 30  | -6  | -6  | -7  | -10 |               |      |
-| Heroic            | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                |     |     | -8  | -9  | -15 |               |      |
-| Nearly Impossible | An epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                                                                                                              |     |     |     |     | -25 |               |      |
-| Godly             | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                          |     |     |     |     | -30 |               |      |
-
-In some cases, the consequences of a check vary based on how much the
-check result is above or below the target of 8. The difference between
-the check result and the target of 8 is called the Effect.
-
-### Effect: Degrees of Effect Defined
-
-There are nine separate ways a predicament can be resolved:
-
-| Degree of Effect | Final σ | ± %  | -0 | \- | \+ | +0 | Final Result |
-|------------------|---------|------|----|----|----|----|--------------|
-| Catastrophic     | -4      | 400% | 7  | 8  | 1  | 0  | 4            |
-| Costly           | -3      | 200% | 6  | 7  | 2  | 1  | 5 – 7        |
-| Fail             | -2      | 150% | 5  | 6  | 3  | 2  | 8 – 11       |
-| Minor Fail       | -1      | 100% | 4  | 5  | 4  | 3  | 12 – 14      |
-| Fail in Style    | -1      | 100% | 4  | 5  | 4  | 3  | 15           |
-| Tie              | 0       | 100% | 3  | 4  | 5  | 4  | 16           |
-| Succeed          | 1       | 100% | 3  | 4  | 5  | 4  | 17 – 20      |
-| Succeed In Style | 2       | 75%  | 2  | 3  | 6  | 5  | 21 – 24      |
-| Critical         | 3       | 50%  | 1  | 2  | 7  | 6  | 25 – 27      |
-| Serendipitous    | 4       | 25%  | 0  | 1  | 8  | 7  | 28           |
-
-# Bringing it all Together
+# Bringing the Skills All Together
 
 ## Fitness Aspects
 
@@ -482,7 +386,7 @@ Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossb
 
 ##### Examples from Fiction
 
-In J.R.R. Tolkien's "The Lord of the Rings," the character Legolas is a master of ranged combat, particularly with his elven longbow. A prince of the Woodland Realm, Legolas possesses keen eyesight and unmatched dexterity, allowing him to hit targets from great distances with incredible accuracy. Throughout the series, his skill with the bow proves invaluable to the Fellowship of the Ring, whether he's picking off orcs from a distance or shooting down a fearsome Nazgûl on its flying steed.
+In J.R.R. Tolkien's "The Lord of the Rings," the character Legolas is a master of ranged combat, particularly with his elven longbow. A prince of the Woodland Realm, Legolas possesses keen eyesight and unmatched strength, allowing him to hit targets from great distances with incredible accuracy. Throughout the series, his skill with the bow proves invaluable to the Fellowship of the Ring, whether he's picking off orcs from a distance or shooting down a fearsome Nazgûl on its flying steed.
 
 For example, during the Battle of Helm's Deep, Legolas uses his ranged combat skills to devastating effect. Stationed on the walls, he takes down numerous Uruk-hai attackers, providing crucial support to his allies on the ground. His ability to assess targets quickly and choose the most threatening ones to eliminate first showcases the strategic aspect of ranged combat.
 
@@ -557,11 +461,11 @@ Your Athletics check covers difficult situations you want to do something that r
 
 ##### Examples of Athletics from Fiction
 
-In George R.R. Martin's "A Song of Ice and Fire" series, Brienne of Tarth is a character who excels in Athletics, particularly in the realms of strength and endurance. Born into a noble family but with a natural inclination toward martial pursuits, Brienne trains rigorously to become a formidable warrior. Her athletic prowess is evident in her ability to best seasoned knights in combat, as well as in her capacity to endure long, grueling journeys on foot or horseback.
+In George R.R. Martin's "A Song of Ice and Fire" series, Brienne of Tarth is a character who excels in Athletics, particularly in the realms of strength and physical presence. Born into a noble family but with a natural inclination toward martial pursuits, Brienne trains rigorously to become a formidable warrior. Her athletic prowess is evident in her ability to best seasoned knights in combat, as well as in her capacity to endure long, grueling journeys on foot or horseback.
 
 For instance, in "A Clash of Kings," Brienne competes in a melee tournament and defeats several knights, ultimately winning the competition. Her athletic skill is not limited to raw strength; she also demonstrates agility and stamina, dodging blows and outlasting her opponents. Later, in "A Feast for Crows," she undertakes a quest to find Sansa Stark, which involves traversing through difficult terrains and fighting off multiple attackers. Her athletic abilities enable her to survive these challenges and continue her quest.
 
-In a TTRPG setting, a character with high Athletics could perform a variety of tasks that require physical prowess. They might be called upon to scale a cliff face to reach an enemy's stronghold, or to swim across a fast-moving river to escape pursuit. Specializations within Athletics could include grappling, allowing the character to excel in hand-to-hand combat, or endurance, enabling them to travel long distances without suffering fatigue.
+In a TTRPG setting, a character with high Athletics could perform a variety of tasks that require physical prowess. They might be called upon to scale a cliff face to reach an enemy's stronghold, or to swim across a fast-moving river to escape pursuit. Specializations within Athletics could include grappling, allowing the character to excel in hand-to-hand combat, or grit, enabling them to travel long distances without suffering fatigue.
 
 Brienne's athletic abilities add significant depth to her character. They make her a formidable warrior, yes, but they also serve as a symbol of her defiance against societal norms that seek to limit what she can achieve as a woman. Her skills in Athletics are not just practical assets; they are integral to her identity and her ongoing struggle to find respect and purpose in a world that often dismisses her.
 
@@ -790,13 +694,15 @@ Acrobatics is the skill of performing complex bodily movements that require agil
 
 ##### Examples of Acrobatics from Fiction
 
-In the "Mistborn" series by Brandon Sanderson, Vin, the protagonist, is highly skilled in acrobatics, largely due to her mastery of Allomancy. Allomancy is a magical system that allows her to "burn" metals to grant her various abilities, including enhanced physical agility. While not traditional acrobatics, her Allomantic skills enable her to perform complex aerial maneuvers, flips, and jumps that would be impossible for an ordinary person.
+Certainly, let's explore acrobatics again, this time through a different lens.
 
-For example, in "The Final Empire," Vin uses her Allomantic abilities to leap great distances and scale tall buildings as she navigates the labyrinthine city of Luthadel. During a particularly intense battle, she employs a series of flips and rolls to dodge enemy attacks, all while launching her own counterattacks. Her acrobatic skill is not just about evasion; it's also a crucial part of her combat strategy, allowing her to gain advantageous positions and catch her enemies off guard.
+In the "Assassin's Creed" video game series, the main characters, known as Assassins, are highly skilled in acrobatics. Their ability to parkour through crowded cities, climb tall structures, and perform death-defying leaps is a hallmark of the franchise. This skill is not just for show; it's a crucial part of their toolkit for assassination, evasion, and exploration.
 
-In a TTRPG setting, a character specialized in acrobatics could offer a range of tactical options. They might use their agility to bypass a line of enemy guards without being detected, or perform a series of flips to quickly traverse a dangerous field of lava. Specializations within acrobatics could include parkour expertise for urban environments, or gymnastic finesse that allows for intricate dodging maneuvers in combat.
+For instance, in "Assassin's Creed II," the protagonist Ezio Auditore uses his acrobatic skills to navigate the rooftops of Renaissance Florence and Venice. These abilities are essential for evading capture, stalking targets, and reaching otherwise inaccessible areas. One memorable sequence involves Ezio using a series of flips and wall-runs to navigate a complex set of traps in an underground tomb, ultimately leading him to a hidden treasure.
 
-Vin's acrobatic abilities add a dynamic layer to her character. They are a manifestation of her mastery over Allomancy, but they also symbolize her growth from a timid street urchin to a confident and capable hero. Her skills in acrobatics are not just a spectacle; they are integral to her survival and her role in the larger struggle against the oppressive Final Empire.
+In a TTRPG setting, a character with a specialization in acrobatics could find numerous applications for their skills. They might use their agility to navigate a maze of laser traps, or employ a series of flips to cross a chasm that others cannot. In combat, their acrobatic prowess could allow them to dodge incoming attacks or to quickly scale a wall for a better vantage point.
+
+The acrobatic skills of the Assassins in "Assassin's Creed" not only make for engaging gameplay but also serve practical purposes within the narrative. Whether it's for assassination, evasion, or exploration, their acrobatic abilities are integral to their identities and their missions.
 
 ##### Acrobatics Archetypes
 
@@ -3225,3 +3131,190 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | Heroic            | Uniting the energies of the tribe and the surrounding natural forces to perform a grand ritual, bringing harmony and balance to the entire region, dispelling malevolent spirits, and revitalizing the land and its inhabitants.                  |
 | Nearly Impossible | Attempting to bring back a deceased loved one from the afterlife, a task that requires the shaman to navigate complex spiritual realms and negotiate with powerful entities to grant a second chance at life.                                     |
 | Godly             | Harnessing the forces of celestial bodies and the spirit world to perform a ritual that significantly alters the fate of entire civilizations or alters the course of cosmic events, requiring immense power and assistance from divine entities. |
+
+## Task Resolution
+
+### In Brief
+
+1. Determine and add up the skill ( Aspect + Characteristic + Skill ) 
+2. Determine and add up the circumstantial Dice Modifiers (⚅) using the table below
+
+| ⚅    | Difficulty        |                                                                                                                                                                                                                                                                                                                                                |
+|:----:|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 15   | Trivial           | Something that is automatically done                                                                                                                                                                                                                                                                                                           |
+| 10   | Simple            | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
+| 5    | Easy              | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
+| 4    | Routine           | Requires a bit more competence to accomplish. Can be completed more often than not by a character with natural aptitude.                                                                                                                                                                                                                       |
+| 0    | Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                   |
+| \-4  | Difficult         | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). |
+| \-5  | Very Difficult    | Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). Include anything beyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                               |
+| \-10 | Formidable        | Achievable only by especially talented individuals. Nobody else should even bother trying. This is on the level of superstars.                                                                                                                                                                                                                 |
+| \-15 | Heroic            | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                 |
+| \-25 | Nearly Impossible | An epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                                                                                                               |
+| \-30 | Godly             | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                            |
+
+3. Roll a 4d8 and determine the σ using the table below:
+
+| σ  | 4d8  |
+|:--:|:----:|
+| -4 |4 - 5 |
+| -3 |6 - 8 |
+| -2 |8 - 13|
+| -1 |13 - 17|
+| 1  |18 - 22 |
+| 2  |23 - 27 |
+| 3  |28 - 30 |
+| 4  |31 - 32 |
+
+
+4. Add up all the above numbers and compare them to the following table.  Sometimes an additional table will need to be consulted give the details of the skill or the circumstances (such as determining how long something took, or how much it will cost to repair an item.)
+
+| Final Result | Degree of Effect | 
+| ------------ | ---------------- | 
+|   - 5       | Catastrophic     | 
+| 6 - 8        | Costly           | 
+| 8 - 13       | Fail             | 
+| 13 - 16      | Minor Fail       | 
+| 17           | Fail in Style    | 
+| 18           | Tie              | 
+| 19 - 22      | Succeed          | 
+| 23 - 27      | Succeed In Style | 
+| 28 - 30      | Critical         | 
+| 31 +         | Serendipitous    | 
+
+#### Degrees of Effect Defined
+
+There are nine separate ways a predicament can be resolved:
+
+##### Fail Catastrophically 
+
+This is a critical failure. The cost for this sort of failure means the
+outcome the actor was intending failed. Additionally, things have turned
+worse for that actor as well in unrelated areas or with a sense of
+finality.
+
+> For example, if a thief was attempting to pick the lock of a door,
+> then it should be determined that they did not pick the lock. The trap
+> in the door was triggered. Everyone in The Company must now determine
+> if they are now poisoned, and no further attempts may be made
+> (finality). In the event that overcoming this complication was
+> required for The Company to accomplish their overall objectives, the
+> GM must instead make the events turn to the worse in other areas. In
+> the above example this would mean that in their attempts to pick the
+> lock, the thief slipped, and knocked the torch out of the hands of the
+> person carrying it, and the tapestry the door is behind is now on
+> fire. Or the torch is now out and no one can see. The idea here is to
+> heighten tension and make the attempt require larger efforts of
+> heroics.
+
+##### Costly
+
+This is one step away from a critical failure. The cost should be
+related to the outcome the player or monster was attempting.
+
+> For example, if the thief was attempting to pick the lock of a door,
+> then it should be determined that they did not pick the lock, but they
+> did trigger the trap in the door, and everyone in The Company must now
+> determine if they are poisoned.
+
+##### Fail
+
+This is a normal failure.
+
+> In the example of our thief would not have been able to pick the lock,
+> but the lock would not be jammed, and he would still have his pick.
+
+##### Fail in Style
+
+This is one step above a failure. It is still a failure, but something
+else has happened that moves the story forward in a more difficult path,
+but without accomplishing the goals.
+
+> In the example of the thief, he wouldn't have picked the lock, but he
+> did spring the trap and the door was opened, but everyone in The
+> Company must determine if they are poisoned. This is the classic fail
+> forward approach.
+
+##### Tie
+
+A tie succeeds unless this was a contest between two parties, in which
+case the outcome is that neither party gets what they want, and it
+should be treated as a fail in style for both sides. This is useful for
+social interactions or for contests of strength or agility.
+
+> In the example of our thief the parties in question are the designer
+> of the lock or door and The Company trying to get in. The thief would
+> not get what they want, the lock to be picked, and the designer of the
+> lock would not get what they want, to keep the lock secure. The
+> resolution on this would be that the thief can’t open the lock with
+> this action, but he has gained knowledge of the lock, which will make
+> it easier for him next time. This wouldn’t be a problem for the thief
+> unless he was doing this under a stress.
+
+##### Succeed
+
+The individual who attempted to do something accomplishes what they set
+out to do.
+
+> In the example of the thief, the door is unlocked, and is no longer
+> being held shut by the locking mechanism.
+
+##### Succeed in Style
+
+The individual who attempted to do something accomplishes what they set
+out to do, and they got some hidden bonus or style out of it.
+
+> In the example of the thief, the door is unlocked, and is no longer
+> being held shut by the locking mechanism, and the thief now
+> understands how that lock is constructed and the next one that is just
+> like it will be easier to open.
+
+##### Critical Success
+
+The individual who attempted to do something accomplishes what they set
+out todo, and they got a substantial hidden bonus or style out of it.
+
+> In the example of the thief, the door is unlocked, and is no longer
+> being held shut by the locking mechanism, and the thief now
+> understands how locks made by that locksmith are constructed so any
+> lock within this facility will be easier to open.
+
+##### Serendipitous Success
+
+The individual who attempted to do something accomplishes what they set
+out to do, and they got a substantial hidden bonus or style out of it
+that is completely unrelated to the task being attempted.
+
+> In the example of the thief, the door is unlocked, and is no longer
+> being held shut by the locking mechanism, and the thief now
+> understands how locks made by that locksmith are constructed so any
+> lock within this facility will be easier to open. In addition, the
+> thief see's the trap on the door as well and has a normal success to
+> disarm it. The best way to see a serendipitous success is to see this
+> as two completely independent successes on one die roll. In the event
+> that a complication requires more than one success a serendipitous
+> success will, in addition to everything above, add an additional
+> success to the success pool.
+
+**Extended Degrees of Effect**
+
+|Degree of Effect | Final σ | ± %  | 0 | \\- | \\+ | +0 |
+| ---------------:|:-------:|:----:|:-:|:---:|:---:|:--:|
+| Catastrophic    | \-4     | 400% | 7 | 8   | 1   | 0  |
+| Costly          | \-3     | 200% | 6 | 7   | 2   | 1  |
+| Fail            | \-2     | 150% | 5 | 6   | 3   | 2  |
+| Minor Fail      | \-1     | 100% | 4 | 5   | 4   | 3  |
+| Fail in Style   | \-1     | 100% | 4 | 5   | 4   | 3  |
+| Tie             | 0       | 100% | 3 | 4   | 5   | 4  |
+| Succeed         | 1       | 100% | 3 | 4   | 5   | 4  |
+| Succeed In Style| 2       | 75%  | 2 | 3   | 6   | 5  |
+| Critical        | 3       | 50%  | 1 | 2   | 7   | 6  |
+| Serendipitous   | 4       | 25%  | 0 | 1   | 8   | 7  |
+
+Final σ: Used in Dice Chains
+± %: Used when determining time or cost impacts
+0 & +0: Used for ranking results into groups based on a zero based numbering system.  Overtime these will be merged
++ & -: Used for ranking results into groups based on a non-zero based numbering system  Overtime these will be merged.
+
+
+
