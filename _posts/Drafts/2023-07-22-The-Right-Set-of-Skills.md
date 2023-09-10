@@ -451,7 +451,7 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="/img/skills/vertical/Athletics.png"><img src="/img/skills/vertical/Athletics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Your body is the church where Nature asks to be reverenced. -- Marquis de Sade</figcaption>
+<figcaption class="figure-caption">The road to athletic greatness is not marked by perfection but by the ability to constantly overcome adversity and failure. -- Nike</figcaption>
 </figure>
 </div>
 
@@ -1155,7 +1155,7 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="/img/skills/vertical/Life Sciences.png"><img src="/img/skills/vertical/Life Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή - Metaphysics by Aristotle</figcaption>
+<figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή (The energy of life is the essence of the mind) -- Aristotle</figcaption>
 </figure>
 </div>
 
@@ -1884,7 +1884,7 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="/img/skills/vertical/Performance.png"><img src="/img/skills/vertical/Performance.png" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">I'm just a musical prostitute, my dear. -- Freddie Mercury </figcaption>
+<figcaption class="figure-caption">The stage is not merely the meeting place of all the arts, but is also the return of art to life. -- Oscar Wilde </figcaption>
 </figure>
 </div>
 
@@ -2210,7 +2210,7 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="/img/skills/vertical/Intimidation.png"><img src="/img/skills/vertical/Intimidation.png" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Bernardo was right, If one of you was lying in the street bleeding, I'd walk by and spit on you.  -- West Side Story </figcaption>
+<figcaption class="figure-caption">If you want to control someone, all you have to do is to make them feel afraid.  -- Paulo Coelho</figcaption>
 </figure>
 </div>
 
