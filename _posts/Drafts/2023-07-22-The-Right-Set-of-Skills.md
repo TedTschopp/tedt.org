@@ -432,19 +432,19 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 ##### Table for Ranged Combat skill and examples for each level of difficulty
 
-| Difficulty         | Examples                                                                                                                                                                                                                       |
-|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial            | Shooting a target at point-blank range                                                                                                                                                                                         |
-| Simple             | Hitting a stationary target from 10 yards away                                                                                                                                                                                 |
-| Easy               | Hitting a moving target at 10 yards                                                                                                                                                                                            |
-| Routine            | Hitting a bullseye on a stationary target from 20 yards away                                                                                                                                                                   |
-| Average            | Hitting multiple moving targets from 20 yards                                                                                                                                                                                  |
-| Difficult          | Hitting a bullseye on a moving target from 50 yards away                                                                                                                                                                       |
-| Very Difficult     | Hitting a small, fast-moving target from 100 yards away                                                                                                                                                                        |
-| Formidable         | Hitting a target obscured by environmental conditions (e.g., wind, rain) from 150 yards away                                                                                                                                    |
-| Heroic             | Sniping a target accurately from a distance of over 1 mile away                                                                                                                                                                |
-| Nearly Impossible  | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                                |
-| Godly              | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
+| Difficulty        | Examples                                                                                                                                                                                                                  |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Shooting a target at point-blank range                                                                                                                                                                                    |
+| Simple            | Hitting a stationary target from 10 yards away                                                                                                                                                                            |
+| Easy              | Hitting a moving target at 10 yards                                                                                                                                                                                       |
+| Routine           | Hitting a bullseye on a stationary target from 20 yards away                                                                                                                                                              |
+| Average           | Hitting multiple moving targets from 20 yards                                                                                                                                                                             |
+| Difficult         | Hitting a bullseye on a moving target from 50 yards away                                                                                                                                                                  |
+| Very Difficult    | Hitting a small, fast-moving target from 100 yards away                                                                                                                                                                   |
+| Formidable        | Hitting a target obscured by environmental conditions (e.g., wind, rain) from 150 yards away                                                                                                                              |
+| Heroic            | Sniping a target accurately from a distance of over 1 mile away                                                                                                                                                           |
+| Nearly Impossible | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                          |
+| Godly             | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
 
 #### Athletics Knowledge Areas
 
@@ -516,7 +516,7 @@ Brienne's athletic abilities add significant depth to her character. They make h
 | Routine           | Jump over a pit wearing non-metallic/encumbering armor                                                                                                                                                                                                                                    |
 | Average           | Row a boat and keeping it in the middle of the current. Climb a rope that is anchored on both sides. Swim in still water. Break through an normal door.                                                                                                                                   |
 | Difficult         | Row a boat through rapids. Climb a free hanging rope. Swim in Rough water. Swim upstream against a mild current. Break through an iron reinforced door. Hang onto the reins of a horse, while being drug.                                                                                 |
-| Very Difficult    | Push an object 3 times your weight. Climb a wall that has few handholds. Leap from the roof of a building and grab a clothes line. Swim against a strong current. Remain above water during a raging storm. Topple a statue. Break through a barred / locked door.                           |
+| Very Difficult    | Push an object 3 times your weight. Climb a wall that has few handholds. Leap from the roof of a building and grab a clothes line. Swim against a strong current. Remain above water during a raging storm. Topple a statue. Break through a barred / locked door.                        |
 | Formidable        | Pull a stuck carriage out of the river with the aid of others and draft animals. Climb a shear wall. Swim in stormy waters. Leap across a 30-foot chasm. Break through a reinforced door such as one found in a prison. Hold a door shut while the room behind the door fills with water. |
 | Heroic            | Climb a shear surface or wall                                                                                                                                                                                                                                                             |
 | Nearly Impossible | Swim in rough waters while wearing full metal armor                                                                                                                                                                                                                                       |
@@ -2110,19 +2110,20 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 ##### Table with Deception skill specializations and difficulty levels
 
-| Difficulty        | Deception Skill                                                                                                               |
-|-------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically putting on a friendly demeanor with strangers.                                                                  |
-| Simple            | Successfully passing off a small fib in casual conversation.                                                                  |
-| Easy              | Using slight misdirection to lead someone away from a sensitive topic.                                                        |
-| Routine           | Convincing others of a minor falsehood with a composed delivery.                                                              |
-| Average           | Keeping a straight face while telling a small lie even under scrutiny.                                                        |
-| Difficult         | Successfully using charm and persuasion to manipulate someone into making a favorable decision.                               |
-| Very Difficult    | Convincing a group of people that you are someone else entirely, and getting them to believe your fabricated identity.        |
-| Formidable        | Pulling off a long con to gain the trust of influential figures and extract valuable information.                             |
-| Heroic            | Disguising yourself as a high-ranking authority figure and giving a convincing speech to rally a crowd in support of a cause. |
-| Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.          |
-| Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept.                                                                                                                                                                                                      | A Deception check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Examples include: lie to your spouse and make them believe it; bluster and blather your way out of responsibility; use innuendo to say one thing and mean another thing; engage in wordplay to appear smarter; blend into a crowd; bluff your way into a dinner party; understand secret languages without training in the skill; appear innocent in front of a professional interrogator; lie to your parents and make them believe it; lie to someone about an observable fact or something about themselves and have them believe it. |
+| Difficulty        | Deception Skill                                                                                                                                                     |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Automatically putting on a friendly demeanor with strangers.                                                                                                        |
+| Simple            | Successfully passing off a small fib in casual conversation.                                                                                                        |
+| Easy              | Using slight misdirection to lead someone away from a sensitive topic.                                                                                              |
+| Routine           | Convincing others of a minor falsehood with a composed delivery.                                                                                                    |
+| Average           | Keeping a straight face while telling a small lie even under scrutiny.                                                                                              |
+| Difficult         | Successfully using charm and persuasion to manipulate someone into making a favorable decision.                                                                     |
+| Very Difficult    | Convincing a group of people that you are someone else entirely, and getting them to believe your fabricated identity.                                              |
+| Formidable        | Pulling off a long con to gain the trust of influential figures and extract valuable information.                                                                   |
+| Heroic            | Disguising yourself as a high-ranking authority figure and giving a convincing speech to rally a crowd in support of a cause.                                       |
+| Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.                                                |
+| Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept. |
+
 
 #### Persuasion Knowledge Areas
 
@@ -2629,7 +2630,7 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="/img/skills/vertical/Ethereal.png"><img src="/img/skills/vertical/Ethereal.png" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="/img/skills/vertical/Gnosis.png"><img src="/img/skills/vertical/Gnosis.png" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
 </figure>
 </div>
@@ -3139,48 +3140,48 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 1. Determine and add up the skill ( Aspect + Characteristic + Skill ) 
 2. Determine and add up the circumstantial Dice Modifiers (⚅) using the table below
 
-| ⚅    | Difficulty        |                                                                                                                                                                                                                                                                                                                                                |
-|:----:|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 15   | Trivial           | Something that is automatically done                                                                                                                                                                                                                                                                                                           |
-| 10   | Simple            | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
-| 5    | Easy              | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
-| 4    | Routine           | Requires a bit more competence to accomplish. Can be completed more often than not by a character with natural aptitude.                                                                                                                                                                                                                       |
-| 0    | Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                   |
-| \-4  | Difficult         | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). |
-| \-5  | Very Difficult    | Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). Include anything beyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                               |
-| \-10 | Formidable        | Achievable only by especially talented individuals. Nobody else should even bother trying. This is on the level of superstars.                                                                                                                                                                                                                 |
-| \-15 | Heroic            | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                 |
+|  ⚅   |    Difficulty     |                                                                                                                                                                                                                                                                                                                                                |
+|:----:|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  15  |      Trivial      | Something that is automatically done                                                                                                                                                                                                                                                                                                           |
+|  10  |      Simple       | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
+|  5   |       Easy        | Requires a minimum level of competence or a bit of luck to accomplish.                                                                                                                                                                                                                                                                         |
+|  4   |      Routine      | Requires a bit more competence to accomplish. Can be completed more often than not by a character with natural aptitude.                                                                                                                                                                                                                       |
+|  0   |      Average      | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of anapprentice or someone with exceptional latent talent.                                                                                   |
+| \-4  |     Difficult     | Generally anything that takes actual training. This is the skilled work of a professional doing what they are paid to do. Include anything beyond the capabilities of the average person without aid or exceptionaltalent. Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). |
+| \-5  |  Very Difficult   | Even with a bit of training and skill you still need some luck to pull it off (or maybe some specialized training). Include anything beyond the capabilities of the average person without specialized aid orexceptional talent.                                                                                                               |
+| \-10 |    Formidable     | Achievable only by especially talented individuals. Nobody else should even bother trying. This is on the level of superstars.                                                                                                                                                                                                                 |
+| \-15 |      Heroic       | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                 |
 | \-25 | Nearly Impossible | An epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                                                                                                               |
-| \-30 | Godly             | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                            |
+| \-30 |       Godly       | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                            |
 
 3. Roll a 4d8 and determine the σ using the table below:
 
-| σ  | 4d8  |
-|:--:|:----:|
-| -4 |4 - 5 |
-| -3 |6 - 8 |
-| -2 |8 - 13|
-| -1 |13 - 17|
-| 1  |18 - 22 |
-| 2  |23 - 27 |
-| 3  |28 - 30 |
-| 4  |31 - 32 |
+| σ  |   4d8   |
+|:--:|:-------:|
+| -4 |  4 - 5  |
+| -3 |  6 - 8  |
+| -2 | 8 - 13  |
+| -1 | 13 - 17 |
+| 1  | 18 - 22 |
+| 2  | 23 - 27 |
+| 3  | 28 - 30 |
+| 4  | 31 - 32 |
 
 
 4. Add up all the above numbers and compare them to the following table.  Sometimes an additional table will need to be consulted give the details of the skill or the circumstances (such as determining how long something took, or how much it will cost to repair an item.)
 
-| Final Result | Degree of Effect | 
-| ------------ | ---------------- | 
-|   - 5       | Catastrophic     | 
-| 6 - 8        | Costly           | 
-| 8 - 13       | Fail             | 
-| 13 - 16      | Minor Fail       | 
-| 17           | Fail in Style    | 
-| 18           | Tie              | 
-| 19 - 22      | Succeed          | 
-| 23 - 27      | Succeed In Style | 
-| 28 - 30      | Critical         | 
-| 31 +         | Serendipitous    | 
+| Final Result | Degree of Effect |
+|--------------|------------------|
+| - 5          | Catastrophic     |
+| 6 - 8        | Costly           |
+| 8 - 13       | Fail             |
+| 13 - 16      | Minor Fail       |
+| 17           | Fail in Style    |
+| 18           | Tie              |
+| 19 - 22      | Succeed          |
+| 23 - 27      | Succeed In Style |
+| 28 - 30      | Critical         |
+| 31 +         | Serendipitous    |
 
 #### Degrees of Effect Defined
 
@@ -3298,18 +3299,18 @@ that is completely unrelated to the task being attempted.
 
 **Extended Degrees of Effect**
 
-|Degree of Effect | Final σ | ± %  | 0 | \\- | \\+ | +0 |
-| ---------------:|:-------:|:----:|:-:|:---:|:---:|:--:|
-| Catastrophic    | \-4     | 400% | 7 | 8   | 1   | 0  |
-| Costly          | \-3     | 200% | 6 | 7   | 2   | 1  |
-| Fail            | \-2     | 150% | 5 | 6   | 3   | 2  |
-| Minor Fail      | \-1     | 100% | 4 | 5   | 4   | 3  |
-| Fail in Style   | \-1     | 100% | 4 | 5   | 4   | 3  |
-| Tie             | 0       | 100% | 3 | 4   | 5   | 4  |
-| Succeed         | 1       | 100% | 3 | 4   | 5   | 4  |
-| Succeed In Style| 2       | 75%  | 2 | 3   | 6   | 5  |
-| Critical        | 3       | 50%  | 1 | 2   | 7   | 6  |
-| Serendipitous   | 4       | 25%  | 0 | 1   | 8   | 7  |
+| Degree of Effect | Final σ | ± %  | 0 | \\- | \\+ | +0 |
+|-----------------:|:-------:|:----:|:-:|:---:|:---:|:--:|
+|     Catastrophic |   \-4   | 400% | 7 |  8  |  1  | 0  |
+|           Costly |   \-3   | 200% | 6 |  7  |  2  | 1  |
+|             Fail |   \-2   | 150% | 5 |  6  |  3  | 2  |
+|       Minor Fail |   \-1   | 100% | 4 |  5  |  4  | 3  |
+|    Fail in Style |   \-1   | 100% | 4 |  5  |  4  | 3  |
+|              Tie |    0    | 100% | 3 |  4  |  5  | 4  |
+|          Succeed |    1    | 100% | 3 |  4  |  5  | 4  |
+| Succeed In Style |    2    | 75%  | 2 |  3  |  6  | 5  |
+|         Critical |    3    | 50%  | 1 |  2  |  7  | 6  |
+|    Serendipitous |    4    | 25%  | 0 |  1  |  8  | 7  |
 
 Final σ: Used in Dice Chains
 ± %: Used when determining time or cost impacts
