@@ -1,5 +1,5 @@
 ---
-title: The Right Set of Skills
+title: What Makes a Hunan?
 date: 2023-07-22T18:51:10-07:00
 author:
   name: Ted Tschopp
@@ -17,8 +17,8 @@ excerpt: |
    Characteristics.
 
 layout: post
-guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
-permalink: /2023/07/22/The-Right-Set-of-Skills/
+guid: a4582203-c19a-401b-91ff-1ef3906e46a0
+permalink: /2023/07/22/What-Makes-a-Human/
 image: https://www.tedt.org/img/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
 image-credits: Photo by Ted Tschopp using Midjourney
 image_alt: Photo by Ted Tschopp using Midjourney
@@ -36,10 +36,37 @@ mathjax: true
 }
 </style>
 
+- [Character Sheet](#character-sheet)
 - [Creating Characters](#creating-characters)
   - [Aspects](#aspects)
   - [Characteristics](#characteristics)
   - [Knowledge Areas](#knowledge-areas)
+  - [Hallmarks](#hallmarks)
+    - [Environmental Hallmarks](#environmental-hallmarks)
+    - [Urban Hallmarks](#urban-hallmarks)
+    - [Occupational Hallmarks](#occupational-hallmarks)
+      - [Careers](#careers)
+    - [Recreational Hallmarks](#recreational-hallmarks)
+    - [Cultural Hallmarks](#cultural-hallmarks)
+  - [Gear](#gear)
+    - [Pocket Money](#pocket-money)
+    - [Personal Possessions](#personal-possessions)
+      - [Equipment](#equipment)
+      - [Adventuring Gear](#adventuring-gear)
+      - [Gear of Extraordinary Craftsmanship](#gear-of-extraordinary-craftsmanship)
+        - [Precious Objects](#precious-objects)
+        - [Marvelous Objects](#marvelous-objects)
+        - [Famous Artifacts](#famous-artifacts)
+    - [Assets](#assets)
+      - [How Assets Works](#how-assets-works)
+      - [Carrying and Transporting Assets](#carrying-and-transporting-assets)
+      - [Hiding Treasure](#hiding-treasure)
+      - [Cache](#cache)
+  - [Holdings](#holdings)
+    - [Rating](#rating)
+    - [Minimum Score](#minimum-score)
+    - [Running A Holding](#running-a-holding)
+    - [Holdings Upkeep](#holdings-upkeep)
 - [Bringing the Skills All Together](#bringing-the-skills-all-together)
   - [Fitness Aspects](#fitness-aspects)
     - [Muscle Characteristics](#muscle-characteristics)
@@ -261,6 +288,110 @@ mathjax: true
         - [Succeed in Style](#succeed-in-style)
         - [Critical Success](#critical-success)
         - [Serendipitous Success](#serendipitous-success)
+  - [Hallmarks Details](#hallmarks-details)
+      - [Rain Forest](#rain-forest)
+      - [Wetlands / Swamp](#wetlands--swamp)
+      - [Savanna](#savanna)
+      - [Desert](#desert)
+      - [Temperate Forest](#temperate-forest)
+      - [Grasslands](#grasslands)
+      - [Chaparral](#chaparral)
+      - [Taiga](#taiga)
+      - [Tundra](#tundra)
+      - [No-Atmosphere](#no-atmosphere)
+      - [Water](#water)
+        - [Surface](#surface)
+        - [Shore](#shore)
+        - [Sunlight](#sunlight)
+        - [Twilight](#twilight)
+        - [Midnight](#midnight)
+        - [Abyss](#abyss)
+      - [Underground](#underground)
+        - [Subsurface](#subsurface)
+        - [Subterranean](#subterranean)
+        - [Caves](#caves)
+        - [Tunnels](#tunnels)
+        - [Foundations](#foundations)
+    - [Enviromental Hallmarks](#enviromental-hallmarks)
+    - [Urban Hallmarks](#urban-hallmarks-1)
+      - [Rural](#rural)
+      - [Suburban](#suburban)
+      - [Low-Density Urban](#low-density-urban)
+      - [Medium-density urban](#medium-density-urban)
+      - [High-density urban](#high-density-urban)
+      - [Megacity](#megacity)
+      - [Metropolis](#metropolis)
+      - [Planetary Urbanization](#planetary-urbanization)
+    - [Occupational Hallmarks](#occupational-hallmarks-1)
+      - [Careers](#careers-1)
+    - [Recreational Hallmarks](#recreational-hallmarks-1)
+    - [Cultural Hallmarks](#cultural-hallmarks-1)
+
+
+
+# Character Sheet
+
+
+
+  - [Gear](#gear)
+    - [Pocket Money](#pocket-money)
+    - [Personal Possessions](#personal-possessions)
+      - [Equipment](#equipment)
+      - [Adventuring Gear](#adventuring-gear)
+      - [Gear of Extraordinary Craftsmanship](#gear-of-extraordinary-craftsmanship)
+        - [Precious Objects](#precious-objects)
+        - [Marvelous Objects](#marvelous-objects)
+        - [Famous Artifacts](#famous-artifacts)
+    - [Treasure](#treasure)
+      - [How Treasure Works](#how-treasure-works)
+      - [Carrying Treasure](#carrying-treasure)
+      - [Hiding Treasure](#hiding-treasure)
+      - [Trove](#trove)
+  - [Holdings](#holdings)
+    - [Rating](#rating)
+    - [Minimum Score](#minimum-score)
+    - [Running A Holding](#running-a-holding)
+    - [Holdings Upkeep](#holdings-upkeep)
+
+
+| Name                              | : Description                                                                |
+|:----------------------------------|:-----------------------------------------------------------------------------|
+| Holdings (Hometown):              |                                                                              |
+| - Rating                          | □ □ □ □ □ □ □ □                                                              |
+| - Name:                           | What is the name of this culture?                                            |
+| - Description:                    | Give a description of this culture so others who are playing can identify it |
+| - Cultural Hallmark:              | What are the cultural differentiators of this culture.                       |
+| - Occupational Hallmark & Career: | What occupation does the individual have and where are they in their career  |
+| - Environmental Hallmark:         | What is the environment that this holding is located in ?                    |
+| **Holdings (give details):**      |                                                                              |
+| - Rating                          | □ □ □ □ □ □ □ □                                                              |
+| - Name:                           | What is the name of this culture?                                            |
+| - Description:                    | Give a description of this culture so others who are playing can identify it |
+| - Cultural Hallmark:              | What are the cultural differentiators of this culture.                       |
+| - Occupational Hallmark & Career: | What occupation does the individual have and where are they in their career  |
+| - Environmental Hallmark:         | What is the environment that this holding is located in ?                    |
+
+▩ = Rating - Rated.  Contributes to the total rating.
+
+☒ = Damaged - Rated, but Damaged. Does not contribute to the total rating.
+
+▣ = Construction - Under Construction or Repairs. Does not contribute to Total.
+
+▢ = Unrated - Does not contribute to the total rating. 
+
+
+Gear:
+  Assets
+  Personal Possessions
+    Equipment
+    Adventuring Gear
+    Gear of Extraordinary Craftsmanship
+
+Recreational Hallmark:           
+Pocket Money:                     □ □ □ □ □ □ □ □ 
+
+
+
 
 # Creating Characters
 
@@ -363,6 +494,356 @@ skill from demonstrated competency.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
+## Hallmarks
+
+### Environmental Hallmarks
+
+Environmental hallmarks represent the knacks, insights and ‘survival
+secrets’ handed down by different people over the years, giving heroes
+raised in those cultures an edge.
+
+This represents the natural environment the character grew up in or
+spends their time in. A character who grew up in an urban area that
+never got out of the city may not have an Environmental Hallmark.
+
+### Urban Hallmarks
+
+Urban hallmarks represent the knacks, insights and ‘street secrets’
+handed down by different people over the years, giving heroes raised in
+those urban settings an edge.
+
+### Occupational Hallmarks
+
+Occupational hallmarks represent the knacks, insights and ‘craft
+secrets’ handed down by different trades over the years, giving heroes
+who have those jobs an edge.
+
+Pick an occupation that is culturally appropriate for the setting of the
+game and note it down. This represents the occupational environment the
+character grew up in or surrounds themselves when they are not
+adventuring.
+
+#### Careers
+
+As a part of their development, characters follow certain life paths
+called careers. The setting you play in will provide a variety of career
+options for characters to pursue, which opens opportunities for
+characters to gain skill levels, characteristic boosts and significant
+mustering out benefits before they enter into play.
+
+Careers are part of a setting, and the process to place a character into
+a career is determined by the settings rules/
+
+### Recreational Hallmarks
+
+Recreational hallmarks represent the knacks, insights and nuanced
+differentiations handed down by enthusiasts over the years, giving
+heroes raised in those cultures an edge.
+
+Pick a hobby that is culturally appropriate for the setting of the game
+and note it down. This represents how the character prefers to spend
+their free time relaxing.
+
+### Cultural Hallmarks
+
+Cultural Hallmarks are qualities that describe different aspects of a
+character’s build, temperament, and abilities, which can provide
+advantages in certain situations. The key principle governing Cultural
+Hallmarks is that their descriptions must make it reasonably believable
+that individuals possessing those qualities would perform better under
+the given circumstances compared to those who lack them. Virtues are not
+ranked and cannot be enhanced or improved.
+
+A Character may end up with more than one Cultural Hallmark, the one
+rule governing this is that a character cannot have opposing Hallmarks.
+Use the table below to identify opposing Cultural Hallmarks. In many
+cases there are multiple virtues that are similar to each other if
+players want to play a character who is conflicted.
+
+| Virtue       | Description                                                                                                                             | Opposing Virtue | Description                                                                                                                                                                                                                                                                                                                                                                   |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Adventurous  | You are willing to take risks and explore new, exciting experiences.                                                                    | Reckless        | You are not afraid to take bold action and pursue your passions.                                                                                                                                                                                                                                                                                                              |
+| Bold         | You are willing to take risks and confront danger or challenges with confidence and bravery.                                            | Cowardly        | You exercise caution and prudence in the face of perceived danger or challenges, but sometimes miss out on opportunities.                                                                                                                                                                                                                                                     |
+| Cautious     | You are careful and deliberate in your actions and decisions.                                                                           | Rash            | You are quick to take action, displaying confidence and courage. However, sometimes you may act impulsively or without considering the consequences.                                                                                                                                                                                                                          |
+| Clever       | You are able to think quickly and come up with creative solutions to problems.                                                          | Cunning         | You are able to use your intelligence and resourcefulness to achieve your goals, but you may use deceit or trickery in the process.                                                                                                                                                                                                                                           |
+| Curious      | You are eager to learn and understand new things.                                                                                       | Nosy            | You are interested in the affairs of others in an intrusive way.                                                                                                                                                                                                                                                                                                              |
+| Determined   | You are resolute in pursuing your goals and tasks                                                                                       | Stubborn        | You remain firm in your beliefs or opinions, even when faced with contrary evidence                                                                                                                                                                                                                                                                                           |
+| Eager        | You are enthusiastic and excited about pursuing your goals and interests.                                                               | Impatient       | You are motivated and want to achieve your goals quickly, but sometimes struggle with waiting and may become restless.                                                                                                                                                                                                                                                        |
+| Elusive      | You are hard to pin down and catch, not easily captured or defined.                                                                     | Slippery        | You are adaptable and able to change course quickly in the face of new information or circumstances.                                                                                                                                                                                                                                                                          |
+| Fair         | You are impartial and treat everyone equally and justly.                                                                                | Biased          | You have strong preferences and opinions, which can sometimes affect your judgment.                                                                                                                                                                                                                                                                                           |
+| Fair-spoken  | You are able to communicate with others in an honest way                                                                                | Manipulative    | You have a talent for persuading others to your point of view, sometimes by bending the truth or withholding information                                                                                                                                                                                                                                                      |
+| Fierce       | You are bold and intense in pursuit of your goals and ideals                                                                            | Savage          | You are fiercely passionate and unyielding in defending what you believe is right, sometimes leading to excess or harm to others                                                                                                                                                                                                                                              |
+| Forthright   | You are direct and honest in your communication.                                                                                        | Evasive         | You are skilled at finding tactful ways to avoid confrontation.                                                                                                                                                                                                                                                                                                               |
+| Gruff        | You are direct and to-the-point in your communication.                                                                                  | Rude            | You are unapologetically honest and do not shy away from confrontation.                                                                                                                                                                                                                                                                                                       |
+| Hardened     | You are tough and resilient, able to withstand difficult situations.                                                                    | Callous         | You are strong and unemotional, not easily affected by the suffering of others.                                                                                                                                                                                                                                                                                               |
+| Hardy        | You are able to withstand challenges and adversity with resilience, strength, and endurance.                                            | Fragile         | You are rare, valuable, vunerable, delicate and precious, you need to be handled with care, and therefore you require extra support, protection, special care and attention.                                                                                                                                                                                                  |
+| Honorable    | You are someone who is honest, ethical, and has strong principles                                                                       | Dishonorable    | You sometimes prioritize personal gain or expediency over your principles or integrity                                                                                                                                                                                                                                                                                        |
+| Keen-eyed    | You are observant and perceptive, noticing details                                                                                      | Oblivious       | You are open-minded and do not judge quickly, details matter little to you, and you give others the benefit of the doubt, seeing the good in them first                                                                                                                                                                                                                       |
+| Lordly       | You are confident and dignified, and you command respect with your presence and actions.                                                | Servile         | You tend to be overly deferential and submissive to authority figures, but you demonstrate a deep respect for others and a willingness to serve.                                                                                                                                                                                                                              |
+| Cheerful     | You are someone who is optimistic and sees the positive side of things, bringing joy and a lightheartedness to those around you.        | Grim            | You are someone who is serious, stern, or realistic, and tends to focus on the risks of a situation.                                                                                                                                                                                                                                                                          |
+| Fierce       | You are brave and have a powerful intensity in pursuing your goals                                                                      | Timid           | You are cautious and thoughtful in your actions and decision making.                                                                                                                                                                                                                                                                                                          |
+| Patient      | You are able to remain calm and composed in the face of delays, difficulties, and provocation, waiting calmly for your desired outcome. | Impatient       | You have a sense of urgency and a desire for immediate results, which can cause frustration and anxiety in situations where you have to wait or deal with delays.                                                                                                                                                                                                             |
+| Robust       | You are strong and resilient, able to withstand challenges and overcome obstacles.                                                      | Weak            | You are gentle and flexible, open to different perspectives and willing to collaborate.                                                                                                                                                                                                                                                                                       |
+| Secretive    | You are discreet in your communications and keep confidences well                                                                       | Open            | You are transparent and forthright in your communication and actions                                                                                                                                                                                                                                                                                                          |
+| Steadfast    | You are resolute in your beliefs and remain unwavering.                                                                                 | Fickle          | You are adaptable and open to change and new perspectives.                                                                                                                                                                                                                                                                                                                    |
+| Stern        | You are resolute and uncompromising in your decisions, showing no tolerance for error or wrongdoing.                                    | Lenient         | You tend to be forgiving and understanding, giving people second chances and showing them mercy when they make mistakes.                                                                                                                                                                                                                                                      |
+| Suspicious   | You are cautious and discerning in your judgments.                                                                                      | Trusting        | You are open-minded and willing to give people the benefit of the doubt.                                                                                                                                                                                                                                                                                                      |
+| True-hearted | You are sincere, honest, and loyal to yourself and others, and you always stand by your principles and values.                          | False-hearted   | You may have the ability to adapt to different situations and people, and you can easily present a different image of yourself to others.                                                                                                                                                                                                                                     |
+| Trusty       | You are dependable, reliable, and worthy of confidence.                                                                                 | Unreliable      | You are spontaneous, adaptable, and not tied to commitments.                                                                                                                                                                                                                                                                                                                  |
+| Wary         | You are cautious and vigilant, taking care to avoid danger and ensure your own safety and well-being.                                   | Careless        | You are free-spirited and adventurous, unburdened by worries or concerns about potential risks or negative consequences, and always willing to embrace new experiences and opportunities with open arms. While you may occasionally face setbacks or difficulties as a result, you remain optimistic and confident in your ability to navigate whatever challenges may arise. |
+| Forgiving    | You are willing to let go of anger or resentment towards those who have wronged you, and offer them mercy and compassion.               | Wrathful        | You are passionate and deeply committed to what you believe is right, and unafraid to stand up for yourself.                                                                                                                                                                                                                                                                  |
+| Chaste       | You are pure in your thoughts and behaviors, and you refrain from sexual immorality.                                                    | Lustful         | You are passionate and have a strong desire for physical intimacy with others, which can also show that you are capable of great love and affection.                                                                                                                                                                                                                          |
+| Energetic    | You are active, enthusiastic and full of energy, always willing to take on new challenges and put in effort to achieve your goals.      | Lazy            | You prefer to conserve your energy for more important tasks, and take time to rest and recharge so you can be more productive in the long run.                                                                                                                                                                                                                                |
+| Forgiving    | You are willing to let go of past grievances and extend compassion towards others who have wronged you.                                 | Vengeful        | You are deeply committed to seeking justice and defending what is right, sometimes at the cost of personal sacrifice.                                                                                                                                                                                                                                                         |
+| Generous     | You are someone who freely gives and is willing to share what you have with others without expecting anything in return.                | Selfish         | You are someone who prioritizes your own needs and desires over those of others, but this can also mean that you are self-sufficient and know how to take care of yourself.                                                                                                                                                                                                   |
+| Honest       | You are truthful and transparent in your words and actions, and always strive to maintain integrity.                                    | Deceitful       | You have the ability to see situations from multiple perspectives and adapt your words and actions accordingly. However, you may use this skill to manipulate others for your own benefit rather than being honest and transparent.                                                                                                                                           |
+| Just         | You are fair and impartial, and base your decisions on reason and fact.                                                                 | Arbitrary       | You are flexible and open-minded, able to consider many different perspectives before making a decision.                                                                                                                                                                                                                                                                      |
+| Merciful     | You are compassionate and show forgiveness.                                                                                             | Cruel           | You prioritize justice and hold others accountable.                                                                                                                                                                                                                                                                                                                           |
+| Modest       | You are humble and unassuming, not drawing attention to yourself or boasting about your achievements.                                   | Proud           | You have a healthy self-respect and confidence in your abilities, and are willing to take credit for your accomplishments.                                                                                                                                                                                                                                                    |
+| Pious        | You are deeply religious and devoted to your faith.                                                                                     | Worldly         | You enjoy life's pleasures and seek out worldly experiences in a way that brings joy to others.                                                                                                                                                                                                                                                                               |
+| Prudent      | You are cautious and wise in your decision-making.                                                                                      | Reckless        | You are someone who takes bold and daring risks to achieve great things.                                                                                                                                                                                                                                                                                                      |
+| Temperate    | You are able to exercise self-control and avoid excess.                                                                                 | Indulgent       | You enjoy the pleasures of life in moderation, but can sometimes lack the self-control necessary to avoid overindulging in them.                                                                                                                                                                                                                                              |
+| Trusting     | You are willing to believe in the honesty and reliability of others, and to extend trust to them.                                       | Suspicious      | You are cautious and careful when dealing with others, and do not easily accept what they say or do.                                                                                                                                                                                                                                                                          |
+| Valorous     | You are brave and courageous, showing great courage.                                                                                    | Cowardly        | You are cautious and careful, avoiding unnecessary risks.                                                                                                                                                                                                                                                                                                                     |
+
+## Gear
+
+You don't find yourself under a familiar roof for much of the year. You may opt for an outdoor lifestyle, or circumstances may compel you to take refuge in unconventional locations or seek shelter in remote areas. Your first test of skill is choosing the right amount of equipment to carry, aiming for a manageable load—an indication of your expertise in the field. The same principle applies to your tactical gear. You must resist the temptation to opt for the most powerful weapons and most protective armor, as such heavy and unwieldy burdens are likely to significantly impede your operational capabilities.
+
+
+### Pocket Money
+
+You do not have to keep track of accommodation, food, or incidental
+travel expenses as long as your Hero's spending stays within the limits
+of their pocket money. These limits are determined by the Referee.
+
+Money will likely only become a concern during play when large amounts
+are being spent. This could include preparing for a major trip,
+purchasing expensive items like a vehicle or rare book, or hiring extra
+staff.
+
+If you spend an amount beyond your 'spending limit,' you must reduce
+your cash by the full amount spent. If you don't have enough cash, you
+can consider using your assets. Converting assets into cash takes time,
+and the duration is determined by the Referee. Processes like mortgaging
+a property, selling antiques, converting assets into pocket money, or
+obtaining loans all require time. If you are away from your hometown,
+these processes are likely to take even longer.
+
+If you make multiple purchases below your spending threshold on the same
+day, the Referee may require you to combine the total purchases to
+compare them with your spending level. If you exceed the spending limit,
+you'll need to deduct the excess cash spent. The above tables will give
+you and the Referee guidelines on how to handle this.
+
+| **Pocket Money Rating** | **Description**                                         | **Accommodations**                                            | **Forms of Travel**                                      | **Rules Notes**                                                                                                                                                      |
+|-------------------------|---------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1                       | No money or resources to meet basic needs.              | Makeshift shelters, public assistance, or homelessness.       | Walking, hitchhiking, or public transportation.          | Has no means to purchase anything outside of bartering for services they can provide                                                                                 |
+| 2                       | Barely making ends meet, with limited resources.        | Shared accommodations or low-budget housing options.          | Public transportation or carpooling.                     | Does not have the means to handle day-to-day expense. Must rely on the charity of others. Have the means to make an unexpected expense once a season to once a year. |
+| 3                       | Limited disposable income, living paycheck to paycheck. | Modest apartments or small houses in affordable areas.        | Public transportation, economy class flights.            | Have the means to handle some day-to-day expenses, but prefers to rely on the charity of others. Have the means to make an unexpected expense once a Month           |
+| 4                       | Stable income, comfortable living, and some savings.    | Comfortable homes or condominiums in decent neighborhoods.    | Personal vehicle, economy class flights.                 | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense once a week                                                               |
+| 5                       | Higher income, substantial savings, and investments.    | Spacious homes in desirable neighborhoods, luxury apartments. | Personal vehicles, occasional business class flights.    | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense once a day                                                                |
+| 6                       | Considerable wealth and financial security.             | Expansive houses, penthouses, or luxury real estate.          | Personal vehicles, private jets or first-class flights.  | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
+| 7                       | Abundant wealth, influential in society.                | Mansions, private estates, or luxury properties.              | Personal vehicles, private jets or chartered yachts.     | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
+| 8                       | Extraordinary wealth, among the richest in the world.   | Lavish estates, private islands, or extravagant residences.   | Personal vehicles, private jets, yachts, or helicopters. | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
+
+During the game, your character may receive a substantial sum of money
+as a reward. Treat such windfalls as Assets.
+
+Taking on and repaying debts is all part of your story. It could involve
+selling your Hero's car or seeking money from a loan shark. While
+financial transactions are not the main focus of play, the gradual
+decline of your character's finances may go hand-in-hand with the
+deterioration of your Mental, Social, or Spiritual Aspects.
+
+### Personal Possessions
+
+You embark on your journey fully prepared for long periods of travel and
+sleeping in the open. It is expected that every character carries the
+necessary equipment for an adventurous life. This equipment consists of
+two main categories: Equipment and Adventuring gear.
+
+#### Equipment
+
+You can apply the same approach when you're wondering if your character
+should already possess a specific item as part of their standard
+belongings. If you find yourself in this situation, ask yourself (or
+consult the Referee) about the relevance of the object to your
+character's profession. In such cases, your character's occupation
+should offer the most insights, particularly when considering their
+appropriate Pocket Money.
+
+Should a Treasure-Hunter have among his possessions a set of lock-picks?
+Yes, and a high-quality set it is, too.
+
+#### Adventuring Gear
+
+At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own culture, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale. 
+
+#### Gear of Extraordinary Craftsmanship
+
+At the start of the game, you select your operative's initial equipment. This includes standard-issue weapons, a set of tactical armor, and perhaps additional protective gear like a helmet or shield and a cell phone.
+
+Gear of Extraordinary Craftsmanship is another matter. Such items could be gifts from your organization, family, or perhaps a high-ranking official allows you to choose a piece of equipment from their private arsenal. Alternatively, you might have personally modified, repaired, or adapted this gear to meet your specific needs. The types of modifications and customizations depend on both the item itself and the technology or culture that produced it, as well as your own operative's background.
+
+Whenever your operative advances in rank, you earn a Bonus. This Bonus allows you to enhance one piece of equipment with a new specialized feature. Each time your operative acquires an item of exceptional quality, you should craft a narrative to commemorate this milestone for your character.
+
+If your character happens to lose any of their Gear of Extraordinary Craftsmanship, they will be able to acquire standard Adventuring Gear to replace it. However, all the customizations, advanced features, and other unique aspects of that gear will be lost until you retrieve them. You may choose to abandon this equipment, but doing so will affect your reputation and may lead to other unintended consequences, depending on who ends up with the gear.  In either event, such losses will effect the overall narrative structure of your story.
+
+##### Precious Objects
+
+You will come across that exude an extraordinary and captivating allure.
+Gemstones, jewels, enchanted crystals, cybernetic implants, holographic
+data chips, plasma-infused ornaments, Neural Circlets, nanotech-infused
+accessories, and Quantum Rings of unparalleled quality and mystical
+allure are recognized as Precious Objects. Their extraordinary beauty
+arises from the mastery of skilled artisans, advanced technology, or the
+infusion of subtle arcane energies.
+
+##### Marvelous Objects
+
+You come across objects that possess extraordinary properties that
+ordinary mortals would deem magical or at the very least marvelous.
+These items may include high-tech cloaking suits that render the wearer
+invisible to surveillance systems, drums capable of inducing fear in
+enemies and joy in allies, and augmented reality lenses integrated into
+sleek cybernetic eyewear, allowing the user to effortlessly locate and
+retrieve lost items. These remarkable items are imbued with advanced
+enhancements that amplify the innate abilities of their owners. The
+higher your status and capabilities, the more you will understand these
+artifacts and the advantages they bestow. While these objects are
+typically not weapons, they are valuable possessions carried by the
+heroes of this world. Each of these marvels carries a rich backstory,
+with hints of their origins and remarkable abilities, adding depth and
+intrigue to their presence.
+
+##### Famous Artifacts
+
+You will occasionally encounter Precious and Marvelous Objects that bear specific designations. These are often identified by the name of their inventor or their most renowned owner. However, Famous Artifacts always possess distinct names and may even have multiple names, as they are known and referred to differently among various organizations or cultures. Once you utilize one long enough, these items may acquire additional names based on your actions or what you choose to call them.
+
+Famous Artifacts, each possessing unique capabilities, may have visual or auditory cues that make them stand out, such as a distinct light or sound. However, in some cases, these special qualities are more discreet, barely noticeable to the untrained eye. It's important to note that every Iconic Item has a rich backstory that merits thorough investigation.
+
+These items are not just defined by their own characteristics but also by their inventors, the cultures or organizations from which they originate, the significant events they have been part of, and the diverse groups of people who have utilized them throughout history. All these factors contribute to the advantages and drawbacks that these items carry. While you may not be aware of all the intricate details surrounding an Famous Artifacts, as an operative, you may wish to uncover these hidden truths through various means, such as research, consultation with experts, or undertaking special missions.
+
+You will find that sponsors, leaders, and subject matter experts from different organizations possess extensive knowledge about these items. Seeking their guidance will prove invaluable in unraveling the hidden histories of these assets. By consulting with these knowledgeable individuals, you can delve deeper into the origins, significance, and remarkable stories associated with these items.
+
+Moreover, it's worth noting that any equipment you acquire classified as Exceptional Quality or above holds potential for further interactions. You can exchange such exceptional items with the aforementioned leaders to unlock additional features and capabilities that lie within the exceptional items found in Caches. This exchange opens up new possibilities and enhances the potential of these powerful assets, allowing you to tap into their full capabilities and utilize them to your advantage.
+
+
+### Assets
+
+You and your team will inevitably encounter various assets as you navigate through unfamiliar territories. It could be the long-forgotten hoard
+of a deceased Dragon, or the hidden cache left behind by a rogue spy agency, a valuable stash of data and technology guarded by a rogue AI, or the accumulated resources amassed by generations of space pirates. These assets offer you and your colleagues a compelling objective for your missions, an opportunity to increase your personal resources, and a means to uncover hidden stories from the regions you explore.
+
+#### How Assets Works
+
+You accumulate Assets as you acquire materials and items of significant value, such as currency, valuable data, and specialized technology. These possessions signify wealth far beyond the ordinary, and you have the option to invest your Assets when you're not actively engaged in missions or operations. The value of each Asset is determined by a rating system, starting at a minimum of 1, which roughly corresponds to the resources necessary to sustain an operative for a month at a Prosperous Standard of Living, and potentially scaling upwards from there.
+
+You record your personal Assets rating on the back of your character
+sheet and keep it updated as you discover and utilize it. When you and
+your fellow Company members come across a treasure, you must distribute
+it among yourselves, dividing its rating as you deem appropriate and
+noting your individual shares on your character sheets. If you have
+people accompanying you on your adventures that require payment, you
+must also share this treasure with them according to the rules outlined
+for them.
+
+You have the opportunity to utilize the wealth indicated by your
+Asset rating when you decide to dedicate a Season to staying at home.
+During this period, you can engage in various types of investments, each
+requiring a specific amount of Asset points. These investments will
+shape the activities you pursue throughout the season.
+
+| Rating | Description                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------------------|
+| 1      | Sufficient funds to sustain you at a Prosperous Standard of Living for a month.                                |
+| 2      | Enough funds for a month-long bender of indulgence in the neon-lit underbelly of the city.                     |
+| 5      | A gift fit for royalty, an extravagant treasure.                                                               |
+| 10     | Alien technology salvaged from a crashed spacecraft.                                                           |
+| 50     | A substantial treasure amassed by an Orc chieftain.                                                            |
+| 100    | A cache of highly advanced weapons or a prototype device with incredible capabilities.                         |
+| 200    | Loot from Trolls, including valuable and scarce objects.                                                       |
+| 500    | A comprehensive database of government secrets, exposing the hidden truths behind the city's power structures. |
+| 1000   | fragment of a legendary extraterrestrial relic said to possess immense cosmic power.                           |
+
+#### Carrying and Transporting Assets
+
+You, as a player, have the option to take on the responsibility of managing the assets you acquire, whether it's transporting secure data drives or carrying specialized equipment. Each unit of asset you carry adds to your Encumbrance, resulting in a one-point increase to your Fatigue rating for every unit of asset you choose to manage. It's important to consider the implications of carrying too much in the way of assets, as it affects your character's overall stamina.
+
+#### Hiding Treasure
+
+The currency, data files, technology, or other assets that a few units of Asset represent might be more than you're willing to manage during your missions. You may choose to secure your assets in a nearby safe location, planning to return later to retrieve them.
+
+#### Cache
+
+As a seeker of assets, you know that while they may not degrade like physical materials, certain resources possess a corruptive influence that surpasses tangible goods. The allure of valuable assets can ignite a fierce desire within those who seek them. You understand the distinction between a payment for your services from a corporation and a hidden stash of confidential data stored in a secure server. Both hold value as assets, but the latter is a Cache, possessing an additional allure and a darker influence. The assets you uncover within a rogue agency's hidden base or stored within a long-forgotten data vault may carry a taint, their value capable of driving individuals to distraction and filling their hearts with insatiable ambition.
+
+You must pass a Mystic test upon discovering tainted Cache, or you'll suffer Spiritual Damage.
+
+In addition to just currency and valuable data, a Cache can also contain other items such as advanced technology, high-value art pieces, and other renowned or long-forgotten intellectual property.
+
+## Holdings
+
+Throughout the campaign, you may acquire a holding. In a fantasy setting, this could be a business like a smithy or a tavern. Alternatively, you might own a farm where peasants till the land and share a portion of each harvest with you. In a modern context, your holding could be a tech startup or a small consultancy firm. Holdings aren't limited to physical assets; your family and home could also constitute a holding.
+
+Your holding serves as your main occupation when you're not out adventuring or, in a modern scenario, when you're not engaged in other high-stakes activities. Not everyone has a holding.
+
+### Rating
+
+There are multiple avenues for you to acquire a holding. You might inherit one from a wealthy family member if you're lucky. More commonly, you gain a holding as the outcome of an adventure, either as a gift or by discovering an unclaimed holding and taking it for yourself.
+
+| Description | Rating Score | Example (Sci-Fi, Mystery, Steampunk, Fantasy)                                                                                                       |
+|-------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Meager      | 1            | Space Capsule, Detective's Office, Steam-Powered Hut, Hermit's Cell                                                                                 |
+| Humble      | 2            | Research Lab on a Minor Planet, Private Investigator's Office, Clockwork Workshop, Shepherd Dwelling                                                |
+| Modest      | 3            | Space Freighter, Small Detective Agency, Airship Hangar, Trapper's Cabin                                                                            |
+| Adequate    | 4            | Planetary Farm, Suburban Home, Steam Factory, Farm Cottage                                                                                          |
+| Respectable | 5            | Space Station, Historic Mansion, Steampunk Inn, Small Castle                                                                                        |
+| Superior    | 6            | Advanced Research Facility, Renowned Detective Agency, Grand Airship, Large Inn                                                                     |
+| Thriving    | 7            | Asteroid Mining Operation, Nationally Investigation Bureau with Offices in multiple Locations, Steam-Powered Factory Complex, Merchant's Guild Hall |
+| Opulent     | 8            | Planetary Trade Hub, Mansion with Secret Passages, Grand Steampunk Mansion, Large Estate with Gold Mine                                             |
+
+The worth of your holding is quantified in game terms by a numerical rating that ranges from 1 to 8. This rating is similar to the Target Number for an action, where a lower number is generally more desirable than a higher one. For instance, a struggling farm on a rocky hillside might have a rating of 1, while a prosperous farm in an easily accessible, fertile valley could have a rating of 6.
+
+### Minimum Score
+
+You can't own a holding unless you have a minimum score in a relevant characteristic. If the holding is within the borders of your homeland, its rating is limited by your Social score. If the holding is located outside your homeland, then its rating is capped by your Reputation score.
+
+### Running A Holding
+
+The day-to-day tasks of managing a business—like planting crops, mining ore, or forging tools—can be set aside in the game. It's assumed that you either have the necessary skills or can hire someone who does. What really matters is how your holding might evolve over time and what benefits it yields.
+
+### Holdings Upkeep
+
+You will need to make a roll for your holding during the last Season of
+each year if your hero possesses one.
+
+If your roll result is equal to or lower than the holding's rating, your
+holding will generate enough wealth to maintain your character's Pocket
+Money level.
+
+However, the Referee has the discretion to interpret a result of 1 or 2,
+based on the current circumstances, as the holding failing to produce
+sufficient wealth to cover your living expenses. In such cases, you may
+need to spend stored Treasure to sustain your Pocket Money.
+
+On the other hand, if your roll result exceeds the holding's rating, not
+only will your character enjoy their appropriate Pocket Money, but if
+the holding is capable of generating wealth (e.g., an inn or tracts of
+land), it will earn Treasure equal to the difference between the roll
+and the rating.
+
+For example, if a player rolls a 9 on a holding rated 6, he earns three
+Treasure that year.
+
+If the result is Good, then good fortune strikes the hero! He gains no
+extra Treasure but prospers in some other way – a sick child recovers,
+an old feud is settled, the weather is unusually pleasant. The rating
+for the holding is permanently lowered by 1 (to a minimum of 3)
+
+If the result is bad, then the holding suffers some disaster or
+misfortune. If the hero does not take action in the next Season, the
+holding may be destroyed or have its rating increased.
 
 # Bringing the Skills All Together
 
@@ -3318,5 +3799,717 @@ Final σ: Used in Dice Chains
 0 & +0: Used for ranking results into groups based on a zero based numbering system.  Overtime these will be merged
 + & -: Used for ranking results into groups based on a non-zero based numbering system  Overtime these will be merged.
 
+## Hallmarks Details 
 
 
+
+#### Rain Forest
+
+You are from the lush heart of the rainforest, where towering trees
+create a majestic canopy above you. The air is thick with humidity, and
+the symphony of exotic bird calls and buzzing insects surrounds you.
+From an early age, you learned to navigate the winding trails, feeling
+the damp earth beneath your bare feet. The vibrant green foliage is your
+playground, as you swing from sturdy lianas and discover hidden
+waterfalls. You have witnessed the enchanting dance of sunlight
+filtering through the dense foliage, casting dappled patterns on the
+forest floor. The scent of earth, moss, and blooming orchids is
+ingrained in your memories, as is the chorus of frogs serenading the
+arrival of each evening. You have grown up in harmony with this living,
+breathing ecosystem, understanding its delicate balance and the secrets
+it holds within its depths. The rainforest is your home, and its beauty
+and wonders are forever etched in your soul.
+
+#### Wetlands / Swamp
+
+You are from the enchanting realm of the wetlands, where the earth gives
+way to a mosaic of marshes, ponds, and winding waterways. You have known
+the ebb and flow of the tides, the gentle sway of the tall grasses that
+surround you. From a young age, you learned to navigate the treacherous
+terrain, stepping carefully on spongy ground and balancing on hidden
+roots. The air is thick with the scent of damp earth and decaying
+vegetation, a reminder of the cycle of life in this rich ecosystem. You
+have witnessed the mystical dance of mist rising from the water's
+surface, obscuring the boundaries between land and sky. The calls of
+waterfowl and the chirping of insects form a constant symphony,
+punctuated by the occasional deep croak of a hidden bullfrog. You have
+grown up in harmony with this untamed landscape, understanding its
+secrets and the resilience of its inhabitants. The wetlands are your
+home, and their untamed beauty and quiet majesty are forever etched in
+your spirit.
+
+#### Savanna
+
+You are from the vast and golden expanse of the savanna, where the
+horizon stretches endlessly before you. You have known the warmth of the
+sun on your skin and the gentle sway of the tall grasses that surround
+you. From a young age, you learned to navigate the open plains, honing
+your senses to detect the subtlest signs of life. The air is alive with
+the scent of earth and the sweet aroma of wildflowers, carried by a
+gentle breeze. You have witnessed the dramatic spectacle of
+thunderstorms rolling across the sky, their rumbling echoes resonating
+through the land. The symphony of nature fills your ears, from the
+melodic chirping of birds to the distant roars of majestic lions. You
+have grown up in harmony with this untamed wilderness, understanding its
+rhythms and the interconnectedness of its inhabitants. The savanna is
+your home, and its vastness and raw beauty have shaped your spirit in
+ways that words cannot capture.
+
+#### Desert
+
+You are from the vast and arid desert, a land of relentless sun and
+shifting sands. You have known the searing heat that beats down upon you
+during the day, and the chilling cold that sweeps across the barren
+landscape at night. From an early age, you learned to navigate the
+dunes, reading the subtle patterns and signs left by the wind. Your
+footsteps have become one with the soft grains of sand, leaving imprints
+that disappear as quickly as they appeared. You have witnessed the
+mesmerizing dance of sandstorms, their swirling fury obscuring the
+horizon and filling the air with a gritty embrace. The solitude of the
+desert has taught you resilience and self-sufficiency, as survival here
+demands resourcefulness and adaptation. You have learned to find beauty
+in the stark simplicity of this landscape, in the delicate oasis that
+blooms amidst the harshness. The desert has sculpted your spirit,
+instilling in you a deep appreciation for endurance and the quiet
+strength that lies within.
+
+#### Temperate Forest
+
+You are from the enchanting realm of the temperate forest, where
+towering trees create a canopy that filters the sunlight and casts a
+gentle, dappled glow upon the forest floor. From the moment you took
+your first steps, you were embraced by the lush greenery and the
+soothing whispers of rustling leaves. You have wandered through
+moss-covered paths, feeling the coolness under your bare feet and the
+earthy scent that permeates the air. The forest has been your
+playground, a sanctuary of wonders waiting to be explored. You have
+witnessed the dance of woodland creatures, from playful squirrels to
+majestic deer, as they navigate their domain with grace. The symphony of
+birdsong has been the soundtrack of your days, each melodious note a
+reminder of the harmony that thrives in this serene world. The forest
+has taught you reverence for nature, instilling a deep connection to the
+cycle of life and the interconnectedness of all living beings. It has
+nurtured your curiosity and awakened a sense of wonder that lingers
+within your heart.
+
+#### Grasslands
+
+You are from the vast and sweeping grasslands, where the horizon
+stretches endlessly before you, painted in hues of gold and green. It is
+a land of open spaces, where the wind whispers secrets through the
+blades of grass that sway beneath your feet. From the moment you took
+your first breath, the gentle rustle of the prairie became your lullaby,
+and the scent of wildflowers filled your senses. You have felt the soft
+caress of the wind on your skin, carrying with it the fragrance of
+freedom. The grasslands have been your playground, a stage for
+exploration and adventure. You have witnessed the grand spectacle of
+migrating herds, their rhythmic movement resonating with the pulse of
+the earth. You have run alongside playful prairie dogs, their chirping
+calls echoing in the air. The boundless expanse has taught you
+resilience, instilling a deep appreciation for simplicity and the
+harmony of nature. It has nurtured your spirit, awakening a sense of
+unity with the land and a profound understanding of the delicate balance
+that sustains life on the plains.
+
+#### Chaparral
+
+You are from the enchanting realm of the chaparral, a place where the
+scent of aromatic herbs fills the air and the warmth of the sun embraces
+your skin. It is a landscape of rugged beauty, where twisted branches of
+resilient shrubs reach towards the sky, painted in hues of earthy greens
+and muted browns. The chaparral has been your sanctuary, your home
+amidst the intricate maze of thorny thickets and sun-drenched hillsides.
+From an early age, you have danced through the dappled sunlight, guided
+by the chorus of buzzing insects and the melodic calls of birds perched
+on gnarled branches. The crackling of dried leaves beneath your feet has
+been a constant companion, as you navigate the hidden pathways that wind
+through this wild sanctuary. You have grown up surrounded by the
+resilience of chaparral plants, their ability to withstand drought and
+fire teaching you the importance of adaptation and survival. The
+chaparral has shaped your spirit, imbuing you with a deep appreciation
+for the delicate balance between resilience and fragility, and nurturing
+a sense of connection to the untamed beauty of this arid land.
+
+#### Taiga
+
+You are from the breathtaking realm of the taiga, a land of towering
+evergreens and crisp, cool air. From a young age, you have been
+surrounded by the majestic presence of coniferous trees, their
+needle-like leaves rustling in the gentle breeze. The landscape is
+adorned with tranquil lakes and meandering rivers, their pristine waters
+reflecting the ethereal glow of the northern lights that dance across
+the night sky. Winter blankets the taiga in a glistening coat of snow,
+transforming it into a magical wonderland where you have spent countless
+hours skiing and building snow forts. In the brief summer months, the
+taiga bursts with life as vibrant wildflowers blanket the forest floor,
+and migratory birds fill the air with their melodic songs. You have
+grown up in harmony with the rhythm of the seasons, learning the art of
+survival from the resilient wildlife that calls this place home. The
+taiga has instilled in you a deep appreciation for the serenity of
+nature and the delicate balance of its ecosystems, shaping you into a
+steward of this pristine wilderness.
+
+#### Tundra
+
+You are from the vast and seemingly endless expanse of the tundra, a
+land of extreme cold and rugged beauty. Born amidst the barren
+landscape, you have known a life shaped by the harshness of this
+environment. The tundra stretches out before you, its frozen ground
+dotted with hardy shrubs and mosses that bravely cling to survival.
+Winter reigns supreme, with long, frigid nights and winds that bite at
+your skin. You have witnessed the arrival of the brilliant Northern
+Lights, painting the sky with vibrant hues, offering solace in the midst
+of the unforgiving cold. In the brief summer months, the tundra
+transforms into a carpet of colorful wildflowers, and the sun barely
+sets, providing endless daylight for the bustling wildlife. You have
+learned to navigate the treacherous terrain, forging paths through icy
+tundra rivers and encountering resilient creatures like the majestic
+caribou and the elusive Arctic fox. The tundra has taught you resilience
+and adaptability, instilling in you a deep connection to the raw beauty
+of this frigid wilderness.
+
+#### No-Atmosphere
+
+You are from a world devoid of atmosphere, a place where the vast
+expanse of space stretches endlessly before you. Growing up in this
+airless void, you have known the weightlessness of existence, floating
+amidst the stars and celestial bodies. The absence of atmosphere means
+there is no sound, no wind, and no weather. Your home is a realm of
+silence, where the only companions are the distant twinkling stars and
+the ever-changing cosmic wonders. You have witnessed the breathtaking
+beauty of nebulae and galaxies, their vibrant colors illuminating the
+darkness. The lack of air also means that you rely on advanced
+technology and specially designed spacesuits to survive, as even the
+simplest tasks require careful consideration. Living in a world without
+an atmosphere has taught you to appreciate the preciousness of
+breathable air and the significance of the environments that support
+life. You carry with you a sense of awe and wonder, knowing that your
+existence is intimately connected to the vastness of the universe.
+
+#### Water
+
+##### Surface
+
+The surface of the ocean is your home. From the moment you were born,
+you were surrounded by the rhythmic sound of waves crashing against the
+shores. The sight of endless horizons of sparkling blue water has become
+a part of your everyday life. You have learned to navigate the gentle
+swells and currents, diving into the depths to explore the hidden
+wonders beneath the surface. The ocean has been your playground,
+offering a diverse ecosystem teeming with vibrant marine life. You have
+witnessed the beauty of coral reefs, swam alongside playful dolphins,
+and marveled at the graceful movements of majestic whales. The ocean's
+vastness and power have instilled in you a deep respect for nature and a
+sense of interconnectedness with the world around you. It has shaped
+your perspective, fostering a sense of curiosity, exploration, and
+adaptability. The ebb and flow of the tides have become a metaphor for
+the ever-changing nature of life itself, reminding you of the importance
+of resilience and embracing the unknown.
+
+##### Shore 
+
+You are from the enchanting world of the ocean surface and the
+shoreline, where the meeting point of air, land and sea becomes your
+playground and home. Growing up in this vibrant and ever-changing
+environment, you have felt the caress of gentle waves against your skin
+and the warmth of the sun reflecting off the glistening water. The
+rhythmic sound of crashing waves and the salty scent of the sea are your
+constant companions, filling you with a deep sense of tranquility and
+wonder. You have spent countless hours exploring tide pools, discovering
+the hidden treasures nestled among the rocks and witnessing the diverse
+marine life that thrives in this watery realm. From playful dolphins to
+graceful seabirds soaring overhead, you have witnessed the harmony of
+life both above and below the surface. The tides have become your clock,
+guiding your daily rhythms and marking the passage of time. The
+shoreline, with its sandy beaches and towering cliffs, has been your
+canvas for endless adventures and cherished memories. You carry the
+spirit of the ocean within you, forever drawn to the vastness and
+mystery of the sea.
+
+##### Sunlight
+
+You are from the mesmerizing realm of the ocean sunlight zone, where the
+sparkling rays of sunlight penetrate the surface and illuminate a world
+of vibrant colors and abundant life. Growing up in this radiant expanse,
+you have experienced the joy of swimming through the warm, crystal-clear
+waters, feeling the gentle caress of the currents against your skin.
+Sunbeams dance through the azure depths, casting enchanting patterns on
+the sandy seafloor below. Your days have been filled with the
+captivating sight of colorful coral reefs, teeming with a kaleidoscope
+of tropical fish and intricate marine creatures. From graceful sea
+turtles gliding gracefully by to playful schools of vibrant fish darting
+through the water, you have been surrounded by a symphony of movement
+and beauty. The songs of singing whales and the playful clicks of
+dolphins have become the soundtrack of your existence. As the sun's rays
+gradually fade into twilight, you have witnessed the transition of the
+ocean, a world both serene and full of wonder. The ocean sunlight zone
+is your sanctuary, a place where you have discovered harmony and a
+profound connection to the magnificent life thriving beneath the
+surface.
+
+##### Twilight
+
+You are from the mystical realm of the ocean twilight zone, a mysterious
+and enchanting world that lies beneath the shimmering surface. Growing
+up in this ethereal domain, you have witnessed the transition from the
+sunlit surface to the deep, dark depths below. Here, as sunlight wanes,
+you have encountered a realm of captivating beauty and hidden wonders.
+Descending into the depths, you have been surrounded by an otherworldly
+glow as bioluminescent organisms create a mesmerizing display of
+twinkling lights. In this in-between realm, where day and night merge,
+you have encountered an array of extraordinary creatures adapted to this
+unique environment. Giant schools of mesmerizing jellyfish pulsate with
+gentle radiance, and elegant deep-sea creatures with elongated bodies
+and luminescent appendages gracefully navigate the twilight. The
+haunting melodies of elusive deep-sea whales and the mysterious clicks
+of squid have become the soundtrack of your existence. Here, in the
+ocean twilight zone, you have found solace and wonder in the mysterious
+depths, where secrets and enchantment await at every turn.
+
+##### Midnight
+
+You are from the enigmatic realm of the ocean midnight zone, a world of
+perpetual darkness and profound mystery. Growing up in this abyssal
+domain, you have become intimately acquainted with the depths that few
+dare to explore. Here, where sunlight never penetrates, you have adapted
+to the cold and crushing pressures that define this realm. You have
+witnessed the bioluminescent wonders that illuminate the blackness, with
+mesmerizing creatures emitting glimmers of light to navigate the inky
+void. Strange and otherworldly creatures, with elongated bodies and
+fangs, have become your neighbors and companions. The haunting calls of
+elusive deep-sea dwellers reverberate through the dark waters, creating
+an eerie symphony that accompanies your every move. In this
+extraordinary environment, you have learned to embrace the unknown and
+find beauty in the shadows. The midnight zone holds countless secrets
+and holds the allure of undiscovered treasures, fueling your curiosity
+and beckoning you to explore further into the depths of the ocean's
+mysteries.
+
+##### Abyss
+
+You are from the unfathomable depths of the ocean abyssal zone, a realm
+that dwells in perpetual darkness and mind-boggling pressure. Growing up
+in this extreme environment, you have become intimately familiar with
+its eerie and forbidding nature. Here, where sunlight never reaches and
+the weight of the world bears down upon you, you have adapted to survive
+in a world few can comprehend. Strange and alien creatures with
+hauntingly adapted forms are your neighbors, their bioluminescent
+displays casting an ethereal glow in the pitch-black expanse. In the
+depths of these abyssal trenches, where the temperatures are chillingly
+cold and the pressures are crushing, you have honed your resilience and
+resourcefulness. You navigate through the abyss with a mix of
+trepidation and wonder, exploring the mysteries that lie hidden in the
+depths. The abyssal zone is a place of endless discovery and
+unfathomable secrets, pushing the boundaries of human knowledge and
+challenging your very existence. In this enigmatic world, you are both a
+witness to its magnificence and a testament to the resilience of life in
+the harshest of environments.
+
+#### Underground
+
+##### Subsurface
+
+You are from a world of cozy and snug underground holes and excavated
+buildings nestled within the earth. Growing up in these subterranean
+abodes, you have embraced the simplicity and harmony of underground
+living. The earthy scent of the soil and the gentle warmth that emanates
+from the walls are part of your daily life. Your childhood memories are
+filled with the laughter and camaraderie of fellow dwellers, sharing
+meals and stories around the flickering fireplaces. Your home is adorned
+with nature's treasures, with shelves filled with books and trinkets
+collected from the surface world. Sunlight filters through small
+windows, casting a soft glow that dances upon the walls, reminding you
+of the world beyond. You have honed your skills in crafting and
+gardening, tending to underground gardens that burst with vibrant hues
+and fragrant blossoms. The sound of distant raindrops pattering on the
+roof brings you a sense of comfort and peace. You are rooted in the
+simplicity and community of your underground haven, finding joy in the
+enchantment and serenity that this unique lifestyle provides.
+
+##### Subterranean
+
+You are from a world where life thrives in the embrace of underground
+structures and dwellings, meticulously crafted through excavation and
+construction. Growing up in this subterranean realm, you have come to
+appreciate the shelter and security provided by these underground
+abodes. The walls, sculpted from the earth itself, exude a comforting
+coolness, offering respite from the scorching sun above. Soft, gentle
+lighting illuminates the corridors and chambers, casting a warm and
+inviting glow on your daily life. The architecture is a testament to
+ingenuity, with winding passageways leading to interconnected rooms and
+communal spaces. As you navigate this underground labyrinth, you've
+become attuned to the delicate balance between the structural integrity
+of your dwellings and the surrounding earth. The rhythmic echoes of
+footsteps and hushed whispers reverberate through the tunnels, fostering
+a sense of camaraderie among your community. Despite being shielded from
+the natural elements above, you've learned to cherish the subtle signs
+of the outside world that permeate your existence—the faint scent of
+rain, the distant rumble of thunder, or the occasional trickle of water
+seeping through the walls. Living in these underground structures has
+instilled in you a deep appreciation for the beauty of human
+adaptability and resourcefulness.
+
+From a young age, you have known the darkness and solitude that comes
+with dwelling in these subterranean realms. The cool, damp earth is your
+constant companion, providing both shelter and challenges. You have
+honed your senses to navigate the labyrinthine tunnels, relying on your
+knowledge of the intricate network of passages that weave through the
+depths. Your eyes have adjusted to the limited light, allowing you to
+see in the dimness that would blind others. You have become intimately
+familiar with the secrets hidden within the earth, the hidden chambers
+and hidden treasures waiting to be discovered. While the world above may
+seem distant and foreign, the underground has become your home, a place
+of solace and mystery. You are attuned to the pulse of the earth, its
+rumblings and echoes guiding your every step. In this hidden world, you
+have forged a unique connection with the land and embraced the
+challenges and rewards that come with life below the surface.
+
+##### Caves
+
+You are from the underground caves, a realm of darkness and wonder
+hidden beneath the surface. Since childhood, you have known the secrets
+of these vast, labyrinthine chambers. The dampness and coolness of the
+cave walls are familiar to your touch, and the echoes of your footsteps
+resonate through the rocky passages. You have grown up amidst
+stalactites hanging like nature's chandeliers and stalagmites rising
+from the ground like ancient sentinels. The flickering light of your
+torch illuminates the mesmerizing beauty of the cave formations,
+creating a world of enchantment and mystery. You have learned to
+navigate the treacherous terrain, crawling through narrow passages and
+climbing over slippery rocks with ease. Your senses have adapted to the
+darkness, allowing you to perceive the subtlest shifts in the cave's
+atmosphere. You are at home in the solitude of these underground
+sanctuaries, finding solace in the solitude and tranquility that the
+caves offer. The caves have become your sanctuary, a place where you
+find peace and a connection to the ancient depths of the Earth.
+
+##### Tunnels
+
+You are from the deep underground, a world of intricate tunnels carved
+deep beneath the surface. Growing up in this subterranean realm, you
+have known a life veiled in darkness and secrecy. The air is cool and
+damp, echoing with the distant sound of water trickling through hidden
+crevices. Your childhood was spent exploring the labyrinthine passages,
+navigating the winding corridors with ease. The walls, etched with the
+marks of countless generations, whisper stories of resilience and
+survival. Illuminated by the soft glow of phosphorescent moss and the
+flicker of torchlight, your home is a refuge of hidden wonders. Your
+days were filled with the hum of machinery and the rhythmic tapping of
+pickaxes, as your community tirelessly expanded and reinforced the
+tunnels. You have honed your skills in engineering and navigation,
+learning to read the subtle signs of the earth and understanding the
+delicate balance of the underground ecosystem. Your heart resonates with
+the steady pulse of the earth itself, as if you are a part of its very
+core. Deep underground, you find solace in the unity and resourcefulness
+of your people, forging an unbreakable bond with the hidden depths that
+have shaped your existence.
+
+##### Foundations
+
+You are from the foundational layers of the planet, a realm nestled
+between the Earth's crust and its fiery core. Growing up in this
+extraordinary environment, you have witnessed the immense power and
+grandeur that lies beneath the surface. The air resonates with a
+constant hum, a testament to the planet's dynamic energy. Your childhood
+was spent amidst vast caverns and intricate networks of tunnels, where
+molten rock flows like rivers and mineral formations glisten in the dim
+light. The heat radiates through the rocks, a reminder of the molten
+intensity that courses beneath your feet. As you explored this
+subterranean world, you discovered the delicate balance between
+stability and chaos, witnessing the birth of mountains and the eruption
+of volcanoes. Your understanding of geology and the forces shaping the
+Earth grew alongside you, as you learned to interpret the subtle
+movements and vibrations in the ground. The profound connection to the
+planet's core instilled in you a sense of resilience and adaptability.
+Surrounded by the deep secrets of the Earth, you have become intimately
+acquainted with the interconnectedness of all living things and the
+awe-inspiring majesty of the planet on which we reside.
+
+### Enviromental Hallmarks
+
+Environmental hallmarks represent the knacks, insights and ‘survival
+secrets’ handed down by different people over the years, giving heroes
+raised in those cultures an edge.
+
+This represents the natural environment the character grew up in or
+spends their time in. A character who grew up in an urban area that
+never got out of the city may not have an Environmental Hallmark.
+
+
+
+
+### Urban Hallmarks
+
+Urban hallmarks represent the knacks, insights and ‘street secrets’
+handed down by different people over the years, giving heroes raised in
+those urban settings an edge.
+
+#### Rural
+
+You are from a rural area, a place where the pace of life slows down and
+nature takes center stage. Your childhood was immersed in the
+tranquility of wide-open spaces, where lush fields stretched as far as
+the eye could see, and the air carried the sweet scent of earth and
+wildflowers. You grew up with a deep connection to the land, witnessing
+the changing seasons and embracing the rhythms of agricultural life. The
+days were filled with hard work, tending to crops or caring for
+livestock, but there was also a sense of fulfillment and satisfaction in
+the fruits of your labor. The simplicity of rural living brought a sense
+of community, where neighbors knew one another by name and offered a
+helping hand when needed. Surrounded by nature's beauty, you spent
+endless hours exploring wooded trails, wading in meandering rivers, and
+gazing at the starry sky on clear nights. Life in the countryside taught
+you the value of self-sufficiency and the importance of preserving the
+delicate balance between humans and the environment. It instilled in you
+a deep appreciation for the serene beauty of nature and the timeless
+traditions that shape rural communities.
+
+#### Suburban
+
+You are from a suburban area, a place where the hustle and bustle of
+city life meets the tranquility of residential neighborhoods. Your
+childhood was filled with the sights and sounds of manicured lawns,
+neatly lined streets, and rows of houses nestled closely together. The
+suburbs offered a balance between urban amenities and a quieter, more
+family-oriented atmosphere. You grew up in a community where neighbors
+were more than just strangers; they became friends, lending a cup of
+sugar or organizing block parties. Your days were spent riding bicycles
+through tree-lined streets, playing catch in local parks, and exploring
+nearby playgrounds. Suburban living meant access to well-maintained
+schools, local shopping centers, and a range of recreational activities.
+It provided a sense of security and familiarity, where you felt a part
+of a tight-knit community. While the pace of life may not have been as
+fast as in the city, the suburban landscape offered a sense of comfort
+and stability, allowing you to forge lifelong friendships and create
+cherished memories amidst the idyllic surroundings.
+
+#### Low-Density Urban
+
+You are from a low-density urban area, a place where the urban landscape
+is spread out, offering more space and a quieter atmosphere compared to
+bustling city centers. Your childhood was shaped by wide streets,
+residential houses with yards, and a sense of openness. The pace of life
+in this type of urban environment was slightly slower, allowing for a
+more relaxed and intimate community. You grew up with a strong
+connection to your neighborhood, where local businesses, parks, and
+schools were within walking distance. The low-density urban area
+provided a balance between the convenience of city amenities and the
+tranquility of suburban living. Your days were filled with exploring
+nearby parks, riding bicycles through tree-lined streets, and enjoying
+the sense of community that came from knowing your neighbors. This
+environment allowed you to appreciate the benefits of urban living while
+still enjoying the spaciousness and peacefulness that comes with a lower
+population density.
+
+#### Medium-density urban
+
+You are from a medium-density urban area, a vibrant and bustling
+neighborhood where the rhythm of the city is alive. Growing up in this
+environment, you were surrounded by a mix of residential buildings,
+commercial spaces, and cultural attractions. The streets were filled
+with people, the air resonating with the sounds of conversations,
+traffic, and the occasional street performer. Your daily life was marked
+by a sense of energy and diversity, as you encountered a melting pot of
+cultures and experienced a wide range of cuisines, art, and
+entertainment. The accessibility of amenities and public transportation
+made it easy to navigate and explore the city. You developed a strong
+sense of independence and adaptability, learning to thrive amidst the
+vibrant chaos of urban living. From trendy cafes to local parks, there
+was always something new to discover, fostering a spirit of curiosity
+and adventure. This medium-density urban area provided a dynamic
+backdrop for your upbringing, shaping your worldview and instilling a
+sense of excitement for the possibilities that city life had to offer.
+
+#### High-density urban
+
+You are from a high-density urban area, where towering skyscrapers reach
+for the sky and the streets are filled with a constant stream of people.
+Growing up in this environment, you were surrounded by a vibrant mosaic
+of cultures, languages, and experiences. The cityscape became your
+playground, with every corner offering new sights, sounds, and
+opportunities. The hustle and bustle of the city were your daily
+soundtrack, as the rhythm of life pulsed through the crowded streets.
+Your home was a compact space, but it was filled with warmth and
+creativity, reflecting the ingenious ways in which residents made the
+most of limited square footage. Every day was an adventure, as you
+navigated through a maze of shops, markets, and cafes, immersing
+yourself in the eclectic tapestry of urban life. Despite the fast-paced
+nature of the city, you found moments of solace in pocket parks, rooftop
+gardens, and hidden oases amidst the concrete jungle. The diversity and
+energy of the high-density urban area fueled your ambition and fostered
+a spirit of resilience. Living in this dynamic environment, you
+developed a keen sense of community and an appreciation for the richness
+that arises from the close proximity of people from all walks of life.
+
+Characters with this Hallmark may not select an Environmental Hallmark
+
+#### Megacity
+
+You are from a megacity, a colossal urban area that seems to stretch
+endlessly in every direction. Growing up in this bustling metropolis,
+you were enveloped by a constant symphony of sounds, the blend of car
+horns, street vendors' calls, and the hum of countless conversations
+echoing through the towering skyscrapers. The cityscape became your
+labyrinth, with towering buildings serving as your landmarks. From an
+early age, you navigated the intricate web of transportation systems,
+weaving through the masses of people rushing to their destinations. Life
+in the megacity was a whirlwind, with a never-ending array of
+activities, entertainment, and opportunities at your fingertips. The
+streets were alive with the vibrant pulse of a diverse population, each
+person carrying their own stories and dreams. Despite the anonymity that
+comes with the sheer size of the city, you forged connections within
+your local community, finding solace in the smaller neighborhoods and
+pockets of familiarity that provided a sense of belonging amidst the
+overwhelming urban landscape. The megacity's constant evolution and
+ceaseless energy fueled your own ambition, instilling a drive to carve
+out your place in this grand tapestry of humanity.
+
+Highly populous urban areas with a population typically exceeding 10
+million inhabitants.
+
+Characters with this Hallmark may not select an Environmental Hallmark
+
+#### Metropolis
+
+You are from the largest Megacity on the planet, an awe-inspiring urban
+behemoth that stretches as far as the eye can see. Growing up in this
+colossal metropolis, you were immersed in a never-ending stream of
+activity and an ever-present sense of scale. Towering skyscrapers
+pierced the sky, casting long shadows over bustling streets that teemed
+with a diverse tapestry of humanity. The cityscape became your
+playground and your maze, a labyrinth of concrete and glass where every
+corner held the promise of adventure and discovery. Public
+transportation networks weaved through the city like veins, carrying
+millions of people from one district to another, connecting a vast
+network of neighborhoods that each had their own unique character. Life
+in this megacity was a constant dance of movement and adaptation, where
+the pace was frenetic and the opportunities were boundless. Amidst the
+towering structures and neon-lit signs, you carved out your own niche,
+finding community and connection in the vibrant tapestry of cultures,
+languages, and traditions that thrived within this urban jungle. Every
+day was an invitation to explore, to push boundaries, and to forge your
+own path in the heart of this magnificent metropolis.
+
+Characters with this Hallmark may not select an Environmental Hallmark.
+
+#### Planetary Urbanization
+
+You are from a planet where urbanization has consumed the entire surface
+of the planet, leaving no room for nature's embrace. As far as the eye
+can see, towering skyscrapers, sprawling complexes, and intricate
+networks of roads and tunnels dominate the landscape. You were born and
+raised in this vast concrete jungle, where the pulse of humanity beats
+incessantly. The city stretches in all directions, with no boundaries or
+horizons, creating a sense of confinement within the ceaseless urban
+expanse. Nature's touch is a distant memory, replaced by the hum of
+machinery, the glare of artificial lights, and the symphony of traffic.
+Life in this planetary urban area is a relentless whirlwind, where time
+moves at an accelerated pace and individuality can easily be swallowed
+by the collective. Yet, amidst the unending sea of humanity, you found
+your place, carving out a sense of identity and purpose within the
+bustling chaos. The city became your universe, offering opportunities
+for innovation, connection, and ambition. You adapted to the relentless
+rhythm, navigating its intricate web of systems and structures, and
+finding solace in the pockets of creativity, community, and resilience
+that emerged within the concrete corridors. In this city that spans the
+entire planet, you have become a product of its grandeur and complexity,
+forever shaped by the relentless energy and relentless spirit of the
+planetary urban existence.
+
+Characters with this Hallmark may not select an Environmental Hallmark,
+and must pick the same cultural Hallmarks as everyone else from this
+same location.
+
+### Occupational Hallmarks
+
+Occupational hallmarks represent the knacks, insights and ‘craft
+secrets’ handed down by different trades over the years, giving heroes
+who have those jobs an edge.
+
+Pick an occupation that is culturally appropriate for the setting of the
+game and note it down. This represents the occupational environment the
+character grew up in or surrounds themselves when they are not
+adventuring.
+
+#### Careers
+
+As a part of their development, characters follow certain life paths
+called careers. The setting you play in will provide a variety of career
+options for characters to pursue, which opens opportunities for
+characters to gain skill levels, characteristic boosts and significant
+mustering out benefits before they enter into play.
+
+Careers are part of a setting, and the process to place a character into
+a career is determined by the settings rules/
+
+### Recreational Hallmarks
+
+Recreational hallmarks represent the knacks, insights and nuanced
+differentiations handed down by enthusiasts over the years, giving
+heroes raised in those cultures an edge.
+
+Pick a hobby that is culturally appropriate for the setting of the game
+and note it down. This represents how the character prefers to spend
+their free time relaxing.
+
+### Cultural Hallmarks
+
+Cultural Hallmarks are qualities that describe different aspects of a
+character’s build, temperament, and abilities, which can provide
+advantages in certain situations. The key principle governing Cultural
+Hallmarks is that their descriptions must make it reasonably believable
+that individuals possessing those qualities would perform better under
+the given circumstances compared to those who lack them. Virtues are not
+ranked and cannot be enhanced or improved.
+
+A Character may end up with more than one Cultural Hallmark, the one
+rule governing this is that a character cannot have opposing Hallmarks.
+Use the table below to identify opposing Cultural Hallmarks. In many
+cases there are multiple virtues that are similar to each other if
+players want to play a character who is conflicted.
+
+| Virtue       | Description                                                                                                                             | Opposing Virtue | Description                                                                                                                                                                                                                                                                                                                                                                   |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Adventurous  | You are willing to take risks and explore new, exciting experiences.                                                                    | Reckless        | You are not afraid to take bold action and pursue your passions.                                                                                                                                                                                                                                                                                                              |
+| Bold         | You are willing to take risks and confront danger or challenges with confidence and bravery.                                            | Cowardly        | You exercise caution and prudence in the face of perceived danger or challenges, but sometimes miss out on opportunities.                                                                                                                                                                                                                                                     |
+| Cautious     | You are careful and deliberate in your actions and decisions.                                                                           | Rash            | You are quick to take action, displaying confidence and courage. However, sometimes you may act impulsively or without considering the consequences.                                                                                                                                                                                                                          |
+| Clever       | You are able to think quickly and come up with creative solutions to problems.                                                          | Cunning         | You are able to use your intelligence and resourcefulness to achieve your goals, but you may use deceit or trickery in the process.                                                                                                                                                                                                                                           |
+| Curious      | You are eager to learn and understand new things.                                                                                       | Nosy            | You are interested in the affairs of others in an intrusive way.                                                                                                                                                                                                                                                                                                              |
+| Determined   | You are resolute in pursuing your goals and tasks                                                                                       | Stubborn        | You remain firm in your beliefs or opinions, even when faced with contrary evidence                                                                                                                                                                                                                                                                                           |
+| Eager        | You are enthusiastic and excited about pursuing your goals and interests.                                                               | Impatient       | You are motivated and want to achieve your goals quickly, but sometimes struggle with waiting and may become restless.                                                                                                                                                                                                                                                        |
+| Elusive      | You are hard to pin down and catch, not easily captured or defined.                                                                     | Slippery        | You are adaptable and able to change course quickly in the face of new information or circumstances.                                                                                                                                                                                                                                                                          |
+| Fair         | You are impartial and treat everyone equally and justly.                                                                                | Biased          | You have strong preferences and opinions, which can sometimes affect your judgment.                                                                                                                                                                                                                                                                                           |
+| Fair-spoken  | You are able to communicate with others in an honest way                                                                                | Manipulative    | You have a talent for persuading others to your point of view, sometimes by bending the truth or withholding information                                                                                                                                                                                                                                                      |
+| Fierce       | You are bold and intense in pursuit of your goals and ideals                                                                            | Savage          | You are fiercely passionate and unyielding in defending what you believe is right, sometimes leading to excess or harm to others                                                                                                                                                                                                                                              |
+| Forthright   | You are direct and honest in your communication.                                                                                        | Evasive         | You are skilled at finding tactful ways to avoid confrontation.                                                                                                                                                                                                                                                                                                               |
+| Gruff        | You are direct and to-the-point in your communication.                                                                                  | Rude            | You are unapologetically honest and do not shy away from confrontation.                                                                                                                                                                                                                                                                                                       |
+| Hardened     | You are tough and resilient, able to withstand difficult situations.                                                                    | Callous         | You are strong and unemotional, not easily affected by the suffering of others.                                                                                                                                                                                                                                                                                               |
+| Hardy        | You are able to withstand challenges and adversity with resilience, strength, and endurance.                                            | Fragile         | You are rare, valuable, vunerable, delicate and precious, you need to be handled with care, and therefore you require extra support, protection, special care and attention.                                                                                                                                                                                                  |
+| Honorable    | You are someone who is honest, ethical, and has strong principles                                                                       | Dishonorable    | You sometimes prioritize personal gain or expediency over your principles or integrity                                                                                                                                                                                                                                                                                        |
+| Keen-eyed    | You are observant and perceptive, noticing details                                                                                      | Oblivious       | You are open-minded and do not judge quickly, details matter little to you, and you give others the benefit of the doubt, seeing the good in them first                                                                                                                                                                                                                       |
+| Lordly       | You are confident and dignified, and you command respect with your presence and actions.                                                | Servile         | You tend to be overly deferential and submissive to authority figures, but you demonstrate a deep respect for others and a willingness to serve.                                                                                                                                                                                                                              |
+| Cheerful     | You are someone who is optimistic and sees the positive side of things, bringing joy and a lightheartedness to those around you.        | Grim            | You are someone who is serious, stern, or realistic, and tends to focus on the risks of a situation.                                                                                                                                                                                                                                                                          |
+| Fierce       | You are brave and have a powerful intensity in pursuing your goals                                                                      | Timid           | You are cautious and thoughtful in your actions and decision making.                                                                                                                                                                                                                                                                                                          |
+| Patient      | You are able to remain calm and composed in the face of delays, difficulties, and provocation, waiting calmly for your desired outcome. | Impatient       | You have a sense of urgency and a desire for immediate results, which can cause frustration and anxiety in situations where you have to wait or deal with delays.                                                                                                                                                                                                             |
+| Robust       | You are strong and resilient, able to withstand challenges and overcome obstacles.                                                      | Weak            | You are gentle and flexible, open to different perspectives and willing to collaborate.                                                                                                                                                                                                                                                                                       |
+| Secretive    | You are discreet in your communications and keep confidences well                                                                       | Open            | You are transparent and forthright in your communication and actions                                                                                                                                                                                                                                                                                                          |
+| Steadfast    | You are resolute in your beliefs and remain unwavering.                                                                                 | Fickle          | You are adaptable and open to change and new perspectives.                                                                                                                                                                                                                                                                                                                    |
+| Stern        | You are resolute and uncompromising in your decisions, showing no tolerance for error or wrongdoing.                                    | Lenient         | You tend to be forgiving and understanding, giving people second chances and showing them mercy when they make mistakes.                                                                                                                                                                                                                                                      |
+| Suspicious   | You are cautious and discerning in your judgments.                                                                                      | Trusting        | You are open-minded and willing to give people the benefit of the doubt.                                                                                                                                                                                                                                                                                                      |
+| True-hearted | You are sincere, honest, and loyal to yourself and others, and you always stand by your principles and values.                          | False-hearted   | You may have the ability to adapt to different situations and people, and you can easily present a different image of yourself to others.                                                                                                                                                                                                                                     |
+| Trusty       | You are dependable, reliable, and worthy of confidence.                                                                                 | Unreliable      | You are spontaneous, adaptable, and not tied to commitments.                                                                                                                                                                                                                                                                                                                  |
+| Wary         | You are cautious and vigilant, taking care to avoid danger and ensure your own safety and well-being.                                   | Careless        | You are free-spirited and adventurous, unburdened by worries or concerns about potential risks or negative consequences, and always willing to embrace new experiences and opportunities with open arms. While you may occasionally face setbacks or difficulties as a result, you remain optimistic and confident in your ability to navigate whatever challenges may arise. |
+| Forgiving    | You are willing to let go of anger or resentment towards those who have wronged you, and offer them mercy and compassion.               | Wrathful        | You are passionate and deeply committed to what you believe is right, and unafraid to stand up for yourself.                                                                                                                                                                                                                                                                  |
+| Chaste       | You are pure in your thoughts and behaviors, and you refrain from sexual immorality.                                                    | Lustful         | You are passionate and have a strong desire for physical intimacy with others, which can also show that you are capable of great love and affection.                                                                                                                                                                                                                          |
+| Energetic    | You are active, enthusiastic and full of energy, always willing to take on new challenges and put in effort to achieve your goals.      | Lazy            | You prefer to conserve your energy for more important tasks, and take time to rest and recharge so you can be more productive in the long run.                                                                                                                                                                                                                                |
+| Forgiving    | You are willing to let go of past grievances and extend compassion towards others who have wronged you.                                 | Vengeful        | You are deeply committed to seeking justice and defending what is right, sometimes at the cost of personal sacrifice.                                                                                                                                                                                                                                                         |
+| Generous     | You are someone who freely gives and is willing to share what you have with others without expecting anything in return.                | Selfish         | You are someone who prioritizes your own needs and desires over those of others, but this can also mean that you are self-sufficient and know how to take care of yourself.                                                                                                                                                                                                   |
+| Honest       | You are truthful and transparent in your words and actions, and always strive to maintain integrity.                                    | Deceitful       | You have the ability to see situations from multiple perspectives and adapt your words and actions accordingly. However, you may use this skill to manipulate others for your own benefit rather than being honest and transparent.                                                                                                                                           |
+| Just         | You are fair and impartial, and base your decisions on reason and fact.                                                                 | Arbitrary       | You are flexible and open-minded, able to consider many different perspectives before making a decision.                                                                                                                                                                                                                                                                      |
+| Merciful     | You are compassionate and show forgiveness.                                                                                             | Cruel           | You prioritize justice and hold others accountable.                                                                                                                                                                                                                                                                                                                           |
+| Modest       | You are humble and unassuming, not drawing attention to yourself or boasting about your achievements.                                   | Proud           | You have a healthy self-respect and confidence in your abilities, and are willing to take credit for your accomplishments.                                                                                                                                                                                                                                                    |
+| Pious        | You are deeply religious and devoted to your faith.                                                                                     | Worldly         | You enjoy life's pleasures and seek out worldly experiences in a way that brings joy to others.                                                                                                                                                                                                                                                                               |
+| Prudent      | You are cautious and wise in your decision-making.                                                                                      | Reckless        | You are someone who takes bold and daring risks to achieve great things.                                                                                                                                                                                                                                                                                                      |
+| Temperate    | You are able to exercise self-control and avoid excess.                                                                                 | Indulgent       | You enjoy the pleasures of life in moderation, but can sometimes lack the self-control necessary to avoid overindulging in them.                                                                                                                                                                                                                                              |
+| Trusting     | You are willing to believe in the honesty and reliability of others, and to extend trust to them.                                       | Suspicious      | You are cautious and careful when dealing with others, and do not easily accept what they say or do.                                                                                                                                                                                                                                                                          |
+| Valorous     | You are brave and courageous, showing great courage.                                                                                    | Cowardly        | You are cautious and careful, avoiding unnecessary risks.                                                                                                                                                                                                                                                                                                                     |
