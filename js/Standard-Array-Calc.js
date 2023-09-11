@@ -1,7 +1,4 @@
 // Function to calculate the Standard Array based on fixed numbers
-function getFixedStandardArray() {
-    return [15, 14, 13, 12, 10, 8];
-}
 function getFixedStandardArrayDND() {
     return [15, 14, 13, 12, 10, 8];
 }
@@ -36,7 +33,6 @@ function getRolledStandardArrayForDND() {
     let sum = rolls.reduce((a, b) => a + b, 0); // Sum the remaining rolls
     standardArray.push(sum);
   }
-
   standardArray.sort((a, b) => b - a); // Sort the array in descending order
   return standardArray;
 }
@@ -52,7 +48,6 @@ function getRolledStandardArrayForTRAVELLER() {
       let sum = rolls.reduce((a, b) => a + b, 0); // Sum the remaining rolls
       standardArray.push(sum);
     }
-  
     standardArray.sort((a, b) => b - a); // Sort the array in descending order
     return standardArray;
   }
@@ -67,7 +62,6 @@ function getRolledStandardArrayForTRAVELLERSUX() {
       let sum = rolls.reduce((a, b) => a + b, 0); // Sum the remaining rolls
       standardArray.push(sum);
     }
-  
     standardArray.sort((a, b) => b - a); // Sort the array in descending order
     return standardArray;
   }
@@ -85,14 +79,16 @@ function getRolledStandardArrayForMARCHEN() {
       let sum = rolls.reduce((a, b) => a + b, 0); // Sum the remaining rolls
       standardArray.push(sum);
     }
-  
     standardArray.sort((a, b) => b - a); // Sort the array in descending order
     return standardArray;
   }
   
 
 // Display the fixed Standard Array
-console.log("Fixed Standard Array:", getFixedStandardArray());
+console.log("D&D - Standard Array:", getFixedStandardArrayDND() );
+console.log("Märchen - Standard Array:", getFixedStandardArrayMARCHEN() );
+console.log("Traveller - Standard Array:", getFixedStandardArrayTRAVELLER() );
+console.log("Traveller - SUX - Standard Array:", getFixedStandardArrayTRAVELLERSUX() );
 
 // Initialize variables to hold the sum of ability scores
 let sumDNDArray = [0, 0, 0, 0, 0, 0];
