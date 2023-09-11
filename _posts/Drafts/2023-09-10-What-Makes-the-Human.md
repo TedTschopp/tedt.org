@@ -1,5 +1,5 @@
 ---
-title: What Makes a Hunan?
+title: What Makes a Human?
 date: 2023-07-22T18:51:10-07:00
 author:
   name: Ted Tschopp
@@ -52,11 +52,11 @@ mathjax: true
     - [Pocket Money](#pocket-money)
     - [Personal Possessions](#personal-possessions)
       - [Equipment](#equipment)
-      - [Adventuring Gear](#adventuring-gear)
-      - [Gear of Extraordinary Craftsmanship](#gear-of-extraordinary-craftsmanship)
-        - [Precious Objects](#precious-objects)
-        - [Marvelous Objects](#marvelous-objects)
-        - [Famous Artifacts](#famous-artifacts)
+      - [Operational Gear](#operational-gear)
+      - [Curated Gear](#curated-gear)
+        - [Specialized Tools](#specialized-tools)
+        - [Elite Gear](#elite-gear)
+        - [Named Items](#named-items)
     - [Assets](#assets)
       - [How Assets Works](#how-assets-works)
       - [Carrying and Transporting Assets](#carrying-and-transporting-assets)
@@ -363,8 +363,8 @@ Gear:
   Assets
   Personal Possessions
     Equipment
-    Adventuring Gear
-    Gear of Extraordinary Craftsmanship
+    Operational Gear
+    Specialized Objects
 
 Recreational Hallmark:           
 Pocket Money:                     □ □ □ □ □ □ □ □ 
@@ -553,7 +553,7 @@ players want to play a character who is conflicted.
 | Forthright   | You are direct and honest in your communication.                                                                                        | Evasive         | You are skilled at finding tactful ways to avoid confrontation.                                                                                                                                                                                                                                                                                                               |
 | Gruff        | You are direct and to-the-point in your communication.                                                                                  | Rude            | You are unapologetically honest and do not shy away from confrontation.                                                                                                                                                                                                                                                                                                       |
 | Hardened     | You are tough and resilient, able to withstand difficult situations.                                                                    | Callous         | You are strong and unemotional, not easily affected by the suffering of others.                                                                                                                                                                                                                                                                                               |
-| Hardy        | You are able to withstand challenges and adversity with resilience, strength, and endurance.                                            | Fragile         | You are rare, valuable, vunerable, delicate and precious, you need to be handled with care, and therefore you require extra support, protection, special care and attention.                                                                                                                                                                                                  |
+| Hardy        | You are able to withstand challenges and adversity with resilience, strength, and endurance.                                            | Fragile         | You are rare, valuable, venerable, delicate and precious, you need to be handled with care, and therefore you require extra support, protection, special care and attention.                                                                                                                                                                                                  |
 | Honorable    | You are someone who is honest, ethical, and has strong principles                                                                       | Dishonorable    | You sometimes prioritize personal gain or expediency over your principles or integrity                                                                                                                                                                                                                                                                                        |
 | Keen-eyed    | You are observant and perceptive, noticing details                                                                                      | Oblivious       | You are open-minded and do not judge quickly, details matter little to you, and you give others the benefit of the doubt, seeing the good in them first                                                                                                                                                                                                                       |
 | Lordly       | You are confident and dignified, and you command respect with your presence and actions.                                                | Servile         | You tend to be overly deferential and submissive to authority figures, but you demonstrate a deep respect for others and a willingness to serve.                                                                                                                                                                                                                              |
@@ -638,7 +638,7 @@ deterioration of your Mental, Social, or Spiritual Aspects.
 You embark on your journey fully prepared for long periods of travel and
 sleeping in the open. It is expected that every character carries the
 necessary equipment for an adventurous life. This equipment consists of
-two main categories: Equipment and Adventuring gear.
+two main categories: Equipment and Operational Gear.
 
 #### Equipment
 
@@ -653,59 +653,43 @@ appropriate Pocket Money.
 Should a Treasure-Hunter have among his possessions a set of lock-picks?
 Yes, and a high-quality set it is, too.
 
-#### Adventuring Gear
+#### Operational Gear
 
 At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own culture, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale. 
 
-#### Gear of Extraordinary Craftsmanship
+#### Curated Gear
 
 At the start of the game, you select your operative's initial equipment. This includes standard-issue weapons, a set of tactical armor, and perhaps additional protective gear like a helmet or shield and a cell phone.
 
-Gear of Extraordinary Craftsmanship is another matter. Such items could be gifts from your organization, family, or perhaps a high-ranking official allows you to choose a piece of equipment from their private arsenal. Alternatively, you might have personally modified, repaired, or adapted this gear to meet your specific needs. The types of modifications and customizations depend on both the item itself and the technology or culture that produced it, as well as your own operative's background.
+Curated Gear is another matter. Curated Gear can be Specialized tools, Elite Gear, or Named Items. Such items could be gifts / loans from your organization, family, or perhaps a high-ranking official allows you to choose a piece of equipment from their private arsenal. Alternatively, you might have personally modified, repaired, or adapted this gear to meet your specific needs. The types of modifications and customizations depend on both the item itself and the technology or culture that produced it, as well as your own operative's background.
 
 Whenever your operative advances in rank, you earn a Bonus. This Bonus allows you to enhance one piece of equipment with a new specialized feature. Each time your operative acquires an item of exceptional quality, you should craft a narrative to commemorate this milestone for your character.
 
-If your character happens to lose any of their Gear of Extraordinary Craftsmanship, they will be able to acquire standard Adventuring Gear to replace it. However, all the customizations, advanced features, and other unique aspects of that gear will be lost until you retrieve them. You may choose to abandon this equipment, but doing so will affect your reputation and may lead to other unintended consequences, depending on who ends up with the gear.  In either event, such losses will effect the overall narrative structure of your story.
+If your character happens to lose any of their Curated Gear, they will be able to acquire standard Operational Gear to replace it. However, all the customizations, advanced features, and other unique aspects of that gear will be lost until you retrieve them. You may choose to abandon this equipment, but doing so will affect your reputation and may lead to other unintended consequences, depending on who ends up with the gear.  In either event, such losses will effect the overall narrative structure of your story.
 
-##### Precious Objects
+##### Specialized Tools
 
-You will come across that exude an extraordinary and captivating allure.
-Gemstones, jewels, enchanted crystals, cybernetic implants, holographic
-data chips, plasma-infused ornaments, Neural Circlets, nanotech-infused
-accessories, and Quantum Rings of unparalleled quality and mystical
-allure are recognized as Precious Objects. Their extraordinary beauty
-arises from the mastery of skilled artisans, advanced technology, or the
-infusion of subtle arcane energies.
+You'll come across objects that stand out for their exceptional and mesmerizing qualities. Whether it's gemstones, secure data drives, advanced biotech implants, holographic storage modules, energy-efficient components, neural interfaces, nanotech-enhanced accessories, or quantum processors, you'll recognize these as Specialized Tool. Their unique charm stems from the expertise of talented engineers, state-of-the-art technology, or the incorporation of specialized algorithms or energy systems.
 
-##### Marvelous Objects
+Specialized Tools are your everyday equipment that has been tailored, specialized, or masterfully crafted to stretch the limits of what's achievable or to showcase the engineer's skills. These items are typically not weapons or armor; they are tools designed for a specific function. Generally, there's no backstory or narrative tied to these objects, but they are readily available to agents who have proven their worth.
 
-You come across objects that possess extraordinary properties that
-ordinary mortals would deem magical or at the very least marvelous.
-These items may include high-tech cloaking suits that render the wearer
-invisible to surveillance systems, drums capable of inducing fear in
-enemies and joy in allies, and augmented reality lenses integrated into
-sleek cybernetic eyewear, allowing the user to effortlessly locate and
-retrieve lost items. These remarkable items are imbued with advanced
-enhancements that amplify the innate abilities of their owners. The
-higher your status and capabilities, the more you will understand these
-artifacts and the advantages they bestow. While these objects are
-typically not weapons, they are valuable possessions carried by the
-heroes of this world. Each of these marvels carries a rich backstory,
-with hints of their origins and remarkable abilities, adding depth and
-intrigue to their presence.
+##### Elite Gear
 
-##### Famous Artifacts
+You encounter items that possess extraordinary capabilities, which most people would consider highly advanced or even miraculous. These may include state-of-the-art stealth suits that make the wearer undetectable to security systems, sonic devices that can manipulate emotions in both allies and enemies, and augmented reality implants that enable the user to effortlessly locate and retrieve misplaced objects. These remarkable items come with advanced technological enhancements that amplify the innate skills of their users. The more advanced your expertise and status, the better you'll understand these assets and the benefits they offer.
 
-You will occasionally encounter Precious and Marvelous Objects that bear specific designations. These are often identified by the name of their inventor or their most renowned owner. However, Famous Artifacts always possess distinct names and may even have multiple names, as they are known and referred to differently among various organizations or cultures. Once you utilize one long enough, these items may acquire additional names based on your actions or what you choose to call them.
+While these items are generally not classified as weapons, they are valuable assets often carried by the elite operatives or experts in this world. Each of these technological marvels has a rich backstory, offering clues to their origins and unique capabilities, adding layers of depth and intrigue to their existence.
 
-Famous Artifacts, each possessing unique capabilities, may have visual or auditory cues that make them stand out, such as a distinct light or sound. However, in some cases, these special qualities are more discreet, barely noticeable to the untrained eye. It's important to note that every Iconic Item has a rich backstory that merits thorough investigation.
+##### Named Items
+
+You will occasionally encounter Precious and Named Objects that bear specific designations. These are often identified by the name of their inventor or their most renowned owner. However, Named Items always possess distinct names and may even have multiple names, as they are known and referred to differently among various organizations or cultures. Once you utilize one long enough, these items may acquire additional names based on your actions or what you choose to call them.
+
+Named Items, each possessing unique capabilities, may have visual or auditory cues that make them stand out, such as a distinct light or sound. However, in some cases, these special qualities are more discreet, barely noticeable to the untrained eye. It's important to note that every Iconic Item has a rich backstory that merits thorough investigation.
 
 These items are not just defined by their own characteristics but also by their inventors, the cultures or organizations from which they originate, the significant events they have been part of, and the diverse groups of people who have utilized them throughout history. All these factors contribute to the advantages and drawbacks that these items carry. While you may not be aware of all the intricate details surrounding an Famous Artifacts, as an operative, you may wish to uncover these hidden truths through various means, such as research, consultation with experts, or undertaking special missions.
 
 You will find that sponsors, leaders, and subject matter experts from different organizations possess extensive knowledge about these items. Seeking their guidance will prove invaluable in unraveling the hidden histories of these assets. By consulting with these knowledgeable individuals, you can delve deeper into the origins, significance, and remarkable stories associated with these items.
 
 Moreover, it's worth noting that any equipment you acquire classified as Exceptional Quality or above holds potential for further interactions. You can exchange such exceptional items with the aforementioned leaders to unlock additional features and capabilities that lie within the exceptional items found in Caches. This exchange opens up new possibilities and enhances the potential of these powerful assets, allowing you to tap into their full capabilities and utilize them to your advantage.
-
 
 ### Assets
 
