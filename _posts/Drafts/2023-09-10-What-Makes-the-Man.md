@@ -329,29 +329,8 @@ mathjax: true
 
 
 
+
 # Character Sheet
-
-
-
-  - [Gear](#gear)
-    - [Pocket Money](#pocket-money)
-    - [Personal Possessions](#personal-possessions)
-      - [Equipment](#equipment)
-      - [Adventuring Gear](#adventuring-gear)
-      - [Gear of Extraordinary Craftsmanship](#gear-of-extraordinary-craftsmanship)
-        - [Precious Objects](#precious-objects)
-        - [Marvelous Objects](#marvelous-objects)
-        - [Famous Artifacts](#famous-artifacts)
-    - [Treasure](#treasure)
-      - [How Treasure Works](#how-treasure-works)
-      - [Carrying Treasure](#carrying-treasure)
-      - [Hiding Treasure](#hiding-treasure)
-      - [Trove](#trove)
-  - [Holdings](#holdings)
-    - [Rating](#rating)
-    - [Minimum Score](#minimum-score)
-    - [Running A Holding](#running-a-holding)
-    - [Holdings Upkeep](#holdings-upkeep)
 
 
 | Name                              | : Description                                                                |
@@ -390,7 +369,52 @@ Gear:
 Recreational Hallmark:           
 Pocket Money:                     □ □ □ □ □ □ □ □ 
 
+| Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
+|-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
+| Fitness   | □ □ □ □   | □ □ □ □  | Muscle         | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |
+|           |           |          |                |           |          | Athletics         | □ □ □ □  |       |
+|           |           |          |                |           |          | Melee             | □ □ □ □  |       |
+|           |           |          | Agility        | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       |
+|           |           |          |                |           |          | Acrobatics        | □ □ □ □  |       |
+|           |           |          |                |           |          | Sleight of Hand   | □ □ □ □  |       |
+|           |           |          | Stamina        | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       |
+|           |           |          |                |           |          | Ruggedness        | □ □ □ □  |       |
+|           |           |          |                |           |          | Unarmed           | □ □ □ □  |       |
+| Academic  | □ □ □ □   | □ □ □ □  | Intellect      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |
+|           |           |          |                |           |          | Life Sciences     | □ □ □ □  |       |
+|           |           |          |                |           |          | Physical Sciences | □ □ □ □  |       |
+|           |           |          | Reasoning      | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |
+|           |           |          |                |           |          | Insight           | □ □ □ □  |       |
+|           |           |          |                |           |          | Investigation     | □ □ □ □  |       |
+|           |           |          | Acuity         | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       |
+|           |           |          |                |           |          | Perception        | □ □ □ □  |       |
+|           |           |          |                |           |          | Formal Sciences   | □ □ □ □  |       |
+| Mystical  | □ □ □ □   | □ □ □ □  | Skepticism     | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |
+|           |           |          |                |           |          | Gnosis            | □ □ □ □  |       |
+|           |           |          |                |           |          | Chaos             | □ □ □ □  |       |
+|           |           |          | Faith          | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       |
+|           |           |          |                |           |          | Adapt             | □ □ □ □  |       |
+|           |           |          |                |           |          | Order             | □ □ □ □  |       |
+|           |           |          | Mystery        | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       |
+|           |           |          |                |           |          | Animism           | □ □ □ □  |       |
+|           |           |          |                |           |          | Shamanism         | □ □ □ □  |       |
+| Emotional | □ □ □ □   | □ □ □ □  | Manners        | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       |
+|           |           |          |                |           |          | Performance       | □ □ □ □  |       |
+|           |           |          |                |           |          | Etiquette         | □ □ □ □  |       |
+|           |           |          | Personality    | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       |
+|           |           |          |                |           |          | Persuasion        | □ □ □ □  |       |
+|           |           |          |                |           |          | Intimidation      | □ □ □ □  |       |
+|           |           |          | Identity       | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |
+|           |           |          |                |           |          | Animal Handling   | □ □ □ □  |       |
+|           |           |          |                |           |          | Leadership        | □ □ □ □  |       |
 
+▩ = Skilled - Skilled. Contributes to Total.
+
+☒ = Damaged - Skilled, but Damaged. Does not contribute to Total.
+
+▣ = Competent - Experienced, but not skilled. Does not contribute to Total.
+
+▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
 
 # Creating Characters
@@ -444,53 +468,6 @@ rolls, by applying the necessary knowledge and skill in a real-world
 setting where you take full responsibility and accountability for your
 actions. The experience gained in this manner distinguishes demonstrated
 skill from demonstrated competency.
-
-| Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
-|-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
-| Fitness   | □ □ □ □   | □ □ □ □  | Muscle         | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |
-|           |           |          |                |           |          | Athletics         | □ □ □ □  |       |
-|           |           |          |                |           |          | Melee             | □ □ □ □  |       |
-|           |           |          | Agility        | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       |
-|           |           |          |                |           |          | Acrobatics        | □ □ □ □  |       |
-|           |           |          |                |           |          | Sleight of Hand   | □ □ □ □  |       |
-|           |           |          | Stamina        | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       |
-|           |           |          |                |           |          | Ruggedness        | □ □ □ □  |       |
-|           |           |          |                |           |          | Unarmed           | □ □ □ □  |       |
-| Academic  | □ □ □ □   | □ □ □ □  | Intellect      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |
-|           |           |          |                |           |          | Life Sciences     | □ □ □ □  |       |
-|           |           |          |                |           |          | Physical Sciences | □ □ □ □  |       |
-|           |           |          | Reasoning      | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |
-|           |           |          |                |           |          | Insight           | □ □ □ □  |       |
-|           |           |          |                |           |          | Investigation     | □ □ □ □  |       |
-|           |           |          | Acuity         | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       |
-|           |           |          |                |           |          | Perception        | □ □ □ □  |       |
-|           |           |          |                |           |          | Formal Sciences   | □ □ □ □  |       |
-| Mystical  | □ □ □ □   | □ □ □ □  | Skepticism     | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |
-|           |           |          |                |           |          | Gnosis            | □ □ □ □  |       |
-|           |           |          |                |           |          | Chaos             | □ □ □ □  |       |
-|           |           |          | Faith          | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       |
-|           |           |          |                |           |          | Adapt             | □ □ □ □  |       |
-|           |           |          |                |           |          | Order             | □ □ □ □  |       |
-|           |           |          | Mystery        | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       |
-|           |           |          |                |           |          | Animism           | □ □ □ □  |       |
-|           |           |          |                |           |          | Shamanism         | □ □ □ □  |       |
-| Emotional | □ □ □ □   | □ □ □ □  | Manners        | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       |
-|           |           |          |                |           |          | Performance       | □ □ □ □  |       |
-|           |           |          |                |           |          | Etiquette         | □ □ □ □  |       |
-|           |           |          | Personality    | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       |
-|           |           |          |                |           |          | Persuasion        | □ □ □ □  |       |
-|           |           |          |                |           |          | Intimidation      | □ □ □ □  |       |
-|           |           |          | Identity       | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |
-|           |           |          |                |           |          | Animal Handling   | □ □ □ □  |       |
-|           |           |          |                |           |          | Leadership        | □ □ □ □  |       |
-
-▩ = Skilled - Skilled. Contributes to Total.
-
-☒ = Damaged - Skilled, but Damaged. Does not contribute to Total.
-
-▣ = Competent - Experienced, but not skilled. Does not contribute to Total.
-
-▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
