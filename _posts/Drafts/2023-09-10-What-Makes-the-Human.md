@@ -6,7 +6,9 @@ author:
   url: https://tedt.org/
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-description: 
+description: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions. 
+
+
 excerpt: |
    All beings have four aspects of their existence. These define the
    highest categorical breakdown of a being. They are Physical, Mental,
@@ -19,7 +21,7 @@ excerpt: |
 layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/07/22/What-Makes-a-Human/
-image: https://www.tedt.org/img/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
+image: https://www.tedt.org/img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-credits: Photo by Ted Tschopp using Midjourney
 image_alt: Photo by Ted Tschopp using Midjourney
   
@@ -45,237 +47,77 @@ mathjax: true
     - [Environmental Hallmarks](#environmental-hallmarks)
     - [Urban Hallmarks](#urban-hallmarks)
     - [Occupational Hallmarks](#occupational-hallmarks)
-      - [Careers](#careers)
     - [Recreational Hallmarks](#recreational-hallmarks)
     - [Cultural Hallmarks](#cultural-hallmarks)
   - [Gear](#gear)
     - [Pocket Money](#pocket-money)
     - [Personal Possessions](#personal-possessions)
-      - [Equipment](#equipment)
-      - [Operational Gear](#operational-gear)
-      - [Curated Gear](#curated-gear)
-        - [Specialized Tools](#specialized-tools)
-        - [Elite Gear](#elite-gear)
-        - [Named Items](#named-items)
     - [Assets](#assets)
-      - [How Assets Works](#how-assets-works)
-      - [Carrying and Transporting Assets](#carrying-and-transporting-assets)
-      - [Hiding Treasure](#hiding-treasure)
-      - [Cache](#cache)
   - [Holdings](#holdings)
-    - [Rating](#rating)
-    - [Minimum Score](#minimum-score)
-    - [Running A Holding](#running-a-holding)
-    - [Holdings Upkeep](#holdings-upkeep)
 - [Bringing the Skills All Together](#bringing-the-skills-all-together)
+  - [An Overview](#an-overview)
+    - [Fitness](#fitness)
+    - [Academic](#academic)
+    - [Mystical](#mystical)
+    - [Emotional](#emotional)
+  - [ChatGPT Prompt for the Skills Portion of the Character Sheet.](#chatgpt-prompt-for-the-skills-portion-of-the-character-sheet)
+    - [Primary Aspects](#primary-aspects)
+      - [Fitness](#fitness-1)
+      - [Academic](#academic-1)
+      - [Mystical](#mystical-1)
+      - [Emotional](#emotional-1)
   - [Fitness Aspects](#fitness-aspects)
     - [Muscle Characteristics](#muscle-characteristics)
       - [Ranged Combat Knowledge Areas](#ranged-combat-knowledge-areas)
-        - [Description of Ranged Combat](#description-of-ranged-combat)
-        - [Examples from Fiction](#examples-from-fiction)
-        - [Ranged Combat Archetypes](#ranged-combat-archetypes)
-        - [Specializations for Ranged Combat](#specializations-for-ranged-combat)
-        - [Table for Ranged Combat skill and examples for each level of difficulty](#table-for-ranged-combat-skill-and-examples-for-each-level-of-difficulty)
       - [Athletics Knowledge Areas](#athletics-knowledge-areas)
-        - [Description of Athletics](#description-of-athletics)
-        - [Examples of Athletics from Fiction](#examples-of-athletics-from-fiction)
-        - [Athletics Archetypes](#athletics-archetypes)
-        - [Specializations for Athletics](#specializations-for-athletics)
-      - [Table for Athletics skill and examples for each level of difficulty](#table-for-athletics-skill-and-examples-for-each-level-of-difficulty)
       - [Melee Combat Knowledge Areas](#melee-combat-knowledge-areas)
-        - [Description of Melee Combat](#description-of-melee-combat)
-        - [Examples of Melee Combat from Fiction](#examples-of-melee-combat-from-fiction)
-        - [Melee Combat Archetypes](#melee-combat-archetypes)
-        - [Specializations for Melee Combat](#specializations-for-melee-combat)
-        - [Table with Melee Combat skill and examples for each level of difficulty](#table-with-melee-combat-skill-and-examples-for-each-level-of-difficulty)
     - [Agility Characteristics](#agility-characteristics)
       - [Stealth Knowledge Areas](#stealth-knowledge-areas)
-        - [Description of Stealth](#description-of-stealth)
-        - [Examples of Stealth from Fiction](#examples-of-stealth-from-fiction)
-        - [Stealth Archetypes](#stealth-archetypes)
-        - [Specializations for Stealth](#specializations-for-stealth)
-        - [Table with Stealth skill and examples for each level of difficulty](#table-with-stealth-skill-and-examples-for-each-level-of-difficulty)
       - [Acrobatics Knowledge Areas](#acrobatics-knowledge-areas)
-        - [Description of Acrobatics](#description-of-acrobatics)
-        - [Examples of Acrobatics from Fiction](#examples-of-acrobatics-from-fiction)
-        - [Acrobatics Archetypes](#acrobatics-archetypes)
-        - [Specializations for Acrobatics](#specializations-for-acrobatics)
-        - [Table with Acrobatics skill and examples for each level of difficulty](#table-with-acrobatics-skill-and-examples-for-each-level-of-difficulty)
       - [Sleight of Hand Knowledge Areas](#sleight-of-hand-knowledge-areas)
-        - [Description of Sleight of Hand](#description-of-sleight-of-hand)
-        - [Examples of Sleight of Hand from Fiction](#examples-of-sleight-of-hand-from-fiction)
-        - [Sleight of Hand Archetypes](#sleight-of-hand-archetypes)
-        - [Specializations for Sleight of Hand](#specializations-for-sleight-of-hand)
-        - [Table with Sleight of Hand skill and examples for each level of difficulty](#table-with-sleight-of-hand-skill-and-examples-for-each-level-of-difficulty)
     - [Stamina Characteristics](#stamina-characteristics)
       - [Drive / Ride / Pilot Knowledge Areas](#drive--ride--pilot-knowledge-areas)
-        - [Description of Drive/Ride/Pilot](#description-of-driveridepilot)
-        - [Examples of Drive/Ride/Pilot from Fiction](#examples-of-driveridepilot-from-fiction)
-        - [Drive/Ride/Pilot Archetypes](#driveridepilot-archetypes)
-        - [Specializations for Drive/Ride/Pilot](#specializations-for-driveridepilot)
-        - [Table with Drive/Ride/Pilot skill and examples for each level of difficulty](#table-with-driveridepilot-skill-and-examples-for-each-level-of-difficulty)
       - [Ruggedness Knowledge Areas](#ruggedness-knowledge-areas)
-        - [Description of Ruggedness](#description-of-ruggedness)
-        - [Examples of Ruggedness from Fiction](#examples-of-ruggedness-from-fiction)
-        - [Ruggedness Archetypes](#ruggedness-archetypes)
-        - [Specializations for Ruggedness](#specializations-for-ruggedness)
-        - [Table with Ruggedness skill and examples for each level of difficulty](#table-with-ruggedness-skill-and-examples-for-each-level-of-difficulty)
       - [Unarmed Combat Knowledge Areas](#unarmed-combat-knowledge-areas)
-        - [Description of Unarmed Combat](#description-of-unarmed-combat)
-        - [Examples of Unarmed Combat from Fiction](#examples-of-unarmed-combat-from-fiction)
-        - [Unarmed Combat Archetypes](#unarmed-combat-archetypes)
-        - [Specializations for Unarmed Combat](#specializations-for-unarmed-combat)
-        - [Table with Unarmed Combat skill and examples for each level of difficulty](#table-with-unarmed-combat-skill-and-examples-for-each-level-of-difficulty)
   - [Academic Aspects](#academic-aspects)
     - [Intellect Characteristic](#intellect-characteristic)
       - [Social Sciences Knowledge Areas](#social-sciences-knowledge-areas)
-        - [Description of Social Sciences](#description-of-social-sciences)
-        - [Examples of Social Sciences from Fiction](#examples-of-social-sciences-from-fiction)
-        - [Social Sciences Archetypes](#social-sciences-archetypes)
-        - [Specializations for Social Sciences](#specializations-for-social-sciences)
-        - [Table with Social Sciences skill and examples for each level of difficulty](#table-with-social-sciences-skill-and-examples-for-each-level-of-difficulty)
       - [Life Sciences Knowledge Areas](#life-sciences-knowledge-areas)
-        - [Description of Life Sciences](#description-of-life-sciences)
-        - [Examples of Life Sciences from Fiction](#examples-of-life-sciences-from-fiction)
-        - [Life Sciences Archetypes](#life-sciences-archetypes)
-        - [Specializations for Life Sciences](#specializations-for-life-sciences)
-        - [Table with Life Sciences skill and examples for each level of difficulty](#table-with-life-sciences-skill-and-examples-for-each-level-of-difficulty)
       - [Physical Sciences / Survival Knowledge Areas](#physical-sciences--survival-knowledge-areas)
-        - [Description of Physical Sciences/Survival](#description-of-physical-sciencessurvival)
-        - [Examples of Physical Sciences/Survival from Fiction](#examples-of-physical-sciencessurvival-from-fiction)
-        - [Physical Sciences/Survival Archetypes](#physical-sciencessurvival-archetypes)
-        - [Specializations for Physical Sciences/Survival](#specializations-for-physical-sciencessurvival)
-        - [Table with Physical Sciences/Survival skill and examples for each level of difficulty](#table-with-physical-sciencessurvival-skill-and-examples-for-each-level-of-difficulty)
     - [Reasoning Characteristics](#reasoning-characteristics)
       - [Engineering Knowledge Areas](#engineering-knowledge-areas)
-        - [Description of the Engineering skill](#description-of-the-engineering-skill)
-        - [Examples of Engineering from Fiction](#examples-of-engineering-from-fiction)
-        - [Engineering Archetypes](#engineering-archetypes)
-        - [Specializations for Engineering](#specializations-for-engineering)
-        - [Table with Engineering skill and examples for each level of difficulty](#table-with-engineering-skill-and-examples-for-each-level-of-difficulty)
       - [Insight Knowledge Areas](#insight-knowledge-areas)
-        - [Description of the Insight skill](#description-of-the-insight-skill)
-        - [Examples of Insight from Fiction](#examples-of-insight-from-fiction)
-        - [Insight Archetypes](#insight-archetypes)
-        - [Specializations for Insight](#specializations-for-insight)
-        - [Table with Insight skill and examples for each level of difficulty](#table-with-insight-skill-and-examples-for-each-level-of-difficulty)
       - [Investigation Knowledge Areas](#investigation-knowledge-areas)
-        - [Description of the Investigation skill](#description-of-the-investigation-skill)
-        - [Examples of Investigation from Fiction](#examples-of-investigation-from-fiction)
-        - [Investigation Archetypes](#investigation-archetypes)
-        - [Specializations for Investigation](#specializations-for-investigation)
-        - [Table with Investigation skill and examples for each level of difficulty](#table-with-investigation-skill-and-examples-for-each-level-of-difficulty)
     - [Acuity Characteristics](#acuity-characteristics)
       - [Traditions Knowledge Areas](#traditions-knowledge-areas)
-        - [Description of the Traditions skill](#description-of-the-traditions-skill)
-        - [Examples of Traditions from Fiction](#examples-of-traditions-from-fiction)
-        - [Traditions Archetypes](#traditions-archetypes)
-        - [Specializations for Traditions](#specializations-for-traditions)
-        - [Table with Traditions skill and examples for each level of difficulty](#table-with-traditions-skill-and-examples-for-each-level-of-difficulty)
       - [Perception Knowledge Areas](#perception-knowledge-areas)
-        - [Description of the Perception skill](#description-of-the-perception-skill)
-        - [Examples of Perception from Fiction](#examples-of-perception-from-fiction)
-        - [Perception Archetypes](#perception-archetypes)
-        - [Specializations for Perception Skill](#specializations-for-perception-skill)
-        - [Table with Perception skill and examples for each level of difficulty](#table-with-perception-skill-and-examples-for-each-level-of-difficulty)
       - [Formal Sciences Knowledge Areas](#formal-sciences-knowledge-areas)
-        - [Description of Formal Sciences Skill](#description-of-formal-sciences-skill)
-        - [Examples of Formal Sciences from Fiction](#examples-of-formal-sciences-from-fiction)
-        - [Formal Sciences Archetypes](#formal-sciences-archetypes)
-        - [Specializations for Formal Science Skill](#specializations-for-formal-science-skill)
-        - [Table with Formal Science skill and examples for each level of difficulty](#table-with-formal-science-skill-and-examples-for-each-level-of-difficulty)
   - [Emotional Aspects](#emotional-aspects)
     - [Manners Characteristics](#manners-characteristics)
       - [Style Knowledge Areas](#style-knowledge-areas)
-        - [Description of Style Skill](#description-of-style-skill)
-        - [Examples of Style from Fiction](#examples-of-style-from-fiction)
-        - [Style Archetypes](#style-archetypes)
-        - [Specializations for Style Skill](#specializations-for-style-skill)
-        - [Table with Style skill and examples for each level of difficulty](#table-with-style-skill-and-examples-for-each-level-of-difficulty)
       - [Performance Knowledge Areas](#performance-knowledge-areas)
-        - [Description of the Performance skill](#description-of-the-performance-skill)
-        - [Examples of Performance from Fiction](#examples-of-performance-from-fiction)
-        - [Performance Archetypes](#performance-archetypes)
-        - [Specializations for the Performance skill](#specializations-for-the-performance-skill)
-        - [Table with Performance skill and examples for each level of difficulty](#table-with-performance-skill-and-examples-for-each-level-of-difficulty)
       - [Etiquette Knowledge Areas](#etiquette-knowledge-areas)
-        - [Description of the Etiquette skill](#description-of-the-etiquette-skill)
-        - [Examples of Etiquette from Fiction](#examples-of-etiquette-from-fiction)
-        - [Etiquette Archetypes](#etiquette-archetypes)
-        - [Specializations for the Etiquette skill](#specializations-for-the-etiquette-skill)
-        - [Table with Etiquette skill specializations and difficulty levels](#table-with-etiquette-skill-specializations-and-difficulty-levels)
     - [Personality Characteristics](#personality-characteristics)
       - [Deception Knowledge Areas](#deception-knowledge-areas)
-        - [Description of the Deception Skill](#description-of-the-deception-skill)
-        - [Examples of Deception from Fiction](#examples-of-deception-from-fiction)
-        - [Deception Archetypes](#deception-archetypes)
-        - [Specializations for the Deception Skill](#specializations-for-the-deception-skill)
-        - [Table with Deception skill specializations and difficulty levels](#table-with-deception-skill-specializations-and-difficulty-levels)
       - [Persuasion Knowledge Areas](#persuasion-knowledge-areas)
-        - [Description of the Persuasion Skill](#description-of-the-persuasion-skill)
-        - [Examples of Persuasion from Fiction](#examples-of-persuasion-from-fiction)
-        - [Persuasion Archetypes](#persuasion-archetypes)
-        - [Specializations for the Persuasion Skill](#specializations-for-the-persuasion-skill)
-        - [Table with Persuasion skill specializations and difficulty levels](#table-with-persuasion-skill-specializations-and-difficulty-levels)
       - [Intimidation Knowledge Areas](#intimidation-knowledge-areas)
-        - [Description of the Intimidation Skill](#description-of-the-intimidation-skill)
-        - [Examples of Intimidation from Fiction](#examples-of-intimidation-from-fiction)
-        - [Intimidation Archetypes](#intimidation-archetypes)
-        - [Specializations for the Intimidation Skill](#specializations-for-the-intimidation-skill)
-        - [Table with Intimidation skill specializations and difficulty levels](#table-with-intimidation-skill-specializations-and-difficulty-levels)
     - [Identity Characteristics](#identity-characteristics)
       - [Bureaucracy Knowledge Areas](#bureaucracy-knowledge-areas)
-        - [Description of the Bureaucracy](#description-of-the-bureaucracy)
-        - [Examples of Bureaucracy from Fiction](#examples-of-bureaucracy-from-fiction)
-        - [Bureaucracy Archetypes](#bureaucracy-archetypes)
-        - [Specializations for the Bureaucracy Skill](#specializations-for-the-bureaucracy-skill)
-        - [Table with Bureaucracy skill specializations and difficulty levels](#table-with-bureaucracy-skill-specializations-and-difficulty-levels)
       - [Animal Handling Knowledge Areas](#animal-handling-knowledge-areas)
-        - [Description of the Animal Handling](#description-of-the-animal-handling)
-        - [Examples of Animal Handling from Fiction](#examples-of-animal-handling-from-fiction)
-        - [Animal Handling Archetypes](#animal-handling-archetypes)
-        - [Specializations for the Animal Handling Skill](#specializations-for-the-animal-handling-skill)
-        - [Table with Animal Handling skill specializations and difficulty levels](#table-with-animal-handling-skill-specializations-and-difficulty-levels)
       - [Leadership Knowledge Areas](#leadership-knowledge-areas)
-        - [Description of the Leadership](#description-of-the-leadership)
-        - [Examples of Leadership from Fiction](#examples-of-leadership-from-fiction)
-        - [Leadership Archetypes](#leadership-archetypes)
-        - [Specializations for the Leadership Skill](#specializations-for-the-leadership-skill)
-        - [Table with Leadership skill specializations and difficulty levels](#table-with-leadership-skill-specializations-and-difficulty-levels)
   - [Mystical Aspects](#mystical-aspects)
     - [Skepticism Characteristics](#skepticism-characteristics)
-      - [Spells of the Skeptic](#spells-of-the-skeptic)
       - [Ethereal Knowledge Areas](#ethereal-knowledge-areas)
-        - [Ethereal Archetypes](#ethereal-archetypes)
-        - [Unique Ethereal Magical Spells](#unique-ethereal-magical-spells)
       - [Gnosis Knowledge Areas](#gnosis-knowledge-areas)
-        - [Gnostic Archtypes](#gnostic-archtypes)
-        - [Unique Gnostic Magical Spells](#unique-gnostic-magical-spells)
       - [Chaos Knowledge Areas](#chaos-knowledge-areas)
-        - [Chaos Archtypes](#chaos-archtypes)
-        - [Unique Chaos Magical Spells](#unique-chaos-magical-spells)
     - [Faith Characteristics](#faith-characteristics)
-      - [Spells Unique to Faith](#spells-unique-to-faith)
       - [Theurgy Knowledge Areas](#theurgy-knowledge-areas)
-        - [Theurgy Archtypes](#theurgy-archtypes)
-        - [Unique Theurgy Magical Spells](#unique-theurgy-magical-spells)
       - [Adept Knowledge Areas](#adept-knowledge-areas)
-        - [Adept Archtypes](#adept-archtypes)
-        - [Unique Adept Magical Spells](#unique-adept-magical-spells)
       - [Order Knowledge Areas](#order-knowledge-areas)
-        - [Order Archtypes](#order-archtypes)
-        - [Unique Order Magical Spells](#unique-order-magical-spells)
     - [Mystery Characteristics](#mystery-characteristics)
-      - [Unique Magical Spells to Mystery](#unique-magical-spells-to-mystery)
       - [Metaphysics Knowledge Areas](#metaphysics-knowledge-areas)
-        - [Metaphysical Archtypes](#metaphysical-archtypes)
-        - [Unique Metaphysical Magical Spells](#unique-metaphysical-magical-spells)
       - [Animism Knowledge Areas](#animism-knowledge-areas)
-        - [Animism Archtypes](#animism-archtypes)
-        - [Unique Animism Magical Spells](#unique-animism-magical-spells)
       - [Shamanism Knowledge Areas](#shamanism-knowledge-areas)
-        - [Shamanism Archtypes](#shamanism-archtypes)
-        - [Unique Shamanism Magical Spells](#unique-shamanism-magical-spells)
   - [Task Resolution](#task-resolution)
     - [In Brief](#in-brief)
       - [Degrees of Effect Defined](#degrees-of-effect-defined)
@@ -288,50 +130,8 @@ mathjax: true
         - [Succeed in Style](#succeed-in-style)
         - [Critical Success](#critical-success)
         - [Serendipitous Success](#serendipitous-success)
-  - [Hallmarks Details](#hallmarks-details)
-      - [Rain Forest](#rain-forest)
-      - [Wetlands / Swamp](#wetlands--swamp)
-      - [Savanna](#savanna)
-      - [Desert](#desert)
-      - [Temperate Forest](#temperate-forest)
-      - [Grasslands](#grasslands)
-      - [Chaparral](#chaparral)
-      - [Taiga](#taiga)
-      - [Tundra](#tundra)
-      - [No-Atmosphere](#no-atmosphere)
-      - [Water](#water)
-        - [Surface](#surface)
-        - [Shore](#shore)
-        - [Sunlight](#sunlight)
-        - [Twilight](#twilight)
-        - [Midnight](#midnight)
-        - [Abyss](#abyss)
-      - [Underground](#underground)
-        - [Subsurface](#subsurface)
-        - [Subterranean](#subterranean)
-        - [Caves](#caves)
-        - [Tunnels](#tunnels)
-        - [Foundations](#foundations)
-    - [Enviromental Hallmarks](#enviromental-hallmarks)
-    - [Urban Hallmarks](#urban-hallmarks-1)
-      - [Rural](#rural)
-      - [Suburban](#suburban)
-      - [Low-Density Urban](#low-density-urban)
-      - [Medium-density urban](#medium-density-urban)
-      - [High-density urban](#high-density-urban)
-      - [Megacity](#megacity)
-      - [Metropolis](#metropolis)
-      - [Planetary Urbanization](#planetary-urbanization)
-    - [Occupational Hallmarks](#occupational-hallmarks-1)
-      - [Careers](#careers-1)
-    - [Recreational Hallmarks](#recreational-hallmarks-1)
-    - [Cultural Hallmarks](#cultural-hallmarks-1)
 
-
-
-
-# Character Sheet
-
+# Character Sheet - In Progress
 
 | Name                              | : Description                                                                |
 |:----------------------------------|:-----------------------------------------------------------------------------|
@@ -807,6 +607,110 @@ misfortune. If the hero does not take action in the next Season, the
 holding may be destroyed or have its rating increased.
 
 # Bringing the Skills All Together
+
+## An Overview
+
+The Märchen Engine is outlined in the following framework that categorizes human abilities and skills into four primary aspects: Fitness, Academic, Mystical, and Emotional. Each primary aspect is further divided into three subcategories, which are then broken down into specific skills. The proficiency level for each Aspect is measured on a scale from -4 to 4 with 0 being human normal.  The proficiency level for each skill is meaused on a scale from 0 to 4 with 0 representing an untrained level and 4 indicating a doctorate-level mastery.
+
+### Fitness
+This aspect covers physical abilities and is divided into Muscle, Agility, and Stamina. 
+- **Muscle** focuses on Ranged Combat, Athletics, and Melee Combat, measuring skills in using distance weaponry, physical exertion, and close combat, respectively.
+- **Agility** includes Stealth, Acrobatics, and Sleight of Hand, assessing one's skill in moving quietly, performing complex bodily movements, and manual dexterity.
+- **Stamina** comprises Drive/Ride/Pilot, Ruggedness, and Unarmed Combat, evaluating one's skill in controlling vehicles, physical endurance, and weaponless fighting techniques.
+
+### Academic
+This aspect pertains to intellectual abilities and includes Intellect, Reasoning, and Acuity.
+- **Intellect** is divided into Social Sciences, Life Sciences, and Physical Sciences/Survival, measuring understanding of human society, living organisms, and the natural world.
+- **Reasoning** includes Engineering, Insight, and Investigation, assessing skills in building devices, discerning intentions, and finding clues.
+- **Acuity** comprises Traditions, Perception, and Formal Sciences, evaluating understanding of cultural norms, heightened awareness, and mastery over formal systems like logic.
+
+### Mystical
+This aspect deals with spiritual and magical abilities, divided into Skepticism, Faith, and Mystery.
+- **Skepticism** includes Ethereal, Gnostic, and Chaos magic, measuring mastery over arcane magic, personal knowledge of the divine, and embracing unpredictability in magical systems.
+- **Faith** is divided into Theurgy, Adept, and Order Magic, assessing traditional Western religious practices, mastery over vital energy, and a disciplined approach to magic.
+- **Mystery** comprises Metaphysics, Animism, and Shamanism, evaluating exploration of psychic phenomena, belief in the spiritual essence of things, and acting as a conduit between physical and metaphysical realms.
+
+### Emotional
+This aspect focuses on emotional intelligence and social skills, divided into Manners, Personality, and Identity.
+- **Manners** includes Style, Performance, and Etiquette, measuring skills in aesthetics, captivating an audience, and understanding social customs.
+- **Personality** comprises Deception, Persuasion, and Intimidation, assessing skills in misleading others, influencing through tact, and using threats or force.
+- **Identity** includes Bureaucracy, Animal Handling, and Leadership, evaluating understanding of social structures, skill in handling animals, and the ability to inspire and guide others.
+
+This comprehensive framework provides a nuanced way to evaluate a wide range of human abilities and skills.
+
+## ChatGPT Prompt for the Skills Portion of the Character Sheet.
+
+### Primary Aspects
+1. **Fitness** (-4 - 4, 0 being human normal): Comprises Muscle, Agility, and Stamina. 
+2. **Academic** (-4 - 4, 0 being human normal): Includes Intellect, Reasoning, and Acuity.
+3. **Mystical** (-4 - 4, 0 being human normal): Consists of Skepticism, Faith, and Mystery.
+4. **Emotional** (-4 - 4, 0 being human normal): Encompasses Manners, Personality, and Identity.
+
+#### Fitness
+1. **Muscle** (-4 - 4, 0 being human normal): Divided into Ranged Combat, Athletics, and Melee Combat.
+   - **Ranged Combat**: Skill in using distance weaponry like bows and firearms. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Athletics**: Covers physical exertion and active strength. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Melee Combat**: Measures skill in close combat and melee weapon maintenance. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+  
+2. **Agility** (-4 - 4, 0 being human normal): Includes Stealth, Acrobatics, and Sleight of Hand.
+   - **Stealth**: Skill in moving quietly and evading detection. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Acrobatics**: Mastery over complex bodily movements. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Sleight of Hand**: Art of manual dexterity and trickery. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+3. **Stamina** (-4 - 4, 0 being human normal): Comprises Drive/Ride/Pilot, Ruggedness, and Unarmed Combat.
+   - **Drive/Ride/Pilot**: Skill in controlling various vehicles and riding animals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Ruggedness**: Measures physical endurance and resilience. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Unarmed Combat**: Skill in weaponless fighting techniques. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+#### Academic
+1. **Intellect** (-4 - 4, 0 being human normal): Divided into Social Sciences, Life Sciences, and Physical Sciences/Survival.
+   - **Social Sciences**: Understanding of human society and behavior. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Life Sciences**: Knowledge of living organisms and their environment. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Physical Sciences/Survival**: Understanding natural world and survival skills. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+2. **Reasoning** (-4 - 4, 0 being human normal): Includes Engineering, Insight, and Investigation.
+   - **Engineering**: Skill in building, modifying, and repairing devices. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Insight**: Ability to discern true intentions and emotions of others. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Investigation**: Skill in finding clues and making deductions. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+3. **Acuity** (-4 - 4, 0 being human normal): Comprises Traditions, Perception, and Formal Sciences.
+   - **Traditions**: Understanding of cultural norms and social etiquettes. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Perception**: Heightened awareness and keen senses. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Formal Sciences**: Mastery over formal systems like logic and mathematics. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+#### Mystical
+1. **Skepticism** (-4 - 4): Divided into Ethereal, Gnostic, and Chaos magic.
+   - **Ethereal**: Mastery over invisible threads and arcane magic. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Gnostic**: Personal knowledge of the divine through inner revelation. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Chaos**: Embracing unpredictability and personalizing magical systems. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+2. **Faith** (-4 - 4): Includes Theurgy, Adept, and Order Magic.
+   - **Theurgy**: Traditional Western Religions and Spirituality through divine connection. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Adept**: Mastery over vital energy within the body. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Order**: Scientific, methodical, and disciplined approach to magic. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+3. **Mystery** (-4 - 4): Comprises Metaphysics, Animism, and Shamanism.
+   - **Metaphysics**: Exploration of ESP and psychic phenomena. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Animism**: Belief in the spiritual essence of all things. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Shamanism**: Conduit between physical and metaphysical realms. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+#### Emotional
+1. **Manners** (-4 - 4): Divided into Style, Performance, and Etiquette.
+   - **Style**: Skill in creating cultural artifacts and understanding aesthetics. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Performance**: Ability to captivate an audience through entertainment. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Etiquette**: Mastery over social customs and protocols. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+2. **Personality** (-4 - 4, 0 being human normal): Includes Deception, Persuasion, and Intimidation.
+   - **Deception**: Skill in hiding the truth and misleading others. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Persuasion**: Ability to influence others through tact and social graces. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Intimidation**: Skill in influencing others through threats and force. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+3. **Identity** (-4 - 4, 0 being human normal): Comprises Bureaucracy, Animal Handling, and Leadership.
+   - **Bureaucracy**: Understanding of formalized social structures. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Animal Handling**: Skill in calming and controlling animals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+   - **Leadership**: Ability to inspire and guide others toward common goals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
+
+
 
 ## Fitness Aspects
 
@@ -2659,7 +2563,7 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 ##### Description of the Intimidation Skill
 
-Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions."
+Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions.
 
 ##### Examples of Intimidation from Fiction
 
