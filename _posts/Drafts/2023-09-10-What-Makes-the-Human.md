@@ -8,15 +8,7 @@ author:
 
 description: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions. 
 
-
-excerpt: |
-   All beings have four aspects of their existence. These define the
-   highest categorical breakdown of a being. They are Physical, Mental,
-   Social, and Spiritual. They each have a numeric score The higher the
-   score, the more potential that being has in that aspect of their
-   existence. These numbers also represent how much damage the character
-   can take. These aspects can be broken down into your traditional
-   Characteristics.
+excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions. 
 
 layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
