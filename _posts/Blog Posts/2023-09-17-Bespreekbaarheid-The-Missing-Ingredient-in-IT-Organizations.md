@@ -1,7 +1,7 @@
 ---
 id: 124300
 title: "Bespreekbaarheid: The Missing Ingredient in IT Organizations"
-date: 2023-05-16T08:28:17-08:00 
+date: 2023-09-17 16:48:28
 author:
   name: Ted Tschopp
   url: https://tedt.org
@@ -33,6 +33,7 @@ image-credits-title: Modern Office
 image-credits-artist: Ted Tschopp and Midjourney
 categories:
   - Computers
+  - Communications
 ---
 
 
