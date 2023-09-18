@@ -125,10 +125,6 @@
                       <li>
                         <a href="{{ post.url }}">{{ post.title }}</a></br>
                         {% for category in post.categories %}
-
-
-
-
                         [<a href="category/{{ category }}">{% include category-emoji.html category=category %}{{ category }}</a>] 
                         {% endfor %}
                         {% if post.teaser %}
