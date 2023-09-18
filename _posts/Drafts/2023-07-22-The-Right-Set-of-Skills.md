@@ -6,7 +6,11 @@ author:
   url: https://tedt.org/
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-description: 
+
+description: "Explore the essential skills needed in today's fast-paced environment. Learn how to adapt and grow in your career with the right set of skills."
+
+keywords: "Skills, Career, Adaptability, Learning, Professional Development"
+
 excerpt: |
    All beings have four aspects of their existence. These define the
    highest categorical breakdown of a being. They are Physical, Mental,
@@ -19,7 +23,8 @@ excerpt: |
 layout: post
 guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
 permalink: /2023/07/22/The-Right-Set-of-Skills/
-image: https://www.tedt.org/img/2023-07-22/All_beings_have_four_aspects_of_their_existence.png
+image: https://www.tedt.org/img/2023-07-22/FAME.png
+image-title: FAME - Fitness, Academics, Mystical, Emotional
 image-credits: Photo by Ted Tschopp using Midjourney
 image-alt: Photo by Ted Tschopp using Midjourney
   
