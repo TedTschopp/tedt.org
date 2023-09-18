@@ -20,6 +20,7 @@ image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-
 
 image-alt: "Painting of Wodan coming down the a large river sitting on a water horse holding a battle sword in one hand and the globe in the other the river floods the bank and devastates a medieval city. In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
 
+image-credits-URL: https://www.tedt.org/
 image-credits-title: Woden's Revenge
 image-credits-artist: Ted Tschopp and Midjourney 
 

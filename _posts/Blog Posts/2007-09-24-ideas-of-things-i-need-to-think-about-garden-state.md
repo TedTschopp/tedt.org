@@ -16,7 +16,7 @@ call_to_action: "What are your thoughts on the boundless nature of the Garden of
 
 
 image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
-  
+image-credits-url: https://www.tedt.org/
 image-credits-title: The Limitless Garden
 image-credits-artist: Ted Tschopp and Midjourney
 

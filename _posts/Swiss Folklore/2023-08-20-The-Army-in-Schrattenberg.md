@@ -20,6 +20,8 @@ permalink: /2023/08/20/2023-08-20-The-Army-in-Schrattenberg/
 
 image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
 image-alt: The mysterious army leader and his warriors sleep at the tables.
+
+image-credits-URL: https://www.tedt.org/
 image-credits-title: "The Mysterious Army Leader Sleeps"
 image-credits-artist: Ted Tschopp and Midjourney
 

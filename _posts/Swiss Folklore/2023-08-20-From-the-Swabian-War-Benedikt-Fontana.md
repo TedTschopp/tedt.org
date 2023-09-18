@@ -20,6 +20,8 @@ permalink: /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
 
 image: /img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.jpg
 image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana leads a group of resolute Swiss fighters, storming the bulwark with swords raised high, expressions fierce and determined. The backdrop portrays majestic mountains, clouded in the ominous smoke of the battlefield. The Swiss warriors' eyes gleam with determination and resolve as they fight for their freedom. Their armor glints in the fleeting sunlight, and their battle cries resonate with the passion for their land. The scene encapsulates the spirit, courage, and will of a people unyielding in their fight for independence. 
+
+image-credits-URL: https://www.tedt.org/
 image-credits-title: "Storming the Bulwark: Benedikt Fontana and Swiss Warriors' Fight for Freedom in the Swiss Alps"
 image-credits-artist: Ted Tschopp and Midjourney
 

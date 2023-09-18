@@ -17,7 +17,8 @@ guid: 4fe8721b-675c-4720-96b8-7050ca295595
 permalink: /2009/06/13/dehydrated/
 
 image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg
-  
+
+image-credits-url: https://www.tedt.org/
 image-credits-title: Dehydrated
 image-credits-artist: Ted Tschopp and Midjourney
 categories:
