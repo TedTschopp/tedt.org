@@ -127,8 +127,13 @@
                         {% for category in post.categories %}
                           [<a href="category/{{ category }}">{{ category }}</a>] 
                         {% endfor %}
-
-                        <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
+                        {% if post.teaser %}
+                          <p>{{ post.teaser |truncate html }}</p>
+                        {% elsif post.description % }
+                          <p>{{ post.description |truncate html  }}</p>
+                        {% else % }
+                          <p>{{ post.excerpt |truncate html  }}</p>
+                        {% endif %}
                       </li>
                     {% endif %}
                 {% endfor %}
@@ -146,7 +151,13 @@
             {% for post in posts-drafts limit:3 %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
-                <p>{{ post.excerpt |truncatehtml | truncatewords: 20 }}</p>
+                {% if post.teaser %}
+                  <p>{{ post.teaser |truncate html }}</p>
+                {% elsif post.description % }
+                  <p>{{ post.description |truncate html  }}</p>
+                {% else % }
+                  <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
+                {% endif %}
               </li>
             {% endfor %}
             </ul>
