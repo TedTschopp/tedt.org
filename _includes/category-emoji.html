@@ -1,0 +1,52 @@
+{% case include.category %}
+  {% when "Bestiary" %}
+    🐉
+  {% when "Books" %}
+    📚
+  {% when "Communications" %}
+    📞
+  {% when "Computers" %}
+    💻
+  {% when "Draft" %}
+    📝
+  {% when "Dungeon Crawl Classics" %}
+    🗝️
+  {% when "Dungeons & Dragons" %}
+    🎲
+  {% when "Folklore" %}
+    🌕
+  {% when "Gamma World" %}
+    ☢️
+  {% when "Home" %}
+    🏠
+  {% when "Maps" %}
+    🗺️
+  {% when "Middle-earth" %}
+    🌋
+  {% when "Mobile" %}
+    📱
+  {% when "Monsters" %}
+    👹
+  {% when "Movies" %}
+    🎬
+  {% when "Mutant Crawl Classics" %}
+    🧬
+  {% when "Personal Writing" %}
+    🖋️
+  {% when "Projects" %}
+    🛠️
+  {% when "Quotes" %}
+    💬
+  {% when "Religion" %}
+    ✝️
+  {% when "Reprint" %}
+    🔄
+  {% when "Role Playing Games" %}
+    🎭
+  {% when "Science" %}
+    🔬
+  {% when "The Märchen Engine" %}
+    🧚
+  {% else %}
+    <!-- Output something else if the category doesn't match -->
+{% endcase %}
