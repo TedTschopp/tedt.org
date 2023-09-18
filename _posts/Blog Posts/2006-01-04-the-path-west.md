@@ -30,8 +30,7 @@ Crashing waves and pounding surf
 
 Tonight's the night we leave this earth
 
-
-
+* * *
 
 Companions brave our task complete.  
 
@@ -41,8 +40,7 @@ But on my knees I come today
 
 Forgiveness asked and penance paid.
 
-
-
+* * *
 
 As we depart this earthly sphere  
 
@@ -52,8 +50,7 @@ A sadness now, a twinge of guilt
 
 As glories fade and triumphs wilt.
 
-
-
+* * *
 
 Straight is our path into the west  
 
@@ -63,8 +60,7 @@ The course is set, our way secure:
 
 Old burdens heavy, old hearts now pure.
 
-
-
+* * *
 
 Slowly slip the sands of time  
 
@@ -73,7 +69,3 @@ Past my fingers, through my hands.
 A whispering breeze, a swan in flight,  
 
 A world awaking, an end to night.
-
-
-
-Ted Tschopp

@@ -15,7 +15,6 @@ categories:
 ---
 The following code is a calendar application I’m building in JavaScript. It needs a couple rounds of refactoring (to get rid of document.writes and to make it more object friendly).  The next step will be to make it handle iCal files (which will be a trick).  This is posted for all to enjoy. See the link at the end of this document.
 
-
 ~~~html
 <style>
   body {
@@ -215,5 +214,4 @@ The following code is a calendar application I’m building in JavaScript. It n
 </script>
 ~~~
 
-
-EDIT: Ok, more stuff to post on my calendar [App](https://tedt.org/2006/04/07/a_little_calend/).&#160; I've gotten the ical file loaded into the webpage, now I need to convert the ical file into a usable data type.&#160; My current thoughts are to go from i-Cal -> XML.&#160; I need to spend some time looking at the practices of converting from i-Cal -> XML.&#160; I notice that Google is doing it.&#160; Also the Microformat guys seem to be doing it as well.
+EDIT: Ok, more stuff to post on my calendar [App](https://tedt.org/2006/04/07/a_little_calend/). I've gotten the ical file loaded into the webpage, now I need to convert the ical file into a usable data type. My current thoughts are to go from i-Cal -> XML. I need to spend some time looking at the practices of converting from i-Cal -> XML. I notice that Google is doing it. Also the Microformat guys seem to be doing it as well.

@@ -17,9 +17,9 @@ permalink: /2004/05/21/currently_liste/
 categories:
   - Computers
 ---
-Ok, So I have iTunes running here at work, and I have Typepad running. So now the two of them are working together. This program below will update TypePad list of songs with the latest tunes you are listening to. You will need to instert your List ID, Username, and Password instead of the ************'s.
+Ok, So I have iTunes running here at work, and I have Typepad running. So now the two of them are working together. This program below will update TypePad list of songs with the latest tunes you are listening to. You will need to insert your List ID, Username, and Password instead of the ************'s.
 
-Enjoy. 
+Enjoy.
 
 {% highlight csharp linenumbers%}
 using System;
