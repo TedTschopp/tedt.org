@@ -128,11 +128,11 @@
                           [<a href="category/{{ category }}">{{ category }}</a>] 
                         {% endfor %}
                         {% if post.teaser %}
-                          <p>{{ post.teaser |truncate html }}</p>
+                          <p>{{ post.teaser }}</p>
                         {% elsif post.description %}
-                          <p>{{ post.description |truncate html  }}</p>
+                          <p>{{ post.description  }}</p>
                         {% else %}
-                          <p>{{ post.excerpt |truncate html  }}</p>
+                          <p>{{ post.excerpt |truncate html | truncatewords: 20}}</p>
                         {% endif %}
                       </li>
                     {% endif %}
@@ -152,9 +152,9 @@
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 {% if post.teaser %}
-                  <p>{{ post.teaser |truncate html }}</p>
+                  <p>{{ post.teaser }}</p>
                 {% elsif post.description %}
-                  <p>{{ post.description |truncate html  }}</p>
+                  <p>{{ post.description   }}</p>
                 {% else %}
                   <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
                 {% endif %}
