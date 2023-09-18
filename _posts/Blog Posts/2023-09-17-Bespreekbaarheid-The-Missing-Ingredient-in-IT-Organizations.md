@@ -17,7 +17,7 @@ layout: post
 guid: 1d8f75e5-7b91-4441-b546-d5fe668b8e0c
 permalink: /2023/09/17/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations/
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
-image_alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
+image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
   
 image-credits-URL: https://www.tedt.org/
 image-credits-title: Modern Office

@@ -11,7 +11,7 @@ layout: post
 
 description: "This article presents an intricate examination of the themes present in 'Children of Men,' including humanity, family, sexuality, science, and relationships. Drawing connections to the Garden of Eden's story, the author explores the nature of evil and the eternal aspects of our existence, ultimately tying it to the Christian faith and the promise of redemption."
 keywords: "Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships, Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith"
-picture_description: "An image combining the book cover of 'Children of Men,' a depiction of the Garden of Eden, and symbolic representations of the themes such as a DNA helix for science, intertwined hands for relationships, and an apple for temptation. The collage symbolizes the multifaceted exploration of the book's themes in relation to theology."
+picture-description: "An image combining the book cover of 'Children of Men,' a depiction of the Garden of Eden, and symbolic representations of the themes such as a DNA helix for science, intertwined hands for relationships, and an apple for temptation. The collage symbolizes the multifaceted exploration of the book's themes in relation to theology."
 
 
 

@@ -16,7 +16,7 @@ layout: post
 guid: 4569431d-6cc4-411f-8935-0a8697074352
 permalink: /2023/01/02/2023-01-02-On-the-Mountain-of-Saint-George/
 image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
-image_alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae of Matthaeus Merian.
+image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae of Matthaeus Merian.
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
 image-credits-title: Stein am Rhein – Stenium ad Rhenum
 image-credits-artist: Matthäus Merian (*1593 - †1650)

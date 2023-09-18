@@ -12,7 +12,7 @@ layout: post
 guid: b0eacef2-1bd1-42a0-b430-1268f40df432
 permalink: /2023/08/27/Gamma-World-Terrain-Backdrops/
 image: 
-image_alt: 
+image-alt: 
   
 image-credits-URL: 
 image-credits-title: 

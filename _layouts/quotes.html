@@ -155,12 +155,12 @@
 
                     {% if page.image %}
                     <figure>
-                    <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{page.image_alt}} by {{page.image_credits}}">
+                    <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{page.image-alt}} by {{page.image_credits}}">
                       <figcaption>
                         {% if page.image-credits-URL or page.image-credits-title %}
                             <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
                         {% elsif page.image-credits %}
-                          {{page.image_alt}} by {{page.image_credits}}
+                          {{page.image-alt}} by {{page.image_credits}}
                         {% else %}
                             Unknown
                         {% endif %}

@@ -12,7 +12,7 @@ layout: post
 
 description: "An insightful look into the isolation of Tasmania's Aboriginal people 10,000 years ago and the loss of their technologies. This article explores the profound lessons that can be drawn from this historical event, particularly in the context of collaboration, technology development, and adaptability in modern times."
 keywords: "Tasmania, Aborigines, collaboration, technology development, isolation, innovation, adaptability, history, lessons learned, modern implications"
-picture_description: "A captivating image by JJ Harrison, showcasing the natural beauty of Tasmania's landscape. The image serves as a symbolic representation of the isolation and unique environment that shaped the lives and culture of the Tasmanian Aborigines."
+picture-description: "A captivating image by JJ Harrison, showcasing the natural beauty of Tasmania's landscape. The image serves as a symbolic representation of the isolation and unique environment that shaped the lives and culture of the Tasmanian Aborigines."
 call_to_action: "How has collaboration shaped your industry or personal growth? Are there barriers in your environment hindering collaboration? Share your thoughts and join the conversation below. Let's learn from history and strive for adaptability, innovation, and collaboration in our rapidly evolving world."
 
 

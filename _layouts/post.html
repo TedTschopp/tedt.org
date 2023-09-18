@@ -138,14 +138,14 @@
                         -->
 
                     {% if page.image %}
-                        {% if page.image_alt %}
-                            {% assign image_alt = page.image_alt %}
+                        {% if page.image-alt %}
+                            {% assign image-alt = page.image-alt %}
                         {% else %}
-                            {% assign image_alt = page.title %}
+                            {% assign image-alt = page.title %}
                         {% endif %}
 
-                        {% if page.picture_description %}
-                            {% assign image_alt = page.picture_description %}
+                        {% if page.picture-description %}
+                            {% assign image-alt = page.picture-description %}
                         {% endif %}
 
                         {% if page.image-credits-title %}
@@ -161,13 +161,13 @@
                         {% endif %}
 
                         <figure>
-                            <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{image_alt}} by {{image_credits}}">
+                            <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{image-alt}} by {{image_credits}}">
                             <figcaption>
 
                                 {% if page.image-credits-URL %}
                                     <a target="_new" href="{{page.image-credits-URL}}">"{{image_credits_title}}" by {{image_credits}}</a>
                                 {% else %}
-                                    "{{image_credits_title}}" by {{image-credits}}
+                                    "{{image_credits_title}}" by {{image_credits}}
                                 {% endif %}
                                 
                             </figcaption>

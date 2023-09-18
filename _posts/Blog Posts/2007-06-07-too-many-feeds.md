@@ -12,7 +12,7 @@ layout: post
 
 description: "The author shares their experience with managing 212 different RSS feeds and blogs, highlighting the struggles with taxonomy, workflow, scanning articles, linkblogs, and the limits of current feed reading applications. This article provides a unique perspective on the challenges faced by avid content consumers and hints at potential areas for improvement in RSS reader technology."
 keywords: "RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD, linkblogs, reading overload, scanning articles, information overload, feed reading applications"
-picture_description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
+picture-description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
 
 
 guid: 064921a7-6a93-4047-a8a5-47d924cbbf95

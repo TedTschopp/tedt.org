@@ -18,7 +18,7 @@ layout: post
 guid: 7a6805c0-d19d-4397-8ff5-ebe515ae289b
 permalink: /2019/01/23/Reprint-ICBM-by-Hanson-W-Baldwin/
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
-image_alt: Picture of an ICBM
+image-alt: Picture of an ICBM
 image-credits-URL: 
 image-credits-title: ICBM Launch
 image-credits-artist: John Wilson

@@ -12,7 +12,7 @@ layout: post
 
 description: "In this article, the author revisits a previous conversation on what Google should invest in next, covering aspects like data mining, pattern recognition, GIS, real-time monitoring, algorithms, and the connection between content creators and consumers. The insights provided offer a thoughtful look at potential areas of growth and innovation for the tech giant."
 keywords: "Google, investment strategy, data mining, GIS, real-time monitoring, pattern recognition, algorithms, advertising, branding, content creation, content consumption, real-world information, online integration"
-picture_description: "An intricate diagram illustrating the key areas of investment suggested for Google, including icons and visual elements representing data mining, GIS, real-time monitoring, algorithms, and the connection between real-world and online information, symbolizing the multifaceted approach to growth and innovation."
+picture-description: "An intricate diagram illustrating the key areas of investment suggested for Google, including icons and visual elements representing data mining, GIS, real-time monitoring, algorithms, and the connection between real-world and online information, symbolizing the multifaceted approach to growth and innovation."
 
 
 

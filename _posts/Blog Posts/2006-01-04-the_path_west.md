@@ -12,7 +12,7 @@ title: "The Path West: Reflections on Time, Forgiveness, and Departure"
 subtitle: "An Ode to Transcendence and the Inner Quest for Redemption"
 description: "This evocative poem explores themes of time, forgiveness, and the human quest for redemption. Through imagery of the ocean, sand, and a journey into the west, the poet conveys a sense of longing, reflection, and peaceful acceptance of life's inevitable end."
 keywords: "Poetry, Time, Forgiveness, Redemption, Journey, Sands of Time, Reflection, Human Quest, Departure, Earthly Sphere, Triumph, Penance"
-picture_description: "An image of a serene beach at sunset, where waves gently lap the shore and sands slip through outstretched fingers. A lone figure stands in contemplation, symbolizing the reflections on time, forgiveness, and life's journey expressed in the poem."
+picture-description: "An image of a serene beach at sunset, where waves gently lap the shore and sands slip through outstretched fingers. A lone figure stands in contemplation, symbolizing the reflections on time, forgiveness, and life's journey expressed in the poem."
 
 
 

@@ -19,7 +19,7 @@ guid: 71656df5-81a0-47ab-91b4-3736c10b277d
 permalink: /2023/08/20/2023-08-20-The-Little-Shepherd-of-Mellikon/
 
 image: /img/Swiss/A_ghost_of_a_young_Shepherd_emerges.jpg
-image_alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist. In the foreground, villagers peer upward, faces etched with curiosity and fear. The hole in the rock looms ominously, embodying the legend of the Little Shepherd who still haunts the area.
+image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist. In the foreground, villagers peer upward, faces etched with curiosity and fear. The hole in the rock looms ominously, embodying the legend of the Little Shepherd who still haunts the area.
 image-credits-title: "The Legend of the Little Shepherd"
 image-credits-artist: Ted Tschopp and Midjourney
 

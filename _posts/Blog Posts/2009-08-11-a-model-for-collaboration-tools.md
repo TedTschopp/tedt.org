@@ -12,7 +12,7 @@ layout: post
 
 description: "This article explores the intricate dynamics of collaboration in a modern corporate environment. Through the lens of Information Technology, it identifies key problems and offers a detailed model for improving collaboration. The model categorizes collaboration by audience, artifact, and time, creating a practical framework for understanding and improving the collaboration process."
 keywords: "collaboration, corporate environment, Information Technology, mediation gap, artifacts, communication, knowledge management, email, written, verbal, visual, real time, queued, long term, static, permanent"
-picture_description: "A well-structured diagram showcasing the Model for Collaboration, highlighting the three properties - Audience, Artifacts, and Time - and their respective categories. This visual representation serves as a concise overview of the collaboration process, emphasizing the intricate interplay between these elements."
+picture-description: "A well-structured diagram showcasing the Model for Collaboration, highlighting the three properties - Audience, Artifacts, and Time - and their respective categories. This visual representation serves as a concise overview of the collaboration process, emphasizing the intricate interplay between these elements."
 call_to_action: "Do you recognize these collaboration challenges in your workplace? How have you addressed them? Share your thoughts and experiences in the comments, and join us in the pursuit of more effective and meaningful collaboration."
 
 

@@ -15,7 +15,7 @@ guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/07/22/What-Makes-a-Human/
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-credits: Photo by Ted Tschopp using Midjourney
-image_alt: Photo by Ted Tschopp using Midjourney
+image-alt: Photo by Ted Tschopp using Midjourney
   
 categories:
   - Role Playing Games

@@ -11,7 +11,7 @@ layout: post
 
 description: "Join the author in exploring a personal journey through Lent, embracing a unique fasting practice of consuming only liquids during daylight hours. This narrative highlights the challenges and reflections associated with this spiritual practice."
 keywords: "Lent, fasting, spiritual journey, liquid fasting, Jamba Juice, tea, reflection, religious practice, personal growth"
-picture_description: "An image of a sunrise, representing the start of the fasting period, with various glasses of tea and juice, symbolizing the liquids consumed during the fast."
+picture-description: "An image of a sunrise, representing the start of the fasting period, with various glasses of tea and juice, symbolizing the liquids consumed during the fast."
 call_to_action: "What are your experiences with fasting or unique practices during Lent? Share your insights, challenges, and triumphs in the comments below. Your journey might inspire others!"
 
 guid: 4c5c466f-239b-479f-a36f-9084f3688e4f

@@ -36,16 +36,16 @@
 {% if page.image %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-  {% if page.image_alt %}
-    <meta name="twitter:image:alt" content="{{page.image_alt}}">
+  {% if page.image-alt %}
+    <meta name="twitter:image:alt" content="{{page.image-alt}}">
   {% else %}
     <meta name="twitter:image:alt" content="">
   {% endif %}
 {% else %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="{{ site.title_image }}">
-  {% if site.title_image_alt %}
-    <meta name="twitter:image:alt" content="{{site.title_image_alt}}">
+  {% if site.title-image-alt %}
+    <meta name="twitter:image:alt" content="{{site.title-image-alt}}">
 {% else %}
     <!--do nothing-->
   {% endif %}

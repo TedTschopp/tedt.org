@@ -15,7 +15,7 @@ layout: post
 guid: ddd1c6d3-fe65-4e62-83e4-64f06164bda2 
 permalink: /2022/12/23/Getting-an-AI-to-Run-Your-Next-TTRPG/
 image: /wp-content/uploads/2022/12/23/TTRPG-Gamma-World-ASCII-Art.jpg
-image_alt: Gamma World 1st Edition RPG Books and dice
+image-alt: Gamma World 1st Edition RPG Books and dice
 image-credits-URL: https://www.facebook.com/mudpuppycomics
 image-credits-title: OSR Role Playing Game Dice
 image-credits-artist: Jim Wampler

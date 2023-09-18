@@ -16,7 +16,7 @@ layout: post
 guid: b0eacef2-1bd1-42a0-b430-1268f40df432
 permalink: /2023/05/16/AI-User-Interfaces-and-Experiences-in-2023/
 image: /media/printing-press-hannes-wolf-unsplash.jpg
-image_alt: Photo by Hannes Wolf on Unsplash
+image-alt: Photo by Hannes Wolf on Unsplash
   
 image-credits-URL: https://unsplash.com/photos/n2ILm0aTCYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 image-credits-title: Printing Press

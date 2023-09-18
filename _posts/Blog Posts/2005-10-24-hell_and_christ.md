@@ -13,7 +13,7 @@ layout: post
 description: "This article explores the unsettling and universal idea of hell, examining two main positions regarding the afterlife for unbelievers: annihilation and eternal damnation. The author's personal struggle with these concepts provides a thought-provoking analysis of human culture and religious beliefs."
 keywords: "Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Systems, Christian Viewpoint, Pagan Literature, Symbolism, Punishment"
 
-picture_description: "An abstract representation of the two concepts of hell: annihilation and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing the profound and uncomfortable nature of these beliefs. It conveys the universality and nightmarish quality of hell in human culture.  In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
+picture-description: "An abstract representation of the two concepts of hell: annihilation and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing the profound and uncomfortable nature of these beliefs. It conveys the universality and nightmarish quality of hell in human culture.  In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
 
 
 
