@@ -129,9 +129,9 @@
                         {% endfor %}
                         {% if post.teaser %}
                           <p>{{ post.teaser |truncate html }}</p>
-                        {% elsif post.description % }
+                        {% elsif post.description %}
                           <p>{{ post.description |truncate html  }}</p>
-                        {% else % }
+                        {% else %}
                           <p>{{ post.excerpt |truncate html  }}</p>
                         {% endif %}
                       </li>
