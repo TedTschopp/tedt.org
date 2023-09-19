@@ -123,7 +123,7 @@
                             {% break %}
                         {% endif %}
                       <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a> -  {% for category in post.categories %}<a href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}
+                        <a href="{{ post.url }}">{{ post.title }}</a> -  {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}
                       </br>
                         {% if post.teaser %}
                           <p>{{ post.teaser }}</p>

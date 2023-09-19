@@ -254,7 +254,7 @@
                             {% for category in sorted_categories %}
                             <li>
                               {% assign category-to-render = category[0] %}
-                              <a href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+                              <a style="text-decoration: none;" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                             </li>
                           {% endfor %}
                         </ul>
