@@ -122,7 +122,7 @@
                         {% if count > 3 %}
                             {% break %}
                         {% endif %}
-                      <li>
+                      <li style="list-style: none;">
                         <a href="{{ post.url }}">{{ post.title }}</a> -  {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}
                       </br>
                         {% if post.teaser %}
@@ -147,7 +147,7 @@
             <ul>
             {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
             {% for post in posts-drafts limit:3 %}
-              <li>
+              <li style="list-style: none;">
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 {% if post.teaser %}
                   <p>{{ post.teaser }}</p>
