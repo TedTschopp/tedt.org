@@ -8,24 +8,24 @@
 
  @font-face {
 	font-family: 'IrwinAllen';
-	src: url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff2') format('woff2'),
-	url('https://tedt.org/RPG/MCC-GW/media/IrwinAllen.woff') format('woff');
+	src: url('https://www.tedt.org/fonts/IrwinAllen.woff2') format('woff2'),
+	url('https://www.tedt.org/fonts/IrwinAllen.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
  }
  
  @font-face {
 	font-family: 'CHECKBK0';
-	src: url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff2') format('woff2'),
-	url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff') format('woff');
+	src: url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
+	url('https://www.tedt.org/fonts/CHECKBK0.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
  }
  
  @font-face {
 	font-family: 'lowwe';
-	src: url('https://tedt.org/RPG/MCC-GW/media/lowwe.woff2') format('woff2'),
-	url('https://tedt.org/RPG/MCC-GW/media/lowwe.woff') format('woff');
+	src: url('https://www.tedt.org/fonts/lowwe.woff2') format('woff2'),
+	url('https://www.tedt.org/fonts/lowwe.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
  }
@@ -33,17 +33,17 @@
  
  @font-face {
 	font-family: 'lp1_regular';
-	src: url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.eot');
-	src: url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.woff') format('woff'),
-	url('https://tedt.org/RPG/MCC-GW/media/lp1-regular-webfont.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/lp1-regular-webfont.eot');
+	src: url('https://www.tedt.org/fonts/lp1-regular-webfont.woff') format('woff'),
+	url('https://www.tedt.org/fonts/lp1-regular-webfont.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
  }
  @font-face {
 	font-family: 'Duvall';
-	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.eot');
-	src: url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff2') format('woff2'),
-	url('https://tedt.org/RPG/MCC-GW/media/DuvallSmallCaps.woff') format('woff');
+	src: url('https://www.tedt.org/fonts/DuvallSmallCaps.eot');
+	src: url('https://www.tedt.org/fonts/DuvallSmallCaps.woff2') format('woff2'),
+	url('https://www.tedt.org/fonts/DuvallSmallCaps.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
  }
@@ -164,7 +164,7 @@ figcaption {
    a:hover .DCC
    {
 	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
-	text-shadow:  -2px -2px 0px #eae221, 
+	text-shadow:-2px -2px 0px #eae221, 
 				2px  2px 0px #eae221, 
 				2px -2px 0px #eae221, 
 			    -2px  2px 0px #eae221, 
@@ -188,7 +188,7 @@ figcaption {
    {
 	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
-	text-shadow:   -3px -3px 0px #ff001b, 
+	text-shadow:-3px -3px 0px #ff001b, 
 				 3px  3px 0px #ff001b,
 				 3px -3px 0px #ff001b, 
 				-3px  3px 0px #ff001b, 
@@ -206,10 +206,10 @@ figcaption {
 
 @font-face {
 	font-family: 'UngerFrakturZierbuchstaben';
-	src: url('UngerFrakturZierbuchstaben.woff2') format('woff2'),
-	url('UngerFrakturZierbuchstaben.woff') format('woff'),
-	url('UngerFrakturZierbuchstaben.ttf') format('truetype'),
-	url('UngerFrakturZierbuchstaben.otf') format('opentype');
+	src: url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.woff2') format('woff2'),
+	url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.woff') format('woff'),
+	url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.ttf') format('truetype'),
+	url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 	/* ONLY GOOD FOR FIRST LETTER ILLUMINATED GERMAN FONT */
@@ -220,28 +220,28 @@ figcaption {
 
 @font-face {
 	font-family: 'CedarvilleCursive';
-	src: url('CedarvilleCursive-Regular.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/CedarvilleCursive-Regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IMFellDWPicaSC';
-	src: url('IMFellDWPicaSC-Regular.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/IMFellDWPicaSC-Regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IMFellDWPica';
-	src: url('IMFellDWPica-Regular.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/IMFellDWPica-Regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
 @font-face {
 	font-family: 'coelnische_current_fraktur';
-	src: url('COELCF__.TTF') format('truetype');
+	src: url('https://www.tedt.org/fonts/COELCF__.TTF') format('truetype');
 	/* FANCY CAPITAL LETTERS AND GOOD TITLE FONT FOR LOWER CASE */
 	font-style: normal;
 	font-weight: normal;
@@ -249,7 +249,7 @@ figcaption {
  }
  @font-face {
 	font-family: 'strassburgfraktur';
-	src: url('strassburgfraktur.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/strassburgfraktur.ttf') format('truetype');
 	/* SUPER FANCY CAPITAL LETTERS AND OK NORMAL FONT FOR LOWERCASE */
 	font-style: normal;
 	font-weight: normal;
@@ -257,7 +257,7 @@ figcaption {
 }
  @font-face {
 	font-family: 'RegentUNZ';
-	src: url('RegentUNZ.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/RegentUNZ.ttf') format('truetype');
 	/* GREAT TITLE CASE FONT */
 	font-style: normal;
 	font-weight: normal;
@@ -265,7 +265,7 @@ figcaption {
  }
  @font-face {
 	font-family: 'SkennertonFraktur';
-	src: url('SkennertonFraktur.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/SkennertonFraktur.ttf') format('truetype');
 	/* SUPER normal german font errored  */
 	font-style: normal;
 	font-weight: normal;
@@ -273,8 +273,8 @@ figcaption {
 }
 @font-face {
 	font-family: 'Hillal';
-	src: url('Hillal.ttf') format('truetype'),
-	url('Hillal.otf') format('opentype');
+	src: url('https://www.tedt.org/fonts/Hillal.ttf') format('truetype'),
+	url('https://www.tedt.org/fonts/Hillal.otf') format('opentype');
 	/* Normal hand written font */
 	font-style: normal;
 	font-weight: normal;
@@ -282,7 +282,7 @@ figcaption {
 }
 @font-face {
 	font-family: 'DanaLibraryHand-Regular';
-	src: url('DanaLibraryHand-Regular.otf') format('opentype');
+	src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype');
 	/* Library card hand  */
 	font-style: normal;
 	font-weight: normal;
@@ -291,11 +291,11 @@ figcaption {
 
 @font-face {
 	font-family: 'AntiquarianScribe';
-	src: url('AntiquarianScribe.eot'); /* IE9 Compat Modes */
-	src: url('AntiquarianScribe.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
-		url('AntiquarianScribe.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('AntiquarianScribe.svg#AntiquarianScribe') format('svg'); /* Legacy iOS */
+	src: url('https://www.tedt.org/fonts/AntiquarianScribe.eot'); /* IE9 Compat Modes */
+	src: url('https://www.tedt.org/fonts/AntiquarianScribe.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://www.tedt.org/fonts/AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
+		url('https://www.tedt.org/fonts/AntiquarianScribe.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('https://www.tedt.org/fonts/AntiquarianScribe.svg#AntiquarianScribe') format('svg'); /* Legacy iOS */
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
@@ -304,11 +304,11 @@ figcaption {
 
 @font-face {
 	font-family: 'TerraIgnota';
-	src: url('TerraIgnota.eot'); /* IE9 Compat Modes */
-	src: url('TerraIgnota.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('TerraIgnota.woff') format('woff'), /* Modern Browsers */
-		url('TerraIgnota.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('TerraIgnota.svg#TerraIgnota') format('svg'); /* Legacy iOS */
+	src: url('https://www.tedt.org/fonts/TerraIgnota.eot'); /* IE9 Compat Modes */
+	src: url('https://www.tedt.org/fonts/TerraIgnota.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://www.tedt.org/fonts/TerraIgnota.woff') format('woff'), /* Modern Browsers */
+		url('https://www.tedt.org/fonts/TerraIgnota.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('https://www.tedt.org/fonts/TerraIgnota.svg#TerraIgnota') format('svg'); /* Legacy iOS */
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
