@@ -123,7 +123,7 @@
                             {% break %}
                         {% endif %}
                       <li style="list-style: none;">
-                        <a href="{{ post.url }}"><h3>{{ post.title }}</a> -  {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</h3></a>{% endfor %}
+                        <a href="{{ post.url }}"><h4>{{ post.title }}</a> -  {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</h4></a>{% endfor %}
                       </br>
                         {% if post.teaser %}
                           <p>{{ post.teaser }}</p>
@@ -148,7 +148,7 @@
             {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
             {% for post in posts-drafts limit:3 %}
               <li style="list-style: none;">
-                <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
                 {% if post.teaser %}
                   <p>{{ post.teaser }}</p>
                 {% elsif post.description %}
@@ -213,7 +213,7 @@
           <div class="col-xl-9 mx-auto">
             <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
             <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=256&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-            <h3><span class="p-job-title">Enterprise Architect</h3>
+            <h2><span class="p-job-title">Enterprise Architect</h2>
             <hr class="intro-divider">
             <span class="p-adr d-none">
                 <span class="p-locality">{{ site.locality }}</span>,
