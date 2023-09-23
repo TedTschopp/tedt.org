@@ -1,6 +1,6 @@
 ---
 id: 12428937
-Title: "The Weatherman in Pörtlialp"
+Title: The Weatherman in Pörtlialp
 author:
   name: Ted Tschopp
   url: https://tedt.org
@@ -10,7 +10,7 @@ Date: 2023-09-23 15:04:59
 Excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
 Description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears in Pörtlialp that is believed to bring bad weather."
 
-Keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"0
+Keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"
 Location: "Pörtlialp, Uri, Switzerland"
 Longitude: "8.5942"
 Latitude: "46.7758"
