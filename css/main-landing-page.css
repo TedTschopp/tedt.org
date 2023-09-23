@@ -1,13 +1,6 @@
-/*!
- * Start Bootstrap - Landing Page v5.0.1 (https://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin&display=swap');
-
-
- @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredericka+the+Great&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredericka+the+Great&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 @font-face {
     font-family: 'IrwinAllen';

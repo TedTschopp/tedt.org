@@ -252,7 +252,7 @@
                         <ul>
                           {% assign sorted_categories = site.categories | sort %}
                             {% for category in sorted_categories %}
-                            <li>
+                            <li style="list-style: none;">
                               {% assign category-to-render = category[0] %}
                               <a style="text-decoration: none;" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                             </li>
