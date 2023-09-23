@@ -1,21 +1,21 @@
 ---
 id: 12428938
-Title: "The Betten Dog"
+title: "The Betten Dog"
 author:
   name: Ted Tschopp
   url: https://tedt.org
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-Date: 2023-09-23 15:25:46
-Excerpt: "In 'Betten,' a stream separates the communities of Rebstein and Marbach, where people used to see the Betten Dog with a long, drooping tongue, fiery eyes, and a long tail."
-Description: "A Swiss German folk tale about a mysterious dog that appears in Betten and accompanies nocturnal wanderers, especially wrongdoers, without causing harm."
+date: 2023-09-23 15:25:46
+excerpt: "In 'Betten,' a stream separates the communities of Rebstein and Marbach, where people used to see the Betten Dog with a long, drooping tongue, fiery eyes, and a long tail."
+description: "A Swiss German folk tale about a mysterious dog that appears in Betten and accompanies nocturnal wanderers, especially wrongdoers, without causing harm."
 
-Keywords: "Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer"
+keywords: "Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer"
 
-Location: "Betten, Rebstein and Marbach, Switzerland"
-Longitude: "9.5615"
-Latitude: "47.3667"
-Year: "1903"
+location: "Betten, Rebstein and Marbach, Switzerland"
+longitude: "9.5615"
+latitude: "47.3667"
+year: "1903"
 Monster_or_magical_or_religious_idea: "Mysterious Dog"
 Tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
 

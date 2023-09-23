@@ -7,10 +7,12 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
 Date: 2023-09-23 15:04:59
-Excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
-Description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears in Pörtlialp that is believed to bring bad weather."
 
-Keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"
+excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
+
+description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears in Pörtlialp that is believed to bring bad weather."
+
+keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"
 Location: "Pörtlialp, Uri, Switzerland"
 Longitude: "8.5942"
 Latitude: "46.7758"
