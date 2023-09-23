@@ -10,6 +10,10 @@ author:
 excerpt: |
    I plan on having two systems for Radiation Damage in my D&D 5e Gamma World system.  The first is a realisitic system that will be used for dramatic purposes... ...the second system will basically set a CON Save vs a DC that is based on the Radiation Intensity
 
+
+description: "A comprehensive guide on implementing nukes and radiation in Dungeons and Dragons 5th Edition for Gamma World. Learn about radiation damage, new stats, and the effects of nuclear blasts in your game."
+keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role playing games, Game Master
+
 layout: MCC-GW
 
 guid: 816f9b96-9415-40c5-b261-4235d9ab35a1

@@ -16,7 +16,7 @@ seo_description: |
    The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
 
 
-layout: MCC-GW
+layout: post
 guid: f661541e-286a-43aa-b7a2-00d30f33d010
 permalink: /2018/11/08/Increasing-in-Rank-MCC-with-Archaic-Alliances/
 image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg

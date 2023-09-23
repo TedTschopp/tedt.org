@@ -10,7 +10,11 @@ author:
 excerpt: |
   Most societies are formed around a given ideology or way of thinking.  These ideologies can be broken up into several different categories.  At the higher tech levels where people have more freetime, those societies will have multiple ideologies from all four segments operating together within their borders.  Each group will have various taboos, symbols, concepts, hierarchies, buildings, trade goods, occupations, equipment, stories, and legends that they have a monopoly on.   It should be noted that ideologies can exist with other ideologies.
 
-layout: post
+description: "Explore the complexities of ideologies, factions, and religions in role-playing games. Understand how to create a multi-layered world that engages players in political, economic, and religious dimensions."
+
+keywords: Role playing games, Ideologies, Factions. Religions, World-building, Game Master
+
+layout: draft
 
 guid: e679b34c-0771-4e90-af7a-d082eb71178c
 permalink: /2018/04/19/Factions-Ideologies-and-Religions-in-Role-Playing-Games/

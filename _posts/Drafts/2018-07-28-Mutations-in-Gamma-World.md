@@ -14,7 +14,7 @@ excerpt: |
 seo_description: |
    During the days of Tech Level VI, a lot of time was spent by Artificial Intelligences and bioengineers to come up with ways to modify humans, animals, and plants.  During this time all sort of transhumanism and animal / plant uplifting took place.  After the cataclysm many of these strains granted their species advantages in survival.   The following attempts to recreate the understanding these people had and make sense of this information.
 
-layout: MCC-GW
+layout: post
 guid: 2f4b8d5c-cf2a-4030-a6bf-0279eada7693
 image: 	/img/2018-07-28/ola-larsson-genlabbalpha.jpg
 image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn

@@ -16,7 +16,7 @@ seo_description: |
    The following is an integration of rules for Gamma World's Power Cells with  Mutant Crawl Classic.  
 
 
-layout: MCC-GW
+layout: post
 guid: 1c1b9804-b2ab-4aac-8796-e4891fa5e66b
 permalink: /2018/11/02/Power-Cells-from-Gamma-World-in-MCC-DCC/
 image:  /img/2018-11-02/FuelCellRenders2.jpg

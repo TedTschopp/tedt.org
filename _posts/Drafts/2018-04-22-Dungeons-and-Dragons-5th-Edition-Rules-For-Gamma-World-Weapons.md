@@ -11,7 +11,7 @@ description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and 
 
 excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor. 
 
-layout: MCC-GW
+layout: post
 
 guid: b76b9f97-6472-424a-83cc-2c824b5a091b
 permalink: /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/

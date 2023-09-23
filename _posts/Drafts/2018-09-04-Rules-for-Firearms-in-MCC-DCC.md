@@ -16,7 +16,7 @@ excerpt: |
 seo_description: |
    The following rules are what I have collected from around the internet for the use of firearms in MCC & DCC.  I will be playtesting these by converting a Gamma World module to MCC. 
 
-layout: MCC-GW
+layout: post
 guid: 4c02a988-5ea1-4ea1-8567-616e64d683c1
 permalink: /2018/09/04/Firearms-in-MCC-DCC/
 image:  /img/2018-09-04/MCC-Guns.jpg
