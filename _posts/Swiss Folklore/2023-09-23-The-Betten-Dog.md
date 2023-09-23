@@ -1,35 +1,36 @@
 ---
-id: 12428937
-Title: "The Weatherman in Pörtlialp"
+id: 12428938
+Title: "The Betten Dog"
 author:
   name: Ted Tschopp
   url: https://tedt.org
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-Date: 2023-09-23 15:04:59
-Excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
-Description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears in Pörtlialp that is believed to bring bad weather."
+Date: 2023-09-23 15:25:46
+Excerpt: "In 'Betten,' a stream separates the communities of Rebstein and Marbach, where people used to see the Betten Dog with a long, drooping tongue, fiery eyes, and a long tail."
+Description: "A Swiss German folk tale about a mysterious dog that appears in Betten and accompanies nocturnal wanderers, especially wrongdoers, without causing harm."
 
-Keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"0
-Location: "Pörtlialp, Uri, Switzerland"
-Longitude: "8.5942"
-Latitude: "46.7758"
-Year: "1926"
-Monster_or_magical_or_religious_idea: "Mysterious Weatherman"
-Tags: ["Legend", "Mystery", "Weather", "Swiss Culture"]
+Keywords: "Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer"
+
+Location: "Betten, Rebstein and Marbach, Switzerland"
+Longitude: "9.5615"
+Latitude: "47.3667"
+Year: "1903"
+Monster_or_magical_or_religious_idea: "Mysterious Dog"
+Tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
 
 
 
 layout: post
 
-guid: 71656df5-81a0-47ab-91b4-3736c10b277d
-permalink: /2023/09/23/Weatherman-in-Pörtlialp/
+guid: 9e17272f-b5a0-4965-9920-7f6679ba333f
+permalink: /2023/09/23/The-Betten-Dog/
 
-image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
+image: /img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.png
 
-image-alt: "An illustration of a large, heavy man wearing a large hat, walking in a forest."
+image-alt: "An illustration of a dog, with a long drooping tongue, red eyes, and a long tail, appearing on a bridge over a stream between two villages in Switzerland."
 image-credits-title: https://www.tedt.org/
-image-credits-title: "The Weatherman in Pörtlialp"
+image-credits-title: "The Betten Dog"
 image-credits-artist: Ted Tschopp and Midjourney
 
 
@@ -51,8 +52,7 @@ categories:
 
 > # The Weatherman in Pörtlialp
 > 
-> Whenever people heard a yodel from the "Beerdli," folks at Ronastutz and in Fellenen would say, "Ah! The Weatherman has yodeled again in Beerdli; bad weather is coming."
-From time to time, a large, heavy man would come from Beerdli. He wore a large hat and walked as far as Kästalwald; never further. There he would disappear. And each time, the weather would turn bad. My father often saw him but never close enough to see his face. It was suspected that he was the same man who was heard yodeling.
+> Whenever people heard a yodel from the "Beerdli," folks at Ronastutz and in Fellenen would say, "Ah! The Weatherman has yodeled again in Beerdli; bad weather is coming." From time to time, a large, heavy man would come from Beerdli. He wore a large hat and walked as far as Kästalwald; never further. There he would disappear. And each time, the weather would turn bad. My father often saw him but never close enough to see his face. It was suspected that he was the same man who was heard yodeling.
 >
 > Albin Indergand, Amsteg
 >
