@@ -150,6 +150,8 @@
 
                         {% if page.image-credits-title %}
                             {% assign image_credits_title = page.image-credits-title %}
+                        {% elsif page.image-title %}
+                            {% assign image_credits_title = page.image-title %}
                         {% else %}
                             {% assign image_credits_title = "Unknown" %}
                         {% endif %}
@@ -160,8 +162,21 @@
                             {% assign image_credits = "Unknown" %}
                         {% endif %}
 
+
+                        {% if page.image contains "http" %}
+                            {% assign image-URL = page.image %}
+                        {% else %}
+                            {% assign image-URL = site.siteurl | append: page.image %}
+                        {% endif %}
+
+                        {% if  %}
+                            {% assign image = page.image %}
+                        {% else %}
+                            {% assign image = site.featured-image %}
+                        {% endif %}
+
                         <figure>
-                            <img class="img-responsive img-thumbnail" src="{{site.siteurl}}{{ page.image }}" alt="{{image-alt}} by {{image_credits}}">
+                            <img class="img-responsive img-thumbnail" src="{{ image-UR }}" alt="{{image-alt}} by {{image_credits}}">
                             <figcaption>
 
                                 {% if page.image-credits-URL %}
