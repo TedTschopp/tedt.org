@@ -112,13 +112,13 @@
                     {% for category in categories %}<span class="p-category">
                         {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                         {% if forloop.length == 1 %}
-                            {{thiscategory}}
+                            <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% elsif forloop.last and forloop.length == 2 %}
-                            and {{thiscategory}}
+                            and <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% elsif forloop.last %}
-                            and {{thiscategory}}
+                            and <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% else %}
-                            {{thiscategory}}, 
+                        <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}, 
                         {% endif %}
                         {% if thiscategory == "draft" or thiscategory == "Draft" %}
                             {% assign this_is_a_draft = true %}
@@ -456,7 +456,7 @@
                     <div class="post-categories">
                         {% assign categories = page.categories %}
                         {% for category in categories %}
-                            <h4>Latest in <a href="{{site.siteurl}}/category/{{category|slugize}}">{{category}}</a></h4>
+                            <h4>Latest in <a style="text-decoration: none;" href="{{site.siteurl}}/category/{{category|slugize}}">{% include category-emoji.html category=category %} <a href="{{site.siteurl}}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
                                 <div class="col-lg-12">
                                     <ul lass="list-unstyled">
