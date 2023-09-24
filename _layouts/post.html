@@ -162,21 +162,18 @@
                             {% assign image_credits = "Unknown" %}
                         {% endif %}
 
-
-                        {% if page.image contains "http" %}
-                            {% assign image-URL = page.image %}
+                        {% if page.image %}
+                            {% if page.image contains "http" %}
+                                {% assign image-URL = page.image %}
+                            {% else %}
+                                {% assign image-URL = site.siteurl | append: page.image %}
+                            {% endif %}
                         {% else %}
-                            {% assign image-URL = site.siteurl | append: page.image %}
-                        {% endif %}
-
-                        {% if  %}
-                            {% assign image = page.image %}
-                        {% else %}
-                            {% assign image = site.featured-image %}
+                            {% assign image-URL = site.featured-image %}
                         {% endif %}
 
                         <figure>
-                            <img class="img-responsive img-thumbnail" src="{{ image-UR }}" alt="{{image-alt}} by {{image_credits}}">
+                            <img class="img-responsive img-thumbnail" src="{{ image-URL }}" alt="{{image-alt}} by {{image_credits}}">
                             <figcaption>
 
                                 {% if page.image-credits-URL %}
