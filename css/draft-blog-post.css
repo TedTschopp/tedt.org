@@ -41,24 +41,23 @@ article > .h6 {
 | 7   | Operational Testing - Pre-release | 2B B6 2B      | D4 49 D4      |
 | 8   | Released - Black                  | 00 00 00      | FF FF FF      |
 
-
 */
 
-.progress > .notes {
+.progress > .draft-notes {
 	background-color: LightGrey;
-	color: #444444 
+	color: #222222  
 }
 .progress > .unit {
 	background-color: #D41616;
-	color: #2BE9E9;
+	color: #222222  
 }
 .progress > .integration {
 	background-color: #CF1A92;
-	color: #30e56d;
+	color: #222222  
 }
 .progress > .component {
 	background-color: #901DCA;
-	color: #6FE235;
+	color: #222222  
 }
 .progress > .system {
 	background-color: #2121C5;
@@ -66,15 +65,15 @@ article > .h6 {
 }
 .progress > .alpha {
 	background-color: #248CC0;
-	color: #DB733F;
+	color: #DEDE3A;
 }
 .progress > .beta {
 	background-color: #28BBBC;
-	color: #D74443;
+	color: #222222  
 }
 .progress > .prerelease {
 	background-color: #2BB62B;
-	color: #D449D4;
+	color: #222222  
 }
 
 .progress-clear {
