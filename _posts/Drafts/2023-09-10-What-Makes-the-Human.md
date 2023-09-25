@@ -110,7 +110,7 @@ Links to rules still in development.  Try at your own risk.
 
 ▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
-## Start Herd
+## Start Here
 
 [&#x2191;](javascript:history.back())
 
