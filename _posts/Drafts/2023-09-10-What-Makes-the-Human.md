@@ -59,7 +59,7 @@ Links to rules still in development.  Try at your own risk.
 |      - Opposing Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the ral differentiators of this Community.                              |
 | - Occupational Hallmark & Career:[&#x2193;](#occupational-hallmarks) | What occupation does the individual have according to this community            |
 |        - Environmental Hallmark:[&#x2193;](#environmental-hallmarks) | What is the environment that this Property is located in ?                      |
-{ .w-100 }
+{: .w-100 }
 
 * * *
 
@@ -101,7 +101,7 @@ Links to rules still in development.  Try at your own risk.
 |                                  |           |          | Identity    [&#x2193;](#identity-characteristics)      | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |         [&#x2193;](#bureaucracy-knowledge-areas)         |
 |                                  |           |          |                                                        |           |          | Animal Handling   | □ □ □ □  |       |       [&#x2193;](#animal-handling-knowledge-areas)       |
 |                                  |           |          |                                                        |           |          | Leadership        | □ □ □ □  |       |         [&#x2193;](#leadership-knowledge-areas)          |
-{ .w-100 }
+{: .w-100 }
 
 ▩ = Skilled - Skilled. Contributes to Total.
 
