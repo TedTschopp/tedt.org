@@ -1,4 +1,4 @@
-[&#x2193;](#ranged-combat-knowledge-areas)---
+---
 title: What Makes a Human?
 date: 2023-07-22T18:51:10-07:00
 author:
@@ -23,6 +23,7 @@ categories:
   - Draft
 draft-status: integration
 mathjax: true
+
 ---
 <style>
 .dccvsdnd thead tr th {
