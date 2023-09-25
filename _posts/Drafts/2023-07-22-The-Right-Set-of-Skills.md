@@ -61,7 +61,7 @@ mathjax: true
         - [Examples of Athletics from Fiction](#examples-of-athletics-from-fiction)
         - [Athletics Archetypes](#athletics-archetypes)
         - [Specializations for Athletics](#specializations-for-athletics)
-      - [Table for Athletics skill and examples for each level of difficulty](#table-for-athletics-skill-and-examples-for-each-level-of-difficulty)
+        - [Table for Athletics skill and examples for each level of difficulty](#table-for-athletics-skill-and-examples-for-each-level-of-difficulty)
       - [Melee Combat Knowledge Areas](#melee-combat-knowledge-areas)
         - [Description of Melee Combat](#description-of-melee-combat)
         - [Examples of Melee Combat from Fiction](#examples-of-melee-combat-from-fiction)
@@ -379,6 +379,8 @@ Each Level in a knowledge area represents a grade level with level 0 being the k
 
 **Muscle** represents the overall strength of the being.
 
+ * * *
+
 #### Ranged Combat Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -454,6 +456,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 | Nearly Impossible | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                          |
 | Godly             | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
 
+ * * *
+
 #### Athletics Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -514,7 +518,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 19. **CrossFit**: Varied, high-intensity workouts.
 20. **Mountaineering**: Climbing and navigating mountains.
 
-#### Table for Athletics skill and examples for each level of difficulty
+
+##### Table for Athletics skill and examples for each level of difficulty
 
 | Difficulty        | Athletics                                                                                                                                                                                                                                                                                 |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -529,6 +534,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 | Heroic            | Climb a shear surface or wall                                                                                                                                                                                                                                                             |
 | Nearly Impossible | Swim in rough waters while wearing full metal armor                                                                                                                                                                                                                                       |
 | Godly             | Swim upstream in rough waters while wearing full metal armor while pulling a rowboat without capsizing the passengers in the rowboat.                                                                                                                                                     |
+
+ * * *
 
 #### Melee Combat Knowledge Areas
 
@@ -611,6 +618,8 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 
 Agility represents the overall flexibility and grace of movement of the being.
 
+ * * *
+
 #### Stealth Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -686,6 +695,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 | Heroic            | Hide in plain sight                                                                                |
 | Nearly Impossible | Blend in and disappear while the center of attention on stage                                      |
 | Godly             | Vanish while you are the center of attention of trained observers.                                 |
+
+ * * *
 
 #### Acrobatics Knowledge Areas
 
@@ -764,6 +775,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 | Heroic            | Dodge a melee attack without any combat training.                                                                                                       |
 | Nearly Impossible | Walk across a thin rope                                                                                                                                 |
 | Godly             | Walk across a strand of silk in a the middle of a raging storm                                                                                          |
+
+ * * *
 
 #### Sleight of Hand Knowledge Areas
 
@@ -845,6 +858,8 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 
 Stamina represents the overall ability that being can push themselves physically.
 
+ * * *
+
 #### Drive / Ride / Pilot Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -922,6 +937,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 | Nearly Impossible | Sail or pilot a vehicle on treacherous terrain it wasn't made for (a rowboat in a storm or a 2 wheel drive passenger vehicle in a swamp).                                                                                           |
 | Godly             | Sail or pilot a vehicle on terrain that doesn't make sense. For example, Row a boat up a hill. Drive a 2 wheeled passenger vehicle under a lake.                                                                                    |
 
+ * * *
+
 #### Ruggedness Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -998,6 +1015,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 | Heroic            | Remain upright and stick your landing in a ready position to react after tumbling down the side of a steep incline.                                                                                                                                           |
 | Nearly Impossible | Win a drinking contest and then find your way home safely without first resting                                                                                                                                                                               |
 | Godly             | Win a drinking contest against a known drunk and a dance contest against a professional dancer. At the same time.                                                                                                                                             |
+
+ * * *
 
 #### Unarmed Combat Knowledge Areas
 
@@ -1082,6 +1101,8 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 **Intellect** represents the overall ability of the being to mentally understand the world around them.
 
+ * * *
+
 #### Social Sciences Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1157,6 +1178,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 | Heroic            | Forecast the weather based on historical patterns                                                                                                                                                                                                             |
 | Nearly Impossible | Understand the lineage and ethnicity of someone based on observation only                                                                                                                                                                                     |
 | Godly             | Identify a common person using by their burial marker, tombstone, or other obscure information about them. Discover an ancient secret, no longer known to any mortals.                                                                                        |
+
+ * * *
 
 #### Life Sciences Knowledge Areas
 
@@ -1235,6 +1258,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 | Heroic            | Perform CPR on someone who has been unconscious for seven minutes. Treat someone with an extremely hazardous germ agent such as Ebola.                                                                                                                        |
 | Nearly Impossible | Attend to someone in critical condition who has died of physical body trauma                                                                                                                                                                                  |
 | Godly             | Reattach limbs, set broken bones, and grow them with herbal remedies and simple tools                                                                                                                                                                         |
+
+ * * *
 
 #### Physical Sciences / Survival Knowledge Areas
 
@@ -1318,6 +1343,8 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 **Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
 
+ * * *
+
 #### Engineering Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1397,6 +1424,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 | Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
 | Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
 
+ * * *
+
 #### Insight Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1474,6 +1503,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 | Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
 | Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
 | Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
+
+ * * *
 
 #### Investigation Knowledge Areas
 
@@ -1559,6 +1590,8 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 **Acuity** represents the overall ability of the being to harmonize
 conflicts in their understanding by pushing themselves mentally.
 
+ * * *
+
 #### Traditions Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1637,6 +1670,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 | Heroic            | Representing a nation at an international summit and skillfully navigating various cultural nuances.                |
 | Nearly Impossible | Mediating peace talks between warring factions with deeply entrenched cultural hostilities.                         |
 | Godly             | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy. |
+
+ * * *
 
 #### Perception Knowledge Areas
 
@@ -1717,6 +1752,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 | Heroic            | Detecting a concealed trap in a complex labyrinth without any prior knowledge of its existence.                            |
 | Nearly Impossible | Seeing through a powerful illusion that even confounds other skilled magic users.                                          |
 | Godly             | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells. |
+
+ * * *
 
 #### Formal Sciences Knowledge Areas
 
@@ -1806,6 +1843,8 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 **Manners** represents the overall ability of the being to socially
 understand the world around them
 
+ * * *
+
 #### Style Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1887,6 +1926,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 | Nearly Impossible | Creating an iconic and trendsetting fashion collection that influences the industry.               |
 | Godly             | Choreographing an extraordinary and groundbreaking dance performance that leaves audiences in awe. |
 
+ * * *
+
 #### Performance Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -1966,6 +2007,8 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 | Heroic            | Executing a flawlessly choreographed dance performance in front of a large audience.                           |
 | Nearly Impossible | Engaging a diverse crowd through an improvised stand-up comedy act.                                            |
 | Godly             | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved. |
+
+ * * *
 
 #### Etiquette Knowledge Areas
 
@@ -2052,6 +2095,8 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 **Personality** represents the overall ability of the being to conform
 their own actions to create the outcomes they want.
 
+ * * *
+
 #### Deception Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2133,6 +2178,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept. |
 
 
+ * * *
+
 #### Persuasion Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2212,6 +2259,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 | Heroic            | Stir up the villagers or slaves to revolt against their task masters and have all of them form an angry mob that marches on the plantation owner’s home. Convince guards that even though you don't have an invitation and you are not on their list, you are suspose to be at The Company. |
 | Nearly Impossible | Convince the Greek kings to make war on Troy now that Paris has stolen Helen of Sparta. Convince King Priam and Queen Hecuba of Troy that Alexander / Paris's idea of stealing Helena was a good idea and support him.                                                                      |
 | Godly             | Convince a spirit to share their true name with you. Convince a dragon to tell you the secret location of its horde                                                                                                                                                                         |
+
+ * * *
 
 #### Intimidation Knowledge Areas
 
@@ -2297,6 +2346,8 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 
 **Identity** represents the overall ability of the being to harmonize conflicts in the society they exist in by pushing themselves socially.
 
+ * * *
+
 #### Bureaucracy Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2378,6 +2429,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 | Nearly Impossible | Spearheading a global humanitarian initiative that involves coordination with multiple international organizations and governments.                               |
 | Godly             | Initiating and leading a massive, worldwide bureaucratic reform movement that reshapes how governments and organizations function and interact on a global scale. |
 
+ * * *
+
 #### Animal Handling Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2457,6 +2510,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 | Heroic            | Calming a herd of stampeding wild horses to prevent injuries to both horses and people. Break a wild horse for riding.                                                                                                                                                                                         |
 | Nearly Impossible | Rehabilitating a severely injured and frightened wild animal to the point where it can be released back into its natural habitat. Groom an undomesticated wild beast.                                                                                                                                          |
 | Godly             | Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.                                                                                                                                             |
+
+ * * *
 
 #### Leadership Knowledge Areas
 
@@ -2571,6 +2626,8 @@ Then comes Chaos magic, where skepticism takes a different turn. Rather than see
 
 As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
 
+ * * *
+
 #### Ethereal Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2634,6 +2691,8 @@ These Ethereal Caster archetypes bring a sense of wonder and mystique to fiction
 
 Please note that the difficulty ratings provided in the table are relative and can vary depending on the specific system or setting in which the magical practice is being used.
 
+ * * *
+
 #### Gnosis Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2690,6 +2749,8 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 | Heroic            | Unraveling the deepest mysteries of the universe or liberating a group of souls trapped by archonic forces. Only the most renowned practitioners can even attempt such tasks.                                      |
 | Nearly Impossible | Transcending the material world entirely or unraveling the secrets of the Demiurge's creation to rewrite the cosmic order. These acts shape the course of history.                                                 |
 | Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
+
+ * * *
 
 #### Chaos Knowledge Areas
 
@@ -2779,6 +2840,8 @@ In the realm of Order, your faith lies in structured systems and cosmic balance.
 
 These spells draw upon your unwavering faith and connection to higher forces, granting you unique abilities that set you apart from other magical backgrounds. As a practitioner of Faith magic, you wield divine energies to bring healing, protection, guidance, and balance to the world around you.
 
+ * * *
+
 #### Theurgy Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2833,6 +2896,8 @@ These unique Theurgy spells showcase the character's special connection to the d
 | Nearly Impossible | Ascending to a higher plane of existence temporarily to gain profound insights and wisdom from celestial beings.                                                                                                                                                                                                                                                                                                           |
 | Godly             | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
 
+ * * *
+
 #### Adept Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2886,6 +2951,8 @@ Remember that as a Physical Adept, your spells revolve around maintaining harmon
 | Godly             | Merging your physical and mystical form into a colossal ethereal avatar, capable of single-handedly fending off an army of foes or reshaping the terrain around you. This transcendent form is temporary, requiring immense focus and harmonization with the universe. |
 
 As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
+
+ * * *
 
 #### Order Knowledge Areas
 
@@ -2970,6 +3037,8 @@ Lastly, Shamanism leads you on a path of spiritual connection and healing. Your 
 
 These spells draw upon the mysteries of the universe, tapping into psychic abilities, manipulating ethereal energies, and exploring the realms beyond ordinary comprehension. As a practitioner of Mystery magic, you possess a unique set of skills that allow you to traverse the boundaries of reality and harness the profound forces of the unknown.
 
+ * * *
+
 #### Metaphysics Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -3027,6 +3096,8 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 | Nearly Impossible | Using astral projection to venture into the depths of an uncharted, otherworldly realm and returning with profound knowledge or a rare artifact.                                                                           |
 | Godly             | Achieving an extraordinary feat of time manipulation, briefly altering the timeline to prevent a catastrophic event or restore harmony to a torn reality, requiring the cooperation of other powerful beings or artifacts. |
 
+ * * *
+
 #### Animism Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -3082,6 +3153,8 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 | Heroic            | Engaging in a spiritual battle with a malevolent ancient spirit threatening to unleash havoc on the world, requiring the combined efforts of the most skilled Animists and assistance from benevolent deities to subdue the malevolence.                                                           |
 | Nearly Impossible | Attempting to commune with the ancient spirits of a long-lost civilization that holds the key to unlocking powerful secrets of the universe, requiring a group of legendary Animists to channel their collective energies and focus to maintain the connection.                                    |
 | Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
+
+ * * *
 
 #### Shamanism Knowledge Areas
 
@@ -3190,6 +3263,8 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | 23 - 27      | Succeed In Style |
 | 28 - 30      | Critical         |
 | 31 +         | Serendipitous    |
+
+ * * *
 
 #### Degrees of Effect Defined
 

@@ -119,41 +119,34 @@ mathjax: true
 
 # Character Sheet - In Progress
 
-| Name                              | : Description                                                                |
-|:----------------------------------|:-----------------------------------------------------------------------------|
-| Holdings (Hometown):              |                                                                              |
-| - Rating                          | □ □ □ □ □ □ □ □                                                              |
-| - Name:                           | What is the name of this culture?                                            |
-| - Description:                    | Give a description of this culture so others who are playing can identify it |
-| - Cultural Hallmark:              | What are the cultural differentiators of this culture.                       |
-| - Occupational Hallmark & Career: | What occupation does the individual have and where are they in their career  |
-| - Environmental Hallmark:         | What is the environment that this holding is located in ?                    |
-| **Holdings (give details):**      |                                                                              |
-| - Rating                          | □ □ □ □ □ □ □ □                                                              |
-| - Name:                           | What is the name of this culture?                                            |
-| - Description:                    | Give a description of this culture so others who are playing can identify it |
-| - Cultural Hallmark:              | What are the cultural differentiators of this culture.                       |
-| - Occupational Hallmark & Career: | What occupation does the individual have and where are they in their career  |
-| - Environmental Hallmark:         | What is the environment that this holding is located in ?                    |
-
-▩ = Rating - Rated.  Contributes to the total rating.
-
-☒ = Damaged - Rated, but Damaged. Does not contribute to the total rating.
-
-▣ = Construction - Under Construction or Repairs. Does not contribute to Total.
-
-▢ = Unrated - Does not contribute to the total rating. 
-
-
-Gear:
-  Assets
-  Personal Possessions
-    Equipment
-    Operational Gear
-    Specialized Objects
-
-Recreational Hallmark:           
-Pocket Money:                     □ □ □ □ □ □ □ □ 
+|                               Name | Description                                                                     |
+|-----------------------------------:|:--------------------------------------------------------------------------------|
+|                              Name: |                                                                                 |
+|             Recreational Hallmark: | What does this person do for a hobby                                            |
+|            Environmental Hallmark: | What environment was this person raised in                                      |
+|             Occupational Hallmark: | What is this person's occupation                                                |
+| **Property (Hometown Community)**: | -4 3 2 1+1 2 3 4                                                                |
+|                          - Rating: | □ □ □ □ □ □ □ □                                                                 |
+|                            - Name: | What is the name of this Community?                                             |
+|                     - Description: | Give a description of this Community so others who are playing can identify it  |
+|              - Cultural Hallmarks: | What is the cultural differentiators of this Community.                         |
+|     - Opposing Cultural Hallmarks: | What is the opposing cultural differentiators of this Community.                |
+|          **Personal Possessions:** |                                                                                 |
+|                      Pocket Money: | □ □ □ □ □ □ □ □                                                                 |
+|                      - _Equipment_ | What basic equiptment do they use                                               |
+|               - _Operational Gear_ | What gear would they take with them on a job                                    |
+|              - _Specialized Tools_ | What specialized tools do they use that others who have this job might not have |
+|                     - _Elite Gear_ | Do they have customized tools they would use                                    |
+|                      - Named Items | Have the customized tools become so famous they now have names?                 |
+|                        **Assets:** | What sort of non-liquid assets does the character have?                         |
+|           **Property (location):** | Does this character have any additional property in another Community?          |
+|                          - Rating: | □ □ □ □ □ □ □ □                                                                 |
+|                            - Name: | What is the name of this Community?                                             |
+|                     - Description: | Give a description of this Community so others who are playing can identify it  |
+|              - Cultural Hallmarks: | What is the cultural differentiators of this Community.                         |
+|     - Opposing Cultural Hallmarks: | What is the opposing cultural differentiators of this Community.                |
+|  - Occupational Hallmark & Career: | What occupation does the individual have according to this community            |
+|          - Environmental Hallmark: | What is the environment that this Property is located in ?                      |
 
 | Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
 |-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
@@ -209,6 +202,34 @@ The attributes of a character are given as numerical values which can
 change as the game progresses, and characters grow and develop over the
 course of their adventures.
 
+When you are creating a character you can create a character several ways.
+
+1. Roll 5d8 dropping the lowest and using the following table to determine your result.  You then distribute those numbers to the aspects and characteristics you desire.
+
+2. Use the Standard Array: [3,2,2,2,2,1,1,1,1,1,1,1,-1,-1,-1,-2]. You then distribute those numbers to the aspects and characteristics you desire.
+
+3. Use the Narrative Approach
+   1. As a Child you were known to be stronger, smarter, more socially aware, or more spiritually aware.  Assign 3 points Aspect you were strongest in. 
+   2. Tell me the story about what happened to make you stand out among your peers, was it the overall strength, speed, or balance between those two that made you stand out.  Assign 2 points to the Characteristics that represent that.
+   3. As a child you were know to be the least gifted in Fitness, Academics, Mysitcal arts, or Emotion.  Assign -2 points to the aspect you were weakest in.
+   4. Tell me the story about what happened to make you stand out among your peers, was it the lack of strength, speed, or balance between strenght and speed that made you stand out.  Assign -1 point to the characteristics that represented that.
+   5. Assign 1's to the rest
+   6. subtract -1 from 2
+   7. add 1 to 3 
+
+[TODO] Make better. 
+
+| σ  |   4d8   |
+|:--:|:-------:|
+| -4 |  4 - 5  |
+| -3 |  6 - 8  |
+| -2 | 8 - 13  |
+| -1 | 13 - 17 |
+| 1  | 18 - 22 |
+| 2  | 23 - 27 |
+| 3  | 28 - 30 |
+| 4  | 31 - 32 |
+
 ## Aspects
 
 All beings have four aspects of their existence. These define the
@@ -216,15 +237,14 @@ highest categorical breakdown of a being. They are Physical, Mental,
 Social, and Spiritual. They each have a numeric score The higher the
 score, the more potential that being has in that aspect of their
 existence. These numbers also represent how much damage the character
-can take. These aspects can be broken down into your traditional
-Characteristics.
+can take. These aspects can be broken down into your Characteristics.  
 
 | Aspect Name | Aspect Value |
-|-------------|--------------|
-| Fitness     | (-4 thru 4)  |
-| Academic    | (-4 thru 4)  |
-| Mystical    | (-4 thru 4)  |
-| Emotional   | (-4 thru 4)  |
+|------------:|:-------------|
+|     Fitness | (-4 thru 4)  |
+|    Academic | (-4 thru 4)  |
+|    Mystical | (-4 thru 4)  |
+|   Emotional | (-4 thru 4)  |
 
 ## Characteristics
 
@@ -233,7 +253,23 @@ can do. Each of these characteristics fall into a given aspect. Higher
 characteristic scores grant bonuses on task resolution checks, while
 lower characteristic scores grant penalties. As part of creating your
 character, you decide how strong, smart, and tough your character is by
-choosing the appropriate characteristic scores.
+choosing the appropriate characteristic scores. 
+
+
+| Characteristic Name | Aspect Value |
+|---------------------|--------------|
+| Muscle              | (-4 thru 4)  |
+| Agility             | (-4 thru 4)  |
+| Stamina             | (-4 thru 4)  |
+| Intellect           | (-4 thru 4)  |
+| Reasoning           | (-4 thru 4)  |
+| Acuity              | (-4 thru 4)  |
+| Skepticism          | (-4 thru 4)  |
+| Faith               | (-4 thru 4)  |
+| Mystery             | (-4 thru 4)  |
+| Manners             | (-4 thru 4)  |
+| Personality         | (-4 thru 4)  |
+| Identity            | (-4 thru 4)  |
 
 ## Knowledge Areas
 
@@ -258,6 +294,8 @@ skill from demonstrated competency.
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
 ## Hallmarks
+
+Hallmarks represent what makes your character unique beyond just a set of numbers.  As your character grows, their hallmarks will also grow.  
 
 ### Environmental Hallmarks
 
@@ -307,19 +345,19 @@ Pick a hobby that is culturally appropriate for the setting of the game
 and note it down. This represents how the character prefers to spend
 their free time relaxing.
 
-### Cultural Hallmarks
+### Community Hallmarks
 
-Cultural Hallmarks are qualities that describe different aspects of a
+Community Hallmarks are qualities that describe different aspects of a
 character’s build, temperament, and abilities, which can provide
-advantages in certain situations. The key principle governing Cultural
+advantages in certain situations. The key principle governing Community
 Hallmarks is that their descriptions must make it reasonably believable
 that individuals possessing those qualities would perform better under
 the given circumstances compared to those who lack them. Virtues are not
 ranked and cannot be enhanced or improved.
 
-A Character may end up with more than one Cultural Hallmark, the one
+A Character may end up with more than one Community Hallmark, the one
 rule governing this is that a character cannot have opposing Hallmarks.
-Use the table below to identify opposing Cultural Hallmarks. In many
+Use the table below to identify opposing Community Hallmarks. In many
 cases there are multiple virtues that are similar to each other if
 players want to play a character who is conflicted.
 
@@ -436,12 +474,19 @@ character's profession. In such cases, your character's occupation
 should offer the most insights, particularly when considering their
 appropriate Pocket Money.
 
-Should a Treasure-Hunter have among his possessions a set of lock-picks?
-Yes, and a high-quality set it is, too.
+Should you, as a Thief, carry a set of lock-picks with you? Absolutely, and make sure it's a top-notch set.
+
+Should you, as a Chef, own a set of high-quality knives? Definitely, and they should be well-maintained and sharp.
+
+Should you, as a Photographer, have a reliable camera? Of course, and it should be capable of capturing high-resolution images.
+
+Should you, as a Software Developer, possess a powerful laptop? Yes, and it should have enough processing power and memory to handle your tasks efficiently.
+
+Should you, as a Mechanic, have a comprehensive set of tools? Absolutely, and they should be organized for easy access and use.
 
 #### Operational Gear
 
-At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own culture, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale. 
+At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own community, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale. 
 
 #### Curated Gear
 
@@ -517,7 +562,7 @@ shape the activities you pursue throughout the season.
 
 You, as a player, have the option to take on the responsibility of managing the assets you acquire, whether it's transporting secure data drives or carrying specialized equipment. Each unit of asset you carry adds to your Encumbrance, resulting in a one-point increase to your Fatigue rating for every unit of asset you choose to manage. It's important to consider the implications of carrying too much in the way of assets, as it affects your character's overall stamina.
 
-#### Hiding Treasure
+#### Hiding Assets
 
 The currency, data files, technology, or other assets that a few units of Asset represent might be more than you're willing to manage during your missions. You may choose to secure your assets in a nearby safe location, planning to return later to retrieve them.
 
@@ -529,15 +574,15 @@ You must pass a Mystic test upon discovering tainted Cache, or you'll suffer Spi
 
 In addition to just currency and valuable data, a Cache can also contain other items such as advanced technology, high-value art pieces, and other renowned or long-forgotten intellectual property.
 
-## Holdings
+## Property
 
-Throughout the campaign, you may acquire a holding. In a fantasy setting, this could be a business like a smithy or a tavern. Alternatively, you might own a farm where peasants till the land and share a portion of each harvest with you. In a modern context, your holding could be a tech startup or a small consultancy firm. Holdings aren't limited to physical assets; your family and home could also constitute a holding.
+Throughout the campaign, you may acquire a Property. In a fantasy setting, this could be a business like a smithy or a tavern. Alternatively, you might own a farm where peasants till the land and share a portion of each harvest with you. In a modern context, your Property could be a tech startup or a small consultancy firm. Property aren't limited to physical assets; your family and home could also constitute a Property.
 
-Your holding serves as your main occupation when you're not out adventuring or, in a modern scenario, when you're not engaged in other high-stakes activities. Not everyone has a holding.
+Your Property serves as your main occupation when you're not out adventuring or, in a modern scenario, when you're not engaged in other high-stakes activities. Not everyone has a Property.
 
 ### Rating
 
-There are multiple avenues for you to acquire a holding. You might inherit one from a wealthy family member if you're lucky. More commonly, you gain a holding as the outcome of an adventure, either as a gift or by discovering an unclaimed holding and taking it for yourself.
+There are multiple avenues for you to acquire a Property. You might inherit one from a wealthy family member if you're lucky. More commonly, you gain a Property as the outcome of an adventure, either as a gift or by discovering an unclaimed Property and taking it for yourself.
 
 | Description | Rating Score | Example (Sci-Fi, Mystery, Steampunk, Fantasy)                                                                                                       |
 |-------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -550,47 +595,47 @@ There are multiple avenues for you to acquire a holding. You might inherit one f
 | Thriving    | 7            | Asteroid Mining Operation, Nationally Investigation Bureau with Offices in multiple Locations, Steam-Powered Factory Complex, Merchant's Guild Hall |
 | Opulent     | 8            | Planetary Trade Hub, Mansion with Secret Passages, Grand Steampunk Mansion, Large Estate with Gold Mine                                             |
 
-The worth of your holding is quantified in game terms by a numerical rating that ranges from 1 to 8. This rating is similar to the Target Number for an action, where a lower number is generally more desirable than a higher one. For instance, a struggling farm on a rocky hillside might have a rating of 1, while a prosperous farm in an easily accessible, fertile valley could have a rating of 6.
+The worth of your Property is quantified in game terms by a numerical rating that ranges from 1 to 8. This rating is similar to the Target Number for an action, where a lower number is generally more desirable than a higher one. For instance, a struggling farm on a rocky hillside might have a rating of 1, while a prosperous farm in an easily accessible, fertile valley could have a rating of 6.
 
 ### Minimum Score
 
-You can't own a holding unless you have a minimum score in a relevant characteristic. If the holding is within the borders of your homeland, its rating is limited by your Social score. If the holding is located outside your homeland, then its rating is capped by your Reputation score.
+You can't own a Property unless you have a minimum score in a relevant characteristic. If the Property is within the borders of your homeland, its rating is limited by your Social score. If the Property is located outside your homeland, then its rating is capped by your Reputation score.
 
-### Running A Holding
+### Running A Property
 
-The day-to-day tasks of managing a business—like planting crops, mining ore, or forging tools—can be set aside in the game. It's assumed that you either have the necessary skills or can hire someone who does. What really matters is how your holding might evolve over time and what benefits it yields.
+The day-to-day tasks of managing a business—like planting crops, mining ore, or forging tools—can be set aside in the game. It's assumed that you either have the necessary skills or can hire someone who does. What really matters is how your Property might evolve over time and what benefits it yields.
 
-### Holdings Upkeep
+### Property Upkeep
 
-You will need to make a roll for your holding during the last Season of
+You will need to make a roll for your Property during the last Season of
 each year if your hero possesses one.
 
-If your roll result is equal to or lower than the holding's rating, your
-holding will generate enough wealth to maintain your character's Pocket
+If your roll result is equal to or lower than the Property's rating, your
+Property will generate enough wealth to maintain your character's Pocket
 Money level.
 
 However, the Referee has the discretion to interpret a result of 1 or 2,
-based on the current circumstances, as the holding failing to produce
+based on the current circumstances, as the Property failing to produce
 sufficient wealth to cover your living expenses. In such cases, you may
 need to spend stored Treasure to sustain your Pocket Money.
 
-On the other hand, if your roll result exceeds the holding's rating, not
+On the other hand, if your roll result exceeds the Property's rating, not
 only will your character enjoy their appropriate Pocket Money, but if
-the holding is capable of generating wealth (e.g., an inn or tracts of
+the Property is capable of generating wealth (e.g., an inn or tracts of
 land), it will earn Treasure equal to the difference between the roll
 and the rating.
 
-For example, if a player rolls a 9 on a holding rated 6, he earns three
+For example, if a player rolls a 9 on a Property rated 6, he earns three
 Treasure that year.
 
 If the result is Good, then good fortune strikes the hero! He gains no
 extra Treasure but prospers in some other way – a sick child recovers,
 an old feud is settled, the weather is unusually pleasant. The rating
-for the holding is permanently lowered by 1 (to a minimum of 3)
+for the Property is permanently lowered by 1 (to a minimum of 3)
 
-If the result is bad, then the holding suffers some disaster or
+If the result is bad, then the Property suffers some disaster or
 misfortune. If the hero does not take action in the next Season, the
-holding may be destroyed or have its rating increased.
+Property may be destroyed or have its rating increased.
 
 # Bringing the Skills All Together
 
