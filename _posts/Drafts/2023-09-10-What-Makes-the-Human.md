@@ -1,4 +1,4 @@
----
+[&#x2193;](#ranged-combat-knowledge-areas)---
 title: What Makes a Human?
 date: 2023-07-22T18:51:10-07:00
 author:
@@ -30,162 +30,82 @@ mathjax: true
 }
 </style>
 
-- [Character Sheet](#character-sheet)
-- [Creating Characters](#creating-characters)
-  - [Aspects](#aspects)
-  - [Characteristics](#characteristics)
-  - [Knowledge Areas](#knowledge-areas)
-  - [Hallmarks](#hallmarks)
-    - [Environmental Hallmarks](#environmental-hallmarks)
-    - [Urban Hallmarks](#urban-hallmarks)
-    - [Occupational Hallmarks](#occupational-hallmarks)
-    - [Recreational Hallmarks](#recreational-hallmarks)
-    - [Cultural Hallmarks](#cultural-hallmarks)
-  - [Gear](#gear)
-    - [Pocket Money](#pocket-money)
-    - [Personal Possessions](#personal-possessions)
-    - [Assets](#assets)
-  - [Holdings](#holdings)
-- [Bringing the Skills All Together](#bringing-the-skills-all-together)
-  - [An Overview](#an-overview)
-    - [Fitness](#fitness)
-    - [Academic](#academic)
-    - [Mystical](#mystical)
-    - [Emotional](#emotional)
-  - [Fitness Aspects](#fitness-aspects)
-    - [Muscle Characteristics](#muscle-characteristics)
-      - [Ranged Combat Knowledge Areas](#ranged-combat-knowledge-areas)
-      - [Athletics Knowledge Areas](#athletics-knowledge-areas)
-      - [Melee Combat Knowledge Areas](#melee-combat-knowledge-areas)
-    - [Agility Characteristics](#agility-characteristics)
-      - [Stealth Knowledge Areas](#stealth-knowledge-areas)
-      - [Acrobatics Knowledge Areas](#acrobatics-knowledge-areas)
-      - [Sleight of Hand Knowledge Areas](#sleight-of-hand-knowledge-areas)
-    - [Stamina Characteristics](#stamina-characteristics)
-      - [Drive / Ride / Pilot Knowledge Areas](#drive--ride--pilot-knowledge-areas)
-      - [Ruggedness Knowledge Areas](#ruggedness-knowledge-areas)
-      - [Unarmed Combat Knowledge Areas](#unarmed-combat-knowledge-areas)
-  - [Academic Aspects](#academic-aspects)
-    - [Intellect Characteristic](#intellect-characteristic)
-      - [Social Sciences Knowledge Areas](#social-sciences-knowledge-areas)
-      - [Life Sciences Knowledge Areas](#life-sciences-knowledge-areas)
-      - [Physical Sciences / Survival Knowledge Areas](#physical-sciences--survival-knowledge-areas)
-    - [Reasoning Characteristics](#reasoning-characteristics)
-      - [Engineering Knowledge Areas](#engineering-knowledge-areas)
-      - [Insight Knowledge Areas](#insight-knowledge-areas)
-      - [Investigation Knowledge Areas](#investigation-knowledge-areas)
-    - [Acuity Characteristics](#acuity-characteristics)
-      - [Traditions Knowledge Areas](#traditions-knowledge-areas)
-      - [Perception Knowledge Areas](#perception-knowledge-areas)
-      - [Formal Sciences Knowledge Areas](#formal-sciences-knowledge-areas)
-  - [Emotional Aspects](#emotional-aspects)
-    - [Manners Characteristics](#manners-characteristics)
-      - [Style Knowledge Areas](#style-knowledge-areas)
-      - [Performance Knowledge Areas](#performance-knowledge-areas)
-      - [Etiquette Knowledge Areas](#etiquette-knowledge-areas)
-    - [Personality Characteristics](#personality-characteristics)
-      - [Deception Knowledge Areas](#deception-knowledge-areas)
-      - [Persuasion Knowledge Areas](#persuasion-knowledge-areas)
-      - [Intimidation Knowledge Areas](#intimidation-knowledge-areas)
-    - [Identity Characteristics](#identity-characteristics)
-      - [Bureaucracy Knowledge Areas](#bureaucracy-knowledge-areas)
-      - [Animal Handling Knowledge Areas](#animal-handling-knowledge-areas)
-      - [Leadership Knowledge Areas](#leadership-knowledge-areas)
-  - [Mystical Aspects](#mystical-aspects)
-    - [Skepticism Characteristics](#skepticism-characteristics)
-      - [Ethereal Knowledge Areas](#ethereal-knowledge-areas)
-      - [Gnosis Knowledge Areas](#gnosis-knowledge-areas)
-      - [Chaos Knowledge Areas](#chaos-knowledge-areas)
-    - [Faith Characteristics](#faith-characteristics)
-      - [Theurgy Knowledge Areas](#theurgy-knowledge-areas)
-      - [Adept Knowledge Areas](#adept-knowledge-areas)
-      - [Order Knowledge Areas](#order-knowledge-areas)
-    - [Mystery Characteristics](#mystery-characteristics)
-      - [Metaphysics Knowledge Areas](#metaphysics-knowledge-areas)
-      - [Animism Knowledge Areas](#animism-knowledge-areas)
-      - [Shamanism Knowledge Areas](#shamanism-knowledge-areas)
-  - [Task Resolution](#task-resolution)
-    - [In Brief](#in-brief)
-      - [Degrees of Effect Defined](#degrees-of-effect-defined)
-        - [Fail Catastrophically](#fail-catastrophically)
-        - [Costly](#costly)
-        - [Fail](#fail)
-        - [Fail in Style](#fail-in-style)
-        - [Tie](#tie)
-        - [Succeed](#succeed)
-        - [Succeed in Style](#succeed-in-style)
-        - [Critical Success](#critical-success)
-        - [Serendipitous Success](#serendipitous-success)
+# Characters
 
-# Character Sheet - In Progress
+## Character Sheet - Work in Progress
 
-|                               Name | Description                                                                     |
-|-----------------------------------:|:--------------------------------------------------------------------------------|
-|                              Name: |                                                                                 |
-|             Recreational Hallmark: | What does this person do for a hobby                                            |
-|            Environmental Hallmark: | What environment was this person raised in                                      |
-|             Occupational Hallmark: | What is this person's occupation                                                |
-| **Property (Hometown Community)**: | -4 3 2 1+1 2 3 4                                                                |
-|                          - Rating: | □ □ □ □ □ □ □ □                                                                 |
-|                            - Name: | What is the name of this Community?                                             |
-|                     - Description: | Give a description of this Community so others who are playing can identify it  |
-|              - Cultural Hallmarks: | What is the cultural differentiators of this Community.                         |
-|     - Opposing Cultural Hallmarks: | What is the opposing cultural differentiators of this Community.                |
-|          **Personal Possessions:** |                                                                                 |
-|                      Pocket Money: | □ □ □ □ □ □ □ □                                                                 |
-|                      - _Equipment_ | What basic equiptment do they use                                               |
-|               - _Operational Gear_ | What gear would they take with them on a job                                    |
-|              - _Specialized Tools_ | What specialized tools do they use that others who have this job might not have |
-|                     - _Elite Gear_ | Do they have customized tools they would use                                    |
-|                      - Named Items | Have the customized tools become so famous they now have names?                 |
-|                        **Assets:** | What sort of non-liquid assets does the character have?                         |
-|           **Property (location):** | Does this character have any additional property in another Community?          |
-|                          - Rating: | □ □ □ □ □ □ □ □                                                                 |
-|                            - Name: | What is the name of this Community?                                             |
-|                     - Description: | Give a description of this Community so others who are playing can identify it  |
-|              - Cultural Hallmarks: | What is the cultural differentiators of this Community.                         |
-|     - Opposing Cultural Hallmarks: | What is the opposing cultural differentiators of this Community.                |
-|  - Occupational Hallmark & Career: | What occupation does the individual have according to this community            |
-|          - Environmental Hallmark: | What is the environment that this Property is located in ?                      |
+Links to rules still in development.  Try at your own risk.
 
-| Aspect    | 4 3 2 1 - | +1 2 3 4 | Characteristic | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |
-|-----------|-----------|----------|----------------|-----------|----------|-------------------|----------|-------|
-| Fitness   | □ □ □ □   | □ □ □ □  | Muscle         | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |
-|           |           |          |                |           |          | Athletics         | □ □ □ □  |       |
-|           |           |          |                |           |          | Melee             | □ □ □ □  |       |
-|           |           |          | Agility        | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       |
-|           |           |          |                |           |          | Acrobatics        | □ □ □ □  |       |
-|           |           |          |                |           |          | Sleight of Hand   | □ □ □ □  |       |
-|           |           |          | Stamina        | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       |
-|           |           |          |                |           |          | Ruggedness        | □ □ □ □  |       |
-|           |           |          |                |           |          | Unarmed           | □ □ □ □  |       |
-| Academic  | □ □ □ □   | □ □ □ □  | Intellect      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |
-|           |           |          |                |           |          | Life Sciences     | □ □ □ □  |       |
-|           |           |          |                |           |          | Physical Sciences | □ □ □ □  |       |
-|           |           |          | Reasoning      | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |
-|           |           |          |                |           |          | Insight           | □ □ □ □  |       |
-|           |           |          |                |           |          | Investigation     | □ □ □ □  |       |
-|           |           |          | Acuity         | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       |
-|           |           |          |                |           |          | Perception        | □ □ □ □  |       |
-|           |           |          |                |           |          | Formal Sciences   | □ □ □ □  |       |
-| Mystical  | □ □ □ □   | □ □ □ □  | Skepticism     | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |
-|           |           |          |                |           |          | Gnosis            | □ □ □ □  |       |
-|           |           |          |                |           |          | Chaos             | □ □ □ □  |       |
-|           |           |          | Faith          | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       |
-|           |           |          |                |           |          | Adapt             | □ □ □ □  |       |
-|           |           |          |                |           |          | Order             | □ □ □ □  |       |
-|           |           |          | Mystery        | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       |
-|           |           |          |                |           |          | Animism           | □ □ □ □  |       |
-|           |           |          |                |           |          | Shamanism         | □ □ □ □  |       |
-| Emotional | □ □ □ □   | □ □ □ □  | Manners        | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       |
-|           |           |          |                |           |          | Performance       | □ □ □ □  |       |
-|           |           |          |                |           |          | Etiquette         | □ □ □ □  |       |
-|           |           |          | Personality    | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       |
-|           |           |          |                |           |          | Persuasion        | □ □ □ □  |       |
-|           |           |          |                |           |          | Intimidation      | □ □ □ □  |       |
-|           |           |          | Identity       | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |
-|           |           |          |                |           |          | Animal Handling   | □ □ □ □  |       |
-|           |           |          |                |           |          | Leadership        | □ □ □ □  |       |
+|                              Name | Description                                                                     |            Link to Rule             |
+|----------------------------------:|:--------------------------------------------------------------------------------|:-----------------------------------:|
+|                             Name: |                                                                                 |                                     |
+|            Recreational Hallmark: | What does this person do for a hobby                                            | [&#x2193;](#recreational-hallmarks) |
+|           Environmental Hallmark: | What environment was this person raised in                                      | [&#x2193;](#enviromental-hallmarks) |
+|            Occupational Hallmark: | What is this person's occupation                                                | [&#x2193;](#occupational-hallmarks) |
+|         **{Hometown Community}**: | -4 3 2 1+1 2 3 4                                                                |                                     |
+|                         - Rating: | □ □ □ □ □ □ □ □                                                                 |         [&#x2193;](#rating)         |
+|                           - Name: | What is the name of this Community?                                             |                                     |
+|                    - Description: | Give a description of this Community so others who are playing can identify it  |                                     |
+|            - Community Hallmarks: | What is the cultural differentiators of this Community.                         |  [&#x2193;](#community-hallmarks)   |
+|   - Opposing Community Hallmarks: | What is the opposing cultural differentiators of this Community.                |  [&#x2193;](#community-hallmarks)   |
+|         **Personal Possessions:** |                                                                                 |                                     |
+|                     Pocket Money: | □ □ □ □ □ □ □ □                                                                 |      [&#x2193;](#pocket-money)      |
+|                     - _Equipment_ | What basic equipment do they use                                                |       [&#x2193;](#equiptment)       |
+|              - _Operational Gear_ | What gear would they take with them on a job                                    |   [&#x2193;](#occupational-gear)    |
+|             - _Specialized Tools_ | What specialized tools do they use that others who have this job might not have |    [&#x2193;](#specialized-gear)    |
+|                    - _Elite Gear_ | Do they have customized tools they would use                                    |       [&#x2193;](#elite-gear)       |
+|                     - Named Items | Have the customized tools become so famous they now have names?                 |      [&#x2193;](#named-items)       |
+|                       **Assets:** | What sort of non-liquid assets does the character have?                         |         [&#x2193;](#Assets)         |
+|          **Property (location):** | Does this character have any additional property in another Community?          |                                     |
+|                         - Rating: | □ □ □ □ □ □ □ □                                                                 |         [&#x2193;](#rating)         |
+|                           - Name: | What is the name of this Community?                                             |                                     |
+|                    - Description: | Give a description of this Community so others who are playing can identify it  |                                     |
+|            - Community Hallmarks: | What is the cultural differentiators of this Community.                         |      [&#x2193;](#named-items)       |
+|   - Opposing Community Hallmarks: | What is the opposing cultural differentiators of this Community.                |  [&#x2193;](#community-hallmarks)   |
+| - Occupational Hallmark & Career: | What occupation does the individual have according to this community            | [&#x2193;](#occupational-hallmarks) |
+|         - Environmental Hallmark: | What is the environment that this Property is located in ?                      | [&#x2193;](#enviromental-hallmarks) |
+
+| Aspect                           | 4 3 2 1 - | +1 2 3 4 | Characteristic                                         | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |                Link to Rule                |
+|----------------------------------|-----------|----------|--------------------------------------------------------|-----------|----------|-------------------|----------|-------|:------------------------------------------:|
+| Fitness [&#x2193;](#fitness)     | □ □ □ □   | □ □ □ □  | Muscle  [&#x2193;](#muscle-characteristics)            | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Athletics         | □ □ □ □  |       |   [&#x2193;](#athletics-knowledge-areas)   |
+|                                  |           |          |                                                        |           |          | Melee             | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Agility [&#x2193;](#agility-characteristics)           | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Acrobatics        | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Sleight of Hand   | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Stamina [&#x2193;](#stamina-characteristics)           | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Ruggedness        | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Unarmed           | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+| Academic [&#x2193;](#academic)   | □ □ □ □   | □ □ □ □  | Intellect  [&#x2193;](#intellect-characteristics)      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Life Sciences     | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Physical Sciences | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Reasoning   [&#x2193;](#reasoning-characteristics)     | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Insight           | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Investigation     | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Acuity   [&#x2193;](#acuity-characteristics)           | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Perception        | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Formal Sciences   | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+| Mystical [&#x2193;](#mystical)   | □ □ □ □   | □ □ □ □  | Skepticism   [&#x2193;](#skepticism-characteristics)   | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Gnosis            | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Chaos             | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Faith     [&#x2193;](#faith-characteristics)           | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Adapt             | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Order             | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Mystery   [&#x2193;](#mystery-characteristics)         | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Animism           | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Shamanism         | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+| Emotional [&#x2193;](#emotional) | □ □ □ □   | □ □ □ □  | Manners   [&#x2193;](#manners-characteristics)         | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Performance       | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Etiquette         | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Personality   [&#x2193;](#personality-characteristics) | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Persuasion        | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Intimidation      | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          | Identity    [&#x2193;](#identity-characteristics)      | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Animal Handling   | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+|                                  |           |          |                                                        |           |          | Leadership        | □ □ □ □  |       | [&#x2193;](#ranged-combat-knowledge-areas) |
+
+[&#x2191;](javascript:history.back())
+
 
 ▩ = Skilled - Skilled. Contributes to Total.
 
@@ -196,7 +116,7 @@ mathjax: true
 ▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
 
-# Creating Characters
+## Start Her
 
 The attributes of a character are given as numerical values which can
 change as the game progresses, and characters grow and develop over the
@@ -204,20 +124,20 @@ course of their adventures.
 
 When you are creating a character you can create a character several ways.
 
-1. Roll 5d8 dropping the lowest and using the following table to determine your result.  You then distribute those numbers to the aspects and characteristics you desire.
+1. Roll 5d8 dropping the lowest die roll and using the following table to determine your result.  You then distribute those numbers to the aspects and characteristics you desire.
 
 2. Use the Standard Array: [3,2,2,2,2,1,1,1,1,1,1,1,-1,-1,-1,-2]. You then distribute those numbers to the aspects and characteristics you desire.
 
 3. Use the Narrative Approach
    1. As a Child you were known to be stronger, smarter, more socially aware, or more spiritually aware.  Assign 3 points Aspect you were strongest in. 
    2. Tell me the story about what happened to make you stand out among your peers, was it the overall strength, speed, or balance between those two that made you stand out.  Assign 2 points to the Characteristics that represent that.
-   3. As a child you were know to be the least gifted in Fitness, Academics, Mysitcal arts, or Emotion.  Assign -2 points to the aspect you were weakest in.
-   4. Tell me the story about what happened to make you stand out among your peers, was it the lack of strength, speed, or balance between strenght and speed that made you stand out.  Assign -1 point to the characteristics that represented that.
+   3. As a child you were know to be the least gifted in Fitness, Academics, Mystical arts, or Emotion.  Assign -2 points to the aspect you were weakest in.
+   4. Tell me the story about what happened to make you stand out among your peers, was it the lack of strength, speed, or balance between strength and speed that made you stand out.  Assign -1 point to the characteristics that represented that.
    5. Assign 1's to the rest
-   6. subtract -1 from 2
-   7. add 1 to 3 
+   6. subtract -1 from 2 aspects / characteristics
+   7. add 1 to 3 aspects / characteristics
 
-[TODO] Make better. 
+[TODO] Make better.
 
 | σ  |   4d8   |
 |:--:|:-------:|
