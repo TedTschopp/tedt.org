@@ -6,17 +6,18 @@ author:
   url: https://tedt.org/
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-description: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions. 
+description: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions.
 
-excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions. 
+excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions.
 
 layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/07/22/What-Makes-a-Human/
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
-image-credits: Photo by Ted Tschopp using Midjourney
-image-alt: Photo by Ted Tschopp using Midjourney
-  
+image-author-url: https://www.tedt.org/
+image-author: Ted Tschopp using Midjourney
+image-alt: An artist carving a statue of a man out of a giant mountain
+
 categories:
   - Role Playing Games
   - The Märchen Engine
@@ -60,6 +61,7 @@ Links to rules still in development.  Try at your own risk.
 |      - Opposing Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the ral differentiators of this Community.                              |
 | - Occupational Hallmark & Career:[&#x2193;](#occupational-hallmarks) | What occupation does the individual have according to this community            |
 |        - Environmental Hallmark:[&#x2193;](#environmental-hallmarks) | What is the environment that this Property is located in ?                      |
+
 { .w-100 }
 
 * * *
@@ -102,7 +104,10 @@ Links to rules still in development.  Try at your own risk.
 |                                  |           |          | Identity    [&#x2193;](#identity-characteristics)      | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |         [&#x2193;](#bureaucracy-knowledge-areas)         |
 |                                  |           |          |                                                        |           |          | Animal Handling   | □ □ □ □  |       |       [&#x2193;](#animal-handling-knowledge-areas)       |
 |                                  |           |          |                                                        |           |          | Leadership        | □ □ □ □  |       |         [&#x2193;](#leadership-knowledge-areas)          |
+
 { .w-100 }
+
+
 
 [&#x2191;](javascript:history.back())
 
