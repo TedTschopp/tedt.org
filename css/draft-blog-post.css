@@ -28,31 +28,53 @@ article > .h6 {
 6. Operational Testing - Beta - 28 BB BC
 7. Operational Testing - Pre-release - 2B B6 2B
 8. Released - Black
+
+
+| No. | Use                               | Original RGB  |  Opposite RGB |
+|-----|-----------------------------------|---------------|---------------|
+| 1   | Unit Testing                      | D4 16 16      | 2B E9 E9      |
+| 2   | Integration Testing               | CF 1A 92      | 30 E5 6D      |
+| 3   | Component Testing                 | 90 1D CA      | 6F E2 35      |
+| 4   | System Testing                    | 21 21 C5      | DE DE 3A      |
+| 5   | Operational Testing - Alpha       | 24 8C C0      | DB 73 3F      |
+| 6   | Operational Testing - Beta        | 28 BB BC      | D7 44 43      |
+| 7   | Operational Testing - Pre-release | 2B B6 2B      | D4 49 D4      |
+| 8   | Released - Black                  | 00 00 00      | FF FF FF      |
+
+
 */
 
 .progress > .notes {
 	background-color: LightGrey;
+	color: #444444 
 }
 .progress > .unit {
 	background-color: #D41616;
+	color: #2BE9E9;
 }
 .progress > .integration {
 	background-color: #CF1A92;
+	color: #30e56d;
 }
 .progress > .component {
 	background-color: #901DCA;
+	color: #6FE235;
 }
 .progress > .system {
 	background-color: #2121C5;
+	color: #DEDE3A;
 }
 .progress > .alpha {
 	background-color: #248CC0;
+	color: #DB733F;
 }
 .progress > .beta {
 	background-color: #28BBBC;
+	color: #D74443;
 }
 .progress > .prerelease {
 	background-color: #2BB62B;
+	color: #D449D4;
 }
 
 .progress-clear {
