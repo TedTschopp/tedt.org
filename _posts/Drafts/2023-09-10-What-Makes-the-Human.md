@@ -62,6 +62,8 @@ Links to rules still in development.  Try at your own risk.
 |        - Environmental Hallmark:[&#x2193;](#environmental-hallmarks) | What is the environment that this Property is located in ?                      |
 { .w-100 }
 
+* * *
+
 | Aspect                           | 4 3 2 1 - | +1 2 3 4 | Characteristic                                         | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |                       Link to Rule                       |
 |----------------------------------|-----------|----------|--------------------------------------------------------|-----------|----------|-------------------|----------|-------|:--------------------------------------------------------:|
 | Fitness [&#x2193;](#fitness)     | □ □ □ □   | □ □ □ □  | Muscle  [&#x2193;](#muscle-characteristics)            | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |        [&#x2193;](#ranged-combat-knowledge-areas)        |
