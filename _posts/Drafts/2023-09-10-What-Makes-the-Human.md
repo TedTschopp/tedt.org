@@ -25,9 +25,9 @@ draft-status: integration
 mathjax: true
 
 ---
-# Characters
-
 ## Character Sheet - Work in Progress
+
+[&#x2191;](javascript:history.back())
 
 Links to rules still in development.  Try at your own risk.
 
@@ -36,7 +36,7 @@ Links to rules still in development.  Try at your own risk.
 |                                                                Name: |                                                                                 |
 |                                                       - Description: | what do you look like.  How does people see you within your community           |
 |            Recreational Hallmark:[&#x2193;](#recreational-hallmarks) | What does this person do for a hobby                                            |
-|           Environmental Hallmark:[&#x2193;](#enviromental-hallmarks) | What environment was this person raised in                                      |
+|          Environmental Hallmark:[&#x2193;](#environmental-hallmarks) | What environment was this person raised in                                      |
 |            Occupational Hallmark:[&#x2193;](#occupational-hallmarks) | What is this person's occupation                                                |
 |                                            **{Hometown Community}**: | -4 3 2 1+1 2 3 4                                                                |
 |                                         - Rating:[&#x2193;](#rating) | □ □ □ □ □ □ □ □                                                                 |
@@ -59,7 +59,7 @@ Links to rules still in development.  Try at your own risk.
 |                       - Community Hallmarks:[&#x2193;](#named-items) | What is the cultural differentiators of this Community.                         |
 |      - Opposing Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the ral differentiators of this Community.                              |
 | - Occupational Hallmark & Career:[&#x2193;](#occupational-hallmarks) | What occupation does the individual have according to this community            |
-|         - Environmental Hallmark:[&#x2193;](#enviromental-hallmarks) | What is the environment that this Property is located in ?                      |
+|        - Environmental Hallmark:[&#x2193;](#environmental-hallmarks) | What is the environment that this Property is located in ?                      |
 
 | Aspect                           | 4 3 2 1 - | +1 2 3 4 | Characteristic                                         | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |                       Link to Rule                       |
 |----------------------------------|-----------|----------|--------------------------------------------------------|-----------|----------|-------------------|----------|-------|:--------------------------------------------------------:|
@@ -112,6 +112,8 @@ Links to rules still in development.  Try at your own risk.
 
 ## Start Herd
 
+[&#x2191;](javascript:history.back())
+
 The attributes of a character are given as numerical values which can
 change as the game progresses, and characters grow and develop over the
 course of their adventures.
@@ -146,6 +148,8 @@ When you are creating a character you can create a character several ways.
 
 ## Aspects
 
+[&#x2191;](javascript:history.back())
+
 All beings have four aspects of their existence. These define the
 highest categorical breakdown of a being. They are Physical, Mental,
 Social, and Spiritual. They each have a numeric score The higher the
@@ -162,13 +166,14 @@ can take. These aspects can be broken down into your Characteristics.
 
 ## Characteristics
 
+[&#x2191;](javascript:history.back())
+
 All characters have certain basic characteristics that define what they
 can do. Each of these characteristics fall into a given aspect. Higher
 characteristic scores grant bonuses on task resolution checks, while
 lower characteristic scores grant penalties. As part of creating your
 character, you decide how strong, smart, and tough your character is by
-choosing the appropriate characteristic scores. 
-
+choosing the appropriate characteristic scores.
 
 | Characteristic Name | Aspect Value |
 |---------------------|--------------|
@@ -186,6 +191,8 @@ choosing the appropriate characteristic scores.
 | Identity            | (-4 thru 4)  |
 
 ## Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 You acquire knowledge through experience or education. You can acquire
 knowledge without applying it. This is what happens when you rely on
@@ -209,9 +216,13 @@ Each Level in a knowledge area represents a grade level with level 0 being the k
 
 ## Hallmarks
 
+[&#x2191;](javascript:history.back())
+
 Hallmarks represent what makes your character unique beyond just a set of numbers.  As your character grows, their hallmarks will also grow.  
 
 ### Environmental Hallmarks
+
+[&#x2191;](javascript:history.back())
 
 Environmental hallmarks represent the knacks, insights and ‘survival
 secrets’ handed down by different people over the years, giving heroes
@@ -223,11 +234,15 @@ never got out of the city may not have an Environmental Hallmark.
 
 ### Urban Hallmarks
 
+[&#x2191;](javascript:history.back())
+
 Urban hallmarks represent the knacks, insights and ‘street secrets’
 handed down by different people over the years, giving heroes raised in
 those urban settings an edge.
 
 ### Occupational Hallmarks
+
+[&#x2191;](javascript:history.back())
 
 Occupational hallmarks represent the knacks, insights and ‘craft
 secrets’ handed down by different trades over the years, giving heroes
@@ -240,6 +255,8 @@ adventuring.
 
 #### Careers
 
+[&#x2191;](javascript:history.back())
+
 As a part of their development, characters follow certain life paths
 called careers. The setting you play in will provide a variety of career
 options for characters to pursue, which opens opportunities for
@@ -251,6 +268,8 @@ a career is determined by the settings rules/
 
 ### Recreational Hallmarks
 
+[&#x2191;](javascript:history.back())
+
 Recreational hallmarks represent the knacks, insights and nuanced
 differentiations handed down by enthusiasts over the years, giving
 heroes raised in those cultures an edge.
@@ -260,6 +279,8 @@ and note it down. This represents how the character prefers to spend
 their free time relaxing.
 
 ### Community Hallmarks
+
+[&#x2191;](javascript:history.back())
 
 Community Hallmarks are qualities that describe different aspects of a
 character’s build, temperament, and abilities, which can provide
@@ -323,9 +344,13 @@ players want to play a character who is conflicted.
 
 ## Gear
 
+[&#x2191;](javascript:history.back())
+
 You don't find yourself under a familiar roof for much of the year. You may opt for an outdoor lifestyle, or circumstances may compel you to take refuge in unconventional locations or seek shelter in remote areas. Your first test of skill is choosing the right amount of equipment to carry, aiming for a manageable load—an indication of your expertise in the field. The same principle applies to your tactical gear. You must resist the temptation to opt for the most powerful weapons and most protective armor, as such heavy and unwieldy burdens are likely to significantly impede your operational capabilities.
 
 ### Pocket Money
+
+[&#x2191;](javascript:history.back())
 
 You do not have to keep track of accommodation, food, or incidental
 travel expenses as long as your Hero's spending stays within the limits
@@ -372,12 +397,16 @@ deterioration of your Mental, Social, or Spiritual Aspects.
 
 ### Personal Possessions
 
+[&#x2191;](javascript:history.back())
+
 You embark on your journey fully prepared for long periods of travel and
 sleeping in the open. It is expected that every character carries the
 necessary equipment for an adventurous life. This equipment consists of
 two main categories: Equipment and Operational Gear.
 
 #### Equipment
+
+[&#x2191;](javascript:history.back())
 
 You can apply the same approach when you're wondering if your character
 should already possess a specific item as part of their standard
@@ -399,9 +428,13 @@ Should you, as a Mechanic, have a comprehensive set of tools? Absolutely, and th
 
 #### Operational Gear
 
+[&#x2191;](javascript:history.back())
+
 At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own community, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale.
 
 #### Curated Gear
+
+[&#x2191;](javascript:history.back())
 
 At the start of the game, you select your operative's initial equipment. This includes standard-issue weapons, a set of tactical armor, and perhaps additional protective gear like a helmet or shield and a cell phone.
 
@@ -413,17 +446,23 @@ If your character happens to lose any of their Curated Gear, they will be able t
 
 ##### Specialized Tools
 
+[&#x2191;](javascript:history.back())
+
 You'll come across objects that stand out for their exceptional and mesmerizing qualities. Whether it's gemstones, secure data drives, advanced biotech implants, holographic storage modules, energy-efficient components, neural interfaces, nanotech-enhanced accessories, or quantum processors, you'll recognize these as Specialized Tool. Their unique charm stems from the expertise of talented engineers, state-of-the-art technology, or the incorporation of specialized algorithms or energy systems.
 
 Specialized Tools are your everyday equipment that has been tailored, specialized, or masterfully crafted to stretch the limits of what's achievable or to showcase the engineer's skills. These items are typically not weapons or armor; they are tools designed for a specific function. Generally, there's no backstory or narrative tied to these objects, but they are readily available to agents who have proven their worth.
 
 ##### Elite Gear
 
+[&#x2191;](javascript:history.back())
+
 You encounter items that possess extraordinary capabilities, which most people would consider highly advanced or even miraculous. These may include state-of-the-art stealth suits that make the wearer undetectable to security systems, sonic devices that can manipulate emotions in both allies and enemies, and augmented reality implants that enable the user to effortlessly locate and retrieve misplaced objects. These remarkable items come with advanced technological enhancements that amplify the innate skills of their users. The more advanced your expertise and status, the better you'll understand these assets and the benefits they offer.
 
 While these items are generally not classified as weapons, they are valuable assets often carried by the elite operatives or experts in this world. Each of these technological marvels has a rich backstory, offering clues to their origins and unique capabilities, adding layers of depth and intrigue to their existence.
 
 ##### Named Items
+
+[&#x2191;](javascript:history.back())
 
 You will occasionally encounter Precious and Named Objects that bear specific designations. These are often identified by the name of their inventor or their most renowned owner. However, Named Items always possess distinct names and may even have multiple names, as they are known and referred to differently among various organizations or cultures. Once you utilize one long enough, these items may acquire additional names based on your actions or what you choose to call them.
 
@@ -437,10 +476,14 @@ Moreover, it's worth noting that any equipment you acquire classified as Excepti
 
 ### Assets
 
+[&#x2191;](javascript:history.back())
+
 You and your team will inevitably encounter various assets as you navigate through unfamiliar territories. It could be the long-forgotten hoard
 of a deceased Dragon, or the hidden cache left behind by a rogue spy agency, a valuable stash of data and technology guarded by a rogue AI, or the accumulated resources amassed by generations of space pirates. These assets offer you and your colleagues a compelling objective for your missions, an opportunity to increase your personal resources, and a means to uncover hidden stories from the regions you explore.
 
 #### How Assets Works
+
+[&#x2191;](javascript:history.back())
 
 You accumulate Assets as you acquire materials and items of significant value, such as currency, valuable data, and specialized technology. These possessions signify wealth far beyond the ordinary, and you have the option to invest your Assets when you're not actively engaged in missions or operations. The value of each Asset is determined by a rating system, starting at a minimum of 1, which roughly corresponds to the resources necessary to sustain an operative for a month at a Prosperous Standard of Living, and potentially scaling upwards from there.
 
@@ -473,13 +516,19 @@ shape the activities you pursue throughout the season.
 
 #### Carrying and Transporting Assets
 
+[&#x2191;](javascript:history.back())
+
 You, as a player, have the option to take on the responsibility of managing the assets you acquire, whether it's transporting secure data drives or carrying specialized equipment. Each unit of asset you carry adds to your Encumbrance, resulting in a one-point increase to your Fatigue rating for every unit of asset you choose to manage. It's important to consider the implications of carrying too much in the way of assets, as it affects your character's overall stamina.
 
 #### Hiding Assets
 
+[&#x2191;](javascript:history.back())
+
 The currency, data files, technology, or other assets that a few units of Asset represent might be more than you're willing to manage during your missions. You may choose to secure your assets in a nearby safe location, planning to return later to retrieve them.
 
 #### Cache
+
+[&#x2191;](javascript:history.back())
 
 As a seeker of assets, you know that while they may not degrade like physical materials, certain resources possess a corruptive influence that surpasses tangible goods. The allure of valuable assets can ignite a fierce desire within those who seek them. You understand the distinction between a payment for your services from a corporation and a hidden stash of confidential data stored in a secure server. Both hold value as assets, but the latter is a Cache, possessing an additional allure and a darker influence. The assets you uncover within a rogue agency's hidden base or stored within a long-forgotten data vault may carry a taint, their value capable of driving individuals to distraction and filling their hearts with insatiable ambition.
 
@@ -489,11 +538,15 @@ In addition to just currency and valuable data, a Cache can also contain other i
 
 ## Property
 
+[&#x2191;](javascript:history.back())
+
 Throughout the campaign, you may acquire a Property. In a fantasy setting, this could be a business like a smithy or a tavern. Alternatively, you might own a farm where peasants till the land and share a portion of each harvest with you. In a modern context, your Property could be a tech startup or a small consultancy firm. Property aren't limited to physical assets; your family and home could also constitute a Property.
 
 Your Property serves as your main occupation when you're not out adventuring or, in a modern scenario, when you're not engaged in other high-stakes activities. Not everyone has a Property.
 
 ### Rating
+
+[&#x2191;](javascript:history.back())
 
 There are multiple avenues for you to acquire a Property. You might inherit one from a wealthy family member if you're lucky. More commonly, you gain a Property as the outcome of an adventure, either as a gift or by discovering an unclaimed Property and taking it for yourself.
 
@@ -512,13 +565,19 @@ The worth of your Property is quantified in game terms by a numerical rating tha
 
 ### Minimum Score
 
+[&#x2191;](javascript:history.back())
+
 You can't own a Property unless you have a minimum score in a relevant characteristic. If the Property is within the borders of your homeland, its rating is limited by your Social score. If the Property is located outside your homeland, then its rating is capped by your Reputation score.
 
 ### Running A Property
 
+[&#x2191;](javascript:history.back())
+
 The day-to-day tasks of managing a business—like planting crops, mining ore, or forging tools—can be set aside in the game. It's assumed that you either have the necessary skills or can hire someone who does. What really matters is how your Property might evolve over time and what benefits it yields.
 
 ### Property Upkeep
+
+[&#x2191;](javascript:history.back())
 
 You will need to make a roll for your Property during the last Season of
 each year if your hero possesses one.
@@ -552,9 +611,13 @@ Property may be destroyed or have its rating increased.
 
 ## Bringing the Skills All Together
 
+[&#x2191;](javascript:history.back())
+
 The Märchen Engine is outlined in the following framework that categorizes human abilities and skills into four primary aspects: Fitness, Academic, Mystical, and Emotional. Each primary aspect is further divided into three subcategories, which are then broken down into specific skills. The proficiency level for each Aspect is measured on a scale from -4 to 4 with 0 being human normal.  The proficiency level for each skill is meaused on a scale from 0 to 4 with 0 representing an untrained level and 4 indicating a doctorate-level mastery.
 
 ### Fitness
+
+[&#x2191;](javascript:history.back())
 
 This aspect covers physical abilities and is divided into Muscle, Agility, and Stamina.
 
@@ -564,6 +627,8 @@ This aspect covers physical abilities and is divided into Muscle, Agility, and S
 
 ### Academic
 
+[&#x2191;](javascript:history.back())
+
 This aspect pertains to intellectual abilities and includes Intellect, Reasoning, and Acuity.
 
 - **Intellect** is divided into Social Sciences, Life Sciences, and Physical Sciences/Survival, measuring understanding of human society, living organisms, and the natural world.
@@ -571,6 +636,8 @@ This aspect pertains to intellectual abilities and includes Intellect, Reasoning
 - **Acuity** comprises Traditions, Perception, and Formal Sciences, evaluating understanding of cultural norms, heightened awareness, and mastery over formal systems like logic.
 
 ### Mystical
+
+[&#x2191;](javascript:history.back())
 
 This aspect deals with spiritual and magical abilities, divided into Skepticism, Faith, and Mystery.
 
@@ -580,6 +647,8 @@ This aspect deals with spiritual and magical abilities, divided into Skepticism,
 
 ### Emotional
 
+[&#x2191;](javascript:history.back())
+
 This aspect focuses on emotional intelligence and social skills, divided into Manners, Personality, and Identity.
 
 - **Manners** includes Style, Performance, and Etiquette, measuring skills in aesthetics, captivating an audience, and understanding social customs.
@@ -588,11 +657,17 @@ This aspect focuses on emotional intelligence and social skills, divided into Ma
 
 ## Fitness Aspects
 
+[&#x2191;](javascript:history.back())
+
 ### Muscle Characteristics
+
+[&#x2191;](javascript:history.back())
 
 **Muscle** represents the overall strength of the being.
 
 #### Ranged Combat Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure float-end">
@@ -603,9 +678,13 @@ This aspect focuses on emotional intelligence and social skills, divided into Ma
 
 ##### Description of Ranged Combat
 
+[&#x2191;](javascript:history.back())
+
 Ranged Combat refers to the skill of using ranged weaponry, such as bows, crossbows, and firearms, to accurately hit targets from a distance. This skill encompasses a variety of techniques, including aiming, shooting mechanics, and target assessment, as well as specialized knowledge of the different types of ranged weapons available.
 
 ##### Examples from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In J.R.R. Tolkien's "The Lord of the Rings," the character Legolas is a master of ranged combat, particularly with his elven longbow. A prince of the Woodland Realm, Legolas possesses keen eyesight and unmatched strength, allowing him to hit targets from great distances with incredible accuracy. Throughout the series, his skill with the bow proves invaluable to the Fellowship of the Ring, whether he's picking off orcs from a distance or shooting down a fearsome Nazgûl on its flying steed.
 
@@ -616,6 +695,8 @@ In a TTRPG setting, a character specialized in ranged combat could offer similar
 Legolas's mastery of ranged combat not only makes him a formidable warrior but also adds depth to his character. His skill reflects his elven heritage and training, and it provides him with a unique role within the diverse group of heroes that make up the Fellowship. This skill is not just a combat asset; it's an integral part of who Legolas is, shaping both his identity and his contributions to the quest to destroy the One Ring.
 
 ##### Ranged Combat Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Sniper:** This archetype is the epitome of precision and patience. They often work alone, taking time to line up the perfect shot. They are experts in camouflage and usually prefer long-range firearms or crossbows. In folklore, this could be likened to legendary marksmen like Robin Hood.
 - **The Gunslinger:** Rooted in the American Wild West, the Gunslinger is quick on the draw and deadly in a duel. They are masters of revolvers and other short-range firearms. Their skill set is as much about speed and reflexes as it is about accuracy.
@@ -629,6 +710,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 - **The Survivalist:** Often found in post-apocalyptic settings, the Survivalist is a jack-of-all-trades in ranged combat, proficient with anything they can get their hands on. They are resourceful, often crafting their own ammunition and maintaining their weapons meticulously.
 
 ##### Specializations for Ranged Combat
+
+[&#x2191;](javascript:history.back())
 
 1. **Archery**: Skillful long-range bow shooting.
 2. **Crossbowmanship**: Precision shooting with crossbows.
@@ -653,6 +736,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 ##### Table for Ranged Combat skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Examples                                                                                                                                                                                                                  |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Shooting a target at point-blank range                                                                                                                                                                                    |
@@ -669,6 +754,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 #### Athletics Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Athletics.png"><img src="https://www.tedt.org/img/skills/vertical/Athletics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -678,9 +765,13 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 ##### Description of Athletics
 
+[&#x2191;](javascript:history.back())
+
 Your Athletics check covers difficult situations you want to do something that requires physical exertion related to your characters active strength.
 
 ##### Examples of Athletics from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In George R.R. Martin's "A Song of Ice and Fire" series, Brienne of Tarth is a character who excels in Athletics, particularly in the realms of strength and physical presence. Born into a noble family but with a natural inclination toward martial pursuits, Brienne trains rigorously to become a formidable warrior. Her athletic prowess is evident in her ability to best seasoned knights in combat, as well as in her capacity to endure long, grueling journeys on foot or horseback.
 
@@ -691,6 +782,8 @@ In a TTRPG setting, a character with high Athletics could perform a variety of t
 Brienne's athletic abilities add significant depth to her character. They make her a formidable warrior, yes, but they also serve as a symbol of her defiance against societal norms that seek to limit what she can achieve as a woman. Her skills in Athletics are not just practical assets; they are integral to her identity and her ongoing struggle to find respect and purpose in a world that often dismisses her.
 
 ##### Athletics Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Strongman:** This archetype is the epitome of brute strength and raw power. They excel in lifting heavy objects, breaking barriers, and overpowering opponents. In folklore, figures like Hercules or Samson would embody this archetype.
 - **The Acrobat:** Agile and nimble, the Acrobat uses their athleticism to perform flips, rolls, and other complex maneuvers. They are often found in circuses or as thieves and spies who need to navigate tricky environments. Characters like Dick Grayson (Nightwing) from comic books fit this mold.
@@ -705,6 +798,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 - **The Survivalist:** Similar to its counterpart in Ranged Combat, the Athletic Survivalist is a jack-of-all-trades when it comes to physical exertion. They are resourceful and adaptable, able to apply their athletic skills in a variety of survival situations.
 
 ##### Specializations for Athletics
+
+[&#x2191;](javascript:history.back())
 
 1. **Sprinting**: Short, high-speed runs.
 2. **Long-distance running**: Extended runs focusing on stamina.
@@ -729,6 +824,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 
 #### Table for Athletics skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Athletics                                                                                                                                                                                                                                                                                 |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Lift up an object half your weight above your head                                                                                                                                                                                                                                        |
@@ -745,6 +842,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 
 #### Melee Combat Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Melee Combat.png"><img src="https://www.tedt.org/img/skills/vertical/Melee Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -754,9 +853,13 @@ Brienne's athletic abilities add significant depth to her character. They make h
 
 ##### Description of Melee Combat
 
+[&#x2191;](javascript:history.back())
+
 Melee combat measures your character's ability to attack and survive in armed melee combat. This skill also allows you to maintain the general quality of a melee weapon and to perform general maintenance to ensure their continued use. It will however, not allow you to build, repair, or jury rig a solution. Melee weapons can be improvised. This skill allows you to use acquire an improvised weapon.
 
 ##### Examples of Melee Combat from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Bernard Cornwell's "The Last Kingdom" series, Uhtred of Bebbanburg is a master of melee combat. Born a Saxon but raised by Vikings, Uhtred possesses a unique blend of combat techniques that make him a formidable warrior in close-quarters battle. He is skilled with a variety of weapons, from swords and axes to shields, and his combat style is a mix of Saxon discipline and Viking ferocity. Uhtred's skill in melee combat is not just about swinging a weapon; he also understands the nuances of timing, positioning, and even the psychology of his opponents.
 
@@ -767,6 +870,8 @@ In a TTRPG setting, a character with a specialization in melee combat could be i
 Uhtred's prowess in melee combat adds a rich layer to his character. It reflects his complex identity, caught between two cultures, and serves as a tool for survival in the brutal, war-torn world he inhabits. His skill is not just a means to vanquish foes; it's a manifestation of his will to reclaim his home and shape his destiny, making him a compelling and multi-dimensional character.
 
 ##### Melee Combat Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Swordsman:** This archetype is a master of the blade, whether it's a longsword, rapier, or katana. They are often noble or trained warriors, focusing on precision and technique. Legendary figures like Miyamoto Musashi or fictional characters like Aragorn fit this archetype.
 - **The Berserker:** Fueled by rage or adrenaline, the Berserker excels in chaotic, close-quarters combat. They often use heavy or dual weapons and rely on brute force rather than finesse. In mythology, Norse berserkers embody this archetype.
@@ -782,6 +887,8 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 - **The Weapon Master:** This archetype is a jack-of-all-trades when it comes to melee weapons. They are proficient with a wide variety of arms, from swords and axes to flails and spears. Characters like Aragorn from "The Lord of the Rings" could be considered Weapon Masters.
 
 ##### Specializations for Melee Combat
+
+[&#x2191;](javascript:history.back())
 
 1. **Dagger**: A small, easily concealed weapon.
 2. **Shortsword**: A one-handed, lightweight slashing weapon.
@@ -806,6 +913,8 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 
 ##### Table with Melee Combat skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Melee Combat                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Sharpen your knife at the beginning of the day. Oil and wrap a weapon to keep it from getting rusted. Strike a Foe who is Helpless                |
@@ -822,9 +931,13 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 
 ### Agility Characteristics
 
+[&#x2191;](javascript:history.back())
+
 Agility represents the overall flexibility and grace of movement of the being.
 
 #### Stealth Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -835,9 +948,13 @@ Agility represents the overall flexibility and grace of movement of the being.
 
 ##### Description of Stealth
 
+[&#x2191;](javascript:history.back())
+
 Stealth is the art and practice of moving quietly, remaining unseen, and evading detection. It is often used for a range of activities, from reconnaissance to theft to survival. It incorporates elements of body control, understanding of one's environment, and concealment techniques.
 
 ##### Examples of Stealth from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Alexandre Dumas' "The Count of Monte Cristo," Edmond Dantès, who later becomes the Count, is a master of stealth and subterfuge. After being unjustly imprisoned and subsequently escaping from the Château d'If, Dantès meticulously plans his revenge against those who wronged him. His ability to move undetected, gather information, and manipulate situations from the shadows becomes a cornerstone of his elaborate schemes.
 
@@ -848,6 +965,8 @@ In a TTRPG setting, a character with a specialization in stealth could serve mul
 Edmond Dantès' skill in stealth adds a complex layer to his character. It's not just a practical skill set; it's a manifestation of his transformation from a naive, wronged man into a cunning avenger. His mastery of stealth reflects his deep understanding of human nature and his environment, as well as his willingness to operate in moral grey areas to achieve his ends. This skill is integral to his identity and is crucial in driving the intricate plots and twists that make "The Count of Monte Cristo" a compelling tale of revenge and redemption.
 
 ##### Stealth Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Shadow:** This archetype is the epitome of moving unseen and unheard. They are experts in blending into their environment, whether it's a dark alley or a crowded marketplace. Characters like the ninja or figures from espionage tales embody this archetype.
 - **The Scout:** Specializing in reconnaissance, the Scout uses stealth to gather information without engaging the enemy. They are often found in military or adventuring settings, providing valuable intel to their team.
@@ -862,6 +981,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 - **The Escape Artist:** Specializing in getting out of tight spots, the Escape Artist is a master of evading capture. Whether it's slipping out of handcuffs or evading a pursuing enemy, they always find a way to slip through the cracks.
 
 ##### Specializations for Stealth
+
+[&#x2191;](javascript:history.back())
 
 1. **Camouflage**: Blending into surroundings to evade visual detection.
 2. **Shadowing**: Discreetly following a subject without being noticed.
@@ -886,6 +1007,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 
 ##### Table with Stealth skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Stealth                                                                                            |
 |-------------------|----------------------------------------------------------------------------------------------------|
 | Trivial           | Hide and seek games as kids. For example, hide under a bridge while the others are not watching.   |
@@ -902,6 +1025,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 
 #### Acrobatics Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Acrobatics.png"><img src="https://www.tedt.org/img/skills/vertical/Acrobatics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -911,9 +1036,13 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 
 ##### Description of Acrobatics
 
+[&#x2191;](javascript:history.back())
+
 Acrobatics is the skill of performing complex bodily movements that require agility and coordination. This skill encompasses everything from basic somersaults to intricate flips and twists.
 
 ##### Examples of Acrobatics from Fiction
+
+[&#x2191;](javascript:history.back())
 
 Certainly, let's explore acrobatics again, this time through a different lens.
 
@@ -926,6 +1055,8 @@ In a TTRPG setting, a character with a specialization in acrobatics could find n
 The acrobatic skills of the Assassins in "Assassin's Creed" not only make for engaging gameplay but also serve practical purposes within the narrative. Whether it's for assassination, evasion, or exploration, their acrobatic abilities are integral to their identities and their missions.
 
 ##### Acrobatics Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Gymnast:** This archetype specializes in formalized acrobatic techniques, often seen in competitive settings. They are masters of balance beams, parallel bars, and floor exercises. Olympic gymnasts would be real-world examples.
 - **The Aerialist:** Often found in circuses or theatrical performances, the Aerialist excels in high-flying acts like trapeze, tightrope walking, or silk dancing. They combine fearlessness with a high level of skill.
@@ -940,6 +1071,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 - **The Jester:** Often found in medieval or fantasy settings, this archetype uses acrobatics for entertainment, often juggling or tumbling to amuse crowds. They may also use their skills for more nefarious purposes, like theft or espionage.
 
 ##### Specializations for Acrobatics
+
+[&#x2191;](javascript:history.back())
 
 1. **Tumbling**: Maneuvers that involve rolls, flips, and quick ground movements.
 2. **Aerial Silks**: Acrobatics using fabric hung from a ceiling.
@@ -964,6 +1097,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 ##### Table with Acrobatics skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Acrobatics                                                                                                                                              |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Walk across a wide plank of wood                                                                                                                        |
@@ -980,6 +1115,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 #### Sleight of Hand Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Slight of Hand.png"><img src="https://www.tedt.org/img/skills/vertical/Slight of Hand.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -989,9 +1126,13 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 ##### Description of Sleight of Hand
 
+[&#x2191;](javascript:history.back())
+
 Sleight of Hand is the art of manual dexterity, trickery, and swift, agile hand movements. It includes a range of activities from pickpocketing and lock picking to magic tricks and deception.
 
 ##### Examples of Sleight of Hand from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Charles Dickens' "Oliver Twist," the Artful Dodger is a young but highly skilled practitioner of sleight of hand. As a pickpocket and a member of Fagin's gang of child thieves, the Dodger is adept at lifting wallets, handkerchiefs, and other valuables from unsuspecting victims. His quick fingers and keen eye for opportunity make him one of the most successful thieves in the gang, and he serves as a mentor of sorts to Oliver when he joins them.
 
@@ -1002,6 +1143,8 @@ In a TTRPG setting, a character with a specialization in sleight of hand could b
 The Artful Dodger's mastery of sleight of hand adds depth and complexity to his character. While he is undoubtedly a product of his harsh environment, his skills also speak to a natural cleverness and adaptability. These traits make him not just an effective thief but also a compelling figure who embodies the resourcefulness needed to survive in the unforgiving world of Dickensian London.
 
 ##### Sleight of Hand Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Magician:** This archetype uses sleight of hand as part of their magic acts, performing tricks that seem to defy the laws of physics. They can make objects appear and disappear, manipulate cards, and perform other feats of illusion.
 - **The Pickpocket:** Specializing in the art of theft, the Pickpocket uses their nimble fingers and quick hands to steal valuables from unsuspecting targets. They are masters of misdirection and can lift wallets or jewelry without their victims noticing.
@@ -1016,6 +1159,8 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 - **The Escape Artist (Magician Variant):** This magician specializes in death-defying escape acts, often involving being locked in a box, chained underwater, or suspended high in the air. Their sleight of hand skills are used to slip out of restraints and confinement.
 
 ##### Specializations for Sleight of Hand
+
+[&#x2191;](javascript:history.back())
 
 1. **Filch**: The art of subtly stealing objects without detection.
 2. **Holdout**: Concealing items on one's person effectively.
@@ -1040,6 +1185,8 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 
 ##### Table with Sleight of Hand skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Sleight of Hand                                                                                                                                         |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Get a key into a stuck lock                                                                                                                             |
@@ -1056,9 +1203,13 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 
 ### Stamina Characteristics
 
+[&#x2191;](javascript:history.back())
+
 Stamina represents the overall ability that being can push themselves physically.
 
 #### Drive / Ride / Pilot Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -1069,9 +1220,13 @@ Stamina represents the overall ability that being can push themselves physically
 
 ##### Description of Drive/Ride/Pilot
 
+[&#x2191;](javascript:history.back())
+
 The skill of Drive/Ride/Pilot encompasses the ability to control and maneuver various types of vehicles, ranging from simple mounts to complex machinery like spaceships. This skill includes not just the physical handling but also the situational awareness required to operate these vehicles safely and efficiently.
 
 ##### Examples of Drive/Ride/Pilot from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Tom Clancy's "The Hunt for Red October," Captain Marko Ramius is an expert in the skill of Drive/Ride/Pilot, specifically in the realm of piloting submarines. As the commander of the Red October, a Soviet Typhoon-class nuclear submarine equipped with a revolutionary propulsion system, Ramius demonstrates not only technical mastery but also exceptional situational awareness. His ability to navigate the complex machinery of the submarine, while also understanding the geopolitical and tactical implications of his actions, sets him apart as a master of his craft.
 
@@ -1082,6 +1237,8 @@ In a TTRPG setting, a character with a specialization in Drive/Ride/Pilot could 
 Captain Marko Ramius's skill in piloting adds a layer of depth to his character, elevating him from a mere vehicle operator to a tactician and leader. His expertise is not just a function of his training; it's a reflection of his strategic mind and his deep understanding of the stakes involved in his actions. This makes him a compelling character whose skills are integral to the unfolding of the high-stakes geopolitical drama in "The Hunt for Red October."
 
 ##### Drive/Ride/Pilot Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Racer:** This archetype is all about speed and precision, whether they're driving cars, riding motorcycles, or piloting fast spacecraft. They thrive in high-speed competitions and have an innate sense of timing and reflexes.
 - **The Cowboy:** Skilled in riding horses and other mounts, the Cowboy is often found in Western or rural settings. They are experts in herding cattle, chasing down outlaws, and surviving in the wilderness.
@@ -1097,6 +1254,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 - **The Hovercraft Commander:** In a sci-fi or advanced tech setting, this archetype operates hovercraft or anti-gravity vehicles. They can navigate smoothly over various terrains, from water to rough landscapes.
 
 ##### Specializations for Drive/Ride/Pilot
+
+[&#x2191;](javascript:history.back())
 
 1. **Mount**: Specializes in riding animals like horses, camels, or other beasts.
 2. **Riding**: Focused on riding personal vehicles like motorcycles or scooters.
@@ -1121,6 +1280,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 ##### Table with Drive/Ride/Pilot skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Drive / Ride / Pilot                                                                                                                                                                                                                |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Get on your mount in a hurry. Sail a river boat down a placid river. Drive a cart down a quiet road.                                                                                                                                |
@@ -1137,6 +1298,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 #### Ruggedness Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Ruggedness.png"><img src="https://www.tedt.org/img/skills/vertical/Ruggedness.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1146,9 +1309,13 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 ##### Description of Ruggedness
 
+[&#x2191;](javascript:history.back())
+
 Ruggedness is the skill associated with physical endurance, resilience, and strength. It comes into play when someone needs to push their body to the limit, whether that's breaking free from constraints, resisting illness, or participating in feats of physical prowess like drinking contests or forcing open locked doors.
 
 ##### Examples of Ruggedness from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Ernest Hemingway's "The Old Man and the Sea," the protagonist, Santiago, exemplifies the skill of ruggedness. He is an old, experienced fisherman who has gone 84 days without catching a fish but is determined to break his unlucky streak. Santiago's physical endurance and resilience are put to the ultimate test when he hooks a giant marlin and struggles for days to reel it in. Despite his age and the physical toll the battle takes on him, Santiago's ruggedness allows him to endure.
 
@@ -1159,6 +1326,8 @@ In a TTRPG setting, a character with a specialization in ruggedness could be inv
 Santiago's ruggedness adds a profound layer to his character. It's not just a physical attribute but a testament to his indomitable spirit. His skill in ruggedness is a reflection of his life's hardships and his unyielding determination to face challenges head-on, no matter how insurmountable they may seem. This makes him not just a skilled fisherman but a compelling symbol of human endurance and resilience.
 
 ##### Ruggedness Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Survivor:** This archetype excels in enduring extreme conditions, from surviving in the wilderness to withstanding harsh climates. They have exceptional knowledge of survival techniques and can go without food and water for extended periods.
 - **The Immovable Object:** Known for their incredible physical resilience, the Immovable Object can withstand tremendous amounts of punishment without yielding. They are often seen as unbreakable or nearly invulnerable in combat scenarios.
@@ -1174,6 +1343,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 - **The Marathon Meditator:** Blending physical and mental endurance, the Marathon Meditator practices extreme meditation techniques while enduring physically demanding challenges. They can maintain focus and calm in the midst of chaos.
 
 ##### Specializations for Ruggedness
+
+[&#x2191;](javascript:history.back())
 
 1. **Strength Training**: Focused on muscle building and raw power.
 2. **Endurance**: Specializing in long-lasting stamina.
@@ -1198,6 +1369,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 ##### Table with Ruggedness skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Ruggedness                                                                                                                                                                                                                                                    |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Take one shot of alcohol and not be affected                                                                                                                                                                                                                  |
@@ -1214,6 +1387,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 #### Unarmed Combat Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Unarmed Combat.png"><img src="https://www.tedt.org/img/skills/vertical/Unarmed Combat.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1223,9 +1398,13 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 ##### Description of Unarmed Combat
 
+[&#x2191;](javascript:history.back())
+
 Unarmed combat refers to fighting techniques that do not involve the use of weapons. It encompasses a variety of styles, including martial arts, boxing, and wrestling, focusing on strikes, grapples, and defense.
 
 ##### Examples of Unarmed Combat from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Frank Miller's graphic novel series "Sin City," the character Marv is a master of unarmed combat. A towering, brutish figure with a penchant for violence, Marv relies on a mix of raw strength and street-fighting techniques to overpower his enemies. His style is less about finesse and more about overwhelming force, but it's highly effective. He's adept at using his fists, elbows, and even his head to deliver punishing blows, and he's equally skilled at grappling techniques that allow him to subdue opponents quickly.
 
@@ -1236,6 +1415,8 @@ In a TTRPG setting, a character specialized in unarmed combat could offer a uniq
 Marv's expertise in unarmed combat adds a gritty, visceral layer to his character. It's a reflection of his harsh environment and his own uncompromising nature. His skills are not just for show; they're essential for his survival in the brutal world of "Sin City." This makes him not only an effective combatant but also a compelling character whose abilities are integral to his identity and the challenges he faces.
 
 ##### Unarmed Combat Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Martial Artist:** This archetype is a master of a specific martial art style, such as karate, taekwondo, or Brazilian jiu-jitsu. They are disciplined fighters who use a combination of strikes, kicks, and blocks with precision and grace.
 - **The Boxer:** Known for their punching power and speed, the Boxer specializes in the art of boxing. They use quick jabs, hooks, and uppercuts to outmaneuver opponents in the ring. Legendary boxers like Muhammad Ali or Mike Tyson embody this archetype.
@@ -1251,6 +1432,8 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 - **The Martial Arts Instructor:** In addition to their combat skills, this archetype is a knowledgeable teacher, passing on their martial arts expertise to students. They may run a dojo or train aspiring fighters.
 
 ##### Specializations for Unarmed Combat
+
+[&#x2191;](javascript:history.back())
 
 1. **Boxing**: Focuses on punches, footwork, and dodging.
 2. **Kickboxing**: Incorporates kicks and punches for a balanced approach.
@@ -1275,6 +1458,8 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ##### Table with Unarmed Combat skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Unarmed                                                                                                                                                                                                                                                       |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Wrap your hands and arms to ensure they do not get damaged in a fight. Strike a Foe who is Helpless                                                                                                                                                           |
@@ -1291,11 +1476,17 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ## Academic Aspects
 
+[&#x2191;](javascript:history.back())
+
 ### Intellect Characteristics
+
+[&#x2191;](javascript:history.back())
 
 **Intellect** represents the overall ability of the being to mentally understand the world around them.
 
 #### Social Sciences Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -1306,9 +1497,13 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ##### Description of Social Sciences
 
+[&#x2191;](javascript:history.back())
+
 Social sciences encompass the study of human society, behavior, and social interactions, often through systematic methods of empirical investigation and analysis. Social Science skills can be useful in TTRPGs when the party needs to understand a society quickly to navigate its complexities, when forming alliances, or when trying to alter the course of events within a community. It could also help in interpreting historical texts, solving social dilemmas, or predicting the behavior of NPCs.
 
 ##### Examples of Social Sciences from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In George R.R. Martin's "A Song of Ice and Fire" series, Tyrion Lannister is a character who excels in the social sciences, particularly in the realms of politics, history, and psychology. Born into one of the most powerful families in the Seven Kingdoms, Tyrion has a keen understanding of social dynamics, power structures, and human behavior. His ability to read people and situations gives him a unique advantage in the cutthroat world of Westerosi politics.
 
@@ -1319,6 +1514,8 @@ In a TTRPG setting, a character with a specialization in social sciences could b
 Tyrion Lannister's proficiency in the social sciences adds a rich layer of complexity to his character. It's not just a tool for political maneuvering; it's a reflection of his intellectual curiosity and his adaptability in a world that often underestimates him. His skills in the social sciences are not just practical assets; they are integral to his identity and his ability to survive and thrive in a world rife with social and political complexities.
 
 ##### Social Sciences Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Sociologist:** This archetype specializes in the study of society and human behavior. They can analyze social structures, group dynamics, and cultural norms, making them invaluable when navigating complex societies or forming alliances.
 - **The Anthropologist:** Skilled in the study of cultures and human societies, the Anthropologist can quickly understand the customs, traditions, and belief systems of different communities. They excel in bridging cultural gaps and fostering cross-cultural understanding.
@@ -1333,6 +1530,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 - **The Oracle:** In a fantasy or mystical setting, the Oracle possesses special insights into a society's past and future. They can provide cryptic prophecies and guidance based on their mystical understanding of history.
 
 ##### Specializations for Social Sciences
+
+[&#x2191;](javascript:history.back())
 
 1. **Sociology**: The study of social behavior and society structures.
 2. **Psychology**: Study of human mind and behavior.
@@ -1357,6 +1556,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 ##### Table with Social Sciences skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Social Sciences                                                                                                                                                                                                                                               |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Understand common superstitions                                                                                                                                                                                                                               |
@@ -1373,6 +1574,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 #### Life Sciences Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Life Sciences.png"><img src="https://www.tedt.org/img/skills/vertical/Life Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1382,9 +1585,13 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 ##### Description of Life Sciences
 
+[&#x2191;](javascript:history.back())
+
 Life Sciences encompass the study of living organisms and their interactions with the environment. This skill covers a broad range of knowledge and applications, from medical treatments to bioengineering, and is crucial in both everyday life and specialized professions.  In a TTRPG conflict resolution, Life Sciences could be used to identify the nature of a mysterious disease affecting a town, or to concoct an antidote for a rare poison. A specialized character might even perform surgery under combat conditions.
 
 ##### Examples of Life Sciences from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the fantasy series "The Kingkiller Chronicle" by Patrick Rothfuss, the protagonist Kvothe demonstrates a strong aptitude for life sciences, particularly in the realm of alchemy and medicine. Trained at the University, Kvothe gains a deep understanding of various herbs, chemicals, and biological processes. This knowledge proves invaluable on multiple occasions throughout his adventures.
 
@@ -1395,6 +1602,8 @@ In a TTRPG setting, a character with a specialization in life sciences could per
 Kvothe's proficiency in life sciences not only adds depth to his character but also provides him with practical skills that are crucial for his survival and the well-being of those around him.
 
 ##### Life Sciences Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Medic:** Skilled in medical treatments and healthcare, the Medic can diagnose illnesses, administer first aid, and treat injuries effectively. They are essential for healing party members and can identify the symptoms and causes of diseases.
 - **The Healer-Shaman:** In a mystical or magical setting, the Healer-Shaman possesses supernatural healing abilities and can communicate with spirits or tap into mystical energies to cure ailments and injuries.
@@ -1411,6 +1620,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 - **The Biohacker:** Combining knowledge of genetics with unconventional practices, the Biohacker can manipulate genes and biotechnology to achieve unique effects, such as enhancing physical abilities or creating bioengineered creatures.
 
 ##### Specializations for Life Sciences
+
+[&#x2191;](javascript:history.back())
 
 1. **Poisons**: Understanding toxic substances and their effects.
 2. **Bioengineering**: Manipulating biological systems for specific outcomes.
@@ -1435,6 +1646,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 
 ##### Table with Life Sciences skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Skill             | Life Sciences                                                                                                                                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Bind the wounds of someone who is bleeding                                                                                                                                                                                                                    |
@@ -1451,6 +1664,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 
 #### Physical Sciences / Survival Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Physical Sciences.png"><img src="https://www.tedt.org/img/skills/vertical/Physical Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1460,9 +1675,13 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 
 ##### Description of Physical Sciences/Survival
 
+[&#x2191;](javascript:history.back())
+
 Physical Sciences/Survival encompasses the scientific knowledge and practical skills needed for understanding the natural world and surviving in various environments. This skill set ranges from academic disciplines like chemistry and geology to practical survival techniques like tracking and fishing. Physical Sciences/Survival skill can be crucial in various conflict resolutions. For instance, characters might use Meteorology to predict an incoming storm to gain a tactical advantage, or Urban Survival to navigate through a dangerous cityscape evading capture. This skill set can offer creative ways to solve problems and overcome challenges in both natural and urban environments.  Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
 
 ##### Examples of Physical Sciences/Survival from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In Brandon Sanderson's "The Stormlight Archive," Kaladin Stormblessed is a character who excels in the skill of Physical Sciences/Survival. Raised in a rural village and trained as a soldier, Kaladin has a broad range of knowledge and skills that help him survive in various environments, from the harsh conditions of the Shattered Plains to the complexities of a military camp. His understanding of the natural world, including weather patterns and terrain, is complemented by his practical skills like tracking and first aid.
 
@@ -1473,6 +1692,8 @@ In a TTRPG setting, a character with a specialization in Physical Sciences/Survi
 Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifaceted layer to his character. It's not just a set of practical skills; it's a reflection of his adaptability, resourcefulness, and deep connection to the world around him. These skills are not just assets for survival; they are integral to his identity and his journey from a disillusioned soldier to a leader and protector.
 
 ##### Physical Sciences/Survival Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Naturalist:** This archetype is a keen observer of the natural world, specializing in identifying plants, animals, and terrain features. They can recognize edible plants, track animals, and navigate diverse ecosystems.
 - **The Tracker:** Skilled in following trails and footprints, the Tracker can locate creatures or individuals by analyzing signs and clues left behind. They excel in wilderness tracking and can even identify the habits of elusive creatures.
@@ -1489,6 +1710,8 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 - **The Arctic Explorer:** Specializing in cold-weather survival, the Arctic Explorer can endure freezing temperatures, locate shelter in snowy landscapes, and navigate through icy terrain.
 
 ##### Specializations for Physical Sciences/Survival
+
+[&#x2191;](javascript:history.back())
 
 1. **Astronomy**: Study of celestial objects, including navigation by stars.
 2. **Chemistry**: Understanding of elements, compounds, and chemical reactions.
@@ -1513,6 +1736,8 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 ##### Table with Physical Sciences/Survival skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Survival                                                                                                                                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Hunt pigeons, Rats, and Mice within a city                                                                                                                                                                                                                    |
@@ -1529,9 +1754,13 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 ### Reasoning Characteristics
 
+[&#x2191;](javascript:history.back())
+
 **Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
 
 #### Engineering Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -1542,9 +1771,13 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 ##### Description of the Engineering skill
 
+[&#x2191;](javascript:history.back())
+
 Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
 
 ##### Examples of Engineering from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the science fiction TV series "Firefly," Kaylee Frye serves as the chief mechanic aboard the spaceship Serenity, captained by Malcolm Reynolds. Kaylee is a self-taught engineering prodigy, possessing an intuitive understanding of mechanical systems, electronics, and propulsion technologies. Her role is absolutely vital to the crew's survival and success, as she is responsible for keeping the ship operational against all odds. Whether it's a routine maintenance check or an emergency repair in the heat of battle, Kaylee is the go-to expert for anything related to the ship's engineering.
 
@@ -1555,6 +1788,8 @@ In a Table Top Role Playing Game (TTRPG) setting, a character with Kaylee's engi
 Kaylee's engineering expertise goes beyond mere technical skills; her ability to think quickly, adapt to new challenges, and work with limited resources makes her an invaluable member of the Serenity crew. Whether she's patching up bullet holes in the engine room or fine-tuning the ship's systems for better fuel efficiency, Kaylee's contributions are a blend of scientific knowledge and practical know-how. Her character exemplifies how engineering skills can be a game-changer in both everyday operations and high-stakes conflicts.
 
 ##### Engineering Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Tinkerer:** This archetype is known for their knack for inventing and building mechanical devices. They can construct gadgets, traps, and makeshift tools using their engineering expertise.
 - **The Mechanic:** Specializing in the repair and maintenance of machinery, the Mechanic can fix everything from vehicles to intricate mechanical devices. They are skilled in diagnosing and solving technical problems.
@@ -1572,6 +1807,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 - **The Environmental Engineer:** Skilled in mitigating environmental impact, the Environmental Engineer can develop solutions for pollution control, resource management, and sustainable practices.
 
 ##### Specializations for Engineering
+
+[&#x2191;](javascript:history.back())
 
 1. **Mechanical Engineering**: Design and maintenance of mechanical systems like engines and machinery.
 2. **Civil Engineering**: Planning and construction of infrastructure such as bridges, roads, and buildings.
@@ -1596,6 +1833,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 
 ##### Table with Engineering skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Engineering                                                                                                                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Repairing a simple, everyday household gadget.                                                                                                                                                          |
@@ -1612,6 +1851,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 
 #### Insight Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Insight.png"><img src="https://www.tedt.org/img/skills/vertical/Insight.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1621,9 +1862,13 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 
 ##### Description of the Insight skill
 
+[&#x2191;](javascript:history.back())
+
 Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
 
 ##### Examples of Insight from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the science fiction series "Dune" by Frank Herbert, Paul Atreides exhibits an extraordinary level of insight, honed by a combination of his Bene Gesserit training and his own innate abilities. Paul's skill in discerning the true intentions and emotions of others is almost uncanny, allowing him to navigate the complex political and social landscapes of his universe. Whether he's interpreting the subtle body language of a potential ally or detecting the hidden motives behind a seemingly straightforward proposal, Paul's insight is one of his most potent tools.
 
@@ -1634,6 +1879,8 @@ In a TTRPG setting, a character with a high level of insight could be invaluable
 Paul Atreides' mastery of insight is not just a passive skill but an active tool he employs to shape events around him. His ability to understand the unspoken motivations and hidden agendas of those he interacts with gives him a significant advantage in the intricate power games he finds himself a part of. Whether he's facing political intrigue, complex negotiations, or potential combat, Paul's insight often provides him the edge he needs to come out on top.
 
 ##### Insight Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Detective:** This archetype excels in solving mysteries and uncovering hidden truths. They can deduce motives, unravel complex plots, and see through deception, making them valuable in investigative scenarios.
 - **The Empath:** Specializing in understanding and sensing the emotions of others, the Empath can connect with people on a deep emotional level. They can provide comfort, diffuse tense situations, and offer valuable insights into the feelings of NPCs.
@@ -1650,6 +1897,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 - **The Animal Whisperer:** Skilled in understanding and communicating with animals, the Animal Whisperer can read the intentions and emotions of creatures. They can calm agitated animals, gain their trust, and even influence their behavior.
 
 ##### Specializations for Insight
+
+[&#x2191;](javascript:history.back())
 
 1. **Lie Detection**: Ability to discern when someone is being dishonest.
 2. **Emotional Intelligence**: Understanding and interpreting the emotions of others.
@@ -1674,6 +1923,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 
 ##### Table with Insight skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
@@ -1690,6 +1941,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 
 #### Investigation Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Investigation.png"><img src="https://www.tedt.org/img/skills/vertical/Investigation.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1699,9 +1952,13 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 
 ##### Description of the Investigation skill
 
+[&#x2191;](javascript:history.back())
+
 When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse.
 
 ##### Examples of Investigation from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the classic Western novel "True Grit" by Charles Portis, U.S. Marshal Rooster Cogburn demonstrates a keen sense of investigation. Though he's primarily known for his grit and gunfighting skills, Cogburn's ability to track down outlaws also relies heavily on his investigative prowess. Whether he's following a trail through rugged terrain or piecing together clues from a crime scene, Cogburn uses his experience and intuition to make educated deductions.
 
@@ -1712,6 +1969,8 @@ In a TTRPG setting, a character with a high level of Investigation skill could b
 Rooster Cogburn's investigative skills complement his more overt abilities, making him a well-rounded character capable of both action and thoughtful analysis. His knack for investigation doesn't just make him a better lawman; it often gives him the upper hand in dangerous situations, allowing him to outthink as well as outshoot his enemies. This balance of brawn and brain makes the skill of Investigation a critical tool in the arsenal of any gunslinger, sheriff, or bounty hunter in the Wild West.
 
 ##### Investigation Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Detective:** This archetype is a master of solving mysteries and uncovering hidden truths. They can find clues that others might overlook, connect seemingly unrelated pieces of information, and deduce complex solutions to puzzles and mysteries.
 - **The Forensic Analyst:** Specializing in analyzing physical evidence, the Forensic Analyst can determine the cause of a crime or accident by examining clues such as fingerprints, bloodstains, and ballistic data.
@@ -1729,6 +1988,8 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 - **The Time Traveler:** In a time-bending setting, the Time Traveler can uncover hidden clues and information by navigating different historical eras and unraveling the threads of time.
 
 ##### Specializations for Investigation
+
+[&#x2191;](javascript:history.back())
 
 1. **Crime Scene Analysis**: Examining a crime scene to gather and interpret evidence.
 2. **Forensic Pathology**: Determining cause of death or injury through examination of wounds or conditions.
@@ -1753,6 +2014,8 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 
 ##### Table with Investigation skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Investigation                                                                                                                                                         |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
@@ -1769,10 +2032,14 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 
 ### Acuity Characteristics
 
+[&#x2191;](javascript:history.back())
+
 **Acuity** represents the overall ability of the being to harmonize
 conflicts in their understanding by pushing themselves mentally.
 
 #### Traditions Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -1783,9 +2050,13 @@ conflicts in their understanding by pushing themselves mentally.
 
 ##### Description of the Traditions skill
 
+[&#x2191;](javascript:history.back())
+
 The Traditions skill encompasses a deep understanding of cultural norms, social etiquettes, and bureaucratic systems within various groups and organizations. Possessing this skill allows individuals to navigate complex social situations with ease, whether dealing with different ethnicities, religious communities, governmental bodies, or informal social circles. It enables them to grasp the unspoken rules, greetings, taboos, and bureaucratic requirements crucial for successful interactions, ensuring smooth dealings and favorable outcomes.
 
 ##### Examples of Traditions from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the fantasy series "A Song of Ice and Fire" by George R.R. Martin, Daenerys Targaryen demonstrates a remarkable aptitude for understanding and adapting to various traditions and cultural norms as she journeys across different lands. Initially a naive young girl, Daenerys evolves into a savvy leader partly because of her skill in "Traditions," as it might be termed in a TTRPG setting. This skill becomes evident as she navigates the complex social landscapes of the Dothraki, the people of Slaver's Bay, and various other groups she encounters.
 
@@ -1796,6 +2067,8 @@ In a TTRPG setting, a character with a high level of skill in Traditions could b
 Daenerys's ability to understand and adapt to different traditions is a cornerstone of her leadership style. It enables her to unite disparate groups under her banner, from Dothraki horse lords to freed slaves. Her skill in Traditions allows her to navigate complex social terrains, earning her allies where others might find only enemies. This skill becomes one of her most potent tools in her quest to reclaim the Iron Throne, demonstrating the power of cultural understanding in achieving one's goals.
 
 ##### Traditions Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Cultural Ambassador:** This archetype is a master of bridging cultural gaps and promoting cross-cultural understanding. They can navigate the customs, traditions, and etiquettes of different ethnicities and help parties interact harmoniously with diverse groups.
 - **The Diplomat:** Specializing in international relations and diplomacy, the Diplomat can negotiate with foreign governments, understand diplomatic protocols, and navigate complex geopolitical landscapes.
@@ -1813,6 +2086,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 - **The Mediator:** Focusing on conflict resolution, the Mediator can mediate disputes at various levels, from interpersonal conflicts to international crises.
 
 ##### Specializations for Traditions
+
+[&#x2191;](javascript:history.back())
 
 1. **Cultural Etiquette**: Understanding the norms and manners of different cultures.
 2. **Religious Practices**: Knowledge of rituals, beliefs, and taboos within various religious communities.
@@ -1837,6 +2112,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 
 ##### Table with Traditions skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Traditions                                                                                                          |
 |-------------------|---------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Greeting someone with a handshake in a typical social setting.                                                      |
@@ -1853,6 +2130,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 
 #### Perception Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Perception.png"><img src="https://www.tedt.org/img/skills/vertical/Perception.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1862,9 +2141,13 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 
 ##### Description of the Perception skill
 
+[&#x2191;](javascript:history.back())
+
 The Perception skill represents an individual's heightened awareness and keenness of their senses, enabling them to spot, hear, or detect the presence of concealed or obscured elements in their surroundings. This skill is crucial for eavesdropping on conversations, detecting hidden threats, and noticing subtle clues or danger in various environments. Whether it's spotting lurking enemies in the shadows or identifying concealed objects behind closed doors, Perception allows characters to remain vigilant and attentive to their environment.
 
 ##### Examples of Perception from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the classic mystery fiction series featuring Sherlock Holmes by Sir Arthur Conan Doyle, the titular character is the epitome of heightened Perception. Holmes's keen observational skills are legendary, allowing him to spot clues and details that even trained investigators often overlook. Whether he's at a crime scene, in his Baker Street apartment, or walking through the streets of London, Holmes's Perception is always at work, helping him solve some of the most baffling cases.
 
@@ -1875,6 +2158,8 @@ In a Table Top Role Playing Game (TTRPG) setting, a character with a high level 
 Sherlock Holmes's extraordinary Perception is not just a skill but an art form, honed through years of observation and logical deduction. It's this keen awareness that sets him apart as one of the greatest detectives in literary history. Whether he's solving a complex murder case or simply observing the people around him, Holmes's Perception allows him to see the world in a way that few others can, making him an enduring symbol of the power of observation and attention to detail.
 
 ##### Perception Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Scout:** This archetype excels in reconnaissance and gathering information about the surrounding environment. They can detect hidden threats, scout ahead for danger, and provide valuable insights about the terrain.
 - **The Sentinel:** Specializing in guarding and protecting, the Sentinel can maintain a constant vigilance, spotting potential threats or intruders before they can strike. They are skilled at perimeter defense and early warning systems.
@@ -1893,6 +2178,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 - **The Cryptid Hunter:** In a supernatural or cryptozoological setting, the Cryptid Hunter can detect and track elusive and mythical creatures.
 
 ##### Specializations for Perception Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Visual Acuity**: Exceptional ability to spot hidden or distant objects.
 2. **Auditory Sensitivity**: Keen hearing that allows for eavesdropping or detecting quiet noises.
@@ -1917,6 +2204,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 
 ##### Table with Perception skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Perception                                                                                                                 |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically noticing a brightly colored object in plain sight.                                                           |
@@ -1933,6 +2222,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 
 #### Formal Sciences Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Formal Sciences.png"><img src="https://www.tedt.org/img/skills/vertical/Formal Sciences.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -1942,9 +2233,13 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 
 ##### Description of Formal Sciences Skill
 
+[&#x2191;](javascript:history.back())
+
 The Formal Sciences skill involves understanding and manipulating formal systems such as logic, mathematics, statistics, information theory, game theory, and decision theory. Individuals with this skill can analyze complex data, make precise calculations, and grasp the underlying principles governing formal structures. Moreover, they can apply this knowledge to advance other skills formally, enhancing their expertise in various fields.
 
 ##### Examples of Formal Sciences from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the science fiction novel "Foundation" by Isaac Asimov, the character Hari Seldon exemplifies the use of Formal Science skills, particularly in the realms of mathematics and statistics. Seldon is the creator of "psychohistory," a scientific discipline that combines history, sociology, and mathematical statistics to predict the future behavior of large populations. His groundbreaking work in this formal system not only revolutionizes the understanding of societal dynamics but also sets the stage for the entire series, as his predictions about the future of the Galactic Empire become the foundation for subsequent actions.
 
@@ -1955,6 +2250,8 @@ In a TTRPG setting, a character with a high level of skill in Formal Science cou
 Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world, shaping the course of history through his understanding of formal systems. His skills enable him to analyze complex problems, develop innovative solutions, and make informed decisions that have far-reaching implications. Whether he's predicting the future of civilizations or devising strategies to navigate crises, Seldon's expertise in Formal Science is both his defining trait and his most powerful tool.
 
 ##### Formal Sciences Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Mathematician:** This archetype is a master of mathematical principles and calculations. They can solve complex mathematical problems, perform statistical analysis, and make precise measurements.
 - **The Logician:** Specializing in formal logic, the Logician can deduce conclusions from premises, identify fallacies in arguments, and create logical proofs to support their claims.
@@ -1974,6 +2271,8 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 - **The Linguistic Analyst:** Specializing in the analysis of language and communication, the Linguistic Analyst can decipher and analyze coded or encrypted messages, discern patterns in linguistic data, and uncover hidden meanings in texts. They are skilled in understanding the nuances of different languages and dialects, making them valuable in deciphering language-related mysteries and cryptic communications.
 
 ##### Specializations for Formal Science Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Algebraic Geometry**: Study of algebraic structures and their geometric interpretations.
 2. **Applied Game Theory**: Application of game theory to optimize strategies in casino games.
@@ -1998,6 +2297,8 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 
 ##### Table with Formal Science skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Formal Sciences                                                                                                                                                                                                                                                                                                                |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically solving simple arithmetic problems or play a common board game and enjoy yourself.                                                                                                                                                                                                                               |
@@ -2014,12 +2315,18 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 
 ## Emotional Aspects
 
+[&#x2191;](javascript:history.back())
+
 ### Manners Characteristics
+
+[&#x2191;](javascript:history.back())
 
 **Manners** represents the overall ability of the being to socially
 understand the world around them
 
 #### Style Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2030,9 +2337,13 @@ understand the world around them
 
 ##### Description of Style Skill
 
+[&#x2191;](javascript:history.back())
+
 Style is the ability to understand the mindset of the public or a specific audience and skillfully create cultural artifacts, such as dresses, paintings, sculptures, poems, or other artistic pursuits, to delight and captivate them. It involves a keen sense of aesthetics, creativity, and the capacity to evoke emotions through artistic expression.
 
 ##### Examples of Style from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the classic novel "The Picture of Dorian Gray" by Oscar Wilde, the character Lord Henry Wotton exhibits a unique mastery of Style, although not in the form of physical artifacts. Lord Henry is a connoisseur of wit, aesthetics, and the human condition, and he uses his understanding of these elements to captivate and influence those around him, particularly the protagonist, Dorian Gray. His keen sense of what will intrigue, delight, or shock his audience allows him to craft conversations and ideas as if they were works of art.
 
@@ -2043,6 +2354,8 @@ In a TTRPG setting, a character with a high level of skill in Style could be inv
 Lord Henry's mastery of Style makes him one of the most memorable and influential characters in "The Picture of Dorian Gray." His ability to understand and manipulate the emotional and aesthetic sensibilities of those around him gives him a form of power that is as potent as it is subtle. Whether he's shaping the life philosophy of a young man or captivating an entire room with his wit, Lord Henry's skill in Style is both his weapon and his art form, making him a compelling figure in both the story and the broader discussions it provokes.
 
 ##### Style Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Fashion Designer:** This archetype excels in creating clothing and accessories that resonate with the public's sense of style. They can design outfits that become fashion trends and influence the way people dress.
 - **The Visual Artist:** Specializing in painting, drawing, and other visual arts, the Visual Artist can create captivating artworks that evoke emotions, convey powerful messages, and leave a lasting impact on viewers.
@@ -2062,6 +2375,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 - **The Street Artist:** Known for their urban art and graffiti, the Street Artist can transform public spaces with their unique artistic expressions, making a statement in the streets.
 
 ##### Specializations for Style Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Fashion Design**: Crafting clothing and accessories that captivate and set trends.
 2. **Portrait Painting**: Creating lifelike or interpretive paintings of individuals.
@@ -2086,6 +2401,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 
 ##### Table with Style skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Style Skill                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically matching colors and patterns in an outfit.                                           |
@@ -2102,6 +2419,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 
 #### Performance Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Performance.png"><img src="https://www.tedt.org/img/skills/vertical/Performance.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2111,9 +2430,13 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 
 ##### Description of the Performance skill
 
+[&#x2191;](javascript:history.back())
+
 Performance is the ability to captivate and delight an audience through various forms of entertainment, such as music, dance, acting, storytelling, or other artistic expressions. It involves a combination of talent, skill, charisma, and stage presence to evoke emotions, engage the audience, and leave a lasting impression.
 
 ##### Examples of Performance from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the fantasy series "The Kingkiller Chronicle" by Patrick Rothfuss, the protagonist Kvothe is an exceptionally gifted performer. From a young age, he is trained in the Edema Ruh, a group of traveling performers known for their storytelling, music, and acting. Kvothe's Performance skill is not just a hobby or a pastime; it's an integral part of his identity and a crucial tool for survival. Whether he's playing the lute in a tavern for tips or using storytelling to captivate a hostile audience, Kvothe's performances are imbued with a unique blend of skill, charisma, and emotional depth.
 
@@ -2124,6 +2447,8 @@ In a TTRPG setting, a character with a high level of skill in Performance could 
 Kvothe's mastery of Performance serves multiple functions throughout his journey. It provides him with a means of livelihood, a way to connect with others, and even a method of self-expression and healing. His ability to captivate and move audiences is not just a testament to his technical skill but also to his understanding of the human condition. Whether he's strumming a lute or weaving a tale, Kvothe's performances are a fusion of artistry and emotion, making him one of the most compelling figures in modern fantasy literature.
 
 ##### Performance Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Musician:** This archetype excels in playing musical instruments and performing music that resonates with audiences. They can create melodies that inspire emotions and move the soul.
 - **The Dancer:** Specializing in dance and movement, the Dancer can captivate audiences with graceful or energetic performances, telling stories through movement and rhythm.
@@ -2142,6 +2467,8 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 - **The Hypnotist:** Known for their ability to induce trance-like states and suggestibility in others, the Hypnotist can perform mesmerizing acts that leave the audience mystified.
 
 ##### Specializations for the Performance skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Vocal Singing**: Using the voice to perform songs and captivate audiences.
 2. **Instrumental Music (Piano, Guitar, Violin, etc.)**: Mastery of musical instruments for live performances.
@@ -2166,6 +2493,8 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 
 ##### Table with Performance skill and examples for each level of difficulty
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Performance Skill                                                                                              |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatic humming or tapping along with a familiar tune.                                                       |
@@ -2182,6 +2511,8 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 
 #### Etiquette Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Etiquette.png"><img src="https://www.tedt.org/img/skills/vertical/Etiquette.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2191,9 +2522,13 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 
 ##### Description of the Etiquette skill
 
+[&#x2191;](javascript:history.back())
+
 Etiquette is the art of knowing and applying the proper social customs, protocols, and behaviors in various situations to interact gracefully with individuals from different backgrounds. It involves understanding the appropriate ways to communicate, behave, and show respect to others, ensuring smooth interactions and fostering positive relationships.
 
 ##### Examples of Etiquette from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the classic novel "Pride and Prejudice" by Jane Austen, Elizabeth Bennet demonstrates a nuanced understanding of Etiquette, especially given the social constraints and expectations of her time. While she is not afraid to challenge societal norms, Elizabeth knows how to navigate various social situations gracefully, understanding when to adhere to protocol and when it's acceptable to bend the rules. Her skill in Etiquette is evident in her interactions with a range of characters, from the haughty Lady Catherine de Bourgh to the charming but deceitful George Wickham, and of course, the enigmatic Mr. Darcy.
 
@@ -2204,6 +2539,8 @@ In a TTRPG setting, a character with a high level of skill in Etiquette could be
 Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's about understanding the nuances of human interaction within the context of her society. Her ability to read the room, so to speak, allows her to adapt her behavior according to the situation, whether she's challenging social norms or adhering to them. This skill enables her to navigate a rigid social hierarchy without compromising her own values, making her one of the most enduring and relatable characters in literary history.
 
 ##### Etiquette Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Diplomat:** This archetype excels in diplomatic etiquette and protocol, ensuring smooth interactions in international and formal settings. They can navigate complex diplomatic negotiations and foster positive relations between nations.
 - **The Host/Hostess:** Specializing in event planning and hospitality, the Host/Hostess can create inviting and well-organized gatherings, ensuring guests feel comfortable and welcome.
@@ -2222,6 +2559,8 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 - **The Protocol Specialist:** Focusing on diplomatic protocol, the Protocol Specialist can ensure that diplomatic events and ceremonies adhere to established customs and procedures.
 
 ##### Specializations for the Etiquette skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Dining Etiquette**: Understanding the proper manners and behaviors at the dining table.
 2. **Business Etiquette**: Knowing how to conduct oneself in a professional setting, including meetings and networking events.
@@ -2246,6 +2585,8 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 
 ##### Table with Etiquette skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Etiquette                                                                                                                                                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Act with common graces among a group of your peers.   Saying "please" and "thank you" automatically in everyday interactions.                                                                                                         |
@@ -2262,10 +2603,14 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 
 ### Personality Characteristics
 
+[&#x2191;](javascript:history.back())
+
 **Personality** represents the overall ability of the being to conform
 their own actions to create the outcomes they want.
 
 #### Deception Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2276,9 +2621,13 @@ their own actions to create the outcomes they want.
 
 ##### Description of the Deception Skill
 
+[&#x2191;](javascript:history.back())
+
 The Deception skill measures the ability to convincingly hide the truth, whether through verbal means or actions. This skill encompasses a wide range of deceptive practices, from misleading others through ambiguity to outright lying. Characters proficient in Deception can fast-talk guards, con merchants, earn money through gambling, pass themselves off in disguises, offer false assurances to dull suspicions, or maintain a straight face while telling blatant lies.
 
 ##### Examples of Deception from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the fantasy series "A Song of Ice and Fire" by George R.R. Martin, Petyr Baelish, commonly known as Littlefinger, is a master of Deception. His ability to manipulate, lie, and mislead others is unparalleled, making him one of the most dangerous players in the game of thrones. Littlefinger's skill in Deception is evident in almost every interaction he has, whether he's sowing discord among powerful families, manipulating financial markets, or plotting assassinations.
 
@@ -2289,6 +2638,8 @@ In a TTRPG setting, a character with a high level of skill in Deception could be
 Littlefinger's mastery of Deception makes him a formidable adversary. His ability to read people and situations allows him to craft lies that are almost indistinguishable from the truth. Whether he's manipulating the stock market to amass wealth or pitting powerful lords against each other to climb the social ladder, Littlefinger's deceptive practices are his most potent weapons. His skill in this dark art allows him to navigate the treacherous political landscape of Westeros, leaving a trail of chaos in his wake.
 
 ##### Deception Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Master of Disguise:** This archetype excels in assuming different identities and disguises, making it nearly impossible for others to recognize them. They can infiltrate enemy ranks or hide in plain sight.
 - **The Smooth Talker:** Specializing in persuasive deception, the Smooth Talker can charm and manipulate others with their words, convincing them to believe or do things they normally wouldn't.
@@ -2307,6 +2658,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 - **The Counterfeit Expert:** Skilled in creating convincing forgeries and counterfeit documents, the Counterfeit Expert can produce fake identification, currency, or valuable items that pass as genuine.
 
 ##### Specializations for the Deception Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Misdirection**: Skill in diverting attention away from the truth or from one's actions.
 2. **False Identity Creation**: Crafting believable fake identities, complete with backstory and documentation.
@@ -2331,6 +2684,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 ##### Table with Deception skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Deception Skill                                                                                                                                                     |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically putting on a friendly demeanor with strangers.                                                                                                        |
@@ -2347,6 +2702,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 #### Persuasion Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Persuasion.png"><img src="https://www.tedt.org/img/skills/vertical/Persuasion.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2356,9 +2713,13 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 ##### Description of the Persuasion Skill
 
+[&#x2191;](javascript:history.back())
+
 Persuasion is the ability to influence others using tact, social graces, and good nature. It involves fostering friendships, making cordial requests, and exhibiting proper etiquette. With persuasion, you can convince people to see things from your perspective, negotiate peace between warring tribes, inspire crowds, or gain favor with influential figures."
 
 ##### Examples of Persuasion from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the historical novel "To Kill a Mockingbird" by Harper Lee, Atticus Finch demonstrates a profound skill in Persuasion. As a lawyer in a racially divided Southern town, Atticus faces the daunting task of defending Tom Robinson, a black man falsely accused of raping a white woman. Despite the overwhelming prejudice and hostility he faces, Atticus uses his persuasive abilities to make a compelling case for Tom's innocence, appealing to the jury's sense of justice and humanity.
 
@@ -2369,6 +2730,8 @@ In a TTRPG setting, a character with a high level of skill in Persuasion could b
 Atticus Finch's mastery of Persuasion is not just a tool for his profession; it's a guiding principle of his life. He believes in the power of empathy and understanding to bridge the divides between people, and he uses his persuasive abilities to advocate for justice and fairness. Whether he's defending a client in court or imparting life lessons to his children, Atticus's skill in Persuasion is a testament to the impact one individual can have when they speak from a place of integrity and compassion.
 
 ##### Persuasion Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Charmer:** This archetype excels in winning people over with their charisma and charm. They can make others feel at ease and build instant rapport, making it easier to sway opinions.
 - **The Diplomat:** Specializing in negotiation and diplomacy, the Diplomat can mediate conflicts, forge alliances, and find mutually beneficial solutions to complex issues.
@@ -2387,6 +2750,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 - **The Socialite:** Known for their extensive social network and ability to connect people, the Socialite can facilitate introductions, build alliances, and create valuable connections for themselves and others.
 
 ##### Specializations for the Persuasion Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Diplomacy:** Negotiating peace treaties between rival nations or settling disputes without resorting to violence.
 2. **Court Etiquette:** Understanding and adhering to the complex protocols and customs of royal courts and high society events.
@@ -2411,6 +2776,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 ##### Table with Persuasion skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Persuasion                                                                                                                                                                                                                                                                                  |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Convince a hungry person to eat food you bought for them.                                                                                                                                                                                                                                   |
@@ -2427,6 +2794,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 #### Intimidation Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Intimidation.png"><img src="https://www.tedt.org/img/skills/vertical/Intimidation.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2436,9 +2805,13 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 ##### Description of the Intimidation Skill
 
+[&#x2191;](javascript:history.back())
+
 Intimidation is the ability to influence others through overt threats, hostile actions, and displays of physical prowess. It involves using fear and forceful demeanor to coerce others into compliance or submission. Examples of intimidation include extracting information from a prisoner, dissuading street thugs from confrontation, or using menacing gestures to make someone reconsider their decisions.
 
 ##### Examples of Intimidation from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the crime thriller series "The Godfather" by Mario Puzo, Vito Corleone exemplifies the skill of Intimidation. As the patriarch of the Corleone crime family, Vito uses a combination of veiled threats, overt displays of power, and an imposing presence to maintain his family's influence and control over their criminal enterprises. While he is a man of many talents and strategies, his ability to intimidate is one of his most effective tools for maintaining order and achieving his objectives.
 
@@ -2449,6 +2822,8 @@ In a TTRPG setting, a character with a high level of skill in Intimidation could
 Vito Corleone's mastery of Intimidation is a cornerstone of his power and influence. While he prefers to use diplomacy and mutual benefit to achieve his goals, he is not above using fear and threats when necessary. His ability to intimidate is not just about physical force; it's a calculated use of his reputation, his resources, and his understanding of human psychology. Whether he's negotiating business deals or settling disputes, Vito Corleone's skill in Intimidation ensures that he commands respect and compliance, making him one of the most formidable figures in the world of organized crime.
 
 ##### Intimidation Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Enforcer:** This archetype is known for their imposing physical presence and intimidating demeanor. They can make others cower through sheer force and intimidate even the toughest adversaries.
 - **The Interrogator:** Specializing in extracting information through intimidation, the Interrogator can break down resistance, elicit confessions, and gather critical intelligence from reluctant individuals.
@@ -2467,6 +2842,8 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 - **The Mercenary Enforcer:** Known for their willingness to use violence for profit, the Mercenary Enforcer can be hired to intimidate or eliminate targets on behalf of clients.
 
 ##### Specializations for the Intimidation Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Interrogation Techniques:** Skillfully extracting information from unwilling subjects using a combination of psychological pressure and fear tactics.
 2. **Streetwise Intimidation:** Asserting dominance and scaring off potential adversaries in rough urban environments.
@@ -2491,6 +2868,8 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 
 ##### Table with Intimidation skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Intimidation                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically asserting authority in a non-threatening manner to gain compliance. Convince a child to run.                                                                                                                                                                                                                                      |
@@ -2507,9 +2886,13 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 
 ### Identity Characteristics
 
+[&#x2191;](javascript:history.back())
+
 **Identity** represents the overall ability of the being to harmonize conflicts in the society they exist in by pushing themselves socially.
 
 #### Bureaucracy Knowledge Areas
+
+[&#x2191;](javascript:history.back())
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2520,9 +2903,13 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 
 ##### Description of the Bureaucracy
 
+[&#x2191;](javascript:history.back())
+
 The skill Bureaucracy means you understand the bureaucratic structures of a group and how they can be used to create the outcomes you need. This can be understanding how local politicians work, how to incentivize law enforcement, or the rules of churches or other formalized social structures of a corporation or social group.
 
 ##### Examples of Bureaucracy from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the political drama series "The West Wing," created by Aaron Sorkin, the character of C.J. Cregg, the White House Press Secretary, demonstrates a deep understanding of Bureaucracy. C.J. navigates the intricate web of governmental structures, from the Executive Branch to Congress, and even the media, to achieve her objectives. Whether she's managing a crisis, coordinating with various departments, or handling sensitive information, C.J.'s skill in Bureaucracy is evident in how she leverages the system to her advantage.
 
@@ -2533,6 +2920,8 @@ In a TTRPG setting, a character with a high level of skill in Bureaucracy could 
 C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a Press Secretary and later as the White House Chief of Staff. Her ability to understand and manipulate the bureaucratic system allows her to achieve outcomes that would be difficult, if not impossible, for others less skilled in the art of bureaucracy. Whether she's managing a crisis, shaping policy, or simply navigating the day-to-day challenges of government
 
 ##### Bureaucracy Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Political Strategist:** This archetype excels in navigating the political landscape, understanding the intricacies of government structures, and using influence to shape policies and decisions.
 - **The Lawful Advocate:** Specializing in legal and judicial matters, the Lawful Advocate can navigate court systems, draft legal documents, and use legal processes to achieve desired outcomes.
@@ -2552,6 +2941,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 - **The Dirty Tricks Mastermind:** Specializing in sophisticated propaganda campaigns, the Dirty Tricks Mastermind can shape public perception on a grand scale, swaying public opinion and influencing mass behavior.
 
 ##### Specializations for the Bureaucracy Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Political Manipulation:** Understanding the intricacies of political systems and using them to gain influence and power.
 2. **Legal Expertise:** Mastering the laws and regulations of a region to navigate legal systems effectively.
@@ -2576,6 +2967,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 
 ##### Table with Bureaucracy skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Bureaucracy                                                                                                                                                       |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically understanding the basic organizational structure of a small local community group.                                                                  |
@@ -2592,6 +2985,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 
 #### Animal Handling Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Animal Handling.png"><img src="https://www.tedt.org/img/skills/vertical/Animal Handling.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2601,9 +2996,13 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 
 ##### Description of the Animal Handling
 
+[&#x2191;](javascript:history.back())
+
 The skill Animal Handling means when there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, you might need an Animal Handling check. You also make an Animal Handling check to control your mount when you attempt a risky maneuver.
 
 ##### Examples of Animal Handling from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the classic novel "Black Beauty" by Anna Sewell, the character John Manly, the stablemaster, demonstrates a high level of skill in Animal Handling. John is responsible for the care and training of the horses in the estate, including the titular character, Black Beauty. His understanding of equine behavior, needs, and body language allows him to establish a strong bond with the animals under his care. He knows when to be firm and when to be gentle, and his actions are always guided by a deep respect for the animals.
 
@@ -2614,6 +3013,8 @@ In a TTRPG setting, a character with a high level of skill in Animal Handling co
 John Manly's mastery of Animal Handling is not just a professional requirement but a moral commitment to the well-being of the animals under his care. Whether he's training a young colt or calming a spooked mare, his skill in Animal Handling is rooted in a deep understanding of animal psychology and needs. This makes him not only effective in his role but also beloved by the animals he tends to, showcasing the profound impact that skilled animal handling can have.
 
 ##### Animal Handling Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Beast Whisperer:** This archetype possesses an innate connection with animals, understanding their behaviors and emotions. They can calm even the most agitated creatures and establish bonds with wild beasts.
 - **The Equestrian Expert:** Specializing in the handling of mounts, the Equestrian Expert can control and maneuver horses, camels, or other riding animals with precision, even during challenging maneuvers.
@@ -2632,6 +3033,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 - **The Wildlife Biologist:** Focusing on scientific study and research, the Wildlife Biologist can observe and document animal behavior in their natural habitats, contributing to our understanding of the animal kingdom.
 
 ##### Specializations for the Animal Handling Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Calming Agitated Animals:** Skillfully calming down domesticated or wild animals in stressful situations.
 2. **Mount Training:** Training and handling mounts to respond to commands and remain composed in various scenarios.
@@ -2656,6 +3059,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 
 ##### Table with Animal Handling skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Animal Handling                                                                                                                                                                                                                                                                                                |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically calming a domesticated cat or dog that's a familiar pet. Groom an undomesticated creature classified as an Animal.                                                                                                                                                                               |
@@ -2672,6 +3077,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 
 #### Leadership Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Leadership.png"><img src="https://www.tedt.org/img/skills/vertical/Leadership.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2681,9 +3088,13 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 
 ##### Description of the Leadership
 
+[&#x2191;](javascript:history.back())
+
 The Leadership skill is the ability to inspire others to become the best versions of themselves, guiding and motivating them towards a common goal while fostering a positive and empowering environment.
 
 ##### Examples of Leadership from Fiction
+
+[&#x2191;](javascript:history.back())
 
 In the historical drama "Braveheart," directed by and starring Mel Gibson, the character William Wallace exemplifies the skill of Leadership. Wallace, a Scottish knight, leads his countrymen in a rebellion against the oppressive rule of the English King Edward I. His ability to inspire, motivate, and unite people from various walks of life is nothing short of extraordinary. Wallace doesn't just lead by giving orders; he leads by example, fighting alongside his men and sharing in their hardships.
 
@@ -2694,6 +3105,8 @@ In a TTRPG setting, a character with a high level of skill in Leadership could b
 William Wallace's mastery of Leadership is not just about tactical acumen or battlefield heroics; it's about the ability to inspire and elevate those around him. Whether he's rallying his troops for battle or standing up for the rights and freedoms of his countrymen, Wallace's leadership skills are his most potent weapon. His ability to inspire courage and unity in the face of overwhelming odds makes him not just a great warrior but a truly transformative leader.
 
 ##### Leadership Archetypes
+
+[&#x2191;](javascript:history.back())
 
 - **The Charismatic Leader:** This archetype possesses a magnetic personality and natural charm that draws others to follow them willingly. They inspire through their presence and words, rallying people to their cause.
 - **The Strategist:** Specializing in long-term planning and tactical brilliance, the Strategist can devise intricate strategies, make informed decisions, and lead their team to victory through careful planning.
@@ -2713,6 +3126,8 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 - **The Spiritual Leader:** This archetype specializes in guiding spiritual communities, offering moral guidance, fostering faith, and leading congregations toward spiritual enlightenment.
 
 ##### Specializations for the Leadership Skill
+
+[&#x2191;](javascript:history.back())
 
 1. **Motivational Speaking**: The ability to inspire and energize a group through public speaking.
 2. **Team Building**: Expertise in creating cohesive and effective teams.
@@ -2737,6 +3152,8 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 
 ##### Table with Leadership skill specializations and difficulty levels
 
+[&#x2191;](javascript:history.back())
+
 | Difficulty        | Leadership                                                                                                                                                                                                                                                                                                                                         |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Automatically guiding a group of children in a fun and educational activity. Incite peasants to violence in the wake of a doom, curse, or other form of spiritual influence.                                                                                                                                                                       |
@@ -2753,7 +3170,11 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 
 ## Mystical Aspects
 
+[&#x2191;](javascript:history.back())
+
 ### Skepticism Characteristics
+
+[&#x2191;](javascript:history.back())
 
 In the realm of Skepticism, you will encounter three distinct branches: Arcane, Gnostic, and Chaos.
 
@@ -2764,6 +3185,8 @@ Moving on to Gnostic magic, you delve deep into esoteric knowledge and hidden tr
 Then comes Chaos magic, where skepticism takes a different turn. Rather than seeking well-defined systems, you embrace the unpredictable and chaotic nature of magic itself. You find power in the fluidity of belief and the ability to shift paradigms, drawing from various traditions and symbols without becoming tied to any one of them. Your skepticism becomes a weapon against dogma, allowing you to remain adaptable and open-minded.
 
 #### Spells of the Skeptic
+
+[&#x2191;](javascript:history.back())
 
 - **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
 - **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
@@ -2785,6 +3208,8 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 #### Arcane Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Ethereal.png"><img src="https://www.tedt.org/img/skills/vertical/Ethereal.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2804,6 +3229,8 @@ Ultimately, being an Arcane mage transcends mere power and knowledge. It is a jo
 
 ##### Arcane Archetypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
 - **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
 - **The Elemental Mage:** This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.
@@ -2816,6 +3243,8 @@ Ultimately, being an Arcane mage transcends mere power and knowledge. It is a jo
 These Arcane Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
 ##### Unique Arcane Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
 - **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
@@ -2848,6 +3277,8 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 #### Gnosis Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Gnosis.png"><img src="https://www.tedt.org/img/skills/vertical/Gnosis.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2863,6 +3294,8 @@ Throughout your quest, you encounter potent symbols like the Ouroboros and the T
 
 ##### Gnostic Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Seeker:** This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
 - **The Savior:** The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
 - **The Rebel:** The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.
@@ -2871,6 +3304,8 @@ Throughout your quest, you encounter potent symbols like the Ouroboros and the T
 - **The Redeemer:** The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
 
 ##### Unique Gnostic Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
 - **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
@@ -2905,6 +3340,8 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 #### Chaos Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Chaos.png"><img src="https://www.tedt.org/img/skills/vertical/Chaos.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -2920,6 +3357,8 @@ In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmon
 
 ##### Chaos Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Trickster:** This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.
 - **The Shapeshifter:** Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.
 - **The Wild Sorcerer:** This character is a conduit of raw magical power, with spells and abilities that are never the same twice. Their magic is untamed, with unpredictable consequences, making them both a force to be reckoned with and a potential source of chaos in any story.
@@ -2931,6 +3370,8 @@ In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmon
 - **The Laughing Mystic:** This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.
 
 ##### Unique Chaos Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
 - **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
@@ -2963,6 +3404,8 @@ Remember, these spells reflect the unpredictable and ever-changing nature of Cha
 
 ### Faith Characteristics
 
+[&#x2191;](javascript:history.back())
+
 You will find that the domain of Faith is divided into three branches of exploration: Theurgy, Physical Adapt, and Order.
 
 Embracing Theurgy, you place your faith in divine beings and higher powers. You find strength in rituals, invocations, and prayers, channeling the energy of the divine to shape reality. Your faith enables you to connect with cosmic forces and tap into spiritual realms, seeking blessings and divine intervention.
@@ -2972,6 +3415,8 @@ On the other hand, Physical Adaptation relies on your faith in the body's inhere
 In the realm of Order, your faith lies in structured systems and cosmic balance. You believe in the harmony and equilibrium of the universe, and through precise rituals and adherence to cosmic laws, you seek to maintain that order. Your faith grants you the ability to wield powerful forces, maintaining stability and influencing the natural flow of events.
 
 #### Spells Unique to Faith
+
+[&#x2191;](javascript:history.back())
 
 - **Divine Blessing:** Channel the power of celestial beings to bestow blessings upon yourself or others, enhancing abilities and providing protection.
 - **Ancestral Guidance:** Commune with your ancestors' spirits, seeking guidance and wisdom from the past.
@@ -2993,6 +3438,8 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 #### Theurgy Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Theurgy.png"><img src="https://www.tedt.org/img/skills/vertical/Theurgy.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3008,6 +3455,8 @@ Your magical journey becomes an expression of your soul, a reflection of your ye
 
 ##### Theurgy Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Prophet:** This archetype is a master of Theurgy, possessing the ability to connect with higher beings or deities to channel their powers and wisdom. They serve as intermediaries between the mortal world and the divine realms, acting as vessels for divine energy and guidance. The Prophet often grapples with the weight of this responsibility, as they must maintain their inner purity and moral integrity to commune with the divine successfully.
 - **The Mystic:** This character is deeply steeped in the knowledge and philosophy of Theurgy, understanding the intricate symbols, rituals, and cosmic forces. The Mystic is a wise and enigmatic figure who imparts profound teachings and insights to others. They may guide heroes on their quests, decipher cryptic prophecies, and uncover hidden truths that shape the course of the story.
 - **The Paladin:** This archetype embodies the protective aspect of Theurgy. They are skilled in using magical rituals to create wards, shields, and barriers that safeguard people and places from malevolent forces. The Paladin often dedicates themselves to defending sacred sites, temples, or ancient artifacts that hold immense power.
@@ -3017,6 +3466,8 @@ Your magical journey becomes an expression of your soul, a reflection of your ye
 - **The Pilgrim:** This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.
 
 ##### Unique Theurgy Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Celestial Communion:** This spell allows the caster to establish a direct communication link with a celestial entity or a deity, seeking guidance, wisdom, or divine blessings. The caster must demonstrate profound respect and sincerity to establish and maintain this connection.
 - **Arcane Equilibrium:** This spell enables the Theurgist to restore balance to a chaotic situation. It can pacify raging storms, quell violent conflicts, or stabilize unruly magical energies, aligning them with the cosmic order.
@@ -3047,6 +3498,8 @@ These unique Theurgy spells showcase the character's special connection to the d
 
 #### Adept Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Adept.png"><img src="https://www.tedt.org/img/skills/vertical/Adept.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3062,6 +3515,8 @@ Your journey as an Adept is one of self-discovery and self-mastery. By continuou
 
 ##### Adept Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Martial Mystic:** This archetype embodies the perfect fusion of physical prowess and mystical powers. They are formidable warriors who can channel their inner energy to enhance their combat abilities significantly. They often possess a serene demeanor, relying on their disciplined minds to outmaneuver opponents and only using their full magical potential when necessary. Examples:
 - **The Nature's Guardian:** These Adepts draw their magical powers from the natural world, becoming protectors of the environment and its inhabitants. They can communicate with animals, manipulate plant life, and control the elements to safeguard the balance of nature.
 - **The Healer Warrior:** This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.
@@ -3069,6 +3524,8 @@ Your journey as an Adept is one of self-discovery and self-mastery. By continuou
 - **The Hidden Assassin:** This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace.
 
 ##### Unique Adept Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Chi-Enhanced Strike:** Infuse your physical attacks with raw mystical energy, allowing your strikes to carry an extra punch. Your blows become charged with Chi, granting them the ability to bypass certain defenses or even disrupt magical barriers.
 - **Ethereal Step:** Temporarily phase out of the physical plane, becoming intangible for a short period. This spell grants you the ability to avoid physical attacks, pass through obstacles, or move swiftly through difficult terrain.
@@ -3101,6 +3558,8 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 #### Order Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Order.png"><img src="https://www.tedt.org/img/skills/vertical/Order.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3118,12 +3577,16 @@ Overall, your journey in the Order branch of magic is one of constant refinement
 
 ##### Order Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Archivist:** This archetype is the epitome of knowledge and wisdom. The Archivist dedicates their life to the preservation and study of ancient tomes, grimoires, and arcane texts. They possess a vast understanding of magical lore, and their power comes from their ability to access and interpret the accumulated wisdom of ages.
 - **The Alchemist:** This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered.
 - **The Artificer:** This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.
 - **The Elementalist:** This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.
 
 ##### Unique Order Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Chrono-script:** This spell allows the caster to create temporal runes that record events and knowledge in a structured manner. These runes can be stored in enchanted archives and accessed by others, ensuring that valuable information is never lost to the passage of time.
 - **Symphony of Elements:** By orchestrating a precise sequence of gestures and incantations, the caster can summon and harmonize the elemental forces, combining them in a powerful and controlled manner. This spell allows the caster to wield the combined might of multiple elements simultaneously.
@@ -3154,6 +3617,8 @@ These spells exemplify the precise, structured, and balanced nature of Order Mag
 
 ### Mystery Characteristics
 
+[&#x2191;](javascript:history.back())
+
 Finally, you encounter the enigmatic realm of Mystery, where three paths beckon: Metaphysics, Animism, and Shamanism.
 
 In Metaphysics, your understanding of the interconnectedness of mind and matter allows you to manipulate reality through thought and focus. Your quest for truth and your exploration of consciousness grant you extraordinary psychic abilities.
@@ -3163,6 +3628,8 @@ As an Animist, you understand that all things possess a spiritual essence. You c
 Lastly, Shamanism leads you on a path of spiritual connection and healing. Your faith lies in the guidance of ancestral spirits and totemic beings. As you journey between the physical and spiritual realms, you serve as an intermediary, bringing wisdom, healing, and balance to your community. Your mystical experiences empower you to traverse the veil between worlds.
 
 #### Unique Magical Spells to Mystery
+
+[&#x2191;](javascript:history.back())
 
 - **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
 - **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
@@ -3184,6 +3651,8 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 #### Metaphysics Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Metaphysics.png"><img src="https://www.tedt.org/img/skills/vertical/Metaphysics.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3199,6 +3668,8 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 
 ##### Metaphysical Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Psychic Seer:** This archetype embodies the concept of clairvoyance and precognition. The Psychic Seer possesses the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate.
 - **The Manipulator:** Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.
 - **The Traveler:** Representing the practice of astral projection, this archetype ventures beyond the confines of the physical body to explore ethereal realms and dimensions. The Traveler often uncovers hidden knowledge and encounters beings from other planes, offering a bridge between the material and spiritual worlds.
@@ -3207,6 +3678,8 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 - **The Oracle:** Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinies and guide pivotal decisions.
 
 ##### Unique Metaphysical Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
 - **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
@@ -3241,6 +3714,8 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 #### Animism Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Animism.png"><img src="https://www.tedt.org/img/skills/vertical/Animism.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3256,6 +3731,8 @@ Your empathy grows, allowing you to perceive the hidden spiritual essence within
 
 ##### Animism Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **Spirit Whisperer:** The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.
 - **Elemental Shaper:** The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.
 - **Nature Healer:** The Nature Healer is an archetype gifted with the power to heal wounds and ailments, not just on a physical level but also on a spiritual and emotional one. They draw upon the life force present in plants, rivers, and animals to mend broken spirits and restore balance to troubled souls. Their touch brings forth rejuvenation and renewal to both individuals and the natural world.
@@ -3265,6 +3742,8 @@ Your empathy grows, allowing you to perceive the hidden spiritual essence within
 - **Communal Weave:** The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.
 
 ##### Unique Animism Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
 - **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
@@ -3297,6 +3776,8 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 #### Shamanism Knowledge Areas
 
+[&#x2191;](javascript:history.back())
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
 <a href="https://www.tedt.org/img/skills/vertical/Shamanism.png"><img src="https://www.tedt.org/img/skills/vertical/Shamanism.png" class="img-fluid img-thumbnail figure-img float-end"></a>
@@ -3312,6 +3793,8 @@ The practice of Shamanism requires a profound sense of humility and respect for 
 
 ##### Shamanism Archtypes
 
+[&#x2191;](javascript:history.back())
+
 - **The Wise Shaman:** This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.
 - **The Nature Channeler:** This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.
 - **The Spirit Walker:** The Spirit Walker is a shamanic archetype who has the ability to traverse between the physical and spiritual realms. They enter altered states of consciousness to connect with spirits, receive visions, and gain supernatural powers. This character may journey to the underworld, commune with ancestors, or seek guidance from powerful spirits.
@@ -3320,6 +3803,8 @@ The practice of Shamanism requires a profound sense of humility and respect for 
 - **The Shadow Shaman:** This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.
 
 ##### Unique Shamanism Magical Spells
+
+[&#x2191;](javascript:history.back())
 
 - **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
 - **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
@@ -3355,10 +3840,20 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 
 ## Task Resolution
 
+[&#x2191;](javascript:history.back())
+
 ### In Brief
 
-1. Determine and add up the skill ( Aspect + Characteristic + Skill ) 
+[&#x2191;](javascript:history.back())
+
+1. Determine and add up the skill ( Aspect + Characteristic + Skill )
 2. Determine and add up the circumstantial Dice Modifiers (⚅) using the table below
+3. Roll a 4d8 and determine the σ using the table below:
+4. Add up all the above numbers and compare them to the following table.  Sometimes an additional table will need to be consulted give the details of the skill or the circumstances (such as determining how long something took, or how much it will cost to repair an item.)
+
+#### Table for Step 2
+
+[&#x2191;](javascript:history.back())
 
 |  ⚅   |    Difficulty     |                                                                                                                                                                                                                                                                                                                                                |
 |:----:|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3374,7 +3869,9 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | \-25 | Nearly Impossible | An epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                                                                                                               |
 | \-30 |       Godly       | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                            |
 
-3. Roll a 4d8 and determine the σ using the table below:
+#### Table for Step 3
+
+[&#x2191;](javascript:history.back())
 
 | σ  |   4d8   |
 |:--:|:-------:|
@@ -3387,7 +3884,9 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | 3  | 28 - 30 |
 | 4  | 31 - 32 |
 
-4. Add up all the above numbers and compare them to the following table.  Sometimes an additional table will need to be consulted give the details of the skill or the circumstances (such as determining how long something took, or how much it will cost to repair an item.)
+#### Table for Step 4
+
+[&#x2191;](javascript:history.back())
 
 | Final Result | Degree of Effect |
 |--------------|------------------|
@@ -3404,9 +3903,13 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 
 #### Degrees of Effect Defined
 
+[&#x2191;](javascript:history.back())
+
 There are nine separate ways a predicament can be resolved:
 
 ##### Fail Catastrophically
+
+[&#x2191;](javascript:history.back())
 
 This is a critical failure. The cost for this sort of failure means the
 outcome the actor was intending failed. Additionally, things have turned
@@ -3429,6 +3932,8 @@ finality.
 
 ##### Costly
 
+[&#x2191;](javascript:history.back())
+
 This is one step away from a critical failure. The cost should be
 related to the outcome the player or monster was attempting.
 
@@ -3439,12 +3944,16 @@ related to the outcome the player or monster was attempting.
 
 ##### Fail
 
+[&#x2191;](javascript:history.back())
+
 This is a normal failure.
 
 > In the example of our thief would not have been able to pick the lock,
 > but the lock would not be jammed, and he would still have his pick.
 
 ##### Fail in Style
+
+[&#x2191;](javascript:history.back())
 
 This is one step above a failure. It is still a failure, but something
 else has happened that moves the story forward in a more difficult path,
@@ -3456,6 +3965,8 @@ but without accomplishing the goals.
 > forward approach.
 
 ##### Tie
+
+[&#x2191;](javascript:history.back())
 
 A tie succeeds unless this was a contest between two parties, in which
 case the outcome is that neither party gets what they want, and it
@@ -3473,6 +3984,8 @@ social interactions or for contests of strength or agility.
 
 ##### Succeed
 
+[&#x2191;](javascript:history.back())
+
 The individual who attempted to do something accomplishes what they set
 out to do.
 
@@ -3480,6 +3993,8 @@ out to do.
 > being held shut by the locking mechanism.
 
 ##### Succeed in Style
+
+[&#x2191;](javascript:history.back())
 
 The individual who attempted to do something accomplishes what they set
 out to do, and they got some hidden bonus or style out of it.
@@ -3491,6 +4006,8 @@ out to do, and they got some hidden bonus or style out of it.
 
 ##### Critical Success
 
+[&#x2191;](javascript:history.back())
+
 The individual who attempted to do something accomplishes what they set
 out todo, and they got a substantial hidden bonus or style out of it.
 
@@ -3500,6 +4017,8 @@ out todo, and they got a substantial hidden bonus or style out of it.
 > lock within this facility will be easier to open.
 
 ##### Serendipitous Success
+
+[&#x2191;](javascript:history.back())
 
 The individual who attempted to do something accomplishes what they set
 out to do, and they got a substantial hidden bonus or style out of it
@@ -3517,6 +4036,8 @@ that is completely unrelated to the task being attempted.
 > success to the success pool.
 
 ###### Extended Degrees of Effect
+
+[&#x2191;](javascript:history.back())
 
 | Degree of Effect | Final σ | ± %  | 0 | \\- | \\+ | +0 |
 |-----------------:|:-------:|:----:|:-:|:---:|:---:|:--:|
@@ -3541,7 +4062,11 @@ Final σ: Used in Dice Chains
 
 ## Hallmarks Details
 
+[&#x2191;](javascript:history.back())
+
 ### Enviromental Hallmark Details
+
+[&#x2191;](javascript:history.back())
 
 Environmental hallmarks represent the knacks, insights and ‘survival
 secrets’ handed down by different people over the years, giving heroes
@@ -3552,6 +4077,8 @@ spends their time in. A character who grew up in an urban area that
 never got out of the city may not have an Environmental Hallmark.
 
 #### Rain Forest
+
+[&#x2191;](javascript:history.back())
 
 You are from the lush heart of the rainforest, where towering trees
 create a majestic canopy above you. The air is thick with humidity, and
@@ -3569,6 +4096,8 @@ it holds within its depths. The rainforest is your home, and its beauty
 and wonders are forever etched in your soul.
 
 #### Wetlands / Swamp
+
+[&#x2191;](javascript:history.back())
 
 You are from the enchanting realm of the wetlands, where the earth gives
 way to a mosaic of marshes, ponds, and winding waterways. You have known
@@ -3588,6 +4117,8 @@ your spirit.
 
 #### Savanna
 
+[&#x2191;](javascript:history.back())
+
 You are from the vast and golden expanse of the savanna, where the
 horizon stretches endlessly before you. You have known the warmth of the
 sun on your skin and the gentle sway of the tall grasses that surround
@@ -3604,6 +4135,8 @@ your home, and its vastness and raw beauty have shaped your spirit in
 ways that words cannot capture.
 
 #### Desert
+
+[&#x2191;](javascript:history.back())
 
 You are from the vast and arid desert, a land of relentless sun and
 shifting sands. You have known the searing heat that beats down upon you
@@ -3622,6 +4155,8 @@ instilling in you a deep appreciation for endurance and the quiet
 strength that lies within.
 
 #### Temperate Forest
+
+[&#x2191;](javascript:history.back())
 
 You are from the enchanting realm of the temperate forest, where
 towering trees create a canopy that filters the sunlight and casts a
@@ -3642,6 +4177,8 @@ within your heart.
 
 #### Grasslands
 
+[&#x2191;](javascript:history.back())
+
 You are from the vast and sweeping grasslands, where the horizon
 stretches endlessly before you, painted in hues of gold and green. It is
 a land of open spaces, where the wind whispers secrets through the
@@ -3660,6 +4197,8 @@ unity with the land and a profound understanding of the delicate balance
 that sustains life on the plains.
 
 #### Chaparral
+
+[&#x2191;](javascript:history.back())
 
 You are from the enchanting realm of the chaparral, a place where the
 scent of aromatic herbs fills the air and the warmth of the sun embraces
@@ -3680,6 +4219,8 @@ a sense of connection to the untamed beauty of this arid land.
 
 #### Taiga
 
+[&#x2191;](javascript:history.back())
+
 You are from the breathtaking realm of the taiga, a land of towering
 evergreens and crisp, cool air. From a young age, you have been
 surrounded by the majestic presence of coniferous trees, their
@@ -3698,6 +4239,8 @@ nature and the delicate balance of its ecosystems, shaping you into a
 steward of this pristine wilderness.
 
 #### Tundra
+
+[&#x2191;](javascript:history.back())
 
 You are from the vast and seemingly endless expanse of the tundra, a
 land of extreme cold and rugged beauty. Born amidst the barren
@@ -3718,6 +4261,8 @@ of this frigid wilderness.
 
 #### No-Atmosphere
 
+[&#x2191;](javascript:history.back())
+
 You are from a world devoid of atmosphere, a place where the vast
 expanse of space stretches endlessly before you. Growing up in this
 airless void, you have known the weightlessness of existence, floating
@@ -3736,7 +4281,11 @@ existence is intimately connected to the vastness of the universe.
 
 #### Water
 
+[&#x2191;](javascript:history.back())
+
 ##### Surface
+
+[&#x2191;](javascript:history.back())
 
 The surface of the ocean is your home. From the moment you were born,
 you were surrounded by the rhythmic sound of waves crashing against the
@@ -3755,6 +4304,8 @@ the ever-changing nature of life itself, reminding you of the importance
 of resilience and embracing the unknown.
 
 ##### Shore
+
+[&#x2191;](javascript:history.back())
 
 You are from the enchanting world of the ocean surface and the
 shoreline, where the meeting point of air, land and sea becomes your
@@ -3775,6 +4326,8 @@ spirit of the ocean within you, forever drawn to the vastness and
 mystery of the sea.
 
 ##### Sunlight
+
+[&#x2191;](javascript:history.back())
 
 You are from the mesmerizing realm of the ocean sunlight zone, where the
 sparkling rays of sunlight penetrate the surface and illuminate a world
@@ -3797,6 +4350,8 @@ surface.
 
 ##### Twilight
 
+[&#x2191;](javascript:history.back())
+
 You are from the mystical realm of the ocean twilight zone, a mysterious
 and enchanting world that lies beneath the shimmering surface. Growing
 up in this ethereal domain, you have witnessed the transition from the
@@ -3816,6 +4371,8 @@ depths, where secrets and enchantment await at every turn.
 
 ##### Midnight
 
+[&#x2191;](javascript:history.back())
+
 You are from the enigmatic realm of the ocean midnight zone, a world of
 perpetual darkness and profound mystery. Growing up in this abyssal
 domain, you have become intimately acquainted with the depths that few
@@ -3834,6 +4391,8 @@ and beckoning you to explore further into the depths of the ocean's
 mysteries.
 
 ##### Abyss
+
+[&#x2191;](javascript:history.back())
 
 You are from the unfathomable depths of the ocean abyssal zone, a realm
 that dwells in perpetual darkness and mind-boggling pressure. Growing up
@@ -3855,7 +4414,11 @@ the harshest of environments.
 
 #### Underground
 
+[&#x2191;](javascript:history.back())
+
 ##### Subsurface
+
+[&#x2191;](javascript:history.back())
 
 You are from a world of cozy and snug underground holes and excavated
 buildings nestled within the earth. Growing up in these subterranean
@@ -3875,6 +4438,8 @@ simplicity and community of your underground haven, finding joy in the
 enchantment and serenity that this unique lifestyle provides.
 
 ##### Subterranean
+
+[&#x2191;](javascript:history.back())
 
 You are from a world where life thrives in the embrace of underground
 structures and dwellings, meticulously crafted through excavation and
@@ -3914,6 +4479,8 @@ challenges and rewards that come with life below the surface.
 
 ##### Caves
 
+[&#x2191;](javascript:history.back())
+
 You are from the underground caves, a realm of darkness and wonder
 hidden beneath the surface. Since childhood, you have known the secrets
 of these vast, labyrinthine chambers. The dampness and coolness of the
@@ -3932,6 +4499,8 @@ caves offer. The caves have become your sanctuary, a place where you
 find peace and a connection to the ancient depths of the Earth.
 
 ##### Tunnels
+
+[&#x2191;](javascript:history.back())
 
 You are from the deep underground, a world of intricate tunnels carved
 deep beneath the surface. Growing up in this subterranean realm, you
@@ -3954,6 +4523,8 @@ have shaped your existence.
 
 ##### Foundations
 
+[&#x2191;](javascript:history.back())
+
 You are from the foundational layers of the planet, a realm nestled
 between the Earth's crust and its fiery core. Growing up in this
 extraordinary environment, you have witnessed the immense power and
@@ -3975,11 +4546,15 @@ awe-inspiring majesty of the planet on which we reside.
 
 ### Urban Hallmark Details
 
+[&#x2191;](javascript:history.back())
+
 Urban hallmarks represent the knacks, insights and ‘street secrets’
 handed down by different people over the years, giving heroes raised in
 those urban settings an edge.
 
 #### Rural
+
+[&#x2191;](javascript:history.back())
 
 You are from a rural area, a place where the pace of life slows down and
 nature takes center stage. Your childhood was immersed in the
@@ -4001,6 +4576,8 @@ traditions that shape rural communities.
 
 #### Suburban
 
+[&#x2191;](javascript:history.back())
+
 You are from a suburban area, a place where the hustle and bustle of
 city life meets the tranquility of residential neighborhoods. Your
 childhood was filled with the sights and sounds of manicured lawns,
@@ -4020,6 +4597,8 @@ cherished memories amidst the idyllic surroundings.
 
 #### Low-Density Urban
 
+[&#x2191;](javascript:history.back())
+
 You are from a low-density urban area, a place where the urban landscape
 is spread out, offering more space and a quieter atmosphere compared to
 bustling city centers. Your childhood was shaped by wide streets,
@@ -4037,6 +4616,8 @@ still enjoying the spaciousness and peacefulness that comes with a lower
 population density.
 
 #### Medium-density urban
+
+[&#x2191;](javascript:history.back())
 
 You are from a medium-density urban area, a vibrant and bustling
 neighborhood where the rhythm of the city is alive. Growing up in this
@@ -4056,6 +4637,8 @@ backdrop for your upbringing, shaping your worldview and instilling a
 sense of excitement for the possibilities that city life had to offer.
 
 #### High-density urban
+
+[&#x2191;](javascript:history.back())
 
 You are from a high-density urban area, where towering skyscrapers reach
 for the sky and the streets are filled with a constant stream of people.
@@ -4079,6 +4662,8 @@ that arises from the close proximity of people from all walks of life.
 Characters with this Hallmark may not select an Environmental Hallmark
 
 #### Megacity
+
+[&#x2191;](javascript:history.back())
 
 You are from a megacity, a colossal urban area that seems to stretch
 endlessly in every direction. Growing up in this bustling metropolis,
@@ -4106,6 +4691,8 @@ Characters with this Hallmark may not select an Environmental Hallmark
 
 #### Metropolis
 
+[&#x2191;](javascript:history.back())
+
 You are from the largest Megacity on the planet, an awe-inspiring urban
 behemoth that stretches as far as the eye can see. Growing up in this
 colossal metropolis, you were immersed in a never-ending stream of
@@ -4128,6 +4715,8 @@ own path in the heart of this magnificent metropolis.
 Characters with this Hallmark may not select an Environmental Hallmark.
 
 #### Planetary Urbanization
+
+[&#x2191;](javascript:history.back())
 
 You are from a planet where urbanization has consumed the entire surface
 of the planet, leaving no room for nature's embrace. As far as the eye
@@ -4157,6 +4746,8 @@ same location.
 
 ### Occupational Hallmarks Details
 
+[&#x2191;](javascript:history.back())
+
 Occupational hallmarks represent the knacks, insights and ‘craft
 secrets’ handed down by different trades over the years, giving heroes
 who have those jobs an edge.
@@ -4167,6 +4758,8 @@ character grew up in or surrounds themselves when they are not
 adventuring.
 
 #### Careers Details
+
+[&#x2191;](javascript:history.back())
 
 As a part of their development, characters follow certain life paths
 called careers. The setting you play in will provide a variety of career
@@ -4179,6 +4772,8 @@ a career is determined by the settings rules/
 
 ### Recreational Hallmark Details
 
+[&#x2191;](javascript:history.back())
+
 Recreational hallmarks represent the knacks, insights and nuanced
 differentiations handed down by enthusiasts over the years, giving
 heroes raised in those cultures an edge.
@@ -4188,6 +4783,8 @@ and note it down. This represents how the character prefers to spend
 their free time relaxing.
 
 ### Cultural Hallmarks Details
+
+[&#x2191;](javascript:history.back())
 
 Cultural Hallmarks are qualities that describe different aspects of a
 character’s build, temperament, and abilities, which can provide
