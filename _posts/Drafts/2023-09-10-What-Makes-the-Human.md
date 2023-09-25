@@ -25,99 +25,92 @@ draft-status: integration
 mathjax: true
 
 ---
-<style>
-.dccvsdnd thead tr th {
-  width: 50%;
-}
-</style>
-
 # Characters
 
 ## Character Sheet - Work in Progress
 
 Links to rules still in development.  Try at your own risk.
 
-|                              Name | Description                                                                     |            Link to Rule             |
-|----------------------------------:|:--------------------------------------------------------------------------------|:-----------------------------------:|
-|                             Name: |                                                                                 |                                     |
-|            Recreational Hallmark: | What does this person do for a hobby                                            | [&#x2193;](#recreational-hallmarks) |
-|           Environmental Hallmark: | What environment was this person raised in                                      | [&#x2193;](#enviromental-hallmarks) |
-|            Occupational Hallmark: | What is this person's occupation                                                | [&#x2193;](#occupational-hallmarks) |
-|         **{Hometown Community}**: | -4 3 2 1+1 2 3 4                                                                |                                     |
-|                         - Rating: | □ □ □ □ □ □ □ □                                                                 |         [&#x2193;](#rating)         |
-|                           - Name: | What is the name of this Community?                                             |                                     |
-|                    - Description: | Give a description of this Community so others who are playing can identify it  |                                     |
-|            - Community Hallmarks: | What is the cultural differentiators of this Community.                         |  [&#x2193;](#community-hallmarks)   |
-|   - Opposing Community Hallmarks: | What is the opposing cultural differentiators of this Community.                |  [&#x2193;](#community-hallmarks)   |
-|         **Personal Possessions:** |                                                                                 |                                     |
-|                     Pocket Money: | □ □ □ □ □ □ □ □                                                                 |      [&#x2193;](#pocket-money)      |
-|                     - _Equipment_ | What basic equipment do they use                                                |       [&#x2193;](#equiptment)       |
-|              - _Operational Gear_ | What gear would they take with them on a job                                    |   [&#x2193;](#occupational-gear)    |
-|             - _Specialized Tools_ | What specialized tools do they use that others who have this job might not have |    [&#x2193;](#specialized-gear)    |
-|                    - _Elite Gear_ | Do they have customized tools they would use                                    |       [&#x2193;](#elite-gear)       |
-|                     - Named Items | Have the customized tools become so famous they now have names?                 |      [&#x2193;](#named-items)       |
-|                       **Assets:** | What sort of non-liquid assets does the character have?                         |         [&#x2193;](#Assets)         |
-|          **Property (location):** | Does this character have any additional property in another Community?          |                                     |
-|                         - Rating: | □ □ □ □ □ □ □ □                                                                 |         [&#x2193;](#rating)         |
-|                           - Name: | What is the name of this Community?                                             |                                     |
-|                    - Description: | Give a description of this Community so others who are playing can identify it  |                                     |
-|            - Community Hallmarks: | What is the cultural differentiators of this Community.                         |      [&#x2193;](#named-items)       |
-|   - Opposing Community Hallmarks: | What is the opposing cultural differentiators of this Community.                |  [&#x2193;](#community-hallmarks)   |
-| - Occupational Hallmark & Career: | What occupation does the individual have according to this community            | [&#x2193;](#occupational-hallmarks) |
-|         - Environmental Hallmark: | What is the environment that this Property is located in ?                      | [&#x2193;](#enviromental-hallmarks) |
+|                                                                 Name | Description                                                                     |
+|---------------------------------------------------------------------:|:--------------------------------------------------------------------------------|
+|                                                                Name: |                                                                                 |
+|                                                       - Description: | what do you look like.  How does people see you within your community           |
+|            Recreational Hallmark:[&#x2193;](#recreational-hallmarks) | What does this person do for a hobby                                            |
+|           Environmental Hallmark:[&#x2193;](#enviromental-hallmarks) | What environment was this person raised in                                      |
+|            Occupational Hallmark:[&#x2193;](#occupational-hallmarks) | What is this person's occupation                                                |
+|                                            **{Hometown Community}**: | -4 3 2 1+1 2 3 4                                                                |
+|                                         - Rating:[&#x2193;](#rating) | □ □ □ □ □ □ □ □                                                                 |
+|                                                              - Name: | What is the name of this Community?                                             |
+|                                                       - Description: | Give a description of this Community so others who are playing can identify it  |
+|               - Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the cultural differentiators of this Community.                         |
+|      - Opposing Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the opposing cultural differentiators of this Community.                |
+|                                            **Personal Possessions:** |                                                                                 |
+|                               Pocket Money:[&#x2193;](#pocket-money) | □ □ □ □ □ □ □ □                                                                 |
+|                                  - _Equipment_[&#x2193;](#equipment) | What basic equipment do they use                                                |
+|                    - _Operational Gear_[&#x2193;](#operational-gear) | What gear would they take with them on a job                                    |
+|                  - _Specialized Tools_[&#x2193;](#specialized-tools) | What specialized tools do they use that others who have this job might not have |
+|                                - _Elite Gear_[&#x2193;](#elite-gear) | Do they have customized tools they would use                                    |
+|                                - Named Items[&#x2193;](#named-items) | Have the customized tools become so famous they now have names?                 |
+|                                       **Assets:**[&#x2193;](#assets) | What sort of non-liquid assets does the character have?                         |
+|                                             **Property (location):** | Does this character have any additional property in another Community?          |
+|                                         - Rating:[&#x2193;](#rating) | □ □ □ □ □ □ □ □                                                                 |
+|                                                              - Name: | What is the name of this Community?                                             |
+|                                                       - Description: | Give a description of this Community so others who are playing can identify it  |
+|                       - Community Hallmarks:[&#x2193;](#named-items) | What is the cultural differentiators of this Community.                         |
+|      - Opposing Community Hallmarks:[&#x2193;](#community-hallmarks) | What is the ral differentiators of this Community.                              |
+| - Occupational Hallmark & Career:[&#x2193;](#occupational-hallmarks) | What occupation does the individual have according to this community            |
+|         - Environmental Hallmark:[&#x2193;](#enviromental-hallmarks) | What is the environment that this Property is located in ?                      |
 
-| Aspect                           | 4 3 2 1 - | +1 2 3 4 | Characteristic                                         | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |                  Link to Rule                   |
-|----------------------------------|-----------|----------|--------------------------------------------------------|-----------|----------|-------------------|----------|-------|:-----------------------------------------------:|
-| Fitness [&#x2193;](#fitness)     | □ □ □ □   | □ □ □ □  | Muscle  [&#x2193;](#muscle-characteristics)            | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Athletics         | □ □ □ □  |       |     [&#x2193;](#athletics-knowledge-areas)      |
-|                                  |           |          |                                                        |           |          | Melee             | □ □ □ □  |       |    [&#x2193;](#melee-combat-knowledge-areas)    |
-|                                  |           |          | Agility [&#x2193;](#agility-characteristics)           | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       |      [&#x2193;](#stealth-knowledge-areas)       |
-|                                  |           |          |                                                        |           |          | Acrobatics        | □ □ □ □  |       |     [&#x2193;](#acribatucs-knowledge-areas)     |
-|                                  |           |          |                                                        |           |          | Sleight of Hand   | □ □ □ □  |       |   [&#x2193;](#slight-of-hand-knowledge-areas)   |
-|                                  |           |          | Stamina [&#x2193;](#stamina-characteristics)           | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       | [&#x2193;](#drive--ride--pilot-knowledge-areas) |
-|                                  |           |          |                                                        |           |          | Ruggedness        | □ □ □ □  |       |     [&#x2193;](#ruggedness-knowledge-areas)     |
-|                                  |           |          |                                                        |           |          | Unarmed           | □ □ □ □  |       |   [&#x2193;](#unarmed-combat-knowledge-areas)   |
-| Academic [&#x2193;](#academic)   | □ □ □ □   | □ □ □ □  | Intellect  [&#x2193;](#intellect-characteristics)      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |  [&#x2193;](#social-sciences-knowledge-areas)   |
-|                                  |           |          |                                                        |           |          | Life Sciences     | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Physical Sciences | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Reasoning   [&#x2193;](#reasoning-characteristics)     | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Insight           | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Investigation     | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Acuity   [&#x2193;](#acuity-characteristics)           | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Perception        | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Formal Sciences   | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-| Mystical [&#x2193;](#mystical)   | □ □ □ □   | □ □ □ □  | Skepticism   [&#x2193;](#skepticism-characteristics)   | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Gnosis            | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Chaos             | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Faith     [&#x2193;](#faith-characteristics)           | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Adapt             | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Order             | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Mystery   [&#x2193;](#mystery-characteristics)         | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Animism           | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Shamanism         | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-| Emotional [&#x2193;](#emotional) | □ □ □ □   | □ □ □ □  | Manners   [&#x2193;](#manners-characteristics)         | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Performance       | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Etiquette         | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Personality   [&#x2193;](#personality-characteristics) | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Persuasion        | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Intimidation      | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          | Identity    [&#x2193;](#identity-characteristics)      | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Animal Handling   | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
-|                                  |           |          |                                                        |           |          | Leadership        | □ □ □ □  |       |   [&#x2193;](#ranged-combat-knowledge-areas)    |
+| Aspect                           | 4 3 2 1 - | +1 2 3 4 | Characteristic                                         | 4 3 2 1 - | +1 2 3 4 | Knowledge Areas   | +1 2 3 4 | Total |                       Link to Rule                       |
+|----------------------------------|-----------|----------|--------------------------------------------------------|-----------|----------|-------------------|----------|-------|:--------------------------------------------------------:|
+| Fitness [&#x2193;](#fitness)     | □ □ □ □   | □ □ □ □  | Muscle  [&#x2193;](#muscle-characteristics)            | □ □ □ □   | □ □ □ □  | Ranged            | □ □ □ □  |       |        [&#x2193;](#ranged-combat-knowledge-areas)        |
+|                                  |           |          |                                                        |           |          | Athletics         | □ □ □ □  |       |          [&#x2193;](#athletics-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Melee             | □ □ □ □  |       |        [&#x2193;](#melee-combat-knowledge-areas)         |
+|                                  |           |          | Agility [&#x2193;](#agility-characteristics)           | □ □ □ □   | □ □ □ □  | Stealth           | □ □ □ □  |       |           [&#x2193;](#stealth-knowledge-areas)           |
+|                                  |           |          |                                                        |           |          | Acrobatics        | □ □ □ □  |       |         [&#x2193;](#acrobatics-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Sleight of Hand   | □ □ □ □  |       |       [&#x2193;](#sleight-of-hand-knowledge-areas)       |
+|                                  |           |          | Stamina [&#x2193;](#stamina-characteristics)           | □ □ □ □   | □ □ □ □  | Ride / Pilot      | □ □ □ □  |       |     [&#x2193;](#drive--ride--pilot-knowledge-areas)      |
+|                                  |           |          |                                                        |           |          | Ruggedness        | □ □ □ □  |       |         [&#x2193;](#ruggedness-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Unarmed           | □ □ □ □  |       |       [&#x2193;](#unarmed-combat-knowledge-areas)        |
+| Academic [&#x2193;](#academic)   | □ □ □ □   | □ □ □ □  | Intellect  [&#x2193;](#intellect-characteristics)      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |       [&#x2193;](#social-sciences-knowledge-areas)       |
+|                                  |           |          |                                                        |           |          | Life Sciences     | □ □ □ □  |       |        [&#x2193;](#life-sciences-knowledge-areas)        |
+|                                  |           |          |                                                        |           |          | Physical Sciences | □ □ □ □  |       | [&#x2193;](#physical-sciences--survival-knowledge-areas) |
+|                                  |           |          | Reasoning   [&#x2193;](#reasoning-characteristics)     | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |         [&#x2193;](#engineering-knowledge-areas)         |
+|                                  |           |          |                                                        |           |          | Insight           | □ □ □ □  |       |           [&#x2193;](#insight-knowledge-areas)           |
+|                                  |           |          |                                                        |           |          | Investigation     | □ □ □ □  |       |        [&#x2193;](#investigation-knowledge-areas)        |
+|                                  |           |          | Acuity   [&#x2193;](#acuity-characteristics)           | □ □ □ □   | □ □ □ □  | Traditions        | □ □ □ □  |       |         [&#x2193;](#traditions-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Perception        | □ □ □ □  |       |         [&#x2193;](#perception-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Formal Sciences   | □ □ □ □  |       |       [&#x2193;](#formal-sciences-knowledge-areas)       |
+| Mystical [&#x2193;](#mystical)   | □ □ □ □   | □ □ □ □  | Skepticism   [&#x2193;](#skepticism-characteristics)   | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |           [&#x2193;](#arcane-knowledge-areas)            |
+|                                  |           |          |                                                        |           |          | Gnosis            | □ □ □ □  |       |           [&#x2193;](#gnosis-knowledge-areas)            |
+|                                  |           |          |                                                        |           |          | Chaos             | □ □ □ □  |       |            [&#x2193;](#chaos-knowledge-areas)            |
+|                                  |           |          | Faith     [&#x2193;](#faith-characteristics)           | □ □ □ □   | □ □ □ □  | Theurgy           | □ □ □ □  |       |           [&#x2193;](#theurgy-knowledge-areas)           |
+|                                  |           |          |                                                        |           |          | Adapt             | □ □ □ □  |       |            [&#x2193;](#adept-knowledge-areas)            |
+|                                  |           |          |                                                        |           |          | Order             | □ □ □ □  |       |            [&#x2193;](#order-knowledge-areas)            |
+|                                  |           |          | Mystery   [&#x2193;](#mystery-characteristics)         | □ □ □ □   | □ □ □ □  | Metaphysics       | □ □ □ □  |       |         [&#x2193;](#metaphysics-knowledge-areas)         |
+|                                  |           |          |                                                        |           |          | Animism           | □ □ □ □  |       |           [&#x2193;](#animism-knowledge-areas)           |
+|                                  |           |          |                                                        |           |          | Shamanism         | □ □ □ □  |       |          [&#x2193;](#shamanism-knowledge-areas)          |
+| Emotional [&#x2193;](#emotional) | □ □ □ □   | □ □ □ □  | Manners   [&#x2193;](#manners-characteristics)         | □ □ □ □   | □ □ □ □  | Style             | □ □ □ □  |       |            [&#x2193;](#style-knowledge-areas)            |
+|                                  |           |          |                                                        |           |          | Performance       | □ □ □ □  |       |         [&#x2193;](#performance-knowledge-areas)         |
+|                                  |           |          |                                                        |           |          | Etiquette         | □ □ □ □  |       |          [&#x2193;](#etiquette-knowledge-areas)          |
+|                                  |           |          | Personality   [&#x2193;](#personality-characteristics) | □ □ □ □   | □ □ □ □  | Deception         | □ □ □ □  |       |          [&#x2193;](#deception-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Persuasion        | □ □ □ □  |       |         [&#x2193;](#persuasion-knowledge-areas)          |
+|                                  |           |          |                                                        |           |          | Intimidation      | □ □ □ □  |       |        [&#x2193;](#intimidation-knowledge-areas)         |
+|                                  |           |          | Identity    [&#x2193;](#identity-characteristics)      | □ □ □ □   | □ □ □ □  | Bureaucracy       | □ □ □ □  |       |         [&#x2193;](#bureaucracy-knowledge-areas)         |
+|                                  |           |          |                                                        |           |          | Animal Handling   | □ □ □ □  |       |       [&#x2193;](#animal-handling-knowledge-areas)       |
+|                                  |           |          |                                                        |           |          | Leadership        | □ □ □ □  |       |         [&#x2193;](#leadership-knowledge-areas)          |
 
 [&#x2191;](javascript:history.back())
 
-
 ▩ = Skilled - Skilled. Contributes to Total.
 
-☒ = Damaged - Skilled, but Damaged. Does not contribute to Total.
+☒ = Damaged - Skilled, but Damaged. Does not contribute to Total.  Damaged skills can still be used to determine if an object is usable.
 
-▣ = Competent - Experienced, but not skilled. Does not contribute to Total.
+▣ = Competent - Experienced, but not skilled. Does not contribute to Total.  Some objects require formal training to use successfully, competent skills can not be used to determine if an object is usable.
 
 ▢ = Unskilled - You have no Experience and you are not Skilled. Does not contribute to Total.
 
-
-## Start Her
+## Start Herd
 
 The attributes of a character are given as numerical values which can
 change as the game progresses, and characters grow and develop over the
@@ -130,7 +123,7 @@ When you are creating a character you can create a character several ways.
 2. Use the Standard Array: [3,2,2,2,2,1,1,1,1,1,1,1,-1,-1,-1,-2]. You then distribute those numbers to the aspects and characteristics you desire.
 
 3. Use the Narrative Approach
-   1. As a Child you were known to be stronger, smarter, more socially aware, or more spiritually aware.  Assign 3 points Aspect you were strongest in. 
+   1. As a Child you were known to be stronger, smarter, more socially aware, or more spiritually aware.  Assign 3 points Aspect you were strongest in.
    2. Tell me the story about what happened to make you stand out among your peers, was it the overall strength, speed, or balance between those two that made you stand out.  Assign 2 points to the Characteristics that represent that.
    3. As a child you were know to be the least gifted in Fitness, Academics, Mystical arts, or Emotion.  Assign -2 points to the aspect you were weakest in.
    4. Tell me the story about what happened to make you stand out among your peers, was it the lack of strength, speed, or balance between strength and speed that made you stand out.  Assign -1 point to the characteristics that represented that.
@@ -332,7 +325,6 @@ players want to play a character who is conflicted.
 
 You don't find yourself under a familiar roof for much of the year. You may opt for an outdoor lifestyle, or circumstances may compel you to take refuge in unconventional locations or seek shelter in remote areas. Your first test of skill is choosing the right amount of equipment to carry, aiming for a manageable load—an indication of your expertise in the field. The same principle applies to your tactical gear. You must resist the temptation to opt for the most powerful weapons and most protective armor, as such heavy and unwieldy burdens are likely to significantly impede your operational capabilities.
 
-
 ### Pocket Money
 
 You do not have to keep track of accommodation, food, or incidental
@@ -407,7 +399,7 @@ Should you, as a Mechanic, have a comprehensive set of tools? Absolutely, and th
 
 #### Operational Gear
 
-At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own community, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale. 
+At the start of the game, you can equip your character with any weapon your hero is capable of wielding, as well as any shield and armor you choose to carry or wear. If your hero loses or breaks any of these items, they will be automatically replaced the next time you reach a friendly settlement or at another suitable moment in the story. If the settlement isn't from your hero's own community, you might be asked to perform a small favor in return, such as completing a task or sharing a song or tale.
 
 #### Curated Gear
 
@@ -558,111 +550,41 @@ If the result is bad, then the Property suffers some disaster or
 misfortune. If the hero does not take action in the next Season, the
 Property may be destroyed or have its rating increased.
 
-# Bringing the Skills All Together
-
-## An Overview
+## Bringing the Skills All Together
 
 The Märchen Engine is outlined in the following framework that categorizes human abilities and skills into four primary aspects: Fitness, Academic, Mystical, and Emotional. Each primary aspect is further divided into three subcategories, which are then broken down into specific skills. The proficiency level for each Aspect is measured on a scale from -4 to 4 with 0 being human normal.  The proficiency level for each skill is meaused on a scale from 0 to 4 with 0 representing an untrained level and 4 indicating a doctorate-level mastery.
 
 ### Fitness
-This aspect covers physical abilities and is divided into Muscle, Agility, and Stamina. 
+
+This aspect covers physical abilities and is divided into Muscle, Agility, and Stamina.
+
 - **Muscle** focuses on Ranged Combat, Athletics, and Melee Combat, measuring skills in using distance weaponry, physical exertion, and close combat, respectively.
 - **Agility** includes Stealth, Acrobatics, and Sleight of Hand, assessing one's skill in moving quietly, performing complex bodily movements, and manual dexterity.
 - **Stamina** comprises Drive/Ride/Pilot, Ruggedness, and Unarmed Combat, evaluating one's skill in controlling vehicles, physical endurance, and weaponless fighting techniques.
 
 ### Academic
+
 This aspect pertains to intellectual abilities and includes Intellect, Reasoning, and Acuity.
+
 - **Intellect** is divided into Social Sciences, Life Sciences, and Physical Sciences/Survival, measuring understanding of human society, living organisms, and the natural world.
 - **Reasoning** includes Engineering, Insight, and Investigation, assessing skills in building devices, discerning intentions, and finding clues.
 - **Acuity** comprises Traditions, Perception, and Formal Sciences, evaluating understanding of cultural norms, heightened awareness, and mastery over formal systems like logic.
 
 ### Mystical
+
 This aspect deals with spiritual and magical abilities, divided into Skepticism, Faith, and Mystery.
+
 - **Skepticism** includes Ethereal, Gnostic, and Chaos magic, measuring mastery over arcane magic, personal knowledge of the divine, and embracing unpredictability in magical systems.
 - **Faith** is divided into Theurgy, Adept, and Order Magic, assessing traditional Western religious practices, mastery over vital energy, and a disciplined approach to magic.
 - **Mystery** comprises Metaphysics, Animism, and Shamanism, evaluating exploration of psychic phenomena, belief in the spiritual essence of things, and acting as a conduit between physical and metaphysical realms.
 
 ### Emotional
+
 This aspect focuses on emotional intelligence and social skills, divided into Manners, Personality, and Identity.
+
 - **Manners** includes Style, Performance, and Etiquette, measuring skills in aesthetics, captivating an audience, and understanding social customs.
 - **Personality** comprises Deception, Persuasion, and Intimidation, assessing skills in misleading others, influencing through tact, and using threats or force.
 - **Identity** includes Bureaucracy, Animal Handling, and Leadership, evaluating understanding of social structures, skill in handling animals, and the ability to inspire and guide others.
-
-This comprehensive framework provides a nuanced way to evaluate a wide range of human abilities and skills.
-
-## ChatGPT Prompt for the Skills Portion of the Character Sheet.
-
-### Primary Aspects
-1. **Fitness** (-4 - 4, 0 being human normal): Comprises Muscle, Agility, and Stamina. 
-2. **Academic** (-4 - 4, 0 being human normal): Includes Intellect, Reasoning, and Acuity.
-3. **Mystical** (-4 - 4, 0 being human normal): Consists of Skepticism, Faith, and Mystery.
-4. **Emotional** (-4 - 4, 0 being human normal): Encompasses Manners, Personality, and Identity.
-
-#### Fitness
-1. **Muscle** (-4 - 4, 0 being human normal): Divided into Ranged Combat, Athletics, and Melee Combat.
-   - **Ranged Combat**: Skill in using distance weaponry like bows and firearms. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Athletics**: Covers physical exertion and active strength. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Melee Combat**: Measures skill in close combat and melee weapon maintenance. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-  
-2. **Agility** (-4 - 4, 0 being human normal): Includes Stealth, Acrobatics, and Sleight of Hand.
-   - **Stealth**: Skill in moving quietly and evading detection. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Acrobatics**: Mastery over complex bodily movements. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Sleight of Hand**: Art of manual dexterity and trickery. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-3. **Stamina** (-4 - 4, 0 being human normal): Comprises Drive/Ride/Pilot, Ruggedness, and Unarmed Combat.
-   - **Drive/Ride/Pilot**: Skill in controlling various vehicles and riding animals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Ruggedness**: Measures physical endurance and resilience. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Unarmed Combat**: Skill in weaponless fighting techniques. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-#### Academic
-1. **Intellect** (-4 - 4, 0 being human normal): Divided into Social Sciences, Life Sciences, and Physical Sciences/Survival.
-   - **Social Sciences**: Understanding of human society and behavior. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Life Sciences**: Knowledge of living organisms and their environment. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Physical Sciences/Survival**: Understanding natural world and survival skills. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-2. **Reasoning** (-4 - 4, 0 being human normal): Includes Engineering, Insight, and Investigation.
-   - **Engineering**: Skill in building, modifying, and repairing devices. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Insight**: Ability to discern true intentions and emotions of others. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Investigation**: Skill in finding clues and making deductions. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-3. **Acuity** (-4 - 4, 0 being human normal): Comprises Traditions, Perception, and Formal Sciences.
-   - **Traditions**: Understanding of cultural norms and social etiquettes. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Perception**: Heightened awareness and keen senses. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Formal Sciences**: Mastery over formal systems like logic and mathematics. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-#### Mystical
-1. **Skepticism** (-4 - 4): Divided into Ethereal, Gnostic, and Chaos magic.
-   - **Ethereal**: Mastery over invisible threads and arcane magic. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Gnostic**: Personal knowledge of the divine through inner revelation. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Chaos**: Embracing unpredictability and personalizing magical systems. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-2. **Faith** (-4 - 4): Includes Theurgy, Adept, and Order Magic.
-   - **Theurgy**: Traditional Western Religions and Spirituality through divine connection. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Adept**: Mastery over vital energy within the body. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Order**: Scientific, methodical, and disciplined approach to magic. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-3. **Mystery** (-4 - 4): Comprises Metaphysics, Animism, and Shamanism.
-   - **Metaphysics**: Exploration of ESP and psychic phenomena. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Animism**: Belief in the spiritual essence of all things. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Shamanism**: Conduit between physical and metaphysical realms. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-#### Emotional
-1. **Manners** (-4 - 4): Divided into Style, Performance, and Etiquette.
-   - **Style**: Skill in creating cultural artifacts and understanding aesthetics. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Performance**: Ability to captivate an audience through entertainment. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Etiquette**: Mastery over social customs and protocols. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-2. **Personality** (-4 - 4, 0 being human normal): Includes Deception, Persuasion, and Intimidation.
-   - **Deception**: Skill in hiding the truth and misleading others. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Persuasion**: Ability to influence others through tact and social graces. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Intimidation**: Skill in influencing others through threats and force. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-3. **Identity** (-4 - 4, 0 being human normal): Comprises Bureaucracy, Animal Handling, and Leadership.
-   - **Bureaucracy**: Understanding of formalized social structures. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Animal Handling**: Skill in calming and controlling animals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-   - **Leadership**: Ability to inspire and guide others toward common goals. (0=Untrained, 1 = Trained, 2 = Bachelors, 3 = Master, 4 = Doctorate, 5 = World Class, 6+ = Godly, 30 = Infinite)
-
-
 
 ## Fitness Aspects
 
@@ -1369,7 +1291,7 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ## Academic Aspects
 
-### Intellect Characteristic
+### Intellect Characteristics
 
 **Intellect** represents the overall ability of the being to mentally understand the world around them.
 
@@ -2423,7 +2345,6 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 | Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.                                                |
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept. |
 
-
 #### Persuasion Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
@@ -2862,7 +2783,7 @@ Then comes Chaos magic, where skepticism takes a different turn. Rather than see
 
 As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
 
-#### Ethereal Knowledge Areas
+#### Arcane Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2873,15 +2794,15 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 TODO: Fix this
 
-In the realm of Ethereal magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations.
-Incantations and spellcasting become your forte, as your words resonate with the universe, giving you the ability to reshape the world around you.
+In the realm of Arcane magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations.
+Incantations and spellcasting become your f forte, as your words resonate with the universe, giving you the ability to reshape the world around you.
 
 Yet, this path demands precision and control, for the untamed forces you wield can easily turn against you. As you seek to master the Arcane, you must cultivate inner balance and  mindfulness, attuning yourself to the interconnectedness of all things. Through encounters with fellow seekers and experienced mages, you gather wisdom, but the journey remains your
 own to chart.
 
 Ultimately, being an Arcane mage transcends mere power and knowledge. It is a journey of self-discovery and understanding, where you become a beacon of mystic wisdom and a guardian of the sacred secrets that shape existence itself.
 
-##### Ethereal Archetypes
+##### Arcane Archetypes
 
 - **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
 - **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
@@ -2892,9 +2813,9 @@ Ultimately, being an Arcane mage transcends mere power and knowledge. It is a jo
 - **The Time Weaver:** The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.
 - **The Planar Gatekeeper:** The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.
 
-These Ethereal Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
+These Arcane Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
-##### Unique Ethereal Magical Spells
+##### Unique Arcane Magical Spells
 
 - **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
 - **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
@@ -2907,9 +2828,9 @@ These Ethereal Caster archetypes bring a sense of wonder and mystique, as they e
 - **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
 - **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
 
-These Ethereal Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
+These Arcane Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
-| Difficulty        | Ethereal                                                                                                                                       |
+| Difficulty        | Arcane                                                                                                                                         |
 |:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Perform a basic levitation spell on a small object.                                                                                            |
 | Simple            | Cast a protective shield around oneself to deflect minor projectiles.                                                                          |
@@ -3466,7 +3387,6 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | 3  | 28 - 30 |
 | 4  | 31 - 32 |
 
-
 4. Add up all the above numbers and compare them to the following table.  Sometimes an additional table will need to be consulted give the details of the skill or the circumstances (such as determining how long something took, or how much it will cost to repair an item.)
 
 | Final Result | Degree of Effect |
@@ -3486,7 +3406,7 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 
 There are nine separate ways a predicament can be resolved:
 
-##### Fail Catastrophically 
+##### Fail Catastrophically
 
 This is a critical failure. The cost for this sort of failure means the
 outcome the actor was intending failed. Additionally, things have turned
@@ -3596,7 +3516,7 @@ that is completely unrelated to the task being attempted.
 > success will, in addition to everything above, add an additional
 > success to the success pool.
 
-**Extended Degrees of Effect**
+###### Extended Degrees of Effect
 
 | Degree of Effect | Final σ | ± %  | 0 | \\- | \\+ | +0 |
 |-----------------:|:-------:|:----:|:-:|:---:|:---:|:--:|
@@ -3612,13 +3532,24 @@ that is completely unrelated to the task being attempted.
 |    Serendipitous |    4    | 25%  | 0 |  1  |  8  | 7  |
 
 Final σ: Used in Dice Chains
+
 ± %: Used when determining time or cost impacts
+
 0 & +0: Used for ranking results into groups based on a zero based numbering system.  Overtime these will be merged
-+ & -: Used for ranking results into groups based on a non-zero based numbering system  Overtime these will be merged.
 
-## Hallmarks Details 
+\\+ & -: Used for ranking results into groups based on a non-zero based numbering system  Overtime these will be merged.
 
+## Hallmarks Details
 
+### Enviromental Hallmark Details
+
+Environmental hallmarks represent the knacks, insights and ‘survival
+secrets’ handed down by different people over the years, giving heroes
+raised in those cultures an edge.
+
+This represents the natural environment the character grew up in or
+spends their time in. A character who grew up in an urban area that
+never got out of the city may not have an Environmental Hallmark.
 
 #### Rain Forest
 
@@ -3823,7 +3754,7 @@ adaptability. The ebb and flow of the tides have become a metaphor for
 the ever-changing nature of life itself, reminding you of the importance
 of resilience and embracing the unknown.
 
-##### Shore 
+##### Shore
 
 You are from the enchanting world of the ocean surface and the
 shoreline, where the meeting point of air, land and sea becomes your
@@ -4042,20 +3973,7 @@ Surrounded by the deep secrets of the Earth, you have become intimately
 acquainted with the interconnectedness of all living things and the
 awe-inspiring majesty of the planet on which we reside.
 
-### Enviromental Hallmarks
-
-Environmental hallmarks represent the knacks, insights and ‘survival
-secrets’ handed down by different people over the years, giving heroes
-raised in those cultures an edge.
-
-This represents the natural environment the character grew up in or
-spends their time in. A character who grew up in an urban area that
-never got out of the city may not have an Environmental Hallmark.
-
-
-
-
-### Urban Hallmarks
+### Urban Hallmark Details
 
 Urban hallmarks represent the knacks, insights and ‘street secrets’
 handed down by different people over the years, giving heroes raised in
@@ -4237,7 +4155,7 @@ Characters with this Hallmark may not select an Environmental Hallmark,
 and must pick the same cultural Hallmarks as everyone else from this
 same location.
 
-### Occupational Hallmarks
+### Occupational Hallmarks Details
 
 Occupational hallmarks represent the knacks, insights and ‘craft
 secrets’ handed down by different trades over the years, giving heroes
@@ -4248,7 +4166,7 @@ game and note it down. This represents the occupational environment the
 character grew up in or surrounds themselves when they are not
 adventuring.
 
-#### Careers
+#### Careers Details
 
 As a part of their development, characters follow certain life paths
 called careers. The setting you play in will provide a variety of career
@@ -4259,7 +4177,7 @@ mustering out benefits before they enter into play.
 Careers are part of a setting, and the process to place a character into
 a career is determined by the settings rules/
 
-### Recreational Hallmarks
+### Recreational Hallmark Details
 
 Recreational hallmarks represent the knacks, insights and nuanced
 differentiations handed down by enthusiasts over the years, giving
@@ -4269,7 +4187,7 @@ Pick a hobby that is culturally appropriate for the setting of the game
 and note it down. This represents how the character prefers to spend
 their free time relaxing.
 
-### Cultural Hallmarks
+### Cultural Hallmarks Details
 
 Cultural Hallmarks are qualities that describe different aspects of a
 character’s build, temperament, and abilities, which can provide
