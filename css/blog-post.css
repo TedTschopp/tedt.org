@@ -47,6 +47,18 @@
 	font-weight: normal;
 	font-style: normal;
  }
+ @font-face {
+	font-family: 'Fondamento';
+	src: url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+ }
+ @font-face {
+	font-family: 'Fondamento';
+	src: url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: Italic;
+ }
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
