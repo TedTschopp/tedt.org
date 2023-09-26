@@ -429,19 +429,19 @@ You will need to make a roll for your Property during the last Season of each ye
 
 If your roll result is equal to or lower than the Property's rating, your Property will generate enough wealth to maintain your character's Pocket Money level.
 
-However, the Referee has the discretion to interpret a result of 1 or 2, based on the current circumstances, as the Property failing to produce sufficient wealth to cover your living expenses. In such cases, you may need to spend stored Treasure to sustain your Pocket Money.
+However, the Referee has the discretion to interpret a result of 1 or 2, based on the current circumstances, as the Property failing to produce sufficient wealth to cover your living expenses. In such cases, you may need to spend stored Assets to sustain your Pocket Money.
 
-On the other hand, if your roll result exceeds the Property's rating, not only will your character enjoy their appropriate Pocket Money, but if the Property is capable of generating wealth (e.g., an inn or tracts of land), it will earn Treasure equal to the difference between the roll and the rating.
+On the other hand, if your roll result exceeds the Property's rating, not only will your character enjoy their appropriate Pocket Money, but if the Property is capable of generating wealth (e.g., an inn or tracts of land), it will earn Assets equal to the difference between the roll and the rating.
 
-For example, if a player rolls a 9 on a Property rated 6, he earns three Treasure that year.
+For example, if a player rolls a 9 on a Property rated 6, he earns three Assets that year.
 
-If the result is Good, then good fortune strikes the hero! He gains no extra Treasure but prospers in some other way – a sick child recovers, an old feud is settled, the weather is unusually pleasant. The rating for the Property is permanently lowered by 1 (to a minimum of 3)
+If the result is Good, then good fortune strikes the hero! He gains no extra Assets but prospers in some other way – a sick child recovers, an old feud is settled, the weather is unusually pleasant. The rating for the Property is permanently lowered by 1 (to a minimum of 3)
 
 If the result is bad, then the Property suffers some disaster or misfortune. If the hero does not take action in the next Season, the Property may be destroyed or have its rating increased.
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none}Bringing the Skills All Together
 
-The Märchen Engine is outlined in the following framework that categorizes human abilities and skills into four primary aspects: Fitness, Academic, Mystical, and Emotional. Each primary aspect is further divided into three subcategories, which are then broken down into specific skills. The proficiency level for each Aspect is measured on a scale from -4 to 4 with 0 being human normal.  The proficiency level for each skill is meaused on a scale from 0 to 4 with 0 representing an untrained level and 4 indicating a doctorate-level mastery.
+The Märchen Engine is outlined in the following framework that categorizes human abilities and skills into four primary aspects: Fitness, Academic, Mystical, and Emotional. Each primary aspect is further divided into three subcategories, which are then broken down into specific skills. The proficiency level for each Aspect is measured on a scale from -4 to 4 with 0 being human normal.  The proficiency level for each skill is measured on a scale from 0 to 4 with 0 representing an untrained level and 4 indicating a doctorate-level mastery.
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none}Fitness
 
