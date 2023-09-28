@@ -41,6 +41,16 @@
     font-style: normal;
 }
 
+@font-face {
+	font-family: 'DanaLibraryHand-Regular';
+	src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype');
+	/* Library card hand  */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+  font-variant-numeric: oldstyle-nums ordinal;
+}
+
    .DCC 
     {
         font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -141,7 +151,7 @@ a:hover .GammaWorld
 
 
 body {
-  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 	'DanaLibraryHand-Regular', 'Libre Franklin', sans-serif;
   font-weight: 200;
 }
 
