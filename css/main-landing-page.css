@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'CHECKBK0';
+    font-family: 'Checkbook';
     src: url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff2') format('woff2'),
     url('https://tedt.org/RPG/MCC-GW/media/CHECKBK0.woff') format('woff');
     font-weight: normal;
@@ -49,6 +49,7 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
   font-variant-numeric: oldstyle-nums ordinal;
+  font-feature-settings: "ss01" 1;
 }
 
    .DCC 
@@ -151,7 +152,7 @@ a:hover .GammaWorld
 
 
 body {
-  font-family: 	'DanaLibraryHand-Regular', 'Libre Franklin', sans-serif;
+  font-family: 	'Libre Franklin', sans-serif;
   font-weight: 200;
 }
 

@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fondamento:ital@0;1&family=Fredericka+the+Great&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'Checkbook';
+    src: url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/CHECKBK0.woff') format('woff'),
+    url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/CHECKBK0.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DanaLibraryHand-Regular';
+    src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype');
+    /* Library card hand  */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    font-variant-numeric: oldstyle-nums ordinal;
+    font-feature-settings: "ss01" 1;
+}
+               
+
+@font-face {
+    font-family: 'Duvall';
+    src: url('https://www.tedt.org/fonts/DuvallSmallCaps.eot');
+    src: url('https://www.tedt.org/fonts/DuvallSmallCaps.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/DuvallSmallCaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Fondamento';
+    src: url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fondamento';
+    src: url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: Italic;
+}
+
+@font-face {
+    font-family: 'GameEmpire';
+    src: url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.eot');
+    src: url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IrwinAllen';
+    src: url('https://www.tedt.org/fonts/IrwinAllen.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/IrwinAllen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lp1_regular';
+    src: url('https://www.tedt.org/fonts/lp1-regular-webfont.eot');
+    src: url('https://www.tedt.org/fonts/lp1-regular-webfont.woff') format('woff'),
+    url('https://www.tedt.org/fonts/lp1-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lowwe';
+    src: url('https://www.tedt.org/fonts/lowwe.woff2') format('woff2'),
+    url('https://www.tedt.org/fonts/lowwe.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
