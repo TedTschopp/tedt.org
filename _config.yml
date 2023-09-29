@@ -1,9 +1,47 @@
 siteurl: https://tedt.org
 #baseurl: https://tedt.org/
 
+#description of the site for meta tags
 description: "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution."
 
 keywords: "technology, theology, creativity, religion, digital age, UI/UX, collaboration tools, storytelling"
+
+
+# First Name / Given Name / Common Name
+givenname: Ted
+
+#Family Name
+familyname: Tschopp
+
+#Other Names
+othernames: >
+  Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
+
+#Biography 
+biography:
+  - I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.
+  - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.
+  - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+
+# The Logo of the site
+logo: https://tedt.org/img/Site-Logo.png
+title_image: https://tedt.org/img/Site-Logo.png
+title-image-alt: 'Logo for Ted Tschopp'
+# The title tag of the site
+title: Ted Tschopp
+
+# Site's name
+name: Ted Tschopp's Homepage
+
+#Locality
+locality: Los Angeles
+region: California
+country: United States of America
+
+# Verification Keys
+pinterest_domain_verify: 98d8bdfab96a340e5a4f03f7a4303f0e
+google_custom_search: 003027838407468454148:ddtovg0fltc
+facebook_app_id: 1939132006351436
 
 # Build Settings
 sass:
@@ -90,22 +128,6 @@ author:
 
 
 
-# First Name / Given Name / Common Name
-givenname: Ted
-
-#Family Name
-familyname: Tschopp
-
-#Other Names
-othernames: >
-  Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
-
-#Biography 
-biography:
-  - I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.
-  - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.
-  - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
-
 
 # Verison
 version: 1.5.0
@@ -150,30 +172,6 @@ yammer:
 gravatar: 
 rabbitmq: 
 # google_username: TedTschopp
-
-# The Logo of the site
-logo: https://tedt.org/img/Site-Logo.png
-title_image: https://tedt.org/img/Site-Logo.png
-title-image-alt: 'Logo for Ted Tschopp'
-# The title tag of the site
-title: Ted Tschopp
-
-#description of the site for meta tags
-description: Discover who Ted Tschopp is.  My homepage has links to all the other things I have around the internet.
-
-# Site's name
-name: Ted Tschopp's Homepage
-
-#Locality
-locality: Los Angeles
-region: California
-country: United States of America
-
-# Verification Keys
-pinterest_domain_verify: 98d8bdfab96a340e5a4f03f7a4303f0e
-google_custom_search: 003027838407468454148:ddtovg0fltc
-facebook_app_id: 1939132006351436
-
 
 
 # SOCIAL MEDIA
