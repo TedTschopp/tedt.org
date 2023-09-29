@@ -274,8 +274,7 @@ links:
 
   # GOODREADS
   - Name: Goodreads
-    URL: https://threads.net
-    Username: '@TedTschopp'
+    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
     Icon-Class: fab fa-goodreads
     Color: '#e9e5cd'
     Text_Color: '#553b08'
