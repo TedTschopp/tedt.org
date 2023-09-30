@@ -6,7 +6,7 @@ author:
   url: https://tedt.org/
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-description: Welcome to the ***Märchen Engine System Reference Document***, which outlines the core rules used by this Gaming System. This Introduction provides you with an overview of what the Märchen Engine is and how it works, while the later chapters show you how to create characters and  embark on your own exciting adventures.
+description: Welcome to the Märchen Engine, which outlines the core rules used by this Gaming System. This Introduction provides you with an overview of what the Märchen Engine is and how it works, while the later chapters show you how to create characters and  embark on your own exciting adventures.
 
 layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
@@ -67,12 +67,11 @@ mathjax: false
 
 # [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Introduction
 
-Welcome to the ***Märchen Engine System Reference Document***, your guide to the core rules of this Open Gaming System. This introduction gives you a snapshot of what the Märchen Engine entails and how it functions. As you delve into the subsequent chapters, you'll learn how to craft characters and set out on thrilling adventures of your own.
+Welcome to the ***Märchen Engine***, your guide to the core rules of this Gaming System. This introduction gives you a snapshot of what the Märchen Engine entails and how it functions. As you delve into the subsequent chapters, you'll learn how to craft characters and set out on thrilling adventures of your own.
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}What Is Roleplaying?
 
-If you are new to roleplaying, you might be asking yourself, “What is a
-roleplaying game?”
+If you are new to roleplaying, you might be asking yourself, “What is a roleplaying game?”
 
 In a roleplaying game (RPG) or table top role playing game (TTRPG), you step into the shoes of a character in a fictional world. You're responsible for bringing this character to life, either through actual role-playing or through a series of structured decisions and character growth. The outcomes of your actions are determined by a set of formal rules and guidelines, like those found in the Märchen Engine.
 
