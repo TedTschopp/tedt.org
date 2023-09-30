@@ -79,7 +79,7 @@ When you play in a session of Märchen Engine, the game unfolds through conversa
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}What Is the Märchen Engine?
 
-The Märchen Engine serves as your guidebook for navigating games rooted in classic fiction and adventure tales. Within its pages, you'll discover guidelines for crafting characters, tackling challenges, combating creatures, engaging in epic battles, constructing worlds, dabbling in speculative trading, venturing into unexplored realms, and much more. While no rulebook can cover every scenario, the Märchen Engine aims to equip you with enough tools to craft nearly any adventure you can imagine.
+The Märchen Engine serves as your guidebook for navigating games rooted in classic fiction and adventure tales. Within its pages, you'll discover guidelines for crafting characters, tackling challenges, combating creatures, dabbling in speculative trading, venturing into unexplored realms, and much more. While no rulebook can cover every scenario, the Märchen Engine aims to equip you with enough tools to craft nearly any adventure you can imagine.
 
 Drawing inspiration from the early days of roleplaying and classic fiction, the Märchen Engine shares many similarities with those vintage gaming systems. You'll find that materials from older rule sets and those generated under the Märchen Engine can easily mesh together, requiring only minimal adjustments.
 
@@ -275,14 +275,11 @@ As you progress through your adventures, you'll find that your character forms b
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Companion
 
-Someone who is currently not played by another human who has joined you
-on an adventure. Companions are controlled by the Referee. A spouse or a
-family member is a good example of a companion that most Heros will
-have.
+A Companion is a character who joins you on your adventures but is not controlled by another human player. Instead, the Referee takes on the role of managing these Companions. Family members or spouses are common examples of Companions that many heroes are likely to have in their lives. These characters can add depth to your story and potentially play crucial roles in your adventures.
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Allies
 
-A Companion is a character who joins you on your adventures but is not controlled by another human player. Instead, the Referee takes on the role of managing these Companions. Family members or spouses are common examples of Companions that many heroes are likely to have in their lives. These characters can add depth to your story and potentially play crucial roles in your adventures.
+Allies are are individuals that you, as the Hero, know and have had friendly dealings with in the past. They possess valuable skills, positions, or assets and are willing to assist you, and will go out of their way to offer their support.
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Contacts
 
