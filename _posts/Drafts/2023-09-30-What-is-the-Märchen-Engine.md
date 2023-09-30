@@ -10,7 +10,7 @@ description: Welcome to the Märchen Engine, which outlines the core rules used 
 
 layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
-permalink: /2023/07/22/What-is-the-Märchen-Engine/
+permalink: /2023/09/30/What-is-the-Märchen-Engine/
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-title: FAME - Fitness, Academics, Mystical, Emotional
 image-credits-artist: Ted Tschopp
