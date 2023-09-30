@@ -26,7 +26,7 @@ draft-status: integration
 mathjax: false
 
 ---
-- [INTRODUCTION](#introduction)
+- [Introduction](#introduction)
   - [What Is Roleplaying?](#what-is-roleplaying)
   - [What Is the Märchen Engine?](#what-is-the-märchen-engine)
   - [Iconography](#iconography)
@@ -107,13 +107,17 @@ To get started, you'll need a few essentials: a copy of the Märchen Engine rule
 
 🌅 - Daily.  This is a picture of the sunrise
 
-⌚ - Watch of 4 hours.  A Wa
+⌚ - Watch of 4 hours. 
 
-⏳ - This symbol signifies an hour.
+⏳ - This symbol signifies an hour. 
 
-⏱ - A moment is 90 seconds or (¹/₄₀) of an hour.
+🔔 - This is 30 minutes
 
-⚡ – The lightening bolt symbol stands for a Once, a Round, or a Combat round. Each of these is 7.5 seconds long, historically defined as a twelfth (¹/₁₂) of a moment. You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This was the measure used to account for the time it roughly takes for an eye to twinkle—hence the phrase, "In the twinkling of an eye."
+⏱ - A moment is 90 seconds or (¹/₄₀) of an hour.  In general this is the time most people consider to be Now or in the moment.
+
+⚡ – The lightening bolt symbol stands for a Once, a Round, or a Combat round. Each of these is 7.5 seconds long, historically defined as a twelfth (¹/₁₂) of a moment.   When in high stress situations this 
+
+👁️ - You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This was the measure used to account for the time it roughly takes for an eye to twinkle—hence the phrase, "In the twinkling of an eye."  
 
 ### Skill Symbols
 
