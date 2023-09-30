@@ -79,25 +79,43 @@ When you play in a session of Märchen Engine, the game unfolds through conversa
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}What Is the Märchen Engine?
 
-The Märchen Engine serves as your guidebook for navigating games rooted in classic fiction and adventure tales. Within its pages, you'll discover guidelines for crafting characters, tackling challenges, combating creatures, engaging in epic battles, constructing worlds, dabbling in speculative trading, venturing into unexplored realms, and much more. While no rulebook can cover every scenario, the Märchen Engine aims to equip you with enough tools to craft nearly any science fiction adventure you can imagine.
+The Märchen Engine serves as your guidebook for navigating games rooted in classic fiction and adventure tales. Within its pages, you'll discover guidelines for crafting characters, tackling challenges, combating creatures, engaging in epic battles, constructing worlds, dabbling in speculative trading, venturing into unexplored realms, and much more. While no rulebook can cover every scenario, the Märchen Engine aims to equip you with enough tools to craft nearly any adventure you can imagine.
 
 Drawing inspiration from the early days of roleplaying and classic fiction, the Märchen Engine shares many similarities with those vintage gaming systems. You'll find that materials from older rule sets and those generated under the Märchen Engine can easily mesh together, requiring only minimal adjustments.
 
-To dive into the game, you'll need a copy of the Märchen Engine rules, a set of dice—which you can find at any game or hobby store (two dice are the bare minimum, but having more is advantageous)—and a pencil and paper.
+To get started, you'll need a few essentials: a copy of the Märchen Engine rules, a set of dice—available at any game or hobby store (at a minimum, you'll need four eight-sided dice)—and some pencil and paper for note-taking, map-drawing, and sketching. Above all, bring your imagination and a willingness to share your creative ideas with others. That's the most important ingredient for a memorable gaming experience.
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Iconography
 
 ⚅ - Dice Modifier - When you see this symbol, it's telling you how to adjust your dice roll. For instance, ⚅-3 means you'll subtract three from whatever you roll for that particular situation. On the flip side, ⚅+2 means you'll add two to your roll. Don't be fooled by the six-sided die image; it's just a general indicator for a dice roll and doesn't specify the type of die you should use.
 
+### Dice Symbols
+
 σ – The lower-case Sigma symbol signals that you've rolled the dice and are now categorizing the outcome. Your result will fall within a range from -4 to +4.
 
 ± % – This symbol, plus or minus a percentage, comes into play after you've rolled the dice. You'll categorize the result, which will be a percentage ranging from 400% down to 25%. Often, this modifies the time duration or profit of a transaction, depending on the skills you used to resolve the situation.
 
-⏱ – The stopwatch symbol stands for a Once, a Round, or a Combat round. Each of these is 7.5 seconds long, historically defined as a twelfth (¹/₁₂) of a moment. A moment was 90 seconds or (¹/₄₀) of an hour. You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This is roughly the time it takes for an eye to twinkle—hence the phrase, "In the twinkling of an eye."
+### Time Symbols
+
+🌍 - Annually.  Occurs or takes a year.
+
+🌱 - Seasonly.  Occurs or takes a season.
 
 🗓️ - When you see this monthly calendar symbol, it represents a month.
 
+🔄 - Weekly.
+
+🌅 - Daily.  This is a picture of the sunrise
+
+⌚ - Watch of 4 hours.  A Wa
+
 ⏳ - This symbol signifies an hour.
+
+⏱ - A moment is 90 seconds or (¹/₄₀) of an hour.
+
+⚡ – The lightening bolt symbol stands for a Once, a Round, or a Combat round. Each of these is 7.5 seconds long, historically defined as a twelfth (¹/₁₂) of a moment. You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This was the measure used to account for the time it roughly takes for an eye to twinkle—hence the phrase, "In the twinkling of an eye."
+
+### Skill Symbols
 
 ▩ = Skilled - Skilled. Contributes to Total.
 
