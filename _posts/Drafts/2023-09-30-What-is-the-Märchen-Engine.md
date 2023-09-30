@@ -30,6 +30,9 @@ mathjax: false
   - [What Is Roleplaying?](#what-is-roleplaying)
   - [What Is the Märchen Engine?](#what-is-the-märchen-engine)
   - [Iconography](#iconography)
+    - [Dice Symbols](#dice-symbols)
+    - [Time Symbols](#time-symbols)
+    - [Skill Symbols](#skill-symbols)
   - [The Basic Assumptions](#the-basic-assumptions)
     - [Have Fun](#have-fun)
       - [Fun for Players](#fun-for-players)
@@ -63,6 +66,7 @@ mathjax: false
         - [Mercenaries](#mercenaries)
         - [Retainers](#retainers)
         - [Specialists](#specialists)
+
 
 
 # [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Introduction
