@@ -97,27 +97,27 @@ To get started, you'll need a few essentials: a copy of the Märchen Engine rule
 
 ### Time Symbols
 
-🌍 - Annually.  Occurs or takes a year.
+🌍 - Annually. For you, this means something occurring or taking a year. 
 
-🌱 - Seasonly.  Occurs or takes a season.
+🌱 - Seasonal. You experience events or activities that last a season. 
 
-🗓️ - When you see this monthly calendar symbol, it represents a month.
+🌙 - Monthly / One Moon. In your life, things happen on a monthly basis or in sync with the lunar cycle, from full moon to full moon. 
 
-🔄 - Weekly.
+🔄 - Weekly. You find that some tasks or events occur every week. This is traditionally equivalent to a quarter of a month.
 
-🌅 - Daily.  This is a picture of the sunrise
+☀️ - Daily. In your culture, the day may start at sundown or sunrise. Regardless, some activities take a day to complete or occur daily.
 
-⌚ - Watch of 4 hours. 
+⌚ - Watch of 4 hours. In your professional environments, like your work in enterprise architecture, the Watch is used to allocate work among teams. Some tasks may take a watch to finish, or they occur within each watch.
 
-⏳ - This symbol signifies an hour. 
+⏳ - This symbol represents an hour for you. Different cultures divided the day differently, but for you, the Märchen Engine uses Hours to measure time. Some tasks will take an hour, and some events happen hourly.
 
-🔔 - This is 30 minutes
+🔔 - This symbolizes 30 minutes. In various contexts, such as military or city life, bells ring on the hour and half-hour, helping communities coordinate tasks. This is part of your time measurement.
 
-⏱ - A moment is 90 seconds or (¹/₄₀) of an hour.  In general this is the time most people consider to be Now or in the moment.
+⏱ - A moment, which is 90 seconds or (¹/₄₀) of an hour, represents "now" or being in the moment for you and most people in general.
 
-⚡ – The lightening bolt symbol stands for a Once, a Round, or a Combat round. Each of these is 7.5 seconds long, historically defined as a twelfth (¹/₁₂) of a moment.   When in high stress situations this 
+⚡ - The lightning bolt symbolizes a Once, a Round, or a Combat round, each lasting 7.5 seconds, historically defined as a twelfth (¹/₁₂) of a moment. This is as fast as people can conceive things happening in your world.
 
-👁️ - You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This was the measure used to account for the time it roughly takes for an eye to twinkle—hence the phrase, "In the twinkling of an eye."  
+👁️ - You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This measurement accounts for the time it takes for an eye to twinkle, hence the phrase "In the twinkling of an eye." Some events can interrupt Once actions, and they all occur in Atom time, with no specific order but guided by what's most awesome for the overall story, as decided by the Referee.
 
 ### Skill Symbols
 
