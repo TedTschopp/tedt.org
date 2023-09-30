@@ -107,15 +107,15 @@ To get started, you'll need a few essentials: a copy of the Märchen Engine rule
 
 ☀️ - Daily. In your culture, the day may start at sundown or sunrise. Regardless, some activities take a day to complete or occur daily.
 
-⌚ - Watch of 4 hours. In your professional environments, like your work in enterprise architecture, the Watch is used to allocate work among teams. Some tasks may take a watch to finish, or they occur within each watch.
+⌚ - Watch of 4 hours. In your professional environments, the Watch is used to allocate work among teams. Some tasks may take a watch to finish, or they occur within each watch.
 
-⏳ - This symbol represents an hour for you. Different cultures divided the day differently, but for you, the Märchen Engine uses Hours to measure time. Some tasks will take an hour, and some events happen hourly.
+⏳ - This symbol represents an hour. Some tasks will take an hour, and some events happen hourly.
 
-🔔 - This symbolizes 30 minutes. In various contexts, such as military or city life, bells ring on the hour and half-hour, helping communities coordinate tasks. This is part of your time measurement.
+🔔 - This symbolizes 30 minutes. In various contexts, such as military or city life, bells ring on the hour and half-hour, helping communities coordinate tasks. 
 
 ⏱ - A moment, which is 90 seconds or (¹/₄₀) of an hour, represents "now" or being in the moment for you and most people in general.
 
-⚡ - The lightning bolt symbolizes a Once, a Round, or a Combat round, each lasting 7.5 seconds, historically defined as a twelfth (¹/₁₂) of a moment. This is as fast as people can conceive things happening in your world.
+⚡ - The lightning bolt symbolizes a Once, a Round, or a Combat round, each lasting 7.5 seconds, historically defined as a twelfth (¹/₁₂) of a moment. This is as fast as people can conceive things happening.
 
 👁️ - You can even break down Onces into "Atoms of time," which are (¹/₄₇) of a Once. This measurement accounts for the time it takes for an eye to twinkle, hence the phrase "In the twinkling of an eye." Some events can interrupt Once actions, and they all occur in Atom time, with no specific order but guided by what's most awesome for the overall story, as decided by the Referee.
 
