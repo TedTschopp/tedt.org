@@ -156,12 +156,12 @@ A more detailed example:
    */
   const reactEmoji = {
     "in-reply-to": "💬",
-    "like-of": "❤️",
+    "like-of": "👍",
     "repost-of": "🔄",
     "bookmark-of": "⭐️",
-    "mention-of": "💬",
+    "mention-of": "🗣️",
     "rsvp": "📅",
-    "follow-of": "🐜"
+    "follow-of": "👣"
   };
 
   /**
@@ -176,8 +176,8 @@ A more detailed example:
    */
   const rsvpEmoji = {
     "yes": "✅",
-    "no": "❌",
-    "interested": "💡",
+    "no": "❎",
+    "interested": "🤔",
     "maybe": "💭"
   };
 
@@ -242,13 +242,13 @@ A more detailed example:
       <a
         class="reaction"
         rel="nofollow ugc"
-        title="${who} ${response}"
+        title=" "
         href="${r[mentionSource]}"
-      >
-        ${authorPhoto}
+      ><li>
         ${(reactEmoji[r['wm-property']] || '💥')}
+        ${authorPhoto} - ${who}: ${response}
         ${rsvp}
-      </a>
+      </li></a>
     `;
   }
 
