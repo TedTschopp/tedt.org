@@ -2,7 +2,7 @@
 quote: I am willing to serve my country, but my worship I reserve for that which is far greater than my country.
 author: Rabindranath Tagore
 source: The Home and the World
-profileID: '0'
+
 tags: ''
 date: 11-28-2020 20:39:30
 id: 21005

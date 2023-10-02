@@ -13,7 +13,7 @@ quote: Think of the company as an organism. Inside this organism there are entit
   to take away your core business.
 author: Horace Dediu
 source: Corporate Antibodies
-profileID: '4'
+
 tags: ''
 date: 10-30-2014 09:22:46
 id: 21024

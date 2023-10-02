@@ -11,8 +11,8 @@ layout: post
 
 description: "An insightful examination of free will, personal choice, fasting, and spiritual reflection, connecting these concepts with religion and personal responsibility."
 keywords: "free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom of the Will, spirituality, self-control, ethics, morality"
-picture-description: "An image of a fork in the road, symbolizing the choices we make in life, with a subtle overlay of a fasting plate or spiritual symbols to represent the connection between choice and faith."
-call_to_action: "Feel free to share your thoughts on free will and the choices we make every day. How do you exercise your freedom? Join the conversation in the comments below!"
+image-description: "An image of a fork in the road, symbolizing the choices we make in life, with a subtle overlay of a fasting plate or spiritual symbols to represent the connection between choice and faith."
+call-to-action: "Feel free to share your thoughts on free will and the choices we make every day. How do you exercise your freedom? Join the conversation in the comments below!"
 
 
 guid: 5be2c380-c65b-4ca6-957d-7626f2e41a98

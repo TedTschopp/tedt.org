@@ -2,7 +2,7 @@
 quote: " The General loses his stars and the block-men die\nIn unstrategic defiance of martial law\nBecause still used to just being men, not block-parts."
 author: Stephen Vincent Benet
 source: John Brown's Body
-profileID: '5'
+
 tags: Blocks,Management,Strategy,War
 date: 09-03-2014 14:16:59
 id: 21075

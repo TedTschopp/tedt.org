@@ -14,7 +14,7 @@ description: |
    What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   Join the author on a surprising trip to Disneyland where a rainy day turned into a powerful and emotional Christmas experience. From joyful rides to a candlelight procession, this account captures the spirit of Advent in a way that is both profound and unexpected.
 excerpt: |
    What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   
-seo_description: |
+SEO-description: |
    What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   
 
 guid: 898e542e-db14-4355-ba6d-cddb4ac5b148

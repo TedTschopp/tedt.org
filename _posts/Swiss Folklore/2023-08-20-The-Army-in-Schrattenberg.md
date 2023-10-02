@@ -30,18 +30,20 @@ categories:
   - Folklore
 
 
-location: Escholzmatt, Switzerland
-longitude: 46.8911
-latitude: 7.9783
-year: 1830
 
 Location:
-  - Place Names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
-  - Longitude and Latitude: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
-Year:
-  - Year Mentioned: 1830, with a prediction of an event 45 years in the future.
+  Place Names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
+  On-Map: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
 
-Monster or Magical or Religious Ideas:
+
+year-the-event-took-lace:  1830, with a prediction of an event 45 years in the future.
+
+Coordinates: 
+   Longitude: 46.8911
+   Latitude: 7.9783
+
+
+Monster-or-Magical-or-Religious-Ideas:
   - A hidden underground world filled with warriors and treasures.
   - Supernatural beings with time prediction.
   - Magical properties, including disappearing entrances and magical doors.

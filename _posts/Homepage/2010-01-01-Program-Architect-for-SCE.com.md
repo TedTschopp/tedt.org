@@ -12,7 +12,7 @@ description: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.   
 excerpt: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.   
-seo_description: |
+SEO-description: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.  
 
 bullets:

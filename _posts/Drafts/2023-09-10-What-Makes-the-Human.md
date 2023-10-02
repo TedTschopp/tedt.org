@@ -14,7 +14,7 @@ layout: post
 guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/07/22/What-Makes-a-Human/
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
-image-author-url: https://www.tedt.org/
+image-author-URL: https://www.tedt.org/
 image-author: Ted Tschopp using Midjourney
 image-alt: An artist carving a statue of a man out of a giant mountain
 

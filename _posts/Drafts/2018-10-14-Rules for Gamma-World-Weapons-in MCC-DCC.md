@@ -13,7 +13,7 @@ description: |
 excerpt: |
    The following is a conversion of rules for Gamma World's Traditional weapons in Mutant Crawl Classic.  
 
-seo_description: |
+SEO-description: |
    The following is a conversion of rules for Gamma World's Traditional weapons in Mutant Crawl Classic.  
 
 

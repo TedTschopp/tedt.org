@@ -2,7 +2,7 @@
 quote: "The people who hanged Christ never, to do them justice, accused Him of being a bore — on the contrary; they thought Him too dynamic to be safe"
 author: Dorthy Sayers
 source: ' '
-profileID: '0'
+
 tags: ''
 date: 05-01-2015 16:09:22
 id: 21020

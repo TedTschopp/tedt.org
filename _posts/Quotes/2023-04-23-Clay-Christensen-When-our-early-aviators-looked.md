@@ -3,7 +3,7 @@ quote: 'When our early aviators looked at the world’s “best practice” flie
   saw two things almost all these had in common: wings and feathers.'
 author: Clay Christensen
 source: How To Measure Your Life
-profileID: '5'
+
 tags: Best practices,Bird,Feathers,Flight,Theory
 date: 04-07-2015 10:52:37
 id: 21021

@@ -2,7 +2,7 @@
 quote: 'A householder instructs his servants and family in this manner: Deal uprightly and honestly, be diligent in that which I command you, and ye may then eat, drink, and clothe yourselves as ye please.'
 author: Martin Luther
 source: Table Talk DCCII
-profileID: '0'
+
 tags: ''
 date: 10-10-2014 14:49:10
 id: 21032

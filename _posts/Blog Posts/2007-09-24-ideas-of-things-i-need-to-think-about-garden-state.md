@@ -11,12 +11,12 @@ layout: post
 
 description: "This thought-provoking article delves into the biblical descriptions of the Garden of Eden and questions its boundaries. It explores the limitless nature of the garden, its extension possibilities, and contemplates profound spiritual questions about growth, dominion, and the future."
 keywords: "Garden of Eden, theology, spiritual growth, limitless, tree of life, tree of knowledge, Bible, creation, cosmos, mankind's role"
-picture-description: "An image depicting the lush Garden of Eden with the tree of life at its center, surrounded by flowing rivers, and extending infinitely towards the horizon, symbolizing the limitless nature of the garden."
-call_to_action: "What are your thoughts on the boundless nature of the Garden of Eden? How do you perceive its extension and growth in relation to mankind's purpose? Share your insights and join the conversation in the comments below. Let's explore these profound questions together."
+image-description: "An image depicting the lush Garden of Eden with the tree of life at its center, surrounded by flowing rivers, and extending infinitely towards the horizon, symbolizing the limitless nature of the garden."
+call-to-action: "What are your thoughts on the boundless nature of the Garden of Eden? How do you perceive its extension and growth in relation to mankind's purpose? Share your insights and join the conversation in the comments below. Let's explore these profound questions together."
 
 
 image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
-image-credits-url: https://www.tedt.org/
+image-credits-URL: https://www.tedt.org/
 image-credits-title: The Limitless Garden
 image-credits-artist: Ted Tschopp and Midjourney
 

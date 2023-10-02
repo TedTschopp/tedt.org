@@ -2,7 +2,7 @@
 quote: The mills of the gods grind slowly, but they grind small.
 author: Sextus Empiricus
 source: ' '
-profileID: '0'
+
 tags: Government,Justice,Slow
 date: 10-08-2018 07:44:08
 id: 21007

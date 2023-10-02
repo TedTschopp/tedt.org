@@ -14,7 +14,7 @@ description: |
 excerpt: |
   As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
 
-seo_description: |
+SEO-description: |
   As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
 
 bullets:

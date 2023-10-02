@@ -12,7 +12,7 @@ layout: post
 
 description: "This article delves into the concept of universal standards for intelligence, wisdom, beauty, and manners, comparing them to a measurable external standard. It further emphasizes the intrinsic value of individuals irrespective of their adherence to these standards, and ties into broader themes of history, religion, and politics."
 keywords:  Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value, Religion, Politics
-picture-description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
+image-description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
 
 
 

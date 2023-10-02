@@ -13,11 +13,12 @@ description: "A Swiss German folk tale about a mysterious dog that appears in Be
 keywords: "Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer"
 
 location: "Betten, Rebstein and Marbach, Switzerland"
-longitude: "9.5615"
-latitude: "47.3667"
-year: "1903"
-Monster_or_magical_or_religious_idea: "Mysterious Dog"
-Tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
+coordinates:
+   longitude: "9.5615"
+   latitude: "47.3667"
+year-the-event-took-lace: "1903"
+monster-or-magical-or-religious-idea: "Mysterious Dog"
+tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
 
 
 

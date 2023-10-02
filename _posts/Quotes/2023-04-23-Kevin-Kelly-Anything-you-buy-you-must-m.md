@@ -2,7 +2,7 @@
 quote: "• You will be newbie forever. Get good at the beginner mode: learning new programs, asking dumb questions, making stupid mistakes, soliciting help."
 author: Kevin Kelly
 source: '68 Bits of Unsolicited Advice'
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:30:06
 id: 21059

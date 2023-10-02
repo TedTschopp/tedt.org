@@ -2,7 +2,7 @@
 quote: Because we don't know when we will die, we get to think of life as an inexhaustible well.
 author: Paul Bowles
 source: The Sheltering Sky
-profileID: '5'
+
 tags: ''
 date: 03-07-2021 20:13:43
 id: 21003

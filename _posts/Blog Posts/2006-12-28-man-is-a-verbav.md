@@ -11,7 +11,7 @@ layout: post
 
 description: "The article explores the idea of man as a 'word-eater,' delving into the love of reading and the power of words. It invites readers to ponder their own words, stories, customs, and symbols that define them, and to consider core questions about their identity and place in the world."
 keywords: "Word-Eater, Reading, Books, Storytelling, Identity, Symbols, Customs, Language, Self-Reflection, Personal Growth, Communication"
-picture-description: "An image of a person engrossed in reading a large book, with symbolic icons and words floating around them. The symbols represent different facets of the individual's identity, customs, and stories. The backdrop might contain a world map, clock, or other visuals to reflect the core questions posed in the article."
+image-description: "An image of a person engrossed in reading a large book, with symbolic icons and words floating around them. The symbols represent different facets of the individual's identity, customs, and stories. The backdrop might contain a world map, clock, or other visuals to reflect the core questions posed in the article."
 
 
 

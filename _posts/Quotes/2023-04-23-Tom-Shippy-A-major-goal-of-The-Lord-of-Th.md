@@ -2,7 +2,7 @@
 quote: A major goal of The Lord of The Rings was to dramatise that 'theory of courage'
 author: Tom Shippy
 source: The Road to Middle-Earth
-profileID: '4'
+
 tags: ''
 date: 04-06-2017 22:01:47
 id: 21013

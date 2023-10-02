@@ -2,7 +2,7 @@
 quote: Common sense tells us that the world is flat
 author: Stuart Chase
 source: The Proper Study Of Mankind
-profileID: '5'
+
 tags: Common sense,Wisdom
 date: 01-08-2015 05:50:53
 id: 21023

@@ -3,7 +3,7 @@ quote: “ Design is the fundamental soul of a man-made creation that ends up ex
 author: Steve Jobs
 source: 'January 24, 2000 interview with Fortune Magazine'
 source-url: https://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:27:47
 id: 21063

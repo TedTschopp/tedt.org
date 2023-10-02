@@ -2,7 +2,7 @@
 quote: The whole earth is the tomb of heroic men
 author: Pericles
 source: 'History of the Peloponnesian War'
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:19:11
 id: 21073

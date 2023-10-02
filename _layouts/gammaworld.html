@@ -9,12 +9,12 @@
 
 
      {% if page.description != "" %}
-        {% assign SEO_description = page.description %}
+        {% assign SEO-description = page.description %}
      {% else %}
           {% if page.new_description != "" %}
-               {% assign SEO_description = page.new_description %}
+               {% assign SEO-description = page.new_description %}
           {% else %}
-               {% assign SEO_description = "A creature from the Gamma World Bestiary - Description pending data entry " %}
+               {% assign SEO-description = "A creature from the Gamma World Bestiary - Description pending data entry " %}
           {% endif %}
      {% endif %}
 

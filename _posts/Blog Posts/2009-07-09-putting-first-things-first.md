@@ -11,8 +11,8 @@ layout: post
 
 description: "This article examines the three fundamental roles in any conversation: starters, participants, and observers. Drawing parallels between social gatherings and website engagement, it explores how these roles dynamically change and offers insights into creating a platform that encourages all types of engagement, from starting conversations to lurking."
 keywords: "conversations, conversation starters, participants, observers, website engagement, digital community, blog, comments, listeners, social dynamics"
-picture-description: "An illustration of the three types of people: Conversation Starters initiating dialogue, Participants actively engaging, and Observers silently listening. These images symbolize the dynamic roles that individuals play at social events and within online communities."
-call_to_action: "Are you a conversation starter, participant, or observer? Share your insights or experiences in the comments below. Let’s continue the conversation and learn how we can better engage with each other online!"
+image-description: "An illustration of the three types of people: Conversation Starters initiating dialogue, Participants actively engaging, and Observers silently listening. These images symbolize the dynamic roles that individuals play at social events and within online communities."
+call-to-action: "Are you a conversation starter, participant, or observer? Share your insights or experiences in the comments below. Let’s continue the conversation and learn how we can better engage with each other online!"
 
 
 

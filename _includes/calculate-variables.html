@@ -9,15 +9,15 @@
 <!-- Calculate the pages description if one isn't present -->
 {% if page.description == null or page.description == empty %}
   {% if page.excerpt != "" %}
-      {% assign SEO_description = page.excerpt | strip_html %}
+      {% assign SEO-description = page.excerpt | strip_html %}
   {% else %}
-      {% assign SEO_description = stripped-content | truncatewords: 50, "" %}
+      {% assign SEO-description = stripped-content | truncatewords: 50, "" %}
   {% endif %}
 {% else %}
-    {% assign SEO_description = page.description %}
+    {% assign SEO-description = page.description %}
 {% endif %}
 
-{% assign SEO_description = SEO_description | strip_newlines %}
+{% assign SEO-description = SEO-description | strip_newlines %}
 
 <!-- Category work -->
 {% assign categories = page.categories %}

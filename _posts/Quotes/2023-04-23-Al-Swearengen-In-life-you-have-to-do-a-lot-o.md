@@ -2,7 +2,7 @@
 quote: Many times, that's what the fuck life is...
 author: Al Swearengen
 source: Deadwood 2004
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:25:31
 id: 21066

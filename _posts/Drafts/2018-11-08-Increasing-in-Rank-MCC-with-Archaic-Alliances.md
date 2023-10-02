@@ -12,7 +12,7 @@ description: |
 excerpt: |
    The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
 
-seo_description: |
+SEO-description: |
    The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
 
 

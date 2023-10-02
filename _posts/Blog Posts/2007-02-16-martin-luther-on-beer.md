@@ -13,7 +13,7 @@ layout: post
 
 description: "This article explores various quotes and letters of Martin Luther concerning beer, sobriety, and the Christian perspective on drinking. From humorous anecdotes to serious reflections on moderation, the text provides a unique insight into the thoughts of one of Christianity's most prominent figures."
 keywords: "Martin Luther, beer, moderation, Christianity, theology, history, soberness, gluttony, drunkenness, quotations, Lutheran tradition"
-picture-description: "An image of a vintage beer mug juxtaposed with an old parchment containing Martin Luther's handwriting, symbolizing the historical connection between theological reflections and beer in Luther's time."
+image-description: "An image of a vintage beer mug juxtaposed with an old parchment containing Martin Luther's handwriting, symbolizing the historical connection between theological reflections and beer in Luther's time."
 
 
 guid: 8676f676-eb73-4d6b-977a-b5423ef31059

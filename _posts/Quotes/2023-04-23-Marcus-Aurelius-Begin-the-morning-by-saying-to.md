@@ -12,7 +12,7 @@ quote: Begin the morning by saying to yourself, I shall meet with the busy-body,
   one another to be vexed and to turn away.
 author: Marcus Aurelius
 source: The First
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:16:04
 id: 21076

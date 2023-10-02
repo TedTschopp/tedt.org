@@ -2,7 +2,7 @@
 quote: It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. 
 author: Theodore Roosevelt
 source: Citizenship In A Republic
-profileID: '0'
+
 tags: ''
 date: 09-17-2014 06:42:29
 id: 21053

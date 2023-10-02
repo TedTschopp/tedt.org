@@ -12,7 +12,7 @@ layout: post
 
 description: "This article offers an in-depth comparison of the book and movie adaptation of 'Children of Men.' From themes like Sex, Family, Love, Hope, and Religion to the significant changes in characters and plot, the piece provides an honest reflection on both works of art. It concludes with a poignant reference to Psalm 90, which inspired the title."
 keywords: "Children of Men, Book vs Movie, Comparison, Themes, Sex, Family, Love, Hope, Religion, Politics, Justice, Freedom, Analysis, Psalm 90, Literary Analysis"
-picture-description: "An image that juxtaposes the cover of 'Children of Men' book with a still from the movie. In the background, faded symbols or icons may represent the themes discussed in the article, such as love, hope, religion, family, politics, justice, and freedom."
+image-description: "An image that juxtaposes the cover of 'Children of Men' book with a still from the movie. In the background, faded symbols or icons may represent the themes discussed in the article, such as love, hope, religion, family, politics, justice, and freedom."
 
 
 

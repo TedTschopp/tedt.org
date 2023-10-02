@@ -11,8 +11,8 @@ layout: post
 
 description: "This article reveals the four categories of people in conversations and explores strategies to transform clueless individuals into engaged consumers, commenters, and creators. By breaking down barriers and using the right tools, readers are guided to build a dynamic environment where content is shared, commented on, and created, fostering a truly engaging community."
 keywords: "engagement, conversations, clueless, consumers, commenters, creators, content, tools, barriers, community building, invitation, party analogy"
-picture-description: "An illustrative diagram showing the transformation from 'Clueless' to 'Consumers', 'Commenters', and 'Creators'. This visual metaphor represents the journey of individuals through different engagement levels, emphasizing the importance of content, tools, and openness in the conversation process."
-call_to_action: "Ready to turn your audience from clueless to creators? Share your thoughts or ask questions in the comments below. Let's build engaging conversations together!"
+image-description: "An illustrative diagram showing the transformation from 'Clueless' to 'Consumers', 'Commenters', and 'Creators'. This visual metaphor represents the journey of individuals through different engagement levels, emphasizing the importance of content, tools, and openness in the conversation process."
+call-to-action: "Ready to turn your audience from clueless to creators? Share your thoughts or ask questions in the comments below. Let's build engaging conversations together!"
 
 
 

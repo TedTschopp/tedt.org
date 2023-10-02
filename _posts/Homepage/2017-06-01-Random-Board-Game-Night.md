@@ -12,7 +12,7 @@ description: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour. 
 excerpt: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour.
-seo_description: |
+SEO-description: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
 bullets:

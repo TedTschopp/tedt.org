@@ -3,7 +3,7 @@ quote: I will tell you how to become rich. Close the doors. Be fearful when othe
 author: Warren Buffett
 source: Chairman's Letter to Shareholders, 1986
 source-url: https://www.berkshirehathaway.com/letters/1986.html
-profileID: '0'
+
 tags: ''
 date: 10-10-2014 14:48:49
 id: 21033

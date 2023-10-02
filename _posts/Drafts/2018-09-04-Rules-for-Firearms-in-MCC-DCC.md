@@ -13,7 +13,7 @@ description: |
 excerpt: |
    The following rules are what I have collected from around the internet for the use of firearms in MCC & DCC.  I will be playtesting these by converting a Gamma World module to MCC. 
 
-seo_description: |
+SEO-description: |
    The following rules are what I have collected from around the internet for the use of firearms in MCC & DCC.  I will be playtesting these by converting a Gamma World module to MCC. 
 
 layout: post

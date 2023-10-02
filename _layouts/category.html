@@ -100,15 +100,15 @@
                     <!-- Calculate the pages description if one isn't present -->
                     {% if page.description == null or page.description == empty %}
                       {% if page.excerpt != "" %}
-                          {% assign SEO_description = page.excerpt | strip_html %}
+                          {% assign SEO-description = page.excerpt | strip_html %}
                       {% else %}
-                          {% assign SEO_description = stripped-content %}
+                          {% assign SEO-description = stripped-content %}
                       {% endif %}
                     {% else %}
-                        {% assign SEO_description = page.description %}
+                        {% assign SEO-description = page.description %}
                     {% endif %}
 
-                    <p>{{ SEO_description }}</p>
+                    <p>{{ SEO-description }}</p>
 
                     <style>
                         /* The link is a Dave Winer Link */

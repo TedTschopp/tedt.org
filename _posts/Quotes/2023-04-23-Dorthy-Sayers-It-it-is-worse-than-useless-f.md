@@ -2,7 +2,7 @@
 quote: It it is worse than useless for Christians to talk about the importance of Christian morality
 author: Dorthy Sayers
 source: Creed Of Chaos
-profileID: '0'
+
 tags: ''
 date: 10-10-2014 14:46:34
 id: 21038

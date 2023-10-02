@@ -12,7 +12,7 @@ description: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
 excerpt: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
-seo_description: |
+SEO-description: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
 
 bullets:

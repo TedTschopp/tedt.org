@@ -12,7 +12,7 @@ description: |
   I am responsible for the end-to-end management of the Product Engineering and Build processes, and I maintain governance control over all these processes. As an advisor, I contribute to the improvement of Product Engineering and Build processes. Additionally, I provide advice to teams engaged in these processes on how they can enhance their outcomes, drawing on best practices from other enterprise efforts.
 excerpt: |
   I am responsible for the end-to-end management of the Product Engineering and Build processes, and I maintain governance control over all these processes. As an advisor, I contribute to the improvement of Product Engineering and Build processes. Additionally, I provide advice to teams engaged in these processes on how they can enhance their outcomes, drawing on best practices from other enterprise efforts.   
-seo_description: |
+SEO-description: |
   I am responsible for the end-to-end management of the Product Engineering and Build processes, and I maintain governance control over all these processes. As an advisor, I contribute to the improvement of Product Engineering and Build processes. Additionally, I provide advice to teams engaged in these processes on how they can enhance their outcomes, drawing on best practices from other enterprise efforts.
 
 bullets:

@@ -2,7 +2,7 @@
 quote: "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen..."
 author: Charlie Brooker and Konnie Huq
 source: Black Mirror - Fifteen Million Merits
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:31:52
 id: 21058

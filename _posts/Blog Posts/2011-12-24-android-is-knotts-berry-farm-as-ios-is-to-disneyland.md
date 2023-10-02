@@ -12,7 +12,7 @@ layout: post
 
 description: "This article explores the parallels between theme parks like Knott's Berry Farm and tech giants Apple and Android. It highlights the experiences, attention to details, and innovation that define both worlds, and opens a dialogue on what it takes to be a game-changer in both the theme park industry and the world of mobile technology."
 keywords: "Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, experience design, mobile operating systems, technology comparison, innovation, user experience, Ghost Rider, Six Flags, Walt Disney, Steve Jobs"
-call_to_action: "Explore the intriguing connection between theme parks and mobile operating systems, and join the conversation on what defines innovation and excellence in both fields. Share your thoughts and opinions with us!"
+call-to-action: "Explore the intriguing connection between theme parks and mobile operating systems, and join the conversation on what defines innovation and excellence in both fields. Share your thoughts and opinions with us!"
 
 
 

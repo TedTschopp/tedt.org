@@ -22,8 +22,8 @@ layout: null
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
-            {% if post.seo_description %}
-            "summary": {{ post.seo_description | jsonify }},
+            {% if post.SEO-description %}
+            "summary": {{ post.SEO-description | jsonify }},
             {% elsif post.excerpt %}
             "summary": {{ post.excerpt | jsonify }},
             {% endif %}

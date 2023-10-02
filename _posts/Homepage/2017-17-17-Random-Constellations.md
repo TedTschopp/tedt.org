@@ -12,7 +12,7 @@ description: |
    An application I threw together to output a bunch of Procedurally generated star constellations. 
 excerpt: |
    An application I threw together to output a bunch of Procedurally generated star constellations. 
-seo_description: |
+SEO-description: |
    An application I threw together to output a bunch of Procedurally generated star constellations. 
 
 

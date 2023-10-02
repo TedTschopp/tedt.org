@@ -52,12 +52,16 @@ tags:
   - Rural Life
   - Cultural Heritage
 
-Location: Mellikon, Zurzach District, Aargau, Switzerland
+
+Location:
+  Place Names: Mellikon, Zurzach District, Aargau, Switzerland
+  On-Map: Mellikon (47.6070° N, 8.2884° E)
+
 Coordinates:
   Latitude: 47.6070
   Longitude: 8.2884
-Year: Early Modern Period (15th-18th century)
-MagicalIdeas: Haunting of granary, banishment of spirit
+year-the-event-took-lace: Early Modern Period (15th-18th century)
+Monster-or-Magical-or-Religious-Ideas: Haunting of granary, banishment of spirit
 
 
 ---

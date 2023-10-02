@@ -2,7 +2,7 @@
 quote: "Anyone who sees a hurricane coming should warn others."
 author: Edward Castronova
 source: 'Exodus to the Virtual World'
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:38:22
 id: 21056

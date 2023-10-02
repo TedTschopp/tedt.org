@@ -2,7 +2,7 @@
 quote: Architecture is the unnecessary design elements of a structure that make it livable and sustainable.
 author: Oscar Tschopp
 source: 'Conversations with Oscar Tschopp, 2014'
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:23:28
 id: 21069

@@ -31,7 +31,7 @@
 	    <meta name="abstract"    content="{{ site.name }}">
 	{% else %}
 	    <!-- Search Engine and Browser Meta Tags. -->
-	    <meta name="description" content="{{ SEO_description }}"> 
+	    <meta name="description" content="{{ SEO-description }}"> 
 	    <meta name="abstract"    content="{{ site.name }}"> 
   {% endif %}
 
@@ -66,7 +66,7 @@
 	    <meta property="fb:app_id"           content="{{facebook_app_id}}" />
 	    <meta property="og:site_name"        content="{{ site.name }}">
 	    <meta property="og:title"            content="{{ page.title }} - {{ site.name }}">
-	    <meta property="og:description"      content="{{ SEO_description }}">  
+	    <meta property="og:description"      content="{{ SEO-description }}">  
 	    <meta property="og:type"             content="article">  
 	    <meta property="og:url"              content="{{ site.siteurl }}/{{ page.url }}"> 
 	    <meta property="og:locale"           content="en_US">    
@@ -89,7 +89,7 @@
 
 	    <meta name="twitter:url"             content="{{ site.siteurl }}{{ page.url }}">
 	    <meta name="twitter:title"           content="{{ page.title }} - {{ site.title }}">
-	    <meta name="twitter:description"     content="{{ SEO_description }}">
+	    <meta name="twitter:description"     content="{{ SEO-description }}">
 
 	    {% if page.image %}
 	        <meta property="twitter:image"            content="{{ site.siteurl }}{{ page.image }}">

@@ -11,8 +11,8 @@ layout: post
 
 description: "An analytical look into Nassim Nicholas Taleb's 'The Black Swan,' focusing on the narrative fallacy and how it is intrinsically linked to the way religions, including Christianity, communicate their ideas. The article explores the implications of accepting narratives and questions the balance between intellectual weakness and spiritual significance."
 keywords: "Nassim Nicholas Taleb, Black Swan, narrative fallacy, inductive reasoning, religion, Christianity, Ludic fallacy, Statistical regress fallacy, philosophy, intellect, belief"
-picture-description: "An image of the book cover of 'The Black Swan' by Nassim Nicholas Taleb, juxtaposed with symbols representing various fallacies and religious icons like the cross. The composition captures the essence of the book's examination of reasoning, unpredictability, and religious narrative."
-call_to_action: "What are your thoughts on the narrative fallacy and its connection to religious communication? Do you see it as a weakness or a profound tool? Share your reflections and insights in the comments below. Engage with others in this intellectual exploration of belief, reasoning, and the human condition."
+image-description: "An image of the book cover of 'The Black Swan' by Nassim Nicholas Taleb, juxtaposed with symbols representing various fallacies and religious icons like the cross. The composition captures the essence of the book's examination of reasoning, unpredictability, and religious narrative."
+call-to-action: "What are your thoughts on the narrative fallacy and its connection to religious communication? Do you see it as a weakness or a profound tool? Share your reflections and insights in the comments below. Engage with others in this intellectual exploration of belief, reasoning, and the human condition."
 
 
 

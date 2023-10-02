@@ -7,7 +7,7 @@ description: "An in-depth analysis of Google's potential development of a web-ba
 
 keywords: "Google, Internet OS, Web Applications, .NET, Browser-based OS, Future of Internet, Online Games, Mail Integration, Social Network, Search"
 
-picture-description: "An illustrative diagram depicting Google's envisioned web-based operating system, highlighting various integrated components such as Mail, Blog, Social Network, and Pictures. The interconnected nature of these services symbolizes a unified and easily accessible platform for the future of web applications."
+image-description: "An illustrative diagram depicting Google's envisioned web-based operating system, highlighting various integrated components such as Mail, Blog, Social Network, and Pictures. The interconnected nature of these services symbolizes a unified and easily accessible platform for the future of web applications."
 
 
 

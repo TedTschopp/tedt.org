@@ -2,7 +2,7 @@
 quote: "Out of the night that covers me"
 author: William Ernest Henley
 source: Invictus
-profileID: '0'
+
 tags: Masculinity
 date: 03-12-2018 13:07:39
 id: 21011

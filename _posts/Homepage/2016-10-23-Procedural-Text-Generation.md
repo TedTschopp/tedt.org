@@ -12,7 +12,7 @@ description: |
    An application that generates text using procedural methods. 
 excerpt: |
   An application that generates text using procedural methods.
-seo_description: |
+SEO-description: |
    An application that generates text using procedural methods.
 
 bullets:

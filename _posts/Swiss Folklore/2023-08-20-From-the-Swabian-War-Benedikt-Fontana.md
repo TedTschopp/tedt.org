@@ -50,9 +50,15 @@ tags:
   - Tirol
  
 
-Location: Various locations in Switzerland, including the city of Constance
-Longitude and Latitude: 47.6592° N, 9.1753° E (Constance)
-Year: End of the fifteenth century
+Location:
+  Place Names: Various locations in Switzerland, including the city of Constance
+  On-Map: Constance (47.6592° N, 9.1753° E)
+
+
+Coordinates: 
+  Longitude: 47.6592
+  Latitude: 9.1753
+year-the-event-took-lace: End of the fifteenth century
 
 ---
 

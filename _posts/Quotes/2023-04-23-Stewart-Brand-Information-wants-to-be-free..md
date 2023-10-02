@@ -2,7 +2,7 @@
 quote: Information wants to be free. Information also wants to be expensive.
 author: Stewart Brand
 source: '1984 at the first Hackers’ Conference - Printed in May 1985 Whole Earth Review'
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:23:59
 id: 21068

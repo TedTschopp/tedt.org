@@ -12,7 +12,7 @@ title: "Exploring Web Services, Computing Theory, and the Future of Technology"
 subtitle: "A Comprehensive Insight into the Next Generation of Online Integration"
 description: "An in-depth article providing an understanding of web services, computing theory, and a look at the future. Geared towards those in the enterprise and web development sectors, this article explains web services from a practical standpoint and explores future opportunities in dividing them into data, calculation, and display services."
 keywords: "web services, enterprise architecture, computing theory, data services, calculation services, display services, technology convergence, security, quality assurance, web development"
-picture-description: "An image illustrating the interconnectivity between computers through web services. It can depict servers communicating through a web interface, symbolizing the various aspects of data services, calculation services, and display services."
+image-description: "An image illustrating the interconnectivity between computers through web services. It can depict servers communicating through a web interface, symbolizing the various aspects of data services, calculation services, and display services."
 
 
 guid: 5076e5bd-f37b-46d6-8381-3b53326a886c

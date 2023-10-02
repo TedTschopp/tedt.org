@@ -2,7 +2,7 @@
 quote: Let others complain that the times are wicked. I complain that they are paltry; for they are without passion.
 author: Søren Kierkegaard
 source: The Present Age
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:26:10
 id: 21065

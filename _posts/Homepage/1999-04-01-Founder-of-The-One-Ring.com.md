@@ -12,7 +12,7 @@ description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.  
 excerpt: |
   Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.
-seo_description: |
+SEO-description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.
 
 bullets:

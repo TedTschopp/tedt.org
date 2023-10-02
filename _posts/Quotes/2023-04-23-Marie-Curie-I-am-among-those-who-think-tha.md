@@ -4,7 +4,7 @@ quote: 'I am among those who think that science has great beauty. A scientist in
   which impress him like a fairy tale.'
 author: Marie Curie
 source: ' '
-profileID: '0'
+
 tags: ''
 date: 10-10-2014 14:41:38
 id: 21048

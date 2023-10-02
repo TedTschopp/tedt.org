@@ -7,7 +7,7 @@ Such stuffs as all new times are made of.\
 So, Cowards, what are you afraid of?"
 author: Ray Bradbury
 source: Ode to the Quick Computer
-profileID: '0'
+
 tags: ''
 date: 09-03-2014 14:42:44
 id: 21055

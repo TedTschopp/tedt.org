@@ -19,8 +19,8 @@ excerpt: |
 layout: post
 guid: dd7cf62d-9947-46e7-b436-7aafb10027e6
 permalink: /2018/05/11/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-I/
-image: 	/wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
-image-author-url: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
+image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
+image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
 image-author: Gervase of Ebstorf
 image-title: Ebstorf Map
 

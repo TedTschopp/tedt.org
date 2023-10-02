@@ -2,7 +2,7 @@
 quote: "Life is short, and art long, opportunity fleeting, experience perilous, and decision difficult."
 author: Hippocrates
 source: Aphorisms
-profileID: '0'
+
 tags: ''
 date: 06-21-2015 12:04:51
 id: 21019

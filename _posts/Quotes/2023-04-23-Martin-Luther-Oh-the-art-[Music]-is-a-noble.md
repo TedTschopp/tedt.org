@@ -2,7 +2,7 @@
 quote: Oh, the art [Music] is a noble commodity. One shouldn’t use it for pay, for purse or coffer.
 author: Martin Luther
 source: ' '
-profileID: '0'
+
 tags: ''
 date: 10-10-2014 14:44:02
 id: 21043
