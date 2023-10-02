@@ -14,7 +14,7 @@ description: |
 excerpt: |
   As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
 
-SEO-description: |
+seo-description: |
   As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
 
 bullets:
@@ -22,9 +22,6 @@ bullets:
   - Authored white papers providing in-depth problem analysis and tradeoff discussions, and ensured overall product, platform, and project technical quality.
   - Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.
 
-
-
-guid: 24ccc6a5-f9e8-4278-a610-cd6aabec11d9
 image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v2.jpg
 image-credits: Ted Tschopp and Midjourney
 image-credits-title: Ted Tschopp as Senior Enterprise Architect in the Aesthetic of Leonardo Da Vinci

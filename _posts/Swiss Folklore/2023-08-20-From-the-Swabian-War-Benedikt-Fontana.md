@@ -1,5 +1,4 @@
 ---
-id: 1242893
 title: From the Swabian War - Benedikt Fontana
 date: 2023-08-20 16:22:38
 author:
@@ -15,7 +14,6 @@ keywords: "Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom
 
 layout: post
 
-guid: 86a609c9-0b8e-4079-92be-07d9d778d0cb
 permalink: /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
 
 image: /img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.jpg
@@ -50,14 +48,14 @@ tags:
   - Tirol
  
 
-Location:
-  Place Names: Various locations in Switzerland, including the city of Constance
-  On-Map: Constance (47.6592° N, 9.1753° E)
+location:
+  place-names: Various locations in Switzerland, including the city of Constance
+  on-map: Constance (47.6592° N, 9.1753° E)
 
 
-Coordinates: 
-  Longitude: 47.6592
-  Latitude: 9.1753
+coordinates: 
+  longitude: 47.6592
+  latitude: 9.1753
 year-the-event-took-lace: End of the fifteenth century
 
 ---

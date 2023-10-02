@@ -6,7 +6,6 @@ source-url: https://hbr.org/2015/01/what-makes-a-great-leader
 
 tags: ''
 date: 10-10-2014 14:42:48
-id: 21046
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

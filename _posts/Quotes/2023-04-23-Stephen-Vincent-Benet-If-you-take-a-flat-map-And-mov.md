@@ -5,7 +5,6 @@ source: John Brown's Body
 
 tags: Blocks,Management,Strategy,War
 date: 09-03-2014 14:16:59
-id: 21075
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -5,7 +5,6 @@ source: I Am Not Afraid of Robots. I Am afraid Of People.
 
 tags: ''
 date: 06-21-2015 12:16:59
-id: 21018
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

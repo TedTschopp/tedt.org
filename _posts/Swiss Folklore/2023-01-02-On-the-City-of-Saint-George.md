@@ -1,5 +1,4 @@
 ---
-id: 124289
 title: On the Mountain of Saint George
 date: 2023-01-02T09:26:36-08:00
 author:
@@ -13,7 +12,6 @@ description: On the Mountain of Saint George, discover a rich tapestry of legend
 
 layout: post
 
-guid: 4569431d-6cc4-411f-8935-0a8697074352
 permalink: /2023/01/02/2023-01-02-On-the-Mountain-of-Saint-George/
 image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae of Matthaeus Merian.

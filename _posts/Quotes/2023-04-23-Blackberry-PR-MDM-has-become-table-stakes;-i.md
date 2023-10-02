@@ -5,7 +5,6 @@ source: 'Press Release'
 
 tags: ''
 date: 09-03-2014 14:29:08
-id: 21060
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -5,7 +5,6 @@ source: Herman Boerhaave
 
 tags: ''
 date: 10-10-2014 14:50:09
-id: 21030
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

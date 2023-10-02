@@ -5,7 +5,6 @@ source: Table Talk DCCII
 
 tags: ''
 date: 10-10-2014 14:49:10
-id: 21032
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

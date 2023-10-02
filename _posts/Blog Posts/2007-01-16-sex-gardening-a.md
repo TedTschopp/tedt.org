@@ -1,5 +1,4 @@
 ---
-id: 95
 title: "Sex, Gardening, and Science: Reflections on Humanity, Family, and Theology"
 subtitle: "A Theological Exploration of Sexuality, Science, Relationships, and the Nature of Evil in the Light of Genesis"
 date: 2007-01-16T11:10:00+00:00
@@ -15,7 +14,6 @@ image-description: "An image combining the book cover of 'Children of Men,' a de
 
 
 
-guid: 2bc2eebf-bfbe-45d6-9bbd-b642cc596694
 permalink: /2007/01/16/sex_gardening_a/
 categories:
   - Religion

@@ -5,7 +5,6 @@ source: Invictus
 
 tags: Masculinity
 date: 03-12-2018 13:07:39
-id: 21011
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

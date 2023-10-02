@@ -9,7 +9,6 @@ author:
 description: Welcome to the Märchen Engine, which outlines the core rules used by this Gaming System. This Introduction provides you with an overview of what the Märchen Engine is and how it works, while the later chapters show you how to create characters and  embark on your own exciting adventures.
 
 layout: post
-guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/09/30/What-is-the-Märchen-Engine/
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-title: FAME - Fitness, Academics, Mystical, Emotional

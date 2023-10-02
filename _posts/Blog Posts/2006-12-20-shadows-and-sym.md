@@ -1,5 +1,4 @@
 ---
-id: 112
 title: "From Shadows to Light: A Journey Through Fantasy Literature"
 subtitle: "Exploring the Love of Fantasy, Romanticism, and the Quest for Meaning"
 date: 2006-12-20T11:32:34+00:00
@@ -16,7 +15,6 @@ image-description: "An image of an open book, with intricate shadows cast from s
 
 
 
-guid: 9b6eda43-2311-4038-afa0-4106bc4ab8c5
 permalink: /2006/12/20/From-Shadows-to-Light/
 categories:
  - Books

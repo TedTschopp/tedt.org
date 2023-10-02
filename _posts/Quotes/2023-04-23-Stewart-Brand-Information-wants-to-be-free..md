@@ -5,7 +5,6 @@ source: '1984 at the first Hackers’ Conference - Printed in May 1985 Whole Ear
 
 tags: ''
 date: 09-03-2014 14:23:59
-id: 21068
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

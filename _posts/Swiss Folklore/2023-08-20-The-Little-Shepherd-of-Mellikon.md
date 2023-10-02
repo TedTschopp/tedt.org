@@ -1,5 +1,4 @@
 ---
-id: 12428934
 title: The Little Shepherd of Mellikon
 date: 2023-08-20 16:54:49
 author:
@@ -15,7 +14,6 @@ keywords: "Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Ca
 
 layout: post
 
-guid: 71656df5-81a0-47ab-91b4-3736c10b277d
 permalink: /2023/08/20/2023-08-20-The-Little-Shepherd-of-Mellikon/
 
 image: /img/Swiss/A_ghost_of_a_young_Shepherd_emerges.jpg
@@ -53,15 +51,15 @@ tags:
   - Cultural Heritage
 
 
-Location:
-  Place Names: Mellikon, Zurzach District, Aargau, Switzerland
-  On-Map: Mellikon (47.6070° N, 8.2884° E)
+location:
+  place-names: Mellikon, Zurzach District, Aargau, Switzerland
+  on-map: Mellikon (47.6070° N, 8.2884° E)
 
-Coordinates:
-  Latitude: 47.6070
-  Longitude: 8.2884
+coordinates:
+  latitude: 47.6070
+  longitude: 8.2884
 year-the-event-took-lace: Early Modern Period (15th-18th century)
-Monster-or-Magical-or-Religious-Ideas: Haunting of granary, banishment of spirit
+monster-or-magical-or-religious-ideas: Haunting of granary, banishment of spirit
 
 
 ---

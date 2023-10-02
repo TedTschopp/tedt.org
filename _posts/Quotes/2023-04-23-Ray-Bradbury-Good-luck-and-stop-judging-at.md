@@ -5,7 +5,6 @@ source: June 10, 1974 Letter to Brian Sibley
 
 tags: ''
 date: 09-03-2014 14:22:53
-id: 21070
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

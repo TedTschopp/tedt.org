@@ -5,7 +5,6 @@ source: Ratatouille
 
 tags: ''
 date: 09-17-2014 06:51:27
-id: 21052
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

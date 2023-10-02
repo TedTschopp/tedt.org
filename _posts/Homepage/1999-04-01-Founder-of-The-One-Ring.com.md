@@ -12,7 +12,7 @@ description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.  
 excerpt: |
   Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.
-SEO-description: |
+seo-description: |
    Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.
 
 bullets:
@@ -20,7 +20,6 @@ bullets:
   - Interviewed and featured in Wired Magazine September 2001 Issue
   - Ranked as a top 10,000 website by Alexa
 
-guid: 781155aa-86f7-41cb-81a7-cfd36934cb90
 image: /img/home/tolkienonline.jpg
 image-credits: Countdown to the Lord of the Rings by Ted Tschopp http://www.theonering.com  
 image-credits-title: Countdown to the Lord of the Rings

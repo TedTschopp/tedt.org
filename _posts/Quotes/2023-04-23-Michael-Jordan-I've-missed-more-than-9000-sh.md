@@ -5,7 +5,6 @@ source: 'Air Jordan Commercial'
 
 tags: ''
 date: 10-10-2014 14:42:15
-id: 21047
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

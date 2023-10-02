@@ -5,7 +5,6 @@ source: De Profundis
 
 tags: Confession,Guilt
 date: 01-24-2022 21:36:00
-id: 21000
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

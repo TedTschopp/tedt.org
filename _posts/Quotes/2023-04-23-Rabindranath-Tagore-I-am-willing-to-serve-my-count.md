@@ -5,7 +5,6 @@ source: The Home and the World
 
 tags: ''
 date: 11-28-2020 20:39:30
-id: 21005
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

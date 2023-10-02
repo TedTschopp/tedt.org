@@ -1,12 +1,11 @@
 ---
-id: 12428937
-Title: The Weatherman in Pörtlialp
+title: The Weatherman in Pörtlialp
 author:
   name: Ted Tschopp
   url: https://tedt.org
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-Date: 2023-09-23 15:04:59
+date: 2023-09-23 15:04:59
 
 excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
 
@@ -14,22 +13,19 @@ description: "A Swiss German folk tale about a mysterious ghostly weatherman who
 
 keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"
 
-Location: 
-  Place Names: Pörtlialp, Uri, Switzerland
-  On-Map: Betten (46.7758° N, 8.5942° E)
+location: 
+  place-names: Pörtlialp, Uri, Switzerland
+  on-map: Betten (46.7758° N, 8.5942° E)
 
-Coordinates:
-   Longitude: "8.5942"
-   Latitude: "46.7758"
-Year: "1926"
-Monster-or-Magical-or-Religious-Ideas: "Mysterious Weatherman"
+coordinates:
+   longitude: "8.5942"
+   latitude: "46.7758"
+year: "1926"
+monster-or-magical-or-religious-ideas: "Mysterious Weatherman"
 tags: ["Legend", "Mystery", "Weather", "Swiss Culture"]
-
-
 
 layout: post
 
-guid: 71656df5-81a0-47ab-91b4-3736c10b277d
 permalink: /2023/09/23/Weatherman-in-Pörtlialp/
 
 image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png

@@ -5,7 +5,6 @@ source: Creed Of Chaos
 
 tags: ''
 date: 10-10-2014 14:46:34
-id: 21038
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

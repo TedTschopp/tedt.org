@@ -1,5 +1,4 @@
 ---
-id: 479
 title: 93-year-old blogger - It Bothers Me That I Have To Go
 date: 2007-01-26T02:33:32+00:00
 author:
@@ -8,7 +7,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-guid: 07db18f9-a62c-4daf-b93b-f1e7a4868aa2
 permalink: /2007/01/26/93-year-old-blogger-it-bothers-me-that-i-have-to-go/
 categories:
   - Computers

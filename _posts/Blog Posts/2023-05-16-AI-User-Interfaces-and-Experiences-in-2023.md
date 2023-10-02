@@ -1,5 +1,4 @@
 ---
-id: 124282
 title: AI User Interfaces and Experiences in 2023
 date: 2023-05-16T08:28:17-08:00 
 author:
@@ -13,7 +12,6 @@ description: An in-depth analysis of Google's response to the AI competition and
 
 layout: post
 
-guid: b0eacef2-1bd1-42a0-b430-1268f40df432
 permalink: /2023/05/16/AI-User-Interfaces-and-Experiences-in-2023/
 image: /media/printing-press-hannes-wolf-unsplash.jpg
 image-alt: Photo by Hannes Wolf on Unsplash

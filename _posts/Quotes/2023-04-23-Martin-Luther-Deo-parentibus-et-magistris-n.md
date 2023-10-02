@@ -5,7 +5,6 @@ source: Explanation Of the 4th Commandment
 
 tags: ''
 date: 10-10-2014 14:43:34
-id: 21044
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

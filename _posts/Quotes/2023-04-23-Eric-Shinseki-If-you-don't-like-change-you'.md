@@ -6,7 +6,6 @@ source-url: https://www.nytimes.com/2009/11/11/us/politics/11vets.html
 
 tags: ''
 date: 10-10-2014 14:41:04
-id: 21049
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

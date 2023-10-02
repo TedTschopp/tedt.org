@@ -11,7 +11,6 @@ description: This draft on TTRPG Characters delves into the complex and multi-fa
 excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions.
 
 layout: post
-guid: a4582203-c19a-401b-91ff-1ef3906e46a0
 permalink: /2023/07/22/What-Makes-a-Human/
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-author-URL: https://www.tedt.org/

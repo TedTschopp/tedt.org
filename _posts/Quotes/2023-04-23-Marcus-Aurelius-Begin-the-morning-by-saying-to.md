@@ -15,7 +15,6 @@ source: The First
 
 tags: ''
 date: 09-03-2014 14:16:04
-id: 21076
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

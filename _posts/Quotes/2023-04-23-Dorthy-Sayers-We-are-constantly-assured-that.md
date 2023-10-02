@@ -5,7 +5,6 @@ source: ' '
 
 tags: ''
 date: 05-01-2015 16:09:22
-id: 21020
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -1,5 +1,4 @@
 ---
-id: 1338
 title: "Motorola's Project Ara: The Future of Modular Smartphones or a Doomed Venture?"
 subtitle: "An Exploration of the Commodification of Smartphone Components and Why it May Fail"
 date: 2013-11-22T12:47:26+00:00
@@ -17,7 +16,6 @@ keywords: "Motorola, Project Ara, modular smartphones, commodification, device c
 
 layout: post
 
-guid: 8f2896e6-5f4b-41db-86b2-a0fd90897a59
 permalink: /2013/11/22/the-component-smart-phone-and-why-it-will-fail/
 image: /wp-content/uploads/2013/11/modules-283e329ee51bbee11f4765c3501e7d1b.jpg
 categories:

@@ -13,12 +13,11 @@ description: |
 excerpt: |
    The following is a conversion of rules for Gamma World's Traditional weapons in Mutant Crawl Classic.  
 
-SEO-description: |
+seo-description: |
    The following is a conversion of rules for Gamma World's Traditional weapons in Mutant Crawl Classic.  
 
 
 layout: post
-guid: 6b244c94-6395-4b8a-afb8-4c37f8dbf309
 permalink: /2018/10/14/Gamma-World-Weapons-in-MCC-DCC/
 image:  /img/2018-10-14/seth-justus-huntersalienguns.jpg
 image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25

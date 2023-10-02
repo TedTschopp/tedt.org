@@ -1,5 +1,4 @@
 ---
-id: 470
 title: "The Complexity of Managing 212 RSS Feeds: A Blogger's Challenge"
 subtitle: "Navigating the Maze of Information: Tools, Workflows, and Overload"
 date: 2007-06-07T18:53:36+00:00
@@ -14,8 +13,6 @@ description: "The author shares their experience with managing 212 different RSS
 keywords: "RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD, linkblogs, reading overload, scanning articles, information overload, feed reading applications"
 image-description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
 
-
-guid: 064921a7-6a93-4047-a8a5-47d924cbbf95
 permalink: /2007/06/07/too-many-feeds/
 categories:
   - Computers

@@ -1,5 +1,4 @@
 ---
-id: 303
 title: "The Power of Choice: A Reflection on Free Will and Fasting"
 subtitle: "An Exploration of Conscious Decisions During Lenten Season"
 date: 2008-02-19T17:45:53+00:00
@@ -14,8 +13,6 @@ keywords: "free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom
 image-description: "An image of a fork in the road, symbolizing the choices we make in life, with a subtle overlay of a fasting plate or spiritual symbols to represent the connection between choice and faith."
 call-to-action: "Feel free to share your thoughts on free will and the choices we make every day. How do you exercise your freedom? Join the conversation in the comments below!"
 
-
-guid: 5be2c380-c65b-4ca6-957d-7626f2e41a98
 permalink: /2008/02/19/more-on-the-fas/
 categories:
   - Religion

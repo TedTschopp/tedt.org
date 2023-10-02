@@ -1,5 +1,4 @@
 ---
-id: 124288
 title: Wodan's Revenge
 date: 2023-01-01T17:18:27-08:00 
 author:
@@ -13,7 +12,6 @@ description: Wodan's Revenge narrates the tale of the once-worshipped pagan god 
 
 layout: post
 
-guid: 678c71f9-60b4-4baf-b5e4-e62c41161fa3
 permalink: /2023/01/01/Wodens-Revenge/
 
 image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png

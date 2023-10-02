@@ -5,7 +5,6 @@ source: 'Table Talk - OF PRINCES AND POTENTATES - DCCXVII'
 
 tags: ''
 date: 10-10-2014 14:47:56
-id: 21035
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -5,7 +5,6 @@ source: 'Exodus to the Virtual World'
 
 tags: ''
 date: 09-03-2014 14:38:22
-id: 21056
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

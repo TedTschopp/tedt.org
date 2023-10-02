@@ -12,7 +12,7 @@ description: |
    An application that generates text using procedural methods. 
 excerpt: |
   An application that generates text using procedural methods.
-SEO-description: |
+seo-description: |
    An application that generates text using procedural methods.
 
 bullets:
@@ -20,7 +20,6 @@ bullets:
   - Over 100 tables of various objects and qualities. 
   - To Do- Look into Mustache engine
 
-guid: 9f531baa-bd7f-4dd8-bbe8-46bb65b97a46
 image: /img/home/Text-Generation.jpg
 image-credits: Text Generation Code by Ted Tschopp
 image-credits-title: Text Generation Code

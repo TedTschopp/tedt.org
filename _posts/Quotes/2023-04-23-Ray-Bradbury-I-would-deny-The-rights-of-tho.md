@@ -10,7 +10,6 @@ source: Ode to the Quick Computer
 
 tags: ''
 date: 09-03-2014 14:42:44
-id: 21055
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

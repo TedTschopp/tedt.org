@@ -1,5 +1,4 @@
 ---
-id: 461
 title: "The Limitless Garden: A Theological Exploration of Eden"
 subtitle: "Understanding the Boundaries and Potential of the Garden of Eden"
 date: 2007-09-24T18:48:17+00:00
@@ -20,7 +19,6 @@ image-credits-URL: https://www.tedt.org/
 image-credits-title: The Limitless Garden
 image-credits-artist: Ted Tschopp and Midjourney
 
-guid: eeb92c15-7422-41c7-9075-be04e977cf0e
 permalink: /2007/09/24/The-Limitless-Garden-A-Theological-Exploration-of-Eden/
 categories:
   - Religion

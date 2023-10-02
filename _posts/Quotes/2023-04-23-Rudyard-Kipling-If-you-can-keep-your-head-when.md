@@ -5,7 +5,6 @@ source: 'If'
 
 tags: ''
 date: 03-12-2018 13:10:40
-id: 21010
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

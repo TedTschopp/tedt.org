@@ -6,7 +6,6 @@ source-url: https://www.ccel.org/ccel/luther/tabletalk.v.xliv.html
 
 tags: ''
 date: 10-10-2014 14:47:38
-id: 21036
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

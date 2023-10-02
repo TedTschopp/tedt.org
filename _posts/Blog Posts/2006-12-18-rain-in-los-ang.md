@@ -1,5 +1,4 @@
 ---
-id: 115
 title: "Winter Rains in Los Angeles: A Reflection on Longing, Home, and Hope"
 subtitle: "A Spiritual Journey through Nature’s Beauty, Connecting Earth and Soul"
 date: 2006-12-18T11:28:23+00:00
@@ -13,7 +12,6 @@ description: "This article explores the transformative power of winter rains in 
 keywords: "Los Angeles, Winter Rains, Spiritual Reflection, Longing, Home, Hope, Advent, Christ, Christmas, Nature's Beauty, Kierkegaard, Angst, Mountains, Snow, Valley"
 image-description: "An image of the snow-capped mountains bordering the Los Angeles basin, seen under a clear blue sky dotted with white clouds. The wet streets reflect the morning light, symbolizing the cleansing power of rain, and a distant path leads towards a hidden valley, representing the spiritual journey described in the article."
 
-guid: 5c22a9d8-7406-44f6-984a-3208042ec265
 permalink: /2006/12/18/Winter-Rains-in-Los-Angeles/
 categories:
   - Religion

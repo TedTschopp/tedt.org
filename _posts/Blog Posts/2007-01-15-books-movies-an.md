@@ -1,5 +1,4 @@
 ---
-id: 96
 title: "Comparing 'Children of Men': Book and Movie Exploration"
 subtitle: "An Insightful Analysis of Themes and Differences between the Novel and Film"
 date: 2007-01-15T16:51:39+00:00
@@ -16,7 +15,6 @@ image-description: "An image that juxtaposes the cover of 'Children of Men' book
 
 
 
-guid: 97a7bdd5-16ba-47eb-a098-fbf1782f16c2
 permalink: /2007/01/15/Comparing-Children-of-Men-Book-and-Movie-Exploration
 categories:
  - Movies

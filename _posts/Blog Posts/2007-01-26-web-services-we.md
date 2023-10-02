@@ -1,5 +1,4 @@
 ---
-id: 86
 title: Web Services, Web Services, Web Services
 date: 2007-01-26T15:27:06+00:00
 author:
@@ -14,8 +13,6 @@ description: "An in-depth article providing an understanding of web services, co
 keywords: "web services, enterprise architecture, computing theory, data services, calculation services, display services, technology convergence, security, quality assurance, web development"
 image-description: "An image illustrating the interconnectivity between computers through web services. It can depict servers communicating through a web interface, symbolizing the various aspects of data services, calculation services, and display services."
 
-
-guid: 5076e5bd-f37b-46d6-8381-3b53326a886c
 permalink: /2007/01/26/web_services_we/
 categories:
   - Computers

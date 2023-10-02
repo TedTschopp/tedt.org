@@ -5,7 +5,6 @@ source: '1928 April, The Forum, Volume 79, Number 4, My Philosophy of Industry b
 
 tags: ''
 date: 09-03-2014 14:28:42
-id: 21061
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

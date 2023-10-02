@@ -1,5 +1,4 @@
 ---
-id: 1005
 title: "The Tasmanian Paradox: A Lesson in Collaboration and Innovation"
 subtitle: "Understanding the Historical Divide: What Tasmania's Isolation Can Teach Us About Collaboration and Technology"
 date: 2011-06-03T16:35:45+00:00
@@ -15,8 +14,6 @@ keywords: "Tasmania, Aborigines, collaboration, technology development, isolatio
 image-description: "A captivating image by JJ Harrison, showcasing the natural beauty of Tasmania's landscape. The image serves as a symbolic representation of the isolation and unique environment that shaped the lives and culture of the Tasmanian Aborigines."
 call-to-action: "How has collaboration shaped your industry or personal growth? Are there barriers in your environment hindering collaboration? Share your thoughts and join the conversation below. Let's learn from history and strive for adaptability, innovation, and collaboration in our rapidly evolving world."
 
-
-guid: 139343f6-841a-48c8-b020-30fe8b70e885
 permalink: /2011/06/03/collaboration-lessons-learned-from-tasmania/
 image: /wp-content/uploads/2011/06/800px-tessellated_pavement_sunrise_landscape.jpg
 categories:

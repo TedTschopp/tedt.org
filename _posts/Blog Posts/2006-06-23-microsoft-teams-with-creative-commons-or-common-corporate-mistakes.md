@@ -1,5 +1,4 @@
 ---
-id: 501
 title: Microsoft teams with Creative Commons or Common Corporate Mistakes
 date: 2006-06-23T23:50:37+00:00
 author:
@@ -8,7 +7,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-guid: b0cd4204-75b3-40ef-b90f-b672c919e4a2
 permalink: /2006/06/23/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/
 categories:
   - Computers

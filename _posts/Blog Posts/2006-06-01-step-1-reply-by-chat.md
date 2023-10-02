@@ -1,5 +1,4 @@
 ---
-id: 502
 title: Step 1 - Reply by Chat
 date: 2006-06-01T21:33:53+00:00
 author:
@@ -8,7 +7,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-guid: 199e35fe-9f8f-41b5-a635-0b2e2b0d69e4
 permalink: /2006/06/01/step-1-reply-by-chat/
 categories:
   - Computers

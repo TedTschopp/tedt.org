@@ -1,5 +1,4 @@
 ---
-id: 439
 title: "Martin Luther on Beer: A Historical Perspective"
 subtitle: "The Theological Brew: Reflections and Quotes on Beer and Moderation"
 date: 2007-02-16T10:24:23+00:00
@@ -15,8 +14,6 @@ description: "This article explores various quotes and letters of Martin Luther 
 keywords: "Martin Luther, beer, moderation, Christianity, theology, history, soberness, gluttony, drunkenness, quotations, Lutheran tradition"
 image-description: "An image of a vintage beer mug juxtaposed with an old parchment containing Martin Luther's handwriting, symbolizing the historical connection between theological reflections and beer in Luther's time."
 
-
-guid: 8676f676-eb73-4d6b-977a-b5423ef31059
 permalink: /2007/02/16/martin_luther_on_beer/
 categories:
   - Quotes

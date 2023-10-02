@@ -5,7 +5,6 @@ source: Black Mirror - Fifteen Million Merits
 
 tags: ''
 date: 09-03-2014 14:31:52
-id: 21058
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

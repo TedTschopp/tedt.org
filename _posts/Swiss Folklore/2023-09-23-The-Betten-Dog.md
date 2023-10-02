@@ -1,5 +1,4 @@
 ---
-id: 12428938
 title: "The Betten Dog"
 author:
   name: Ted Tschopp
@@ -12,19 +11,22 @@ description: "A Swiss German folk tale about a mysterious dog that appears in Be
 
 keywords: "Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer"
 
-location: "Betten, Rebstein and Marbach, Switzerland"
+
+location:
+  place-names: Betten, Rebstein and Marbach, Switzerland
+  on-map: Betten (47.3667° N, 9.5615° E)
+
 coordinates:
    longitude: "9.5615"
    latitude: "47.3667"
 year-the-event-took-lace: "1903"
-monster-or-magical-or-religious-idea: "Mysterious Dog"
+monster-or-magical-or-religious-ideas: "Mysterious Dog"
 tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
 
 
 
 layout: post
 
-guid: 9e17272f-b5a0-4965-9920-7f6679ba333f
 permalink: /2023/09/23/The-Betten-Dog/
 
 image: /img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.png

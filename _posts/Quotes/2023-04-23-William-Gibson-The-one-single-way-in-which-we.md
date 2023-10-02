@@ -6,7 +6,6 @@ source-url: https://twitter.com/greatdismal/status/453367121754333184?s=61&t=xLI
 
 tags: ''
 date: 09-03-2014 14:12:25
-id: 21080
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

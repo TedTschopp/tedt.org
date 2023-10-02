@@ -1,5 +1,4 @@
 ---
-id: 171
 title: 
 date: 2006-01-04T14:22:11+00:00
 author:
@@ -16,7 +15,6 @@ image-description: "An image of a serene beach at sunset, where waves gently lap
 
 
 
-guid: c46fe241-f632-4429-9b89-bf70b5ea22df
 permalink: /2006/01/04/the_path_west/
 categories:
   - Personal Writing

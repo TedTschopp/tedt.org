@@ -5,7 +5,6 @@ source: Deadwood 2004
 
 tags: ''
 date: 09-03-2014 14:25:31
-id: 21066
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

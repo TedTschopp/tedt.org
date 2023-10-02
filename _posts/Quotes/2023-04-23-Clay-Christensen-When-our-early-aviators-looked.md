@@ -6,7 +6,6 @@ source: How To Measure Your Life
 
 tags: Best practices,Bird,Feathers,Flight,Theory
 date: 04-07-2015 10:52:37
-id: 21021
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

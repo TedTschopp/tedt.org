@@ -1,5 +1,4 @@
 ---
-id: 547
 title: "Google's Vision for a Unified Internet OS: A New Dawn in Connectivity"
 subtitle: "Exploring the Potential of Google's Web-Based Operating System"
 
@@ -18,7 +17,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-guid: f3857b90-e751-4853-8f6e-90b936fac80f
 permalink: /2004/08/25/the-google-browseros/
 categories:
   - Computers

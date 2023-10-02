@@ -1,5 +1,4 @@
 ---
-id: 1348
 title: "The Future of Web-Based Computing: Revolutionizing the Creative Industry"
 subtitle: "How HTML5 and JavaScript Are Bringing Hollywood and Gaming Tools to Your Browser"
 date: 2013-11-27T14:34:55+00:00
@@ -21,7 +20,6 @@ keywords: "HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photo
 
 layout: post
 
-guid: 0704acdf-a373-4c5b-b27f-c20ef7a392ec
 permalink: /2013/11/27/The-Future-of-Web-Based-Computing/
 image: /wp-content/uploads/2013/11/javascript.jpg
 categories:

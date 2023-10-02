@@ -5,7 +5,6 @@ source: 'History of the Peloponnesian War'
 
 tags: ''
 date: 09-03-2014 14:19:11
-id: 21073
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

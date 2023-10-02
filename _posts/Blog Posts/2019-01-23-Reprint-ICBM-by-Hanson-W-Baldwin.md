@@ -1,5 +1,4 @@
 ---
-id: 12428
 title: 1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John Wilson
 date: 2019-01-23T12:17:59+00:00
 author:
@@ -15,7 +14,6 @@ description: "REPRINT: An exploration of the Cold War-era race between the Unite
 
 layout: post
 
-guid: 7a6805c0-d19d-4397-8ff5-ebe515ae289b
 permalink: /2019/01/23/Reprint-ICBM-by-Hanson-W-Baldwin/
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
 image-alt: Picture of an ICBM

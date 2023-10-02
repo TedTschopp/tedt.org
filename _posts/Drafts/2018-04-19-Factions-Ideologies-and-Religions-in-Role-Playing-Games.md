@@ -1,5 +1,4 @@
 ---
-id: 1528
 title: Factions, Ideologies, and Religions in Role Playing Games
 date: 2018-04-19T03:13:00+00:00
 author:
@@ -16,7 +15,6 @@ keywords: Role playing games, Ideologies, Factions. Religions, World-building, G
 
 layout: post
 
-guid: e679b34c-0771-4e90-af7a-d082eb71178c
 permalink: /2018/04/19/Factions-Ideologies-and-Religions-in-Role-Playing-Games/
 image: /wp-content/uploads/2018/04/Sunset on this ideology.jpg
 image-credits: |

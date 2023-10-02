@@ -1,5 +1,4 @@
 ---
-id: 291
 title: "Dehydrated"
 date: 2009-06-13T12:06:54+00:00
 author:
@@ -13,7 +12,6 @@ keywords: "mystery, supernatural, X-Files, Fringe, transformation, short story, 
 image-description: "An image of a young, thin girl with black hair, hiding her face. Her eyes are an intense ice blue, and a green garland with budding flowers is seen intertwined in her hair. In the background, there's a mysterious tree with red flowers and black branches, symbolizing her connection to something beyond our understanding."
 call-to-action: "What do you think happened to Alice? Share your interpretations, thoughts, and feelings about this mysterious tale in the comments below. Join the conversation and explore the enigmatic world presented in 'Dehydrated.'"
 
-guid: 4fe8721b-675c-4720-96b8-7050ca295595
 permalink: /2009/06/13/dehydrated/
 
 image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg

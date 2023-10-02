@@ -1,5 +1,4 @@
 ---
-id: 231
 title:  "Integrating iTunes with TypePad: A Simple Guide"
 subtitle:  "Syncing Your Latest Tunes with Your TypePad List"
 keywords: "iTunes, TypePad, Integration, Music, Syncing, Playlists, Latest Tunes, Guide, Tutorial"
@@ -12,7 +11,6 @@ layout: post
 
 description: Learn how to integrate iTunes with TypePad using a program that updates your TypePad list with the songs you're currently listening to. This guide offers simple instructions and ensures your favorite tunes are always in sync
 
-guid: 5a3cd62d-c94f-4f67-8504-7dead22e0a28
 permalink: /2004/05/21/currently_liste/
 categories:
   - Computers

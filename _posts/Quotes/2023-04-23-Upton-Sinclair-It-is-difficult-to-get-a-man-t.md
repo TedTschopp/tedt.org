@@ -5,7 +5,6 @@ source: 'I, Candidate for Governor: And How I Got Licked'
 
 tags: ''
 date: 05-10-2018 06:41:57
-id: 21009
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -1,5 +1,4 @@
 ---
-id: 12428935
 title: The Army in Schrattenberg
 date: 2023-08-20 18:54:49
 author:
@@ -15,7 +14,6 @@ keywords: "Schrattenberg, Escholzmatt, Gurnigel, Magic, Hidden Treasures, Warrio
 
 layout: post
 
-guid: adfb33f5-a78f-4520-94db-431f30547627
 permalink: /2023/08/20/2023-08-20-The-Army-in-Schrattenberg/
 
 image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
@@ -31,19 +29,19 @@ categories:
 
 
 
-Location:
-  Place Names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
-  On-Map: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
+location:
+  place-names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
+  on-map: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
 
 
 year-the-event-took-lace:  1830, with a prediction of an event 45 years in the future.
 
-Coordinates: 
-   Longitude: 46.8911
-   Latitude: 7.9783
+coordinates: 
+   longitude: 46.8911
+   latitude: 7.9783
 
 
-Monster-or-Magical-or-Religious-Ideas:
+monster-or-magical-or-religious-ideas:
   - A hidden underground world filled with warriors and treasures.
   - Supernatural beings with time prediction.
   - Magical properties, including disappearing entrances and magical doors.

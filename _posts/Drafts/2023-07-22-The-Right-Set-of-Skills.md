@@ -21,7 +21,6 @@ excerpt: |
    Characteristics.
 
 layout: post
-guid: bb19cea7-6a39-4b5c-bfcd-5a642df9bcae
 permalink: /2023/07/22/The-Right-Set-of-Skills/
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-title: FAME - Fitness, Academics, Mystical, Emotional

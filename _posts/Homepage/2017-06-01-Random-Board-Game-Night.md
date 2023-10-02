@@ -12,15 +12,13 @@ description: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour. 
 excerpt: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour.
-SEO-description: |
+seo-description: |
    An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
 bullets:
   - Need ideas for your board game night. Look no further. We have you covered!
   - Uses tables from the Procedural Text Generation system I am using for computerized fiction
 
-
-guid: 6874d05e-dafe-4e56-80c9-d3f3b911a61b
 image: /img/home/Ted-Tschopp-board-game-table.jpg
 image-credits: Board Game Night by Ted Tschopp and Midjourney
 image-credits-title: Board Game Night

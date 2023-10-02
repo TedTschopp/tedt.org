@@ -12,7 +12,7 @@ description: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
 excerpt: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
-SEO-description: |
+seo-description: |
    Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
 
 bullets:
@@ -20,7 +20,6 @@ bullets:
   - Includes a dictionary of the most common English words
   - Includes a dictionary of the most common passwords that have been hacked already
 
-guid: 6874d05e-dafe-4e56-80c9-d3f3b911a61b
 image: /img/home/password.jpg
 image-credits: Password List by Ted Tschopp https://github.com/TedTschopp/The-Password-Challange
 image-credits-title: Password List

@@ -12,7 +12,7 @@ description: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.   
 excerpt: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.   
-SEO-description: |
+seo-description: |
    Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion.  
 
 bullets:
@@ -26,7 +26,6 @@ bullets:
   - 75% increase for turn on/off service and 75% decrease in manual order processing
   - Represented SCE’s digital and ecommerce interests on the Utility Information Technology Benchmark (UNITE) group.
 
-guid: 93ba20f1f-0a7b-4220-8310-675cf52ab9b4
 image: /img/home/sce_com.jpg
 image-credits: SCE.com by Ted Tschopp
 image-credits-title: SCE.com

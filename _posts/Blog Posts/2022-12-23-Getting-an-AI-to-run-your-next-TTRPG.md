@@ -1,5 +1,4 @@
 ---
-id: 124281
 title: Getting an AI to Run Your Next TTRPG 
 date: 2022-12-23T16:15:17-08:00 
 author:
@@ -12,7 +11,6 @@ excerpt: |
 
 layout: post
 
-guid: ddd1c6d3-fe65-4e62-83e4-64f06164bda2 
 permalink: /2022/12/23/Getting-an-AI-to-Run-Your-Next-TTRPG/
 image: /wp-content/uploads/2022/12/23/TTRPG-Gamma-World-ASCII-Art.jpg
 image-alt: Gamma World 1st Edition RPG Books and dice

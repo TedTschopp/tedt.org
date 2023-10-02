@@ -1,5 +1,4 @@
 ---
-id: 1428
 title: "The Revolution of Mobile Computing: From Mainframes to Smartphones"
 subtitle: "How Smartphones Changed Every Aspect of Life and Business"
 date: 2015-01-29T12:17:59+00:00
@@ -18,7 +17,6 @@ keywords: "mobile computing, smartphones, mainframes, PCs, laptops, China, gadge
 
 layout: post
 
-guid: e456bbe4-6b84-41ce-b307-68e2e2869fe6
 permalink: /2015/01/29/The-Revolution-of-Mobile-Computing-From-Mainframes-to-Smartphones/
 image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
 categories:

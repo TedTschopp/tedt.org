@@ -5,7 +5,6 @@ source: 'Conversations with Oscar Tschopp, 2014'
 
 tags: ''
 date: 09-03-2014 14:23:28
-id: 21069
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

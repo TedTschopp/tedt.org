@@ -6,7 +6,6 @@ source: The Temper Of Our Times
 
 tags: Movements,Politics,Religion
 date: 05-19-2018 22:21:17
-id: 21008
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

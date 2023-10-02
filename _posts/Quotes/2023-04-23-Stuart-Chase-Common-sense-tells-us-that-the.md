@@ -5,7 +5,6 @@ source: The Proper Study Of Mankind
 
 tags: Common sense,Wisdom
 date: 01-08-2015 05:50:53
-id: 21023
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

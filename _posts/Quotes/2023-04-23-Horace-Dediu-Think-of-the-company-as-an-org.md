@@ -16,7 +16,6 @@ source: Corporate Antibodies
 
 tags: ''
 date: 10-30-2014 09:22:46
-id: 21024
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

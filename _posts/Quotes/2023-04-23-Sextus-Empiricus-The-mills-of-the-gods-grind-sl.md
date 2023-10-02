@@ -5,7 +5,6 @@ source: ' '
 
 tags: Government,Justice,Slow
 date: 10-08-2018 07:44:08
-id: 21007
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

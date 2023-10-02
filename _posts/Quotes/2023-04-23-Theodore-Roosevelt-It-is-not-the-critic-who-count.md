@@ -5,7 +5,6 @@ source: Citizenship In A Republic
 
 tags: ''
 date: 09-17-2014 06:42:29
-id: 21053
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

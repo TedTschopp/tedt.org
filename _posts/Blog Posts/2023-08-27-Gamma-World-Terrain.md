@@ -1,5 +1,4 @@
 ---
-id: 124284
 title: Gamma World Terrain Backdrops
 date: 2023-08-27 10:55:48
 author:
@@ -9,7 +8,7 @@ author:
 excerpt: 
 description: A collection of images to use as backdrops for Gamma World, inspired by Pixel Art and Retro Video Games
 layout: post
-guid: b0eacef2-1bd1-42a0-b430-1268f40df432
+
 permalink: /2023/08/27/Gamma-World-Terrain-Backdrops/
 image: 
 image-alt: 

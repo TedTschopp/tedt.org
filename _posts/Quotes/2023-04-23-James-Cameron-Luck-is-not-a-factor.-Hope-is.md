@@ -5,7 +5,6 @@ source: After Making Titanic
 
 tags: ''
 date: 09-03-2014 14:26:51
-id: 21064
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

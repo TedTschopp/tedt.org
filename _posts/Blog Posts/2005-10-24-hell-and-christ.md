@@ -1,5 +1,4 @@
 ---
-id: 180
 title: "Contemplating the Afterlife: Understanding Hell from Various Perspectives"
 subtitle: "A Personal Reflection on the Concepts of Hell and Its Existence in Belief Systems"
 date: 2005-10-24T14:05:54+00:00
@@ -17,7 +16,6 @@ image-description: "An abstract representation of the two concepts of hell: anni
 
 
 
-guid: 25d4365c-1bb8-474b-ba52-56622b8ea9c3
 permalink: /2005/10/24/Contemplating-the-Afterlife-Understanding-Hell-from-Various-Perspectives/
 categories:
   - Religion

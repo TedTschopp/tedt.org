@@ -1,5 +1,4 @@
 ---
-id: 1030
 title: "Revolutionizing the iPad Experience with ZAAG / Logitech Keyboard Case"
 subtitle: "Turning the iPad into a Laptop: A Comprehensive Review"
 date: 2011-12-16T06:34:33+00:00
@@ -16,7 +15,6 @@ call-to-action: "Discover how the ZAAG / Logitech keyboard case is redefining th
 
 
 
-guid: 2ff999c5-2e4b-4689-85d1-6e24dc035dc1
 permalink: /2011/12/16/Revolutionizing-the-iPad-Experience-with-ZAAG-Logitech-Keyboard-Case/
 image: /wp-content/uploads/2013/06/timthumb.jpeg
 categories:

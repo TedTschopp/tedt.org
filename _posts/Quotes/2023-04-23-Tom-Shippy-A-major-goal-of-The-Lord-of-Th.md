@@ -5,7 +5,6 @@ source: The Road to Middle-Earth
 
 tags: ''
 date: 04-06-2017 22:01:47
-id: 21013
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

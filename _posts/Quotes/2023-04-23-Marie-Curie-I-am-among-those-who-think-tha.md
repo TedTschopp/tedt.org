@@ -7,7 +7,6 @@ source: ' '
 
 tags: ''
 date: 10-10-2014 14:41:38
-id: 21048
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

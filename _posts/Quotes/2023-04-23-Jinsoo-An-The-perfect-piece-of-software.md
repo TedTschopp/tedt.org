@@ -6,7 +6,6 @@ source: Chat Transcript with Jinsoo An
 
 tags: Ideas to refine,Process,Technology,Tools
 date: 09-06-2014 09:14:07
-id: 21054
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

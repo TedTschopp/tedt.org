@@ -5,7 +5,6 @@ source: Aphorisms
 
 tags: ''
 date: 06-21-2015 12:04:51
-id: 21019
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

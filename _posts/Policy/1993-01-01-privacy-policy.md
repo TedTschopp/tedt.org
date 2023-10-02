@@ -1,5 +1,4 @@
 ---
-id: 1993010101
 title: Privacy Policy
 date: 1993-01-01T08:41:00+00:00
 author:
@@ -7,10 +6,8 @@ author:
   url: https://tedt.org/
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 
-
 layout: post
 
-guid: 8a7330e9-faaf-4c5a-b5fb-da6c513f1f76
 permalink: /1993/01/01/privacy-policy/
 ---
 

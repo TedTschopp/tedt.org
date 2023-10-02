@@ -1,5 +1,4 @@
 ---
-id: 87
 title: "Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective"
 subtitle: "Exploring the Existence of External Standards and Human Value"
 date: 2007-01-26T12:49:19+00:00
@@ -14,9 +13,6 @@ description: "This article delves into the concept of universal standards for in
 keywords:  Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value, Religion, Politics
 image-description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
 
-
-
-guid: f90e2057-bc36-4ee5-87c5-bb4835abcd7e
 permalink: /2007/01/26/Universal-Standards-of-Conduct-Beauty-and-Truth/
 categories:
   - Religion

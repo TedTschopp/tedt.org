@@ -5,7 +5,6 @@ source: '68 Bits of Unsolicited Advice'
 
 tags: ''
 date: 09-03-2014 14:30:06
-id: 21059
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

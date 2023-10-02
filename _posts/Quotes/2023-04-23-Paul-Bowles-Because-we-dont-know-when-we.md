@@ -5,7 +5,6 @@ source: The Sheltering Sky
 
 tags: ''
 date: 03-07-2021 20:13:43
-id: 21003
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

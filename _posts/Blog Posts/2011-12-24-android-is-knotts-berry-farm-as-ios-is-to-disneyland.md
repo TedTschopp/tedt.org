@@ -1,5 +1,4 @@
 ---
-id: 1035
 title: "Theme Parks and Mobile OS: A Comparative Analysis"
 subtitle: "Knott's Berry Farm, iOS, and Android - Bridging the Experience Gap"
 date: 2011-12-24T09:12:25+00:00
@@ -16,7 +15,6 @@ call-to-action: "Explore the intriguing connection between theme parks and mobil
 
 
 
-guid: 306b8f7b-3d49-4c6c-806b-eb1b4c72f58d
 permalink: /2011/12/24/android-is-knotts-berry-farm-as-ios-is-to-disneyland/
 image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e1371582793846.jpg
 categories:

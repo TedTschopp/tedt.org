@@ -1,5 +1,4 @@
 ---
-id: 1053
 title: "The Evolution of Digital Realism: Sound, Graphics, and User Interface Design"
 subtitle: "A Reflective Analysis of Technology's Progress Towards Authentic Replication"
 date: 2012-08-26T17:38:23+00:00
@@ -16,7 +15,6 @@ keywords: "digital realism, sound quality, computer graphics, user interface des
 
 layout: post
 
-guid: 0700cc97-bf74-43de-9bd1-4f60fe776a45
 permalink: /2012/08/26/user-interfaces-in-2017-2/
 image: /wp-content/uploads/2013/06/color-eye.png
 categories:

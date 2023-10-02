@@ -6,7 +6,6 @@ source-url: https://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/2
 
 tags: ''
 date: 09-03-2014 14:27:47
-id: 21063
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -1,5 +1,4 @@
 ---
-id: 452
 title: "The Power of Collaboration Tools: Treating Them Like Pen and Paper"
 subtitle: "Unlocking Value in the Workplace through Unrestricted Communication"
 date: 2009-07-08T12:11:54+00:00
@@ -19,7 +18,6 @@ image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collab
 image-credits-title: Collaboration Tools
 image-credits-artist: Ted Tschopp and Midjourney
 
-guid: fe15202c-5003-4886-8c40-3a1a6e469a5a
 permalink: /2009/07/08/The-Power-of-Collaboration-Tools-Treating-Them-Like-Pen-and-Paper/
 categories:
   - Communications

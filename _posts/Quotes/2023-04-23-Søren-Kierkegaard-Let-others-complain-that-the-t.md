@@ -5,7 +5,6 @@ source: The Present Age
 
 tags: ''
 date: 09-03-2014 14:26:10
-id: 21065
 permalink: /Quotes-Database/:title:output_ext
 layout: quotes
 categories:

@@ -1,5 +1,4 @@
 ---
-id: 307
 title: "My Lenten Journey: A Commitment to Fasting and Reflection"
 subtitle: "A Personal Experience with Liquid Fasting during the Lenten Season"
 date: 2008-02-13T16:15:39+00:00
@@ -14,7 +13,6 @@ keywords: "Lent, fasting, spiritual journey, liquid fasting, Jamba Juice, tea, r
 image-description: "An image of a sunrise, representing the start of the fasting period, with various glasses of tea and juice, symbolizing the liquids consumed during the fast."
 call-to-action: "What are your experiences with fasting or unique practices during Lent? Share your insights, challenges, and triumphs in the comments below. Your journey might inspire others!"
 
-guid: 4c5c466f-239b-479f-a36f-9084f3688e4f
 permalink: /2008/02/13/fasting-for-len/
 categories:
   - Religion

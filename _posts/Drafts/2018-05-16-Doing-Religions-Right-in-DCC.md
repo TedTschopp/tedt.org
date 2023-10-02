@@ -11,11 +11,10 @@ description: |
    Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games.  These are my notes on how to get DCC closer to a relgious system that works for a believer and a role player.   
 excerpt: |
    Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games.  These are my notes on how to get DCC closer to a relgious system that works for a believer and a role player.   
-SEO-description: |
+seo-description: |
    Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games.  These are my notes on how to get DCC closer to a relgious system that works for a believer and a role player.   
 
 layout: post
-guid: 61829ad4-ef0c-46d1-af81-613e59b55850
 permalink: /2018/05/16/Doing-Religions-Right-in-DCC/
 image: /wp-content/uploads/2018/05/the-valar.jpg
 image-credits: The Valar by Dan Hainsworth https://www.etsy.com/shop/dthains  
