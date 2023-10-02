@@ -14,7 +14,7 @@ description: "Explore the complexities of ideologies, factions, and religions in
 
 keywords: Role playing games, Ideologies, Factions. Religions, World-building, Game Master
 
-layout: draft
+layout: post
 
 guid: e679b34c-0771-4e90-af7a-d082eb71178c
 permalink: /2018/04/19/Factions-Ideologies-and-Religions-in-Role-Playing-Games/

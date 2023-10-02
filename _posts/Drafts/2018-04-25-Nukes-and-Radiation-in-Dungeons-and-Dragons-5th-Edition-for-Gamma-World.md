@@ -14,7 +14,7 @@ excerpt: |
 description: "A comprehensive guide on implementing nukes and radiation in Dungeons and Dragons 5th Edition for Gamma World. Learn about radiation damage, new stats, and the effects of nuclear blasts in your game."
 keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role playing games, Game Master
 
-layout: MCC-GW
+layout: post
 
 guid: 816f9b96-9415-40c5-b261-4235d9ab35a1
 permalink: /2018/04/25/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/
