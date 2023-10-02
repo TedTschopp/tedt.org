@@ -14,7 +14,8 @@ keywords: "Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Ca
 
 layout: post
 
-permalink: /2023/08/20/2023-08-20-The-Little-Shepherd-of-Mellikon/
+permalink: /Swiss-Folklore/:title:output_ext
+
 
 image: /img/Swiss/A_ghost_of_a_young_Shepherd_emerges.jpg
 image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist. In the foreground, villagers peer upward, faces etched with curiosity and fear. The hole in the rock looms ominously, embodying the legend of the Little Shepherd who still haunts the area.

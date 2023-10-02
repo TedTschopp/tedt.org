@@ -12,7 +12,6 @@ description: An in-depth analysis of Google's response to the AI competition and
 
 layout: post
 
-permalink: /2023/05/16/AI-User-Interfaces-and-Experiences-in-2023/
 image: /media/printing-press-hannes-wolf-unsplash.jpg
 image-alt: Photo by Hannes Wolf on Unsplash
   

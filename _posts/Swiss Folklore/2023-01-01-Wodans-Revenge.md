@@ -12,7 +12,7 @@ description: Wodan's Revenge narrates the tale of the once-worshipped pagan god 
 
 layout: post
 
-permalink: /2023/01/01/Wodens-Revenge/
+permalink: /Swiss-Folklore/:title:output_ext
 
 image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
 

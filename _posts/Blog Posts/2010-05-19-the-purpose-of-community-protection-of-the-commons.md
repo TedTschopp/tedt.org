@@ -13,7 +13,6 @@ keywords: "Robin Hood, community, common good, Russell Crowe, Nottingham, garden
 image-description: "An evocative image of Robin Hood, the legendary outlaw, symbolizing the fight for the common good and the protection of shared values. It serves as a visual metaphor for the unifying principles that bind and define a community."
 call-to-action: "What are the 'commons' in your community that you cherish and defend? How do you nurture and grow those shared values? Join the conversation below to explore these vital questions and share your insights on building and sustaining a thriving community."
 
-permalink: /2010/05/19/the-purpose-of-community-protection-of-the-commons/
 image: /wp-content/uploads/2013/06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 categories:
   - Computers

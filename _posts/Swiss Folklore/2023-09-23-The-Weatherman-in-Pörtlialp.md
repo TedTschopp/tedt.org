@@ -26,7 +26,7 @@ tags: ["Legend", "Mystery", "Weather", "Swiss Culture"]
 
 layout: post
 
-permalink: /2023/09/23/Weatherman-in-Pörtlialp/
+permalink: /Swiss-Folklore/:title:output_ext
 
 image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
 

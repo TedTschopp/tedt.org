@@ -11,7 +11,6 @@ layout: post
 
 description: Learn how to integrate iTunes with TypePad using a program that updates your TypePad list with the songs you're currently listening to. This guide offers simple instructions and ensures your favorite tunes are always in sync
 
-permalink: /2004/05/21/currently_liste/
 categories:
   - Computers
 ---

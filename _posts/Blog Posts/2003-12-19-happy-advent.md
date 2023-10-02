@@ -16,7 +16,6 @@ excerpt: |
 seo-description: |
    What does Advent mean to you?  What is that sense of yearning and longing we all have for something.   
 
-permalink: /2003/12/19/happy_advent/
 categories:
   - Religion
   - Computers

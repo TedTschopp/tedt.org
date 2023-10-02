@@ -17,7 +17,7 @@ seo-description: |
 
 
 layout: post
-permalink: /2018/11/08/Increasing-in-Rank-MCC-with-Archaic-Alliances/
+
 image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
 categories:
   - Role Playing Games

@@ -7,7 +7,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-permalink: /2007/08/17/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/
 categories:
   - Computers
   - Mobile

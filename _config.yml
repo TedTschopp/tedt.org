@@ -6,6 +6,10 @@ description: "Technology, theology, and creativity converge in this insightful e
 
 keywords: "technology, theology, creativity, religion, digital age, UI/UX, collaboration tools, storytelling"
 
+
+# Permalink 
+permalink: /:year/:month/:day/:title:output_ext
+
 # First Name / Given Name / Common Name
 givenname: Ted
 

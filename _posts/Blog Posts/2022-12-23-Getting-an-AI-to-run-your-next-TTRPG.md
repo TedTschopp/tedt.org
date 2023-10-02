@@ -11,7 +11,6 @@ excerpt: |
 
 layout: post
 
-permalink: /2022/12/23/Getting-an-AI-to-Run-Your-Next-TTRPG/
 image: /wp-content/uploads/2022/12/23/TTRPG-Gamma-World-ASCII-Art.jpg
 image-alt: Gamma World 1st Edition RPG Books and dice
 image-credits-URL: https://www.facebook.com/mudpuppycomics

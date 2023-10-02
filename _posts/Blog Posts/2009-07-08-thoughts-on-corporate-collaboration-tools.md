@@ -18,7 +18,6 @@ image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collab
 image-credits-title: Collaboration Tools
 image-credits-artist: Ted Tschopp and Midjourney
 
-permalink: /2009/07/08/The-Power-of-Collaboration-Tools-Treating-Them-Like-Pen-and-Paper/
 categories:
   - Communications
   - Computers

@@ -17,7 +17,6 @@ keywords: "mobile computing, smartphones, mainframes, PCs, laptops, China, gadge
 
 layout: post
 
-permalink: /2015/01/29/The-Revolution-of-Mobile-Computing-From-Mainframes-to-Smartphones/
 image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
 categories:
   - Computers

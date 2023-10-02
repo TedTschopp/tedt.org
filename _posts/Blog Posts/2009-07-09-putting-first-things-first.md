@@ -13,7 +13,6 @@ keywords: "conversations, conversation starters, participants, observers, websit
 image-description: "An illustration of the three types of people: Conversation Starters initiating dialogue, Participants actively engaging, and Observers silently listening. These images symbolize the dynamic roles that individuals play at social events and within online communities."
 call-to-action: "Are you a conversation starter, participant, or observer? Share your insights or experiences in the comments below. Let’s continue the conversation and learn how we can better engage with each other online!"
 
-permalink: /2009/07/09/The-Three-Types-of-People-in-Conversations/
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-12-47-pm.png
 categories:
   - Communications

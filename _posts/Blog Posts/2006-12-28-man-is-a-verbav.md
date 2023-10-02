@@ -13,8 +13,6 @@ keywords: "Word-Eater, Reading, Books, Storytelling, Identity, Symbols, Customs,
 image-description: "An image of a person engrossed in reading a large book, with symbolic icons and words floating around them. The symbols represent different facets of the individual's identity, customs, and stories. The backdrop might contain a world map, clock, or other visuals to reflect the core questions posed in the article."
 
 
-
-permalink: /2006/12/28/Word-Eater/
 categories:
   - Religion
 ---

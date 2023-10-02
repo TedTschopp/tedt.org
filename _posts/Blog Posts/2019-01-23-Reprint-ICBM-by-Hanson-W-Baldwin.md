@@ -14,7 +14,6 @@ description: "REPRINT: An exploration of the Cold War-era race between the Unite
 
 layout: post
 
-permalink: /2019/01/23/Reprint-ICBM-by-Hanson-W-Baldwin/
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
 image-alt: Picture of an ICBM
 image-credits-URL: 

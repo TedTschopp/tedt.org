@@ -18,7 +18,7 @@ seo-description: |
 
 
 layout: post
-permalink: /2018/10/14/Gamma-World-Weapons-in-MCC-DCC/
+
 image:  /img/2018-10-14/seth-justus-huntersalienguns.jpg
 image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25
 image-credits-title: Hunters Alien Weapons and Devices

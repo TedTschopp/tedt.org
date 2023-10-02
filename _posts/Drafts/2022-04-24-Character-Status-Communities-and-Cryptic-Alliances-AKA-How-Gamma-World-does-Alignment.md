@@ -11,7 +11,6 @@ excerpt: |
    As characters have adventures, they will gain a reputation, fame, and status. You can track this growth in the campaign using Status Points. Status Points, like experience points, are accumulated into a new number on your character sheet called Rank. Rank is a measure of how your character’s reputation, fame, and status affect the reactions of NPC’s in different situations. Unlike experience points, which represents how capable a character is, status points represent how capable the society around the characters feel the character is.
 
 layout: post
-permalink: /2022/04/24/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-Does-Alignment/
 image: /wp-content/uploads/2022/04/24/community-life.png
 image-credits: Art from Gamma World 6th Edition
 categories:

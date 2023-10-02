@@ -12,7 +12,6 @@ excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armo
 
 layout: post
 
-permalink: /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/
 image: /wp-content/uploads/2018/04/The-Leviathan.jpg
 image-credits: The Leviathan by Larry Elmore - http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
 categories:

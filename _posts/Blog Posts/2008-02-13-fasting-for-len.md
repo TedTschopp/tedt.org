@@ -13,7 +13,6 @@ keywords: "Lent, fasting, spiritual journey, liquid fasting, Jamba Juice, tea, r
 image-description: "An image of a sunrise, representing the start of the fasting period, with various glasses of tea and juice, symbolizing the liquids consumed during the fast."
 call-to-action: "What are your experiences with fasting or unique practices during Lent? Share your insights, challenges, and triumphs in the comments below. Your journey might inspire others!"
 
-permalink: /2008/02/13/fasting-for-len/
 categories:
   - Religion
 ---

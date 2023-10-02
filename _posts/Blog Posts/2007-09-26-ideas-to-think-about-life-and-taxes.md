@@ -13,7 +13,6 @@ keywords: "taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, 
 image-description: "An image illustrating different levels of taxonomy, possibly showing a tree-like diagram that categorizes elements into 5 or 6 levels, representing the universal depth of taxonomies mentioned in the talk."
 call-to-action: "What are your thoughts on the universal structure of taxonomies? Have you ever considered how categorization plays a role in our understanding of the world? Share your thoughts and insights in the comments below. Let's engage in a thought-provoking discussion!"
 
-permalink: /2007/09/26/Exploring-Taxonomy-A-Thought-Provoking-Talk-by-Alex-Wright/
 categories:
   - Computers
   - Science

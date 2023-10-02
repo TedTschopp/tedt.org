@@ -14,7 +14,6 @@ keywords: "collaboration, corporate environment, Information Technology, mediati
 image-description: "A well-structured diagram showcasing the Model for Collaboration, highlighting the three properties - Audience, Artifacts, and Time - and their respective categories. This visual representation serves as a concise overview of the collaboration process, emphasizing the intricate interplay between these elements."
 call-to-action: "Do you recognize these collaboration challenges in your workplace? How have you addressed them? Share your thoughts and experiences in the comments, and join us in the pursuit of more effective and meaningful collaboration."
 
-permalink: /2009/08/11/a-model-for-collaboration-tools/
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-04-09-pm.png
 categories:
   - Computers

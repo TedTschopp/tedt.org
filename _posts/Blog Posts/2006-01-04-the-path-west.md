@@ -13,9 +13,6 @@ description: "This evocative poem explores themes of time, forgiveness, and the 
 keywords: "Poetry, Time, Forgiveness, Redemption, Journey, Sands of Time, Reflection, Human Quest, Departure, Earthly Sphere, Triumph, Penance"
 image-description: "An image of a serene beach at sunset, where waves gently lap the shore and sands slip through outstretched fingers. A lone figure stands in contemplation, symbolizing the reflections on time, forgiveness, and life's journey expressed in the poem."
 
-
-
-permalink: /2006/01/04/the_path_west/
 categories:
   - Personal Writing
 ---

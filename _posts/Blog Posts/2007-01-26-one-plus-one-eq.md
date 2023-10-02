@@ -13,7 +13,6 @@ description: "This article delves into the concept of universal standards for in
 keywords:  Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value, Religion, Politics
 image-description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
 
-permalink: /2007/01/26/Universal-Standards-of-Conduct-Beauty-and-Truth/
 categories:
   - Religion
 ---

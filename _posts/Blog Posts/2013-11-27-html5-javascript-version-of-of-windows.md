@@ -20,7 +20,6 @@ keywords: "HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photo
 
 layout: post
 
-permalink: /2013/11/27/The-Future-of-Web-Based-Computing/
 image: /wp-content/uploads/2013/11/javascript.jpg
 categories:
   - Computers

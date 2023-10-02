@@ -12,9 +12,6 @@ description: "This article presents an intricate examination of the themes prese
 keywords: "Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships, Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith"
 image-description: "An image combining the book cover of 'Children of Men,' a depiction of the Garden of Eden, and symbolic representations of the themes such as a DNA helix for science, intertwined hands for relationships, and an apple for temptation. The collage symbolizes the multifaceted exploration of the book's themes in relation to theology."
 
-
-
-permalink: /2007/01/16/sex_gardening_a/
 categories:
   - Religion
 ---

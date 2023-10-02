@@ -16,7 +16,6 @@ keywords: "Motorola, Project Ara, modular smartphones, commodification, device c
 
 layout: post
 
-permalink: /2013/11/22/the-component-smart-phone-and-why-it-will-fail/
 image: /wp-content/uploads/2013/11/modules-283e329ee51bbee11f4765c3501e7d1b.jpg
 categories:
   - Computers

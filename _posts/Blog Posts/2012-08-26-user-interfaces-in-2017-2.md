@@ -15,7 +15,6 @@ keywords: "digital realism, sound quality, computer graphics, user interface des
 
 layout: post
 
-permalink: /2012/08/26/user-interfaces-in-2017-2/
 image: /wp-content/uploads/2013/06/color-eye.png
 categories:
   - Computers

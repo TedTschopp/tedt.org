@@ -27,7 +27,8 @@ tags: ["Legend", "Mystery", "Supernatural", "Swiss Culture"]
 
 layout: post
 
-permalink: /2023/09/23/The-Betten-Dog/
+permalink: /Swiss-Folklore/:title:output_ext
+
 
 image: /img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.png
 

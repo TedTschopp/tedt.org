@@ -9,7 +9,6 @@ excerpt:
 description: A collection of images to use as backdrops for Gamma World, inspired by Pixel Art and Retro Video Games
 layout: post
 
-permalink: /2023/08/27/Gamma-World-Terrain-Backdrops/
 image: 
 image-alt: 
   

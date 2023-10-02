@@ -8,7 +8,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-permalink: /2005/03/13/myedison-com-corporate-portal/
 categories:
   - Projects
 image: wp-content/uploads/2011/02/plumtree_2dportal_1.gif

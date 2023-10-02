@@ -19,7 +19,6 @@ image-credits-URL: https://www.tedt.org/
 image-credits-title: The Limitless Garden
 image-credits-artist: Ted Tschopp and Midjourney
 
-permalink: /2007/09/24/The-Limitless-Garden-A-Theological-Exploration-of-Eden/
 categories:
   - Religion
   - Science

@@ -14,9 +14,6 @@ keywords: "Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Sy
 
 image-description: "An abstract representation of the two concepts of hell: annihilation and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing the profound and uncomfortable nature of these beliefs. It conveys the universality and nightmarish quality of hell in human culture.  In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
 
-
-
-permalink: /2005/10/24/Contemplating-the-Afterlife-Understanding-Hell-from-Various-Perspectives/
 categories:
   - Religion
 ---

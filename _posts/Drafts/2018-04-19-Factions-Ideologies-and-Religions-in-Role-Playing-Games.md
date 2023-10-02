@@ -15,7 +15,6 @@ keywords: Role playing games, Ideologies, Factions. Religions, World-building, G
 
 layout: post
 
-permalink: /2018/04/19/Factions-Ideologies-and-Religions-in-Role-Playing-Games/
 image: /wp-content/uploads/2018/04/Sunset on this ideology.jpg
 image-credits: |
   Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City by Giorgio Minguzzi https://www.flickr.com/photos/iz4aks/4005020863 Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)

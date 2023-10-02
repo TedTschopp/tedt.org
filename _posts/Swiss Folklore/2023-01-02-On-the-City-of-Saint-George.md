@@ -12,7 +12,8 @@ description: On the Mountain of Saint George, discover a rich tapestry of legend
 
 layout: post
 
-permalink: /2023/01/02/2023-01-02-On-the-Mountain-of-Saint-George/
+permalink: /Swiss-Folklore/:title:output_ext
+
 image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae of Matthaeus Merian.
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158

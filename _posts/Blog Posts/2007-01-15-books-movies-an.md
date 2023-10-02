@@ -15,7 +15,6 @@ image-description: "An image that juxtaposes the cover of 'Children of Men' book
 
 
 
-permalink: /2007/01/15/Comparing-Children-of-Men-Book-and-Movie-Exploration
 categories:
  - Movies
  - Books

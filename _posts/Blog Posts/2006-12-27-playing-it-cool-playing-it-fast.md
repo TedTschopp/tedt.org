@@ -7,7 +7,6 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
 layout: post
 
-permalink: /2006/12/27/playing-it-cool-playing-it-fast/
 categories:
   - Computers
 ---

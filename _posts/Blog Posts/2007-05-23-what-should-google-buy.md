@@ -13,7 +13,6 @@ description: "In this article, the author revisits a previous conversation on wh
 keywords: "Google, investment strategy, data mining, GIS, real-time monitoring, pattern recognition, algorithms, advertising, branding, content creation, content consumption, real-world information, online integration"
 image-description: "An intricate diagram illustrating the key areas of investment suggested for Google, including icons and visual elements representing data mining, GIS, real-time monitoring, algorithms, and the connection between real-world and online information, symbolizing the multifaceted approach to growth and innovation."
 
-permalink: /2007/05/23/what-should-google-buy/
 categories:
   - Computers
 ---

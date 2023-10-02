@@ -15,7 +15,6 @@ keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innov
 
 layout: post
 
-permalink: /2023/09/17/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations/
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
   

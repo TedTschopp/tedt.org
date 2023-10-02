@@ -13,7 +13,6 @@ description: "The author shares their experience with managing 212 different RSS
 keywords: "RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD, linkblogs, reading overload, scanning articles, information overload, feed reading applications"
 image-description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
 
-permalink: /2007/06/07/too-many-feeds/
 categories:
   - Computers
 ---

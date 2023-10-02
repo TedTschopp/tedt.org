@@ -3,7 +3,7 @@ title: Comment Policy
 date: 1993-01-01T08:41:00+00:00
 author: Ted Tschopp
 layout: post
-permalink: /2017/12/19/comment_policy
+permalink: /Comment_Policy/
 ---
 ## Keep it civil aka don’t be a jerk
 

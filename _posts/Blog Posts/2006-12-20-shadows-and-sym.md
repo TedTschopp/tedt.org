@@ -13,9 +13,6 @@ description: "This article delves into the author's lifelong fascination with fa
 keywords: "Fantasy Literature, Romanticism, Shadows, Light, Chronicles of Narnia, The Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love, Symbolism, Newbery Awards"
 image-description: "An image of an open book, with intricate shadows cast from symbolic shapes above. The shadows twist and slither on the page, drawing attention to the hidden shapes that create them. A soft light emanates from the background, symbolizing the overarching theme of light and understanding explored in the article."
 
-
-
-permalink: /2006/12/20/From-Shadows-to-Light/
 categories:
  - Books
 

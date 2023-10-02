@@ -14,7 +14,6 @@ description: "This article explores various quotes and letters of Martin Luther 
 keywords: "Martin Luther, beer, moderation, Christianity, theology, history, soberness, gluttony, drunkenness, quotations, Lutheran tradition"
 image-description: "An image of a vintage beer mug juxtaposed with an old parchment containing Martin Luther's handwriting, symbolizing the historical connection between theological reflections and beer in Luther's time."
 
-permalink: /2007/02/16/martin_luther_on_beer/
 categories:
   - Quotes
   - Religion
