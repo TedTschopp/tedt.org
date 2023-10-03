@@ -6,8 +6,7 @@ title-url: ''
 subtitle: A Rainy Day Adventure Leads to an Unforgettable Christmas Experience
 subtitle-url: ''
 quote: ''
-excerpt: "What does Advent mean to you?  What is that sense of yearning and longing\
-    \ we all have for something.   \n"
+excerpt: "What does Advent mean to you?  What is that sense of yearning and longing we all have for something."
 source: ''
 source-url: ''
 call-to-action: ''
@@ -25,15 +24,11 @@ description: 'What does Advent mean to you?  What is that sense of yearning and 
     we all have for something.   Join the author on a surprising trip to Disneyland
     where a rainy day turned into a powerful and emotional Christmas experience. From
     joyful rides to a candlelight procession, this account captures the spirit of
-    Advent in a way that is both profound and unexpected.
-
-    '
-seo-description: "What does Advent mean to you?  What is that sense of yearning and\
-    \ longing we all have for something.   \n"
+    Advent in a way that is both profound and unexpected.'
+seo-description: "What does Advent mean to you?  What is that sense of yearning and longing we all have for something."
 
 categories:
 - Religion
-- Computers
 tags: ''
 keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spiritual
     Experience, Rainy Day, Toon Town, Small World, Grumpy Jester Hat, Luke Chapter
