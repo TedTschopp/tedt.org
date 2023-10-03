@@ -50,7 +50,7 @@ image-title: ''
 
 monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
-permalink: ''
+
 
 mathjax: ''
 

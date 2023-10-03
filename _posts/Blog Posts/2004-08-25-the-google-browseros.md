@@ -5,7 +5,7 @@ title: 'Google''s Vision for a Unified Internet OS: A New Dawn in Connectivity'
 title-url: ''
 subtitle: Exploring the Potential of Google's Web-Based Operating System
 subtitle-url: ''
-quote: ''
+quote: 'Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process.'
 excerpt: ''
 source: ''
 source-url: ''
@@ -40,12 +40,12 @@ coordinates:
     latitude: ''
     longitude: ''
 
-image: ''
+image: 'img/2004-08-25/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
 image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
+image-author: 'Ted Tschopp and Midjourney'
+image-author-URL: 'https://www.tedt.org/'
+image-credits: 'Ted Tschopp and Midjourney'
+image-credits-URL: 'https://www.tedt.org/'
 image-credits-artist: ''
 image-credits-artist-URL: ''
 image-credits-title: ''
@@ -57,7 +57,7 @@ image-title: ''
 
 monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
-permalink: ''
+
 
 mathjax: ''
 

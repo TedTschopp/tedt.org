@@ -53,7 +53,7 @@ image-title: ''
 
 monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
-permalink: ''
+
 
 mathjax: ''
 
@@ -65,4 +65,3 @@ Enjoy.
 
 
 <script src="https://gist.github.com/TedTschopp/43e73fa49d77484d457d4d352a84289a.js"></script>
-

@@ -67,7 +67,7 @@ image-title: FAME - Fitness, Academics, Mystical, Emotional
 
 monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
-permalink: ''
+
 
 mathjax: true
 
