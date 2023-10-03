@@ -84,11 +84,8 @@ for dirpath, dirnames, filenames in os.walk(post_directory):
             for field in standard_fields:
                 if field in existing_yaml:
                     standardized_yaml[field] = existing_yaml[field]
-
-            # Add empty fields for any missing fields
-            for field in standard_fields:
-                if field not in standardized_yaml:
-                    standardized_yaml[field] = ""
+                elif field == "":
+                    standardized_yaml[field] = "\n"
 
             # Extract the content of the file
             content_lines = lines[len(yaml_lines) + 1:]
@@ -96,6 +93,6 @@ for dirpath, dirnames, filenames in os.walk(post_directory):
             # Write the updated YAML front matter and content back to the file
             with open(filepath, 'w') as f:
                 f.write("---\n")
-                f.write(yaml.dump(standardized_yaml, default_flow_style=False))
+                f.write(yaml.dump(standardized_yaml, allow_unicode=True, default_flow_style=False, sort_keys=False, indent=4))
                 f.write("---\n")
                 f.write("".join(content_lines))

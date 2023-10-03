@@ -1,20 +1,44 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2018-04-22 10:04:00+00:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
+seo-description: ''
+
 categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
 - Draft
-coordinates: ''
-date: 2018-04-22 10:04:00+00:00
-description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
+tags: ''
+keywords: ''
+
 draft-status: component
-excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2018/04/The-Leviathan.jpg
 image-alt: ''
 image-author: ''
@@ -26,24 +50,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 # Contents

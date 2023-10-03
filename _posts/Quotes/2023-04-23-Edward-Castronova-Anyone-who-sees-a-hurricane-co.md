@@ -1,15 +1,41 @@
 ---
-author:
-  name: Edward Castronova
-bullets: ''
+layout: quotes
+
+title: ''
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: Anyone who sees a hurricane coming should warn others.
+excerpt: ''
+source: Exodus to the Virtual World
+source-url: ''
 call-to-action: ''
+
+date: 2023-04-23 11:44:45.180083
+update: ''
+author:
+    name: Edward Castronova
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Quotes
-coordinates: ''
-date: 2023-04-23 11:44:45.180083
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -21,24 +47,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: quotes
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Quotes-Database/:title:output_ext
-quote: Anyone who sees a hurricane coming should warn others.
-seo-description: ''
-source: Exodus to the Virtual World
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: ''
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Quotes-Database/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 "Anyone who sees a hurricane coming should warn others. I see a hurricane coming.
 

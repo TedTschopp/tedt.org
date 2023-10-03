@@ -1,25 +1,51 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Firearms in MCC & DCC
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: "The following rules are what I have collected from around the internet for\
+    \ the use of firearms in MCC & DCC.  I will be playtesting these by converting\
+    \ a Gamma World module to MCC. \n"
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2018-09-04 17:37:12-07:00
+update: 2018-09-04 16:44:34-07:00
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: "The following rules are what I have collected from around the internet\
+    \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
+    \ a Gamma World module to MCC. \n"
+seo-description: "The following rules are what I have collected from around the internet\
+    \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
+    \ a Gamma World module to MCC. \n"
+
 categories:
 - Role Playing Games
 - Gamma World
 - Draft
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
-coordinates: ''
-date: 2018-09-04 17:37:12-07:00
-description: "The following rules are what I have collected from around the internet\
-  \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
-  \ a Gamma World module to MCC. \n"
+tags: ''
+keywords: ''
+
 draft-status: Alpha
-excerpt: "The following rules are what I have collected from around the internet for\
-  \ the use of firearms in MCC & DCC.  I will be playtesting these by converting a\
-  \ Gamma World module to MCC. \n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2018-09-04/MCC-Guns.jpg
 image-alt: ''
 image-author: ''
@@ -31,26 +57,14 @@ image-credits-artist-URL: ''
 image-credits-title: Weapon & Prop Concepts
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: "The following rules are what I have collected from around the internet\
-  \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
-  \ a Gamma World module to MCC. \n"
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Firearms in MCC & DCC
-title-url: ''
-update: 2018-09-04 16:44:34-07:00
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 

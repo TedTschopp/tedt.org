@@ -1,26 +1,53 @@
 ---
-author:
-  avatar: https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.jpg
-  name: Hanson W. Baldwin
-  url: https://en.wikipedia.org/wiki/Hanson_W._Baldwin
-bullets: ''
+layout: post
+
+title: 1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John
+    Wilson
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: 'IT WILL not be long. In ten years—five years, perhaps only two or three
+    —the historic count-down will start: "Ten — nine — eight — seven — six — five
+    — four — three — two — one —" At zero a new era will open up on the earth—the
+    era of push-button war.
+
+    '
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2019-01-23 12:17:59+00:00
+update: ''
+author:
+    avatar: https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.jpg
+    name: Hanson W. Baldwin
+    url: https://en.wikipedia.org/wiki/Hanson_W._Baldwin
+
+bullets: ''
+
+description: 'REPRINT: An exploration of the Cold War-era race between the United
+    States and the Soviet Union to develop the first intercontinental ballistic missile
+    (ICBM). Highlighting the technological, strategic, and political implications,
+    it examines the reasons behind potential U.S. lag in this critical contest. The
+    author emphasizes the urgent need for public awareness and informed democratic
+    decision-making on this vital matter of national security, technological innovation,
+    and global power dynamics.'
+seo-description: ''
+
 categories:
 - Reprint
-coordinates: ''
-date: 2019-01-23 12:17:59+00:00
-description: 'REPRINT: An exploration of the Cold War-era race between the United
-  States and the Soviet Union to develop the first intercontinental ballistic missile
-  (ICBM). Highlighting the technological, strategic, and political implications, it
-  examines the reasons behind potential U.S. lag in this critical contest. The author
-  emphasizes the urgent need for public awareness and informed democratic decision-making
-  on this vital matter of national security, technological innovation, and global
-  power dynamics.'
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: "IT WILL not be long. In ten years\u2014five years, perhaps only two or three\
-  \ \u2014the historic count-down will start: \"Ten \u2014 nine \u2014 eight \u2014\
-  \ seven \u2014 six \u2014 five \u2014 four \u2014 three \u2014 two \u2014 one \u2014\
-  \" At zero a new era will open up on the earth\u2014the era of push-button war.\n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
 image-alt: Picture of an ICBM
 image-author: ''
@@ -32,25 +59,14 @@ image-credits-artist-URL: ''
 image-credits-title: ICBM Launch
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: 1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John
-  Wilson
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 IT WILL not be long. In ten years—five years, perhaps only two or three —the historic count-down will start: "Ten — nine — eight — seven — six — five — four — three — two — one —" At zero a new era will open up on the earth—the era of push-button war. A giant rocket, 100 to 135 feet high, will lift slowly from its launching pad and, with voice of thunder, tongue of flame, disappear into the stratosphere. Some 20 to 30 minutes later and 5,000 miles away, the world's first intercontinental ballistic missile will plunge toward the earth. 

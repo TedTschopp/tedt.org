@@ -1,25 +1,58 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: The Betten Dog
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: In 'Betten,' a stream separates the communities of Rebstein and Marbach,
+    where people used to see the Betten Dog with a long, drooping tongue, fiery eyes,
+    and a long tail.
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2023-09-23 15:25:46
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: A Swiss German folk tale about a mysterious dog that appears in Betten
+    and accompanies nocturnal wanderers, especially wrongdoers, without causing harm.
+seo-description: ''
+
 categories:
 - Folklore
-coordinates:
-  latitude: '47.3667'
-  longitude: '9.5615'
-date: 2023-09-23 15:25:46
-description: A Swiss German folk tale about a mysterious dog that appears in Betten
-  and accompanies nocturnal wanderers, especially wrongdoers, without causing harm.
+tags:
+- Legend
+- Mystery
+- Supernatural
+- Swiss Culture
+keywords: Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer
+
 draft-status: ''
-excerpt: In 'Betten,' a stream separates the communities of Rebstein and Marbach,
-  where people used to see the Betten Dog with a long, drooping tongue, fiery eyes,
-  and a long tail.
+
+location:
+    address: ''
+    city: ''
+    country: ''
+    name: ''
+    on-map: Betten (47.3667° N, 9.5615° E)
+    place-names: Betten, Rebstein and Marbach, Switzerland
+    state: ''
+    zip: ''
+coordinates:
+    latitude: '47.3667'
+    longitude: '9.5615'
+
 image: /img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.png
 image-alt: An illustration of a dog, with a long drooping tongue, red eyes, and a
-  long tail, appearing on a bridge over a stream between two villages in Switzerland.
+    long tail, appearing on a bridge over a stream between two villages in Switzerland.
 image-author: ''
 image-author-URL: ''
 image-credits: ''
@@ -29,36 +62,14 @@ image-credits-artist-URL: ''
 image-credits-title: The Betten Dog
 image-description: ''
 image-title: ''
-keywords: Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer
-layout: post
-location:
-  address: ''
-  city: ''
-  country: ''
-  name: ''
-  on-map: "Betten (47.3667\xB0 N, 9.5615\xB0 E)"
-  place-names: Betten, Rebstein and Marbach, Switzerland
-  state: ''
-  zip: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: Mysterious Dog
-order: ''
-permalink: /Swiss-Folklore/:title:output_ext
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags:
-- Legend
-- Mystery
-- Supernatural
-- Swiss Culture
-title: The Betten Dog
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Swiss-Folklore/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 > <ins>Legends from Uri 1 - 3</ins>

@@ -1,21 +1,46 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: 'Bespreekbaarheid: The Missing Ingredient in IT Organizations'
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: ''
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2023-09-17 16:48:28
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: Explore the concept of Bespreekbaarheid, a Dutch term that encourages
+    open dialogue and transparency, and discover why it's crucial for success in IT
+    organizations. Learn how it fosters innovation, enhances problem-solving, and
+    builds trust among team members.
+seo-description: ''
+
 categories:
 - Computers
 - Communications
-coordinates: ''
-date: 2023-09-17 16:48:28
-description: Explore the concept of Bespreekbaarheid, a Dutch term that encourages
-  open dialogue and transparency, and discover why it's crucial for success in IT
-  organizations. Learn how it fosters innovation, enhances problem-solving, and builds
-  trust among team members.
+tags: ''
+keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
+    Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
 image-author: ''
@@ -27,25 +52,14 @@ image-credits-artist-URL: ''
 image-credits-title: Modern Office
 image-description: ''
 image-title: ''
-keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
-  Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: 'Bespreekbaarheid: The Missing Ingredient in IT Organizations'
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 

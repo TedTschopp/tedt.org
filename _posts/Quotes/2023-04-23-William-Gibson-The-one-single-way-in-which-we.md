@@ -1,15 +1,42 @@
 ---
-author:
-  name: William Gibson
-bullets: ''
+layout: quotes
+
+title: ''
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: 'The one single way in which we can choose to not get old: by choosing not
+    to be militant nativists of the era in which we first got laid.'
+excerpt: ''
+source: Twitter Feed
+source-url: https://twitter.com/greatdismal/status/453367121754333184?s=61&t=xLITO7YGW5a-jEqio72W9A'
 call-to-action: ''
+
+date: 2023-04-23 11:44:45.180083
+update: ''
+author:
+    name: William Gibson
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Quotes
-coordinates: ''
-date: 2023-04-23 11:44:45.180083
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -21,25 +48,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: quotes
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Quotes-Database/:title:output_ext
-quote: 'The one single way in which we can choose to not get old: by choosing not
-  to be militant nativists of the era in which we first got laid.'
-seo-description: ''
-source: Twitter Feed
-source-url: https://twitter.com/greatdismal/status/453367121754333184?s=61&t=xLITO7YGW5a-jEqio72W9A'
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: ''
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Quotes-Database/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 The one single way in which we can choose to not get old: by choosing not to be militant nativists of the era in which we first got laid.

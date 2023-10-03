@@ -1,15 +1,42 @@
 ---
-author:
-  name: Eric Hoffer
-bullets: ''
+layout: quotes
+
+title: ''
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: Every great cause begins as a movement, becomes a business, and eventually
+    degenerates into a racket.
+excerpt: ''
+source: The Temper Of Our Times
+source-url: ''
 call-to-action: ''
+
+date: 2023-04-23 11:44:45.180083
+update: ''
+author:
+    name: Eric Hoffer
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Quotes
-coordinates: ''
-date: 2023-04-23 11:44:45.180083
-description: ''
+tags: Movements,Politics,Religion
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -21,24 +48,13 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: quotes
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Quotes-Database/:title:output_ext
-quote: Every great cause begins as a movement, becomes a business, and eventually
-  degenerates into a racket.
-seo-description: ''
-source: The Temper Of Our Times
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: Movements,Politics,Religion
-title: ''
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Quotes-Database/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
  Every great cause begins as a movement, becomes a business, and eventually degenerates into a racket.

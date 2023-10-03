@@ -1,22 +1,47 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Power Cells from Gamma World in MCC & DCC
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: "The following is an integration of rules for Gamma World's Power Cells with\
+    \  Mutant Crawl Classic.  \n"
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2018-11-02 10:37:12-07:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: "The following is an integration of rules for Gamma World's Power Cells\
+    \ with  Mutant Crawl Classic.  \n"
+seo-description: "The following is an integration of rules for Gamma World's Power\
+    \ Cells with  Mutant Crawl Classic.  \n"
+
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Draft
-coordinates: ''
-date: 2018-11-02 10:37:12-07:00
-description: "The following is an integration of rules for Gamma World's Power Cells\
-  \ with  Mutant Crawl Classic.  \n"
+tags: ''
+keywords: ''
+
 draft-status: Alpha
-excerpt: "The following is an integration of rules for Gamma World's Power Cells with\
-  \  Mutant Crawl Classic.  \n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2018-11-02/FuelCellRenders2.jpg
 image-alt: ''
 image-author: ''
@@ -28,25 +53,14 @@ image-credits-artist-URL: ''
 image-credits-title: District 9 Alien Fuel Cell
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: "The following is an integration of rules for Gamma World's Power\
-  \ Cells with  Mutant Crawl Classic.  \n"
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Power Cells from Gamma World in MCC & DCC
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 # Contents

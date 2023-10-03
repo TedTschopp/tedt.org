@@ -1,15 +1,44 @@
 ---
-author:
-  name: Ray Bradbury
-bullets: ''
+layout: quotes
+
+title: ''
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: Good luck, and stop judging at such a great distance. You are simply not qualified.
+    Disney was full of errors, paradoxes, mistakes. He was also full of life, beauty,
+    insight. Which speaks for all of us, eh? We are all mysteries of light and dark.  There
+    are no true conservatives, liberals, etc, in the world. Only people.
+excerpt: ''
+source: June 10, 1974 Letter to Brian Sibley
+source-url: ''
 call-to-action: ''
+
+date: 2023-04-23 11:44:45.180083
+update: ''
+author:
+    name: Ray Bradbury
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Quotes
-coordinates: ''
-date: 2023-04-23 11:44:45.180083
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -21,27 +50,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: quotes
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Quotes-Database/:title:output_ext
-quote: Good luck, and stop judging at such a great distance. You are simply not qualified.
-  Disney was full of errors, paradoxes, mistakes. He was also full of life, beauty,
-  insight. Which speaks for all of us, eh? We are all mysteries of light and dark.  There
-  are no true conservatives, liberals, etc, in the world. Only people.
-seo-description: ''
-source: June 10, 1974 Letter to Brian Sibley
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: ''
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Quotes-Database/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 June 10, 1974
 

@@ -1,23 +1,47 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Of Maps and Monsters, the Right way to Populate a World Part II
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: "This work is the beginning of a collection of notes on Monsters.  In the\
+    \ future I will split this out into several different sections.  I wanted to start\
+    \ wtih what I had here and start working my thoughts out while getting some of\
+    \ this out of my head and into a place I can review and look at. \n"
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2018-11-19 21:04:42-07:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: null
+seo-description: ''
+
 categories:
 - Role Playing Games
 - Maps
 - Monsters
 - Draft
-coordinates: ''
-date: 2018-11-19 21:04:42-07:00
-description: null
+tags: ''
+keywords: ''
+
 draft-status: notes
-excerpt: "This work is the beginning of a collection of notes on Monsters.  In the\
-  \ future I will split this out into several different sections.  I wanted to start\
-  \ wtih what I had here and start working my thoughts out while getting some of this\
-  \ out of my head and into a place I can review and look at. \n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
 image-alt: ''
 image-author: ''
@@ -29,24 +53,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: true
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Of Maps and Monsters, the Right way to Populate a World Part II
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: true
+
+order: ''
 ---
 <style>
 .dccvsdnd thead tr th {

@@ -1,17 +1,41 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Microsoft teams with Creative Commons or Common Corporate Mistakes
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: ''
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2006-06-23 23:50:37+00:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Computers
-coordinates: ''
-date: 2006-06-23 23:50:37+00:00
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -23,24 +47,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Microsoft teams with Creative Commons or Common Corporate Mistakes
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 Microsoft tonight [announced a new partnership](http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx) with [Creative Commons](http://creativecommons.org/), the organization dedicated to providing content producers a legal alternative to “all rights reserved” copyright law, to offer a new tool for easy insertion of Creative Commons licenses into works created with Microsoft Office.
 

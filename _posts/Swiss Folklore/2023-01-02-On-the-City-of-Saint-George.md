@@ -1,50 +1,37 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
-call-to-action: ''
-categories:
-- Folklore
-coordinates: ''
-date: 2023-01-02 09:26:36-08:00
-description: On the Mountain of Saint George, discover a rich tapestry of legends
-  weaving together Wodan, the god of winds, and St. George, the patron Saint of knights.
-  Explore ancient cultural sites, immeasurable treasures, and hidden secrets within
-  the mountain. Witness tales of fiery dragons, brave knights, restless spirits, and
-  the intriguing connection between ancient gods, rituals, and natural treasures,
-  in a region that bridges Germany, Switzerland, and the old Habsburg empire.
-draft-status: ''
-excerpt: Wodan, the god of the winds, is also the god of the creatures of the night.
-  In Christian times, St. George, the patron Saint of knights and rich lords, often
-  took his place.
-image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
-image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
-  with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
-  of Matthaeus Merian.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
-image-credits-artist: "Matth\xE4us Merian (*1593 - \u20201650)"
-image-credits-artist-URL: ''
-image-credits-title: "Stein am Rhein \u2013 Stenium ad Rhenum"
-image-description: ''
-image-title: ''
-keywords: ''
 layout: post
-location: ''
-mathjax: ''
-monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Swiss-Folklore/:title:output_ext
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
+
+title: On the Mountain of Saint George
+title-url: ''
 subtitle: ''
 subtitle-url: ''
+quote: ''
+excerpt: Wodan, the god of the winds, is also the god of the creatures of the night.
+    In Christian times, St. George, the patron Saint of knights and rich lords, often
+    took his place.
+source: ''
+source-url: ''
+call-to-action: ''
+
+date: 2023-01-02 09:26:36-08:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: On the Mountain of Saint George, discover a rich tapestry of legends
+    weaving together Wodan, the god of winds, and St. George, the patron Saint of
+    knights. Explore ancient cultural sites, immeasurable treasures, and hidden secrets
+    within the mountain. Witness tales of fiery dragons, brave knights, restless spirits,
+    and the intriguing connection between ancient gods, rituals, and natural treasures,
+    in a region that bridges Germany, Switzerland, and the old Habsburg empire.
+seo-description: ''
+
+categories:
+- Folklore
 tags:
 - St. George
 - Odin
@@ -52,10 +39,37 @@ tags:
 - Venetian
 - Treasure
 - Men in Black
-title: On the Mountain of Saint George
-title-url: ''
-update: ''
+keywords: ''
+
+draft-status: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
+image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
+image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
+    with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
+    of Matthaeus Merian.
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
+image-credits-artist: Matthäus Merian (*1593 - †1650)
+image-credits-artist-URL: ''
+image-credits-title: Stein am Rhein – Stenium ad Rhenum
+image-description: ''
+image-title: ''
+
+monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
+permalink: /Swiss-Folklore/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 > <ins>Legends of the Canton St. Gallen</ins>

@@ -1,24 +1,50 @@
 ---
+layout: post
+
+title: 'The Three Types of People in Conversations: A Guide to Engaging Your Audience'
+title-url: ''
+subtitle: Understanding Conversation Starters, Participants, and Observers in the
+    Digital World
+subtitle-url: ''
+quote: ''
+excerpt: ''
+source: ''
+source-url: ''
+call-to-action: Are you a conversation starter, participant, or observer? Share your
+    insights or experiences in the comments below. Let’s continue the conversation
+    and learn how we can better engage with each other online!
+
+date: 2009-07-09 10:48:39+00:00
+update: ''
 author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
 bullets: ''
-call-to-action: "Are you a conversation starter, participant, or observer? Share your\
-  \ insights or experiences in the comments below. Let\u2019s continue the conversation\
-  \ and learn how we can better engage with each other online!"
+
+description: 'This article examines the three fundamental roles in any conversation:
+    starters, participants, and observers. Drawing parallels between social gatherings
+    and website engagement, it explores how these roles dynamically change and offers
+    insights into creating a platform that encourages all types of engagement, from
+    starting conversations to lurking.'
+seo-description: ''
+
 categories:
 - Communications
 - Computers
-coordinates: ''
-date: 2009-07-09 10:48:39+00:00
-description: 'This article examines the three fundamental roles in any conversation:
-  starters, participants, and observers. Drawing parallels between social gatherings
-  and website engagement, it explores how these roles dynamically change and offers
-  insights into creating a platform that encourages all types of engagement, from
-  starting conversations to lurking.'
+tags: ''
+keywords: conversations, conversation starters, participants, observers, website engagement,
+    digital community, blog, comments, listeners, social dynamics
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-12-47-pm.png
 image-alt: ''
 image-author: ''
@@ -29,30 +55,18 @@ image-credits-artist: ''
 image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: 'An illustration of the three types of people: Conversation Starters
-  initiating dialogue, Participants actively engaging, and Observers silently listening.
-  These images symbolize the dynamic roles that individuals play at social events
-  and within online communities.'
+    initiating dialogue, Participants actively engaging, and Observers silently listening.
+    These images symbolize the dynamic roles that individuals play at social events
+    and within online communities.'
 image-title: ''
-keywords: conversations, conversation starters, participants, observers, website engagement,
-  digital community, blog, comments, listeners, social dynamics
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: Understanding Conversation Starters, Participants, and Observers in the
-  Digital World
-subtitle-url: ''
-tags: ''
-title: 'The Three Types of People in Conversations: A Guide to Engaging Your Audience'
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 The first is that there are three basic types of people.  There are people who start conversations.  There are people who participate in conversations.  Finally there are people who listen to conversations.
 

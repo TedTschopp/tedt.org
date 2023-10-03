@@ -1,16 +1,40 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
-call-to-action: ''
-categories: ''
-coordinates: ''
-date: 1993-01-01 08:41:00+00:00
-description: ''
-draft-status: ''
+layout: post
+
+title: Privacy Policy
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
 excerpt: ''
+source: ''
+source-url: ''
+call-to-action: ''
+
+date: 1993-01-01 08:41:00+00:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
+categories: ''
+tags: ''
+keywords: ''
+
+draft-status: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -22,24 +46,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Privacy-Policy/
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Privacy Policy
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Privacy-Policy/
+
+mathjax: ''
+
+order: ''
 ---
 
 This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.  

@@ -1,18 +1,42 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: Computerized Story Telling
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: ''
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2007-01-30 00:34:46+00:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Books
 - Computers
-coordinates: ''
-date: 2007-01-30 00:34:46+00:00
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -24,24 +48,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Computerized Story Telling
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 I found an article today on [Digg](http://digg.com/software/Forget_1000_monkeys_could_a_PC_write_Shakespeare)&#160;about computers writing stories.&#160; While I do think this is possible, I have yet to hear anyone getting close.&#160; [Music](http://arts.ucsc.edu/faculty/cope/mp3page.htm) has been done, and done so well that it’s causing people in to rethink what creativity means.
 

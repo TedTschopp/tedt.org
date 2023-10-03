@@ -1,15 +1,42 @@
 ---
-author:
-  name: Hippocrates
-bullets: ''
+layout: quotes
+
+title: ''
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: Life is short, and art long, opportunity fleeting, experience perilous, and
+    decision difficult.
+excerpt: ''
+source: Aphorisms
+source-url: ''
 call-to-action: ''
+
+date: 2023-04-23 11:44:45.180083
+update: ''
+author:
+    name: Hippocrates
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
 categories:
 - Quotes
-coordinates: ''
-date: 2023-04-23 11:44:45.180083
-description: ''
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -21,25 +48,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: quotes
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Quotes-Database/:title:output_ext
-quote: Life is short, and art long, opportunity fleeting, experience perilous, and
-  decision difficult.
-seo-description: ''
-source: Aphorisms
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: ''
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Quotes-Database/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 Life is short,\
 and art long,\

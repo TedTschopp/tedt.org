@@ -1,26 +1,53 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does
+    Alignment
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: 'As characters have adventures, they will gain a reputation, fame, and status.
+    You can track this growth in the campaign using Status Points. Status Points,
+    like experience points, are accumulated into a new number on your character sheet
+    called Rank. Rank is a measure of how your character’s reputation, fame, and status
+    affect the reactions of NPC’s in different situations. Unlike experience points,
+    which represents how capable a character is, status points represent how capable
+    the society around the characters feel the character is.
+
+    '
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2022-04-24 17:42:44-07:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: null
+seo-description: ''
+
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Draft
-coordinates: ''
-date: 2022-04-24 17:42:44-07:00
-description: null
+tags: ''
+keywords: ''
+
 draft-status: notes
-excerpt: "As characters have adventures, they will gain a reputation, fame, and status.\
-  \ You can track this growth in the campaign using Status Points. Status Points,\
-  \ like experience points, are accumulated into a new number on your character sheet\
-  \ called Rank. Rank is a measure of how your character\u2019s reputation, fame,\
-  \ and status affect the reactions of NPC\u2019s in different situations. Unlike\
-  \ experience points, which represents how capable a character is, status points\
-  \ represent how capable the society around the characters feel the character is.\n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2022/04/24/community-life.png
 image-alt: ''
 image-author: ''
@@ -32,25 +59,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: true
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does
-  Alignment
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: true
+
+order: ''
 ---
 <style>
 .dccvsdnd thead tr th {

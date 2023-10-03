@@ -1,23 +1,48 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: Gamma World Weapons in MCC & DCC
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: "The following is a conversion of rules for Gamma World's Traditional weapons\
+    \ in Mutant Crawl Classic.  \n"
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2018-10-14 17:37:12-07:00
+update: 2018-10-14 16:44:34-07:00
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: "The following is a conversion of rules for Gamma World's Traditional\
+    \ weapons in Mutant Crawl Classic.  \n"
+seo-description: "The following is a conversion of rules for Gamma World's Traditional\
+    \ weapons in Mutant Crawl Classic.  \n"
+
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
 - Draft
-coordinates: ''
-date: 2018-10-14 17:37:12-07:00
-description: "The following is a conversion of rules for Gamma World's Traditional\
-  \ weapons in Mutant Crawl Classic.  \n"
+tags: ''
+keywords: ''
+
 draft-status: Alpha
-excerpt: "The following is a conversion of rules for Gamma World's Traditional weapons\
-  \ in Mutant Crawl Classic.  \n"
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2018-10-14/seth-justus-huntersalienguns.jpg
 image-alt: ''
 image-author: ''
@@ -29,25 +54,14 @@ image-credits-artist-URL: ''
 image-credits-title: Hunters Alien Weapons and Devices
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: "The following is a conversion of rules for Gamma World's Traditional\
-  \ weapons in Mutant Crawl Classic.  \n"
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Gamma World Weapons in MCC & DCC
-title-url: ''
-update: 2018-10-14 16:44:34-07:00
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 
 

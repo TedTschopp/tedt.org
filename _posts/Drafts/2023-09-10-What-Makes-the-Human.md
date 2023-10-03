@@ -1,27 +1,51 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org/
-bullets: ''
+layout: post
+
+title: What Makes a Human?
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted
+    nature of human identity, exploring it through the lenses of biology, philosophy,
+    and culture. The author argues that being human is not solely defined by our biological
+    makeup but is a combination of our cognitive abilities, emotional experiences,
+    and social interactions.
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2023-07-22 18:51:10-07:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets: ''
+
+description: This draft on TTRPG Characters delves into the complex and multi-faceted
+    nature of human identity, exploring it through the lenses of biology, philosophy,
+    and culture. The author argues that being human is not solely defined by our biological
+    makeup but is a combination of our cognitive abilities, emotional experiences,
+    and social interactions.
+seo-description: ''
+
 categories:
 - Role Playing Games
-- "The M\xE4rchen Engine"
+- The Märchen Engine
 - Draft
-coordinates: ''
-date: 2023-07-22 18:51:10-07:00
-description: This draft on TTRPG Characters delves into the complex and multi-faceted
-  nature of human identity, exploring it through the lenses of biology, philosophy,
-  and culture. The author argues that being human is not solely defined by our biological
-  makeup but is a combination of our cognitive abilities, emotional experiences, and
-  social interactions.
+tags: ''
+keywords: ''
+
 draft-status: integration
-excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted
-  nature of human identity, exploring it through the lenses of biology, philosophy,
-  and culture. The author argues that being human is not solely defined by our biological
-  makeup but is a combination of our cognitive abilities, emotional experiences, and
-  social interactions.
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-author: Ted Tschopp using Midjourney
@@ -33,24 +57,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: true
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: What Makes a Human?
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: true
+
+order: ''
 ---
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Character Sheet - Work in Progress
 

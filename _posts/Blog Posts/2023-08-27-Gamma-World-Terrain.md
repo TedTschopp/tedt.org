@@ -1,18 +1,42 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: Gamma World Terrain Backdrops
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: null
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2023-08-27 10:55:48
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: A collection of images to use as backdrops for Gamma World, inspired
+    by Pixel Art and Retro Video Games
+seo-description: ''
+
 categories:
 - Gamma World
-coordinates: ''
-date: 2023-08-27 10:55:48
-description: A collection of images to use as backdrops for Gamma World, inspired
-  by Pixel Art and Retro Video Games
+tags: ''
+keywords: ''
+
 draft-status: ''
-excerpt: null
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: null
 image-alt: null
 image-author: ''
@@ -24,24 +48,14 @@ image-credits-artist-URL: ''
 image-credits-title: null
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Gamma World Terrain Backdrops
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 The following was a prompt experiment in Midjourney.  My goal was to create a series of background or header images that felt like they were imagery from Gamma World.  Here is a what came out.
 

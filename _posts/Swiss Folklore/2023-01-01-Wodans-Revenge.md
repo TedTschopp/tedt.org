@@ -1,26 +1,52 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: Wodan's Revenge
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
+excerpt: Thus sank Wodan, once worshipped by the people as a holy god.
+source: ''
+source-url: ''
 call-to-action: ''
+
+date: 2023-01-01 17:18:27-08:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: Wodan's Revenge narrates the tale of the once-worshipped pagan god Wodan,
+    who sought vengeance against those who turned to Christianity. This rich folklore
+    describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling
+    the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
+seo-description: ''
+
 categories:
 - Folklore
-coordinates: ''
-date: 2023-01-01 17:18:27-08:00
-description: Wodan's Revenge narrates the tale of the once-worshipped pagan god Wodan,
-  who sought vengeance against those who turned to Christianity. This rich folklore
-  describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling
-  the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
+tags:
+- Odin
+- Rhône
+keywords: ''
+
 draft-status: ''
-excerpt: Thus sank Wodan, once worshipped by the people as a holy god.
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
-image-alt: "Painting of Wodan coming down the a large river sitting on a water horse\
-  \ holding a battle sword in one hand and the globe in the other the river floods\
-  \ the bank and devastates a medieval city. In the style of antichrist, dark yellow\
-  \ and light red, jaros\u0142aw ja\u015Bnikowski, monumental murals, god rays, gustave\
-  \ buchet, hercules seghers"
+image-alt: Painting of Wodan coming down the a large river sitting on a water horse
+    holding a battle sword in one hand and the globe in the other the river floods
+    the bank and devastates a medieval city. In the style of antichrist, dark yellow
+    and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet,
+    hercules seghers
 image-author: ''
 image-author-URL: ''
 image-credits: ''
@@ -30,26 +56,14 @@ image-credits-artist-URL: ''
 image-credits-title: Woden's Revenge
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Swiss-Folklore/:title:output_ext
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags:
-- Odin
-- "Rh\xF4ne"
-title: Wodan's Revenge
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Swiss-Folklore/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 > <ins>**The Swiss Book of Legends**</ins>

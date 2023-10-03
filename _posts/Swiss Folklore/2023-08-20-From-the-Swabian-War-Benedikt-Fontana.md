@@ -1,62 +1,32 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
-call-to-action: ''
-categories:
-- Folklore
-coordinates:
-  latitude: 9.1753
-  longitude: 47.6592
-date: 2023-08-20 16:22:38
-description: The legend of the Swabian War narrates the valor of Benedikt Fontana
-  and the Swiss Confederates in the face of Austrian aggression. The story combines
-  elements of heroism, divine justice, and the battle for freedom.
-draft-status: ''
-excerpt: Watch out, the cow milkers will surely come again!
-image: /img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.jpg
-image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana leads
-  a group of resolute Swiss fighters, storming the bulwark with swords raised high,
-  expressions fierce and determined. The backdrop portrays majestic mountains, clouded
-  in the ominous smoke of the battlefield. The Swiss warriors' eyes gleam with determination
-  and resolve as they fight for their freedom. Their armor glints in the fleeting
-  sunlight, and their battle cries resonate with the passion for their land. The scene
-  encapsulates the spirit, courage, and will of a people unyielding in their fight
-  for independence.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: https://www.tedt.org/
-image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
-image-credits-title: 'Storming the Bulwark: Benedikt Fontana and Swiss Warriors''
-  Fight for Freedom in the Swiss Alps'
-image-description: ''
-image-title: ''
-keywords: Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom, Austrian
-  rule, divine justice, historical folklore
 layout: post
-location:
-  address: ''
-  city: ''
-  country: ''
-  name: ''
-  on-map: "Constance (47.6592\xB0 N, 9.1753\xB0 E)"
-  place-names: Various locations in Switzerland, including the city of Constance
-  state: ''
-  zip: ''
-mathjax: ''
-monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Swiss-Folklore/:title:output_ext
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
+
+title: From the Swabian War - Benedikt Fontana
+title-url: ''
 subtitle: ''
 subtitle-url: ''
+quote: ''
+excerpt: Watch out, the cow milkers will surely come again!
+source: ''
+source-url: ''
+call-to-action: ''
+
+date: 2023-08-20 16:22:38
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: The legend of the Swabian War narrates the valor of Benedikt Fontana
+    and the Swiss Confederates in the face of Austrian aggression. The story combines
+    elements of heroism, divine justice, and the battle for freedom.
+seo-description: ''
+
+categories:
+- Folklore
 tags:
 - Schwabenkrieg
 - Benedikt Fontana
@@ -64,7 +34,7 @@ tags:
 - 15th Century
 - Warfare
 - Legend
-- "Graub\xFCnden"
+- Graubünden
 - Heroism
 - Kaiser Maximilian
 - Ritter von Randeck
@@ -78,10 +48,51 @@ tags:
 - Folklore
 - Swiss Confederation
 - Tirol
-title: From the Swabian War - Benedikt Fontana
-title-url: ''
-update: ''
+keywords: Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom, Austrian
+    rule, divine justice, historical folklore
+
+draft-status: ''
+
+location:
+    address: ''
+    city: ''
+    country: ''
+    name: ''
+    on-map: Constance (47.6592° N, 9.1753° E)
+    place-names: Various locations in Switzerland, including the city of Constance
+    state: ''
+    zip: ''
+coordinates:
+    latitude: 9.1753
+    longitude: 47.6592
+
+image: /img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.jpg
+image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana leads
+    a group of resolute Swiss fighters, storming the bulwark with swords raised high,
+    expressions fierce and determined. The backdrop portrays majestic mountains, clouded
+    in the ominous smoke of the battlefield. The Swiss warriors' eyes gleam with determination
+    and resolve as they fight for their freedom. Their armor glints in the fleeting
+    sunlight, and their battle cries resonate with the passion for their land. The
+    scene encapsulates the spirit, courage, and will of a people unyielding in their
+    fight for independence.
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: https://www.tedt.org/
+image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist-URL: ''
+image-credits-title: 'Storming the Bulwark: Benedikt Fontana and Swiss Warriors''
+    Fight for Freedom in the Swiss Alps'
+image-description: ''
+image-title: ''
+
+monster-or-magical-or-religious-ideas: ''
 year-the-event-took-place: ''
+permalink: /Swiss-Folklore/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 > <ins> Swiss Legends and Heroic Tales</ins>

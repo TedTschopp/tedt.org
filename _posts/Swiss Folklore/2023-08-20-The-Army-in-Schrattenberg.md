@@ -1,58 +1,32 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
-call-to-action: ''
-categories:
-- Folklore
-coordinates:
-  latitude: 7.9783
-  longitude: 46.8911
-date: 2023-08-20 18:54:49
-description: A shepherd discovers a hidden world filled with warriors, treasures,
-  and magic in the mountains around Escholzmatt. A mysterious army awaits its time
-  to rise.
-draft-status: ''
-excerpt: The hole was no longer to be found, and the sheep never appeared again.
-image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
-image-alt: The mysterious army leader and his warriors sleep at the tables.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: https://www.tedt.org/
-image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
-image-credits-title: The Mysterious Army Leader Sleeps
-image-description: ''
-image-title: ''
-keywords: Schrattenberg, Escholzmatt, Gurnigel, Magic, Hidden Treasures, Warriors,
-  Folklore, Swiss Legends, Supernatural, Mystery
 layout: post
-location:
-  address: ''
-  city: ''
-  country: ''
-  name: ''
-  on-map: "Escholzmatt (46.8911\xB0 N, 7.9783\xB0 E), Gurnigel (46.7389\xB0 N, 7.4594\xB0\
-    \ E)"
-  place-names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
-  state: ''
-  zip: ''
-mathjax: ''
-monster-or-magical-or-religious-ideas:
-- A hidden underground world filled with warriors and treasures.
-- Supernatural beings with time prediction.
-- Magical properties, including disappearing entrances and magical doors.
-order: ''
-permalink: /Swiss-Folklore/:title:output_ext
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
+
+title: The Army in Schrattenberg
+title-url: ''
 subtitle: ''
 subtitle-url: ''
+quote: ''
+excerpt: The hole was no longer to be found, and the sheep never appeared again.
+source: ''
+source-url: ''
+call-to-action: ''
+
+date: 2023-08-20 18:54:49
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: A shepherd discovers a hidden world filled with warriors, treasures,
+    and magic in the mountains around Escholzmatt. A mysterious army awaits its time
+    to rise.
+seo-description: ''
+
+categories:
+- Folklore
 tags:
 - Swiss Legends
 - Folklore
@@ -74,10 +48,46 @@ tags:
 - Enchantment
 - Historical
 - Ethereal
-title: The Army in Schrattenberg
-title-url: ''
-update: ''
+keywords: Schrattenberg, Escholzmatt, Gurnigel, Magic, Hidden Treasures, Warriors,
+    Folklore, Swiss Legends, Supernatural, Mystery
+
+draft-status: ''
+
+location:
+    address: ''
+    city: ''
+    country: ''
+    name: ''
+    on-map: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
+    place-names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
+    state: ''
+    zip: ''
+coordinates:
+    latitude: 7.9783
+    longitude: 46.8911
+
+image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
+image-alt: The mysterious army leader and his warriors sleep at the tables.
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: https://www.tedt.org/
+image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist-URL: ''
+image-credits-title: The Mysterious Army Leader Sleeps
+image-description: ''
+image-title: ''
+
+monster-or-magical-or-religious-ideas:
+- A hidden underground world filled with warriors and treasures.
+- Supernatural beings with time prediction.
+- Magical properties, including disappearing entrances and magical doors.
 year-the-event-took-place: ''
+permalink: /Swiss-Folklore/:title:output_ext
+
+mathjax: ''
+
+order: ''
 ---
 
 > <ins>Sagen, Customs, Legends from the five places Lucerne, Uri, Schwyz, Unterwalden, and Zug, Lucerne, Volume 1, Page 293</ins>

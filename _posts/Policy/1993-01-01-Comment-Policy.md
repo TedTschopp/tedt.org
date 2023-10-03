@@ -1,14 +1,40 @@
 ---
-author:
-  name: Ted Tschopp
-bullets: ''
-call-to-action: ''
-categories: ''
-coordinates: ''
-date: 1993-01-01 08:41:00+00:00
-description: ''
-draft-status: ''
+layout: post
+
+title: Comment Policy
+title-url: ''
+subtitle: ''
+subtitle-url: ''
+quote: ''
 excerpt: ''
+source: ''
+source-url: ''
+call-to-action: ''
+
+date: 1993-01-01 08:41:00+00:00
+update: ''
+author:
+    name: Ted Tschopp
+    avatar: ''
+    url: ''
+
+bullets: ''
+
+description: ''
+seo-description: ''
+
+categories: ''
+tags: ''
+keywords: ''
+
+draft-status: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: ''
 image-alt: ''
 image-author: ''
@@ -20,24 +46,14 @@ image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: ''
 image-title: ''
-keywords: ''
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: /Comment_Policy/
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: ''
-subtitle-url: ''
-tags: ''
-title: Comment Policy
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: /Comment_Policy/
+
+mathjax: ''
+
+order: ''
 ---
 ## Keep it civil aka don’t be a jerk
 

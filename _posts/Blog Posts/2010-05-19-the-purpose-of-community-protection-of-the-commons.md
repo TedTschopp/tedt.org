@@ -1,24 +1,52 @@
 ---
-author:
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  name: Ted Tschopp
-  url: https://tedt.org
-bullets: ''
+layout: post
+
+title: 'Defending the Commons: Lessons from Robin Hood on Building Community'
+title-url: ''
+subtitle: 'Understanding Community through the Lens of Robin Hood: What the Commons
+    Mean to Us'
+subtitle-url: ''
+quote: ''
+excerpt: ''
+source: ''
+source-url: ''
 call-to-action: What are the 'commons' in your community that you cherish and defend?
-  How do you nurture and grow those shared values? Join the conversation below to
-  explore these vital questions and share your insights on building and sustaining
-  a thriving community.
+    How do you nurture and grow those shared values? Join the conversation below to
+    explore these vital questions and share your insights on building and sustaining
+    a thriving community.
+
+date: 2010-05-19 10:20:45+00:00
+update: ''
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org
+
+bullets: ''
+
+description: A thoughtful exploration of the concept of community and the common good,
+    using the story of Robin Hood as a metaphor. This article delves into the core
+    questions about what binds a community together, how to nurture it, and what it
+    takes to defend the shared values and goals that make it thrive.
+seo-description: ''
+
 categories:
 - Computers
 - Communications
-coordinates: ''
-date: 2010-05-19 10:20:45+00:00
-description: A thoughtful exploration of the concept of community and the common good,
-  using the story of Robin Hood as a metaphor. This article delves into the core questions
-  about what binds a community together, how to nurture it, and what it takes to defend
-  the shared values and goals that make it thrive.
+tags:
+- Film
+- linkedin
+keywords: Robin Hood, community, common good, Russell Crowe, Nottingham, garden metaphor,
+    protection, values, shared goals, collaboration
+
 draft-status: ''
-excerpt: ''
+
+location:
+    name: ''
+coordinates:
+    latitude: ''
+    longitude: ''
+
 image: /wp-content/uploads/2013/06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 image-alt: ''
 image-author: ''
@@ -29,31 +57,17 @@ image-credits-artist: ''
 image-credits-artist-URL: ''
 image-credits-title: ''
 image-description: An evocative image of Robin Hood, the legendary outlaw, symbolizing
-  the fight for the common good and the protection of shared values. It serves as
-  a visual metaphor for the unifying principles that bind and define a community.
+    the fight for the common good and the protection of shared values. It serves as
+    a visual metaphor for the unifying principles that bind and define a community.
 image-title: ''
-keywords: Robin Hood, community, common good, Russell Crowe, Nottingham, garden metaphor,
-  protection, values, shared goals, collaboration
-layout: post
-location: ''
-mathjax: ''
+
 monster-or-magical-or-religious-ideas: ''
-order: ''
-permalink: ''
-quote: ''
-seo-description: ''
-source: ''
-source-url: ''
-subtitle: 'Understanding Community through the Lens of Robin Hood: What the Commons
-  Mean to Us'
-subtitle-url: ''
-tags:
-- Film
-- linkedin
-title: 'Defending the Commons: Lessons from Robin Hood on Building Community'
-title-url: ''
-update: ''
 year-the-event-took-place: ''
+permalink: ''
+
+mathjax: ''
+
+order: ''
 ---
 Recently I saw the movie Robin Hood staring Russell Crow. The movie itself isn’t great or grand, but it serves as a wonderful jumping off point for a point I’m trying to make. The movie itself is a story of how Robin Hood became an outlaw and what motivates him to do what he does. Upon returning from the crusades Robin finds himself in a community under attack on all sides. The rightful Lord of Nottingham is dead on the battle fields of France, and his father is a weak old blind man. His wife, now single, turns out to have married him right before he left for the crusades. The church is demanding its tithe and King John is demanding taxes to pay for an army to protect the realm from the French. The old, dying father of Lord of Nottingham asks Robin to protect His son’s community.
 
