@@ -2,67 +2,67 @@
 layout: post
 
 title: 'Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective'
-title-url: ''
+title-url:
 subtitle: Exploring the Existence of External Standards and Human Value
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2007-01-26 12:49:19+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This article delves into the concept of universal standards for intelligence,
     wisdom, beauty, and manners, comparing them to a measurable external standard.
     It further emphasizes the intrinsic value of individuals irrespective of their
     adherence to these standards, and ties into broader themes of history, religion,
     and politics.
-seo-description: ''
+seo-description:
 
 categories:
 - Religion
-tags: ''
+tags:
 keywords: Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value,
     Religion, Politics
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An image of a balanced scale, symbolizing the universal standards
     by which characteristics like intelligence, wisdom, beauty, and manners are measured.
     The scale rests on a book representing history, with shadows of iconic historical
     figures looming in the background.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 Some people are just idiots, other people are rude, and finally some people are just downright ugly.&nbsp; This means that there are some people who are brilliant, there are others who are considerate, and there is such a thing as beauty.&nbsp;&nbsp;I&rsquo;m not trying to say that I am brilliant, or considerate, or beautiful.&nbsp; To the contrary, most of the time I am not any of these things.&nbsp; 
 

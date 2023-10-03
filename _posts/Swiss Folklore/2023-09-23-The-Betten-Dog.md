@@ -2,29 +2,29 @@
 layout: post
 
 title: The Betten Dog
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: In 'Betten,' a stream separates the communities of Rebstein and Marbach,
     where people used to see the Betten Dog with a long, drooping tongue, fiery eyes,
     and a long tail.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-09-23 15:25:46
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: A Swiss German folk tale about a mysterious dog that appears in Betten
     and accompanies nocturnal wanderers, especially wrongdoers, without causing harm.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
@@ -35,17 +35,17 @@ tags:
 - Swiss Culture
 keywords: Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer
 
-draft-status: ''
+draft-status:
 
 location:
-    address: ''
-    city: ''
-    country: ''
-    name: ''
+    address:
+    city:
+    country:
+    name:
     on-map: Betten (47.3667° N, 9.5615° E)
     place-names: Betten, Rebstein and Marbach, Switzerland
-    state: ''
-    zip: ''
+    state:
+    zip:
 coordinates:
     latitude: '47.3667'
     longitude: '9.5615'
@@ -53,23 +53,23 @@ coordinates:
 image: /img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.png
 image-alt: An illustration of a dog, with a long drooping tongue, red eyes, and a
     long tail, appearing on a bridge over a stream between two villages in Switzerland.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: The Betten Dog
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
 monster-or-magical-or-religious-ideas: Mysterious Dog
-year-the-event-took-place: ''
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins>Legends from Uri 1 - 3</ins>

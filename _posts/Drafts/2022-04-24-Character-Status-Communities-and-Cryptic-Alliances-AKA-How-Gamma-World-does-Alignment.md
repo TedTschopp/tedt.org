@@ -3,10 +3,10 @@ layout: post
 
 title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does
     Alignment
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'As characters have adventures, they will gain a reputation, fame, and status.
     You can track this growth in the campaign using Status Points. Status Points,
     like experience points, are accumulated into a new number on your character sheet
@@ -16,57 +16,57 @@ excerpt: 'As characters have adventures, they will gain a reputation, fame, and 
     the society around the characters feel the character is.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2022-04-24 17:42:44-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: null
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: notes
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2022/04/24/community-life.png
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: Art from Gamma World 6th Edition
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 mathjax: true
 
-order: ''
+order:
 ---
 <style>
 .dccvsdnd thead tr th {

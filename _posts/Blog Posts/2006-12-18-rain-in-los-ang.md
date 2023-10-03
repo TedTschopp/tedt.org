@@ -2,67 +2,67 @@
 layout: post
 
 title: 'Winter Rains in Los Angeles: A Reflection on Longing, Home, and Hope'
-title-url: ''
+title-url:
 subtitle: A Spiritual Journey through Nature’s Beauty, Connecting Earth and Soul
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2006-12-18 11:28:23+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This article explores the transformative power of winter rains in Los
     Angeles, evoking a spiritual connection between nature's cleansing beauty and
     human longing for home. It intertwines scenic imagery with reflections on Advent,
     hope in Christ's return, and a deep sense of spiritual homecoming.
-seo-description: ''
+seo-description:
 
 categories:
 - Religion
-tags: ''
+tags:
 keywords: Los Angeles, Winter Rains, Spiritual Reflection, Longing, Home, Hope, Advent,
     Christ, Christmas, Nature's Beauty, Kierkegaard, Angst, Mountains, Snow, Valley
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An image of the snow-capped mountains bordering the Los Angeles
     basin, seen under a clear blue sky dotted with white clouds. The wet streets reflect
     the morning light, symbolizing the cleansing power of rain, and a distant path
     leads towards a hidden valley, representing the spiritual journey described in
     the article.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 It’s amazing how winter rains can highlight some of Los Angeles’s best qualities.  This morning, as I went out to my car, I could smell the clean air.  I took a deep breath and let the blast of cold hit my lungs.  I was awake and alive.  The sky was a striking blue accented with white clouds.  As I made my way to the office I could see the snow capped mountains that make up the borders to the LA basin.
 

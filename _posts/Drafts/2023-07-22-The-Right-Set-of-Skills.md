@@ -2,10 +2,10 @@
 layout: post
 
 title: The Right Set of Skills
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'All beings have four aspects of their existence. These define the
 
     highest categorical breakdown of a being. They are Physical, Mental,
@@ -21,57 +21,57 @@ excerpt: 'All beings have four aspects of their existence. These define the
     Characteristics.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-07-22 18:51:10-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: Explore the essential skills needed in today's fast-paced environment.
     Learn how to adapt and grow in your career with the right set of skills.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - The Märchen Engine
 - Draft
-tags: ''
+tags:
 keywords: Skills, Career, Adaptability, Learning, Professional Development
 
 draft-status: integration
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-alt: Photo by Ted Tschopp using Midjourney
-image-author: ''
-image-author-URL: ''
+image-author:
+image-author-URL:
 image-credits: Photo by Ted Tschopp using Midjourney
-image-credits-URL: ''
+image-credits-URL:
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://www.tedt.org/
-image-credits-title: ''
-image-description: ''
+image-credits-title:
+image-description:
 image-title: FAME - Fitness, Academics, Mystical, Emotional
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 mathjax: true
 
-order: ''
+order:
 ---
 <style>
 .dccvsdnd thead tr th {

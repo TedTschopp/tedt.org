@@ -2,69 +2,69 @@
 layout: post
 
 title: What Makes a Human?
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted
     nature of human identity, exploring it through the lenses of biology, philosophy,
     and culture. The author argues that being human is not solely defined by our biological
     makeup but is a combination of our cognitive abilities, emotional experiences,
     and social interactions.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-07-22 18:51:10-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: This draft on TTRPG Characters delves into the complex and multi-faceted
     nature of human identity, exploring it through the lenses of biology, philosophy,
     and culture. The author argues that being human is not solely defined by our biological
     makeup but is a combination of our cognitive abilities, emotional experiences,
     and social interactions.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - The Märchen Engine
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: integration
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-author: Ted Tschopp using Midjourney
 image-author-URL: https://www.tedt.org/
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 mathjax: true
 
-order: ''
+order:
 ---
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Character Sheet - Work in Progress
 

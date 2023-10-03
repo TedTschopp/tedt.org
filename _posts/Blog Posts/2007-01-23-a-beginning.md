@@ -2,59 +2,59 @@
 layout: post
 
 title: A Beginning
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2007-01-23 13:54:06+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
-description: ''
-seo-description: ''
+description:
+seo-description:
 
 categories:
 - Personal Writing
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 One of my resolutions this year was to start writing fiction again.&nbsp; I have done it several times in my past, but I have never let people read it publicly.&nbsp; The only thing that ever came close to public viewing was the several Role Playing Games I have run.&nbsp; Additionally I posted one [poem](http://www.tschopp.net/ted/2006/01/the_path_west.html)&nbsp;I had written about 5 years ago.
 

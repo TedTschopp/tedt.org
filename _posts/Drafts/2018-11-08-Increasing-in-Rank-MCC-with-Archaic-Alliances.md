@@ -2,24 +2,24 @@
 layout: post
 
 title: Increasing in Rank in MCC with Archaic Alliances
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: "The following is an integration of rules for Gamma World's Rank Advancement\
     \ with Mutant Crawl Classic.  \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-11-02 10:37:12-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: "The following is an integration of rules for Gamma World's Rank Advancement\
     \ with Mutant Crawl Classic.  \n"
@@ -31,36 +31,36 @@ categories:
 - Gamma World
 - Mutant Crawl Classics
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: Alpha
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 # Character Status

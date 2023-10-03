@@ -2,15 +2,15 @@
 layout: post
 
 title: Gamma World Weapons in MCC & DCC
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: "The following is a conversion of rules for Gamma World's Traditional weapons\
     \ in Mutant Crawl Classic.  \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-10-14 17:37:12-07:00
 update: 2018-10-14 16:44:34-07:00
@@ -19,7 +19,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: "The following is a conversion of rules for Gamma World's Traditional\
     \ weapons in Mutant Crawl Classic.  \n"
@@ -32,36 +32,36 @@ categories:
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: Alpha
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2018-10-14/seth-justus-huntersalienguns.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25
 image-credits-URL: https://www.artstation.com/artwork/lqz25
 image-credits-artist: Seth Justus
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Hunters Alien Weapons and Devices
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 

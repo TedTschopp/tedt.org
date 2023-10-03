@@ -2,17 +2,17 @@
 layout: post
 
 title: Doing Religions Right in DCC
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: "Every role playing game that I have ever run into with the exception of\
     \ Dogs in the Vineyard has done religions wrong in role playing games.  These\
     \ are my notes on how to get DCC closer to a relgious system that works for a\
     \ believer and a role player.   \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-05-16 17:37:12-07:00
 update: 2018-05-23 16:44:34-07:00
@@ -21,7 +21,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: "Every role playing game that I have ever run into with the exception\
     \ of Dogs in the Vineyard has done religions wrong in role playing games.  These\
@@ -38,36 +38,36 @@ categories:
 - Religion
 - Middle-earth
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: notes
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2018/05/the-valar.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: The Valar by Dan Hainsworth https://www.etsy.com/shop/dthains
 image-credits-URL: https://www.etsy.com/shop/dthains
 image-credits-artist: Dan Hainsworth
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: The Valar
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 # Contents

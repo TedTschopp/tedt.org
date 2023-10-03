@@ -2,69 +2,69 @@
 layout: post
 
 title: 'Contemplating the Afterlife: Understanding Hell from Various Perspectives'
-title-url: ''
+title-url:
 subtitle: A Personal Reflection on the Concepts of Hell and Its Existence in Belief
     Systems
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2005-10-24 14:05:54+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: 'This article explores the unsettling and universal idea of hell, examining
     two main positions regarding the afterlife for unbelievers: annihilation and eternal
     damnation. The author''s personal struggle with these concepts provides a thought-provoking
     analysis of human culture and religious beliefs.'
-seo-description: ''
+seo-description:
 
 categories:
 - Religion
-tags: ''
+tags:
 keywords: Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Systems,
     Christian Viewpoint, Pagan Literature, Symbolism, Punishment
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: 'An abstract representation of the two concepts of hell: annihilation
     and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing
     the profound and uncomfortable nature of these beliefs. It conveys the universality
     and nightmarish quality of hell in human culture.  In the style of antichrist,
     dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays,
     gustave buchet, hercules seghers'
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I posted this elsewhere, and ran into it today, and thought about reposting it here:
 

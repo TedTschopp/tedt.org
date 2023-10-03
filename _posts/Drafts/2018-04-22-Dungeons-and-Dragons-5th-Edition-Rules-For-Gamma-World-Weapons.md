@@ -2,62 +2,62 @@
 layout: post
 
 title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-04-22 10:04:00+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: component
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2018/04/The-Leviathan.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: The Leviathan by Larry Elmore - http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 # Contents

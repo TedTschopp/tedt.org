@@ -2,69 +2,69 @@
 layout: post
 
 title: 'Sex, Gardening, and Science: Reflections on Humanity, Family, and Theology'
-title-url: ''
+title-url:
 subtitle: A Theological Exploration of Sexuality, Science, Relationships, and the
     Nature of Evil in the Light of Genesis
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2007-01-16 11:10:00+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This article presents an intricate examination of the themes present
     in 'Children of Men,' including humanity, family, sexuality, science, and relationships.
     Drawing connections to the Garden of Eden's story, the author explores the nature
     of evil and the eternal aspects of our existence, ultimately tying it to the Christian
     faith and the promise of redemption.
-seo-description: ''
+seo-description:
 
 categories:
 - Religion
-tags: ''
+tags:
 keywords: Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships,
     Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An image combining the book cover of 'Children of Men,' a depiction
     of the Garden of Eden, and symbolic representations of the themes such as a DNA
     helix for science, intertwined hands for relationships, and an apple for temptation.
     The collage symbolizes the multifaceted exploration of the book's themes in relation
     to theology.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I just finished [Children of Men](http://www.amazon.com/exec/obidos/ASIN/0307279901/wwwtschoppnet-20)&nbsp;the book this weekend and it got me thinking about humanity, family, sexuality, science, and relationships, and the nature of evil.&nbsp; Here is where my thoughts led me.
 

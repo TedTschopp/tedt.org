@@ -2,64 +2,64 @@
 layout: post
 
 title: 'Bespreekbaarheid: The Missing Ingredient in IT Organizations'
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2023-09-17 16:48:28
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: Explore the concept of Bespreekbaarheid, a Dutch term that encourages
     open dialogue and transparency, and discover why it's crucial for success in IT
     organizations. Learn how it fosters innovation, enhances problem-solving, and
     builds trust among team members.
-seo-description: ''
+seo-description:
 
 categories:
 - Computers
 - Communications
-tags: ''
+tags:
 keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
     Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Modern Office
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 

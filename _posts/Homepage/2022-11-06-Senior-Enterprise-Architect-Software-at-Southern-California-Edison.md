@@ -3,9 +3,9 @@ layout: post
 
 title: Senior Enterprise Architect, Software at Southern California Edison
 title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
-subtitle: ''
-subtitle-url: ''
-quote: ''
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'As an IT Strategist and Architect, I harmonized the company''s business
     objectives with the IT landscape, developed comprehensive roadmaps and strategies,
     and ensured their alignment with financial, business, technical, and regulatory
@@ -16,12 +16,12 @@ excerpt: 'As an IT Strategist and Architect, I harmonized the company''s busines
     meetings.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-06-03 07:11:42-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
@@ -57,35 +57,35 @@ seo-description: 'As an IT Strategist and Architect, I harmonized the company''s
     '
 
 categories: Home
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v2.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: Ted Tschopp and Midjourney
-image-credits-URL: ''
+image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Ted Tschopp as Senior Enterprise Architect in the Aesthetic of
     Leonardo Da Vinci
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
 order: 2
 ---

@@ -3,21 +3,21 @@ layout: post
 
 title: Product Engineering and Build Process Manager at Southern California Edison
 title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
-subtitle: ''
-subtitle-url: ''
-quote: ''
+subtitle:
+subtitle-url:
+quote:
 excerpt: "I am responsible for the end-to-end management of the Product Engineering\
     \ and Build processes, and I maintain governance control over all these processes.\
     \ As an advisor, I contribute to the improvement of Product Engineering and Build\
     \ processes. Additionally, I provide advice to teams engaged in these processes\
     \ on how they can enhance their outcomes, drawing on best practices from other\
     \ enterprise efforts.   \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-06-03 07:11:51-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
@@ -52,34 +52,34 @@ seo-description: 'I am responsible for the end-to-end management of the Product 
     '
 
 categories: Home
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/home/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: MidJourney and Ted Tschopp
-image-credits-URL: ''
+image-credits-URL:
 image-credits-artist: MidJourney and Ted Tschopp
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Ted Tschopp as Product Engineering and Build Process Manager
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
 order: 3
 ---

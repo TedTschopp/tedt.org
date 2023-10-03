@@ -2,65 +2,65 @@
 layout: post
 
 title: Of Maps and Monsters, the Right way to Populate a World Part I
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: "This work is the beginning of a collection of notes on Monsters and Maps.\
     \  In the future I will split this out into several different sections.  I wanted\
     \ to start wtih what I had here and start working my thoughts out while getting\
     \ some of this out of my head and into a place I can review and look at. \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-05-11 21:04:42-07:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: null
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - Maps
 - Monsters
 - Draft
-tags: ''
+tags:
 keywords: Role playing games,  World-building, Game Master, Maps, Monsters, Storytelling
 
 draft-status: notes
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
-image-alt: ''
+image-alt:
 image-author: Gervase of Ebstorf
 image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
 image-title: Ebstorf Map
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 mathjax: true
 
-order: ''
+order:
 ---
 <style>
 .dccvsdnd thead tr th {

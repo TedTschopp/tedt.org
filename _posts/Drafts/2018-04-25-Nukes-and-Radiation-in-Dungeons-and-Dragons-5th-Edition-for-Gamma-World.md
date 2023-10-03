@@ -2,70 +2,70 @@
 layout: post
 
 title: Nukes and Radiation in Dungeons and Dragons 5th Edition for Gamma World
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'I plan on having two systems for Radiation Damage in my D&D 5e Gamma World
     system.  The first is a realisitic system that will be used for dramatic purposes...
     ...the second system will basically set a CON Save vs a DC that is based on the
     Radiation Intensity
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-04-25 02:20:00+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: A comprehensive guide on implementing nukes and radiation in Dungeons
     and Dragons 5th Edition for Gamma World. Learn about radiation damage, new stats,
     and the effects of nuclear blasts in your game.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
 - Draft
-tags: ''
+tags:
 keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role playing
     games, Game Master
 
 draft-status: notes
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2018/04/Third-Edition.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: The Ultimate A.T.V. by Keith Parkinson - https://www.keithparkinson.com/
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 # Contents

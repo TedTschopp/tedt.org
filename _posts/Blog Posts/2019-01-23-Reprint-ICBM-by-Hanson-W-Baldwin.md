@@ -3,28 +3,28 @@ layout: post
 
 title: 1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John
     Wilson
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'IT WILL not be long. In ten years—five years, perhaps only two or three
     —the historic count-down will start: "Ten — nine — eight — seven — six — five
     — four — three — two — one —" At zero a new era will open up on the earth—the
     era of push-button war.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2019-01-23 12:17:59+00:00
-update: ''
+update:
 author:
     avatar: https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.jpg
     name: Hanson W. Baldwin
     url: https://en.wikipedia.org/wiki/Hanson_W._Baldwin
 
-bullets: ''
+bullets:
 
 description: 'REPRINT: An exploration of the Cold War-era race between the United
     States and the Soviet Union to develop the first intercontinental ballistic missile
@@ -33,40 +33,40 @@ description: 'REPRINT: An exploration of the Cold War-era race between the Unite
     author emphasizes the urgent need for public awareness and informed democratic
     decision-making on this vital matter of national security, technological innovation,
     and global power dynamics.'
-seo-description: ''
+seo-description:
 
 categories:
 - Reprint
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
 image-alt: Picture of an ICBM
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: null
 image-credits-artist: John Wilson
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: ICBM Launch
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 IT WILL not be long. In ten years—five years, perhaps only two or three —the historic count-down will start: "Ten — nine — eight — seven — six — five — four — three — two — one —" At zero a new era will open up on the earth—the era of push-button war. A giant rocket, 100 to 135 feet high, will lift slowly from its launching pad and, with voice of thunder, tongue of flame, disappear into the stratosphere. Some 20 to 30 minutes later and 5,000 miles away, the world's first intercontinental ballistic missile will plunge toward the earth. 

@@ -2,69 +2,69 @@
 layout: post
 
 title: 'The Limitless Garden: A Theological Exploration of Eden'
-title-url: ''
+title-url:
 subtitle: Understanding the Boundaries and Potential of the Garden of Eden
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
 call-to-action: What are your thoughts on the boundless nature of the Garden of Eden?
     How do you perceive its extension and growth in relation to mankind's purpose?
     Share your insights and join the conversation in the comments below. Let's explore
     these profound questions together.
 
 date: 2007-09-24 18:48:17+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This thought-provoking article delves into the biblical descriptions
     of the Garden of Eden and questions its boundaries. It explores the limitless
     nature of the garden, its extension possibilities, and contemplates profound spiritual
     questions about growth, dominion, and the future.
-seo-description: ''
+seo-description:
 
 categories:
 - Religion
 - Science
-tags: ''
+tags:
 keywords: Garden of Eden, theology, spiritual growth, limitless, tree of life, tree
     of knowledge, Bible, creation, cosmos, mankind's role
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: The Limitless Garden
 image-description: An image depicting the lush Garden of Eden with the tree of life
     at its center, surrounded by flowing rivers, and extending infinitely towards
     the horizon, symbolizing the limitless nature of the garden.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 > “Be fruitful and multiply and fill the earth and subdue it and have dominion over the fish of the sea and over the birds of the heavens and over every living thing that moves on the earth.
 > 

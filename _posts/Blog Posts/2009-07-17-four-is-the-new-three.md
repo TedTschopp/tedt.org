@@ -2,70 +2,70 @@
 layout: post
 
 title: 'Building Engaging Conversations: From Clueless to Creators'
-title-url: ''
+title-url:
 subtitle: A Four-Step Approach to Involve and Engage Your Audience
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
 call-to-action: Ready to turn your audience from clueless to creators? Share your
     thoughts or ask questions in the comments below. Let's build engaging conversations
     together!
 
 date: 2009-07-17 11:50:58+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This article reveals the four categories of people in conversations and
     explores strategies to transform clueless individuals into engaged consumers,
     commenters, and creators. By breaking down barriers and using the right tools,
     readers are guided to build a dynamic environment where content is shared, commented
     on, and created, fostering a truly engaging community.
-seo-description: ''
+seo-description:
 
 categories:
 - Computers
 - Communications
-tags: ''
+tags:
 keywords: engagement, conversations, clueless, consumers, commenters, creators, content,
     tools, barriers, community building, invitation, party analogy
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2013/06/four-is-the-new-three.png
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An illustrative diagram showing the transformation from 'Clueless'
     to 'Consumers', 'Commenters', and 'Creators'. This visual metaphor represents
     the journey of individuals through different engagement levels, emphasizing the
     importance of content, tools, and openness in the conversation process.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I’m going to start out by being honest.  I lied to you.  There are not three separate categories of people, there are four.  This last category is the people who don’t know about your conversation.  Lets call them the clueless.  These are the people who were not invited to the party.  The best way to increase the size of your entire pyramid is to increase the number of people involved.  This is the invitation.
 

@@ -2,59 +2,59 @@
 layout: post
 
 title: Edison International Portal - Corporate Portal
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2006-03-13 16:55:12+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
-description: ''
-seo-description: ''
+description:
+seo-description:
 
 categories:
 - Projects
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: wp-content/uploads/2011/02/edisonintl_2dlogon.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: EIX Portal  by Ted Tschopp
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 **Overview:** This project was an effort by the company to address our needs for a corporate portal which would integrate all outstanding internally facing web sites.  We were also to integrate all previous poral projects into this program.  The main business driver for this project was that the portal had to integrate into SAP, therefore the SAP Portal was choosen as the technology platform.
 

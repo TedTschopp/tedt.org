@@ -1,60 +1,60 @@
 ---
 layout: quotes
 
-title: ''
-title-url: ''
-subtitle: ''
-subtitle-url: ''
+title:
+title-url:
+subtitle:
+subtitle-url:
 quote: Our Lord God deals with countries and cities, as I do with an old hedge-stick,
     when it displeases me; I pluck it up and burn it, and stick another in its stead.
-excerpt: ''
+excerpt:
 source: Table Talk - of Countries and Cities DCCCXXXVIII
 source-url: https://www.ccel.org/ccel/luther/tabletalk.v.xliv.html
-call-to-action: ''
+call-to-action:
 
 date: 2023-04-23 11:44:45.180083
-update: ''
+update:
 author:
     name: Martin Luther
-    avatar: ''
-    url: ''
+    avatar:
+    url:
 
-bullets: ''
+bullets:
 
-description: ''
-seo-description: ''
+description:
+seo-description:
 
 categories:
 - Quotes
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 permalink: /Quotes-Database/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 Our Lord God deals with countries and cities, as I do with an old hedge-stick, when it displeases me; I pluck it up and burn it, and stick another in its stead.

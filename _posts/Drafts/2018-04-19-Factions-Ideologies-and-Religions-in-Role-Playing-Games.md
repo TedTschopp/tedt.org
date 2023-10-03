@@ -2,10 +2,10 @@
 layout: post
 
 title: Factions, Ideologies, and Religions in Role Playing Games
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'Most societies are formed around a given ideology or way of thinking.  These
     ideologies can be broken up into several different categories.  At the higher
     tech levels where people have more freetime, those societies will have multiple
@@ -15,23 +15,23 @@ excerpt: 'Most societies are formed around a given ideology or way of thinking. 
     on.   It should be noted that ideologies can exist with other ideologies.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-04-19 03:13:00+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: Explore the complexities of ideologies, factions, and religions in role-playing
     games. Understand how to create a multi-layered world that engages players in
     political, economic, and religious dimensions.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
@@ -39,41 +39,41 @@ categories:
 - Gamma World
 - Mutant Crawl Classics
 - Draft
-tags: ''
+tags:
 keywords: Role playing games, Ideologies, Factions. Religions, World-building, Game
     Master
 
 draft-status: integration
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2018/04/Sunset on this ideology.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: 'Sunset on this ideology - Užhorod - Sunset near the border (Slovack
     Rep. Ukaine) - Ukraine, Uzgorod City by Giorgio Minguzzi https://www.flickr.com/photos/iz4aks/4005020863
     Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)
 
     '
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 # Contents

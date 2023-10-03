@@ -2,23 +2,23 @@
 layout: post
 
 title: 'An Unexpected Spiritual Journey: A Day at Disneyland'
-title-url: ''
+title-url:
 subtitle: A Rainy Day Adventure Leads to an Unforgettable Christmas Experience
-subtitle-url: ''
-quote: ''
+subtitle-url:
+quote:
 excerpt: "What does Advent mean to you?  What is that sense of yearning and longing we all have for something."
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2003-12-19 08:41:00+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512d=mpr=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: 'What does Advent mean to you?  What is that sense of yearning and longing
     we all have for something.   Join the author on a surprising trip to Disneyland
@@ -29,39 +29,39 @@ seo-description: "What does Advent mean to you?  What is that sense of yearning 
 
 categories:
 - Religion
-tags: ''
+tags:
 keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spiritual
     Experience, Rainy Day, Toon Town, Small World, Grumpy Jester Hat, Luke Chapter
     2, Christ
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 A couple weeks ago I went to Disneyland with my sister, her husband James and her friend Eric from College.
 

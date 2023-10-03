@@ -2,16 +2,16 @@
 layout: post
 
 title: Firearms in MCC & DCC
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: "The following rules are what I have collected from around the internet for\
     \ the use of firearms in MCC & DCC.  I will be playtesting these by converting\
     \ a Gamma World module to MCC. \n"
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-09-04 17:37:12-07:00
 update: 2018-09-04 16:44:34-07:00
@@ -20,7 +20,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: "The following rules are what I have collected from around the internet\
     \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
@@ -35,36 +35,36 @@ categories:
 - Draft
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: Alpha
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2018-09-04/MCC-Guns.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: Weapon & Prop Concepts by Matthew Harris https://megalomatthew.artstation.com/
 image-credits-URL: https://larsson.artstation.com/projects/qOJQn
 image-credits-artist: Matthew Harris
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Weapon & Prop Concepts
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 

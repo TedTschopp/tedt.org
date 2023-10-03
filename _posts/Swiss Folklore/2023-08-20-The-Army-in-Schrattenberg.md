@@ -2,28 +2,28 @@
 layout: post
 
 title: The Army in Schrattenberg
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: The hole was no longer to be found, and the sheep never appeared again.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-08-20 18:54:49
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: A shepherd discovers a hidden world filled with warriors, treasures,
     and magic in the mountains around Escholzmatt. A mysterious army awaits its time
     to rise.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
@@ -51,43 +51,43 @@ tags:
 keywords: Schrattenberg, Escholzmatt, Gurnigel, Magic, Hidden Treasures, Warriors,
     Folklore, Swiss Legends, Supernatural, Mystery
 
-draft-status: ''
+draft-status:
 
 location:
-    address: ''
-    city: ''
-    country: ''
-    name: ''
+    address:
+    city:
+    country:
+    name:
     on-map: Escholzmatt (46.8911° N, 7.9783° E), Gurnigel (46.7389° N, 7.4594° E)
     place-names: Schrattenberg, Escholzmatt, Gurnigel, Schrattengebirge
-    state: ''
-    zip: ''
+    state:
+    zip:
 coordinates:
     latitude: 7.9783
     longitude: 46.8911
 
 image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
 image-alt: The mysterious army leader and his warriors sleep at the tables.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: The Mysterious Army Leader Sleeps
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
 monster-or-magical-or-religious-ideas:
 - A hidden underground world filled with warriors and treasures.
 - Supernatural beings with time prediction.
 - Magical properties, including disappearing entrances and magical doors.
-year-the-event-took-place: ''
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins>Sagen, Customs, Legends from the five places Lucerne, Uri, Schwyz, Unterwalden, and Zug, Lucerne, Volume 1, Page 293</ins>

@@ -2,27 +2,27 @@
 layout: post
 
 title: The Weatherman in Pörtlialp
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: Whenever people heard a yodel from the 'Beerdli,' bad weather is coming.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-09-23 15:04:59
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: A Swiss German folk tale about a mysterious ghostly weatherman who appears
     in Pörtlialp that is believed to bring bad weather.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
@@ -33,17 +33,17 @@ tags:
 - Swiss Culture
 keywords: Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather
 
-draft-status: ''
+draft-status:
 
 location:
-    address: ''
-    city: ''
-    country: ''
-    name: ''
+    address:
+    city:
+    country:
+    name:
     on-map: Betten (46.7758° N, 8.5942° E)
     place-names: Pörtlialp, Uri, Switzerland
-    state: ''
-    zip: ''
+    state:
+    zip:
 coordinates:
     latitude: '46.7758'
     longitude: '8.5942'
@@ -51,23 +51,23 @@ coordinates:
 image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
 image-alt: An illustration of a large, heavy man wearing a large hat, walking in a
     forest.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: The Weatherman in Pörtlialp
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
 monster-or-magical-or-religious-ideas: Mysterious Weatherman
-year-the-event-took-place: ''
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins>Legends from Uri 1 - 3</ins>

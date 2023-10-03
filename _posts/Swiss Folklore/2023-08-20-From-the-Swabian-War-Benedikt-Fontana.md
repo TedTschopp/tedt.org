@@ -2,28 +2,28 @@
 layout: post
 
 title: From the Swabian War - Benedikt Fontana
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: Watch out, the cow milkers will surely come again!
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-08-20 16:22:38
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: The legend of the Swabian War narrates the valor of Benedikt Fontana
     and the Swiss Confederates in the face of Austrian aggression. The story combines
     elements of heroism, divine justice, and the battle for freedom.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
@@ -51,17 +51,17 @@ tags:
 keywords: Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom, Austrian
     rule, divine justice, historical folklore
 
-draft-status: ''
+draft-status:
 
 location:
-    address: ''
-    city: ''
-    country: ''
-    name: ''
+    address:
+    city:
+    country:
+    name:
     on-map: Constance (47.6592° N, 9.1753° E)
     place-names: Various locations in Switzerland, including the city of Constance
-    state: ''
-    zip: ''
+    state:
+    zip:
 coordinates:
     latitude: 9.1753
     longitude: 47.6592
@@ -75,24 +75,24 @@ image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana
     sunlight, and their battle cries resonate with the passion for their land. The
     scene encapsulates the spirit, courage, and will of a people unyielding in their
     fight for independence.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: 'Storming the Bulwark: Benedikt Fontana and Swiss Warriors''
     Fight for Freedom in the Swiss Alps'
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins> Swiss Legends and Heroic Tales</ins>

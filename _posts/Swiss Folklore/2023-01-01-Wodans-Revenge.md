@@ -2,44 +2,44 @@
 layout: post
 
 title: Wodan's Revenge
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: Thus sank Wodan, once worshipped by the people as a holy god.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-01-01 17:18:27-08:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: Wodan's Revenge narrates the tale of the once-worshipped pagan god Wodan,
     who sought vengeance against those who turned to Christianity. This rich folklore
     describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling
     the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
 tags:
 - Odin
 - Rhône
-keywords: ''
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
 image-alt: Painting of Wodan coming down the a large river sitting on a water horse
@@ -47,23 +47,23 @@ image-alt: Painting of Wodan coming down the a large river sitting on a water ho
     the bank and devastates a medieval city. In the style of antichrist, dark yellow
     and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet,
     hercules seghers
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Woden's Revenge
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins>**The Swiss Book of Legends**</ins>

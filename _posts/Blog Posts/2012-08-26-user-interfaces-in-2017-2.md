@@ -2,66 +2,66 @@
 layout: post
 
 title: 'The Evolution of Digital Realism: Sound, Graphics, and User Interface Design'
-title-url: ''
+title-url:
 subtitle: A Reflective Analysis of Technology's Progress Towards Authentic Replication
-subtitle-url: ''
-quote: ''
+subtitle-url:
+quote:
 excerpt: With the release of the Mac Book this year that included a high resolution
     monitor, I have been thinking a lot about user interfaces and their future.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2012-08-26 17:38:23+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: The article delves into the remarkable journey of sound cards and computer
     graphics, from primitive 8-bit representations to near-CD quality sound and hyper-realistic
     visuals. It explores the implications of this realism in UI design, questioning
     whether interfaces should symbolize or replicate reality, and contrasting Apple's
     and Microsoft's approaches.
-seo-description: ''
+seo-description:
 
 categories:
 - Computers
-tags: ''
+tags:
 keywords: digital realism, sound quality, computer graphics, user interface design,
     Apple, Microsoft, Metro interface, color depth, pixels, 220 DPI, visual reproduction,
     sound technology, software problem, innovation
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2013/06/color-eye.png
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I am reminded of the thought experiments I went through years ago when the sound cards went from 8 bit to 16bit to being able to reproduce CD quality sound and better. Now days no one thinks about a computer that can't reproduce sound with sub-CD quality. I remember talking about how this would change games, music, and entertainment as we knew it. But there were things that were not brought up as I look back. I didn't think about how sound quality of this nature would make just about every sound emitting platform into a software problem. Now granted not every problem in the sound arena has been solved. We still have not reproduced the human voice synthetically without using another human as the input. But this is about it. Our computers can speak to us, but in the end, they sound like computers. This isn't necessarily a bad thing, and its only a matter of years until this synthetic distinction is a matter of choice.
 

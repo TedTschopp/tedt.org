@@ -2,10 +2,10 @@
 layout: post
 
 title: Mutations in Gamma World
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: 'During the days of Tech Level VI, a lot of time was spent by Artificial
     Intelligences and bioengineers to come up with ways to modify humans, animals,
     and plants.  During this time all sort of transhumanism and animal / plant uplifting
@@ -14,9 +14,9 @@ excerpt: 'During the days of Tech Level VI, a lot of time was spent by Artificia
     had and make sense of this information.
 
     '
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2018-07-27 17:37:12-07:00
 update: 2018-07-28 16:44:34-07:00
@@ -25,7 +25,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: 'During the days of Tech Level VI, a lot of time was spent by Artificial
     Intelligences and bioengineers to come up with ways to modify humans, animals,
@@ -48,36 +48,36 @@ categories:
 - Role Playing Games
 - Gamma World
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: notes
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /img/2018-07-28/ola-larsson-genlabbalpha.jpg
-image-alt: ''
-image-author: ''
-image-author-URL: ''
+image-alt:
+image-author:
+image-author-URL:
 image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
 image-credits-URL: https://larsson.artstation.com/projects/qOJQn
 image-credits-artist: Ola Larsson
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Genelab Alpha
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 

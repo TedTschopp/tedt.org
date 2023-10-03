@@ -1,67 +1,67 @@
 ---
 layout: post
 
-title: 'Google''s Vision for a Unified Internet OS: A New Dawn in Connectivity'
-title-url: ''
+title: "Google's Vision for a Unified Internet OS: A New Dawn in Connectivity"
+title-url:
 subtitle: Exploring the Potential of Google's Web-Based Operating System
-subtitle-url: ''
+subtitle-url:
 quote: 'Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process.'
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2004-08-25 16:08:24+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: An in-depth analysis of Google's potential development of a web-based
     operating system that integrates Mail, Blog, Social Network, Pictures, Search,
     and more. Drawing parallels with the early PC market, this article explores how
     Google might shape the future of the Internet.
-seo-description: ''
+seo-description:
 
 categories:
 - Computers
-tags: ''
+tags:
 keywords: Google, Internet OS, Web Applications, .NET, Browser-based OS, Future of
     Internet, Online Games, Mail Integration, Social Network, Search
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: 'img/2004-08-25/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
-image-alt: ''
+image-alt:
 image-author: 'Ted Tschopp and Midjourney'
 image-author-URL: 'https://www.tedt.org/'
 image-credits: 'Ted Tschopp and Midjourney'
 image-credits-URL: 'https://www.tedt.org/'
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An illustrative diagram depicting Google's envisioned web-based
     operating system, highlighting various integrated components such as Mail, Blog,
     Social Network, and Pictures. The interconnected nature of these services symbolizes
     a unified and easily accessible platform for the future of web applications.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I've been a firm believer that Google is making an OS with a set of applications. Think of a system which ties all their properties together. Mail, Blog, Social Network, Pictures, Search, etc&#8230; Into one usable application which can be accessed from anywhere on the planet as long as you have a browser.
 

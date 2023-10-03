@@ -2,25 +2,25 @@
 layout: post
 
 title: On the Mountain of Saint George
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: Wodan, the god of the winds, is also the god of the creatures of the night.
     In Christian times, St. George, the patron Saint of knights and rich lords, often
     took his place.
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-01-02 09:26:36-08:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: On the Mountain of Saint George, discover a rich tapestry of legends
     weaving together Wodan, the god of winds, and St. George, the patron Saint of
@@ -28,7 +28,7 @@ description: On the Mountain of Saint George, discover a rich tapestry of legend
     within the mountain. Witness tales of fiery dragons, brave knights, restless spirits,
     and the intriguing connection between ancient gods, rituals, and natural treasures,
     in a region that bridges Germany, Switzerland, and the old Habsburg empire.
-seo-description: ''
+seo-description:
 
 categories:
 - Folklore
@@ -39,37 +39,37 @@ tags:
 - Venetian
 - Treasure
 - Men in Black
-keywords: ''
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
     with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
     of Matthaeus Merian.
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
 image-credits-artist: Matthäus Merian (*1593 - †1650)
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: Stein am Rhein – Stenium ad Rhenum
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 
 > <ins>Legends of the Canton St. Gallen</ins>

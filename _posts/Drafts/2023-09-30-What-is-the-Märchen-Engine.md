@@ -2,64 +2,64 @@
 layout: post
 
 title: What is the Märchen Engine?
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2023-09-30 14:03:56
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
 
-bullets: ''
+bullets:
 
 description: Welcome to the Märchen Engine, which outlines the core rules used by
     this Gaming System. This Introduction provides you with an overview of what the
     Märchen Engine is and how it works, while the later chapters show you how to create
     characters and  embark on your own exciting adventures.
-seo-description: ''
+seo-description:
 
 categories:
 - Role Playing Games
 - The Märchen Engine
 - Draft
-tags: ''
-keywords: ''
+tags:
+keywords:
 
 draft-status: integration
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-alt: Photo by Ted Tschopp using Midjourney
-image-author: ''
-image-author-URL: ''
+image-author:
+image-author-URL:
 image-credits: Photo by Ted Tschopp using Midjourney
-image-credits-URL: ''
+image-credits-URL:
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://www.tedt.org/
-image-credits-title: ''
-image-description: ''
+image-credits-title:
+image-description:
 image-title: FAME - Fitness, Academics, Mystical, Emotional
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
 mathjax: false
 
-order: ''
+order:
 ---
 - [Introduction](#introduction)
   - [What Is Roleplaying?](#what-is-roleplaying)

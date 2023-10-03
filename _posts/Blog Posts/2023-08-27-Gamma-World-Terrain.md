@@ -2,60 +2,60 @@
 layout: post
 
 title: Gamma World Terrain Backdrops
-title-url: ''
-subtitle: ''
-subtitle-url: ''
-quote: ''
+title-url:
+subtitle:
+subtitle-url:
+quote:
 excerpt: null
-source: ''
-source-url: ''
-call-to-action: ''
+source:
+source-url:
+call-to-action:
 
 date: 2023-08-27 10:55:48
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: A collection of images to use as backdrops for Gamma World, inspired
     by Pixel Art and Retro Video Games
-seo-description: ''
+seo-description:
 
 categories:
 - Gamma World
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
 image: null
 image-alt: null
-image-author: ''
-image-author-URL: ''
-image-credits: ''
+image-author:
+image-author-URL:
+image-credits:
 image-credits-URL: null
 image-credits-artist: null
-image-credits-artist-URL: ''
+image-credits-artist-URL:
 image-credits-title: null
-image-description: ''
-image-title: ''
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 The following was a prompt experiment in Midjourney.  My goal was to create a series of background or header images that felt like they were imagery from Gamma World.  Here is a what came out.
 

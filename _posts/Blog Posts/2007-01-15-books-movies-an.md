@@ -1,69 +1,69 @@
 ---
 layout: post
 
-title: 'Comparing ''Children of Men'': Book and Movie Exploration'
-title-url: ''
+title: 'ComparingChildren of Men'': Book and Movie Exploration'
+title-url:
 subtitle: An Insightful Analysis of Themes and Differences between the Novel and Film
-subtitle-url: ''
-quote: ''
-excerpt: ''
-source: ''
-source-url: ''
-call-to-action: ''
+subtitle-url:
+quote:
+excerpt:
+source:
+source-url:
+call-to-action:
 
 date: 2007-01-15 16:51:39+00:00
-update: ''
+update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org
 
-bullets: ''
+bullets:
 
 description: This article offers an in-depth comparison of the book and movie adaptation
     of 'Children of Men.' From themes like Sex, Family, Love, Hope, and Religion to
     the significant changes in characters and plot, the piece provides an honest reflection
     on both works of art. It concludes with a poignant reference to Psalm 90, which
     inspired the title.
-seo-description: ''
+seo-description:
 
 categories:
 - Movies
 - Books
-tags: ''
+tags:
 keywords: Children of Men, Book vs Movie, Comparison, Themes, Sex, Family, Love, Hope,
     Religion, Politics, Justice, Freedom, Analysis, Psalm 90, Literary Analysis
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
 image-description: An image that juxtaposes the cover of 'Children of Men' book with
     a still from the movie. In the background, faded symbols or icons may represent
     the themes discussed in the article, such as love, hope, religion, family, politics,
     justice, and freedom.
-image-title: ''
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 I finished reading [Children of Men](http://www.amazon.com/exec/obidos/ASIN/0307279901/wwwtschoppnet-20) this weekend. The book is a social commentary on Sex, Family, Love, Hope, and Religion. With this being said, it is a very honest and open look at issues man has surrounding these important dynamics in our lives. In many cases I found it sad. This as the desired effect as the book is a dystopia. The book itself ends on an up note, but everything is not all happy as there is a warning wrapped in it.
 

@@ -1,62 +1,62 @@
 ---
 layout: quotes
 
-title: ''
-title-url: ''
-subtitle: ''
-subtitle-url: ''
+title:
+title-url:
+subtitle:
+subtitle-url:
 quote: I haven't got a speech I didn't plan words I didn't even try to, I just knew
     I had to get here, to stand here and I knew I wanted you to listen, to really
     listen...
-excerpt: ''
+excerpt:
 source: Black Mirror - Fifteen Million Merits
-source-url: ''
-call-to-action: ''
+source-url:
+call-to-action:
 
 date: 2023-04-23 11:44:45.180083
-update: ''
+update:
 author:
     name: Charlie Brooker and Konnie Huq
-    avatar: ''
-    url: ''
+    avatar:
+    url:
 
-bullets: ''
+bullets:
 
-description: ''
-seo-description: ''
+description:
+seo-description:
 
 categories:
 - Quotes
-tags: ''
-keywords: ''
+tags:
+keywords:
 
-draft-status: ''
+draft-status:
 
 location:
-    name: ''
+    name:
 coordinates:
-    latitude: ''
-    longitude: ''
+    latitude:
+    longitude:
 
-image: ''
-image-alt: ''
-image-author: ''
-image-author-URL: ''
-image-credits: ''
-image-credits-URL: ''
-image-credits-artist: ''
-image-credits-artist-URL: ''
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image:
+image-alt:
+image-author:
+image-author-URL:
+image-credits:
+image-credits-URL:
+image-credits-artist:
+image-credits-artist-URL:
+image-credits-title:
+image-description:
+image-title:
 
-monster-or-magical-or-religious-ideas: ''
-year-the-event-took-place: ''
+monster-or-magical-or-religious-ideas:
+year-the-event-took-place:
 permalink: /Quotes-Database/:title:output_ext
 
-mathjax: ''
+mathjax:
 
-order: ''
+order:
 ---
 "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.
 
