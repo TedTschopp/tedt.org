@@ -1,32 +1,51 @@
 ---
-layout: post
-title: The Password Challange
-title-url: https://tedtschopp.github.io/The-Password-Challange/Password%20Challange.html
-date: 2018-06-03T07:11:42-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: |
-   Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
-excerpt: |
-   Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
-seo-description: |
-   Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
-
 bullets:
-  - Includes a dictionary of the most common passwords
-  - Includes a dictionary of the most common English words
-  - Includes a dictionary of the most common passwords that have been hacked already
-
-image: /img/home/password.jpg
-image-credits: Password List by Ted Tschopp https://github.com/TedTschopp/The-Password-Challange
-image-credits-title: Password List
-image-credits-artist: Ted Tschopp
-image-credits-URL: https://github.com/TedTschopp/The-Password-Challange
+- Includes a dictionary of the most common passwords
+- Includes a dictionary of the most common English words
+- Includes a dictionary of the most common passwords that have been hacked already
+call-to-action: ''
 categories: Home
+coordinates: ''
+date: 2018-06-03 07:11:42-07:00
+description: "Check the strength of your password based on mathematical models that\
+  \ take into account the latest hacking techniques! \n"
+draft-status: ''
+excerpt: "Check the strength of your password based on mathematical models that take\
+  \ into account the latest hacking techniques! \n"
+image: /img/home/password.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: Password List by Ted Tschopp https://github.com/TedTschopp/The-Password-Challange
+image-credits-URL: https://github.com/TedTschopp/The-Password-Challange
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: ''
+image-credits-title: Password List
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
 order: 6
+permalink: ''
+quote: ''
+seo-description: "Check the strength of your password based on mathematical models\
+  \ that take into account the latest hacking techniques! \n"
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: The Password Challange
+title-url: https://tedtschopp.github.io/The-Password-Challange/Password%20Challange.html
+update: ''
+year-the-event-took-place: ''
 ---
 
 Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 

@@ -1,28 +1,62 @@
 ---
-title: "The Future of Web-Based Computing: Revolutionizing the Creative Industry"
-subtitle: "How HTML5 and JavaScript Are Bringing Hollywood and Gaming Tools to Your Browser"
-date: 2013-11-27T14:34:55+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+bullets: ''
+call-to-action: ''
+categories:
+- Computers
+coordinates: ''
+date: 2013-11-27 14:34:55+00:00
+description: This article showcases videos of a MacBook Pro running Windows 7 that
+  launches complex applications like Photoshop and Unreal tournament engine entirely
+  through a browser using HTML5 and JavaScript. With the backing of influential advisors,
+  companies like oToy are working towards making advanced tools accessible via browsers.
+  The article predicts that within the next 3-5 years, most desktop applications will
+  have web versions, marking a significant shift in the industry.
+draft-status: ''
+excerpt: 'What you are seeing is an HTML5 / JavaScript version of Windows 7 running
+  in the cloud they launch Photoshop and then a 3D game using the Unreal tournament
+  engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running
+  in Firefox using just using HTML5 and JavaScript.
 
-excerpt: |
-  What you are seeing is an HTML5 / JavaScript version of Windows 7 running in the cloud they launch Photoshop and then a 3D game using the Unreal tournament engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running in Firefox using just using HTML5 and JavaScript.
-  
+
   Let that sink in for a moment.
 
-description: "This article showcases videos of a MacBook Pro running Windows 7 that launches complex applications like Photoshop and Unreal tournament engine entirely through a browser using HTML5 and JavaScript. With the backing of influential advisors, companies like oToy are working towards making advanced tools accessible via browsers. The article predicts that within the next 3-5 years, most desktop applications will have web versions, marking a significant shift in the industry."
-keywords: "HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photoshop, Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft"
-
-
-
-
-layout: post
-
+  '
 image: /wp-content/uploads/2013/11/javascript.jpg
-categories:
-  - Computers
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photoshop,
+  Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser
+  technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: How HTML5 and JavaScript Are Bringing Hollywood and Gaming Tools to Your
+  Browser
+subtitle-url: ''
+tags: ''
+title: 'The Future of Web-Based Computing: Revolutionizing the Creative Industry'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 Take a look at the following video:
 

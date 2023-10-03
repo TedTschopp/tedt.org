@@ -1,15 +1,45 @@
 ---
-quote: "• You will be newbie forever. Get good at the beginner mode: learning new programs, asking dumb questions, making stupid mistakes, soliciting help."
-author: Kevin Kelly
-source: '68 Bits of Unsolicited Advice'
-
-tags: ''
-date: 09-03-2014 14:30:06
-permalink: /Quotes-Database/:title:output_ext
-layout: quotes
+author:
+  name: Kevin Kelly
+bullets: ''
+call-to-action: ''
 categories:
 - Quotes
+coordinates: ''
 date: 2023-04-23 11:44:45.180083
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: quotes
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: /Quotes-Database/:title:output_ext
+quote: "\u2022 You will be newbie forever. Get good at the beginner mode: learning\
+  \ new programs, asking dumb questions, making stupid mistakes, soliciting help."
+seo-description: ''
+source: 68 Bits of Unsolicited Advice
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: ''
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 * A vacation plus a disaster equals an adventure.
 * A worthy goal for a year is to learn enough about a subject so that you can't believe how ignorant you were a year earlier.

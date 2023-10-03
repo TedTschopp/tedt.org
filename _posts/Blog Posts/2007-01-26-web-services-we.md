@@ -1,20 +1,54 @@
 ---
-title: Web Services, Web Services, Web Services
-date: 2007-01-26T15:27:06+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-title: "Exploring Web Services, Computing Theory, and the Future of Technology"
-subtitle: "A Comprehensive Insight into the Next Generation of Online Integration"
-description: "An in-depth article providing an understanding of web services, computing theory, and a look at the future. Geared towards those in the enterprise and web development sectors, this article explains web services from a practical standpoint and explores future opportunities in dividing them into data, calculation, and display services."
-keywords: "web services, enterprise architecture, computing theory, data services, calculation services, display services, technology convergence, security, quality assurance, web development"
-image-description: "An image illustrating the interconnectivity between computers through web services. It can depict servers communicating through a web interface, symbolizing the various aspects of data services, calculation services, and display services."
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2007-01-26 15:27:06+00:00
+description: An in-depth article providing an understanding of web services, computing
+  theory, and a look at the future. Geared towards those in the enterprise and web
+  development sectors, this article explains web services from a practical standpoint
+  and explores future opportunities in dividing them into data, calculation, and display
+  services.
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: An image illustrating the interconnectivity between computers through
+  web services. It can depict servers communicating through a web interface, symbolizing
+  the various aspects of data services, calculation services, and display services.
+image-title: ''
+keywords: web services, enterprise architecture, computing theory, data services,
+  calculation services, display services, technology convergence, security, quality
+  assurance, web development
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: A Comprehensive Insight into the Next Generation of Online Integration
+subtitle-url: ''
+tags: ''
+title: Exploring Web Services, Computing Theory, and the Future of Technology
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 **<u>Background  
 </u>**Over the last couple of years I have been working on large enterprise projects for a large corporation.&nbsp; I am recognised at the company a leading web developer.&nbsp; I am being groomed to become an Enterprise Architect. One of the things that keeps me up at night is a convergence of a technology called Web Services.

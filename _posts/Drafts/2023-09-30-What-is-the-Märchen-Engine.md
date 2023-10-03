@@ -1,29 +1,51 @@
 ---
-title: What is the Märchen Engine?
-date: 2023-09-30 14:03:56
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: Welcome to the Märchen Engine, which outlines the core rules used by this Gaming System. This Introduction provides you with an overview of what the Märchen Engine is and how it works, while the later chapters show you how to create characters and  embark on your own exciting adventures.
-
-layout: post
-
+bullets: ''
+call-to-action: ''
+categories:
+- Role Playing Games
+- "The M\xE4rchen Engine"
+- Draft
+coordinates: ''
+date: 2023-09-30 14:03:56
+description: "Welcome to the M\xE4rchen Engine, which outlines the core rules used\
+  \ by this Gaming System. This Introduction provides you with an overview of what\
+  \ the M\xE4rchen Engine is and how it works, while the later chapters show you how\
+  \ to create characters and  embark on your own exciting adventures."
+draft-status: integration
+excerpt: ''
 image: https://www.tedt.org/img/2023-07-22/FAME.png
-image-title: FAME - Fitness, Academics, Mystical, Emotional
+image-alt: Photo by Ted Tschopp using Midjourney
+image-author: ''
+image-author-URL: ''
+image-credits: Photo by Ted Tschopp using Midjourney
+image-credits-URL: ''
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://www.tedt.org/
-image-credits: Photo by Ted Tschopp using Midjourney
-image-alt: Photo by Ted Tschopp using Midjourney
-
-categories:
-  - Role Playing Games
-  - The Märchen Engine
-  - Draft
-draft-status: integration
+image-credits-title: ''
+image-description: ''
+image-title: FAME - Fitness, Academics, Mystical, Emotional
+keywords: ''
+layout: post
+location: ''
 mathjax: false
-
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: "What is the M\xE4rchen Engine?"
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 - [Introduction](#introduction)
   - [What Is Roleplaying?](#what-is-roleplaying)

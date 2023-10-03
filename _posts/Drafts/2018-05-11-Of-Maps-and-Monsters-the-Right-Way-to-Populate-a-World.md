@@ -1,35 +1,52 @@
 ---
-title: Of Maps and Monsters, the Right way to Populate a World Part I
-date: 2018-05-11T21:04:42-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-
-description: "Learn the art of world-building in role-playing games by understanding the right way to populate your world with maps and monsters. A comprehensive guide for game masters."
-keywords: Role playing games,  World-building, Game Master, Maps, Monsters, Storytelling
-
-
-
-description: 
-excerpt: |
-   This work is the beginning of a collection of notes on Monsters and Maps.  In the future I will split this out into several different sections.  I wanted to start wtih what I had here and start working my thoughts out while getting some of this out of my head and into a place I can review and look at. 
-
-layout: post
-
-image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
-image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
-image-author: Gervase of Ebstorf
-image-title: Ebstorf Map
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Maps
-  - Monsters
-  - Draft
+- Role Playing Games
+- Maps
+- Monsters
+- Draft
+coordinates: ''
+date: 2018-05-11 21:04:42-07:00
+description: null
 draft-status: notes
+excerpt: "This work is the beginning of a collection of notes on Monsters and Maps.\
+  \  In the future I will split this out into several different sections.  I wanted\
+  \ to start wtih what I had here and start working my thoughts out while getting\
+  \ some of this out of my head and into a place I can review and look at. \n"
+image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
+image-alt: ''
+image-author: Gervase of Ebstorf
+image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: Ebstorf Map
+keywords: Role playing games,  World-building, Game Master, Maps, Monsters, Storytelling
+layout: post
+location: ''
 mathjax: true
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Of Maps and Monsters, the Right way to Populate a World Part I
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 <style>
 .dccvsdnd thead tr th {

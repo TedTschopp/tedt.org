@@ -1,24 +1,48 @@
 ---
-title: Getting an AI to Run Your Next TTRPG 
-date: 2022-12-23T16:15:17-08:00 
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-excerpt: |
-  How I have used AI Chatbots to help generate content and ideas for Table Top Role Playing Games.   
-
-layout: post
-
+bullets: ''
+call-to-action: ''
+categories:
+- Role Playing Games
+- Computers
+coordinates: ''
+date: 2022-12-23 16:15:17-08:00
+description: ''
+draft-status: ''
+excerpt: "How I have used AI Chatbots to help generate content and ideas for Table\
+  \ Top Role Playing Games.   \n"
 image: /wp-content/uploads/2022/12/23/TTRPG-Gamma-World-ASCII-Art.jpg
 image-alt: Gamma World 1st Edition RPG Books and dice
+image-author: ''
+image-author-URL: ''
+image-credits: ''
 image-credits-URL: https://www.facebook.com/mudpuppycomics
-image-credits-title: OSR Role Playing Game Dice
 image-credits-artist: Jim Wampler
-categories:
-  - Role Playing Games
-  - Computers
+image-credits-artist-URL: ''
+image-credits-title: OSR Role Playing Game Dice
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Getting an AI to Run Your Next TTRPG
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 I have spent a long part of my Christmas vacation figuring out how to drive an AI Chatbot (https://chat.openai.com/chat) to help people run Role Playing Games. 

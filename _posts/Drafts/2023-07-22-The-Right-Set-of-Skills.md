@@ -1,39 +1,63 @@
 ---
-title: The Right Set of Skills
-date: 2023-07-22T18:51:10-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+bullets: ''
+call-to-action: ''
+categories:
+- Role Playing Games
+- "The M\xE4rchen Engine"
+- Draft
+coordinates: ''
+date: 2023-07-22 18:51:10-07:00
+description: Explore the essential skills needed in today's fast-paced environment.
+  Learn how to adapt and grow in your career with the right set of skills.
+draft-status: integration
+excerpt: 'All beings have four aspects of their existence. These define the
 
+  highest categorical breakdown of a being. They are Physical, Mental,
 
-description: "Explore the essential skills needed in today's fast-paced environment. Learn how to adapt and grow in your career with the right set of skills."
+  Social, and Spiritual. They each have a numeric score The higher the
 
-keywords: "Skills, Career, Adaptability, Learning, Professional Development"
+  score, the more potential that being has in that aspect of their
 
-excerpt: |
-   All beings have four aspects of their existence. These define the
-   highest categorical breakdown of a being. They are Physical, Mental,
-   Social, and Spiritual. They each have a numeric score The higher the
-   score, the more potential that being has in that aspect of their
-   existence. These numbers also represent how much damage the character
-   can take. These aspects can be broken down into your traditional
-   Characteristics.
+  existence. These numbers also represent how much damage the character
 
-layout: post
+  can take. These aspects can be broken down into your traditional
+
+  Characteristics.
+
+  '
 image: https://www.tedt.org/img/2023-07-22/FAME.png
-image-title: FAME - Fitness, Academics, Mystical, Emotional
+image-alt: Photo by Ted Tschopp using Midjourney
+image-author: ''
+image-author-URL: ''
+image-credits: Photo by Ted Tschopp using Midjourney
+image-credits-URL: ''
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://www.tedt.org/
-image-credits: Photo by Ted Tschopp using Midjourney
-image-alt: Photo by Ted Tschopp using Midjourney
-  
-categories:
-  - Role Playing Games
-  - The Märchen Engine
-  - Draft
-draft-status: integration
+image-credits-title: ''
+image-description: ''
+image-title: FAME - Fitness, Academics, Mystical, Emotional
+keywords: Skills, Career, Adaptability, Learning, Professional Development
+layout: post
+location: ''
 mathjax: true
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: The Right Set of Skills
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 <style>
 .dccvsdnd thead tr th {

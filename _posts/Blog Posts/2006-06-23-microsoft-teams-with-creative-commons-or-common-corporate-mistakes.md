@@ -1,14 +1,46 @@
 ---
-title: Microsoft teams with Creative Commons or Common Corporate Mistakes
-date: 2006-06-23T23:50:37+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2006-06-23 23:50:37+00:00
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Microsoft teams with Creative Commons or Common Corporate Mistakes
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 Microsoft tonight [announced a new partnership](http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx) with [Creative Commons](http://creativecommons.org/), the organization dedicated to providing content producers a legal alternative to “all rights reserved” copyright law, to offer a new tool for easy insertion of Creative Commons licenses into works created with Microsoft Office.
 

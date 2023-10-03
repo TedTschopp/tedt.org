@@ -1,26 +1,59 @@
 ---
-title: "The Revolution of Mobile Computing: From Mainframes to Smartphones"
-subtitle: "How Smartphones Changed Every Aspect of Life and Business"
-date: 2015-01-29T12:17:59+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-excerpt: |
-  The trend in computing is to be more and more personable.  When you went from a mainframe to a PC, what was compelling about that was that it was accessible to more people. Then from a desktop to a laptop, it was not just accessible to more people, but accessible in more places.  And this was the beginning of mobile computing.
-
-description: "This article explores the evolution of computing from mainframes to PCs, laptops, and ultimately to mobile phones. The author emphasizes how smartphones have become an essential part of daily life, offering all-in-one functionality and complete mobility. By examining trends in China and the shift in major companies like Microsoft and Sony, the article provides a comprehensive overview of the impact of mobile computing on contemporary society."
-keywords: "mobile computing, smartphones, mainframes, PCs, laptops, China, gadgets, all-in-one, Xbox, PlayStation, Microsoft, Sony, mobile applications, cloud computing, modern technology"
-
-
-
-layout: post
-
-image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
-  - Mobile
+- Computers
+- Mobile
+coordinates: ''
+date: 2015-01-29 12:17:59+00:00
+description: This article explores the evolution of computing from mainframes to PCs,
+  laptops, and ultimately to mobile phones. The author emphasizes how smartphones
+  have become an essential part of daily life, offering all-in-one functionality and
+  complete mobility. By examining trends in China and the shift in major companies
+  like Microsoft and Sony, the article provides a comprehensive overview of the impact
+  of mobile computing on contemporary society.
+draft-status: ''
+excerpt: 'The trend in computing is to be more and more personable.  When you went
+  from a mainframe to a PC, what was compelling about that was that it was accessible
+  to more people. Then from a desktop to a laptop, it was not just accessible to more
+  people, but accessible in more places.  And this was the beginning of mobile computing.
+
+  '
+image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: mobile computing, smartphones, mainframes, PCs, laptops, China, gadgets,
+  all-in-one, Xbox, PlayStation, Microsoft, Sony, mobile applications, cloud computing,
+  modern technology
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: How Smartphones Changed Every Aspect of Life and Business
+subtitle-url: ''
+tags: ''
+title: 'The Revolution of Mobile Computing: From Mainframes to Smartphones'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 The trend in computing is to be more and more personable.
 

@@ -1,68 +1,82 @@
 ---
-title: The Little Shepherd of Mellikon
-date: 2023-08-20 16:54:49
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-excerpt:  The people simply know him as the Little Shepherd.
-
-description: "The legend of the Little Shepherd of Mellikon, a tale of theft, sudden death, and a haunting spirit. Discover the history, folklore, and mystery that surround this Aargau legend."
-
-keywords: "Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Capuchin monk, Neuburgerhalde, folklore, mystery"
-
-layout: post
-
-permalink: /Swiss-Folklore/:title:output_ext
-
-
-image: /img/Swiss/A_ghost_of_a_young_Shepherd_emerges.jpg
-image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist. In the foreground, villagers peer upward, faces etched with curiosity and fear. The hole in the rock looms ominously, embodying the legend of the Little Shepherd who still haunts the area.
-
-image-credits-title: https://www.tedt.org/
-image-credits-title: "The Legend of the Little Shepherd"
-image-credits-artist: Ted Tschopp and Midjourney
-
-
-
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Folklore
-tags:
-  - Switzerland
-  - Mellikon
-  - Aargau
-  - Legends
-  - Folklore
-  - Ghost
-  - Haunting
-  - Capuchin Monk
-  - Neuburgerhalde
-  - Theft
-  - Mystery
-  - Banishment
-  - Supernatural
-  - Evil Spirit
-  - Early Modern Period
-  - County of Baden
-  - Rhine River
-  - Nobility
-  - Rural Life
-  - Cultural Heritage
-
-
-location:
-  place-names: Mellikon, Zurzach District, Aargau, Switzerland
-  on-map: Mellikon (47.6070° N, 8.2884° E)
-
+- Folklore
 coordinates:
-  latitude: 47.6070
+  latitude: 47.607
   longitude: 8.2884
-year-the-event-took-lace: Early Modern Period (15th-18th century)
+date: 2023-08-20 16:54:49
+description: The legend of the Little Shepherd of Mellikon, a tale of theft, sudden
+  death, and a haunting spirit. Discover the history, folklore, and mystery that surround
+  this Aargau legend.
+draft-status: ''
+excerpt: The people simply know him as the Little Shepherd.
+image: /img/Swiss/A_ghost_of_a_young_Shepherd_emerges.jpg
+image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist.
+  In the foreground, villagers peer upward, faces etched with curiosity and fear.
+  The hole in the rock looms ominously, embodying the legend of the Little Shepherd
+  who still haunts the area.
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist-URL: ''
+image-credits-title: The Legend of the Little Shepherd
+image-description: ''
+image-title: ''
+keywords: Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Capuchin
+  monk, Neuburgerhalde, folklore, mystery
+layout: post
+location:
+  address: ''
+  city: ''
+  country: ''
+  name: ''
+  on-map: "Mellikon (47.6070\xB0 N, 8.2884\xB0 E)"
+  place-names: Mellikon, Zurzach District, Aargau, Switzerland
+  state: ''
+  zip: ''
+mathjax: ''
 monster-or-magical-or-religious-ideas: Haunting of granary, banishment of spirit
-
-
+order: ''
+permalink: /Swiss-Folklore/:title:output_ext
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags:
+- Switzerland
+- Mellikon
+- Aargau
+- Legends
+- Folklore
+- Ghost
+- Haunting
+- Capuchin Monk
+- Neuburgerhalde
+- Theft
+- Mystery
+- Banishment
+- Supernatural
+- Evil Spirit
+- Early Modern Period
+- County of Baden
+- Rhine River
+- Nobility
+- Rural Life
+- Cultural Heritage
+title: The Little Shepherd of Mellikon
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 > <ins>Swiss Legends from Aargau, Volume 1, Page 293</ins>

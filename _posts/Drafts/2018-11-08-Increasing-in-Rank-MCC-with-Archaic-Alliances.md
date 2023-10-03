@@ -1,30 +1,52 @@
 ---
-title: Increasing in Rank in MCC with Archaic Alliances
-date: 2018-11-02T10:37:12-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: |
-   The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
-
-excerpt: |
-   The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
-
-seo-description: |
-   The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.  
-
-
-layout: post
-
-image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Mutant Crawl Classics
-  - Draft
+- Role Playing Games
+- Gamma World
+- Mutant Crawl Classics
+- Draft
+coordinates: ''
+date: 2018-11-02 10:37:12-07:00
+description: "The following is an integration of rules for Gamma World's Rank Advancement\
+  \ with Mutant Crawl Classic.  \n"
 draft-status: Alpha
+excerpt: "The following is an integration of rules for Gamma World's Rank Advancement\
+  \ with Mutant Crawl Classic.  \n"
+image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: "The following is an integration of rules for Gamma World's Rank\
+  \ Advancement with Mutant Crawl Classic.  \n"
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Increasing in Rank in MCC with Archaic Alliances
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 # Character Status

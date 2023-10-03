@@ -1,25 +1,56 @@
 ---
-title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does Alignment
-date: 2022-04-24T17:42:44-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: 
-excerpt: |
-   As characters have adventures, they will gain a reputation, fame, and status. You can track this growth in the campaign using Status Points. Status Points, like experience points, are accumulated into a new number on your character sheet called Rank. Rank is a measure of how your character’s reputation, fame, and status affect the reactions of NPC’s in different situations. Unlike experience points, which represents how capable a character is, status points represent how capable the society around the characters feel the character is.
-
-layout: post
-image: /wp-content/uploads/2022/04/24/community-life.png
-image-credits: Art from Gamma World 6th Edition
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Mutant Crawl Classics
-  - Draft
+- Role Playing Games
+- Gamma World
+- Mutant Crawl Classics
+- Draft
+coordinates: ''
+date: 2022-04-24 17:42:44-07:00
+description: null
 draft-status: notes
+excerpt: "As characters have adventures, they will gain a reputation, fame, and status.\
+  \ You can track this growth in the campaign using Status Points. Status Points,\
+  \ like experience points, are accumulated into a new number on your character sheet\
+  \ called Rank. Rank is a measure of how your character\u2019s reputation, fame,\
+  \ and status affect the reactions of NPC\u2019s in different situations. Unlike\
+  \ experience points, which represents how capable a character is, status points\
+  \ represent how capable the society around the characters feel the character is.\n"
+image: /wp-content/uploads/2022/04/24/community-life.png
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: Art from Gamma World 6th Edition
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
 mathjax: true
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does
+  Alignment
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 <style>
 .dccvsdnd thead tr th {

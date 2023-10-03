@@ -1,14 +1,46 @@
 ---
-title: Example of XMLHttpRequest
-date: 2005-03-11T01:49:55+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2005-03-11 01:49:55+00:00
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Example of XMLHttpRequest
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I'm working on this at work, and I'd like to use some of the ideas on my personal sites as well.  I thought I'd post this, as it doesn't yet contain anything to amazing or too specific to my work's environment.
 

@@ -1,14 +1,46 @@
 ---
-title: Step 1 - Reply by Chat
-date: 2006-06-01T21:33:53+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2006-06-01 21:33:53+00:00
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Step 1 - Reply by Chat
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I have always thought that the logical direction for chat and email was the same. At some point in the future the only difference between them will be if you are there to answer the chat. Looks like Google gets this as well.
 

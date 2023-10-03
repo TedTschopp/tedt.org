@@ -1,9 +1,43 @@
 ---
-title: Comment Policy
-date: 1993-01-01T08:41:00+00:00
-author: Ted Tschopp
+author:
+  name: Ted Tschopp
+bullets: ''
+call-to-action: ''
+categories: ''
+coordinates: ''
+date: 1993-01-01 08:41:00+00:00
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
 layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
 permalink: /Comment_Policy/
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Comment Policy
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 ## Keep it civil aka don’t be a jerk
 

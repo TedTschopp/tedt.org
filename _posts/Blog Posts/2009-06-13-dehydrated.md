@@ -1,24 +1,55 @@
 ---
-title: "Dehydrated"
-date: 2009-06-13T12:06:54+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-description: "A mysterious girl named Alice is found wandering. The medical examination reveals more questions than answers, and the protagonist's discovery in his front yard leaves him forever changed. A story that delves into the unknown, leaving readers to ponder what lies just beyond the realm of human understanding."
-keywords: "mystery, supernatural, X-Files, Fringe, transformation, short story, Dehydrated, Alice, intrigue, psychological"
-image-description: "An image of a young, thin girl with black hair, hiding her face. Her eyes are an intense ice blue, and a green garland with budding flowers is seen intertwined in her hair. In the background, there's a mysterious tree with red flowers and black branches, symbolizing her connection to something beyond our understanding."
-call-to-action: "What do you think happened to Alice? Share your interpretations, thoughts, and feelings about this mysterious tale in the comments below. Join the conversation and explore the enigmatic world presented in 'Dehydrated.'"
-
-image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg
-
-image-credits-URL: https://www.tedt.org/
-image-credits-title: Dehydrated
-image-credits-artist: Ted Tschopp and Midjourney
+bullets: ''
+call-to-action: What do you think happened to Alice? Share your interpretations, thoughts,
+  and feelings about this mysterious tale in the comments below. Join the conversation
+  and explore the enigmatic world presented in 'Dehydrated.'
 categories:
-  - Personal Writing
+- Personal Writing
+coordinates: ''
+date: 2009-06-13 12:06:54+00:00
+description: A mysterious girl named Alice is found wandering. The medical examination
+  reveals more questions than answers, and the protagonist's discovery in his front
+  yard leaves him forever changed. A story that delves into the unknown, leaving readers
+  to ponder what lies just beyond the realm of human understanding.
+draft-status: ''
+excerpt: ''
+image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: https://www.tedt.org/
+image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist-URL: ''
+image-credits-title: Dehydrated
+image-description: An image of a young, thin girl with black hair, hiding her face.
+  Her eyes are an intense ice blue, and a green garland with budding flowers is seen
+  intertwined in her hair. In the background, there's a mysterious tree with red flowers
+  and black branches, symbolizing her connection to something beyond our understanding.
+image-title: ''
+keywords: mystery, supernatural, X-Files, Fringe, transformation, short story, Dehydrated,
+  Alice, intrigue, psychological
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Dehydrated
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I was asked to put together a short story describing someone in a world not unlike the one presented to us in X-Files or Fringe. This is the first draft after about 60 minutes of work. Perhaps I'll do more in the future. The story is titled Dehydrated.
 

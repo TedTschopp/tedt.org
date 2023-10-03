@@ -1,25 +1,49 @@
 ---
-title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
-date: 2018-04-22T10:04:00+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.  
-
-excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor. 
-
-layout: post
-
-image: /wp-content/uploads/2018/04/The-Leviathan.jpg
-image-credits: The Leviathan by Larry Elmore - http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Dungeons & Dragons
-  - Draft
+- Role Playing Games
+- Gamma World
+- Dungeons & Dragons
+- Draft
+coordinates: ''
+date: 2018-04-22 10:04:00+00:00
+description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
 draft-status: component
+excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
+image: /wp-content/uploads/2018/04/The-Leviathan.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: The Leviathan by Larry Elmore - http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 # Contents

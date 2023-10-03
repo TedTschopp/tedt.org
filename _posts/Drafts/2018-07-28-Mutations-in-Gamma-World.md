@@ -1,31 +1,69 @@
 ---
-title: Mutations in Gamma World
-date: 2018-07-27T17:37:12-07:00
-update: 2018-07-28T16:44:34-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: |
-   During the days of Tech Level VI, a lot of time was spent by Artificial Intelligences and bioengineers to come up with ways to modify humans, animals, and plants.  During this time all sort of transhumanism and animal / plant uplifting took place.  After the cataclysm many of these strains granted their species advantages in survival.   The following attempts to recreate the understanding these people had and make sense of this information.
-excerpt: |
-   During the days of Tech Level VI, a lot of time was spent by Artificial Intelligences and bioengineers to come up with ways to modify humans, animals, and plants.  During this time all sort of transhumanism and animal / plant uplifting took place.  After the cataclysm many of these strains granted their species advantages in survival.   The following attempts to recreate the understanding these people had and make sense of this information.
-seo-description: |
-   During the days of Tech Level VI, a lot of time was spent by Artificial Intelligences and bioengineers to come up with ways to modify humans, animals, and plants.  During this time all sort of transhumanism and animal / plant uplifting took place.  After the cataclysm many of these strains granted their species advantages in survival.   The following attempts to recreate the understanding these people had and make sense of this information.
-
-layout: post
-
-image: /img/2018-07-28/ola-larsson-genlabbalpha.jpg
-image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
-image-credits-title: Genelab Alpha
-image-credits-artist: Ola Larsson
-image-credits-URL: https://larsson.artstation.com/projects/qOJQn
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Draft
+- Role Playing Games
+- Gamma World
+- Draft
+coordinates: ''
+date: 2018-07-27 17:37:12-07:00
+description: 'During the days of Tech Level VI, a lot of time was spent by Artificial
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
+
+  '
 draft-status: notes
+excerpt: 'During the days of Tech Level VI, a lot of time was spent by Artificial
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
+
+  '
+image: /img/2018-07-28/ola-larsson-genlabbalpha.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
+image-credits-URL: https://larsson.artstation.com/projects/qOJQn
+image-credits-artist: Ola Larsson
+image-credits-artist-URL: ''
+image-credits-title: Genelab Alpha
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: 'During the days of Tech Level VI, a lot of time was spent by Artificial
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
+
+  '
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Mutations in Gamma World
+title-url: ''
+update: 2018-07-28 16:44:34-07:00
+year-the-event-took-place: ''
 ---
 
 

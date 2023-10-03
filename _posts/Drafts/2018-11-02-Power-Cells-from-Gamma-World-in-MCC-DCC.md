@@ -1,34 +1,52 @@
 ---
-title: Power Cells from Gamma World in MCC & DCC
-date: 2018-11-02T10:37:12-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: |
-   The following is an integration of rules for Gamma World's Power Cells with  Mutant Crawl Classic.  
-
-excerpt: |
-   The following is an integration of rules for Gamma World's Power Cells with  Mutant Crawl Classic.  
-
-seo-description: |
-   The following is an integration of rules for Gamma World's Power Cells with  Mutant Crawl Classic.  
-
-
-layout: post
-
-image:  /img/2018-11-02/FuelCellRenders2.jpg
-image-credits: District 9 Alien Fuel Cell by Josh Haberman https://www.artstation.com/artwork/lqz25
-image-credits-title: District 9 Alien Fuel Cell
-image-credits-artist: Josh Haberman
-image-credits-URL: https://artofjoshhaberman.blogspot.com/2012/08/district-9-alien-fuel-cell.html
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Mutant Crawl Classics
-  - Draft
+- Role Playing Games
+- Gamma World
+- Mutant Crawl Classics
+- Draft
+coordinates: ''
+date: 2018-11-02 10:37:12-07:00
+description: "The following is an integration of rules for Gamma World's Power Cells\
+  \ with  Mutant Crawl Classic.  \n"
 draft-status: Alpha
+excerpt: "The following is an integration of rules for Gamma World's Power Cells with\
+  \  Mutant Crawl Classic.  \n"
+image: /img/2018-11-02/FuelCellRenders2.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: District 9 Alien Fuel Cell by Josh Haberman https://www.artstation.com/artwork/lqz25
+image-credits-URL: https://artofjoshhaberman.blogspot.com/2012/08/district-9-alien-fuel-cell.html
+image-credits-artist: Josh Haberman
+image-credits-artist-URL: ''
+image-credits-title: District 9 Alien Fuel Cell
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: "The following is an integration of rules for Gamma World's Power\
+  \ Cells with  Mutant Crawl Classic.  \n"
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: Power Cells from Gamma World in MCC & DCC
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 # Contents

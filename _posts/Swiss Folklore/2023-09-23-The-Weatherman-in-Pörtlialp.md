@@ -1,45 +1,62 @@
 ---
-title: The Weatherman in Pörtlialp
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-date: 2023-09-23 15:04:59
-
-excerpt: "Whenever people heard a yodel from the 'Beerdli,' bad weather is coming."
-
-description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears in Pörtlialp that is believed to bring bad weather."
-
-keywords: "Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather"
-
-location: 
-  place-names: Pörtlialp, Uri, Switzerland
-  on-map: Betten (46.7758° N, 8.5942° E)
-
-coordinates:
-   longitude: "8.5942"
-   latitude: "46.7758"
-year: "1926"
-monster-or-magical-or-religious-ideas: "Mysterious Weatherman"
-tags: ["Legend", "Mystery", "Weather", "Swiss Culture"]
-
-layout: post
-
-permalink: /Swiss-Folklore/:title:output_ext
-
-image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
-
-image-alt: "An illustration of a large, heavy man wearing a large hat, walking in a forest."
-image-credits-title: https://www.tedt.org/
-image-credits-title: "The Weatherman in Pörtlialp"
-image-credits-artist: Ted Tschopp and Midjourney
-
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Folklore
-
-
+- Folklore
+coordinates:
+  latitude: '46.7758'
+  longitude: '8.5942'
+date: 2023-09-23 15:04:59
+description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears\
+  \ in P\xF6rtlialp that is believed to bring bad weather."
+draft-status: ''
+excerpt: Whenever people heard a yodel from the 'Beerdli,' bad weather is coming.
+image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
+image-alt: An illustration of a large, heavy man wearing a large hat, walking in a
+  forest.
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist-URL: ''
+image-credits-title: "The Weatherman in P\xF6rtlialp"
+image-description: ''
+image-title: ''
+keywords: "Swiss German, Folk Tale, Weatherman, P\xF6rtlialp, Bad Weather"
+layout: post
+location:
+  address: ''
+  city: ''
+  country: ''
+  name: ''
+  on-map: "Betten (46.7758\xB0 N, 8.5942\xB0 E)"
+  place-names: "P\xF6rtlialp, Uri, Switzerland"
+  state: ''
+  zip: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: Mysterious Weatherman
+order: ''
+permalink: /Swiss-Folklore/:title:output_ext
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags:
+- Legend
+- Mystery
+- Weather
+- Swiss Culture
+title: "The Weatherman in P\xF6rtlialp"
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 > <ins>Legends from Uri 1 - 3</ins>

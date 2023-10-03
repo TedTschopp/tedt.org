@@ -1,20 +1,45 @@
 ---
-quote: "So, look!\
-This is a book!\
-But no page turns.\
-Only beneath the metal burns\
-Such stuffs as all new times are made of.\
-So, Cowards, what are you afraid of?"
-author: Ray Bradbury
-source: Ode to the Quick Computer
-
-tags: ''
-date: 09-03-2014 14:42:44
-permalink: /Quotes-Database/:title:output_ext
-layout: quotes
+author:
+  name: Ray Bradbury
+bullets: ''
+call-to-action: ''
 categories:
 - Quotes
+coordinates: ''
 date: 2023-04-23 11:44:45.180083
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: quotes
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: /Quotes-Database/:title:output_ext
+quote: So, look!This is a book!But no page turns.Only beneath the metal burnsSuch
+  stuffs as all new times are made of.So, Cowards, what are you afraid of?
+seo-description: ''
+source: Ode to the Quick Computer
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: ''
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I would deny\
 The right of those who terrify\

@@ -1,20 +1,53 @@
 ---
-title: "Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective"
-subtitle: "Exploring the Existence of External Standards and Human Value"
-date: 2007-01-26T12:49:19+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-
-description: "This article delves into the concept of universal standards for intelligence, wisdom, beauty, and manners, comparing them to a measurable external standard. It further emphasizes the intrinsic value of individuals irrespective of their adherence to these standards, and ties into broader themes of history, religion, and politics."
-keywords:  Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value, Religion, Politics
-image-description: "An image of a balanced scale, symbolizing the universal standards by which characteristics like intelligence, wisdom, beauty, and manners are measured. The scale rests on a book representing history, with shadows of iconic historical figures looming in the background."
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Religion
+- Religion
+coordinates: ''
+date: 2007-01-26 12:49:19+00:00
+description: This article delves into the concept of universal standards for intelligence,
+  wisdom, beauty, and manners, comparing them to a measurable external standard. It
+  further emphasizes the intrinsic value of individuals irrespective of their adherence
+  to these standards, and ties into broader themes of history, religion, and politics.
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: An image of a balanced scale, symbolizing the universal standards
+  by which characteristics like intelligence, wisdom, beauty, and manners are measured.
+  The scale rests on a book representing history, with shadows of iconic historical
+  figures looming in the background.
+image-title: ''
+keywords: Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value,
+  Religion, Politics
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: Exploring the Existence of External Standards and Human Value
+subtitle-url: ''
+tags: ''
+title: 'Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 Some people are just idiots, other people are rude, and finally some people are just downright ugly.&nbsp; This means that there are some people who are brilliant, there are others who are considerate, and there is such a thing as beauty.&nbsp;&nbsp;I&rsquo;m not trying to say that I am brilliant, or considerate, or beautiful.&nbsp; To the contrary, most of the time I am not any of these things.&nbsp; 
 

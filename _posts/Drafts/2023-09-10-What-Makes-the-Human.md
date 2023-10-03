@@ -1,29 +1,56 @@
 ---
-title: What Makes a Human?
-date: 2023-07-22T18:51:10-07:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-
-description: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions.
-
-excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted nature of human identity, exploring it through the lenses of biology, philosophy, and culture. The author argues that being human is not solely defined by our biological makeup but is a combination of our cognitive abilities, emotional experiences, and social interactions.
-
-layout: post
-
-image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
-image-author-URL: https://www.tedt.org/
-image-author: Ted Tschopp using Midjourney
-image-alt: An artist carving a statue of a man out of a giant mountain
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Role Playing Games
-  - The Märchen Engine
-  - Draft
+- Role Playing Games
+- "The M\xE4rchen Engine"
+- Draft
+coordinates: ''
+date: 2023-07-22 18:51:10-07:00
+description: This draft on TTRPG Characters delves into the complex and multi-faceted
+  nature of human identity, exploring it through the lenses of biology, philosophy,
+  and culture. The author argues that being human is not solely defined by our biological
+  makeup but is a combination of our cognitive abilities, emotional experiences, and
+  social interactions.
 draft-status: integration
+excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted
+  nature of human identity, exploring it through the lenses of biology, philosophy,
+  and culture. The author argues that being human is not solely defined by our biological
+  makeup but is a combination of our cognitive abilities, emotional experiences, and
+  social interactions.
+image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
+image-alt: An artist carving a statue of a man out of a giant mountain
+image-author: Ted Tschopp using Midjourney
+image-author-URL: https://www.tedt.org/
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: post
+location: ''
 mathjax: true
-
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: What Makes a Human?
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Character Sheet - Work in Progress
 

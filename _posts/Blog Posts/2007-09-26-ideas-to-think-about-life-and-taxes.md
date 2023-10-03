@@ -1,21 +1,56 @@
 ---
-title: "Exploring Taxonomy: A Thought-Provoking Talk by Alex Wright"
-subtitle: "Understanding the Universality of Taxonomies in Human Cultures"
-date: 2007-09-26T16:31:50+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-description: "This article delves into a talk by Alex Wright at the Long Now Foundation, exploring the fascinating concept of taxonomy across different societies. It questions why taxonomies are universally 5 or 6 levels deep and examines theories, including connections to family structure and genetics."
-keywords: "taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, human cultures, family structure, genetics, categorization"
-image-description: "An image illustrating different levels of taxonomy, possibly showing a tree-like diagram that categorizes elements into 5 or 6 levels, representing the universal depth of taxonomies mentioned in the talk."
-call-to-action: "What are your thoughts on the universal structure of taxonomies? Have you ever considered how categorization plays a role in our understanding of the world? Share your thoughts and insights in the comments below. Let's engage in a thought-provoking discussion!"
-
+bullets: ''
+call-to-action: What are your thoughts on the universal structure of taxonomies? Have
+  you ever considered how categorization plays a role in our understanding of the
+  world? Share your thoughts and insights in the comments below. Let's engage in a
+  thought-provoking discussion!
 categories:
-  - Computers
-  - Science
+- Computers
+- Science
+coordinates: ''
+date: 2007-09-26 16:31:50+00:00
+description: This article delves into a talk by Alex Wright at the Long Now Foundation,
+  exploring the fascinating concept of taxonomy across different societies. It questions
+  why taxonomies are universally 5 or 6 levels deep and examines theories, including
+  connections to family structure and genetics.
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: An image illustrating different levels of taxonomy, possibly showing
+  a tree-like diagram that categorizes elements into 5 or 6 levels, representing the
+  universal depth of taxonomies mentioned in the talk.
+image-title: ''
+keywords: taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, human
+  cultures, family structure, genetics, categorization
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: Understanding the Universality of Taxonomies in Human Cultures
+subtitle-url: ''
+tags: ''
+title: 'Exploring Taxonomy: A Thought-Provoking Talk by Alex Wright'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I recently heard [Alex Wright](http://www.alexwright.org/) speak at the [Long Now Foundation](http://www.longnow.org/)&#160;via their [podcast](http://www.longnow.org/projects/seminars/SALT.xml).&#160; It made me think of a couple things.
 

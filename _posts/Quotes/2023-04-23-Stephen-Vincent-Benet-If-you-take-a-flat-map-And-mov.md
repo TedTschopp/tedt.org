@@ -1,15 +1,48 @@
 ---
-quote: " The General loses his stars and the block-men die\nIn unstrategic defiance of martial law\nBecause still used to just being men, not block-parts."
-author: Stephen Vincent Benet
-source: John Brown's Body
-
-tags: Blocks,Management,Strategy,War
-date: 09-03-2014 14:16:59
-permalink: /Quotes-Database/:title:output_ext
-layout: quotes
+author:
+  name: Stephen Vincent Benet
+bullets: ''
+call-to-action: ''
 categories:
 - Quotes
+coordinates: ''
 date: 2023-04-23 11:44:45.180083
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: quotes
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: /Quotes-Database/:title:output_ext
+quote: ' The General loses his stars and the block-men die
+
+  In unstrategic defiance of martial law
+
+  Because still used to just being men, not block-parts.'
+seo-description: ''
+source: John Brown's Body
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: Blocks,Management,Strategy,War
+title: ''
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 
 If you take a flat map \

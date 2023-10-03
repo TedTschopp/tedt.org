@@ -1,20 +1,55 @@
 ---
-title: "The Complexity of Managing 212 RSS Feeds: A Blogger's Challenge"
-subtitle: "Navigating the Maze of Information: Tools, Workflows, and Overload"
-date: 2007-06-07T18:53:36+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-
-description: "The author shares their experience with managing 212 different RSS feeds and blogs, highlighting the struggles with taxonomy, workflow, scanning articles, linkblogs, and the limits of current feed reading applications. This article provides a unique perspective on the challenges faced by avid content consumers and hints at potential areas for improvement in RSS reader technology."
-keywords: "RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD, linkblogs, reading overload, scanning articles, information overload, feed reading applications"
-image-description: "An organized visual representation of the author's feed reading structure, featuring icons for different feeds, linkblogs, folders, and watches, and arrows illustrating the complex workflow. This diagram helps to illustrate the depth of the management challenge the author faces."
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2007-06-07 18:53:36+00:00
+description: The author shares their experience with managing 212 different RSS feeds
+  and blogs, highlighting the struggles with taxonomy, workflow, scanning articles,
+  linkblogs, and the limits of current feed reading applications. This article provides
+  a unique perspective on the challenges faced by avid content consumers and hints
+  at potential areas for improvement in RSS reader technology.
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: An organized visual representation of the author's feed reading
+  structure, featuring icons for different feeds, linkblogs, folders, and watches,
+  and arrows illustrating the complex workflow. This diagram helps to illustrate the
+  depth of the management challenge the author faces.
+image-title: ''
+keywords: RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD,
+  linkblogs, reading overload, scanning articles, information overload, feed reading
+  applications
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: 'Navigating the Maze of Information: Tools, Workflows, and Overload'
+subtitle-url: ''
+tags: ''
+title: 'The Complexity of Managing 212 RSS Feeds: A Blogger''s Challenge'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I am at a dangerous point in blogging.&#160; I have 212 different RSS feeds / blogs that I read.&#160; I know [others](http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/) manage a whole lot more but I’m not as good as they are.&#160;&#160;At one point back in 2000 or so I had only one feed that I subscribed to via the My Netscape Portal.&#160; It was the news feed from the site I use to run, at [www.theonering.com](http://www.theonering.com)&#160;(they no longer syndicate their news sadly).&#160; Over the last 7 years or so, the number of feeds I read has increased.&#160; &#160;It is now at the point where it takes an hour to read everything each day.&#160; I am now starting to run into a barrier of having too many feeds and I need to change something.&#160; I am running into several problems.&#160; 
 

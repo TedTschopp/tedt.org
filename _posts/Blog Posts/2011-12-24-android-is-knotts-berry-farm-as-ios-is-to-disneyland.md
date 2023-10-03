@@ -1,22 +1,55 @@
 ---
-title: "Theme Parks and Mobile OS: A Comparative Analysis"
-subtitle: "Knott's Berry Farm, iOS, and Android - Bridging the Experience Gap"
-date: 2011-12-24T09:12:25+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-
-description: "This article explores the parallels between theme parks like Knott's Berry Farm and tech giants Apple and Android. It highlights the experiences, attention to details, and innovation that define both worlds, and opens a dialogue on what it takes to be a game-changer in both the theme park industry and the world of mobile technology."
-keywords: "Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, experience design, mobile operating systems, technology comparison, innovation, user experience, Ghost Rider, Six Flags, Walt Disney, Steve Jobs"
-call-to-action: "Explore the intriguing connection between theme parks and mobile operating systems, and join the conversation on what defines innovation and excellence in both fields. Share your thoughts and opinions with us!"
-
-image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e1371582793846.jpg
+bullets: ''
+call-to-action: Explore the intriguing connection between theme parks and mobile operating
+  systems, and join the conversation on what defines innovation and excellence in
+  both fields. Share your thoughts and opinions with us!
 categories:
-  - Computers
-  - Mobile
+- Computers
+- Mobile
+coordinates: ''
+date: 2011-12-24 09:12:25+00:00
+description: This article explores the parallels between theme parks like Knott's
+  Berry Farm and tech giants Apple and Android. It highlights the experiences, attention
+  to details, and innovation that define both worlds, and opens a dialogue on what
+  it takes to be a game-changer in both the theme park industry and the world of mobile
+  technology.
+draft-status: ''
+excerpt: ''
+image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e1371582793846.jpg
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, experience
+  design, mobile operating systems, technology comparison, innovation, user experience,
+  Ghost Rider, Six Flags, Walt Disney, Steve Jobs
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: Knott's Berry Farm, iOS, and Android - Bridging the Experience Gap
+subtitle-url: ''
+tags: ''
+title: 'Theme Parks and Mobile OS: A Comparative Analysis'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I recently had an opportunity to return to Knott's Berry Farm after many years. I had a wonderful time with the family and due to my AAA membership I was able to get in for around $40. I felt it was money well spent. However on my trip around the part I noticed a couple things that caused me to pause and think.
 

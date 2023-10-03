@@ -1,21 +1,56 @@
 ---
-title: "Contemplating the Afterlife: Understanding Hell from Various Perspectives"
-subtitle: "A Personal Reflection on the Concepts of Hell and Its Existence in Belief Systems"
-date: 2005-10-24T14:05:54+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-
-description: "This article explores the unsettling and universal idea of hell, examining two main positions regarding the afterlife for unbelievers: annihilation and eternal damnation. The author's personal struggle with these concepts provides a thought-provoking analysis of human culture and religious beliefs."
-keywords: "Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Systems, Christian Viewpoint, Pagan Literature, Symbolism, Punishment"
-
-image-description: "An abstract representation of the two concepts of hell: annihilation and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing the profound and uncomfortable nature of these beliefs. It conveys the universality and nightmarish quality of hell in human culture.  In the style of antichrist, dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet, hercules seghers"
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Religion
+- Religion
+coordinates: ''
+date: 2005-10-24 14:05:54+00:00
+description: 'This article explores the unsettling and universal idea of hell, examining
+  two main positions regarding the afterlife for unbelievers: annihilation and eternal
+  damnation. The author''s personal struggle with these concepts provides a thought-provoking
+  analysis of human culture and religious beliefs.'
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: "An abstract representation of the two concepts of hell: annihilation\
+  \ and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing\
+  \ the profound and uncomfortable nature of these beliefs. It conveys the universality\
+  \ and nightmarish quality of hell in human culture.  In the style of antichrist,\
+  \ dark yellow and light red, jaros\u0142aw ja\u015Bnikowski, monumental murals,\
+  \ god rays, gustave buchet, hercules seghers"
+image-title: ''
+keywords: Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Systems,
+  Christian Viewpoint, Pagan Literature, Symbolism, Punishment
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: A Personal Reflection on the Concepts of Hell and Its Existence in Belief
+  Systems
+subtitle-url: ''
+tags: ''
+title: 'Contemplating the Afterlife: Understanding Hell from Various Perspectives'
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 I posted this elsewhere, and ran into it today, and thought about reposting it here:
 

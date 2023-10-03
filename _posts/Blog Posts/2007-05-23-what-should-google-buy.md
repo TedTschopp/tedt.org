@@ -1,20 +1,55 @@
 ---
-title: "What Should Google Buy Next? A Strategic Insight into Future Investments"
-subtitle: "From Data Mining to Real-World Integration: A Comprehensive Analysis"
-date: 2007-05-23T01:51:30+00:00
 author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-layout: post
-
-
-description: "In this article, the author revisits a previous conversation on what Google should invest in next, covering aspects like data mining, pattern recognition, GIS, real-time monitoring, algorithms, and the connection between content creators and consumers. The insights provided offer a thoughtful look at potential areas of growth and innovation for the tech giant."
-keywords: "Google, investment strategy, data mining, GIS, real-time monitoring, pattern recognition, algorithms, advertising, branding, content creation, content consumption, real-world information, online integration"
-image-description: "An intricate diagram illustrating the key areas of investment suggested for Google, including icons and visual elements representing data mining, GIS, real-time monitoring, algorithms, and the connection between real-world and online information, symbolizing the multifaceted approach to growth and innovation."
-
+bullets: ''
+call-to-action: ''
 categories:
-  - Computers
+- Computers
+coordinates: ''
+date: 2007-05-23 01:51:30+00:00
+description: In this article, the author revisits a previous conversation on what
+  Google should invest in next, covering aspects like data mining, pattern recognition,
+  GIS, real-time monitoring, algorithms, and the connection between content creators
+  and consumers. The insights provided offer a thoughtful look at potential areas
+  of growth and innovation for the tech giant.
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: An intricate diagram illustrating the key areas of investment suggested
+  for Google, including icons and visual elements representing data mining, GIS, real-time
+  monitoring, algorithms, and the connection between real-world and online information,
+  symbolizing the multifaceted approach to growth and innovation.
+image-title: ''
+keywords: Google, investment strategy, data mining, GIS, real-time monitoring, pattern
+  recognition, algorithms, advertising, branding, content creation, content consumption,
+  real-world information, online integration
+layout: post
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: ''
+quote: ''
+seo-description: ''
+source: ''
+source-url: ''
+subtitle: 'From Data Mining to Real-World Integration: A Comprehensive Analysis'
+subtitle-url: ''
+tags: ''
+title: What Should Google Buy Next? A Strategic Insight into Future Investments
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 A while back someone asked me what I think Google should buy next.&#160; I was reminded of the conversation today by a co-worker so I dug up my response.&#160; The post still makes a whole lot of sense even if it’s over two years old.
 

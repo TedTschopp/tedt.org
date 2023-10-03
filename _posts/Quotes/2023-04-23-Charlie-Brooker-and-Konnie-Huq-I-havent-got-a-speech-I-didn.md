@@ -1,15 +1,45 @@
 ---
-quote: "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen..."
-author: Charlie Brooker and Konnie Huq
-source: Black Mirror - Fifteen Million Merits
-
-tags: ''
-date: 09-03-2014 14:31:52
-permalink: /Quotes-Database/:title:output_ext
-layout: quotes
+author:
+  name: Charlie Brooker and Konnie Huq
+bullets: ''
+call-to-action: ''
 categories:
 - Quotes
+coordinates: ''
 date: 2023-04-23 11:44:45.180083
+description: ''
+draft-status: ''
+excerpt: ''
+image: ''
+image-alt: ''
+image-author: ''
+image-author-URL: ''
+image-credits: ''
+image-credits-URL: ''
+image-credits-artist: ''
+image-credits-artist-URL: ''
+image-credits-title: ''
+image-description: ''
+image-title: ''
+keywords: ''
+layout: quotes
+location: ''
+mathjax: ''
+monster-or-magical-or-religious-ideas: ''
+order: ''
+permalink: /Quotes-Database/:title:output_ext
+quote: I haven't got a speech I didn't plan words I didn't even try to, I just knew
+  I had to get here, to stand here and I knew I wanted you to listen, to really listen...
+seo-description: ''
+source: Black Mirror - Fifteen Million Merits
+source-url: ''
+subtitle: ''
+subtitle-url: ''
+tags: ''
+title: ''
+title-url: ''
+update: ''
+year-the-event-took-place: ''
 ---
 "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.
 
