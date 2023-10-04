@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Google's Vision for a Unified Internet OS: A New Dawn in Connectivity"
+title: Google's Vision for a Unified Internet OS:: A New Dawn in Connectivity
 title-url:
 subtitle: Exploring the Potential of Google's Web-Based Operating System
 subtitle-url:
