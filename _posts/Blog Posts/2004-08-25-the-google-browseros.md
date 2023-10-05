@@ -1,9 +1,9 @@
 ---
 layout: post
 
-title: Google's Vision for a Unified Internet OS:: A New Dawn in Connectivity
+title: Thoughts on a Potential Google Internet OS
 title-url:
-subtitle: Exploring the Potential of Google's Web-Based Operating System
+subtitle: Exploring the Potential of a Web-Based Operating System form Google
 subtitle-url:
 quote: 'Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process.'
 excerpt:
