@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Thoughts on a Potential Google Internet OS
+title: 'Thoughts on a Potential Google Internet OS'
 title-url:
 subtitle: Exploring the Potential of a Web-Based Operating System form Google
 subtitle-url:
@@ -11,7 +11,7 @@ source:
 source-url:
 call-to-action:
 
-date: 2004-08-25 16:08:24+00:00
+date: 2004-08-25 16:08:24
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
