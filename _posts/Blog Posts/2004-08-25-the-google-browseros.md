@@ -5,14 +5,14 @@ title: 'Thoughts on a Potential Google Internet OS'
 title-url:
 subtitle: Exploring the Potential of a Web-Based Operating System form Google
 subtitle-url:
-quote: 'Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process.'
+quote: "Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process."
 excerpt:
 source:
 source-url:
 call-to-action:
 
 date: 2004-08-25 16:08:24
-update:
+update:  2004-08-26 16:08:24
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
