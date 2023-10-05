@@ -26,6 +26,7 @@ seo-description:
 
 categories:
 - Gamma World
+- Draft
 tags:
 keywords:
 
