@@ -11,7 +11,7 @@ source: "Original Content"
 source-url: "https://tedt.org/blog/the-tyranny-of-the-possible"
 call-to-action: "Dare to break free from mediocrity. Read on to discover how."
 
-date: 2023-07-22 18:51:10-07:00
+date: 2023-10-12 11:49:44
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
