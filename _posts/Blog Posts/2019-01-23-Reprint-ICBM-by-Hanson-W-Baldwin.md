@@ -43,10 +43,10 @@ keywords:
 draft-status:
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: /wp-content/uploads/2019/01/23/ICBM.jpg
 image-alt: Picture of an ICBM

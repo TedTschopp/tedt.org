@@ -37,10 +37,11 @@ keywords: Children of Men, Theology, Humanity, Family, Sexuality, Science, Relat
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image:
 image-alt:

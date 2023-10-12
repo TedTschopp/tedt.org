@@ -37,10 +37,11 @@ keywords: Google, investment strategy, data mining, GIS, real-time monitoring, p
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image:
 image-alt:

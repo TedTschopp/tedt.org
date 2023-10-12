@@ -39,10 +39,11 @@ keywords: Garden of Eden, theology, spiritual growth, limitless, tree of life, t
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
 image-alt:

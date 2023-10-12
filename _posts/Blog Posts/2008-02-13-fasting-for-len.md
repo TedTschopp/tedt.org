@@ -37,10 +37,10 @@ keywords: Lent, fasting, spiritual journey, liquid fasting, Jamba Juice, tea, re
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image:
 image-alt:

@@ -35,10 +35,11 @@ keywords: Poetry, Time, Forgiveness, Redemption, Journey, Sands of Time, Reflect
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image:
 image-alt:

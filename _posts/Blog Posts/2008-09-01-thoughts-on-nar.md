@@ -41,10 +41,10 @@ keywords: Nassim Nicholas Taleb, Black Swan, narrative fallacy, inductive reason
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image:
 image-alt:

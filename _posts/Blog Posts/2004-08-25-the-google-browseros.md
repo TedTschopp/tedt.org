@@ -35,10 +35,11 @@ keywords: Google, Internet OS, Web Applications, .NET, Browser-based OS, Future 
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image: '/img/2004-08-25/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
 image-alt:

@@ -38,10 +38,10 @@ keywords: digital realism, sound quality, computer graphics, user interface desi
 draft-status:
 
 location:
-    name:
+    name: Blanchard Canyon Road
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.256278
+    longitude: -118.267083
 
 image: /wp-content/uploads/2013/06/color-eye.png
 image-alt:

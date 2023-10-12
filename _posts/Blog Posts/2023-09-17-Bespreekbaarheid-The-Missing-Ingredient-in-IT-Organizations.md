@@ -36,11 +36,11 @@ keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innov
 draft-status:
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
-
+    latitude: 34.1470
+    longitude: -117.9709
+    
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
 image-author:

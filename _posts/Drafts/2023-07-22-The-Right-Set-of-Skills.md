@@ -7,20 +7,12 @@ subtitle:
 subtitle-url:
 quote:
 excerpt: 'All beings have four aspects of their existence. These define the
-
     highest categorical breakdown of a being. They are Physical, Mental,
-
     Social, and Spiritual. They each have a numeric score The higher the
-
     score, the more potential that being has in that aspect of their
-
     existence. These numbers also represent how much damage the character
-
     can take. These aspects can be broken down into your traditional
-
-    Characteristics.
-
-    '
+    Characteristics.'
 source:
 source-url:
 call-to-action:

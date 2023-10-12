@@ -35,10 +35,11 @@ keywords: Los Angeles, Winter Rains, Spiritual Reflection, Longing, Home, Hope, 
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image:
 image-alt:

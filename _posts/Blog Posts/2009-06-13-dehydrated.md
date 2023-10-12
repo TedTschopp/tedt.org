@@ -37,10 +37,10 @@ keywords: mystery, supernatural, X-Files, Fringe, transformation, short story, D
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.jpg
 image-alt:

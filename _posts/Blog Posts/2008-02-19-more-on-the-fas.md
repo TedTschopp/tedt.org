@@ -35,10 +35,10 @@ keywords: free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom 
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image:
 image-alt:

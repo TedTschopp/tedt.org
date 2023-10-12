@@ -40,10 +40,10 @@ keywords:
 draft-status:
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: /media/printing-press-hannes-wolf-unsplash.jpg
 image-alt: Photo by Hannes Wolf on Unsplash

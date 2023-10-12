@@ -24,11 +24,11 @@ bullets:
 description:
 seo-description:
 
-categories:
-- Role Playing Games
-- Computers
-tags:
-keywords:
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
 
 draft-status:
 

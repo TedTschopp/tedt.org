@@ -38,10 +38,10 @@ keywords: ZAAG, Logitech, keyboard case, iPad, Apple, Bluetooth, USB charger, la
 draft-status:
 
 location:
-    name:
+    name: Blanchard Canyon Road
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.256278
+    longitude: -118.267083
 
 image: /wp-content/uploads/2013/06/timthumb.jpeg
 image-alt:

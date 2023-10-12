@@ -42,10 +42,10 @@ keywords: Robin Hood, community, common good, Russell Crowe, Nottingham, garden 
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image: /wp-content/uploads/2013/06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 image-alt:

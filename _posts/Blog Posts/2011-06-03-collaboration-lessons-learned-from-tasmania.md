@@ -41,10 +41,10 @@ keywords: Tasmania, Aborigines, collaboration, technology development, isolation
 draft-status:
 
 location:
-    name:
+    name: Blanchard Canyon Road
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.256278
+    longitude: -118.267083
 
 image: /wp-content/uploads/2011/06/800px-tessellated_pavement_sunrise_landscape.jpg
 image-alt:

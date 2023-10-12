@@ -47,10 +47,10 @@ keywords: HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photos
 draft-status:
 
 location:
-    name:
+    name: Blanchard Canyon Road
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.256278
+    longitude: -118.267083
 
 image: /wp-content/uploads/2013/11/javascript.jpg
 image-alt:

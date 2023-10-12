@@ -42,10 +42,10 @@ keywords: collaboration, corporate environment, Information Technology, mediatio
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image: /wp-content/uploads/2013/06/screen-shot-2013-06-12-at-4-04-09-pm.png
 image-alt:

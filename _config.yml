@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-redirect-from
+
 #baseurl: https://tedt.org/
 siteurl: https://tedt.org
 

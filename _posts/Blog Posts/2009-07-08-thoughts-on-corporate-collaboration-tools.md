@@ -39,10 +39,10 @@ keywords: collaboration tools, communication, office environment, value proposit
 draft-status:
 
 location:
-    name:
+    name: Phillips Ranch, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.024550
+    longitude: -117.767693
 
 image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.jpg
 image-alt:

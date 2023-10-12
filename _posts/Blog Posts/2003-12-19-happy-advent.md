@@ -37,10 +37,11 @@ keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spirit
 draft-status:
 
 location:
-    name:
+    name: Temple City, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.099024
+    longitude: -118.069288
+
 
 image:
 image-alt:

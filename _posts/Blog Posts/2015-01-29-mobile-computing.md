@@ -45,10 +45,10 @@ keywords: mobile computing, smartphones, mainframes, PCs, laptops, China, gadget
 draft-status:
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
 image-alt:

@@ -40,10 +40,10 @@ keywords: Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, expe
 draft-status:
 
 location:
-    name:
+    name: Blanchard Canyon Road
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.256278
+    longitude: -118.267083
 
 image: /wp-content/uploads/2013/06/main-street-disney-mickey-statue-e1371582793846.jpg
 image-alt:
