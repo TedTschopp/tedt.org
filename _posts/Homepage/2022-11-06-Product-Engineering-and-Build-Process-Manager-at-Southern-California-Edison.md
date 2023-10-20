@@ -39,17 +39,13 @@ description: 'I am responsible for the end-to-end management of the Product Engi
     As an advisor, I contribute to the improvement of Product Engineering and Build
     processes. Additionally, I provide advice to teams engaged in these processes
     on how they can enhance their outcomes, drawing on best practices from other enterprise
-    efforts.
-
-    '
+    efforts.'
 seo-description: 'I am responsible for the end-to-end management of the Product Engineering
     and Build processes, and I maintain governance control over all these processes.
     As an advisor, I contribute to the improvement of Product Engineering and Build
     processes. Additionally, I provide advice to teams engaged in these processes
     on how they can enhance their outcomes, drawing on best practices from other enterprise
-    efforts.
-
-    '
+    efforts.'
 
 categories: Home
 tags:
@@ -63,7 +59,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/home/Ted-Tschopp-Product-Engineering-and-Build-Process-Manager.jpg
+image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.jpg
 image-alt:
 image-author:
 image-author-URL:
