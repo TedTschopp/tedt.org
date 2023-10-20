@@ -13,9 +13,8 @@ excerpt: 'As an IT Strategist and Architect, I harmonized the company''s busines
     issues, and facilitated the company''s Agile transformation by emphasizing value,
     quality, and speed. My leadership involved managing team conflicts, signing off
     on significant domain-related decisions, and representing the domain in company
-    meetings.
+    meetings.'
 
-    '
 source:
 source-url:
 call-to-action:
@@ -42,9 +41,8 @@ description: 'As an IT Strategist and Architect, I harmonized the company''s bus
     issues, and facilitated the company''s Agile transformation by emphasizing value,
     quality, and speed. My leadership involved managing team conflicts, signing off
     on significant domain-related decisions, and representing the domain in company
-    meetings.
+    meetings.'
 
-    '
 seo-description: 'As an IT Strategist and Architect, I harmonized the company''s business
     objectives with the IT landscape, developed comprehensive roadmaps and strategies,
     and ensured their alignment with financial, business, technical, and regulatory
@@ -52,9 +50,7 @@ seo-description: 'As an IT Strategist and Architect, I harmonized the company''s
     issues, and facilitated the company''s Agile transformation by emphasizing value,
     quality, and speed. My leadership involved managing team conflicts, signing off
     on significant domain-related decisions, and representing the domain in company
-    meetings.
-
-    '
+    meetings.'
 
 categories: Home
 tags:
