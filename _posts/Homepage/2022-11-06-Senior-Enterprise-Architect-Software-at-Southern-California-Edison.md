@@ -68,7 +68,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.jpg
+image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.jpg
 image-alt:
 image-author:
 image-author-URL:
