@@ -88,7 +88,8 @@ order:
       - [Flight Path](#flight-path)
       - [Scope -- Merged from Source 2](#scope----merged-from-source-2)
       - [Area (Radius)](#area-radius)
-    - [Blast (X) - Merged from Source 2](#blast-x---merged-from-source-2)
+      - [Explosive (X)](#explosive-x)
+      - [High-Explosive (X)](#high-explosive-x)
   - [Melee Weapons Overview](#melee-weapons-overview)
     - [Melee Weapons](#melee-weapons)
     - [Armor Penetration - AP (#)](#armor-penetration---ap-)
@@ -118,6 +119,7 @@ order:
     - [Light](#light)
     - [Mass Produced](#mass-produced)
     - [Masterwork Rule](#masterwork-rule)
+    - [Operators Rule (#)](#operators-rule-)
     - [One Use Weapons](#one-use-weapons)
     - [Quick Draw](#quick-draw)
     - [Reach Weapons](#reach-weapons)
@@ -427,14 +429,19 @@ The weapon has been fitted with vision- enhancing sights, allowing it to put sho
 
 These weapons target everyone in the designated radius.
 
-- Size of the area determined by weapon.
+- Size of the area determined by weapon's Radius number.
 - All targets must be withing this range of all other targets.
 - Quite often a save/check can reduce the damage of area attacks.
 - Area attacks typically deal damage even on a miss or if targets make a successful check/save.
 
-### Blast (X) - Merged from Source 2
+#### Explosive (X)
 
-This weapon has an explosive component or is otherwise able to affect targets spread across a wide area. Upon a successful attack, damage is rolled against every target within the weapon’s Blast score in metres. Dodge Reactions may not be made against a Blast weapon, but targets may dive for cover. Cover may be taken advantage of if it lies between a target and the centre of the weapon’s Blast.
+This weapon has an explosive component or is otherwise able to affect targets spread across a wide area. Upon a successful attack, damage is rolled against every target within the weapon’s blast area. Dodge Reactions may not be made against a Blast weapon, but targets may dive for cover. Cover may be taken advantage of if it lies between a target and the centre of the weapon’s Blast.  Cover will reduce damage in half.  
+
+#### High-Explosive (X)
+
+This weapon has an explosive component or is otherwise able to affect targets spread across a wide area. Upon a successful attack, damage is rolled against every target within the weapon’s blast area. Dodge Reactions may not be made against a Blast weapon, but targets may dive for cover. Cover may be taken advantage of if it lies between a target and the centre of the weapon’s Blast.  Cover will not reduce damage from high-explosive damage. 
+
 
 ## Melee Weapons Overview
 
@@ -638,6 +645,15 @@ Weapons of this quality are made with exceptional skill and materials. A Masterw
 - **Tender Love and Care**: Typically adds an additional 1 month wage for the weapons smith of ₢ of in-game currency to the weapon's base value.
 
 **Mass Produced.**  A society that is two tech levels higher than the tech level that introduced the weapon can mass produce weapon, ammunition, or armor.  When this is done, the weapon acts like it is fragile as well costing half the amount it costs normally.
+
+### Operators Rule (#)
+
+Weapons in this game may require a specific number of people to operate them effectively, especially in the case of large siege weapons or higher-tech level equipment. The "Operators" characteristic defines this requirement:
+
+- **Single-Operator**: Weapons with this designation require only one person to operate. These are typically handheld or easily managed weapons.
+- **Multi-Operator**: Weapons with this designation require more than one person to operate successfully. The specific number needed will be listed alongside the weapon's description. For example, a trebuchet might list "Operators: 3" to indicate that it requires three people for optimal use.
+- **Tech-Dependent**: Higher-tech level weapons may require a larger operating crew due to their complexity. The number of operators will be listed in the weapon's description and could change depending on the tech level of the society using it.
+
 
 ### One Use Weapons
 
@@ -1422,6 +1438,8 @@ In a steampunk universe, inventors could create complex machinery like "aetheric
 
 ## Weapon Classifications
 
+Objects that block higher classes of damage (anti-vehicle, etc... ) will always block all damage from a weapon of a lower class. 
+
 ### Vehicle Weaponry
 
 These weapons are built to damage things like ground, air, water, and small spacecraft vehicles at a team, squad, and tactical scale.
@@ -1482,17 +1500,14 @@ Rate of Fire is the number of actions it takes to attack with the weapon.  Some 
 
 Reload is the number of actions it takes to reload a ranged weapon.  Please see Weapon Properties on Ammunition and Firearms to further understand this action.
 
-**Operators:** This is the number of people required to operate the weapon.  Some large siege weapons and weapons with higher tech levels require more than one person to successfully use the weapon.
-
-**Radius.**  A weapon or the ammunition a weapon uses may do damage to more than just the target.  In the case of explosives, this represents the damage done to everything within that radius.
-
-**_Explosive._** The explosive property denotes that the weapon does damage to everyone within the weapon’s radius as calculated from the point of impact.  The number found after the Explosive keyword is the DC for the dexterity check that is required to avoid damage.
-
-**_High Explosive._** The high explosive property is a subtype of the Explosive property.  This property denotes that the weapon does damage to everyone within the weapon’s radius as calculated from the point of impact.  The number found after the High Explosive keyword is the DC for the dexterity check.  On a successful check, the target takes half damage.  
 
 **_Scatter_**.  An attack is made against each creature within a 30ft cone.  If an affected creature is adjacent to you, they suffer double damage to a hit.
 
 **Misfire.** Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapons Misfire score, the weapon misfires.  The attack misses and the weapon cannot be used again until you spend an action to try to repair it.  To repair your firearm , you must make a successful Tinker’s Tools check (DC equal to 8+ misfire score)  If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.
 
 **Explosive.**  Upon a hit, Each creature within 5 feet of the target must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
+
+
+
+
 
