@@ -70,8 +70,6 @@ mathjax: false
 order:
 ---
 
-## Weapon Properties
-
 - [Introduction](#introduction)
   - [Range Weapons](#range-weapons)
     - [Thrown Weapons](#thrown-weapons)
@@ -81,6 +79,7 @@ order:
       - [Range](#range)
       - [Loading (#)](#loading-)
       - [Reload (## shots, time)](#reload--shots-time)
+      - [Aim / Rate / Reload from Source 2](#aim--rate--reload-from-source-2)
       - [Auto-Fire](#auto-fire)
       - [Double-Shot](#double-shot)
         - [Rules missing that are needed](#rules-missing-that-are-needed)
@@ -88,8 +87,10 @@ order:
       - [Flight Path](#flight-path)
       - [Scope -- Merged from Source 2](#scope----merged-from-source-2)
       - [Area (Radius)](#area-radius)
+      - [Blast from source 2](#blast-from-source-2)
       - [Explosive (X)](#explosive-x)
       - [High-Explosive (X)](#high-explosive-x)
+      - [Misfire from Source 2](#misfire-from-source-2)
   - [Melee Weapons Overview](#melee-weapons-overview)
     - [Melee Weapons](#melee-weapons)
     - [Armor Penetration - AP (#)](#armor-penetration---ap-)
@@ -289,7 +290,6 @@ order:
     - [Cosmic Weaponry](#cosmic-weaponry)
   - [Weapon Properties from Gamma World conversion to 6e](#weapon-properties-from-gamma-world-conversion-to-6e)
 
-
 # Introduction
 
 In the expansive universe of tabletop role-playing games, your choice of weapon is more than a mere instrument of destruction; it's a narrative tool, an extension of your character's personality, history, and aspirations. Whether it's a rustic blade handed down through generations or a state-of-the-art laser cannon with cosmic capabilities, each weapon carries its own set of features, mechanics, and lore that can profoundly impact how your character interacts with the game world. 
@@ -376,6 +376,14 @@ This property is for weapons that have a limited ammunition capacity and must be
 4. **Ammo Count**: Keep track of the number of shots fired. Once you've reached the limit indicated by "#," you must take the required action to reload the weapon before it can be used again.
 5. **Restrictions**: While reloading, you cannot perform other actions that require your hands, like casting spells or using another weapon.
 
+#### Aim / Rate / Reload from Source 2
+
+**Aim / Rate  / Reload.** Aim is the number of actions it takes to prepare the weapon for attack.  Formally Aiming a weapon will be determined by class, proficiency and feats.  This number represents the number of actions regardless bonuses from proficiency, feats, or class that it takes to get the weapon ready to attack.
+
+Rate of Fire is the number of actions it takes to attack with the weapon.  Some weapons may take multiple actions.  Some weapons may allow for multiple attacks per action.
+
+Reload is the number of actions it takes to reload a ranged weapon.  Please see Weapon Properties on Ammunition and Firearms to further understand this action.
+
 #### Auto-Fire
 
 For modern and futuristic weapons that can unleash a hail of rounds in seconds. Most automatic weapons can also fire normal single shots. Auto-fire only weapons often have the Brace quality too. There are basically three ways to use auto-fire:
@@ -434,6 +442,10 @@ These weapons target everyone in the designated radius.
 - Quite often a save/check can reduce the damage of area attacks.
 - Area attacks typically deal damage even on a miss or if targets make a successful check/save.
 
+#### Blast from source 2
+
+Upon a hit, Each creature within 5 feet of the target must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
+
 #### Explosive (X)
 
 This weapon has an explosive component or is otherwise able to affect targets spread across a wide area. Upon a successful attack, damage is rolled against every target within the weapon’s blast area. Dodge Reactions may not be made against a Blast weapon, but targets may dive for cover. Cover may be taken advantage of if it lies between a target and the centre of the weapon’s Blast.  Cover will reduce damage in half.  
@@ -441,6 +453,12 @@ This weapon has an explosive component or is otherwise able to affect targets sp
 #### High-Explosive (X)
 
 This weapon has an explosive component or is otherwise able to affect targets spread across a wide area. Upon a successful attack, damage is rolled against every target within the weapon’s blast area. Dodge Reactions may not be made against a Blast weapon, but targets may dive for cover. Cover may be taken advantage of if it lies between a target and the centre of the weapon’s Blast.  Cover will not reduce damage from high-explosive damage. 
+
+#### Misfire from Source 2
+
+Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapons Misfire score, the weapon misfires.  The attack misses and the weapon cannot be used again until you spend an action to try to repair it.  To repair your firearm , you must make a successful Tinker’s Tools check (DC equal to 8+ misfire score)  If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.
+
+
 
 
 ## Melee Weapons Overview
@@ -1494,20 +1512,5 @@ These weapons are built to damage and destroy the whole of reality.
 
 A simple example of this is a bayonet, which is essentially a dagger attached to a gun, this would be rated a 2S complexity; one for the gun, and one for the dagger.
 
-**Aim / Rate  / Reload.** Aim is the number of actions it takes to prepare the weapon for attack.  Formally Aiming a weapon will be determined by class, proficiency and feats.  This number represents the number of actions regardless bonuses from proficiency, feats, or class that it takes to get the weapon ready to attack.
-
-Rate of Fire is the number of actions it takes to attack with the weapon.  Some weapons may take multiple actions.  Some weapons may allow for multiple attacks per action.
-
-Reload is the number of actions it takes to reload a ranged weapon.  Please see Weapon Properties on Ammunition and Firearms to further understand this action.
-
-
 **_Scatter_**.  An attack is made against each creature within a 30ft cone.  If an affected creature is adjacent to you, they suffer double damage to a hit.
-
-**Misfire.** Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapons Misfire score, the weapon misfires.  The attack misses and the weapon cannot be used again until you spend an action to try to repair it.  To repair your firearm , you must make a successful Tinker’s Tools check (DC equal to 8+ misfire score)  If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.
-
-**Explosive.**  Upon a hit, Each creature within 5 feet of the target must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
-
-
-
-
 
