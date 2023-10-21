@@ -116,6 +116,7 @@ order:
     - [Heavy](#heavy)
     - [Knock-out -- Merged from Source 2](#knock-out----merged-from-source-2)
     - [Light](#light)
+    - [Mass Produced](#mass-produced)
     - [Masterwork Rule](#masterwork-rule)
     - [One Use Weapons](#one-use-weapons)
     - [Quick Draw](#quick-draw)
@@ -611,6 +612,21 @@ Weapons with this property are small, easy to handle, and ideal for quick, agile
 - **Encumbrance**:  Light weapons count as half an item for encumbrance purposes. Two light items can fill one line of your Gear/Equipment chart.
 - **Dual Wielding**: When wielding a Light weapon in one hand, you can use a bonus action to make an off-hand attack with another Light weapon. The off-hand attack does not add your ability score to its damage. 
 
+### Mass Produced
+
+Weapons, ammunition, tools, or armor of this quality are made quickly and with cheaper materials, often by societies that are at higher tech levels then those that introduced the item. A Mass Produced item has the following drawbacks:
+
+- **-1 to Damage**: Subtracts -1 from all damage rolls made with this weapon. This penalty does stack with magical penalties, if the weapon is or becomes cursed.
+- **-1 to Hit**: Subtracts -1 from all hit rolls made with this weapon. This penalty does stack with magical penalties, if the weapon is or becomes cursed.
+- **No Choice**: The penalties to hit and damage are both automatically applied, and cannot be chosen or mitigated.
+- **Limited Evolution**: Mass Produced items can never become Specialized Tools, Elite Gear, or Named Items.
+- **Limited Repairability**: Mass Produced items take twice as long to repair and clean.
+- **High-Tech Mass Production**: A society that is of higher tech levels than the tech level that introduced the weapon can mass produce the item. 
+- **Reduced Cost**: Costing half the amount it normally would, representing the economies of scale achieved through high-tech mass production.
+- **Reduced Time**: Creating a mass produced item will take half the normal amount of time.
+- **Bulk Production:** When a mass-produced item is built, the process generates 2 additional items of the same type for the same production cost, representing the efficiency of mass production systems.
+- **Fragile**: Due to cost-cutting measures, the mass-produced item is fragile and more susceptible to breaking.
+
 ### Masterwork Rule
 
 Weapons of this quality are made with exceptional skill and materials. A Masterwork weapon grants the following benefits:
@@ -620,6 +636,8 @@ Weapons of this quality are made with exceptional skill and materials. A Masterw
 - **Exclusivity**: The person building the masterwork weapon must choose between +1 to hit or +1 to damage, but not both.
 - **Greater Things to Come**: Masterwork items may become Specialized Tools, Elite Gear, or Named Items.
 - **Tender Love and Care**: Typically adds an additional 1 month wage for the weapons smith of ₢ of in-game currency to the weapon's base value.
+
+**Mass Produced.**  A society that is two tech levels higher than the tech level that introduced the weapon can mass produce weapon, ammunition, or armor.  When this is done, the weapon acts like it is fragile as well costing half the amount it costs normally.
 
 ### One Use Weapons
 
@@ -1466,43 +1484,11 @@ Reload is the number of actions it takes to reload a ranged weapon.  Please see 
 
 **Operators:** This is the number of people required to operate the weapon.  Some large siege weapons and weapons with higher tech levels require more than one person to successfully use the weapon.
 
-**_Ammunition._** You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
-
-If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons" later in the section). A sling must be loaded to deal any damage when used in this way.
-
-**_Finesse._** When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
-
-**_Heavy._** Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon size and bulk make it too large for a Small creature to use effectively.
-
-**_Light._** A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
-
-**_Loading._** Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
-
-**_Range._** A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon’s normal range in feet, and the second indicates the weapon’s long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can’t attack a target beyond the weapon’s long range.
-
 **Radius.**  A weapon or the ammunition a weapon uses may do damage to more than just the target.  In the case of explosives, this represents the damage done to everything within that radius.
-
-**_Reach._** This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it.
-
-**_Special._** A weapon with the special property has unusual rules governing its use, explained in the weapon’s description (see "Special Weapons" later in this section).
-
-**_Thrown._** If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.
-
-**_Two-Handed._** This weapon requires two hands when you attack with it.
-
-**_Versatile._** This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.
 
 **_Explosive._** The explosive property denotes that the weapon does damage to everyone within the weapon’s radius as calculated from the point of impact.  The number found after the Explosive keyword is the DC for the dexterity check that is required to avoid damage.
 
 **_High Explosive._** The high explosive property is a subtype of the Explosive property.  This property denotes that the weapon does damage to everyone within the weapon’s radius as calculated from the point of impact.  The number found after the High Explosive keyword is the DC for the dexterity check.  On a successful check, the target takes half damage.  
-
-**_Firearm_**.  The firearm property is a subtype of the ammunition property.  Firearm ammunition is destroyed upon use. Some firearms use bullets while futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.
-
-**_Burst Fire._** A weapon that has the burst fire property can make a normal single-target attack, or it can hit a single target with three shots with one attack.  Each shot must roll to hit separately.  This action uses three pieces of ammunition.
-
-**_Auto Fire._** A weapon that has the auto fire property can make a normal single-target attack, a burst fire attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition.
-
-**_Reload._** A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).  You must have one free hand to reload a firearm.
 
 **_Scatter_**.  An attack is made against each creature within a 30ft cone.  If an affected creature is adjacent to you, they suffer double damage to a hit.
 
@@ -1510,8 +1496,3 @@ If you use a weapon that has the ammunition property to make a melee attack, you
 
 **Explosive.**  Upon a hit, Each creature within 5 feet of the target must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
 
-**Stationary.** A stationary weapon has to be set up before it can be fired. Setting up a stationary weapon requires an action.
-
-**Mass Produced.**  A society that is two tech levels higher than the tech level that introduced the weapon can mass produce weapon, ammunition, or armor.  When this is done, the weapon acts like it is fragile as well costing half the amount it costs normally.
-
-**Mastercrafted.**  This weapon was crafted by a master craftsman.  When rolling damage dice and any one dice rolls it’s maximum add an additional +1 to the total damage rolled.
