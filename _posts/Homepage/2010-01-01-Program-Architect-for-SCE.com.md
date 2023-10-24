@@ -6,8 +6,7 @@ title-url: https://www.sce.com/
 subtitle:
 subtitle-url:
 quote:
-excerpt: "Technical team lead and single-point of contact for technical accountability\
-    \ on SCE's eCommerce channel from project concept through completion.   \n"
+excerpt: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 source:
 source-url:
 call-to-action:
@@ -32,10 +31,8 @@ bullets:
 - Represented SCE’s digital and ecommerce interests on the Utility Information Technology
     Benchmark (UNITE) group.
 
-description: "Technical team lead and single-point of contact for technical accountability\
-    \ on SCE's eCommerce channel from project concept through completion.   \n"
-seo-description: "Technical team lead and single-point of contact for technical accountability\
-    \ on SCE's eCommerce channel from project concept through completion.  \n"
+description: "I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion."
+seo-description: "I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion."
 
 categories: Home
 tags:
@@ -71,7 +68,8 @@ order: 4
 ---
 
 
-Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion. 
+I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
+
 * 50% cost savings on SCE’s first mobile app for iOS and Android
 * $12M savings on SCE.com rebranding project’s costs using agile methodologies focusing on expected outcomes
 * Seat on IBM’s Digital Experience Customer Advisory Council

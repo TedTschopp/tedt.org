@@ -6,12 +6,7 @@ title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/in
 subtitle:
 subtitle-url:
 quote:
-excerpt: "I am responsible for the end-to-end management of the Product Engineering\
-    \ and Build processes, and I maintain governance control over all these processes.\
-    \ As an advisor, I contribute to the improvement of Product Engineering and Build\
-    \ processes. Additionally, I provide advice to teams engaged in these processes\
-    \ on how they can enhance their outcomes, drawing on best practices from other\
-    \ enterprise efforts.   \n"
+excerpt: "I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes."
 source:
 source-url:
 call-to-action:
@@ -24,28 +19,14 @@ author:
     url: https://tedt.org/
 
 bullets:
-- Report on end-to-end Product Engineering and Build activities.
-- Review key performance indicators and identify improvement activities for the end-to-end
-    Product Engineering and Build processes
-- Document and maintain the Product Engineering and Build process maps.
-- Develop quality standards and governance checkpoints to ensure resources assigned
-    to the Product Engineering and Build know what quality outcomes look
-- Review and resolve Product Engineering and Build process issues.
-- Communicate Product Engineering and Build processes changes.
-- Engage with stakeholders so services run smoothly
+- Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise.
+- Formulated and led the implementation of a DevOps strategy, unifying software development and IT operations to enhance collaboration and accelerate time-to-market for new product features.
+- Championed a cultural shift within the organization by introducing and promoting Agile methodologies, fostering a more collaborative and adaptive work environment to better respond to business needs.
+- Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business.
+- Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company's software products.
 
-description: 'I am responsible for the end-to-end management of the Product Engineering
-    and Build processes, and I maintain governance control over all these processes.
-    As an advisor, I contribute to the improvement of Product Engineering and Build
-    processes. Additionally, I provide advice to teams engaged in these processes
-    on how they can enhance their outcomes, drawing on best practices from other enterprise
-    efforts.'
-seo-description: 'I am responsible for the end-to-end management of the Product Engineering
-    and Build processes, and I maintain governance control over all these processes.
-    As an advisor, I contribute to the improvement of Product Engineering and Build
-    processes. Additionally, I provide advice to teams engaged in these processes
-    on how they can enhance their outcomes, drawing on best practices from other enterprise
-    efforts.'
+description: 'I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.'
+seo-description: 'I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.'
 
 categories: Home
 tags:
@@ -81,12 +62,10 @@ order: 3
 ---
 
 
-I am responsible for the end-to-end management of the Product Engineering and Build processes, and I maintain governance control over all these processes. As an advisor, I contribute to the improvement of Product Engineering and Build processes. Additionally, I provide advice to teams engaged in these processes on how they can enhance their outcomes, drawing on best practices from other enterprise efforts.
+I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 
-* Report on end-to-end Product Engineering and Build activities.
-* Review key performance indicators and identify improvement activities for the end-to-end Product Engineering and Build processes
-* Document and maintain the Product Engineering and Build process maps.
-* Develop quality standards and governance checkpoints to ensure resources assigned to the Product Engineering and Build know what quality outcomes look
-* Review and resolve Product Engineering and Build process issues.
-* Communicate Product Engineering and Build processes changes.
-* Engage with stakeholders so services run smoothly
+- Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise.
+- Formulated and led the implementation of a DevOps strategy, unifying software development and IT operations to enhance collaboration and accelerate time-to-market for new product features.
+- Championed a cultural shift within the organization by introducing and promoting Agile methodologies, fostering a more collaborative and adaptive work environment to better respond to business needs.
+- Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business.
+- Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company's software products.

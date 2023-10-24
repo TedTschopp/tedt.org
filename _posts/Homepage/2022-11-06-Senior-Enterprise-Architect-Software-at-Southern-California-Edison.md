@@ -6,14 +6,7 @@ title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/in
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'As an IT Strategist and Architect, I harmonized the company''s business
-    objectives with the IT landscape, developed comprehensive roadmaps and strategies,
-    and ensured their alignment with financial, business, technical, and regulatory
-    aspects. I drove the overall quality of the assigned IT domain, resolved strategic
-    issues, and facilitated the company''s Agile transformation by emphasizing value,
-    quality, and speed. My leadership involved managing team conflicts, signing off
-    on significant domain-related decisions, and representing the domain in company
-    meetings.'
+excerpt: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
 
 source:
 source-url:
@@ -27,30 +20,15 @@ author:
     url: https://tedt.org/
 
 bullets:
-- Maintained a broad cross-domain understanding, developed new processes, standards,
-    operational plans, and domain standards.
-- Authored white papers providing in-depth problem analysis and tradeoff discussions,
-    and ensured overall product, platform, and project technical quality.
-- Oversaw the appropriate establishment, selection, and use of Engineering Services
-    from the domain, producing deliverables aligned with the company's objectives.
+- Developed a comprehensive AI strategy that guided a cross-functional team in successfully integrating machine learning algorithms to advance business objectives.
+- Formulated and executed an enterprise-level AR/VR strategic plan, focusing on the design and deployment of immersive experiences to enhance employee training and customer engagement.
+- Crafted a desktop automation strategy that streamlined repetitive tasks across multiple departments, aiming for increased productivity and reduced manual errors.
+- Initiated the integration of AIOps into the company's IT operations through a strategic approach, leveraging machine learning and analytics to automate and optimize routine operational tasks.
+- Spearheaded the strategic redesign and relaunch of a customer-facing website that saw the decommissioning of over 1,000 servers and 50 applications, and executives a seamless transition to the cloud, all while integrating best practices in user experience and analytics that led to the increase of engagement and conversions.
 
-description: 'As an IT Strategist and Architect, I harmonized the company''s business
-    objectives with the IT landscape, developed comprehensive roadmaps and strategies,
-    and ensured their alignment with financial, business, technical, and regulatory
-    aspects. I drove the overall quality of the assigned IT domain, resolved strategic
-    issues, and facilitated the company''s Agile transformation by emphasizing value,
-    quality, and speed. My leadership involved managing team conflicts, signing off
-    on significant domain-related decisions, and representing the domain in company
-    meetings.'
+description: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
 
-seo-description: 'As an IT Strategist and Architect, I harmonized the company''s business
-    objectives with the IT landscape, developed comprehensive roadmaps and strategies,
-    and ensured their alignment with financial, business, technical, and regulatory
-    aspects. I drove the overall quality of the assigned IT domain, resolved strategic
-    issues, and facilitated the company''s Agile transformation by emphasizing value,
-    quality, and speed. My leadership involved managing team conflicts, signing off
-    on significant domain-related decisions, and representing the domain in company
-    meetings.'
+seo-description: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
 
 categories: Home
 tags:
@@ -85,8 +63,10 @@ mathjax:
 order: 2
 ---
 
-As an IT Strategist and Architect, I harmonized the company's business objectives with the IT landscape, developed comprehensive roadmaps and strategies, and ensured their alignment with financial, business, technical, and regulatory aspects. I drove the overall quality of the assigned IT domain, resolved strategic issues, and facilitated the company's Agile transformation by emphasizing value, quality, and speed. My leadership involved managing team conflicts, signing off on significant domain-related decisions, and representing the domain in company meetings.
+I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
 
-- Maintained a broad cross-domain understanding, developed new processes, standards, operational plans, and domain standards.
-- Authored white papers providing in-depth problem analysis and tradeoff discussions, and ensured overall product, platform, and project technical quality.
-- Oversaw the appropriate establishment, selection, and use of Engineering Services from the domain, producing deliverables aligned with the company's objectives.
+- Developed a comprehensive AI strategy that guided a cross-functional team in successfully integrating machine learning algorithms to advance business objectives.
+- Formulated and executed an enterprise-level AR/VR strategic plan, focusing on the design and deployment of immersive experiences to enhance employee training and customer engagement.
+- Crafted a desktop automation strategy that streamlined repetitive tasks across multiple departments, aiming for increased productivity and reduced manual errors.
+- Initiated the integration of AIOps into the company's IT operations through a strategic approach, leveraging machine learning and analytics to automate and optimize routine operational tasks.
+- Spearheaded the strategic redesign and relaunch of a customer-facing website that saw the decommissioning of over 1,000 servers and 50 applications, and executives a seamless transition to the cloud, all while integrating best practices in user experience and analytics that led to the increase of engagement and conversions.

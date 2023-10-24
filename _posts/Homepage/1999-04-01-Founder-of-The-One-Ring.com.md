@@ -6,10 +6,7 @@ title-url: http://www.theonering.com/
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'Founded and managed the most popular website dedicated to the works of J.R.R.
-    Tolkien and the Lord of the Rings.
-
-    '
+excerpt: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
 source:
 source-url:
 call-to-action:
@@ -22,17 +19,12 @@ author:
     url: https://tedt.org/
 
 bullets:
-- Recognized in leading periodicals such as Los Angeles Times, CNN, and The Guardian
-    UK
-- Interviewed and featured in Wired Magazine September 2001 Issue
-- Ranked as a top 10,000 website by Alexa
+- Garnered prestigious media coverage from outlets like Los Angeles Times, CNN, and The Guardian UK, establishing the website as an authoritative source in the field.
+- Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site's reputation and reach.
+- Achieved a top 10,000 ranking on Alexa, underlining the website's popularity and impact in its niche.
 
-description: "Founded and managed the most popular website dedicated to the works\
-    \ of J.R.R. Tolkien and the Lord of the Rings.  \n"
-seo-description: 'Founded and managed the most popular website dedicated to the works
-    of J.R.R. Tolkien and the Lord of the Rings.
-
-    '
+description: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape."
+seo-description: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
 
 categories: Home
 tags:
@@ -67,7 +59,8 @@ mathjax:
 order: 5
 ---
 
-Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.
-* Recognized in leading periodicals such as Los Angeles Times, CNN, and The Guardian UK
-* Interviewed and featured in Wired Magazine September 2001 Issue
-* Ranked as a top 10,000 website by Alexa
+I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
+
+- Garnered prestigious media coverage from outlets like Los Angeles Times, CNN, and The Guardian UK, establishing the website as an authoritative source in the field.
+- Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site's reputation and reach.
+- Achieved a top 10,000 ranking on Alexa, underlining the website's popularity and impact in its niche.
