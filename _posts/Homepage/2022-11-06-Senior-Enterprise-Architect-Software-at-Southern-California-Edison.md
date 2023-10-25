@@ -6,7 +6,7 @@ title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/in
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
+excerpt: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
 
 source:
 source-url:
@@ -26,9 +26,9 @@ bullets:
 - Initiated the integration of AIOps into the company's IT operations through a strategic approach, leveraging machine learning and analytics to automate and optimize routine operational tasks.
 - Spearheaded the strategic redesign and relaunch of a customer-facing website that saw the decommissioning of over 1,000 servers and 50 applications, and executives a seamless transition to the cloud, all while integrating best practices in user experience and analytics that led to the increase of engagement and conversions.
 
-description: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
+description: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
 
-seo-description: 'I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.'
+seo-description: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
 
 categories: Home
 tags:

@@ -61,7 +61,6 @@ mathjax:
 order: 3
 ---
 
-
 I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 
 - Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise.
