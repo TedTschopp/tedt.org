@@ -2,7 +2,7 @@
 layout: post
 
 title: Random Star Constellations
-title-url: https://tedtschopp.github.io/Random-Constellations/
+title-url: https://random-constellations.tedt.org
 subtitle:
 subtitle-url:
 quote:
@@ -59,4 +59,4 @@ mathjax:
 order: 9
 ---
 
-An application I threw together to output a bunch of Procedurally generated star constellations. 
+An application I threw together to output a bunch of Procedurally generated star constellations.

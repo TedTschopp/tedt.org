@@ -6,7 +6,8 @@ title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/in
 subtitle:
 subtitle-url:
 quote:
-excerpt: "I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes."
+excerpt: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
+
 source:
 source-url:
 call-to-action:
@@ -25,8 +26,8 @@ bullets:
 - Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business.
 - Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company's software products.
 
-description: 'I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.'
-seo-description: 'I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.'
+description: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
+seo-description: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 
 categories: Home
 tags:

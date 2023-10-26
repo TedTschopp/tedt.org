@@ -7,9 +7,8 @@ subtitle:
 subtitle-url:
 quote:
 excerpt: 'An application of the Procedural Text Generation system to create a new
-    game for you to play every hour.
+    game for you to play every hour.'
 
-    '
 source:
 source-url:
 call-to-action:
@@ -26,12 +25,8 @@ bullets:
 - Uses tables from the Procedural Text Generation system I am using for computerized
     fiction
 
-description: "An application of the Procedural Text Generation system to create a\
-    \ new game for you to play every hour. \n"
-seo-description: 'An application of the Procedural Text Generation system to create
-    a new game for you to play every hour.
-
-    '
+description: An application of the Procedural Text Generation system to create a new game for you to play every hour.
+seo-description: An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
 categories: Home
 tags:
@@ -67,5 +62,6 @@ order: 8
 ---
 
 An application of the Procedural Text Generation system to create a new game for you to play every hour.
+
 * Need ideas for your board game night. Look no further. We have you covered!
 * Uses tables from the Procedural Text Generation system I am using for computerized fiction

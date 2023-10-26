@@ -2,7 +2,7 @@
 layout: post
 
 title: Procedural Text Generation
-title-url: https://tedtschopp.github.io/randomtables/
+title-url: https://randomtables.tedt.org
 subtitle:
 subtitle-url:
 quote:
@@ -64,6 +64,7 @@ order: 7
 ---
 
 An application that generates text using procedural methods.
+
 * A work in progress to help build an automated story telling computer
-* Over 100 tables of various objects and qualities. 
+* Over 100 tables of various objects and qualities.
 * To Do: Look into Mustache engine

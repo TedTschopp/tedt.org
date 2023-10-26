@@ -1,13 +1,12 @@
 ---
 layout: post
 
-title: The Password Challange
-title-url: https://tedtschopp.github.io/The-Password-Challange/Password%20Challange.html
+title: The Password Challenge
+title-url: https://The-Password-Challange.tedt.org
 subtitle:
 subtitle-url:
 quote:
-excerpt: "Check the strength of your password based on mathematical models that take\
-    \ into account the latest hacking techniques! \n"
+excerpt: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 source:
 source-url:
 call-to-action:
@@ -24,10 +23,8 @@ bullets:
 - Includes a dictionary of the most common English words
 - Includes a dictionary of the most common passwords that have been hacked already
 
-description: "Check the strength of your password based on mathematical models that\
-    \ take into account the latest hacking techniques! \n"
-seo-description: "Check the strength of your password based on mathematical models\
-    \ that take into account the latest hacking techniques! \n"
+description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
+seo-description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 
 categories: Home
 tags:
@@ -62,11 +59,11 @@ mathjax:
 order: 6
 ---
 
-Check the strength of your password based on mathematical models that take into account the latest hacking techniques! 
+Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
+
 * Includes a dictionary of the most common passwords
 * Includes a dictionary of the most common English words
 * Includes a dictionary of the most common passwords that have been hacked already
-
 
 **Password Challenge 5.0:** A software that tests the strength of a password based on various criteria and calculates its bits of entropy, complexity, and speed to hack.
 **Test Your Password:** A section that allows the user to enter a password and see its score and details. The user can also choose whether the attacker has access to the machine and whether the password is hidden or not.

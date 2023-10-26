@@ -31,8 +31,8 @@ bullets:
 - Represented SCE’s digital and ecommerce interests on the Utility Information Technology
     Benchmark (UNITE) group.
 
-description: "I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion."
-seo-description: "I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion."
+description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
+seo-description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 
 categories: Home
 tags:
@@ -67,7 +67,6 @@ mathjax:
 order: 4
 ---
 
-
 I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 
 * 50% cost savings on SCE’s first mobile app for iOS and Android
@@ -79,8 +78,3 @@ I served as the technical team lead and the single-point of contact for technica
 * 10 x increase in mobile page views to +40% of site traffic
 * 75% increase for turn on/off service and 75% decrease in manual order processing
 * Represented SCE’s digital and ecommerce interests on the Utility Information Technology Benchmark (UNITE) group.
-
-
-
-
-
