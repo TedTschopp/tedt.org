@@ -1,9 +1,9 @@
 ---
 layout: post
 
-title: "A TTRPG Game That Fits in a Few Toots: An Introduction to FAME Mechanics"
+title: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics
 title-url: 
-subtitle: "Unleashing Creativity in Brief Bursts"
+subtitle: Unleashing Creativity in Brief Bursts
 subtitle-url: 
 quote: ""
 excerpt: ""
@@ -21,8 +21,8 @@ author:
 bullets:
   - ""
 
-description: "A TTRPG Game That Fits in a Few Toots: An Introduction to FAME Mechanics"
-seo-description: "A TTRPG Game That Fits in a Few Toots: An Introduction to FAME Mechanics"
+description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics"
+seo-description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics"
 
 categories:
   - Draft
@@ -41,7 +41,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: [/img/2023-10-17/example.png](https://www.tedt.org/img/2023-07-22/FAME.png)
+image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-alt: "Photo by Ted Tschopp using Midjourney"
 image-author: Ted Tschopp
 image-author-URL: https://tedt.org/
