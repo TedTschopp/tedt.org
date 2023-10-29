@@ -331,7 +331,7 @@ As the Michael-JX unit shifts into its battle mode, its internal algorithms work
 
 **Special Abilities**:
 
-1. **Beat Resonance**: Disrupts magical abilities for 1 round. Will save to resist.
+1. **Beat Resonance**: Disrupts mutant and magical abilities for 1 round. Will save to resist.
   
 2. **Color Phase**: Changes its color, forcing players to adapt their attack methods.
 
