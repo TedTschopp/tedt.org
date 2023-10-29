@@ -6,10 +6,7 @@ title-url:
 subtitle:
 subtitle-url:
 quote:
-excerpt: "This work is the beginning of a collection of notes on Monsters and Maps.\
-    \  In the future I will split this out into several different sections.  I wanted\
-    \ to start wtih what I had here and start working my thoughts out while getting\
-    \ some of this out of my head and into a place I can review and look at. \n"
+excerpt: "This work is the beginning of a collection of notes on Monsters and Maps. In the future I will split this out into several different sections.  I wanted to start wtih what I had here and start working my thoughts out while getting some of this out of my head and into a place I can review and look at."
 source:
 source-url:
 call-to-action:
@@ -43,7 +40,7 @@ coordinates:
     longitude:
 
 image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
-image-alt:
+image-alt: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious bishoprics, and text describing the world's creation, animals, and historical elements. 
 image-author: Gervase of Ebstorf
 image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
 image-credits:
@@ -51,7 +48,7 @@ image-credits-URL:
 image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:
-image-description:
+image-description: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious bishoprics, and text describing the world's creation, animals, and historical elements.
 image-title: Ebstorf Map
 
 monster-or-magical-or-religious-ideas:

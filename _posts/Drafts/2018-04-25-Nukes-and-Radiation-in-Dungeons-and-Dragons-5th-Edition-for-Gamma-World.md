@@ -49,15 +49,15 @@ coordinates:
 
 image: /wp-content/uploads/2018/04/Third-Edition.jpg
 image-alt:
-image-author:
-image-author-URL:
-image-credits: The Ultimate A.T.V. by Keith Parkinson - https://www.keithparkinson.com/
+image-author: Keith Parkinson
+image-author-URL: https://www.keithparkinson.com/
+image-credits: The Ultimate A.T.V. by Keith Parkinson -  https://www.keithparkinson.com/
 image-credits-URL:
 image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:
-image-description:
-image-title:
+image-description: A humanoid in technology powered armor riding on a giant mutated wolverine on top of a mountain. 
+image-title: The Ultimate A.T.V.
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

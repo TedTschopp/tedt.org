@@ -50,16 +50,16 @@ coordinates:
     longitude:
 
 image: /wp-content/uploads/2018/05/the-valar.jpg
-image-alt:
-image-author:
-image-author-URL:
+image-alt: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
+image-author: Dan Hainsworth
+image-author-URL: https://www.etsy.com/shop/dthains
 image-credits: The Valar by Dan Hainsworth https://www.etsy.com/shop/dthains
 image-credits-URL: https://www.etsy.com/shop/dthains
 image-credits-artist: Dan Hainsworth
 image-credits-artist-URL:
 image-credits-title: The Valar
-image-description:
-image-title:
+image-description: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
+image-title: The Valar
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

@@ -140,7 +140,7 @@ To get started, you'll need a few essentials: a copy of the Märchen Engine rule
 
 🌱 - Seasonal. You experience events or activities that last a season. 
 
-🌙 - Monthly / One Moon. In your life, things happen on a monthly basis or in sync with the lunar cycle, from full moon to full moon. 
+🌙 - Monthly / One Moon. In your life, things happen on a monthly basis or in sync with the lunar cycle, from full moon to full moon. A month is 4 weeks.
 
 🔄 - Weekly. You find that some tasks or events occur every week. This is traditionally equivalent to a quarter of a month.
 

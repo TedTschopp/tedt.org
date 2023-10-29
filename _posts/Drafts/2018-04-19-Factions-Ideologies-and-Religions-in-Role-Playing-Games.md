@@ -52,20 +52,16 @@ coordinates:
     longitude:
 
 image: /wp-content/uploads/2018/04/Sunset on this ideology.jpg
-image-alt:
-image-author:
-image-author-URL:
-image-credits: 'Sunset on this ideology - Užhorod - Sunset near the border (Slovack
-    Rep. Ukaine) - Ukraine, Uzgorod City by Giorgio Minguzzi https://www.flickr.com/photos/iz4aks/4005020863
-    Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)
-
-    '
+image-alt: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City
+image-author: Giorgio Minguzzi 
+image-author-URL: https://www.flickr.com/photos/iz4aks/4005020863
+image-credits: 'Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City by Giorgio Minguzzi https://www.flickr.com/photos/iz4aks/4005020863 Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)'
 image-credits-URL:
 image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:
-image-description:
-image-title:
+image-description: Sunset of a patriotic statue of a nan and a flag
+image-title: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukraine) - Ukraine, Uzgorod City
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
