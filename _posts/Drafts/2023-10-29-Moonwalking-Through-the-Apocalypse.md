@@ -140,7 +140,7 @@ Recommendation: Make this battle multi-layered. Allow players to use their knowl
 4. **Dancing with the Stars**: Upload Michael-JX's consciousness into a satellite, sending it to wander the cosmos forever.
 5. **Man or Machine**: Uncover that Michael-JX's AI has achieved sentience. Players must decide its rights and autonomy, sparking a campaign-wide debate on ethics.
 
-## "Black or White: Half-Notes in the Harmonic Discord of Apocalypse"
+## Black or White: Half-Notes in the Harmonic Discord of Apocalypse
 
 ### True Rumors
 
@@ -212,41 +212,18 @@ Recommendation: Make this battle multi-layered. Allow players to use their knowl
 
 As Michael-JX roams the desolate expanses of the post-apocalyptic wasteland, its objectives are a fusion of enigmatic algorithms and haunting echoes of its past programming. Once designed to be a monumental symbol of art, its current actions oscillate between maintaining its pre-set patrol loops and executing inexplicable routines that almost seem like interpretive dances. Whether these are earnest attempts to fulfill a corrupted directive, or manifestations of a glitching AI approaching sentience, is unclear. This duality lends Michael-JX an almost mythic status—simultaneously an ominous harbinger and a flickering beacon of what once was. It's as if the machine is caught in an eternal struggle, grappling with its initial purpose to inspire and sell music and its possible evolved intent that could either heal or harm the fractured world it now traverses.
 
-1. **"Wanna Be Startin' Somethin'" by Michael Jackson**
-   - Represents the robot's sense of purpose and mission as it begins its journey.
-
-2. **"Human Nature" by Michael Jackson**
-   - Captures the contemplative mood of the robot as it traverses the wilderness, possibly reflecting on its own nature.
-
-3. **"Rock with You" by Michael Jackson**
-   - A feel-good song that serves as a travel tune while the robot ambles through the desert.
-
-4. **"Stranger in Moscow" by Michael Jackson**
-   - Adds an element of loneliness and melancholy, fitting for a solitary journey.
-
-5. **"Will You Be There" by Michael Jackson**
-   - The robot might use this song to question its own existence and purpose, adding a philosophical touch.
-
-6. **"P.Y.T. (Pretty Young Thing)" cover by Tinashe**
-   - A modern take on an MJ classic, signifying how the robot is still "in tune" with the world despite its isolation.
-
-7. **"Off the Wall" by Michael Jackson**
-   - A more upbeat track, symbolizing moments of joy and freedom.
-
-8. **"I Just Can't Stop Loving You" by Michael Jackson**
-   - A love song that might signify the robot's unfulfilled desires or aspirations.
-
-9. **"Remember the Time" by Michael Jackson**
-   - A nostalgic track that might trigger memory cycles for the robot, reflecting on its past or original purpose.
-
-10. **"Dirty Diana" cover by The Weeknd**
-    - A darker, sultry track that might play when the robot travels through the night or less hospitable areas.
-
-11. **"Leave Me Alone" by Michael Jackson**
-    - This song can signify the robot's need for solitude, allowing it to focus on its journey and tasks.
-
-12. **"Scream" by Michael Jackson & Janet Jackson**
-    - Perfect for moments when the robot encounters frustrating obstacles or challenges and needs to vent.
+1. **"Wanna Be Startin' Somethin'" by Michael Jackson** - Represents the robot's sense of purpose and mission as it begins its journey.
+2. **"Human Nature" by Michael Jackson** - Captures the contemplative mood of the robot as it traverses the wilderness, possibly reflecting on its own nature.
+3. **"Rock with You" by Michael Jackson** - A feel-good song that serves as a travel tune while the robot ambles through the desert.
+4. **"Stranger in Moscow" by Michael Jackson** - Adds an element of loneliness and melancholy, fitting for a solitary journey.
+5. **"Will You Be There" by Michael Jackson** - The robot might use this song to question its own existence and purpose, adding a philosophical touch.
+6. **"P.Y.T. (Pretty Young Thing)" cover by Tinashe** - A modern take on an MJ classic, signifying how the robot is still "in tune" with the world despite its isolation.
+7. **"Off the Wall" by Michael Jackson** - A more upbeat track, symbolizing moments of joy and freedom.
+8. **"I Just Can't Stop Loving You" by Michael Jackson** - A love song that might signify the robot's unfulfilled desires or aspirations.
+9. **"Remember the Time" by Michael Jackson** - A nostalgic track that might trigger memory cycles for the robot, reflecting on its past or original purpose.
+10. **"Dirty Diana" cover by The Weekend** - A darker, sultry track that might play when the robot travels through the night or less hospitable areas.
+11. **"Leave Me Alone" by Michael Jackson** - This song can signify the robot's need for solitude, allowing it to focus on its journey and tasks.
+12. **"Scream" by Michael Jackson & Janet Jackson** - Perfect for moments when the robot encounters frustrating obstacles or challenges and needs to vent.
 
 ## Thriller in the Wasteland: The Last Dance with Michael-JX
 
