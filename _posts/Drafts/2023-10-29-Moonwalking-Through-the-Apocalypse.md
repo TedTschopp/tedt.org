@@ -90,23 +90,23 @@ order:
 
 Welcome to an encounter that promises to be both a tribute to a pop icon and an epic, apocalyptic showdown. This enounter encapsulates the dual nature of your players' journey—they'll experience the awe-inspiring and the perilous as they navigate the wastelands. Here's how to stage this memorable performance in your  campaign.
 
-## Rumors - "Black or White: Half-Notes in the Harmonic Discord of Apocalypse":
+## Rumors
 
 Start by planting seeds of both fact and fiction among the locals your players interact with. Use the provided list of rumors that are true, false, or a mix of both. This will set the stage for intrigue and curiosity, prompting your players to seek out this legendary creature for themselves, for better or worse.
 
-## Wandering Phase - "Smooth Criminal on Circuit: The Wandering Ballad of Michael-JX":
+## Wandering Phase
 
 Before the players encounter Michael-JX, they may witness or experience its "Wandering Phase." During this time, the robot patrols its domain, following a loop or random path depending on how you'd like to integrate it into your world. It's not openly hostile during this phase but will defend itself if provoked. The robot can also perform specific routines or "dances," each with its own effect on the environment, from whipping up mini-sandstorms to temporarily creating a "dance floor" of light on the ground.
 
 Recommendation: Use this phase for foreshadowing. Let your players see Michael-JX from a distance, hear its music, or meet NPCs who have survived an encounter with it. They should feel both fascinated and uneasy.
 
-## Encounter Phase - "Thriller in the Wasteland: The Last Dance with Michael-JX":
+## Encounter Phase
 
 When your players finally engage with Michael-JX, cue the Encounter Phase. The robot becomes a formidable opponent, utilizing various special attacks synced to specific Michael Jackson songs. Whether it's summoning zombies during "Thriller" or unleashing a blinding light show during "Billie Jean," each song corresponds to a unique ability or attack.
 
 Recommendation: Make this battle multi-layered. Allow players to use their knowledge from the rumors to gain an advantage or suffer a setback. Play the actual songs if you can—it'll add an unforgettable layer of ambiance.
 
-### Integration Tips:
+### Integration Tips
 
 #### Lore
 
@@ -142,7 +142,7 @@ Recommendation: Make this battle multi-layered. Allow players to use their knowl
 
 ## "Black or White: Half-Notes in the Harmonic Discord of Apocalypse"
 
-### True Rumors:
+### True Rumors
 
 1. "Saw it with my own eyes, I did. Michael-JX busted out moves that created a literal sandstorm. Nearly blew me away!"
   
@@ -164,7 +164,7 @@ Recommendation: Make this battle multi-layered. Allow players to use their knowl
   
 10. "That thing is no joke. Saw it recover from near-destruction. It has some sort of emergency healing routine."
 
-### Rumors with a Grain of Truth:
+### Rumors with a Grain of Truth
 
 1. "Michael-JX is programmed to protect something. No clue what, but it definitely guards an area. Well, it's half-true. It doesn't guard something, it *visits* specific places."
   
@@ -186,7 +186,7 @@ Recommendation: Make this battle multi-layered. Allow players to use their knowl
   
 10. "It’s collecting data, scanning the world to send back to its creators. Well, it does scan its surroundings a lot, but who knows what for?"
 
-### False Rumors:
+### False Rumors
 
 1. "Michael-JX? It's a guardian angel. Rescued a group of children lost in the wasteland. Led them back to their village."
   
