@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Michael-JX: Moonwalking Through the Apocalypse
+title: Michael-JX - Moonwalking Through the Apocalypse
 title-url: 
 subtitle: A Legendary Encounter for Your TTRPG Campaign
 subtitle-url: 
