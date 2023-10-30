@@ -545,8 +545,9 @@ figcaption {
 
 
 .notes {
-	font-family: 'Checkbook', serif;
-	background-color: #040609;
+	font-family: 'lp1_regular', serif;
+	background-color: #fbf9f6;
+	color:#212529
 	margin: auto;
 	padding: 2rem 3rem 1rem 3rem;
 	line-height: 2.5rem;
