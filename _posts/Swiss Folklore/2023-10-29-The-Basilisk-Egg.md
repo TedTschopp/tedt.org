@@ -137,6 +137,8 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 > The land was now freed from the dangerous Basilisk. Everyone was happy and celebrated a big feast. Today we can walk around the Allschwiler Forest again without worries. Basilisks only exist as fountain figures and as Basel's heraldic animals. Of course, they are not dangerous, and as fountain figures, they even look quite pretty. 
 {: .folklore }
 
+---
+
 > ###### As noted by: T. Tschopp
 > 
 > ### General Information
@@ -166,7 +168,6 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 > - **August** Is an interesting time for the event to take place.  Things are normally born in the spring.  This is almost at harvest time.
 > - **Gender Bending** Is this a reference to paganism or a reference to satanism in the form of inversion.  Interesting that religion pays no part in this telling.
 > - **Animal Trials** The fact that a rooster and its egg were subjects of a legal proceeding is unusual.  Typically, animals aren't brought to trial, but the tale reflects medieval beliefs that even animals could be held accountable for disrupting social or natural order.
-> **Community Involvement**: A large crowd gathered for the event, indicating it was of considerable public interest.
 > - **Community Involvement**: A large crowd gathered for the event, indicating it was of considerable public interest.
 > - **Role of Free Boys**: Act as judicial authority, pass judgment on the rooster and the egg.
 > - **Widespread Fear**: The community holds strong beliefs in the legend of the basilisk, affecting public sentiment and actions.
