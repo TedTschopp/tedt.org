@@ -102,7 +102,7 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 
 ---
 
-> <ins> The Basilisk of Basel</ins>
+> <ins>The Basilisk of Basel</ins>
 > 
 >  A story adapted by Verena Jenny from a story by Trudi Gerster
 >
@@ -110,7 +110,7 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 
 ---
 
-> # The Basilisk
+> # The Basilisk of Basel
 > In ancient times, many dragons lived all over the world. Some were good-natured, eating only plants, fruits, and roots and harming no one. 
 > 
 > But there were also dangerous dragons and poisonous wyverns. They kidnapped beautiful maidens and dragged them into their caves, spewed fire, ate everything they could catch, and devastated entire countries. One of the most dangerous dragons was the Basilisk. He was not very large but was a gruesome monster. He had a rooster's comb on his head. His body was that of a winged dragon and had a long, snake-like tail. His thick, powerful hind legs had sharp, curved claws. The Basilisk could run faster than any other animal on these strong hind legs. He also darted over ponds and streams without sinking. His breath was so poisonous that all plants in his vicinity withered. His piercing evil gaze killed anyone who looked into his eyes. These ghostly creatures hatched from black eggs, laid by black roosters and incubated in snake and toad dung. 
