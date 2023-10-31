@@ -11,8 +11,11 @@ source:
 source-url:
 call-to-action:
 
-date: 1995-02-01 07:11:42-07:00
+date: 1994-02-01 07:11:42-07:00
 update:
+start-date: February 1994
+stop-date: May 1999
+
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp

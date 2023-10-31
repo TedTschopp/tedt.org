@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Solution Architect for SCE.com
+title: Practice Lead & Solution Architect for SCE.com
 title-url: https://www.sce.com/
 subtitle:
 subtitle-url:
@@ -13,6 +13,9 @@ call-to-action:
 
 date: 2018-06-03 07:11:51-07:00
 update:
+start-date: September 2004
+stop-date: January 2010
+
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp

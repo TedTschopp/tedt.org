@@ -233,47 +233,51 @@
       </div>
   {% endfor %}
     </section>
-
-
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline">
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <span class="timeline-year">2018 - Present</span>
-                            <div class="timeline-icon">
-                                <i class="fa fa-rocket"></i>
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Web Development</h3>
-                                <p class="description">
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <span class="timeline-year">2017</span>
-                            <div class="timeline-icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Java Script</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="main-timeline">
+                  {% assign count = 0 %}
+                  {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                  {% for post in sorted_homepage %}
+                      {% assign count = count | plus: 1 %}
+                      {% assign mod = count | modulo: 2 %}
+                      {% for tag in post.tags %}
+                          {% if tag == 'Resume' %}
+                              {% if mod != 1 %}<!-- odd -->
+                                  <div class="timeline">
+                                    <a href="#" class="timeline-content">
+                                        <span class="timeline-year">{{post.stop-date}} - {{post.stop-date}}</span>
+                                        <div class="timeline-icon">
+                                            <i class="fa fa-rocket"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">{{post.title}}</h3>
+                                            <p class="description">
+                                                {{post.description}}
+                                            </p>
+                                        </div>
+                                    </a>
+                                  </div>
+                              {% else %}
+                                  <div class="timeline">
+                                    <a href="#" class="timeline-content">
+                                        <span class="timeline-year">{{post.stop-date}} - {{post.stop-date}}</span>
+                                        <div class="timeline-icon">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">{{post.title}}</h3>
+                                            <p class="description">
+                                              {{post.description}}
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                              {% endif %} 
+                          {% endif %}
+                      {% endfor %}
+                  {% endfor %}
                 </div>
             </div>
         </div>
