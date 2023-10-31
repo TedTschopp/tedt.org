@@ -41,7 +41,7 @@ keywords:
 draft-status:
 
 location:
-    name:
+    name: Resume
 coordinates:
     latitude:
     longitude:

@@ -27,7 +27,7 @@ description: Direct a multifaceted team overseeing market research, surveys, and
 seo-description: Direct a multifaceted team overseeing market research, surveys, and call center operations targeting both customer and competitor landscapes. Act as a liaison between Quality and Sales divisions to enhance product reliability and accuracy. Conduct in-depth financial and demand forecasts, presenting key insights to executive leadership on a weekly basis. Champion continuous enhancements in reporting, survey administration, and call center efficiency, while also realizing cost savings. Articulate a forward-thinking vision for the technical services department and innovate new product offerings. Partner with the Director of Quality to prioritize customer satisfaction and product excellence. Engage daily with the founder and CEO while reporting to senior-level management.
 
 categories: Home
-tags:
+tags: Resume
 keywords:
 
 draft-status:

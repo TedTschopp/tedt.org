@@ -27,7 +27,7 @@ seo-description: "An application I threw together to output a bunch of Procedura
     \ generated star constellations. \n"
 
 categories: Home
-tags:
+tags: Project
 keywords:
 
 draft-status:

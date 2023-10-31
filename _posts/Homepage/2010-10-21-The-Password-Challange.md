@@ -27,7 +27,7 @@ description: Check the strength of your password based on mathematical models th
 seo-description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 
 categories: Home
-tags:
+tags: Project
 keywords:
 
 draft-status:

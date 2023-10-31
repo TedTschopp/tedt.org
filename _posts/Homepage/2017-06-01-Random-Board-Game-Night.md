@@ -29,7 +29,7 @@ description: An application of the Procedural Text Generation system to create a
 seo-description: An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
 categories: Home
-tags:
+tags: Project
 keywords:
 
 draft-status:

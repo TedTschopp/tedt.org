@@ -29,7 +29,7 @@ description: I am the Enterprise Technology Architect responsible for SCE's IT P
 seo-description: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
 
 categories: Home
-tags:
+tags: Resume
 keywords:
 
 draft-status:

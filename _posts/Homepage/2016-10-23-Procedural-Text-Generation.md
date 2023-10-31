@@ -31,7 +31,7 @@ seo-description: 'An application that generates text using procedural methods.
     '
 
 categories: Home
-tags:
+tags: Project
 keywords:
 
 draft-status:

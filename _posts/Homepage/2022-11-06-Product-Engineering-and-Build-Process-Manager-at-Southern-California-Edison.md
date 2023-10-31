@@ -30,7 +30,7 @@ description: I oversaw the end-to-end management and governance of Solutions Eng
 seo-description: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 
 categories: Home
-tags:
+tags: Resume
 keywords:
 
 draft-status:
