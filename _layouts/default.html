@@ -247,7 +247,7 @@
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
-                                        <span class="timeline-year" style="writing-mode: vertical-rl; transform: rotate (180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
+                                        <span class="timeline-year" style="writing-mode: vertical-rl; text-align: center; rotate (180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                         <div class="col-lg-2 text-white my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
                                         <!--- 
                                         <div class="timeline-icon">
@@ -270,7 +270,7 @@
                               {% else %}
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
-                                      <span class="timeline-year" style="writing-mode: vertical-rl; transform: rotate (180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
+                                      <span class="timeline-year" style="writing-mode: vertical-rl; transform: rotate (-180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                       <div class="col-lg-2 text-white my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
                                         <!--- 
                                         <div class="timeline-icon">
