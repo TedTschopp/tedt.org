@@ -247,7 +247,7 @@
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
                                       <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
-                                          <span class="timeline-year" style="writing-mode: vertical-rl; text-align: center; transform: rotate (180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
+                                          <span class="timeline-year" style="text-align: center;">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                           <!---
                                           <div class="timeline-icon">
                                               <i class="fa fa-rocket"></i>
@@ -269,7 +269,7 @@
                               {% else %}
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
-                                      <span class="timeline-year" style="writing-mode: vertical-rl; transform: rotate (0deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
+                                      <span class="timeline-year" style="text-align: center;">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                         <!---
                                         <div class="timeline-icon">
                                             <i class="fa fa-users"></i>
