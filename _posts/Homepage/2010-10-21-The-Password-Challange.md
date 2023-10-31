@@ -56,7 +56,7 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 6
+order: 7
 ---
 
 Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
