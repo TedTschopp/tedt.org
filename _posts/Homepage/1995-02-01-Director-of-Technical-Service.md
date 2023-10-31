@@ -38,7 +38,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/Market-Research.png
+image: img/home/Market-Research.jpg
 image-alt:
 image-author: 
 image-author-URL:
