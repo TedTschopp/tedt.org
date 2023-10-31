@@ -209,28 +209,31 @@
   {% for post in sorted_homepage %}
       {% assign count = count | plus: 1 %}
       {% assign mod = count | modulo: 2 %}
-      <a name="{{ post.title | slugify}}"></a>
+      {% for tag in post.tags %}
+        {% if tag != 'Resume' %}
+        <a name="{{ post.title | slugify}}"></a>
 
-      <div class="row no-gutters">
+          <div class="row no-gutters">
 
-        {% if mod != 1 %}<!-- odd -->
-          <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-          <div class="col-lg-6 my-auto showcase-text align-middle">
-        {% else %}
-          <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text align-middle">
-        {% endif %}
+            {% if mod != 1 %}<!-- odd -->
+              <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
+              <div class="col-lg-6 my-auto showcase-text align-middle">
+            {% else %}
+              <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text align-middle">
+            {% endif %}
 
-        <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2>        
-        <p class="lead mb-0">{{ post.description}}</p>
-        <ul>    
-            {% for bullet in post.bullets %}
-                <li>{{ bullet }}</li>
-            {% endfor %}
-        </ul>
+            <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2>        
+            <p class="lead mb-0">{{ post.description}}</p>
+            <ul>    
+                {% for bullet in post.bullets %}
+                    <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
 
-        </div>
-      </div>
+            </div>
+          </div>
+        {% endfor }
   {% endfor %}
     </section>
     <div class="container">
@@ -246,9 +249,8 @@
                           {% if tag == 'Resume' %}
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
-                                    <a href="#" class="timeline-content">
+                                    <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
                                         <span class="timeline-year" style="writing-mode: vertical-rl; text-align: center; transform: rotate (180deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
-                                        <div class="col-lg-2 text-white my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
                                         <!--- 
                                         <div class="timeline-icon">
                                             <i class="fa fa-rocket"></i>
@@ -271,7 +273,6 @@
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
                                       <span class="timeline-year" style="writing-mode: vertical-rl; transform: rotate (0deg);">{{post.start-date}} -</br>{{post.stop-date}}</span>
-                                      <div class="col-lg-2 text-white my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
                                         <!--- 
                                         <div class="timeline-icon">
                                             <i class="fa fa-users"></i>
