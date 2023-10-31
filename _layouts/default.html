@@ -247,7 +247,7 @@
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
-                                        <span class="timeline-year">{{post.stop-date}} - {{post.stop-date}}</span>
+                                        <span class="timeline-year">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                         <div class="timeline-icon">
                                             <i class="fa fa-rocket"></i>
                                         </div>
@@ -255,6 +255,11 @@
                                             <h3 class="title">{{post.title}}</h3>
                                             <p class="description">
                                                 {{post.description}}
+                                                <ul>
+                                                  {% for bullet in post.bullets %}
+                                                      <li>{{ bullet }}</li>
+                                                  {% endfor %}
+                                                </ul>
                                             </p>
                                         </div>
                                     </a>
@@ -262,7 +267,7 @@
                               {% else %}
                                   <div class="timeline">
                                     <a href="#" class="timeline-content">
-                                        <span class="timeline-year">{{post.stop-date}} - {{post.stop-date}}</span>
+                                        <span class="timeline-year">{{post.start-date}} -</br>{{post.stop-date}}</span>
                                         <div class="timeline-icon">
                                             <i class="fa fa-users"></i>
                                         </div>
@@ -270,7 +275,12 @@
                                             <h3 class="title">{{post.title}}</h3>
                                             <p class="description">
                                               {{post.description}}
-                                            </p>
+                                              <ul>
+                                                {% for bullet in post.bullets %}
+                                                    <li>{{ bullet }}</li>
+                                                {% endfor %}
+                                              </ul>
+                                          </p>
                                         </div>
                                     </a>
                                 </div>
