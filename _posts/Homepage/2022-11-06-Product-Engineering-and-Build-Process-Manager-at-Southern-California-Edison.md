@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: PProcess Manager for Engineering and Build Process at Southern California Edison
+title: Process Manager for Engineering and Build Process at Southern California Edison
 title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
 subtitle:
 subtitle-url:
