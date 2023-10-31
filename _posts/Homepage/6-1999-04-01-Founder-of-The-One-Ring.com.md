@@ -59,7 +59,7 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 7
+order: 6
 ---
 
 I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
