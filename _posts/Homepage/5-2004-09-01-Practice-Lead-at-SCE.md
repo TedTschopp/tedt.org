@@ -60,7 +60,6 @@ image-title: Market Research
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
-
 mathjax:
 
 order: 5

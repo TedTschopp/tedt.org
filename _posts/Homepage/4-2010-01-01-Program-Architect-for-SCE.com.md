@@ -38,13 +38,13 @@ description: I served as the technical team lead and the single-point of contact
 seo-description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 
 categories: Home
-tags:
+tags: Resume
 keywords:
 
 draft-status:
 
 location:
-    name: Resume
+    name:
 coordinates:
     latitude:
     longitude:
