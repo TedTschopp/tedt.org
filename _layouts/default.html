@@ -246,38 +246,16 @@
                           {% if tag == 'Resume' %}
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
-                                      <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
-                                          <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                          <!---
-                                          <div class="timeline-icon">
-                                              <i class="fa fa-rocket"></i>
-                                          </div> 
-                                          --->
-                                          <div class="content">
-                                              <h3 class="title">{{post.title}}</h3>
-                                              <p class="description">
-                                                  {{post.description}}
-                                                  <ul>
-                                                    {% for bullet in post.bullets %}
-                                                        <li>{{ bullet }}</li>
-                                                    {% endfor %}
-                                                  </ul>
-                                              </p>
-                                          </div>
-                                      </a>
-                                  </div>
-                              {% else %}
-                                  <div class="timeline">
-                                    <a href="#" class="timeline-content">
+                                      <a href="#" class="timeline-content" name="{{ post.title | slugify}}"></a>
                                       <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                        <!---
-                                        <div class="timeline-icon">
-                                            <i class="fa fa-users"></i>
-                                        </div> 
-                                        --->
-                                        <div class="content">
-                                            <h3 class="title">{{post.title}}</h3>
-                                            <p class="description">
+                                      <!---
+                                      <div class="timeline-icon">
+                                          <i class="fa fa-rocket"></i>
+                                      </div> 
+                                      --->
+                                      <div class="content">
+                                          <h3 class="title">{{post.title}}</h3>
+                                          <p class="description">
                                               {{post.description}}
                                               <ul>
                                                 {% for bullet in post.bullets %}
@@ -285,8 +263,29 @@
                                                 {% endfor %}
                                               </ul>
                                           </p>
-                                        </div>
-                                    </a>
+                                      </div>
+                                      
+                                  </div>
+                              {% else %}
+                                  <div class="timeline">
+                                    <a href="#" class="timeline-content" name="{{ post.title | slugify}}"></a>
+                                    <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
+                                    <!---
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-users"></i>
+                                    </div> 
+                                    --->
+                                    <div class="content">
+                                        <h3 class="title">{{post.title}}</h3>
+                                        <p class="description">
+                                          {{post.description}}
+                                          <ul>
+                                            {% for bullet in post.bullets %}
+                                                <li>{{ bullet }}</li>
+                                            {% endfor %}
+                                          </ul>
+                                      </p>
+                                    </div>
                                 </div>
                               {% endif %} 
                           {% endif %}
