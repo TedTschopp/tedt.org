@@ -246,7 +246,7 @@
                           {% if tag == 'Resume' %}
                               {% if mod != 1 %}<!-- odd -->
                                   <div class="timeline">
-                                      <a href="#" class="timeline-content" name="{{ post.title | slugify}}"></a>
+                                      <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
                                       <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
                                       <!---
                                       <div class="timeline-icon">
@@ -264,7 +264,7 @@
                                               </ul>
                                           </p>
                                       </div>
-                                      
+                                      </a>
                                   </div>
                               {% else %}
                                   <div class="timeline">
@@ -286,6 +286,7 @@
                                           </ul>
                                       </p>
                                     </div>
+                                    </a>
                                 </div>
                               {% endif %} 
                           {% endif %}
