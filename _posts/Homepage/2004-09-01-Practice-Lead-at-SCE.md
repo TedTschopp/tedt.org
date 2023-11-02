@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Practice Lead: Practice Lead - SAP Portal / Web
+title: Practice Lead - SAP Portal / Web
 title-url: 
 subtitle:
 subtitle-url:
