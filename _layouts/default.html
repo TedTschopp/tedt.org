@@ -209,32 +209,24 @@
     {% for post in sorted_homepage %}
         {% assign count = count | plus: 1 %}
         {% assign mod = count | modulo: 2 %}
-        {% comment %}
-        {% for tag in post.tags %}
-            {% if tag != 'Resume' %}
-            {% endcomment %}
             <a name="{{ post.title | slugify}}"></a>
-                  <div class="row no-gutters">
-                          {% if mod != 1 %}<!-- odd -->
-                              <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-                              <div class="col-lg-6 my-auto showcase-text align-middle">
-                          {% else %}
-                              <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-                              <div class="col-lg-6 order-lg-1 my-auto showcase-text align-middle">
-                          {% endif %}
-                          <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2>        
-                          <p class="lead mb-0">{{ post.description}}</p>
-                          <ul>    
-                              {% for bullet in post.bullets %}
-                                  <li>{{ bullet }}</li>
-                              {% endfor %}
-                          </ul>
-                      </div>
-                  </div>
-                  {% comment%}
-            {% endif %}
-        {% endfor %}
-        {% endcomment %}
+            <div class="row no-gutters">
+                    {% if mod != 1 %}<!-- odd -->
+                        <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
+                        <div class="col-lg-6 my-auto showcase-text align-middle">
+                    {% else %}
+                        <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
+                        <div class="col-lg-6 order-lg-1 my-auto showcase-text align-middle">
+                    {% endif %}
+                    <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2>        
+                    <p class="lead mb-0">{{ post.description}}</p>
+                    <ul>    
+                        {% for bullet in post.bullets %}
+                            <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
     {% endfor %}
     </section>
 {% comment %} 
