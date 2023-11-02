@@ -35,8 +35,8 @@ keywords:
 
 draft-status:
 
-location: Pasadena, CA
-    name:
+location: 
+    name: Pasadena, CA
 coordinates:
     latitude:
     longitude:

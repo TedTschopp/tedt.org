@@ -38,8 +38,8 @@ keywords:
 
 draft-status:
 
-location: Rosemead, CA
-    name:
+location: 
+    name: Rosemead, CA
 coordinates:
     latitude:
     longitude:

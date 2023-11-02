@@ -35,8 +35,8 @@ keywords:
 
 draft-status:
 
-location: Glendale, CA
-    name:
+location: 
+    name: Glendale, CA
 coordinates:
     latitude:
     longitude:

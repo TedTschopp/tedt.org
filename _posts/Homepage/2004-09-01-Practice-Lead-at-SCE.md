@@ -39,8 +39,8 @@ keywords:
 
 draft-status:
 
-location: Irwindale, CA
-    name:
+location: 
+    name: Irwindale, CA
 coordinates:
     latitude:
     longitude:
