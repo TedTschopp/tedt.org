@@ -45,7 +45,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/Market-Research.jpg
+image: img/home/practice-lead.jpg
 image-alt:
 image-author: 
 image-author-URL:
