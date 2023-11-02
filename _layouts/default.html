@@ -207,6 +207,16 @@
     {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
     {% assign count = 0 %}
     {% for post in sorted_homepage %}
+        {% for tag in post.tags %}
+            {% if tag == 'Project' %}
+              <hr>
+            {% endif %}
+
+            {% if oldtag != tag %}
+              <hr>
+              {% assign oldtag = tag %}
+            {% endif %
+        {% endfor %}
         {% assign count = count | plus: 1 %}
         {% assign mod = count | modulo: 2 %}
             <a name="{{ post.title | slugify}}"></a>
@@ -229,7 +239,10 @@
             </div>
     {% endfor %}
     </section>
-{% comment %} 
+
+
+
+    {% comment %} 
     <div class="container">
       <div class="row">
           <div class="col-md-12">
