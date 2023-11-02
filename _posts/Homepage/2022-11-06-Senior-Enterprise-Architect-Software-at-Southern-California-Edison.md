@@ -37,7 +37,7 @@ keywords:
 
 draft-status:
 
-location:
+location: Rosemead, CA
     name:
 coordinates:
     latitude:

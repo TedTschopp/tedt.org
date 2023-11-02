@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Founder of The One Ring - Tolkien Online
+title: Founder and CTO of The One Ring - Tolkien Online
 title-url: http://www.theonering.com/
 subtitle:
 subtitle-url:
@@ -35,7 +35,7 @@ keywords:
 
 draft-status:
 
-location:
+location: Pasadena, CA
     name:
 coordinates:
     latitude:

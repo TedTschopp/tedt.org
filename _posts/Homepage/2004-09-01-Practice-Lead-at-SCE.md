@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Practice Lead - SAP Portal / Web
+title: Practice Lead - SAP Portal / Web at Southern California Edison
 title-url: 
 subtitle:
 subtitle-url:
@@ -39,7 +39,7 @@ keywords:
 
 draft-status:
 
-location:
+location: Irwindale, CA
     name:
 coordinates:
     latitude:

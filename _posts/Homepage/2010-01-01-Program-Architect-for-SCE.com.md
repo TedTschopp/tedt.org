@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Practice Lead & Solution Architect for SCE.com
+title: Practice Lead & Solution Architect for SCE.com at Southern California Edison
 title-url: https://www.sce.com/
 subtitle:
 subtitle-url:
@@ -43,7 +43,7 @@ keywords:
 
 draft-status:
 
-location:
+location: Rosemead, CA
     name:
 coordinates:
     latitude:
