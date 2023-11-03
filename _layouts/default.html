@@ -221,19 +221,19 @@
                     {% endif %}
                     {% for tag in post.tags %}
                         {% if tag == 'Resume' %}
-                        <h2 style="display: inline; font-weight: bolder;">{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>{% else %}{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}{% endif %}</h2><p style="display: inline; font-family: 'cormorant garamond', serif;" class="lead mb-0"> &mdash; {{ post.description}}</p>   
-                        <ul>    
-                          {% for bullet in post.bullets %}
-                              <li style="font-family: 'cormorant garamond', serif;" >{{ bullet }}</li>
-                          {% endfor %}
-                        </ul>
+                            <h2 style="display: inline; font-weight: bolder;">{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>{% else %}{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}{% endif %}</h2><p style="display: inline; font-family: 'cormorant garamond', serif;" class="lead mb-0"> &mdash; {{ post.description}}</p>   
+                            <ul>    
+                                {% for bullet in post.bullets %}
+                                    <li style="font-family: 'cormorant garamond', serif;" >{{ bullet }}</li>
+                                {% endfor %}
+                            </ul>
                         {% else %}
-                        <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2><p class="lead mb-0">{{ post.description}}</p>   
-                        <ul>    
-                          {% for bullet in post.bullets %}
-                              <li>{{ bullet }}</li>
-                          {% endfor %}
-                        </ul>
+                            <h2>{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener noreferrer">{{ post.title}}</a>{% else %}{{ post.title}}{% endif %}</h2><p class="lead mb-0">{{ post.description}}</p>   
+                            <ul>    
+                                {% for bullet in post.bullets %}
+                                    <li>{{ bullet }}</li>
+                                {% endfor %}
+                            </ul>
                         {% endif %}
                     {% endfor %}
                 </div>
