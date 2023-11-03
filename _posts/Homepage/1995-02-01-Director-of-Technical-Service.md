@@ -2,7 +2,7 @@
 layout: post
 
 title: Director of Technical Services at The Dohring Company
-title-url: 
+title-url: http://www.dohring.com
 subtitle:
 subtitle-url:
 quote:
