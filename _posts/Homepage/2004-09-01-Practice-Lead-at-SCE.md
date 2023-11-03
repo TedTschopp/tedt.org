@@ -2,7 +2,7 @@
 layout: post
 
 title: Practice Lead - SAP Portal / Web at Southern California Edison
-title-url: 
+title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
 subtitle:
 subtitle-url:
 quote:
@@ -14,7 +14,7 @@ call-to-action:
 date: 2004-09-01 07:11:42-07:00
 update:
 start-date: September 2004
-stop-date: Janurary 2010
+stop-date: January 2010
 
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
