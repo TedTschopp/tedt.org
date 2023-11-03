@@ -29,8 +29,7 @@
 	font-weight: normal;
 	font-style: normal;
  }
- 
- 
+  
  @font-face {
 	font-family: 'lp1_regular';
 	src: url('https://www.tedt.org/fonts/lp1-regular-webfont.eot');
@@ -39,6 +38,7 @@
 	font-weight: 400;
 	font-style: normal;
  }
+ 
  @font-face {
 	font-family: 'Duvall';
 	src: url('https://www.tedt.org/fonts/DuvallSmallCaps.eot');
@@ -47,18 +47,48 @@
 	font-weight: normal;
 	font-style: normal;
  }
+ 
  @font-face {
 	font-family: 'Fondamento';
 	src: url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
  }
+ 
  @font-face {
 	font-family: 'Fondamento';
 	src: url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
 	font-weight: 400;
 	font-style: Italic;
  }
+
+ @font-face {
+	font-family: 'Optimum';
+	src: url('https://www.tedt.org/fonts/QTOptimum.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: 'Optimum';
+	src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: Italic;
+ }
+
+ @font-face {
+	font-family: 'Optimum';
+	src: url('https://www.tedt.org/fonts/QTOptimum-Bold.otf') format('opentype');
+	font-weight: Bold;
+ }
+
+ @font-face {
+	font-family: 'Optimum';
+	src: url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.otf') format('opentype');
+	font-weight: Bold;
+	font-style: italic;
+ }
+
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
