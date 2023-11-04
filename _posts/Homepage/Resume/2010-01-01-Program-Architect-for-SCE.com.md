@@ -37,6 +37,19 @@ bullets:
 description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 seo-description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 
+recommendations:
+  - name: Mike de la Hoz
+    title: Principal Product Manager 
+    url: https://www.linkedin.com/in/mikedelahoz/
+    text: I've worked with Ted on several digital projects at Southern California Edison. I find him to be intrinsically curious and his thirst for knowledge drives him to always find a better way to deliver product. When Ted provides system design and architecture advice and recommendations, you can bank on him thoroughly doing his research to come up with a sound conclusion. He's a good business partner and collaborator always seeking to do the right thing.
+  - name: Situ Ramaswamy
+    title: Director Energy & Utilities Vertical Business Unit of HCL Technologies
+    url: https://www.linkedin.com/in/situramaswamy/
+    text: Ted keeps up with more technologies than most of the technologists I have worked with, and brought an excellent mix of superior technical skills and great teamwork to all his assignments. One of the things that I found most gratifying was to see Ted's growth as an architect and technical leader through the significant programs he worked on over the years.
+
+
+
+
 categories: Home
 tags: Resume
 keywords:

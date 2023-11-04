@@ -32,6 +32,19 @@ bullets:
 description: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 seo-description: I oversaw the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focused on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
 
+recommendations:
+  - name: Christopher Hurney
+    title: Enterprise Agile Coach
+    url: https://www.linkedin.com/in/chrishurney/
+    text: |
+      As an agile coach entering an engagement with a large corporation, you are often curious, even concerned, about whether or not there will be anyone within the organization with empathy for the types of change we intend to explore.
+
+      With Ted I found such an empath. Ted has one of the highest acumen I've encountered when it comes to topics such as code craftsmanship, highly collaborative coding techniques, DevOps, waste mitigation, and just generally helping bring about change that aligns with agile values, lean & agile principles, not for the sake of just doing things to do things, but to better equip the organization to create value for its customers.
+
+      Endeavors that allow me to collaborate with Ted are the highlight of my agile coaching engagement at Southern California Edison.
+
+
+
 categories: Home
 tags: Resume
 keywords:

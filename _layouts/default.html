@@ -26,8 +26,6 @@
     <!-- Bootstrap CSS-->
     {% include css-bootstrap.html %}
 
-    <!-- TODO: Add Dark Mode Back -->
-
     <!-- Custom Fonts -->
     {% if this_is_a_draft == true %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -259,11 +257,9 @@
                                   <div class="timeline">
                                       <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
                                       <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                      <!---
                                       <div class="timeline-icon">
                                           <i class="fa fa-rocket"></i>
                                       </div> 
-                                      --->
                                       <div class="content">
                                           <h3 class="title">{{post.title}}</h3>
                                           <p class="description">
@@ -281,11 +277,9 @@
                                   <div class="timeline">
                                     <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
                                     <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                    <!---
                                     <div class="timeline-icon">
                                         <i class="fa fa-users"></i>
                                     </div> 
-                                    --->
                                     <div class="content">
                                         <h3 class="title">{{post.title}}</h3>
                                         <p class="description">

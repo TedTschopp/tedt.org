@@ -11,6 +11,22 @@ source:
 source-url:
 call-to-action:
 
+recommendations:
+  - name: Greg Goldasich
+    title: Principal Manager of Software Integration & Systems Engineering
+    url: https://www.linkedin.com/in/greggoldasich/
+    text: Ted is very collaborative by nature, effective in meeting his commitments and consistently drives to improve work/product quality. He actively engages with team members, managers and clients to deliver on his commitments. Ted openly and actively seeks out feedback on his approach and effectiveness. He is by nature curious and this pushes him to improve his technical knowledge and drive his work forward.
+  - name: Kristina Quick
+    title: Principal Manager - Microsoft Security Engineering
+    url: https://www.linkedin.com/in/kdquick/
+    text: Ted's dedication and investment in this program made it a huge success! Furthermore, his comprehensive understanding of technology spans all aspects, solidifying his role as an invaluable asset to any team. His ability to engage with both the technical nuances and the team dynamics makes him an exceptional team player whose contributions are both significant and impactful.
+  - name: Karen Agg
+    title: Senior Project Manager/Certified Scrum Master
+    url: https://www.linkedin.com/in/karen-agg-1533791/
+    text: Ted and I have been colleagues for 10+ years. Over the years we have worked in the same group and different groups. Our most recent opportunity to work together was a project to create the first mobile website/app for SCE, which was a big success. What impresses me most about Ted is his ability to take complex architectural concepts and explain them so anyone can understand. Ted is a forward thinker and strives to create a solution to satisfy the business need now and scale for the future. Ted is great to work with. I highly recommend Ted.
+
+
+
 date: 2004-09-01 07:11:42-07:00
 update:
 start-date: September 2004
