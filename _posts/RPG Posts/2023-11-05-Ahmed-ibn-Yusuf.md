@@ -2,7 +2,7 @@
 layout: post
 title: Ahmed ibn Yusuf - Porter at Bayt al-Ḥikmah
 title-url: 
-subtitle: Ottoman Imperial Refugee and Sorcerer
+subtitle: Porter at Bayt al
 subtitle-url: 
 quote: "Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library in Baghdad in 1258."
 excerpt: Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library in Baghdad in 1258.
