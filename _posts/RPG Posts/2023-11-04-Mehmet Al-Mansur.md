@@ -9,7 +9,7 @@ excerpt: Mehmet Al-Mansur is dedicated to providing safe passage for magical cre
 source: tedt.org
 source-url: https://tedt.org/2023/10/29/Mehmet-Al-Mansur.html
 call-to-action: 
-date: 2023-10-29 09:41:57
+date: 2023-11-05 09:14:49
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -26,7 +26,6 @@ tags:
   - RPG
   - Game Mechanics
   - Gurps 4th Edition
-  - 
 keywords: "Mehmet Al-Mansur, Sultan's Sihirbaz Yeniçerileri, Ottoman imperial refugee, mystical arts, magical creatures resettlement, Ottoman soldier"
 draft-status: Integration
 location:
