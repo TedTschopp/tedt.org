@@ -55,19 +55,19 @@ order:
 
 ## Attributes:
 
-. ST 14
-. DX 12 
-. IQ 10
-. HT 12
+* ST 14
+* DX 12 
+* IQ 10
+* HT 12
 
 ## Secondary Characteristics:
 
-. HP 14
-. Will 10
-. Per 10
-. FP 12
-. Speed 6 
-. Move 6
+* HP 14
+* Will 10
+* Per 10
+* FP 12
+* Speed 6 
+* Move 6
 
 ## Advantages:
 
@@ -80,38 +80,38 @@ order:
 
 ## Disadvantages:
 
-. Social Stigma (Unskilled Laborer)
-. Duty (To his family who he hopes will have a better life then his own)
-. Honesty (12 or less)
+* Social Stigma (Unskilled Laborer)
+* Duty (To his family who he hopes will have a better life then his own)
+* Honesty (12 or less)
  
 ## Skills:
 
-. Carrying (A) HT+1 - 13
-. Lifting (A) HT+1 - 13
-. Merchant (A) IQ - 10
-. Area Knowledge (Baghdad) (E) IQ+1 - 11
-. Observation (A) Per - 10
-. Streetwise (A) IQ - 10
-. First Aid (E) IQ - 10
-. Brawling (E) DX+1 - 13
-. Knife (E) DX+1 - 13
+* Carrying (A) HT+1 - 13
+* Lifting (A) HT+1 - 13
+* Merchant (A) IQ - 10
+* Area Knowledge (Baghdad) (E) IQ+1 - 11
+* Observation (A) Per - 10
+* Streetwise (A) IQ - 10
+* First Aid (E) IQ - 10
+* Brawling (E) DX+1 - 13
+* Knife (E) DX+1 - 13
 
 ## Quirks:
 
-. Curious about Scholarly Texts
-. Superstitious (Believes in local folklore)
-. Always Carries a Lucky Charm
-. Enjoys Street Food
-. Humble (Downplays his own importance)
+* Curious about Scholarly Texts
+* Superstitious (Believes in local folklore)
+* Always Carries a Lucky Charm
+* Enjoys Street Food
+* Humble (Downplays his own importance)
 
 ## Equipment:
 
-. Basic clothing suitable for manual labor
-. A sturdy leather belt for lifting
-. A small knife for cutting ropes or fabric (also for self-defense)
-. A waterskin
-. A small pouch for personal items
-. A \"lucky charm\" (perhaps a small amulet or trinket)
+* Basic clothing suitable for manual labor
+* A sturdy leather belt for lifting
+* A small knife for cutting ropes or fabric (also for self-defense)
+* A waterskin
+* A small pouch for personal items
+* A \"lucky charm\" (perhaps a small amulet or trinket)
 
 ## Background:
 
