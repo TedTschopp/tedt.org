@@ -1,48 +1,39 @@
 ---
 layout: post
-
 title: Mehmet Al-Mansur - Former Member of the Sultan's Sihirbaz Yeniçerileri
-title-url: 
-subtitle:
+title-url: https://tedt.org/2023/10/29/Mehmet-Al-Mansur.html
+subtitle: Ottoman Imperial Refugee and Sorcerer
 subtitle-url: 
-quote: ""
-excerpt: ""
-source: 
-source-url: 
+quote: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920s. He is a former member of the Sultan's Sihirbaz Yeniçerileri, a sorcerer corps, skilled in mystical arts and in combat."
+excerpt: Mehmet Al-Mansur is dedicated to providing safe passage for magical creatures and djinn to the Western world for eventual resettlement in the Americas, possessing skills acquired during his service as an Ottoman soldier.
+source: tedt.org
+source-url: https://tedt.org/2023/10/29/Mehmet-Al-Mansur.html
 call-to-action: 
-
 date: 2023-10-29 09:41:57
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: https://tedt.org/
-
-
 bullets:
-
-description: 
+description: Character Concept of Mehmet Al-Mansur, an Ottoman imperial refugee in Paris during the early 1920s, skilled in mystical arts and combat, dedicated to aiding magical beings' resettlement in the Americas.
 seo-description: 
-
-
 categories:
   - Draft
   - Role Playing Games
+  - Gurps
 tags:
   - RPG
   - Game Mechanics
-keywords:
-  - RPG
-  - TTRPG
-
+  - Gurps 4th Edition
+  - 
+keywords: "Mehmet Al-Mansur, Sultan's Sihirbaz Yeniçerileri, Ottoman imperial refugee, mystical arts, magical creatures resettlement, Ottoman soldier"
 draft-status: Integration
-
 location:
     name: Bradbury, CA
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-
 image: /img/2023-11-05/Mehmet Al-Mansur.jpg
 image-alt: "Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair, deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman patterns, wisdom and curiosity"
 image-author: Ted Tschopp
@@ -54,14 +45,40 @@ image-credits-artist-URL:
 image-credits-title:
 image-description: "Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair, deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman patterns, wisdom and curiosity"
 image-title: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920"
-
 monster-or-magical-or-religious-ideas:  
 year-the-event-took-place:
-
 mathjax: false
-
 order:
+
 ---
+
+- [Character Sheet](#character-sheet)
+  - [Attributes:](#attributes)
+  - [Secondary Attributes:](#secondary-attributes)
+  - [Advantages:](#advantages)
+  - [Disadvantages:](#disadvantages)
+  - [Quirks:](#quirks)
+  - [Skills](#skills)
+  - [Equipment](#equipment)
+  - [Character Background](#character-background)
+    - [Mehmet Al-Mansur's Travelogue and Diary: A Journey of Mystical](#mehmet-al-mansurs-travelogue-and-diary-a-journey-of-mystical)
+      - [1900 - Istanbul, Ottoman Empire](#1900---istanbul-ottoman-empire)
+      - [1902 - Istanbul, Ottoman Empire](#1902---istanbul-ottoman-empire)
+      - [1905 - Cairo, Egypt](#1905---cairo-egypt)
+      - [1908 - Varanasi, India](#1908---varanasi-india)
+      - [1910 - Samarkand, Russian Empire (Present-day Uzbekistan)](#1910---samarkand-russian-empire-present-day-uzbekistan)
+      - [1915 - Istanbul, Ottoman Empire](#1915---istanbul-ottoman-empire)
+      - [1920 - Paris, France](#1920---paris-france)
+  - [Character's Routine in Paris](#characters-routine-in-paris)
+    - [Paris Police Department](#paris-police-department)
+  - [Aspects of Islamic Mysticism:](#aspects-of-islamic-mysticism)
+  - [Rules of for the Sihirbaz Yeniçerileri Dergahı](#rules-of-for-the-sihirbaz-yeniçerileri-dergahı)
+    - [Awards](#awards)
+      - [Awards of the Ottoman Emperal Military](#awards-of-the-ottoman-emperal-military)
+      - [Awards of the Sihirbaz Yeniçerileri Dergahı](#awards-of-the-sihirbaz-yeniçerileri-dergahı)
+      - [Classes of Awards](#classes-of-awards)
+    - [Rules](#rules)
+
 
 # Character Sheet
 
@@ -149,7 +166,7 @@ order:
 | Language: Arabic          | [Native]   | Read / Speak Arabic as a native.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Language: Persian         | [Native]   | Read / Speak Persian as a native.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-## Equipment:
+## Equipment
 
 * French Clothing
 * Local Ottoman Tribal Clothing from Hometown
