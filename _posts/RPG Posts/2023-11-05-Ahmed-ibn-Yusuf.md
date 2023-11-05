@@ -55,106 +55,106 @@ order:
 
 ## Attributes:
 
-* ST 14
-* DX 12 
-* IQ 10
-* HT 12
+. ST 14
+. DX 12 
+. IQ 10
+. HT 12
 
 ## Secondary Characteristics:
 
-* HP 14
-* Will 10
-* Per 10
-* FP 12
-* Speed 6 
-* Move 6
+. HP 14
+. Will 10
+. Per 10
+. FP 12
+. Speed 6 
+. Move 6
 
 ## Advantages:
 
 |     Advantage | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |--------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           Fit | You have better cardiovascular health than your HT alone  would indicate. You get +1 to all HT rolls (to stay  conscious, avoid death, resist disease or poison, etc.). This does not improve your HT attribute or HT- based  skills! You also recover FP at twice the normal rate*                                                                                                                                                                                              |
-| Lifiting ST 3 | You have lifting capacity out of proportion to your mass.  Add your Lifting ST to your ordinary ST when you determine  Basic Lift for the purposes of carrying, lifting, pushing,   and pulling* Lifting ST also adds to ST in situations  where you can apply slow, steady pressure (grappling, choking,etc.). Lifting ST does not boost ST (or Basic Lift) for the purpose of determining HP, throwing  distance, or damage inflicted by melee attacks or thrown  weapons. |
+|           Fit | You have better cardiovascular health than your HT alone  would indicate. You get +1 to all HT rolls (to stay  conscious, avoid death, resist disease or poison, etc.). This does not improve your HT attribute or HT- based  skills! You also recover FP at twice the normal rate.                                                                                                                                                                                              |
+| Lifiting ST 3 | You have lifting capacity out of proportion to your mass.  Add your Lifting ST to your ordinary ST when you determine  Basic Lift for the purposes of carrying, lifting, pushing,   and pulling. Lifting ST also adds to ST in situations  where you can apply slow, steady pressure (grappling, choking,etc.). Lifting ST does not boost ST (or Basic Lift) for the purpose of determining HP, throwing  distance, or damage inflicted by melee attacks or thrown  weapons. |
 |      Language | (Arabic) (Native)                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |        Patron | (Scholar at Bayt al-Ḥikmah, appears on 9 or less)                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## Disadvantages:
 
-* Social Stigma (Unskilled Laborer)
-* Duty (To his family who he hopes will have a better life then his own)
-* Honesty (12 or less)
+. Social Stigma (Unskilled Laborer)
+. Duty (To his family who he hopes will have a better life then his own)
+. Honesty (12 or less)
  
 ## Skills:
 
-* Carrying (A) HT+1 - 13
-* Lifting (A) HT+1 - 13
-* Merchant (A) IQ - 10
-* Area Knowledge (Baghdad) (E) IQ+1 - 11
-* Observation (A) Per - 10
-* Streetwise (A) IQ - 10
-* First Aid (E) IQ - 10
-* Brawling (E) DX+1 - 13
-* Knife (E) DX+1 - 13
+. Carrying (A) HT+1 - 13
+. Lifting (A) HT+1 - 13
+. Merchant (A) IQ - 10
+. Area Knowledge (Baghdad) (E) IQ+1 - 11
+. Observation (A) Per - 10
+. Streetwise (A) IQ - 10
+. First Aid (E) IQ - 10
+. Brawling (E) DX+1 - 13
+. Knife (E) DX+1 - 13
 
 ## Quirks:
 
-* Curious about Scholarly Texts
-* Superstitious (Believes in local folklore)
-* Always Carries a Lucky Charm
-* Enjoys Street Food
-* Humble (Downplays his own importance)
+. Curious about Scholarly Texts
+. Superstitious (Believes in local folklore)
+. Always Carries a Lucky Charm
+. Enjoys Street Food
+. Humble (Downplays his own importance)
 
 ## Equipment:
 
-* Basic clothing suitable for manual labor
-* A sturdy leather belt for lifting
-* A small knife for cutting ropes or fabric (also for self-defense)
-* A waterskin
-* A small pouch for personal items
-* A \"lucky charm\" (perhaps a small amulet or trinket)
+. Basic clothing suitable for manual labor
+. A sturdy leather belt for lifting
+. A small knife for cutting ropes or fabric (also for self-defense)
+. A waterskin
+. A small pouch for personal items
+. A \"lucky charm\" (perhaps a small amulet or trinket)
 
 ## Background:
 
-Ahmed ibn Yusuf is a 28-year-old porter who works at the Bayt al-Ḥikmah in Baghdad* He comes from a modest family; his father, Yusuf, is a fisherman, and his mother, Fatima, is a homemaker* Ahmed has two younger sisters, Aisha and Leila, who are still in school* His family is supportive but doesn\'t fully understand the significance of the work he is involved in at the House of Wisdom.
+Ahmed ibn Yusuf is a 28-year-old porter who works at the Bayt al-Ḥikmah in Baghdad. He comes from a modest family; his father, Yusuf, is a fisherman, and his mother, Fatima, is a homemaker. Ahmed has two younger sisters, Aisha and Leila, who are still in school. His family is supportive but doesn\'t fully understand the significance of the work he is involved in at the House of Wisdom.
 
 ## Role-Playing Notes:
 
-Ahmed is honest and dutiful but may be a bit naive when it comes to the complexities of scholarly debates or political intrigue* He takes great pride in his work, knowing that even though he doesn\'t understand the texts he carries, he plays a part in the greater pursuit of knowledge* With his enhanced strength, agility, and resilience, Ahmed is more than capable of defending himself and has even picked up some basic knifefighting skills.
+Ahmed is honest and dutiful but may be a bit naive when it comes to the complexities of scholarly debates or political intrigue. He takes great pride in his work, knowing that even though he doesn\'t understand the texts he carries, he plays a part in the greater pursuit of knowledge. With his enhanced strength, agility, and resilience, Ahmed is more than capable of defending himself and has even picked up some basic knifefighting skills.
 
 ### Local Folklore Ahmed ibn Yusuf Believes In:
 
-Ahmed ibn Yusuf, being a man of the people and deeply rooted in the local culture of Baghdad, believes in a variety of folklore that has been passed down through generations* Here\'s a summary of some of the local folklore he might believe in:
+Ahmed ibn Yusuf, being a man of the people and deeply rooted in the local culture of Baghdad, believes in a variety of folklore that has been passed down through generations. Here\'s a summary of some of the local folklore he might believe in:
 
 #### Jinn and Spirits
 
-Ahmed believes in the existence of Jinn, supernatural beings that can be either benevolent or malevolent* He thinks they inhabit remote or hidden places and can influence human affairs* He may carry amulets or charms to protect himself from their influence.
+Ahmed believes in the existence of Jinn, supernatural beings that can be either benevolent or malevolent. He thinks they inhabit remote or hidden places and can influence human affairs. He may carry amulets or charms to protect himself from their influence.
 
 #### The Legend of the Tigris River
 
-Ahmed believes that the Tigris River, which flows through Baghdad, is a source of both life and mystery* Folk tales speak of ancient spirits that dwell within the river and control its flow* Some say that making offerings to these spirits can bring good fortune.
+Ahmed believes that the Tigris River, which flows through Baghdad, is a source of both life and mystery. Folk tales speak of ancient spirits that dwell within the river and control its flow. Some say that making offerings to these spirits can bring good fortune.
 
 
-1* **Creation Myths**: The Tigris, along with the Euphrates, featured prominently in Mesopotamian creation myths* They were considered to be the rivers that flowed from the Garden of Eden, which in many Islamic interpretations was thought to be a real place on Earth.
-2* **Gilgamesh Epic**: By the 1200s, the Epic of Gilgamesh would have been ancient but still influential* In this epic, the Tigris River serves as a setting for several adventures, including the pursuit of the sacred Cedar Forest and the search for immortality by Gilgamesh.
-3* **Islamic Historical Narratives**: In Islamic tradition, the Tigris would be known as one of the rivers of Paradise, and several hadiths (sayings of the Prophet Muhammad) mention the rivers of Eden, which would be interpreted by many as the Tigris and Euphrates.
-4* **The Flood Story**: Legends of the Great Flood, similar to the story of Noah's Ark in the Abrahamic traditions (known as Nuh in the Quran), would also be linked to the Tigris as such floods were common in the river’s history, and stories of ancient floods were often localized by the people living along its banks.
-5* **Iskandar**: Legends of Iskandar (Alexander the Great) often involved his journeys near or along the Tigris River, including encounters with mythical creatures and divine interventions.
-6* **Persian and Arab Conquests**: There would be numerous stories about the strategic importance of the Tigris in various military campaigns, including the Arab conquests that brought Islam to the region and the battles fought along its banks.
-7* **Sassanian Empire Legends**: Stories from the time of the Sassanian empire, the last pre-Islamic Persian empire, would include tales of battles and the famed Nahrawan Canal, a feat of engineering that channeled the waters of the Tigris.
-8* **The jinn**: Folktales involving jinn (supernatural beings in Islamic mythology) often took place near rivers like the Tigris, where they were said to live, interact with humans, or influence events.
-9* **Local Folk Heroes**: By this time, the Tigris River region had seen centuries of civilization, and each period likely contributed its own heroes and notable figures, from ancient kings to contemporary leaders, whose exploits became the stuff of local legend.
+1. **Creation Myths**: The Tigris, along with the Euphrates, featured prominently in Mesopotamian creation myths. They were considered to be the rivers that flowed from the Garden of Eden, which in many Islamic interpretations was thought to be a real place on Earth.
+2. **Gilgamesh Epic**: By the 1200s, the Epic of Gilgamesh would have been ancient but still influential. In this epic, the Tigris River serves as a setting for several adventures, including the pursuit of the sacred Cedar Forest and the search for immortality by Gilgamesh.
+3. **Islamic Historical Narratives**: In Islamic tradition, the Tigris would be known as one of the rivers of Paradise, and several hadiths (sayings of the Prophet Muhammad) mention the rivers of Eden, which would be interpreted by many as the Tigris and Euphrates.
+4. **The Flood Story**: Legends of the Great Flood, similar to the story of Noah's Ark in the Abrahamic traditions (known as Nuh in the Quran), would also be linked to the Tigris as such floods were common in the river’s history, and stories of ancient floods were often localized by the people living along its banks.
+5. **Iskandar**: Legends of Iskandar (Alexander the Great) often involved his journeys near or along the Tigris River, including encounters with mythical creatures and divine interventions.
+6. **Persian and Arab Conquests**: There would be numerous stories about the strategic importance of the Tigris in various military campaigns, including the Arab conquests that brought Islam to the region and the battles fought along its banks.
+7. **Sassanian Empire Legends**: Stories from the time of the Sassanian empire, the last pre-Islamic Persian empire, would include tales of battles and the famed Nahrawan Canal, a feat of engineering that channeled the waters of the Tigris.
+8. **The jinn**: Folktales involving jinn (supernatural beings in Islamic mythology) often took place near rivers like the Tigris, where they were said to live, interact with humans, or influence events.
+9. **Local Folk Heroes**: By this time, the Tigris River region had seen centuries of civilization, and each period likely contributed its own heroes and notable figures, from ancient kings to contemporary leaders, whose exploits became the stuff of local legend.
 
 #### The Cursed Ruins
 
-There are ruins around Baghdad that are said to be cursed, often linked to stories of lost civilizations or fallen empires* Ahmed would avoid these places, especially after dark, believing that malevolent spirits or curses could harm those who venture too close.
+There are ruins around Baghdad that are said to be cursed, often linked to stories of lost civilizations or fallen empires. Ahmed would avoid these places, especially after dark, believing that malevolent spirits or curses could harm those who venture too close.
 
 #### The Wisdom of the Bayt al-Ḥikmah
 
-Given his work at the House of Wisdom, Ahmed might believe that the scholars and texts there possess magical or divine qualities* Some local tales suggest that the Bayt al-Ḥikmah was built on an ancient site of power, and its scholars are the guardians of arcane secrets.
+Given his work at the House of Wisdom, Ahmed might believe that the scholars and texts there possess magical or divine qualities. Some local tales suggest that the Bayt al-Ḥikmah was built on an ancient site of power, and its scholars are the guardians of arcane secrets.
 
 #### The Protective Qualities of Certain Symbols
 
-Ahmed believes in the protective power of certain symbols and phrases, such as the Hand of Fatima or specific Quranic verses* He thinks that these can ward off evil and bring good luck, which is why he always carries a \"lucky charm.\"
+Ahmed believes in the protective power of certain symbols and phrases, such as the Hand of Fatima or specific Quranic verses. He thinks that these can ward off evil and bring good luck, which is why he always carries a \"lucky charm.\"
 
 ### Phrases:
 
@@ -176,7 +176,7 @@ Ahmed holds a strong belief in the Night of Power, a night during the Islamic mo
 
 ### Folk Heroes and Local Saints
 
-Ahmed believes in the stories of folk heroes who fought against injustice or local saints who performed miracles* These figures are often invoked in daily life as symbols of virtue and courage.
+Ahmed believes in the stories of folk heroes who fought against injustice or local saints who performed miracles. These figures are often invoked in daily life as symbols of virtue and courage.
 
 Ahmed ibn Yusuf might visit the shrines of these local saints to seek blessings, and he would certainly know the tales of these folk heroes, drawing inspiration from their virtues and deeds.
 
@@ -202,11 +202,11 @@ Ahmed pays attention to various omens and signs, such as the flight patterns of 
 
 These beliefs, rooted in local folklore and traditions, shape Ahmed\'s worldview and influence his daily actions and decisions.
 
-Ahmed would likely interpret these omens and superstitions as signs or messages from the divine, or as indicators of the natural order of things* They would influence his daily actions and decisions, prompting him to take caution or proceed with confidence depending on the signs he observes.
+Ahmed would likely interpret these omens and superstitions as signs or messages from the divine, or as indicators of the natural order of things. They would influence his daily actions and decisions, prompting him to take caution or proceed with confidence depending on the signs he observes.
 
 #### Omens:
 
-* Flight of Birds - Observing the direction in which a flock of birds flies could be seen as an omen* A flight towards the right might be considered a good omen, while towards the left could be seen as a bad sign.
+* Flight of Birds - Observing the direction in which a flock of birds flies could be seen as an omen. A flight towards the right might be considered a good omen, while towards the left could be seen as a bad sign.
 * Shooting Stars - A shooting star could be seen as a sign that God is answering someone\'s prayers, or that a significant change is about to happen.
 * Lunar Eclipses - An eclipse might be considered a warning of impending disaster or divine displeasure, prompting people to pray and seek forgiveness.
 * Crossing Paths with a Black Cat - While in some cultures this is considered bad luck, in others it might be seen as a sign to be extra cautious or aware of one\'s surroundings.
@@ -214,7 +214,7 @@ Ahmed would likely interpret these omens and superstitions as signs or messages 
 
 #### Superstitions:
 
-* Evil Eye - The belief that envy or malevolent glances can bring misfortune* Ahmed would likely carry an amulet or charm to protect against it.
+* Evil Eye - The belief that envy or malevolent glances can bring misfortune. Ahmed would likely carry an amulet or charm to protect against it.
 * Knocking on Wood - To prevent disappointment or jinxing a positive outcome, Ahmed might knock on wood after making a hopeful statement.
 * Spilling Salt - If salt is spilled, throwing a pinch over the left shoulder is believed to ward off bad luck or evil spirits.
 * Breaking Bread - It\'s considered good luck to break bread with someone rather than cutting it, symbolizing friendship and unity.
