@@ -61,45 +61,33 @@
         position: relative;
         z-index: 1;
       }
+
+      .Dohring-watermark::before, .TORC-watermark::before, .SCE-watermark::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        z-index: -1;
+      }
+
       .Dohring-watermark::before {
-        content: "";
-        background: url({{site.siteurl}}/img/home/logo-Dohring.png) no-repeat center center;
-        background-size: 249px 139px; /* Adjust these values to the desired width and height */
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.1;
-        z-index: -1;
+          background: url({{site.siteurl}}/img/home/logo-Dohring.png) no-repeat center center;
+          background-size: contain; /* or contain */
       }
+
       .TORC-watermark::before {
-        content: "";
-        background: url({{site.siteurl}}/img/home/logo-TORC.png) no-repeat center center;
-        background-size: 163px 240px; /* Adjust these values to the desired width and height */
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.1;
-        z-index: -1;
+          background: url({{site.siteurl}}/img/home/logo-TORC.png) no-repeat center center;
+          background-size: contain; /* or contain */
       }
+
       .SCE-watermark::before {
-        content: "";
-        background: url({{site.siteurl}}/img/home/logo-SCE.png) no-repeat center center;
-        background-size: 250px 98px; /* Adjust these values to the desired width and height */
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.1;
-        z-index: -1;
+          background: url({{site.siteurl}}/img/home/logo-SCE.png) no-repeat center center;
+          background-size: contain; /* or contain */
       }
     </style>
-
-
 
     {% if this_is_a_draft == true %}
     <link rel="stylesheet"
