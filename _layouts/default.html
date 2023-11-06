@@ -58,14 +58,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
 
-      .work-watermark {
+      .Dohring-watermark {
         position: relative;
         z-index: 1;
       }
 
-      .work-watermark::before {
+      .Dohring-watermark::before {
         content: "";
-        background: url({{site.siteurl}}/img/home/SCE-logo.svg) no-repeat center center;
+        background: url({{site.siteurl}}/img/home/logo-Dohring.png) no-repeat center center;
         background-size: 100px 100px; /* Adjust these values to the desired width and height */
         position: absolute;
         top: 0;
@@ -75,6 +75,46 @@
         opacity: 0.1;
         z-index: -1;
       }
+
+
+      .TORC-watermark {
+        position: relative;
+        z-index: 1;
+      }
+
+      .TORC-watermark::before {
+        content: "";
+        background: url({{site.siteurl}}/img/home/logo-TORC.png) no-repeat center center;
+        background-size: 100px 100px; /* Adjust these values to the desired width and height */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .SCE-watermark {
+        position: relative;
+        z-index: 1;
+      }
+
+      .SCE-watermark::before {
+        content: "";
+        background: url({{site.siteurl}}/img/home/logo-SCE.png) no-repeat center center;
+        background-size: 100px 100px; /* Adjust these values to the desired width and height */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+
+
 
 </style>
 
