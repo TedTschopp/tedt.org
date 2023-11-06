@@ -11,6 +11,7 @@ excerpt: I oversaw the end-to-end management and governance of Solutions Enginee
 source:
 source-url:
 call-to-action:
+Company: SCE
 
 date: 2018-06-03 07:11:51-07:00
 update:
