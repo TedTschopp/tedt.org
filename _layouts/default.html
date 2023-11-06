@@ -57,20 +57,22 @@
     <!-- Add this line to the top of your HTML file -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
+
       .work-watermark {
-          position: relative;
-          z-index: 1;
+        position: relative;
+        z-index: 1;
       }
-      
+
       .work-watermark::before {
           content: "";
-          background: url({{site.siteurl}}/img/home/SCE-logo.svg);
-          background-repeat: no-repeat;
+          background: url({{site.siteurl}}/img/home/SCE-logo.svg) no-repeat center center;
           background-size: contain;
-          font-weight: 900;
           position: absolute;
-          font-size: 200px;
-          color: rgba(0, 0, 0, 0.1);
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.1;
           z-index: -1;
       }
       </style>
