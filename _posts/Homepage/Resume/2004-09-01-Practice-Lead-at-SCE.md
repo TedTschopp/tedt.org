@@ -10,7 +10,7 @@ excerpt: Served as a Practice Lead overseeing both SAP Portal and Web Developmen
 source:
 source-url:
 call-to-action:
-Company: SCE
+company: SCE
 
 
 

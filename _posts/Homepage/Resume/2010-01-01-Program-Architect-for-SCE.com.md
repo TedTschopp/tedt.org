@@ -10,7 +10,7 @@ excerpt: I served as the technical team lead and the single-point of contact for
 source:
 source-url:
 call-to-action:
-Company: SCE
+company: SCE
 
 date: 2018-06-03 07:11:51-07:00
 update:

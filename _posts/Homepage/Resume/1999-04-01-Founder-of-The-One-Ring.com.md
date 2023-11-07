@@ -10,7 +10,7 @@ excerpt: I founded and spearheaded the operations for a leading website dedicate
 source:
 source-url:
 call-to-action:
-Company: TORC
+company: TORC
 
 date: 2018-06-03 07:11:42-07:00
 update:
