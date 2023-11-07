@@ -10,7 +10,7 @@ excerpt: Direct a multifaceted team overseeing market research, surveys, and cal
 source:
 source-url:
 call-to-action:
-Company: Dohring
+company: Dohring
 
 date: 1994-02-01 07:11:42-07:00
 update:

@@ -34,7 +34,7 @@ seo-description: I am the Enterprise Technology Architect responsible for SCE's 
 categories: Home
 tags: Resume
 keywords:
-Company: SCE
+company: SCE
 
 draft-status:
 
