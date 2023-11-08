@@ -26,8 +26,8 @@ seo-description: An overview of the MyEdison.com corporate portal project, detai
 categories: 
 - Projects
 - Home
-tags:
-keywords:
+tags: Project
+keywords: Plumtree, C#, B.NET, J2EE
 
 draft-status:
 

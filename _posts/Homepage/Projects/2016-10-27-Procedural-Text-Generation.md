@@ -26,9 +26,7 @@ bullets:
 - To Do- Look into Mustache engine
 
 description: "An application that generates text using procedural methods. \n"
-seo-description: 'An application that generates text using procedural methods.
-
-    '
+seo-description: 'An application that generates text using procedural methods.'
 
 categories: 
 - Projects

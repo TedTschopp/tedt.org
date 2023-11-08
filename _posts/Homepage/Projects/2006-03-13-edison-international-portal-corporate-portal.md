@@ -26,7 +26,7 @@ seo-description: A project overview of the corporate portal developed by Ted Tsc
 categories: 
 - Projects
 - Home
-tags:
+tags: Project
 keywords: Edison International, corporate portal, SAP Portal, Java, XHTMLB, HTMLB
 
 draft-status:

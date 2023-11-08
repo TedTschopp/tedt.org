@@ -1,10 +1,6 @@
 ---
 layout: post
 
-
-url: "https://tedt.org/2004/03/13/corporate-intranet-redesign.html"
-title: "Corporate Intranet Redesign"
-
 title: Corporate Intranet Redesign
 title-url:
 subtitle:
@@ -27,11 +23,11 @@ bullets:
 description: Project summary for the Corporate Intranet Redesign, detailing the update to the old design with new branding, introduction of various templates, menuing systems, and the implementation of AJAX and RSS, emphasizing improvements in the employee directory and paging system.
 seo-description: Project summary for the Corporate Intranet Redesign, detailing the update to the old design with new branding, introduction of various templates, menuing systems, and the implementation of AJAX and RSS, emphasizing improvements in the employee directory and paging system.
 
-categories:
+categories: 
 - Projects
 - Home
-tags:
-keywords:
+tags: Project
+keywords: HTML, XML, RSS, AJAX, Perl, Netscape Web Server, Sybase database
 
 draft-status:
 

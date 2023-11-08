@@ -6,8 +6,7 @@ title-url: https://tschopp.net/@bots
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'An application of the Procedural Text Generation system to create a new
-    game for you to play every hour.'
+excerpt: 'An application of the Procedural Text Generation system to create a new game for you to play every hour.'
 
 source:
 source-url:

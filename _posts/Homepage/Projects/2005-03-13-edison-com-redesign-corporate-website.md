@@ -26,8 +26,8 @@ seo-description: Details of the Edison.com redesign project, highlighting the co
 categories: 
 - Projects
 - Home
-tags:
-keywords:
+tags: Project
+keywords: ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML, JavaScript
 
 draft-status:
 
