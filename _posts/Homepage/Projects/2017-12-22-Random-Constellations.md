@@ -6,13 +6,12 @@ title-url: https://random-constellations.tedt.org
 subtitle:
 subtitle-url:
 quote:
-excerpt: "An application I threw together to output a bunch of Procedurally generated\
-    \ star constellations. \n"
+excerpt: "An application I threw together to output a bunch of Procedurally generated star constellations."
 source:
 source-url:
 call-to-action:
 
-date: 2018-06-03 07:11:42-07:00
+date: 2017-12-22 07:11:42-07:00
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -21,10 +20,8 @@ author:
 
 bullets:
 
-description: "An application I threw together to output a bunch of Procedurally generated\
-    \ star constellations. \n"
-seo-description: "An application I threw together to output a bunch of Procedurally\
-    \ generated star constellations. \n"
+description: "An application I threw together to output a bunch of Procedurally generated star constellations."
+seo-description: "An application I threw together to output a bunch of Procedurally generated star constellations."
 
 categories: 
 - Projects
@@ -58,7 +55,7 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 15
+order: 14
 ---
 
 **Overview:** An application I threw together to output a bunch of Procedurally generated star constellations.
