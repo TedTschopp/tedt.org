@@ -47,7 +47,7 @@ coordinates:
     latitude: 34.024550
     longitude: -117.767693
 
-image: /wp-content/uploads/2013/06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
+image: /img/2013-06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 image-alt:
 image-author:
 image-author-URL:

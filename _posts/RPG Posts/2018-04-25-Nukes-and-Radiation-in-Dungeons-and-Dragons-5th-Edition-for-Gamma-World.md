@@ -47,7 +47,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2018/04/Third-Edition.jpg
+image: /img/2018-04/Third-Edition.jpg
 image-alt:
 image-author: Keith Parkinson
 image-author-URL: https://www.keithparkinson.com/

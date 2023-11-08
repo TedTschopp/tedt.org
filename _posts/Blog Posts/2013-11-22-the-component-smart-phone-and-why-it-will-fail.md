@@ -48,7 +48,7 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /wp-content/uploads/2013/11/modules-283e329ee51bbee11f4765c3501e7d1b.jpg
+image: /img/2013-11/modules-283e329ee51bbee11f4765c3501e7d1b.jpg
 image-alt:
 image-author:
 image-author-URL:

@@ -39,7 +39,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2018/04/The-Leviathan.jpg
+image: /img/2018-04/The-Leviathan.jpg
 image-alt:
 image-author: Larry Elmore
 image-author-URL: http://www.larryelmore.com/

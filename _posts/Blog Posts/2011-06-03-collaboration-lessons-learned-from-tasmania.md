@@ -46,7 +46,7 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /wp-content/uploads/2011/06/800px-tessellated_pavement_sunrise_landscape.jpg
+image: /img/2011-06/800px-tessellated_pavement_sunrise_landscape.jpg
 image-alt:
 image-author:
 image-author-URL:

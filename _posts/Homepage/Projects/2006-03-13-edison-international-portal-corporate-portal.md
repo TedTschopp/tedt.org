@@ -40,7 +40,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2011/02/edisonintl_2dlogon.jpg
+image: /img/2011-02/edisonintl_2dlogon.jpg
 image-alt:
 image-author:
 image-author-URL:

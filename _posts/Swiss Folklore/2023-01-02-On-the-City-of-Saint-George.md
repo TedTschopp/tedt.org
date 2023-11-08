@@ -49,7 +49,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2023/01/02/merian-switzerland-stein-am-rhein.jpg
+image: /img/2023-01/merian-switzerland-stein-am-rhein.jpg
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
     with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
     of Matthaeus Merian.

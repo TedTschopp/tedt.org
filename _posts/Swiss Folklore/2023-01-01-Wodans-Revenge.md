@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2023-01-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
+image: /img/2023-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.png
 image-alt: Painting of Wodan coming down the a large river sitting on a water horse
     holding a battle sword in one hand and the globe in the other the river floods
     the bank and devastates a medieval city. In the style of antichrist, dark yellow

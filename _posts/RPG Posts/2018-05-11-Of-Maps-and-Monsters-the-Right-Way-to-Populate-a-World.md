@@ -39,7 +39,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
+image: /img/2018-05/Ebstorfer-stich2.jpg
 image-alt: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious bishoprics, and text describing the world's creation, animals, and historical elements. 
 image-author: Gervase of Ebstorf
 image-author-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf

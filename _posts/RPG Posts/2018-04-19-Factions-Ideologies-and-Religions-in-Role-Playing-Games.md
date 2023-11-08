@@ -51,7 +51,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2018/04/Sunset on this ideology.jpg
+image: /img/2018-04/Sunset on this ideology.jpg
 image-alt: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City
 image-author: Giorgio Minguzzi 
 image-author-URL: https://www.flickr.com/photos/iz4aks/4005020863

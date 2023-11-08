@@ -50,7 +50,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /wp-content/uploads/2015/01/7348035690_d483c5e3e0_o.jpg
+image: /img/2015-01/7348035690_d483c5e3e0_o.jpg
 image-alt:
 image-author:
 image-author-URL:

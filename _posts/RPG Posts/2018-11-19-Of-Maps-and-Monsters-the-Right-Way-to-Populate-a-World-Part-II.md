@@ -42,7 +42,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2018/05/Ebstorfer-stich2.jpg
+image: /img/2018-05/Ebstorfer-stich2.jpg
 image-alt:
 image-author:
 image-author-URL:

@@ -43,7 +43,7 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /wp-content/uploads/2013/06/color-eye.png
+image: /img/2013-06/color-eye.png
 image-alt:
 image-author:
 image-author-URL:

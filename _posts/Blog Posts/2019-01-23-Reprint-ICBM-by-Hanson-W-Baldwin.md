@@ -48,7 +48,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /wp-content/uploads/2019/01/23/ICBM.jpg
+image: /img/2019-01/ICBM.jpg
 image-alt: Picture of an ICBM
 image-author:
 image-author-URL:
