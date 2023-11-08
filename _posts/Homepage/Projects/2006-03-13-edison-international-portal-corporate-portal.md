@@ -19,6 +19,9 @@ author:
     url: https://tedt.org
 
 bullets:
+- Initiated a comprehensive project to create a corporate portal that consolidates all existing internal websites and previous portal initiatives, with a critical requirement for SAP integration, leading to the selection of the SAP Portal as the foundational technology.
+- Employed a range of technologies, including SAP Portal, Java, XHTMLB, and HTMLB, to build a cohesive and efficient portal system that aligns with the company's operational needs.
+- Fulfilled the roles of Architect, Solution Engineer, and Developer, ensuring that the project met its main business objective of integrating seamlessly with SAP systems.
 
 description: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.
 seo-description: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.

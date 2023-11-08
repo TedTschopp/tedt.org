@@ -19,6 +19,9 @@ author:
     url: https://tedt.org/
 
 bullets:
+- Developed an application designed to procedurally generate and output a series of star constellations, showcasing the ability to quickly create engaging digital content.
+- Utilized a combination of Twitter and Mastodon bots, along with JavaScript and HTML, to automate and disseminate the generated constellations across social platforms.
+- Operated as a Full Stack developer, managing both the front-end and back-end development processes to bring the creative concept to fruition.
 
 description: "An application I threw together to output a bunch of Procedurally generated star constellations."
 seo-description: "An application I threw together to output a bunch of Procedurally generated star constellations."

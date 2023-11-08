@@ -19,6 +19,9 @@ author:
     url: https://tedt.org/
 
 bullets:
+- Spearheaded the integration of internal web platforms into a unified corporate portal, focusing on seamless linkage with the corporate directory and the integration of Factiva for enhanced news and reporting capabilities.
+- Adapted to corporate shifts following the acquisition of Plumtree by BEA Software and impending ERP decisions, ensuring the project's alignment with organizational strategy and technology standards.
+- Took on the roles of Solution Engineer and Developer, working with technologies such as Plumtree, C#, B.NET, and J2EE, successfully engaging 500 users at the project's peak.
 
 description: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
 seo-description: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
@@ -37,7 +40,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /wp-content/uploads/2011/02/plumtree_2dportal_1.gif
+image: /wp-content/uploads/2011/02/plumtree_2dportal_1-768x383.png
 image-alt:
 image-author:
 image-author-URL:
