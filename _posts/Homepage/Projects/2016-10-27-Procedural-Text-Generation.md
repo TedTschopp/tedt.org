@@ -6,9 +6,7 @@ title-url: https://randomtables.tedt.org
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'An application that generates text using procedural methods.
-
-    '
+excerpt: 'An application that generates text using procedural methods.'
 source:
 source-url:
 call-to-action:

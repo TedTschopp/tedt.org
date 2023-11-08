@@ -27,7 +27,7 @@ categories:
 - Projects
 - Home
 tags: Project
-keywords:
+keywords: Twitter and Mastodon Bots, JavaScript and HTML
 
 draft-status:
 
