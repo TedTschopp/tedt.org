@@ -60,10 +60,14 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 10
+order: 14
 ---
 
-An application of the Procedural Text Generation system to create a new game for you to play every hour.
+**Overview:** An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
 * Need ideas for your board game night. Look no further. We have you covered!
 * Uses tables from the Procedural Text Generation system I am using for computerized fiction
+
+**Technology Used:** Twitter and Mastodon Bots, JavaScript and HTML
+
+**Role:** Full Stack

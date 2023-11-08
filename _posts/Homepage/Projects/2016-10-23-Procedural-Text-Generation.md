@@ -62,11 +62,15 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 9
+order: 13
 ---
 
-An application that generates text using procedural methods.
+**Overview:** An application that generates text using procedural methods.
 
 * A work in progress to help build an automated story telling computer
 * Over 100 tables of various objects and qualities.
 * To Do: Look into Mustache engine
+
+**Technology Used:** JavaScript and HTML
+
+**Role:** Full Stack

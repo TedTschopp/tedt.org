@@ -20,8 +20,8 @@ author:
 
 bullets:
 
-description:
-seo-description:
+description: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
+seo-description: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
 
 categories: 
 - Projects
@@ -37,7 +37,7 @@ coordinates:
     latitude:
     longitude:
 
-image: wp-content/uploads/2011/02/plumtree_2dportal_1.gif
+image: /wp-content/uploads/2011/02/plumtree_2dportal_1.gif
 image-alt:
 image-author:
 image-author-URL:
@@ -55,10 +55,10 @@ year-the-event-took-place:
 
 mathjax:
 
-order:
+order: 10
 ---
 **Overview:** This project was an effort by the company to address our needs for a corporate portal which would integrate all outstanding internally facing web sites.  My participation was the integration layers with our corporate directory as well as integration with Factiva for news and reporting about our company. With the acquisition of Plumtree by BEA software and the ERP decisions on the horizon, the company rethought the Plumtree decision.  At the height of the project, the site was being used by 500 users.
   
 **Technology Used:** Plumtree, C#, B.NET, J2EE
   
-**Role:** Developer
+**Role:** Solution Engineering, and Developer

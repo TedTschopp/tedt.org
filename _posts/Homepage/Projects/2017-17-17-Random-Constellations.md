@@ -58,7 +58,11 @@ year-the-event-took-place:
 
 mathjax:
 
-order: 11
+order: 15
 ---
 
-An application I threw together to output a bunch of Procedurally generated star constellations.
+**Overview:** An application I threw together to output a bunch of Procedurally generated star constellations.
+
+**Technology Used:** Twitter and Mastodon Bots, JavaScript and HTML
+
+**Role:** Full Stack

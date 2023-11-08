@@ -20,13 +20,14 @@ author:
 
 bullets:
 
-description:
-seo-description:
+description: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.
+seo-description: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.
 
-categories:
+categories: 
 - Projects
+- Home
 tags:
-keywords:
+keywords: Edison International, corporate portal, SAP Portal, Java, XHTMLB, HTMLB
 
 draft-status:
 
@@ -36,7 +37,7 @@ coordinates:
     latitude:
     longitude:
 
-image: wp-content/uploads/2011/02/edisonintl_2dlogon.jpg
+image: /wp-content/uploads/2011/02/edisonintl_2dlogon.jpg
 image-alt:
 image-author:
 image-author-URL:
@@ -54,10 +55,10 @@ year-the-event-took-place:
 
 mathjax:
 
-order:
+order: 11
 ---
 **Overview:** This project was an effort by the company to address our needs for a corporate portal which would integrate all outstanding internally facing web sites.  We were also to integrate all previous poral projects into this program.  The main business driver for this project was that the portal had to integrate into SAP, therefore the SAP Portal was choosen as the technology platform.
 
 **Technology Used:** SAP Portal, Java, XHTMLB, and HTMLB
 
-**Role:** Systems Engineer
+**Role:** Architect, Solution Engineer, Developer
