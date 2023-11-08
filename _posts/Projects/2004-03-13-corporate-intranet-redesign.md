@@ -25,6 +25,7 @@ seo-description:
 
 categories:
 - Projects
+- Home
 tags:
 keywords:
 

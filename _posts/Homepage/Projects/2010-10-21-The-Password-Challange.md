@@ -26,7 +26,9 @@ bullets:
 description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 seo-description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 
-categories: Home
+categories: 
+- Projects
+- Home
 tags: Project
 keywords:
 
