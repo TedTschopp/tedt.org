@@ -30,7 +30,9 @@ seo-description: 'An application that generates text using procedural methods.
 
     '
 
-categories: Home
+categories: 
+- Projects
+- Home
 tags: Project
 keywords:
 

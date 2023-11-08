@@ -28,7 +28,9 @@ bullets:
 description: An application of the Procedural Text Generation system to create a new game for you to play every hour.
 seo-description: An application of the Procedural Text Generation system to create a new game for you to play every hour.
 
-categories: Home
+categories: 
+- Projects
+- Home
 tags: Project
 keywords:
 

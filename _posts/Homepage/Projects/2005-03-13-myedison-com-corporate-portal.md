@@ -23,8 +23,9 @@ bullets:
 description:
 seo-description:
 
-categories:
+categories: 
 - Projects
+- Home
 tags:
 keywords:
 

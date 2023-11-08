@@ -26,7 +26,9 @@ description: "An application I threw together to output a bunch of Procedurally 
 seo-description: "An application I threw together to output a bunch of Procedurally\
     \ generated star constellations. \n"
 
-categories: Home
+categories: 
+- Projects
+- Home
 tags: Project
 keywords:
 
