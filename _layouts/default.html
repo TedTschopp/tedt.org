@@ -23,39 +23,13 @@
 
     <!-- START OF CSS INCLUDE -->
 
-    <!-- Bootstrap CSS-->
-    {% include css-bootstrap.html %}
+    {% include all-css-includes.html %}
 
-    <!-- Custom Fonts -->
-    {% if this_is_a_draft == true %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    {% endif %}
+    <!-- Mastodon Stuff-->
+    <link rel="stylesheet" href="{{site.siteurl}}/mastodon/mastodon-timeline.css">
+    <script src='{{site.siteurl}}/mastodon/mastodon-timeline.js'></script>
 
-    <!-- Custom CSS -->
-    {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
-    <link rel="stylesheet"
-          href="css/main-landing-page.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    <link rel="stylesheet"
-          href="css/home-page.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/timeline.css">
-          {% else %}    
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/blog-post.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/webmention.css" >
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/solarized-dark.css" >
-    {% endif %}
 
-    <!-- Add this line to the top of your HTML file -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
       .Dohring-watermark, .TORC-watermark, .SCE-watermark {
         position: relative;
@@ -88,20 +62,6 @@
           background-size: 50% ; /* or contain */
       }
     </style>
-
-    {% if this_is_a_draft == true %}
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/draft-blog-post.css" >
-    {% endif %}
-
-    <!-- CSS for the link-tree -->
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/Link-Tree.css" 
-          type="text/css">
-
-    <!-- Mastodon Stuff-->
-    <link rel="stylesheet" href="{{site.siteurl}}/mastodon/mastodon-timeline.css">
-    <script src='{{site.siteurl}}/mastodon/mastodon-timeline.js'></script>
 
     <!-- END OF CSS INCLUDE -->
 
