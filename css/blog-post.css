@@ -426,6 +426,11 @@ figcaption {
 	color: #8b0000;
 }
 
+.folklore sup a {
+	color: #8b0000;
+	text-decoration: none;
+}
+
 .folklore b, .notes th {
 	color: #8b0000;
 }
@@ -433,7 +438,6 @@ figcaption {
 .folklore table {
   border: 3px solid #8b0000;
   border-collapse: collapse;
-
 }
 
 .folklore th, .notes td {
@@ -448,7 +452,6 @@ figcaption {
 
 .folklore p {
 	color: #3B4248;
-
 }
 
 
@@ -547,6 +550,12 @@ figcaption {
 	color: #8b0000;
 }
 
+
+.reference sup a {
+	color: #8b0000;
+	text-decoration: none;
+}
+
 .reference b, .notes th {
 	color: #8b0000;
 }
@@ -643,6 +652,11 @@ figcaption {
 	font-style: italic;
 	font-size: 1.35rem;
 	color: #8b0000;
+}
+
+.notes sup a {
+	color: #8b0000;
+	text-decoration: none;
 }
 
 .notes b, .notes th {
