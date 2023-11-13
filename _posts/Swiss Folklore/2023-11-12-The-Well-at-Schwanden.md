@@ -81,6 +81,7 @@ order:
 > # The Well at Schwanden
 
 In the Schächental Valley, it is impossible to sink a well, not even with mercury[^1]. In olden times, there was no well water there. Therefore, the people began to pray to St. Anna [^2], the patron saint of the chapel. One evening, a beggar came and asked for a place to stay overnight. The people kindly took him in, but said that if he should be thirsty, he would have to provide water himself in God's name, as they had none in the house. He said that by tomorrow, they would have water. In the early morning, the beggar had already left, and next to the house flowed a magnificent little fountain with clear water, which subsequently never dried up and never froze, even in winter.
+{: .folklore }
 
 [^1]: Sinking a well with mercury is not a practical or environmentally sound method. In fact, it's not used in modern well construction. The mention of mercury in the folktale "Der Brunnen zu Schwanden" is likely metaphorical or symbolic, illustrating the difficulty or impossibility of sinking a well in that particular area. In reality, mercury is a toxic heavy metal, and its use in any environmental or construction context would be hazardous. Traditional well construction involves drilling or digging into the ground to access groundwater.  The folktale likely uses the concept of mercury in a well to convey a sense of a miraculous event, as mercury, being dense and liquid at room temperature, would not be useful for well sinking in any practical sense.
 
