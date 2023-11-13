@@ -114,9 +114,18 @@
 
                         {% if page.image-credits-artist %}
                             {% assign image_credits = page.image-credits-artist %}
+                        {% elsif page.image-author %}
+                            {% assign image_credits = page.image-author %}
                         {% else %}
                             {% assign image_credits = "Unknown" %}
                         {% endif %}
+
+                        {% if page.image-credits-artist-URL %}
+                            {% assign image_credits_URL = page.image-credits-artist %}
+                        {% elsif page.image-author-URL %}
+                            {% assign image_credits_URL = page.image-author %}
+                        {% endif %}
+
 
                         {% if page.image %}
                             {% if page.image contains "http" %}
@@ -133,7 +142,11 @@
                             <figcaption>
 
                                 {% if page.image-credits-URL %}
-                                    <a target="_new" href="{{page.image-credits-URL}}">"{{image_credits_title}}" by {{image_credits}}</a>
+                                    {% if image_credits_URL contains "http" %}
+                                        <a target="_new" href="{{page.image-credits-URL}}">"{{image_credits_title}}"  by <a target="_new" href="{{image_credits_URL}}">{{image_credits}}</a>
+                                    {% else %}
+                                        <a target="_new" href="{{site.siteurl}}{{image_credits_URL}}">"{{image_credits_title}}" by {{image_credits}}</a>
+                                    {% endif %}
                                 {% else %}
                                     "{{image_credits_title}}" by {{image_credits}}
                                 {% endif %}
