@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: The Well at Schwanden
+title: The Well in the Schächental Valley
 subtitle: A Swiss Folktale from Uri
 quote: 
 excerpt: This folktale from the Schächental valley in Uri tells the story of how a miraculous well came to be, thanks to the intervention of a mysterious traveler and the faith of the local people.
@@ -54,7 +54,7 @@ image-credits:
 image-credits-URL: 
 image-credits-artist: 
 image-credits-artist-URL: 
-image-credits-title: "The Well at Schwanden"
+image-credits-title: The Schächental Valley
 image-description:  The Schächental Valley
 image-title:  The Schächental Valley
 
