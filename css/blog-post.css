@@ -288,7 +288,7 @@ figcaption {
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-	font-family: 'Lovers Quarrel', cursive;
+	font-family: 'coelnische_current_fraktur';
 	src: url('https://www.tedt.org/fonts/COELCF__.TTF') format('truetype');
 	/* FANCY CAPITAL LETTERS AND GOOD TITLE FONT FOR LOWER CASE */
 	font-style: normal;
@@ -373,8 +373,8 @@ figcaption {
 	font-size: 1.5rem;
 }
 
-.folklore p:first-letter {
-	font-family: 'coelnische_current_fraktur', serif;
+.folklore p:first-of-type::first-letter {
+	font-family: 'Lovers Quarrel', cursive;
 	float: left;
 	font-size: 5rem;
 	line-height: 0.65;
