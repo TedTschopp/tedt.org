@@ -6,7 +6,7 @@ layout: post
 title: 
 subtitle:
 quote:
-excerpt: Whenever people heard a yodel from the 'Beerdli,' bad weather is coming.
+excerpt: 
 source:
 source-url:
 call-to-action:
@@ -36,13 +36,13 @@ location:
     city:
     country:
     name:
-    on-map: Betten (46.7758° N, 8.5942° E)
-    place-names: Pörtlialp, Uri, Switzerland
+    on-map: 
+    place-names: 
     state:
     zip:
 coordinates:
-    latitude: '46.7758'
-    longitude: '8.5942'
+    latitude: 
+    longitude:
 
 image: 
 image-alt: 
@@ -50,13 +50,13 @@ image-author:
 image-author-URL:
 image-credits:
 image-credits-URL:
-image-credits-artist: Ted Tschopp and Midjourney
+image-credits-artist: 
 image-credits-artist-URL:
-image-credits-title: The Weatherman in Pörtlialp
+image-credits-title: 
 image-description:
 image-title:
 
-monster-or-magical-or-religious-ideas: Mysterious Weatherman
+monster-or-magical-or-religious-ideas: 
 year-the-event-took-place:
 permalink: /Swiss-Folklore/:title:output_ext
 
