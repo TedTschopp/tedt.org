@@ -9,8 +9,7 @@ source: Josef Müller, Sage, Uri
 source-url: [maerchen.ch](https://www.maerchen.ch)
 call-to-action: Discover the magic and wisdom in Swiss folktales.
 
-date: YYYY-MM-DD
-update: YYYY-MM-DD
+date: 2023-11-13 07:55:47
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
