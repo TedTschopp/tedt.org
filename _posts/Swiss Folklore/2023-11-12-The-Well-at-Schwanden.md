@@ -1,12 +1,12 @@
 ---
 layout: post
 
-title: "The Well at Schwanden"
+title: The Well at Schwanden
 subtitle: A Swiss Folktale from Uri
-quote: "A miraculous well that never dries, even in winter."
+quote: 
 excerpt: This folktale from the Schächental valley in Uri tells the story of how a miraculous well came to be, thanks to the intervention of a mysterious traveler and the faith of the local people.
-source: Josef Müller, Sage, Uri
-source-url: [maerchen.ch](https://www.maerchen.ch)
+source: 
+source-url: 
 call-to-action: Discover the magic and wisdom in Swiss folktales.
 
 date: 2023-11-13 07:55:47
@@ -25,6 +25,8 @@ seo-description: Explore the enchanting story of "The Well at Schwanden", a Swis
 
 categories:
 - Folklore
+
+
 tags: [Swiss Folklore, Mystical Wells, Alpine Tales, Uri Legends]
 
 keywords: Swiss Folklore, Well at Schwanden, Alpine Legends, Miraculous Wells
