@@ -6,6 +6,13 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
 
+/* Alternate to Optimum */ 
+ @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+/* Font to use as the opening letter for the Folklore font */
+ @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+
  @font-face {
 	font-family: 'IrwinAllen';
 	src: url('https://www.tedt.org/fonts/IrwinAllen.woff2') format('woff2'),
@@ -88,7 +95,6 @@
 	font-weight: Bold;
 	font-style: italic;
  }
-
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -282,7 +288,7 @@ figcaption {
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-	font-family: 'coelnische_current_fraktur';
+	font-family: 'Lovers Quarrel', cursive;
 	src: url('https://www.tedt.org/fonts/COELCF__.TTF') format('truetype');
 	/* FANCY CAPITAL LETTERS AND GOOD TITLE FONT FOR LOWER CASE */
 	font-style: normal;
@@ -374,7 +380,7 @@ figcaption {
 	line-height: 0.65;
 	margin: 0.1em 0.1em 0.2em 0;
 	color: #8b0000;
-   }
+}
 
 .folklore h1 {
 	font-family: 'RegentUNZ', serif;
