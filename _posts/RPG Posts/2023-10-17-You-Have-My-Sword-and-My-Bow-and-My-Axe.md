@@ -342,7 +342,7 @@ These weapons are designed to be thrown or fired, suitable for combat at distanc
 | I can hit it with a rock | Distance for throwing objects             | Medium Range               | up to about 40 meters   | up to about 120 feet   | 24 squares                               | (Typical long range weapon attack)                                                                         |
 | I can see it             | Clear visibility, but too far to interact | Long Range                 | up to about 100 meters  | up to about 300 feet   | 60 squares                               | (A typical long range spell attack or high tech weapon)                                                    |
 | I can hear it            | Audible but too far for visual contact    | Extreme                    | up to about 1 kilometer | up to about 3,000 feet | 600 squares                              | (Basically anything beyond Long range, within eyesight, and reasonable distance for the given weapon used) |
-{: .well .table .table-hover .table-striped }
+{: .well .table .table-striped }
 
 **Range Categories and Penalties**  
 Weapons have specified ranges, divided into categories as above. Each category has associated modifiers for attack rolls. Attacks can be made beyond the weapons stated range, increase the difficulty. The following traits apply:
