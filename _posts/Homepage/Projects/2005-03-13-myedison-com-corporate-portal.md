@@ -40,7 +40,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2011-02/plumtree_2dportal_1-768x383.png
+image: /img/2011-02/plumtree_2dportal_1.png
 image-alt:
 image-author:
 image-author-URL:
