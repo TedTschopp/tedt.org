@@ -180,6 +180,8 @@ When you are creating a character you can create a character several ways.
 | 2  | 23 - 27 |
 | 3  | 28 - 30 |
 | 4  | 31 - 32 |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Aspects
 
@@ -191,6 +193,8 @@ All beings have four aspects of their existence. These define the highest catego
 |    Academic | (-4 thru 4)  |
 |    Mystical | (-4 thru 4)  |
 |   Emotional | (-4 thru 4)  |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Characteristics
 
@@ -210,6 +214,8 @@ All characters have certain basic characteristics that define what they can do. 
 | Manners             | (-4 thru 4)  |
 | Personality         | (-4 thru 4)  |
 | Identity            | (-4 thru 4)  |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Knowledge Areas
 
@@ -302,6 +308,8 @@ A Character may end up with more than one Community Hallmark, the one rule gover
 |    Temperate | You are able to exercise self-control and avoid excess.                                                                                 |    Indulgent    | You enjoy the pleasures of life in moderation, but can sometimes lack the self-control necessary to avoid overindulging in them.                                                                                                                                                                                                                                              |
 |     Trusting | You are willing to believe in the honesty and reliability of others, and to extend trust to them.                                       |   Suspicious    | You are cautious and careful when dealing with others, and do not easily accept what they say or do.                                                                                                                                                                                                                                                                          |
 |     Valorous | You are brave and courageous, showing great courage.                                                                                    |    Cowardly     | You are cautious and careful, avoiding unnecessary risks.                                                                                                                                                                                                                                                                                                                     |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Gear
 
@@ -327,6 +335,8 @@ If you make multiple purchases below your spending threshold on the same day, th
 |                       6 | Considerable wealth and financial security.             | Expansive houses, penthouses, or luxury real estate.          | Personal vehicles, private jets or first-class flights.  | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
 |                       7 | Abundant wealth, influential in society.                | Mansions, private estates, or luxury properties.              | Personal vehicles, private jets or chartered yachts.     | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
 |                       8 | Extraordinary wealth, among the richest in the world.   | Lavish estates, private islands, or extravagant residences.   | Personal vehicles, private jets, yachts, or helicopters. | Have the means to handle day-to-day expenses. Have the means to make an unexpected expense at any time                                                               |
+{: .well .table .table-striped }
+
 
 During the game, your character may receive a substantial sum of money as a reward. Treat such windfalls as Assets.
 
@@ -411,6 +421,8 @@ You have the opportunity to utilize the wealth indicated by your Asset rating wh
 |  200   | Loot from Trolls, including valuable and scarce objects.                                                       |
 |  500   | A comprehensive database of government secrets, exposing the hidden truths behind the city's power structures. |
 | 1,000  | fragment of a legendary extraterrestrial relic said to possess immense cosmic power.                           |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Carrying and Transporting Assets
 
@@ -448,6 +460,8 @@ There are multiple avenues for you to acquire a Property. You might inherit one 
 |    Superior |      6       | Advanced Research Facility, Renowned Detective Agency, Grand Airship, Large Inn, Supernatural Research Center, Fortified City                                                        |
 |    Thriving |      7       | Asteroid Mining Operation, Nationally Investigation Bureau with Offices in multiple Locations, Steam-Powered Factory Complex, Merchant's Guild Hall, Cursed Village, Thriving Colony |
 |     Opulent |      8       | Planetary Trade Hub, Mansion with Secret Passages, Grand Steampunk Mansion, Large Estate with Gold Mine, Haunted Palace, Rebuilt Metropolis                                          |
+{: .well .table .table-striped }
+
 
 The worth of your Property is quantified in game terms by a numerical rating that ranges from 1 to 8. This rating is similar to the Target Number for an action, where a lower number is generally more desirable than a higher one. For instance, a struggling farm on a rocky hillside might have a rating of 1, while a prosperous farm in an easily accessible, fertile valley could have a rating of 6.
 
@@ -577,6 +591,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 | The Skirmisher    | David              | Biblical figure who used a sling to defeat the giant Goliath.                                                     | Quick and agile, uses ranged combat to harass and disorient enemies, often equipped with lighter ranged weapons.                |
 | The Mystic Archer | Legolas (again)    | Also skilled in the use of Elven magic to enhance his archery.                                                    | Blends magic with ranged combat, enchanting arrows or bullets with various effects or summoning projectiles.                    |
 | The Survivalist   | Katniss Everdeen   | Protagonist of "The Hunger Games," skilled in archery and resourceful in crafting her own ammunition.             | Jack-of-all-trades in ranged combat, proficient with anything they can get their hands on, often crafting their own ammunition. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table for Ranged Combat skill and examples for each level of difficulty
 
@@ -593,6 +609,8 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 | Heroic            | Sniping a target accurately from a distance of over 1 mile away                                                                                                                                                           |
 | Nearly Impossible | Hitting multiple small, fast-moving targets in succession from a distance of over 1 mile, under adverse environmental conditions                                                                                          |
 | Godly             | Making an impossible shot that defies physics and logic, such as ricocheting a bullet off multiple surfaces to hit a target hidden behind cover, while blindfolded and only guided by the sound of the target's movement. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Athletics Knowledge Areas
 
@@ -655,6 +673,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 | The Jumper           | Michael Jordan           | Former professional basketball player known for his incredible leaping ability.                               | Specializes in leaping great distances or heights, found in sports like basketball or in adventurous settings.                   |
 | The Martial Artist   | Bruce Lee                | Martial artist and actor known for his incredible athleticism and combat skills.                              | Primarily focused on combat but embodies a high level of athletic skill, trained in complex movements and techniques.            |
 | The Survivalist      | Bear Grylls              | A British adventurer known for his survival television series, demonstrating a wide range of athletic skills. | Jack-of-all-trades in physical exertion, resourceful and adaptable, applies athletic skills in a variety of survival situations. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table for Athletics skill and examples for each level of difficulty
 
@@ -671,6 +691,8 @@ Brienne's athletic abilities add significant depth to her character. They make h
 | Heroic            | Climb a shear surface or wall                                                                                                                                                                                                                                                             |
 | Nearly Impossible | Swim in rough waters while wearing full metal armor                                                                                                                                                                                                                                       |
 | Godly             | Swim upstream in rough waters while wearing full metal armor while pulling a rowboat without capsizing the passengers in the rowboat.                                                                                                                                                     |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Melee Combat Knowledge Areas
 
@@ -733,6 +755,8 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 | The Rogue         | Garrett          | Protagonist of the "Thief" video game series, skilled in stealth and uses a dagger for quick eliminations.   | Skilled in stealth and subterfuge, uses melee combat for quick, decisive strikes, prefers easily concealed weapons. |
 | The Swashbuckler  | Jack Sparrow     | A character from the "Pirates of the Caribbean" series, known for his daring and acrobatic swordplay.        | All about flair and style, often uses acrobatics in conjunction with swordplay, daring and adventurous.             |
 | The Weapon Master | Aragorn          | A character from "The Lord of the Rings," proficient with a wide variety of melee weapons.                   | Jack-of-all-trades in melee weapons, proficient with a wide variety of arms.                                        |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Melee Combat skill and examples for each level of difficulty
 
@@ -749,6 +773,8 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 | Heroic            | Hit someone in the dark                                                                                                                           |
 | Nearly Impossible | Break metal armor with a common one-handed weapon                                                                                                 |
 | Godly             | Break metal armor with a stick, twig, or reed.                                                                                                    |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Agility Characteristics
 
@@ -815,6 +841,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 |            The Ghost | The Invisible Man | A character from H.G. Wells' novel, who becomes literally invisible due to a scientific experiment.       | Takes stealth to a supernatural level, often incorporating magical or technological means to become invisible.        |
 | The Guerilla Fighter |    Che Guevara    | A revolutionary known for his guerrilla warfare tactics against more powerful forces.                     | Uses stealth for hit-and-run tactics against a more powerful enemy, experts in ambushes and sabotage.                 |
 |    The Escape Artist |      Houdini      | A famous magician and escape artist known for his ability to get out of seemingly impossible situations.  | Specializes in getting out of tight spots, a master of evading capture and slipping through the cracks.               |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Stealth skill and examples for each level of difficulty
 
@@ -831,6 +859,8 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 | Heroic            | Hide in plain sight                                                                                |
 | Nearly Impossible | Blend in and disappear while the center of attention on stage                                      |
 | Godly             | Vanish while you are the center of attention of trained observers.                                 |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Acrobatics Knowledge Areas
 
@@ -895,6 +925,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 |          The Capoeirista |   Mestre Bimba    | A Capoeira master who formalized the Brazilian martial art, known for its acrobatic and dance-like moves. | Practices Capoeira, a Brazilian martial art that incorporates dance, acrobatics, and music.                           |
 |          The Free Runner |  Daniel Ilabaca   | A well-known free runner who uses natural obstacles like trees and rocks for his acrobatic feats.         | Takes acrobatics outdoors, using natural obstacles to navigate through wilderness settings.                           |
 |               The Jester | Till Eulenspiegel | A folklore character from Germany known for his pranks and acrobatic skills.                              | Uses acrobatics for entertainment, often juggling or tumbling to amuse crowds, may use skills for theft or espionage. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Acrobatics skill and examples for each level of difficulty
 
@@ -911,6 +943,8 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 | Heroic            | Dodge a melee attack without any combat training.                                                                                                       |
 | Nearly Impossible | Walk across a thin rope                                                                                                                                 |
 | Godly             | Walk across a strand of silk in a the middle of a raging storm                                                                                          |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Sleight of Hand Knowledge Areas
 
@@ -972,6 +1006,8 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 |        The Swindler |   The Music Man   | A character from the musical "The Music Man," who cons a town into buying musical instruments.              | Specializes in confidence tricks and schemes, can sell seemingly valuable items that turn out to be worthless.        |
 | The Prestidigitator |   Penn & Teller   | A magician duo known for their skill in manipulating small objects and revealing the secrets behind tricks. | Master of manipulating small objects with incredible precision, performs classic magic tricks.                        |
 |          The Forger |     Tom Keen      | A character from the TV series "The Blacklist," known for his skill in forging documents.                   | Specializes in creating convincing counterfeit documents, signatures, and works of art.                               |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Sleight of Hand skill and examples for each level of difficulty
 
@@ -988,6 +1024,8 @@ The Artful Dodger's mastery of sleight of hand adds depth and complexity to his 
 | Heroic            | Playing the Cup and Ball game with Glass cups and glowing balls and still fooling the victim.                                                           |
 | Nearly Impossible | Remove a money pouch from a money belt that is worn under the victims small-cloths.                                                                     |
 | Godly             | Remove a money pouch from a money belt that is worn under a watchful victims small-cloths who knows you are going to steal from them                    |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Stamina Characteristics
 
@@ -1052,6 +1090,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 |    The Chauffeur |     Alfred Pennyworth      | Batman's butler and chauffeur, known for his discretion and professionalism.                 | Specializes in driving luxury vehicles, provides transportation for high-profile clients, discreet and professional. |
 |   The Submariner |        Captain Nemo        | A character from "20,000 Leagues Under the Sea," skilled in piloting the submarine Nautilus. | Skilled in maintaining and piloting submarines, understands complexities of underwater navigation.                   |
 |     The Helmsman |          Mr. Sulu          | A character from "Star Trek," responsible for steering the starship Enterprise.              | Specializes in the navigation of sailing ships or starships, responsible for steering the vessel.                    |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Drive/Ride/Pilot skill and examples for each level of difficulty
 
@@ -1068,6 +1108,8 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 | Heroic            | Saddle an intelligent animal or vehicle that does not want to be saddled. Drive a coach across a deep body of water (by converting it to a boat)                                                                                    |
 | Nearly Impossible | Sail or pilot a vehicle on treacherous terrain it wasn't made for (a rowboat in a storm or a 2 wheel drive passenger vehicle in a swamp).                                                                                           |
 | Godly             | Sail or pilot a vehicle on terrain that doesn't make sense. For example, Row a boat up a hill. Drive a 2 wheeled passenger vehicle under a lake.                                                                                    |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Ruggedness Knowledge Areas
 
@@ -1131,6 +1173,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 |       The Blacksmith |      Hephaestus      | The Greek god of blacksmiths, known for forging weapons and armor in intense heat.                                 | Skilled in forging and working with metals, can withstand the intense heat of a forge.                                        |
 |         The Wrestler |   Andre the Giant    | A professional wrestler known for his incredible strength and ability to lift and throw opponents.                 | Excels in feats of strength and grappling, dominates in the ring or arena.                                                    |
 |        The Meditator |    Tibetan Monks     | Known for their ability to meditate in extreme conditions, maintaining focus and calm.                             | Blends physical and mental endurance, practices extreme meditation techniques while enduring physically demanding challenges. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Ruggedness skill and examples for each level of difficulty
 
@@ -1147,6 +1191,8 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 | Heroic            | Remain upright and stick your landing in a ready position to react after tumbling down the side of a steep incline.                                                                                                                                           |
 | Nearly Impossible | Win a drinking contest and then find your way home safely without first resting                                                                                                                                                                               |
 | Godly             | Win a drinking contest against a known drunk and a dance contest against a professional dancer. At the same time.                                                                                                                                             |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Unarmed Combat Knowledge Areas
 
@@ -1210,6 +1256,8 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 |   The Bare-Knuckle Champion | Brad Pitt as Mickey O'Neil (Snatch)  | A character known for his toughness in bare-knuckle boxing matches.                                          | Thrives in bare-knuckle fighting contests, known for toughness and ability to endure brutal brawls.     |
 |     The Martial Arts Master |                Ip Man                | A grandmaster of Wing Chun, Ip Man was known for his unbeatable skills and technique.                        | Reached the pinnacle of their chosen style, combines elements from different styles, nearly unbeatable. |
 | The Martial Arts Instructor |       Mr. Miyagi (Karate Kid)        | A karate master who passes on his wisdom and techniques to his young student, Daniel LaRusso.                | Knowledgeable teacher, passes on martial arts expertise to students, may run a dojo or train fighters.  |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Unarmed Combat skill and examples for each level of difficulty
 
@@ -1226,6 +1274,8 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 | Heroic            | Hit someone in the dark                                                                                                                                                                                                                                       |
 | Nearly Impossible | Break metallic armor with a punch or kick.                                                                                                                                                                                                                    |
 | Godly             | Break metallic armor with a touch                                                                                                                                                                                                                             |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Academic Aspects
 
@@ -1295,6 +1345,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 |             The Ethicist |    Immanuel Kant    | A German philosopher known for his work in ethics, particularly the concept of the categorical imperative.                                                                          | Specializes in ethical dilemmas and moral philosophy, provides guidance on making morally sound decisions.                                  |
 |            The Archivist |   Brother Cadfael   | A fictional medieval monk who serves as a herbalist and archivist, solving mysteries based on his extensive knowledge.                                                              | Skilled in cataloging and preserving information, organizes and accesses vast amounts of knowledge.                                         |
 |               The Oracle |    Delphi Oracle    | In ancient Greece, the Oracle of Delphi was consulted for prophecies and guidance. Known as Pythia, the high priestess would deliver cryptic messages believed to come from Apollo. | Possesses special insights into a society's past and future, provides cryptic prophecies and guidance.                                      |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Social Sciences skill and examples for each level of difficulty
 
@@ -1311,6 +1363,8 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 | Heroic            | Forecast the weather based on historical patterns                                                                                                                                                                                                             |
 | Nearly Impossible | Understand the lineage and ethnicity of someone based on observation only                                                                                                                                                                                     |
 | Godly             | Identify a common person using by their burial marker, tombstone, or other obscure information about them. Discover an ancient secret, no longer known to any mortals.                                                                                        |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Life Sciences Knowledge Areas
 
@@ -1375,6 +1429,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 | The Epidemiologist | Dr. Robert Neville (I Am Legend) | A military virologist trying to find a cure for a virus that has turned humans into mutants.                           | Focuses on disease outbreaks and public health, can track the spread of diseases.                          |
 |   The Exobiologist | Dr. Elizabeth Shaw (Prometheus)  | An archaeologist and scientist who studies extraterrestrial life forms during her mission on the spaceship Prometheus. | Studies extraterrestrial life forms and ecosystems, can identify alien organisms.                          |
 |      The Biohacker | Takeshi Kovacs (Altered Carbon)  | In a world where consciousness can be transferred between bodies, Kovacs uses biohacking to adapt to new "sleeves."    | Combines genetics with unconventional practices, can manipulate genes and biotechnology.                   |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Life Sciences skill and examples for each level of difficulty
 
@@ -1391,6 +1447,8 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 | Heroic            | Perform CPR on someone who has been unconscious for seven minutes. Treat someone with an extremely hazardous germ agent such as Ebola.                                                                                                                        |
 | Nearly Impossible | Attend to someone in critical condition who has died of physical body trauma                                                                                                                                                                                  |
 | Godly             | Reattach limbs, set broken bones, and grow them with herbal remedies and simple tools                                                                                                                                                                         |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Physical Sciences / Survival Knowledge Areas
 
@@ -1455,6 +1513,8 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 |    The Mountain Guide |       Tenzing Norgay        | Helped Sir Edmund Hillary reach the summit of Mount Everest, navigating through dangerous mountain terrain.    | Specializes in mountainous terrain, including climbing and navigating in high-altitude environments.     |
 |      The Desert Nomad |     Lawrence of Arabia      | Known for his expertise in desert warfare and navigation during World War I.                                   | Skilled in desert survival, can find water sources and navigate through arid landscapes.                 |
 |   The Arctic Explorer |      Ernest Shackleton      | Led expeditions to Antarctica, surviving harsh conditions and leading his crew to safety.                      | Specializes in cold-weather survival, can endure freezing temperatures and navigate through icy terrain. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Physical Sciences/Survival skill and examples for each level of difficulty
 
@@ -1470,7 +1530,9 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 | Formidable        | Track the passing of a single person through wild                                                                                                                                                                                                             |
 | Heroic            | Find a source of water in the deep desert                                                                                                                                                                                                                     |
 | Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |
-| Godly             | Construct a fire under water                                                                                                                                                                                                                                  |
+| Godly             | Construct a fire under water                                                                                                                                                                                                                                  |{: .well .table .table-striped }
+
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Reasoning Characteristics
 
@@ -1540,6 +1602,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 |         The Civil Engineer |      Robert Moses       | Known for shaping the infrastructure of New York City, including its bridges and highways.                           | Focuses on infrastructure and public works.                                                                   |
 |    The Industrial Designer |      Jonathan Ive       | Known for his work at Apple, designing products like the iPhone and MacBook.                                         | Specializes in the aesthetic and ergonomic aspects of product design.                                         |
 | The Environmental Engineer |      Rachel Carson      | Known for her book "Silent Spring," which led to changes in policies regarding environmental engineering.            | Skilled in mitigating environmental impact and developing solutions for pollution control and sustainability. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Engineering skill and examples for each level of difficulty
 
@@ -1556,6 +1620,8 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 | Heroic            | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
 | Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
 | Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Insight Knowledge Areas
 
@@ -1620,6 +1686,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 |          The Mind Reader |      Professor X (X-Men)       | A mutant with the ability to read minds, gaining access to thoughts and emotions.                  | Possesses psychic or supernatural abilities to access thoughts and emotions. |
 | The Cultural Interpreter |         Margaret Mead          | An anthropologist known for her studies on the cultures of the South Pacific.                      | Specializes in understanding and bridging cultural gaps.                     |
 |     The Animal Whisperer |          Dr. Dolittle          | A fictional character who can speak with animals and understand their emotions.                    | Skilled in understanding and communicating with animals.                     |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Insight skill and examples for each level of difficulty
 
@@ -1636,6 +1704,8 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 | Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
 | Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
 | Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Investigation Knowledge Areas
 
@@ -1701,6 +1771,8 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 |            The Linguist |                    Champollion                     | Known for deciphering the Rosetta Stone and unlocking the secrets of Egyptian hieroglyphs.              | Specializes in deciphering ancient languages and scripts.                                      |
 |       The Riddle Master |                       Sphinx                       | A mythical creature that poses riddles to those who wish to pass by it.                                 | Excels in solving magical riddles and enigmatic puzzles.                                       |
 |       The Time Traveler |                     Doctor Who                     | A Time Lord who travels through different eras to solve mysteries and save civilizations.               | Can uncover hidden clues by navigating different historical eras.                              |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Investigation skill and examples for each level of difficulty
 
@@ -1717,6 +1789,8 @@ Rooster Cogburn's investigative skills complement his more overt abilities, maki
 | Heroic            | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
 | Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
 | Godly             | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Acuity Characteristics
 
@@ -1787,6 +1861,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 |         The Storyteller | Scheherazade (One Thousand and One Nights) | A legendary storyteller who captivated a king with her tales.                             | Specializes in using stories and legends to inspire and entertain others.                                |
 |            The Polyglot |            Cardinal Mezzofanti             | A historical figure known for speaking multiple languages fluently.                       | Skilled in learning and speaking multiple languages fluently.                                            |
 |            The Mediator |                 Kofi Annan                 | A former UN Secretary-General known for his efforts in mediating international conflicts. | Focusing on conflict resolution at various levels, from interpersonal conflicts to international crises. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Traditions skill and examples for each level of difficulty
 
@@ -1803,6 +1879,8 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 | Heroic            | Representing a nation at an international summit and skillfully navigating various cultural nuances.                |
 | Nearly Impossible | Mediating peace talks between warring factions with deeply entrenched cultural hostilities.                         |
 | Godly             | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Perception Knowledge Areas
 
@@ -1870,6 +1948,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 |          The Wilderness Observer |            Steve Irwin             | Known for his keen observation of wildlife and natural phenomena.                                     | Specializes in observing wildlife and natural phenomena.                                                     |
 |                      The Spotter |    Chris Kyle (American Sniper)    | Known for his role as a sniper spotter, providing overwatch and long-range reconnaissance.            | Specializes in spotting distant targets, excels in providing overwatch and long-range reconnaissance.        |
 |               The Cryptid Hunter |            Van Helsing             | Hunts mythical creatures like vampires and werewolves.                                                | Can detect and track elusive and mythical creatures.                                                         |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Perception skill and examples for each level of difficulty
 
@@ -1886,6 +1966,8 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 | Heroic            | Detecting a concealed trap in a complex labyrinth without any prior knowledge of its existence.                            |
 | Nearly Impossible | Seeing through a powerful illusion that even confounds other skilled magic users.                                          |
 | Godly             | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Formal Sciences Knowledge Areas
 
@@ -1953,6 +2035,8 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 |          The Cryptographer |   Whitfield Diffie   | Co-inventor of public-key cryptography.                                                                                 | Excels in creating secure encryption methods.                              |
 |                The Gambler |     Edward Thorp     | Known for "Beat the Dealer," a book that mathematically proved that the house advantage in blackjack could be overcome. | Excels in games of chance and risk assessment.                             |
 |     The Linguistic Analyst |     Noam Chomsky     | Known for his theories on the structure of languages and their universal characteristics.                               | Specializes in the analysis of language and communication.                 |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Formal Science skill and examples for each level of difficulty
 
@@ -1969,6 +2053,8 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 | Heroic            | Developing a groundbreaking mathematical model to explain a natural phenomenon or guess the next card to be drawn in a deck.                                                                                                                                                                                                   |
 | Nearly Impossible | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                          |
 | Godly             | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                             |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Emotional Aspects
 
@@ -2043,6 +2129,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 |        The Songwriter |        Bob Dylan        | Known for his poetic and socially conscious lyrics.                           | Specializes in writing lyrics and melodies for songs.                                       |
 |        The Playwright |   William Shakespeare   | Wrote plays that have been performed more than those of any other playwright. | Focuses on writing plays and scripts.                                                       |
 |     The Street Artist |         Banksy          | Known for his provocative and politically charged street art.                 | Known for urban art and graffiti.                                                           |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Style skill and examples for each level of difficulty
 
@@ -2059,6 +2147,8 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 | Heroic            | Writing a critically acclaimed novel that resonates with readers worldwide.                        |
 | Nearly Impossible | Creating an iconic and trendsetting fashion collection that influences the industry.               |
 | Godly             | Choreographing an extraordinary and groundbreaking dance performance that leaves audiences in awe. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Performance Knowledge Areas
 
@@ -2125,6 +2215,8 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 |        The Aerialist |  Isabelle Vaudelle   | Known for her performances on the aerial hoop and silks.                                                | Specializes in aerial arts.                                  |
 |    The Ventriloquist |     Edgar Bergen     | Known for his ventriloquist act with his puppet Charlie McCarthy.                                       | Skilled in ventriloquism.                                    |
 |        The Hypnotist |     Franz Mesmer     | Known for his theory of "animal magnetism" and early practices related to hypnotism.                    | Known for inducing trance-like states and suggestibility.    |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Performance skill and examples for each level of difficulty
 
@@ -2141,6 +2233,7 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 | Heroic            | Executing a flawlessly choreographed dance performance in front of a large audience.                           |
 | Nearly Impossible | Engaging a diverse crowd through an improvised stand-up comedy act.                                            |
 | Godly             | Achieving a mesmerizing stage presence that transcends reality, leaving audiences spellbound and deeply moved. |
+{: .well .table .table-striped }
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Etiquette Knowledge Areas
 
@@ -2207,6 +2300,8 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 |       The Etiquette Columnist | Miss Manners (Judith Martin) | Writes syndicated columns and books on social etiquette.                                                  | Provides etiquette advice through writing or media.                          |
 |         The Event Coordinator |        Preston Bailey        | Celebrity event designer and planner known for high-profile events.                                       | Plans and executes a wide range of events.                                   |
 |       The Protocol Specialist |  Capricia Penavic Marshall   | Served as Chief of Protocol of the United States, overseeing diplomatic ceremonies and functions.         | Ensures that diplomatic events adhere to established customs and procedures. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Etiquette skill specializations and difficulty levels
 
@@ -2223,6 +2318,8 @@ Elizabeth Bennet's mastery of Etiquette is not just about following rules; it's 
 | Heroic            | Delivering a flawless and engaging public speech to a large audience                                                                                                                                                                  |
 | Nearly Impossible | Seduce someone who knows you don't share compatible sexual values.                                                                                                                                                                    |
 | Godly             | Successfully mediating and resolving intense conflicts between warring factions or nations with superior diplomacy and tact.                                                                                                          |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Personality Characteristics
 
@@ -2294,6 +2391,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 |                   The Saboteur |              Guy Fawkes              | Attempted to sabotage the English Parliament in the Gunpowder Plot.                                    | Infiltrates enemy organizations and disrupts their operations.      |
 | The Silver-Tongued Manipulator |    Littlefinger (Game of Thrones)    | Manipulates political situations to his advantage.                                                     | Focuses on psychological manipulation.                              |
 |         The Counterfeit Expert |              Alves Reis              | Conducted the Portuguese Bank Note Crisis by forging documents and creating counterfeit currency.      | Skilled in creating convincing forgeries and counterfeit documents. |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Deception skill specializations and difficulty levels
 
@@ -2310,6 +2409,8 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 | Heroic            | Disguising yourself as a high-ranking authority figure and giving a convincing speech to rally a crowd in support of a cause.                                       |
 | Nearly Impossible | Orchestrating an elaborate scheme of misinformation to deceive multiple factions and throw the world into confusion.                                                |
 | Godly             | Deception on a cosmic scale, where even the most astute and vigilant beings are unable to discern reality from illusion, and the truth becomes a malleable concept. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Persuasion Knowledge Areas
 
@@ -2376,6 +2477,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 |    The Inspirational Leader |              Steve Jobs               | Led Apple Inc. to become one of the most successful companies through his inspirational leadership. | Leads through inspiration and motivation.                       |
 |                  The Mentor |           Yoda (Star Wars)            | Provides wisdom and training to young Jedi, helping them make informed decisions.                   | Guides and mentors others.                                      |
 |               The Socialite |   Daisy Buchanan (The Great Gatsby)   | Known for her social connections and ability to navigate high society.                              | Facilitates introductions and builds alliances.                 |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Persuasion skill specializations and difficulty levels
 
@@ -2392,6 +2495,8 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 | Heroic            | Stir up the villagers or slaves to revolt against their task masters and have all of them form an angry mob that marches on the plantation owner’s home. Convince guards that even though you don't have an invitation and you are not on their list, you are suspose to be at The Company. |
 | Nearly Impossible | Convince the Greek kings to make war on Troy now that Paris has stolen Helen of Sparta. Convince King Priam and Queen Hecuba of Troy that Alexander / Paris's idea of stealing Helena was a good idea and support him.                                                                      |
 | Godly             | Convince a spirit to share their true name with you. Convince a dragon to tell you the secret location of its horde                                                                                                                                                                         |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Intimidation Knowledge Areas
 
@@ -2460,6 +2565,8 @@ Certainly! Here's a table with examples for each of the Intimidation archetypes:
 |             The Fearmonger |     Sauron (Lord of the Rings)      | Spreads fear and chaos among populations through his intimidating presence and actions.            | Excels in spreading fear and panic.                                           |
 |              The Bodyguard |   Kevin Costner in The Bodyguard    | Deters potential threats to Whitney Houston's character through his intimidating presence.         | Focuses on protecting others through intimidation.                            |
 |     The Mercenary Enforcer |        Boba Fett (Star Wars)        | Known for using violence for profit, intimidating or eliminating targets for clients.              | Known for willingness to use violence for profit.                             |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Intimidation skill specializations and difficulty levels
 
@@ -2476,6 +2583,8 @@ Certainly! Here's a table with examples for each of the Intimidation archetypes:
 | Heroic            | Inspiring terror in an entire army through sheer force of presence, causing them to retreat without a fight. Force an undefeated rival to kneel before you to kiss your boots.                                                                                                                                                                  |
 | Nearly Impossible | Confronting a legendary dragon or a fearsome supernatural being, commanding them to obey or leave an area. Force a king or high priest to abandon their post for their crimes.                                                                                                                                                                  |
 | Godly             | Instilling dread in a cosmic entity or otherworldly being, making them hesitate to challenge your will. Force a king or high priest to abandon their post for your crimes.                                                                                                                                                                      |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Identity Characteristics
 
@@ -2547,6 +2656,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 |          The Policy Analyst |              Nate Silver (Real Life)              | Known for his expertise in policy and statistical analysis, particularly in political forecasting.        | Known for expertise in policy analysis and formulation.            |
 |         The Union Organizer |              Cesar Chavez (History)               | Mobilized farm workers to demand better working conditions and benefits.                                  | Specializes in labor movements and workers' rights.                |
 | The Dirty Tricks Mastermind |          Petyr Baelish (Game of Thrones)          | Orchestrates sophisticated propaganda campaigns to manipulate public perception and gain power.           | Specializes in sophisticated propaganda campaigns.                 |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Bureaucracy skill specializations and difficulty levels
 
@@ -2563,6 +2674,8 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 | Heroic            | Convincing multiple government bodies to work together on a large-scale infrastructure project.                                                                   |
 | Nearly Impossible | Spearheading a global humanitarian initiative that involves coordination with multiple international organizations and governments.                               |
 | Godly             | Initiating and leading a massive, worldwide bureaucratic reform movement that reshapes how governments and organizations function and interact on a global scale. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Animal Handling Knowledge Areas
 
@@ -2627,6 +2740,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 |            The Mounted Scout | Aragorn (Fiction - Lord of the Rings) | Known for his ability to navigate challenging terrains on horseback.                                         | Known for navigating challenging terrains on horseback.                              |
 |    The Exotic Animal Trainer |      Siegfried & Roy (Real Life)      | Known for their performances with white tigers and other exotic animals.                                     | Skilled in working with exotic and dangerous animals.                                |
 |       The Wildlife Biologist |        Dian Fossey (Real Life)        | Known for her extensive study and conservation efforts for mountain gorillas.                                | Focuses on scientific study and research of animals in their natural habitats.       |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Animal Handling skill specializations and difficulty levels
 
@@ -2643,6 +2758,8 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 | Heroic            | Calming a herd of stampeding wild horses to prevent injuries to both horses and people. Break a wild horse for riding.                                                                                                                                                                                         |
 | Nearly Impossible | Rehabilitating a severely injured and frightened wild animal to the point where it can be released back into its natural habitat. Groom an undomesticated wild beast.                                                                                                                                          |
 | Godly             | Establishing communication with a mythical and legendary creature, such as a dragon, and gaining its trust and cooperation. Harness and ride an unwilling monster.                                                                                                                                             |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Leadership Knowledge Areas
 
@@ -2711,6 +2828,8 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 |   The Community Organizer |            Cesar Chavez (History)            | Known for his role in organizing farm workers and advocating for their rights.                            | Skilled in grassroots leadership.                                                              |
 |      The Spiritual Leader |            Dalai Lama (Real Life)            | Spiritual leader of Tibetan Buddhism, known for his teachings on compassion and peace.                    | Specializes in guiding spiritual communities.                                                  |
 |        The Servant Leader | Samwise Gamgee (Fiction - Lord of the Rings) | Known for his unwavering loyalty and support to Frodo Baggins, putting Frodo's needs above his own.       | Focuses on serving the needs of others and empowering them to perform at their best.           |
+{: .well .table .table-striped }
+
 
 ##### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table with Leadership skill specializations and difficulty levels
 
@@ -2727,6 +2846,8 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 | Heroic            | Taking charge of a military unit in a high-stakes combat situation and leading them to victory. Convince Humanoids who were once your enemies to fight alongside you.                                                                                                                                                                              |
 | Nearly Impossible | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                            |
 | Godly             | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                           |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Mystical Aspects
 
@@ -2798,6 +2919,8 @@ In the realm of Arcane magic and mysticism, you become a master of invisible thr
 | The Celestial Sorcerer |           Galadriel (Lord of the Rings)           | Known for her celestial powers, including a ring that holds a portion of the light of the Two Trees of Valinor. | This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.                                                                                            |
 |        The Time Weaver |              Hiro Nakamura (Heroes)               | Known for his ability to manipulate time, including stopping time and time travel.                              | The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.                                                                                                                                         |
 |  The Planar Gatekeeper |           John Constantine (DC Comics)            | Known for his ability to travel between realms and summon creatures from different planes.                      | The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.                                                                                                                        |
+{: .well .table .table-striped }
+
 
 These Arcane Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
 
@@ -2814,6 +2937,8 @@ These Arcane Caster archetypes bring a sense of wonder and mystique to fictional
 | Heroic            | Time manipulation on a small scale, allowing the caster to briefly glimpse or interact with the past or future.                                |
 | Nearly Impossible | Unleash a devastating spell that calls forth a catastrophic celestial event, reshaping the landscape and altering the course of nature itself. |
 | Godly             | Open a portal to an alternate reality or dimension, allowing passage between worlds and access to unimaginable powers and knowledge.           |
+{: .well .table .table-striped }
+
 
 Please note that the difficulty ratings provided in the table are relative and can vary depending on the specific system or setting in which the magical practice is being used.
 
@@ -2859,6 +2984,8 @@ These spells reflect the unique and profound nature of your magical abilities, i
 |     The Martyr |    Joan of Arc (History)     | Led the French army to victory but was captured and burned at the stake, becoming a symbol of resistance and faith. | This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.                                                                                                                                       |
 | The Chosen One | Anakin Skywalker (Star Wars) | Foretold to bring balance to the Force, struggles with his identity before ultimately fulfilling his destiny.       | This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.                                                                                                                                       |
 |   The Redeemer |        Aslan (Narnia)        | Sacrifices himself to save Edmund, later resurrects, guiding and aiding the children in their quest.                | The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.                                                                                                                                                                                                   |
+{: .well .table .table-striped }
+
 
 Here's a table describing tasks someone from the Gnostic magical practice might do for each difficulty level:
 
@@ -2875,6 +3002,8 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 | Heroic            | Unraveling the deepest mysteries of the universe or liberating a group of souls trapped by archonic forces. Only the most renowned practitioners can even attempt such tasks.                                      |
 | Nearly Impossible | Transcending the material world entirely or unraveling the secrets of the Demiurge's creation to rewrite the cosmic order. These acts shape the course of history.                                                 |
 | Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Chaos Knowledge Areas
 
@@ -2921,6 +3050,8 @@ Remember, these spells reflect the unpredictable and ever-changing nature of Cha
 | The Intuitive Instigator | Jack Sparrow (Pirates of the Caribbean) | Relies on instinct and intuition to navigate complex situations, often causing and resolving chaos.    | This character relies on instinct and intuition, channeling the chaotic flow of the universe to make impactful decisions and drive change. They have a natural talent for reading the currents of fate and influencing events in subtle yet profound ways.                  |
 |  The Unconventional Hero |           V (V for Vendetta)            | A masked vigilante who uses unconventional methods to fight against a totalitarian regime.             | Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.                                            |
 |      The Laughing Mystic |         Alan Watts (Real Life)          | A philosopher who used humor to convey complex spiritual and existential ideas.                        | This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.                     |
+{: .well .table .table-striped }
+
 
 Here's a table describing tasks someone from the Choas magical practice might do for each difficulty level:
 
@@ -2937,6 +3068,8 @@ Here's a table describing tasks someone from the Choas magical practice might do
 | Heroic            | Taming and commanding a powerful chaos beast or entity, something that even the most skilled individuals would struggle to control. Chaos practitioners, the true masters of their art, undertake this once-in-a-lifetime feat with assistance, leaving a legacy of legendary tales behind.                       |
 | Nearly Impossible | Weaving a tapestry of chaotic energy that temporarily reshapes reality within a limited area, creating a surreal and mesmerizing dreamscape. Chaos magicians perform this epic feat, leaving an unforgettable mark in history books as the named masters of their magical craft.                                  |
 | Godly             | Infusing themselves with the pure essence of Chaos, transforming into a semi-divine avatar of unpredictability, capable of altering the very fabric of existence on a cosmic scale. Chaos practitioners, virtually demigods in their abilities, achieve this godly status with exceptional talent and assistance. |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Faith Characteristics
 
@@ -3009,6 +3142,8 @@ Certainly, here's the table with examples for each Theurgy archetype, along with
 | The Scholar |              Thoth (Egyptian Mythology)              | A god of wisdom, writing, and magic, credited with the creation of sacred texts.                                                     | This archetype represents a character who tirelessly studies the ancient texts and mystical arts of Theurgy. They may be motivated by a thirst for knowledge, seeking to unlock the secrets of the universe or to unravel the mysteries of long-forgotten civilizations. The Scholar's expertise can be a valuable resource for protagonists seeking to understand or counter magical threats.                                                     |
 |   The Judge |              Ma'at (Egyptian Mythology)              | A goddess of truth, justice, and balance, who weighed the souls of the dead against a feather.                                       | This character is devoted to preserving the balance between opposing cosmic forces, recognizing that Theurgy's power can disrupt the harmony of the universe if misused. They may be tasked with preventing the rise of dark entities or restoring equilibrium when chaos threatens to overwhelm the world.                                                                                                                                        |
 | The Pilgrim | Dante Alighieri (Fictional from "The Divine Comedy") | The character Dante embarks on a spiritual journey through Hell, Purgatory, and Heaven to find God and gain spiritual enlightenment. | This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.                                                                                                            |
+{: .well .table .table-striped }
+
 
 These unique Theurgy spells showcase the character's special connection to the divine and their ability to harness celestial energies for various purposes. Each spell reflects the deeper themes of spiritual growth, cosmic balance, and the quest for enlightenment that are inherent in Theurgy.
 
@@ -3025,6 +3160,8 @@ These unique Theurgy spells showcase the character's special connection to the d
 |      Heroic       | Merging the powers of multiple Theurgy practitioners to perform a grand ritual that alters the course of a war or prevents a catastrophe on a global scale.                                                                                                                                                                                                                                                                |
 | Nearly Impossible | Ascending to a higher plane of existence temporarily to gain profound insights and wisdom from celestial beings.                                                                                                                                                                                                                                                                                                           |
 |       Godly       | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Adept Knowledge Areas
 
@@ -3063,6 +3200,8 @@ Your journey as an Adept is one of self-discovery and self-mastery. By continuou
 |  The Healer Warrior |            Tsunade from "Naruto"             | Tsunade is a ninja and one of the legendary Sannin. She uses her chakra (akin to Chi) to perform medical ninjutsu, healing herself and others during battle.                                  | This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.                                                                         |
 |  The Wandering Sage |            Jiraiya from "Naruto"             | Jiraiya is a wise and powerful ninja who roams the world seeking knowledge and enlightenment. He serves as a mentor to Naruto and others, guiding them on their quests.                       | This archetype is a wise and mysterious figure who roams the world, seeking enlightenment. They have a deep understanding of the mystical arts and often serve as mentors to other characters on their journeys. Their physical abilities and prowess are a testament to their years of training and self-discovery.                                         |
 | The Hidden Assassin | Ezio Auditore (Fiction - "Assassin's Creed") | Ezio Auditore is a master assassin who blends physical agility with various tools and techniques. He operates in the shadows and strikes with deadly precision.                               | This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace. |
+{: .well .table .table-striped }
+
 
 Remember that as a Physical Adept, your spells revolve around maintaining harmony and balance between the physical and mystical aspects of yourself. Each spell reflects your connection to the world and your unique ability to blend magic and martial prowess seamlessly.
 
@@ -3079,6 +3218,8 @@ Remember that as a Physical Adept, your spells revolve around maintaining harmon
 |      Heroic       | Performing a feat of physical and mystical prowess that pushes the boundaries of what is humanly possible, like evading a hail of projectiles while simultaneously launching a series of devastating elemental attacks.                                                |
 | Nearly Impossible | Channeling the full extent of your Chi and mystical potential, create a massive barrier to protect an entire city from a catastrophic event, like an erupting volcano or a meteor shower, while maintaining its integrity for an extended period.                      |
 |       Godly       | Merging your physical and mystical form into a colossal ethereal avatar, capable of single-handedly fending off an army of foes or reshaping the terrain around you. This transcendent form is temporary, requiring immense focus and harmonization with the universe. |
+{: .well .table .table-striped }
+
 
 As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
 
@@ -3120,6 +3261,8 @@ Overall, your journey in the Order branch of magic is one of constant refinement
 |    The Alchemist | Nicolas Flamel (Real-life/Various Fiction) | Nicolas Flamel is a historical figure who has been portrayed in various works of fiction as an alchemist who discovered the Philosopher's Stone, enabling him to transmute materials and achieve immortality.                                      | This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered. |
 |    The Artificer |        Hephaestus (Greek Mythology)        | Hephaestus is the Greek god of blacksmiths, craftsmen, and artisans. He crafted many of the gods' magical weapons and artifacts, including Zeus's thunderbolts and Hermes' winged sandals.                                                         | This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.                                                                    |
 | The Elementalist |     Kvothe (The Kingkiller Chronicle)      | Kvothe is a gifted young man who learns the art of "Sympathy," which allows him to manipulate natural elements by creating a sympathetic link between objects. He uses this skill to control fire, wind, and other elements in various situations. | This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.                                             |
+{: .well .table .table-striped }
+
 
 These spells exemplify the precise, structured, and balanced nature of Order Magic. Each spell serves a specific purpose, often involving careful planning, intricate rituals, and a deep understanding of the forces that govern the world.
 
@@ -3136,6 +3279,8 @@ These spells exemplify the precise, structured, and balanced nature of Order Mag
 |      Heroic       | Unravel a complex and ancient magical ritual, passed down through generations, to temporarily stabilize a region ravaged by rampant chaos. The task requires unmatched expertise and collaboration with other Order mages to achieve this legendary feat.                                            |
 | Nearly Impossible | In an act of ultimate mastery, weave together the threads of time and space, temporarily freezing the progression of time in an entire realm to restore order to the chaotic world. This legendary task is the epitome of Order magic and will immortalize the mage's name in history.               |
 |       Godly       | Achieve absolute synchronization with the cosmic forces, becoming one with the fabric of reality itself. In this transcendent state, the mage temporarily attains godlike powers, bringing complete balance and harmony to the universe for a fleeting moment before returning to their mortal form. |
+{: .well .table .table-striped }
+
 
 ### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Mystery Characteristics
 
@@ -3207,6 +3352,8 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 |     The Time Bender |    Hiro Nakamura from "Heroes"    | Hiro has the ability to manipulate time, including stopping it and traveling through it. He struggles with the ethical implications of changing past and future events.                  | This archetype draws inspiration from those with precognitive abilities who can see potential futures or alter the timeline itself. The Time Bender grapples with ethical dilemmas, considering the consequences of changing events or preserving the natural flow of time.                                              |
 | The Empathic Healer | Luna Lovegood from "Harry Potter" | Luna has a deep sense of empathy and understanding, providing emotional support to Harry and his friends, even though her abilities are not explicitly psychic.                          | Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.                                                                        |
 |          The Oracle |   The Oracle from "The Matrix"    | The Oracle provides Neo and his companions with cryptic yet crucial guidance, helping them navigate the challenges they face against the Matrix.                                         | Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinities and guide pivotal decisions.                                                                                                                |
+{: .well .table .table-striped }
+
 
 Remember that these spells are unique to your background in Metaphysics and reflect the deep connection you have with the mystical forces of ESP and Psionics. Each spell embodies the essence of your metaphysical knowledge, offering a distinct and awe-inspiring set of abilities in the world of magic and fantasy.
 
@@ -3225,6 +3372,8 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 | Heroic            | Projecting your consciousness across the world to a distant, unfamiliar location, and returning with vivid details and insights from that place.                                                                           |
 | Nearly Impossible | Using astral projection to venture into the depths of an uncharted, otherworldly realm and returning with profound knowledge or a rare artifact.                                                                           |
 | Godly             | Achieving an extraordinary feat of time manipulation, briefly altering the timeline to prevent a catastrophic event or restore harmony to a torn reality, requiring the cooperation of other powerful beings or artifacts. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Animism Knowledge Areas
 
@@ -3265,6 +3414,8 @@ Your empathy grows, allowing you to perceive the hidden spiritual essence within
 | Guardian of the Wild | Princess Mononoke from Studio Ghibli's "Princess Mononoke" | Ashitaka, also known as Princess Mononoke, is a fierce protector of the forest and its spirits. She fights against human encroachment that threatens the natural world. | The Guardian of the Wild is a fierce protector of the natural order. They defend the sacred sites, creatures, and ancient spirits from external threats, often serving as a bridge between the physical and spiritual realms. With an unyielding determination, they safeguard the balance of life, using their powers to deter those who would harm the natural world.                           |
 |  Ancestral Channeler |           T'Challa from Marvel's "Black Panther"           | T'Challa, the Black Panther, can communicate with the spirits of his ancestors for guidance and wisdom, especially when he visits the ancestral plane.                  | The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.           |
 |       Communal Weave |           Steven Universe from "Steven Universe"           | Steven has the ability to empathetically connect people through his powers, resolving conflicts and fostering understanding among diverse groups.                       | The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.                    |
+{: .well .table .table-striped }
+
 
 These unique spells embody the essence of Animism Magic, offering a profound connection with nature, a deep understanding of the spirits, and the ability to influence the world through the spiritual essence that permeates all things.
 
@@ -3283,6 +3434,8 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 | Heroic            | Engaging in a spiritual battle with a malevolent ancient spirit threatening to unleash havoc on the world, requiring the combined efforts of the most skilled Animists and assistance from benevolent deities to subdue the malevolence.                                                           |
 | Nearly Impossible | Attempting to commune with the ancient spirits of a long-lost civilization that holds the key to unlocking powerful secrets of the universe, requiring a group of legendary Animists to channel their collective energies and focus to maintain the connection.                                    |
 | Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Shamanism Knowledge Areas
 
@@ -3327,6 +3480,8 @@ The practice of Shamanism requires a profound sense of humility and respect for 
 |           The Healer |    Moana's Grandmother Tala from "Moana"     | Tala serves as a healer and spiritual guide to Moana, using her knowledge of rituals and the natural world to aid her granddaughter on her quest.                                                                     | This archetype embodies the shaman's role as a powerful healer. They can cure ailments, both physical and spiritual, using their knowledge of herbs, rituals, and energy manipulation. The Healer often acts as a benevolent figure, offering aid and support to those in need.                                                                       |
 |   The Balance Keeper | Uncle Iroh from "Avatar: The Last Airbender" | Uncle Iroh serves as a mediator and guide, often seeking to restore balance between opposing forces. He uses his wisdom and spiritual insight to help others make the right choices.                                  | The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.                                                             |
 |    The Shadow Shaman | Shaman King's Hao Asakura from "Shaman King" | Hao Asakura is a powerful shaman who taps into dark energies and spirits for personal gain. He is morally ambiguous and serves as an antagonist in the story.                                                         | This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.                                                              |
+{: .well .table .table-striped }
+
 
 These unique spells reflect the shaman's profound connection to nature, spirits, and the unseen world, showcasing their ability to tap into the mystical forces of the universe to achieve various extraordinary feats.
 
@@ -3343,6 +3498,8 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | Heroic            | Uniting the energies of the tribe and the surrounding natural forces to perform a grand ritual, bringing harmony and balance to the entire region, dispelling malevolent spirits, and revitalizing the land and its inhabitants.                  |
 | Nearly Impossible | Attempting to bring back a deceased loved one from the afterlife, a task that requires the shaman to navigate complex spiritual realms and negotiate with powerful entities to grant a second chance at life.                                     |
 | Godly             | Harnessing the forces of celestial bodies and the spirit world to perform a ritual that significantly alters the fate of entire civilizations or alters the course of cosmic events, requiring immense power and assistance from divine entities. |
+{: .well .table .table-striped }
+
 
 ## [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Task Resolution
 
@@ -3368,6 +3525,8 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | \-15 |      Heroic       | Achievable only by the most trained, experienced, and talented superstars, and they probably still need help to pull it off. This is a once or twice in a lifetime feet. You are the best at this in theworld.                                                                                                                                 |
 | \-25 | Nearly Impossible | An epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                                                                                                                               |
 | \-30 |       Godly       | Can't be done without assistance unless you're basically a demigod.                                                                                                                                                                                                                                                                            |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table for Step 3
 
@@ -3381,6 +3540,8 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | 2  | 23 - 27 |
 | 3  | 28 - 30 |
 | 4  | 31 - 32 |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Table for Step 4
 
@@ -3396,6 +3557,8 @@ These unique spells reflect the shaman's profound connection to nature, spirits,
 | 23 - 27      | Succeed In Style |
 | 28 - 30      | Critical         |
 | 31 +         | Serendipitous    |
+{: .well .table .table-striped }
+
 
 #### [&#x2191;](javascript:history.back()){: .text-decoration-none .float-end}Degrees of Effect Defined
 
@@ -3471,6 +3634,8 @@ The individual who attempted to do something accomplishes what they set out to d
 | Succeed In Style |    2    | 75%  | 2 |  3  |  6  | 5  |
 |         Critical |    3    | 50%  | 1 |  2  |  7  | 6  |
 |    Serendipitous |    4    | 25%  | 0 |  1  |  8  | 7  |
+{: .well .table .table-striped }
+
 
 Final σ: Used in Dice Chains
 
