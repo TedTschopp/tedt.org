@@ -147,12 +147,12 @@
                                         <cite>"{{image_credits_title}}"</cite>
                                     {% endif %}
                                     {% if image_credits_artist_URL contains "http" %}
-                                        <span class="vcard"><address class="author">By <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                        <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
                                     {% else %}
                                         by {{image_credits}}
                                     {% endif %}
                                 {% else %}
-                                    <cite>"{{image_credits_title}}"</cite> by <span class="vcard"><address class="author">{{image_credits}}</address></span>
+                                    <cite>"{{image_credits_title}}"</cite> by <span class="vcard"><address style="display: inline;" class="author">{{image_credits}}</address></span>
                                 {% endif %}
                                 
                             </figcaption>
