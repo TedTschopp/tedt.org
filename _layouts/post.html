@@ -142,18 +142,17 @@
 
                                 {% if page.image-credits-URL %}
                                     {% if image_credits_URL contains "http" %}
-                                        <a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a>
+                                        <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
                                     {% else %}
-                                        "{{image_credits_title}}"
+                                        <cite>"{{image_credits_title}}"</cite>
                                     {% endif %}
                                     {% if image_credits_artist_URL contains "http" %}
-                                        by <a target="_new" href="{{image_credits_artist_URL}}">{{image_credits}}</a>
+                                        <span class="vcard"><address class="author">By <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
                                     {% else %}
                                         by {{image_credits}}
                                     {% endif %}
-
                                 {% else %}
-                                    "{{image_credits_title}}" by {{image_credits}}
+                                    <cite>"{{image_credits_title}}"</cite> by <span class="vcard"><address class="author">{{image_credits}}</address></span>
                                 {% endif %}
                                 
                             </figcaption>
