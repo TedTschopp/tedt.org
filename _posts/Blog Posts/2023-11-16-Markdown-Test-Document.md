@@ -189,7 +189,7 @@ Some text to show that the reference links can follow later.
 Here's our logo (hover to see the title text):
 
 Inline-style:
-![alt text](https://tedt.org/img/TT.svg "Logo Title Text 1")
+![alt text](https://tedt.org/img/TT.svg "Logo Title Text 1") { width=60%,height:30px }
 
 Reference-style:
 ![alt text][logo]
