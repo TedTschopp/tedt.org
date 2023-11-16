@@ -24,11 +24,9 @@ description: 'I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll
 seo-description: "I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll rendering.  This is to test out some edge cases."
 
 categories:
-- Religion
+- Computers
 tags:
-keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spiritual
-    Experience, Rainy Day, Toon Town, Small World, Grumpy Jester Hat, Luke Chapter
-    2, Christ
+keywords: 
 
 draft-status:
 
@@ -438,8 +436,8 @@ Underscores
 
 # YouTube Videos
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=lTf7CLF1Xbg" target="_blank">
-<img src="http://img.youtube.com/vi/lTf7CLF1Xbg/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10">
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=lTf7CLF1Xbg" target="_blank">
+<img src="https://img.youtube.com/vi/lTf7CLF1Xbg/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10">
 </a>
 
-[![IMAGE ALT TEXT HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/YouTube_logo_2015.svg/1200px-YouTube_logo_2015.svg.png)](https://www.youtube.com/watch?v=ciawICBvQoE)
+[![IMAGE ALT TEXT HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/320px-YouTube_Logo_2017.svg.png)](https://www.youtube.com/watch?v=lTf7CLF1Xbg)
