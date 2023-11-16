@@ -210,27 +210,22 @@
                         {% if tag == 'Resume' %}
                             {% if mod != 1 %}<!-- odd -->
                                 <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-                                {% if post.company == "TORC" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle TORC-watermark">
-                                {%elsif post.company == "Dohring" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle Dohring-watermark">
-                                {%elsif post.company == "SCE" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle SCE-watermark">
-                                {%else%}
+                                {% unless post.company == blank or post.company == null %}
+                                  <div class="col-lg-6 my-auto showcase-text align-middle {{ post.company }}-watermark">
+                                {% else %}
                                   <div class="col-lg-6 my-auto showcase-text align-middle">
-                                {% endif %}
+                                {% endunless %}
 
                             {% else %}
                                 <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/{{post.image}}" class="img-responsive img-thumbnail" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}"></div>
-                                {% if post.company == "TORC" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle TORC-watermark">
-                                {%elsif post.company == "Dohring" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle Dohring-watermark">
-                                {%elsif post.company == "SCE" %}
-                                  <div class="col-lg-6 my-auto showcase-text align-middle SCE-watermark">
-                                {%else%}
+
+                                {% unless post.company == blank or post.company == null %}
+                                  <div class="col-lg-6 my-auto showcase-text align-middle {{ post.company }}-watermark">
+                                {% else %}
                                   <div class="col-lg-6 my-auto showcase-text align-middle">
-                                {% endif %}
+                                {% endunless %}
+
+
                             {% endif %}
                             <h2 style="display: inline; font-weight: bold;">{% if post.title-url and post.title-url != "" and post.title-url != nil %}<a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>{% else %}{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}{% endif %}</h2><p style="display: inline;" class="lead mb-0"> &mdash; {{ post.description}}</p>   
                             <ul>    
@@ -321,7 +316,6 @@
     </div>
     {% endcomment %} 
 
-
     <header class="masthead text-white text-center" id="about">
       <div class="overlay"></div>
       <div class="container">
@@ -349,7 +343,6 @@
 
   <!-- Footer -->
   {% include footer.html %}
-
 
   <!-- Bootstrap core JavaScript -->
   {% include js-bottom-of-body.html %}
