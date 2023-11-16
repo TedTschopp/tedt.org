@@ -20,8 +20,8 @@ author:
 
 bullets:
 
-description: 'I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll rendering.  This is to test out some edge cases.'
-seo-description: "I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll rendering.  This is to test out some edge cases."
+description: I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll rendering.  This is to test out some edge cases.
+seo-description: I am attempting to overlay Bootstrap 5.3 on top of Github's Jekyll rendering.  This is to test out some edge cases.
 
 categories:
 - Computers
