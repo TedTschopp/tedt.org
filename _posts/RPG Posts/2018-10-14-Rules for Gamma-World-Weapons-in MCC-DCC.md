@@ -50,7 +50,7 @@ image-author-URL:
 image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25
 image-credits-URL: https://www.artstation.com/artwork/lqz25
 image-credits-artist: Seth Justus
-image-credits-artist-URL:
+image-credits-artist-URL: https://www.artstation.com/artwork/lqz25
 image-credits-title: Hunters Alien Weapons and Devices
 image-description:
 image-title:
