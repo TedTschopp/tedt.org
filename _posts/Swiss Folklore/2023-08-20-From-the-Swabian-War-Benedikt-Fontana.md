@@ -75,8 +75,8 @@ image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana
     sunlight, and their battle cries resonate with the passion for their land. The
     scene encapsulates the spirit, courage, and will of a people unyielding in their
     fight for independence.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney

@@ -65,15 +65,15 @@ coordinates:
     longitude:
 
 image: img/home/practice-lead.jpg
-image-alt:
-image-author: 
-image-author-URL:
+image-alt: A man sitting at a computer with 3 screens with code on them
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: 
 image-credits-URL:
-image-credits-artist: 
-image-credits-artist-URL:
-image-credits-title: 
-image-description: 
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title: Market Research
+image-description:  A man sitting at a computer with 3 screens with code on them
 image-title: Market Research
 
 monster-or-magical-or-religious-ideas:

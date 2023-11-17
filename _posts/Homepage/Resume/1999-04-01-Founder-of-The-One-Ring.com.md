@@ -43,16 +43,16 @@ coordinates:
     longitude:
 
 image: /img/home/tolkienonline.jpg
-image-alt:
-image-author:
-image-author-URL:
+image-alt:  Lord of the Rings wallpaper, in the style of layered landscapes, meticulously crafted scenes, dark and brooding, photo collage landscapes
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: Countdown to the Lord of the Rings by Ted Tschopp http://www.theonering.com
 image-credits-URL: http://www.theonering.com
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL:
+image-credits-artist-URL: https://www.tedt.org/
 image-credits-title: Countdown to the Lord of the Rings
-image-description:
-image-title:
+image-description: Lord of the Rings wallpaper, in the style of layered landscapes, meticulously crafted scenes, dark and brooding, photo collage landscapes
+image-title: Countdown to the Lord of the Rings
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

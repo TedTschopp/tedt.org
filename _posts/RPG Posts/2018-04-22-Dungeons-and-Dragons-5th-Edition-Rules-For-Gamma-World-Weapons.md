@@ -41,8 +41,8 @@ coordinates:
 
 image: /img/2018-04/The-Leviathan.jpg
 image-alt:
-image-author: Larry Elmore
-image-author-URL: http://www.larryelmore.com/
+image-artist: Larry Elmore
+image-artist-URL: http://www.larryelmore.com/
 image-credits: The Leviathan by Larry Elmore 
 image-credits-URL: http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
 image-credits-artist:

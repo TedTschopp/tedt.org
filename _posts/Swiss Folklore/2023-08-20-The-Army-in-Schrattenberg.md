@@ -68,8 +68,8 @@ coordinates:
 
 image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
 image-alt: The mysterious army leader and his warriors sleep at the tables.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney

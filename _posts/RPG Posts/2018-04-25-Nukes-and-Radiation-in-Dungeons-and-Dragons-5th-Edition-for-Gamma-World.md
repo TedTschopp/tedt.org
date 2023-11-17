@@ -49,8 +49,8 @@ coordinates:
 
 image: /img/2018-04/Third-Edition.jpg
 image-alt:
-image-author: Keith Parkinson
-image-author-URL: https://www.keithparkinson.com/
+image-artist: Keith Parkinson
+image-artist-URL: https://www.keithparkinson.com/
 image-credits: The Ultimate A.T.V. by Keith Parkinson -  https://www.keithparkinson.com/
 image-credits-URL:
 image-credits-artist:

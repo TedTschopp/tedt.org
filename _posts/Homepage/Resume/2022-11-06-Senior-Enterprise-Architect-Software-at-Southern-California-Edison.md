@@ -46,8 +46,8 @@ coordinates:
 
 image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Ted Tschopp and Midjourney
 image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney

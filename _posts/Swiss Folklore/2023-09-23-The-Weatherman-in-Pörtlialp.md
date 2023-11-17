@@ -51,8 +51,8 @@ coordinates:
 image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
 image-alt: An illustration of a large, heavy man wearing a large hat, walking in a
     forest.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney

@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/2011-02/plumtree_2dportal_1.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: SCE Corporate Portal using Plumtree
 image-credits-URL:
 image-credits-artist:

@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/home/Ted_Tschopp_an_image_of_a_sky_filled_with_stars_on_a_dark_night.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

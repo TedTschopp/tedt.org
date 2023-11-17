@@ -40,8 +40,8 @@ coordinates:
 
 image: null
 image-alt: null
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: null
 image-credits-artist: null

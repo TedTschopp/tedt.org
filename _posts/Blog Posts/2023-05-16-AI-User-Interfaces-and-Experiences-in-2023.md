@@ -47,8 +47,8 @@ coordinates:
 
 image: /media/printing-press-hannes-wolf-unsplash.jpg
 image-alt: Photo by Hannes Wolf on Unsplash
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://unsplash.com/photos/n2ILm0aTCYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 image-credits-artist: Hannes Wolf

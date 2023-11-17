@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/2011-03/smart-connect.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Edison SmartConnect by Ted Tschopp
 image-credits-URL:
 image-credits-artist:

@@ -53,8 +53,8 @@ image: /img/2023-01/merian-switzerland-stein-am-rhein.jpg
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
     with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
     of Matthaeus Merian.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
 image-credits-artist: Matthäus Merian (*1593 - †1650)

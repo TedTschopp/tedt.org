@@ -43,8 +43,8 @@ coordinates:
 
 image: https://www.tedt.org/img/2023-07-22/FAME.png
 image-alt: "Photo by Ted Tschopp using Midjourney"
-image-author: Ted Tschopp
-image-author-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist:

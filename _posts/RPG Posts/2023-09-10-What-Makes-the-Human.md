@@ -48,8 +48,8 @@ coordinates:
 
 image: /img/2023-09-22/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.png
 image-alt: An artist carving a statue of a man out of a giant mountain
-image-author: Ted Tschopp using Midjourney
-image-author-URL: https://www.tedt.org/
+image-artist: Ted Tschopp using Midjourney
+image-artist-URL: https://www.tedt.org/
 image-credits:
 image-credits-URL:
 image-credits-artist:

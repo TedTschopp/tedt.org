@@ -43,15 +43,15 @@ coordinates:
     longitude:
 
 image: img/home/Market-Research.jpg
-image-alt:
-image-author: 
-image-author-URL:
+image-alt: A man drawing market research on a piece of wall, in the style of light gray and bronze, american consumer culture, text-based, stylish
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: 
 image-credits-URL:
-image-credits-artist: 
-image-credits-artist-URL:
-image-credits-title: 
-image-description: 
+image-credits-artist:  Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title: Market Research
+image-description: A man drawing market research on a piece of wall, in the style of light gray and bronze, american consumer culture, text-based, stylish
 image-title: Market Research
 
 monster-or-magical-or-religious-ideas:

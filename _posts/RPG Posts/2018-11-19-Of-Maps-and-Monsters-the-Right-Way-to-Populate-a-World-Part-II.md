@@ -44,8 +44,8 @@ coordinates:
 
 image: /img/2018-05/Ebstorfer-stich2.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Ebstorf Map by Gervase of Ebstorf
 image-credits-URL:
 image-credits-artist:

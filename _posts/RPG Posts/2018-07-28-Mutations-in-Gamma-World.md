@@ -61,8 +61,8 @@ coordinates:
 
 image: /img/2018-07-28/ola-larsson-genlabbalpha.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
 image-credits-URL: https://larsson.artstation.com/projects/qOJQn
 image-credits-artist: Ola Larsson

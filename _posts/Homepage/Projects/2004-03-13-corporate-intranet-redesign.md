@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/2011-02/edna-sce-com_1.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: SCE Intranet by Ted Tschopp
 image-credits-URL:
 image-credits-artist:

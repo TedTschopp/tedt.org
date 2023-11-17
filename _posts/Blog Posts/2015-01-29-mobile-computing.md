@@ -52,8 +52,8 @@ coordinates:
 
 image: /img/2015-01/7348035690_d483c5e3e0_o.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

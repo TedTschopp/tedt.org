@@ -45,8 +45,8 @@ coordinates:
 
 image: /img/2013-06/color-eye.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

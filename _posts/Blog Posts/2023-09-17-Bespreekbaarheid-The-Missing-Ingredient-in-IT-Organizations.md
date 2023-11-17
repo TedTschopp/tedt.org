@@ -43,8 +43,8 @@ coordinates:
     
 image: /img/2023-09-17/Ted_Tschopp_Pop_Art_Modern_Office.png
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney

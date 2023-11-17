@@ -47,8 +47,8 @@ image-alt: Painting of Wodan coming down the a large river sitting on a water ho
     the bank and devastates a medieval city. In the style of antichrist, dark yellow
     and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet,
     hercules seghers
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney

@@ -65,8 +65,8 @@ coordinates:
 
 image: /img/home/sce_com.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: SCE.com by Ted Tschopp
 image-credits-URL: https://www.sce.com/
 image-credits-artist: Ted Tschopp

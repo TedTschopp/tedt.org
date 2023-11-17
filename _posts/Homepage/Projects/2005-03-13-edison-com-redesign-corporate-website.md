@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/2011-02/www-edison-com.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Edison.com by Ted Tschopp
 image-credits-URL:
 image-credits-artist:

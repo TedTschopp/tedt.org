@@ -71,8 +71,8 @@ image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist
     In the foreground, villagers peer upward, faces etched with curiosity and fear.
     The hole in the rock looms ominously, embodying the legend of the Little Shepherd
     who still haunts the area.
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney

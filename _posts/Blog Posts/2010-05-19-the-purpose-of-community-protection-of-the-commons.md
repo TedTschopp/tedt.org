@@ -49,8 +49,8 @@ coordinates:
 
 image: /img/2013-06/russell-crowe-as-robin-hood-robin-hood-2010-movie.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

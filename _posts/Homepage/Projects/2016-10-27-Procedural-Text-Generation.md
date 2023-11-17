@@ -41,15 +41,15 @@ coordinates:
     longitude:
 
 image: /img/home/Text-Generation.jpg
-image-alt:
-image-author:
-image-author-URL:
+image-alt: Source Code of a Text Generation Program
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org
 image-credits: Text Generation Code by Ted Tschopp
 image-credits-URL: https://tedt.org
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL:
 image-credits-title: Text Generation Code
-image-description:
+image-description: Source Code of a Text Generation Program
 image-title:
 
 monster-or-magical-or-religious-ideas:

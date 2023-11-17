@@ -48,8 +48,8 @@ coordinates:
 
 image: "/img/2023-10-12/art-of-the-possible.png"
 image-alt: "Breaking Free from the Possible"
-image-author: "Ted Tschopp"
-image-author-URL: "https://tedt.org/"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
 image-credits: "Ted Tschopp"
 image-credits-URL: "https://tedt.org/"
 image-credits-artist: "Ted Tschoppe"

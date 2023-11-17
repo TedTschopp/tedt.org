@@ -40,8 +40,8 @@ coordinates:
 
 image: /img/2022-12/TTRPG-Gamma-World-ASCII-Art.jpg
 image-alt: Gamma World 1st Edition RPG Books and dice
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.facebook.com/mudpuppycomics
 image-credits-artist: Jim Wampler

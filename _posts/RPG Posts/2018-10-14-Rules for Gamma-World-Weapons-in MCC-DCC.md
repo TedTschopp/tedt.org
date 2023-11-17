@@ -45,8 +45,8 @@ coordinates:
 
 image: /img/2018-10-14/seth-justus-huntersalienguns.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25
 image-credits-URL: https://www.artstation.com/artwork/lqz25
 image-credits-artist: Seth Justus

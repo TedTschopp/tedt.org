@@ -48,12 +48,12 @@ coordinates:
 
 image: /img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.jpg
 image-alt: The Schächental Valley
-image-author: Ted Tschopp
-image-author-URL: 
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: 
 image-credits-URL: 
-image-credits-artist: 
-image-credits-artist-URL: 
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
 image-credits-title: The Schächental Valley
 image-description:  The Schächental Valley
 image-title:  The Schächental Valley

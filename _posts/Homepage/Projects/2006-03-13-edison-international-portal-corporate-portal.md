@@ -42,8 +42,8 @@ coordinates:
 
 image: /img/2011-02/edisonintl_2dlogon.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: EIX Portal  by Ted Tschopp
 image-credits-URL:
 image-credits-artist:

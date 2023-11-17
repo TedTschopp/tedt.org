@@ -114,16 +114,16 @@
 
                         {% if page.image-credits-artist %}
                             {% assign image_credits = page.image-credits-artist %}
-                        {% elsif page.image-author %}
-                            {% assign image_credits = page.image-author %}
+                        {% elsif page.image-artist %}
+                            {% assign image_credits = page.image-artist %}
                         {% else %}
                             {% assign image_credits = "Unknown" %}
                         {% endif %}
 
                         {% if page.image-credits-artist-URL %}
                             {% assign image_credits_artist_URL = page.image-credits-artist %}
-                        {% elsif page.image-author-URL %}
-                            {% assign image_credits_artist_URL = page.image-author-URL %}
+                        {% elsif page.image-artist-URL %}
+                            {% assign image_credits_artist_URL = page.image-artist-URL %}
                         {% endif %}
 
                         {% if page.image %}

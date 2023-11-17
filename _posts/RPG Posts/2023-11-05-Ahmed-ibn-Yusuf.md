@@ -35,8 +35,8 @@ coordinates:
     longitude: -117.9709
 image: /img/2023-11-05/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.jpg
 image-alt: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
-image-author: Ted Tschopp
-image-author-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist:

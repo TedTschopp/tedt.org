@@ -56,8 +56,8 @@ coordinates:
 
 image: /img/2023-10-29/Michael-JX Moonwalking Through the Apocalypse.png
 image-alt: "The imposing figure of Michael-JX in a barren wasteland"
-image-author: Ted Tschopp
-image-author-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist:

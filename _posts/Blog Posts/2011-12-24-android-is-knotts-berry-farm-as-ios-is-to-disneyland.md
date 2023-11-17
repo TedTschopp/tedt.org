@@ -47,8 +47,8 @@ coordinates:
 
 image: /img/2013-06/main-street-disney-mickey-statue-e1371582793846.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

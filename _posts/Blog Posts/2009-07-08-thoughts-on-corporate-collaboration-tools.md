@@ -46,8 +46,8 @@ coordinates:
 
 image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist: Ted Tschopp and Midjourney

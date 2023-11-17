@@ -50,8 +50,8 @@ coordinates:
 
 image: /img/2013-11/modules-283e329ee51bbee11f4765c3501e7d1b.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:

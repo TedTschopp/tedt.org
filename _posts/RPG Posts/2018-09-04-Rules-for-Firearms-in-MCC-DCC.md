@@ -48,8 +48,8 @@ coordinates:
 
 image: /img/2018-09-04/MCC-Guns.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Weapon & Prop Concepts by Matthew Harris https://megalomatthew.artstation.com/
 image-credits-URL: https://larsson.artstation.com/projects/qOJQn
 image-credits-artist: Matthew Harris

@@ -41,16 +41,16 @@ coordinates:
     longitude:
 
 image: /img/home/Ted-Tschopp-board-game-table.jpg
-image-alt:
-image-author:
-image-author-URL:
+image-alt: Board game table in the style of dark purple and brown, tilt-shift photography
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: Board Game Night by Ted Tschopp and Midjourney
 image-credits-URL:
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL:
+image-credits-artist-URL: https://www.tedt.org/
 image-credits-title: Board Game Night
-image-description:
-image-title:
+image-description: Board game table in the style of dark purple and brown, tilt-shift photography
+image-title: Board Game Night
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

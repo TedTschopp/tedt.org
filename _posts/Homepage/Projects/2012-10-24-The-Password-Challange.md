@@ -41,16 +41,16 @@ coordinates:
     longitude:
 
 image: /img/home/password.jpg
-image-alt:
-image-author:
-image-author-URL:
+image-alt: List of Passwords used in my password challenge application
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits: Password List by Ted Tschopp https://github.com/TedTschopp/The-Password-Challange
 image-credits-URL: https://github.com/TedTschopp/The-Password-Challange
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL:
+image-credits-artist-URL: https://www.tedt.org/
 image-credits-title: Password List
-image-description:
-image-title:
+image-description: List of Passwords used in my password challenge application
+image-title: Password List
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

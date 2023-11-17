@@ -60,8 +60,8 @@ coordinates:
 
 image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: MidJourney and Ted Tschopp
 image-credits-URL:
 image-credits-artist: MidJourney and Ted Tschopp

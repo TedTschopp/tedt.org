@@ -47,8 +47,8 @@ coordinates:
 
 image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: https://www.tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney

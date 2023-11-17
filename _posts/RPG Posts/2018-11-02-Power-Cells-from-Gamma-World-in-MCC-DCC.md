@@ -44,8 +44,8 @@ coordinates:
 
 image: /img/2018-11-02/FuelCellRenders2.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: District 9 Alien Fuel Cell by Josh Haberman https://www.artstation.com/artwork/lqz25
 image-credits-URL: https://artofjoshhaberman.blogspot.com/2012/08/district-9-alien-fuel-cell.html
 image-credits-artist: Josh Haberman

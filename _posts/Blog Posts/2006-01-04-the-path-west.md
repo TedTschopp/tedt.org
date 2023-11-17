@@ -41,20 +41,17 @@ coordinates:
     longitude: -118.069288
 
 
-image:
-image-alt:
-image-author:
-image-author-URL:
+image: /img/2006-01/The-Path-West.jpg
+image-alt: sands slip through outstretched fingers, A serene beach at sunset, waves gently lap the shore, A lone figure stands in contemplation, reflections on time, forgiveness, life's journey expressed 
+image-artist: Ted Tschopp
+image-artist-URL: https://www.tedt.org/
 image-credits:
 image-credits-URL:
 image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description: An image of a serene beach at sunset, where waves gently lap the
-    shore and sands slip through outstretched fingers. A lone figure stands in contemplation,
-    symbolizing the reflections on time, forgiveness, and life's journey expressed
-    in the poem.
-image-title:
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title: The Path West
+image-description: sands slip through outstretched fingers, A serene beach at sunset, waves gently lap the shore, A lone figure stands in contemplation, reflections on time, forgiveness, life's journey expressed 
+image-title: The Path West
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

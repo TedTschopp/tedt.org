@@ -51,8 +51,8 @@ coordinates:
 
 image: /img/2023-10-17/A_blacksmith_making_weapons_in_a_hollowed_out_tree.png
 image-alt: A blacksmith making fictional weapons.
-image-author: Ted Tschopp
-image-author-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits:
 image-credits-URL:
 image-credits-artist:

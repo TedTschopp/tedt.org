@@ -50,8 +50,8 @@ coordinates:
 
 image: /img/2019-01/ICBM.jpg
 image-alt: Picture of an ICBM
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL: null
 image-credits-artist: John Wilson

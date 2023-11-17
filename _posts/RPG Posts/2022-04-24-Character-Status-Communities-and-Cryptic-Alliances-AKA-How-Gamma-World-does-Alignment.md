@@ -50,8 +50,8 @@ coordinates:
 
 image: /img/2022-04/24/community-life.png
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits: Art from Gamma World 6th Edition
 image-credits-URL:
 image-credits-artist:

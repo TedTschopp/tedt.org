@@ -50,8 +50,8 @@ coordinates:
 
 image: /img/2023-10-29/Basilisk_mit_Basler_Wappen.jpg
 image-alt: 
-image-author: Andreas Schwarzkopf
-image-author-URL: https://commons.wikimedia.org/wiki/User:Andreas_Schwarzkopf
+image-artist: Andreas Schwarzkopf
+image-artist-URL: https://commons.wikimedia.org/wiki/User:Andreas_Schwarzkopf
 image-credits: 
 image-credits-URL: https://commons.wikimedia.org/wiki/File:Basilisk_mit_Basler_Wappen.jpg
 image-credits-artist: Ted Tschopp and Midjourney

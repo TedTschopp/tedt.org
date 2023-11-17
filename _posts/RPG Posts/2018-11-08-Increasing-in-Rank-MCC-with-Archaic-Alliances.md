@@ -44,8 +44,8 @@ coordinates:
 
 image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
 image-alt:
-image-author:
-image-author-URL:
+image-artist:
+image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:
