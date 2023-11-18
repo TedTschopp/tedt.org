@@ -107,6 +107,7 @@ image-credits-artist: Ted Tschopp and Midjourney
 
 image-artist-URL:
 image-credits-artist-URL:
+
 image-credits-URL: https://www.tedt.org/
 
 
@@ -150,8 +151,6 @@ image-title:
                             {% assign image_credits_artist_URL = page.image-credits-artist %}
                         {% elsif page.image-artist-URL %}
                             {% assign image_credits_artist_URL = page.image-artist-URL %}
-                        {% elsif page.image-credits-URL%}
-                            {% assign image_credits_artist_URL = page.image-credits-URL %}
                         {% endif %}
 
                         {% if page.image %}
@@ -168,8 +167,7 @@ image-title:
                             <img class="img-responsive img-thumbnail" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
                             <figcaption>
 
-                                {% if page.image-credits-URL %}
-                                    {% if image-credits_URL contains "http" %}
+                                    {% if image-credits-URL contains "http" %}
                                         <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
                                     {% else %}
                                         <cite>"{{image_credits_title}}"</cite>
@@ -179,10 +177,7 @@ image-title:
                                     {% else %}
                                         by {{image_credits}}
                                     {% endif %}
-                                {% else %}
-                                    <cite>"{{image_credits_title}}"</cite> by <span class="vcard"><address style="display: inline;" class="author">{{image_credits}}</address></span>
-                                {% endif %}
-                                
+                               
                             </figcaption>
                         </figure>
 
