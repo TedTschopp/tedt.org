@@ -66,14 +66,10 @@ image-title: "The Haunting of Brunnegg Castle"
 monster-or-magical-or-religious-ideas: "Haunted castle, supernatural snowstorm, cursed bailiff"
 year-the-event-took-place: [Insert year if known or leave blank]
 
-
 mathjax:
-
 order:
----
 
 ---
-
 
 > <ins> Swiss Legends from Aargau, Volume 1</ins>
 > 
@@ -83,7 +79,6 @@ order:
 >
 > Page 187
 > 
-
 {: .reference }
 
 ---
@@ -95,7 +90,9 @@ order:
 > Well-read people call him Gessler[^4] and believe he is the same man who forced Tell to shoot at his own child.
 {: .folklore }
 
-> >###### As noted by: T. Tschopp
+---
+
+> ###### As noted by: T. Tschopp
 > 
 > ### General Information
 > - **Title**: The Bailiff of Brunnegg
@@ -122,6 +119,7 @@ order:
 > 
 {: .notes }
 
+---
 
 [^1]: Brunegg Castle, known as Schloss Brunegg in German, is located in the municipality of Brunegg, in the canton of Aargau, Switzerland. Constructed in the 13th century on a hill at the edge of the Jura Mountains, the castle was likely built as part of the Habsburg border defenses, along with nearby Wildegg Castle. It was occupied by Habsburg knights, including the notable Schenken von Brunegg and Gessler von Meienberg. 
 
