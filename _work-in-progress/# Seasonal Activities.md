@@ -1,15 +1,14 @@
+# Activities
 
 ## Interrupted Activities
 
-| Category | Name of the Activity | What’s going on?                                                                                                                                                                                                                                      | Rules                                        |
-|--|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| Category  | Name of the Activity | What’s going on?                                                                                                                                                                                                                                      | Rules                                        |
+|-----------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | Intrupted | Face Death           | When you encounter a situation where death is an immediate and unavoidable outcome, or when you are brought to the brink of death with a chance for recovery or redemption. When you are brought to the brink of death, and glimpse the world beyond. | When Physical Damage Exceeds your threshold. |
 | Intrupted | Face Desolation      | When you are brought to the brink of desolation and terror                                                                                                                                                                                            | When Spiritual Damage Exceeds your threshold |
 | Intrupted | Face Abandonment     | When you are brought to the brink of social degradation and destruction.                                                                                                                                                                              | When Social Damage Exceeds your threshold    |
 | Intrupted | Face Duress          | When you are brought to the brink of mental exhaustion and autonomous reactions.                                                                                                                                                                      | When Mental Damage Exceeds your threshold    |
 | Intrupted | Overcome Destruction | When all your gear, equipment, steeds, vehicles, devices, modules, and other possessions are destroyed or irrevocably lost.                                                                                                                           | Rules TBD                                    |
-
-
 
 ### Face Death
 
@@ -18,7 +17,6 @@ You are had heard of the harrowing experience of your physical body failing you 
 You discover alternative means of communication and strive to make your presence known. Through the tireless efforts of loved ones and dedicated medical professionals, you eventually find a way to communicate with the outside world, albeit in unconventional ways. Each small triumph becomes a monumental victory, and the love and support that surrounds you ignite a flicker of hope. You redefine your perception of life and resilience as you navigate the darkest corners of existence. Though your physical body may be incapacitated, your indomitable spirit burns bright, leaving an indelible mark on all who bear witness to your profound determination and will to survive.
 
 As you embark on the journey to complete healing, the first step lies in reclaiming mastery over your physical body. Through relentless determination and the unwavering support of medical professionals, you undergo rigorous physical therapy and rehabilitation. Each day presents new challenges, but you confront them with unwavering courage. Slowly, the strength returns to your limbs, and you gain greater control over your movements. The once-distant dream of mobility becomes a reality as you take your first steps unaided. You learn to cherish the simple act of standing, walking, and embracing the world around you. This arduous process not only rebuilds your physical abilities but also cultivates an unyielding resilience that serves as the foundation for your remarkable recovery.
-
 
 #### Face Death -- Put in Rules
 
@@ -52,15 +50,15 @@ The "Face Death" activity immerses your character in a harrowing experience of p
 
 "Face Death" is a profound journey of resilience, triumph, and the unwavering will to survive, offering a narrative rich in emotional depth and the strength that emerges from confronting the darkest challenges.
 
-
 ### Face Desolation
+
 You are had heard of the profound impact of a loss of faith and spirituality, but living through it is a soul-shattering ordeal that leaves you adrift in a sea of doubt and self-blame. The once unwavering foundation of your belief system crumbles, and you find yourself questioning the very essence of your existence. The weight of perceived failure in meeting spiritual obligations becomes overwhelming, and you feel disconnected from any sense of purpose or divine guidance. A deep sense of emptiness settles within you, and the rituals and practices that once brought you solace now seem hollow and meaningless. You grapple with feelings of guilt and unworthiness, wondering why you have been unable to attain the spiritual enlightenment and understanding that others seem to effortlessly embody. As you distance yourself from the faith community, you may experience a sense of isolation and loneliness, as the sense of belonging and support that once flourished in your spiritual life fades away. 
 
 Yet, amid the desolation, you embark on a journey of introspection and self-discovery. You explore different perspectives and seek answers to the existential questions that haunt you. Gradually, you come to realize that spirituality is a deeply personal and evolving aspect of life, and it doesn't have to conform to rigid expectations or preconceived notions. You find solace in the beauty of uncertainty and learn to embrace the complexities of the human experience. While the road to rediscovering faith may be arduous, this experience teaches you the importance of self-compassion and the potential for growth and resilience in the face of profound personal transformation.
 
 The journey to healing your spirituality is a deeply personal and transformative process. In the wake of your physical and emotional challenges, you reevaluate your beliefs and relationship with the divine. You seek solace in meditation, prayer, or introspective practices, finding comfort and connection in the vastness of the universe. This journey is not confined to a particular religion or doctrine but rather unfolds as an exploration of your own inner truths. You discover that healing the spirit involves finding meaning in adversity and embracing the profound interconnectedness of all living beings. As you walk the path of spiritual growth, you find a profound sense of purpose and peace, guided by the knowledge that your existence is a part of something much greater. Through this inner journey, you uncover the strength to overcome the darkest moments and emerge with a profound appreciation for the beauty and sanctity of life.
 
-#### Face Desolation
+#### Facing Desolation
 
 "In the abyss of lost faith, the journey to rediscovery begins."
 
@@ -114,7 +112,7 @@ Yet, amidst the bleakness, a glimmer of hope emerges through therapy, support fr
 
 As you reemerge into the world, you encounter the complex task of rebuilding your social standing. Your supposed demise had a profound impact on those around you, leaving them grappling with grief and loss. The process of reconnecting with loved ones is both heartwarming and challenging, as you navigate their conflicting emotions of joy and pain. With empathy and open communication, you strive to bridge the gap and rebuild the relationships that once brought you comfort and support. This journey of healing also includes confronting the judgments and misconceptions of those who doubted your survival. You find strength in the unwavering loyalty of friends and family who stood by you, reminding you that you are not defined by others' perceptions of you. Through compassion and understanding, you rebuild your social standing, solidifying the bonds of love and support that will fortify you throughout life's journey.
 
-#### Face Abandonment
+#### Facing Abandonment
 
 "In the depths of isolation, the journey to reclaim connection unfolds."
 
@@ -160,7 +158,6 @@ As you reemerge into the world, you encounter the complex task of rebuilding you
 
 "Face Abandonment" is a poignant narrative of isolation, healing, and rebuilding connections, emphasizing the power of compassion and understanding in overcoming profound challenges.
 
-
 ### Face Duress
 
 You are had heard of the notion of mental breakdowns, but experiencing it firsthand has been a life-altering journey. The weight of the world becomes unbearable as your mind becomes a storm of chaos and confusion. In the midst of the breakdown, your thoughts spiral uncontrollably, and the once familiar terrain of your mind becomes a treacherous maze. Basic daily tasks become insurmountable challenges, and you find yourself unable to muster even the simplest of actions without immense effort. The world around you feels distant and surreal as you struggle to connect with reality. Emotions overwhelm you, fluctuating between numbness and overwhelming despair. Time seems to lose its grip as the days blend into an indistinguishable haze. You feel isolated, unable to express the magnitude of your inner turmoil to those around you. 
@@ -169,7 +166,7 @@ Despite the darkness, a flicker of hope emerges in the form of professional help
 
 Healing the wounds of the mind requires a different type of journey, one that delves into the depths of your emotions and thoughts. Amidst the darkness of despair, you seek solace in therapy and counseling, addressing the trauma that engulfed you during your immobilization. Through introspection and self-compassion, you confront the overwhelming emotions and fears that threatened to consume you. With the guidance of skilled professionals, you develop coping strategies to manage anxiety and depression, empowering yourself to face life's challenges head-on. The journey of healing the mind is a gradual process, and there are moments of vulnerability and setbacks, but you discover newfound resilience in your emotional landscape. You embrace the power of self-acceptance and learn to find strength in vulnerability, allowing yourself to grow and heal in the face of adversity.
 
-#### Face Duress
+#### Facing Duress
 
 "In the depths of mental chaos, the journey to rediscover clarity unfolds."
 
@@ -215,9 +212,9 @@ Healing the wounds of the mind requires a different type of journey, one that de
 
 "Face Duress" is a poignant narrative of navigating mental chaos, rediscovering clarity, and embracing the transformative power of self-acceptance and growth.
 
-# Seasonal Activities
+## Seasonal Activities
 
-## Base Activities
+### Base Activities
 
 | Rules | Category | Name of the Activity | What you are doing or where you can do it                                                 | Rules                                                                                                                   |
 |-------|----------|----------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -229,33 +226,12 @@ Healing the wounds of the mind requires a different type of journey, one that de
 |       | Base     | Training             | Anywhere you have access to a trainer                                                     | Advance one level (Child / Commoner -\> Apprentice -\> Journeyman -\> Master -\> Grand Master -\> Apotheosis -\> Deity) |
 | y     | Base     | Bequeath             | Managing your family affairs                                                              |                                                                                                                         |
 
-| Rules | Category  | Name of the Activity                                                    | Where are you?                                                                                                                                                                                              | What you are doing or where you can do it                                                                                                                                                                                                    | Rules                             |
-|-------|-----------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| x     | Depart    | Undertake a journey                                                     |                                                                                                                                                                                                             | When you travel across hazardous or unfamiliar lands.                                                                                                                                                                                        |                                   |
-| y     | Socialize | Make a Connection                                                       | When you search out a new relationship or give focus to an existing relationship that you have no connection with. Create a connection by increasing the rank of that connection from unknown to connected. |                                                                                                                                                                                                                                              |                                   |
-| y     | Socialize | Forge a Bond                                                            | When your relationship with a connection is ready to evolve. When you spend significant time with a person or community, stand together to face hardships, or make sacrifices for their cause               | Advance the state of a relationship with a connection by 1 rank.                                                                                                                                                                             |                                   |
-| y     | Socialize | Aid a Connection                                                        | When you act in direct support of a connection.                                                                                                                                                             | Advance the state of a relationship with a connection by 2 ranks.                                                                                                                                                                            |                                   |
-| y     | Socialize | Compel a Connection                                                     | When you try to persuade someone to do something or make them an offer                                                                                                                                      | Success indicates that the connection does as you request, failure indicates that you reduce the state of your relationship with that connection by 2 ranks.                                                                                 |                                   |
-| y     | Socialize | Test your Connection                                                    | When your bond with a connection is tested through conflict, betrayal, or circumstance                                                                                                                      | Success indicates that your relationship survives the turmoil of this phase. Failure indicates the number of ranks you will reduce this relationship by.                                                                                     |                                   |
-| y     | Socialize | Hearten - When you socialize, share intimacy, or find a moment of peace | See Recovery Activities                                                                                                                                                                                     |                                                                                                                                                                                                                                              |                                   |
-| x     | Sojurn    | Gain a new Trait/New Distinctive Feature/Specialty                      | Anywhere                                                                                                                                                                                                    |                                                                                                                                                                                                                                              | Replace old Trait with a new one. |
-| x     | Sojurn    | Meet Patron                                                             | Anywhere                                                                                                                                                                                                    | Gain counsel/aid from a patron                                                                                                                                                                                                               |                                   |
-| x     | Sojurn    | Establish a New Safe Haven                                              | Anywhere                                                                                                                                                                                                    | All companions must select undertaking. Current location becomes a sanctuary.                                                                                                                                                                |                                   |
-| x     | Sojurn    | Receive Title                                                           | Anywhere you are a foreigner                                                                                                                                                                                | You Social Score now applies to to the culture you are in, and you are gifted with a house and / or holdings.                                                                                                                                |                                   |
-| x     | Sojurn    | Search for Answers  (Research Lore)                                     | Anywhere                                                                                                                                                                                                    | Lore roll to gain insight or information about your location or about a location your currently location has information on.                                                                                                                 |                                   |
-| x     | Sojurn    | Rallying Allies                                                         | Anywhere                                                                                                                                                                                                    | Raise your social score for one issue for one sixth of normal Treasure cost, for this phase and the next.                                                                                                                                    |                                   |
-| x     | Sojurn    | Write a Song, Book, or other Piece of Art                               | Anywhere                                                                                                                                                                                                    | Compose a song to add to company’s list of songs.                                                                                                                                                                                            |                                   |
-| -     | Sojurn    | Gain a Virtue                                                           | Anywhere                                                                                                                                                                                                    | Spend time among the people you are currently living among and gain a cultural virtue from their culture.                                                                                                                                    |                                   |
-| -     | Sojurn    | Gain a Cultural Virtue                                                  | Homeland                                                                                                                                                                                                    | Journey back to the homeland of your culture and spend the current phase gaining an additional cultural virtue from your own culture.                                                                                                        |                                   |
-|       | Sojurn    | Go See a Scholar                                                        | Anywhere                                                                                                                                                                                                    | Reveal a Wondrous Artefact’s Blessings; or a Famous Weapon or Armour’s Banes and the next hidden Quality.                                                                                                                                    |                                   |
-|       | Sojurn    | Influence Patron                                                        | Anywhere                                                                                                                                                                                                    | Convince your Patron to take actions in line with what they would like to see happen in the world but haven't yet made a priority. For example, asking a local king to allow a local lord to repair the road from their town to the Capital. |                                   |
-|       | Sojurn    | Confer with a Sage                                                      | Anywhere                                                                                                                                                                                                    | Gain next Lore, Travel, Explore level at half cost in Advancement points. Or acquire one of the Sage's hobby traits.                                                                                                                         |                                   |
-|       | Sojurn    | Visit the Artificer                                                     | Anywhere                                                                                                                                                                                                    | Custom Modify an item or weapon.                                                                                                                                                                                                             |                                   |
-|       | Sojurn    | Guard                                                                   | Anywhere where guards are needed                                                                                                                                                                            | Roll on table see outcome.                                                                                                                                                                                                                   |                                   |
-|       | Sojurn    | Patrol the Wild                                                         | Anywhere with wildland                                                                                                                                                                                      | Gain benefits of wilderness-lore for next Adventuring phase. If you already have wilderness-lore, gain two benefits from invocation.                                                                                                         |                                   |
-|       | Training  |                                                                         |                                                                                                                                                                                                             |                                                                                                                                                                                                                                              |                                   |
+| Rules | Category | Name of the Activity                               | Where are you?                   | What you are doing or where you can do it                                                                                                                                                                                                    | Rules                             |
+|-------|----------|----------------------------------------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| x     | Depart   | Undertake a journey                                |                                  | When you travel across hazardous or unfamiliar lands.                                                                                                                                                                                        |                                   |
+|       | Training |                                                    |                                  |                                                                                                                                                                                                                                              |                                   |
 
-## Legacy
+### Legacy
 
 Your character becomes an NPC and spends their time doing any number of the following activites.  It is recommended that you still keep track of what your character is doing, but now the Referee is in charge chosing the seasonal activites they are involved in.  Some ideas include.
 
@@ -290,7 +266,7 @@ Your character becomes an NPC and spends their time doing any number of the foll
 | x              | Legacy   | Bestow a Title or Position          | (Social/Mental) Designate a successor or establish a new position, involving mentoring and social networking, possibly with magical undertones.  |
 |                | Legacy   | Establish a Safe Haven or Sanctuary | (Physical/Spiritual) Create a refuge or sanctuary, focusing on physical construction and imbuing it with protective magic or spiritual peace.    |
 
-### Pass Down Knowledge or Skill
+#### Pass Down Knowledge or Skill
 
 "Learning is an ornament in prosperity, a refuge in adversity, and a provision in old age." – Aristotle
 
@@ -298,7 +274,7 @@ As your character's journey progresses, they accumulate a wealth of knowledge an
 
 When engaging in this activity, envision whom your character would choose as their protégé. It might be a young adventurer thirsty for knowledge, a member of your community eager to learn a trade, or perhaps a relative looking to follow in your footsteps. This transfer of wisdom can take many forms: a series of intensive training sessions, the crafting of a detailed manuscript, or even a long-term mentorship.
 
-#### Rules for Passing Down Knowledge or Skill
+##### Rules for Passing Down Knowledge or Skill
 
 To successfully pass down your knowledge or skill, select the specific area of expertise you wish to impart. This can be a skill your character is proficient in, a piece of lore they have uncovered, or a unique technique they have mastered.
 
@@ -315,7 +291,7 @@ To successfully pass down your knowledge or skill, select the specific area of e
 
 Remember, this activity isn't just about the transfer of skills; it's about the legacy your character is building and the bonds they forge along the way.
 
-### Establish a Legacy Project
+#### Establish a Legacy Project
 
 "The greatest use of a life is to spend it on something that will outlast it." – William James
 
@@ -323,7 +299,7 @@ In the course of their adventures, characters often dream of leaving a lasting m
 
 This endeavor is not just about leaving a physical legacy; it's about creating something that embodies the spirit and story of your character, a testament to their life and efforts that will benefit future generations.
 
-#### Rules for Establishing a Legacy Project
+##### Rules for Establishing a Legacy Project
 
 1. **Conceptualize the Project**: Determine the nature of the legacy project. It should align with your character’s history, abilities, and the resources they have access to. This could be a building, an institution, an event, or any other long-lasting endeavor.
 
@@ -342,13 +318,13 @@ This endeavor is not just about leaving a physical legacy; it's about creating s
 
 Engaging in this activity allows for deep character development and can significantly impact the game world, offering a tangible manifestation of your character's journey and ideals.
 
-### Craft a Heirloom
+#### Craft a Heirloom
 
 "To bequeath an heirloom is to consign a piece of oneself to eternity." – Marguerite Yourcenar
 
 The "Craft a Heirloom" activity is a unique opportunity for your character to create a tangible legacy, an item imbued with history, meaning, and power. This heirloom could be a weapon, a piece of jewelry, a magical artifact, or any item that holds significant personal value. The process of crafting this item is not just about the physical creation but also about infusing it with the essence of your character’s journey, beliefs, and aspirations.
 
-#### Rules for Crafting a Heirloom
+##### Rules for Crafting a Heirloom
 
 1. **Design the Heirloom**: Begin by deciding what type of item you want to create. It should be something that resonates with your character's story and abilities. This could be a sword crafted by a renowned warrior, a mystical amulet from a skilled mage, or a unique tool made by a master artisan.
 
@@ -367,13 +343,13 @@ The "Craft a Heirloom" activity is a unique opportunity for your character to cr
 
 Crafting an heirloom is a deeply personal and potentially game-changing activity. It allows your character to leave a lasting mark on the world, creating an item that can carry their legacy forward.
 
-### Compose a Legendary Tale or Song
+#### Compose a Legendary Tale or Song
 
 "Words are, in my not-so-humble opinion, our most inexhaustible source of magic." – J.K. Rowling, "Harry Potter and the Deathly Hallows"
 
 The activity "Compose a Legendary Tale or Song" provides a unique opportunity for your character to capture their experiences, values, and the essence of their journey in a creative and enduring format. Whether it's a tale that speaks of heroism, a ballad of lost love, or an epic poem detailing great adventures, this composition becomes a part of the world's cultural heritage, potentially sung or recounted for generations to come.
 
-#### Rules for Composing a Legendary Tale or Song
+##### Rules for Composing a Legendary Tale or Song
 
 1. **Choose the Theme**: Decide on the central theme or story of your composition. It could be based on your character’s personal adventures, a significant historical event in the game world, or a fictional narrative that parallels your character's journey.
 
@@ -392,13 +368,13 @@ The activity "Compose a Legendary Tale or Song" provides a unique opportunity fo
 
 Composing a legendary tale or song allows players to explore their characters' creative sides and leave a lasting artistic mark on the game world. It can add depth to the character's story and create new connections within the game's narrative.
 
-### Endow a Scholarship or Grant
+#### Endow a Scholarship or Grant
 
 "Education is the most powerful weapon which you can use to change the world." – Nelson Mandela
 
 The "Endow a Scholarship or Grant" activity allows your character to make a lasting impact on the education and development of others in the game world. Whether it's funding young adventurers, supporting scholars, or enabling artisans to master their craft, this endowment is a testament to your character's commitment to growth, knowledge, and the betterment of others.
 
-#### Rules for Endowing a Scholarship or Grant
+##### Rules for Endowing a Scholarship or Grant
 
 1. **Define the Purpose**: Determine the focus of your scholarship or grant. It could be aimed at supporting academic pursuits, training in specific skills, or aiding in magical studies. The purpose should align with your character’s values and experiences.
 
@@ -417,13 +393,13 @@ The "Endow a Scholarship or Grant" activity allows your character to make a last
 
 Endowing a scholarship or grant is a powerful way for characters to influence the game world beyond their immediate adventures, supporting the growth and development of others and leaving a mark that lasts beyond their own story.
 
-### Create a Map or Chronicle
+#### Create a Map or Chronicle
 
 "Geography is the subject which holds the key to our future." – Michael Palin
 
 In the "Create a Map or Chronicle" activity, your character takes on the role of a cartographer or historian, documenting the landscapes they've traversed or the events they've witnessed. This can be a detailed map charting unexplored territories or a comprehensive chronicle capturing the tales of their adventures and the histories of the lands they've encountered. This endeavor is more than a mere record; it's a legacy of exploration and knowledge, a guide for future generations.
 
-#### Rules for Creating a Map or Chronicle
+##### Rules for Creating a Map or Chronicle
 
 1. **Decide the Scope**: First, determine whether your character is creating a map, a historical record, or a combination of both. The scope can range from the local areas your character has explored to a grand narrative of their entire journey.
 
@@ -442,13 +418,13 @@ In the "Create a Map or Chronicle" activity, your character takes on the role of
 
 Creating a map or chronicle allows a character to encapsulate their experiences and knowledge in a tangible form, offering a unique contribution to the game's lore and setting.
 
-### Plant a Legacy Tree or Garden
+#### Plant a Legacy Tree or Garden
 
 "He that plants trees loves others beside himself." – Thomas Fuller
 
 The "Plant a Legacy Tree or Garden" activity allows your character to create a living legacy, a testament to their connection with nature, life, and the passage of time. This could be a single, significant tree or a whole garden designed to symbolize important aspects of your character's life and journey. Such a living memorial not only beautifies the landscape but also serves as a place of reflection, inspiration, and remembrance for generations to come.
 
-#### Rules for Planting a Legacy Tree or Garden
+##### Rules for Planting a Legacy Tree or Garden
 
 1. **Choose the Location and Type**: Select a meaningful location for your tree or garden. This could be near your character’s home, in a land they have a deep connection with, or a place where a significant event occurred. Then decide what type of tree or plants will be featured, each possibly holding symbolic meaning related to your character’s life or beliefs.
 
@@ -467,13 +443,13 @@ The "Plant a Legacy Tree or Garden" activity allows your character to create a l
 
 Planting a legacy tree or garden is a profound way for characters to connect with the natural world and leave a tangible, living mark on the game world, symbolizing growth, renewal, and the cycle of life.
 
-### Initiate a Festival or Tradition
+#### Initiate a Festival or Tradition
 
 "A good tradition is not the relic of a past that is irretrievably gone; it is a living force that animates and informs the present." – Igor Stravinsky
 
 The "Initiate a Festival or Tradition" activity enables your character to establish a new cultural or social practice that reflects their values, achievements, or experiences. This could be a festival celebrating a significant event, a tradition honoring an important aspect of your character's life, or a ritual commemorating a notable achievement. Such festivals or traditions can enhance the cultural richness of the game world and create lasting bonds among its inhabitants.
 
-#### Rules for Initiating a Festival or Tradition
+##### Rules for Initiating a Festival or Tradition
 
 1. **Conceptualize the Festival or Tradition**: Determine the purpose and nature of the festival or tradition. It should be meaningful and relevant to your character’s journey or the broader game world. This could range from a harvest festival to a day of remembrance, or a ritual celebrating a particular virtue or achievement.
 
@@ -492,13 +468,13 @@ The "Initiate a Festival or Tradition" activity enables your character to establ
 
 Initiating a festival or tradition is a powerful way to influence the social and cultural landscape of the game world. It allows your character to leave a mark that goes beyond their immediate adventures, fostering a sense of community and shared history.
 
-### Bestow a Title or Position
+#### Bestow a Title or Position
 
 "Titles distinguish the mediocre, embarrass the superior, and are disgraced by the inferior." – George Bernard Shaw
 
 In the "Bestow a Title or Position" activity, your character has the opportunity to confer recognition and responsibility upon another individual within the game world. This could be a formal title or a significant position that reflects the recipient's achievements, skills, or potential. By bestowing such an honor, your character not only acknowledges the worth and capabilities of another but also shapes the power dynamics and leadership within a community or organization.
 
-#### Rules for Bestowing a Title or Position
+##### Rules for Bestowing a Title or Position
 
 1. **Select the Recipient**: Choose an individual (NPC or possibly another player's character) who has demonstrated qualities or achievements worthy of recognition. This should be someone whose path has intersected meaningfully with your character's journey.
 
@@ -517,13 +493,13 @@ In the "Bestow a Title or Position" activity, your character has the opportunity
 
 Bestowing a title or position is a significant act that can have far-reaching consequences. It's an opportunity for characters to exercise their influence and leadership, impacting the lives of others and the structure of societies in the game world.
 
-### Establish a Safe Haven or Sanctuary
+#### Establish a Safe Haven or Sanctuary
 
 "Every heart needs a haven." – Jodi Picoult
 
 The "Establish a Safe Haven or Sanctuary" activity allows your character to create a place of safety and peace, a refuge from the dangers and turmoil of the outside world. This could be a shelter for the needy, a sanctuary for wildlife, a retreat for adventurers, or any space dedicated to providing security, healing, and tranquility. Establishing such a haven is not just about building walls; it's about creating a space where stories can pause, characters can rejuvenate, and a sense of community can flourish.
 
-#### Rules for Establishing a Safe Haven or Sanctuary
+##### Rules for Establishing a Safe Haven or Sanctuary
 
 1. **Choose the Location and Purpose**: Select a location for your safe haven or sanctuary. It could be in a secluded wilderness, within a bustling city, or in a place of special significance to your character. Define its primary purpose, whether it's to offer shelter, serve as a base for adventurers, provide healing services, or protect endangered species.
 
@@ -542,7 +518,7 @@ The "Establish a Safe Haven or Sanctuary" activity allows your character to crea
 
 Establishing a safe haven or sanctuary is a profound way for characters to make a tangible, positive difference in the game world. It offers a unique opportunity for role-playing, character development, and influencing the narrative in meaningful ways.
 
-## Bequeath
+### Bequeath
 
 | Rules | Category | Name of the Activity   | Where are you?                                   | What you are doing or where you can do it                                                                                                                                                 | Rules |
 |-------|----------|------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -551,13 +527,13 @@ Establishing a safe haven or sanctuary is a profound way for characters to make 
 | x     | Bequeath | Write your Epilogue    | When you retire from your life as an adventurer. | Become a Patron, Sage, or other character of renown. Requires that you have completed the Name an Heir activity. You may now play as your Heir with your retired character in their role. |       |
 | y     | Bequeath | Name an Heir           | At your Base of Operations                       | Select and heir, Gain 1 Spiritual permanently. May only ever be selected once in a character’s lifetime.                                                                                  |       |
 
-### Courting a Spouse
+#### Courting a Spouse
 
 "In true love, it is the soul that envelops the body." – Friedrich Nietzsche
 
 The "Courting a Spouse" activity in the game allows your character to explore the deeply personal journey of forming a romantic bond, potentially leading to marriage. This venture goes beyond mere adventuring; it involves opening your character's heart to another, considering the implications of such a bond in their life, especially against the backdrop of a perilous lifestyle. Whether driven by love, strategic alliance, or a blend of both, courting is a significant step that adds depth to your character's story.
 
-#### Rules for Courting a Spouse
+##### Rules for Courting a Spouse
 
 1. **Deciding to Court**: The first step is a personal decision. Your character might be drawn to someone they have met on their journeys, like a Loremaster, or see the strategic value in an alliance through marriage. This decision should be informed by your character’s background, experiences, and the current narrative.
 
@@ -579,13 +555,13 @@ The "Courting a Spouse" activity in the game allows your character to explore th
 
 Courting a spouse is a profound and character-defining activity. It offers an opportunity to explore the emotional and personal aspects of your character's life, adding richness and complexity to their story within the game world.
 
-### Give Birth to Children
+#### Give Birth to Children
 
 - **Narrative Focus**: Childbirth should be more narrative-focused than mechanically intensive. It should emphasize the continuation of lineages and the joy of new life in a world often shadowed by darkness.
 
 - **Cultural Context**: Consider the different cultures of your world and how childbirth might be viewed or celebrated differently among them.
 
-#### Rules for giving Birth to Children
+##### Rules for giving Birth to Children
 
 1. **Timing and Decision**: Childbirth can occur during long periods of downtime between adventures or campaigns. It should be a player's choice to pursue this for their character, in consultation with the referee.
 
@@ -607,13 +583,13 @@ Courting a spouse is a profound and character-defining activity. It offers an op
 
 6. **Cultural Celebrations**: Include details on how different cultures celebrate childbirth, adding depth to the world-building.
 
-#### Guidelines for Implementation
+##### Guidelines for Implementation
 
 - **Consent and Comfort**: Ensure all players are comfortable with this aspect of the story. Avoid graphic descriptions and focus on the emotional and cultural significance of childbirth.
 - **Flexibility**: Allow players to be as involved or hands-off with this aspect of their character’s story as they wish.
 - **Narrative Integration**: Make sure that the inclusion of childbirth aligns with the ongoing narrative and enhances the storytelling experience.
 
-### Write your Epilogue - Fix
+#### Write your Epilogue - Fix
 
 When you retire from your life as an adventurer, or succumb to death or desolation, and you have no heir, you may create a new character in your established setting. If you do, roll the challenge dice and compare to each of the former character’s legacy tracks: quests, bonds, and discoveries (one roll per track).
 
@@ -632,13 +608,13 @@ For each miss, choose one.
 ✴ Switch loyalties: Envision how you begin in opposition to your former character’s beliefs, goals, or allegiances.
 ✴ Open Pandora’s Box: Envision how an advancement or discovery has unleashed unexpectedly dire consequences.
 
-### Write Your Epilogue
+#### Write Your Epilogue
 
 "The end is where we start from." – T.S. Eliot
 
 "Write Your Epilogue" is an activity that unfolds when your character retires, passes away, or faces a significant turning point, and you opt to create a new character within the same setting. This process allows the legacy of your former character – their quests, bonds, and discoveries – to influence your new character's journey. It's a way of weaving the stories of different characters together, creating a rich tapestry of interconnected narratives.
 
-### Rules for Writing Your Epilogue
+#### Rules for Writing Your Epilogue
 
 1. **Retirement or Conclusion**: When your character's adventuring life comes to an end due to retirement, death, or other significant reasons, and you do not have an heir, the stage is set for writing the epilogue.
 
@@ -666,7 +642,7 @@ For each miss, choose one.
 
 "Write Your Epilogue" is a meaningful way to transition from one character to another, ensuring that the legacy of a former character continues to echo through the game world, influencing new stories and adventures.
 
-### Name an Heir - to fix
+#### Name an Heir - to fix
 
 "In his will he hath bequeathed to you his mansion, his plate, his money and his lands." - William Shakespeare, "Much Ado About Nothing"
 
@@ -676,13 +652,13 @@ When you choose this undertaking, you must name an heir and note it on your char
 
 This choice is a one-time event; you can't name another heir later.
 
-### Name an Heir - Fixed
+#### Name an Heir - Fixed
 
 "Legacy is not leaving something for people. It's leaving something in people." – Peter Strople
 
 The "Name an Heir" activity allows your character to designate a successor, a symbolic and literal passing of the torch to a new generation. This heir, chosen for their potential to embody and continue your character’s legacy, becomes a significant figure in your narrative, embodying your character's hopes and values. The act of naming an heir is not just about bequeathing material possessions but is a profound statement of trust and expectation, a hope that your battles and beliefs will live on.
 
-#### Rules for Naming an Heir
+##### Rules for Naming an Heir
 
 1. **Selection of the Heir**: When you decide to name an heir, consider who in the game world embodies aspects of your character’s spirit and values. This person becomes more than a mere recipient of material wealth; they are the continuation of your character’s story.
 
@@ -701,9 +677,27 @@ The "Name an Heir" activity allows your character to designate a successor, a sy
 
 Naming an heir in the game is a powerful and character-defining choice. It's an opportunity to explore themes of legacy, hope, and the continuation of ideals beyond a single character's lifetime, adding depth and continuity to the storytelling experience.
 
-* * *
+##### To Fix
 
-## Recover
+###### Family Heritage
+
+Upon designating an heir, you have the opportunity to pass on one of your favored skills as a family inheritance. This skill should truly embody who you are, based on both gameplay and personal preference.
+
+Should you retire or meet an untimely end, your heir inherits this skill as an additional favored skill. Moreover, whenever the heir employs this inherited skill, a single special die roll results in an extraordinary success.
+
+###### Heirloom
+
+You can also earmark a singularly wondrous artifact or a renowned weapon or armor to pass onto your heir.
+
+The heir can claim this legacy item as a reward when their level of bravery allows it. Notably, any latent abilities within weapons or armor become automatically activated when claimed by the heir. In the case of wondrous artifacts, any hidden blessings are revealed when the heir takes possession of it.
+
+These legacy items can never be exchanged to boost your social standing or be replaced by similar items; they are more than just objects. They are sacred legacies, intended to be passed down to a worthy successor and not discarded lightly.
+
+###### Sombre Legacy
+
+The burden of continuing a loved one's mission is heavy. Your heir starts their journey carrying 1 permanent Shadow point for each flaw you possessed at the time of your retirement or death
+
+### Recover
 
 | Rules | Category | Name of the Activity | Where are you?                                                                                                                                                                                | What you are doing or where you can do it                                                                                                                     | Rules |
 |-------|----------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -715,7 +709,7 @@ Naming an heir in the game is a powerful and character-defining choice. It's an 
 | y     | Recover  | Heal Corruption      | Anywhere                                                                                                                                                                                      | Craft or Song roll. On a success, reduce Spiritual Damage by 2, by 4 on a great success, by 6 on an extraordinary success. May make two rolls in a sanctuary. |       |
 | y     | Recover  | There and Back Again | Home                                                                                                                                                                                          | Recover all damage at the cost of permanently burning one spiritual point.                                                                                    |       |
 
-### HEARTEN
+#### HEARTEN
 
 When you socialize, share intimacy, or find a moment of peace, roll +heart.
 
@@ -723,7 +717,7 @@ On a strong hit, you find companionship or comfort and your spirit is strengthen
 
 On a weak hit, as above, but this indulgence is fleeting. Envision an interruption, complication, or inner conflict. Then, Lose Momentum (-1). On a miss, you take no comfort and the situation worsens. Pay the Price.
 
-### RESUPPLY
+#### RESUPPLY
 
 When you attempt to bolster your readiness, envision the opportunity and your approach. If you…
 
@@ -741,7 +735,7 @@ On a weak hit, as above, but you must first deal with a cost, complication, or d
 
 On a miss, you encounter an unexpected peril. Pay the Price.
 
-### HEAL
+#### HEAL
 
 When you receive medical care or provide treatment, envision the situation and roll. If you…
 
@@ -756,7 +750,7 @@ On a weak hit, as above, but the recovery costs extra time or resources. Choose 
 
 On a miss, the aid is ineffective and the situation worsens. Pay the Price.
 
-### REPAIR
+#### REPAIR
 
 When you make repairs to your vehicles, modules, mechanical companions, or other devices, envision the situation and roll. If you…
 
@@ -784,9 +778,7 @@ Spend repair points as follows. Unused points are discarded.
 
 On a miss, the repairs are not made and the situation worsens. Pay the Price.
 
-
-
-## Dwell
+### Dwell
 
 | Rules | Category | Name of the Activity                      | Where are you? | What you are doing or where you can do it                                                                                                                                 | Rules |
 |-------|----------|-------------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -797,7 +789,7 @@ On a miss, the repairs are not made and the situation worsens. Pay the Price.
 | x     | Dwell    | Write a Song, Book, or other Piece of Art | Anywhere       | Compose a song to add to company’s list of songs.                                                                                                                         |       |
 |       | Dwell    | Gain a Cultural Virtue                    | Homeland       | Journey back to the homeland of your culture and spend the current phase gaining an additional cultural virtue from your own culture.                                     |       |
 
-### Raise Standard of Living
+#### Raise Standard of Living
 
 "Champagne arrived, in a bucket of crushed ice, as if it were the most commonplace thing in the world." - "The Great Gatsby" by F. Scott Fitzgerald
 
@@ -807,7 +799,7 @@ It costs 1 unit of assets to maintain a Prosperous lifestyle for one month, and 
 
 Feel free to invest as much of your assets as you desire to sustain an elevated standard of living for an extended period.
 
-### Raise Standing
+#### Raise Standing
 
 "Status is your position on the playing field of life. Status is your true wealth." - from "American Psycho" by Bret Easton Ellis
 
@@ -826,7 +818,7 @@ To elevate your standing, you'll spend your accumulated points of Treasure or Va
 
 Feel free to acquire multiple ranks, just remember to calculate the cost for each new level individually. Use this opportunity to invest in your community, thereby weaving your influence deeper into the fabric of your setting.
 
-### visit the tReasuRy oF youR Folk
+#### visit the tReasuRy oF youR Folk
 
 "... his coat of marvellous mail, the gift of the Dwarves from the Dragon-hoard, he lent to a museum, to the Michel Delving Mathom-house in fact." -- JRR Tolkien
 
@@ -840,7 +832,7 @@ Exchanging an item like this increases your Standing within your community:
 
 Moreover, the moment you decide to part with a faithful weapon or piece of armor is a significant one. Replacing your old gear with this newfound treasure redefines who you are within your community. You become known as the bearer of this enchanted object, and the item itself elevates into a 'cultural treasure' among your people."
 
-### Tend to a Holding
+#### Tend to a Holding
 
 "The care of a large estate can be such a heavy burden." - Daphne du Maurier, "Rebecca"
 
@@ -848,7 +840,7 @@ You have the choice to dedicate an entire season to maintaining your property. B
 
 Use this dedicated time wisely to make certain your estate is in prime condition, fully leveraging your expertise and available resources.
 
-### Write a Song, Book, or other Piece of Art
+#### Write a Song, Book, or other Piece of Art
 
 "Art is not a handicraft, it is the transmission of feeling the artist has experienced." - Leo Tolstory in What is Art?
 
@@ -864,7 +856,40 @@ You can further adjust the challenge by selecting one of these modifiers:
 
 If your roll is successful, the quality of that roll sets the bar for how challenging it is for others to truly appreciate or interpret your art. If you don't succeed, you struggle with your medium or message, but there's always another chance to try again later.
 
-### Perform a Piece of Art
+### Socialize
+
+| Rules | Category  | Name of the Activity                                                    | Where are you?                                                                                                                                                                                              | What you are doing or where you can do it                                                                                                                    | Rules |
+|-------|-----------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| y     | Socialize | Make a Connection                                                       | When you search out a new relationship or give focus to an existing relationship that you have no connection with. Create a connection by increasing the rank of that connection from unknown to connected. |                                                                                                                                                              |       |
+| y     | Socialize | Forge a Bond                                                            | When your relationship with a connection is ready to evolve. When you spend significant time with a person or community, stand together to face hardships, or make sacrifices for their cause               | Advance the state of a relationship with a connection by 1 rank.                                                                                             |       |
+| y     | Socialize | Aid a Connection                                                        | When you act in direct support of a connection.                                                                                                                                                             | Advance the state of a relationship with a connection by 2 ranks.                                                                                            |       |
+| y     | Socialize | Compel a Connection                                                     | When you try to persuade someone to do something or make them an offer                                                                                                                                      | Success indicates that the connection does as you request, failure indicates that you reduce the state of your relationship with that connection by 2 ranks. |       |
+| y     | Socialize | Test your Connection                                                    | When your bond with a connection is tested through conflict, betrayal, or circumstance                                                                                                                      | Success indicates that your relationship survives the turmoil of this phase. Failure indicates the number of ranks you will reduce this relationship by.     |       |
+| y     | Socialize | Hearten - When you socialize, share intimacy, or find a moment of peace | See Recovery Activities                                                                                                                                                                                     |                                                                                                                                                              |       |
+
+### Sojurn
+
+| Rules | Category  | Name of the Activity                                                    | Where are you?                                                                                                                                                                                              | What you are doing or where you can do it                                                                                                                    | Rules |
+|-------|-----------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| x     | Sojurn   | Gain a new Trait/New Distinctive Feature/Specialty | Anywhere                         |                                                                                                                                                                                                                                              | Replace old Trait with a new one. |
+| x     | Sojurn   | Meet Patron                                        | Anywhere                         | Gain counsel/aid from a patron                                                                                                                                                                                                               |                                   |
+| x     | Sojurn   | Establish a New Safe Haven                         | Anywhere                         | All companions must select undertaking. Current location becomes a sanctuary.                                                                                                                                                                |                                   |
+| x     | Sojurn   | Receive Title                                      | Anywhere you are a foreigner     | You Social Score now applies to to the culture you are in, and you are gifted with a house and / or holdings.                                                                                                                                |                                   |
+| x     | Sojurn   | Search for Answers  (Research Lore)                | Anywhere                         | Lore roll to gain insight or information about your location or about a location your currently location has information on.                                                                                                                 |                                   |
+| x     | Sojurn   | Rallying Allies                                    | Anywhere                         | Raise your social score for one issue for one sixth of normal Treasure cost, for this phase and the next.                                                                                                                                    |                                   |
+| x     | Sojurn   | Write a Song, Book, or other Piece of Art          | Anywhere                         | Compose a song to add to company’s list of songs.                                                                                                                                                                                            |                                   |
+| -     | Sojurn   | Gain a Virtue                                      | Anywhere                         | Spend time among the people you are currently living among and gain a cultural virtue from their culture.                                                                                                                                    |                                   |
+| -     | Sojurn   | Gain a Cultural Virtue                             | Homeland                         | Journey back to the homeland of your culture and spend the current phase gaining an additional cultural virtue from your own culture.                                                                                                        |                                   |
+|       | Sojurn   | Go See a Scholar                                   | Anywhere                         | Reveal a Wondrous Artefact’s Blessings; or a Famous Weapon or Armour’s Banes and the next hidden Quality.                                                                                                                                    |                                   |
+|       | Sojurn   | Influence Patron                                   | Anywhere                         | Convince your Patron to take actions in line with what they would like to see happen in the world but haven't yet made a priority. For example, asking a local king to allow a local lord to repair the road from their town to the Capital. |                                   |
+|       | Sojurn   | Confer with a Sage                                 | Anywhere                         | Gain next Lore, Travel, Explore level at half cost in Advancement points. Or acquire one of the Sage's hobby traits.                                                                                                                         |                                   |
+|       | Sojurn   | Visit the Artificer                                | Anywhere                         | Custom Modify an item or weapon.                                                                                                                                                                                                             |                                   |
+|       | Sojurn   | Guard                                              | Anywhere where guards are needed | Roll on table see outcome.                                                                                                                                                                                                                   |                                   |
+|       | Sojurn   | Patrol the Wild                                    | Anywhere with wildland           | Gain benefits of wilderness-lore for next Adventuring phase. If you already have wilderness-lore, gain two benefits from invocation.                                                                                                         |                                   |
+
+### To Sort
+
+#### Perform a Piece of Art
 
 "Art is the most beautiful of all lies." - Oscar Wilde in The Picture of Dorian Gray
 
@@ -878,7 +903,7 @@ First, pick a piece of art from your collective portfolio. Then, each of you mak
 
 Remember, each piece of art can be performed or engaged with only once during each period of respite (twice if it's an Abstract piece). Mark it off your list whether it was a success or not.
 
-### Gain a New Feature or Specialty
+#### Gain a New Feature or Specialty
 
 "Change is the end result of all true learning." - Leo Buscaglia
 
@@ -888,7 +913,7 @@ When considering this change, it's wise to exercise discretion. Switching out a 
 
 The new feature or specialty can be selected from any existing list, or you can even create your own. If you opt for the latter, you'll need to seek approval from the game master to ensure it fits within the broader context of your character's story and the game's world.
 
-### Meet with your Patron
+#### Meet with your Patron
 
 "A patron backs you with money, supplies, and support. In return, you make him a little more extraordinary by association." --- The Name of the Wind by Patrick Rothfuss
 
@@ -896,7 +921,7 @@ A patron is usually someone renowned or powerful who might offer you and your co
 
 Your company can have multiple patrons at the same time, as long as you and your teammates can meet the conditions to secure their loyalty. More often than not, these patrons will expect something in return for their friendship.
 
-### Establish a New Safe Haven
+#### Establish a New Safe Haven
 
 "Home is behind, the world ahead, and there are many paths to tread." - J.R.R. Tolkien, "The Lord of the Rings"
 
@@ -906,7 +931,7 @@ To officially establish a new safe haven, you and your companions must spend a d
 
 Completing this collective task strengthens your ties with key figures in the area, further cementing your alliance and welcome status.
 
-### Earn a Title
+#### Earn a Title
 
 "A name earned is more valuable than a name given." - Brandon Sanderson, "Elantris"
 
@@ -921,7 +946,7 @@ Choosing to "Earn a Title" generally implies two things:
 
 You have the possibility to earn titles from multiple different communities.
 
-### Search for Answers
+#### Search for Answers
 
 "The only way to discover the limits of the possible is to go beyond them into the impossible." - Arthur C. Clarke, "Profiles of the Future"
 
@@ -935,7 +960,7 @@ If you find yourself in a location with valuable resources for learning—whethe
 
 Critical Failure: Forbidden Knowledge: Your thirst for knowledge has led you to uncover secrets best left hidden—gain 1 Shadow point.
 
-### Rallying Allies
+#### Rallying Allies
 
 "Even the strongest of us cannot survive alone." - Terry Goodkind, "Stone of Tears"
 
@@ -945,7 +970,7 @@ Securing such support allows you to elevate your Standing rating at 1/6th the ty
 
 Be aware that this temporary boost in Standing will expire at the conclusion of the next end-of-year downtime phase. Make the most of it while you can.
 
-### Heal Corrpution
+#### Heal Corrpution
 
 You find yourself burdened by a growing inner corruption. It could be psychic residue from battling cosmic entities, ethical compromises made in a cybernetic underworld, or spiritual decay from wielding dark magic.
 
@@ -955,7 +980,7 @@ If you spend your seasonal phase in a sanctuary, be it a high-tech medical lab, 
 
 Individuals from various backgrounds employ unique methods to shed their corruption. For instance, a technologically enhanced human might delve into coding to reprogram their inner turmoil, a rogue detective may solve a case that restores their faith in humanity, and a wizard or shaman might compose, play, or recite incantations or hymns to purify their spirit.
 
-### Patrol the Wild
+#### Patrol the Wild
 
 "Patrolling the Mojave almost makes you wish for a nuclear winter." - Soldier dialogue from Fallout: New Vegas
 
@@ -963,25 +988,7 @@ In any community—be it a far-flung space colony, a mystical elven enclave, a s
 
 By choosing this undertaking, you gain the benefits of the specialized "Frontier Lore" for the duration of the following Adventuring phase. If you already possess "Frontier Lore," then you have the option to gain double benefits from a single Trait invocation during this time (for example, you could both automatically succeed at a roll and gain an Advancement point).
 
-#### Family Heritage
-
-Upon designating an heir, you have the opportunity to pass on one of your favored skills as a family inheritance. This skill should truly embody who you are, based on both gameplay and personal preference.
-
-Should you retire or meet an untimely end, your heir inherits this skill as an additional favored skill. Moreover, whenever the heir employs this inherited skill, a single special die roll results in an extraordinary success.
-
-#### Heirloom
-
-You can also earmark a singularly wondrous artifact or a renowned weapon or armor to pass onto your heir.
-
-The heir can claim this legacy item as a reward when their level of bravery allows it. Notably, any latent abilities within weapons or armor become automatically activated when claimed by the heir. In the case of wondrous artifacts, any hidden blessings are revealed when the heir takes possession of it.
-
-These legacy items can never be exchanged to boost your social standing or be replaced by similar items; they are more than just objects. They are sacred legacies, intended to be passed down to a worthy successor and not discarded lightly.
-
-#### Sombre Legacy
-
-The burden of continuing a loved one's mission is heavy. Your heir starts their journey carrying 1 permanent Shadow point for each flaw you possessed at the time of your retirement or death
-
-### theRe and back again (yeaR’s end only)
+#### theRe and back again (yeaR’s end only)
 
 "When he was gone from them, he was most himself, most free; yet when he was with them he felt he was known truly and without blindness, and he longed always to return to them from his voyages, his questions, his deeds and dreams." -- Ursula K. Le Guin's "A Wizard of Earthsea"
 
@@ -993,17 +1000,17 @@ However, being in the close presence of those you hold dear also serves as a poi
 
 * * *
 
-### Undertake a Journey -- Fix
+#### Undertake a Journey -- Fix
 
 "Life is either a daring adventure or nothing at all." - Helen Keller
 
 Travel is an integral part of an adventurer's life, often full of unexpected challenges and opportunities for growth. When you decide to "Undertake a Journey," you and your companions set off to traverse the lands, seeking new experiences or fulfilling specific objectives.
 
-#### Preparing for the Journey
+##### Preparing for the Journey
 
 Before setting out, you must choose a destination and determine the expected duration of the journey based on your pace and the terrain. Your game master will provide you with the Target Number (TN) for your Navigation rolls based on these factors.
 
-#### Sample Modifiers
+##### Sample Modifiers
 
 - **Guided (-2 TN):** If you have a local guide or a very accurate map, the difficulty eases by 2 TN.
   
@@ -1011,20 +1018,20 @@ Before setting out, you must choose a destination and determine the expected dur
   
 - **Uncharted (+4 TN):** If you're in an unexplored or poorly mapped area, the TN for Navigation rolls increases by 4.
   
-#### Outcomes
+##### Outcomes
 
 - **Successful Roll:** You've setoff without major hiccups. The game master may present minor encounters or findings.
 - **Failed Roll:** Your party encounters difficulties setting started.  This could include such things as getting lost, facing hazardous weather, or stumbling upon dangerous wildlife.
 - **Critical Success:** Your party finds a shortcut or an interesting landmark, possibly reducing the journey's time or offering a side quest.
 - **Critical Failure:** Not only do you lose your way, but the party also faces a severe crisis that could include a deadly encounter, exhaustion, or loss of supplies.
 
-#### Bonuses
+##### Bonuses
 
 - **If the total number of successes from the group exceeds the number of participants,** you reach your destination with some additional benefits like finding valuable resources or uncovering a hidden location.
   
 - **If everyone in the group fails their roll,** the journey takes twice as long and you encounter significant dangers or setbacks.
 
-#### Final Arrival
+##### Final Arrival
 
 Upon reaching your destination, characters gain 1 Experience point. If you've successfully navigated an uncharted area, all participants also gain 1 point of Hope, recognizing the accomplishment of successfully navigating such challenging terrain.
 
@@ -1032,7 +1039,7 @@ Journeys can be thrilling, hazardous, enlightening, and transformative. But no m
 
 * * *
 
-### MAKE A CONNECTION
+#### MAKE A CONNECTION
 
 When you search out a new relationship or give focus to an existing relationship (not an ally or companion), roll +heart.
 
@@ -1040,7 +1047,7 @@ On a strong hit, you create a connection. Give them a role and rank. Whenever yo
 On a weak hit, as above, but this connection comes with a complication or cost. Envision what they reveal or demand.
 On a miss, you you don’t make a connection and the situation worsens.  Pay the Price.
 
-### FORGE A BOND
+#### FORGE A BOND
 
 When your relationship with a connection is ready to evolve, roll the challenge dice and compare to your progress.
 
@@ -1053,7 +1060,7 @@ On a weak hit, as above, but they ask something more of you first. To gain the b
 
 On a miss, they reveal a motivation or background that puts you at odds. If you recommit to this relationship, roll both challenge dice, take the lowest value, and clear that number of progress boxes. Then, raise the connection’s rank by one (if not already epic).
 
-### AID a Connection
+#### AID a Connection
 
 When you act in direct support of an ally, envision how you aid them. Then, Secure an Advantage or Gain Ground to take action.
 
@@ -1063,7 +1070,7 @@ If you Gain Ground and score a strong hit, you are both in control.
 
 On a weak hit, your ally is in control but you are in a bad spot.
 
-### COMPEL a Connection
+#### COMPEL a Connection
 
 When you try to persuade someone or make them an offer, envision your approach. If you…
 
@@ -1077,7 +1084,7 @@ On a weak hit, as above, but their agreement comes with a demand or complication
 
 On a miss, they refuse or make a demand that costs you greatly. Pay the Price.
 
-### TEST YOUR RELATIONSHIP
+#### TEST YOUR RELATIONSHIP
 
 When your relationship with a connection is tested through conflict, betrayal, or circumstance, roll +heart. If you share a bond, add +1.
 
@@ -1089,7 +1096,7 @@ On a miss, or if you have no interest in maintaining this relationship, choose o
 ✴ Lose the connection: Envision how this impacts you and Pay the Price.
 ✴ Prove your loyalty: Envision what you offer or what they demand, and Swear an Iron Vow (formidable or greater) to see it done. Until you complete the quest, take no benefit for the connection. If you refuse or fail, the connection is permanently undone.
 
-### DEVELOP YOUR RELATIONSHIP
+#### DEVELOP YOUR RELATIONSHIP
 
 When you reinforce your relationship with a connection by doing any of the following…
 ✴ swearing a vow to undertake a perilous quest in their service
@@ -1103,4 +1110,3 @@ When you reinforce your relationship with a connection by doing any of the follo
 …you may mark progress per the rank of the connection.
 
 If you already share a bond with the connection, do not mark progress. Instead, roll +their rank to learn the impact on your legacy: troublesome=+1; dangerous=+2; formidable=+3; extreme=+4; epic=+5. On a strong hit, mark 2 ticks on your bonds legacy track. On a strong hit with a match, you may also envision how recent events bolstered your connection’s standing and raise their rank by one (if not already epic). On a we
-
