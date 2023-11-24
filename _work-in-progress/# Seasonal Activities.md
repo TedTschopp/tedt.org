@@ -26,9 +26,16 @@ The "Face Death" activity immerses your character in a harrowing experience of p
 
 ##### In the Depths of Despair
 
+
+* Do a physical check to see if you are body is still in good enough conditions.
+* Do a social check to survive homesickness
+* Do a mental check to survive boredom.
+* Do a spiritual check to reattach your spiritual 
+
+
 1. **Isolation and Powerlessness**:
-   - Stricken by a debilitating condition, your once-active body fails you. Immobile and seemingly lifeless, you experience the anguish of awareness without the ability to communicate or respond.
-   - Fears of being forgotten and misunderstood intensify as loved ones mourn your supposed demise.
+   - Stricken by a debilitating condition, your once-active body fails you. Immobile and seemingly lifeless, you experience the anguish of awareness without the ability to communicate or respond.  
+   - Fears of being forgotten and misunderstood intensify as loved ones mourn your supposed demise.  
 
 2. **Summoning Unimaginable Strength**:
    - Despite physical betrayal, your spirit refuses to be silenced. You explore alternative means of communication, striving to make your presence known.
