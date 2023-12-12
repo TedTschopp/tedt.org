@@ -42,22 +42,20 @@ coordinates:
     longitude: -118.069288
 
 
-image:
-image-alt:
+image: /img/2005-10/Two-concepts-of-hell.png
+image-alt: 
 image-artist:
 image-artist-URL:
 image-credits:
-image-credits-URL:
-image-credits-artist:
+image-credits-URL: https://www.tedt.org/
+image-credits-artist: Ted Tschopp
 image-credits-artist-URL:
-image-credits-title:
+image-credits-title: Two Concepts of Hell
 image-description: 'An abstract representation of the two concepts of hell: annihilation
     and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing
     the profound and uncomfortable nature of these beliefs. It conveys the universality
-    and nightmarish quality of hell in human culture.  In the style of antichrist,
-    dark yellow and light red, jarosław jaśnikowski, monumental murals, god rays,
-    gustave buchet, hercules seghers'
-image-title:
+    and nightmarish quality of hell in human culture.'
+image-title: Two Concepts of Hell
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

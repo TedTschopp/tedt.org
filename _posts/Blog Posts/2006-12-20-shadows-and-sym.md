@@ -43,20 +43,20 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image:  /img/2006-06/An-open-book-intricate-shadows-symbolic-shapes.png
 image-alt:
 image-artist:
 image-artist-URL:
 image-credits:
 image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title: Symbolic Book
 image-description: An image of an open book, with intricate shadows cast from symbolic
     shapes above. The shadows twist and slither on the page, drawing attention to
     the hidden shapes that create them. A soft light emanates from the background,
     symbolizing the overarching theme of light and understanding explored in the article.
-image-title:
+image-title: Symbolic Book
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

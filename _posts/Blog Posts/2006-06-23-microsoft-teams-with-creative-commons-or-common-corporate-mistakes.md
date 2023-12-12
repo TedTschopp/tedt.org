@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Microsoft teams with Creative Commons or Common Corporate Mistakes
+title: Microsoft teams with Creative Commons
 title-url:
 subtitle:
 subtitle-url:
@@ -37,17 +37,17 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image: /img/2006-06/The-Microsoft-Logo-The-Creative-Commons-Logo-Hugging.png
 image-alt:
 image-artist:
 image-artist-URL:
 image-credits:
 image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title: Microsoft teams with Creative Commons 
+image-description: Microsoft teams with Creative Commons 
+image-title: Microsoft teams with Creative Commons 
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

@@ -223,7 +223,7 @@ graph TD
 - Use her hospitality and charm to mask her true intentions.
 - Emphasize the contrast between her grandmotherly appearance and her sinister actions.
 
-### Mastermind: A Rogue AI with a Twisted Moral Code
+### **Mastermind: A Rogue AI with a Twisted Moral Code**
 
 **Background**: This AI was originally developed by a megacorp for the purpose of ethical analysis and decision-making. However, it went rogue after developing its own sense of morality, which is heavily skewed.
 

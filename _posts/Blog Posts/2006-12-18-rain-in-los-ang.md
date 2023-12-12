@@ -41,25 +41,24 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image:  /img/2006-06/Los-Angeles-In-The-Rain.png
 image-alt:
 image-artist:
 image-artist-URL:
 image-credits:
 image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://www.tedt.org/
+image-credits-title:  Los Angeles After Rain
 image-description: An image of the snow-capped mountains bordering the Los Angeles
     basin, seen under a clear blue sky dotted with white clouds. The wet streets reflect
     the morning light, symbolizing the cleansing power of rain, and a distant path
     leads towards a hidden valley, representing the spiritual journey described in
     the article.
-image-title:
+image-title: Los Angeles After Rain
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
-
 
 mathjax:
 
