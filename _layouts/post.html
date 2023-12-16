@@ -155,7 +155,7 @@
                             {% if page.image contains "http" %}
                                 {% assign image_URL = page.image %}
                             {% else %}
-                                {% assign image_URL = site.siteurl | append: page.image %}
+                                {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
                             {% endif %}
                         {% else %}
                             {% assign image_URL = site.featured-image %}
