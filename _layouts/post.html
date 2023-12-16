@@ -68,13 +68,13 @@
                     {% for category in categories %}<span class="p-category">
                         {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                         {% if forloop.length == 1 %}
-                            <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                            <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% elsif forloop.last and forloop.length == 2 %}
-                            and <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                            and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% elsif forloop.last %}
-                            and <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                            and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
                         {% else %}
-                        <a style="text-decoration: none;" href="category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}, 
+                        <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}, 
                         {% endif %}
                         {% if thiscategory == "draft" or thiscategory == "Draft" %}
                             {% assign this_is_a_draft = true %}

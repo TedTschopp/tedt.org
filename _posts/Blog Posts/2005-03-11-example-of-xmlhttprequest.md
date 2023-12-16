@@ -52,7 +52,6 @@ image-title:
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
-
 mathjax:
 
 order:
