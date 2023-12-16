@@ -5,6 +5,10 @@
 <!-- strip HTML Content and empty spaces out of the pages content -->
 {% assign stripped-content = page.content | strip_html | strip %} 
 
+{% if page.title == null or page.title == empty %}
+  {% assign page.title = "Your Custom Title Here" %}
+{% endif %}
+
 
 <!-- Calculate the pages description if one isn't present -->
 {% if page.description == null or page.description == empty %}
