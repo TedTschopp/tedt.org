@@ -2,53 +2,54 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="https://www.tedt.org/"><img src="https://tedt.org/img/TT.svg" height="42" width="42"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Resume
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
-                            {% for post in sorted_homepage %}
-                                {% for tag in post.tags %}
-                                    {% if tag == 'Resume' %}
-                                        <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
-                                    {% endif %}
-                                {% endfor %}
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
-                            {% for post in sorted_homepage %}
-                                {% for tag in post.tags %}
-                                    {% if tag == 'Project' %}
-                                        <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
-                                    {% endif %}
-                                {% endfor %}
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li>
+              <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ms-auto mb-2 mb-lg-0">
+                      <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a></a>
+                  </li>
+                  <li class="nav-item ms-auto mb-2 mb-lg-0">
+                      <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
+                  </li>
+                  <li class="nav-item ms-auto mb-2 mb-lg-0">
+                      <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown ms-auto mb-2 mb-lg-0">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resume
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end ms-auto mb-2 mb-lg-0">
+                          {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                          {% for post in sorted_homepage %}
+                              {% for tag in post.tags %}
+                                  {% if tag == 'Resume' %}
+                                      <li class="nav-item ms-auto mb-2 mb-lg-0"><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                                  {% endif %}
+                              {% endfor %}
+                          {% endfor %}
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown ms-auto mb-2 mb-lg-0">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end ms-auto mb-2 mb-lg-0">
+                          {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                          {% for post in sorted_homepage %}
+                              {% for tag in post.tags %}
+                                  {% if tag == 'Project' %}
+                                      <li class="nav-item ms-auto mb-2 mb-lg-0"><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                                  {% endif %}
+                              {% endfor %}
+                          {% endfor %}
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown ms-auto mb-2 mb-lg-0">
                     <button type="button" onclick="toggleTheme()"" class="btn btn-outline-secondary"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                    </li>
+                  </li>
+      
                 </ul>
               </div>
             </div>
