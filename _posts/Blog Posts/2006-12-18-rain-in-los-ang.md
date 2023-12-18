@@ -41,7 +41,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:  /img/2006-06/Los-Angeles-In-The-Rain.png
+image:  /img/2006-12/Los-Angeles-In-The-Rain.png
 image-alt:
 image-artist:
 image-artist-URL:

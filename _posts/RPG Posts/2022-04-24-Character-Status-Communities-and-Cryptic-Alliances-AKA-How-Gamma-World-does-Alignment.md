@@ -48,7 +48,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2022-04/24/community-life.png
+image: /img/2022-04/community-life.png
 image-alt:
 image-artist:
 image-artist-URL:

@@ -46,20 +46,17 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /img/2011-06/800px-tessellated_pavement_sunrise_landscape.jpg
+image: /img/2011-06/Tessellated_Pavement_Sunrise_Landscape.jpg
 image-alt:
-image-artist:
-image-artist-URL:
+image-artist: JJ Harrison 
+image-artist-URL: https://www.jjharrison.com.au/
 image-credits:
 image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
+image-credits-artist: JJ Harrison 
+image-credits-artist-URL: https://en.wikipedia.org/wiki/File:Tessellated_Pavement_Sunrise_Landscape.jpg
 image-credits-title:
-image-description: A captivating image by JJ Harrison, showcasing the natural beauty
-    of Tasmania's landscape. The image serves as a symbolic representation of the
-    isolation and unique environment that shaped the lives and culture of the Tasmanian
-    Aborigines.
-image-title:
+image-description: Sunrise, “Tessellated Pavement”, Eaglehawk Neck, Tasman Peninsula, Tasmania, Australia. The „Tesselated Pavement“ is the result of an orthogonal joint pattern in the rock. On the picture it shows the so called “pan formation”, where the rock in the immediate vicinity of the joints is more resistant to erosion than the rock that is more distant to the joints, This is due to alterations of the rock along the joints by hydrothermal (or similar) solutions when the rock was still buried deeply below the surface millions of years ago. When no alterations or alterations that lower the erosional resistivity have taken place in the geological past, the rock along the joints will erode faster than the rock that is more distant to the joints. In that case the so called “loaf formation” of “Tessellated Pavement” will form.
+image-title: Tessellated Pavement
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
