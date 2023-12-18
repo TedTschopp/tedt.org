@@ -220,7 +220,50 @@
                       <ol>
                         {% for post in site.categories[page.category] %}
                             <li>
-                              <img src="{{ post.image_url }}" alt="Post Image" class="float-start img-thumbnail">
+                              {% if post.image %}
+                                {% if post.image-alt %}
+                                    {% assign image_alt = post.image-alt %}
+                                {% elsif post.image-description %}
+                                    {% assign image_alt = post.image-description %}
+                                {% else %}
+                                    {% assign image_alt = post.title %}
+                                {% endif %}
+        
+                                {% if post.image-credits-title %}
+                                    {% assign image_credits_title = post.image-credits-title %}
+                                {% elsif post.image-title %}
+                                    {% assign image_credits_title = post.image-title %}
+                                {% else %}
+                                    {% assign image_credits_title = "Unknown" %}
+                                {% endif %}
+        
+                                {% if post.image-credits-artist %}
+                                    {% assign image_credits = post.image-credits-artist %}
+                                {% elsif post.image-artist %}
+                                    {% assign image_credits = post.image-artist %}
+                                {% else %}
+                                    {% assign image_credits = "Unknown" %}
+                                {% endif %}
+        
+                                {% if post.image-credits-artist-URL %}
+                                    {% assign image_credits_artist_URL = post.image-credits-artist %}
+                                {% elsif post.image-artist-URL %}
+                                    {% assign image_credits_artist_URL = post.image-artist-URL %}
+                                {% endif %}
+        
+                                {% if post.image %}
+                                    {% if post.image contains "http" %}
+                                        {% assign image_URL = post.image %}
+                                    {% else %}
+                                        {% assign image_URL = site.siteurl | append: "/" | append: post.image %}
+                                    {% endif %}
+                                {% else %}
+                                    {% assign image_URL = site.featured-image %}
+                                {% endif %}
+                                    <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail">
+                            {% endif %}
+
+                              
                               <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
                               {{ post.title }}
                             </a></dt><dd>{{ post.description }}</dd></dl></li>
