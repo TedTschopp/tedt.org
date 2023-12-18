@@ -260,8 +260,12 @@
                                 {% else %}
                                     {% assign image_URL = site.featured-image %}
                                 {% endif %}
-                                    <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail">
-                            {% endif %}
+                                <div class="container">
+                                  <div class="col-md-1 px-0">
+                                    <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail img-fluid">
+                                  </div>
+                                </div>
+                          {% endif %}
 
                               
                               <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
