@@ -43,7 +43,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:  /img/2006-06/An-open-book-intricate-shadows-symbolic-shapes.png
+image:  /img/2006-12/An-open-book-intricate-shadows-symbolic-shapes.png
 image-alt:
 image-artist:
 image-artist-URL:

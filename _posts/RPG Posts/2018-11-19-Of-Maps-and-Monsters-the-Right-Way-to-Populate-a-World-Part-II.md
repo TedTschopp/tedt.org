@@ -23,8 +23,8 @@ author:
 
 bullets:
 
-description: null
-seo-description:
+description: A continuation of the guide on RPG world-building, focusing on the complexities of monster types and their implementation in game design.
+seo-description: A continuation of the guide on RPG world-building, focusing on the complexities of monster types and their implementation in game design.
 
 categories:
 - Role Playing Games

@@ -20,8 +20,8 @@ author:
 
 bullets:
 
-description: null
-seo-description:
+description: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
+seo-description: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
 
 categories:
 - Role Playing Games
