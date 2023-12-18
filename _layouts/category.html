@@ -219,7 +219,9 @@
                     <span class="e-content" id="main_content">
                       <ol>
                         {% for post in site.categories[page.category] %}
-                            <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
+                            <li>
+                              <img src="{{ post.image_url }}" alt="Post Image" class="float-start img-thumbnail">
+                              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
                               {{ post.title }}
                             </a></dt><dd>{{ post.description }}</dd></dl></li>
                         {% endfor %}
