@@ -108,13 +108,12 @@
                         <!-- Do Nothing -->
                     {% elsif post.layout contains "micropubpost" %}
                         <!-- Do Nothing -->
-                    {% else %}
-                        {% assign count = count | plus: 1 %}
-                        {% if count > 3 %}
-                            {% break %}
-                        {% endif %}
+                    {% endif %}
                       <li style="list-style: none;">
-                        <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
+
+                        {% if post.title %}
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a style="text-decoration: none;" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
+                        {% endif %}
                         {% if post.teaser %}
                           <p>{{ post.teaser }}</p>
                         {% elsif post.description %}
@@ -122,76 +121,14 @@
                         {% else %}
                           <p>{{ post.excerpt |truncate html | truncatewords: 20}}</p>
                         {% endif %}
-                      </li>
-                    {% endif %}
+                        <p>{{post.content }}</p>
+                    </li>
                 {% endfor %}
             </ul> 
           </div>
         </div>
       </div>
     </section>
-
-    {% comment %} 
-    <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="main-timeline">
-                  {% assign count = 0 %}
-                  {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
-                  {% for post in sorted_homepage %}
-                      {% assign count = count | plus: 1 %}
-                      {% assign mod = count | modulo: 2 %}
-                      {% for tag in post.tags %}
-                          {% if tag == 'Resume' %}
-                              {% if mod != 1 %}<!-- odd -->
-                                  <div class="timeline">
-                                      <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
-                                      <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                      <div class="timeline-icon">
-                                          <i class="fa fa-rocket"></i>
-                                      </div> 
-                                      <div class="content">
-                                          <h3 class="title">{{post.title}}</h3>
-                                          <p class="description">
-                                              {{post.description}}
-                                              <ul>
-                                                {% for bullet in post.bullets %}
-                                                    <li>{{ bullet }}</li>
-                                                {% endfor %}
-                                              </ul>
-                                          </p>
-                                      </div>
-                                      </a>
-                                  </div>
-                              {% else %}
-                                  <div class="timeline">
-                                    <a href="#" class="timeline-content" name="{{ post.title | slugify}}">
-                                    <span class="timeline-year" style="text-align: center;">{{post.stop-date}} -</br>{{post.start-date}}</span>
-                                    <div class="timeline-icon">
-                                        <i class="fa fa-users"></i>
-                                    </div> 
-                                    <div class="content">
-                                        <h3 class="title">{{post.title}}</h3>
-                                        <p class="description">
-                                          {{post.description}}
-                                          <ul>
-                                            {% for bullet in post.bullets %}
-                                                <li>{{ bullet }}</li>
-                                            {% endfor %}
-                                          </ul>
-                                      </p>
-                                    </div>
-                                    </a>
-                                </div>
-                              {% endif %} 
-                          {% endif %}
-                      {% endfor %}
-                  {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endcomment %} 
 
     <header class="masthead text-white text-center" id="about">
       <div class="overlay"></div>
