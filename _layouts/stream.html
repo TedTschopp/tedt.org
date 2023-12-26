@@ -99,7 +99,7 @@
                 {% assign recentPosts = site.posts | where: "date", ">", thirtyDaysAgo %}
                 {%endcomment}
 
-                {% assign allPosts = site.posts | concat site.micropubpost %}
+                {% assign allPosts = site.posts | concat: site.micropubpost %}
                 {% assign threeMonthsAgo = site.time | minus: 7776000 %}
                 {% assign recentPosts = allPosts | where_exp: "post", "post.date > threeMonthsAgo" %}
 
