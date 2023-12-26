@@ -103,7 +103,7 @@
                 {% assign threeMonthsAgo = site.time | minus: 7776000 %}
                 {% assign recentPosts = allPosts | where_exp: "post", "post.date > threeMonthsAgo" %}
 
-                {% for post in sallPosts %}
+                {% for post in allPosts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                         <!-- Do Nothing -->
                     {% elsif post.categories contains "Quotes" or post.category == "Quotes" or post.layout contains "quotes" %}
