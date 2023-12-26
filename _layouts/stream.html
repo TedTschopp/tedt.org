@@ -95,7 +95,12 @@
             <p class="lead mb-0">This blog is my journey exploring the intersection of technology, theology, and creativity, where readers engage in discussions about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling, all viewed through a unique, humorous, and contemplative lens.</p>
             <ul>
                 {% assign count = 0 %}
-                {% for post in site.posts %}
+                
+                {% assign thirtyDaysAgo = site.time | minus: 2592000 %}
+                {% assign recentPosts = site.posts | where: "date", ">", thirtyDaysAgo %}
+
+
+                {% for post in recentPosts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                         <!-- Do Nothing -->
                     {% elsif post.categories contains "Draft" or post.category == "Draft" %}
