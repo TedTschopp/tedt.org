@@ -96,9 +96,13 @@
             <ul>
                 {% assign count = 0 %}
                 
+                {%comment}
                 {% assign thirtyDaysAgo = site.time | minus: 2592000 %}
                 {% assign recentPosts = site.posts | where: "date", ">", thirtyDaysAgo %}
+                {%endcomment}
 
+                {% assign threeMonthsAgo = site.time | minus: 7776000 %}
+                {% assign recentPosts = site.posts | where: "date", ">", threeMonthsAgo %}
 
                 {% for post in recentPosts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
