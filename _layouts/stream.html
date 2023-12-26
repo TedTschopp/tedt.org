@@ -102,7 +102,7 @@
                 {%endcomment}
 
                 {% assign threeMonthsAgo = site.time | minus: 7776000 %}
-                {% assign recentPosts = site.posts | where: "date", ">", threeMonthsAgo %}
+                {% assign recentPosts = site.posts | where_exp: "post", "post.date > threeMonthsAgo" %}
 
                 {% for post in recentPosts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
