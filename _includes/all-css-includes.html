@@ -3,12 +3,12 @@
     <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/consolidated-fonts.css">
 
 
-    <!-- Bootstrap CSS-->
-    {% include css-bootstrap.html %}
-
     <!-- Add in Global CSS File from SCSS-->
     <!-- TODO figure out how to do SCSS SASS -->
     <link href="{{site.siteurl}}/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Include CDN version of Bootstrap -->
+    {% include css-bootstrap.html %}
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
@@ -32,4 +32,5 @@
     <!-- Font Awesome -->
     {% include css-font-awesome.html %}
 
-    {% include css-bootstrap.html %}
+
+    
