@@ -1,117 +1,148 @@
+
 [Source](https://archive.org/details/thirtysixdramati00polt/page/8/mode/2up)
+
 [Better Source](https://en.wikisource.org/wiki/Page:The_thirty-six_dramatic_situations_(1921).djvu/27)
 
 THE THIRTY-SIX DRAMATIC SITUATIONS
 
 * * *
 
-GEORGES POLTI 
+GEORGES POLTI
 \pagebreak
 
-> "Gozzi maintained that there can he hut thirty-six tragic situations. Schiller took great pains to find more, but he was unable to find even so many as Gozzi." — Goethe. 
+> "Gozzi maintained that there can he hut thirty-six tragic situations. Schiller took great pains to find more, but he was unable to find even so many as Gozzi." — Goethe.
 
+# The Thirty-Six Dramatic Situations
 
+GEORGES POLTI
 
-# The Thirty-Six Dramatic Situations 
+Translated by Lucile Ray
 
-GEORGES POLTI 
-
-Translated by Lucile Ray 
-
-
-
-Franklin, Ohio 
-JAMES KNAIT REEVE 
+Franklin, Ohio
+JAMES KNAIT REEVE
 
 \pagebreak
 
-COPYRIGHT, 1916, 1917 
-THE EDITOR COMPANY 
+COPYRIGHT, 1916, 1917
+THE EDITOR COMPANY
 
-COPYRIGHT, 1921 
-JAMES KNAPP REEVE 
+COPYRIGHT, 1921
+JAMES KNAPP REEVE
 
 \pagebreak
 
-# THE THIRTY-SIX DRAMATIC SITUATIONS 
+# THE THIRTY-SIX DRAMATIC SITUATIONS
 
 \pagebreak
 
 \pagebreak
 
-## INTRODUCTION 
+- [The Thirty-Six Dramatic Situations](#the-thirty-six-dramatic-situations)
+- [THE THIRTY-SIX DRAMATIC SITUATIONS](#the-thirty-six-dramatic-situations-1)
+  - [INTRODUCTION](#introduction)
+    - [FIRST SITUATION SUPPLICATION](#first-situation-supplication)
+    - [SECOND SITUATION DELIVERANCE](#second-situation-deliverance)
+    - [THIRD SITUATION CRIME PURSUED BY VENGEANCE](#third-situation-crime-pursued-by-vengeance)
+    - [FOURTH SITUATION VENGEANCE TAKEN FOR KINDRED UPON KINDRED](#fourth-situation-vengeance-taken-for-kindred-upon-kindred)
+    - [FIFTH SITUATION PURSUIT](#fifth-situation-pursuit)
+    - [SIXTH SITUATION DISASTER](#sixth-situation-disaster)
+    - [SEVENTH SITUATION FALLING PREY TO CRUELTY OR MISFORTUNE](#seventh-situation-falling-prey-to-cruelty-or-misfortune)
+    - [EIGHTH SITUATION REVOLT](#eighth-situation-revolt)
+    - [NINTH SITUATION DARING ENTERPRISE](#ninth-situation-daring-enterprise)
+    - [TENTH SITUATION ABDUCTION](#tenth-situation-abduction)
+    - [ELEVENTH SITUATION THE ENIGMA](#eleventh-situation-the-enigma)
+    - [TWELFTH SITUATION OBTAINING](#twelfth-situation-obtaining)
+    - [THIRTEENTH SITUATION ENMITY OF KINSMEN](#thirteenth-situation-enmity-of-kinsmen)
+    - [FOURTEENTH SITUATION RIVALRY OF KINSMEN](#fourteenth-situation-rivalry-of-kinsmen)
+    - [FIFTEENTH SITUATION MURDEROUS ADULTERY](#fifteenth-situation-murderous-adultery)
+    - [SIXTEENTH SITUATION MADNESS](#sixteenth-situation-madness)
+    - [SEVENTEENTH SITUATION FATAL IMPRUDENCE](#seventeenth-situation-fatal-imprudence)
+    - [EIGHTEENTH SITUATION INVOLUNTARY CRIMES OF LOVE](#eighteenth-situation-involuntary-crimes-of-love)
+    - [NINETEENTH SITUATION SLAYING OF A KINSMAN UNRECOGNIZED](#nineteenth-situation-slaying-of-a-kinsman-unrecognized)
+    - [TWENTIETH SITUATION SELF-SACRIFICING FOR AN IDEAL](#twentieth-situation-self-sacrificing-for-an-ideal)
+    - [TWENTY-FIRST SITUATION SELF-SACRIFICE FOR KINDRED](#twenty-first-situation-self-sacrifice-for-kindred)
+    - [TWENTY-SECOND SITUATION ALL SACRIFICED FOR A PASSION](#twenty-second-situation-all-sacrificed-for-a-passion)
+    - [TWENTY-THIRD SITUATION NECESSITY OF SACRIFICING LOVED ONES](#twenty-third-situation-necessity-of-sacrificing-loved-ones)
+    - [TWENTY-FOURTH SITUATION RIVALRY OF SUPERIOR AND INFERIOR](#twenty-fourth-situation-rivalry-of-superior-and-inferior)
+    - [TWENTY-FIFTH SITUATION ADULTERY](#twenty-fifth-situation-adultery)
+    - [TWENTY-SIXTH SITUATION CRIMES OF LOVE](#twenty-sixth-situation-crimes-of-love)
+    - [TWENTY-SEVENTH SITUATION DISCOVERY OF THE DISHONOR OF A LOVED ONE](#twenty-seventh-situation-discovery-of-the-dishonor-of-a-loved-one)
+    - [TWENTY-EIGHTH SITUATION OBSTACLES TO LOVE](#twenty-eighth-situation-obstacles-to-love)
+    - [TWENTY-NINTH SITUATION AN ENEMY LOVED](#twenty-ninth-situation-an-enemy-loved)
 
-"Gozzi maintained that there can be but thirty-six tragic situations. Schiller took great pains to find more, but he was unable to rind even so many as Gozzi." 
+
+
+## INTRODUCTION
+
+"Gozzi maintained that there can be but thirty-six tragic situations. Schiller took great pains to find more, but he was unable to rind even so many as Gozzi."
 
 Thirty-six situations only! There is, to me, something tantalizing about the assertion, unaccompanied as it is by any explanation either from Gozzi, or from Goethe or Schiller, and presenting a problem which it does not solve. For I remembered that he who declared by this limited number so strongly synthetic a law, had himself the most fantastic of imaginations. He was the author, this Gozzi, of "Turandot," and of the "Roi Cerf," two works almost without .analogue, the one upon the situation of the "Enigma, ' the other upon phases of metempsychosis; he was the creator of a dramatic system, and the Arabesque spirit, through him transfused, has given us the work of Hoffmann, Jean-Paul Richter and Poe.
 
-The Venetian's exuberance would have made me doubtful of him, since, having once launched at us this number 36, he kept silence. Put Schiller, rigid and ardent Kantian, prince of modern aest het icians, master of true historic drama, had he not in turn, before epting this rule, "taken greal pains" to verify it and the pains of a Schiller!) thereby giving it the additional authority of his powerful criticism and his rich memory? And Goethe, his opposite in all things save a strong te for the abstract, Goethe, who throughout his life Beems to have considered the .subject, adds his testimony years after the death of Schiller, years after their fruitful conversations, at the very time when he was completing "Faust," that supreme combination of contrasting elements. 
+The Venetian's exuberance would have made me doubtful of him, since, having once launched at us this number 36, he kept silence. Put Schiller, rigid and ardent Kantian, prince of modern aest het icians, master of true historic drama, had he not in turn, before epting this rule, "taken greal pains" to verify it and the pains of a Schiller!) thereby giving it the additional authority of his powerful criticism and his rich memory? And Goethe, his opposite in all things save a strong te for the abstract, Goethe, who throughout his life Beems to have considered the .subject, adds his testimony years after the death of Schiller, years after their fruitful conversations, at the very time when he was completing "Faust," that supreme combination of contrasting elements.
 
 In France, Gerard de Nerval alone had grasped and presented briefly the ensemble of all dramatic production, in an article upon Soumet's "Jane Grey," in "L'Artiste," written, unfortunately, with what dandyism of style! Having early desired to know the exact number of actions possible to the theater, he found, he tells us, twenty-four. His basis, however, is far from satisfactory. Falling back upon the outworn classification of the seven capital sins, he finds himself obliged at the outset to eliminate two of them, gluttony and sloth, and very nearly a third, lust (this would be Don Juan, perhaps). It is not apparent what manner of tragic energy has ever been furnished by avarice, and the divergence between pride (presumably the spirit of tyranny) and danger, does not promise well for the contexture of drama, the manifestations of the latter being too easily confounded with those of envy. Furthermore, murder or homicide, which he indicates as a factor for obtaining several new situations, by uniting it in turn with each of the others, cannot be accepted as such, since it is but an accident common to all of them, possible in all, and one most frequently produced by all. And finally, the sole title mentioned by Nerval, "Rivalry of Queen and Subject," corresponds, it will be observed, only to a sub-class of one, not of his twenty-four, but of Gozzi's Thirty-six Situations.
 
-Since Nerval, no one has treated, in Gozzi's genuinely technical manner, of the secrets of invention, unless it be relevant to mention in this connection Sarcey's celebrated theory of the "scene-a-faire," a theory in general but ill comprehended by an age which dreads didacticism, - - that is to say, dreads any serious reflection upon art; some intimate notes of Dumas fils which were published against his wishes, if my youthful memories are correct, in the "Temps" some years ago, and which set forth that double plot of Corneille and Racine, a heroine disputed by two heroes, and a hero disputed by two heroines; and, lastly, some works here and there by Valin, upon composition. And that is all, absolutely all. 
+Since Nerval, no one has treated, in Gozzi's genuinely technical manner, of the secrets of invention, unless it be relevant to mention in this connection Sarcey's celebrated theory of the "scene-a-faire," a theory in general but ill comprehended by an age which dreads didacticism, - - that is to say, dreads any serious reflection upon art; some intimate notes of Dumas fils which were published against his wishes, if my youthful memories are correct, in the "Temps" some years ago, and which set forth that double plot of Corneille and Racine, a heroine disputed by two heroes, and a hero disputed by two heroines; and, lastly, some works here and there by Valin, upon composition. And that is all, absolutely all.
 
-Finally, in brief, I rediscovered the thirty-six situations, as Gozzi doubtless possessed them, and as the reader will find them in the following pages; for there 
-were indeed, as he had indicated, thirty-six categories which I had to formulate in order to distribute fitly among them the innumerable dramas awaiting classification. There is, I hasten to say, nothing mystic or cabalistic about this particular number; it might perhaps be possible to choose one a trifle higher or lower, but this one I consider the most accurate. 
+Finally, in brief, I rediscovered the thirty-six situations, as Gozzi doubtless possessed them, and as the reader will find them in the following pages; for there
+were indeed, as he had indicated, thirty-six categories which I had to formulate in order to distribute fitly among them the innumerable dramas awaiting classification. There is, I hasten to say, nothing mystic or cabalistic about this particular number; it might perhaps be possible to choose one a trifle higher or lower, but this one I consider the most accurate.
 
-Xow, to this declared fact that there are no more than thirty-six dramatic* situations, is attached a singular corollary, the discovery that there are in life but thirty-six emotions. A maximum of thirty-six emotions, --and therein we have all the savor of existence; there we have the unceasing ebb and flow which fills human history like tides of the sea; which is, indeed, the very substance of history, since it is the substance of humanity itself, in the shades of African forests as Unter den Linden or beneath the electric lights of the Boulevards; as it was in the ages of man's hand-to-hand Btruggle with the wild beasts of wood and mountain, and as it will be, indubitably, in the most infinitely distant future, since it is with these thirty-six emotions no more that we color, nay, we comprehend, cosmic mechanism, and since it is from them that our theogonies and our metaphysics are, and ever will be, constructed; all our dear and fanciful "beyonds;" -thirty-six situations, thirty-six emotions, and no more 
+Xow, to this declared fact that there are no more than thirty-six dramatic* situations, is attached a singular corollary, the discovery that there are in life but thirty-six emotions. A maximum of thirty-six emotions, --and therein we have all the savor of existence; there we have the unceasing ebb and flow which fills human history like tides of the sea; which is, indeed, the very substance of history, since it is the substance of humanity itself, in the shades of African forests as Unter den Linden or beneath the electric lights of the Boulevards; as it was in the ages of man's hand-to-hand Btruggle with the wild beasts of wood and mountain, and as it will be, indubitably, in the most infinitely distant future, since it is with these thirty-six emotions no more that we color, nay, we comprehend, cosmic mechanism, and since it is from them that our theogonies and our metaphysics are, and ever will be, constructed; all our dear and fanciful "beyonds;" -thirty-six situations, thirty-six emotions, and no more
 
-It is, then, comprehensible thai in viewing upon the stage the ceaseless mingling of these thirty-six emotions, a race or nation arrives at the beginning of its 
-definite Belf -consciousness; the Greeks, indeed, began their towns by laying the foundations of a theater. It is equally natural thai only the greatest ami most com- 
+It is, then, comprehensible thai in viewing upon the stage the ceaseless mingling of these thirty-six emotions, a race or nation arrives at the beginning of its
+definite Belf -consciousness; the Greeks, indeed, began their towns by laying the foundations of a theater. It is equally natural thai only the greatest ami most com-
 
-•I have replaced tin' word "tragic," used in tin- quotation, with "dramatic." Those familiar with Goethe know that for him one of the "classic" (icrmans the two terms wrrc synonymous m this passage, 
+•I have replaced tin' word "tragic," used in tin- quotation, with "dramatic." Those familiar with Goethe know that for him one of the "classic" (icrmans the two terms wrrc synonymous m this passage,
 
-plete civilizations should have evolved t*heir own particular conception of the drama, and that one of these new conceptions should be revealed by each new evolution of society, whence arises the dim but faithful expectation of our own age, waiting for the manifestation of its own dramatic ideals, before the cenotaphs of an art which has long been, apparently for commercial reasons, almost non-existent. 
+plete civilizations should have evolved t*heir own particular conception of the drama, and that one of these new conceptions should be revealed by each new evolution of society, whence arises the dim but faithful expectation of our own age, waiting for the manifestation of its own dramatic ideals, before the cenotaphs of an art which has long been, apparently for commercial reasons, almost non-existent.
 
-In fine, after having brought together all these dramatic "points of view," we shall see, as in a panorama, the great procession of our race, in characteristic motley costumes:- Hindu kings in their chariots, Chinese gallants playing their mandores, nude heroes of Hellas, legendary knights, adventurers of sword and cape, golden-tressed princesses, nymphs sparkling with gems, shy maids with drooping eyelashes, famed courtesans, chaste Athenian virgins, priestly confessors, chattering gossips, gurus expounding religious ideas, satyrs leaping upon goats' feet, ugly slaves, peris, horned devils in disguise, lisping Tartaglias, garrulous Graciosos, Shakespearean clowns, Hugoesque buffoons, magistrates, immobile Buddhist ascetics, white-robed sacrificers, martyrs with shining aureoles, too-crafty Ulysses, frightful Rakchasas, messengers dispersing calamitous tidings to the winds of heaven, pure-hearted youths, blood-stained madmen, - yes, here it assembles, our humanity, here it moves through its periods of greatest intensity — but presenting always one of the facets of the prism possessed by Gozzi. 
+In fine, after having brought together all these dramatic "points of view," we shall see, as in a panorama, the great procession of our race, in characteristic motley costumes:- Hindu kings in their chariots, Chinese gallants playing their mandores, nude heroes of Hellas, legendary knights, adventurers of sword and cape, golden-tressed princesses, nymphs sparkling with gems, shy maids with drooping eyelashes, famed courtesans, chaste Athenian virgins, priestly confessors, chattering gossips, gurus expounding religious ideas, satyrs leaping upon goats' feet, ugly slaves, peris, horned devils in disguise, lisping Tartaglias, garrulous Graciosos, Shakespearean clowns, Hugoesque buffoons, magistrates, immobile Buddhist ascetics, white-robed sacrificers, martyrs with shining aureoles, too-crafty Ulysses, frightful Rakchasas, messengers dispersing calamitous tidings to the winds of heaven, pure-hearted youths, blood-stained madmen, - yes, here it assembles, our humanity, here it moves through its periods of greatest intensity — but presenting always one of the facets of the prism possessed by Gozzi.
 
-These thirty-six facets, which I have undertaken to recover, should obviously be simple and clean, and of no far-fetched character; of this we shall be convinced after seeing them repeated, with unfailing distinctness, in all epochs and in all genres. The reader will find, in my brief exposition, but twelve hundred examples cited, of which about a thousand are taken from the stage; but in this number I have included works the most dissimilar and the most celebrated, nearly all others being but mosaics of these. There will here be found the principal dramas of China, of India, of Judea, and, rued less to say, of the Greek theater. However, instead of confining ourselves to the thirty-two classic tragedies we shall make use of those works of Hellenism which, unfortunately for the indolent public of today, still lie buried in Latin; works from whose great lines might be reconstructed hundreds of masterpieces, and all offering us, from the shades to which we have relegated them, the freshness of unfamiliar beauty. Leaving aside, for the present, any detailed consideration of the Persian and mediaeval Mysteries, which depend almost without exception upon two or three situations, and which await a special study, we shall glance over, --after the Jeux and Miracles of the thirteenth and fourteenth centuries, - the Spanish authors, the French classics, the Italians, the Germans of the Romantic revival, and our modern dramatic literature. And it seems to me we shall have finally proved this theory of the Thirty-six Situations, when we shall thus have brought it into contact with the dramatic production of the last thirty years. 
+These thirty-six facets, which I have undertaken to recover, should obviously be simple and clean, and of no far-fetched character; of this we shall be convinced after seeing them repeated, with unfailing distinctness, in all epochs and in all genres. The reader will find, in my brief exposition, but twelve hundred examples cited, of which about a thousand are taken from the stage; but in this number I have included works the most dissimilar and the most celebrated, nearly all others being but mosaics of these. There will here be found the principal dramas of China, of India, of Judea, and, rued less to say, of the Greek theater. However, instead of confining ourselves to the thirty-two classic tragedies we shall make use of those works of Hellenism which, unfortunately for the indolent public of today, still lie buried in Latin; works from whose great lines might be reconstructed hundreds of masterpieces, and all offering us, from the shades to which we have relegated them, the freshness of unfamiliar beauty. Leaving aside, for the present, any detailed consideration of the Persian and mediaeval Mysteries, which depend almost without exception upon two or three situations, and which await a special study, we shall glance over,—after the Jeux and Miracles of the thirteenth and fourteenth centuries,—the Spanish authors, the French classics, the Italians, the Germans of the Romantic revival, and our modern dramatic literature. And it seems to me we shall have finally proved this theory of the Thirty-six Situations, when we shall thus have brought it into contact with the dramatic production of the last thirty years.
 
-Two hundred of the examples cited have been taken from other literary genres akin to the dramatic: romance, • ■pic, history, -and from reality. For this investigation can and should be pursued in human nature, by which 
+Two hundred of the examples cited have been taken from other literary genres akin to the dramatic: romance, epic, history,—and from reality. For this investigation can and should be pursued in human nature, by which I mean in politics, in courts of justice, in daily life. Amid these explorations the present study will soon seem but an introduction to a marvelous, an inexhaustible stream,—the Stream of Existence, where meet momentarily, in their primordial unity, history, mystic poetry, moralist (and amoralist) writings, humor, psychology, law, epic, romance, fable, myth, proverb and prophecy.
 
-I mean in politics, in courts of justice, in daily life. Amid these explorations the present study will soon seem lint an introduction to a marvelous, an inexhaustible stream, the Stream of Existence, where meet momentarily, in their primordial unity, history, mystic poetry, moralist and amoralisl writings, humor, psychology, law, epic, romance, table, myth, proverb and prophecy. 
+It may here be allowable to ask, with our theory in mind, a number of questions which to us are of primary importance.
 
-It may here be allowable to ask, with our theory in mind, a number of questions which to us are of primary importance. 
+Which are the dramatic situations neglected by our own epoch, so faithful in repeating the few most familiar? Which, on the other hand, are most in use today? Which are the most neglected, and which the most used, in each epoch, genre, school, author? What are the reasons for these preferences? The same questions may be asked before the classes and sub-classes of the situations.
 
-Which are the dramatic situations neglected by our n epoch, so faithful in repeating the few most familiar?  Which, on the other hand, are mosl in use today? Which are the mo I neglected, and which the most used, in each epoch, genre, Bchool, author? Whal are the reasons for these preference The same questions may be asked before the classes :m<l sub-cl; if the situations. 
+Such an examination, which requires only patience, will show first the list of combinations (situations and their classes and sub-classes) at present ignored, and which remain to be exploited in contemporaneous art, second, how these may be adapted. On the way it may chance that we shall discern, hidden within this or that one of our thirty-six categories, a unique case, - - one without analogue among the other thirty-five, with no immediate relationship to any other, the product of a vigorous inspiration. But, in carefully determining the exact position of this case among the sub-classes of the situation to which it belongs, we shall be able to form, in each of the thirty-five others, a sub-class corresponding to it; thus will be created thirty-five absolutely new plots. These will give, when developed according to the taste of this or that school or period, a series of thirty-five "original imitations," thirty-five new scenarios, of a more unforeseen character, certainly, than the majority of our dramas, which, whether inspired by books or realities, when viewed in the clear light of the ancient writings revealed to us only their reflections, so long as we had not, for our guidance, the precious thread which vanished with Gozzi.
 
-Such an examination, which requires only patience, will show first the list of combinations (situations and their classes and sub-classes) at present ignored, and which remain to be exploited in contemporaneous art, second, how these may be adapted. On the way it may chance that we shall discern, hidden within this or that one of our thirty-six categories, a unique case, - - one without analogue among the other thirty-five, with no immediate relationship to any other, the product of a vigorous inspiration. But, in carefully determining the exact position of this case among the sub-classes of the situation to which it belongs, we shall be able to form, in each of the thirty-five others, a sub-class corresponding to it; thus will be created thirty-five absolutely new plots. These will give, when developed according to the taste of this or that school or period, a series of thirty-five "original imitations," thirty-five new scenarios, of a more unforeseen character, certainly, than the majority of our dramas, which, whether inspired by books or realities, when viewed in the clear light of the ancient writings revealed to us only their reflections, so long as we had not, for our guidance, the precious thread which vanished with Gozzi. 
+Since we now hold this thread, let us unwind it.
 
-Since we now hold this thread, let us unwind it. 
-
-## FIRST SITUATION SUPPLICATION 
+### FIRST SITUATION SUPPLICATION
 
 (The dynamic elements technically necessary are: — a Persecutor, a Suppliant and a Power in authority, whose decision is doubtful.)
 
 Among the examples here offered will be found those of three slightly differing classes. In the first, the power whose decision is awaited is a distinct personage, who is deliberating; shall he yield, from motives of prudence or from apprehension for those he loves, to the menaces of the persecutor, or rather, from generosity, to the appeal of the persecuted? In the second, by means of a contraction analogous to that which abbreviates a syllogism[^1] to an enthymeme,[^2] this undecided power is but an attribute of the persecutor himself,—a weapon suspended in his hand; shall anger or pity determine his course? In the third group, on the contrary, the suppliant element is divided between two persons, the Persecuted and the Intercessor, thus increasing the number of principal characters to four.
 
-[^1]: Syllogism: A reckoning all together, a reasoning; to bring at 'Mice before the mind; to infer; conclude. As "Every virtue i- laudable; kindness is a virtue; therefore kindness is laudable." 
+[^1]: Syllogism: A reckoning all together, a reasoning; to bring at 'Mice before the mind; to infer; conclude. As "Every virtue i- laudable; kindness is a virtue; therefore kindness is laudable."
 
 [^2]: Enthymeme An argument consisting of only two propositions; an antecedent and its consequent; a syllogism with one premise  omitted: a "We are dependent, therefore we should be humble."
 
 These three groups (A, B, C) may be subdivided as follows:
 
-A (1)—Fugitives Imploring the Powerful for Help Against Their Enemies.—Complete examples: "The Suppliants" and "The Heraclidae" of Aeschylus; "The Heraclidae" of Euripides; the "Minos" of Sophocles. Cases in which the fugitives are guilty: the "Oicles" and "Chryses" of Sophocles; "The Eumenides" of Aeschylus. A partial example: Act II of Shakespeare's "King John." Familiar instances: scenes from colonial protectorates.
+A (1) — **Fugitives Imploring the Powerful for Help Against Their Enemies**. — Complete examples: "The Suppliants" and "The Heraclidae" of Aeschylus; "The Heraclidae" of Euripides; the "Minos" of Sophocles. Cases in which the fugitives are guilty: the "Oicles" and "Chryses" of Sophocles; "The Eumenides" of Aeschylus. A partial example: Act II of Shakespeare's "King John." Familiar instances: scenes from colonial protectorates.
 
-(2)—Assistance Implored for the Performance of a Pious Duty Which Has Been Forbidden.—Complete examples: "The Eleusinians" of Aeschylus and "The Suppliants" of Euripides. A historical example: the burial of Molière. A familiar instance: a family divided in its religious belief, wherein a child, in order to worship according to his conscience, appeals to the parent who is his co-religionist.
+(2) — **Assistance Implored for the Performance of a Pious Duty Which Has Been Forbidden**. — Complete examples: "The Eleusinians" of Aeschylus and "The Suppliants" of Euripides. A historical example: the burial of Molière. A familiar instance: a family divided in its religious belief, wherein a child, in order to worship according to his conscience, appeals to the parent who is his co-religionist.
 
-(3)—Appeals for a Refuge in Which to Die.—Complete example: "Œdipus at Colonus." Partial example: the death of Zineb, in Hugo's "Mangeront-ils?"
+(3) — **Appeals for a Refuge in Which to Die**. — Complete example: "Œdipus at Colonus." Partial example: the death of Zineb, in Hugo's "Mangeront-ils?"
 
-B (1)—Hospitality Besought by the Shipwrecked.Complete example: "Nausicaa" and "The Pheacians" of Sophocles. Partial example: Act I of Berlioz' "Trojans."
+B (1) — **Hospitality Besought by the Shipwrecked**. Complete example: "Nausicaa" and "The Pheacians" of Sophocles. Partial example: Act I of Berlioz' "Trojans."
 
-(2)—Charity Entreated by Those Cast off by Their Own People, Whom They Have Disgraced.—Examples: the "Danae" of Aeschylus and the "Danae" of Euripides; the "Alope," "Auge" and "The Cretans" of Euripides. Familiar instances: a large part of the fifteen or twenty thousand adventures which, each year, come to an end in the Bureau des Enfants-Assistés. Special instance of a child received into a home: the beginning of "Le Rêve," by Zola.
+(2) — **Charity Entreated by Those Cast off by Their Own People, Whom They Have Disgraced**. — Examples: the "Danae" of Aeschylus and the "Danae" of Euripides; the "Alope," "Auge" and "The Cretans" of Euripides. Familiar instances: a large part of the fifteen or twenty thousand adventures which, each year, come to an end in the Bureau des Enfants-Assistés. Special instance of a child received into a home: the beginning of "Le Rêve," by Zola.
 
-(3)—Expiation: The Seeking of Pardon, Healing or Deliverance.—Examples: Sophocles' "Philoctetes;" Aeschylus' "Mysians;" Euripides' "Telephus;" "Les Champairol" (Rraisse, 1884). Historical example: the penitence of Barbarossa. Familiar instances: petitions for pardon, confession of Catholics, etc.
+(3) — **Expiation: The Seeking of Pardon, Healing or Deliverance**. — Examples: Sophocles' "Philoctetes;" Aeschylus' "Mysians;" Euripides' "Telephus;" "Les Champairol" (Rraisse, 1884). Historical example: the penitence of Barbarossa. Familiar instances: petitions for pardon, confession of Catholics, etc.
 
-(4)—The Surrender of a Corpse, or of a Relic, Solicited:—"The Phrygians" of Aeschylus. Historical examples: the Crusaders' embassies to the Moslems. Familiar instances: the reclaiming of the remains of a great man buried in a foreign land; of the body of an executed person, or of a relative dead in a hospital.
+(4) — **The Surrender of a Corpse, or of a Relic, Solicited**: — "The Phrygians" of Aeschylus. Historical examples: the Crusaders' embassies to the Moslems. Familiar instances: the reclaiming of the remains of a great man buried in a foreign land; of the body of an executed person, or of a relative dead in a hospital.
 
 It should be noted that the "Phrygians," and the Twenty-fourth Book of the Iliad, which inspired the play, form a transition toward the Twelfth Situation (A Refusal Overcome).
 
-C (1)—Supplication of the Powerful for Those Dear to the Suppliant.—Complete example: Esther. Partial example: Margaret in the denouement of "Faust." Historical example: Franklin at the court of Louis XVI. Example corresponding also to A (3): the "Propompes" of Aeschylus.
+C (1) — **Supplication of the Powerful for Those Dear to the Suppliant**. — Complete example: Esther. Partial example: Margaret in the denouement of "Faust." Historical example: Franklin at the court of Louis XVI. Example corresponding also to A (3): the "Propompes" of Aeschylus.
 
-(2)—Supplication To a Relative in Behalf of Another Relative.—Example: the "Eurysaces" of Sophocles.
+(2) — **Supplication To a Relative in Behalf of Another Relative.** — Example: the "Eurysaces" of Sophocles.
 
-(3)—Supplication to a Mother's Lover, in Her Behalf.—Example: "L'Enfant de l'Amour" (Bataille, 1911).
+(3) — **Supplication to a Mother's Lover, in Her Behalf. **— Example: "L'Enfant de l'Amour" (Bataille, 1911).
 
 It is apparent that, in the modern theater, very little use has been made of this First Situation. If we except subdivisions C (1), which is akin to the poetic cult of the Virgin and the Saints, and C (3), there is not a single pure example, doubtless for the reason that the antique models have disappeared or have become unfamiliar, and more particularly because, Shakespeare, Lope and Corneille not having transformed this theme or elaborated it with those external complexities demanded by our modern taste, their successors have found the First Situation too bare and simple a subject for this epoch. As if one idea were necessarily more simple than another!—as if all those which have since launched upon our stage their countless ramifications had not in the beginning shown the same vigorous simplicity!
 
@@ -123,25 +154,21 @@ Nowhere, certainly, can the vicissitudes of power, be it arbitral, tyrannical, o
 
 France's enthusiastic sympathy for Poland, revived during the last half-century; the same sympathy which on so many historic occasions she has manifested for Scotland and for Ireland, might here find tragic expression; that cry of humanity with which a single priest, at the massacre of Fourmies, rallied to the Church a fraction of revolutionary France; the worship of the dead, that first, last, most primitive and most indestructible form of religious sentiment; the agony which awaits us all, agony dragging itself toward the darkness like a spent beast; the profoundly humble longing of one whom a murder has deprived of all that was dearest to him, that pitiable entreaty, on bended knees, which melted into tears the savage rancor of Achilles and caused him to forget his vow;—all are here in this First Situation, all these strong emotions, and yet others; nowhere else, indeed, can they be found in such completeness,—and our modern world of art has forgotten this situation!
 
-
-
-## SECOND SITUATION DELIVERANCE 
+### SECOND SITUATION DELIVERANCE
 
 (Elements: an Unfortunate, a Threatener, a Rescuer)
 
 This is, in a way, the converse of the First Situation, in which the unfortunate appeals to an undecided power, whereas here an unexpected protector, of his own accord, comes suddenly to the rescue of the distressed and despairing.
 
-A—Appearance of a Rescuer to the Condemned:—The "Andromedas" of Sophocles, of Euripides and of Corneille; "Le Jeu de Saint Nicolas" (Jean Bodel). Partial examples: the first act of "Lohengrin;" the third act of Voltaire's "Tancred;" the role of the generous patron in "Boislaurier" (Richard, 1884). The last example and the following show particularly the honor of the unfortunate at stake: Daniel and Susanna, and various exploits of chivalry. A parody: "Don Quixote." A familiar instance: judicial assistance. The dénouement of "Bluebeard" (here the element of kinship enters, in the defense by brothers of their sister, and increases the pathos by the most simple of means, forgotten, however, by our playwrights).
+ A — **Appearance of a Rescuer to the Condemned:** — The "Andromedas" of Sophocles, of Euripides and of Corneille; "Le Jeu de Saint Nicolas" (Jean Bodel). Partial examples: the first act of "Lohengrin;" the third act of Voltaire's "Tancred;" the role of the generous patron in "Boislaurier" (Richard, 1884). The last example and the following show particularly the honor of the unfortunate at stake: Daniel and Susanna, and various exploits of chivalry. A parody: "Don Quixote." A familiar instance: judicial assistance. The dénouement of "Bluebeard" (here the element of kinship enters, in the defense by brothers of their sister, and increases the pathos by the most simple of means, forgotten, however, by our playwrights).
 
-B (1)—A Parent Replaced Upon a Throne by his Children:—"Aegeus" and "Peleus," by Sophocles; Euripides' "Antiope." Cases in which the children have previously been abandoned are "Athamas I" and also the "Tyro" of Sophocles. (The taste of the future author of "Œdipus at Colonus" for stories in which the Child plays the role of deliverer and dispenser of justice, forms a bitter enough contrast to the fate which awaited the poet himself in his old age.)
+B (1) — **A Parent Replaced Upon a Throne by his Children:** — "Aegeus" and "Peleus," by Sophocles; Euripides' "Antiope." Cases in which the children have previously been abandoned are "Athamas I" and also the "Tyro" of Sophocles. (The taste of the future author of "Œdipus at Colonus" for stories in which the Child plays the role of deliverer and dispenser of justice, forms a bitter enough contrast to the fate which awaited the poet himself in his old age.)
 
-(2)—Rescue by Friends, or by Strangers Grateful for Benefits or Hospitality:—Sophocles' "Œneus, "Iolas" and "Phineus." A partial example: the second part of Euripides' "Alceste." Example in comedy: Musset's "Fantasio." Example in which protection is accorded by the host who has granted asylum: Euripides' "Dictys."
+(2) — **Rescue by Friends, or by Strangers Grateful for Benefits or Hospitality:** — Sophocles' "Œneus, "Iolas" and "Phineus." A partial example: the second part of Euripides' "Alceste." Example in comedy: Musset's "Fantasio." Example in which protection is accorded by the host who has granted asylum: Euripides' "Dictys."
 
 We see, by a glance over these subdivisions, what our writers might have drawn from the second of the Situations. For us, indeed, it should possess some little attraction, if only for the reason that two thousand years ago humanity once more listened to this story of the Deliverer, and since then has so suffered, loved and wept for the sake of it. This situation is also the basis of Chivalry, that original and individual heroism of the Middle Ages; and, in a national sense, of the French Revolution. Despite all this, in art,—if we except the burlesque of Cervantes, and the transplendent light flashing from the silver armor of Lohengrin,—in art, as yet, it is hardly dreamed of.
 
-
-
-## THIRD SITUATION CRIME PURSUED BY VENGEANCE 
+### THIRD SITUATION CRIME PURSUED BY VENGEANCE
 
 (Elements: an Avenger and a Criminal)
 
@@ -185,7 +212,7 @@ Frequently used though this situation has been in our day, many an ancient case 
 
 To this we may add all the turns and bearings, slow or instantaneous, direct or tortuous, frantic or sure, which punishment can take, the thousand resources which it offers, the points at which it may aim in its deadly course, the obstacles which chance or the defendant may present. Next introduce various secondary figures, each pursuing his own aims, as in life, intercrossing each other and crossing the drama—and I have sufficient esteem for the reader's capabilities to develop the subject no further.
 
-## FOURTH SITUATION VENGEANCE TAKEN FOR KINDRED UPON KINDRED
+### FOURTH SITUATION VENGEANCE TAKEN FOR KINDRED UPON KINDRED
 
 (Elements: Avenging Kinsman; Guilty Kinsman; Remembrance of the Victim, a Relative of Both.)
 
@@ -199,7 +226,7 @@ Other germs of fertility will be found in turn in the circumstances which have d
 
 A (1) — **A Father's Death Avenged Upon a Mother**; -"The Choephores" of Aeschylus; the "Electras" of Sophocles, Euripides, Attilius, Q. Cicero, Pradon, Longepierre, Crebillon, Rochefort, Chenier, and of Guillard's opera; the "Orestes" of Voltaire and of Alfieri; Sophocles' "Epigones;" the "Eriphyles" of Sophocles and of Voltaire; and lastly "Hamlet," in which we recognize so clearly the method by which the poet rejuvenates his subjects, — by an almost antithetic change of characters and of milieu.
 
-(2) — A** Mother Avenged Upon a Father**: — "Zoe Chien-Chien" (Matthey, 1881), in which the parricide is counterbalanced by an incestuous passion, and is committed by the daughter, not by the son.
+(2) — **A Mother Avenged Upon a Father**: — "Zoe Chien-Chien" (Matthey, 1881), in which the parricide is counterbalanced by an incestuous passion, and is committed by the daughter, not by the son.
 
 B — **A Brother's Death Avenged Upon a Son** (but without premeditation, this accordingly falling almost into the situation "Imprudence"}: — Aeschylus' "Atalanta" and Sophocles' "Meleager."
 
@@ -213,7 +240,7 @@ A father's death avenged upon the brother of the avenger. Upon his sister. Upon 
 
 By way of variety, the vengeance may be carried out, not upon the person of the criminal himself, but upon some one dear to him (thus Medea and Atreus struck Jason and Thyestes through their children), and even inanimate objects may take the place of victims.
 
-### FIFTH SITUATION PURSUIT 
+### FIFTH SITUATION PURSUIT
 
 (Elements: Punishment and Fugitive)
 
@@ -259,7 +286,7 @@ D (1) — **Abandonment by a Lover or a Husband**: — "Faust;" Cornielle's "Ari
 
 If classes B, C and D, which are concerned with the fate of individuals, have been so much less developed than they might easily have been, what shall be said of the case of social disasters, such as Class A? Shakespeare did not tread far enough upon that majestic way. Only among the Greeks has a work of this kind presented at one stroke that conception of human events, sublime, fatalistic and poetic, of which Herodotus was one day to create history.
 
-### SEVENTH SITUATION FALLING PREY TO CRUELTY OR MISFORTUNE 
+### SEVENTH SITUATION FALLING PREY TO CRUELTY OR MISFORTUNE
 
 To infinite sorrow there is no limit. Beneath that which seems the final depth of misfortune, there may open another yet more frightful. A ferocious and deliberate dissection of the heart it seems, this Seventh Situation, — that of pessimism par excellence.
 
@@ -329,7 +356,7 @@ The Ninth Situation thus summarizes the poetry of war, of robbery, of surprise, 
 
 Lest the reader be wearied, I refrain from enumerating, under these classes so lightly touched upon, many of the plots and complications which might be evolved from them. Methods of tracking the human game — bandit or hero, — the forces conspiring for his disaster, the conditions which make him the victim of his masters, the ways in which revolt may arise, the alternatives of the struggle in a "daring enterprise," certainly would appear to be more complex today than in earlier ages; moreover, upon these themes parts borrowed from other situation.- may be engrafted with remarkable ease. Even if we desire to preserve to the said themes their archaic severity, how much may yet be drawn from them! In how many waj . to cite hut one example, might an Adventurous Expedition be changed by varying the motives or the object of the enterprise, the nature of the obstacles, the qualities of the hero, and the previous bearings Of the three indispensable elements of the drama! "Adventurous Travels" hardly been touched upon. And how many other classes are there which have not been!
 
-### TENTH SITUATION ABDUCTION 
+### TENTH SITUATION ABDUCTION
 
 (The Abductor; the Abducted; the Guardian)
 
@@ -353,7 +380,7 @@ D (1) — **Rescue of a Captive Friend**: — "Richard Coeur-de-Lion," by Sedain
 
 (3) — **Of a Soul in Captivity to Error**: — "Barlaam and Josaphat," a fourteenth-century Miracle. The deeds of the Apostles, of missionaries, etc.
 
-### ELEVENTH SITUATION THE ENIGMA 
+### ELEVENTH SITUATION THE ENIGMA
 
 (Interrogator, Seeker and Problem)
 
@@ -375,7 +402,7 @@ C (1) — **Temptations Offered With the Object of Discovering His Name**.
 
 (3) — **Tests For the Purpose of Ascertaining the Mental Condition**: — "Ulysses Furens" of Sophocles; "The Palamedes" of Aeschylus and of Euripides (according to the themes attributed to these lost works). Examinations of criminals by alienists.
 
-### TWELFTH SITUATION OBTAINING 
+### TWELFTH SITUATION OBTAINING
 
 (A Solicitor and an Adversary Who Is Refusing, or an Arbitrator and Opposing Parties)
 
@@ -389,7 +416,7 @@ C — **Eloquence With an Arbitrator**: — "The Judgment of Arms," by Aeschylus
 
 One of the cases unused in the theater, notwithstanding its frequency, is Temptation, already introduced as a part of the preceding situation. The irritated adversary is here the Defiant; the solicitor, now the Tempter, has undertaken an unusual negotiation, one for the obtaining of an object which nothing can persuade the owner to part with; consequently the aim must be, gently, little by little, to bewilder, charm or stupefy him. Eternal role of woman toward man! — and of how many things toward the project of being a man! Does it not call to mind the hieratic attitude of the Christian toward Satan, as Flaubert has illuminated it, with a thousand sparkling lights, in his "Temptation of Saint Anthony?"
 
-### THIRTEENTH SITUATION ENMITY OF KINSMEN 
+### THIRTEENTH SITUATION ENMITY OF KINSMEN
 
 Elements: a Malevolent Kinsman; a Hated or Reciprocally Hating Kinsman)
 
@@ -435,7 +462,7 @@ The character of the common parent, torn by affection for both adversaries in th
 
 With the enmities of kinsmen are naturally connected the enmities which spring up between friends. This nuance will be found in the following situation.
 
-### FOURTEENTH SITUATION RIVALRY OF KINSMEN 
+### FOURTEENTH SITUATION RIVALRY OF KINSMEN
 
 (The Preferred Kinsman; the Rejected Kinsman; the Object)
 
@@ -467,7 +494,7 @@ C — **Rivalry of Cousins**: (which in reality falls into the following class):
 
 D — **Rivalry of Friends**: — Shakespeare's "Two Gentlemen of Verona;" "Aimer sans Savoir Qui" by Lope de Vega; Lessing's "Damon;" "Le Coeur a ses Raisons" (de Flers and de Caillavet, 1902); "Une Femme Passa" (Coolus, 1910).
 
-### FIFTEENTH SITUATION MURDEROUS ADULTERY 
+### FIFTEENTH SITUATION MURDEROUS ADULTERY
 
 (Elements: Two Adulterers; a Betrayed Husband or Wife)
 
@@ -521,7 +548,7 @@ For the rest, this situation of Madness is far from having been neglected in our
 
 On the other hand, if we except the pretext of studying insanity in itself, which "Ajax" has furnished from Astydamus to Ennius, and from Ennius to Emperor Augustus, I find nothing "Shakespearean" in the drama of antiquity except "Orestes." All other characters are in the enjoyment of their senses, and do not thereby become any less pathetic. "Œdipus" alone shows, in default of abnormality in the hero's psychologic constitution, external events of an extraordinary character (a resource since so largely used by the Romanticists of 1830 and later). But the rest of the antique dramatic types are evolved in accordance with normal passions, and under objective conditions relatively common.
 
-### SEVENTEENTH SITUATION FATAL IMPRUDENCE 
+### SEVENTEENTH SITUATION FATAL IMPRUDENCE
 
 (The Imprudent; the Victim or the Object Lost)
 
@@ -551,7 +578,7 @@ Besides curiosity and credulity, other motives may determine the imprudence; in 
 
 In the present situation, the Instigator, — who nevertheless is not essential, — may become worthy of figuring even as the protagonist ; such is the case of Medea in "Pelias." This is perhaps the most favorable aspect in which the "villain" can be presented; imagine, for instance, an Iago becoming the principal character of a play (as Satan is of the world)! The difficulty will be to find a sufficient motive for him; ambition, (partly the case in Richard III; is not always a convincing one, because of its "a priori" way of proceeding; jealousy and vengeance seem a i rifle sentimental tor this demoniac figure; misanthropy is too philosophic and honorable; self-interest (the case of Pelias) is more appropriate. But envy, - envy, which in the presence of friendly solicitude feels but the more keenly the smart of its wounds, — envy studied in its dark and base endeavors, in the shame of defeat, in its cowardice, and end finally in crime, — here, it seems to me, is the ideal motive.
 
-### EIGHTEENTH SITUATION INVOLUNTARY CRIMES OF LOVE 
+### EIGHTEENTH SITUATION INVOLUNTARY CRIMES OF LOVE
 
 (The Lover; the Beloved; the Revealer)
 
@@ -583,7 +610,7 @@ We have seen above instances of adultery committed through a mistake on the part
 
 Ignorance of the sex of the beloved is the point upon which "Mademoiselle de Maupin" turns; there is in the first place a mistake (comedy), upon which are built the obsidional struggles of a soul (tragi-comedy), from which there finally results, when the truth is disclosed, a brief tragic dénouement.
 
-### NINETEENTH SITUATION SLAYING OF A KINSMAN UNRECOGNIZED 
+### NINETEENTH SITUATION SLAYING OF A KINSMAN UNRECOGNIZED
 
 (The Slayer; the Unrecognized Victim)
 
@@ -627,7 +654,7 @@ Remarkable is the liking of Hugo (and consequently of his imitators) for this so
 
 Be it noted that Shakespeare has not in a single instance employed this Nineteenth Situation, an altogether accidental one, having no bearing upon his powerful studies of the will.
 
-### TWENTIETH SITUATION SELF-SACRIFICING FOR AN IDEAL 
+### TWENTIETH SITUATION SELF-SACRIFICING FOR AN IDEAL
 
 (The Hero; the Ideal; the "Creditor" or the Person or Thing Sacrificed)
 
@@ -654,7 +681,7 @@ C — **Sacrifice of Well-Being to Duty**: "Resurrection" by Tolstoi; "L'Apprent
 D — **The Ideal of "Honor" Sacrificed to the Ideal of "Faith;"** — Two powerful examples, which for secondary reasons did not attain success (because the public ear was incapable of perceiving a harmony pitched so high in the scale of sentiment): "Theodore" by Corneille and "The Virgin Martyr" by Massinger. Partial example: the good hermit Abraham in Hroswitha.
 
 
-### TWENTY-FIRST SITUATION SELF-SACRIFICE FOR KINDRED 
+### TWENTY-FIRST SITUATION SELF-SACRIFICE FOR KINDRED
 
 
 (The Hero; the Kinsman; the "Creditor" or the Person or Thing Sacrificed)
@@ -678,7 +705,7 @@ D — **The Ideal of "Honor" Sacrificed to the Ideal of "Faith;"** — Two power
 ⁠(2) — Modesty Sacrificed for the Life of a Relative or a Loved One: — Shakespeare's "Measure for Measure;" Euripides' "Andromache" and also Racine's; "Pertharite" by Corneille; "La Tosca" (Sardou, 1889). In fiction: "Le Huron" by Voltaire.
 
 
-### TWENTY-SECOND SITUATION ALL SACRIFICED FOR A PASSION 
+### TWENTY-SECOND SITUATION ALL SACRIFICED FOR A PASSION
 
 (The Lover; the Object of the Fatal Passion; the Person or Thing Sacrificed)
 
@@ -702,7 +729,7 @@ D — **The Ideal of "Honor" Sacrificed to the Ideal of "Faith;"** — Two power
 
 ⁠Few situations, obviously, have received better and more constant treatment during our own century — to whose vices the Twenty-Second offers, in truth, a most appropriate mirror, in its amalgam of gloom and eroticism, at the same time presenting the most interesting studies of nervous pathology.
 
-### TWENTY-THIRD SITUATION NECESSITY OF SACRIFICING LOVED ONES 
+### TWENTY-THIRD SITUATION NECESSITY OF SACRIFICING LOVED ONES
 
 (The Hero; the Beloved Victim; the Necessity for the Sacrifice)
 
@@ -734,7 +761,7 @@ Before leaving these four symmetrical situations, I would suggest a way of dispo
 
 
 
-### TWENTY-FOURTH SITUATION RIVALRY OF SUPERIOR AND INFERIOR 
+### TWENTY-FOURTH SITUATION RIVALRY OF SUPERIOR AND INFERIOR
 
 (The Superior Rival; the Inferior Rival; the Object)
 
@@ -760,23 +787,23 @@ A — **Masculine Rivalries** (1) — **Of a Mortal and an Immortal**: "Mriganca
 
 ⁠(8) — **Of an Honored Man and a Suspected One**: — "I/Obstacle" (Daudet, L890); "Le Drapeau" (Moreau, 1879); "Devanl I'Ennemi" (Charton, L890); "Jack Tempête" (Elzear, L882); "La Bucheronne (C. Edmond, 1889). In comedy: "Le Manage de Mile. Boulemans" Fonson and Wicheler, 1911).
 
-(9) — **Rivalry of Two who Are Almost Equal**: — "Dhourtta Samagana," the rivals here being master and disciple, as is also the case in "Maitres Chanteurs," but not in "Glatigny" (Mendes, 1906), nor in "Bohemos" Zamacois, 1907). 
+(9) — **Rivalry of Two who Are Almost Equal**: — "Dhourtta Samagana," the rivals here being master and disciple, as is also the case in "Maitres Chanteurs," but not in "Glatigny" (Mendes, 1906), nor in "Bohemos" Zamacois, 1907).
 
-(10) - **Rivalry of Equals, One of Whom Has in the Past Been Guilty of Adultery**: -- "Chevalerie Rusti- que" (Verga, 1888). 
+(10) - **Rivalry of Equals, One of Whom Has in the Past Been Guilty of Adultery**: -- "Chevalerie Rusti- que" (Verga, 1888).
 
-(11) - **Of a Man Who is Loved and One Who Has Not the Right to Love**: -- "La Esmeralda." 
+(11) - **Of a Man Who is Loved and One Who Has Not the Right to Love**: -- "La Esmeralda."
 
-(12) - **Of the Two Successive Husbands of a Divorcee** -- "Le Dedale" (Hervieu, 1903). By multiply- ing the number of husbands good comic effects might be secured. 
+(12) - **Of the Two Successive Husbands of a Divorcee** -- "Le Dedale" (Hervieu, 1903). By multiply- ing the number of husbands good comic effects might be secured.
 
-B - **Feminine Rivalries**, (1) -- **Of a Sorceress and an Ordinary Woman**: "La Conquete de la Toison d'Or" by Corneille: "La Sorciere" (Sardou, 1903). 
+B - **Feminine Rivalries**, (1) -- **Of a Sorceress and an Ordinary Woman**: "La Conquete de la Toison d'Or" by Corneille: "La Sorciere" (Sardou, 1903).
 
-(2) - **Of Victor and Prisoner**: - "Le Comte d' Essex" by Thomas Corneille; the "Marie Stuart" of Schiller and also of Samson. 
+(2) - **Of Victor and Prisoner**: - "Le Comte d' Essex" by Thomas Corneille; the "Marie Stuart" of Schiller and also of Samson.
 
-(3) - **Of Queen and Subject**: -- "Marie Tudor" and "Amy Robsart" by Hugo; "Le Cor Fleuri" (Mikhael and Herold); "Varennes" (Lenotre and Lavedan, 1904). The title of this sub-class is, it will be remembered, the only one cited of the so-called "Twenty-Four Situations" of Gerard de Nerval; we might indeed include under this denomination the examples of B 1, 2 and 4. But at most it can constitute only a half of one of the four classes of "Rivalry of Superior and Inferior," which itself has but the importance of one situation in a series of thirty-six. 
+(3) - **Of Queen and Subject**: -- "Marie Tudor" and "Amy Robsart" by Hugo; "Le Cor Fleuri" (Mikhael and Herold); "Varennes" (Lenotre and Lavedan, 1904). The title of this sub-class is, it will be remembered, the only one cited of the so-called "Twenty-Four Situations" of Gerard de Nerval; we might indeed include under this denomination the examples of B 1, 2 and 4. But at most it can constitute only a half of one of the four classes of "Rivalry of Superior and Inferior," which itself has but the importance of one situation in a series of thirty-six.
 
-(4) - **Of a Queen and a Slave:** -- "Bajazet" by Racine; "Zulime;" part of "Une Nuit de Cteopatre" (from Gautier, by V. Masse, 1885). 
+(4) - **Of a Queen and a Slave:** -- "Bajazet" by Racine; "Zulime;" part of "Une Nuit de Cteopatre" (from Gautier, by V. Masse, 1885).
 
-(5) - **Of Lady and Servant**: -- "The Gardener's Dog" by Lope de Vega (wherein may be found what is perhaps the most successful of the many attempted por- traits of an amoroiLs "grande dame"). 
+(5) - **Of Lady and Servant**: -- "The Gardener's Dog" by Lope de Vega (wherein may be found what is perhaps the most successful of the many attempted por- traits of an amoroiLs "grande dame").
 
 (6) - **Of a Lady and a Woman of Humbler Positions**: -- "Francois-les-baslbleus" (Messager, 1883); "Le Friquet" (Willy and Gyp, 1904); "Petite Hollande" (S. Guitry, 1908); "L'Ane de Buridan" (de Fleurs and de Caillavet, 1909); "Trains de Luxe" (Hermant, 1909). Of a Lady and Two Women of Humbler Class: -- "Les Passagères" (Coolus, 1906).
 
@@ -799,9 +826,7 @@ B - **Feminine Rivalries**, (1) -- **Of a Sorceress and an Ordinary Woman**: "La
 ⁠To the relative rank of the two rivals there is added, as a means of varying the theme, the position, with respect to them, of the beloved Object. The aspects of the struggle will depend, in fact, upon how near the prize may be to one of the adversaries, or how distant; upon whether the Object be of a rank inferior to both rivals, or midway between the two, or even superior to both.
 
 
-
-
-### TWENTY-FIFTH SITUATION ADULTERY 
+### TWENTY-FIFTH SITUATION ADULTERY
 
 (A Deceived Husband or Wife; Two Adulterers)
 
@@ -825,25898 +850,25477 @@ A — A Mistress Betrayed; (1) — For a Young Woman: — Sophocles "Women of Co
 
 (3) — For a Married Woman (a double adultery): — "La Princesse Georges" and "L'Etrangere" by Dumas; "Monsieur de Moral" (Tarbe, L887); "Pes Menages de Paris" (Raymond, 1886); "Le Depute Leveau" (Lemai- tre . (4) With the Intention of Bigamy: The "AJmaeons" of Sophocles and of Euripides. - For a Young Girl, Who Does Not Love in Return: Shakespeare's "Henry VIII," and that of Sainl-Saens; Allieri's "liosamonde" ;i combination of the presenl and the preceding situations, for it is also a simple Rivalry of King and Subjecl i. 6 Wife Envied by a Young Girl Who is in Love With Her Husband:* "Stella" by Goethe; "Dern- ier Amour" ( Ihnei . 1890 , 7 By a Courtesan: "Miss Fanfare" (Ganderax, PSSl, see p, 'J ; "Proserpine" a<(|iK fie ;i in I Saint -Sa< 1 1 . 1887 : "La Comtesse FYedegonde" (Amigues, L881 "Myrane" (Bergeat, L890 ,
 
-Rivalry Between a I/awful Wife Who is Anti- pathetic and a Mistress Who is Congenial: "C'est la Loi" (Cliquet, 1882); "Les Affranchis" (Madame Len- e>u, 1911). 
+Rivalry Between a I/awful Wife Who is Anti- pathetic and a Mistress Who is Congenial: "C'est la Loi" (Cliquet, 1882); "Les Affranchis" (Madame Len- e>u, 1911).
 
-(9) -Between a Generous Wife and an Impas- sioned Girl: — "La Vierge Folle" (Bataille, 1910); "La Femme de Demain" (Arthur Lefebvre, 1909). 
+(9) -Between a Generous Wife and an Impas- sioned Girl: — "La Vierge Folle" (Bataille, 1910); "La Femme de Demain" (Arthur Lefebvre, 1909).
 
-C (1) - - An Antagonistic Husband Sacrificed for a Congenial Lover :-- "Angelo ;" "Le Nouveau Monde" by Villiers de l'Isle Adam; "Un Drole" (Yves Guyot, 1889); "Le Mari" (Nus and Arnould, 1889); "Les Ten- ailles" (Hervieu); "Le Torrent" (Donnay); "Decadence" (Guinon, 1901); "Page Blanche" (Devore, 1909). 
+C (1) - - An Antagonistic Husband Sacrificed for a Congenial Lover :-- "Angelo ;" "Le Nouveau Monde" by Villiers de l'Isle Adam; "Un Drole" (Yves Guyot, 1889); "Le Mari" (Nus and Arnould, 1889); "Les Ten- ailles" (Hervieu); "Le Torrent" (Donnay); "Decadence" (Guinon, 1901); "Page Blanche" (Devore, 1909).
 
-(2) - - A Husband, Believed to be Lost, Forgotten for a Rival: -- "Rhadamiste et Zenobie" by Cr^billon; "Jacques Damour" by Zola. The "Zenobie" of Metas- tasio, by the faithful love retained for her husband, forms a case unique (!) among the innumerable dramas upon adulterous passions. Compare "Le Declale" (see XXIV, A 12). 
+(2) - - A Husband, Believed to be Lost, Forgotten for a Rival: -- "Rhadamiste et Zenobie" by Cr^billon; "Jacques Damour" by Zola. The "Zenobie" of Metas- tasio, by the faithful love retained for her husband, forms a case unique (!) among the innumerable dramas upon adulterous passions. Compare "Le Declale" (see XXIV, A 12).
 
-(3) - A Commonplace Husband Sacrificed for a Sympathetic Lover: "Diane de Lys" by Dumas; "Tristan and Isolde" by Wagner (with the addition of "Madness," produced by a love-potion); "Francoise de Rimini" (A. Thomas, 1882); "La Serenade" (Jean Jullien, 1887); "L' Age Critique" (Byl, 1890) ; "Antoinette Sabrier" (Coolus, 1903); "La Montansier" (Jeofrin, de Flers and de Caillavet, 1904); "Connais-toi" (Hervieu, 1909). The same case without adultery: "Sigurd" (Reyer, 1885); "La Comtesse Sarah" (1886). 
+(3) - A Commonplace Husband Sacrificed for a Sympathetic Lover: "Diane de Lys" by Dumas; "Tristan and Isolde" by Wagner (with the addition of "Madness," produced by a love-potion); "Francoise de Rimini" (A. Thomas, 1882); "La Serenade" (Jean Jullien, 1887); "L' Age Critique" (Byl, 1890) ; "Antoinette Sabrier" (Coolus, 1903); "La Montansier" (Jeofrin, de Flers and de Caillavet, 1904); "Connais-toi" (Hervieu, 1909). The same case without adultery: "Sigurd" (Reyer, 1885); "La Comtesse Sarah" (1886).
 
-(4) -A Good Husband Betrayed for an Inferior Rival:- "L'Aveu" (Sarah Bernhard, 1888); "RevolteV' (Lemaitre, 1889); "La Maison des Deux Barbeaux" (Theuriet, 1885; ; "Andre" del Sarte" (Alfred de Musset); "La Petite Paroisse" (Daudet, 1911); "Le Mannequin d'Osier" (France, 1904); "La Rencontre" (Berton, 1909). Cases of preference without adultery: "Smilis" by Aicard; "Les Jacobines" by Hermant (1907). 
+(4) -A Good Husband Betrayed for an Inferior Rival:- "L'Aveu" (Sarah Bernhard, 1888); "RevolteV' (Lemaitre, 1889); "La Maison des Deux Barbeaux" (Theuriet, 1885; ; "Andre" del Sarte" (Alfred de Musset); "La Petite Paroisse" (Daudet, 1911); "Le Mannequin d'Osier" (France, 1904); "La Rencontre" (Berton, 1909). Cases of preference without adultery: "Smilis" by Aicard; "Les Jacobines" by Hermant (1907).
 
 (5) - For a Grotesque Rival : - - "The Fatal Dowry" by Massinger.
 
-(6) - - For an Odious Rival: - - "Gerfaut" (from C. de Bernard, by Moreau, 1886); "Cceur a Cceur" (Coolus, 1907). 
+(6) - - For an Odious Rival: - - "Gerfaut" (from C. de Bernard, by Moreau, 1886); "Cceur a Cceur" (Coolus, 1907).
 
-(7) - - For a Commonplace Rival, By a Perverse Wife: — "La Femme de Claude" by Dumas; "Pot- Bouille" by Zola; "Rivoli" (Fauehois. 1911): "Les Malefiiatre" (Porto-Riche, 1904); "Soeurette" (Borteau- Loti). In fiction: "Madame Bovary." 
+(7) - - For a Commonplace Rival, By a Perverse Wife: — "La Femme de Claude" by Dumas; "Pot- Bouille" by Zola; "Rivoli" (Fauehois. 1911): "Les Malefiiatre" (Porto-Riche, 1904); "Soeurette" (Borteau- Loti). In fiction: "Madame Bovary."
 
-(8) For a Rival Less Handsome, but Useful (with comic false suspicions; that is, suspicions afterward thought to have been false):- "L'Echeance" (Jean Jullien, 1889). 
+(8) For a Rival Less Handsome, but Useful (with comic false suspicions; that is, suspicions afterward thought to have been false):- "L'Echeance" (Jean Jullien, 1889).
 
-D (1) - - Vengeance of a Deceived Husband (dramas built upon a crescendo of suspicion):- "The Physician of His Own Honor" and "Secret Vengeance for Secret Outrage" by Calderon; "L'Affaire Clemenceau" by Dumas; "The Kreutzer Sonata" (after Tolstoi, 1910); "La Legende du Coeur" (Aicard, 1903); "Paraitre" (Donnay, 1906) ; "Les Miroirs" I Roinarrd ) ; "The Enigma" by Hervieu 'which borrows something from Situation XI of this name. A vengeance purely moral: "Apres Moi" (Bernstein, 1911); financial: "Samson," by the same author, (1907 . 
+D (1) - - Vengeance of a Deceived Husband (dramas built upon a crescendo of suspicion):- "The Physician of His Own Honor" and "Secret Vengeance for Secret Outrage" by Calderon; "L'Affaire Clemenceau" by Dumas; "The Kreutzer Sonata" (after Tolstoi, 1910); "La Legende du Coeur" (Aicard, 1903); "Paraitre" (Donnay, 1906) ; "Les Miroirs" I Roinarrd ) ; "The Enigma" by Hervieu 'which borrows something from Situation XI of this name. A vengeance purely moral: "Apres Moi" (Bernstein, 1911); financial: "Samson," by the same author, (1907 .
 
-(2) Jealousy Sacrificed for the Sake of a Cause: tending toward Sacrifices for an Ideal"): "Les Jacob- ites" Coppee, L885); "Patrie" (Paladilhe, L886). Sac- rificed out of Pity: "La Famille d'Armelles" (Mamas, L88I 
+(2) Jealousy Sacrificed for the Sake of a Cause: tending toward Sacrifices for an Ideal"): "Les Jacob- ites" Coppee, L885); "Patrie" (Paladilhe, L886). Sac- rificed out of Pity: "La Famille d'Armelles" (Mamas, L88I
 
 E - A Husband Persecuted by a Rejected Rival: "Raoul de Crequi" Delayrac, L889). This case is sym- metrical to B V, and > >< * i J 1 proceed in the direction <>i "Murderou i Adulterj
 
-### TWENTY-SIXTH SITUATION CRIMES OF LOVE 
+### TWENTY-SIXTH SITUATION CRIMES OF LOVE
 
-(The Lover; the Beloved) 
+(The Lover; the Beloved)
 
-This is the only tragic situation of all those built upon Love, that subject being one essentially belonging to comedy (see XXVIII and XXIX). 
+This is the only tragic situation of all those built upon Love, that subject being one essentially belonging to comedy (see XXVIII and XXIX).
 
-Eight species of erotic crimes may be pointed out: — 
+Eight species of erotic crimes may be pointed out: —
 
-First: Onanism, that "solitary vice" which does not lead to action, can furnish only melancholy silhouettes such as the legend of Narcissus and "Chariot s'amuse," or certain grotesqueries of Aristophanes, unless it be made the basis for a study of the weakening and collapse of the Will, in which case it might be grouped with drunkenness, gambling, etc., in Situation XXII. 
+First: Onanism, that "solitary vice" which does not lead to action, can furnish only melancholy silhouettes such as the legend of Narcissus and "Chariot s'amuse," or certain grotesqueries of Aristophanes, unless it be made the basis for a study of the weakening and collapse of the Will, in which case it might be grouped with drunkenness, gambling, etc., in Situation XXII.
 
-Second: Violation, like murder, is but an act, generally a brief one and not a situation; at most it approaches "Abduction." Even the consequences to the perpetrator, like those of the 
+Second: Violation, like murder, is but an act, generally a brief one and not a situation; at most it approaches "Abduction." Even the consequences to the perpetrator, like those of the
 
-Third: Prostitution and its succeedant gallantry and Juanism (repetition of acts), do not become dramatic unless pursued by punishment, in which case they belong 
-to the Fifth Situation. Nevertheless, if impunity be secured, the taste for violation and for prostitution tends toward the Twenty-Second. 
+Third: Prostitution and its succeedant gallantry and Juanism (repetition of acts), do not become dramatic unless pursued by punishment, in which case they belong
+to the Fifth Situation. Nevertheless, if impunity be secured, the taste for violation and for prostitution tends toward the Twenty-Second.
 
-Fourth: Adultery, whose character of theft has given rise to special situations already studied. 
+Fourth: Adultery, whose character of theft has given rise to special situations already studied.
 
-Fifth : Incest is divided in two principal directions. It may be committed in an ascendant-descendant line, in which case it implies either filial impiety or an abuse of authority analogous to that which we shall find in the Eighth variety of criminal love. It may also occur upon what may be called a horizontal line; that is, between consanguines or persons related by marriage. 
+Fifth : Incest is divided in two principal directions. It may be committed in an ascendant-descendant line, in which case it implies either filial impiety or an abuse of authority analogous to that which we shall find in the Eighth variety of criminal love. It may also occur upon what may be called a horizontal line; that is, between consanguines or persons related by marriage.
 
 
-A (l)--A Mother in Love With Her Son:- "Semiramis" by Manfredi, and by Crebillon; to explain and extenuate this case, the latter author has first used the Eighteenth (Involuntary Crimes of Love); "Les Cuirs de Boeuf" (Polti, 1898). Inverse case: "Le Petit Ami" by Leautaud. 
+A (l)--A Mother in Love With Her Son:- "Semiramis" by Manfredi, and by Crebillon; to explain and extenuate this case, the latter author has first used the Eighteenth (Involuntary Crimes of Love); "Les Cuirs de Boeuf" (Polti, 1898). Inverse case: "Le Petit Ami" by Leautaud.
 
-(2) - - A Daughter in Love With Her Father: - Alfieri's "Myrrha," whose psychology is drawn from that of "Phedre." 
+(2) - - A Daughter in Love With Her Father: - Alfieri's "Myrrha," whose psychology is drawn from that of "Phedre."
 
-(3) - - Violation of a Daughter by a Father: - - "The Cenci" by Shelley; the story of the Peau d'ane (intention only). 
+(3) - - Violation of a Daughter by a Father: - - "The Cenci" by Shelley; the story of the Peau d'ane (intention only).
 
-B (1) - - A Woman Enamored of Her Stepson: - "Iobates" and "Phaedra" by Sophocles; the "Hippolytus" of Euripides and of Seneca; "Phedre" by Racine. In comedy: "Madame l'Amirale" (Mars and Lyon, 1911). In almost none of the foregoing cases, it will be observed, is there a reciprocity of desire, whereas the passion, heretofore solitary, is shared, and the crime, unconscious at least on one side in "Myrrha," is boldly committed in 
+B (1) - - A Woman Enamored of Her Stepson: - "Iobates" and "Phaedra" by Sophocles; the "Hippolytus" of Euripides and of Seneca; "Phedre" by Racine. In comedy: "Madame l'Amirale" (Mars and Lyon, 1911). In almost none of the foregoing cases, it will be observed, is there a reciprocity of desire, whereas the passion, heretofore solitary, is shared, and the crime, unconscious at least on one side in "Myrrha," is boldly committed in
 
-(2) - - A Woman and Her Stepson Enamored of Each Other: - Zola's "Renee" (drawn from his story "Curee,"j and similar to the quasi-incestuous passion of "Dr. Pascal." The love is platonic in Alfieri's "Philip II," and Schiller's "Don Carlos." 
+(2) - - A Woman and Her Stepson Enamored of Each Other: - Zola's "Renee" (drawn from his story "Curee,"j and similar to the quasi-incestuous passion of "Dr. Pascal." The love is platonic in Alfieri's "Philip II," and Schiller's "Don Carlos."
 
-(3) - A Woman Being the Mistress, at the Same Time, of a Father and Son, Both of Whom Accept the Situation: "L'Ecole des Veufs" (Ancey, L889 , 
+(3) - A Woman Being the Mistress, at the Same Time, of a Father and Son, Both of Whom Accept the Situation: "L'Ecole des Veufs" (Ancey, L889 ,
 
-C (1) - A Man Becomes the lover of Mis Sister-in-Law: "La Sang-Brule" (Bouvier, 1885); "Le Conscience de I'Enfant" (Devore, L889 . The Man Alone Enamored: "Le Sculpteur de Masques" (Cromelynck, 1911). 
+C (1) - A Man Becomes the lover of Mis Sister-in-Law: "La Sang-Brule" (Bouvier, 1885); "Le Conscience de I'Enfant" (Devore, L889 . The Man Alone Enamored: "Le Sculpteur de Masques" (Cromelynck, 1911).
 
-2 A Brother and Sister in love With Each other: Euripides "TIoIum" "Canace" by Speroni; •• "li Pity She's a Whore," Ford's masterpiece; "La Citta Morta" 1>.\- d'Annunzio. 
+2 A Brother and Sister in love With Each other: Euripides "TIoIum" "Canace" by Speroni; •• "li Pity She's a Whore," Ford's masterpiece; "La Citta Morta" 1>.\- d'Annunzio.
 
-Even after these works, there remains much more than a Kl (, aninj_'; an ample ham-si is still before us. We may extend Class A to include the complicity of both parties (Nero and Agrippina furnish an example, according to 
+Even after these works, there remains much more than a Kl (, aninj_'; an ample ham-si is still before us. We may extend Class A to include the complicity of both parties (Nero and Agrippina furnish an example, according to Suetonius); a similar example, although fragmentary, exists for A 2, in the beginning of Shakespeare's "Pericles." B 1 may be reversed, the stepson's passion being unre- quited by his father's wife, a case which is certainly not uncommon. We may also suppress the complicity in B 3, in C 1, and in C 2, allowing the infatuation to subsist upon one side only. Without going so far as the criminal act, a study of mere temptations or desires, well or ill controlled, has
+furnished subtile chapters in the psychologies of Seventeenth Century grandes dames, such as Victor Cousin took delight in.
 
+Finally, we may interlace the threads of each of these species of incest with one of the seven other classess of Crimes of Love ; under the form of ignorance, the fifth and sixth classes are mingled in one of the episodes of "Daph- nis and Chloe." Add the usual incidental rivalries, adul- teries, murders, etc.
 
+Sixth: Homosexuality in its two senses, the branches of pederasty and tribadism:
 
-88 THIRTY-SIX DRAMATIC SITUATIONS 
+D (1) - - **A Man Enamored of Another Man, Who Yields**: -- Example from fiction: "Vautrin." Dramatic examples: the "Laius" of Aeschylus; the "Chrysippus" of Euripides. The latter tragedy appears to have been one of the finest, and perhaps the most moving, of all antiquity. Three situations were there superposed with rare success. Laius having conceived a passion, unnatural and furthermore adulterous, for the young Chrysippus, an epithalamium as terrible as that of Ford must have resulted, for here appeared and spoke the first man who had ever experienced such desires and dared to express and gratify them, and in his words lay the explana- tion of the wavering and fall of Chrysippus. Then fol- lowed the most indignant and pitiless jealousy on the part of Jocaste, wife of Laius. Against Chrysippus she roused the old envy of the young man's two brothers, an envy of the same type as that which armed the sons of Jacob against Joseph, but an envy which shows itself strangely menacing at the mere announcement of the names of these two brothers, -- Atreus and Thyestes! The fratricide is accomplished, to the fierce joy of the queen; Laius learns the details from the lips of the dying Chrysippus himself.
 
-Suetonius); a similar example, although fragmentary, 
-exists for A 2, in the beginning of Shakespeare's "Pericles." 
-B 1 may be reversed, the stepson's passion being unre- 
-quited by his father's wife, a case which is certainly not 
-uncommon. We may also suppress the complicity in B 3, 
-in C 1, and in C 2, allowing the infatuation to subsist upon 
-one side only. Without going so far as the criminal act, 
-a study of mere temptations or desires, well or ill controlled, 
-has furnished subtile chapters in the psychologies of 
-Seventeenth Century grandes dames, such as Victor 
-Cousin took delight in. 
+And, in some prediction -- doubtless that of Tiresias, young at the time and not yet deprived of sight - there dawns the destiny of the two great families of tragedy par excellence, the Labdaeides and the Atrides, beginning in these crimes and running through all Greek legend.
 
-Finally, we may interlace the threads of each of these 
-species of incest with one of the seven other classess of 
-Crimes of Love ; under the form of ignorance, the fifth and 
-sixth classes are mingled in one of the episodes of "Daph- 
-nis and Chloe." Add the usual incidental rivalries, adul- 
-teries, murders, etc. 
+The tribadic or sapphic branch has not been used upon the stage; Mourey alone has attempted it, but in vain in his "Lawn Tennis." The objection which might be urged against it (and which probably explains why the drama, in the ages of its liberty, has made no use of it) is that this vice has not the horrible grandeur of its con- gener. Weak and colorless, the last evil habit of worn- out or unattractive women, it does not offer to the tragic poet that madness, brutal and preposterous, but springing from wild youth and strength, which we find in the crim- inal passion of the heroic ages.
 
-Sixth: Homosexuality in its two senses, the branches 
-of pederasty and tribadism: 
+Seventh: Bestiality, or passion for a creature outside the human species. Classed in general as a vice, it is of no use theatrically. Nevertheless, in
 
-D (1) - - A Man Enamored of Another Man, Who 
-Yields: -- Example from fiction: "Vautrin." Dramatic 
-examples: the "Laius" of Aeschylus; the "Chrysippus" 
-of Euripides. The latter tragedy appears to have been 
-one of the finest, and perhaps the most moving, of 
-all antiquity. Three situations were there superposed 
-with rare success. Laius having conceived a passion, 
-unnatural and furthermore adulterous, for the young 
-Chrysippus, an epithalamium as terrible as that of Ford 
-must have resulted, for here appeared and spoke the first 
-man who had ever experienced such desires and dared to 
-express and gratify them, and in his words lay the explana- 
-tion of the wavering and fall of Chrysippus. Then fol- 
-lowed the most indignant and pitiless jealousy on the part 
-of Jocaste, wife of Laius. Against Chrysippus she roused 
-the old envy of the young man's two brothers, an envy 
-of the same type as that which armed the sons of Jacob 
-against Joseph, but an envy which shows itself strangely 
-menacing at the mere announcement of the names of these 
-two brothers, -- Atreus and Thyestes! The fratricide is 
-accomplished, to the fierce joy of the queen; Laius learns 
-the details from the lips of the dying Chrysippus himself. 
+E - **A Woman Enamored of a Bull**: - "The Cre- tans" of Euripides seems to have revealed the emotions, after all conceivable, of this "Ultima Thule" of sexual per- version. Better than anywhere else, evidently, the illogi- cal and mysterious character of the life of the senses, the perversion of a normal instinct, and the feeling of fatalism which its victims communicate, could here be presented in sad and awful nudity.
 
+Eighth: The Abuse of Minor Children borrows something from each of the seven preceding varieties. That LCh a subject so modern, so English may in skilful hands become must pathetic, is readily apparent to those of us who rvad, a few years ago, the "Pall Mall Gazette."
 
+### TWENTY-SEVENTH SITUATION DISCOVERY OF THE DISHONOR OF A LOVED ONE
 
-TWENTY-SIXTH SITUATION 89 
+(The Discoverer; the Guilty One)
 
-And, in some prediction -- doubtless that of Tiresias, 
-young at the time and not yet deprived of sight - there 
-dawns the destiny of the two great families of tragedy par 
-excellence, the Labdaeides and the Atrides, beginning in 
-these crimes and running through all Greek legend. 
+⁠From this Situation there results, almost immediately, a psychologic struggle similar to that of the Twenty-Third "Sacrifice of Loved Ones," but without the attraction of a high Ideal; this is replaced, in the present action, by the lash of shame.
 
-The tribadic or sapphic branch has not been used upon 
-the stage; Mourey alone has attempted it, but in vain in 
-his "Lawn Tennis." The objection which might be 
-urged against it (and which probably explains why the 
-drama, in the ages of its liberty, has made no use of it) is 
-that this vice has not the horrible grandeur of its con- 
-gener. Weak and colorless, the last evil habit of worn- 
-out or unattractive women, it does not offer to the tragic 
-poet that madness, brutal and preposterous, but springing 
-from wild youth and strength, which we find in the crim- 
-inal passion of the heroic ages. 
+⁠A (1) — **Discovery of a Mother's Shame**: — "Madame Caverlet" by Augier; "Odette" and "Georgette" by Sardou; "Madame X" (Bisson, 1908); "Mrs. Warren's Profession" (Bernard Shaw); "Les Quarts d'Heure" (second part; Guiches and Lavedan, 1888). This sad destruction of a child's deepest respect and reverence is colored, in these works, by the terrors of the mother, by her blushes, by her remorse before the consequences of the past; through this last point the action ends in the Thirty-Fourth (Remorse). It remains unconnected in the second part of the "Marquis de Priola" (Lavedan, 1901).
 
-Seventh: Bestiality, or passion for a creature outside 
-the human species. Classed in general as a vice, it is of 
-no use theatrically. Nevertheless, in 
+⁠(2) — **Discovery of a Father's Shame**: — "Vieille Histoire" (Jean Jullien, 1891); the dénouement of "Pierre et Thérèse" (Prevost, 1909).
 
-E - - A Woman Enamored of a Bull: - "The Cre- 
-tans" of Euripides seems to have revealed the emotions, 
-after all conceivable, of this "Ultima Thule" of sexual per- 
-version. Better than anywhere else, evidently, the illogi- 
-cal and mysterious character of the life of the senses, the 
-perversion of a normal instinct, and the feeling of fatalism 
-which its victims communicate, could here be presented 
-in sad and awful nudity. 
-
-Eighth: The Abuse of Minor Children borrows some- 
-thing from each of the seven preceding varieties. That 
-
-LCh a subject so modern, so English may in skilful 
-hands become must pathetic, is readily apparent to those 
-
-of us who rvad, a few years ago, the "Pall Mall Gazette." 
+⁠(3) — **Discovery of a Daughter's Dishonor**: — Part of "La Fille du Depute" (Morel, 1881); of "Les Affaires sont les Affaires" (Mirbeau, 1902); "L'Oreille Fendue" (Nepoty, 1908).
 
+⁠B (1) — **Discovery of a Dishonor in the Family of Ones Fiancee**: — "L'Absente" (Villemer, 1889). Refinements of romance, whose mild tragedy consists in retarding the signature of a contract, and which corresponds also to the pseudo-Situation XXX (Forbidden Loves). Something of their dullness has already emanated from A 1 and A 2.
 
+(2) — **Discovery that Ones Wife Has Been Violated Before Marriage**: -- "Le Secret de Gilberte" (Massiac, 1890). Since the Marriage: -- "Flore de Frileuse" by Bergerat, with comic dénouement thanks to a "quid-pro-quo."
 
-TWENTY-SEVENTH SITUATION 
+(3) — **That She Has Previously Committed a Fault**: — "Le Prince Zilah" (Claretie, 1885); part of Dumas' "Denise." Common instances: Marriages through agencies.
 
-DISCOVERY OF THE DISHONOR OF A LOVED ONE 
+(4) — **Discovery that Ones Wife Has Formerly Been a Prostitute**: - "Lena" (Berton and Mme. van Velde, 1886). That ones mistress has been a prostitute: — "Marion Delorme." The same situation, from the point of view of "Remorse" (XXXIV), is encountered in Zola's "Madeleine."
 
-(The Discoverer; the Guilty One) 
+(5) — **Discovery of Dishonor on the Part of a Lover** (this also borders upon XXXIV:- "Chamillae" (Feuillet, 1886); "Le Crocodile" (Sardou, 1886).
 
-From this Situation there results, almost immediately, 
-a psychologic struggle similar to that of the Twenty-Third 
-"Sacrifice of Loved Ones," but without the attraction of a 
-high Ideal; this is replaced, in the present action, by the 
-lash of shame. 
+(6) — **Discovery that Ones Mistress, formerly a Prostitute, Has Returned to Her Old Life** with extenuating circumstances):— "La Dame aux Camellias" Dumas); "La Courtisane" (Arnyvelde, 1905); part of "Manon Lescaut." But for feminine cunning, would not this be the normal course of all "bonnes fortunes?"
 
-A (1) - Discovery of a Mother's Shame: - 
-"Madame Caverlet" by Augier; "Odette" and "Georg- 
-ette" by Sardou; "Madame X" (Bisson, 1908); "Mrs. 
-Warren's Profession" (Bernard Shaw); "Les Quarts 
-d'Heure" (second part; Guiches and Lavedan, 1888). 
-This sad destruction of a child's deepest respect and rev- 
-erence is colored, in these works, by the terrors of the 
-mother, by her blushes, by her remorse before the conse- 
-quences of the past; through this last point the action ends 
-in the Thirty-Fourth (Remorse). It remains unconnected 
-in the second part of the "Marquis de Priola" (Lavedan, 
-1901). 
+(7) — **Discovery that Ones lover is a Scoundrel, or that Ones Mistress is a Woman of Bad Character**: "Monsieur Alphonse" by Dumas; "Mensonges" by Emile Michelet. Since (as Palice remarks) liaisons would last forever if they were never broken off, and since the two lovers, who certainly know each other well, always give as the reason of their rupture the title of the present sub-class, the conclusion is as easy to draw as it is unflattering to the human species. The Same Discovery Concerning a So-Called King: "Sire" (Lavedan, 1909).
 
-(2) - Discovery of a Father's Shame: — "Vieille 
-Histoire" (Jean Jullien, 1891); the denouement of "Pierre 
-et Therese" (Prevost, 1909). 
+(8) — **The Same Discovery Concerning Ones Wife**:— "Le Manage d'Olympe" by Augier.
 
-(3) - Discovery of a Daughter's Dishonor: - - Part 
-of "La Fille du Depute" (Morel, 1881); of "Les Affaires 
-sont les Affaires" (Mirbeau, 1902); "L'Oreille Fendue" 
+C — **Discovery that Ones Son is an Assassin**: — "Werner" by Byron; "La Policière" (Montepin, 1889). The surprise is intensified in cases of parricide. Nuance C is capable of infinite development.
 
-Xepoty, 1908). 
-
-B (1) - - Discovery of a Dishonor in the Family of 
-Ones Fiancee: - - "L'Absente" (Villemer, 1889). Refine- 
-ments of romance, whose mild tragedy consists in retard- 
-
-90 
-
-
-
-TWENTY-SEVENTH SITUATION 91 
+D — Might constitute a distinct situation; there is not only the discovery, but the duty of imposing punishment as well. This situation might serve as an intermediary between the Twenty-Third, "Duty of Sacrificing Kinsmen," and the Twenty-Seventh, which we are now studying, and which would thus end with Class C.
 
-ing the signature of a contract, and which corresponds also 
-to the pseudo-Situation XXX (Forbidden Loves). Some- 
-thing of their dullness has already emanated from A 1 
-and A 2. 
+(1) — **Duty of Punishing a Son Who is a Traitor to Country**: — The "Brutus" of Voltaire, and of Alfieri. A Brother Who is a Traitor to His Party: — "Etudiants Russes" by Gilkin.
 
-(2) — Discovery that Ones Wife Has Been Violated 
-Before Marriage: -- "Le Secret de Gilberte" (Massiac, 
-1890). Since the Marriage: -- "Flore de Frileuse" by 
-Bergerat, with comic denouement thanks to a "quid-pro- 
-quo." 
+(2) — **Duty of Punishing a Son Condemned Under a Law Which the Father has Made**: — "L'Inflexible" (Parodi, 1884); "Le Tribun" (Bourget, 1910); "L'Apôtre" (Loyson, 1911).
 
-(3) — That She Has Previously Committed a Fault: 
+(3) — **Duty of Punishing a Son Believed to be Guilty**: — "Le Régiment" (Mary, 1890); "L'As de Tréfle" (Decourcelle, 1883). This approaches XXXIII (Judicial Error).
 
-— "Le Prince Zilah" (Claretie, 1885); part of Dumas' 
-"Denise." Common instances: Marriages through agen- 
-cies. 
+(4) — **Duty of Sacrificing, to Fulfill a Vow of Tyrannicide, a Father Until then Unknown.** This imprudent vow carries us back, at one point, to the Seventeenth (Imprudence), and at another point the striking of an unknown parent recalls also the Nineteenth. — "Severo Torelli" (Coppée, 1883).
 
-(4) - - Discovery that Ones Wife Has Formerly 
-Been a Prostitute: - "Lena" (Berton and Mme. van 
-Velde, 1886). That ones mistress has been a prostitute: 
-
-— "Marion Delorme." The same situation, from the 
-{joint of view of "Remorse" (XXXIV), is encountered in 
-Zola's "Madeleine." 
-
-(5) - Discovery of Dishonor on the Part of a Lover 
-(this also borders upon XXXIV:- "Chamillae" (Feuil- 
-let, 1886); "Le Crocodile" (Sardou, L886 . 
-
-(6) Discovery that Ones Mistress, formerly a 
-Prostitute, Has Returned to Her Old Life with exten- 
-uating circumstances): "La Dame aux Camellias" 
-Dumas); "La Courtisane" (Arnyyelde, L905); pari of 
-"Manon Lescaut." Bui for feminine cunning, would 
-qoI this be the normal course of all "bonnes fortunes?" 
-
-(7) Discovery that Ones lover is a Scoundrel, or 
-that Ones Mistress is a Woman of Bad Character: 
-"Monsieur Alphonse" by Dumas; "Mensonges" by Emile 
-Michelet. Since as Palice remarks) liaisons would lasl 
-forever if they were never broken nil', and since the two 
-lovers, who certainly know cadi <>t her well, always give as 
-the reason of their rupture the title of the present sub- 
-class, 1 he conclusion is as easy to draw as it is initial tering 
+(5) — **Duty of Punishing a Brother Who is an Assassin**: - "Casse-Museau" (Marot, 1881). From this situation the kinsman-judge escapes for a moment, only to fall into D 3, from which he returns with resignation to D 5.
 
-to the human specie:-,. The Same Discovery Concern- 
-ing a So-Called Kinji: "Sire" Lavclan. L909). 
+(6) — **Duty of Punishing Ones Mother to Avenge Ones Father**: — (Situation IV arrested prematurely): — "Le Cœur de Se-hor" (Michaud d'Humiac). The Fourth is less in evidence in "Simone" (Brieux, 1908).
 
-The Same Discovery Concerning Ones Wile: 
-"Le Manage d'Olympe" by Augier. 
+### TWENTY-EIGHTH SITUATION OBSTACLES TO LOVE
 
+(Two Lovers; an Obstacle)
 
-
-92 THIRTY-SIX DRAMATIC SITUATIONS 
+A (1) - **Marriage Prevented by Inequality of Rank**: - "NiteW and "The Chinese Hero" by Metastasio: "Le Prince Soleil" (Vasseur, 1889); second act of "La Vie Publique" (Fabre, 1901); "Ramuntcho" (Pierre Loti, 1908); "L'EmigrS" (Bourget, 1908). This is the sentimental-philosophical Situation of a great number of eighteenth century works ("Nanine," etc. ), in which a lord invariably falls in love with a peasant girl. In ( leorge Sand, on the contrary, it is always a lady who is in love with a man of inferior rank; a sort of literature which at least has inspired many gallanl adventures of our own time. The addition of one more little obstacle the marriage bond furnishes the pretexl for the real intrigue of "Ruy Bias."
 
-C Discovery that Ones Son is an Assassin: — 
-
-"Werner" by Byron; "La Policiere" (Montepin, 1889). 
-The surprise is intensified in cases of parricide. Nuance 
-C is capable of infinite development. 
-
-D -- Might constitute a distinct situation; there is not 
-only the discovery, but the duty of imposing punishment 
-as well. This situation might serve as an intermediary 
-between the Twenty-Third, "Duty of Sacrificing Kins- 
-men," and the Twenty-Seventh, which we are now study- 
-ing, and which would thus end with Class C. 
-
-(1) - - Duty of Punishing a Son Who is a Traitor to 
-Country: -- The "Brutus" of Voltaire, and of Alfieri. 
-A Brother Who is a Traitor to His Party: "Etu- 
-diants Russes" by Gilkin. 
-
-(2) - - Duty of Punishing a Son Condemned Under 
-a Law Which the Father has Made:- "L'Inflexible" 
-(Parodi, 1884); "Le Tribun" (Bourget, 1910); "L'Apotre" 
-(Loyson, 1911). 
-
-(3) - - Duty of Punishing a Son Believed to be 
-Guilty: - - "Le Regiment" (Mary, 1890) ; "L'As de Trefle" 
-( Decourcelle, 1883). This approaches XXXIII (Judicial 
-Error). 
-
-(4) - Duty of Sacrificing, to Fulfill a Vow of Tyran- 
-nicide, a Father Until then Unknown. This impru- 
-dent vow carries us back, at one point, to the Seventeenth 
-(Imprudence), and at another point the striking of an 
-unknown parent recalls also the Nineteenth. - - "Severo 
-Torelli" (Coppee, 1883). 
-
-(5) - - Duty of Punishing a Brother Who is an 
-Assassin : - "Casse-Museau" (Marot, 1881). From this 
-situation the kinsman-judge escapes for a moment, only 
-to fall into D 3, from which he returns with resignation 
-to D 5. 
-
-(6) - - Duty of Punishing Ones Mother to Avenge 
-Ones Father: -- (Situation IV arrested prematurely): 
-
-- "Le Coeur de Se-hor" (Michaud d'Humiac). The 
-Fourth is less in evidence in "Simone" (Brieux, 1908). 
-
-
-
-TWENTY-EIGHTH SITUATION 
-OBSTACLES TO LOVE 
-(Two Lovers; an Obstacle) 
-
-A (1) - Marriage Prevented by Inequality of 
-
-Rank: - "NiteW and "The Chinese Hero" by Metas- 
-tasio: "Le Prince Soleil" (Vasseur, 1889); second act of 
-"La Vie Publique" (Fabre, 1901); "Ramuntcho" (Pierre 
-Loti, 1908); "L'EmigrS" (Bourget, 1908). This is the 
-sentimental-philosophical Situation of a great number of 
-eighteenth century works ("Nanine," etc. ), in which a lord 
-invariably falls in love with a peasant girl. In ( leorge 
-Sand, on the contrary, it is always a lady who is in love 
-with a man of inferior rank; a sort of literature which at 
-least has inspired many gallanl adventures of our own 
-time. The addition of one more little obstacle the 
-marriage bond furnishes the pretexl for the real intrigue 
-of "Ruy Bias." 
-
-2 Inequality of Fortune an Impediment to 
-Marriage: "Myrtille" and in part "Friend Fritz" by 
-Erckmann-Chatrian; "L'Abbe Constantin" by Halevy; 
-"La Petite Amir" Brieux, L902); "La Plus Faible" 
-(Prevost, L904 ; "La Veuve Joyeuse" (Meilhac, Leon and 
-Stein. L909 : "!-<• Danseur Inconnu'* Bernard, L909): 
-"La Petite Chocolatiere" Gavault, L909); "Primeroser 
-
-"Le Kevc" from Zola's story by Bruneau); in fiction; 
-
-"Le Bonheur <\<-> Lames" to mention only the more 
-estimable works, leaving ;Lside the endless number of 
-trivial plays imitative of Scribe, and the Romances of 
-
-9a 
-
-
-
-94 THIRTY-SIX DRAMATIC SITUATIONS 
-
-Poor Young Men, Dames Blanches, etc., which make our 
-ears ring with confusing additions and subtractions, until 
-the unexpected final multiplication - "deus ex machina" 
-- which suddenly equalizes the two terms of the problem, 
-the two fortunes of the lovers, with the most admirably 
-symmetrical alignment of parallel zeros -- preceded, oh 
-joy! oh bliss! on one side as on the other, by two identical 
-figures ! 
-
-It must of course be recognized that these social and 
-conventional inequalities are mere puerile details, and that 
-the lovers, if they have but a little courage and sincerity, 
-will overcome them without difficulty; they can do so by 
-simply leaving behind them titles and money, and in a 
-new country, under other names, bravely beginning life 
-again together. If, instead of such bagatelles, we might 
-only be sometimes shown the more serious obstacles of 
-inequality of ages, of characters, of tastes — which are at 
-the same time so much more common ! 
-
-They are, indeed, so frequent that a general theory 
-might be established with regard to them. The first love 
-(twenty years) seeks in its object equality of rank and 
-superiority of age (this is a fact well known to those who 
-have studied the cases of girl-mothers); the second love, 
-and in general the second period of emotional life (thirty 
-years), addresses itself, audacity having been acquired, to 
-superiors in rank but equals in age; finally, the third love, 
-or in a more general way the third epoch of sentimental 
-life, inclines by preference to those who are younger and 
-socially inferior. Naturally, subdivision is here possible. 
-
-B - - Marriage Prevented by Enemies and Contin- 
-gent Obstacles: --"Sieba" (Manzotti, 1883); "Et Ma- 
-Soeur?" (Rabier, 1911); "Le Peche* de Marthe" (Roch- 
-ard, 1910); all fairy-plays, since the "Zeam" of Gozzi. In 
-fine, a sort of steeple-chase process adapts itself to this 
-situation, but the chase is not one in which several rival 
-steeds and riders engage; throughout its course but a 
-single couple enters upon it, to end at the shining goal with 
-the usual somersault. 
-
-C (1) - - Marriage Forbidden on Account of the 
-Young Woman's Previous Betrothal to Another: — 
-
-
-
-TWENTY-EIGHTH SITUATION 95 
-
-"II Re Pastore" by Metastasio; and other pieces without 
-number. The lovers will die if separated, so they assure 
-us. We see them make no preparations to do so, but the 
-spectator is good enough to take their word for it; the 
-ardors, the "braises" - to use the exact language of the 
-"grand siecle" -and other nervous phenomena in hypo- 
-chondriacs of this sort cannot but offer some interest — 
-not, however, for long. 
-
-(2) The Same Case, Complicated by an Imagi- 
-nary Marriage of the Beloved Object: - - "Les Bleus de 
-l'Amour" (Coolus, 1911). 
-
-D (1) -A Free Union Impeded by the Opposition 
-of Relatives:--"^ Divorce" (Bourget, 1908); "Les 
-Lys" (Wolf and Leroux, 1908). 
-
-(2) - Family Affection Disturbed by the Parents- 
-in-Law: - "Le Roman d'Elise" (Richard, 1885); "Le 
-Poussin" (Guiraud, 1908). 
-
-E - By the Incompatibility of Temper of the 
-Lovers: "Montmartre" (Frondaie, 1911). "Les Angles 
-du Divorce" (Biollay) belongs both to E and to D 2. 
-
-F Love- bui enough of this! What are we doing, 
-co-spectators in this hall, before this pretended situation? 
-Upon the stage are our two young people, locked in close 
-embraces or conventionally attitudinizing in purely theat- 
-rical poses. Wha1 is there in all this worth remaining for? 
-Let us leave it . . . What, Madame, you straighten 
-yourself in your chair and crane your neck in excitement 
-over the gesticulations of the "jeune premier?" Bui his 
-sweetheart there beside him have you forgotten that 
-il is she whom he desires, or are the two of them playing 
-so badly, is their dialogue so little natural that you forget 
-the Story enacted and fondly imagine yourself listening to 
-
-a monologue a declaration addressed to you alone? And 
-
-Monsieur there, With mouth open, eyes starting from his 
-head, following with avidity every movement of the 
-
-actress's lithe figure! Quick, nrj good man, another will 
-be before you 1 Be consistent, a1 least! Spring upon the 
-stage, break the insipid dandy's bones, and take his place! 
-
-
-
-96 THIRTY-SIX DRAMATIC SITUATIONS 
-
-Sorry return to promiscuity, in our overheated halts 
-like lupanars, which the clergy is not altogether unreason- 
-able in condemning! Do people gather here simply to 
-study amatory manifestations? In that case, why not 
-freely open training schools for courtesans? Is it for the 
-benefit of the sidewalk traffic, later in the evening, that 
-the public is here being prepared? 
-
-fresh and stormy winds of Dionysian drama! Aeschy- 
-lus where art thou who wouldst have blushed to represent 
-aught of amorous passion but its crimes and infamies? 
-Do we not, even yet, perceive the heights to which rise 
-those chaste pinnacles of modern art, "Macbeth" and 
-"Athalie?" 
-
-But why disturb ourselves? Turning our eyes from 
-these summits to the scene before us, we do not feel 
-depression; indeed, we indulge in a hearty laugh. These 
-characters here before us? Why, they are but puppets 
-of comedy, nothing more. And the effort of their mis- 
-guided authors to make them serious and tragic despite 
-their nature has resulted in mere caricature. In more 
-intelligent hands, have not the best of our dramas wherein 
-love is important (but not of the first importance, as in 
-this XXVIII) returned logically and naturally to an indul- 
-gence of smiles? "he Cid," which is the classic type of 
-this sort, is a tragi-comedy, and all the characters sur- 
-rounding Romeo and Juliet are frankly comic. 
-
-Nevertheless, our blind dramaturgy, with continued 
-obstinacy, still breathes forth its solemnities in this equivo- 
-cal rhythm. Whether the piece treats of sociology, of 
-politics, of religion, of questions of art, of the title to a 
-succession, of the exploitation of mines, of the invention 
-of a gun, of the discovery of a chemical product, of it mat- 
-ters not what --a love story it must have; there is no 
-escape. Savants, revolutionists, poets, priests or generals 
-present themselves to us only to fall immediately to love- 
-making or match-making. It becomes a mania. And we 
-are asked to take these tiresome repetitions seriously! 
-
-This, then, is the actual stage of today. In my opinion, 
-de Chirac alone has shown himself its courageously logical 
-
-
-
-TWENTY-EIGHTH SITUATION 97 
-
-son - - although a rejected one, - - society, like an aged 
-coquette, reserving always some secret sins, and fearing 
-nothing so much as nudity, which would destroy the legend 
-of her imaginary wicked charms, veiled, she willingly lets 
-it be supposed, under her hypocrisy. 
-
-How grotesque an aspect will our ithyphallic obsession 
-present, once it is crystallized in history, when we shall 
-finally have returned to antique common sense! 
-
-
-
-TWENTY-NINTH SITUATION 
-AN ENEMY LOVED 
-
-(The Beloved Enemy; the Lover; the Hater) 
-
-A - The Loved One Hated by Kinsmen of the 
-Lover. The preceding Situation might very well be 
-absorbed into this. 
-
-(1) - The Lover Pursued by the Brothers of His 
-Beloved : - "The Duchess of Main" by Webster; "The 
-Broken Heart" by Ford. 
-
-(2) -The Lover Hated by the Family of His 
-Beloved: -- "The Story of Yayati" by Roudradeva (with 
-the characteristic color of these Hindu rivalries, wherein 
-jealousy is hardly perceptible); "The Victory of Prady- 
-oumna" by Samara Dikchita; Metastasio's "Cato;" "La 
-Grande Marniere" (Ohnet, 1888). 
+2 Inequality of Fortune an Impediment to Marriage: "Myrtille" and in part "Friend Fritz" by Erckmann-Chatrian; "L'Abbe Constantin" by Halevy; "La Petite Amir" Brieux, L902); "La Plus Faible" (Prevost, L904 ; "La Veuve Joyeuse" (Meilhac, Leon and Stein. L909 : "!-<• Danseur Inconnu'* Bernard, L909): "La Petite Chocolatiere" Gavault, L909); "Primeroser;" "Le Kevc" from Zola's story by Bruneau); in fiction; "Le Bonheur <\<-> Lames" to mention only the more estimable works, leaving ;Lside the endless number of trivial plays imitative of Scribe, and the Romances of Poor Young Men, Dames Blanches, etc., which make our ears ring with confusing additions and subtractions, until the unexpected final multiplication - "deus ex machina" - which suddenly equalizes the two terms of the problem, the two fortunes of the lovers, with the most admirably symmetrical alignment of parallel zeros -- preceded, oh joy! oh bliss! on one side as on the other, by two identical figures !
 
-(3) The Lover is the Son of a Man Hated by the 
-Kinsmen of His Beloved: - "La Taverne des Trabans" 
-and "Les Rantzau" by Erckmann-Chatrian. In comic 
-vein: "Dieu ou pas Dieu," a romance by Beaubourg. 
-
-(4) - The Beloved is an Enemy of the Party of the 
-Woman Who Loves Him: "Madhouranirouddha" by 
-Vira, the contemporary of Corneille; "Les Scythes" by 
-Voltaire; "Almanzor" by Heine; "Lakme"' by Delibes; 
-"Les Carbonari" (No. 1882); "Madame The>ese" by 
-Erckmann-Chatrian; "Lydie" (Miral, 1882); "Les Ama- 
-zones" (Mazel); "Les Oberle" (Bazin, 1905); "Les Noces 
-Corinthiennes" (France); "l'Exode" (Fauchois, 1904). 
+It must of course be recognized that these social and conventional inequalities are mere puerile details, and that the lovers, if they have but a little courage and sincerity, will overcome them without difficulty; they can do so by simply leaving behind them titles and money, and in a new country, under other names, bravely beginning life again together. If, instead of such bagatelles, we might only be sometimes shown the more serious obstacles of inequality of ages, of characters, of tastes — which are at the same time so much more common!
 
-98 
+They are, indeed, so frequent that a general theory might be established with regard to them. The first love (twenty years) seeks in its object equality of rank and superiority of age (this is a fact well known to those who have studied the cases of girl-mothers); the second love, and in general the second period of emotional life (thirty years), addresses itself, audacity having been acquired, to superiors in rank but equals in age; finally, the third love, or in a more general way the third epoch of sentimental life, inclines by preference to those who are younger and socially inferior. Naturally, subdivision is here possible.
 
+B - **Marriage Prevented by Enemies and Contingent Obstacles**: --"Sieba" (Manzotti, 1883); "Et Ma Soeur?" (Rabier, 1911); "Le Peche* de Marthe" (Rochard, 1910); all fairy-plays, since the "Zeam" of Gozzi. In fine, a sort of steeple-chase process adapts itself to this situation, but the chase is not one in which several rival steeds and riders engage; throughout its course but a single couple enters upon it, to end at the shining goal with the usual somersault.
 
+C (1) - **Marriage Forbidden on Account of the Young Woman's Previous Betrothal to Another**: — "II Re Pastore" by Metastasio; and other pieces without number. The lovers will die if separated, so they assure us. We see them make no preparations to do so, but the spectator is good enough to take their word for it; the ardors, the "braises" - to use the exact language of the "grand siecle" -and other nervous phenomena in hypochondriacs of this sort cannot but offer some interest — not, however, for long.
 
-TWENTY-NINTH SITUATION 99 
+(2) **The Same Case, Complicated by an Imaginary Marriage of the Beloved Object**: - "Les Bleus de l'Amour" (Coolus, 1911).
 
-B ( 1 ) The Lover is the Slayer of the Father of 
-His Beloved : - - "Le Cid" (and the opera drawn from it) ; 
-"Olympie" by Voltaire. 
+D (1) -**A Free Union Impeded by the Opposition of Relatives**: - "Le Divorce" (Bourget, 1908); "Les Lys" (Wolf and Leroux, 1908).
 
-(2) - The Beloved is the Slayer of the Father of her 
+(2) - **Family Affection Disturbed by the Parents-in-Law**: - "Le Roman d'Elise" (Richard, 1885); "Le Poussin" (Guiraud, 1908).
 
-Lover: --"Mademoiselle de Bressier" (Delpit, 1887). 
+E - **By the Incompatibility of Temper of the Lovers**: "Montmartre" (Frondaie, 1911). "Les Angles du Divorce" (Biollay) belongs both to E and to D 2.
 
-(3) - The Beloved is the Slayer of the Brother of 
-Her Lover: - "La Reine Fiammette" (Mendes, 1889). 
+F - **Love** - but enough of this! What are we doing, co-spectators in this hall, before this pretended situation? Upon the stage are our two young people, locked in close embraces or conventionally attitudinizing in purely theatrical poses. Wha1 is there in all this worth remaining for? Let us leave it . . . What, Madame, you straighten yourself in your chair and crane your neck in excitement over the gesticulations of the "jeune premier?" But his sweetheart there beside him have you forgotten that il is she whom he desires, or are the two of them playing so badly, is their dialogue so little natural that you forget the Story enacted and fondly imagine yourself listening to a monologue a declaration addressed to you alone? And Monsieur there, With mouth open, eyes starting from his head, following with avidity every movement of the actress's lithe figure! Quick, nrj good man, another will be before you 1 Be consistent, a1 least! Spring upon the stage, break the insipid dandy's bones, and take his place!
 
-(4) - The Beloved is the Slayer of the Husband of 
-the Woman Who Loves Him, But Who Has Pre- 
-viously Sworn to Avenge that Husband:- "Irene" 
-by Voltaire. 
+Sorry return to promiscuity, in our overheated halts like lupanars, which the clergy is not altogether unreasonable in condemning! Do people gather here simply to study amatory manifestations? In that case, why not freely open training schools for courtesans? Is it for the benefit of the sidewalk traffic, later in the evening, that the public is here being prepared?
 
-(5) - The Same Case, Except that a Lover, Instead 
-of a Husband, Has Been Slain: "Fedora" (Sardou, 
+O fresh and stormy winds of Dionysian drama! Aeschylus where art thou who wouldst have blushed to represent aught of amorous passion but its crimes and infamies? Do we not, even yet, perceive the heights to which rise those chaste pinnacles of modern art, "Macbeth" and "Athalie?"
 
-1882). 
+But why disturb ourselves? Turning our eyes from these summits to the scene before us, we do not feel depression; indeed, we indulge in a hearty laugh. These
+characters here before us? Why, they are but puppets of comedy, nothing more. And the effort of their misguided authors to make them serious and tragic despite their nature has resulted in mere caricature. In more intelligent hands, have not the best of our dramas wherein love is important (but not of the first importance, as in this XXVIII) returned logically and naturally to an indulgence of smiles? "he Cid," which is the classic type of this sort, is a tragi-comedy, and all the characters surrounding Romeo and Juliet are frankly comic.
 
-(6) The Beloved is the Slayer of a Kinsman of the 
-Woman Who Loves Him: "Romeo and Juliet," this 
-situation being modified by that of "Abduction" (elope- 
-ment), then, with triple effect by XXX VI, "Loss of Loved 
-Ones;" the firsl time mistakenly, the second time simply 
-and actually, the third time doubly and simultaneously 
-to both the families of the principal characters; "l'Ancetre" 
-I Saint -Saens and Lassus > : "Fortune and Misfortune of a 
-Name" and "His Own Gaoler" by Calderon. 
+Nevertheless, our blind dramaturgy, with continued obstinacy, still breathes forth its solemnities in this equivocal rhythm. Whether the piece treats of sociology, of politics, of religion, of questions of art, of the title to a succession, of the exploitation of mines, of the invention of a gun, of the discovery of a chemical product, of it matters not what --a love story it must have; there is no escape. Savants, revolutionists, poets, priests or generals present themselves to us only to fall immediately to love-making or match-making. It becomes a mania. And we are asked to take these tiresome repetitions seriously!
 
-The Beloved is the Daughter of the Slayer of 
-Iler Lover's Father: "Le Crime de .lean Morel" 
-imson, L890 ; "La Marchande de Sourires" (.Judith 
-Gautier, L888 . 
+This, then, is the actual stage of today. In my opinion, de Chirac alone has shown himself its courageously logical son - although a rejected one, - society, like an aged coquette, reserving always some secret sins, and fearing nothing so much as nudity, which would destroy the legend of her imaginary wicked charms, veiled, she willingly lets it be supposed, under her hypocrisy.
 
-The chief emotional elemenl thus remains the same as 
-in the Fifth (Pursuit i, and Love here serves especially to 
-presenl the pursued man under various favorable lights 
+How grotesque an aspect will our ithyphallic obsession present, once it is crystallized in history, when we shall finally have returned to antique common sense!
 
-which have a certain unity. She whom he loves here 
+### TWENTY-NINTH SITUATION AN ENEMY LOVED
 
-plays, to some Bmall extent, the role of the Greek chorus. 
+(The Beloved Enemy; the Lover; the Hater)
 
-Suppress the love interest, replace it with any other tie, 
+A - **The Loved One Hated by Kinsmen of the Lover**. The preceding Situation might very well be absorbed into this.
 
-however weak, or even leave nothing in its place, and a 
+(1) - **The Lover Pursued by the Brothers of His Beloved**: - "The Duchess of Main" by Webster; "The Broken Heart" by Ford.
 
-play of the type of Situation Y, with all its terrors, will 
-still remain. Attempt, oil the contrary, to curtail the 
+(2) - **The Lover Hated by the Family of His Beloved**: -- "The Story of Yayati" by Roudradeva (with the characteristic color of these Hindu rivalries, wherein jealousy is hardly perceptible); "The Victory of Pradyoumna" by Samara Dikchita; Metastasio's "Cato;" "La Grande Marniere" (Ohnet, 1888).
 
-other interest, the enmity to soften the vengeance 
+(3) - **The Lover is the Son of a Man Hated by the Kinsmen of His Beloved**: - "La Taverne des Trabans" and "Les Rantzau" by Erckmann-Chatrian. In comic vein: "Dieu ou pas Dieu," a romance by Beaubourg.
 
+(4) - **The Beloved is an Enemy of the Party of the Woman Who Loves Him**: "Madhouranirouddha" by Vira, the contemporary of Corneille; "Les Scythes" by Voltaire; "Almanzor" by Heine; "Lakme"' by Delibes; "Les Carbonari" (No. 1882); "Madame The>ese" by Erckmann-Chatrian; "Lydie" (Miral, 1882); "Les Amazones" (Mazel); "Les Oberle" (Bazin, 1905); "Les NoceCorinthiennes" (France); "l'Exode" (Fauchois, 1904).
 
+B ( 1 ) **The Lover is the Slayer of the Father of His Beloved**: - "Le Cid" (and the opera drawn from it) ;"Olympie" by Voltaire.
 
-100 THIRTY-SIX DRAMATIC SITUATIONS 
+(2) - **The Beloved is the Slayer of the Father of her Lover**: - "Mademoiselle de Bressier" (Delpit, 1887).
 
-and to substitute any other element of difference or leave 
-their place unfilled, and what will remain of tragic emo- 
-tion? Nothing. 
+(3) - **The Beloved is the Slayer of the Brother of Her Lover**: - "La Reine Fiammette" (Mendes, 1889).
 
-We have, then, reason to conclude that love --an excel- 
-lent motif for comedy, better still for farce - - sweet or 
-poignant as it may be in stories read in solitude, of which 
-we can fancy ourselves hero or heroine, love is not, in real- 
-ity, tragic, despite the virtuosity which has sometimes 
-succeeded in making it appear so, and despite the preva- 
-lent opinion of this age of erotomania, which is now 
-approaching its end. 
+(4) - **The Beloved is the Slayer of the Husband of the Woman Who Loves Him, But Who Has Previously Sworn to Avenge that Husband**:- "Irene" by Voltaire.
 
+(5) - **The Same Case, Except that a Lover, Instead of a Husband, Has Been Slain**: "Fedora" (Sardou, 1882).
 
+(6) **The Beloved is the Slayer of a Kinsman of the Woman Who Loves Him**: "Romeo and Juliet," this situation being modified by that of "Abduction" (elopement), then, with triple effect by XXX VI, "Loss of Loved Ones;" the firsl time mistakenly, the second time simply and actually, the third time doubly and simultaneously to both the families of the principal characters; "l'Ancetre" I Saint -Saens and Lassus > : "Fortune and Misfortune of a Name" and "His Own Gaoler" by Calderon.
 
-THIRTIETH SITUATION 
-AMBITION 
+(7) - **The Beloved is the Daughter of the Slayer of Her Lover's Father**: "Le Crime de .lean Morel" imson, L890 ; "La Marchande de Sourires" (.Judith Gautier, L888 .
 
-(An Ambitious Person; a Thing Coveted; an 
-Adversary) 
+The chief emotional elemenl thus remains the same as in the Fifth (Pursuit i, and Love here serves especially to presenl the pursued man under various favorable lights which have a certain unity. She whom he loves here plays, to some Bmall extent, the role of the Greek chorus.  Suppress the love interest, replace it with any other tie, however weak, or even leave nothing in its place, and a play of the type of Situation Y, with all its terrors, will still remain. Attempt, oil the contrary, to curtail the other interest, the enmity to soften the vengeance and to substitute any other element of difference or leave their place unfilled, and what will remain of tragic emotion? Nothing.
 
-A highly intellectual type of action is here presented, 
-for which there is no antique model, and from which 
-mediocrity usually keeps a respectful distance. 
+We have, then, reason to conclude that love --an excellent motif for comedy, better still for farce - - sweet or poignant as it may be in stories read in solitude, of which we can fancy ourselves hero or heroine, love is not, in reality, tragic, despite the virtuosity which has sometimes succeeded in making it appear so, and despite the prevalent opinion of this age of erotomania, which is now approaching its end.
 
-A -- Ambition Watched and Guarded Against by a 
-Kinsman or a Patriot Friend: (1) - By a Brother: 
 
-Timoleon" by Alfieri. Historic instance (comic, that 
-is to say, feigned), Lucien and Napoleon Bonaparte. 
 
-2 By a Relative or Person Under Obligation: 
+THIRTIETH SITUATION
+AMBITION
 
-"Julius Caesar" by Shakespeare, "La Mort de Caesar" 
-by Voltaire; "Brutus II" by Allien. In "La Mort de 
-( laesar" there is a reappearance of I he Nineteenth (Slaying 
-of a Kinsman Unrecognized), so strong was the desire to 
-recall the works of antiquity! 
+(An Ambitious Person; a Thing Coveted; an
+Adversary)
 
-:: By Partisans: "\\ allenslein" by Schiller; 
+A highly intellectual type of action is here presented,
+for which there is no antique model, and from which
+mediocrity usually keeps a respectful distance.
 
-"Cromwell" by Hugo; "Marius Vaincu" (Mortier, 1!)11). 
+A -- Ambition Watched and Guarded Against by a
+Kinsman or a Patriot Friend: (1) - By a Brother:
 
-B Rebellious Ambition (akin to VIII, A I): 
+Timoleon" by Alfieri. Historic instance (comic, that
+is to say, feigned), Lucien and Napoleon Bonaparte.
 
-"Sir Thomas Wyat " by Webster; "I'erkin Warbeck" by 
-Ford; "Catilina" by Voltaire; Cade's insurrection in the 
+2 By a Relative or Person Under Obligation:
 
-second part of Shakespeare's *' Henry IV." 
+"Julius Caesar" by Shakespeare, "La Mort de Caesar"
+by Voltaire; "Brutus II" by Allien. In "La Mort de
+( laesar" there is a reappearance of I he Nineteenth (Slaying
+of a Kinsman Unrecognized), so strong was the desire to
+recall the works of antiquity!
 
-(' 1 Ambition and Covetousness Heaping 
+:: By Partisans: "\\ allenslein" by Schiller;
 
-Crime l pon Crime: "Macbeth" and "Richard III;" 
-"Ezzelino A. Mussato); pari of the "Cinq Doigts de 
-Birouk" (Decourcelle, 1883); "La-Bete Feroce" (Jules 
-Mary and Emile Rochard, L908); "La Vie Publique" 
-(Fabre, L901). In comedy: "Ubu-roi" (Jarry). In ftc- 
+"Cromwell" by Hugo; "Marius Vaincu" (Mortier, 1!)11).
 
-101 
+B Rebellious Ambition (akin to VIII, A I):
 
+"Sir Thomas Wyat " by Webster; "I'erkin Warbeck" by
+Ford; "Catilina" by Voltaire; Cade's insurrection in the
 
+second part of Shakespeare's *' Henry IV."
 
-102 THIRTY-SIX DRAMATIC SITUATIONS 
+(' 1 Ambition and Covetousness Heaping
 
-tion: "La Fortune des Rougon" (with criminality atten- 
-uated to simple want of dignity) ; "Son Excellence Eugene" 
-(sacrifice of morality); the story of Lucien de Rubempr£; 
-a case of greed: "La Terre." 
+Crime l pon Crime: "Macbeth" and "Richard III;"
+"Ezzelino A. Mussato); pari of the "Cinq Doigts de
+Birouk" (Decourcelle, 1883); "La-Bete Feroce" (Jules
+Mary and Emile Rochard, L908); "La Vie Publique"
+(Fabre, L901). In comedy: "Ubu-roi" (Jarry). In ftc-
 
-(2) -- Parricidal Ambition: -- "Tullia" by Martelli. 
+101
 
-Ambition, one of the most powerful of passions, if it 
-be not indeed the passion par excellence will always affect 
-the spectator strongly, for he feels and knows that, once 
-awakened in a man, it will cease only with his death. And 
-how many are the objects of its desire ! Tyrannical power, 
-high rank, honors, fortune (by inheritance, marriage, rob- 
-bery, etc.), the conservation of riches (avarice), glory 
-(political, scientific, literary, inventive, artistic), celeb- 
-rity, distinction. 
 
-We have seen in Class A the ties which may unite the 
-ambitious one and his adversary and the Situations which 
-may result from them (XIX, XXIII, XXIV). 
 
-Here is one way among many to intensify the fury of 
-C: mingle w th it the sincerity of a faith, of a conviction; 
-such a combination is found in the case of the Spaniards 
-in Peru and in Flanders, and in the case of our own "gentle 
-and intellectual" race under- the League and under the 
-Terror; in the case of Calvin, and of the Inquisition. 
+102 THIRTY-SIX DRAMATIC SITUATIONS
 
+tion: "La Fortune des Rougon" (with criminality atten-
+uated to simple want of dignity) ; "Son Excellence Eugene"
+(sacrifice of morality); the story of Lucien de Rubempr£;
+a case of greed: "La Terre."
 
+(2) -- Parricidal Ambition: -- "Tullia" by Martelli.
 
-THIRTY-FIRST SITUATION 
-CONFLICT WITH A GOD 
+Ambition, one of the most powerful of passions, if it
+be not indeed the passion par excellence will always affect
+the spectator strongly, for he feels and knows that, once
+awakened in a man, it will cease only with his death. And
+how many are the objects of its desire ! Tyrannical power,
+high rank, honors, fortune (by inheritance, marriage, rob-
+bery, etc.), the conservation of riches (avarice), glory
+(political, scientific, literary, inventive, artistic), celeb-
+rity, distinction.
 
-(A Mortal; an Immortal) 
+We have seen in Class A the ties which may unite the
+ambitious one and his adversary and the Situations which
+may result from them (XIX, XXIII, XXIV).
 
+Here is one way among many to intensify the fury of
+C: mingle w th it the sincerity of a faith, of a conviction;
+such a combination is found in the case of the Spaniards
+in Peru and in Flanders, and in the case of our own "gentle
+and intellectual" race under- the League and under the
+Terror; in the case of Calvin, and of the Inquisition.
 
 
-Most anciently treated of all Situations is this struggle. 
-Into its Babel of dramatic construction all or nearly all of 
-the others may easily enter. For this is the strife supreme; 
-it is also the supreme folly and the supreme imprudence. 
-It offers the most unprecedented aims of ambitions, auda- 
-cious enterprises, titanesque conspiracies, Ixionian abduc- 
-tions; the most fascinating of enigmas; the Ideal here 
-undergoes a rare assault of passions; prodigious rivalries 
-develop. As for the surrounding witnesses, does not their 
-sympathy often go to him whom they should hate? 
-learning of his crime, it is not sometimes their duty to 
-punish him themselves, to sacrifice him to their faith, or 
-to sacrifice themselves for him? Between the dearest of 
-kindred, hatreds will break forth. Then comes the storm 
-of disaster, the vanquished one hound to misfortune, 
-crushed before those whom he loves, unless, acme of 
-horror he has, in a transport of blind delirium, dis- 
-honored or massacred them unknowingly. Suppliants. 
 
-seeking the lost loved one, advance sad theories and 
+THIRTY-FIRST SITUATION
+CONFLICT WITH A GOD
 
-endeavor t<» disarm rancor, hut the divine vengeance 
+(A Mortal; an Immortal)
 
-lias been unchained! 
 
-108 
 
+Most anciently treated of all Situations is this struggle.
+Into its Babel of dramatic construction all or nearly all of
+the others may easily enter. For this is the strife supreme;
+it is also the supreme folly and the supreme imprudence.
+It offers the most unprecedented aims of ambitions, auda-
+cious enterprises, titanesque conspiracies, Ixionian abduc-
+tions; the most fascinating of enigmas; the Ideal here
+undergoes a rare assault of passions; prodigious rivalries
+develop. As for the surrounding witnesses, does not their
+sympathy often go to him whom they should hate?
+learning of his crime, it is not sometimes their duty to
+punish him themselves, to sacrifice him to their faith, or
+to sacrifice themselves for him? Between the dearest of
+kindred, hatreds will break forth. Then comes the storm
+of disaster, the vanquished one hound to misfortune,
+crushed before those whom he loves, unless, acme of
+horror he has, in a transport of blind delirium, dis-
+honored or massacred them unknowingly. Suppliants.
 
+seeking the lost loved one, advance sad theories and
 
-104 THIRTY-SIX DRAMATIC SITUATIONS 
+endeavor t<» disarm rancor, hut the divine vengeance
 
-This remarkable grouping has been in our day almost 
-entirely ignored. Byronists as we still are, "bon gre" mal 
-gre\" we might yet dream of this superb onslaught on the 
-heavens. But no! - - we treat even the evangelical sub- 
-ject of the Passion, while we pass by, like owls in broad 
-daylight, this genuinely dramatic situation, and content 
-ourselves with sanctimoniously intoning the idyllo-didac- 
-tic phrases which preceded the sacred tragedy, - - itself 
-left unseen. 
+lias been unchained!
 
-A (1) -Struggle Against a Deity: --"The ^don- 
-ians" and "The Bassarides," "Pentheus" and "The Wool- 
-Carders" by Aeschylus; "The Bacchantes" of Euripides; 
-the "Christ Suffering" of Saint Gregory Nazianzen. Epic: 
-the sixth Homeric hymn (to Dionysos); the dream of 
-Jacob. 
+108
 
-(2) - - Strife with the Believers in a God: -- "The 
-Exodus of the Hebrews" by Ezekiel; "L'Empereur Julien" 
-(Miracle of Notre-Dame, XIV Century); "Athalie." 
-Historic instances: various persecutions. Epic: "Les Mar- 
-tyrs." 
 
-B (1) - Controversy With a Deity: --"The Book 
 
-of Job." I cannot give, it is true, the date nor the place 
-of the "premier" of "Job." But the fact of actual repre- 
-sentation by Messieurs A, B and C and Misses X, Y and Z 
-is no more an indispensable condition to the existence of 
-true drama than it is an all-sufficient one. We may hold 
-that the "premier" was given in that great Theatre of 
-which Brahmanic legend tells; a Theatre inaugurated long 
-before that of man, and thanks to which the gods may 
-occupy the leisures of their eternity. 
+104 THIRTY-SIX DRAMATIC SITUATIONS
 
-(2) - Punishment for Contempt of a God: — 
+This remarkable grouping has been in our day almost
+entirely ignored. Byronists as we still are, "bon gre" mal
+gre\" we might yet dream of this superb onslaught on the
+heavens. But no! - - we treat even the evangelical sub-
+ject of the Passion, while we pass by, like owls in broad
+daylight, this genuinely dramatic situation, and content
+ourselves with sanctimoniously intoning the idyllo-didac-
+tic phrases which preceded the sacred tragedy, - - itself
+left unseen.
 
-"Tchitra Yadjgna" by Vedyantha Vatchespati; "Le 
-Festin de Pierre" (meaning the real action, which from 
-the beginning leads toward the denouement). 
+A (1) -Struggle Against a Deity: --"The ^don-
+ians" and "The Bassarides," "Pentheus" and "The Wool-
+Carders" by Aeschylus; "The Bacchantes" of Euripides;
+the "Christ Suffering" of Saint Gregory Nazianzen. Epic:
+the sixth Homeric hymn (to Dionysos); the dream of
+Jacob.
 
-(3) -Punishment for Pride Before a God:- 
+(2) - - Strife with the Believers in a God: -- "The
+Exodus of the Hebrews" by Ezekiel; "L'Empereur Julien"
+(Miracle of Notre-Dame, XIV Century); "Athalie."
+Historic instances: various persecutions. Epic: "Les Mar-
+tyrs."
 
-Aeschylus' "Ajax Locrian" (according to one hypothesis); 
-Sophocles' "Thamiras;" Euripides' "Bellerophon." A 
-Christian example: Simon the Magician. 
+B (1) - Controversy With a Deity: --"The Book
 
+of Job." I cannot give, it is true, the date nor the place
+of the "premier" of "Job." But the fact of actual repre-
+sentation by Messieurs A, B and C and Misses X, Y and Z
+is no more an indispensable condition to the existence of
+true drama than it is an all-sufficient one. We may hold
+that the "premier" was given in that great Theatre of
+which Brahmanic legend tells; a Theatre inaugurated long
+before that of man, and thanks to which the gods may
+occupy the leisures of their eternity.
 
+(2) - Punishment for Contempt of a God: —
 
-THIRTY-FIRST SITUATION 105 
+"Tchitra Yadjgna" by Vedyantha Vatchespati; "Le
+Festin de Pierre" (meaning the real action, which from
+the beginning leads toward the denouement).
 
-(4) - - Presumptuous Rivalry with a God: - "The 
-Nurses" by Aeschylus; "Niobe" by Sophocles; "La Mere 
-du Pape" (Miracle of Notre-Dame, XIV Century). 
+(3) -Punishment for Pride Before a God:-
 
-(5) - Imprudent Rivalry with a Deity: - Sopho- 
-cles' "Eumele;" in part "Phaeton" by Euripides. 
+Aeschylus' "Ajax Locrian" (according to one hypothesis);
+Sophocles' "Thamiras;" Euripides' "Bellerophon." A
+Christian example: Simon the Magician.
 
-May it not be possible that we shall one day see treated 
-from the point of view of this Situation, the pathetic death 
-of Guyot-Dessaigne, Minister of Justice? 
 
 
+THIRTY-FIRST SITUATION 105
 
-THIRTY-SECOND SITUATION 
+(4) - - Presumptuous Rivalry with a God: - "The
+Nurses" by Aeschylus; "Niobe" by Sophocles; "La Mere
+du Pape" (Miracle of Notre-Dame, XIV Century).
 
-MISTAKEN JEALOUSY 
+(5) - Imprudent Rivalry with a Deity: - Sopho-
+cles' "Eumele;" in part "Phaeton" by Euripides.
 
-(The Jealous One; The Object of Whose Possession He 
+May it not be possible that we shall one day see treated
+from the point of view of this Situation, the pathetic death
+of Guyot-Dessaigne, Minister of Justice?
 
-Is Jealous; the Supposed Accomplice; the Cause 
 
-or the Author of the Mistake) 
 
-The last element is either not personified (A), or per- 
-sonified in a traitor (B), who is sometimes the true rival 
-of the Jealous One (C). 
+THIRTY-SECOND SITUATION
 
-A (1) - The Mistake Originates in the Suspicious 
-Mind of the Jealous One: - "The Worst is not Always 
-Certain" by Calderon; Shakespeare's "Comedy of Errors;" 
-"The Bondman" by Massinger; the "Marianne" of Dolse 
-and of Tristan l'Hermite; "Tancrede" and "Marianne" 
-by Voltaire; "la Princesse de Bagdad" by Dumas; "Un 
-Divorce" (Moreau, 1884); "Monna Vanna" (Maeterlinck, 
-1902). How is it that Moliere has not written a comedy 
-of jealousy upon this Situation symmetrical to that of 
-"LAvare?" 
+MISTAKEN JEALOUSY
 
-(2) - - Mistaken Jealousy Aroused by a Fatal 
-Chance - - Voltaire's "Zaire" and the opera of that name 
-by de la Nux; part of "Lucrece Borgia." In comedy: "La 
-Divorcee" (Fall and L6on, 1911). 
+(The Jealous One; The Object of Whose Possession He
 
-(3) - - Mistaken Jealousy of a Love Which is Purely 
-Platonic: - "Love's Sacrifice" by Ford (in which the 
-wife is unjustly suspected). "L'Esclave du Sevoin" 
+Is Jealous; the Supposed Accomplice; the Cause
 
-Yalnay, 1881, in which it is more particularly the respect- 
+or the Author of the Mistake)
 
-10G 
+The last element is either not personified (A), or per-
+sonified in a traitor (B), who is sometimes the true rival
+of the Jealous One (C).
 
+A (1) - The Mistake Originates in the Suspicious
+Mind of the Jealous One: - "The Worst is not Always
+Certain" by Calderon; Shakespeare's "Comedy of Errors;"
+"The Bondman" by Massinger; the "Marianne" of Dolse
+and of Tristan l'Hermite; "Tancrede" and "Marianne"
+by Voltaire; "la Princesse de Bagdad" by Dumas; "Un
+Divorce" (Moreau, 1884); "Monna Vanna" (Maeterlinck,
+1902). How is it that Moliere has not written a comedy
+of jealousy upon this Situation symmetrical to that of
+"LAvare?"
 
+(2) - - Mistaken Jealousy Aroused by a Fatal
+Chance - - Voltaire's "Zaire" and the opera of that name
+by de la Nux; part of "Lucrece Borgia." In comedy: "La
+Divorcee" (Fall and L6on, 1911).
 
-THIRTY-SECOND SITUATION 107 
+(3) - - Mistaken Jealousy of a Love Which is Purely
+Platonic: - "Love's Sacrifice" by Ford (in which the
+wife is unjustly suspected). "L'Esclave du Sevoin"
 
-ful admirer who is wrongly suspected). Of a Flirt: — 
-"Suzette" (Brieux, 1908) ; "Four Times Seven are Twenty- 
-Eight" (Coolus, 1909). 
+Yalnay, 1881, in which it is more particularly the respect-
 
-(4) — Baseless Jealousy Aroused by Malicious 
-Rumors: -- "Le Pere Prodigue" by Dumas; "le Maitre 
-de Forges" (Ohnet, 1883). 
+10G
 
-B (1) — Jealousy Suggested by a Traitor Who is 
-Moved by Hatred: Shakespeare's "Othello" and 
-"Much Ado about Nothing;" "Semiramide Riconosciuta" 
-by Metastasio presents the fully -developed denouement 
-of it. 
 
-(2) - - The Same Case, in Which the Traitor is 
-Moved by Self-interest: - - Shakespeare's "Cymbeline;" 
-"La Fille du Roi d'Espagne" (Miracle of Notre-Dame, 
-XIV Century). 
 
-(3) The Same Case, in Which the Traitor is 
-Moved by Jealousy and Self-interest: "Love and 
-Intrigue" by Schiller. 
+THIRTY-SECOND SITUATION 107
 
-C 1 Reciprocal Jealousy Suggested to Hus- 
-band and Wife by a Rival: -"The Portrait" by Mas- 
-singer. 
+ful admirer who is wrongly suspected). Of a Flirt: —
+"Suzette" (Brieux, 1908) ; "Four Times Seven are Twenty-
+Eight" (Coolus, 1909).
 
-(2) - Jealousy Suggested to the Husband by a Dis- 
-missed Suitor: Voltaire's "Artemire;" "Le Chevalier 
-.I.-un" (Joncieres, L885 . 
+(4) — Baseless Jealousy Aroused by Malicious
+Rumors: -- "Le Pere Prodigue" by Dumas; "le Maitre
+de Forges" (Ohnet, 1883).
 
-3 Jealousy Suggested to the Husband by a 
-Woman Who is in l.ove with llim: "Malheur au\ 
+B (1) — Jealousy Suggested by a Traitor Who is
+Moved by Hatred: Shakespeare's "Othello" and
+"Much Ado about Nothing;" "Semiramide Riconosciuta"
+by Metastasio presents the fully -developed denouement
+of it.
 
-Pauvres" ( Bouvier, L881 1. 
+(2) - - The Same Case, in Which the Traitor is
+Moved by Self-interest: - - Shakespeare's "Cymbeline;"
+"La Fille du Roi d'Espagne" (Miracle of Notre-Dame,
+XIV Century).
 
-1 Jealousy Suggested to the Wife by a Scorned 
-Rival: "The Phtiotides" of Sophocles. 
+(3) The Same Case, in Which the Traitor is
+Moved by Jealousy and Self-interest: "Love and
+Intrigue" by Schiller.
 
-5 Jealousy Suggested to a Happy lover by the 
-Deceived Husband: "Jalousie" (Vacquerie, L888). 
+C 1 Reciprocal Jealousy Suggested to Hus-
+band and Wife by a Rival: -"The Portrait" by Mas-
+singer.
 
-The number of dramatic elements brought into play 
-already enables us to foresee many combinations for this 
-Situation, whose improbabilities the public is always dis- 
-posed to accept, however greal they may be. Withoul 
+(2) - Jealousy Suggested to the Husband by a Dis-
+missed Suitor: Voltaire's "Artemire;" "Le Chevalier
+.I.-un" (Joncieres, L885 .
 
-abusing this indulgence, we may remark, even at fir I 
-glance, thai almost all t In • dramas above cited treal of 
+3 Jealousy Suggested to the Husband by a
+Woman Who is in l.ove with llim: "Malheur au\
 
+Pauvres" ( Bouvier, L881 1.
 
+1 Jealousy Suggested to the Wife by a Scorned
+Rival: "The Phtiotides" of Sophocles.
 
-108 THIRTY-SIX DRAMATIC SITUATIONS 
+5 Jealousy Suggested to a Happy lover by the
+Deceived Husband: "Jalousie" (Vacquerie, L888).
 
-jealousy on the part of a man, whereas experience teaches 
-us that woman is quite as ready as man to let herself be 
-the envious, by a rival, or by a suitor bent upon securing 
-for himself, through the anger aroused, a pleasure other- 
-wise out of his reach. Transference to the feminine of the 
-cases already considered will thus furnish a series of new 
-situations. Besides pride, self-interest, love, spite and 
-rivalry, many other motives present themselves for the 
-traitor or traitress; the motives mentioned may also be 
-painted in colors yet unused. The denouement (usually 
-a murder, in some cases a suicide, in others a divorce) may 
-be varied, subtilized or strengthened by secondary and 
-instrumental characters. The same may be said for the 
-various knots of the intrigue, for those false proofs, those 
-diabolic suggestions from which the jealousy springs. 
+The number of dramatic elements brought into play
+already enables us to foresee many combinations for this
+Situation, whose improbabilities the public is always dis-
+posed to accept, however greal they may be. Withoul
 
-Under the form of "jealous spite" this situation has 
-been used by Moliere and other writers of comedy for the 
-purpose of filling in - - through the agitations it causes 
-the principal lovers - - the vacancies of the picture with 
-minor characters. 
+abusing this indulgence, we may remark, even at fir I
+glance, thai almost all t In • dramas above cited treal of
 
 
 
-THIRTY-THIRD SITUATION 
+108 THIRTY-SIX DRAMATIC SITUATIONS
 
-ERRONEOUS JUDGMENT 
+jealousy on the part of a man, whereas experience teaches
+us that woman is quite as ready as man to let herself be
+the envious, by a rival, or by a suitor bent upon securing
+for himself, through the anger aroused, a pleasure other-
+wise out of his reach. Transference to the feminine of the
+cases already considered will thus furnish a series of new
+situations. Besides pride, self-interest, love, spite and
+rivalry, many other motives present themselves for the
+traitor or traitress; the motives mentioned may also be
+painted in colors yet unused. The denouement (usually
+a murder, in some cases a suicide, in others a divorce) may
+be varied, subtilized or strengthened by secondary and
+instrumental characters. The same may be said for the
+various knots of the intrigue, for those false proofs, those
+diabolic suggestions from which the jealousy springs.
 
-(The Mistaken One; the Victim of the Mistake; the 
-Cause or Author of the Mistake; the Guilty Person.) 
+Under the form of "jealous spite" this situation has
+been used by Moliere and other writers of comedy for the
+purpose of filling in - - through the agitations it causes
+the principal lovers - - the vacancies of the picture with
+minor characters.
 
-(Any sort of mistaken judgment may here be under- 
-stood, even though committed only in the thought 
-of one person to the detriment of another.) 
 
-A (1) False Suspicion Where Faith is Neces- 
-sary: "The Serpent Woman" by Gozzi; "L'Etudiant 
-Pauvre" Milloecker, 1889). One of the facets of 
-"Henry V" is connected somewhat remotely with this 
-situation, the incomprehension of the young prince's 
-peal character by the witnesses of his disorders. Dumas 
-pen- has represented Henri de Navarre as misunder- 
-stood in the same way by his entourage. 
 
-(2 False Suspicion in which the je;d<»usy is not 
-without reason) Of a Mistress: Pari of "Diane" by 
-Augier; "Marie Stuart" by Allien. 
+THIRTY-THIRD SITUATION
 
-3 False Suspicions Aroused by a Misunder- 
+ERRONEOUS JUDGMENT
 
-stood \ 1 1 i t licit- Of B Loved One: "The Kaven" by 
+(The Mistaken One; the Victim of the Mistake; the
+Cause or Author of the Mistake; the Guilty Person.)
 
-Gozzi; "Hypsipile" by Metastasio; "Theodora" (Sardou, 
-i ; pari of "La Reine Fiammetta;" "Le Voleur" 
-Bernstein, L906 : "Les Grands" (Weber and Basset, 
-L909 : "Coeur Maternel" (Franck, L91 1 , 
+(Any sort of mistaken judgment may here be under-
+stood, even though committed only in the thought
+of one person to the detriment of another.)
 
-1 Bj indifTerence: "Crainquebille" Prance, 
-L909 : "le Vierge" Valletta , 
+A (1) False Suspicion Where Faith is Neces-
+sary: "The Serpent Woman" by Gozzi; "L'Etudiant
+Pauvre" Milloecker, 1889). One of the facets of
+"Henry V" is connected somewhat remotely with this
+situation, the incomprehension of the young prince's
+peal character by the witnesses of his disorders. Dumas
+pen- has represented Henri de Navarre as misunder-
+stood in the same way by his entourage.
 
-109 
+(2 False Suspicion in which the je;d<»usy is not
+without reason) Of a Mistress: Pari of "Diane" by
+Augier; "Marie Stuart" by Allien.
 
+3 False Suspicions Aroused by a Misunder-
 
+stood \ 1 1 i t licit- Of B Loved One: "The Kaven" by
 
-110 THIRTY-SIX DRAMATIC SITUATIONS 
+Gozzi; "Hypsipile" by Metastasio; "Theodora" (Sardou,
+i ; pari of "La Reine Fiammetta;" "Le Voleur"
+Bernstein, L906 : "Les Grands" (Weber and Basset,
+L909 : "Coeur Maternel" (Franck, L91 1 ,
 
-B 1 -False Suspicions Drawn Upon Oneself to 
-Save a Friend: "Aimer Sans Savoir Qui" by Lope; 
-"Mme. Ambros" (Widor, 1885). 
+1 Bj indifTerence: "Crainquebille" Prance,
+L909 : "le Vierge" Valletta ,
 
-(2) - They Fall Upon the Innocent: - - "Siroes" by 
-Metastasio; "La Grande Iza" (Bouvier, 1882); "Le 
-Fiacre No. 13" and "Gavroche" (Dornay, 1887 and 
-1888); "L'Affaire des Poisons" (Sardou, 1907); "Les 
-Pierrots" (Grillet, 1908). Upon the Innocent Hus- 
-band of the Guilty One: - - "La Criminelle" (Delacour, 
-1882). 
+109
 
-(3) - The Same Case as 2, but in Which the Inno- 
-cent had a Guilty Intention: -- "Jean C£venol" 
-(Fraisse, 1883). In Which the Innocent Believes 
-Himself Guilty: - "Le Roi de l'Argent" (Milliet, 1885); 
-"Poupees Electriques" (Marinetti). 
 
-(4) - - A Witness to the Crime, in the Interest of 
-a Loved One, Lets Accusation Fall Upon the Inno- 
-cent: -"Le Secret de la Terreuse" (Busnach, 1889). 
 
-C (1) - - The Accusation is Allowed to Fall Upon 
-an Enemy: "La Pieuvre" (Morel, 1885). 
+110 THIRTY-SIX DRAMATIC SITUATIONS
 
-(2) - The Error is Provoked by an Enemy: - - "The 
-Palamedes" of Sophocles and of Euripides; "Le Ventre 
-de Paris" (Zola, 1887); "Le Roi Soleil" (Bernese, 1911); 
-"L'Homme a Deux Tetes" (Forest, 1910). This nuance 
-alone, it will be observed, attracted the Greek trage- 
-dians, who were, so to speak, tormented by a vague 
-conception of the Iago of a later age and who tried, 
-in a succession of distorted types, to produce it; we 
-seem, in these works, to be assisting at the birth of the 
-future Devil; of the evangelic Judas -~ and at that of 
-the type of Jesus in Prometheus and Dionysos. This 
-nuance C 2 seems to me a singularly fine one; it is, for 
-instance, that of the "anonymous letter," and it will be 
-admitted that a more admirably repugnant gargoyle 
-cannot be imagined than the creature who crouches 
-with pen in claw and malignant smile, to begin such a 
-piece of work! 
+B 1 -False Suspicions Drawn Upon Oneself to
+Save a Friend: "Aimer Sans Savoir Qui" by Lope;
+"Mme. Ambros" (Widor, 1885).
 
-The Mistake is Directed Against the Victim 
-by Her Brother: (here is included also the Twelfth, 
+(2) - They Fall Upon the Innocent: - - "Siroes" by
+Metastasio; "La Grande Iza" (Bouvier, 1882); "Le
+Fiacre No. 13" and "Gavroche" (Dornay, 1887 and
+1888); "L'Affaire des Poisons" (Sardou, 1907); "Les
+Pierrots" (Grillet, 1908). Upon the Innocent Hus-
+band of the Guilty One: - - "La Criminelle" (Delacour,
+1882).
 
+(3) - The Same Case as 2, but in Which the Inno-
+cent had a Guilty Intention: -- "Jean C£venol"
+(Fraisse, 1883). In Which the Innocent Believes
+Himself Guilty: - "Le Roi de l'Argent" (Milliet, 1885);
+"Poupees Electriques" (Marinetti).
 
+(4) - - A Witness to the Crime, in the Interest of
+a Loved One, Lets Accusation Fall Upon the Inno-
+cent: -"Le Secret de la Terreuse" (Busnach, 1889).
 
-THIRTY-THIRD SITUATION 111 
+C (1) - - The Accusation is Allowed to Fall Upon
+an Enemy: "La Pieuvre" (Morel, 1885).
 
-"Hatred of Kinsmen") :-- "The Brigands" by Schiller; 
-"Don Garzia" by Alfieri. 
+(2) - The Error is Provoked by an Enemy: - - "The
+Palamedes" of Sophocles and of Euripides; "Le Ventre
+de Paris" (Zola, 1887); "Le Roi Soleil" (Bernese, 1911);
+"L'Homme a Deux Tetes" (Forest, 1910). This nuance
+alone, it will be observed, attracted the Greek trage-
+dians, who were, so to speak, tormented by a vague
+conception of the Iago of a later age and who tried,
+in a succession of distorted types, to produce it; we
+seem, in these works, to be assisting at the birth of the
+future Devil; of the evangelic Judas -~ and at that of
+the type of Jesus in Prometheus and Dionysos. This
+nuance C 2 seems to me a singularly fine one; it is, for
+instance, that of the "anonymous letter," and it will be
+admitted that a more admirably repugnant gargoyle
+cannot be imagined than the creature who crouches
+with pen in claw and malignant smile, to begin such a
+piece of work!
 
-D (1) - - False Suspicion Thrown by the Real 
-Culprit Upon One of His Enemies: -- Corneille's 
-"Clitandre," and "Sapho" (Gounod, 1884); "Catharine 
-la Batarde" (Bell, 1881). 
+The Mistake is Directed Against the Victim
+by Her Brother: (here is included also the Twelfth,
 
-(2) -Thrown by the Real Culprit Upon the 
-Second Victim Against Whom He Has Plotted from 
-the Beginning: - "Le Crime d'un Autre" (Arnold and 
-Renauld, 1908). This is pure Machiavellianism, obtain- 
-ing the death of the second victim through an unjust 
-punishment for the murder of the first. Add to this the 
-closest relationship between the two victims and the 
-deceived judge, and we have all these emotions assem- 
-bled: discovery of the death of a relative; supposed 
-discovery of an impious hatred between two relatives; 
-belief even in a second case of crime, aggravated this 
-time by a scheme of revolt; finally the duty of con- 
-demning a loved one believed in be guilty. This plot 
-then, is a masterly one, since it groups, under the im- 
-pulsion of an ambition or a vengeance, four other Sit- 
-uations. As for the "Machiavellianism" which has 
-set it all in motion, it consists, for him who employs it, 
-precisely in the method which is habitual to writers, a 
-method here transferred to a single character; lie ab- 
-stracts himself, SO to speak, from the drama, and, like 
-the author, inspires in other characters the necessan 
-feelings, unrolls before their steps the indispensable 
-circumstances, in order thai they may mechanically 
-move toward the denouement be desires. Thus is de- 
-veloped the "Artaxerce" of Metastasio. 
 
-Suppress the pari of the villain, and suppose for s 
-moment thai the author has planned the denouemenl 
-desired by this traitor; the bringing about of the most 
-cruel results from a "supposed fratricide" and the "duty 
-of condemning a son." The author cannol otherwise 
-combine his means to produce it. The type of the 
-Villain who has successively appeared in many guises) 
-is nothing else than the author himself, masked in black, 
 
+THIRTY-THIRD SITUATION 111
 
+"Hatred of Kinsmen") :-- "The Brigands" by Schiller;
+"Don Garzia" by Alfieri.
 
-112 THIRTY-SIX DRAMATIC SITUATIONS 
+D (1) - - False Suspicion Thrown by the Real
+Culprit Upon One of His Enemies: -- Corneille's
+"Clitandre," and "Sapho" (Gounod, 1884); "Catharine
+la Batarde" (Bell, 1881).
 
-and knotting together two or three ' dramatic situations. 
-He belongs, this type, to the family of the poetic Pro- 
-logue, of the "Deus ex machina" (although more admis- 
-sible) of the Orator of the parabases, of the Molieresque 
-Valet, and of the Theorist (the good doctor, clergyman, 
-journalist, "family friend"). He is in short the old 
-Narrator of the monodramas. Nothing could be more 
-naif, consequently, than this creature, whose uncon- 
-vincing artificiality has spoiled many a scene. 
+(2) -Thrown by the Real Culprit Upon the
+Second Victim Against Whom He Has Plotted from
+the Beginning: - "Le Crime d'un Autre" (Arnold and
+Renauld, 1908). This is pure Machiavellianism, obtain-
+ing the death of the second victim through an unjust
+punishment for the murder of the first. Add to this the
+closest relationship between the two victims and the
+deceived judge, and we have all these emotions assem-
+bled: discovery of the death of a relative; supposed
+discovery of an impious hatred between two relatives;
+belief even in a second case of crime, aggravated this
+time by a scheme of revolt; finally the duty of con-
+demning a loved one believed in be guilty. This plot
+then, is a masterly one, since it groups, under the im-
+pulsion of an ambition or a vengeance, four other Sit-
+uations. As for the "Machiavellianism" which has
+set it all in motion, it consists, for him who employs it,
+precisely in the method which is habitual to writers, a
+method here transferred to a single character; lie ab-
+stracts himself, SO to speak, from the drama, and, like
+the author, inspires in other characters the necessan
+feelings, unrolls before their steps the indispensable
+circumstances, in order thai they may mechanically
+move toward the denouement be desires. Thus is de-
+veloped the "Artaxerce" of Metastasio.
 
-(3) - - False Suspicion Thrown Upon a Rival- 
+Suppress the pari of the villain, and suppose for s
+moment thai the author has planned the denouemenl
+desired by this traitor; the bringing about of the most
+cruel results from a "supposed fratricide" and the "duty
+of condemning a son." The author cannol otherwise
+combine his means to produce it. The type of the
+Villain who has successively appeared in many guises)
+is nothing else than the author himself, masked in black,
 
-"Diana" (Paladilhe, 1885); "L'Ogre" (Marthold, 1890); 
-"La Boscotte" (Mme. Maldagne, 1908). 
 
-(4) - Thrown Upon One Innocent, Because He 
-Has Refused to be an Accomplice:- "Valentinian" 
-by Beaumont and Fletcher; "Aetius" by Metastasio. 
 
-(5) - Thrown by a Deserted Mistress Upon a 
-Lover Who Left Her Because He Would Not Deceive 
-Her Husband: -- "Roger-la-Honte" (Mary, 1888). 
+112 THIRTY-SIX DRAMATIC SITUATIONS
 
-(6) - - Struggle to Rehabilitate Oneself and to 
-Avenge a Judicial Error Purposely Caused:- "La 
+and knotting together two or three ' dramatic situations.
+He belongs, this type, to the family of the poetic Pro-
+logue, of the "Deus ex machina" (although more admis-
+sible) of the Orator of the parabases, of the Molieresque
+Valet, and of the Theorist (the good doctor, clergyman,
+journalist, "family friend"). He is in short the old
+Narrator of the monodramas. Nothing could be more
+naif, consequently, than this creature, whose uncon-
+vincing artificiality has spoiled many a scene.
 
-Degringolade" (Desnard, 1881); the end of "Fiacre 
-No. 13." 
+(3) - - False Suspicion Thrown Upon a Rival-
 
+"Diana" (Paladilhe, 1885); "L'Ogre" (Marthold, 1890);
+"La Boscotte" (Mme. Maldagne, 1908).
 
+(4) - Thrown Upon One Innocent, Because He
+Has Refused to be an Accomplice:- "Valentinian"
+by Beaumont and Fletcher; "Aetius" by Metastasio.
 
-THIRTY-FOURTH SITUATION 
+(5) - Thrown by a Deserted Mistress Upon a
+Lover Who Left Her Because He Would Not Deceive
+Her Husband: -- "Roger-la-Honte" (Mary, 1888).
 
-REMORSE 
+(6) - - Struggle to Rehabilitate Oneself and to
+Avenge a Judicial Error Purposely Caused:- "La
 
-(The Culprit; the Victim or the Sin; the Interrogator) 
+Degringolade" (Desnard, 1881); the end of "Fiacre
+No. 13."
 
-A 1 Remorse for an Unknown Crime: 
-"Manfred" and other creations of Byron; the last of 
-the great English dramatists, he was likewise the last 
-adversary of Cant, which, having killed art in Spain 
-under the name of the Inquisition, in England the first 
-time under the name of Puritanism and in Germany 
-under the name of Pietism, today presents itself in 
-France, in the guise of ... Monsieur Berenger. 
 
-Remorse for a Parricide: "The Eumenides" 
-of Aeschylus; the "Orestes*' of Euripides, of Voltaire 
-and of Alfieri; "Le Goitre" (Verhaeren). 
 
-3 Remorse for an Assassination: "(rime ami 
-Punishment" Dostoievsky, L888); "Le CoeUT Ivevela- 
+THIRTY-FOURTH SITUATION
 
-teur" after Poe, by Aumann, 1889). For a .Judicial 
-Murder: "L'Eclaboussure" Geraldy, L910). 
+REMORSE
 
-(A) Remorse for the Murder of Husband or 
-Wife: 'Therese Raquin" by Zola; "Pierrot, Assassin 
+(The Culprit; the Victim or the Sin; the Interrogator)
 
-de sa l-'emme" pan] Marguentte, 18B8 . 
+A 1 Remorse for an Unknown Crime:
+"Manfred" and other creations of Byron; the last of
+the great English dramatists, he was likewise the last
+adversary of Cant, which, having killed art in Spain
+under the name of the Inquisition, in England the first
+time under the name of Puritanism and in Germany
+under the name of Pietism, today presents itself in
+France, in the guise of ... Monsieur Berenger.
 
-B l Remorse for a Fault of Love: "Made- 
-leine" Zola, L889 , 
+Remorse for a Parricide: "The Eumenides"
+of Aeschylus; the "Orestes*' of Euripides, of Voltaire
+and of Alfieri; "Le Goitre" (Verhaeren).
 
-2 Remorse for an Adultery: "Count Witold" 
-Rzewuski, L889 ; "Le Scandale" Bataille, L909). 
+3 Remorse for an Assassination: "(rime ami
+Punishment" Dostoievsky, L888); "Le CoeUT Ivevela-
 
-With P> l there are connected, in one respect, the 
-plays classed in A l of Situation XXVII. 
+teur" after Poe, by Aumann, 1889). For a .Judicial
+Murder: "L'Eclaboussure" Geraldy, L910).
 
-LIS 
+(A) Remorse for the Murder of Husband or
+Wife: 'Therese Raquin" by Zola; "Pierrot, Assassin
 
+de sa l-'emme" pan] Marguentte, 18B8 .
 
+B l Remorse for a Fault of Love: "Made-
+leine" Zola, L889 ,
 
-114 THIRTY-SIX DRAMATIC SITUATIONS 
+2 Remorse for an Adultery: "Count Witold"
+Rzewuski, L889 ; "Le Scandale" Bataille, L909).
 
-Need I call attention to the small number, but the 
-terrible beauty, of the above works? Is it necessary 
-to indicate the infinite varieties of Remorse, according 
-to; 1st, the fault committed (for this, enumerate all 
-crimes and misdemeanors included in the legal code, 
-plus those which do not fall under any law; the fault, 
-moreover, may at the writer's pleasure be real or imag- 
-inary, committed without intention, or intended but 
-not committed - - which permits a "happy ending" - 
-or both intended and committed; premeditated or not, 
-with or without complicity, outside influences, sub- 
-tlety, or what not); 2nd, the nature, more or less im- 
-pressionable and nervous, of the culprit; 3rd, the sur- 
-roundings, the circumstances, the morals which pre- 
-pare the way for the appearance of Remorse - - that fig- 
-ure plastic, firm and religious among the Greeks, the 
-beneficially enervating phantasmagoria of our Middle 
-Ages; the pious dread of a future life in recent centuries; 
-the disturbance of the equilibrium of the social instincts 
-and consequently of the mind according to the inferences 
-of Zola, etc. 
+With P> l there are connected, in one respect, the
+plays classed in A l of Situation XXVII.
 
-With Remorse is connected the Fixed Idea; through 
-its perpetual action it recalls Madness or Criminal Pas- 
-sion. Often it is but "remorse for a desire," remorse 
-the more keen in that the incessantly reviving desire 
-nourishes it, mingles with it, and, growing like a sort 
-of moral cancer, saps the soul's vitality to the point of 
-suicide, which is itself but the most desperate of duels. 
-"Rene," Werther," the maniac of the "Coeur Re>61a- 
-teur" and of Berenice" (I refer to that of Edgar Poe) 
-and especially Ibsen's "Rosmersholm," offer significant 
-portraits of it. 
+LIS
 
 
 
-THIRTY-FIFTH SITUATION 
+114 THIRTY-SIX DRAMATIC SITUATIONS
 
-RECOVERY OF A LOST ONE 
+Need I call attention to the small number, but the
+terrible beauty, of the above works? Is it necessary
+to indicate the infinite varieties of Remorse, according
+to; 1st, the fault committed (for this, enumerate all
+crimes and misdemeanors included in the legal code,
+plus those which do not fall under any law; the fault,
+moreover, may at the writer's pleasure be real or imag-
+inary, committed without intention, or intended but
+not committed - - which permits a "happy ending" -
+or both intended and committed; premeditated or not,
+with or without complicity, outside influences, sub-
+tlety, or what not); 2nd, the nature, more or less im-
+pressionable and nervous, of the culprit; 3rd, the sur-
+roundings, the circumstances, the morals which pre-
+pare the way for the appearance of Remorse - - that fig-
+ure plastic, firm and religious among the Greeks, the
+beneficially enervating phantasmagoria of our Middle
+Ages; the pious dread of a future life in recent centuries;
+the disturbance of the equilibrium of the social instincts
+and consequently of the mind according to the inferences
+of Zola, etc.
 
-(The Seeker; the One Found) 
+With Remorse is connected the Fixed Idea; through
+its perpetual action it recalls Madness or Criminal Pas-
+sion. Often it is but "remorse for a desire," remorse
+the more keen in that the incessantly reviving desire
+nourishes it, mingles with it, and, growing like a sort
+of moral cancer, saps the soul's vitality to the point of
+suicide, which is itself but the most desperate of duels.
+"Rene," Werther," the maniac of the "Coeur Re>61a-
+teur" and of Berenice" (I refer to that of Edgar Poe)
+and especially Ibsen's "Rosmersholm," offer significant
+portraits of it.
 
-This is the Situation of "The Hero and the Nymph" 
-by Kalidasa; the second part of his "Sakuntala," and 
-the "Later Life of Rama" by Bhavabuti; the second 
-part also of "A Winter's Tale" and "Pericles" by Shakes- 
-peare; likewise of "Berthequine" and of "Bertha au 
-Grand Pied" Miracles of Notre- Dame, XIV Century); 
-of almost all of "La Reine Aux Trois Fils," another 
-Miracle; it is the Situation of "Thyestes in Sicyon" 
-by Sophocles and of "Alcmeon in Corinth" by Suri- 
-pides. It is the denouement of "Pere Chasselas" (Athis, 
-1886); "Foulards Rouges" (Dornay, 1882); "La Gar- 
-dienne" (Henri de Regnier); it is the old familiar plot 
-of the "stolen child" and of stories of foundlings; of 
-arbitrary imprisonments, from the Man in the Iron 
-Mask upon whom Hugo began a drama) and "Richard 
-Coeur-dc-Lion" down to recent tales of sane persons 
-confined as lunatics. It is the point from which bursts 
-forth so frequently thai double explosion of the prin- 
-cipal Bcene; My daughter I My mother!" 
 
-Classes A and C Of Situation XI move toward the 
-same end. 
 
-In other cases il is the part of the child to discover 
+THIRTY-FIFTH SITUATION
 
-his father, his kinsman, and to make himself known; 
-thus i' is in the "Enfances Roland;" in "Lea Bnfants 
-du Capitaine Grant" by Jules Verne and "lea Aventures 
-de Gavroche" Darlay and Marot, L909 . 
+RECOVERY OF A LOST ONE
 
-115 
+(The Seeker; the One Found)
 
+This is the Situation of "The Hero and the Nymph"
+by Kalidasa; the second part of his "Sakuntala," and
+the "Later Life of Rama" by Bhavabuti; the second
+part also of "A Winter's Tale" and "Pericles" by Shakes-
+peare; likewise of "Berthequine" and of "Bertha au
+Grand Pied" Miracles of Notre- Dame, XIV Century);
+of almost all of "La Reine Aux Trois Fils," another
+Miracle; it is the Situation of "Thyestes in Sicyon"
+by Sophocles and of "Alcmeon in Corinth" by Suri-
+pides. It is the denouement of "Pere Chasselas" (Athis,
+1886); "Foulards Rouges" (Dornay, 1882); "La Gar-
+dienne" (Henri de Regnier); it is the old familiar plot
+of the "stolen child" and of stories of foundlings; of
+arbitrary imprisonments, from the Man in the Iron
+Mask upon whom Hugo began a drama) and "Richard
+Coeur-dc-Lion" down to recent tales of sane persons
+confined as lunatics. It is the point from which bursts
+forth so frequently thai double explosion of the prin-
+cipal Bcene; My daughter I My mother!"
 
+Classes A and C Of Situation XI move toward the
+same end.
 
-116 THIRTY-SIX DRAMATIC SITUATIONS 
+In other cases il is the part of the child to discover
 
-To the invariably happy and epithalamic ending to 
-our plays built upon this Situation, and to the fortuit- 
-ous coincidences with which it has been too generously 
-interlarded, I attribute the public's final weariness of 
-it. For does not this Situation retain more naturalness 
-than the Nineteenth, and how fecund has been that 
-Nineteenth, whose charm and tempting variety is all 
-possessed by our Thirty-Fifth! 
+his father, his kinsman, and to make himself known;
+thus i' is in the "Enfances Roland;" in "Lea Bnfants
+du Capitaine Grant" by Jules Verne and "lea Aventures
+de Gavroche" Darlay and Marot, L909 .
 
+115
 
 
-THIRTY-SIXTH SITUATION 
 
-LOSS OF LOVED ONES 
+116 THIRTY-SIX DRAMATIC SITUATIONS
 
-(A Kinsman Slain; a Kinsman Spectator; an 
-Executioner ) 
+To the invariably happy and epithalamic ending to
+our plays built upon this Situation, and to the fortuit-
+ous coincidences with which it has been too generously
+interlarded, I attribute the public's final weariness of
+it. For does not this Situation retain more naturalness
+than the Nineteenth, and how fecund has been that
+Nineteenth, whose charm and tempting variety is all
+possessed by our Thirty-Fifth!
 
-Here all is mourning. In long funeral processions we 
-see them pass, the heroes of this Situation; they move 
-from the dark home to the dark church, and from there 
-to the cemetery, returning only to weep by the hearth 
-until they leave it on the departure of another from 
-among them. 
 
-A (1) - Witnessing the Slaying of Kinsmen, 
-While Powerless to Prevent It: The "Niobe" and 
-"Troilus" of .Ks.-hylus; "Polyxena" and "The Captives" 
-of Sophocles; a part of his "Laocoon;" "The Troades" of 
-Euripides and of Seneca. 
 
-(2) Helping to Bring Misfortune Upon Ones 
-People Through Professional Secrecy: "Les B9.il- 
-lonnes" Mine. Terni, lw.i . 
+THIRTY-SIXTH SITUATION
 
-I'. Divining the Death of a Loved One: The 
+LOSS OF LOVED ONES
 
-Intruder" and 'The Seven Princesses" by Maeterlinck. 
-the one modern master of the Thirty-Sixth, and how 
-powerful a one! 
+(A Kinsman Slain; a Kinsman Spectator; an
+Executioner )
 
-(' Learning of the Death of a Kinsman or Ally: 
-Pari of the 'Tlhesus" attributed i<> Euripides; "Pen- 
-thesilea," "Pyschostase" and "The Death of Achilles" 
-by Eschylus; "The Ethiopians" of Sophocles. Here 
-added the difficull role of the messenger of misfor- 
-tune li" who bends beneath the imprecations of 
-Cleopatra, in Shakespeare. From comedy: "Cen1 
-1 .1 : . Emue " by Torquel . 
+Here all is mourning. In long funeral processions we
+see them pass, the heroes of this Situation; they move
+from the dark home to the dark church, and from there
+to the cemetery, returning only to weep by the hearth
+until they leave it on the departure of another from
+among them.
 
-117 
+A (1) - Witnessing the Slaying of Kinsmen,
+While Powerless to Prevent It: The "Niobe" and
+"Troilus" of .Ks.-hylus; "Polyxena" and "The Captives"
+of Sophocles; a part of his "Laocoon;" "The Troades" of
+Euripides and of Seneca.
 
+(2) Helping to Bring Misfortune Upon Ones
+People Through Professional Secrecy: "Les B9.il-
+lonnes" Mine. Terni, lw.i .
 
+I'. Divining the Death of a Loved One: The
 
-118 THIRTY-SIX DRAMATIC SITUATIONS 
+Intruder" and 'The Seven Princesses" by Maeterlinck.
+the one modern master of the Thirty-Sixth, and how
+powerful a one!
 
-D - Relapse into Primitive Baseness, through 
-Despair on Learning of the Death of a Loved One: 
+(' Learning of the Death of a Kinsman or Ally:
+Pari of the 'Tlhesus" attributed i<> Euripides; "Pen-
+thesilea," "Pyschostase" and "The Death of Achilles"
+by Eschylus; "The Ethiopians" of Sophocles. Here
+added the difficull role of the messenger of misfor-
+tune li" who bends beneath the imprecations of
+Cleopatra, in Shakespeare. From comedy: "Cen1
+1 .1 : . Emue " by Torquel .
 
-- "La Fille Sauvage" (Curel, 1902). 
+117
 
-But embody, in a human figure, the wrong, the mur- 
-der, which is abstract in most of these examples. Still 
-bound by his helplessness, how the unfortunate who is 
-made a spectator of the agony will struggle, appeal, 
-and vainly implore the heavens - the Victim, meantime, 
-humbly beseeching him who thus looks on in despair, 
-as though he had power to save. The haughty sar- 
-donic silhouette of the Executioner dominates the scene, 
-intensifying the keenness of the grief by his cynical 
-pleasure in it . Dante has conceived of no 
 
-sharper sorrow in the circles of his Inferno. 
 
+118 THIRTY-SIX DRAMATIC SITUATIONS
 
+D - Relapse into Primitive Baseness, through
+Despair on Learning of the Death of a Loved One:
 
-CONCLUSION 
+- "La Fille Sauvage" (Curel, 1902).
 
+But embody, in a human figure, the wrong, the mur-
+der, which is abstract in most of these examples. Still
+bound by his helplessness, how the unfortunate who is
+made a spectator of the agony will struggle, appeal,
+and vainly implore the heavens - the Victim, meantime,
+humbly beseeching him who thus looks on in despair,
+as though he had power to save. The haughty sar-
+donic silhouette of the Executioner dominates the scene,
+intensifying the keenness of the grief by his cynical
+pleasure in it . Dante has conceived of no
 
+sharper sorrow in the circles of his Inferno.
 
-To obtain the nuances of the Thirty-Six Situations, 
-I have had recourse almost constantly to the same 
-method of procedure; for example, I would enumerate 
-the ties of friendship or kinship possible between the 
-characters; I would determine also their degree of con- 
-sciousness, of free-will and knowledge of the real end 
-toward which they were moving. And we have seen 
-that when it is desired to alter the normal degree of 
-discernment in one of the two adversaries, the intro- 
-duction of a second character is necessary, the first 
-becoming the blind instrument of the second, who is at 
-the same time invested with a Machiavellian 'subtlety, 
-to such an extent does his part in the action become 
-purely intellectual. Thus, clear perception being in the 
-one case excessively diminished, it is, in the other, pro- 
-portionately increased. Another elemenl for modifying 
-all the situations is the energy of the acts which must 
-result from them. Murder, for instance, may be 
-reduced to a wound, a blow, an attempt, an outrage, an 
 
-intimidation, a threat, a too-hasty word, an intention 
-not carried out, a temptation, a thought, a wish, an in- 
-justice, a destruction of a cherished object , a refusal, 
 
-a want of pity, an abandonment, a falsehood. If the 
+CONCLUSION
 
-author so desires, this blow (murder or its diminutives) 
-may be aimed, not at the object of hatred in person, 
-bui at one dear to him. Finally, the murder may be 
-multiple and aggravated by circumstances which th< 
 
-law has foreseen. A third method of varying the sit- 
-uations: for this or that one of the two adversaries whose 
 
-itruggle constitutes our drama, there may he tubsti- 
+To obtain the nuances of the Thirty-Six Situations,
+I have had recourse almost constantly to the same
+method of procedure; for example, I would enumerate
+the ties of friendship or kinship possible between the
+characters; I would determine also their degree of con-
+sciousness, of free-will and knowledge of the real end
+toward which they were moving. And we have seen
+that when it is desired to alter the normal degree of
+discernment in one of the two adversaries, the intro-
+duction of a second character is necessary, the first
+becoming the blind instrument of the second, who is at
+the same time invested with a Machiavellian 'subtlety,
+to such an extent does his part in the action become
+purely intellectual. Thus, clear perception being in the
+one case excessively diminished, it is, in the other, pro-
+portionately increased. Another elemenl for modifying
+all the situations is the energy of the acts which must
+result from them. Murder, for instance, may be
+reduced to a wound, a blow, an attempt, an outrage, an
 
-119 
+intimidation, a threat, a too-hasty word, an intention
+not carried out, a temptation, a thought, a wish, an in-
+justice, a destruction of a cherished object , a refusal,
 
+a want of pity, an abandonment, a falsehood. If the
 
+author so desires, this blow (murder or its diminutives)
+may be aimed, not at the object of hatred in person,
+bui at one dear to him. Finally, the murder may be
+multiple and aggravated by circumstances which th<
 
-120 THIRTY-SIX DRAMATIC SITUATIONS 
+law has foreseen. A third method of varying the sit-
+uations: for this or that one of the two adversaries whose
 
-tuted a group of characters animated by a single desire, 
-each member of the group reflecting that desire under 
-a different light. There is, moreover (as I have already 
-shown), no Situation which may not be combined with 
-any one of its neighbors, nay, with two, three, four, 
-five, six of them and more! Now, these combinations 
-may be of many sorts; in" the first case, the situations 
-develop successively and logically one from another; 
-in the second case they dispose themselves in a dilemma, 
-in the midst of which hesitates the distracted hero; in 
-the third case, each one of them will appertain to a 
-particular group or a particular role; in the fourth, fifth, 
-sixth cases, etc., they are represented according to two, 
-or according to all three of the cases already brought 
-together in one situation, and together they escape from 
-it, but the majority of them fall therefrom into a posi- 
-tion not less critical, which may even offer but a choice 
-between two courses equally painful; after finding a 
-way between this Scylla and Charybdis, the very leap 
-by which they escape precipitates them into a final 
-Situation resulting from the preceding ones, and which 
-sweeps them all away together. . . This, be it 
-
-understood, is but one combination among a thousand, 
-for I cannot here elaborate the system by which this 
-study of the Thirty-Six Situations may be continued, 
-and by means of which they may be endlessly multi- 
-plied; that is a subject for a separate work upon the 
-"Laws of Literary Invention." 
-
-The composition or arrangement of the chosen Sit- 
-uations --and at the same time of the episodes and 
-characters introduced - - may be deduced in a manner 
-somewhat novel and interesting, from the same theory 
-of the "Thirty-Six." Considering, in effect, that "every dra- 
-matic situation springs from a conflict between two prin- 
-cipal directions of effort" (whence at the same time comes 
-our dread of the victor and our pity for the vanquished), 
-we shall have to choose, at the rising of the curtain, 
-between two beginnings; we must decide which of the 
-two adversaries pre-exists. This leads us infallibly to 
-make of the second the cause (innocent or responsible) 
-
-
-
-CONCLUSION 121 
-
-of the drama, since it is his appearance which will be the 
-signal for the struggle. The first, who especially enlists 
-our attention, is the Protagonist, already present in the 
-earliest Thespian tragedy, altogether lyric, descriptive 
-and analytic ; the second - - the obstacle arising or super- 
-vening - - is the Antagonist, that principle of the action 
-which we owe to the objective and Homeric genius of 
-iEschylus. One of two strongly opposing colors will 
-thus dominate the entire work, acording as we shall 
-choose, near the beginning, which of the two parties 
-shall possess the greater power, the greater chance of 
-victory. 
-
-Aristotle has taught us to distinguish between 
-"simple" tragedy (in which the superiority remains 
-upon the same side until the end, and in which, conse- 
-quently, there is no sudden change of fortune, no sur- 
-prise) and "complex" tragedy (the tragedy of surprise, 
-of vicissitude), wherein this superiority passes from 
-one camp to the other. Our dramatists have since 
-refined upon the latter; in those of their pieces which are 
-least complicated, they double the change of fortune, 
-thus leading ingeniously to the return of the opposed 
-powers, at the moment of the specta or's departure, to 
-the exact positions which they occupied when he entered 
-the hall; in their plays of complicated plot, they triple. 
-quadruple, quintuple the surprise, so long as their imag- 
-inations and the patience of the public will permit. We 
-thus see, in these vicissitudes of struggle, the first means 
-of varying a subject. It will not go very far, however, 
-since we cannot, however great our simplicity, receive 
-
-from the drama, or from life, more than one thousand 
-three hundred and thirty-two surprises. One thousand 
-three hundred and thirty-two? Obviously; what is 
-any keen surprise if not the passing from a state of 
-calm into a Dramatic Situation, or from one Situation 
-
-into another, or again into a state of calm? Perform 
-the multiplication; result, one thousand, three hundred 
-and thirty-two. 
-
-Shall we now inquire whence arise these vicissitudes, 
-these unexpected displacement ol equilibrium? Clearly 
-
-
-
-122 THIRTY-SIX DRAMATIC SITUATIONS 
-
-in some influence, proceeding from a material object, 
-a circumstance, or a third personage. Upon this Third 
-Actor - whose introduction into the drama was the 
-triumph of Sophocles -- must rest what is called the 
-Plot. He is the unforeseen element, the ideal striven 
-for by the two parties and the surrounding characters; 
-he is fantastically divided and multiplied, by two, by 
-three, by ten, by even more, to the point of encumbering 
-the scene; but he is always himself, always easily recog- 
-nizable. Some of his fragments become "Instruments," 
-some, "Disputed Objects," some, "Impelling Forces;" 
-they range themselves sometimes beside the Protagonist, 
-sometimes near the Antagonist, or, moving here and there, 
-they provoke that downfall the incessant avoidance of 
-which is called - - for events as for mankind - - Progress. 
-In this way they clearly show their origin - that "Role- 
-Lien" (Jocaste in "Seven Against Thebes," Sabine in 
-"Horace") under which the Third Actor was germinating 
-in iEschylean tragedy, without yet taking a positive 
-part in the action. 
-
-It will be seen that the appearance of these figures 
-of the second plan, these Choruses, Confidants, Crowds, 
-Clowns, even Figurants re-enforced by those of the 
-original groundwork, precursors whose importance 
-ranges from Tiresias to the Messenger of "Oedipus the 
-King," from prophet to porter, modifies most power- 
-fully the effect of the ensemble, especially if we reflect 
-that each one of these, considered separately, has his 
-own especial motives for action, motives soon appar- 
-ent in regard to the characters who surround him, in 
-some dramatic situation subordinate to the dominant 
-one, but none the less real; the turns and changes of 
-the general action will affect him in some particular 
-way, and the consequences, to him, of each vicissitude, 
-of each effort, of each act and denouement, contribute 
-to the spectator's final impression. If the Third Actor, 
-for instance, be a Disputed Object, it becomes neces- 
-sary to take into account his first and his last posses- 
-sor, the diverse relations which he has successively had 
-with them, and his own preferences. If he appear as 
-Inspirer or Instigator, we must consider (aside from 
-
-
-
-CONCLUSION 123 
-
-his degree of consciousness or unconsciousness, of frank- 
-ness or dissimulation, and of Will proper) the persever- 
-ance which he brings to his undertaking; if he be uncon- 
-scious, the discovery which he may make of his own 
-unconsciousness; if he be a deceiver, the discoveries 
-which others may make of his dissimulation ("others" 
-here meaning perhaps a single character, perhaps the 
-spectator). These remarks also apply to the "Instru- 
-mental" role; and not alone these remarks, but those 
-also which concern the "Object," are applicable to the 
-Role-Lien. 
-
-I have already observed that this last role, and the 
-triple hypostasis of the Third Actor, may be repro- 
-duced in numerous exemplars within one play. On the 
-other hand, two, three, or all four of them may be fused 
-in a single figure, (Lien- Instrumental, Object-Instigator, 
-Instrument-Lien-Object, etc.), combinations which pre- 
-sent themselves, like the combinations of the Situations, 
-already considered, in varied array. Sometimes the 
-hero who unites in himself these divers roles plays them 
-simultaneously -- perhaps all of them toward an indi- 
-vidual or group, perhaps one or several of them toward 
-an individual or group, and another role wherein these 
-roles mingle, toward some other individual or group; 
-sometimes these various roles will be successively played 
-toward the same individual or group, or toward several; 
-sometimes, finally, the hero plays these roles now simul- 
-taneously, and again successively. 
-
-Bui it is not possible to detail in these pages, even 
-if I so desired, the second pari of the An of Combina- 
-tion; thai which we in Prance call by the Bomewhal 
-feeble term as Goethe remarked) "composition." All 
-that I have here undertaken to show is, first, thai :i 
-single study must create, al the same time, the epi- 
-sodes or actions of the characters, and the charactei 
-themselves: for upon the stage, what the latter are 
-may be known only by what tney do; next, how inven- 
-tion and composition, those two modes of the Ait ot 
-Combination not Imagination, empty word! will, 
-
-
-
-124 THIRTY-SIX DRAMATIC SITUATIONS 
-
-in our works to come, spring easily and naturally from 
-the theory of the Thirty-Six Situations. 
-
-Thus, from the first edition of this little book, I might 
-offer (speaking not ironically but seriously) to dramatic 
-authors and theatrical managers, ten thousand scen- 
-arios, totally different from those used repeatedly upon 
-our stage in the last fifty years ****** 
-"The scenarios will be, needless to say, of a realistic 
-and effective character. I will contract to deliver a 
-thousand in eight days. For the production of a single 
-gross, but twenty-four hours are required. Prices 
-quoted on single dozens. Write or call, No. 19, Passage 
-de l'Elysee des Beaux-Arts. The Situations will be 
-detailed act by act, and, if desired, scene by scene" 
-
-But I hear myself accused, with much violence, of an 
-intent to "kill imagination." "Enemy of fancy!" "De- 
-stroyer of wonders!" "Assassin of prodigy!" * * * 
-These and similar titles cause me not a blush. 
-
-A singular history, in truth, is that of the "Imagi- 
-nation." Certainly no one in classic times thought of 
-priding himself upon it. Far from it! Every novelty 
-on its first appearance, hastened to support itself by 
-appeal to some antique authority. From 1830 dates 
-the accession to the literary throne of this charlatan- 
-esque "faculty," analysis of which is, it would seem, 
-eternally interdicted. The results of this new regime 
-were not slow in appearing, and they may be seen, in 
-their final decay, among the last successors of ultra- 
-romantic Romanticism. Mysterious crime, judicial error, 
-followed by the inevitable love affair between the chil- 
-dren of slayer and victim; a pure and delicate work- 
-ing-girl in her tiny room, a handsome young engineer 
-who passes by; a kind-hearted criminal, two police 
-spies, the episode of the stolen child; and in conclu- 
-sion, for the satisfaction of sentimental souls, a double 
-love-match at the very least, and a suicide imposed 
-upon the villain - this, one year with another, is the 
-product of the Imagination. For the rest, in the whole 
-
-
-
-CONCLUSION 125 
-
-field of dramatic romanticism (which corresponds so 
-well to the Carrache school of painting) Hugo alone has 
-created, thanks to what? - - to a technical process 
-patiently applied to the smallest details, - - the antithesis 
-of Being and of Seeming. 
-
-One vigorous blow was, for the moment, given to 
-this legend of the Imagination by Positivism, which 
-asserted that this so-called creative faculty was merely 
-the kaleidoscope of our memories, stirred by chance. 
-But it did not sufficiently insist upon the inevitably 
-banal and monotonous results of these chance stirrings, 
-some of our memories - - precisely those least interest- 
-ing and least personal -- repeat ing themselves a thou- 
-sand times in our minds, returning mercilessly in all 
-manner of methodless combinations. These souvenirs 
-of innumerable readings of the products of imitation 
-in our neo-classic and Romantic past, envelope and 
-overwhelm us unless we turn to that observation of 
-nature which was pointed out by the Naturalists' initia- 
-tive as an element of renovation. Even the Naturalists 
-themselves have too often viewed reality athwart their 
-bookish recollections; they have estimated too highly 
-the power of the artistic temperament, however vig- 
-orous it may be, in assuming that it could interpose 
-itself, alone and stripped of all convention, by a simple 
-effort of will, between Nature and the literary product 
-to be engendered. Thus "La Bfite Humaine" has 
-repeated the "judicial error" in thai special form which 
-is as common in books as il is rare in life; thus the starting- 
-point of "L'CEuvre" is merely the converse of the "thesis" 
-
-of the GonCOUllS and l);uie|et; thus reminiscences of 
-
-"Madame Bovary" appear in many a study of similar 
-which should, nevertheless, remain quite distinct; 
-and thus has appeared, in the Becond generation 
-of "nat uralisti ." ;i new school of imitators and tradi- 
-tional! 
-
-And all the old marionettes have reappeared, inflated 
-
-with philosophic and poetic amplifications, but too 
-
-often empty of symbolism, as of naturalism and 
-humanism. 
-
-
-
-L26 THIRTY-SIX DRAMATIC SITUATIONS 
-
-As to the methods of the Art of Combining, the truth 
-may be grasped by one bold look, one triumphant glance 
-at all these phantoms of trite thought, as they stand 
-in their respective places in the foregoing categories. 
-Any writer may have here a starting-point for observa- 
-tion and creation, outside the world of paper and print, 
-a starting-point personal to himself, original in short, — 
-which does not in the least mean improbable or uncon- 
-vincing, since many stituations which have today an 
-appearance of improbablity have merely been disfigured 
-by persons who, not knowing how to create new ones, 
-have complicated the old, entangling themselves in 
-their own threads. 
-
-Especially will the invention of an unusual story, 
-the discovery of a "virgin field," (to use the naturalists' 
-term) be made so easy as to be almost valueless. We 
-are not unaware of the importance, in the perfecting of 
-Greek art, of the fact that it was circumscribed and 
-restricted to a small number of legends (CEdipus, 
-Agamemnon, Phaedra, etc.,), which each poet had in 
-his turn to treat, thus being unable to escape compari- 
-son, step by step, with each of his predecessors, so that 
-even the least critical of spectators could see what part 
-his personality and taste had in the new work. The 
-worst which may be said of this tradition is that it ren- 
-dered originality more difficult. By a study of the 
-Thirty-Six Situations and their results, the same advan- 
-tage may be obtained without its accompanying incon- 
-venience. Thenceforth Proportion alone will assume 
-significance. 
-
-By proportion I mean, not a collection of measured 
-formulae which evoke familiar memories, but the 
-bringing into battle, under command of the writer, of 
-the infinite army of possible combinations, ranged accord- 
-ing to their probabilities. Thus, to make manifest 
-the truth or the impression which, until now, has been 
-perceptible to him alone, the author will have to over- 
-look in a rapid review the field before him, and to choose 
-such of the situations and such of the details as are 
-most appropriate to his purpose. This method — or, 
-
-
-
-CONCLUSION 127 
-
-if you will, this freedom and this power - - he will use, 
-not only in the choice, the limitation and fertilization 
-of his subject, but in his observation and meditation. 
-And he will no more run the risk of falsifying, through 
-pre-conceived ideas, the vision of reality than does the 
-painter, for example, in his application of laws equally 
-general, and likewise controlled by constant experi- 
-mentation, — the divine laws of perspective! 
-
-Proportion, finally realizable in the calm bestowed by 
-complete possession of the art of combining, and recov- 
-ering the supreme power long ago usurped by "good 
-taste" and by "imagination," will bring about the recog- 
-nition of that quality more or less forgotten in modern 
-art, - "beauty." By this I mean, not the skilful 
-selection of material from nature, but the skilful and 
-exact representation -with no groping, no uncertainly, 
-no retention of superfluities -of the particular bit of 
-nature under observation. 
-
-But it is more than this, for these two definitions, 
-the eclectic and the naturalist, concern but a limited 
-number of the arts, and but one side of them; thai 
-small number to which imitation is open (painting, 
-literature of character, and, in a limited way, sculp- 
-ture), and that side of them which is purely imitative. 
-What sijmificanee have these two definitions (both of 
-which real upon the reproduction of reality, the one 
-exalting and the other belittling it) if they be eon- 
-fronted with Music, with the didactic poetry of a Hesiod, 
-with the Vedic incantations, with true statuary, simpli- 
-fied and significant , from the mighty chisel-strokes of 
-Phidias or of the XIII Century, With purely ornamental 
-
-or decorative art, 'he "beauty" of ;i demonstration 
-
-in geometry, or finally with Architecture, now reviv- 
-ing in silence and obscurity, that arl which comes periodi- 
-cally i" reunite and, like an ark, to rescue the others, 
-
-that art which shall once more return to lead us away 
-
-from the prematurely senile follies of our delettanti 
-and sectarians. 
-
-Upon ;i like heighl stands a principle greater than 
-
-Naturalism with its experimental method, or Ideal- 
-ism which gives battle to it, Logic. 
-
-
-
-128 THIRTY-SIX DRAMATIC SITUATIONS 
-
-It is by methods of logic that Viollet-le-Duc has 
-enabled us to estimate truly the marvels of our "grand 
-siecle," the XIII Century, substituting (to cite only 
-this) for the simple admiration of 1830 before each 
-stone saint so "picturesquely" perched upon the point 
-of an ogive, the builders' explanation: that a stone of 
-the exact weight and dimensions of the saint was there 
-absolutely necessary, to prevent the breaking of the 
-ogive under a double lateral pressure, - - whence the 
-instinctive satisfaction it gives our eyes. It is a great 
-misfortune that the understanding of that magnificent 
-age in which a Saint Louis presided over the multiple 
-communal life, an age whose only equal in the world's 
-history is that in which Pericles directed, from the 
-Athenian metropolis, an identical movement, - - that 
-this understanding, which would be so useful to us, 
-should have been horribly compromised in the Roman- 
-tic carnival. Hugo's "Notre-Dame de Paris," wherein 
-the public believed it beheld a portrait of our 
-"Moyen-age" (a most absurd appellation, by the way), 
-represents it, by a singular choice, as already long dead, 
-
-after the Hundred Years' War which bled us to the 
-point where we fell, passive and defenseless, under the 
-domination of the Florentine national art called 
-"renaissant," and then of various other influences, 
-ancient and foreign, during four centuries. And, down 
-to the very moment at which I write, the literary pro- 
-ductions upon the subject of this most incomparable 
-period of our past have been but pitiable affairs. But 
-yesterday, a Renan was writing of ogival art as an 
-effort which had been impotent ("Souvenirs d'Enfance 
-et de Jeunesse") or which at most had fathered works 
-of no enduring character ("Priere sur l'Acrople"); the 
-very Catholic Huysmans, in his "En Route," was mak- 
-ing the most astounding salad of Roman vaulting, 
-Primitive painting, Gregorian plain-chant, - - a salad 
-whose recipe is "the Faith" and which is called, natur- 
-ally, the "Moyen-age," that age which embraces ten 
-centuries of humanity, plus one-third of humanity's 
-authentic history, three epochs strongly antagonistic 
-to each other, peoples widely diverse and opposed; a 
-
-
-
-CONCLUSION 129 
-
-something equivalent to a marriage between Alcibiades 
-and Saint Genevieve. 
-
-The "Moyen-age," or, to speak more accurately, the 
-XII, XIII, and XIV Centuries, were not in the least 
-fantastic and freakish; this is the character merely of 
-an occasional generation, such as that of Louis- 
-Philippe. Neither were they mystic, in the present 
-sense of that word. The architecture of those cen- 
-turies grew, stone by stone, plan by plan, out of the 
-most practical of reasons. In their sculpture there 
-was nothing "naive" -the naivete is ours, when we so 
-estimate that sculpture, which is far more realistic than 
-our own; and if, persisting in the contrary opinion, we 
-cling to the weird forms of the gargoyles, it may be 
-said that, born of a symbolism akin to those of Egypt 
-and Greece, they represent analogies equally ingen- 
-ious and profound. In this period arose Thomism, 
-lately called back into a position of honor to combat 
-Positivism, and which realized so happy a harmony 
-between Aristotelianism and Christian faith, between 
-science and theology. In this period, too, were born 
-the natural sciences, and, in the minds of its poets, 
-evolved the laws by which our poetry lives today, tho.se 
-rhythms which through Ronsard we still hear, that 
-Rhyme which we gave to all Europe, and, ;it the 
-same lime, thy groined vaultings, () Utile town of Saint - 
-Denis, suzerain oriflamme, pilot-barque of France! All 
-these were born, and grew, beneath the grave gaze of 
-
-the same wisdom which, on the Ionian shores, was called 
-Athene. 
-
-Toward a new aspect of the same logic OUT own age 
-already turns, since, having drunk of that antiquity by 
-
-whose forces We ruleol KiU'ope a second time in the 
-XVII Century; having drunk of the laiest of great 
-
-foreign influence-, the Germanic, we .ire returning to 
-reality and to 'he future. Thus, when each Greek 
-
-city had absorbed the neighboring local cults its "foreign 
-
-influences") and the Oriental cults the antiquity" 
-of that day , the most beautiful of mythologies were 
-formed. It i . al least, toward an art purely logical, 
-
-
-
-L30 THIRTY-SIX DRAMATIC SITUATIONS 
-
-purely technical, and of infinitely varied creations, 
-that all our literary tendencies seem to me to be con- 
-verging. In that direction proceed Flaubert and Zola, 
-those rugged pinoeers, Ibsen, Strindberg, and all writers 
-deliberately unmindful of their libraries, as the Hellenes 
-were of barbarian literature; there moves Maeterlinck, 
-having reduced action to the development of a single 
-idea; Verlaine, delivering from conventional rules true 
-rhythm, which makes for itself its own rules; Mallarm£, 
-prince of ellipse, clarifying syntax and expelling clouds 
-of our little parasite words and tattered formulae; in 
-that direction Moreas calls us, but without freeing 
-himself, unfortunately, from the Italianism of our so- 
-called Renaissance; all these, and others not less glorious, 
-a whole new generation springing up, futurists, "loups," 
-cubists, seem to me to be seeking the same goal, the 
-final abolition of all absolute authority, even that of 
-Nature and of our sciences her interpreters; and the 
-erection upon its debris of simple logic, of an art solely 
-technical, and thus capable of revealing an unknown 
-system of harmony; in brief, an artists' art. 
-
-In literature, in dramatic literature which is the 
-special subject of our consideration, the investigation 
-of Proportion of which I have above spoken will show 
-us the various "general methods" of presenting any 
-situation whatever. Each one of these "general 
-methods," containing a sort of canon applicable to all 
-situations, will constitute for us an "order" analogous 
-to the orders of architecture, and which, like them, 
-will take its place with other orders, in a dramatic 
-"system." But the systems, in their turn, will come 
-together under certain rubrics yet more general, com- 
-parisons of which will furnish us many a subject for 
-reflection. In that which we might call Enchantment, 
-there meet, oddly enough, systems as far apart in origin 
-as Indian drama; certain comedies of Shakespeare ("A 
-Midsummer Night's Dream;" "The Tempest"), the 
-"fiabesque" genre of Gozzi, and "Faust;" the Mystery 
-brings together the works of Persia, Thespis and the 
-pre-Aeschyleans, "Prometheus," the book of "Job," 
-
-
-
-CONCLUSION 131 
-
-the stage of the tragic Ezekiel, of Saint Gregory Nazian- 
-zen, of Hroswitha, the Jeux and Miracles of our XIII 
-Century, the Autos; here, Greek tragedy and the psy- 
-chologists' imitations of it; there, English, German and 
-French drama of 1830; still nearer, the type of piece 
-which from the background of China, through Lope and 
-Calderon, Diderot and Geothe, has come to cover our 
-stage today. 
-
-It will be remembered that, when we were catalogu- 
-ing dramatic production in its thirty-six classes, an 
-assiduous effort to establish, for every exceptional case 
-found in one of them, symmetrical cases in the other 
-thirty-five caused unforseen subjects to spring up under 
-our very feet. Likewise, when we shall have analyzed 
-these orders, systems and groups of systems, when 
-we shall have measured with precision their resem- 
-blances and their differences, and classified them, or, 
-one by one, according to the questions considered, shall 
-have brought them together or separated them, - we 
-shall necessarily remark that numerous combinations 
-have been forgotten. Among these the New Art will 
-choose. 
-
-Would that I might be able to place the first, the 
-obscurest foundation-stone of its gigantic citadel! 
-There, drawing about her the souls of the poets, the 
-Muse shall rise before this audience re-assembled from 
-ancient temples, before these peoples who gathered of 
-yore around Herodotus and Pindar; she will speak the 
-new language 'he Dramatic ;i language too lofty 
-for the comprehension of the single soul, however great 
-it be, a language not of words but of thrills, such as 
-that spoken to armies, a language in truth addressed 
-
-to thee, BaCChU . dispenser of glory, soul of crowds, 
-
-delirium of races, ab tract, but One and Eternal! Not 
-in one of our parlor-like pasteboard reductions of the 
-Roman demi-circua will this come to pass, but upon b 
-sort of mountain, Hooded with light and air, raised, 
-thanks to our conquest of iron added t<> the construe- 
-tive experience of tne Middle Ages; offered to the nation 
-by those who have -till held to the vanity of riches, 
-
-
-
-132 THIRTY-SIX DRAMATIC SITUATIONS 
-
-- a greater thing than the theatre of Dionysos where 
-gathered thirty thousand people, greater than that of 
-Ephesus wherein sat, joyous, a hundred and fifty thou- 
-sand spectators, an immense orifice-like crater in which 
-the earth seems to encompass the very heavens. 
-
-
-
-ALPHABETICAL INDEX 
-
-Of the Plays, Novels, Etc., Classified in the Situations 
-
-of this Work 
-
-
-
-Abbe Constantin (The), by L. Halevy WYIII 
-Abduction of Helen (The), by Lope de Vega X 
-
-Abduction of Helen (The), by Sophocles X 
-
-Abhirama mani, by Soundara Misra X 
-
-Abraham, by the Abbess Hroswitha XX 
-
-Absente (L'), by Yillemer XXVII 
+itruggle constitutes our drama, there may he tubsti-
 
-Abufar, by Ducis XVIII 
+119
 
-Achilles in Scyros, by Metastasio XX 
 
-Adelaide Duguesclin, by Voltaire XIV 
 
-Adelghis, by Manzoni \ 
+120 THIRTY-SIX DRAMATIC SITUATIONS
 
-Adrien, by Metastasio XXIV 
+tuted a group of characters animated by a single desire,
+each member of the group reflecting that desire under
+a different light. There is, moreover (as I have already
+shown), no Situation which may not be combined with
+any one of its neighbors, nay, with two, three, four,
+five, six of them and more! Now, these combinations
+may be of many sorts; in" the first case, the situations
+develop successively and logically one from another;
+in the second case they dispose themselves in a dilemma,
+in the midst of which hesitates the distracted hero; in
+the third case, each one of them will appertain to a
+particular group or a particular role; in the fourth, fifth,
+sixth cases, etc., they are represented according to two,
+or according to all three of the cases already brought
+together in one situation, and together they escape from
+it, but the majority of them fall therefrom into a posi-
+tion not less critical, which may even offer but a choice
+between two courses equally painful; after finding a
+way between this Scylla and Charybdis, the very leap
+by which they escape precipitates them into a final
+Situation resulting from the preceding ones, and which
+sweeps them all away together. . . This, be it
 
-Aedonians The by Aeschylus \XX1 
+understood, is but one combination among a thousand,
+for I cannot here elaborate the system by which this
+study of the Thirty-Six Situations may be continued,
+and by means of which they may be endlessly multi-
+plied; that is a subject for a separate work upon the
+"Laws of Literary Invention."
 
-Aegeus, by Guripidi X 1 \ 
+The composition or arrangement of the chosen Sit-
+uations --and at the same time of the episodes and
+characters introduced - - may be deduced in a manner
+somewhat novel and interesting, from the same theory
+of the "Thirty-Six." Considering, in effect, that "every dra-
+matic situation springs from a conflict between two prin-
+cipal directions of effort" (whence at the same time comes
+our dread of the victor and our pity for the vanquished),
+we shall have to choose, at the rising of the curtain,
+between two beginnings; we must decide which of the
+two adversaries pre-exists. This leads us infallibly to
+make of the second the cause (innocent or responsible)
 
-Aetius, by Metai tasio XXXIII 
 
-Affaire Clernenceau 1/ , by Duma- lils XXV 
-Allaire de La rue de Lourcine L 1 . by LabicheXVl 
 
-Affaire dei Poit oi l.' , by Sardou XX XI II 
+CONCLUSION 121
 
-Affaires sonl le Affaires Les . by Mirbeau XXVII 
+of the drama, since it is his appearance which will be the
+signal for the struggle. The first, who especially enlists
+our attention, is the Protagonist, already present in the
+earliest Thespian tragedy, altogether lyric, descriptive
+and analytic ; the second - - the obstacle arising or super-
+vening - - is the Antagonist, that principle of the action
+which we owe to the objective and Homeric genius of
+iEschylus. One of two strongly opposing colors will
+thus dominate the entire work, acording as we shall
+choose, near the beginning, which of the two parties
+shall possess the greater power, the greater chance of
+victory.
 
-Agamemnon, by Aeschj \ V 
+Aristotle has taught us to distinguish between
+"simple" tragedy (in which the superiority remains
+upon the same side until the end, and in which, conse-
+quently, there is no sudden change of fortune, no sur-
+prise) and "complex" tragedy (the tragedy of surprise,
+of vicissitude), wherein this superiority passes from
+one camp to the other. Our dramatists have since
+refined upon the latter; in those of their pieces which are
+least complicated, they double the change of fortune,
+thus leading ingeniously to the return of the opposed
+powers, at the moment of the specta or's departure, to
+the exact positions which they occupied when he entered
+the hall; in their plays of complicated plot, they triple.
+quadruple, quintuple the surprise, so long as their imag-
+inations and the patience of the public will permit. We
+thus see, in these vicissitudes of struggle, the first means
+of varying a subject. It will not go very far, however,
+since we cannot, however great our simplicity, receive
 
-Agathocle, by Voltaire \I\' 
+from the drama, or from life, more than one thousand
+three hundred and thirty-two surprises. One thousand
+three hundred and thirty-two? Obviously; what is
+any keen surprise if not the passing from a state of
+calm into a Dramatic Situation, or from one Situation
 
-A nave, by Si XXXI 
+into another, or again into a state of calm? Perform
+the multiplication; result, one thousand, three hundred
+and thirty-two.
 
-Age Critique L . bj I XXV 
+Shall we now inquire whence arise these vicissitudes,
+these unexpected displacement ol equilibrium? Clearly
 
-ili . by ' lorneille X X IV 
 
-by \ilieri Mil 
 
-Agnimitra and Malavika, by Kale! \\l\ 
+122 THIRTY-SIX DRAMATIC SITUATIONS
 
-Aiglon I.' . by Rostand \ 1 1 
+in some influence, proceeding from a material object,
+a circumstance, or a third personage. Upon this Third
+Actor - whose introduction into the drama was the
+triumph of Sophocles -- must rest what is called the
+Plot. He is the unforeseen element, the ideal striven
+for by the two parties and the surrounding characters;
+he is fantastically divided and multiplied, by two, by
+three, by ten, by even more, to the point of encumbering
+the scene; but he is always himself, always easily recog-
+nizable. Some of his fragments become "Instruments,"
+some, "Disputed Objects," some, "Impelling Forces;"
+they range themselves sometimes beside the Protagonist,
+sometimes near the Antagonist, or, moving here and there,
+they provoke that downfall the incessant avoidance of
+which is called - - for events as for mankind - - Progress.
+In this way they clearly show their origin - that "Role-
+Lien" (Jocaste in "Seven Against Thebes," Sabine in
+"Horace") under which the Third Actor was germinating
+in iEschylean tragedy, without yet taking a positive
+part in the action.
 
-Aiu • oir qui, by Lope de \ • XIV 
+It will be seen that the appearance of these figures
+of the second plan, these Choruses, Confidants, Crowds,
+Clowns, even Figurants re-enforced by those of the
+original groundwork, precursors whose importance
+ranges from Tiresias to the Messenger of "Oedipus the
+King," from prophet to porter, modifies most power-
+fully the effect of the ensemble, especially if we reflect
+that each one of these, considered separately, has his
+own especial motives for action, motives soon appar-
+ent in regard to the characters who surround him, in
+some dramatic situation subordinate to the dominant
+one, but none the less real; the turns and changes of
+the general action will affect him in some particular
+way, and the consequences, to him, of each vicissitude,
+of each effort, of each act and denouement, contribute
+to the spectator's final impression. If the Third Actor,
+for instance, be a Disputed Object, it becomes neces-
+sary to take into account his first and his last posses-
+sor, the diverse relations which he has successively had
+with them, and his own preferences. If he appear as
+Inspirer or Instigator, we must consider (aside from
 
-and XXXIII 
 
-Ajaa iphocle X \ I 
 
-Ajax Locrian, bj XXXI 
+CONCLUSION 123
 
-1 : ; 
+his degree of consciousness or unconsciousness, of frank-
+ness or dissimulation, and of Will proper) the persever-
+ance which he brings to his undertaking; if he be uncon-
+scious, the discovery which he may make of his own
+unconsciousness; if he be a deceiver, the discoveries
+which others may make of his dissimulation ("others"
+here meaning perhaps a single character, perhaps the
+spectator). These remarks also apply to the "Instru-
+mental" role; and not alone these remarks, but those
+also which concern the "Object," are applicable to the
+Role-Lien.
 
+I have already observed that this last role, and the
+triple hypostasis of the Third Actor, may be repro-
+duced in numerous exemplars within one play. On the
+other hand, two, three, or all four of them may be fused
+in a single figure, (Lien- Instrumental, Object-Instigator,
+Instrument-Lien-Object, etc.), combinations which pre-
+sent themselves, like the combinations of the Situations,
+already considered, in varied array. Sometimes the
+hero who unites in himself these divers roles plays them
+simultaneously -- perhaps all of them toward an indi-
+vidual or group, perhaps one or several of them toward
+an individual or group, and another role wherein these
+roles mingle, toward some other individual or group;
+sometimes these various roles will be successively played
+toward the same individual or group, or toward several;
+sometimes, finally, the hero plays these roles now simul-
+taneously, and again successively.
 
+Bui it is not possible to detail in these pages, even
+if I so desired, the second pari of the An of Combina-
+tion; thai which we in Prance call by the Bomewhal
+feeble term as Goethe remarked) "composition." All
+that I have here undertaken to show is, first, thai :i
+single study must create, al the same time, the epi-
+sodes or actions of the characters, and the charactei
+themselves: for upon the stage, what the latter are
+may be known only by what tney do; next, how inven-
+tion and composition, those two modes of the Ait ot
+Combination not Imagination, empty word! will,
 
-A 
 
 
-2 
+124 THIRTY-SIX DRAMATIC SITUATIONS
 
+in our works to come, spring easily and naturally from
+the theory of the Thirty-Six Situations.
 
-B 
+Thus, from the first edition of this little book, I might
+offer (speaking not ironically but seriously) to dramatic
+authors and theatrical managers, ten thousand scen-
+arios, totally different from those used repeatedly upon
+our stage in the last fifty years ******
+"The scenarios will be, needless to say, of a realistic
+and effective character. I will contract to deliver a
+thousand in eight days. For the production of a single
+gross, but twenty-four hours are required. Prices
+quoted on single dozens. Write or call, No. 19, Passage
+de l'Elysee des Beaux-Arts. The Situations will be
+detailed act by act, and, if desired, scene by scene"
 
+But I hear myself accused, with much violence, of an
+intent to "kill imagination." "Enemy of fancy!" "De-
+stroyer of wonders!" "Assassin of prodigy!" * * *
+These and similar titles cause me not a blush.
+
+A singular history, in truth, is that of the "Imagi-
+nation." Certainly no one in classic times thought of
+priding himself upon it. Far from it! Every novelty
+on its first appearance, hastened to support itself by
+appeal to some antique authority. From 1830 dates
+the accession to the literary throne of this charlatan-
+esque "faculty," analysis of which is, it would seem,
+eternally interdicted. The results of this new regime
+were not slow in appearing, and they may be seen, in
+their final decay, among the last successors of ultra-
+romantic Romanticism. Mysterious crime, judicial error,
+followed by the inevitable love affair between the chil-
+dren of slayer and victim; a pure and delicate work-
+ing-girl in her tiny room, a handsome young engineer
+who passes by; a kind-hearted criminal, two police
+spies, the episode of the stolen child; and in conclu-
+sion, for the satisfaction of sentimental souls, a double
+love-match at the very least, and a suicide imposed
+upon the villain - this, one year with another, is the
+product of the Imagination. For the rest, in the whole
+
+
+
+CONCLUSION 125
+
+field of dramatic romanticism (which corresponds so
+well to the Carrache school of painting) Hugo alone has
+created, thanks to what? - - to a technical process
+patiently applied to the smallest details, - - the antithesis
+of Being and of Seeming.
+
+One vigorous blow was, for the moment, given to
+this legend of the Imagination by Positivism, which
+asserted that this so-called creative faculty was merely
+the kaleidoscope of our memories, stirred by chance.
+But it did not sufficiently insist upon the inevitably
+banal and monotonous results of these chance stirrings,
+some of our memories - - precisely those least interest-
+ing and least personal -- repeat ing themselves a thou-
+sand times in our minds, returning mercilessly in all
+manner of methodless combinations. These souvenirs
+of innumerable readings of the products of imitation
+in our neo-classic and Romantic past, envelope and
+overwhelm us unless we turn to that observation of
+nature which was pointed out by the Naturalists' initia-
+tive as an element of renovation. Even the Naturalists
+themselves have too often viewed reality athwart their
+bookish recollections; they have estimated too highly
+the power of the artistic temperament, however vig-
+orous it may be, in assuming that it could interpose
+itself, alone and stripped of all convention, by a simple
+effort of will, between Nature and the literary product
+to be engendered. Thus "La Bfite Humaine" has
+repeated the "judicial error" in thai special form which
+is as common in books as il is rare in life; thus the starting-
+point of "L'CEuvre" is merely the converse of the "thesis"
+
+of the GonCOUllS and l);uie|et; thus reminiscences of
+
+"Madame Bovary" appear in many a study of similar
+which should, nevertheless, remain quite distinct;
+and thus has appeared, in the Becond generation
+of "nat uralisti ." ;i new school of imitators and tradi-
+tional!
+
+And all the old marionettes have reappeared, inflated
+
+with philosophic and poetic amplifications, but too
+
+often empty of symbolism, as of naturalism and
+humanism.
+
+
+
+L26 THIRTY-SIX DRAMATIC SITUATIONS
+
+As to the methods of the Art of Combining, the truth
+may be grasped by one bold look, one triumphant glance
+at all these phantoms of trite thought, as they stand
+in their respective places in the foregoing categories.
+Any writer may have here a starting-point for observa-
+tion and creation, outside the world of paper and print,
+a starting-point personal to himself, original in short, —
+which does not in the least mean improbable or uncon-
+vincing, since many stituations which have today an
+appearance of improbablity have merely been disfigured
+by persons who, not knowing how to create new ones,
+have complicated the old, entangling themselves in
+their own threads.
+
+Especially will the invention of an unusual story,
+the discovery of a "virgin field," (to use the naturalists'
+term) be made so easy as to be almost valueless. We
+are not unaware of the importance, in the perfecting of
+Greek art, of the fact that it was circumscribed and
+restricted to a small number of legends (CEdipus,
+Agamemnon, Phaedra, etc.,), which each poet had in
+his turn to treat, thus being unable to escape compari-
+son, step by step, with each of his predecessors, so that
+even the least critical of spectators could see what part
+his personality and taste had in the new work. The
+worst which may be said of this tradition is that it ren-
+dered originality more difficult. By a study of the
+Thirty-Six Situations and their results, the same advan-
+tage may be obtained without its accompanying incon-
+venience. Thenceforth Proportion alone will assume
+significance.
+
+By proportion I mean, not a collection of measured
+formulae which evoke familiar memories, but the
+bringing into battle, under command of the writer, of
+the infinite army of possible combinations, ranged accord-
+ing to their probabilities. Thus, to make manifest
+the truth or the impression which, until now, has been
+perceptible to him alone, the author will have to over-
+look in a rapid review the field before him, and to choose
+such of the situations and such of the details as are
+most appropriate to his purpose. This method — or,
+
+
+
+CONCLUSION 127
+
+if you will, this freedom and this power - - he will use,
+not only in the choice, the limitation and fertilization
+of his subject, but in his observation and meditation.
+And he will no more run the risk of falsifying, through
+pre-conceived ideas, the vision of reality than does the
+painter, for example, in his application of laws equally
+general, and likewise controlled by constant experi-
+mentation, — the divine laws of perspective!
+
+Proportion, finally realizable in the calm bestowed by
+complete possession of the art of combining, and recov-
+ering the supreme power long ago usurped by "good
+taste" and by "imagination," will bring about the recog-
+nition of that quality more or less forgotten in modern
+art, - "beauty." By this I mean, not the skilful
+selection of material from nature, but the skilful and
+exact representation -with no groping, no uncertainly,
+no retention of superfluities -of the particular bit of
+nature under observation.
+
+But it is more than this, for these two definitions,
+the eclectic and the naturalist, concern but a limited
+number of the arts, and but one side of them; thai
+small number to which imitation is open (painting,
+literature of character, and, in a limited way, sculp-
+ture), and that side of them which is purely imitative.
+What sijmificanee have these two definitions (both of
+which real upon the reproduction of reality, the one
+exalting and the other belittling it) if they be eon-
+fronted with Music, with the didactic poetry of a Hesiod,
+with the Vedic incantations, with true statuary, simpli-
+fied and significant , from the mighty chisel-strokes of
+Phidias or of the XIII Century, With purely ornamental
+
+or decorative art, 'he "beauty" of ;i demonstration
+
+in geometry, or finally with Architecture, now reviv-
+ing in silence and obscurity, that arl which comes periodi-
+cally i" reunite and, like an ark, to rescue the others,
+
+that art which shall once more return to lead us away
+
+from the prematurely senile follies of our delettanti
+and sectarians.
+
+Upon ;i like heighl stands a principle greater than
+
+Naturalism with its experimental method, or Ideal-
+ism which gives battle to it, Logic.
+
+
+
+128 THIRTY-SIX DRAMATIC SITUATIONS
+
+It is by methods of logic that Viollet-le-Duc has
+enabled us to estimate truly the marvels of our "grand
+siecle," the XIII Century, substituting (to cite only
+this) for the simple admiration of 1830 before each
+stone saint so "picturesquely" perched upon the point
+of an ogive, the builders' explanation: that a stone of
+the exact weight and dimensions of the saint was there
+absolutely necessary, to prevent the breaking of the
+ogive under a double lateral pressure, - - whence the
+instinctive satisfaction it gives our eyes. It is a great
+misfortune that the understanding of that magnificent
+age in which a Saint Louis presided over the multiple
+communal life, an age whose only equal in the world's
+history is that in which Pericles directed, from the
+Athenian metropolis, an identical movement, - - that
+this understanding, which would be so useful to us,
+should have been horribly compromised in the Roman-
+tic carnival. Hugo's "Notre-Dame de Paris," wherein
+the public believed it beheld a portrait of our
+"Moyen-age" (a most absurd appellation, by the way),
+represents it, by a singular choice, as already long dead,
+
+after the Hundred Years' War which bled us to the
+point where we fell, passive and defenseless, under the
+domination of the Florentine national art called
+"renaissant," and then of various other influences,
+ancient and foreign, during four centuries. And, down
+to the very moment at which I write, the literary pro-
+ductions upon the subject of this most incomparable
+period of our past have been but pitiable affairs. But
+yesterday, a Renan was writing of ogival art as an
+effort which had been impotent ("Souvenirs d'Enfance
+et de Jeunesse") or which at most had fathered works
+of no enduring character ("Priere sur l'Acrople"); the
+very Catholic Huysmans, in his "En Route," was mak-
+ing the most astounding salad of Roman vaulting,
+Primitive painting, Gregorian plain-chant, - - a salad
+whose recipe is "the Faith" and which is called, natur-
+ally, the "Moyen-age," that age which embraces ten
+centuries of humanity, plus one-third of humanity's
+authentic history, three epochs strongly antagonistic
+to each other, peoples widely diverse and opposed; a
+
+
+
+CONCLUSION 129
+
+something equivalent to a marriage between Alcibiades
+and Saint Genevieve.
+
+The "Moyen-age," or, to speak more accurately, the
+XII, XIII, and XIV Centuries, were not in the least
+fantastic and freakish; this is the character merely of
+an occasional generation, such as that of Louis-
+Philippe. Neither were they mystic, in the present
+sense of that word. The architecture of those cen-
+turies grew, stone by stone, plan by plan, out of the
+most practical of reasons. In their sculpture there
+was nothing "naive" -the naivete is ours, when we so
+estimate that sculpture, which is far more realistic than
+our own; and if, persisting in the contrary opinion, we
+cling to the weird forms of the gargoyles, it may be
+said that, born of a symbolism akin to those of Egypt
+and Greece, they represent analogies equally ingen-
+ious and profound. In this period arose Thomism,
+lately called back into a position of honor to combat
+Positivism, and which realized so happy a harmony
+between Aristotelianism and Christian faith, between
+science and theology. In this period, too, were born
+the natural sciences, and, in the minds of its poets,
+evolved the laws by which our poetry lives today, tho.se
+rhythms which through Ronsard we still hear, that
+Rhyme which we gave to all Europe, and, ;it the
+same lime, thy groined vaultings, () Utile town of Saint -
+Denis, suzerain oriflamme, pilot-barque of France! All
+these were born, and grew, beneath the grave gaze of
+
+the same wisdom which, on the Ionian shores, was called
+Athene.
+
+Toward a new aspect of the same logic OUT own age
+already turns, since, having drunk of that antiquity by
+
+whose forces We ruleol KiU'ope a second time in the
+XVII Century; having drunk of the laiest of great
+
+foreign influence-, the Germanic, we .ire returning to
+reality and to 'he future. Thus, when each Greek
+
+city had absorbed the neighboring local cults its "foreign
+
+influences") and the Oriental cults the antiquity"
+of that day , the most beautiful of mythologies were
+formed. It i . al least, toward an art purely logical,
+
+
+
+L30 THIRTY-SIX DRAMATIC SITUATIONS
+
+purely technical, and of infinitely varied creations,
+that all our literary tendencies seem to me to be con-
+verging. In that direction proceed Flaubert and Zola,
+those rugged pinoeers, Ibsen, Strindberg, and all writers
+deliberately unmindful of their libraries, as the Hellenes
+were of barbarian literature; there moves Maeterlinck,
+having reduced action to the development of a single
+idea; Verlaine, delivering from conventional rules true
+rhythm, which makes for itself its own rules; Mallarm£,
+prince of ellipse, clarifying syntax and expelling clouds
+of our little parasite words and tattered formulae; in
+that direction Moreas calls us, but without freeing
+himself, unfortunately, from the Italianism of our so-
+called Renaissance; all these, and others not less glorious,
+a whole new generation springing up, futurists, "loups,"
+cubists, seem to me to be seeking the same goal, the
+final abolition of all absolute authority, even that of
+Nature and of our sciences her interpreters; and the
+erection upon its debris of simple logic, of an art solely
+technical, and thus capable of revealing an unknown
+system of harmony; in brief, an artists' art.
+
+In literature, in dramatic literature which is the
+special subject of our consideration, the investigation
+of Proportion of which I have above spoken will show
+us the various "general methods" of presenting any
+situation whatever. Each one of these "general
+methods," containing a sort of canon applicable to all
+situations, will constitute for us an "order" analogous
+to the orders of architecture, and which, like them,
+will take its place with other orders, in a dramatic
+"system." But the systems, in their turn, will come
+together under certain rubrics yet more general, com-
+parisons of which will furnish us many a subject for
+reflection. In that which we might call Enchantment,
+there meet, oddly enough, systems as far apart in origin
+as Indian drama; certain comedies of Shakespeare ("A
+Midsummer Night's Dream;" "The Tempest"), the
+"fiabesque" genre of Gozzi, and "Faust;" the Mystery
+brings together the works of Persia, Thespis and the
+pre-Aeschyleans, "Prometheus," the book of "Job,"
+
+
+
+CONCLUSION 131
+
+the stage of the tragic Ezekiel, of Saint Gregory Nazian-
+zen, of Hroswitha, the Jeux and Miracles of our XIII
+Century, the Autos; here, Greek tragedy and the psy-
+chologists' imitations of it; there, English, German and
+French drama of 1830; still nearer, the type of piece
+which from the background of China, through Lope and
+Calderon, Diderot and Geothe, has come to cover our
+stage today.
+
+It will be remembered that, when we were catalogu-
+ing dramatic production in its thirty-six classes, an
+assiduous effort to establish, for every exceptional case
+found in one of them, symmetrical cases in the other
+thirty-five caused unforseen subjects to spring up under
+our very feet. Likewise, when we shall have analyzed
+these orders, systems and groups of systems, when
+we shall have measured with precision their resem-
+blances and their differences, and classified them, or,
+one by one, according to the questions considered, shall
+have brought them together or separated them, - we
+shall necessarily remark that numerous combinations
+have been forgotten. Among these the New Art will
+choose.
+
+Would that I might be able to place the first, the
+obscurest foundation-stone of its gigantic citadel!
+There, drawing about her the souls of the poets, the
+Muse shall rise before this audience re-assembled from
+ancient temples, before these peoples who gathered of
+yore around Herodotus and Pindar; she will speak the
+new language 'he Dramatic ;i language too lofty
+for the comprehension of the single soul, however great
+it be, a language not of words but of thrills, such as
+that spoken to armies, a language in truth addressed
+
+to thee, BaCChU . dispenser of glory, soul of crowds,
 
+delirium of races, ab tract, but One and Eternal! Not
+in one of our parlor-like pasteboard reductions of the
+Roman demi-circua will this come to pass, but upon b
+sort of mountain, Hooded with light and air, raised,
+thanks to our conquest of iron added t<> the construe-
+tive experience of tne Middle Ages; offered to the nation
+by those who have -till held to the vanity of riches,
 
 
-B 
 
+132 THIRTY-SIX DRAMATIC SITUATIONS
 
+- a greater thing than the theatre of Dionysos where
+gathered thirty thousand people, greater than that of
+Ephesus wherein sat, joyous, a hundred and fifty thou-
+sand spectators, an immense orifice-like crater in which
+the earth seems to encompass the very heavens.
 
 
-C 
 
+ALPHABETICAL INDEX
 
-2 
+Of the Plays, Novels, Etc., Classified in the Situations
 
+of this Work
 
-D 
 
 
+Abbe Constantin (The), by L. Halevy WYIII
+Abduction of Helen (The), by Lope de Vega X
 
+Abduction of Helen (The), by Sophocles X
 
-B 
+Abhirama mani, by Soundara Misra X
 
+Abraham, by the Abbess Hroswitha XX
 
-1 
+Absente (L'), by Yillemer XXVII
 
+Abufar, by Ducis XVIII
 
-B 
+Achilles in Scyros, by Metastasio XX
 
+Adelaide Duguesclin, by Voltaire XIV
 
-1 
+Adelghis, by Manzoni \
 
+Adrien, by Metastasio XXIV
 
-i; 
+Aedonians The by Aeschylus \XX1
 
+Aegeus, by Guripidi X 1 \
 
-3 
+Aetius, by Metai tasio XXXIII
 
+Affaire Clernenceau 1/ , by Duma- lils XXV
+Allaire de La rue de Lourcine L 1 . by LabicheXVl
 
-A 
+Affaire dei Poit oi l.' , by Sardou XX XI II
 
+Affaires sonl le Affaires Les . by Mirbeau XXVII
 
-2 
+Agamemnon, by Aeschj \ V
 
+Agathocle, by Voltaire \I\'
 
-C 
+A nave, by Si XXXI
 
+Age Critique L . bj I XXV
 
+ili . by ' lorneille X X IV
 
+by \ilieri Mil
 
-C 
+Agnimitra and Malavika, by Kale! \\l\
 
+Aiglon I.' . by Rostand \ 1 1
 
+Aiu • oir qui, by Lope de \ • XIV
 
+and XXXIII
 
-A 
+Ajaa iphocle X \ I
 
+Ajax Locrian, bj XXXI
 
-1 
+1 : ;
 
 
-B 
 
+A
 
-•J 
 
+2
 
-1) 
 
+B
 
-4 
 
 
-I) 
 
+B
 
-1 
 
 
-A 
 
+C
 
-a 
 
+2
 
-H 
 
+D
 
-•< 
 
 
-A 
 
+B
 
-a 
 
+1
 
-A 
 
+B
 
-i 
 
+1
 
-A 
 
+i;
 
-•> 
 
+3
 
-A 
 
+A
 
-I 
 
+2
 
-C 
 
+C
 
-a 
 
 
-\ 
 
+C
 
-5 
 
 
 
-134 
+A
 
 
+1
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+B
 
 
-Ajax Locrian, by Sophocles 
+•J
 
-Alcalde of Zalamea (The), by Calderon 
 
-Alceste, by Sophocles 
+1)
 
-by Euripides 
-" by Buchanan 
 
-by Hardy 
-" by Quinault 
+4
 
-by Racine (projected) 
 
-by Lagrange-Chancel 
+I)
 
-by Boissy 
 
-by Sainte-Foix 
+1
 
-by Coypel 
 
-by Dorat 
+A
 
-by Cluck 
 
-by H. Lucas 
+a
 
-by de Vauzelles 
-Alcmene, by Aeschylus 
-Alcmeon, by Sophocles 
-Alcmeon, by Euripides 
-Aletes and Erigone, by Sophocles 
-Alexander, by Sophocles 
-Alexander, by Euripides 
-Alexander, by Metastasio 
-Alexander, by Racine 
-Almanzor, by Heine 
-Alope, by Euripides 
-Alzire, by Voltaire 
-Amazones (Les), by Mazel 
-Amelie, by Voltaire 
-Amhra, by Grangeneuve 
-Ami Fritz (L'j by Erckmann-Chatrian 
-Amour, by Hennique 
-Amphitryon, by Sophocles 
-Anarghara-ghava (Hindu, anonymous) 
-Ancetre (I/), by Saint-Saens 
-Andre del Sarte, by Musset 
-Ancien (L 1 ) by Richepin 
-Andromache, by Euripides 
-Andromaque, by Racine 
-Andromeda, by Euripides 
-Andromeda, by Sophocles 
-Andromede, by P. Corneille 
-Ane de Buridan (L'j, by de Flers and 
 
-de Caillavet 
-Angelo, by Hugo 
+H
 
-Angles du Divorce (Lesj, by Biollay 
-Antigone, by Metastasio 
-by Sophocles 
-by Euripides 
-by Alamanni 
-by Alfieri 
 
+•<
 
 
-V 
+A
 
 
-B 
+a
 
 
-III 
+A
 
 
-A 2 
+i
 
 
-XXI 
+A
 
 
-A 1 
+•>
 
 
-XXI 
+A
 
 
-A 1 
+I
 
 
-XXI 
+C
 
 
-A 1 
+a
 
 
-XXI 
+\
 
 
-A 1 
+5
 
 
-XXI 
 
+134
 
-A 1 
 
 
-XXI 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-A 1 
 
+Ajax Locrian, by Sophocles
 
-XXI 
+Alcalde of Zalamea (The), by Calderon
 
+Alceste, by Sophocles
 
-A 1 
+by Euripides
+" by Buchanan
 
+by Hardy
+" by Quinault
 
-XXI 
+by Racine (projected)
 
+by Lagrange-Chancel
 
-A 1 
+by Boissy
 
+by Sainte-Foix
 
-XXI 
+by Coypel
 
+by Dorat
 
-A 1 
+by Cluck
 
+by H. Lucas
 
-\X1 
+by de Vauzelles
+Alcmene, by Aeschylus
+Alcmeon, by Sophocles
+Alcmeon, by Euripides
+Aletes and Erigone, by Sophocles
+Alexander, by Sophocles
+Alexander, by Euripides
+Alexander, by Metastasio
+Alexander, by Racine
+Almanzor, by Heine
+Alope, by Euripides
+Alzire, by Voltaire
+Amazones (Les), by Mazel
+Amelie, by Voltaire
+Amhra, by Grangeneuve
+Ami Fritz (L'j by Erckmann-Chatrian
+Amour, by Hennique
+Amphitryon, by Sophocles
+Anarghara-ghava (Hindu, anonymous)
+Ancetre (I/), by Saint-Saens
+Andre del Sarte, by Musset
+Ancien (L 1 ) by Richepin
+Andromache, by Euripides
+Andromaque, by Racine
+Andromeda, by Euripides
+Andromeda, by Sophocles
+Andromede, by P. Corneille
+Ane de Buridan (L'j, by de Flers and
 
+de Caillavet
+Angelo, by Hugo
 
-A 1 
+Angles du Divorce (Lesj, by Biollay
+Antigone, by Metastasio
+by Sophocles
+by Euripides
+by Alamanni
+by Alfieri
 
 
-XXI 
 
+V
 
-A 1 
 
+B
 
-XXI 
 
+III
 
-A 1 
 
+A 2
 
-XXI 
 
+XXI
 
-A 1 
 
+A 1
 
-XXI 
 
+XXI
 
-A 1 
 
+A 1
 
-XVIII 
 
+XXI
 
-D 2 
 
+A 1
 
-XXV 
 
+XXI
 
-B 4 
 
+A 1
 
-XXV 
 
+XXI
 
-B 4 
 
+A 1
 
-III 
 
+XXI
 
-A 1 
 
+A 1
 
-XIX 
 
+XXI
 
-C 1 
 
+A 1
 
-XIX 
 
+XXI
 
-1 
 
+A 1
 
-V 
 
+XXI
 
-C 
 
+A 1
 
-XXIX 
 
+\X1
 
-A 4 
 
+A 1
 
-I 
 
+XXI
 
-B 2 
 
+A 1
 
-XXIV 
 
+XXI
 
-A 3 
 
+A 1
 
-III 
 
+XXI
 
-A 6 
 
+A 1
 
-XXIX 
 
+XXI
 
-A 4 
 
+A 1
 
-XIV 
 
+XVIII
 
-A 2 
 
+D 2
 
-III 
 
+XXV
 
-A 6 
 
+B 4
 
-XXVIII 
 
+XXV
 
-A 2 
 
+B 4
 
-XV 
 
+III
 
-A 1 
 
+A 1
 
-XIX 
 
+XIX
 
-F 3 
 
+C 1
 
-X 
 
+XIX
 
-C 2 
 
+1
 
-XXIX 
 
+V
 
-B 6 
 
+C
 
-XXV 
 
+XXIX
 
-C 4 
 
+A 4
 
-XXI 
 
+I
 
-A 2 
 
+B 2
 
-XXI 
 
+XXIV
 
-D 2 
 
+A 3
 
-XXV 
 
+III
 
-B 1 
 
+A 6
 
-II 
 
+XXIX
 
-A 
 
+A 4
 
-II 
 
+XIV
 
-A 
 
+A 2
 
-II 
 
+III
 
-A 
 
+A 6
 
-XXIV 
 
+XXVIII
 
-B 6 
 
+A 2
 
-XXV 
 
+XV
 
-C 1 
 
+A 1
 
-XXVIII 
 
+XIX
 
-E 
 
+F 3
 
-XIV 
 
+X
 
-B 1 
 
+C 2
 
-XX 
 
+XXIX
 
-A 3 
 
+B 6
 
-XX 
 
+XXV
 
-A 3 
 
+C 4
 
-XX 
 
+XXI
 
-A 3 
 
+A 2
 
-XX 
 
+XXI
 
-A 3 
 
+D 2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XXV
 
 
+B 1
 
-135 
 
+II
 
 
-Antiope, by Euripides 
+A
 
-Antoinette Sabrier, by Coolus 
 
-Antony and Cleopatra, by Shakespeare 
+II
 
-Aphrodite, by Louys 
 
-Apotre (L'i by Loyson 
+A
 
-Appius and Virginia, by Webster 
 
-Apprentie (L') by Geffroy 
+II
 
-Apres moi, by Bernstein 
 
-Archelaus, by Euripides 
+A
 
-Argent (L'), by Zola 
 
-Argives (Thei, by Aeschylus 
+XXIV
 
-Ariane, by T. Corneille 
 
-Arlesienne iL'i, by Daudet and Bizet 
+B 6
 
-Armee dans la Ville (L*), by Jules Romains 
 
-Arsene Lupin, by Leblanc 
+XXV
 
-Artaxerxes, by Metastasio 
 
-Artemire, by Voltaire 
+C 1
 
-Article 301, by Duval 
 
-Ascanio, by Saint-Saens 
+XXVIII
 
-As de trefle (L'), by Decourcelle 
 
-Assommoir (L'), by Zola 
+E
 
-Atalanta, by Aeschylus 
 
-Athalie, by Racine 
+XIV
 
-Athamas, by Aeschylus 
 
-Atree et Thyeste, by Crebillon 
+B 1
 
-Attentat (L') t by Capua and Descavea 
 
-Attila, by P. Corneille 
+XX
 
-Attila, by Werner 
 
-Augeus, by Euripii 
+A 3
 
-•\utomne iL' . by Adam and Mourey 
 
-Autre Danger L' , by Donnay 
+XX
 
-Aventuree de Gavroche La . by Darlay 
 
-and Marol 
-Avi-u 1/ , by Sarah l'.crnhardt 
+A 3
 
 
+XX
 
-II 
-XXV 
 
-XXII 
+A 3
 
-XXI 
 
-XXVII 
+XX
 
-XXIV 
 
-XX 
+A 3
 
-XXV 
 
-VI 
 
-VI 
+INDEX OF PLAYS, NOVELS, ETC.
 
-III 
 
-VI 
 
-XXII 
-VIII 
-V 
-XXXIII 
+135
 
-XXXII 
 
-XXIV 
 
-XXIV 
+Antiope, by Euripides
 
-XXVII 
+Antoinette Sabrier, by Coolus
 
-XXII 
+Antony and Cleopatra, by Shakespeare
 
-IV 
+Aphrodite, by Louys
 
-XXXI 
+Apotre (L'i by Loyson
 
-XVI 
+Appius and Virginia, by Webster
 
-XI II 
+Apprentie (L') by Geffroy
 
-XX l\ 
+Apres moi, by Bernstein
 
-XX1\ 
+Archelaus, by Euripides
 
-111 
+Argent (L'), by Zola
 
-1 
+Argives (Thei, by Aeschylus
 
-VIII 
+Ariane, by T. Corneille
 
-\l\ 
+Arlesienne iL'i, by Daudet and Bizet
 
-XXXV 
-XXV 
+Armee dans la Ville (L*), by Jules Romains
 
+Arsene Lupin, by Leblanc
 
+Artaxerxes, by Metastasio
 
-B 
+Artemire, by Voltaire
 
+Article 301, by Duval
 
-1 
+Ascanio, by Saint-Saens
 
+As de trefle (L'), by Decourcelle
 
-C 
+Assommoir (L'), by Zola
 
+Atalanta, by Aeschylus
 
-3 
+Athalie, by Racine
 
+Athamas, by Aeschylus
 
-A 
+Atree et Thyeste, by Crebillon
 
+Attentat (L') t by Capua and Descavea
 
-4 
+Attila, by P. Corneille
 
+Attila, by Werner
 
-A 
+Augeus, by Euripii
 
+•\utomne iL' . by Adam and Mourey
 
-3 
+Autre Danger L' , by Donnay
 
+Aventuree de Gavroche La . by Darlay
 
-D 
+and Marol
+Avi-u 1/ , by Sarah l'.crnhardt
 
 
-2 
 
+II
+XXV
 
-A 
+XXII
 
+XXI
 
-3 
+XXVII
 
+XXIV
 
-C 
+XX
 
+XXV
 
+VI
 
+VI
 
-D 
+III
 
+VI
 
-1 
+XXII
+VIII
+V
+XXXIII
 
+XXXII
 
-C 
+XXIV
 
+XXIV
 
-1 
+XXVII
 
+XXII
 
-B 
+IV
 
+XXXI
 
+XVI
 
+XI II
 
-A 
+XX l\
 
+XX1\
 
-1 
+111
 
+1
 
-D 
+VIII
 
+\l\
 
-1 
+XXXV
+XXV
 
 
-A 
 
+B
 
-5 
 
+1
 
-B 
 
+C
 
-5 
 
+3
 
-A 
 
+A
 
 
+4
 
-D 
 
+A
 
-2 
 
+3
 
-C 
 
+D
 
-2 
 
+2
 
-C 
 
+A
 
 
+3
 
-C 
 
+C
 
 
 
-D 
 
+D
 
-3 
 
+1
 
-C 
 
+C
 
-2 
 
+1
 
-B 
 
+B
 
 
 
-A 
 
+A
 
-2 
 
+1
 
-A 
 
+D
 
-1 
 
+1
 
-A 
 
+A
 
-2 
 
+5
 
-A 
 
+B
 
-7 
 
+5
 
-A 
 
+A
 
-4 
 
 
-A 
 
+D
 
-1 
 
+2
 
-B 
 
+C
 
-■1 
 
+2
 
-B 
 
+C
 
-2 
 
 
 
-B i 
+C
 
 
 
-C i 
 
+D
 
 
-B 
+3
 
 
+C
 
-Bacchante The . by Euripidi 
-Baillonne" Le , by Mme. Term 
 
-tzet, by Racine 
-Banque de I'Univera La . by Grenet- 
+2
 
-I >ancourl 
-Barlaam el Jo aphat, Miracle oi Notre-Dame 
-Barricade La . by Bourgel 
-Ba aride The bj \.( cl j 
-Beethoven, bj Paw hois 
-Belle aux cheveua d'or La . by Arnould 
-Bellerophon, by Euripii 
-Benvi nuto, by Diaz 
 
-ail Le . bj Bel ■ 
-Berenice, by Racine 
+B
 
 
 
-XXXI 
-XXXVI 
 
-\\ II 
+A
 
-\ 
 
-XXIV 
-XXXI 
+2
 
-\ II 
 
-XVII 
+A
 
-\\X1 
 
-l\ 
-\\\ 
-\\ 
+1
 
 
+A
 
-\ 
 
+2
 
-1 
 
+A
 
-\ 
 
+7
 
-2 
 
+A
 
-B 
 
+4
 
-1 
 
+A
 
-\ 
 
+1
 
-• > 
 
+B
 
-1) 
 
+■1
 
-8 
 
+B
 
-A 
 
+2
 
-7 
 
 
-\ 
+B i
 
 
-1 
 
+C i
 
-1) 
 
 
+B
 
 
-C 
 
+Bacchante The . by Euripidi
+Baillonne" Le , by Mme. Term
 
-8 
+tzet, by Racine
+Banque de I'Univera La . by Grenet-
 
+I >ancourl
+Barlaam el Jo aphat, Miracle oi Notre-Dame
+Barricade La . by Bourgel
+Ba aride The bj \.( cl j
+Beethoven, bj Paw hois
+Belle aux cheveua d'or La . by Arnould
+Bellerophon, by Euripii
+Benvi nuto, by Diaz
 
-B 
+ail Le . bj Bel ■
+Berenice, by Racine
 
 
-3 
 
+XXXI
+XXXVI
 
-B 
+\\ II
 
+\
 
-r- 
+XXIV
+XXXI
 
-i 
+\ II
 
+XVII
 
-c 
+\\X1
 
+l\
+\\\
+\\
 
-1 
 
 
-1! 
+\
 
 
-8 
+1
 
 
+\
 
-136 
 
+2
 
 
-THIRTY-SIX DRAMATIC SITUATIONS 
+B
 
 
+1
 
-Berenice, by Poe XXXIV 
-Berthe an grand pied, Miracle of Notre- 
 
-Dame XXXV 
+\
 
-Berthequine, Miracle of Notre-Dame XXXV 
-Bete feroce (La), by Jules Mary and RochardXXX 
 
-Bete humaine (La), by Zola XVI 
+• >
 
-Bleus de l'amour (Les), by Coolus XXVIII 
 
-Blind (The), by Maeterlinck VII 
+1)
 
-Bluebeard, by Perrault II 
 
-Blue Bird (The), by Maeterlinck IX 
+8
 
-Blue Monster (The), by Gozzi XIX 
 
-Bohemos, by Zamacois XXXIV 
+A
 
-Boislaurier, by Richard XIV 
 
-and II 
+7
 
-Bondman (The), by Massinger XXXII 
 
-Bon roi Dagobert (Le), by Rivoire XVIII 
+\
 
-Boscotte (La), by Mme. Maldagne XXXIII 
 
-Bouchers (Les), by Icres III 
+1
 
-Bride of Messina (The), by Schiller XVIII 
 
-Brigands (The), by Schiller XXXIII 
+1)
 
-Britannicus, by Racine XIV 
 
-Broken Heart (The), by Ford XXIX 
 
-Brutus, by Voltaire XXVII 
 
-Brutus II, by Alfieri XXX 
+C
 
-Bucheronne (La), by C. Edmond XXIV 
 
-Burgraves (Les), by Hugo XIX 
+8
 
-By Fire and Sword, by Sienkiewicz XXVI 
 
+B
 
 
-P. 
+3
 
 
+B
 
-Cain, by Byron 
 
-Canace, by Speroni 
+r-
 
-Capitaine Burle (Le), by Zola 
+i
 
-Captives (The), by Sophocles 
 
-Carbonari (Les), by No 
+c
 
-Carians (The), by Aeschylus 
 
-Casquette au pere Bugeaud (La), by Marot 
+1
 
-Casse-museau, by Marot 
 
-Casserole (La), by Metenier 
+1!
 
-Catherine la Batarde, by Bell 
 
-Catilina, by Voltaire 
+8
 
 
 
-XIII 
+136
 
-XXVI 
 
-XXII 
 
-XXXVI 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-XXIX 
 
-X 
 
-III 
+Berenice, by Poe XXXIV
+Berthe an grand pied, Miracle of Notre-
 
-XXVII 
+Dame XXXV
 
-III 
+Berthequine, Miracle of Notre-Dame XXXV
+Bete feroce (La), by Jules Mary and RochardXXX
 
-XXXIII 
+Bete humaine (La), by Zola XVI
 
-cm 
+Bleus de l'amour (Les), by Coolus XXVIII
 
-and XXX 
-V 
-III 
-III 
+Blind (The), by Maeterlinck VII
 
+Bluebeard, by Perrault II
 
+Blue Bird (The), by Maeterlinck IX
 
-Cato, by Metastasio 
+Blue Monster (The), by Gozzi XIX
 
-Cellule No. 7 (La), by Zaccone 
+Bohemos, by Zamacois XXXIV
 
-Cenci (The), by Shelley 
+Boislaurier, by Richard XIV
 
-XIII B 3 and XXVI 
-Cent lignes emues, by Torquet XXXVI 
+and II
 
-Cesar Birotteau, by Balzac 
+Bondman (The), by Massinger XXXII
 
+Bon roi Dagobert (Le), by Rivoire XVIII
 
+Boscotte (La), by Mme. Maldagne XXXIII
 
-C'est la loi, by Cliquet 
+Bouchers (Les), by Icres III
 
+Bride of Messina (The), by Schiller XVIII
 
+Brigands (The), by Schiller XXXIII
 
-XX 
+Britannicus, by Racine XIV
 
-and VI 
-XXV 
+Broken Heart (The), by Ford XXIX
 
+Brutus, by Voltaire XXVII
 
+Brutus II, by Alfieri XXX
 
-c 
+Bucheronne (La), by C. Edmond XXIV
 
+Burgraves (Les), by Hugo XIX
 
-1 
+By Fire and Sword, by Sienkiewicz XXVI
 
 
-A 
 
+P.
 
-2 
 
 
-C 
+Cain, by Byron
 
+Canace, by Speroni
 
-2 
+Capitaine Burle (Le), by Zola
 
+Captives (The), by Sophocles
 
-D 
+Carbonari (Les), by No
 
+Carians (The), by Aeschylus
 
+Casquette au pere Bugeaud (La), by Marot
 
+Casse-museau, by Marot
 
-A 
+Casserole (La), by Metenier
 
+Catherine la Batarde, by Bell
 
+Catilina, by Voltaire
 
 
-I) 
 
+XIII
 
-3 
+XXVI
 
+XXII
 
-G 
+XXXVI
 
+XXIX
 
-2 
+X
 
+III
 
-A 
+XXVII
 
+III
 
-9 
+XXXIII
 
+cm
 
-A 
+and XXX
+V
+III
+III
 
 
-1 
 
+Cato, by Metastasio
 
-A 
+Cellule No. 7 (La), by Zaccone
 
+Cenci (The), by Shelley
 
+XIII B 3 and XXVI
+Cent lignes emues, by Torquet XXXVI
 
+Cesar Birotteau, by Balzac
 
-A 
 
 
-1 
+C'est la loi, by Cliquet
 
 
-D 
 
+XX
 
-2 
+and VI
+XXV
 
 
-A 
 
+c
 
-8 
 
+1
 
-A 
 
+A
 
-2 
 
+2
 
-C 
 
+C
 
-3 
 
+2
 
-A 
 
+D
 
-1 
 
 
-A 
 
+A
 
-1 
 
 
-D 
 
+I)
 
-1 
 
+3
 
-A 
 
+G
 
-2 
 
+2
 
-A 
 
+A
 
-8 
 
+9
 
-F 
 
+A
 
-1 
 
+1
 
-C 
 
+A
 
-2 
 
 
-A 
 
+A
 
-1 
 
+1
 
-C 
 
+D
 
-2 
 
+2
 
-c 
 
+A
 
-1 
 
+8
 
-A 
 
+A
 
-1 
 
+2
 
-A 
 
+C
 
-4 
 
+3
 
-A 
 
+A
 
 
+1
 
-A 
 
+A
 
-8 
 
+1
 
-D 
 
+D
 
-5 
 
+1
 
-A 
 
+A
 
-7 
 
+2
 
-D 
 
+A
 
-1 
 
+8
 
-A 
 
+F
 
-1 
 
+1
 
-B 
 
+C
 
 
+2
 
-C 
 
+A
 
 
+1
 
-B 
 
+C
 
-3 
 
+2
 
-B 
 
+c
 
-5 
 
+1
 
-A 
 
+A
 
-3 
 
+1
 
-C 
 
+A
 
 
+4
 
-A 
 
+A
 
-4 
 
 
-B 
 
+A
 
 
+8
 
-B 
 
+D
 
-8 
 
+5
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+A
 
 
+7
 
-13' 
 
+D
 
 
-Chamillac, by Feuillet 
+1
 
-Champairol (Les), by Fraisse 
 
-Chantecler, by Rostand 
+A
 
-Charbonniere (La), by Cremieux 
 
-Chevalerie Rustique, by Yerga 
+1
 
-Chevalier Jean (Le), by de Joncieres 
 
-Chien de garde (Le>, by Richepin 
+B
 
-Chinese Hero (The), by Metastasio 
 
-Choephores (The . by Aeschylus 
 
-Christ Suffering, by St. Gregory Nazianzen 
 
-Chryses, by Sohpocles 
+C
 
-Chrysippus, by Euripides 
 
-Cid (Lei, by P. Corneille 
 
-Cinna, by P. Corneille 
 
-Cinq doigts de Birouk (Les), by 
+B
 
-De Courcelle 
-Circuit (Le), by Feydeau and de Croissel 
-Citta morta (La), by d'Annunzio 
-Clavijo, by Goethe 
-Cleopatre, by Sardou 
-Clitandre, by P. Corneille 
-Cloltre (Le), by Verhaeren 
-Coeur a coeur, by Coolus 
-Coeur a ses raisons (Le), l>y de Flers 
 
-and de Cailluvet 
-Coeur de Se-hor, by Michaud d'Humiac 
-Coeur material, by Franck 
-Coeur revelateur (Le), by Laumann, after 
+3
 
-Poe 
-Colomba, by Merimee 
-Comedy of Errors, by Shakespeare 
-Compagnon de voyage Le . by Andei 
 
-Compere le Kenanl, Ity I'olti 
+B
 
-Comte d' Essex, by T. Corneille 
-Comtesse Sarah, by Ohnel 
-Connais-toi, by Hervieu 
-Conqudte de la Toison d'or La), by P. Cor- 
-neille 
-Conqudte de Plassans La . by Zola 
-Conspiration du general Malel La . by de 
 
-I ... sus 
+5
 
-Constant Prince The , by Calderon 
 
-:e de Noel, by Linant 
-Corbeau Le , by Gozzi 
-( !orbeaiu Le . bj Becque 
-Cor fleuri !<<• , by Mikhael and Herold 
-Coriolanus, by Shakespeare 
-Cornette La), by M. and Mile. Ferrier 
-( ounl of Carmagnola The . by Manconl 
+A
 
-and 
-I ounl Witold, by iski 
 
+3
 
 
-XXYI 
+C
 
 
-B 
 
 
-5 
+A
 
 
-I 
+4
 
 
-B 
+B
 
 
-3 
 
 
-VIII 
+B
 
 
-A 
+8
 
 
-2 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-XXI 
 
 
-D 
+13'
 
 
-1 
 
+Chamillac, by Feuillet
 
-xxrv 
+Champairol (Les), by Fraisse
 
+Chantecler, by Rostand
 
-A 
+Charbonniere (La), by Cremieux
 
+Chevalerie Rustique, by Yerga
 
-10 
+Chevalier Jean (Le), by de Joncieres
 
+Chien de garde (Le>, by Richepin
 
-XXXII 
+Chinese Hero (The), by Metastasio
 
+Choephores (The . by Aeschylus
 
-C 
+Christ Suffering, by St. Gregory Nazianzen
 
+Chryses, by Sohpocles
 
-2 
+Chrysippus, by Euripides
 
+Cid (Lei, by P. Corneille
 
-XXI 
+Cinna, by P. Corneille
 
+Cinq doigts de Birouk (Les), by
 
-D 
+De Courcelle
+Circuit (Le), by Feydeau and de Croissel
+Citta morta (La), by d'Annunzio
+Clavijo, by Goethe
+Cleopatre, by Sardou
+Clitandre, by P. Corneille
+Cloltre (Le), by Verhaeren
+Coeur a coeur, by Coolus
+Coeur a ses raisons (Le), l>y de Flers
 
+and de Cailluvet
+Coeur de Se-hor, by Michaud d'Humiac
+Coeur material, by Franck
+Coeur revelateur (Le), by Laumann, after
 
-1 
+Poe
+Colomba, by Merimee
+Comedy of Errors, by Shakespeare
+Compagnon de voyage Le . by Andei
 
+Compere le Kenanl, Ity I'olti
 
-XXVIII 
+Comte d' Essex, by T. Corneille
+Comtesse Sarah, by Ohnel
+Connais-toi, by Hervieu
+Conqudte de la Toison d'or La), by P. Cor-
+neille
+Conqudte de Plassans La . by Zola
+Conspiration du general Malel La . by de
 
+I ... sus
 
-A 
+Constant Prince The , by Calderon
 
+:e de Noel, by Linant
+Corbeau Le , by Gozzi
+( !orbeaiu Le . bj Becque
+Cor fleuri !<<• , by Mikhael and Herold
+Coriolanus, by Shakespeare
+Cornette La), by M. and Mile. Ferrier
+( ounl of Carmagnola The . by Manconl
 
-1 
+and
+I ounl Witold, by iski
 
 
-IV 
 
+XXYI
 
-A 
 
+B
 
-1 
 
+5
 
-XX 
 
+I
 
-A 
 
+B
 
-2 
 
+3
 
-I 
 
+VIII
 
-A 
 
+A
 
-1 
 
+2
 
-XXVI 
 
+XXI
 
-D 
 
+D
 
-1 
 
+1
 
-XXIX 
 
+xxrv
 
-B 
 
+A
 
-1 
 
+10
 
-VIII 
 
+XXXII
 
-A 
 
+C
 
-1 
 
+2
 
-XXX 
 
+XXI
 
-C 
 
+D
 
-1 
 
+1
 
-x x i v 
 
+XXVIII
 
-C 
 
+A
 
 
+1
 
-XXVI 
 
+IV
 
-c 
 
+A
 
-2 
 
+1
 
-III 
 
+XX
 
-A 
 
+A
 
-8 
 
+2
 
-XXII 
 
+I
 
-A 
 
+A
 
-4 
 
+1
 
-XXXIII 
 
+XXVI
 
-D 
 
+D
 
-1 
 
+1
 
-x x x i v 
 
+XXIX
 
-A 
 
+B
 
-■2 
 
+1
 
-xxv 
 
+VIII
 
-C 
 
+A
 
-ti 
 
+1
 
-XIV 
 
+XXX
 
-D 
 
+C
 
 
+1
 
-xxvu 
 
+x x i v
 
-D 
 
+C
 
-6 
 
 
-XXXIII 
 
+XXVI
 
-A 
 
+c
 
-3 
 
+2
 
-X X X 1 V 
 
+III
 
-A 
 
+A
 
-■A 
 
+8
 
-111 
 
+XXII
 
-A 
 
+A
 
-1 
 
+4
 
-XXXII 
 
+XXXIII
 
-\ 
 
+D
 
-1 
 
+1
 
-XI 
 
+x x x i v
 
-B 
 
+A
 
-^> 
 
+■2
 
-\ 
 
+xxv
 
-\ 
 
+C
 
 
+ti
 
-XXIV 
 
+XIV
 
-B 
 
+D
 
-•> 
 
 
-xxv 
 
+xxvu
 
-C 
 
+D
 
-8 
 
+6
 
-xxu 
 
+XXXIII
 
-A 
 
+A
 
-2 
 
+3
 
-XXI\ 
 
+X X X 1 V
 
-B 
 
+A
 
-1 
 
+■A
 
-XXII 
 
+111
 
-\ 
 
+A
 
-• > 
 
+1
 
-VIII 
 
+XXXII
 
-A 
 
+\
 
-1 
 
+1
 
-\\ 
 
+XI
 
-\ 
 
+B
 
-•I 
 
+^>
 
-Mil 
 
+\
 
-F 
 
+\
 
 
 
-XXXIII 
 
+XXIV
 
-\ 
 
+B
 
-3 
 
+•>
 
-VII 
 
+xxv
 
-B 
 
+C
 
 
+8
 
-WIN 
 
+xxu
 
-1! 
 
+A
 
-3 
 
+2
 
-\ 1 
 
+XXI\
 
-C 
 
+B
 
-1 
 
+1
 
-\ \l 
 
+XXII
 
-1) 
 
+\
 
-1 
 
+• >
 
-V 
 
+VIII
 
-C 
 
+A
 
 
+1
 
-VI 
 
+\\
 
-1 
 
+\
 
-1 
 
+•I
 
-\\ \l\ 
 
+Mil
 
-1! 
 
+F
 
 
 
 
-13s 
+XXXIII
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+3
 
 
-Countess Fredegonde (The), by Amigues 
-Course du flambeau (La), by Hervieu 
-Courtisane (La), by Arnyvelde 
-Courtisane de Corinth (La), by Carre and 
+VII
 
-Bilhaud 
-Cousine Bette (La), by Balzac 
-Crainquebille, by France 
-Cresphontes, by Euripides 
-Cretans (The), by Euripides 
-Creusa, by Sophocles 
-Crime de Jean Morel (Le), by Samson 
-Crime de Maisons-Alfort (Le), by Coedes 
-Crime d'un autre (Le), by Arnold and Ren- 
 
-auld 
-Crime and Punishment, by Dostoievsky 
-Criminelle (La), by Delacour 
-Crocodile (Le), by Sardou 
-Croisade des Enfantelets francs (La), by 
+B
 
-Ernault 
-Cromwell, by Hugo 
-Cuirs de Boeuf (Les), by Polti 
-Cymbeline, by Shakespeare 
-Cyrano de Bergerac, by Rostand 
-Cyrus, by Metastasio 
 
-and 
 
 
+WIN
 
-D 
 
-Damaged Goods, by Brieux 
+1!
 
-Dame a la faulx (La), by Saint-Pol Roux 
 
-Dame aux Camelias (La), by Dumas fils 
+3
 
-Dame au domino rose (La), by Bouvier 
 
-Damon, by Lessing 
+\ 1
 
-Danae, by Euripides 
 
-Danae, by Aeschylus 
+C
 
-Danaides (The), by Aeschylus 
 
-by Combaud 
+1
 
-by Phrynichus 
 
-by Salieri 
+\ \l
 
-by Spontini 
-Danseur inconnu (Le), by Bernard 
-Dante, by Godard 
 
-Death of Achilles (The), by Aeschylus 
-Death of Cansa (The;, by Crichna Cavi 
-Debacle (La), by Zola 
-Decadence, by Guinon 
-Declassee (Laj, by Delahaye 
-Dedale (Le), by Hervieu 
-Deformed Transformed (The), by Byron 
-Degringolade (Laj, by Desnard 
-1 lemetrius, by Metastasio 
+1)
 
 
+1
 
-XXV 
 
+V
 
-B 
 
+C
 
-7 
 
 
-XXI 
 
+VI
 
-E 
 
+1
 
 
+1
 
-XXVII 
 
+\\ \l\
 
-B 
 
+1!
 
-6 
 
 
-III 
 
 
-C 
+13s
 
 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-XXII 
 
 
-C 
+Countess Fredegonde (The), by Amigues
+Course du flambeau (La), by Hervieu
+Courtisane (La), by Arnyvelde
+Courtisane de Corinth (La), by Carre and
 
+Bilhaud
+Cousine Bette (La), by Balzac
+Crainquebille, by France
+Cresphontes, by Euripides
+Cretans (The), by Euripides
+Creusa, by Sophocles
+Crime de Jean Morel (Le), by Samson
+Crime de Maisons-Alfort (Le), by Coedes
+Crime d'un autre (Le), by Arnold and Ren-
 
-1 
+auld
+Crime and Punishment, by Dostoievsky
+Criminelle (La), by Delacour
+Crocodile (Le), by Sardou
+Croisade des Enfantelets francs (La), by
 
+Ernault
+Cromwell, by Hugo
+Cuirs de Boeuf (Les), by Polti
+Cymbeline, by Shakespeare
+Cyrano de Bergerac, by Rostand
+Cyrus, by Metastasio
 
-XXXIII 
+and
 
 
-A 
 
+D
 
-3 
+Damaged Goods, by Brieux
 
+Dame a la faulx (La), by Saint-Pol Roux
 
-XIX 
+Dame aux Camelias (La), by Dumas fils
 
+Dame au domino rose (La), by Bouvier
 
-B 
+Damon, by Lessing
 
+Danae, by Euripides
 
-1 
+Danae, by Aeschylus
 
+Danaides (The), by Aeschylus
 
-XXVI 
+by Combaud
 
+by Phrynichus
 
-E 
+by Salieri
 
+by Spontini
+Danseur inconnu (Le), by Bernard
+Dante, by Godard
 
+Death of Achilles (The), by Aeschylus
+Death of Cansa (The;, by Crichna Cavi
+Debacle (La), by Zola
+Decadence, by Guinon
+Declassee (Laj, by Delahaye
+Dedale (Le), by Hervieu
+Deformed Transformed (The), by Byron
+Degringolade (Laj, by Desnard
+1 lemetrius, by Metastasio
 
 
-XIX 
 
+XXV
 
-B 
 
+B
 
-1 
 
+7
 
-XXIX 
 
+XXI
 
-B 
 
+E
 
-7 
 
 
-III 
 
+XXVII
 
-A 
 
+B
 
-1 
 
+6
 
-XXXIII 
 
+III
 
-D 
 
+C
 
-2 
 
 
-XXXIV 
 
+XXII
 
-A 
 
+C
 
-3 
 
+1
 
-XXXIII 
 
+XXXIII
 
-B 
 
+A
 
-2 
 
+3
 
-XXVII 
 
+XIX
 
-B 
 
+B
 
-5 
 
+1
 
-VII 
 
+XXVI
 
-B 
 
+E
 
 
 
-XXX 
 
+XIX
 
-A 
 
+B
 
-3 
 
+1
 
-XXVI 
 
+XXIX
 
-A 
 
+B
 
-1 
 
+7
 
-XXXII 
 
+III
 
-B 
 
+A
 
-2 
 
+1
 
-XXI 
 
+XXXIII
 
-C 
 
+D
 
-2 
 
+2
 
-XIII 
 
+XXXIV
 
-C 
 
+A
 
 
+3
 
-XIX 
 
+XXXIII
 
-B 
 
+B
 
-3 
 
+2
 
-XVII 
 
+XXVII
 
-C 
 
+B
 
-2 
 
+5
 
-XXIV 
 
+VII
 
-B 
 
+B
 
-9 
 
 
-XXVII 
 
+XXX
 
-B 
 
+A
 
-G 
 
+3
 
-XVIII 
 
+XXVI
 
-C 
 
+A
 
 
+1
 
-XIV 
 
+XXXII
 
-D 
 
+B
 
 
+2
 
-I 
 
+XXI
 
-B 
 
+C
 
-2 
 
+2
 
 
+XIII
 
-B 
 
+C
 
-2 
 
 
-XXIII 
 
+XIX
 
-B 
 
+B
 
-3 
 
+3
 
-XXIII 
 
+XVII
 
-B 
 
+C
 
-3 
 
+2
 
-XXIII 
 
+XXIV
 
-B 
 
+B
 
-3 
 
+9
 
-XXIII 
 
+XXVII
 
-B 
 
+B
 
-3 
 
+G
 
-XXIII 
 
+XVIII
 
-B 
 
+C
 
-3 
 
 
-XXVIII 
 
+XIV
 
-A 
 
+D
 
-2 
 
 
-XXIV 
 
+I
 
-A 
 
+B
 
-3 
 
+2
 
-XXXVI 
 
 
-C 
 
+B
 
 
+2
 
-XIII 
 
+XXIII
 
-C 
 
+B
 
 
+3
 
-VI 
 
+XXIII
 
-A 
 
+B
 
-1 
 
+3
 
-XXV 
 
+XXIII
 
-C 
 
+B
 
-1 
 
+3
 
-111 
 
+XXIII
 
-B 
 
+B
 
-4 
 
+3
 
-XXIV 
 
+XXIII
 
-A 
 
+B
 
-1 
 
+3
 
-IX 
 
+XXVIII
 
-D 
 
+A
 
-3 
 
+2
 
-XXXIII 
 
+XXIV
 
-D 
 
+A
 
-6 
 
+3
 
-XXIV 
 
+XXXVI
 
-A 
 
+C
 
-5 
 
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XIII
 
 
+C
 
-139 
 
 
 
-Demon du foyer (Le), by George Sand 
+VI
 
-Demophon, by Metastasio 
 
-Denise, by Dumas fils 
+A
 
-Depute Leveau (Le), by Lemaitre 
 
-Dernier Amour, by Ohnet 
+1
 
-Desert Isle (The), by Metastasio 
 
-Dette (La), by Trarieux 
+XXV
 
-Duex Jumeaux (Lest, by Hugo 
 
-Devant l'ennemi, by Charton 
+C
 
-Devotion to the Cross, by Calderon 
 
-Dhourtta narttaka 
+1
 
-Dhourtta samagama 
 
-Diana, by Paladilhe 
+111
 
-Diane, by Augier 
 
-Diane de Lys, by Dumas fils 
+B
 
-Dictys, by Euripides 
 
-Dido, by Metastasio 
+4
 
-Dieu ou pas Dieu, by Beaubourg 
 
-Disciple (Le), by Bourget 
+XXIV
 
-Discovery of the New World, by Lope de 
 
-Vega 
-Divorce (Le), by Bourget 
-Divorce de Sarah Moon- Le), by Rozier 
+A
 
-and Paton 
-Divorcee (La), by Fall and Leon 
-Docteur Pascal, by Zola 
-Don Carlos, by Schiller 
-Don Garzia, by Alfieri 
-Don Juan, by Dumas pere 
-by Goldoni 
 
-" by Gral.l.e 
+1
 
-" by Moliere 
 
-" by Sadwell 
+IX
 
-" by Tellez 
 
-by Tirso de Molina 
-" " by Zamora 
+D
 
-" by Zorilla 
 
-Don l'i-'ire, i>y Voltaire 
-Don Quixote, by ' lerva 
+3
 
-1 )on Sanclie, by ' onieille 
 
-Drapeau L Moreau 
+XXXIII
 
-I >roi1 an bonheur Le . !•:■' Lemonnier 
-I >u< Malii The . by Websti 
 
-l >uel !-<• . by Lavedan 
+D
 
 
+6
 
-!■: 
 
+XXIV
 
 
-Earthen Toy-carl The . by Sudraka 
-Echeance I. . by Jullii 
+A
 
-Eclabou ore I . . bj I U I -lily 
-Ecole 'I' . eul I . b) \ i 
 
+5
 
 
-XIV 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-A 
 
 
-4 
+139
 
 
-XIX 
 
+Demon du foyer (Le), by George Sand
 
-A 
+Demophon, by Metastasio
 
+Denise, by Dumas fils
 
-1 
+Depute Leveau (Le), by Lemaitre
 
+Dernier Amour, by Ohnet
 
-XXVII 
+Desert Isle (The), by Metastasio
 
+Dette (La), by Trarieux
 
-B 
+Duex Jumeaux (Lest, by Hugo
 
+Devant l'ennemi, by Charton
 
-3 
+Devotion to the Cross, by Calderon
 
+Dhourtta narttaka
 
-X X v 
+Dhourtta samagama
 
+Diana, by Paladilhe
 
-B 
+Diane, by Augier
 
+Diane de Lys, by Dumas fils
 
-3 
+Dictys, by Euripides
 
+Dido, by Metastasio
 
-XX Y 
+Dieu ou pas Dieu, by Beaubourg
 
+Disciple (Le), by Bourget
 
-B 
+Discovery of the New World, by Lope de
 
+Vega
+Divorce (Le), by Bourget
+Divorce de Sarah Moon- Le), by Rozier
 
-6 
+and Paton
+Divorcee (La), by Fall and Leon
+Docteur Pascal, by Zola
+Don Carlos, by Schiller
+Don Garzia, by Alfieri
+Don Juan, by Dumas pere
+by Goldoni
 
+" by Gral.l.e
 
-XII 
+" by Moliere
 
+" by Sadwell
 
-B 
+" by Tellez
 
+by Tirso de Molina
+" " by Zamora
 
+" by Zorilla
 
+Don l'i-'ire, i>y Voltaire
+Don Quixote, by ' lerva
 
-XIV 
+1 )on Sanclie, by ' onieille
 
+Drapeau L Moreau
 
-B 
+I >roi1 an bonheur Le . !•:■' Lemonnier
+I >u< Malii The . by Websti
 
+l >uel !-<• . by Lavedan
 
-1 
 
 
-VII 
+!■:
 
 
-A 
 
+Earthen Toy-carl The . by Sudraka
+Echeance I. . by Jullii
 
+Eclabou ore I . . bj I U I -lily
+Ecole 'I' . eul I . b) \ i
 
 
-XXIV 
 
+XIV
 
-A 
 
+A
 
-8 
 
+4
 
-V 
 
+XIX
 
-A 
 
+A
 
 
+1
 
-XXII 
 
+XXVII
 
-A 
 
+B
 
-1 
 
+3
 
-X X 1 V 
 
+X X v
 
-A 
 
+B
 
-9 
 
+3
 
-XXXIII 
 
+XX Y
 
-1) 
 
+B
 
-3 
 
+6
 
-XXI 
 
+XII
 
-C 
 
+B
 
-1 
 
 
-\\\ 
 
+XIV
 
-(' 
 
+B
 
-3 
 
+1
 
-II 
 
+VII
 
-B 
 
+A
 
-2 
 
 
-XX 
 
+XXIV
 
-B 
 
+A
 
-3 
 
+8
 
-XXIX 
 
+V
 
-A 
 
+A
 
-3 
 
 
-III 
 
+XXII
 
-A 
 
+A
 
 
+1
 
-IX 
 
+X X 1 V
 
-D 
 
+A
 
-1 
 
+9
 
-XXVIII 
 
+XXXIII
 
-D 
 
+1)
 
-1 
 
+3
 
-XXI 
 
+XXI
 
-A 
 
+C
 
-• > 
 
+1
 
-\\\ll 
 
+\\\
 
-\ 
 
+('
 
-2 
 
+3
 
-X X Y 1 
 
+II
 
-B 
 
+B
 
-2 
 
+2
 
-XXVI 
 
+XX
 
-B 
 
+B
 
-•> 
 
+3
 
-XXXIII 
 
+XXIX
 
-c 
 
+A
 
-M 
 
+3
 
-Y 
 
+III
 
-B 
 
+A
 
 
 
-\ 
 
+IX
 
-B 
 
+D
 
 
+1
 
-\ 
 
+XXVIII
 
-B 
 
+D
 
 
+1
 
-Y 
 
+XXI
 
-B 
 
+A
 
 
+• >
 
-Y 
 
+\\\ll
 
-B 
 
+\
 
 
+2
 
-Y 
 
+X X Y 1
 
-B 
 
+B
 
 
+2
 
-\ 
 
+XXVI
 
-r. 
 
+B
 
 
+•>
 
-Y 
 
+XXXIII
 
-1! 
 
+c
 
 
+M
 
-Y 
 
+Y
 
-B 
 
+B
 
 
 
-XI Y 
 
+\
 
-\ 
 
+B
 
-•j 
 
 
-11 
 
+\
 
-\ 
 
+B
 
 
 
-WIY 
 
+Y
 
-\ 
 
+B
 
-<; 
 
 
-X X 1 \ 
 
+Y
 
-\ 
 
+B
 
-S 
 
 
-XXI 
 
+Y
 
-c 
 
+B
 
-•j 
 
 
-\\l\ 
 
+\
 
-\ 
 
+r.
 
-! 
 
 
-XIII 
 
+Y
 
-\ 
 
+1!
 
-i 
 
 
-XXIV 
 
+Y
 
-\ 
 
+B
 
-:■ 
 
 
-\\\ 
 
+XI Y
 
-l 
 
+\
 
-.s 
 
+•j
 
-\\\l\ 
 
+11
 
-\ 
 
+\
 
-:i 
 
 
-\\\ 1 
 
+WIY
 
-i 
 
+\
 
-A 
 
+<;
 
 
-140 
+X X 1 \
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+S
 
 
-Edith, by Bois 
-Egmont, by Goethe 
-L812, by Nigond 
-Klectra, by Sophocles 
+XXI
 
-by Euripides 
 
-by Attilius 
+c
 
-by Q. Cicero 
 
-by Pradon 
+•j
 
-l)y Longepierre 
 
-by Crebillon 
+\\l\
 
-by Rochefort 
-" by Chenier 
 
-by Guillard 
-Eleusinians, by Aeschylus 
-Emigrants (Les), by Hirsch 
-Emigre (L'), by Bourget 
-Emilia Galotti, by Lessing 
-Empereur Julien (L') Miracle of Notre- 
+\
 
-Dame 
-Enchantement (L'), by Bataille 
-En detresse, by Fevre 
-Enemy of the People (An), by Ibsen 
-Enigma (The), by Hervieu 
-Enfant du Temple (L'), by de Polhes 
-Enfants du Capitaine Grant (Les), by Verne 
-Enfants naturels (Les), by Sue 
-En greve, by Hirsch 
-Eole, by Euripides 
-Epigones (The), by Aeschylus 
-Epigones (The), by Sophocles 
-Erechtheus, by Euripides 
-p]riphyle, by Sophocles 
-Kriphyle, by Voltaire 
-Esclarmonde, by Massenet 
-Esclave du devoir (L'), by Valnay 
-Esmeralda (La), by Hugo 
-Esther, by Racine 
-Etau (L'j, by A. Sardou 
-Ethiopians (The), by Sophocles 
-Et ma soeur? by Rabier 
-Etrangere (L'), by Dumas fils 
-Etudiant pauvre (L'), by Milloecker 
-Etudiants russes, by Gilkin 
-Eumele, by Sophocles 
 
-and 
-Eumenides (The), by Aeschylus 
+!
 
-and 
-Europa, by Aeschylus 
-Euryale, by Sophocles 
-Eurysaces, by Sophocles 
-Evangeliste (L'), by Daudet 
 
+XIII
 
 
-V 
+\
 
 
-c 
+i
 
 
+XXIV
 
 
-V 
+\
 
 
-c 
+:■
 
 
+\\\
 
 
-XIV 
+l
 
 
-A 
+.s
 
 
-1 
+\\\l\
 
 
-IV 
+\
 
 
-A 
+:i
 
 
-1 
+\\\ 1
 
 
-IV 
+i
 
 
-A 
+A
 
 
-1 
 
+140
 
-IV 
 
 
-A 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-1 
 
+Edith, by Bois
+Egmont, by Goethe
+L812, by Nigond
+Klectra, by Sophocles
 
-IV 
+by Euripides
 
+by Attilius
 
-A 
+by Q. Cicero
 
+by Pradon
 
-1 
+l)y Longepierre
 
+by Crebillon
 
-IV 
+by Rochefort
+" by Chenier
 
+by Guillard
+Eleusinians, by Aeschylus
+Emigrants (Les), by Hirsch
+Emigre (L'), by Bourget
+Emilia Galotti, by Lessing
+Empereur Julien (L') Miracle of Notre-
 
-A 
+Dame
+Enchantement (L'), by Bataille
+En detresse, by Fevre
+Enemy of the People (An), by Ibsen
+Enigma (The), by Hervieu
+Enfant du Temple (L'), by de Polhes
+Enfants du Capitaine Grant (Les), by Verne
+Enfants naturels (Les), by Sue
+En greve, by Hirsch
+Eole, by Euripides
+Epigones (The), by Aeschylus
+Epigones (The), by Sophocles
+Erechtheus, by Euripides
+p]riphyle, by Sophocles
+Kriphyle, by Voltaire
+Esclarmonde, by Massenet
+Esclave du devoir (L'), by Valnay
+Esmeralda (La), by Hugo
+Esther, by Racine
+Etau (L'j, by A. Sardou
+Ethiopians (The), by Sophocles
+Et ma soeur? by Rabier
+Etrangere (L'), by Dumas fils
+Etudiant pauvre (L'), by Milloecker
+Etudiants russes, by Gilkin
+Eumele, by Sophocles
 
+and
+Eumenides (The), by Aeschylus
 
-1 
+and
+Europa, by Aeschylus
+Euryale, by Sophocles
+Eurysaces, by Sophocles
+Evangeliste (L'), by Daudet
 
 
-IV 
 
+V
 
-A 
 
+c
 
-1 
 
 
-IV 
 
+V
 
-A 
 
+c
 
-1 
 
 
-IV 
 
+XIV
 
-A 
 
+A
 
-1 
 
+1
 
-IV 
 
+IV
 
-A 
 
+A
 
-1 
 
+1
 
-IV 
 
+IV
 
-A 
 
+A
 
-1 
 
+1
 
-IV 
 
+IV
 
-A 
 
+A
 
-2 
 
+1
 
-XV 
 
+IV
 
-A 
 
+A
 
-1 
 
+1
 
-XXVIII 
 
+IV
 
-A 
 
+A
 
-1 
 
+1
 
-XXIV 
 
+IV
 
-C 
 
+A
 
 
+1
 
-XXXI 
 
+IV
 
-A 
 
+A
 
-2 
 
+1
 
-XIV 
 
+IV
 
-A 
 
+A
 
-4 
 
+1
 
-VII 
 
+IV
 
-C 
 
+A
 
-2 
 
+1
 
-V 
 
+IV
 
-C 
 
+A
 
 
+1
 
-XXV 
 
+IV
 
-D 
 
+A
 
-1 
 
+2
 
-XX 
 
+XV
 
-A 
 
+A
 
-4 
 
+1
 
-XXXV 
 
+XXVIII
 
 
+A
 
 
+1
 
-XVIII 
 
+XXIV
 
-A 
 
+C
 
-2 
 
 
-XXIV 
 
+XXXI
 
-A 
 
+A
 
-7 
 
+2
 
-XXVI 
 
+XIV
 
-C 
 
+A
 
-2 
 
+4
 
-III 
 
+VII
 
-A 
 
+C
 
-1 
 
+2
 
-IV 
 
+V
 
-A 
 
+C
 
-1 
 
 
-XXIII 
 
+XXV
 
-A 
 
+D
 
-1 
 
+1
 
-IV 
 
+XX
 
-A 
 
+A
 
-1 
 
+4
 
-IV 
 
+XXXV
 
-A 
 
 
-1 
 
 
-XVII 
 
+XVIII
 
-B 
 
+A
 
-2 
 
+2
 
-XXXII 
 
+XXIV
 
-A 
 
+A
 
-3 
 
+7
 
-XXIV 
 
+XXVI
 
-A 
 
+C
 
-11 
 
+2
 
-I 
 
+III
 
-C 
 
+A
 
-1 
 
+1
 
-XVI 
 
+IV
 
-D 
 
+A
 
 
+1
 
-XXXVI 
 
+XXIII
 
-C 
 
+A
 
 
+1
 
-XX VII I 
 
+IV
 
-B 
 
+A
 
 
+1
 
-III 
 
+IV
 
-B 
 
+A
 
-7 
 
+1
 
-XXXIII 
 
+XVII
 
-A 
 
+B
 
-1 
 
+2
 
-XXVII 
 
+XXXII
 
-D 
 
+A
 
-1 
 
+3
 
-XVII 
 
+XXIV
 
-A 
 
+A
 
-1 
 
+11
 
-XXXI 
 
+I
 
-B 
 
+C
 
-5 
 
+1
 
-XXXIV 
 
+XVI
 
-A 
 
+D
 
-2 
 
 
-I 
 
+XXXVI
 
-A 
 
+C
 
-1 
 
 
-X 
 
+XX VII I
 
-A 
 
+B
 
 
 
-XIX 
 
+III
 
-B 
 
+B
 
-2 
 
+7
 
-I 
 
+XXXIII
 
-C 
 
+A
 
-2 
 
+1
 
-XX 
 
+XXVII
 
-B 
 
+D
 
-1 
 
+1
 
 
-INDEX OF PLAYS, NOVELS, ETC. 141 
+XVII
 
 
+A
 
-Exode (L'), by Fauchois 
 
-Exodus of the Hebrews (The), by Ezekiel 
+1
 
-Ezzelino, by A. Mussato 
 
+XXXI
 
 
-Famille d'Armelles (La), by Marras 
+B
 
-Faust, by Goethe 
 
-Fantasio, by Musset 
+5
 
-Fatal Dowry (The), by Massinger 
 
-Faute de l'abbe Mouret (La . by Zola 
+XXXIV
 
-Feast of the Achaians, by Sophocles 
 
-Fedora, by Sardou 
+A
 
-Femme de Claude (Las, by Dumas tils 
 
-Femme de demain (La), by Lefebvre 
+2
 
-Femme X <La), by Bisson 
 
-Fermiere (La), by d'Artois 
+I
 
-Festin de Pierre (Le), by T. Corneille 
 
-Fiacre No. 13, by Dornay 
+A
 
-Fille a Guillotin La . by Fleischmann 
 
-Fille du depute (La), by Morel 
+1
 
-Fille du roi d'Espagne (La , Miracle of 
 
-Notre-Dame 
-Fille Elisa (Lai, by E. de Goncourt 
-Faille sauvage (La), by de Cure! 
-Fils de Jahel (Les), by Mme. Armand 
-Fils de Porthos (Le), by Blavet 
-Fils naturel (Le), by Dumas tils 
-Flore de Frileuse, by Bergerat 
-Fontovejune, by Lope de Vega 
-Fortune des Rougon (La), by Zola 
-Fortune and Misfortune of a Maine, by 
+X
 
-Calderon 
-Fossilcs | Lea), by de (urel 
-Foulards rouges Lee . by Dornay 
-Francillon, by Dumas fija 
-Francois lea bus bleus, by Measager 
-Francoisc de Rimini, l>y A. Thomi 
-Prere d'arme Le . by Garaud 
-Freres ennemia Lea . by Racine 
-Frerea Zemganno Le . by B. <l«' Goncourl 
-Friquel (Le , by Willy and Gyp 
-Fugil ive La . by Picard 
-Furie (La , by B< 
 
-G 
+A
 
-Gardener's Dog The . by I. ope de Vega 
-Gardienne La . by 'l<- Regnier 
-Gavroche, by 1 >on 
-Georgette, by Sardou 
 
 
 
-XXIX 
+XIX
 
 
-A 
+B
 
 
-4 
+2
 
 
-XXXI 
+I
 
 
-A 
+C
 
 
-2 
+2
 
 
-XXX 
+XX
 
 
-c 
+B
 
 
-1 
+1
 
 
-XXV 
 
+INDEX OF PLAYS, NOVELS, ETC. 141
 
-D 
 
 
-o 
+Exode (L'), by Fauchois
 
+Exodus of the Hebrews (The), by Ezekiel
 
-VI 
+Ezzelino, by A. Mussato
 
 
-D 
 
+Famille d'Armelles (La), by Marras
 
-1 
+Faust, by Goethe
 
+Fantasio, by Musset
 
-II 
+Fatal Dowry (The), by Massinger
 
+Faute de l'abbe Mouret (La . by Zola
 
-B 
+Feast of the Achaians, by Sophocles
 
+Fedora, by Sardou
 
-2 
+Femme de Claude (Las, by Dumas tils
 
+Femme de demain (La), by Lefebvre
 
-XXV 
+Femme X <La), by Bisson
 
+Fermiere (La), by d'Artois
 
-c 
+Festin de Pierre (Le), by T. Corneille
 
+Fiacre No. 13, by Dornay
 
-5 
+Fille a Guillotin La . by Fleischmann
 
+Fille du depute (La), by Morel
 
-XXII 
+Fille du roi d'Espagne (La , Miracle of
 
+Notre-Dame
+Fille Elisa (Lai, by E. de Goncourt
+Faille sauvage (La), by de Cure!
+Fils de Jahel (Les), by Mme. Armand
+Fils de Porthos (Le), by Blavet
+Fils naturel (Le), by Dumas tils
+Flore de Frileuse, by Bergerat
+Fontovejune, by Lope de Vega
+Fortune des Rougon (La), by Zola
+Fortune and Misfortune of a Maine, by
 
-A 
+Calderon
+Fossilcs | Lea), by de (urel
+Foulards rouges Lee . by Dornay
+Francillon, by Dumas fija
+Francois lea bus bleus, by Measager
+Francoisc de Rimini, l>y A. Thomi
+Prere d'arme Le . by Garaud
+Freres ennemia Lea . by Racine
+Frerea Zemganno Le . by B. <l«' Goncourl
+Friquel (Le , by Willy and Gyp
+Fugil ive La . by Picard
+Furie (La , by B<
 
+G
 
-1 
+Gardener's Dog The . by I. ope de Vega
+Gardienne La . by 'l<- Regnier
+Gavroche, by 1 >on
+Georgette, by Sardou
 
 
-111 
 
+XXIX
 
-B 
 
+A
 
-2 
 
+4
 
-XXIX 
 
+XXXI
 
-B 
 
+A
 
-5 
 
+2
 
-X X V 
 
+XXX
 
-C 
 
+c
 
-7 
 
+1
 
-XXV 
 
+XXV
 
-B 
 
+D
 
-9 
 
+o
 
-XXVII 
 
+VI
 
-A 
 
+D
 
-1 
 
+1
 
-XXIV 
 
+II
 
-C 
 
+B
 
 
+2
 
-XXXI 
 
+XXV
 
-B 
 
+c
 
-■2 
 
+5
 
-XXXIII 
 
+XXII
 
-D 
 
+A
 
-6 
 
+1
 
-XXIII 
 
+111
 
-A 
 
+B
 
-:? 
 
+2
 
-XXVII 
 
+XXIX
 
-A 
 
+B
 
-;; 
 
+5
 
-XX XII 
 
+X X V
 
-B 
 
+C
 
-•J 
 
+7
 
-XVI 
 
+XXV
 
-A 
 
+B
 
-2 
 
+9
 
-XXXVI 
 
+XXVII
 
-D 
 
+A
 
 
+1
 
-XX 
 
+XXIV
 
-B 
 
+C
 
-2 
 
 
-XXIV 
 
+XXXI
 
-A 
 
+B
 
-5 
 
+■2
 
-XII 
 
+XXXIII
 
-B 
 
+D
 
 
+6
 
-XXVII 
 
+XXIII
 
-B 
 
+A
 
-2 
 
+:?
 
-\ Ml 
 
+XXVII
 
-B 
 
+A
 
-2 
 
+;;
 
-XXX 
 
+XX XII
 
-C 
 
+B
 
-1 
 
+•J
 
-XXIX 
 
+XVI
 
-B 
 
+A
 
-6 
 
+2
 
-XIV 
 
+XXXVI
 
-B 
 
+D
 
-1 
 
 
-X X X V 
 
+XX
 
 
+B
 
 
+2
 
-xx\ 
 
+XXIV
 
-B 
 
+A
 
-•> 
 
+5
 
-XXI\ 
 
+XII
 
-B 
 
+B
 
-(i 
 
 
-\\\ 
 
+XXVII
 
-c 
 
+B
 
-:i 
 
+2
 
-XXI 
 
+\ Ml
 
-D 
 
+B
 
-l 
 
+2
 
-XIII 
 
+XXX
 
-A 
 
+C
 
-• > 
 
+1
 
-\\1 
 
+XXIX
 
-B 
 
+B
 
-1 
 
+6
 
-X\l\ 
 
+XIV
 
-B 
 
+B
 
-6 
 
+1
 
-\\l 
 
+X X X V
 
-1 
 
 
-■2 
 
 
-XXII 
 
+xx\
 
-\ 
 
+B
 
-:. 
 
+•>
 
-XXIV 
 
+XXI\
 
-B 
 
+B
 
 
+(i
 
-XV 
 
+\\\
 
 
+c
 
 
+:i
 
-\ \ Mil 
 
+XXI
 
-B 
 
+D
 
-• 
 
+l
 
-x xvii 
 
+XIII
 
-\ 
 
+A
 
-I 
 
+• >
 
 
-142 
+\\1
 
 
+B
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+1
 
 
-Gerfaut, by C. de Bernard 
+X\l\
 
-Germinal, by Zola 
 
-Germinie Lacerteux, by the Goncourts 
+B
 
-Ghosts, by Ibsen 
 
-Glatigny, by Mendes 
+6
 
-Glaucus Pontius, by Aeschylus 
 
-Glu (La), by Richepin 
+\\l
 
-Gold Bug (The), by Poe 
 
-Goetz de Berlichingen, by Goethe 
+1
 
-Grande Iza (La), by Bouvier 
 
-Grande Marniere (La), by Ohnet 
+■2
 
-Grand soir (Le), by Kampf 
 
-Grands (Les), by Veber and Basset 
+XXII
 
-Great Expectations, by Dickens 
 
-Griffe (La), by Bernstein 
+\
 
-Guebres (Les), by Voltaire 
 
-Guests (The), by Aeschylus 
+:.
 
-Giubor, Miracle of Notre-Dame 
 
+XXIV
 
 
-H 
+B
 
 
 
-Hamlet, by Shakespeare 
 
-Hanouman, Hindu drama 
-Heaven and Earth, by Byron 
-Hecuba, by Euripides 
-Hedda Gabler, by Ibsen 
-Helen, by Euripides 
-Helen Reclaimed, by Sophocles 
-Heliades (The), by Aeschylus 
-Henry IV, by Shakespeare 
-Henry V, by Shakespeare 
+XV
 
 
 
-and 
 
 
 
-and 
+\ \ Mil
 
 
+B
 
-Henry VI, by Shakespeare 
-Henry VIII, by Shakespeare 
-Henri VIII, by Saint-Saens 
-Heraclides (The), by Aeschylus 
-by Euripides 
-Heraclius, by Corneille 
-Heracles Mainomenos, by Euripides 
-Hercules Furens, by Seneca 
-Hercules on (Eta, by Seneca 
-Hermione, Sophocles 
-Hernani, Hugo 
 
-XIX and 
-Herodias, by Flaubert 
-Hero and the Nymph (The), by Kalidasa 
-Hippolyte, by Euripides 
+•
 
-by Seneca 
-His Own Gaoler, by Calderon 
-Homme a deux tetes (L'j, by Forest 
 
+x xvii
 
 
-XXV 
+\
 
 
-c 
+I
 
 
-6 
 
+142
 
-VIII 
 
 
-B 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-2 
 
+Gerfaut, by C. de Bernard
 
-XXII 
+Germinal, by Zola
 
+Germinie Lacerteux, by the Goncourts
 
-c 
+Ghosts, by Ibsen
 
+Glatigny, by Mendes
 
-1 
+Glaucus Pontius, by Aeschylus
 
+Glu (La), by Richepin
 
-XVIII 
+Gold Bug (The), by Poe
 
+Goetz de Berlichingen, by Goethe
 
-B 
+Grande Iza (La), by Bouvier
 
+Grande Marniere (La), by Ohnet
 
-3 
+Grand soir (Le), by Kampf
 
+Grands (Les), by Veber and Basset
 
-XXIV 
+Great Expectations, by Dickens
 
+Griffe (La), by Bernstein
 
-A 
+Guebres (Les), by Voltaire
 
+Guests (The), by Aeschylus
 
-9 
+Giubor, Miracle of Notre-Dame
 
 
-IX 
 
+H
 
-B 
 
 
-2 
+Hamlet, by Shakespeare
 
+Hanouman, Hindu drama
+Heaven and Earth, by Byron
+Hecuba, by Euripides
+Hedda Gabler, by Ibsen
+Helen, by Euripides
+Helen Reclaimed, by Sophocles
+Heliades (The), by Aeschylus
+Henry IV, by Shakespeare
+Henry V, by Shakespeare
 
-XXII 
 
 
-A 
+and
 
 
-5 
 
+and
 
-XI 
 
 
-B 
+Henry VI, by Shakespeare
+Henry VIII, by Shakespeare
+Henri VIII, by Saint-Saens
+Heraclides (The), by Aeschylus
+by Euripides
+Heraclius, by Corneille
+Heracles Mainomenos, by Euripides
+Hercules Furens, by Seneca
+Hercules on (Eta, by Seneca
+Hermione, Sophocles
+Hernani, Hugo
 
+XIX and
+Herodias, by Flaubert
+Hero and the Nymph (The), by Kalidasa
+Hippolyte, by Euripides
 
-1 
+by Seneca
+His Own Gaoler, by Calderon
+Homme a deux tetes (L'j, by Forest
 
 
-V 
 
+XXV
 
-c 
 
+c
 
 
+6
 
-XXXIII 
 
+VIII
 
-B 
 
+B
 
-2 
 
+2
 
-XXIX 
 
+XXII
 
-A 
 
+c
 
-2 
 
+1
 
-VIII 
 
+XVIII
 
-A 
 
+B
 
-1 
 
+3
 
-XXXIII 
 
+XXIV
 
-A 
 
+A
 
-3 
 
+9
 
-XXI 
 
+IX
 
-A 
 
+B
 
-2 
 
+2
 
-XXII 
 
+XXII
 
 
+A
 
 
+5
 
-XIX 
 
+XI
 
-A 
 
+B
 
-2 
 
+1
 
-VII 
 
+V
 
-B 
 
+c
 
 
 
-XXIII 
 
+XXXIII
 
-B 
 
+B
 
-4 
 
+2
 
-IV 
 
+XXIX
 
-A 
 
+A
 
-1 
 
+2
 
-XIII 
 
+VIII
 
-C 
 
+A
 
 
+1
 
-X 
 
+XXXIII
 
-C 
 
+A
 
-2 
 
+3
 
-XXIV 
 
+XXI
 
-A 
 
+A
 
-1 
 
+2
 
-III 
 
+XXII
 
-A 
 
 
-2 
 
 
-XVI 
 
+XIX
 
-A 
 
+A
 
-3 
 
+2
 
-X 
 
+VII
 
-C 
 
+B
 
-1 
 
 
-XII 
 
+XXIII
 
-C 
 
+B
 
 
+4
 
-XIII 
 
+IV
 
-A 
 
+A
 
-1 
 
+1
 
-XXX 
 
+XIII
 
-B 
 
+C
 
 
 
-IX 
 
+X
 
-B 
 
+C
 
-1 
 
+2
 
-XXXIII 
 
+XXIV
 
-A 
 
+A
 
-1 
 
+1
 
-VI 
 
+III
 
-B 
 
+A
 
 
+2
 
-XXV 
 
+XVI
 
-B 
 
+A
 
-5 
 
+3
 
-XXV 
 
+X
 
-B 
 
+C
 
-5 
 
+1
 
-I 
 
+XII
 
-A 
 
+C
 
-1 
 
 
-I 
 
+XIII
 
-A 
 
+A
 
-1 
 
+1
 
-XVIII 
 
+XXX
 
-B 
 
+B
 
-2 
 
 
-XVI 
 
+IX
 
-A 
 
+B
 
-1 
 
+1
 
-XVI 
 
+XXXIII
 
-A 
 
+A
 
-1 
 
+1
 
-XXV 
 
+VI
 
-B 
 
+B
 
-1 
 
 
-X 
 
+XXV
 
-C 
 
+B
 
-2 
 
+5
 
-XXIV 
 
+XXV
 
-A 
 
+B
 
-3 
 
+5
 
-XX 
 
+I
 
-A 
 
+A
 
-1 
 
+1
 
-XXII 
 
+I
 
-B 
 
+A
 
 
+1
 
-XXXV 
 
+XVIII
 
 
+B
 
 
+2
 
-XXVI 
 
+XVI
 
-B 
 
+A
 
-1 
 
+1
 
-XXVI 
 
+XVI
 
-B 
 
+A
 
-1 
 
+1
 
-XXIX 
 
+XXV
 
-B 
 
+B
 
-2 
 
+1
 
-XXXIII 
 
+X
 
-C 
 
+C
 
-6 
 
+2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XXIV
 
 
+A
 
-143 
 
+3
 
 
-Homme de proie (L'j, by Lefevre and 
+XX
 
-Laporte 
-Horace, by l'Aretin 
 
-by Corneille 
-Huron (Le), by Voltaire 
-Hypermnestre, by Metastasio 
-by Riupeiroux 
-by Lemierre, etc. 
-Hypsipyle, by Aeschylus 
-by Euripides 
-by Metastasio 
+A
 
 
+1
 
-Idiot iL'i, by de Lorde 
-Idomenee, by Crebillon 
 
-by Lemiere 
+XXII
 
-by Cienfuegos 
-Illusions perdues (Les), by Balzac 
-Image (L), by Beauborg 
-Impasse (L'), by Fread Amy 
-Indigne, by Barbier 
-Indiscret (L'), by See 
-Inflexible L . by Parodi 
-Ino, by Euripides 
-[nsociale (L'), by Mme. Aurel 
-Intruder (The), by Maeterlinck 
-Iobates, by Sophocles 
-Iolas, by Sophocles 
-Ion, by Kuripides 
-[phlgenia, by Aeschylus 
 
-by Sophocles 
-Iphigenia in Aulis, by Kuripides 
+B
 
-Iphigenie ;'i Aulis, by Racine 
 
-Iphigenia in Tauris, by Buripidt 
 
-by Ooel he 
 
-Iphigenie en Tuaride, projected, by Racine 
-Irene, by Voltaire 
-■ l, by Bernstein 
+XXXV
 
-Ixion, by Aeschylu 
 
-" by Sophoc 
-by Buripide 
 
-3 
 
-.lack the Ripper, by Bertran and Clairian 
-Jack Tempfitl . by Elzear 
-Jacobine Le , by ] iermanl 
-Jacobite Le . by ' loppee 
-Jacques Bonhomme, by Maujan 
-Jacques I 'amour, by Zola 
 
 
+XXVI
 
-X 
 
+B
 
-D 
 
+1
 
-2 
 
+XXVI
 
-XXIII 
 
+B
 
-B 
 
+1
 
-5 
 
+XXIX
 
-XXIII 
 
+B
 
-B 
 
+2
 
-5 
 
+XXXIII
 
-XXI 
 
+C
 
-D 
 
+6
 
-2 
 
 
-XXIII 
+INDEX OF PLAYS, NOVELS, ETC.
 
 
-B 
 
+143
 
-3 
 
 
-XXIII 
+Homme de proie (L'j, by Lefevre and
 
+Laporte
+Horace, by l'Aretin
 
-B 
+by Corneille
+Huron (Le), by Voltaire
+Hypermnestre, by Metastasio
+by Riupeiroux
+by Lemierre, etc.
+Hypsipyle, by Aeschylus
+by Euripides
+by Metastasio
 
 
-3 
 
+Idiot iL'i, by de Lorde
+Idomenee, by Crebillon
 
-XXIII 
+by Lemiere
 
+by Cienfuegos
+Illusions perdues (Les), by Balzac
+Image (L), by Beauborg
+Impasse (L'), by Fread Amy
+Indigne, by Barbier
+Indiscret (L'), by See
+Inflexible L . by Parodi
+Ino, by Euripides
+[nsociale (L'), by Mme. Aurel
+Intruder (The), by Maeterlinck
+Iobates, by Sophocles
+Iolas, by Sophocles
+Ion, by Kuripides
+[phlgenia, by Aeschylus
 
-B 
+by Sophocles
+Iphigenia in Aulis, by Kuripides
 
+Iphigenie ;'i Aulis, by Racine
 
-3 
+Iphigenia in Tauris, by Buripidt
 
+by Ooel he
 
-XXIII 
+Iphigenie en Tuaride, projected, by Racine
+Irene, by Voltaire
+■ l, by Bernstein
 
+Ixion, by Aeschylu
 
-B 
+" by Sophoc
+by Buripide
 
+3
 
-2 
+.lack the Ripper, by Bertran and Clairian
+Jack Tempfitl . by Elzear
+Jacobine Le , by ] iermanl
+Jacobite Le . by ' loppee
+Jacques Bonhomme, by Maujan
+Jacques I 'amour, by Zola
 
 
-XXIII 
 
+X
 
-B 
 
+D
 
-2 
 
+2
 
-XXIII 
 
+XXIII
 
-B 
 
+B
 
-2 
 
+5
 
-III 
 
+XXIII
 
-A 
 
+B
 
-4 
 
+5
 
-XX III 
 
+XXI
 
-A 
 
+D
 
-2 
 
+2
 
-XXIII 
 
+XXIII
 
-A 
 
+B
 
-2 
 
+3
 
-XXIII 
 
+XXIII
 
-A 
 
+B
 
-2 
 
+3
 
-XXX 
 
+XXIII
 
-C 
 
+B
 
-1 
 
+3
 
-X X 1 V 
 
+XXIII
 
-B 
 
+B
 
-8 
 
+2
 
-XV 
 
+XXIII
 
-A 
 
+B
 
-1 
 
+2
 
-V 
 
+XXIII
 
-B 
 
+B
 
 
+2
 
-XVII 
 
+III
 
-A 
 
+A
 
-1 
 
+4
 
-XXVII 
 
+XX III
 
-D 
 
+A
 
-■2 
 
+2
 
-XVI 
 
+XXIII
 
-A 
 
+A
 
-1 
 
+2
 
-XXXVI 
 
+XXIII
 
-B 
 
+A
 
 
+2
 
-XX XVI 
 
+XXX
 
-B 
 
+C
 
 
+1
 
-XXVI 
 
+X X 1 V
 
-B 
 
+B
 
-1 
 
+8
 
-II 
 
+XV
 
-B 
 
+A
 
-2 
 
+1
 
-XIX 
 
+V
 
-B 
 
+B
 
-1 
 
 
-X XIII 
 
+XVII
 
-\ 
 
+A
 
-1 
 
+1
 
-win 
 
+XXVII
 
-A 
 
+D
 
-1 
 
+■2
 
-X X 1 1 1 
 
+XVI
 
-\ 
 
+A
 
-1 
 
+1
 
-XXIII 
 
+XXXVI
 
-A 
 
+B
 
-1 
 
 
-XIX 
 
+XX XVI
 
-c 
 
+B
 
-2 
 
 
-XIX 
 
+XXVI
 
-c 
 
+B
 
-2 
 
+1
 
-XIX 
 
+II
 
-1 
 
+B
 
-2 
 
+2
 
-XXIX 
 
+XIX
 
-B 
 
+B
 
-I 
 
+1
 
-XIX 
 
+X XIII
 
-i 
 
+\
 
 
+1
 
-111 
 
+win
 
-\ 
 
+A
 
-:> 
 
+1
 
-Ml 
 
+X X 1 1 1
 
-\ 
 
+\
 
-5 
 
+1
 
-III 
 
+XXIII
 
-\ 
 
+A
 
-5 
 
+1
 
-III 
 
+XIX
 
-B 
 
+c
 
-7 
 
+2
 
-XXIV 
 
+XIX
 
-\ 
 
+c
 
-8 
 
+2
 
-xx\ 
 
+XIX
 
-c 
 
+1
 
-i 
 
+2
 
-XXV 
 
+XXIX
 
-D 
 
+B
 
-j 
 
+I
 
-\ III 
 
+XIX
 
-I'. 
 
+i
 
-1 
 
 
-xx\ 
 
+111
 
-c 
 
+\
 
-•> 
 
+:>
 
 
-144 
+Ml
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+5
 
 
-Jalousie, by Yacquerie 
+III
 
-Jarnac, by Hennique and Gravier 
 
-Joan Cevenol, by Fraisse 
-Jephthe, by Buchanan 
+\
 
-" by Boyer 
-Jerusalem Delivered, by Tasso 
-Jeu de la Feuillee (Le), by Adam de la Halle 
-Jeu de Robin et de Marion (Le), by Adam 
 
-de la Halle 
-Jeu de Saint-Nicholas (Le), by Jean Bodel 
-Job, by Moses (?) 
-Jocelyn, by Lamartine 
+5
 
-" by Godard 
-Joie de vivre (La), by Zola 
 
-Joueurs d'osselets (Les), by Aeschylus 
+III
 
-Judgment of Arms (The), by Aeschylus 
-Julius Caesar, by Shakespeare 
-Jumeaux (Les), by Hugo 
 
+B
 
 
-K 
+7
 
 
+XXIV
 
-Kermesse rouge, by Eekhoud 
-King John, by Shakespeare 
 
+\
 
 
-Kreutzer Sonata (The), by Tolstoi 
+8
 
 
+xx\
 
-XXXII 
 
+c
 
-c 
 
+i
 
-5 
 
+XXV
 
-XXIII 
 
+D
 
-B 
 
+j
 
-6 
 
+\ III
 
-XXXIII 
 
+I'.
 
-B 
 
+1
 
-3 
 
+xx\
 
-XXIII 
 
+c
 
-A 
 
+•>
 
-2 
 
 
-XXIII 
+144
 
 
-A 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-2 
 
 
-XIX 
+Jalousie, by Yacquerie
 
+Jarnac, by Hennique and Gravier
 
-G 
+Joan Cevenol, by Fraisse
+Jephthe, by Buchanan
 
+" by Boyer
+Jerusalem Delivered, by Tasso
+Jeu de la Feuillee (Le), by Adam de la Halle
+Jeu de Robin et de Marion (Le), by Adam
 
-1 
+de la Halle
+Jeu de Saint-Nicholas (Le), by Jean Bodel
+Job, by Moses (?)
+Jocelyn, by Lamartine
 
+" by Godard
+Joie de vivre (La), by Zola
 
-alle VII 
+Joueurs d'osselets (Les), by Aeschylus
 
+Judgment of Arms (The), by Aeschylus
+Julius Caesar, by Shakespeare
+Jumeaux (Les), by Hugo
 
-C 
 
 
-1 
+K
 
 
-n 
 
-X 
+Kermesse rouge, by Eekhoud
+King John, by Shakespeare
 
 
-A 
 
+Kreutzer Sonata (The), by Tolstoi
 
 
 
-jl II 
+XXXII
 
 
-A 
+c
 
 
+5
 
 
-XXXI 
+XXIII
 
 
-B 
+B
 
 
-1 
+6
 
 
-XXII 
+XXXIII
 
 
-A 
+B
 
 
-1 
+3
 
 
-XXII 
+XXIII
 
 
-A 
+A
 
 
-1 
+2
 
 
-XXIV 
+XXIII
 
 
-B 
+A
 
 
-7 
+2
 
 
-and XXI 
+XIX
 
 
-A 
+G
 
 
-2 
+1
 
 
-III 
+alle VII
 
 
-B 
+C
 
 
-2 
+1
 
 
-and VII 
+n
 
+X
 
-B 
 
+A
 
 
 
-XII 
 
+jl II
 
-C 
 
+A
 
 
 
-XXX 
 
+XXXI
 
-A 
 
+B
 
-2 
 
+1
 
-XXXV 
 
+XXII
 
 
+A
 
 
+1
 
-III 
 
+XXII
 
-A 
 
+A
 
-8 
 
+1
 
-I 
 
+XXIV
 
-A 
 
+B
 
-1 
 
+7
 
-and VI 
 
+and XXI
 
-C 
 
+A
 
-1 
 
+2
 
-XXV 
 
+III
 
-D 
 
+B
 
-1 
 
+2
 
 
-Labors of Jacob, by Lope de Vega 
-Laconian Women (The), by Sophocles 
-Lady from the Sea (The), by Ibsen 
-Lakme, by Delibes 
-Laocoon, by Sophocles 
+and VII
 
-Later Life of Rama (The), by Bhavabuti 
 
-Lawn-tennis, by Mourey 
+B
 
-Legende du Coeur (La), by Aicard 
 
-Lelie, by Willy 
 
-Lemnian Women (The), by Sophocles 
 
-Lena, by Berton and Mme. van Velde 
+XII
 
-Life is a Dream, by Calderon 
 
-Lohengrin, by Wagner 
+C
 
-Loi de l'homme (La), by Hervieu 
 
-Lois de Minos, by Voltaire 
 
-Lorenzaccio, by Musset 
 
-Louis Perez of Galicia, by Calderon 
+XXX
 
-Louis Leclercq, by Verlainc 
 
+A
 
 
-and 
+2
 
 
+XXXV
 
-XIII 
 
 
-A 
 
 
-1 
 
+III
 
-IX 
 
+A
 
-c 
 
+8
 
-1 
 
+I
 
-XXIV 
 
+A
 
-B 
 
+1
 
-8 
 
+and VI
 
-XXIX 
 
+C
 
-A 
 
+1
 
-4 
 
+XXV
 
-V 
 
+D
 
-c 
 
+1
 
 
 
-XXXVI 
+Labors of Jacob, by Lope de Vega
+Laconian Women (The), by Sophocles
+Lady from the Sea (The), by Ibsen
+Lakme, by Delibes
+Laocoon, by Sophocles
 
+Later Life of Rama (The), by Bhavabuti
 
-A 
+Lawn-tennis, by Mourey
 
+Legende du Coeur (La), by Aicard
 
-1 
+Lelie, by Willy
 
+Lemnian Women (The), by Sophocles
 
-XXXV 
+Lena, by Berton and Mme. van Velde
 
+Life is a Dream, by Calderon
 
+Lohengrin, by Wagner
 
+Loi de l'homme (La), by Hervieu
 
+Lois de Minos, by Voltaire
 
+Lorenzaccio, by Musset
 
-XXVI 
+Louis Perez of Galicia, by Calderon
 
+Louis Leclercq, by Verlainc
 
-D 
 
 
-2 
+and
 
 
-XXV 
 
+XIII
 
-D 
 
+A
 
-1 
 
+1
 
-XXII 
 
+IX
 
-C 
 
+c
 
-2 
 
+1
 
-XXIII 
 
+XXIV
 
-B 
 
+B
 
-2 
 
+8
 
-XXVII 
 
+XXIX
 
-B 
 
+A
 
-4 
 
+4
 
-XIII 
 
+V
 
-B 
 
+c
 
-2 
 
 
-II 
 
+XXXVI
 
-A 
 
+A
 
 
+1
 
-XXI 
 
+XXXV
 
-C 
 
 
-3 
 
 
-XIX 
 
+XXVI
 
-A 
 
+D
 
-2 
 
+2
 
-VIII 
 
+XXV
 
-A 
 
+D
 
-1 
 
+1
 
-V 
 
+XXII
 
-A 
 
+C
 
 
+2
 
-XVII 
 
+XXIII
 
-C 
 
+B
 
-2 
 
+2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XXVII
 
 
+B
 
-145 
 
+4
 
 
-Love and Intrigue, by Schiller 
+XIII
 
-Love's Sacrifice, by Ford 
 
-Loves of Krishna The), by Roupa 
+B
 
-Loves of the Three Oranges (The), by Gozzi 
 
-Lucienne, by Gramont 
+2
 
-Lucrece Borgia, by Hugo 
 
-XXIII B 1, XXXII A 2, XIX B 1 and 
-Luther, by Werner 
-Lutte pour la vie (La), by Daudet 
-Lydie, by Miral 
-Lyncee, by Theodecte 
+II
 
-by Abeille 
-Lys (Les>, by Wolf and Leroux 
 
+A
 
 
-XXXII 
 
 
-B 
+XXI
 
 
-3 
+C
 
 
-XX XI I 
+3
 
 
-A 
+XIX
 
 
-3 
+A
 
 
-XXIV 
+2
 
 
-D 
+VIII
 
 
-1 
+A
 
 
-XVIII 
+1
 
 
-D 
+V
 
 
-1 
+A
 
 
-XXV 
 
 
-A 
+XVII
 
 
-1 
+C
 
 
-VI 
+2
 
 
-C 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-3 
 
 
-XIX 
+145
 
 
-D 
 
+Love and Intrigue, by Schiller
 
+Love's Sacrifice, by Ford
 
+Loves of Krishna The), by Roupa
 
-XX 
+Loves of the Three Oranges (The), by Gozzi
 
+Lucienne, by Gramont
 
-A 
+Lucrece Borgia, by Hugo
 
+XXIII B 1, XXXII A 2, XIX B 1 and
+Luther, by Werner
+Lutte pour la vie (La), by Daudet
+Lydie, by Miral
+Lyncee, by Theodecte
 
-4 
+by Abeille
+Lys (Les>, by Wolf and Leroux
 
 
-XV 
 
+XXXII
 
-B 
 
+B
 
 
+3
 
-XXIX 
 
+XX XI I
 
-A 
 
+A
 
-4 
 
+3
 
-XXIII 
 
+XXIV
 
-B 
 
+D
 
-3 
 
+1
 
-XXIII 
 
+XVIII
 
-B 
 
+D
 
-3 
 
+1
 
-xxvm 
 
+XXV
 
-D 
 
+A
 
-1 
 
+1
 
 
-M 
+VI
 
 
+C
 
-Macbeth, by Shakespeare 
 
-Madame Bovary, by Flaubert 
+3
 
-Madame Caverlet, by Augier 
 
-Madame de Maintenon, by Coppee 
+XIX
 
-Madame 1 Amirale, by Mars and Lyon 
 
-Madame la Mort, by Mme. Rachilde 
+D
 
-Madame Margot, by Moreau and Clairville 
 
-Madame Thexese, by Erckmann-Chatrian 
 
-Madeleine, by Zola 
 
-Mile, de Bressier, by Delpit 
+XX
 
-Mile, de Maupin, Gautier 
 
-Madhouranirouddha, by Vira 
+A
 
-Mahaviracharita, by Bhavabuti 
 
-Mahomet, by Voltaire 
+4
 
-Maidens of Trachis, by Sophocles 
 
-Maison d'argile La . by Fabre 
+XV
 
-Maison dee deux Barbeaux I. a , by 
 
-Theuriet 
-Maitrc Le , by J. Jullien 
-Maltre Aml)ros. by Widor 
-Malatia and Madhava, by Bhavabuti 
+B
 
 
 
-Malefilatre Le . bj Porto Riche 
 
-Malheur aux paut ■■ \. Bouvier 
+XXIX
 
-Mauian Colibri, by Bataille 
-Manfred, by Byron 
-niangeront-ils, by Hugo 
 
-Manr,ei|inn ■] I .■ . bj I r uki- 
+A
 
-Manon l.i- r;uit, by PreVOSl 
 
-Maquignon l.< . by i" z and Dumur 
-M archande de • ourii r I ■■•■ . by Judil h 
+4
 
-Gautier 
-Marl Le), by Nu and Arnould 
 
+XXIII
 
 
-and 
+B
 
 
+3
 
-and 
 
+XXIII
 
 
-XXX 
+B
 
 
-c 
+3
 
 
-1 
+xxvm
 
 
-x\\ 
+D
 
 
-c 
+1
 
 
-7 
 
+M
 
-XXVII 
 
 
-A 
+Macbeth, by Shakespeare
 
+Madame Bovary, by Flaubert
 
-1 
+Madame Caverlet, by Augier
 
+Madame de Maintenon, by Coppee
 
-XXI 
+Madame 1 Amirale, by Mars and Lyon
 
+Madame la Mort, by Mme. Rachilde
 
-B 
+Madame Margot, by Moreau and Clairville
 
+Madame Thexese, by Erckmann-Chatrian
 
-12 
+Madeleine, by Zola
 
+Mile, de Bressier, by Delpit
 
-XXVI 
+Mile, de Maupin, Gautier
 
+Madhouranirouddha, by Vira
 
-B 
+Mahaviracharita, by Bhavabuti
 
+Mahomet, by Voltaire
 
+Maidens of Trachis, by Sophocles
 
+Maison d'argile La . by Fabre
 
-XXIV 
+Maison dee deux Barbeaux I. a , by
 
+Theuriet
+Maitrc Le , by J. Jullien
+Maltre Aml)ros. by Widor
+Malatia and Madhava, by Bhavabuti
 
-B 
 
 
-s 
+Malefilatre Le . bj Porto Riche
 
+Malheur aux paut ■■ \. Bouvier
 
-VII] 
+Mauian Colibri, by Bataille
+Manfred, by Byron
+niangeront-ils, by Hugo
 
+Manr,ei|inn ■] I .■ . bj I r uki-
 
-A 
+Manon l.i- r;uit, by PreVOSl
 
+Maquignon l.< . by i" z and Dumur
+M archande de • ourii r I ■■•■ . by Judil h
 
-li 
+Gautier
+Marl Le), by Nu and Arnould
 
 
-X X 1 X 
 
+and
 
-A 
 
 
-1 
+and
 
 
-XXXI V 
 
+XXX
 
-B 
 
+c
 
-1 
 
+1
 
-XXIX 
 
+x\\
 
-B 
 
+c
 
-2 
 
+7
 
-\\ III 
 
+XXVII
 
 
+A
 
 
+1
 
-XXIX 
 
+XXI
 
-A 
 
+B
 
-4 
 
+12
 
-\ 
 
+XXVI
 
-c 
 
+B
 
-■2 
 
 
-XIX 
 
+XXIV
 
-E 
 
+B
 
 
+s
 
-xx\ 
 
+VII]
 
-B 
 
+A
 
-1 
 
+li
 
-XII 
 
+X X 1 X
 
-\ 
 
+A
 
-3 
 
+1
 
-\\\ 
 
+XXXI V
 
-c 
 
+B
 
-4 
 
+1
 
-XIII 
 
+XXIX
 
-B 
 
+B
 
-1 
 
+2
 
-XXXIII 
 
+\\ III
 
-B 
 
 
-1 
 
 
-X 
 
+XXIX
 
-c 
 
+A
 
-1 
 
+4
 
-X X 1 \ 
 
+\
 
-(' 
 
+c
 
-1 
 
+■2
 
-\ \\ 
 
+XIX
 
-1 
 
+E
 
 
 
-XXXI] 
 
+xx\
 
-C 
 
+B
 
-:t 
 
+1
 
-XXII 
 
+XII
 
-c 
 
+\
 
-1 
 
+3
 
-XXXI V 
 
+\\\
 
-\ 
 
+c
 
-1 
 
+4
 
-\XI\ 
 
+XIII
 
-\ 
 
+B
 
-:{ 
 
+1
 
-1 
 
+XXXIII
 
-\ 
 
+B
 
-3 
 
+1
 
-XXV 
 
+X
 
-(" 
 
+c
 
-I 
 
+1
 
-X\\ II 
 
+X X 1 \
 
-B 
 
+('
 
-i. 
 
+1
 
-III 
 
+\ \\
 
-\ 
 
+1
 
-l 
 
 
-XXIX 
 
+XXXI]
 
-H 
 
+C
 
-7 
 
+:t
 
-\x\ 
 
+XXII
 
-1 
 
+c
 
-1 
 
+1
 
 
-146 
+XXXI V
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+1
 
 
-Manage d'Andre (Le), by Lemaire and de 
+\XI\
 
-Rouvre 
-Manage de Mile. Beulemans (Le), by 
 
-Fonson and Wicheler 
-Manage d'Olympe (Le), by Augier 
-Marianne, by Dolce. 
-Marianne, by Tristan l'Hermite 
-Marianne, by Voltaire 
-Marie Stuart, by Alfieri 
-Marie Stuart, by Schiller 
-Marie Stuart, by Samson 
-Marie Tudor, by Hugo 
+\
 
-and 
 
-Marino Faliero, by Byron 
-Marion Delorme, by Hugo 
+:{
 
-and 
 
-Marius vaincu, by Mortier 
+1
 
-Marjolaine (La), by Richepin fils 
 
-Marquis de Priola (Le), by Lavedan 
+\
 
-Martyre, by Dennery 
 
-Martyrs (Les), by Chateaubriand 
+3
 
-Massiere (La), by Lemaitre 
 
-Master Builder (The), by Ibsen 
+XXV
 
-Maternite, by Brieux 
 
-Maucroix (Les), by Delpit 
+("
 
-Measure for Measure, by Shakespeare 
 
-Medea, by Euripides 
+I
 
-" by Corneille 
 
-" by Seneca 
-Mejor Alcalde el Rey (El), by Lope de Vega 
-Meistersinger (Die), by Wagner 
-Melanippe, by Euripides 
-Meleager, by Sophocles 
-Memnon, by Aeschylus 
-Menages de Paris (Les), by Raymond 
-Mensonges, by Bourget 
-Mer (La), by J. Jullien 
-Merchant of Venice (The), by Shakespeare 
-Mere du Pape (La), Miracle of Notre-Dame 
-Mere meurtrier de son enfant (La), Miracle 
+X\\ II
 
-of Notre-Dame 
-Meres ennemies (Les), by Mendes 
-Merope, by Maffei 
-by Voltaire 
 
-" by Alfieri 
-Message of Angada (The), by Soubatha 
-Mill (The), by Lope de Vega 
-Minister's Ring (The), by Vishakadatta 
-Minos, by Sophocles 
-Miroirs (Les,), by Roinard 
+B
 
 
+i.
 
-XVIII 
 
+III
 
 
-B 1 
+\
 
 
+l
 
-XXIV 
 
+XXIX
 
-A 
 
+H
 
-3 
 
+7
 
-XXVII 
 
+\x\
 
-B 
 
+1
 
-8 
 
+1
 
-XXXII 
 
 
-A 
+146
 
 
-1 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-XXXII 
 
 
-A 
+Manage d'Andre (Le), by Lemaire and de
 
+Rouvre
+Manage de Mile. Beulemans (Le), by
 
-1 
+Fonson and Wicheler
+Manage d'Olympe (Le), by Augier
+Marianne, by Dolce.
+Marianne, by Tristan l'Hermite
+Marianne, by Voltaire
+Marie Stuart, by Alfieri
+Marie Stuart, by Schiller
+Marie Stuart, by Samson
+Marie Tudor, by Hugo
 
+and
 
-XXXII 
+Marino Faliero, by Byron
+Marion Delorme, by Hugo
 
+and
 
-A 
+Marius vaincu, by Mortier
 
+Marjolaine (La), by Richepin fils
 
-1 
+Marquis de Priola (Le), by Lavedan
 
+Martyre, by Dennery
 
-XXXIII 
+Martyrs (Les), by Chateaubriand
 
+Massiere (La), by Lemaitre
 
-A 
+Master Builder (The), by Ibsen
 
+Maternite, by Brieux
 
-2 
+Maucroix (Les), by Delpit
 
+Measure for Measure, by Shakespeare
 
-XXIV 
+Medea, by Euripides
 
+" by Corneille
 
-B 
+" by Seneca
+Mejor Alcalde el Rey (El), by Lope de Vega
+Meistersinger (Die), by Wagner
+Melanippe, by Euripides
+Meleager, by Sophocles
+Memnon, by Aeschylus
+Menages de Paris (Les), by Raymond
+Mensonges, by Bourget
+Mer (La), by J. Jullien
+Merchant of Venice (The), by Shakespeare
+Mere du Pape (La), Miracle of Notre-Dame
+Mere meurtrier de son enfant (La), Miracle
 
+of Notre-Dame
+Meres ennemies (Les), by Mendes
+Merope, by Maffei
+by Voltaire
 
-2 
+" by Alfieri
+Message of Angada (The), by Soubatha
+Mill (The), by Lope de Vega
+Minister's Ring (The), by Vishakadatta
+Minos, by Sophocles
+Miroirs (Les,), by Roinard
 
 
-XXIV 
 
+XVIII
 
-B 
 
 
-2 
+B 1
 
 
-XXIV 
 
+XXIV
 
-B 
 
+A
 
-3 
 
+3
 
-XIX 
 
+XXVII
 
 
+B
 
 
+8
 
-VI 
 
+XXXII
 
-c 
 
+A
 
-1 
 
+1
 
-XXVII 
 
+XXXII
 
-B 
 
+A
 
-4 
 
+1
 
-XIX 
 
+XXXII
 
 
+A
 
 
+1
 
-XXX 
 
+XXXIII
 
-A 
 
+A
 
-3 
 
+2
 
-XXIV 
 
+XXIV
 
-A 
 
+B
 
-6 
 
+2
 
-XXVII 
 
+XXIV
 
-A 
 
+B
 
-1 
 
+2
 
-XXI 
 
+XXIV
 
-C 
 
+B
 
-1 
 
+3
 
-XXXI 
 
+XIX
 
-A 
 
 
-2 
 
 
-XIV 
 
+VI
 
-B 
 
+c
 
-1 
 
+1
 
-XVII 
 
+XXVII
 
-A 
 
+B
 
-1 
 
+4
 
-VI 
 
+XIX
 
-D 
 
 
-1 
 
 
-XIV 
 
+XXX
 
-A 
 
+A
 
-1 
 
+3
 
-XXI 
 
+XXIV
 
-D 
 
+A
 
-2 
 
+6
 
-XXV 
 
+XXVII
 
-A 
 
+A
 
-1 
 
+1
 
-XXV 
 
+XXI
 
-A 
 
+C
 
-1 
 
+1
 
-XXV 
 
+XXXI
 
-A 
 
+A
 
-1 
 
+2
 
-III 
 
+XIV
 
-A 
 
+B
 
-3 
 
+1
 
-XXIV 
 
+XVII
 
-A 
 
+A
 
-9 
 
+1
 
-XXIII 
 
+VI
 
-B 
 
+D
 
-1 
 
+1
 
-IV 
 
+XIV
 
-B 
 
+A
 
 
+1
 
-IX 
 
+XXI
 
-B 
 
+D
 
-2 
 
+2
 
-XXV 
 
+XXV
 
-B 
 
+A
 
-3 
 
+1
 
-XXVII 
 
+XXV
 
-B 
 
+A
 
-7 
 
+1
 
-XIII 
 
+XXV
 
-D 
 
+A
 
 
+1
 
-III 
 
+III
 
-B 
 
+A
 
-6 
 
+3
 
-XXXI 
 
+XXIV
 
-B 
 
+A
 
-4 
 
+9
 
-XVII 
 
+XXIII
 
-C 
 
+B
 
-2 
 
+1
 
-XXV 
 
+IV
 
-B 
 
+B
 
-2 
 
 
-XIX 
 
+IX
 
-B 
 
+B
 
-1 
 
+2
 
-XIX 
 
+XXV
 
-B 
 
+B
 
-1 
 
+3
 
-XIX 
 
+XXVII
 
-B 
 
+B
 
-1 
 
+7
 
-X 
 
+XIII
 
-C 
 
+D
 
-2 
 
 
-XXIV 
 
+III
 
-A 
 
+B
 
-5 
 
+6
 
-XII 
 
+XXXI
 
-A 
 
+B
 
 
+4
 
-I 
 
+XVII
 
-A 
 
+C
 
-1 
 
+2
 
-XXV 
 
+XXV
 
-D 
 
+B
 
-1 
 
+2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XIX
 
 
+B
 
-147 
 
+1
 
 
-Miss Fanfare, by Ganderax XXV 
+XIX
 
-Miss Sara Sampson, by Lessing XXV 
-Mission de Jeanne d'Arc (La), by Dalliere VIII 
 
-Mithridate, by Racine XIX 
-Mon ami Teddy, by Rivoire and Bernard XXIV 
+B
 
-Mon frere, by Mercereau XIII 
 
-Monna Vanna, by Maeterlinck XXXII 
+1
 
-Monsieur Alphonse, by Dumas fils X XVII 
 
-Monsieur Bute, by Biollay ■ XVI 
+XIX
 
-Monsieur de Morat, by Tarbe XXV 
-Montansier (La;, by Jeoffrin, de Flers and 
 
-de Caillavet XXV 
+B
 
-Monte Cristo, by Dumas pere ill 
 
-Montmartre, by Frondaie \ XVIII 
+1
 
-Morte de Cesar (La), by Voltaire XXX 
 
-Morte (La), by Barlatier XXIV 
+X
 
-Mouettes (Lesj, by P. Adam X XIII 
 
-Mrigancalckha, by Viswanatha \ XIV 
+C
 
-Mrs. Warren's Profession, by Shaw XXVII 
-Much Ado About Nothing, by Shakespeare X X X 1 1 
 
-Myrane, by Bergerat XXV 
+2
 
-Myrmidons (The), by Aeschylus VI 
 
-Myrrha, by Alfieri XXV] 
+XXIV
 
-Myrtille, by Hrckmann-Chatrian XXVIII 
 
-Mysians (The), by Aeschylus 1 
+A
 
-Mystery of Adam (The), XII Century VI 
 
+5
 
 
-B 
+XII
 
 
-7 
+A
 
 
-A 
 
 
-1 
+I
 
 
-B 
+A
 
 
-1 
+1
 
 
-B 
+XXV
 
 
-1 
+D
 
 
-A 
+1
 
 
-7 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-A 
 
 
-o 
+147
 
 
-A 
 
+Miss Fanfare, by Ganderax XXV
 
-1 
+Miss Sara Sampson, by Lessing XXV
+Mission de Jeanne d'Arc (La), by Dalliere VIII
 
+Mithridate, by Racine XIX
+Mon ami Teddy, by Rivoire and Bernard XXIV
 
-B 
+Mon frere, by Mercereau XIII
 
+Monna Vanna, by Maeterlinck XXXII
 
-7 
+Monsieur Alphonse, by Dumas fils X XVII
 
+Monsieur Bute, by Biollay ■ XVI
 
-A 
+Monsieur de Morat, by Tarbe XXV
+Montansier (La;, by Jeoffrin, de Flers and
 
+de Caillavet XXV
 
-3 
+Monte Cristo, by Dumas pere ill
 
+Montmartre, by Frondaie \ XVIII
 
-B 
+Morte de Cesar (La), by Voltaire XXX
 
+Morte (La), by Barlatier XXIV
 
-3 
+Mouettes (Lesj, by P. Adam X XIII
 
+Mrigancalckha, by Viswanatha \ XIV
 
-C 
+Mrs. Warren's Profession, by Shaw XXVII
+Much Ado About Nothing, by Shakespeare X X X 1 1
 
+Myrane, by Bergerat XXV
 
-3 
+Myrmidons (The), by Aeschylus VI
 
+Myrrha, by Alfieri XXV]
 
-B 
+Myrtille, by Hrckmann-Chatrian XXVIII
 
+Mysians (The), by Aeschylus 1
 
-4 
+Mystery of Adam (The), XII Century VI
 
 
-E 
 
+B
 
 
+7
 
-A 
 
+A
 
-o 
 
-id 
+1
 
 
-B 
+B
 
 
-8 
+1
 
 
-A 
+B
 
 
-3 
+1
 
 
-A 
+A
 
 
-1 
+7
 
 
-A 
+A
 
 
-1 
+o
 
 
-B 
+A
 
 
-1 
+1
 
 
-B 
+B
 
 
-7 
+7
 
 
-A 
+A
 
 
-1 
+3
 
 
-A 
+B
 
 
-2 
+3
 
 
-A 
+C
 
 
-•■> 
+3
 
 
-B 
+B
 
 
-~{ 
+4
 
 
+E
 
-A :\ 
 
 
 
-N 
+A
 
-Nana, by Zola 
 
-Nana-Sahih, by Richepin 
+o
 
-Naninc, by Voltaire 
+id
 
-Natural Daughter The), by < loethe 
 
-Nauplius, by Sophocles 
+B
 
-Nausicaa, by Sophocle 
 
-Necklace The , by Sn Harshadeva 
+8
 
-N'emea, by \& chylufl 
-Nereides (The , by Aeschylus 
 
-Nick Tarter, by Livel ami I'.i son 
+A
 
-Nicomede, by < lorneille 
 
-Niebelung Tin- , bj \\ agner 
+3
 
-Nina de Plata (La . by Lope de \ ega 
 
-Ninety-Three, bj 1 1 
+A
 
-Nioiie, by Aeschj It 
 
-Niohe, by Sophocle 
+1
 
-Nitet is, by MetaSta ,,, 
 
-Noces Corinl hienne I * . by Fra 
+A
 
-Nurse- The , by Aeschylus 
 
-Nouveau Monde I i 
+1
 
-Adam 
 
+B
 
 
-XXII 
+1
 
 
-\ 
+B
 
 
-6 
+7
 
 
-V 
+A
 
 
-(• 
+1
 
 
+A
 
 
-X X \ III 
+2
 
 
-A 
+A
 
 
-1 
+•■>
 
 
-\ II 
+B
 
 
-\ 
+~{
 
 
 
+A :\
 
-III 
 
 
-\ 
+N
 
+Nana, by Zola
 
-•> 
+Nana-Sahih, by Richepin
 
+Naninc, by Voltaire
 
-1 
+Natural Daughter The), by < loethe
 
+Nauplius, by Sophocles
 
-B 
+Nausicaa, by Sophocle
 
+Necklace The , by Sn Harshadeva
 
-1 
+N'emea, by \& chylufl
+Nereides (The , by Aeschylus
 
+Nick Tarter, by Livel ami I'.i son
 
-XXIV 
+Nicomede, by < lorneille
 
+Niebelung Tin- , bj \\ agner
 
-1) 
+Nina de Plata (La . by Lope de \ ega
 
+Ninety-Three, bj 1 1
 
-:i 
+Nioiie, by Aeschj It
 
+Niohe, by Sophocle
 
-IX 
+Nitet is, by MetaSta ,,,
 
+Noces Corinl hienne I * . by Fra
 
-\ 
+Nurse- The , by Aeschylus
 
+Nouveau Monde I i
 
+Adam
 
 
-III 
 
+XXII
 
-\ 
 
+\
 
-7 
 
+6
 
-III 
 
+V
 
-C 
 
+(•
 
 
 
-\ 
 
+X X \ III
 
-c 
 
+A
 
 
+1
 
-\ 
 
+\ II
 
-c 
 
+\
 
 
 
-\.\l\ 
 
+III
 
-\ 
 
+\
 
-6 
 
+•>
 
-Will 
 
+1
 
-\ 
 
+B
 
-a 
 
+1
 
-\\\ 1 
 
+XXIV
 
-\ 
 
+1)
 
-i 
 
+:i
 
-\.\\l 
 
+IX
 
-1', 
 
+\
 
-i 
 
 
-XXVIII 
 
+III
 
-A 
 
+\
 
-i 
 
+7
 
-XXIX 
 
+III
 
-\ 
 
+C
 
-i 
 
 
-■•. 1 
 
+\
 
-B 
 
+c
 
-i 
 
 
 
-\ x \ 
+\
 
 
+c
 
-(' 1 
 
 
 
-US 
+\.\l\
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+6
 
 
-Nuit de Saint-Jean (La), by Erekmann- 
+Will
 
-Chatrian XXIV 
 
-Numa Roumestan, by Daudet XXV 
+\
 
 
+a
 
-A 7 
-B 2 
 
+\\\ 1
 
 
-O 
+\
 
 
+i
 
-Obstacle (L'), by Daudet 
-Octavia, by Seneca 
-Odette, by Sardou 
-OZdipus, by Aeschylus 
 
-by Sophocles 
+\.\\l
 
-by Corneille 
 
-by Seneca 
+1',
 
-by Voltaire, etc. 
-CEdipus at Colonus, by Sophocles 
 
-CBnee, by Sophocles 
-GEnomaus, by Sophocles 
-by Euripides 
-OZuvre (L'), by Zola 
-Ogre (L'), by Marthold 
-Oicles, by Sophocles 
-Olympiade, by Metastasio 
-Olympie, by Voltaire 
+i
 
-On ne badine pas avec l'amour, by Musset 
-Opium, by Bonnetain 
-Or (L'), by Peter and Danceny 
-Orbeeehe, by Giraldi 
-Oreille fendue (L ), by Nepoty 
-Orestes, by Euripides 
-Oreste, by Alfieri 
 
-by Voltaire 
-Orithyie, by Aeschylus 
+XXVIII
 
-" by Sophocles 
-Othello, by Shakespeare 
-Othon, by Corneille 
 
+A
 
 
-XXIV 
+i
 
 
-A 
+XXIX
 
 
-8 
+\
 
 
-XV 
+i
 
 
-B 
+■•. 1
 
 
+B
 
 
-XXVII 
+i
 
 
-A 
 
+\ x \
 
-1 
 
 
-XVIII 
+(' 1
 
 
-A 
 
+US
 
-1 
 
 
-XVIII 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-A 
 
+Nuit de Saint-Jean (La), by Erekmann-
 
-1 
+Chatrian XXIV
 
+Numa Roumestan, by Daudet XXV
 
-XVIII 
 
 
-A 
+A 7
+B 2
 
 
-1 
 
+O
 
-XVIII 
 
 
-A 
+Obstacle (L'), by Daudet
+Octavia, by Seneca
+Odette, by Sardou
+OZdipus, by Aeschylus
 
+by Sophocles
 
-1 
+by Corneille
 
+by Seneca
 
-XVIII 
+by Voltaire, etc.
+CEdipus at Colonus, by Sophocles
 
+CBnee, by Sophocles
+GEnomaus, by Sophocles
+by Euripides
+OZuvre (L'), by Zola
+Ogre (L'), by Marthold
+Oicles, by Sophocles
+Olympiade, by Metastasio
+Olympie, by Voltaire
 
-A 
+On ne badine pas avec l'amour, by Musset
+Opium, by Bonnetain
+Or (L'), by Peter and Danceny
+Orbeeehe, by Giraldi
+Oreille fendue (L ), by Nepoty
+Orestes, by Euripides
+Oreste, by Alfieri
 
+by Voltaire
+Orithyie, by Aeschylus
 
-1 
+" by Sophocles
+Othello, by Shakespeare
+Othon, by Corneille
 
 
-I 
 
+XXIV
 
-A 
 
+A
 
-3 
 
+8
 
-and XII 
 
+XV
 
-A 
 
+B
 
 
 
-II 
 
+XXVII
 
-B 
 
+A
 
-2 
 
+1
 
-IX 
 
+XVIII
 
-D 
 
+A
 
-2 
 
+1
 
-IX 
 
+XVIII
 
-D 
 
+A
 
-2 
 
+1
 
-XX 
 
+XVIII
 
-A 
 
+A
 
-4 
 
+1
 
-XXXIII 
 
+XVIII
 
-D 
 
+A
 
-3 
 
+1
 
-I 
 
+XVIII
 
-A 
 
+A
 
-1 
 
+1
 
-XIX 
 
+I
 
-B 
 
+A
 
-1 
 
+3
 
-XXIX 
 
+and XII
 
-B 
 
+A
 
-1 
 
 
->t XVII 
 
+II
 
-C 
 
+B
 
-2 
 
+2
 
-XXII 
 
+IX
 
-C 
 
+D
 
-2 
 
+2
 
-III 
 
+IX
 
-A 
 
+D
 
-1 
 
+2
 
-IV 
 
+XX
 
-D 
 
+A
 
 
+4
 
-XXVII 
 
+XXXIII
 
-A 
 
+D
 
-3 
 
+3
 
-XXIV 
 
+I
 
-A 
 
+A
 
-2 
 
+1
 
-XXXIV 
 
+XIX
 
-A 
 
+B
 
-2 
 
+1
 
-XXXIV 
 
+XXIX
 
-A 
 
+B
 
-2 
 
+1
 
-X 
 
+>t XVII
 
-A 
 
+C
 
 
+2
 
-X 
 
+XXII
 
-A 
 
+C
 
 
+2
 
-XXXII 
 
+III
 
-B 
 
+A
 
-1 
 
+1
 
-XX 
 
+IV
 
-B 
 
+D
 
-1 
 
 
 
-Page blanche, by Devore 
+XXVII
 
-Pain d'autrui (Le), by Ephraim and 
 
-Schutz, after Turgeniev 
-Palamede, by Aechylus 
-Palamede, by Euripides 
+A
 
-Palamede, by Sophocles 
-Pandore, by Voltaire 
 
-Pandore, by Goethe 
+3
 
-Papa, by de Flers and de Caillavet 
 
+XXIV
 
 
-XXV 
+A
 
 
+2
 
-C 1 
 
+XXXIV
 
 
-XIX 
+A
 
 
-E 
+2
 
 
+XXXIV
 
 
-XI 
+A
 
 
-C 
+2
 
 
-3 
+X
 
 
-XI 
+A
 
 
-C 
 
 
-3 
+X
 
 
-and XXXIII 
+A
 
 
-C 
 
 
-2 
+XXXII
 
 
-XXXIII 
+B
 
 
-C 
+1
 
 
-2 
+XX
 
 
-XXIV 
+B
 
 
-A 
+1
 
 
-1 
 
+Page blanche, by Devore
 
-and XVII 
+Pain d'autrui (Le), by Ephraim and
 
+Schutz, after Turgeniev
+Palamede, by Aechylus
+Palamede, by Euripides
 
-C 
+Palamede, by Sophocles
+Pandore, by Voltaire
 
+Pandore, by Goethe
 
-1 
+Papa, by de Flers and de Caillavet
 
 
-XVII 
 
+XXV
 
-C 
 
 
-1 
+C 1
 
 
-XIV 
 
+XIX
 
-B 
 
+E
 
-1 
 
 
 
-INDEX OF PLAYS, NOVELS, ETC. 149 
+XI
 
 
+C
 
-Paraitre, by Donnay 
-Parsifal, by Wagner 
-Partage de midi, by Claudel 
-Passageres (Les), by Coolus 
-Patrie, by Paladilhe and Sardou 
-Peau d'ane, by Perrault 
-Peche de Marthe (Le), by Rochard 
-Peleus, by Sophocles 
 
-Peleus, by Euripides 
+3
 
-Pelerin d'amour (Le), by Emile-Michelet 
 
-Peliades (The), by Euripides 
+XI
 
-Pelias, by Sophocles 
 
-Pelleas and Melisande, by Maeterlinck 
-Pelopides (The), by Voltaire 
-Penelope, by Aeschylus 
-Pentheus, by Aeschylus 
-Penthesilea, by Aeschylus 
-Pere Chasselas (Le), by Athis 
-Pere prodigue (Le), by Dumas fils 
-Pericles, by Shakespeare 
+C
 
-Perkin Warbeck, by Ford 
-Perrhoebides (The), by Aeschylus 
-Persians (The), by Aeschylus 
-Pertharite, by Corneille 
-Petit ami (Le), by Leautaud 
-Petite amie (La), by Brieux 
-Petite Caporale (La), by Darlay and 
 
-Gorssc 
-Petite chocolatiere (La), by Gavaull 
-Petite Hollande, by (iuitry 
-Petite milliardaire (La), by Dumay and 
+3
 
-Fori 
 
-Pet ite Mionne La , liy RicheboUTg 
+and XXXIII
 
-Pel ite paroisse (La , by I >aude1 
-Petit Jacques i Le i, by I tannery 
-Pel ii Poucel Le . by Perraull 
 
-Phaedra, liy Sophocles 
+C
 
-Phaeton, by Euripide 
 
-Pheaciana (The , by Sophocle 
-Phedre, by Racine 
+2
 
-Philippe 1 1, hy Allien 
 
-PhilOCteteS, hy Aeschylus 
-by Sophocles 
+XXXIII
 
-by Euripide 
-Philoctete in Troy, by Sophocle 
-Phineu . by Ae chylua 
 
+C
 
 
-XXV 
+2
 
 
-D 
+XXIV
 
 
-1 
+A
 
 
-IX 
+1
 
 
-C 
+and XVII
 
 
-2 
+C
 
 
-XV 
+1
 
 
-A 
+XVII
 
 
-1 
+C
 
 
-XXIV 
+1
 
 
-B 
+XIV
 
 
-6 
+B
 
 
-XXV 
+1
 
 
-D 
 
+INDEX OF PLAYS, NOVELS, ETC. 149
 
-2 
 
 
-XXVI 
+Paraitre, by Donnay
+Parsifal, by Wagner
+Partage de midi, by Claudel
+Passageres (Les), by Coolus
+Patrie, by Paladilhe and Sardou
+Peau d'ane, by Perrault
+Peche de Marthe (Le), by Rochard
+Peleus, by Sophocles
 
+Peleus, by Euripides
 
-A 
+Pelerin d'amour (Le), by Emile-Michelet
 
+Peliades (The), by Euripides
 
-3 
+Pelias, by Sophocles
 
+Pelleas and Melisande, by Maeterlinck
+Pelopides (The), by Voltaire
+Penelope, by Aeschylus
+Pentheus, by Aeschylus
+Penthesilea, by Aeschylus
+Pere Chasselas (Le), by Athis
+Pere prodigue (Le), by Dumas fils
+Pericles, by Shakespeare
 
-XXVIII 
+Perkin Warbeck, by Ford
+Perrhoebides (The), by Aeschylus
+Persians (The), by Aeschylus
+Pertharite, by Corneille
+Petit ami (Le), by Leautaud
+Petite amie (La), by Brieux
+Petite Caporale (La), by Darlay and
 
+Gorssc
+Petite chocolatiere (La), by Gavaull
+Petite Hollande, by (iuitry
+Petite milliardaire (La), by Dumay and
 
-B 
+Fori
 
+Pet ite Mionne La , liy RicheboUTg
 
+Pel ite paroisse (La , by I >aude1
+Petit Jacques i Le i, by I tannery
+Pel ii Poucel Le . by Perraull
 
+Phaedra, liy Sophocles
 
-II 
+Phaeton, by Euripide
 
+Pheaciana (The , by Sophocle
+Phedre, by Racine
 
-B 
+Philippe 1 1, hy Allien
 
+PhilOCteteS, hy Aeschylus
+by Sophocles
 
-1 
+by Euripide
+Philoctete in Troy, by Sophocle
+Phineu . by Ae chylua
 
 
-and VII 
 
+XXV
 
-C 
 
+D
 
-1 
 
+1
 
-VII 
 
+IX
 
-C 
 
+C
 
-1 
 
+2
 
-XXVII 
 
+XV
 
-B 
 
+A
 
-7 
 
+1
 
-XIX 
 
+XXIV
 
-E 
 
+B
 
 
+6
 
-XVII 
 
+XXV
 
-C 
 
+D
 
-4 
 
+2
 
-and XIX 
 
+XXVI
 
-E 
 
+A
 
 
+3
 
-XIV 
 
+XXVIII
 
-A 
 
+B
 
-3 
 
 
-XIII 
 
+II
 
-A 
 
+B
 
-2 
 
+1
 
-III 
 
+and VII
 
-B 
 
+C
 
-2 
 
+1
 
-XXXI 
 
+VII
 
-A 
 
+C
 
-1 
 
+1
 
-XXXVI 
 
+XXVII
 
-C 
 
+B
 
 
+7
 
-X X X Y 
 
+XIX
 
 
+E
 
 
 
-XIV 
 
+XVII
 
-B 
 
+C
 
-1 
 
+4
 
-XI 
 
+and XIX
 
-B 
 
+E
 
-2 
 
 
-and XXXV 
 
+XIV
 
 
+A
 
 
+3
 
-X X X 
 
+XIII
 
-B 
 
+A
 
 
+2
 
-111 
 
+III
 
-A 
 
+B
 
-5 
 
+2
 
-VI 
 
+XXXI
 
-A 
 
+A
 
-1 
 
+1
 
-XXI 
 
+XXXVI
 
-D 
 
+C
 
-2 
 
 
-XXVI 
 
+X X X Y
 
-A 
 
 
-1 
 
 
-XXVIU 
 
+XIV
 
-A 
 
+B
 
-v) 
 
+1
 
-IX 
 
+XI
 
-1) 
 
+B
 
-• ) 
 
+2
 
-xxvin 
 
+and XXXV
 
-A 
 
 
-• > 
 
 
-X X 1 Y 
 
+X X X
 
-B 
 
+B
 
-(i 
 
 
-X X 1 Y 
 
+111
 
-A 
 
+A
 
-7 
 
+5
 
-XIX 
 
+VI
 
-A 
 
+A
 
-:t 
 
+1
 
-XXV 
 
+XXI
 
-c 
 
+D
 
-•1 
 
+2
 
-XXI 
 
+XXVI
 
-1) 
 
+A
 
-l 
 
+1
 
-VI 
 
+XXVIU
 
-1) 
 
+A
 
-o 
 
+v)
 
-XXVI 
 
+IX
 
-B 
 
+1)
 
-1 
 
+• )
 
-XVII 
 
+xxvin
 
-\ 
 
+A
 
-1 
 
+• >
 
-and XXXI 
 
+X X 1 Y
 
-l'. 
 
+B
 
-6 
 
+(i
 
-1 
 
+X X 1 Y
 
-K 
 
+A
 
-l 
 
+7
 
-\\\ 1 
 
+XIX
 
-1'. 
 
+A
 
-l 
 
+:t
 
-\1\ 
 
+XXV
 
-B 
 
+c
 
-3 
 
+•1
 
-and XXV] 
 
+XXI
 
-H 
 
+1)
 
-• > 
 
+l
 
-XII 
 
+VI
 
-A 
 
+1)
 
 
+o
 
-\ll 
 
+XXVI
 
-\ 
 
+B
 
 
+1
 
-Ml 
 
+XVII
 
-\ 
 
+\
 
 
+1
 
-1 
 
+and XXXI
 
-K 
 
+l'.
 
-:i 
 
+6
 
-l\ 
 
+1
 
-B 
 
+K
 
-•> 
 
+l
 
 
-150 
+\\\ 1
 
 
+1'.
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+l
 
 
-Phineus, by Sophocles 
-Phoenissae (The), by Aeschylus 
-" by Euripides 
-" " by Seneca 
+\1\
 
-Phoenix, by Euripides 
-Phorcides (The), by Aeschylus 
-Phrixus, by Sophocles 
-Phrixus, by Euripides 
-Phrygians (The), by Aeschylus 
-Phtiotides (The), by Sophocles 
-Physician of his Honor (The), by Calderon 
-Pierre et Jean, by Maupassant 
-Pierre et Therese, by Prevost 
-Pierre Pascal, by Mme. de Chabrihan 
-Pierre Vaux, by Jonathan 
-Pierrot assassin de sa femme, by 
-Margueritte 
 
-Pierrots (Les), by Grillet 
+B
 
-Pieuvre (La), by Morel 
 
-Plus faible (La), by Prevost 
+3
 
-Policiere (La), by Montepin 
 
-Polydectes, by Aeschylus 
+and XXV]
 
-Polyeucte, by Corneille 
 
-Polyidus, by Sophocles 
-" by Euripides 
+H
 
-Polynice, by Alfieri 
 
-Polyheme, by Samain 
+• >
 
-Polyxena, by Sophocles 
 
-Pompee, by Corneille 
+XII
 
-Port-Tarascon, by Daudet 
 
-Portrait (The), by Massinger 
+A
 
-Possede (Le), by Lemonnier 
 
-Pot-Bouille, by Zola 
 
-Poupees electriques, by Marinetti 
 
-Poussin (Le), by Guiraud 
+\ll
 
-Powers of Darkness (The), by Tolstoi 
 
-and 
+\
 
-Pretre (Le), by Buet 
-Priestesses (The), by Aeschylus 
-Princesse de Bagdad (La), by Dumas fila 
-Princesse Georges (La), by Dumas fila 
-Princess Maleine (The), by Maeterlinck 
-Prince Zilah (The), by Claretie 
-Procris, by Sophocles 
-Prometheus, by Aeschylus 
-Prometheus Bound, by Aeschylus 
 
 
 
-II 
+Ml
 
-XX 
 
-XIII 
+\
 
-XIII 
 
-XIV 
 
-IX 
 
-III 
-III 
-I 
+1
 
-XXXII 
 
-XXV 
+K
 
-XIV 
 
-XXVII 
+:i
 
-XV 
 
-XXI 
+l\
 
 
+B
 
-and 
 
+•>
 
 
-Prometheus Unbound, by Aeschylus 
-Propompes (The), by Aeschylus 
-Proserpine, by Vacquerie and Saint-Saens 
-Protesilas, by Euripides 
 
+150
 
 
-XXXIV 
 
-XXXIII 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-XXXIII 
 
-XXVIII 
 
-XXVII 
+Phineus, by Sophocles
+Phoenissae (The), by Aeschylus
+" by Euripides
+" " by Seneca
 
-XIX 
+Phoenix, by Euripides
+Phorcides (The), by Aeschylus
+Phrixus, by Sophocles
+Phrixus, by Euripides
+Phrygians (The), by Aeschylus
+Phtiotides (The), by Sophocles
+Physician of his Honor (The), by Calderon
+Pierre et Jean, by Maupassant
+Pierre et Therese, by Prevost
+Pierre Pascal, by Mme. de Chabrihan
+Pierre Vaux, by Jonathan
+Pierrot assassin de sa femme, by
+Margueritte
 
-XX 
+Pierrots (Les), by Grillet
 
-XI 
+Pieuvre (La), by Morel
 
-XI 
+Plus faible (La), by Prevost
 
-XIII 
+Policiere (La), by Montepin
 
-XXIV 
+Polydectes, by Aeschylus
 
-XXXVI 
+Polyeucte, by Corneille
 
-III 
+Polyidus, by Sophocles
+" by Euripides
 
-XVII 
+Polynice, by Alfieri
 
-XXXII 
+Polyheme, by Samain
 
-XXII 
+Polyxena, by Sophocles
 
-XXV 
+Pompee, by Corneille
 
-XXXIII 
+Port-Tarascon, by Daudet
 
-XXVIII 
+Portrait (The), by Massinger
 
-XIII 
+Possede (Le), by Lemonnier
 
-XV 
+Pot-Bouille, by Zola
 
-III 
+Poupees electriques, by Marinetti
 
-XIX 
+Poussin (Le), by Guiraud
 
-XXXII 
+Powers of Darkness (The), by Tolstoi
 
-XXV 
+and
 
-VII 
+Pretre (Le), by Buet
+Priestesses (The), by Aeschylus
+Princesse de Bagdad (La), by Dumas fila
+Princesse Georges (La), by Dumas fila
+Princess Maleine (The), by Maeterlinck
+Prince Zilah (The), by Claretie
+Procris, by Sophocles
+Prometheus, by Aeschylus
+Prometheus Bound, by Aeschylus
 
-XXVII 
 
-XIX 
 
-IX 
+II
 
-VII 
+XX
 
-V 
+XIII
 
-IX 
+XIII
 
-I 
+XIV
 
-XXV 
-XX 
+IX
 
+III
+III
+I
 
+XXXII
 
-B 
+XXV
 
+XIV
 
-2 
+XXVII
 
+XV
 
-A 
+XXI
 
 
-3 
 
+and
 
-A 
 
 
-1 
+Prometheus Unbound, by Aeschylus
+Propompes (The), by Aeschylus
+Proserpine, by Vacquerie and Saint-Saens
+Protesilas, by Euripides
 
 
-A 
 
+XXXIV
 
-1 
+XXXIII
 
+XXXIII
 
-B 
+XXVIII
 
+XXVII
 
-3 
+XIX
 
+XX
 
-B 
+XI
 
+XI
 
-2 
+XIII
 
+XXIV
 
-B 
+XXXVI
 
+III
 
-4 
+XVII
 
+XXXII
 
-B 
+XXII
 
+XXV
 
-4 
+XXXIII
 
+XXVIII
 
-B 
+XIII
 
+XV
 
-4 
+III
 
+XIX
 
-C 
+XXXII
 
+XXV
 
-4 
+VII
 
+XXVII
 
-D 
+XIX
 
+IX
 
-1 
+VII
 
+V
 
-A 
+IX
 
+I
 
-1 
+XXV
+XX
 
 
-A 
 
+B
 
-2 
 
+2
 
-A 
 
+A
 
-1 
 
+3
 
-D 
 
+A
 
-1 
 
+1
 
-A 
 
+A
 
-4 
 
+1
 
-B 
 
+B
 
-2 
 
+3
 
-C 
 
+B
 
-1 
 
+2
 
-A 
 
+B
 
-2 
 
+4
 
-C 
 
+B
 
 
+4
 
-F 
 
+B
 
-2 
 
+4
 
-B 
 
+C
 
-1 
 
+4
 
-A 
 
+D
 
 
+1
 
-A 
 
+A
 
 
+1
 
-A 
 
+A
 
-1 
 
+2
 
-A 
 
+A
 
-1 
 
+1
 
-A 
 
+D
 
-1 
 
+1
 
-A 
 
+A
 
-4 
 
+4
 
-C 
 
+B
 
-4 
 
+2
 
-C 
 
+C
 
-1 
 
+1
 
-A 
 
+A
 
-5 
 
+2
 
-C 
 
+C
 
-7 
 
 
-B 
 
+F
 
-3 
 
+2
 
-D 
 
+B
 
-2 
 
+1
 
-E 
 
+A
 
 
 
-A 
 
+A
 
-1 
 
 
-A 
 
+A
 
-1 
 
+1
 
-C 
 
+A
 
-2 
 
+1
 
-A 
 
+A
 
-1 
 
+1
 
-B 
 
+A
 
-3 
 
+4
 
-A 
 
+C
 
 
+4
 
-B 
 
+C
 
-3 
 
+1
 
-G 
 
+A
 
-1 
 
+5
 
-C 
 
+C
 
-1 
 
+7
 
-C 
 
+B
 
-1 
 
+3
 
-C 
 
+D
 
 
+2
 
-D 
 
+E
 
-1 
 
 
-C 
 
+A
 
-1 
 
+1
 
-B 
 
+A
 
-7 
 
+1
 
-A 
 
+C
 
-2 
 
+2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+A
 
 
+1
 
-151 
 
+B
 
 
-Psyche, by Corneille 
-Psychostase, by Aeschylus 
-Pulcherie, by Corneille 
-Purloined Letter (The), by Poe 
+3
 
 
+A
 
-XVII 
 
 
-B 
 
+B
 
-2 
 
+3
 
-XXXVI 
 
+G
 
-c 
 
+1
 
 
+C
 
-XX 
 
+1
 
-B 
 
+C
 
-3 
 
+1
 
-XI 
 
+C
 
-A 
 
 
 
+D
 
 
-Q 
+1
 
-Quarts d'heure (Les), by Quiches and 
-Lavedan 
 
-14 juillet (Le), by Rolland 
-4x7 equals 28, by Coolus 
-Question d'argent (La), by Uumas tits 
+C
 
 
+1
 
-R 
 
+B
 
 
-XXVII 
-and XXV 
-\ III 
+7
 
-x xxu 
 
-XXIV 
+A
 
 
+2
 
-Raffles, by Hornung 
 
-Rama, by Bhavabuti 
 
-Ramuntcho, by Loti 
+INDEX OF PLAYS, NOVELS, ETC.
 
-Rantzau (Les), by Erckman-Chatrian 
 
-Raoul de Crequi, by Dalayrac 
 
-Reformateur (Le), by Rod 
+151
 
-Regiment (Le), by J. Mary 
 
-Regulus, by Pradon 
 
-Regulus, by Metastasio 
+Psyche, by Corneille
+Psychostase, by Aeschylus
+Pulcherie, by Corneille
+Purloined Letter (The), by Poe
 
-Reine aux trois fils (Laj, Miracle of Notre- 
 
-Dame 
-Reine Fiammette (La), by Mendt^ 
 
+XVII
 
 
-Rembrandt, by Dumur and Josz 
+B
 
-Rencontre (La), by Berton 
 
-Rene, by Chateaubriand 
+2
 
-Renee, by Zola 
 
-Renee Mauperin, by the Goncourta 
+XXXVI
 
-Resentment of Te-oun-Ko (The), by 
 
-Kouan-han-khiK 
-Resurrection, by Tolstoi 
-Rfive (Le), by Zola 
+c
 
-Reveil (Lej, by Hervieu 
-Revoltee, t>;,' Lemaltre 
-Revoltee (Lea . by fain and Adenia 
-Rhadarniste ft Zenobie, by Creoillon 
-Rhesus, by Euripides 
 
-Richard Coeur-de-lion, by Sedaine 
 
-Richard 1 1, by Shakespeare 
-Richard III, by shai.< peare 
-Risque (Le . by Coo 
-Rivoli, by raucl 
 
+XX
 
 
-and 
+B
 
 
+3
 
-and 
 
+XI
 
 
-and 
+A
 
 
 
-V 
 
-X 
 
-XXVIII 
+Q
 
-XXIX 
+Quarts d'heure (Les), by Quiches and
+Lavedan
 
-XXV 
+14 juillet (Le), by Rolland
+4x7 equals 28, by Coolus
+Question d'argent (La), by Uumas tits
 
-VI 
 
-XXVI] 
 
-XX 
+R
 
-XX 
 
-X X X V 
-XXXIII 
-X X 1 X 
-VII 
-XXV 
-XXXI v 
-XXVI 
-XVII 
 
-III 
+XXVII
+and XXV
+\ III
 
-XX 
+x xxu
 
-I 
+XXIV
 
-XX] 
 
-III 
 
-XXV 
+Raffles, by Hornung
 
-l\ 
+Rama, by Bhavabuti
 
-WW 1 
+Ramuntcho, by Loti
 
-\ 
+Rantzau (Les), by Erckman-Chatrian
 
-XXXV 
+Raoul de Crequi, by Dalayrac
 
-\l 
+Reformateur (Le), by Rod
 
-\\\ 
-\I\ 
-\\\ 
+Regiment (Le), by J. Mary
 
+Regulus, by Pradon
 
+Regulus, by Metastasio
 
-A 
+Reine aux trois fils (Laj, Miracle of Notre-
 
+Dame
+Reine Fiammette (La), by Mendt^
 
-l 
 
 
-(' 
+Rembrandt, by Dumur and Josz
 
+Rencontre (La), by Berton
 
-4 
+Rene, by Chateaubriand
 
+Renee, by Zola
 
-B 
+Renee Mauperin, by the Goncourta
 
+Resentment of Te-oun-Ko (The), by
 
-2 
+Kouan-han-khiK
+Resurrection, by Tolstoi
+Rfive (Le), by Zola
 
+Reveil (Lej, by Hervieu
+Revoltee, t>;,' Lemaltre
+Revoltee (Lea . by fain and Adenia
+Rhadarniste ft Zenobie, by Creoillon
+Rhesus, by Euripides
 
-A 
+Richard Coeur-de-lion, by Sedaine
 
+Richard 1 1, by Shakespeare
+Richard III, by shai.< peare
+Risque (Le . by Coo
+Rivoli, by raucl
 
-3 
 
 
-A 
+and
 
 
-7 
 
+and
 
-A 
 
 
+and
 
 
-C 
 
+V
 
-2 
+X
 
+XXVIII
 
-A 
+XXIX
 
+XXV
 
-1 
+VI
 
+XXVI]
 
-A 
+XX
 
+XX
 
-3 
+X X X V
+XXXIII
+X X 1 X
+VII
+XXV
+XXXI v
+XXVI
+XVII
 
+III
 
-H 
+XX
 
+I
 
+XX]
 
+III
 
-C 
+XXV
 
+l\
 
-1 
+WW 1
 
+\
 
-D 
+XXXV
 
+\l
 
-3 
+\\\
+\I\
+\\\
 
 
-A 
 
+A
 
-1 
 
+l
 
-A 
 
+('
 
-1 
 
+4
 
-A 
 
+B
 
-3 
 
+2
 
-B 
 
+A
 
-3 
 
+3
 
-D 
 
+A
 
 
+7
 
-C 
 
+A
 
-4 
 
 
-B 
 
+C
 
 
+2
 
-B 
 
+A
 
-o 
 
+1
 
-c 
 
+A
 
-o 
 
+3
 
-B 
 
+H
 
 
 
-c 
 
+C
 
 
+1
 
-B 
 
+D
 
-L' 
 
+3
 
-C 
 
+A
 
-2 
 
+1
 
-C 
 
+A
 
-4 
 
+1
 
-\ 
 
+A
 
-6 
 
+3
 
-I 
 
+B
 
-•1 
 
+3
 
-n 
 
+D
 
-1 
 
 
-c 
 
+C
 
 
+4
 
-l> 
 
+B
 
-1 
 
 
-B 
 
+B
 
 
+o
 
-l 
 
+c
 
-1 
 
+o
 
-\ 
 
+B
 
-4 
 
 
-l 
 
+c
 
-7 
 
 
 
-152 
+B
 
 
+L'
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+C
 
 
-Robert-le-Diable, Miracle of Notre-Dame 
-Rodogune, by Corneille 
-Roger-la-honte, by J. Mary 
+2
 
 
+C
 
-and 
 
+4
 
 
-Roi Cerf (Le), by Gozzi 
+\
 
-Roi de l'argent (Le), by Milliet 
 
-Roi de Rome (Lei, by Pouvillon 
+6
 
-Roi s'amuse (Le), by Hugo 
 
-Roi sans couronne (Le), by St. Georges 
+I
 
-de Bouhelier 
-Roi sans royaume (Le), by Decourcelle 
-Roi Soleil (Le), by Bernede 
-Rolande, by de Gramont 
-Roman d'Elise (Le), by Richard 
-Roman d'une Conspiration (Le), by 
 
-Fournier and Carre 
-Romeo and Juliet, by Shakespeare 
-Rosemonde, by Rucellai 
-Rosse, tant at plus, by Mustiere 
-Route d'Emeraude (La), by Demolder and 
+•1
 
-Richepin 
-Ruy-Blas, by Hugo 
 
+n
 
 
-Saint-Alexis, Miracle of Notre-Dame 
-Suinte-Helene, by Mme. Severine 
-Saint-Ignace d'Antioch, Miracle of Notre- 
-Dame 
-Saint Julien l'hospitalier, by Flaubert 
+1
 
-Sais (Le), by Mme. Ollognier 
-Sakuntala, by Kalidasa 
 
-and 
-Salammbo, by Flaubert 
-Salaminians (The), by Aeschylus 
-Salome, by Oscar Wilde 
-Samson, by Voltaire 
-Samson, by Bernstein 
-Samson et Dalila, by Saint-Saens 
-Sang-brule (La), by Bouvier 
-Sapho, by Gounod 
-Sapho, by Daudet 
-S. A. R., by Chancel 
-Sardanapalus, by Byron 
-Saul, by Alfieri 
-Saul, by Gide 
-Srundale (Le), by Bataille 
-Schism of England (The), by Calderon 
-Sculpteur de Masques (Le), by Cromelynck 
-Scythes (Lea), by Voltaire 
-Second Faust (The), by Goethe 
-Secret de Gilberte (Le), by Massiac 
+c
 
 
 
-V 
 
+l>
 
-A 
 
+1
 
 
+B
 
-XIII 
 
 
-E 
 
+l
 
 
+1
 
-XXXIII 
 
+\
 
-D 
 
+4
 
-5 
 
+l
 
-III 
 
+7
 
-B 
 
 
-4 
+152
 
 
-XVIII 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-D 
 
 
-1 
+Robert-le-Diable, Miracle of Notre-Dame
+Rodogune, by Corneille
+Roger-la-honte, by J. Mary
 
 
-XXXIII 
 
+and
 
-B 
 
 
-3 
+Roi Cerf (Le), by Gozzi
 
+Roi de l'argent (Le), by Milliet
 
-VII 
+Roi de Rome (Lei, by Pouvillon
 
+Roi s'amuse (Le), by Hugo
 
-B 
+Roi sans couronne (Le), by St. Georges
 
+de Bouhelier
+Roi sans royaume (Le), by Decourcelle
+Roi Soleil (Le), by Bernede
+Rolande, by de Gramont
+Roman d'Elise (Le), by Richard
+Roman d'une Conspiration (Le), by
 
+Fournier and Carre
+Romeo and Juliet, by Shakespeare
+Rosemonde, by Rucellai
+Rosse, tant at plus, by Mustiere
+Route d'Emeraude (La), by Demolder and
 
+Richepin
+Ruy-Blas, by Hugo
 
-XIX 
 
 
-A 
+Saint-Alexis, Miracle of Notre-Dame
+Suinte-Helene, by Mme. Severine
+Saint-Ignace d'Antioch, Miracle of Notre-
+Dame
+Saint Julien l'hospitalier, by Flaubert
 
+Sais (Le), by Mme. Ollognier
+Sakuntala, by Kalidasa
 
-4 
+and
+Salammbo, by Flaubert
+Salaminians (The), by Aeschylus
+Salome, by Oscar Wilde
+Samson, by Voltaire
+Samson, by Bernstein
+Samson et Dalila, by Saint-Saens
+Sang-brule (La), by Bouvier
+Sapho, by Gounod
+Sapho, by Daudet
+S. A. R., by Chancel
+Sardanapalus, by Byron
+Saul, by Alfieri
+Saul, by Gide
+Srundale (Le), by Bataille
+Schism of England (The), by Calderon
+Sculpteur de Masques (Le), by Cromelynck
+Scythes (Lea), by Voltaire
+Second Faust (The), by Goethe
+Secret de Gilberte (Le), by Massiac
 
 
-VIII 
 
+V
 
-A 
 
+A
 
-1 
 
 
-VIII 
 
+XIII
 
-A 
 
+E
 
-1 
 
 
-XXXIII 
 
+XXXIII
 
-C 
 
+D
 
-2 
 
+5
 
-XXII 
 
+III
 
-c 
 
+B
 
-1 
 
+4
 
-XXVIII 
 
+XVIII
 
-D 
 
+D
 
-2 
 
+1
 
-VIII 
 
+XXXIII
 
-A 
 
+B
 
-2 
 
+3
 
-XXIX 
 
+VII
 
-B 
 
+B
 
-6 
 
 
-IV 
 
+XIX
 
-C 
 
+A
 
 
+4
 
-VIII 
 
+VIII
 
-A 
 
+A
 
-2 
 
+1
 
-XXII 
 
+VIII
 
-A 
 
+A
 
-6 
 
+1
 
-XIX 
 
+XXXIII
 
 
+C
 
 
+2
 
-XIX 
 
+XXII
 
-G 
 
+c
 
-3 
 
+1
 
-III 
 
+XXVIII
 
-A 
 
+D
 
-2 
 
+2
 
-XX 
 
+VIII
 
-A 
 
+A
 
-4 
 
+2
 
-XIX 
 
+XXIX
 
-E 
 
+B
 
 
+6
 
-XXIV 
 
+IV
 
-A 
 
+C
 
-3 
 
 
-XVI 
 
+VIII
 
-C 
 
+A
 
 
+2
 
-XXXV 
 
+XXII
 
 
+A
 
 
+6
 
-VIII 
 
+XIX
 
-B 
 
 
-1 
 
 
-VI 
 
+XIX
 
-C 
 
+G
 
-2 
 
+3
 
-XXII 
 
+III
 
-B 
 
+A
 
 
+2
 
-XVII 
 
+XX
 
-C 
 
+A
 
-3 
 
+4
 
-XXV 
 
+XIX
 
-D 
 
+E
 
-1 
 
 
-XV 
 
+XXIV
 
-A 
 
+A
 
-2 
 
+3
 
-XXVI 
 
+XVI
 
-C 
 
+C
 
-1 
 
 
-XXXIII 
 
+XXXV
 
-D 
 
 
-1 
 
 
-XXII 
 
+VIII
 
-A 
 
+B
 
-3 
 
+1
 
-XX 
 
+VI
 
-B 
 
+C
 
-3 
 
+2
 
-VI 
 
+XXII
 
-A 
 
+B
 
-2 
 
 
-XIII 
 
+XVII
 
-D 
 
+C
 
 
+3
 
-XVI 
 
+XXV
 
-B 
 
+D
 
 
+1
 
-XXXIV 
 
+XV
 
-B 
 
+A
 
-2 
 
+2
 
-XV 
 
+XXVI
 
-B 
 
+C
 
 
+1
 
-XXVI 
 
+XXXIII
 
-C 
 
+D
 
-1 
 
+1
 
-XXIX 
 
+XXII
 
-A 
 
+A
 
-4 
 
+3
 
-IX 
 
+XX
 
-D 
 
+B
 
-3 
 
+3
 
-XXVII 
 
+VI
 
-B 
 
+A
 
-2 
 
+2
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+XIII
 
 
+D
 
-153 
 
 
 
-Secret de la Terreuse (Lej, by Busnaeh 
-Secret Vengeance for Secret Outrage, by 
+XVI
 
-Calderon 
-Semele, by Aeschylus 
-Semiramis, by Manfredi 
-Semiramis, by Crebillon 
-Semiramis, by Voltaire 
-Semiramide riconosciuta, by Metastasio 
 
-Serenade tLa), by J. Jullien 
+B
 
-Serge Panine, by Ohnet 
 
-Serpent Woman (The), by Gozzi 
 
-Sertorius, by Corneille 
 
-Seven Against Thebes, by Aeschylus 
+XXXIV
 
-Seven Princesses (The), by Maeterlinck 
 
-St'vero Torelli, by Coppee 
+B
 
-Shepherd King (The), by Metastasio 
 
-Sherlock Holmes, by Conan Doyle 
+2
 
-Shepherds (The), by Sophocles 
 
-Sieba, by Manzotti 
+XV
 
-Sigurd, by Reyer 
 
-Simone, by Brieux 
+B
 
-Simon, l'enfant trouve, by Jonathan 
 
-Singer (The), anonymous Chinese drama 
 
-Sinon, by SophoHi a 
 
-Sire, by Lavedan 
+XXVI
 
-Siroes, by Metastasio 
 
-Sir Thomas Wyat, by Webster 
+C
 
-Smilis, by Aicard 
 
-Soeurette, by Borteau-Lm i 
-Son Excellence Eugene, by Zola 
-Sons of Pandou The , by Radjasekhara 
-Sophonisbe, by Trissino 
+1
 
-by Mairel 
 
-by Alfieri 
-Sorciere (Lai, by Sardou 
-Souris I. a , by Pailleron 
-Sphinx The , by A.( 
+XXIX
 
-Statue (The), by Radjasekhara 
 
-Stella, by Goethe 
+A
 
-Story of Yayati (The , by Roudradeva 
 
-Suppliants The . by 4< 
+4
 
-Suppliants (The , by Euripide 
 
-Suzette, by Brieux 
+IX
 
-Surcoui, by Planquette 
 
-Surena, by Corneille 
+D
 
 
+3
 
-and 
 
+XXVII
 
 
-and 
+B
 
 
+2
 
-Tancrede, by Voltaire 
 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-:il,i| 
 
 
+153
 
-XXXIII 
 
 
-B 
+Secret de la Terreuse (Lej, by Busnaeh
+Secret Vengeance for Secret Outrage, by
 
+Calderon
+Semele, by Aeschylus
+Semiramis, by Manfredi
+Semiramis, by Crebillon
+Semiramis, by Voltaire
+Semiramide riconosciuta, by Metastasio
 
-4 
+Serenade tLa), by J. Jullien
 
+Serge Panine, by Ohnet
 
-XXV 
+Serpent Woman (The), by Gozzi
 
+Sertorius, by Corneille
 
-D 
+Seven Against Thebes, by Aeschylus
 
+Seven Princesses (The), by Maeterlinck
 
-1 
+St'vero Torelli, by Coppee
 
+Shepherd King (The), by Metastasio
 
-XIII 
+Sherlock Holmes, by Conan Doyle
 
+Shepherds (The), by Sophocles
 
-B 
+Sieba, by Manzotti
 
+Sigurd, by Reyer
 
-1 
+Simone, by Brieux
 
+Simon, l'enfant trouve, by Jonathan
 
-XXVI 
+Singer (The), anonymous Chinese drama
 
+Sinon, by SophoHi a
 
-A 
+Sire, by Lavedan
 
+Siroes, by Metastasio
 
-1 
+Sir Thomas Wyat, by Webster
 
+Smilis, by Aicard
 
-XXVI 
+Soeurette, by Borteau-Lm i
+Son Excellence Eugene, by Zola
+Sons of Pandou The , by Radjasekhara
+Sophonisbe, by Trissino
 
+by Mairel
 
-A 
+by Alfieri
+Sorciere (Lai, by Sardou
+Souris I. a , by Pailleron
+Sphinx The , by A.(
 
+Statue (The), by Radjasekhara
 
-1 
+Stella, by Goethe
 
+Story of Yayati (The , by Roudradeva
 
-XIX 
+Suppliants The . by 4<
 
+Suppliants (The , by Euripide
 
-D 
+Suzette, by Brieux
 
+Surcoui, by Planquette
 
+Surena, by Corneille
 
 
-XXIV 
 
+and
 
-B 
 
 
-8 
+and
 
 
-XXXII 
 
+Tancrede, by Voltaire
 
-B 
 
 
-1 
+:il,i|
 
 
-XXV 
 
+XXXIII
 
-c 
 
+B
 
-3 
 
+4
 
-XXV 
 
+XXV
 
-B 
 
+D
 
-2 
 
+1
 
-XXXIII 
 
+XIII
 
-A 
 
+B
 
-1 
 
+1
 
-XX 
 
+XXVI
 
-B 
 
+A
 
-3 
 
+1
 
-XIII 
 
+XXVI
 
-A 
 
+A
 
-2 
 
+1
 
-XXXVI 
 
+XIX
 
-B 
 
+D
 
 
 
-XXVII 
 
+XXIV
 
-D 
 
+B
 
-4 
 
+8
 
-XXVIII 
 
+XXXII
 
-(' 
 
+B
 
-1 
 
+1
 
-III 
 
+XXV
 
-c 
 
+c
 
 
+3
 
-VI 
 
+XXV
 
-A 
 
+B
 
-1 
 
+2
 
-XXVIII 
 
+XXXIII
 
-B 
 
+A
 
 
+1
 
-xx\ 
 
+XX
 
-C 
 
+B
 
-3 
 
+3
 
-XXVI I 
 
+XIII
 
-D 
 
+A
 
-6 
 
+2
 
-III 
 
+XXXVI
 
-A 
 
+B
 
-(i 
 
 
-III 
 
+XXVII
 
-A 
 
+D
 
-1 
 
+4
 
-IX 
 
+XXVIII
 
-1) 
 
+('
 
-1 
 
+1
 
-XXVII 
 
+III
 
-B 
 
+c
 
-7 
 
 
-XXXIII 
 
+VI
 
-B 
 
+A
 
-•> 
 
+1
 
-XXX 
 
+XXVIII
 
-B 
 
+B
 
 
 
-XXI 
 
+xx\
 
-A 
 
+C
 
-•> 
 
+3
 
-\\\ 
 
+XXVI I
 
-C 
 
+D
 
-4 
 
+6
 
-XXV 
 
+III
 
-C 
 
+A
 
-7 
 
+(i
 
-X X X 
 
+III
 
-C 
 
+A
 
-1 
 
+1
 
-III 
 
+IX
 
-\ 
 
+1)
 
-6 
 
+1
 
-XX 
 
+XXVII
 
-B 
 
+B
 
-a 
 
+7
 
-XX 
 
+XXXIII
 
-B 
 
+B
 
-a 
 
+•>
 
-XX 
 
+XXX
 
-B 
 
+B
 
-a 
 
 
-XXIV 
 
+XXI
 
-1! 
 
+A
 
-i 
 
+•>
 
-XIV 
 
+\\\
 
-\ 
 
+C
 
-i 
 
+4
 
-\l 
 
+XXV
 
-li 
 
+C
 
-i 
 
+7
 
-XXIV 
 
+X X X
 
-D 
 
+C
 
-a 
 
+1
 
-\\\ 
 
+III
 
-B 
 
+\
 
-6 
 
+6
 
-XXIX 
 
+XX
 
-\ 
 
+B
 
-•> 
 
+a
 
-1 
 
+XX
 
-\ 
 
+B
 
-I 
 
+a
 
-1 
 
+XX
 
-\ 
 
+B
 
-•> 
 
+a
 
-XX1\ 
 
+XXIV
 
-\ 
 
+1!
 
-i 
 
+i
 
-XX IN 
 
+XIV
 
-\ 
 
+\
 
-6 
 
+i
 
-\\XII 
 
+\l
 
-\ 
 
+li
 
-a 
 
+i
 
-X X X 1 1 
 
+XXIV
 
-A 
 
+D
 
-i 
 
+a
 
-II 
 
+\\\
 
-A 
 
+B
 
 
+6
 
 
-154 
+XXIX
 
 
+\
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+•>
 
 
-Tanis et Zelide, by Voltaire 
+1
 
-Tannhaeuser, by Wagner 
 
-Tartarin, by Daudet 
+\
 
-Taverne des Trabans (La), by Erckmann 
 
-Chatrian 
-Tchitra Yadjgna, by Vedanyatha 
+I
 
-Yatehespati 
-Telephus, by Euripides 
-Telephus, by Aeschylus 
-Telephus, by Sophocles 
-Tempest (The), by Shakespeare 
-Tenailles (Les), by Hervieu 
-Temptation of Saint Anthony (The), by 
 
-Flaubert 
-Tereus, by Sophocles 
-Terre (La), by Zola 
+1
 
 
+\
 
-and 
 
+•>
 
 
-Terre d'epouvante, by Morel and de Lorde 
+XX1\
 
-Teucer, by Sophocles 
 
-Thamiras, by Sophocles 
+\
 
-Themistocles, by Metastasio 
 
-Theodora, by Sardou 
+i
 
-Theodore, by Corneille 
 
-Therese Raquin, by Zola 
+XX IN
 
-and 
 
-Thermidor, by Sardou 
+\
 
-Theseus, by Euripides 
 
-Thracians (The), by Aeschylus 
+6
 
-Three Punishments in One, by Calderon 
 
-Thyestes, by Seneca 
+\\XII
 
-Thyestes in Sicyon, by Sophocles 
 
-Thyestes II, by Sophocles 
+\
 
-Timoleon, by Alfieri 
 
-Timon of Athens, by Shakespeare 
+a
 
-'Tis Pity She's a Whore, by Ford 
 
-Titan, by Jean-Paul Richer 
+X X X 1 1
 
-Tite et Berenice, by Corneille 
 
-Toilers of the Sea, by Hugo 
+A
 
 
+i
 
-Torquemada, by Hugo 
 
-Torrent (Le), by Donnay 
+II
 
-Torrismond, by Tasso 
 
-Tosca (La), by Sardou 
+A
 
-Trains de luxe (Les), by Hermant 
 
-Trente ans ou la vie d'un joueur, by 
 
-Ducange 
-Tribun (he), by Bourget 
-Tribut de Zamora (Le), by Gounod 
-Trisan and Isolde, by Wagner 
-Triumvirat (Le), by Voltaire 
-Troilus, by Aeschylus 
 
 
+154
 
-and 
-XXIII and 
 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-XXIV 
 
-XXII 
 
-VI 
+Tanis et Zelide, by Voltaire
 
-XXIX 
+Tannhaeuser, by Wagner
 
-XXXI 
+Tartarin, by Daudet
 
-I 
+Taverne des Trabans (La), by Erckmann
 
-XIX 
-XIX 
+Chatrian
+Tchitra Yadjgna, by Vedanyatha
 
-III 
+Yatehespati
+Telephus, by Euripides
+Telephus, by Aeschylus
+Telephus, by Sophocles
+Tempest (The), by Shakespeare
+Tenailles (Les), by Hervieu
+Temptation of Saint Anthony (The), by
 
-XXV 
-XXII 
+Flaubert
+Tereus, by Sophocles
+Terre (La), by Zola
 
-III 
 
-XXX 
 
-XIII 
+and
 
-VI 
 
-VI 
 
-XXXI 
+Terre d'epouvante, by Morel and de Lorde
 
-XX 
+Teucer, by Sophocles
 
-XXXIII 
+Thamiras, by Sophocles
 
-XX 
+Themistocles, by Metastasio
 
-XXXIV 
+Theodora, by Sardou
 
-XV 
+Theodore, by Corneille
 
-VIII 
+Therese Raquin, by Zola
 
-IX 
+and
 
-XVI 
+Thermidor, by Sardou
 
-XIII 
+Theseus, by Euripides
 
-XIII 
+Thracians (The), by Aeschylus
 
-XXXV 
+Three Punishments in One, by Calderon
 
-XIII 
+Thyestes, by Seneca
 
-XXX 
+Thyestes in Sicyon, by Sophocles
 
-VI 
+Thyestes II, by Sophocles
 
-XXVI 
+Timoleon, by Alfieri
 
-XVIII 
+Timon of Athens, by Shakespeare
 
-XX 
+'Tis Pity She's a Whore, by Ford
 
-XXIV 
+Titan, by Jean-Paul Richer
 
-IX 
+Tite et Berenice, by Corneille
 
-XIX 
+Toilers of the Sea, by Hugo
 
-XXV 
 
-XVIII 
 
-XXI 
+Torquemada, by Hugo
 
-XXIV 
+Torrent (Le), by Donnay
 
-XXII 
+Torrismond, by Tasso
 
-XXVII 
+Tosca (La), by Sardou
 
-XXIV 
+Trains de luxe (Les), by Hermant
 
-XXV 
+Trente ans ou la vie d'un joueur, by
 
-XXIV 
+Ducange
+Tribun (he), by Bourget
+Tribut de Zamora (Le), by Gounod
+Trisan and Isolde, by Wagner
+Triumvirat (Le), by Voltaire
+Troilus, by Aeschylus
 
-XXXVI 
 
 
+and
+XXIII and
 
-A 2 
 
-A 2 
-B 
 
-A 3 
+XXIV
 
-B 1 
+XXII
 
-B 3 
+VI
 
+XXIX
 
+XXXI
 
-B 
+I
 
+XIX
+XIX
 
-1 
+III
 
+XXV
+XXII
 
-B 
+III
 
+XXX
 
-1 
+XIII
 
+VI
 
-B 
+VI
 
+XXXI
 
-1 
+XX
 
+XXXIII
 
-C 
+XX
 
+XXXIV
 
-1 
+XV
 
+VIII
 
-B 
+IX
 
+XVI
 
+XIII
 
+XIII
 
-B 
+XXXV
 
+XIII
 
-5 
+XXX
 
+VI
 
-C 
+XXVI
 
+XVIII
 
-1 
+XX
 
+XXIV
 
-B 
+IX
 
+XIX
 
-1 
+XXV
 
+XVIII
 
-A 
+XXI
 
+XXIV
 
-4 
+XXII
 
+XXVII
 
-C 
+XXIV
 
+XXV
 
-2 
+XXIV
 
+XXXVI
 
-B 
 
 
-3 
+A 2
 
+A 2
+B
 
-A 
+A 3
 
+B 1
 
-2 
+B 3
 
 
-A 
 
+B
 
-3 
 
+1
 
-D 
 
+B
 
 
+1
 
-A 
 
+B
 
-4 
 
+1
 
-A 
 
+C
 
-1 
 
+1
 
-A 
 
+B
 
-1 
 
 
-D 
 
+B
 
-1 
 
+5
 
-B 
 
+C
 
 
+1
 
-B 
 
+B
 
-1 
 
+1
 
-A 
 
+A
 
-2 
 
+4
 
-A 
 
+C
 
-2 
 
+2
 
-A 
 
+B
 
-1 
 
+3
 
-C 
 
+A
 
-1 
 
+2
 
-C 
 
+A
 
-2 
 
+3
 
-D 
 
+D
 
-2 
 
 
-B 
 
+A
 
-3 
 
+4
 
-A 
 
+A
 
-7 
 
+1
 
-D 
 
+A
 
-2 
 
+1
 
-A 
 
+D
 
-3 
 
+1
 
-C 
 
+B
 
-1 
 
 
-A 
 
+B
 
-2 
 
+1
 
-D 
 
+A
 
-2 
 
+2
 
-B 
 
+A
 
-6 
 
+2
 
-C 
 
+A
 
-2 
 
+1
 
-D 
 
+C
 
-2 
 
+1
 
-A 
 
+C
 
-3 
 
+2
 
-C 
 
+D
 
-3 
 
+2
 
-A 
 
+B
 
-3 
 
+3
 
-A 
 
+A
 
-1 
 
+7
 
 
-INDEX OF PLAYS, NOVELS, ETC. 
+D
 
 
+2
 
-155 
 
+A
 
 
-Troilus and Cressida, by Shakespeare 
-Troades (The), by Euripides 
+3
 
-" . " by Seneca 
-Troyens (Les), by Berlioz 
 
+C
 
 
-and 
+1
 
 
+A
 
-Tullia, by Martelli 
 
-Tunic Confronted (The), by Tchang-koue- 
+2
 
-pin 
-Turandot, by Gozzi 
-Twenty-fourth of February (The), by 
 
-Werner 
-Two foscari (The), by Byron 
-Two Gentlemen of Verona, by Shakespeare 
-Two Noble Kinsmen (The), by Beaumont 
+D
 
-and Fletcher 
 
+2
 
 
-V 
+B
 
 
-c 
+6
 
 
+C
 
 
-XXXVI 
+2
 
 
-A 
+D
 
 
-1 
+2
 
 
-XXXVI 
+A
 
 
-A 
+3
 
 
-1 
+C
 
 
-I 
+3
 
 
-B 
+A
 
 
-1 
+3
 
 
-XX 
+A
 
 
-B 
+1
 
 
-3 
 
+INDEX OF PLAYS, NOVELS, ETC.
 
-XXX 
 
 
-C 
+155
 
 
-2 
 
+Troilus and Cressida, by Shakespeare
+Troades (The), by Euripides
 
-III 
+" . " by Seneca
+Troyens (Les), by Berlioz
 
 
-A 
 
+and
 
-1 
 
 
-XI 
+Tullia, by Martelli
 
+Tunic Confronted (The), by Tchang-koue-
 
-C 
+pin
+Turandot, by Gozzi
+Twenty-fourth of February (The), by
 
+Werner
+Two foscari (The), by Byron
+Two Gentlemen of Verona, by Shakespeare
+Two Noble Kinsmen (The), by Beaumont
 
-1 
+and Fletcher
 
 
-XIX 
 
+V
 
-B 
 
+c
 
-1 
 
 
-III 
 
+XXXVI
 
-A 
 
+A
 
-1 
 
+1
 
-XIV 
 
+XXXVI
 
-D 
 
+A
 
 
+1
 
 
-XIV 
+I
 
 
+B
 
-u 
 
-Ubu-Roi, by Jarry 
+1
 
-Ulysses Furens, by Sophocles 
 
-Un ange, by Capus 
+XX
 
-Un divorce, by Moreau 
 
-Un drole, by Yves Guyot 
+B
 
-Une famille au temps de Luther, by 
 
-Delavigne 
-Une femme passa, by Coolus 
-Une nuit de Cleopatre, by Gautier and 
+3
 
-V. Masse 
 
-Un patriote, by Dartois 
+XXX
 
-Un voyage de noces, by Tiercelin 
 
+C
 
 
-XXX 
+2
 
-XI 
 
-XXII 
-XXXII 
-X X V 
+III
 
-XIII 
-XIV 
 
-XXII 
-and XXIV 
-XXIII 
+A
 
-XXV 
 
+1
 
 
-Valentinian, by Beaumont and Fletcher 
+XI
 
-Varennea, by Lenotre and Lavedan 
 
-Vautrin, by Balzac 
+C
 
-Veine (La;, by Capus 
 
-Venisamhara, by Bhatta \arayana 
+1
 
-Ventre de Paria (Le), by Zola 
 
-Veuve joyeu e I.:. . by Meilhac, Leon and 
+XIX
 
-St*;in 
-Vicomtee e Alice I. a , by Second 
-Vidocq, by Bergeral 
-Victory of Arjuna (The , by Cantchana 
 
-Atcharya 
-Victory of Pradyoumna (The), by Samara 
+B
 
-Dikchita 
-Vieil homme (Le . by Porte Riche 
-Vielle hiatoire, by .1. Jullien 
-Vie publique I. a , by Fabre 
 
+1
 
 
-XXX111 
-XXIV 
+III
 
-XXVI 
 
-xxv 
-III 
+A
 
-X X X 1 1 1 
 
-\\\ 111 
-III 
+1
 
-IX 
 
-XXIX 
-Xl\ 
-\X\ II 
-XXX 
+XIV
 
 
+D
 
-c 
 
 
 
 
-c 
+XIV
 
 
-:{ 
 
+u
 
-C 
+Ubu-Roi, by Jarry
 
+Ulysses Furens, by Sophocles
 
-•2 
+Un ange, by Capus
 
+Un divorce, by Moreau
 
-A 
+Un drole, by Yves Guyot
 
+Une famille au temps de Luther, by
 
-1 
+Delavigne
+Une femme passa, by Coolus
+Une nuit de Cleopatre, by Gautier and
 
+V. Masse
 
-C 
+Un patriote, by Dartois
 
+Un voyage de noces, by Tiercelin
 
-1 
 
 
-A 
+XXX
 
+XI
 
-1 
+XXII
+XXXII
+X X V
 
+XIII
+XIV
 
-1) 
+XXII
+and XXIV
+XXIII
 
+XXV
 
 
 
-A 
+Valentinian, by Beaumont and Fletcher
 
+Varennea, by Lenotre and Lavedan
 
-5 
+Vautrin, by Balzac
 
+Veine (La;, by Capus
 
-B 
+Venisamhara, by Bhatta \arayana
 
+Ventre de Paria (Le), by Zola
 
-•1 
+Veuve joyeu e I.:. . by Meilhac, Leon and
 
+St*;in
+Vicomtee e Alice I. a , by Second
+Vidocq, by Bergeral
+Victory of Arjuna (The , by Cantchana
 
-B 
+Atcharya
+Victory of Pradyoumna (The), by Samara
 
+Dikchita
+Vieil homme (Le . by Porte Riche
+Vielle hiatoire, by .1. Jullien
+Vie publique I. a , by Fabre
 
-1 
 
 
-A 
+XXX111
+XXIV
 
+XXVI
 
-o 
+xxv
+III
 
+X X X 1 1 1
 
-1) 
+\\\ 111
+III
 
+IX
 
-1 
+XXIX
+Xl\
+\X\ II
+XXX
 
 
-B 
 
+c
 
-:i 
 
 
-1) 
 
+c
 
-l 
 
+:{
 
-\ 
 
+C
 
-■A 
 
+•2
 
-\ 
 
+A
 
-• 
 
+1
 
-c 
 
+C
 
-• ) 
 
+1
 
-\ 
 
+A
 
-•) 
 
+1
 
-D 
 
+1)
 
 
 
-C 
 
+A
 
 
+5
 
-C 
 
+B
 
-L' 
 
+•1
 
-\ 
 
+B
 
-• > 
 
+1
 
-I'. 
 
+A
 
-■ ' 
 
+o
 
-\ 
 
+1)
 
-• > 
 
+1
 
-c 
 
+B
 
-I 
 
+:i
 
 
-156 
+1)
 
 
+l
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+\
 
 
-Vierge (La), by Vallette 
+■A
 
-Vierge folle (La), by Bataille 
 
-Virgin Martyr (The), by Massinger 
+\
 
-Vittoria Corombona, by Webster 
 
-Vive le roi! by Ryner 
+•
 
-Voix de sang (La), by Mme. Rachilde 
 
-Voleur (Le), by Bernstein 
+c
 
 
+• )
 
-W 
 
+\
 
 
-Waiting-Women (The), by Aeschylus 
+•)
 
-\\ allenstein, by Schiller 
 
-War of the Worlds (The), by Wells 
+D
 
-Weavers of Nets (The), by Aeschylus 
 
-Weavers of Silesia (The), by Hauptmann 
 
-Werner, by Byron 
 
-Werther, by Goethe 
+C
 
-Wild Duck (The), by Ibsen 
 
-William Tell, by Schiller 
 
-Winter's Tale (A), by Shakespeare 
-Women of Colchis, by Sophocles 
-Women of Scyros, by Sophocles 
-Wool-Carders (The), by Aeschylus 
-Worst is not Always Certain (The), by 
-Calderon 
 
+C
 
 
-and 
+L'
 
 
+\
 
-XXXII 
 
+• >
 
-A 
 
+I'.
 
-4 
 
+■ '
 
-XXV 
 
+\
 
-B 
 
+• >
 
-9 
 
+c
 
-XX 
 
+I
 
-D 
 
 
+156
 
 
-XV 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-A 
 
 
-1 
+Vierge (La), by Vallette
 
+Vierge folle (La), by Bataille
 
-XX 
+Virgin Martyr (The), by Massinger
 
+Vittoria Corombona, by Webster
 
-A 
+Vive le roi! by Ryner
 
+Voix de sang (La), by Mme. Rachilde
 
-4 
+Voleur (Le), by Bernstein
 
 
-XIX 
 
+W
 
-G 
 
 
-3 
+Waiting-Women (The), by Aeschylus
 
+\\ allenstein, by Schiller
 
-XXXIII 
+War of the Worlds (The), by Wells
 
+Weavers of Nets (The), by Aeschylus
 
-A 
+Weavers of Silesia (The), by Hauptmann
 
+Werner, by Byron
 
-3 
+Werther, by Goethe
 
+Wild Duck (The), by Ibsen
 
-XX 
+William Tell, by Schiller
 
+Winter's Tale (A), by Shakespeare
+Women of Colchis, by Sophocles
+Women of Scyros, by Sophocles
+Wool-Carders (The), by Aeschylus
+Worst is not Always Certain (The), by
+Calderon
 
-A 
 
 
-2 
+and
 
 
-XXX 
 
+XXXII
 
-A 
 
+A
 
-3 
 
+4
 
-VI 
 
+XXV
 
-A 
 
+B
 
-2 
 
+9
 
-XVI 
 
+XX
 
-A 
 
+D
 
-1 
 
 
-VIII 
 
+XV
 
-B 
 
+A
 
-2 
 
+1
 
-XXVII 
 
+XX
 
-C 
 
+A
 
 
+4
 
-XXXIV 
 
+XIX
 
-B 
 
+G
 
 
+3
 
-XVII 
 
+XXXIII
 
-C 
 
+A
 
-1 
 
+3
 
-VIII 
 
+XX
 
-B 
 
+A
 
-2 
 
+2
 
-III 
 
+XXX
 
-B 
 
+A
 
-6 
 
+3
 
-XXV 
 
+VI
 
 
+A
 
 
+2
 
-XXV 
 
+XVI
 
-A 
 
+A
 
-1 
 
+1
 
-XI 
 
+VIII
 
-C 
 
+B
 
-2 
 
+2
 
-XXXI 
 
+XXVII
 
-A 
 
+C
 
-1 
 
 
 
-XXXII 
+XXXIV
 
 
+B
 
-A 1 
 
 
 
-X 
+XVII
 
 
+C
 
-Xoanephores (The), by Sophocles 
 
+1
 
 
-VI 
+VIII
 
 
+B
 
-A 2 
 
+2
 
 
-Zaire, by Voltaire 
-Zeim, by Gozzi 
-Zenobia, by Metastasio 
-Zoe Chien-chien, by Mathey 
-Zulime, by Voltaire 
+III
 
 
+B
 
-XXXII 
 
+6
 
-A 
 
+XXV
 
-2 
 
 
-XXVIII 
 
 
-B 
 
+XXV
 
 
+A
 
-XXV 
 
+1
 
-C 
 
+XI
 
-2 
 
+C
 
-IV 
 
+2
 
-A 
 
+XXXI
 
-2 
 
+A
 
-XXIV 
 
+1
 
-B 
 
 
-4 
+XXXII
 
 
 
-ALPHABETICAL INDEX OF AUTHORS 
+A 1
 
 
 
-Abeille: Lyncee XXIII 
+X
 
-Arhaeus: (Edipus XVIII 
 
-Adam (Paul): L'Automne VIII 
 
-Les Mouctli XXIII 
+Xoanephores (The), by Sophocles
 
-Adam de la Halle: Le Jeu <!<• la Feuillee \'I1 
-Le Jeu de Robin et de 
 
-Marion X 
 
-Adonis: Les Revolt es III 
+VI
 
-Aeschylus: The Suppliants 1 
 
-The Heraclidae I 
 
-The Eumenides I 
+A 2
 
-The Eleusinians I 
 
-Danae I 
 
-The Mysians I 
+Zaire, by Voltaire
+Zeim, by Gozzi
+Zenobia, by Metastasio
+Zoe Chien-chien, by Mathey
+Zulime, by Voltaire
 
-The Phrygians I 
 
-The Propom I 
 
-The Epigones 1 1 1 
+XXXII
 
-The Argives III 
 
-The Perrhoebide 1 1 1 
+A
 
-Ixion III 
 
-The Nereids III 
+2
 
-Penelope ill 
 
-Les Joueura d'osselel III 
+XXVIII
 
-and VII 
 
-The ( !hoephoree I \ 
+B
 
-Atalanta l\ 
 
-Prometheui Bound \ 
 
-and VII 
 
-The Persian \ I 
+XXV
 
-The Myrmidoi VI 
 
-The Salaminiai \ I 
+C
 
-TheGui VII 
 
-Nemea \ I 
+2
 
 
+IV
 
-1 1 
-t i 
 
+A
 
 
-B 
+2
 
 
-3 
+XXIV
 
 
-A 
+B
 
 
-1 
+4
 
 
-B 
 
+ALPHABETICAL INDEX OF AUTHORS
 
-•i 
 
 
-A 
+Abeille: Lyncee XXIII
 
+Arhaeus: (Edipus XVIII
 
-S 
+Adam (Paul): L'Automne VIII
 
+Les Mouctli XXIII
 
-C 
+Adam de la Halle: Le Jeu <!<• la Feuillee \'I1
+Le Jeu de Robin et de
 
+Marion X
 
-1 
+Adonis: Les Revolt es III
 
+Aeschylus: The Suppliants 1
 
-A 
+The Heraclidae I
 
+The Eumenides I
 
+The Eleusinians I
 
+Danae I
 
-A 
+The Mysians I
 
+The Phrygians I
 
-5 
+The Propom I
 
+The Epigones 1 1 1
 
-A 
+The Argives III
 
+The Perrhoebide 1 1 1
 
-1 
+Ixion III
 
+The Nereids III
 
-A 
+Penelope ill
 
+Les Joueura d'osselel III
 
-1 
+and VII
 
+The ( !hoephoree I \
 
-A 
+Atalanta l\
 
+Prometheui Bound \
 
-1 
+and VII
 
+The Persian \ I
 
-\ 
+The Myrmidoi VI
 
+The Salaminiai \ I
 
-•> 
+TheGui VII
 
+Nemea \ I
 
-B 
 
 
-•> 
+1 1
+t i
 
 
-B 
 
+B
 
-3 
 
+3
 
-B 
 
+A
 
-I 
 
+1
 
-(' 
 
+B
 
-1 
 
+•i
 
-A 
 
+A
 
-1 
 
+S
 
-\ 
 
+C
 
-1 
 
+1
 
-A 
 
+A
 
-5 
 
 
-\ 
 
+A
 
-6 
 
+5
 
-\ 
 
+A
 
-7 
 
+1
 
-B 
 
+A
 
-• > 
 
+1
 
-1? 
 
+A
 
-• > 
 
+1
 
-B 
 
+\
 
 
+•>
 
-A 
 
+B
 
-1 
 
+•>
 
-B 
 
+B
 
 
+3
 
-C 
 
+B
 
 
+I
 
-c 
 
+('
 
-1 
 
+1
 
-\ 
 
+A
 
-1 
 
+1
 
-\ 
 
+\
 
-1 
 
+1
 
-1 
 
+A
 
-2 
 
+5
 
-B 
 
+\
 
 
+6
 
-\ 
 
+\
 
 
+7
 
 
-1 58 
+B
 
 
+• >
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+1?
 
 
-\.eschyl 
+• >
 
 
-us: The Phorcides 
+B
 
 
-IX 
 
 
-B 
+A
 
 
-2 
+1
 
 
-ii 
+B
 
 
-Phineus 
 
 
-IX 
+C
 
 
-B 
 
 
-2 
+c
 
 
-ii 
+1
 
 
-Memnon 
+\
 
 
-IX 
+1
 
 
-B 
+\
 
 
-2 
+1
 
 
-■ I 
+1
 
 
-Glaucus Pontius 
+2
 
 
-IX 
+B
 
 
-B 
 
 
-2 
+\
 
 
-ii 
 
 
-Prometheus 
 
+1 58
 
-IX 
 
 
-C 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-1 
 
+\.eschyl
 
-ii 
 
+us: The Phorcides
 
-Prometheus Unbound 
 
+IX
 
-IX 
 
+B
 
-D 
 
+2
 
-1 
 
+ii
 
-■ i 
 
+Phineus
 
-Orithyie 
 
+IX
 
-X 
 
+B
 
-A 
 
+2
 
 
+ii
 
-ii 
 
+Memnon
 
-Europa 
 
+IX
 
-X 
 
+B
 
-A 
 
+2
 
 
+■ I
 
-ii 
 
+Glaucus Pontius
 
-The Carians 
 
+IX
 
-X 
 
+B
 
-A 
 
+2
 
 
+ii
 
-ii 
 
+Prometheus
 
-The Sphinx 
 
+IX
 
-XI 
 
+C
 
-B 
 
+1
 
-1 
 
+ii
 
-ii 
 
+Prometheus Unbound
 
-Palamede 
 
+IX
 
-XI 
 
+D
 
-C 
 
+1
 
-3 
 
+■ i
 
-ii 
 
+Orithyie
 
-Philoctetes 
 
+X
 
-XII 
 
+A
 
-A 
 
 
 
+ii
 
-■ I 
 
+Europa
 
-The Judgment of Arms 
 
+X
 
-XII 
 
+A
 
-C 
 
 
 
+ii
 
-ii 
 
+The Carians
 
-The Heliades 
 
+X
 
-XIII 
 
+A
 
-A 
 
 
-1 
 
+ii
 
-ii 
 
+The Sphinx
 
-Seven Against Thebes 
 
+XI
 
-XIII 
 
+B
 
-A 
 
+1
 
-2 
 
+ii
 
-ii 
 
+Palamede
 
-Agamemnon 
 
+XI
 
-XV 
 
+C
 
-A 
 
+3
 
-1 
 
+ii
 
-• I 
 
+Philoctetes
 
-The Weavers of Nets 
 
+XII
 
-XVI 
 
+A
 
-A 
 
 
-1 
 
+■ I
 
-ii 
 
+The Judgment of Arms
 
-Athamas 
 
+XII
 
-XVI 
 
+C
 
-A 
 
 
-1 
 
+ii
 
-ii 
 
+The Heliades
 
-The Thracians 
 
+XIII
 
-XVI 
 
+A
 
-B 
 
+1
 
 
+ii
 
-ii 
 
+Seven Against Thebes
 
-Semele 
 
+XIII
 
-XVII 
 
+A
 
-B 
 
+2
 
-1 
 
+ii
 
-ii 
 
+Agamemnon
 
-CEdipus 
 
+XV
 
-XVIII 
 
+A
 
-A 
 
+1
 
-1 
 
+• I
 
-ii 
 
+The Weavers of Nets
 
-Alcmene 
 
+XVI
 
-XVIII 
 
+A
 
-D 
 
+1
 
-2 
 
+ii
 
-ii 
 
+Athamas
 
-Telephus 
 
+XVI
 
-XIX 
 
+A
 
-B 
 
+1
 
-1 
 
+ii
 
-ii 
 
+The Thracians
 
-The Priestesses 
 
+XVI
 
-XIX 
 
+B
 
-C 
 
 
-2 
 
+ii
 
-ii 
 
+Semele
 
-Polydectes 
 
+XVII
 
-XIX 
 
+B
 
-F 
 
+1
 
-2 
 
+ii
 
-ii 
 
+CEdipus
 
-The Waiting-Women 
 
+XVIII
 
-XX 
 
+A
 
-A 
 
+1
 
-2 
 
+ii
 
-■ I 
 
+Alcmene
 
-The Phoenissae 
 
+XVIII
 
-XX 
 
+D
 
-A 
 
+2
 
-3 
 
+ii
 
-ii 
 
+Telephus
 
-Iphigenia 
 
+XIX
 
-XXIII 
 
+B
 
-A 
 
+1
 
-1 
 
+ii
 
-ii 
 
+The Priestesses
 
-Hypsipyle 
 
+XIX
 
-XXIII 
 
+C
 
-B 
 
+2
 
-2 
 
+ii
 
-ii 
 
+Polydectes
 
-The Danaides 
 
+XIX
 
-XXIII 
 
+F
 
-B 
 
+2
 
-3 
 
+ii
 
-ii 
 
+The Waiting-Women
 
-Laius 
 
+XX
 
-XXVI 
 
+A
 
-D 
 
+2
 
-1 
 
+■ I
 
-ii 
 
+The Phoenissae
 
-The Aedonians 
 
+XX
 
-XXXI 
 
+A
 
-A 
 
+3
 
-1 
 
+ii
 
-ii 
 
+Iphigenia
 
-Pentheus 
 
+XXIII
 
-XXXI 
 
+A
 
-A 
 
+1
 
-1 
 
+ii
 
-ii 
 
+Hypsipyle
 
-The Bassarides 
 
+XXIII
 
-XXXI 
 
+B
 
-A 
 
+2
 
-1 
 
+ii
 
-ii 
 
+The Danaides
 
-The Wool-Carders 
 
+XXIII
 
-XXXI 
 
+B
 
-A 
 
+3
 
-1 
 
+ii
 
-ii 
 
+Laius
 
-Ajax Locrian 
 
+XXVI
 
-XXXI 
 
+D
 
-B 
 
+1
 
-3 
 
+ii
 
-n 
 
+The Aedonians
 
-The Nurses 
 
+XXXI
 
-XXXI 
 
+A
 
-B 
 
+1
 
-4 
 
+ii
 
-ii 
 
+Pentheus
 
-The Eumenides 
 
+XXXI
 
-XXXIV 
 
+A
 
-A 
 
+1
 
-2 
 
+ii
 
-ii 
 
+The Bassarides
 
-Niobe 
 
+XXXI
 
-XXXVI 
 
+A
 
-A 
 
+1
 
-1 
 
+ii
 
-■ I 
 
+The Wool-Carders
 
-Troilus 
 
+XXXI
 
-XXXVI 
 
+A
 
-A 
 
+1
 
-1 
 
+ii
 
-ii 
 
+Ajax Locrian
 
-Penthesilea 
 
+XXXI
 
-XXXVI 
 
+B
 
-C 
 
+3
 
 
+n
 
-1 1 
 
+The Nurses
 
-The Death of Achilles 
 
+XXXI
 
-XXXVI 
 
+B
 
-C 
 
+4
 
 
+ii
 
-ii 
 
+The Eumenides
 
-Psychostase 
 
+XXXIV
 
-XXXVI 
 
+A
 
-C 
 
+2
 
 
+ii
 
-Aicard 
 
+Niobe
 
-Smilis 
 
+XXXVI
 
-XXI 
 
+A
 
-A 
 
+1
 
-2 
 
+■ I
 
 
+Troilus
 
 
+XXXVI
 
-and XXV 
 
+A
 
-C 
 
+1
 
-4 
 
+ii
 
-Aicard 
 
+Penthesilea
 
-: La Legende du Coeur 
 
+XXXVI
 
-XXV 
 
+C
 
-D 
 
 
-1 
 
+1 1
 
-Alamanni: Antigone 
 
+The Death of Achilles
 
-XX 
 
+XXXVI
 
-A 
 
+C
 
-3 
 
 
-Alfieri: 
 
+ii
 
-The Conspiracy of the Pazzi 
 
+Psychostase
 
-VIII 
 
+XXXVI
 
-A 
 
+C
 
-2 
 
 
-1 1 
 
+Aicard
 
-Polynice 
 
+Smilis
 
-XIII 
 
+XXI
 
-A 
 
+A
 
-1 
 
+2
 
-1 1 
 
 
-Saul 
 
 
-XIII 
 
+and XXV
 
-D 
 
+C
 
 
+4
 
-• i 
 
+Aicard
 
-Agis 
 
+: La Legende du Coeur
 
-XIII 
 
+XXV
 
-D 
 
+D
 
 
+1
 
 
-INDEX OF AUTHORS 
+Alamanni: Antigone
 
 
+XX
 
-159 
 
+A
 
 
-Alfieri: Philippe II 
+3
 
-Octavia 
-Merope 
-" Antigone 
-" Sophonisbe 
-" Rosemonde 
-Myrrha 
-Timoleon 
-Brutus II 
-Marie Stuart 
-" Don Garzia 
-Orestes 
-Amigues: La Comtesse Fredegonde 
-Ancey: L'Ecole des veufs 
-Andersen: Le Compagnon de voyage 
-Anguillara: OZdipus 
-Annunzio (d'): La Citta morta 
-Aretin d'j : Horace 
-Armand iMme): Les Fils de Jahel 
-Arnold: Le rime d'un autre 
-Arnould: Le Mari 
 
-La Belle aux cheveux d'or 
-Arnyvelde: La Courtisane 
-Artois (d'j: La Fermiore 
-Athis: Le pere Chasselas 
-Attilius: Klectra 
+Alfieri:
 
-Auge de Lassus: La Conspiration de gen- 
-eral Malet 
-Augier: Diane 
 
-Madame Caverlet 
-Le Manage d'Olympe 
+The Conspiracy of the Pazzi
 
-Aurcl: L'lnsociale 
 
+VIII
 
 
-and 
+A
 
 
+2
 
-and 
 
+1 1
 
 
-XIV 
+Polynice
 
 
-B 
+XIII
 
 
-3 
+A
 
 
-XXVI 
+1
 
 
-B 
+1 1
 
 
-2 
+Saul
 
 
-XV 
+XIII
 
 
-B 
+D
 
 
 
 
-XIX 
+• i
 
 
-B 
+Agis
 
 
-1 
+XIII
 
 
-XX 
+D
 
 
-A 
 
 
-3 
 
+INDEX OF AUTHORS
 
-XX 
 
 
-B 
+159
 
 
-3 
 
+Alfieri: Philippe II
 
-XXV 
+Octavia
+Merope
+" Antigone
+" Sophonisbe
+" Rosemonde
+Myrrha
+Timoleon
+Brutus II
+Marie Stuart
+" Don Garzia
+Orestes
+Amigues: La Comtesse Fredegonde
+Ancey: L'Ecole des veufs
+Andersen: Le Compagnon de voyage
+Anguillara: OZdipus
+Annunzio (d'): La Citta morta
+Aretin d'j : Horace
+Armand iMme): Les Fils de Jahel
+Arnold: Le rime d'un autre
+Arnould: Le Mari
 
+La Belle aux cheveux d'or
+Arnyvelde: La Courtisane
+Artois (d'j: La Fermiore
+Athis: Le pere Chasselas
+Attilius: Klectra
 
-B 
+Auge de Lassus: La Conspiration de gen-
+eral Malet
+Augier: Diane
 
+Madame Caverlet
+Le Manage d'Olympe
 
-5 
+Aurcl: L'lnsociale
 
 
-XXVI 
 
+and
 
-A 
 
 
-2 
+and
 
 
-XXX 
 
+XIV
 
-A 
 
+B
 
-1 
 
+3
 
-XXX 
 
+XXVI
 
-A 
 
+B
 
-2 
 
+2
 
-XXXIII 
 
+XV
 
-A 
 
+B
 
-2 
 
 
-XXXIII 
 
+XIX
 
-C 
 
+B
 
-3 
 
+1
 
-XXXIV 
 
+XX
 
-A 
 
+A
 
-2 
 
+3
 
-XXV 
 
+XX
 
-B 
 
+B
 
-7 
 
+3
 
-XXVI 
 
+XXV
 
-B 
 
+B
 
-3 
 
+5
 
-XI 
 
+XXVI
 
-B 
 
+A
 
-2 
 
+2
 
-XVIII 
 
+XXX
 
-A 
 
+A
 
-1 
 
+1
 
-XXVI 
 
+XXX
 
-C 
 
+A
 
-2 
 
+2
 
-XXIII 
 
+XXXIII
 
-B 
 
+A
 
-5 
 
+2
 
-XX 
 
+XXXIII
 
-B 
 
+C
 
-2 
 
+3
 
-XXXIII 
 
+XXXIV
 
-D 
 
+A
 
-9 
 
-it 
+2
 
 
-XXV 
+XXV
 
 
-C 
+B
 
 
-1 
+7
 
 
-XVII 
+XXVI
 
 
-C 
+B
 
 
-3 
+3
 
 
-XXVII 
+XI
 
 
-B 
+B
 
 
-6 
+2
 
 
-X X 1 V 
+XVIII
 
 
-C 
+A
 
 
+1
 
 
-XXXV 
+XXVI
 
 
+C
 
 
+2
 
 
-IV 
+XXIII
 
 
-A 
+B
 
 
-1 
+5
 
 
-VIII 
+XX
 
 
-A 
+B
 
 
-1 
+2
 
 
-XXI 
+XXXIII
 
 
-C 
+D
 
 
-1 
+9
 
+it
 
-XXXIII 
 
+XXV
 
-A 
 
+C
 
-2 
 
+1
 
-XXVI] 
 
+XVII
 
-\ 
 
+C
 
-1 
 
+3
 
-XXVII 
 
+XXVII
 
-B 
 
+B
 
-8 
 
+6
 
-XXXVI 
 
+X X 1 V
 
-B 
 
+C
 
 
 
 
-H 
+XXXV
 
 
 
-Balzac: < Jeaar Birotteau 
-La cousine Bette 
 
-\ autrin 
-Balzac Lee [llu lona perdu 
-Barliif-r: [ndigne 
 
-Marlatier: La Mortf 
-Hassci : Lea ( Irand 
-Hatailli-: 1/ I!iu'hantemen1 
 
-Martian f lolibri 
+IV
 
-La Vierge folle 
-Lr> Scandale 
-Beauliourg: L'Image 
 
-I > i • ■ 1 1 mi pa I lieu 
+A
 
 
+1
 
-\l 
 
+VIII
 
-B 
 
+A
 
 
+1
 
-XXII 
 
+XXI
 
-c 
 
+C
 
-l 
 
+1
 
-XX\ 1 
 
+XXXIII
 
-D 
 
+A
 
-1 
 
+2
 
-XXX 
 
+XXVI]
 
-c 
 
+\
 
-l 
 
+1
 
-V 
 
+XXVII
 
-B 
 
+B
 
 
+8
 
-XXI\ 
 
+XXXVI
 
-B 
 
+B
 
-8 
 
 
-XXXIII 
 
 
-\ 
+H
 
 
-8 
 
+Balzac: < Jeaar Birotteau
+La cousine Bette
 
-XIV 
+\ autrin
+Balzac Lee [llu lona perdu
+Barliif-r: [ndigne
 
+Marlatier: La Mortf
+Hassci : Lea ( Irand
+Hatailli-: 1/ I!iu'hantemen1
 
-\ 
+Martian f lolibri
 
+La Vierge folle
+Lr> Scandale
+Beauliourg: L'Image
 
-■1 
+I > i • ■ 1 1 mi pa I lieu
 
 
-XXII 
 
+\l
 
-c 
 
+B
 
-1 
 
 
-x\\ 
 
+XXII
 
-B 
 
+c
 
-9 
 
+l
 
-X X \l\ 
 
+XX\ 1
 
-It 
 
+D
 
-2 
 
+1
 
-XXI\ 
 
+XXX
 
-B 
 
+c
 
-8 
 
+l
 
-XXIX 
 
+V
 
-\ 
 
+B
 
-8 
 
 
 
-160 
+XXI\
 
 
+B
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+8
 
 
-Beaumont : The Two Noble Kinsmen 
+XXXIII
 
-Valentinian 
-Becque: Les Corbeaux 
-Bell: Catharine la Batarde 
-Bergerat: Vidocq 
-" Myrane 
 
-Flore de Frileuse 
-Berlioz: Les Troyens 
+\
 
-Bernard: Mon ami Teddy 
 
-Bernard (Tristan): Le Danseur ineonnu 
+8
 
-Bernard (C. de): Gerfaut 
 
-Bernede: Le Roi Soleil 
+XIV
 
-Bernhardt (Sarah): L'Aveu 
 
-Bernstein: Israel 
+\
 
-La Griffe 
-" Le Bercail 
 
-" Apres moi 
+■1
 
-Le Voleur 
-Berton: La Rencontre 
 
-Lena 
-Bertrand: Jack the Ripper 
-Bhatta Narayana: Venisamhara 
-Bhavabuti: Malati and Madhava 
+XXII
 
-Mahaviracharita 
-Later Life of Rama 
-Bilhaud: La Courtisane de Corinth 
-Biollay: M. Bute 
 
-Les Angles du divorce 
-Bisson: Nick Carter 
+c
 
-La Femme X 
-Bizet: L'Arlesienne 
-Blavet: Les Fils de Porthos 
-Bodel (Jean): Le Jeu de Saint-Nicholas 
-Bois (G.): Edith 
-Bois (J.j: La Furie 
-Boissy: Alceste 
-Bannetain: L'Opium 
-Borteau-Lotti: Soeurette 
-Bourget: Le Disciple 
-La Barricade 
-" Mensonges 
 
-Le Tribun 
-L'Emigre 
-" Le Divorce 
+1
 
-Bouvier: La Dame au Domino rose 
-La Sang-brule 
-Malheur aux pauvres 
-La grande Iza 
-Boyer: Jephtha 
 
+x\\
 
 
-XIV 
+B
 
 
-c 
+9
 
 
+X X \l\
 
 
-XXXIII 
+It
 
 
-D 
+2
 
 
-4 
+XXI\
 
 
-VII 
+B
 
 
-B 
+8
 
 
+XXIX
 
 
-XXXIII 
+\
 
 
-D 
+8
 
 
-1 
 
+160
 
-III 
 
 
-c 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
 
+Beaumont : The Two Noble Kinsmen
 
-XXV 
+Valentinian
+Becque: Les Corbeaux
+Bell: Catharine la Batarde
+Bergerat: Vidocq
+" Myrane
 
+Flore de Frileuse
+Berlioz: Les Troyens
 
-B 
+Bernard: Mon ami Teddy
 
+Bernard (Tristan): Le Danseur ineonnu
 
-7 
+Bernard (C. de): Gerfaut
 
+Bernede: Le Roi Soleil
 
-XXVII 
+Bernhardt (Sarah): L'Aveu
 
+Bernstein: Israel
 
-B 
+La Griffe
+" Le Bercail
 
+" Apres moi
 
-2 
+Le Voleur
+Berton: La Rencontre
 
+Lena
+Bertrand: Jack the Ripper
+Bhatta Narayana: Venisamhara
+Bhavabuti: Malati and Madhava
 
-I 
+Mahaviracharita
+Later Life of Rama
+Bilhaud: La Courtisane de Corinth
+Biollay: M. Bute
 
+Les Angles du divorce
+Bisson: Nick Carter
 
-B 
+La Femme X
+Bizet: L'Arlesienne
+Blavet: Les Fils de Porthos
+Bodel (Jean): Le Jeu de Saint-Nicholas
+Bois (G.): Edith
+Bois (J.j: La Furie
+Boissy: Alceste
+Bannetain: L'Opium
+Borteau-Lotti: Soeurette
+Bourget: Le Disciple
+La Barricade
+" Mensonges
 
+Le Tribun
+L'Emigre
+" Le Divorce
 
-1 
+Bouvier: La Dame au Domino rose
+La Sang-brule
+Malheur aux pauvres
+La grande Iza
+Boyer: Jephtha
 
 
-and XX 
 
+XIV
 
-B 
 
+c
 
-3 
 
 
-XXIV 
 
+XXXIII
 
-A 
 
+D
 
-7 
 
+4
 
-XXVIII 
 
+VII
 
-A 
 
+B
 
-2 
 
 
-XXV 
 
+XXXIII
 
-c 
 
+D
 
-6 
 
+1
 
-XXXIII 
 
+III
 
-c 
 
+c
 
-2 
 
 
-XXV 
 
+XXV
 
-c 
 
+B
 
-4 
 
+7
 
-XIX 
 
+XXVII
 
-E 
 
+B
 
 
+2
 
-XXII 
 
+I
 
-A 
 
+B
 
-3 
 
+1
 
-XXV 
 
+and XX
 
-c 
 
+B
 
-4 
 
+3
 
-XXV 
 
+XXIV
 
-D 
 
+A
 
-1 
 
+7
 
-XXXIII 
 
+XXVIII
 
-A 
 
+A
 
-3 
 
+2
 
-XXV 
 
+XXV
 
-C 
 
+c
 
-4 
 
+6
 
-XXVII 
 
+XXXIII
 
-B 
 
+c
 
-4 
 
+2
 
-III 
 
+XXV
 
-B 
 
+c
 
-7 
 
+4
 
-III 
 
+XIX
 
-A 
 
+E
 
-5 
 
 
-X 
 
+XXII
 
-C 
 
+A
 
-1 
 
+3
 
-and XXIV 
 
+XXV
 
-A 
 
+c
 
-3 
 
+4
 
-X 
 
+XXV
 
-C 
 
+D
 
-2 
 
+1
 
-XXXV 
 
+XXXIII
 
 
+A
 
 
+3
 
-III 
 
+XXV
 
-B 
 
+C
 
-5 
 
+4
 
-XVI 
 
+XXVII
 
-A 
 
+B
 
-3 
 
+4
 
-XXVIII 
 
+III
 
-E 
 
+B
 
 
+7
 
-III 
 
+III
 
-C 
 
+A
 
 
+5
 
-XXVII 
 
+X
 
-A 
 
+C
 
-1 
 
+1
 
-XXII 
 
+and XXIV
 
-A 
 
+A
 
-5 
 
+3
 
-XXIV 
 
+X
 
-A 
 
+C
 
-5 
 
+2
 
-II 
 
+XXXV
 
-A 
 
 
 
 
-V 
 
+III
 
-C 
 
+B
 
 
+5
 
-XXII 
 
+XVI
 
-A 
 
+A
 
-5 
 
+3
 
-XXI 
 
+XXVIII
 
-A 
 
+E
 
-1 
 
 
-XXII 
 
+III
 
-C 
 
+C
 
-2 
 
 
-XXV 
 
+XXVII
 
-C 
 
+A
 
-7 
 
+1
 
-III 
 
+XXII
 
-A 
 
+A
 
-8 
 
+5
 
-XXIV 
 
+XXIV
 
-A 
 
+A
 
-7 
 
+5
 
-XXVII 
 
+II
 
-B 
 
+A
 
-7 
 
 
-XXVII 
 
+V
 
-D 
 
+C
 
-2 
 
 
-XXVIII 
 
+XXII
 
-A 
 
+A
 
-1 
 
+5
 
-XXVIII 
 
+XXI
 
-D 
 
+A
 
-1 
 
+1
 
-XVIII 
 
+XXII
 
-C 
 
+C
 
 
+2
 
-XXVI 
 
+XXV
 
-C 
 
+C
 
-1 
 
+7
 
-XXXII 
 
+III
 
-C 
 
+A
 
-3 
 
+8
 
-XXXIII 
 
+XXIV
 
-B 
 
+A
 
-2 
 
+7
 
-XXIII 
 
+XXVII
 
-A 
 
+B
 
-2 
 
+7
 
 
-INDEX OF AUTHORS 
+XXVII
 
 
+D
 
-161 
 
+2
 
 
-Brieux: Maternite 
+XXVIII
 
-Les A varies 
 
-Simone 
+A
 
-La Petite Amie 
-Suzette 
-Buchanan: Alceste 
-Jephtha 
-Buet : Le Pretre 
 
-Busnach: Le Secret de la Terreuse 
-Byl: L'Age Critique 
-Byron: The Two Foscari 
+1
 
-Sardanapalus 
 
-Marino Faliero 
+XXVIII
 
-The Deformed Transformed 
 
-Cain 
+D
 
-Heaven and Earth 
-" Werner 
 
-Manfred 
+1
 
 
+XVIII
 
-VI 
 
+C
 
-D 
 
 
-1 
 
+XXVI
 
-XVII 
 
+C
 
-c 
 
+1
 
-2 
 
+XXXII
 
-XXVII 
 
+C
 
-D 
 
+3
 
-6 
 
+XXXIII
 
-XXVIII 
 
+B
 
-A 
 
+2
 
-2 
 
+XXIII
 
-XXXII 
 
+A
 
-A 
 
+2
 
-3 
 
 
-XXI 
+INDEX OF AUTHORS
 
 
-A 
 
+161
 
-1 
 
 
-XXIII 
+Brieux: Maternite
 
+Les A varies
 
-A 
+Simone
 
+La Petite Amie
+Suzette
+Buchanan: Alceste
+Jephtha
+Buet : Le Pretre
 
-2 
+Busnach: Le Secret de la Terreuse
+Byl: L'Age Critique
+Byron: The Two Foscari
 
+Sardanapalus
 
-III 
+Marino Faliero
 
+The Deformed Transformed
 
-A 
+Cain
 
+Heaven and Earth
+" Werner
 
-1 
+Manfred
 
 
-XXXIII 
 
+VI
 
-B 
 
+D
 
-4 
 
+1
 
-XXV 
 
+XVII
 
-C 
 
+c
 
-3 
 
+2
 
-III 
 
+XXVII
 
-A 
 
+D
 
-1 
 
+6
 
-VI 
 
+XXVIII
 
-A 
 
+A
 
-2 
 
+2
 
-VI 
 
+XXXII
 
-C 
 
+A
 
-1 
 
+3
 
-IX 
 
+XXI
 
-D 
 
+A
 
-3 
 
+1
 
-XIII 
 
+XXIII
 
-A 
 
+A
 
-1 
 
+2
 
-XXIV 
 
+III
 
-A 
 
+A
 
-1 
 
+1
 
-XXVII 
 
+XXXIII
 
-C 
 
+B
 
 
+4
 
-XXXIV 
 
+XXV
 
-A 
 
+C
 
-1 
 
+3
 
 
-Caillavet (de): Papa 
+III
 
-Le Coeur a ses raisons 
-L'Ane de Buridan 
-La Montansier 
-Cain: Les Revokes 
-Calderon: The Alcalde of Zalamea 
-Love After Death 
-Devotion to the Cross 
-Louis Perez of Galieia 
-Calderon: Three Punishments in One 
-The Schism of England 
-The Constant Prince 
-Secret Vengeance for Secret 
 
-Outrage 
-The Physician of His Honor 
-His Own Gaoler 
-Fortune and Misfortune of a 
+A
 
-Name 
-The \\<>r-t is Nut Always Cer- 
-tain 
 
-Life is a Dream 
-Cantchana Atcharya: The Victory of 
+1
 
-Arjuna 
-CaptU : Un Ang»- 
 
-I, Attentat 
+VI
 
-La Veine 
-Carcinus: (Edi] 
-Carre: La < ourt isane de Corinth 
 
-La Roman d'ui i piral [on 
+A
 
 
+2
 
-XIV 
 
+VI
 
-B 
 
+C
 
-1 
 
+1
 
-XIV 
 
+IX
 
-D 
 
+D
 
 
+3
 
-XXIV 
 
+XIII
 
-B 
 
+A
 
-fi 
 
+1
 
-x\\ 
 
+XXIV
 
-c 
 
+A
 
-3 
 
+1
 
-III 
 
+XXVII
 
-A 
 
+C
 
-5 
 
 
-III 
 
+XXXIV
 
-A 
 
+A
 
-3 
 
+1
 
-III 
 
 
-A 
+Caillavet (de): Papa
 
+Le Coeur a ses raisons
+L'Ane de Buridan
+La Montansier
+Cain: Les Revokes
+Calderon: The Alcalde of Zalamea
+Love After Death
+Devotion to the Cross
+Louis Perez of Galieia
+Calderon: Three Punishments in One
+The Schism of England
+The Constant Prince
+Secret Vengeance for Secret
 
-6 
+Outrage
+The Physician of His Honor
+His Own Gaoler
+Fortune and Misfortune of a
 
+Name
+The \\<>r-t is Nut Always Cer-
+tain
 
-V 
+Life is a Dream
+Cantchana Atcharya: The Victory of
 
+Arjuna
+CaptU : Un Ang»-
 
-A 
+I, Attentat
 
+La Veine
+Carcinus: (Edi]
+Carre: La < ourt isane de Corinth
 
+La Roman d'ui i piral [on
 
 
-V 
 
+XIV
 
-A 
 
+B
 
 
+1
 
-XIII 
 
+XIV
 
-B 
 
+D
 
-1 
 
 
-XV 
 
+XXIV
 
-B 
 
+B
 
 
+fi
 
-XX 
 
+x\\
 
-A 
 
+c
 
-4 
 
+3
 
-X X V 
 
+III
 
-I) 
 
+A
 
-1 
 
+5
 
-x x v 
 
+III
 
-D 
 
+A
 
-1 
 
+3
 
-XXIX 
 
+III
 
-B 
 
+A
 
-6 
 
+6
 
-XXIX 
 
+V
 
-B 
 
+A
 
-r> 
 
 
-XXXII 
 
+V
 
-\ 
 
+A
 
-l 
 
 
-XIII 
 
+XIII
 
-B 
 
+B
 
-■2 
 
+1
 
-IX 
 
+XV
 
-C 
 
+B
 
--' 
 
 
-Wil 
 
+XX
 
-C 
 
+A
 
-2 
 
+4
 
-XXIV 
 
+X X V
 
-A 
 
+I)
 
-7 
 
+1
 
-xx\ 
 
+x x v
 
-A 
 
+D
 
-••{ 
 
+1
 
-X\ III 
 
+XXIX
 
-\ 
 
+B
 
-1 
 
+6
 
-III 
 
+XXIX
 
-B 
 
+B
 
-:. 
 
+r>
 
-VIII 
 
+XXXII
 
-A 
 
+\
 
-■> 
 
+l
 
 
-162 
+XIII
 
 
+B
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+■2
 
 
-Cervantes: Don Quixote 
+IX
 
 
-II 
+C
 
 
-A 
+-'
 
 
+Wil
 
 
-Caesar: (Edipus 
+C
 
 
-XVIII 
+2
 
 
-A 
+XXIV
 
 
-1 
+A
 
 
-Chabrihan iComtesse de): Pierre Pascal 
+7
 
 
-XV 
+xx\
 
 
-A 
+A
 
 
-1 
+••{
 
 
-Chancel: S. A. R. 
+X\ III
 
 
-XX 
+\
 
 
-B 
+1
 
 
-3 
+III
 
 
-Charton: Devant l'ennenii 
+B
 
 
-XXIV 
+:.
 
 
-A 
+VIII
 
 
-8 
+A
 
 
-Chatrian: La Nuit de Saint-Jean 
+■>
 
 
-XXIV 
 
+162
 
-A 
 
 
-7 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-Myrtille 
 
+Cervantes: Don Quixote
 
-XXVIII 
 
+II
 
-A 
 
+A
 
-2 
 
 
-L'Ami Fritz 
 
+Caesar: (Edipus
 
-XXVIII 
 
+XVIII
 
-A 
 
+A
 
-2 
 
+1
 
-Les Rantzau 
 
+Chabrihan iComtesse de): Pierre Pascal
 
-XXIX 
 
+XV
 
-A 
 
+A
 
-3 
 
+1
 
-La Taverne des Trabans 
 
+Chancel: S. A. R.
 
-XXIX 
 
+XX
 
-A 
 
+B
 
-3 
 
+3
 
-Madame Therese 
 
+Charton: Devant l'ennenii
 
-XXIX 
 
+XXIV
 
-A 
 
+A
 
-4 
 
+8
 
-Chateaubriand: Les Martyrs 
 
+Chatrian: La Nuit de Saint-Jean
 
-XXXI 
 
+XXIV
 
-A 
 
+A
 
-2 
 
+7
 
-Rene 
 
+Myrtille
 
-XXXIV 
 
+XXVIII
 
-B 
 
+A
 
 
+2
 
-Chenier (M. J.): Electre 
 
+L'Ami Fritz
 
-IV 
 
+XXVIII
 
-A 
 
+A
 
-1 
 
+2
 
-(Edipus 
 
+Les Rantzau
 
-XVIII 
 
+XXIX
 
-A 
 
+A
 
-1 
 
+3
 
-Cicero (Q.): Electra 
 
+La Taverne des Trabans
 
-IV 
 
+XXIX
 
-A 
 
+A
 
-1 
 
+3
 
-Cienfuegos: Idomenee 
 
+Madame Therese
 
-XXIII 
 
+XXIX
 
-A 
 
+A
 
-2 
 
+4
 
-Clairian: Jack the Ripper 
 
+Chateaubriand: Les Martyrs
 
-III 
 
+XXXI
 
-B 
 
+A
 
-7 
 
+2
 
-Clairville: Madame Margot 
 
+Rene
 
-VIII 
 
+XXXIV
 
-A 
 
+B
 
-2 
 
 
-Claretie: Le Prince Zilah 
 
+Chenier (M. J.): Electre
 
-XXVII 
 
+IV
 
-B 
 
+A
 
-3 
 
+1
 
-Claudel: Partage de midi 
 
+(Edipus
 
-XV 
 
+XVIII
 
-A 
 
+A
 
-\ 
 
+1
 
-Cliquet: C'est la loi 
 
+Cicero (Q.): Electra
 
-XXV 
 
+IV
 
-B 
 
+A
 
-8 
 
+1
 
-Coedes: Le Crime de Maisons-Alfort 
 
+Cienfuegos: Idomenee
 
-III 
 
+XXIII
 
-A 
 
+A
 
-1 
 
+2
 
-Coolus: Le Risque 
 
+Clairian: Jack the Ripper
 
-XIV 
 
+III
 
-A 
 
+B
 
-4 
 
+7
 
-Une femme passa 
 
+Clairville: Madame Margot
 
-XIV 
 
+VIII
 
-D 
 
+A
 
 
+2
 
-Coolus: Les Passageres 
 
+Claretie: Le Prince Zilah
 
-XXIV 
 
+XXVII
 
-B 
 
+B
 
-6 
 
+3
 
-Antoinette Sabrier 
 
+Claudel: Partage de midi
 
-XXIV 
 
+XV
 
-C 
 
+A
 
-3 
 
+\
 
-Coeur a Coeur 
 
+Cliquet: C'est la loi
 
-XXV 
 
+XXV
 
-C 
 
+B
 
-6 
 
+8
 
-Les Bleus de 1 'amour 
 
+Coedes: Le Crime de Maisons-Alfort
 
-XXVIII 
 
+III
 
-C 
 
+A
 
-2 
 
+1
 
-" 4x7 — 28 
 
+Coolus: Le Risque
 
-XXXII 
 
+XIV
 
-A 
 
+A
 
-3 
 
+4
 
-Coppee: Madame de Maintenon 
 
+Une femme passa
 
-XXI 
 
+XIV
 
-B 
 
+D
 
-2 
 
 
-Les Jacobites 
 
+Coolus: Les Passageres
 
-XXV 
 
+XXIV
 
-D 
 
+B
 
-2 
 
+6
 
-Severo Torelli 
 
+Antoinette Sabrier
 
-XXVII 
 
+XXIV
 
-D 
 
+C
 
-1 
 
+3
 
-Corneille (P.): Andromede 
 
+Coeur a Coeur
 
-II 
 
+XXV
 
-A 
 
+C
 
 
+6
 
-Pompee 
 
+Les Bleus de 1 'amour
 
-III 
 
+XXVIII
 
-A 
 
+C
 
-4 
 
+2
 
-Nicomede 
 
+" 4x7 — 28
 
-V 
 
+XXXII
 
-C 
 
+A
 
 
+3
 
-Cinna 
 
+Coppee: Madame de Maintenon
 
-VIII 
 
+XXI
 
-A 
 
+B
 
-1 
 
+2
 
-Rodogune 
 
+Les Jacobites
 
-XIII 
 
+XXV
 
-E 
 
+D
 
 
+2
 
-Psyche 
 
+Severo Torelli
 
-XVII 
 
+XXVII
 
-B 
 
+D
 
-1 
 
+1
 
-(Edipe 
 
+Corneille (P.): Andromede
 
-XVIII 
 
+II
 
-A 
 
+A
 
-1 
 
 
-Heraclius 
 
+Pompee
 
-XVIII 
 
+III
 
-B 
 
+A
 
-2 
 
+4
 
-Polyeucte 
 
+Nicomede
 
-XX 
 
+V
 
-B 
 
+C
 
-1 
 
 
-Othon 
 
+Cinna
 
-XX 
 
+VIII
 
-B 
 
+A
 
-3 
 
+1
 
-Pulcherie 
 
+Rodogune
 
-XX 
 
+XIII
 
-B 
 
+E
 
-3 
 
 
-Tite et Berenice 
 
+Psyche
 
-XX 
 
+XVII
 
-B 
 
+B
 
-3 
 
+1
 
-Sertorius 
 
+(Edipe
 
-XX 
 
+XVIII
 
-B 
 
+A
 
-3 
 
+1
 
-Theodore 
 
+Heraclius
 
-XX 
 
+XVIII
 
-D 
 
+B
 
 
+2
 
-Pertharite 
 
+Polyeucte
 
-XXI 
 
+XX
 
-D 
 
+B
 
-2 
 
+1
 
-Horace 
 
+Othon
 
-XXIII 
 
+XX
 
-B 
 
+B
 
-5 
 
+3
 
-Attila 
 
+Pulcherie
 
-XXIV 
 
+XX
 
-A 
 
+B
 
-4 
 
+3
 
-Agesilas 
 
+Tite et Berenice
 
-XXIV 
 
+XX
 
-A 
 
+B
 
-5 
 
+3
 
 
-A 
+Sertorius
 
 
-5 
+XX
 
 
-A 
+B
 
 
-6 
+3
 
 
-B 
+Theodore
 
 
-1 
+XX
 
 
-A 
+D
 
 
-1 
 
 
-B 
+Pertharite
 
 
-1 
+XXI
 
 
-D 
+D
 
 
-1 
+2
 
 
-D 
+Horace
 
 
-1 
+XXIII
 
 
-B 
+B
 
 
-7 
+5
 
 
-B 
+Attila
 
 
-2 
+XXIV
 
 
-B 
+A
 
 
-2 
+4
 
 
-A 
+Agesilas
 
 
-1 
+XXIV
 
 
-A 
+A
 
 
-1 
+5
 
 
-A 
 
+A
 
-2 
 
+5
 
-A 
 
+A
 
-2 
 
+6
 
-C 
 
+B
 
-2 
 
+1
 
-A 
 
+A
 
-T 
 
+1
 
-D 
 
+B
 
-1 
 
+1
 
-C 
 
+D
 
 
+1
 
-C 
 
+D
 
 
+1
 
-c 
 
+B
 
-1 
 
+7
 
-B 
 
+B
 
-1 
 
+2
 
-D 
 
+B
 
 
+2
 
 
-INDEX OF AUTHORS 163 
+A
 
-Corneille iP.i: Surena XXIV 
 
-Don Sanche XXIV 
-La Conquete de la Toison 
+1
 
-dor XXIV 
 
-Medee XXV 
+A
 
-LeCid XXIX 
 
-Corneille: Clitandre XXXIII 
+1
 
-Corneille (T.): Ariane VI 
 
-and XXI Y 
+A
 
-Le Comte d' Essex X XIV 
 
-Le Festin de Pierre XXXI 
+2
 
-Coypel: Alceste XXI 
 
-Crebillon: Electre IV 
+A
 
-Atree et Thyeste XIII 
 
-Idomenee XXIII 
+2
 
-Rhadamiste et Zenobie XXV 
 
-Semiramis XXVI 
+C
 
-Cremieux: La Charbonniere XXI 
 
-Crichna Cavi: The Death of Cansa XIII 
+2
 
-Croisset : Le Circuit XXIV 
 
-Cromelynck: Le Sculpteur de Masques XXVI 
+A
 
-Curel (de): Les Fossiles XIV 
 
-La Fille sauvage XXXVI 
+T
 
-D 
 
-Dalayrac: Raoul de Crequi 
-Dallif-re: La Mission de Jeanne d'Arc 
-Danceny: L'Or 
-Darlay: La Petite Caporale 
+D
 
-Les Aventures de Gavroche 
-Dartois: Un Patriote 
-Daudet: Tartarin 
 
-La Lutte pour la vie 
+1
 
-Port-Tarascon 
 
-L'Evangeli 
+C
 
-Sapho 
 
-L'Arlesienne 
-L'Obstacle 
-Numa Rounifstaii 
-La Pel it'' Paro 
 
-Dorourcfllf: Le Roi sans rri\aurn<- 
 
-L'Aa de trefle 
+C
 
-Lee < , in<i doigti de Birouk 
-Delahayt- I. a I lecll 
-Delacour: La ( Iriminelle 
-Delavigne: Une famille au temp de Lutber 
-Delibes: Lai 
-Delpit : Lea Maucroix 
 
-Mile. '!<• Bre lier 
 
-I )<ninl(lcr: La Route d'emeraude 
 
+c
 
 
-\\\ 
+1
 
 
-E 
+B
 
 
+1
 
 
-VIII 
+D
 
 
-B 
 
 
-1 
 
+INDEX OF AUTHORS 163
 
-III 
+Corneille iP.i: Surena XXIV
 
+Don Sanche XXIV
+La Conquete de la Toison
 
-A 
+dor XXIV
 
+Medee XXV
 
-1 
+LeCid XXIX
 
+Corneille: Clitandre XXXIII
 
-l\ 
+Corneille (T.): Ariane VI
 
+and XXI Y
 
-D 
+Le Comte d' Essex X XIV
 
+Le Festin de Pierre XXXI
 
-4 
+Coypel: Alceste XXI
 
+Crebillon: Electre IV
 
-\ \ X \ 
+Atree et Thyeste XIII
 
+Idomenee XXIII
 
+Rhadamiste et Zenobie XXV
 
+Semiramis XXVI
 
+Cremieux: La Charbonniere XXI
 
+Crichna Cavi: The Death of Cansa XIII
 
-XXIII 
+Croisset : Le Circuit XXIV
 
+Cromelynck: Le Sculpteur de Masques XXVI
 
-B 
+Curel (de): Les Fossiles XIV
 
+La Fille sauvage XXXVI
 
-4 
+D
 
+Dalayrac: Raoul de Crequi
+Dallif-re: La Mission de Jeanne d'Arc
+Danceny: L'Or
+Darlay: La Petite Caporale
 
-\ I 
+Les Aventures de Gavroche
+Dartois: Un Patriote
+Daudet: Tartarin
 
+La Lutte pour la vie
 
-B 
+Port-Tarascon
 
+L'Evangeli
 
+Sapho
 
+L'Arlesienne
+L'Obstacle
+Numa Rounifstaii
+La Pel it'' Paro
 
-XV 
+Dorourcfllf: Le Roi sans rri\aurn<-
 
+L'Aa de trefle
 
-B 
+Lee < , in<i doigti de Birouk
+Delahayt- I. a I lecll
+Delacour: La ( Iriminelle
+Delavigne: Une famille au temp de Lutber
+Delibes: Lai
+Delpit : Lea Maucroix
 
+Mile. '!<• Bre lier
 
+I )<ninl(lcr: La Route d'emeraude
 
 
-XVII 
 
+\\\
 
-C 
 
+E
 
-4 
 
 
-XX 
 
+VIII
 
-B 
 
+B
 
-1 
 
+1
 
-XXII 
 
+III
 
-A 
 
+A
 
-:t 
 
+1
 
-XXII 
 
+l\
 
-A 
 
+D
 
-6 
 
+4
 
-XXIV 
 
+\ \ X \
 
-\ 
 
 
-B 
 
 
-\x\ 
 
+XXIII
 
-B 
 
+B
 
-• i 
 
+4
 
-\\\ 
 
+\ I
 
-c 
 
+B
 
-"i 
 
 
-\ 111 
 
+XV
 
-A 
 
+B
 
-l 
 
 
-XXVII 
 
+XVII
 
-I> 
 
+C
 
-:t 
 
+4
 
-\\\ 
 
+XX
 
-C 
 
+B
 
-1 
 
+1
 
-III 
 
+XXII
 
-B 
 
+A
 
-i 
 
+:t
 
-XXXIII 
 
+XXII
 
-B 
 
+A
 
-• t 
 
+6
 
-XIII 
 
+XXIV
 
-A 
 
+\
 
-I 
 
+B
 
-\XI\ 
 
+\x\
 
-\ 
 
+B
 
-i 
 
+• i
 
-\l\ 
 
+\\\
 
-\ 
 
+c
 
-1 
 
+"i
 
-XXIX 
 
+\ 111
 
-B 
 
+A
 
-• > 
 
+l
 
-\ X 1 1 
 
+XXVII
 
-\ 
 
+I>
 
-i. 
 
+:t
 
 
-1(54 
+\\\
 
 
+C
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+1
 
 
-Dennery: Martyre 
+III
 
-Le petit Jacques 
-Descaves: L'Attentat 
-Desnard: La Degringolade 
-Devore: Page blanche 
 
-La Conscience de l'enfant 
-Diaz: Benvenuto 
-Dickens: Great Expectations 
-Diogenes: OEdipus 
-Dolce: Marianne 
-Donnay: L'Autre Danger 
-Le Torrent 
-Paraitre 
-Dor at: Alceste 
-Dornay: Gavroche 
+B
 
-Fiacre No. 13 
-Les Foulards-rouges 
-Dostoievsky: Crime and Punishment 
-Doyle: Sherlock Holmes 
-Ducange: Trente ans ou la vie d'un joueur 
-Ducis: Gildipe 
-Abufar 
-Dumas pere: Monte-Cristo 
 
-" Don Juan 
+i
 
-Dumas fils: L'Etrangere 
 
-and 
-Le Fils naturel 
-Le Pere prodigue 
-Le Divorce de Sarah Moore 
-La Question d'argent 
-Francillon 
+XXXIII
 
-La Princesse Georges 
-Diane de Lys 
-La Femme de Claude 
-L'Affaire Clemenceau 
-" Denise 
 
-La Dame aux camelias 
-" M. Alphonse 
+B
 
-La Princesse de Bagdad 
-Dumay: La petite Milliardaire 
-Dumur: Le Maquignon 
 
-Rembrandt 
-Duval: L'Article 301 
+• t
 
 
+XIII
 
-XXI 
 
+A
 
-c 
 
+I
 
-1 
 
+\XI\
 
-XXI 
 
+\
 
-D 
 
+i
 
-1 
 
+\l\
 
-XXIV 
 
+\
 
-A 
 
+1
 
-7 
 
+XXIX
 
-XXXIII 
 
+B
 
-D 
 
+• >
 
-6 
 
+\ X 1 1
 
-XXV 
 
+\
 
-c 
 
+i.
 
-1 
 
 
-XXVI 
+1(54
 
 
-c 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
-1 
 
 
-XXIV 
+Dennery: Martyre
 
+Le petit Jacques
+Descaves: L'Attentat
+Desnard: La Degringolade
+Devore: Page blanche
 
-B 
+La Conscience de l'enfant
+Diaz: Benvenuto
+Dickens: Great Expectations
+Diogenes: OEdipus
+Dolce: Marianne
+Donnay: L'Autre Danger
+Le Torrent
+Paraitre
+Dor at: Alceste
+Dornay: Gavroche
 
+Fiacre No. 13
+Les Foulards-rouges
+Dostoievsky: Crime and Punishment
+Doyle: Sherlock Holmes
+Ducange: Trente ans ou la vie d'un joueur
+Ducis: Gildipe
+Abufar
+Dumas pere: Monte-Cristo
 
-7 
+" Don Juan
 
+Dumas fils: L'Etrangere
 
-XXI 
+and
+Le Fils naturel
+Le Pere prodigue
+Le Divorce de Sarah Moore
+La Question d'argent
+Francillon
 
+La Princesse Georges
+Diane de Lys
+La Femme de Claude
+L'Affaire Clemenceau
+" Denise
 
-A 
+La Dame aux camelias
+" M. Alphonse
 
+La Princesse de Bagdad
+Dumay: La petite Milliardaire
+Dumur: Le Maquignon
 
-2 
+Rembrandt
+Duval: L'Article 301
 
 
-XVIII 
 
+XXI
 
-A 
 
+c
 
-1 
 
+1
 
-XXXII 
 
+XXI
 
-A 
 
+D
 
-1 
 
+1
 
-XIV 
 
+XXIV
 
-B 
 
+A
 
-4 
 
+7
 
-XXV 
 
+XXXIII
 
-c 
 
+D
 
-1 
 
+6
 
-XXV 
 
+XXV
 
-D 
 
+c
 
-1 
 
+1
 
-XXI 
 
+XXVI
 
-A 
 
+c
 
-1 
 
+1
 
-XXXIII 
 
+XXIV
 
-B 
 
+B
 
-2 
 
+7
 
-XXXIII 
 
+XXI
 
-B 
 
+A
 
-2 
 
+2
 
-XXXV 
 
+XVIII
 
 
+A
 
 
+1
 
-XXXIV 
 
+XXXII
 
-A 
 
+A
 
-3 
 
+1
 
-III 
 
+XIV
 
-C 
 
+B
 
 
+4
 
-XXII 
 
+XXV
 
-C 
 
+c
 
-2 
 
+1
 
-XVIII 
 
+XXV
 
-A 
 
+D
 
-1 
 
+1
 
-XVIII 
 
+XXI
 
-B 
 
+A
 
-1 
 
+1
 
-III 
 
+XXXIII
 
-B 
 
+B
 
-4 
 
+2
 
-V 
 
+XXXIII
 
-B 
 
+B
 
 
+2
 
-III 
 
+XXXV
 
-B 
 
 
-7 
 
 
-XXV 
 
+XXXIV
 
-B 
 
+A
 
-3 
 
+3
 
-XII 
 
+III
 
-B 
 
+C
 
 
 
-XIV 
 
+XXII
 
-B 
 
+C
 
-1 
 
+2
 
-XXI 
 
+XVIII
 
-A 
 
+A
 
-2 
 
+1
 
-XXIV 
 
+XVIII
 
-A 
 
+B
 
-7 
 
+1
 
-XXV 
 
+III
 
-B 
 
+B
 
-2 
 
+4
 
-XXV 
 
+V
 
-B 
 
+B
 
-3 
 
 
-XXV 
 
+III
 
-C 
 
+B
 
-:] 
 
+7
 
-XXV 
 
+XXV
 
-C 
 
+B
 
-7 
 
+3
 
-XXV 
 
+XII
 
-D 
 
+B
 
-1 
 
 
-XXVII 
 
+XIV
 
-B 
 
+B
 
-3 
 
+1
 
-XXVII 
 
+XXI
 
-B 
 
+A
 
-« 
 
+2
 
-XXVII 
 
+XXIV
 
-B 
 
+A
 
-7 
 
+7
 
-XXXII 
 
+XXV
 
-A 
 
+B
 
-1 
 
+2
 
-XXIV 
 
+XXV
 
-A 
 
+B
 
-7 
 
+3
 
-III 
 
+XXV
 
-A 
 
+C
 
-1 
 
+:]
 
-VII 
 
+XXV
 
-D 
 
+C
 
 
+7
 
-XXIV 
 
+XXV
 
-C 
 
+D
 
 
+1
 
 
-E 
+XXVII
 
 
+B
 
-Edmond (Cf. La Bucheronne 
-Eekhoud: Kermesse rouge 
-Elzear: Jack Tempete 
-Emile-Michelet: Le Pererin d'amour 
 
+3
 
 
-XXIV 
+XXVII
 
 
-A 
+B
 
 
-8 
+«
 
 
-III 
+XXVII
 
 
-A 
+B
 
 
-8 
+7
 
 
-XXIV 
+XXXII
 
 
-A 
+A
 
 
-8 
+1
 
 
-XXVII 
+XXIV
 
 
-B 
+A
 
 
-7 
+7
 
 
+III
 
-INDEX OF AUTHORS 
 
+A
 
 
-165 
+1
 
 
+VII
 
-Erckmann: La Nuit de Saint-Jean 
 
+D
 
-XXIV 
 
 
-A 
 
+XXIV
 
-7 
 
+C
 
 
 
-L'Ami Fritz 
 
 
-XXVIII 
+E
 
 
-A 
 
+Edmond (Cf. La Bucheronne
+Eekhoud: Kermesse rouge
+Elzear: Jack Tempete
+Emile-Michelet: Le Pererin d'amour
 
-2 
 
 
+XXIV
 
 
-Myrtille 
+A
 
 
-XXVIII 
+8
 
 
-A 
+III
 
 
-o 
+A
 
-— 
 
+8
 
 
+XXIV
 
-Les Rantzau 
 
+A
 
-XXIX 
 
+8
 
-A 
 
+XXVII
 
-3 
 
+B
 
 
+7
 
-La Taverne des Trabans 
 
 
-XXIX 
+INDEX OF AUTHORS
 
 
-A 
 
+165
 
-3 
 
 
+Erckmann: La Nuit de Saint-Jean
 
 
-Madame Therese 
+XXIV
 
 
-XXIX 
+A
 
 
-A 
+7
 
 
-4 
 
 
-Ernault: 
+L'Ami Fritz
 
 
-La Croisade des enfanteles 
+XXVIII
 
 
+A
 
 
+2
 
 
 
 
+Myrtille
 
 
-francs 
+XXVIII
 
 
-VII 
+A
 
 
-B 
+o
 
+—
 
 
 
-" 
 
+Les Rantzau
 
-La tentation de vivre 
 
+XXIX
 
-XVI 
 
+A
 
-A 
 
+3
 
-2 
 
 
-Euripides 
 
+La Taverne des Trabans
 
-: The Heraclida? 
 
+XXIX
 
-I 
 
+A
 
-A 
 
+3
 
-1 
 
 
-Euripides 
 
+Madame Therese
 
-: The Suppliants 
 
+XXIX
 
-1 
 
+A
 
-A 
 
+4
 
-2 
 
+Ernault:
 
-** 
 
+La Croisade des enfanteles
 
-Danae 
 
 
-I 
 
 
-B 
 
 
-2 
 
 
-ii 
 
+francs
 
-The Cretans 
 
+VII
 
-I 
 
+B
 
-B 
 
 
-2 
 
+"
 
-ii 
 
+La tentation de vivre
 
-Augeus 
 
+XVI
 
-I 
 
+A
 
-B 
 
+2
 
-2 
 
+Euripides
 
-ii 
 
+: The Heraclida?
 
-Alope 
 
+I
 
-1 
 
+A
 
-B 
 
+1
 
-2 
 
+Euripides
 
-• t 
 
+: The Suppliants
 
-Telephus 
 
+1
 
-1 
 
+A
 
-B 
 
+2
 
-3 
 
+**
 
-ii 
 
+Danae
 
-Andromeda 
 
+I
 
-II 
 
+B
 
-A 
 
+2
 
 
+ii
 
-ii 
 
+The Cretans
 
-Antiope 
 
+I
 
-II 
 
+B
 
-B 
 
+2
 
-1 
 
+ii
 
-14 
 
+Augeus
 
-Dictya 
 
+I
 
-II 
 
+B
 
-B 
 
+2
 
-2 
 
+ii
 
-11 
 
+Alope
 
-Hecuba 
 
+1
 
-III 
 
+B
 
-A 
 
+2
 
-2 
 
+• t
 
-11 
 
+Telephus
 
-Ixion 
 
+1
 
-III 
 
+B
 
-A 
 
+3
 
-5 
 
+ii
 
-11 
 
+Andromeda
 
-Phrixus 
 
+II
 
-III 
 
+A
 
-B 
 
 
-4 
 
+ii
 
-11 
 
+Antiope
 
-Elect ra 
 
+II
 
-l\ 
 
+B
 
-A 
 
+1
 
-1 
 
+14
 
-1 1 
 
+Dictya
 
-Archelaus 
 
+II
 
-VI 
 
+B
 
-C 
 
+2
 
-1 
 
+11
 
-11 
 
+Hecuba
 
-Peleus 
 
+III
 
-VII 
 
+A
 
-C 
 
+2
 
-1 
 
+11
 
-• 1 
 
+Ixion
 
-Theseus 
 
+III
 
-IX 
 
+A
 
-D 
 
+5
 
-1 
 
+11
 
-11 
 
+Phrixus
 
-(Enomaua 
 
+III
 
-IX 
 
+B
 
-D 
 
+4
 
-2 
 
+11
 
-11 
 
+Elect ra
 
-Rhesus 
 
+l\
 
-1\ 
 
-and XX XVI 
+A
 
 
-D 
-C 
+1
 
 
-1 
+1 1
 
 
-11 
+Archelaus
 
 
-Helen 
+VI
 
 
-X 
+C
 
 
-C 
+1
 
 
-1 
+11
 
 
-11 
+Peleus
 
 
-Polyidus 
+VII
 
 
-\1 
+C
 
 
-A 
+1
 
 
+• 1
 
 
-11 
+Theseus
 
 
-Women of Scyroa 
+IX
 
 
-XI 
+D
 
 
-c 
+1
 
 
-2 
+11
 
 
-11 
+(Enomaua
 
 
-Palamede 
+IX
 
 
-XI 
+D
 
 
-(• 
+2
 
 
-S 
+11
 
 
+Rhesus
 
 
+1\
 
+and XX XVI
 
-and XXXIII 
 
+D
+C
 
-(• 
 
+1
 
-• > 
 
+11
 
-•1 • 
 
+Helen
 
-Philoctetee 
 
+X
 
-Ml 
 
+C
 
-A 
 
+1
 
 
+11
 
-11 
 
+Polyidus
 
-The Phoeni 
 
+\1
 
-XIII 
 
+A
 
-\ 
 
 
-l 
 
+11
 
-• t 
 
+Women of Scyroa
 
-Phoenix 
 
+XI
 
-\1V 
 
+c
 
-B 
 
+2
 
-8 
 
+11
 
-11 
 
+Palamede
 
-Heracles Mainomenoe 
 
+XI
 
-X\ 1 
 
+(•
 
-\ 
 
+S
 
-1 
 
 
-■ 1 
 
 
-I no 
 
+and XXXIII
 
-\\ 1 
 
+(•
 
-\ 
 
+• >
 
-1 
 
+•1 •
 
-11 
 
+Philoctetee
 
-Phaeton 
 
+Ml
 
-XVII 
 
+A
 
-\ 
 
 
-1 
 
+11
 
-11 
 
+The Phoeni
 
-The Peliadee 
 
+XIII
 
-XVII 
 
-and XIX 
+\
 
 
-C 
-E 
+l
 
 
-•1 
+• t
 
 
-11 
+Phoenix
 
 
-Ion 
+\1V
 
 
-XIX 
+B
 
 
-l< 
+8
 
 
-1 
+11
 
 
-11 
+Heracles Mainomenoe
 
 
-( Iresphonfc 
+X\ 1
 
 
-XIX 
+\
 
 
-B 
+1
 
 
-1 
+■ 1
 
 
-l 1 
+I no
 
 
-Aeg< 
+\\ 1
 
 
-XIX 
+\
 
 
-B 
+1
 
 
-• i 
+11
 
 
-11 
+Phaeton
 
 
-Alexander 
+XVII
 
 
-XIX 
+\
 
 
-c 
+1
 
 
-1 
+11
 
 
-It 
+The Peliadee
 
 
-[phigenia In Ta 
+XVII
 
+and XIX
 
-XIX 
 
+C
+E
 
-C 
 
+•1
 
-2 
 
+11
 
-t • 
 
+Ion
 
-Protesilaa 
 
+XIX
 
-XX 
 
+l<
 
-\ 
 
+1
 
-9 
 
+11
 
-1 t 
 
+( Iresphonfc
 
-Antigone 
 
+XIX
 
-XX 
 
+B
 
-\ 
 
+1
 
-8 
 
+l 1
 
-1 • 
 
+Aeg<
 
-Air. 
 
+XIX
 
-\l 
 
+B
 
-\ 
 
+• i
 
-l 
 
+11
 
-• 1 
 
+Alexander
 
-Andromache 
 
+XIX
 
-XXI 
 
+c
 
-I) 
 
+1
 
-l 
 
+It
 
 
-166 
+[phigenia In Ta
 
 
+XIX
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+C
 
 
-Euripides: 
+2
 
 
-Iphigenia in Aulis 
+t •
 
 
-XXIII 
+Protesilaa
 
 
-A 
+XX
 
 
-1 
+\
 
 
-« • 
+9
 
 
-Erechtheus 
+1 t
 
 
-XXIII 
+Antigone
 
 
-A 
+XX
 
 
-1 
+\
 
 
-• i 
+8
 
 
-Melanippe 
+1 •
 
 
-XXIII 
+Air.
 
 
-B 
+\l
 
 
-1 
+\
 
 
-" 
+l
 
 
-Hypsipyle 
+• 1
 
 
-XXIII 
+Andromache
 
 
-B 
+XXI
 
 
-2 
+I)
 
 
-Euripedes 
+l
 
 
-: Medea 
 
+166
 
-XXV 
 
 
-A 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-1 
 
+Euripides:
 
-ii 
 
+Iphigenia in Aulis
 
-Andromache 
 
+XXIII
 
-XXV 
 
+A
 
-B 
 
+1
 
-1 
 
+« •
 
-ii 
 
+Erechtheus
 
-Alcmeon 
 
+XXIII
 
-XXV 
 
+A
 
-B 
 
+1
 
-4 
 
+• i
 
-ii 
 
+Melanippe
 
-Hippolyte 
 
+XXIII
 
-XXVI 
 
+B
 
-B 
 
+1
 
-2 
 
+"
 
-ii 
 
+Hypsipyle
 
-Eole 
 
+XXIII
 
-XXVI 
 
+B
 
-C 
 
+2
 
-1 
 
+Euripedes
 
-ii 
 
+: Medea
 
-Chrysippus 
 
+XXV
 
-XXVI 
 
+A
 
-D 
 
+1
 
-1 
 
+ii
 
-ii 
 
+Andromache
 
-The Cretans 
 
+XXV
 
-XXVI 
 
+B
 
-E 
 
+1
 
 
+ii
 
-ii 
 
+Alcmeon
 
-The Bacchantes 
 
+XXV
 
-XXXI 
 
+B
 
-A 
 
+4
 
-1 
 
+ii
 
-• i 
 
+Hippolyte
 
-Bellerophon 
 
+XXVI
 
-XXXI 
 
+B
 
-B 
 
+2
 
-3 
 
+ii
 
-ii 
 
+Eole
 
-Phaeton 
 
+XXVI
 
-XXXI 
 
+C
 
-B 
 
+1
 
-5 
 
+ii
 
-ii 
 
+Chrysippus
 
-Orestes 
 
+XXVI
 
-XXXIV 
 
+D
 
-A 
 
+1
 
-2 
 
+ii
 
-ii 
 
+The Cretans
 
-Troades (The) 
 
+XXVI
 
-XXXVI 
 
+E
 
-A 
 
 
-1 
 
+ii
 
-Ezekiel: The Exodus of the Hebrews 
 
+The Bacchantes
 
-XXXI 
 
+XXXI
 
-A 
 
+A
 
-2 
 
+1
 
 
-Fabre: La Maison d'argile 
-Cesar Birotteau 
-La Vie publique 
+• i
 
 
+Bellerophon
 
-and 
 
+XXXI
 
 
-Fall: La Divorcee 
-Fauchois: Beethoven 
-Rivoli 
-L'Exode 
-Ferrier: La Cornette 
-Feuillet: Chamillac 
-Fevre: En Detresse 
-Feydeau: Le Circuit 
-Flaubert: Salammbo 
+B
 
-Saint Julien l'hospitallier 
-" Herodias 
 
-The Temptation of St. Anthony 
-Madame Bovary 
-Fleischmann: La Fille a Guillotin 
-Flers (dej: Papa 
+3
 
-La Coeur a ses raisons 
-L'Ane de Buridan 
-La Montansier 
-Fletcher: The Two Noble Kinsmen 
 
-Valentinian 
-Fonson: Le Mariage de Mile. Beulemans 
-Ford: Tis Pity She's a Whore 
-" The Broken Heart 
-" Perkin Warbeck 
-" Love's Sacrifice 
-Forest: La petite milliardaire 
+ii
 
 
+Phaeton
 
-XIII 
 
+XXXI
 
-A 
 
+B
 
-3 
 
+5
 
-XX 
 
+ii
 
-A 
 
+Orestes
 
-4 
 
+XXXIV
 
-XXVIII 
 
+A
 
-A 
 
+2
 
-1 
 
+ii
 
-XXX 
 
+Troades (The)
 
-c 
 
+XXXVI
 
-1 
 
+A
 
-XXXII 
 
+1
 
-A 
 
+Ezekiel: The Exodus of the Hebrews
 
-2 
 
+XXXI
 
-VII 
 
+A
 
-D 
 
+2
 
 
 
-XXV 
+Fabre: La Maison d'argile
+Cesar Birotteau
+La Vie publique
 
 
-c 
 
+and
 
-7 
 
 
-XXIX 
+Fall: La Divorcee
+Fauchois: Beethoven
+Rivoli
+L'Exode
+Ferrier: La Cornette
+Feuillet: Chamillac
+Fevre: En Detresse
+Feydeau: Le Circuit
+Flaubert: Salammbo
 
+Saint Julien l'hospitallier
+" Herodias
 
-A 
+The Temptation of St. Anthony
+Madame Bovary
+Fleischmann: La Fille a Guillotin
+Flers (dej: Papa
 
+La Coeur a ses raisons
+L'Ane de Buridan
+La Montansier
+Fletcher: The Two Noble Kinsmen
 
-4 
+Valentinian
+Fonson: Le Mariage de Mile. Beulemans
+Ford: Tis Pity She's a Whore
+" The Broken Heart
+" Perkin Warbeck
+" Love's Sacrifice
+Forest: La petite milliardaire
 
 
-XXI 
 
+XIII
 
-D 
 
+A
 
-1 
 
+3
 
-XXVII 
 
+XX
 
-B 
 
+A
 
-5 
 
+4
 
-VII 
 
+XXVIII
 
-c 
 
+A
 
-2 
 
+1
 
-XXIV 
 
+XXX
 
-c 
 
+c
 
 
+1
 
-VIII 
 
+XXXII
 
-B 
 
+A
 
-1 
 
+2
 
-XIX 
 
+VII
 
-. E 
 
+D
 
 
 
-XXII 
 
+XXV
 
-B 
 
+c
 
 
+7
 
-XXII 
 
+XXIX
 
-B 
 
+A
 
 
+4
 
-XXV 
 
+XXI
 
-C 
 
+D
 
-7 
 
+1
 
-XXIII 
 
+XXVII
 
-A 
 
+B
 
-3 
 
+5
 
-XIV 
 
+VII
 
-B 
 
+c
 
-1 
 
+2
 
-XIV 
 
+XXIV
 
-D 
 
+c
 
 
 
-XXIV 
 
+VIII
 
-B 
 
+B
 
-6 
 
+1
 
-XXV 
 
+XIX
 
-C 
 
+. E
 
-3 
 
 
-XIV 
 
+XXII
 
-C 
 
+B
 
 
 
-XXXIII 
 
+XXII
 
-D 
 
+B
 
-4 
 
 
-XXIV 
 
+XXV
 
-A 
 
+C
 
-8 
 
+7
 
-XXVI 
 
+XXIII
 
-C 
 
+A
 
-2 
 
+3
 
-XXIX 
 
+XIV
 
-A 
 
+B
 
-1 
 
+1
 
-XXX 
 
+XIV
 
-B 
 
+D
 
 
 
-XXXII 
 
+XXIV
 
-A 
 
+B
 
-3 
 
+6
 
-XXXIV 
 
+XXV
 
-A 
 
+C
 
-7 
 
+3
 
 
-INDEX OF AUTHORS 
+XIV
 
 
+C
 
-167 
 
 
 
-Forest: L'Homme a deux tetes 
-Fournier: Le Roman d'une conspiration 
-Fraisse: Les Champairol 
+XXXIII
 
-Jean Cevenol 
-France: Le Mannequin d'osier 
 
-Les Noces corinthiennes 
+D
 
-Crainquebille 
-Franck: Cceur maternel 
-Fread Amy: L'Impa 
-Frondaie: Montmartre 
 
+4
 
 
-XXXIII 
+XXIV
 
 
-c 
+A
 
 
-2 
+8
 
 
-VIII 
+XXVI
 
 
-A 
+C
 
 
-2 
+2
 
 
-I 
+XXIX
 
 
-B 
+A
 
 
-3 
+1
 
 
-XXXIII 
+XXX
 
 
-B 
+B
 
 
-3 
 
 
-XXV 
+XXXII
 
 
-c 
+A
 
 
-4 
+3
 
 
-XXIX 
+XXXIV
 
 
-A 
+A
 
 
-4 
+7
 
 
-XXXIII 
 
+INDEX OF AUTHORS
 
-A 
 
 
-3 
+167
 
 
-XXXIII 
 
+Forest: L'Homme a deux tetes
+Fournier: Le Roman d'une conspiration
+Fraisse: Les Champairol
 
-A 
+Jean Cevenol
+France: Le Mannequin d'osier
 
+Les Noces corinthiennes
 
-:s 
+Crainquebille
+Franck: Cceur maternel
+Fread Amy: L'Impa
+Frondaie: Montmartre
 
 
-XV 
 
+XXXIII
 
-A 
 
+c
 
-1 
 
+2
 
-XXVIII 
 
+VIII
 
-E 
 
+A
 
 
+2
 
 
-G 
+I
 
 
+B
 
-Ganderax: Miss Fanfare 
-Garaud: Le Frere d'armes 
-Gautier: Mademoiselle de Maupin 
-Une nuit de Cleopatre 
 
-(iautier ■ .1 udith i : I. a Marchande re 
+3
 
-sourires 
-Gavault: La petite Chocolatiere 
-Geffroy: L'Apprentie 
-(ieraldy: L'Eclabaussure 
-Gide: Saul 
 
-Gilkin : Etudiants russe 
-Giraldi: Orbecche 
+XXXIII
 
-ck: Alceste 
-Godard: Jocelyn 
 
-haul.' 
-Goethe: Faust 
+B
 
-Clavijo 
 
-( ioetz de Berlichingen 
+3
 
-Egmonl 
 
-The Natural 1 laughter 
+XXV
 
-The Second Faui I 
 
-Pandora 
+c
 
-[phigenia in Ta 
 
-Stella 
+4
 
-\\ fit her 
-Goldoni I )on Juan 
-Gombaud Le Dai 
 
-( ioi court E. and J. de Renee Maupt 
+XXIX
 
-< ierminie l m 
 
-teu\ 
+A
 
-i ourt I Les Frere Zemgann 
 
-( oi i ourl E. de La Fille Eliia 
-doreei i La Petite I aporale 
+4
 
-' oui •■■! I e Trlbul d( 7 mora 
-pho 
 
+XXXIII
 
 
-XXV 
+A
 
 
-B 
+3
 
 
-7 
+XXXIII
 
 
-XXI 
+A
 
 
-D 
+:s
 
 
-1 
+XV
 
 
-XVIII 
+A
 
 
+1
 
 
+XXVIII
 
 
-XXII 
+E
 
 
-A 
 
 
-5 
 
+G
 
-and XXIV 
 
 
-B 
+Ganderax: Miss Fanfare
+Garaud: Le Frere d'armes
+Gautier: Mademoiselle de Maupin
+Une nuit de Cleopatre
 
+(iautier ■ .1 udith i : I. a Marchande re
 
-4 
+sourires
+Gavault: La petite Chocolatiere
+Geffroy: L'Apprentie
+(ieraldy: L'Eclabaussure
+Gide: Saul
 
+Gilkin : Etudiants russe
+Giraldi: Orbecche
 
-XXIX 
+ck: Alceste
+Godard: Jocelyn
 
+haul.'
+Goethe: Faust
 
-B 
+Clavijo
 
+( ioetz de Berlichingen
 
-7 
+Egmonl
 
+The Natural 1 laughter
 
-XXVIII 
+The Second Faui I
 
+Pandora
 
-A 
+[phigenia in Ta
 
+Stella
 
-•> 
+\\ fit her
+Goldoni I )on Juan
+Gombaud Le Dai
 
+( ioi court E. and J. de Renee Maupt
 
-XX 
+< ierminie l m
 
+teu\
 
-C 
+i ourt I Les Frere Zemgann
 
+( oi i ourl E. de La Fille Eliia
+doreei i La Petite I aporale
 
+' oui •■■! I e Trlbul d( 7 mora
+pho
 
 
-X X X 1 Y 
 
+XXV
 
-A 
 
+B
 
-3 
 
+7
 
-XVI 
 
+XXI
 
-B 
 
+D
 
 
+1
 
-\\\ 11 
 
+XVIII
 
-D 
 
 
-1 
 
 
-IV 
 
+XXII
 
-D 
 
+A
 
 
+5
 
-XXI 
 
+and XXIV
 
-A 
 
+B
 
-1 
 
+4
 
-XXII 
 
+XXIX
 
-\ 
 
+B
 
-1 
 
+7
 
-X X 1 V 
 
+XXVIII
 
-A 
 
+A
 
-:{ 
 
+•>
 
-1 
 
+XX
 
-c 
 
+C
 
-1 
 
 
-and VI 
 
+X X X 1 Y
 
-D 
 
+A
 
-l 
 
+3
 
-III 
 
+XVI
 
-A 
 
+B
 
-8 
 
 
-Y 
 
+\\\ 11
 
-C 
 
+D
 
 
+1
 
-Y 
 
+IV
 
-(' 
 
+D
 
 
 
-and VIII 
 
+XXI
 
-B 
 
+A
 
-1 
 
+1
 
-VII 
 
+XXII
 
-A 
 
+\
 
 
+1
 
-IX 
 
+X X 1 V
 
-l» 
 
+A
 
-:\ 
 
+:{
 
-X\ II 
 
+1
 
-C 
 
+c
 
-l 
 
+1
 
-Xl\ 
 
+and VI
 
-(' 
 
+D
 
-■ 1 
 
+l
 
-\\\ 
 
+III
 
-1'. 
 
+A
 
-ti 
 
+8
 
-XXXIY 
 
+Y
 
-B 
 
+C
 
 
 
-\ 
 
+Y
 
-B 
 
+('
 
 
 
-XXIII 
 
+and VIII
 
-B 
 
+B
 
-:: 
 
+1
 
-•ru, XVII 
 
+VII
 
-c 
 
+A
 
-^ 
 
 
-■ 
 
+IX
 
 
+l»
 
 
+:\
 
-XXII 
 
+X\ II
 
-i 
 
+C
 
-1 
 
+l
 
-(. \l 
 
+Xl\
 
-l'. 
 
+('
 
-1 
 
+■ 1
 
-\\ 1 
 
+\\\
 
-\ 
 
+1'.
 
-• • 
 
+ti
 
-IX 
 
+XXXIY
 
-D 
 
+B
 
-•i 
 
 
-\\l\ 
 
+\
 
-\ 
 
+B
 
-8 
 
 
-.Mil 
 
+XXIII
 
-h 
 
+B
 
-1 
 
+::
 
 
-l(i> 
+•ru, XVII
 
 
+c
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+^
 
 
-Gozzi: Turandot 
+■
 
 
-XI 
 
 
-c 
 
 
-1 
+XXII
 
 
-Zobeide 
+i
 
 
-XV 
+1
 
 
-B 
+(. \l
 
 
+l'.
 
 
-Loves of the Three Oranges 
+1
 
 
-XVIII 
+\\ 1
 
 
-D 
+\
 
 
-1 
+• •
 
 
-The Blue Monster 
+IX
 
 
-XIX 
+D
 
 
-G 
+•i
 
 
-2 
+\\l\
 
 
-Zeim 
+\
 
 
-XXVIII 
+8
 
 
-B 
+.Mil
 
 
+h
 
 
-The Serpent Woman 
+1
 
 
-XXXIII 
 
+l(i>
 
-A 
 
 
-1 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-Le Corbeau 
 
+Gozzi: Turandot
 
-XXXIII 
 
+XI
 
-A 
 
+c
 
-3 
 
+1
 
-Le Roi Cerf 
 
+Zobeide
 
-XVIII 
 
+XV
 
-D 
 
+B
 
-1 
 
 
-Grabbe: Don Juan 
 
+Loves of the Three Oranges
 
-V 
 
+XVIII
 
-B 
 
+D
 
 
+1
 
-Gramont (de): Rolande 
 
+The Blue Monster
 
-XXII 
 
+XIX
 
-C 
 
+G
 
-1 
 
+2
 
-Lucienne 
 
+Zeim
 
-XXV 
 
+XXVIII
 
-A 
 
+B
 
-1 
 
 
-Grangeneuve: Amhra 
 
+The Serpent Woman
 
-III 
 
+XXXIII
 
-A 
 
+A
 
-6 
 
+1
 
-Gravier: Jarnac 
 
+Le Corbeau
 
-XXIII 
 
+XXXIII
 
-B 
 
+A
 
-6 
 
+3
 
-Gregory Nazianzen (Saint): Christ 
 
+Le Roi Cerf
 
-XX 
 
+XVIII
 
-A 
 
+D
 
-2 
 
+1
 
-Suffering 
 
+Grabbe: Don Juan
 
-and XXXI 
 
+V
 
-A 
 
+B
 
-1 
 
 
-Grenet-Dancourt: La Banque de l'Univers XVI 
 
+Gramont (de): Rolande
 
-A 
 
+XXII
 
-2 
 
+C
 
-Gretry: Richard Cceur-de-Lion 
 
+1
 
-X 
-and XXXV 
 
+Lucienne
 
-D 
 
+XXV
 
-1 
 
+A
 
-Grillet: Les Pierrots 
 
+1
 
-XXXIII 
 
+Grangeneuve: Amhra
 
-B 
 
+III
 
-2 
 
+A
 
-Guiches: Les Quarts d'heure 
 
+6
 
-XXV 
 
+Gravier: Jarnac
 
-C 
 
+XXIII
 
-4 
 
+B
 
 
+6
 
-and XXVII 
 
+Gregory Nazianzen (Saint): Christ
 
-A 
 
+XX
 
-1 
 
+A
 
-Guillard: Electra 
 
+2
 
-IV 
 
+Suffering
 
-A 
 
+and XXXI
 
-1 
 
+A
 
-Guinon: Decadense 
 
+1
 
-XXV 
 
+Grenet-Dancourt: La Banque de l'Univers XVI
 
-C 
 
+A
 
-1 
 
+2
 
-Guiraud: Le Poussin 
 
+Gretry: Richard Cceur-de-Lion
 
-XXVIII 
 
+X
+and XXXV
 
-D 
 
+D
 
-2 
 
+1
 
-Guitry (S.): Petite Hollande 
 
+Grillet: Les Pierrots
 
-XXIV 
 
+XXXIII
 
-B 
 
+B
 
-6 
 
+2
 
-Guyot (Yves): Un drole 
 
+Guiches: Les Quarts d'heure
 
-XXV 
 
+XXV
 
-C 
 
+C
 
-1 
 
+4
 
-Gyp: Le Friquet 
 
-H 
-Halevy: L'Abbe Constantin 
 
 
-XXIV 
+and XXVII
 
 
-B 
+A
 
 
-6 
+1
 
 
-XXVIII 
+Guillard: Electra
 
 
-A 
+IV
 
 
-2 
+A
 
 
-Harshadeva (Sri): The Necklace 
+1
 
 
-XXIV 
+Guinon: Decadense
 
 
-D 
+XXV
 
 
-3 
+C
 
 
-Hardy: Alceste 
+1
 
 
-XXI 
+Guiraud: Le Poussin
 
 
-A 
+XXVIII
 
 
-1 
+D
 
 
-Hauptmann: The Weavers of Silesia 
+2
 
 
-VIII 
+Guitry (S.): Petite Hollande
 
 
-B 
+XXIV
 
 
-2 
+B
 
 
-Heine: Almanzor 
+6
 
 
-XXIX 
+Guyot (Yves): Un drole
 
 
-A 
+XXV
 
 
-4 
+C
 
 
-Hennique: Amour 
+1
 
 
-XV 
+Gyp: Le Friquet
 
+H
+Halevy: L'Abbe Constantin
 
-A 
 
+XXIV
 
-1 
 
+B
 
-" Jarnac 
 
+6
 
-XXIII 
 
+XXVIII
 
-B 
 
+A
 
-6 
 
+2
 
-Hermant: Trains de luxe 
 
+Harshadeva (Sri): The Necklace
 
-XXIV 
 
+XXIV
 
-B 
 
+D
 
-6 
 
+3
 
-Les Jacobines 
 
+Hardy: Alceste
 
-XXV 
 
+XXI
 
-C 
 
+A
 
-4 
 
+1
 
-Herold : Le Cor fleuri 
 
+Hauptmann: The Weavers of Silesia
 
-XXIV 
 
+VIII
 
-B 
 
+B
 
-3 
 
+2
 
-Hervieu: Le Reveil 
 
+Heine: Almanzor
 
-XXI 
 
+XXIX
 
-C 
 
+A
 
-2 
 
+4
 
-La Loi de l'homme 
 
+Hennique: Amour
 
-XXI 
 
+XV
 
-C 
 
+A
 
-3 
 
+1
 
-Hervieu: Le Course du flambeau 
 
+" Jarnac
 
-XXI 
 
+XXIII
 
-E 
 
+B
 
 
+6
 
-Le Dedale 
 
+Hermant: Trains de luxe
 
-XXIV 
 
+XXIV
 
-A 
 
+B
 
-12 
 
+6
 
 
+Les Jacobines
 
-and XXV 
 
+XXV
 
-C 
 
+C
 
-2 
 
+4
 
-Les Tenailles 
 
+Herold : Le Cor fleuri
 
-XXV 
 
+XXIV
 
-C 
 
+B
 
-1 
 
+3
 
-Connais-toi 
 
+Hervieu: Le Reveil
 
-XXV 
 
+XXI
 
-C 
 
+C
 
-3 
 
+2
 
-L'Enigme 
 
+La Loi de l'homme
 
-XXV 
 
+XXI
 
-D 
 
+C
 
-1 
 
+3
 
-Hirsch: En greve 
 
+Hervieu: Le Course du flambeau
 
-XXIV 
 
+XXI
 
-A 
 
+E
 
-7 
 
 
-Hornung: Raffles 
 
+Le Dedale
 
-V 
 
+XXIV
 
-A 
 
+A
 
 
+12
 
-Hroswitha: Abraham 
 
 
-XX 
 
+and XXV
 
-D 
 
+C
 
 
+2
 
 
-INDEX OF AUTHORS 169 
+Les Tenailles
 
 
+XXV
 
-Hugo: Mangeront-ils? 
 
-Lucrece Borgia 
+C
 
-XIX B 1, XIX D, XXIII B 1 
-Les Jumeaux 
 
-Toilers of the Sea 
+1
 
-Ruy-Blas 
 
-Hernani 
+Connais-toi
 
-XX A 1 
-Torquemada 
 
+XXV
 
 
-La Esmeralda 
+C
 
-Marie Tudor 
 
-Marion Delorme 
+3
 
-Le Roi s'amuse 
-Les Burgraves 
-Ninety-Three 
-Angelo 
-Cromwell 
 
+L'Enigme
 
 
-Ibsen: 
+XXV
 
 
+D
 
-I 
 
+1
 
-A 
 
+Hirsch: En greve
 
-3 
 
+XXIV
 
-and XXIV 
 
+A
 
-A 
 
+7
 
-3 
 
+Hornung: Raffles
 
-VI 
 
+V
 
-C 
 
+A
 
-3 
 
 
-and XXXII 
 
+Hroswitha: Abraham
 
-A 
 
+XX
 
-2 
 
+D
 
-VII 
 
 
-A 
 
 
+INDEX OF AUTHORS 169
 
 
-and XXXV 
 
+Hugo: Mangeront-ils?
 
+Lucrece Borgia
 
+XIX B 1, XIX D, XXIII B 1
+Les Jumeaux
 
+Toilers of the Sea
 
+Ruy-Blas
 
-IX 
+Hernani
 
+XX A 1
+Torquemada
 
-D 
 
 
-2 
+La Esmeralda
 
+Marie Tudor
 
-XXIV 
+Marion Delorme
 
+Le Roi s'amuse
+Les Burgraves
+Ninety-Three
+Angelo
+Cromwell
 
-A 
 
 
-7 
+Ibsen:
 
 
-XIX 
 
+I
 
 
+A
 
 
+3
 
-and XXIV 
 
+and XXIV
 
-A 
 
+A
 
-3 
 
+3
 
-XIX 
 
+VI
 
 
+C
 
 
+3
 
-and XXIII 
 
+and XXXII
 
-A 
 
+A
 
-3 
 
+2
 
-and XXIII 
 
+VII
 
-A 
 
+A
 
-3 
 
 
-XIX 
 
+and XXXV
 
 
 
 
 
-and XXIV 
 
+IX
 
-A 
 
+D
 
-11 
 
+2
 
-XIX 
 
+XXIV
 
 
+A
 
 
+7
 
-and XXIV 
 
+XIX
 
-B 
 
 
-3 
 
 
-XIX 
 
+and XXIV
 
 
+A
 
 
+3
 
-and XX VI I 
 
+XIX
 
-B 
 
 
-4 
 
 
-XIX 
 
+and XXIII
 
-A 
 
+A
 
-4 
 
+3
 
-XIX 
 
+and XXIII
 
-F 
 
+A
 
-1 
 
+3
 
-XXIII 
 
+XIX
 
-A 
 
 
-3 
 
 
-X X V 
 
+and XXIV
 
-C 
 
+A
 
-1 
 
+11
 
-XXX 
 
+XIX
 
-A 
 
 
-3 
 
 
 
-lores : 
+and XXIV
 
 
+B
 
-An Enemy of the People 
 
+3
 
-V 
 
+XIX
 
-c 
 
 
 
 
-Hedda Gabler 
 
+and XX VI I
 
 
+B
 
-XVI 
 
+4
 
-A 
 
+XIX
 
-:} 
 
+A
 
-The Master Builder 
 
+4
 
 
+XIX
 
-XVII 
 
+F
 
-A 
 
+1
 
-l 
 
+XXIII
 
-The Wild Dud: 
 
+A
 
 
+3
 
-XV11 
 
+X X V
 
-C 
 
+C
 
-1 
 
+1
 
-Ghosts 
 
+XXX
 
 
+A
 
-win 
 
+3
 
-B 
 
 
-3 
+lores :
 
 
-Roemersholm 
 
+An Enemy of the People
 
 
+V
 
-X X \ 1 V 
 
+c
 
-B 
 
 
 
+Hedda Gabler
 
-'1'Im' Lady Krom the 
 
 
-Sea 
 
+XVI
 
-X \ 1 V 
 
+A
 
-B 
 
+:}
 
-8 
 
+The Master Builder
 
-I .. Bouchers 
 
 
 
+XVII
 
-III 
 
+A
 
-\ 
 
+l
 
-8 
 
+The Wild Dud:
 
 
-.larry: Uhu-roi 
 
 
-XXX 
+XV11
 
 
-c 
+C
 
 
+1
 
 
-Jeoffrin : La Montan 
+Ghosts
 
 
-\x\ 
 
 
-c 
+win
 
 
-8 
+B
 
 
-Jonathan: Simon I'enfanl trouve 
+3
 
 
-III 
+Roemersholm
 
 
-\ 
 
 
-t. 
+X X \ 1 V
 
 
-Pierre Vaux 
+B
 
 
-\\1 
 
 
-1) 
+'1'Im' Lady Krom the
 
 
-1 
+Sea
 
 
-Joncierea (de) !/•■ ( Ihevalier Jean 
+X \ 1 V
 
 
-XXXII 
+B
 
 
-(' 
+8
 
 
-I 
+I .. Bouchers
 
 
-Josz: Le klaquignon 
 
 
-III 
+III
 
 
-\ 
+\
 
 
-1 
+8
 
 
-Rembrandt 
 
+.larry: Uhu-roi
 
-\ II 
 
+XXX
 
-1) 
 
+c
 
 
 
-Jullien: L<- Maitre 
 
+Jeoffrin : La Montan
 
-XIII 
 
+\x\
 
-1! 
 
+c
 
-1 
 
+8
 
-La Mer 
 
+Jonathan: Simon I'enfanl trouve
 
-XIII 
 
+III
 
-1) 
 
+\
 
 
+t.
 
-La Serenade 
 
+Pierre Vaux
 
-XXV 
 
+\\1
 
-(• 
 
+1)
 
-a 
 
+1
 
-L'Echeance 
 
+Joncierea (de) !/•■ ( Ihevalier Jean
 
-\ w 
 
+XXXII
 
-(' 
 
+('
 
-B 
 
+I
 
-Vielle In itoira 
 
+Josz: Le klaquignon
 
-XXVI] 
 
+III
 
-\ 
 
+\
 
-•' 
 
+1
 
 
-170 
+Rembrandt
 
 
+\ II
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+1)
 
 
-Kalidasa: Sakuntala 
 
 
+Jullien: L<- Maitre
 
-K 
 
+XIII
 
 
-Agnimitra and Malavika 
-The Hero and the Nymph 
+1!
 
-Kampf: Le Grand Soir 
 
-Kouan-han-king: The Resentment of 
-Teoun-go 
+1
 
 
+La Mer
 
-Labiche: L'Affaire de la rue de Lourcine 
-Lagrange-Chancel: Alceste 
-Lamothe: GEdipus 
-Laporte: L'Homme de proie 
-Laumann: Le Coeur revelateur 
-Lavedan: Le Duel 
 
-Varennes 
+XIII
 
-Les Quarts d'heure 
 
-Le Marquis de Priola 
-Sire 
-Leautaud: Le Petit Ami 
-Leblanc: Arsene Lupin 
-Lefebvre: La Femme de demain 
-Lefevre: L'Homme de proie 
-Lemaire: Le Mariage d'Andre 
-Lemaitre: La Massiere 
+1)
 
-Le Depute Leveau 
-" Revoltee 
 
-Lemierre: Idomencee 
 
-Hypermnestre 
-Lemonnier: Le Droit au bonheur 
 
-Le Possede 
-Leneru (Mme.): Les Affranchis 
-Leon : La Veuve joyeu: e 
+La Serenade
 
-" La Divorcee 
-Lenotre: Varennes 
-I.eroux: Les Lys 
-Lessing: Damon 
 
-Emilia Galotti 
-Miss Sara Sampson 
-Linant: Conte de Noel 
-Livet: Nick Carter 
-Longepierre: Electre 
-Lope de Vega: The Labors of Jacob 
+XXV
 
-El mejor alcalde el Rc-y 
-Fontovejune 
-Discovery of the New 
 
-World 
-The Abduction of Helen 
+(•
 
 
+a
 
-XVI 
 
+L'Echeance
 
-c 
 
+\ w
 
 
+('
 
-and XXXV 
 
+B
 
 
+Vielle In itoira
 
 
+XXVI]
 
-XXIV 
 
+\
 
-D 
 
+•'
 
-2 
 
 
-XXXV 
+170
 
 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
 
-VIII 
+Kalidasa: Sakuntala
 
 
-A 
 
+K
 
-1 
 
 
-III 
+Agnimitra and Malavika
+The Hero and the Nymph
 
+Kampf: Le Grand Soir
 
-B 
+Kouan-han-king: The Resentment of
+Teoun-go
 
 
-3 
 
+Labiche: L'Affaire de la rue de Lourcine
+Lagrange-Chancel: Alceste
+Lamothe: GEdipus
+Laporte: L'Homme de proie
+Laumann: Le Coeur revelateur
+Lavedan: Le Duel
 
-XVI 
+Varennes
 
+Les Quarts d'heure
 
-A 
+Le Marquis de Priola
+Sire
+Leautaud: Le Petit Ami
+Leblanc: Arsene Lupin
+Lefebvre: La Femme de demain
+Lefevre: L'Homme de proie
+Lemaire: Le Mariage d'Andre
+Lemaitre: La Massiere
 
+Le Depute Leveau
+" Revoltee
 
-3 
+Lemierre: Idomencee
 
+Hypermnestre
+Lemonnier: Le Droit au bonheur
 
-XXI 
+Le Possede
+Leneru (Mme.): Les Affranchis
+Leon : La Veuve joyeu: e
 
+" La Divorcee
+Lenotre: Varennes
+I.eroux: Les Lys
+Lessing: Damon
 
-A 
+Emilia Galotti
+Miss Sara Sampson
+Linant: Conte de Noel
+Livet: Nick Carter
+Longepierre: Electre
+Lope de Vega: The Labors of Jacob
 
+El mejor alcalde el Rc-y
+Fontovejune
+Discovery of the New
 
-1 
+World
+The Abduction of Helen
 
 
-XVIII 
 
+XVI
 
-A 
 
+c
 
-1 
 
 
-X 
 
+and XXXV
 
-D 
 
 
-2 
 
 
-XXXIV 
 
+XXIV
 
-A 
 
+D
 
-3 
 
+2
 
-XIII 
 
+XXXV
 
-A 
 
 
-1 
 
 
-XXIV 
 
+VIII
 
-B 
 
+A
 
-3 
 
+1
 
-XXV 
 
+III
 
-C 
 
+B
 
-4 
 
+3
 
-and XXVII 
 
+XVI
 
-A 
 
+A
 
-1 
 
+3
 
-XXVII 
 
+XXI
 
-A 
 
+A
 
-1 
 
+1
 
-XXVII 
 
+XVIII
 
-B 
 
+A
 
-7 
 
+1
 
-XXVI 
 
+X
 
-A 
 
+D
 
-1 
 
+2
 
-V 
 
+XXXIV
 
-A 
 
+A
 
 
+3
 
-XXV 
 
+XIII
 
-B 
 
+A
 
-9 
 
+1
 
-X 
 
+XXIV
 
-D 
 
+B
 
-2 
 
+3
 
-XVIII 
 
+XXV
 
-B 
 
+C
 
-1 
 
+4
 
-XIV 
 
+and XXVII
 
-B 
 
+A
 
-1 
 
+1
 
-XXV 
 
+XXVII
 
-B 
 
+A
 
-3 
 
+1
 
-XXV 
 
+XXVII
 
-C 
 
+B
 
-4 
 
+7
 
-XXIII 
 
+XXVI
 
-A 
 
+A
 
-2 
 
+1
 
-XXIII 
 
+V
 
-B 
 
+A
 
-3 
 
 
-XXI 
 
+XXV
 
-C 
 
+B
 
-2 
 
+9
 
-XXII 
 
+X
 
-A 
 
+D
 
-5 
 
+2
 
-XXV 
 
+XVIII
 
-B 
 
+B
 
-8 
 
+1
 
-XXVIII 
 
+XIV
 
-A 
 
+B
 
-2 
 
+1
 
-XXXII 
 
+XXV
 
-A 
 
+B
 
-2 
 
+3
 
-XX IV 
 
+XXV
 
-B 
 
+C
 
-3 
 
+4
 
-XXVIII 
 
+XXIII
 
-D 
 
+A
 
-1 
 
+2
 
-XIV 
 
+XXIII
 
-D 
 
+B
 
 
+3
 
-XXIV 
 
+XXI
 
-C 
 
+C
 
 
+2
 
-XXV 
 
+XXII
 
-B 
 
+A
 
-7 
 
+5
 
-XIII 
 
+XXV
 
-F 
 
+B
 
 
+8
 
-III 
 
+XXVIII
 
-C 
 
+A
 
 
+2
 
-IV 
 
+XXXII
 
-A 
 
+A
 
-1 
 
+2
 
-XIII 
 
+XX IV
 
-A 
 
+B
 
-1 
 
+3
 
-II 
 
+XXVIII
 
-A 
 
+D
 
-3 
 
+1
 
-VIII 
 
+XIV
 
-B 
 
+D
 
-2 
 
 
-IX 
 
+XXIV
 
-D 
 
+C
 
-1 
 
 
-X 
 
+XXV
 
-B 
 
+B
 
 
+7
 
 
-INDEX OF AUTHORS 
+XIII
 
 
+F
 
-171 
 
 
 
-Lope de Vega: Aimer Sans savoir qui 
+III
 
-Nina de Plata 
 
-The Mill 
+C
 
-The Gardener's Dog 
-Lorde (de): L'Idiot 
 
-Terre d'epouvante 
-Loti: Ramuntcho 
-Louys: Aphrodite 
-Loyson: L'Apotre 
-Lucas: Alcesie 
-Lyon: Madame l'Amirale 
 
 
+IV
 
-and 
 
+A
 
 
-XIX 
+1
 
 
-D 
+XIII
 
 
+A
 
 
-XXXIII 
+1
 
 
-B 
+II
 
 
-1 
+A
 
 
-XXIV 
+3
 
 
-A 
+VIII
 
 
-5 
+B
 
 
-XXIV 
+2
 
 
-A 
+IX
 
 
-5 
+D
 
 
-XXIV 
+1
 
 
-B 
+X
 
 
-5 
+B
 
 
-III 
 
 
-A 
 
+INDEX OF AUTHORS
 
-4 
 
 
-VI 
+171
 
 
-A 
 
+Lope de Vega: Aimer Sans savoir qui
 
-4 
+Nina de Plata
 
+The Mill
 
-XXVIII 
+The Gardener's Dog
+Lorde (de): L'Idiot
 
+Terre d'epouvante
+Loti: Ramuntcho
+Louys: Aphrodite
+Loyson: L'Apotre
+Lucas: Alcesie
+Lyon: Madame l'Amirale
 
-A 
 
 
-1 
+and
 
 
-XXII 
 
+XIX
 
-A 
 
+D
 
-3 
 
 
-XXVII 
 
+XXXIII
 
-D 
 
+B
 
-2 
 
+1
 
-XXI 
 
+XXIV
 
-A 
 
+A
 
-I 
 
+5
 
-XXVI 
 
+XXIV
 
-B 
 
+A
 
-1 
 
+5
 
 
-M 
+XXIV
 
 
+B
 
-Maeterlinck: The Princess Maleine 
-The Blind 
-The Blue Bird 
-Pelleas and Melisande 
-Monna Vanna 
-The Seven Princesses 
-The Intruder 
 
-Maffei: Merope 
+5
 
-Mairet: Sophonisbe 
 
-Maldagne Mine : La Boscotte 
+III
 
-Manfredi: Semiramis 
 
-Manzoni: Adelghis 
+A
 
-Manzoni: The Count of Carmagnola 
 
+4
 
 
-and 
+VI
 
 
+A
 
-Manzotti: Sieba 
 
-Margueritte: Pierrot assassin de Ba femme 
+4
 
-Marim-ui: Poupeee electriques 
 
-Marot: La Casquette au pere Bugeaud 
+XXVIII
 
-( 'assc-museau 
 
-Lee Aventuree de ( lavroche 
-Marras: La Famille d'Armelles 
-Mars: Mme. l'Amirale 
+A
 
-MarthoM: L'Ogre 
-Martclli: 'I'ullia 
 
-Mary ). Roger-la-honte 
+1
 
 
+XXII
 
-I.'' Regimenl 
-La !'.-•"■ feroce 
-Massf: I'm- nuit de Cleop&tre 
 
-e 1 1 E clarmonde 
+A
 
-.\Lr 
 
-\l a ic l a • crel de < .ill- 
-M.i lingei Tli'' Virgin Martyr 
-Tin- Fatal i'" 
+3
 
 
+XXVII
 
-ami 
 
+D
 
 
-and 
+2
 
 
+XXI
 
-VII 
 
+A
 
-A 
 
+I
 
 
+XXVI
 
-VII 
 
+B
 
-D 
 
+1
 
 
 
-IX 
+M
 
 
-D 
 
+Maeterlinck: The Princess Maleine
+The Blind
+The Blue Bird
+Pelleas and Melisande
+Monna Vanna
+The Seven Princesses
+The Intruder
 
-3 
+Maffei: Merope
 
+Mairet: Sophonisbe
 
-XIV 
+Maldagne Mine : La Boscotte
 
+Manfredi: Semiramis
 
-A 
+Manzoni: Adelghis
 
+Manzoni: The Count of Carmagnola
 
-3 
 
 
-XXXII 
+and
 
 
-A 
 
+Manzotti: Sieba
 
-1 
+Margueritte: Pierrot assassin de Ba femme
 
+Marim-ui: Poupeee electriques
 
-XXXVI 
+Marot: La Casquette au pere Bugeaud
 
+( 'assc-museau
 
-B 
+Lee Aventuree de ( lavroche
+Marras: La Famille d'Armelles
+Mars: Mme. l'Amirale
 
+MarthoM: L'Ogre
+Martclli: 'I'ullia
 
+Mary ). Roger-la-honte
 
 
-X X X V 1 
 
+I.'' Regimenl
+La !'.-•"■ feroce
+Massf: I'm- nuit de Cleop&tre
 
-B 
+e 1 1 E clarmonde
 
+.\Lr
 
+\l a ic l a • crel de < .ill-
+M.i lingei Tli'' Virgin Martyr
+Tin- Fatal i'"
 
 
-XIX 
 
+ami
 
-B 
 
 
-1 
+and
 
 
-XX 
 
+VII
 
-B 
 
+A
 
-:i 
 
 
-XXX11I 
 
+VII
 
-D 
 
+D
 
-■■i 
 
 
-XXVI 
 
+IX
 
-A 
 
+D
 
-1 
 
+3
 
-Y 
 
+XIV
 
-(' 
 
+A
 
 
+3
 
-\ 
 
+XXXII
 
-C 
 
+A
 
 
+1
 
-VI 
 
+XXXVI
 
-c 
 
+B
 
-1 
 
 
-XXVIII 
 
+X X X V 1
 
-B 
 
+B
 
 
 
-X X X 1 \ 
 
+XIX
 
-A 
 
+B
 
-I 
 
+1
 
-XXXII] 
 
+XX
 
-B 
 
+B
 
-:; 
 
+:i
 
-111 
 
+XXX11I
 
-A 
 
+D
 
-8 
 
+■■i
 
-XXVI] 
 
+XXVI
 
-1) 
 
+A
 
-.') 
 
+1
 
-X X X V 
 
+Y
 
 
+('
 
 
 
-XXV 
 
+\
 
-I) 
 
+C
 
-• > 
 
 
-XXV] 
 
+VI
 
-B 
 
+c
 
-1 
 
+1
 
-X X X 1 1 1 
 
+XXVIII
 
-1) 
 
+B
 
-8 
 
 
-X X X 
 
+X X X 1 \
 
-c 
 
+A
 
-•> 
 
+I
 
-III 
 
+XXXII]
 
-l'. 
 
+B
 
-i 
 
+:;
 
-XXXIII 
 
+111
 
-D 
 
+A
 
-.". 
 
+8
 
-XXVII 
 
+XXVI]
 
-I) 
 
+1)
 
-:i 
 
+.')
 
-XXX 
 
+X X X V
 
-c 
 
 
-l 
 
 
-xxu 
 
+XXV
 
-\ 
 
+I)
 
-5 
 
+• >
 
-WIV 
 
+XXV]
 
-B 
 
+B
 
-A 
 
+1
 
-XVII 
 
+X X X 1 1 1
 
-B 
 
+1)
 
 
+8
 
-XXII 
 
+X X X
 
-\ 
 
+c
 
-8 
 
+•>
 
-\X\ II 
 
+III
 
-1! 
 
+l'.
 
-•> 
 
+i
 
-XX 
 
+XXXIII
 
-D 
 
+D
 
 
+.".
 
-X x\ 
 
+XXVII
 
-< 
 
+I)
 
-:. 
 
+:i
 
 
-172 
+XXX
 
 
+c
 
-THIRTY-SIX DRAMAT C SITUATIONS 
 
+l
 
 
-Massinger: The Bondman 
-The Portrait 
+xxu
 
-Mat hey: Zoe Chien-Chien 
 
-Maujan: Jacques Bonhomme 
+\
 
-Maupassant: Pierre et Jean 
 
-Mazel: Les Amazones 
+5
 
-Meilhac: La Veuve joyeuse 
 
-Melitus: CEdipus 
+WIV
 
-Mendes: Glatigny 
 
-Les Meres ennemies 
-La Reine Fiammette 
+B
 
-Mercereau: Mon frere 
-Merimee: Colomba 
-Messager: Francois les bas-bleus 
-Metastasio: Cato 
 
-Alexander 
-The Desert Isle 
-Cyrus 
+A
 
-Antigone 
 
-Demophon 
+XVII
 
-Olympiade 
 
-Regulus 
+B
 
-Themistocles 
 
-Dido 
 
-Achilles in Scyros 
 
-Hypsip le 
+XXII
 
-Hylermnestre 
 
-Demetrius 
+\
 
-Semiramide riconosciuta 
 
-Adrien 
+8
 
-Zenobia 
 
-Nitetis 
+\X\ II
 
-The Chinese Hero 
 
-The Shepherd King 
-" Siroes 
+1!
 
-Artaxerxes 
 
-^tius 
-Metenier: La Casserole 
-Michaud d'Humiac: Le Cceur de Se-hor 
-Mikhael: Le Cor fleuri 
-Milliet: Le Roi de l'argent 
-Milloecker: L'Etudiant pauvre 
-Miral: Lydie 
+•>
 
-Mirbeau: Les Affaires sont les. affaires 
-Moses (?): Job 
-Moliere: Don Juan 
-Montepin: La Policiere 
 
+XX
 
 
-XXXII 
+D
 
-XXXII 
 
-IV 
 
-VIII 
 
-XIV 
+X x\
 
-XXIX 
 
-XXVIII 
+<
 
-XVIII 
 
-XXIV 
+:.
 
-XXV 
 
-XXIX 
 
-and XXXIII 
-XIII 
-III 
+172
 
-XXIV 
-V 
 
-and XXIX 
-V 
 
-XII 
-XIII 
+THIRTY-SIX DRAMAT C SITUATIONS
 
-and XIX 
-XIV 
-XIX 
-XIX 
-XX 
-XX 
-XX 
-XX 
-XXIII 
-XXIII 
-XXIV 
-XXIV 
 
-and XXXII 
-XXIV 
-XXV 
-XXVIII 
-XXVIII 
-XXVIII 
-XXXIII 
-XXXIII 
-XXXIII 
 
-III 
+Massinger: The Bondman
+The Portrait
 
-XXVII 
+Mat hey: Zoe Chien-Chien
 
-XXIV 
+Maujan: Jacques Bonhomme
 
-XXXIII 
+Maupassant: Pierre et Jean
 
-XXXIII 
+Mazel: Les Amazones
 
-XXIX 
+Meilhac: La Veuve joyeuse
 
-XXVII 
+Melitus: CEdipus
 
-XXX 
+Mendes: Glatigny
 
-V 
+Les Meres ennemies
+La Reine Fiammette
 
-XXVII 
+Mercereau: Mon frere
+Merimee: Colomba
+Messager: Francois les bas-bleus
+Metastasio: Cato
 
+Alexander
+The Desert Isle
+Cyrus
 
+Antigone
 
-A 
+Demophon
 
+Olympiade
 
-1 
+Regulus
 
+Themistocles
 
-C 
+Dido
 
+Achilles in Scyros
 
-1 
+Hypsip le
 
+Hylermnestre
 
-A 
+Demetrius
 
+Semiramide riconosciuta
 
-2 
+Adrien
 
+Zenobia
 
-B 
+Nitetis
 
+The Chinese Hero
 
-1 
+The Shepherd King
+" Siroes
 
+Artaxerxes
 
-A 
+^tius
+Metenier: La Casserole
+Michaud d'Humiac: Le Cceur de Se-hor
+Mikhael: Le Cor fleuri
+Milliet: Le Roi de l'argent
+Milloecker: L'Etudiant pauvre
+Miral: Lydie
 
+Mirbeau: Les Affaires sont les. affaires
+Moses (?): Job
+Moliere: Don Juan
+Montepin: La Policiere
 
-1 
 
 
-A 
+XXXII
 
+XXXII
 
-4 
+IV
 
+VIII
 
-A 
+XIV
 
+XXIX
 
-2 
+XXVIII
 
+XVIII
 
-A 
+XXIV
 
+XXV
 
-1 
+XXIX
 
+and XXXIII
+XIII
+III
 
-A 
+XXIV
+V
 
+and XXIX
+V
 
-9 
+XII
+XIII
 
+and XIX
+XIV
+XIX
+XIX
+XX
+XX
+XX
+XX
+XXIII
+XXIII
+XXIV
+XXIV
 
-B 
+and XXXII
+XXIV
+XXV
+XXVIII
+XXVIII
+XXVIII
+XXXIII
+XXXIII
+XXXIII
 
+III
 
-2 
+XXVII
 
+XXIV
 
-B 
+XXXIII
 
+XXXIII
 
-3 
+XXIX
 
+XXVII
 
-A 
+XXX
 
+V
 
-3 
+XXVII
 
 
-A 
 
+A
 
-2 
 
+1
 
-A 
 
+C
 
-1 
 
+1
 
-B 
 
+A
 
-6 
 
+2
 
-C 
 
+B
 
 
+1
 
-A 
 
+A
 
-2 
 
+1
 
-C 
 
+A
 
 
+4
 
-B 
 
+A
 
 
+2
 
-C 
 
+A
 
 
+1
 
-B 
 
+A
 
-3 
 
+9
 
-B 
 
+B
 
-1 
 
+2
 
-A 
 
+B
 
-1 
 
+3
 
-B 
 
+A
 
-1 
 
+3
 
-A 
 
+A
 
-1 
 
+2
 
-A 
 
+A
 
-2 
 
+1
 
-B 
 
+B
 
-3 
 
+6
 
-B 
 
+C
 
-3 
 
 
-B 
 
+A
 
-2 
 
+2
 
-B 
 
+C
 
-3 
 
 
-A 
 
+B
 
-5 
 
 
-B 
 
+C
 
-8 
 
 
-B 
 
+B
 
-1 
 
+3
 
-C 
 
+B
 
 
+1
 
-C 
 
+A
 
-2 
 
+1
 
-A 
 
+B
 
-1 
 
+1
 
-A 
 
+A
 
-1 
 
+1
 
-C 
 
+A
 
-1 
 
+2
 
-B 
 
+B
 
-2 
 
+3
 
-D 
 
+B
 
-2 
 
+3
 
-D 
 
+B
 
-4 
 
+2
 
-A 
 
+B
 
-7 
 
+3
 
-D 
 
+A
 
-6 
 
+5
 
-B 
 
+B
 
-3 
 
+8
 
-B 
 
+B
 
-3 
 
+1
 
-A 
 
+C
 
-1 
 
 
-A 
 
+C
 
-4 
 
+2
 
-A 
 
+A
 
-3 
 
+1
 
-B 
 
+A
 
-1 
 
+1
 
-B 
 
+C
 
 
+1
 
-C 
 
+B
 
 
+2
 
 
-INDEX OF AUTHORS 
+D
 
 
+2
 
-173 
 
+D
 
 
-Moreau: Madame Margot 
-Le Drapeau 
-Gerfaut 
-" Un divorce 
-Morel: Terre d'epouvante 
-La Fille du depute 
-La Pieuvre 
-Mortier: Marius vaincu 
-Mourey: L'Automne 
-Lawn-tennis 
-Mussato: Ezzelino 
-Musset: Fantasio 
+4
 
-Lorenzaccio 
 
-On ne badine pas avec l'amour 
-Andre del Sarte 
-Mustiere: Rosse, tant et plus 
+A
 
 
+7
 
-VIII 
 
+D
 
-A 
 
+6
 
-2 
 
+B
 
-XXIV 
 
+3
 
-A 
 
+B
 
-8 
 
+3
 
-XXV 
 
+A
 
-c 
 
+1
 
-6 
 
+A
 
-XXXII 
 
+4
 
-A 
 
+A
 
-1 
 
+3
 
-VI 
 
+B
 
-A 
 
+1
 
-4 
 
+B
 
-XXVII 
 
 
-A 
 
+C
 
-3 
 
 
-XXXIII 
 
 
-C 
+INDEX OF AUTHORS
 
 
-1 
 
+173
 
-XXX 
 
 
-A 
+Moreau: Madame Margot
+Le Drapeau
+Gerfaut
+" Un divorce
+Morel: Terre d'epouvante
+La Fille du depute
+La Pieuvre
+Mortier: Marius vaincu
+Mourey: L'Automne
+Lawn-tennis
+Mussato: Ezzelino
+Musset: Fantasio
 
+Lorenzaccio
 
-3 
+On ne badine pas avec l'amour
+Andre del Sarte
+Mustiere: Rosse, tant et plus
 
 
-VIII 
 
+VIII
 
-B 
 
+A
 
-2 
 
+2
 
-XXVI 
 
+XXIV
 
-D 
 
+A
 
-2 
 
+8
 
-XXX 
 
+XXV
 
-C 
 
+c
 
-1 
 
+6
 
-II 
 
+XXXII
 
-B 
 
+A
 
-2 
 
+1
 
-VIII 
 
+VI
 
-A 
 
+A
 
-1 
 
+4
 
-XVII 
 
+XXVII
 
-C 
 
+A
 
-2 
 
+3
 
-XXV 
 
+XXXIII
 
-c 
 
+C
 
-4 
 
+1
 
-VIII 
 
+XXX
 
-A 
 
+A
 
-2 
 
+3
 
 
-N 
+VIII
 
 
+B
 
-Nepoty: L'Oreille fendue 
-Nicomaque: (Edipus 
-Nigond: 1812 
-No: Les Carbonari 
-Nus: Le Mari 
 
+2
 
 
-XXVII 
+XXVI
 
-XVIII 
 
-XIV 
+D
 
-XXIX 
 
-XXV 
+2
 
 
+XXX
 
-A 
 
+C
 
-3 
 
+1
 
-A 
 
+II
 
-1 
 
+B
 
-A 
 
+2
 
-1 
 
+VIII
 
-A 
 
+A
 
-4 
 
+1
 
-C 
 
+XVII
 
-1 
 
+C
 
 
-o 
+2
 
 
+XXV
 
-Ohnet: Serge Panine 
-Dernier amour 
-La Comtease Sarah 
-La Grande Marniere 
 
-Ollognier 'Mmo. ; Le Saifi 
+c
 
 
+4
 
-XXV 
 
+VIII
 
-B 
 
+A
 
-2 
 
+2
 
-XXV 
 
 
-B 
+N
 
 
-6 
 
+Nepoty: L'Oreille fendue
+Nicomaque: (Edipus
+Nigond: 1812
+No: Les Carbonari
+Nus: Le Mari
 
-XXV 
 
 
-C 
+XXVII
 
+XVIII
 
-3 
+XIV
 
+XXIX
 
-XXIX 
+XXV
 
 
-A 
 
+A
 
-2 
 
+3
 
-X X I V 
 
+A
 
-A 
 
+1
 
-8 
 
+A
 
 
-Pailleron : La Souris 
+1
 
 
-XIV 
+A
 
 
-A 
+4
 
 
-4 
+C
 
 
-Paladilhe: Patrie 
+1
 
 
-XXV 
 
+o
 
-I) 
 
 
-• > 
+Ohnet: Serge Panine
+Dernier amour
+La Comtease Sarah
+La Grande Marniere
 
+Ollognier 'Mmo. ; Le Saifi
 
-Diana 
 
 
-X X XIII 
+XXV
 
 
-I) 
+B
 
 
-8 
+2
 
 
-Parodi: L'Inflexible 
+XXV
 
 
-XXVII 
+B
 
 
-I) 
+6
 
 
-• > 
+XXV
 
 
-Paton Le Divorce de Sarah Moore 
+C
 
 
-XXI 
+3
 
 
-A 
+XXIX
 
 
-■ > 
+A
 
 
-Perrault: Bluebeard 
+2
 
 
-II 
+X X I V
 
 
-A 
+A
 
 
+8
 
 
-Lf Pel 11 Pouct : 
 
+Pailleron : La Souris
 
-\ 1 
 
+XIV
 
-l> 
 
+A
 
-• > 
 
+4
 
-" Peau d'&ne 
 
+Paladilhe: Patrie
 
-XXVI 
 
+XXV
 
-A 
 
+I)
 
-"{ 
 
+• >
 
-Peter: L'Or 
 
+Diana
 
-III 
 
+X X XIII
 
-\ 
 
+I)
 
-1 
 
+8
 
-Phrynichus: The I tanaide 
 
+Parodi: L'Inflexible
 
-Will 
 
+XXVII
 
-B 
 
+I)
 
-:t 
 
+• >
 
-Picard La Fugitive 
 
+Paton Le Divorce de Sarah Moore
 
-\XI 
 
+XXI
 
-c 
 
+A
 
-■ > 
 
+■ >
 
-Planquette: Surcouf 
 
+Perrault: Bluebeard
 
-XXIV 
 
+II
 
-A 
 
+A
 
-7 
 
 
-Poe The Purloined Letter 
 
+Lf Pel 11 Pouct :
 
-XI 
 
+\ 1
 
-\ 
 
+l>
 
 
+• >
 
-•' The Gold Bug 
 
+" Peau d'&ne
 
-\l 
 
+XXVI
 
-B 
 
+A
 
-1 
 
+"{
 
-Berenice 
 
+Peter: L'Or
 
-\ X \ 1 \ 
 
+III
 
-1! 
 
+\
 
 
+1
 
 
-174 
+Phrynichus: The I tanaide
 
 
+Will
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+B
 
 
-Follies ido>: L'Enfant du Temple 
+:t
 
 
-XX 
+Picard La Fugitive
 
 
-A 
+\XI
 
 
-4 
+c
 
 
-Polti: Compere le Renard 
+■ >
 
 
-V 
+Planquette: Surcouf
 
 
-A 
+XXIV
 
 
+A
 
 
-Les Cuirs de boeuf 
+7
 
 
-XXVI 
+Poe The Purloined Letter
 
 
-A 
+XI
 
 
-1 
+\
 
 
-Porto-Riehe: Le Vieil Homme 
 
 
-XIV 
+•' The Gold Bug
 
 
-B 
+\l
 
 
-2 
+B
 
 
-Les Malefilatre 
+1
 
 
-XXV 
+Berenice
 
 
-C 
+\ X \ 1 \
 
 
-7 
+1!
 
 
-Pouvillon: Le Roi de Rome 
 
 
-VII 
 
+174
 
-B 
 
 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-Pradon: Electre 
 
+Follies ido>: L'Enfant du Temple
 
-IV 
 
+XX
 
-A 
 
+A
 
-1 
 
+4
 
-Regulus 
 
+Polti: Compere le Renard
 
-XX 
 
+V
 
-A 
 
+A
 
-1 
 
 
-Prevost: Manon Leseaut 
 
+Les Cuirs de boeuf
 
-XXVII 
 
+XXVI
 
-B 
 
+A
 
-6 
 
+1
 
-Prevost (Jean): CEdipus 
 
+Porto-Riehe: Le Vieil Homme
 
-XVIII 
 
+XIV
 
-A 
 
+B
 
-1 
 
+2
 
-Prevost (M): Pierre et There e 
 
+Les Malefilatre
 
-XXVII 
 
+XXV
 
-A 
 
+C
 
-2 
 
+7
 
-La plus faibL 
 
+Pouvillon: Le Roi de Rome
 
-XXVIII 
 
+VII
 
-A 
 
+B
 
-2 
 
 
 
-Q 
+Pradon: Electre
 
 
+IV
 
-Quinault: Alceste 
 
+A
 
 
-XXI 
+1
 
 
+Regulus
 
-A 1 
 
+XX
 
 
-R 
+A
 
 
+1
 
-Rahier: Et ma soeur? 
 
+Prevost: Manon Leseaut
 
-XXViII 
 
+XXVII
 
-B 
 
+B
 
 
+6
 
-Racine: Esther 
 
+Prevost (Jean): CEdipus
 
-I 
 
+XVIII
 
-C 
 
+A
 
-1 
 
+1
 
-Alexandre 
 
+Prevost (M): Pierre et There e
 
-V 
 
+XXVII
 
-C 
 
+A
 
 
+2
 
-Les Frere ennemis 
 
+La plus faibL
 
-X II 
 
+XXVIII
 
-A 
 
+A
 
-2 
 
+2
 
-Britannicus 
 
 
-XIV 
+Q
 
 
-A 
 
+Quinault: Alceste
 
-1 
 
 
-Mithridate 
+XXI
 
 
-XIV 
 
+A 1
 
-B 
 
 
-1 
+R
 
 
-Ii higenie en Tauride (projected) 
 
+Rahier: Et ma soeur?
 
-XIX 
 
+XXViII
 
-C 
 
+B
 
-2 
 
 
-Berenice 
 
+Racine: Esther
 
-XX 
 
+I
 
-B 
 
+C
 
-3 
 
+1
 
-Alceste (projected) 
 
+Alexandre
 
-XXI 
 
+V
 
-A 
 
+C
 
-1 
 
 
-Andromaque 
 
+Les Frere ennemis
 
-XXI 
 
+X II
 
-D 
 
+A
 
-2 
 
+2
 
 
+Britannicus
 
-; nd XXV 
 
+XIV
 
-B 
 
+A
 
-1 
 
+1
 
-Iphigenie a Aulis 
 
+Mithridate
 
-XXIII 
 
+XIV
 
-A 
 
+B
 
-1 
 
+1
 
-" Bajazet 
 
+Ii higenie en Tauride (projected)
 
-XXIV 
 
+XIX
 
-B 
 
+C
 
-4 
 
+2
 
-Phedre 
 
+Berenice
 
-XXVI 
 
+XX
 
-B 
 
+B
 
-1 
 
+3
 
-" m Athalie 
 
+Alceste (projected)
 
-XXXI 
 
+XXI
 
-A 
 
+A
 
-2 
 
+1
 
-Rachilde: La Voix du sang 
 
+Andromaque
 
-XIX 
 
+XXI
 
-G 
 
+D
 
-3 
 
+2
 
-Madame la Mort 
 
 
-XXIV 
 
+; nd XXV
 
-B 
 
+B
 
-8 
 
+1
 
-Rajasekhara: The Sons of Pandou 
 
+Iphigenie a Aulis
 
-III 
 
+XXIII
 
-A 
 
+A
 
-5 
 
+1
 
-The Statue 
 
+" Bajazet
 
-XXIV 
 
+XXIV
 
-D 
 
+B
 
-3 
 
+4
 
-Raymond: Les Menages de Paris 
 
+Phedre
 
-XXV 
 
+XXVI
 
-B 
 
+B
 
-3 
 
+1
 
-Regnier (de): La Gardienn-? 
 
+" m Athalie
 
-XXXV 
 
+XXXI
 
 
+A
 
 
+2
 
-Renauld: Le Crime d'un autre 
 
+Rachilde: La Voix du sang
 
-XXXIII 
 
+XIX
 
-D 
 
+G
 
-2 
 
+3
 
-Reyer: Sigurd 
 
+Madame la Mort
 
-XXV 
 
+XXIV
 
-C 
 
+B
 
-3 
 
+8
 
-Richard: Boislaurier 
 
+Rajasekhara: The Sons of Pandou
 
-11 
 
+III
 
-A 
 
+A
 
 
+5
 
 
+The Statue
 
-and XIV 
 
+XXIV
 
-A 
 
+D
 
-1 
 
+3
 
-Le Roman d'Elise 
 
+Raymond: Les Menages de Paris
 
-XXVIII 
 
+XXV
 
-D 
 
+B
 
-2 
 
+3
 
-Richebourg: La petite Mionne 
 
+Regnier (de): La Gardienn-?
 
-XIX 
 
+XXXV
 
-A 
 
 
-3 
 
 
-Richepin: Nana-Sahib 
 
+Renauld: Le Crime d'un autre
 
-V 
 
+XXXIII
 
-C 
 
+D
 
 
+2
 
-L'Ancien 
 
+Reyer: Sigurd
 
-XXI 
 
+XXV
 
-A 
 
+C
 
-2 
 
+3
 
-Le Chien de garde 
 
+Richard: Boislaurier
 
-XXI 
 
+11
 
-D 
 
+A
 
-1 
 
 
-La Glu 
 
 
-XXII 
 
+and XIV
 
-A 
 
+A
 
-5 
 
+1
 
 
-INDEX OF AUTHORS 
+Le Roman d'Elise
 
 
+XXVIII
 
-175 
 
+D
 
 
-Richepin: La Route d'emeraude 
-Richepin fils: La Marjolaine 
-Richter (J. P.): Titan 
-Riupeiroux: Hypermnestre 
-Rivoire: Le b n roi Dagobcrt 
+2
 
-Mon ami Teddy 
-Rochard: Le peche de Marthe 
 
-La Bete feroce 
-Rochefort: Electre 
-Rod: Le Reformateur 
-Roinard Les Miroirs 
-Rolland: Le 14 juillet 
-Romains: L'Armee dans la \'ille 
-Rostand: L'Aiglon 
+Richebourg: La petite Mionne
 
-Chantecler 
-" Cyrano 
-Roudradeva: The Story of Yayati 
-Roupa: The Loves of Krishna 
-Rouvre: ide) Le Mariage d Andre 
-Rozier: Le Divorce de Sarah Moore 
-Rucellai: Rosemonde 
-Ryner: Vive le roi! 
-Rzewuski: Count Witold 
 
+XIX
 
 
-XXII 
+A
 
-XX1\ 
 
-XVIII 
+3
 
-XXIII 
 
-XVII I 
+Richepin: Nana-Sahib
 
-XXIV 
 
-XXVIII 
+V
 
-XXX 
 
-IV 
+C
 
-VI 
 
-XXV 
-VIII 
 
-\ 111 
 
-VII 
-VIII 
+L'Ancien
 
-XXI 
 
-XXIX 
+XXI
 
-XXIV 
 
-win 
+A
 
-XXI 
-IV 
-XX 
-XXXIV 
 
+2
 
 
-A 
+Le Chien de garde
 
 
-6 
+XXI
 
 
-A 
+D
 
 
-6 
+1
 
 
-D 
+La Glu
 
 
-2 
+XXII
 
 
-B 
+A
 
 
-3 
+5
 
 
-D 
 
+INDEX OF AUTHORS
 
-2 
 
 
-A 
+175
 
 
-7 
 
+Richepin: La Route d'emeraude
+Richepin fils: La Marjolaine
+Richter (J. P.): Titan
+Riupeiroux: Hypermnestre
+Rivoire: Le b n roi Dagobcrt
 
-B 
+Mon ami Teddy
+Rochard: Le peche de Marthe
 
+La Bete feroce
+Rochefort: Electre
+Rod: Le Reformateur
+Roinard Les Miroirs
+Rolland: Le 14 juillet
+Romains: L'Armee dans la \'ille
+Rostand: L'Aiglon
 
+Chantecler
+" Cyrano
+Roudradeva: The Story of Yayati
+Roupa: The Loves of Krishna
+Rouvre: ide) Le Mariage d Andre
+Rozier: Le Divorce de Sarah Moore
+Rucellai: Rosemonde
+Ryner: Vive le roi!
+Rzewuski: Count Witold
 
 
-C 
 
+XXII
 
-1 
+XX1\
 
+XVIII
 
-A 
+XXIII
 
+XVII I
 
-1 
+XXIV
 
+XXVIII
 
-C 
+XXX
 
+IV
 
-1 
+VI
 
+XXV
+VIII
 
-D 
+\ 111
 
+VII
+VIII
 
-1 
+XXI
 
+XXIX
 
-B 
+XXIV
 
+win
 
-2 
+XXI
+IV
+XX
+XXXIV
 
 
-B 
 
+A
 
-2 
 
+6
 
-B 
 
+A
 
 
+6
 
-A 
 
+D
 
-2 
 
+2
 
-C 
 
+B
 
-2 
 
+3
 
-A 
 
+D
 
-2 
 
+2
 
-D 
 
+A
 
-1 
 
+7
 
-B 
 
+B
 
-1 
 
 
-A 
 
+C
 
-2 
 
+1
 
-C 
 
+A
 
 
+1
 
-A 
 
+C
 
-4 
 
+1
 
-B 
 
+D
 
-2 
 
+1
 
 
-Sadwfll: Don Juan V 
+B
 
-Sainte-Fobt ; Alceste \ \ I 
 
-Sainte-Marthe: (EdipUB XXIII 
+2
 
-SaimVGeorges de Boubilier: Le Roi sans 
 
-couronne Y 
+B
 
-Saint-P. 1 Roux: La Dame a la faulx XX 1\ 
 
-Saint-Saens: Samson ft Dalila X\ 
+2
 
-inio \\1\ 
 
-Henri VIII \\\ 
+B
 
-ProBerpine \\\ 
 
-L'Ancitre XXIX 
 
-Salieri: The Danaii Will 
 
-Samain : Polypht \ X I \ 
+A
 
-Samara Dikchila: The \ ictory of I'rad- 
 
-youmna XXIX 
+2
 
-on Marie Stuart \ \ I \ 
 
-Le Crime de -ban Morel XXIX 
+C
 
-Sai d: I-'- Dimon du f( yet \ \l\ 
 
-Sardou: Thermidor \ ill 
+2
 
-I, a To. a \\| 
 
-Cleopatra wii 
+A
 
-La Soreii re \\i\ 
 
-Odette XXVII 
+2
 
-Georgette . \ ,11 
 
-Le Crocodile N XV11 
+D
 
 
+1
 
-B 
 
+B
 
 
+1
 
-A 
 
+A
 
-l 
 
+2
 
-A 
 
+C
 
-1 
 
 
-C 
 
+A
 
 
+4
 
-B 
 
+B
 
-9 
 
+2
 
-A 
 
 
-•> 
+Sadwfll: Don Juan V
 
+Sainte-Fobt ; Alceste \ \ I
 
-C 
+Sainte-Marthe: (EdipUB XXIII
 
+SaimVGeorges de Boubilier: Le Roi sans
 
+couronne Y
 
+Saint-P. 1 Roux: La Dame a la faulx XX 1\
 
-B 
+Saint-Saens: Samson ft Dalila X\
 
+inio \\1\
 
-5 
+Henri VIII \\\
 
+ProBerpine \\\
 
-B 
+L'Ancitre XXIX
 
+Salieri: The Danaii Will
 
-7 
+Samain : Polypht \ X I \
 
+Samara Dikchila: The \ ictory of I'rad-
 
-B 
+youmna XXIX
 
+on Marie Stuart \ \ I \
 
-(i 
+Le Crime de -ban Morel XXIX
 
+Sai d: I-'- Dimon du f( yet \ \l\
 
-B 
+Sardou: Thermidor \ ill
 
+I, a To. a \\|
 
-8 
+Cleopatra wii
 
+La Soreii re \\i\
 
-A 
+Odette XXVII
 
+Georgette . \ ,11
 
-1 
+Le Crocodile N XV11
 
 
-\ 
 
+B
 
-•) 
 
 
-B 
 
+A
 
-•> 
 
+l
 
-B 
 
+A
 
-7 
 
+1
 
-\ 
 
+C
 
-I 
 
 
-\ 
 
+B
 
-1 
 
+9
 
-l) 
 
+A
 
-'J 
 
+•>
 
-\ 
 
+C
 
-1 
 
 
-B 
 
+B
 
-1 
 
+5
 
-\ 
 
+B
 
-1 
 
+7
 
-\ 
 
+B
 
-1 
 
+(i
 
-B 
 
+B
 
 
+8
 
 
-176 
+A
 
 
+1
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+\
 
 
-Sardou : Fedora 
+•)
 
 
-XXIX 
+B
 
 
-B 
+•>
 
 
-5 
+B
 
 
-Theodora 
+7
 
 
-XXXIII 
+\
 
 
-A 
+I
 
 
-2 
+\
 
 
-L'Affaire des Poissons 
+1
 
 
-XXXIII 
+l)
 
 
-B 
+'J
 
 
-2 
+\
 
 
-Sardou (Andre): L'Etau 
+1
 
 
-XVI 
+B
 
 
-D 
+1
 
 
+\
 
 
-Schiller: William Tell 
+1
 
 
-III 
+\
 
 
-B 
+1
 
 
-6 
+B
 
 
 
 
-and VI I 
 
+176
 
-B 
 
 
-2 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-Schiller: The Brigands 
 
+Sardou : Fedora
 
-V 
 
+XXIX
 
-A 
 
+B
 
 
+5
 
 
+Theodora
 
-and XXXIII 
 
+XXXIII
 
-C 
 
+A
 
-3 
 
+2
 
-" Fiesco 
 
+L'Affaire des Poissons
 
-VIII 
 
+XXXIII
 
-A 
 
+B
 
-1 
 
+2
 
-Don Carlos 
 
+Sardou (Andre): L'Etau
 
-XIV 
 
+XVI
 
-B 
 
+D
 
-3 
 
 
 
+Schiller: William Tell
 
-and XXVI 
 
+III
 
-B 
 
+B
 
-2 
 
+6
 
-The Bride of Messina 
 
 
-XVIII 
 
+and VI I
 
-A 
 
+B
 
-2 
 
+2
 
-Marie Stuart 
 
+Schiller: The Brigands
 
-XXIV 
 
+V
 
-B 
 
+A
 
-2 
 
 
-Wallenstein 
 
 
-XXX 
 
+and XXXIII
 
-A 
 
+C
 
-3 
 
+3
 
-Love and Intrigue 
 
+" Fiesco
 
-XXXII 
 
+VIII
 
-B 
 
+A
 
-3 
 
+1
 
-Second: La Vicomtesse Alice 
 
+Don Carlos
 
-V 
 
+XIV
 
-D 
 
+B
 
 
+3
 
-Sedaine: Richard Cceur-de-Lion 
 
 
-X 
-and XXXV 
 
+and XXVI
 
-D 
 
+B
 
-1 
 
+2
 
-See: L'Indiscret 
 
+The Bride of Messina
 
-XVII 
 
+XVIII
 
-A 
 
+A
 
-1 
 
+2
 
-Seneca: The Phcenissse 
 
+Marie Stuart
 
-XIII 
 
+XXIV
 
-A 
 
+B
 
-1 
 
+2
 
-" Thyestes 
 
+Wallenstein
 
-XIII 
 
+XXX
 
-A 
 
+A
 
-2 
 
+3
 
-" Octavia 
 
+Love and Intrigue
 
-XV 
 
+XXXII
 
-B 
 
+B
 
 
+3
 
-Hercules Furens 
 
+Second: La Vicomtesse Alice
 
-XVI 
 
+V
 
-A 
 
+D
 
-1 
 
 
-(Edipus 
 
+Sedaine: Richard Cceur-de-Lion
 
-XVIII 
 
+X
+and XXXV
 
-A 
 
+D
 
-1 
 
+1
 
-" Medea 
 
+See: L'Indiscret
 
-XXV 
 
+XVII
 
-A 
 
+A
 
-1 
 
+1
 
-Hercules on (Eta 
 
+Seneca: The Phcenissse
 
-XXV 
 
+XIII
 
-B 
 
+A
 
-1 
 
+1
 
-" Hippolyte 
 
+" Thyestes
 
-XXVI 
 
+XIII
 
-B 
 
+A
 
-1 
 
+2
 
-i he Trojan Women 
 
+" Octavia
 
-XXXVI 
 
+XV
 
-A 
 
+B
 
-1 
 
 
-Severine: Sainte-Hel ne 
 
+Hercules Furens
 
-III 
 
+XVI
 
-A 
 
+A
 
-2 
 
+1
 
-Shakespeare: King John 
 
+(Edipus
 
-I 
 
+XVIII
 
-A 
 
+A
 
-1 
 
+1
 
-The Tempest 
 
+" Medea
 
-III 
 
+XXV
 
-B 
 
+A
 
-1 
 
+1
 
-The Merchant of Venice 
 
+Hercules on (Eta
 
-III 
 
+XXV
 
-B 
 
+B
 
-6 
 
+1
 
 
+" Hippolyte
 
-and XI 
 
+XXVI
 
-B 
 
+B
 
-2 
 
+1
 
-Hamlet 
 
+i he Trojan Women
 
-IV 
 
+XXXVI
 
-A 
 
+A
 
-1 
 
+1
 
 
+Severine: Sainte-Hel ne
 
-and XIII 
 
+III
 
-C 
 
+A
 
 
+2
 
-Troilus and Cressida 
 
+Shakespeare: King John
 
-V 
 
+I
 
-C 
 
+A
 
 
+1
 
-Richard H 
 
+The Tempest
 
-VI 
 
+III
 
-B 
 
+B
 
 
+1
 
-" Timon of Athens 
 
+The Merchant of Venice
 
-VI 
 
+III
 
-C 
 
+B
 
-1 
 
+6
 
-Coriolanus 
 
 
-VI 
 
+and XI
 
-c 
 
+B
 
-1 
 
+2
 
 
+Hamlet
 
-and XII 
 
+IV
 
-B 
 
+A
 
 
+1
 
-King Lear 
 
 
-VI 
 
+and XIII
 
-C 
 
+C
 
-1 
 
 
-Henry VI 
 
+Troilus and Cressida
 
-VI 
 
+V
 
-B 
 
+C
 
 
 
-Henry V 
 
+Richard H
 
-IX 
 
+VI
 
-B 
 
+B
 
-1 
 
 
 
+" Timon of Athens
 
-and XXXIII 
 
+VI
 
-A 
 
+C
 
-1 
 
+1
 
-Pericles 
 
+Coriolanus
 
-XXXV 
 
+VI
 
 
+c
 
 
+1
 
 
 
-and XI 
 
+and XII
 
-B 
 
+B
 
-2 
 
 
-Two Gentlemen of Verona 
 
+King Lear
 
-XIV 
 
+VI
 
-D 
 
+C
 
 
+1
 
-Measure for Measure 
 
+Henry VI
 
-XXI 
 
+VI
 
-D 
 
+B
 
-2 
 
 
-Antony and Cleopatra 
 
+Henry V
 
-XXII 
 
+IX
 
-A 
 
+B
 
-4 
 
+1
 
-Henry VIII 
 
 
-XXV 
 
+and XXXIII
 
-B 
 
+A
 
-5 
 
+1
 
-Romeo and Juliet 
 
+Pericles
 
-XXIX 
 
+XXXV
 
-B 
 
 
-6 
 
 
 
-INDEX O:-' AUTHORS 
 
 
+and XI
 
-177 
 
+B
 
 
-Shakespeare: Julius Caesar 
+2
 
 
-XXX 
+Two Gentlemen of Verona
 
 
-A 
+XIV
 
 
-2 
+D
 
 
-Henry IV 
 
 
-XXX 
+Measure for Measure
 
 
-B 
+XXI
 
 
+D
 
 
-Macbeth 
+2
 
 
-XXX 
+Antony and Cleopatra
 
 
-C 
+XXII
 
 
-1 
+A
 
 
-Richard III 
+4
 
 
-XXX 
+Henry VIII
 
 
-C 
+XXV
 
 
-1 
+B
 
 
-" Comedy of Errors 
+5
 
 
-XXXII 
+Romeo and Juliet
 
 
-A 
+XXIX
 
 
-1 
+B
 
 
-Much Ado About Nothing 
+6
 
 
-XXXII 
 
+INDEX O:-' AUTHORS
 
-B 
 
 
-1 
+177
 
 
-Othello 
 
+Shakespeare: Julius Caesar
 
-XXXII 
 
+XXX
 
-B 
 
+A
 
-1 
 
+2
 
-" Cymbeline 
 
+Henry IV
 
-XXXII 
 
+XXX
 
-B 
 
+B
 
-2 
 
 
-A Winter's Tale 
 
+Macbeth
 
-XXXV 
 
+XXX
 
 
+C
 
 
+1
 
-Shaw: Mrs. Warren's Profession 
 
+Richard III
 
-XXVII 
 
+XXX
 
-A 
 
+C
 
-1 
 
+1
 
-Shelley: The Cenci 
 
+" Comedy of Errors
 
-III 
 
+XXXII
 
-B 
 
+A
 
-5 
 
+1
 
-XIII B 3 and XXVI 
 
+Much Ado About Nothing
 
-A 
 
+XXXII
 
-3 
 
+B
 
-Sienkiewicz: By Fire and Sword 
 
+1
 
-X 
 
+Othello
 
-A 
 
+XXXII
 
 
+B
 
-Sophocles: Chyses 
 
+1
 
-I 
 
+" Cymbeline
 
-A 
 
+XXXII
 
-1 
 
+B
 
-" Minos 
 
+2
 
-I 
 
+A Winter's Tale
 
-A 
 
+XXXV
 
-1 
 
 
-" Oicles 
 
 
-I 
 
+Shaw: Mrs. Warren's Profession
 
-A 
 
+XXVII
 
-1 
 
+A
 
-" OZdipus at Colonus 
 
+1
 
-I 
 
-and XII 
+Shelley: The Cenci
 
 
-A 
+III
 
 
-3 
+B
 
 
-" Nausicaa 
+5
 
 
-I 
+XIII B 3 and XXVI
 
 
-B 
+A
 
 
-1 
+3
 
 
-The Pheacians 
+Sienkiewicz: By Fire and Sword
 
 
-I 
+X
 
 
-B 
+A
 
 
-1 
 
 
-Acrisius 
+Sophocles: Chyses
 
 
-I 
+I
 
 
-B 
+A
 
 
-2 
+1
 
 
-Philoctetes at Troy 
+" Minos
 
 
-I 
+I
 
 
-B 
+A
 
 
-3 
+1
 
 
-" Eurysaces 
+" Oicles
 
 
-I 
+I
 
 
-C 
+A
 
 
+1
 
 
+" OZdipus at Colonus
 
-" Andromeda 
 
+I
 
-II 
+and XII
 
 
-A 
+A
 
 
+3
 
 
-iEgeus 
+" Nausicaa
 
 
-11 
+I
 
 
-B 
+B
 
 
-1 
+1
 
 
-Peleus 
+The Pheacians
 
 
-I! 
+I
 
 
-B 
+B
 
 
-1 
+1
 
 
+Acrisius
 
 
-and VII 
+I
 
 
-C 
+B
 
 
-1 
+2
 
 
-" Iolas 
+Philoctetes at Troy
 
 
-II 
+I
 
 
-B 
+B
 
 
-2 
+3
 
 
-" 'Enee 
+" Eurysaces
 
 
-II 
+I
 
 
-B 
+C
 
 
-2 
 
 
-Phineus 
 
+" Andromeda
 
-11 
 
+II
 
-B 
 
+A
 
-2 
 
 
-Aletes and Krigone 
 
+iEgeus
 
-III 
 
+11
 
-A 
 
+B
 
-1 
 
+1
 
-Nauplhu 
 
+Peleus
 
-III 
 
+I!
 
-A 
 
+B
 
-o 
 
+1
 
-Ixion 
 
 
-III 
 
+and VII
 
-\ 
 
+C
 
-5 
 
+1
 
-The Feast of the Achaean 
 
+" Iolas
 
-III 
 
+II
 
-B 
 
+B
 
-• > 
 
+2
 
-Phrixuf 
 
+" 'Enee
 
-III 
 
+II
 
-B 
 
+B
 
-1 
 
+2
 
-Tfr> 
 
+Phineus
 
-III 
 
+11
 
-B 
 
+B
 
-5 
 
+2
 
-The Epigoni\s 
 
+Aletes and Krigone
 
-IV 
 
+III
 
-A 
 
+A
 
-1 
 
+1
 
-Elect r;i 
 
+Nauplhu
 
-IV 
 
+III
 
-A 
 
+A
 
-1 
 
+o
 
-Eriphyle 
 
+Ixion
 
-IV 
 
+III
 
-\ 
 
+\
 
-1 
 
+5
 
-Meleager 
 
+The Feast of the Achaean
 
-IV 
 
+III
 
-H 
 
+B
 
 
+• >
 
-Ajax Locrian 
 
+Phrixuf
 
-V 
 
+III
 
-B 
 
+B
 
 
+1
 
-Laocoon 
 
+Tfr>
 
-\ 
 
+III
 
-c 
 
+B
 
 
+5
 
-The Shepherd 
 
+The Epigoni\s
 
-VI 
 
+IV
 
-\ 
 
+A
 
-1 
 
+1
 
-The Xoanephorei 
 
+Elect r;i
 
-\ 1 
 
+IV
 
-\ 
 
+A
 
-•j 
 
+1
 
-Teucer 
 
+Eriphyle
 
-VI 
 
+IV
 
-c 
 
+\
 
-2 
 
+1
 
-Sophoclei The Council of the Argive 
 
+Meleager
 
-IX 
 
+IV
 
-A 
 
+H
 
 
 
-Laconian Women 
 
+Ajax Locrian
 
-l.\ 
 
+V
 
-c 
 
+B
 
-l 
 
 
-Sinon 
 
+Laocoon
 
-IX 
 
+\
 
-1) 
 
+c
 
-l 
 
 
-CEnom 
 
+The Shepherd
 
-l\ 
 
+VI
 
-D 
 
+\
 
-o 
 
+1
 
-( (rithyie 
 
+The Xoanephorei
 
-\ 
 
+\ 1
 
-\ 
 
+\
 
 
+•j
 
-Th< ' it tion of Helen 
 
+Teucer
 
 
+VI
 
-B 
 
+c
 
 
+2
 
 
-ITS 
+Sophoclei The Council of the Argive
 
 
+IX
 
-THIRTY-SIX DRAMATIC SITUATIONS 
 
+A
 
 
-Soph 
 
 
-3cles: Hermion^ 
+Laconian Women
 
 
-X 
+l.\
 
 
-c 
+c
 
 
-2 
+l
 
 
+Sinon
 
 
-Polyidus 
+IX
 
 
-XI 
+1)
 
 
-A 
+l
 
 
+CEnom
 
 
+l\
 
 
-Women of Scyros 
+D
 
 
-XI 
+o
 
 
-c 
+( (rithyie
 
 
-2 
+\
 
 
+\
 
 
-' Ulysses 
 
 
-XI 
+Th< ' it tion of Helen
 
 
-c 
 
 
-3 
+B
 
 
 
 
-Philoctetes 
 
+ITS
 
-XII 
 
 
-A 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
 
+Soph
 
 
+3cles: Hermion^
 
-Helen Reclaimed 
 
+X
 
-XII 
 
+c
 
-c 
 
+2
 
 
 
 
+Polyidus
 
-Thyestes II 
 
+XI
 
-XIII 
 
+A
 
-A 
 
 
-2 
 
 
 
+Women of Scyros
 
-' Ajax 
 
+XI
 
-XVI 
 
+c
 
-B 
 
+2
 
 
 
 
+' Ulysses
 
-' Eumele 
 
+XI
 
-XVII 
 
+c
 
-A 
 
+3
 
-1 
 
 
 
+Philoctetes
 
-' Pelias 
 
+XII
 
-XVII 
-and XIX 
 
+A
 
-c 
 
-E 
 
 
-4 
 
 
+Helen Reclaimed
 
 
-(Edipus the King 
+XII
 
 
-XVIII 
+c
 
 
-A 
 
 
-1 
 
 
+Thyestes II
 
 
-' Creusa 
+XIII
 
 
-XIX 
+A
 
 
-B 
+2
 
 
-1 
 
 
+' Ajax
 
 
-Telephus 
+XVI
 
 
-XIX 
+B
 
 
-B 
 
 
-1 
 
 
+' Eumele
 
 
-Euryale 
+XVII
 
 
-XIX 
+A
 
 
-B 
+1
 
 
-2 
 
 
+' Pelias
 
 
-Alexander 
+XVII
+and XIX
 
 
-XIX 
+c
 
+E
 
-c 
 
+4
 
-1 
 
 
 
+(Edipus the King
 
-Procris 
 
+XVIII
 
-XIX 
 
+A
 
-G 
 
+1
 
-1 
 
 
 
+' Creusa
 
-Amphitryon 
 
+XIX
 
-XIX 
 
+B
 
-F 
 
+1
 
-3 
 
 
 
+Telephus
 
-Alceste 
 
+XIX
 
-XXI 
 
+B
 
-A 
 
+1
 
-1 
 
 
 
+Euryale
 
-Iphigenia 
 
+XIX
 
-XXIII 
 
+B
 
-A 
 
+2
 
-1 
 
 
 
+Alexander
 
-' Iobate 
 
+XIX
 
-XXVI 
 
+c
 
-B 
 
+1
 
-1 
 
 
 
+Procris
 
-Lemnian Women 
 
+XIX
 
-XXIII 
 
+G
 
-B 
 
+1
 
-2 
 
 
 
+Amphitryon
 
-Women of Colchis 
 
+XIX
 
-XXV 
 
+F
 
-A 
 
+3
 
-1 
 
 
 
+Alceste
 
-Antigone 
 
+XXI
 
-XX 
 
+A
 
-A 
 
+1
 
-3 
 
 
 
+Iphigenia
 
-The Maidens of Trachis 
 
+XXIII
 
-XXV 
 
+A
 
-B 
 
+1
 
-1 
 
 
 
+' Iobate
 
-Alcmeon 
 
+XXVI
 
-XXV 
 
+B
 
-B 
 
+1
 
-4 
 
 
 
+Lemnian Women
 
-' Phaedra 
 
+XXIII
 
-XXVI 
 
+B
 
-B 
 
+2
 
-1 
 
 
 
+Women of Colchis
 
-Thamiras 
 
+XXV
 
-XXXI 
 
+A
 
-B 
 
+1
 
-3 
 
 
 
+Antigone
 
-Niobe 
 
+XX
 
-XXXI 
 
+A
 
-B 
 
+3
 
-4 
 
 
 
+The Maidens of Trachis
 
-Eumele 
 
+XXV
 
-XXXI 
 
+B
 
-B 
 
+1
 
-5 
 
 
 
+Alcmeon
 
-The Phtiotides 
 
+XXV
 
-XXXII 
 
+B
 
-C 
 
+4
 
-4 
 
 
 
+' Phaedra
 
-Palamede 
 
+XXVI
 
-XXXIII 
 
+B
 
-C 
 
+1
 
-2 
 
 
 
+Thamiras
 
-Thyestes at Sicyon 
 
+XXXI
 
-XXXV 
 
+B
 
 
+3
 
 
 
 
+Niobe
 
-The Captives 
 
+XXXI
 
-XXXVI 
 
+B
 
-A 
 
+4
 
-1 
 
 
 
+Eumele
 
-Laocoon 
 
+XXXI
 
-XXXVI 
 
+B
 
-A 
 
+5
 
-1 
 
 
 
+The Phtiotides
 
-Polyxena 
 
+XXXII
 
-XXXVI 
 
+C
 
-A 
 
+4
 
-1 
 
 
 
+Palamede
 
-The Ethiopians 
 
+XXXIII
 
-XXXVI 
 
+C
 
-C 
 
+2
 
 
 
-Soubhata: The Message of Angada 
 
+Thyestes at Sicyon
 
-X 
 
+XXXV
 
-C 
 
 
-2 
 
 
-Soudraka: The Earthen Toy-cart 
 
 
-XXIV 
 
+The Captives
 
-A 
 
+XXXVI
 
-5 
 
+A
 
-Soundara Misra: Abhirama mani 
 
+1
 
-X 
 
 
-C 
 
+Laocoon
 
-2 
 
+XXXVI
 
-Speroni: Canace 
 
+A
 
-XXVI 
 
+1
 
-C 
 
 
-2 
 
+Polyxena
 
-Spontini: The Danaides 
 
+XXXVI
 
-XXIII 
 
+A
 
-B 
 
+1
 
-3 
 
 
-Stace: Agave 
 
+The Ethiopians
 
-XXXI 
 
+XXXVI
 
-A 
 
+C
 
-1 
 
 
-Stein: La Veuve joyeuse 
 
+Soubhata: The Message of Angada
 
-XXVIII 
 
+X
 
-A 
 
+C
 
-2 
 
+2
 
-Sue: Les Enfants naturels 
 
+Soudraka: The Earthen Toy-cart
 
-XVIII 
 
+XXIV
 
-A 
 
+A
 
-2 
 
+5
 
-T 
-Tarb6: Monsieur de Morat 
 
+Soundara Misra: Abhirama mani
 
-XXV 
 
+X
 
-B 
 
+C
 
-3 
 
+2
 
-Tasso: Torrismond 
 
+Speroni: Canace
 
-XVIII 
 
+XXVI
 
-A 
 
+C
 
-2 
 
+2
 
-( i 
 
+Spontini: The Danaides
 
-Jerusalem Delivered 
 
+XXIII
 
-XIX 
 
+B
 
-G 
 
+3
 
-1 
 
+Stace: Agave
 
 
-INDEX OF AUTHORS 
+XXXI
 
 
+A
 
-179 
 
+1
 
 
-Tchang-Koue-pin: The Tunic Confronted 
-Tellez: Don Juan 
-Terni iMme.i: Les Baillinnes 
-Theodecte: CEdipus 
-" Lyncee 
+Stein: La Veuve joyeuse
 
-Theuriet: La Maison des deux Barzeaux 
-Thomas: Francoise de Rimini 
-Tiercel in: Un voyage de noces 
-Tirso de Molina: Don Juan 
-Tolstoi: The Powers of Darkness 
 
+XXVIII
 
 
-Resurrection 
+A
 
-The Kreutzer Sonata 
-Torquet: Cent lignes emues 
-Trarieux: La Dette 
-Trissino: Sophonisbe 
-Tristan 1' Hermite: Marianne 
 
+2
 
 
-and 
+Sue: Les Enfants naturels
 
 
+XVIII
 
-III 
 
-V 
+A
 
-XXXVI 
 
-XVIII 
+2
 
-XXIII 
 
-XXV 
+T
+Tarb6: Monsieur de Morat
 
-XXV 
 
-XXV 
+XXV
 
-V 
 
-XIII 
+B
 
-XV 
 
-XX 
+3
 
-XXV 
 
-XXXVI 
+Tasso: Torrismond
 
-XIV 
 
-XX 
+XVIII
 
-XXXII 
 
+A
 
 
-A 
+2
 
 
-1 
+( i
 
 
-B 
+Jerusalem Delivered
 
 
+XIX
 
 
-A 
+G
 
 
-2 
+1
 
 
-A 
 
+INDEX OF AUTHORS
 
-1 
 
 
-B 
+179
 
 
-3 
 
+Tchang-Koue-pin: The Tunic Confronted
+Tellez: Don Juan
+Terni iMme.i: Les Baillinnes
+Theodecte: CEdipus
+" Lyncee
 
-C 
+Theuriet: La Maison des deux Barzeaux
+Thomas: Francoise de Rimini
+Tiercel in: Un voyage de noces
+Tirso de Molina: Don Juan
+Tolstoi: The Powers of Darkness
 
 
-4 
 
+Resurrection
 
-C 
+The Kreutzer Sonata
+Torquet: Cent lignes emues
+Trarieux: La Dette
+Trissino: Sophonisbe
+Tristan 1' Hermite: Marianne
 
 
-3 
 
+and
 
-A 
 
 
-2 
+III
 
+V
 
-B 
+XXXVI
 
+XVIII
 
+XXIII
 
+XXV
 
-F 
+XXV
 
+XXV
 
+V
 
+XIII
 
-A 
+XV
 
+XX
 
-1 
+XXV
 
+XXXVI
 
-C 
+XIV
 
+XX
 
+XXXII
 
 
-D 
 
+A
 
-1 
 
+1
 
-C 
 
+B
 
 
 
-B 
 
+A
 
-1 
 
+2
 
-B 
 
+A
 
-3 
 
+1
 
-A 
 
+B
 
-1 
 
+3
 
 
-Vacquerie: Proserpine 
+C
 
-Jalousie 
-Vallette: Le Viergp 
-Valnay: L'Esclave du Sevoin 
-Van Velde (Mme.): Lena 
-Vauzelles de): Alceste 
-Veber: Lee Grands 
 
-Vedanyatha Vatchespati: Tchitra Yadjgna 
-\'erga: Chevalerie rustique 
-Verhaeren: Le Cloltre 
-Verlaine: Louise Leclen-q 
-Verne: Le Tour du monde en 80 jours 
+4
 
-Les Enfants du capitaine (irant 
-Villemer: L'Abaente 
-Villiere: Don Juan 
-Villien de ['Iale Adam: Le Nouveau-Monde 
 
-Vira: Madhouranirouddha 
-Viahakadatta: The Minister's Ring 
-Viswanatha: Mrigancalckha 
-Voltaire: Briphyle 
+C
 
-Adelaide I >ugue iclin 
 
-Aga1 bode 
+3
 
-Anu'lic 
 
-Don Pedre 
+A
 
-Samson 
 
-Pandora 
+2
 
-and 
 
-Le ivi,,;. 
-<]., • 
+B
 
-La Gudbref 
 
-Le I. "i de Minos 
 
 
+F
 
-XXV 
 
 
-B 
 
+A
 
-7 
 
+1
 
-XXXII 
 
+C
 
-c 
 
 
-5 
 
+D
 
-XXXIII 
 
+1
 
-B 
 
+C
 
-3 
 
 
-XX XI I 
 
+B
 
-A 
 
+1
 
-3 
 
+B
 
-XXVIl 
 
+3
 
-B 
 
+A
 
-4 
 
+1
 
-XXI 
 
 
-A 
+Vacquerie: Proserpine
 
+Jalousie
+Vallette: Le Viergp
+Valnay: L'Esclave du Sevoin
+Van Velde (Mme.): Lena
+Vauzelles de): Alceste
+Veber: Lee Grands
 
-1 
+Vedanyatha Vatchespati: Tchitra Yadjgna
+\'erga: Chevalerie rustique
+Verhaeren: Le Cloltre
+Verlaine: Louise Leclen-q
+Verne: Le Tour du monde en 80 jours
 
+Les Enfants du capitaine (irant
+Villemer: L'Abaente
+Villiere: Don Juan
+Villien de ['Iale Adam: Le Nouveau-Monde
 
-XXXIII 
+Vira: Madhouranirouddha
+Viahakadatta: The Minister's Ring
+Viswanatha: Mrigancalckha
+Voltaire: Briphyle
 
+Adelaide I >ugue iclin
 
-A 
+Aga1 bode
 
+Anu'lic
 
-:{ 
+Don Pedre
 
+Samson
 
-XXXI 
+Pandora
 
+and
 
-B 
+Le ivi,,;.
+<]., •
 
+La Gudbref
 
-2 
+Le I. "i de Minos
 
 
-XXII 
 
+XXV
 
-A 
 
+B
 
-10 
 
+7
 
-X X X 1 V 
 
+XXXII
 
-A 
 
+c
 
-• > 
 
+5
 
-XVII 
 
+XXXIII
 
-(' 
 
+B
 
-■> 
 
+3
 
-IX 
 
+XX XI I
 
-I) 
 
+A
 
-1 
 
+3
 
-XXXV 
 
+XXVIl
 
 
+B
 
 
+4
 
-XXVII 
 
+XXI
 
-B 
 
+A
 
-1 
 
+1
 
-\ 
 
+XXXIII
 
-B 
 
+A
 
 
+:{
 
-X X V 
 
+XXXI
 
-C 
 
+B
 
-1 
 
+2
 
-XIX 
 
+XXII
 
-A 
 
+A
 
-4 
 
+10
 
-XII 
 
+X X X 1 V
 
-\ 
 
+A
 
 
+• >
 
-XXIV 
 
+XVII
 
-A 
 
+('
 
-1 
 
+■>
 
-l\ 
 
+IX
 
-\ 
 
+I)
 
-1 
 
+1
 
-XIV 
 
+XXXV
 
-\ 
 
 
 
 
-XIV 
 
+XXVII
 
-\ 
 
+B
 
-•> 
 
+1
 
-XIV 
 
+\
 
-\ 
 
+B
 
-•» 
 
 
-XIV 
 
+X X V
 
-\ 
 
+C
 
-•J 
 
+1
 
-XVII 
 
+XIX
 
-c 
 
+A
 
-:{ 
 
+4
 
-XVII 
 
+XII
 
-(• 
 
+\
 
-l 
 
 
-X \ 1 \ 
 
+XXIV
 
-A 
 
+A
 
-l 
 
+1
 
-XIII 
 
+l\
 
-\ 
 
+\
 
-•> 
 
+1
 
-Will 
 
+XIV
 
-\ 
 
+\
 
-1 
 
 
-\l\ 
 
+XIV
 
-A 
 
+\
 
-■> 
 
+•>
 
-XIX 
 
+XIV
 
-\ 
 
+\
 
-•> 
 
-M 
+•»
 
 
+XIV
 
-180 
 
+\
 
 
-THIRTY-SIX DRAMATIC SITUATIONS 
+•J
 
 
+XVII
 
-Voltaire: 
 
+c
 
-Merope 
 
+:{
 
-it 
 
+XVII
 
-Semiramis 
 
+(•
 
-ii 
 
+l
 
-Mahomet 
 
+X \ 1 \
 
-• i 
 
+A
 
-Le Huron 
 
+l
 
-ii 
 
+XIII
 
-Tanis et Zelide 
 
+\
 
-ii 
 
+•>
 
-Alzire 
 
+Will
 
-ii 
 
+\
 
-Le Triumvirat 
 
+1
 
-ii 
 
+\l\
 
-Zulime 
 
+A
 
-ii 
 
+■>
 
-Brutus 
 
+XIX
 
-ii 
 
+\
 
-Nanine 
 
+•>
 
-ii 
+M
 
 
-Les Scythes 
 
+180
 
-ii 
 
 
-Olympie 
+THIRTY-SIX DRAMATIC SITUATIONS
 
 
-1 1 
 
+Voltaire:
 
-Irene 
 
+Merope
 
-ii 
 
+it
 
-Catilina 
 
+Semiramis
 
-i< 
 
+ii
 
-La Mort de Caesar 
 
+Mahomet
 
-ii 
 
+• i
 
-Marianne 
 
+Le Huron
 
-ii 
 
+ii
 
-Tancrede 
 
+Tanis et Zelide
 
-it 
 
+ii
 
-Zaire 
 
+Alzire
 
-ii 
 
+ii
 
-Art6mire 
 
+Le Triumvirat
 
-ii 
 
+ii
 
-Oreste 
 
+Zulime
 
 
-XIX 
+ii
 
-XIX 
 
-XIX 
+Brutus
 
-XXI 
 
-XXIV 
+ii
 
-XXIV 
 
-XXIV 
+Nanine
 
-XXIV 
 
-XXVII 
+ii
 
-XXVIII 
 
-XXIX 
+Les Scythes
 
-XXIX 
 
-XXIX 
+ii
 
-XXX 
 
-and VIII 
-XXX 
-XXXII 
-XXXII 
+Olympie
 
-and II 
 
-XXXII 
-XXXII 
-XXXIV 
+1 1
 
 
+Irene
 
-B 
 
+ii
 
-1 
 
+Catilina
 
-D 
 
+i<
 
 
+La Mort de Caesar
 
-E 
 
+ii
 
 
+Marianne
 
-D 
 
+ii
 
-2 
 
+Tancrede
 
-A 
 
+it
 
-2 
 
+Zaire
 
-A 
 
+ii
 
-3 
 
+Art6mire
 
-A 
 
+ii
 
-3 
 
+Oreste
 
-B 
 
 
-4 
+XIX
 
+XIX
 
-D 
+XIX
 
+XXI
 
-1 
+XXIV
 
+XXIV
 
-A 
+XXIV
 
+XXIV
 
-1 
+XXVII
 
+XXVIII
 
-A 
+XXIX
 
+XXIX
 
-4 
+XXIX
 
+XXX
 
-B 
+and VIII
+XXX
+XXXII
+XXXII
 
+and II
 
-1 
+XXXII
+XXXII
+XXXIV
 
 
-B 
 
+B
 
-4 
 
+1
 
-B 
 
+D
 
 
 
-A 
 
+E
 
-1 
 
 
-A 
 
+D
 
-2 
 
+2
 
-A 
 
+A
 
-1 
 
+2
 
-A 
 
+A
 
-1 
 
+3
 
-A 
 
+A
 
 
+3
 
-A 
 
+B
 
-2 
 
+4
 
-C 
 
+D
 
-2 
 
+1
 
-A 
 
+A
 
-■1 
 
+1
 
 
-w 
+A
 
 
+4
 
-Wagner: Lohengrin 
 
-The Ring of the Nibelungs 
+B
 
-Parsifal 
 
-Die Meistersinger 
-" Tannhauser 
-Wagner: Tristan and Isolde 
-Webster: Vittoria Corombona 
+1
 
-Appius and Virginia 
 
-The Duchess of Main 
+B
 
-Sir Thomas Wyat 
-Wells: The War of the Worlds 
-Werner: Attila 
 
-The Twenty-fourth of February 
-Luther 
-Wicheler: Le Mariage de Mile. Beuleman.s 
-Widor: Maitre Ambros 
-Wilde: Salome 
-Willy: Le Frequet 
+4
 
-Lelie 
-Wolf: Les Lys 
 
+B
 
 
-II 
 
 
-A 
+A
 
 
+1
 
 
-V 
+A
 
 
-c 
+2
 
 
+A
 
 
-IX 
+1
 
 
-c 
+A
 
 
-2 
+1
 
 
-XXIV 
+A
 
 
-A 
 
 
-9 
+A
 
 
-XXII 
+2
 
 
-A 
+C
 
 
-2 
+2
 
 
-XXV 
+A
 
 
-c 
+■1
 
 
-3 
 
+w
 
-XV 
 
 
-A 
+Wagner: Lohengrin
 
+The Ring of the Nibelungs
 
-1 
+Parsifal
 
+Die Meistersinger
+" Tannhauser
+Wagner: Tristan and Isolde
+Webster: Vittoria Corombona
 
-XXIV 
+Appius and Virginia
 
+The Duchess of Main
 
-A 
+Sir Thomas Wyat
+Wells: The War of the Worlds
+Werner: Attila
 
+The Twenty-fourth of February
+Luther
+Wicheler: Le Mariage de Mile. Beuleman.s
+Widor: Maitre Ambros
+Wilde: Salome
+Willy: Le Frequet
 
-3 
+Lelie
+Wolf: Les Lys
 
 
-XXIX 
 
+II
 
-A 
 
+A
 
-1 
 
 
-XXX 
 
+V
 
-B 
 
+c
 
 
 
-VI 
 
+IX
 
-A 
 
+c
 
-2 
 
+2
 
-III 
 
+XXIV
 
-A 
 
+A
 
-1 
 
+9
 
-XIX 
 
+XXII
 
-B 
 
+A
 
-1 
 
+2
 
-XX 
 
+XXV
 
-A 
 
+c
 
-4 
 
+3
 
-XXIV 
 
+XV
 
-A 
 
+A
 
-8 
 
+1
 
-XXXIII 
 
+XXIV
 
-B 
 
+A
 
-1 
 
+3
 
-XXII 
 
+XXIX
 
-B 
 
+A
 
 
+1
 
-XXIV 
 
+XXX
 
-B 
 
+B
 
-6 
 
 
-XXII 
 
+VI
 
-C 
 
+A
 
-2 
 
+2
 
-XXVIII 
 
+III
 
-D 
 
+A
 
-1 
 
+1
 
 
-Xenocles: CEdipus 
+XIX
 
 
+B
 
-XVIII 
 
+1
 
 
-A 1 
+XX
 
 
+A
 
-INDEX OF AUTHORS 181 
 
+4
 
 
-Zaccone: La Cellule No. 7 
-Zamacois: Bohemos 
-Zamora: Don Juan 
-Zola: Le Reve 
-" La Debacle 
-" L'Argent 
+XXIV
 
-and 
-Germinal 
-" La Terre 
 
-and 
-Therese Raquin 
+A
 
-and 
-La Bete humaine 
-" L'CEuvre 
 
-La Joie de vivre 
+8
 
-and 
-" La Faute de l'ubbe Mouret 
 
-La Conquete de Hassans 
-" Nana 
+XXXIII
 
-L'Assommoir 
-Le Capitaine Burle 
-" Jacques Damour 
-" Pot-bouille 
-Renee 
-Zola: La ' uree 
-" Dr. Pascal 
 
-Son Excellence Kugene 
-La Fortune des Rougon 
-Le Ven1 re de Paris 
-Madeleine 
-Zorilla: Don Juan 
+B
 
 
+1
 
-ANONYMOUS 
 
+XXII
 
 
-III 
+B
 
 
-B 
 
 
-3 
+XXIV
 
 
-XXIV 
+B
 
 
-A 
+6
 
 
-9 
+XXII
 
 
-V 
+C
 
 
-B 
+2
 
 
+XXVIII
 
 
-I 
+D
 
 
-B 
+1
 
 
-2 
 
+Xenocles: CEdipus
 
-VI 
 
 
-A 
+XVIII
 
 
-1 
 
+A 1
 
-VI 
 
 
-B 
+INDEX OF AUTHORS 181
 
 
 
+Zaccone: La Cellule No. 7
+Zamacois: Bohemos
+Zamora: Don Juan
+Zola: Le Reve
+" La Debacle
+" L'Argent
 
-XVII 
+and
+Germinal
+" La Terre
 
+and
+Therese Raquin
 
-A 
+and
+La Bete humaine
+" L'CEuvre
 
+La Joie de vivre
 
-2 
+and
+" La Faute de l'ubbe Mouret
 
+La Conquete de Hassans
+" Nana
 
-VIII 
+L'Assommoir
+Le Capitaine Burle
+" Jacques Damour
+" Pot-bouille
+Renee
+Zola: La ' uree
+" Dr. Pascal
 
+Son Excellence Kugene
+La Fortune des Rougon
+Le Ven1 re de Paris
+Madeleine
+Zorilla: Don Juan
 
-B 
 
 
-2 
+ANONYMOUS
 
 
-XIII 
 
+III
 
-B 
 
+B
 
-1 
 
+3
 
-XXX 
 
+XXIV
 
-c 
 
+A
 
-1 
 
+9
 
-XV 
 
+V
 
-A 
 
+B
 
-1 
 
 
-XXXIV 
 
+I
 
-A 
 
+B
 
-4 
 
+2
 
-XVI 
 
+VI
 
-A 
 
+A
 
-2 
 
+1
 
-XX 
 
+VI
 
-A 
 
+B
 
-4 
 
 
-XXI 
 
+XVII
 
-A 
 
+A
 
-2 
 
+2
 
-XXIV 
 
+VIII
 
-B 
 
+B
 
-7 
 
+2
 
-XXII 
 
+XIII
 
-A 
 
+B
 
-1 
 
+1
 
-XXII 
 
+XXX
 
-A 
 
+c
 
-2 
 
+1
 
-XXII 
 
+XV
 
-A 
 
+A
 
-6 
 
+1
 
-XXII 
 
+XXXIV
 
-C 
 
+A
 
-2 
 
+4
 
-XX11 
 
+XVI
 
-C 
 
+A
 
-1 
 
+2
 
-X X V 
 
+XX
 
-C 
 
+A
 
-2 
 
+4
 
-XXV 
 
+XXI
 
-(' 
 
+A
 
-7 
 
+2
 
-XXVI 
 
+XXIV
 
-B 
 
+B
 
-2 
 
+7
 
-XXVI 
 
+XXII
 
-B 
 
+A
 
-■ > 
 
+1
 
-XXVI 
 
+XXII
 
-B 
 
+A
 
-•) 
 
+2
 
-XXX 
 
+XXII
 
-(' 
 
+A
 
-1 
 
+6
 
-\\\ 
 
+XXII
 
-C 
 
+C
 
-1 
 
+2
 
-\ win 
 
+XX11
 
-c 
 
+C
 
-2 
 
+1
 
-X X X 1 V 
 
+X X V
 
-B 
 
+C
 
-1 
 
+2
 
-V 
 
+XXV
 
-B 
 
+('
 
 
+7
 
 
-( !hineae: The Sin^t r 
+XXVI
 
 
-ill 
+B
 
 
-\ 
+2
 
 
-1 
+XXVI
 
 
-Hindu 
+B
 
 
-\ narghara-ffhava 
+■ >
 
 
-\ 
+XXVI
 
 
-(' 
+B
 
 
-•> 
+•)
 
 
-i * 
+XXX
 
 
-l >hour1 1 a Narl taka 
+('
 
 
-XXII 
+1
 
 
-\ 
+\\\
 
 
-I 
+C
 
 
-t • 
+1
 
 
-DhoUTl la Sainav;aina 
+\ win
 
 
-\\l\ 
+c
 
 
-\ 
+2
 
 
-l .i 
+X X X 1 V
 
 
-• • 
+B
 
 
-I [anouman 
+1
 
 
-\ 
+V
 
 
-(' 
+B
 
 
-■> 
 
 
-My '■ 
 
+( !hineae: The Sin^t r
 
-i ■. Le M.. tere d'Adam 
 
+ill
 
-VI 
 
+\
 
-A 
 
+1
 
-a 
 
+Hindu
 
-Mirac 
 
+\ narghara-ffhava
 
-l«- Eloberl le-Diable 
 
+\
 
-\ 
 
+('
 
-\ 
 
+•>
 
 
+i *
 
-• « 
 
+l >hour1 1 a Narl taka
 
-Barlaarn el Jo laphal 
 
+XXII
 
-\ 
 
+\
 
-1) 
 
+I
 
-8 
 
+t •
 
-" 
 
+DhoUTl la Sainav;aina
 
-La Mere meutriere de 
 
+\\l\
 
 
+\
 
 
+l .i
 
 
+• •
 
 
+I [anouman
 
-enfanl 
 
+\
 
-XVII 
 
+('
 
-C 
 
+■>
 
-•J 
 
+My '■
 
-» i 
 
+i ■. Le M.. tere d'Adam
 
-Saint Al<-xis 
 
+VI
 
-Xl\ 
 
+A
 
 
+a
 
 
-8 
+Mirac
 
 
-" 
+l«- Eloberl le-Diable
 
 
-Saint [gnace d'Anl ioche 
+\
 
 
-\\ 
+\
 
 
-\ 
 
 
-4 
+• «
 
 
-•• 
+Barlaarn el Jo laphal
 
 
-Guibor 
+\
 
 
-Will 
+1)
 
 
-1! 
+8
 
 
-I 
+"
 
 
-• * 
+La Mere meutriere de
 
 
-L'Empereur Julien 
 
 
-XXXI 
 
 
-\ 
 
 
-• • 
 
 
+enfanl
 
-182 THIRTY-SIX DRAMATIC SITUATIONS 
 
-Miracles: 
+XVII
 
 
+C
 
-La Mere du Pape 
 
+•J
 
-XXXI 
 
+» i
 
-B 
 
+Saint Al<-xis
 
-4 
 
+Xl\
 
-La Fille du roi d'Espagne 
 
 
-XXXII 
 
 
-B 
+8
 
 
-2 
+"
 
 
-Berthe-au-grand-pied 
+Saint [gnace d'Anl ioche
 
 
-XXXV 
+\\
 
 
+\
 
 
+4
 
 
-La Reine aux trois fils 
+••
 
 
-XXXV 
+Guibor
 
 
+Will
 
 
+1!
 
 
-Berthequine 
+I
 
 
-XXXV 
+• *
 
 
+L'Empereur Julien
 
 
+XXXI
 
 
+\
 
-UNIVERSITY OF CALIFORNIA LIBRARY 
 
-Los Angeles 
+• •
 
-This book is DUE on the lapidate stamped below. 
 
 
+182 THIRTY-SIX DRAMATIC SITUATIONS
 
-RE 
+Miracles:
 
-OL OCT 
-UL jui 
 
-art I IBRARV 
 
+La Mere du Pape
 
 
+XXXI
 
-L 006 288 375 6 
 
+B
 
 
+4
 
-AA 000 618 423 8 
 
+La Fille du roi d'Espagne
 
 
-1 
+XXXII
 
 
+B
 
-hi 
 
-I 
+2
 
 
+Berthe-au-grand-pied
 
-#* 
 
+XXXV
 
 
 
-] 
 
 
 
-/ ■ 
+La Reine aux trois fils
 
 
+XXXV
 
-Li 
+
+
+
+
+
+Berthequine
+
+
+XXXV
+
+
+
+
+
+
+
+UNIVERSITY OF CALIFORNIA LIBRARY
+
+Los Angeles
+
+This book is DUE on the lapidate stamped below.
+
+
+
+RE
+
+OL OCT
+UL jui
+
+art I IBRARV
+
+
+
+
+L 006 288 375 6
+
+
+
+
+AA 000 618 423 8
+
+
+
+1
+
+
+
+hi
+
+I
+
+
+
+#*
+
+
+
+
+]
+
+
+
+/ ■
+
+
+
+Li
 
 
 
