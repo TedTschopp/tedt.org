@@ -26,33 +26,9 @@
     <!-- News Feed Meta Tags. -->
     {% include feeds.html %}
 
-    <!-- All CSS -->
     <!-- START OF CSS INCLUDE -->
 
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-          crossorigin="anonymous">
-
-    <!-- TODO: Add Dark Mode Back -->
-
-    <!-- Custom CSS -->
-    {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
-    <link rel="stylesheet"
-          href="css/main-landing-page.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    {% else %}    
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/blog-post.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/web-mention.css">
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/webmention.css" >
-    <link rel="stylesheet"
-          href="{{site.siteurl}}/css/solarized-dark.css" >
-    {% endif %}
-    <!-- END OF CSS INCLUDE -->
+    {% include all-css-includes.html %}
 
     <!-- Custom Fonts -->
     {% include js-fontawsome.html %}

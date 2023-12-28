@@ -1,3 +1,8 @@
+
+    <!-- Fonts:  Consolidate all Fonts here -->
+    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/consolidated-fonts.css">
+
+
     <!-- Bootstrap CSS-->
     {% include css-bootstrap.html %}
 
@@ -7,13 +12,13 @@
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url or full-page-url == "https://tedt.org/bootstrap4-index.html"%}
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/main-landing-page.css">
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/home-page.css">
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/Link-Tree.css">
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/main-landing-page.css">
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/home-page.css">
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/Link-Tree.css">
     {% else %}    
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/blog-post.css">
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/solarized-dark.css" >
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/blog-post.css">
+        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/solarized-dark.css" >
     {% endif %}
 
     <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/web-mention.css">
@@ -24,13 +29,7 @@
         <link href="{{site.siteurl}}/css/draft-blog-post.css" rel="stylesheet">
     {% endif %}
 
-    <!-- Custom Fonts -->
+    <!-- Font Awesome -->
     {% include css-font-awesome.html %}
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-
-    <link rel="preload" href="{{site.siteurl}}/font/UngerFrakturZierbuchstaben.woff22" as="font" type="font/woff2" crossorigin>
 
     {% include css-bootstrap.html %}
