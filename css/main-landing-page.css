@@ -11,28 +11,25 @@ h5,
 h6 {
   font-family: "Optimum",serif;
   font-weight: bold;
-  font-style: italic;
 }
 
 
 
-.DCC 
-    {
-        font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-shadow: -2px -2px 0px #eae221, 
-                      2px  2px 0px #eae221, 
-                      2px -2px 0px #eae221, 
-                     -2px  2px 0px #eae221, 
-                      0px  2px 0px #eae221, 
-                      0px -2px 0px #eae221, 
-                      2px  0px 0px #eae221, 
-                     -2px  0px 0px #eae221;
-                        
-            color: #ff001b;
-    }
+.DCC {
+    font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: -2px -2px 0px #eae221, 
+                  2px  2px 0px #eae221, 
+                  2px -2px 0px #eae221, 
+                 -2px  2px 0px #eae221, 
+                  0px  2px 0px #eae221, 
+                  0px -2px 0px #eae221, 
+                  2px  0px 0px #eae221, 
+                 -2px  0px 0px #eae221;
+                    
+    color: #ff001b;
+}
 
-.MCC 
-   {
+.MCC {
         font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
         text-shadow: -2px -2px 0px #ffe205, 
                       2px  2px 0px #ffe205, 
@@ -42,8 +39,9 @@ h6 {
                       0px -2px 0px #ffe205, 
                       2px  0px 0px #ffe205, 
                      -2px  0px 0px #ffe205; 
-            color: #018249;
-    }
+        color: #018249;
+}
+
 .GammaWorld {
     font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #DC143C; 
@@ -51,8 +49,7 @@ h6 {
     /* color: Crimson */
 }
 
-a:hover .MCC
-{
+a:hover .MCC {
   font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-shadow:  -2px -2px 0px #ffe205, 
                  2px  2px 0px #ffe205, 
@@ -74,8 +71,7 @@ a:hover .MCC
     color: #018249;
 }
 
-a:hover .DCC
-{
+a:hover .DCC {
   font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-shadow: -2px -2px 0px #eae221, 
                 2px  2px 0px #eae221, 
@@ -97,8 +93,7 @@ a:hover .DCC
     color: #ff001b;
 }
 
-a:hover .GammaWorld 
-  {
+a:hover .GammaWorld {
     font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
     text-shadow:   -3px -3px 0px #ff001b, 
@@ -111,9 +106,6 @@ a:hover .GammaWorld
                    -3px  0px 0px #ff001b;
           color: #212529; 
   }
-
-
-
 
 header.masthead {
   position: relative;
@@ -138,7 +130,6 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
-
 header.masthead .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
@@ -147,7 +138,7 @@ header.masthead .intro-divider {
 
 header.masthead .intro-image-avatar {
     border-radius: 50% 50% 50% 50%;
-/*    width: 100px;
+/*  width: 100px;
     height: 100px; */
 }
 
