@@ -274,21 +274,21 @@
                                 {% assign-class-to-add = "" %}
 
                                 {% if category-to-render == "Gurps" %}
-                                    {% assign class-to-add = ".GURPS" %}
+                                    {% assign class-to-add = "GURPS" %}
                                 {% elsif category-to-render == "Dungeons and Dragons" %}
-                                    {% assign class-to-add = ".DnD" %}
+                                    {% assign class-to-add = "DnD" %}
                                 {% elsif category-to-render == "Dungeons Craw Classics" %}
-                                    {% assign class-to-add = ".DCC" %}
+                                    {% assign class-to-add = "DCC" %}
                                 {% elsif category-to-render == "Mutant Craw Classics" %}
-                                    {% assign class-to-add = ".MCC" %}
+                                    {% assign class-to-add = "MCC" %}
                                 {% elsif category-to-render == "Gamma World" %}
-                                    {% assign class-to-add = ".GammaWorld" %}
+                                    {% assign class-to-add = "GammaWorld" %}
                                 {% endif %}
 
                                 {% if category-to-render == page.title %}
                                     {% assign category-to-render = category[0] | prepend: "🔹 " %}
                                 {% else %}
-                                    {% assign category-to-render = category[0] | prepend: "🔸 " %}
+                                    {% assign category-to-render = category[0] | prepend: "&nbsp;  " %}
                                 {% endif %}
                                 <a style="text-decoration: none;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                             </li>

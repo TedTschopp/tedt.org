@@ -8,6 +8,8 @@
     url('https://www.tedt.org/fonts/CHECKBK0.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
@@ -15,36 +17,48 @@
     src: url('https://www.tedt.org/fonts/QTOptimum.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 @font-face {
     font-family: 'Optimum';
     src: url('https://www.tedt.org/fonts/QTOptimum-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 @font-face {
     font-family: 'Optimum';
     src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
+	text-rendering: optimizeLegibility;
+
 }
 @font-face {
     font-family: 'Optimum';
     src: url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
+	text-rendering: optimizeLegibility;
+
 }
 @font-face {
 	font-family: 'Optimum';
 	src: url('https://www.tedt.org/fonts/QTOptimum.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
+	text-rendering: optimizeLegibility;
+
  }
  @font-face {
 	font-family: 'Optimum';
 	src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf') format('opentype');
 	font-weight: 400;
 	font-style: Italic;
+	text-rendering: optimizeLegibility;
+
  }
 
 
@@ -58,6 +72,8 @@
     text-rendering: optimizeLegibility;
     font-variant-numeric: oldstyle-nums ordinal;
     font-feature-settings: "ss01" 1;
+	text-rendering: optimizeLegibility;
+
 }
                
 
@@ -76,12 +92,16 @@
     src: url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 @font-face {
     font-family: 'Fondamento';
     src: url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: Italic;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
@@ -91,6 +111,8 @@
     url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
@@ -99,6 +121,8 @@
     url('https://www.tedt.org/fonts/IrwinAllen.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
@@ -108,6 +132,8 @@
     url('https://www.tedt.org/fonts/lp1-regular-webfont.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
@@ -116,6 +142,8 @@
     url('https://www.tedt.org/fonts/lowwe.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+
 }
 
 @font-face {
