@@ -91,6 +91,7 @@ a:hover .MCC {
 }
 .GURPS {
 	font-family: "Egyptienne MN Condensed Bold",serif;
+    text-transform: uppercase;
 }
 .LotR {
 	font-family: "Ringbearer",serif;

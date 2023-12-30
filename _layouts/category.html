@@ -275,11 +275,11 @@
 
                                 {% if category-to-render == "Gurps" %}
                                     {% assign class-to-add = "GURPS" %}
-                                {% elsif category-to-render == "Dungeons and Dragons" %}
+                                {% elsif category-to-render == "Dungeons & Dragons" %}
                                     {% assign class-to-add = "DnD" %}
-                                {% elsif category-to-render == "Dungeons Craw Classics" %}
+                                {% elsif category-to-render == "Dungeons Crawl Classics" %}
                                     {% assign class-to-add = "DCC" %}
-                                {% elsif category-to-render == "Mutant Craw Classics" %}
+                                {% elsif category-to-render == "Mutant Crawl Classics" %}
                                     {% assign class-to-add = "MCC" %}
                                 {% elsif category-to-render == "Gamma World" %}
                                     {% assign class-to-add = "GammaWorld" %}
@@ -288,11 +288,12 @@
                                 {% endif %}
 
                                 {% if category-to-render == page.title %}
-                                    {% assign category-to-render = category[0] | prepend: "🔹 " %}
+                                    {% assign prepend-category-to-render = "🔹 " %}
                                 {% else %}
-                                    {% assign category-to-render = category[0] | prepend: "&nbsp;  " %}
+                                    {% assign prepend-category-to-render = "&nbsp;  " %}
                                 {% endif %}
-                                <a style="text-decoration: none;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+                                <a style="text-decoration: none;" class="{{class-to-add}}" href="{{category[0]}}">{{prepend-category-to-render}}{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+                                {% assign-class-to-add = "" %}
                             </li>
                           {% endfor %}
                         </ul>
