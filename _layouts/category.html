@@ -287,12 +287,7 @@
                                     {% assign class-to-add = "LotR" %}
                                 {% endif %}
 
-                                {% if category-to-render == page.title %}
-                                    {% assign prepend-category-to-render = "🔹 " %}
-                                {% else %}
-                                    {% assign prepend-category-to-render = "&nbsp;  " %}
-                                {% endif %}
-                                <a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" href="{{category[0]}}">{{prepend-category-to-render}}{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+                                <a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                                 {% assign class-to-add = "" %}
                             </li>
                           {% endfor %}
