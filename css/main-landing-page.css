@@ -1,4 +1,22 @@
-   .DCC 
+body {
+  font-family: 'Libre Franklin', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Optimum",serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.DCC 
     {
         font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
         text-shadow: -2px -2px 0px #eae221, 
@@ -13,7 +31,7 @@
             color: #ff001b;
     }
 
-   .MCC 
+.MCC 
    {
         font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
         text-shadow: -2px -2px 0px #ffe205, 
@@ -33,50 +51,50 @@
     /* color: Crimson */
 }
 
-    a:hover .MCC
-    {
-      font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-shadow:  -2px -2px 0px #ffe205, 
-                     2px  2px 0px #ffe205, 
-                     2px -2px 0px #ffe205, 
-                    -2px  2px 0px #ffe205, 
-                     0px  2px 0px #ffe205, 
-                     0px -2px 0px #ffe205, 
-                     2px  0px 0px #ffe205, 
-                    -2px  0px 0px #ffe205, 
-                      
-                   -3px -3px 0px #018249, 
-                    3px  3px 0px #018249,
-                    3px -3px 0px #018249, 
-                   -3px  3px 0px #018249, 
-                    0px  3px 0px #018249, 
-                    0px -3px 0px #018249, 
-                    3px  0px 0px #018249, 
-                   -3px  0px 0px #018249;
-            color: #018249;
-  }
+a:hover .MCC
+{
+  font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-shadow:  -2px -2px 0px #ffe205, 
+                 2px  2px 0px #ffe205, 
+                 2px -2px 0px #ffe205, 
+                -2px  2px 0px #ffe205, 
+                 0px  2px 0px #ffe205, 
+                 0px -2px 0px #ffe205, 
+                 2px  0px 0px #ffe205, 
+                -2px  0px 0px #ffe205, 
+                  
+               -3px -3px 0px #018249, 
+                3px  3px 0px #018249,
+                3px -3px 0px #018249, 
+               -3px  3px 0px #018249, 
+                0px  3px 0px #018249, 
+                0px -3px 0px #018249, 
+                3px  0px 0px #018249, 
+               -3px  0px 0px #018249;
+    color: #018249;
+}
 
-  a:hover .DCC
-  {
-    font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-shadow:  -2px -2px 0px #eae221, 
-                   2px  2px 0px #eae221, 
-                   2px -2px 0px #eae221, 
-                  -2px  2px 0px #eae221, 
-                   0px  2px 0px #eae221, 
-                   0px -2px 0px #eae221, 
-                   2px  0px 0px #eae221, 
-                  -2px  0px 0px #eae221, 
-                    
-                 -3px -3px 0px #ff001b, 
-                  3px  3px 0px #ff001b,
-                  3px -3px 0px #ff001b, 
-                 -3px  3px 0px #ff001b, 
-                  0px  3px 0px #ff001b, 
-                  0px -3px 0px #ff001b, 
-                  3px  0px 0px #ff001b, 
-                 -3px  0px 0px #ff001b;
-          color: #ff001b;
+a:hover .DCC
+{
+  font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-shadow: -2px -2px 0px #eae221, 
+                2px  2px 0px #eae221, 
+                2px -2px 0px #eae221, 
+               -2px  2px 0px #eae221, 
+                0px  2px 0px #eae221, 
+                0px -2px 0px #eae221, 
+                2px  0px 0px #eae221, 
+               -2px  0px 0px #eae221, 
+                  
+               -3px -3px 0px #ff001b, 
+                3px  3px 0px #ff001b,
+                3px -3px 0px #ff001b, 
+               -3px  3px 0px #ff001b, 
+                0px  3px 0px #ff001b, 
+                0px -3px 0px #ff001b, 
+                3px  0px 0px #ff001b, 
+               -3px  0px 0px #ff001b;
+    color: #ff001b;
 }
 
 a:hover .GammaWorld 
@@ -96,33 +114,6 @@ a:hover .GammaWorld
 
 
 
-
-body {
-  font-family: 	'Libre Franklin', sans-serif;
-  font-weight: 200;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 2rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Optimum",serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 2rem;
-}
 
 header.masthead {
   position: relative;
