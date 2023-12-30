@@ -271,13 +271,13 @@
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
                                 {% assign category-to-render = category[0] %}
-                                {% assign-class-to-add = "" %}
+                                {% assign class-to-add = "" %}
 
                                 {% if category-to-render == "Gurps" %}
                                     {% assign class-to-add = "GURPS" %}
                                 {% elsif category-to-render == "Dungeons & Dragons" %}
                                     {% assign class-to-add = "DnD" %}
-                                {% elsif category-to-render == "Dungeons Crawl Classics" %}
+                                {% elsif category-to-render == "Dungeon Crawl Classics" %}
                                     {% assign class-to-add = "DCC" %}
                                 {% elsif category-to-render == "Mutant Crawl Classics" %}
                                     {% assign class-to-add = "MCC" %}
@@ -293,7 +293,7 @@
                                     {% assign prepend-category-to-render = "&nbsp;  " %}
                                 {% endif %}
                                 <a style="text-decoration: none;" class="{{class-to-add}}" href="{{category[0]}}">{{prepend-category-to-render}}{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
-                                {% assign-class-to-add = "" %}
+                                {% assign class-to-add = "" %}
                             </li>
                           {% endfor %}
                         </ul>
