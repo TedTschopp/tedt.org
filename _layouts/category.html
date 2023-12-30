@@ -267,7 +267,7 @@
                     <div class="post-categories">
                         <h4>All Categories</h4>
                         <ul>
-                          {% assign sorted_categories = site.categories | sort %}
+                            {% assign sorted_categories = site.categories | sort %}
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
                                 {% assign category-to-render = category[0] %}
@@ -283,6 +283,8 @@
                                     {% assign class-to-add = "MCC" %}
                                 {% elsif category-to-render == "Gamma World" %}
                                     {% assign class-to-add = "GammaWorld" %}
+                                {% elsif category-to-render == "Middle-earth" %}
+                                    {% assign class-to-add = "LotR" %}
                                 {% endif %}
 
                                 {% if category-to-render == page.title %}
