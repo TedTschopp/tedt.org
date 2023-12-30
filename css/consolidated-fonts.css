@@ -228,3 +228,34 @@
   
 
  
+@font-face {
+	font-family: 'Quentin';
+	src: url('https://www.tedt.org/fonts/QUENCRG_.TTF') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+
+ @font-face {
+	font-family: 'Souvenir Demi';
+	src: url('https://www.tedt.org/fonts/Souvenir Demi.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+
+ @font-face {
+	font-family: 'Egyptienne MN Condensed Bold';
+	src: url('https://www.tedt.org/fonts/Egyptienne MN Condensed Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+ @font-face {
+	font-family: 'Ringbearer';
+	src: url('https://www.tedt.org/fonts/RINGM___.TTF') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+ 

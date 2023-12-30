@@ -1,0 +1,114 @@
+.DCC {
+	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: -2px -2px 0px #eae221, 
+				2px  2px 0px #eae221, 
+				2px -2px 0px #eae221, 
+				-2px  2px 0px #eae221, 
+				0px  2px 0px #eae221, 
+				0px -2px 0px #eae221, 
+				2px  0px 0px #eae221, 
+				-2px  0px 0px #eae221;
+				
+	color: #ff001b;
+}
+a:hover .DCC {
+    font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow:-2px -2px 0px #eae221, 
+            2px  2px 0px #eae221, 
+            2px -2px 0px #eae221, 
+            -2px  2px 0px #eae221, 
+            0px  2px 0px #eae221, 
+            0px -2px 0px #eae221, 
+            2px  0px 0px #eae221, 
+            -2px  0px 0px #eae221, 
+                
+            -3px -3px 0px #ff001b, 
+            3px  3px 0px #ff001b,
+            3px -3px 0px #ff001b, 
+            -3px  3px 0px #ff001b, 
+            0px  3px 0px #ff001b, 
+            0px -3px 0px #ff001b, 
+            3px  0px 0px #ff001b, 
+            -3px  0px 0px #ff001b;
+        color: #ff001b;
+ }
+
+.MCC {
+	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: -2px -2px 0px #ffe205, 
+				2px  2px 0px #ffe205, 
+				2px -2px 0px #ffe205, 
+				-2px  2px 0px #ffe205, 
+				0px  2px 0px #ffe205, 
+				0px -2px 0px #ffe205, 
+				2px  0px 0px #ffe205, 
+				-2px  0px 0px #ffe205; 
+	color: #018249;
+}
+a:hover .MCC {
+    font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow:  -2px -2px 0px #ffe205, 
+                2px  2px 0px #ffe205, 
+                2px -2px 0px #ffe205, 
+               -2px  2px 0px #ffe205, 
+                0px  2px 0px #ffe205, 
+                0px -2px 0px #ffe205, 
+                2px  0px 0px #ffe205, 
+               -2px  0px 0px #ffe205, 
+                 
+              -3px -3px 0px #018249, 
+               3px  3px 0px #018249,
+               3px -3px 0px #018249, 
+              -3px  3px 0px #018249, 
+               0px  3px 0px #018249, 
+               0px -3px 0px #018249, 
+               3px  0px 0px #018249, 
+              -3px  0px 0px #018249;
+         color: #018249;
+ }
+
+
+ .GammaWorld {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #DC143C; 
+	font-weight: bold;
+	/* color: Crimson */
+ }
+ a:hover .GammaWorld {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	text-shadow: -3px -3px 0px #ff001b, 
+				  3px  3px 0px #ff001b,
+				  3px -3px 0px #ff001b, 
+				 -3px  3px 0px #ff001b, 
+				  0px  3px 0px #ff001b, 
+				  0px -3px 0px #ff001b, 
+				  3px  0px 0px #ff001b, 
+				 -3px  0px 0px #ff001b;
+	color: #212529; 
+}
+.DnD {
+	font-family: "Quentin", "Souvenir Demi",serif;
+}
+.GURPS {
+	font-family: "Egyptienne MN Condensed Bold",serif;
+}
+.LotR {
+	font-family: "Ringbearer",serif;
+}
+
+
+ @font-face {
+	font-family: 'Egyptienne MN Condensed Bold';
+	src: url('https://www.tedt.org/fonts/Egyptienne MN Condensed Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+ @font-face {
+	font-family: 'Ringbearer';
+	src: url('https://www.tedt.org/fonts/RINGM___.TTF') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
