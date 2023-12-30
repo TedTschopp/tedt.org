@@ -290,7 +290,7 @@
                                 {% else %}
                                     {% assign category-to-render = category[0] | prepend: "🔸 " %}
                                 {% endif %}
-                                <a style="text-decoration: none;" class="{{assign-class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+                                <a style="text-decoration: none;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                             </li>
                           {% endfor %}
                         </ul>
