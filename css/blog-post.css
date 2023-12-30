@@ -4,9 +4,37 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
 body {
+	font-family: 'Libre Franklin', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 200;
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: 'Libre Franklin', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 2rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+	  font-family: "Optimum",serif;
+	  font-weight: bold;
+	  font-style: italic;
+	  font-size: 2rem;
+  }
+  
+
+
 
 footer {
     margin: 50px 0;
