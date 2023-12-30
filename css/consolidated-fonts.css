@@ -2,10 +2,7 @@
 
 @font-face {
     font-family: 'Checkbook';
-    src: url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/CHECKBK0.woff') format('woff'),
-    url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/CHECKBK0.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/CHECKBK0.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -286,4 +283,25 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
- 
+
+ @font-face {
+	font-family: 'IM Fell English';
+	src: url('https://www.tedt.org/fonts/FeENrm2.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }
+ @font-face {
+	font-family: 'IM Fell English';
+	src: url('https://www.tedt.org/fonts/FeENsc2.ttf') format('truetype');
+	font-style: normal;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+ }
+ @font-face {
+	font-family: 'IM Fell English';
+	src: url('https://www.tedt.org/fonts/FeENit2.ttf') format('truetype');
+	font-style: italic;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+ }

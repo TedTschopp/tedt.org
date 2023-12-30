@@ -285,8 +285,9 @@
                                     {% assign class-to-add = "GammaWorld" %}
                                 {% elsif category-to-render == "Middle-earth" %}
                                     {% assign class-to-add = "LotR" %}
+                                {% elsif category-to-render == "Middle-earth" %}
+                                    {% assign class-to-add = "Marchen" %}
                                 {% endif %}
-
                                 <a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
                                 {% assign class-to-add = "" %}
                             </li>
