@@ -3,6 +3,10 @@
         color: #000;
     }
 
+    a {
+        color: #000055;
+    }
+
     .tech-v h1 {
         font-family: 'IrwinAllen';
         line-height: 1.2;
