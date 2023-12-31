@@ -1,37 +1,36 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en" data-bs-theme="light">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta charset="utf-8">
 
-    {% include calculate-variables.html %}
+     {% include calculate-variables.html %}
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="HandheldFriendly" content="True">
+     <meta name="MobileOptimized" content="320">
+ 
+     <!-- IndieAuth and WebMentions Metadata -->
+     {% include indieauth-and-webmentions-metadata.html %}
+ 
+     <!-- SEO Metadata -->
+     {% include meta-data-seo.html %}
+ 
+     <!-- PWA Header Includes -->
+     {% include pwa-header-includes.html %}
+ 
+     <!-- News Feed Meta Tags. -->
+     {% include feeds.html %}
+ 
+     <!-- START OF CSS INCLUDE -->
+ 
+     {% include all-css-includes.html %}
+ 
+     <!-- END OF CSS INCLUDE -->
+ 
+     <!-- Scripts that need to be at the end of the header -->
+     {% include scripts.html %}
 
-
-     {% if page.description != "" %}
-        {% assign SEO-description = page.description %}
-     {% else %}
-          {% if page.new_description != "" %}
-               {% assign SEO-description = page.new_description %}
-          {% else %}
-               {% assign SEO-description = "A creature from the Gamma World Bestiary - Description pending data entry " %}
-          {% endif %}
-     {% endif %}
-
-    <!-- SEO Metadata -->
-    {% include meta-data-seo.html %}
-
-    <!-- All CSS -->
-    {% include all-css-includes.html %}
-
-    <!-- Scripts that need to be at the end of the header -->
-    {% include scripts.html %}
-
-    <!-- Twitter Meta Tags. -->
-    {% include twitter-card-metadata.jekyll %}
-
-    <title>{page.title}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://tedt.org/css/gamma-world-cards.css" rel="stylesheet">
 
     <style type="text/css">
