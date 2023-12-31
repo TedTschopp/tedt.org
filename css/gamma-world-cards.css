@@ -37,7 +37,7 @@
 
     td#papermargin_left,
     td#papermargin_right {
-        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin.png);
+        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.png);
         background-repeat: repeat-y;
         width: 33px;
         min-width: 33px;
@@ -52,12 +52,11 @@
         font-weight: 400;
         background-color: white;
         padding: 57px 18px 1px 18px;
-        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper.png);
+        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-dark.png);
         background-repeat: repeat;
         text-shadow: 0 0 1px rgba(115, 115, 121, 0.6), 0 0 4px rgba(115, 115, 121, 0.3);
     }
 
-/*
 #gw--gradient {
     position: fixed;
     width: 100vw;
@@ -122,7 +121,6 @@
     }
 }
 
-*/
 
 
 
@@ -130,44 +128,4 @@
         font-family: lp1_regular, "Trebuchet MS", sans-serif;
     }
 
-    .GameEmpire {
-        font-family: "GameEmpire", serif;
-        color: #FFFFFF;
-        text-shadow: -3px -3px 3px #FF0000, 
-                      3px  3px 3px #FF0000,
-                      3px -3px 3px #FF0000, 
-                     -3px  3px 3px #FF0000, 
-                      0px  3px 3px #FF0000, 
-                      0px -3px 3px #FF0000, 
-                      3px  0px 3px #FF0000, 
-                     -3px  0px 3px #FF0000;
-    }
-    .MCC 
-    {
-        font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-shadow: -4px -4px 0px #ffe205, 
-                      4px  4px 0px #ffe205, 
-                      4px -4px 0px #ffe205, 
-                     -4px  4px 0px #ffe205, 
-                      0px  4px 0px #ffe205, 
-                      0px -4px 0px #ffe205, 
-                      4px  0px 0px #ffe205, 
-                     -4px  0px 0px #ffe205, 
-                        
-                     -6px -6px 0px #018249, 
-                      6px  6px 0px #018249,
-                      6px -6px 0px #018249, 
-                     -6px  6px 0px #018249, 
-                      0px  6px 0px #018249, 
-                      0px -6px 0px #018249, 
-                      6px  0px 0px #018249, 
-                     -6px  0px 0px #018249;
-            color: #018249;
-    }
-
-    .GammaWorld {
-        font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
-        color: #DC143C; 
-        font-weight: bold;
-    }
     pre#ascii-container-image { font: bold 8px/5px monospace; color: #000; clear: left; }
