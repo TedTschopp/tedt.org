@@ -30,40 +30,6 @@
     <link rel="stylesheet" href="{{site.siteurl}}/mastodon/mastodon-timeline.css">
     <script src='{{site.siteurl}}/mastodon/mastodon-timeline.js'></script>
 
-
-    <style>
-      .Dohring-watermark, .TORC-watermark, .SCE-watermark {
-        position: relative;
-        z-index: 1;
-      }
-
-      .Dohring-watermark::before, .TORC-watermark::before, .SCE-watermark::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.1;
-        z-index: -1;
-      }
-
-      .Dohring-watermark::before {
-          background: url({{site.siteurl}}/img/home/logo-Dohring.png) no-repeat center center;
-          background-size: 50% ; /* or contain */
-      }
-
-      .TORC-watermark::before {
-          background: url({{site.siteurl}}/img/home/logo-TORC.png) no-repeat center center;
-          background-size: contain ; /* or contain */
-      }
-
-      .SCE-watermark::before {
-          background: url({{site.siteurl}}/img/home/logo-SCE.png) no-repeat center center;
-          background-size: 50% ; /* or contain */
-      }
-    </style>
-
     <!-- END OF CSS INCLUDE -->
 
     <!-- Scripts that need to be at the end of the header -->
