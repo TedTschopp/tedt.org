@@ -7,12 +7,19 @@
         color: #000055;
     }
 
+
+
+
     .tech-v h1 {
         font-family: 'IrwinAllen';
         line-height: 1.2;
     }
 
     .tech-v h2 {
+        font-family: 'IrwinAllen';
+    }
+
+    .tech-v h3 {
         font-family: 'lowwe';
     }
 
