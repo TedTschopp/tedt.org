@@ -1,0 +1,60 @@
+{% case include.category %}
+  {% when "Bestiary" %}
+    {% assign class-to-add = "Bestiary" %}
+  {% when "Books" %}
+    {% assign class-to-add = "Books" %}
+  {% when "Communications" %}
+    {% assign class-to-add = "Communications" %}
+  {% when "Computers" %}
+    {% assign class-to-add = "Computers" %}
+  {% when "Draft" %}
+    {% assign class-to-add = "Draft-Post" %}
+  {% when "Dungeon Crawl Classics" %}
+    {% assign class-to-add = "DCC" %}
+  {% when "Dungeons & Dragons" %}
+    {% assign class-to-add = "DnD" %}
+  {% when "Folklore" %}
+    {% assign class-to-add = "Folklore" %}
+  {% when "Gamma World" %}
+    {% assign class-to-add = "GammaWorld" %}
+  {% when "GURPS" or "Gurps" %}
+    {% assign class-to-add = "GURPS" %}
+  {% when "Home" %}
+    {% assign class-to-add = "Home" %}
+  {% when "Maps" %}
+    {% assign class-to-add = "Maps" %}
+  {% when "Middle-earth" %}
+    {% assign class-to-add = "LotR" %}
+  {% when "Mobile" %}
+    {% assign class-to-add = "Mobile" %}
+  {% when "Monsters" %}
+    {% assign class-to-add = "Monsters" %}
+  {% when "Movies" %}
+    {% assign class-to-add = "Movies" %}
+  {% when "Mutant Crawl Classics" %}
+    {% assign class-to-add = "MCC" %}
+  {% when "Personal Writing" %}
+    {% assign class-to-add = "Personal-Writing" %}
+  {% when "Projects" %}
+    {% assign class-to-add = "Projects" %}
+  {% when "Quotes" %}
+    {% assign class-to-add = "Quotes" %}
+  {% when "Religion" %}
+    {% assign class-to-add = "Religion" %}
+  {% when "Reprint" %}
+    {% assign class-to-add = "Reprint" %}
+  {% when "Role Playing Games" %}
+    {% assign class-to-add = "RPGS" %}
+  {% when "Science" %}
+    {% assign class-to-add = "Science" %}
+  {% when "The Märchen Engine" %}
+    {% assign class-to-add = "marchen" %}
+  {% when "Philosophy" %}
+    {% assign class-to-add = "Philosophy" %}
+  {% when "Opinion" %}
+    {% assign class-to-add = "Opinion" %}
+  {% else %}
+    <!-- Output something else if the category doesn't match -->
+{% endcase %}
+
+<a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
