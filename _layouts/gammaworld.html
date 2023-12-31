@@ -59,7 +59,7 @@
                               <pre id="ascii-container-image"></pre>
                          </figure>
                          -->
-                         
+
                          {% if page.title != "" %}
                               <h1 class="MCC">{{ page.title }}</h1>
                          {% endif %}
@@ -79,7 +79,7 @@
                                    "System Notice: Reporter Data Inaccessible - Due to an unknown error, the 'Reported by' information for this creature is inaccessible at this time. Please try accessing this data at a later time or refer to backup archives if available."
                                    ] %}
                                    
-                                   {% assign seed = page.title | hash %}
+                                   {% assign seed = page.title | hash %}{{seed}}
                                    {% assign selectedAnswer = answers | sample: seed %}
                                    
                                    {{ selectedAnswer }}
