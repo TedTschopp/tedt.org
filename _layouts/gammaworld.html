@@ -79,8 +79,7 @@
                                    "System Notice: Reporter Data Inaccessible - Due to an unknown error, the 'Reported by' information for this creature is inaccessible at this time. Please try accessing this data at a later time or refer to backup archives if available."
                                    ] %}
                                    
-                                   {% assign seed = page.title | hash %}{{seed}}
-                                   {% assign selectedAnswer = answers | sample: seed %}
+                                   {% assign selectedAnswer = answers | sample %}
                                    
                                    {{ selectedAnswer }}
 
@@ -99,8 +98,7 @@
                                    "System Notice: Unable to Access Document Data - We are currently unable to access the Original Source Document for this creature. The file may have been deleted, corrupted, or not properly linked in our database."
                                    ] %}
                                    
-                                   {% assign seed = page.title | hash %}
-                                   {% assign selectedAnswer = answers | sample: seed %}
+                                   {% assign selectedAnswer = answers | sample %}
                                    
                                    {{ selectedAnswer }}
                          {% endif %}
