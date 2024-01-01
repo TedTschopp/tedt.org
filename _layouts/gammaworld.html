@@ -72,11 +72,11 @@
                               <strong>Reported By:</strong>
                               
                               {% assign answers = [
-                                   "Error 404: Reporter Data Unavailable - We're unable to retrieve the 'Reported by' information for this creature. This data may be corrupted or missing from our records.",
-                                   "Data Retrieval Failure: Unknown Reporter - The 'Reported by' field for this creature cannot be located. It is possible that this information was lost due to data degradation over time.",
-                                   "Warning: Reporter Identity Not Found - Attention: The identity of the individual or entity who reported this creature is currently unavailable in our database.",
-                                   "Incomplete Record Alert: Reporter Information Missing - This creature's record is incomplete. The 'Reported by' field is missing and might have been lost in system errors or data purges.",
-                                   "System Notice: Reporter Data Inaccessible - Due to an unknown error, the 'Reported by' information for this creature is inaccessible at this time. Please try accessing this data at a later time or refer to backup archives if available."
+                                   "_Error 404: Reporter Data Unavailable_ - We're unable to retrieve the 'Reported by' information for this creature. This data may be corrupted or missing from our records.",
+                                   "_Data Retrieval Failure: Unknown Reporter_ - The 'Reported by' field for this creature cannot be located. It is possible that this information was lost due to data degradation over time.",
+                                   "_Warning: Reporter Identity Not Found_ - Attention: The identity of the individual or entity who reported this creature is currently unavailable in our database.",
+                                   "_Incomplete Record Alert: Reporter Information Missing_ - This creature's record is incomplete. The 'Reported by' field is missing and might have been lost in system errors or data purges.",
+                                   "_System Notice: Reporter Data Inaccessible_ - Due to an unknown error, the 'Reported by' information for this creature is inaccessible at this time. Please try accessing this data at a later time or refer to backup archives if available."
                                    ] %}
                                    
                                    {% assign selectedAnswer = answers | sample %}
@@ -88,14 +88,13 @@
                               in {{ page.source }}
                          {% else %}
                               in
-
                               {% assign answers = [
 
-                                   "Error 503: Source Document Not Found - The Original Source Document for this creature is currently unavailable. It may have been misplaced, lost, or never uploaded to our database.",
-                                   "Document Retrieval Error: Blank Entry Detected - There appears to be a blank entry in the 'Original Source Document' field. This could indicate a data input error or a missing document.",
-                                   "Alert: Source Document Absent - No Original Source Document can be found for this creature. This information may have been lost due to data decay or archival issues.",
-                                   "Record Inconsistency Warning: Missing Document Information - Warning: The record for this creature is inconsistent due to the absence of the Original Source Document. Please consult alternative data sources for more information.",
-                                   "System Notice: Unable to Access Document Data - We are currently unable to access the Original Source Document for this creature. The file may have been deleted, corrupted, or not properly linked in our database."
+                                   "_Error 503: Source Document Not Found_ - The Original Source Document for this creature is currently unavailable. It may have been misplaced, lost, or never uploaded to our database.",
+                                   "_Document Retrieval Error: Blank Entry Detected_ - There appears to be a blank entry in the 'Original Source Document' field. This could indicate a data input error or a missing document.",
+                                   "_Alert: Source Document Absent_ - No Original Source Document can be found for this creature. This information may have been lost due to data decay or archival issues.",
+                                   "_Record Inconsistency Warning: Missing Document Information_ - Warning: The record for this creature is inconsistent due to the absence of the Original Source Document. Please consult alternative data sources for more information.",
+                                   "_System Notice: Unable to Access Document Data_ - We are currently unable to access the Original Source Document for this creature. The file may have been deleted, corrupted, or not properly linked in our database."
                                    ] %}
                                    
                                    {% assign selectedAnswer = answers | sample %}
