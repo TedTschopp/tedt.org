@@ -56,12 +56,12 @@
         <a name="link-tree"></a>
         <div class="row g-0">
           <div class="col-lg-6 text-white showcase-img my-auto align-middle" ><img src="/img/home/Social-Media-tree.jpg" class="img-responsive img-thumbnail" alt="Photo by Alexander Shatov on Unsplash - https://unsplash.com/@alexbemore"></div>
-            <div class="col-lg-6 my-auto showcase-text align-middle">
-              <h2>Elsewhere Online</h2>
-              <p class="lead mb-0">A collection of links to my other places around the internet.</p>
-              <div id="teds-fixing"><span id="social-links">{% include link-tree.html %}</span></div>
-            </div>
+          <div class="col-lg-6 my-auto showcase-text align-middle">
+            <h2>Elsewhere Online</h2>
+            <p class="lead mb-0">A collection of links to my other places around the internet.</p>
+            <div id="teds-fixing"><span id="social-links">{% include link-tree.html %}</span></div>
           </div>
+        </div>
         <a name="blog"></a>
         <div class="row g-0">
 <!--      <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle">
@@ -74,7 +74,6 @@
               <p class="lead mb-0">This blog is my journey exploring the intersection of technology, theology, and creativity, where readers engage in discussions about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling, all viewed through a unique, humorous, and contemplative lens.</p>
             </div>
           </div>
-
 
           <div class="col-lg-6 order-lg-1 my-auto showcase-text align-middle">
             <ul>
@@ -113,6 +112,31 @@
           </div>
         </div>
         <a name="Folklore"></a>
+        <div class="row g-0 position-relative">
+          <img src="https://tedt.org/img/home/Folklore.jpg" class="img-responsive img-thumbnail col-lg-6" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics">
+          <div class="col-lg-6 position-absolute top-0 end-0 text-white text-end p-3" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+            <h2>Swiss Folklore</h2>
+            <p class="lead mb-0">A collection of Swiss Folklore stories I am translating and posting here.  I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
+            <ul>
+            {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
+            {% for post in posts-drafts limit:3 %}
+              <li class="list-unstyled">
+                <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
+                {% if post.teaser %}
+                  <p>{{ post.teaser }}</p>
+                {% elsif post.description %}
+                  <p>{{ post.description   }}</p>
+                {% else %}
+                  <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
+                {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+ 
+        <!--
+        <a name="Folklore"></a>
         <div class="row g-0">
           <div class="col-lg-6 text-white showcase-img my-auto align-middle" ><img src="https://tedt.org/img/home/Folklore.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"></div>
           <div class="col-lg-6 my-auto showcase-text align-middle">
@@ -134,7 +158,10 @@
             {% endfor %}
             </ul>
           </div>
-        </div>
+        </div> -->
+ 
+ 
+ 
         <a name="draft"></a>
         <div class="row g-0">
           <div class="col-lg-6 order-lg-2 text-white showcase-img my-auto align-middle" ><img src="https://tedt.org/img/home/table.jpg" class="img-responsive img-thumbnail" alt="OSR Role Playing Game Dice by Jim Wampler https://www.facebook.com/mudpuppycomics"></div>
