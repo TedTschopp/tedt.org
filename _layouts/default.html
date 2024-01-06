@@ -109,25 +109,25 @@
           <a name="Folklore"></a>
           <div class="col-lg-4 position-relative">
             <img src="https://tedt.org/img/home/Folklore.jpg" class="img-fluid" alt="Folklore ">
-          </div>
-          <div class="position-absolute top-0 start-0 text-white p-3" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
-            <h2>Swiss Folklore</h2>
-            <p class="lead mb-0">A collection of Swiss Folklore stories I am translating and posting here.  I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
-            <ul>
-            {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
-            {% for post in posts-drafts limit:3 %}
-              <li class="list-unstyled">
-                <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
-                {% if post.teaser %}
-                  <p>{{ post.teaser }}</p>
-                {% elsif post.description %}
-                  <p>{{ post.description   }}</p>
-                {% else %}
-                  <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
-                {% endif %}
-              </li>
-            {% endfor %}
-            </ul>
+            <div class="position-absolute top-0 start-0 text-white p-3" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+              <h2>Swiss Folklore</h2>
+              <p class="lead mb-0">A collection of Swiss Folklore stories I am translating and posting here.  I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
+              <ul>
+              {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
+              {% for post in posts-drafts limit:3 %}
+                <li class="list-unstyled">
+                  <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
+                  {% if post.teaser %}
+                    <p>{{ post.teaser }}</p>
+                  {% elsif post.description %}
+                    <p>{{ post.description   }}</p>
+                  {% else %}
+                    <p>{{ post.excerpt |truncate html | truncatewords: 20 }}</p>
+                  {% endif %}
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
           </div>
 
           <a name="draft"></a>
