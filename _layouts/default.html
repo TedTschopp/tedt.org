@@ -72,6 +72,40 @@
             <div class="position-absolute top-0 start-0 text-white p-30" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
               <h2>Blog</h2>
               <p class="lead mb-0">This blog is my journey exploring the intersection of technology, theology, and creativity, where readers engage in discussions about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling, all viewed through a unique, humorous, and contemplative lens.</p>
+              <ul>
+                {% assign count = 0 %}
+                {% for post in site.posts %}
+                    {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "Draft" or post.category == "Draft" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "Quotes" or post.category == "Quotes" or post.layout contains "quotes" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.categories contains "Home" or post.category == "Home" %}
+                        <!-- Do Nothing -->
+                    {% elsif post.layout contains "micropubpost" %}
+                        <!-- Do Nothing -->
+                    {% else %}
+                        {% assign count = count | plus: 1 %}
+                        {% if count > 3 %}
+                            {% break %}
+                        {% endif %}
+                      <li class="list-unstyled">
+                        <h4><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
+                        {% if post.teaser %}
+                          <p>{{ post.teaser }}</p>
+                        {% elsif post.description %}
+                          <p>{{ post.description  }}</p>
+                        {% else %}
+                          <p>{{ post.excerpt |truncate html | truncatewords: 20}}</p>
+                        {% endif %}
+                      </li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+
             </div>
           </div>
 
