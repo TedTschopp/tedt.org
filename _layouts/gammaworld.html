@@ -106,7 +106,21 @@
                          {% if page.role_in_gamma_world != "" %}
                               <p><strong>Role:</strong> {{ page.role_in_gamma_world }}
                          {% else %}
-                              <p><strong>Role:</strong> Unknown
+                              <p><strong>Role:</strong> 
+
+                                   {% assign answers = [
+                                   "_Error 410: Ecological Role Data Gone_ - The 'Roles in the World/Biome' information for this creature is missing. This data may have been permanently lost or was never recorded."
+                                   "_Data Integrity Issue: Role Information Unavailable_ - We are experiencing an issue accessing the ecological role data for this creature. The 'Roles in the World/Biome' field is currently unavailable due to potential data corruption."
+                                   "_Warning: Missing Biome Role Details_ - Attention: The details regarding this creature's role in its world or biome are missing. This could be due to incomplete data collection or loss over time."
+                                   "_Record Incompletion Notice: Role in Ecosystem Not Specified_ - This creature's database entry is incomplete. The 'Roles in the World/Biome' field has not been specified and may have been omitted during data entry."
+                                   "_System Retrieval Failure: Ecological Data Not Found_ - There is a failure in retrieving the ecological role information for this creature. The 'Roles in the World/Biome' data is either not present or inaccessible in our current system."
+                                   ] %}
+                                   
+                                   {% assign selectedAnswer = answers | sample %}
+                                   
+                                   {{ selectedAnswer }}
+
+
                          {% endif %}</br>
                          {% if page.base_stock != "" %}
                               <strong>Base Stock:</strong> {{ page.base_stock }} </p>
