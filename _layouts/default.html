@@ -245,8 +245,8 @@
 
       {% for post in sorted_homepage %}
 
-        {% if current-tag = old-tag %}
-          {% if count = 0 %}
+        {% if current-tag == old-tag %}
+          {% if count == 0 %}
             <div class="row mb-5">
               <div class="col-md-8 col-xl-6 text-center mx-auto">
                   <h2>My Career</h2>
@@ -272,7 +272,7 @@
         <div class="row g-0">
           {% for tag in post.tags %}
 
-            {% if count = 1 %}
+            {% if count == 1 %}
               {% assign current-tag = tag %}
             {% else %}
               {% if current-tag != tag %}
