@@ -164,13 +164,13 @@
  
                        {% for tag in post.tags %}
                           {% unless post.company == blank or post.company == null %}
-                            {% assign watermark = post.company+"-watermark" %}
+                            {% assign watermark = post.company | append: "-watermark" %}
                           {% else %}
                             {% assign watermark = "no-watermark" %}
                           {% endunless %}
 
                           {% if tag == 'Resume' %}
-                            {% assign this-post-title = post.start-date + " to " + post.stop-date + ", " + post.title + ", " + post.location.name %}
+                            {% assign this_post_title = post.start_date | append: " to " | append: post.stop_date | append: ", " | append: post.title | append: ", " | append: post.location.name %}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
