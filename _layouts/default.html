@@ -170,7 +170,7 @@
                           {% endunless %}
 
                           {% if tag == 'Resume' %}
-                            {% assign this-post-title = {{post.start-date}}+" to "+{{post.stop-date}}=", "+{{ post.title}}=", "+{{post.location.name}} %}
+                            {% assign this-post-title = post.start-date + " to " + post.stop-date + ", " + post.title + ", " + post.location.name %}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
