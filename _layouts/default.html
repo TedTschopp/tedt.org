@@ -209,9 +209,9 @@
                                   <div class="card-body {{ watermark }}">
                                     <h5 class="card-title">
                                       {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>
+                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{this-post-title}}</a>
                                       {% else %}
-                                        {{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}
+                                        {{this-post-title}}
                                       {% endif %}
                                     </h5>
                                     <p class="card-text"> &mdash; {{ post.description}}</p>
