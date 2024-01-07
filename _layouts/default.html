@@ -171,13 +171,12 @@
                           {% endif %}
 
                           {% if tag == 'Resume' %}
-                            {% assign this_post_title = post.start_date | append: " to " | append: post.stop_date | append: ", " | append: post.title | append: ", " | append: post.location.name %}
-                            {{ this_post_title }}
+                            {% assign this-post-title = post.start_date | append: " to " | append: post.stop_date | append: ", " | append: post.title | append: ", " | append: post.location.name %}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
 
-                          <a name="{{ post.title | slugify}}">{{ tag }}</a>
+                          <a name="{{ post.title | slugify}}"></a>
                           <div class="card mb-3">
                             <div class="row g-0">
                               {% if mod != 1 %}<!-- odd -->
@@ -188,9 +187,9 @@
                                   <div class="card-body {{ watermark }}">
                                     <h5 class="card-title">
                                       {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{this-post-title}}</a>
+                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                                       {% else %}
-                                        {{this-post-title}}
+                                        {{ this-post-title }}
                                       {% endif %}
                                     </h5>
                                     <p class="card-text"> &mdash; {{ post.description}}</p>
@@ -206,9 +205,9 @@
                                   <div class="card-body {{ watermark }}">
                                     <h5 class="card-title">
                                       {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{this-post-title}}</a>
+                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                                       {% else %}
-                                        {{this-post-title}}
+                                        {{ this-post-title }}
                                       {% endif %}
                                     </h5>
                                     <p class="card-text"> &mdash; {{ post.description}}</p>
