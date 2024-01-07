@@ -163,7 +163,7 @@
                       {% assign mod = count | modulo: 2 %}
  
                        {% for tag in post.tags %}
-                          <!-- {{ tag }} -->
+                          
                           {% if post.company != blank and post.company != null %}
                             {% assign watermark = post.company | append: "-watermark" %}
                           {% else %}
@@ -176,7 +176,7 @@
                             {% assign this-post-title = post.title %}
                           {% endif %}
 
-                          <a name="{{ post.title | slugify}}"></a>
+                          <a name="{{ post.title | slugify}}">{{ tag }}</a>
                           <div class="card mb-3">
                             <div class="row g-0">
                               {% if mod != 1 %}<!-- odd -->
