@@ -169,6 +169,12 @@
                             {% assign watermark = "no-watermark" %}
                           {% endunless %}
 
+                          {% if tag == 'Resume' %}
+                            {% assign this-post-title = {{post.start-date}}+" to "+{{post.stop-date}}=", "+{{ post.title}}=", "+{{post.location.name}} %}
+                          {% else %}
+                            {% assign this-post-title = {{ post.title}} %}
+                          {% endif %}
+
                           {% if mod != 1 %}<!-- odd -->
                             <a name="{{ post.title | slugify}}"></a>
                             <div class="card mb-3">
@@ -178,15 +184,19 @@
                                 </div>
                                 <div class="col-md-8">
                                   <div class="card-body {{ watermark }}">
-
                                     <h5 class="card-title">
                                       {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>
+                                        <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{this-post-title}}</a>
                                       {% else %}
-                                        {{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}
+                                        {{this-post-title}}
                                       {% endif %}
                                     </h5>
                                     <p class="card-text"> &mdash; {{ post.description}}</p>
+                                    <ul>    
+                                      {% for bullet in post.bullets %}
+                                          <li>{{ bullet }}</li>
+                                      {% endfor %}
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
@@ -196,7 +206,7 @@
                             <div class="card mb-3">
                               <div class="row g-0">
                                 <div class="col-md-8">
-                                  <div class="card-body">
+                                  <div class="card-body {{ watermark }}">
                                     <h5 class="card-title">
                                       {% if post.title-url and post.title-url != "" and post.title-url != nil %}
                                         <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}</a>
@@ -204,8 +214,12 @@
                                         {{post.start-date}} to {{post.stop-date}}, {{ post.title}}, {{post.location.name}}
                                       {% endif %}
                                     </h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                    <p class="card-text"> &mdash; {{ post.description}}</p>
+                                    <ul>    
+                                      {% for bullet in post.bullets %}
+                                          <li>{{ bullet }}</li>
+                                      {% endfor %}
+                                    </ul>
                                   </div>
                                 </div>
                                 <div class="col-md-4">
@@ -217,8 +231,6 @@
 
                       {% endfor %}
                     {% endfor %}
-                    
-
 
                   </div>
                 </div>
