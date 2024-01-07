@@ -172,6 +172,7 @@
 
                           {% if tag == 'Resume' %}
                             {% assign this_post_title = post.start_date | append: " to " | append: post.stop_date | append: ", " | append: post.title | append: ", " | append: post.location.name %}
+                            {{ this_post_title }}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
