@@ -174,11 +174,10 @@
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
-
-                          {% if mod != 1 %}<!-- odd -->
-                            <a name="{{ post.title | slugify}}"></a>
-                            <div class="card mb-3">
-                              <div class="row g-0">
+                          <a name="{{ post.title | slugify}}"></a>
+                          <div class="card mb-3">
+                            <div class="row g-0">
+                              {% if mod != 1 %}<!-- odd -->
                                 <div class="col-md-4">
                                   <img src="{{site.siteurl}}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                                 </div>
@@ -199,12 +198,7 @@
                                     </ul>
                                   </div>
                                 </div>
-                              </div>
-                            </div>
-                          {% else %}
-                            <a name="{{ post.title | slugify}}"></a>
-                            <div class="card mb-3">
-                              <div class="row g-0">
+                              {% else %}
                                 <div class="col-md-8">
                                   <div class="card-body {{ watermark }}">
                                     <h5 class="card-title">
@@ -225,13 +219,11 @@
                                 <div class="col-md-4">
                                   <img src="{{site.siteurl}}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                                 </div>
-                              </div>
+                              {% endif %}
                             </div>
-                          {% endif %}
-
+                          </div>
                       {% endfor %}
                     {% endfor %}
-
                   </div>
                 </div>
               </div>
