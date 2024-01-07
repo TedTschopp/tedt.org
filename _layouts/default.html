@@ -52,8 +52,10 @@
         </div>
       </div>
 
-<!--
 
+
+      {% comment}
+      <!--
       <div class="row container-fluid p-0">
         <a name="link-tree"></a>
         <div class="row g-0">
@@ -65,7 +67,8 @@
           </div>
         </div>
       </div>
--->
+      -->
+      {% endcomment %}
 
       <div class="row g-0">
         <a name="blog"></a>
@@ -162,6 +165,8 @@
         </div>
       </div>
 
+      {% comment}
+
       <a name="social"></a>
       <div class="row g-0">
         <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="https://tedt.org/img/home/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.jpg" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
@@ -175,6 +180,9 @@
           </div>
         </div>
       </div>
+
+      {% endcomment}
+
 
     {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
     {% assign count = 0 %}
