@@ -10,5 +10,8 @@
         "Shatov",
         "siteurl",
         "Wampler"
+    ],
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/jekyll-gh-pages.yml"
     ]
 }
