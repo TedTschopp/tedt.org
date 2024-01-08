@@ -1,4 +1,4 @@
-I need some help translating a folktale from Swiss German into English.  I need you to fill out a form to help me post this to my website.  I uss Github Pages.  Here is the format I use for my template.  If you understand this, then ask me for the work to translate.  Once I give you that, please put it in this format.
+I need some help translating a folktale from Swiss German into English.  I need you to fill out a form to help me post this to my website.  I use Github Pages.  Here is the format I use for my template.  If you understand this, then ask me for the work to translate.  Once I give you that, please put it in this format.
 
 ---
 layout: post
