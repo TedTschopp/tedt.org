@@ -51,7 +51,7 @@ coordinates:
     latitude: 47.2849
     longitude: 8.4634
 
-image: /img/Swiss/Türlersee-Lake.jpg
+image: img/Swiss/Turlersee-Lake.jpg
 image-alt: An image of Türlersee-Lake taken by someone from shore.
 image-artist: Leandros at German Wikipedia
 image-artist-URL: https://commons.wikimedia.org/wiki/File:Türlersee1.jpg
@@ -72,14 +72,12 @@ mathjax:
 order:
 ---
 
-> <ins> Swiss Legends from Aargau, Volume 1</ins>
+> <ins>Schweizerisches Sagenbuch. Nach mündlichen Überlieferungen, Chroniken und anderen gedruckten und handschriftlichen Quellen.</ins>
 > 
-> by Ernst L. Rochholz
+> by C. Kohlrusch
 > 
->  Aarau, 1856
+>  Leipzig 1854
 >
-> Page 187
-> 
 {: .reference }
 
 ---
