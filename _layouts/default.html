@@ -64,7 +64,7 @@
                               <!--<h6 class="text-muted card-subtitle mb-2">Subtitle</h6>-->
                               <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                           </div>
-                          <div class="card-footer p-4 py-3">
+                          <div class="card-footer p-4 py-3 h-100">
                               {% assign count = 0 %}
                               {% for post in site.posts %}
                                   {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
@@ -104,7 +104,7 @@
                               <!--<h6 class="text-muted card-subtitle mb-2">Subtitle</h6>-->
                               <p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                           </div>
-                          <div class="card-footer p-4 py-3">
+                          <div class="card-footer p-4 py-3 h-100">
                               {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
                               {% for post in posts-drafts limit:3 %}
                                   <h5><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
@@ -126,7 +126,7 @@
                               <!--<h6 class="text-muted card-subtitle mb-2">Subtitle</h6>-->
                               <p class="card-text">A collection of writings on Role Playing Games I am working on at this time. Some of it is really bad, and some of it I am proud of. All of it can be made better.</p>
                           </div>
-                          <div class="card-footer p-4 py-3">
+                          <div class="card-footer p-4 py-3 h-100">
                               {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
                               {% for post in posts-drafts limit:3 %}
                                   <h5><a href="{{ post.url }}">{{ post.title }}</a> - {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}</h4>
@@ -146,13 +146,13 @@
       </section>
     </div>
 
-    <div class="container py-4 py-xl-5">
+    <div class="container py-1 py-xl-2">
       <section>
-          <div class="container h-100 position-relative" style="top: -75px;">
-            <div class="row mb-4 mb-lg-5">
+          <div class="container h-100 position-relative">
+            <div class="row mb-1 mb-lg-1">
               <div class="col-md-8 col-xl-6 text-center mx-auto">
                   <h2>Career</h2>
-                  <p class="w-lg-50">As a Senior Enterprise Architect at Southern California Edison, I leverage over a decade of experience in guiding major stakeholders through complex tech landscapes, with past entrepreneurial successes including founding a prominent J.R.R. Tolkien community website and features in Wired Magazine, driven by a passion for pioneering futuristic technologies.</p>
+                  <p class="w-lg-75">As a Senior Enterprise Architect at Southern California Edison, I leverage over a decade of experience in guiding major stakeholders through complex tech landscapes, with past entrepreneurial successes including founding a prominent J.R.R. Tolkien community website and features in Wired Magazine, driven by a passion for pioneering futuristic technologies.</p>
               </div>
           </div>
         </div>
@@ -160,13 +160,13 @@
     </div>
 
     {% comment %}
-    <div class="container py-4 py-xl-5">
+    <div class="container py-1 py-xl-2">
       <section>
-          <div class="container h-100 position-relative" style="top: -75px;">
-            <div class="row mb-4 mb-lg-5">
+          <div class="container h-100 position-relative">
+            <div class="row mb-1 mb-lg-1">
               <div class="col-md-8 col-xl-6 text-center mx-auto">
                   <h2>Projects</h2>
-                  <p class="w-lg-50">From the comprehensive redesign of Southern California Edison's intranet and corporate websites to leading the innovative Edison SmartConnect project and creating unique digital applications like procedurally generated star constellations, I blend my expertise in web technologies and solution engineering to deliver projects that reshape our digital landscape.</p>
+                  <p class="w-lg-75">From the comprehensive redesign of Southern California Edison's intranet and corporate websites to leading the innovative Edison SmartConnect project and creating unique digital applications like procedurally generated star constellations, I blend my expertise in web technologies and solution engineering to deliver projects that reshape our digital landscape.</p>
               </div>
           </div>
         </div>
