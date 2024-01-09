@@ -13,14 +13,19 @@ h6 {
   font-weight: bold;
 }
 
-.teds-dark-overlay {
+.darken-image {
+  position: relative;
+  display: inline-block;
+}
+
+.darken-image::after {
+  content: "";
   position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 header h1 {
