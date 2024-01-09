@@ -108,7 +108,10 @@ a:hover .MCC {
     font-family: "Fredericka the Great",serif;
     font-style: normal;
 }
-
+.computers {
+    font-family: "Checkbook",monospace;
+    font-style: normal;
+}
 
 .Dohring-watermark, .TORC-watermark, .SCE-watermark, .Tschopp-watermark {
     position: relative;

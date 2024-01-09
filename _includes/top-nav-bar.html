@@ -1,36 +1,47 @@
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.tedt.org/"><img src="https://tedt.org/img/TT.svg" height="42" width="42"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://tedt.org/RPG/MCC-GW/"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{site.siteurl}}/#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{site.siteurl}}/#blog">Blog</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
-                                {% for post in sorted_homepage %}
-                                    <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown ms-auto mb-2 mb-lg-0">
-                            <button type="button" onclick="toggleTheme()"" class="btn btn-outline-secondary"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                        </li>
-                    </ul>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block">
+                    <!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand d-none d-lg-inline-block" href="#"> </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                    <img src="https://tedt.org/img/TT.svg" height="42" width="42" alt="logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="https://tedt.org/RPG/MCC-GW/" class="nav-link m-2 menu-item nav-active"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{site.siteurl}}/#about" class="nav-link m-2 menu-item">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{site.siteurl}}/#blog" class="nav-link m-2 menu-item">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{site.siteurl}}/#contact" class="nav-link m-2 menu-item">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                            {% for post in sorted_homepage %}
+                                <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ms-auto mb-2 mb-lg-0">
+                        <button type="button" onclick="toggleTheme()" class="btn btn-outline-secondary"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- END OF NAVIGATION -->
