@@ -10,6 +10,7 @@ excerpt: Check the strength of your password based on mathematical models that t
 source:
 source-url:
 call-to-action:
+company: Tschopp
 
 date: 2012-10-24 07:11:42-07:00
 update:
