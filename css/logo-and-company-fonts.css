@@ -101,12 +101,12 @@ a:hover .MCC {
     font-style: italic;
 }
 
-.Dohring-watermark, .TORC-watermark, .SCE-watermark {
+.Dohring-watermark, .TORC-watermark, .SCE-watermark, .Tschopp-watermark {
     position: relative;
     z-index: 1;
   }
 
-.Dohring-watermark::before, .TORC-watermark::before, .SCE-watermark::before {
+.Dohring-watermark::before, .TORC-watermark::before, .SCE-watermark::before, .Tschopp-watermark::before {
     content: "";
     position: absolute;
     top: 0;
