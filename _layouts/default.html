@@ -45,12 +45,41 @@
 
     <!-- Masthead -->
 
-    <section class="showcase">
+    <section class="showcase position-relative">
       <div class="g-0 w-100 container-fluid">
         <div class="w-100">
           <img src="/img/categories/home.png" class="img-fluid w-100 h-100" alt="Image of someone sitting by a lake">
         </div>
       </div>
+
+      <header class="masthead text-white text-center" id="about">
+        
+        {% comment %}
+        <div class="overlay"></div>
+        {% endcomment %}
+
+        <div class="container">
+          <div class="row vcard h-card" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
+            <div class="col-xl-9 mx-auto">
+              <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
+              <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=256&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
+              <h2><span class="p-job-title">Enterprise Architect</h2>
+              <hr>
+              <span class="p-adr d-none">
+                  <span class="p-locality">{{ site.locality }}</span>,
+                  <span class="p-region">{{ site.region }}</span>
+                  <span class="p-country-name">{{ site.country }}</span>
+              </span>
+              <span class="p-note">
+                {% for paragraphs in site.biography %}
+                  {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
+                  <p class="lead">{{paragraph}}</p>
+                {% endfor %}
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
     </section>
 
     <div class="container py-4 py-xl-5">
@@ -158,21 +187,6 @@
         </div>
       </section>
     </div>
-
-    {% comment %}
-    <div class="container py-1 py-xl-2">
-      <section>
-          <div class="container h-100 position-relative">
-            <div class="row mb-2 mb-lg-2">
-              <div class="col-md-12 col-xl-10 text-center mx-auto">
-                  <h2>Projects</h2>
-                  <p class="w-lg-75">From the comprehensive redesign of Southern California Edison's intranet and corporate websites to leading the innovative Edison SmartConnect project and creating unique digital applications like procedurally generated star constellations, I blend my expertise in web technologies and solution engineering to deliver projects that reshape our digital landscape.</p>
-              </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    {% endcomment %}
 
     <div class="container py-4 py-xl-5">
       <section>
@@ -298,33 +312,6 @@
         </div>
       </div>
     </div>
-
-
-
-    <header class="masthead text-white text-center" id="about">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row vcard h-card" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
-          <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
-            <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=256&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-            <h2><span class="p-job-title">Enterprise Architect</h2>
-            <hr>
-            <span class="p-adr d-none">
-                <span class="p-locality">{{ site.locality }}</span>,
-                <span class="p-region">{{ site.region }}</span>
-                <span class="p-country-name">{{ site.country }}</span>
-            </span>
-            <span class="p-note">
-              {% for paragraphs in site.biography %}
-                {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
-                <p class="lead">{{paragraph}}</p>
-              {% endfor %}
-            </span>
-          </div>
-        </div>
-      </div>
-    </header>
 {% endcomment %}
 
 
