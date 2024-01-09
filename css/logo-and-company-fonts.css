@@ -133,6 +133,6 @@ a:hover .MCC {
 }
 
 .Tschopp-watermark::before {
-    background: url( img/TT.svg) no-repeat center center;
+    background: url( /img/TT.svg) no-repeat center center;
     background-size: 50% ; /* or contain */
 }
