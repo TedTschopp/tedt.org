@@ -13,18 +13,7 @@ h6 {
   font-weight: bold;
 }
 
-/*
-
-header.masthead {
-  position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-header.masthead .overlay {
+.teds-dark-overlay {
   position: absolute;
   background-color: #212529;
   height: 100%;
@@ -34,31 +23,16 @@ header.masthead .overlay {
   opacity: 0.3;
 }
 
-header.masthead h1 {
+header h1 {
   font-size: 2rem;
 }
 
-header.masthead .intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
 
-header.masthead .intro-image-avatar {
+header .intro-image-avatar {
     border-radius: 50% 50% 50% 50%;
 }
 
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
 
-*/
 
 
 .showcase .showcase-text {

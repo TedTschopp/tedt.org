@@ -45,37 +45,39 @@
 
     <!-- Masthead -->
 
-    <section class="showcase position-relative">
-      <div class="g-0 w-100 container-fluid">
-        <div class="w-100">
-          <img src="/img/categories/home.png" class="img-fluid w-100 h-100" alt="Image of someone sitting by a lake">
-        </div>
+    <header>
+      <section class="showcase position-relative">
+        <div class="g-0 w-100 container-fluid">
+          <div class="w-100 teds-dark-overlay">
+            <img src="/img/categories/home.png" class="img-fluid w-100 h-100" alt="Image of someone sitting by a lake">
+          </div>
 
-        <div class="row vcard h-card position-absolute top-0 start-0 w-100" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
-          <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
-            <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=256&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-            <h2><span class="p-job-title">Enterprise Architect</h2>
+          <div class="row vcard h-card position-absolute top-0 start-0 w-100" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
+            <div class="col-xl-9 mx-auto">
+              <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
+              <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=256&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
+              <h2><span class="p-job-title">Enterprise Architect</h2>
 
-            <hr>
+              <hr>
 
-            <span class="p-adr d-none">
-              <span class="p-locality">{{ site.locality }}</span>,
-              <span class="p-region">{{ site.region }}</span>
-              <span class="p-country-name">{{ site.country }}</span>
-            </span>
+              <span class="p-adr d-none">
+                <span class="p-locality">{{ site.locality }}</span>,
+                <span class="p-region">{{ site.region }}</span>
+                <span class="p-country-name">{{ site.country }}</span>
+              </span>
 
-            <span class="p-note">
-              {% for paragraphs in site.biography %}
-                {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
-                <p class="lead">{{paragraph}}</p>
-              {% endfor %}
-            </span>
+              <span class="p-note">
+                {% for paragraphs in site.biography %}
+                  {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
+                  <p>{{paragraph}}</p>
+                {% endfor %}
+              </span>
 
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
 
     <div class="container py-4 py-xl-5">
       <section>
