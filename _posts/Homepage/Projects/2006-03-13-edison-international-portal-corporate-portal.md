@@ -10,6 +10,7 @@ excerpt:
 source:
 source-url:
 call-to-action:
+company: SCE
 
 date: 2006-03-13 16:55:12+00:00
 update:

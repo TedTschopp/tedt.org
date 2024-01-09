@@ -10,6 +10,8 @@ excerpt: 'An application of the Procedural Text Generation system to create a ne
 source:
 source-url:
 call-to-action:
+company: Tschopp
+
 
 date: 2018-10-08 07:11:42-07:00
 update:

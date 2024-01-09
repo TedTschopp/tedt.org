@@ -10,6 +10,8 @@ excerpt: 'An application that generates text using procedural methods.'
 source:
 source-url:
 call-to-action:
+company: Tschopp
+
 
 date: 2016-10-27 07:11:42-07:00
 update:

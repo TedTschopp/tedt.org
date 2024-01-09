@@ -10,6 +10,7 @@ excerpt: "An application I threw together to output a bunch of Procedurally gene
 source:
 source-url:
 call-to-action:
+company: Tschopp
 
 date: 2017-12-22 07:11:42-07:00
 update:

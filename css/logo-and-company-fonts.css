@@ -131,3 +131,8 @@ a:hover .MCC {
     background: url( /img/home/logo-SCE.png) no-repeat center center;
     background-size: 50% ; /* or contain */
 }
+
+.Tschopp-watermark::before {
+    background: url( img/TT.svg) no-repeat center center;
+    background-size: 50% ; /* or contain */
+}
