@@ -151,6 +151,9 @@
     <div class="container py-1 py-xl-2">
       <section>
           <div class="container h-100 position-relative">
+            
+            {% comment %}
+
             <div class="row vcard h-card" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
               <div class="col-xl-9 mx-auto">
                 <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
@@ -174,6 +177,9 @@
   
               </div>
             </div>
+
+            {% endcomment %}
+
             <div class="row mb-2 mb-lg-2">
               <div class="col-md-12 col-xl-10 text-center mx-auto">
                   <h2>Career</h2>
