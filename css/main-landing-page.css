@@ -13,6 +13,8 @@ h6 {
   font-weight: bold;
 }
 
+/*
+
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -44,8 +46,6 @@ header.masthead .intro-divider {
 
 header.masthead .intro-image-avatar {
     border-radius: 50% 50% 50% 50%;
-/*  width: 100px;
-    height: 100px; */
 }
 
 @media (min-width: 768px) {
@@ -57,6 +57,9 @@ header.masthead .intro-image-avatar {
     font-size: 3rem;
   }
 }
+
+*/
+
 
 .showcase .showcase-text {
   padding: 3rem;
