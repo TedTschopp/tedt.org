@@ -146,5 +146,5 @@ a:hover .MCC {
 
 .Tschopp-watermark::before {
     background: url( /img/TT.png) no-repeat center center;
-    background-size: 50% ; /* or contain */
+    background-size: 25% ; /* or contain */
 }
