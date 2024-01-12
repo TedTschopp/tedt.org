@@ -3,11 +3,11 @@
 	text-shadow: -2px -2px 0px #eae221, 
 				2px  2px 0px #eae221, 
 				2px -2px 0px #eae221, 
-				-2px  2px 0px #eae221, 
+			   -2px  2px 0px #eae221, 
 				0px  2px 0px #eae221, 
 				0px -2px 0px #eae221, 
 				2px  0px 0px #eae221, 
-				-2px  0px 0px #eae221;
+			    -2px  0px 0px #eae221;
 				
 	color: #ff001b;
 }
@@ -16,20 +16,20 @@ a:hover .DCC {
     text-shadow:-2px -2px 0px #eae221, 
             2px  2px 0px #eae221, 
             2px -2px 0px #eae221, 
-            -2px  2px 0px #eae221, 
+           -2px  2px 0px #eae221, 
             0px  2px 0px #eae221, 
             0px -2px 0px #eae221, 
             2px  0px 0px #eae221, 
-            -2px  0px 0px #eae221, 
+           -2px  0px 0px #eae221, 
                 
-            -3px -3px 0px #ff001b, 
+           -3px -3px 0px #ff001b, 
             3px  3px 0px #ff001b,
             3px -3px 0px #ff001b, 
-            -3px  3px 0px #ff001b, 
+           -3px  3px 0px #ff001b, 
             0px  3px 0px #ff001b, 
             0px -3px 0px #ff001b, 
             3px  0px 0px #ff001b, 
-            -3px  0px 0px #ff001b;
+           -3px  0px 0px #ff001b;
         color: #ff001b;
  }
 
