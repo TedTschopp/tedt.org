@@ -1,32 +1,3 @@
-body {
-  font-family: 'Libre Franklin', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 200;
-}
-  
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Optimum",serif;
-  font-weight: bold;
-}
-
-.darken-image {
-  position: relative;
-  display: inline-block;
-}
-
-.darken-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
 
 header h1 {
   font-size: 2rem;
@@ -35,93 +6,17 @@ header h1 {
   font-size: 1.5rem;
 }
 
-
 header .intro-image-avatar {
     border-radius: 50% 50% 50% 50%;
 }
 
-
-
-
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
-}
-
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
-}
-
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.testimonials .testimonial-item {
-  max-width: 18rem;
-}
-
-.testimonials .testimonial-item img {
-  max-width: 12rem;
-  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
-}
-
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
-
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
+/* TODO: Remove and replace with .d-none */
 .hidden {
   display: block;
   visibility: hidden;
 }
+
+/* TODO: Move to LinkTree Component */
 
 #social-links {
   height: 100%;
@@ -130,8 +25,4 @@ footer.footer {
   margin: 0 auto;
   justify-content: center;
   vertical-align: middle;
-}
-
-#teds-fixing {
-  display: flex; 
 }
