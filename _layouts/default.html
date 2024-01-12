@@ -86,7 +86,7 @@
                                       {% if count > 3 %}
                                           {% break %}
                                       {% endif %}
-                                      <h4><a href="{{ post.url }}">{{ post.title }}</a> - <!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
+                                      <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
                                       {% if post.teaser %}
                                         <p class="card-text">{{ post.teaser }}</p>
                                       {% elsif post.description %}
@@ -109,7 +109,7 @@
                           <div class="card-footer p-4 py-3 h-100">
                               {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
                               {% for post in posts-drafts limit:3 %}
-                                  <h4><a href="{{ post.url }}">{{ post.title }}</a> - <!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
+                                  <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
                                   {% if post.teaser %}
                                     <p class="card-text">{{ post.teaser }}</p>
                                   {% elsif post.description %}
@@ -131,7 +131,7 @@
                           <div class="card-footer p-4 py-3 h-100">
                               {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
                               {% for post in posts-drafts limit:3 %}
-                                  <h4><a href="{{ post.url }}">{{ post.title }}</a> - <!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}--></h4>
+                                  <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}--></h4>
                                   {% if post.teaser %}
                                     <p class="card-text">{{ post.teaser }}</p>
                                   {% elsif post.description %}
@@ -153,7 +153,6 @@
           <div class="container h-100 position-relative">
             
             {% comment %}
-
             <div class="row vcard h-card" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
               <div class="col-xl-9 mx-auto">
                 <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
@@ -177,7 +176,6 @@
   
               </div>
             </div>
-
             {% endcomment %}
 
             <div class="row mb-2 mb-lg-2">
@@ -296,7 +294,7 @@
       </section>
     </div>
 
-{% comment %}
+    {% comment %}
     <a name="social"></a>
     <div class="row g-0">
       <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="https://tedt.org/img/home/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.jpg" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
@@ -310,7 +308,7 @@
         </div>
       </div>
     </div>
-{% endcomment %}
+    {% endcomment %}
 
   <!-- Footer -->
   {% include footer.html %}

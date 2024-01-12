@@ -71,19 +71,27 @@ a:hover .MCC {
  .GammaWorld {
 	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #DC143C; 
-	/* color: Crimson */
+	font-weight: bold;
+	text-shadow: -3px -3px 0px rgba(255, 0, 27, 0), 
+				  3px  3px 0px rgba(255, 0, 27, 0),
+				  3px -3px 0px rgba(255, 0, 27, 0), 
+				 -3px  3px 0px rgba(255, 0, 27, 0), 
+				  0px  3px 0px rgba(255, 0, 27, 0), 
+				  0px -3px 0px rgba(255, 0, 27, 0), 
+				  3px  0px 0px rgba(255, 0, 27, 0), 
+				 -3px  0px 0px rgba(255, 0, 27, 0);
  }
  a:hover .GammaWorld {
 	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
-	text-shadow: -3px -3px 0px #ff001b, 
-				  3px  3px 0px #ff001b,
-				  3px -3px 0px #ff001b, 
-				 -3px  3px 0px #ff001b, 
-				  0px  3px 0px #ff001b, 
-				  0px -3px 0px #ff001b, 
-				  3px  0px 0px #ff001b, 
-				 -3px  0px 0px #ff001b;
+	text-shadow: -3px -3px 0px rgba(255, 0, 27, 1), 
+				  3px  3px 0px rgba(255, 0, 27, 1),
+				  3px -3px 0px rgba(255, 0, 27, 1), 
+				 -3px  3px 0px rgba(255, 0, 27, 1), 
+				  0px  3px 0px rgba(255, 0, 27, 1), 
+				  0px -3px 0px rgba(255, 0, 27, 1), 
+				  3px  0px 0px rgba(255, 0, 27, 1), 
+				 -3px  0px 0px rgba(255, 0, 27, 1);
 	color: #212529; 
 }
 .DnD {
