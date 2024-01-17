@@ -36,16 +36,16 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$blue:    rgba(013, 110, 253, 1) !default;
+$indigo:  rgba(102, 016, 242, 1) !default;
+$purple:  rgba(111, 066, 193, 1) !default;
+$pink:    rgba(214, 051, 132, 1) !default;
+$red:     rgba(220, 053, 069, 1) !default;
+$orange:  rgba(253, 126, 020, 1) !default;
+$yellow:  rgba(255, 193, 007, 1) !default;
+$green:   rgba(025, 135, 084, 1) !default;
+$teal:    rgba(032, 201, 151, 1) !default;
+$cyan:    rgba(013, 202, 240, 1) !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -300,12 +300,12 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $light:      #b1b3b3 !default;
 $dark:       #101820 !default;
-$primary:    #00664f !default;
-$secondary:  #e87722 !default;
+$primary:    #2D3C59 !default;
+$secondary:  #F2884B !default;
 $info:       #00a9e0 !default;
-$accent1:    #f4c842 !default;
-$accent2:    #6e2585 !default;
-$accent3:    #f7b2b7 !default;
+$accent1:    #F2BC57!default;
+$accent2:    #6F1A07 !default;
+$accent3:    #2B2118 !default;
 $success:    #00b339 !default;
 $warning:    #f6c900 !default;
 $danger:     #f90041 !default;
@@ -372,8 +372,8 @@ $escaped-characters: (
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
-$enable-shadows:              false !default;
-$enable-gradients:            false !default;
+$enable-shadows:              true !default;
+$enable-gradients:            true !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
@@ -401,6 +401,8 @@ $prefix:                      $variable-prefix !default;
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+
+$gradient: linear-gradient(to right, rgba(143, 71, 45, 1) 0%, 3.6082472652196884%, rgba(171, 85, 44, 1) 7.216494530439377%, 10.92783473432064%, rgba(241, 143, 68, 1) 14.639174938201904%, 15.463917702436447%, rgba(252, 158, 75, 1) 16.28866046667099%, 19.278351217508316%, rgba(254, 208, 95, 1) 22.268041968345642%, 23.814433813095093%, rgba(254, 216, 104, 1) 25.360825657844543%, 29.072165489196777%, rgba(252, 224, 152, 1) 32.78350532054901%, 35.05154699087143%, rgba(252, 203, 132, 1) 37.31958866119385%, 38.55670094490051%, rgba(228, 168, 118, 1) 39.79381322860718%, 43.09278279542923%, rgba(167, 106, 90, 1) 46.39175236225128%, 47.628866136074066%, rgba(169, 93, 80, 1) 48.86597990989685%, 55.97938299179077%, rgba(84, 54, 54, 1) 63.09278607368469%, 67.21649467945099%, rgba(63, 58, 65, 1) 71.34020328521729%, 74.02061820030212%, rgba(65, 64, 54, 1) 76.70103311538696%, 88.35051655769348%, rgba(5, 7, 11, 1) 100%) !default;
 // scss-docs-end variable-gradient
 
 // Spacing

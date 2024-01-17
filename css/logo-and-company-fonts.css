@@ -1,70 +1,70 @@
 .DCC {
 	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
-	text-shadow: -2px -2px 0px #eae221, 
-				2px  2px 0px #eae221, 
-				2px -2px 0px #eae221, 
-			   -2px  2px 0px #eae221, 
-				0px  2px 0px #eae221, 
-				0px -2px 0px #eae221, 
-				2px  0px 0px #eae221, 
-			    -2px  0px 0px #eae221;
+	text-shadow: -2px -2px 0px rgba(234, 226, 33, 1), 
+				  2px  2px 0px rgba(234, 226, 33, 1), 
+				  2px -2px 0px rgba(234, 226, 33, 1), 
+			     -2px  2px 0px rgba(234, 226, 33, 1), 
+				  0px  2px 0px rgba(234, 226, 33, 1), 
+				  0px -2px 0px rgba(234, 226, 33, 1), 
+				  2px  0px 0px rgba(234, 226, 33, 1), 
+			     -2px  0px 0px rgba(234, 226, 33, 1);
 				
-	color: #ff001b;
+	color: rgba(255, 0, 27, 1);
 }
 a:hover .DCC {
     font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-shadow:-2px -2px 0px #eae221, 
-            2px  2px 0px #eae221, 
-            2px -2px 0px #eae221, 
-           -2px  2px 0px #eae221, 
-            0px  2px 0px #eae221, 
-            0px -2px 0px #eae221, 
-            2px  0px 0px #eae221, 
-           -2px  0px 0px #eae221, 
+    text-shadow:-2px -2px 0px rgba(234, 226, 33, 1), 
+                 2px  2px 0px rgba(234, 226, 33, 1), 
+                 2px -2px 0px rgba(234, 226, 33, 1), 
+                -2px  2px 0px rgba(234, 226, 33, 1), 
+                 0px  2px 0px rgba(234, 226, 33, 1), 
+                 0px -2px 0px rgba(234, 226, 33, 1), 
+                 2px  0px 0px rgba(234, 226, 33, 1), 
+                -2px  0px 0px rgba(234, 226, 33, 1), 
                 
-           -3px -3px 0px #ff001b, 
-            3px  3px 0px #ff001b,
-            3px -3px 0px #ff001b, 
-           -3px  3px 0px #ff001b, 
-            0px  3px 0px #ff001b, 
-            0px -3px 0px #ff001b, 
-            3px  0px 0px #ff001b, 
-           -3px  0px 0px #ff001b;
-        color: #ff001b;
+                -3px -3px 0px rgba(255, 0, 27, 1), 
+                 3px  3px 0px rgba(255, 0, 27, 1),
+                 3px -3px 0px rgba(255, 0, 27, 1), 
+                -3px  3px 0px rgba(255, 0, 27, 1), 
+                 0px  3px 0px rgba(255, 0, 27, 1), 
+                 0px -3px 0px rgba(255, 0, 27, 1), 
+                 3px  0px 0px rgba(255, 0, 27, 1), 
+                -3px  0px 0px rgba(255, 0, 27, 1);
+        color: rgba(255, 0, 27, 1);
  }
 
 .MCC {
 	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
-	text-shadow: -2px -2px 0px #ffe205, 
-				2px  2px 0px #ffe205, 
-				2px -2px 0px #ffe205, 
-				-2px  2px 0px #ffe205, 
-				0px  2px 0px #ffe205, 
-				0px -2px 0px #ffe205, 
-				2px  0px 0px #ffe205, 
-				-2px  0px 0px #ffe205; 
-	color: #018249;
+	text-shadow: -2px -2px 0px rgba(255, 226, 5, 1), 
+				  2px  2px 0px rgba(255, 226, 5, 1), 
+				  2px -2px 0px rgba(255, 226, 5, 1), 
+			     -2px  2px 0px rgba(255, 226, 5, 1), 
+				  0px  2px 0px rgba(255, 226, 5, 1), 
+				  0px -2px 0px rgba(255, 226, 5, 1), 
+				  2px  0px 0px rgba(255, 226, 5, 1), 
+			     -2px  0px 0px rgba(255, 226, 5, 1); 
+	color: rgba(1, 130, 73, 1);
 }
 a:hover .MCC {
     font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-shadow:  -2px -2px 0px #ffe205, 
-                2px  2px 0px #ffe205, 
-                2px -2px 0px #ffe205, 
-               -2px  2px 0px #ffe205, 
-                0px  2px 0px #ffe205, 
-                0px -2px 0px #ffe205, 
-                2px  0px 0px #ffe205, 
-               -2px  0px 0px #ffe205, 
+    text-shadow:  -2px -2px 0px rgba(255, 226, 5, 1), 
+                   2px  2px 0px rgba(255, 226, 5, 1), 
+                   2px -2px 0px rgba(255, 226, 5, 1), 
+                  -2px  2px 0px rgba(255, 226, 5, 1), 
+                   0px  2px 0px rgba(255, 226, 5, 1), 
+                   0px -2px 0px rgba(255, 226, 5, 1), 
+                   2px  0px 0px rgba(255, 226, 5, 1), 
+                  -2px  0px 0px rgba(255, 226, 5, 1), 
                  
-              -3px -3px 0px #018249, 
-               3px  3px 0px #018249,
-               3px -3px 0px #018249, 
-              -3px  3px 0px #018249, 
-               0px  3px 0px #018249, 
-               0px -3px 0px #018249, 
-               3px  0px 0px #018249, 
-              -3px  0px 0px #018249;
-         color: #018249;
+                  -3px -3px 0px rgba(1, 130, 73, 1), 
+                   3px  3px 0px rgba(1, 130, 73, 1),
+                   3px -3px 0px rgba(1, 130, 73, 1), 
+                  -3px  3px 0px rgba(1, 130, 73, 1), 
+                   0px  3px 0px rgba(1, 130, 73, 1), 
+                   0px -3px 0px rgba(1, 130, 73, 1), 
+                   3px  0px 0px rgba(1, 130, 73, 1), 
+                  -3px  0px 0px rgba(1, 130, 73, 1);
+         color: rgba(1, 130, 73, 1);
  }
 
 
