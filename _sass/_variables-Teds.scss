@@ -370,22 +370,22 @@ $escaped-characters: (
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:                true !default;
-$enable-rounded:              true !default;
-$enable-shadows:              true !default;
-$enable-gradients:            true !default;
-$enable-transitions:          true !default;
-$enable-reduced-motion:       true !default;
-$enable-smooth-scroll:        true !default;
-$enable-grid-classes:         true !default;
-$enable-container-classes:    true !default;
+$enable-caret:                 true !default;
+$enable-rounded:               true !default;
+$enable-shadows:               true !default;
+$enable-gradients:            false !default;
+$enable-transitions:           true !default;
+$enable-reduced-motion:        true !default;
+$enable-smooth-scroll:         true !default;
+$enable-grid-classes:          true !default;
+$enable-container-classes:     true !default;
 $enable-cssgrid:              false !default;
-$enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
-$enable-validation-icons:     true !default;
+$enable-button-pointers:       true !default;
+$enable-rfs:                   true !default;
+$enable-validation-icons:      true !default;
 $enable-negative-margins:     false !default;
-$enable-deprecation-messages: true !default;
-$enable-important-utilities:  true !default;
+$enable-deprecation-messages:  true !default;
+$enable-important-utilities:   true !default;
 
 $enable-dark-mode:            true !default;
 $color-mode-type:             data !default; // `data` or `media-query`
@@ -404,7 +404,7 @@ $prefix:                      $variable-prefix !default;
 
 // 
 
-$gradient: linear-gradient(to bottom, 
+/* $gradient: linear-gradient(to bottom, 
                         rgba(143, 071, 045, .33)  3.60%, 
                         rgba(171, 085, 044, .33) 10.92%,
                         rgba(241, 143, 068, .33) 15.46%, 
@@ -419,7 +419,7 @@ $gradient: linear-gradient(to bottom,
                         rgba(084, 054, 054, .33) 67.21%,
                         rgba(063, 058, 065, .33) 74.02%,
                         rgba(065, 064, 054, .33) 88.35%,
-                        rgba(005, 007, 011, .33) 100%) !default;
+                        rgba(005, 007, 011, .33) 100%) !default; */
 
 // scss-docs-end variable-gradient
 

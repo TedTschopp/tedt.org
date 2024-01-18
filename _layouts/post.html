@@ -386,6 +386,14 @@
                         
                     </script>
 
+                   
+                    {% assign abbreviations = site.data.abbreviations %}
+
+                    {% for abbreviation in abbreviations %}
+                        {% assign content = content | replace: abbreviation[0], '<abbr title="' | append: abbreviation[1] | append: '">' | append: abbreviation[0] | append: '</abbr>' %}
+                    {% endfor %}
+
+
                     <span class="e-content" id="main_content">{{ content }}</span>
 
                     <script>
