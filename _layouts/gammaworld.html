@@ -71,7 +71,7 @@
                          {% else %}
                               <strong>Reported By:</strong>
                               
-                                   {% assign answers = [] %}
+                                   {% assign answers = "" | split: "%" %}
                                    {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ - We're unable to retrieve the 'Reported by' information for this creature. This data may be corrupted or missing from our records." %}
                                    {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_ - The 'Reported by' field for this creature cannot be located. It is possible that this information was lost due to data degradation over time." %}
                                    {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ - Attention: The identity of the individual or entity who reported this creature is currently unavailable in our database." %}
@@ -88,7 +88,7 @@
                               in {{ page.source }}
                          {% else %}
                               in
-                                   {% assign answers = [] %}
+                                   {% assign answers = "" | split: "%" %}
                                    {% assign answers = answers | push: "_Error 503: Source Document Not Found_ - The Original Source Document for this creature is currently unavailable. It may have been misplaced, lost, or never uploaded to our database." %}
                                    {% assign answers = answers | push: "_Document Retrieval Error: Blank Entry Detected_ - There appears to be a blank entry in the 'Original Source Document' field. This could indicate a data input error or a missing document." %}
                                    {% assign answers = answers | push: "_Alert: Source Document Absent_ - No Original Source Document can be found for this creature. This information may have been lost due to data decay or archival issues." %}
@@ -106,7 +106,7 @@
                          {% else %}
                               <p><strong>Role:</strong> 
 
-                                   {% assign answers = [] %}
+                                   {% assign answers = "" | split: "%" %}
                                    {% assign answers = answers | push: "_Error 410: Ecological Role Data Gone_ - The 'Roles in the World/Biome' information for this creature is missing. This data may have been permanently lost or was never recorded." %}
                                    {% assign answers = answers | push: "_Data Integrity Issue: Role Information Unavailable_ - We are experiencing an issue accessing the ecological role data for this creature. The 'Roles in the World/Biome' field is currently unavailable due to potential data corruption." %}
                                    {% assign answers = answers | push: "_Warning: Missing Biome Role Details_ - Attention: The details regarding this creature's role in its world or biome are missing. This could be due to incomplete data collection or loss over time." %}
