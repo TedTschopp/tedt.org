@@ -121,7 +121,7 @@
                         {% elsif post.description %}
                           <p>{{ post.description  }}</p>
                         {% else %}
-                          <p>{{ post.excerpt |truncate html | truncatewords: 20}}</p>
+                          <p>{{ post.excerpt | truncate html | truncatewords: 20}}</p>
                         {% endif %}
                         <p>{{post.content}}</p>
                     </li>
