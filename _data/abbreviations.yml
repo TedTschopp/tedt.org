@@ -1,3 +1,7 @@
 - ['md', 'Markdown']
 - ['HTML', 'Hyper Text Markup Language']
 - ['CSS', 'Cascading Style Sheets']
+- ['BCE', 'Before Common Era']
+- ['CE', 'Common Era']
+- ['AD', 'Anno Domini (in the year of our Lord - used in the Gregorian calendar to refer to the current/common era)']
+- ['BC', 'Before Christ (used in the Gregorian calendar to refer to the era before the common era as defined by birth of Christ)']
