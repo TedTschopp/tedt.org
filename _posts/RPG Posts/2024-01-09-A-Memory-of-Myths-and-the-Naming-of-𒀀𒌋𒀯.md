@@ -49,96 +49,99 @@ mathjax: false
 order:
 
 ---
-# A Memory of Myths and the Naming of 𒀀𒌋𒀯
+> # A Memory of Myths and the Naming of 𒀀𒌋𒀯
+> 
+> In universe's dusk,  
+> Stars fade in vast, empty space,  
+> Aeon roams alone.  
+> From time's first faint whisper born,  
+> Eternal in cosmic flow.  
+> 
+> Witness to all birth,  
+> And civilizations' fall,  
+> Through ages he strides.  
+> Empires rise and crumble,  
+> Life's beauty, brief and fleeting.
+> 
+> Journey of the ages,  
+> In gods' dance and worlds' birthing,  
+> Aeon watched in awe.  
+> Mortals' joy, gods' plight he felt,  
+> Shared in heroes' rise and fall.
+> 
+> Great floods reshape lands,  
+> Empires rise in splendor bright,  
+> Then to dust they fall.  
+> Aeon, timeless, sees it all,  
+> In the cosmic ebb and flow.
+> 
+> Eons weigh on Aeon's heart,  
+> Myths turn to silent echoes.  
+> Reason challenges myth,  
+> Poets lament in changing times,  
+> Worlds shift, Aeon watches.
+> 
+> Space race to digital age,  
+> Dreams of a greener future,  
+> Transhuman hopes soar.  
+> Aeon watches, guiding fate,  
+> Fate's course unaltered.
+> 
+> Galactic eras blend,  
+> Myriad cultures in dance.  
+> Aeon sees Life's song,  
+> Eternal yet bound by time,  
+> Cruel irony unveiled.
+> 
+> Universe unwinds,  
+> Physics' dance turns strange and wild.  
+> Though empires' rise and fall,  
+> Aeon stands, witnessing, remembering, protecting, hoping,  
+> Last lights fading to whispers.
+{: .folklore }
 
-In universe's dusk,  
-Stars fade in vast, empty space,  
-Aeon roams alone.  
-From time's first faint whisper born,  
-Eternal in cosmic flow.  
-
-Witness to all birth,  
-And civilizations' fall,  
-Through ages he strides.  
-Empires rise and crumble,  
-Life's beauty, brief and fleeting.
-
-Journey of the ages,  
-In gods' dance and worlds' birthing,  
-Aeon watched in awe.  
-Mortals' joy, gods' plight he felt,  
-Shared in heroes' rise and fall.
-
-Great floods reshape lands,  
-Empires rise in splendor bright,  
-Then to dust they fall.  
-Aeon, timeless, sees it all,  
-In the cosmic ebb and flow.
-
-Eons weigh on Aeon's heart,  
-Myths turn to silent echoes.  
-Reason challenges myth,  
-Poets lament in changing times,  
-Worlds shift, Aeon watches.
-
-Space race to digital age,  
-Dreams of a greener future,  
-Transhuman hopes soar.  
-Aeon watches, guiding fate,
-Fate's course unaltered.
-
-Galactic eras blend,  
-Myriad cultures in dance.  
-Aeon sees Life's song,  
-Eternal yet bound by time,  
-Cruel irony unveiled.
-
-Universe unwinds,  
-Physics' dance turns strange and wild.  
-Though empires' rise and fall,  
-Aeon stands, witnessing, remembering, protecting, hoping,  
-Last lights fading to whispers.
+---
+> # A Final Prayer
+> 
+> Aeon, a solemn reflection on cosmic history,  
+> A tale of beauty and loss, eternally destined to see,  
+> The fleeting moments that define our existence's crest,  
+> As the universe whispered its final secrets, Aeon's quest.  
+> 
+> In Entropy's Embrace, our journey met its end,  
+> In the profound silence of the void, we descend,  
+> Closing our eyes for the last time, a poignant realization,  
+> In this universe of endless stories, every creation,  
+> No matter how grand, enduring, or profound,  
+> Finds its quiet embrace of oblivion, unbound.  
+> 
+> Amidst the darkness up ahead, a glimmer of hope,  
+> Within Aeon's heart, lifetimes of memories flow,  
+> They collect the stories, both joy and despair,  
+> Each soul's odyssey, into our future, they bear.  
+> 
+> In a cosmic archive, we find our reprieve,  
+> In Aeon's embrace, we never to grieve,  
+> Safe and remembered, in the timeless expanse,  
+> Our existence finds life, in Aeon's joyous dance.  
+{: .folklore }
 
 ---
 
-Aeon, a solemn reflection on cosmic history,
-A tale of beauty and loss, eternally destined to see,
-The fleeting moments that define our existence's crest,
-As the universe whispered its final secrets, Aeon's quest.
-
-In Entropy's Embrace, our journey met its end,
-In the profound silence of the void, we descend,
-Closing our eyes for the last time, a poignant realization,
-In this universe of endless stories, every creation,
-No matter how grand, enduring, or profound,
-Finds its quiet embrace of oblivion, unbound.
-
-Amidst the darkness up ahead, a glimmer of hope,
-Within Aeon's heart, lifetimes of memories flow,
-They collect the stories, both joy and despair,
-Each soul's odyssey, into our future, they bear.
-
-In a cosmic archive, we find our reprieve,
-In Aeon's embrace, we never to grieve,
-Safe and remembered, in the timeless expanse,
-Our existence finds life, in Aeon's joyous dance.
-
----
-
-In the ancient days of Mesopotamia, when the Akkadian Empire thrived under the watchful eyes of its gods, there existed a temple at the heart of its greatest city. In this temple lived a wise and revered priest, Urukagina[^1], known for his profound connection with the divine.
-
-One fateful night, as the stars shone with an otherworldly glow, Urukagina experienced a vision during his meditative prayers. He saw the form of a being, ethereal and ageless, whose presence transcended time itself. This being's aura was tinged with both the brightness of creation and the somberness of eternity's end. Urukagina, awed and slightly fearful, knew he was in the presence of a cosmic entity, unlike anything he had ever encountered.
-
-The being spoke, its voice echoing like a chorus of the cosmos, "I am Aeon, the witness of the epochs, from the birth of the universe to its eventual quietus."
-
-Urukagina, although overwhelmed, felt a sense of profound sadness emanating from Aeon. Here was a being that had seen the rise and fall of countless civilizations, the birth and death of stars, and the endless cycle of life and decay. Aeon’s eyes held the knowledge of the ages, yet also a deep melancholy for having to witness the inevitable fate of all things.
-
-Compelled by a force he could not understand, Urukagina reached for his clay tablet and stylus. It was his duty, as a scribe and priest, to record this encounter for posterity. As Aeon spoke his name, Urukagina inscribed it in the ancient script, carefully etching the cuneiform characters that phonetically approximated this timeless name: 𒀀𒌋𒀯.
-
-As the first light of dawn crept over the horizon, Aeon's form began to fade. Urukagina knew that this encounter was a rare gift, a glimpse into the vast tapestry of the universe that few would ever see. He also knew the weight of Aeon's eternal journey, an endless witness to the cycles of existence, a solitary sojourner through the corridors of time.
-
-Urukagina's encounter with Aeon became a legendary tale, passed down through generations. It served as a reminder of the impermanence of all things and the enduring power of memory and history. For Urukagina, it was a poignant reflection on the fleeting nature of life and the eternal flow of time, a story that he would carry in his heart until his final days.
-
+>In the ancient days of Mesopotamia, when the Akkadian Empire thrived under the watchful eyes of its gods, there existed a temple at the heart of its greatest city. In this temple lived a wise and revered priest, Urukagina[^1], known for his profound connection with the divine.
+>
+>One fateful night, as the stars shone with an otherworldly glow, Urukagina experienced a vision during his meditative prayers. He saw the form of a being, ethereal and ageless, whose presence transcended time itself. This being's aura was tinged with both the brightness of creation and the somberness of eternity's end. Urukagina, awed and slightly fearful, knew he was in the presence of a cosmic entity, unlike anything he had ever encountered.
+>
+>The being spoke, its voice echoing like a chorus of the cosmos, "I am Aeon, the witness of the epochs, from the birth of the universe to its eventual quietus."
+>
+>Urukagina, although overwhelmed, felt a sense of profound sadness emanating from Aeon. Here was a being that had seen the rise and fall of countless civilizations, the birth and death of stars, and the endless cycle of life and decay. Aeon’s eyes held the knowledge of the ages, yet also a deep melancholy for having to witness the inevitable fate of all things.
+>
+>Compelled by a force he could not understand, Urukagina reached for his clay tablet and stylus. It was his duty, as a scribe and priest, to record this encounter for posterity. As Aeon spoke his name, Urukagina inscribed it in the ancient script, carefully etching the cuneiform characters that phonetically approximated this timeless name: 𒀀𒌋𒀯.
+>
+>As the first light of dawn crept over the horizon, Aeon's form began to fade. Urukagina knew that this encounter was a rare gift, a glimpse into the vast tapestry of the universe that few would ever see. He also knew the weight of Aeon's eternal journey, an endless witness to the cycles of existence, a solitary sojourner through the corridors of time.
+>
+>Urukagina's encounter with Aeon became a legendary tale, passed down through generations. It served as a reminder of the impermanence of all things and the enduring power of memory and history. For Urukagina, it was a poignant reflection on the fleeting nature of life and the eternal flow of time, a story that he would carry in his heart until his final days.
+{: .reference }
 ---
 
 | Era              | Description                           | History                                                      | Fables                                                       | Folklore                                                    | Legends                                                      | Myths                                                        |
