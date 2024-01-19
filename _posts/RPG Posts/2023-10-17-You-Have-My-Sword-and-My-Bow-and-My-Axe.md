@@ -86,6 +86,7 @@ order:
       - [Spray](#spray)
       - [Flight Path](#flight-path)
       - [Scope -- Merged from Source 2](#scope----merged-from-source-2)
+  - [Area Effect](#area-effect)
       - [Area (Radius)](#area-radius)
       - [Blast from source 2](#blast-from-source-2)
       - [Explosive (X)](#explosive-x)
@@ -433,6 +434,8 @@ This property applies to specific thrown weapons, denoting a circular flight pat
 #### Scope -- Merged from Source 2
 
 The weapon has been fitted with vision- enhancing sights, allowing it to put shots on target from far greater ranges. A weapon with the Scope trait ignores the rule that limits all attacks made at a range greater than 100 meters are automatically Extreme Range, so long as the character aims before shooting.
+
+## Area Effect
 
 #### Area (Radius)
 
