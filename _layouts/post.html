@@ -390,7 +390,15 @@
                     {% assign abbreviations = site.data.abbreviations %}
 
                     {% for abbreviation in abbreviations %}
-                        {% assign content = content | replace: abbreviation[0], '<abbr title="' | append: abbreviation[1] | append: '">' | append: abbreviation[0] | append: '</abbr>' %}
+                        {% assign title_start = '<abbr title="' %}
+                        {% assign title_with_abbreviation = title_start | append: abbreviation[1] %}
+                        {% assign title_end = '">' %}
+                        {% assign full_title = title_with_abbreviation | append: title_end %}
+                        {% assign text_start = abbreviation[0] %}
+                        {% assign full_text = full_title | append: text_start %}
+                        {% assign tag_end = '</abbr>' %}
+                        {% assign abbr_tag = full_text | append: tag_end %}
+                        {% assign content = content | replace: abbreviation[0], abbr_tag %}
                     {% endfor %}
 
 
