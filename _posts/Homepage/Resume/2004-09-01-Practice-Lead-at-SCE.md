@@ -67,11 +67,11 @@ coordinates:
 image: img/home/practice-lead.jpg
 image-alt: A man sitting at a computer with 3 screens with code on them
 image-artist: Ted Tschopp
-image-artist-URL: https://www.tedt.org/
+image-artist-URL: https://tedt.org/
 image-credits: 
 image-credits-URL:
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://www.tedt.org/
+image-credits-artist-URL: https://tedt.org/
 image-credits-title: Market Research
 image-description:  A man sitting at a computer with 3 screens with code on them
 image-title: Market Research

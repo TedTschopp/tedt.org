@@ -71,7 +71,7 @@ image-alt: The mysterious army leader and his warriors sleep at the tables.
 image-artist:
 image-artist-URL:
 image-credits:
-image-credits-URL: https://www.tedt.org/
+image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
 image-credits-artist-URL:
 image-credits-title: The Mysterious Army Leader Sleeps

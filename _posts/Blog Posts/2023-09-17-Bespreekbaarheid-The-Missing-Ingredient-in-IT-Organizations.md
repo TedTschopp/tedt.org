@@ -46,7 +46,7 @@ image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
 image-artist:
 image-artist-URL:
 image-credits:
-image-credits-URL: https://www.tedt.org/
+image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
 image-credits-artist-URL:
 image-credits-title: Modern Office

@@ -50,7 +50,7 @@ image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://www.tedt.org/
+image-credits-artist-URL: https://tedt.org/
 image-credits-title: Symbolic Book
 image-description: An image of an open book, with intricate shadows cast from symbolic
     shapes above. The shadows twist and slither on the page, drawing attention to

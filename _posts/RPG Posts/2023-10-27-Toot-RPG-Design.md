@@ -41,7 +41,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: https://www.tedt.org/img/2023-07-22/FAME.png
+image: https://tedt.org/img/2023-07-22/FAME.png
 image-alt: "Photo by Ted Tschopp using Midjourney"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

@@ -49,11 +49,11 @@ coordinates:
 image: /img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.jpg
 image-alt: The Schächental Valley
 image-artist: Ted Tschopp
-image-artist-URL: https://www.tedt.org/
+image-artist-URL: https://tedt.org/
 image-credits: 
 image-credits-URL: 
 image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://www.tedt.org/
+image-credits-artist-URL: https://tedt.org/
 image-credits-title: The Schächental Valley
 image-description:  The Schächental Valley
 image-title:  The Schächental Valley

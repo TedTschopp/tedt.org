@@ -44,9 +44,9 @@ coordinates:
 image: '/img/2004-08-25/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
 image-alt:
 image-artist: 'Ted Tschopp and Midjourney'
-image-artist-URL: 'https://www.tedt.org/'
+image-artist-URL: 'https://tedt.org/'
 image-credits: 'Ted Tschopp and Midjourney'
-image-credits-URL: 'https://www.tedt.org/'
+image-credits-URL: 'https://tedt.org/'
 image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:

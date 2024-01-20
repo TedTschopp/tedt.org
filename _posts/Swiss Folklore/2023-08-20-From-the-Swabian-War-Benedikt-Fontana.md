@@ -78,7 +78,7 @@ image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana
 image-artist:
 image-artist-URL:
 image-credits:
-image-credits-URL: https://www.tedt.org/
+image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
 image-credits-artist-URL:
 image-credits-title: 'Storming the Bulwark: Benedikt Fontana and Swiss Warriors''

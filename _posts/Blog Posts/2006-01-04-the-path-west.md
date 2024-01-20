@@ -44,11 +44,11 @@ coordinates:
 image: /img/2006-01/The-Path-West.jpg
 image-alt: sands slip through outstretched fingers, A serene beach at sunset, waves gently lap the shore, A lone figure stands in contemplation, reflections on time, forgiveness, life's journey expressed 
 image-artist: Ted Tschopp
-image-artist-URL: https://www.tedt.org/
+image-artist-URL: https://tedt.org/
 image-credits:
 image-credits-URL:
 image-credits-artist:
-image-credits-artist-URL: https://www.tedt.org/
+image-credits-artist-URL: https://tedt.org/
 image-credits-title: The Path West
 image-description: sands slip through outstretched fingers, A serene beach at sunset, waves gently lap the shore, A lone figure stands in contemplation, reflections on time, forgiveness, life's journey expressed 
 image-title: The Path West
