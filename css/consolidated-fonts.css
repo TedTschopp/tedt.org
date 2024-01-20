@@ -5,8 +5,7 @@
 @font-face {
     font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum.ttf')   format('truetype');
+	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -15,8 +14,7 @@
 @font-face {
     font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum-Bold.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum-Bold.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum-Bold.ttf')   format('truetype');
+	     url('https://tedt.org/fonts/QTOptimum-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -24,9 +22,8 @@
 }
 @font-face {
     font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum-Italic.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum-Italic.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum-Italic.ttf')   format('truetype');
+    src: url('https://tedt.org/fonts/QTOptimum-Italic.otf')   format('opentype'),
+	     url('https://tedt.org/fonts/QTOptimum-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 	text-rendering: optimizeLegibility;
@@ -34,9 +31,8 @@
 }
 @font-face {
     font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum-BoldItalic.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum-BoldItalic.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum-BoldItalic.ttf')   format('truetype');
+    src: url('https://tedt.org/fonts/QTOptimum-BoldItalic.otf')   format('opentype'),
+	     url('https://tedt.org/fonts/QTOptimum-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
 	text-rendering: optimizeLegibility;
@@ -44,9 +40,8 @@
 }
 @font-face {
 	font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum.ttf')   format('truetype');
+    src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
+	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -54,9 +49,8 @@
  }
  @font-face {
 	font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2'),
-	     url('https://tedt.org/fonts/QTOptimum.ttf')   format('truetype');
+    src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
+	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
 	font-weight: 400;
 	font-style: Italic;
 	text-rendering: optimizeLegibility;
@@ -66,8 +60,7 @@
 @font-face {
     font-family: 'Checkbook';
     src: url('https://tedt.org/fonts/CHECKBK0.otf')   format('opentype'),
-         url('https://tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
-         url('https://tedt.org/fonts/CHECKBK0.ttf')   format('truetype');
+         url('https://tedt.org/fonts/CHECKBK0.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
