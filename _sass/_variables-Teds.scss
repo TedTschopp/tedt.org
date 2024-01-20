@@ -303,7 +303,7 @@ $dark:       #101820 !default;
 $primary:    #2D3C59 !default;
 $secondary:  #F2884B !default;
 $info:       #00a9e0 !default;
-$accent1:    #F2BC57!default;
+$accent1:    #F2BC57 !default;
 $accent2:    #6F1A07 !default;
 $accent3:    #2B2118 !default;
 $success:    #00b339 !default;
@@ -473,7 +473,7 @@ $body-emphasis-color:       $black !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $accent1 !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
