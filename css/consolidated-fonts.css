@@ -2,7 +2,9 @@
 
 @font-face {
     font-family: 'Checkbook';
-    src: url('https://www.tedt.org/fonts/CHECKBK0.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/CHECKBK0.otf')   format('opentype'),
+         url('https://www.tedt.org/fonts/CHECKBK0.woff2') format('woff2'),
+         url('https://www.tedt.org/fonts/CHECKBK0.ttf')   format('truetype');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -11,7 +13,9 @@
 
 @font-face {
     font-family: 'Optimum';
-    src: url('https://www.tedt.org/fonts/QTOptimum.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum.ttf')   format('truetype');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -19,7 +23,9 @@
 }
 @font-face {
     font-family: 'Optimum';
-    src: url('https://www.tedt.org/fonts/QTOptimum-Bold.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum-Bold.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum-Bold.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum-Bold.ttf')   format('truetype');
     font-weight: bold;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -27,7 +33,9 @@
 }
 @font-face {
     font-family: 'Optimum';
-    src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum-Italic.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum-Italic.ttf')   format('truetype');
     font-weight: normal;
     font-style: italic;
 	text-rendering: optimizeLegibility;
@@ -35,7 +43,9 @@
 }
 @font-face {
     font-family: 'Optimum';
-    src: url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum-BoldItalic.ttf')   format('truetype');
     font-weight: bold;
     font-style: italic;
 	text-rendering: optimizeLegibility;
@@ -43,7 +53,9 @@
 }
 @font-face {
 	font-family: 'Optimum';
-	src: url('https://www.tedt.org/fonts/QTOptimum.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum.ttf')   format('truetype');
 	font-weight: 400;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -51,7 +63,9 @@
  }
  @font-face {
 	font-family: 'Optimum';
-	src: url('https://www.tedt.org/fonts/QTOptimum-Italic.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/QTOptimum.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/QTOptimum.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/QTOptimum.ttf')   format('truetype');
 	font-weight: 400;
 	font-style: Italic;
 	text-rendering: optimizeLegibility;
@@ -62,7 +76,8 @@
 
 @font-face {
     font-family: 'DanaLibraryHand-Regular';
-    src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype');
+    src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf')  format('opentype')
+	     url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.woff2') format('woff2');
     /* Library card hand  */
     font-style: normal;
     font-weight: normal;
@@ -76,9 +91,8 @@
 
 @font-face {
     font-family: 'Duvall';
-    src: url('https://www.tedt.org/fonts/DuvallSmallCaps.eot');
     src: url('https://www.tedt.org/fonts/DuvallSmallCaps.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/DuvallSmallCaps.woff') format('woff');
+         url('https://www.tedt.org/fonts/DuvallSmallCaps.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -86,7 +100,8 @@
 
 @font-face {
     font-family: 'Fondamento';
-    src: url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
+    src: url('https://www.tedt.org/fonts/Fondamento-Regular.otf') format('opentype'),
+		 url('https://www.tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -94,7 +109,8 @@
 }
 @font-face {
     font-family: 'Fondamento';
-    src: url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
+    src: url('https://www.tedt.org/fonts/Fondamento-Italic.otf') format('opentype'),
+		 url('https://www.tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: Italic;
 	text-rendering: optimizeLegibility;
@@ -103,9 +119,8 @@
 
 @font-face {
     font-family: 'GameEmpire';
-    src: url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.eot');
     src: url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff') format('woff');
+         url('https://www.tedt.org/fonts/Algerian-Basic-D-OT_3025.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -114,8 +129,9 @@
 
 @font-face {
     font-family: 'IrwinAllen';
-    src: url('https://www.tedt.org/fonts/IrwinAllen.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/IrwinAllen.woff') format('woff');
+    src: url('https://www.tedt.org/fonts/IrwinAllen.otf') format('opentype'),
+         url('https://www.tedt.org/fonts/IrwinAllen.woff2') format('woff2'),
+         url('https://www.tedt.org/fonts/IrwinAllen.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -124,9 +140,8 @@
 
 @font-face {
     font-family: 'lp1_regular';
-    src: url('https://www.tedt.org/fonts/lp1-regular-webfont.eot');
     src: url('https://www.tedt.org/fonts/lp1-regular-webfont.woff') format('woff'),
-    url('https://www.tedt.org/fonts/lp1-regular-webfont.ttf') format('truetype');
+         url('https://www.tedt.org/fonts/lp1-regular-webfont.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -135,8 +150,9 @@
 
 @font-face {
     font-family: 'lowwe';
-    src: url('https://www.tedt.org/fonts/lowwe.woff2') format('woff2'),
-    url('https://www.tedt.org/fonts/lowwe.woff') format('woff');
+    src: url('https://www.tedt.org/fonts/lowwe.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/lowwe.woff2') format('woff2'),
+         url('https://www.tedt.org/fonts/lowwe.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -145,8 +161,10 @@
 
 @font-face {
 	font-family: 'UngerFrakturZierbuchstaben';
-	src: url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.otf') format('opentype');
-	font-weight: normal;
+	src: url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.woff2') format('woff2'),
+	     url('https://www.tedt.org/fonts/UngerFrakturZierbuchstaben.woff') format('woff');
+    font-weight: normal;
 	font-style: normal;
 	/* ONLY GOOD FOR FIRST LETTER ILLUMINATED GERMAN FONT */
 	font-style: normal;
@@ -161,20 +179,7 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
- @font-face {
-	font-family: 'IMFellDWPicaSC';
-	src: url('https://www.tedt.org/fonts/IMFellDWPicaSC-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
- }
- @font-face {
-	font-family: 'IMFellDWPica';
-	src: url('https://www.tedt.org/fonts/IMFellDWPica-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
-}
+
 @font-face {
 	font-family: 'coelnische_current_fraktur';
 	src: url('https://www.tedt.org/fonts/COELCF__.TTF') format('truetype');
@@ -193,8 +198,9 @@
 }
  @font-face {
 	font-family: 'RegentUNZ';
-	src: url('https://www.tedt.org/fonts/RegentUNZ.ttf') format('truetype');
-	/* GREAT TITLE CASE FONT */
+	src: url('https://www.tedt.org/fonts/RegentUNZ.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/RegentUNZ.woff2') format('woff2');
+    /* GREAT TITLE CASE FONT */
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
@@ -215,22 +221,11 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
-@font-face {
-	font-family: 'DanaLibraryHand-Regular';
-	src: url('https://www.tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype');
-	/* Library card hand  */
-	font-style: normal;
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
-}
 
 @font-face {
 	font-family: 'AntiquarianScribe';
-	src: url('https://www.tedt.org/fonts/AntiquarianScribe.eot'); /* IE9 Compat Modes */
-	src: url('https://www.tedt.org/fonts/AntiquarianScribe.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('https://www.tedt.org/fonts/AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
-		url('https://www.tedt.org/fonts/AntiquarianScribe.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('https://www.tedt.org/fonts/AntiquarianScribe.svg#AntiquarianScribe') format('svg'); /* Legacy iOS */
+	src: url('https://www.tedt.org/fonts/AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
+		 url('https://www.tedt.org/fonts/AntiquarianScribe.ttf') format('truetype'); /* Safari, Android, iOS */
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
@@ -239,11 +234,8 @@
 
 @font-face {
 	font-family: 'TerraIgnota';
-	src: url('https://www.tedt.org/fonts/TerraIgnota.eot'); /* IE9 Compat Modes */
-	src: url('https://www.tedt.org/fonts/TerraIgnota.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('https://www.tedt.org/fonts/TerraIgnota.woff') format('woff'), /* Modern Browsers */
-		url('https://www.tedt.org/fonts/TerraIgnota.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('https://www.tedt.org/fonts/TerraIgnota.svg#TerraIgnota') format('svg'); /* Legacy iOS */
+	src:  url('https://www.tedt.org/fonts/TerraIgnota.woff') format('woff'), /* Modern Browsers */
+		 url('https://www.tedt.org/fonts/TerraIgnota.ttf') format('truetype'); /* Safari, Android, iOS */
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
@@ -278,7 +270,8 @@
  }
  @font-face {
 	font-family: 'Ringbearer';
-	src: url('https://www.tedt.org/fonts/RINGM___.TTF') format('truetype');
+	src: url('https://www.tedt.org/fonts/RINGM___.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/RINGM___.TTF') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
@@ -286,22 +279,26 @@
 
  @font-face {
 	font-family: 'IM Fell English';
-	src: url('https://www.tedt.org/fonts/FeENrm2.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/FeENrm2.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/FeENrm2.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IM Fell English';
-	src: url('https://www.tedt.org/fonts/FeENsc2.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/FeENsc2.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/FeENsc2.ttf') format('truetype');
 	font-style: normal;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
  }
  @font-face {
 	font-family: 'IM Fell English';
-	src: url('https://www.tedt.org/fonts/FeENit2.ttf') format('truetype');
+	src: url('https://www.tedt.org/fonts/FeENit2.otf') format('opentype'),
+	     url('https://www.tedt.org/fonts/FeENit2.ttf') format('truetype');
 	font-style: italic;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
  }
+
