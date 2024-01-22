@@ -48,3 +48,28 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+  # Check RSS feed for changes
+  check-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Fetch RSS feed
+        run: |
+          curl https://truesteamachievements.com/friendfeedrss.aspx?gamerid=90878 -o feed.xml
+
+      - name: Check for changes
+        id: check
+        run: |
+          git diff --exit-code --quiet feed.xml || echo "::set-output name=changed::true"
+
+      - name: Commit changes
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add feed.xml
+          git commit -m "Update RSS feed"
+          git push
