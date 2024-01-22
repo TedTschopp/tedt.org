@@ -58,11 +58,11 @@ jobs:
 
       - name: Fetch RSS feed
         run: |
-          curl -o feed.xml \
+          curl -o - \
           -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" \
           -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" \
           -H "Accept-Language: en-US,en;q=0.9" \
-          "https://truesteamachievements.com/friendfeedrss.aspx?gamerid=90878"
+          "https://truesteamachievements.com/friendfeedrss.aspx?gamerid=90878" | tee feed.xml
 
       - name: Check for changes
         id: check
