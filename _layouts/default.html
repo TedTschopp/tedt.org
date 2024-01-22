@@ -73,6 +73,8 @@
                                       <!-- Do Nothing -->
                                   {% elsif post.categories contains "Draft" or post.category == "Draft" %}
                                       <!-- Do Nothing -->
+                                  {% elsif post.categories contains "Role Playing Games" or post.category == "Role Playing Games" %}
+                                      <!-- Do Nothing -->
                                   {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
                                       <!-- Do Nothing -->
                                   {% elsif post.categories contains "Quotes" or post.category == "Quotes" or post.layout contains "quotes" %}
@@ -129,7 +131,7 @@
                               <p class="card-text">A collection of writings on Role Playing Games I am working on at this time. Some of it is really bad, and some of it I am proud of. All of it can be made better.</p>
                           </div>
                           <div class="card-footer p-4 py-3 h-100">
-                              {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft'" %}
+                              {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Draft' or post.categories contains 'Role Playing Games'" %}
                               {% for post in posts-drafts limit:3 %}
                                   <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %}--></h4>
                                   {% if post.teaser %}

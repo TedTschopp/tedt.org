@@ -31,7 +31,7 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: /img/cyberpunk_club_outside_in_Los_Angeles.jpg
+image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.jpg
 image-alt: 
 image-artist: Ted Tschopp
 image-artist-URL: 
@@ -52,4 +52,6 @@ order:
 
 I was in an online discussion about Shadowrun and a friend made an offhand comments about the uselessness of an Ork Accountant in Shadowrun.  This was my response.  Numbers is an Ork, of the Satyr variety found mainly in Europe.  His parents are corporate executives and fast tracked him into being an executive as well.  He got his degree in business adminstration with a focus on accounting and audits.  He had a full backstory about working for a nightclub doing their books and dreaming of owning a whole chain of clubs across California.  
 
-<iframe src="https://tedt.org/RPG/Shadowrun/Numbers.htm" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div style="position: relative; overflow: hidden; padding-top: 100%;">
+    <iframe src="https://tedt.org/RPG/Shadowrun/Numbers.htm" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+</div>
