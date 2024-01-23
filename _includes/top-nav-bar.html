@@ -30,7 +30,12 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                       {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
                       {% for post in sorted_homepage %}
-                          <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+
+                        {% for tag in post.tags %}
+                            {% if tag == 'Resume' %}
+                              <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
                       {% endfor %}
                     </ul>
                   </li>
@@ -41,8 +46,14 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                       {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
                       {% for post in sorted_homepage %}
-                          <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+
+                        {% for tag in post.tags %}
+                            {% if tag == 'Project' %}
+                              <li><a class="dropdown-item" href="{{site.siteurl}}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
                       {% endfor %}
+
                     </ul>
                   </li>
                   <li class="nav-item">

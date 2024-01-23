@@ -214,7 +214,7 @@
                       {% assign count = count | plus: 1 %}
                       {% assign mod = count | modulo: 2 %}
  
-                       {% for tag in post.tags %}
+                      {% for tag in post.tags %}
                           
                           {% if post.company != blank and post.company != null %}
                             {% assign watermark = post.company | append: "-watermark" %}
