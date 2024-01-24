@@ -213,7 +213,7 @@
                           {% endif %}
 
                           {% if tag == 'Resume' %}
-                            {% assign this-post-title = post.title | append: ", " | append: post.location.name | " from " | post.start-date | append: " to " | append: post.stop-date %}
+                            {% assign this-post-title = post.title | append: ", " | append: post.location.name | append: " from " | append: post.start-date | append: " to " | append: post.stop-date %}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
