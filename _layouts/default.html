@@ -213,7 +213,7 @@
                           {% endif %}
 
                           {% if tag == 'Resume' %}
-                            {% assign this-post-title = post.start-date | append: " to " | append: post.stop-date | append: ", " | append: post.title | append: ", " | append: post.location.name %}
+                            {% assign this-post-title = post.title | append: ", " | append: post.location.name | " from " | post.start-date | append: " to " | append: post.stop-date %}
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
@@ -309,13 +309,11 @@
     </div>
     {% endcomment %}
 
-
   <!-- Footer -->
   {% include footer.html %}
 
   <!-- Bootstrap core JavaScript -->
   {% include js-bottom-of-body.html %}
-
 
   </body>
 </html>
