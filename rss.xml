@@ -5,7 +5,7 @@ layout: null
 <!-- -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="https://tedt.org/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{site.siteurl}}/rss.xml" rel="self" type="application/rss+xml" />
     {% if site.name != null or site.name != empty %}
     <title>{{ site.name | xml_escape }} - Articles</title>
     {% else %}

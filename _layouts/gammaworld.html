@@ -31,7 +31,7 @@
      <!-- Scripts that need to be at the end of the header -->
      {% include scripts.html %}
 
-    <link href="https://tedt.org/css/gamma-world-cards.css" rel="stylesheet">
+    <link href="{{site.siteurl}}/css/gamma-world-cards.css" rel="stylesheet">
 
     <style type="text/css">
         
@@ -43,7 +43,7 @@
             } 
 
     </style>
-    <script src="https://tedt.org/js/jscii.js"></script>
+    <script src="{{site.siteurl}}/js/jscii.js"></script>
 
 </head>
 
@@ -55,7 +55,7 @@
             <td id="paper_printarea" class="tech-v">
                          <!--
                          <figure>
-                              <img style="width: 100%; mix-blend-mode: multiply;" class="img-responsive img-thumbnail" src="https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
+                              <img style="width: 100%; mix-blend-mode: multiply;" class="img-responsive img-thumbnail" src="{{site.siteurl}}/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
                               <pre id="ascii-container-image"></pre>
                          </figure>
                          -->
@@ -64,7 +64,7 @@
                               <h1 class="MCC">{{ page.title }}</h1>
                          {% endif %}
 
-                         <img style="float: right;" src="https://tedt.org/RPG/MCC-GW/images/Monster-Manual/{{ page.creature_name }}.png" width="12.5%" onError="this.onerror=null;this.src='https://tedt.org/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
+                         <img style="float: right;" src="{{site.siteurl}}/RPG/MCC-GW/images/Monster-Manual/{{ page.creature_name }}.png" width="12.5%" onError="this.onerror=null;this.src='{{site.siteurl}}/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
 
                          {% if page.author != "" %}
                               <strong>Reported By:</strong> {{ page.author }}
@@ -390,7 +390,7 @@
                          {% endfor %}
 
                          {% if Bestiary.title != page.title %}
-                              <li><a class="color: #00008B" style="break-inside: avoid-column;" href="https://tedt.org/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}}</a></li>
+                              <li><a class="color: #00008B" style="break-inside: avoid-column;" href="{{site.siteurl}}/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}}</a></li>
                          {% else %}
                               <li><STRONG>🐾🛠️⚙️☢️{{Bestiary.title}}☢️⚙️🛠️🐾</STRONG></li>
                          {% endif %}
