@@ -127,12 +127,13 @@
                     {% endif %}
 
                     <hr>
-                    
+                    {% comment %}
                     {% include publish-and-update-date-time-v2.html %}
+                    {% endcomment %}
 
                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a></br>
 
-                    <img class="webmention-svg" width="1em" height="1em" src="{{site.siteurl}}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a></br>
+                    <img class="webmention-svg" width="1em" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a></br>
                     
 
                     {% if page.category %}
@@ -441,7 +442,7 @@
                         <div class="col-12">
                             {% assign categories = page.categories %}
                             {% for category in categories %}
-                                <h4>Latest in <a style="text-decoration: none;" href="{{site.siteurl}}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{site.siteurl}}/category/{{category|slugize}}">{{category}}</a></h4>
+                                <h4>Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
                                     <ul lass="list-unstyled">
                                         {% for post in site.categories[category] limit:5 %}

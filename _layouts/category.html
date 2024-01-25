@@ -53,7 +53,7 @@
                     {% assign category = page.category | downcase | slugify %}
                     {% assign image = category | append: ".png" %}
                     <figure>
-                        <img class="img-responsive img-thumbnail" src="{{site.siteurl}}/img/categories/{{ image }}" alt="{{page.category}}">
+                        <img class="img-responsive img-thumbnail" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
                     </figure>
                     <!-- Calculate the pages description if one isn't present -->
                     {% if page.description == null or page.description == empty %}

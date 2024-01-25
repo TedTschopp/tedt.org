@@ -27,8 +27,8 @@
     {% include all-css-includes.html %}
 
     <!-- Mastodon Stuff-->
-    <link rel="stylesheet" href="{{site.siteurl}}/mastodon/mastodon-timeline.css">
-    <script src='{{site.siteurl}}/mastodon/mastodon-timeline.js'></script>
+    <link rel="stylesheet" href="{{ site.siteurl }}/mastodon/mastodon-timeline.css">
+    <script src='{{ site.siteurl }}/mastodon/mastodon-timeline.js'></script>
 
     <!-- END OF CSS INCLUDE -->
 
@@ -57,7 +57,7 @@
           <div class="container h-100 position-relative" style="top: -75px;">
               <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
                   <div class="col">
-                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{site.siteurl}}/img/home/blog.jpg" />
+                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{ site.siteurl }}/img/home/blog.jpg" />
                           <div class="card-body pt-5 p-4">
                               <h2 class="card-title" id="blog">Blog</h2>
                               <h5 class="text-muted card-subtitle mb-2">Exploring the Intersection of Tech, Theology, and Imagination</h5>
@@ -99,7 +99,7 @@
                       </div>
                   </div>
                   <div class="col">
-                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{site.siteurl}}/img/home/Folklore.jpg" />
+                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{ site.siteurl }}/img/home/Folklore.jpg" />
                           <div class="card-body pt-5 p-4">
                               <h2 class="card-title" id="folklore">Swiss Folklore</h2>
                               <h5 class="text-muted card-subtitle mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h5>
@@ -121,7 +121,7 @@
                       </div>
                   </div>
                   <div class="col">
-                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{site.siteurl}}/img/home/table.jpg" />
+                      <div class="card h-100"><img class="card-img-top w-100 d-block fit-cover" src="{{ site.siteurl }}/img/home/table.jpg" />
                           <div class="card-body pt-5 p-4">
                               <h2 class="card-title" class="rpg">Role Playing Games</h2>
                               <h5 class="text-muted card-subtitle mb-2">Rolling the Dice: Rough Sketches to Refined Adventures</h5>
@@ -242,7 +242,7 @@
                             <div class="row g-0 align-items-center">
                               {% if mod != 1 %}<!-- odd -->
                                 <div class="col-md-4 d-flex align-items-center">
-                                  <img src="{{site.siteurl}}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                                  <img src="{{ site.siteurl }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                                 </div>
                                 <div class="col-md-8">
                                   <div class="card-body align-items-center {{ watermark }}">
@@ -280,7 +280,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-4 d-flex align-items-center">
-                                  <img src="{{site.siteurl}}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                                  <img src="{{ site.siteurl }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                                 </div>
                               {% endif %}
                             </div>
@@ -296,7 +296,7 @@
     {% comment %}
     <a name="social"></a>
     <div class="row g-0">
-      <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{site.siteurl}}/img/home/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.jpg" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
+      <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{ site.siteurl }}/img/home/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.jpg" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
       <div class="col-lg-6 my-auto showcase-text align-middle">
         <h2>Social Media Posts</h2>
         <p class="lead mb-0">My posts over on Mastodon</p>

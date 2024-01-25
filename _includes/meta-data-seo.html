@@ -43,7 +43,7 @@
 
 	{% if full-page-url == home-page-url %}
 	    <meta property="fb:app_id"           content="{{site.facebook_app_id}}" />
-	    <meta property="og:image"            content="{{site.siteurl}}/img/webpage_thumbnail.png">
+	    <meta property="og:image"            content="{{ site.siteurl }}/img/webpage_thumbnail.png">
 	    <meta property="og:image:alt"        content="{{site.name}}">
 	    <meta property="og:site_name"        content="{{ site.name }}">
 	    <meta property="og:title"            content="{{ this_page_title }}">
@@ -60,7 +60,7 @@
 	        <meta property="og:image"            content="{{ site.siteurl }}{{ page.image }}">
 	        <meta property="og:image:alt"        content="{{ page.title }}">
 	    {% else %}
-	        <meta property="og:image"            content="{{site.siteurl}}/img/webpage_thumbnail.png">
+	        <meta property="og:image"            content="{{ site.siteurl }}/img/TT.png">
 	        <meta property="og:image:alt"        content="{{ site.name }}">
 	    {% endif %}
 	    <meta property="fb:app_id"           content="{{facebook_app_id}}" />
@@ -94,7 +94,7 @@
 	    {% if page.image %}
 	        <meta property="twitter:image"            content="{{ site.siteurl }}{{ page.image }}">
 	    {% else %}
-	        <meta property="twitter:image"            content="{{site.siteurl}}/img/webpage_thumbnail.png">
+	        <meta property="twitter:image"            content="{{ site.siteurl }}/img/TT.png">
 	    {% endif %}
 
 	    {% if page.image-credits %}
@@ -105,7 +105,7 @@
 	{% endif %}
 
     <!-- Favicon Meta Tags.  -->
-    <link rel="shortcut icon" href="{{site.siteurl}}/img/favicon.ico">
+    <link rel="shortcut icon" href="{{ site.siteurl }}/img/favicon.ico">
     <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-196x196.png" sizes="196x196" />
     <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-32x32.png" sizes="32x32" />

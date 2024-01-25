@@ -1,28 +1,28 @@
 
     <!-- Fonts:  Consolidate all Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/consolidated-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/consolidated-fonts.css">
 
     <!-- Logos:  Consolidate all Logo Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/logo-and-company-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/logo-and-company-fonts.css">
 
     <!-- Add in Global Bootstrap 5.3 CSS File from SCSS-->
-    <link href="{{site.siteurl}}/css/bootstrap-build.css" rel="stylesheet">
+    <link href="{{ site.siteurl }}/css/bootstrap-build.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url %}
-        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/main-landing-page.css">
-        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/timeline.css">
-        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/Link-Tree.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/main-landing-page.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/Link-Tree.css">
     {% else %}    
-        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/blog-post.css">
-        <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/solarized-dark.css" >
+        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/blog-post.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/solarized-dark.css" >
     {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/web-mention.css">
-    <link rel="stylesheet" type="text/css" href="{{site.siteurl}}/css/web-mention.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/web-mention.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/web-mention.css">
 
     {% if this_is_a_draft == true %}
-        <link href="{{site.siteurl}}/css/draft-blog-post.css" rel="stylesheet">
+        <link href="{{ site.siteurl }}/css/draft-blog-post.css" rel="stylesheet">
     {% endif %}
 
     <!-- Font Awesome -->
