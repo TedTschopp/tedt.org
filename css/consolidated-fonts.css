@@ -67,7 +67,7 @@
 
 }
 @font-face {
-    font-family: 'DanaLibraryHand';
+    font-family: 'Dana Library Hand';
     src: url('https://tedt.org/fonts/DanaLibraryHand-Regular.ttf') format('truetype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Regular.otf') format('opentype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Regular.woff2') format('woff2');
@@ -80,7 +80,7 @@
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-    font-family: 'DanaLibraryHand';
+    font-family: 'Dana Library Hand';
     src: url('https://tedt.org/fonts/DanaLibraryHand-Bold.ttf') format('truetype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Bold.otf') format('opentype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Bold.woff2') format('woff2');
@@ -93,7 +93,7 @@
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-    font-family: 'DanaLibraryHand';
+    font-family: 'Dana Library Hand';
     src: url('https://tedt.org/fonts/DanaLibraryHand-Italic.ttf') format('truetype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Italic.otf') format('opentype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Italic.woff2') format('woff2');
@@ -106,7 +106,7 @@
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-    font-family: 'DanaLibraryHand';
+    font-family: 'Dana Library Hand';
     src: url('https://tedt.org/fonts/DanaLibraryHand-Bolditalic.ttf') format('truetype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Bolditalic.otf') format('opentype'),
 	     url('https://tedt.org/fonts/DanaLibraryHand-Bolditalic.woff2') format('woff2');
