@@ -29,11 +29,19 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                       {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                      {% assign last_company = "" %}
+                      {% assign new_company = false %}
                       {% for post in sorted_homepage %}
 
                         {% for tag in post.tags %}
                             {% if post.company != blank and post.company != null %}
+                              {% if post.company != last_company %}
+                                {% assign new_company = true %}
+                              {% else %}
+                                {% assign new_company = false %}
+                              {% endif %}
                               {% assign watermark = post.company%}
+                              {% assign last_company = post.company %}
                             {% else %}
                               {% assign watermark = "no-watermark" %}
                             {% endif %}
@@ -44,7 +52,14 @@
                               {% assign this-post-title = post.title %}
                             {% endif %}
                             {% if tag == 'Resume' %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1em;"> - {{ this-post-title }}</a></li>
+                              {% if new_company %}
+                                <li><hr class="dropdown-divider"></li>
+                              {% endif %}
+                                {% if watermark != "no-watermark" %}
+                                  <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                                {% else %}
+                                  <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                       {% endfor %}
