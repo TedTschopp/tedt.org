@@ -44,7 +44,7 @@
                               {% assign this-post-title = post.title %}
                             {% endif %}
                             {% if tag == 'Resume' %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1em;"> - {{ post.title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1em;"> - {{ this-post-title }}</a></li>
                             {% endif %}
                         {% endfor %}
                       {% endfor %}
