@@ -59,7 +59,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-07-28/ola-larsson-genlabbalpha.jpg
+image: /img/2018-07/ola-larsson-genlabbalpha.jpg
 image-alt:
 image-artist:
 image-artist-URL:

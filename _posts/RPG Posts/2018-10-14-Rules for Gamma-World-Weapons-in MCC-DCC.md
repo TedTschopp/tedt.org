@@ -43,7 +43,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-10-14/seth-justus-huntersalienguns.jpg
+image: /img/2018-10/seth-justus-huntersalienguns.jpg
 image-alt:
 image-artist:
 image-artist-URL:

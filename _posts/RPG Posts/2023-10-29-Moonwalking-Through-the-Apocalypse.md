@@ -54,7 +54,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2023-10-29/Michael-JX Moonwalking Through the Apocalypse.png
+image: /img/2023-10/Michael-JX Moonwalking Through the Apocalypse.png
 image-alt: "The imposing figure of Michael-JX in a barren wasteland"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

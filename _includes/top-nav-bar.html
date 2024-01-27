@@ -32,8 +32,19 @@
                       {% for post in sorted_homepage %}
 
                         {% for tag in post.tags %}
+                            {% if post.company != blank and post.company != null %}
+                              {% assign watermark = post.company%}
+                            {% else %}
+                              {% assign watermark = "no-watermark" %}
+                            {% endif %}
+
                             {% if tag == 'Resume' %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ post.title }}</a></li>
+                              {% assign this-post-title = append: post.start-date | append: " to " | append: post.stop-date | append: " " | append: post.title | append: ", " | append: post.location.name  %}
+                            {% else %}
+                              {% assign this-post-title = post.title %}
+                            {% endif %}
+                            {% if tag == 'Resume' %}
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1em;"> - {{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                       {% endfor %}

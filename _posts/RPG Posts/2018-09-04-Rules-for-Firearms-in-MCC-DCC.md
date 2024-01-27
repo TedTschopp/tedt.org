@@ -46,7 +46,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-09-04/MCC-Guns.jpg
+image: /img/2018-09/MCC-Guns.jpg
 image-alt:
 image-artist:
 image-artist-URL:

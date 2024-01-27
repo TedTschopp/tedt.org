@@ -42,7 +42,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-11-02/District-9-Alien-Fuel-Cell-by-Josh-Haberman.jpg
+image: /img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.jpg
 image-alt:
 image-artist:
 image-artist-URL:

@@ -41,7 +41,7 @@ coordinates:
     longitude: -118.069288
 
 
-image: '/img/2004-08-25/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
+image: '/img/2004-08/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
 image-alt:
 image-artist: 'Ted Tschopp and Midjourney'
 image-artist-URL: 'https://tedt.org/'
