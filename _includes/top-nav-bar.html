@@ -47,7 +47,7 @@
                             {% endif %}
 
                             {% if tag == 'Resume' %}
-                              {% assign this-post-title = append: post.start-date | append: " to " | append: post.stop-date | append: " " | append: post.title | append: ", " | append: post.location.name  %}
+                              {% assign this-post-title = post.start-date | append: " to " | append: post.stop-date | append: " " | append: post.title | append: ", " | append: post.location.name  %}
                             {% else %}
                               {% assign this-post-title = post.title %}
                             {% endif %}
