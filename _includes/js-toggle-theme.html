@@ -1,12 +1,27 @@
 <script>
-function toggleTheme() {
-  var htmlTag = document.getElementsByTagName('html')[0];
-  var currentTheme = htmlTag.getAttribute('data-bs-theme');
-  
-  if (currentTheme === 'dark') {
-    htmlTag.setAttribute('data-bs-theme', 'light');
-  } else {
-    htmlTag.setAttribute('data-bs-theme', 'dark');
+  const toggleTheme = () => {
+    const htmlTag = document.getElementsByTagName('html')[0];
+    const currentTheme = htmlTag.getAttribute('data-bs-theme');
+    htmlTag.setAttribute('data-bs-theme', currentTheme === 'dark' ? 'light' : 'dark');
   }
-}
+
+  $(document).ready(() => {
+    // Set the active theme on page load
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      $('.dropdown-item-theme').each(function() {
+        $(this).toggleClass('active', $(this).data('bs-theme-value') === currentTheme);
+      });
+    }
+  
+    // Save the theme selection into localStorage when a dropdown item is clicked
+    $('.dropdown-item-theme').click(function() {
+      const selectedTheme = $(this).data('bs-theme-value');
+      localStorage.setItem('theme', selectedTheme);
+  
+      // Set the active class
+      $('.dropdown-item-theme').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
 </script>
