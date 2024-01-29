@@ -47,7 +47,7 @@
                             {% endif %}
 
                             {% if tag == 'Resume' %}
-                              {% assign this-post-title = append: post.title | append: ", " | append: post.location.name  %}
+                              {% assign this-post-title = post.title %}
                             {% else %}
                               {% assign this-post-title = post.title %}
                             {% endif %}
