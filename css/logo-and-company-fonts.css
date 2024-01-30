@@ -153,6 +153,6 @@ a:hover .MCC {
 }
 
 .Tschopp-watermark::before {
-    background: url( /img/TT.png) no-repeat center center;
+    background: url( /img/home/logo-Tschopp.png) no-repeat center center;
     background-size: 25% ; /* or contain */
 }
