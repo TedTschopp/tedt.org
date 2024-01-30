@@ -93,8 +93,9 @@
                           {% else %}
                             {% assign this-post-title = post.title %}
                           {% endif %}
+                          
                           {% if tag == 'Project' %}
-                            {% if new_company %}
+                            {% if new_company and last_company != "" %}
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
