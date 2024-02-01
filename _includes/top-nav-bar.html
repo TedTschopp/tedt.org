@@ -73,6 +73,7 @@
                       {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
+                      {% assign first_entry = true %}
 
                       {% for post in sorted_homepage %}
                         {% for tag in post.tags %}
@@ -90,12 +91,7 @@
 
                           {% if tag == 'Project' %}
                             {% assign this-post-title = post.title %}
-                          {% else %}
-                            {% assign this-post-title = post.title %}
-                          {% endif %}
-                          
-                          {% if tag == 'Project' %}
-                            {% if new_company and last_company != "" %}
+                            {% if new_company and not first_entry %}
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
@@ -103,10 +99,10 @@
                             {% else %}
                               <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
                             {% endif %}
+                            {% assign first_entry = false %}
                           {% endif %}
                         {% endfor %}
                       {% endfor %}
-
                     </ul>
                   </li>
                   <li class="nav-item">
