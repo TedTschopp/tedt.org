@@ -111,7 +111,7 @@
 
                           {% if tag == 'Project' %}
                             {% assign this-post-title = post.title %}
-                            {% if new_company and not first_entry %}
+                            {% if new_company and first_entry != true %}
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
