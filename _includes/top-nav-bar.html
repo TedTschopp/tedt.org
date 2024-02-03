@@ -9,24 +9,26 @@
           </style>
           {% endcomment %}
           <script>
-            // Select all anchor tags whose href attribute starts with "#"
-            $('a[href^="#"]').on('click', function(event) {
-              // Get the target element that the anchor link points to
-              var target = $(this.getAttribute('href'));
+            window.onload = function() {
+              // Select all anchor tags whose href attribute starts with "#"
+              $('a[href^="#"]').on('click', function(event) {
+                // Get the target element that the anchor link points to
+                var target = $(this.getAttribute('href'));
 
-              // Check if the target element exists
-              if(target.length) {
-                // Prevent the default action of the click event (which is to jump directly to the target)
-                event.preventDefault();
+                // Check if the target element exists
+                if(target.length) {
+                  // Prevent the default action of the click event (which is to jump directly to the target)
+                  event.preventDefault();
 
-                // Stop any currently running animations on the html and body elements, then animate the scroll position
-                $('html, body').stop().animate({
-                  // The new scroll position is the top offset of the target element minus 70 pixels
-                  // The 70 pixels account for the height of the fixed or sticky header
-                  scrollTop: target.offset().top - 70
-                }, 1000); // The animation takes 1000 milliseconds (or 1 second) to complete
-              }
-            });
+                  // Stop any currently running animations on the html and body elements, then animate the scroll position
+                  $('html, body').stop().animate({
+                    // The new scroll position is the top offset of the target element minus 70 pixels
+                    // The 70 pixels account for the height of the fixed or sticky header
+                    scrollTop: target.offset().top - 70
+                  }, 1000); // The animation takes 1000 milliseconds (or 1 second) to complete
+                }
+              });
+            };
           </script>
 
           <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
