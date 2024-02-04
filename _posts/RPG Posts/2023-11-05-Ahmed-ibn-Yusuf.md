@@ -33,7 +33,7 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: /img/2023-11//Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.jpg
+image: /img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.jpg
 image-alt: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
@@ -223,35 +223,35 @@ Ahmed would likely interpret these omens and superstitions as signs or messages 
 
 
 <figure>
-<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11//Map of Badhdad 1200.jpg" alt="Map of Baghdad">
+<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11/Map of Badhdad 1200.jpg" alt="Map of Baghdad">
 <figcaption>
 Map of Baghdad by Unknown
 </figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11//Map of Bagdhad.jpg" alt="Map of Baghdad">
+<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11/Map of Bagdhad.jpg" alt="Map of Baghdad">
 <figcaption>
 Map of Baghdad by Unknown
 </figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11//Map of Baghdad in 772-922AD.jpg" alt="Map of Baghdad 722-922">
+<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11/Map of Baghdad in 772-922AD.jpg" alt="Map of Baghdad 722-922">
 <figcaption>
 Map of Baghdad 722-922
 </figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11//Trade Networks 1200.jpg" alt="Trade Networks of the 1200s">
+<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11/Trade Networks 1200.jpg" alt="Trade Networks of the 1200s">
 <figcaption>
 Trade Networks of the 1200s
 </figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11//Mongol Army Attack.jpg" alt="Mongol Army Path of Attack">
+<img class="img-responsive img-thumbnail" src="https://tedt.org/img/2023-11/Mongol Army Attack.jpg" alt="Mongol Army Path of Attack">
 <figcaption>
 Mongol Army Path of Attack
 </figcaption>
