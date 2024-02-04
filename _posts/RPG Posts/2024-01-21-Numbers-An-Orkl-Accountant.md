@@ -16,7 +16,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 bullets:
-description: A Shadowrun Ork / Satyr Accountant I built 
+description: "Dive into the intriguing journey of Numbers, a Satyr Ork with dreams beyond the corporate ladder. From his high-ranking executive lineage to his passion for the vibrant nightlife scene, discover how this unique character plans to blend his business acumen with his love for music and culture to revolutionize California's nightclub industry. Explore his story, ambitions, and the challenges he faces in the shadowy, magic-infused world of Shadowrun."
 seo-description: 
 categories:
   - Role Playing Games
