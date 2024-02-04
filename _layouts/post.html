@@ -341,25 +341,8 @@
 
                         } /* End of processEndnotes function */
                     </script>
-
                    
-                    {% assign abbreviations = site.data.abbreviations %}
-
-                    {% for abbreviation in abbreviations %}
-                        {% assign abbr_start = '<abbr title="' %}
-                        {% assign abbr_with_title = abbr_start | append: abbreviation[1] %}
-                        {% assign abbr_end = '">' %}
-                        {% assign full_abbr_start = abbr_with_title | append: abbr_end %}
-                        {% assign abbr_text = abbreviation[0] %}
-                        {% assign full_abbr = full_abbr_start | append: abbr_text %}
-                        {% assign abbr_close = '</abbr>' %}
-                        {% assign full_abbr_tag = full_abbr | append: abbr_close %}
-                        {% assign abbr_check = '<abbr' | append: abbr_text %}
-                        {% unless content contains abbr_check %}
-                            {% assign content = content | replace: abbreviation[0], full_abbr_tag %}
-                        {% endunless %}
-                    {% endfor %}
-
+                    {% include expand-abbreviations.html %}
 
                     <span class="e-content" id="main_content">{{ content }}</span>
 
