@@ -1,3 +1,9 @@
+.Draft-Post {
+    font-family: "Fredericka the Great",serif;
+    font-style: normal;
+}
+
+
 .DCC {
 	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-shadow: -2px -2px 0px rgba(234, 226, 33, 1), 
@@ -32,8 +38,7 @@ a:hover .DCC {
                 -3px  0px 0px rgba(255, 0, 27, 1);
         color: rgba(255, 0, 27, 1);
  }
-
-.Shadowrun {
+ .Shadowrun {
     font-family: "Shadowrun", "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-shadow: -2px -2px 0px rgba(201, 65, 47, 1), 
                   2px  2px 0px rgba(201, 65, 47, 1), 
