@@ -33,6 +33,19 @@ a:hover .DCC {
         color: rgba(255, 0, 27, 1);
  }
 
+.Shadowrun {
+    font-family: "Shadowrun", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: -2px -2px 0px rgba(201, 65, 47, 1), 
+                  2px  2px 0px rgba(201, 65, 47, 1), 
+                  2px -2px 0px rgba(201, 65, 47, 1), 
+                 -2px  2px 0px rgba(201, 65, 47, 1), 
+                  0px  2px 0px rgba(201, 65, 47, 1), 
+                  0px -2px 0px rgba(201, 65, 47, 1), 
+                  2px  0px 0px rgba(201, 65, 47, 1), 
+                 -2px  0px 0px rgba(201, 65, 47, 1);
+    color:                     rgba(  0,  0,  0, 1);
+}
+
 .MCC {
 	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-shadow: -2px -2px 0px rgba(255, 226, 5, 1), 

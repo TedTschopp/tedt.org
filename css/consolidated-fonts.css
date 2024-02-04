@@ -3,6 +3,36 @@
 
 
 @font-face {
+    font-family: 'Shadowrun';
+    src: url('https://tedt.org/fonts/Shadowrun-std-medium.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Shadowrun';
+    src: url('https://tedt.org/fonts/Shadowrun-std-bold.otf')  format('opentype');
+    font-weight: bold;
+    font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Shadowrun';
+    src: url('https://tedt.org/fonts/Shadowrun-std-italic.otf')  format('opentype');
+    font-weight: normal;
+    font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Shadowrun';
+    src: url('https://tedt.org/fonts/Shadowrun-std-bold-italic.otf')  format('opentype');
+    font-weight: bold;
+    font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
     font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
 	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
