@@ -347,11 +347,13 @@
                     <span class="e-content" id="main_content">{{ content }}</span>
 
                     <script>
-                        // Call the function to initiate the process
-                        // processEndnotes();
+                        window.onload = function() {
+                            // Call the function to initiate the process
+                            // processEndnotes();
 
-                        var main_content = document.getElementById('main_content');
-                        main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+                            var main_content = document.getElementById('main_content');
+                            main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+                        };
                     </script>
                     <hr>
                 </article>
