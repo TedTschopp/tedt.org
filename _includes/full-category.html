@@ -59,4 +59,5 @@
     <!-- Output something else if the category doesn't match -->
 {% endcase %}
 
-<a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }} ({{ category[1].size }})</a>
+<a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" 
+href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }}{% if include.render-number == true %} ({{ category[1].size }}){%endif %}</a>

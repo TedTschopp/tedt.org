@@ -271,7 +271,7 @@
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
                                 {% assign category-to-render = category[0] %}
-                                {% include full-category.html category=category-to-render %}
+                                {% include full-category.html category=category-to-render render-number=true%}
                             </li>
                           {% endfor %}
                         </ul>
