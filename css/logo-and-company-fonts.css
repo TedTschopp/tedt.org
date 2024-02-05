@@ -3,6 +3,57 @@
     font-style: normal;
 }
 
+.Computer-Post {
+    font-family: "Checkbook", monospace;
+    font-style: normal;
+}
+
+.Personal-Writing-Post {
+    font-family: "Lovers Quarrel", "Chalkduster", "Comic Sans MS", cursive, sans-serif;
+}
+
+.Book-Post {
+    font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+    font-style: normal;
+}
+
+.RPGS {
+    font-family: "IM Fell DW Pica", "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.Reprint-Post {
+    font-family: "lp1_regular",monospace;
+    font-style: normal;
+}
+
+.DnD {
+	font-family: "Quentin", "Souvenir Demi",serif;
+}
+.GURPS {
+	font-family: "Egyptienne MN Condensed Bold",serif;
+    text-transform: uppercase;
+}
+.LotR {
+	font-family: "Ringbearer",serif;
+}
+.marchen {
+    font-family: "IM Fell English",serif;
+    font-style: italic;
+}
+.marchen {
+    font-family: "IM Fell English",serif;
+    font-style: normal;
+}
+.draft {
+    font-family: "Fredericka the Great",serif;
+    font-style: normal;
+}
+.computers {
+    font-family: "Checkbook",monospace;
+    font-style: normal;
+}
+
 
 .DCC {
 	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -112,32 +163,7 @@ a:hover .MCC {
 				 -3px  0px 0px rgba(255, 0, 27, 1);
 	color: #212529; 
 }
-.DnD {
-	font-family: "Quentin", "Souvenir Demi",serif;
-}
-.GURPS {
-	font-family: "Egyptienne MN Condensed Bold",serif;
-    text-transform: uppercase;
-}
-.LotR {
-	font-family: "Ringbearer",serif;
-}
-.marchen {
-    font-family: "IM Fell English",serif;
-    font-style: italic;
-}
-.marchen {
-    font-family: "IM Fell English",serif;
-    font-style: normal;
-}
-.draft {
-    font-family: "Fredericka the Great",serif;
-    font-style: normal;
-}
-.computers {
-    font-family: "Checkbook",monospace;
-    font-style: normal;
-}
+
 
 .Dohring-watermark, .TORC-watermark, .SCE-watermark, .Tschopp-watermark {
     position: relative;

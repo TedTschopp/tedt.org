@@ -1,12 +1,13 @@
+{% assign Text-to-Output = "" %}
 {% case include.category %}
   {% when "Bestiary" %}
     {% assign class-to-add = "Bestiary" %}
   {% when "Books" %}
-    {% assign class-to-add = "Books" %}
+    {% assign class-to-add = "Book-Post" %}
   {% when "Communications" %}
     {% assign class-to-add = "Communications" %}
   {% when "Computers" %}
-    {% assign class-to-add = "Computers" %}
+    {% assign class-to-add = "Computer-Post" %}
   {% when "Draft" %}
     {% assign class-to-add = "Draft-Post" %}
   {% when "Dungeon Crawl Classics" %}
@@ -25,6 +26,7 @@
     {% assign class-to-add = "Maps" %}
   {% when "Middle-earth" %}
     {% assign class-to-add = "LotR" %}
+    {% assign Text-to-Output = "Middle-eartH" %}
   {% when "Mobile" %}
     {% assign class-to-add = "Mobile" %}
   {% when "Monsters" %}
@@ -34,7 +36,7 @@
   {% when "Mutant Crawl Classics" %}
     {% assign class-to-add = "MCC" %}
   {% when "Personal Writing" %}
-    {% assign class-to-add = "Personal-Writing" %}
+    {% assign class-to-add = "Personal-Writing-Post" %}
   {% when "Projects" %}
     {% assign class-to-add = "Projects" %}
   {% when "Quotes" %}
@@ -42,7 +44,7 @@
   {% when "Religion" %}
     {% assign class-to-add = "Religion" %}
   {% when "Reprint" %}
-    {% assign class-to-add = "Reprint" %}
+    {% assign class-to-add = "Reprint-Post" %}
   {% when "Role Playing Games" %}
     {% assign class-to-add = "RPGS" %}
   {% when "Science" %}
@@ -60,4 +62,4 @@
 {% endcase %}
 
 <a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" 
-href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {{ category-to-render }}{% if include.render-number == true %} ({{ category[1].size }}){%endif %}</a>
+href="{{category[0]}}">{% include category-emoji.html category=category-to-render %} {% if Text-to-Output=="" %}{{ category-to-render }}{%else%}{{Text-to-Output}}{%endif%}{% if include.render-number == true %} ({{ category[1].size }}){%endif %}</a>

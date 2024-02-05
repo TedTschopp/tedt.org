@@ -90,6 +90,7 @@
 @font-face {
     font-family: 'Checkbook';
     src: url('https://tedt.org/fonts/CHECKBK0.otf')   format('opentype'),
+		 url('https://tedt.org/fonts/CHECKBK0.ttf')   format('truetype'),
          url('https://tedt.org/fonts/CHECKBK0.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -157,25 +158,6 @@
     font-style: normal;
 }
 
-
-@font-face {
-    font-family: 'Fondamento';
-    src: url('https://tedt.org/fonts/Fondamento-Regular.otf') format('opentype'),
-		 url('https://tedt.org/fonts/Fondamento-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-	text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'Fondamento';
-    src: url('https://tedt.org/fonts/Fondamento-Italic.otf') format('opentype'),
-		 url('https://tedt.org/fonts/Fondamento-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: Italic;
-	text-rendering: optimizeLegibility;
-
-}
 
 @font-face {
     font-family: 'GameEmpire';
