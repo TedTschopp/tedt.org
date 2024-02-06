@@ -9,13 +9,12 @@
 
 
     <!-- Bottom of the Body include ore JavaScript -->
-    {% if home-page-url == page.url %}
+    {% assign this-url = site.siteurl | append: page.url %}
+
+    {% if home-page-url == this-url %}
     
     {% else %}
         <!-- add back links to headers via JavaScript {{home-page-url}} == {{page.url}}-->
+        
         <script src="js/add-back-links-to-headers.js"></script>
-    {% endif %}
-
-
-
-    
+    {% endif %}  
