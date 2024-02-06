@@ -375,6 +375,11 @@
                 <div class="well">
                     <div class="post-categories">
                         <div class="col-12">
+
+                            * Will be replaced with the ToC, excluding the "Contents" header
+                            {:toc}
+
+
                             {% assign categories = page.categories %}
                             {% for category in categories %}
                                 <h4>Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
