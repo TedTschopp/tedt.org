@@ -1,0 +1,392 @@
+{
+  "basics": {
+    "name": "Ted Tschopp",
+    "label": "Senior Enterprise Technology Architect",
+    "picture": "",
+    "email": "ted@tschopp.org",
+    "phone": "+1-626-255-3757",
+    "website": "https://tschopp.org",
+    "summary": "I am the enterprise technology architect focused on digital and automation technologies at Southern California Edison(SCE). SCE is one of the largest investor-owned utilities in the United States with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Automation, Web, Mobile, and Social ecosystems. I have been at SCE for over a decade and have focused on my career on Mobile, Web, Portal, Search, and Enterprise 2.0 technologies.",
+    "location": {
+      "address": "516 Mel Canyon Road",
+      "postalCode": "CA 91010",
+      "city": "Duarte",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "TedTschopp",
+        "url": "https://www.linkedin.com/in/tedtschopp/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Southern California Edison",
+      "position": "Enterprise Digital Technology Architect",
+      "website": "https://sce.com",
+      "startDate": "2015-01-01",
+      "endDate": "",
+      "summary": "Build a holistic view of the current and future state architecture for digital solutions that links domain architectures to business capabilities and processes for SCE using multiple architectural models and views building SCE’s strategy, technology road map, and product management direction for over 500 properties with an annual budget of $30M.",
+      "highlights": [
+        "40%+ Mobile Traffic",
+        "200K+ Followers on Social",
+        "2M+ Monthly Active Users",
+        "3.75M+ Transactions a Month"
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Enterprise Automation Technology Architect",
+      "website": "https://sce.com",
+      "startDate": "2017-01-01",
+      "endDate": "",
+      "summary": "Build a holistic view of the current and future state architecture for automation solutions that links domain architectures to business capabilities and processes for SCE using multiple architectural models and views building SCE’s strategy, technology road map, and product management direction for automation solutions.",
+      "highlights": [
+        "181K+ hours saved annually",
+        "40+ process automated",
+        "25+ bots deployed",
+        "$6.5 Million in annual costs avoided"
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Enterprise Mobile Technology Architecture",
+      "website": "https://sce.com",
+      "startDate": "2013-08-01",
+      "endDate": "2015-01-01",
+      "summary": "Build a holistic view of the current and future state architecture for mobile solutions that links domain architectures to business capabilities and processes for SCE using multiple architectural models and views building SCE’s strategy, technology road map, and product management direction for mobile solutions.",
+      "highlights": [
+        "$400K annual savings by moving off Blackberry Enterprise Server",
+        "Increased BYOD enrollment while changing company standard from BlackBerry to iPhone",
+        "Replaced 60+ legacy apps by developing a mobile architectural framework ",
+        "Represented SCE’s mobile interests on the Utility Information Technology Benchmark (UNITE) group.",
+        "Wrote Personal Computing Device Policy to address risks, audit findings, and increase BYOD enrollment"
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Senior Strategic Solution Architect - Digital eCommerce",
+      "website": "https://sce.com",
+      "startDate": "2010-01-01",
+      "endDate": "2015-01-01",
+      "summary": "Technical team lead and single-point of contact for technical accountability on SCE's eCommerce channel from project concept through completion. ",
+      "highlights": [
+        "50% cost savings on SCE’s first mobile app for iOS and Android",
+        "$12M savings on SCE.com rebranding project’s costs using agile methodologies focusing on expected outcomes",
+        "Seat on IBM’s Digital Experience Customer Advisory Council",
+        "20 index point increase in user satisfaction through a mobile first strategy ",
+        "Developed technology portion of business case for capital program - $70M",
+        "40% increase in self-service transactions",
+        "10 x increase in mobile page views to +40% of site traffic",
+        "75% increase for turn on/off service and 75% decrease in manual order processing",
+        "Represented SCE’s digital and ecommerce interests on the Utility Information Technology Benchmark (UNITE) group."
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Practice Lead (Collaboration, Usabilty, NetWeaver/Portal, NET)",
+      "website": "https://sce.com",
+      "startDate": "2005-01-01",
+      "endDate": "2012-07-01",
+      "summary": "Organize and lead architecture, engineering, and design communities of practices focused on Collaboration, Usability, NetWeaver/Portal, and Microsoft .NET technologies.",
+      "highlights": [
+        "Found Usability Community of Practice",
+        "Developed and presented collaboration model focusing on measuring maturity, usage, and best practices to CIO",
+        "Integrated Microsoft .NET, J2EE, and SAP Portal Coding Standards as NetWeaver/Portal CoP Lead",
+        "Wrote encryption block for the SCE standard code base as member of SCE’s Microsoft .NET center of practice"
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Senior SAP Portal Integration Engineer",
+      "website": "https://sce.com",
+      "startDate": "2006-06-01",
+      "endDate": "2010-01-01",
+      "summary": "Lead SAP Portal engineer serving as SME on SCE’s ERP Program focusing on HCM and EAM. ",
+      "highlights": [
+        "150 legacy business applications decommissioned",
+        "Designed and oversaw development of Edison International (EIX) level data center routing with stakeholders from Edison International companies and SCE",
+        "Represented SCE at NetWeaver Portal/BI Conference by speaking about SCE’s SOA integration practices"
+      ]
+    },
+    {
+      "company": "Southern California Edison",
+      "position": "Senior Web Applicaiton Developer",
+      "website": "https://scecom",
+      "startDate": "2004-09-01",
+      "endDate": "2006-06-01",
+      "summary": "Senior Web Application Developer responsible for developing and maintaining SCE’s enterprise websites. ",
+      "highlights": [
+        "Received awards from Web Marketing Association and The American Business Awards for work done on Edison.com website",
+        "Design and develop corporate intranet rebranding to align with upcoming SAP Portal organizational change management efforts",
+        "Represented SCE annually as judge in Cal Poly CIS ITC web design competition"
+      ]
+    },
+    {
+      "company": "The One Ring: Tolkien Online",
+      "position": "Founder",
+      "website": "https://theonering.com",
+      "startDate": "1999-04-01",
+      "endDate": "2005-01-01",
+      "summary": "Founded and managed the most popular website dedicated to the works of J.R.R. Tolkien and the Lord of the Rings.",
+      "highlights": [
+        "Recognized in leading periodicals such as Los Angeles Times, CNN, and The Guardian UK",
+        "Interviewed and featured in Wired Magazine September 2001 Issue",
+        "Ranked as a top 10,000 website by Alexa"
+      ]
+    },
+    {
+      "company": "The Dohring Company",
+      "position": "Director of Technical Services",
+      "website": "http://www.dohring.com",
+      "startDate": "1994-02-01",
+      "endDate": "1999-05-01",
+      "summary": "Lead a team of managers responsible for the creation customer and competitor customer market research studies, surveys, and call center operations. Improve market research reports using feedback from Quality and Sales Directors. Coordinate communications between Sales and Quality departments as it relates to product reliability and accuracy. Forecast financial outlook and customer demand using data from operations and report to company executives weekly. Ensure continuous improvements and cost reduction of all processes in report writing, survey generation, and improve call efficiency and quality. Develop long-term vision for technical services department. Create new product offerings. Collaborate with Director of Quality to ensuring customer satisfaction and the delivery of a quality product. Work daily with founder and CEO. Report to senior executives.",
+      "highlights": [
+        "Successfully lead company upgrade from Microsoft Word for DOS 5.1 to Windows 95 and Microsoft Office 95",
+        "Developed new product/ market research report integrating geospatial data with survey results using Microsoft Word and MapInfo",
+        "Increased overall productivity by 24% without increasing staff by focusing on processes improvements, training, and software tools"
+      ]
+    },
+    {
+      "company": "Costal Connection",
+      "position": "Database Administrator",
+      "website": "",
+      "startDate": "1992-06-01",
+      "endDate": "1994-02-01",
+      "summary": "Responsible for routine development, operations, and maintenance of databases.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Sierra Madre Community Nursery School",
+      "position": "Parent Volunteer ",
+      "website": "https://www.smcns.org/",
+      "startDate": "2016-09-01",
+      "endDate": "",
+      "summary": "Perform ad hoc requests as needed",
+      "highlights": [
+        "Ongoing Monthly Maintenance ",
+        "Fall Auction",
+        "Winter Snowfest",
+        "Spring Carnaval"
+      ]
+    },
+    {
+      "organization": "NameHistoric First Lutheran Church, Pasadena",
+      "position": "Social Media Coordinator",
+      "website": "http://www.historicfirstlutheran.org/",
+      "startDate": "2011",
+      "endDate": "2011",
+      "summary": "Cleanup Social Media presence and make content evergreen.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "California State Polytechnic University-Pomona",
+      "area": "Computer Science",
+      "studyType": "Computer Graphics",
+      "startDate": "1989",
+      "endDate": "",
+      "gpa": "",
+      "courses": [
+        "CS 245 - Computer Graphics",
+        "CS 445 - Advanced Computer Graphics"
+      ]
+    },
+    {
+      "institution": "University of Irvine, California",
+      "area": "Continuing Education",
+      "studyType": "Systems Engineering",
+      "startDate": "2008",
+      "endDate": "",
+      "gpa": "",
+      "courses": [
+        "Foundations to the Systems Engineering Process",
+        "Systems Requirements Engineering",
+        "Systems Design and Integration",
+        "Systems Validation and Verification"
+      ]
+    },
+    {
+      "institution": "Southern California Edison",
+      "area": "Corporate Learning",
+      "studyType": "Classroom Training",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [
+        "Gas & Electric Business Understanding",
+        "Crucial Conversations",
+        "Holding Effective Meetings",
+        "Conflict Resolution"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Gold Billing and Payment Programs Award",
+      "date": "2015-08-01",
+      "awarder": "Chartwell",
+      "summary": "Southern California Edison will receive the Gold Billing and Payment Programs Award for its addition of detailed, customer-centric billing and payment features to an already robust mobile outage app, increasing operational efficiency and streamlining services and features for customers."
+    },
+    {
+      "title": "Gold Outage Communications Award",
+      "date": "2015-08-01",
+      "awarder": "Chartwell",
+      "summary": "Chartwell analysts named Southern California Edison as the Gold Outage Communications Award winner for its outage improvement initiative, a data-driven platform that is already providing insight and inspiration for other utilities."
+    },
+    {
+      "title": "Accessibility Internet Rally - for SCE.com",
+      "date": "2015-02-01",
+      "awarder": "Knowability",
+      "summary": "The Accessibility Internet Rally is an international, community hackathon with a unique twist – accessibility! OpenAIR increases awareness of the tools and techniques that make the Internet accessible to everyone, including people with disabilities. SCE.com is being recognized as exemplary in delivering above and beyond efforts by following WCAG 2.0 Disability standards in support of disabled users (ie vision, hearing difficulties)."
+    },
+    {
+      "title": "Best Energy Website - for Edison.com",
+      "date": "2006",
+      "awarder": "Web Marketing Association",
+      "summary": "The Web Marketing Association was founded in 1997 to help set a high standard for Internet marketing and development of the best websites on the World Wide Web. Staffed by volunteers, this organization is made up of Internet marketing, online advertising, PR, and top web site design professionals who share an interest in improving the quality of online advertising, internet marketing, and website promotion."
+    },
+    {
+      "title": "Most Innovative & Trendsetting Investor Relations Web Site Worldwide",
+      "date": "2006",
+      "awarder": "American Business Awards",
+      "summary": "The Stevie® Awards are the world's premier business awards. They were created in 2002 to honor and generate public recognition of the achievements and positive contributions of organizations and working professionals worldwide. In short order the Stevie has become one of the world's most coveted prizes.   Also nominated: * Edison.com: Nominee, \"Best Homepage\" by the American Business Awards (2006) * Edison.com: Nominee, \"Best Overall Design\" by the American Business Awards (2006)"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Enterprise Architecture",
+      "level": "7 years",
+      "keywords": [
+        "Governance",
+        "Business Case Development",
+        "Business Processes",
+        "Information Modeling",
+        "Application Architecure",
+        "Technology Architecture",
+        "Security Modeling"
+      ]
+    },
+    {
+      "name": "IT Business Case Development",
+      "level": "7 years",
+      "keywords": [
+        "Contract Review",
+        "IT Financial Modeling",
+        "Outsourcing",
+        "Contract Goverance",
+        "RFI / RFP processes",
+        "Global IT Sourcing"
+      ]
+    },
+    {
+      "name": "IT Frameworks & Processes",
+      "level": "7 Years",
+      "keywords": [
+        "ITIL",
+        "CMMI",
+        "TOGAF",
+        "Zackman",
+        "SDLCs",
+        "Agile"
+      ]
+    },
+    {
+      "name": "Mobile",
+      "level": "15+ years",
+      "keywords": [
+        "iOS",
+        "Android",
+        "MDM / MAM / MAM",
+        "Corporate Policy",
+        "CX / UX / UI"
+      ]
+    },
+    {
+      "name": "Web",
+      "level": "20+ years",
+      "keywords": [
+        "HTML",
+        "JavaScript / JS",
+        "JSON",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Social",
+      "level": "20 + years",
+      "keywords": [
+        "BBS",
+        "Newgroups",
+        "Forums",
+        "MySpace",
+        "Wikis",
+        "Facebook",
+        "Twitter"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Philosophy",
+      "keywords": [
+        "Religion",
+        "Post Modernism",
+        "Modermism"
+      ]
+    },
+    {
+      "name": "Boardgames",
+      "keywords": [
+        "Pandemic",
+        "Here I Stand",
+        "Republic of Rome",
+        "Twilight Struggle",
+        "Power Grid"
+      ]
+    },
+    {
+      "name": "Computer Games",
+      "keywords": []
+    },
+    {
+      "name": "Science Fiction / Fantasy",
+      "keywords": [
+        "J.R.R. Tolkien",
+        "Brandon Sanderson",
+        "Patrick Rothfuss ",
+        "N.K. Jemisin ",
+        "Walter M. Miller Jr.",
+        "William Gibson"
+      ]
+    },
+    {
+      "name": "Fantasy",
+      "keywords": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Greg Goldasich",
+      "reference": "Ted is very collaborative by nature, effective in meeting his commitments and consistently drives to improve work/product quality. He actively engages with team members, managers and clients to deliver on his commitments. Ted openly and activly seeks out feedback on his approach and effectiveness. He is by nature curious and this pushes him to improve his technical knowledge and drive his work forward."
+    },
+    {
+      "name": "Situ Ramaswamy",
+      "reference": "Ted keeps up with more technologies than most of the technologists I have worked with, and brought an excellent mix of superior technical skills and great teamwork to all his assignments. One of the things that I found most gratifying was to see Ted's growth as an architect and technical leader through the significant programs he worked on over the years."
+    }
+  ]
+}

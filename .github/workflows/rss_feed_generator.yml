@@ -1,0 +1,31 @@
+name: Generate RSS Feed
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install bs4 feedgen requests
+
+    - name: Generate RSS Feed
+      env:
+        WEBSITE_USERNAME: ${{ secrets.WEBSITE_MIDJOURNEY_USERNAME }}
+        WEBSITE_PASSWORD: ${{ secrets.WEBSITE_MIDJOURNEY_PASSWORD }}
+      run: |
+        python generate_rss.py

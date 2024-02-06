@@ -1,0 +1,22 @@
+                <div class="well">
+                    <form class="webmention-form ui form" action="https://webmention.io/tedt.org/webmention" method="post">
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label><br>
+                                <input type="url" name="source" class="url">
+                                <label>&nbsp;</label>
+                                <input type="submit" class="ui submit button" value="Send Webmention">
+                            </div>
+                        </div>
+                        <div class="status hidden">
+                            <div class="ui message"></div>
+                        </div>
+                        <input type="hidden" name="target" value="{{page.url}}">
+                    </form>
+                    <style>
+                        #webmentions img { max-height: 1.2em; margin-right: -1ex; }
+                    </style>
+                    <div id="webmentions" class="webmentions">
+                    </div>
+                </div>
+                <hr>

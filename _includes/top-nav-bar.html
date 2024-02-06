@@ -1,0 +1,269 @@
+          <!-- NAVIGATION -->
+          <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="{{ site.siteurl }}"><img src="{{ site.siteurl }}/img/home/logo-Tschopp.svg" height="42" width="42" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="{{ site.siteurl }}/#about" class="nav-link m-2 menu-item">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ site.siteurl }}/#blog" class="nav-link m-2 menu-item">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#career" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Career
+                    </a>
+                    <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                      {% assign last_company = "" %}
+                      {% assign new_company = false %}
+
+                      {% for post in sorted_homepage %}
+                        {% for tag in post.tags %}
+                          {% if post.company != blank and post.company != null %}
+                            {% if post.company != last_company and last_company != "" %}
+                              {% assign new_company = true %}
+                            {% else %}
+                              {% assign new_company = false %}
+                            {% endif %}
+                            {% assign watermark = post.company %}
+                            {% assign last_company = post.company %}
+                          {% else %}
+                            {% assign watermark = "no-watermark" %}
+                          {% endif %}
+
+                          {% if tag == 'Resume' %}
+                            {% assign this-post-title = post.title %}
+                          {% else %}
+                            {% assign this-post-title = post.title %}
+                          {% endif %}
+                          {% if tag == 'Resume' %}
+                            {% if new_company %}
+                              <li><hr class="dropdown-divider"></li>
+                            {% endif %}
+                            {% if watermark != "no-watermark" %}
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                            {% else %}
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                      {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                      {% assign last_company = "" %}
+                      {% assign new_company = false %}
+                      {% assign first_entry = true %}
+
+                      {% for post in sorted_homepage %}
+                        {% for tag in post.tags %}
+                          {% if post.company != blank and post.company != null %}
+                            {% if post.company != last_company and last_company != "" %}
+                              {% assign new_company = true %}
+                            {% else %}
+                              {% assign new_company = false %}
+                            {% endif %}
+                            {% assign watermark = post.company %}
+                            {% assign last_company = post.company %}
+                          {% else %}
+                            {% assign watermark = "no-watermark" %}
+                          {% endif %}
+
+                          {% if tag == 'Project' %}
+                            {% assign this-post-title = post.title %}
+                            {% if new_company and first_entry != true %}
+                              <li><hr class="dropdown-divider"></li>
+                            {% endif %}
+                            {% if watermark != "no-watermark" %}
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.png" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                            {% else %}
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
+                            {% endif %}
+                            {% assign first_entry = false %}
+                          {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ site.siteurl }}/category/Folklore" class="nav-link m-2 menu-item">Folklore</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ site.siteurl }}/RPG/MCC-GW/" class="nav-link m-2 menu-item nav-active"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a>
+                  </li>
+                  
+
+                  <li class="nav-item">
+                    <a onclick="toggleTheme()" class="nav-link m-2 menu-item"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                  </li>
+                  <li class="nav-item theme-switcher dropstart">
+                      <a class="dropdown-toggle nav-link m-2 menu-item" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg 
+                        class="bi bi-sun-fill mb-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                      </svg></a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item d-flex align-items-center dropdown-item-theme" href="#" data-bs-theme-value="light">
+                              <svg class="bi bi-sun-fill opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                  <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                              </svg>Light</a></li>
+                          <li><a class="dropdown-item d-flex align-items-center dropdown-item-theme" href="#" data-bs-theme-value="dark">
+                              <svg class="bi bi-moon-stars-fill opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"></path>
+                                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                              </svg>Dark</a></li>
+                          <li><a class="dropdown-item d-flex align-items-center dropdown-item-theme" href="#" data-bs-theme-value="auto">
+                              <svg class="bi bi-circle-half opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
+                              </svg>Auto</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+{% comment %}
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bootstrap 5 <span class="badge bg-primary">Mega Menu</span></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Multilevel</a>
+            <ul class="dropdown-menu shadow">
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li class="dropstart">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                </ul>
+              </li>
+              <li class="dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href=""> Second level 1</a></li>
+                  <li><a class="dropdown-item" href=""> Second level 2</a></li>
+                  <li><a class="dropdown-item" href=""> Second level 3</a></li>
+                  <li class="dropend">
+                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Let's go deeper!</a>
+                    <ul class="dropdown-menu dropdown-submenu shadow">
+                      <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                      <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                      <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                      <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                      <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                </ul>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown dropdown-mega position-static">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Mega menu</a>
+            <div class="dropdown-menu shadow">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Title</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Mega Menu Link</a>
+                        <a class="list-group-item" href="#">Mega Menu Link</a>
+                        <a class="list-group-item" href="#">Mega Menu Link</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Card Title</h5>
+                      <div class="card">
+                          <img src="{{ site.siteurl }}/img/home/logo-Tschopp.svg" class="img-fluid" alt="image">
+                          <div class="card-body">
+                             <p class="card-text">Description goes here...</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Title</h5>
+                        <p>Description goes here...</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                      <h5>Title</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Menu Link</a>
+                        <a class="list-group-item" href="#">Menu Link</a>
+                        <a class="list-group-item" href="#">Menu Link</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-auto">
+            <div class="input-group">
+                <input class="form-control border-0 mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary border-0" type="submit">Search</button>
+            </div>
+        </form>
+      </div>
+      <div class="theme-switcher dropdown">
+        <a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+            <svg class="bi bi-sun-fill mb-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path></svg>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light">
+                <svg class="bi bi-sun-fill opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                </svg>Light</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark">
+                <svg class="bi bi-moon-stars-fill opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"></path>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                </svg>Dark</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto">
+                <svg class="bi bi-circle-half opacity-50 me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
+                </svg>Auto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endcomment %}

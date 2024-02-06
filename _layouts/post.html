@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+
+    {% include all-css-includes.html %}
+
+
+
+
+
+    
+    <!-- END OF CSS INCLUDE -->
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-10">
+                <!-- Blog Post -->
+                <article class="h-entry">
+                    <!-- Title -->
+                    <h1 class="p-name">{{ page.title }}</h1>
+                    <hr>
+                    {% if page.subtitle %}
+                    <h2>{{page.subtitle}}</h2>
+                    {% endif %}
+
+                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                    {% if page.author.name %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                    {% else %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                    {% endif %}
+
+                    <!-- <p class="lead">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p> -->
+
+                    <!-- Preview Image -->
+                    <!--
+                    TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
+                    and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
+                    -->
+
+                    {% if page.image %}
+                        {% if page.image-alt %}
+                            {% assign image_alt = page.image-alt %}
+                        {% elsif page.image-description %}
+                            {% assign image_alt = page.image-description %}
+                        {% else %}
+                            {% assign image_alt = page.title %}
+                        {% endif %}
+
+                        {% if page.image-credits-title %}
+                            {% assign image_credits_title = page.image-credits-title %}
+                        {% elsif page.image-title %}
+                            {% assign image_credits_title = page.image-title %}
+                        {% else %}
+                            {% assign image_credits_title = "Unknown" %}
+                        {% endif %}
+
+                        {% if page.image-credits-artist %}
+                            {% assign image_credits = page.image-credits-artist %}
+                        {% elsif page.image-artist %}
+                            {% assign image_credits = page.image-artist %}
+                        {% else %}
+                            {% assign image_credits = "Unknown" %}
+                        {% endif %}
+
+                        {% if page.image-credits-artist-URL %}
+                            {% assign image_credits_artist_URL = page.image-credits-artist %}
+                        {% elsif page.image-artist-URL %}
+                            {% assign image_credits_artist_URL = page.image-artist-URL %}
+                        {% endif %}
+
+                        {% if page.image %}
+                            {% if page.image contains "http" %}
+                                {% assign image_URL = page.image %}
+                            {% else %}
+                                {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                            {% endif %}
+                        {% else %}
+                            {% assign image_URL = site.featured-image %}
+                        {% endif %}
+
+                        <figure>
+                            <img class="img-responsive img-thumbnail" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
+                            <figcaption>
+
+                                {% if image-credits-URL contains "http" %}
+                                    <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                {% else %}
+                                    <cite>"{{image_credits_title}}"</cite>
+                                {% endif %}
+                                {% if image-credits-artist-URL contains "http" %}
+                                    <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                {% else %}
+                                    by {{image_credits}}
+                                {% endif %}
+                               
+                            </figcaption>
+                        </figure>
+
+                    {% endif %}
+
+                    <hr>
+                    {% comment %}
+                    {% include publish-and-update-date-time-v2.html %}
+                    {% endcomment %}
+
+                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a></br>
+
+                    <img class="webmention-svg" width="1em" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a></br>
+                    
+
+                    {% if page.category %}
+                        {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Category:
+                    {% else %}
+                        {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                    {% endif %}
+                    {% for category in categories %}<span class="p-category">
+                        {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                        {% if forloop.length == 1 %}
+                            <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                        {% elsif forloop.last and forloop.length == 2 %}
+                            and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                        {% elsif forloop.last %}
+                            and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                        {% else %}
+                        <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}, 
+                        {% endif %}
+                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                            {% assign this_is_a_draft = true %}
+                        {% endif %}</span>
+                    {% endfor %}</br>
+
+                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+
+                    <hr>
+
+                    <!-- In the event of a draft include a progress bar -->
+                    {% assign draftstatus = page.draft-status %}
+                    {% if this_is_a_draft == true %}
+                        <aside class="well">
+                            {% if draftstatus == "notes" or draftstatus == "" %}
+                                <strong>Notes:</strong>
+                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
+                            {% elsif draftstatus == "unit" %}
+                                <strong>Unit Testing:</strong>
+                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
+                            {% elsif draftstatus == "integration" %}
+                                <strong>Integration Testing:</strong>
+                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
+                            {% elsif draftstatus == "component" %}
+                                <strong>Component Testing:</strong>
+                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
+                            {% elsif draftstatus == "system" %}
+                                <strong>System Testing:</strong>
+                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
+                            {% elsif draftstatus == "alpha" %}
+                                <strong>Alpha Testing:</strong>
+                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
+                            {% elsif draftstatus == "beta" %}
+                                <strong>Beta Testing:</strong>
+                                <p>This project is complete and it has had feedback from the public. </p>
+                            {% elsif draftstatus == "pre-release" %}
+                                <strong>Pre-Release:</strong>
+                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
+                            {% endif %}
+                            <div class="progress-clear">
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "notes" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "unit" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "integration" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "component" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "system" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "alpha" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "beta" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "pre-release" %}
+                                        <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                            </div>                            
+                            <div class="progress">
+                                <div class="progress-bar draft-notes" role="progressbar" style="width:12.5%">
+                                    Notes
+                                </div>
+                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
+                                    Unit
+                                </div>
+                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
+                                    Int.
+                                </div>
+                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
+                                    Comp.
+                                </div>
+                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
+                                    System
+                                </div>
+                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
+                                    Alpha
+                                </div>
+                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
+                                    Beta
+                                </div>
+                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
+                                    Pre.
+                                </div>
+                            </div>
+                        </aside>
+                        {% endif %}
+
+                    <style>
+                        /* The link is a Dave Winer Link */
+                        .Winerlink {
+                            color: #800080;
+                            cursor: pointer;
+                            display: inline;
+                            height: auto;
+                            line-height: 30px;
+                            text-decoration: none;
+                            text-decoration-line: none;
+                            width: auto;
+                            float: right;
+                        }
+                        .WinerAnchor {
+                            /* So as to ensure that its not at the top of the page where menu bars might be on top of it*/
+                            scroll-margin-top: 76px;                            
+                        }
+                    </style>
+
+                    <!-- Post Content -->
+                    <script>
+                        
+                        /*  This function is used to move the footnotes into asides.  Still needs alot of work 
+                        // Function to find the div with a role attribute equal to "doc-endnotes"
+                        function processEndnotes() {
+
+                            // Find the DIV with role="doc-endnotes"
+                            let div = document.querySelector('div[role="doc-endnotes"]');
+
+                            // Check if the div exists
+                            if (div) {
+                            // Find the ordered list within that div
+                            let ol = div.querySelector('ol');
+
+                            // Check if the ordered list exists
+                            if (ol) {
+                                // Loop over all list elements
+                                ol.querySelectorAll('li').forEach(li => {
+                                // Get the ID of the list element
+                                let id = li.id;
+
+                                // Make note of that ID and look through the document for an anchor tag with matching href
+                                let anchor = document.querySelector(`a[href="#${id}"]`);
+
+                                // Check if the anchor exists
+                                if (anchor) {
+                                    // Create an aside tag and set its content to the ID of the anchor tag
+                                    let aside = document.createElement('aside');
+                                    aside.textContent = id;
+
+                                    aside.className = 'asidenote';
+
+
+                                    // Append the aside tag to the end of the anchor tag
+                                    anchor.insertAdjacentElement('beforeend', aside);
+                                }
+                                });
+                            }
+                            }
+
+                        } /* End of processEndnotes function */
+                    </script>
+                   
+                    {% include expand-abbreviations.html %}
+
+                    <span class="e-content" id="main_content">{{ content }}</span>
+
+                    <script>
+                        window.onload = function() {
+                            // Call the function to initiate the process
+                            // processEndnotes();
+
+                            var main_content = document.getElementById('main_content');
+                            main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+                        };
+                    </script>
+                    <hr>
+                </article>
+
+                <!--Next and Previous Articles -->
+                {% include next_and_previous.html %}
+
+                <hr>
+                {% include comments.html %}
+
+                {% include comments-webmentions.html %}
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-2">
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <div class="post-categories">
+                        <div class="col-12">
+
+
+                            {% assign categories = page.categories %}
+                            {% for category in categories %}
+                                <h4>Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
+                                <div class="row">
+                                    <ul lass="list-unstyled">
+                                        {% for post in site.categories[category] limit:5 %}
+                                            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Bootstrap core JavaScript -->
+    {% include js-bottom-of-body.html %}
+
+    <!-- TODO: Add Table-of-Contents.js -->
+
+  </body>
+</html>

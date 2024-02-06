@@ -1,0 +1,26 @@
+{% assign plainText = include.page.content | strip_html | strip_newlines %}
+
+{% assign lowercaseWords = "a,an,the,and,but,or,nor,for,so,yet,at,by,in,of,on,to,up,about,across,after,along,amid,around,as,before,behind,below,beside,between,beyond,during,except,from,inside,into,like,near,off,on,onto,out,outside,over,past,through,throughout,till,toward,under,underneath,until,unto,upon,with,within,without" | split: ',' %}
+
+{% assign words = plainText | downcase | split: ' ' %}
+{% assign WordsInTitle = plainText | downcase | split: ' ' %}
+
+{% for word in words %}
+    {% assign titleCaseWord = word | capitalize %}
+
+    {% if lowercaseWords contains word %}
+        {% assign titleCaseWord = word %}
+    {% endif %}
+
+    {% if forloop.first == true %}
+        {% assign titleCaseWord = word | capitalize %}
+    {% endif %}
+
+    {% if forloop.last == true %}
+        {% assign titleCaseWord = word | capitalize %}
+    {% endif %}
+
+    {% assign WordsInTitle[forloop.index0] = titleCaseWord %}
+{% endfor %}
+
+{{ WordsInTitle | join: ' ' }}
