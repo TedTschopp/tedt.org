@@ -16,7 +16,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 bullets:
-description: An MCC Wetware Program to bring a bit of Starwars fun to your adventure
+description: Behold the R2D2/C3PO Hologram Conjuration, a potent MCC wetware incantation summoning the Star Wars ancients as living holograms. Transform gatherings with a hierarchy of holographic marvels, from rudimentary shadows to realms of immersive illusion, all forged to bewitch devotees of the Star Wars mythos and transmute the art of heraldry.
 seo-description: 
 categories:
   - Role Playing Games

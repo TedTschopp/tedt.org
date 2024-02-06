@@ -16,7 +16,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 bullets:
-description: The description of a mythical being who witnesses the birth and death of the Universe
+description: "Explore cosmic epochs through the gaze of 𒀀𒌋𒀯 (Aeon), merging myth, folklore, and the universe's vastness, highlighting existence's fleeting nature. 𒀀𒌋𒀯, a timeless entity, seamlessly integrates into any TTRPG, enriching narratives with a sense of continuity that transcends time, space, and genre, offering players a unique conduit to weave their stories across diverse settings and epochs, thereby deepening the game's immersive experience."
 seo-description: 
 categories:
   - Role Playing Games

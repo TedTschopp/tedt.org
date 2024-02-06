@@ -16,7 +16,7 @@ author:
     name: Ted Tschopp
     url: https://tedt.org/
 bullets:
-description: Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library in Baghdad in 1258.
+description: Character Concept of Ahmed ibn Yusuf, a porter who works for the Great Library in Baghdad in 1258.
 seo-description: 
 categories:
   - Draft
