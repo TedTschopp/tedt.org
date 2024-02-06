@@ -3,6 +3,15 @@
 
 
 @font-face {
+    font-family: 'Bestiary';
+    src: url('https://tedt.org/fonts/Animal-Kingdom.otf')   format('opentype'),
+		 url('https://tedt.org/fonts/Animal-Kingdom.ttf')   format('truetype');
+    font-weight: normal;
+    font-style: normal;
+	text-rendering: optimizeLegibility;
+
+}
+@font-face {
     font-family: 'Shadowrun';
     src: url('https://tedt.org/fonts/Shadowrun-std-medium.otf')  format('opentype');
     font-weight: normal;

@@ -1,7 +1,7 @@
 {% assign Text-to-Output = "" %}
 {% case include.category %}
   {% when "Bestiary" %}
-    {% assign class-to-add = "Bestiary" %}
+    {% assign class-to-add = "Bestiary-Post" %}
   {% when "Books" %}
     {% assign class-to-add = "Book-Post" %}
   {% when "Communications" %}
@@ -16,6 +16,7 @@
     {% assign class-to-add = "DnD" %}
   {% when "Folklore" %}
     {% assign class-to-add = "Folklore" %}
+    {% assign Text-to-Output = "ᚠᛟᛚᚲ ᛚᛟᚱᛖ" %}
   {% when "Gamma World" %}
     {% assign class-to-add = "GammaWorld" %}
   {% when "GURPS" or "Gurps" %}
@@ -30,7 +31,7 @@
   {% when "Mobile" %}
     {% assign class-to-add = "Mobile" %}
   {% when "Monsters" %}
-    {% assign class-to-add = "Monsters" %}
+    {% assign class-to-add = "Monster-Post" %}
   {% when "Movies" %}
     {% assign class-to-add = "Movies" %}
   {% when "Mutant Crawl Classics" %}

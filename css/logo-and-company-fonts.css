@@ -1,3 +1,12 @@
+.Bestiary-Post {
+    font-family: "Bestiary" sans-serif;
+    font-style: italic;
+}
+.Monster-Post {
+    font-family: "Bestiary" sans-serif;
+    font-style: italic;
+}
+
 .Draft-Post {
     font-family: "Fredericka the Great",serif;
     font-style: normal;
