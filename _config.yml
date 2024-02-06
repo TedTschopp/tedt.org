@@ -1,5 +1,4 @@
-markdown: kramdown
-
+# markdown: kramdown
 plugins:
   - jekyll-redirect-from
 
