@@ -1,55 +1,38 @@
-/**
- * This script generates a table of contents for a webpage.
- * It should be run when the window loads.
- */
-window.onload = function() {
-  // Initialize an empty string to build the table of contents
+
+window.onload = function () {
   var toc = "";
-
-  // Initialize the current heading level
   var level = 0;
+  var maxLevel = 3;
 
-  // Get the main content of the page
-  var mainContent = document.getElementById("main_content").innerHTML;
+  document.getElementById("main_content").innerHTML =
+      document.getElementById("main_content").innerHTML.replace(
+          /<h([\d])>([^<]+)<\/h([\d])>/gi,
+          function (str, openLevel, titleText, closeLevel) {
+              if (openLevel != closeLevel) {
+       c.log(openLevel)
+                  return str + ' - ' + openLevel;
+              }
 
-  // Replace each heading in the main content with a heading that includes an anchor
-  // Also, build the table of contents as a nested list of links to these anchors
-  mainContent = mainContent.replace(
-    /<h([\d])>([^<]+)<\/h([\d])>/gi, // Regular expression to match headings
-    function(str, openLevel, titleText, closeLevel) {
-      // If the opening and closing levels don't match, return the original string
-      if (openLevel != closeLevel) {
-        return str;
-      }
+              if (openLevel > level) {
+                  toc += (new Array(openLevel - level + 1)).join("<ol>");
+              } else if (openLevel < level) {
+                  toc += (new Array(level - openLevel + 1)).join("</ol>");
+              }
 
-      // If the current level is less than the opening level, add new lists to the table of contents
-      if (openLevel > level) {
-        toc += (new Array(openLevel - level + 1)).join("<ul>");
-      } 
-      // If the current level is greater than the opening level, close the current lists
-      else if (openLevel < level) {
-        toc += (new Array(level - openLevel + 1)).join("</ul>");
-      }
+              level = parseInt(openLevel);
 
-      // Update the current level
-      level = parseInt(openLevel);
+              var anchor = titleText.replace(/ /g, "_");
+              toc += "<li><a href=\"#" + anchor + "\">" + titleText
+                  + "</a></li>";
 
-      // Generate an anchor from the title text
-      var anchor = titleText.replace(/ /g, "_");
+              return "<h" + openLevel + "><a name=\"" + anchor + "\">"
+                  + titleText + "</a></h" + closeLevel + ">";
+          }
+      );
 
-      // Add a list item to the table of contents
-      toc += "<li><a href=\"#" + anchor + "\">" + titleText + "</a></li>";
-
-      // Return the modified heading
-      return "<h" + openLevel + "><a name=\"" + anchor + "\">" + titleText + "</a></h" + closeLevel + ">";
-    }
-  );
-
-  // If there are any open lists, close them
   if (level) {
-    toc += (new Array(level + 1)).join("</ul>");
+      toc += (new Array(level + 1)).join("</ol>");
   }
 
-  // Add the table of contents to the page
   document.getElementById("toc").innerHTML += toc;
 };
