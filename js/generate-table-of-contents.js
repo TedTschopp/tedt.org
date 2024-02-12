@@ -13,13 +13,11 @@ $(document).ready(function() {
             console.log(openLevel);
             return str + ' - ' + openLevel;
         }
-
         if (openLevel > level) {
             toc += (new Array(openLevel - level + 1)).join("<ol>");
         } else if (openLevel < level) {
             toc += (new Array(level - openLevel + 1)).join("</ol>");
         }
-
         level = parseInt(openLevel);
 
         var anchor = titleText.replace(/ /g, "_");
