@@ -2,7 +2,7 @@
 var existingOnload = window.onload;
 
 // Define a new function to be added to window.onload
-var newOnload = function() {
+var newOnloadForWinerLinks = function() {
     var main_content = document.getElementById('main_content');
     main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
 };
@@ -15,5 +15,5 @@ window.onload = function() {
   }
 
   // Call the new function
-  newOnload();
+  newOnloadForWinerLinks();
 };

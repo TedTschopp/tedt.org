@@ -3,10 +3,12 @@
 var existingOnload = window.onload;
 
 // Define a new function to be added to window.onload
-var newOnload = function() {
+var newOnloadForTOCLinks = function() {
   var toc = "";
   var level = 0;
   var maxLevel = 3;
+
+  alert("Building TOC...");
 
   document.getElementById("main_content").innerHTML =
       document.getElementById("main_content").innerHTML.replace(
@@ -49,5 +51,5 @@ window.onload = function() {
   }
 
   // Call the new function
-  newOnload();
+  newOnloadForTOCLinks();
 };
