@@ -3,8 +3,6 @@ $(document).ready(function() {
     var level = 0;
     var maxLevel = 3;
 
-    alert("Building TOC...");
-
     var mainContent = $("#main_content");
     var content = mainContent.html();
 
