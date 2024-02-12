@@ -15,7 +15,7 @@ var newOnloadForTOCLinks = function() {
           /<h([\d])>([^<]+)<\/h([\d])>/gi,
           function (str, openLevel, titleText, closeLevel) {
               if (openLevel != closeLevel) {
-       c.log(openLevel)
+                   c.log(openLevel)
                   return str + ' - ' + openLevel;
               }
 
