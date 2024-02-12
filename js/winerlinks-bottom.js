@@ -1,19 +1,16 @@
-// Store the existing window.onload function in a variable
-var existingOnload = window.onload;
+$(document).ready(function() {
+  var existingReadyFunction = $.fn.ready;
 
-// Define a new function to be added to window.onload
-var newOnloadForWinerLinks = function() {
-    var main_content = document.getElementById('main_content');
-    main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
-};
+  $.fn.ready = function(fn) {
+    if (existingReadyFunction) {
+      existingReadyFunction();
+    }
 
-// Add the new function to window.onload
-window.onload = function() {
-  // If there was an existing window.onload function, call it
-  if (existingOnload) {
-    existingOnload();
-  }
+    var main_content = $('#main_content');
+    main_content.html(addAnchorTagsToParagraphs(main_content.html()));
 
-  // Call the new function
-  newOnloadForWinerLinks();
-};
+    if (fn) {
+      fn();
+    }
+  };
+});
