@@ -1,35 +1,27 @@
 $(document).ready(function() {
-    var toc = "";
-    var level = 0;
+    htmlTableOfContents();
+}); 
 
-    document.getElementById("contents").innerHTML =
-        document.getElementById("contents").innerHTML.replace(
-            /<h([\d])>([^<]+)<\/h([\d])>/gi,
-            function (str, openLevel, titleText, closeLevel) {
-                if (openLevel != closeLevel) {
-                    return str;
-                }
+function htmlTableOfContents( documentRef ) {
+    var documentRef = documentRef || document;
+    var toc = documentRef.getElementById("toc");
+//  Use headings inside <article> only:
+//  var headings = [].slice.call(documentRef.body.querySelectorAll('article h1, article h2, article h3, article h4, article h5, article h6'));
+    var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    headings.forEach(function (heading, index) {
+        var ref = "toc" + index;
+        if ( heading.hasAttribute( "id" ) ) 
+            ref = heading.getAttribute( "id" );
+        else
+            heading.setAttribute( "id", ref );
 
-                if (openLevel > level) {
-                    toc += (new Array(openLevel - level + 1)).join("<ul>");
-                } else if (openLevel < level) {
-                    toc += (new Array(level - openLevel + 1)).join("</ul>");
-                }
+        var link = documentRef.createElement( "a" );
+        link.setAttribute( "href", "#"+ ref );
+        link.textContent = heading.textContent;
 
-                level = parseInt(openLevel);
-
-                var anchor = titleText.replace(/ /g, "_");
-                toc += "<li><a href=\"#" + anchor + "\">" + titleText
-                    + "</a></li>";
-
-                return "<h" + openLevel + "><a name=\"" + anchor + "\">"
-                    + titleText + "</a></h" + closeLevel + ">";
-            }
-        );
-
-    if (level) {
-        toc += (new Array(level + 1)).join("</ul>");
-    }
-
-    document.getElementById("toc").innerHTML += toc;
-});
+        var div = documentRef.createElement( "div" );
+        div.setAttribute( "class", heading.tagName.toLowerCase() );
+        div.appendChild( link );
+        toc.appendChild( div );
+    });
+}
