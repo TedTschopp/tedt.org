@@ -13,50 +13,47 @@ function htmlTableOfContents( documentRef ) {
     headings.forEach(function (heading, index) {
         var ref = "toc" + index;
 
-        if ( heading.hasAttribute( "id" ) ) {
-            ref = heading.getAttribute( "id" );
+        if (heading.hasAttribute("id")) {
+            ref = heading.getAttribute("id");
         } else {
-            heading.setAttribute( "id", ref );
+            heading.setAttribute("id", ref);
         }
 
-        var link = documentRef.createElement( "a" );
-        link.setAttribute( "href", "#"+ ref );
+        var link = documentRef.createElement("a");
+        link.setAttribute("href", "#" + ref);
         link.textContent = heading.textContent;
 
-        var unorderedList = documentRef.createElement( "ul" );
-
-        var listElement = documentRef.createElement( "li" );
-        listElement.appendChild( link );
+        var listElement = documentRef.createElement("li");
+        listElement.appendChild(link);
 
         var className = heading.tagName.toLowerCase();
-        var thisLevel = parseInt( className.charAt(1) );
+        var thisLevel = parseInt(className.charAt(1));
 
+        var unorderedList;
+        var parent = toc;
 
         // If the current heading is a higher level than the last one, create a new list
-        if ( thisLevel > lastLevel ) {
-            // open up a new list element and append it to the last item
-            unorderedList.appendChild( listElement );
-        } else if ( thisLevel < lastLevel ) {
+        if (thisLevel > lastLevel) {
+            unorderedList = documentRef.createElement("ul");
+            unorderedList.appendChild(listElement);
+            parent.lastChild.appendChild(unorderedList);
+        } else if (thisLevel < lastLevel) {
             // close off the last list and start a new one
             var diff = lastLevel - thisLevel;
-            var parent = toc;
-            for ( var i = 0; i < diff; i++ ) {
+            for (var i = 0; i < diff; i++) {
                 parent = parent.parentNode;
             }
-            parent.appendChild( listElement );
+            unorderedList = documentRef.createElement("ul");
+            unorderedList.appendChild(listElement);
+            parent.appendChild(unorderedList);
         } else {
-            // add the list item to the parent
-            unorderedList.appendChild( listElement );
+            unorderedList = documentRef.createElement("ul");
+            unorderedList.appendChild(listElement);
+            parent.appendChild(unorderedList);
         }
-
-        // var div = documentRef.createElement( "div" );
-        // div.setAttribute( "class", className );
-        // div.appendChild( link );
-        // toc.appendChild( div );
 
         // set the last level to this level
         lastLevel = thisLevel;
-
     });
 
 }
