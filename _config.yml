@@ -63,9 +63,11 @@ wlinks:
 # Mastodon Settings for Comments
 
 mastodon_comments:
-  host: twit.social
-  username: tedt
-  id: 109286944787814808
+  host: tschopp.net
+  username: Ted
+
+
+
 
 
 timezone: America/Los_Angeles
