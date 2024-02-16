@@ -60,6 +60,13 @@ wlinks:
   check: complete
   title: Anchor
 
+# Mastodon Settings for Comments
+
+mastodon_comments:
+  host: twit.social
+  username: tedt
+  id: 109286944787814808
+
 
 timezone: America/Los_Angeles
 
