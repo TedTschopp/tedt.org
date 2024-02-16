@@ -66,10 +66,6 @@ mastodon_comments:
   host: tschopp.net
   username: Ted
 
-
-
-
-
 timezone: America/Los_Angeles
 
 collections:
