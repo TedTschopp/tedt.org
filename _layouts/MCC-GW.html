@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+
+    {% include all-css-includes.html %}
+
+    <!-- Custom Fonts -->
+    {% include js-fontawsome.html %}
+
+    {% if this_is_a_draft == true %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    {% endif %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
+
+  </head>
+
+  <body>
+    <!-- Legacy Browser Redirect & Google Tag Manager -->
+    {% include top-of-body.html %}
+
+    {% include top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                <article class="h-entry">
+                    <!-- Title -->
+                    <h1 class="p-name">{{ page.title }}</h1>
+                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                    {% if page.author.name %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                    {% else %}
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                    {% endif %}
+
+                    <hr>
+                    
+                    {% include publish-and-update-date-time-v2.html %}
+
+                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
+
+                    <img class="webmention-svg" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+
+                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                    {% assign categories = page.categories %}
+                    {% for category in categories %}<span class="p-category">
+                        {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                        {% if forloop.length == 1 %}
+                            {{thiscategory}}
+                        {% elsif forloop.last and forloop.length == 2 %}
+                            and {{thiscategory}}
+                        {% elsif forloop.last %}
+                            and {{thiscategory}}
+                        {% else %}
+                            {{thiscategory}}, 
+                        {% endif %}
+                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                            {% assign this_is_a_draft = true %}
+                        {% endif %}</span>
+                    {% endfor %}</br>
+
+                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+
+                    <hr>
+
+                    <!-- <p class="lead">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p> -->
+
+                    <!-- Preview Image -->
+                    <!--
+                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
+                        and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
+
+                        -->
+
+                    {% if page.image %}
+                    <figure>
+                    <img class="img-responsive img-thumbnail" src="{{ site.siteurl }}{{ page.image }}" alt="{{page.image-alt}} by {{page.image_credits}}">
+                      <figcaption>
+                        {% if page.image-credits-URL or page.image-credits-title %}
+                            <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
+                        {% elsif page.image-credits %}
+                          {{page.image-alt}} by {{page.image_credits}}
+                        {% else %}
+                            Unknown
+                        {% endif %}
+                      </figcaption>
+                    </figure>
+                    {% endif %}
+
+                    <hr>
+
+                    <!-- In the event of a draft include a progress bar -->
+                    {% assign draftstatus = page.draft-status %}
+                    {% if this_is_a_draft == true %}
+                        <aside class="well">
+                            {% if draftstatus == "notes" or draftstatus == "" %}
+                                <strong>Notes:</strong>
+                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
+                            {% elsif draftstatus == "unit" %}
+                                <strong>Unit Testing:</strong>
+                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
+                            {% elsif draftstatus == "integration" %}
+                                <strong>Integration Testing:</strong>
+                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
+                            {% elsif draftstatus == "component" %}
+                                <strong>Component Testing:</strong>
+                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
+                            {% elsif draftstatus == "system" %}
+                                <strong>System Testing:</strong>
+                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
+                            {% elsif draftstatus == "alpha" %}
+                                <strong>Alpha Testing:</strong>
+                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
+                            {% elsif draftstatus == "beta" %}
+                                <strong>Beta Testing:</strong>
+                                <p>This project is complete and it has had feedback from the public. </p>
+                            {% elsif draftstatus == "pre-release" %}
+                                <strong>Pre-Release:</strong>
+                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
+                            {% endif %}
+                            <div class="progress-clear">
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "notes" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "unit" or draftstatus == "" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "integration" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "component" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "system" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "alpha" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "beta" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                    {% if draftstatus == "pre-release" %}
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                </div>
+                            </div>                            
+                            <div class="progress">
+                                <div class="progress-bar notes" role="progressbar" style="width:12.5%">
+                                    Notes
+                                </div>
+                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
+                                    Unit
+                                </div>
+                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
+                                    Int.
+                                </div>
+                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
+                                    Comp.
+                                </div>
+                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
+                                    System
+                                </div>
+                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
+                                    Alpha
+                                </div>
+                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
+                                    Beta
+                                </div>
+                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
+                                    Pre.
+                                </div>
+                            </div>
+                        </aside>
+                        {% endif %}
+
+
+
+                    <!-- Post Content -->
+                    <div id="toc"></div>  
+                    <span class="e-content">{{ content }}</span>
+
+                    <hr>
+                </article>
+
+                <!--Next and Previous Articles -->
+                {% include next_and_previous.html %}
+
+                <hr>
+
+                {% include comments-webmentions.html %}
+
+                {% include comments.html %}
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- TODO: Google Custom Search -->
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    {% include google-search.html %}
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <div class="post-categories">
+                        {% assign categories = page.categories %}
+                        {% for category in categories %}
+                            <h4>Latest in <a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
+                                <div class="row">
+                                <div class="col-lg-12">
+                                    <ul lass="list-unstyled">
+                                        {% for post in site.categories[category] limit:5 %}
+                                        <li><a href="{{ site.siteurl }}{{ post.url }}">{{ post.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+    <!-- /.container -->
+
+
+
+  <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/">Home</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/#about">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/#contact">Contact</a>
+              </li>
+              <!--
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li> -->
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/1993/01/01/privacy-policy/">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+          </div>
+          <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
+           {% if site.github_username or
+                  site.linkedin_username or
+                  site.mastadon_username or
+                  site.youtube_username or
+                  site.reddit_username or
+                  site.indiewebcamp_username or
+                  site.quora_username %}
+            <ul class="list-inline mb-0">
+              {% if site.github_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://github.com/{{ site.github_username }}/" rel="me"><i class="fab fa-github fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.linkedin_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" rel="me"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.mastadon_username %}
+              <li class="list-inline-item mr-3">
+                {% assign mastadon_strings = site.mastadon_username | split: "@" %}
+                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.youtube_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.reddit_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me"><i class="fab fa-reddit fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.quora_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me"><i class="fab fa-quora fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.indiewebcamp_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me"><i class="fas fa-external-link-alt fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}" rel="me" >
+                  <i class="fas fa-home fa-lg fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

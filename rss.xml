@@ -1,0 +1,64 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="{{ site.siteurl }}/rss.xml" rel="self" type="application/rss+xml" />
+    {% if site.name != null or site.name != empty %}
+    <title>{{ site.name | xml_escape }} - Articles</title>
+    {% else %}
+    <title>Articles</title>
+    {% endif %}    
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <link>{{ site.url }}</link>{% assign count = 0 %}
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse  %}
+      {% for post in sorted_posts | orderby %}{% unless post.link %}
+        {% if post.layout contains "micropubpost" %}
+            <!-- Do Nothing -->
+            {% continue %}
+        {% elsif post.categories contains "Bestiary" %}
+            <!-- Do Nothing -->
+            {% continue %}
+        {% elsif post.categories contains "Draft" %}
+            <!-- Do Nothing -->
+            {% continue %}
+        {% elsif post.categories contains "Quotes" %}
+            <!-- Do Nothing -->
+            {% continue %}
+        {% elsif post.layout contains "quotes" %}
+            <!-- Do Nothing -->
+            {% continue %}
+        {% elsif post.categories contains "home" %}
+            <!-- Do Nothing -->
+            {% continue %}  
+        {% else %}
+          {% assign count = count | plus: 1 %}
+          {% if count > 15 %}
+              {% break %}
+          {% endif %}
+          {% if post.title == null or post.title == empty %}
+            {% assign post-title = "None" %}
+          {% else %}
+            {% assign post-title = post.title | xml_escape %}
+          {% endif %}
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          {% if post.excerpt != "" %}
+              {% assign post-content = post.excerpt | strip_html %}
+          {% elsif post.description != "" %}
+              {% assign post-content = post.description | strip_html %}
+          {% else %}
+              {% assign post-content = post.content | strip_html %} 
+          {% endif %}
+        {% endif %}
+        <item>
+          <title>{{ post-title | xml_escape }}</title>
+          <description>{{ post-content | xml_escape }}</description>
+          <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+          <link>{{ site.url }}{{ post.url }}</link>
+          <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        </item>
+      {% endunless %}{% endfor %}
+  </channel>
+</rss>
