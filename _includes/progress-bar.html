@@ -1,0 +1,114 @@
+{% assign draftstatus = page.draft-status %}
+{% if this_is_a_draft == true %}
+    <aside class="well">
+        {% if draftstatus == "notes" or draftstatus == "" %}
+            <strong>Notes:</strong>
+            <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
+        {% elsif draftstatus == "unit" %}
+            <strong>Unit Testing:</strong>
+            <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
+        {% elsif draftstatus == "integration" %}
+            <strong>Integration Testing:</strong>
+            <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
+        {% elsif draftstatus == "component" %}
+            <strong>Component Testing:</strong>
+            <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
+        {% elsif draftstatus == "system" %}
+            <strong>System Testing:</strong>
+            <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
+        {% elsif draftstatus == "alpha" %}
+            <strong>Alpha Testing:</strong>
+            <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
+        {% elsif draftstatus == "beta" %}
+            <strong>Beta Testing:</strong>
+            <p>This project is complete and it has had feedback from the public. </p>
+        {% elsif draftstatus == "pre-release" %}
+            <strong>Pre-Release:</strong>
+            <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
+        {% endif %}
+        <div class="progress-clear">
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "notes" or draftstatus == "" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "unit" or draftstatus == "" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "integration" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "component" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "system" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "alpha" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "beta" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                {% if draftstatus == "pre-release" %}
+                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+        </div>                            
+        <div class="progress">
+            <div class="progress-bar draft-notes" role="progressbar" style="width:12.5%">
+                Notes
+            </div>
+            <div class="progress-bar unit" role="progressbar" style="width:12.5%">
+                Unit
+            </div>
+            <div class="progress-bar integration" role="progressbar" style="width:12.5%">
+                Int.
+            </div>
+            <div class="progress-bar component" role="progressbar" style="width:12.5%">
+                Comp.
+            </div>
+            <div class="progress-bar system" role="progressbar" style="width:12.5%">
+                System
+            </div>
+            <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
+                Alpha
+            </div>
+            <div class="progress-bar beta" role="progressbar" style="width:12.5%">
+                Beta
+            </div>
+            <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
+                Pre.
+            </div>
+        </div>
+    </aside>
+    {% endif %}
