@@ -105,14 +105,20 @@
                             <h1 class="card-title p-name">{{ page.title }}</h1>
                             {% if page.subtitle %}<h5 class="text-muted card-subtitle mb-2">{{page.subtitle}}</h5>{% endif %}
 
+                            <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                            {% if page.author.name %}
+                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                            {% else %}
+                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                            {% endif %}
+
+
                             {% comment %}
                             <p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>
                             {% include publish-and-update-date-time-v2.html %}
                             {% endcomment %}
         
-                            <p class="card-text"><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a></p>
-        
-                            <p class="card-text"><img class="webmention-svg align-middle" width="1em" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a></p>
+                            <p class="card-text"><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a><img class="webmention-svg align-middle" width="1em" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a></p>
                             
         
                             <p class="card-text">{% if page.category %}
@@ -123,13 +129,13 @@
                             {% for category in categories %}<span class="p-category">
                                 {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                                 {% if forloop.length == 1 %}
-                                    <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
                                 {% elsif forloop.last and forloop.length == 2 %}
-                                    and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
                                 {% elsif forloop.last %}
-                                    and <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}
+                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
                                 {% else %}
-                                <a style="text-decoration: none;" href="/category/{{ thiscategory }}">{% include category-emoji.html category=thiscategory %}</a>{{thiscategory}}, 
+                                <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
                                 {% endif %}
                                 {% if thiscategory == "draft" or thiscategory == "Draft" %}
                                     {% assign this_is_a_draft = true %}
@@ -140,12 +146,7 @@
         
                             <!-- Title -->
         
-                            <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                            {% if page.author.name %}
-                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
-                            {% else %}
-                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
-                            {% endif %}
+
 
                         </div>
                         <div class="card-footer p-4 py-3 h-100">
