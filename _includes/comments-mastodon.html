@@ -2,7 +2,7 @@
   <h2>Comments</h2>
   <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
 
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
+  <p id="mastodon-comments-list"></p>
   <div id="comments-wrapper">
     <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">the original post</a> on Mastodon.</p></noscript>
   </div>
@@ -184,6 +184,6 @@
           }
         });
       }
-      document.getElementById("load-comment").addEventListener("click", loadComments);
+      loadComments();
   </script>
 </section>
