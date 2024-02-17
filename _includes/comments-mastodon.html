@@ -46,7 +46,7 @@
 
     function loadComments() {
       let commentsWrapper = document.getElementById("comments-wrapper");
-      document.getElementById("load-comment").innerHTML = "Loading";
+      //document.getElementById("load-comment").innerHTML = "Loading";
       fetch('https://{{site.mastodon_comments.host}}/api/v1/statuses/{{page.mastodon-post-id}}/context')
         .then(function(response) {
           return response.json();
@@ -184,6 +184,6 @@
           }
         });
       }
-      loadComments();
+    loadComments();
   </script>
 </section>
