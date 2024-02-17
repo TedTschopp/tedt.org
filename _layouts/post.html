@@ -165,11 +165,13 @@
 
                 </article>
 
+                {% comment}
                 {% include comments.html %}
+                {% endcomment %}
+                
+                {% include comments-mastodon.html %}
 
                 {% include comments-webmentions.html %}
-
-                {% include comments-mastodon.html %}
 
                 <hr>
 
