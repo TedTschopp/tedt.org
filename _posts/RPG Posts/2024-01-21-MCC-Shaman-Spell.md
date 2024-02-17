@@ -48,6 +48,8 @@ year-the-event-took-place:
 mathjax: false
 order:
 
+mastodon-post-id: 111819663872505089
+
 ---
 
 ## R2D2 / C3PO Advertising Program Hologram Generation

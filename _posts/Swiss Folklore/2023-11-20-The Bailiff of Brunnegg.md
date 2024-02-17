@@ -69,6 +69,8 @@ year-the-event-took-place: [Insert year if known or leave blank]
 mathjax:
 order:
 
+mastodon-post-id: 111443917454528953
+
 ---
 
 > <ins> Swiss Legends from Aargau, Volume 1</ins>

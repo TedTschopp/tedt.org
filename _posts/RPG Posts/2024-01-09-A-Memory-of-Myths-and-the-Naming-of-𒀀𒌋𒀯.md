@@ -48,6 +48,8 @@ year-the-event-took-place:
 mathjax: false
 order:
 
+mastodon-post-id: 111784156309273441
+
 ---
 > # A Memory of Myths and the Naming of 𒀀𒌋𒀯
 > 
