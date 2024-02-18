@@ -47,7 +47,7 @@
                 <article class="h-entry">
 
                     <div class="card h-100 no-padding">
-                        <div class="card-header pt-0 pl-0 pr-0">
+                        <div class="card-header">
                             {% if page.image %}
                                 {% if page.image-alt %}
                                     {% assign image_alt = page.image-alt %}
@@ -88,20 +88,20 @@
                                 {% else %}
                                     {% assign image_URL = site.featured-image %}
                                 {% endif %}
-                                    <img class="card-img-top w-100 d-block fit-cover" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
-                                    {% if image-credits-URL contains "http" %}
-                                        <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
-                                    {% else %}
-                                        <cite>"{{image_credits_title}}"</cite>
-                                    {% endif %}
-                                    {% if image-credits-artist-URL contains "http" %}
-                                        <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
-                                    {% else %}
-                                        by {{image_credits}}
-                                    {% endif %}
+                                <img class="card-img-top w-100" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
+                                {% if image-credits-URL contains "http" %}
+                                    <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                {% else %}
+                                    <cite>"{{image_credits_title}}"</cite>
+                                {% endif %}
+                                {% if image-credits-artist-URL contains "http" %}
+                                    <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                {% else %}
+                                    by {{image_credits}}
+                                {% endif %}
                             {% endif %}
                         </div>
-                        <div class="card-body pt-5 p-4">
+                        <div class="card-body pt-1 p-4">
                             <h1 class="card-title p-name">{{ page.title }}</h1>
                             {% if page.subtitle %}<h5 class="text-muted card-subtitle mb-2">{{page.subtitle}}</h5>{% endif %}
 
@@ -142,10 +142,6 @@
                             {% endfor %}</p>
         
                             <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
-        
-                            <!-- Title -->
-        
-
 
                         </div>
                         <div class="card-footer p-4 py-3 h-100">
