@@ -108,9 +108,9 @@
                             <div class="d-flex align-items-center">
                             <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                             {% if page.author.name %}
-                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
                             {% else %}
-                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
                             {% endif %}
                             </div>
 
@@ -122,7 +122,7 @@
                             <div class="d-flex align-items-center">
                                 <p class="card-text">
                                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
-                                    <img class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
+                                    <img style="height: 1.2em;" class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
                                 
                                     {% if page.category %}
                                         {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
