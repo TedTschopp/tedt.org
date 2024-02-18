@@ -103,13 +103,13 @@
                         </div>
                         <div class="card-body pt-1 p-4">
                             <h1 class="card-title p-name">{{ page.title }}</h1>
-                            {% if page.subtitle %}<h5 class="text-muted card-subtitle mb-2">{{page.subtitle}}</h5>{% endif %}
+                            {% if page.subtitle %}<h2 class="text-muted card-subtitle mb-2 h5">{{page.subtitle}}</h2>{% endif %}
 
                             <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                             {% if page.author.name %}
-                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
                             {% else %}
-                                <p class="card-text lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
                             {% endif %}
 
 
@@ -118,28 +118,33 @@
                             {% include publish-and-update-date-time-v2.html %}
                             {% endcomment %}
         
-                            <p class="card-text"><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a><img class="webmention-svg align-middle" width="1em" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
+                            <p class="card-text">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
+                                <img class="webmention-svg align-middle img-fluid" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
                             
-                            {% if page.category %}
-                                {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
-                            {% else %}
-                                {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Catagories:-->
-                            {% endif %}
-                            {% for category in categories %}<span class="p-category">
-                                {% capture thiscategory %}{{ category | strip }}{% endcapture %}
-                                {% if forloop.length == 1 %}
-                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                {% elsif forloop.last and forloop.length == 2 %}
-                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                {% elsif forloop.last %}
-                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
+                                {% if page.category %}
+                                    {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
                                 {% else %}
-                                <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
+                                    {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Catagories:-->
                                 {% endif %}
-                                {% if thiscategory == "draft" or thiscategory == "Draft" %}
-                                    {% assign this_is_a_draft = true %}
-                                {% endif %}</span>
-                            {% endfor %}</p>
+                                {% for category in categories %}
+                                    <span class="p-category">
+                                        {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                                        {% if forloop.length == 1 %}
+                                            <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                        {% elsif forloop.last and forloop.length == 2 %}
+                                            and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                        {% elsif forloop.last %}
+                                            and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
+                                        {% else %}
+                                        <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
+                                        {% endif %}
+                                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                                            {% assign this_is_a_draft = true %}
+                                        {% endif %}
+                                    </span>
+                                {% endfor %}
+                            </p>
         
                             <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
 
