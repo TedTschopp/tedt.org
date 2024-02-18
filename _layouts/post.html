@@ -47,7 +47,6 @@
                 <article class="h-entry">
 
                     <div class="card h-100 no-padding">
-                        <div class="card-header">
                             {% if page.image %}
                                 {% if page.image-alt %}
                                     {% assign image_alt = page.image-alt %}
@@ -89,6 +88,8 @@
                                     {% assign image_URL = site.featured-image %}
                                 {% endif %}
                                 <img class="card-img-top w-100" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
+                                
+                                <div class="card-header">
                                 {% if image-credits-URL contains "http" %}
                                     <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
                                 {% else %}
@@ -99,8 +100,8 @@
                                 {% else %}
                                     by {{image_credits}}
                                 {% endif %}
+                                </div>
                             {% endif %}
-                        </div>
                         <div class="card-body pt-1 p-4">
                             <h1 class="card-title p-name">{{ page.title }}</h1>
                             {% if page.subtitle %}<h2 class="text-muted card-subtitle mb-2 h5">{{page.subtitle}}</h2>{% endif %}
