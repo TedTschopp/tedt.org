@@ -63,8 +63,15 @@ year-the-event-took-place:
 
 
 mathjax: true
-
 order:
+
+redirect_from:
+  - /2023/07/22/What-Makes-the-Human.html
+  - /2023/07/What-Makes-the-Human.html
+  - /2023/What-Makes-the-Human.html
+  - /What-Makes-the-Human.html
+
+
 ---
 ## Character Sheet - Work in Progress
 
