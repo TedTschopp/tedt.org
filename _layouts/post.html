@@ -129,22 +129,30 @@
                                     {% else %}
                                         {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Catagories:-->
                                     {% endif %}
+
+                                    {% assign should_continue = true %}
                                     {% for category in categories %}
-                                        <span class="p-category">
-                                            {% capture thiscategory %}{{ category | strip }}{% endcapture %}
-                                            {% if forloop.length == 1 %}
-                                                <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                            {% elsif forloop.last and forloop.length == 2 %}
-                                                and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                            {% elsif forloop.last %}
-                                                and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
-                                            {% else %}
-                                            <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
-                                            {% endif %}
-                                            {% if thiscategory == "draft" or thiscategory == "Draft" %}
-                                                {% assign this_is_a_draft = true %}
-                                            {% endif %}
-                                        </span>
+                                        {% if should_continue == true %}
+                                            <span class="p-category">
+                                                {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                                                {% if forloop.length == 1 %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                    {% assign should_continue = false %}
+                                                {% elsif forloop.last and forloop.length == 2 %}
+                                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                    {% assign should_continue = false %}
+                                                {% elsif forloop.first and forloop.length == 2 %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                {% elsif forloop.last %}
+                                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
+                                                {% else %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
+                                                {% endif %}
+                                                {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                                                    {% assign this_is_a_draft = true %}
+                                                {% endif %}
+                                            </span>
+                                        {% endif %}
                                     {% endfor %}
                                 </p>
                             </div>
