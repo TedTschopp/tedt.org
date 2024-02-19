@@ -46,11 +46,6 @@ image:
 image-alt:
 image-artist:
 image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: An image of a person engrossed in reading a large book, with symbolic
     icons and words floating around them. The symbols represent different facets of
     the individual's identity, customs, and stories. The backdrop might contain a

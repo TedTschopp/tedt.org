@@ -50,11 +50,6 @@ image: /img/2023-09/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_gia
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-artist: Ted Tschopp using Midjourney
 image-artist-URL: https://tedt.org/
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description:
 image-title:
 

@@ -45,11 +45,6 @@ image: '/img/2004-08/Illustrative_diagram_in_the_style_of_a_modern_infogram.png'
 image-alt:
 image-artist: 'Ted Tschopp and Midjourney'
 image-artist-URL: 'https://tedt.org/'
-image-credits: 'Ted Tschopp and Midjourney'
-image-credits-URL: 'https://tedt.org/'
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: An illustrative diagram depicting Google's envisioned web-based
     operating system, highlighting various integrated components such as Mail, Blog,
     Social Network, and Pictures. The interconnected nature of these services symbolizes

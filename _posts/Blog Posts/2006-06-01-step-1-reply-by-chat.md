@@ -39,13 +39,8 @@ coordinates:
 
 image: /img/2006-06/Reply-By-Chat.png
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
-image-credits-title: Reply by Chat
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-description: Reply by Chat as a Cartoon
 image-title: Reply by Chat
 

@@ -44,13 +44,8 @@ coordinates:
 
 image: /img/2005-10/Two-concepts-of-hell.png
 image-alt: 
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL: https://tedt.org/
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL:
-image-credits-title: Two Concepts of Hell
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-description: 'An abstract representation of the two concepts of hell: annihilation
     and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing
     the profound and uncomfortable nature of these beliefs. It conveys the universality

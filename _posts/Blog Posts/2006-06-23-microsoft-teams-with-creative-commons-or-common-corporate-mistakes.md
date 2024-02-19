@@ -39,12 +39,8 @@ coordinates:
 
 image: /img/2006-06/The-Microsoft-Logo-The-Creative-Commons-Logo-Hugging.png
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits-title: Microsoft teams with Creative Commons 
 image-description: Microsoft teams with Creative Commons 
 image-title: Microsoft teams with Creative Commons 

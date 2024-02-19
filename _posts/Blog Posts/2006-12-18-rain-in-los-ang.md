@@ -43,12 +43,8 @@ coordinates:
 
 image:  /img/2006-12/Los-Angeles-In-The-Rain.png
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-credits-title:  Los Angeles After Rain
 image-description: An image of the snow-capped mountains bordering the Los Angeles
     basin, seen under a clear blue sky dotted with white clouds. The wet streets reflect
