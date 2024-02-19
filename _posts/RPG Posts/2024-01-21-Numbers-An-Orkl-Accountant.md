@@ -31,15 +31,11 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
+
 image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.jpg
 image-alt: 
 image-artist: Ted Tschopp
 image-artist-URL: 
-image-credits: 
-image-credits-URL: 
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title: Numbers
 image-description: "Numbers, an Ork Satyr"
 image-title: Numbers
 
