@@ -15,6 +15,13 @@
 			{% assign previous_subtitle = page.previous.subtitle %}
 		{% endif %}
 	{% endif %}
+
+	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
+		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+	{% else %}
+		{% assign previous_image = site.siteurl | append: "/" | append: page.previous.image  %}
+	{% endif %}
+
 	{% assign previous_url = page.previous.url %}
 {% else %}
 	{% assign previous_url = site.siteurl %}
@@ -37,19 +44,13 @@
 		{% if page.next.subtitle == null or page.next.subtitle == empty or page.next.subtitle == '' %}
 			{% assign next_subtitle = "Subtitle: NA" %}
 		{% else %}
-			{% assign next_subtitle = page.previous.subtitle %}
+			{% assign next_subtitle = page.next.subtitle %}
 		{% endif %}
 	{% endif %}
 	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
 		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
 		{% assign next_image = site.siteurl | append: "/" | append: page.next.image  %}
-	{% endif %}
-
-	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
-		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
-	{% else %}
-		{% assign previous_image = site.siteurl | append: "/" | append: page.previous.image  %}
 	{% endif %}
 
 	{% assign next_url = page.next.url %}
@@ -64,43 +65,44 @@
 
 {% if previous_url or next_url %}
 	<div class="row">
-	<div class="col-md-6 text-center">
-		<span class="float-md-left">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</span>
-	</div>
-	<div class="col-md-6 text-center">
-		<span class="float-md-right">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
-	</div>
+		<div class="col-md-6 text-center">
+			<span class="float-md-left">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</span>
+		</div>
+		<div class="col-md-6 text-center">
+			<span class="float-md-right">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
+		</div>
 	</div>
 
-<hr>
-<div class="row g-0">
-	<div class="card mb-3" style="max-width: 540px;">
-		<div class="row g-0">
-			<div class="col-md-4">
-				<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
+	<hr>
+
+	<div class="row g-0">
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row g-0">
+				<div class="col-md-4">
+					<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</h5>
+						<p class="card-text">{{previous_subtitle}}</p>
+						{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+					</div>
+				</div>
 			</div>
-			<div class="col-md-8">
-				<div class="card-body">
-					<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</h5>
-					<p class="card-text">{{previous_subtitle}}</p>
-					{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+		</div>
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row g-0">
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</h5>
+						<p class="card-text">{{next_subtitle}}</p>
+						{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="card mb-3" style="max-width: 540px;">
-		<div class="row g-0">
-			<div class="col-md-8">
-				<div class="card-body">
-					<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</h5>
-					<p class="card-text">{{next_subtitle}}</p>
-					{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
-				</div>
-			</div>
-			<div class="col-md-4">
-				<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
-			</div>
-		</div>
-	</div>
-</div>
 {% endif %}
