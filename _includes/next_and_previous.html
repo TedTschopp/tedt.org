@@ -66,20 +66,9 @@
 {% endif %}
 
 {% if previous_url or next_url %}
-	<div class="row">
-		<div class="col-md-6 text-center">
-			<span class="float-md-left">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</span>
-		</div>
-		<div class="col-md-6 text-center">
-			<span class="float-md-right">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</span>
-		</div>
-	</div>
-
-	<hr>
-
-	<div class="row g-0">
-		<div class="col-md-6">
-			<div class="card mb-3" style="max-width: 540px;">
+	<div class="row g-0 h-100">
+		<div class="col-md-6 h-100">
+			<div class="card mb-3 h-100" style="max-width: 540px; border-right: none;">
 				<div class="row g-0">
 					<div class="col-md-4">
 						<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
@@ -94,8 +83,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6">
-			<div class="card mb-3" style="max-width: 540px;">
+		<div class="col-md-6 h-100">
+			<div class="card mb-3 h-100" style="max-width: 540px; border-left: none;">
 				<div class="row g-0">
 					<div class="col-md-8">
 						<div class="card-body">
