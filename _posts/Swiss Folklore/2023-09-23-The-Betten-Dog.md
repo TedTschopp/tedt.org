@@ -70,6 +70,11 @@ permalink: /Swiss-Folklore/:title:output_ext
 mathjax:
 
 order:
+
+mastodon-post-id: 111116965359149248
+
+
+
 ---
 
 > <ins>Legends from Uri 1 - 3</ins>

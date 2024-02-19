@@ -27,7 +27,7 @@ bullets:
 - Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site's reputation and reach.
 - Achieved a top 10,000 ranking on Alexa, underlining the website's popularity and impact in its niche.
 
-description: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape."
+description: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
 seo-description: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
 
 categories: Home

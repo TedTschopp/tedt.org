@@ -93,6 +93,12 @@ permalink: /Swiss-Folklore/:title:output_ext
 mathjax:
 
 order:
+
+redirect-from: 
+ - /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
+ - /2023/08/20/From-the-Swabian-War-Benedikt-Fontana/
+
+mastodon-post-id: 110924710196764929
 ---
 
 > <ins> Swiss Legends and Heroic Tales</ins>

@@ -88,6 +88,12 @@ permalink: /Swiss-Folklore/:title:output_ext
 mathjax:
 
 order:
+redirect-from:
+  - /2023/08/20/2023-08-20-The-Army-in-Schrattenberg/
+  - /2023/08/20/The-Army-in-Schrattenberg/
+  
+mastodon-post-id: 110925700403906782   
+
 ---
 
 > <ins>Sagen, Customs, Legends from the five places Lucerne, Uri, Schwyz, Unterwalden, and Zug, Lucerne, Volume 1, Page 293</ins>

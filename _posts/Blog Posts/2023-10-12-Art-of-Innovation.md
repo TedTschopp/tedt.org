@@ -58,6 +58,8 @@ image-credits-title: "Breaking Free"
 image-description: "Two people leaving the possible behind them"
 image-title: "Breaking Free from the Possible"
 
+mastodon-post-id: 111223710272362671
+
 ---
 
 The phrase "Art of the Possible" evokes a sense of visionary capability, of realizing potentials that may not yet be fully recognized. Tracing its etymology, the term finds its roots not in the realm of vision or innovation, but in the world of politics and bureaucracy. Otto von Bismarck, the Prussian statesman of the 19th century, said, "Politics is the art of the possible." In this context, Bismarck emphasized the importance of pragmatism in politics; understanding the limitations and potentials of a situation and acting accordingly, even if it means compromising one's ideals, achieving very little, and maintaining the status quo.

@@ -59,7 +59,7 @@ year-the-event-took-place:
 mathjax: true
 order:
 
-redirect_from:
+redirect-from:
   - /2023/07/22/The-Right-Set-of-Skills.html
   - /2023/07/The-Right-Set-of-Skills.html
   - /2023/The-Right-Set-of-Skills.html
