@@ -37,11 +37,6 @@ image: /img/2023-11/Mehmet Al-Mansur.jpg
 image-alt: "Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair, deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman patterns, wisdom and curiosity"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: "Ted Tschopp"
-image-credits-URL: https://tedt.org/
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: "Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair, deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman patterns, wisdom and curiosity"
 image-title: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920"
 monster-or-magical-or-religious-ideas:  

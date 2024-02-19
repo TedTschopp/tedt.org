@@ -46,11 +46,6 @@ image: img/home/Market-Research.jpg
 image-alt: A man drawing market research on a piece of wall, in the style of light gray and bronze, american consumer culture, text-based, stylish
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: 
-image-credits-URL:
-image-credits-artist:  Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
-image-credits-title: Market Research
 image-description: A man drawing market research on a piece of wall, in the style of light gray and bronze, american consumer culture, text-based, stylish
 image-title: Market Research
 

@@ -60,15 +60,10 @@ coordinates:
 
 image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: MidJourney and Ted Tschopp
-image-credits-URL:
-image-credits-artist: MidJourney and Ted Tschopp
-image-credits-artist-URL:
-image-credits-title: Ted Tschopp as Product Engineering and Build Process Manager
-image-description:
-image-title:
+image-artist: Ted Tschopp and Midjourney 
+image-artist-URL: https://www.tedt.org/
+image-description: Ted Tschopp as Product Engineering and Build Process Manager
+image-title: 
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

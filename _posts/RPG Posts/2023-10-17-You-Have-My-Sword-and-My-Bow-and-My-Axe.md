@@ -53,11 +53,6 @@ image: /img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.jpg
 image-alt: A blacksmith making fictional weapons.
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: "A blacksmith making fictional weapons."
 image-title: "Warcraft"
 

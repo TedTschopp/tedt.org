@@ -65,15 +65,10 @@ coordinates:
 
 image: /img/home/sce_com.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: SCE.com by Ted Tschopp
-image-credits-URL: https://www.sce.com/
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL:
-image-credits-title: SCE.com
+image-artist: Ted Tschopp
+image-artist-URL: https://www.sce.com/
 image-description:
-image-title:
+image-title: SCE.com
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

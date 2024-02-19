@@ -61,15 +61,10 @@ coordinates:
 
 image: /img/2018-07/ola-larsson-genlabbalpha.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: Genelab Alpha by Ola Larsson https://larsson.artstation.com/projects/qOJQn
-image-credits-URL: https://larsson.artstation.com/projects/qOJQn
-image-credits-artist: Ola Larsson
-image-credits-artist-URL:
-image-credits-title: Genelab Alpha
+image-artist: Ola Larsson
+image-artist-URL: https://larsson.artstation.com/projects/qOJQn
 image-description:
-image-title:
+image-title: Genelab Alpha
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

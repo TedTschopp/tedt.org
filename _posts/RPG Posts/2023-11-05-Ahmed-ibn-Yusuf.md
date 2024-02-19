@@ -37,11 +37,6 @@ image: /img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for
 image-alt: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: "Ted Tschopp"
-image-credits-URL: https://tedt.org/
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
 image-title: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
 monster-or-magical-or-religious-ideas:  

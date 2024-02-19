@@ -53,11 +53,6 @@ image: /img/2018-05/the-valar.jpg
 image-alt: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
 image-artist: Dan Hainsworth
 image-artist-URL: https://www.etsy.com/shop/dthains
-image-credits: The Valar by Dan Hainsworth https://www.etsy.com/shop/dthains
-image-credits-URL: https://www.etsy.com/shop/dthains
-image-credits-artist: Dan Hainsworth
-image-credits-artist-URL:
-image-credits-title: The Valar
 image-description: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
 image-title: The Valar
 

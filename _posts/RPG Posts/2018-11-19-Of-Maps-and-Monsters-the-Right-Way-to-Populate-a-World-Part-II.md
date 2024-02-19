@@ -44,15 +44,10 @@ coordinates:
 
 image: /img/2018-05/Ebstorfer-stich2.jpg
 image-alt:
-image-artist:
+image-artist:  Gervase of Ebstorf
 image-artist-URL:
-image-credits: Ebstorf Map by Gervase of Ebstorf
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description:
-image-title:
+image-title: Ebstorf Map
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

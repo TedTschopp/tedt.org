@@ -44,15 +44,10 @@ coordinates:
 
 image: /img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: District 9 Alien Fuel Cell by Josh Haberman https://www.artstation.com/artwork/lqz25
-image-credits-URL: https://artofjoshhaberman.blogspot.com/2012/08/district-9-alien-fuel-cell.html
-image-credits-artist: Josh Haberman
-image-credits-artist-URL:
-image-credits-title: District 9 Alien Fuel Cell
+image-artist: Josh Haberman
+image-artist-URL: https://www.artstation.com/artwork/lqz25
 image-description:
-image-title:
+image-title: District 9 Alien Fuel Cell
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

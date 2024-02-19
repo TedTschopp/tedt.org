@@ -43,11 +43,6 @@ image: /img/2018-04/The-Leviathan.jpg
 image-alt:
 image-artist: Larry Elmore
 image-artist-URL: http://www.larryelmore.com/
-image-credits: The Leviathan by Larry Elmore 
-image-credits-URL: http://www.larryelmore.com/store/TSTL/tsr--the-leviathan
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: An oil painting of two tanks on snowy terrain, in the style of reminiscent retro sci-fi scenes, Larry Elmore
 image-title: The Leviathan
 

@@ -34,7 +34,6 @@
 		{% endif %}
 	{% else%}
 		{% assign next_title = page.next.title %}
-
 		{% if page.next.subtitle == null or page.next.subtitle == empty or page.next.subtitle == '' %}
 			{% assign next_subtitle = "Subtitle: NA" %}
 		{% else %}
@@ -58,7 +57,7 @@
 {% else %}
 	{% assign next_url = site.siteurl %}
 	{% assign next_title = "Home" %}
-	{% assign next_image = site.siteurl | append: "/" | append: "webpage_thumbnail.png" %}
+	{% assign next_image = site.siteurl | append: "/img/" | append: "webpage_thumbnail.png" %}
 	{% assign next_subtitle = site.subtitle %}
 
 {% endif %}

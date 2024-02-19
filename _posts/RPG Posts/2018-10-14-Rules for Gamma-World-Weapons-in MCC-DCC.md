@@ -45,15 +45,10 @@ coordinates:
 
 image: /img/2018-10/seth-justus-huntersalienguns.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: Hunters Alien Weapons and Devices by Seth Justus https://www.artstation.com/artwork/lqz25
-image-credits-URL: https://www.artstation.com/artwork/lqz25
-image-credits-artist: Seth Justus
-image-credits-artist-URL: https://www.artstation.com/artwork/lqz25
-image-credits-title: Hunters Alien Weapons and Devices
+image-artist: Seth Justus
+image-artist-URL: https://www.artstation.com/artwork/lqz25
 image-description:
-image-title:
+image-title: Hunters Alien Weapons and Devices
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

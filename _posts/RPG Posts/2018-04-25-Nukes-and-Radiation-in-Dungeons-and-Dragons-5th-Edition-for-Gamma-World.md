@@ -52,10 +52,6 @@ image-alt:
 image-artist: Keith Parkinson
 image-artist-URL: https://www.keithparkinson.com/
 image-credits: The Ultimate A.T.V. by Keith Parkinson -  https://www.keithparkinson.com/
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: A humanoid in technology powered armor riding on a giant mutated wolverine on top of a mountain. 
 image-title: The Ultimate A.T.V.
 

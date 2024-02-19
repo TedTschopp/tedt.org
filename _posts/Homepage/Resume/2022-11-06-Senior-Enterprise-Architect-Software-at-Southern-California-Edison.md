@@ -46,15 +46,10 @@ coordinates:
 
 image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: Ted Tschopp and Midjourney
-image-credits-URL:
-image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
-image-credits-title: Ted Tschopp as Senior Enterprise Architect
+image-artist: Ted Tschopp and Midjourney
+image-artist-URL: https://tedt.org/
 image-description:
-image-title:
+image-title: Ted Tschopp as Senior Enterprise Architect
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

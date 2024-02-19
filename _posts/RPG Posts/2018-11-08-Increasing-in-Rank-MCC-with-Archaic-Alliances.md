@@ -46,11 +46,6 @@ image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
 image-alt:
 image-artist:
 image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description:
 image-title:
 

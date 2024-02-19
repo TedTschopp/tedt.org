@@ -45,15 +45,10 @@ coordinates:
     latitude:
     longitude:
 
-image: https://tedt.org/img/2023-07/FAME.png
+image: /img/2023-07/FAME.png
 image-alt: Photo by Ted Tschopp using Midjourney
-image-artist:
-image-artist-URL:
-image-credits: Photo by Ted Tschopp using Midjourney
-image-credits-URL:
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
-image-credits-title:
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
 image-description:
 image-title: FAME - Fitness, Academics, Mystical, Emotional
 

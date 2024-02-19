@@ -48,15 +48,10 @@ coordinates:
 
 image: /img/2018-09/MCC-Guns.jpg
 image-alt:
-image-artist:
-image-artist-URL:
-image-credits: Weapon & Prop Concepts by Matthew Harris https://megalomatthew.artstation.com/
-image-credits-URL: https://larsson.artstation.com/projects/qOJQn
-image-credits-artist: Matthew Harris
-image-credits-artist-URL:
-image-credits-title: Weapon & Prop Concepts
+image-artist: Matthew Harris
+image-artist-URL: https://megalomatthew.artstation.com/
 image-description:
-image-title:
+image-title: Weapon & Prop Concepts
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

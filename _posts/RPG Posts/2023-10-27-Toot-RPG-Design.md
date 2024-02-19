@@ -45,11 +45,6 @@ image: https://tedt.org/img/2023-07/FAME.png
 image-alt: "Photo by Ted Tschopp using Midjourney"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: "Ted Tschopp"
-image-credits-URL: https://tedt.org/
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
 image-description: "Four people who are experts in Fitness, Academics, Mystical, and Emotional skills"
 image-title: "FAME - Fitness, Academics, Mystical, Emotional"
 
