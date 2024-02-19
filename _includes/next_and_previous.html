@@ -9,12 +9,18 @@
 		{% endif %}
 	{% else%}
 		{% assign previous_title = page.previous.title %}
+		{% if page.previous.subtitle == null or page.previous.subtitle == empty or page.previous.subtitle == '' %}
+			{% assign previous_subtitle = "Subtitle: NA" %}
+		{% else %}
+			{% assign previous_subtitle = page.previous.subtitle %}
+		{% endif %}
 	{% endif %}
 	{% assign previous_url = page.previous.url %}
 {% else %}
 	{% assign previous_url = site.siteurl %}
 	{% assign previous_title = "Home" %}
 {% endif %}
+
 {% if page.next.url %}
 	{% assign next_page = page.next %}
 	{% assign next_layout = next_page.layout %}
@@ -26,7 +32,25 @@
 		{% endif %}
 	{% else%}
 		{% assign next_title = page.next.title %}
+
+		{% if page.next.subtitle == null or page.next.subtitle == empty or page.next.subtitle == '' %}
+			{% assign next_subtitle = "Subtitle: NA" %}
+		{% else %}
+			{% assign next_subtitle = page.previous.subtitle %}
+		{% endif %}
 	{% endif %}
+	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
+		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+	{% else %}
+		{% assign next_image = page.next.image %}
+	{% endif %}
+
+	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
+		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+	{% else %}
+		{% assign previous_image = page.previous.image %}
+	{% endif %}
+
 	{% assign next_url = page.next.url %}
 
 {% else %}
@@ -45,16 +69,16 @@
 	</div>
 
 <hr>
-
+<div class="row g-0">
 	<div class="card mb-3" style="max-width: 540px;">
 		<div class="row g-0">
 			<div class="col-md-4">
-				<img src="..." class="img-fluid rounded-start" alt="...">
+				<img src="{{next_image}}" class="img-fluid rounded-start" alt="...">
 			</div>
 			<div class="col-md-8">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<h5 class="card-title">{{previous_title}}</h5>
+					<p class="card-text">{{previous_subtitle}}</p>
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
 			</div>
@@ -64,14 +88,15 @@
 		<div class="row g-0">
 			<div class="col-md-8">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<h5 class="card-title">{{next_title}}</h5>
+					<p class="card-text">{{next_subtitle}}</p>
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<img src="..." class="img-fluid rounded-start" alt="...">
+				<img src="{{next_image}}" class="img-fluid rounded-start" alt="...">
 			</div>
 		</div>
 	</div>
+</div>
 {% endif %}
