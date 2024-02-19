@@ -42,13 +42,13 @@
 	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
 		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign next_image = page.next.image %}
+		{% assign next_image = image_URL = site.siteurl | append: "/" | append: page.next.image  %}
 	{% endif %}
 
 	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
 		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign previous_image = page.previous.image %}
+		{% assign previous_image = image_URL = site.siteurl | append: "/" | append: page.previous.image  %}
 	{% endif %}
 
 	{% assign next_url = page.next.url %}
@@ -73,7 +73,7 @@
 	<div class="card mb-3" style="max-width: 540px;">
 		<div class="row g-0">
 			<div class="col-md-4">
-				<img src="{{next_image}}" class="img-fluid rounded-start" alt="...">
+				<img src="{{previous_image}}" class="img-fluid rounded-start" alt="...">
 			</div>
 			<div class="col-md-8">
 				<div class="card-body">
