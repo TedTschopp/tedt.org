@@ -214,11 +214,13 @@
                                     <div class="card-body pt-5 p-4">
                                         <p class="h2 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h2>
 
-                                        {% assign path = "category/" %}
-                                        {% assign slugified_category = category | slugize %}
-                                        {% assign file_name_of_category = slugified_category | append ".html" %}
-                                        {% assign target_page_path = path | append: file_name_of_category %}
-                                        {% assign target_page = site.pages | where: "path", target_page_path | first %}
+                                        {% if category %}
+                                            {% assign path = "category/" %}
+                                            {% assign slugified_category = category | slugize %}
+                                            {% assign file_name_of_category = slugified_category | append ".html" %}
+                                            {% assign target_page_path = path | append: file_name_of_category %}
+                                            {% assign target_page = site.pages | where: "path", target_page_path | first %}
+                                        {% endif %}
                                         
                                         {% if target_page %}
                                             <p class="h3 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
