@@ -215,8 +215,8 @@
                                 {% assign image = clean_category | append: ".png" %}
                                 <div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
                                     <div class="card-body pt-5 p-4">
-                                        <p class="h2 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h2>
-                                        {% comment %}
+                                        <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
+
                                         {% if category %}
                                             {% assign file_name_of_category = category | append ".html" %}
                                             {% assign slugified_category = file_name_of_category | slugify %}
@@ -225,9 +225,10 @@
                                         {% endif %}
                                         
                                         {% if target_page %}
-                                            <p class="h3 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
+                                            <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
                                         {% endif %}                                        
 
+                                        {% comment %}
                                         <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                                         {% endcomment %}
                                     </div>
