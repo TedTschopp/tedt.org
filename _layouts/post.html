@@ -218,7 +218,7 @@
                                         {% assign slugified_category = category | slugize %}
                                         {% assign file_name_of_category = slugified_category | append ".html" %}
                                         {% assign target_page_path = path | append: file_name_of_category %}
-                                        {% assign target_page = site.pages | where: "path", target_page_pat | first %}
+                                        {% assign target_page = site.pages | where: "path", target_page_path | first %}
                                         
                                         {% if target_page %}
                                             <p class="h3 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
