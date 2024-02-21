@@ -215,9 +215,9 @@
                                         <p class="h2 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h2>
 
                                         {% if category %}
-                                            {% assign slugified_category = category | slugize %}
-                                            {% assign file_name_of_category = slugified_category | append ".html" %}
-                                            {% assign target_page_path = "category/" | append: file_name_of_category %}
+                                            {% assign file_name_of_category = category | append ".html" %}
+                                            {% assign slugified_category = file_name_of_category | slugize %}
+                                            {% assign target_page_path = "category/" | append: slugified_category %}
                                             {% assign target_page = site.pages | where: "path", target_page_path | first %}
                                         {% endif %}
                                         
