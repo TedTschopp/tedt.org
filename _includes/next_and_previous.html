@@ -65,46 +65,7 @@
 
 {% endif %}
 
-
-
-<div>
-	<div class="row g-0 h-100">
-		<div class="col-md-6 h-100">
-			<div class="card mb-3 h-100 d-flex align-items-center" style="max-width: 540px;">
-				<div class="row g-0 h-100">
-					<div class="col-md-4">
-						<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
-							<p class="card-text">{{previous_subtitle}}</p>
-							{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 h-100">
-			<div class="card mb-3 h-100 d-flex align-items-center" style="max-width: 540px;">
-				<div class="row g-0 h-100">
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
-							<p class="card-text">{{next_subtitle}}</p>
-							{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
+<hr>
 
 <div class="container py-4 py-xl-5">
 	<section>
@@ -126,8 +87,6 @@
 									</div>
 								</div>
 							</div>
-
-
 
 						</div>
 					</div>
