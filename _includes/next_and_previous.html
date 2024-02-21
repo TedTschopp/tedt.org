@@ -111,11 +111,8 @@
 		<div class="container h-100 position-relative" style="top: -75px;">
 			<div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-2">
 				<div class="col">
-					<div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ previous_image }}" />
+					<div class="card h-100">
 						<div class="card-body pt-5 p-4">
-							<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
-							<p class="card-text">{{previous_subtitle}}</p>
-							<p class="card-text">{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}</p>
 							
 							<div class="row g-0 h-100">
 								<div class="col-md-4">
@@ -137,11 +134,8 @@
 				</div>
 
 				<div class="col">
-					<div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ next_image }}" />
+					<div class="card h-100">
 						<div class="card-body pt-5 p-4">
-							<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
-							<p class="card-text">{{next_subtitle}}</p>
-							<p class="card-text">{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}</p>
 
 							<div class="row g-0 h-100">
 								<div class="col-md-8">
