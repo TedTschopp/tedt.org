@@ -194,20 +194,6 @@
                     <div class="post-categories">
                         <div class="col-12">
 
-
-                            {% assign categories = page.categories %}
-                            {% for category in categories %}
-                                <h4>Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
-                                <div class="row">
-                                    <ul lass="list-unstyled">
-                                        {% for post in site.categories[category] limit:5 %}
-                                            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            {% endfor %}
-
-
                             {% assign categories = page.categories %}
                             {% for category in categories %}
 
