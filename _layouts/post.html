@@ -218,8 +218,9 @@
                                         {% assign file_name_of_category = category | slugize | append ".html" %}
                                         {% assign target_page_path = path | append: file_name_of_category %}
                                         {% assign target_page = site.pages | where: "path", target_page_pat | first %}
+                                        
                                         {% if target_page %}
-                                        <p class="h3 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
+                                            <p class="h3 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
                                         {% endif %}                                        
 
                                         {% comment %}<p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>{% comment }
