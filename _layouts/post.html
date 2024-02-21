@@ -200,8 +200,29 @@
                                 {% assign clean_category = category | downcase | slugify %}
                                 {% assign image = clean_category | append: ".png" %}
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
-                                <div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
-                                    <div class="card-body pt-1 pb-1 p-4">
+                                <div class="card h-100">
+                                    <div class="col-12">
+                                        <div class="card h-100">
+                                            <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
+                                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                                                <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
+
+                                                {% assign target_page_path = "category/" | append: file_name_of_category %}
+                                                {% assign target_page = site.pages | where: "path", target_page_path | first %}
+        
+                                                {% if target_page %}
+                                                    <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
+                                                {% endif %}                                        
+        
+                                                {% comment %}
+                                                <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
+                                                {% endcomment %}                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
+                                     <div class="card-body pt-1 pb-1 p-4">
                                         <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
 
                                         {% assign target_page_path = "category/" | append: file_name_of_category %}
@@ -219,9 +240,9 @@
                                         {% for post in site.categories[category] limit:5 %}
                                             <p class="card-text"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
                                             {% if post.teaser %}
-                                                <p class="card-text">{{ post.teaser }}</p>
+                                                <p class="card-text">{{ post.teaser | truncatewords: 20 }}</p>
                                             {% elsif post.description %}
-                                                <p class="card-text">{{ post.description  }}</p>
+                                                <p class="card-text">{{ post.description | truncatewords: 20 }}</p>
                                             {% else %}
                                                 <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                                             {% endif %}
