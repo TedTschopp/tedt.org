@@ -206,7 +206,9 @@
 
                                         {% assign target_page_path = "category/" | append: file_name_of_category %}
                                         {% assign target_page = site.pages | where: "path", target_page_path | first %}
-                                        
+                                        <!-- target_page_path: {{target_page_path}}-->
+                                        <!-- {{site.pages | jsonify }}-->
+                                        <!-- target_page: {{target_page}}-->
                                         {% if target_page %}
                                             <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
                                         {% endif %}                                        
