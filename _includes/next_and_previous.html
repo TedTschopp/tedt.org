@@ -66,44 +66,6 @@
 {% endif %}
 
 
-<div>
-	<div class="row g-0 h-100">
-		<div class="col-md-6 h-100">
-			<div class="card mb-3 h-100 d-flex align-items-center" style="max-width: 540px;">
-				<div class="row g-0 h-100">
-					<div class="col-md-4">
-						<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
-							<p class="card-text">{{previous_subtitle}}</p>
-							{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 h-100">
-			<div class="card mb-3 h-100 d-flex align-items-center" style="max-width: 540px;">
-				<div class="row g-0 h-100">
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
-							<p class="card-text">{{next_subtitle}}</p>
-							{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
 
 <div>
 	<div class="row g-0 h-100">
@@ -154,39 +116,46 @@
 							<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
 							<p class="card-text">{{previous_subtitle}}</p>
 							<p class="card-text">{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}</p>
+							
+							<div class="row g-0 h-100">
+								<div class="col-md-4">
+									<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
+										<p class="card-text">{{previous_subtitle}}</p>
+										{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+									</div>
+								</div>
+							</div>
+
+
+
 						</div>
 					</div>
 				</div>
-				{% comment %}
-				<div class="col">
-					<div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/home/Folklore.jpg" />
-						<div class="card-body pt-5 p-4">
-							<h2 class="card-title" id="folklore">Swiss Folklore</h2>
-							<h3 class="text-muted card-subtitle h5 mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h5>
-							<p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
-						</div>
-						<div class="card-footer p-4 py-3 h-100">
-							{% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
-							{% for post in posts-drafts limit:3 %}
-								<h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
-								{% if post.teaser %}
-								  <p class="card-text">{{ post.teaser }}</p>
-								{% elsif post.description %}
-								  <p class="card-text">{{ post.description   }}</p>
-								{% else %}
-								  <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
-								{% endif %}
-							{% endfor %}
-						</div>
-					</div>
-				</div>
-				{% endcomment %}
+
 				<div class="col">
 					<div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ next_image }}" />
 						<div class="card-body pt-5 p-4">
 							<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
 							<p class="card-text">{{next_subtitle}}</p>
 							<p class="card-text">{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}</p>
+
+							<div class="row g-0 h-100">
+								<div class="col-md-8">
+									<div class="card-body">
+										<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
+										<p class="card-text">{{next_subtitle}}</p>
+										{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+									</div>
+								</div>
+								<div class="col-md-4">
+									<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
