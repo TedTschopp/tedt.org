@@ -56,7 +56,7 @@ mastodon-post-id: 111819663872505089
 **Background:** In our last Adventure, two of your characters got some wetware. You have the ability to share the program. Each time you share the spell the results table goes from a level 1 result table to a level 2 table to a level 3 table. You will no longer be able to share the wetware after you share it three times.
 
 **Rules:**
-|                        |                                                     |
+|                  Field | Value                                               |
 |-----------------------:|:----------------------------------------------------|
 |                _Name:_ | R2D2 / C3PO Advertising Program Hologram Generation |
 |              _Author:_ | Ted Tschopp                                         |
