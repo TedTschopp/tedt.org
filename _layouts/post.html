@@ -210,13 +210,16 @@
 
                             {% assign categories = page.categories %}
                             {% for category in categories %}
-                                <div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{category|slugize}}.png" />
+
+                                {% assign clean_category = category | downcase | slugify %}
+                                {% assign image = clean_category | append: ".png" %}
+                                <div class="card h-100"><img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
                                     <div class="card-body pt-5 p-4">
-                                        <p class="h2 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h2>
+                                        <p class="h2 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h2>
                                         {% comment %}
                                         {% if category %}
                                             {% assign file_name_of_category = category | append ".html" %}
-                                            {% assign slugified_category = file_name_of_category | slugize %}
+                                            {% assign slugified_category = file_name_of_category | slugify %}
                                             {% assign target_page_path = "category/" | append: slugified_category %}
                                             {% assign target_page = site.pages | where: "path", target_page_path | first %}
                                         {% endif %}
