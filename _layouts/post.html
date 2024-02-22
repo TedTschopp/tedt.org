@@ -202,15 +202,16 @@
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
                                 <div class="card h-100">
                                     <div class="col-12">
-                                        <div class="card h-100">
-                                            <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
-                                            <div class="card-img-overlay text-center d-flex flex-column justify-content-start align-items-bottom">
-                                                <p class="card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
+                                        <div class="card h-100 position-relative">
+                                            <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{category}}">
+                                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));"></div>
+                                                <p class="card-title">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-body pt-1 pb-1 p-4">
 
+                                    <div class="card-body pt-1 pb-1 p-4">
 
                                         {% assign target_page_path = "category/" | append: file_name_of_category %}
                                         {% assign target_page = site.pages | where: "path", target_page_path | first %}
@@ -220,7 +221,7 @@
                                         {% endif %}                                        
 
                                         {% comment %}
-                                        <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
+                                            <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                                         {% endcomment %}
 
 
