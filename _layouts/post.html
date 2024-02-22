@@ -223,20 +223,6 @@
 
                                     <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
                                      <div class="card-body pt-1 pb-1 p-4">
-                                        <p class="h4 card-title" id="blog">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
-
-                                        {% assign target_page_path = "category/" | append: file_name_of_category %}
-                                        {% assign target_page = site.pages | where: "path", target_page_path | first %}
-
-                                        {% if target_page %}
-                                            <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
-                                        {% endif %}                                        
-
-                                        {% comment %}
-                                        <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
-                                        {% endcomment %}
-                                    </div>
-                                    <div class="card-footer p-4 py-3 h-100">
                                         {% for post in site.categories[category] limit:5 %}
                                             <p class="card-text"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
                                             {% if post.teaser %}
@@ -246,7 +232,10 @@
                                             {% else %}
                                                 <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                                             {% endif %}
-                                        {% endfor %}
+                                        {% endfor %}                                        
+                                    </div>
+                                    <div class="card-footer p-4 py-3 h-100">
+
                                     </div>
                                 </div>
                             {% endfor %}
