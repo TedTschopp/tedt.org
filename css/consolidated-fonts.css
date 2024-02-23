@@ -81,7 +81,7 @@
 	text-rendering: optimizeLegibility;
 
 }
- @font-face {
+@font-face {
 	font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
 	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
