@@ -36,7 +36,7 @@ tags:
 keywords: engagement, conversations, clueless, consumers, commenters, creators, content,
     tools, barriers, community building, invitation, party analogy
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

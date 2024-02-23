@@ -33,7 +33,7 @@ tags:
 - Rhône
 keywords:
 
-draft-status:
+
 
 location:
     name:

@@ -38,7 +38,7 @@ tags:
 keywords: Tasmania, Aborigines, collaboration, technology development, isolation,
     innovation, adaptability, history, lessons learned, modern implications
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

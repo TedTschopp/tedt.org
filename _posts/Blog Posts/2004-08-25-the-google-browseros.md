@@ -32,7 +32,7 @@ tags:
 keywords: Google, Internet OS, Web Applications, .NET, Browser-based OS, Future of
     Internet, Online Games, Mail Integration, Social Network, Search
 
-draft-status:
+
 
 location:
     name: Temple City, CA

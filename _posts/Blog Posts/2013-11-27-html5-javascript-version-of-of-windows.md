@@ -44,7 +44,7 @@ keywords: HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photos
     Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser
     technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

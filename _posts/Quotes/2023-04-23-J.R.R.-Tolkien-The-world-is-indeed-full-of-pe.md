@@ -30,7 +30,7 @@ categories:
 tags:
 keywords:
 
-draft-status:
+
 
 location:
     name:

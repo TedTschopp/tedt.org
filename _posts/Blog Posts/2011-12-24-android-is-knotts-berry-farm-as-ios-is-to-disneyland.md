@@ -37,7 +37,7 @@ keywords: Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, expe
     design, mobile operating systems, technology comparison, innovation, user experience,
     Ghost Rider, Six Flags, Walt Disney, Steve Jobs
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

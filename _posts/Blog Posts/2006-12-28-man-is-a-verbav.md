@@ -33,7 +33,7 @@ tags:
 keywords: Word-Eater, Reading, Books, Storytelling, Identity, Symbols, Customs, Language,
     Self-Reflection, Personal Growth, Communication
 
-draft-status:
+
 
 location:
     name: Temple City, CA

@@ -32,7 +32,7 @@ tags:
 keywords: Los Angeles, Winter Rains, Spiritual Reflection, Longing, Home, Hope, Advent,
     Christ, Christmas, Nature's Beauty, Kierkegaard, Angst, Mountains, Snow, Valley
 
-draft-status:
+
 
 location:
     name: Temple City, CA

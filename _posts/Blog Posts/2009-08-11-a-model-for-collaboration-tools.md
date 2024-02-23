@@ -39,7 +39,7 @@ keywords: collaboration, corporate environment, Information Technology, mediatio
     gap, artifacts, communication, knowledge management, email, written, verbal, visual,
     real time, queued, long term, static, permanent
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

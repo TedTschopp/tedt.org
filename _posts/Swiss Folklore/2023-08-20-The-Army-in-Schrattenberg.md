@@ -51,7 +51,7 @@ tags:
 keywords: Schrattenberg, Escholzmatt, Gurnigel, Magic, Hidden Treasures, Warriors,
     Folklore, Swiss Legends, Supernatural, Mystery
 
-draft-status:
+
 
 location:
     address:

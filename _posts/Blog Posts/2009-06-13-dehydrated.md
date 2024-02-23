@@ -34,7 +34,7 @@ tags:
 keywords: mystery, supernatural, X-Files, Fringe, transformation, short story, Dehydrated,
     Alice, intrigue, psychological
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

@@ -36,7 +36,7 @@ tags:
 keywords: Garden of Eden, theology, spiritual growth, limitless, tree of life, tree
     of knowledge, Bible, creation, cosmos, mankind's role
 
-draft-status:
+
 
 location:
     name: Temple City, CA

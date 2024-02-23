@@ -29,7 +29,7 @@ categories:
 tags: Confession,Guilt
 keywords:
 
-draft-status:
+
 
 location:
     name:

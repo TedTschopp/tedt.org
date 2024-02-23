@@ -33,7 +33,7 @@ categories:
 tags: Project
 keywords: Twitter and Mastodon Bots, JavaScript and HTML
 
-draft-status:
+
 
 location:
     name:

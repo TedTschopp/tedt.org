@@ -35,7 +35,7 @@ keywords: digital realism, sound quality, computer graphics, user interface desi
     Apple, Microsoft, Metro interface, color depth, pixels, 220 DPI, visual reproduction,
     sound technology, software problem, innovation
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

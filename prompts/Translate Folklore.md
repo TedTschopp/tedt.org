@@ -29,7 +29,7 @@ tags:
 
 keywords: 
 
-draft-status:
+
 
 location:
     address:

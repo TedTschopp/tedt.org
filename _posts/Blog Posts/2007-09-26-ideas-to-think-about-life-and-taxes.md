@@ -36,7 +36,7 @@ tags:
 keywords: taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, human
     cultures, family structure, genetics, categorization
 
-draft-status:
+
 
 location:
     name: Temple City, CA

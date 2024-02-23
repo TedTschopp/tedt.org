@@ -36,7 +36,7 @@ tags:
 keywords: collaboration tools, communication, office environment, value proposition,
     knowledge creation, employee engagement, network growth, IBM study, revenue generation
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

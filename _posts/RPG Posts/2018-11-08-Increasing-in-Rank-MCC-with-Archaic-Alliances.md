@@ -30,11 +30,10 @@ categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
-- Draft
 tags:
 keywords:
 
-draft-status: Alpha
+
 
 location:
     name:

@@ -25,15 +25,12 @@ description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Mä
 seo-description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics"
 
 categories:
-  - Draft
   - Role Playing Games
   - The Märchen Engine
 tags:
   - RPG
   - Game Mechanics
 keywords:
-
-draft-status: Integration
 
 location:
     name: Bradbury, CA

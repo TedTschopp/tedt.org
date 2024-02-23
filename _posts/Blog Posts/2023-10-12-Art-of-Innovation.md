@@ -38,8 +38,6 @@ keywords:
     - Compromise in art
     - Idealism vs Pragmatism
 
-draft-status: Published
-
 location:
     name: Bradbury, CA
 coordinates:

@@ -29,7 +29,7 @@ categories:
 tags: Ideas to refine,Process,Technology,Tools
 keywords:
 
-draft-status:
+
 
 location:
     name:

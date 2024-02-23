@@ -32,7 +32,7 @@ categories:
 tags: Blocks,Management,Strategy,War
 keywords:
 
-draft-status:
+
 
 location:
     name:

@@ -38,7 +38,7 @@ keywords: Nassim Nicholas Taleb, Black Swan, narrative fallacy, inductive reason
     religion, Christianity, Ludic fallacy, Statistical regress fallacy, philosophy,
     intellect, belief
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

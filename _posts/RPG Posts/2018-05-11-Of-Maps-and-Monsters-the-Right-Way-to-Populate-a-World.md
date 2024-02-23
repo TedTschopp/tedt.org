@@ -27,11 +27,10 @@ categories:
 - Role Playing Games
 - Maps
 - Monsters
-- Draft
 tags:
 keywords: Role playing games,  World-building, Game Master, Maps, Monsters, Storytelling
 
-draft-status: notes
+
 
 location:
     name:

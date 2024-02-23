@@ -33,7 +33,7 @@ tags:
 - Swiss Culture
 keywords: Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather
 
-draft-status:
+
 
 location:
     address:

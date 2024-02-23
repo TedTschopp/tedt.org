@@ -32,13 +32,12 @@ seo-description: "The following rules are what I have collected from around the 
 categories:
 - Role Playing Games
 - Gamma World
-- Draft
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
 tags:
 keywords:
 
-draft-status: Alpha
+
 
 location:
     name:

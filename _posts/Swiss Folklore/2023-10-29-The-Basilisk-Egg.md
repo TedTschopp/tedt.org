@@ -33,7 +33,7 @@ tags:
 
 keywords: Swiss folklore, Basel, Basilisk, 1474
 
-draft-status:
+
 
 location:
     address:

@@ -34,7 +34,7 @@ keywords: web services, enterprise architecture, computing theory, data services
     calculation services, display services, technology convergence, security, quality
     assurance, web development
 
-draft-status:
+
 
 location:
     name: Temple City, CA

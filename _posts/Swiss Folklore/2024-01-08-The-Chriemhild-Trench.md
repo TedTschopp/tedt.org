@@ -36,8 +36,6 @@ tags:
 
 keywords: Chriemhild Trench, Swiss folklore, magic, envy, Türlersee
 
-draft-status: published
-
 location:
     address:
     city: Zurich

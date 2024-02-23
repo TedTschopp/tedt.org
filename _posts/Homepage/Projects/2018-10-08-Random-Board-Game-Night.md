@@ -34,7 +34,7 @@ categories:
 tags: Project
 keywords:
 
-draft-status:
+
 
 location:
     name:

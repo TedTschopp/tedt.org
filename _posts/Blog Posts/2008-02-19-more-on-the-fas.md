@@ -32,7 +32,7 @@ tags:
 keywords: free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom of
     the Will, spirituality, self-control, ethics, morality
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

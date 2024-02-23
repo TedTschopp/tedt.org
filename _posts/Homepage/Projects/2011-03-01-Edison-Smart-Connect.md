@@ -33,7 +33,7 @@ categories:
 tags: Project
 keywords: ASP, Oracle, Microsoft Site Server, Windows Server, HTML, ASP, .NET, Flash, XML, JavaScript
 
-draft-status:
+
 
 location:
     name:

@@ -51,7 +51,7 @@ tags:
 keywords: Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom, Austrian
     rule, divine justice, historical folklore
 
-draft-status:
+
 
 location:
     address:

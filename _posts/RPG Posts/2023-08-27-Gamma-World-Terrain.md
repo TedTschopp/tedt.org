@@ -26,11 +26,10 @@ seo-description:
 
 categories:
 - Gamma World
-- Draft
 tags:
 keywords:
 
-draft-status:
+
 
 location:
     name:

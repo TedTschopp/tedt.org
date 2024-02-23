@@ -28,7 +28,7 @@ categories:
 tags: Common sense,Wisdom
 keywords:
 
-draft-status:
+
 
 location:
     name:

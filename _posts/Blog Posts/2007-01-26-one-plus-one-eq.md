@@ -33,7 +33,7 @@ tags:
 keywords: Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value,
     Religion, Politics
 
-draft-status:
+
 
 location:
     name: Temple City, CA

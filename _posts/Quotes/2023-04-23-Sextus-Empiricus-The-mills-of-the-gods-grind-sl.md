@@ -28,7 +28,7 @@ categories:
 tags: Government,Justice,Slow
 keywords:
 
-draft-status:
+
 
 location:
     name:

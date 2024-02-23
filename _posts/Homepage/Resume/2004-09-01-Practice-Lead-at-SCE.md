@@ -56,7 +56,7 @@ categories: Home
 tags: Resume
 keywords:
 
-draft-status:
+
 
 location: 
     name: Irwindale, CA

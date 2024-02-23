@@ -19,7 +19,6 @@ bullets:
 description: Character Concept of Mehmet Al-Mansur, an Ottoman imperial refugee in Paris during the early 1920s, skilled in mystical arts and combat, dedicated to aiding magical beings' resettlement in the Americas.
 seo-description: 
 categories:
-  - Draft
   - Role Playing Games
   - Gurps
 tags:
@@ -27,7 +26,7 @@ tags:
   - Game Mechanics
   - Gurps 4th Edition
 keywords: "Mehmet Al-Mansur, Sultan's Sihirbaz Yeniçerileri, Ottoman imperial refugee, mystical arts, magical creatures resettlement, Ottoman soldier"
-draft-status: Integration
+
 location:
     name: Bradbury, CA
 coordinates:

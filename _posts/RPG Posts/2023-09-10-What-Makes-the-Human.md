@@ -34,11 +34,8 @@ seo-description:
 categories:
 - Role Playing Games
 - The Märchen Engine
-- Draft
 tags:
 keywords:
-
-draft-status: integration
 
 location:
     name:

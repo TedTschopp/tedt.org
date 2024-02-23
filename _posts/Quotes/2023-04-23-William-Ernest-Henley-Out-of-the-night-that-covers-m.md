@@ -28,7 +28,7 @@ categories:
 tags: Masculinity
 keywords:
 
-draft-status:
+
 
 location:
     name:

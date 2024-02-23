@@ -39,7 +39,7 @@ tags:
 keywords: Robin Hood, community, common good, Russell Crowe, Nottingham, garden metaphor,
     protection, values, shared goals, collaboration
 
-draft-status:
+
 
 location:
     name: Phillips Ranch, CA

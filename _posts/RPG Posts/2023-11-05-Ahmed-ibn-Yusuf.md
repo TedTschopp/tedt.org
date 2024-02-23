@@ -19,7 +19,6 @@ bullets:
 description: Character Concept of Ahmed ibn Yusuf, a porter who works for the Great Library in Baghdad in 1258.
 seo-description: 
 categories:
-  - Draft
   - Role Playing Games
   - Gurps
 tags:
@@ -27,7 +26,7 @@ tags:
   - Game Mechanics
   - Gurps 4th Edition
 keywords: ""
-draft-status: Integration
+
 location:
     name: Bradbury, CA
 coordinates:

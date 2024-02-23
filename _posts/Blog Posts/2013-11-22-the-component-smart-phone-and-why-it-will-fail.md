@@ -40,7 +40,7 @@ keywords: Motorola, Project Ara, modular smartphones, commodification, device co
     TechCrunch, wearable computing, Bluetooth 4.0 LE, PC industry, technology trends,
     smartphone innovation, disruption, customization
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

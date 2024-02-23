@@ -34,7 +34,7 @@ keywords: Google, investment strategy, data mining, GIS, real-time monitoring, p
     recognition, algorithms, advertising, branding, content creation, content consumption,
     real-world information, online integration
 
-draft-status:
+
 
 location:
     name: Temple City, CA

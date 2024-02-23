@@ -31,11 +31,10 @@ categories:
 - Gamma World
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
-- Draft
 tags:
 keywords:
 
-draft-status: Alpha
+
 
 location:
     name:

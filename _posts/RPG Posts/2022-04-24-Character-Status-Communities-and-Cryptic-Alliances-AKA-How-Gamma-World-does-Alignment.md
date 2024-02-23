@@ -36,11 +36,10 @@ categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
-- Draft
 tags:
 keywords:
 
-draft-status: notes
+
 
 location:
     name:

@@ -51,7 +51,7 @@ tags:
 keywords: Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Capuchin
     monk, Neuburgerhalde, folklore, mystery
 
-draft-status:
+
 
 location:
     address:

@@ -33,7 +33,7 @@ categories:
 tags: Project
 keywords: Edison International, corporate portal, SAP Portal, Java, XHTMLB, HTMLB
 
-draft-status:
+
 
 location:
     name:

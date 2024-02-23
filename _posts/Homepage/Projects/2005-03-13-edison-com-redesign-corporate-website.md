@@ -33,7 +33,7 @@ categories:
 tags: Project
 keywords: ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML, JavaScript
 
-draft-status:
+
 
 location:
     name:

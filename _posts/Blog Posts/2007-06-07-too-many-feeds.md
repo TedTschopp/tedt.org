@@ -34,7 +34,7 @@ keywords: RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, G
     linkblogs, reading overload, scanning articles, information overload, feed reading
     applications
 
-draft-status:
+
 
 location:
     name: Temple City, CA

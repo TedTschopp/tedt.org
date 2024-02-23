@@ -26,7 +26,7 @@ tags:
   - RPG
   - Game Mechanics
 keywords: ""
-draft-status: Integration
+
 location:
     name: Bradbury, CA
 coordinates:

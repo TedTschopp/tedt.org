@@ -37,11 +37,10 @@ categories:
 - Dungeon Crawl Classics
 - Religion
 - Middle-earth
-- Draft
 tags:
 keywords:
 
-draft-status: notes
+
 
 location:
     name:

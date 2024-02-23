@@ -29,7 +29,7 @@ categories:
 tags: Movements,Politics,Religion
 keywords:
 
-draft-status:
+
 
 location:
     name:

@@ -41,7 +41,7 @@ tags:
 - Men in Black
 keywords:
 
-draft-status:
+
 
 location:
     name:

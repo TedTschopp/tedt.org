@@ -34,7 +34,7 @@ keywords: Fantasy Literature, Romanticism, Shadows, Light, Chronicles of Narnia,
     Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love,
     Symbolism, Newbery Awards
 
-draft-status:
+
 
 location:
     name: Temple City, CA

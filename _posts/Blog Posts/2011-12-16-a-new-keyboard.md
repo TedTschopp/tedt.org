@@ -35,7 +35,7 @@ tags:
 keywords: ZAAG, Logitech, keyboard case, iPad, Apple, Bluetooth, USB charger, laptop
     replacement, mobile productivity, tech review, device integration
 
-draft-status:
+
 
 location:
     name: Blanchard Canyon Road

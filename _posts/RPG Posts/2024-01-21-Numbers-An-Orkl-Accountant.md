@@ -25,7 +25,7 @@ tags:
   - RPG
   - Character
 keywords: ""
-draft-status: Integration
+
 location:
     name: Bradbury, CA
 coordinates:

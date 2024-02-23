@@ -42,7 +42,7 @@ keywords: mobile computing, smartphones, mainframes, PCs, laptops, China, gadget
     all-in-one, Xbox, PlayStation, Microsoft, Sony, mobile applications, cloud computing,
     modern technology
 
-draft-status:
+
 
 location:
     name: Bradbury, CA

@@ -34,7 +34,7 @@ tags:
 keywords: Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships,
     Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith
 
-draft-status:
+
 
 location:
     name: Temple City, CA

@@ -34,7 +34,7 @@ categories: Home
 tags: Resume
 keywords:
 
-draft-status:
+
 
 location: 
     name: Glendale, CA

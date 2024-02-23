@@ -40,7 +40,7 @@ categories:
 tags:
 keywords:
 
-draft-status:
+
 
 location:
     name: Bradbury, CA

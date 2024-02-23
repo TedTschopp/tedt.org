@@ -35,7 +35,7 @@ tags:
 keywords: Martin Luther, beer, moderation, Christianity, theology, history, soberness,
     gluttony, drunkenness, quotations, Lutheran tradition
 
-draft-status:
+
 
 location:
     name: Temple City, CA

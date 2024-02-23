@@ -38,12 +38,9 @@ categories:
 - Religion
 - Gamma World
 - Mutant Crawl Classics
-- Draft
 tags:
 keywords: Role playing games, Ideologies, Factions. Religions, World-building, Game
     Master
-
-draft-status: integration
 
 location:
     name:

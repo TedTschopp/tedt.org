@@ -27,11 +27,8 @@ categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
-- Draft
 tags:
 keywords:
-
-draft-status: component
 
 location:
     name:

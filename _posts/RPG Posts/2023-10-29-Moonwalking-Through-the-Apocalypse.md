@@ -30,7 +30,6 @@ seo-description: "A unique TTRPG encounter featuring Michael-JX, a 50-foot tall 
 
 
 categories:
-  - Draft
   - Role Playing Games
   - Gamma World
   - Mutant Crawl Classics
@@ -44,9 +43,6 @@ keywords:
   - RPG
   - TTRPG
   - Post-Apocalyptic
-
-
-draft-status: Integration
 
 location:
     name: Bradbury, CA

@@ -31,8 +31,6 @@ tags: [Swiss Folklore, Mystical Wells, Alpine Tales, Uri Legends]
 
 keywords: Swiss Folklore, Well at Schwanden, Alpine Legends, Miraculous Wells
 
-draft-status: published
-
 location:
     address: 
     city: U

@@ -32,7 +32,7 @@ tags:
 keywords: Poetry, Time, Forgiveness, Redemption, Journey, Sands of Time, Reflection,
     Human Quest, Departure, Earthly Sphere, Triumph, Penance
 
-draft-status:
+
 
 location:
     name: Temple City, CA

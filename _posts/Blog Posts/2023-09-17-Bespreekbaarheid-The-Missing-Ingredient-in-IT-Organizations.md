@@ -33,7 +33,7 @@ tags:
 keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
     Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
 
-draft-status:
+
 
 location:
     name: Bradbury, CA

@@ -47,11 +47,10 @@ seo-description: 'During the days of Tech Level VI, a lot of time was spent by A
 categories:
 - Role Playing Games
 - Gamma World
-- Draft
 tags:
 keywords:
 
-draft-status: notes
+
 
 location:
     name:

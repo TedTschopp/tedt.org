@@ -33,11 +33,8 @@ seo-description:
 categories:
 - Role Playing Games
 - The Märchen Engine
-- Draft
 tags:
 keywords: Skills, Career, Adaptability, Learning, Professional Development
-
-draft-status: integration
 
 location:
     name:

@@ -34,7 +34,7 @@ keywords: Disneyland, Christmas, Candlelight Processional, Advent, Choir, Spirit
     Experience, Rainy Day, Toon Town, Small World, Grumpy Jester Hat, Luke Chapter
     2, Christ
 
-draft-status:
+
 
 location:
     name: Temple City, CA

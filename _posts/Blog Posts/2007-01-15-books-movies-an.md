@@ -34,7 +34,7 @@ tags:
 keywords: Children of Men, Book vs Movie, Comparison, Themes, Sex, Family, Love, Hope,
     Religion, Politics, Justice, Freedom, Analysis, Psalm 90, Literary Analysis
 
-draft-status:
+
 
 location:
     name: Temple City, CA

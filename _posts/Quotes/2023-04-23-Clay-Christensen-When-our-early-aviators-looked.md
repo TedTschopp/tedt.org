@@ -29,7 +29,7 @@ categories:
 tags: Best practices,Bird,Feathers,Flight,Theory
 keywords:
 
-draft-status:
+
 
 location:
     name:

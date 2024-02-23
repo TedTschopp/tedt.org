@@ -31,7 +31,7 @@ tags:
 keywords: iTunes, TypePad, Integration, Music, Syncing, Playlists, Latest Tunes, Guide,
     Tutorial
 
-draft-status:
+
 
 location:
     name: Temple City, CA

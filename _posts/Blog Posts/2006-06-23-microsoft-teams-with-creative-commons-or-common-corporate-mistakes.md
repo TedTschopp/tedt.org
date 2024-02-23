@@ -28,7 +28,7 @@ categories:
 tags:
 keywords:
 
-draft-status:
+
 
 location:
     name: Temple City, CA

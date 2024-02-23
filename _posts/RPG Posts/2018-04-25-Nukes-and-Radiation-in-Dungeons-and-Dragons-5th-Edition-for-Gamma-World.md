@@ -34,12 +34,11 @@ categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
-- Draft
 tags:
 keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role playing
     games, Game Master
 
-draft-status: notes
+
 
 location:
     name:

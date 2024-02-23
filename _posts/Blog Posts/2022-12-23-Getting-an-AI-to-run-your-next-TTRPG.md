@@ -30,7 +30,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-draft-status:
+
 
 location:
     name:

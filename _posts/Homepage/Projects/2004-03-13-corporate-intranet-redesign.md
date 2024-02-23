@@ -33,7 +33,7 @@ categories:
 tags: Project
 keywords: HTML, XML, RSS, AJAX, Perl, Netscape Web Server, Sybase database
 
-draft-status:
+
 
 location:
     name:

@@ -30,11 +30,10 @@ categories:
 - Role Playing Games
 - Maps
 - Monsters
-- Draft
 tags:
 keywords:
 
-draft-status: notes
+
 
 location:
     name:

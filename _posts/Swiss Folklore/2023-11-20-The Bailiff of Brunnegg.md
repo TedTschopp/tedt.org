@@ -39,8 +39,6 @@ keywords:
   - Haunted Castles
   - Historical Folktales
 
-draft-status: draft/published
-
 location:
     address: "Brunnegg Castle"
     city: "Aargau"

@@ -29,7 +29,6 @@ description: "A comprehensive guide to understanding weapon mechanics in the Mä
 seo-description: "Master weapon mechanics in the Märchen Engine with our exhaustive guide covering everything from properties to cosmic-level classifications."
 
 categories:
-  - Draft
   - Role Playing Games
   - The Märchen Engine
 tags:
@@ -40,8 +39,6 @@ keywords:
   - Weapon Mechanics
   - RPG Weapons
   - Game Master Guide
-
-draft-status: Integration
 
 location:
     name: Bradbury, CA

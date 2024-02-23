@@ -35,7 +35,7 @@ tags:
 - Swiss Culture
 keywords: Swiss German, Folk Tale, Betten Dog, Rebstein, Marbach, Nocturnal Wanderer
 
-draft-status:
+
 
 location:
     address:

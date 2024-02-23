@@ -36,7 +36,7 @@ tags: Resume
 keywords:
 company: SCE
 
-draft-status:
+
 
 location: 
     name: Rosemead, CA
