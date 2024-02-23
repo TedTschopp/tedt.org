@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300;400;500;600;700&family=Fondamento:ital@0;1&family=Fredericka+the+Great&family=IM+Fell+DW+Pica:ital@0;1&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lovers+Quarrel&family=Marcellus&family=Orbitron:wght@400;500;600;700;800;900&family=UnifrakturMaguntia&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Architects+Daughter&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300;400;500;600;700&family=Fondamento:ital@0;1&family=Fredericka+the+Great&family=IM+Fell+DW+Pica:ital@0;1&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lovers+Quarrel&family=Marcellus&family=Orbitron:wght@400;500;600;700;800;900&family=UnifrakturMaguntia&display=swap');
 
 @font-face {
     font-family: 'Bestiary';
@@ -38,8 +36,6 @@
     font-style: italic;
 	text-rendering: optimizeLegibility;
 }
-
-
 @font-face {
     font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
@@ -84,7 +80,7 @@
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 
- }
+}
  @font-face {
 	font-family: 'Optimum';
     src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
@@ -93,8 +89,7 @@
 	font-style: Italic;
 	text-rendering: optimizeLegibility;
 
- }
-
+}
 @font-face {
     font-family: 'Checkbook';
     src: url('https://tedt.org/fonts/CHECKBK0.otf')   format('opentype'),
@@ -157,7 +152,6 @@
     font-feature-settings: "ss01" 1;
 	text-rendering: optimizeLegibility;
 }
-
 @font-face {
     font-family: 'Duvall';
     src: url('https://tedt.org/fonts/DuvallSmallCaps.woff2') format('woff2'),
@@ -165,8 +159,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 @font-face {
     font-family: 'GameEmpire';
     src: url('https://tedt.org/fonts/Algerian-Basic-D-OT_3025.woff2') format('woff2'),
@@ -176,7 +168,6 @@
 	text-rendering: optimizeLegibility;
 
 }
-
 @font-face {
     font-family: 'IrwinAllen';
     src: url('https://tedt.org/fonts/IrwinAllen.otf') format('opentype'),
@@ -187,7 +178,6 @@
 	text-rendering: optimizeLegibility;
 
 }
-
 @font-face {
     font-family: 'lp1_regular';
     src: url('https://tedt.org/fonts/lp1-regular-webfont.woff') format('woff'),
@@ -197,7 +187,6 @@
 	text-rendering: optimizeLegibility;
 
 }
-
 @font-face {
     font-family: 'lowwe';
     src: url('https://tedt.org/fonts/lowwe.otf') format('opentype'),
@@ -208,7 +197,6 @@
 	text-rendering: optimizeLegibility;
 
 }
-
 @font-face {
 	font-family: 'UngerFrakturZierbuchstaben';
 	src: url('https://tedt.org/fonts/UngerFrakturZierbuchstaben.otf') format('opentype'),
@@ -221,15 +209,13 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
-
 @font-face {
 	font-family: 'CedarvilleCursive';
 	src: url('https://tedt.org/fonts/CedarvilleCursive-Regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
-
+}
 @font-face {
 	font-family: 'coelnische_current_fraktur';
 	src: url('https://tedt.org/fonts/COELCF__.TTF') format('truetype');
@@ -237,8 +223,8 @@
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
- @font-face {
+}
+@font-face {
 	font-family: 'strassburgfraktur';
 	src: url('https://tedt.org/fonts/strassburgfraktur.ttf') format('truetype');
 	/* SUPER FANCY CAPITAL LETTERS AND OK NORMAL FONT FOR LOWERCASE */
@@ -246,8 +232,7 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
-
- @font-face {
+@font-face {
 	font-family: 'SkennertonFraktur';
 	src: url('https://tedt.org/fonts/SkennertonFraktur.ttf') format('truetype');
 	/* SUPER normal german font errored  */
@@ -263,7 +248,6 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
-
 @font-face {
 	font-family: 'AntiquarianScribe';
 	src: url('https://tedt.org/fonts/AntiquarianScribe.woff') format('woff'), /* Modern Browsers */
@@ -273,7 +257,6 @@
 	text-rendering: optimizeLegibility;
 /* Webfont: AntiquarianScribe */
 }
-
 @font-face {
 	font-family: 'TerraIgnota';
 	src:  url('https://tedt.org/fonts/TerraIgnota.woff') format('woff'), /* Modern Browsers */
@@ -283,38 +266,32 @@
 	text-rendering: optimizeLegibility;
 	/* Webfont: TerraIgnota */
 }
-
-  
-
- 
 @font-face {
 	font-family: 'Quentin';
 	src: url('https://tedt.org/fonts/QUENCRG_.TTF') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
-
+}
  @font-face {
 	font-family: 'Souvenir Demi';
 	src: url('https://tedt.org/fonts/Souvenir Demi.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
-
- @font-face {
+}
+@font-face {
 	font-family: 'Egyptienne MN Condensed Bold';
 	src: url('https://tedt.org/fonts/Egyptienne MN Condensed Bold.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
- @font-face {
+}
+@font-face {
 	font-family: 'Ringbearer';
 	src: url('https://tedt.org/fonts/RINGM___.otf') format('opentype'),
 	     url('https://tedt.org/fonts/RINGM___.TTF') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
- }
+}

@@ -1,10 +1,12 @@
+.Movies-Post {
+    font-family: "Limelight", "Times New Roman", Times, serif;
+}
+
 .Bestiary-Post {
     font-family: "Bestiary" sans-serif;
-    font-style: italic;
 }
 .Monster-Post {
     font-family: "Bestiary" sans-serif;
-    font-style: italic;
 }
 
 .Draft-Post {
