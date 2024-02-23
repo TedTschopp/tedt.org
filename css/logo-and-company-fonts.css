@@ -3,14 +3,14 @@
 }
 
 .Bestiary-Post {
-    font-family: "Bestiary" sans-serif;
+    font-family: "Bestiary", sans-serif;
 }
 .Monster-Post {
-    font-family: "Bestiary" sans-serif;
+    font-family: "Bestiary", sans-serif;
 }
 
 .Draft-Post {
-    font-family: "Fredericka the Great",serif;
+    font-family: "Fredericka the Great", serif;
     font-style: normal;
 }
 
@@ -35,34 +35,34 @@
 }
 
 .Reprint-Post {
-    font-family: "lp1_regular",monospace;
+    font-family: "lp1_regular", monospace;
     font-style: normal;
 }
 
 .DnD {
-	font-family: "Quentin", "Souvenir Demi",serif;
+	font-family: "Quentin", "Souvenir Demi", serif;
 }
 .GURPS {
-	font-family: "Egyptienne MN Condensed Bold",serif;
+	font-family: "Egyptienne MN Condensed Bold", serif;
     text-transform: uppercase;
 }
 .LotR {
-	font-family: "Ringbearer",serif;
+	font-family: "Ringbearer", serif;
 }
 .marchen {
-    font-family: "IM Fell DW Pica",serif;
+    font-family: "IM Fell DW Pica", serif;
     font-style: italic;
 }
 .marchen {
-    font-family: "IM Fell DW Pica",serif;
+    font-family: "IM Fell DW Pica", serif;
     font-style: normal;
 }
 .draft {
-    font-family: "Fredericka the Great",serif;
+    font-family: "Fredericka the Great", serif;
     font-style: normal;
 }
 .computers {
-    font-family: "Checkbook",monospace;
+    font-family: "Checkbook", monospace;
     font-style: normal;
 }
 
