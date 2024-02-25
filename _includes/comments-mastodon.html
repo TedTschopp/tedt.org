@@ -358,7 +358,7 @@
         // Create the paragraph with lorem ipsum
         const contentP = document.createElement('p');
         contentP.className = 'card-title p-3 m-0 text-start';
-        contentP.textContent = content;
+        contentP.innerHTML = content;
 
         // Append the paragraph to the content row, and the row to the card body
         contentRow.appendChild(contentP);
