@@ -33,25 +33,25 @@ function htmlTableOfContents( documentRef ) {
         var parent = toc;
 
         // If the current heading is a higher level than the last one, create a new list
-        if (thisLevel > lastLevel) {
-            unorderedList = documentRef.createElement("ul");
-            unorderedList.appendChild(listElement);
-            parent.lastChild.appendChild(unorderedList);
-        } else if (thisLevel < lastLevel) {
-            // close off the last list and start a new one
-            var diff = lastLevel - thisLevel;
-            for (var i = 0; i < diff; i++) {
-                parent = parent.parentNode;
-            }
-            unorderedList = documentRef.createElement("ul");
-            unorderedList.appendChild(listElement);
-            parent.appendChild(unorderedList);
-        } else {
-            unorderedList = documentRef.createElement("ul");
-            unorderedList.appendChild(listElement);
-            parent.appendChild(unorderedList);
-        }
-
+//        if (thisLevel > lastLevel) {
+//            unorderedList = documentRef.createElement("ul");
+//            unorderedList.appendChild(listElement);
+//            parent.lastChild.appendChild(unorderedList);
+//        } else if (thisLevel < lastLevel) {
+//            // close off the last list and start a new one
+//            var diff = lastLevel - thisLevel;
+//            for (var i = 0; i < diff; i++) {
+//                parent = parent.parentNode;
+//            }
+//            unorderedList = documentRef.createElement("ul");
+//            unorderedList.appendChild(listElement);
+//            parent.appendChild(unorderedList);
+//        } else {
+//            unorderedList = documentRef.createElement("ul");
+//            unorderedList.appendChild(listElement);
+//            parent.appendChild(unorderedList);
+//        }
+//
         // set the last level to this level
         lastLevel = thisLevel;
     });
