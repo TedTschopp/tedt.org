@@ -155,6 +155,40 @@
                 // This is the avatar that will be used for the final output on the new design.
                 let avatarFINAL = JSON.parse(JSON.stringify(avatar));
 
+                let fullStatusIDFINAL = status.id;
+                let fullStatusURLFINAL = status.url;
+                let fullStatusCreatedAtFINAL = status.created_at;
+                let fullDisplayNameFINAL = `@${ status.account.username }@${ instance }`;
+                let fullAccountURLFINAL = status.account.url;
+                let fullAccountDisplayNameFINAL = status.account.display_name;
+                let fullAccountInstanceFINAL = instance;
+                let fullContentFINAL = status.content;
+                let fullFavoritesCountFINAL = status.favourites_count;
+                let fullStatusAccountAvatarFINAL = status.account.avatar;
+                let fullStatusAccountAvatarStaticFINAL = status.account.avatar_static;
+                let fullStatusUsernameFINAL = status.account.username;
+                let fullStatusAccountAcctFINAL = status.account.acct;
+                
+                let fullDebugJSONObjectFINAL = JSON.stringify(status, null, 2);
+
+                let fullDebugFinal = "<pre>";
+                fullDebugFinal += `status.id                                   = ` + fullStatusIDFINAL + "\n"; 
+                fullDebugFinal += `status.url                                  = ` + fullStatusURLFINAL + "\n"; 
+                fullDebugFinal += `status.created_at                           = ` + fullStatusCreatedAtFINALL + "\n"; 
+                fullDebugFinal += `@${ status.account.username }@${ instance } = ` + fullDisplayNameFINAL + "\n"; 
+                fullDebugFinal += `status.account.url                          = ` + fullAccountURLFINAL + "\n"; 
+                fullDebugFinal += `status.account.display_name                 = ` + fullAccountDisplayNameFINAL + "\n"; 
+                fullDebugFinal += `fullAccountInstanceFINAL                    = ` + instance + "\n"; 
+                fullDebugFinal += `status.content                              = ` + fullContentFINAL + "\n"; 
+                fullDebugFinal += `status.favourites_count                     = ` + fullFavoritesCountFINAL + "\n";
+                fullDebugFinal += `status.account.avatar                       = ` + fullStatusAccountAvatarFINAL + "\n";
+                fullDebugFinal += `status.account.avatar_static                = ` + fullStatusAccountAvatarStaticFINAL + "\n";
+                fullDebugFinal += `status.account.username                     = ` + fullStatusUsernameFINAL + "\n";
+                fullDebugFinal += `status.account.acct                         = ` + fullStatusAccountAcctFINAL + "\n";
+                fullDebugFinal += `status (JSON)                               = ` + fullDebugJSONObjectFINAL + "\n";
+                fullDebugFinal += "</pre>";
+
+
                 let instanceBadge = document.createElement("a");
                 instanceBadge.className = "instance";
                 instanceBadge.setAttribute("href", status.account.url);
@@ -204,6 +238,8 @@
                   interactions.appendChild(faves);
                 }
 
+                let hr = document.createElement("hr");
+
                 let comment = document.createElement("article");
                 comment.id = `comment-${ status.id }`;
                 comment.className = isReply ? "comment comment-reply" : "comment";
@@ -214,8 +250,9 @@
                 comment.appendChild(timestamp);
                 comment.appendChild(main);
                 comment.appendChild(interactions);
-
-
+                comment.appendChild(hr);
+                comment.appendChild(fullDebugFinal);
+                comment.appendChild(hr);
                 comment.appendChild(createBootStrapCard());
 
 
