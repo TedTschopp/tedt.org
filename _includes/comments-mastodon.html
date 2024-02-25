@@ -91,6 +91,9 @@
       function loadComments() {
         let commentsWrapper = document.getElementById("comments-wrapper");
         //document.getElementById("load-comment").innerHTML = "Loading";
+
+        // https://tschopp.net/api/v1/statuses/111796991086841890/
+        // https://tschopp.net/api/v1/statuses/111796991086841890/context
         fetch('https://{{site.mastodon_comments.host}}/api/v1/statuses/{{page.mastodon-post-id}}/context')
           .then(function(response) {
             return response.json();
@@ -149,9 +152,13 @@
                 avatar.setAttribute("title", `View profile at @${ status.account.username }@${ instance }`);
                 avatar.appendChild(avatarPicture);
 
+                // This is the avatar that will be used for the final output on the new design.
+                let avatarFINAL = JSON.parse(JSON.stringify(avatar));
+
                 let instanceBadge = document.createElement("a");
                 instanceBadge.className = "instance";
                 instanceBadge.setAttribute("href", status.account.url);
+                // This next line has the value for the user name and the instance that is used as the second part of the card header.
                 instanceBadge.setAttribute("title", `@${ status.account.username }@${ instance }`);
                 instanceBadge.setAttribute("rel", "external nofollow");
                 instanceBadge.textContent = instance;
@@ -183,6 +190,7 @@
 
                 let main = document.createElement("main");
                 main.setAttribute("itemprop", "text");
+                // This next line has the value for the content that is used as the main part of the card body.
                 main.innerHTML = status.content;
 
                 let interactions = document.createElement("footer");
@@ -207,6 +215,10 @@
                 comment.appendChild(main);
                 comment.appendChild(interactions);
 
+
+                comment.appendChild(createBootStrapCard());
+
+
                 if(op === true) {
                   comment.classList.add("op");
 
@@ -223,6 +235,8 @@
                   );
                 }
 
+
+
                 commentsWrapper.innerHTML += DOMPurify.sanitize(comment.outerHTML);
               });
             }
@@ -231,141 +245,135 @@
       loadComments();
     </script>
     <script>
-    // Ted's Code
-    // document.addEventListener('DOMContentLoaded', function() {
-    //   // Create section element
-    //   const section = document.createElement('section');
-    //   section.id = 'comments-test';
-    //   section.className = 'article-content';
-    // 
-    //   // Create card div
-    //   const card = document.createElement('div');
-    //   card.className = 'card';
-    // 
-    //   // Create row div
-    //   const row = document.createElement('div');
-    //   row.className = 'row g-0 p-0 m-0';
-    // 
-    //   // Create column for avatar
-    //   const colAvatar = document.createElement('div');
-    //   colAvatar.className = 'col-1 mt-4';
-    //   colAvatar.style.maxWidth = '2.5em';
-    //   
-    //   // Create avatar link
-    //   const avatarLink = document.createElement('a');
-    //   avatarLink.title = 'View profile at @TedT@twit.social';
-    //   avatarLink.rel = 'external nofollow';
-    //   avatarLink.href = 'https://twit.social/@TedT';
-    //   avatarLink.className = 'avatar-link';
-    // 
-    //   // Create avatar image
-    //   const avatarImg = document.createElement('img');
-    //   avatarImg.style.height = '2.5em';
-    //   avatarImg.alt = '@TedT@twit.social avatar';
-    //   avatarImg.src = 'https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.png';
-    //   avatarImg.className = 'avatar';
-    // 
-    //   // Append avatar image to avatar link
-    //   avatarLink.appendChild(avatarImg);
-    // 
-    //   // Append avatar link to column
-    //   colAvatar.appendChild(avatarLink);
-    // 
-    //   // Create column for content
-    //   const colContent = document.createElement('div');
-    //   colContent.className = 'col-11';
-    // 
-    //   // Create card body
-    //   const cardBody = document.createElement('div');
-    //   cardBody.className = 'card-body';
-    // 
-    //   // Create card header
-    //   const cardHeader = document.createElement('div');
-    //   cardHeader.className = 'card-header';
-    // 
-    //   // Create inner card body
-    //   const innerCardBody = document.createElement('div');
-    //   innerCardBody.className = 'card-body p-0 m-0';
-    // 
-    //   // Create name paragraph
-    //   const nameP = document.createElement('p');
-    //   nameP.className = 'text-start p-0 m-0';
-    //   nameP.textContent = 'Ted Tschopp';
-    // 
-    //   // Create username paragraph
-    //   const usernameP = document.createElement('p');
-    //   usernameP.className = 'text-start p-0 m-0';
-    //   usernameP.textContent = '@Tedt@Twit.Social';
-    // 
-    //   // Append paragraphs to inner card body
-    //   innerCardBody.appendChild(nameP);
-    //   innerCardBody.appendChild(usernameP);
-    // 
-    //   // Append inner card body to card header
-    //   cardHeader.appendChild(innerCardBody);
-    // 
-    //   // Create second card body for title
-    //   const cardBodyTitle = document.createElement('div');
-    //   cardBodyTitle.className = 'card-body';
-    // 
-    //   // Create title paragraph
-    //   const titleP = document.createElement('p');
-    //   titleP.className = 'card-title p-0 m-0 text-start';
-    //   titleP.textContent = 'Special title treatment';
-    // 
-    //   // Append title paragraph to second card body
-    //   cardBodyTitle.appendChild(titleP);
-    // 
-    //   // Create card footer
-    //   const cardFooter = document.createElement('div');
-    //   cardFooter.className = 'card-footer text-muted';
-    // 
-    //   // Create row for icons
-    //   const iconRow = document.createElement('div');
-    //   iconRow.className = 'row w-100';
-    // 
-    //   // Generate icons
-    //   const icons = ['fa-reply', 'fa-reply', 'fa-heart', 'fa-bookmark'].map(iconClass => {
-    //     const col = document.createElement('div');
-    //     col.className = 'col-3';
-    //     const icon = document.createElement('i');
-    //     icon.className = `fa-solid ${iconClass}`;
-    //     col.appendChild(icon);
-    //     return col;
-    //   });
-    // 
-    //   // Append icons to row
-    //   icons.forEach(icon => iconRow.appendChild(icon));
-    // 
-    //   // Append icon row to card footer
-    //   cardFooter.appendChild(iconRow);
-    // 
-    //   // Assemble card body content
-    //   cardBody.appendChild(cardHeader);
-    //   cardBody.appendChild(cardBodyTitle);
-    //   cardBody.appendChild(cardFooter);
-    // 
-    //   // Append card body to content column
-    //   colContent.appendChild(cardBody);
-    // 
-    //   // Append columns to row
-    //   row.appendChild(colAvatar);
-    //   row.appendChild(colContent);
-    // 
-    //   // Append row to card
-    //   card.appendChild(row);
-    // 
-    //   // Append card to section
-    //   section.appendChild(card);
-    // 
-    //   // Append section to body or a specific element
-    //   document.body.appendChild(section);
-    // });
-    // 
-    // 
-    // 
-    // 
-    // 
+      // Ted's Code
+      // Create the main section element
+
+      function createBootStrapCard() {
+        // Create the main section element
+        const section = document.createElement('section');
+        section.id = 'comments-test';
+        section.className = 'article-content';
+
+        // Create the row div
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'row g-0 p-0 m-0 d-flex align-items-start';
+
+        // Create the column for the avatar
+        const colAvatar = document.createElement('div');
+        colAvatar.className = 'col-1 pt-2 d-flex align-items-center justify-content-center';
+        colAvatar.style.maxWidth = '4.5em';
+
+        // Create the link for the avatar
+        const avatarLink = document.createElement('a');
+        avatarLink.href = 'https://twit.social/@TedT';
+        avatarLink.className = 'avatar-link';
+        avatarLink.title = 'View profile at @TedT@twit.social';
+        avatarLink.rel = 'external nofollow';
+
+        // Create the avatar image
+        const avatarImg = document.createElement('img');
+        avatarImg.src = 'https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.png';
+        avatarImg.alt = '@TedT@twit.social avatar';
+        avatarImg.className = 'm-1 avatar';
+        avatarImg.style.height = '2.5em';
+
+        // Append the avatar image to the link, and the link to the column
+        avatarLink.appendChild(avatarImg);
+        colAvatar.appendChild(avatarLink);
+
+        // Create the column for the card
+        const colCard = document.createElement('div');
+        colCard.className = 'col-11';
+
+        // Create the card div
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card p-0 m-0';
+
+        // Create the card header
+        const cardHeader = document.createElement('div');
+        cardHeader.className = 'card-header';
+
+        // Create the header's card body
+        const headerCardBody = document.createElement('div');
+        headerCardBody.className = 'card-body p-0 m-0';
+
+        // Create and append the name and username paragraphs to the header's card body
+        const nameP = document.createElement('p');
+        nameP.className = 'text-start p-0 m-0';
+        nameP.textContent = 'Ted Tschopp';
+        const usernameP = document.createElement('p');
+        usernameP.className = 'text-start p-0 m-0';
+        usernameP.textContent = '@Tedt@Twit.Social';
+        headerCardBody.appendChild(nameP);
+        headerCardBody.appendChild(usernameP);
+
+        // Append the header's card body to the card header
+        cardHeader.appendChild(headerCardBody);
+
+        // Create the main card body
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body p-0 m-0';
+
+        // Create the content row
+        const contentRow = document.createElement('div');
+        contentRow.className = 'row w-100 p-0 m-0';
+
+        // Create the paragraph with lorem ipsum
+        const contentP = document.createElement('p');
+        contentP.className = 'card-title p-3 m-0 text-start';
+        contentP.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia lectus eu feugiat feugiat. Donec molestie neque eget erat bibendum fermentum. Nunc luctus id sem in ullamcorper. Phasellus sagittis turpis eget orci finibus tempus. Nam arcu ligula, accumsan eget euismod sit amet, laoreet vel risus. Suspendisse malesuada magna sed porta luctus. Proin lorem nunc, tincidunt sed vehicula sit amet, placerat eu magna. Donec enim enim, semper non arcu quis, auctor sodales ipsum. Pellentesque habitant morbi sit.';
+
+        // Append the paragraph to the content row, and the row to the card body
+        contentRow.appendChild(contentP);
+        cardBody.appendChild(contentRow);
+
+        // Create the card footer
+        const cardFooter = document.createElement('div');
+        cardFooter.className = 'card-footer text-muted';
+
+        // Create the footer row
+        const footerRow = document.createElement('div');
+        footerRow.className = 'row w-100';
+
+        // Function to create a footer column with an icon
+        function createFooterCol(iconClass) {
+          const col = document.createElement('div');
+          col.className = 'col-3 text-center d-flex align-items-center justify-content-center';
+          const icon = document.createElement('i');
+          icon.className = iconClass;
+          col.appendChild(icon);
+          return col;
+        }
+
+        // Append columns with icons to the footer row
+        footerRow.appendChild(createFooterCol('fa-solid fa-reply'));
+        footerRow.appendChild(createFooterCol('fa-solid fa-retweet'));
+        footerRow.appendChild(createFooterCol('fa-regular fa-heart'));
+        footerRow.appendChild(createFooterCol('fa-solid fa-bookmark'));
+
+        // Append the footer row to the card footer
+        cardFooter.appendChild(footerRow);
+
+        // Append the card header, card body, and card footer to the card div
+        cardDiv.appendChild(cardHeader);
+        cardDiv.appendChild(cardBody);
+        cardDiv.appendChild(cardFooter);
+
+        // Append the card div to the colCard
+        colCard.appendChild(cardDiv);
+
+        // Append colAvatar and colCard to the rowDiv
+        rowDiv.appendChild(colAvatar);
+        rowDiv.appendChild(colCard);
+
+        // Finally, append the rowDiv to the main section element
+        section.appendChild(rowDiv);
+
+        // Append the main section element to the body or a specific element in the document
+        document.body.appendChild(section);
+
+        return section;
+      }
     </script>
 
 
