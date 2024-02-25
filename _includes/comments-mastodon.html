@@ -253,7 +253,7 @@
                 comment.appendChild(hr);
                 //comment.appendChild(fullDebugFinal);
                 comment.appendChild(hr);
-                comment.appendChild(createBootStrapCard());
+                comment.appendChild(createBootStrapCard(escapeHtml(status.account.avatar_static), fullAccountDisplayNameFINAL, fullDisplayNameFINAL, tatus.account.url, fullContentFINAL));
 
 
                 if(op === true) {
@@ -285,7 +285,7 @@
       // Ted's Code
       // Create the main section element
 
-      function createBootStrapCard() {
+      function createBootStrapCard(picture, name, username, profileURL, content) {
         // Create the main section element
         const section = document.createElement('section');
         section.id = 'comments-test';
@@ -302,15 +302,15 @@
 
         // Create the link for the avatar
         const avatarLink = document.createElement('a');
-        avatarLink.href = 'https://twit.social/@TedT';
+        avatarLink.href = profileURL;
         avatarLink.className = 'avatar-link';
-        avatarLink.title = 'View profile at @TedT@twit.social';
+        avatarLink.title = 'View profile for '+ username;
         avatarLink.rel = 'external nofollow';
 
         // Create the avatar image
         const avatarImg = document.createElement('img');
-        avatarImg.src = 'https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.png';
-        avatarImg.alt = '@TedT@twit.social avatar';
+        avatarImg.src = picture;
+        avatarImg.alt = username + '\'s avatar';
         avatarImg.className = 'm-1 avatar';
         avatarImg.style.height = '2.5em';
 
@@ -337,10 +337,10 @@
         // Create and append the name and username paragraphs to the header's card body
         const nameP = document.createElement('p');
         nameP.className = 'text-start p-0 m-0';
-        nameP.textContent = 'Ted Tschopp';
+        nameP.textContent = name;
         const usernameP = document.createElement('p');
         usernameP.className = 'text-start p-0 m-0';
-        usernameP.textContent = '@Tedt@Twit.Social';
+        usernameP.textContent = username;
         headerCardBody.appendChild(nameP);
         headerCardBody.appendChild(usernameP);
 
@@ -358,7 +358,7 @@
         // Create the paragraph with lorem ipsum
         const contentP = document.createElement('p');
         contentP.className = 'card-title p-3 m-0 text-start';
-        contentP.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia lectus eu feugiat feugiat. Donec molestie neque eget erat bibendum fermentum. Nunc luctus id sem in ullamcorper. Phasellus sagittis turpis eget orci finibus tempus. Nam arcu ligula, accumsan eget euismod sit amet, laoreet vel risus. Suspendisse malesuada magna sed porta luctus. Proin lorem nunc, tincidunt sed vehicula sit amet, placerat eu magna. Donec enim enim, semper non arcu quis, auctor sodales ipsum. Pellentesque habitant morbi sit.';
+        contentP.textContent = content;
 
         // Append the paragraph to the content row, and the row to the card body
         contentRow.appendChild(contentP);
