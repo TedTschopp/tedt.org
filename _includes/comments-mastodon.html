@@ -1,6 +1,49 @@
 
 {% if page.mastodon-post-id != null or page.mastodon-post-id != empty %}
- 
+<section id="comments-test" class="article-content">
+  <div class="card">
+    <div class="row g-0 p-0 m-0">
+      <div class="col-1 mt-4" style="max-width: 2.5em;">
+        <a title="View profile at @TedT@twit.social" rel="external nofollow" href="https://twit.social/@TedT" class="avatar-link">
+            <img style="height: 2.5em;" alt="@TedT@twit.social avatar" src="https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.png" class="avatar">
+        </a>
+      </div>
+      <div class="col-11">
+        <div class="card-body">
+            <div class="card-header ">
+                <div class="card-body p-0 m-0">
+                  <p class="text-start p-0 m-0 ">Ted Tschopp</p>
+                  <p class="text-start p-0 m-0 ">@Tedt@Twit.Social</p>
+                </div>
+            </div>
+            <div class="card-body ">
+              <div class="row w-100 p-0 m-0 ">
+                  <p class="card-title p-0 m-0 text-start">Special title treatment</p>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="row w-100">
+                <div class="col-3">
+                  <i class="fa-solid fa-reply"></i>
+                </div>
+                <div class="col-3">
+                  <i class="fa-solid fa-reply"></i>
+                </div>
+                <div class="col-3">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="col-3">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+
   <section id="comments" class="article-content">
     <h2>Comments</h2>
     <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
@@ -189,6 +232,146 @@
         }
       loadComments();
     </script>
+    <script>
+    // Ted's Code
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   // Create section element
+    //   const section = document.createElement('section');
+    //   section.id = 'comments-test';
+    //   section.className = 'article-content';
+    // 
+    //   // Create card div
+    //   const card = document.createElement('div');
+    //   card.className = 'card';
+    // 
+    //   // Create row div
+    //   const row = document.createElement('div');
+    //   row.className = 'row g-0 p-0 m-0';
+    // 
+    //   // Create column for avatar
+    //   const colAvatar = document.createElement('div');
+    //   colAvatar.className = 'col-1 mt-4';
+    //   colAvatar.style.maxWidth = '2.5em';
+    //   
+    //   // Create avatar link
+    //   const avatarLink = document.createElement('a');
+    //   avatarLink.title = 'View profile at @TedT@twit.social';
+    //   avatarLink.rel = 'external nofollow';
+    //   avatarLink.href = 'https://twit.social/@TedT';
+    //   avatarLink.className = 'avatar-link';
+    // 
+    //   // Create avatar image
+    //   const avatarImg = document.createElement('img');
+    //   avatarImg.style.height = '2.5em';
+    //   avatarImg.alt = '@TedT@twit.social avatar';
+    //   avatarImg.src = 'https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.png';
+    //   avatarImg.className = 'avatar';
+    // 
+    //   // Append avatar image to avatar link
+    //   avatarLink.appendChild(avatarImg);
+    // 
+    //   // Append avatar link to column
+    //   colAvatar.appendChild(avatarLink);
+    // 
+    //   // Create column for content
+    //   const colContent = document.createElement('div');
+    //   colContent.className = 'col-11';
+    // 
+    //   // Create card body
+    //   const cardBody = document.createElement('div');
+    //   cardBody.className = 'card-body';
+    // 
+    //   // Create card header
+    //   const cardHeader = document.createElement('div');
+    //   cardHeader.className = 'card-header';
+    // 
+    //   // Create inner card body
+    //   const innerCardBody = document.createElement('div');
+    //   innerCardBody.className = 'card-body p-0 m-0';
+    // 
+    //   // Create name paragraph
+    //   const nameP = document.createElement('p');
+    //   nameP.className = 'text-start p-0 m-0';
+    //   nameP.textContent = 'Ted Tschopp';
+    // 
+    //   // Create username paragraph
+    //   const usernameP = document.createElement('p');
+    //   usernameP.className = 'text-start p-0 m-0';
+    //   usernameP.textContent = '@Tedt@Twit.Social';
+    // 
+    //   // Append paragraphs to inner card body
+    //   innerCardBody.appendChild(nameP);
+    //   innerCardBody.appendChild(usernameP);
+    // 
+    //   // Append inner card body to card header
+    //   cardHeader.appendChild(innerCardBody);
+    // 
+    //   // Create second card body for title
+    //   const cardBodyTitle = document.createElement('div');
+    //   cardBodyTitle.className = 'card-body';
+    // 
+    //   // Create title paragraph
+    //   const titleP = document.createElement('p');
+    //   titleP.className = 'card-title p-0 m-0 text-start';
+    //   titleP.textContent = 'Special title treatment';
+    // 
+    //   // Append title paragraph to second card body
+    //   cardBodyTitle.appendChild(titleP);
+    // 
+    //   // Create card footer
+    //   const cardFooter = document.createElement('div');
+    //   cardFooter.className = 'card-footer text-muted';
+    // 
+    //   // Create row for icons
+    //   const iconRow = document.createElement('div');
+    //   iconRow.className = 'row w-100';
+    // 
+    //   // Generate icons
+    //   const icons = ['fa-reply', 'fa-reply', 'fa-heart', 'fa-bookmark'].map(iconClass => {
+    //     const col = document.createElement('div');
+    //     col.className = 'col-3';
+    //     const icon = document.createElement('i');
+    //     icon.className = `fa-solid ${iconClass}`;
+    //     col.appendChild(icon);
+    //     return col;
+    //   });
+    // 
+    //   // Append icons to row
+    //   icons.forEach(icon => iconRow.appendChild(icon));
+    // 
+    //   // Append icon row to card footer
+    //   cardFooter.appendChild(iconRow);
+    // 
+    //   // Assemble card body content
+    //   cardBody.appendChild(cardHeader);
+    //   cardBody.appendChild(cardBodyTitle);
+    //   cardBody.appendChild(cardFooter);
+    // 
+    //   // Append card body to content column
+    //   colContent.appendChild(cardBody);
+    // 
+    //   // Append columns to row
+    //   row.appendChild(colAvatar);
+    //   row.appendChild(colContent);
+    // 
+    //   // Append row to card
+    //   card.appendChild(row);
+    // 
+    //   // Append card to section
+    //   section.appendChild(card);
+    // 
+    //   // Append section to body or a specific element
+    //   document.body.appendChild(section);
+    // });
+    // 
+    // 
+    // 
+    // 
+    // 
+    </script>
+
+
+
   </section>
 {% else %}
 <section id="comments" class="article-content">
