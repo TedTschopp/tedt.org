@@ -1,0 +1,445 @@
+<!doctype html>
+<html class="no-js" lang="en" data-bs-theme="light">
+
+<head>
+     <meta charset="utf-8">
+
+     {% include calculate-variables.html %}
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="HandheldFriendly" content="True">
+     <meta name="MobileOptimized" content="320">
+ 
+     <!-- IndieAuth and WebMentions Metadata -->
+     {% include indieauth-and-webmentions-metadata.html %}
+ 
+     <!-- SEO Metadata -->
+     {% include meta-data-seo.html %}
+ 
+     <!-- PWA Header Includes -->
+     {% include pwa-header-includes.html %}
+ 
+     <!-- News Feed Meta Tags. -->
+     {% include feeds.html %}
+ 
+     <!-- START OF CSS INCLUDE -->
+ 
+     {% include all-css-includes.html %}
+ 
+     <!-- END OF CSS INCLUDE -->
+ 
+     <!-- Scripts that need to be at the end of the header -->
+     {% include scripts.html %}
+
+    <link href="{{ site.siteurl }}/css/gamma-world-cards.css" rel="stylesheet">
+
+    <style type="text/css">
+        
+        a[hreflang]:after { 
+            content: " [" attr(linkstatus) "]"; 
+            color: #999;
+            vertical-align: super;
+            font-size: 70%;
+            } 
+
+    </style>
+    <script src="{{ site.siteurl }}/js/jscii.js"></script>
+
+</head>
+
+<body>
+    <Table >
+        <tr>
+            <td id=papermargin_left>
+            </td>
+            <td id="paper_printarea" class="tech-v">
+                         <!--
+                         <figure>
+                              <img style="width: 100%; mix-blend-mode: multiply;" class="img-responsive img-thumbnail" src="{{ site.siteurl }}/RPG/MCC-GW/images/GammaWorldHeaderEdited.png" id="jscii-element-image">
+                              <pre id="ascii-container-image"></pre>
+                         </figure>
+                         -->
+
+                         {% if page.title != "" %}
+                              <h1 class="MCC">{{ page.title }}</h1>
+                         {% endif %}
+
+                         <img style="float: right;" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/{{ page.creature_name }}.png" width="12.5%" onError="this.onerror=null;this.src='{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/noimage.png';">
+
+                         {% if page.author != "" %}
+                              <strong>Reported By:</strong> {{ page.author }}
+                         {% else %}
+                              <strong>Reported By:</strong>
+                              
+                                   {% assign answers = "" | split: "%" %}
+                                   {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ - We're unable to retrieve the 'Reported by' information for this creature. This data may be corrupted or missing from our records." %}
+                                   {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_ - The 'Reported by' field for this creature cannot be located. It is possible that this information was lost due to data degradation over time." %}
+                                   {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ - Attention: The identity of the individual or entity who reported this creature is currently unavailable in our database." %}
+                                   {% assign answers = answers | push: "_Incomplete Record Alert: Reporter Information Missing_ - This creature's record is incomplete. The 'Reported by' field is missing and might have been lost in system errors or data purges." %}
+                                   {% assign answers = answers | push: "_System Notice: Reporter Data Inaccessible_ - Due to an unknown error, the 'Reported by' information for this creature is inaccessible at this time. Please try accessing this data at a later time or refer to backup archives if available." %}
+                             
+
+                                   {% assign selectedAnswer = answers | sample %}
+                                   
+                                   {{ selectedAnswer }}
+
+                         {% endif %}
+                         {% if page.source != "" %}
+                              in {{ page.source }}
+                         {% else %}
+                              in
+                                   {% assign answers = "" | split: "%" %}
+                                   {% assign answers = answers | push: "_Error 503: Source Document Not Found_ - The Original Source Document for this creature is currently unavailable. It may have been misplaced, lost, or never uploaded to our database." %}
+                                   {% assign answers = answers | push: "_Document Retrieval Error: Blank Entry Detected_ - There appears to be a blank entry in the 'Original Source Document' field. This could indicate a data input error or a missing document." %}
+                                   {% assign answers = answers | push: "_Alert: Source Document Absent_ - No Original Source Document can be found for this creature. This information may have been lost due to data decay or archival issues." %}
+                                   {% assign answers = answers | push: "_Record Inconsistency Warning: Missing Document Information_ - Warning: The record for this creature is inconsistent due to the absence of the Original Source Document. Please consult alternative data sources for more information." %}
+                                   {% assign answers = answers | push: "_System Notice: Unable to Access Document Data_ - We are currently unable to access the Original Source Document for this creature. The file may have been deleted, corrupted, or not properly linked in our database." %}
+                                   
+                                   {% assign selectedAnswer = answers | sample %}
+                                   
+                                   {{ selectedAnswer }}
+                         {% endif %}
+
+
+                         {% if page.role_in_gamma_world != "" %}
+                              <p><strong>Role:</strong> {{ page.role_in_gamma_world }}
+                         {% else %}
+                              <p><strong>Role:</strong> 
+
+                                   {% assign answers = "" | split: "%" %}
+                                   {% assign answers = answers | push: "_Error 410: Ecological Role Data Gone_ - The 'Roles in the World/Biome' information for this creature is missing. This data may have been permanently lost or was never recorded." %}
+                                   {% assign answers = answers | push: "_Data Integrity Issue: Role Information Unavailable_ - We are experiencing an issue accessing the ecological role data for this creature. The 'Roles in the World/Biome' field is currently unavailable due to potential data corruption." %}
+                                   {% assign answers = answers | push: "_Warning: Missing Biome Role Details_ - Attention: The details regarding this creature's role in its world or biome are missing. This could be due to incomplete data collection or loss over time." %}
+                                   {% assign answers = answers | push: "_Record Incompletion Notice: Role in Ecosystem Not Specified_ - This creature's database entry is incomplete. The 'Roles in the World/Biome' field has not been specified and may have been omitted during data entry." %}
+                                   {% assign answers = answers | push: "_System Retrieval Failure: Ecological Data Not Found_ - There is a failure in retrieving the ecological role information for this creature. The 'Roles in the World/Biome' data is either not present or inaccessible in our current system." %}
+                                   
+                                   {% assign selectedAnswer = answers | sample %}
+                                   
+                                   {{ selectedAnswer }}
+
+
+                         {% endif %}</br>
+                         {% if page.base_stock != "" %}
+                              <strong>Base Stock:</strong> {{ page.base_stock }} </p>
+                         {% else %}
+                              <strong>Base Stock:</strong> Unknown </p>
+                         {% endif %}
+
+                         {% if page.normal_text != "" %}
+                              <p><strong>MCC Stat Block:</strong> {{ page.normal_text }}
+                         {% else %}
+                              <p>Conversion Not Complete
+                         {% endif %}</br>
+                         {% if page.mutations != "" %}
+                              <strong>Mutations: </strong>{{ page.mutations }}</p>
+                         {% else %}
+                              <strong>Mutations: </strong>Unknown</p>
+                         {% endif %}
+                         
+
+                         <p>
+                         {% if page.number_appearing_dice != "" %}
+                              <strong>Number Appearing: </strong>{{ page.number_appearing_dice }}
+                         {% else %}
+                              <strong>Number Appearing: </strong>More observations needed
+                         {% endif %}</br>
+                         {% if page.morale != "" %}
+                              <strong>Morale: </strong>{{ page.morale }}
+                         {% else %}
+                              <strong>Morale: </strong>More observations needed
+                         {% endif %}</br>
+
+                         {% if page.new_hd_xdx_plus_minus != "" %}
+                              <strong>Hit Dice: </strong>{{ page.new_hd_xdx_plus_minus }}
+                         {% else %}
+                              <strong>Hit Dice: </strong>More observations needed
+                         {% endif %}</br>
+
+                         {% if page.armor != "" %}
+                              <strong>Armor: </strong>{{ page.armor }} ({{ page.ac_xx }})
+                         {% else %}
+                              <strong>Armor: </strong>More observations needed
+                         {% endif %}</br>
+                         {% if page.size != "" %}
+                              <strong>Size:</strong> {{ page.size }} {% if page.size_measurement != "" %}{{page.size_measurement}}{% endif %}
+                         {% else %}
+                              <strong>Size:</strong> Unknown
+                         {% endif %}</p>
+
+                         {% if page.mv_xx != "" %}
+                              <p><strong>Movement: </strong>{{ page.mv_xx }}</p>
+                         {% else %}
+                              <p><strong>Movement: </strong>More observations needed</p>
+                         {% endif %}
+
+                         <p>
+                         {% if page.new_attack_1 != "" %}
+                              <strong>Attack: </strong>{{ page.new_attack_1 }}
+                              {% if page.new_attack_2 != "" %}
+                                   <br>{{ page.new_attack_2 }}
+                                   {% if page.new_attack_3 != "" %}
+                                        <br>{{page.new_attack_3}}
+                                   {% endif %}</p>
+                              {% endif %}
+                         {% else %}
+                              <strong>Attack: </strong>More observations needed
+                         {% endif %}</p>
+
+                         <table>
+                              <tr>
+                                   <td>
+                                        {% if page.ms != "" %}
+                                             <strong>MS: </strong>{{ page.ms }}
+                                        {% else %}
+                                             <strong>MS: </strong>More observations needed
+                                        {% endif %}
+
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.ps != "" %}
+                                             <strong>PS: </strong>{{ page.ps }}
+                                        {% else %}
+                                             <strong>PS: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        {% if page.in != "" %}
+                                             <strong>IN: </strong>{{ page.in }}
+                                        {% else %}
+                                             <strong>IN: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.dx != "" %}
+                                             <strong>DX: </strong>{{ page.dx }}
+                                        {% else %}
+                                             <strong>DX: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        {% if page.ch != "" %}
+                                             <strong>CH: </strong>{{ page.ch }}
+                                        {% else %}
+                                             <strong>CH: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                                   <td>
+                                        &nbsp;
+                                   </td>
+                                   <td>
+                                        {% if page.cn != "" %}
+                                             <strong>CN: </strong>{{ page.cn }}
+                                        {% else %}
+                                             <strong>CN: </strong>More observations needed
+                                        {% endif %}
+                                   </td>
+                              </tr>
+                         </table>
+                         <p>{% if page.role_in_gamma_world == "Robot" %}
+                              <strong>Mission:</strong> {{page.mission}}
+                         {% endif %}
+                         </p>
+                         <p>{% if page.frequency != "" %}
+                              <strong>Frequency:</strong> {{ page.frequency }}
+                         {% else %}
+                              <strong>Frequency:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.organization != "" %}
+                              <strong>Organization:</strong> {{ page.organization }}
+                         {% else %}
+                              <strong>Organization:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.activity_cycle != "" %}
+                              <strong>Activity Cycle:</strong> {{ page.activity_cycle }}
+                         {% else %}
+                              <strong>Activity Cycle:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.diet != "" %}
+                              <strong>Diet:</strong> {{ page.diet }}
+                         {% else %}
+                              <strong>Diet:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.habitat != "" %}
+                              <strong>Habitat:</strong> {{ page.habitat }}
+                         {% else %}
+                              <strong>Habitat:</strong> Unknown
+                         {% endif %}</br>
+                         {% if page.tech_level != 0 %}
+                              <strong>Tech Level:</strong> {{ page.tech_level }} 
+                              {% if page.tech_max != 0 %}
+                                   - {{ page.tech_max }}
+                              {% else %}
+                                   unknown 
+                              {% endif %}
+                         {% else %}
+                              <strong>Tech Level:</strong> Unknown </p>
+                         {% endif %}</br>
+                         {% if page.artifacts != "" %}
+                              <strong>Artifacts:</strong> {{ page.artifacts }}
+                         {% else %}
+                              <strong>Artifacts:</strong> Unknown
+                         {% endif %} </p>
+
+                         {% if page.description != "" %}
+                              <p><strong>Description (Initial Observations):</strong> {{ page.description }}</p>
+                              {% if page.new_description != "" %}
+                                   <p><strong>Description (Additional Observations):</strong> {{ page.new_description }}</p>
+                              {% endif %}
+                         {% endif %}
+
+                         {% if page.equipment != "" %}
+                              <p><strong>Equipment:</strong> {{ page.equipment }}</p>
+                         {% endif %}
+
+                         {% if page.reactions != "" %}
+                              <p><strong>Reactions:</strong> {{ page.reactions }}</p>
+                         {% else %}
+                              <p><strong>Reactions:</strong> No known interactions</p>
+                         {% endif %}
+
+                         {% if page.behavior != "" %}
+                              <p><strong>Behavior:</strong> {{ page.behavior }}</p>
+                         {% else %}
+                              <p><strong>Behavior:</strong> Behavior modeling incomplete</p>
+                         {% endif %}
+
+                         {% if page.repair_and_healing != "" %}
+                              <p><strong>Repair and Healing:</strong> {{ page.repair_and_healing }}</p>
+                         {% else %}
+                              <p><strong>Behavior:</strong> Behavior not recorded</p>
+                         {% endif %}
+
+                         {% if page.society != "" %}
+                              <p><strong>Society:</strong> {{ page.society }}</p>
+                         {% else %}
+                              <p><strong>Society:</strong> Anthropological studies incomplete</p>
+                         {% endif %}
+
+                         <hr><br>
+
+
+                <!--Next and Previous Articles -->
+                {% if page.previous.url %}
+                    {% assign previous_url = page.previous.url %}
+                    {% assign previous_title = page.previous.title %}
+                {% else %}
+                    {% assign previous_url = site.siteurl %}
+                    {% assign previous_title = "Home" %}
+                {% endif %}
+                {% if page.next.url %}
+                    {% assign next_url = page.next.url %}
+                    {% assign next_title = page.next.title %}
+                {% else %}
+                    {% assign next_url = site.siteurl %}
+                    {% assign next_title = "Home" %}
+                {% endif %}
+
+
+
+
+                {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+                <h2 class="MCC">Additional Creatures</h2><div><ul class="references">
+
+                {% assign PreviousBestiarySource = "" %}
+
+                {% for Bestiary in gammaWorldPosts %}
+                    {% if Bestiary.categories contains  'Bestiary'%}
+                         {% if Bestiary.source != PreviousBestiarySource %}
+                              </ul></div>
+                              <h3 style="color: black">{{Bestiary.source}}</h3>
+                              <div style="break-inside: avoid-page;
+                                   column-width: 30em;
+                                   column-fill: balance;
+                                   column-gap: 2em;
+                                   column-rule: 1px #202122;
+                                   color: #202122;
+                                   direction: ltr;
+                                   display: block;
+                                   font-size: 1em;
+                                   line-height: 1.5em;
+                                   margin-bottom: .5em;
+                                   margin-top: .25em;
+                                   width: 100%;">
+                                   <ol style="list-style-type: none;">
+                              {% assign PreviousBestiarySource = Bestiary.source %}
+                         {% endif %}
+
+                         {% assign BestiaryTitle = Bestiary.title %}
+                         {% assign strippedString = BestiaryTitle | replace: "«", "" | replace: "»", "" %}
+                         {% assign permalink = strippedString | slugify %}
+
+                         {% assign words = permalink | split: "-" %}
+                         {% assign capitalizedpermalink = "" %}
+                         
+                         {% for word in words %}
+                           {% assign capitalizedWord = word | capitalize %}
+                           {% assign capitalizedpermalink = capitalizedpermalink | append: capitalizedWord %}
+                           {% if forloop.last %}{% else %}
+                               {% assign capitalizedpermalink = capitalizedpermalink | append: "-" %}
+                           {% endif %}
+                         {% endfor %}
+
+                         {% if Bestiary.title != page.title %}
+                              <li><a class="color: #00008B" style="break-inside: avoid-column;" href="{{ site.siteurl }}/Gamma-World-Bestiary/{{capitalizedpermalink}}.html">{{Bestiary.title}}</a></li>
+                         {% else %}
+                              <li><STRONG>🐾🛠️⚙️☢️{{Bestiary.title}}☢️⚙️🛠️🐾</STRONG></li>
+                         {% endif %}
+                       {% endif %}
+                {% endfor %}
+               </ol></div>
+
+
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <span class="float-md-left"><a href="{{previous_url}}">&laquo; {{previous_title}}</a></span>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <span class="float-md-right"><a href="{{next_url}}">{{next_title}} &raquo;</a></span>
+                    </div>
+                </div>
+ 
+                <hr>
+
+                {% include comments.html %}
+
+                {% include comments-webmentions.html %}
+
+               </td>
+            <td id="papermargin_right">
+            </td>
+        </tr>
+    </Table>
+    <script>
+        // put in the image
+        // var imgJscii = new Jscii({
+        //     width: 100,
+        //     color: true,
+        //     el: document.getElementById('jscii-element-image'),
+        //     fn: function(str) {
+        //         document.getElementById('ascii-container-image').innerHTML = str;
+        //     }
+        // });
+        // document.getElementById('jscii-element-image').style.display = 'none';
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+

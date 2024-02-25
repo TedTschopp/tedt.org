@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+
+    {% include all-css-includes.html %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
+
+  </head>
+
+  <body>
+    <!-- Legacy Browser Redirect & Google Tag Manager -->
+    {% include top-of-body.html %}
+
+    {% include bootstrap4-navigation.html %}
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-12">
+              <!-- Blog Post -->
+
+                <article class="h-entry">
+                  <!-- Title -->
+                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                  <h1 class="p-name lead"><a href="{{page.mf-syndication}}"> Checked into {{page.mf-checkin[0].properties.name}}</a></h1>
+
+                  {% if page.author.name == null or page.author.name == empty %}
+                      <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                  {% else %}
+                      <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                  {% endif %}
+
+                  <hr>
+
+                  {% include publish-and-update-date-time-v2.html %}
+
+                  <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
+
+                  <img class="webmention-svg" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+
+                  <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                  {% assign categories = page-categories-collection %}
+                  {% for category in categories %}<span class="p-category">
+                      {% capture thiscategory %}{{ category | strip | capitalize }}{% endcapture %}
+                      {% if forloop.length == 1 %}
+                          {{thiscategory}}
+                      {% elsif forloop.last and forloop.length == 2 %}
+                          and {{thiscategory}}
+                      {% elsif forloop.last %}
+                          and {{thiscategory}}
+                      {% else %}
+                          {{thiscategory}}, 
+                      {% endif %}
+                      {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                          {% assign this_is_a_draft = true %}
+                      {% endif %}</span>
+                  {% endfor %}</br>
+
+                  <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+
+                    <!--
+                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
+                        and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
+
+                        -->
+
+                  {% if mf-photo %}
+                    {% for photo in page.mf-photo %}
+                      <figure>
+                          <img class="img-responsive img-thumbnail" src="{{photo}}">
+                      </figure>
+                    {% endfor %}
+                  {% endif %}
+
+                  {% if draw-map == true %}
+                  {% comment %} <!--
+                                                   mf-location - {{ mf-location }} 
+                                              mf-location-full - {{ mf-location-full }}
+                                             mf-location-short - {{ mf-location-short }}
+                                                  map-name-one - {{ map-name-one }}
+                                                  map-name-two - {{ map-name-two }}
+                                                      draw-map - {{ draw-map }}
+                                                  draw-map-one - {{ draw-map-one }}
+                                                  draw-map-two - {{ draw-map-two }}
+                                      mf-checkin-facility-name - {{ mf-checkin-facility-name }}
+                            page.mf-checkin[0].properties.name - {{ page.mf-checkin[0].properties.name }}
+                                               mf-checkin-type - {{ mf-checkin-type }}
+                                                mf-checkin-url - {{ mf-checkin-url }}
+                                      mf-checkin-facility-name - {{ mf-checkin-facility-name }}
+                                       mf-checkin-facility-url - {{ mf-checkin-facility-url }}
+                                  mf-checkin-facility-latitude - {{ mf-checkin-facility-latitude }}
+                                 mf-checkin-facility-longitude - {{ mf-checkin-facility-longitude }}
+                            mf-checkin-facility-street-address - {{ mf-checkin-facility-street-address }}
+                                      mf-checkin-facility-city - {{ mf-checkin-facility-city }}
+                                              mf-checkin-state - {{ mf-checkin-state }}
+                                            mf-checkin-country - {{ mf-checkin-country }}
+                                           mf-checkin-zip-code - {{ mf-checkin-zip-code }}
+                                                    mf-checkin - {{ mf-checkin }} 
+                                       page.mf-checkin[0].type - {{ page.mf-checkin[0].type}}
+                                      page.mf-checkin[0].value - {{ page.mf-checkin[0].value }}
+                            page.mf-checkin[0].properties.name - {{ page.mf-checkin[0].properties.name }}
+                             page.mf-checkin[0].properties.url - {{ page.mf-checkin[0].properties.url }}
+                        page.mf-checkin[0].properties.latitude - {{ page.mf-checkin[0].properties.latitude }}
+                       page.mf-checkin[0].properties.longitude - {{ page.mf-checkin[0].properties.longitude }}
+                  page.mf-checkin[0].properties.street-address - {{ page.mf-checkin[0].properties.street-address }}
+                        page.mf-checkin[0].properties.locality - {{ page.mf-checkin[0].properties.locality }}
+                          page.mf-checkin[0].properties.region - {{ page.mf-checkin[0].properties.region }}
+                    page.mf-checkin[0].properties.country-name - {{ page.mf-checkin[0].properties.country-name }}
+                     page.mf-checkin[0].properties.postal-code - {{ page.mf-checkin[0].properties.postal-code }} -->
+                  {% endcomment %}
+
+
+                    <div id="mapid"></div>
+                    <script>
+                        var mymap = L.map('mapid')
+                                     .setView([ {{ map-latitude-one }} , 
+                                                {{ map-longitude-one }}    ], 15);
+                        L.tileLayer(
+                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 
+                          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
+                         .addTo(mymap);
+
+                        L.marker([ {{ map-latitude-one }} , {{ map-longitude-one }} ])
+                         .addTo(mymap)
+                         .bindPopup("<b>{{ map-name-one }}</b>")
+                         .openPopup();
+
+                        {% if draw-map-two == true %}
+                        L.marker([ {{ map-latitude-two }} , {{ map-longitude-two }} ])
+                         .addTo(mymap)
+                         .bindPopup("<b>{{ map-name-two }}</b>")
+                         .openPopup();
+                        {% endif %}
+
+                        var popup = L.popup();
+                    </script>
+                  {% endif %}
+
+                  <hr>
+                  {% if stripped-content == null or stripped-content == empty %}                  
+                  {% else %}
+                  <!-- Post Content -->
+
+                  <div id="toc"></div>  
+                  <span class="e-content">{{ content }}</span>
+                  <hr>
+                  {% endif %}
+                </article>
+ 
+
+                <!--Next and Previous Articles -->
+                {% include next_and_previous.html %}
+
+                <hr>
+
+                {% include comments-webmentions.html %}
+
+                {% include comments.html %}
+
+            </div>
+            
+            {% comment %}
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    {% include google-search.html %}
+                </div>
+                <!-- Blog Categories Well -->
+                <!-- TODO: Add Social -->
+                <div class="well">
+                    <div class="post-categories">
+                        {% assign categories = page-categories-collection %}
+                        {% for category in categories %}
+                            <h4>Latest in <a href="{{ site.siteurl }}/categories/#{{category|slugize}}">{{category | capitalize}}</a></h4>
+                              <div class="row">
+                              <div class="col-lg-12">
+                                  <ul lass="list-unstyled">
+                                    {% for post in site.categories[category] limit:5 %}
+                                        <li><a href="{{ site.siteurl }}{{ post.url }}">{{ post.title }}</a></li>
+                                    {% endfor %}
+                                  </ul>
+                              </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>    {% endcomment %}
+        </div>
+
+        <!-- /.row -->
+
+        <hr>
+    </div>
+    <!-- /.container -->
+
+
+
+  <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/">Home</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/#about">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/#contact">Contact</a>
+              </li>
+              <!--
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li> -->
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}/1993/01/01/privacy-policy/">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+          </div>
+          <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
+           {% if site.github_username or
+                  site.linkedin_username or
+                  site.mastadon_username or
+                  site.youtube_username or
+                  site.reddit_username or
+                  site.indiewebcamp_username or
+                  site.quora_username %}
+            <ul class="list-inline mb-0">
+              {% if site.github_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://github.com/{{ site.github_username }}/" rel="me"><i class="fab fa-github fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.linkedin_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" rel="me"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.mastadon_username %}
+              <li class="list-inline-item mr-3">
+                {% assign mastadon_strings = site.mastadon_username | split: "@" %}
+                <a href="https://{{mastadon_strings[1]}}/@{{mastadon_strings[0]}}" rel="me"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.youtube_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.reddit_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me"><i class="fab fa-reddit fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.quora_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me"><i class="fab fa-quora fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              {% if site.indiewebcamp_username %}
+              <li class="list-inline-item mr-3">
+                  <a href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me"><i class="fas fa-external-link-alt fa-lg fa-fw"></i></a>
+              </li>
+              {% else %}
+              {% endif %}
+              <li class="list-inline-item">
+                <a href="{{ site.siteurl }}" rel="me" >
+                  <i class="fas fa-home fa-lg fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </body>
+
+</html>

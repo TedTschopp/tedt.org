@@ -1,0 +1,119 @@
+{% if page.previous.url %}
+	{% assign previous_page = page.previous %}
+	{% assign previous_layout = previous_page.layout %}
+	{% if page.previous.title == null or page.previous.title == empty or page.previous.title == '' %}
+		{% if previous_layout == 'micropubpost' %}
+			{% assign previous_title = 'Checked Into: ' | append: previous_page.mf-checkin[0].properties.name[0] %}
+		{% else %}
+			{% assign previous_title = "Title: NA" %}
+		{% endif %}
+	{% else%}
+		{% assign previous_title = page.previous.title %}
+		{% if page.previous.subtitle == null or page.previous.subtitle == empty or page.previous.subtitle == '' %}
+			{% assign previous_subtitle = "Subtitle: NA" %}
+		{% else %}
+			{% assign previous_subtitle = page.previous.subtitle %}
+		{% endif %}
+	{% endif %}
+
+	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
+		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+	{% else %}
+		{% assign previous_image = site.siteurl | append: "/" | append: page.previous.image  %}
+	{% endif %}
+
+	{% assign previous_url = page.previous.url %}
+{% else %}
+	{% assign previous_url = site.siteurl %}
+	{% assign previous_title = "Home" %}
+	{% assign previous_image = site.siteurl | append: "/" | append: "webpage_thumbnail.png" %}
+	{% assign previous_subtitle = site.subtitle %}
+{% endif %}
+
+{% if page.next.url %}
+	{% assign next_page = page.next %}
+	{% assign next_layout = next_page.layout %}
+	{% if page.next.title == null or page.next.title == empty or page.next.title == '' %}
+		{% if next_layout == 'micropubpost' %}
+			{% assign next_title = 'Checked Into: ' | append: page.next.mf-checkin[0].properties.name[0] %}
+		{% else %}
+			{% assign next_title = "Title: NA" %}
+		{% endif %}
+	{% else%}
+		{% assign next_title = page.next.title %}
+		{% if page.next.subtitle == null or page.next.subtitle == empty or page.next.subtitle == '' %}
+			{% assign next_subtitle = "Subtitle: NA" %}
+		{% else %}
+			{% assign next_subtitle = page.next.subtitle %}
+		{% endif %}
+	{% endif %}
+
+	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
+		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+	{% else %}
+		{% assign next_image = site.siteurl | append: "/" | append: page.next.image  %}
+	{% endif %}
+
+	{% assign next_url = page.next.url %}
+
+{% else %}
+
+	{% assign next_url = site.siteurl %}
+	{% assign next_title = "Home" %}
+	{% assign next_image = site.siteurl | append: "/img/" | append: "webpage_thumbnail.png" %}
+	{% assign next_subtitle = site.subtitle %}
+
+{% endif %}
+
+<hr>
+
+<div class="container">
+	<section>
+		<div class="container h-100 position-relative" style="top: -1.5em;">
+			<div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-2">
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body pt-5 p-4">
+							
+							<div class="row g-0 h-100">
+								<div class="col-md-4">
+									<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<p class="h5 card-title">{% if previous_url %}<a href="{{previous_url}}" class="prev"><i class="fa fa-angle-double-left"></i> {{ previous_title}}</a>{% endif %}</p>
+										<p class="card-text">{{previous_subtitle}}</p>
+										{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body pt-5 p-4">
+
+							<div class="row g-0 h-100">
+								<div class="col-md-8">
+									<div class="card-body">
+										<p class="h5 card-title">{% if next_url %}<a href="{{next_url}}" class="next">{{next_title}} <i class="fa fa-angle-double-right"></i></a>{% endif %}</p>
+										<p class="card-text">{{next_subtitle}}</p>
+										{% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>{% endcomment %}
+									</div>
+								</div>
+								<div class="col-md-4">
+									<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  </div>
+

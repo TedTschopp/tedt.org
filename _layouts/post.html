@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds.html %}
+
+    {% include all-css-includes.html %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row w-100">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                <article class="h-entry">
+
+                    <div class="card h-100 no-padding">
+                            {% if page.image %}
+                                {% if page.image-alt %}
+                                    {% assign image_alt = page.image-alt %}
+                                {% elsif page.image-description %}
+                                    {% assign image_alt = page.image-description %}
+                                {% else %}
+                                    {% assign image_alt = page.title %}
+                                {% endif %}
+
+                                {% if page.image-credits-title %}
+                                    {% assign image_credits_title = page.image-credits-title %}
+                                {% elsif page.image-title %}
+                                    {% assign image_credits_title = page.image-title %}
+                                {% else %}
+                                    {% assign image_credits_title = "Unknown" %}
+                                {% endif %}
+
+                                {% if page.image-credits-artist %}
+                                    {% assign image_credits = page.image-credits-artist %}
+                                {% elsif page.image-artist %}
+                                    {% assign image_credits = page.image-artist %}
+                                {% else %}
+                                    {% assign image_credits = "Unknown" %}
+                                {% endif %}
+
+                                {% if page.image-credits-artist-URL %}
+                                    {% assign image_credits_artist_URL = page.image-credits-artist %}
+                                {% elsif page.image-artist-URL %}
+                                    {% assign image_credits_artist_URL = page.image-artist-URL %}
+                                {% endif %}
+
+                                {% if page.image %}
+                                    {% if page.image contains "http" %}
+                                        {% assign image_URL = page.image %}
+                                    {% else %}
+                                        {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                                    {% endif %}
+                                {% else %}
+                                    {% assign image_URL = site.featured-image %}
+                                {% endif %}
+                                <img class="card-img-top w-100" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
+                                
+                                <div class="card-header">
+                                {% if image-credits-URL contains "http" %}
+                                    <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                {% else %}
+                                    <cite>"{{image_credits_title}}"</cite>
+                                {% endif %}
+                                {% if image-credits-artist-URL contains "http" %}
+                                    <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                {% else %}
+                                    by {{image_credits}}
+                                {% endif %}
+                                </div>
+                            {% endif %}
+                        <div class="card-body pt-1 p-4">
+                            <h1 class="card-title p-name">{{ page.title }}</h1>
+                            {% if page.subtitle %}<h2 class="text-muted card-subtitle mb-2 h5">{{page.subtitle}}</h2>{% endif %}
+
+                            <div class="d-flex align-items-center">
+                            <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                            {% if page.author.name %}
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                            {% else %}
+                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                            {% endif %}
+                            </div>
+
+                            {% comment %}
+                            <p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>
+                            {% include publish-and-update-date-time-v2.html %}
+                            {% endcomment %}
+        
+                            <div class="d-flex align-items-center">
+                                <p class="card-text">
+                                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
+                                    <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
+                                
+                                    {% if page.category %}
+                                        {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
+                                    {% else %}
+                                        {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Catagories:-->
+                                    {% endif %}
+
+                                    {% assign should_continue = true %}
+                                    {% for category in categories %}
+                                        {% if should_continue == true %}
+                                            <span class="p-category">
+                                                {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                                                {% if forloop.length == 1 %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                    {% assign should_continue = false %}
+                                                {% elsif forloop.last and forloop.length == 2 %}
+                                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                    {% assign should_continue = false %}
+                                                {% elsif forloop.first and forloop.length == 2 %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                {% elsif forloop.last %}
+                                                    and <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
+                                                {% else %}
+                                                    <a href="/category/{{ thiscategory }}"><span style="text-decoration: none;" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
+                                                {% endif %}
+                                                {% if thiscategory == "draft" or thiscategory == "Draft" %}
+                                                    {% assign this_is_a_draft = true %}
+                                                {% endif %}
+                                            </span>
+                                        {% endif %}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                            
+                            <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+
+                        </div>
+                        <div class="card-footer p-4 py-3 h-100">
+                            {% include progress-bar.html %}
+                            <div id="toc"></div>                   
+                            <span class="e-content" id="main_content">{{ content }}</span>
+                        </div>
+                      </div>
+
+
+                    <hr>
+
+                </article>
+
+                {% comment}
+                {% include comments.html %}
+                {% endcomment %}
+
+                {% include comments-mastodon.html %}
+
+                {% include comments-webmentions.html %}
+
+                <!--Next and Previous Articles -->
+                {% include next_and_previous.html %}
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <div class="post-categories">
+                        <div class="col-12">
+
+                            {% assign categories = page.categories %}
+                            {% for category in categories %}
+
+                                {% assign clean_category = category | downcase | slugify %}
+                                {% assign image = clean_category | append: ".png" %}
+                                {% assign file_name_of_category = clean_category | append: ".html" %}
+                                <div class="card h-100">
+                                    <div class="col-12">
+                                        <div class="card h-100 position-relative">
+                                            <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{category}}">
+                                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
+                                                <p class="card-title" style="z-index: 2; position: relative;">Latest in <a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{clean_category}}">{% include category-emoji.html category=category %}<a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body pt-1 pb-1 p-4">
+
+                                        {% assign target_page_path = "category/" | append: file_name_of_category %}
+                                        {% assign target_page = site.pages | where: "path", target_page_path | first %}
+
+                                        {% if target_page %}
+                                            <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
+                                        {% endif %}                                        
+
+                                        {% comment %}
+                                            <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
+                                        {% endcomment %}
+
+
+                                        {% for post in site.categories[category] limit:5 %}
+                                            <p class="card-text"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
+                                            {% if post.teaser %}
+                                                <p class="card-text">{{ post.teaser | truncatewords: 20 }}</p>
+                                            {% elsif post.description %}
+                                                <p class="card-text">{{ post.description | truncatewords: 20 }}</p>
+                                            {% else %}
+                                                <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
+                                            {% endif %}
+                                        {% endfor %}                                        
+                                    </div>{% comment %}
+                                    <div class="card-footer p-4 py-3 h-100">{% endcomment %}
+
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Bootstrap core JavaScript -->
+    {% include js-bottom-of-body.html %}
+
+    <!-- TODO: Add Table-of-Contents.js -->
+
+  </body>
+</html>

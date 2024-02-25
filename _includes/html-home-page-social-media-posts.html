@@ -1,0 +1,143 @@
+<!--
+        <a name="social"></a>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"><img src="/img/SocialNetwork.jpg" class="img-responsive img-thumbnail" alt=""></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Ted Tschopp's Social Media Posts</h2>
+            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            <ul>
+                {% assign count = 0 %}
+                {% for this-post in site.posts %}
+                    {% if this-post.layout contains "micropubpost" %}
+                        {% assign post-title = "" %}
+                        {% assign post-url = "" %}
+                        {% assign post-content = "" %}
+
+                        {% assign count = count | plus: 1 %}
+                        {% if count > 5 %}
+                            {% break %}
+                        {% endif %}
+
+                        {% assign post-url = this-post.url %}
+
+                        {% if this-post.mf-item[0].type[0] == "h-product" %}
+                            {% if this-post.mf-rating[0] == 5 %}
+                                {% assign post-title = "⭐️⭐️⭐️⭐️⭐️" %}
+                            {% elsif this-post.mf-rating[0] == 4 %}
+                                {% assign post-title = "⭐️⭐️⭐️⭐️🌑" %}
+                            {% elsif this-post.mf-rating[0] == 3 %}
+                                {% assign post-title = "⭐️⭐️⭐️🌑🌑" %}
+                            {% elsif this-post.mf-rating[0]== 2 %}
+                                {% assign post-title = "⭐️⭐️🌑🌑🌑" %}
+                            {% elsif this-post.mf-rating[0] == 1 %}
+                                {% assign post-title = "⭐️🌑🌑🌑🌑" %}
+                            {% else %}
+                                {% assign post-title = "🌑🌑🌑🌑🌑" %}
+                            {% endif %}
+                            {% assign post-title = post-title | append: this-post.mf-item[0].properties.name[0] %}
+                            {% assign post-content = this-post.mf-summary %}
+                        {% endif %}
+                        
+                        {% if this-post.mf-checkin[0].type[0] == "h-card" %}
+                            {% assign post-title = "🌎 " | append: this-post.mf-checkin[0].properties.name[0] %}
+                        {% endif %}
+                         
+                        {% if this-post.category contains "links" %}
+                            {% assign post-title   = "🔗 " | append: this-post.title %}
+                            {% assign post-url     = this-post.mf-bookmark-of[0] %}
+                            {% assign post-content = this-post.content %}
+                        {% endif %}
+
+                        {% if this-post.mf-like-of[0] contains "http" %}
+                            {% assign post-url = this-post.mf-like-of[0] %}
+                            {% assign post-title = "🔗 " | post-url %}
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                     var url = '{{post-url}}';
+                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
+                                     $.ajax({url: apiUrl, success: function(result){
+                                        $.each( result, function( key, val ) {
+                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
+                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
+                                        });
+                                    }});
+                                });
+                            </script>
+                        {% elsif this-post.mf-in-reply-to[0] contains "http" %}
+                            {% assign post-url = this-post.mf-in-reply-to[0] %}
+                            {% assign post-title = "🔗 " | post-url %}
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                     var url = '{{post-url}}';
+                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
+                                     $.ajax({url: apiUrl, success: function(result){
+                                        $.each( result, function( key, val ) {
+                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
+                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
+                                        });
+                                    }});
+                                });
+                            </script>
+                        {% elsif this-post.mf-repost-of[0] contains "http" %}
+                            {% assign post-url = this-post.mf-repost-of[0] %}
+                            {% assign post-title = "🔗 " | post-url %}
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                     var url = '{{post-url}}';
+                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
+                                     $.ajax({url: apiUrl, success: function(result){
+                                        $.each( result, function( key, val ) {
+                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
+                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
+                                        });
+                                    }});
+                                });
+                            </script>
+                        {% endif %}
+
+                        {% if this-post.mf-itinerary[0].type[0] contains "h-leg" %}
+                            {% for leg in this-post.mf-itinerary %}
+                                {% if leg.properties.transit-type contains "air" %}
+                                    {% assign post-title = post-title | append: "✈️ " %}
+                                {% elsif leg.properties.transit-type contains "train" %}
+                                    {% assign post-title = post-title | append: "🚂" %}
+                                {% elsif leg.properties.transit-type contains "bus" %}
+                                    {% assign post-title = post-title | append: "🚌" %}
+                                {% elsif leg.properties.transit-type contains "boat" %}
+                                    {% assign post-title = post-title | append: "🛥️" %}
+                                {% else %}
+                                    {% assign post-title = post-title | append: "🗺️" %}
+                                {% endif %}
+                                {% assign post-title = post-title | append:  leg.properties.origin[0] %}
+                                {% assign post-title = post-title | append:  " to " %}
+                                {% assign post-title = post-title | append:  leg.properties.destination[0] %}
+                                {% assign post-title = post-title | append:  " via " %}
+                                {% assign post-title = post-title | append:  leg.properties.operator[0] %}
+                                {% assign post-title = post-title | append:  " #" %}
+                                {% assign post-title = post-title | append:  leg.properties.number[0] %}
+                                {% if forloop.last == false %}
+                                    {% assign post-title = post-title | append:  " <br> " %}
+                                {% else %}
+
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+
+                        {% if post-content == null or post-content == empty %}
+                            {% assign post-content = this-post.content %}
+                        {% endif %}
+                        {% assign post-content = post-content | strip %}
+                        <li>
+                        <a href="{{ post-url }}" id="social-share-{{this-post.slug}}">{{ post-title }}</a>
+                            {% if post-content.size != 0 %}
+                              <p id="social-share-content-{{this-post.slug}}">{{ post-content }}</p>
+                            {% else %} 
+                              <p id="social-share-content-{{this-post.slug}}">No Details</p>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+          </div>
+        </div>
+      </div>-->
