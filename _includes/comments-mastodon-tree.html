@@ -54,23 +54,13 @@
     <noscript>You need JavaScript to view the comments.</noscript>
   </section>
 
-{% comment %}
+
   <style>
     <!--
-    html,
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .template {
+    #displayTootThread .template {
       display: none;
     }
-    .author {
+    #displayTootThread .author {
       display: grid;
       align-items: center;
       grid-template-columns: auto minmax(0, 1fr);
@@ -78,17 +68,17 @@
       grid-row-gap: 2px;
       grid-column-gap: 10px;
     }
-    .authorReply {
+    #displayTootThread .authorReply {
       padding-top: 10px;
     }
-    .authorLink {
+    #displayTootThread .authorLink {
       text-decoration: none;
     }
-    .avatar {
+    #displayTootThread .avatar {
       grid-column: 1;
       grid-row: 1 / 4;
     }
-    .content {
+    #displayTootThread .content {
       /* These are technically the same, but use both */
       overflow-wrap: break-word;
       word-wrap: break-word;
@@ -103,7 +93,7 @@
       -webkit-hyphens: auto;
       hyphens: auto;
     }
-    .displayName {
+    #displayTootThread .displayName {
       color: black;
       font-size: 100%;
       font-weight: bold;
@@ -111,61 +101,61 @@
       grid-column: 2;
       grid-row: 1;
     }
-    .displayName:hover {
+    #displayTootThread .displayName:hover {
       text-decoration: underline;
     }
-    .displayNameLink {
+    #displayTootThread .displayNameLink {
       color: black;
     }
-    .userName {
+    #displayTootThread .userName {
       font-size: 80%;
       text-decoration: none;
       grid-column: 2;
       grid-row: 2;
     }
-    .createdAt {
+    #displayTootThread .createdAt {
       grid-column: 2;
       grid-row: 3;
     }
-    .avatarImg {
+    #displayTootThread .avatarImg {
       width: 48px;
       height: 48px;
       border-radius: 4px;
       background-color: gray;
     }
-    .avatarImgReply {
+    #displayTootThread .avatarImgReply {
       width: 36px;
       height: 36px;
       border-radius: 4px;
       background-color: gray;
     }
-    .createdAtLink {
+    #displayTootThread .createdAtLink {
       font-size: 80%;
       text-decoration: none;
     }
-    .createdAtLink:hover {
+    #displayTootThread .createdAtLink:hover {
       text-decoration: underline;
     }
     /* .tootReply { */
-    .displayTootAndReplies {
+    #displayTootThread .displayTootAndReplies {
       margin-left: 5px;
       border-left: 1px solid blue;
       padding-left: 5px;
     }
-    .hideReplies {
+    #displayTootThread .hideReplies {
       font-size: 50%;
     }
-    .showReplies {
+    #displayTootThread .showReplies {
       font-size: 50%;
       margin-top: 2px;
     }
-    .showTootTemplate {
+    #displayTootThread .showTootTemplate {
       display: none;
     }
     
     -->
     </style>
-    {% endcomment %}
+
 
 
     <script language="JavaScript">
