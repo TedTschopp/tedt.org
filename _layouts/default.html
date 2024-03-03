@@ -47,7 +47,7 @@
           <div class="w-100 position-relative">
             <img src="/img/categories/home.png" class="img-fluid w-100 h-100" alt="Image of someone sitting by a lake">
             <div class="row vcard h-card position-absolute top-0 start-0" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
-              <div class="col-xl-9 mx-auto">
+              <div class="col-xl-9 mx-auto h-100">
                 <h1 class="mb-5 fnp-name hidden"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
                 <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=128&d=mp&r=g" class="intro-image-avatar photo u-photo hidden" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
                 <h2 class="hidden"><span class="p-job-title">Enterprise Architect</span></h2>
@@ -59,8 +59,7 @@
                   <span class="p-region">{{ site.region }}</span>
                   <span class="p-country-name">{{ site.country }}</span>
                 </span>
-
-                <span class="p-note align-items-start justify-content-end">
+                <span class="p-note align-items-start justify-content-end hidden">
                   {% for paragraphs in site.biography %}
                     {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
                     <p>{{paragraph}}</p>
