@@ -44,10 +44,33 @@
     <header>
       <section class="showcase position-relative">
         <div class="g-0 w-100 container-fluid">
-          <div class="w-100">
+          <div class="w-100 position-relative">
             <img src="/img/categories/home.png" class="img-fluid w-100 h-100" alt="Image of someone sitting by a lake">
+            <div class="row vcard h-card position-absolute top-0 start-0" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
+              <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
+                <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=128&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
+                <h2><span class="p-job-title">Enterprise Architect</h2>
+
+                <hr>
+
+                <span class="p-adr d-none">
+                  <span class="p-locality">{{ site.locality }}</span>,
+                  <span class="p-region">{{ site.region }}</span>
+                  <span class="p-country-name">{{ site.country }}</span>
+                </span>
+
+                <span class="p-note">
+                  {% for paragraphs in site.biography %}
+                    {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
+                    <p>{{paragraph}}</p>
+                  {% endfor %}
+                </span>
+
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
       </section>
     </header>
 
@@ -156,33 +179,6 @@
     <div class="container py-1 py-xl-2">
       <section>
           <div class="container h-100 position-relative">
-            
-            {% comment %}
-            <div class="row vcard h-card" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
-              <div class="col-xl-9 mx-auto">
-                <h1 class="mb-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
-                <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=128&d=mp&r=g" class="intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
-                <h2><span class="p-job-title">Enterprise Architect</h2>
-  
-                <hr>
-  
-                <span class="p-adr d-none">
-                  <span class="p-locality">{{ site.locality }}</span>,
-                  <span class="p-region">{{ site.region }}</span>
-                  <span class="p-country-name">{{ site.country }}</span>
-                </span>
-  
-                <span class="p-note">
-                  {% for paragraphs in site.biography %}
-                    {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
-                    <p>{{paragraph}}</p>
-                  {% endfor %}
-                </span>
-  
-              </div>
-            </div>
-            {% endcomment %}
-
             <div class="row mb-2 mb-lg-2">
               <div class="col-md-12 col-xl-10 text-center mx-auto">
                   <h2 id="career">Career</h2>
@@ -291,22 +287,6 @@
           </div>
       </section>
     </div>
-
-    {% comment %}
-    <a name="social"></a>
-    <div class="row g-0">
-      <div class="col-lg-6 text-white showcase-img my-auto align-middle"><img src="{{ site.siteurl }}/img/home/tedtschopp_Illustration_for_kids_folktale_book_where_an_elephan_ea_merged.jpg" class="img-responsive img-thumbnail" alt="Photo by Ted Tschopp Using Midjourney"></div>
-      <div class="col-lg-6 my-auto showcase-text align-middle">
-        <h2>Social Media Posts</h2>
-        <p class="lead mb-0">My posts over on Mastodon</p>
-        <div class="mt-timeline">
-          <div id="mt-body" class="mt-body" role="feed">
-              <div class="loading-spinner"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
 
   <!-- Footer -->
   {% include footer.html %}
