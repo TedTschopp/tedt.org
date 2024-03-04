@@ -8,7 +8,14 @@ siteurl: https://tedt.org
 #description of the site for meta tags
 description: "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution."
 
-keywords: "technology, theology, creativity, religion, digital age, UI/UX, collaboration tools, storytelling"
+keywords: Technology
+ - Theology
+ - Creativity
+ - Religion
+ - digital age
+ - UI/UX
+ - Collaboration tools
+ - Storytelling
 
 # Permalink 
 permalink: /:categories/:title
@@ -136,13 +143,6 @@ author:
   threads_username: tedtschopp
 #  google_username: TedTschopp
 
-
-
-
-
-# Verison
-version: 1.5.0
-
 email: ted@tschopp.org
 phonenumber: 
 indiewebcamp_username: Www.tedt.org                                    # Done
@@ -173,23 +173,11 @@ keybaseio_username: tedtschopp                                         # Done
 fitbit: //www.fitbit.com/user/242JHZ
 runkeeper: //runkeeper.com/user/TedTschopp                            
 angellist: tedtschopp
-dropbox:
-evernote:
-flickr: 
-force:
-windowslive:
-withings:
-yammer:
-gravatar: 
-rabbitmq: 
-# google_username: TedTschopp
-
 
 # SOCIAL MEDIA
+# IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
+
 links:
-
-  # IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
-
     # Midjourney
   - Name: Midjourney
     URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
@@ -389,21 +377,6 @@ links:
     Icon-Class: fas fa-home fa-lg fa-fw
     Color: '#000000'
     Text_Color: '#ffffff'
-
-  #  # CUSTOM LINK
-  #- Name: Blog
-  #  URL: https://#
-  #  Icon-Class: fas fa-link
-  #  Color: '#ffb142'
-  #  Text_Color: '#ffffff'
-
-  #- Name: Links
-  #  URL: https://#
-  #  Icon-Class: fas fa-link
-  #  Color: '#d94869'
-  #  Text_Color: '#ffffff'
-
-
 
 # hcard:
 #   organization: Distribution
