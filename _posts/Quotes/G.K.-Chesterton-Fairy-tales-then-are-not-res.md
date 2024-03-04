@@ -24,7 +24,8 @@ bullets:
 description:
 seo-description:
 
-category: Quotes
+categories:
+- Quotes
 tags: Dragons,Fairy tales
 keywords:
 

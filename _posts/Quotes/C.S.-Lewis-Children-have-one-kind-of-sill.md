@@ -23,7 +23,8 @@ bullets:
 description:
 seo-description:
 
-category: Quotes
+categories:
+- Quotes
 tags: Silliness
 keywords:
 

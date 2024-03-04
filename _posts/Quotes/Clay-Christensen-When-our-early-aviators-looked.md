@@ -24,7 +24,8 @@ bullets:
 description:
 seo-description:
 
-category: Quotes
+categories:
+- Quotes
 tags: Best practices,Bird,Feathers,Flight,Theory
 keywords:
 
