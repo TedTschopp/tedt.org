@@ -26,7 +26,8 @@ seo-description:
 
 categories:
 - Quotes
-tags: Confession,Guilt
+tags: Confession
+- Guilt
 keywords:
 
 

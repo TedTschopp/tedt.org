@@ -29,7 +29,10 @@ seo-description:
 
 categories:
 - Quotes
-tags: Blocks,Management,Strategy,War
+tags: Blocks,
+- Management
+- Strategy
+- War
 keywords:
 
 

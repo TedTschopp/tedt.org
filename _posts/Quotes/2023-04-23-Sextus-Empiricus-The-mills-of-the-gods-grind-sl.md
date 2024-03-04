@@ -25,7 +25,9 @@ seo-description:
 
 categories:
 - Quotes
-tags: Government,Justice,Slow
+tags: Government
+ - Justice
+ - Slow
 keywords:
 
 

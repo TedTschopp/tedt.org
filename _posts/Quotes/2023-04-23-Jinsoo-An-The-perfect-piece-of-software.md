@@ -26,7 +26,10 @@ seo-description:
 
 categories:
 - Quotes
-tags: Ideas to refine,Process,Technology,Tools
+tags: Ideas to refine,
+- Process
+- Technology
+- Tools
 keywords:
 
 

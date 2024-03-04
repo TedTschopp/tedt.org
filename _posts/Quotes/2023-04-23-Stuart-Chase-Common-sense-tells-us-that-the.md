@@ -25,7 +25,8 @@ seo-description:
 
 categories:
 - Quotes
-tags: Common sense,Wisdom
+tags: Common sense
+- Wisdom
 keywords:
 
 
