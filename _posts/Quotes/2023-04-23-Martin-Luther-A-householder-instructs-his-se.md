@@ -25,7 +25,7 @@ bullets:
 description:
 seo-description:
 
-categories: Quotes
+category: Quotes
 tags:
 keywords:
 

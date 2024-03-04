@@ -24,7 +24,7 @@ bullets:
 description:
 seo-description:
 
-categories: Quotes
+category: Quotes
 tags: Ideas to refine,
 - Process
 - Technology
