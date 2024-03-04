@@ -27,8 +27,7 @@ bullets:
 description:
 seo-description:
 
-categories:
-- Quotes
+categories: Quotes
 tags: Blocks
 - Management
 - Strategy

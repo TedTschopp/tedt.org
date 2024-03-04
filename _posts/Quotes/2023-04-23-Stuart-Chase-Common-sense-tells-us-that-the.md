@@ -23,8 +23,7 @@ bullets:
 description:
 seo-description:
 
-categories:
-- Quotes
+categories: Quotes
 tags: Common sense
 - Wisdom
 keywords:
