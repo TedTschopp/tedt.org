@@ -1,0 +1,32 @@
+            <div class="row vcard h-card position-absolute top-0 start-0" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
+              <div class="col-xl-9 mx-auto h-100">
+                <h1 class="mb-5 fnp-name hidden"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></h1>
+                <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=128&d=mp&r=g" class="intro-image-avatar photo u-photo hidden" alt="Photo of {{ site.givenname }} {{ site.familyname }}" >
+                <h2 class="hidden"><span class="p-job-title">Enterprise Architect</span></h2>
+
+                <hr class="hidden">
+
+                <span class="p-adr d-none">
+                  <span class="p-locality">{{ site.locality }}</span>,
+                  <span class="p-region">{{ site.region }}</span>
+                  <span class="p-country-name">{{ site.country }}</span>
+                </span>
+                <span class="p-note align-items-start justify-content-end hidden">
+                  {% for paragraphs in site.biography %}
+                    {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
+                    <p>{{paragraph}}</p>
+                  {% endfor %}
+                </span>
+                {% for link in site.links %}
+
+                {% if link.URL %}
+                  <a class="flex hidden" style="text-decoration: none" href="{{link.URL}}{% if link.Username %}/{{link.Username}}{% endif %}" target="_blank"
+                          rel="me noopener noreferrer">
+                          <span class="hidden" id="link-content" {% if link.Text_Color %}style="color: {{link.Text_Color}};"{% endif %}>
+                                  {% if link.Icon-Class %}<i class="{{link.Icon-Class}} align-middle">&nbsp;</i>{% endif %}<span class="mx-1.5 align-middle">{{link.Name}}</span>
+                          </span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
