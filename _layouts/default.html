@@ -85,7 +85,10 @@
                                       {% if count > 3 %}
                                           {% break %}
                                       {% endif %}
-                                      <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
+                                      <h4><a href="{{ post.url }}">{{ post.title }}</a>
+                                        <span class="hidden">{{ post.categories }}</span>
+                                        <span class="hidden">{{ post.category }}</span>
+                                      </h4>
                                       {% if post.teaser %}
                                         <p class="card-text">{{ post.teaser }}</p>
                                       {% elsif post.description %}
