@@ -10,13 +10,20 @@
               {% endcomment %}
 
               {% if site.links %}
-                <ul class="list-inline">
+                <div class="row">
                   {% for link in site.links %}
-                    <li class="list-inline-item mr-3">
-                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url">
-                        <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="box-shadow: 0 0 10px {{ link.Color }}"{% endif %}></i>
-                      </a>
-                    </li>
+                    <div class="col-sm-6">
+                      <ul class="list-inline">
+                        <li class="list-inline-item mr-3">
+                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url">
+                            <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="box-shadow: 0 0 10px {{ link.Color }}"{% endif %}></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    {% if forloop.index == forloop.length | divided_by: 2 %}
+                      </div><div class="row">
+                    {% endif %}
                   {% endfor %}
-                </ul>
+                </div>
               {% endif %}
