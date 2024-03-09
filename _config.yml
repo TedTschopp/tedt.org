@@ -237,8 +237,6 @@ links:
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
     Text_Color: '#eeebac'
-
-
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
@@ -260,7 +258,6 @@ links:
     Icon-Class: fa-brands fa-threads
     Color: '#000000'
     Text_Color: '#ffffff'
-
     # FACEBOOK
   - Name: Facebook
     URL: https://www.facebook.com
@@ -317,7 +314,6 @@ links:
     Icon-Class: fa fa-quora
     Color: '#ffffff'
     Text_Color: '#B92B27'
-
     # GITHUB
   - Name: GitHub
     URL: http://github.com
@@ -331,7 +327,6 @@ links:
     Icon-Class: fab fa-dev
     Color: '#ffffff'
     Text_Color: '#000000'
-
     # YOUTUBE
   - Name: YouTube
     URL: https://www.youtube.com/channel
@@ -352,21 +347,18 @@ links:
     Icon-Class: fab fa-vimeo-v
     Color: '#1ab7ea'
     Text_Color: '#ffffff'
-
     # SOUNDCLOUD
   - Name: SoundCloud
     URL: https://www.soundcloud.com
     Username: ted-tschopp
     Color: '#FE5000'
     Icon-Class: fab fa-soundcloud
-
     # GOODREADS
   - Name: Goodreads
     URL: https://www.goodreads.com/user/show/856383-ted-tschopp
     Icon-Class: fab fa-goodreads
     Color: '#e9e5cd'
     Text_Color: '#553b08'
-
     # STEAM
   - Name: Steam
     URL: https://steamcommunity.com/id
@@ -381,7 +373,6 @@ links:
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
     Text_Color: '#FFFFFF'
-
     # Midjourney
   - Name: Midjourney
     URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
