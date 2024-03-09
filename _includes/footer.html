@@ -60,12 +60,12 @@
                 <div class="col-6 col-lg-2 offset-lg-1 mb-3">
               {% else %}
                 <div class="col-6 col-lg-2 mb-3">
-              {% endif %
-              <h5>{{ Category }}</5>
+              {% endif %}
+              <h5>{{ Category }}</h5>
                 <ul class="list-unstyled">
                 {% for link in site.links %}
                   {% if link.Category == Category %}
-                    <li class="mb-2"">
+                    <li class="mb-2">
                       <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url">
                         <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; text-shadow: 0 0 10px {{ link.Text_Color }}"{% endif %}></i>{{link.Name}}
                       </a>
