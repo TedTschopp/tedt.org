@@ -184,6 +184,7 @@ links:
     Icon-Class: fas fa-home fa-lg fa-fw
     Color: '#000000'
     Text_Color: '#ffffff'
+    Category: 'About Me'
     # MEDIUM
   - Name: Medium
     URL: 'https://medium.com'
@@ -191,12 +192,14 @@ links:
     Icon-Class: fab fa-medium-m
     Color: '#00ab6c'
     Text_Color: '#ffffff'
+    Category: 'About Me'
     # Indie Web Camp
   - Name: Indieweb
     URL: https://indieweb.org/User:Www.tedt.org
     Icon-Class: fa-solid fa-blog
     Color: '#000000'
     Text_Color: '#ffffff'
+    Category: 'About Me'
     # Keybase
   - Name: Keybase
     URL: https://keybase.io
@@ -204,18 +207,21 @@ links:
     Color: '#4866b0'
     Text_Color: '#ffffff'
     Icon-Class: fa-brands fa-keybase
+    Category: 'About Me'
     # MESSENGER
   - Name: Messenger
     URL: https://m.me
     Username: TedTschopp
     Color: '#006AFF'
     Icon-Class: fab fa-facebook-messenger
+    Category: 'About Me'
     # EMAIL
   - Name: Email
     URL: 'mailto:ted@tedt.org'
     Icon-Class: fas fa-envelope
     Color: '#e17055'
     Text_Color: '#ffffff'
+    Category: 'About Me'
     # BUY ME A COFFEE
   - Name: BuyMeACoffee
     URL: 'https://buymeacoffee.com'
@@ -223,6 +229,7 @@ links:
     Icon-Class: fas fa-mug-hot
     Color: '#FFDD00'
     Text_Color: '#000000'
+    Category: 'About Me'
     # Meetup
   - Name: Meetup
     URL: 'https://www.meetup.com/members/'
@@ -230,6 +237,7 @@ links:
     Icon-Class: fa-brands fa-meetup
     Color: '#ED1C40'
     Text_Color: '#FFFFFF'
+    Category: 'About Me'
     # Foursquare
   - Name: Foursquare
     URL: https://foursquare.com
@@ -237,6 +245,7 @@ links:
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
     Text_Color: '#eeebac'
+    Category: 'About Me'
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
@@ -244,6 +253,7 @@ links:
     Icon-Class: fa-brands fa-mastodon
     Color: '#595aff'
     Text_Color: '#ffffff'
+    Category: 'Social Media'
     # BlueSky
   - Name: BlueSky
     URL: https://bsky.app/profile
@@ -251,6 +261,7 @@ links:
     Icon-Class: fa-solid fa-cloud
     Color: '#0085FF'
     Text_Color: '#ffffff'
+    Category: 'Social Media'
     # Threads
   - Name: Threads
     URL: https://threads.net
@@ -258,30 +269,35 @@ links:
     Icon-Class: fa-brands fa-threads
     Color: '#000000'
     Text_Color: '#ffffff'
+    Category: 'Social Media'
     # FACEBOOK
   - Name: Facebook
     URL: https://www.facebook.com
     Username: ted.tschopp
     Color: '#3b5998'
     Icon-Class: fab fa-facebook
+    Category: 'Social Media'
     # INSTAGRAM
   - Name: Instagram
     URL: https://www.instagram.com
     Username: TedTschopp
     Color: '#DD2A7B'
     Icon-Class: fab fa-instagram
+    Category: 'Social Media'
     # TWITTER
   - Name: 𝕏
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'
     Icon-Class: fa-brands fa-x-twitter
+    Category: 'Social Media'
     # LINKEDIN
   - Name: LinkedIn
     URL: https://www.linkedin.com/in
     Username: tedtschopp
     Color: '#2867B2'
     Icon-Class: fab fa-linkedin-in
+    Category: 'Social Media'
     # SNAPCHAT
   - Name: Snapchat
     URL: https://www.snapchat.com/add
@@ -289,24 +305,28 @@ links:
     Color: '#FFFC00'
     Text_Color: '#000000'
     Icon-Class: fab fa-snapchat-ghost
+    Category: 'Social Media'
     # PINTEREST
   - Name: Pinterest
     URL: https://pinterest.com
     Username: 'tedtschopp'
     Color: '#E60023'
     Icon-Class: fab fa-pinterest
+    Category: 'Creative'
     # TUMBLR
   - Name: Tumblr
     URL: https://www.tumblr.com/blog
     Username: tedtschopp
     Color: '#35465c'
     Icon-Class: fab fa-tumblr
+    Category: 'Creative'
     # REDDIT
   - Name: Reddit
     URL: http://reddit.com/u
     Username: TedTschopp
     Color: '#FF4500'
     Icon-Class: fab fa-reddit-alien
+    Category: 'Creative'
     # Quora
   - Name: Quora
     URL: https://www.quora.com/profile
@@ -314,25 +334,14 @@ links:
     Icon-Class: fa fa-quora
     Color: '#ffffff'
     Text_Color: '#B92B27'
-    # GITHUB
-  - Name: GitHub
-    URL: http://github.com
-    Username: TedTschopp
-    Color: '#6e5494'
-    Icon-Class: fab fa-github
-    # DEV.TO
-  - Name: Dev.to
-    URL: 'https://dev.to'
-    Username: tedtschopp
-    Icon-Class: fab fa-dev
-    Color: '#ffffff'
-    Text_Color: '#000000'
+    Category: 'Creative'
     # YOUTUBE
   - Name: YouTube
     URL: https://www.youtube.com/channel
     Username: UC4Q8pXroTVyXrIxg2u82pwg
     Color: '#ff0000'
     Icon-Class: fab fa-youtube
+    Category: 'Creative'
     # TWITCH
   - Name: Twitch
     URL: 'https://twitch.tv'
@@ -340,6 +349,7 @@ links:
     Icon-Class: fab fa-twitch
     Color: '#9147fe'
     Text_Color: '#ffffff'
+    Category: 'Creative'
     # VIMEO
   - Name: Vimeo
     URL: 'https://vimeo.com'
@@ -347,12 +357,36 @@ links:
     Icon-Class: fab fa-vimeo-v
     Color: '#1ab7ea'
     Text_Color: '#ffffff'
+    Category: 'Creative'
     # SOUNDCLOUD
   - Name: SoundCloud
     URL: https://www.soundcloud.com
     Username: ted-tschopp
     Color: '#FE5000'
     Icon-Class: fab fa-soundcloud
+    Category: 'Creative'
+    # Midjourney
+  - Name: Midjourney
+    URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
+    Icon-Class: fa-solid fa-sailboat
+    Color: '#19202c'
+    Text_Color: '#f8fafb'
+    Category: 'Creative'
+     # GITHUB
+  - Name: GitHub
+    URL: http://github.com
+    Username: TedTschopp
+    Color: '#6e5494'
+    Icon-Class: fab fa-github
+    Category: 'Coding'
+    # DEV.TO
+  - Name: Dev.to
+    URL: 'https://dev.to'
+    Username: tedtschopp
+    Icon-Class: fab fa-dev
+    Color: '#ffffff'
+    Text_Color: '#000000'
+    Category: 'Coding'
     # GOODREADS
   - Name: Goodreads
     URL: https://www.goodreads.com/user/show/856383-ted-tschopp
@@ -366,6 +400,7 @@ links:
     Color: '#66c0f4'
     Text_Color: '#000000'
     Icon-Class: fab fa-steam
+    Category: 'Gaming'
     # XBOX
   - Name: xBox
     URL: https://account.xbox.com/en-us/profile?gamertag=
@@ -373,12 +408,7 @@ links:
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
     Text_Color: '#FFFFFF'
-    # Midjourney
-  - Name: Midjourney
-    URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
-    Icon-Class: fa-solid fa-sailboat
-    Color: '#19202c'
-    Text_Color: '#f8fafb'
+    Category: 'Gaming'
 
 # hcard:
 #   organization: Distribution

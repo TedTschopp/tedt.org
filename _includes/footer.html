@@ -47,7 +47,33 @@
                 {% endfor %}
               </ul>
             </div>
-            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+
+            {% assign categories = "" | split: "," %}
+            {% for link in site.links %}
+              {% unless categories contains link.category %}
+                {% assign categories = categories | push: link.category %}
+              {% endunless %}
+            {% endfor %}
+            
+            {% for category in categories %}
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>{{ category }}</5>
+                <ul class="list-unstyled">
+                {% for link in site.links %}
+                  {% if link.category == category %}
+                    <li class="mb-2"">
+                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url">
+                        <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; text-shadow: 0 0 10px {{ link.Text_Color }}"{% endif %}></i>{{link.Name}}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              </div>
+            {% endfor %}
+
+
+            {% comment}
               <h5>Links</h5>
               <ul class="list-unstyled">
                 <li class="mb-2"><a href="/">Home</a></li>
@@ -89,6 +115,8 @@
                 <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
               </ul>
             </div>
+
+            {% endcomment %}
           </div>
         </div>
       </footer>
