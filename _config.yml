@@ -292,7 +292,7 @@ links:
     Icon-Class: fab fa-instagram
     Category: 'Social Media'
     # TWITTER
-  - Name: 𝕏 - Twitter
+  - Name: Twitter
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'

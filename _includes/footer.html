@@ -1,36 +1,4 @@
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item">
-                  <a rel="me" href="{{ site.siteurl }}/" class="u-url u-uid">Ted Tschopp</a>
-                </li>
-                <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="{{ site.siteurl }}/About/">About</a>
-                </li>
-                <!--
-                <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#">Terms of Use</a>
-                </li> -->
-                <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="{{ site.siteurl }}/Privacy-Policy/">Privacy Policy</a>
-                </li>
-              </ul>
-              <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
-            </div>
-            <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
-              {% include html-contact-us-icons.html %}
-            </div>
-          </div>
-        </div>
-    </footer>
-
-
       <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
           <div class="row">
@@ -66,8 +34,8 @@
                 {% for link in site.links %}
                   {% if link.Category == Category %}
                     <li class="mb-2">
-                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url">
-                        <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; text-shadow: 0 0 10px {{ link.Text_Color }}"{% endif %}></i>{{link.Name}}
+                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="text-shadow: 0 0 10px {{ link.Text_Color }}"  >
+                        <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
                       </a>
                     </li>
                   {% endif %}
@@ -75,6 +43,33 @@
               </ul>
               </div>
             {% endfor %}
+          </div>
+          <div class="row">
+
+            <div class="col-lg-3 mb-3 h-100 text-center text-lg-left my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a rel="me" href="{{ site.siteurl }}/" class="u-url u-uid">Ted Tschopp</a>
+                </li>
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="{{ site.siteurl }}/About/">About</a>
+                </li>
+                <!--
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#">Terms of Use</a>
+                </li> -->
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="{{ site.siteurl }}/Privacy-Policy/">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
+              <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+            </div>
           </div>
         </div>
       </footer>
