@@ -179,7 +179,7 @@ angellist: tedtschopp
 
 links:
     # Homepage
-  - Name: Blog
+  - Name: My Homepage
     URL: https://www.tedt.org
     Icon-Class: fas fa-home fa-lg fa-fw
     Color: '#000000'
@@ -246,6 +246,13 @@ links:
     Color: '#0072b1'
     Text_Color: '#eeebac'
     Category: 'About Me'
+    # GOODREADS
+  - Name: Goodreads
+    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
+    Icon-Class: fab fa-goodreads
+    Color: '#e9e5cd'
+    Text_Color: '#553b08'
+    Category: 'About Me'
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
@@ -285,7 +292,7 @@ links:
     Icon-Class: fab fa-instagram
     Category: 'Social Media'
     # TWITTER
-  - Name: 𝕏
+  - Name: 𝕏 - Twitter
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'
@@ -306,6 +313,13 @@ links:
     Text_Color: '#000000'
     Icon-Class: fab fa-snapchat-ghost
     Category: 'Social Media'
+    # REDDIT
+  - Name: Reddit
+    URL: http://reddit.com/u
+    Username: TedTschopp
+    Color: '#FF4500'
+    Icon-Class: fab fa-reddit-alien
+    Category: 'Social Media'
     # PINTEREST
   - Name: Pinterest
     URL: https://pinterest.com
@@ -319,13 +333,6 @@ links:
     Username: tedtschopp
     Color: '#35465c'
     Icon-Class: fab fa-tumblr
-    Category: 'Creative'
-    # REDDIT
-  - Name: Reddit
-    URL: http://reddit.com/u
-    Username: TedTschopp
-    Color: '#FF4500'
-    Icon-Class: fab fa-reddit-alien
     Category: 'Creative'
     # Quora
   - Name: Quora
@@ -378,7 +385,7 @@ links:
     Username: TedTschopp
     Color: '#6e5494'
     Icon-Class: fab fa-github
-    Category: 'Coding'
+    Category: 'Coding & Gaming'
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
@@ -386,13 +393,7 @@ links:
     Icon-Class: fab fa-dev
     Color: '#ffffff'
     Text_Color: '#000000'
-    Category: 'Coding'
-    # GOODREADS
-  - Name: Goodreads
-    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
-    Icon-Class: fab fa-goodreads
-    Color: '#e9e5cd'
-    Text_Color: '#553b08'
+    Category: 'Coding & Gaming'
     # STEAM
   - Name: Steam
     URL: https://steamcommunity.com/id
@@ -400,7 +401,7 @@ links:
     Color: '#66c0f4'
     Text_Color: '#000000'
     Icon-Class: fab fa-steam
-    Category: 'Gaming'
+    Category: 'Coding & Gaming'
     # XBOX
   - Name: xBox
     URL: https://account.xbox.com/en-us/profile?gamertag=
@@ -408,7 +409,7 @@ links:
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
     Text_Color: '#FFFFFF'
-    Category: 'Gaming'
+    Category: 'Coding & Gaming'
 
 # hcard:
 #   organization: Distribution
