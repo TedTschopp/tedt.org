@@ -3,7 +3,7 @@
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
           <div class="row">
             <div class="col-lg-3 mb-3">
-              <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="{{ site.siteurl }}" rel="me">
+              <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="{{ site.siteurl }}" rel="me" class="u-url u-uid">
                 <img src="{{ site.siteurl }}/img/home/logo-Tschopp.svg" height="42" width="42" class="d-block me-2"  alt="logo">
                 <span class="fs-5">Ted Tschopp</span>
               </a>
@@ -34,7 +34,7 @@
                 {% for link in site.links %}
                   {% if link.Category == Category %}
                     <li class="mb-2">
-                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="text-shadow: 0 0 10px {{ link.Text_Color }}"  >
+                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
                         <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
                       </a>
                     </li>
@@ -45,13 +45,8 @@
             {% endfor %}
           </div>
           <div class="row">
-
             <div class="col-lg-3 mb-3 h-100 text-center text-lg-left my-auto">
               <ul class="list-inline mb-2">
-                <li class="list-inline-item">
-                  <a rel="me" href="{{ site.siteurl }}/" class="u-url u-uid">Ted Tschopp</a>
-                </li>
-                <li class="list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
                   <a href="{{ site.siteurl }}/About/">About</a>
                 </li>
