@@ -66,7 +66,7 @@ coordinates:
     latitude: 7.9783
     longitude: 46.8911
 
-image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.jpg
+image: /img/Swiss/A_shepherd_discovering_the_hidden_hall_filled_with_Gold_and_Warriors.webp
 image-alt: The mysterious army leader and his warriors sleep at the tables.
 image-artist:
 image-artist-URL:

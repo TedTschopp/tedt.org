@@ -49,10 +49,10 @@ coordinates:
     latitude: 47.2849
     longitude: 8.4634
 
-image: img/Swiss/Turlersee-Lake.jpg
+image: img/Swiss/Turlersee-Lake.webp
 image-alt: An image of Türlersee-Lake taken by someone from shore.
 image-artist: Leandros at German Wikipedia
-image-artist-URL: https://commons.wikimedia.org/wiki/File:Türlersee1.jpg
+image-artist-URL: https://commons.wikimedia.org/wiki/File:Türlersee1.webp
 image-credits:
 image-credits-URL:
 image-credits-artist: 

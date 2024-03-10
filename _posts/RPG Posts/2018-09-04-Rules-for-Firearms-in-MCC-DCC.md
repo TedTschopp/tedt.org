@@ -45,7 +45,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-09/MCC-Guns.jpg
+image: /img/2018-09/MCC-Guns.webp
 image-alt:
 image-artist: Matthew Harris
 image-artist-URL: https://megalomatthew.artstation.com/

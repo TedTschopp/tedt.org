@@ -32,7 +32,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.jpg
+image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
 image-alt: 
 image-artist: Ted Tschopp
 image-artist-URL: 

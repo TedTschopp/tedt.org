@@ -44,7 +44,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: "/img/2023-10/art-of-the-possible.png"
+image: "/img/2023-10/art-of-the-possible.webp"
 image-alt: "Breaking Free from the Possible"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"

@@ -195,7 +195,7 @@
                             {% for category in categories %}
 
                                 {% assign clean_category = category | downcase | slugify %}
-                                {% assign image = clean_category | append: ".png" %}
+                                {% assign image = clean_category | append: ".webp" %}
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
                                 <div class="card h-100">
                                     <div class="col-12">

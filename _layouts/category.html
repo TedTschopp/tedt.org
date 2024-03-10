@@ -51,7 +51,7 @@
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
                     {% assign category = page.category | downcase | slugify %}
-                    {% assign image = category | append: ".png" %}
+                    {% assign image = category | append: ".webp" %}
                     <figure>
                         <img class="img-responsive img-thumbnail" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
                     </figure>

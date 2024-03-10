@@ -46,7 +46,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-04/Third-Edition.jpg
+image: /img/2018-04/Third-Edition.webp
 image-alt:
 image-artist: Keith Parkinson
 image-artist-URL: https://www.keithparkinson.com/

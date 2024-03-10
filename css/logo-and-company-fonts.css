@@ -194,21 +194,21 @@ a:hover .MCC {
 }
 
 .Dohring-watermark::before {
-    background: url(/img/home/logo-Dohring.png) no-repeat center center;
+    background: url(/img/home/logo-Dohring.webp) no-repeat center center;
     background-size: 50% ; /* or contain */
 }
 
 .TORC-watermark::before {
-    background: url(/img/home/logo-TORC.png) no-repeat center center;
+    background: url(/img/home/logo-TORC.webp) no-repeat center center;
     background-size: contain ; /* or contain */
 }
 
 .SCE-watermark::before {
-    background: url( /img/home/logo-SCE.png) no-repeat center center;
+    background: url( /img/home/logo-SCE.webp) no-repeat center center;
     background-size: 50% ; /* or contain */
 }
 
 .Tschopp-watermark::before {
-    background: url( /img/home/logo-Tschopp.png) no-repeat center center;
+    background: url( /img/home/logo-Tschopp.webp) no-repeat center center;
     background-size: 25% ; /* or contain */
 }

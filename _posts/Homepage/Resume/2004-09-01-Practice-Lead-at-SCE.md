@@ -64,7 +64,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/practice-lead.jpg
+image: img/home/practice-lead.webp
 image-alt: A man sitting at a computer with 3 screens with code on them
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

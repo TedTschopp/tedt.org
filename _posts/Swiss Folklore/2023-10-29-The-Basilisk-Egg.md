@@ -48,12 +48,12 @@ coordinates:
     latitude: '47.5596'
     longitude: '7.5886'
 
-image: /img/2023-10/Basilisk_mit_Basler_Wappen.jpg
+image: /img/2023-10/Basilisk_mit_Basler_Wappen.webp
 image-alt: 
 image-artist: Andreas Schwarzkopf
 image-artist-URL: https://commons.wikimedia.org/wiki/User:Andreas_Schwarzkopf
 image-credits: 
-image-credits-URL: https://commons.wikimedia.org/wiki/File:Basilisk_mit_Basler_Wappen.jpg
+image-credits-URL: https://commons.wikimedia.org/wiki/File:Basilisk_mit_Basler_Wappen.webp
 image-credits-artist: Ted Tschopp and Midjourney
 image-credits-artist-URL:
 image-credits-title: The Burning of the Basilisk Egg

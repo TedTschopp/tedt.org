@@ -38,7 +38,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2023-07/FAME.png
+image: /img/2023-07/FAME.webp
 image-alt: Photo by Ted Tschopp using Midjourney
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

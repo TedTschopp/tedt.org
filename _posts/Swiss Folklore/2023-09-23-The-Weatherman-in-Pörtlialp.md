@@ -48,7 +48,7 @@ coordinates:
     latitude: '46.7758'
     longitude: '8.5942'
 
-image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.png
+image: /img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.webp
 image-alt: An illustration of a large, heavy man wearing a large hat, walking in a
     forest.
 image-artist:

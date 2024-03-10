@@ -63,7 +63,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/home/sce_com.jpg
+image: /img/home/sce_com.webp
 image-alt:
 image-artist: Ted Tschopp
 image-artist-URL: https://www.sce.com/

@@ -20,7 +20,7 @@ call-to-action:
 date: 2019-01-23 12:17:59+00:00
 update:
 author:
-    avatar: https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.jpg
+    avatar: https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.webp
     name: Hanson W. Baldwin
     url: https://en.wikipedia.org/wiki/Hanson_W._Baldwin
 
@@ -48,7 +48,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2019-01/ICBM.jpg
+image: /img/2019-01/ICBM.webp
 image-alt: Picture of an ICBM
 image-artist:
 image-artist-URL:

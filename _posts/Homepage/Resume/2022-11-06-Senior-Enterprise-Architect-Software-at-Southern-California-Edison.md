@@ -44,7 +44,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.jpg
+image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.webp
 image-alt:
 image-artist: Ted Tschopp and Midjourney
 image-artist-URL: https://tedt.org/

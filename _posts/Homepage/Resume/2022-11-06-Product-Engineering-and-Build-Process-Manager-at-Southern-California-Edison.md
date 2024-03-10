@@ -58,7 +58,7 @@ coordinates:
     latitude:
     longitude:
 
-image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.jpg
+image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.webp
 image-alt:
 image-artist: Ted Tschopp and Midjourney 
 image-artist-URL: https://www.tedt.org/

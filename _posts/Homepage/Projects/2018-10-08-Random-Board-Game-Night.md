@@ -42,7 +42,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/home/Ted-Tschopp-board-game-table.jpg
+image: /img/home/Ted-Tschopp-board-game-table.webp
 image-alt: Board game table in the style of dark purple and brown, tilt-shift photography
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

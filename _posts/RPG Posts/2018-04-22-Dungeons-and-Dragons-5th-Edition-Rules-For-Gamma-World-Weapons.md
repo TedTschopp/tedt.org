@@ -36,7 +36,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-04/The-Leviathan.jpg
+image: /img/2018-04/The-Leviathan.webp
 image-alt:
 image-artist: Larry Elmore
 image-artist-URL: http://www.larryelmore.com/

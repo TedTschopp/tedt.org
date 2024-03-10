@@ -52,7 +52,7 @@ coordinates:
     latitude: 47.422161
     longitude: 8.214489
 
-image: /img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.jpg
+image: /img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp
 image-alt: "A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle looms in the background, partially obscured by a fierce, swirling snowstorm. The landscape is eerily lit by a full moon, casting long sinister shadows. The bailiff should appear as a figure from Swiss folklore, wearing traditional, historical attire, and his face should be shrouded in mystery, a sense of foreboding and the supernatural, highlighting the legend's themes of a cursed hunt and a tragic tale. "
 image-artist: Ted Tschopp 
 image-artist-URL: https://tedt.org

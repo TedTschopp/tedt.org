@@ -46,7 +46,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.jpg
+image: /img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp
 image-alt: A blacksmith making fictional weapons.
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

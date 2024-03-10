@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /RPG/MCC-GW/images/Gamma_Alien_large.jpg
+image: /RPG/MCC-GW/images/Gamma_Alien_large.webp
 image-alt:
 image-artist:
 image-artist-URL:

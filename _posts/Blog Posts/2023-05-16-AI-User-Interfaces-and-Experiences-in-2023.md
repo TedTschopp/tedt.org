@@ -45,7 +45,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /media/printing-press-hannes-wolf-unsplash.jpg
+image: /media/printing-press-hannes-wolf-unsplash.webp
 image-alt: Photo by Hannes Wolf on Unsplash
 image-artist:
 image-artist-URL:
