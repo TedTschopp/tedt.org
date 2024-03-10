@@ -56,7 +56,10 @@ name: Ted Tschopp's Homepage
 #Locality
 locality: Los Angeles
 region: California
-country: United States of America
+country: USA
+
+timezone: America/Los_Angeles
+
 
 # Verification Keys
 pinterest_domain_verify: 98d8bdfab96a340e5a4f03f7a4303f0e
@@ -79,7 +82,6 @@ mastodon_comments:
   host: tschopp.net
   username: Ted
 
-timezone: America/Los_Angeles
 
 collections:
   GammaWorld:
@@ -182,10 +184,9 @@ angellist: tedtschopp
 
 links:
     # Homepage
-  - Name: My Homepage
+  - Name: Website
     URL: https://www.tedt.org
     Icon-Class: fas fa-home fa-lg fa-fw
-    Color: '#000000'
     Category: 'About Me'
     # MEDIUM
   - Name: Medium
@@ -205,13 +206,6 @@ links:
     Username: 'tedtschopp'
     Color: '#4866b0'
     Icon-Class: fa-brands fa-keybase
-    Category: 'About Me'
-    # MESSENGER
-  - Name: Messenger
-    URL: https://m.me
-    Username: TedTschopp
-    Color: '#006AFF'
-    Icon-Class: fab fa-facebook-messenger
     Category: 'About Me'
     # EMAIL
   - Name: Email
@@ -239,12 +233,6 @@ links:
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
     Text_Color: '#eeebac'
-    Category: 'About Me'
-    # GOODREADS
-  - Name: Goodreads
-    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
-    Icon-Class: fab fa-goodreads
-    Color: '#e9e5cd'
     Category: 'About Me'
     # Mastodon
   - Name: Mastodon
@@ -280,6 +268,13 @@ links:
     Color: '#DD2A7B'
     Icon-Class: fab fa-instagram
     Category: 'Social Media'
+    # MESSENGER
+  - Name: Messenger
+    URL: https://m.me
+    Username: TedTschopp
+    Color: '#006AFF'
+    Icon-Class: fab fa-facebook-messenger
+    Category: 'Social Media'
     # TWITTER
   - Name: Twitter
     URL: https://twitter.com
@@ -308,6 +303,12 @@ links:
     Color: '#FF4500'
     Icon-Class: fab fa-reddit-alien
     Category: 'Social Media'
+    # GOODREADS
+  - Name: Goodreads
+    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
+    Icon-Class: fab fa-goodreads
+    Color: '#e9e5cd'
+    Category: 'Creative'
     # PINTEREST
   - Name: Pinterest
     URL: https://pinterest.com
