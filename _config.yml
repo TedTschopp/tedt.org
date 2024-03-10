@@ -26,6 +26,9 @@ givenname: Ted
 #Family Name
 familyname: Tschopp
 
+# job title
+jobtitle: Enterprise Architect
+
 #Other Names
 othernames: >
   Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
@@ -39,7 +42,7 @@ biography:
 # The Logo of the site
 logo: https://tedt.org/img/Site-Logo.png
 title_image: https://tedt.org/img/Site-Logo.png
-title-image-alt: 'Logo for Ted Tschopp'
+title-image-alt: 'Ted Tschopp'
 
 # The title tag of the site
 title: Ted Tschopp
