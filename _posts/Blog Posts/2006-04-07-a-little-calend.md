@@ -3,7 +3,7 @@ layout: post
 
 title: A Little Calendar App I'm building
 title-url:
-subtitle:
+subtitle: Crafting Time - Journey of Building a JavaScript Calendar
 subtitle-url:
 quote:
 excerpt:
