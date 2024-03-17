@@ -73,6 +73,7 @@ order:
 # Notes
 
 The following ideas have been written down from notes I have taken over the years and merged with Gamma World's concepts of Cryptic Socieities.  The goal here is to create some rules that can be easily moved from one setting to another and from one system to another on their creation.  Things that need to be done:
+
 * Fix language to move out of Integration
 * Add components about Morality to Religious Organizatinos
 * Add components about currencies to Economic Organizations
