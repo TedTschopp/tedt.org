@@ -110,17 +110,17 @@ There are some basic properties that need to be tracked for each ideology.  Some
 It is important to recall that the technology level of the ideology will be different at different locations throughout their territory.  What should be tracked is the Highest Tech level the ideology can bring to bear and then discuss the different tech levels at each of the different satellite facilities.  There really should be no more than 5 different building types per ideology.  While this last is arbitrary, it is designed to simplify things later.  
 
 <div markdown="1">
-The University is a Service Ideology with a University as its headquarters.  It builds satellite facilities as follows:
+The University embodies a Service Ideology, with its main hub being the University itself. It establishes satellite facilities as detailed below:
 
-**Level 5:** The University itself is a tech level 4 facility today that was once a Tech Level 6 facility that has an huge underground AI Think Tank.
+**Level 5:** Presently, the University stands as a tech level 4 facility, though it once boasted the distinction of a Tech Level 6 site, equipped with a massive underground AI Think Tank.
 
-**Level 4:** The Library.  The University has a library at The University itself, but it also has several satellite libraries that it operates in various capital cities around the continent.  These facilities are tech level 3 facilities with printing presses and imported radio transmitters it uses to communicate with the University itself.  
+**Level 4:** The Library. At its core, the University maintains a library, yet it extends its reach through several satellite libraries nestled within various capital cities across the continent. These sites, tech level 3 facilities, come equipped with printing presses and imported radio transmitters for seamless communication with the main University campus.
 
-**Level 3:** The College.  The University operates schools across the continent.  These school are tech level 3 facilities that operate in various many cities.  The focus of these facilities is to train people in the Trivium and to funnel exceptional students to the University so they can further their goals of restoring the lost knowledge of the Ancients. 
+**Level 3:** The College. Schools under the University's banner spread across the continent, all operating as tech level 3 facilities in numerous cities. Their mission: to educate individuals in the Trivium and channel outstanding students back to the University, thereby advancing the quest to reclaim the lost knowledge of the Ancients.
 
-**Level 2:** The Laboratory.  The University operates various field laboratories around the continent.  These labs can be everything from Tech Level 3 all the way up to the Tech Level of the surrounding "culture".  Many times the University will deploy a lab in the Ancient ruins in order to retrieve some esoteric piece of missing data, or to retrieve an artifact.  These facilities are temporary.  Permanent Laboratories are deployed at The Colleges and at the Libraries.
+**Level 2:** The Laboratory. The University sets up a range of field laboratories throughout the continent, their tech levels varying from 3 up to that of the local "culture." Often, the University places a lab amidst ancient ruins to unearth esoteric data or artifacts. While these labs tend to be temporary, permanent laboratories find homes within the Colleges and Libraries.
 
-**Level 1:** The Chapter House.  The University operates small safe houses around the continent in various tech level 1 and 2 cities and towns.  These chapter houses are staffed with a single family unit without children and operate as safe places and an underground railroad for people escaping anti-technology / anti-learning ideologies. These buildings match the tech level of their surroundings and have a hidden communications relay station that allows The University to maintain an extensive communications network that ties directly into the Think Tank.
+**Level 1:** The Chapter House. Across the continent, in towns and cities of tech levels 1 and 2, the University maintains small safe houses, each manned by a single family unit without children. These houses serve as sanctuaries and part of an underground network for those fleeing from anti-technology or anti-learning sentiments. Matching the tech levels of their environments, these houses conceal communication relay stations, integrating them into a vast network that connects directly back to the Think Tank.
 </div>
 {: .example .well}
 
