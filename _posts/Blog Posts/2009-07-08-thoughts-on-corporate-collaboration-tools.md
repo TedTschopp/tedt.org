@@ -44,7 +44,7 @@ coordinates:
     latitude: 34.024550
     longitude: -117.767693
 
-image: /img/Collaboration Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.webp
+image: img/Collaboration%20Tools/Ted_Tschopp_An_image_showing_a_variety_of_collaboration_tools_s.webp
 image-alt:
 image-artist:
 image-artist-URL:
