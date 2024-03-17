@@ -38,7 +38,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:img/iPhone-and-Blackbery.webp
+image: img/iPhone-and-Blackbery.webp
 image-alt:
 image-artist:
 image-artist-URL:

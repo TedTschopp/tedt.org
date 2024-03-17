@@ -42,7 +42,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:img/2005-10/Two-concepts-of-hell.webp
+image: img/2005-10/Two-concepts-of-hell.webp
 image-alt: 
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/2011-03/smart-connect.webp
+image: img/2011-03/smart-connect.webp
 image-alt:
 image-artist:
 image-artist-URL:

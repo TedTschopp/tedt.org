@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/2018-05/Ebstorfer-stich2.webp
+image: img/2018-05/Ebstorfer-stich2.webp
 image-alt:
 image-artist:  Gervase of Ebstorf
 image-artist-URL:

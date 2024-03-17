@@ -58,7 +58,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/2018-07/ola-larsson-genlabbalpha.webp
+image: img/2018-07/ola-larsson-genlabbalpha.webp
 image-alt:
 image-artist: Ola Larsson
 image-artist-URL: https://larsson.artstation.com/projects/qOJQn

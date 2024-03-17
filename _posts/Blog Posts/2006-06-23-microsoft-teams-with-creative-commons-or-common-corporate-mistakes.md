@@ -37,7 +37,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:img/2006-06/The-Microsoft-Logo-The-Creative-Commons-Logo-Hugging.webp
+image: img/2006-06/The-Microsoft-Logo-The-Creative-Commons-Logo-Hugging.webp
 image-alt:
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

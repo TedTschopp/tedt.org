@@ -44,7 +44,7 @@ coordinates:
     latitude: 46.864
     longitude: 8.761
 
-image:img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp
+image: img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp
 image-alt: The Schächental Valley
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

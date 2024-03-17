@@ -50,7 +50,7 @@ coordinates:
     latitude: '47.3667'
     longitude: '9.5615'
 
-image:img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.webp
+image: img/Swiss/An_illustration_of_a_dog_with_a_long_drooping_tongue.webp
 image-alt: An illustration of a dog, with a long drooping tongue, red eyes, and a
     long tail, appearing on a bridge over a stream between two villages in Switzerland.
 image-artist:

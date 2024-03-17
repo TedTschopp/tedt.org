@@ -32,7 +32,7 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image:img/2024-01/Aeon - Memory of Myths.webp
+image: img/2024-01/Aeon - Memory of Myths.webp
 image-alt: "A timeless being, is a figure shrouded in an ethereal aura, a solitary silhouette against the backdrop of the cosmos, their form ever enigmatic and ever-present, marked by a faint shimmering light that surrounds them, memories of the universe. Their eyes deep and contemplative, hold the wisdom of eons. Aeon's gaze is fixated on the tapestry of existence, watching over the unfolding stories of creation and demise. A guardian of the celestial realm, with outstretched arms that reach towards the past and future, embracing the entirety of cosmic history. "
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

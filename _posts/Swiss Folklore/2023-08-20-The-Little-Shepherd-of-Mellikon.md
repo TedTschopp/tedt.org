@@ -66,7 +66,7 @@ coordinates:
     latitude: 47.607
     longitude: 8.2884
 
-image:img/Swiss/A_ghost_of_a_young_Shepherd_emerges.webp
+image: img/Swiss/A_ghost_of_a_young_Shepherd_emerges.webp
 image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist.
     In the foreground, villagers peer upward, faces etched with curiosity and fear.
     The hole in the rock looms ominously, embodying the legend of the Little Shepherd

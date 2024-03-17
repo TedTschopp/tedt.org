@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/2011-02/edisonintl_2dlogon.webp
+image: img/2011-02/edisonintl_2dlogon.webp
 image-alt:
 image-artist:
 image-artist-URL:

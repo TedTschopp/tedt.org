@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/home/Ted_Tschopp_an_image_of_a_sky_filled_with_stars_on_a_dark_night.webp
+image: img/home/Ted_Tschopp_an_image_of_a_sky_filled_with_stars_on_a_dark_night.webp
 image-alt:
 image-artist:
 image-artist-URL:

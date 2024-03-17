@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image:img/home/password.webp
+image: img/home/password.webp
 image-alt: List of Passwords used in my password challenge application
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
