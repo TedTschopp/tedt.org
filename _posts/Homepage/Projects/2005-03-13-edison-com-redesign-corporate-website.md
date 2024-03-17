@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2011-02/www-edison-com.webp
+image:img/2011-02/www-edison-com.webp
 image-alt:
 image-artist:
 image-artist-URL:

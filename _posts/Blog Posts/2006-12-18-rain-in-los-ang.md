@@ -41,7 +41,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:  /img/2006-12/Los-Angeles-In-The-Rain.webp
+image: img/2006-12/Los-Angeles-In-The-Rain.webp
 image-alt:
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

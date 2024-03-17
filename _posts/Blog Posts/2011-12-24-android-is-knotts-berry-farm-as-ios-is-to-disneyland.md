@@ -45,7 +45,7 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /img/2013-06/main-street-disney-mickey-statue-e1371582793846.webp
+image:img/2013-06/main-street-disney-mickey-statue-e1371582793846.webp
 image-alt:
 image-artist:
 image-artist-URL:

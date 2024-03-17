@@ -48,7 +48,7 @@ coordinates:
     latitude: '47.5596'
     longitude: '7.5886'
 
-image: /img/2023-10/Basilisk_mit_Basler_Wappen.webp
+image:img/2023-10/Basilisk_mit_Basler_Wappen.webp
 image-alt: 
 image-artist: Andreas Schwarzkopf
 image-artist-URL: https://commons.wikimedia.org/wiki/User:Andreas_Schwarzkopf

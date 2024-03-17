@@ -43,7 +43,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:  /img/2006-12/An-open-book-intricate-shadows-symbolic-shapes.webp
+image: img/2006-12/An-open-book-intricate-shadows-symbolic-shapes.webp
 image-alt:
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

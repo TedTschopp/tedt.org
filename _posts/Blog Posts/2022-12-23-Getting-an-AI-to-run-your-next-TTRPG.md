@@ -38,7 +38,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
+image:img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
 image-alt: Gamma World 1st Edition RPG Books and dice
 image-artist:
 image-artist-URL:

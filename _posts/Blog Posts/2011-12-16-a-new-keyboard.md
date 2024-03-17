@@ -43,7 +43,7 @@ coordinates:
     latitude: 34.256278
     longitude: -118.267083
 
-image: /img/2013-06/timthumb.jpeg
+image:img/2013-06/timthumb.jpeg
 image-alt:
 image-artist:
 image-artist-URL:

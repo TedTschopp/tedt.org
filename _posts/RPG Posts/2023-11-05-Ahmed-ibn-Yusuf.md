@@ -32,7 +32,7 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: /img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.webp
+image:img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.webp
 image-alt: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

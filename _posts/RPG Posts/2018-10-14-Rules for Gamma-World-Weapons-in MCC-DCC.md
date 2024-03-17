@@ -42,7 +42,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-10/seth-justus-huntersalienguns.webp
+image:img/2018-10/seth-justus-huntersalienguns.webp
 image-alt:
 image-artist: Seth Justus
 image-artist-URL: https://www.artstation.com/artwork/lqz25

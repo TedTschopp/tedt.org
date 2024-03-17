@@ -41,7 +41,7 @@ coordinates:
     latitude:
     longitude:
 
-image: /img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp
+image:img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp
 image-alt:
 image-artist: Josh Haberman
 image-artist-URL: https://www.artstation.com/artwork/lqz25

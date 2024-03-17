@@ -66,7 +66,7 @@ coordinates:
     latitude: 9.1753
     longitude: 47.6592
 
-image: /img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.webp
+image:img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.webp
 image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana leads
     a group of resolute Swiss fighters, storming the bulwark with swords raised high,
     expressions fierce and determined. The backdrop portrays majestic mountains, clouded
