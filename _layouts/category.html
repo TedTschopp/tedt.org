@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
-
     <meta charset="utf-8">
-
-    <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
-    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
 
     {% include calculate-variables.html %}
 
@@ -28,6 +24,8 @@
     <!-- START OF CSS INCLUDE -->
 
     {% include all-css-includes.html %}
+
+    <!-- END OF CSS INCLUDE -->
 
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
