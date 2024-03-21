@@ -303,13 +303,15 @@ $dark:        rgba( 16,  24,  32, 1.00) !default;
 $primary:     rgba(  0,  68, 111, 1.00) !default;
 $secondary:   rgba(232,  96,  39, 1.00) !default;
 $info:        rgba(  0, 169, 224, 1.00) !default;
-$accent1:     rgba(242, 188,  87, 1.00) !default;
-$accent2:     rgba(111,  26,   7, 1.00) !default;
-$accent3:     rgba( 43,  33,  24, 1.00) !default;
+$accent1:     rgba(  0, 123, 255, 1.00) !default;
+$accent2:     rgba(242, 188,  87, 1.00) !default;
+$accent3:     rgba(111,  26,   7, 1.00) !default;
 $success:     rgba(  0, 179,  57, 1.00) !default;
 $warning:     rgba(242, 188,  87, 1.00) !default;
 $danger:      rgba(249,   0,  65, 1.00) !default;
 // scss-docs-end theme-color-variables
+
+
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -589,24 +591,26 @@ $component-active-color:      $white !default;
 $component-active-bg:         $primary !default;
 
 // scss-docs-start focus-ring-variables
-$focus-ring-width:      .25rem !default;
-$focus-ring-opacity:    .25 !default;
-$focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
-$focus-ring-blur:       0 !default;
-$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
+$focus-ring-width:             .25rem !default;
+$focus-ring-opacity:           .25 !default;
+$focus-ring-color:             rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-blur:              0 !default;
+$focus-ring-box-shadow:        0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
 // scss-docs-end focus-ring-variables
 
 // scss-docs-start caret-variables
-$caret-width:                 .3em !default;
-$caret-vertical-align:        $caret-width * .85 !default;
-$caret-spacing:               $caret-width * .85 !default;
+$caret-width:                  .3em !default;
+$caret-vertical-align:         $caret-width * .85 !default;
+$caret-spacing:                $caret-width * .85 !default;
 // scss-docs-end caret-variables
 
 $transition-base:             all .2s ease-in-out !default;
 $transition-fade:             opacity .15s linear !default;
+
 // scss-docs-start collapse-transition
 $transition-collapse:         height .35s ease !default;
 $transition-collapse-width:   width .35s ease !default;
+
 // scss-docs-end collapse-transition
 
 // stylelint-disable function-disallowed-list
