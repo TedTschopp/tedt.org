@@ -311,31 +311,6 @@ $warning:     rgba(242, 188,  87, 1.00) !default;
 $danger:      rgba(249,   0,  65, 1.00) !default;
 // scss-docs-end theme-color-variables
 
-
-
-Thou hast the RGBA color values as follows:
-
-- Light:
-- Dark: 
-- Primary: 
-- Secondary: 
-- Info: 
-- Accent1: 
-- Accent2: 
-- Accent3: 
-- Success: 
-- Warning: 
-- Danger: 
-
-Each tuple represents the Red, Green, Blue, and Alpha (opacity) components of the colors, where the Alpha value of 1 indicates full opacity.
-
-
-
-
-
-
-
-
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
