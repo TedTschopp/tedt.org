@@ -298,18 +298,43 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$light:      #b1b3b3 !default;
-$dark:       #101820 !default;
-$primary:    #00446f !default;
-$secondary:  #e86027 !default;
-$info:       #00a9e0 !default;
-$accent1:    #F2BC57 !default;
-$accent2:    #6F1A07 !default;
-$accent3:    #2B2118 !default;
-$success:    #00b339 !default;
-$warning:    #F2BC57 !default;
-$danger:     #f90041 !default;
+$light:       rgba(177, 179, 179, 1.00) !default;
+$dark:        rgba( 16,  24,  32, 1.00) !default;
+$primary:     rgba(  0,  68, 111, 1.00) !default;
+$secondary:   rgba(232,  96,  39, 1.00) !default;
+$info:        rgba(  0, 169, 224, 1.00) !default;
+$accent1:     rgba(242, 188,  87, 1.00) !default;
+$accent2:     rgba(111,  26,   7, 1.00) !default;
+$accent3:     rgba( 43,  33,  24, 1.00) !default;
+$success:     rgba(  0, 179,  57, 1.00) !default;
+$warning:     rgba(242, 188,  87, 1.00) !default;
+$danger:      rgba(249,   0,  65, 1.00) !default;
 // scss-docs-end theme-color-variables
+
+
+
+Thou hast the RGBA color values as follows:
+
+- Light:
+- Dark: 
+- Primary: 
+- Secondary: 
+- Info: 
+- Accent1: 
+- Accent2: 
+- Accent3: 
+- Success: 
+- Warning: 
+- Danger: 
+
+Each tuple represents the Red, Green, Blue, and Alpha (opacity) components of the colors, where the Alpha value of 1 indicates full opacity.
+
+
+
+
+
+
+
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
