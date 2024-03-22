@@ -6,8 +6,7 @@ title-url:
 subtitle:
 subtitle-url:
 quote:
-excerpt: "The following is an integration of rules for Gamma World's Rank Advancement\
-    \ with Mutant Crawl Classic.  \n"
+excerpt: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
 source:
 source-url:
 call-to-action:
@@ -21,10 +20,8 @@ author:
 
 bullets:
 
-description: "The following is an integration of rules for Gamma World's Rank Advancement\
-    \ with Mutant Crawl Classic.  \n"
-seo-description: "The following is an integration of rules for Gamma World's Rank\
-    \ Advancement with Mutant Crawl Classic.  \n"
+description: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
+seo-description: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
 
 categories:
 - Role Playing Games
@@ -32,8 +29,6 @@ categories:
 - Mutant Crawl Classics
 tags:
 keywords:
-
-
 
 location:
     name:
@@ -51,10 +46,16 @@ image-title:
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
+redirect-from:
+  - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances.html
+  - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances/
+  - /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances/
+  - /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances
 
-mathjax:
+mathjax: 
 
-order:
+order: 
+
 ---
 
 # Character Status
