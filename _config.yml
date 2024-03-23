@@ -232,7 +232,6 @@ links:
     Username: tedtschopp
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
-    Text_Color: '#eeebac'
     Category: 'About Me'
     # Mastodon
   - Name: Mastodon

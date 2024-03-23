@@ -2,26 +2,40 @@
   const toggleTheme = () => {
     const htmlTag = document.getElementsByTagName('html')[0];
     const currentTheme = htmlTag.getAttribute('data-bs-theme');
-    htmlTag.setAttribute('data-bs-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    htmlTag.setAttribute('data-bs-theme', newTheme);
+    
+    // Write the new theme to a cookie
+    document.cookie = `theme=${newTheme}; path=/`;
   }
-
-  $(document).ready(() => {
-    // Set the active theme on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-      $('.dropdown-item-theme').each(function() {
-        $(this).toggleClass('active', $(this).data('bs-theme-value') === currentTheme);
-      });
-    }
-  
-    // Save the theme selection into localStorage when a dropdown item is clicked
-    $('.dropdown-item-theme').click(function() {
-      const selectedTheme = $(this).data('bs-theme-value');
-      localStorage.setItem('theme', selectedTheme);
-  
-      // Set the active class
-      $('.dropdown-item-theme').removeClass('active');
-      $(this).addClass('active');
-    });
-  });
 </script>
+
+
+  <script>
+    $(document).ready(() => {
+      // Function to get a cookie by name
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+      }
+
+      // Set the active theme on page load
+      const currentTheme = getCookie('theme');
+      if (currentTheme) {
+        $('.dropdown-item-theme').each(function() {
+          $(this).toggleClass('active', $(this).data('bs-theme-value') === currentTheme);
+        });
+      }
+    
+      // Save the theme selection into a cookie when a dropdown item is clicked
+      $('.dropdown-item-theme').click(function() {
+        const selectedTheme = $(this).data('bs-theme-value');
+        document.cookie = `theme=${selectedTheme}; path=/`;
+    
+        // Set the active class
+        $('.dropdown-item-theme').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
