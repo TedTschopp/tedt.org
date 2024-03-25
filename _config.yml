@@ -244,7 +244,7 @@ links:
   - Name: BlueSky
     URL: https://bsky.app/profile
     Username: tedt.org
-    Icon-Class: fa-solid fa-cloud
+    Icon-Class: fa-solid fa-bluesky
     Color: '#0085FF'
     Category: 'Social Media'
     # Threads
