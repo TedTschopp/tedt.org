@@ -116,7 +116,7 @@ authors:
     instagram_username: tedtschopp
     quora_username: Ted-Tschopp
     indiewebcamp_username: Www.tedt.org
-    mastadon_username: TedT@twit.social
+    mastodon_username: TedT@twit.social
     threads_username: tedtschopp
 
 author:
@@ -144,7 +144,7 @@ author:
   instagram_username: tedtschopp
   quora_username: Ted-Tschopp
   indiewebcamp_username: Www.tedt.org
-  mastadon_username: TedT@twit.social
+  mastodon_username: TedT@twit.social
   threads_username: tedtschopp
 #  google_username: TedTschopp
 
@@ -160,7 +160,7 @@ facebook_username: ted.tschopp                                         # Done
 reddit_username: tedtschopp                                            # Done
 twitter_username: TedTschopp                                           # Done
 threads_username: TedTschopp@threads.net                               # Done
-mastadon_username: TedT@twit.social                                    # Done
+mastodon_username: TedT@twit.social                                    # Done
 instagram_username: tedtschopp                                         # Done
 foursquare: //foursquare.com/tedtschopp                                # Done
 goodreads: //www.goodreads.com/TedTschopp                              # Done
