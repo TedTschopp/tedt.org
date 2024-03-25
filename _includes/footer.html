@@ -38,7 +38,9 @@
                   <li class="mb-2">{{paragraph}}</li>
                 {% endfor %}
               </ul>
-            </div>
+              <div class="col-lg-3 mb-3">
+                <a class="navbar-brand" class="u-url" rel="me" href="{{ site.siteurl }}"><img src="{{ site.siteurl }}/img/Tschopp-HouseMark-Optimum.svg" height="42" width="42" alt="logo"></a>
+              </div>
 
             {% assign categories = "" | split: "," %}
             {% for link in site.links %}
