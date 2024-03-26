@@ -6,7 +6,7 @@ title-url: https://tschopp.net/@mapbot
 subtitle:
 subtitle-url:
 quote:
-excerpt: 'An application that generates a radom TTRPG using Gary Gygax's DMG Appendix B-Random Wilderness Terrain.'
+excerpt: An application that generates a random TTRPG using Gary Gygax's DMG Appendix B-Random Wilderness Terrain.
 source:
 source-url:
 call-to-action:
@@ -61,6 +61,7 @@ year-the-event-took-place:
 mathjax:
 
 order: 17
+
 ---
 
 **Overview:** An application of the Procedural Text Generation system to created a 1 dimensional RPG Map every day.
