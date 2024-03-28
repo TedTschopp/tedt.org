@@ -1,11 +1,11 @@
-# ChatGPT Prompt for the Skills Portion of the Character Sheet.
+# Name of Creature
 
 ## Primary Aspects
 
-1. **Fitness** (-4 - 4, 0 being human normal): Comprises Muscle, Agility, and Stamina. 
-2. **Academic** (-4 - 4, 0 being human normal): Includes Intellect, Reasoning, and Acuity.
-3. **Mystical** (-4 - 4, 0 being human normal): Consists of Skepticism, Faith, and Mystery.
-4. **Emotional** (-4 - 4, 0 being human normal): Encompasses Manners, Personality, and Identity.
+1. **Fitness**:  (-4 - 4, 0 being human normal - Comprises Muscle, Agility, and Stamina)
+2. **Academic**: (-4 - 4, 0 being human normal - Includes Intellect, Reasoning, and Acuity)
+3. **Mystical**: (-4 - 4, 0 being human normal - Consists of Skepticism, Faith, and Mystery)
+4. **Emotional**: (-4 - 4, 0 being human normal - Encompasses Manners, Personality, and Identity)
 
 ### Fitness
 
