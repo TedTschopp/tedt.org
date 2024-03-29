@@ -131,23 +131,23 @@
         var xmlhttp = new XMLHttpRequest();
         if (url.indexOf("/api/v") == -1 && url.indexOf("/m/") == -1) {
             if (url.indexOf("http") != 0) {
-            // console.log("This doesn't look like a valid URL: " + url);
-            url = "https://" + url;
+                // console.log("This doesn't look like a valid URL: " + url);
+                url = "https://" + url;
             }
             var splitUrl = url.split("/");
             // url = splitUrl[0] + '//' + splitUrl[2] + '/b api/v1/statuses/';
             url = splitUrl[0] + "//" + splitUrl[2] + "/api/v1/statuses/";
             // support different URL syntaxes for links to toots
             if (splitUrl[3] && splitUrl[3] == "users") {
-            url += splitUrl[6];
+                url += splitUrl[6];
             } else if (splitUrl[3] && splitUrl[3] == "web") {
-            url += splitUrl[5];
+                url += splitUrl[5];
             } else {
-            url += splitUrl[4];
+                url += splitUrl[4];
             }
             if (splitUrl[3] == "notes") {
-            // Shuttlecraft
-            url = splitUrl[0] + "//" + splitUrl[2] + "/m/" + splitUrl[4];
+                // Shuttlecraft
+                url = splitUrl[0] + "//" + splitUrl[2] + "/m/" + splitUrl[4];
             }
             lastUrl = url;
             // console.log(url);
@@ -169,33 +169,33 @@
         }
     
         function loadTootReplies(arr, element) {
-        var xmlhttp = new XMLHttpRequest();
-    
-        // TODO: figure out the URL
-        // var url = 'https://mastodon.social/api/v1/statuses/108195817029536656/context';
-        var url = lastUrl + "/context";
-        if (lastUrl.indexOf("/m/") != -1) {
-            url = lastUrl + "/replies";
-        }
-        if (lastRepliesUrl == url) {
-            // TODO: this is hinky when considering multiple different ways you can request original toot URL
-            // return;
-        }
-        lastRepliesUrl = url;
-    
-        xmlhttp.onreadystatechange = function () {
-            //console.log('xmlhttp.onreadystatechange()');
-            if (this.readyState == 4 && this.status == 200) {
-            var myArr = JSON.parse(this.responseText);
-            displayTootReplies(myArr, element);
+            var xmlhttp = new XMLHttpRequest();
+        
+            // TODO: figure out the URL
+            // var url = 'https://mastodon.social/api/v1/statuses/108195817029536656/context';
+            var url = lastUrl + "/context";
+            if (lastUrl.indexOf("/m/") != -1) {
+                url = lastUrl + "/replies";
             }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.setRequestHeader(
-            "Accept",
-            'application/ld+json; profile="https://www.w3.org/ns/activitystreams"'
-        );
-        xmlhttp.send();
+            if (lastRepliesUrl == url) {
+                // TODO: this is hinky when considering multiple different ways you can request original toot URL
+                // return;
+            }
+            lastRepliesUrl = url;
+        
+            xmlhttp.onreadystatechange = function () {
+                //console.log('xmlhttp.onreadystatechange()');
+                if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                displayTootReplies(myArr, element);
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.setRequestHeader(
+                "Accept",
+                'application/ld+json; profile="https://www.w3.org/ns/activitystreams"'
+            );
+            xmlhttp.send();
         }
     
         var topOfThreadId = -1;
@@ -226,8 +226,7 @@
         originalAuthorId = arr.account.id;
         previousAuthorId = arr.account.id;
         originalAuthorUsername = arr.account.username;
-        originalAuthorUsernameWithInstance =
-            "@" + originalAuthorUsername + "@" + instanceName;
+        originalAuthorUsernameWithInstance = "@" + originalAuthorUsername + "@" + instanceName;
         topOfThreadId = arr.id;
         var displayToot;
         if (typeof element === "string") {
@@ -235,8 +234,7 @@
         }
         // backup the reply template, then remove old replies
         if (!tootReplyHtml) {
-            tootReplyHtml =
-            document.getElementById("displayTootTemplate").outerHTML + "";
+            tootReplyHtml = document.getElementById("displayTootTemplate").outerHTML + "";
         }
         // actually display content
         document.getElementsByClassName("tootReplies")[0].innerHTML = "";
@@ -251,7 +249,7 @@
         ge("userNameSpan").innerHTML = "@" + arr.account.username;
         ge("instanceNameSpan").innerHTML = "@" + instanceName;
         ge("content").innerHTML = formatToot(arr.content);
-        ge("createdAtLink").innerHTML = arr.created_at;
+        ge("createdAtLink").innerHTML = timeSince(arr.created_at);
         ge("createdAtLink").href = arr.url;
         var links = document.getElementsByClassName("authorLink");
         for (var i = 0; i < links.length; i++) {
@@ -278,26 +276,26 @@
             var interval = seconds / 31536000;
 
             if (interval > 1) {
-            return Math.floor(interval) + " years";
+                return Math.floor(interval) + " years";
             }
             interval = seconds / 2592000;
             if (interval > 1) {
-            return Math.floor(interval) + " months";
+                return Math.floor(interval) + " months";
             }
             interval = seconds / 86400;
             if (interval > 1) {
-            return Math.floor(interval) + " days";
+                return Math.floor(interval) + " days";
             }
             interval = seconds / 3600;
             if (interval > 1) {
-            return Math.floor(interval) + " hours";
+                return Math.floor(interval) + " hours";
             }
             interval = seconds / 60;
             if (interval > 1) {
-            return Math.floor(interval) + " minutes";
+                return Math.floor(interval) + " minutes";
             }
             return Math.floor(seconds) + " seconds";
-            }
+        }
 
         function displayTootReplies(threadArr, element) {
             // console.log(threadArr);
@@ -309,34 +307,34 @@
                 threadArr = { descendants: threadArr };
             }
     
-        function compareTootDates(a, b) {
-            if (a.created_at < b.created_at) {
-            return -1;
+            function compareTootDates(a, b) {
+                if (a.created_at < b.created_at) {
+                return -1;
+                }
+                if (a.created_at > b.created_at) {
+                return 1;
+                }
+                return 0;
             }
-            if (a.created_at > b.created_at) {
-            return 1;
+        
+            function sortRepliesByDate(arr) {
+                var returnArr = [];
+                for (var i = 0; i < arr.length; i++) {
+                returnArr[i] = arr[i];
+                }
+                // first sort by data may be redundant
+                returnArr.sort(compareTootDates);
+                return returnArr;
             }
-            return 0;
-        }
-    
-        function sortRepliesByDate(arr) {
-            var returnArr = [];
-            for (var i = 0; i < arr.length; i++) {
-            returnArr[i] = arr[i];
+        
+            threadArr.descendants = sortRepliesByDate(threadArr.descendants); // sortRepliesIntoTree(threadArr.descendants);
+        
+            threadArr = threadArr.descendants;
+            for (var i = 0; i < threadArr.length; i++) {
+                displayTootReply(threadArr[i], element);
             }
-            // first sort by data may be redundant
-            returnArr.sort(compareTootDates);
-            return returnArr;
-        }
-    
-        threadArr.descendants = sortRepliesByDate(threadArr.descendants); // sortRepliesIntoTree(threadArr.descendants);
-    
-        threadArr = threadArr.descendants;
-        for (var i = 0; i < threadArr.length; i++) {
-            displayTootReply(threadArr[i], element);
-        }
-    
-        // console.log('Displayed ' + threadArr.descendants.length + ' replies');
+        
+            // console.log('Displayed ' + threadArr.descendants.length + ' replies');
         }
     
         var stackObjects = [];
@@ -397,18 +395,18 @@
         if (!(combineRepliesFromSameAuthor && arr.account.id == previousAuthorId)) {
             // TODO: promising but needs refinement
             if (arr.in_reply_to_id == topOfThreadId) {
-            indentCount == indentCountDefault;
+                indentCount == indentCountDefault;
             }
             if (arr.in_reply_to_id == previousTootId) {
-            indentCount++;
+                indentCount++;
             } else if (arr.in_reply_to_id == previousParentTootId) {
-            // do nothing
+                // do nothing
             } else {
-            // OLD -- indentCount--;
-            indentCount = getIndentCount(arr.in_reply_to_id);
+                // OLD -- indentCount--;
+                indentCount = getIndentCount(arr.in_reply_to_id);
             }
             if (indentCount <= indentCountDefault) {
-            indentCount = indentCountDefault;
+                indentCount = indentCountDefault;
             }
     
             // displayToot.style.marginLeft = '10px'; // don't need to increase over time -- (indentCount*5) + 'px'; // TODO: magic number
@@ -451,21 +449,21 @@
     
         var indentCountPerId = [];
         function setIndentCount(id, count) {
-        indentCountPerId[id] = count;
+            indentCountPerId[id] = count;
         }
         function getIndentCount(id) {
-        if (indentCountPerId[id]) {
-            return indentCountPerId[id];
-        }
-        return indentCountDefault; // TODO: could be -1 or some error code?
+            if (indentCountPerId[id]) {
+                return indentCountPerId[id];
+            }
+            return indentCountDefault; // TODO: could be -1 or some error code?
         }
     
         function formatToot(html) {
-        if (html.indexOf("<p>") != 0) {
-            html = "<p>" + html + "</p>";
-        }
-        html = html.replaceAll("<br>", "</p><p>");
-        return html;
+            if (html.indexOf("<p>") != 0) {
+                html = "<p>" + html + "</p>";
+            }
+            html = html.replaceAll("<br>", "</p><p>");
+            return html;
         }
     
         function getHashVariable(variable) {
