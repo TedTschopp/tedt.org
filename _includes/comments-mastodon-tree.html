@@ -270,15 +270,44 @@
         var previousTootId = -1;
         var previousParentTootId = -1;
     
+
+        function timeSince(date) {
+
+            var seconds = Math.floor((new Date() - date) / 1000);
+
+            var interval = seconds / 31536000;
+
+            if (interval > 1) {
+            return Math.floor(interval) + " years";
+            }
+            interval = seconds / 2592000;
+            if (interval > 1) {
+            return Math.floor(interval) + " months";
+            }
+            interval = seconds / 86400;
+            if (interval > 1) {
+            return Math.floor(interval) + " days";
+            }
+            interval = seconds / 3600;
+            if (interval > 1) {
+            return Math.floor(interval) + " hours";
+            }
+            interval = seconds / 60;
+            if (interval > 1) {
+            return Math.floor(interval) + " minutes";
+            }
+            return Math.floor(seconds) + " seconds";
+            }
+
         function displayTootReplies(threadArr, element) {
-        // console.log(threadArr);
-        // var displayJson = JSON.stringify(arr, null, 2);
-        var arr;
-        //console.log(baseElement);
-        // for Shuttlecraft
-        if (!threadArr.descendants) {
-            threadArr = { descendants: threadArr };
-        }
+            // console.log(threadArr);
+            // var displayJson = JSON.stringify(arr, null, 2);
+            var arr;
+            //console.log(baseElement);
+            // for Shuttlecraft
+            if (!threadArr.descendants) {
+                threadArr = { descendants: threadArr };
+            }
     
         function compareTootDates(a, b) {
             if (a.created_at < b.created_at) {
@@ -392,7 +421,7 @@
             ge("displayNameSpan").innerHTML = arr.account.display_name;
             ge("userNameSpan").innerHTML = "@" + arr.account.username;
             ge("instanceNameSpan").innerHTML = "@" + instanceName;
-            ge("createdAtLink").innerHTML = arr.created_at;
+            ge("createdAtLink").innerHTML = timeSince(arr.created_at);
             ge("createdAtLink").href = "#url=" + arr.url; // blorg
             var links = displayToot.getElementsByClassName("authorLink");
             for (var n = 0; n < links.length; n++) {
@@ -524,16 +553,20 @@
             <div class="card p-0 m-0">
                 <div class="card-header ">
                     <div class="card-body p-0 m-0">
-                        <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
-                        <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                        <div class="row w-100 p-0 m-0 createdAt">
+                            <div class="col-6"> 
+                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                            </div>
+                            <div class="col-6"> 
+                                <p class="card-title p-3 m-0 text-start content"><a href="" target="_blank" class="createdAtLink"></a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-body p-0 m-0">
                     <div class="row w-100 p-0 m-0 ">
                         <p class="card-title p-3 m-0 text-start content"></p>
-                    </div>
-                    <div class="row w-100 p-0 m-0 createdAt">
-                        <p class="card-title p-3 m-0 text-start content"><a href="" target="_blank" class="createdAtLink"></a></p>
                     </div>
 
 
@@ -581,8 +614,15 @@
                                 <div class="card p-0 m-0">
                                     <div class="card-header ">
                                         <div class="card-body p-0 m-0">
-                                            <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
-                                            <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                                            <div class="row w-100 p-0 m-0 createdAt">
+                                                <div class="col-6"> 
+                                                    <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                                    <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                                                </div>
+                                                <div class="col-6"> 
+                                                    <p class="card-title p-3 m-0 text-start content"><a href="" target="_blank" class="createdAtLink"></a></p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-body p-0 m-0">
@@ -591,17 +631,13 @@
                                         </div>
 
 
-                                        <div class="row w-100 p-0 m-0 createdAt">
-                                            <p class="card-title p-3 m-0 text-start content"><a href="" X-target="_blank" class="createdAtLink"></a></p>
-                                            <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;">Hide Post</a></span>
-                                        </div>
 
 
                                     </div>
                                     <div class="card-footer text-muted">
                                         <div class="row w-100">
                                             <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                                <i class="fa-solid fa-eye"></i>
+                                                <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;"><i class="fa-solid fa-eye"></i></a></span>
                                             </div>
                                             <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                                 <i class="fa-solid fa-reply"></i>
