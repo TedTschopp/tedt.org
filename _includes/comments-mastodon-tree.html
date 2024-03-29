@@ -385,7 +385,7 @@
             // displayToot.style.marginLeft = '10px'; // don't need to increase over time -- (indentCount*5) + 'px'; // TODO: magic number
             displayToot.id = arr.id; // new for trees
             displayToot.className = "displayTootAndReplies";
-            ge("author").style.display = "grid";
+            //ge("author").style.display = "grid";
             ge("authorLink").href = arr.account.url;
             ge("avatarImg").src = "";
             ge("avatarImg").src = arr.account.avatar;
@@ -399,7 +399,7 @@
             links[n].href = arr.account.url;
             }
         } else {
-            ge("author").style.display = "none";
+            // ge("author").style.display = "none";
         }
         previousAuthorId = arr.account.id;
         previousTootId = arr.id;
