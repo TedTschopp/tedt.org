@@ -270,6 +270,8 @@
     
 
         function timeSince(date) {
+            console.log(date);
+            console.log(new Date(date));
             var seconds = Math.floor((new Date() - new Date(date)) / 1000);
 
             var interval = seconds / 31536000;
