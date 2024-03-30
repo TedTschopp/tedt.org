@@ -13,114 +13,16 @@
 
         <noscript>You need JavaScript to view the comments.</noscript>
     </section>
-
-
-
     <style>
-        {% comment %}
-        #displayTootThread .template {
-            display: none;
-        }
-        #displayTootThread .author {
-            display: grid;
-            align-items: center;
-            grid-template-columns: auto minmax(0, 1fr);
-            grid-template-rows: auto;
-            grid-row-gap: 2px;
-            grid-column-gap: 10px;
-        }
-        #displayTootThread .authorReply {
-            padding-top: 10px;
-        }
-        #displayTootThread .authorLink {
-            text-decoration: none;
-        }
-        #displayTootThread .avatar {
-            grid-column: 1;
-            grid-row: 1 / 4;
-        }
-        #displayTootThread .content {
-            /* These are technically the same, but use both */
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            -ms-word-break: break-all;
-            /* This is the dangerous one in WebKit, as it breaks things wherever */
-            word-break: break-all;
-            /* Instead use this non-standard one: */
-            word-break: break-word;
-            /* Adds a hyphen where the word breaks, if supported (No Blink) */
-            -ms-hyphens: auto;
-            -moz-hyphens: auto;
-            -webkit-hyphens: auto;
-            hyphens: auto;
-        }
-        #displayTootThread .displayName {
-            /* color: black; */
-            font-size: 100%;
-            font-weight: bold;
-            text-decoration: none;
-            grid-column: 2;
-            grid-row: 1;
-        }
-        #displayTootThread .displayName:hover {
-            text-decoration: underline;
-        }
-        #displayTootThread .displayNameLink {
-            /* color: black; */
-        }
-        #displayTootThread .userName {
-            font-size: 80%;
-            text-decoration: none;
-            grid-column: 2;
-            grid-row: 2;
-        }
-        #displayTootThread .createdAt {
-            grid-column: 2;
-            grid-row: 3;
-        }
-        #displayTootThread .avatarImg {
-            width: 48px;
-            height: 48px;
-            border-radius: 4px;
-            background-color: gray;
-        }
-        #displayTootThread .avatarImgReply {
-            width: 36px;
-            height: 36px;
-            border-radius: 4px;
-            background-color: gray;
-        }
-        #displayTootThread .createdAtLink {
-            font-size: 80%;
-            text-decoration: none;
-        }
-        #displayTootThread .createdAtLink:hover {
-            text-decoration: underline;
-        }
-
-        #displayTootThread .hideReplies {
-            font-size: 50%;
-        }
-        #displayTootThread .showReplies {
-            font-size: 50%;
-            margin-top: 2px;
-        }
-        #displayTootThread .showTootTemplate {
-            display: none;
-        }
-        {% endcomment %}
-
         /* .tootReply { */
         #displayTootThread .displayTootAndReplies {
-            margin-left: 5px;
-            border-left: 1px solid var(--bs-success-border-subtle);
-            padding-left: 5px;
+            border-left: 1px solid var(--bs-border-color);
+            padding-left: 10px;
         }
+        .card:not(:last-child) {
+            border-bottom-left-radius: 0 !important;
+        }      
     </style>
-
-
-
-
     <script language="JavaScript">
    
         var originalAuthorId;
@@ -689,16 +591,10 @@
     
     //-->
     </script>
-
-
-
-
-
-
     <section id="displayTootThread" class="article-content">
     <div class="row g-0 p-0 m-0 d-flex align-items-start tootThread"  id="displayToot">
         <div class="card p-0 m-0">
-            <div class="card-header ">
+            <div class="card-header">
                 <div class="card-body p-0 m-0">
                     <div class="row w-100 p-0 m-0">
                         <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
@@ -720,8 +616,6 @@
                 <div class="row w-100 p-0 m-0 ">
                     <p class="card-title p-3 m-0 text-start content"></p>
                 </div>
-
-
             </div>
             <div class="card-footer text-muted">
                 <div class="row w-100">
@@ -752,13 +646,7 @@
             </div>
             <div class="card-body p-0 m-0">
                 <div class="row w-100 p-0 m-0 tootReplies">
-
-
-
-
                     <div class="row g-0 p-0 m-0 d-flex align-items-start tootReply" id="displayTootTemplate">
-
-                        
                         <div class="card p-0 m-0">
                             <div class="card-header ">
                                 <div class="card-body p-0 m-0">
@@ -817,76 +705,14 @@
                             </div>
                         </div>
                     </div>
-                
-
-
-
                 </div>  
             </div>
         </div>
     </div>
     </section>
-
-
-
-
-
-    {% comment %}
-        <div class="tootThread" id="displayTootThread">
-            <div class="toot" id="displayToot">
-                <div class="author">
-                    <div class="avatar">
-                        <a href="" class="authorLink" target="_blank">
-                            <img src="" class="avatarImg" alt="" border="0" />
-                        </a>
-                    </div>
-                    <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
-                    <div class="userName">
-                        <a href="" class="authorLink" target="_blank">
-                            <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
-                        </a>
-                    </div>
-                    <div class="createdAt">
-                        <a href="" target="_blank" class="createdAtLink"></a>
-                    </div>
-                </div>
-                <div class="content"></div>
-                <div class="bodyText"></div>
-            </div>
-            <div class="tootReplies">
-                <div class="tootReply" id="displayTootTemplate">
-                    <div class="author authorReply">
-                        <div class="avatar">
-                            <a href="" class="authorLink" target="_blank">
-                                <img src="" class="avatarImg avatarImgReply" alt="" border="0" />
-                            </a>
-                        </div>
-                        <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
-                        <div class="userName">
-                            <a href="" class="authorLink" target="_blank">
-                                <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
-                            </a>
-                        </div>
-                        <div class="createdAt">
-                            <a href="" X-target="_blank" class="createdAtLink"></a>
-                            <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;">Hide Post</a></span>
-                        </div>
-                    </div>
-                    <div class="content"></div>
-                <div class="tootSubReplies"></div>
-                </div>
-            </div>
-            <div id="showTootTemplate" class="showTootTemplate">
-                <div class="showReplies" >
-                    <a href="" onclick="clickOnReplyShow(this);return false;">Show Post</a>
-                </div>
-            </div>
-        </div>
-    {% endcomment %}
-
 {% else %}
-<section id="comments" class="article-content">
-  <h2>Comments</h2>
-  <p>This post does not have a link to the Fediverse or Mastodon.  Overtime I will add a link. Until that time, comments have been turned off</p>
-</section>
+    <section id="comments" class="article-content">
+    <h2>Comments</h2>
+    <p>This post does not have a link to the Fediverse or Mastodon.  Overtime I will add a link. Until that time, comments have been turned off</p>
+    </section>
 {% endif %}
