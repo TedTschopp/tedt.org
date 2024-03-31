@@ -244,35 +244,91 @@
         function createCarousel(media_attachments, id) {
             console.log("createCarousel()");
             console.log(media_attachments);
-            var carousel = $('<div>', { id: 'carousel-'+id, class: 'carousel slide' });
-            var indicators = $('<div>', { class: 'carousel-indicators' }).appendTo(carousel);
-            var inner = $('<div>', { class: 'carousel-inner' }).appendTo(carousel);
-            var controlPrev = $('<button>', { class: 'carousel-control-prev', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'prev' }).appendTo(carousel);
-            var controlNext = $('<button>', { class: 'carousel-control-next', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'next' }).appendTo(carousel);
+
+            var carousel = document.createElement('div');
+            carousel.id = 'carousel-' + id;
+            carousel.className = 'carousel slide';
+
+            var indicators = document.createElement('div');
+            indicators.className = 'carousel-indicators';
+            carousel.appendChild(indicators);
+
+            var inner = document.createElement('div');
+            inner.className = 'carousel-inner';
+            carousel.appendChild(inner);
+
+            var controlPrev = document.createElement('button');
+            controlPrev.className = 'carousel-control-prev';
+            controlPrev.type = 'button';
+            controlPrev.dataset.bsTarget = '#carousel-' + id;
+            controlPrev.dataset.bsSlide = 'prev';
+            carousel.appendChild(controlPrev);
+
+            var controlNext = document.createElement('button');
+            controlNext.className = 'carousel-control-next';
+            controlNext.type = 'button';
+            controlNext.dataset.bsTarget = '#carousel-' + id;
+            controlNext.dataset.bsSlide = 'next';
+            carousel.appendChild(controlNext);
 
             for (var i = 0; i < media_attachments.length; i++) {
-                // TODO: Use Blur Hashes to create placeholder images
                 var image_description = media_attachments[i].description;
                 var image_url = media_attachments[i].url;
                 var image_id = media_attachments[i].id;
                 var blurhash = media_attachments[i].meta.blurhash;
-                //var blured_image = getImageFromBlurHash(blurhash);
 
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.dataset.bsTarget = '#carousel-' + id;
+                button.dataset.bsSlideTo = i;
+                button.className = i === 0 ? 'active' : '';
+                button.setAttribute('aria-label', 'Slide ' + (i + 1));
+                indicators.appendChild(button);
 
-                $('<button>', { type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide-to': i, class: i === 0 ? 'active' : '', 'aria-label': 'Slide ' + (i + 1) }).appendTo(indicators);
+                var item = document.createElement('div');
+                item.className = 'carousel-item' + (i === 0 ? ' active' : '');
+                inner.appendChild(item);
 
-                var item =    $('<div>', { class: 'carousel-item' + (i === 0 ? ' active' : '') }).appendTo(inner);
-                              $('<img>', { src: image_url, id: image_id, class: 'd-block w-100', alt: image_description }).appendTo(item);
-                var caption = $('<div>', { class: 'carousel-caption d-none d-md-block' }).appendTo(item);
-                              $('<p>', { text: 'Slide label ' + (i + 1) , class: 'p5'}).appendTo(caption);
-                              $('<p>', { text: image_description + (i + 1) }).appendTo(caption);
+                var img = document.createElement('img');
+                img.src = image_url;
+                img.id = image_id;
+                img.className = 'd-block w-100';
+                img.alt = image_description;
+                item.appendChild(img);
+
+                var caption = document.createElement('div');
+                caption.className = 'carousel-caption d-none d-md-block';
+                item.appendChild(caption);
+
+                var p1 = document.createElement('p');
+                p1.textContent = 'Slide label ' + (i + 1);
+                p1.className = 'p5';
+                caption.appendChild(p1);
+
+                var p2 = document.createElement('p');
+                p2.textContent = image_description + (i + 1);
+                caption.appendChild(p2);
             }
 
-            $('<span>', { class: 'carousel-control-prev-icon', 'aria-hidden': 'true' }).appendTo(controlPrev);
-            $('<span>', { class: 'visually-hidden', text: 'Previous' }).appendTo(controlPrev);
+            var spanPrevIcon = document.createElement('span');
+            spanPrevIcon.className = 'carousel-control-prev-icon';
+            spanPrevIcon.setAttribute('aria-hidden', 'true');
+            controlPrev.appendChild(spanPrevIcon);
 
-            $('<span>', { class: 'carousel-control-next-icon', 'aria-hidden': 'true' }).appendTo(controlNext);
-            $('<span>', { class: 'visually-hidden', text: 'Next' }).appendTo(controlNext);
+            var spanPrevText = document.createElement('span');
+            spanPrevText.className = 'visually-hidden';
+            spanPrevText.textContent = 'Previous';
+            controlPrev.appendChild(spanPrevText);
+
+            var spanNextIcon = document.createElement('span');
+            spanNextIcon.className = 'carousel-control-next-icon';
+            spanNextIcon.setAttribute('aria-hidden', 'true');
+            controlNext.appendChild(spanNextIcon);
+
+            var spanNextText = document.createElement('span');
+            spanNextText.className = 'visually-hidden';
+            spanNextText.textContent = 'Next';
+            controlNext.appendChild(spanNextText);
 
             return carousel;
         }
