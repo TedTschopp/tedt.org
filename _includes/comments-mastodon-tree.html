@@ -163,6 +163,8 @@
          */        
         // TODO: display or link to attachments
         function displayToot(arr, element) {
+            console.log("displayToot()");
+            console.log(arr);
             // var displayJson = JSON.stringify(arr, null, 2);
             // handle missing / alternate variables
             if (!arr.account) {
@@ -297,7 +299,8 @@
          * @returns {HTMLElement} The HTML element of the comment.
          */        
         function displayTootReplies(threadArr, element) {
-            // console.log(threadArr);
+            console.log("displayTootReplies()");
+            console.log(threadArr);
             // var displayJson = JSON.stringify(arr, null, 2);
             var arr;
             //console.log(baseElement);
