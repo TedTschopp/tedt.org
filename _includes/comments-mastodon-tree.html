@@ -14,24 +14,27 @@
         <noscript>You need JavaScript to view the comments.</noscript>
     </section>
     <style>
-        .tootThread + .card{
+        .tootThread + .card {
             border-bottom-right-radius: 0 !important;
+            border-top: 0 !important;
+            border-bottom: 0 !important;
         }
 
         /* .tootReply { */
         #displayTootThread .displayTootAndReplies {
             border-left: 1px solid var(--bs-border-color);
             padding-left: 1rem;
-
         }
+
         .displayTootAndReplies .card {
-            border-bottom-left-radius: 0 !important;
-            border-top-left-radius: 0 !important;
+            border-bottom-left-radius:  0 !important;
+            border-top-left-radius:     0 !important;
             border-bottom-right-radius: 0 !important;
-            border-top-right-radius: 0 !important;        }
+            border-top-right-radius:    0 !important;        
+        }
 
         .card:not(:last-child) {
-            border-bottom-left-radius: 0 !important;
+            border-bottom-left-radius:  0 !important;
         }      
     </style>
     <script language="JavaScript">
@@ -603,117 +606,117 @@
     //-->
     </script>
     <section id="displayTootThread" class="article-content">
-    <div class="row g-0 p-0 m-0 d-flex align-items-start tootThread"  id="displayToot">
-        <div class="card p-0 m-0">
-            <div class="card-header">
+        <div class="row g-0 p-0 m-0 d-flex align-items-start tootThread"  id="displayToot">
+            <div class="card p-0 m-0">
+                <div class="card-header">
+                    <div class="card-body p-0 m-0">
+                        <div class="row w-100 p-0 m-0">
+                            <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
+                                <a rel="external nofollow" href="" class="avatar-link authorLink">
+                                    <img class="m-1 avatarImg avatar" style="height: 2.5em;" src="">
+                                </a>
+                            </div>
+                            <div class="col-6"> 
+                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                            </div>
+                            <div class="col-5 createdAt"> 
+                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body p-0 m-0">
-                    <div class="row w-100 p-0 m-0">
-                        <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
-                            <a rel="external nofollow" href="" class="avatar-link authorLink">
-                                <img class="m-1 avatarImg avatar" style="height: 2.5em;" src="">
-                            </a>
+                    <div class="row w-100 p-0 m-0 ">
+                        <p class="card-title p-3 m-0 text-start content"></p>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <div class="row w-100">
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-eye"></i>
                         </div>
-                        <div class="col-6"> 
-                            <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
-                            <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-reply"></i>
                         </div>
-                        <div class="col-5 createdAt"> 
-                            <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-retweet"></i>
+                        </div>
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-eye-slash"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-body p-0 m-0">
-                <div class="row w-100 p-0 m-0 ">
-                    <p class="card-title p-3 m-0 text-start content"></p>
-                </div>
-            </div>
-            <div class="card-footer text-muted">
-                <div class="row w-100">
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-reply"></i>
-                    </div>
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-retweet"></i>
-                    </div>
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-bookmark"></i>
-                    </div>
-                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-eye-slash"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body p-0 m-0">
-                <div class="row w-100 p-0 m-0 tootReplies">
-                    <div class="row g-0 p-0 m-0 d-flex align-items-start tootReply" id="displayTootTemplate">
-                        <div class="card p-0 m-0">
-                            <div class="card-header ">
+                <div class="card-body p-0 m-0">
+                    <div class="row w-100 p-0 m-0 tootReplies">
+                        <div class="row g-0 p-0 m-0 d-flex align-items-start tootReply" id="displayTootTemplate">
+                            <div class="card p-0 m-0">
+                                <div class="card-header ">
+                                    <div class="card-body p-0 m-0">
+                                        <div class="row w-100 p-0 m-0">
+                                            <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
+                                                <a rel="external nofollow" href="" class="avatar-link authorLink">
+                                                    <img class="m-1 avatarImg avatar" style="height: 2.5em;" src="">
+                                                </a>
+                                            </div>                                                
+                                            <div class="col-6"> 
+                                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                                <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                                            </div>
+                                            <div class="col-5 createdAt"> 
+                                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card-body p-0 m-0">
-                                    <div class="row w-100 p-0 m-0">
-                                        <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
-                                            <a rel="external nofollow" href="" class="avatar-link authorLink">
-                                                <img class="m-1 avatarImg avatar" style="height: 2.5em;" src="">
-                                            </a>
-                                        </div>                                                
-                                        <div class="col-6"> 
-                                            <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
-                                            <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
+                                    <div class="row w-100 p-0 m-0 ">
+                                        <p class="card-title p-3 m-0 text-start content"></p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <div class="row w-100">
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;"><i class="fa-solid fa-eye"></i></a></span>
                                         </div>
-                                        <div class="col-5 createdAt"> 
-                                            <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-reply"></i>
+                                        </div>
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-retweet"></i>
+                                        </div>
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-bookmark"></i>
+                                        </div>
+                                        <div class="col-2 text-center d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-eye-slash"></i>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-body p-0 m-0">
-                                <div class="row w-100 p-0 m-0 ">
-                                    <p class="card-title p-3 m-0 text-start content"></p>
+                                <div class="card-body p-0 m-0">
+                                    <div class="row w-100 p-0 m-0 tootSubReplies">
+                                        <!-- insert nested card.-->
+                                    </div>  
                                 </div>
-                            </div>
-                            <div class="card-footer text-muted">
-                                <div class="row w-100">
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;"><i class="fa-solid fa-eye"></i></a></span>
-                                    </div>
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-reply"></i>
-                                    </div>
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-retweet"></i>
-                                    </div>
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </div>
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-bookmark"></i>
-                                    </div>
-                                    <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-eye-slash"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body p-0 m-0">
-                                <div class="row w-100 p-0 m-0 tootSubReplies">
-                                    <!-- insert nested card.-->
-                                </div>  
                             </div>
                         </div>
-                    </div>
-                </div>  
+                    </div>  
+                </div>
             </div>
         </div>
-    </div>
     </section>
 {% else %}
     <section id="comments" class="article-content">
-    <h2>Comments</h2>
-    <p>This post does not have a link to the Fediverse or Mastodon.  Overtime I will add a link. Until that time, comments have been turned off</p>
+        <h2>Comments</h2>
+        <p>This post does not have a link to the Fediverse or Mastodon.  Overtime I will add a link. Until that time, comments have been turned off</p>
     </section>
 {% endif %}
