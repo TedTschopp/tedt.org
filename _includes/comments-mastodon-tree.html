@@ -242,6 +242,8 @@
         }
 
         function createCarousel(media_attachments, id) {
+            console.log("createCarousel()");
+            console.log(media_attachments);
             var carousel = $('<div>', { id: 'carousel-'+id, class: 'carousel slide' });
             var indicators = $('<div>', { class: 'carousel-indicators' }).appendTo(carousel);
             var inner = $('<div>', { class: 'carousel-inner' }).appendTo(carousel);
