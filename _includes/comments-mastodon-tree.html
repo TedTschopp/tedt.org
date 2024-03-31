@@ -231,6 +231,50 @@
         var previousTootId = -1;
         var previousParentTootId = -1;
 
+        function getImageFromBlurHash(blurhash) {
+            const pixels = decode(blurhash, width, height);
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const imageData = ctx.createImageData(width, height);
+            imageData.data.set(pixels);
+            ctx.putImageData(imageData, 0, 0);
+            return canvas.toDataURL();
+        }
+
+        function createCarousel(media_attachments, id) {
+            var carousel = $('<div>', { id: 'carousel-'+id, class: 'carousel slide' });
+            var indicators = $('<div>', { class: 'carousel-indicators' }).appendTo(carousel);
+            var inner = $('<div>', { class: 'carousel-inner' }).appendTo(carousel);
+            var controlPrev = $('<button>', { class: 'carousel-control-prev', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'prev' }).appendTo(carousel);
+            var controlNext = $('<button>', { class: 'carousel-control-next', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'next' }).appendTo(carousel);
+
+            for (var i = 0; i < 3; i++) {
+                // TODO: Use Blur Hashes to create placeholder images
+                var image_description = media_attachments[i].description;
+                var image_url = media_attachments[i].url;
+                var image_id = media_attachments[i].id;
+                var blurhash = media_attachments[i].meta.blurhash;
+                var blured_image = getImageFromBlurHash(blurhash);
+
+
+                $('<button>', { type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide-to': i, class: i === 0 ? 'active' : '', 'aria-label': 'Slide ' + (i + 1) }).appendTo(indicators);
+
+                var item =    $('<div>', { class: 'carousel-item' + (i === 0 ? ' active' : '') }).appendTo(inner);
+                              $('<img>', { src: image_url, id: image_id, class: 'd-block w-100', alt: image_description }).appendTo(item);
+                var caption = $('<div>', { class: 'carousel-caption d-none d-md-block' }).appendTo(item);
+                              $('<p>', { text: 'Slide label ' + (i + 1) , class: 'p5'}).appendTo(caption);
+                              $('<p>', { text: image_description + (i + 1) }).appendTo(caption);
+            }
+
+            $('<span>', { class: 'carousel-control-prev-icon', 'aria-hidden': 'true' }).appendTo(controlPrev);
+            $('<span>', { class: 'visually-hidden', text: 'Previous' }).appendTo(controlPrev);
+
+            $('<span>', { class: 'carousel-control-next-icon', 'aria-hidden': 'true' }).appendTo(controlNext);
+            $('<span>', { class: 'visually-hidden', text: 'Next' }).appendTo(controlNext);
+
+            return carousel;
+        }
+
 
         /**
          * Calculates the time elapsed since a given date and returns a string representing this duration.
@@ -439,6 +483,14 @@
                 displayToot.id = arr.id; // new for trees
                 displayToot.className = "displayTootAndReplies";
                 //ge("author").style.display = "grid";
+
+                if (arr.media_attachments && arr.media_attachments.length > 0) {
+                    var attachments = createCarousel(arr.media_attachments, arr.id);
+                    ge("attachments").appendChild(attachments);
+                } else {
+                    ge("attachments").style.display = "none";
+                }
+
                 ge("authorLink").href = arr.account.url;
                 ge("avatarImg").src = "";
                 ge("avatarImg").src = arr.account.avatar;
@@ -449,7 +501,7 @@
                 ge("createdAtLink").href = "#url=" + arr.url; // blorg
                 var links = displayToot.getElementsByClassName("authorLink");
                 for (var n = 0; n < links.length; n++) {
-                links[n].href = arr.account.url;
+                    links[n].href = arr.account.url;
                 }
             } else {
                 // ge("author").style.display = "none";
