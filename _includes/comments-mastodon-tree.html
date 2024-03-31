@@ -254,7 +254,7 @@
                 var image_url = media_attachments[i].url;
                 var image_id = media_attachments[i].id;
                 var blurhash = media_attachments[i].meta.blurhash;
-                var blured_image = getImageFromBlurHash(blurhash);
+                //var blured_image = getImageFromBlurHash(blurhash);
 
 
                 $('<button>', { type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide-to': i, class: i === 0 ? 'active' : '', 'aria-label': 'Slide ' + (i + 1) }).appendTo(indicators);
