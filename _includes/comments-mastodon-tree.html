@@ -250,7 +250,7 @@
             var controlPrev = $('<button>', { class: 'carousel-control-prev', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'prev' }).appendTo(carousel);
             var controlNext = $('<button>', { class: 'carousel-control-next', type: 'button', 'data-bs-target': '#carousel-'+id, 'data-bs-slide': 'next' }).appendTo(carousel);
 
-            for (var i = 0; i < 3; i++) {
+            for (var i = 0; i < media_attachments.length; i++) {
                 // TODO: Use Blur Hashes to create placeholder images
                 var image_description = media_attachments[i].description;
                 var image_url = media_attachments[i].url;
