@@ -206,6 +206,15 @@
             }
             // ge('authorLink').href = arr.account.url;
             displayToot.id = arr.id; // new for trees
+
+            if (arr.media_attachments && arr.media_attachments.length > 0) {
+                var attachments = createCarousel(arr.media_attachments, arr.id);
+                ge("attachments").appendChild(attachments);
+            } else {
+                ge("attachments").style.display = "none";
+            }
+
+
             ge("avatarImg").src = "";
             ge("avatarImg").src = arr.account.avatar;
             ge("displayNameSpan").innerHTML = arr.account.display_name;
