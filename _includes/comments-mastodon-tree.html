@@ -263,7 +263,7 @@
             carousel.appendChild(indicators);
 
             var inner = document.createElement('div');
-            inner.className = 'carousel-inner';
+            inner.className = 'carousel-inner ratio ratio-16x9';
             carousel.appendChild(inner);
 
             var controlPrev = document.createElement('button');
@@ -295,13 +295,13 @@
                 indicators.appendChild(button);
 
                 var item = document.createElement('div');
-                item.className = 'carousel-item' + (i === 0 ? ' active' : '');
+                item.className = 'carousel-item' + (i === 0 ? ' active' : '') + ' d-flex align-items-center justify-content-center ';
                 inner.appendChild(item);
 
                 var img = document.createElement('img');
                 img.src = image_url;
                 img.id = image_id;
-                img.className = 'object-fit-cover ratio ratio-16x9';
+                img.className = 'object-fit-cover img-fluid';
                 img.alt = image_description;
                 item.appendChild(img);
 
