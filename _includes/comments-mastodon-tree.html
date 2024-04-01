@@ -256,7 +256,7 @@
 
             var carousel = document.createElement('div');
             carousel.id = 'carousel-' + id;
-            carousel.className = 'carousel slide';
+            carousel.className = 'carousel slide d-flex align-items-center justify-content-center';
 
             var indicators = document.createElement('div');
             indicators.className = 'carousel-indicators';
@@ -283,6 +283,8 @@
             for (var i = 0; i < media_attachments.length; i++) {
                 var image_description = media_attachments[i].description;
                 var image_url = media_attachments[i].url;
+                var preview_url = media_attachments[i].preview_url;
+
                 var image_id = media_attachments[i].id;
                 var blurhash = media_attachments[i].meta.blurhash;
 
@@ -295,7 +297,7 @@
                 indicators.appendChild(button);
 
                 var item = document.createElement('div');
-                item.className = 'carousel-item' + (i === 0 ? ' active' : '') + ' d-flex align-items-center justify-content-center ';
+                item.className = 'carousel-item' + (i === 0 ? ' active' : '');
                 inner.appendChild(item);
 
                 var img = document.createElement('img');
@@ -316,6 +318,7 @@
 
                 var p2 = document.createElement('p');
                 p2.textContent = image_description + (i + 1);
+                p2.className = '';
                 caption.appendChild(p2);
             }
 
