@@ -197,7 +197,7 @@ links:
     # Indie Web Camp
   - Name: Indieweb
     URL: https://indieweb.org/User:Www.tedt.org
-    Icon-Class: fa-solid fa-blog
+    Icon-Class: fa-regular fa-window-maximize
     Category: 'About Me'
     # Keybase
   - Name: Keybase
