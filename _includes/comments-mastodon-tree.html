@@ -44,11 +44,7 @@
                 <div class="row w-100 p-0 m-0 attachments">
 <!-- ****************************** -->
                     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card-group">
@@ -60,7 +56,6 @@
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
-                                    {% comment %}
                                     <div class="card">
                                         <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-002.webp" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -77,7 +72,6 @@
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
-                                    {% endcomment %}
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -98,7 +92,6 @@
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
-                                    {% comment %}
                                     <div class="card">
                                         <img src="https://tedt.org/img/Gamma-World/Backdrops/Beach-003.webp" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -107,7 +100,6 @@
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
-                                    {% endcomment %}
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -138,7 +130,13 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
                         </div>
+                        {% comment %}
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -147,6 +145,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                        {% endcomment %}
                     </div>
 <!-- ****************************** -->
 
@@ -711,7 +710,7 @@
                 ge("userNameSpan").innerHTML = "@" + arr.account.username;
                 ge("instanceNameSpan").innerHTML = "@" + instanceName;
                 ge("createdAtLink").innerHTML = timeSince(arr.created_at);
-                ge("createdAtLink").href = "#url=" + arr.url; // blorg
+                ge("createdAtLink").href = "#url=" + arr.url; // blog
                 var links = displayToot.getElementsByClassName("authorLink");
                 for (var n = 0; n < links.length; n++) {
                     links[n].href = arr.account.url;
@@ -730,7 +729,7 @@
             if (arr.in_reply_to_id) {
                 var potentialParentElement = document.getElementById(arr.in_reply_to_id);
                 if (potentialParentElement) {
-                //blorg
+                //blog
                 potentialParentElement.appendChild(displayToot);
                 }
             }
