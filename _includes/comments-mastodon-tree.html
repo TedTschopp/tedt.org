@@ -24,24 +24,23 @@
     .card:not(:last-child) {
         border-bottom-left-radius:  0 !important;
     }
+
+
+    /* Indicators */
+
     .carousel .carousel-indicators li {  
         background-color: gray; 
     }
     .carousel .carousel-indicators li.active { 
         background-color: var(--primary); 
     }
-    /* Indicators */
-
     .carousel-indicators [data-bs-target] {
         width: 10px;
         height: 10px;
         border-radius: 100%;
-        border: 2px solid  rgb(110, 6, 110);
     }
-
     .carousel-indicators .active {
         opacity: 1;
-        background-color: rgb(110, 6, 110)
     }
 
 
@@ -92,7 +91,6 @@
                 <div class="row w-100 p-0 m-0 attachments">
 <!-- ****************************** -->
                     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card-group">
@@ -178,7 +176,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-indicators">
+                            <div class="carousel-indicators row w-100 p-0 m-0 ">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
