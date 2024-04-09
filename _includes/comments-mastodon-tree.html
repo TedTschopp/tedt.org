@@ -1,6 +1,54 @@
 
 {% if page.mastodon-post-id != null or page.mastodon-post-id != empty %}
 
+<style>
+    .tootThread + .card {
+        border-bottom-right-radius: 0 !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+    }
+
+    /* .tootReply { */
+    #displayTootThread .displayTootAndReplies {
+        border-left: 1px solid var(--bs-border-color);
+        padding-left: 1rem;
+    }
+
+    .displayTootAndReplies .card {
+        border-bottom-left-radius:  0 !important;
+        border-top-left-radius:     0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-right-radius:    0 !important;        
+    }
+
+    .card:not(:last-child) {
+        border-bottom-left-radius:  0 !important;
+    }
+    .carousel .carousel-indicators li {  
+        background-color: gray; 
+    }
+    .carousel .carousel-indicators li.active { 
+        background-color: var(--primary); 
+    }
+    /* Indicators */
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: 2px solid  rgb(110, 6, 110);
+    }
+
+    .carousel-indicators .active {
+        opacity: 1;
+        background-color: rgb(110, 6, 110)
+    }
+
+
+
+</style>
+
+
     <section id="comments" class="article-content">
         <h2>Comments</h2>
         <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
@@ -40,7 +88,7 @@
                     <p class="card-title p-3 m-0 text-start content"></p>
                 </div>
             </div>
-            <div class="card-body p-0 m-0">
+            <div class="card-footer p-0 m-0">
                 <div class="row w-100 p-0 m-0 attachments">
 <!-- ****************************** -->
                     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
@@ -155,30 +203,6 @@
     </div>
 
 
-    <style>
-        .tootThread + .card {
-            border-bottom-right-radius: 0 !important;
-            border-top: 0 !important;
-            border-bottom: 0 !important;
-        }
-
-        /* .tootReply { */
-        #displayTootThread .displayTootAndReplies {
-            border-left: 1px solid var(--bs-border-color);
-            padding-left: 1rem;
-        }
-
-        .displayTootAndReplies .card {
-            border-bottom-left-radius:  0 !important;
-            border-top-left-radius:     0 !important;
-            border-bottom-right-radius: 0 !important;
-            border-top-right-radius:    0 !important;        
-        }
-
-        .card:not(:last-child) {
-            border-bottom-left-radius:  0 !important;
-        }      
-    </style>
     <script language="JavaScript">
    
         var originalAuthorId;
