@@ -29,21 +29,16 @@
     /* Indicators */
 
     .carousel-indicators [data-bs-target] {
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         border-radius: 100%;
     }
-    .carousel-indicators .active {
-        opacity: 1;
-    }
-
     .carousel-button {
-        background-color: var(--bs-primary-bg-subtle); 
+        background-color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1)) !important; 
     }
     .carousel-button.active{
-        background-color: var(--bs-primary-rgb); 
+        background-color: rgba(var(--bs-link-hover-color-rgb),var(--bs-link-opacity,1)) !important; 
     }
-
 
 </style>
 
