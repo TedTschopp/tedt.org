@@ -33,6 +33,40 @@
         height: 1rem;
         border-radius: 100%;
     }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {
+        .carousel-indicators [data-bs-target] {
+            width: 3rem;
+            height: 3rem;
+
+        }
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        .carousel-indicators [data-bs-target] {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .carousel-indicators [data-bs-target] {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        .carousel-indicators [data-bs-target] {
+            width: 1.5rem;
+            height: 1.5rem;
+
+        }
+    }
     .carousel-button {
         background-color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1)) !important; 
     }
