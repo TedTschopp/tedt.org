@@ -251,13 +251,49 @@ redirect-from:
         - [Table with Leadership skill specializations and difficulty levels](#table-with-leadership-skill-specializations-and-difficulty-levels)
   - [Mystical Aspects](#mystical-aspects)
     - [Skepticism Characteristics](#skepticism-characteristics)
-      - [Spells of the Skeptic](#spells-of-the-skeptic)
-      - [Ethereal Knowledge Areas](#ethereal-knowledge-areas)
-        - [Ethereal Archetypes](#ethereal-archetypes)
-        - [Unique Ethereal Magical Spells](#unique-ethereal-magical-spells)
+      - [Arcane Knowledge Areas](#arcane-knowledge-areas)
+        - [The Arcane Scholar](#the-arcane-scholar)
+          - [Typical Spells for the Arcane Scholar](#typical-spells-for-the-arcane-scholar)
+          - [Unique Spells for the Arcane Scholar](#unique-spells-for-the-arcane-scholar)
+        - [The Illusion Weaver](#the-illusion-weaver)
+          - [Typical Spells for the Illusion Weaver](#typical-spells-for-the-illusion-weaver)
+          - [Unique Spells for the Illusion Weaver](#unique-spells-for-the-illusion-weaver)
+        - [The Elemental Mage](#the-elemental-mage)
+          - [Typical Spells for the Elemental Mage](#typical-spells-for-the-elemental-mage)
+          - [Unique Spells for the Elemental Mage](#unique-spells-for-the-elemental-mage)
+        - [The Astral Traveler](#the-astral-traveler)
+          - [Typical Spells for the Astral Traveler](#typical-spells-for-the-astral-traveler)
+          - [Unique Spells for the Astral Traveler](#unique-spells-for-the-astral-traveler)
+        - [The Celestial Sorcerer](#the-celestial-sorcerer)
+          - [Typical Spells for the Celestial Sorcerer](#typical-spells-for-the-celestial-sorcerer)
+          - [Unique Spells for the Celestial Sorcerer](#unique-spells-for-the-celestial-sorcerer)
+        - [The Time Weaver](#the-time-weaver)
+          - [Typical Spells for the Time Weaver](#typical-spells-for-the-time-weaver)
+          - [Unique Spells for the Time Weaver](#unique-spells-for-the-time-weaver)
+        - [The Planar Gatekeeper](#the-planar-gatekeeper)
+          - [Typical Spells for the Planar Gatekeeper](#typical-spells-for-the-planar-gatekeeper)
+          - [Unique Spells for the Planar Gatekeeper](#unique-spells-for-the-planar-gatekeeper)
+        - [Typical Arcane Spells](#typical-arcane-spells)
       - [Gnosis Knowledge Areas](#gnosis-knowledge-areas)
-        - [Gnostic Archtypes](#gnostic-archtypes)
-        - [Unique Gnostic Magical Spells](#unique-gnostic-magical-spells)
+        - [The Seeker](#the-seeker)
+          - [Typical Spells for the Seeker](#typical-spells-for-the-seeker)
+          - [Unique Spells for The Seeker](#unique-spells-for-the-seeker)
+        - [The Savior](#the-savior)
+          - [Typical Spells for The Savior](#typical-spells-for-the-savior)
+          - [Unique Spells for The Savior](#unique-spells-for-the-savior)
+        - [The Rebel](#the-rebel)
+          - [Typical Spells for The Rebel](#typical-spells-for-the-rebel)
+          - [Unique Spells for The Rebel](#unique-spells-for-the-rebel)
+        - [The Martyr](#the-martyr)
+          - [Typical Spells for The Martyr](#typical-spells-for-the-martyr)
+          - [Unique Spells for The Martyr](#unique-spells-for-the-martyr)
+        - [The Chosen One](#the-chosen-one)
+          - [Typical Spells for The Chosen One](#typical-spells-for-the-chosen-one)
+          - [Unique Spells for The Chosen One](#unique-spells-for-the-chosen-one)
+        - [The Redeemer](#the-redeemer)
+          - [Typical Spells for The Redeemer](#typical-spells-for-the-redeemer)
+          - [Unique Spells for The Redeemer](#unique-spells-for-the-redeemer)
+        - [Typical Gnostic Spells](#typical-gnostic-spells)
       - [Chaos Knowledge Areas](#chaos-knowledge-areas)
         - [Chaos Archtypes](#chaos-archtypes)
         - [Unique Chaos Magical Spells](#unique-chaos-magical-spells)
@@ -2633,29 +2669,11 @@ Moving on to Gnostic magic, you delve deep into esoteric knowledge and hidden tr
 
 Then comes Chaos magic, where skepticism takes a different turn. Rather than seeking well-defined systems, you embrace the unpredictable and chaotic nature of magic itself. You find power in the fluidity of belief and the ability to shift paradigms, drawing from various traditions and symbols without becoming tied to any one of them. Your skepticism becomes a weapon against dogma, allowing you to remain adaptable and open-minded.
 
-#### Spells of the Skeptic
-
-- **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
-- **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
-- **Chaos Infusion:** Harness the power of chaos to enhance unpredictability and adaptability in your spells, confounding opponents and destabilizing magical constructs.
-- **Reality Distortion:** Temporarily alter the perception of reality around you, creating illusions that challenge the senses and perceptions of others.
-- **Skeptic's Aura:** Create a field of skeptical energy that weakens or nullifies the magical effects of others within its radius.
-- **Precision Binding:** Craft intricate magical barriers or bindings with precise geometrical symbols, making them more resilient and challenging to break.
-- **Gnostic Resonance:** Establish a psychic connection with other Gnostic practitioners, allowing for the exchange of knowledge and insights.
-- **Chaos Merge:** Temporarily blend multiple magical traditions or paradigms, combining their strengths into a potent and unpredictable fusion.
-- **Analytical Recall:** Enhance your memory and recall abilities, enabling you to store and access vast amounts of magical knowledge.
-- **Skeptic's Disguise:** Conceal your magical presence from others, appearing as a non-magical individual to avoid detection or unwanted attention.
-- **Elemental Deciphering:** Analyze and understand the elemental composition of objects or magical phenomena, unraveling their intrinsic properties.
-- **Gnostic Empathy:** Develop a heightened understanding of others' emotions and intentions, aiding in negotiations and detecting hidden agendas.
-- **Chaos Confluence:** Merge the energies of chaos into your spells, enhancing their versatility and adaptability on the fly.
-- **Rational Shielding:** Create magical barriers based on logical principles, making them more resistant to manipulation or exploitation.
-- **Skeptic's Rejection:** Nullify the effects of illusions or deceptive magic, seeing through false appearances and revealing the truth.
-
 As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
 
  * * *
 
-#### Ethereal Knowledge Areas
+#### Arcane Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2664,45 +2682,160 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 </figure>
 </div>
 
-TODO: Fix this
+In the school of Arcane magic, you become a master of manipulating mystical energies and the fundamental forces of nature, reaching past the classic arts of elemental magic. This discipline equips you to weave these potent pieces of elemental energies into various forms, crafting everything from searing blasts of fire to intricate enchantments that command the elemental forces.
 
-In the realm of Ethereal magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations.
-Incantations and spellcasting become your forte, as your words resonate with the universe, giving you the ability to reshape the world around you.
+As you progress, your spellcasting becomes more precise, relying on the careful arrangement of mystical symbols and uttering incantations that align closely with the natural laws. Such rigor allows you to reshape reality, carefully adjusting your surroundings to reflect your deep understanding and command of magical forces.
 
-Yet, this path demands precision and control, for the untamed forces you wield can easily turn against you. As you seek to master the Arcane, you must cultivate inner balance and  mindfulness, attuning yourself to the interconnectedness of all things. Through encounters with fellow seekers and experienced mages, you gather wisdom, but the journey remains your
-own to chart.
+Yet, this power demands exceptional discipline and meticulous attention to detail. The potent forces you wield could lead to disaster if not handled with care. Rising through the ranks of Arcane practitioners requires a profound commitment to balance and mindfulness, maintaining a harmonious relationship with the interconnected energies that bind the cosmos.
 
-Ultimately, being an Arcane mage transcends mere power and knowledge. It is a journey of self-discovery and understanding, where you become a beacon of mystic wisdom and a guardian of the sacred secrets that shape existence itself.
+Choosing this path is not solely about gaining power; it represents a deep, analytical exploration into the mechanics of magic itself. Through this meticulous study and practice, you grow not only in power but in wisdom, becoming a beacon of knowledge and a guardian of the sacred principles that underpin the workings of Arcane magic.
 
-##### Ethereal Archetypes
+##### The Arcane Scholar
 
-- **The Arcane Scholar:** This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
-- **The Illusion Weaver:** The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
-- **The Elemental Mage:** This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.
-- **The Astral Traveler:** This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries.
-- **The Soul Binder:** The Soul Binder delves into the realm of souls and spirits, wielding powers to commune with the deceased or harnessing spectral energies in battle. They can bind souls to objects, summon ethereal allies, or even temporarily possess other beings. This archetype often grapples with moral dilemmas, as their powers touch upon the boundaries between life and death.
-- **The Celestial Sorcerer:** This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.
-- **The Time Weaver:** The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.
-- **The Planar Gatekeeper:** The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.
+This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.
 
-These Ethereal Caster archetypes bring a sense of wonder and mystique, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
+###### Typical Spells for the Arcane Scholar
 
-##### Unique Ethereal Magical Spells
+1. **Detect Magic** - Essential for identifying magical auras on objects, places, and beings, crucial in research.
+2. **Dispel Magic** - Allows for neutralization of unwanted or harmful magical effects during scholarly investigations.
+3. **Scrying** - Used to observe distant events, crucial for gathering data without physical presence.
+4. **Magic Jar** - Enables the preservation and study of souls or spirits for deep arcane analysis.
+5. **Mirror Image** - Provides protection during field research by confusing potential threats with illusory duplicates.
 
-- **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
-- **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
-- **Arcane Symphony:** Harness the harmonious energies of the cosmos to create a mesmerizing symphony of arcane power. This spell can awe and mesmerize those who hear it, potentially disrupting enemies or gathering allies to your cause.
-- **Temporal Rupture:** Temporarily disrupt the flow of time in a localized area, causing objects and individuals to move at different rates. This spell can slow down or speed up time, granting you a tactical advantage in combat or time-sensitive situations.
-- **Soul Ephemera:** Extract fragments of souls from living beings and spirits, which can be used as a source of power for other spells or stored for later use. This spell allows you to manipulate the essence of life itself.
-- **Celestial Infusion:** Draw upon the power of celestial bodies to infuse your spells with cosmic energy. This spell enhances your magical attacks, granting them the properties of stars, moons, or meteors.
-- **Planar Binding:** Open portals to other planes of existence and summon beings from different realms to aid you in your endeavors. This spell allows you to call upon extraplanar entities for assistance or knowledge.
-- **Ethereal Ward:** Create a protective barrier that shields against ethereal and magical attacks. This spell can repel or absorb mystical energies, providing a powerful defense against other spellcasters.
-- **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
-- **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
+###### Unique Spells for the Arcane Scholar
 
-These Ethereal Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
+1. **Rune Decipher** - Unlocks hidden magical meanings within ancient texts, crucial for arcane translations and understanding.
+2. **Tome Summon** - Conjures books containing arcane knowledge, providing instant access to vast scholarly resources.
+3. **Cryptic Ward** - Creates a magical barrier that only the knowledgeable can bypass, protecting valuable arcane secrets.
 
-| Difficulty        | Ethereal                                                                                                                                       |
+##### The Illusion Weaver
+
+The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.
+
+###### Typical Spells for the Illusion Weaver
+
+1. **Mirror Image** - Central for creating multiple distracting copies of oneself, enhancing deceptive capabilities.
+2. **Mage Armor** - Provides necessary protection with a less conspicuous, illusion-based shield.
+3. **Knock or Lock** - Offers the ability to silently lock or unlock doors, aiding in stealth and infiltration.
+4. **Arcane Armament** - Summons illusory weapons that can be made to seem real, perfect for threats or diversions.
+5. **Unseen Servant** - Creates an invisible force for performing tasks discreetly, aligning with the theme of manipulation without direct involvement.
+
+###### Unique Spells for the Illusion Weaver
+
+1. **Phantom Parade** - Projects realistic illusions of human activity, perfect for creating elaborate distractions.
+2. **Mind Maze** - Disorients a target by trapping their mind in an illusory labyrinth, enhancing control over the victim’s perception.
+3. **Invisible Walls** - Erects barriers that appear impassable to enemies but are merely illusions, controlling movement and tactics.
+
+##### The Elemental Mage
+
+This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.
+
+###### Typical Spells for the Elemental Mage
+
+1. **Magic Missile** - Elementally adapted shards to strike foes with precision, used to strike a foes elemental weakness.  
+2. **Shield** - Infused with elemental energies for reactive defense against elemental-based attacks, used to defend against elemental attacks.
+3. **Levitate** - Manipulates air currents to hover or move objects, demonstrating mastery over air.
+4. **Dispel Magic** - Useful in countering or dismantling adverse elemental enchantments.
+5. **Floating Disc** - Alters earth to create a floating platform, reflecting versatility in earth manipulation.
+
+###### Unique Spells for the Elemental Mage
+
+1. **Elemental Fury** - Summons a powerful combination of elemental attacks, demonstrating control over multiple natural forces.
+2. **Nature's Grasp** - Calls forth natural elements to restrain and control enemies, essential for an elemental strategist.
+3. **Storm Caller** - Conjures weather phenomena like storms, showcasing dominance over atmospheric conditions.
+
+##### The Astral Traveler
+
+This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries.
+
+###### Typical Spells for the Astral Traveler
+
+1. **Scrying** - Views distant locations or events, especially useful for exploring astral planes.
+2. **Magic Jar** - Captures or communicates with spirits, aiding in astral negotiations or studies.
+3. **Levitate** - Simulates the weightlessness of astral travel, useful for physical and spiritual journeys.
+4. **Shield** - Protects against unexpected astral or spiritual threats encountered during travels.
+5. **Unseen Servant** - Performs tasks without physical presence, mimicking astral projections.
+
+###### Unique Spells for the Astral Traveler
+
+1. **Astral Projection** - Projects the caster's spirit into the astral plane, essential for direct exploration and interaction.
+2. **Spirit Whisper** - Facilitates communication with spirits, crucial for gathering astral intelligence.
+3. **Time Fold** - Explores different temporal possibilities in the astral realm, useful for advanced astral navigation.
+
+##### The Celestial Sorcerer
+
+This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.
+
+###### Typical Spells for the Celestial Sorcerer
+
+1. **Magic Missile** - Sunlight, Moonlight, and Starlight adapeted missles that strike at their target, used to strike a foes weakness for sunlight or darkness.
+2. **Mage Armor** - Infused with celestial energies, offering enhanced protection with a cosmic touch.
+3. **Mirror Image** - Creates duplicates shimmering with celestial light, confusing foes with star-like brilliance.
+4. **Scrying** - Uses celestial alignments to enhance the viewing of distant times and places.
+5. **Shield** - Forms a barrier of cosmic energy, deflecting harm with celestial force.
+
+###### Unique Spells for the Celestial Sorcerer
+
+1. **Starfall** - Calls down celestial bodies as a form of offensive magic, manifesting the sorcerer’s cosmic connection.
+2. **Lunar Veil** - Uses the mystique of the moon to enhance stealth and mystical evasion.
+3. **Solar Flare** - Harnesses the sun’s energy to create blinding and burning effects, embodying the power of the sun
+
+##### The Time Weaver
+
+The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.
+
+
+###### Typical Spells for the Time Weaver
+
+1. **Shield** - Preemptively reacts to incoming attacks by manipulating time, offering an immediate defense.
+2. **Mage Armor** - Enhanced with time-altering energies for sustained protection.
+3. **Unseen Servant** - Accelerates tasks through subtle manipulations of time, improving efficiency.
+4. **Knock or Lock** - Uses time manipulation to freeze or accelerate mechanisms within locks.
+5. **Levitate** - Controls the speed of rise and descent, simulating slow-motion or sped-up movements.
+
+###### Unique Spells for the Time Weaver
+
+1. **Temporal Loop** - Traps enemies in repetitive time cycles, hindering their actions and strategic options.
+2. **Age Reversal** - Temporarily reverses or accelerates the aging process, useful for restoration or deterioration.
+3. **Momentary Pause** - Stops time briefly, allowing the caster to reposition or change strategies without opposition.
+
+##### The Planar Gatekeeper
+
+The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.
+
+###### Typical Spells for the Planar Gatekeeper
+
+1. **Dispel Magic** - Essential for closing or controlling unwanted planar portals and their effects.
+2. **Magic Jar** - Useful for binding and negotiating with entities from other planes.
+3. **Scrying** - Views events or locations across different planes, crucial for planar awareness.
+4. **Unseen Servant** - Summons entities from other planes to serve discreetly, demonstrating control over lesser beings.
+5. **Mage Armor** - Protects against the unique threats of cross-planar travel and encounters.
+
+###### Unique Spells for the Planar Gatekeeper
+
+1. **Portal Key** - Opens or closes gateways to other planes, fundamental for planar exploration and control.
+2. **Banish** - Forces creatures back to their native planes, critical for maintaining planar order.  This does not work spiritual creatures, which are superplanar in nature. 
+3. **Conjure Planar Ally** - Summons powerful entities for assistance, showcasing deep connections across various planes.
+
+##### Typical Arcane Spells
+
+1. **Arcane Armament** -*As you cast this spell, your hands glow with a shimmering, silvery light. Swords, bows, and other weapons materialize from thin air, each emitting a low hum of magical energy. The caster must concentrate deeply, ensuring each weapon is perfectly balanced and attuned to the intended user.*
+2. **Detect Magic** - *Upon invocation, your eyes flicker with a prismatic sheen, allowing you to see auras of various colors representing different types of magic. The air tastes slightly metallic as the presence of magic becomes apparent. Precision in focus is key, as the caster sifts through layers of mundane reality to pinpoint the magical.*
+3. **Dispel Magic** - *A sharp clap echoes from your palms as you target a spell, object, or area with the intent to neutralize magic. A ripple travels through the air, disrupting the magical weave. The caster must remain acutely aware of the strength and nature of the magic being confronted.*
+4. **Floating Disc** - *You sketch a circle in the air, and a translucent, shimmering disc emerges, floating a few feet off the ground. It hums softly, vibrating under the weight of whatever it carries. Cognizance of the disc’s weight limit and duration is essential for effective use.*
+5. **Knock or Lock** - *With a flick of your wrist, a loud, resounding knock reverberates through the air, or a soft click signifies a lock engaging. The sensory feedback is immediate and distinct, guiding the caster in understanding whether the spell has succeeded in securing or opening the way.*
+6. **Levitate** - *Your target begins to rise slowly, surrounded by a faint, blue glow. The air around feels lighter, and a gentle breeze envelops the levitating object or person. Precision in controlling the elevation and movement is crucial to maintain stability.*
+7. **Mage Armor** -*A spectral force envelops you or your chosen target, forming a shimmering shield that glistens like morning dew. The shield’s touch is cool, and it emits a calming, protective hum. Awareness of the shield’s duration and coverage is vital for the caster.*
+8. **Magic Jar** - *You project your essence into a chosen vessel, which briefly glows with a deep, ethereal blue. The transition feels like stepping into a cold stream, and the jar must be handled with care to maintain the integrity of the soul housed within.*
+9. **Magic Missile** - *Darts of pure energy spring from your fingertips, each one hissing like steam as they streak towards their targets. The sharp scent of ozone fills the air, and the caster must aim with intent and precision to ensure each missile strikes true.*
+10. **Mirror Image** - *You weave a spell that fractures your image into multiple duplicates, each mirroring your movements with a slight delay. The sound of overlapping whispers fills your ears as you must focus on the illusory movements to confuse your foes effectively.*
+11. **Scrying** - *A reflective surface before you becomes a window to another place. The edges of your vision blur as you focus on the scene, which appears accompanied by distant sounds related to the location. Maintaining the spell requires uninterrupted concentration and a clear mental image of the person or place.*
+12. **Shield** - *An invisible barrier springs up in front of you, deflecting attacks with a resonant ping. The air behind the shield feels still and safe. Quick thinking is necessary to summon the shield timely and protect against unforeseen threats.*
+13. **Unseen Servant** - *With a whispered command, a force manifests to perform tasks at your bidding. Though invisible, its presence is marked by faint sounds and slight movements in the air. The caster must remain aware of the servant’s location and actions to utilize it effectively.*
+
+
+
+| Difficulty        | Arcane                                                                                                                                       |
 |:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Trivial           | Perform a basic levitation spell on a small object.                                                                                            |
 | Simple            | Cast a protective shield around oneself to deflect minor projectiles.                                                                          |
@@ -2735,31 +2868,135 @@ In this mystical tradition, you encounter the idea of the Demiurge, an imperfect
 
 Throughout your quest, you encounter potent symbols like the Ouroboros and the Tree of Life, aiding in contemplation and meditation, guiding you towards a deeper understanding of the universe and your place in it. As you embrace this inward journey, shedding illusions and gaining profound insights, you experience a transformation that awakens the spiritual dimensions of reality within you. The Gnostic path leads you to discover the oneness that unites all beings, fostering a profound and enlightening experience of self-discovery and spiritual growth.
 
-##### Gnostic Archtypes
+##### The Seeker
 
-- **The Seeker:** This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
-- **The Savior:** The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
-- **The Rebel:** The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.
-- **The Martyr:** This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.
-- **The Chosen One:** This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.
-- **The Redeemer:** The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
+This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source.
 
-##### Unique Gnostic Magical Spells
+###### Typical Spells for the Seeker
 
-- **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
-- **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
-- **Sophia's Guidance:** Channeling the wisdom of the Divine Feminine, this spell allows you to receive guidance and intuition when facing difficult decisions or challenges on your path.
-- **Demiurge's Illusion:** By manipulating the illusions of the material world, you can create distractions or temporary alterations to the perception of others. This spell might be useful for misdirection or protection.
-- **Ouroboros' Renewal:** Utilizing the symbolism of the eternal cycle, this spell grants you the ability to rejuvenate yourself or others, healing wounds and restoring vitality.
-- **Aeonic Alignment:** Through ritual and meditation, you can align yourself with the cosmic forces of the aeons, gaining access to their power and protection.
-- **Tree of Life Manifestation:** Drawing upon the interconnectedness of all existence, this spell allows you to establish a telepathic link with others or project your thoughts across great distances.
-- **Sacred Names Enchantment:** By invoking the names of powerful divine beings, you can imbue objects with special properties or create charms for protection and luck.
-- **Divine Spark Ignition:** This spell awakens the dormant divine spark within others, triggering their spiritual awakening and the pursuit of gnosis.
-- **Gnostic Shield:** Using your knowledge of higher truths, you can create a protective shield that repels negative energies and safeguards against psychic attacks.
-- **Emanation of Light:** Channeling the divine light, you can emit a radiant glow that dispels darkness and fills the surroundings with spiritual clarity.
-- **Liberation's Embrace:** This spell grants a momentary experience of transcendence, allowing you or others to briefly escape the limitations of the material world and experience the oneness of all things.
+1. **Detect Magic** - To uncover hidden magical essences and secrets, aiding their quest for knowledge.
+2. **Clairvoyance** - Enables viewing distant or unseen locations, representing their pursuit of insight beyond the immediate physical realm.
+3. **Divination** - To gain guidance on their path to spiritual understanding, seeking answers from the divine.
+4. **Read Language** - Allows them to decipher ancient texts and runes, key for understanding esoteric wisdom.
+5. **True Seeing** - Reveals things as they truly are, bypassing illusions and gaining direct knowledge of the divine.
 
-These spells reflect the unique and profound nature of your magical abilities, inspired by the Gnostic traditions' spiritual insights and themes. Each spell involves a deep connection to the divine and the pursuit of higher knowledge, empowering you to navigate the complexities of the spiritual realm and bring about positive transformations in the world around you.
+###### Unique Spells for The Seeker
+
+1. **Aura of Revelation** - A spell that surrounds the Seeker with a radiant light, revealing hidden symbols and arcane truths in their immediate environment.
+2. **Echoes of the Past** - Allows the Seeker to perceive brief historical visions associated with a specific location, learning from the spiritual imprints left behind.
+3. **Veil of Insight** - Temporarily enhances the Seeker’s intuition, granting them increased perception and understanding, allowing deeper insights into complex mystical or philosophical problems.
+
+##### The Savior
+
+The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.
+
+###### Typical Spells for The Savior
+
+1. **Commune** - To communicate with higher powers and gain the knowledge necessary to lead and inspire others.
+2. **Telepathy** - Enables direct mind-to-mind communication, vital for guiding humanity and fostering unity.
+3. **True Seeing** - To see through the deceptions of the Demiurge and expose the truth to others.
+4. **Detect Evil & Good** - Identifies malevolent forces and benevolent spirits, crucial for their mission to liberate souls.
+5. **Third Eye** - Enhances perception and understanding of the spiritual realm, empowering their divine mission.
+
+###### Unique Spells for The Savior
+
+1. **Light of Liberation** - Emits a powerful beam of light that dispels illusions and breaks mental chains, freeing individuals from spiritual bondage.
+2. **Harmony of the Divine** - A spell that creates a harmonious aura, aligning those nearby with the Savior’s spiritual frequency, making it easier to lead and inspire them.
+3. **Shield of Faith** - Conjures a protective barrier that not only guards against physical attacks but also fortifies the resolve and spiritual strength of those within.
+
+##### The Rebel
+
+The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.
+
+###### Typical Spells for The Rebel
+
+1. **Premonitions** - Foresees potential threats and outcomes, crucial for challenging established orders.
+2. **Detect Invisible** - Reveals hidden threats and secrets, helping to uncover and dismantle oppressive systems.
+3. **Mind Probe** - To uncover the true intentions of authorities and expose falsehoods.
+4. **Telepathy** - Communicates covertly and coordinates resistance efforts effectively.
+5. **Scry** - Monitors enemy movements and plans from a distance, staying one step ahead in their quest for liberation.
+
+###### Unique Spells for The Rebel
+
+1. **Chains of Dissent** - Casts ethereal chains that bind and weaken structures or mechanisms of control, making it easier to disrupt and dismantle them.
+2. **Whisper of Rebellion** - Instills a spark of resistance and questioning in the minds of those who hear the Rebel’s voice, subtly influencing crowds or individuals.
+3. **Cloak of the Agitator** - A spell that conceals the Rebel’s identity and presence, allowing them to move freely and unnoticed among foes and oppressors.
+
+##### The Martyr
+
+This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.
+
+###### Typical Spells for The Martyr
+
+1. **Detect Emotions** - Understands and empathizes with the suffering of others, strengthening their resolve to sacrifice.
+2. **Divination** - Seeks guidance on the path of sacrifice and understanding of the greater good.
+3. **Commune** - Connects with divine entities for reassurance and support in their destined path.
+4. **Premonitions** - Anticipates the consequences of their sacrifice, preparing themselves spiritually.
+5. **True Seeing** - Perceives the ultimate truth and reality beyond the material, affirming their faith and purpose.
+
+###### Unique Spells for The Martyr
+
+1. **Sacrificial Grace** - When cast, this spell transfers the Martyr’s vitality to heal or empower others, symbolizing their ultimate sacrifice.
+2. **Aura of Serenity** - Emits a calming aura that pacifies hostility around the Martyr, reflecting their peaceful acceptance of fate and inspiring others to embrace their teachings.
+3. **Echo of the Eternal** - A spell that preserves the voice or message of the Martyr, allowing it to be heard by future generations even after their demise.
+
+
+##### The Chosen One
+
+This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.
+
+###### Typical Spells for The Chosen One
+
+1. **Find the Path** - Discerns their unique destiny and the best route towards fulfilling it.
+2. **Third Eye** - Opens their perception to hidden realms and deeper truths, necessary for understanding their special role.
+3. **Read Language** - Interprets prophetic texts and divine communications that are key to their destiny.
+4. **Divination** - Seeks clarity on their personal quest and the challenges they will face.
+5. **Dreamwalk** - Explores dreamscapes for signs and guidance related to their divine purpose.
+
+###### Unique Spells for The Chosen One
+
+1. **Destiny’s Call** - Reveals the next critical step in the Chosen One’s quest, providing clarity and direction when they are uncertain.
+2. **Mark of the Chosen** - Imbues the Chosen One with a celestial mark that enhances their authority and charisma, compelling others to recognize and follow their lead.
+3. **Barrier of Fate** - Creates a mystical shield that selectively prevents influences or actions that could divert the Chosen One from their destined path.
+
+
+##### The Redeemer
+
+The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.
+
+###### Typical Spells for The Redeemer
+
+1. **Detect Emotions** - Senses the emotional states of others to better understand and help them.
+2. **Telepathy** - Communicates guidance and offers support directly through thought, facilitating deeper connections.
+3. **Detect Evil & Good** - Identifies negative influences and the potential for goodness within individuals.
+4. **Mind Probe** - Helps in understanding the troubles and blockages in others’ minds, aiding in their spiritual healing.
+5. **Commune** - Connects with divine forces to obtain the wisdom necessary to guide others to enlightenment.
+
+###### Unique Spells for The Redeemer
+
+1. **Light of Atonement** - Illuminates the hidden guilt or burdens within individuals, encouraging confession and emotional release, aiding in their spiritual redemption.
+2. **Bond of Redemption** - Forges a psychic link between the Redeemer and another, allowing the Redeemer to take on and alleviate their spiritual or psychological pain.
+3. **Veil of Forgiveness** - A spell that softens hearts and opens minds, making those affected more receptive to the Redeemer’s efforts to guide them away from darkness.
+
+##### Typical Gnostic Spells
+
+1. **Augury** - *The caster feels a subtle thrum in the air, their fingers tingling as they toss bones, stones, or cards. The patterns they form whisper of potential outcomes, urging caution or encouraging action. The caster must remain open and detached, allowing the energies to guide without personal bias.*
+2. **Clairvoyance** - *The caster’s eyes cloud over with a silver sheen as distant places and people come into crystal-clear view, presented as if on a misty pane. Sounds, smells, and even textures can be faintly perceived. The caster needs to concentrate deeply, maintaining the spell by envisioning their target vividly.*
+3. **Commune** - *Whispers fill the caster’s ears, a chorus of voices from another plane. Each word sends a shiver down their spine, filling the room with a cold, otherworldly presence. The caster must ask questions clearly and be prepared for truths that might disturb the soul.*
+4. **Detect Emotions** - *The caster senses emotions as colors swirling around others, with hues deepening and fading with each mood. This requires the caster to be empathetic, interpreting these auras accurately while shielding their own feelings.*
+5. **Detect Evil & Good** - *An invisible force tugs at the caster's senses, guiding them towards the presence of good or evil. The air might taste metallic or smell sweet, indicating the nature of nearby entities. Focus is essential, as this spell can attract unwanted attention from detected beings.*
+6. **Detect Invisible** - *The caster's eyes shimmer with a pale light, revealing outlines of hidden or invisible creatures and objects. The outlines might appear as subtle glows or faint vibrations in the air. Maintaining this vision demands mental strength, as the unseen forces often resist detection.*
+7. **Detect Magic** - *Magical auras pulse and glow around enchanted items, spells, or creatures, visible only to the caster. These auras might emit a soft hum or a distinct odor. The caster must distinguish between different magical signatures, which requires knowledge and concentration.*
+8. **Divination** - *The air around the caster vibrates with the power of divination, their voice echoing slightly as if in a vast cave. The truth of a specific goal or activity reveals itself in fragmented visions that require interpretation. Patience and understanding are crucial.*
+9. **Dreamwalk** - *The caster's body remains still, their breath slow, as their spirit walks in the dreamscape. This realm is vivid, filled with sounds and sights that blend reality and imagination. The caster must remember their purpose and path, as the dream world is enticing and deceptive.*
+10. **Find the Path** - *A faint, glowing trail stretches out before the caster's eyes, leading them through twists and turns toward their destination. The path sometimes pulses brighter, urging on or warning. Alertness to the environment is needed as the path does not shield from physical dangers.*
+11. **Mind Probe** - *The caster’s fingertips tingle as they reach into the mind of another, pulling thoughts and memories into view like threads from a tapestry. This intrusion is often resisted, so the caster must be both subtle and careful not to leave mental scars.*
+12. **Premonitions** - *A sudden shiver passes through the caster, images and sensations of future events flashing before their eyes. These glimpses are fleeting and can be emotionally draining, requiring the caster to remain calm and discerning.*
+13. **Read Language** - *Runes and scripts previously incomprehensible begin to make sense, as if the words are translating themselves on the page. The caster feels a buzz of understanding, but must concentrate to maintain the flow of translation.*
+14. **Scry** - *A pool of water or a crystal ball clouds before clearing, showing distant happenings in its depths. The caster’s senses extend through the medium, experiencing distant noises and voices as if through water. The link is fragile and demands undivided attention.*
+15. **Telepathy** - *The caster’s mind opens, thoughts and words flowing freely to another’s mind without sound. This silent conversation can feel invasive, so respect and discretion are necessary. It also requires the caster to guard their own thoughts.*
+16. **Third Eye** - *An invisible eye opens on the caster's forehead, granting them sight beyond normal vision, revealing hidden truths and layers of reality. This sight can be overwhelming, necessitating mental fortitude to process the extra sensory information.*
+17. **True Seeing** - *Reality peels back for the caster, revealing illusions, hidden things, and the true form of magical deceptions. The clarity is almost blinding, and discerning its truth requires wisdom to interpret what is revealed without prejudice.*
 
 Here's a table describing tasks someone from the Gnostic magical practice might do for each difficulty level:
 
@@ -3098,7 +3335,7 @@ In your pursuit of mastering Metaphysics, you realize that these abilities go be
 - **Temporal Echo:** By tapping into the flow of time, you can leave a trace of your consciousness in the past or future, allowing you to observe events unfolding in those moments and interact with them indirectly.
 - **Mindforge:** Mindforge empowers you to create and shape constructs using pure thought. These constructs can serve various purposes, from guardians and defenders to tools and companions.
 - **Divination Nexus:** This powerful spell grants you a heightened sense of precognition, allowing you to see potential outcomes and the ripple effects of your actions, aiding in decision-making.
-- **Ethereal Embrace:** With Ethereal Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
+- **Ethereal Embrace:** With Arcane Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
 - **Psionic Rift:** This spell opens a temporary gateway to other planes or distant locations, enabling you to gather knowledge or transport yourself and others instantaneously.
 - **Harmonic Resonance:** Harmonic Resonance aligns the energy of the mind and body, promoting healing and restoration, and even mending psychic wounds caused by mental attacks or trauma.
 - **Foresight's Grace:** By invoking Foresight's Grace, you grant yourself or others heightened awareness, reflexes, and intuition, enhancing their abilities during critical moments.
