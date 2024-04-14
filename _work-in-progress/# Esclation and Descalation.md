@@ -1,4 +1,4 @@
-# Escalation and Deescalation
+# Escalation and Deescalation: How to add extend conflict beyond combat
 
 One of my favorite rules I have run into is the Dogs in the Vineward's rule of Escalation.  The reason I like it is that it means that conflict is both a social as well as physical problem.  In the Märchen Engine, I am trying to expand TTRPGs to downplay physical conflict and emphasize social, intellectual, and magical conflict.
 
@@ -28,83 +28,135 @@ However, just like escalation, deescalation carries its own set of challenges an
 
 Ultimately, the Deescalation rule underscores the importance of seeking peaceful solutions, highlighting the moral complexity of conflict resolution and the potential consequences of choosing violence over diplomacy. It adds depth and nuance to gameplay, reflecting the diverse range of approaches characters can take in navigating challenging situations within the game world.
 
-### **Level -4: Total War/Direct Conflict**
+## Escalation and Deescalation 
 
-- Description: Open, direct conflict with the intent to harm, conquer, or annihilate. No room for negotiation or diplomacy.
-- Mechanics: Combat rules are fully engaged, with potential for lethal outcomes. Highest risk of character death or severe consequences.
-- Narrative: Situations at this level often involve battles, standoffs, or situations where all diplomatic avenues have failed.
-- Cost to Deescalate Conflict: Significant sacrifices or concessions must be made, potentially including surrendering territories, relinquishing power, or making amends that are costly. Parties might need to engage in peace treaties that involve heavy reparations or loss of status.
-- Example from Fiction: In "The Lord of the Rings," the costly deescalation from total war involves not just the end of the conflict but the passing away of an age, with the elves leaving Middle Earth and the hobbits returning to a changed Shire.
+### **Level -4: Vindictive**
 
-### **Level -3: Hostile Actions**
+- **Description:** Unyielding hostility with the intention to inflict severe harm or ruin, surpassing mere conflict to personal vendetta.
+- **Mechanics:** Combat rules are maximally engaged, with the highest chance of catastrophic outcomes. 
+- **Narrative:** Scenarios typify extreme antagonism and vendettas where reconciliation seems impossible.
+- **Cost to Deescalate Conflict:** Requires foundational changes to intentions or positions, often needing external mediation or significant personal or material losses.
+>
+> - Example from Fiction:
+> 
+> 1. **"The Count of Monte Cristo" by Alexandre Dumas** - Edmond Dantès's elaborate revenge against those who wronged him, marked by a meticulous plan to ruin their lives.
+> 2. **"Kill Bill" (Film)** - The Bride's quest for vengeance against her former assassination team, leading to numerous deadly confrontations.
+> 3. **"Moby Dick" by Herman Melville** - Captain Ahab's obsessive pursuit of the white whale, Moby Dick, which is driven by a deep-seated need for revenge.
 
-- Description: Sabotage, espionage, and aggressive competition. While not openly violent, actions are intended to harm or impede.
-- Mechanics: Use of skills related to stealth, deception, and sabotage. Non-lethal but aggressive confrontation rules apply.
-- Narrative: Acts of theft, spying, or sabotage that escalate tensions without immediate violence.
-- Cost to Deescalate Conflict: Revealing information or resources that were previously guarded, making reparations for damages caused, or forming a truce that requires acknowledgment of the other party's grievances.
-- Cost to Escalate Conflict: Increased surveillance, sabotage, or recruitment of allies to apply pressure, potentially risking open war.
-- Example from Fiction: In "Ocean's Eleven," the team's elaborate casino heist could escalate to direct conflict with casino security forces or deescalate if they choose to anonymously return the stolen money, facing no small cost to their pride and potential profit.
+### **Level -3: Hostile**
 
-### **Level -2: Verbal Confrontation**
+- **Description:** Acts of sabotage, espionage, and open aggression aimed to undermine and damage.
+- **Mechanics:** Skills in stealth, sabotage, and espionage are critical, with serious but non-lethal consequences.
+- **Narrative:** Engagements where covert operations or aggressive competition raise the stakes without direct combat.
+- **Cost to Escalate Conflict:** Increasing surveillance, further sabotage, or direct threats that could lead to outright war or personal ruin.
+- **Cost to Deescalate Conflict:** Exposing vulnerabilities or strategic concessions, such as sharing critical information or ending aggressive actions.
+>
+> - Example from Fiction:
+> 
+> 1. **"Game of Thrones" (TV Series)** - The Lannisters' continuous sabotage and plotting against their rivals, including espionage and assassination.
+> 2. **"The Godfather" (Film)** - The Corleone family engages in sabotage against rival mafia families, employing stealth and strategic aggression without open warfare.
+> 3. **"Sherlock Holmes" by Arthur Conan Doyle** - Holmes often encounters Moriarty, who employs sabotage and indirect methods to thwart Holmes without direct confrontation.
 
-- Description: Threats, intimidation, and heated arguments. The conflict is overt but not physical.
-- Mechanics: Persuasion, intimidation, and other social skills become crucial. Success or failure affects potential escalation or de-escalation.
-- Narrative: Tense negotiations, threats, or challenges that could escalate to violence or resolve depending on players' actions.
-- Cost to Deescalate Conflict: Publicly backing down or conceding a point, offering an apology, or making a gesture of goodwill that may weaken one's position or reputation.
-- Cost to Escalate Conflict: Insults or threats that could lead to physical confrontation or the involvement of authorities, risking reputation and physical safety.
-- Example from Fiction: In "Pride and Prejudice," Elizabeth Bennet's sharp refusal of Mr. Darcy's initial proposal represents a deescalation through verbal confrontation, costing her a potentially advantageous marriage but preserving her self-respect and integrity.
+### **Level -2: Unfriendly**
 
-### **Level -1: Tension**
+- **Description:** Direct verbal confrontations, including threats and serious accusations.
+- **Mechanics:** Social skills like intimidation and deception become key, with outcomes influencing further escalation or resolution.
+- **Narrative:** Events are marked by aggressive negotiations or confrontations that could turn violent.
+- **Cost to Escalate Conflict:** Stepping up confrontations, increasing public disparagement or legal actions that might lead to open hostility.
+- **Cost to Deescalate Conflict:** Reducing hostile rhetoric, offering formal apologies, or providing compensation for past grievances.
+>
+> - Example from Fiction:
+> 
+> 1. **"The Office" (TV Series)** - Michael Scott often finds himself in verbal confrontations with Toby Flenderson, exhibiting overt disdain but not escalating to direct sabotage.
+> 2. **"Pride and Prejudice" by Jane Austen** - The initial interactions between Elizabeth Bennet and Mr. Darcy, where their mutual disdain leads to sharp verbal exchanges.
+> 3. **"Mad Men" (TV Series)** - The competitive office environment where characters like Don Draper and Pete Campbell engage in power struggles and verbal sparring.
 
-- Description: Suspicion, rivalry, and minor disagreements. The atmosphere is tense, but there's no overt hostility.
-- Mechanics: Social interactions are strained. There may be minor penalties or increased difficulty in persuasion or cooperation attempts.
-- Narrative: The early stages of conflict where parties are wary of each other’s motives or actions.
-- Cost to Deescalate Conflict: Small concessions or gestures of goodwill that acknowledge the other party's concerns without significant loss of face or resources.
-- Cost to Escalate Conflict: Actions or words that deliberately misinterpret or challenge the other party, risking open hostility.
-- Example from Fiction: In "Harry Potter," Harry's decision to warn Draco Malfoy about the impending attack on Hogwarts represents a deescalation of their longstanding tension, costing Harry in pride but potentially saving lives.
+### **Level -1: Dislike**
 
-### **Level 0: Neutral**
+- **Description:** Clear aversion and disagreement, with interactions marked by suspicion and competition.
+- **Mechanics:** Social interactions carry penalties, making cooperation or persuasion more difficult.
+- **Narrative:** The foundation of conflicts is set as parties express open distrust and opposition.
+- **Cost to Escalate Conflict:** Intensifying opposition through competitive actions or undermining efforts, increasing the likelihood of conflict.
+- **Cost to Deescalate Conflict:** Minor admissions of wrongdoing or steps towards cooperation, like participating in joint activities or dialogues.
 
-- Description: The default state of interactions. Parties may not have strong feelings toward one another or are in a balanced state of cautious engagement.
-- Mechanics: Standard rules for interaction apply. No modifiers based on relationship status.
-- Cost to Deescalate:
-- Narrative: Encounters that could tilt toward positive or negative outcomes based on player choices.
-- Cost to Deescalate Conflict: Openness to engagement or offering a benefit of the doubt, potentially risking exploitation or appearing weak.
-- Cost to Escalate Conflict: Skepticism or a minor provocation that suggests a willingness to engage in conflict if provoked further.
-- Example from Fiction: In "Star Trek: The Next Generation," the crew's initial neutral encounters with new species often involve a cautious exchange of information, where escalating or deescalating conflict could mean the difference between alliance and hostility.
+> **Example from Fiction:**
+> 
+> 1. **"Harry Potter" by J.K. Rowling** - The tension between Harry Potter and Severus Snape, characterized by mutual distrust and suspicion, yet occasionally cooperating when necessary.
+> 2. **"The Catcher in the Rye" by J.D. Salinger** - Holden Caulfield's general disdain for "phonies," leading to numerous instances of mild conflict and avoidance.
+> 3. **"Ferris Bueller's Day Off" (Film)** - The principal's pursuit of Ferris Bueller, driven by dislike and suspicion, though avoiding more serious confrontations.
 
-### **Level 1: Cooperation**
+### **Level 0: Indifferent**
 
-- Description: Parties have common interests and are willing to work together, though they are not closely aligned.
-- Mechanics: Minor bonuses to collaborative efforts and information exchange. Easier to rally support or ask for minor favors.
-- Narrative: Temporary alliances or agreements where goals align, but without deep commitment.
-- Cost to Deescalate Conflict: Offering more significant concessions or support than initially agreed upon, potentially at one's own expense.
-- Cost to Escalate Conflict: Withdrawing support or reneging on agreements, risking the loss of a valuable ally.
-- Example from Fiction:** In "The Avengers," the team's shaky cooperation is bolstered by individual sacrifices, illustrating the cost of deescalating internal conflicts for a greater good.
+- **Description:** Neutral engagement, with no particular bias or inclination towards either positive or negative outcomes.
+- **Mechanics:** Standard interaction rules apply, with no modifiers based on relational dynamics.
+- **Narrative:** Situations poised to sway in any direction based on the actions and decisions taken during gameplay.
+- **Cost to Escalate Conflict:** Engaging in actions or statements that suggest a shift towards opposition, such as showing favoritism or minor provocations.
+- **Cost to Deescalate Conflict:** Demonstrating openness or neutrality, such as engaging in fair negotiations or showing willingness to cooperate on neutral grounds.
 
-### **Level 2: Friendly Relations**
+> - Example from Fiction:
+> 
+> 1. **"Blade Runner" (Film)** - Deckard's initial neutrality towards replicants, treating them as part of his job without strong feelings until his views are challenged.
+> 2. **"No Country for Old Men" (Film)** - The interactions between local residents and the hitman Anton Chigurh, who operates with cold neutrality.
+> 3. **"Casablanca" (Film)** - Rick Blaine's initial indifference to the resistance movement, focusing instead on running his café.
 
-- Description: Genuine friendship or positive relations that encourage mutual assistance and sharing of resources.
-- Mechanics: Bonuses to persuasion, barter, and requests for assistance. Shared resources or information come more freely.
-- Narrative: Strong bonds between characters and NPCs that can be leveraged to gain insight, aid, or other benefits.
-- Cost to Deescalate Conflict:** Significant personal or resource sacrifices to support or protect the other party, reinforcing the relationship.
-- Cost to Escalate Conflict:** Acts of neglect or self-interest that undermine the mutual trust and benefits of the relationship.
-- Example from Fiction: In "The Shawshank Redemption," Andy's and Red's friendship strengthens through shared trials and sacrifices, showcasing the costs involved in deepening their bond.
+### **Level 1: Amiable**
 
-### **Level 3: Strong Alliance**
+- **Description:** Basic cooperative intent without deep alliance, favoring polite and constructive interactions.
+- **Mechanics:** Minor bonuses on cooperative actions, with easier communications and basic assistance.
+- **Narrative:** Temporary alliances or agreements formed for convenience without long-term commitments.
+- **Cost to Escalate Conflict:** Withdrawing initial cooperation or showing reluctance to engage, which might strain the relationship.
+- **Cost to Deescalate Conflict:** Increasing transparency in dealings or offering more favorable terms in interactions to foster trust.
 
-- Description: A deep, committed relationship based on trust, respect, and shared goals. Parties will go out of their way to help each other.
-- Mechanics: Significant bonuses in cooperative scenarios, including combat support, resource sharing, and critical information exchange.
-- Narrative: Characters and NPCs have a vested interest in each other’s success, leading to substantial support and sacrifices.
-- Cost to Deescalate Conflict: Extreme sacrifices or compromises that may involve risking one's own goals or safety for the sake of the alliance.
-- **Cost to Escalate Conflict: Actions that betray the deep trust and shared goals of the alliance, potentially leading to irreversible damage.
-- **Example from Fiction: In "Game of Thrones," Jon Snow's alliances with various factions often require significant personal and political sacrifices, emphasizing the high stakes of maintaining strong alliances.
+> - Example from Fiction:
+> 
+> 1. **"To Kill a Mockingbird" by Harper Lee** - The relationship between Atticus Finch and the townspeople, generally cooperative but not deeply personal.
+> 2. **"The Martian" (Film)** - Mark Watney's relationship with his crew, based on functional cooperation and basic friendship.
+> 3. **"Star Wars" (Film Series)** - The early interactions between Han Solo and the Rebel Alliance, where mutual interests drive their cooperation.
 
-### **Level 4: Complete Loyalty/Friendship**
+### **Level 2: Friendly**
 
-- Description: Unbreakable bonds of loyalty and friendship where parties would risk everything for one another.
-- Mechanics: Maximum cooperation, willing to provide critical aid in almost any situation, potentially even sacrificing their own interests.
-- Narrative: The pinnacle of relationship development, representing the strongest possible alliance or friendship within the game.
-- Cost to Escalate Conflict: Betrayal or actions that would irreversibly damage the unbreakable bond, essentially destroying the foundational trust of the relationship. This could involve prioritizing one's own interests in a manner that directly harms the other party or breaches a core promise.
-- **Example from Fiction:** In "The Harry Potter Series," the ultimate test of loyalty and friendship among Harry, Ron, and Hermione comes when they face challenges that could easily tear them apart. The cost of escalating conflict here would be the loss of their deep, unwavering support for each other, which has been their greatest strength. Yet, their loyalty remains unshaken even in the face of death, exemplifying the highest level of commitment to one another.
+- **Description:** Positive interactions based on mutual respect and beneficial exchanges.
+- **Mechanics:** Enhanced bonuses for teamwork, shared goals, and mutual support in objectives.
+- **Narrative:** Strong, beneficial relationships that provide significant advantages in collaborative efforts.
+- **Cost to Escalate Conflict:** Neglecting shared interests or failing to support in key situations, which could weaken the bonds of friendship.
+- **Cost to Deescalate Conflict:** Making personal sacrifices or going beyond expected help to solidify the friendship and show commitment.
+
+> - Example from Fiction:
+> 
+> 1. **"Friends" (TV Series)** - The core group's interactions are characterized by genuine friendship, mutual assistance, and shared life experiences.
+> 2. **"The Hobbit" by J.R.R. Tolkien** - Bilbo Baggins and the dwarves develop a friendly relationship throughout their journey, aiding each other in various challenges.
+> 3. **"Toy Story" (Film Series)** - The toys in Andy's room share a friendly bond, helping each other and working together to navigate the challenges they face.
+
+### **Level 3: Affectionate**
+
+- **Description:** Warm, supportive interactions marked by genuine care and willingness to assist beyond basic expectations.
+- **Mechanics:** Significant benefits in scenarios requiring emotional support, trust, and personal sacrifice.
+- **Narrative:** Deep emotional connections that enhance resilience and resourcefulness among characters.
+- **Cost to Escalate Conflict:** Taking actions that could be perceived as betrayal or indifference, risking the warmth and closeness of the relationship.
+- **Cost to Deescalate Conflict:** Engaging in deeply meaningful personal gestures or sacrifices that reinforce the emotional bond and trust.
+
+> - Example from Fiction:
+> 
+> 1. **"The Fault in Our Stars" by John Green** - Hazel and Augustus share a deep affection that supports them through their individual struggles with cancer.
+> 2. **"Up" (Film)** - The affectionate and loving relationship between Carl and Ellie, shown through a montage of their life together.
+> 3. **"Pride and Prejudice" by Jane Austen** - The evolving relationship between Elizabeth Bennet and Mr. Darcy, growing into mutual affection and respect.
+
+### **Level 4: Devoted**
+
+- **Description:** Unwavering loyalty and commitment, with parties prepared to go to great lengths, including self-sacrifice, for each other's well-being.
+- **Mechanics:** Maximum cooperation and support, offering critical aid in nearly any situation, often foregoing personal benefits.
+- **Narrative:** The highest tier of relational development, characterized by unbreakable bonds and profound mutual commitment.
+- **Cost to Escalate Conflict:** Any action that hints at disloyalty or prioritizes personal gain over the relationship could cause severe and possibly irreversible damage.
+
+> - Example from Fiction:
+> 
+> 1. **"Harry Potter" by J.K. Rowling** - The trio of Harry, Ron, and Hermione demonstrate unwavering loyalty and devotion, risking their lives for one another.
+> 2. **"The Lord of the Rings" by J.R.R. Tolkien** - Frodo and Sam's relationship exemplifies devotion, with Sam going to great lengths to protect Frodo on their journey.
+> 3. **"Titanic" (Film)** - Jack's ultimate sacrifice for Rose is a poignant example of devotion, prioritizing her safety over his own survival.
+
+
+
+
+
+
 
