@@ -115,6 +115,43 @@ var carouselInner = document.createElement('div');
 carouselInner.setAttribute('class', 'carousel-inner');
 carousel.appendChild(carouselInner);
 
+function createCard(imageUrl, title, text, lastUpdated) {
+    var card = document.createElement('div');
+    card.setAttribute('class', 'card');
+    var a = document.createElement('a');
+    a.setAttribute('href', imageUrl);
+    a.setAttribute('target', '_blank');
+    var img = document.createElement('img');
+    img.setAttribute('src', imageUrl);
+    img.setAttribute('class', 'card-img-top');
+    img.setAttribute('alt', text);
+    a.appendChild(img);
+    card.appendChild(a);
+
+    var cardBody = document.createElement('div');
+    cardBody.setAttribute('class', 'card-body');
+    var cardTitle = document.createElement('p');
+    cardTitle.setAttribute('class', 'h5 card-title');
+    cardTitle.textContent = title;
+    var cardText = document.createElement('p');
+    cardText.setAttribute('class', 'card-text');
+    cardText.textContent = text;
+    var cardTextSmall = document.createElement('p');
+    cardTextSmall.setAttribute('class', 'card-text');
+    var small = document.createElement('small');
+    small.setAttribute('class', 'text-muted');
+    small.textContent = lastUpdated;
+    cardTextSmall.appendChild(small);
+
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+    cardBody.appendChild(cardTextSmall);
+    card.appendChild(cardBody);
+
+    return card;
+}
+
+
 // Function to create a carousel item
 function createCarouselItem(active, imageUrls) {
   var item = document.createElement('div');
@@ -124,39 +161,13 @@ function createCarouselItem(active, imageUrls) {
   item.appendChild(cardGroup);
 
   imageUrls.forEach(function(url) {
-    var card = document.createElement('div');
-    card.setAttribute('class', 'card');
-    var a = document.createElement('a');
-    a.setAttribute('href', url);
-    a.setAttribute('target', '_blank');
-    var img = document.createElement('img');
-    img.setAttribute('src', url);
-    img.setAttribute('class', 'card-img-top');
-    img.setAttribute('alt', '...');
-    a.appendChild(img);
-    card.appendChild(a);
 
-    var cardBody = document.createElement('div');
-    cardBody.setAttribute('class', 'card-body');
-    var cardTitle = document.createElement('p');
-    cardTitle.setAttribute('class', 'h5 card-title');
-    cardTitle.textContent = 'Card title';
-    var cardText = document.createElement('p');
-    cardText.setAttribute('class', 'card-text');
-    cardText.textContent = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
-    var cardTextSmall = document.createElement('p');
-    cardTextSmall.setAttribute('class', 'card-text');
-    var small = document.createElement('small');
-    small.setAttribute('class', 'text-muted');
-    small.textContent = 'Last updated 3 mins ago';
-    cardTextSmall.appendChild(small);
+    var imageUrl = url;
+    var title = 'Card title';
+    var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
+    var lastUpdated = 'Last updated 3 mins ago';
 
-    cardBody.appendChild(cardTitle);
-    cardBody.appendChild(cardText);
-    cardBody.appendChild(cardTextSmall);
-    card.appendChild(cardBody);
-
-    cardGroup.appendChild(card);
+    cardGroup.appendChild(createCard(imageUrl, title, text, lastUpdated));
   });
 
   return item;
