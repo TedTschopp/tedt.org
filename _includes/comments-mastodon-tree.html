@@ -79,137 +79,199 @@
 <script>
 /*
 
-// Create the main carousel container
-var carousel = document.createElement('div');
-carousel.setAttribute('id', 'carouselExampleCaptions');
-carousel.setAttribute('class', 'carousel slide');
-carousel.dataset.bsRide = 'false';
+I think this is ready for testing, however I still need to wire it into the displayToot function.  
+I also need to update the createCarousel function to use the new design.
 
-// Create the carousel indicators container
-var carouselIndicators = document.createElement('div');
-carouselIndicators.setAttribute('class', 'carousel-indicators row w-100 p-0 m-0 position-relative');
-carousel.appendChild(carouselIndicators);
+function createCarouselNew(media_attachments, id) {
 
-// Function to create a button for the indicators
-function createButton(index, isActive) {
-  var button = document.createElement('button');
-  button.setAttribute('type', 'button');
-  button.dataset.bsTarget = '#carouselExampleCaptions';
-  button.dataset.bsSlideTo = index;
-  button.setAttribute('class', isActive ? 'active carousel-button' : 'carousel-button');
-  button.setAttribute('aria-label', `Slide ${index + 1}`);
-  if (isActive) {
-    button.setAttribute('aria-current', 'true');
-  }
-  return button;
+    // Create a carousel card
+    function createCard(id, imageUrl, title, text) {
+        var card = document.createElement('div');
+        card.setAttribute('class', 'card');
+        var a = document.createElement('a');
+        a.setAttribute('href', imageUrl);
+        a.setAttribute('target', '_blank');
+        var img = document.createElement('img');
+        img.setAttribute('src', imageUrl);
+        img.setAttribute('class', 'card-img-top');
+        img.setAttribute('alt', text);
+        a.appendChild(img);
+        card.appendChild(a);
+
+        var cardBody = document.createElement('div');
+        cardBody.setAttribute('class', 'card-body');
+        var cardTitle = document.createElement('p');
+        cardTitle.setAttribute('class', 'h5 card-title');
+        cardTitle.textContent = title;
+        var cardText = document.createElement('p');
+        cardText.setAttribute('class', 'card-text');
+        cardText.textContent = text;
+        //This is for the last updated text, however that isn't used.  Perhaps this can be reused for something else.
+        //var cardTextSmall = document.createElement('p');
+        //cardTextSmall.setAttribute('class', 'card-text');
+        //var small = document.createElement('small');
+        //small.setAttribute('class', 'text-muted');
+        //small.textContent = lastUpdated;
+        //cardTextSmall.appendChild(small);
+
+        cardBody.appendChild(cardTitle);
+        cardBody.appendChild(cardText);
+        cardBody.appendChild(cardTextSmall);
+        card.appendChild(cardBody);
+
+        return card;
+    }
+
+
+    // Function to create a carousel item
+    function createCarouselItem(active, imageUrls, items) {
+        var item = document.createElement('div');
+        item.setAttribute('class', `carousel-item ${active ? 'active' : ''}`);
+        var cardGroup = document.createElement('div');
+        cardGroup.setAttribute('class', 'card-group');
+        item.appendChild(cardGroup);
+
+        if (imageUrls) {
+            imageUrls.forEach(function(url) {
+                var imageUrl = url;
+                var title = 'Card title';
+                var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
+
+                cardGroup.appendChild(createCard(imageUrl, title, text));
+            });
+        }
+
+        if (items) {
+            items.forEach(function(item) {
+                var imageUrl = item.imageUrl;
+                var title = item.title;
+                var text = item.text;
+
+
+                cardGroup.appendChild(createCard(imageUrl, title, text));
+            });
+        }
+
+        return item;
+    }
+
+    // Function to create a button for the indicators
+    function createButton(index, isActive) {
+    var button = document.createElement('button');
+        button.setAttribute('type', 'button');
+        button.dataset.bsTarget = '#' + 'carousel-' + id
+        button.dataset.bsSlideTo = index;
+        button.setAttribute('class', isActive ? 'active carousel-button' : 'carousel-button');
+        button.setAttribute('aria-label', `Slide ${index + 1}`);
+    if (isActive) {
+        button.setAttribute('aria-current', 'true');
+    }
+    return button;
+    }
+
+    // Create the main carousel container
+    var carousel = document.createElement('div');
+        // carousel.setAttribute('id', 'carouselExampleCaptions');  //TODO: Delete this line once everything is debugged.
+        carousel.setAttribute('id', 'carousel-' + id);
+        carousel.setAttribute('class', 'carousel slide');
+        carousel.dataset.bsRide = 'false';
+
+
+
+    // Create the carousel indicators container
+    var carouselIndicators = document.createElement('div');
+        carouselIndicators.setAttribute('class', 'carousel-indicators row w-100 p-0 m-0 position-relative');
+        carousel.appendChild(carouselIndicators);
+
+
+
+    // Add buttons to the carousel indicators for every 3 images
+    //carouselIndicators.appendChild(createButton(0, true));
+    //carouselIndicators.appendChild(createButton(1, false));
+    //carouselIndicators.appendChild(createButton(2, false));
+    //carouselIndicators.appendChild(createButton(3, false));
+
+    // Create the carousel inner container
+    var carouselInner = document.createElement('div');
+        carouselInner.setAttribute('class', 'carousel-inner');
+        carousel.appendChild(carouselInner);
+
+
+    var CarouselArray = [];
+    var numberOfButtons = 0;
+    for (var i = 0; i < media_attachments.length; i++) {
+        var id = media_attachments[i].id;
+        var imageUrl = media_attachments[i].url;
+        var title = media_attachments[i].description;
+        var text = media_attachments[i].text;
+
+
+        var item = {
+            id: id,
+            imageUrl: imageUrl,
+            title: title,
+            text: text,
+
+        };
+
+        CarouselArray.push(item);
+
+        // If tempArray has 3 items or if this is the last item
+        if (CarouselArray.length === 3 || i === media_attachments.length - 1) {
+
+            // Add items to the carousel inner container
+            carouselInner.appendChild(createCarouselItem(true, CarouselArray));
+            // Reset tempArray
+            CarouselArray = [];
+
+            if (numberOfButtons === 0) {
+                // Add buttons to the carousel indicators for every 3 images
+                carouselIndicators.appendChild(createButton(numberOfButtons, true));
+            } else {
+                carouselIndicators.appendChild(createButton(numberOfButtons, false));
+            }
+            numberOfButtons += 1;
+        }
+    }
+
+    // Add items to the carousel inner container
+    carouselInner.appendChild(createCarouselItem(true, [
+    'https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Artic-002.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Artic-003.webp'
+    ]));
+    if (numberOfButtons === 0) {
+        // Add buttons to the carousel indicators for every 3 images
+        carouselIndicators.appendChild(createButton(numberOfButtons+1, true));
+    } else {
+        carouselIndicators.appendChild(createButton(numberOfButtons+1, false));
+    }
+    carouselInner.appendChild(createCarouselItem(false, [
+    'https://tedt.org/img/Gamma-World/Backdrops/Beach-001.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Beach-002.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Beach-003.webp'
+    ]));
+    carouselIndicators.appendChild(createButton(numberOfButtons+2, false));
+    carouselInner.appendChild(createCarouselItem(false, [
+    'https://tedt.org/img/Gamma-World/Backdrops/Canyon-001.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Canyon-002.webp',
+    'https://tedt.org/img/Gamma-World/Backdrops/Canyon-003.webp'
+    ]));
+    carouselIndicators.appendChild(createButton(numberOfButtons+3, false));
+    carouselInner.appendChild(createCarouselItem(false, [
+    'https://cdn.masto.host/tschoppnet/media_attachments/files/111/965/910/698/951/200/original/28d43c09fd3b2e8b.jpg',
+    'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/806/306/667/original/9e4c35616c8babe3.webp',
+    'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/885/354/640/original/f0f55aa29a243bc6.webp'
+    ]));
+    carouselIndicators.appendChild(createButton(numberOfButtons+4, false));
+    
+    // Continue adding items similarly for other sets of images
+
+    // Append the carousel to the document body or a specific container
+    return carousel;
 }
-
-// Add buttons to the carousel indicators
-carouselIndicators.appendChild(createButton(0, true));
-carouselIndicators.appendChild(createButton(1, false));
-carouselIndicators.appendChild(createButton(2, false));
-carouselIndicators.appendChild(createButton(3, false));
-
-// Create the carousel inner container
-var carouselInner = document.createElement('div');
-carouselInner.setAttribute('class', 'carousel-inner');
-carousel.appendChild(carouselInner);
-
-function createCard(imageUrl, title, text, lastUpdated) {
-    var card = document.createElement('div');
-    card.setAttribute('class', 'card');
-    var a = document.createElement('a');
-    a.setAttribute('href', imageUrl);
-    a.setAttribute('target', '_blank');
-    var img = document.createElement('img');
-    img.setAttribute('src', imageUrl);
-    img.setAttribute('class', 'card-img-top');
-    img.setAttribute('alt', text);
-    a.appendChild(img);
-    card.appendChild(a);
-
-    var cardBody = document.createElement('div');
-    cardBody.setAttribute('class', 'card-body');
-    var cardTitle = document.createElement('p');
-    cardTitle.setAttribute('class', 'h5 card-title');
-    cardTitle.textContent = title;
-    var cardText = document.createElement('p');
-    cardText.setAttribute('class', 'card-text');
-    cardText.textContent = text;
-    var cardTextSmall = document.createElement('p');
-    cardTextSmall.setAttribute('class', 'card-text');
-    var small = document.createElement('small');
-    small.setAttribute('class', 'text-muted');
-    small.textContent = lastUpdated;
-    cardTextSmall.appendChild(small);
-
-    cardBody.appendChild(cardTitle);
-    cardBody.appendChild(cardText);
-    cardBody.appendChild(cardTextSmall);
-    card.appendChild(cardBody);
-
-    return card;
-}
-
-
-// Function to create a carousel item
-function createCarouselItem(active, imageUrls) {
-  var item = document.createElement('div');
-  item.setAttribute('class', `carousel-item ${active ? 'active' : ''}`);
-  var cardGroup = document.createElement('div');
-  cardGroup.setAttribute('class', 'card-group');
-  item.appendChild(cardGroup);
-
-  imageUrls.forEach(function(url) {
-
-    var imageUrl = url;
-    var title = 'Card title';
-    var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
-    var lastUpdated = 'Last updated 3 mins ago';
-
-    cardGroup.appendChild(createCard(imageUrl, title, text, lastUpdated));
-  });
-
-  return item;
-}
-
-// Add items to the carousel inner container
-carouselInner.appendChild(createCarouselItem(true, [
-  'https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Artic-002.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Artic-003.webp'
-]));
-carouselInner.appendChild(createCarouselItem(false, [
-  'https://tedt.org/img/Gamma-World/Backdrops/Beach-001.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Beach-002.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Beach-003.webp'
-]));
-carouselInner.appendChild(createCarouselItem(false, [
-  'https://tedt.org/img/Gamma-World/Backdrops/Canyon-001.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Canyon-002.webp',
-  'https://tedt.org/img/Gamma-World/Backdrops/Canyon-003.webp'
-]));
-carouselInner.appendChild(createCarouselItem(false, [
-  'https://cdn.masto.host/tschoppnet/media_attachments/files/111/965/910/698/951/200/original/28d43c09fd3b2e8b.jpg',
-  'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/806/306/667/original/9e4c35616c8babe3.webp',
-  'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/885/354/640/original/f0f55aa29a243bc6.webp'
-]));
-
-
-
-
-// Continue adding items similarly for other sets of images
-
-// Append the carousel to the document body or a specific container
-document.body.appendChild(carousel);
-
 */
-
 </script>
-
-
-
-
     <section id="comments" class="article-content">
         <h2>Comments</h2>
         <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
@@ -563,6 +625,7 @@ document.body.appendChild(carousel);
             displayToot.id = arr.id; // new for trees
 
             if (arr.media_attachments && arr.media_attachments.length > 0) {
+                // TODO: Change the following to use the new design of the Carousel.  It should send the same data as this. 
                 var attachments = createCarousel(arr.media_attachments, arr.id);
                 ge("attachments").appendChild(attachments);
             } else {
@@ -606,6 +669,7 @@ document.body.appendChild(carousel);
         }
 
         function createCarousel(media_attachments, id) {
+            // TODO: This is the old way of creating the carousel.  It should be updated to use the new design.
             console.log("createCarousel()");
             console.log(media_attachments);
 
