@@ -270,7 +270,7 @@
 
 
             // Create a carousel card
-            function createCard(id, imageUrl, title, text) {
+            function createCard(imageID, imageUrl, title, text) {
                 var card = document.createElement('div');
                 card.setAttribute('class', 'card');
                 var a = document.createElement('a');
@@ -321,7 +321,7 @@
                         var imageUrl = url;
                         var title = 'Card title';
                         var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
-                        var imageID = url.split('/').pop().split('.')[0];
+                        var imageID = '1';
 
                         cardGroup.appendChild(createCard(imageID, imageUrl, title, text));
                     });
@@ -378,14 +378,14 @@
             var CarouselArray = [];
             var numberOfButtons = 0;
             for (var i = 0; i < media_attachments.length; i++) {
-                var id = media_attachments[i].id;
+                var ImageID = media_attachments[i].id;
                 var imageUrl = media_attachments[i].url;
                 var title = media_attachments[i].description;
                 var text = media_attachments[i].text;
 
 
                 var item = {
-                    id: id,
+                    id: ImageID,
                     imageUrl: imageUrl,
                     title: title,
                     text: text,
