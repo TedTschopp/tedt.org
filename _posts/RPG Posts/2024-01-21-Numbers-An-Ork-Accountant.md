@@ -46,6 +46,12 @@ order:
 
 mastodon-post-id: 111796991086841890
 
+redirect-from:
+  - /2024/01/21/Numbers-An-Orkl-Accountant.html
+  - /2024/01/21/Numbers-An-Orkl-Accountant/
+  - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant
+  - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant/
+
 ---
 
 I was in an online discussion about Shadowrun and a friend made an offhand comments about the uselessness of an Ork Accountant in Shadowrun.  This was my response.  Numbers is an Ork, of the Satyr variety found mainly in Europe.  His parents are corporate executives and fast tracked him into being an executive as well.  He got his degree in business administration with a focus on accounting and audits.  He had a full backstory about working for a nightclub doing their books and dreaming of owning a whole chain of clubs across California.  
