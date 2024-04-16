@@ -77,12 +77,15 @@
 </style>
 
 <script>
-/*
 
-I think this is ready for testing, however I still need to wire it into the displayToot function.  
-I also need to update the createCarousel function to use the new design.
+//I think this is ready for testing, however I still need to wire it into the displayToot function.  
+//I also need to update the createCarousel function to use the new design.
 
 function createCarouselNew(media_attachments, id) {
+
+    console.log("createCarouselNew()");
+    console.log(media_attachments);
+
 
     // Create a carousel card
     function createCard(id, imageUrl, title, text) {
@@ -182,14 +185,6 @@ function createCarouselNew(media_attachments, id) {
     var carouselIndicators = document.createElement('div');
         carouselIndicators.setAttribute('class', 'carousel-indicators row w-100 p-0 m-0 position-relative');
         carousel.appendChild(carouselIndicators);
-
-
-
-    // Add buttons to the carousel indicators for every 3 images
-    //carouselIndicators.appendChild(createButton(0, true));
-    //carouselIndicators.appendChild(createButton(1, false));
-    //carouselIndicators.appendChild(createButton(2, false));
-    //carouselIndicators.appendChild(createButton(3, false));
 
     // Create the carousel inner container
     var carouselInner = document.createElement('div');
@@ -626,7 +621,7 @@ function createCarouselNew(media_attachments, id) {
 
             if (arr.media_attachments && arr.media_attachments.length > 0) {
                 // TODO: Change the following to use the new design of the Carousel.  It should send the same data as this. 
-                var attachments = createCarousel(arr.media_attachments, arr.id);
+                var attachments = createCarouselNew(arr.media_attachments, arr.id);
                 ge("attachments").appendChild(attachments);
             } else {
                 ge("attachments").style.display = "none";
@@ -974,7 +969,7 @@ function createCarouselNew(media_attachments, id) {
                 //ge("author").style.display = "grid";
 
                 if (arr.media_attachments && arr.media_attachments.length > 0) {
-                    var attachments = createCarousel(arr.media_attachments, arr.id);
+                    var attachments = createCarouselNew(arr.media_attachments, arr.id);
                     ge("attachments").appendChild(attachments);
                 } else {
                     ge("attachments").style.display = "none";
