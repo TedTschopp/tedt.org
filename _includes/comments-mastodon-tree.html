@@ -89,7 +89,7 @@
         <noscript>You need JavaScript to view the comments.</noscript>
     </section>
 
-
+    {% comment %}
     <div class="row g-0 p-0 m-0 d-flex align-items-start tootThread"  id="ExampledisplayToot">
         <div class="card p-0 m-0">
             <div class="card-header">
@@ -256,7 +256,7 @@
             </div>
         </div>
     </div>
-
+    {% endcomment %}
 
     <script language="JavaScript">
 
@@ -346,7 +346,6 @@
 
             // Create the main carousel container
             var carousel = document.createElement('div');
-                // carousel.setAttribute('id', 'carouselExampleCaptions');  //TODO: Delete this line once everything is debugged.
                 carousel.setAttribute('id', 'carousel-' + id);
                 carousel.setAttribute('class', 'carousel slide');
                 carousel.dataset.bsRide = 'false';
@@ -570,7 +569,6 @@
             displayToot.id = arr.id; // new for trees
 
             if (arr.media_attachments && arr.media_attachments.length > 0) {
-                // TODO: Change the following to use the new design of the Carousel.  It should send the same data as this. 
                 var attachments = createCarouselNew(arr.media_attachments, arr.id);
                 ge("attachments").appendChild(attachments);
             } else {
@@ -613,7 +611,7 @@
             return canvas.toDataURL();
         }
 
-        function createCarousel(media_attachments, id) {
+        function createCarouselOLD(media_attachments, id) {
             // TODO: This is the old way of creating the carousel.  It should be updated to use the new design.
             console.log("createCarousel()");
             console.log(media_attachments);
@@ -727,31 +725,31 @@
             var interval = seconds / 31536000;
 
             if (interval > 1) {
-                return Math.floor(interval) + "y";
+                return Math.floor(interval) + " y";
             } else if (interval === 1) {
                 return "1y";
             }
             interval = seconds / 2592000;
             if (interval > 1) {
-                return Math.floor(interval) + "m";
+                return Math.floor(interval) + " mon";
             } else if (interval === 1) {
                 return "1m";
             }
             interval = seconds / 86400;
             if (interval > 1) {
-                return Math.floor(interval) + "d";
+                return Math.floor(interval) + " d";
             } else if (interval === 1) {
                 return "1d";
             }
             interval = seconds / 3600;
             if (interval > 1) {
-                return Math.floor(interval) + "h";
+                return Math.floor(interval) + " h";
             } else if (interval === 1) {
                 return "1h";
             }
             interval = seconds / 60;
             if (interval > 1) {
-                return Math.floor(interval) + "m";
+                return Math.floor(interval) + " min";
             } else if (interval === 1) {
                 return "1m";
             }
@@ -1098,6 +1096,8 @@
     
     //-->
     </script>
+
+
     <section id="displayTootThread" class="article-content">
         <div class="row g-0 p-0 m-0 d-flex align-items-start tootThread"  id="displayToot">
             <div class="card p-0 m-0">
@@ -1126,53 +1126,6 @@
                 </div>
                 <div class="card-body p-0 m-0">
                     <div class="row w-100 p-0 m-0 attachments">
-
-
-                        {% comment %}
-
-                        <div id="carouselExampleCaptions" class="carousel slide">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>First slide label</h5>
-                                  <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Second slide label</h5>
-                                  <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Third slide label</h5>
-                                  <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-
-                          
-                        {% endcomment %}
-
-
                     </div>
                 </div>
                 <div class="card-footer text-muted">
@@ -1226,50 +1179,6 @@
                                 </div>
                                 <div class="card-body p-0 m-0">
                                     <div class="row w-100 p-0 m-0 attachments">
-
-                                        {% comment %}
-
-                                        <div id="carouselExampleCaptionsReplies" class="carousel slide">
-                                            <div class="carousel-indicators">
-                                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                              <div class="carousel-item active">
-                                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                  <h5>First slide label</h5>
-                                                  <p>Some representative placeholder content for the first slide.</p>
-                                                </div>
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                  <h5>Second slide label</h5>
-                                                  <p>Some representative placeholder content for the second slide.</p>
-                                                </div>
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img src="https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                  <h5>Third slide label</h5>
-                                                  <p>Some representative placeholder content for the third slide.</p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                          </div>
-
-                                          {% endcomment %}
-
                                     </div>
                                 </div>
                                 <div class="card-footer text-muted">
