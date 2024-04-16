@@ -309,23 +309,12 @@
 
 
             // Function to create a carousel item
-            function createCarouselItem(active, imageUrls, items) {
+            function createCarouselItem(active, items) {
                 var item = document.createElement('div');
                 item.setAttribute('class', `carousel-item ${active ? 'active' : ''}`);
                 var cardGroup = document.createElement('div');
                 cardGroup.setAttribute('class', 'card-group');
                 item.appendChild(cardGroup);
-
-                if (imageUrls) {
-                    imageUrls.forEach(function(url) {
-                        var imageUrl = url;
-                        var title = 'Card title';
-                        var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
-                        var imageID = '1';
-
-                        cardGroup.appendChild(createCard(imageID, imageUrl, title, text));
-                    });
-                }
 
                 if (items) {
                     items.forEach(function(item) {
@@ -362,8 +351,6 @@
                 carousel.setAttribute('class', 'carousel slide');
                 carousel.dataset.bsRide = 'false';
 
-
-
             // Create the carousel indicators container
             var carouselIndicators = document.createElement('div');
                 carouselIndicators.setAttribute('class', 'carousel-indicators row w-100 p-0 m-0 position-relative');
@@ -383,13 +370,11 @@
                 var title = media_attachments[i].description;
                 var text = media_attachments[i].text;
 
-
                 var item = {
                     id: ImageID,
                     imageUrl: imageUrl,
                     title: title,
                     text: text,
-
                 };
 
                 CarouselArray.push(item);
@@ -411,39 +396,6 @@
                     numberOfButtons += 1;
                 }
             }
-
-            // Add items to the carousel inner container
-            carouselInner.appendChild(createCarouselItem(true, [
-            'https://tedt.org/img/Gamma-World/Backdrops/Artic-001.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Artic-002.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Artic-003.webp'
-            ]));
-            if (numberOfButtons === 0) {
-                // Add buttons to the carousel indicators for every 3 images
-                carouselIndicators.appendChild(createButton(numberOfButtons+1, true));
-            } else {
-                carouselIndicators.appendChild(createButton(numberOfButtons+1, false));
-            }
-            carouselInner.appendChild(createCarouselItem(false, [
-            'https://tedt.org/img/Gamma-World/Backdrops/Beach-001.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Beach-002.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Beach-003.webp'
-            ]));
-            carouselIndicators.appendChild(createButton(numberOfButtons+2, false));
-            carouselInner.appendChild(createCarouselItem(false, [
-            'https://tedt.org/img/Gamma-World/Backdrops/Canyon-001.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Canyon-002.webp',
-            'https://tedt.org/img/Gamma-World/Backdrops/Canyon-003.webp'
-            ]));
-            carouselIndicators.appendChild(createButton(numberOfButtons+3, false));
-            carouselInner.appendChild(createCarouselItem(false, [
-            'https://cdn.masto.host/tschoppnet/media_attachments/files/111/965/910/698/951/200/original/28d43c09fd3b2e8b.jpg',
-            'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/806/306/667/original/9e4c35616c8babe3.webp',
-            'https://cdn.masto.host/tschoppnet/media_attachments/files/112/191/350/885/354/640/original/f0f55aa29a243bc6.webp'
-            ]));
-            carouselIndicators.appendChild(createButton(numberOfButtons+4, false));
-
-            // Continue adding items similarly for other sets of images
 
             // Append the carousel to the document body or a specific container
             return carousel;
