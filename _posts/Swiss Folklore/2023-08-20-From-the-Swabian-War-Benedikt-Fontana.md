@@ -94,7 +94,7 @@ mathjax:
 
 order:
 
-redirect-from: 
+redirect_from: 
  - /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
  - /2023/08/20/From-the-Swabian-War-Benedikt-Fontana/
 

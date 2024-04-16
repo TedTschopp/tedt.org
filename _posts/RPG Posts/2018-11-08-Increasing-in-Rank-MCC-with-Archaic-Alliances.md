@@ -46,7 +46,7 @@ image-title:
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
-redirect-from:
+redirect_from:
   - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances.html
   - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances/
   - /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances/

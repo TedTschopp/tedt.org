@@ -88,7 +88,7 @@ permalink: /Swiss-Folklore/:title:output_ext
 mathjax:
 
 order:
-redirect-from:
+redirect_from:
   - /2023/08/20/2023-08-20-The-Army-in-Schrattenberg/
   - /2023/08/20/The-Army-in-Schrattenberg/
   
