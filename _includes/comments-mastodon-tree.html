@@ -321,8 +321,9 @@
                         var imageUrl = url;
                         var title = 'Card title';
                         var text = 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.';
+                        var imageID = url.split('/').pop().split('.')[0];
 
-                        cardGroup.appendChild(createCard(imageUrl, title, text));
+                        cardGroup.appendChild(createCard(imageID, imageUrl, title, text));
                     });
                 }
 
@@ -331,9 +332,9 @@
                         var imageUrl = item.imageUrl;
                         var title = item.title;
                         var text = item.text;
+                        var imageID = item.id;
 
-
-                        cardGroup.appendChild(createCard(imageUrl, title, text));
+                        cardGroup.appendChild(createCard(imageID, imageUrl, title, text));
                     });
                 }
 
