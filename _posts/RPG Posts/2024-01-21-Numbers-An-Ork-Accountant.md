@@ -46,11 +46,12 @@ order:
 
 mastodon-post-id: 111796991086841890
 
-redirect-from:
+redirect_from:
   - /2024/01/21/Numbers-An-Orkl-Accountant.html
   - /2024/01/21/Numbers-An-Orkl-Accountant/
   - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant
   - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant/
+
 
 ---
 
