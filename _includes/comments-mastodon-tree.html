@@ -270,14 +270,14 @@
 
 
             // Create a carousel card
-            function createCard(imageID, imageUrl, title, text) {
+            function createCard(imageID, imagePreviewUrl, imageUrl, title, text) {
                 var card = document.createElement('div');
                 card.setAttribute('class', 'card');
                 var a = document.createElement('a');
                 a.setAttribute('href', imageUrl);
                 a.setAttribute('target', '_blank');
                 var img = document.createElement('img');
-                img.setAttribute('src', imageUrl);
+                img.setAttribute('src', imagePreviewUrl);
                 img.setAttribute('class', 'card-img-top');
                 img.setAttribute('alt', text);
                 a.appendChild(img);
@@ -319,11 +319,12 @@
                 if (items) {
                     items.forEach(function(item) {
                         var imageUrl = item.imageUrl;
+                        var imagePreviewUrl = item.previewUrl;
                         var title = item.title;
                         var text = item.text;
                         var imageID = item.id;
 
-                        cardGroup.appendChild(createCard(imageID, imageUrl, title, text));
+                        cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, title, text));
                     });
                 }
 
@@ -366,12 +367,14 @@
             for (var i = 0; i < media_attachments.length; i++) {
                 var ImageID = media_attachments[i].id;
                 var imageUrl = media_attachments[i].url;
+                var imagePreviewUrl = media_attachments[i].preview_url;
                 var title = media_attachments[i].description;
                 var text = media_attachments[i].text;
 
                 var item = {
                     id: ImageID,
                     imageUrl: imageUrl,
+                    imagePreviewUrl: imagePreviewUrl,
                     title: title,
                     text: text,
                 };
@@ -1074,7 +1077,6 @@
         var previousTootId = -1;
         var previousParentTootId = -1;
 
-
         var stackObjects = [];
         var stackIndexes = [];
         var stackElements = [];
@@ -1083,7 +1085,6 @@
         var bulkTootReplyHtml = "";
         var lastPostElem;
         var skippedFirst = false;
-       
 
         var indentCountPerId = [];
         
