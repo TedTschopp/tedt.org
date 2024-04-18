@@ -270,7 +270,7 @@
 
 
             // Create a carousel card
-            function createCard(imageID, imagePreviewUrl, imageUrl, title, text) {
+            function createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, text) {
                 var card = document.createElement('div');
                 card.setAttribute('class', 'card');
                 var a = document.createElement('a');
@@ -280,6 +280,10 @@
                 img.setAttribute('src', imagePreviewUrl);
                 img.setAttribute('class', 'card-img-top');
                 img.setAttribute('alt', text);
+                //TODO: Add Image Set.  This is for the lazy loading of images.
+                //TODO Add BlurHash.  This is for the lazy loading of images.
+
+                img.setAttribute('style', 'object-position: ' + imagePositionX + ' ' + imagePositionY+";" );
                 a.appendChild(img);
                 card.appendChild(a);
 
@@ -323,8 +327,11 @@
                         var title = item.title;
                         var text = item.text;
                         var imageID = item.id;
+                        var imagePositionX = (item.meta.focus.x * 100) + '%';
+                        var imagePositionY = (item.meta.focus.y * 100) + '%';
 
-                        cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, title, text));
+
+                        cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, title, text));
                     });
                 }
 
@@ -364,6 +371,7 @@
 
             var CarouselArray = [];
             var numberOfButtons = 0;
+            var isFirstItem = true;
             for (var i = 0; i < media_attachments.length; i++) {
                 var ImageID = media_attachments[i].id;
                 var imageUrl = media_attachments[i].url;
@@ -385,7 +393,7 @@
                 if (CarouselArray.length === 3 || i === media_attachments.length - 1) {
 
                     // Add items to the carousel inner container
-                    carouselInner.appendChild(createCarouselItem(true, CarouselArray));
+                    carouselInner.appendChild(createCarouselItem(isFirstItem, CarouselArray));
                     // Reset tempArray
                     CarouselArray = [];
 
@@ -396,6 +404,8 @@
                         carouselIndicators.appendChild(createButton(numberOfButtons, false));
                     }
                     numberOfButtons += 1;
+
+                    isFirstItem = false
                 }
             }
 
