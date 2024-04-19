@@ -321,15 +321,18 @@
                 item.appendChild(cardGroup);
 
                 if (items) {
-                    items.forEach(function(item) {
-                        var imageUrl = item.imageUrl;
-                        var imagePreviewUrl = item.imagePreviewUrl;
-                        var title = item.title;
-                        var text = item.text;
-                        var imageID = item.id;
-                        var imagePositionX = (item.meta.focus.x * 100) + '%';
-                        var imagePositionY = (item.meta.focus.y * 100) + '%';
+                    items.forEach(function(currentItem) {
 
+                        console.log("tems.forEach(function(currentItem) {");
+                        console.log(currentItem);
+
+                        var imageUrl = currentItem.imageUrl;
+                        var imagePreviewUrl = currentItem.imagePreviewUrl;
+                        var title = currentItem.title;
+                        var text = currentItem.text;
+                        var imageID = currentItem.id;
+                        var imagePositionX = currentItem.imagePositionY;
+                        var imagePositionY = currentItem.imagePositionY;
 
                         cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, title, text));
                     });
@@ -340,16 +343,16 @@
 
             // Function to create a button for the indicators
             function createButton(index, isActive) {
-            var button = document.createElement('button');
-                button.setAttribute('type', 'button');
-                button.dataset.bsTarget = '#' + 'carousel-' + id
-                button.dataset.bsSlideTo = index;
-                button.setAttribute('class', isActive ? 'active carousel-button' : 'carousel-button');
-                button.setAttribute('aria-label', `Slide ${index + 1}`);
-            if (isActive) {
-                button.setAttribute('aria-current', 'true');
-            }
-            return button;
+                var button = document.createElement('button');
+                    button.setAttribute('type', 'button');
+                    button.dataset.bsTarget = '#' + 'carousel-' + id
+                    button.dataset.bsSlideTo = index;
+                    button.setAttribute('class', isActive ? 'active carousel-button' : 'carousel-button');
+                    button.setAttribute('aria-label', `Slide ${index + 1}`);
+                if (isActive) {
+                    button.setAttribute('aria-current', 'true');
+                }
+                return button;
             }
 
             // Create the main carousel container
@@ -378,11 +381,15 @@
                 var imagePreviewUrl = media_attachments[i].preview_url;
                 var title = media_attachments[i].description;
                 var text = media_attachments[i].text;
+                var imagePositionX = (media_attachments[i].meta.focus.x * 100) + '%';
+                var imagePositionY = (media_attachments[i].meta.focus.y * 100) + '%';
 
                 var item = {
                     id: ImageID,
                     imageUrl: imageUrl,
                     imagePreviewUrl: imagePreviewUrl,
+                    imagePositionX: imagePositionX,
+                    imagePositionY: imagePositionY,
                     title: title,
                     text: text,
                 };
