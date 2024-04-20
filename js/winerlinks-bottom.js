@@ -1,4 +1,4 @@
-$(document).ready(function() {
-  var main_content = $('#main_content');
-  main_content.html(addAnchorTagsToParagraphs(main_content.html()));
+document.addEventListener('DOMContentLoaded', function() {
+  var main_content = document.getElementById('main_content');
+  main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
 });
