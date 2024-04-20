@@ -272,13 +272,13 @@
             // Create a carousel card
             function createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, text) {
                 var card = document.createElement('div');
-                card.setAttribute('class', 'card');
+                card.setAttribute('class', 'card ');
                 var a = document.createElement('a');
                 a.setAttribute('href', imageUrl);
                 a.setAttribute('target', '_blank');
                 var img = document.createElement('img');
                 img.setAttribute('src', imagePreviewUrl);
-                img.setAttribute('class', 'card-img-top');
+                img.setAttribute('class', 'object-fit-cover card-img-top');
                 img.setAttribute('alt', text);
                 //TODO: Add Image Set.  This is for the lazy loading of images.
                 //TODO Add BlurHash.  This is for the lazy loading of images.
@@ -291,10 +291,10 @@
                 cardBody.setAttribute('class', 'card-body');
                 var cardTitle = document.createElement('p');
                 cardTitle.setAttribute('class', 'h5 card-title');
-                cardTitle.textContent = title;
-                var cardText = document.createElement('p');
-                cardText.setAttribute('class', 'card-text');
-                cardText.textContent = text;
+                cardTitle.textContent = text;
+                //var cardText = document.createElement('p');
+                //cardText.setAttribute('class', 'card-text');
+                //cardText.textContent = text;
                 //This is for the last updated text, however that isn't used.  Perhaps this can be reused for something else.
                 //var cardTextSmall = document.createElement('p');
                 //cardTextSmall.setAttribute('class', 'card-text');
@@ -304,7 +304,7 @@
                 //cardTextSmall.appendChild(small);
 
                 cardBody.appendChild(cardTitle);
-                cardBody.appendChild(cardText);
+                //cardBody.appendChild(cardText);
                 //cardBody.appendChild(cardTextSmall);
                 card.appendChild(cardBody);
 
@@ -328,13 +328,12 @@
 
                         var imageUrl = currentItem.imageUrl;
                         var imagePreviewUrl = currentItem.imagePreviewUrl;
-                        var title = currentItem.title;
                         var text = currentItem.text;
                         var imageID = currentItem.id;
                         var imagePositionX = currentItem.imagePositionY;
                         var imagePositionY = currentItem.imagePositionY;
 
-                        cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, title, text));
+                        cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, text));
                     });
                 }
 
@@ -379,7 +378,6 @@
                 var ImageID = media_attachments[i].id;
                 var imageUrl = media_attachments[i].url;
                 var imagePreviewUrl = media_attachments[i].preview_url;
-                var title = media_attachments[i].description;
                 var text = media_attachments[i].text;
                 var imagePositionX = (media_attachments[i].meta.focus.x * 100) + '%';
                 var imagePositionY = (media_attachments[i].meta.focus.y * 100) + '%';
@@ -395,7 +393,6 @@
                     imagePreviewUrl: imagePreviewUrl,
                     imagePositionX: imagePositionX,
                     imagePositionY: imagePositionY,
-                    title: title,
                     text: text,
                 };
 
@@ -546,10 +543,10 @@
                 var display_name = arr.attributedTo.split("/");
                 display_name = display_name[display_name.length - 1];
                 arr.account = {
-                url: arr.attributedTo,
-                avatar: "",
-                display_name: display_name,
-                username: display_name,
+                    url: arr.attributedTo,
+                    avatar: "",
+                    display_name: display_name,
+                    username: display_name,
                 };
             }
             if (!arr.created_at) {
@@ -614,102 +611,6 @@
             imageData.data.set(pixels);
             ctx.putImageData(imageData, 0, 0);
             return canvas.toDataURL();
-        }
-
-        function createCarouselOLD(media_attachments, id) {
-            // TODO: This is the old way of creating the carousel.  It should be updated to use the new design.
-            console.log("createCarousel()");
-            console.log(media_attachments);
-
-            var carousel = document.createElement('div');
-            carousel.id = 'carousel-' + id;
-            carousel.className = 'carousel slide d-flex align-items-center justify-content-center';
-
-            var indicators = document.createElement('div');
-            indicators.className = 'carousel-indicators';
-            carousel.appendChild(indicators);
-
-            var inner = document.createElement('div');
-            inner.className = 'carousel-inner ratio ratio-16x9';
-            carousel.appendChild(inner);
-
-            var controlPrev = document.createElement('button');
-            controlPrev.className = 'carousel-control-prev';
-            controlPrev.type = 'button';
-            controlPrev.dataset.bsTarget = '#carousel-' + id;
-            controlPrev.dataset.bsSlide = 'prev';
-            carousel.appendChild(controlPrev);
-
-            var controlNext = document.createElement('button');
-            controlNext.className = 'carousel-control-next';
-            controlNext.type = 'button';
-            controlNext.dataset.bsTarget = '#carousel-' + id;
-            controlNext.dataset.bsSlide = 'next';
-            carousel.appendChild(controlNext);
-
-            for (var i = 0; i < media_attachments.length; i++) {
-                var image_description = media_attachments[i].description;
-                var image_url = media_attachments[i].url;
-                var preview_url = media_attachments[i].preview_url;
-
-                var image_id = media_attachments[i].id;
-                var blurhash = media_attachments[i].meta.blurhash;
-
-                var button = document.createElement('button');
-                button.type = 'button';
-                button.dataset.bsTarget = '#carousel-' + id;
-                button.dataset.bsSlideTo = i;
-                button.className = i === 0 ? 'active' : '';
-                button.setAttribute('aria-label', 'Slide ' + (i + 1));
-                indicators.appendChild(button);
-
-                var item = document.createElement('div');
-                item.className = 'carousel-item' + (i === 0 ? ' active' : '');
-                inner.appendChild(item);
-
-                var img = document.createElement('img');
-                img.src = image_url;
-                img.id = image_id;
-                img.className = 'object-fit-cover img-fluid';
-                img.alt = image_description;
-                item.appendChild(img);
-
-                var caption = document.createElement('div');
-                caption.className = 'carousel-caption d-none d-md-block';
-                item.appendChild(caption);
-
-                var p1 = document.createElement('p');
-                p1.textContent = 'Slide label ' + (i + 1);
-                p1.className = 'p5';
-                caption.appendChild(p1);
-
-                var p2 = document.createElement('p');
-                p2.textContent = image_description + (i + 1);
-                p2.className = '';
-                caption.appendChild(p2);
-            }
-
-            var spanPrevIcon = document.createElement('span');
-            spanPrevIcon.className = 'carousel-control-prev-icon';
-            spanPrevIcon.setAttribute('aria-hidden', 'true');
-            controlPrev.appendChild(spanPrevIcon);
-
-            var spanPrevText = document.createElement('span');
-            spanPrevText.className = 'visually-hidden';
-            spanPrevText.textContent = 'Previous';
-            controlPrev.appendChild(spanPrevText);
-
-            var spanNextIcon = document.createElement('span');
-            spanNextIcon.className = 'carousel-control-next-icon';
-            spanNextIcon.setAttribute('aria-hidden', 'true');
-            controlNext.appendChild(spanNextIcon);
-
-            var spanNextText = document.createElement('span');
-            spanNextText.className = 'visually-hidden';
-            spanNextText.textContent = 'Next';
-            controlNext.appendChild(spanNextText);
-
-            return carousel;
         }
 
         /**
