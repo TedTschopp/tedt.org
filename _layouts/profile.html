@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+
+    {% include all-css-includes.html %}
+
+    <!-- END OF CSS INCLUDE -->
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+
+    <!-- Navbar -->
+    {% include top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <!-- Footer -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary h-card vcard" id="hcard-{{ site.givenname }}-{{ site.familyname }}">
+          <div class="row">
+            <div class="col col-lg-3 mb-3">
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=128&d=mp&r=g" class="rounded-circle img-thumbnail intro-image-avatar photo u-photo" alt="Photo of {{ site.givenname }} {{ site.familyname }}">
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="{{ site.siteurl }}" rel="me" class="u-url u-uid">
+                    <p class="h4"><span class="fs-5 fnp-name"><span class="p-given-name">{{ site.givenname }}</span> <span class="p-family-name">{{ site.familyname }}</span></span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <p class="h5" class="p-job-title">{{ site.jobtitle }}</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <p class="h5" class="p-job-title"><span class="p-locality">{{ site.locality }}</span>,
+                    <span class="p-region">{{ site.region }}</span>
+                    <span class="p-country-name">{{ site.country }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              <ul class="list-unstyled small p-note">
+                {% for paragraphs in site.biography %}
+                  {% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}
+                  <li class="mb-2">{{paragraph}}</li>
+                {% endfor %}
+                <span style="display: flex; justify-content: center;" class="h1">
+                    <!--<img src="{{ site.siteurl }}/img/Tschopp-HouseMark-Optimum.svg" class="p-note" style="height: 2em; width: 2em;" alt="logo">-->
+                    <i class="icon-tschopp-housemark-optimum"></i>
+                </span>
+              </ul>
+            </div>
+
+            {% assign categories = "" | split: "," %}
+            {% for link in site.links %}
+              {% unless categories contains link.Category %}
+                {% assign categories = categories | push: link.Category %}
+              {% endunless %}
+            {% endfor %}
+            
+            {% for Category in categories %}
+              {% if forloop.first %}
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3 h-100 ">
+              {% else %}
+                <div class="col-6 col-lg-2 mb-3 h-100 ">
+              {% endif %}
+              <p class="h5">{{ Category }}</p>
+                <ul class="list-unstyled">
+                {% for link in site.links %}
+                  {% if link.Category == Category %}
+                    <li class="mb-2">
+                      <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
+                        <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="row">
+            <div class="col-lg-3 mb-3 h-100 text-center text-lg-left my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="{{ site.siteurl }}/About/">About</a>
+                </li>
+                <!--
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#">Terms of Use</a>
+                </li> -->
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="{{ site.siteurl }}/Privacy-Policy/">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
+              <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp 2003 - <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  {% include js-bottom-of-body.html %}
+
+  </body>
+</html>
