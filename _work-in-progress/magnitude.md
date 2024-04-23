@@ -1,5 +1,3 @@
-Here's the filled table with detailed entries for the "Pocket Money Description" and other categories for the Rating 0:
-
 | Rating |             Area             |   People in a Group   | Duration BitD |      Range BitD       |     Tier     |   Quality    |                                   Quality                                    |                                    Force                                    |
 |:------:|:----------------------------:|:---------------------:|:-------------:|:---------------------:|:------------:|:------------:|:----------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
 |   0    |           A closet           |     1 or 2 people     | A few Moments |     Within reach      |     Poor     |     Weak     |    *A rusty knife, worn & tattered clothing, rickety shack on the street*    |             *A firm shove, a candle flame, breeze, tiny spark*              |

@@ -188,6 +188,27 @@
 
                 <!-- Blog Categories Well -->
                 <div class="well">
+                    <div class="table-of-contents">
+                        <div class="col-12">
+                            <div class="card h-100">
+                                <div class="col-12">
+                                    <div class="card h-100 position-relative">
+                                        <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{category}}">
+                                        <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
+                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a style="text-decoration: none;" href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}} {% include category-emoji.html category=category %}</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-1 pb-1 p-4" id="insert-table-of-contents-here"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Blog Categories Well -->
+                <div class="well">
                     <div class="post-categories">
                         <div class="col-12">
 
@@ -252,6 +273,8 @@
 
     <!-- Footer -->
     {% include footer.html %}
+
+    <script src="/js/generate-table-of-contents.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     {% include js-bottom-of-body.html %}
