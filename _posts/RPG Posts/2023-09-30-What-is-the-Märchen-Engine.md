@@ -54,48 +54,6 @@ mathjax: false
 
 order:
 ---
-- [Introduction](#introduction)
-  - [What Is Roleplaying?](#what-is-roleplaying)
-  - [What Is the Märchen Engine?](#what-is-the-märchen-engine)
-  - [Iconography](#iconography)
-    - [Dice Symbols](#dice-symbols)
-    - [Time Symbols](#time-symbols)
-    - [Skill Symbols](#skill-symbols)
-  - [The Basic Assumptions](#the-basic-assumptions)
-    - [Have Fun](#have-fun)
-      - [Fun for Players](#fun-for-players)
-      - [Fun for Referees?](#fun-for-referees)
-      - [When Referees are having a hard time](#when-referees-are-having-a-hard-time)
-    - [Stay in Communication](#stay-in-communication)
-    - [Embrace Diversity](#embrace-diversity)
-    - [Value Others' Time](#value-others-time)
-    - [Stay Engaged](#stay-engaged)
-    - [Share the Spotlight](#share-the-spotlight)
-    - [Keep the Game Flowing](#keep-the-game-flowing)
-    - [Be a Gracious Guest](#be-a-gracious-guest)
-  - [The Core Task Resolution System](#the-core-task-resolution-system)
-  - [Referee](#referee)
-  - [Characters](#characters)
-    - [Player Characters](#player-characters)
-      - [Associates, PCs, Heroes](#associates-pcs-heroes)
-    - [The Company](#the-company)
-      - [Sanctuary](#sanctuary)
-      - [Patron](#patron)
-      - [First Meeting](#first-meeting)
-      - [Relationships](#relationships)
-      - [Rating](#rating)
-    - [Other Characters](#other-characters)
-      - [Companion](#companion)
-      - [Allies](#allies)
-      - [Contacts](#contacts)
-      - [Rivals](#rivals)
-      - [Enemies](#enemies)
-      - [Hirelings](#hirelings)
-        - [Mercenaries](#mercenaries)
-        - [Retainers](#retainers)
-        - [Specialists](#specialists)
-
-
 
 # Introduction
 

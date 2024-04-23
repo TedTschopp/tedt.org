@@ -74,11 +74,7 @@ order:
 </style>
 
 
-# Contents
-{:.no_toc}
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 # Character Status, Communities, and Cryptic Alliances AKA How Gamma World does Alignment
 

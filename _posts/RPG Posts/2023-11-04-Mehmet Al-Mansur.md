@@ -45,34 +45,6 @@ order:
 
 ---
 
-- [Character Sheet](#character-sheet)
-  - [Attributes:](#attributes)
-  - [Secondary Attributes:](#secondary-attributes)
-  - [Advantages:](#advantages)
-  - [Disadvantages:](#disadvantages)
-  - [Quirks:](#quirks)
-  - [Skills](#skills)
-  - [Equipment](#equipment)
-  - [Character Background](#character-background)
-    - [Mehmet Al-Mansur's Travelogue and Diary: A Journey of Mystical](#mehmet-al-mansurs-travelogue-and-diary-a-journey-of-mystical)
-      - [1900 - Istanbul, Ottoman Empire](#1900---istanbul-ottoman-empire)
-      - [1902 - Istanbul, Ottoman Empire](#1902---istanbul-ottoman-empire)
-      - [1905 - Cairo, Egypt](#1905---cairo-egypt)
-      - [1908 - Varanasi, India](#1908---varanasi-india)
-      - [1910 - Samarkand, Russian Empire (Present-day Uzbekistan)](#1910---samarkand-russian-empire-present-day-uzbekistan)
-      - [1915 - Istanbul, Ottoman Empire](#1915---istanbul-ottoman-empire)
-      - [1920 - Paris, France](#1920---paris-france)
-  - [Character's Routine in Paris](#characters-routine-in-paris)
-    - [Paris Police Department](#paris-police-department)
-  - [Aspects of Islamic Mysticism:](#aspects-of-islamic-mysticism)
-  - [Rules of for the Sihirbaz Yeniçerileri Dergahı](#rules-of-for-the-sihirbaz-yeniçerileri-dergahı)
-    - [Awards](#awards)
-      - [Awards of the Ottoman Emperal Military](#awards-of-the-ottoman-emperal-military)
-      - [Awards of the Sihirbaz Yeniçerileri Dergahı](#awards-of-the-sihirbaz-yeniçerileri-dergahı)
-      - [Classes of Awards](#classes-of-awards)
-    - [Rules](#rules)
-
-
 # Character Sheet
 
 **Character Concept:** Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920s. He is a former member of the Sultan\'s Sihirbaz Yeniçerileri, a sorcerer corps, skilled in mystical arts and in combat. He is is dedicated to providing safe passage for magical creatures and djinn to the Western world for eventual resettlement in the Americas. He also possesses skills acquired during his service as an Ottoman soldier.
