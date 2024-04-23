@@ -28,26 +28,24 @@ function generateTOC(tocContainerId) {
     // Create the table of contents container
     const toc = document.createElement('div');
     toc.id = 'toc';
-    toc.innerHTML = '<p class="h4">Table of Contents</p>';
     let currentLevel = 0;
-    let currentList = document.createElement('ul');
-
-    toc.appendChild(currentList);
+    let currentList = toc; // Initialize currentList as toc
 
     // Build a nested list structure based on heading levels
     headings.forEach(heading => {
         const level = parseInt(heading.tagName.substring(1), 10);
 
         // Adjust the list level based on heading level
-        while (level > currentLevel) {
+        if (level > currentLevel) {
             const newList = document.createElement('ul');
             currentList.appendChild(newList);
             currentList = newList;
             currentLevel++;
-        }
-        while (level < currentLevel) {
-            currentList = currentList.parentElement;
-            currentLevel--;
+        } else {
+            while (level < currentLevel) {
+                currentList = currentList.parentElement;
+                currentLevel--;
+            }
         }
 
         // Add the heading to the table of contents
