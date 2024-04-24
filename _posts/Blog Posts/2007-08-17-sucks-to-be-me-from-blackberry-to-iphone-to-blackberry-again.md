@@ -20,8 +20,8 @@ author:
 
 bullets:
 
-description:
-seo-description:
+description: An unexpected visit to the Apple Store after shattering an iPhone screen, revealing surprising service inconsistencies and policy variations across locations. Learn about the challenges and costs of cosmetic damage, the difficulty in obtaining a loaner device, and insights on customer service in the tech industry.
+seo-description: An unexpected visit to the Apple Store after shattering an iPhone screen, revealing surprising service inconsistencies and policy variations across locations. Learn about the challenges and costs of cosmetic damage, the difficulty in obtaining a loaner device, and insights on customer service in the tech industry.
 
 categories:
 - Computers
@@ -48,7 +48,7 @@ image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:
 image-description:
-image-title:
+image-title: IPhone and Blackberry
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
