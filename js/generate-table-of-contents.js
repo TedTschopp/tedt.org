@@ -27,7 +27,7 @@ function generateTOC(tocContainerId) {
 
     // Create the table of contents container
     const toc = document.createElement('div');
-    toc.id = 'toc';
+    toc.id = 'table-of-contents-container';
     let currentLevel = 0;
     let currentList = toc; // Initialize currentList as toc
 
