@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var htmlContent = '<a href="javascript:history.back()" class="text-decoration-none float-end">&#x2191;</a>';
+    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
 
     // Select all headline tags (h1 to h6)
     $(':header').each(function() {

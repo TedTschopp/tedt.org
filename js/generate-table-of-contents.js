@@ -52,7 +52,7 @@ function generateTOC(tocContainerId) {
         const listItem = document.createElement('li');
         const anchor = document.createElement('a');
         anchor.textContent = heading.textContent;
-        anchor.href = `#${heading.id}`;
+        anchor.href = document.location+`#${heading.id}`;
 
         listItem.appendChild(anchor);
         currentList.appendChild(listItem);
