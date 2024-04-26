@@ -23,7 +23,7 @@ function addAnchorTagsToParagraphs(html) {
 
       // Create the closing anchor tag
       const closingAnchor = doc.createElement("a");
-      closingAnchor.href = `#`+firstFiveLetters;
+      closingAnchor.href = document.location+`#`+firstFiveLetters;
       closingAnchor.textContent = `¶`;
       closingAnchor.classList.add("Winerlink");
       paragraph.appendChild(closingAnchor);
