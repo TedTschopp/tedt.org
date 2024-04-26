@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function generateTOC(tocContainerId) {
     // Find the article element
-    const article = document.querySelector('article');
+    const article = document.getElementById('content-column');
     if (!article) {
         console.log('Article tag not found.');
         return;
@@ -37,7 +37,7 @@ function generateTOC(tocContainerId) {
 
         // Adjust the list level based on heading level
         if (level > currentLevel) {
-            const newList = document.createElement('ul');
+            const newList = document.createElement('ol');
             currentList.appendChild(newList);
             currentList = newList;
             currentLevel++;
