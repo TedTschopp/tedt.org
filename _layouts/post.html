@@ -154,8 +154,7 @@
                         </div>
                         <div class="card-footer p-4 py-3 h-100">
                             {% include progress-bar.html %}
-                            <div class="card h-100 no-padding float-end">
-
+                            <div class="card h-100 no-padding d-none d-lg-block float-end">
                                 <div class="col-12">
                                     <div class="card h-100 position-relative">
                                         <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/table-of-contents.webp" alt="{{category}}">
@@ -166,7 +165,6 @@
                                     </div>
                                 </div>
                                 <div class="card-body pt-1 pb-1 p-4" id="insert-table-of-contents-here"></div>
-        
                             </div>                   
                             <span class="e-content" id="main_content">{{ content }}</span>
                         </div>
