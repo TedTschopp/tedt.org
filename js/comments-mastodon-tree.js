@@ -748,3 +748,11 @@
         var skippedFirst = false;
 
         var indentCountPerId = [];
+
+        var mastodonhost = "{{site.mastodon_comments.host}}";
+        var mastodonpostid = "{{page.mastodon-post-id}}";
+
+        window.onload = processHash(mastodonhost, mastodonpostid);
+        window.onhashchange = function () {
+            location.reload();
+        };
