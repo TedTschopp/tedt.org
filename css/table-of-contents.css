@@ -12,7 +12,7 @@
 }
 
 #table-of-contents-container li:before {
-    content: counters(item, ".") ". ";
+    content: counters(item, ".") " ";
     display: table-cell;
     padding-right: 0.6em;
     font-family: monospace; /* Add this line */
