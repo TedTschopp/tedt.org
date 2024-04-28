@@ -14,14 +14,14 @@ function generateTOC(tocContainerId) {
     // Find the article element
     const article = document.getElementById('content-column');
     if (!article) {
-        console.log('Article tag not found.');
+        console.log('Content not found.');
         return;
     }
 
     // Collect all heading tags within the article
     const headings = article.querySelectorAll('h1, h2, h3, h4, h5, h6');
     if (headings.length === 0) {
-        console.log('No headings found in the article.');
+        console.log('No headings found in the content.');
         return;
     }
 
