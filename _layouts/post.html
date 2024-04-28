@@ -177,10 +177,10 @@
                 {% include comments-mastodon-tree.html %}
 
                 <script type="JavaScript">
-                    var mastodonhost = {{site.mastodon_comments.host}};
-                    var mastodonpostid = {{page.mastodon-post-id}};
+                    var mastodonhost = "{{site.mastodon_comments.host}}";
+                    var mastodonpostid = "{{page.mastodon-post-id}}";
 
-                    window.onload = processHash (mastodonhost, mastodonpostid);
+                    window.onload = processHash(mastodonhost, mastodonpostid);
                     window.onhashchange = function () {
                         location.reload();
                     };
