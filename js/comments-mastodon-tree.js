@@ -1,3 +1,6 @@
+---
+---
+
         //I think this is ready for testing, however I still need to wire it into the displayToot function.  
         //I also need to update the createCarousel function to use the new design.
 
@@ -651,14 +654,14 @@
          *
          * @returns {void}
          */
-         function processHash() {
+         function processHash(mastodonHost, mastodonpostid) {
             var url = getHashVariable("url");
             if (url != "" && url != lastUrl) {
                 lastUrl = url;
                 loadTootThread(url, "displayToot");
             } else {
                 loadTootThread(
-                    "https://{{site.mastodon_comments.host}}/@Ted/{{page.mastodon-post-id}}",
+                    "https://"+mastodonHost+"/@Ted/"+mastodonpostid,
                     "displayToot"
                 );
             }
@@ -745,9 +748,3 @@
         var skippedFirst = false;
 
         var indentCountPerId = [];
-        
-        window.onload = processHash;
-        window.onhashchange = function () {
-            location.reload();
-        };
-
