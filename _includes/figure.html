@@ -1,14 +1,13 @@
-<figure>
+<div class="{{ include.div-class }}">
+<figure class="figure">
    <a href="{{ include.url }}">
-   <img src="{{ include.file }}" style="max-width: {{ include.max-width }};"
-      alt="{{ include.alt }}"/>
+   <img src="{{ include.file }}" class="img-fluid img-thumbnail figure-img float-end" 
+      alt="{{ include.alt-txt }}"/>
    </a>
-   <figcaption>{{ include.caption }}</figcaption>
+   <figcaption class="figure-caption">{{ include.caption }}</figcaption>
 </figure>
-
-
-
-
+</div>
+{% comment %}
 <!--
 
 <figure>
@@ -60,4 +59,4 @@ function NavigatorExample() {
 
 
 --->
-
+{% endcomment %}

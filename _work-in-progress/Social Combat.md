@@ -1,60 +1,73 @@
-Bold deeds and heroic acts of courageous men adorned in glittering armor and wielding shining swords in the defense of fair maidens live large in the minds of the young and naïve. But behind the endless ranks of knights and soldiers are the true movers and shakers of the land. The swords and those who wield them are capable of much destruction, but they are tools all the same, to be used and discarded as need be. The ones who guide these weapons are those versed in the game of thrones, the political machinations that can ignite a war or bring peace to a ravaged land. Intrigue and its masters hold true power in Westeros, and their Cunning is just as deadly as the greatest knight in the Seven Kingdoms.
+Bold deeds and heroic acts of courageous men adorned in glittering armor and wielding shining swords in the defense of fair maidens live large in the minds of the young and naïve. But behind the endless ranks of knights and soldiers are the true movers and shakers of the land. The swords and those who wield them are capable of much destruction, but they are tools all the same, to be used and discarded as need be. The ones who guide these weapons are those versed in the game of thrones, the political machinations that can ignite a war or bring peace to a ravaged land. **Engagement** and its masters hold true power in Westeros, and their Cunning is just as deadly as the greatest knight in the Seven Kingdoms.
 
-# Intrigue Essentials
+# **Engagement** Essentials
 
-Intrigues have two essential components: the exchange and Influence. Exchanges are the framework in which the Intrigue unfolds, while Influence describes the objective of each participant in each exchange.
+**Engagement**s have two essential components: the exchange and Influence. Exchanges are the framework in which the **Engagement** unfolds, while Influence describes the objective of each participant in each exchange.
 
 ## The Exchange
 
-Much of what happens during an Intrigue occurs without need of the rigorous framework found in other parts of this game; players play the parts of their characters and roleplay through the negotiations, making their cases, bribing, or intimidating as the situation warrants. That said, intrigues do follow a loose structure to ensure that each player has a chance to affect the outcome and simulate the expertise found in characters who excel in these environments.
+Much of what happens during an **Engagement** occurs without need of the rigorous framework found in other parts of this game; players play the parts of their characters and roleplay through the negotiations, making their cases, bribing, or intimidating as the situation warrants. That said, intrigues do follow a loose structure to ensure that each player has a chance to affect the outcome and simulate the expertise found in characters who excel in these environments.
 
-Effectively, an Intrigue is broken up into loose units called exchanges. An exchange is not a fixed amount of time: one exchange might last just a few seconds, while another might extend for hours. The Narrator assesses the time that passes based on the amount of time spent roleplaying while also accounting for the circumstances surrounding the Intrigue.
+Effectively, an **Engagement** is broken up into loose units called exchanges. An exchange is not a fixed amount of time: one exchange might last just a few seconds, while another might extend for hours. The Narrator assesses the time that passes based on the amount of time spent roleplaying while also accounting for the circumstances surrounding the **Engagement**.
 
-During an exchange, each participant has a turn to Act. On a turn, the player rolls ability tests or performs some other maneuver to shift the Intrigue in their favor. Once each player has had a turn, the exchange ends, and either the Intrigue resolves or a new exchange begins.
+During an exchange, each participant has a turn to Act. On a turn, the player rolls ability tests or performs some other maneuver to shift the **Engagement** in their favor. Once each player has had a turn, the exchange ends, and either the **Engagement** resolves or a new exchange begins.
 
 ## Influence
 
-The aim of every Intrigue is to gain enough Influence to compel your opponent to say, reveal, do, or Act as you want. Whether you’re trying to change a person’s mind, pass yourself as someone or something else, or even just get them into bed, the process is the same. In a way, Influence
+The aim of every **Engagement** is to gain enough Influence to compel your opponent to say, reveal, do, or Act as you want. Whether you’re trying to change a person’s mind, pass yourself as someone or something else, or even just get them into bed, the process is the same. In a way, Influence
 
-functions a lot like damage. As with combat, you roll a conflict test, using Deception or Persuasion, against your opponent’s Intrigue Defense. A success generates an amount of Influence that applies against your target’s Composure. Once you reduce an opponent’s Composure to 0, you defeat him or her and decide the Consequences.
+functions a lot like damage. As with combat, you roll a conflict test, using Deception or Persuasion, against your opponent’s **Engagement** Defense. A success generates an amount of Influence that applies against your target’s Composure. Once you reduce an opponent’s Composure to 0, you defeat him or her and decide the Consequences.
 
-# Intrigue STATISTICS
+# **Engagement** STATISTICS
 
-Several abilities describe your effectiveness in an Intrigue. From them, you derive the information you need to engage in dangerous exchanges and shape the future of your lands. What follows is a summary of the game’s Intrigue statistics and the methods for coming up with your derived statistics.
+Several abilities describe your effectiveness in an **Engagement**. From them, you derive the information you need to engage in dangerous exchanges and shape the future of your lands. What follows is a summary of the game’s **Engagement** statistics and the methods for coming up with your derived statistics.
 
 ## Abilities
 
-All of the following abilities directly describe your capabilities in matters of Intrigue.
+All of the following abilities directly describe your capabilities in matters of **Engagement**.
 
-### Awareness
 
-You use Awareness to gauge your opponent’s motives—to watch for misdirection and subterfuge.
-
-* Add your Awareness rank to your Intrigue Defense.
 
 ### Cunning
 
 Cunning measures your wit and mental dexterity, essential characteristics in successful social combat.
 
-* Add your Cunning rank to your Intrigue Defense.
+* Add your Cunning rank to your **Engagement** Defense.
 
-### Deception
+### Deception ✓
 
 One of the key tools in intrigues, Deception is a critical ability for masking your intentions and influencing a target using misdirection and false pretenses.
 
-* You may roll Deception tests to Influence a target.
+* You may roll Deception tests to Influence a target.  
 
-### Persuasion
+### Persuasion ✓
 
 Another vital ability, Persuasion represents your talents at bargaining, seduction, charm, and a variety of social skills.
 
 * You may roll Persuasion tests to Influence a target.
 
+### Intimitation 
+
+{May only be used to escalate to violence}
+
+### Style
+
+### Performance
+
+### Etiquette
+
+### Perception ✓
+
+You use Perception to gauge your opponent’s motives—to watch for misdirection and subterfuge.
+
+* Add your Perception rank to your **Engagement** Defense.
+
+
 ### Status
 
 Status describes your character’s social standing, his class, and rank within society.
 
-* You add your Status rank to your Intrigue Defense.
+* You add your Status rank to your **Engagement** Defense.
 * You roll a Status test to determine your place in the order of initiative.
 
 ### Will
@@ -63,17 +76,19 @@ Self-control, resolve, and commitment—Will describes your endurance and stamin
 
 * Your Composure is equal to 3 × your Will rank.
 
-## Intrigue Defense
 
-The first line of defense against Influence is your Intrigue Defense. This derived ability combines your perceptiveness, intelligence, and social standing.
+
+## **Engagement** Defense
+
+The first line of defense against Influence is your **Engagement** Defense. This derived ability combines your perceptiveness, intelligence, and social standing.
 
 Your Combat Defense equals:
 
-$Intrigue defense = awareness + Cunning + Status + Circumstantial\thickspace Bonuses$
+$**Engagement** defense = awareness + Cunning + Status + Circumstantial\thickspace Bonuses$
 
 > #### EXAMPLE
 > 
-> Nicole’s noble has Awareness 3, Cunning 4, and Status 5. Adding up her ranks in these abilities, her Intrigue Defense is 12.
+> Nicole’s noble has Awareness 3, Cunning 4, and Status 5. Adding up her ranks in these abilities, her **Engagement** Defense is 12.
 
 ## Composure
 
@@ -85,9 +100,9 @@ Composure = Will rank × 3
 > 
 > Nicole’s noble has Will 4, so her Composure is 12.
 
-# Intrigue Structure
+# **Engagement** Structure
 
-Whenever a social situation arises that cannot be resolved through roleplaying alone, an Intrigue occurs. Such encounters can include negotiations and interrogations but can also represent seduction, forging alliances, provoking attacks, and a variety of other actions. All intrigues follow the same steps, which are described in detail throughout the rest of this chapter:
+Whenever a social situation arises that cannot be resolved through roleplaying alone, an **Engagement** occurs. Such encounters can include negotiations and interrogations but can also represent seduction, forging alliances, provoking attacks, and a variety of other actions. All intrigues follow the same steps, which are described in detail throughout the rest of this chapter:
 
 | Step   | Name              |
 |--------|-------------------|
@@ -103,15 +118,15 @@ Whenever a social situation arises that cannot be resolved through roleplaying a
 
 ## Step One: Type
 
-An Intrigue is a conflict of words, a careful exchange of negotiations, Persuasion, and subterfuge. Intrigue is the process of modifying another character’s behavior to Convince or compel an opponent to Act or believe in a specific way. Through an Intrigue, you might cultivate an alliance, seduce a withdrawn noblewoman, smear a rival’s name, or intimidate a dire enemy. At first blush, an Intrigue may not seem at all dangerous, but a critical negotiation can be every bit as deadly as the sword.
+An **Engagement** is a conflict of words, a careful exchange of negotiations, Persuasion, and subterfuge. **Engagement** is the process of modifying another character’s behavior to Convince or compel an opponent to Act or believe in a specific way. Through an **Engagement**, you might cultivate an alliance, seduce a withdrawn noblewoman, smear a rival’s name, or intimidate a dire enemy. At first blush, an **Engagement** may not seem at all dangerous, but a critical negotiation can be every bit as deadly as the sword.
 
-All intrigues fall into one of three types: simple, standard, and complex. Each type reflects the nature of the challenge, the number and types of participants involved, and finally, the intended outcome. Intrigue types and the conditions for them to occur follow.
+All intrigues fall into one of three types: simple, standard, and complex. Each type reflects the nature of the challenge, the number and types of participants involved, and finally, the intended outcome. **Engagement** types and the conditions for them to occur follow.
 
-### Simple Intrigues
+### Simple **Engagement**s
 
-The most common and easiest to use, simple intrigues handle all the basic interactions between the PCs and minor Narrator characters. Simple intrigues are useful for bluffing your way past a guard, pretending to be someone other than you are, or ferreting out information in a relaxed environment. Generally, simple intrigues are used when the intended outcome (what you hope to achieve or what you want your opponent to do) is not out of character for your opponent. For example, if you were trying to seduce a woman that’s already attracted to you, a simple Intrigue will suffice to see if she’ll give in to your advances.
+The most common and easiest to use, simple intrigues handle all the basic interactions between the PCs and minor Narrator characters. Simple intrigues are useful for bluffing your way past a guard, pretending to be someone other than you are, or ferreting out information in a relaxed environment. Generally, simple intrigues are used when the intended outcome (what you hope to achieve or what you want your opponent to do) is not out of character for your opponent. For example, if you were trying to seduce a woman that’s already attracted to you, a simple **Engagement** will suffice to see if she’ll give in to your advances.
 
-Simple intrigues are also used to resolve exchanges between characters with large disparities between their Status abilities. Whenever you try to Influence another character whose Status is 3 or more ranks lower than yours, you may use a simple Intrigue to handle the exchange.
+Simple intrigues are also used to resolve exchanges between characters with large disparities between their Status abilities. Whenever you try to Influence another character whose Status is 3 or more ranks lower than yours, you may use a simple **Engagement** to handle the exchange.
 
 Simple intrigues have the following characteristics:
 
@@ -119,9 +134,9 @@ Simple intrigues have the following characteristics:
 * Involve a single test.
 * Have short-term Consequences.
 
-### Standard Intrigues
+### Standard **Engagement**s
 
-Standard intrigues arise when a simple Intrigue won’t suffice. Usually, standard intrigues come into play when PCs and major Narrator characters try to Influence each other. These exchanges can involve convincing another character to do something potentially dangerous or out of character, to Bargain for a much better price, or to intimidate someone into coughing up guarded information. As a good rule of thumb, standard intrigues occur whenever your intended outcome is dangerous for your opponent or out of character. For example, trying to seduce a noble’s wife would require a standard Intrigue.
+Standard intrigues arise when a simple **Engagement** won’t suffice. Usually, standard intrigues come into play when PCs and major Narrator characters try to Influence each other. These exchanges can involve convincing another character to do something potentially dangerous or out of character, to Bargain for a much better price, or to intimidate someone into coughing up guarded information. As a good rule of thumb, standard intrigues occur whenever your intended outcome is dangerous for your opponent or out of character. For example, trying to seduce a noble’s wife would require a standard **Engagement**.
 
 Standard intrigues have the following characteristics:
 
@@ -131,9 +146,9 @@ Standard intrigues have the following characteristics:
 
 ### Complex intrigues
 
-Above standard and simple intrigues stand complex intrigues. These exchanges are challenging, involving convoluted negotiations, Cunning interplays, and usually a variety of opponents. A complex Intrigue consists of several standard intrigues whose outcome influences the outcome of the complex Intrigue. In a way, these standard intrigues represent the battles, and complex Intrigue describes the war. You use complex intrigues whenever your outcome has far-reaching Consequences, when
+Above standard and simple intrigues stand complex intrigues. These exchanges are challenging, involving convoluted negotiations, Cunning interplays, and usually a variety of opponents. A complex **Engagement** consists of several standard intrigues whose outcome influences the outcome of the complex **Engagement**. In a way, these standard intrigues represent the battles, and complex **Engagement** describes the war. You use complex intrigues whenever your outcome has far-reaching Consequences, when
 
-your objectives involve several Narrator characters, and when the outcome is particularly dangerous. A good example of complex Intrigue is the building of alliances to help support your house’s invasion of a neighboring lord. To prevent other houses from rallying toward your rival’s cause, you likely have to treat with other lords to gain their assistance or at the very least their noninterference. As well, you’ll probably deal with merchants, negotiating to get a better price for weapons, horses, and materials, to say nothing of trying to appease your own lord to make a case for the attack in the first place.
+your objectives involve several Narrator characters, and when the outcome is particularly dangerous. A good example of complex **Engagement** is the building of alliances to help support your house’s invasion of a neighboring lord. To prevent other houses from rallying toward your rival’s cause, you likely have to treat with other lords to gain their assistance or at the very least their noninterference. As well, you’ll probably deal with merchants, negotiating to get a better price for weapons, horses, and materials, to say nothing of trying to appease your own lord to make a case for the attack in the first place.
 
 Complex intrigues have the following characteristics:
 
@@ -144,27 +159,27 @@ Complex intrigues have the following characteristics:
 
 ### Victory Points
 
-Victory points are a feature of complex intrigues, those engagements where defeating an opponent is not enough to achieve the overarching objective. Before a complex Intrigue begins, you must decide what it is you’re after. Your Narrator may decide the objective can be attained with a standard Intrigue, but in complex plots, you’re likely to have to defeat multiple foes in several intrigues to set up the events in a way that realizes your plan.
+Victory points are a feature of complex intrigues, those confrontations where defeating an opponent is not enough to achieve the overarching objective. Before a complex **Engagement** begins, you must decide what it is you’re after. Your Narrator may decide the objective can be attained with a standard **Engagement**, but in complex plots, you’re likely to have to defeat multiple foes in several intrigues to set up the events in a way that realizes your plan.
 
-To track your progress in a complex Intrigue, your Narrator sets a number of Victory Points required to complete your agenda. Three points are typical, but extremely complex plans may require six or more. Each time you defeat a foe in an Intrigue that relates to the complex Intrigue, you resolve the Consequences of Intrigue as normal and earn a Victory Point. Each time you fail to defeat a foe in an Intrigue, you make no progress, and if you are defeated, you lose a Victory Point. Once you have accumulated the requisite number of Victory Points, your Intrigue is complete, and your plans are enacted.
+To track your progress in a complex **Engagement**, your Narrator sets a number of Victory Points required to complete your agenda. Three points are typical, but extremely complex plans may require six or more. Each time you defeat a foe in an **Engagement** that relates to the complex **Engagement**, you resolve the Consequences of **Engagement** as normal and earn a Victory Point. Each time you fail to defeat a foe in an **Engagement**, you make no progress, and if you are defeated, you lose a Victory Point. Once you have accumulated the requisite number of Victory Points, your **Engagement** is complete, and your plans are enacted.
 
 ## Step Two: Scene
 
-Once the type of Intrigue is determined, the Narrator sets the scene by describing the location and identifying the participants involved.
+Once the type of **Engagement** is determined, the Narrator sets the scene by describing the location and identifying the participants involved.
 
 ### Location
 
-Location can be a critical factor in deciding the outcome of an Intrigue. Certain environments are more conducive to an Intrigue than others. For instance, trying to seduce a pious noblewoman inside a sept is far more difficult than seducing an enthusiastic serving girl in the shadows of a darkened hall. The appropriateness of the venue may bestow a bonus to a character’s Intrigue Defense, usually a +3 bonus for awkward environments, +6 for inappropriate locations, and +12 or more for wildly inappropriate settings. An awkward environment might be bargaining for a sellsword’s service in front of a current employer. An inappropriate location would be trying to intimidate a young noble while his father looks on, and a wildly inappropriate setting would be trying to seduce a Silent Sister on a battlefield littered with the dead and dying.
+Location can be a critical factor in deciding the outcome of an **Engagement**. Certain environments are more conducive to an **Engagement** than others. For instance, trying to seduce a pious noblewoman inside a sept is far more difficult than seducing an enthusiastic serving girl in the shadows of a darkened hall. The appropriateness of the venue may bestow a bonus to a character’s **Engagement** Defense, usually a +3 bonus for awkward environments, +6 for inappropriate locations, and +12 or more for wildly inappropriate settings. An awkward environment might be bargaining for a sellsword’s service in front of a current employer. An inappropriate location would be trying to intimidate a young noble while his father looks on, and a wildly inappropriate setting would be trying to seduce a Silent Sister on a battlefield littered with the dead and dying.
 
 ### Participants
 
-Most intrigues are between two characters at a time, though multiple intrigues can occur simultaneously between multiple pairs. When a character addresses a large audience, that audience usually looks to a leader to represent their interests, so even though there are numerous individuals involved, the Intrigue can be settled between two opponents. On the other hand, an Intrigue may feature participants who are supported by allies and advisors. Such periphery characters can modify the intrigue’s outcome by encouraging or mollifying the primary negotiator—bolstering his resolve or deflecting the Influence of his opponent.
+Most intrigues are between two characters at a time, though multiple intrigues can occur simultaneously between multiple pairs. When a character addresses a large audience, that audience usually looks to a leader to represent their interests, so even though there are numerous individuals involved, the **Engagement** can be settled between two opponents. On the other hand, an **Engagement** may feature participants who are supported by allies and advisors. Such periphery characters can modify the intrigue’s outcome by encouraging or mollifying the primary negotiator—bolstering his resolve or deflecting the Influence of his opponent.
 
 ## Step Three: Objective
 
-The core of every Intrigue is your objective—what you hope to achieve by engaging in the Intrigue in the first place. An objective is your motivation; it’s what you want your opponent to do or say, as well as what action you want him to perform or a development you want to prevent. Without an objective, you don’t have an intrigue—you’re just roleplaying, which, of course, has a place in the game but doesn’t often advance the story in significant ways.
+The core of every **Engagement** is your objective—what you hope to achieve by engaging in the **Engagement** in the first place. An objective is your motivation; it’s what you want your opponent to do or say, as well as what action you want him to perform or a development you want to prevent. Without an objective, you don’t have an intrigue—you’re just roleplaying, which, of course, has a place in the game but doesn’t often advance the story in significant ways.
 
-Objectives tend to live in the background of the Intrigue, unrevealed until you or your opponent are defeated. Objectives don’t correspond to abilities but arise from the needs of the story and the scenario in which you are currently involved. Your objective colors your roleplaying and gives you a position from which you can argue. What follows is a broad selection of normal objectives that prompt intrigues. This list is by no means complete, but it gives you a good foundation for coming up with objectives relevant to your situation in the game.
+Objectives tend to live in the background of the **Engagement**, unrevealed until you or your opponent are defeated. Objectives don’t correspond to abilities but arise from the needs of the story and the scenario in which you are currently involved. Your objective colors your roleplaying and gives you a position from which you can argue. What follows is a broad selection of normal objectives that prompt intrigues. This list is by no means complete, but it gives you a good foundation for coming up with objectives relevant to your situation in the game.
 
 ### Friendship
 
@@ -172,7 +187,7 @@ Many intrigues involve cultivating alliances and forging friendships, whether fo
 
 ### Information
 
-Knowledge is power, to cite a cliché, and information stands as one of the most common objectives for engaging in an Intrigue. With this objective, you hope to acquire guarded or secret information, to learn rumors, gossip, and anything else you might need to get the edge against your enemies. Information might involve maneuvering in the court of King Robert or trawling the streets of King’s Landing listening for useful whispers. Regardless, information is a valuable commodity and vital for navigating the perils of the game of thrones.
+Knowledge is power, to cite a cliché, and information stands as one of the most common objectives for engaging in an **Engagement**. With this objective, you hope to acquire guarded or secret information, to learn rumors, gossip, and anything else you might need to get the edge against your enemies. Information might involve maneuvering in the court of King Robert or trawling the streets of King’s Landing listening for useful whispers. Regardless, information is a valuable commodity and vital for navigating the perils of the game of thrones.
 
 ### Service
 
@@ -184,13 +199,13 @@ You may also engage in intrigues to dupe your opponent, feeding false informatio
 
 ### Changing Objectives
 
-There are bound to be times when you enter an Intrigue hoping to come away with one thing and discover something much more interesting after the first or second exchange. At the start of a new exchange, you may change your objective, but if you do, your opponent automatically recovers an amount of Composure equal to his Will rank.
+There are bound to be times when you enter an **Engagement** hoping to come away with one thing and discover something much more interesting after the first or second exchange. At the start of a new exchange, you may change your objective, but if you do, your opponent automatically recovers an amount of Composure equal to his Will rank.
 
 ## Step Four: Disposition
 
-A Disposition describes a particular outlook as it relates to a character’s opponent, describing whether the character sees you in a good light or bad, whether he intends you harm or wants to help you. Dispositions are useful roleplaying devices, establishing parameters about how you might play your character during the Intrigue and helping to frame your responses and reactions. Moreover, Disposition also acts as a form of “armor,” protecting you from your opponent’s Influence. It’s far more difficult to Convince a person who hates you to help than a person who loves you. Thus, whenever your opponent would apply his or her Influence to your Composure, you first reduce the amount by your Disposition Rating (or DR).
+A Disposition describes a particular outlook as it relates to a character’s opponent, describing whether the character sees you in a good light or bad, whether he intends you harm or wants to help you. Dispositions are useful roleplaying devices, establishing parameters about how you might play your character during the **Engagement** and helping to frame your responses and reactions. Moreover, Disposition also acts as a form of “armor,” protecting you from your opponent’s Influence. It’s far more difficult to Convince a person who hates you to help than a person who loves you. Thus, whenever your opponent would apply his or her Influence to your Composure, you first reduce the amount by your Disposition Rating (or DR).
 
-Disposition also interacts with your efforts at Deception and Persuasion, by providing bonuses or imposing penalties to your test results. It’s rather difficult to mask your disdain when trying to befriend a long-time enemy, just as it’s hard to dupe a person you love. The effects of Disposition on your words, body language, and other elements of the Intrigue can’t be understated. You might armor yourself in scorn but find yourself powerless to change the thinking of those around you.
+Disposition also interacts with your efforts at Deception and Persuasion, by providing bonuses or imposing penalties to your test results. It’s rather difficult to mask your disdain when trying to befriend a long-time enemy, just as it’s hard to dupe a person you love. The effects of Disposition on your words, body language, and other elements of the **Engagement** can’t be understated. You might armor yourself in scorn but find yourself powerless to change the thinking of those around you.
 
 There are seven types of Disposition. Three are favorable, three are unfavorable, and the seventh is indifference, neither favorable nor unfavorable. Descriptions of each follow and include the relevant Disposition Rating and modifiers to Deception and Persuasion tests. All of this information is also summarized on taBle 8–1: diSPoSitionS.
 
@@ -282,15 +297,15 @@ A good way to manage your dispositions is to keep a list of the NCs you meet ove
 
 ### Starting Dispositions
 
-At the beginning of an Intrigue, all participants must set their starting Disposition. The default is indifferent when dealing with new characters, but player characters are free to choose whatever Disposition they like.
+At the beginning of an **Engagement**, all participants must set their starting Disposition. The default is indifferent when dealing with new characters, but player characters are free to choose whatever Disposition they like.
 
 The choice of Disposition should always be based on what the character knows about their opponent, past encounters with the Narrator character, and their feelings regarding the character’s behavior.
 
-While it may be tempting to think in game terms, weighing the mechanical benefits of each Disposition, avoid doing so. Your Disposition may have unforeseen Consequences that could affect how a scenario unfolds. For example, if a representative of another house engages you in an Intrigue, and you automatically set your Disposition to Malicious, you’re bound to make an enemy of that character by your rudeness and hostility. Conversely, simply defaulting to Affectionate when trying to persuade another character is risky, as it leaves you open to manipulation. In short, consider how your character ought to feel about the NC (Narrator character) and pick a Disposition that best fits your character’s perspective.
+While it may be tempting to think in game terms, weighing the mechanical benefits of each Disposition, avoid doing so. Your Disposition may have unforeseen Consequences that could affect how a scenario unfolds. For example, if a representative of another house engages you in an **Engagement**, and you automatically set your Disposition to Malicious, you’re bound to make an enemy of that character by your rudeness and hostility. Conversely, simply defaulting to Affectionate when trying to persuade another character is risky, as it leaves you open to manipulation. In short, consider how your character ought to feel about the NC (Narrator character) and pick a Disposition that best fits your character’s perspective.
 
 #### Unknown Quantities
 
-Whenever you engage a character in an Intrigue for the first time, your Disposition should usually start at Indifferent (unless you are abrasive or trusting by nature). The reason is simple: you haven’t had any prior dealings with the character and likely know nothing about the character’s personality, history, or motivations. Of course, some characters are public figures, and such individuals’ reputations can color how others see them. A figure’s image can very much shape how you see them, and when dealing with such an individual, your Disposition should change accordingly. Similarly, your opponents may also inform their dispositions based on your reputation, which can be a boon or a bane depending on your previous deeds and actions.
+Whenever you engage a character in an **Engagement** for the first time, your Disposition should usually start at Indifferent (unless you are abrasive or trusting by nature). The reason is simple: you haven’t had any prior dealings with the character and likely know nothing about the character’s personality, history, or motivations. Of course, some characters are public figures, and such individuals’ reputations can color how others see them. A figure’s image can very much shape how you see them, and when dealing with such an individual, your Disposition should change accordingly. Similarly, your opponents may also inform their dispositions based on your reputation, which can be a boon or a bane depending on your previous deeds and actions.
 
 #### Dispositions by Circumstances
 
@@ -298,7 +313,7 @@ As mentioned, most intrigues between people who do not know each other begin at 
 
 #### Option: Recognition
 
-The default assumption is that players and Narrators will pick appropriate dispositions based on the story elements in the game. While perfectly suitable, it can sometimes be hard to assess the effect notoriety has on an individual character’s reputation. To address this potential complication, you can introduce a Status test before the Intrigue begins to help characters pick the most appropriate Disposition for NCs they have just met.
+The default assumption is that players and Narrators will pick appropriate dispositions based on the story elements in the game. While perfectly suitable, it can sometimes be hard to assess the effect notoriety has on an individual character’s reputation. To address this potential complication, you can introduce a Status test before the **Engagement** begins to help characters pick the most appropriate Disposition for NCs they have just met.
 
 When you use this system, all intrigues involving characters who have just met set the starting dispositions at Indifferent. Participants may draw upon their knowledge and the reputations of their opponents to modify their Disposition appropriately. Each character rolls a formidaBle (12) Status test, taking a penalty to their result equal to their opponent’s rank in Knowledge—more knowledgeable characters are less likely to be impressed by the legends and deeds attributed by other characters. A success improves or worsens the opponent’s Disposition by one step per degree of success. The character decides whether to improve his opponent’s Disposition or worsen it, based on his reputation and that of his house.
 
@@ -324,23 +339,23 @@ Table 8–2: Dispositions by Circum
 
 > #### EXAMPLE
 >
-> On the evening before the tournament, Glen’s knight meets with a knight sworn to a minor house in the hopes of learning information about a murder that had taken place the night before. Having it on good authority that the other knight might know something, Glen decides to engage him in an Intrigue to gain information. Before the Intrigue begins, though, both characters must determine the effects of their reputation. Glen’s character has a Knowledge 3 and Status 4 (Reputation 1), while his opponent has a Knowledge 2 and Status 3. Glen rolls first and gets a 21. Subtracting his opponent’s Knowledge rank, he’s left with a 19. Since he beat the formidaBle (12) Difficulty by 7, he gets two degrees of success, which moves the other knight’s Disposition up or down by two steps. Glen’s knight is known to be an honorable sort, so he improves the other knight’s Disposition by two steps to Friendly.
+> On the evening before the tournament, Glen’s knight meets with a knight sworn to a minor house in the hopes of learning information about a murder that had taken place the night before. Having it on good authority that the other knight might know something, Glen decides to engage him in an **Engagement** to gain information. Before the **Engagement** begins, though, both characters must determine the effects of their reputation. Glen’s character has a Knowledge 3 and Status 4 (Reputation 1), while his opponent has a Knowledge 2 and Status 3. Glen rolls first and gets a 21. Subtracting his opponent’s Knowledge rank, he’s left with a 19. Since he beat the formidaBle (12) Difficulty by 7, he gets two degrees of success, which moves the other knight’s Disposition up or down by two steps. Glen’s knight is known to be an honorable sort, so he improves the other knight’s Disposition by two steps to Friendly.
 >
-> It’s now the other knight’s turn. The Narrator rolls and gets a 12 exactly. Subtracting Glen’s Knowledge rank (3), it drops the knight’s result to 9, which isn’t enough to change Glen’s Disposition. Thus, Glen’s character begins the Intrigue at Indifferent.
+> It’s now the other knight’s turn. The Narrator rolls and gets a 12 exactly. Subtracting Glen’s Knowledge rank (3), it drops the knight’s result to 9, which isn’t enough to change Glen’s Disposition. Thus, Glen’s character begins the **Engagement** at Indifferent.
 
 ### Evolving Dispositions
 
-Over the course of the Intrigue, a character’s Disposition is bound to change. The events of an exchange coupled with roleplaying allow players and Narrators to adjust their characters’ dispositions in response to what happened during the previous exchange. At the start of every new exchange, each participant may improve or worsen their Disposition by one step.
+Over the course of the **Engagement**, a character’s Disposition is bound to change. The events of an exchange coupled with roleplaying allow players and Narrators to adjust their characters’ dispositions in response to what happened during the previous exchange. At the start of every new exchange, each participant may improve or worsen their Disposition by one step.
 
 The only exception to this rule is when a character was successfully influenced on the previous round. Such a character cannot worsen their Disposition during the next exchange.
 
 ## Step Five: Initiative
 
-To determine who tests when, each participant in the Intrigue rolls a Status test (bonus dice from Reputation) apply. The Narrator records each result and arranges them in order from highest to lowest. The highest result goes first, followed by the next, and then the next highest until everyone has acted. Note that the test result does not require a character to Act in this order; it merely describes the earliest they can Act. A participant may wait and see what other participants do before acting.
+To determine who tests when, each participant in the **Engagement** rolls a Status test (bonus dice from Reputation) apply. The Narrator records each result and arranges them in order from highest to lowest. The highest result goes first, followed by the next, and then the next highest until everyone has acted. Note that the test result does not require a character to Act in this order; it merely describes the earliest they can Act. A participant may wait and see what other participants do before acting.
 
 ## Step Six: Technique
 
-If dispositions are armor, techniques are the weapons. Techniques describe the tactics a character employs during the Intrigue, but more than just provide descriptive features, techniques inform how much Influence a character gains with a successful test and the Consequences of defeat. That the various techniques presented here correspond to the specialties of the Persuasion ability is no coincidence.
+If dispositions are armor, techniques are the weapons. Techniques describe the tactics a character employs during the **Engagement**, but more than just provide descriptive features, techniques inform how much Influence a character gains with a successful test and the Consequences of defeat. That the various techniques presented here correspond to the specialties of the Persuasion ability is no coincidence.
 
 ### Deception
 
@@ -348,13 +363,13 @@ You may substitute Deception for Persuasion tests to simulate any of the followi
 
 ### Using Techniques
 
-Whenever you roll a Deception or Persuasion conflict test to Influence your opponent, you may roll bonus dice from a Specialty that corresponds with the technique. The Difficulty is equal to your opponent’s Intrigue Defense. A successful test influences an amount determined by the technique you used (usually equal to your rank in an ability) times your degree of success.
+Whenever you roll a Deception or Persuasion conflict test to Influence your opponent, you may roll bonus dice from a Specialty that corresponds with the technique. The Difficulty is equal to your opponent’s **Engagement** Defense. A successful test influences an amount determined by the technique you used (usually equal to your rank in an ability) times your degree of success.
 
 ### Techniques Defined
 
-On your turn, you may use any of the following techniques during an Intrigue. You need not choose the same technique each exchange and may select a different technique that best matches how you portrayed your character during the exchange. Each entry describes the technique, the amount of Influence a successful conflict test generates, applicable specialties, and finally, the Consequences gained when you defeat your opponent. For a summary of these features, see taBle 8–3: teChniQueS.
+On your turn, you may use any of the following techniques during an **Engagement**. You need not choose the same technique each exchange and may select a different technique that best matches how you portrayed your character during the exchange. Each entry describes the technique, the amount of Influence a successful conflict test generates, applicable specialties, and finally, the Consequences gained when you defeat your opponent. For a summary of these features, see taBle 8–3: teChniQueS.
 
-These techniques are fairly broad and open to some interpretation, based largely how to achieve the desired effect of the Intrigue: so if you are offering an exchange, it’s likely a Bargain, whereas if you are making a reasoned argument, then it’s an effort to Convince, and so forth. Work with the Narrator to agree upon which technique suits your approach to the Intrigue and the desired outcome.
+These techniques are fairly broad and open to some interpretation, based largely how to achieve the desired effect of the **Engagement**: so if you are offering an exchange, it’s likely a Bargain, whereas if you are making a reasoned argument, then it’s an effort to Convince, and so forth. Work with the Narrator to agree upon which technique suits your approach to the **Engagement** and the desired outcome.
 
 | Technique | Influence       | Persuasion Specialty | Deception Specialty |
 |-----------|-----------------|----------------------|---------------------|
@@ -372,7 +387,7 @@ Influence: Cunning rank | Persuasion Specialty: Bargain | Deception Specialty: B
 
 When you Bargain, you are asking the target to do something in exchange for recompense in some form. Bargain can be used to bribe a guard, form an alliance, attain services, and so on, but it only works so long as you live up to your side of the deal.
 
-> Consequences of defeat: Bargain is used to negotiate a service in which the target does something for you in exchange for you doing something for the target. This exchange can be as simple as a transaction, exchanging gold dragons for some good or service, or it could be some other form of arrangement. The quality of the deal depends on the target’s Disposition at the end of the Intrigue as shown on the following chart.
+> Consequences of defeat: Bargain is used to negotiate a service in which the target does something for you in exchange for you doing something for the target. This exchange can be as simple as a transaction, exchanging gold dragons for some good or service, or it could be some other form of arrangement. The quality of the deal depends on the target’s Disposition at the end of the **Engagement** as shown on the following chart.
 
 | Disposition  | Bargain effeCt                                                                                                                                                  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -390,7 +405,7 @@ When you Bargain, you are asking the target to do something in exchange for reco
 
 Use Charm whenever you would cultivate a friendship, improving the target’s Disposition to make him or her more amenable to your position in future intrigues. When you use this technique, you ply your target with complements, empathizing with their plights and conditions, and work to adapt yourself to your subject’s desires.
 
-> Consequences of defeat: Charm is the simple Act of cultivating friendships and alliances, or to reason with enemies and avoid conflict. When you defeat an opponent using charm, you improve the target’s Disposition by one step. The target’s improved Disposition lasts until circumstances would worsen their Disposition against you—such as a betrayal on your part or a rival inciting the opponent against you. In addition, you gain +1D on all Deception and Persuasion tests during your next Intrigue against this opponent.
+> Consequences of defeat: Charm is the simple Act of cultivating friendships and alliances, or to reason with enemies and avoid conflict. When you defeat an opponent using charm, you improve the target’s Disposition by one step. The target’s improved Disposition lasts until circumstances would worsen their Disposition against you—such as a betrayal on your part or a rival inciting the opponent against you. In addition, you gain +1D on all Deception and Persuasion tests during your next **Engagement** against this opponent.
 
 #### Convince
 
@@ -438,7 +453,7 @@ Taunting is risky. You goad another character into action based on your barbs an
 
 Roleplaying is the heart of intrigues. During this step, the players may argue and debate, connive and negotiate, discuss their options, and make their case. The character acts out exactly what he or she wants from a target in accordance with his or her technique and Disposition. There is no clear order of action here; rather, this step is intended to be freeform and loose, lasting as long as needed until the Narrator opts to move toward the next step, usually occurring at a dramatic moment when a player makes clear his or her desires but before the answer to that desire is revealed.
 
-Of course, not all groups are comfortable with improvised acting and may prefer a more mechanical approach to resolving these scenes. If such is the case, or if the Intrigue is particularly small and insignificant to the larger scenario, the Narrator may skip the roleplaying step and move onto the next.
+Of course, not all groups are comfortable with improvised acting and may prefer a more mechanical approach to resolving these scenes. If such is the case, or if the **Engagement** is particularly small and insignificant to the larger scenario, the Narrator may skip the roleplaying step and move onto the next.
 
 ### The Effects of Roleplaying
 
@@ -448,11 +463,11 @@ Not all groups include thespians or aspiring actors, and some players may be rel
 
 ## Step Eight: Actions & Tests
 
-During an exchange, a player may choose and perform one of following actions. Each participant has but one action. The Narrator may limit the number of characters able to participate in an Intrigue at any given time, based on the circumstances. It’s one matter to take part in a council meeting or public debate and another to try and carry on a covert discussion between more than two or three people at once.
+During an exchange, a player may choose and perform one of following actions. Each participant has but one action. The Narrator may limit the number of characters able to participate in an **Engagement** at any given time, based on the circumstances. It’s one matter to take part in a council meeting or public debate and another to try and carry on a covert discussion between more than two or three people at once.
 
 #### Assist
 
-During an Intrigue, you may support another character’s arguments, encouraging them as they debate and argue. If you succeed on a ChallenGinG (9) Persuasion test, you can lend one half your Persuasion rank (round down) as a modifier to your ally’s next conflict test result.
+During an **Engagement**, you may support another character’s arguments, encouraging them as they debate and argue. If you succeed on a ChallenGinG (9) Persuasion test, you can lend one half your Persuasion rank (round down) as a modifier to your ally’s next conflict test result.
 
 #### Consider
 
@@ -460,11 +475,11 @@ You give up your action for the exchange. You gain +2B on any one test you take 
 
 #### Fast Talk
 
-You can unleash a stream of nonsense in the hopes of distracting your opponent and putting them off guard. Make a Persuasion test against the target’s passive Will result. If you achieve at least two degrees, the target loses his Cunning rank from his Intrigue Defense until the end of the next exchange.
+You can unleash a stream of nonsense in the hopes of distracting your opponent and putting them off guard. Make a Persuasion test against the target’s passive Will result. If you achieve at least two degrees, the target loses his Cunning rank from his **Engagement** Defense until the end of the next exchange.
 
 #### Influence
 
-Influence is the most common action used in an Intrigue. It reflects your effort to modify your opponent’s behavior. To Influence an opponent, roll a Deception or Persuasion test, gaining bonus dice from your technique. A successful test indicates you Influence your opponent by an amount described under your technique times your degree of success. You reduce all Influence by your opponent’s Disposition Rating. Remaining Influence applies to your target’s Composure. Reducing an opponent’s Composure to 0 defeats him.
+Influence is the most common action used in an **Engagement**. It reflects your effort to modify your opponent’s behavior. To Influence an opponent, roll a Deception or Persuasion test, gaining bonus dice from your technique. A successful test indicates you Influence your opponent by an amount described under your technique times your degree of success. You reduce all Influence by your opponent’s Disposition Rating. Remaining Influence applies to your target’s Composure. Reducing an opponent’s Composure to 0 defeats him.
 
 #### Manipulate
 
@@ -472,59 +487,59 @@ You may try to manipulate your opponent’s emotions by goading him into using a
 
 #### Mollify
 
-During an Intrigue, you may press your opponent too far, or see that your opponent is perilously close to defeating an ally. You can repair damage to Composure by rolling a formidaBle (12) Persuasion test to mollify a target. Your test is modified by the target’s Disposition as normal. A success restores an amount of Composure equal to your Persuasion rank. Each additional degree restores another point of Composure
+During an **Engagement**, you may press your opponent too far, or see that your opponent is perilously close to defeating an ally. You can repair damage to Composure by rolling a formidaBle (12) Persuasion test to mollify a target. Your test is modified by the target’s Disposition as normal. A success restores an amount of Composure equal to your Persuasion rank. Each additional degree restores another point of Composure
 
 #### Quit
 
-You need not suffer the indignity of an aggressive opponent, and provided there’s an avenue of escape, you can usually flee an Intrigue. Upon doing so, the Intrigue ends, but there are often other repercussions as determined by the Narrator, especially if there are witnesses to your weakness.
+You need not suffer the indignity of an aggressive opponent, and provided there’s an avenue of escape, you can usually flee an **Engagement**. Upon doing so, the **Engagement** ends, but there are often other repercussions as determined by the Narrator, especially if there are witnesses to your weakness.
 
-Alternatively, when an opponent who proves uninterested in discussion or negotiation resists your efforts, you may quit the Intrigue without trouble, though questions and information offered may raise suspicions and have other Consequences.
+Alternatively, when an opponent who proves uninterested in discussion or negotiation resists your efforts, you may quit the **Engagement** without trouble, though questions and information offered may raise suspicions and have other Consequences.
 
 #### Read Target
 
-In lieu of coercing a target, you can hold back and read your target’s Disposition and technique. Make an Awareness test against your target’s passive Deception result. If you equal or beat your target’s test result, you learn the target’s current Disposition and the technique he uses for this exchange. As a result of this insight, you gain +1D on all Deception and Persuasion tests for the duration of the Intrigue.
+In lieu of coercing a target, you can hold back and read your target’s Disposition and technique. Make an Awareness test against your target’s passive Deception result. If you equal or beat your target’s test result, you learn the target’s current Disposition and the technique he uses for this exchange. As a result of this insight, you gain +1D on all Deception and Persuasion tests for the duration of the **Engagement**.
 
 #### Shield of Reputation
 
-You can fall back on your reputation and status to Influence your opponent. Make a Status test against your opponent’s base Will result. If you equal or beat the target’s base result, that target’s Disposition automatically improves by one step. You may use this action only once per Intrigue.
+You can fall back on your reputation and status to Influence your opponent. Make a Status test against your opponent’s base Will result. If you equal or beat the target’s base result, that target’s Disposition automatically improves by one step. You may use this action only once per **Engagement**.
 
 #### Switch to Combat
 
-On your turn, you can abandon the Intrigue and attack your opponent. Clearly, this may not be an option in every Intrigue, and attacking may have other Consequences, such as imprisonment, loss of rank, and so on. Once you switch to combat, the Intrigue immediately ends and combat begins.
+On your turn, you can abandon the **Engagement** and attack your opponent. Clearly, this may not be an option in every **Engagement**, and attacking may have other Consequences, such as imprisonment, loss of rank, and so on. Once you switch to combat, the **Engagement** immediately ends and combat begins.
 
 #### Withdraw
 
-You may shore up your defenses and set yourself against your target. Roll a Will test (bonus dice from Dedication apply). The result of the test replaces your Intrigue Defense until the end of the next exchange.
+You may shore up your defenses and set yourself against your target. Roll a Will test (bonus dice from Dedication apply). The result of the test replaces your **Engagement** Defense until the end of the next exchange.
 
 #### Effects of Language
 
-Common language is vital to intrigues, making it all but impossible to compel other characters who cannot understand you. If your target does not speak your language, you take –3D on all Persuasion tests. If this number exceeds your test dice, you cannot engage the target in an Intrigue.
+Common language is vital to intrigues, making it all but impossible to compel other characters who cannot understand you. If your target does not speak your language, you take –3D on all Persuasion tests. If this number exceeds your test dice, you cannot engage the target in an **Engagement**.
 
 While language is important, knowledge of certain languages can even improve your chances at persuading and impressing your target. The ability to speak a rare or native tongue of your opponent suggests education and intelligence, as well as a certain amount of respect. If the target would be impressed by such familiarity, you gain a +1B on tests to Influence your opponents. Good examples are using Valyrian when communicating with someone of House Targaryen or another educated person, the various tongues of the Free Cities when talking with a native of the same city, Dothraki with the Dothraki people, and so on.
 
 ### Influence
 
-When an opponent successfully influences you in an Intrigue, you may lose some of your Composure, bringing you closer to falling under their sway. Any Influence in excess of your Disposition Rating applies to your Composure. Loss of Composure doesn’t affect you unless it reduces your value to 0 or less, at which point you are defeated.
+When an opponent successfully influences you in an **Engagement**, you may lose some of your Composure, bringing you closer to falling under their sway. Any Influence in excess of your Disposition Rating applies to your Composure. Loss of Composure doesn’t affect you unless it reduces your value to 0 or less, at which point you are defeated.
 
 ### Frustration
 
 The primary way to reduce Influence is through your Disposition Rating. You subtract this value from the Influence your opponent earns with a successful Deception or Persuasion test.
 
-The other way to reduce outside Influence upon you is to accept a measure of frustration. Each point of frustration gained removes an amount of Influence equal to your Will rank. However, each point of frustration gained imposes –1D on all Deception and Persuasion tests for the duration of the Intrigue. If your accumulated frustration exceeds your Will rank, you are defeated because you lose your Composure. At the end of the Intrigue, win or lose, all accumulated frustration is removed.
+The other way to reduce outside Influence upon you is to accept a measure of frustration. Each point of frustration gained removes an amount of Influence equal to your Will rank. However, each point of frustration gained imposes –1D on all Deception and Persuasion tests for the duration of the **Engagement**. If your accumulated frustration exceeds your Will rank, you are defeated because you lose your Composure. At the end of the **Engagement**, win or lose, all accumulated frustration is removed.
 
 ### Defeat
 
-If your Composure is reduced to 0 or less, or your accumulated frustration exceeds your Will rank, you are defeated, and the victor achieves the stated goal of the Intrigue.
+If your Composure is reduced to 0 or less, or your accumulated frustration exceeds your Will rank, you are defeated, and the victor achieves the stated goal of the **Engagement**.
 
 #### Yielding
 
-You may choose to yield to an opponent, offering a compromised outcome, rather than going down to defeat, if you wish. You can only yield on your turn in an exchange, and your opponent may accept, offer a counter-proposal, or refuse. If you, in turn, refuse a counter-offer, then the Intrigue continues, and you may not yield. Yielding is an option for when defeat seems certain or if you want to offer an opponent an immediate, lesser, victory to put a quick end to the conflict.
+You may choose to yield to an opponent, offering a compromised outcome, rather than going down to defeat, if you wish. You can only yield on your turn in an exchange, and your opponent may accept, offer a counter-proposal, or refuse. If you, in turn, refuse a counter-offer, then the **Engagement** continues, and you may not yield. Yielding is an option for when defeat seems certain or if you want to offer an opponent an immediate, lesser, victory to put a quick end to the conflict.
 
 #### Destiny & Defeat
 
 You may also burn a Destiny Point when defeated to choose an outcome other than your opponent’s stated goal. The Narrator must approve the new outcome.
 
-As with combat, unimportant characters in the story generally don’t avoid Influence through frustration, and they tend to yield quickly when the Intrigue goes against them, allowing the Narrator to dispense with minor intrigues quickly when it becomes clear the character has the upper hand (assuming the Intrigue was important enough to test the characters’ abilities to begin with).
+As with combat, unimportant characters in the story generally don’t avoid Influence through frustration, and they tend to yield quickly when the **Engagement** goes against them, allowing the Narrator to dispense with minor intrigues quickly when it becomes clear the character has the upper hand (assuming the **Engagement** was important enough to test the characters’ abilities to begin with).
 
 ## Step Nine: Repeat
 
@@ -532,16 +547,16 @@ If there is no clear victor at the end of the first exchange, return to Step Two
 
 ## Step Ten: Resolution
 
-The last step in an Intrigue is the resolution. Once one side defeats the other, what happens next depends on what technique the victor used and the defeated character’s Disposition. Reckless intrigues can often produce unexpected results; thus, the choice of technique and the order in which various techniques are used can have a great deal of Influence over the intrigue’s outcome. For Consequences of defeat, see the technique used to defeat the opponent.
+The last step in an **Engagement** is the resolution. Once one side defeats the other, what happens next depends on what technique the victor used and the defeated character’s Disposition. Reckless intrigues can often produce unexpected results; thus, the choice of technique and the order in which various techniques are used can have a great deal of Influence over the intrigue’s outcome. For Consequences of defeat, see the technique used to defeat the opponent.
 
 ## Other Factors
 
-In addition to the basic elements that make up an Intrigue, there are a few other factors and considerations to take into account.
+In addition to the basic elements that make up an **Engagement**, there are a few other factors and considerations to take into account.
 
-### Joining an Intrigue
+### Joining an **Engagement**
 
-Once an Intrigue is in process, new arrivals can disrupt the flow of the encounter. Any time a new participant joins the Intrigue, all participants remove all Influence, and the Intrigue starts anew.
+Once an **Engagement** is in process, new arrivals can disrupt the flow of the encounter. Any time a new participant joins the **Engagement**, all participants remove all Influence, and the **Engagement** starts anew.
 
-### Faster Intrigues
+### Faster **Engagement**s
 
-Intrigue emulates much of the politics that shape the story of the novels by giving players the tools to make allies and destroy their enemies in ways that don’t necessarily involve combat. However, not every conversation needs to be resolved with an Intrigue. In fact, the Narrator ought to reserve intrigues for the most important conspiracies and conversations, usually when something significant is at stake. When a noble orders his sworn swords to attack, there’s no need to run through an Intrigue; the sworn swords follow the orders to the best of their abilities. As a rule of thumb, if your Status rank is equal to or greater than the target’s DR, you can bypass the Intrigue entirely and Influence the target.
+**Engagement** emulates much of the politics that shape the story of the novels by giving players the tools to make allies and destroy their enemies in ways that don’t necessarily involve combat. However, not every conversation needs to be resolved with an **Engagement**. In fact, the Narrator ought to reserve intrigues for the most important conspiracies and conversations, usually when something significant is at stake. When a noble orders his sworn swords to attack, there’s no need to run through an **Engagement**; the sworn swords follow the orders to the best of their abilities. As a rule of thumb, if your Status rank is equal to or greater than the target’s DR, you can bypass the **Engagement** entirely and Influence the target.

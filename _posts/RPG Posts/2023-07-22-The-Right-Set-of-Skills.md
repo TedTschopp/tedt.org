@@ -172,7 +172,6 @@ skill from demonstrated competency.
 
 Each Level in a knowledge area represents a grade level with level 0 being the knowledge the general public gets in this discipline. You are an apprentice or have an associate degree if you have a knowledge are at level 1. You are a journeyman or you have a Bachelor’s degree at level 2. You are a master or you have a master’s degree at level 3. You are a grand master or you have a doctorate degree at level 4. If you are looking for levels above that, at level 5 someone is a principality, power, or demigod. Gods start coming in at level 6.
 
-
 # Bringing the Skills All Together
 
 ## Fitness Aspects
@@ -262,12 +261,12 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 #### Athletics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Athletics.webp"><img src="https://tedt.org/img/skills/vertical/Athletics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">The road to athletic greatness is not marked by perfection but by the ability to constantly overcome adversity and failure. -- Nike</figcaption>
-</figure>
-</div>
+{% include figure.html 
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Athletics.webp" 
+    file="https://tedt.org/img/skills/vertical/Athletics.webp"
+    alt-text="An artistic illustration of a runner in motion, with dynamic brush strokes emphasizing speed and movement."
+    caption="The road to athletic greatness is not marked by perfection but by the ability to constantly overcome adversity and failure. -- Nike" %}
 
 ##### Description of Athletics
 
