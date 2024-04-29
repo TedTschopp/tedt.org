@@ -31,7 +31,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Unyielding hostility with the intention to inflict severe harm or ruin, surpassing mere conflict to personal vendetta.
 - **Mechanics:** Combat rules are maximally engaged, with the highest chance of catastrophic outcomes. 
 - **Narrative:** Scenarios typify extreme antagonism and vendettas where reconciliation seems impossible.
-- **Cost to Deescalate Conflict:** Requires foundational changes to intentions or positions, often needing external mediation or significant personal or material losses. (restitution)
+- **Cost to Deescalate Conflict:** Requires foundational changes to intentions or positions, often needing external mediation or significant personal or material losses. (Restitution)
 >
 > - Example from Fiction:
 > 
@@ -45,7 +45,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Mechanics:** Skills in stealth, sabotage, and espionage are critical, with serious but non-lethal consequences.
 - **Narrative:** Engagements where covert operations or aggressive competition raise the stakes without direct combat.
 - **Cost to Escalate Conflict:** Increasing surveillance, further sabotage, or direct threats that could lead to outright war or personal ruin. (Direct Assault)
-- **Cost to Deescalate Conflict:** Exposing vulnerabilities or strategic concessions, such as sharing critical information or ending aggressive actions.
+- **Cost to Deescalate Conflict:** Exposing vulnerabilities or strategic concessions, such as sharing critical information or ending aggressive actions.  (Acknowledgement and Remediation)
 >
 > - Example from Fiction:
 > 
@@ -58,8 +58,8 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Direct verbal confrontations, including threats and serious accusations.
 - **Mechanics:** Social skills like intimidation and deception become key, with outcomes influencing further escalation or resolution.
 - **Narrative:** Events are marked by aggressive negotiations or confrontations that could turn violent.
-- **Cost to Escalate Conflict:** Stepping up confrontations, increasing public disparagement or legal actions that might lead to open hostility. 
-- **Cost to Deescalate Conflict:** Reducing hostile rhetoric, offering formal apologies, or providing compensation for past grievances. (Formal apology)
+- **Cost to Escalate Conflict:** Stepping up confrontations, increasing public disparagement or legal actions that might lead to open hostility.  (Increased indirect Assaults and Hostility)
+- **Cost to Deescalate Conflict:** Reducing hostile rhetoric, offering formal apologies, or providing compensation for past grievances. (Formal apology and compensation)
 >
 > - Example from Fiction:
 > 
@@ -72,7 +72,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Clear aversion and disagreement, with interactions marked by suspicion and competition.
 - **Mechanics:** Social interactions carry penalties, making cooperation or persuasion more difficult.
 - **Narrative:** The foundation of conflicts is set as parties express open distrust and opposition.
-- **Cost to Escalate Conflict:** Intensifying opposition through competitive actions or undermining efforts, increasing the likelihood of conflict.
+- **Cost to Escalate Conflict:** Intensifying opposition through competitive actions or undermining efforts, increasing the likelihood of conflict. (Intensified Competition and pettiness)
 - **Cost to Deescalate Conflict:** Minor admissions of wrongdoing or steps towards cooperation, like participating in joint activities or dialogues. (Mutual benefit activities)
 
 > **Example from Fiction:**
@@ -86,7 +86,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Neutral engagement, with no particular bias or inclination towards either positive or negative outcomes.
 - **Mechanics:** Standard interaction rules apply, with no modifiers based on relational dynamics.
 - **Narrative:** Situations poised to sway in any direction based on the actions and decisions taken during gameplay.
-- **Cost to Escalate Conflict:** Engaging in actions or statements that suggest a shift towards opposition, such as showing favoritism or minor provocations.
+- **Cost to Escalate Conflict:** Engaging in actions or statements that suggest a shift towards opposition, such as showing favoritism or minor provocations. (See the other as a hinderance)
 - **Cost to Deescalate Conflict:** Demonstrating openness or neutrality, such as engaging in fair negotiations or showing willingness to cooperate on neutral grounds. (Honest and Fair Dealings)
 
 > - Example from Fiction:
@@ -100,7 +100,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Basic cooperative intent without deep alliance, favoring polite and constructive interactions.
 - **Mechanics:** Minor bonuses on cooperative actions, with easier communications and basic assistance.
 - **Narrative:** Temporary alliances or agreements formed for convenience without long-term commitments.
-- **Cost to Escalate Conflict:** Withdrawing initial cooperation or showing reluctance to engage, which might strain the relationship.
+- **Cost to Escalate Conflict:** Withdrawing initial cooperation or showing reluctance to engage, which might strain the relationship. (Unfulfilled expectations)
 - **Cost to Deescalate Conflict:** Increasing transparency in dealings or offering more favorable terms in interactions to foster trust. (Honest Transparency)
 
 > - Example from Fiction:
@@ -114,7 +114,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Positive interactions based on mutual respect and beneficial exchanges.
 - **Mechanics:** Enhanced bonuses for teamwork, shared goals, and mutual support in objectives.
 - **Narrative:** Strong, beneficial relationships that provide significant advantages in collaborative efforts.
-- **Cost to Escalate Conflict:** Neglecting shared interests or failing to support in key situations, which could weaken the bonds of friendship.
+- **Cost to Escalate Conflict:** Neglecting shared interests or failing to support in key situations, which could weaken the bonds of friendship. (Formal Promises unfulfilled and Broken Promises)
 - **Cost to Deescalate Conflict:** Making personal sacrifices or going beyond expected help to solidify the friendship and show commitment. (Sacrifice)
 
 > - Example from Fiction:
@@ -128,7 +128,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Warm, supportive interactions marked by genuine care and willingness to assist beyond basic expectations.
 - **Mechanics:** Significant benefits in scenarios requiring emotional support, trust, and personal sacrifice.
 - **Narrative:** Deep emotional connections that enhance resilience and resourcefulness among characters.
-- **Cost to Escalate Conflict:** Taking actions that could be perceived as betrayal or indifference, risking the warmth and closeness of the relationship.
+- **Cost to Escalate Conflict:** Taking actions that could be perceived as betrayal or indifference, risking the warmth and closeness of the relationship. (Perceived Betrayal or Indifference)
 - **Cost to Deescalate Conflict:** Engaging in deeply meaningful personal gestures or sacrifices that reinforce the emotional bond and trust. (Personalized Gestures)
 
 > - Example from Fiction:
@@ -142,7 +142,7 @@ Ultimately, the Deescalation rule underscores the importance of seeking peaceful
 - **Description:** Unwavering loyalty and commitment, with parties prepared to go to great lengths, including self-sacrifice, for each other's well-being.
 - **Mechanics:** Maximum cooperation and support, offering critical aid in nearly any situation, often foregoing personal benefits.
 - **Narrative:** The highest tier of relational development, characterized by unbreakable bonds and profound mutual commitment.
-- **Cost to Escalate Conflict:** Any action that hints at disloyalty or prioritizes personal gain over the relationship could cause severe and possibly irreversible damage.
+- **Cost to Escalate Conflict:** Any action that hints at disloyalty or prioritizes personal gain over the relationship could cause severe and possibly irreversible damage. (Disloyalty and selfishness)
 
 > - Example from Fiction:
 > 

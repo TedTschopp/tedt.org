@@ -371,17 +371,17 @@ On your turn, you may use any of the following techniques during an **Engagement
 
 These techniques are fairly broad and open to some interpretation, based largely how to achieve the desired effect of the **Engagement**: so if you are offering an exchange, it’s likely a Bargain, whereas if you are making a reasoned argument, then it’s an effort to Convince, and so forth. Work with the Narrator to agree upon which technique suits your approach to the **Engagement** and the desired outcome.
 
-| Technique | Influence       | Persuasion Specialty | Deception Specialty |
-|-----------|-----------------|----------------------|---------------------|
-| Bargain   | Cunning rank    | Bargain              | Bluff               |
-| Charm     | Persuasion rank | Charm                | Act                 |
-| Convince  | Will rank       | Convince             | Act                 |
-| Incite    | Cunning rank    | Incite               | Bluff               |
-| Intimate  | Will rank       | Intimate             | Act or Bluff        |
-| Seduce    | Persuasion rank | Seduce               | Bluff               |
-| Taunt     | Awareness rank  | Taunt                | Bluff               |
+| Technique  | Influence       | Persuasion Specialty | Deception Specialty |
+|------------|-----------------|----------------------|---------------------|
+| Bargain    | Cunning rank    | Bargain              | Bluff               |
+| Charm      | Persuasion rank | Charm                | Act                 |
+| Convince   | Will rank       | Convince             | Act                 |
+| Incite     | Cunning rank    | Incite               | Bluff               |
+| Intimidate | Will rank       | Intimidate           | Act or Bluff        |
+| Seduce     | Persuasion rank | Seduce               | Bluff               |
+| Taunt      | Awareness rank  | Taunt                | Bluff               |
 
-#### Bargain
+#### Bargain - (Use Relationship)
 
 Influence: Cunning rank | Persuasion Specialty: Bargain | Deception Specialty: Bluff
 
@@ -389,17 +389,19 @@ When you Bargain, you are asking the target to do something in exchange for reco
 
 > Consequences of defeat: Bargain is used to negotiate a service in which the target does something for you in exchange for you doing something for the target. This exchange can be as simple as a transaction, exchanging gold dragons for some good or service, or it could be some other form of arrangement. The quality of the deal depends on the target’s Disposition at the end of the **Engagement** as shown on the following chart.
 
-| Disposition  | Bargain effeCt                                                                                                                                                  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Affectionate | Target gives you the goods or service for nothing in exchange.                                                                                                  |
-| Friendly     | Target gives you the goods at discount (Cunning × –10%) or for some minor service in exchange.                                                                  |
-| Amiable      | Target gives you the goods at discount (Cunning × –5%) or for a very easy service in exchange.                                                                  |
-| Indifferent  | Target gives you the goods at discount (Cunning × –2%) or for a service in exchange.                                                                            |
-| Dislike      | Target gives you the goods at discount (Cunning × –1%) or for a service in exchange. The target may renege on the Bargain if the demanded service is dangerous. |
-| Unfriendly   | Target gives you the goods at normal price or for an equal service in exchange.                                                                                 |
-| Malicious    | Target sells you the item at normal price but foists off a shoddy or damaged good. Target may perform the service but may renege if he can get away with it.    |
+| Disposition  | Bargain Effect                                                                                                                                                               |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Devoted      | Target gifts you the goods or service and insists on adding something extra or of personal significance to them.                                                                |
+| Affectionate | Target gives you the goods or service for nothing in exchange.                                                                                                                |
+| Friendly     | Target gives you the goods at discount (Cunning × –10%) or for some minor service in exchange.                                                                                |
+| Amiable      | Target gives you the goods at discount (Cunning × –5%) or for a very easy service in exchange.                                                                                |
+| Indifferent  | Target gives you the goods at discount (Cunning × –2%) or for a service in exchange.                                                                                          |
+| Dislike      | Target gives you the goods at discount (Cunning × –1%) or for a service in exchange. The target may renege on the Bargain if the demanded service is dangerous.                |
+| Unfriendly   | Target gives you the goods at normal price or for an equal service in exchange.                                                                                               |
+| Hostile      | Target sells you the item at normal price but foists off a shoddy or damaged good. Target may perform the service but may renege if he can get away with it.                   |
+| Vindictive   | Target agrees but deliberately sabotages the goods or service, potentially causing harm or loss to the player. May require additional persuasion or a show of force to agree. |
 
-#### Charm
+#### Charm - (Increase relationship level with an agreed upon target)
 
 | Influence: Persuasion rank | Persuasion Specialty: Charm | Deception Specialty: Act |
 
@@ -407,7 +409,7 @@ Use Charm whenever you would cultivate a friendship, improving the target’s Di
 
 > Consequences of defeat: Charm is the simple Act of cultivating friendships and alliances, or to reason with enemies and avoid conflict. When you defeat an opponent using charm, you improve the target’s Disposition by one step. The target’s improved Disposition lasts until circumstances would worsen their Disposition against you—such as a betrayal on your part or a rival inciting the opponent against you. In addition, you gain +1D on all Deception and Persuasion tests during your next **Engagement** against this opponent.
 
-#### Convince
+#### Convince (Reasoning)
 
 | Influence: Will rank | Persuasion Specialty: Convince | Deception Specialty: Act |
 
@@ -415,7 +417,7 @@ Sometimes a forceful argument can get your point across where charm or seduction
 
 > Consequences of defeat: Whenever you defeat an opponent using Convince, you are honestly trying to get the target to assist you or to agree with your position. Using Convince does nothing to improve the target’s Disposition; instead, Convince gets them to support your position or grant you assistance. Even dire enemies can be persuaded to help, provided they have sufficient cause, though there’s nothing to say the enemy won’t use the opportunity to betray you later. A convinced target assists you through the particular trial but no further.
 
-#### Incite
+#### Incite (Decrease Another's Relationship Level wtih an agreed upon target)
 
 | Influence: Cunning rank | Persuasion Specialty: Incite | Deception Specialty: Bluff |
 
@@ -423,7 +425,7 @@ Incite is used to make your subject angry, to fill them with loathing or rage ag
 
 > Consequences of defeat: Inciting a target involves turning the opponent against another opponent, usually by producing evidence of betrayal, vile acts, or revealing any other sordid details your opponent might find repugnant. Incite is often powerful, but it produces short-term effects. An incited target’s attitude to the individual, or ganization, or house you indicate shifts a number of steps downward equal to your rank in Persuasion. Each day after you use Incite on the target, his attitude toward the target improves by one step until it returns to its starting Disposition. Typically, only targets whose Disposition is worsened to Malicious attack the individual or members of the house or organization you indicate.
 
-#### Intimidate
+#### Intimidate 
 
 | Influence: Will rank | Persuasion Specialty: intimidate | Deception Specialty: Act or Bluff |
 
@@ -431,7 +433,7 @@ You use Intimidate to scare others and make them think twice before crossing you
 
 > Consequences of defeat: One of the most powerful techniques, Intimidate is bluster and threats used to frighten or cow your opponent. A successful use of Intimidate either drives off the target— if he can flee—or improves his Disposition to Amiable or one step better if already Amiable for as long as you remain in the target’s presence if the target cannot flee. The target does as you ask, reveals information, and possibly lies if he believes he has no other recourse to escape your presence. An intimidated target’s Disposition in future intrigues is always Unfriendly or worse.
 
-#### Seduce
+#### Seduce (Rename and make this about formalizing the relationship at its current level)
 
 | Influence: Persuasion rank | Persuasion Specialty: SeduCe | Deception Specialty: Bluff |
 
@@ -441,13 +443,18 @@ Of all the techniques, seduction is the most subtle. Use of this technique requi
 > 
 > Each day after the encounter, the target’s Disposition shifts down one until it falls to one step below his or her starting Disposition. You can sustain the feelings of attraction by courting the individual and by using Charm to create a more permanent Disposition. Characters with dispositions that started at Dislike or worse but who are seduced pretend to be attracted and even go so far as to engage in lovemaking or some other Act of passion. They only follow through if they believe such an Act will advance their position or give them some advantage over you—whether it’s to plant a bastard in the womb or a knife in the throat.
 
-#### Taunt
+#### Taunt (Force an action at the current relationship status)
 
 | Influence: aWareneSS rank | Persuasion Specialty: taunt | Deception Specialty: Bluff
 
 Taunting is risky. You goad another character into action based on your barbs and insults. You can use Taunt to provoke a character to do something you want—at the cost of worsening his or her Disposition toward you.
 
 > Consequences of defeat: Taunting pushes your opponent to Act. An opponent who has an Amiable or better Disposition does what you want, but when he has completed the task, his Disposition falls by one step. An opponent whose Disposition is Neutral or Dislike may or may not perform the task based on the danger posed to him. Again, his Disposition worsens by one step. Finally, opponents with dispositions worse than Dislike attack you or flee if attacking is not an option.
+
+
+
+
+
 
 ## Step Seven: Roleplaying
 
@@ -457,7 +464,7 @@ Of course, not all groups are comfortable with improvised acting and may prefer 
 
 ### The Effects of Roleplaying
 
-SIFRP is a roleplaying game, and therefore, strong portrayals of your character, as well as convincing arguments, can and do have an effect on intrigues. Good roleplaying modifies your chances by granting bonus dice, usually one or two, but sometimes as many as three for extremely convincing performances. Naturally, some roleplaying sequences may result in saying the absolute wrong thing at the wrong time, which may affect a character’s efforts by removing bonus dice or imposing a flat penalty of –1 to –5, depending on the seriousness of the gaffe.
+The Märchin Engine is a roleplaying game, and therefore, strong portrayals of your character, as well as convincing arguments, can and do have an effect on intrigues. Good roleplaying modifies your chances by granting bonus dice, usually one or two, but sometimes as many as three for extremely convincing performances. Naturally, some roleplaying sequences may result in saying the absolute wrong thing at the wrong time, which may affect a character’s efforts by removing bonus dice or imposing a flat penalty of –1 to –5, depending on the seriousness of the gaffe.
 
 Not all groups include thespians or aspiring actors, and some players may be reluctant to participate in such an immersive roleplaying scene. The Narrator should not penalize such players if they are not suited for this sort of game. Players may modify their chances by using Destiny Points and bonus dice drawn from specialties as normal.
 
@@ -560,3 +567,78 @@ Once an **Engagement** is in process, new arrivals can disrupt the flow of the e
 ### Faster **Engagement**s
 
 **Engagement** emulates much of the politics that shape the story of the novels by giving players the tools to make allies and destroy their enemies in ways that don’t necessarily involve combat. However, not every conversation needs to be resolved with an **Engagement**. In fact, the Narrator ought to reserve intrigues for the most important conspiracies and conversations, usually when something significant is at stake. When a noble orders his sworn swords to attack, there’s no need to run through an **Engagement**; the sworn swords follow the orders to the best of their abilities. As a rule of thumb, if your Status rank is equal to or greater than the target’s DR, you can bypass the **Engagement** entirely and Influence the target.
+
+
+
+
+
+* * *
+
+
+My own stuff
+
+
+#### Bargain
+
+When you Bargain, you are asking the target to do something in exchange for recompense in some form. Bargain can be used to bribe a guard, form an alliance, attain services, and so on, but it only works so long as you live up to your side of the deal.
+
+> Consequences of defeat: Bargain is used to negotiate a service in which the target does something for you in exchange for you doing something for the target. This exchange can be as simple as a transaction, exchanging gold dragons for some good or service, or it could be some other form of arrangement. The quality of the deal depends on the target’s Disposition at the end of the **Engagement** as shown on the following chart.
+
+| Disposition  | Bargain Effect                                                                                                                                                               |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Devoted      | Target gifts you the goods or service and insists on adding something extra or of personal significance to them.                                                                |
+| Affectionate | Target gives you the goods or service for nothing in exchange.                                                                                                                |
+| Friendly     | Target gives you the goods at discount (Cunning × –10%) or for some minor service in exchange.                                                                                |
+| Amiable      | Target gives you the goods at discount (Cunning × –5%) or for a very easy service in exchange.                                                                                |
+| Indifferent  | Target gives you the goods at discount (Cunning × –2%) or for a service in exchange.                                                                                          |
+| Dislike      | Target gives you the goods at discount (Cunning × –1%) or for a service in exchange. The target may renege on the Bargain if the demanded service is dangerous.                |
+| Unfriendly   | Target gives you the goods at normal price or for an equal service in exchange.                                                                                               |
+| Malicious    | Target sells you the item at normal price but foists off a shoddy or damaged good. Target may perform the service but may renege if he can get away with it.                   |
+| Hostile      | Target agrees but deliberately sabotages the goods or service, potentially causing harm or loss to the player. May require additional persuasion or a show of force to agree. |
+
+
+
+#### Charm
+
+| Disposition  | Charm Effect                                                                                                                                                                 |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Devoted      | Target becomes an advocate for your cause, seeking ways to actively support and promote your interests even when you are not present.                                         |
+| Affectionate | Target is highly favorable towards you, offering help and resources readily and might volunteer valuable information or assistance without prompt.                            |
+| Friendly     | Target enjoys your company and is willing to provide help or resources with little persuasion needed.                                                                         |
+| Amiable      | Target finds you agreeable and is open to providing support or information, but may require some small persuasion or incentives.                                             |
+| Indifferent  | Target behaves neutrally, providing information or assistance only when it aligns with their interests or when minimal effort is required on their part.                     |
+| Dislike      | Target is reluctant to help, providing only minimal information or assistance, and may require significant persuasion or a demonstration of good faith to cooperate further. |
+| Unfriendly   | Target is generally uncooperative, providing assistance or information only when absolutely necessary or when it directly benefits them.                                     |
+| Malicious    | Target is obstructive, providing misleading or harmful information, and may sabotage efforts where possible, requiring careful management or oversight.                       |
+| Hostile      | Target outright refuses to cooperate, potentially working against your interests, and any change in this stance would require significant effort or change in circumstances. |
+
+#### Convince
+
+| Disposition  | Convince Effect                                                                                                                                                             |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Devoted      | Target champions your cause as if it were their own, taking active steps to support your arguments or decisions publicly and privately.                                       |
+| Affectionate | Target agrees readily, showing eagerness to support your arguments and may volunteer to advocate on your behalf to others.                                                    |
+| Friendly     | Target is receptive to your arguments, agrees with your position, and offers help or resources to support it.                                                                 |
+| Amiable      | Target is open to your arguments, might require some evidence or minor assurances but generally agrees to support your position.                                               |
+| Indifferent  | Target listens and may agree if your arguments align closely with their own interests or beliefs, but won’t go out of their way to assist further.                            |
+| Dislike      | Target is skeptical and needs significant persuasion or concrete evidence to even partially agree with your position; support, if any, is minimal and reluctant.               |
+| Unfriendly   | Target disagrees but might be swayed by strong arguments or incentives; however, their support will be minimal and they remain cautious about their involvement.              |
+| Malicious    | Target is likely to pretend agreement to gain an advantage but may betray or obstruct you covertly; trust their support at your peril.                                        |
+| Hostile      | Target outright rejects your arguments and may become more entrenched in their opposition; convincing them requires overcoming significant biases or providing compelling incentives.
+
+Certainly! Here's the table for the **Incite** social interaction, adapted for its unique focus on stirring emotions and influencing actions through provocation:
+
+#### Incite
+
+| Disposition  | Incite Effect                                                                                                                                                                                                                      |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Devoted      | Target adopts your animosity as their own, becoming a fervent opponent of the indicated individual or group, potentially taking drastic actions on your behalf.                                                                     |
+| Affectionate | Target is highly responsive to your provocation and may engage in significant actions against the indicated foe, believing strongly in the cause you’ve presented.                                                                  |
+| Friendly     | Target reacts strongly to the incitement, likely to engage in actions or spread negative sentiments against the indicated party, driven by the emotions you’ve stirred.                                                            |
+| Amiable      | Target is moved by your arguments and becomes more open to acting against the indicated party, though actions taken may be moderate.                                                                                                |
+| Indifferent  | Target is slightly stirred but remains largely non-committal, potentially requiring further convincing to take any notable action.                                                                                                  |
+| Dislike      | Target’s reaction is minimal and may only engage in passive resistance or non-cooperation against the indicated party.                                                                                                             |
+| Unfriendly   | Target is skeptical and resistant, not easily moved by emotional incitement, and may require significant evidence or manipulation to sway even slightly.                                                                            |
+| Malicious    | Target pretends to be incited, possibly using the opportunity to further their own agenda rather than yours, and may turn the situation against you if it benefits them.                                                            |
+| Hostile      | Target resists incitement and may become hostile towards you instead, recognizing your attempt to manipulate them and possibly acting against you as a result.                                                                      |
+
