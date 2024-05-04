@@ -78,20 +78,22 @@
                                 {% else %}
                                     {% assign image_URL = site.featured-image %}
                                 {% endif %}
+
                                 <img class="card-img-top w-100" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
                                 
                                 <div class="card-header">
-                                {% if image-credits-URL contains "http" %}
-                                    <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
-                                {% else %}
-                                    <cite>"{{image_credits_title}}"</cite>
-                                {% endif %}
-                                {% if image-credits-artist-URL contains "http" %}
-                                    <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
-                                {% else %}
-                                    by {{image_credits}}
-                                {% endif %}
+                                    {% if image-credits-URL contains "http" %}
+                                        <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                    {% else %}
+                                        <cite>"{{image_credits_title}}"</cite>
+                                    {% endif %}
+                                    {% if image-credits-artist-URL contains "http" %}
+                                        <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                    {% else %}
+                                        by {{image_credits}}
+                                    {% endif %}
                                 </div>
+
                             {% endif %}
                         <div class="card-body pt-1 p-4">
                             <h1 class="card-title p-name">{{ page.title }}</h1>
@@ -107,7 +109,7 @@
                             </div>
 
 
-                            <p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>
+                            {% comment %}<p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>{% endcomment %}
                             {% include publish-and-update-date-time-v2.html %}
 
         
