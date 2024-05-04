@@ -234,7 +234,7 @@ links:
     Category: 'About Me'
     # web.brid.gy
   - Name: web.brid.gy
-    URL: https://web.brid.gy/r/
+    URL: https://web.brid.gy/r
     Username: 'https://tedt.org/'
     Icon-Class: fa-regular fa-window-maximize
     Category: 'Social Media'
