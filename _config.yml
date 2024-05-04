@@ -232,6 +232,12 @@ links:
     Icon-Class: fab fa-foursquare
     Color: '#0072b1'
     Category: 'About Me'
+    # web.brid.gy
+  - Name: web.brid.gy
+    URL: https://web.brid.gy/r/
+    Username: 'https://tedt.org/'
+    Icon-Class: fa-regular fa-window-maximize
+    Category: 'Social Media'
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
