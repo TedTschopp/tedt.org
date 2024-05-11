@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, ''); // Simplify the ID and remove non-alphanumeric characters
     header.id = headerId; // Assign ID to header
 
-    tocItems.push(`<li><a href="#${headerId}">${headerText}</a></li>`);
+    tocItems.push(`<li><a href="#${headerId}">${headerText} - ${level} - ${currentLevel}</a></li>`);
   });
 
   // Close all remaining lists
