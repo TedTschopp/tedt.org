@@ -56,9 +56,6 @@ redirect_from:
   - /role%20playing%20games/the%20märchen%20engine/personal%20writing/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯
   - /role%20playing%20games/the%20märchen%20engine/personal%20writing/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯/
 
-redirect_from: 
- - 
-
 ---
 > ## A Memory of Myths and the Naming of 𒀀𒌋𒀯
 > 
