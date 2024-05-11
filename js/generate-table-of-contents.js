@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tocItems.push(`<li><a href="#${headerId}">${headerText} - ${level} - ${currentLevel} - ${oldLevel}</a></li>`);
 
-
   });
 
   // Close all remaining lists
