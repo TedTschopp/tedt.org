@@ -165,22 +165,15 @@
                                     </div>
                                 </div>
                                 <div class="card-body p-0 ps-4" id="insert-table-of-contents-here">
-                                    <ol>
-                                        {% for post in site.posts %}
-                                            <li>
-                                                <a href="{{ post.url }}">{{ post.title }}</a>
-                                                {% if post.subheadings %}
-                                                    <ol>
-                                                        {% for subheading in post.subheadings %}
-                                                            <li>
-                                                                <a href="{{ post.url }}#{{ subheading.id }}">{{ subheading.title }}</a>
-                                                            </li>
-                                                        {% endfor %}
-                                                    </ol>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </ol>
+                                        {% if page.subheadings %}
+                                            <ol>
+                                                {% for subheading in page.subheadings %}
+                                                    <li>
+                                                        <a href="#{{ subheading.id }}">{{ subheading.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ol>
+                                        {% endif %}
                                 </div>
                             </div>                   
                             <span class="e-content" id="main_content">{{ content }}</span>
