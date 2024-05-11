@@ -977,12 +977,12 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 ##### Ruggedness Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Ruggedness.webp"><img src="https://tedt.org/img/skills/vertical/Ruggedness.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Not all that have fallen are vanquished. -- J.R.R. Tolkien</figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Ruggedness.webp"
+    file="https://tedt.org/img/skills/vertical/Ruggedness.webp"
+    alt-text="A muscular individual carrying heavy sacks on their back, standing amidst wooden debris in a dimly lit setting. The person is wearing a sleeveless top and loose-fitting pants, secured with a rope around the waist. The scene is highlighted by a ray of light that accentuates the person's physique, while the scattered wooden planks suggest a rugged or under-construction environment. The face is obscured, focusing on the physical burden and the setting rather than the individual's identity. The overall atmosphere is one of strength and endurance in a challenging setting."
+    caption="Not all that have fallen are vanquished. -- J.R.R. Tolkien" %}
 
 ###### Description of Ruggedness
 
@@ -1056,12 +1056,12 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 ##### Unarmed Combat Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"><img src="https://tedt.org/img/skills/vertical/Unarmed Combat.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">My arms are too short to box with God. -- Johnny Cash</figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"
+    file="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"
+    alt-text="A dramatic painting that captures a tense moment of a fight between two individuals. One is adorned with a red headpiece, showcasing a muscular build and shirtless torso, while the other's face is obscured, dressed in torn white clothing. They are locked in combat, standing in shallow water that reflects their movements. The stormy, tumultuous background adds to the chaos and intensity of the duel, emphasizing the struggle and passion of the scene. The overall effect is one of drama and emotion, with a focus on the action and the environment rather than the individuals' identities."
+    caption="My arms are too short to box with God. -- Johnny Cash" %}
 
 ###### Description of Unarmed Combat
 
@@ -1141,10 +1141,19 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ##### Social Sciences Knowledge Areas
 
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Social Sciences.webp"
+    file="https://tedt.org/img/skills/vertical/Social Sciences.webp"
+    alt-text="A person seated at a desk, deeply engrossed in their work, surrounded by maps and documents. They are dressed in a light blue shirt and brown vest, with their face obscured for privacy. The desk is illuminated by a vintage-style lamp, casting a warm glow over the scene. In the background, bookshelves brimming with books suggest a studious atmosphere, indicative of an office or study room. The overall ambiance is one of calm and focused research or study."
+    caption="There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist." %}
+
+
+
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Social Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Social Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist. </figcaption>
+<a href=""><img src="https://tedt.org/img/skills/vertical/Social Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption"> </figcaption>
 </figure>
 </div>
 

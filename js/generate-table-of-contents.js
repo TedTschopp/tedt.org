@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {string} tocContainerId - The ID of the DOM object where the TOC should be inserted.
  */
 function generateTOC(tocContainerId) {
+    const tocContainer = document.getElementById(tocContainerId);
+    if (!tocContainer) {
+        console.log(`Container with ID "${tocContainerId}" not found.`);
+        return;
+    }
+
+
     // Find the article element
     const article = document.getElementById('content-column');
     if (!article) {
