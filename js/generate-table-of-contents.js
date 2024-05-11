@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const level = parseInt(header.tagName.substring(1)); // Get numeric part of heading tag (h1, h2, etc.)
 
     while (level > currentLevel) {
-      tocItems.push('<ol><li>');
+      tocItems.push('<ol>');
       currentLevel++;
     }
     while (level < currentLevel) {
@@ -20,11 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, ''); // Simplify the ID and remove non-alphanumeric characters
     header.id = headerId; // Assign ID to header
 
-    tocItems.push(`<a href="#${headerId}">${headerText}</a>`);
-
-    if (level < currentLevel) {
-      tocItems.push('</li>');
-    }
+    tocItems.push(`<li><a href="#${headerId}">${headerText}</a></li>`); // Always enclose <a> tags in <li> tags
   });
 
   // Close all remaining lists
