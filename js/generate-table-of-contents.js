@@ -17,7 +17,6 @@ function generateTOC(tocContainerId) {
         return;
     }
 
-
     // Find the article element
     const article = document.getElementById('content-column');
     if (!article) {
@@ -70,13 +69,6 @@ function generateTOC(tocContainerId) {
             console.log(`Container with ID "${tocContainerId}" not found.`);
         }
     });
-
-    // Find the container where the TOC should be inserted
-    const tocContainer = document.getElementById(tocContainerId);
-    if (!tocContainer) {
-        console.log(`Container with ID "${tocContainerId}" not found.`);
-        return;
-    }
 
     // Append the table of contents to the container
     tocContainer.appendChild(toc);

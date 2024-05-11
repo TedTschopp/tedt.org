@@ -1148,15 +1148,6 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
     alt-text="A person seated at a desk, deeply engrossed in their work, surrounded by maps and documents. They are dressed in a light blue shirt and brown vest, with their face obscured for privacy. The desk is illuminated by a vintage-style lamp, casting a warm glow over the scene. In the background, bookshelves brimming with books suggest a studious atmosphere, indicative of an office or study room. The overall ambiance is one of calm and focused research or study."
     caption="There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist." %}
 
-
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href=""><img src="https://tedt.org/img/skills/vertical/Social Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption"> </figcaption>
-</figure>
-</div>
-
 ###### Description of Social Sciences
 
 Social sciences encompass the study of human society, behavior, and social interactions, often through systematic methods of empirical investigation and analysis. Social Science skills can be useful in TTRPGs when the party needs to understand a society quickly to navigate its complexities, when forming alliances, or when trying to alter the course of events within a community. It could also help in interpreting historical texts, solving social dilemmas, or predicting the behavior of NPCs.
@@ -1228,12 +1219,12 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 ##### Life Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Life Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Life Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή (The energy of life is the essence of the mind) -- Aristotle</figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Life Sciences.webp"
+    file="https://tedt.org/img/skills/vertical/Life Sciences.webp"
+    alt-text="A person in a lab coat intently examining samples under a microscope in a well-equipped laboratory. They are surrounded by various scientific apparatus and colorful petri dishes containing different specimens. The setting is well-lit, with shelves stocked with neatly arranged bottles and containers, reflecting an organized and professional research environment. The focus on the person working and the detailed scientific equipment conveys a sense of precision and dedication to scientific inquiry."
+    caption="ή γὰρ νοῡ ἐνέργεια ζωή (The energy of life is the essence of the mind) -- Aristotle" %}
 
 ###### Description of Life Sciences
 
