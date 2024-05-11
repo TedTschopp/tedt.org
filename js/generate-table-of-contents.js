@@ -50,7 +50,7 @@ function generateTOC(tocContainerId) {
             currentList = newList;
             currentLevel++;
         } else {
-            while (level < currentLevel && currentList) {
+            while (level < currentLevel && currentList && currentList.parentElement && currentList.parentElement.parentElement) {
                 currentList = currentList.parentElement.parentElement; // Go up two levels: li and ol
                 currentLevel--;
             }
