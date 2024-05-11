@@ -2654,7 +2654,7 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 </figure>
 </div>
 
-In the school of Arcane magic, you become a master of manipulating mystical energies and the fundamental forces of nature, reaching past the classic arts of elemental magic. This discipline equips you to weave these potent pieces of elemental energies into various forms, crafting everything from searing blasts of fire to intricate enchantments that command the elemental forces.
+In the school of Arcane magic, you become a master of manipulating mystical energies and the fundamental forces of nature, reaching past the classic arts to elemental magic. This discipline equips you to weave these potent pieces of elemental energies into various forms, crafting everything from searing blasts of fire to intricate enchantments that command the elemental forces.
 
 As you progress, your spellcasting becomes more precise, relying on the careful arrangement of mystical symbols and uttering incantations that align closely with the natural laws. Such rigor allows you to reshape reality, carefully adjusting your surroundings to reflect your deep understanding and command of magical forces.
 

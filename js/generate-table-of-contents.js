@@ -43,7 +43,7 @@ function generateTOC(tocContainerId) {
             currentLevel++;
         } else {
             while (level < currentLevel) {
-                currentList = currentList.parentElement;
+                currentList = currentList.parentElement.parentElement; // Go up two levels: li and ol
                 currentLevel--;
             }
         }
