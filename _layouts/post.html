@@ -165,15 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body p-0 ps-4" id="insert-table-of-contents-here">
-                                        {% if page.subheadings %}
-                                            <ol>
-                                                {% for subheading in page.subheadings %}
-                                                    <li>
-                                                        <a href="#{{ subheading.id }}">{{ subheading.title }}</a>
-                                                    </li>
-                                                {% endfor %}
-                                            </ol>
-                                        {% endif %}
+
                                 </div>
                             </div>                   
                             <span class="e-content" id="main_content">{{ content }}</span>

@@ -1,75 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-    generateTOC("insert-table-of-contents-here")
+  const toc = document.getElementById('insert-table-of-contents-here');
+  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  let tocHtml = '';
+  let currentLevel = 0;
 
+  headers.forEach(header => {
+    const level = parseInt(header.tagName.substring(1)); // Get numeric part of heading tag (h1, h2, etc.)
+
+    if (level > currentLevel) {
+      // Start new lists as we go deeper
+      tocHtml += '<ol>'.repeat(level - currentLevel);
+    } else if (level < currentLevel) {
+      // Close lists as we go back up
+      tocHtml += '</ol>'.repeat(currentLevel - level);
+    }
+
+    const headerText = header.textContent;
+    const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, ''); // Simplify the ID and remove non-alphanumeric characters
+    header.id = headerId; // Assign ID to header
+
+    tocHtml += `<li><a href="#${headerId}">${headerText}</a></li>`;
+
+    currentLevel = level;
+  });
+
+  // Close remaining open lists
+  tocHtml += '</ol>'.repeat(currentLevel - 1); // Adjusted to close all open ul tags
+  toc.innerHTML = tocHtml;
 });
-
-/**
- * Function to generate a Table of Contents (TOC) for an article.
- * The TOC is a nested list of links to the headings in the article.
- * The TOC is inserted into the DOM object with the provided ID.
- *
- * @param {string} tocContainerId - The ID of the DOM object where the TOC should be inserted.
- */
-function generateTOC(tocContainerId) {
-    const tocContainer = document.getElementById(tocContainerId);
-    if (!tocContainer) {
-        console.log(`Container with ID "${tocContainerId}" not found.`);
-        return;
-    }
-
-    // Find the article element
-    const article = document.getElementById('content-column');
-    if (!article) {
-        console.log('Content not found.');
-        return;
-    }
-
-    // Collect all heading tags within the article
-    const headings = article.querySelectorAll('h1, h2, h3, h4, h5, h6');
-    if (headings.length === 0) {
-        console.log('No headings found in the content.');
-        return;
-    }
-
-    // Create the table of contents container
-    const toc = document.createElement('div');
-    toc.id = 'table-of-contents-container';
-    let currentLevel = 0;
-    let currentList = toc; // Initialize currentList as toc
-
-    // Build a nested list structure based on heading levels
-    headings.forEach(heading => {
-        const level = parseInt(heading.tagName.substring(1), 10);
-
-        // Adjust the list level based on heading level
-        if (level > currentLevel) {
-            const newList = document.createElement('ol');
-            if (currentList) {
-                currentList.appendChild(newList);
-            }
-            currentList = newList;
-            currentLevel++;
-        } else {
-            while (level < currentLevel && currentList && currentList.parentElement && currentList.parentElement.parentElement) {
-                currentList = currentList.parentElement.parentElement; // Go up two levels: li and ol
-                currentLevel--;
-            }
-        }
-
-        // Add the heading to the table of contents
-        const listItem = document.createElement('li');
-        const anchor = document.createElement('a');
-        anchor.textContent = heading.textContent;
-        anchor.href = `#${heading.id}`;
-
-        // Append the table of contents to the container
-        if (tocContainer) {
-            tocContainer.appendChild(toc);
-        } else {
-            console.log(`Container with ID "${tocContainerId}" not found.`);
-        }
-    });
-
-    // Append the table of contents to the container
-    tocContainer.appendChild(toc);
-}
