@@ -816,12 +816,12 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 ##### Sleight of Hand Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Slight of Hand.webp"><img src="https://tedt.org/img/skills/vertical/Slight of Hand.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss </figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Slight of Hand.webp"
+    file="https://tedt.org/img/skills/vertical/Slight of Hand.webp"
+    alt-text="A woman in a red dress holding three playing cards, specifically the King of Spades, Queen of Hearts and the Ace of Diamonds. The background is abstract and fiery, with floating red petals adding to the dramatic effect. The person's face is obscured, indicating that their identity is not the focus of the artwork. The overall atmosphere is intense and mysterious."
+    caption="Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss " %}
 
 ###### Description of Sleight of Hand
 
@@ -898,12 +898,12 @@ Stamina represents the overall ability that being can push themselves physically
 
 ##### Drive / Ride / Pilot Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"><img src="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">On my tombstone they will carve, "IT NEVER GOT FAST ENOUGH FOR ME." -- Hunter S. Thompson</figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"
+    file="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"
+    alt-text="An action-packed moment with a person riding a dirt bike. The rider, clad in blue and white gear, is captured mid-ride as they kick up a cloud of dust, emphasizing the speed and motion of the scene. The backdrop features a blend of brown and blue hues, representing the earth and sky, which suggests an outdoor setting. The rider's face is obscured for privacy, focusing the viewer's attention on the dynamic action of the dirt bike and the rider's skillful handling of the machine. The overall impression is one of excitement and adventure in the sport of dirt biking."
+    caption="On my tombstone they will carve, 'IT NEVER GOT FAST ENOUGH FOR ME.' -- Hunter S. Thompson" %}
 
 ###### Description of Drive/Ride/Pilot
 

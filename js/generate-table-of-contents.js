@@ -38,11 +38,13 @@ function generateTOC(tocContainerId) {
         // Adjust the list level based on heading level
         if (level > currentLevel) {
             const newList = document.createElement('ol');
-            currentList.appendChild(newList);
+            if (currentList) {
+                currentList.appendChild(newList);
+            }
             currentList = newList;
             currentLevel++;
         } else {
-            while (level < currentLevel) {
+            while (level < currentLevel && currentList) {
                 currentList = currentList.parentElement.parentElement; // Go up two levels: li and ol
                 currentLevel--;
             }
@@ -54,8 +56,12 @@ function generateTOC(tocContainerId) {
         anchor.textContent = heading.textContent;
         anchor.href = `#${heading.id}`;
 
-        listItem.appendChild(anchor);
-        currentList.appendChild(listItem);
+        // Append the table of contents to the container
+        if (tocContainer) {
+            tocContainer.appendChild(toc);
+        } else {
+            console.log(`Container with ID "${tocContainerId}" not found.`);
+        }
     });
 
     // Find the container where the TOC should be inserted
