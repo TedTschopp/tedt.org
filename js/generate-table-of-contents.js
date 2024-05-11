@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const level = parseInt(header.tagName.substring(1)); // Get numeric part of heading tag (h1, h2, etc.)
 
     while (level > currentLevel) {
-      tocItems.push('<ol>');
+      tocItems.push('<li><ol>');
       oldLevel = currentLevel;
       currentLevel++;
     }
     while (level < currentLevel) {
-      tocItems.push('</ol>');
+      tocItems.push('</ol></li>');
       oldLevel = currentLevel;
       currentLevel--;
     }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Close all remaining lists
   while (currentLevel > 1) {
-    tocItems.push('</ol>');
+    tocItems.push('</ol></li>');
     currentLevel--;
   }
 
