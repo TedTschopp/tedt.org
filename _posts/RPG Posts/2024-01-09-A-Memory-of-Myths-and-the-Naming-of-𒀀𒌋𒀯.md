@@ -60,7 +60,7 @@ redirect_from:
  - 
 
 ---
-> # A Memory of Myths and the Naming of 𒀀𒌋𒀯
+> ## A Memory of Myths and the Naming of 𒀀𒌋𒀯
 > 
 > In universe's dusk,  
 > Stars fade in vast, empty space,  
@@ -112,7 +112,7 @@ redirect_from:
 {: .folklore }
 
 ---
-> # A Final Prayer
+> ## A Final Prayer
 > 
 > Aeon, a solemn reflection on cosmic history,  
 > A tale of beauty and loss, eternally destined to see,  
