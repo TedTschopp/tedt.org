@@ -2,20 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const toc = document.getElementById('insert-table-of-contents-here');
   const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
   let tocItems = []; // Use an array to collect ToC items
-  let currentLevel = 0;
-  let oldLevel = 0;
+  let currentLevel = 1;
 
   headers.forEach(header => {
     const level = parseInt(header.tagName.substring(1)); // Get numeric part of heading tag (h1, h2, etc.)
 
     while (level > currentLevel) {
-      tocItems.push('<li><ol>');
-      oldLevel = currentLevel;
+      tocItems.push('<ol><li>');
       currentLevel++;
     }
     while (level < currentLevel) {
-      tocItems.push('</ol></li>');
-      oldLevel = currentLevel;
+      tocItems.push('</li></ol>');
       currentLevel--;
     }
 
@@ -23,13 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, ''); // Simplify the ID and remove non-alphanumeric characters
     header.id = headerId; // Assign ID to header
 
-    tocItems.push(`<li><a href="#${headerId}">${headerText} - ${level} - ${currentLevel} - ${oldLevel}</a></li>`);
+    tocItems.push(`<a href="#${headerId}">${headerText}</a>`);
 
+    if (level < currentLevel) {
+      tocItems.push('</li>');
+    }
   });
 
   // Close all remaining lists
   while (currentLevel > 1) {
-    tocItems.push('</ol></li>');
+    tocItems.push('</li></ol>');
     currentLevel--;
   }
 
