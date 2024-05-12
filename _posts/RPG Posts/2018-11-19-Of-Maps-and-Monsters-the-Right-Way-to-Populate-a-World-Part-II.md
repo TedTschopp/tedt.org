@@ -226,21 +226,21 @@ Pitiable, an object lesson, extreme to the point of humiliation.
 
 TODO:  Move from D&D 5e to DCC
 
-|Size     |Tiny |Small |Medium|Large |Huge  |Gargantuan|
-|-------: |:---:|:----:|:----:|:----:|:----:|:--------:|
-|Reach    | 0ft | 5ft  | 5ft  | 10ft | 10ft | 15ft |
-|Bite     | 1d4 | 1d6  | 1d8  | 1d10 | 2d8  | 2d10 |
-|Claw     | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Gore     | 1d4 | 1d6  | 1d8  | 1d10 | 2d8  | 2d10 |
-|Hoof     | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Tentacle | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Wing     | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Pincers  | 1d4 | 1d6  | 1d8  | 1d10 | 2d8  | 2d10 |
-|Tail Slap| 1d4 | 1d6  | 1d8  | 1d10 | 2d8  | 2d10 |
-|Slam     | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Stomp    | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Sting    | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
-|Talons   | 1d4 | 1d4  | 1d6  | 1d8  | 1d10 | 2d8  |
+|      Size | Tiny | Small | Medium | Large | Huge | Gargantuan |
+|----------:|:----:|:-----:|:------:|:-----:|:----:|:----------:|
+|     Reach | 0ft  |  5ft  |  5ft   | 10ft  | 10ft |    15ft    |
+|      Bite | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Claw | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|      Gore | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Hoof | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|  Tentacle | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|      Wing | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|   Pincers | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+| Tail Slap | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Slam | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|     Stomp | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|     Sting | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|    Talons | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
 {: .well .table .table-striped}
 
 
@@ -314,17 +314,15 @@ Neck, Jaw, Torso & Body, Leg, Tail
 Once the meat is taken from their bones, what can you do with whats left?
 
 
- Creature | Part | Common Use| Effect of Use                                             | Value | DC  | Notes  | Shelf Life in days
-----------:|:----:|:---------:|:---------------------------------------------------------:|:-----:|:---:|:------:|:-------------------
-Ape        | Paw  | Trophy    | The paw is dried and mounted                              | 2     | 5   | -none- | 10
-Ape        | Hide | Trophy    | The hide is skinned and cured, lined, and turned into a cape. | 8 | 18  | On an unsuccessful attempt, the item becomes leather | 10
-Ape        | Hide | Trophy    | The hide is skinned and cured, lined, and stuffed.        | 8     | 18  | -none- | 10
-Ape        | Hide | Practical | The hide can be skinned and cured and turned into Leather | 8     | 18? | -none- | 10
-Badger     | Hide | Trophy    | The hide can be skinned and cured and turned into Leather
+| Creature | Part | Common Use |                         Effect of Use                         | Value | DC  |                        Notes                         | Shelf Life in days |
+|---------:|:----:|:----------:|:-------------------------------------------------------------:|:-----:|:---:|:----------------------------------------------------:|:-------------------|
+|      Ape | Paw  |   Trophy   |                 The paw is dried and mounted                  |   2   |  5  |                        -none-                        | 10                 |
+|      Ape | Hide |   Trophy   | The hide is skinned and cured, lined, and turned into a cape. |   8   | 18  | On an unsuccessful attempt, the item becomes leather | 10                 |
+|      Ape | Hide |   Trophy   |      The hide is skinned and cured, lined, and stuffed.       |   8   | 18  |                        -none-                        | 10                 |
+|      Ape | Hide | Practical  |   The hide can be skinned and cured and turned into Leather   |   8   | 18? |                        -none-                        | 10                 |
+|   Badger | Hide |   Trophy   |   The hide can be skinned and cured and turned into Leather   |       |     |                                                      |                    |
 
-Badger
-
-Hide Trophy/Practical 1 15 10
+Badger | Hide |Trophy/Practical |1 15 10
 Claws Trophy 1 5 n/a
 
 

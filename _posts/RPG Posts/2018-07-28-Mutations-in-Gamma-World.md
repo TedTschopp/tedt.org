@@ -136,14 +136,14 @@ These mutations are those that modify the appearance of the mutant without modif
 
 During the final years before the cataclysm genetic modification to a species size in predictable ways.  Some humans wanted to be smaller, and others wanted to be bigger.  This also means that the size of the animal was modified to human proportions.  It costs one mutation for each size change you wish to perform. The size table is reproduced below. 
 
-|Size|Hit Die|STR|DEX|Con|AC|Natural Reach|
-|---:|:---: |:---: |:---: |:---: |:---: |:--- |
-|Tiny|d4|1|-2|||0|
-|Small|d6|2|-2|2||5ft|
-|Medium|d8|4|-2|2|1|5ft|
-|Large|d10|5|-2|3|2|10ft|
-|Huge|d12|6||3|3|10ft|
-|Gargantuan|d20|6||4|4|15ft|
+|       Size | Hit Die | STR | DEX | Con | AC | Natural Reach |
+|-----------:|:-------:|:---:|:---:|:---:|:--:|:--------------|
+|       Tiny |   d4    |  1  | -2  |     |    | 0             |
+|      Small |   d6    |  2  | -2  |  2  |    | 5ft           |
+|     Medium |   d8    |  4  | -2  |  2  | 1  | 5ft           |
+|      Large |   d10   |  5  | -2  |  3  | 2  | 10ft          |
+|       Huge |   d12   |  6  |     |  3  | 3  | 10ft          |
+| Gargantuan |   d20   |  6  |     |  4  | 4  | 15ft          |
 {: .well .table .table-striped}
 
 
@@ -253,21 +253,21 @@ Now our character is level 1, so his hit points are 11 (1D8 + 3)
 
 For animals that were modified in size, their base attacks also changed.  Below is a table to help create attacks scaled up or down to the appropriate size.  A couple notes: Most creatures will have primary and secondary attacks.  This table below is for the average secondary attack.  A primary attack will have one more die.  For example a Large Horse will have a primary attack of Hoof of 1d8, but because this is the horse's primary attack, this will be a 2d8 attack.  If this horse is then shrunk to the size of the world's smallest horse Size Tiny, the horse would have a primary attack of Hoof 2d4.  Another consideration is if the creature in question is a Alpha or legendary (this rule is not for PCs) then increase the size of the dice.  So with our horse example, The world's smallest horse is the alpha in a team with a dozen other tiny horses.  Then the hoof damage would be 2d6 for our little guy.  Truly a legend!
 
-|Size|Tiny|Small|Medium|Large|Huge|Gargantuan|
-|---: |:---: |:---: |:---: |:---: |:---: |:---: |
-|Reach|0ft|5ft|5ft|10ft|10ft|15ft|
-|Bite|1d4|1d6|1d8|1d10|2d8|2d10|
-|Claw|1d4|1d4|1d6|1d8|1d10|2d8|
-|Gore|1d4|1d6|1d8|1d10|2d8|2d10|
-|Hoof|1d4|1d4|1d6|1d8|1d10|2d8|
-|Tentacle|1d4|1d4|1d6|1d8|1d10|2d8|
-|Wing|1d4|1d4|1d6|1d8|1d10|2d8|
-|Pincers|1d4|1d6|1d8|1d10|2d8|2d10|
-|Tail Slap|1d4|1d6|1d8|1d10|2d8|2d10|
-|Slam|1d4|1d4|1d6|1d8|1d10|2d8|
-|Stomp|1d4|1d4|1d6|1d8|1d10|2d8|
-|Sting|1d4|1d4|1d6|1d8|1d10|2d8|
-|Talons|1d4|1d4|1d6|1d8|1d10|2d8|
+|      Size | Tiny | Small | Medium | Large | Huge | Gargantuan |
+|----------:|:----:|:-----:|:------:|:-----:|:----:|:----------:|
+|     Reach | 0ft  |  5ft  |  5ft   | 10ft  | 10ft |    15ft    |
+|      Bite | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Claw | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|      Gore | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Hoof | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|  Tentacle | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|      Wing | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|   Pincers | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+| Tail Slap | 1d4  |  1d6  |  1d8   | 1d10  | 2d8  |    2d10    |
+|      Slam | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|     Stomp | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|     Sting | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
+|    Talons | 1d4  |  1d4  |  1d6   |  1d8  | 1d10 |    2d8     |
 {: .well .table .table-striped}
 
 

@@ -186,14 +186,14 @@ If you use a weapon that has the ammunition property to make a melee attack, you
 **Fragile Weapons.** Fragile weapons will break when used by a Medium size creature to damage a Medium Size creature on role of a 1.  For each size difference between the target creature and the weapon size, you need to roll increases by 1. See chart below for all the various ways this calculation works out.  
 
 ||Attacker Weapon Size|||||||
-|Target is||Tiny|Small|Medium|Large|Huge|Gargantuan|
-|-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-||Tiny|1|1|1|1|1|1|
-||Small|2|1|1|1|1|1|
-||Medium|3|2|1|1|1|1|
-||Large|4|3|2|1|1|1|
-||Huge|5|4|3|2|1|1|
-||Gargantuan|6|5|4|3|2|1|
+|  Target is | Tiny | Small | Medium | Large | Huge | Gargantuan |
+|-----------:|:----:|:-----:|:------:|:-----:|:----:|:----------:|
+|       Tiny |  1   |   1   |   1    |   1   |  1   |     1      |
+|      Small |  2   |   1   |   1    |   1   |  1   |     1      |
+|     Medium |  3   |   2   |   1    |   1   |  1   |     1      |
+|      Large |  4   |   3   |   2    |   1   |  1   |     1      |
+|       Huge |  5   |   4   |   3    |   2   |  1   |     1      |
+| Gargantuan |  6   |   5   |   4    |   3   |  2   |     1      |
 {: .well .table .table-striped}
 
 

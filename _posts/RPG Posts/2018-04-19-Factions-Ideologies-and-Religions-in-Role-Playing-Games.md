@@ -74,7 +74,7 @@ The following ideas have been written down from notes I have taken over the year
 * Add components about rebelions, occupations and spys to Political Organizations
 * Add components about Oaths, Alliegances, Investments, and Committments.
 
-# Ideologies 
+# Ideologies
 
 Most societies are formed around a given ideology or way of thinking.  These ideologies can be broken up into several different categories.  At the higher tech levels where people have more freetime, those societies will have multiple ideologies from all four segments operating together within their borders.  Each group will have various taboos, symbols, concepts, hierarchies, buildings, trade goods, occupations, equipment, stories, and legends that they have a monopoly on.   It should be noted that ideologies can exist with other ideologies.  An example of this from below is that each College in the University could be a separate Service ideology.  The PCs who were students at the University would need to indicate the strength of their allegiance to each.
 
@@ -82,7 +82,7 @@ Most societies are formed around a given ideology or way of thinking.  These ide
 
 ### Political
 
-A group of people who are organized around political ideal are those identified as those who are trying to achieve united ends through the use of politics.  The oldest of these groups found among the families that come together for mutual protection all the way to the formal governmental types of the Ancients such as Monarchies, Democracies, Republics, Communes, and Dictatorships.  People will not be able to be in multiple political groups. 
+A group of people who are organized around political ideal are those identified as those who are trying to achieve united ends through the use of politics.  The oldest of these groups found among the families that come together for mutual protection all the way to the formal governmental types of the Ancients such as Monarchies, Democracies, Republics, Communes, and Dictatorships.  People will not be able to be in multiple political groups.
 
 ### Religious
 
@@ -94,7 +94,7 @@ A group of people who are organized around an economic idea are those identified
 
 ### Service
 
-A group of people who are organized around the serving someone or an ideal.  Many of these groups have a specific and documented groups or ideologies they are serving and they all have a specific and desired outcome they want to achieve.  The oldest of these organizations have survived from the Ancient times such as hospitals, churches, libraries, universities, and civic groups like Kiwanis.   People can be in multiple service organizations as long as their internal rules allow and they ideologically align themselves.  For example a surviving university might have an attached hospital and library, and the person in question might be a member of each organization working to recover Ancient artifacts.  But this person would probably never find themselves rising very high in the bureaucracy of the given groups without sacrificing their involvement with the other groups. 
+A group of people who are organized around the serving someone or an ideal.  Many of these groups have a specific and documented groups or ideologies they are serving and they all have a specific and desired outcome they want to achieve.  The oldest of these organizations have survived from the Ancient times such as hospitals, churches, libraries, universities, and civic groups like Kiwanis.   People can be in multiple service organizations as long as their internal rules allow and they ideologically align themselves.  For example a surviving university might have an attached hospital and library, and the person in question might be a member of each organization working to recover Ancient artifacts.  But this person would probably never find themselves rising very high in the bureaucracy of the given groups without sacrificing their involvement with the other groups.
 
 ## Attributes of an ideology
 
@@ -121,7 +121,7 @@ The University embodies a Service Ideology, with its main hub being the Universi
 
 ### Alignment
 
-The goal of tracking alignments is to come up with base default reactions to the diversity that is Gamma World. 
+The goal of tracking alignments is to come up with base default reactions to the diversity that is Gamma World.
 
 #### Tolerance
 
@@ -129,14 +129,14 @@ This is a description and a rating that represents how willing the ideology is t
 
 Scale: Violently opposed to outcomes other than its own -5 to +5 - Tolerant of many things
 
-The University is quite tolerant as long as you are not interested in harming or suppressing knowledge or the restoration of knowledge. +4 unless you demonstrate a desire to suppress knowledge than -4. 
+The University is quite tolerant as long as you are not interested in harming or suppressing knowledge or the restoration of knowledge. +4 unless you demonstrate a desire to suppress knowledge than -4.
 {: .example .well}
 
 #### Individualism
 
 This is a description and a rating that tracks how much group think or individualism is allowed within its members.  
 
-Scale: This number is from -5 to +5 with +5 being an ant, bee, or robotic automaton and -5 being various societies that believe in anarchy. 
+Scale: This number is from -5 to +5 with +5 being an ant, bee, or robotic automaton and -5 being various societies that believe in anarchy.
 
 The University encourages individualism in relationship to achieving its outcomes.  However it does expect this to occur within the limits of the scientific method.  0.
 {: .example .well}
@@ -182,14 +182,14 @@ The University itself is defended by the defenses stippped from various military
 
 This is an example of the building materials that are found at the headquarters.
 
-The University has a lot of iron ore and steel that it has strippped from various Ancient facilities.  It is systematically using this store of metal to produce printing presses.  There is a lumber/paper mill at the University.  Also present is a lab that has been operating from before the Apocalypse that produces communication gear that operates on the Ancients Cellular frequencies. 
+The University has a lot of iron ore and steel that it has strippped from various Ancient facilities.  It is systematically using this store of metal to produce printing presses.  There is a lumber/paper mill at the University.  Also present is a lab that has been operating from before the Apocalypse that produces communication gear that operates on the Ancients Cellular frequencies.
 {: .example .well}
 
 ### History
 
 This is a description of the history of the ideology.
 
-The university, back in the day, was focused on the development of agricultural technology, and has several farms surrounding it as well.  After the world fell apart, the AI, which operated the facility for the facility had the foresight to fall into a bunker mentality and hunkered down.  When the smoke cleared it saw that it was the largest facility on the University network and started the task of rebuilding and reaching out to the 
+The university, back in the day, was focused on the development of agricultural technology, and has several farms surrounding it as well.  After the world fell apart, the AI, which operated the facility for the facility had the foresight to fall into a bunker mentality and hunkered down.  When the smoke cleared it saw that it was the largest facility on the University network and started the task of rebuilding and reaching out to the
 {: .example .well}
 
 ### Heiarchy
@@ -197,17 +197,17 @@ The university, back in the day, was focused on the development of agricultural 
 This is a description of the various levels of membership.  Keep this simple at only 5 levels.  Also describe what resources someone who is of that level can call upon to accomplish their goals.
 
 <div markdown="1">
-**Level 5:** Dean of the Colleges - These are the leaders at each of the colleges.  The President of the University is also the Dean of the University.  He interacts with the Deans to make very large decisions are coordinated and is responsible for working with the AI, who is the ultimate authority in the University.   The Dean of the College can call upon multiple professors to accomplish their tasks.  They can also work with the AI to balance priorities.  This means that the AI will deploy its military resources for Deans occasionally.   
+**Level 5:** Dean of the Colleges - These are the leaders at each of the colleges.  The President of the University is also the Dean of the University.  He interacts with the Deans to make very large decisions are coordinated and is responsible for working with the AI, who is the ultimate authority in the University.   The Dean of the College can call upon multiple professors to accomplish their tasks.  They can also work with the AI to balance priorities.  This means that the AI will deploy its military resources for Deans occasionally.
 
 **Level 4:** Professor of --- - Each professor works with the Dean to pick their field of study and their field of teaching.  Within their chosen discipline they have a lot of autonomy.  They are expected to interact with the other Professors of their discipline from other colleges in order to achieve the goals and objectives of the University.  Professors can call upon their students to help teach and administer their duties.  These students are given delegated responsibilities from the Professors.  Professors may also request the establishment of Laboratories and Chapter Houses.  These requests are generally approved based on availability and need and is one of the standing agenda items discussed by all the professors with their dean.
 
-**Level 3:** Students - Everyone who has taken a class or is currently taking a class from the University is considered a student.  Even after death.  Admissions to the University as a Student is quite rigorous and a prestigious accomplishment in and of itself.  Students have access to the library and the archives.  They may request research from these facilities.  The only research off limits is research into the technologies that caused the apocalypse.   
+**Level 3:** Students - Everyone who has taken a class or is currently taking a class from the University is considered a student.  Even after death.  Admissions to the University as a Student is quite rigorous and a prestigious accomplishment in and of itself.  Students have access to the library and the archives.  They may request research from these facilities.  The only research off limits is research into the technologies that caused the apocalypse.
 
 **Level 2:** University Police - The University Police are to protect the University from the forces in the world that have caused and perpetuated these current Dark Ages.  They are not tasked with keeping the peace within the University hierarchy.  
 
-The AI who runs the University keeps the peace within the University Hierarchy.  This happens rarely, but when it does, the AI itself judges the situation based on the needs of the organization and on the academic merits of the people involved and reassignments are made.  In the event that problems become a regular thing with certain people, they are removed from the University.  The people who leave the University under these conditions, do so under clouds of suspicion.  The University has kept two Spec Ops teams operational from its consolidation with the military bases in the area and has made it known that it has deployed these teams against former teachers who pursue lines of inquiry into the technologies which caused the Apocalypse. 
+The AI who runs the University keeps the peace within the University Hierarchy.  This happens rarely, but when it does, the AI itself judges the situation based on the needs of the organization and on the academic merits of the people involved and reassignments are made.  In the event that problems become a regular thing with certain people, they are removed from the University.  The people who leave the University under these conditions, do so under clouds of suspicion.  The University has kept two Spec Ops teams operational from its consolidation with the military bases in the area and has made it known that it has deployed these teams against former teachers who pursue lines of inquiry into the technologies which caused the Apocalypse.
 
-The University Police have access to Tech level 5 equipment in the event of emergencies, but normal gear consists of Tech Level 4 equipment.  The Two Spec Ops teams that the AI deploys have 12 members each and they access to Tech Level 6 gear, and represent the most fearsome forces in all of Gamma World.  The AI rarely deploys them because it has no way to escalate a confrontation beyond their deployment.   
+The University Police have access to Tech level 5 equipment in the event of emergencies, but normal gear consists of Tech Level 4 equipment.  The Two Spec Ops teams that the AI deploys have 12 members each and they access to Tech Level 6 gear, and represent the most fearsome forces in all of Gamma World.  The AI rarely deploys them because it has no way to escalate a confrontation beyond their deployment.
 
 **Level 1:** The Novices - These are people who visit the University or who benefit from the University, but are not Students or Staff.  The Novices are people who have applied to use either be a student or a staff or to access University Resources.  Novices do not have access to any University Resources, however they do carry a University ID Tag.  This is a Tech Level 4 Dog Tag that tracks the Novices and above through the University facilities via the handheld communication devices given to Level 2 personnel and above.  
 </div>
@@ -215,26 +215,21 @@ The University Police have access to Tech level 5 equipment in the event of emer
 
 ### Concepts & Policies
 
-This is a description of the concepts and the policies the ideology pushes. 
+This is a description of the concepts and the policies the ideology pushes.
 
-The University has the goal of elimination of the Dark Ages that the world currently lives in through the education of the people, and to bring humanity back in order to allow humanity a second chance moving forward.  The University opposes all research into the technologies that caused the apocalypse.  It also opposes groups that want to keep humanity stuck in these dark ages. 
+The University has the goal of elimination of the Dark Ages that the world currently lives in through the education of the people, and to bring humanity back in order to allow humanity a second chance moving forward.  The University opposes all research into the technologies that caused the apocalypse.  It also opposes groups that want to keep humanity stuck in these dark ages.
 {: .example .well}
 
 ### Symbols
 
-This is a description of all the symbols the ideology uses, and what they mean. 
+This is a description of all the symbols the ideology uses, and what they mean.
 
-The shield of the University has been its symbol for centuries.  A small replica of the shield is given to all Novices and above to track them through the University system.  This is the size of a keychain or necklace.  The Mascot of the University is a Tiger.  The University keeps breeding pairs of pure strain tigers at its headquarters.  These tigers were gifted to the University by a warlord who had them as pets.  The university opened a College within the warlord's territory in exchange for the first breeding pair.  The University uses Orange and Black as its colors, and all clothing worn by the University staff feature these colors. 
+The shield of the University has been its symbol for centuries.  A small replica of the shield is given to all Novices and above to track them through the University system.  This is the size of a keychain or necklace.  The Mascot of the University is a Tiger.  The University keeps breeding pairs of pure strain tigers at its headquarters.  These tigers were gifted to the University by a warlord who had them as pets.  The university opened a College within the warlord's territory in exchange for the first breeding pair.  The University uses Orange and Black as its colors, and all clothing worn by the University staff feature these colors.
 {: .example .well}
 
 ### Legends
 
-This is a description of legends that are believed by members of the ideology. 
+This is a description of legends that are believed by members of the ideology.
 
-The technology that started the apocalypse was developed centuries prior to the Apocalypse by parent University of the agricultural college that eventually became what is now known as The University.  This previous and parent university was located in a town called Prince. 
+The technology that started the apocalypse was developed centuries prior to the Apocalypse by parent University of the agricultural college that eventually became what is now known as The University.  This previous and parent university was located in a town called Prince.
 {: .example .well}
-
-
-
-
-

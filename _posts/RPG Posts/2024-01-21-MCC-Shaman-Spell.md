@@ -67,6 +67,7 @@ mastodon-post-id: 111819663872505089
 |            _Duration:_ | 2 rounds / CL                                       |
 |                _Save:_ | Willpower vs. Mutation check                        |
 |     _Activation Time:_ | 1 Round                                             |
+{.well .table .table-striped}
 
 **General:** The shaman has the ability to mentally project life-like holo projections of C3PO / R2D2 and their friends in the world around them using a advertising fragment on the Ancient's Holo-Grid.  
 
@@ -77,6 +78,7 @@ mastodon-post-id: 111819663872505089
 | _Manifestation 3:_ | The shaman’s hand, with their ID Badge on it, grasps and pulls the holograms of the droids into existence                        |
 | _Manifestation 4:_ | The Shaman's shadow elongates and ancient green text appears in it starts to crawl away from the shaman.                         |
 | _Manifestation 5:_ | The shaman's fingers on both hands become ridged and contorted as they point towards the location the Hologram is to appear.     |
+{.well .table .table-striped}
 
 |    Roll    | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -90,3 +92,4 @@ mastodon-post-id: 111819663872505089
 | _28 - 29:_ | The shaman is able project an interactive hologram R2D2 / C3PO and two other Star Wars Characters that moves, with both visual, auditory, olfactory, and tactile elements; the hologram is a hard hologram and may cause up to 2d6 in damage.                                                                                                                                                                                            |
 | _30 - 31:_ | The shaman is capable of projecting a compelling fantasy world of Star Wars featuring R2D2 / C3PO and three other Star Wars Characters, with both visual, auditory, olfactory, and tactile elements; the hard hologram may cause up to 3d6 in damage per targeted attack; the hologram does not appear to take damage from attacks and continues to exist for the full duration.                                                         |
 |   _32+:_   | The shaman is seemingly capable of reordering reality itself, creating a complex and interactive experience featuring places from within the Star Wars Universe with unerring verisimilitude for all living creatures within range; events transpire in the illusory reality at the shaman’s direction, and have the same impact and results has though they actually happened. The physical environment may not be damaged in this way. |
+{.well .table .table-striped}

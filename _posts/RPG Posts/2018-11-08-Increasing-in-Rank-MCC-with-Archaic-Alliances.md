@@ -139,8 +139,3 @@ ZOOPREMISISTS: Members get double Status Points for beating a party that include
 triple Status Points are received. If both situations apply, triple Status Points (only) are received.
 
 When modified Status Points are received for beating or negotiating with NPC's, the Status Point award for the PC's party is calculated normally. Then the award actually given to the PC is modified. The modifications applying to a particular PC's Status never affect the number of Status Points awarded to his companions.
-
-
-
-
-

@@ -72,7 +72,7 @@ The following rules are based on my play testing of running Gamma World in MCC. 
 ## Blasters 
 
 | Type   | Name              | TL| Comp| Range    | Radius |Dmg | Power | Ammo | Rate of Fire | Speed | Weight | Cost | Value |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:| 
 | Pistol | Mark V Blaster    | 5 | 6 | 80/160/240  | N/A | 5D8*  |C-Cell  | 6 | 1 | N/A | 5kg | 9,000Ð    | 1,500 |
 | Rifle | Mark VII Blaster   | 5 | 6 | 130/260/390 | N/A | 5D10* |2xC-Cell| 6 | 1 | N/A | 6kg | Priceless | Rank |
 | Rifle | Mark XII Blaster   | 6 | 6 | 400         | N/A | 8D10* | F pack | 6 | 1 | N/A | 6kg | Priceless | 2 x Rank |

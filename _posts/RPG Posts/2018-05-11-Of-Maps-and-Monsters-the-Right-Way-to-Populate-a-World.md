@@ -73,65 +73,65 @@ This work is the beginning of a collection of notes on Monsters and Maps.  In th
 
 TODO: Convert to DCC Rules.
 
-| Type of Terrain                                                                       | The Wild | Woodland | Deep Forest | Ruins | Caves | Atmosphere | Weather | 
-|--------------------------------------------------------------------------------------:|:--------:|:--------:|:-----------:|:-----:|:-----:|:----------:|:-------:| 
-| Ancient dyke                                                                          |          |          |             | x     |       |            |         | 
-| Birdsong                                                                              |          |          |             |       |       | x          |         | 
-| Black toadstools                                                                      |          |          | x           |       |       |            |         | 
-| Bog                                                                                   | x        | x        |             |       |       |            |         | 
-| Bracken                                                                               |          | x        |             | x     |       |            |         | 
-| Cliffs                                                                                | x        |          |             |       | x     |            |         | 
-| Covered pit                                                                           |          |          |             | x     |       |            |         | 
-| Crags, rocky outcrops (defensible rocks),huge boulders                                | x        |          |             |       | x     |            |         | 
-| Dust                                                                                  |          |          |             | x     |       |            |         | 
-| Fallen statue, old walls, statue, giant fallen statue head                            |          |          |             | x     |       |            |         | 
-| Fallen tree, pile of timber                                                           |          | x        |             |       |       |            |         | 
-| Flooded pit                                                                           |          |          | x           |       |       |            |         | 
-| Foundations                                                                           |          |          |             | x     |       |            |         | 
-| Freezing cold, torrential downpour, blizzard                                          |          |          |             |       |       |            | x       | 
-| Freezing pool                                                                         |          |          |             |       | x     |            |         | 
-| Gale, strong wind                                                                     |          |          |             |       |       |            | x       | 
-| Impenetrable hedge of tree limbs                                                      |          | x        | x           |       |       |            |         | 
-| Incessant buzzing of insects                                                          |          |          |             |       |       | x          |         | 
-| Lone trees, boulders                                                                  | x        |          |             |       |       |            |         | 
-| Low boughs                                                                            |          | x        |             |       |       |            |         | 
-| Low ceilings                                                                          |          |          |             |       | x     |            |         | 
-| Mossy masonry, root-covered wall                                                      |          | x        |             |       |       |            |         | 
-| Mud                                                                                   | x        | x        |             |       |       |            |         | 
-| Narrow walls                                                                          |          |          |             |       | x     |            |         | 
-| Nettle bank or briar patch                                                            | x        | x        |             | x     |       |            |         | 
-| Old floors                                                                            |          |          |             | x     |       |            |         | 
-| Partial and collapsed floors, stairs, broken stairs                                   |          |          |             | x     |       |            |         | 
-| Passable hedge of tree limbs                                                          |          | x        |             |       |       |            |         | 
-| Path, deer track                                                                      |          | x        |             |       |       |            |         | 
-| Pillar                                                                                |          |          |             | x     |       |            |         | 
-| Pit                                                                                   |          |          |             | x     |       |            |         | 
-| Poison nettles, black briars                                                          |          |          | x           |       |       |            |         | 
-| Poisonous fumes                                                                       |          |          | x           |       |       |            |         | 
-| Puddles, slimy floor, slippery floor                                                  |          |          |             |       | x     |            |         | 
-| Queer sounds, dead silence, an unsettling atmosphere, an eerie humming sound, disturbing echoes|          |          |             |       |       | x          |         | 
-| Ravines                                                                               | x        |          |             |       |       |            |         | 
-| River shallows, stream, flood water                                                   | x        |          |             |       |       |            |         | 
-| Roar of water                                                                         |          |          |             |       |       | x          |         | 
-| Rock edges                                                                            | x        |          |             |       | x     |            |         | 
-| Rock pillar                                                                           |          |          |             |       | x     |            |         | 
-| Rocky floor, tiny stalagmites, pool, rubbish-strewn floor, shale floor                |          |          |             |       | x     |            |         | 
-| Roots                                                                                 |          |          | x           |       |       |            |         | 
-| Rotten Trees                                                                          |          |          | x           |       |       |            |         | 
-| Rubble                                                                                |          |          |             | x     |       |            |         | 
-| Scattered rocks, moorland heather, small streams                                      | x        |          |             |       |       |            |         | 
-| Slope                                                                                 |          |          |             |       | x     |            |         | 
-| Sloping terrain                                                                       | x        | x        | x           |       |       |            |         | 
-| Sucking bog                                                                           |          |          | x           |       |       |            |         | 
-| Terrible stench, the scent of death                                                   |          |          |             |       |       | x          |         | 
-| Thick fog, smoke, eerie mist                                                          |          |          |             |       |       |            | x       | 
-| Thick trunked trees                                                                   |          | x        |             |       |       |            |         | 
-| Thicket                                                                               | x        | x        |             |       |       |            |         | 
-| Unstable stalactites                                                                  |          |          |             |       | x     |            |         | 
-| Unstable walls                                                                        |          |          |             | x     |       |            |         | 
-| Warm golden sun, slanting rays of golden light, the sun breaks through the clouds     |          |          |             |       |       |            | x       | 
-| Webs                                                                                  |          |          | x           | x     |       |            |         | 
-| Windowed walls                                                                        |          |          |             | x     |       |            |         | 
+|                                                                                 Type of Terrain | The Wild | Woodland | Deep Forest | Ruins | Caves | Atmosphere | Weather |
+|------------------------------------------------------------------------------------------------:|:--------:|:--------:|:-----------:|:-----:|:-----:|:----------:|:-------:|
+|                                                                                    Ancient dyke |          |          |             |   x   |       |            |         |
+|                                                                                        Birdsong |          |          |             |       |       |     x      |         |
+|                                                                                Black toadstools |          |          |      x      |       |       |            |         |
+|                                                                                             Bog |    x     |    x     |             |       |       |            |         |
+|                                                                                         Bracken |          |    x     |             |   x   |       |            |         |
+|                                                                                          Cliffs |    x     |          |             |       |   x   |            |         |
+|                                                                                     Covered pit |          |          |             |   x   |       |            |         |
+|                                          Crags, rocky outcrops (defensible rocks),huge boulders |    x     |          |             |       |   x   |            |         |
+|                                                                                            Dust |          |          |             |   x   |       |            |         |
+|                                      Fallen statue, old walls, statue, giant fallen statue head |          |          |             |   x   |       |            |         |
+|                                                                     Fallen tree, pile of timber |          |    x     |             |       |       |            |         |
+|                                                                                     Flooded pit |          |          |      x      |       |       |            |         |
+|                                                                                     Foundations |          |          |             |   x   |       |            |         |
+|                                                    Freezing cold, torrential downpour, blizzard |          |          |             |       |       |            |    x    |
+|                                                                                   Freezing pool |          |          |             |       |   x   |            |         |
+|                                                                               Gale, strong wind |          |          |             |       |       |            |    x    |
+|                                                                Impenetrable hedge of tree limbs |          |    x     |      x      |       |       |            |         |
+|                                                                    Incessant buzzing of insects |          |          |             |       |       |     x      |         |
+|                                                                            Lone trees, boulders |    x     |          |             |       |       |            |         |
+|                                                                                      Low boughs |          |    x     |             |       |       |            |         |
+|                                                                                    Low ceilings |          |          |             |       |   x   |            |         |
+|                                                                Mossy masonry, root-covered wall |          |    x     |             |       |       |            |         |
+|                                                                                             Mud |    x     |    x     |             |       |       |            |         |
+|                                                                                    Narrow walls |          |          |             |       |   x   |            |         |
+|                                                                      Nettle bank or briar patch |    x     |    x     |             |   x   |       |            |         |
+|                                                                                      Old floors |          |          |             |   x   |       |            |         |
+|                                             Partial and collapsed floors, stairs, broken stairs |          |          |             |   x   |       |            |         |
+|                                                                    Passable hedge of tree limbs |          |    x     |             |       |       |            |         |
+|                                                                                Path, deer track |          |    x     |             |       |       |            |         |
+|                                                                                          Pillar |          |          |             |   x   |       |            |         |
+|                                                                                             Pit |          |          |             |   x   |       |            |         |
+|                                                                    Poison nettles, black briars |          |          |      x      |       |       |            |         |
+|                                                                                 Poisonous fumes |          |          |      x      |       |       |            |         |
+|                                                            Puddles, slimy floor, slippery floor |          |          |             |       |   x   |            |         |
+| Queer sounds, dead silence, an unsettling atmosphere, an eerie humming sound, disturbing echoes |          |          |             |       |       |     x      |         |
+|                                                                                         Ravines |    x     |          |             |       |       |            |         |
+|                                                             River shallows, stream, flood water |    x     |          |             |       |       |            |         |
+|                                                                                   Roar of water |          |          |             |       |       |     x      |         |
+|                                                                                      Rock edges |    x     |          |             |       |   x   |            |         |
+|                                                                                     Rock pillar |          |          |             |       |   x   |            |         |
+|                          Rocky floor, tiny stalagmites, pool, rubbish-strewn floor, shale floor |          |          |             |       |   x   |            |         |
+|                                                                                           Roots |          |          |      x      |       |       |            |         |
+|                                                                                    Rotten Trees |          |          |      x      |       |       |            |         |
+|                                                                                          Rubble |          |          |             |   x   |       |            |         |
+|                                                Scattered rocks, moorland heather, small streams |    x     |          |             |       |       |            |         |
+|                                                                                           Slope |          |          |             |       |   x   |            |         |
+|                                                                                 Sloping terrain |    x     |    x     |      x      |       |       |            |         |
+|                                                                                     Sucking bog |          |          |      x      |       |       |            |         |
+|                                                             Terrible stench, the scent of death |          |          |             |       |       |     x      |         |
+|                                                                    Thick fog, smoke, eerie mist |          |          |             |       |       |            |    x    |
+|                                                                             Thick trunked trees |          |    x     |             |       |       |            |         |
+|                                                                                         Thicket |    x     |    x     |             |       |       |            |         |
+|                                                                            Unstable stalactites |          |          |             |       |   x   |            |         |
+|                                                                                  Unstable walls |          |          |             |   x   |       |            |         |
+|               Warm golden sun, slanting rays of golden light, the sun breaks through the clouds |          |          |             |       |       |            |    x    |
+|                                                                                            Webs |          |          |      x      |   x   |       |            |         |
+|                                                                                  Windowed walls |          |          |             |   x   |       |            |         |
 {: .well .table .dccvsdnd .table-striped}
 
 
@@ -723,31 +723,31 @@ Names for Swamps: bog, muskeg, Marsh, Moor, Wetlands
 #### Coastlines
 Beach, Reefs, Shoals, 
 
-| Label   | Type of Terrian                                                                                                   | 
-|--------:|:------------------------------------------------------------------------------------------------------------------| 
-| Easy    | Normal Roads, Trails, Grasslands                                                                                  | 
-| Normal  | Difficult: Roads, Trails, Grasslands <br> Normal: Arctic, Coast, Desert, Forest, Hills, Lakes, Rivers, Swamp      | 
-| Hard    | Difficult: Arctic, Coast, Desert, Forest, Hills, Lakes, Rivers, Swamp <br> Normal Mountains                       | 
-| Extreme | Difficult Mountains                                                                                               | 
+|   Label | Type of Terrian                                                                                              |
+|--------:|:-------------------------------------------------------------------------------------------------------------|
+|    Easy | Normal Roads, Trails, Grasslands                                                                             |
+|  Normal | Difficult: Roads, Trails, Grasslands <br> Normal: Arctic, Coast, Desert, Forest, Hills, Lakes, Rivers, Swamp |
+|    Hard | Difficult: Arctic, Coast, Desert, Forest, Hills, Lakes, Rivers, Swamp <br> Normal Mountains                  |
+| Extreme | Difficult Mountains                                                                                          |
 {: .well .table .table-striped}
 
 
 
-| Transportation              |    MPH |     Time |    Daily | 
-|----------------------------:|:------:|:--------:|:--------:| 
-| Walking                     | 3 MPH  | 8 hours  | 24 miles | 
-| Mule or donkey              | 3 MPH  | 8 hours  | 24 miles | 
-| Horse or pony               | 4 MPH  | 8 hours  | 32 miles | 
-| Warhorse                    | 5 MPH  | 8 hours  | 40 miles | 
-| Farmer’s cart <sup>†</sup>  | 2 MPH  | 8 hours  | 16 miles | 
-| Passenger wagon <sup>‡</sup>| 3 MPH  | 8 hours  | 24 miles | 
-| Merchant’s caravan          | 3 MPH  | 8 hours  | 24 miles | 
-| Raft or barge               | 0.5 MPH| 20 hours | 10 miles | 
-| Rowboat                     | 1.5 MPH| 10 hours | 15 miles | 
-| Sailing ship                | 2 MPH  | 24 hours | 48 miles | 
-| Warship (sailed and rowed)  | 2.5 MPH| 24 hours | 60 miles | 
-| Longship (sailed and rowed) | 3 MPH  | 24 hours | 72 miles | 
-| Galley                      | 4 MPH  | 24 hours | 96 miles | 
+|               Transportation |   MPH   |   Time   |  Daily   |
+|-----------------------------:|:-------:|:--------:|:--------:|
+|                      Walking |  3 MPH  | 8 hours  | 24 miles |
+|               Mule or donkey |  3 MPH  | 8 hours  | 24 miles |
+|                Horse or pony |  4 MPH  | 8 hours  | 32 miles |
+|                     Warhorse |  5 MPH  | 8 hours  | 40 miles |
+|   Farmer’s cart <sup>†</sup> |  2 MPH  | 8 hours  | 16 miles |
+| Passenger wagon <sup>‡</sup> |  3 MPH  | 8 hours  | 24 miles |
+|           Merchant’s caravan |  3 MPH  | 8 hours  | 24 miles |
+|                Raft or barge | 0.5 MPH | 20 hours | 10 miles |
+|                      Rowboat | 1.5 MPH | 10 hours | 15 miles |
+|                 Sailing ship |  2 MPH  | 24 hours | 48 miles |
+|   Warship (sailed and rowed) | 2.5 MPH | 24 hours | 60 miles |
+|  Longship (sailed and rowed) |  3 MPH  | 24 hours | 72 miles |
+|                       Galley |  4 MPH  | 24 hours | 96 miles |
 {: .well .table .table-striped}
 
 † Farmer’s cart is a two-wheeled cart with mule designed for hauling vegetables.
@@ -755,30 +755,30 @@ Beach, Reefs, Shoals,
 ‡ Passenger wagon is a covered wagon designed for carrying paying passengers. Available only between major destinations (e.g., large cities or trading ports).
 
 
-| Label   | Type of Terrian                                                                                                   | 
-|--------:|:------------------------------------------------------------------------------------------------------------------| 
-| Easy    | Normal Roads, Trails, Grasslands                                                                                  | 
-| Normal  | Difficult Roads, Trails, Grasslands, Normal Arctic, Coast, Desert, Forest, Hills, Mountains, Lakes, Rivers, Swamp | 
-| Hard    | Difficult Arctic, Coast, Desert, Forest, Hills, Mountains, Lakes, Rivers, Swamp, Normal Mountains                 | 
-| Extreme | Difficult Mountains                                                                                               | 
+|   Label | Type of Terrian                                                                                                   |
+|--------:|:------------------------------------------------------------------------------------------------------------------|
+|    Easy | Normal Roads, Trails, Grasslands                                                                                  |
+|  Normal | Difficult Roads, Trails, Grasslands, Normal Arctic, Coast, Desert, Forest, Hills, Mountains, Lakes, Rivers, Swamp |
+|    Hard | Difficult Arctic, Coast, Desert, Forest, Hills, Mountains, Lakes, Rivers, Swamp, Normal Mountains                 |
+| Extreme | Difficult Mountains                                                                                               |
 {: .well .table .table-striped}
 
 Travel Pace and Effects 
 
-| Terrain | Pace   | Feet per minute | Miles an Hour | Hourly Travel Time | Miles a day | Minute a hex | Hexs an Hour | Hexes a Day | Pace Effect (TBD)                                | 
-|--------:|:------:|:---------------:|:-------------:|:------------------:|:-----------:|:------------:|:------------:|:-----------:|:-------------------------------------------------| 
-| Easy    | Fast   | 400             | 4             | 7.5                | 30          | 15           | 4            | 30          | −5 penalty to passive Wisdom (Perception) scores | 
-| Easy    | Normal | 300             | 3             | 8                  | 24          | 20           | 3            | 24          | —                                                | 
-| Easy    | Slow   | 200             | 2             | 9                  | 18          | 30           | 2            | 18          | Able to use stealth                              | 
-| Normal  | Fast   | 200             | 2             | 7.5                | 15          | 30           | 2            | 15          | −5 penalty to passive Wisdom (Perception) scores | 
-| Normal  | Normal | 150             | 1.5           | 8                  | 12          | 40           | 1.5          | 12          | —                                                | 
-| Normal  | Slow   | 100             | 1             | 9                  | 9           | 60           | 1            | 9           | Able to use stealth                              | 
-| Hard    | Fast   | 100             | 1             | 7.5                | 7.5         | 60           | 1            | 7.5         | −5 penalty to passive Wisdom (Perception) scores | 
-| Hard    | Normal | 75              | 0.75          | 8                  | 6           | 80           | 0.75         | 6           | —                                                | 
-| Hard    | Slow   | 50              | 0.5           | 9                  | 4.5         | 120          | 0.5          | 4.5         | Able to use stealth                              | 
-| Extreme | Fast   | 50              | 0.5           | 7.5                | 3.75        | 120          | 0.5          | 3.75        | −5 penalty to passive Wisdom (Perception) scores | 
-| Extreme | Normal | 37.5            | 0.375         | 8                  | 3           | 160          | 0.375        | 3           | —                                                | 
-| Extreme | Slow   | 25              | 0.25          | 9                  | 2.25        | 240          | 0.25         | 2.25        | Able to use stealth                              | 
+| Terrain |  Pace  | Feet per minute | Miles an Hour | Hourly Travel Time | Miles a day | Minute a hex | Hexs an Hour | Hexes a Day | Pace Effect (TBD)                                |
+|--------:|:------:|:---------------:|:-------------:|:------------------:|:-----------:|:------------:|:------------:|:-----------:|:-------------------------------------------------|
+|    Easy |  Fast  |       400       |       4       |        7.5         |     30      |      15      |      4       |     30      | −5 penalty to passive Wisdom (Perception) scores |
+|    Easy | Normal |       300       |       3       |         8          |     24      |      20      |      3       |     24      | —                                                |
+|    Easy |  Slow  |       200       |       2       |         9          |     18      |      30      |      2       |     18      | Able to use stealth                              |
+|  Normal |  Fast  |       200       |       2       |        7.5         |     15      |      30      |      2       |     15      | −5 penalty to passive Wisdom (Perception) scores |
+|  Normal | Normal |       150       |      1.5      |         8          |     12      |      40      |     1.5      |     12      | —                                                |
+|  Normal |  Slow  |       100       |       1       |         9          |      9      |      60      |      1       |      9      | Able to use stealth                              |
+|    Hard |  Fast  |       100       |       1       |        7.5         |     7.5     |      60      |      1       |     7.5     | −5 penalty to passive Wisdom (Perception) scores |
+|    Hard | Normal |       75        |     0.75      |         8          |      6      |      80      |     0.75     |      6      | —                                                |
+|    Hard |  Slow  |       50        |      0.5      |         9          |     4.5     |     120      |     0.5      |     4.5     | Able to use stealth                              |
+| Extreme |  Fast  |       50        |      0.5      |        7.5         |    3.75     |     120      |     0.5      |    3.75     | −5 penalty to passive Wisdom (Perception) scores |
+| Extreme | Normal |      37.5       |     0.375     |         8          |      3      |     160      |    0.375     |      3      | —                                                |
+| Extreme |  Slow  |       25        |     0.25      |         9          |    2.25     |     240      |     0.25     |    2.25     | Able to use stealth                              |
 {: .well .table .table-striped}
 
 ## Kingdom Scale (6 Mile Per Hex)
