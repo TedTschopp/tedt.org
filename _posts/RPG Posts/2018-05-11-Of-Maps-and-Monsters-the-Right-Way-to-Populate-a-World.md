@@ -396,6 +396,8 @@ Old floors count as difficult terrain (half move across the old floors).|Old flo
 
 #### Partial and collapsed floors, stairs, broken stairs 
 
+>-"Alien they seemed to be in that lost world, exiles of a long-forgotten time when in some unrecorded age they had lived there, until their rooms and passages had fallen into decay and darkness, their stairs crumbled into ruin, their tall houses empty."
+
 One or more masonry ledges, each one to three feet high. 
 
 * Moving up them halves movement; moving down has no penalty.
@@ -403,6 +405,7 @@ One or more masonry ledges, each one to three feet high.
 * Attacking from a higher position gives Advantage on attack rolls.
 
 #### Rubble
+>-"The towers of Elven Tirion were thrown down, and the streets filled with the rubble from its once-great halls and arches, now ruined."
 
 Creating uncertain and uneven footing, rubble flung across the battlefield can make movement difficult.
 
