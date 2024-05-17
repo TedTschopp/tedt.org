@@ -91,25 +91,28 @@
                                         <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
                                             <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                                             {% if page.author.name %}
-                                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                                                <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
                                             {% else %}
-                                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                                                <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
                                             {% endif %}
                                         </div>
+
+                                        {% if image-credits-URL contains "http" %}
+                                            <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                        {% else %}
+                                            <cite>"{{image_credits_title}}"</cite>
+                                        {% endif %}
+                                        {% if image-credits-artist-URL contains "http" %}
+                                            <span class="vcard"><address style="display: inline;" class="author"> an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                        {% else %}
+                                            by {{image_credits}}
+                                        {% endif %}
+
                                     </div>
                                 </div>
 
                                 <div class="card-header">
-                                    {% if image-credits-URL contains "http" %}
-                                        <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
-                                    {% else %}
-                                        <cite>"{{image_credits_title}}"</cite>
-                                    {% endif %}
-                                    {% if image-credits-artist-URL contains "http" %}
-                                        <span class="vcard"><address style="display: inline;" class="author"> by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
-                                    {% else %}
-                                        by {{image_credits}}
-                                    {% endif %}
+
                                 </div>
 
                             {% endif %}
