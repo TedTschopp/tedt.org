@@ -88,11 +88,21 @@
                                         <h1 class="card-title p-name" style="z-index: 2; position: relative;">{{ page.title }}</h1>
                                         {% if page.subtitle %}<p class="h2 text-muted card-subtitle mb-2 h5" style="z-index: 2; position: relative;">{{page.subtitle}}</p>{% endif %}
 
+
+                                        <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
+                                            <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                                            {% if page.author.name %}
+                                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                                            {% else %}
+                                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                                            {% endif %}
+                                        </div>
+
+
+
                                     </div>
                                 </div>
 
-                                <!--<img class="card-img-top w-100" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">-->
-                                
                                 <div class="card-header">
                                     {% if image-credits-URL contains "http" %}
                                         <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
@@ -108,18 +118,6 @@
 
                             {% endif %}
                         <div class="card-body pt-1 p-4">
-                            <h1 class="card-title p-name">{{ page.title }}</h1>
-                            {% if page.subtitle %}<p class="h2 text-muted card-subtitle mb-2 h5">{{page.subtitle}}</p>{% endif %}
-
-                            <div class="d-flex align-items-center">
-                            <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                            {% if page.author.name %}
-                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
-                            {% else %}
-                                <p class="card-text">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
-                            {% endif %}
-                            </div>
-
 
                             {% comment %}<p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>{% endcomment %}
                             {% include publish-and-update-date-time-v2.html %}
@@ -127,9 +125,13 @@
         
                             <div class="d-flex align-items-center">
                                 <p class="card-text">
+                                    <!--
                                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
                                     <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
-                                
+                                    -->
+
+                                    
+                                    <!--
                                     {% if page.category %}
                                         {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
                                     {% else %}
@@ -158,6 +160,24 @@
                                             {% endif %}
                                         {% endif %}
                                     {% endfor %}
+                                    -->
+                                    {% include progress-bar.html %}
+                                    <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
+                                        <div class="col-12">
+                                            <div class="card h-100 position-relative">
+                                                <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/table-of-contents.webp" alt="{{category}}">
+                                                <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
+                                                    <p class="card-title h3" style="z-index: 2; position: relative;"><a style="text-decoration: none;" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.siteurl }}/category/{{category|slugize}}">Table of Contents 📖</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0 ps-4" id="insert-table-of-contents-here">
+        
+                                        </div>
+                                    </div>                   
+                                    <span class="e-content" id="main_content">{{ content }}</span>
+
                                 </p>
                             </div>
                             
@@ -165,22 +185,11 @@
 
                         </div>
                         <div class="card-footer p-4 py-3 h-100">
-                            {% include progress-bar.html %}
-                            <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
-                                <div class="col-12">
-                                    <div class="card h-100 position-relative">
-                                        <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/table-of-contents.webp" alt="{{category}}">
-                                        <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
-                                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a style="text-decoration: none;" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.siteurl }}/category/{{category|slugize}}">Table of Contents 📖</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body p-0 ps-4" id="insert-table-of-contents-here">
+                            
 
-                                </div>
-                            </div>                   
-                            <span class="e-content" id="main_content">{{ content }}</span>
+
+
+
                         </div>
                     </div>
 
