@@ -130,8 +130,7 @@
                                     <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
                                     -->
 
-                                    
-                                    <!--
+                                    {% comment %}
                                     {% if page.category %}
                                         {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
                                     {% else %}
@@ -160,7 +159,8 @@
                                             {% endif %}
                                         {% endif %}
                                     {% endfor %}
-                                    -->
+                                    {% endcomment%}
+
                                     {% include progress-bar.html %}
                                     <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
                                         <div class="col-12">
