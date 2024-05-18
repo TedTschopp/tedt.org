@@ -115,8 +115,8 @@
                                     {% else %}
                                         {% assign image_URL = site.featured-image %}
                                     {% endif %}
-                                    <div class="col-md-2 px-0">
-                                      <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail img-fluid">
+                                    <div class="col-md-2 px-0 aspect-ratio aspect-ratio-16x9">
+                                      <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail img-fluid w-100 h-auto aspect-content">
                                     </div>
                                     <div class="col-md-10 px-0">
                                       <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
