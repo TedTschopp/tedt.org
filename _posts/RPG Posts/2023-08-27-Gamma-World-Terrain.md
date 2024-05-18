@@ -26,6 +26,7 @@ seo-description:
 
 categories:
 - Gamma World
+- Role Playing Games
 tags:
 keywords:
 
@@ -37,17 +38,17 @@ coordinates:
     latitude:
     longitude:
 
-image: null
-image-alt: null
-image-artist:
+image: img/Gamma-World-Midjourney.png
+image-alt: 
+image-artist: Ted Tschopp
 image-artist-URL:
-image-credits:
-image-credits-URL: null
-image-credits-artist: null
+image-credits: Ted Tschopp
+image-credits-URL: 
+image-credits-artist: 
 image-credits-artist-URL:
-image-credits-title: null
-image-description:
-image-title:
+image-credits-title: 
+image-description: An ancient, rusted piece of advanced technology, half-buried in the ground, with glowing circuits and strange symbols. Inspired by Gamma World TTRPG, combining elements of steampunk and sci-fi, Spelling out "Gamma World"
+image-title: Gamma World Smart Brick
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
