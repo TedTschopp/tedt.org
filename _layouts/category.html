@@ -116,22 +116,34 @@
                                         {% assign image_URL = site.featured-image %}
                                     {% endif %}
 
-                                    <div class="card mb-3 p-0">
-                                      <div class="row g-0">
+                                    <div class="card mb-3 p-0 h-100 position-relative">
+                                      <div class="row g-0 h-100">
                                         <div class="col-md-4">
                                           <div class="ratio ratio-16x9">
                                             <img src="{{ image_URL }}" class="img-fluid rounded-start object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
                                           </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 d-flex align-items-center">
                                           <div class="card-body">
-                                            <dl><div class="card-title"><dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt></div>
-                                            <div class="card-text"><div class="text-truncate-5"><dd>{{ post.description }}</dd></div></div></dl>
-                                            <div class="card-text">Posted on <small class="text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></div>
+                                            <dl>
+                                              <div class="card-title">
+                                                <dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt>
+                                              </div>
+                                              <div class="card-text">
+                                                <div class="text-truncate-5">
+                                                  <dd>{{ post.description }}</dd>
+                                                </div>
+                                              </div>
+                                            </dl>
+                                            <div class="card-text">
+                                              Posted on <small class="text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small>
+                                            </div>
+                                            <a href="{{ post.url | absolute_url }}" class="stretched-link"></a>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    
 
 
 <!--
