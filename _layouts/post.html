@@ -99,14 +99,14 @@
 
                                         <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
                                             {% if image-credits-URL contains "http" %}
-                                                <cite><a target="_new" href="{{image_credits_URL }}">"{{image_credits_title}}"</a></cite>
+                                                <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
                                             {% else %}
-                                                <cite>"{{image_credits_title}}"</cite>
+                                                <cite>{{image_credits_title}}</cite>
                                             {% endif %}
                                             {% if image-credits-artist-URL contains "http" %}
-                                                <span class="vcard"><address style="display: inline;" class="author">&nbsp;an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                                <span class="vcard"><address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
                                             {% else %}
-                                                &nbsp;an image by {{image_credits}}
+                                                :&nbsp;an image by {{image_credits}}
                                             {% endif %}
                                         </div>
 
