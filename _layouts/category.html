@@ -115,14 +115,32 @@
                                     {% else %}
                                         {% assign image_URL = site.featured-image %}
                                     {% endif %}
-                                    <div class="col-md-2 px-0 aspect-ratio aspect-ratio-16x9">
-                                      <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail img-fluid w-100 h-auto aspect-content">
+
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                      <div class="row g-0">
+                                        <div class="col-md-4">
+                                          <img src="{{ image_URL }}" class="img-fluid rounded-start" alt="{{image_alt}} by {{image_credits}}">
+                                        </div>
+                                        <div class="col-md-8">
+                                          <div class="card-body">
+                                            <dl><h5 class="card-title"><dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt></h5>
+                                            <p class="card-text"><dd>{{ post.description }}</dd></p></dl>
+                                            <p class="card-text">Posted on <small class="text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+<!--
+                                    <div class="col-md-2 px-0 aspect-ratio aspect-ratio-16x9" style="max-height: 176px;">
+                                      <img src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}" class="float-start img-thumbnail img-fluid w-100 h-100 aspect-content">
                                     </div>
                                     <div class="col-md-10 px-0">
                                       <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
                                         {{ post.title }}
                                         </a></dt><dd>{{ post.description }}</dd></dl>
-                                    </div>
+                                    </div>-->
                                   {% else %}
                                     <div class="col-md-12 px-0">
                                       <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> <dl><dt><a href="{{ post.url | absolute_url }}">
