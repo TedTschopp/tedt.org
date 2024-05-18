@@ -236,7 +236,7 @@ links:
   - Name: web.brid.gy
     URL: https://web.brid.gy/r
     Username: 'https://tedt.org/'
-    Icon-Class: fa-regular fa-window-maximize
+    Icon-Class: fa-solid fa-bridge
     Category: 'Social Media'
     # Mastodon
   - Name: Mastodon
