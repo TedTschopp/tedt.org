@@ -116,10 +116,12 @@
                                         {% assign image_URL = site.featured-image %}
                                     {% endif %}
 
-                                    <div class="card mb-3">
+                                    <div class="card mb-3 p-0">
                                       <div class="row g-0">
                                         <div class="col-md-4">
-                                          <img src="{{ image_URL }}" class="img-fluid rounded-start" alt="{{image_alt}} by {{image_credits}}">
+                                          <div class="ratio ratio-16x9">
+                                            <img src="{{ image_URL }}" class="img-fluid rounded-start object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
+                                          </div>
                                         </div>
                                         <div class="col-md-8">
                                           <div class="card-body">
