@@ -68,10 +68,29 @@
 
                     <!-- Post Content -->
 
+                    <style>
+
+                      .list-item-custom {
+                        position: relative;
+                        padding-left: 2rem; /* Adjust based on your need */
+                      }
+
+                      .list-item-custom::before {
+                        content: counter(item) ".";
+                        counter-increment: item;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 1.5rem; /* Adjust based on your need */
+                      }
+                    </style>
+
+
                     <span class="e-content" id="main_content">
                       <ol>
                         {% for post in site.categories[page.category] %}
-                            <li style="  display: flex; align-items: center;">
+                            <li class="list-item-custom">
                               <div class="container">
                                 <div class="row align-items-stretch">
 
