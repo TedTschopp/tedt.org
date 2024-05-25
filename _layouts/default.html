@@ -124,7 +124,9 @@
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top w-100 d-block" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
+            <div class="ratio ratio-16x9">
+              <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
+            </div>
             <div class="card-body pt-2 pb-2 p-4">
               <h2 class="card-title">{{ category[0] | capitalize }}</h2>
               <h3 class="text-muted card-subtitle h5 mb-2">{{ category[0] | capitalize }}</h3>
