@@ -1,0 +1,161 @@
+Bestiary:
+  title: "Bestiary"
+  subtitle: "Creatures and Beasts from All Realms"
+  description: "Detailed descriptions and stats of creatures from various games and myths."
+  image: "/assets/images/bestiary.webp"
+
+Books:
+  title: "Books"
+  subtitle: "Reading for the Adventurous Mind"
+  description: "Reviews, thoughts, and discussions on books that inspire and entertain."
+  image: "/assets/images/books.webp"
+
+Communications:
+  title: "Communications"
+  subtitle: "Staying Connected in a Disconnected World"
+  description: "Essays and tips on effective communication in the digital age."
+  image: "/assets/images/communications.webp"
+
+Computers:
+  title: "Computers"
+  subtitle: "The Heart of Modern Adventures"
+  description: "Insights and advice on using computers for gaming, writing, and more."
+  image: "/assets/images/computers.webp"
+
+Dungeon_Crawl_Classics:
+  title: "Dungeon Crawl Classics"
+  subtitle: "Old-School Adventures with a New Twist"
+  description: "A deep dive into the world of Dungeon Crawl Classics, including game guides and adventures."
+  image: "/assets/images/dungeon_crawl_classics.webp"
+
+Dungeons_And_Dragons:
+  title: "Dungeons & Dragons"
+  subtitle: "The Quintessential Role Playing Game"
+  description: "Resources, stories, and guides for playing Dungeons & Dragons."
+  image: "/assets/images/dungeons_and_dragons.webp"
+
+Folklore:
+  title: "Folklore"
+  subtitle: "Tales and Legends from Around the World"
+  description: "Exploring myths, legends, and folklore from various cultures."
+  image: "/assets/images/folklore.webp"
+
+Gamma_World:
+  title: "Gamma World"
+  subtitle: "Post-Apocalyptic Role Playing"
+  description: "Guides and adventures set in the world of Gamma World."
+  image: "/assets/images/gamma_world.webp"
+
+GURPS:
+  title: "GURPS"
+  subtitle: "Generic Universal RolePlaying System"
+  description: "Explorations and adventures using the GURPS system."
+  image: "/assets/images/gurps.webp"
+
+Home:
+  title: "Home"
+  subtitle: "The Heart of the Website"
+  description: "Welcome to the hub of all content."
+  image: "/assets/images/home.webp"
+
+Maps:
+  title: "Maps"
+  subtitle: "Guiding Your Adventures"
+  description: "Detailed maps for various games and adventures."
+  image: "/assets/images/maps.webp"
+
+Middle-earth:
+  title: "Middle-earth"
+  subtitle: "Exploring Tolkien's World"
+  description: "Articles and guides related to Middle-earth and its lore."
+  image: "/assets/images/middle_earth.webp"
+
+Mobile:
+  title: "Mobile"
+  subtitle: "Gaming and Communication on the Go"
+  description: "Tips and insights on mobile gaming and communication."
+  image: "/assets/images/mobile.webp"
+
+Monsters:
+  title: "Monsters"
+  subtitle: "Terrifying Creatures and How to Defeat Them"
+  description: "Information and guides on various monsters in role-playing games."
+  image: "/assets/images/monsters.webp"
+
+Movies:
+  title: "Movies"
+  subtitle: "Cinema for the Imaginative"
+  description: "Reviews and discussions on movies that inspire and entertain."
+  image: "/assets/images/movies.webp"
+
+Mutant_Crawl_Classics:
+  title: "Mutant Crawl Classics"
+  subtitle: "Adventures in a Post-Apocalyptic World"
+  description: "Explorations and guides for Mutant Crawl Classics."
+  image: "/assets/images/mutant_crawl_classics.webp"
+
+Opinion:
+  title: "Opinion"
+  subtitle: "Thoughts and Musings"
+  description: "Personal opinions and essays on various topics."
+  image: "/assets/images/opinion.webp"
+
+Personal_Writing:
+  title: "Personal Writing"
+  subtitle: "From the Heart"
+  description: "Personal essays and creative writing pieces."
+  image: "/assets/images/personal_writing.webp"
+
+Philosophy:
+  title: "Philosophy"
+  subtitle: "Thinking Deeply"
+  description: "Discussions and essays on philosophical topics."
+  image: "/assets/images/philosophy.webp"
+
+Projects:
+  title: "Projects"
+  subtitle: "What I'm Working On"
+  description: "Updates and details on current projects."
+  image: "/assets/images/projects.webp"
+
+Quotes:
+  title: "Quotes"
+  subtitle: "Words of Wisdom"
+  description: "A collection of meaningful quotes and sayings."
+  image: "/assets/images/quotes.webp"
+
+Religion:
+  title: "Religion"
+  subtitle: "Faith and Belief"
+  description: "Discussions on various religious topics and beliefs."
+  image: "/assets/images/religion.webp"
+
+Reprint:
+  title: "Reprint"
+  subtitle: "Bringing Back the Classics"
+  description: "Reprints and discussions of classic writings."
+  image: "/assets/images/reprint.webp"
+
+role_playing_games:
+  title: "Role Playing Games"
+  subtitle: "Rolling the Dice: Rough Sketches to Refined Adventures"
+  description: "A collection of writings on Role Playing Games I am working on at this time. Some of it is really bad, and some of it I am proud of. All of it can be made better."
+  image: "/assets/images/role_playing_games.webp"
+
+Science:
+  title: "Science"
+  subtitle: "Exploring the Unknown"
+  description: "Articles and essays on various scientific topics."
+  image: "/assets/images/science.webp"
+
+Shadowrun:
+  title: "Shadowrun"
+  subtitle: "Cyberpunk and Magic"
+  description: "Adventures and guides for the world of Shadowrun."
+  image: "/assets/images/shadowrun.webp"
+
+The_Märchen_Engine:
+  title: "The Märchen Engine"
+  subtitle: "Fantasy Storytelling Engine"
+  description: "Resources and guides for using The Märchen Engine in storytelling."
+  image: "/assets/images/the_marchen_engine.webp"

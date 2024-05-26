@@ -127,6 +127,12 @@
   <div class="carousel-inner">
     {% assign categories = site.categories %}
     {% for category in categories %}
+
+    {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
+    {% assign category_data = site.data.categories[category_key] %}
+
+
+
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="col">
           <div class="card h-100">
@@ -134,12 +140,12 @@
               <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
             </div>
             <div class="card-body pt-2 pb-2 p-4">
-              <h2 class="card-title">{{ category[0] | capitalize }}</h2>
-              <h3 class="text-muted card-subtitle h5 mb-2">{{ category[0] | capitalize }}</h3>
-              <p class="card-text">A collection of writings on {{ category[0] | capitalize }}.</p>
+              <h2 class="card-title">{{ category_data.title }}</h2>
+              <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
+              <p class="card-text">{{ category_data.description }}</p>
             </div>
             <div class="card-footer p-4 py-3 h-100">
-              {% assign posts = site.posts | where: "categories", category %}
+              {% assign posts = site.posts | where: "categories", category[0] %}
               {% for post in posts limit:3 %}
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                 {% if post.teaser %}
