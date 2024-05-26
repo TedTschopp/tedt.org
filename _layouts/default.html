@@ -123,14 +123,14 @@
                   </div>
                   <div class="col">
                     <div class="card h-100 d-flex flex-column">
-                        <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
+                        <div id="categoryCarousel" class="carousel slide h-100 d-flex flex-column" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100 d-flex flex-column">
                                 {% assign categories = site.categories %}
                                 {% for category in categories %}
                                     {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
                                     {% assign category_data = site.data.categories[category_key] %}
-                                    <div class="carousel-item {% if forloop.first %}active{% endif %} h-100">
-                                        <div class="col">
+                                    <div class="carousel-item {% if forloop.first %}active{% endif %} h-100 d-flex flex-column">
+                                        <div class="col h-100 d-flex flex-column">
                                             <div class="card h-100 d-flex flex-column">
                                                 <div class="ratio ratio-16x9">
                                                     <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
@@ -140,7 +140,7 @@
                                                     <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
                                                     <p class="card-text">{{ category_data.description }}</p>
                                                 </div>
-                                                <div class="card-footer mt-auto p-4 py-3 h-100">
+                                                <div class="card-footer mt-auto p-4 py-3 h-100 d-flex flex-column">
                                                     {% assign posts = site.posts | where: "categories", category[0] %}
                                                     {% for post in posts limit:3 %}
                                                         <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
