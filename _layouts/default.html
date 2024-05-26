@@ -52,133 +52,114 @@
           <div class="container h-100 position-relative" style="top: -75px;">
               <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
                   <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 d-flex flex-column">
                           <div class="ratio ratio-16x9">
-                            <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Ted sitting at a computer in Nature" src="{{ site.siteurl }}/img/home/blog.webp" />
+                              <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Ted sitting at a computer in Nature" src="{{ site.siteurl }}/img/home/blog.webp" />
                           </div>
                           <div class="card-body pt-2 pb-2 p-4">
                               <h2 class="card-title" id="blog">Blog</h2>
                               <h3 class="text-muted card-subtitle h5 mb-2">Exploring the Intersection of Tech, Theology, and Imagination</h5>
                               <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                           </div>
-                          <div class="card-footer p-4 py-3 h-100">
+                          <div class="card-footer mt-auto p-4 py-3">
                               {% assign count = 0 %}
                               {% for post in site.posts %}
-                                  {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.categories contains "Draft" or post.category == "Draft" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.categories contains "Role Playing Games" or post.category == "Role Playing Games" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.categories contains "Quotes" or post.category == "Quotes" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.categories contains "Home" or post.category == "Home" %}
-                                      <!-- Do Nothing -->
-                                  {% elsif post.layout contains "micropubpost" %}
-                                      <!-- Do Nothing -->
-                                  {% else %}
+                                  {% unless post.categories contains "Bestiary" or post.categories contains "Draft" or post.categories contains "Role Playing Games" or post.categories contains "Folklore" or post.categories contains "Quotes" or post.categories contains "Home" or post.layout contains "micropubpost" %}
                                       {% assign count = count | plus: 1 %}
                                       {% if count > 3 %}
                                           {% break %}
                                       {% endif %}
                                       <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                                       {% if post.teaser %}
-                                        <p class="card-text">{{ post.teaser }}</p>
+                                          <p class="card-text">{{ post.teaser }}</p>
                                       {% elsif post.description %}
-                                        <p class="card-text">{{ post.description  }}</p>
+                                          <p class="card-text">{{ post.description }}</p>
                                       {% else %}
-                                        <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
+                                          <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                                       {% endif %}
-                                  {% endif %}
+                                  {% endunless %}
                               {% endfor %}
                           </div>
                       </div>
                   </div>
                   <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 d-flex flex-column">
                           <div class="ratio ratio-16x9">
-                            <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.siteurl }}/img/home/Folklore.webp" />
+                              <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.siteurl }}/img/home/Folklore.webp" />
                           </div>
-                          <div class="card-body pt-2 pb-2  p-4">
+                          <div class="card-body pt-2 pb-2 p-4">
                               <h2 class="card-title" id="folklore">Swiss Folklore</h2>
                               <h3 class="text-muted card-subtitle h5 mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h5>
                               <p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                           </div>
-                          <div class="card-footer p-4 py-3 h-100">
+                          <div class="card-footer mt-auto p-4 py-3">
                               {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
                               {% for post in posts-drafts limit:3 %}
                                   <h4><a href="{{ post.url }}">{{ post.title }}</a><!-- {% for category in post.categories %}<a class="text-decoration-none" href="category/{{ category }}">{% include category-emoji.html category=category %}</a>{% endfor %} --></h4>
                                   {% if post.teaser %}
-                                    <p class="card-text">{{ post.teaser }}</p>
+                                      <p class="card-text">{{ post.teaser }}</p>
                                   {% elsif post.description %}
-                                    <p class="card-text">{{ post.description   }}</p>
+                                      <p class="card-text">{{ post.description }}</p>
                                   {% else %}
-                                    <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
+                                      <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                                   {% endif %}
                               {% endfor %}
                           </div>
                       </div>
                   </div>
                   <div class="col">
-                    <div class="card h-100">
-
-
-<div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    {% assign categories = site.categories %}
-    {% for category in categories %}
-
-    {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
-    {% assign category_data = site.data.categories[category_key] %}
-
-      <div class="carousel-item {% if forloop.first %}active{% endif %} h-100">
-        <div class="col">
-          <div class="card h-100">
-            <div class="ratio ratio-16x9">
-              <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
-            </div>
-            <div class="card-body pt-2 pb-2 p-4">
-              <h2 class="card-title">{{ category_data.title }}</h2>
-              <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
-              <p class="card-text">{{ category_data.description }}</p>
-            </div>
-            <div class="card-footer p-4 py-3 h-100">
-              {% assign posts = site.posts | where: "categories", category[0] %}
-              {% for post in posts limit:3 %}
-                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                {% if post.teaser %}
-                  <p class="card-text">{{ post.teaser }}</p>
-                {% elsif post.description %}
-                  <p class="card-text">{{ post.description }}</p>
-                {% else %}
-                  <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-</div>
-                    
+                      <div class="card h-100 d-flex flex-column">
+                          <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  {% assign categories = site.categories %}
+                                  {% for category in categories %}
+                                      {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
+                                      {% assign category_data = site.data.categories[category_key] %}
+                                      <div class="carousel-item {% if forloop.first %}active{% endif %} h-100">
+                                          <div class="col">
+                                              <div class="card h-100 d-flex flex-column">
+                                                  <div class="ratio ratio-16x9">
+                                                      <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="{{ category[0] | capitalize }} Image" src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" />
+                                                  </div>
+                                                  <div class="card-body pt-2 pb-2 p-4">
+                                                      <h2 class="card-title">{{ category_data.title }}</h2>
+                                                      <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
+                                                      <p class="card-text">{{ category_data.description }}</p>
+                                                  </div>
+                                                  <div class="card-footer mt-auto p-4 py-3">
+                                                      {% assign posts = site.posts | where: "categories", category[0] %}
+                                                      {% for post in posts limit:3 %}
+                                                          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                                          {% if post.teaser %}
+                                                              <p class="card-text">{{ post.teaser }}</p>
+                                                          {% elsif post.description %}
+                                                              <p class="card-text">{{ post.description }}</p>
+                                                          {% else %}
+                                                              <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                                                          {% endif %}
+                                                      {% endfor %}
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  {% endfor %}
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
       </section>
-    </div>
+  </div>
+  
 
     <div class="container py-1 py-xl-2">
       <section>
