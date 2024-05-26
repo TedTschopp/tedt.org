@@ -133,7 +133,7 @@
     {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
     {% assign category_data = site.data.categories[category_key] %}
 
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="carousel-item {% if forloop.first %}active{% endif %} h-100">
         <div class="col">
           <div class="card h-100">
             <div class="ratio ratio-16x9">
