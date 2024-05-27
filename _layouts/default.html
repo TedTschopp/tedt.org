@@ -21,9 +21,11 @@
     <!-- News Feed Meta Tags. -->
     {% include feeds.html %}
 
-    <!-- All CSS INCLUDE -->
+    <!-- START OF CSS INCLUDE -->
 
     {% include all-css-includes.html %}
+
+    <!-- END OF CSS INCLUDE -->
 
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
@@ -131,6 +133,12 @@
                                         <div class="card">
                                             <div class="ratio ratio-16x9">
                                               <img src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" class="object-fit-cover card-img-top" alt="{{ category[0] | capitalize }} Image">
+                                            </div>
+                                            <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
+                                              {% assign categories-buttons = site.categories %}
+                                              {% for categor-buttonsy in categories-buttons %}
+                                                  <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
+                                              {% endfor %}
                                             </div>
                                             <div class="card-body">
                                                 <h2 class="card-title"><a href="/category/{{ category_data.title }}">{{ category_data.title }}</a></h2>
@@ -254,12 +262,6 @@
                                     </div>
                                 </div>
                             {% endfor %}
-                        </div>
-                        <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
-                          {% assign categories-buttons = site.categories %}
-                          {% for categor-buttonsy in categories-buttons %}
-                              <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
-                          {% endfor %}
                         </div>
                     </div>
                   </div>
