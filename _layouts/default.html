@@ -145,37 +145,29 @@
                                                 <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
                                                 <p class="card-text">{{ category_data.description }}</p>
                                             </div>
-                                        </div>
-                                        {% assign posts = site.posts | where: "categories", category[0] %}
-                                        {% for post in posts limit:3 %}
-                                            <div class="card">
-                                                <a href="{{ post.url }}">
-                                                    <img src="{{ post.image }}" class="object-fit-cover card-img-top" alt="{{ post.title }}">
-                                                </a>
-                                                <div class="card-body">
-                                                    <h4 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                                                    {% if post.teaser %}
-                                                        <p class="card-text">{{ post.teaser }}</p>
-                                                    {% elsif post.description %}
-                                                        <p class="card-text">{{ post.description }}</p>
-                                                    {% else %}
-                                                        <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-                                                    {% endif %}
+                                            {% assign posts = site.posts | where: "categories", category[0] %}
+                                            {% for post in posts limit:3 %}
+                                                <div class="card-footer">
+                                                    <a href="{{ post.url }}">
+                                                        <img src="{{ post.image }}" class="object-fit-cover card-img-top" alt="{{ post.title }}">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                                        {% if post.teaser %}
+                                                            <p class="card-text">{{ post.teaser }}</p>
+                                                        {% elsif post.description %}
+                                                            <p class="card-text">{{ post.description }}</p>
+                                                        {% else %}
+                                                            <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                                                        {% endif %}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        {% endfor %}
+                                            {% endfor %}
+                                        </div>
                                     </div>
                                 </div>
                             {% endfor %}
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                   </div>
               </div>
