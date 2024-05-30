@@ -126,7 +126,7 @@
                     <div class="card h-100 d-flex flex-column">
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
-                          {% for category in categories-on-blog %}
+                          {% for category in site.data['categories-on-blog'] %}
                             {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
                             {% assign category_data = site.data.categories[category_key] %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
