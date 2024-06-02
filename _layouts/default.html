@@ -147,7 +147,7 @@
                                     <p class="card-text">{{ category_data.description }}</p>
                                   </div>
                                   {% assign category_downcase = category[0] | downcase %}
-                                  {% assign downcased_posts = site.posts | map: "categories" | downcase %}
+                                  {% assign downcased_posts = site.posts | map: "categories" | downcase %} <!-- Broken -->
                                   {% assign posts = downcased_posts | where_exp: "post", "post == category_downcase" %}
                                   {% for post in posts limit:3 %}
                                     <div class="card-footer">
