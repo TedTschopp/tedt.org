@@ -11,6 +11,7 @@ Once, a man was suffering from a deep illness, and the physician had already giv
 Astonished, the man asked what the “life light” was, and listened to the explanation that every person had such a light. As long as this light burns, the person continues to live, but as soon as it expires, the person will expire as well. The woman likewise knew about the place where those lights burned. The sick man should stand up from his bed, no matter how painful this would be for him, and walk straight ahead into a certain direction until he finally got there. As soon as he had reached this location, he should seek out his own light and exchange it with the light of a child. In this manner, the child would die once the life light of the sick man had sputtered out, but he himself would life as long as the child had been supposed to live.
 
 The man did as he was told, rose up from his bed, and wandered straight ahead. In the beginning it was extremely arduous, and part of the way he even had to crawl on all fours, but finally he reached his desired destination. Many, many lights burned there, and he likely would never have found his own life light if there hadn’t been a friendly old man there who showed it to him. It burned weakly now, but close to it there was a large, long, and brightly burning child’s light. Quickly, he grabbed it, and switched the locations of the two lights. As soon as he had done so, he was hale and healthy again and could go homewards fresh and chipper.
+
 However, the child whose life light he had taken died on the very next day.
 
 # Adventure Outline:
@@ -345,39 +346,23 @@ Leading out of the village into the dense forest, the Forest Path is a narrow, w
    - **Encounter 2: Old Man (Der Wächter)**
      - The guardian of the sanctuary who tests their intentions. They must prove their worth through a challenge or riddle.
 
- 4. "I am lighter than a feather, yet the strongest man cannot hold me for much more than a minute. What am I?" Breath
-
- 5. "I fly without wings, I cry without eyes. Whenever I go, darkness flies. What am I?" A cloud
-
- 6. "I am not alive, yet I grow; I do not breathe, yet I need air; I do not have a mouth, and I die if I drink water. What am I?" Fire
-
- 7. "I have no life, but I can die. I have no voice, but I can cry. What am I?" A Shadow
-
- 8. "You can see me in water, but I never get wet. What am I?" A reflection
-
- 9. "I pass through the villages and cities, yet I never move. What am I?" A road
-
- 10. "The more you take, the more you leave behind. What am I?" Footstep
-
-4. "I am the light that never dims, yet I am unseen by day. What am I?" Stars
-
-5. "In the heart of darkness, I shine bright. I guide the lost and give hope. What am I?" A candle
-
-6. "I am the fire within, neither seen nor touched, but felt deeply. What am I?" The Soul
-
-7. "Invisible by day, I guard your path by night. What am I?" The Moon
-
-8. "Born from the stars, I dwell within you. What am I?" The Soul
-
-9. "I flicker and fade, yet I am eternal. I mark the passage of time. What am I?" A Flame
-
-10. "In your eyes, I dance and play, yet I am not seen in the light of day. What am I?" A Spark
-
-11. "I am the spark of life, carried within. When I leave, all grows still. What am I?" Breath
-
-12. "I weave the threads of destiny, unseen but felt by all. What am I?" Fate
-
-13. "I am the light of the soul, shining through the darkest night. What am I?" Hope
+      1. "I am lighter than a feather, yet the strongest man cannot hold me for much more than a minute. What am I?" Breath
+      2. "I fly without wings, I cry without eyes. Whenever I go, darkness flies. What am I?" A cloud
+      3. "I am not alive, yet I grow; I do not breathe, yet I need air; I do not have a mouth, and I die if I drink water. What am I?" Fire
+      4. "I have no life, but I can die. I have no voice, but I can cry. What am I?" A Shadow
+      5. "You can see me in water, but I never get wet. What am I?" A reflection
+      6. "I pass through the villages and cities, yet I never move. What am I?" A road
+      7. "The more you take, the more you leave behind. What am I?" Footstep
+      8. "I am the light that never dims, yet I am unseen by day. What am I?" Stars
+     1.  "In the heart of darkness, I shine bright. I guide the lost and give hope. What am I?" A candle
+     2.  "I am the fire within, neither seen nor touched, but felt deeply. What am I?" The Soul
+     3.  "Invisible by day, I guard your path by night. What am I?" The Moon
+     4.  "Born from the stars, I dwell within you. What am I?" The Soul
+     5.  "I flicker and fade, yet I am eternal. I mark the passage of time. What am I?" A Flame
+     6.  "In your eyes, I dance and play, yet I am not seen in the light of day. What am I?" A Spark
+     7.  "I am the spark of life, carried within. When I leave, all grows still. What am I?" Breath
+     8.  "I weave the threads of destiny, unseen but felt by all. What am I?" Fate
+     9.  "I am the light of the soul, shining through the darkest night. What am I?" Hope
 
 
 

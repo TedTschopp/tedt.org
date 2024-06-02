@@ -146,7 +146,8 @@
                                     <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
                                     <p class="card-text">{{ category_data.description }}</p>
                                   </div>
-                                  {% assign posts = site.posts | where: "categories", category[0] %}
+                                  {% assign category_downcase = category[0] | downcase %}
+                                  {% assign posts = site.posts | where_exp: "post", "post.categories | downcase == category_downcase" %}
                                   {% for post in posts limit:3 %}
                                     <div class="card-footer">
                                       <div class="container">
