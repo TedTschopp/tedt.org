@@ -149,7 +149,7 @@
                                   <!-- {{ category[0] }}-->
                                   <!-- {{ category[1] }}-->
                                   {% for post in category[1] limit:3 %}
-                                    <!--
+                                    <div class="hidden">
 
                                       {{ post.title }}
                                       {{ post.url }}
@@ -163,7 +163,7 @@
                                       {{ post | jsonify}}
 
 
-
+                                    </div>
                                     -->
                                     <div class="card-footer">
                                       <div class="container">
