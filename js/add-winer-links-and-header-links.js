@@ -17,9 +17,10 @@ $(document).ready(function() {
 
 });
 
-function stripURLHash(url) {
-  url.hash = ""; // remove the anchor
-  return url.href; // get the href without the anchor
+function stripURLHash(urlToParse) {
+  url = new URL(urlToParse); // create a URL object
+  url.hash = "";             // remove the anchor
+  return url.href;           // get the href without the anchor
 }
 
 function addAnchorTagsToParagraphs(html) {
