@@ -29,13 +29,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Build Jekyll site
-        uses: helaili/jekyll-action@2.0.1
-        with:
-          jekyll_src: './'                     # replace with your source directory
-          jekyll_build: './_site'              # replace with your destination directory
-
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
