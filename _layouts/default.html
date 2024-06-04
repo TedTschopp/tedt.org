@@ -147,7 +147,7 @@
                                     <p class="card-text">{{ category_data.description }}</p>
                                   </div>
 
-                                  {% for post in category[0] limit:3 %}
+                                  {% for post in site.category[0] limit:3 %}
                                     <div class="hidden">
 
                                       {{ category[0] | jsonify }}
