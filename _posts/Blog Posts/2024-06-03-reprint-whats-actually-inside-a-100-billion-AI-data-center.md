@@ -58,22 +58,6 @@ mathjax:
 order:
 ---
 
-- [Intro](#intro)
-- [Part 1: Data Center Gold Rush](#part-1-data-center-gold-rush)
-- [Part 2: So You Want to Build a Data Center](#part-2-so-you-want-to-build-a-data-center)
-  - [Design Challenge 1: Power Consumption](#design-challenge-1-power-consumption)
-  - [Design Challenge 2: Cooling](#design-challenge-2-cooling)
-  - [Design Challenge 3: Networking](#design-challenge-3-networking)
-  - [Design Challenge 4: Resilience and Redundancy](#design-challenge-4-resilience-and-redundancy)
-- [Part 3: The Hardware Secret Sauce](#part-3-the-hardware-secret-sauce)
-  - [Nvidia](#nvidia)
-  - [Google](#google)
-- [Software Stacks](#software-stacks)
-- [Will Stargate Use Their Own Chips and Network?](#will-stargate-use-their-own-chips-and-network)
-- [Implications of Building Stargate](#implications-of-building-stargate)
-- [Conclusion](#conclusion)
-
-
 ### Intro
 
 Leaked reports indicate that Microsoft, in partnership with OpenAI, is planning to invest an astounding $100 billion into a new AI data center. This massive amount is more than double the global annual expenditure on data centers. What cutting-edge technologies and innovations might go into this facility, and what special considerations must be tackled when spending such significant sums on AI-centric infrastructure? Keep watching to learn more. This has three parts: "Data Center Gold Rush," "So You Want to Build a Data Center," and "The Hardware Secret Sauce."
