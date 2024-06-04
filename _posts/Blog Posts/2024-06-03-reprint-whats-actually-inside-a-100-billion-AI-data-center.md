@@ -21,7 +21,7 @@ author:
 
 bullets:
 
-description: 'Overview of what it will take for Microsoft to Build out Project Stargate, a $100 Billion data center.'
+description: 'REPRINT: Overview of what it will take for Microsoft to Build out Project Stargate, a $100 Billion data center.'
 seo-description:
 
 categories:

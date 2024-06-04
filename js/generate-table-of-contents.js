@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
   const toc = document.getElementById('insert-table-of-contents-here');
   const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
   let tocItems = ['<ol>']; // Start with an opening <ol> tag
