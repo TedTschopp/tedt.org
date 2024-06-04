@@ -3,7 +3,7 @@ $(document).ready(function() {
     GenerateTableOfContents();
 
     // Link up the Table of Contents to each of the proper Header Tags.
-    var htmlContent = '<a href="' + window.location.href + '#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+    var htmlContent = '<a href="' + stripURLHash(window.location.href) + '#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
 
     // Select all headline tags (h1 to h6)
     $(':header').each(function() {
