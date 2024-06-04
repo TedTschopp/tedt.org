@@ -104,8 +104,7 @@ function GenerateTableOfContents() {
       const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
       header.id = headerId; // Assign ID to header
   
-      tocItems.push('<li><a href='+ stripURLHash(window.location.href) +'"#${headerId}">${headerText}</a>'); // Append the link wrapped in <li>
-    });
+      tocItems.push(`<li><a href=${stripURLHash(window.location.href)}#${headerId}>${headerText}</a></li>`); // Append the link wrapped in <li>    });
   
     // Close all open lists and items
     while (currentLevel > 1) {
