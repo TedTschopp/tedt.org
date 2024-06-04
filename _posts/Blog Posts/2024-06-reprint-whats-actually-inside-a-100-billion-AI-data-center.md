@@ -12,7 +12,7 @@ source:
 source-url: https://www.youtube.com/watch?v=vZMjvpWFQvk
 call-to-action:
 
-date: 2024-06-03 17:19:42
+date: 2024-06-03 17:43:28-0700
 update: 
 author:
     avatar: https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D
