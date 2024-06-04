@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: 2024 Reprint - What's actually inside a $100 billion AI Data Center? 
+title: 2024 Reprint - What's Actually Inside a $100 Billion AI Data Center? 
 title-url:
 subtitle:
 subtitle-url:
@@ -16,7 +16,7 @@ date: 2024-06-03 17:43:28-0700
 update: 
 author:
     avatar: https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D
-    name: Dr Waku
+    name: Dr. Waku
     url: https://linktr.ee/seriouself
 
 bullets:
@@ -37,7 +37,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: img/2024-06/Stargate.webp
+image: img/2024-06/stargate.webp
 image-alt: Picture of the Stargate
 image-artist:
 image-artist-URL:
