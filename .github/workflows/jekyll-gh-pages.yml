@@ -29,6 +29,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Build and deploy Jekyll site
+        uses: helaili/jekyll-action@2.0.1
+        with:
+          source: ./                          # specify the source directory here
+          destination: ./_site                # specify the destination directory here
+          jekyll_version: 4.2.0               # specify the version of Jekyll here
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
