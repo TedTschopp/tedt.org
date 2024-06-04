@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var htmlContent = '<a onclick="return false;" href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
     // Step 1: Add Back Links to Al Headers
 
     // Select all headline tags (h1 to h6)
@@ -37,9 +37,6 @@ function addAnchorTagsToParagraphs(html) {
       // Create the closing anchor tag
       const closingAnchor = doc.createElement("a");
       closingAnchor.href = `#`+firstFiveLetters;
-      closingAnchor.onclick = function(event) {
-        event.preventDefault();
-      };
       closingAnchor.textContent = `¶`;
       closingAnchor.classList.add("Winerlink");
       paragraph.appendChild(closingAnchor);
@@ -81,36 +78,26 @@ function GenerateTableOfContents() {
     const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
     let tocItems = ['<ol>']; // Start with an opening <ol> tag
     let currentLevel = 1;
-
+  
     headers.forEach(header => {
-        const level = parseInt(header.tagName.substring(1), 10); // Get numeric part of heading tag (h1, h2, etc.)
-
-        // Adjust the level depth
-        while (level > currentLevel) {
+      const level = parseInt(header.tagName.substring(1), 10); // Get numeric part of heading tag (h1, h2, etc.)
+  
+      // Adjust the level depth
+      while (level > currentLevel) {
         tocItems.push('<ol>');
         currentLevel++;
-        }
-        while (level < currentLevel) {
+      }
+      while (level < currentLevel) {
         tocItems.push('</li></ol>'); // Close current list and step out
         currentLevel--;
-        }
-
-        // Create ID and link for the header
-        const headerText = header.textContent;
-        const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
-        header.id = headerId; // Assign ID to header
+      }
   
-        var listItem = $('<li>');
-        var link = $('<a>', {
-            href: '#' + headerId,
-            text: headerText,
-            click: function(event) {
-                event.preventDefault();
-            }
-        });
-
-        listItem.append(link);
-        tocItems.push(listItem);
+      // Create ID and link for the header
+      const headerText = header.textContent;
+      const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
+      header.id = headerId; // Assign ID to header
+  
+      tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`); // Append the link wrapped in <li>
     });
   
     // Close all open lists and items
