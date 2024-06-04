@@ -273,5 +273,16 @@
     <!-- Bootstrap core JavaScript -->
     {% include js-bottom-of-body.html %}
 
+    <script>
+        $(document).ready(function() {
+            $('a').each(function() {
+                let events = $._data(this, 'events');
+                if (events) {
+                    console.log(this, events);
+                }
+            });
+        });
+    </script>
+
   </body>
 </html>
