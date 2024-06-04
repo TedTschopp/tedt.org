@@ -1,6 +1,9 @@
 $(document).ready(function() {
+    // Generate the Table of Contents
+    GenerateTableOfContents();
+
+    // Link up the Table of Contents to each of the proper Header Tags.
     var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
-    // Step 1: Add Back Links to Al Headers
 
     // Select all headline tags (h1 to h6)
     $(':header').each(function() {
@@ -12,7 +15,7 @@ $(document).ready(function() {
     var main_content = document.getElementById('main_content');
     main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
 
-    GenerateTableOfContents();
+
 
 });
 
