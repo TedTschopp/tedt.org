@@ -3,7 +3,7 @@ $(document).ready(function() {
     GenerateTableOfContents();
 
     // Link up the Table of Contents to each of the proper Header Tags.
-    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+    var htmlContent = '<a href="' + window.location.href + '#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
 
     // Select all headline tags (h1 to h6)
     $(':header').each(function() {
@@ -16,6 +16,11 @@ $(document).ready(function() {
     main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
 
 });
+
+function stripURLHash(url) {
+  url.hash = ""; // remove the anchor
+  return url.href; // get the href without the anchor
+}
 
 function addAnchorTagsToParagraphs(html) {
   const parser = new DOMParser();
@@ -37,8 +42,8 @@ function addAnchorTagsToParagraphs(html) {
 
       // Create the closing anchor tag
       const closingAnchor = doc.createElement("a");
-      closingAnchor.href = `#`+firstFiveLetters;
-      closingAnchor.textContent = `¶`;
+      closingAnchor.href = stripURLHash(window.location.href) +"#"+firstFiveLetters;
+      closingAnchor.textContent = "¶";
       closingAnchor.classList.add("Winerlink");
       paragraph.appendChild(closingAnchor);
   });
@@ -98,7 +103,7 @@ function GenerateTableOfContents() {
       const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
       header.id = headerId; // Assign ID to header
   
-      tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`); // Append the link wrapped in <li>
+      tocItems.push('<li><a href='+ stripURLHash(window.location.href) +'"#${headerId}">${headerText}</a>'); // Append the link wrapped in <li>
     });
   
     // Close all open lists and items
