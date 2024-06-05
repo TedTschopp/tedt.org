@@ -2,20 +2,25 @@ $(document).ready(function() {
     // Generate the Table of Contents
     GenerateTableOfContents();
 
-//    // Link up the Table of Contents to each of the proper Header Tags.
-//    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
-//
-//    // Select all headline tags (h1 to h6)
-//    $(':header').each(function() {
-//        // Insert the HTML content as the first child of each headline tag
-//        $(this).prepend(htmlContent);
-//    });
+    // Link up the Table of Contents to each of the proper Header Tags.
+    // Call the function with the ID of the element you want to add links to
+    addLinksToHeaders('main_content');
 
     // Step 2: Add Winer Tags to Paragraphs
     var main_content = document.getElementById('main_content');
     main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
 
 });
+
+function addLinksToHeaders(elementId) {
+  var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+
+  // Select all headline tags (h1 to h6) within the specified element
+  $(`#${elementId} :header`).each(function() {
+      // Insert the HTML content as the first child of each headline tag
+      $(this).prepend(htmlContent);
+  });
+}
 
 function stripURLHash(urlToParse) {
   url = new URL(urlToParse); // create a URL object
