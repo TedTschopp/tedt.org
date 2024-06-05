@@ -86,16 +86,16 @@ function GenerateTableOfContents() {
   let tocItems = ['<ol>']; // Start with an opening <ol> tag
   let currentLevel = 1;
 
-  headers.forEach(header => {
+  headers.forEach((header, i) => {
     const level = parseInt(header.tagName.substring(1), 10); // Get numeric part of heading tag (h1, h2, etc.)
 
     // Adjust the level depth
     while (level > currentLevel) {
-      tocItems.push('<ol>');
+      tocItems.push('<ol><li>'); // Open a new list and a new list item
       currentLevel++;
     }
     while (level < currentLevel) {
-      tocItems.push('</li></ol>'); // Close current list and step out
+      tocItems.push('</li></ol>'); // Close current list item and step out
       currentLevel--;
     }
 
@@ -104,7 +104,17 @@ function GenerateTableOfContents() {
     const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
     header.id = headerId; // Assign ID to header
 
-    tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`); // Append the link wrapped in <li>
+    // Check if next header is at the same or higher level
+    const nextHeader = headers[i + 1];
+    const nextLevel = nextHeader ? parseInt(nextHeader.tagName.substring(1), 10) : currentLevel;
+
+    if (nextLevel <= level) {
+      // If next header is at the same or higher level, close the list item
+      tocItems.push(`<li><a href="#${headerId}">${headerText}</a></li>`);
+    } else {
+      // If next header is at a lower level, leave the list item open
+      tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`);
+    }
   });
 
   // Close all open lists and items
@@ -112,10 +122,9 @@ function GenerateTableOfContents() {
     tocItems.push('</li></ol>'); // Properly close each level
     currentLevel--;
   }
-  tocItems.push('</li></ol>'); // Close the initial <ol>
+  tocItems.push('</ol>'); // Close the initial <ol>
 
   toc.innerHTML = tocItems.join(''); // Convert array to string and set as HTML once
   toc.setAttribute('role', 'navigation');
   toc.setAttribute('aria-label', 'Table of contents');
-
 }
