@@ -84,7 +84,7 @@ mastodon_comments:
 collections:
   GammaWorld:
    output: true
-   permalink: /:collection/:title/
+   permalink: /:collection/:title
 
 # Varaibles that will be used elsewhere
 # Use {% assign author = site.authors[page.author] %} to get author which author

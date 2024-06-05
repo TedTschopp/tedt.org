@@ -2,14 +2,14 @@ $(document).ready(function() {
     // Generate the Table of Contents
     GenerateTableOfContents();
 
-    // Link up the Table of Contents to each of the proper Header Tags.
-    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
-
-    // Select all headline tags (h1 to h6)
-    $(':header').each(function() {
-        // Insert the HTML content as the first child of each headline tag
-        $(this).prepend(htmlContent);
-    });
+//    // Link up the Table of Contents to each of the proper Header Tags.
+//    var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+//
+//    // Select all headline tags (h1 to h6)
+//    $(':header').each(function() {
+//        // Insert the HTML content as the first child of each headline tag
+//        $(this).prepend(htmlContent);
+//    });
 
     // Step 2: Add Winer Tags to Paragraphs
     var main_content = document.getElementById('main_content');
@@ -43,8 +43,8 @@ function addAnchorTagsToParagraphs(html) {
 
       // Create the closing anchor tag
       const closingAnchor = doc.createElement("a");
-      closingAnchor.href = "#"+firstFiveLetters;
-      closingAnchor.textContent = "¶";
+      closingAnchor.href = `#`+firstFiveLetters;
+      closingAnchor.textContent = `¶`;
       closingAnchor.classList.add("Winerlink");
       paragraph.appendChild(closingAnchor);
   });
