@@ -85,42 +85,57 @@ function concatenateFirstLetters(text) {
 }
 
 
-function GenerateTableOfContents() {
+function GenerateTableOfContents() {  
   const toc = document.getElementById('insert-table-of-contents-here');
   const headers = document.querySelectorAll('#main_content h1, #main_content h2, #main_content h3, #main_content h4, #main_content h5, #main_content h6');
-  let tocItems = []; // Initialize an empty array for building the TOC HTML
-  let currentLevel = 0;
+  
+  // Determine the level of the first header to calculate the offset
+  const firstHeaderLevel = headers.length > 0 ? parseInt(headers[0].tagName.substring(1), 10) : 1;
+  const offset = firstHeaderLevel - 1; // Calculate offset to adjust levels to start from 1
+  
+  let tocItems = ['<ol>']; // Start with an opening <ol> tag
+  let currentLevel = 1;
 
-  headers.forEach(header => {
-    const level = parseInt(header.tagName.substring(1), 10); // Get numeric part of heading tag (h1, h2, etc.)
-
-    // Create ID and link for the header
-    const headerText = header.textContent;
-    const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
-    header.id = headerId;
+  headers.forEach((header, i) => {
+    // Adjust the level of the header based on the offset
+    const level = parseInt(header.tagName.substring(1), 10) - offset;
 
     // Adjust the level depth
     while (level > currentLevel) {
-      tocItems.push('<ol><li>'); // Open a new list and a new list item
+      tocItems.push('<ol>'); // Open a new list
       currentLevel++;
     }
     while (level < currentLevel) {
       tocItems.push('</li></ol>'); // Close current list item and step out
       currentLevel--;
     }
-    if (level === currentLevel) {
-      if (currentLevel !== 0) tocItems.push('</li>'); // Close the previous list item if not at the first item
-      tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`); // Start a new list item
+
+    // Create ID and link for the header
+    const headerText = header.textContent;
+    const headerId = headerText.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/gi, '');
+    header.id = headerId; // Assign ID to header
+
+    // Check if next header is at the same or higher level
+    const nextHeader = headers[i + 1];
+    const nextLevel = nextHeader ? parseInt(nextHeader.tagName.substring(1), 10) - offset : currentLevel;
+
+    if (nextLevel <= level) {
+      // If next header is at the same or higher level, close the list item
+      tocItems.push(`<li><a href="#${headerId}">${headerText}</a></li>`);
+    } else {
+      // If next header is at a lower level, start the list item but don't close it
+      tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`);
     }
   });
 
   // Close all open lists and items
-  while (currentLevel > 0) {
+  while (currentLevel > 1) {
     tocItems.push('</li></ol>'); // Properly close each level
     currentLevel--;
   }
+  tocItems.push('</ol>'); // Close the initial <ol>
 
-  toc.innerHTML = tocItems.join(''); // Convert array to string and set as HTML
+  toc.innerHTML = tocItems.join(''); // Convert array to string and set as HTML once
   toc.setAttribute('role', 'navigation');
   toc.setAttribute('aria-label', 'Table of contents');
 }
