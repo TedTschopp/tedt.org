@@ -84,7 +84,6 @@ function concatenateFirstLetters(text) {
   return firstLetters.join("").toLowerCase();
 }
 
-
 function GenerateTableOfContents() {  
   const toc = document.getElementById('insert-table-of-contents-here');
   const headers = document.querySelectorAll('#main_content h1, #main_content h2, #main_content h3, #main_content h4, #main_content h5, #main_content h6');

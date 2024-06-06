@@ -753,6 +753,6 @@
         var mastodonpostid = "{{page.mastodon-post-id}}";
 
         window.onload = processHash(mastodonhost, mastodonpostid);
-        window.onhashchange = function () {
-            location.reload();
-        };
+//        window.onhashchange = function () {
+//            location.reload();
+//        };
