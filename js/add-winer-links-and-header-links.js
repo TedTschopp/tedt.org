@@ -34,24 +34,24 @@ function addAnchorTagsToParagraphs(html) {
   const paragraphs = doc.querySelectorAll("p");
 
   paragraphs.forEach((paragraph) => {
-      const paragraphText = paragraph.textContent.trim();
-      const words = paragraphText.split(" ");
-      const firstFiveWords = words.slice(0, 5).join(" ");
-      const firstFiveLetters = concatenateFirstLetters(firstFiveWords);
+    const paragraphText = paragraph.textContent.trim();
+    const words = paragraphText.split(" ");
+    const firstFiveWords = words.slice(0, 5).join(" ");
+    const firstFiveLetters = concatenateFirstLetters(firstFiveWords);
 
-      // Create the opening anchor tag
-      const openingAnchor = doc.createElement("a");
-      openingAnchor.classList.add("WinerAnchor");
-      openingAnchor.id = firstFiveLetters;
-      openingAnchor.name = firstFiveLetters;
-      paragraph.insertBefore(openingAnchor, paragraph.firstChild);
+    // Create the opening anchor tag
+    const openingAnchor = doc.createElement("a");
+    openingAnchor.classList.add("WinerAnchor");
+    openingAnchor.id = firstFiveLetters;
+    openingAnchor.name = firstFiveLetters;
+    paragraph.insertBefore(openingAnchor, paragraph.firstChild);
 
-      // Create the closing anchor tag
-      const closingAnchor = doc.createElement("a");
-      closingAnchor.href = `#`+firstFiveLetters;
-      closingAnchor.textContent = `¶`;
-      closingAnchor.classList.add("Winerlink");
-      paragraph.appendChild(closingAnchor);
+    // Create the closing anchor tag
+    const closingAnchor = doc.createElement("a");
+    closingAnchor.href = `#`+firstFiveLetters;
+    closingAnchor.textContent = `¶`;
+    closingAnchor.classList.add("Winerlink");
+    paragraph.appendChild(closingAnchor);
   });
 
   return doc.documentElement.innerHTML;
@@ -87,7 +87,7 @@ function concatenateFirstLetters(text) {
 
 function GenerateTableOfContents() {  
   const toc = document.getElementById('insert-table-of-contents-here');
-  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const headers = document.querySelectorAll('#main_content h1, #main_content h2, #main_content h3, #main_content h4, #main_content h5, #main_content h6');
   let tocItems = ['<ol>']; // Start with an opening <ol> tag
   let currentLevel = 1;
 
@@ -96,7 +96,7 @@ function GenerateTableOfContents() {
 
     // Adjust the level depth
     while (level > currentLevel) {
-      tocItems.push('<ol><li>'); // Open a new list and a new list item
+      tocItems.push('<ol>'); // Open a new list
       currentLevel++;
     }
     while (level < currentLevel) {
@@ -117,7 +117,7 @@ function GenerateTableOfContents() {
       // If next header is at the same or higher level, close the list item
       tocItems.push(`<li><a href="#${headerId}">${headerText}</a></li>`);
     } else {
-      // If next header is at a lower level, leave the list item open
+      // If next header is at a lower level, start the list item but don't close it
       tocItems.push(`<li><a href="#${headerId}">${headerText}</a>`);
     }
   });
