@@ -127,6 +127,7 @@
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
                           {% for category in site.data['categories-on-blog'] %}
+                            
                             {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
                             {% assign category_data = site.data['categories-on-blog'].categories[0] %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
@@ -147,12 +148,12 @@
                                     <p class="card-text">{{ category_data.description }}</p>
                                   </div>
 
-                                  {% for post in site.category[0] limit:3 %}
+                                  {% for post in site.categories[category] | limit: 3%}
+
                                     <div class="hidden">
 
                                       {{ category[0] | jsonify }}
                                       {{ category[1] | jsonify }}
-
 
                                       {{ post.title }}
                                       {{ post.url }}
