@@ -128,7 +128,7 @@
                         <div class="carousel-inner">
                           {% for category in site.data['categories-on-blog'] %}
                             {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
-                            {% assign category_data = site.data['categories-on-blog'].categories[category_key] %}
+                            {% assign category_data = site.data['categories-on-blog'].categories[0] %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
                                 <div class="card">
