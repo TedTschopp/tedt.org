@@ -134,10 +134,14 @@
 
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
-                          {% for category in site.data['categories-on-blog'] %}
-                            
-                            {% assign category_key = category[0] | downcase | replace: ' ', '_' %}
-                            {% assign category_data = site.data['categories-on-blog'].categories[0] %}
+                          {% for category in site.categories %}
+
+                            {% assign category_data = site.data['categories-on-blog'][category] %}
+
+                            {% assign category_data_title = 'your-category-title' %}
+                            {% assign category_data_subtitle = nil %}
+                            {% assign category_data_description = nil %}                          
+
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
                                 <div class="card">
@@ -146,31 +150,12 @@
                                   </div>
 
                                   <div class="card-body">
-                                    <h2 class="card-title"><a href="/category/{{ category_data.title }}">{{ category_data.title }}</a></h2>
-                                    <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data.subtitle }}</h3>
-                                    <p class="card-text">{{ category_data.description }}</p>
+                                    <h2 class="card-title"><a href="/category/{{ category_data.title }}">{{ category_data_title }}</a></h2>
+                                    <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data_subtitle }}</h3>
+                                    <p class="card-text">{{ category_data_description }}</p>
                                   </div>
 
                                   {% for post in site.categories[category] | limit: 3%}
-
-                                    <div class="hidden">
-
-                                      {{ category[0] | jsonify     }}
-                                      {{ category[1] | jsonify     }}
-
-                                      {{ post.title                }}
-                                      {{ post.url                  }}
-                                      {{ post.teaser               }}
-                                      {{ post.description          }}
-                                      {{ post.excerpt              }}
-                                      {{ post.image                }}
-                                      {{ post.image-credits-title  }}
-                                      {{ post.image-credits-artist }}
-
-                                      {{ post | jsonify            }}
-
-
-                                    </div>
 
                                     <div class="card-footer">
                                       <div class="container">
