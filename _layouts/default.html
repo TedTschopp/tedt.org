@@ -138,9 +138,9 @@
 
                             {% assign category_data = site.data['categories-on-blog'][category] %}
 
-                            {% assign category_data_title = 'your-category-title' %}
-                            {% assign category_data_subtitle = nil %}
-                            {% assign category_data_description = nil %}                          
+                            {% assign category_data_title = category_data.title %}
+                            {% assign category_data_subtitle = category_data.subtitle %}
+                            {% assign category_data_description = category_data.description %}                          
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
