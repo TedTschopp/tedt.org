@@ -155,7 +155,7 @@
                                     <p class="card-text">{{ category_data_description }}</p>
                                   </div>
 
-                                  {% for post in site.categories[category] | limit: 3%}
+                                  {% for post in category[1] | limit: 3%}
 
                                     <div class="card-footer">
                                       <div class="container">
