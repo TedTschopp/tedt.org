@@ -136,7 +136,7 @@
                         <div class="carousel-inner">
                           {% for category in site.categories %}
 
-                            {% assign category_data = site.data['categories-on-blog'][category] %}
+                            {% assign category_data = site.data['categories-on-blog'][category[0]] %}
 
                             {% assign category_data_title = category_data.title %}
                             {% assign category_data_subtitle = category_data.subtitle %}
