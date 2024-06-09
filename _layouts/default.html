@@ -147,7 +147,14 @@
                             {% endif %}
 
                             {% assign category_data = site.data['categories-on-blog'][category[0]] %}
-                            {% assign category_data_title = site.data['categories-on-blog'][category[0]][0] %}
+                            {% assign category_data_title = site.data['categories-on-blog'][category[0]] %}
+                            {% assign category_data_subtitle = site.data['categories-on-blog'][category[0]].subtitle | default: "Subtitle" %}
+
+                            <span class="hidden">
+                              {{site.data['categories-on-blog'] | jsonify }}
+                            </span>
+
+
 
                             {% assign category_data_title_2 = category_data.title | default: "Category Title" %}
                             {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
