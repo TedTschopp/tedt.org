@@ -151,7 +151,7 @@
                             {% assign category_data_subtitle = site.data['categories-on-blog'][category[0]].subtitle | default: "Subtitle" %}
 
                             <span class="hidden">
-                              {{site.data['categories-on-blog'] | jsonify }}
+                              {{site.data['categories-on-blog'][category[0]] | jsonify }}
                             </span>
 
 
