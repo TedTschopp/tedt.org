@@ -151,7 +151,7 @@
                             {% assign category_data_subtitle = site.data['categories-on-blog'][category[0]].subtitle | default: "Subtitle" %}
 
                             <span class="hidden">
-                              {{site.data['categories-on-blog'][category[0]] | jsonify }}
+                              {{site.data['categories-on-blog'][category] | jsonify }}
                             </span>
 
 
@@ -164,7 +164,7 @@
                               <div class="card-group">
                                 <div class="card">
                                   <div class="ratio ratio-16x9">
-                                    <img src="{{ site.siteurl }}/img/categories/{{category[0] | lowercase | slugify }}.webp" class="object-fit-cover card-img-top" alt="{{ category[0] | capitalize }} Image">
+                                    <img src="{{ site.siteurl }}/img/categories/{{category | lowercase | slugify }}.webp" class="object-fit-cover card-img-top" alt="{{ category[0] | capitalize }} Image">
                                   </div>
 
                                   <div class="card-body">
