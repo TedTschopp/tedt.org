@@ -134,7 +134,13 @@
 
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
-                          {% for category in site.categories %}
+                          {% assign categories = site.categories %}
+                          {% for category in categoriess %}
+
+                            {% assign category_name = category | first %}
+                            {% assign category_details = site.data['categories-on-blog'].categories[category_name] %}
+
+
                             {% assign category_lowercase = category[0] | lowercase %}
                             {% if category_lowercase == "home" or 
                                   category_lowercase == "draft" or 
@@ -146,20 +152,11 @@
                               {% continue %}
                             {% endif %}
 
-                            {% assign category_data = site.data['categories-on-blog'][category[0]] %}
-                            {% assign category_data_title = site.data['categories-on-blog'][category[0]] %}
-                            {% assign category_data_subtitle = site.data['categories-on-blog'][category[0]].subtitle | default: "Subtitle" %}
+                            {% assign category_data_title = category_details.titles %}
+                            {% assign category_data_subtitle = category_details.subtitle %}
+                            {% assign category_data_description = category_details.description %}
+                            {% assign category_data_img = category_details.image %}
 
-                            <span class="hidden">
-                              {% assign temp = category[0] %}
-                              {{site.data['categories-on-blog'][temp] | jsonify }}
-                            </span>
-
-
-
-                            {% assign category_data_title_2 = category_data.title | default: "Category Title" %}
-                            {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
-                            {% assign category_data_description = category_data.description | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}                          
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
