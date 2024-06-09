@@ -135,7 +135,7 @@
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
                           {% assign categories = site.categories %}
-                          {% for category in categoriess %}
+                          {% for category in categories %}
 
                             {% assign category_name = category | first %}
                             {% assign category_details = site.data['categories-on-blog'].categories[category_name] %}
