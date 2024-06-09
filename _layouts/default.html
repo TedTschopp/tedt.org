@@ -166,9 +166,8 @@
                                     <p class="card-text">{{ category_data_description }}</p>
                                   </div>
 
-                                  {% for post in category[1] | limit: 3%}
-
-                                    <div class="card-footer">
+                                  <div class="card-footer">
+                                    {% for post in category[1] | limit: 3%}
                                       <div class="container">
                                         <div class="row align-items-stretch">
                                           {% if post.image %}
@@ -230,8 +229,8 @@
                                           {% endif %}
                                         </div>
                                       </div>
-                                    </div>
-                                  {% endfor %}
+                                    {% endfor %}
+                                  </div>
                                 </div>
                               </div>
                             </div>
