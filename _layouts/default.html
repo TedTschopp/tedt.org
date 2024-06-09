@@ -148,15 +148,6 @@
 
                             {% assign category_data = site.data['categories-on-blog'][category[0]] %}
 
-                            <span class="hidden">
-                              category_data: {{ category_data }}
-                              category: {{ category | jsonify }}
-                              category[0]: {{ category[0] }}
-                              category[1]: {{ category[1] | jsonify }}
-                              category[2]: {{ category[2] | jsonify }}
-
-                            </span>
-
 
                             {% assign category_data_title = category_data.title | default: "Category Title" %}
                             {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
