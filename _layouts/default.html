@@ -136,15 +136,21 @@
                         <div class="carousel-inner">
                           {% for category in site.categories %}
                             {% assign category_lowercase = category[0] | lowercase %}
-                            {% if category_lowercase == "bestiary" or category_lowercase == "draft" or category_lowercase == "role playing games" or category_lowercase == "folklore" or category_lowercase == "quotes" or category_lowercase == "home" or category_lowercase == "micropubpost" %}
+                            {% if category_lowercase == "home" or 
+                                  category_lowercase == "draft" or 
+                                  category_lowercase == "role playing games" or 
+                                  category_lowercase == "folklore" or 
+                                  category_lowercase == "quotes" or 
+                                  category_lowercase == "home" or 
+                                  category_lowercase == "micropubpost" %}
                               {% continue %}
                             {% endif %}
 
                             {% assign category_data = site.data['categories-on-blog'][category[0] | lowercase | slugify] %}
 
-                            {% assign category_data_title = category_data.title %}
-                            {% assign category_data_subtitle = category_data.subtitle %}
-                            {% assign category_data_description = category_data.description %}                          
+                            {% assign category_data_title = category_data.title | default: "Category Title" %}
+                            {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
+                            {% assign category_data_description = category_data.description | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}                          
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
