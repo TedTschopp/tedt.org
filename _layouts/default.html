@@ -146,7 +146,7 @@
                               {% continue %}
                             {% endif %}
 
-                            {% assign category_data = site.data['categories-on-blog'][category[0] | lowercase | slugify] %}
+                            {% assign category_data = site.data['categories-on-blog'][category[0]] %}
 
                             {% assign category_data_title = category_data.title | default: "Category Title" %}
                             {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
