@@ -148,6 +148,13 @@
 
                             {% assign category_data = site.data['categories-on-blog'][category[0]] %}
 
+                            <span class="hidden">
+                              category_data: {{ category_data }}
+                              category[0]: {{ category[0] }}
+
+                            </span>
+
+
                             {% assign category_data_title = category_data.title | default: "Category Title" %}
                             {% assign category_data_subtitle = category_data.subtitle | default: "Subtitle" %}
                             {% assign category_data_description = category_data.description | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}                          
