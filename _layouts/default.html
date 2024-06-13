@@ -148,17 +148,17 @@
                               <div class="card-group">
                                 <div class="card">
                                   <div class="ratio ratio-16x9">
-                                    <img src="{{ site.siteurl }}/img/categories/{{category | lowercase }}.webp" class="object-fit-cover card-img-top" alt="{{ category | capitalize }} Image">
+                                    <img src="{{ site.siteurl }}/img/categories/{{category_data_title | lowercase }}.webp" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                                   </div>
 
                                   <div class="card-body">
-                                    <h2 class="card-title"><a href="/category/{{ category_data.title }}">{{ category_data_title }}</a></h2>
+                                    <h2 class="card-title"><a href="/category/{{ category_data_title }}">{{ category_data_title }}</a></h2>
                                     <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data_subtitle }}</h3>
                                     <p class="card-text">{{ category_data_description }}</p>
                                   </div>
 
                                   <div class="card-footer">
-                                    {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category" %}
+                                    {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" %}
                                     {% for post in filtered_posts limit: 3 %}
                                       <div class="container">
                                         <div class="row align-items-stretch">
