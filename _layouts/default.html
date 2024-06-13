@@ -136,13 +136,15 @@
                         <div class="carousel-inner">
 
                           {% assign categories = site.data['categories-on-blog'] %}
-                          {% for category in categories %}
-                          
-                            {% assign category_data_title = category.titles %}
-                            {% assign category_data_subtitle = category.subtitle %}
-                            {% assign category_data_description = category.description %}
-                            {% assign category_data_img = category.image %}
 
+                          {% for category in categories %}
+                            {% assign category_key = category[0] %}
+                            {% assign category_value = category[1] %}
+
+                            {% assign category_data_title = category_value.title %}
+                            {% assign category_data_subtitle = category_value.subtitle %}
+                            {% assign category_data_description = category_value.description %}
+                            {% assign category_data_img = category_value.image %}
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
