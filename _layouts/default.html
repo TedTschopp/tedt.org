@@ -149,8 +149,9 @@
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
                                 <div class="card">
+                                  
                                   <div class="ratio ratio-16x9">
-                                    <img src="{{ site.siteurl }}/img/categories/{{category_data_title | lowercase }}.webp" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
+                                    <img src="{{ site.siteurl }}{{category_data_img}}.webp" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                                   </div>
 
                                   <div class="card-body">
