@@ -137,19 +137,19 @@
                           {% assign categories = site.data.categories %}
                           {% for category in categories %}
 
-                          {% assign category_detail = categories | where: "category", category | first %}
+                         
                           
-                            {% assign category_data_title = category_details.titles %}
-                            {% assign category_data_subtitle = category_details.subtitle %}
-                            {% assign category_data_description = category_details.description %}
-                            {% assign category_data_img = category_details.image %}
+                            {% assign category_data_title = category.titles %}
+                            {% assign category_data_subtitle = category.subtitle %}
+                            {% assign category_data_description = category.description %}
+                            {% assign category_data_img = category.image %}
 
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
                                 <div class="card">
                                   <div class="ratio ratio-16x9">
-                                    <img src="{{ site.siteurl }}/img/categories/{{category | lowercase }}.webp" class="object-fit-cover card-img-top" alt="{{ category[0] | capitalize }} Image">
+                                    <img src="{{ site.siteurl }}/img/categories/{{category | lowercase }}.webp" class="object-fit-cover card-img-top" alt="{{ category | capitalize }} Image">
                                   </div>
 
                                   <div class="card-body">
