@@ -137,19 +137,6 @@
                           {% assign categories = site.categories %}
                           {% for category in categories %}
 
-                            {% assign category_name = category[0] %}
-                            {% assign category_lowercase = category_name | downcase %}
-
-                            {% if category_lowercase == "home" or 
-                                  category_lowercase == "draft" or 
-                                  category_lowercase == "role playing games" or 
-                                  category_lowercase == "folklore" or 
-                                  category_lowercase == "quotes" or 
-                                  category_lowercase == "home" or 
-                                  category_lowercase == "micropubpost" %}
-                              {% continue %}
-                            {% endif %}
-
                             {% assign category_details = site.data['categories-on-blog'][category_name] %}
 
                             {% assign category_data_title = category_details.titles %}
