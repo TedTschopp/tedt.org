@@ -1,134 +1,134 @@
-- cateogry: bestiary
+- category: bestiary
   title: "Bestiary"
   subtitle: "Creatures and Beasts from All Realms"
   description: "Detailed lore, stats, and vivid descriptions of mythical and game creatures. Enhance your adventures and campaigns with rich information on various beasts."
   image: "/assets/images/bestiary.webp"
-- cateogry: books
+- category: books
   title: "Books"
   subtitle: "Reading for the Adventurous Mind"
   description: "In-depth reviews, discussions, and reflections on books that ignite the imagination and inspire great storytelling. Explore a variety of genres and authors."
   image: "/assets/images/books.webp"
-- cateogry: communications
+- category: communications
   title: "Communications"
   subtitle: "Staying Connected in a Disconnected World"
   description: "Essays, tips, and strategies on effective communication in the digital age. Learn how to foster meaningful connections and enhance your interactions."
   image: "/assets/images/communications.webp"
-- cateogry: computers
+- category: computers
   title: "Computers"
   subtitle: "The Heart of Modern Adventures"
   description: "Advice, insights, and guides on utilizing computers for gaming, writing, and other creative endeavors. Discover new tools and techniques for your projects."
   image: "/assets/images/computers.webp"
-- cateogry: dungeon-crawl-classics
+- category: dungeon-crawl-classics
   title: "Dungeon Crawl Classics"
   subtitle: "Old-School Adventures with a New Twist"
   description: "Exploring Dungeon Crawl Classics with detailed guides, game tips, and unique adventures. Delve into a world of old-school role-playing with fresh perspectives."
   image: "/assets/images/dungeon_crawl_classics.webp"
-- cateogry: dungeons-and-dragons
+- category: dungeons-and-dragons
   title: "Dungeons & Dragons"
   subtitle: "The Quintessential Role Playing Game"
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
   image: "/assets/images/dungeons_and_dragons.webp"
-- cateogry: folklore
+- category: folklore
   title: "Folklore"
   subtitle: "Tales and Legends from Around the World"
   description: "Delving into myths, legends, and folklore from various cultures. Enrich your storytelling with tales of gods, heroes, and mythical creatures from around the globe."
   image: "/assets/images/folklore.webp"
-- cateogry: gamma-world
+- category: gamma-world
   title: "Gamma World"
   subtitle: "Post-Apocalyptic Role Playing"
   description: "Guides, adventures, and tips for navigating the intriguing world of Gamma World. Explore post-apocalyptic scenarios and bring your role-playing to new heights."
   image: "/assets/images/gamma_world.webp"
-- cateogry: gurps
+- category: gurps
   title: "GURPS"
   subtitle: "Generic Universal RolePlaying System"
   description: "Explorations, adventures, and guides using the versatile GURPS system. Learn how to create dynamic and flexible campaigns that can fit any setting."
   image: "/assets/images/gurps.webp"
-- cateogry: home
+- category: home
   title: "Home"
   subtitle: "The Heart of the Website"
   description: "Welcome to the hub of all content, where adventures, stories, and resources begin. Find links to all major sections and get a taste of what's to come."
   image: "/assets/images/home.webp"
-- cateogry: maps
+- category: maps
   title: "Maps"
   subtitle: "Guiding Your Adventures"
   description: "Intricate and detailed maps for various games and adventures. Use these visual aids to enhance your campaigns and guide your journeys with precision."
   image: "/assets/images/maps.webp"
-- cateogry: middle-earth
+- category: middle-earth
   title: "Middle-earth"
   subtitle: "Exploring Tolkien's World"
   description: "Articles, guides, and in-depth explorations of Tolkien's Middle-earth. Immerse yourself in the lore, characters, and landscapes of this beloved fantasy world."
   image: "/assets/images/middle_earth.webp"
-- cateogry: mobile
+- category: mobile
   title: "Mobile"
   subtitle: "Gaming and Communication on the Go"
   description: "Insights, tips, and guides on mobile gaming and effective communication on the go. Stay connected and entertained wherever you are."
   image: "/assets/images/mobile.webp"
-- cateogry: monsters
+- category: monsters
   title: "Monsters"
   subtitle: "Terrifying Creatures and How to Defeat Them"
   description: "Information, strategies, and detailed descriptions of various monsters found in role-playing games. Learn how to tackle these creatures in your campaigns."
   image: "/assets/images/monsters.webp"
-- cateogry: movies
+- category: movies
   title: "Movies"
   subtitle: "Cinema for the Imaginative"
   description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
   image: "/assets/images/movies.webp"
-- cateogry: mutant-crawl-classics
+- category: mutant-crawl-classics
   title: "Mutant Crawl Classics"
   subtitle: "Adventures in a Post-Apocalyptic World"
   description: "Guides and explorations for thrilling adventures in the world of Mutant Crawl Classics. Delve into post-apocalyptic scenarios and enhance your gameplay."
   image: "/assets/images/mutant_crawl_classics.webp"
-- cateogry: opinion
+- category: opinion
   title: "Opinion"
   subtitle: "Thoughts and Musings"
   description: "Personal essays, musings, and reflections on a variety of topics. Gain unique perspectives and insights from thoughtful commentary and analysis."
   image: "/assets/images/opinion.webp"
-- cateogry: personal-writing
+- category: personal-writing
   title: "Personal Writing"
   subtitle: "From the Heart"
   description: "Personal essays and creative pieces that offer a glimpse into the writer's mind and heart. Explore intimate stories, reflections, and imaginative works."
   image: "/assets/images/personal_writing.webp"
-- cateogry: philosophy
+- category: philosophy
   title: "Philosophy"
   subtitle: "Thinking Deeply"
   description: "In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire."
   image: "/assets/images/philosophy.webp"
-- cateogry: projects
+- category: projects
   title: "Projects"
   subtitle: "What I'm Working On"
   description: "Updates, details, and insights on current projects. Follow along with ongoing creative endeavors and see how ideas develop into finished works."
   image: "/assets/images/projects.webp"
-- cateogry: quote
+- category: quote
   title: "Quotes"
   subtitle: "Words of Wisdom"
   description: "A curated collection of meaningful quotes and sayings to inspire, motivate, and provoke thought. Draw wisdom from the words of great minds."
   image: "/assets/images/quotes.webp"
-- cateogry: religion
+- category: religion
   title: "Religion"
   subtitle: "Faith and Belief"
   description: "Discussions and explorations of various religious topics, beliefs, and practices. Delve into the spiritual aspects that shape cultures and individuals."
   image: "/assets/images/religion.webp"
-- cateogry: reprint
+- category: reprint
   title: "Reprint"
   subtitle: "Bringing Back the Classics"
   description: "Reprints and discussions of classic writings, bringing timeless works to a new audience. Rediscover the enduring value of these literary gems."
   image: "/assets/images/reprint.webp"
-- cateogry: role-playing-games
+- category: role-playing-games
   title: "Role Playing Games"
   subtitle: "Rolling the Dice: Rough Sketches to Refined Adventures"
   description: "Writings on current Role Playing Games, ranging from rough ideas to polished adventures. Discover insights, tips, and creative content to enhance your campaigns."
   image: "/assets/images/role_playing_games.webp"
-- cateogry: science
+- category: science
   title: "Science"
   subtitle: "Exploring the Unknown"
   description: "Articles, essays, and discussions delving into various scientific topics. Uncover new insights and explore the wonders of the natural and technological world."
   image: "/assets/images/science.webp"
-- cateogry: shadowrun
+- category: shadowrun
   title: "Shadowrun"
   subtitle: "Cyberpunk and Magic"
   description: "Adventures, guides, and insights into the world of Shadowrun. Blend cyberpunk and magic in your campaigns with expert tips and engaging narratives."
   image: "/assets/images/shadowrun.webp"
-- cateogry: the-märchen-engine
+- category: the-märchen-engine
   title: "The Märchen Engine"
   subtitle: "Fantasy Storytelling Engine"
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
