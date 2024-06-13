@@ -141,10 +141,10 @@
                             {% assign category_key = category[0] %}
                             {% assign category_value = category[1] %}
 
-                            {% assign category_data_title = category_value.title %}
-                            {% assign category_data_subtitle = category_value.subtitle %}
-                            {% assign category_data_description = category_value.description %}
-                            {% assign category_data_img = category_value.image %}
+                            {% assign category_data_title = category_key.title %}
+                            {% assign category_data_subtitle = category_key.subtitle %}
+                            {% assign category_data_description = category_key.description %}
+                            {% assign category_data_img = category_key.image %}
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
