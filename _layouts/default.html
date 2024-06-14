@@ -138,28 +138,11 @@
                           {% assign categories = site.data['categories-on-blog'] %}
 
                           {% for category in categories %}
-                            <span class="hidden">
 
-                              category  : {{ category     }}
-                              category 0: {{ category[0]  }}
-                              category 1: {{ category[1]  }}
-
-                              category  : {{ category    | jsonify }}
-                              category 0: {{ category[0] | jsonify }}
-                              category 1: {{ category[1] | jsonify }}
-
-
-                            </span>
-
-
-
-                            {% assign category_key = category[0] %}
-                            {% assign category_value = category[1] %}
-
-                            {% assign category_data_title = category_key.title %}
-                            {% assign category_data_subtitle = category_key.subtitle %}
-                            {% assign category_data_description = category_key.description %}
-                            {% assign category_data_img = category_key.image %}
+                            {% assign category_data_title = category.title %}
+                            {% assign category_data_subtitle = category.subtitle %}
+                            {% assign category_data_description = category.description %}
+                            {% assign category_data_img = category.image %}
 
                             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                               <div class="card-group">
