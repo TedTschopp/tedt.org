@@ -138,6 +138,21 @@
                           {% assign categories = site.data['categories-on-blog'] %}
 
                           {% for category in categories %}
+                            <span class="hidden">
+
+                              category  : {{ category     }}
+                              category 0: {{ category[0]  }}
+                              category 1: {{ category[1]  }}
+
+                              category  : {{ category    | jsonify }}
+                              category 0: {{ category[0] | jsonify }}
+                              category 1: {{ category[1] | jsonify }}
+
+
+                            </span>
+
+
+
                             {% assign category_key = category[0] %}
                             {% assign category_value = category[1] %}
 
