@@ -158,7 +158,7 @@
                                     <p class="card-text">{{ category_data_description }}</p>
                                   </div>
 
-                                  <div class="card-footer">
+                                  <div class="card-footer p-0">
                                     {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" %}
                                     {% for post in filtered_posts limit: 3 %}
                                       <div class="container">
@@ -183,8 +183,8 @@
                                                         <dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt>
                                                       </div>
                                                       <div class="card-text">
-                                                        <div class="text-truncate-4">
-                                                          <dd class="card-text">{{ post.teaser | default: post.description | default: post.excerpt | strip_html | truncatewords: 20 }}</dd>
+                                                        <div class="text-truncate-2">
+                                                          <dd class="card-text">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</dd>
                                                         </div>
                                                       </div>
                                                     </dl>
