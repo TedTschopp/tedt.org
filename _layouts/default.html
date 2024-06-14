@@ -136,8 +136,6 @@
                           {% endfor %}
                         </div>
 
-
-
                         <div class="carousel-inner">
 
                           {% assign categories = site.data['categories-on-blog'] %}
@@ -184,7 +182,7 @@
                                             {% assign image_URL = post.image %}
                                             <div class="card p-0 h-100 position-relative">
                                               <div class="row g-0 h-100">
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 h-100">
                                                   <div class="ratio ratio-16x9">
                                                     <img src="{{ image_URL }}" class="img-fluid rounded-start object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
                                                   </div>
