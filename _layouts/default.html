@@ -125,14 +125,17 @@
                   <div class="col">
                     <div class="card h-100 d-flex flex-column">
 
-                      <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
-                        {% assign categories_buttons = site.categories %}
-                        {% for category_button in categories_buttons %}
-                          <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
-                        {% endfor %}
-                      </div>
+                      <!-- Where indicators use to be -->
 
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
+                        
+                        <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
+                          {% assign categories_buttons = site.categories %}
+                          {% for category_button in categories_buttons %}
+                            <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
+                          {% endfor %}
+                        </div>
+
                         <div class="carousel-inner">
 
                           {% assign categories = site.data['categories-on-blog'] %}
@@ -229,6 +232,16 @@
                             </div>
                           {% endfor %}
                         </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
                       </div>
                     </div>
                   </div>
