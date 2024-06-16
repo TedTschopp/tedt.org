@@ -129,12 +129,6 @@
 
                       <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                         
-                        <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
-                          {% assign categories_buttons = site.categories %}
-                          {% for category_button in categories_buttons %}
-                            <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
-                          {% endfor %}
-                        </div>
 
                         <div class="carousel-inner">
 
@@ -165,6 +159,15 @@
                                       <span class="visually-hidden">Next</span>
                                     </button>
                                   </div>
+                                  <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
+                                    {% assign categories_buttons = site.categories %}
+                                    {% for category_button in categories_buttons %}
+                                      <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
+                                    {% endfor %}
+                                  </div>
+          
+
+
 
                                   <div class="card-body">
                                     <h2 class="card-title"><a href="/category/{{ category_data_title }}">{{ category_data_title }}</a></h2>
