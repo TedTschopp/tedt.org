@@ -141,6 +141,45 @@
                                 <img src="{{ site.siteurl }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                               </div>
 
+                              <style>
+                                .carousel-control-prev-icon,
+                                .carousel-control-next-icon {
+                                  filter: invert(100%);
+                                }
+
+                                .carousel-control-prev,
+                                .carousel-control-next {
+                                  width: 5%;
+                                }
+
+                                .carousel-control-prev-icon,
+                                .carousel-control-next-icon {
+                                  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+                                  border-radius: 50%; /* Make it a circle */
+                                  padding: 10px; /* Add some padding */
+                                }
+
+                                .carousel-control-prev:hover .carousel-control-prev-icon,
+                                .carousel-control-next:hover .carousel-control-next-icon {
+                                  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+                                }
+
+                                .carousel-control-prev,
+                                .carousel-control-next {
+                                  outline: none;
+                                }
+
+                                .carousel-control-prev-icon:after,
+                                .carousel-control-next-icon:after {
+                                  content: '';
+                                  display: block;
+                                  width: 100%;
+                                  height: 100%;
+                                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+                                  border-radius: 50%; /* Ensure shadow follows the circle shape */
+                                }
+                              </style>
+
                               <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -151,12 +190,15 @@
                                 <span class="visually-hidden">Next</span>
                               </button>
 
+                              {% comment %}
                               <div class="carousel-indicators row w-100 p-0 m-0 position-absolute bottom-0">
                                 {% assign categories_buttons = site.categories %}
                                 {% for category_button in categories_buttons %}
                                   <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
                                 {% endfor %}
                               </div>
+                              {% endcomment %}
+
                             </div>
 
                             <div class="card-body">
