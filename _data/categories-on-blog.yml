@@ -27,7 +27,7 @@
   title: "Dungeons & Dragons"
   subtitle: "The Quintessential Role Playing Game"
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
-  image: "/img/categories/dungeons-and-dragons.webp"
+  image: "/img/categories/dungeons-dragons.webp"
 - category: folklore
   title: "Folklore"
   subtitle: "Tales and Legends from Around the World"
@@ -77,7 +77,7 @@
   title: "Mutant Crawl Classics"
   subtitle: "Adventures in a Post-Apocalyptic World"
   description: "Guides and explorations for thrilling adventures in the world of Mutant Crawl Classics. Delve into post-apocalyptic scenarios and enhance your gameplay."
-  image: "/img/categories/mutant_crawl_classics.webp"
+  image: "/img/categories/mutant-crawl-classics.webp"
 - category: opinion
   title: "Opinion"
   subtitle: "Thoughts and Musings"
@@ -132,4 +132,4 @@
   title: "The Märchen Engine"
   subtitle: "Fantasy Storytelling Engine"
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
-  image: "/img/categories/the-marchen-engine.webp"
+  image: "/img/categories/the-märchen-engine.webp"
