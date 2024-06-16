@@ -22,12 +22,12 @@
   title: "Dungeon Crawl Classics"
   subtitle: "Old-School Adventures with a New Twist"
   description: "Exploring Dungeon Crawl Classics with detailed guides, game tips, and unique adventures. Delve into a world of old-school role-playing with fresh perspectives."
-  image: "/img/categories/dungeon_crawl_classics.webp"
+  image: "/img/categories/dungeon-crawl-classics.webp"
 - category: dungeons-and-dragons
   title: "Dungeons & Dragons"
   subtitle: "The Quintessential Role Playing Game"
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
-  image: "/img/categories/dungeons_and_dragons.webp"
+  image: "/img/categories/dungeons-and-dragons.webp"
 - category: folklore
   title: "Folklore"
   subtitle: "Tales and Legends from Around the World"
@@ -37,7 +37,7 @@
   title: "Gamma World"
   subtitle: "Post-Apocalyptic Role Playing"
   description: "Guides, adventures, and tips for navigating the intriguing world of Gamma World. Explore post-apocalyptic scenarios and bring your role-playing to new heights."
-  image: "/img/categories/gamma_world.webp"
+  image: "/img/categories/gamma-world.webp"
 - category: gurps
   title: "GURPS"
   subtitle: "Generic Universal RolePlaying System"
@@ -57,7 +57,7 @@
   title: "Middle-earth"
   subtitle: "Exploring Tolkien's World"
   description: "Articles, guides, and in-depth explorations of Tolkien's Middle-earth. Immerse yourself in the lore, characters, and landscapes of this beloved fantasy world."
-  image: "/img/categories/middle_earth.webp"
+  image: "/img/categories/middle-earth.webp"
 - category: mobile
   title: "Mobile"
   subtitle: "Gaming and Communication on the Go"
@@ -87,7 +87,7 @@
   title: "Personal Writing"
   subtitle: "From the Heart"
   description: "Personal essays and creative pieces that offer a glimpse into the writer's mind and heart. Explore intimate stories, reflections, and imaginative works."
-  image: "/img/categories/personal_writing.webp"
+  image: "/img/categories/personal-writing.webp"
 - category: philosophy
   title: "Philosophy"
   subtitle: "Thinking Deeply"
@@ -117,7 +117,7 @@
   title: "Role Playing Games"
   subtitle: "Rolling the Dice: Rough Sketches to Refined Adventures"
   description: "Writings on current Role Playing Games, ranging from rough ideas to polished adventures. Discover insights, tips, and creative content to enhance your campaigns."
-  image: "/img/categories/role_playing_games.webp"
+  image: "/img/categories/role-playing-games.webp"
 - category: science
   title: "Science"
   subtitle: "Exploring the Unknown"
@@ -132,4 +132,4 @@
   title: "The Märchen Engine"
   subtitle: "Fantasy Storytelling Engine"
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
-  image: "/img/categories/the_marchen_engine.webp"
+  image: "/img/categories/the-marchen-engine.webp"
