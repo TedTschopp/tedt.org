@@ -140,20 +140,23 @@
                               <div class="ratio ratio-16x9">
                                 <img src="{{ site.siteurl }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                               </div>
+
                               <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                               </button>
+
                               <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                               </button>
-                            </div>
-                            <div class="carousel-indicators row w-100 p-0 m-0 position-relative">
-                              {% assign categories_buttons = site.categories %}
-                              {% for category_button in categories_buttons %}
-                                <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
-                              {% endfor %}
+
+                              <div class="carousel-indicators row w-100 p-0 m-0 position-absolute bottom-0">
+                                {% assign categories_buttons = site.categories %}
+                                {% for category_button in categories_buttons %}
+                                  <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
+                                {% endfor %}
+                              </div>
                             </div>
 
                             <div class="card-body">
