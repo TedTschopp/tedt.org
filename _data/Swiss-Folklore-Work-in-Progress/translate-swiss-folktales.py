@@ -1,7 +1,7 @@
 import json
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-proj-uM6E9nJhvi80AqL1cK50T3BlbkFJ4kCV5X9HsjePIa5K8MLj")
+client = OpenAI(api_key="***")
 import time
 import os
 
