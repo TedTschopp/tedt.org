@@ -1,43 +1,83 @@
 import json
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key="sk-proj-uM6E9nJhvi80AqL1cK50T3BlbkFJ4kCV5X9HsjePIa5K8MLj")
 import time
 import os
 
-# Set up the OpenAI API key
-openai.api_key = "YOUR_OPENAI_API_KEY"
+json_template_for_location = '''
+"Specific Locations in the Story": [
+  { 
+    "Name": "",
+    "EnglishTranslation": "",
+    "Latitude": "",
+    "Longitude": ""
+  }
+]
+'''
 
-# Function to call OpenAI's GPT-4o API for translation
+
+# Function to call OpenAI's GPT-4o API for translation of the text
 def translate_text(text):
     try:
-        response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=f"Translate the following Swiss folktale into English:\n\n{text}",
-            max_tokens=2048,
-            temperature=0.7
-        )
-        return response.choices[0].text.strip()
-    except openai.error.RateLimitError:
-        print("Rate limit exceeded. Waiting for 60 seconds...")
-        time.sleep(60)
-        return translate_text(text)  # Retry after waiting
+        response = client.chat.completions.create(model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"Translate the following into English. Use words that have a German or Norse etymology as much as possible. Transliterate if there is no good word to use in modern English, and explain your decision to transliterate in a footnote using markdown. Output the text as markdown.\n\n{text}"},
+        ])
+        return response.choices[0].message.content
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"Error: {e}")
         return None
+
+# Function to call OpenAI's GPT-4o API for translation of the title
+def translate_title(text):
+    try:
+        response = client.chat.completions.create(model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"Translate the following into English. Use words that have a German or Norse etymology as much as possible. Transliterate if there is no good word to use in modern English.  Output the text in Title Case.\n\n{text}"},
+        ])
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+
+
 
 # Function to extract named locations using OpenAI
 def extract_locations(text):
     try:
-        response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=f"Extract all named locations from the following Swiss folktale and list them with their English translations:\n\n{text}\n\nFormat the response as a JSON array with each entry having 'Name', 'EnglishTranslation', 'Latitude', and 'Longitude'. If the latitude and longitude are not known, leave them empty.",
-            max_tokens=2048,
-            temperature=0.7
-        )
-        return json.loads(response.choices[0].text.strip())
-    except openai.error.RateLimitError:
-        print("Rate limit exceeded. Waiting for 60 seconds...")
-        time.sleep(60)
-        return extract_locations(text)  # Retry after waiting
+
+        Prompt = f"""
+        Extract all named locations from the following Swiss folktale and list them with their English translations:
+
+        "{text}"
+
+        Format the response as a JSON array as follows:
+
+        "Specific Locations in the Story": [
+            { 
+                "Name": "",
+                "EnglishTranslation": "",
+                "Latitude": "",
+                "Longitude": ""
+            }
+        ]
+        If the latitude and longitude are not known, leave them empty.
+        """
+
+        response = client.chat.completions.create(model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"{Prompt}"},
+        ])
+        content = response.choices[0].message.content
+        if content:
+            return json.loads(content)
+        else:
+            print("No content received from OpenAI API.")
+            return []
     except Exception as e:
         print(f"An error occurred while extracting locations: {e}")
         return []
@@ -81,12 +121,18 @@ if num_entries_to_process == 0 or num_entries_to_process > total_entries:
 
 # Start translating from the last saved point
 for index, entry in enumerate(data[len(translated_data):len(translated_data) + num_entries_to_process], start=len(translated_data)):
+    print(f"==============================")
     print(f"Translating entry {index + 1} of {len(data)}")
-    
-    translated_title = translate_text(entry["Title"])
+
+    translated_title = translate_title(entry["Title"])
+    print(f"Translated Title: {translated_title}")
+
     translated_text = translate_text(entry["Text"])
-    locations = extract_locations(entry["Text"])
-    
+    print(f"Translated Text: {translated_text}")
+
+    locations = extract_locations(translated_text)
+    print(f"locations: {locations}")
+
     if translated_title and translated_text:
         translated_entry = {
             "AuthorCategoryLocation": entry["AuthorCategoryLocation"],
@@ -107,10 +153,10 @@ for index, entry in enumerate(data[len(translated_data):len(translated_data) + n
     else:
         print("Error encountered for entry. Logging error.")
         error_entries.append(entry)
-    
+
     # Save progress and error entries after each iteration
     save_progress(translated_data, error_entries)
-    
+
     # Throttle requests to avoid hitting the rate limit
     time.sleep(1)
 
