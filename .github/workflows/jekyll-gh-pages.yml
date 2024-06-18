@@ -38,6 +38,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./_site"
+      - name: Upload _site directory
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: site
+          path: _site    
 
   # Deployment job
   deploy:
@@ -47,11 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Upload _site directory
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: site
-          path: _site        
+    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
