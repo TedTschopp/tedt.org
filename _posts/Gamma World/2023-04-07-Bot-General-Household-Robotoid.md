@@ -1,4 +1,5 @@
 ---
+image: 
 title: Bot «General Household Robotoid»
 creature_name_index: General Household Robotoid
 notes: ''

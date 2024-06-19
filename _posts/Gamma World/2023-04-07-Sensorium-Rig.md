@@ -1,4 +1,5 @@
 ---
+image: 
 title: Sensorium Rig
 creature_name_index: Sensorium Rig
 notes: ''

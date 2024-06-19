@@ -1,4 +1,5 @@
 ---
+image: 
 title: Bandit Droid
 creature_name_index: Bandit Droid
 notes: ''

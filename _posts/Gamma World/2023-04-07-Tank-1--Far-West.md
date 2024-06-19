@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tank 1 - Far West
 creature_name_index: Tank 1 - Far West
 notes: ''

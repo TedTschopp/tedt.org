@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Blaashes.png
 title: Gamma Moths «Blaash»
 creature_name_index: Blaash
 notes: ''

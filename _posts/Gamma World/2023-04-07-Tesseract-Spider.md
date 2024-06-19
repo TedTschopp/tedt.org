@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tesseract Spider
 creature_name_index: Tesseract Spider
 notes: ''

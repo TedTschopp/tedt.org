@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Blood Birds.png
 title: Red Deaths «Blood Bird»
 creature_name_index: Blood Bird
 notes: ''

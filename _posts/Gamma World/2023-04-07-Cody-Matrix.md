@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cody Matrix
 creature_name_index: Cody Matrix
 notes: ''

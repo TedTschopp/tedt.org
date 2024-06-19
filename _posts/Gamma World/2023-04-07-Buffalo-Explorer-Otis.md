@@ -1,4 +1,5 @@
 ---
+image: 
 title: Buffalo Explorer «Otis»
 creature_name_index: Otis
 notes: ''

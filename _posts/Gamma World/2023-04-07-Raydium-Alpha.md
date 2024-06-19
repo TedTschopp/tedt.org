@@ -1,4 +1,5 @@
 ---
+image: 
 title: Raydium, Alpha
 creature_name_index: Raydium, Alpha
 notes: ''

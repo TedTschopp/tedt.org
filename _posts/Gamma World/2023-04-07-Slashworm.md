@@ -1,4 +1,5 @@
 ---
+image: 
 title: Slashworm
 creature_name_index: Slashworm
 notes: ''

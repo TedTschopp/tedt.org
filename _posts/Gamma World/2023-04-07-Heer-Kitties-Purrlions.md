@@ -1,4 +1,5 @@
 ---
+image: 
 title: Heer Kitties «Purrlions»
 creature_name_index: Purrlions
 notes: ''

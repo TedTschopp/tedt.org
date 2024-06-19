@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Beauty, the visious, mutated decrative plant.png
 title: Beauty, the visious, mutated decrative plant
 creature_name_index: Beauty, the visious, mutated decrative plant
 notes: ''

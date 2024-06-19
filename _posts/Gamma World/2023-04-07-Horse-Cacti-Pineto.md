@@ -1,4 +1,5 @@
 ---
+image: 
 title: Horse Cacti «Pineto»
 creature_name_index: Pineto
 notes: ''

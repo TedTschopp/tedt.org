@@ -1,4 +1,5 @@
 ---
+image: 
 title: Assassin Bug «Sin'tal»
 creature_name_index: Sin'tal
 notes: ''

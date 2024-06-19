@@ -1,4 +1,5 @@
 ---
+image: 
 title: Devo Beasts «Wardent»
 creature_name_index: Wardent
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Spinning Guardian «Verbat»
 creature_name_index: Verbat
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Oasis Machine
 creature_name_index: Oasis Machine
 notes: ''

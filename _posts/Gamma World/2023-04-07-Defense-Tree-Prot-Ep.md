@@ -1,4 +1,5 @@
 ---
+image: 
 title: Defense Tree «Prot Ep»
 creature_name_index: Prot Ep
 notes: ''

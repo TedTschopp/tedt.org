@@ -1,4 +1,5 @@
 ---
+image: 
 title: Raydium, Beta
 creature_name_index: Raydium, Beta
 notes: ''

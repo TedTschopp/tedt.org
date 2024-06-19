@@ -1,4 +1,5 @@
 ---
+image: 
 title: Sea Cow «Water Bear»
 creature_name_index: Water Bear
 notes: ''

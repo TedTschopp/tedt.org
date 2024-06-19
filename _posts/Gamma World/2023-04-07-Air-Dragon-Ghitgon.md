@@ -1,4 +1,5 @@
 ---
+image: 
 title: Air Dragon «Ghitgon»
 creature_name_index: Ghitgon
 notes: ''

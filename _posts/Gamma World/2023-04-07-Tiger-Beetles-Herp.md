@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tiger Beetles «Herp»
 creature_name_index: Herp
 notes: ''

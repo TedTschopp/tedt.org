@@ -1,4 +1,5 @@
 ---
+image: 
 title: Gas Plant «Mut Choo»
 creature_name_index: Mut Choo
 notes: ''

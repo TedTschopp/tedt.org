@@ -1,4 +1,5 @@
 ---
+image: 
 title: Mutated monkey «Nos'ferat»
 creature_name_index: Nos'ferat
 notes: ''

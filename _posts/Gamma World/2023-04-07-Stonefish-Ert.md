@@ -1,4 +1,5 @@
 ---
+image: 
 title: Stonefish «Ert»
 creature_name_index: Ert
 notes: ''

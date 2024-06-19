@@ -1,4 +1,5 @@
 ---
+image: 
 title: Lee'Gosi «Vath»
 creature_name_index: Vath
 notes: ''

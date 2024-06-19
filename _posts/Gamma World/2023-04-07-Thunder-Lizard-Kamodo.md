@@ -1,4 +1,5 @@
 ---
+image: 
 title: Thunder Lizard «Kamodo»
 creature_name_index: Kamodo
 notes: Fixed

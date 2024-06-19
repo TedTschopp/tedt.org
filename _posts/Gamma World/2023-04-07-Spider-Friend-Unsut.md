@@ -1,4 +1,5 @@
 ---
+image: 
 title: Spider Friend «Unsut»
 creature_name_index: Unsut
 notes: ''

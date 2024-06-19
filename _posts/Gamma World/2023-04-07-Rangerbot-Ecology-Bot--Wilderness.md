@@ -1,4 +1,5 @@
 ---
+image: 
 title: Rangerbot «Ecology Bot - Wilderness»
 creature_name_index: Ecology Bot - Wilderness
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Ghost Trees «Narl Ep»
 creature_name_index: Narl Ep
 notes: ''

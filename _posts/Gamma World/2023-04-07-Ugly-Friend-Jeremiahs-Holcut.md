@@ -1,4 +1,5 @@
 ---
+image: 
 title: Ugly Friend «Jeremiah's Holcut»
 creature_name_index: Jeremiah's Holcut
 notes: ''

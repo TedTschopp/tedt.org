@@ -1,4 +1,5 @@
 ---
+image: 
 title: Giant Ants «Skyzorr'n - Peon (in Colony)»
 creature_name_index: Skyzorr'n - Peon (in Colony)
 notes: ''

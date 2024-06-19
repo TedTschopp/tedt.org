@@ -1,4 +1,5 @@
 ---
+image: 
 title: Grey Shadow «Loo Pur»
 creature_name_index: Loo Pur
 notes: ''

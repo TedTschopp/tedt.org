@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cold Snake «Rrerslith»
 creature_name_index: Rrerslith
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Purple Pygmies «Dagmits»
 creature_name_index: Dagmits
 notes: ''

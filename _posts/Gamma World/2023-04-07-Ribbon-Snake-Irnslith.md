@@ -1,4 +1,5 @@
 ---
+image: 
 title: Ribbon Snake «Irnslith»
 creature_name_index: Irnslith
 notes: ''

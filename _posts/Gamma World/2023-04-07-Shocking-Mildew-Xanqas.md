@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shocking Mildew «Xanqas»
 creature_name_index: Xanqas
 notes: ''

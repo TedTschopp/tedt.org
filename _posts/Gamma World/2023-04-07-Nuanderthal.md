@@ -1,4 +1,5 @@
 ---
+image: 
 title: Nuanderthal
 creature_name_index: Nuanderthal
 notes: ''

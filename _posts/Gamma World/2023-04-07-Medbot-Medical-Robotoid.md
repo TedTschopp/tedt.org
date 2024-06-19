@@ -1,4 +1,5 @@
 ---
+image: 
 title: Medbot «Medical Robotoid»
 creature_name_index: Medical Robotoid
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Lieutenant Kulebra
 creature_name_index: Lieutenant Kulebra
 notes: ''

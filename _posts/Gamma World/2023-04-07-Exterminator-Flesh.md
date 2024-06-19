@@ -1,4 +1,5 @@
 ---
+image: 
 title: Exterminator, Flesh
 creature_name_index: Exterminator, Flesh
 notes: ''

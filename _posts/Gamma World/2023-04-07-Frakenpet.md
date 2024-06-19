@@ -1,4 +1,5 @@
 ---
+image: 
 title: Frakenpet
 creature_name_index: Frakenpet
 notes: ''

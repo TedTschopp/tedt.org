@@ -1,4 +1,5 @@
 ---
+image: 
 title: Mississippi Brainhound
 creature_name_index: Mississippi Brainhound
 notes: ''

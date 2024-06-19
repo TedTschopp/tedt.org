@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Android.png
 title: High Thinker «Android»
 creature_name_index: Android
 notes: ''

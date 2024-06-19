@@ -1,4 +1,5 @@
 ---
+image: 
 title: Deadly Emerald Flying Insect «Nytacal»
 creature_name_index: Nytacal
 notes: ''

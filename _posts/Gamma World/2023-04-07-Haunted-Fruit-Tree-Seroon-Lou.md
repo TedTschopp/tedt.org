@@ -1,4 +1,5 @@
 ---
+image: 
 title: Haunted Fruit Tree «Seroon Lou»
 creature_name_index: Seroon Lou
 notes: ''

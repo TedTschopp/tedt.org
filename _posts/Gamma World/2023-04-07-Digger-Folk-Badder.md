@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Badder.png
 title: Digger Folk «Badder»
 creature_name_index: Badder
 notes: ''

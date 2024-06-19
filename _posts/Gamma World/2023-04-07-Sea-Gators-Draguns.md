@@ -1,4 +1,5 @@
 ---
+image: 
 title: Sea Gators «Draguns»
 creature_name_index: Draguns
 notes: ''

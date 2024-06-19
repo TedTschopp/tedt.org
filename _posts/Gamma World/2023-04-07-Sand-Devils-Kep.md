@@ -1,4 +1,5 @@
 ---
+image: 
 title: Sand Devils «Kep»
 creature_name_index: Kep
 notes: Fixed

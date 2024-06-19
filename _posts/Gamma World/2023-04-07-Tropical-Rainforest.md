@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tropical Rainforest
 creature_name_index: Tropical Rainforest
 notes: ''

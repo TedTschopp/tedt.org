@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Aerosquid.png
 title: Sky Walkers «Aerosquid»
 creature_name_index: Aerosquid
 notes: ''

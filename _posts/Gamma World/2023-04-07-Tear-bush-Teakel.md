@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tear bush «Teakel»
 creature_name_index: Teakel
 notes: ''

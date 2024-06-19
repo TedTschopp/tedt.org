@@ -1,4 +1,5 @@
 ---
+image: 
 title: Robotic Hunter/Tracker «Robohunter»
 creature_name_index: Robohunter
 notes: ''

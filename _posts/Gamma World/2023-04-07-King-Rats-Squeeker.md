@@ -1,4 +1,5 @@
 ---
+image: 
 title: King Rats «Squeeker»
 creature_name_index: Squeeker
 notes: ''

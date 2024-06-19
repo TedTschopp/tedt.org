@@ -1,4 +1,5 @@
 ---
+image: 
 title: Klonoid «Ooz Blen»
 creature_name_index: Ooz Blen
 notes: ''

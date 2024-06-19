@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Buzzbirds.png
 title: Flitters «Buzzbirds»
 creature_name_index: Buzzbirds
 notes: ''

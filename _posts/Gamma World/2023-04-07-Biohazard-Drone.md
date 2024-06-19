@@ -1,4 +1,5 @@
 ---
+image: 
 title: Biohazard Drone
 creature_name_index: Biohazard Drone
 notes: ''

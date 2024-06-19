@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Attercops.png
 title: Blackuns «Attercop»
 creature_name_index: Attercop
 notes: ''

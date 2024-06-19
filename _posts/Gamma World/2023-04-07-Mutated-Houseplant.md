@@ -1,4 +1,5 @@
 ---
+image: 
 title: Mutated Houseplant
 creature_name_index: Mutated Houseplant
 notes: ''

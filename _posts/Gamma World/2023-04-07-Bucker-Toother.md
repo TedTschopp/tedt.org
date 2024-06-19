@@ -1,4 +1,5 @@
 ---
+image: 
 title: Bucker «Toother»
 creature_name_index: Toother
 notes: ''

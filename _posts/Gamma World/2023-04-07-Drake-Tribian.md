@@ -1,4 +1,5 @@
 ---
+image: 
 title: Drake Tribian
 creature_name_index: Drake Tribian
 notes: ''

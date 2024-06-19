@@ -1,4 +1,5 @@
 ---
+image: 
 title: Thile Pirt
 creature_name_index: Thile Pirt
 notes: ''

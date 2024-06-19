@@ -1,4 +1,5 @@
 ---
+image: 
 title: Baby Bronts «Moklas»
 creature_name_index: Moklas
 notes: ''

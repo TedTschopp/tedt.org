@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shield Worm
 creature_name_index: Shield Worm
 notes: ''

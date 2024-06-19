@@ -1,4 +1,5 @@
 ---
+image: 
 title: Desert Riders
 creature_name_index: Desert Riders
 notes: ''

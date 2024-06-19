@@ -1,4 +1,5 @@
 ---
+image: 
 title: Blood Wasp
 creature_name_index: Blood Wasp
 notes: ''

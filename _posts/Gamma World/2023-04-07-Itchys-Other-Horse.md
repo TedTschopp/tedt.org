@@ -1,4 +1,5 @@
 ---
+image: 
 title: Itchy's Other Horse
 creature_name_index: Itchy's Other Horse
 notes: ''

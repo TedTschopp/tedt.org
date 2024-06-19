@@ -1,4 +1,5 @@
 ---
+image: 
 title: Czhar-Teroth
 creature_name_index: Czhar-Teroth
 notes: ''

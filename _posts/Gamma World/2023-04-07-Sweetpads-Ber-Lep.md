@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Ber Leps.png
 title: Sweetpads «Ber Lep»
 creature_name_index: Ber Lep
 notes: ''

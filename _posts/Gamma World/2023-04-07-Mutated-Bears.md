@@ -1,4 +1,5 @@
 ---
+image: 
 title: Mutated Bears
 creature_name_index: Mutated Bears
 notes: ''

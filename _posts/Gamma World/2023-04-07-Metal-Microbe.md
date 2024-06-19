@@ -1,4 +1,5 @@
 ---
+image: 
 title: Metal Microbe
 creature_name_index: Metal Microbe
 notes: ''

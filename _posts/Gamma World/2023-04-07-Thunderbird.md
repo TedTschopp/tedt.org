@@ -1,4 +1,5 @@
 ---
+image: 
 title: Thunderbird
 creature_name_index: Thunderbird
 notes: ''

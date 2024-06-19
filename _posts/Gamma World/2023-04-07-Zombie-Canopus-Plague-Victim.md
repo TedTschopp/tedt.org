@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Canopus Plague Victim.png
 title: Zombie «Canopus Plague Victim»
 creature_name_index: Canopus Plague Victim
 notes: ''

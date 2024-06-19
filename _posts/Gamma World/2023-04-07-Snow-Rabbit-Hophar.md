@@ -1,4 +1,5 @@
 ---
+image: 
 title: Snow Rabbit «Hophar»
 creature_name_index: Hophar
 notes: ''

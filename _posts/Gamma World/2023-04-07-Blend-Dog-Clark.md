@@ -1,4 +1,5 @@
 ---
+image: 
 title: Blend Dog «Clark»
 creature_name_index: Clark
 notes: ''

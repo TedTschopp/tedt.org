@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cat Folk «Katkin»
 creature_name_index: Katkin
 notes: Fixed

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Bristle Snake «Chotslith, Medium»
 creature_name_index: Chotslith, Medium
 notes: ''

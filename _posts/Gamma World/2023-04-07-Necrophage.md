@@ -1,4 +1,5 @@
 ---
+image: 
 title: Necrophage
 creature_name_index: Necrophage
 notes: ''

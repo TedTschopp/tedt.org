@@ -1,4 +1,5 @@
 ---
+image: 
 title: Sathpernert's Rats
 creature_name_index: Sathpernert's Rats
 notes: ''

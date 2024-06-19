@@ -1,4 +1,5 @@
 ---
+image: 
 title: Robotic Hunter «Manhunter»
 creature_name_index: Manhunter
 notes: ''

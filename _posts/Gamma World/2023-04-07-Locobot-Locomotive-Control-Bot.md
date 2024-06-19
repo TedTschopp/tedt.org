@@ -1,4 +1,5 @@
 ---
+image: 
 title: Locobot «Locomotive Control Bot»
 creature_name_index: Locomotive Control Bot
 notes: ''

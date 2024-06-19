@@ -1,4 +1,5 @@
 ---
+image: 
 title: Fast Trotters «Centisteed»
 creature_name_index: Centisteed
 notes: ''

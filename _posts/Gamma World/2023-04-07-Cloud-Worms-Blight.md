@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Blights.png
 title: Cloud Worms «Blight»
 creature_name_index: Blight
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Giggle Bugs (Moths)
 creature_name_index: Giggle Bugs (Moths)
 notes: ''

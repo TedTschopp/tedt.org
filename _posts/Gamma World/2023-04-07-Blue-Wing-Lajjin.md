@@ -1,4 +1,5 @@
 ---
+image: 
 title: Blue Wing «Lajjin »
 creature_name_index: Lajjin
 notes: ''

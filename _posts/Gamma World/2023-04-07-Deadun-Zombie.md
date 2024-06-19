@@ -1,4 +1,5 @@
 ---
+image: 
 title: Deadun «Zombie»
 creature_name_index: Zombie
 notes: ''

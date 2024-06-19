@@ -1,4 +1,5 @@
 ---
+image: 
 title: Servo Reindeer
 creature_name_index: Servo Reindeer
 notes: ''

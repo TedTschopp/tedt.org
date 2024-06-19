@@ -1,4 +1,5 @@
 ---
+image: 
 title: Miracle Goo
 creature_name_index: Miracle Goo
 notes: ''

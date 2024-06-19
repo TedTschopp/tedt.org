@@ -1,4 +1,5 @@
 ---
+image: 
 title: Spinning Snake «Batslith»
 creature_name_index: Batslith
 notes: ''

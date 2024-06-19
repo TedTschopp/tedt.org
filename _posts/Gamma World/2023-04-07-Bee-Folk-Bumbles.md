@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Bumbles.png
 title: Bee Folk «Bumbles»
 creature_name_index: Bumbles
 notes: ''

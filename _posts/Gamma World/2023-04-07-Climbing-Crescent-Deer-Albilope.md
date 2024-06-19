@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Albilope.png
 title: Climbing, Crescent Deer «Albilope»
 creature_name_index: Albilope
 notes: ''

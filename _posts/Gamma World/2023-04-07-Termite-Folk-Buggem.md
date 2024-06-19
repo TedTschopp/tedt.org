@@ -1,4 +1,5 @@
 ---
+image: 
 title: Termite Folk «Buggem»
 creature_name_index: Buggem
 notes: ''

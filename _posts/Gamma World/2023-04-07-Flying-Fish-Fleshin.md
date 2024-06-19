@@ -1,4 +1,5 @@
 ---
+image: 
 title: Flying Fish «Fleshin»
 creature_name_index: Fleshin
 notes: ''

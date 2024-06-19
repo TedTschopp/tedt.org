@@ -1,4 +1,5 @@
 ---
+image: 
 title: Spiderbot
 creature_name_index: Spiderbot
 notes: ''

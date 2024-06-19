@@ -1,4 +1,5 @@
 ---
+image: 
 title: Nitrodjinn
 creature_name_index: Nitrodjinn
 notes: ''

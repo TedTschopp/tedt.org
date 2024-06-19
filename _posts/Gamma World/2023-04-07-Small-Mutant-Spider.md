@@ -1,4 +1,5 @@
 ---
+image: 
 title: Small Mutant Spider
 creature_name_index: Small Mutant Spider
 notes: ''

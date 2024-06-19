@@ -1,4 +1,5 @@
 ---
+image: 
 title: Farmbot «Ecology Bot - Agricultural»
 creature_name_index: Ecology Bot - Agricultural
 notes: ''

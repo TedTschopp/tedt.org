@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cycloptron
 creature_name_index: Cycloptron
 notes: ''

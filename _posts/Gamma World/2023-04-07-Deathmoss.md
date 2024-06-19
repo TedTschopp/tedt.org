@@ -1,4 +1,5 @@
 ---
+image: 
 title: Deathmoss
 creature_name_index: Deathmoss
 notes: ''

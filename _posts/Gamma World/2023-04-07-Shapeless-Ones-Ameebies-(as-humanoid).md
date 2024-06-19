@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shapeless Ones «Ameebies (as humanoid)»
 creature_name_index: Ameebies (as humanoid)
 notes: ''

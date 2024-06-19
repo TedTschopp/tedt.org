@@ -1,4 +1,5 @@
 ---
+image: 
 title: Lizard Steeds
 creature_name_index: Lizard Steeds
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cuttleimp
 creature_name_index: Cuttleimp
 notes: ''

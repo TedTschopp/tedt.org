@@ -1,4 +1,5 @@
 ---
+image: 
 title: Light Cargolifter «Cargolifter - Light»
 creature_name_index: Cargolifter - Light
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Wargs «Podog»
 creature_name_index: Podog
 notes: ''

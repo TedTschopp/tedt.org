@@ -1,4 +1,5 @@
 ---
+image: 
 title: Razorgrass
 creature_name_index: Razorgrass
 notes: ''

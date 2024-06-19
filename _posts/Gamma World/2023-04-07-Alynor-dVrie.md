@@ -1,4 +1,5 @@
 ---
+image: 
 title: Alynor d'Vrie
 creature_name_index: Alynor d'Vrie
 notes: ''

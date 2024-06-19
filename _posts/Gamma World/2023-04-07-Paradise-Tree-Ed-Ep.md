@@ -1,4 +1,5 @@
 ---
+image: 
 title: Paradise Tree «Ed Ep»
 creature_name_index: Ed Ep
 notes: ''

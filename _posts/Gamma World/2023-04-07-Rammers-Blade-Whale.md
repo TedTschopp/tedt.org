@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Blade Whales.png
 title: Rammers «Blade Whale»
 creature_name_index: Blade Whale
 notes: ''

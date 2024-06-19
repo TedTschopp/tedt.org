@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shell Toad
 creature_name_index: Shell Toad
 notes: ''

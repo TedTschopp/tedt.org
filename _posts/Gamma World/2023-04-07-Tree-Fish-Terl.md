@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tree Fish «Terl»
 creature_name_index: Terl
 notes: ''

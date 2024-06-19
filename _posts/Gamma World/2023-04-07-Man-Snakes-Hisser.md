@@ -1,4 +1,5 @@
 ---
+image: 
 title: Man Snakes «Hisser»
 creature_name_index: Hisser
 notes: ''

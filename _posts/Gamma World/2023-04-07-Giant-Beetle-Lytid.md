@@ -1,4 +1,5 @@
 ---
+image: 
 title: Giant Beetle «Lytid»
 creature_name_index: Lytid
 notes: ''

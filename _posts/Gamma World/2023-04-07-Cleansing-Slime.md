@@ -1,4 +1,5 @@
 ---
+image: 
 title: Cleansing Slime
 creature_name_index: Cleansing Slime
 notes: ''

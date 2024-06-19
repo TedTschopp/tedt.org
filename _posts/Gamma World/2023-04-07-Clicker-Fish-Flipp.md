@@ -1,4 +1,5 @@
 ---
+image: 
 title: Clicker Fish «Flipp»
 creature_name_index: Flipp
 notes: ''

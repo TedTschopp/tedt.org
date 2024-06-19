@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Attercops Abulare.png
 title: Wandering Blackuns «Attercop Abulare»
 creature_name_index: Attercop Abulare
 notes: ''

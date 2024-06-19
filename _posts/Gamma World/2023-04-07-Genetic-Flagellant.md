@@ -1,4 +1,5 @@
 ---
+image: 
 title: Genetic Flagellant
 creature_name_index: Genetic Flagellant
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Cal Thens.png
 title: Flying Rippers «Cal Then»
 creature_name_index: Cal Then
 notes: ''

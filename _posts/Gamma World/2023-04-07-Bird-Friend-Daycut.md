@@ -1,4 +1,5 @@
 ---
+image: 
 title: Bird Friend «Daycut»
 creature_name_index: Daycut
 notes: ''

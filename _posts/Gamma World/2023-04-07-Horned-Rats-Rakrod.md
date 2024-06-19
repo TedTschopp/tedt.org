@@ -1,4 +1,5 @@
 ---
+image: 
 title: Horned Rats «Rakrod»
 creature_name_index: Rakrod
 notes: ''

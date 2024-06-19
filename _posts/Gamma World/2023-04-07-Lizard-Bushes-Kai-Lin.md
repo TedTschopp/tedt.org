@@ -1,4 +1,5 @@
 ---
+image: 
 title: Lizard Bushes «Kai Lin»
 creature_name_index: Kai Lin
 notes: Fixed

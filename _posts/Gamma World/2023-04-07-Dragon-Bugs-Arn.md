@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Arns.png
 title: Dragon Bugs «Arn»
 creature_name_index: Arn
 notes: ''

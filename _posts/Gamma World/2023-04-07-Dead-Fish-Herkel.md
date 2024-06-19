@@ -1,4 +1,5 @@
 ---
+image: 
 title: Dead Fish «Herkel»
 creature_name_index: Herkel
 notes: ''

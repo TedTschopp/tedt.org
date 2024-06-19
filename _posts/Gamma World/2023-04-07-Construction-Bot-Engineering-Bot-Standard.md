@@ -1,4 +1,5 @@
 ---
+image: 
 title: Construction Bot «Engineering Bot, Standard»
 creature_name_index: Engineering Bot, Standard
 notes: ''

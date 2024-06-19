@@ -1,4 +1,5 @@
 ---
+image: 
 title: She Who Consumes «T'Brath»
 creature_name_index: T'Brath
 notes: ''

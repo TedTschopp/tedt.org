@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Brutorz.png
 title: Big Walkers «Brutorz»
 creature_name_index: Brutorz
 notes: ''

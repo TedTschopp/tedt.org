@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Ark.png
 title: Man with Tails «Anfal»
 creature_name_index: Anfal
 notes: ''

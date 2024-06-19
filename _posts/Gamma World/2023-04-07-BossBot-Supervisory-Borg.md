@@ -1,4 +1,5 @@
 ---
+image: 
 title: BossBot «Supervisory Borg»
 creature_name_index: Supervisory Borg
 notes: ''

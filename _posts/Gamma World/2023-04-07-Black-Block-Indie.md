@@ -1,4 +1,5 @@
 ---
+image: 
 title: Black Block «Indie»
 creature_name_index: Indie
 notes: ''

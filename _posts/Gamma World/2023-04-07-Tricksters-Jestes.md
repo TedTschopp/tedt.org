@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tricksters «Jestes»
 creature_name_index: Jestes
 notes: ''

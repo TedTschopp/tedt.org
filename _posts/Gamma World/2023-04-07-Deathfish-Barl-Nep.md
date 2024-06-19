@@ -1,4 +1,5 @@
 ---
+image: 
 title: Deathfish «Barl Nep»
 creature_name_index: Barl Nep
 notes: ''

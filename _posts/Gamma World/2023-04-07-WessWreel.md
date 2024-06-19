@@ -1,4 +1,5 @@
 ---
+image: 
 title: WessWreel
 creature_name_index: WessWreel
 notes: ''

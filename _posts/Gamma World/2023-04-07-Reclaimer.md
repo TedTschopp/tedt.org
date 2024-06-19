@@ -1,4 +1,5 @@
 ---
+image: 
 title: Reclaimer
 creature_name_index: Reclaimer
 notes: ''

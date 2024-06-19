@@ -1,4 +1,5 @@
 ---
+image: 
 title: Jackalopes «Hopper»
 creature_name_index: Hopper
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Fear Deer «Chessex»
 creature_name_index: Chessex
 notes: ''

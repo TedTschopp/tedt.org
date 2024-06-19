@@ -1,4 +1,5 @@
 ---
+image: 
 title: Salt Spider «Sea Spider»
 creature_name_index: Sea Spider
 notes: ''

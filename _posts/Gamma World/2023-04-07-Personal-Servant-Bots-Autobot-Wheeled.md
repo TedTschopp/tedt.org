@@ -1,4 +1,5 @@
 ---
+image: 
 title: Personal Servant Bots «Autobot, Wheeled»
 creature_name_index: Autobot, Wheeled
 notes: ''

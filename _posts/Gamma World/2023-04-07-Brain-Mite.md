@@ -1,4 +1,5 @@
 ---
+image: 
 title: Brain Mite
 creature_name_index: Brain Mite
 notes: ''

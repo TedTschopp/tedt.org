@@ -1,4 +1,5 @@
 ---
+image: 
 title: Green Man «Gren»
 creature_name_index: Gren
 notes: ''

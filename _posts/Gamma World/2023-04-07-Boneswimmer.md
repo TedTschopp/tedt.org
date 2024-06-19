@@ -1,4 +1,5 @@
 ---
+image: 
 title: Boneswimmer
 creature_name_index: Boneswimmer
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Oscar «Scar»
 creature_name_index: Scar
 notes: ''

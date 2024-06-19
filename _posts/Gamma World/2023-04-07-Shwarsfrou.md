@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shwarsfrou
 creature_name_index: Shwarsfrou
 notes: ''

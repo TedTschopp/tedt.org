@@ -1,4 +1,5 @@
 ---
+image: 
 title: Darel's Brother «Darel»
 creature_name_index: Darel
 notes: ''

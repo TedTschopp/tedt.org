@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Android.png
 title: Warrior «Android»
 creature_name_index: Android
 notes: ''

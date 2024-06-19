@@ -1,4 +1,5 @@
 ---
+image: 
 title: Octhofus, Kianth
 creature_name_index: Octhofus, Kianth
 notes: ''

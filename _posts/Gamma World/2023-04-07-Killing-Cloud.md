@@ -1,4 +1,5 @@
 ---
+image: 
 title: Killing Cloud
 creature_name_index: Killing Cloud
 notes: ''

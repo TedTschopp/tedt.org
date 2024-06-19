@@ -1,4 +1,5 @@
 ---
+image: 
 title: Nymph «Cid'Tal»
 creature_name_index: Cid'Tal
 notes: ''

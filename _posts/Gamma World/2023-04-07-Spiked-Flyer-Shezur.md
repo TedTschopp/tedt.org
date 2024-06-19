@@ -1,4 +1,5 @@
 ---
+image: 
 title: Spiked Flyer «Shez'ur»
 creature_name_index: Shez'ur
 notes: ''

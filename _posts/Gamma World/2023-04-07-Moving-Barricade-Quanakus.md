@@ -1,4 +1,5 @@
 ---
+image: 
 title: Moving Barricade «Quanakus»
 creature_name_index: Quanakus
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Plague Beetle «Nurglez»
 creature_name_index: Nurglez
 notes: ''

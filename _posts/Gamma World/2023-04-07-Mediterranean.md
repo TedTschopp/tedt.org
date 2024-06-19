@@ -1,4 +1,5 @@
 ---
+image: 
 title: Mediterranean
 creature_name_index: Mediterranean
 notes: ''

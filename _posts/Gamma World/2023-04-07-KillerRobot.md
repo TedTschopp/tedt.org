@@ -1,4 +1,5 @@
 ---
+image: 
 title: KillerRobot
 creature_name_index: KillerRobot
 notes: ''

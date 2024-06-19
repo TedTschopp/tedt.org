@@ -1,4 +1,5 @@
 ---
+image: 
 title: Watery Slime «Shinarl»
 creature_name_index: Shinarl
 notes: ''

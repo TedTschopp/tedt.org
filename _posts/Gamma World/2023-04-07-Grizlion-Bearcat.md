@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Bearcat.png
 title: Grizlion «Bearcat»
 creature_name_index: Bearcat
 notes: ''

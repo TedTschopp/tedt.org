@@ -1,4 +1,5 @@
 ---
+image: 
 title: Lunatic Eater
 creature_name_index: Lunatic Eater
 notes: ''

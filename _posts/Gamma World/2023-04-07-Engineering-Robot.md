@@ -1,4 +1,5 @@
 ---
+image: 
 title: Engineering Robot
 creature_name_index: Engineering Robot
 notes: ''

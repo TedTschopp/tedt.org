@@ -1,4 +1,5 @@
 ---
+image: 
 title: Smoke Caterpillar
 creature_name_index: Smoke Caterpillar
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Captain Gelmar
 creature_name_index: Captain Gelmar
 notes: ''

@@ -1,4 +1,5 @@
 ---
+image: 
 title: Nuts «Rakee»
 creature_name_index: Rakee
 notes: ''

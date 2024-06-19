@@ -1,4 +1,5 @@
 ---
+image: 
 title: Tibenpayher
 creature_name_index: Tibenpayher
 notes: ''

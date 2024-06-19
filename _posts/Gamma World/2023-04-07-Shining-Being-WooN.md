@@ -1,4 +1,5 @@
 ---
+image: 
 title: Shining Being «Woo'N»
 creature_name_index: Woo'N
 notes: ''

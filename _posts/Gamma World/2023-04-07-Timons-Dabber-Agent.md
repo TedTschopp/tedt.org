@@ -1,4 +1,5 @@
 ---
+image: 
 title: Timon's Dabber Agent
 creature_name_index: Timon's Dabber Agent
 notes: ''

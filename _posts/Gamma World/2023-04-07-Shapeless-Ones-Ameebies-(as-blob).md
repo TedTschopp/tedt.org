@@ -1,4 +1,5 @@
 ---
+image: /RPG/MCC-GW/images/Monster-Manual/Ameebies as humanoid.png
 title: Shapeless Ones «Ameebies (as blob)»
 creature_name_index: Ameebies (as blob)
 notes: ''
