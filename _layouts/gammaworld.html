@@ -68,7 +68,7 @@
                               <h2 class="MCC">Creature Name: {{ page.creature_name }}</h2>
                          {% endif %}
 
-                         <img style="float: right;" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/{{ page.creature_name }}.webp" width="12.5%" onError="this.onerror=null;this.src='{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/noimage.webp';">
+                         <img style="float: right;" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/{{ page.creature_name }}.png" width="12.5%" onError="this.onerror=null;this.src='{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error ' & ((Math.random()*6)+(Math.random()*6)+2) &'.png';">
 
                          {% if page.author != "" %}
                               <strong>Reported By:</strong> {{ page.author }}
