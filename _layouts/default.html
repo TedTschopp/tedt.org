@@ -277,12 +277,8 @@
                             </div>
 
                             <div class="card-footer p-0">
-                              {% assign downcased_categories = "" | split: "," %}
-                              {% for category in post.categories %}
-                                {% assign downcased_categories = downcased_categories | push: category | downcase %}
-                              {% endfor %}
-                              {% assign downcased_category_data_title = category_data_title | downcase %}
-                              {% assign filtered_posts = site.posts | where_exp: "post", "downcased_categories contains downcased_category_data_title" | sort: "date" | reverse %}                              {% for post in filtered_posts limit: 3 %}
+                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" | sort: "date" | reverse %}
+                              {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">
                                     {% if post.image %}
