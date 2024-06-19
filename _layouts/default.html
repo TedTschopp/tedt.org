@@ -104,8 +104,8 @@
                   <h3 class="text-muted card-subtitle h5 mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
                   <p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
-                <div class="card-footer p-4 py-3 h-100">
-                  {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" %}
+                <div class="card-footer p-0 py-0 h-100">
+                  {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" | sort: "date" | reverse %}
                   {% for post in posts-drafts limit:3 %}
                     {% comment %}
                     <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
@@ -277,7 +277,7 @@
                             </div>
 
                             <div class="card-footer p-0">
-                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" %}
+                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories | downcase contains category_data_title | downcase" | sort: "date" | reverse %}
                               {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">

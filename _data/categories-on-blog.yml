@@ -6,12 +6,12 @@
 - category: books
   title: "Books"
   subtitle: "Reading for the Adventurous Mind"
-  description: "In-depth reviews, discussions, and reflections on books that ignite the imagination and inspire great storytelling. Explore a variety of genres and authors."
+  description: "Thoughts, ideas, and reflections on books that ignite the imagination and inspire great thoughts. Explore a variety of genres and authors."
   image: "/img/categories/books.webp"
 - category: communications
   title: "Communications"
   subtitle: "Staying Connected in a Disconnected World"
-  description: "Essays, tips, and strategies on effective communication in the digital age. Learn how to foster meaningful connections and enhance your interactions."
+  description: "Essays, tips, and strategies on effective communication in our age. Learn how to foster meaningful connections and enhance your interactions."
   image: "/img/categories/communications.webp"
 - category: computers
   title: "Computers"
@@ -28,11 +28,6 @@
   subtitle: "The Quintessential Role Playing Game"
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
   image: "/img/categories/dungeons-dragons.webp"
-- category: folklore
-  title: "Folklore"
-  subtitle: "Tales and Legends from Around the World"
-  description: "Delving into myths, legends, and folklore from various cultures. Enrich your storytelling with tales of gods, heroes, and mythical creatures from around the globe."
-  image: "/img/categories/folklore.webp"
 - category: gamma-world
   title: "Gamma World"
   subtitle: "Post-Apocalyptic Role Playing"
