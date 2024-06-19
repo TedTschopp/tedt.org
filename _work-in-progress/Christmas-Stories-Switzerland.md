@@ -1,0 +1,13 @@
+Once upon a time, in a small village nestled among the Swiss Alps, there lived a man named Père Fouettard. He was known far and wide for his grim and frightful looks. With a long, scraggly beard and a worn, tattered cloak, he roamed the village with a heavy switch in hand.
+
+In days of yore, Père Fouettard was a butcher, known for his skill and swiftness with the blade. The most well-known tale of his dark deeds dates back to the year 1252. On a bleak winter’s night, three boys, appearing wealthy and on their way to enroll in a religious boarding school, stumbled upon his shop. Seeing their fine clothes and hopeful faces, Père Fouettard, along with his wife, saw only an opportunity to fill their coffers. In a fit of greed, they captured the boys, drugged them, and with chilling cruelty, slit their throats. They then cut the children into pieces and stewed them in a barrel.
+
+Word of the missing children spread through the village like wildfire, and soon, Saint Nicholas, the kind-hearted bringer of gifts, heard of their plight. Saddened by the wickedness that had befallen the village, he set out to find the children and bring them to safety.
+
+With his trusty staff and a lantern to light his way, Saint Nicholas journeyed through the snow-laden woods. He found Père Fouettard’s shop and, peering through the frosty window, saw the grisly scene within. Without a moment’s delay, he burst through the door and confronted the wicked butcher and his wife.
+
+Seeing the saint’s holy light and feeling the weight of their sins, Père Fouettard and his wife fell to their knees, begging for mercy. Saint Nicholas, ever wise and just, freed the children from their grim fate, bringing them back to life with a touch of his holy staff. Saint Nicholas, enraged by the heinous crime, forced Père Fouettard to become his assistant as punishment, ensuring that he would spend his days making amends for his past deeds by offering him a chance for redemption by helping Saint Nicholas on his yearly travels.  Père would bring warnings to the children of the land.
+
+From that day forth, Père Fouettard walked beside Saint Nicholas, his switch now a symbol of justice rather than cruelty. Together, they traveled from village to village, Saint Nicholas rewarding the good children with gifts and Père Fouettard reminding the wayward ones to mend their ways, lest they face the sting of his switch.
+
+And so, the tale of Père Fouettard became a lesson for all, a story of sin and redemption, of the power of kindness and the hope for change. In the snowy villages of the Swiss Alps, children listened wide-eyed by the hearth, knowing that while Saint Nicholas brought joy, Père Fouettard was always there, a stern reminder to be good and true.
