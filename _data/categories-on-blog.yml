@@ -38,11 +38,6 @@
   subtitle: "Generic Universal RolePlaying System"
   description: "Explorations, adventures, and guides using the versatile GURPS system. Learn how to create dynamic and flexible campaigns that can fit any setting."
   image: "/img/categories/gurps.webp"
-- category: home
-  title: "Home"
-  subtitle: "The Heart of the Website"
-  description: "Welcome to the hub of all content, where adventures, stories, and resources begin. Find links to all major sections and get a taste of what's to come."
-  image: "/img/categories/home.webp"
 - category: maps
   title: "Maps"
   subtitle: "Guiding Your Adventures"
@@ -88,11 +83,6 @@
   subtitle: "Thinking Deeply"
   description: "In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire."
   image: "/img/categories/philosophy.webp"
-- category: projects
-  title: "Projects"
-  subtitle: "What I'm Working On"
-  description: "Updates, details, and insights on current projects. Follow along with ongoing creative endeavors and see how ideas develop into finished works."
-  image: "/img/categories/projects.webp"
 - category: quote
   title: "Quotes"
   subtitle: "Words of Wisdom"
