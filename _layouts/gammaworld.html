@@ -65,15 +65,15 @@
 
                          {% if page.image contains "/RPG/MCC-GW/images/Monster-Manual/" %}
                               <div class="position-relative col-lg-3 float-start col-12 pe-lg-4">
-                                   <img style="width: 100%;"  src="{{ site.siteurl }}{{ page.image }}" width="12.5%">
+                                   <img style="width: 100%;"  src="{{ site.siteurl }}{{ page.image }}">
                               </div>     
                          {% else %}
                               {% assign current_second = "now" | date: "%S" %}
                               {% assign random_number = current_second | modulo: 12 | plus: 1 %}
 
-                              <div class="position-relative col-12 col-lg-3 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
+                              <div class="position-relative col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
                                    <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
-                                   <p class="position-absolute text-danger fs-6 m-0">
+                                   <p class="position-absolute text-danger fs-6 m-0" style="text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
                                    {% if random_number == 1 %}
                                         Image file not found.
                                    {% elsif random_number == 2 %}
