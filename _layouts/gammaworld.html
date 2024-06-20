@@ -390,6 +390,7 @@
 
 
                 {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'source' %}
+                <div class="clearfix">
                 <h2 class="MCC">Additional Creatures</h2><div><ul class="references">
 
                 {% assign PreviousBestiarySource = "" %}
@@ -435,7 +436,7 @@
                          {% endif %}
                        {% endif %}
                 {% endfor %}
-               </ol></div>
+               </ol></div></div>   
 
 
                 <div class="row">
