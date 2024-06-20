@@ -69,7 +69,7 @@
                               <h2 class="MCC">Creature Name: {{ page.creature_name }}</h2>
                          {% endif %}
 
-                         {% if page.image != ""  %}
+                         {% if page.image contains "/RPG/MCC-GW/images/Monster-Manual/" %}
                               <img style="float: right;" src="{{ site.siteurl }}{{ page.image }}" width="12.5%">     
                          {% else %}
                               {% assign current_second = "now" | date: "%S" %}
