@@ -1,6 +1,5 @@
 ---
-image:
-title: Underwater tracking drone (cyber) «Manhunter - Underwater Drone»
+image: ''title: Underwater tracking drone (cyber) «Manhunter - Underwater Drone»
 creature_name_index: Manhunter - Underwater Drone
 notes: ''
 genericname: ''

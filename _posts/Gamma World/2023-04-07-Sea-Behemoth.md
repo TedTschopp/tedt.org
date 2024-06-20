@@ -1,6 +1,5 @@
 ---
-image:
-title: Sea Behemoth
+image: ''title: Sea Behemoth
 creature_name_index: Sea Behemoth
 notes: ''
 genericname: ''

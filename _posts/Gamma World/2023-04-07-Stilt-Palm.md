@@ -1,6 +1,5 @@
 ---
-image:
-title: Stilt Palm
+image: ''title: Stilt Palm
 creature_name_index: Stilt Palm
 notes: ''
 genericname: ''

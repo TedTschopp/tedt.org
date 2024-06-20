@@ -1,6 +1,5 @@
 ---
-image:
-title: Warbot «Warbot»
+image: ''title: Warbot «Warbot»
 creature_name_index: Warbot
 notes: ''
 genericname: ''

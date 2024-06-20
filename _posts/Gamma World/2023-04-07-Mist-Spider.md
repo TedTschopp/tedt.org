@@ -1,6 +1,5 @@
 ---
-image:
-title: Mist Spider
+image: ''title: Mist Spider
 creature_name_index: Mist Spider
 notes: ''
 genericname: ''

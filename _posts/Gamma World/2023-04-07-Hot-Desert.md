@@ -1,6 +1,5 @@
 ---
-image:
-title: Hot Desert
+image: ''title: Hot Desert
 creature_name_index: Hot Desert
 notes: ''
 genericname: ''

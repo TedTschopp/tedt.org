@@ -1,6 +1,5 @@
 ---
-image:
-title: Cave Dabbers «Bigoon»
+image: ''title: Cave Dabbers «Bigoon»
 creature_name_index: Bigoon
 notes: ''
 genericname: ''

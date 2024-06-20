@@ -1,6 +1,5 @@
 ---
-image:
-title: Transport Bot «Cargo Transport - Large»
+image: ''title: Transport Bot «Cargo Transport - Large»
 creature_name_index: Cargo Transport - Large
 notes: ''
 genericname: ''

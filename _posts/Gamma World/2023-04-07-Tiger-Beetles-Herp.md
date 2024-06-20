@@ -1,6 +1,5 @@
 ---
-image:
-title: Tiger Beetles «Herp»
+image: ''title: Tiger Beetles «Herp»
 creature_name_index: Herp
 notes: ''
 genericname: ''

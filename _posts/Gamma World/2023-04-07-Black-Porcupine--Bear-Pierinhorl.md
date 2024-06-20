@@ -1,6 +1,5 @@
 ---
-image:
-title: Black Porcupine / Bear «Pierinhorl»
+image: ''title: Black Porcupine / Bear «Pierinhorl»
 creature_name_index: Pierinhorl
 notes: ''
 genericname: ''

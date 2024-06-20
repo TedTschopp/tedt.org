@@ -1,6 +1,5 @@
 ---
-image:
-title: Major Konnar
+image: ''title: Major Konnar
 creature_name_index: Major Konnar
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Master Dragon «Sergon»
+image: ''title: Master Dragon «Sergon»
 creature_name_index: Sergon
 notes: ''
 genericname: ''

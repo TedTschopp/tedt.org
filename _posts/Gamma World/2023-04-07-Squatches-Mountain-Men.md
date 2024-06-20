@@ -1,6 +1,5 @@
 ---
-image:
-title: Squatches «Mountain Men»
+image: ''title: Squatches «Mountain Men»
 creature_name_index: Mountain Men
 notes: ''
 genericname: y

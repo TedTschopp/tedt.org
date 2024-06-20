@@ -1,6 +1,5 @@
 ---
-image:
-title: Ribbon Snake «Irnslith»
+image: ''title: Ribbon Snake «Irnslith»
 creature_name_index: Irnslith
 notes: ''
 genericname: ''

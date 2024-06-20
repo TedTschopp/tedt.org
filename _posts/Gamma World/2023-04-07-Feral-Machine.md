@@ -1,6 +1,5 @@
 ---
-image:
-title: Feral Machine
+image: ''title: Feral Machine
 creature_name_index: Feral Machine
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Sergeant Dimin
+image: ''title: Sergeant Dimin
 creature_name_index: Sergeant Dimin
 notes: ''
 genericname: ''

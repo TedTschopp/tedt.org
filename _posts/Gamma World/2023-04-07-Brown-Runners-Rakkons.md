@@ -1,6 +1,5 @@
 ---
-image:
-title: Brown Runners «Rakkons»
+image: ''title: Brown Runners «Rakkons»
 creature_name_index: Rakkons
 notes: ''
 genericname: ''

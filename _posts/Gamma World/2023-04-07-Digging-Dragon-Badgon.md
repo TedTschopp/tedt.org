@@ -1,6 +1,5 @@
 ---
-image:
-title: Digging Dragon «Badgon»
+image: ''title: Digging Dragon «Badgon»
 creature_name_index: Badgon
 notes: ''
 genericname: ''

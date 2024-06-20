@@ -1,6 +1,5 @@
 ---
-image:
-title: Thnder Clappers «Xloes»
+image: ''title: Thnder Clappers «Xloes»
 creature_name_index: Xloes
 notes: ''
 genericname: ''

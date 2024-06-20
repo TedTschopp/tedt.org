@@ -1,6 +1,5 @@
 ---
-image:
-title: Bot Bashers «Spitter»
+image: ''title: Bot Bashers «Spitter»
 creature_name_index: Spitter
 notes: ''
 genericname: ''

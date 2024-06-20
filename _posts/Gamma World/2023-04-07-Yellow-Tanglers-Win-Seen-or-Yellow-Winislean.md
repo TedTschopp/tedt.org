@@ -1,6 +1,5 @@
 ---
-image:
-title: Yellow Tanglers «Win Seen or Yellow Winislean»
+image: ''title: Yellow Tanglers «Win Seen or Yellow Winislean»
 creature_name_index: Win Seen or Yellow Winislean
 notes: ''
 genericname: ''

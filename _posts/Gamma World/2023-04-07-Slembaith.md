@@ -1,6 +1,5 @@
 ---
-image:
-title: Slembaith
+image: ''title: Slembaith
 creature_name_index: Slembaith
 notes: ''
 genericname: ''

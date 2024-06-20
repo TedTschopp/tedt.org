@@ -1,6 +1,5 @@
 ---
-image:
-title: Bristle Snake «Chotslith, Large»
+image: ''title: Bristle Snake «Chotslith, Large»
 creature_name_index: Chotslith, Large
 notes: ''
 genericname: ''

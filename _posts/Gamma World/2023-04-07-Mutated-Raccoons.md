@@ -1,6 +1,5 @@
 ---
-image:
-title: Mutated Raccoons
+image: ''title: Mutated Raccoons
 creature_name_index: Mutated Raccoons
 notes: ''
 genericname: ''

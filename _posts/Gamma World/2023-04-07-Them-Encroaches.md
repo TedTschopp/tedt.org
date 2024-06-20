@@ -1,6 +1,5 @@
 ---
-image:
-title: Them «Encroaches»
+image: ''title: Them «Encroaches»
 creature_name_index: Encroaches
 notes: ''
 genericname: ''

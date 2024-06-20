@@ -1,6 +1,5 @@
 ---
-image:
-title: Leapers «Kreel Torrn»
+image: ''title: Leapers «Kreel Torrn»
 creature_name_index: Kreel Torrn
 notes: ''
 genericname: ''

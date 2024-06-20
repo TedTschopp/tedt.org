@@ -1,6 +1,5 @@
 ---
-image:
-title: Fire Eater
+image: ''title: Fire Eater
 creature_name_index: Fire Eater
 notes: ''
 genericname: ''

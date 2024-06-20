@@ -1,6 +1,5 @@
 ---
-image:
-title: Oscar «Scar»
+image: ''title: Oscar «Scar»
 creature_name_index: Scar
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Red Living Mold «Wed l'Xon»
+image: ''title: Red Living Mold «Wed l'Xon»
 creature_name_index: Wed l'Xon
 notes: ''
 genericname: ''

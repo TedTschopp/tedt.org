@@ -1,6 +1,5 @@
 ---
-image:
-title: Land Sharks «Sep, Snow»
+image: ''title: Land Sharks «Sep, Snow»
 creature_name_index: Sep, Snow
 notes: ''
 genericname: ''

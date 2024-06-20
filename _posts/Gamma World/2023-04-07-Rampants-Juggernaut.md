@@ -1,6 +1,5 @@
 ---
-image:
-title: Rampants «Juggernaut»
+image: ''title: Rampants «Juggernaut»
 creature_name_index: Juggernaut
 notes: Fixed
 genericname: ''

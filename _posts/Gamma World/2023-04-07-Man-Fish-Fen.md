@@ -1,6 +1,5 @@
 ---
-image:
-title: Man-Fish «Fen»
+image: ''title: Man-Fish «Fen»
 creature_name_index: Fen
 notes: ''
 genericname: ''

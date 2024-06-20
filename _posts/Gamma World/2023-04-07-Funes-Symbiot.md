@@ -1,6 +1,5 @@
 ---
-image:
-title: Funes' Symbiot
+image: ''title: Funes' Symbiot
 creature_name_index: Funes' Symbiot
 notes: ''
 genericname: ''

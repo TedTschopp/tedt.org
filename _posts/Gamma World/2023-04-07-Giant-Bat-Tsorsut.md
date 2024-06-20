@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Bat «Tsorsut»
+image: ''title: Giant Bat «Tsorsut»
 creature_name_index: Tsorsut
 notes: ''
 genericname: ''

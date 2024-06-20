@@ -1,6 +1,5 @@
 ---
-image:
-title: Deathmoss
+image: ''title: Deathmoss
 creature_name_index: Deathmoss
 notes: ''
 genericname: ''

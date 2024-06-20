@@ -1,6 +1,5 @@
 ---
-image:
-title: Spider Lil
+image: ''title: Spider Lil
 creature_name_index: Spider Lil
 notes: ''
 genericname: ''

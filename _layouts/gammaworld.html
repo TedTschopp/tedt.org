@@ -106,6 +106,10 @@
                          {% if page.author != "" %}
                               <strong>Reported By:</strong> {{ page.author }}
                          {% else %}
+                              {% if page.name != "" %}
+                                   <strong>Reported By:</strong> {{ page.author }}
+                              {% else %}
+
                               <strong>Reported By:</strong>
                               
                                    {% assign answers = "" | split: "%" %}
@@ -119,6 +123,7 @@
                                    {% assign selectedAnswer = answers | sample %}
                                    
                                    {{ selectedAnswer }}
+                              {% endif %}
 
                          {% endif %}
                          {% if page.source != "" %}
@@ -394,20 +399,17 @@
                          {% if Bestiary.source != PreviousBestiarySource %}
                               </ul></div>
                               <h3 style="color: black">{{Bestiary.source}}</h3>
-                              <div style="break-inside: avoid-page;
-                                   column-width: 30em;
-                                   column-fill: balance;
-                                   column-gap: 2em;
-                                   column-rule: 1px #202122;
-                                   color: #202122;
-                                   direction: ltr;
-                                   display: block;
-                                   font-size: 1em;
-                                   line-height: 1.5em;
-                                   margin-bottom: .5em;
-                                   margin-top: .25em;
-                                   width: 100%;">
-                                   <ol style="list-style-type: none;">
+                              <div class="text-dark w-100 mb-2 mt-1" 
+                                   style="break-inside: avoid-page; 
+                                          column-width: 30em; 
+                                          column-fill: balance; 
+                                          column-gap: 2em; 
+                                          column-rule: 1px #202122; 
+                                          direction: ltr; 
+                                          display: block; 
+                                          font-size: 1em; 
+                                          line-height: 1.5em;">
+                                   <ol class="list-unstyled">
                               {% assign PreviousBestiarySource = Bestiary.source %}
                          {% endif %}
 

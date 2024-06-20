@@ -1,6 +1,5 @@
 ---
-image:
-title: Energy Moth
+image: ''title: Energy Moth
 creature_name_index: Energy Moth
 notes: ''
 genericname: ''

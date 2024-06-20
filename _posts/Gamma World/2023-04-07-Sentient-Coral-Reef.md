@@ -1,6 +1,5 @@
 ---
-image:
-title: Sentient Coral Reef
+image: ''title: Sentient Coral Reef
 creature_name_index: Sentient Coral Reef
 notes: ''
 genericname: ''

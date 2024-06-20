@@ -1,6 +1,5 @@
 ---
-image:
-title: Mind Singers «Psirens»
+image: ''title: Mind Singers «Psirens»
 creature_name_index: Psirens
 notes: ''
 genericname: ''

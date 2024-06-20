@@ -1,6 +1,5 @@
 ---
-image:
-title: Magilla «Ape, Carnivorous»
+image: ''title: Magilla «Ape, Carnivorous»
 creature_name_index: Ape, Carnivorous
 notes: ''
 genericname: y

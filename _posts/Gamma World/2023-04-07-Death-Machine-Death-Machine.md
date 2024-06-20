@@ -1,6 +1,5 @@
 ---
-image:
-title: Death Machine «Death Machine»
+image: ''title: Death Machine «Death Machine»
 creature_name_index: Death Machine
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Blue Snail «Slimer»
+image: ''title: Blue Snail «Slimer»
 creature_name_index: Slimer
 notes: ''
 genericname: ''

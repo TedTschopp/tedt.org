@@ -1,6 +1,5 @@
 ---
-image:
-title: Froghemoth
+image: ''title: Froghemoth
 creature_name_index: Froghemoth
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Teacher Bot «Automaton»
+image: ''title: Teacher Bot «Automaton»
 creature_name_index: Automaton
 notes: ''
 genericname: ''

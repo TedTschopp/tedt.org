@@ -1,6 +1,5 @@
 ---
-image:
-title: Bird Rulers «Carrday»
+image: ''title: Bird Rulers «Carrday»
 creature_name_index: Carrday
 notes: ''
 genericname: ''

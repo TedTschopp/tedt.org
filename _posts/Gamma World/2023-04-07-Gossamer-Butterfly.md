@@ -1,6 +1,5 @@
 ---
-image:
-title: Gossamer Butterfly
+image: ''title: Gossamer Butterfly
 creature_name_index: Gossamer Butterfly
 notes: ''
 genericname: ''

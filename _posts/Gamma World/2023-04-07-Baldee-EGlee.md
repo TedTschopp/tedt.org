@@ -1,6 +1,5 @@
 ---
-image:
-title: Baldee «E'Glee»
+image: ''title: Baldee «E'Glee»
 creature_name_index: E'Glee
 notes: ''
 genericname: ''

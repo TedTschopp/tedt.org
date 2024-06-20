@@ -1,6 +1,5 @@
 ---
-image:
-title: Iron Beast «Smovbai»
+image: ''title: Iron Beast «Smovbai»
 creature_name_index: Smovbai
 notes: ''
 genericname: ''

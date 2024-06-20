@@ -1,6 +1,5 @@
 ---
-image:
-title: Invisible Glider «Sre'froth»
+image: ''title: Invisible Glider «Sre'froth»
 creature_name_index: Sre'froth
 notes: ''
 genericname: ''

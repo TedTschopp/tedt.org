@@ -1,6 +1,5 @@
 ---
-image:
-title: Drake Tribian
+image: ''title: Drake Tribian
 creature_name_index: Drake Tribian
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Glowers «Radiation Zombies»
+image: ''title: Glowers «Radiation Zombies»
 creature_name_index: Radiation Zombies
 notes: ''
 genericname: ''

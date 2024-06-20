@@ -1,6 +1,5 @@
 ---
-image:
-title: Green Living Mold «Gri'xon»
+image: ''title: Green Living Mold «Gri'xon»
 creature_name_index: Gri'xon
 notes: ''
 genericname: ''

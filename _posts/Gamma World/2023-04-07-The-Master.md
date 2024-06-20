@@ -1,6 +1,5 @@
 ---
-image:
-title: The Master
+image: ''title: The Master
 creature_name_index: The Master
 notes: ''
 genericname: ''

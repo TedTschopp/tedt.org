@@ -1,6 +1,5 @@
 ---
-image:
-title: Propeller «Whirrzler»
+image: ''title: Propeller «Whirrzler»
 creature_name_index: Whirrzler
 notes: ''
 genericname: ''

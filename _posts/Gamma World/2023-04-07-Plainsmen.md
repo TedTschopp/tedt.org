@@ -1,6 +1,5 @@
 ---
-image:
-title: Plainsmen
+image: ''title: Plainsmen
 creature_name_index: Plainsmen
 notes: ''
 genericname: ''

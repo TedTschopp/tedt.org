@@ -1,6 +1,5 @@
 ---
-image:
-title: Communa Larva
+image: ''title: Communa Larva
 creature_name_index: Communa Larva
 notes: ''
 genericname: ''

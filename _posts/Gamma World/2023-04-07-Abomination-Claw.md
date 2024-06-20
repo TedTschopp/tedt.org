@@ -1,6 +1,5 @@
 ---
-image:
-title: Abomination Claw
+image: ''title: Abomination Claw
 creature_name_index: Abomination Claw
 notes: ''
 genericname: Yes

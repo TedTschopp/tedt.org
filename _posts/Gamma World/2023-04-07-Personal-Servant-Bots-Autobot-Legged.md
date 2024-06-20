@@ -1,6 +1,5 @@
 ---
-image:
-title: Personal Servant Bots «Autobot, Legged»
+image: ''title: Personal Servant Bots «Autobot, Legged»
 creature_name_index: Autobot, Legged
 notes: ''
 genericname: y

@@ -1,6 +1,5 @@
 ---
-image:
-title: Stupmers «Stuhumphagas»
+image: ''title: Stupmers «Stuhumphagas»
 creature_name_index: Stuhumphagas
 notes: ''
 genericname: ''

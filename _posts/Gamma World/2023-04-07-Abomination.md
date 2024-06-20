@@ -1,6 +1,5 @@
 ---
-image:
-title: Abomination
+image: ''title: Abomination
 creature_name_index: Abomination
 notes: ''
 genericname: Yes

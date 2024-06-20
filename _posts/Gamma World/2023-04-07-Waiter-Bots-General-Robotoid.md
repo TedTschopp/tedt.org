@@ -1,6 +1,5 @@
 ---
-image:
-title: Waiter Bots «General Robotoid»
+image: ''title: Waiter Bots «General Robotoid»
 creature_name_index: General Robotoid
 notes: ''
 genericname: ''

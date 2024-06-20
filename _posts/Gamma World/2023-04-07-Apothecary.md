@@ -1,6 +1,5 @@
 ---
-image:
-title: Apothecary
+image: ''title: Apothecary
 creature_name_index: Apothecary
 notes: ''
 genericname: y

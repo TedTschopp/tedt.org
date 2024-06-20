@@ -1,6 +1,5 @@
 ---
-image:
-title: Boneswimmer
+image: ''title: Boneswimmer
 creature_name_index: Boneswimmer
 notes: ''
 genericname: ''

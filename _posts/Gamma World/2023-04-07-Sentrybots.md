@@ -1,6 +1,5 @@
 ---
-image:
-title: Sentrybots
+image: ''title: Sentrybots
 creature_name_index: Sentrybots
 notes: ''
 genericname: ''

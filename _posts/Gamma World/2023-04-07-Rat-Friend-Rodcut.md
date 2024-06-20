@@ -1,6 +1,5 @@
 ---
-image:
-title: Rat Friend «Rodcut»
+image: ''title: Rat Friend «Rodcut»
 creature_name_index: Rodcut
 notes: ''
 genericname: ''

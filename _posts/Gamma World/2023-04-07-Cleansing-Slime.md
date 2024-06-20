@@ -1,6 +1,5 @@
 ---
-image:
-title: Cleansing Slime
+image: ''title: Cleansing Slime
 creature_name_index: Cleansing Slime
 notes: ''
 genericname: ''

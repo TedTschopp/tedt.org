@@ -1,6 +1,5 @@
 ---
-image:
-title: Photo-Shop Bot
+image: ''title: Photo-Shop Bot
 creature_name_index: Photo-Shop Bot
 notes: ''
 genericname: ''

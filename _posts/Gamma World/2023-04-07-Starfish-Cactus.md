@@ -1,6 +1,5 @@
 ---
-image:
-title: Starfish Cactus
+image: ''title: Starfish Cactus
 creature_name_index: Starfish Cactus
 notes: ''
 genericname: ''

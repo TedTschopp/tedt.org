@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Moth «Blassut»
+image: ''title: Giant Moth «Blassut»
 creature_name_index: Blassut
 notes: ''
 genericname: ''

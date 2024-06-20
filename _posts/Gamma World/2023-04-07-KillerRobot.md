@@ -1,6 +1,5 @@
 ---
-image:
-title: KillerRobot
+image: ''title: KillerRobot
 creature_name_index: KillerRobot
 notes: ''
 genericname: ''

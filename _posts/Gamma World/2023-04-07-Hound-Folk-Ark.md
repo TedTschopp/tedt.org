@@ -1,6 +1,5 @@
 ---
-image:
-title: Hound Folk «Ark»
+image: ''title: Hound Folk «Ark»
 creature_name_index: Ark
 notes: ''
 genericname: y

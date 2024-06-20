@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Flying White Cat
+image: ''title: Giant Flying White Cat
 creature_name_index: Giant Flying White Cat
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Villain that Hides and Kills «Vene'aMub»
+image: ''title: Villain that Hides and Kills «Vene'aMub»
 creature_name_index: Vene'aMub
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Phoenix Hedge «Frid Esk»
+image: ''title: Phoenix Hedge «Frid Esk»
 creature_name_index: Frid Esk
 notes: ''
 genericname: ''

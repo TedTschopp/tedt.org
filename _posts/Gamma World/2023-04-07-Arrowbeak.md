@@ -1,6 +1,5 @@
 ---
-image:
-title: Arrowbeak
+image: ''title: Arrowbeak
 creature_name_index: Arrowbeak
 notes: ''
 genericname: y

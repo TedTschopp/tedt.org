@@ -1,6 +1,5 @@
 ---
-image:
-title: Land Crep «Crep, Red»
+image: ''title: Land Crep «Crep, Red»
 creature_name_index: Crep, Red
 notes: ''
 genericname: ''

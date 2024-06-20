@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Sea Slug «Slake»
+image: ''title: Giant Sea Slug «Slake»
 creature_name_index: Slake
 notes: ''
 genericname: ''

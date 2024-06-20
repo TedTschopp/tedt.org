@@ -1,6 +1,5 @@
 ---
-image:
-title: Sea Lilies «Sea Lilies Patch»
+image: ''title: Sea Lilies «Sea Lilies Patch»
 creature_name_index: Sea Lilies Patch
 notes: ''
 genericname: ''

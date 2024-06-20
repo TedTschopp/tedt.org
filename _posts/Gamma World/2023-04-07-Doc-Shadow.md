@@ -1,6 +1,5 @@
 ---
-image:
-title: Doc Shadow
+image: ''title: Doc Shadow
 creature_name_index: Doc Shadow
 notes: ''
 genericname: ''

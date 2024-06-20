@@ -1,6 +1,5 @@
 ---
-image:
-title: Yellow Belly
+image: ''title: Yellow Belly
 creature_name_index: Yellow Belly
 notes: ''
 genericname: ''

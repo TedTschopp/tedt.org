@@ -1,6 +1,5 @@
 ---
-image:
-title: Sage of Melkath «Waldis»
+image: ''title: Sage of Melkath «Waldis»
 creature_name_index: Waldis
 notes: ''
 genericname: ''

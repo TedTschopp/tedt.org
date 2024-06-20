@@ -1,6 +1,5 @@
 ---
-image:
-title: Rock that Burrows «Ba'Sled»
+image: ''title: Rock that Burrows «Ba'Sled»
 creature_name_index: Ba'Sled
 notes: ''
 genericname: y

@@ -1,6 +1,5 @@
 ---
-image:
-title: Rastagator
+image: ''title: Rastagator
 creature_name_index: Rastagator
 notes: ''
 genericname: ''

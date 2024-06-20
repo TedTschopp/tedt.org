@@ -1,6 +1,5 @@
 ---
-image:
-title: Whirligig «Belo»
+image: ''title: Whirligig «Belo»
 creature_name_index: Belo
 notes: ''
 genericname: ''

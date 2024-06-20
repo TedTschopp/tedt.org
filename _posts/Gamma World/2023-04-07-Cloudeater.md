@@ -1,6 +1,5 @@
 ---
-image:
-title: Cloudeater
+image: ''title: Cloudeater
 creature_name_index: Cloudeater
 notes: ''
 genericname: ''

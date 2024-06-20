@@ -1,6 +1,5 @@
 ---
-image:
-title: Blue Wing «Lajjin »
+image: ''title: Blue Wing «Lajjin »
 creature_name_index: Lajjin
 notes: ''
 genericname: ''

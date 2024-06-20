@@ -1,6 +1,5 @@
 ---
-image:
-title: Slime Devils «Menarl»
+image: ''title: Slime Devils «Menarl»
 creature_name_index: Menarl
 notes: ''
 genericname: ''

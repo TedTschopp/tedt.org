@@ -1,6 +1,5 @@
 ---
-image:
-title: Tanglepus
+image: ''title: Tanglepus
 creature_name_index: Tanglepus
 notes: ''
 genericname: ''

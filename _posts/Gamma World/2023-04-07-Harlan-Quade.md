@@ -1,6 +1,5 @@
 ---
-image:
-title: Harlan Quade
+image: ''title: Harlan Quade
 creature_name_index: Harlan Quade
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Teakettler
+image: ''title: Teakettler
 creature_name_index: Teakettler
 notes: ''
 genericname: ''

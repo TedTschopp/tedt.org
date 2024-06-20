@@ -1,6 +1,5 @@
 ---
-image:
-title: Plains People «Etar»
+image: ''title: Plains People «Etar»
 creature_name_index: Etar
 notes: ''
 genericname: ''

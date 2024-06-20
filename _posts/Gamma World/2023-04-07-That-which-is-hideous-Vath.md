@@ -1,6 +1,5 @@
 ---
-image:
-title: That which is hideous «V'ath»
+image: ''title: That which is hideous «V'ath»
 creature_name_index: V'ath
 notes: ''
 genericname: ''

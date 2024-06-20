@@ -1,6 +1,5 @@
 ---
-image:
-title: Pret of the Order of the Blessed Nano
+image: ''title: Pret of the Order of the Blessed Nano
 creature_name_index: Pret of the Order of the Blessed Nano
 notes: ''
 genericname: ''

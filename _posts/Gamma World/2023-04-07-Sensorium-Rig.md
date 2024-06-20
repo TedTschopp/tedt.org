@@ -1,6 +1,5 @@
 ---
-image:
-title: Sensorium Rig
+image: ''title: Sensorium Rig
 creature_name_index: Sensorium Rig
 notes: ''
 genericname: ''

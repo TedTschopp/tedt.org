@@ -1,6 +1,5 @@
 ---
-image:
-title: Manhunter - Communications Drone
+image: ''title: Manhunter - Communications Drone
 creature_name_index: Manhunter - Communications Drone
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Crep,White
+image: ''title: Crep,White
 creature_name_index: Crep,White
 notes: ''
 genericname: ''

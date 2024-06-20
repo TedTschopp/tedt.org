@@ -1,6 +1,5 @@
 ---
-image:
-title: Flaming Bush «Smokerth»
+image: ''title: Flaming Bush «Smokerth»
 creature_name_index: Smokerth
 notes: ''
 genericname: ''

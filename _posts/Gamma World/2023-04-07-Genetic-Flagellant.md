@@ -1,6 +1,5 @@
 ---
-image:
-title: Genetic Flagellant
+image: ''title: Genetic Flagellant
 creature_name_index: Genetic Flagellant
 notes: ''
 genericname: ''

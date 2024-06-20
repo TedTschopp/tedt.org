@@ -1,6 +1,5 @@
 ---
-image:
-title: Strange Ones «N'thlai»
+image: ''title: Strange Ones «N'thlai»
 creature_name_index: N'thlai
 notes: ''
 genericname: ''

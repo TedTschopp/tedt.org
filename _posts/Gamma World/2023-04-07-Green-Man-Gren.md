@@ -1,6 +1,5 @@
 ---
-image:
-title: Green Man «Gren»
+image: ''title: Green Man «Gren»
 creature_name_index: Gren
 notes: ''
 genericname: ''

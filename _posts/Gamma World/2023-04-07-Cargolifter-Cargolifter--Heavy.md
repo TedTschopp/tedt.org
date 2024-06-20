@@ -1,6 +1,5 @@
 ---
-image:
-title: Cargolifter «Cargolifter - Heavy»
+image: ''title: Cargolifter «Cargolifter - Heavy»
 creature_name_index: Cargolifter - Heavy
 notes: ''
 genericname: ''

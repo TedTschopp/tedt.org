@@ -1,6 +1,5 @@
 ---
-image:
-title: Exterminator, Robotic Core
+image: ''title: Exterminator, Robotic Core
 creature_name_index: Exterminator, Robotic Core
 notes: ''
 genericname: ''

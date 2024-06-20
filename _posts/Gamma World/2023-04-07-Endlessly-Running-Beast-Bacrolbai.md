@@ -1,6 +1,5 @@
 ---
-image:
-title: Endlessly Running Beast «Ba'crolbai»
+image: ''title: Endlessly Running Beast «Ba'crolbai»
 creature_name_index: Ba'crolbai
 notes: ''
 genericname: ''

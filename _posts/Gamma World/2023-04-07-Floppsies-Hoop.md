@@ -1,6 +1,5 @@
 ---
-image:
-title: Floppsies «Hoop»
+image: ''title: Floppsies «Hoop»
 creature_name_index: Hoop
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Hulk Mollusk «Rust'ee»
+image: ''title: Hulk Mollusk «Rust'ee»
 creature_name_index: Rust'ee
 notes: ''
 genericname: ''

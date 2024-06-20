@@ -1,6 +1,5 @@
 ---
-image:
-title: WessWreel
+image: ''title: WessWreel
 creature_name_index: WessWreel
 notes: ''
 genericname: ''

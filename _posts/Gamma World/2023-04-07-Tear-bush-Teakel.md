@@ -1,6 +1,5 @@
 ---
-image:
-title: Tear bush «Teakel»
+image: ''title: Tear bush «Teakel»
 creature_name_index: Teakel
 notes: ''
 genericname: ''

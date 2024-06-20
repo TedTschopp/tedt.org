@@ -1,6 +1,5 @@
 ---
-image:
-title: Mirrored Ones «Omnitar»
+image: ''title: Mirrored Ones «Omnitar»
 creature_name_index: Omnitar
 notes: ''
 genericname: ''

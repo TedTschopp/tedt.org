@@ -1,6 +1,5 @@
 ---
-image:
-title: Ambush Bug «Bu'Tal»
+image: ''title: Ambush Bug «Bu'Tal»
 creature_name_index: Bu'Tal
 notes: ''
 genericname: ''

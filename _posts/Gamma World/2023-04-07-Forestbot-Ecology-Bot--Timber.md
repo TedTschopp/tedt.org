@@ -1,6 +1,5 @@
 ---
-image:
-title: Forestbot «Ecology Bot - Timber»
+image: ''title: Forestbot «Ecology Bot - Timber»
 creature_name_index: Ecology Bot - Timber
 notes: ''
 genericname: ''

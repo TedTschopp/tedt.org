@@ -1,6 +1,5 @@
 ---
-image:
-title: Bristleback «Rog»
+image: ''title: Bristleback «Rog»
 creature_name_index: Rog
 notes: ''
 genericname: ''

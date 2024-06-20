@@ -1,6 +1,5 @@
 ---
-image:
-title: Skeeters «Soul Besh»
+image: ''title: Skeeters «Soul Besh»
 creature_name_index: Soul Besh
 notes: ''
 genericname: ''

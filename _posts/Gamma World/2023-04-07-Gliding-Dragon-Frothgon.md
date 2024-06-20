@@ -1,6 +1,5 @@
 ---
-image:
-title: Gliding Dragon «Frothgon»
+image: ''title: Gliding Dragon «Frothgon»
 creature_name_index: Frothgon
 notes: ''
 genericname: ''

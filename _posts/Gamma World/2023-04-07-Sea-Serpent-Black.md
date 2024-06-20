@@ -1,6 +1,5 @@
 ---
-image:
-title: Sea Serpent, Black
+image: ''title: Sea Serpent, Black
 creature_name_index: Sea Serpent, Black
 notes: ''
 genericname: ''

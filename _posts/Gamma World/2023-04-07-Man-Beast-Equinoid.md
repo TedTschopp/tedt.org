@@ -1,6 +1,5 @@
 ---
-image:
-title: Man-Beast «Equinoid»
+image: ''title: Man-Beast «Equinoid»
 creature_name_index: Equinoid
 notes: Fixed
 genericname: ''

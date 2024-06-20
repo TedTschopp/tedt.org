@@ -1,6 +1,5 @@
 ---
-image:
-title: Bristle Snake «Chotslith, Medium»
+image: ''title: Bristle Snake «Chotslith, Medium»
 creature_name_index: Chotslith, Medium
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Gazilla Monster
+image: ''title: Gazilla Monster
 creature_name_index: Gazilla Monster
 notes: ''
 genericname: ''

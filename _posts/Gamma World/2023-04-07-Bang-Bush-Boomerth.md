@@ -1,6 +1,5 @@
 ---
-image:
-title: Bang Bush «Boomerth»
+image: ''title: Bang Bush «Boomerth»
 creature_name_index: Boomerth
 notes: ''
 genericname: ''

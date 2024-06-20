@@ -1,6 +1,5 @@
 ---
-image:
-title: Thought Masters «Serf»
+image: ''title: Thought Masters «Serf»
 creature_name_index: Serf
 notes: ''
 genericname: ''

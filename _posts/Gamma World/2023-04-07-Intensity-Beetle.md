@@ -1,6 +1,5 @@
 ---
-image:
-title: Intensity Beetle
+image: ''title: Intensity Beetle
 creature_name_index: Intensity Beetle
 notes: ''
 genericname: ''

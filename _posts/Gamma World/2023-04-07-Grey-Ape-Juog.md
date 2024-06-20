@@ -1,6 +1,5 @@
 ---
-image:
-title: Grey Ape «Juog»
+image: ''title: Grey Ape «Juog»
 creature_name_index: Juog
 notes: Fixed
 genericname: ''

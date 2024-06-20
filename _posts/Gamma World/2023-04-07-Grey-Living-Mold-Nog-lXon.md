@@ -1,6 +1,5 @@
 ---
-image:
-title: Grey Living Mold «Nog l'Xon»
+image: ''title: Grey Living Mold «Nog l'Xon»
 creature_name_index: Nog l'Xon
 notes: ''
 genericname: ''

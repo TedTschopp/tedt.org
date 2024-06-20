@@ -1,6 +1,5 @@
 ---
-image:
-title: Miniature Animal, Tiny
+image: ''title: Miniature Animal, Tiny
 creature_name_index: Miniature Animal, Tiny
 notes: ''
 genericname: ''

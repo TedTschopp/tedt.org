@@ -1,6 +1,5 @@
 ---
-image:
-title: Water Weirds «Keeshin»
+image: ''title: Water Weirds «Keeshin»
 creature_name_index: Keeshin
 notes: Fixed
 genericname: ''

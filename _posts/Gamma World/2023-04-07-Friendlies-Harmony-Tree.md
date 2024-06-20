@@ -1,6 +1,5 @@
 ---
-image:
-title: Friendlies «Harmony Tree»
+image: ''title: Friendlies «Harmony Tree»
 creature_name_index: Harmony Tree
 notes: ''
 genericname: ''

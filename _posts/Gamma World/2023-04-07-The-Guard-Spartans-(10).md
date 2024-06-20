@@ -1,6 +1,5 @@
 ---
-image:
-title: The Guard Spartans (10)
+image: ''title: The Guard Spartans (10)
 creature_name_index: The Guard Spartans (10)
 notes: ''
 genericname: ''

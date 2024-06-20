@@ -1,6 +1,5 @@
 ---
-image:
-title: Laser Gun Battery
+image: ''title: Laser Gun Battery
 creature_name_index: Laser Gun Battery
 notes: ''
 genericname: ''

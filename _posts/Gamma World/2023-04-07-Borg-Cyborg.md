@@ -1,6 +1,5 @@
 ---
-image:
-title: Borg «Cyborg»
+image: ''title: Borg «Cyborg»
 creature_name_index: Cyborg
 notes: ''
 genericname: ''

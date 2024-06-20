@@ -1,6 +1,5 @@
 ---
-image:
-title: Water Walker «Ger'tal»
+image: ''title: Water Walker «Ger'tal»
 creature_name_index: Ger'tal
 notes: ''
 genericname: ''

@@ -1,6 +1,5 @@
 ---
-image:
-title: Spiny Craw
+image: ''title: Spiny Craw
 creature_name_index: Spiny Craw
 notes: ''
 genericname: ''

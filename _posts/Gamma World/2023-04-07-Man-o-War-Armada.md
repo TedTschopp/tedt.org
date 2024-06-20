@@ -1,6 +1,5 @@
 ---
-image:
-title: Man-o-War «Armada»
+image: ''title: Man-o-War «Armada»
 creature_name_index: Armada
 notes: ''
 genericname: y

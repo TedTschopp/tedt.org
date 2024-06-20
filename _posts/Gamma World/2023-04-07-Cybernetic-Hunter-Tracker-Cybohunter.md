@@ -1,6 +1,5 @@
 ---
-image:
-title: Cybernetic Hunter/Tracker «Cybohunter»
+image: ''title: Cybernetic Hunter/Tracker «Cybohunter»
 creature_name_index: Cybohunter
 notes: ''
 genericname: ''

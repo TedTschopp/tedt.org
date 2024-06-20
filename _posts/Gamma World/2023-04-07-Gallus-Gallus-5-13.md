@@ -1,6 +1,5 @@
 ---
-image:
-title: Gallus Gallus 5-13
+image: ''title: Gallus Gallus 5-13
 creature_name_index: Gallus Gallus 5-13
 notes: ''
 genericname: ''

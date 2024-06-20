@@ -1,6 +1,5 @@
 ---
-image:
-title: Cyber-netter
+image: ''title: Cyber-netter
 creature_name_index: Cyber-netter
 notes: ''
 genericname: ''

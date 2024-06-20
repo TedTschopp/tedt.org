@@ -1,6 +1,5 @@
 ---
-image:
-title: Hybrid-Climate Animal
+image: ''title: Hybrid-Climate Animal
 creature_name_index: Hybrid-Climate Animal
 notes: ''
 genericname: ''

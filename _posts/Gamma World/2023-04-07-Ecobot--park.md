@@ -1,6 +1,5 @@
 ---
-image:
-title: Ecobot - park
+image: ''title: Ecobot - park
 creature_name_index: Ecobot - park
 notes: ''
 genericname: ''

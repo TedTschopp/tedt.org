@@ -1,6 +1,5 @@
 ---
-image:
-title: Chirplick
+image: ''title: Chirplick
 creature_name_index: Chirplick
 notes: ''
 genericname: ''

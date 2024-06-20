@@ -1,6 +1,5 @@
 ---
-image:
-title: Green Hissers
+image: ''title: Green Hissers
 creature_name_index: Green Hissers
 notes: ''
 genericname: ''

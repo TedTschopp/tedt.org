@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Bramble «Sutkin»
+image: ''title: Giant Bramble «Sutkin»
 creature_name_index: Sutkin
 notes: ''
 genericname: ''

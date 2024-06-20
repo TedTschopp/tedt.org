@@ -1,6 +1,5 @@
 ---
-image:
-title: Orange Living Mold «Fhot l'Xon»
+image: ''title: Orange Living Mold «Fhot l'Xon»
 creature_name_index: Fhot l'Xon
 notes: ''
 genericname: ''

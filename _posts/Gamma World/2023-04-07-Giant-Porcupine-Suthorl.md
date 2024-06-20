@@ -1,6 +1,5 @@
 ---
-image:
-title: Giant Porcupine «Suthorl»
+image: ''title: Giant Porcupine «Suthorl»
 creature_name_index: Suthorl
 notes: ''
 genericname: ''
