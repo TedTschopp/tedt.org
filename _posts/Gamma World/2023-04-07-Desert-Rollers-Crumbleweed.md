@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Crumbleweed.png'
 title: Desert Rollers «Crumbleweed»
 creature_name_index: Crumbleweed
 notes: ''

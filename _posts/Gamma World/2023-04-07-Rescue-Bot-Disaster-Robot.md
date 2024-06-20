@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Disaster Robot.png'
 title: Rescue Bot «Disaster Robot»
 creature_name_index: Disaster Robot
 notes: ''

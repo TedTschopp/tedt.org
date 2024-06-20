@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Crep, Red.png'
 title: Crep,White
 creature_name_index: Crep,White
 notes: ''

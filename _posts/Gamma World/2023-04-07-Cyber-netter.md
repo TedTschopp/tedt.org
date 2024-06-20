@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Cyber-netter.png'
 title: Cyber-netter
 creature_name_index: Cyber-netter
 notes: ''

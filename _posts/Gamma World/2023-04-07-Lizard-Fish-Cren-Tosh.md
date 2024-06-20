@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Cren Tosh.png'
 title: Lizard Fish «Cren Tosh»
 creature_name_index: Cren Tosh
 notes: ''

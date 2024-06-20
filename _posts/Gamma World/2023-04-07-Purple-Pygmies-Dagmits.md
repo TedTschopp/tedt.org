@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Dagmits.png'
 title: Purple Pygmies «Dagmits»
 creature_name_index: Dagmits
 notes: ''

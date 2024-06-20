@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Dabber.png'
 title: Brown Beggars «Dabber»
 creature_name_index: Dabber
 notes: ''

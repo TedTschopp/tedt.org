@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Crusteans.png'
 title: Crusty 'Uns «Crustean»
 creature_name_index: Crustean
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Death Machine.png'
 title: Death Machine «Death Machine»
 creature_name_index: Death Machine
 notes: ''

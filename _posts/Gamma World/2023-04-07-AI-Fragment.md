@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/AI Fragment.png'
 title: AI Fragment
 creature_name_index: AI Fragment
 notes: ''

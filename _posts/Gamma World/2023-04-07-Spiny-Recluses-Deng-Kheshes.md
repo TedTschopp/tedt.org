@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Deng Kheshes.png'
 title: Spiny Recluses «Deng Kheshes»
 creature_name_index: Deng Kheshes
 notes: ''

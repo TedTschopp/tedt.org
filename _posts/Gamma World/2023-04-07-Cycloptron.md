@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Cycloptron.png'
 title: Cycloptron
 creature_name_index: Cycloptron
 notes: ''

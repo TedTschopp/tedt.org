@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Cybohunter.png'
 title: Cybernetic Hunter/Tracker «Cybohunter»
 creature_name_index: Cybohunter
 notes: ''

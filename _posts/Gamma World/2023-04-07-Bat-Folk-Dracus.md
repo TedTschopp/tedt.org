@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Drac.png'
 title: Bat Folk «Dracus»
 creature_name_index: Dracus
 notes: ''

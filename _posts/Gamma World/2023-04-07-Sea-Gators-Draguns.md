@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Draguns.png'
 title: Sea Gators «Draguns»
 creature_name_index: Draguns
 notes: ''

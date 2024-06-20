@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Crep, Pink.png'
 title: Water Crep «Crep, Pink»
 creature_name_index: Crep, Pink
 notes: ''
