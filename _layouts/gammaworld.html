@@ -63,50 +63,43 @@
                               <h1 class="MCC">{{ page.title }}</h1>
                          {% endif %}
 
-                         {% if page.creature_name== "" %}
-                              <h2 class="MCC">Creature Name: Unknown</h2>
-                         {% else %}
-                              <h2 class="MCC">Creature Name: {{ page.creature_name }}</h2>
-                         {% endif %}
-
                          {% if page.image contains "/RPG/MCC-GW/images/Monster-Manual/" %}
-                              <div style="position: relative; width: 12.5%;">
+                              <div class="position-relative col-lg-3 float-start col-12 pe-lg-4">
                                    <img style="width: 100%;"  src="{{ site.siteurl }}{{ page.image }}" width="12.5%">
                               </div>     
                          {% else %}
                               {% assign current_second = "now" | date: "%S" %}
                               {% assign random_number = current_second | modulo: 12 | plus: 1 %}
 
-                              {% if random_number == 1 %}
-                                   {% assign image_error_text = "Image file not found."}
-                              {% elsif random_number == 2 %}
-                                   {% assign image_error_text = "Corrupted image file detected."}
-                              {% elsif random_number == 3 %}
-                                   {% assign image_error_text = "Unsupported image format."}
-                              {% elsif random_number == 4 %}
-                                   {% assign image_error_text = "Image load failed due to missing file."}
-                              {% elsif random_number == 5 %}
-                                   {% assign image_error_text = "Error: Unable to display image."}
-                              {% elsif random_number == 6 %}
-                                   {% assign image_error_text = "Image file is incomplete or damaged."}
-                              {% elsif random_number == 7 %}
-                                   {% assign image_error_text = "File path does not point to a valid image."}
-                              {% elsif random_number == 8 %}
-                                   {% assign image_error_text = "Failed to decode image."}
-                              {% elsif random_number == 9 %}
-                                   {% assign image_error_text = "Image data corrupted or unreadable."}
-                              {% elsif random_number == 10 %}
-                                   {% assign image_error_text = "Error: Image cannot be rendered."}
-                              {% elsif random_number == 11 %}
-                                   {% assign image_error_text = "Invalid image file header."}
-                              {% elsif random_number == 12 %}
-                                   {% assign image_error_text = "Image display error: Resource unavailable."}
-                              {% else %}
-                                   <!-- Default case -->
-                              {% endif %}
-                              <div style="position: relative; width: 12.5%;">
-                                   <img style="width: 100%;" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
-                                   <p style="position: absolute; top: 0; left: 0; font-size: 0.75em; color: #740000;">{{ image_error_text }}</p>
+                              <div class="position-relative col-12 col-lg-3 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
+                                   <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
+                                   <p class="position-absolute text-danger fs-6 m-0">
+                                   {% if random_number == 1 %}
+                                        Image file not found.
+                                   {% elsif random_number == 2 %}
+                                        Corrupted image file detected.
+                                   {% elsif random_number == 3 %}
+                                        Unsupported image format.
+                                   {% elsif random_number == 4 %}
+                                        Image load failed due to missing file.
+                                   {% elsif random_number == 5 %}
+                                        Error: Unable to display image.
+                                   {% elsif random_number == 6 %}
+                                        Image file is incomplete or damaged.
+                                   {% elsif random_number == 7 %}
+                                        File path does not point to a valid image.
+                                   {% elsif random_number == 8 %}
+                                        Failed to decode image."}
+                                   {% elsif random_number == 9 %}
+                                        Image data corrupted or unreadable.
+                                   {% elsif random_number == 10 %}
+                                        Error: Image cannot be rendered.
+                                   {% elsif random_number == 11 %}
+                                        Invalid image file header.
+                                   {% elsif random_number == 12 %}
+                                        Image display error: Resource unavailable.
+                                   {% endif %}                                        
+                                   </p>
                               </div>
                          {% endif %}                        
 
