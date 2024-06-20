@@ -1,5 +1,6 @@
 ---
-image: ''title: Big Daddy «Juggernaut»
+image: ''
+title: Big Daddy «Juggernaut»
 creature_name_index: Juggernaut
 notes: Fixed - Add rules for the Ert
 genericname: ''

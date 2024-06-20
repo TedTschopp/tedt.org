@@ -1,5 +1,6 @@
 ---
-image: ''title: Temperate Forest
+image: ''
+title: Temperate Forest
 creature_name_index: Temperate Forest
 notes: ''
 genericname: ''

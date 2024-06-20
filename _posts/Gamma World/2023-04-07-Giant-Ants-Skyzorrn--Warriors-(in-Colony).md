@@ -1,5 +1,6 @@
 ---
-image: ''title: Giant Ants «Skyzorr'n - Warriors (in Colony)»
+image: ''
+title: Giant Ants «Skyzorr'n - Warriors (in Colony)»
 creature_name_index: Skyzorr'n - Warriors (in Colony)
 notes: ''
 genericname: ''

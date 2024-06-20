@@ -1,5 +1,6 @@
 ---
-image: ''title: Mayday Bug «Euryl»
+image: ''
+title: Mayday Bug «Euryl»
 creature_name_index: Euryl
 notes: ''
 genericname: ''

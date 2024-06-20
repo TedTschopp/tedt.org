@@ -1,5 +1,6 @@
 ---
-image: ''title: Crested Dragon «Debgon»
+image: ''
+title: Crested Dragon «Debgon»
 creature_name_index: Debgon
 notes: ''
 genericname: ''

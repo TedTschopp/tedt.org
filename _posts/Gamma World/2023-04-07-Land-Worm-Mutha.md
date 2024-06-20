@@ -1,5 +1,6 @@
 ---
-image: ''title: Land Worm «Mutha»
+image: ''
+title: Land Worm «Mutha»
 creature_name_index: Mutha
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Boomblossom
+image: ''
+title: Boomblossom
 creature_name_index: Boomblossom
 notes: ''
 genericname: ''

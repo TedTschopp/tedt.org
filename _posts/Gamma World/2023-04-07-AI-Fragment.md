@@ -1,5 +1,6 @@
 ---
-image: ''title: AI Fragment
+image: ''
+title: AI Fragment
 creature_name_index: AI Fragment
 notes: ''
 genericname: y

@@ -1,5 +1,6 @@
 ---
-image: ''title: Sliver Sucker «Thy'tal»
+image: ''
+title: Sliver Sucker «Thy'tal»
 creature_name_index: Thy'tal
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Flailers «Triphants»
+image: ''
+title: Flailers «Triphants»
 creature_name_index: Triphants
 notes: ''
 genericname: ''

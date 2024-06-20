@@ -1,5 +1,6 @@
 ---
-image: ''title: Frankenstein
+image: ''
+title: Frankenstein
 creature_name_index: Frankenstein
 notes: ''
 genericname: ''

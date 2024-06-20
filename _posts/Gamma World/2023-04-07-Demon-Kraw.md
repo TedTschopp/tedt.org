@@ -1,5 +1,6 @@
 ---
-image: ''title: Demon «Kraw»
+image: ''
+title: Demon «Kraw»
 creature_name_index: Kraw
 notes: ''
 genericname: ''

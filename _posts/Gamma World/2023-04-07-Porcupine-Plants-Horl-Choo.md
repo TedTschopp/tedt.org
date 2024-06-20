@@ -1,5 +1,6 @@
 ---
-image: ''title: Porcupine Plants «Horl Choo»
+image: ''
+title: Porcupine Plants «Horl Choo»
 creature_name_index: Horl Choo
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Jumping Spiders «Vilchneks»
+image: ''
+title: Jumping Spiders «Vilchneks»
 creature_name_index: Vilchneks
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Black Living Mold «Ini'xon»
+image: ''
+title: Black Living Mold «Ini'xon»
 creature_name_index: Ini'xon
 notes: ''
 genericname: ''

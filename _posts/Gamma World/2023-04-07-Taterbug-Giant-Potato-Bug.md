@@ -1,5 +1,6 @@
 ---
-image: ''title: Taterbug «Giant Potato Bug»
+image: ''
+title: Taterbug «Giant Potato Bug»
 creature_name_index: Giant Potato Bug
 notes: ''
 genericname: ''

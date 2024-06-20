@@ -1,5 +1,6 @@
 ---
-image: ''title: Miracle Goo
+image: ''
+title: Miracle Goo
 creature_name_index: Miracle Goo
 notes: ''
 genericname: ''

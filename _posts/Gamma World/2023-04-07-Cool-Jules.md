@@ -1,5 +1,6 @@
 ---
-image: ''title: Cool Jules
+image: ''
+title: Cool Jules
 creature_name_index: Cool Jules
 notes: ''
 genericname: ''

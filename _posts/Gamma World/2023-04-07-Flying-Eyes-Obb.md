@@ -1,5 +1,6 @@
 ---
-image: ''title: Flying Eyes «Obb»
+image: ''
+title: Flying Eyes «Obb»
 creature_name_index: Obb
 notes: ''
 genericname: ''

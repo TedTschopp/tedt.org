@@ -1,5 +1,6 @@
 ---
-image: ''title: Borer Beetles «Zarn»
+image: ''
+title: Borer Beetles «Zarn»
 creature_name_index: Zarn
 notes: ''
 genericname: ''

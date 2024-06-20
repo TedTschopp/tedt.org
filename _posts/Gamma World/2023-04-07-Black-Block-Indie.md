@@ -1,5 +1,6 @@
 ---
-image: ''title: Black Block «Indie»
+image: ''
+title: Black Block «Indie»
 creature_name_index: Indie
 notes: ''
 genericname: ''

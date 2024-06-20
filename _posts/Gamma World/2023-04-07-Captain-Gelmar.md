@@ -1,5 +1,6 @@
 ---
-image: ''title: Captain Gelmar
+image: ''
+title: Captain Gelmar
 creature_name_index: Captain Gelmar
 notes: ''
 genericname: ''

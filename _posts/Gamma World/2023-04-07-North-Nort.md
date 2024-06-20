@@ -1,5 +1,6 @@
 ---
-image: ''title: North «Nort»
+image: ''
+title: North «Nort»
 creature_name_index: Nort
 notes: ''
 genericname: ''

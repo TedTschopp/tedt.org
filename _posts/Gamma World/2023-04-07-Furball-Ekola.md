@@ -1,5 +1,6 @@
 ---
-image: ''title: Furball «Ekola »
+image: ''
+title: Furball «Ekola »
 creature_name_index: Ekola
 notes: ''
 genericname: ''

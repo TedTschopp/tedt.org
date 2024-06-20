@@ -1,5 +1,6 @@
 ---
-image: ''title: Deathsire
+image: ''
+title: Deathsire
 creature_name_index: Deathsire
 notes: ''
 genericname: ''

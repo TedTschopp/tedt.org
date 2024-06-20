@@ -1,5 +1,6 @@
 ---
-image: ''title: Shapeless Ones «Ameebies (as humanoid)»
+image: ''
+title: Shapeless Ones «Ameebies (as humanoid)»
 creature_name_index: Ameebies (as humanoid)
 notes: ''
 genericname: y

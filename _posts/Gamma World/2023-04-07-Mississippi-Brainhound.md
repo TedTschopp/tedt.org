@@ -1,5 +1,6 @@
 ---
-image: ''title: Mississippi Brainhound
+image: ''
+title: Mississippi Brainhound
 creature_name_index: Mississippi Brainhound
 notes: ''
 genericname: ''

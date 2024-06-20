@@ -1,5 +1,6 @@
 ---
-image: ''title: Shield Worm
+image: ''
+title: Shield Worm
 creature_name_index: Shield Worm
 notes: ''
 genericname: ''

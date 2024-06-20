@@ -1,5 +1,6 @@
 ---
-image: ''title: Demon Snake «Helslith»
+image: ''
+title: Demon Snake «Helslith»
 creature_name_index: Helslith
 notes: ''
 genericname: ''

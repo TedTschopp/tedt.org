@@ -1,5 +1,6 @@
 ---
-image: ''title: Finned Dragon «Erdgon»
+image: ''
+title: Finned Dragon «Erdgon»
 creature_name_index: Erdgon
 notes: ''
 genericname: ''

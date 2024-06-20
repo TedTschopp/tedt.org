@@ -1,5 +1,6 @@
 ---
-image: ''title: That Which is Dependable «S're'daan»
+image: ''
+title: That Which is Dependable «S're'daan»
 creature_name_index: S're'daan
 notes: ''
 genericname: ''

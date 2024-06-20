@@ -1,5 +1,6 @@
 ---
-image: ''title: Sea Monkeys
+image: ''
+title: Sea Monkeys
 creature_name_index: Sea Monkeys
 notes: ''
 genericname: ''

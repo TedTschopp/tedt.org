@@ -1,5 +1,6 @@
 ---
-image: ''title: Security Robot
+image: ''
+title: Security Robot
 creature_name_index: Security Robot
 notes: ''
 genericname: ''

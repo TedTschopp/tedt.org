@@ -1,5 +1,6 @@
 ---
-image: ''title: Living Ice Mold «Hyri'xon»
+image: ''
+title: Living Ice Mold «Hyri'xon»
 creature_name_index: Hyri'xon
 notes: ''
 genericname: ''

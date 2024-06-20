@@ -1,5 +1,6 @@
 ---
-image: ''title: Tech Bane «NeepNeep»
+image: ''
+title: Tech Bane «NeepNeep»
 creature_name_index: NeepNeep
 notes: ''
 genericname: ''

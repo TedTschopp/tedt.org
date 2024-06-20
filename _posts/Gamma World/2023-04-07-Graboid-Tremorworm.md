@@ -1,5 +1,6 @@
 ---
-image: ''title: Graboid «Tremorworm»
+image: ''
+title: Graboid «Tremorworm»
 creature_name_index: Tremorworm
 notes: ''
 genericname: ''

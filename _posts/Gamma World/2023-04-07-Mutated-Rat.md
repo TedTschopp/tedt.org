@@ -1,5 +1,6 @@
 ---
-image: ''title: Mutated Rat
+image: ''
+title: Mutated Rat
 creature_name_index: Mutated Rat
 notes: ''
 genericname: ''

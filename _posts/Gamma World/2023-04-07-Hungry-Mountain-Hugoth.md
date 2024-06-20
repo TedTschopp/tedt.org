@@ -1,5 +1,6 @@
 ---
-image: ''title: Hungry Mountain «Hugoth»
+image: ''
+title: Hungry Mountain «Hugoth»
 creature_name_index: Hugoth
 notes: ''
 genericname: ''

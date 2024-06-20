@@ -1,5 +1,6 @@
 ---
-image: ''title: Earth Pigs «Sarbis»
+image: ''
+title: Earth Pigs «Sarbis»
 creature_name_index: Sarbis
 notes: ''
 genericname: ''

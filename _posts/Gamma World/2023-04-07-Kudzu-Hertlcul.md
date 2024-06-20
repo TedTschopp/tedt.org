@@ -1,5 +1,6 @@
 ---
-image: ''title: Kud'zu Hert'l'cul
+image: ''
+title: Kud'zu Hert'l'cul
 creature_name_index: Kud'zu Hert'l'cul
 notes: ''
 genericname: ''

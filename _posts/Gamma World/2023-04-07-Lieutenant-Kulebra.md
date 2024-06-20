@@ -1,5 +1,6 @@
 ---
-image: ''title: Lieutenant Kulebra
+image: ''
+title: Lieutenant Kulebra
 creature_name_index: Lieutenant Kulebra
 notes: ''
 genericname: ''

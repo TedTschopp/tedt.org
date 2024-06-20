@@ -1,5 +1,6 @@
 ---
-image: ''title: Sea Devils «Moklas»
+image: ''
+title: Sea Devils «Moklas»
 creature_name_index: Moklas
 notes: ''
 genericname: ''

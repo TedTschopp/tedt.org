@@ -1,5 +1,6 @@
 ---
-image: ''title: Soldier Robot
+image: ''
+title: Soldier Robot
 creature_name_index: Soldier Robot
 notes: ''
 genericname: ''

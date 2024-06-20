@@ -1,5 +1,6 @@
 ---
-image: ''title: Corporal Smyty
+image: ''
+title: Corporal Smyty
 creature_name_index: Corporal Smyty
 notes: ''
 genericname: ''

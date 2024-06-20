@@ -1,5 +1,6 @@
 ---
-image: ''title: Bradfromlanta
+image: ''
+title: Bradfromlanta
 creature_name_index: Bradfromlanta
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Bob «Household Robot, Rural defense model»
+image: ''
+title: Bob «Household Robot, Rural defense model»
 creature_name_index: Household Robot, Rural defense model
 notes: ''
 genericname: ''

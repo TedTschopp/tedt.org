@@ -1,5 +1,6 @@
 ---
-image: ''title: LanternBug
+image: ''
+title: LanternBug
 creature_name_index: LanternBug
 notes: ''
 genericname: y

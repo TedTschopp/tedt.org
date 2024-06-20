@@ -1,5 +1,6 @@
 ---
-image: ''title: Shutter «Floth-Ha»
+image: ''
+title: Shutter «Floth-Ha»
 creature_name_index: Floth-Ha
 notes: ''
 genericname: ''

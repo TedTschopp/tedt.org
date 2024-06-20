@@ -1,5 +1,6 @@
 ---
-image: ''title: Bigfoot «Sasquatch»
+image: ''
+title: Bigfoot «Sasquatch»
 creature_name_index: Sasquatch
 notes: ''
 genericname: ''

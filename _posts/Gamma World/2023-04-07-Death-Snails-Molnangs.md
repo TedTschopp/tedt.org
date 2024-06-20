@@ -1,5 +1,6 @@
 ---
-image: ''title: Death Snails «Molnangs»
+image: ''
+title: Death Snails «Molnangs»
 creature_name_index: Molnangs
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Flying Lobster «Garbug»
+image: ''
+title: Flying Lobster «Garbug»
 creature_name_index: Garbug
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Tricksters «Jestes»
+image: ''
+title: Tricksters «Jestes»
 creature_name_index: Jestes
 notes: ''
 genericname: ''

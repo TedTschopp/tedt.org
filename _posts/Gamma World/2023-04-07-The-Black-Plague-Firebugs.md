@@ -1,5 +1,6 @@
 ---
-image: ''title: The Black Plague «Firebugs»
+image: ''
+title: The Black Plague «Firebugs»
 creature_name_index: Firebugs
 notes: ''
 genericname: ''

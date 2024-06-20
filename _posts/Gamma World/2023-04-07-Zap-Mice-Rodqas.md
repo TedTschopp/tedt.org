@@ -1,5 +1,6 @@
 ---
-image: ''title: Zap Mice «Rodqas»
+image: ''
+title: Zap Mice «Rodqas»
 creature_name_index: Rodqas
 notes: ''
 genericname: ''

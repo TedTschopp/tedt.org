@@ -1,5 +1,6 @@
 ---
-image: ''title: Feathered Love «Kiikce»
+image: ''
+title: Feathered Love «Kiikce»
 creature_name_index: Kiikce
 notes: Fixed
 genericname: ''

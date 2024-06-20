@@ -1,5 +1,6 @@
 ---
-image: ''title: Brown Beggars «Dabber»
+image: ''
+title: Brown Beggars «Dabber»
 creature_name_index: Dabber
 notes: ''
 genericname: ''

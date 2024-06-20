@@ -1,5 +1,6 @@
 ---
-image: ''title: Giant Ants «Skyzorr'n - Queen (in Colony)»
+image: ''
+title: Giant Ants «Skyzorr'n - Queen (in Colony)»
 creature_name_index: Skyzorr'n - Queen (in Colony)
 notes: ''
 genericname: ''

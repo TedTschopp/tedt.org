@@ -1,5 +1,6 @@
 ---
-image: ''title: Bird of the Moonlight «Sho'day»
+image: ''
+title: Bird of the Moonlight «Sho'day»
 creature_name_index: Sho'day
 notes: ''
 genericname: ''

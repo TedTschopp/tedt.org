@@ -1,5 +1,6 @@
 ---
-image: ''title: Commander Atenvelt
+image: ''
+title: Commander Atenvelt
 creature_name_index: Commander Atenvelt
 notes: ''
 genericname: ''

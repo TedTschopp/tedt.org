@@ -1,5 +1,6 @@
 ---
-image: ''title: Gamma Living Mold «Ash I'Xon»
+image: ''
+title: Gamma Living Mold «Ash I'Xon»
 creature_name_index: Ash I'Xon
 notes: ''
 genericname: y

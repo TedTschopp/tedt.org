@@ -1,5 +1,6 @@
 ---
-image: ''title: Braintaker
+image: ''
+title: Braintaker
 creature_name_index: Braintaker
 notes: ''
 genericname: ''

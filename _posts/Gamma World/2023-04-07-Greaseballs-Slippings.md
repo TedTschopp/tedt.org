@@ -1,5 +1,6 @@
 ---
-image: ''title: Greaseballs «Slippings»
+image: ''
+title: Greaseballs «Slippings»
 creature_name_index: Slippings
 notes: ''
 genericname: ''

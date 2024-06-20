@@ -1,5 +1,6 @@
 ---
-image: ''title: Seer Lizards «Sleeth»
+image: ''
+title: Seer Lizards «Sleeth»
 creature_name_index: Sleeth
 notes: ''
 genericname: ''

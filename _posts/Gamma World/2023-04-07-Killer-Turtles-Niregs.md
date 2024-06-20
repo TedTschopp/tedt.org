@@ -1,5 +1,6 @@
 ---
-image: ''title: Killer Turtles «Niregs»
+image: ''
+title: Killer Turtles «Niregs»
 creature_name_index: Niregs
 notes: ''
 genericname: ''

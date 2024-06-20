@@ -1,5 +1,6 @@
 ---
-image: ''title: Ugly Friend «Holcut»
+image: ''
+title: Ugly Friend «Holcut»
 creature_name_index: Holcut
 notes: ''
 genericname: ''

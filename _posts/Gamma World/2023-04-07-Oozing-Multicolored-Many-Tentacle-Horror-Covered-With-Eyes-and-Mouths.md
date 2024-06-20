@@ -1,5 +1,6 @@
 ---
-image: ''title: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes and Mouths
+image: ''
+title: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes and Mouths
 creature_name_index: Oozing, Multicolored, Many-Tentacle Horror Covered With Eyes
   and Mouths
 notes: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Weirbuled
+image: ''
+title: Weirbuled
 creature_name_index: Weirbuled
 notes: ''
 genericname: ''

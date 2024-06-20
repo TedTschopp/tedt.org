@@ -1,5 +1,6 @@
 ---
-image: ''title: Hungry Ball «Conola»
+image: ''
+title: Hungry Ball «Conola»
 creature_name_index: Conola
 notes: ''
 genericname: ''

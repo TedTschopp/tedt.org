@@ -1,5 +1,6 @@
 ---
-image: ''title: Itchy's Horse
+image: ''
+title: Itchy's Horse
 creature_name_index: Itchy's Horse
 notes: ''
 genericname: ''

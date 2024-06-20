@@ -1,5 +1,6 @@
 ---
-image: ''title: Big Horns «Rakox»
+image: ''
+title: Big Horns «Rakox»
 creature_name_index: Rakox
 notes: ''
 genericname: ''

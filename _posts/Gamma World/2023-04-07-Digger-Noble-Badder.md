@@ -1,5 +1,6 @@
 ---
-image: ''title: Digger Noble «Badder»
+image: ''
+title: Digger Noble «Badder»
 creature_name_index: Badder
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Ecology Robot
+image: ''
+title: Ecology Robot
 creature_name_index: Ecology Robot
 notes: ''
 genericname: ''

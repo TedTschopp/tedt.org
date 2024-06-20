@@ -1,5 +1,6 @@
 ---
-image: ''title: Green Lantern «Ti'tal»
+image: ''
+title: Green Lantern «Ti'tal»
 creature_name_index: Ti'tal
 notes: ''
 genericname: ''

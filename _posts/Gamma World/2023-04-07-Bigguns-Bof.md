@@ -1,5 +1,6 @@
 ---
-image: ''title: Bigguns «Bof»
+image: ''
+title: Bigguns «Bof»
 creature_name_index: Bof
 notes: ''
 genericname: ''

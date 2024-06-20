@@ -32,7 +32,12 @@ $(document).ready(function() {
   }
   tocItems.push('</li></ol>'); // Close the initial <ol>
 
-  toc.innerHTML = tocItems.join(''); // Convert array to string and set as HTML once
+  toc.innerHTML = tocItems.map(escapeHTML).join('');
   toc.setAttribute('role', 'navigation');
   toc.setAttribute('aria-label', 'Table of contents');
 });
+function escapeHTML(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}

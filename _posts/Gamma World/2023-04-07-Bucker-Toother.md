@@ -1,5 +1,6 @@
 ---
-image: ''title: Bucker «Toother»
+image: ''
+title: Bucker «Toother»
 creature_name_index: Toother
 notes: ''
 genericname: ''

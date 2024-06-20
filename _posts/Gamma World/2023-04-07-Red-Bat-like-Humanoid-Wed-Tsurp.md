@@ -1,5 +1,6 @@
 ---
-image: ''title: Red Bat-like Humanoid «Wed Tsurp»
+image: ''
+title: Red Bat-like Humanoid «Wed Tsurp»
 creature_name_index: Wed Tsurp
 notes: ''
 genericname: ''

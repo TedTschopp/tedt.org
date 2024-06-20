@@ -1,5 +1,6 @@
 ---
-image: ''title: Dark Emperors «Carrin»
+image: ''
+title: Dark Emperors «Carrin»
 creature_name_index: Carrin
 notes: ''
 genericname: ''

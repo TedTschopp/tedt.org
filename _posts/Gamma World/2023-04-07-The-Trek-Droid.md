@@ -1,5 +1,6 @@
 ---
-image: ''title: The Trek Droid
+image: ''
+title: The Trek Droid
 creature_name_index: The Trek Droid
 notes: ''
 genericname: ''

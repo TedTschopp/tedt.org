@@ -1,5 +1,6 @@
 ---
-image: ''title: Mutated Chuckwalla
+image: ''
+title: Mutated Chuckwalla
 creature_name_index: Mutated Chuckwalla
 notes: ''
 genericname: ''

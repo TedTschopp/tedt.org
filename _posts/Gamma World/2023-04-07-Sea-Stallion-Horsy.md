@@ -1,5 +1,6 @@
 ---
-image: ''title: Sea Stallion «Horsy»
+image: ''
+title: Sea Stallion «Horsy»
 creature_name_index: Horsy
 notes: ''
 genericname: ''

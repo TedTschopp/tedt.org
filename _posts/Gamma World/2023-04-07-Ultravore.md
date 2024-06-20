@@ -1,5 +1,6 @@
 ---
-image: ''title: Ultravore
+image: ''
+title: Ultravore
 creature_name_index: Ultravore
 notes: ''
 genericname: ''

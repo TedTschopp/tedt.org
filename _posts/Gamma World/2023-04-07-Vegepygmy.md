@@ -1,5 +1,6 @@
 ---
-image: ''title: Vegepygmy
+image: ''
+title: Vegepygmy
 creature_name_index: Vegepygmy
 notes: ''
 genericname: ''

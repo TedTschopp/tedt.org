@@ -1,5 +1,6 @@
 ---
-image: ''title: Two Horn «Boarz»
+image: ''
+title: Two Horn «Boarz»
 creature_name_index: Boarz
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Zap Lizards «Gliders»
+image: ''
+title: Zap Lizards «Gliders»
 creature_name_index: Gliders
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Clicker Fish «Flipp»
+image: ''
+title: Clicker Fish «Flipp»
 creature_name_index: Flipp
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Stonefish «Ert»
+image: ''
+title: Stonefish «Ert»
 creature_name_index: Ert
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Smokie «Barxyn»
+image: ''
+title: Smokie «Barxyn»
 creature_name_index: Barxyn
 notes: ''
 genericname: ''

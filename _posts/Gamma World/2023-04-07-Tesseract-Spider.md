@@ -1,5 +1,6 @@
 ---
-image: ''title: Tesseract Spider
+image: ''
+title: Tesseract Spider
 creature_name_index: Tesseract Spider
 notes: ''
 genericname: ''

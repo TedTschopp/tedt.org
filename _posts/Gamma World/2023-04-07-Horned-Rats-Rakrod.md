@@ -1,5 +1,6 @@
 ---
-image: ''title: Horned Rats «Rakrod»
+image: ''
+title: Horned Rats «Rakrod»
 creature_name_index: Rakrod
 notes: ''
 genericname: ''

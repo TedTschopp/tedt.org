@@ -1,5 +1,6 @@
 ---
-image: ''title: Land Sharks «Sep, Sand»
+image: ''
+title: Land Sharks «Sep, Sand»
 creature_name_index: Sep, Sand
 notes: ''
 genericname: ''

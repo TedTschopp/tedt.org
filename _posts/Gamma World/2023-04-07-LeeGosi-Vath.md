@@ -1,5 +1,6 @@
 ---
-image: ''title: Lee'Gosi «Vath»
+image: ''
+title: Lee'Gosi «Vath»
 creature_name_index: Vath
 notes: ''
 genericname: ''

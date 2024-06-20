@@ -1,5 +1,6 @@
 ---
-image: ''title: Gamma Grass «Zeeth»
+image: ''
+title: Gamma Grass «Zeeth»
 creature_name_index: Zeeth
 notes: ''
 genericname: ''

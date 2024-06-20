@@ -1,5 +1,6 @@
 ---
-image: ''title: Bigwig «Rhya»
+image: ''
+title: Bigwig «Rhya»
 creature_name_index: Rhya
 notes: ''
 genericname: ''

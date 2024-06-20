@@ -1,5 +1,6 @@
 ---
-image: ''title: Tropical Grass
+image: ''
+title: Tropical Grass
 creature_name_index: Tropical Grass
 notes: ''
 genericname: ''

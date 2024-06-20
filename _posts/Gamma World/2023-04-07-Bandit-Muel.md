@@ -1,5 +1,6 @@
 ---
-image: ''title: Bandit Muel
+image: ''
+title: Bandit Muel
 creature_name_index: Bandit Muel
 notes: ''
 genericname: ''

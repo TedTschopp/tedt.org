@@ -1,5 +1,6 @@
 ---
-image: ''title: Security Bot Mk II «Security Robot at Mindkeep»
+image: ''
+title: Security Bot Mk II «Security Robot at Mindkeep»
 creature_name_index: Security Robot at Mindkeep
 notes: ''
 genericname: ''

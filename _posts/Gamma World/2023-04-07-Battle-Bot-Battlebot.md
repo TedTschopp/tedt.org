@@ -1,5 +1,6 @@
 ---
-image: ''title: Battle Bot «Battlebot»
+image: ''
+title: Battle Bot «Battlebot»
 creature_name_index: Battlebot
 notes: ''
 genericname: ''

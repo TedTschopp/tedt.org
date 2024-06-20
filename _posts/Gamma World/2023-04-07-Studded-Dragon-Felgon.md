@@ -1,5 +1,6 @@
 ---
-image: ''title: Studded Dragon «Felgon»
+image: ''
+title: Studded Dragon «Felgon»
 creature_name_index: Felgon
 notes: ''
 genericname: ''

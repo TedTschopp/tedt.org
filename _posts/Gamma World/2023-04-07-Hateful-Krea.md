@@ -1,5 +1,6 @@
 ---
-image: ''title: Hateful «Krea»
+image: ''
+title: Hateful «Krea»
 creature_name_index: Krea
 notes: ''
 genericname: ''

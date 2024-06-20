@@ -1,5 +1,6 @@
 ---
-image: ''title: Wolf Folk «Howler»
+image: ''
+title: Wolf Folk «Howler»
 creature_name_index: Howler
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Sea Medusae «Hydrozoan»
+image: ''
+title: Sea Medusae «Hydrozoan»
 creature_name_index: Hydrozoan
 notes: ''
 genericname: No

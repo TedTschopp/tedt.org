@@ -1,5 +1,6 @@
 ---
-image: ''title: Jeremiah Coot
+image: ''
+title: Jeremiah Coot
 creature_name_index: Jeremiah Coot
 notes: ''
 genericname: ''

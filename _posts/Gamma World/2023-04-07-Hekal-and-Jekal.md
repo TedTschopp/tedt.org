@@ -1,5 +1,6 @@
 ---
-image: ''title: Hekal and Jekal
+image: ''
+title: Hekal and Jekal
 creature_name_index: Hekal and Jekal
 notes: ''
 genericname: ''

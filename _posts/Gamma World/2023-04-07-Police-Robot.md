@@ -1,5 +1,6 @@
 ---
-image: ''title: Police Robot
+image: ''
+title: Police Robot
 creature_name_index: Police Robot
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Desert Riders
+image: ''
+title: Desert Riders
 creature_name_index: Desert Riders
 notes: ''
 genericname: ''

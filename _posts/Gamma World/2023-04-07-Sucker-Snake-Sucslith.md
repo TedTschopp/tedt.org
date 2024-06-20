@@ -1,5 +1,6 @@
 ---
-image: ''title: Sucker Snake «Sucslith»
+image: ''
+title: Sucker Snake «Sucslith»
 creature_name_index: Sucslith
 notes: ''
 genericname: ''

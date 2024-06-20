@@ -1,5 +1,6 @@
 ---
-image: ''title: Black Snake «Inslith»
+image: ''
+title: Black Snake «Inslith»
 creature_name_index: Inslith
 notes: ''
 genericname: ''

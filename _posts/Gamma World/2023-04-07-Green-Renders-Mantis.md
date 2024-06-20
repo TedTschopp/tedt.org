@@ -1,5 +1,6 @@
 ---
-image: ''title: Green Renders «Mantis»
+image: ''
+title: Green Renders «Mantis»
 creature_name_index: Mantis
 notes: ''
 genericname: ''

@@ -1,5 +1,6 @@
 ---
-image: ''title: Plated Dragon «Gelgon»
+image: ''
+title: Plated Dragon «Gelgon»
 creature_name_index: Gelgon
 notes: ''
 genericname: ''

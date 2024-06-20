@@ -1,5 +1,6 @@
 ---
-image: ''title: Bad Bart «Bartholemu Othbrook»
+image: ''
+title: Bad Bart «Bartholemu Othbrook»
 creature_name_index: Bartholemu Othbrook
 notes: ''
 genericname: ''

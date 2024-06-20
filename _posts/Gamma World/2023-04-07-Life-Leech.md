@@ -1,5 +1,6 @@
 ---
-image: ''title: Life Leech
+image: ''
+title: Life Leech
 creature_name_index: Life Leech
 notes: ''
 genericname: ''

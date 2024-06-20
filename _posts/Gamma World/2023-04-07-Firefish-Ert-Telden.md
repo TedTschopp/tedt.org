@@ -1,5 +1,6 @@
 ---
-image: ''title: Firefish «Ert Telden»
+image: ''
+title: Firefish «Ert Telden»
 creature_name_index: Ert Telden
 notes: ''
 genericname: ''

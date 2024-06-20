@@ -1,5 +1,6 @@
 ---
-image: ''title: Reclaimer
+image: ''
+title: Reclaimer
 creature_name_index: Reclaimer
 notes: ''
 genericname: ''

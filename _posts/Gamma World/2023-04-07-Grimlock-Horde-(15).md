@@ -1,5 +1,6 @@
 ---
-image: ''title: Grimlock Horde (15)
+image: ''
+title: Grimlock Horde (15)
 creature_name_index: Grimlock Horde (15)
 notes: ''
 genericname: ''

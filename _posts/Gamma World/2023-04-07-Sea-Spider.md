@@ -1,5 +1,6 @@
 ---
-image: ''title: Sea Spider
+image: ''
+title: Sea Spider
 creature_name_index: Sea Spider
 notes: ''
 genericname: ''
