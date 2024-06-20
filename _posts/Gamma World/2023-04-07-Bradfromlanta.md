@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Bradfromlanta
 creature_name_index: Bradfromlanta
 notes: ''

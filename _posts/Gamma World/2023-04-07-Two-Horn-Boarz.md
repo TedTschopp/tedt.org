@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Two Horn «Boarz»
 creature_name_index: Boarz
 notes: ''

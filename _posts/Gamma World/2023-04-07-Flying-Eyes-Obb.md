@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flying Eyes «Obb»
 creature_name_index: Obb
 notes: ''

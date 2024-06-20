@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Black Snake «Inslith»
 creature_name_index: Inslith
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Pocket Assassin
 creature_name_index: Pocket Assassin
 notes: ''

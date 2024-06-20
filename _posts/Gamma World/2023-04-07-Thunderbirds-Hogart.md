@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Thunderbirds «Hogart»
 creature_name_index: Hogart
 notes: ''

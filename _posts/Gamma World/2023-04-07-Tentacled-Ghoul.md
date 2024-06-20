@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Tentacled Ghoul
 creature_name_index: Tentacled Ghoul
 notes: ''

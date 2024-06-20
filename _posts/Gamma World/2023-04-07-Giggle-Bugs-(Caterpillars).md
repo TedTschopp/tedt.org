@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Giggle Bugs (Caterpillars)
 creature_name_index: Giggle Bugs (Caterpillars)
 notes: ''

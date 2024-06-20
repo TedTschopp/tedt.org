@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Standardized
 creature_name_index: Standardized
 notes: ''

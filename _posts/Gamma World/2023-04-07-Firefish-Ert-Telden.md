@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Firefish «Ert Telden»
 creature_name_index: Ert Telden
 notes: ''

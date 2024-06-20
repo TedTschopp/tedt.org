@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Hags «Sea Crone»
 creature_name_index: Sea Crone
 notes: ''

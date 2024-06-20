@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Turing Pariah
 creature_name_index: Turing Pariah
 notes: ''

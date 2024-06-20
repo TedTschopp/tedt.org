@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Encleaver
 creature_name_index: Encleaver
 notes: ''

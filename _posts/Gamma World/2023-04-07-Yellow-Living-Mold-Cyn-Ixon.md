@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Yellow Living Mold «Cyn I'xon»
 creature_name_index: Cyn I'xon
 notes: ''

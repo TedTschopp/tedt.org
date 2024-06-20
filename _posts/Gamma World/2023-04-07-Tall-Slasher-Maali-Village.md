@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Tall Slasher «Maali-Village»
 creature_name_index: Maali-Village
 notes: ''

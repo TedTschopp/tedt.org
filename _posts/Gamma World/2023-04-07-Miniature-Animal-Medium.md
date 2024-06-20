@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Miniature Animal, Medium
 creature_name_index: Miniature Animal, Medium
 notes: ''

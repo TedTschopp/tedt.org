@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Robotic Machines «Automachine»
 creature_name_index: Automachine
 notes: ''

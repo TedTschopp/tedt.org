@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: He who is a warrior «Y'Zor»
 creature_name_index: Y'Zor
 notes: ''

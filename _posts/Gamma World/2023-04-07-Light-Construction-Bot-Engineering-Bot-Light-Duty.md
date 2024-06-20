@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Light Construction Bot «Engineering Bot, Light Duty»
 creature_name_index: Engineering Bot, Light Duty
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Borg «Defense Attack Borg»
 creature_name_index: Defense Attack Borg
 notes: ''

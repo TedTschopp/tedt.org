@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Blend Dog «Cark»
 creature_name_index: Cark
 notes: ''

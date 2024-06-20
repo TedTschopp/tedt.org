@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Shrub Wall
 creature_name_index: Shrub Wall
 notes: ''

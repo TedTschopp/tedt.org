@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Snow Dragon «Hargon»
 creature_name_index: Hargon
 notes: Validate

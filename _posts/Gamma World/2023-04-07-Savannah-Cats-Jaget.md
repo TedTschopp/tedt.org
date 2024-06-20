@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Savannah Cats «Jaget»
 creature_name_index: Jaget
 notes: ''

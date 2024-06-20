@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Death Trees «Nep Ep»
 creature_name_index: Nep Ep
 notes: ''

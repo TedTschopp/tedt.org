@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Plated Dragon «Gelgon»
 creature_name_index: Gelgon
 notes: ''

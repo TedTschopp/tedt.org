@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Sneakers «Garrel»
 creature_name_index: Garrel
 notes: ''

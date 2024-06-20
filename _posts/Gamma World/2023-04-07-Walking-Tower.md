@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Walking Tower
 creature_name_index: Walking Tower
 notes: ''

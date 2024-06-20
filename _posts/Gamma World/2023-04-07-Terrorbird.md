@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Terrorbird
 creature_name_index: Terrorbird
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Thing of the Mind «Hrierf»
 creature_name_index: Hrierf
 notes: ''

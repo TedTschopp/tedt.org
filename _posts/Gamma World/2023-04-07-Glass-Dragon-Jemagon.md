@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Glass Dragon «Jemagon»
 creature_name_index: Jemagon
 notes: ''

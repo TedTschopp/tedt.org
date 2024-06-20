@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Life Leech
 creature_name_index: Life Leech
 notes: ''

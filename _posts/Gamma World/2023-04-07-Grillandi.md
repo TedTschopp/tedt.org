@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Grillandi
 creature_name_index: Grillandi
 notes: ''

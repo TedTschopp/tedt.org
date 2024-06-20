@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Gobblers «Lukalukas»
 creature_name_index: Lukalukas
 notes: ''

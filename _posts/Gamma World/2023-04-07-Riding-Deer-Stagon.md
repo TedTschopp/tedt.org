@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Riding Deer «Stagon»
 creature_name_index: Stagon
 notes: ''

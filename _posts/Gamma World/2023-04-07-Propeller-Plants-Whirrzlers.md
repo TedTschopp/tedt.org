@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Propeller Plants «Whirrzlers»
 creature_name_index: Whirrzlers
 notes: ''

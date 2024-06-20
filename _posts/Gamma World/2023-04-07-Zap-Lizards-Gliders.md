@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Zap Lizards «Gliders»
 creature_name_index: Gliders
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Bot Bashers «Spitter»
 creature_name_index: Spitter
 notes: ''

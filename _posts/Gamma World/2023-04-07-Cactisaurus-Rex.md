@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Cactisaurus Rex
 creature_name_index: Cactisaurus Rex
 notes: ''

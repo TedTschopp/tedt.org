@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Greater Bloodwing «Che'Tal»
 creature_name_index: Che'Tal
 notes: ''

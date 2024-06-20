@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Terrorbirds «Hawkoid»
 creature_name_index: Hawkoid
 notes: ''

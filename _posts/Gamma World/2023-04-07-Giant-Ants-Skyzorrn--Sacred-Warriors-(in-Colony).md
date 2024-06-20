@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Giant Ants «Skyzorr'n - Sacred Warriors (in Colony)»
 creature_name_index: Skyzorr'n - Sacred Warriors (in Colony)
 notes: ''

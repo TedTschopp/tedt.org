@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: The Great «Zutperk»
 creature_name_index: Zutperk
 notes: ''

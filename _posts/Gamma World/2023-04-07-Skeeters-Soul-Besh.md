@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Skeeters «Soul Besh»
 creature_name_index: Soul Besh
 notes: ''

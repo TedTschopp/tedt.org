@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Finned Dragon «Erdgon»
 creature_name_index: Erdgon
 notes: ''

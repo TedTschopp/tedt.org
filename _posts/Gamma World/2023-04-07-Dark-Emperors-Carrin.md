@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Dark Emperors «Carrin»
 creature_name_index: Carrin
 notes: ''

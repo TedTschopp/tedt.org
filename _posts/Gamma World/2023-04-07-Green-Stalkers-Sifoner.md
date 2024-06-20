@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Green Stalkers «Sifoner»
 creature_name_index: Sifoner
 notes: ''

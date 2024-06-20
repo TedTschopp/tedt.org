@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Doc Shadow
 creature_name_index: Doc Shadow
 notes: ''

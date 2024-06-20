@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Sentrybots
 creature_name_index: Sentrybots
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Thrum «Scorpito»
 creature_name_index: Scorpito
 notes: ''

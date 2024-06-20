@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Spider Lil
 creature_name_index: Spider Lil
 notes: ''

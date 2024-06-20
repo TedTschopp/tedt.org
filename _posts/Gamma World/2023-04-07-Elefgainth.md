@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Elefgainth
 creature_name_index: Elefgainth
 notes: ''

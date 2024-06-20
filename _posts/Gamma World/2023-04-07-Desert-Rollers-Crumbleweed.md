@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Desert Rollers «Crumbleweed»
 creature_name_index: Crumbleweed
 notes: ''

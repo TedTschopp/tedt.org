@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Lizard Fish «Cren Tosh»
 creature_name_index: Cren Tosh
 notes: ''

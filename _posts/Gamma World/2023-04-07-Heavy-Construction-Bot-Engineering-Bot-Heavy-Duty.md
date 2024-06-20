@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Heavy Construction Bot «Engineering Bot, Heavy Duty»
 creature_name_index: Engineering Bot, Heavy Duty
 notes: ''

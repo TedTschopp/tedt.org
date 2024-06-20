@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Wee Ones «Lil»
 creature_name_index: Lil
 notes: ''

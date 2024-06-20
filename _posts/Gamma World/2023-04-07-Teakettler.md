@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Teakettler
 creature_name_index: Teakettler
 notes: ''

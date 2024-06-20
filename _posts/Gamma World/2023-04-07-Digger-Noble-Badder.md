@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Digger Noble «Badder»
 creature_name_index: Badder
 notes: ''

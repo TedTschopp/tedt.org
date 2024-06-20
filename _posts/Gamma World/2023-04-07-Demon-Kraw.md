@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Demon «Kraw»
 creature_name_index: Kraw
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Deadly Tail «Ny'an»
 creature_name_index: Ny'an
 notes: ''

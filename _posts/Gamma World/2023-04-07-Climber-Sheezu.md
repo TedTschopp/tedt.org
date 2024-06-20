@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Climber «Sheezu»
 creature_name_index: Sheezu
 notes: ''

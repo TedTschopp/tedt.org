@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Funes' Symbiot
 creature_name_index: Funes' Symbiot
 notes: ''

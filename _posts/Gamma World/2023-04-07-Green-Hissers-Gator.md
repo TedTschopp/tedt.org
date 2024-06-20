@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Green Hissers «Gator»
 creature_name_index: Gator
 notes: ''

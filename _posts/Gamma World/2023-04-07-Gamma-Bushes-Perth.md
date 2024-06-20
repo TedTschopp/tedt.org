@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Gamma Bushes «Perth»
 creature_name_index: Perth
 notes: ''

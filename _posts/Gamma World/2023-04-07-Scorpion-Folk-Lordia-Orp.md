@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Scorpion Folk «Lordia Orp»
 creature_name_index: Lordia Orp
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Sticky Jelly «Rismish»
 creature_name_index: Rismish
 notes: ''

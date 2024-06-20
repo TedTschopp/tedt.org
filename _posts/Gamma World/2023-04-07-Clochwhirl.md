@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Clochwhirl
 creature_name_index: Clochwhirl
 notes: ''

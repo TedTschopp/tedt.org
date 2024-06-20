@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flat Render «Guman»
 creature_name_index: Guman
 notes: ''

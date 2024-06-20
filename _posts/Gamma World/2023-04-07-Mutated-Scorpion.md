@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Mutated Scorpion
 creature_name_index: Mutated Scorpion
 notes: ''

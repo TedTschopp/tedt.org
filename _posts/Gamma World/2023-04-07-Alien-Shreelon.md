@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Alien «Shreelon»
 creature_name_index: Shreelon
 notes: ''

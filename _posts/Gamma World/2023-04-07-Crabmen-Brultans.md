@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Crabmen «Brultans»
 creature_name_index: Brultans
 notes: ''

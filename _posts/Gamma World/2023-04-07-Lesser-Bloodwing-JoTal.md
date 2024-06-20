@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Lesser Bloodwing «Jo'Tal»
 creature_name_index: Jo'Tal
 notes: ''

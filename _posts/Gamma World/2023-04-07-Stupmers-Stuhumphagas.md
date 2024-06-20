@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Stupmers «Stuhumphagas»
 creature_name_index: Stuhumphagas
 notes: ''

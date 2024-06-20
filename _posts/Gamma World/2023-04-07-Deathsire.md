@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Deathsire
 creature_name_index: Deathsire
 notes: ''

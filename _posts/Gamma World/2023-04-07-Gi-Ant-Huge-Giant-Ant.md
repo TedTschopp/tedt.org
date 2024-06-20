@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Gi-Ant «Huge Giant Ant»
 creature_name_index: Huge Giant Ant
 notes: ''

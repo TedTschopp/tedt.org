@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Sea Serpent, Green
 creature_name_index: Sea Serpent, Green
 notes: ''

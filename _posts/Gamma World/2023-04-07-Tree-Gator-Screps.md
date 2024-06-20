@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Tree Gator «Screps»
 creature_name_index: Screps
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Green Tanglers «Win Seen or Green Winislean»
 creature_name_index: Win Seen or Green Winislean
 notes: ''

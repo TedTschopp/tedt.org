@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Giant Locus «Locus»
 creature_name_index: Locus
 notes: ''

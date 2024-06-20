@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Metrovore Swarm
 creature_name_index: Metrovore Swarm
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Industrial Robot
 creature_name_index: Industrial Robot
 notes: ''

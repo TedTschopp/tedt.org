@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flesh Cutter Ant
 creature_name_index: Flesh Cutter Ant
 notes: ''

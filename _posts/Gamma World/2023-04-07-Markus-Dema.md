@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Markus Dema
 creature_name_index: Markus Dema
 notes: ''

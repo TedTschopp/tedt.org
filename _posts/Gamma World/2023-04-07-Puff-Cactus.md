@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Puff Cactus
 creature_name_index: Puff Cactus
 notes: ''

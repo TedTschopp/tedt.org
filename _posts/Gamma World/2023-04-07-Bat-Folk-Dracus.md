@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Bat Folk «Dracus»
 creature_name_index: Dracus
 notes: ''

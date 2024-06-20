@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Crusty 'Uns «Crustean»
 creature_name_index: Crustean
 notes: ''

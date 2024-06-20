@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Sword Beetles «Parn»
 creature_name_index: Parn
 notes: ''

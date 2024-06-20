@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Green Lantern «Ti'tal»
 creature_name_index: Ti'tal
 notes: ''

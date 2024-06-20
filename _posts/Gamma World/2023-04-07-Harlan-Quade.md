@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Harlan Quade
 creature_name_index: Harlan Quade
 notes: ''

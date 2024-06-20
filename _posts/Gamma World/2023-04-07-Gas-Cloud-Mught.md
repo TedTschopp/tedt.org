@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Gas Cloud «Mught»
 creature_name_index: Mught
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Mayday Bug «Euryl»
 creature_name_index: Euryl
 notes: ''

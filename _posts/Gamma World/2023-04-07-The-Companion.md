@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: The Companion
 creature_name_index: The Companion
 notes: ''

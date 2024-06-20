@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Ecobot - farm
 creature_name_index: Ecobot - farm
 notes: ''

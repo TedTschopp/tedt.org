@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Tanglepus
 creature_name_index: Tanglepus
 notes: ''

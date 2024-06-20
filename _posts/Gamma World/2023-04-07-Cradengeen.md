@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Cradengeen
 creature_name_index: Cradengeen
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Lobsterfish
 creature_name_index: Lobsterfish
 notes: ''

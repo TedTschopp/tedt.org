@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: North «Nort»
 creature_name_index: Nort
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Rescue Bot «Disaster Robot»
 creature_name_index: Disaster Robot
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Deep Dwellers «Marlok»
 creature_name_index: Marlok
 notes: ''

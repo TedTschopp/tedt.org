@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Manhunter - Underground Drone
 creature_name_index: Manhunter - Underground Drone
 notes: ''

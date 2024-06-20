@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Muse Device
 creature_name_index: Muse Device
 notes: ''

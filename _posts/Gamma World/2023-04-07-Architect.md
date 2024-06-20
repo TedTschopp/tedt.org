@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Architect
 creature_name_index: Architect
 notes: ''

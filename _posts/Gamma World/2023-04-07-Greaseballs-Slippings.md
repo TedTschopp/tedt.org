@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Greaseballs «Slippings»
 creature_name_index: Slippings
 notes: ''

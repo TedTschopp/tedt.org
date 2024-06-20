@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Arrowbeak
 creature_name_index: Arrowbeak
 notes: ''

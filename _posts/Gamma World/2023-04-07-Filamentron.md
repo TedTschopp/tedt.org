@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Filamentron
 creature_name_index: Filamentron
 notes: ''

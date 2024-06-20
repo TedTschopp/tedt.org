@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Powdery Snow Rat «Harod»
 creature_name_index: Harod
 notes: ''

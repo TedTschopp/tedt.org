@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Propeller «Whirrzler»
 creature_name_index: Whirrzler
 notes: ''

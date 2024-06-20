@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Silverback
 creature_name_index: Silverback
 notes: ''

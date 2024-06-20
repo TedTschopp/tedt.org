@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Whirligig «Belo»
 creature_name_index: Belo
 notes: ''

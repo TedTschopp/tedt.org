@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Man-Fish «Fen»
 creature_name_index: Fen
 notes: ''

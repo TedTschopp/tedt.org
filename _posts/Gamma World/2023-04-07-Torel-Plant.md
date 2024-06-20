@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Torel Plant
 creature_name_index: Torel Plant
 notes: ''

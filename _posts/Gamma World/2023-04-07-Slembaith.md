@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Slembaith
 creature_name_index: Slembaith
 notes: ''

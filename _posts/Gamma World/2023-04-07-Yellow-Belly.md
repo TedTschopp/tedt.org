@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Yellow Belly
 creature_name_index: Yellow Belly
 notes: ''

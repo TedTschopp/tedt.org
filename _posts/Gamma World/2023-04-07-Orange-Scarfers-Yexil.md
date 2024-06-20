@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Orange Scarfers «Yexil»
 creature_name_index: Yexil
 notes: ''

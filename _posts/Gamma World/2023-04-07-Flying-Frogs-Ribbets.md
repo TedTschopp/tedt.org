@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flying Frogs «Ribbets»
 creature_name_index: Ribbets
 notes: ''

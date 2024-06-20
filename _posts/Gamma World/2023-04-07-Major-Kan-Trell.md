@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Major Kan-Trell
 creature_name_index: Major Kan-Trell
 notes: ''

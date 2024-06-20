@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Debris Removal System
 creature_name_index: Debris Removal System
 notes: ''

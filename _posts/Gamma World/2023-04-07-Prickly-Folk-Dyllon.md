@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Prickly Folk «Dyllon»
 creature_name_index: Dyllon
 notes: ''

@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Spiny Recluses «Deng Kheshes»
 creature_name_index: Deng Kheshes
 notes: ''

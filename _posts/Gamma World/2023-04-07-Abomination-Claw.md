@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Abomination Claw
 creature_name_index: Abomination Claw
 notes: ''

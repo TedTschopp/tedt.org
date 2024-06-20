@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Ugly Friend «Holcut»
 creature_name_index: Holcut
 notes: ''

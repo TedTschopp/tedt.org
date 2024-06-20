@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Braintaker
 creature_name_index: Braintaker
 notes: ''

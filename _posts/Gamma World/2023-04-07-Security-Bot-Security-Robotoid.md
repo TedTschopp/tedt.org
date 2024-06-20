@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Security Bot «Security Robotoid»
 creature_name_index: Security Robotoid
 notes: ''

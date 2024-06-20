@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Trechlily
 creature_name_index: Trechlily
 notes: ''

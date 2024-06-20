@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flaming Bush «Smokerth»
 creature_name_index: Smokerth
 notes: ''

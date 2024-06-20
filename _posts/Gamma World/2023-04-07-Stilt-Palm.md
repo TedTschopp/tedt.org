@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Stilt Palm
 creature_name_index: Stilt Palm
 notes: ''

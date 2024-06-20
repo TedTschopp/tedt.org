@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: LanternBug
 creature_name_index: LanternBug
 notes: ''

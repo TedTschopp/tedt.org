@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Cloudeater
 creature_name_index: Cloudeater
 notes: ''

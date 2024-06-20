@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Black Harvester
 creature_name_index: Black Harvester
 notes: ''

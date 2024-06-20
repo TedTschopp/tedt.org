@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Bigguns «Bof»
 creature_name_index: Bof
 notes: ''

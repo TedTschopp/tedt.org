@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Flying Death «Ka'tal»
 creature_name_index: Ka'tal
 notes: Fixed

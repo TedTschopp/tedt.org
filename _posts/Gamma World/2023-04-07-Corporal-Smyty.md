@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Corporal Smyty
 creature_name_index: Corporal Smyty
 notes: ''

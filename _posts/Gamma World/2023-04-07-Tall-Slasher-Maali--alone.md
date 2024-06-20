@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Tall Slasher «Maali - alone»
 creature_name_index: Maali - alone
 notes: ''

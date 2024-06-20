@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Man-o-War «Armada»
 creature_name_index: Armada
 notes: ''

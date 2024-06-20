@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Blue Meanies «Ceruleans»
 creature_name_index: Ceruleans
 notes: ''

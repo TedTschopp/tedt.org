@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Spiny Craw
 creature_name_index: Spiny Craw
 notes: ''

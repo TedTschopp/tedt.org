@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Slimy Grazer
 creature_name_index: Slimy Grazer
 notes: ''

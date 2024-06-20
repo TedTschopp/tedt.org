@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Rock that Gasses «Ba'mutan»
 creature_name_index: Ba'mutan
 notes: ''

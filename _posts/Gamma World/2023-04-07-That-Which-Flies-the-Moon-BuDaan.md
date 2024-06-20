@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: That Which Flies the Moon «Bu'Daan»
 creature_name_index: Bu'Daan
 notes: ''

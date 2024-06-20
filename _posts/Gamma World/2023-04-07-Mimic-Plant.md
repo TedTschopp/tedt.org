@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: Mimic Plant
 creature_name_index: Mimic Plant
 notes: ''

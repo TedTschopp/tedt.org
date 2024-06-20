@@ -1,5 +1,5 @@
 ---
-image: 
+image:
 title: EndedHere
 creature_name_index: Killer Kelp
 notes: EndedHere
