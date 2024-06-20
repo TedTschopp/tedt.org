@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: Zirra Scrohunter
+author_name: 'Zirra Scrohunter'
 url: ''
 avatar: ''
 mcc_race: ''

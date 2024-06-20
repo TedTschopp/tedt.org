@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW01 - The Legion of Gold
 author: ''
-name: Gary Gygax, Paul Reiche III (GW1 Legion of Gold)
+author_name: 'Gary Gygax, Paul Reiche III (GW1 Legion of Gold)'
 url: ''
 avatar: ''
 mcc_race: Plant

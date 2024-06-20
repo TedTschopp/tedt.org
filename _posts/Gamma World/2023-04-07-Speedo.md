@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Mud Glat Walker
 author: ''
-name: Paul Kenney
+author_name: 'Paul Kenney'
 url: ''
 avatar: ''
 mcc_race: ''

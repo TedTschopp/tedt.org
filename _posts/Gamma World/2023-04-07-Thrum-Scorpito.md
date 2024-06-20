@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: Scot F. Kent
+author_name: 'Scot F. Kent'
 url: ''
 avatar: ''
 mcc_race: Animal

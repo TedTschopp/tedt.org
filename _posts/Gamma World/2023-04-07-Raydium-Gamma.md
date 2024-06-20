@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 075
 author: ''
-name: Roger Moore
+author_name: 'Roger Moore'
 url: ''
 avatar: ''
 mcc_race: ''

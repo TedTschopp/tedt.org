@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: The Albuquerque Starport
 author: ''
-name: Paul Reiche III
+author_name: 'Paul Reiche III'
 url: ''
 avatar: ''
 mcc_race: Human

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Claws of the Abomination
 source: GW07 Module
 author: ''
-name: Bruce Nesmith
+author_name: 'Bruce Nesmith'
 url: ''
 avatar: ''
 mcc_race: Plant

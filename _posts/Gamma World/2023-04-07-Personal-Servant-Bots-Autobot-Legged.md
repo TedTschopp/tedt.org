@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Attend-a-Walker
 source: 3rd Edition
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

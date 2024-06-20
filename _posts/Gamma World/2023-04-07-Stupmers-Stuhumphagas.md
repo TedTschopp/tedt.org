@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 126
 author: ''
-name: John M. Maxstadt
+author_name: 'John M. Maxstadt'
 url: ''
 avatar: ''
 mcc_race: Animal

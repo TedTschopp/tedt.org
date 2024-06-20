@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: The Barracks Raid
 author: ''
-name: Russ Westbrook
+author_name: 'Russ Westbrook'
 url: ''
 avatar: ''
 mcc_race: ''

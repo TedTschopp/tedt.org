@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW05 - Rapture of the Deep
 author: ''
-name: Derek M. Holland
+author_name: 'Derek M. Holland'
 url: ''
 avatar: ''
 mcc_race: Plant

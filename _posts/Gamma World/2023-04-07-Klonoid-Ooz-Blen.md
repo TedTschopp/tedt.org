@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW03 - The Cleansing War of Garik Blackhand
 author: ''
-name: Michael Price & Garry Spiegle
+author_name: 'Michael Price & Garry Spiegle'
 url: ''
 avatar: ''
 mcc_race: Plant

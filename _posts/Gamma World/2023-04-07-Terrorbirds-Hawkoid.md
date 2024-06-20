@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Terrorbirds
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Animal

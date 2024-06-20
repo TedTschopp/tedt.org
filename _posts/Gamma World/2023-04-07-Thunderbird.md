@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Thunder Bird
 source: 5th Edition
 author: ''
-name: Andy Collins and Jeff Grubb
+author_name: 'Andy Collins and Jeff Grubb'
 url: ''
 avatar: ''
 mcc_race: Animal

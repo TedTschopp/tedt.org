@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-name: John M. Maxstadt
+author_name: 'John M. Maxstadt'
 url: ''
 avatar: ''
 mcc_race: Plant

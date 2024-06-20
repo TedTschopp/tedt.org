@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: "Master's of the Earth Campaign: MA-5 The Savage Beast"
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: ''

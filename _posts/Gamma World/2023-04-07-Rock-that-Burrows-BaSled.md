@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW06 Module, MM2
 author: ''
-name: Kim Eastland
+author_name: 'Kim Eastland'
 url: ''
 avatar: ''
 mcc_race: Animal

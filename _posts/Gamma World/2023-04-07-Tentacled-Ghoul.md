@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: Neil Whitlow
+author_name: 'Neil Whitlow'
 url: ''
 avatar: ''
 mcc_race: ''

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Battle Bot
 source: 4th Edition
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

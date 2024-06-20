@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: There will be War
 author: ''
-name: Franklin Coppersmith
+author_name: 'Franklin Coppersmith'
 url: ''
 avatar: ''
 mcc_race: 'PHS: Human'

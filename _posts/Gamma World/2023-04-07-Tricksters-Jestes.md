@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-name: William Tracy
+author_name: 'William Tracy'
 url: ''
 avatar: ''
 mcc_race: Human

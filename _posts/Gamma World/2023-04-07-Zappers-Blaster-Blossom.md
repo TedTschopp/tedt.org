@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Plant

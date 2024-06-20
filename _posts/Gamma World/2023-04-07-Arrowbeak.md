@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: Bob Crichton
+author_name: 'Bob Crichton'
 url: ''
 avatar: ''
 mcc_race: Animal

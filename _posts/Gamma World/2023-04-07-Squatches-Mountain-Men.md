@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-name: Randy D. Johns
+author_name: 'Randy D. Johns'
 url: ''
 avatar: ''
 mcc_race: Human

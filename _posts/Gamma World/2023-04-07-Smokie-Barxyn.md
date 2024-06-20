@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW02 - Famine in Far-Go
 author: ''
-name: Michael Price & Garry Spiegle
+author_name: 'Michael Price & Garry Spiegle'
 url: ''
 avatar: ''
 mcc_race: Animal

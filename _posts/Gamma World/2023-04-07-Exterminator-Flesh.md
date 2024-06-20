@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 104
 author: ''
-name: John Man and Brian Shuler
+author_name: 'John Man and Brian Shuler'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

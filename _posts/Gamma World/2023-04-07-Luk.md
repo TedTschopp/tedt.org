@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: 'Masters of the Earth Campaign: MA-2 The Town of Boze'
 author: ''
-name: Paul S. Williams
+author_name: 'Paul S. Williams'
 url: ''
 avatar: ''
 mcc_race: ''

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-name: Danny Moynihan
+author_name: 'Danny Moynihan'
 url: ''
 avatar: ''
 mcc_race: Animal

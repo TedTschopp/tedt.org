@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: BJ Johnson
+author_name: 'BJ Johnson'
 url: ''
 avatar: ''
 mcc_race: Animal

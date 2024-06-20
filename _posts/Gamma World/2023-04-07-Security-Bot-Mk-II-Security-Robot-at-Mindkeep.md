@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Security Bot Mark II
 source: GW06 Module
 author: ''
-name: Kim Eastland
+author_name: 'Kim Eastland'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

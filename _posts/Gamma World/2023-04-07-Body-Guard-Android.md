@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth Body Guard
 source: GW07 Module
 author: ''
-name: Bruce Nesmith
+author_name: 'Bruce Nesmith'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

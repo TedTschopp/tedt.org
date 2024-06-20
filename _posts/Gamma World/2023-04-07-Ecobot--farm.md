@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Ted Tschopp
 author: ''
-name: Ted Tschopp
+author_name: 'Ted Tschopp'
 url: ''
 avatar: ''
 mcc_race: ''

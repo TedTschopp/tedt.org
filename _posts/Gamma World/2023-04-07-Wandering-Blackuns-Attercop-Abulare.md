@@ -10,7 +10,7 @@ other_names: Wandering Black Ones
 generic_name: Wandering Black Ones
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Animal

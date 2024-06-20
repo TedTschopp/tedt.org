@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW08 Module
 author: ''
-name: Kim Eastland
+author_name: 'Kim Eastland'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

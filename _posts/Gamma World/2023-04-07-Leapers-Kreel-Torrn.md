@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-name: Douglas A. Lent
+author_name: 'Douglas A. Lent'
 url: ''
 avatar: ''
 mcc_race: Animal

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-name: Dan Snuffin
+author_name: 'Dan Snuffin'
 url: ''
 avatar: ''
 mcc_race: Animal

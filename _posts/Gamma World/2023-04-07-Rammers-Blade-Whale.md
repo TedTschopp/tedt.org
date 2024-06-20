@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 098
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: ''

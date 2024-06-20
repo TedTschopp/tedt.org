@@ -10,7 +10,7 @@ other_names: Ert Naphtha
 generic_name: Fire Fish
 source: 1st Edition
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Animal

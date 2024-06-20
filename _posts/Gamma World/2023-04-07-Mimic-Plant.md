@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW04 - The Mind Masters
 author: ''
-name: Phil Taterczynski
+author_name: 'Phil Taterczynski'
 url: ''
 avatar: ''
 mcc_race: Plant

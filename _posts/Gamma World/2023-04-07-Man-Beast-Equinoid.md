@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW08 Module
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Human

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW05 - Rapture of the Deep
 author: ''
-name: Les Braun
+author_name: 'Les Braun'
 url: ''
 avatar: ''
 mcc_race: Human

@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW05 - Rapture of the Deep
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: ''

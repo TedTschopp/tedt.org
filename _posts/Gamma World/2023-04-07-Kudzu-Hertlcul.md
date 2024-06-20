@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: BK "death_machine_2416"
+author_name: 'BK "death_machine_2416"'
 url: ''
 avatar: ''
 mcc_race: ''

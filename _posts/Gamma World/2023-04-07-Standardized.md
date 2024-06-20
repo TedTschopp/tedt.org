@@ -10,7 +10,7 @@ other_names: Template
 generic_name: ''
 source: 6th Edition - Beyond the Horizon
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: ''

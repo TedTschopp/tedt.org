@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Polyhedron 27
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: ''

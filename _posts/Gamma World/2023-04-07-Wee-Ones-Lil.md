@@ -10,7 +10,7 @@ other_names: Tinks, Fae, Wisps
 generic_name: ''
 source: Paths of the Lil in White Dwarf
 author: ''
-name: James M. Ward
+author_name: 'James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Human

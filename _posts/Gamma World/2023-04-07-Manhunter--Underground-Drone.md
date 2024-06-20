@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 113
 author: ''
-name: Scott A. Hutcheon
+author_name: 'Scott A. Hutcheon'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

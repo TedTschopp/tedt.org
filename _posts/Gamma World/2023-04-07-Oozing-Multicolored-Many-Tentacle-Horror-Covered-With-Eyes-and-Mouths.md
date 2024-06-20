@@ -11,7 +11,7 @@ other_names: ''
 generic_name: ''
 source: 'METAMORPHOSIS ALPHA TO OMEGA ADVENTURE 1: The Quest for Elvis'
 author: ''
-name: Russ Westbrook
+author_name: 'Russ Westbrook'
 url: ''
 avatar: ''
 mcc_race: ''

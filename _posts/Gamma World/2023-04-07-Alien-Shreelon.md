@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Omega Project
 author: ''
-name: ''
+author_name: ''''
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

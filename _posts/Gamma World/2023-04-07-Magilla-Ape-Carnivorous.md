@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: MM2
 author: ''
-name: Brutorz Bill
+author_name: 'Brutorz Bill'
 url: ''
 avatar: ''
 mcc_race: Animal

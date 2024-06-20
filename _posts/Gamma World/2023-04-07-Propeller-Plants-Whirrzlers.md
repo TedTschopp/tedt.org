@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magainze 130
 author: ''
-name: John M. Maxstadt
+author_name: 'John M. Maxstadt'
 url: ''
 avatar: ''
 mcc_race: Plant
