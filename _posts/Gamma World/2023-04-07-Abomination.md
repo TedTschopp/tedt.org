@@ -1,5 +1,5 @@
 ---
-image: 'Abomination.png'
+image: '/RPG/MCC-GW/images/Monster-Manual/Abomination.png'
 title: Abomination
 creature_name_index: Abomination
 notes: ''
