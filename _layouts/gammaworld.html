@@ -73,7 +73,7 @@
 
                               <div class="position-relative col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
                                    <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
-                                   <p class="position-absolute text-danger fs-1 m-0" style="text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
+                                   <p class="position-absolute text-danger fs-1 m-5" style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
                                    {% if random_number == 1 %}
                                         Image file not found.
                                    {% elsif random_number == 2 %}
@@ -462,7 +462,7 @@
     <script>
         // put in the image
         var imgJscii = new Jscii({
-            width: 100,
+            width: 200,
             color: true,
             el: document.getElementById('jscii-element-image'),
             fn: function(str) {
