@@ -52,12 +52,12 @@
             <td id=papermargin_left>
             </td>
             <td id="paper_printarea" class="tech-v">
-                         
+                         <!--
                          <figure>
                               <img style="width: 100%; mix-blend-mode: multiply;" class="img-responsive img-thumbnail" src="{{ site.siteurl }}/RPG/MCC-GW/images/GammaWorldHeaderEdited.webp" id="jscii-element-image">
                               <pre id="ascii-container-image"></pre>
                          </figure>
-                         
+                         -->
 
                          {% if page.title != "" %}
                               <h1 class="MCC">{{ page.title }}</h1>
@@ -72,7 +72,10 @@
                               {% assign random_number = current_second | modulo: 12 | plus: 1 %}
 
                               <div class="position-relative col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
-                                   <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
+                                   <figure>
+                                        <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png">
+                                        <pre id="ascii-container-image"></pre>
+                                   </figure>
                                    <p class="position-absolute text-danger fs-1 m-5" style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
                                    {% if random_number == 1 %}
                                         Image file not found.
@@ -462,7 +465,7 @@
     <script>
         // put in the image
         var imgJscii = new Jscii({
-            width: 200,
+            width: 150,
             color: true,
             el: document.getElementById('jscii-element-image'),
             fn: function(str) {
