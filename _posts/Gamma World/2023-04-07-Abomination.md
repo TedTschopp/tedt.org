@@ -1,5 +1,5 @@
 ---
-image: ''
+image: 'Abomination.png'
 title: Abomination
 creature_name_index: Abomination
 notes: ''
