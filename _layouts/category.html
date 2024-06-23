@@ -81,7 +81,7 @@
                               <div class="container">
                                 <div class="row align-items-stretch">
 
-                                  {% if post.image %}
+                                  {% if post.image or post.image == '' %}
                                     {% if post.image-alt %}
                                         {% assign image_alt = post.image-alt %}
                                     {% elsif post.image-description %}
