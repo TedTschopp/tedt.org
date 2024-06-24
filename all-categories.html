@@ -1,27 +1,27 @@
 ---
 layout: null
 sitemap:
-  exclude: 'yes'
+    exclude: 'yes'
 ---
 
 {% assign all_categories = "" | split: "" %}
 
 {% for collection in site.collections %}
-  {% assign collection_docs = collection[1].docs %}
-  {% for doc in collection_docs %}
-    {% assign doc_categories = doc.categories %}
-    {% assign doc_Category = doc.Category %}
-    {% assign all_doc_categories = doc_categories | concat: doc_Category %}
-    {% assign all_categories = all_categories | concat: all_doc_categories %}
-  {% endfor %}
+    {% assign collection_name = collection.label %}
+    {% assign collection_docs = collection.docs %}
+    {% for doc in collection_docs %}
+        {% assign doc_categories = doc.categories %}
+        {% assign doc_Category = doc.Category %}
+        {% assign all_doc_categories = doc_categories | concat: doc_Category %}
+        {% assign all_categories = all_categories | concat: all_doc_categories %}
+    {% endfor %}
 {% endfor %}
 
 {% assign unique_categories = all_categories | uniq | sort %}
 <ul>
-  {% for category in unique_categories %}
-    {% if category != "" %}
-      <li>{{ category }}</li>
-    {% endif %}
-  {% endfor %}
+    {% for category in unique_categories %}
+        {% if category != "" %}
+            <li>{{ category }}</li>
+        {% endif %}
+    {% endfor %}
 </ul>
-
