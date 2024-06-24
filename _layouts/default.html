@@ -281,7 +281,7 @@
                               {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">
-                                    % if post.image != nil and post.image != empty and post.image != "" %}
+                                    {% if post.image != nil and post.image != empty and post.image != "" %}
                                       {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
                                       {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
                                       {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
