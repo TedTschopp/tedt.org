@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: "Master's of the Earth Campaign: MA-4 To the Rescue"
 author: ''
-author_name: ''''
+author_name: ''
 url: ''
 avatar: ''
 mcc_race: ''

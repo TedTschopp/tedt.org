@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Badder to the Bone II
 author: ''
-author_name: ''''
+author_name: ''
 url: ''
 avatar: ''
 mcc_race: ''

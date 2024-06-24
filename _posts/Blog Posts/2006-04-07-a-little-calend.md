@@ -37,7 +37,7 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image: /img/2006-04/calendar.png
 image-alt:
 image-artist:
 image-artist-URL:

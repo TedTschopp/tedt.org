@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: 6th Edition - Machines & Mutants
 author: ''
-author_name: ''''
+author_name: Alejandro Melchor, Bruce Baugh, Chuck Wendig, David Bolack, Doug Oglesby, Ellen Kiley, Gareth Hanrahan, Geoff Skellams, Ian Eller, James Maliszewski, John Snead, Lizard, Mikko Rautalahti, Owen K.C. Stephens, Patrick O'Duffy, or Werner Hager
 url: ''
 avatar: ''
 mcc_race: ''

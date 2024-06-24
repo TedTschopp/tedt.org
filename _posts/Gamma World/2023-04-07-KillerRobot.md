@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Famine at Fargo 7th Edition
 author: ''
-author_name: ''''
+author_name: ''
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'
