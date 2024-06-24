@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Abomination Claw.png'
 title: Abomination Claw
 creature_name_index: Abomination Claw
 notes: ''
