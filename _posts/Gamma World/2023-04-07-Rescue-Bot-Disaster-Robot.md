@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Rescue Bot
 source: 4th Edition
 author: ''
-author_name: ''
+author_name: 'Bruce Nesmith and James M. Ward'
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'

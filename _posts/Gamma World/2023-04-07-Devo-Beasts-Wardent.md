@@ -10,7 +10,7 @@ other_names: Boggart
 generic_name: Boggart
 source: 2nd Edition
 author: ''
-author_name: 'James M. Ward'
+author_name: 'James M. Ward, Gary Jaquet, and David James Ritchie'
 url: ''
 avatar: ''
 mcc_race: Human

@@ -10,7 +10,7 @@ other_names: Lizardmen
 generic_name: Lizardmen
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward'
+author_name: 'James M. Ward and Gary Jaquet'
 url: ''
 avatar: ''
 mcc_race: Animal

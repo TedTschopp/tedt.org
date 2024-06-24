@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Swamp Donkey
 source: 4th Edition
 author: ''
-author_name: ''
+author_name: 'Bruce Nesmith and James M. Ward'
 url: ''
 avatar: ''
 mcc_race: Animal
