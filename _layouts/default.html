@@ -277,7 +277,17 @@
                             </div>
 
                             <div class="card-footer p-0">
-                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" | sort: "date" | reverse %}
+                              {% assign category_data_title_downcased = category_data_title | downcase %}
+                              {% assign filtered_posts = "" | split: "" %} <!-- Create an empty array -->
+
+                              {% for post in site.posts %}
+                                {% assign post_categories_downcased = post.categories | map: 'downcase' %}
+                                {% if post_categories_downcased contains category_data_title_downcased %}
+                                  {% assign filtered_posts = filtered_posts | push: post %}
+                                {% endif %}
+                              {% endfor %}
+
+                              <!-- Now, filtered_posts contains posts where the category matches category_data_title in a case-insensitive manner -->
                               {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">
