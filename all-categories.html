@@ -12,7 +12,12 @@ sitemap:
     {% for doc in collection_docs %}
         {% assign doc_categories = doc.categories %}
         {% assign doc_Category = doc.Category %}
-        {% assign all_doc_categories = doc_categories | concat: doc_Category %}
+        {% if doc_Category %}
+            {% assign doc_Category_Array = doc_Category | split: "|" %}
+        {% else %}
+            {% assign doc_Category_Array = "" | split: "" %}
+        {% endif %}
+        {% assign all_doc_categories = doc_categories | concat: doc_Category_Array %}
         {% assign all_categories = all_categories | concat: all_doc_categories %}
     {% endfor %}
 {% endfor %}
