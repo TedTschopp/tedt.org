@@ -202,7 +202,7 @@
                       {% assign category_data_subtitle = category.subtitle %}
                       {% assign category_data_description = category.description %}
                       {% assign category_data_img = category.image %}
-                      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                      <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
                         <div class="card-group">
                           <div class="card">
                             <div class="position-relative">
@@ -259,25 +259,16 @@
                                 <span class="visually-hidden">Next</span>
                               </button>
 
-                              {% comment %}
-                              <div class="carousel-indicators row w-100 p-0 m-0 position-absolute bottom-0">
-                                {% assign categories_buttons = site.categories %}
-                                {% for category_button in categories_buttons %}
-                                  <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{ forloop.index0 }}" class="carousel-button {% if forloop.first %}active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
-                                {% endfor %}
-                              </div>
-                              {% endcomment %}
-
                             </div>
 
                             <div class="card-body pt-2 pb-2 p-4">
-                              <h2 class="card-title"><a href="/category/{{ category_data_title }}">{{ category_data_title }}</a></h2>
+                              <h2 class="card-title"><a href="/category/{{ category }}">{{ category_data_title }}</a></h2>
                               <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data_subtitle }}</h3>
                               <p class="card-text">{{ category_data_description }}</p>
                             </div>
 
                             <div class="card-footer p-0">
-                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category_data_title" | sort: "date" | reverse %}
+                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category" | sort: "date" | reverse %}
                               {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">
