@@ -1,5 +1,8 @@
 - category: Bestiary
   title: "Bestiary"
+  class-to-assign: ""
+  Text-to-assign: ""
+  emoji: "🐉"
   subtitle: "Creatures and Beasts from All Realms"
   description: "Detailed lore, stats, and vivid descriptions of mythical and game creatures. Enhance your adventures and campaigns with rich information on various beasts."
   image: "/img/categories/bestiary.webp"
