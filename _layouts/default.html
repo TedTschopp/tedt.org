@@ -59,7 +59,7 @@
                   <h3 class="text-muted card-subtitle h5 mb-2">Exploring the Intersection of Tech, Theology, and Imagination</h3>
                   <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                 </div>
-                <div class="card-footer p-4 py-3 h-100">
+                <div class="card-footer p-0 py-0 h-100">
                   {% assign count = 0 %}
                   {% for post in site.posts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
@@ -82,19 +82,7 @@
                         {% break %}
                       {% endif %}
 
-                      {% comment %}
-                      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                      {% if post.teaser %}
-                        <p class="card-text">{{ post.teaser }}</p>
-                      {% elsif post.description %}
-                        <p class="card-text">{{ post.description }}</p>
-                      {% else %}
-                        <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
-                      {% endif %}
-                      {% endcomment %}
-
-
-                        <div class="container">
+                      <div class="container">
                           <div class="row align-items-stretch">
                             {% if post.image %}
                               {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
@@ -154,9 +142,7 @@
                               </div>
                             {% endif %}
                           </div>
-                        </div>
-
-
+                      </div>
 
                     {% endif %}
                   {% endfor %}
@@ -176,17 +162,6 @@
                 <div class="card-footer p-0 py-0 h-100">
                   {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" | sort: "date" | reverse %}
                   {% for post in posts-drafts limit:3 %}
-                    {% comment %}
-                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                    {% if post.teaser %}
-                      <p class="card-text">{{ post.teaser }}</p>
-                    {% elsif post.description %}
-                      <p class="card-text">{{ post.description }}</p>
-                    {% else %}
-                      <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
-                    {% endif %}
-                    {% endcomment %}
-                    
                     <div class="container">
                       <div class="row align-items-stretch">
                         {% if post.image %}
@@ -248,11 +223,6 @@
                         {% endif %}
                       </div>
                     </div>
-
-
-
-
-
                   {% endfor %}
                 </div>
               </div>
@@ -260,9 +230,6 @@
 
             <div class="col">
               <div class="card h-100 d-flex flex-column">
-
-                <!-- Where indicators use to be -->
-
                 <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
                   <div class="carousel-inner">
                     {% assign categories = site.data['categories-on-blog'] %}
@@ -334,7 +301,6 @@
                               <h2 class="card-title"><a href="/category/{{ category.category }}">{{ category_data_title }}</a></h2>
                               <h3 class="text-muted card-subtitle h5 mb-2">{{ category_data_subtitle }}</h3>
                               <p class="card-text">{{ category_data_description }}</p>
-                              <!--<code class="language-ruby">{{ category }}</code>-->
                             </div>
 
                             <div class="card-footer p-0">
