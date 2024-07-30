@@ -81,6 +81,8 @@
                       {% if count > 3 %}
                         {% break %}
                       {% endif %}
+
+                      {% comment %}
                       <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                       {% if post.teaser %}
                         <p class="card-text">{{ post.teaser }}</p>
@@ -89,6 +91,73 @@
                       {% else %}
                         <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                       {% endif %}
+                      {% endcomment %}
+
+
+                        <div class="container">
+                          <div class="row align-items-stretch">
+                            {% if post.image %}
+                              {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
+                              {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
+                              {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
+                              {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
+                              {% assign image_URL = post.image %}
+                              <div class="card p-0 h-100 position-relative">
+                                <div class="row g-0 h-100">
+                                  <div class="col-md-4 h-100">
+                                    <div class="" backup-class="ratio ratio-3x1">
+                                      <img src="{{ image_URL }}" class="img-fluid rounded-start object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-8 d-flex align-items-center">
+                                    <div class="card-body">
+                                      <dl>
+                                        <div class="card-title">
+                                          <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
+                                        </div>
+                                        <div class="card-text">
+                                          <div class="text-truncate-2">
+                                            <dd class="card-text">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</dd>
+                                          </div>
+                                        </div>
+                                      </dl>
+                                      <div class="card-text">
+                                        Posted on <small class="text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small>
+                                      </div>
+                                      <a href="{{ post.url | absolute_url }}" class="stretched-link"></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            {% else %}
+                              <div class="card p-0 h-100 position-relative">
+                                <div class="row g-0 h-100">
+                                  <div class="col-md-12 d-flex align-items-center">
+                                    <div class="card-body">
+                                      <dl>
+                                        <div class="card-title">
+                                          <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
+                                        </div>
+                                        <div class="card-text">
+                                          <div class="text-truncate-2">
+                                            <dd class="card-text">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</dd>
+                                          </div>
+                                        </div>
+                                      </dl>
+                                      <div class="card-text">
+                                        Posted on <small class="text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small>
+                                      </div>
+                                      <a href="{{ post.url | absolute_url }}" class="stretched-link"></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            {% endif %}
+                          </div>
+                        </div>
+
+
+
                     {% endif %}
                   {% endfor %}
                 </div>
@@ -137,7 +206,7 @@
                                 <div class="card-body">
                                   <dl>
                                     <div class="card-title">
-                                      <dt><h4><a href="{{ post.url | absolute_url }}" class="text-decoration-none">{{ post.title }}</a></h4></dt>
+                                      <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
                                     </div>
                                     <div class="card-text">
                                       <div class="text-truncate-2">
@@ -160,7 +229,7 @@
                                 <div class="card-body">
                                   <dl>
                                     <div class="card-title">
-                                      <dt><h4><a href="{{ post.url | absolute_url }}" class="text-decoration-none">{{ post.title }}</a></h4></dt>
+                                      <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
                                     </div>
                                     <div class="card-text">
                                       <div class="text-truncate-2">
@@ -290,7 +359,7 @@
                                             <div class="card-body">
                                               <dl>
                                                 <div class="card-title">
-                                                  <dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt>
+                                                  <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
                                                 </div>
                                                 <div class="card-text">
                                                   <div class="text-truncate-2">
@@ -313,7 +382,7 @@
                                             <div class="card-body">
                                               <dl>
                                                 <div class="card-title">
-                                                  <dt><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></dt>
+                                                  <dt><h4><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4></dt>
                                                 </div>
                                                 <div class="card-text">
                                                   <div class="text-truncate-2">
