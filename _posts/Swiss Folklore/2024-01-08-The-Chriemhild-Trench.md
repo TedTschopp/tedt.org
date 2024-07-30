@@ -80,6 +80,7 @@ order:
 
 ---
 
+> # The Chriemhild Trench
 > A wandering scholar, having learned sorcery in Salamanca[^1], traveled the world with the devil's aid. On his journey, he arrived at Türlersee[^2], where a woman named Chriemhild[^3] lived. She was known for her beauty but was also wicked and envious, especially of her neighbors' more fertile lands.
 > 
 > Chriemhild, long desiring to unleash her spite on her neighbors' property, found the scholar's arrival opportune. Hoping his magic could render their lands barren, she approached him. The scholar, smitten by her beauty, agreed to her wicked request.
@@ -88,6 +89,8 @@ order:
 >
 > Note: On maps, at the end of Türlersee's southwestern bay, one finds the "Häxengraben" (Witch's Trench).
 {: .folklore }
+
+---
 
 [^1]: Salamanca is a municipality and city in Spain located in the autonomous community of Castile and León.  The origins of the city date back to about 2700 years ago, during the first Iron Age, when the first settlers of the city settled on the San Vicente hill, on the banks of the Tormes. Since then, the metropolis has witnessed the passage of various peoples: Vaccaei, Vettones, Romans, Visigoths and Muslims. Raymond of Burgundy, son-in-law of King Alfonso VI of León, was in charge of repopulating the city.  In 1218, Alfonso IX of León founded the University of Salamanca, the oldest University in Spain, as a studium generale.  It went on to become the of such places in Europe to hold the title of university by royal decree of Alfonso X of Castile dated November 9, 1252 and by the licentia ubique docendi of Pope Alexander IV of 1255. During the time when it was one of the most prestigious universities in the West. 
 

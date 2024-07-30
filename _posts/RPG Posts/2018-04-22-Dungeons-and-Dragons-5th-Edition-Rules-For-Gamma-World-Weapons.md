@@ -50,6 +50,12 @@ year-the-event-took-place:
 mathjax:
 
 order:
+
+redirect_from:
+ - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons.html
+ - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/
+ - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons
+
 ---
 
 

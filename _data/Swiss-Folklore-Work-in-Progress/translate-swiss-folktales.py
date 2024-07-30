@@ -1,7 +1,15 @@
-import json
+# translate-swiss-folktales.py
+
+# Import the necessary library
 from openai import OpenAI
 
-client = OpenAI(api_key="***")
+# Prompt the user for their API key
+api_key = input("Please enter your OpenAI API key: ")
+
+# Initialize the OpenAI client with the provided API key
+client = OpenAI(api_key=api_key)
+
+import json
 import time
 import os
 
@@ -22,9 +30,8 @@ def translate_text(text):
     try:
         response = client.chat.completions.create(model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": f"Translate the following into English. Use words that have a German or Norse etymology as much as possible. Transliterate if there is no good word to use in modern English, and explain your decision to transliterate in a footnote using markdown. Output the text as markdown.\n\n{text}"},
-        ])
+            {"role": "system", "content": "You are helpful assistant, an expert language translator, an expert in Markdown, and someone who is familiar with Swiss Folktales."},
+            {"role": "user", "content": f"Translate the following into English. Use words that have a German or Norse etymology as much as possible. Use calque if there is no good word to use in modern English, and explain your decision to use a calque in a footnote using markdown.  If there is anything in the story that needs explaining from a modern American's perspective, explain it with a footnote that links from the translated text to the footnote itself using Markdown.  Output everything as markdown.  Include a list of Specific Locations from the above story that are mentioned.  That list should include the original name of the location, the modern name of that  location, the calque/literal translation of the name in English, the Latitude of the location, the Longitude of that location. Output this table as a markdown table with the mentioned columns. Next, create a table of mundane people or characters mentioned in the story.  Output their name, a description, and the location they are associated with in the story as a markdown table.  Next, create a table of important objects mentioned in the story.  Output their name, a description, and the location they are associated with in the story as a markdown table.  Next, create a table of important non-human, post human, or divine characters, monsters, creatures, forces, or any other characters mentioned in the story that are supernatural in nature.  Output their name, a description, and the location they are associated with in the story.  Do not mention anything about being read by the Mutabor Fairy Tale Foundation.  Make the markdown title be a title of the story that you would want the folktale to have. There will be a line in the text starting with Quelle:, Output that as the subtitle in full starting with the word Source:  \n\n{text}"},       ])
         return response.choices[0].message.content
     except Exception as e:
         print(f"Error: {e}")
@@ -130,8 +137,8 @@ for index, entry in enumerate(data[len(translated_data):len(translated_data) + n
     translated_text = translate_text(entry["Text"])
     print(f"Translated Text: {translated_text}")
 
-    locations = extract_locations(translated_text)
-    print(f"locations: {locations}")
+    # locations = extract_locations(translated_text)
+    # print(f"locations: {locations}")
 
     if translated_title and translated_text:
         translated_entry = {
@@ -147,7 +154,7 @@ for index, entry in enumerate(data[len(translated_data):len(translated_data) + n
             },
             "Author": entry["Author"],
             "Category": entry["Category"],
-            "Specific Locations in the Story": locations
+            # "Specific Locations in the Story": locations
         }
         translated_data.append(translated_entry)
     else:
