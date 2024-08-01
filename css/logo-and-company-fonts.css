@@ -65,7 +65,12 @@
     font-family: "Checkbook", monospace;
     font-style: normal;
 }
-
+.Maps {
+    font-family: "MedievalSharp";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 .DCC {
 	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -212,3 +217,4 @@ a:hover .MCC {
     background: url(/img/home/logo-Tschopp.webp) no-repeat center center;
     background-size: 25% ; /* or contain */
 }
+
