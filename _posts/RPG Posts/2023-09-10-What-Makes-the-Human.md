@@ -194,6 +194,232 @@ All beings have four aspects of their existence. These define the highest catego
 |   Emotional | (-4 thru 4)  |
 {: .well .table .table-striped }
 
+### Fitness
+
+#### Summary Table of Physical Aspects Levels
+
+| Level |       Name        | Description                                                 | Result              | Example                                                                                     |
+|:-----:|:-----------------:|:------------------------------------------------------------|:--------------------|:--------------------------------------------------------------------------------------------|
+|  -4   |  Basic Movement   | Perform basic physical actions such as walking and running. | Basic Movement      | A character runs across a field to escape an enemy.                                         |
+|  -3   |       Power       | Develop basic physical strength.                            | Forceful Actions    | A character lifts a heavy boulder blocking a path.                                          |
+|  -2   |    Flexibility    | Improve coordination and flexibility.                       | Flexible Actions   | A character nimbly dodges through a series of traps.                                        |
+|  -1   |       Vigor       | Build stamina and endurance.                                | Sustained Effort    | A character marches for hours without tiring.                                               |
+|   1   |   Coordination    | Combine power, flexibility, and vigor.                      | Coordinated Actions | A character performs a complex acrobatic routine to navigate a challenging obstacle course. |
+|   2   | Pressure Handling | Maintain physical skills under pressure.                    | Composed Actions    | A character remains calm and coordinated while escaping a collapsing cave.                  |
+|   3   |   Body Mastery    | Achieve mastery over the physical body.                     | Mastery of Body     | A character balances on a narrow ledge with perfect control.                                |
+|   4   | Legendary Prowess | Perform legendary actions remembered and revered.           | Legendary Actions   | A character swims across a raging river and climbs a sheer cliff with unparalleled skill.   |
+{: .well .table .table-striped }
+
+#### Level -4: Basic Movement
+At this introductory level, adventurers can perform basic physical actions such as walking, running, and jumping. Success at this level involves simple movements and basic coordination.
+
+**Result: Basic Movement**
+
+#### Level -3: Power
+This level involves developing basic physical strength. Adventurers can perform tasks requiring brute force, such as lifting heavy objects or breaking down doors.
+
+**Result: Forceful Actions**
+
+#### Level -2: Flexibility
+Adventurers at this level have improved coordination. They can perform more complex movements and actions that require nimbleness.
+
+**Result: Flexibile Actions**
+
+#### Level -1: Vigor
+At this level, adventurers build their stamina and endurance. They can sustain physical activities for longer periods without tiring.
+
+**Result: Sustained Effort**
+
+#### Level 1: Coordination
+Adventurers develop the ability to coordinate power, flexibility, and vigor. They can perform more complex and integrated physical tasks that require a combination of these abilities.
+
+**Result: Coordinated Actions**
+
+#### Level 2: Pressure Handling
+Adventurers refine their physical skills to perform under pressure. They can maintain coordination, power, flexibility, and vigor even in stressful or dangerous situations.
+
+**Result: Composed Actions**
+
+#### Level 3: Body Mastery
+Adventurers achieve mastery over their physical body, allowing them to perform extraordinary physical feats with precision and control.
+
+**Result: Mastery of Body**
+
+#### Level 4: Legendary Prowess
+At the highest level, adventurers become legends of physical prowess. They perform legendary actions that are remembered and revered, showcasing ultimate control and capability over their body.
+
+**Result: Legendary Actions**
+
+### Academic
+
+#### Summary Table of Intelligence Levels
+
+| Level |    Name    | Description                                    | Result                                  | Example                                                                                                                                                                                           |
+|:-----:|:----------:|:-----------------------------------------------|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  -4   |   Recall   | Recall basic facts and information.            | Recall basic lore or rules.             | A player recalls the exact location of the hidden lever that opens a secret door in the dungeon.                                                                                                  |
+|  -3   |  Remember  | Memorize and retain information.               | Regurgitate facts from memory.          | A player recites the effects of a healing potion, including its healing capacity and any side effects.                                                                                            |
+|  -2   | Understand | Comprehend and explain concepts and processes. | Explain concepts in your own words.     | A player explains the history and cultural significance of the Elven kingdom in the game world.                                                                                                   |
+|  -1   |   Apply    | Use knowledge to solve simple problems.        | Simple Problem-Solving                  | A player uses their knowledge that trolls are weak to fire to effectively use a fire spell during combat.                                                                                         |
+|   1   |  Analyze   | Compare and contrast information.              | Compare different strategies.           | A player analyzes the benefits and drawbacks of a ring that grants invisibility versus a cloak that provides protection against spells.                                                           |
+|   2   |  Evaluate  | Make judgments and prioritize information.     | Prioritize actions based on importance. | A player decides to heal a fallen ally instead of attacking the enemy, prioritizing team survival over immediate offense.                                                                         |
+|   3   |   Create   | Synthesize knowledge to create new ideas.      | Hypothesize new solutions.              | A player creates a new spell that combines elements of fire and ice, theorizing its effects and potential uses in different scenarios.                                                            |
+|   4   |  Innovate  | Innovate and refine new ideas and solutions.   | Innovate and implement new strategies.  | A player devises a new approach to infiltrate an enemy fortress using a combination of stealth, magic, and diplomacy, and adjusts the plan based on real-time feedback and unexpected challenges. |
+{: .well .table .table-striped }
+
+#### Level -4: Recall
+At this intructory level, adventurers can recall basic facts and information. This involves remembering simple details and can be used to answer straightforward questions. Success at this level is often about repetition and memorization.
+
+**Result: Recall**
+
+#### Level -3: Remember
+This level involves memorizing and retaining information. Adventurers engage in rote learning, using techniques like flashcards and repetitive reading.
+
+**Result: Regurgitate**
+
+#### Level -2: Understand
+Adventurers at this level comprehend and grasp the meaning of information. They can explain concepts and processes in their own words, showing a deeper understanding.
+
+**Result: Explain**
+
+#### Level -1: Apply
+At this level, adventurers use their knowledge to solve simple problems. They apply learned concepts directly to situations they encounter.
+
+**Result: Simple Problem-Solving**
+
+#### Level 1: Analyze
+Adventurers analyze information, comparing and contrasting different elements. They identify patterns and relationships, leading to more nuanced understanding and problem-solving.
+
+**Result: Compare**
+
+#### Level 2: Evaluate
+Adventurers make judgments based on criteria and standards. They evaluate the importance of information, prioritize it, and make informed decisions.
+
+**Result: Prioritize**
+
+#### Level 3: Create
+Adventurers synthesize knowledge to create new ideas or solutions. They hypothesize and develop innovative approaches to problems.
+
+**Result: Hypothesize**
+
+#### Level 4: Innovate
+At the highest level, adventurers engage in true innovation. They not only create new ideas but also implement and refine them, pushing the boundaries of what is known and possible.
+
+**Result: Innovate**
+
+### Mystical
+
+#### Summary Table of Mystical Levels
+
+| Level | Name                   | Description                                                 | Result                                   | TTRPG Example                        |
+|-------|------------------------|-------------------------------------------------------------|------------------------------------------|--------------------------------------|
+| 0     | Basic Cantrips         | Perform basic magical actions such as casting simple cantrips. | Basic Cantrips                           | A character casts a cantrip to create a small flame for light. |
+| 1     | Spellcasting           | Develop the ability to cast basic spells.                   | Basic Spells                             | A character casts a spell to detect magic in the area. |
+| 2     | Spell Mastery          | Improve control over spells for greater precision.          | Controlled Spells                        | A character casts a fireball with pinpoint accuracy to avoid allies. |
+| 3     | Spell Enhancement      | Enhance spells to increase potency and range.               | Enhanced Spells                          | A character enhances a healing spell to affect multiple allies. |
+| 4     | Spell Integration      | Integrate different spells to create synergistic effects.   | Synergistic Spells                       | A character combines a wind spell and a fire spell to create a blazing inferno. |
+| 5     | Advanced Spellcasting  | Perform complex spells quickly and accurately under pressure.| Composed Spellcasting                   | A character casts a series of protective wards while under attack. |
+| 6     | Archmage               | Achieve mastery over magical abilities.                     | Mastery of Magic                         | A character summons a powerful elemental to aid in battle. |
+| 7     | Legendary Sorcery      | Perform legendary acts of sorcery remembered and revered.   | Legendary Magic                          | A character casts a spell to transport an entire city to a safe location. |
+{: .well .table .table-striped }
+
+#### Level -4: Basic Cantrips
+At this introductory level, adventurers can perform basic magical actions such as casting simple cantrips. Success at this level involves understanding and executing fundamental spells.
+
+**Result: Basic Cantrips**
+
+#### Level -3: Spellcasting
+This level involves developing the ability to cast basic spells. Adventurers can perform simple magical effects and understand the basics of spell components and incantations.
+
+**Result: Basic Spells**
+
+#### Level -2: Spell Mastery
+Adventurers at this level have improved control over their spells. They can cast spells with greater precision and effectiveness.
+
+**Result: Controlled Spells**
+
+#### Level -1: Spell Enhancement
+At this level, adventurers enhance their spells, increasing their potency and range. They can modify spells to better suit different situations.
+
+**Result: Enhanced Spells**
+
+#### Level 1: Spell Integration
+Adventurers develop the ability to integrate different spells and magical effects. They can combine multiple spells to create synergistic effects.
+
+**Result: Synergistic Spells**
+
+#### Level 2: Advanced Spellcasting
+Adventurers refine their spellcasting skills to perform under pressure. They can cast complex spells quickly and accurately even in stressful or dangerous situations.
+
+**Result: Composed Spellcasting**
+
+#### Level 3: Archmage
+Adventurers achieve mastery over their magical abilities, allowing them to perform extraordinary feats of magic with precision and control.
+
+**Result: Mastery of Magic**
+
+#### Level 4: Legendary Sorcery
+At the highest level, adventurers become legends of magical prowess. They perform legendary acts of sorcery that are remembered and revered.
+
+**Result: Legendary Magic**
+
+### Emotional
+
+#### Summary Table of Social Dynamics Levels
+
+| Level | Name                   | Description                                                 | Result                                   | Example                        |
+|:-------:|:------------------------|:-------------------------------------------------------------|:------------------------------------------|:--------------------------------------|
+| -4     | Basic Interaction      | Perform basic social actions such as greeting and small talk.| Basic Interaction                        | A character greets a village elder and engages in polite conversation. |
+| -3     | Persuasion             | Develop basic persuasive skills.                            | Basic Influence                          | A character convinces a guard to let them pass through a gate. |
+| -2     | Empathy                | Improve emotional understanding and rapport-building.       | Emotional Connection                     | A character comforts a grieving NPC, gaining their trust. |
+| -1     | Negotiation            | Build skills in negotiation and compromise.                 | Compromise                               | A character negotiates a fair trade with a merchant. |
+| 1     | Coordination           | Combine persuasion, empathy, and negotiation.               | Team Leadership                          | A character leads a group of adventurers to resolve a conflict between two factions. |
+| 2     | Crisis Management      | Maintain social skills under pressure.                      | Composed Leadership                      | A character calms a panicked crowd during a crisis. |
+| 3     | Social Mastery         | Achieve mastery over social interactions.                   | Social Mastery                           | A character delivers a speech that unites various guilds for a common cause. |
+| 4     | Legendary Influence    | Perform legendary acts of diplomacy and influence.          | Legendary Diplomacy                      | A character negotiates peace between warring nations, earning eternal respect. |
+{: .well .table .table-striped }
+
+#### Level -4: Basic Interaction
+At this introductory level, adventurers can perform basic social actions such as greeting others and engaging in small talk. Success at this level involves simple communication and basic etiquette.
+
+**Result: Basic Interaction**
+
+#### Level -3: Persuasion
+This level involves developing basic persuasive skills. Adventurers can influence others through simple arguments and appeals.
+
+**Result: Basic Influence**
+
+#### Level -2: Empathy
+Adventurers at this level have improved emotional understanding and can relate to others' feelings. They can build rapport and trust more effectively.
+
+**Result: Emotional Connection**
+
+#### Level -1: Negotiation
+At this level, adventurers build their skills in negotiation and compromise. They can navigate conflicts and find mutually beneficial solutions.
+
+**Result: Compromise**
+
+#### Level 1: Coordination
+Adventurers develop the ability to coordinate persuasion, empathy, and negotiation. They can manage group dynamics and lead teams effectively.
+
+**Result: Team Leadership**
+
+#### Level 2: Crisis Management
+Adventurers refine their social skills to perform under pressure. They can maintain calm and lead effectively even in stressful or high-stakes social situations.
+
+**Result: Composed Leadership**
+
+#### Level 3: Mastery
+Adventurers achieve mastery over their social interactions, allowing them to influence and inspire others with precision and control.
+
+**Result: Social Mastery**
+
+#### Level 4: Legendary Influence
+At the highest level, adventurers become legends of social dynamics. They perform legendary acts of diplomacy and influence that are remembered and revered.
+
+**Result: Legendary Diplomacy**
+
+
+
 
 ## Characteristics
 
@@ -1517,19 +1743,19 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 ##### Table with Physical Sciences/Survival skill and examples for each level of difficulty
 
-| Difficulty        | Survival                                                                                                                                                                                                                                                      |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Hunt pigeons, Rats, and Mice within a city                                                                                                                                                                                                                    |
-| Simple            | Go Fishing with supplies                                                                                                                                                                                                                                      |
-| Easy              | Forage for roots, and berries in the wilderness                                                                                                                                                                                                               |
-| Routine           | Build a shelter out of tree limbs, grass, and leaves                                                                                                                                                                                                          |
-| Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
-| Difficult         | Construct an improvised weapon                                                                                                                                                                                                                                |
-| Very Difficult    | Track a small animal                                                                                                                                                                                                                                          |
-| Formidable        | Track the passing of a single person through wild                                                                                                                                                                                                             |
-| Heroic            | Find a source of water in the deep desert                                                                                                                                                                                                                     |
-| Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |
-| Godly             | Construct a fire under water                                                                                                                                                                                                                                  |{: .well .table .table-striped }
+| Difficulty        | Survival                                                                                                                                                                                                                                                      |                                  |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Trivial           | Hunt pigeons, Rats, and Mice within a city                                                                                                                                                                                                                    |                                  |
+| Simple            | Go Fishing with supplies                                                                                                                                                                                                                                      |                                  |
+| Easy              | Forage for roots, and berries in the wilderness                                                                                                                                                                                                               |                                  |
+| Routine           | Build a shelter out of tree limbs, grass, and leaves                                                                                                                                                                                                          |                                  |
+| Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |                                  |
+| Difficult         | Construct an improvised weapon                                                                                                                                                                                                                                |                                  |
+| Very Difficult    | Track a small animal                                                                                                                                                                                                                                          |                                  |
+| Formidable        | Track the passing of a single person through wild                                                                                                                                                                                                             |                                  |
+| Heroic            | Find a source of water in the deep desert                                                                                                                                                                                                                     |                                  |
+| Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |                                  |
+| Godly             | Construct a fire under water                                                                                                                                                                                                                                  | {: .well .table .table-striped } |
 
 
 
