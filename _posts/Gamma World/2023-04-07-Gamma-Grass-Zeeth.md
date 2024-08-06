@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Zeeth.png'
 title: Gamma Grass «Zeeth»
 creature_name_index: Zeeth
 notes: ''
