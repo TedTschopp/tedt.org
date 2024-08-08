@@ -220,8 +220,8 @@ a:hover .MCC {
 .Tschopp-watermark::before {
     content: "";
     display: block;
-    width: 25%; /* Adjust as needed */
-    height: 25%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background: url(/img/home/logo-Tschopp.webp) no-repeat center center;
     background-size: contain; /* Ensures the entire image is displayed */
 }
