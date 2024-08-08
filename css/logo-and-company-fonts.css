@@ -203,18 +203,30 @@ a:hover .MCC {
 }
 
 .Dohring-watermark::before {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background: url(/img/home/logo-Dohring.webp) no-repeat center center;
-    background-size: 50% ; /* or contain */
+    background-size: contain; /* Ensures the entire image is displayed */
 }
 
 .TORC-watermark::before {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background: url(/img/home/logo-TORC.webp) no-repeat center center;
-    background-size: contain ; /* or contain */
+    background-size: contain; /* Ensures the entire image is displayed */
 }
 
 .SCE-watermark::before {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background: url(/img/home/logo-SCE.webp) no-repeat center center;
-    background-size: 50% ; /* or contain */
+    background-size: contain; /* Ensures the entire image is displayed */
 }
 
 .Tschopp-watermark::before {
