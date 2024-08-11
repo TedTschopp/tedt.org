@@ -28,7 +28,7 @@ All of the following abilities directly describe your capabilities in matters of
 
 
 
-### Cunning
+### Cunning = 
 
 Cunning measures your wit and mental dexterity, essential characteristics in successful social combat.
 
@@ -50,11 +50,16 @@ Another vital ability, Persuasion represents your talents at bargaining, seducti
 
 {May only be used to escalate to violence}
 
+### Etiquette
+    {Used to know what sort of setting and behavior is needed during the conflict to create the best outcome  }
+    
 ### Style
+    {Used to set the settings of the conflict resolution if possible. }
 
 ### Performance
+    {Used when someone needs to act out of character during the conflict resolution}
 
-### Etiquette
+
 
 ### Perception ✓
 

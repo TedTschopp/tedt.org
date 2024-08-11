@@ -731,8 +731,9 @@ This aspect covers physical abilities and is divided into Muscle, Agility, and S
 This aspect pertains to intellectual abilities and includes Intellect, Reasoning, and Acuity.
 
 - **Intellect** is divided into Social Sciences, Life Sciences, and Physical Sciences/Survival, measuring understanding of human society, living organisms, and the natural world.
+- **Cunning** comprises Traditions, Perception, and Formal Sciences, evaluating understanding of cultural norms, heightened awareness, and mastery over formal systems like logic.
 - **Reasoning** includes Engineering, Insight, and Investigation, assessing skills in building devices, discerning intentions, and finding clues.
-- **Acuity** comprises Traditions, Perception, and Formal Sciences, evaluating understanding of cultural norms, heightened awareness, and mastery over formal systems like logic.
+
 
 ### Mystical
 
@@ -1504,34 +1505,50 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ## Academic Aspects
 
-### Intellect Characteristics
+#### Intellect Characteristic
 
 **Intellect** represents the overall ability of the being to mentally understand the world around them.
 
-#### Social Sciences Knowledge Areas
+ * * *
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Social Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Social Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist. </figcaption>
-</figure>
-</div>
+##### Social Sciences Knowledge Areas
 
-##### Description of Social Sciences
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Social Sciences.webp"
+    file="https://tedt.org/img/skills/vertical/Social Sciences.webp"
+    alt-text="A person seated at a desk, deeply engrossed in their work, surrounded by maps and documents. They are dressed in a light blue shirt and brown vest, with their face obscured for privacy. The desk is illuminated by a vintage-style lamp, casting a warm glow over the scene. In the background, bookshelves brimming with books suggest a studious atmosphere, indicative of an office or study room. The overall ambiance is one of calm and focused research or study."
+    caption="There is only one social science and we are its practitioners - George Stigler, Nobel Prize winning Economist." %}
 
-Social sciences encompass the study of human society, behavior, and social interactions, often through systematic methods of empirical investigation and analysis. Social Science skills can be useful when the party needs to understand a society quickly to navigate its complexities, when forming alliances, or when trying to alter the course of events within a community. It could also help in interpreting historical texts, solving social dilemmas, or predicting the behavior of NPCs.
+###### Description of Social Sciences
 
-##### Examples of Social Sciences from Fiction
+Social sciences encompass the study of human society, behavior, and social interactions, often through systematic methods of empirical investigation and analysis. Social Science skills can be useful in TTRPGs when the party needs to understand a society quickly to navigate its complexities, when forming alliances, or when trying to alter the course of events within a community. It could also help in interpreting historical texts, solving social dilemmas, or predicting the behavior of NPCs.
+
+###### Examples of Social Sciences from Fiction
 
 In George R.R. Martin's "A Song of Ice and Fire" series, Tyrion Lannister is a character who excels in the social sciences, particularly in the realms of politics, history, and psychology. Born into one of the most powerful families in the Seven Kingdoms, Tyrion has a keen understanding of social dynamics, power structures, and human behavior. His ability to read people and situations gives him a unique advantage in the cutthroat world of Westerosi politics.
 
 For example, in "A Clash of Kings," Tyrion is appointed as Hand of the King and quickly finds himself having to navigate the complex political landscape of King's Landing. Using his understanding of social sciences, he forms alliances with key players, manipulates his enemies into weakening positions, and even restructures the city's defenses. His knowledge of history and past conflicts allows him to anticipate his adversaries' moves, while his understanding of psychology helps him manipulate them to his advantage.
 
-A character with a specialization in social sciences could be invaluable for various scenarios. They might be the one to broker an alliance between warring factions by understanding their cultural values and historical grievances. Or they could predict the likely moves of an enemy leader based on a deep understanding of political strategy and human behavior. Specializations could include expertise in a particular culture's history, skills in diplomacy, or a focus on psychological manipulation.
+In a TTRPG setting, a character with a specialization in social sciences could be invaluable for various scenarios. They might be the one to broker an alliance between warring factions by understanding their cultural values and historical grievances. Or they could predict the likely moves of an enemy leader based on a deep understanding of political strategy and human behavior. Specializations could include expertise in a particular culture's history, skills in diplomacy, or a focus on psychological manipulation.
 
 Tyrion Lannister's proficiency in the social sciences adds a rich layer of complexity to his character. It's not just a tool for political maneuvering; it's a reflection of his intellectual curiosity and his adaptability in a world that often underestimates him. His skills in the social sciences are not just practical assets; they are integral to his identity and his ability to survive and thrive in a world rife with social and political complexities.
 
-##### Specializations for Social Sciences
+###### Social Sciences Archetypes
+
+- **The Sociologist:** This archetype specializes in the study of society and human behavior. They can analyze social structures, group dynamics, and cultural norms, making them invaluable when navigating complex societies or forming alliances.
+- **The Anthropologist:** Skilled in the study of cultures and human societies, the Anthropologist can quickly understand the customs, traditions, and belief systems of different communities. They excel in bridging cultural gaps and fostering cross-cultural understanding.
+- **The Psychologist:** Focusing on individual and group psychology, the Psychologist can assess and predict human behavior with precision. They are adept at understanding motivations, personality traits, and emotional states, which can be helpful when dealing with NPCs or resolving social dilemmas.
+- **The Historian:** This archetype excels in interpreting historical texts, artifacts, and events. They can uncover hidden knowledge about a society's past, which may be crucial for understanding present-day situations or solving mysteries related to a community's history.
+- **The Diplomat:** Skilled in negotiation and conflict resolution, the Diplomat can navigate diplomatic interactions, form alliances, and mediate disputes. They are experts in maintaining peaceful relations and achieving diplomatic goals.
+- **The Political Analyst:** Specializing in the intricacies of political systems, the Political Analyst can assess power structures, identify key players, and predict political maneuvers. They are valuable when trying to influence or alter the course of political events within a society.
+- **The Economist:** This archetype understands economic systems, trade, and resource allocation. They can assess the economic health of a society, identify opportunities for trade or investment, and predict the impact of economic decisions on a community.
+- **The Cultural Interpreter:** Focusing on interpreting art, literature, and symbolism, the Cultural Interpreter can decipher the hidden meanings and messages within a society's cultural expressions. This skill can be invaluable for understanding the values and beliefs of a community.
+- **The Ethicist:** This archetype specializes in ethical dilemmas and moral philosophy. They can provide guidance on making morally sound decisions and navigating complex ethical issues within a society.
+- **The Archivist:** Skilled in cataloging and preserving information, the Archivist can organize and access vast amounts of knowledge, making them valuable for researching and retrieving historical or social data.
+- **The Oracle:** In a fantasy or mystical setting, the Oracle possesses special insights into a society's past and future. They can provide cryptic prophecies and guidance based on their mystical understanding of history.
+
+###### Specializations for Social Sciences
 
 1. **Sociology**: The study of social behavior and society structures.
 2. **Psychology**: Study of human mind and behavior.
@@ -1554,26 +1571,7 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 19. **Environmental Studies**: Study of human-environment interactions.
 20. **Public Policy**: Study of governmental decisions and their impact.
 
-##### Social Sciences Archetypes
-
-
-|                Archetype |       Example       | Example Description                                                                                                                                                                 | Archetype Description                                                                                                                       |
-|-------------------------:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
-|          The Sociologist |   Émile Durkheim    | A founding figure in sociology, known for his work on social integration and collective consciousness.                                                                              | Specializes in the study of society and human behavior, analyzes social structures, group dynamics, and cultural norms.                     |
-|       The Anthropologist |    Indiana Jones    | A fictional archaeologist who studies cultures and societies, often bridging cultural gaps during his adventures.                                                                   | Skilled in the study of cultures and human societies, excels in bridging cultural gaps and fostering cross-cultural understanding.          |
-|         The Psychologist |    Sigmund Freud    | Known for founding psychoanalysis, Freud's work has been influential in understanding human behavior and motivations.                                                               | Focuses on individual and group psychology, adept at understanding motivations, personality traits, and emotional states.                   |
-|            The Historian |     Howard Zinn     | Known for "A People's History of the United States," Zinn interprets history from the perspective of marginalized groups.                                                           | Excels in interpreting historical texts, artifacts, and events, uncovers hidden knowledge about a society's past.                           |
-|             The Diplomat |   Henry Kissinger   | Served as U.S. Secretary of State and National Security Advisor, known for his diplomatic skills in international relations.                                                        | Skilled in negotiation and conflict resolution, navigates diplomatic interactions, forms alliances, and mediates disputes.                  |
-|    The Political Analyst | Niccolò Machiavelli | Author of "The Prince," Machiavelli's work is a seminal text in political theory, focusing on power structures and political maneuvers.                                             | Specializes in the intricacies of political systems, assesses power structures, identifies key players, and predicts political maneuvers.   |
-|            The Economist |     Adam Smith      | Known for "The Wealth of Nations," Smith laid the foundations for classical economics and the concept of the invisible hand.                                                        | Understands economic systems, trade, and resource allocation, assesses the economic health of a society.                                    |
-| The Cultural Interpreter |   Roland Barthes    | A French literary theorist known for his work on semiotics, interpreting signs and symbols in cultural expressions.                                                                 | Focuses on interpreting art, literature, and symbolism, deciphers the hidden meanings and messages within a society's cultural expressions. |
-|             The Ethicist |    Immanuel Kant    | A German philosopher known for his work in ethics, particularly the concept of the categorical imperative.                                                                          | Specializes in ethical dilemmas and moral philosophy, provides guidance on making morally sound decisions.                                  |
-|            The Archivist |   Brother Cadfael   | A fictional medieval monk who serves as a herbalist and archivist, solving mysteries based on his extensive knowledge.                                                              | Skilled in cataloging and preserving information, organizes and accesses vast amounts of knowledge.                                         |
-|               The Oracle |    Delphi Oracle    | In ancient Greece, the Oracle of Delphi was consulted for prophecies and guidance. Known as Pythia, the high priestess would deliver cryptic messages believed to come from Apollo. | Possesses special insights into a society's past and future, provides cryptic prophecies and guidance.                                      |
-{: .well .table .table-striped }
-
-
-##### Table with Social Sciences skill and examples for each level of difficulty
+###### Table with Social Sciences skill and examples for each level of difficulty
 
 | Difficulty        | Social Sciences                                                                                                                                                                                                                                               |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1588,33 +1586,49 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 | Heroic            | Forecast the weather based on historical patterns                                                                                                                                                                                                             |
 | Nearly Impossible | Understand the lineage and ethnicity of someone based on observation only                                                                                                                                                                                     |
 | Godly             | Identify a common person using by their burial marker, tombstone, or other obscure information about them. Discover an ancient secret, no longer known to any mortals.                                                                                        |
-{: .well .table .table-striped }
 
+ * * *
 
-#### Life Sciences Knowledge Areas
+##### Life Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Life Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Life Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">ή γὰρ νοῡ ἐνέργεια ζωή (The energy of life is the essence of the mind) -- Aristotle</figcaption>
-</figure>
-</div>
+{% include figure.html
+    div-class="col-md-3 mt-3 col-lg-3 float-end"
+    url="https://tedt.org/img/skills/vertical/Life Sciences.webp"
+    file="https://tedt.org/img/skills/vertical/Life Sciences.webp"
+    alt-text="A person in a lab coat intently examining samples under a microscope in a well-equipped laboratory. They are surrounded by various scientific apparatus and colorful petri dishes containing different specimens. The setting is well-lit, with shelves stocked with neatly arranged bottles and containers, reflecting an organized and professional research environment. The focus on the person working and the detailed scientific equipment conveys a sense of precision and dedication to scientific inquiry."
+    caption="ή γὰρ νοῡ ἐνέργεια ζωή (The energy of life is the essence of the mind) -- Aristotle" %}
 
-##### Description of Life Sciences
+###### Description of Life Sciences
 
-Life Sciences encompass the study of living organisms and their interactions with the environment. This skill covers a broad range of knowledge and applications, from medical treatments to bioengineering, and is crucial in both everyday life and specialized professions.  Life Sciences could be used to identify the nature of a mysterious disease affecting a town, or to concoct an antidote for a rare poison. A specialized character might even perform surgery under combat conditions.
+Life Sciences encompass the study of living organisms and their interactions with the environment. This skill covers a broad range of knowledge and applications, from medical treatments to bioengineering, and is crucial in both everyday life and specialized professions.  In a TTRPG conflict resolution, Life Sciences could be used to identify the nature of a mysterious disease affecting a town, or to concoct an antidote for a rare poison. A specialized character might even perform surgery under combat conditions.
 
-##### Examples of Life Sciences from Fiction
+###### Examples of Life Sciences from Fiction
 
 In the fantasy series "The Kingkiller Chronicle" by Patrick Rothfuss, the protagonist Kvothe demonstrates a strong aptitude for life sciences, particularly in the realm of alchemy and medicine. Trained at the University, Kvothe gains a deep understanding of various herbs, chemicals, and biological processes. This knowledge proves invaluable on multiple occasions throughout his adventures.
 
 For example, in "The Wise Man's Fear," Kvothe encounters a town plagued by a mysterious illness. Using his understanding of life sciences, he is able to identify the disease's origin and suggest a course of action to treat the afflicted, saving lives in the process. His skills also extend to the creation of antidotes and medicines, which come in handy when dealing with poisons or other harmful substances.
 
-A character with a specialization in life sciences could perform similar feats. They might identify a rare plant in a forest that can be used to cure a debilitating disease affecting a nearby village. Or, in a more combat-oriented scenario, they could quickly assess a wounded ally's condition and perform emergency surgery to remove an embedded arrowhead, thereby preventing further damage or infection.
+In a TTRPG setting, a character with a specialization in life sciences could perform similar feats. They might identify a rare plant in a forest that can be used to cure a debilitating disease affecting a nearby village. Or, in a more combat-oriented scenario, they could quickly assess a wounded ally's condition and perform emergency surgery to remove an embedded arrowhead, thereby preventing further damage or infection.
 
 Kvothe's proficiency in life sciences not only adds depth to his character but also provides him with practical skills that are crucial for his survival and the well-being of those around him.
 
-##### Specializations for Life Sciences
+###### Life Sciences Archetypes
+
+- **The Medic:** Skilled in medical treatments and healthcare, the Medic can diagnose illnesses, administer first aid, and treat injuries effectively. They are essential for healing party members and can identify the symptoms and causes of diseases.
+- **The Healer-Shaman:** In a mystical or magical setting, the Healer-Shaman possesses supernatural healing abilities and can communicate with spirits or tap into mystical energies to cure ailments and injuries.
+- **The Biologist:** This archetype specializes in the study of living organisms, including their anatomy, physiology, and behavior. They can identify and understand various species, ecosystems, and the effects of environmental changes on life forms.
+- **The Pharmacist:** Focusing on pharmaceuticals and drug interactions, the Pharmacist can create and administer medications, antidotes, and poisons. They are experts in understanding the chemical compositions of substances and their effects on the body.
+- **The Botanist:** Specializing in plant life, the Botanist can identify and collect herbs, fungi, and other vegetation for medicinal or poison-related purposes. They can concoct herbal remedies, antidotes, or deadly toxins.
+- **The Zoologist:** This archetype studies animal behavior and biology, making them experts in handling and understanding creatures. They can tame, train, or communicate with animals and identify potential threats from wildlife.
+- **The Geneticist:** Skilled in genetic manipulation and bioengineering, the Geneticist can modify organisms, create hybrids, or engineer specific traits in living beings. They are valuable for creating unique creatures or solving genetic mysteries.
+- **The Ecologist:** Focusing on ecosystems and environmental conservation, the Ecologist can assess the health of ecosystems, identify environmental threats, and propose solutions for preserving natural habitats.
+- **The Surgeon:** Specializing in surgical procedures, the Surgeon can perform complex medical operations, even under combat conditions. They excel in treating injuries that require precision and surgical expertise.
+- **The Toxicologist:** This archetype is an expert in the study of toxins, poisons, and venomous creatures. They can identify poisonous substances, create antidotes, and understand the effects of toxins on living organisms.
+- **The Epidemiologist:** Focusing on disease outbreaks and public health, the Epidemiologist can track the spread of diseases, identify their origins, and develop strategies for containment and prevention.
+- **The Exobiologist:** In a sci-fi or fantasy setting, the Exobiologist studies extraterrestrial life forms and ecosystems. They can identify alien organisms, understand their biology, and predict their behavior.
+- **The Biohacker:** Combining knowledge of genetics with unconventional practices, the Biohacker can manipulate genes and biotechnology to achieve unique effects, such as enhancing physical abilities or creating bioengineered creatures.
+
+###### Specializations for Life Sciences
 
 1. **Poisons**: Understanding toxic substances and their effects.
 2. **Bioengineering**: Manipulating biological systems for specific outcomes.
@@ -1637,27 +1651,7 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 19. **Paleontology**: Study of the history of life through fossils.
 20. **Forensics**: Application of science to solve crimes.
 
-##### Life Sciences Archetypes
-
-|          Archetype |             Example              | Example Description                                                                                                    | Archetype Description                                                                                      |
-|-------------------:|:--------------------------------:|:-----------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|          The Medic |     Hawkeye Pierce (M*A*S*H)     | A skilled surgeon and medical doctor serving in a mobile army surgical hospital during the Korean War.                 | Skilled in medical treatments and healthcare, essential for healing party members and diagnosing diseases. |
-|  The Healer-Shaman |   Moana's Grandmother (Moana)    | The spiritual guide and healer in Moana's Polynesian community, she communicates with the spirit world.                | Possesses supernatural healing abilities and can communicate with spirits or mystical energies.            |
-|      The Biologist |          Charles Darwin          | Known for his theory of evolution, Darwin's work laid the foundation for the study of living organisms.                | Specializes in the study of living organisms, including their anatomy, physiology, and behavior.           |
-|     The Pharmacist |   Severus Snape (Harry Potter)   | An expert in potions and their effects, both beneficial and harmful.                                                   | Focuses on pharmaceuticals and drug interactions, can create medications, antidotes, and poisons.          |
-|       The Botanist |      Poison Ivy (DC Comics)      | A villain who specializes in botany, capable of creating various plant-based concoctions.                              | Specializes in plant life, can identify and collect herbs, fungi, and other vegetation.                    |
-|      The Zoologist |           Steve Irwin            | Known as the "Crocodile Hunter," Irwin was famous for his expertise in handling and understanding animals.             | Studies animal behavior and biology, experts in handling and understanding creatures.                      |
-|     The Geneticist |   Dr. Henry Wu (Jurassic Park)   | A geneticist responsible for creating the dinosaurs in Jurassic Park.                                                  | Skilled in genetic manipulation and bioengineering, can modify organisms or create hybrids.                |
-|      The Ecologist |           Aldo Leopold           | Known for his book "A Sand County Almanac," Leopold was an ecologist and environmentalist.                             | Focuses on ecosystems and environmental conservation, can assess the health of ecosystems.                 |
-|        The Surgeon |   Dr. Strange (Marvel Comics)    | A neurosurgeon turned sorcerer, but his surgical skills are still top-notch.                                           | Specializes in surgical procedures, can perform complex medical operations.                                |
-|   The Toxicologist |         Sherlock Holmes          | Known for his expertise in identifying poisons and toxins in his investigations.                                       | Expert in the study of toxins, poisons, and venomous creatures, can identify poisonous substances.         |
-| The Epidemiologist | Dr. Robert Neville (I Am Legend) | A military virologist trying to find a cure for a virus that has turned humans into mutants.                           | Focuses on disease outbreaks and public health, can track the spread of diseases.                          |
-|   The Exobiologist | Dr. Elizabeth Shaw (Prometheus)  | An archaeologist and scientist who studies extraterrestrial life forms during her mission on the spaceship Prometheus. | Studies extraterrestrial life forms and ecosystems, can identify alien organisms.                          |
-|      The Biohacker | Takeshi Kovacs (Altered Carbon)  | In a world where consciousness can be transferred between bodies, Kovacs uses biohacking to adapt to new "sleeves."    | Combines genetics with unconventional practices, can manipulate genes and biotechnology.                   |
-{: .well .table .table-striped }
-
-
-##### Table with Life Sciences skill and examples for each level of difficulty
+###### Table with Life Sciences skill and examples for each level of difficulty
 
 | Skill             | Life Sciences                                                                                                                                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1672,10 +1666,10 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 | Heroic            | Perform CPR on someone who has been unconscious for seven minutes. Treat someone with an extremely hazardous germ agent such as Ebola.                                                                                                                        |
 | Nearly Impossible | Attend to someone in critical condition who has died of physical body trauma                                                                                                                                                                                  |
 | Godly             | Reattach limbs, set broken bones, and grow them with herbal remedies and simple tools                                                                                                                                                                         |
-{: .well .table .table-striped }
 
+ * * *
 
-#### Physical Sciences / Survival Knowledge Areas
+##### Physical Sciences / Survival Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -1684,21 +1678,37 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 </figure>
 </div>
 
-##### Description of Physical Sciences/Survival
+###### Description of Physical Sciences/Survival
 
 Physical Sciences/Survival encompasses the scientific knowledge and practical skills needed for understanding the natural world and surviving in various environments. This skill set ranges from academic disciplines like chemistry and geology to practical survival techniques like tracking and fishing. Physical Sciences/Survival skill can be crucial in various conflict resolutions. For instance, characters might use Meteorology to predict an incoming storm to gain a tactical advantage, or Urban Survival to navigate through a dangerous cityscape evading capture. This skill set can offer creative ways to solve problems and overcome challenges in both natural and urban environments.  Your Physical Sciences check measures your ability to recall lore about terrain, the weather, and natural cycles as well as perform mathematical operations. You might be asked to make a Survival check to navigate and find a path within a given environment, follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that Beakclaw live nearby, predict the weather, or avoid quicksand and other natural hazards. This skill is also used in urban environments to survive on the streets and to live within that environment.
 
-##### Examples of Physical Sciences/Survival from Fiction
+###### Examples of Physical Sciences/Survival from Fiction
 
 In Brandon Sanderson's "The Stormlight Archive," Kaladin Stormblessed is a character who excels in the skill of Physical Sciences/Survival. Raised in a rural village and trained as a soldier, Kaladin has a broad range of knowledge and skills that help him survive in various environments, from the harsh conditions of the Shattered Plains to the complexities of a military camp. His understanding of the natural world, including weather patterns and terrain, is complemented by his practical skills like tracking and first aid.
 
 For example, in "The Way of Kings," the first book in the series, Kaladin uses his understanding of meteorology to predict the arrival of a Highstorm, a devastating weather phenomenon. This knowledge allows him to prepare his men and find shelter, thereby saving lives. Later, in "Words of Radiance," he uses his survival skills to navigate the treacherous landscape of the Shattered Plains, identifying safe paths and avoiding natural hazards like chasms and rockslides. His ability to read the environment and make quick, informed decisions is a key factor in his effectiveness as a leader.
 
-A character with a specialization in Physical Sciences/Survival could offer a wide range of problem-solving options. They might use their knowledge of geology to find a hidden cave for shelter, or apply their understanding of chemistry to create makeshift explosives. Specializations could include wilderness survival, allowing the character to find food and water in a forest, or urban survival, enabling them to navigate a city's underworld without attracting unwanted attention.
+In a TTRPG setting, a character with a specialization in Physical Sciences/Survival could offer a wide range of problem-solving options. They might use their knowledge of geology to find a hidden cave for shelter, or apply their understanding of chemistry to create makeshift explosives. Specializations could include wilderness survival, allowing the character to find food and water in a forest, or urban survival, enabling them to navigate a city's underworld without attracting unwanted attention.
 
 Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifaceted layer to his character. It's not just a set of practical skills; it's a reflection of his adaptability, resourcefulness, and deep connection to the world around him. These skills are not just assets for survival; they are integral to his identity and his journey from a disillusioned soldier to a leader and protector.
 
-##### Specializations for Physical Sciences/Survival
+###### Physical Sciences/Survival Archetypes
+
+- **The Naturalist:** This archetype is a keen observer of the natural world, specializing in identifying plants, animals, and terrain features. They can recognize edible plants, track animals, and navigate diverse ecosystems.
+- **The Tracker:** Skilled in following trails and footprints, the Tracker can locate creatures or individuals by analyzing signs and clues left behind. They excel in wilderness tracking and can even identify the habits of elusive creatures.
+- **The Geologist:** Focusing on the study of rocks, minerals, and the Earth's crust, the Geologist can identify valuable minerals, locate hidden caves or underground structures, and assess the stability of terrain.
+- **The Meteorologist:** This archetype specializes in predicting weather patterns and understanding atmospheric phenomena. They can provide valuable insights into upcoming storms, temperature changes, or other weather-related events.
+- **The Survivalist:** Skilled in practical wilderness survival techniques, the Survivalist can build shelters, find food and water sources, and create tools from natural materials. They excel in outdoor living and self-sufficiency.
+- **The Wilderness Guide:** This archetype is an expert in leading groups through challenging natural environments. They can plan routes, avoid hazards, and ensure the safety of their party in the wilderness.
+- **The Urban Survivalist:** Focusing on survival in urban environments, the Urban Survivalist can navigate through city streets, find shelter, scavenge for resources, and blend into urban crowds. They are adept at surviving in post-apocalyptic or dystopian settings.
+- **The Astronomer:** Specializing in celestial navigation, the Astronomer can use the stars, planets, and other celestial bodies to determine direction and time, making them invaluable for night-time navigation.
+- **The Marine Biologist:** This archetype studies marine life and ecosystems, making them experts in underwater environments. They can identify aquatic species, locate underwater resources, and understand ocean currents.
+- **The Archaeologist:** Focusing on historical and cultural knowledge, the Archaeologist can identify ancient ruins, decipher ancient scripts, and uncover hidden artifacts. They excel in exploring lost civilizations and solving historical mysteries.
+- **The Mountain Guide:** This archetype specializes in mountainous terrain, including climbing, navigating, and surviving in high-altitude environments. They can lead expeditions to mountain peaks and avoid dangers like avalanches and crevasses.
+- **The Desert Nomad:** Skilled in desert survival, the Desert Nomad can find water sources, navigate through arid landscapes, and endure extreme heat. They are experts in thriving in desert environments.
+- **The Arctic Explorer:** Specializing in cold-weather survival, the Arctic Explorer can endure freezing temperatures, locate shelter in snowy landscapes, and navigate through icy terrain.
+
+###### Specializations for Physical Sciences/Survival
 
 1. **Astronomy**: Study of celestial objects, including navigation by stars.
 2. **Chemistry**: Understanding of elements, compounds, and chemical reactions.
@@ -1721,308 +1731,29 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 19. **Edible Plant Identification**: Recognizing safe and unsafe flora for consumption.
 20. **First Aid**: Basic medical skills to treat injuries in the wilderness.
 
-##### Physical Sciences/Survival Archetypes
+###### Table with Physical Sciences/Survival skill and examples for each level of difficulty
 
-|             Archetype |           Example           | Example Description                                                                                            | Archetype Description                                                                                    |
-|----------------------:|:---------------------------:|:---------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-|        The Naturalist |         Steve Irwin         | Known as "The Crocodile Hunter," Steve Irwin was an expert in wildlife and ecosystems.                         | Keen observer of the natural world, specializes in identifying plants, animals, and terrain features.    |
-|           The Tracker | Aragorn (Lord of the Rings) | Known as Strider, he is skilled in tracking and survival, leading the Fellowship through various terrains.     | Skilled in following trails and footprints, excels in wilderness tracking.                               |
-|         The Geologist |        Indiana Jones        | Though primarily an archaeologist, Jones often uses geological knowledge to navigate caves and find artifacts. | Focuses on the study of rocks, minerals, and the Earth's crust.                                          |
-|     The Meteorologist |          Al Roker           | A well-known TV meteorologist who provides weather forecasts and insights into atmospheric phenomena.          | Specializes in predicting weather patterns and understanding atmospheric phenomena.                      |
-|       The Survivalist |         Bear Grylls         | Known for his survival TV shows, he demonstrates how to survive in various harsh environments.                 | Skilled in practical wilderness survival techniques.                                                     |
-|  The Wilderness Guide |          Sacagawea          | Helped Lewis and Clark navigate the American wilderness during their expedition.                               | Expert in leading groups through challenging natural environments.                                       |
-| The Urban Survivalist |  Max Rockatansky (Mad Max)  | Survives in a post-apocalyptic world by scavenging resources and navigating dangerous urban landscapes.        | Focuses on survival in urban environments, adept at surviving in post-apocalyptic settings.              |
-|        The Astronomer |       Galileo Galilei       | Known for his contributions to astronomy, including celestial navigation.                                      | Specializes in celestial navigation.                                                                     |
-|  The Marine Biologist |      Jacques Cousteau       | Renowned for his exploration and conservation efforts related to marine life.                                  | Studies marine life and ecosystems, experts in underwater environments.                                  |
-|     The Archaeologist |  Lara Croft (Tomb Raider)   | An adventurer who explores ancient ruins to uncover artifacts and solve historical mysteries.                  | Focuses on historical and cultural knowledge, excels in exploring lost civilizations.                    |
-|    The Mountain Guide |       Tenzing Norgay        | Helped Sir Edmund Hillary reach the summit of Mount Everest, navigating through dangerous mountain terrain.    | Specializes in mountainous terrain, including climbing and navigating in high-altitude environments.     |
-|      The Desert Nomad |     Lawrence of Arabia      | Known for his expertise in desert warfare and navigation during World War I.                                   | Skilled in desert survival, can find water sources and navigate through arid landscapes.                 |
-|   The Arctic Explorer |      Ernest Shackleton      | Led expeditions to Antarctica, surviving harsh conditions and leading his crew to safety.                      | Specializes in cold-weather survival, can endure freezing temperatures and navigate through icy terrain. |
-{: .well .table .table-striped }
+| Difficulty        | Survival                                                                                                                                                                                                                                                      |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Hunt pigeons, Rats, and Mice within a city                                                                                                                                                                                                                    |
+| Simple            | Go Fishing with supplies                                                                                                                                                                                                                                      |
+| Easy              | Forage for roots, and berries in the wilderness                                                                                                                                                                                                               |
+| Routine           | Build a shelter out of tree limbs, grass, and leaves                                                                                                                                                                                                          |
+| Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |
+| Difficult         | Construct an improvised weapon                                                                                                                                                                                                                                |
+| Very Difficult    | Track a small animal                                                                                                                                                                                                                                          |
+| Formidable        | Track the passing of a single person through wild                                                                                                                                                                                                             |
+| Heroic            | Find a source of water in the deep desert                                                                                                                                                                                                                     |
+| Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |
+| Godly             | Construct a fire under water                                                                                                                                                                                                                                  |
 
+#### Cunning Characteristics
 
-##### Table with Physical Sciences/Survival skill and examples for each level of difficulty
+**Cunning** represents the overall speed at which someone's mind works.   
 
-| Difficulty        | Survival                                                                                                                                                                                                                                                      |                                  |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Trivial           | Hunt pigeons, Rats, and Mice within a city                                                                                                                                                                                                                    |                                  |
-| Simple            | Go Fishing with supplies                                                                                                                                                                                                                                      |                                  |
-| Easy              | Forage for roots, and berries in the wilderness                                                                                                                                                                                                               |                                  |
-| Routine           | Build a shelter out of tree limbs, grass, and leaves                                                                                                                                                                                                          |                                  |
-| Average           | Requires a bit more competence to accomplish. Can be completed more often than not by a character if they have received exposure to the skill and are not encumbered in any way. This is the work of an apprentice or someone with exceptional latent talent. |                                  |
-| Difficult         | Construct an improvised weapon                                                                                                                                                                                                                                |                                  |
-| Very Difficult    | Track a small animal                                                                                                                                                                                                                                          |                                  |
-| Formidable        | Track the passing of a single person through wild                                                                                                                                                                                                             |                                  |
-| Heroic            | Find a source of water in the deep desert                                                                                                                                                                                                                     |                                  |
-| Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |                                  |
-| Godly             | Construct a fire under water                                                                                                                                                                                                                                  | {: .well .table .table-striped } |
+ * * *
 
-
-
-### Reasoning Characteristics
-
-**Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
-
-#### Engineering Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
-</figure>
-</div>
-
-##### Description of the Engineering skill
-
-Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
-
-##### Examples of Engineering from Fiction
-
-In the science fiction TV series "Firefly," Kaylee Frye serves as the chief mechanic aboard the spaceship Serenity, captained by Malcolm Reynolds. Kaylee is a self-taught engineering prodigy, possessing an intuitive understanding of mechanical systems, electronics, and propulsion technologies. Her role is absolutely vital to the crew's survival and success, as she is responsible for keeping the ship operational against all odds. Whether it's a routine maintenance check or an emergency repair in the heat of battle, Kaylee is the go-to expert for anything related to the ship's engineering.
-
-One memorable episode, "Out of Gas," showcases Kaylee's engineering prowess in a life-or-death situation. When the ship's life support system fails, leaving the crew with only a few hours of breathable air, Kaylee's skills are put to the ultimate test. Despite the immense pressure and limited resources, she manages to rig a makeshift solution to buy the crew more time. Her deep understanding of the ship's systems, combined with her ability to improvise, turns her into the crew's lifeline in this dire situation.
-
-A character with Kaylee's engineering skills would offer a wide range of problem-solving options. Imagine a scenario where the party's spacecraft is damaged during a skirmish with enemy ships. An Engineering check could determine whether the character successfully reroutes power to essential systems, repairs the ship's thrusters for a quick escape, or even modifies the ship's weapons for a last-ditch counterattack. The possibilities are numerous, and a skilled engineer could tip the scales in the party's favor in countless ways.
-
-Kaylee's engineering expertise goes beyond mere technical skills; her ability to think quickly, adapt to new challenges, and work with limited resources makes her an invaluable member of the Serenity crew. Whether she's patching up bullet holes in the engine room or fine-tuning the ship's systems for better fuel efficiency, Kaylee's contributions are a blend of scientific knowledge and practical know-how. Her character exemplifies how engineering skills can be a game-changer in both everyday operations and high-stakes conflicts.
-
-##### Specializations for Engineering
-
-1. **Mechanical Engineering**: Design and maintenance of mechanical systems like engines and machinery.
-2. **Civil Engineering**: Planning and construction of infrastructure such as bridges, roads, and buildings.
-3. **Electrical Engineering**: Understanding and manipulation of electrical systems and circuits.
-4. **Software Engineering**: Development and maintenance of software applications.
-5. **Chemical Engineering**: Manipulation of chemical processes for industrial applications.
-6. **Aerospace Engineering**: Design and construction of aircraft and spacecraft.
-7. **Biomedical Engineering**: Application of engineering principles to healthcare and medical devices.
-8. **Environmental Engineering**: Solutions for environmental issues like waste management and pollution control.
-9. **Structural Engineering**: Specialization in the integrity and durability of buildings and structures.
-10. **Automotive Engineering**: Design and development of vehicles and their subsystems.
-11. **Naval Engineering**: Design and maintenance of ships, submarines, and other watercraft.
-12. **Robotics**: Design and programming of automated machines.
-13. **Cybersecurity Engineering**: Protection of computer systems and networks from cyber threats.
-14. **Telecommunications**: Engineering of systems for transmitting information over a distance.
-15. **Energy Systems**: Design and management of systems for energy production and distribution.
-16. **Material Science**: Study and application of the properties of matter in engineering.
-17. **Acoustical Engineering**: Control and manipulation of sound through engineering.
-18. **Nuclear Engineering**: Specialization in the processes, systems, and instruments of nuclear energy.
-19. **Geotechnical Engineering**: Engineering related to the behavior of earth materials.
-20. **Reverse Engineering**: Deconstruction and analysis of devices to understand their functionality.
-
-##### Engineering Archetypes
-
-|                  Archetype |         Example         | Example Description                                                                                                  | Archetype Description                                                                                         |
-|---------------------------:|:-----------------------:|:---------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-|               The Tinkerer |  Tony Stark (Iron Man)  | Known for inventing the Iron Man suit and various gadgets, Tony Stark exemplifies the Tinkerer archetype.            | Known for inventing and building mechanical devices.                                                          |
-|               The Mechanic |  Kaylee Frye (Firefly)  | The ship's mechanic on the Serenity, Kaylee is adept at repairing and maintaining complex machinery.                 | Specializes in the repair and maintenance of machinery.                                                       |
-|              The Architect |      Antoni Gaudí       | Famous for designing the Sagrada Familia in Barcelona, Gaudí was a master architect.                                 | Focuses on designing and constructing buildings and structures.                                               |
-|               The Inventor |      Nikola Tesla       | Known for his contributions to electrical engineering, including the development of AC power.                        | Skilled in creating new technological innovations.                                                            |
-|      The Demolition Expert | John McClane (Die Hard) | Known for his ability to dismantle traps and use explosives to solve problems.                                       | Specializes in the safe and controlled destruction of structures and obstacles.                               |
-|    The Electrical Engineer |      Ada Lovelace       | Considered the first computer programmer, she worked on Charles Babbage's early mechanical general-purpose computer. | Focuses on electrical systems and technology.                                                                 |
-|    The Structural Engineer |     Gustave Eiffel      | Designed the Eiffel Tower, focusing on its structural integrity and stability.                                       | Specializes in the stability and integrity of buildings and infrastructure.                                   |
-|         The Bridge Builder | Isambard Kingdom Brunel | Known for constructing the Clifton Suspension Bridge among other engineering feats.                                  | Excels in constructing bridges and other types of crossings.                                                  |
-|         The Siege Engineer |       Archimedes        | Developed war machines and siege engines, including the Claw of Archimedes.                                          | Skilled in designing and operating siege weapons and artillery.                                               |
-|       The Reverse Engineer |       Alan Turing       | Known for reverse-engineering the Enigma machine used by Nazi Germany.                                               | Known for the ability to dismantle and understand complex artifacts, machinery, or technology.                |
-|        The Robotics Expert |      Isaac Asimov       | Though a fiction writer, Asimov's works on robotics have influenced real-world robotics engineering.                 | Can design, build, and repair robots and autonomous machines in futuristic or sci-fi settings.                |
-|         The Civil Engineer |      Robert Moses       | Known for shaping the infrastructure of New York City, including its bridges and highways.                           | Focuses on infrastructure and public works.                                                                   |
-|    The Industrial Designer |      Jonathan Ive       | Known for his work at Apple, designing products like the iPhone and MacBook.                                         | Specializes in the aesthetic and ergonomic aspects of product design.                                         |
-| The Environmental Engineer |      Rachel Carson      | Known for her book "Silent Spring," which led to changes in policies regarding environmental engineering.            | Skilled in mitigating environmental impact and developing solutions for pollution control and sustainability. |
-{: .well .table .table-striped }
-
-
-##### Table with Engineering skill and examples for each level of difficulty
-
-| Difficulty        | Engineering                                                                                                                                                                                             |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Repairing a simple, everyday household gadget.                                                                                                                                                          |
-| Simple            | Building a small toy or crafting a basic wooden chair.                                                                                                                                                  |
-| Easy              | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                              |
-| Routine           | Designing and building a small wooden bridge over a stream.                                                                                                                                             |
-| Average           | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                               |
-| Difficult         | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                      |
-| Very Difficult    | Designing and constructing a functioning steam-powered engine.                                                                                                                                          |
-| Formidable        | Creating an advanced automaton with artificial intelligence.                                                                                                                                            |
-| Heroic            | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
-| Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
-| Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
-{: .well .table .table-striped }
-
-
-#### Insight Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
-</figure>
-</div>
-
-##### Description of the Insight skill
-
-Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
-
-##### Examples of Insight from Fiction
-
-In the science fiction series "Dune" by Frank Herbert, Paul Atreides exhibits an extraordinary level of insight, honed by a combination of his Bene Gesserit training and his own innate abilities. Paul's skill in discerning the true intentions and emotions of others is almost uncanny, allowing him to navigate the complex political and social landscapes of his universe. Whether he's interpreting the subtle body language of a potential ally or detecting the hidden motives behind a seemingly straightforward proposal, Paul's insight is one of his most potent tools.
-
-One notable instance occurs in "Dune" when Paul and his mother, Lady Jessica, are taken captive by the Fremen, the native people of the desert planet Arrakis. Despite being in a perilous situation, Paul uses his insight to quickly gauge the dynamics within the Fremen tribe, identifying who holds real power and who can be trusted. His ability to read between the lines during conversations and negotiations not only earns him the respect of the Fremen but also allows him to rise to a position of leadership among them.
-
-A character with a high level of insight could be invaluable for various aspects of gameplay. They might be able to discern that an NPC is lying about the location of a hidden treasure, or sense that a supposed ally is actually a traitor. An Insight check could be used to determine the success of these intuitive leaps, influencing the party's decisions and potentially saving them from traps, betrayals, or poor choices.
-
-Paul Atreides' mastery of insight is not just a passive skill but an active tool he employs to shape events around him. His ability to understand the unspoken motivations and hidden agendas of those he interacts with gives him a significant advantage in the intricate power games he finds himself a part of. Whether he's facing political intrigue, complex negotiations, or potential combat, Paul's insight often provides him the edge he needs to come out on top.
-
-##### Specializations for Insight
-
-1. **Lie Detection**: Ability to discern when someone is being dishonest.
-2. **Emotional Intelligence**: Understanding and interpreting the emotions of others.
-3. **Motivation Analysis**: Discerning the underlying goals or desires driving someone's actions.
-4. **Body Language**: Reading non-verbal cues to understand feelings or intentions.
-5. **Social Dynamics**: Understanding the unspoken rules and structures within social groups.
-6. **Cultural Insight**: Ability to understand motivations and behaviors within specific cultural contexts.
-7. **Psychological Profiling**: Creating in-depth profiles of individuals based on observed behavior.
-8. **Interrogation**: Skillful questioning to reveal hidden information.
-9. **Conflict Resolution**: Identifying the root causes of disagreements and finding solutions.
-10. **Negotiation**: Ability to influence or arrive at agreements through discussion.
-11. **Empathy**: Deep understanding and sharing of the emotional states of others.
-12. **Intuition**: Relying on gut feelings to make judgments about people or situations.
-13. **Subtext Reading**: Understanding the implied or hidden meanings in spoken or written language.
-14. **Seduction**: Ability to influence others through charm or attraction.
-15. **Manipulation**: Skillfully controlling or influencing others, often without their awareness.
-16. **Political Acumen**: Understanding the motivations and strategies in political or organizational settings.
-17. **Salesmanship**: Ability to persuade others to make purchases or take specific actions.
-18. **Leadership Assessment**: Evaluating the effectiveness and intentions of leaders or authority figures.
-19. **Crisis Prediction**: Ability to foresee social or interpersonal problems before they escalate.
-20. **Animal Behavior**: Understanding the intentions and emotions of animals.
-
-##### Insight Archetypes
-
-|                Archetype |            Example             | Example Description                                                                                | Archetype Description                                                        |
-|-------------------------:|:------------------------------:|:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-|            The Detective |        Sherlock Holmes         | A fictional detective known for his keen powers of observation and deduction.                      | Excels in solving mysteries and uncovering hidden truths.                    |
-|               The Empath |    Deanna Troi (Star Trek)     | A ship's counselor with empathic abilities, able to sense and understand the emotions of others.   | Specializes in understanding and sensing the emotions of others.             |
-|             The Profiler |     Will Graham (Hannibal)     | A profiler able to empathize with criminals to understand their motives and predict their actions. | Focuses on criminal psychology to create detailed psychological profiles.    |
-|           The Negotiator |           Chris Voss           | A former FBI negotiator known for his expertise in hostage negotiations.                           | Skilled in conflict resolution and diplomacy.                                |
-|            The Counselor |       Dr. Frasier Crane        | A psychiatrist who offers emotional support and guidance through his radio show.                   | Master of providing emotional support and guidance.                          |
-|            The Persuader |      Don Draper (Mad Men)      | An advertising executive skilled in persuasion and influence.                                      | Specializes in persuasion and influence.                                     |
-|         The Interrogator |        Jack Bauer (24)         | Known for his intense interrogation techniques to extract information from suspects.               | Focuses on extracting information from others.                               |
-|            The Therapist | Dr. Paul Weston (In Treatment) | A psychotherapist who helps patients uncover and address their deep-seated issues.                 | Skilled in providing mental health support.                                  |
-| The Motivational Speaker |          Tony Robbins          | A motivational speaker known for inspiring people to take action and achieve their goals.          | Excels in inspiring and motivating others.                                   |
-|                The Judge |           Judge Judy           | Known for her ability to quickly assess the true nature of individuals in her courtroom.           | Skilled in making quick assessments of individuals.                          |
-|          The Mind Reader |      Professor X (X-Men)       | A mutant with the ability to read minds, gaining access to thoughts and emotions.                  | Possesses psychic or supernatural abilities to access thoughts and emotions. |
-| The Cultural Interpreter |         Margaret Mead          | An anthropologist known for her studies on the cultures of the South Pacific.                      | Specializes in understanding and bridging cultural gaps.                     |
-|     The Animal Whisperer |          Dr. Dolittle          | A fictional character who can speak with animals and understand their emotions.                    | Skilled in understanding and communicating with animals.                     |
-{: .well .table .table-striped }
-
-
-##### Table with Insight skill and examples for each level of difficulty
-
-| Difficulty        | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
-| Simple            | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                                               |
-| Easy              | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                                                    |
-| Routine           | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                                                          |
-| Average           | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                                                   |
-| Difficult         | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                                                          |
-| Very Difficult    | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                                              |
-| Formidable        | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                                                       |
-| Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
-| Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
-| Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
-{: .well .table .table-striped }
-
-
-#### Investigation Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
-</figure>
-</div>
-
-##### Description of the Investigation skill
-
-When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse.
-
-##### Examples of Investigation from Fiction
-
-In the classic Western novel "True Grit" by Charles Portis, U.S. Marshal Rooster Cogburn demonstrates a keen sense of investigation. Though he's primarily known for his grit and gunfighting skills, Cogburn's ability to track down outlaws also relies heavily on his investigative prowess. Whether he's following a trail through rugged terrain or piecing together clues from a crime scene, Cogburn uses his experience and intuition to make educated deductions.
-
-One memorable scene involves Cogburn arriving at an abandoned cabin where he suspects an outlaw is hiding. Instead of rushing in guns blazing, he takes a moment to investigate. He observes the tracks leading into the cabin, the state of the horses tied outside, and even the smoke coming from the chimney. These clues allow him to deduce not only that the outlaw is indeed inside but also that he's likely alone and unaware of his pursuers. This Investigation check, so to speak, enables Cogburn to plan his approach more strategically, ultimately leading to the successful capture of the outlaw.
-
-A character with a high level of Investigation skill could be invaluable in a Western-themed campaign. Imagine the party is tracking down a notorious bandit; an Investigation check could reveal that the tracks they are following are actually a decoy, saving them valuable time and resources. Or perhaps the group finds themselves in a seemingly deserted mining town; a successful Investigation check could uncover clues leading to a hidden stash of gold or the lair of the bandits who raided the town.
-
-Rooster Cogburn's investigative skills complement his more overt abilities, making him a well-rounded character capable of both action and thoughtful analysis. His knack for investigation doesn't just make him a better lawman; it often gives him the upper hand in dangerous situations, allowing him to outthink as well as outshoot his enemies. This balance of brawn and brain makes the skill of Investigation a critical tool in the arsenal of any gunslinger, sheriff, or bounty hunter in the Wild West.
-
-##### Specializations for Investigation
-
-1. **Crime Scene Analysis**: Examining a crime scene to gather and interpret evidence.
-2. **Forensic Pathology**: Determining cause of death or injury through examination of wounds or conditions.
-3. **Puzzle Solving**: Ability to solve complex puzzles or riddles.
-4. **Trap Detection**: Identifying and understanding mechanical or magical traps.
-5. **Document Analysis**: Scrutinizing documents for authenticity, hidden messages, or clues.
-6. **Cyber Investigation**: Tracing digital footprints and analyzing electronic data.
-7. **Archaeological Assessment**: Investigating ancient sites or artifacts for historical clues.
-8. **Tactical Analysis**: Evaluating situations or locations for strategic advantages or weaknesses.
-9. **Geological Survey**: Investigating the composition and structure of rock formations or terrain.
-10. **Chemical Analysis**: Identifying substances through chemical testing.
-11. **Behavioral Profiling**: Understanding patterns of behavior to predict future actions.
-12. **Asset Recovery**: Locating stolen or hidden items.
-13. **Urban Exploration**: Skillfully navigating and investigating urban environments for information.
-14. **Cryptography**: Decoding encrypted messages or ciphers.
-15. **Contraband Identification**: Recognizing illegal or restricted items.
-16. **Forgery Detection**: Identifying fake or altered objects and documents.
-17. **Social Engineering**: Gathering information through manipulation or persuasion.
-18. **Astronomical Analysis**: Investigating celestial phenomena for patterns or anomalies.
-19. **Ecological Study**: Investigating natural environments to understand ecological relationships.
-20. **Political Intrigue**: Uncovering secrets or hidden agendas in political settings.
-
-##### Investigation Archetypes
-
-|               Archetype |                      Example                       | Example Description                                                                                     | Archetype Description                                                                          |
-|------------------------:|:--------------------------------------------------:|:--------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-|           The Detective |                   Hercule Poirot                   | A fictional detective known for his meticulous attention to detail and logical reasoning.               | Master of solving mysteries and uncovering hidden truths.                                      |
-|    The Forensic Analyst |                 Abby Sciuto (NCIS)                 | A forensic scientist who specializes in analyzing physical evidence to solve crimes.                    | Specializes in analyzing physical evidence like fingerprints, bloodstains, and ballistic data. |
-|       The Archaeologist |                   Indiana Jones                    | A fictional archaeologist who uncovers ancient artifacts and solves historical mysteries.               | Focuses on uncovering the past through archaeological evidence.                                |
-|       The Cryptographer |                    Alan Turing                     | A historical figure who broke the Enigma code during World War II.                                      | Skilled in deciphering codes and ciphers.                                                      |
-|             The Tracker |            Aragorn (Lord of the Rings)             | Known for his tracking skills, able to follow the trail of the kidnapped hobbits.                       | Specializes in following tracks and signs left by people or creatures.                         |
-|   The Criminal Profiler |      Clarice Starling (Silence of the Lambs)       | An FBI trainee who profiles and captures a serial killer.                                               | Specializes in understanding the psychology of criminals.                                      |
-|       The Puzzle Solver |         Robert Langdon (The Da Vinci Code)         | A symbologist who solves intricate puzzles to uncover historical secrets.                               | Focuses on solving intricate puzzles and riddles.                                              |
-|        The Cyber Sleuth | Lisbeth Salander (The Girl with the Dragon Tattoo) | A hacker who investigates digital mysteries.                                                            | Investigates digital mysteries and tracks down cybercriminals.                                 |
-|         The Mythologist |                  Joseph Campbell                   | A scholar known for his work in comparative mythology and understanding of myths from various cultures. | Skilled in uncovering myths and legends to extract hidden meanings.                            |
-| The Conspiracy Theorist |              Fox Mulder (The X-Files)              | An FBI agent who investigates paranormal activities and uncovers government conspiracies.               | Known for uncovering hidden plots and conspiracies.                                            |
-|        The Cartographer |                  Gerhard Mercator                  | A historical cartographer known for creating the Mercator projection map.                               | Focuses on mapmaking and navigation.                                                           |
-|            The Linguist |                    Champollion                     | Known for deciphering the Rosetta Stone and unlocking the secrets of Egyptian hieroglyphs.              | Specializes in deciphering ancient languages and scripts.                                      |
-|       The Riddle Master |                       Sphinx                       | A mythical creature that poses riddles to those who wish to pass by it.                                 | Excels in solving magical riddles and enigmatic puzzles.                                       |
-|       The Time Traveler |                     Doctor Who                     | A Time Lord who travels through different eras to solve mysteries and save civilizations.               | Can uncover hidden clues by navigating different historical eras.                              |
-{: .well .table .table-striped }
-
-
-##### Table with Investigation skill and examples for each level of difficulty
-
-| Difficulty        | Investigation                                                                                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
-| Simple            | Spotting a trail of muddy footprints leading to a nearby shed.                                                                                                        |
-| Easy              | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design.                                                                             |
-| Routine           | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database.                                                                      |
-| Average           | Determining the cause of a minor fire by examining burn patterns and evidence in a room.                                                                              |
-| Difficult         | Investigating a complex financial fraud case involving multiple suspects and intricate transactions.                                                                  |
-| Very Difficult    | Deciphering a highly encrypted and encoded message that requires specialized skills and tools.                                                                        |
-| Formidable        | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence.                                                                       |
-| Heroic            | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
-| Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
-| Godly             | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
-{: .well .table .table-striped }
-
-
-### Acuity Characteristics
-
-**Acuity** represents the overall ability of the being to harmonize
-conflicts in their understanding by pushing themselves mentally.
-
-#### Traditions Knowledge Areas
+##### Traditions Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2031,21 +1762,38 @@ conflicts in their understanding by pushing themselves mentally.
 </figure>
 </div>
 
-##### Description of the Traditions skill
+###### Description of the Traditions skill
 
 The Traditions skill encompasses a deep understanding of cultural norms, social etiquettes, and bureaucratic systems within various groups and organizations. Possessing this skill allows individuals to navigate complex social situations with ease, whether dealing with different ethnicities, religious communities, governmental bodies, or informal social circles. It enables them to grasp the unspoken rules, greetings, taboos, and bureaucratic requirements crucial for successful interactions, ensuring smooth dealings and favorable outcomes.
 
-##### Examples of Traditions from Fiction
+###### Examples of Traditions from Fiction
 
-In the fantasy series "A Song of Ice and Fire" by George R.R. Martin, Daenerys Targaryen demonstrates a remarkable aptitude for understanding and adapting to various traditions and cultural norms as she journeys across different lands. Initially a naive young girl, Daenerys evolves into a savvy leader partly because of her skill in "Traditions." This skill becomes evident as she navigates the complex social landscapes of the Dothraki, the people of Slaver's Bay, and various other groups she encounters.
+In the fantasy series "A Song of Ice and Fire" by George R.R. Martin, Daenerys Targaryen demonstrates a remarkable aptitude for understanding and adapting to various traditions and cultural norms as she journeys across different lands. Initially a naive young girl, Daenerys evolves into a savvy leader partly because of her skill in "Traditions," as it might be termed in a TTRPG setting. This skill becomes evident as she navigates the complex social landscapes of the Dothraki, the people of Slaver's Bay, and various other groups she encounters.
 
 For instance, when Daenerys is married off to Khal Drogo, a leader of the Dothraki, she initially struggles with the unfamiliar customs and traditions of her new people. However, she quickly learns their ways, from their warrior ethos to their religious practices, and uses this knowledge to gain their respect and eventually lead them. Her understanding of Dothraki traditions allows her to challenge existing norms, such as the treatment of women and slaves, without entirely alienating the tribe.
 
-A character with a high level of skill in Traditions could be invaluable for various quests and interactions. Suppose the party is trying to gain the favor of a reclusive elven community. In that case, a character skilled in Traditions could guide the group through the complex social etiquette required, from the proper forms of address to the subtle nuances of elven gift-giving, thereby ensuring a more favorable outcome.
+In a TTRPG setting, a character with a high level of skill in Traditions could be invaluable for various quests and interactions. Suppose the party is trying to gain the favor of a reclusive elven community. In that case, a character skilled in Traditions could guide the group through the complex social etiquette required, from the proper forms of address to the subtle nuances of elven gift-giving, thereby ensuring a more favorable outcome.
 
 Daenerys's ability to understand and adapt to different traditions is a cornerstone of her leadership style. It enables her to unite disparate groups under her banner, from Dothraki horse lords to freed slaves. Her skill in Traditions allows her to navigate complex social terrains, earning her allies where others might find only enemies. This skill becomes one of her most potent tools in her quest to reclaim the Iron Throne, demonstrating the power of cultural understanding in achieving one's goals.
 
-##### Specializations for Traditions
+###### Traditions Archetypes
+
+- **The Cultural Ambassador:** This archetype is a master of bridging cultural gaps and promoting cross-cultural understanding. They can navigate the customs, traditions, and etiquettes of different ethnicities and help parties interact harmoniously with diverse groups.
+- **The Diplomat:** Specializing in international relations and diplomacy, the Diplomat can negotiate with foreign governments, understand diplomatic protocols, and navigate complex geopolitical landscapes.
+- **The Religious Scholar:** Focusing on the study of religious beliefs and practices, the Religious Scholar can interpret religious texts, perform religious ceremonies, and mediate religious disputes.
+- **The Etiquette Expert:** Skilled in social manners and formal etiquette, the Etiquette Expert can guide others in behaving appropriately in various social settings, from high-society events to formal diplomatic functions.
+- **The Protocol Officer:** This archetype is well-versed in official protocols and bureaucratic systems. They can ensure that parties follow the correct procedures, submit necessary documents, and adhere to governmental regulations.
+- **The Folklorist:** Specializing in the traditions and folklore of different regions and communities, the Folklorist can collect and interpret folk tales, legends, and customs, preserving cultural heritage.
+- **The Linguist:** In addition to cultural understanding, this version of the Cultural Ambassador excels in learning and interpreting languages, making them invaluable for cross-cultural communication.
+- **The Peace Negotiator:** This version of the Diplomat specializes in resolving conflicts and mediating disputes between nations or groups. They can find common ground and build peace treaties.
+- **The Clergyman:** Focusing on religious leadership and spiritual guidance, the Clergyman can lead religious ceremonies, offer moral support, and provide spiritual counsel to others.
+- **The Gala Planner:** Known for their ability to organize and host formal events and galas, the Gala Planner can create memorable and elegant gatherings that adhere to social etiquette.
+- **The Bureaucratic Sage:** This version of the Protocol Officer excels in navigating bureaucratic mazes and complex legal systems. They can expedite processes and cut through red tape.
+- **The Storyteller:** In addition to preserving folklore, the Storyteller specializes in using stories and legends to inspire and entertain others. They can captivate audiences with their narratives.
+- **The Polyglot:** Skilled in learning and speaking multiple languages fluently, the Polyglot can facilitate communication between diverse groups and translate complex documents.
+- **The Mediator:** Focusing on conflict resolution, the Mediator can mediate disputes at various levels, from interpersonal conflicts to international crises.
+
+###### Specializations for Traditions
 
 1. **Cultural Etiquette**: Understanding the norms and manners of different cultures.
 2. **Religious Practices**: Knowledge of rituals, beliefs, and taboos within various religious communities.
@@ -2068,28 +1816,7 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 19. **Folklore and Mythology**: Understanding traditional stories, myths, and practices within cultures.
 20. **Secret Societies**: Knowledge of the rituals, signs, and practices within clandestine organizations.
 
-##### Traditions Archetypes
-
-|               Archetype |                  Example                   | Example Description                                                                       | Archetype Description                                                                                    |
-|------------------------:|:------------------------------------------:|:------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| The Cultural Ambassador |                 Pocahontas                 | A historical figure who acted as a liaison between Native Americans and English settlers. | Master of bridging cultural gaps and promoting cross-cultural understanding.                             |
-|            The Diplomat |              Henry Kissinger               | A U.S. Secretary of State known for his diplomatic efforts during the Cold War.           | Specializes in international relations and diplomacy.                                                    |
-|   The Religious Scholar |               Thomas Aquinas               | A medieval theologian known for his interpretation of Christian doctrine.                 | Focuses on the study of religious beliefs and practices.                                                 |
-|    The Etiquette Expert |                 Emily Post                 | An American author famous for writing on etiquette.                                       | Skilled in social manners and formal etiquette.                                                          |
-|    The Protocol Officer |    Sir Humphrey Appleby (Yes, Minister)    | A fictional British civil servant who is an expert in governmental protocols.             | Well-versed in official protocols and bureaucratic systems.                                              |
-|          The Folklorist |          Jacob and Wilhelm Grimm           | Collectors of German folk tales and legends.                                              | Specializes in the traditions and folklore of different regions and communities.                         |
-|            The Linguist |                Noam Chomsky                | An American linguist known for his theories on language and its role in society.          | Excels in learning and interpreting languages for cross-cultural communication.                          |
-|    The Peace Negotiator |               Nelson Mandela               | Played a key role in ending apartheid and fostering peace in South Africa.                | Specializes in resolving conflicts and mediating disputes between nations or groups.                     |
-|           The Clergyman |                Pope Francis                | The leader of the Catholic Church, known for his spiritual guidance and moral support.    | Focuses on religious leadership and spiritual guidance.                                                  |
-|        The Gala Planner |       Jay Gatsby (The Great Gatsby)        | A fictional character known for hosting extravagant parties.                              | Known for organizing and hosting formal events and galas.                                                |
-|   The Bureaucratic Sage |    Leslie Knope (Parks and Recreation)     | A fictional character who excels in navigating local government bureaucracy.              | Excels in navigating bureaucratic mazes and complex legal systems.                                       |
-|         The Storyteller | Scheherazade (One Thousand and One Nights) | A legendary storyteller who captivated a king with her tales.                             | Specializes in using stories and legends to inspire and entertain others.                                |
-|            The Polyglot |            Cardinal Mezzofanti             | A historical figure known for speaking multiple languages fluently.                       | Skilled in learning and speaking multiple languages fluently.                                            |
-|            The Mediator |                 Kofi Annan                 | A former UN Secretary-General known for his efforts in mediating international conflicts. | Focusing on conflict resolution at various levels, from interpersonal conflicts to international crises. |
-{: .well .table .table-striped }
-
-
-##### Table with Traditions skill and examples for each level of difficulty
+###### Table with Traditions skill and examples for each level of difficulty
 
 | Difficulty        | Traditions                                                                                                          |
 |-------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -2104,10 +1831,10 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 | Heroic            | Representing a nation at an international summit and skillfully navigating various cultural nuances.                |
 | Nearly Impossible | Mediating peace talks between warring factions with deeply entrenched cultural hostilities.                         |
 | Godly             | Serving as a cultural ambassador to foster harmony and understanding among diverse civilizations across the galaxy. |
-{: .well .table .table-striped }
 
+ * * *
 
-#### Perception Knowledge Areas
+##### Perception Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2116,21 +1843,39 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 </figure>
 </div>
 
-##### Description of the Perception skill
+###### Description of the Perception skill
 
 The Perception skill represents an individual's heightened awareness and keenness of their senses, enabling them to spot, hear, or detect the presence of concealed or obscured elements in their surroundings. This skill is crucial for eavesdropping on conversations, detecting hidden threats, and noticing subtle clues or danger in various environments. Whether it's spotting lurking enemies in the shadows or identifying concealed objects behind closed doors, Perception allows characters to remain vigilant and attentive to their environment.
 
-##### Examples of Perception from Fiction
+###### Examples of Perception from Fiction
 
 In the classic mystery fiction series featuring Sherlock Holmes by Sir Arthur Conan Doyle, the titular character is the epitome of heightened Perception. Holmes's keen observational skills are legendary, allowing him to spot clues and details that even trained investigators often overlook. Whether he's at a crime scene, in his Baker Street apartment, or walking through the streets of London, Holmes's Perception is always at work, helping him solve some of the most baffling cases.
 
 For instance, in "The Adventure of the Speckled Band," Holmes quickly deduces the presence of a dangerous snake in a locked room, a clue that had eluded everyone else. His Perception allows him to notice subtle details like the arrangement of a bell-pull, the presence of saucer of milk, and the peculiar construction of a bed, all of which contribute to solving the mystery. Holmes's ability to perceive what others cannot is not limited to visual clues; he also has an acute sense of hearing, which he uses to eavesdrop on conversations or detect someone's approach.
 
-A character with a high level of Perception skill would be invaluable in a mystery or investigation scenario. Imagine the party is trying to solve a murder in a haunted mansion; a Perception check could reveal hidden compartments, overlooked clues, or even the faint sound of someone else in the house. This skill would be crucial for piecing together evidence, avoiding traps, and ultimately solving the mystery at hand.
+In a Table Top Role Playing Game (TTRPG) setting, a character with a high level of Perception skill would be invaluable in a mystery or investigation scenario. Imagine the party is trying to solve a murder in a haunted mansion; a Perception check could reveal hidden compartments, overlooked clues, or even the faint sound of someone else in the house. This skill would be crucial for piecing together evidence, avoiding traps, and ultimately solving the mystery at hand.
 
 Sherlock Holmes's extraordinary Perception is not just a skill but an art form, honed through years of observation and logical deduction. It's this keen awareness that sets him apart as one of the greatest detectives in literary history. Whether he's solving a complex murder case or simply observing the people around him, Holmes's Perception allows him to see the world in a way that few others can, making him an enduring symbol of the power of observation and attention to detail.
 
-##### Specializations for Perception Skill
+###### Perception Archetypes
+
+- **The Scout:** This archetype excels in reconnaissance and gathering information about the surrounding environment. They can detect hidden threats, scout ahead for danger, and provide valuable insights about the terrain.
+- **The Sentinel:** Specializing in guarding and protecting, the Sentinel can maintain a constant vigilance, spotting potential threats or intruders before they can strike. They are skilled at perimeter defense and early warning systems.
+- **The Tracker:** Focusing on following tracks and signs, the Tracker can discern the presence of creatures or individuals based on subtle clues such as footprints, disturbed foliage, or scent trails.
+- **The Investigator:** Skilled in uncovering hidden clues and secrets, the Investigator can find concealed objects, discover hidden compartments, and identify subtle details that others might miss during investigations.
+- **The Eavesdropper:** This archetype is known for their ability to listen in on conversations and gather information discreetly. They can overhear whispered conversations, detect hidden microphones, and interpret coded messages.
+- **The Scent Tracker:** Specializing in using their sense of smell, the Scent Tracker can follow scent trails, identify specific odors, and even detect concealed or hidden substances by their scent.
+- **The Search and Rescue Specialist:** Focusing on finding missing persons or lost objects, the Search and Rescue Specialist can locate individuals in distress, identify their whereabouts, and lead rescue operations.
+- **The Treasure Hunter:** This archetype is skilled in discovering hidden treasures and valuable artifacts. They can identify concealed entrances to treasure troves and decipher cryptic maps and clues.
+- **The Safecracker:** Known for their ability to open locked or secure containers, the Safecracker can detect hidden mechanisms, identify vulnerabilities in locks, and manipulate them to gain access.
+- **The Stealth Expert:** Skilled in both perception and stealth, the Stealth Expert can detect hidden threats while remaining hidden themselves. They are experts at avoiding detection and maintaining situational awareness in stealthy operations.
+- **The Night Watchman:** Focusing on guarding properties and locations during the night, the Night Watchman can detect intruders, monitor security systems, and respond to nighttime threats.
+- **The Paranormal Investigator:** In a supernatural or occult setting, the Paranormal Investigator can perceive and investigate supernatural phenomena, such as ghosts, spirits, or otherworldly disturbances.
+- **The Wilderness Observer:** This archetype specializes in observing wildlife and natural phenomena. They can detect the presence of animals, identify flora and fauna, and predict changes in weather and natural events.
+- **The Spotter:** This version of the Scout specializes in spotting distant targets, such as snipers or hidden foes. They excel in providing overwatch and long-range reconnaissance.
+- **The Cryptid Hunter:** In a supernatural or cryptozoological setting, the Cryptid Hunter can detect and track elusive and mythical creatures.
+
+###### Specializations for Perception Skill
 
 1. **Visual Acuity**: Exceptional ability to spot hidden or distant objects.
 2. **Auditory Sensitivity**: Keen hearing that allows for eavesdropping or detecting quiet noises.
@@ -2153,30 +1898,7 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 19. **Subtext Awareness**: Sensing the unspoken context or implications in a situation.
 20. **Psychic Sensing**: Detecting supernatural or magical phenomena (if applicable in your game world).
 
-##### Perception Archetypes
-
-
-|                        Archetype |              Example               | Example Description                                                                                   | Archetype Description                                                                                        |
-|---------------------------------:|:----------------------------------:|:------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
-|                        The Scout |    Aragorn (Lord of the Rings)     | A skilled ranger who excels in reconnaissance and detecting hidden threats.                           | Excels in reconnaissance and gathering information about the surrounding environment.                        |
-|                     The Sentinel | Samwise Gamgee (Lord of the Rings) | Vigilant in guarding Frodo and spotting threats like Gollum.                                          | Specializes in guarding and protecting, skilled at perimeter defense and early warning systems.              |
-|                      The Tracker |      Tonto (The Lone Ranger)       | Expert in following tracks and signs to locate people or understand events.                           | Focuses on following tracks and signs left by creatures or individuals.                                      |
-|                 The Investigator |          Sherlock Holmes           | Renowned for his observational skills and attention to detail in solving crimes.                      | Skilled in uncovering hidden clues and secrets.                                                              |
-|                 The Eavesdropper |      Varys (Game of Thrones)       | Known for his network of spies and ability to gather information through eavesdropping.               | Known for the ability to listen in on conversations and gather information discreetly.                       |
-|                The Scent Tracker |         Wolverine (X-Men)          | Uses his heightened sense of smell to track people and objects.                                       | Specializes in using their sense of smell to follow scent trails and identify specific odors.                |
-| The Search and Rescue Specialist |        Baywatch Lifeguards         | Skilled in locating and rescuing individuals in distress at sea.                                      | Focuses on finding missing persons or lost objects and leading rescue operations.                            |
-|              The Treasure Hunter |           Indiana Jones            | Archaeologist and adventurer skilled in discovering hidden treasures.                                 | Skilled in discovering hidden treasures and valuable artifacts.                                              |
-|                  The Safecracker |    Danny Ocean (Ocean's Eleven)    | Expert in cracking safes and bypassing security systems.                                              | Known for the ability to open locked or secure containers.                                                   |
-|               The Stealth Expert |      Solid Snake (Metal Gear)      | Specializes in stealth missions, skilled in avoiding detection while being aware of his surroundings. | Skilled in both perception and stealth, experts at avoiding detection and maintaining situational awareness. |
-|               The Night Watchman |       Paul Blart (Mall Cop)        | Takes his job of guarding the mall seriously, especially during nighttime.                            | Focuses on guarding properties and locations during the night.                                               |
-|      The Paranormal Investigator |      Fox Mulder (The X-Files)      | Investigates supernatural phenomena and believes in the existence of extraterrestrial life.           | Can perceive and investigate supernatural phenomena.                                                         |
-|          The Wilderness Observer |            Steve Irwin             | Known for his keen observation of wildlife and natural phenomena.                                     | Specializes in observing wildlife and natural phenomena.                                                     |
-|                      The Spotter |    Chris Kyle (American Sniper)    | Known for his role as a sniper spotter, providing overwatch and long-range reconnaissance.            | Specializes in spotting distant targets, excels in providing overwatch and long-range reconnaissance.        |
-|               The Cryptid Hunter |            Van Helsing             | Hunts mythical creatures like vampires and werewolves.                                                | Can detect and track elusive and mythical creatures.                                                         |
-{: .well .table .table-striped }
-
-
-##### Table with Perception skill and examples for each level of difficulty
+###### Table with Perception skill and examples for each level of difficulty
 
 | Difficulty        | Perception                                                                                                                 |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -2191,10 +1913,10 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 | Heroic            | Detecting a concealed trap in a complex labyrinth without any prior knowledge of its existence.                            |
 | Nearly Impossible | Seeing through a powerful illusion that even confounds other skilled magic users.                                          |
 | Godly             | Discerning the presence of an ethereal being hidden from mortal perception without the use of magical abilities or spells. |
-{: .well .table .table-striped }
 
+ * * *
 
-#### Formal Sciences Knowledge Areas
+##### Formal Sciences Knowledge Areas
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
@@ -2203,21 +1925,40 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 </figure>
 </div>
 
-##### Description of Formal Sciences Skill
+###### Description of Formal Sciences Skill
 
 The Formal Sciences skill involves understanding and manipulating formal systems such as logic, mathematics, statistics, information theory, game theory, and decision theory. Individuals with this skill can analyze complex data, make precise calculations, and grasp the underlying principles governing formal structures. Moreover, they can apply this knowledge to advance other skills formally, enhancing their expertise in various fields.
 
-##### Examples of Formal Sciences from Fiction
+###### Examples of Formal Sciences from Fiction
 
 In the science fiction novel "Foundation" by Isaac Asimov, the character Hari Seldon exemplifies the use of Formal Science skills, particularly in the realms of mathematics and statistics. Seldon is the creator of "psychohistory," a scientific discipline that combines history, sociology, and mathematical statistics to predict the future behavior of large populations. His groundbreaking work in this formal system not only revolutionizes the understanding of societal dynamics but also sets the stage for the entire series, as his predictions about the future of the Galactic Empire become the foundation for subsequent actions.
 
 Seldon's Formal Science skills are not limited to abstract theories; they have practical applications that drive the plot. For example, he uses mathematical models to predict the fall of the Galactic Empire and the subsequent dark age. This prediction leads him to establish the Foundation, an organization aimed at minimizing the period of chaos. His understanding of formal systems like game theory and decision theory also helps him strategize the Foundation's actions to ensure its survival against various threats.
 
-A character with a high level of skill in Formal Science could be invaluable for problem-solving and strategic planning. Imagine the party is faced with a complex puzzle that requires understanding mathematical patterns to solve. A Formal Science check could determine whether they successfully decipher the puzzle and move forward. This skill could also be used in conjunction with other skills to advance them formally. For example, a character might use Formal Science to optimize a magical algorithm, thereby making their spells more efficient or powerful.
+In a TTRPG setting, a character with a high level of skill in Formal Science could be invaluable for problem-solving and strategic planning. Imagine the party is faced with a complex puzzle that requires understanding mathematical patterns to solve. A Formal Science check could determine whether they successfully decipher the puzzle and move forward. This skill could also be used in conjunction with other skills to advance them formally. For example, a character might use Formal Science to optimize a magical algorithm, thereby making their spells more efficient or powerful.
 
 Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world, shaping the course of history through his understanding of formal systems. His skills enable him to analyze complex problems, develop innovative solutions, and make informed decisions that have far-reaching implications. Whether he's predicting the future of civilizations or devising strategies to navigate crises, Seldon's expertise in Formal Science is both his defining trait and his most powerful tool.
 
-##### Specializations for Formal Science Skill
+###### Formal Sciences Archetypes
+
+- **The Mathematician:** This archetype is a master of mathematical principles and calculations. They can solve complex mathematical problems, perform statistical analysis, and make precise measurements.
+- **The Logician:** Specializing in formal logic, the Logician can deduce conclusions from premises, identify fallacies in arguments, and create logical proofs to support their claims.
+- **The Game Theorist:** Focusing on strategic decision-making, the Game Theorist can analyze competitive situations, predict opponents' moves, and devise winning strategies in various games and conflicts.
+- **The Statistician:** Skilled in statistical analysis, the Statistician can interpret data, conduct surveys, and make informed decisions based on probability and statistical models.
+- **The Information Theorist:** This archetype excels in understanding and manipulating information theory, including data compression, encryption, and the transmission of information in various forms.
+- **The Cryptanalyst:** Specializing in breaking codes and ciphers, the Cryptanalyst can decrypt encrypted messages, identify patterns in coded communications, and uncover hidden information.
+- **The Decision Analyst:** Focusing on rational decision-making, the Decision Analyst can assess options, weigh probabilities, and make optimal choices in complex situations.
+- **The Chess Grandmaster:** Known for their mastery of chess and strategic thinking, the Chess Grandmaster can analyze chess positions, plan ahead, and predict opponents' moves with precision.
+- **The Programmer:** This version of the Mathematician specializes in computer programming, coding, and software development. They can create complex algorithms and write efficient code.
+- **The Philosopher:** Focusing on philosophical inquiries, the Philosopher can explore abstract concepts, ponder ethical dilemmas, and engage in deep philosophical discussions.
+- **The Negotiation Strategist:** This version of the Game Theorist specializes in negotiation tactics and conflict resolution. They can analyze negotiation dynamics and devise strategies for successful negotiations.
+- **The Market Analyst:** Skilled in financial analysis, the Market Analyst can assess economic trends, predict market movements, and make informed investment decisions.
+- **The Data Scientist:** Specializing in data analysis and machine learning, the Data Scientist can extract valuable insights from large datasets, create predictive models, and automate decision-making processes.
+- **The Cryptographer:** In addition to breaking codes, the Cryptographer excels in creating secure encryption methods and protecting sensitive information from unauthorized access.
+- **The Gambler:** This archetype excels in applying formal sciences to games of chance and risk assessment. They can calculate odds, devise betting strategies, and make informed decisions in gambling situations. The Gambler's expertise extends to various games, from poker and roulette to sports betting and card counting.
+- **The Linguistic Analyst:** Specializing in the analysis of language and communication, the Linguistic Analyst can decipher and analyze coded or encrypted messages, discern patterns in linguistic data, and uncover hidden meanings in texts. They are skilled in understanding the nuances of different languages and dialects, making them valuable in deciphering language-related mysteries and cryptic communications.
+
+###### Specializations for Formal Science Skill
 
 1. **Algebraic Geometry**: Study of algebraic structures and their geometric interpretations.
 2. **Applied Game Theory**: Application of game theory to optimize strategies in casino games.
@@ -2240,30 +1981,7 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 19. **Optimization Theory**: Mathematical techniques for finding the best possible solutions in various settings.
 20. **Quantum Computing**: Exploration of computational theory and algorithms as applied to quantum systems.
 
-##### Formal Sciences Archetypes
-
-|                  Archetype |       Example        | Example Description                                                                                                     | Archetype Description                                                      |
-|---------------------------:|:--------------------:|:------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-|          The Mathematician |     Isaac Newton     | Developed calculus and made groundbreaking contributions to mathematics.                                                | Master of mathematical principles and calculations.                        |
-|               The Logician |      Aristotle       | Ancient Greek philosopher who laid the foundations for formal logic.                                                    | Specializes in formal logic and deducing conclusions from premises.        |
-|          The Game Theorist |      John Nash       | Known for the Nash Equilibrium in game theory, which is used in economics, politics, and other disciplines.             | Focuses on strategic decision-making and analyzing competitive situations. |
-|           The Statistician | Florence Nightingale | Used statistics to improve sanitary conditions in hospitals during the Crimean War.                                     | Skilled in statistical analysis and interpreting data.                     |
-|   The Information Theorist |    Claude Shannon    | Known as the "father of modern digital communication and information theory."                                           | Excels in understanding and manipulating information theory.               |
-|           The Cryptanalyst |     Alan Turing      | Broke the German Enigma code during World War II.                                                                       | Specializes in breaking codes and ciphers.                                 |
-|       The Decision Analyst |   Daniel Kahneman    | Known for his work on the psychology of judgment and decision-making.                                                   | Focuses on rational decision-making and assessing options.                 |
-|      The Chess Grandmaster |    Garry Kasparov    | One of the greatest chess players of all time.                                                                          | Mastery of chess and strategic thinking.                                   |
-|             The Programmer |     Ada Lovelace     | Known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine.               | Specializes in computer programming, coding, and software development.     |
-|            The Philosopher |       Socrates       | Known for his contributions to ethics and epistemology.                                                                 | Focuses on philosophical inquiries and exploring abstract concepts.        |
-| The Negotiation Strategist |   Henry Kissinger    | Known for his role in diplomatic negotiations such as the Paris Peace Accords.                                          | Specializes in negotiation tactics and conflict resolution.                |
-|         The Market Analyst |    Warren Buffett    | Known for his keen ability to analyze market trends and make successful investments.                                    | Skilled in financial analysis and predicting market movements.             |
-|         The Data Scientist |      Andrew Ng       | Known for his work in machine learning and data science.                                                                | Specializes in data analysis and machine learning.                         |
-|          The Cryptographer |   Whitfield Diffie   | Co-inventor of public-key cryptography.                                                                                 | Excels in creating secure encryption methods.                              |
-|                The Gambler |     Edward Thorp     | Known for "Beat the Dealer," a book that mathematically proved that the house advantage in blackjack could be overcome. | Excels in games of chance and risk assessment.                             |
-|     The Linguistic Analyst |     Noam Chomsky     | Known for his theories on the structure of languages and their universal characteristics.                               | Specializes in the analysis of language and communication.                 |
-{: .well .table .table-striped }
-
-
-##### Table with Formal Science skill and examples for each level of difficulty
+###### Table with Formal Science skill and examples for each level of difficulty
 
 | Difficulty        | Formal Sciences                                                                                                                                                                                                                                                                                                                |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2278,7 +1996,907 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 | Heroic            | Developing a groundbreaking mathematical model to explain a natural phenomenon or guess the next card to be drawn in a deck.                                                                                                                                                                                                   |
 | Nearly Impossible | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                          |
 | Godly             | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                             |
+
+#### Reasoning Characteristics
+
+**Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
+
+ * * *
+
+##### Engineering Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
+</figure>
+</div>
+
+###### Description of the Engineering skill
+
+Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
+
+###### Examples of Engineering from Fiction
+
+In the science fiction TV series "Firefly," Kaylee Frye serves as the chief mechanic aboard the spaceship Serenity, captained by Malcolm Reynolds. Kaylee is a self-taught engineering prodigy, possessing an intuitive understanding of mechanical systems, electronics, and propulsion technologies. Her role is absolutely vital to the crew's survival and success, as she is responsible for keeping the ship operational against all odds. Whether it's a routine maintenance check or an emergency repair in the heat of battle, Kaylee is the go-to expert for anything related to the ship's engineering.
+
+One memorable episode, "Out of Gas," showcases Kaylee's engineering prowess in a life-or-death situation. When the ship's life support system fails, leaving the crew with only a few hours of breathable air, Kaylee's skills are put to the ultimate test. Despite the immense pressure and limited resources, she manages to rig a makeshift solution to buy the crew more time. Her deep understanding of the ship's systems, combined with her ability to improvise, turns her into the crew's lifeline in this dire situation.
+
+In a Table Top Role Playing Game (TTRPG) setting, a character with Kaylee's engineering skills would offer a wide range of problem-solving options. Imagine a scenario where the party's spacecraft is damaged during a skirmish with enemy ships. An Engineering check could determine whether the character successfully reroutes power to essential systems, repairs the ship's thrusters for a quick escape, or even modifies the ship's weapons for a last-ditch counterattack. The possibilities are numerous, and a skilled engineer could tip the scales in the party's favor in countless ways.
+
+Kaylee's engineering expertise goes beyond mere technical skills; her ability to think quickly, adapt to new challenges, and work with limited resources makes her an invaluable member of the Serenity crew. Whether she's patching up bullet holes in the engine room or fine-tuning the ship's systems for better fuel efficiency, Kaylee's contributions are a blend of scientific knowledge and practical know-how. Her character exemplifies how engineering skills can be a game-changer in both everyday operations and high-stakes conflicts.
+
+###### Engineering Archetypes
+
+- **The Tinkerer:** This archetype is known for their knack for inventing and building mechanical devices. They can construct gadgets, traps, and makeshift tools using their engineering expertise.
+- **The Mechanic:** Specializing in the repair and maintenance of machinery, the Mechanic can fix everything from vehicles to intricate mechanical devices. They are skilled in diagnosing and solving technical problems.
+- **The Architect:** Focusing on designing and constructing buildings and structures, the Architect can create impressive architectural marvels, from bridges and fortresses to elegant homes and grand palaces.
+- **The Inventor:** Skilled in creating new technological innovations, the Inventor can develop groundbreaking inventions that revolutionize industries or provide unique advantages to the party.
+- **The Demolition Expert:** This archetype specializes in the safe and controlled destruction of structures and obstacles. They can set up explosive charges, dismantle complex traps, and bring down walls with precision.
+- **The Electrical Engineer:** Focusing on electrical systems and technology, the Electrical Engineer can work with circuits, power sources, and electronic devices. They are essential for tasks involving power generation, security systems, and high-tech gadgets.
+- **The Structural Engineer:** Specializing in the stability and integrity of buildings and infrastructure, the Structural Engineer can assess the safety of structures, reinforce weak points, and design load-bearing components.
+- **The Bridge Builder:** This archetype excels in constructing bridges and other types of crossings. They can create safe and durable pathways over rivers, chasms, and other obstacles.
+- **The Siege Engineer:** Skilled in designing and operating siege weapons and artillery, the Siege Engineer can build and use trebuchets, catapults, and other siege engines for military or defensive purposes.
+- **The Reverse Engineer:** This expert is known for their ability to dismantle and understand complex artifacts, machinery, or technology. They can figure out how to replicate or modify existing devices.
+- **The Robotics Expert:** In a futuristic or sci-fi setting, the Robotics Expert can design, build, and repair robots and autonomous machines. They are essential for tasks involving automation and AI.
+- **The Civil Engineer:** Focusing on infrastructure and public works, the Civil Engineer can plan and oversee the construction of roads, bridges, dams, and other large-scale projects that benefit society.
+- **The Industrial Designer:** This archetype specializes in the aesthetic and ergonomic aspects of product design. They can create visually pleasing and user-friendly devices and structures.
+- **The Environmental Engineer:** Skilled in mitigating environmental impact, the Environmental Engineer can develop solutions for pollution control, resource management, and sustainable practices.
+
+###### Specializations for Engineering
+
+1. **Mechanical Engineering**: Design and maintenance of mechanical systems like engines and machinery.
+2. **Civil Engineering**: Planning and construction of infrastructure such as bridges, roads, and buildings.
+3. **Electrical Engineering**: Understanding and manipulation of electrical systems and circuits.
+4. **Software Engineering**: Development and maintenance of software applications.
+5. **Chemical Engineering**: Manipulation of chemical processes for industrial applications.
+6. **Aerospace Engineering**: Design and construction of aircraft and spacecraft.
+7. **Biomedical Engineering**: Application of engineering principles to healthcare and medical devices.
+8. **Environmental Engineering**: Solutions for environmental issues like waste management and pollution control.
+9. **Structural Engineering**: Specialization in the integrity and durability of buildings and structures.
+10. **Automotive Engineering**: Design and development of vehicles and their subsystems.
+11. **Naval Engineering**: Design and maintenance of ships, submarines, and other watercraft.
+12. **Robotics**: Design and programming of automated machines.
+13. **Cybersecurity Engineering**: Protection of computer systems and networks from cyber threats.
+14. **Telecommunications**: Engineering of systems for transmitting information over a distance.
+15. **Energy Systems**: Design and management of systems for energy production and distribution.
+16. **Material Science**: Study and application of the properties of matter in engineering.
+17. **Acoustical Engineering**: Control and manipulation of sound through engineering.
+18. **Nuclear Engineering**: Specialization in the processes, systems, and instruments of nuclear energy.
+19. **Geotechnical Engineering**: Engineering related to the behavior of earth materials.
+20. **Reverse Engineering**: Deconstruction and analysis of devices to understand their functionality.
+
+###### Table with Engineering skill and examples for each level of difficulty
+
+| Difficulty        | Engineering                                                                                                                                                                                             |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Repairing a simple, everyday household gadget.                                                                                                                                                          |
+| Simple            | Building a small toy or crafting a basic wooden chair.                                                                                                                                                  |
+| Easy              | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                              |
+| Routine           | Designing and building a small wooden bridge over a stream.                                                                                                                                             |
+| Average           | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                               |
+| Difficult         | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                      |
+| Very Difficult    | Designing and constructing a functioning steam-powered engine.                                                                                                                                          |
+| Formidable        | Creating an advanced automaton with artificial intelligence.                                                                                                                                            |
+| Heroic            | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
+| Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
+| Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
+
+ * * *
+
+##### Insight Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
+</figure>
+</div>
+
+###### Description of the Insight skill
+
+Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
+
+###### Examples of Insight from Fiction
+
+In the science fiction series "Dune" by Frank Herbert, Paul Atreides exhibits an extraordinary level of insight, honed by a combination of his Bene Gesserit training and his own innate abilities. Paul's skill in discerning the true intentions and emotions of others is almost uncanny, allowing him to navigate the complex political and social landscapes of his universe. Whether he's interpreting the subtle body language of a potential ally or detecting the hidden motives behind a seemingly straightforward proposal, Paul's insight is one of his most potent tools.
+
+One notable instance occurs in "Dune" when Paul and his mother, Lady Jessica, are taken captive by the Fremen, the native people of the desert planet Arrakis. Despite being in a perilous situation, Paul uses his insight to quickly gauge the dynamics within the Fremen tribe, identifying who holds real power and who can be trusted. His ability to read between the lines during conversations and negotiations not only earns him the respect of the Fremen but also allows him to rise to a position of leadership among them.
+
+In a TTRPG setting, a character with a high level of insight could be invaluable for various aspects of gameplay. They might be able to discern that an NPC is lying about the location of a hidden treasure, or sense that a supposed ally is actually a traitor. An Insight check could be used to determine the success of these intuitive leaps, influencing the party's decisions and potentially saving them from traps, betrayals, or poor choices.
+
+Paul Atreides' mastery of insight is not just a passive skill but an active tool he employs to shape events around him. His ability to understand the unspoken motivations and hidden agendas of those he interacts with gives him a significant advantage in the intricate power games he finds himself a part of. Whether he's facing political intrigue, complex negotiations, or potential combat, Paul's insight often provides him the edge he needs to come out on top.
+
+###### Insight Archetypes
+
+- **The Detective:** This archetype excels in solving mysteries and uncovering hidden truths. They can deduce motives, unravel complex plots, and see through deception, making them valuable in investigative scenarios.
+- **The Empath:** Specializing in understanding and sensing the emotions of others, the Empath can connect with people on a deep emotional level. They can provide comfort, diffuse tense situations, and offer valuable insights into the feelings of NPCs.
+- **The Profiler:** Focusing on criminal psychology, the Profiler can create detailed psychological profiles of individuals based on their behavior and actions. They can predict future actions and provide valuable information for law enforcement or strategic planning.
+- **The Negotiator:** Skilled in conflict resolution and diplomacy, the Negotiator can read the intentions and desires of opposing parties in negotiations. They can find common ground and broker deals in tense situations.
+- **The Counselor:** This archetype is a master of providing emotional support and guidance to others. They can help characters deal with trauma, make difficult decisions, and overcome personal challenges.
+- **The Persuader:** Specializing in persuasion and influence, the Persuader can read the desires and motivations of individuals and tailor their arguments or appeals to achieve their goals. They are skilled in changing people's minds and gaining their cooperation.
+- **The Interrogator:** Focusing on extracting information from others, the Interrogator can analyze verbal and non-verbal cues to determine if someone is lying or withholding information. They are experts in obtaining valuable intelligence.
+- **The Therapist:** Skilled in providing mental health support, the Therapist can uncover the deep-seated issues and traumas of characters. They can help characters heal and overcome psychological challenges.
+- **The Motivational Speaker:** This archetype excels in inspiring and motivating others. They can understand the desires and aspirations of individuals and use their insights to encourage action and achievement.
+- **The Judge:** Known for their ability to quickly assess the true nature of individuals, the Judge can determine if someone is trustworthy or suspicious. They are skilled in making snap judgments based on limited interactions.
+- **The Mind Reader:** In a mystical or supernatural setting, the Mind Reader possesses psychic or supernatural abilities that allow them to directly access the thoughts and emotions of others. They can uncover hidden secrets and gain access to a wealth of information.
+- **The Cultural Interpreter:** Specializing in understanding and bridging cultural gaps, the Cultural Interpreter can discern the unspoken rules, norms, and values of different societies. They can facilitate cross-cultural understanding and avoid cultural misunderstandings.
+- **The Animal Whisperer:** Skilled in understanding and communicating with animals, the Animal Whisperer can read the intentions and emotions of creatures. They can calm agitated animals, gain their trust, and even influence their behavior.
+
+###### Specializations for Insight
+
+1. **Lie Detection**: Ability to discern when someone is being dishonest.
+2. **Emotional Intelligence**: Understanding and interpreting the emotions of others.
+3. **Motivation Analysis**: Discerning the underlying goals or desires driving someone's actions.
+4. **Body Language**: Reading non-verbal cues to understand feelings or intentions.
+5. **Social Dynamics**: Understanding the unspoken rules and structures within social groups.
+6. **Cultural Insight**: Ability to understand motivations and behaviors within specific cultural contexts.
+7. **Psychological Profiling**: Creating in-depth profiles of individuals based on observed behavior.
+8. **Interrogation**: Skillful questioning to reveal hidden information.
+9. **Conflict Resolution**: Identifying the root causes of disagreements and finding solutions.
+10. **Negotiation**: Ability to influence or arrive at agreements through discussion.
+11. **Empathy**: Deep understanding and sharing of the emotional states of others.
+12. **Intuition**: Relying on gut feelings to make judgments about people or situations.
+13. **Subtext Reading**: Understanding the implied or hidden meanings in spoken or written language.
+14. **Seduction**: Ability to influence others through charm or attraction.
+15. **Manipulation**: Skillfully controlling or influencing others, often without their awareness.
+16. **Political Acumen**: Understanding the motivations and strategies in political or organizational settings.
+17. **Salesmanship**: Ability to persuade others to make purchases or take specific actions.
+18. **Leadership Assessment**: Evaluating the effectiveness and intentions of leaders or authority figures.
+19. **Crisis Prediction**: Ability to foresee social or interpersonal problems before they escalate.
+20. **Animal Behavior**: Understanding the intentions and emotions of animals.
+
+###### Table with Insight skill and examples for each level of difficulty
+
+| Difficulty        | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
+| Simple            | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                                               |
+| Easy              | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                                                    |
+| Routine           | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                                                          |
+| Average           | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                                                   |
+| Difficult         | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                                                          |
+| Very Difficult    | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                                              |
+| Formidable        | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                                                       |
+| Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
+| Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
+| Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
+
+ * * *
+
+##### Investigation Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
+</figure>
+</div>
+
+###### Description of the Investigation skill
+
+When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse.
+
+###### Examples of Investigation from Fiction
+
+In the classic Western novel "True Grit" by Charles Portis, U.S. Marshal Rooster Cogburn demonstrates a keen sense of investigation. Though he's primarily known for his grit and gunfighting skills, Cogburn's ability to track down outlaws also relies heavily on his investigative prowess. Whether he's following a trail through rugged terrain or piecing together clues from a crime scene, Cogburn uses his experience and intuition to make educated deductions.
+
+One memorable scene involves Cogburn arriving at an abandoned cabin where he suspects an outlaw is hiding. Instead of rushing in guns blazing, he takes a moment to investigate. He observes the tracks leading into the cabin, the state of the horses tied outside, and even the smoke coming from the chimney. These clues allow him to deduce not only that the outlaw is indeed inside but also that he's likely alone and unaware of his pursuers. This Investigation check, so to speak, enables Cogburn to plan his approach more strategically, ultimately leading to the successful capture of the outlaw.
+
+In a TTRPG setting, a character with a high level of Investigation skill could be invaluable in a Western-themed campaign. Imagine the party is tracking down a notorious bandit; an Investigation check could reveal that the tracks they are following are actually a decoy, saving them valuable time and resources. Or perhaps the group finds themselves in a seemingly deserted mining town; a successful Investigation check could uncover clues leading to a hidden stash of gold or the lair of the bandits who raided the town.
+
+Rooster Cogburn's investigative skills complement his more overt abilities, making him a well-rounded character capable of both action and thoughtful analysis. His knack for investigation doesn't just make him a better lawman; it often gives him the upper hand in dangerous situations, allowing him to outthink as well as outshoot his enemies. This balance of brawn and brain makes the skill of Investigation a critical tool in the arsenal of any gunslinger, sheriff, or bounty hunter in the Wild West.
+
+###### Investigation Archetypes
+
+- **The Detective:** This archetype is a master of solving mysteries and uncovering hidden truths. They can find clues that others might overlook, connect seemingly unrelated pieces of information, and deduce complex solutions to puzzles and mysteries.
+- **The Forensic Analyst:** Specializing in analyzing physical evidence, the Forensic Analyst can determine the cause of a crime or accident by examining clues such as fingerprints, bloodstains, and ballistic data.
+- **The Archaeologist:** Focusing on uncovering the past, the Archaeologist can discover ancient artifacts, decipher inscriptions, and piece together historical events based on archaeological evidence.
+- **The Cryptographer:** Skilled in deciphering codes and ciphers, the Cryptographer can break secret messages and uncover hidden information. They excel in unraveling the mysteries of encrypted texts.
+- **The Tracker:** This archetype specializes in following tracks and signs left by people or creatures. They can determine the direction and speed of travel, identify the number of individuals, and even predict their intentions based on their tracks.
+- **The Criminal Profiler:** Specializing in understanding the psychology of criminals, the Criminal Profiler can create detailed profiles of suspects based on their actions and behaviors. They are experts in identifying patterns and motives.
+- **The Puzzle Solver:** Focusing on solving intricate puzzles and riddles, the Puzzle Solver can decipher cryptic clues, unlock hidden doors, and navigate through complex traps and mazes.
+- **The Cyber Sleuth:** In a modern or futuristic setting, the Cyber Sleuth can investigate digital mysteries, uncover online secrets, and track down cybercriminals using their knowledge of computer systems and hacking techniques.
+- **The Mythologist:** Skilled in uncovering the myths and legends of different cultures, the Mythologist can decipher ancient stories and folklore to extract hidden meanings and insights into the past.
+- **The Conspiracy Theorist:** Known for their ability to uncover hidden plots and conspiracies, the Conspiracy Theorist can connect seemingly unrelated events, reveal covert operations, and expose hidden agendas.
+- **The Cartographer:** Focusing on mapmaking and navigation, the Cartographer can create detailed maps, identify geographical features, and deduce the best routes for travel based on terrain and landmarks.
+- **The Linguist:** This version of the Cryptographer specializes in deciphering ancient languages and scripts. They can unlock the meanings of forgotten texts and inscriptions.
+- **The Riddle Master:** In a fantasy or mystical setting, the Riddle Master excels in solving magical riddles and enigmatic puzzles that guard valuable treasures or lead to hidden realms.
+- **The Time Traveler:** In a time-bending setting, the Time Traveler can uncover hidden clues and information by navigating different historical eras and unraveling the threads of time.
+
+###### Specializations for Investigation
+
+1. **Crime Scene Analysis**: Examining a crime scene to gather and interpret evidence.
+2. **Forensic Pathology**: Determining cause of death or injury through examination of wounds or conditions.
+3. **Puzzle Solving**: Ability to solve complex puzzles or riddles.
+4. **Trap Detection**: Identifying and understanding mechanical or magical traps.
+5. **Document Analysis**: Scrutinizing documents for authenticity, hidden messages, or clues.
+6. **Cyber Investigation**: Tracing digital footprints and analyzing electronic data.
+7. **Archaeological Assessment**: Investigating ancient sites or artifacts for historical clues.
+8. **Tactical Analysis**: Evaluating situations or locations for strategic advantages or weaknesses.
+9. **Geological Survey**: Investigating the composition and structure of rock formations or terrain.
+10. **Chemical Analysis**: Identifying substances through chemical testing.
+11. **Behavioral Profiling**: Understanding patterns of behavior to predict future actions.
+12. **Asset Recovery**: Locating stolen or hidden items.
+13. **Urban Exploration**: Skillfully navigating and investigating urban environments for information.
+14. **Cryptography**: Decoding encrypted messages or ciphers.
+15. **Contraband Identification**: Recognizing illegal or restricted items.
+16. **Forgery Detection**: Identifying fake or altered objects and documents.
+17. **Social Engineering**: Gathering information through manipulation or persuasion.
+18. **Astronomical Analysis**: Investigating celestial phenomena for patterns or anomalies.
+19. **Ecological Study**: Investigating natural environments to understand ecological relationships.
+20. **Political Intrigue**: Uncovering secrets or hidden agendas in political settings.
+
+###### Table with Investigation skill and examples for each level of difficulty
+
+| Difficulty        | Investigation                                                                                                                                                         |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
+| Simple            | Spotting a trail of muddy footprints leading to a nearby shed.                                                                                                        |
+| Easy              | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design.                                                                             |
+| Routine           | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database.                                                                      |
+| Average           | Determining the cause of a minor fire by examining burn patterns and evidence in a room.                                                                              |
+| Difficult         | Investigating a complex financial fraud case involving multiple suspects and intricate transactions.                                                                  |
+| Very Difficult    | Deciphering a highly encrypted and encoded message that requires specialized skills and tools.                                                                        |
+| Formidable        | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence.                                                                       |
+| Heroic            | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
+| Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
+| Godly             | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
+
+
+## Mystical Aspects
+
+### Skepticism Characteristics
+
+In the realm of Skepticism, you will encounter three distinct branches: Arcane, Gnostic, and Chaos.
+
+As a practitioner of Arcane magic, you wield precise and structured spells, relying on the manipulation of mystical symbols and energies. Your skepticism keeps you grounded, approaching magic with a methodical and analytical mindset, seeking to understand its underlying principles and laws.
+
+Moving on to Gnostic magic, you delve deep into esoteric knowledge and hidden truths. You see magic as a path to higher consciousness and self-discovery. Your skepticism here is a tool for discerning genuine wisdom from mere illusions, as you navigate the complexities of mystical realms, seeking illumination and personal growth.
+
+Then comes Chaos magic, where skepticism takes a different turn. Rather than seeking well-defined systems, you embrace the unpredictable and chaotic nature of magic itself. You find power in the fluidity of belief and the ability to shift paradigms, drawing from various traditions and symbols without becoming tied to any one of them. Your skepticism becomes a weapon against dogma, allowing you to remain adaptable and open-minded.
+
+#### Spells of the Skeptic
+
+- **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
+- **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
+- **Chaos Infusion:** Harness the power of chaos to enhance unpredictability and adaptability in your spells, confounding opponents and destabilizing magical constructs.
+- **Reality Distortion:** Temporarily alter the perception of reality around you, creating illusions that challenge the senses and perceptions of others.
+- **Skeptic's Aura:** Create a field of skeptical energy that weakens or nullifies the magical effects of others within its radius.
+- **Precision Binding:** Craft intricate magical barriers or bindings with precise geometrical symbols, making them more resilient and challenging to break.
+- **Gnostic Resonance:** Establish a psychic connection with other Gnostic practitioners, allowing for the exchange of knowledge and insights.
+- **Chaos Merge:** Temporarily blend multiple magical traditions or paradigms, combining their strengths into a potent and unpredictable fusion.
+- **Analytical Recall:** Enhance your memory and recall abilities, enabling you to store and access vast amounts of magical knowledge.
+- **Skeptic's Disguise:** Conceal your magical presence from others, appearing as a non-magical individual to avoid detection or unwanted attention.
+- **Elemental Deciphering:** Analyze and understand the elemental composition of objects or magical phenomena, unraveling their intrinsic properties.
+- **Gnostic Empathy:** Develop a heightened understanding of others' emotions and intentions, aiding in negotiations and detecting hidden agendas.
+- **Chaos Confluence:** Merge the energies of chaos into your spells, enhancing their versatility and adaptability on the fly.
+- **Rational Shielding:** Create magical barriers based on logical principles, making them more resistant to manipulation or exploitation.
+- **Skeptic's Rejection:** Nullify the effects of illusions or deceptive magic, seeing through false appearances and revealing the truth.
+
+As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
+
+#### Arcane Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Ethereal.webp"><img src="https://tedt.org/img/skills/vertical/Ethereal.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
+</figure>
+</div>
+
+TODO: Fix this
+
+In the realm of Arcane magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations. Incantations and spellcasting become your forte, as your words resonate with the universe, giving you the ability to reshape the world around you. Yet, this path demands precision and control, for the untamed forces you wield can easily turn against you. As you seek to master the Arcane, you must cultivate inner balance and  mindfulness, attuning yourself to the interconnectedness of all things. Through encounters with fellow seekers and experienced mages, you gather wisdom, but the journey remains your own to chart. Ultimately, being an Arcane mage transcends mere power and knowledge. It is a journey of self-discovery and understanding, where you become a beacon of mystic wisdom and a guardian of the sacred secrets that shape existence itself.
+
+##### Unique Arcane Magical Spells
+
+- **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
+- **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
+- **Arcane Symphony:** Harness the harmonious energies of the cosmos to create a mesmerizing symphony of arcane power. This spell can awe and mesmerize those who hear it, potentially disrupting enemies or gathering allies to your cause.
+- **Temporal Rupture:** Temporarily disrupt the flow of time in a localized area, causing objects and individuals to move at different rates. This spell can slow down or speed up time, granting you a tactical advantage in combat or time-sensitive situations.
+- **Soul Ephemera:** Extract fragments of souls from living beings and spirits, which can be used as a source of power for other spells or stored for later use. This spell allows you to manipulate the essence of life itself.
+- **Celestial Infusion:** Draw upon the power of celestial bodies to infuse your spells with cosmic energy. This spell enhances your magical attacks, granting them the properties of stars, moons, or meteors.
+- **Planar Binding:** Open portals to other planes of existence and summon beings from different realms to aid you in your endeavors. This spell allows you to call upon extraplanar entities for assistance or knowledge.
+- **Ethereal Ward:** Create a protective barrier that shields against ethereal and magical attacks. This spell can repel or absorb mystical energies, providing a powerful defense against other spellcasters.
+- **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
+- **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
+
+##### Arcane Archetypes
+
+|              Archetype |                      Example                      | Example Description                                                                                             | Archetype Description                                                                                                                                                                                                                                                                                                                                                        |
+|-----------------------:|:-------------------------------------------------:|-----------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     The Arcane Scholar |          Albus Dumbledore (Harry Potter)          | Known for his extensive knowledge of magic and wisdom, Dumbledore serves as a mentor to Harry Potter.           | This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.         |
+|    The Illusion Weaver |              Loki (Norse Mythology)               | A trickster god known for his illusions and shape-shifting abilities to deceive gods and mortals alike.         | The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.                                                           |
+|     The Elemental Mage |     Avatar Aang (Avatar: The Last Airbender)      | Known for mastering all four elements and using them to bring balance to the world.                             | This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.                                        |
+|    The Astral Traveler |          Doctor Strange (Marvel Comics)           | Known for his ability to travel between different dimensions and manipulate the astral plane.                   | This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries. |
+|        The Soul Binder | Sabrina Spellman (Chilling Adventures of Sabrina) | Known for her ability to bind souls and communicate with spirits.                                               | The Soul Binder delves into the realm of souls and spirits, wielding powers to commune with the deceased or harnessing spectral energies in battle. They can bind souls to objects, summon ethereal allies, or even temporarily possess other beings. This archetype often grapples with moral dilemmas, as their powers touch upon the boundaries between life and death.   |
+| The Celestial Sorcerer |           Galadriel (Lord of the Rings)           | Known for her celestial powers, including a ring that holds a portion of the light of the Two Trees of Valinor. | This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.                                                                                            |
+|        The Time Weaver |              Hiro Nakamura (Heroes)               | Known for his ability to manipulate time, including stopping time and time travel.                              | The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.                                                                                                                                         |
+|  The Planar Gatekeeper |           John Constantine (DC Comics)            | Known for his ability to travel between realms and summon creatures from different planes.                      | The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.                                                                                                                        |
 {: .well .table .table-striped }
+
+
+These Arcane Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
+
+| Difficulty        | Arcane                                                                                                                                         |
+|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Perform a basic levitation spell on a small object.                                                                                            |
+| Simple            | Cast a protective shield around oneself to deflect minor projectiles.                                                                          |
+| Easy              | Create an illusion of a small creature or object to distract or confuse an enemy.                                                              |
+| Routine           | Enchant a weapon to enhance its striking power for a limited duration.                                                                         |
+| Average           | Teleport to a known location within a short distance.                                                                                          |
+| Difficult         | Summon and control an elemental being for a short period of time.                                                                              |
+| Very Difficult    | Manipulate the weather in a localized area, creating a storm or calming turbulent winds.                                                       |
+| Formidable        | Create a pocket dimension that can temporarily house multiple individuals and objects.                                                         |
+| Heroic            | Time manipulation on a small scale, allowing the caster to briefly glimpse or interact with the past or future.                                |
+| Nearly Impossible | Unleash a devastating spell that calls forth a catastrophic celestial event, reshaping the landscape and altering the course of nature itself. |
+| Godly             | Open a portal to an alternate reality or dimension, allowing passage between worlds and access to unimaginable powers and knowledge.           |
+{: .well .table .table-striped }
+
+
+Please note that the difficulty ratings provided in the table are relative and can vary depending on the specific system or setting in which the magical practice is being used.
+
+#### Gnosis Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Gnosis.webp"><img src="https://tedt.org/img/skills/vertical/Gnosis.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
+</figure>
+</div>
+
+As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
+
+In this mystical tradition, you encounter the idea of the Demiurge, an imperfect creator deity, and learn to view the material world as a flawed creation, seeking escape to return to your divine origins. Along the way, you must navigate through challenges posed by archons, malevolent entities that attempt to hinder your spiritual progress. Yet armed with gnosis, you can overcome these obstacles and grow stronger in your connection to the divine source.
+
+Throughout your quest, you encounter potent symbols like the Ouroboros and the Tree of Life, aiding in contemplation and meditation, guiding you towards a deeper understanding of the universe and your place in it. As you embrace this inward journey, shedding illusions and gaining profound insights, you experience a transformation that awakens the spiritual dimensions of reality within you. The Gnostic path leads you to discover the oneness that unites all beings, fostering a profound and enlightening experience of self-discovery and spiritual growth.
+
+##### Unique Gnostic Magical Spells
+
+- **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
+- **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
+- **Sophia's Guidance:** Channeling the wisdom of the Divine Feminine, this spell allows you to receive guidance and intuition when facing difficult decisions or challenges on your path.
+- **Demiurge's Illusion:** By manipulating the illusions of the material world, you can create distractions or temporary alterations to the perception of others. This spell might be useful for misdirection or protection.
+- **Ouroboros' Renewal:** Utilizing the symbolism of the eternal cycle, this spell grants you the ability to rejuvenate yourself or others, healing wounds and restoring vitality.
+- **Aeonic Alignment:** Through ritual and meditation, you can align yourself with the cosmic forces of the aeons, gaining access to their power and protection.
+- **Tree of Life Manifestation:** Drawing upon the interconnectedness of all existence, this spell allows you to establish a telepathic link with others or project your thoughts across great distances.
+- **Sacred Names Enchantment:** By invoking the names of powerful divine beings, you can imbue objects with special properties or create charms for protection and luck.
+- **Divine Spark Ignition:** This spell awakens the dormant divine spark within others, triggering their spiritual awakening and the pursuit of gnosis.
+- **Gnostic Shield:** Using your knowledge of higher truths, you can create a protective shield that repels negative energies and safeguards against psychic attacks.
+- **Emanation of Light:** Channeling the divine light, you can emit a radiant glow that dispels darkness and fills the surroundings with spiritual clarity.
+- **Liberation's Embrace:** This spell grants a momentary experience of transcendence, allowing you or others to briefly escape the limitations of the material world and experience the oneness of all things.
+
+These spells reflect the unique and profound nature of your magical abilities, inspired by the Gnostic traditions' spiritual insights and themes. Each spell involves a deep connection to the divine and the pursuit of higher knowledge, empowering you to navigate the complexities of the spiritual realm and bring about positive transformations in the world around you.
+
+##### Gnostic Archtypes
+
+|      Archetype |           Example            | Example Description                                                                                                 | Archetype Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------:|:----------------------------:|:--------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     The Seeker | Siddhartha Gautama (Buddha)  | Embarked on a quest for enlightenment, ultimately achieving it and teaching others the path.                        | This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source. |
+|     The Savior |       Neo (The Matrix)       | Liberates humanity from the Matrix, a simulated reality created to keep human minds enslaved.                       | The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.                                     |
+|      The Rebel | Prometheus (Greek Mythology) | Stole fire from the gods to give to humanity, challenging the established order of the gods.                        | The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.                                                                                                              |
+|     The Martyr |    Joan of Arc (History)     | Led the French army to victory but was captured and burned at the stake, becoming a symbol of resistance and faith. | This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.                                                                                                                                       |
+| The Chosen One | Anakin Skywalker (Star Wars) | Foretold to bring balance to the Force, struggles with his identity before ultimately fulfilling his destiny.       | This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.                                                                                                                                       |
+|   The Redeemer |        Aslan (Narnia)        | Sacrifices himself to save Edmund, later resurrects, guiding and aiding the children in their quest.                | The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.                                                                                                                                                                                                   |
+{: .well .table .table-striped }
+
+
+Here's a table describing tasks someone from the Gnostic magical practice might do for each difficulty level:
+
+| Difficulty        | Gnostic                                                                                                                                                                                                            |
+|:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Basic meditation or reciting simple mantras effortlessly.                                                                                                                                                          |
+| Simple            | Identifying basic archon influences in someone's aura or sensing the flow of cosmic energies in a specific area.                                                                                                   |
+| Easy              | Performing a ritual to invoke the guidance of the Divine Feminine or creating a protective charm to ward off negative energies.                                                                                    |
+| Routine           | Deciphering complex esoteric texts or performing advanced meditation techniques to access higher states of consciousness.                                                                                          |
+| Average           | Successfully conducting a ceremony to honor the divine aeons or creating a unique symbol to represent the cycle of birth and rebirth.                                                                              |
+| Difficult         | Banishing powerful archons from a person's energy field or conducting a ritual to commune with the divine source directly. These tasks require both skill and some luck to accomplish.                             |
+| Very Difficult    | Navigating the astral realms to retrieve hidden esoteric knowledge or attempting to heal someone with deeply ingrained spiritual blockages.                                                                        |
+| Formidable        | Confronting powerful entities in the astral plane or breaking through the illusions of the Demiurge to experience divine truths firsthand. Only the true masters of Gnostic magic can perform feats at this level. |
+| Heroic            | Unraveling the deepest mysteries of the universe or liberating a group of souls trapped by archonic forces. Only the most renowned practitioners can even attempt such tasks.                                      |
+| Nearly Impossible | Transcending the material world entirely or unraveling the secrets of the Demiurge's creation to rewrite the cosmic order. These acts shape the course of history.                                                 |
+| Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
+{: .well .table .table-striped }
+
+
+#### Chaos Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Chaos.webp"><img src="https://tedt.org/img/skills/vertical/Chaos.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
+</figure>
+</div>
+
+In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
+
+As you delve deeper into Chaos mysticism, you discover the art of sigilization—an empowering technique where you create symbols representing your desires and charge them with focused will and energy. By letting go of attachment to specific outcomes, you gain the ability to adapt and thrive amidst uncertainty. Laughter and playfulness become integral aspects of your practice, breaking patterns of seriousness and fostering profound transformations.
+
+In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmony. You understand that chaos and order, creation and destruction, are not opposing forces but essential parts of the cosmic dance. Embracing the unknown becomes a source of strength as you navigate the ever-changing currents of existence. You become the weaver of possibilities, the dancer of chaos, and the shaper of your own reality. Through this transformative journey, you experience the profound joy of exploring the boundless realms of consciousness.
+
+##### Unique Chaos Magical Spells
+
+- **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
+- **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
+- **Shifting Shadows:** Manipulate shadows to create illusory forms or to merge with them, granting temporary invisibility or the ability to move through walls and obstacles.
+- **Chaotic Fusion:** Merge multiple elements or energies into a swirling vortex, releasing a devastating blast of combined power, the result of which is never the same twice.
+- **Paradoxical Mirror:** Create a mirror that reflects the intentions of attackers back upon themselves, causing them to experience the effects of their own spells or attacks.
+- **Sigil of Serendipity:** Draw a powerful sigil that brings good fortune and unexpected opportunities to the caster and their allies, turning potential misfortune into advantageous outcomes.
+- **Humorous Hex:** Cast a spell that causes uncontrollable fits of laughter in the target, incapacitating them with mirth and reducing their ability to focus or take actions.
+- **Chaos Labyrinth:** Summon an ever-changing maze filled with illusions and challenges. The maze shifts and reshapes continuously, making it difficult for intruders to find their way through.
+- **Quantum Blink:** Perform short-range teleportation, but the destination is randomly determined, making it a daring and unpredictable escape or attack maneuver.
+- **Reality Whirlpool:** Summon a swirling vortex of chaotic energies that disrupts magical spells and causes disturbances in the surrounding environment.
+- **Ephemeral Euphony:** Create a harmonious melody or dissonant cacophony, imbued with chaotic energy. The sound can either heal or induce confusion and madness in those who hear it.
+- **Serendipitous Surge:** Channel a surge of magical energy that grants temporary enhancements to the caster's abilities, but the specific enhancements vary with each casting.
+
+Remember, these spells reflect the unpredictable and ever-changing nature of Chaos magic. Each time they are cast, their effects might differ slightly, adding an element of surprise and wonder to the practitioner's magical repertoire.
+
+##### Chaos Archtypes
+
+|                Archetype |                 Example                 | Example Description                                                                                    | Archetype Description                                                                                                                                                                                                                                                       |
+|-------------------------:|:---------------------------------------:|:-------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            The Trickster |         Loki (Norse Mythology)          | A god known for his cunning, deceit, and mischief, often challenging the gods and manipulating events. | This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.                               |
+|         The Shapeshifter |            Mystique (X-Men)             | A mutant who can change her appearance at will, adapting to various situations.                        | Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.                       |
+|        The Wild Sorcerer |       Howl (Howl's Moving Castle)       | A wizard whose spells are powerful but often have unpredictable outcomes.                              | This character is a conduit of raw magical power, with spells and abilities that are never the same twice. Their magic is untamed, with unpredictable consequences, making them both a force to be reckoned with and a potential source of chaos in any story.              |
+|      The Symbolic Weaver |      John Constantine (Hellblazer)      | A magician who uses sigils and symbols to manipulate reality and achieve his goals.                    | Representing the sigilization aspect of Chaos magic, this character can manipulate symbols and beliefs to manifest their desires. They draw power from the interconnected web of reality and can reshape the world through their understanding of the underlying symbolism. |
+|     The Paradox Embracer |            Zhuangzi (Taoism)            | A Taoist philosopher who embraced paradoxes and contradictions, teaching the unity within opposites.   | This archetype navigates the complexities of existence with ease, embracing contradictory aspects of life and harmonizing opposites. They possess wisdom beyond conventional understanding, seeing unity within chaos and finding balance in apparent discord.              |
+|       The Reality Bender |            Neo (The Matrix)             | A character who can bend the rules of the Matrix, altering reality within the simulated world.         | These characters can bend and warp reality itself, making the impossible possible. Their mastery of Chaos magic allows them to alter the fabric of existence, defying conventional laws and creating awe-inspiring feats of magic.                                          |
+| The Intuitive Instigator | Jack Sparrow (Pirates of the Caribbean) | Relies on instinct and intuition to navigate complex situations, often causing and resolving chaos.    | This character relies on instinct and intuition, channeling the chaotic flow of the universe to make impactful decisions and drive change. They have a natural talent for reading the currents of fate and influencing events in subtle yet profound ways.                  |
+|  The Unconventional Hero |           V (V for Vendetta)            | A masked vigilante who uses unconventional methods to fight against a totalitarian regime.             | Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.                                            |
+|      The Laughing Mystic |         Alan Watts (Real Life)          | A philosopher who used humor to convey complex spiritual and existential ideas.                        | This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.                     |
+{: .well .table .table-striped }
+
+
+Here's a table describing tasks someone from the Choas magical practice might do for each difficulty level:
+
+| Difficulty        | Description                                                                                                                                                                                                                                                                                                       |
+|:------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Manifesting simple, harmless illusions or generating a brief, fleeting burst of elemental energy that has no significant impact on the environment. Chaos practitioners effortlessly conjure minor, temporary phenomena as a natural extension of their connection to the ever-changing flow of reality.          |
+| Simple            | Causing random objects to dance or levitate chaotically for a short period or creating colorful sparks and flashes with a wave of their hand. Chaos magicians rely on a bit of luck and intuition to execute these low-level feats, embracing the whimsical and unpredictable results.                            |
+| Easy              | Shaping the weather within a limited area, causing gusts of wind or showers of rain. Chaos practitioners tap into the chaotic forces of nature, harnessing them with a minimum level of competence to perform these weather-altering tricks.                                                                      |
+| Routine           | Infusing objects with momentary life, giving a toy the appearance of moving on its own or causing a painting to shift its imagery subtly. Chaos magicians, with their natural aptitude, can easily accomplish these animated displays as part of their regular magical practice.                                  |
+| Average           | Creating temporary portals between nearby locations or altering the colors and patterns of their clothing at will. Chaos practitioners, with exposure to their magical skills, achieve these more intricate feats, showcasing their inherent talent and honed abilities.                                          |
+| Difficult         | Summoning and conversing with minor chaotic spirits or entities, requiring some specialized training and skill to bridge the gap between worlds. Chaos magicians demonstrate their expertise in handling unpredictable entities and channeling their energies through practice.                                   |
+| Very Difficult    | Merging their consciousness temporarily with the swirling chaos of the universe, gaining glimpses of possible future events or past occurrences. Chaos practitioners attempt to navigate the turbulent tides of fate, relying on specialized training to interpret the visions they receive.                      |
+| Formidable        | Creating a chaotic field that disrupts the laws of probability, making it difficult for opponents to predict movements or outcomes during a battle. Chaos magicians exhibit their exceptional talents by bending chance to their advantage with this potent and formidable spell.                                 |
+| Heroic            | Taming and commanding a powerful chaos beast or entity, something that even the most skilled individuals would struggle to control. Chaos practitioners, the true masters of their art, undertake this once-in-a-lifetime feat with assistance, leaving a legacy of legendary tales behind.                       |
+| Nearly Impossible | Weaving a tapestry of chaotic energy that temporarily reshapes reality within a limited area, creating a surreal and mesmerizing dreamscape. Chaos magicians perform this epic feat, leaving an unforgettable mark in history books as the named masters of their magical craft.                                  |
+| Godly             | Infusing themselves with the pure essence of Chaos, transforming into a semi-divine avatar of unpredictability, capable of altering the very fabric of existence on a cosmic scale. Chaos practitioners, virtually demigods in their abilities, achieve this godly status with exceptional talent and assistance. |
+{: .well .table .table-striped }
+
+
+### Faith Characteristics
+
+You will find that the domain of Faith is divided into three branches of exploration: Theurgy, Physical Adapt, and Order.
+
+Embracing Theurgy, you place your faith in divine beings and higher powers. You find strength in rituals, invocations, and prayers, channeling the energy of the divine to shape reality. Your faith enables you to connect with cosmic forces and tap into spiritual realms, seeking blessings and divine intervention.
+
+On the other hand, Physical Adaptation relies on your faith in the body's inherent connection to magic. Through disciplined training and honed skills, you adapt yourself to magical energies, becoming a conduit for their manifestation. Your faith in the body's resilience and adaptability fuels your magical prowess, blurring the lines between physical and mystical abilities.
+
+In the realm of Order, your faith lies in structured systems and cosmic balance. You believe in the harmony and equilibrium of the universe, and through precise rituals and adherence to cosmic laws, you seek to maintain that order. Your faith grants you the ability to wield powerful forces, maintaining stability and influencing the natural flow of events.
+
+#### Spells Unique to Faith
+
+- **Divine Blessing:** Channel the power of celestial beings to bestow blessings upon yourself or others, enhancing abilities and providing protection.
+- **Ancestral Guidance:** Commune with your ancestors' spirits, seeking guidance and wisdom from the past.
+- **Mystic Convocation:** Conduct elaborate rituals to gather divine energies, empowering you and those around you with enhanced magical abilities.
+- **Nature's Call:** Invoke the spirits of nature to aid in healing, restoration, and nurturing of the environment.
+- **Cosmic Balance:** Align the cosmic forces to restore harmony and equilibrium in any situation or location.
+- **Celestial Shield:** Create a protective barrier infused with divine energy, guarding against malevolent forces and harmful magic.
+- **Sacred Oath:** Form a sacred pact with a higher power, granting you temporary access to specific divine abilities or insights.
+- **Cleansing Purge:** Cleanse a person or place from malevolent energies or curses, restoring purity and balance.
+- **Guiding Light:** Summon a radiant aura that illuminates the path ahead, guiding you and your allies through darkness or confusion.
+- **Empathic Aura:** Project an empathic aura to soothe emotions, promote understanding, and foster unity among individuals.
+- **Spiritual Resonance:** Harmonize with the spiritual essence of living beings, allowing you to understand their emotions and intentions.
+- **Karmic Justice:** Invoke the principle of karma to bring balance and justice to a situation, causing the repercussions of actions to unfold accordingly.
+- **Astral Projection:** Project your consciousness into the astral plane, exploring distant realms or communicating with celestial entities.
+- **Divine Intervention:** Call upon higher powers in times of dire need, allowing them to intervene and alter the course of events.
+- **Harmony's Embrace:** Generate a tranquil aura that pacifies conflicts and fosters cooperation among individuals or groups.
+
+These spells draw upon your unwavering faith and connection to higher forces, granting you unique abilities that set you apart from other magical backgrounds. As a practitioner of Faith magic, you wield divine energies to bring healing, protection, guidance, and balance to the world around you.
+
+#### Theurgy Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Theurgy.webp"><img src="https://tedt.org/img/skills/vertical/Theurgy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
+</figure>
+</div>
+
+In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
+
+As you progress, you confront your ego and strive for inner purity, understanding that to commune with the divine, you must embody virtues like compassion and wisdom. Theurgy reveals the interconnectedness of all things, inspiring you to see the sacred in the ordinary and the harmony in nature and the cosmos. This newfound awareness fills you with awe and reverence for the world.
+
+Your magical journey becomes an expression of your soul, a reflection of your yearnings for unity with the divine. Theurgy is not about gaining power but about living in harmony with the cosmic order, acting as a channel for divine grace, and embodying wisdom and love in your life. As you continue to embrace Theurgy, it becomes a lifelong pursuit, enriching every aspect of your existence and deepening your connection to the mysteries of the heart.
+
+##### Unique Theurgy Magical Spells
+
+- **Celestial Communion:** This spell allows the caster to establish a direct communication link with a celestial entity or a deity, seeking guidance, wisdom, or divine blessings. The caster must demonstrate profound respect and sincerity to establish and maintain this connection.
+- **Arcane Equilibrium:** This spell enables the Theurgist to restore balance to a chaotic situation. It can pacify raging storms, quell violent conflicts, or stabilize unruly magical energies, aligning them with the cosmic order.
+- **Veil of Sanctity:** The caster weaves a protective shield of divine energy that shields an area or individual from malevolent forces and dark influences. This veil repels negative entities and grants temporary immunity to harmful magical effects.
+- **Healing Resonance:** The Theurgic Healer channels celestial energies to accelerate the natural healing processes within a person, mending wounds and curing ailments beyond ordinary means. This spell also offers solace and peace to the afflicted.
+- **Symbol of Truth:** This spell imbues a sacred symbol or sigil with divine truth, revealing hidden secrets, illusions, and deceit. The symbol's presence can expose lies and dispel illusions, making it a potent tool for discovering the truth.
+- **Transcendent Empowerment:** The Ascendant Seeker can tap into their inner spiritual potential to temporarily enhance their magical abilities, granting them a surge of power and insight for a short duration.
+- **Astral Projection:** The Theurgy practitioner can send their consciousness beyond the physical realm, exploring other planes of existence, and communicating with celestial beings or ancestral spirits.
+- **Timeless Illumination:** By invoking ancient cosmic wisdom, the Arcane Scholar gains profound insights into mysteries of the universe or forgotten lore. This spell can unlock forgotten knowledge and reveal the true nature of artifacts or ancient writings.
+- **Divine Aura:** The Sacred Guardian envelops themselves or others in a luminous aura that wards off dark entities and provides protection against malevolent magical attacks.
+- **Harmonious Resonance:** This spell enables the Theurgist to resonate with the natural rhythm of the cosmos, gaining heightened intuition and foresight, allowing them to make informed decisions and navigate challenges with clarity.
+
+##### Theurgy Archtypes
+
+Certainly, here's the table with examples for each Theurgy archetype, along with their descriptions and example descriptions:
+
+|   Archetype |                       Example                        | Example Description                                                                                                                  | Archetype Description                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------:|:----------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The Prophet |                   Moses (Biblical)                   | Led the Israelites out of Egypt and received the Ten Commandments from God.                                                          | This archetype is a master of Theurgy, possessing the ability to connect with higher beings or deities to channel their powers and wisdom. They serve as intermediaries between the mortal world and the divine realms, acting as vessels for divine energy and guidance. The Prophet often grapples with the weight of this responsibility, as they must maintain their inner purity and moral integrity to commune with the divine successfully. |
+|  The Mystic |              Merlin (Arthurian Legend)               | A wise and enigmatic wizard who guided King Arthur and imparted profound teachings.                                                  | This character is deeply steeped in the knowledge and philosophy of Theurgy, understanding the intricate symbols, rituals, and cosmic forces. The Mystic is a wise and enigmatic figure who imparts profound teachings and insights to others. They may guide heroes on their quests, decipher cryptic prophecies, and uncover hidden truths that shape the course of the story.                                                                   |
+| The Paladin |               Joan of Arc (Historical)               | A young woman who claimed divine guidance and led the French army to several important victories.                                    | This archetype embodies the protective aspect of Theurgy. They are skilled in using magical rituals to create wards, shields, and barriers that safeguard people and places from malevolent forces. The Paladin often dedicates themselves to defending sacred sites, temples, or ancient artifacts that hold immense power.                                                                                                                       |
+|  The Healer |             Asclepius (Greek Mythology)              | A god of medicine and healing, known for his exceptional abilities to cure ailments.                                                 | This character possesses exceptional healing abilities, drawing on Theurgy to mend wounds, cure ailments, and restore vitality. The Healer is compassionate and altruistic, using their powers to aid others and alleviate suffering. Their presence in a story can add a sense of hope and renewal, especially in times of adversity.                                                                                                             |
+| The Scholar |              Thoth (Egyptian Mythology)              | A god of wisdom, writing, and magic, credited with the creation of sacred texts.                                                     | This archetype represents a character who tirelessly studies the ancient texts and mystical arts of Theurgy. They may be motivated by a thirst for knowledge, seeking to unlock the secrets of the universe or to unravel the mysteries of long-forgotten civilizations. The Scholar's expertise can be a valuable resource for protagonists seeking to understand or counter magical threats.                                                     |
+|   The Judge |              Ma'at (Egyptian Mythology)              | A goddess of truth, justice, and balance, who weighed the souls of the dead against a feather.                                       | This character is devoted to preserving the balance between opposing cosmic forces, recognizing that Theurgy's power can disrupt the harmony of the universe if misused. They may be tasked with preventing the rise of dark entities or restoring equilibrium when chaos threatens to overwhelm the world.                                                                                                                                        |
+| The Pilgrim | Dante Alighieri (Fictional from "The Divine Comedy") | The character Dante embarks on a spiritual journey through Hell, Purgatory, and Heaven to find God and gain spiritual enlightenment. | This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.                                                                                                            |
+{: .well .table .table-striped }
+
+
+These unique Theurgy spells showcase the character's special connection to the divine and their ability to harness celestial energies for various purposes. Each spell reflects the deeper themes of spiritual growth, cosmic balance, and the quest for enlightenment that are inherent in Theurgy.
+
+|    Difficulty     | Theurgy                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Trivial      | Casting a simple protective charm on oneself or others.                                                                                                                                                                                                                                                                                                                                                                    |
+|      Simple       | Using Theurgy to heal minor injuries or illnesses.                                                                                                                                                                                                                                                                                                                                                                         |
+|       Easy        | Communing with a minor celestial being for guidance on a mundane matter.                                                                                                                                                                                                                                                                                                                                                   |
+|      Routine      | Creating a temporary ward to protect a small area from malevolent spirits.                                                                                                                                                                                                                                                                                                                                                 |
+|      Average      | Successfully invoking a sacred symbol to reveal hidden truths or break illusions.                                                                                                                                                                                                                                                                                                                                          |
+|     Difficult     | Channeling the power of a celestial entity to dispel a powerful curse from a person or place.                                                                                                                                                                                                                                                                                                                              |
+|  Very Difficult   | Establishing a communication link with a deity to request their direct intervention in a major crisis or conflict.                                                                                                                                                                                                                                                                                                         |
+|    Formidable     | Crafting a potent artifact infused with celestial energy to aid in a significant quest or battle.                                                                                                                                                                                                                                                                                                                          |
+|      Heroic       | Merging the powers of multiple Theurgy practitioners to perform a grand ritual that alters the course of a war or prevents a catastrophe on a global scale.                                                                                                                                                                                                                                                                |
+| Nearly Impossible | Ascending to a higher plane of existence temporarily to gain profound insights and wisdom from celestial beings.                                                                                                                                                                                                                                                                                                           |
+|       Godly       | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
+{: .well .table .table-striped }
+
+
+#### Adept Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Adept.webp"><img src="https://tedt.org/img/skills/vertical/Adept.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
+</figure>
+</div>
+
+You awaken your inner essence, becoming an Adept, a master of magic and mysticism. Your body and mind harmoniously blend, allowing you to perform superhuman feats through the manipulation of vital energy within your body known as "Chi" or "Qi." This connection between mind and muscle enables you to push your physical limits and perceive the world differently, spotting subtle energies invisible to others.
+
+As an Adept, you discover your role as a conduit for the universal energy flowing through all living things. Through meditation and focus, you can heal, protect, and unleash powerful forces upon your foes. However, you understand that true mastery lies in finding balance between the physical and spiritual aspects of yourself. Embracing inner harmony and discipline allows you to connect with the deeper currents of the universe, becoming one with the essence of the world.
+
+Your journey as an Adept is one of self-discovery and self-mastery. By continuously pushing your own boundaries and aligning with the greater forces at play, you embrace the wisdom of ages and become a guardian of balance. Let the quest to unlock your full magical potential guide you as you walk this path, always remembering that true power lies not in domination but in alignment with the greater mysteries of existence.
+
+##### Unique Adept Magical Spells
+
+- **Chi-Enhanced Strike:** Infuse your physical attacks with raw mystical energy, allowing your strikes to carry an extra punch. Your blows become charged with Chi, granting them the ability to bypass certain defenses or even disrupt magical barriers.
+- **Ethereal Step:** Temporarily phase out of the physical plane, becoming intangible for a short period. This spell grants you the ability to avoid physical attacks, pass through obstacles, or move swiftly through difficult terrain.
+- **Vital Energy Channeling:** Harness the life force within your body to heal wounds and rejuvenate yourself or others. By channeling your Chi into others, you can aid in their recovery from injuries or illnesses.
+- **Elemental Fusion:** Merge your mastery of physicality with the elements. Combine your attacks with elemental forces like fire, ice, or lightning to unleash devastating strikes that leave a lasting impact on your opponents.
+- **Nature's Embrace:** Form an empathic connection with the natural world, allowing you to communicate with animals and plants. This spell grants you insights into the environment, helping you navigate and gather valuable information.
+- **Mystic Resilience:** Temporarily fortify your body with mystical energy, granting you enhanced resilience and endurance. This spell can make you temporarily resistant to physical harm or the effects of other magical spells.
+- **Flowing Harmony:** Enter a state of perfect balance and harmony, where your physical and mystical energies synchronize seamlessly. In this state, your movements become graceful, and you can effortlessly evade attacks or perform complex maneuvers.
+- **Shadow Blend:** Merge with the shadows, becoming nearly invisible in dim light or darkness. This spell allows you to move stealthily and remain undetected by most forms of visual detection.
+- **Energy Infusion:** Imbue weapons or objects with your Chi, enhancing their properties. You can turn a simple weapon into a powerful magical tool or temporarily empower objects for specific purposes.
+- **Elemental Transmutation:** Convert one element into another by manipulating its atomic structure. This unique spell allows you to transform elements, providing diverse tactical options in various situations.
+
+##### Adept Archtypes
+
+|           Archetype |                   Example                    | Example Description                                                                                                                                                                           | Archetype Description                                                                                                                                                                                                                                                                                                                                        |
+|--------------------:|:--------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  The Martial Mystic |    Aang from "Avatar: The Last Airbender"    | Aang is a master of all four elements and uses his spiritual connection to enhance his physical abilities. He often relies on his disciplined mind and inner energy to outmaneuver opponents. | This archetype embodies the perfect fusion of physical prowess and mystical powers. They are formidable warriors who can channel their inner energy to enhance their combat abilities significantly.                                                                                                                                                         |
+|   Nature's Guardian |      Radagast (Fiction - "The Hobbit")       | Radagast the Brown is a wizard in J.R.R. Tolkien's Middle-earth who has a deep connection with animals and plants. He uses his powers to protect nature and its creatures.                    | These Adepts draw their magical powers from the natural world, becoming protectors of the environment and its inhabitants. They can communicate with animals, manipulate plant life, and control the elements to safeguard the balance of nature.                                                                                                            |
+|  The Healer Warrior |            Tsunade from "Naruto"             | Tsunade is a ninja and one of the legendary Sannin. She uses her chakra (akin to Chi) to perform medical ninjutsu, healing herself and others during battle.                                  | This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.                                                                         |
+|  The Wandering Sage |            Jiraiya from "Naruto"             | Jiraiya is a wise and powerful ninja who roams the world seeking knowledge and enlightenment. He serves as a mentor to Naruto and others, guiding them on their quests.                       | This archetype is a wise and mysterious figure who roams the world, seeking enlightenment. They have a deep understanding of the mystical arts and often serve as mentors to other characters on their journeys. Their physical abilities and prowess are a testament to their years of training and self-discovery.                                         |
+| The Hidden Assassin | Ezio Auditore (Fiction - "Assassin's Creed") | Ezio Auditore is a master assassin who blends physical agility with various tools and techniques. He operates in the shadows and strikes with deadly precision.                               | This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace. |
+{: .well .table .table-striped }
+
+
+Remember that as a Physical Adept, your spells revolve around maintaining harmony and balance between the physical and mystical aspects of yourself. Each spell reflects your connection to the world and your unique ability to blend magic and martial prowess seamlessly.
+
+|    Difficulty     | Adept                                                                                                                                                                                                                                                                  |
+|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Trivial      | Channeling your Chi to perform a simple physical feat that requires little effort, such as breaking a thin wooden board or catching a light object in mid-air.                                                                                                         |
+|      Simple       | Using your mystical agility and reflexes, attempt to dodge a single incoming projectile or perform a series of acrobatic maneuvers to navigate through an obstacle course.                                                                                             |
+|       Easy        | Infusing your weapon with elemental energy to enhance its striking power, allowing you to cut through soft materials like cloth or vines with ease.                                                                                                                    |
+|      Routine      | Healing minor wounds or alleviating physical fatigue for yourself or an ally by channeling your life force into their body to promote natural healing.                                                                                                                 |
+|      Average      | Utilizing your knowledge of nature and mystical intuition, communicate with a friendly animal and request their assistance in a simple task, such as fetching an item or scouting an area.                                                                             |
+|     Difficult     | Using your advanced combat training and mystical energy, attempt to overpower a skilled opponent in hand-to-hand combat, taking advantage of their weaknesses while maintaining your own defense.                                                                      |
+|  Very Difficult   | Manipulating the elements on a grand scale, create a powerful barrier to shield a group of allies from a devastating magical attack or natural disaster.                                                                                                               |
+|    Formidable     | Mastering the art of invisibility and illusion, create an entire illusory environment to confound and mislead a group of adversaries, making it seem like you and your allies have vanished or multiplied.                                                             |
+|      Heroic       | Performing a feat of physical and mystical prowess that pushes the boundaries of what is humanly possible, like evading a hail of projectiles while simultaneously launching a series of devastating elemental attacks.                                                |
+| Nearly Impossible | Channeling the full extent of your Chi and mystical potential, create a massive barrier to protect an entire city from a catastrophic event, like an erupting volcano or a meteor shower, while maintaining its integrity for an extended period.                      |
+|       Godly       | Merging your physical and mystical form into a colossal ethereal avatar, capable of single-handedly fending off an army of foes or reshaping the terrain around you. This transcendent form is temporary, requiring immense focus and harmonization with the universe. |
+{: .well .table .table-striped }
+
+
+As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
+
+#### Order Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Order.webp"><img src="https://tedt.org/img/skills/vertical/Order.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
+</figure>
+</div>
+
+In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
+
+With mastery over the forces of nature, you manipulate energies to bring about specific outcomes. Whether it's crafting protective wards, commanding elemental forces, or unraveling ancient texts, you approach each task with intellect and unwavering focus. Your spells are reliable and potent, a testament to your dedication to precision.
+
+While the pursuit of order offers great power, it also presents challenges. Adhering strictly to structure may limit your adaptability in unexpected situations. It's important to find a balance between order and flexibility, embracing spontaneity when needed. Collaborating with like-minded practitioners enhances your abilities and expands your understanding of the arcane arts.
+
+Overall, your journey in the Order branch of magic is one of constant refinement and unwavering commitment to knowledge. As you unlock the mysteries of the universe, the cosmos responds to your disciplined approach, granting you wisdom and clarity. Embrace the order, and the magic of the cosmos will reveal itself to you.
+
+##### Unique Order Magical Spells
+
+- **Chrono-script:** This spell allows the caster to create temporal runes that record events and knowledge in a structured manner. These runes can be stored in enchanted archives and accessed by others, ensuring that valuable information is never lost to the passage of time.
+- **Symphony of Elements:** By orchestrating a precise sequence of gestures and incantations, the caster can summon and harmonize the elemental forces, combining them in a powerful and controlled manner. This spell allows the caster to wield the combined might of multiple elements simultaneously.
+- **Cognitive Bind:** The caster can weave a spell that links the thoughts and knowledge of individuals within a specified area. This connection fosters understanding and cooperation among the linked minds, facilitating the exchange of ideas and strategies.
+- **Kaleidoscopic Array:** By arranging crystals in a particular geometric pattern and channeling magic through them, the caster creates a multi-faceted barrier. This enchantment refracts incoming spells and energies, breaking them down into more manageable, harmless components.
+- **Regimen of Enchanting:** This spell enables the caster to conduct an intricate enchanting ritual that imbues objects with long-lasting magical properties. The enchanted items forged through this process are highly stable and retain their powers for extended periods.
+- **Harmony's Embrace:** By invoking the essence of harmony and order, the caster can soothe conflicts and quell chaotic energies within an area. This spell restores balance and calms unrest, fostering a sense of tranquility and cooperation among those affected.
+- **Paradoxial Insight:** The caster gains the ability to briefly peer into the temporal and causal weave of events. This spell allows them to foresee potential consequences of specific actions, aiding in strategic decision-making.
+- **Architect's Resilience:** When this spell is cast, it temporarily strengthens the structural integrity of buildings and barriers, making them highly resistant to destruction and breaches. This is especially useful during sieges or when protecting vital locations.
+- **Sage's Exchange:** Through this spell, the caster can create a magical link between two locations. This allows individuals to communicate and send small objects instantaneously between the linked points, bypassing physical barriers and distances.
+- **Harmonious Panoply:** This spell enhances the caster's abilities to coordinate and synchronize with their allies during combat. It fosters a seamless collaboration, enabling them to act in perfect harmony and anticipate each other's moves.
+
+##### Order Archtypes
+
+|        Archetype |                  Example                   | Example Description                                                                                                                                                                                                                                | Archetype Description                                                                                                                                                                                                                                                                                                                                                                  |
+|-----------------:|:------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    The Archivist |         Thoth (Egyptian Mythology)         | Thoth is the Egyptian god of wisdom, writing, and magic. He is often credited with the creation of hieroglyphs and is said to possess immense knowledge of the arcane and the universe.                                                            | This archetype is the epitome of knowledge and wisdom. The Archivist dedicates their life to the preservation and study of ancient tomes, grimoires, and arcane texts. They possess a vast understanding of magical lore, and their power comes from their ability to access and interpret the accumulated wisdom of ages.                                                             |
+|    The Alchemist | Nicolas Flamel (Real-life/Various Fiction) | Nicolas Flamel is a historical figure who has been portrayed in various works of fiction as an alchemist who discovered the Philosopher's Stone, enabling him to transmute materials and achieve immortality.                                      | This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered. |
+|    The Artificer |        Hephaestus (Greek Mythology)        | Hephaestus is the Greek god of blacksmiths, craftsmen, and artisans. He crafted many of the gods' magical weapons and artifacts, including Zeus's thunderbolts and Hermes' winged sandals.                                                         | This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.                                                                    |
+| The Elementalist |     Kvothe (The Kingkiller Chronicle)      | Kvothe is a gifted young man who learns the art of "Sympathy," which allows him to manipulate natural elements by creating a sympathetic link between objects. He uses this skill to control fire, wind, and other elements in various situations. | This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.                                             |
+{: .well .table .table-striped }
+
+
+These spells exemplify the precise, structured, and balanced nature of Order Magic. Each spell serves a specific purpose, often involving careful planning, intricate rituals, and a deep understanding of the forces that govern the world.
+
+|    Difficulty     | Order                                                                                                                                                                                                                                                                                                |
+|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Trivial      | Cleanse a minor magical anomaly that poses no challenge for someone skilled in Order magic.                                                                                                                                                                                                          |
+|      Simple       | Enchant a small trinket to provide basic protection against minor disruptions to the magical balance.                                                                                                                                                                                                |
+|       Easy        | Cast a warding spell to protect a limited area from chaotic disturbances, such as preventing wild magical fluctuations or repelling minor disruptive entities.                                                                                                                                       |
+|      Routine      | Construct a stable, intricate magical array to channel elemental energies efficiently, allowing for precise manipulation and control over natural forces.                                                                                                                                            |
+|      Average      | Successfully decipher a moderately complex ancient magical text, extracting valuable knowledge about the fundamental laws governing the Order branch of magic.                                                                                                                                       |
+|     Difficult     | Imbue an item with a complex and potent enchantment, requiring specialized knowledge and precision to ensure it functions as intended. For example, creating a time-keeping device that can maintain perfect synchronization with the natural flow of time.                                          |
+|  Very Difficult   | Merge and synchronize two distinct elemental forces to create a rare and powerful fusion spell, harnessing the strengths of both elements in perfect balance.                                                                                                                                        |
+|    Formidable     | Forge a grand, impenetrable barrier around an entire city to protect it from an imminent onslaught of powerful, chaotic forces. The barrier must be meticulously constructed to resist even the most overwhelming attacks, preserving the city's harmony.                                            |
+|      Heroic       | Unravel a complex and ancient magical ritual, passed down through generations, to temporarily stabilize a region ravaged by rampant chaos. The task requires unmatched expertise and collaboration with other Order mages to achieve this legendary feat.                                            |
+| Nearly Impossible | In an act of ultimate mastery, weave together the threads of time and space, temporarily freezing the progression of time in an entire realm to restore order to the chaotic world. This legendary task is the epitome of Order magic and will immortalize the mage's name in history.               |
+|       Godly       | Achieve absolute synchronization with the cosmic forces, becoming one with the fabric of reality itself. In this transcendent state, the mage temporarily attains godlike powers, bringing complete balance and harmony to the universe for a fleeting moment before returning to their mortal form. |
+{: .well .table .table-striped }
+
+
+### Mystery Characteristics
+
+Finally, you encounter the enigmatic realm of Mystery, where three paths beckon: Metaphysics, Animism, and Shamanism.
+
+In Metaphysics, your understanding of the interconnectedness of mind and matter allows you to manipulate reality through thought and focus. Your quest for truth and your exploration of consciousness grant you extraordinary psychic abilities.
+
+As an Animist, you understand that all things possess a spiritual essence. You commune with the spirits of nature and the world around you, seeing life and consciousness in everything. Your mystical journey involves a deep connection to the natural world and the ability to harness its powers through reverence and cooperation.
+
+Lastly, Shamanism leads you on a path of spiritual connection and healing. Your faith lies in the guidance of ancestral spirits and totemic beings. As you journey between the physical and spiritual realms, you serve as an intermediary, bringing wisdom, healing, and balance to your community. Your mystical experiences empower you to traverse the veil between worlds.
+
+#### Unique Magical Spells to Mystery
+
+- **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
+- **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
+- **Soul Bond:** Form a temporary connection with another being, allowing you to share emotions, thoughts, and experiences.
+- **Mystic Veil:** Shroud yourself or others in an aura of secrecy, making them invisible to the mundane eye and hard to detect by magical means.
+- **Metaphysical Enigma:** Unleash a surge of metaphysical energy, disrupting the flow of magic and causing confusion among spellcasters.
+- **Dreamwalker's Journey:** Enter the dreams of individuals, influencing their subconscious or gathering information from their dreamscapes.
+- **Elemental Fusion:** Combine the power of different elements to create unique and potent elemental manifestations.
+- **Psychic Surge:** Channel psychic energy to amplify your magical abilities or temporarily enhance physical attributes.
+- **Spiritual Mending:** Heal spiritual wounds and emotional traumas, restoring balance and inner harmony.
+- **Cosmic Attunement:** Commune with cosmic entities and receive revelations or cosmic insights beyond mortal understanding.
+- **Shapeshifter's Mirage:** Temporarily alter your appearance or transform into a creature of the mystical realms.
+- **Anima Manipulation:** Harness the animating essence of life to influence the growth and behavior of plants and animals.
+- **Astral Beacon:** Create a beacon of energy that serves as a guiding point or communication hub across great distances.
+- **Temporal Shift:** Temporarily manipulate time's flow, slowing or hastening events within a limited area.
+- **Chaosweave:** Merge different magical energies to form a chaotic weave of power, unleashing unpredictable effects.
+
+These spells draw upon the mysteries of the universe, tapping into psychic abilities, manipulating ethereal energies, and exploring the realms beyond ordinary comprehension. As a practitioner of Mystery magic, you possess a unique set of skills that allow you to traverse the boundaries of reality and harness the profound forces of the unknown.
+
+#### Metaphysics Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Metaphysics.webp"><img src="https://tedt.org/img/skills/vertical/Metaphysics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
+</figure>
+</div>
+
+In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
+
+Psionics expands your horizons with a broader range of psychic phenomena. Astral projection allows you to leave your physical body, exploring different planes of existence. Remote viewing empowers you to perceive distant or hidden targets, unraveling secret information and potential future outcomes. Psychometry unlocks the ability to gain insights about objects or people by touching them, revealing their history and essence.
+
+In your pursuit of mastering Metaphysics, you realize that these abilities go beyond mere tricks. Instead, they represent a profound interplay between consciousness and reality. By honing your mind and embracing the mysteries of existence, you unlock the true potential of these extraordinary gifts, elevating your understanding of the universe and your place within it.
+
+##### Unique Metaphysical Magical Spells
+
+- **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
+- **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
+- **Astral Passage:** This spell enables you and others to project your consciousness beyond the physical realm, traversing various planes and dimensions to uncover hidden secrets or seek guidance.
+- **Temporal Echo:** By tapping into the flow of time, you can leave a trace of your consciousness in the past or future, allowing you to observe events unfolding in those moments and interact with them indirectly.
+- **Mindforge:** Mindforge empowers you to create and shape constructs using pure thought. These constructs can serve various purposes, from guardians and defenders to tools and companions.
+- **Divination Nexus:** This powerful spell grants you a heightened sense of precognition, allowing you to see potential outcomes and the ripple effects of your actions, aiding in decision-making.
+- **Ethereal Embrace:** With Ethereal Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
+- **Psionic Rift:** This spell opens a temporary gateway to other planes or distant locations, enabling you to gather knowledge or transport yourself and others instantaneously.
+- **Harmonic Resonance:** Harmonic Resonance aligns the energy of the mind and body, promoting healing and restoration, and even mending psychic wounds caused by mental attacks or trauma.
+- **Foresight's Grace:** By invoking Foresight's Grace, you grant yourself or others heightened awareness, reflexes, and intuition, enhancing their abilities during critical moments.
+- **Illusion Unveiled:** With this spell, you can pierce through illusions and glamours, revealing the truth behind deceptive appearances and uncovering hidden truths.
+- **Psychokinetic Symphony:** Psychokinetic Symphony allows you to manipulate multiple objects simultaneously with incredible precision, creating intricate displays of telekinetic prowess.
+
+##### Metaphysical Archtypes
+
+|           Archetype |              Example              | Example Description                                                                                                                                                                      | Archetype Description                                                                                                                                                                                                                                                                                                    |
+|--------------------:|:---------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    The Psychic Seer |     Professor X from "X-Men"      | Charles Xavier, also known as Professor X, possesses telepathic abilities that allow him to read minds and even see potential future events. He uses these abilities to guide the X-Men. | This archetype embodies the concept of clairvoyance and precognition. They possess the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate. |
+|     The Manipulator |      Jean Grey from "X-Men"       | Jean Grey is a mutant with telepathic and telekinetic abilities. She can read minds and move objects with her thoughts, making her a formidable force.                                   | Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.                       |
+|        The Traveler |  Dr. Strange from Marvel Comics   | Dr. Stephen Strange can astral project and travel between different dimensions, gaining wisdom and forming alliances with otherworldly beings.                                           | Representing the practice of astral projection, this archetype ventures beyond the confines of the physical body to explore ethereal realms and dimensions. The Traveler often uncovers hidden knowledge and encounters beings from other planes, offering a bridge between the material and spiritual worlds.           |
+|     The Time Bender |    Hiro Nakamura from "Heroes"    | Hiro has the ability to manipulate time, including stopping it and traveling through it. He struggles with the ethical implications of changing past and future events.                  | This archetype draws inspiration from those with precognitive abilities who can see potential futures or alter the timeline itself. The Time Bender grapples with ethical dilemmas, considering the consequences of changing events or preserving the natural flow of time.                                              |
+| The Empathic Healer | Luna Lovegood from "Harry Potter" | Luna has a deep sense of empathy and understanding, providing emotional support to Harry and his friends, even though her abilities are not explicitly psychic.                          | Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.                                                                        |
+|          The Oracle |   The Oracle from "The Matrix"    | The Oracle provides Neo and his companions with cryptic yet crucial guidance, helping them navigate the challenges they face against the Matrix.                                         | Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinities and guide pivotal decisions.                                                                                                                |
+{: .well .table .table-striped }
+
+
+Remember that these spells are unique to your background in Metaphysics and reflect the deep connection you have with the mystical forces of ESP and Psionics. Each spell embodies the essence of your metaphysical knowledge, offering a distinct and awe-inspiring set of abilities in the world of magic and fantasy.
+
+Here's the table describing tasks someone from the Metaphysical magical practice of ESP and Psionics might attempt for each difficulty level:
+
+| Difficulty        | Metaphysical                                                                                                                                                                                                               |
+|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Instantly reading the surface emotions of a nearby individual without even trying, as if it were a reflexive action.                                                                                                       |
+| Simple            | Sending a brief telepathic message to a familiar recipient, relying on a basic level of focus and minimal effort.                                                                                                          |
+| Easy              | Using telekinesis to gently move a lightweight object, such as a small pebble, across a short distance.                                                                                                                    |
+| Routine           | Successfully astral projecting and exploring a nearby familiar location with ease, recalling details upon return.                                                                                                          |
+| Average           | Predicting a simple event with some accuracy, like guessing the outcome of a coin flip, based on your precognitive sense.                                                                                                  |
+| Difficult         | Establishing a telepathic connection with multiple individuals simultaneously to hold a group conversation, requiring significant mental focus and training.                                                               |
+| Very Difficult    | Performing a complex act of psychometry on an ancient artifact, uncovering detailed historical information about its origins and previous owners.                                                                          |
+| Formidable        | Telekinetically manipulating a series of objects in a choreographed dance of movements, showcasing exceptional control and finesse.                                                                                        |
+| Heroic            | Projecting your consciousness across the world to a distant, unfamiliar location, and returning with vivid details and insights from that place.                                                                           |
+| Nearly Impossible | Using astral projection to venture into the depths of an uncharted, otherworldly realm and returning with profound knowledge or a rare artifact.                                                                           |
+| Godly             | Achieving an extraordinary feat of time manipulation, briefly altering the timeline to prevent a catastrophic event or restore harmony to a torn reality, requiring the cooperation of other powerful beings or artifacts. |
+{: .well .table .table-striped }
+
+
+#### Animism Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Animism.webp"><img src="https://tedt.org/img/skills/vertical/Animism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
+</figure>
+</div>
+
+In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
+
+As an Animist, you become attuned to the rhythms of nature, sensing the whispers of the wind, the murmurs of flowing water, and the pulse of the earth. You forge deep connections with the spirits, learning to call upon their powers to aid you in various endeavors. However, you understand that this magic comes with responsibility, requiring respect and reciprocity to preserve the sanctity of the spirits' domains and maintain balance with the energies of the world.
+
+Your empathy grows, allowing you to perceive the hidden spiritual essence within others, healing their wounds and bringing harmony to their souls. Animism becomes more than just a belief system; it transforms your way of life, instilling wonder in the ordinary and fostering a sense of interconnectedness with all living beings. As an Animist, you embrace the eternal spirit flowing through everything, forever changed by the profound wisdom of this magical world.
+
+##### Unique Animism Magical Spells
+
+- **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
+- **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
+- **Nature's Embrace:** Envelops the caster or a target in a protective aura formed from the essence of nature. This shield grants resistance against elemental attacks and negative energy, offering a temporary sanctuary from harm.
+- **Spiritual Healing:** A potent healing spell that not only restores physical wounds but also mends the spiritual and emotional well-being of the recipient. The spell draws upon the life force of the surrounding environment to aid in the healing process.
+- **Wild Shape:** Allows the caster to temporarily transform into an animal of their choosing. While in animal form, the caster gains the abilities and instincts of the chosen creature, granting them unique advantages in exploration and combat.
+- **Harmony's Call:** Enables the caster to harmonize the energies of living beings in a specific area, quelling conflicts and calming aggressive tendencies. This spell fosters empathy and understanding, promoting peace among both humans and creatures.
+- **Animate Nature:** Breathes life into inanimate objects, briefly imbuing them with the essence of nature. These animated objects can assist the caster or perform simple tasks, such as carrying items or providing distraction in battle.
+- **Soothing Whispers:** Uses the gentle whispers of nature spirits to soothe and pacify aggressive creatures or individuals. The spell induces a calming effect, reducing hostility and making it easier to negotiate or escape potentially dangerous situations.
+- **Ancestral Guidance:** Calls upon the wisdom and knowledge of the caster's ancestors, providing valuable insights or ancient techniques to aid in solving problems or overcoming challenges.
+- **Spiritual Nexus:** Creates a sacred space that acts as a gateway between the physical and spiritual realms. This nexus enhances the caster's magical abilities, increases their connection to the spirits, and facilitates more profound and powerful spellcasting.
+
+##### Animism Archtypes
+
+|            Archetype |                          Example                           | Example Description                                                                                                                                                     | Archetype Description                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------------:|:----------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Spirit Whisperer |           Pocahontas from Disney's "Pocahontas"            | Pocahontas can communicate with the spirits of nature, including the wind and animals. She serves as a guide and mediator between her people and the English settlers.  | The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.             |
+|     Elemental Shaper |           Aang from "Avatar: The Last Airbender"           | Aang is the Avatar, capable of bending all four elements: earth, water, air, and fire. He uses these abilities to protect his friends and restore balance to the world. | The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.        |
+|        Nature Healer |                 Radagast from "The Hobbit"                 | Radagast the Brown is a wizard who has a deep connection with animals and plants. He uses his magical abilities to heal and protect the creatures of the forest.        | The Nature Healer is an archetype gifted with the power to heal wounds and ailments, not just on a physical level but also on a spiritual and emotional one. They draw upon the life force present in plants, rivers, and animals to mend broken spirits and restore balance to troubled souls. Their touch brings forth rejuvenation and renewal to both individuals and the natural world.      |
+|         Shapeshifter |        Lyra Silvertongue from "His Dark Materials"         | Lyra has the ability to change the form of her daemon, Pantalaimon, into various animals, each offering different abilities and insights.                               | The Shapeshifter is a mystical being who can transform into various animals or even merge partially with the spirits of nature. Through this ability, they gain unique traits and strengths from different creatures, granting them incredible versatility in navigating through diverse challenges. They can become the swift wolf, the wise owl, or the elusive fox, adapting to any situation. |
+| Guardian of the Wild | Princess Mononoke from Studio Ghibli's "Princess Mononoke" | Ashitaka, also known as Princess Mononoke, is a fierce protector of the forest and its spirits. She fights against human encroachment that threatens the natural world. | The Guardian of the Wild is a fierce protector of the natural order. They defend the sacred sites, creatures, and ancient spirits from external threats, often serving as a bridge between the physical and spiritual realms. With an unyielding determination, they safeguard the balance of life, using their powers to deter those who would harm the natural world.                           |
+|  Ancestral Channeler |           T'Challa from Marvel's "Black Panther"           | T'Challa, the Black Panther, can communicate with the spirits of his ancestors for guidance and wisdom, especially when he visits the ancestral plane.                  | The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.           |
+|       Communal Weave |           Steven Universe from "Steven Universe"           | Steven has the ability to empathetically connect people through his powers, resolving conflicts and fostering understanding among diverse groups.                       | The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.                    |
+{: .well .table .table-striped }
+
+
+These unique spells embody the essence of Animism Magic, offering a profound connection with nature, a deep understanding of the spirits, and the ability to influence the world through the spiritual essence that permeates all things.
+
+Here's a table describing a task someone from Animism would attempt to do for each difficulty level:
+
+| Difficulty        | Animism                                                                                                                                                                                                                                                                                            |
+|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Communicating with a friendly forest creature to help you find a particular plant or ingredient.                                                                                                                                                                                                   |
+| Simple            | Creating a small protective barrier of elemental energy around a campsite to ward off minor natural disturbances or wild animals.                                                                                                                                                                  |
+| Easy              | Healing a minor wound or ailment by drawing on the life force of nearby plants and natural energies to aid the recovery process.                                                                                                                                                                   |
+| Routine           | Shape-shifting into a common animal like a wolf or bird for a short period to explore a distant location or gather information from the wilderness.                                                                                                                                                |
+| Average           | Performing a ritual to establish a temporary connection with the spirits of a specific location, gaining insights into its history and potential hidden resources.                                                                                                                                 |
+| Difficult         | Transforming into an ethereal form, allowing the caster to traverse through obstacles or explore a mystical realm inaccessible to the physical body.                                                                                                                                               |
+| Very Difficult    | Merging with the spirit of a great tree or powerful natural entity to gain immense knowledge and wisdom, but requiring utmost concentration and energy control.                                                                                                                                    |
+| Formidable        | Coordinating with a circle of skilled Animists to summon a powerful elemental storm that can cleanse a corrupted forest and restore it to its natural state.                                                                                                                                       |
+| Heroic            | Engaging in a spiritual battle with a malevolent ancient spirit threatening to unleash havoc on the world, requiring the combined efforts of the most skilled Animists and assistance from benevolent deities to subdue the malevolence.                                                           |
+| Nearly Impossible | Attempting to commune with the ancient spirits of a long-lost civilization that holds the key to unlocking powerful secrets of the universe, requiring a group of legendary Animists to channel their collective energies and focus to maintain the connection.                                    |
+| Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
+{: .well .table .table-striped }
+
+
+#### Shamanism Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Shamanism.webp"><img src="https://tedt.org/img/skills/vertical/Shamanism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
+</figure>
+</div>
+
+Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
+
+In Shamanism, you enter altered states of consciousness through various methods like meditation, drumming, or dancing. In these trance-like states, you can traverse the ethereal plane to seek guidance, healing, and answers. As you develop your abilities, you become a spiritual leader, offering counsel and mediating conflicts between individuals and spirits.
+
+The practice of Shamanism requires a profound sense of humility and respect for the spirits and the natural world. You embrace the responsibility of maintaining harmony with the ecosystem and fostering reverence for the interconnected web of life. Your role as a shaman is that of a guardian, a healer, and a spiritual guide, guided by the ethereal forces that shape the cosmos.
+
+##### Unique Shamanism Magical Spells
+
+- **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
+- **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
+- **Ancestral Vision:** Enables the shaman to experience visions or memories from their ancestors, gaining insights and knowledge from past generations.
+- **Nature's Embrace:** Calls upon the power of the natural world to heal wounds, cure diseases, or revitalize living beings.
+- **Soul Retrieval:** Travels into the spirit realm to find and restore lost or fragmented parts of someone's soul, promoting healing and wholeness.
+- **Spiritual Warding:** Creates a protective barrier against malevolent spirits or negative energies, safeguarding a person or location.
+- **Dance of the Northern Lights:** A mesmerizing ritual dance that can evoke the aurora borealis, influencing luck, prosperity, and fortune.
+- **Plant Speak:** Allows the shaman to understand the language of plants, receiving messages or information from the flora around them.
+- **Eclipse's Gaze:** During a solar or lunar eclipse, the shaman gains heightened powers, accessing unique abilities and knowledge.
+- **Familiar Bond:** Forms a deep bond with an animal spirit, summoning the spirit to assist the shaman during their journeys.
+- **Dreamweaver's Lullaby:** Induces a magical slumber, enabling the shaman to enter another's dreams to offer guidance or deliver messages.
+- **Soulflight:** Projects the shaman's consciousness into the spirit realm, allowing them to explore distant places or seek specific spirits for aid.
+- **Nature's Wrath:** Calls upon the fury of the natural elements to unleash devastating attacks against foes.
+- **Rite of Passage:** A powerful ritual that marks a significant moment in someone's life, bestowing blessings or unlocking hidden potential.
+- **Sacred Grove:** Creates a mystical sanctuary where the shaman can communicate with spirits, hold ceremonies, or offer prayers.
+
+##### Shamanism Archtypes
+
+|            Archetype |                   Example                    | Example Description                                                                                                                                                                                                   | Archetype Description                                                                                                                                                                                                                                                                                                                                 |
+|---------------------:|:--------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      The Wise Shaman |         Rafiki from "The Lion King"          | Rafiki serves as a spiritual guide to Simba, offering wisdom and guidance throughout his journey. He uses rituals and symbols to connect with the spiritual realm.                                                    | This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.      |
+| The Nature Channeler |  Princess Mononoke from "Princess Mononoke"  | Ashitaka, also known as Princess Mononoke, has a deep connection with the spirits of the forest and can communicate with animals and plants. She uses these abilities to protect the natural world.                   | This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.                           |
+|    The Spirit Walker |      Doctor Strange from Marvel Comics       | Doctor Strange can traverse different dimensions and realms, including the spiritual realm. He uses this ability to gain knowledge, communicate with otherworldly beings, and influence events in the physical world. | The Spirit Walker is a shamanic archetype who has the ability to traverse between the physical and spiritual realms. They enter altered states of consciousness to connect with spirits, receive visions, and gain supernatural powers. This character may journey to the underworld, commune with ancestors, or seek guidance from powerful spirits. |
+|           The Healer |    Moana's Grandmother Tala from "Moana"     | Tala serves as a healer and spiritual guide to Moana, using her knowledge of rituals and the natural world to aid her granddaughter on her quest.                                                                     | This archetype embodies the shaman's role as a powerful healer. They can cure ailments, both physical and spiritual, using their knowledge of herbs, rituals, and energy manipulation. The Healer often acts as a benevolent figure, offering aid and support to those in need.                                                                       |
+|   The Balance Keeper | Uncle Iroh from "Avatar: The Last Airbender" | Uncle Iroh serves as a mediator and guide, often seeking to restore balance between opposing forces. He uses his wisdom and spiritual insight to help others make the right choices.                                  | The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.                                                             |
+|    The Shadow Shaman | Shaman King's Hao Asakura from "Shaman King" | Hao Asakura is a powerful shaman who taps into dark energies and spirits for personal gain. He is morally ambiguous and serves as an antagonist in the story.                                                         | This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.                                                              |
+{: .well .table .table-striped }
+
+
+These unique spells reflect the shaman's profound connection to nature, spirits, and the unseen world, showcasing their ability to tap into the mystical forces of the universe to achieve various extraordinary feats.
+
+| Difficulty        | Shamanism                                                                                                                                                                                                                                         |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Offering a simple blessing to a fellow tribe member or cleansing a small area from negative energy.                                                                                                                                               |
+| Simple            | Assisting someone in achieving a state of deep meditation to connect with their inner self or to gain insights from the spirit realm.                                                                                                             |
+| Easy              | Preparing and administering basic herbal remedies to alleviate minor physical ailments or soothe emotional distress.                                                                                                                              |
+| Routine           | Conducting a routine divination ritual to gain insights into the future or seek answers to specific questions using sacred tools like cards, bones, or stones.                                                                                    |
+| Average           | Undertaking the process of retrieving and reuniting a lost soul fragment with a troubled individual to help them heal from emotional trauma.                                                                                                      |
+| Difficult         | Channeling the power of the elements to summon and control a powerful elemental guardian to protect a sacred site or defend against malevolent forces.                                                                                            |
+| Very Difficult    | Projecting the shaman's consciousness to travel to distant places in the spirit realm to seek knowledge from ancient spirits or to gain insights into hidden secrets.                                                                             |
+| Formidable        | Undertaking a perilous spiritual journey to the spirit world's deepest realms, where few have ventured before, to obtain rare insights or ancient wisdom from the most revered spirits.                                                           |
+| Heroic            | Uniting the energies of the tribe and the surrounding natural forces to perform a grand ritual, bringing harmony and balance to the entire region, dispelling malevolent spirits, and revitalizing the land and its inhabitants.                  |
+| Nearly Impossible | Attempting to bring back a deceased loved one from the afterlife, a task that requires the shaman to navigate complex spiritual realms and negotiate with powerful entities to grant a second chance at life.                                     |
+| Godly             | Harnessing the forces of celestial bodies and the spirit world to perform a ritual that significantly alters the fate of entire civilizations or alters the course of cosmic events, requiring immense power and assistance from divine entities. |
+{: .well .table .table-striped }
+
+
+
 
 
 ## Emotional Aspects
@@ -3072,659 +3690,6 @@ William Wallace's mastery of Leadership is not just about tactical acumen or bat
 | Nearly Impossible | Convincing warring nations to lay down their arms and work towards lasting peace. Incite peasants to violence in the wake of a miracle.                                                                                                                                                                                                            |
 | Godly             | Becoming a revered figure who inspires nations, shaping the course of history with their vision and wisdom. Lead a group of unbelievers into hell to rescue a lost soul.                                                                                                                                                                           |
 {: .well .table .table-striped }
-
-
-## Mystical Aspects
-
-### Skepticism Characteristics
-
-In the realm of Skepticism, you will encounter three distinct branches: Arcane, Gnostic, and Chaos.
-
-As a practitioner of Arcane magic, you wield precise and structured spells, relying on the manipulation of mystical symbols and energies. Your skepticism keeps you grounded, approaching magic with a methodical and analytical mindset, seeking to understand its underlying principles and laws.
-
-Moving on to Gnostic magic, you delve deep into esoteric knowledge and hidden truths. You see magic as a path to higher consciousness and self-discovery. Your skepticism here is a tool for discerning genuine wisdom from mere illusions, as you navigate the complexities of mystical realms, seeking illumination and personal growth.
-
-Then comes Chaos magic, where skepticism takes a different turn. Rather than seeking well-defined systems, you embrace the unpredictable and chaotic nature of magic itself. You find power in the fluidity of belief and the ability to shift paradigms, drawing from various traditions and symbols without becoming tied to any one of them. Your skepticism becomes a weapon against dogma, allowing you to remain adaptable and open-minded.
-
-#### Spells of the Skeptic
-
-- **Arcane Dissection:** Analyze and deconstruct complex magical spells or enchantments to understand their underlying mechanisms and weaknesses.
-- **Gnostic Insight:** Tap into your higher consciousness to gain profound insights into mystical truths and hidden knowledge.
-- **Chaos Infusion:** Harness the power of chaos to enhance unpredictability and adaptability in your spells, confounding opponents and destabilizing magical constructs.
-- **Reality Distortion:** Temporarily alter the perception of reality around you, creating illusions that challenge the senses and perceptions of others.
-- **Skeptic's Aura:** Create a field of skeptical energy that weakens or nullifies the magical effects of others within its radius.
-- **Precision Binding:** Craft intricate magical barriers or bindings with precise geometrical symbols, making them more resilient and challenging to break.
-- **Gnostic Resonance:** Establish a psychic connection with other Gnostic practitioners, allowing for the exchange of knowledge and insights.
-- **Chaos Merge:** Temporarily blend multiple magical traditions or paradigms, combining their strengths into a potent and unpredictable fusion.
-- **Analytical Recall:** Enhance your memory and recall abilities, enabling you to store and access vast amounts of magical knowledge.
-- **Skeptic's Disguise:** Conceal your magical presence from others, appearing as a non-magical individual to avoid detection or unwanted attention.
-- **Elemental Deciphering:** Analyze and understand the elemental composition of objects or magical phenomena, unraveling their intrinsic properties.
-- **Gnostic Empathy:** Develop a heightened understanding of others' emotions and intentions, aiding in negotiations and detecting hidden agendas.
-- **Chaos Confluence:** Merge the energies of chaos into your spells, enhancing their versatility and adaptability on the fly.
-- **Rational Shielding:** Create magical barriers based on logical principles, making them more resistant to manipulation or exploitation.
-- **Skeptic's Rejection:** Nullify the effects of illusions or deceptive magic, seeing through false appearances and revealing the truth.
-
-As a Skepticism practitioner, your spells are fueled by intellectual curiosity, rationality, and the pursuit of understanding. These unique spells reflect your approach to magic, allowing you to question, analyze, and adapt your mystical abilities in unique and intriguing ways.
-
-#### Arcane Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Ethereal.webp"><img src="https://tedt.org/img/skills/vertical/Ethereal.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
-</figure>
-</div>
-
-TODO: Fix this
-
-In the realm of Arcane magic and mysticism, you become a master of invisible threads, bridging reality and imagination. As you journey deeper into this esoteric world, you unlock the secrets of the cosmos, wielding raw energies and shaping them into powerful manifestations. Incantations and spellcasting become your forte, as your words resonate with the universe, giving you the ability to reshape the world around you. Yet, this path demands precision and control, for the untamed forces you wield can easily turn against you. As you seek to master the Arcane, you must cultivate inner balance and  mindfulness, attuning yourself to the interconnectedness of all things. Through encounters with fellow seekers and experienced mages, you gather wisdom, but the journey remains your own to chart. Ultimately, being an Arcane mage transcends mere power and knowledge. It is a journey of self-discovery and understanding, where you become a beacon of mystic wisdom and a guardian of the sacred secrets that shape existence itself.
-
-##### Unique Arcane Magical Spells
-
-- **Astral Projection:** Project your consciousness into the astral plane, allowing you to traverse great distances and explore other realms. This spell grants you access to hidden knowledge and the ability to interact with spirits and entities beyond the physical realm.
-- **Ethereal Veil:** Conceal yourself and others in an ethereal shroud, rendering you nearly invisible to the naked eye and most forms of magical detection. This spell allows you to move undetected and avoid unwanted attention.
-- **Arcane Symphony:** Harness the harmonious energies of the cosmos to create a mesmerizing symphony of arcane power. This spell can awe and mesmerize those who hear it, potentially disrupting enemies or gathering allies to your cause.
-- **Temporal Rupture:** Temporarily disrupt the flow of time in a localized area, causing objects and individuals to move at different rates. This spell can slow down or speed up time, granting you a tactical advantage in combat or time-sensitive situations.
-- **Soul Ephemera:** Extract fragments of souls from living beings and spirits, which can be used as a source of power for other spells or stored for later use. This spell allows you to manipulate the essence of life itself.
-- **Celestial Infusion:** Draw upon the power of celestial bodies to infuse your spells with cosmic energy. This spell enhances your magical attacks, granting them the properties of stars, moons, or meteors.
-- **Planar Binding:** Open portals to other planes of existence and summon beings from different realms to aid you in your endeavors. This spell allows you to call upon extraplanar entities for assistance or knowledge.
-- **Ethereal Ward:** Create a protective barrier that shields against ethereal and magical attacks. This spell can repel or absorb mystical energies, providing a powerful defense against other spellcasters.
-- **Arcane Threads:** Manipulate the unseen threads of magic that connect all things, allowing you to influence events or alter probabilities subtly. This spell grants you a form of limited precognition and the ability to nudge fate in your favor.
-- **Phantom Mirage:** Conjure realistic illusions that can fool all senses, making objects or locations appear entirely different from reality. This spell can create deceptive environments or distract enemies during a battle.
-
-##### Arcane Archetypes
-
-|              Archetype |                      Example                      | Example Description                                                                                             | Archetype Description                                                                                                                                                                                                                                                                                                                                                        |
-|-----------------------:|:-------------------------------------------------:|-----------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     The Arcane Scholar |          Albus Dumbledore (Harry Potter)          | Known for his extensive knowledge of magic and wisdom, Dumbledore serves as a mentor to Harry Potter.           | This archetype embodies a deep thirst for knowledge and understanding of the magical arts. The Arcane Scholar spends their life poring over ancient tomes, deciphering cryptic runes, and uncovering forgotten secrets of the cosmos. Their magical repertoire is vast, and they often serve as mentors or advisors to other characters seeking wisdom and guidance.         |
-|    The Illusion Weaver |              Loki (Norse Mythology)               | A trickster god known for his illusions and shape-shifting abilities to deceive gods and mortals alike.         | The Illusion Weaver excels in the art of creating realistic and mind-bending illusions. They can deceive and manipulate the perceptions of others, making them appear invisible, or conjuring vivid phantoms and mirages. Their power lies in their ability to bend reality and sow confusion among their enemies.                                                           |
-|     The Elemental Mage |     Avatar Aang (Avatar: The Last Airbender)      | Known for mastering all four elements and using them to bring balance to the world.                             | This archetype harnesses the primal forces of nature, wielding control over elements like fire, water, air, and earth. They can summon devastating storms, conjure fiery infernos, or manipulate the very ground beneath their feet. The Elemental Mage is a force to be reckoned with, commanding nature's fury with a mere gesture.                                        |
-|    The Astral Traveler |          Doctor Strange (Marvel Comics)           | Known for his ability to travel between different dimensions and manipulate the astral plane.                   | This enigmatic archetype can transcend the physical plane and venture into the astral or spiritual realms. They have the ability to project their consciousness to explore distant places, communicate with spirits, or even traverse through time. The Astral Traveler often acts as a bridge between different dimensions, uncovering hidden truths and ancient mysteries. |
-|        The Soul Binder | Sabrina Spellman (Chilling Adventures of Sabrina) | Known for her ability to bind souls and communicate with spirits.                                               | The Soul Binder delves into the realm of souls and spirits, wielding powers to commune with the deceased or harnessing spectral energies in battle. They can bind souls to objects, summon ethereal allies, or even temporarily possess other beings. This archetype often grapples with moral dilemmas, as their powers touch upon the boundaries between life and death.   |
-| The Celestial Sorcerer |           Galadriel (Lord of the Rings)           | Known for her celestial powers, including a ring that holds a portion of the light of the Two Trees of Valinor. | This archetype draws upon celestial bodies and cosmic energies. They can call upon the power of stars, moons, and constellations to empower their spells and augment their abilities. The Celestial Sorcerer is a beacon of mystical energy, with powers that seem almost divine.                                                                                            |
-|        The Time Weaver |              Hiro Nakamura (Heroes)               | Known for his ability to manipulate time, including stopping time and time travel.                              | The Time Weaver has the ability to manipulate time itself. They can slow down, speed up, or even rewind time in localized areas. This mastery over time grants them a unique advantage in both combat and problem-solving scenarios.                                                                                                                                         |
-|  The Planar Gatekeeper |           John Constantine (DC Comics)            | Known for his ability to travel between realms and summon creatures from different planes.                      | The Planar Gatekeeper can open portals to other realms, allowing them to summon creatures from different planes of existence or travel vast distances in an instant. Their command over planar energies makes them formidable and unpredictable foes.                                                                                                                        |
-{: .well .table .table-striped }
-
-
-These Arcane Caster archetypes bring a sense of wonder and mystique to fictional worlds, as they explore the depths of arcane knowledge and wield powers that transcend the ordinary boundaries of reality. Their unique abilities and intricate backgrounds make them fascinating characters to encounter in any storytelling setting.
-
-| Difficulty        | Arcane                                                                                                                                         |
-|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Perform a basic levitation spell on a small object.                                                                                            |
-| Simple            | Cast a protective shield around oneself to deflect minor projectiles.                                                                          |
-| Easy              | Create an illusion of a small creature or object to distract or confuse an enemy.                                                              |
-| Routine           | Enchant a weapon to enhance its striking power for a limited duration.                                                                         |
-| Average           | Teleport to a known location within a short distance.                                                                                          |
-| Difficult         | Summon and control an elemental being for a short period of time.                                                                              |
-| Very Difficult    | Manipulate the weather in a localized area, creating a storm or calming turbulent winds.                                                       |
-| Formidable        | Create a pocket dimension that can temporarily house multiple individuals and objects.                                                         |
-| Heroic            | Time manipulation on a small scale, allowing the caster to briefly glimpse or interact with the past or future.                                |
-| Nearly Impossible | Unleash a devastating spell that calls forth a catastrophic celestial event, reshaping the landscape and altering the course of nature itself. |
-| Godly             | Open a portal to an alternate reality or dimension, allowing passage between worlds and access to unimaginable powers and knowledge.           |
-{: .well .table .table-striped }
-
-
-Please note that the difficulty ratings provided in the table are relative and can vary depending on the specific system or setting in which the magical practice is being used.
-
-#### Gnosis Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Gnosis.webp"><img src="https://tedt.org/img/skills/vertical/Gnosis.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
-</figure>
-</div>
-
-As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
-
-In this mystical tradition, you encounter the idea of the Demiurge, an imperfect creator deity, and learn to view the material world as a flawed creation, seeking escape to return to your divine origins. Along the way, you must navigate through challenges posed by archons, malevolent entities that attempt to hinder your spiritual progress. Yet armed with gnosis, you can overcome these obstacles and grow stronger in your connection to the divine source.
-
-Throughout your quest, you encounter potent symbols like the Ouroboros and the Tree of Life, aiding in contemplation and meditation, guiding you towards a deeper understanding of the universe and your place in it. As you embrace this inward journey, shedding illusions and gaining profound insights, you experience a transformation that awakens the spiritual dimensions of reality within you. The Gnostic path leads you to discover the oneness that unites all beings, fostering a profound and enlightening experience of self-discovery and spiritual growth.
-
-##### Unique Gnostic Magical Spells
-
-- **Gnosis Revelation:** Through deep meditation and introspection, you can gain direct knowledge of hidden truths and the divine. This spell allows you to receive profound insights and visions, revealing hidden aspects of reality or unraveling mysteries.
-- **Archon Banishment:** Drawing upon your understanding of malevolent entities, you can cast a spell to banish archons and dark forces that seek to hinder spiritual growth. This spell can protect you and others from their negative influence.
-- **Sophia's Guidance:** Channeling the wisdom of the Divine Feminine, this spell allows you to receive guidance and intuition when facing difficult decisions or challenges on your path.
-- **Demiurge's Illusion:** By manipulating the illusions of the material world, you can create distractions or temporary alterations to the perception of others. This spell might be useful for misdirection or protection.
-- **Ouroboros' Renewal:** Utilizing the symbolism of the eternal cycle, this spell grants you the ability to rejuvenate yourself or others, healing wounds and restoring vitality.
-- **Aeonic Alignment:** Through ritual and meditation, you can align yourself with the cosmic forces of the aeons, gaining access to their power and protection.
-- **Tree of Life Manifestation:** Drawing upon the interconnectedness of all existence, this spell allows you to establish a telepathic link with others or project your thoughts across great distances.
-- **Sacred Names Enchantment:** By invoking the names of powerful divine beings, you can imbue objects with special properties or create charms for protection and luck.
-- **Divine Spark Ignition:** This spell awakens the dormant divine spark within others, triggering their spiritual awakening and the pursuit of gnosis.
-- **Gnostic Shield:** Using your knowledge of higher truths, you can create a protective shield that repels negative energies and safeguards against psychic attacks.
-- **Emanation of Light:** Channeling the divine light, you can emit a radiant glow that dispels darkness and fills the surroundings with spiritual clarity.
-- **Liberation's Embrace:** This spell grants a momentary experience of transcendence, allowing you or others to briefly escape the limitations of the material world and experience the oneness of all things.
-
-These spells reflect the unique and profound nature of your magical abilities, inspired by the Gnostic traditions' spiritual insights and themes. Each spell involves a deep connection to the divine and the pursuit of higher knowledge, empowering you to navigate the complexities of the spiritual realm and bring about positive transformations in the world around you.
-
-##### Gnostic Archtypes
-
-|      Archetype |           Example            | Example Description                                                                                                 | Archetype Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------:|:----------------------------:|:--------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     The Seeker | Siddhartha Gautama (Buddha)  | Embarked on a quest for enlightenment, ultimately achieving it and teaching others the path.                        | This hero type represents the quintessential Gnostic protagonist - a curious and introspective individual driven by a deep thirst for spiritual understanding. The Seeker embarks on a journey of self-discovery, seeking hidden truths and direct knowledge of the divine. Throughout their quest, they encounter challenges that mirror the struggle to escape the illusions of the material world and find unity with the transcendent source. |
-|     The Savior |       Neo (The Matrix)       | Liberates humanity from the Matrix, a simulated reality created to keep human minds enslaved.                       | The Gnostic Savior is a heroic figure destined to liberate humanity from the clutches of the Demiurge or oppressive forces that keep souls trapped in the material realm. This hero embodies divine knowledge and serves as a beacon of hope, leading others towards gnosis and salvation. Their actions may involve confronting the Demiurge or the archons to awaken humanity to its true spiritual nature.                                     |
-|      The Rebel | Prometheus (Greek Mythology) | Stole fire from the gods to give to humanity, challenging the established order of the gods.                        | The Rebel hero type challenges the established order and questions the authorities and institutions that perpetuate ignorance and falsehoods. This character embodies the Gnostic disdain for the material world's limitations and fights against oppressive systems, seeking to liberate others from the ignorance that binds them.                                                                                                              |
-|     The Martyr |    Joan of Arc (History)     | Led the French army to victory but was captured and burned at the stake, becoming a symbol of resistance and faith. | This hero willingly sacrifices themselves for the greater good, embodying the Gnostic belief in transcending the material world through a higher form of existence. The Martyr hero type demonstrates an unwavering commitment to truth and spiritual liberation, even in the face of persecution or death.                                                                                                                                       |
-| The Chosen One | Anakin Skywalker (Star Wars) | Foretold to bring balance to the Force, struggles with his identity before ultimately fulfilling his destiny.       | This hero is foretold to possess a special connection to divine knowledge or a unique destiny. The Chosen One often struggles with their identity and purpose, but as they embrace their role, they become instrumental in guiding others towards gnosis and freedom from the material world's constraints.                                                                                                                                       |
-|   The Redeemer |        Aslan (Narnia)        | Sacrifices himself to save Edmund, later resurrects, guiding and aiding the children in their quest.                | The Redeemer hero type works to save others from their own inner darkness and ignorance. They help others awaken to their true spiritual nature, offering guidance and support in their individual quests for self-discovery and enlightenment.                                                                                                                                                                                                   |
-{: .well .table .table-striped }
-
-
-Here's a table describing tasks someone from the Gnostic magical practice might do for each difficulty level:
-
-| Difficulty        | Gnostic                                                                                                                                                                                                            |
-|:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Basic meditation or reciting simple mantras effortlessly.                                                                                                                                                          |
-| Simple            | Identifying basic archon influences in someone's aura or sensing the flow of cosmic energies in a specific area.                                                                                                   |
-| Easy              | Performing a ritual to invoke the guidance of the Divine Feminine or creating a protective charm to ward off negative energies.                                                                                    |
-| Routine           | Deciphering complex esoteric texts or performing advanced meditation techniques to access higher states of consciousness.                                                                                          |
-| Average           | Successfully conducting a ceremony to honor the divine aeons or creating a unique symbol to represent the cycle of birth and rebirth.                                                                              |
-| Difficult         | Banishing powerful archons from a person's energy field or conducting a ritual to commune with the divine source directly. These tasks require both skill and some luck to accomplish.                             |
-| Very Difficult    | Navigating the astral realms to retrieve hidden esoteric knowledge or attempting to heal someone with deeply ingrained spiritual blockages.                                                                        |
-| Formidable        | Confronting powerful entities in the astral plane or breaking through the illusions of the Demiurge to experience divine truths firsthand. Only the true masters of Gnostic magic can perform feats at this level. |
-| Heroic            | Unraveling the deepest mysteries of the universe or liberating a group of souls trapped by archonic forces. Only the most renowned practitioners can even attempt such tasks.                                      |
-| Nearly Impossible | Transcending the material world entirely or unraveling the secrets of the Demiurge's creation to rewrite the cosmic order. These acts shape the course of history.                                                 |
-| Godly             | Reshaping reality itself or merging with the cosmic source to become one with the divine. They are the epitome of Gnostic magical power, beyond the comprehension of ordinary beings.                              |
-{: .well .table .table-striped }
-
-
-#### Chaos Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Chaos.webp"><img src="https://tedt.org/img/skills/vertical/Chaos.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
-</figure>
-</div>
-
-In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
-
-As you delve deeper into Chaos mysticism, you discover the art of sigilization—an empowering technique where you create symbols representing your desires and charge them with focused will and energy. By letting go of attachment to specific outcomes, you gain the ability to adapt and thrive amidst uncertainty. Laughter and playfulness become integral aspects of your practice, breaking patterns of seriousness and fostering profound transformations.
-
-In the realm of Chaos magic, paradoxes and contradictions hold beauty and harmony. You understand that chaos and order, creation and destruction, are not opposing forces but essential parts of the cosmic dance. Embracing the unknown becomes a source of strength as you navigate the ever-changing currents of existence. You become the weaver of possibilities, the dancer of chaos, and the shaper of your own reality. Through this transformative journey, you experience the profound joy of exploring the boundless realms of consciousness.
-
-##### Unique Chaos Magical Spells
-
-- **Flux Bolt:** A chaotic projectile that manifests in various forms with each casting. It could be a fiery bolt, an icy shard, or a lightning strike, depending on the current state of the chaotic energies.
-- **Reality Ripple:** This spell causes ripples in the fabric of reality, distorting the perception of time and space in the area, creating confusion and disorientation among enemies.
-- **Shifting Shadows:** Manipulate shadows to create illusory forms or to merge with them, granting temporary invisibility or the ability to move through walls and obstacles.
-- **Chaotic Fusion:** Merge multiple elements or energies into a swirling vortex, releasing a devastating blast of combined power, the result of which is never the same twice.
-- **Paradoxical Mirror:** Create a mirror that reflects the intentions of attackers back upon themselves, causing them to experience the effects of their own spells or attacks.
-- **Sigil of Serendipity:** Draw a powerful sigil that brings good fortune and unexpected opportunities to the caster and their allies, turning potential misfortune into advantageous outcomes.
-- **Humorous Hex:** Cast a spell that causes uncontrollable fits of laughter in the target, incapacitating them with mirth and reducing their ability to focus or take actions.
-- **Chaos Labyrinth:** Summon an ever-changing maze filled with illusions and challenges. The maze shifts and reshapes continuously, making it difficult for intruders to find their way through.
-- **Quantum Blink:** Perform short-range teleportation, but the destination is randomly determined, making it a daring and unpredictable escape or attack maneuver.
-- **Reality Whirlpool:** Summon a swirling vortex of chaotic energies that disrupts magical spells and causes disturbances in the surrounding environment.
-- **Ephemeral Euphony:** Create a harmonious melody or dissonant cacophony, imbued with chaotic energy. The sound can either heal or induce confusion and madness in those who hear it.
-- **Serendipitous Surge:** Channel a surge of magical energy that grants temporary enhancements to the caster's abilities, but the specific enhancements vary with each casting.
-
-Remember, these spells reflect the unpredictable and ever-changing nature of Chaos magic. Each time they are cast, their effects might differ slightly, adding an element of surprise and wonder to the practitioner's magical repertoire.
-
-##### Chaos Archtypes
-
-|                Archetype |                 Example                 | Example Description                                                                                    | Archetype Description                                                                                                                                                                                                                                                       |
-|-------------------------:|:---------------------------------------:|:-------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            The Trickster |         Loki (Norse Mythology)          | A god known for his cunning, deceit, and mischief, often challenging the gods and manipulating events. | This archetype is mischievous, unpredictable, and thrives on playing tricks and bending reality. They embody the essence of Chaos, using their unpredictable nature to challenge authority, disrupt order, and bring about unexpected change.                               |
-|         The Shapeshifter |            Mystique (X-Men)             | A mutant who can change her appearance at will, adapting to various situations.                        | Drawing upon the ever-changing nature of Chaos, this character can transform their appearance, abilities, and even identity at will. They navigate through life as a chameleon, adapting to different situations and embracing the flux of existence.                       |
-|        The Wild Sorcerer |       Howl (Howl's Moving Castle)       | A wizard whose spells are powerful but often have unpredictable outcomes.                              | This character is a conduit of raw magical power, with spells and abilities that are never the same twice. Their magic is untamed, with unpredictable consequences, making them both a force to be reckoned with and a potential source of chaos in any story.              |
-|      The Symbolic Weaver |      John Constantine (Hellblazer)      | A magician who uses sigils and symbols to manipulate reality and achieve his goals.                    | Representing the sigilization aspect of Chaos magic, this character can manipulate symbols and beliefs to manifest their desires. They draw power from the interconnected web of reality and can reshape the world through their understanding of the underlying symbolism. |
-|     The Paradox Embracer |            Zhuangzi (Taoism)            | A Taoist philosopher who embraced paradoxes and contradictions, teaching the unity within opposites.   | This archetype navigates the complexities of existence with ease, embracing contradictory aspects of life and harmonizing opposites. They possess wisdom beyond conventional understanding, seeing unity within chaos and finding balance in apparent discord.              |
-|       The Reality Bender |            Neo (The Matrix)             | A character who can bend the rules of the Matrix, altering reality within the simulated world.         | These characters can bend and warp reality itself, making the impossible possible. Their mastery of Chaos magic allows them to alter the fabric of existence, defying conventional laws and creating awe-inspiring feats of magic.                                          |
-| The Intuitive Instigator | Jack Sparrow (Pirates of the Caribbean) | Relies on instinct and intuition to navigate complex situations, often causing and resolving chaos.    | This character relies on instinct and intuition, channeling the chaotic flow of the universe to make impactful decisions and drive change. They have a natural talent for reading the currents of fate and influencing events in subtle yet profound ways.                  |
-|  The Unconventional Hero |           V (V for Vendetta)            | A masked vigilante who uses unconventional methods to fight against a totalitarian regime.             | Often an antihero, this archetype embraces the unconventional and unorthodox methods to confront challenges. They reject traditional norms and expectations, using Chaos magic to forge their path and challenge the status quo.                                            |
-|      The Laughing Mystic |         Alan Watts (Real Life)          | A philosopher who used humor to convey complex spiritual and existential ideas.                        | This character finds spiritual enlightenment through humor and laughter, recognizing the absurdity of existence and embracing the transformative power of joy. They use laughter as a magical tool, breaking down barriers and revealing hidden truths.                     |
-{: .well .table .table-striped }
-
-
-Here's a table describing tasks someone from the Choas magical practice might do for each difficulty level:
-
-| Difficulty        | Description                                                                                                                                                                                                                                                                                                       |
-|:------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Manifesting simple, harmless illusions or generating a brief, fleeting burst of elemental energy that has no significant impact on the environment. Chaos practitioners effortlessly conjure minor, temporary phenomena as a natural extension of their connection to the ever-changing flow of reality.          |
-| Simple            | Causing random objects to dance or levitate chaotically for a short period or creating colorful sparks and flashes with a wave of their hand. Chaos magicians rely on a bit of luck and intuition to execute these low-level feats, embracing the whimsical and unpredictable results.                            |
-| Easy              | Shaping the weather within a limited area, causing gusts of wind or showers of rain. Chaos practitioners tap into the chaotic forces of nature, harnessing them with a minimum level of competence to perform these weather-altering tricks.                                                                      |
-| Routine           | Infusing objects with momentary life, giving a toy the appearance of moving on its own or causing a painting to shift its imagery subtly. Chaos magicians, with their natural aptitude, can easily accomplish these animated displays as part of their regular magical practice.                                  |
-| Average           | Creating temporary portals between nearby locations or altering the colors and patterns of their clothing at will. Chaos practitioners, with exposure to their magical skills, achieve these more intricate feats, showcasing their inherent talent and honed abilities.                                          |
-| Difficult         | Summoning and conversing with minor chaotic spirits or entities, requiring some specialized training and skill to bridge the gap between worlds. Chaos magicians demonstrate their expertise in handling unpredictable entities and channeling their energies through practice.                                   |
-| Very Difficult    | Merging their consciousness temporarily with the swirling chaos of the universe, gaining glimpses of possible future events or past occurrences. Chaos practitioners attempt to navigate the turbulent tides of fate, relying on specialized training to interpret the visions they receive.                      |
-| Formidable        | Creating a chaotic field that disrupts the laws of probability, making it difficult for opponents to predict movements or outcomes during a battle. Chaos magicians exhibit their exceptional talents by bending chance to their advantage with this potent and formidable spell.                                 |
-| Heroic            | Taming and commanding a powerful chaos beast or entity, something that even the most skilled individuals would struggle to control. Chaos practitioners, the true masters of their art, undertake this once-in-a-lifetime feat with assistance, leaving a legacy of legendary tales behind.                       |
-| Nearly Impossible | Weaving a tapestry of chaotic energy that temporarily reshapes reality within a limited area, creating a surreal and mesmerizing dreamscape. Chaos magicians perform this epic feat, leaving an unforgettable mark in history books as the named masters of their magical craft.                                  |
-| Godly             | Infusing themselves with the pure essence of Chaos, transforming into a semi-divine avatar of unpredictability, capable of altering the very fabric of existence on a cosmic scale. Chaos practitioners, virtually demigods in their abilities, achieve this godly status with exceptional talent and assistance. |
-{: .well .table .table-striped }
-
-
-### Faith Characteristics
-
-You will find that the domain of Faith is divided into three branches of exploration: Theurgy, Physical Adapt, and Order.
-
-Embracing Theurgy, you place your faith in divine beings and higher powers. You find strength in rituals, invocations, and prayers, channeling the energy of the divine to shape reality. Your faith enables you to connect with cosmic forces and tap into spiritual realms, seeking blessings and divine intervention.
-
-On the other hand, Physical Adaptation relies on your faith in the body's inherent connection to magic. Through disciplined training and honed skills, you adapt yourself to magical energies, becoming a conduit for their manifestation. Your faith in the body's resilience and adaptability fuels your magical prowess, blurring the lines between physical and mystical abilities.
-
-In the realm of Order, your faith lies in structured systems and cosmic balance. You believe in the harmony and equilibrium of the universe, and through precise rituals and adherence to cosmic laws, you seek to maintain that order. Your faith grants you the ability to wield powerful forces, maintaining stability and influencing the natural flow of events.
-
-#### Spells Unique to Faith
-
-- **Divine Blessing:** Channel the power of celestial beings to bestow blessings upon yourself or others, enhancing abilities and providing protection.
-- **Ancestral Guidance:** Commune with your ancestors' spirits, seeking guidance and wisdom from the past.
-- **Mystic Convocation:** Conduct elaborate rituals to gather divine energies, empowering you and those around you with enhanced magical abilities.
-- **Nature's Call:** Invoke the spirits of nature to aid in healing, restoration, and nurturing of the environment.
-- **Cosmic Balance:** Align the cosmic forces to restore harmony and equilibrium in any situation or location.
-- **Celestial Shield:** Create a protective barrier infused with divine energy, guarding against malevolent forces and harmful magic.
-- **Sacred Oath:** Form a sacred pact with a higher power, granting you temporary access to specific divine abilities or insights.
-- **Cleansing Purge:** Cleanse a person or place from malevolent energies or curses, restoring purity and balance.
-- **Guiding Light:** Summon a radiant aura that illuminates the path ahead, guiding you and your allies through darkness or confusion.
-- **Empathic Aura:** Project an empathic aura to soothe emotions, promote understanding, and foster unity among individuals.
-- **Spiritual Resonance:** Harmonize with the spiritual essence of living beings, allowing you to understand their emotions and intentions.
-- **Karmic Justice:** Invoke the principle of karma to bring balance and justice to a situation, causing the repercussions of actions to unfold accordingly.
-- **Astral Projection:** Project your consciousness into the astral plane, exploring distant realms or communicating with celestial entities.
-- **Divine Intervention:** Call upon higher powers in times of dire need, allowing them to intervene and alter the course of events.
-- **Harmony's Embrace:** Generate a tranquil aura that pacifies conflicts and fosters cooperation among individuals or groups.
-
-These spells draw upon your unwavering faith and connection to higher forces, granting you unique abilities that set you apart from other magical backgrounds. As a practitioner of Faith magic, you wield divine energies to bring healing, protection, guidance, and balance to the world around you.
-
-#### Theurgy Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Theurgy.webp"><img src="https://tedt.org/img/skills/vertical/Theurgy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
-</figure>
-</div>
-
-In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
-
-As you progress, you confront your ego and strive for inner purity, understanding that to commune with the divine, you must embody virtues like compassion and wisdom. Theurgy reveals the interconnectedness of all things, inspiring you to see the sacred in the ordinary and the harmony in nature and the cosmos. This newfound awareness fills you with awe and reverence for the world.
-
-Your magical journey becomes an expression of your soul, a reflection of your yearnings for unity with the divine. Theurgy is not about gaining power but about living in harmony with the cosmic order, acting as a channel for divine grace, and embodying wisdom and love in your life. As you continue to embrace Theurgy, it becomes a lifelong pursuit, enriching every aspect of your existence and deepening your connection to the mysteries of the heart.
-
-##### Unique Theurgy Magical Spells
-
-- **Celestial Communion:** This spell allows the caster to establish a direct communication link with a celestial entity or a deity, seeking guidance, wisdom, or divine blessings. The caster must demonstrate profound respect and sincerity to establish and maintain this connection.
-- **Arcane Equilibrium:** This spell enables the Theurgist to restore balance to a chaotic situation. It can pacify raging storms, quell violent conflicts, or stabilize unruly magical energies, aligning them with the cosmic order.
-- **Veil of Sanctity:** The caster weaves a protective shield of divine energy that shields an area or individual from malevolent forces and dark influences. This veil repels negative entities and grants temporary immunity to harmful magical effects.
-- **Healing Resonance:** The Theurgic Healer channels celestial energies to accelerate the natural healing processes within a person, mending wounds and curing ailments beyond ordinary means. This spell also offers solace and peace to the afflicted.
-- **Symbol of Truth:** This spell imbues a sacred symbol or sigil with divine truth, revealing hidden secrets, illusions, and deceit. The symbol's presence can expose lies and dispel illusions, making it a potent tool for discovering the truth.
-- **Transcendent Empowerment:** The Ascendant Seeker can tap into their inner spiritual potential to temporarily enhance their magical abilities, granting them a surge of power and insight for a short duration.
-- **Astral Projection:** The Theurgy practitioner can send their consciousness beyond the physical realm, exploring other planes of existence, and communicating with celestial beings or ancestral spirits.
-- **Timeless Illumination:** By invoking ancient cosmic wisdom, the Arcane Scholar gains profound insights into mysteries of the universe or forgotten lore. This spell can unlock forgotten knowledge and reveal the true nature of artifacts or ancient writings.
-- **Divine Aura:** The Sacred Guardian envelops themselves or others in a luminous aura that wards off dark entities and provides protection against malevolent magical attacks.
-- **Harmonious Resonance:** This spell enables the Theurgist to resonate with the natural rhythm of the cosmos, gaining heightened intuition and foresight, allowing them to make informed decisions and navigate challenges with clarity.
-
-##### Theurgy Archtypes
-
-Certainly, here's the table with examples for each Theurgy archetype, along with their descriptions and example descriptions:
-
-|   Archetype |                       Example                        | Example Description                                                                                                                  | Archetype Description                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|------------:|:----------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The Prophet |                   Moses (Biblical)                   | Led the Israelites out of Egypt and received the Ten Commandments from God.                                                          | This archetype is a master of Theurgy, possessing the ability to connect with higher beings or deities to channel their powers and wisdom. They serve as intermediaries between the mortal world and the divine realms, acting as vessels for divine energy and guidance. The Prophet often grapples with the weight of this responsibility, as they must maintain their inner purity and moral integrity to commune with the divine successfully. |
-|  The Mystic |              Merlin (Arthurian Legend)               | A wise and enigmatic wizard who guided King Arthur and imparted profound teachings.                                                  | This character is deeply steeped in the knowledge and philosophy of Theurgy, understanding the intricate symbols, rituals, and cosmic forces. The Mystic is a wise and enigmatic figure who imparts profound teachings and insights to others. They may guide heroes on their quests, decipher cryptic prophecies, and uncover hidden truths that shape the course of the story.                                                                   |
-| The Paladin |               Joan of Arc (Historical)               | A young woman who claimed divine guidance and led the French army to several important victories.                                    | This archetype embodies the protective aspect of Theurgy. They are skilled in using magical rituals to create wards, shields, and barriers that safeguard people and places from malevolent forces. The Paladin often dedicates themselves to defending sacred sites, temples, or ancient artifacts that hold immense power.                                                                                                                       |
-|  The Healer |             Asclepius (Greek Mythology)              | A god of medicine and healing, known for his exceptional abilities to cure ailments.                                                 | This character possesses exceptional healing abilities, drawing on Theurgy to mend wounds, cure ailments, and restore vitality. The Healer is compassionate and altruistic, using their powers to aid others and alleviate suffering. Their presence in a story can add a sense of hope and renewal, especially in times of adversity.                                                                                                             |
-| The Scholar |              Thoth (Egyptian Mythology)              | A god of wisdom, writing, and magic, credited with the creation of sacred texts.                                                     | This archetype represents a character who tirelessly studies the ancient texts and mystical arts of Theurgy. They may be motivated by a thirst for knowledge, seeking to unlock the secrets of the universe or to unravel the mysteries of long-forgotten civilizations. The Scholar's expertise can be a valuable resource for protagonists seeking to understand or counter magical threats.                                                     |
-|   The Judge |              Ma'at (Egyptian Mythology)              | A goddess of truth, justice, and balance, who weighed the souls of the dead against a feather.                                       | This character is devoted to preserving the balance between opposing cosmic forces, recognizing that Theurgy's power can disrupt the harmony of the universe if misused. They may be tasked with preventing the rise of dark entities or restoring equilibrium when chaos threatens to overwhelm the world.                                                                                                                                        |
-| The Pilgrim | Dante Alighieri (Fictional from "The Divine Comedy") | The character Dante embarks on a spiritual journey through Hell, Purgatory, and Heaven to find God and gain spiritual enlightenment. | This archetype embarks on a personal journey of spiritual transformation through Theurgy. They strive to elevate their consciousness, ascend to higher planes of existence, and transcend the limitations of the mortal realm. The Pilgrim's quest for enlightenment can lead to profound revelations and pivotal moments in the story.                                                                                                            |
-{: .well .table .table-striped }
-
-
-These unique Theurgy spells showcase the character's special connection to the divine and their ability to harness celestial energies for various purposes. Each spell reflects the deeper themes of spiritual growth, cosmic balance, and the quest for enlightenment that are inherent in Theurgy.
-
-|    Difficulty     | Theurgy                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      Trivial      | Casting a simple protective charm on oneself or others.                                                                                                                                                                                                                                                                                                                                                                    |
-|      Simple       | Using Theurgy to heal minor injuries or illnesses.                                                                                                                                                                                                                                                                                                                                                                         |
-|       Easy        | Communing with a minor celestial being for guidance on a mundane matter.                                                                                                                                                                                                                                                                                                                                                   |
-|      Routine      | Creating a temporary ward to protect a small area from malevolent spirits.                                                                                                                                                                                                                                                                                                                                                 |
-|      Average      | Successfully invoking a sacred symbol to reveal hidden truths or break illusions.                                                                                                                                                                                                                                                                                                                                          |
-|     Difficult     | Channeling the power of a celestial entity to dispel a powerful curse from a person or place.                                                                                                                                                                                                                                                                                                                              |
-|  Very Difficult   | Establishing a communication link with a deity to request their direct intervention in a major crisis or conflict.                                                                                                                                                                                                                                                                                                         |
-|    Formidable     | Crafting a potent artifact infused with celestial energy to aid in a significant quest or battle.                                                                                                                                                                                                                                                                                                                          |
-|      Heroic       | Merging the powers of multiple Theurgy practitioners to perform a grand ritual that alters the course of a war or prevents a catastrophe on a global scale.                                                                                                                                                                                                                                                                |
-| Nearly Impossible | Ascending to a higher plane of existence temporarily to gain profound insights and wisdom from celestial beings.                                                                                                                                                                                                                                                                                                           |
-|       Godly       | Collaborating with a council of deities and celestial forces to reshape the fundamental fabric of the universe, altering the laws of nature itself. This feat would be considered a turning point in the history of creation, involving tremendous sacrifice and an unparalleled level of mastery over Theurgy. Only a character with demigod-like abilities or the direct blessing of divinity could attempt such a task. |
-{: .well .table .table-striped }
-
-
-#### Adept Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Adept.webp"><img src="https://tedt.org/img/skills/vertical/Adept.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
-</figure>
-</div>
-
-You awaken your inner essence, becoming an Adept, a master of magic and mysticism. Your body and mind harmoniously blend, allowing you to perform superhuman feats through the manipulation of vital energy within your body known as "Chi" or "Qi." This connection between mind and muscle enables you to push your physical limits and perceive the world differently, spotting subtle energies invisible to others.
-
-As an Adept, you discover your role as a conduit for the universal energy flowing through all living things. Through meditation and focus, you can heal, protect, and unleash powerful forces upon your foes. However, you understand that true mastery lies in finding balance between the physical and spiritual aspects of yourself. Embracing inner harmony and discipline allows you to connect with the deeper currents of the universe, becoming one with the essence of the world.
-
-Your journey as an Adept is one of self-discovery and self-mastery. By continuously pushing your own boundaries and aligning with the greater forces at play, you embrace the wisdom of ages and become a guardian of balance. Let the quest to unlock your full magical potential guide you as you walk this path, always remembering that true power lies not in domination but in alignment with the greater mysteries of existence.
-
-##### Unique Adept Magical Spells
-
-- **Chi-Enhanced Strike:** Infuse your physical attacks with raw mystical energy, allowing your strikes to carry an extra punch. Your blows become charged with Chi, granting them the ability to bypass certain defenses or even disrupt magical barriers.
-- **Ethereal Step:** Temporarily phase out of the physical plane, becoming intangible for a short period. This spell grants you the ability to avoid physical attacks, pass through obstacles, or move swiftly through difficult terrain.
-- **Vital Energy Channeling:** Harness the life force within your body to heal wounds and rejuvenate yourself or others. By channeling your Chi into others, you can aid in their recovery from injuries or illnesses.
-- **Elemental Fusion:** Merge your mastery of physicality with the elements. Combine your attacks with elemental forces like fire, ice, or lightning to unleash devastating strikes that leave a lasting impact on your opponents.
-- **Nature's Embrace:** Form an empathic connection with the natural world, allowing you to communicate with animals and plants. This spell grants you insights into the environment, helping you navigate and gather valuable information.
-- **Mystic Resilience:** Temporarily fortify your body with mystical energy, granting you enhanced resilience and endurance. This spell can make you temporarily resistant to physical harm or the effects of other magical spells.
-- **Flowing Harmony:** Enter a state of perfect balance and harmony, where your physical and mystical energies synchronize seamlessly. In this state, your movements become graceful, and you can effortlessly evade attacks or perform complex maneuvers.
-- **Shadow Blend:** Merge with the shadows, becoming nearly invisible in dim light or darkness. This spell allows you to move stealthily and remain undetected by most forms of visual detection.
-- **Energy Infusion:** Imbue weapons or objects with your Chi, enhancing their properties. You can turn a simple weapon into a powerful magical tool or temporarily empower objects for specific purposes.
-- **Elemental Transmutation:** Convert one element into another by manipulating its atomic structure. This unique spell allows you to transform elements, providing diverse tactical options in various situations.
-
-##### Adept Archtypes
-
-|           Archetype |                   Example                    | Example Description                                                                                                                                                                           | Archetype Description                                                                                                                                                                                                                                                                                                                                        |
-|--------------------:|:--------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  The Martial Mystic |    Aang from "Avatar: The Last Airbender"    | Aang is a master of all four elements and uses his spiritual connection to enhance his physical abilities. He often relies on his disciplined mind and inner energy to outmaneuver opponents. | This archetype embodies the perfect fusion of physical prowess and mystical powers. They are formidable warriors who can channel their inner energy to enhance their combat abilities significantly.                                                                                                                                                         |
-|   Nature's Guardian |      Radagast (Fiction - "The Hobbit")       | Radagast the Brown is a wizard in J.R.R. Tolkien's Middle-earth who has a deep connection with animals and plants. He uses his powers to protect nature and its creatures.                    | These Adepts draw their magical powers from the natural world, becoming protectors of the environment and its inhabitants. They can communicate with animals, manipulate plant life, and control the elements to safeguard the balance of nature.                                                                                                            |
-|  The Healer Warrior |            Tsunade from "Naruto"             | Tsunade is a ninja and one of the legendary Sannin. She uses her chakra (akin to Chi) to perform medical ninjutsu, healing herself and others during battle.                                  | This archetype is the epitome of balance and compassion. They possess extraordinary healing abilities, using their skills to mend wounds and cure ailments. When faced with conflict, they are formidable combatants, but their primary goal is always to protect and preserve life.                                                                         |
-|  The Wandering Sage |            Jiraiya from "Naruto"             | Jiraiya is a wise and powerful ninja who roams the world seeking knowledge and enlightenment. He serves as a mentor to Naruto and others, guiding them on their quests.                       | This archetype is a wise and mysterious figure who roams the world, seeking enlightenment. They have a deep understanding of the mystical arts and often serve as mentors to other characters on their journeys. Their physical abilities and prowess are a testament to their years of training and self-discovery.                                         |
-| The Hidden Assassin | Ezio Auditore (Fiction - "Assassin's Creed") | Ezio Auditore is a master assassin who blends physical agility with various tools and techniques. He operates in the shadows and strikes with deadly precision.                               | This archetype operates in the shadows, blending martial prowess with magical abilities to become a deadly force. They may possess powers of invisibility, heightened agility, and the ability to strike with deadly precision. These characters are often mysterious and enigmatic, using their skills to achieve their objectives without leaving a trace. |
-{: .well .table .table-striped }
-
-
-Remember that as a Physical Adept, your spells revolve around maintaining harmony and balance between the physical and mystical aspects of yourself. Each spell reflects your connection to the world and your unique ability to blend magic and martial prowess seamlessly.
-
-|    Difficulty     | Adept                                                                                                                                                                                                                                                                  |
-|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      Trivial      | Channeling your Chi to perform a simple physical feat that requires little effort, such as breaking a thin wooden board or catching a light object in mid-air.                                                                                                         |
-|      Simple       | Using your mystical agility and reflexes, attempt to dodge a single incoming projectile or perform a series of acrobatic maneuvers to navigate through an obstacle course.                                                                                             |
-|       Easy        | Infusing your weapon with elemental energy to enhance its striking power, allowing you to cut through soft materials like cloth or vines with ease.                                                                                                                    |
-|      Routine      | Healing minor wounds or alleviating physical fatigue for yourself or an ally by channeling your life force into their body to promote natural healing.                                                                                                                 |
-|      Average      | Utilizing your knowledge of nature and mystical intuition, communicate with a friendly animal and request their assistance in a simple task, such as fetching an item or scouting an area.                                                                             |
-|     Difficult     | Using your advanced combat training and mystical energy, attempt to overpower a skilled opponent in hand-to-hand combat, taking advantage of their weaknesses while maintaining your own defense.                                                                      |
-|  Very Difficult   | Manipulating the elements on a grand scale, create a powerful barrier to shield a group of allies from a devastating magical attack or natural disaster.                                                                                                               |
-|    Formidable     | Mastering the art of invisibility and illusion, create an entire illusory environment to confound and mislead a group of adversaries, making it seem like you and your allies have vanished or multiplied.                                                             |
-|      Heroic       | Performing a feat of physical and mystical prowess that pushes the boundaries of what is humanly possible, like evading a hail of projectiles while simultaneously launching a series of devastating elemental attacks.                                                |
-| Nearly Impossible | Channeling the full extent of your Chi and mystical potential, create a massive barrier to protect an entire city from a catastrophic event, like an erupting volcano or a meteor shower, while maintaining its integrity for an extended period.                      |
-|       Godly       | Merging your physical and mystical form into a colossal ethereal avatar, capable of single-handedly fending off an army of foes or reshaping the terrain around you. This transcendent form is temporary, requiring immense focus and harmonization with the universe. |
-{: .well .table .table-striped }
-
-
-As a Physical Adept, you are the embodiment of physical mastery and mystical insight, capable of achieving extraordinary feats that blur the line between reality and mysticism. Each task you undertake showcases your unique connection to the physical and mystical worlds, highlighting your ability to harmonize these two aspects of yourself to achieve greatness.
-
-#### Order Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Order.webp"><img src="https://tedt.org/img/skills/vertical/Order.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
-</figure>
-</div>
-
-In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
-
-With mastery over the forces of nature, you manipulate energies to bring about specific outcomes. Whether it's crafting protective wards, commanding elemental forces, or unraveling ancient texts, you approach each task with intellect and unwavering focus. Your spells are reliable and potent, a testament to your dedication to precision.
-
-While the pursuit of order offers great power, it also presents challenges. Adhering strictly to structure may limit your adaptability in unexpected situations. It's important to find a balance between order and flexibility, embracing spontaneity when needed. Collaborating with like-minded practitioners enhances your abilities and expands your understanding of the arcane arts.
-
-Overall, your journey in the Order branch of magic is one of constant refinement and unwavering commitment to knowledge. As you unlock the mysteries of the universe, the cosmos responds to your disciplined approach, granting you wisdom and clarity. Embrace the order, and the magic of the cosmos will reveal itself to you.
-
-##### Unique Order Magical Spells
-
-- **Chrono-script:** This spell allows the caster to create temporal runes that record events and knowledge in a structured manner. These runes can be stored in enchanted archives and accessed by others, ensuring that valuable information is never lost to the passage of time.
-- **Symphony of Elements:** By orchestrating a precise sequence of gestures and incantations, the caster can summon and harmonize the elemental forces, combining them in a powerful and controlled manner. This spell allows the caster to wield the combined might of multiple elements simultaneously.
-- **Cognitive Bind:** The caster can weave a spell that links the thoughts and knowledge of individuals within a specified area. This connection fosters understanding and cooperation among the linked minds, facilitating the exchange of ideas and strategies.
-- **Kaleidoscopic Array:** By arranging crystals in a particular geometric pattern and channeling magic through them, the caster creates a multi-faceted barrier. This enchantment refracts incoming spells and energies, breaking them down into more manageable, harmless components.
-- **Regimen of Enchanting:** This spell enables the caster to conduct an intricate enchanting ritual that imbues objects with long-lasting magical properties. The enchanted items forged through this process are highly stable and retain their powers for extended periods.
-- **Harmony's Embrace:** By invoking the essence of harmony and order, the caster can soothe conflicts and quell chaotic energies within an area. This spell restores balance and calms unrest, fostering a sense of tranquility and cooperation among those affected.
-- **Paradoxial Insight:** The caster gains the ability to briefly peer into the temporal and causal weave of events. This spell allows them to foresee potential consequences of specific actions, aiding in strategic decision-making.
-- **Architect's Resilience:** When this spell is cast, it temporarily strengthens the structural integrity of buildings and barriers, making them highly resistant to destruction and breaches. This is especially useful during sieges or when protecting vital locations.
-- **Sage's Exchange:** Through this spell, the caster can create a magical link between two locations. This allows individuals to communicate and send small objects instantaneously between the linked points, bypassing physical barriers and distances.
-- **Harmonious Panoply:** This spell enhances the caster's abilities to coordinate and synchronize with their allies during combat. It fosters a seamless collaboration, enabling them to act in perfect harmony and anticipate each other's moves.
-
-##### Order Archtypes
-
-|        Archetype |                  Example                   | Example Description                                                                                                                                                                                                                                | Archetype Description                                                                                                                                                                                                                                                                                                                                                                  |
-|-----------------:|:------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    The Archivist |         Thoth (Egyptian Mythology)         | Thoth is the Egyptian god of wisdom, writing, and magic. He is often credited with the creation of hieroglyphs and is said to possess immense knowledge of the arcane and the universe.                                                            | This archetype is the epitome of knowledge and wisdom. The Archivist dedicates their life to the preservation and study of ancient tomes, grimoires, and arcane texts. They possess a vast understanding of magical lore, and their power comes from their ability to access and interpret the accumulated wisdom of ages.                                                             |
-|    The Alchemist | Nicolas Flamel (Real-life/Various Fiction) | Nicolas Flamel is a historical figure who has been portrayed in various works of fiction as an alchemist who discovered the Philosopher's Stone, enabling him to transmute materials and achieve immortality.                                      | This character is a master of transformation and order. Through precise mixtures and meticulous processes, the Alchemist transmutes materials and harnesses the elements to create powerful potions, elixirs, and substances. Their abilities extend beyond simple potions to the manipulation of reality itself, altering matter and energy according to the rules they've uncovered. |
-|    The Artificer |        Hephaestus (Greek Mythology)        | Hephaestus is the Greek god of blacksmiths, craftsmen, and artisans. He crafted many of the gods' magical weapons and artifacts, including Zeus's thunderbolts and Hermes' winged sandals.                                                         | This archetype focuses on imbuing objects and artifacts with magical properties. The Artificer's skill lies in crafting intricate and potent enchanted items, each with specific purposes and effects. They blend creativity with systematic craftsmanship, turning mundane materials into powerful tools of Order.                                                                    |
-| The Elementalist |     Kvothe (The Kingkiller Chronicle)      | Kvothe is a gifted young man who learns the art of "Sympathy," which allows him to manipulate natural elements by creating a sympathetic link between objects. He uses this skill to control fire, wind, and other elements in various situations. | This archetype seeks to understand and control the fundamental forces of the universe. They draw power from the natural elements and aim to harmonize them in a balanced manner. Whether they manipulate fire, water, earth, or air, their spells are precise and well-coordinated, mirroring the controlled rhythms of the world's order.                                             |
-{: .well .table .table-striped }
-
-
-These spells exemplify the precise, structured, and balanced nature of Order Magic. Each spell serves a specific purpose, often involving careful planning, intricate rituals, and a deep understanding of the forces that govern the world.
-
-|    Difficulty     | Order                                                                                                                                                                                                                                                                                                |
-|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      Trivial      | Cleanse a minor magical anomaly that poses no challenge for someone skilled in Order magic.                                                                                                                                                                                                          |
-|      Simple       | Enchant a small trinket to provide basic protection against minor disruptions to the magical balance.                                                                                                                                                                                                |
-|       Easy        | Cast a warding spell to protect a limited area from chaotic disturbances, such as preventing wild magical fluctuations or repelling minor disruptive entities.                                                                                                                                       |
-|      Routine      | Construct a stable, intricate magical array to channel elemental energies efficiently, allowing for precise manipulation and control over natural forces.                                                                                                                                            |
-|      Average      | Successfully decipher a moderately complex ancient magical text, extracting valuable knowledge about the fundamental laws governing the Order branch of magic.                                                                                                                                       |
-|     Difficult     | Imbue an item with a complex and potent enchantment, requiring specialized knowledge and precision to ensure it functions as intended. For example, creating a time-keeping device that can maintain perfect synchronization with the natural flow of time.                                          |
-|  Very Difficult   | Merge and synchronize two distinct elemental forces to create a rare and powerful fusion spell, harnessing the strengths of both elements in perfect balance.                                                                                                                                        |
-|    Formidable     | Forge a grand, impenetrable barrier around an entire city to protect it from an imminent onslaught of powerful, chaotic forces. The barrier must be meticulously constructed to resist even the most overwhelming attacks, preserving the city's harmony.                                            |
-|      Heroic       | Unravel a complex and ancient magical ritual, passed down through generations, to temporarily stabilize a region ravaged by rampant chaos. The task requires unmatched expertise and collaboration with other Order mages to achieve this legendary feat.                                            |
-| Nearly Impossible | In an act of ultimate mastery, weave together the threads of time and space, temporarily freezing the progression of time in an entire realm to restore order to the chaotic world. This legendary task is the epitome of Order magic and will immortalize the mage's name in history.               |
-|       Godly       | Achieve absolute synchronization with the cosmic forces, becoming one with the fabric of reality itself. In this transcendent state, the mage temporarily attains godlike powers, bringing complete balance and harmony to the universe for a fleeting moment before returning to their mortal form. |
-{: .well .table .table-striped }
-
-
-### Mystery Characteristics
-
-Finally, you encounter the enigmatic realm of Mystery, where three paths beckon: Metaphysics, Animism, and Shamanism.
-
-In Metaphysics, your understanding of the interconnectedness of mind and matter allows you to manipulate reality through thought and focus. Your quest for truth and your exploration of consciousness grant you extraordinary psychic abilities.
-
-As an Animist, you understand that all things possess a spiritual essence. You commune with the spirits of nature and the world around you, seeing life and consciousness in everything. Your mystical journey involves a deep connection to the natural world and the ability to harness its powers through reverence and cooperation.
-
-Lastly, Shamanism leads you on a path of spiritual connection and healing. Your faith lies in the guidance of ancestral spirits and totemic beings. As you journey between the physical and spiritual realms, you serve as an intermediary, bringing wisdom, healing, and balance to your community. Your mystical experiences empower you to traverse the veil between worlds.
-
-#### Unique Magical Spells to Mystery
-
-- **Psionic Illusion:** Manipulate perceptions and create intricate illusions that blur the line between reality and imagination.
-- **Ethereal Projection:** Project your consciousness into other planes or dimensions, exploring the unseen realms.
-- **Soul Bond:** Form a temporary connection with another being, allowing you to share emotions, thoughts, and experiences.
-- **Mystic Veil:** Shroud yourself or others in an aura of secrecy, making them invisible to the mundane eye and hard to detect by magical means.
-- **Metaphysical Enigma:** Unleash a surge of metaphysical energy, disrupting the flow of magic and causing confusion among spellcasters.
-- **Dreamwalker's Journey:** Enter the dreams of individuals, influencing their subconscious or gathering information from their dreamscapes.
-- **Elemental Fusion:** Combine the power of different elements to create unique and potent elemental manifestations.
-- **Psychic Surge:** Channel psychic energy to amplify your magical abilities or temporarily enhance physical attributes.
-- **Spiritual Mending:** Heal spiritual wounds and emotional traumas, restoring balance and inner harmony.
-- **Cosmic Attunement:** Commune with cosmic entities and receive revelations or cosmic insights beyond mortal understanding.
-- **Shapeshifter's Mirage:** Temporarily alter your appearance or transform into a creature of the mystical realms.
-- **Anima Manipulation:** Harness the animating essence of life to influence the growth and behavior of plants and animals.
-- **Astral Beacon:** Create a beacon of energy that serves as a guiding point or communication hub across great distances.
-- **Temporal Shift:** Temporarily manipulate time's flow, slowing or hastening events within a limited area.
-- **Chaosweave:** Merge different magical energies to form a chaotic weave of power, unleashing unpredictable effects.
-
-These spells draw upon the mysteries of the universe, tapping into psychic abilities, manipulating ethereal energies, and exploring the realms beyond ordinary comprehension. As a practitioner of Mystery magic, you possess a unique set of skills that allow you to traverse the boundaries of reality and harness the profound forces of the unknown.
-
-#### Metaphysics Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Metaphysics.webp"><img src="https://tedt.org/img/skills/vertical/Metaphysics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
-</figure>
-</div>
-
-In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
-
-Psionics expands your horizons with a broader range of psychic phenomena. Astral projection allows you to leave your physical body, exploring different planes of existence. Remote viewing empowers you to perceive distant or hidden targets, unraveling secret information and potential future outcomes. Psychometry unlocks the ability to gain insights about objects or people by touching them, revealing their history and essence.
-
-In your pursuit of mastering Metaphysics, you realize that these abilities go beyond mere tricks. Instead, they represent a profound interplay between consciousness and reality. By honing your mind and embracing the mysteries of existence, you unlock the true potential of these extraordinary gifts, elevating your understanding of the universe and your place within it.
-
-##### Unique Metaphysical Magical Spells
-
-- **Vision of the Ancients:** This spell grants you a glimpse into the distant past, allowing you to witness historical events as if you were there, gaining valuable insights and knowledge.
-- **Thoughtweave:** With Thoughtweave, you establish a telepathic network with a group of individuals, facilitating seamless communication between them, regardless of distance.
-- **Astral Passage:** This spell enables you and others to project your consciousness beyond the physical realm, traversing various planes and dimensions to uncover hidden secrets or seek guidance.
-- **Temporal Echo:** By tapping into the flow of time, you can leave a trace of your consciousness in the past or future, allowing you to observe events unfolding in those moments and interact with them indirectly.
-- **Mindforge:** Mindforge empowers you to create and shape constructs using pure thought. These constructs can serve various purposes, from guardians and defenders to tools and companions.
-- **Divination Nexus:** This powerful spell grants you a heightened sense of precognition, allowing you to see potential outcomes and the ripple effects of your actions, aiding in decision-making.
-- **Ethereal Embrace:** With Ethereal Embrace, you temporarily merge with the surrounding environment, gaining insight into the emotions and experiences imprinted on objects or locations, providing valuable context and information.
-- **Psionic Rift:** This spell opens a temporary gateway to other planes or distant locations, enabling you to gather knowledge or transport yourself and others instantaneously.
-- **Harmonic Resonance:** Harmonic Resonance aligns the energy of the mind and body, promoting healing and restoration, and even mending psychic wounds caused by mental attacks or trauma.
-- **Foresight's Grace:** By invoking Foresight's Grace, you grant yourself or others heightened awareness, reflexes, and intuition, enhancing their abilities during critical moments.
-- **Illusion Unveiled:** With this spell, you can pierce through illusions and glamours, revealing the truth behind deceptive appearances and uncovering hidden truths.
-- **Psychokinetic Symphony:** Psychokinetic Symphony allows you to manipulate multiple objects simultaneously with incredible precision, creating intricate displays of telekinetic prowess.
-
-##### Metaphysical Archtypes
-
-|           Archetype |              Example              | Example Description                                                                                                                                                                      | Archetype Description                                                                                                                                                                                                                                                                                                    |
-|--------------------:|:---------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    The Psychic Seer |     Professor X from "X-Men"      | Charles Xavier, also known as Professor X, possesses telepathic abilities that allow him to read minds and even see potential future events. He uses these abilities to guide the X-Men. | This archetype embodies the concept of clairvoyance and precognition. They possess the ability to see into the future or perceive distant events, providing invaluable guidance to others on their journeys. Often wise and enigmatic, they navigate a path between knowing too much and preserving the balance of fate. |
-|     The Manipulator |      Jean Grey from "X-Men"       | Jean Grey is a mutant with telepathic and telekinetic abilities. She can read minds and move objects with her thoughts, making her a formidable force.                                   | Drawing from the realms of telepathy and telekinesis, this archetype wields the power to delve into minds, read thoughts, and move objects with the sheer force of their will. Their abilities can be both awe-inspiring and unnerving, making them formidable allies or adversaries in the story.                       |
-|        The Traveler |  Dr. Strange from Marvel Comics   | Dr. Stephen Strange can astral project and travel between different dimensions, gaining wisdom and forming alliances with otherworldly beings.                                           | Representing the practice of astral projection, this archetype ventures beyond the confines of the physical body to explore ethereal realms and dimensions. The Traveler often uncovers hidden knowledge and encounters beings from other planes, offering a bridge between the material and spiritual worlds.           |
-|     The Time Bender |    Hiro Nakamura from "Heroes"    | Hiro has the ability to manipulate time, including stopping it and traveling through it. He struggles with the ethical implications of changing past and future events.                  | This archetype draws inspiration from those with precognitive abilities who can see potential futures or alter the timeline itself. The Time Bender grapples with ethical dilemmas, considering the consequences of changing events or preserving the natural flow of time.                                              |
-| The Empathic Healer | Luna Lovegood from "Harry Potter" | Luna has a deep sense of empathy and understanding, providing emotional support to Harry and his friends, even though her abilities are not explicitly psychic.                          | Channeling the power of empathy and psychic healing, this archetype can mend emotional wounds and even aid in physical recovery. Their compassionate nature and nurturing abilities make them central figures in healing others' pain and trauma.                                                                        |
-|          The Oracle |   The Oracle from "The Matrix"    | The Oracle provides Neo and his companions with cryptic yet crucial guidance, helping them navigate the challenges they face against the Matrix.                                         | Possessing the gift of prophecy and divination, the Oracle serves as a mystical advisor to rulers and heroes. Their cryptic visions and enigmatic messages shape destinities and guide pivotal decisions.                                                                                                                |
-{: .well .table .table-striped }
-
-
-Remember that these spells are unique to your background in Metaphysics and reflect the deep connection you have with the mystical forces of ESP and Psionics. Each spell embodies the essence of your metaphysical knowledge, offering a distinct and awe-inspiring set of abilities in the world of magic and fantasy.
-
-Here's the table describing tasks someone from the Metaphysical magical practice of ESP and Psionics might attempt for each difficulty level:
-
-| Difficulty        | Metaphysical                                                                                                                                                                                                               |
-|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Instantly reading the surface emotions of a nearby individual without even trying, as if it were a reflexive action.                                                                                                       |
-| Simple            | Sending a brief telepathic message to a familiar recipient, relying on a basic level of focus and minimal effort.                                                                                                          |
-| Easy              | Using telekinesis to gently move a lightweight object, such as a small pebble, across a short distance.                                                                                                                    |
-| Routine           | Successfully astral projecting and exploring a nearby familiar location with ease, recalling details upon return.                                                                                                          |
-| Average           | Predicting a simple event with some accuracy, like guessing the outcome of a coin flip, based on your precognitive sense.                                                                                                  |
-| Difficult         | Establishing a telepathic connection with multiple individuals simultaneously to hold a group conversation, requiring significant mental focus and training.                                                               |
-| Very Difficult    | Performing a complex act of psychometry on an ancient artifact, uncovering detailed historical information about its origins and previous owners.                                                                          |
-| Formidable        | Telekinetically manipulating a series of objects in a choreographed dance of movements, showcasing exceptional control and finesse.                                                                                        |
-| Heroic            | Projecting your consciousness across the world to a distant, unfamiliar location, and returning with vivid details and insights from that place.                                                                           |
-| Nearly Impossible | Using astral projection to venture into the depths of an uncharted, otherworldly realm and returning with profound knowledge or a rare artifact.                                                                           |
-| Godly             | Achieving an extraordinary feat of time manipulation, briefly altering the timeline to prevent a catastrophic event or restore harmony to a torn reality, requiring the cooperation of other powerful beings or artifacts. |
-{: .well .table .table-striped }
-
-
-#### Animism Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Animism.webp"><img src="https://tedt.org/img/skills/vertical/Animism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
-</figure>
-</div>
-
-In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
-
-As an Animist, you become attuned to the rhythms of nature, sensing the whispers of the wind, the murmurs of flowing water, and the pulse of the earth. You forge deep connections with the spirits, learning to call upon their powers to aid you in various endeavors. However, you understand that this magic comes with responsibility, requiring respect and reciprocity to preserve the sanctity of the spirits' domains and maintain balance with the energies of the world.
-
-Your empathy grows, allowing you to perceive the hidden spiritual essence within others, healing their wounds and bringing harmony to their souls. Animism becomes more than just a belief system; it transforms your way of life, instilling wonder in the ordinary and fostering a sense of interconnectedness with all living beings. As an Animist, you embrace the eternal spirit flowing through everything, forever changed by the profound wisdom of this magical world.
-
-##### Unique Animism Magical Spells
-
-- **Spirit Communion:** Allows the caster to establish a strong connection with the spirits of nature, gaining insights, wisdom, and guidance from them. This spell helps the caster commune with specific spirits or receive messages from the collective consciousness of the natural world.
-- **Elemental Embodiment:** Temporarily transforms the caster into a physical manifestation of one of the four elements (earth, water, air, fire). While in this form, the caster gains elemental abilities and characteristics, such as earth manipulation, water breathing, wind flight, or fire resistance.
-- **Nature's Embrace:** Envelops the caster or a target in a protective aura formed from the essence of nature. This shield grants resistance against elemental attacks and negative energy, offering a temporary sanctuary from harm.
-- **Spiritual Healing:** A potent healing spell that not only restores physical wounds but also mends the spiritual and emotional well-being of the recipient. The spell draws upon the life force of the surrounding environment to aid in the healing process.
-- **Wild Shape:** Allows the caster to temporarily transform into an animal of their choosing. While in animal form, the caster gains the abilities and instincts of the chosen creature, granting them unique advantages in exploration and combat.
-- **Harmony's Call:** Enables the caster to harmonize the energies of living beings in a specific area, quelling conflicts and calming aggressive tendencies. This spell fosters empathy and understanding, promoting peace among both humans and creatures.
-- **Animate Nature:** Breathes life into inanimate objects, briefly imbuing them with the essence of nature. These animated objects can assist the caster or perform simple tasks, such as carrying items or providing distraction in battle.
-- **Soothing Whispers:** Uses the gentle whispers of nature spirits to soothe and pacify aggressive creatures or individuals. The spell induces a calming effect, reducing hostility and making it easier to negotiate or escape potentially dangerous situations.
-- **Ancestral Guidance:** Calls upon the wisdom and knowledge of the caster's ancestors, providing valuable insights or ancient techniques to aid in solving problems or overcoming challenges.
-- **Spiritual Nexus:** Creates a sacred space that acts as a gateway between the physical and spiritual realms. This nexus enhances the caster's magical abilities, increases their connection to the spirits, and facilitates more profound and powerful spellcasting.
-
-##### Animism Archtypes
-
-|            Archetype |                          Example                           | Example Description                                                                                                                                                     | Archetype Description                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------:|:----------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     Spirit Whisperer |           Pocahontas from Disney's "Pocahontas"            | Pocahontas can communicate with the spirits of nature, including the wind and animals. She serves as a guide and mediator between her people and the English settlers.  | The Spirit Whisperer is a master communicator with the spirits of nature. They can hear the whispers of the wind, converse with animals, and commune with the ancient spirits residing in trees, rivers, and mountains. Through their bond with these ethereal entities, they gain insights into the past, present, and potential future, making them invaluable guides and advisors.             |
-|     Elemental Shaper |           Aang from "Avatar: The Last Airbender"           | Aang is the Avatar, capable of bending all four elements: earth, water, air, and fire. He uses these abilities to protect his friends and restore balance to the world. | The Elemental Shaper possesses the rare ability to manipulate the fundamental forces of nature - earth, water, air, and fire. They can command the elements to create protective barriers, summon powerful storms, shape landscapes, and extinguish raging fires. Their mastery over the elements allows them to both defend their allies and unleash devastating attacks upon their foes.        |
-|        Nature Healer |                 Radagast from "The Hobbit"                 | Radagast the Brown is a wizard who has a deep connection with animals and plants. He uses his magical abilities to heal and protect the creatures of the forest.        | The Nature Healer is an archetype gifted with the power to heal wounds and ailments, not just on a physical level but also on a spiritual and emotional one. They draw upon the life force present in plants, rivers, and animals to mend broken spirits and restore balance to troubled souls. Their touch brings forth rejuvenation and renewal to both individuals and the natural world.      |
-|         Shapeshifter |        Lyra Silvertongue from "His Dark Materials"         | Lyra has the ability to change the form of her daemon, Pantalaimon, into various animals, each offering different abilities and insights.                               | The Shapeshifter is a mystical being who can transform into various animals or even merge partially with the spirits of nature. Through this ability, they gain unique traits and strengths from different creatures, granting them incredible versatility in navigating through diverse challenges. They can become the swift wolf, the wise owl, or the elusive fox, adapting to any situation. |
-| Guardian of the Wild | Princess Mononoke from Studio Ghibli's "Princess Mononoke" | Ashitaka, also known as Princess Mononoke, is a fierce protector of the forest and its spirits. She fights against human encroachment that threatens the natural world. | The Guardian of the Wild is a fierce protector of the natural order. They defend the sacred sites, creatures, and ancient spirits from external threats, often serving as a bridge between the physical and spiritual realms. With an unyielding determination, they safeguard the balance of life, using their powers to deter those who would harm the natural world.                           |
-|  Ancestral Channeler |           T'Challa from Marvel's "Black Panther"           | T'Challa, the Black Panther, can communicate with the spirits of his ancestors for guidance and wisdom, especially when he visits the ancestral plane.                  | The Ancestral Channeler is deeply connected to the spirits of their ancestors, drawing upon their wisdom and experiences. Through rituals and meditation, they communicate with their forebears, seeking guidance and ancestral knowledge that spans generations. This connection empowers them with ancient insights, offering a unique perspective in facing contemporary challenges.           |
-|       Communal Weave |           Steven Universe from "Steven Universe"           | Steven has the ability to empathetically connect people through his powers, resolving conflicts and fostering understanding among diverse groups.                       | The Communal Weave is a rare archetype that embodies the unity and interconnectedness of all beings. They possess the ability to link individuals together, fostering empathy and understanding among communities. Their magic helps heal divisions, reconcile conflicts, and promote harmony between different groups, reminding others of the essential oneness of all life.                    |
-{: .well .table .table-striped }
-
-
-These unique spells embody the essence of Animism Magic, offering a profound connection with nature, a deep understanding of the spirits, and the ability to influence the world through the spiritual essence that permeates all things.
-
-Here's a table describing a task someone from Animism would attempt to do for each difficulty level:
-
-| Difficulty        | Animism                                                                                                                                                                                                                                                                                            |
-|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Communicating with a friendly forest creature to help you find a particular plant or ingredient.                                                                                                                                                                                                   |
-| Simple            | Creating a small protective barrier of elemental energy around a campsite to ward off minor natural disturbances or wild animals.                                                                                                                                                                  |
-| Easy              | Healing a minor wound or ailment by drawing on the life force of nearby plants and natural energies to aid the recovery process.                                                                                                                                                                   |
-| Routine           | Shape-shifting into a common animal like a wolf or bird for a short period to explore a distant location or gather information from the wilderness.                                                                                                                                                |
-| Average           | Performing a ritual to establish a temporary connection with the spirits of a specific location, gaining insights into its history and potential hidden resources.                                                                                                                                 |
-| Difficult         | Transforming into an ethereal form, allowing the caster to traverse through obstacles or explore a mystical realm inaccessible to the physical body.                                                                                                                                               |
-| Very Difficult    | Merging with the spirit of a great tree or powerful natural entity to gain immense knowledge and wisdom, but requiring utmost concentration and energy control.                                                                                                                                    |
-| Formidable        | Coordinating with a circle of skilled Animists to summon a powerful elemental storm that can cleanse a corrupted forest and restore it to its natural state.                                                                                                                                       |
-| Heroic            | Engaging in a spiritual battle with a malevolent ancient spirit threatening to unleash havoc on the world, requiring the combined efforts of the most skilled Animists and assistance from benevolent deities to subdue the malevolence.                                                           |
-| Nearly Impossible | Attempting to commune with the ancient spirits of a long-lost civilization that holds the key to unlocking powerful secrets of the universe, requiring a group of legendary Animists to channel their collective energies and focus to maintain the connection.                                    |
-| Godly             | Channeling the essence of an ancient celestial being to halt a catastrophic natural disaster like a world-ending comet, necessitating a convergence of numerous Animists in a rare celestial event, and even then, the outcome remains uncertain, requiring the highest aid from celestial beings. |
-{: .well .table .table-striped }
-
-
-#### Shamanism Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Shamanism.webp"><img src="https://tedt.org/img/skills/vertical/Shamanism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
-</figure>
-</div>
-
-Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
-
-In Shamanism, you enter altered states of consciousness through various methods like meditation, drumming, or dancing. In these trance-like states, you can traverse the ethereal plane to seek guidance, healing, and answers. As you develop your abilities, you become a spiritual leader, offering counsel and mediating conflicts between individuals and spirits.
-
-The practice of Shamanism requires a profound sense of humility and respect for the spirits and the natural world. You embrace the responsibility of maintaining harmony with the ecosystem and fostering reverence for the interconnected web of life. Your role as a shaman is that of a guardian, a healer, and a spiritual guide, guided by the ethereal forces that shape the cosmos.
-
-##### Unique Shamanism Magical Spells
-
-- **Spirit Communion:** Allows the shaman to communicate with spirits of nature, ancestors, or animals, seeking guidance or information.
-- **Elemental Embodiment:** Temporarily merges with an element (earth, water, fire, or air) to gain its properties and abilities, such as becoming impervious to fire or controlling water.
-- **Ancestral Vision:** Enables the shaman to experience visions or memories from their ancestors, gaining insights and knowledge from past generations.
-- **Nature's Embrace:** Calls upon the power of the natural world to heal wounds, cure diseases, or revitalize living beings.
-- **Soul Retrieval:** Travels into the spirit realm to find and restore lost or fragmented parts of someone's soul, promoting healing and wholeness.
-- **Spiritual Warding:** Creates a protective barrier against malevolent spirits or negative energies, safeguarding a person or location.
-- **Dance of the Northern Lights:** A mesmerizing ritual dance that can evoke the aurora borealis, influencing luck, prosperity, and fortune.
-- **Plant Speak:** Allows the shaman to understand the language of plants, receiving messages or information from the flora around them.
-- **Eclipse's Gaze:** During a solar or lunar eclipse, the shaman gains heightened powers, accessing unique abilities and knowledge.
-- **Familiar Bond:** Forms a deep bond with an animal spirit, summoning the spirit to assist the shaman during their journeys.
-- **Dreamweaver's Lullaby:** Induces a magical slumber, enabling the shaman to enter another's dreams to offer guidance or deliver messages.
-- **Soulflight:** Projects the shaman's consciousness into the spirit realm, allowing them to explore distant places or seek specific spirits for aid.
-- **Nature's Wrath:** Calls upon the fury of the natural elements to unleash devastating attacks against foes.
-- **Rite of Passage:** A powerful ritual that marks a significant moment in someone's life, bestowing blessings or unlocking hidden potential.
-- **Sacred Grove:** Creates a mystical sanctuary where the shaman can communicate with spirits, hold ceremonies, or offer prayers.
-
-##### Shamanism Archtypes
-
-|            Archetype |                   Example                    | Example Description                                                                                                                                                                                                   | Archetype Description                                                                                                                                                                                                                                                                                                                                 |
-|---------------------:|:--------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      The Wise Shaman |         Rafiki from "The Lion King"          | Rafiki serves as a spiritual guide to Simba, offering wisdom and guidance throughout his journey. He uses rituals and symbols to connect with the spiritual realm.                                                    | This archetype embodies the traditional role of the shaman as a wise and knowledgeable spiritual leader. Often depicted as an elderly or experienced character, the Wise Shaman guides and supports the protagonist on their quest or journey. They possess deep insights into the spiritual realm and serve as a source of wisdom and guidance.      |
-| The Nature Channeler |  Princess Mononoke from "Princess Mononoke"  | Ashitaka, also known as Princess Mononoke, has a deep connection with the spirits of the forest and can communicate with animals and plants. She uses these abilities to protect the natural world.                   | This archetype is closely connected to nature and possesses the ability to communicate with animals, plants, and the elements. They can call upon the forces of nature to aid them or manipulate the environment to achieve their goals. This character often has a deep respect for the natural world and its inhabitants.                           |
-|    The Spirit Walker |      Doctor Strange from Marvel Comics       | Doctor Strange can traverse different dimensions and realms, including the spiritual realm. He uses this ability to gain knowledge, communicate with otherworldly beings, and influence events in the physical world. | The Spirit Walker is a shamanic archetype who has the ability to traverse between the physical and spiritual realms. They enter altered states of consciousness to connect with spirits, receive visions, and gain supernatural powers. This character may journey to the underworld, commune with ancestors, or seek guidance from powerful spirits. |
-|           The Healer |    Moana's Grandmother Tala from "Moana"     | Tala serves as a healer and spiritual guide to Moana, using her knowledge of rituals and the natural world to aid her granddaughter on her quest.                                                                     | This archetype embodies the shaman's role as a powerful healer. They can cure ailments, both physical and spiritual, using their knowledge of herbs, rituals, and energy manipulation. The Healer often acts as a benevolent figure, offering aid and support to those in need.                                                                       |
-|   The Balance Keeper | Uncle Iroh from "Avatar: The Last Airbender" | Uncle Iroh serves as a mediator and guide, often seeking to restore balance between opposing forces. He uses his wisdom and spiritual insight to help others make the right choices.                                  | The Balance Keeper is a shamanic archetype tasked with maintaining harmony in the world. They act as a mediator between opposing forces, seeking to restore balance and prevent chaos. This character often faces moral dilemmas and must make difficult choices to preserve equilibrium.                                                             |
-|    The Shadow Shaman | Shaman King's Hao Asakura from "Shaman King" | Hao Asakura is a powerful shaman who taps into dark energies and spirits for personal gain. He is morally ambiguous and serves as an antagonist in the story.                                                         | This darker archetype represents a shaman who delves into the realms of darkness and shadow. They may tap into forbidden or dangerous energies to gain immense power. The Shadow Shaman is often morally ambiguous, using their abilities for personal gain or to serve darker purposes.                                                              |
-{: .well .table .table-striped }
-
-
-These unique spells reflect the shaman's profound connection to nature, spirits, and the unseen world, showcasing their ability to tap into the mystical forces of the universe to achieve various extraordinary feats.
-
-| Difficulty        | Shamanism                                                                                                                                                                                                                                         |
-|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Offering a simple blessing to a fellow tribe member or cleansing a small area from negative energy.                                                                                                                                               |
-| Simple            | Assisting someone in achieving a state of deep meditation to connect with their inner self or to gain insights from the spirit realm.                                                                                                             |
-| Easy              | Preparing and administering basic herbal remedies to alleviate minor physical ailments or soothe emotional distress.                                                                                                                              |
-| Routine           | Conducting a routine divination ritual to gain insights into the future or seek answers to specific questions using sacred tools like cards, bones, or stones.                                                                                    |
-| Average           | Undertaking the process of retrieving and reuniting a lost soul fragment with a troubled individual to help them heal from emotional trauma.                                                                                                      |
-| Difficult         | Channeling the power of the elements to summon and control a powerful elemental guardian to protect a sacred site or defend against malevolent forces.                                                                                            |
-| Very Difficult    | Projecting the shaman's consciousness to travel to distant places in the spirit realm to seek knowledge from ancient spirits or to gain insights into hidden secrets.                                                                             |
-| Formidable        | Undertaking a perilous spiritual journey to the spirit world's deepest realms, where few have ventured before, to obtain rare insights or ancient wisdom from the most revered spirits.                                                           |
-| Heroic            | Uniting the energies of the tribe and the surrounding natural forces to perform a grand ritual, bringing harmony and balance to the entire region, dispelling malevolent spirits, and revitalizing the land and its inhabitants.                  |
-| Nearly Impossible | Attempting to bring back a deceased loved one from the afterlife, a task that requires the shaman to navigate complex spiritual realms and negotiate with powerful entities to grant a second chance at life.                                     |
-| Godly             | Harnessing the forces of celestial bodies and the spirit world to perform a ritual that significantly alters the fate of entire civilizations or alters the course of cosmic events, requiring immense power and assistance from divine entities. |
-{: .well .table .table-striped }
-
 
 ## Task Resolution
 

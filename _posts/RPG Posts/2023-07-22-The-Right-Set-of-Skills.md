@@ -137,12 +137,12 @@ skill from demonstrated competency.
 | Academic  | □ □ □ □   | □ □ □ □  | Intellect      | □ □ □ □   | □ □ □ □  | Social Sciences   | □ □ □ □  |       |
 |           |           |          |                |           |          | Life Sciences     | □ □ □ □  |       |
 |           |           |          |                |           |          | Physical Sciences | □ □ □ □  |       |
-|           |           |          | Reasoning      | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |
+|           |           |          | Cunning        | □ □ □ □   | □ □ □ □  | Investigation     | □ □ □ □  |       |
 |           |           |          |                |           |          | Insight           | □ □ □ □  |       |
-|           |           |          |                |           |          | Investigation     | □ □ □ □  |       |
-|           |           |          | Acuity         | □ □ □ □   | □ □ □ □  | Tradition         | □ □ □ □  |       |
 |           |           |          |                |           |          | Perception        | □ □ □ □  |       |
+|           |           |          | Reasoning      | □ □ □ □   | □ □ □ □  | Engineering       | □ □ □ □  |       |
 |           |           |          |                |           |          | Formal Sciences   | □ □ □ □  |       |
+|           |           |          |                |           |          | Tradition         | □ □ □ □  |       |
 | Mystical  | □ □ □ □   | □ □ □ □  | Skepticism     | □ □ □ □   | □ □ □ □  | Arcane            | □ □ □ □  |       |
 |           |           |          |                |           |          | Gnosis            | □ □ □ □  |       |
 |           |           |          |                |           |          | Chaos             | □ □ □ □  |       |
@@ -1139,256 +1139,9 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 | Nearly Impossible | Construct a fire in a blizzard                                                                                                                                                                                                                                |
 | Godly             | Construct a fire under water                                                                                                                                                                                                                                  |
 
-#### Reasoning Characteristics
+#### Cunning Characteristics
 
-**Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
-
- * * *
-
-##### Engineering Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
-</figure>
-</div>
-
-###### Description of the Engineering skill
-
-Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
-
-###### Examples of Engineering from Fiction
-
-In the science fiction TV series "Firefly," Kaylee Frye serves as the chief mechanic aboard the spaceship Serenity, captained by Malcolm Reynolds. Kaylee is a self-taught engineering prodigy, possessing an intuitive understanding of mechanical systems, electronics, and propulsion technologies. Her role is absolutely vital to the crew's survival and success, as she is responsible for keeping the ship operational against all odds. Whether it's a routine maintenance check or an emergency repair in the heat of battle, Kaylee is the go-to expert for anything related to the ship's engineering.
-
-One memorable episode, "Out of Gas," showcases Kaylee's engineering prowess in a life-or-death situation. When the ship's life support system fails, leaving the crew with only a few hours of breathable air, Kaylee's skills are put to the ultimate test. Despite the immense pressure and limited resources, she manages to rig a makeshift solution to buy the crew more time. Her deep understanding of the ship's systems, combined with her ability to improvise, turns her into the crew's lifeline in this dire situation.
-
-In a Table Top Role Playing Game (TTRPG) setting, a character with Kaylee's engineering skills would offer a wide range of problem-solving options. Imagine a scenario where the party's spacecraft is damaged during a skirmish with enemy ships. An Engineering check could determine whether the character successfully reroutes power to essential systems, repairs the ship's thrusters for a quick escape, or even modifies the ship's weapons for a last-ditch counterattack. The possibilities are numerous, and a skilled engineer could tip the scales in the party's favor in countless ways.
-
-Kaylee's engineering expertise goes beyond mere technical skills; her ability to think quickly, adapt to new challenges, and work with limited resources makes her an invaluable member of the Serenity crew. Whether she's patching up bullet holes in the engine room or fine-tuning the ship's systems for better fuel efficiency, Kaylee's contributions are a blend of scientific knowledge and practical know-how. Her character exemplifies how engineering skills can be a game-changer in both everyday operations and high-stakes conflicts.
-
-###### Engineering Archetypes
-
-- **The Tinkerer:** This archetype is known for their knack for inventing and building mechanical devices. They can construct gadgets, traps, and makeshift tools using their engineering expertise.
-- **The Mechanic:** Specializing in the repair and maintenance of machinery, the Mechanic can fix everything from vehicles to intricate mechanical devices. They are skilled in diagnosing and solving technical problems.
-- **The Architect:** Focusing on designing and constructing buildings and structures, the Architect can create impressive architectural marvels, from bridges and fortresses to elegant homes and grand palaces.
-- **The Inventor:** Skilled in creating new technological innovations, the Inventor can develop groundbreaking inventions that revolutionize industries or provide unique advantages to the party.
-- **The Demolition Expert:** This archetype specializes in the safe and controlled destruction of structures and obstacles. They can set up explosive charges, dismantle complex traps, and bring down walls with precision.
-- **The Electrical Engineer:** Focusing on electrical systems and technology, the Electrical Engineer can work with circuits, power sources, and electronic devices. They are essential for tasks involving power generation, security systems, and high-tech gadgets.
-- **The Structural Engineer:** Specializing in the stability and integrity of buildings and infrastructure, the Structural Engineer can assess the safety of structures, reinforce weak points, and design load-bearing components.
-- **The Bridge Builder:** This archetype excels in constructing bridges and other types of crossings. They can create safe and durable pathways over rivers, chasms, and other obstacles.
-- **The Siege Engineer:** Skilled in designing and operating siege weapons and artillery, the Siege Engineer can build and use trebuchets, catapults, and other siege engines for military or defensive purposes.
-- **The Reverse Engineer:** This expert is known for their ability to dismantle and understand complex artifacts, machinery, or technology. They can figure out how to replicate or modify existing devices.
-- **The Robotics Expert:** In a futuristic or sci-fi setting, the Robotics Expert can design, build, and repair robots and autonomous machines. They are essential for tasks involving automation and AI.
-- **The Civil Engineer:** Focusing on infrastructure and public works, the Civil Engineer can plan and oversee the construction of roads, bridges, dams, and other large-scale projects that benefit society.
-- **The Industrial Designer:** This archetype specializes in the aesthetic and ergonomic aspects of product design. They can create visually pleasing and user-friendly devices and structures.
-- **The Environmental Engineer:** Skilled in mitigating environmental impact, the Environmental Engineer can develop solutions for pollution control, resource management, and sustainable practices.
-
-###### Specializations for Engineering
-
-1. **Mechanical Engineering**: Design and maintenance of mechanical systems like engines and machinery.
-2. **Civil Engineering**: Planning and construction of infrastructure such as bridges, roads, and buildings.
-3. **Electrical Engineering**: Understanding and manipulation of electrical systems and circuits.
-4. **Software Engineering**: Development and maintenance of software applications.
-5. **Chemical Engineering**: Manipulation of chemical processes for industrial applications.
-6. **Aerospace Engineering**: Design and construction of aircraft and spacecraft.
-7. **Biomedical Engineering**: Application of engineering principles to healthcare and medical devices.
-8. **Environmental Engineering**: Solutions for environmental issues like waste management and pollution control.
-9. **Structural Engineering**: Specialization in the integrity and durability of buildings and structures.
-10. **Automotive Engineering**: Design and development of vehicles and their subsystems.
-11. **Naval Engineering**: Design and maintenance of ships, submarines, and other watercraft.
-12. **Robotics**: Design and programming of automated machines.
-13. **Cybersecurity Engineering**: Protection of computer systems and networks from cyber threats.
-14. **Telecommunications**: Engineering of systems for transmitting information over a distance.
-15. **Energy Systems**: Design and management of systems for energy production and distribution.
-16. **Material Science**: Study and application of the properties of matter in engineering.
-17. **Acoustical Engineering**: Control and manipulation of sound through engineering.
-18. **Nuclear Engineering**: Specialization in the processes, systems, and instruments of nuclear energy.
-19. **Geotechnical Engineering**: Engineering related to the behavior of earth materials.
-20. **Reverse Engineering**: Deconstruction and analysis of devices to understand their functionality.
-
-###### Table with Engineering skill and examples for each level of difficulty
-
-| Difficulty        | Engineering                                                                                                                                                                                             |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Repairing a simple, everyday household gadget.                                                                                                                                                          |
-| Simple            | Building a small toy or crafting a basic wooden chair.                                                                                                                                                  |
-| Easy              | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                              |
-| Routine           | Designing and building a small wooden bridge over a stream.                                                                                                                                             |
-| Average           | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                               |
-| Difficult         | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                      |
-| Very Difficult    | Designing and constructing a functioning steam-powered engine.                                                                                                                                          |
-| Formidable        | Creating an advanced automaton with artificial intelligence.                                                                                                                                            |
-| Heroic            | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
-| Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
-| Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
-
- * * *
-
-##### Insight Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
-</figure>
-</div>
-
-###### Description of the Insight skill
-
-Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
-
-###### Examples of Insight from Fiction
-
-In the science fiction series "Dune" by Frank Herbert, Paul Atreides exhibits an extraordinary level of insight, honed by a combination of his Bene Gesserit training and his own innate abilities. Paul's skill in discerning the true intentions and emotions of others is almost uncanny, allowing him to navigate the complex political and social landscapes of his universe. Whether he's interpreting the subtle body language of a potential ally or detecting the hidden motives behind a seemingly straightforward proposal, Paul's insight is one of his most potent tools.
-
-One notable instance occurs in "Dune" when Paul and his mother, Lady Jessica, are taken captive by the Fremen, the native people of the desert planet Arrakis. Despite being in a perilous situation, Paul uses his insight to quickly gauge the dynamics within the Fremen tribe, identifying who holds real power and who can be trusted. His ability to read between the lines during conversations and negotiations not only earns him the respect of the Fremen but also allows him to rise to a position of leadership among them.
-
-In a TTRPG setting, a character with a high level of insight could be invaluable for various aspects of gameplay. They might be able to discern that an NPC is lying about the location of a hidden treasure, or sense that a supposed ally is actually a traitor. An Insight check could be used to determine the success of these intuitive leaps, influencing the party's decisions and potentially saving them from traps, betrayals, or poor choices.
-
-Paul Atreides' mastery of insight is not just a passive skill but an active tool he employs to shape events around him. His ability to understand the unspoken motivations and hidden agendas of those he interacts with gives him a significant advantage in the intricate power games he finds himself a part of. Whether he's facing political intrigue, complex negotiations, or potential combat, Paul's insight often provides him the edge he needs to come out on top.
-
-###### Insight Archetypes
-
-- **The Detective:** This archetype excels in solving mysteries and uncovering hidden truths. They can deduce motives, unravel complex plots, and see through deception, making them valuable in investigative scenarios.
-- **The Empath:** Specializing in understanding and sensing the emotions of others, the Empath can connect with people on a deep emotional level. They can provide comfort, diffuse tense situations, and offer valuable insights into the feelings of NPCs.
-- **The Profiler:** Focusing on criminal psychology, the Profiler can create detailed psychological profiles of individuals based on their behavior and actions. They can predict future actions and provide valuable information for law enforcement or strategic planning.
-- **The Negotiator:** Skilled in conflict resolution and diplomacy, the Negotiator can read the intentions and desires of opposing parties in negotiations. They can find common ground and broker deals in tense situations.
-- **The Counselor:** This archetype is a master of providing emotional support and guidance to others. They can help characters deal with trauma, make difficult decisions, and overcome personal challenges.
-- **The Persuader:** Specializing in persuasion and influence, the Persuader can read the desires and motivations of individuals and tailor their arguments or appeals to achieve their goals. They are skilled in changing people's minds and gaining their cooperation.
-- **The Interrogator:** Focusing on extracting information from others, the Interrogator can analyze verbal and non-verbal cues to determine if someone is lying or withholding information. They are experts in obtaining valuable intelligence.
-- **The Therapist:** Skilled in providing mental health support, the Therapist can uncover the deep-seated issues and traumas of characters. They can help characters heal and overcome psychological challenges.
-- **The Motivational Speaker:** This archetype excels in inspiring and motivating others. They can understand the desires and aspirations of individuals and use their insights to encourage action and achievement.
-- **The Judge:** Known for their ability to quickly assess the true nature of individuals, the Judge can determine if someone is trustworthy or suspicious. They are skilled in making snap judgments based on limited interactions.
-- **The Mind Reader:** In a mystical or supernatural setting, the Mind Reader possesses psychic or supernatural abilities that allow them to directly access the thoughts and emotions of others. They can uncover hidden secrets and gain access to a wealth of information.
-- **The Cultural Interpreter:** Specializing in understanding and bridging cultural gaps, the Cultural Interpreter can discern the unspoken rules, norms, and values of different societies. They can facilitate cross-cultural understanding and avoid cultural misunderstandings.
-- **The Animal Whisperer:** Skilled in understanding and communicating with animals, the Animal Whisperer can read the intentions and emotions of creatures. They can calm agitated animals, gain their trust, and even influence their behavior.
-
-###### Specializations for Insight
-
-1. **Lie Detection**: Ability to discern when someone is being dishonest.
-2. **Emotional Intelligence**: Understanding and interpreting the emotions of others.
-3. **Motivation Analysis**: Discerning the underlying goals or desires driving someone's actions.
-4. **Body Language**: Reading non-verbal cues to understand feelings or intentions.
-5. **Social Dynamics**: Understanding the unspoken rules and structures within social groups.
-6. **Cultural Insight**: Ability to understand motivations and behaviors within specific cultural contexts.
-7. **Psychological Profiling**: Creating in-depth profiles of individuals based on observed behavior.
-8. **Interrogation**: Skillful questioning to reveal hidden information.
-9. **Conflict Resolution**: Identifying the root causes of disagreements and finding solutions.
-10. **Negotiation**: Ability to influence or arrive at agreements through discussion.
-11. **Empathy**: Deep understanding and sharing of the emotional states of others.
-12. **Intuition**: Relying on gut feelings to make judgments about people or situations.
-13. **Subtext Reading**: Understanding the implied or hidden meanings in spoken or written language.
-14. **Seduction**: Ability to influence others through charm or attraction.
-15. **Manipulation**: Skillfully controlling or influencing others, often without their awareness.
-16. **Political Acumen**: Understanding the motivations and strategies in political or organizational settings.
-17. **Salesmanship**: Ability to persuade others to make purchases or take specific actions.
-18. **Leadership Assessment**: Evaluating the effectiveness and intentions of leaders or authority figures.
-19. **Crisis Prediction**: Ability to foresee social or interpersonal problems before they escalate.
-20. **Animal Behavior**: Understanding the intentions and emotions of animals.
-
-###### Table with Insight skill and examples for each level of difficulty
-
-| Difficulty        | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
-| Simple            | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                                               |
-| Easy              | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                                                    |
-| Routine           | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                                                          |
-| Average           | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                                                   |
-| Difficult         | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                                                          |
-| Very Difficult    | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                                              |
-| Formidable        | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                                                       |
-| Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
-| Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
-| Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
-
- * * *
-
-##### Investigation Knowledge Areas
-
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
-</figure>
-</div>
-
-###### Description of the Investigation skill
-
-When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse.
-
-###### Examples of Investigation from Fiction
-
-In the classic Western novel "True Grit" by Charles Portis, U.S. Marshal Rooster Cogburn demonstrates a keen sense of investigation. Though he's primarily known for his grit and gunfighting skills, Cogburn's ability to track down outlaws also relies heavily on his investigative prowess. Whether he's following a trail through rugged terrain or piecing together clues from a crime scene, Cogburn uses his experience and intuition to make educated deductions.
-
-One memorable scene involves Cogburn arriving at an abandoned cabin where he suspects an outlaw is hiding. Instead of rushing in guns blazing, he takes a moment to investigate. He observes the tracks leading into the cabin, the state of the horses tied outside, and even the smoke coming from the chimney. These clues allow him to deduce not only that the outlaw is indeed inside but also that he's likely alone and unaware of his pursuers. This Investigation check, so to speak, enables Cogburn to plan his approach more strategically, ultimately leading to the successful capture of the outlaw.
-
-In a TTRPG setting, a character with a high level of Investigation skill could be invaluable in a Western-themed campaign. Imagine the party is tracking down a notorious bandit; an Investigation check could reveal that the tracks they are following are actually a decoy, saving them valuable time and resources. Or perhaps the group finds themselves in a seemingly deserted mining town; a successful Investigation check could uncover clues leading to a hidden stash of gold or the lair of the bandits who raided the town.
-
-Rooster Cogburn's investigative skills complement his more overt abilities, making him a well-rounded character capable of both action and thoughtful analysis. His knack for investigation doesn't just make him a better lawman; it often gives him the upper hand in dangerous situations, allowing him to outthink as well as outshoot his enemies. This balance of brawn and brain makes the skill of Investigation a critical tool in the arsenal of any gunslinger, sheriff, or bounty hunter in the Wild West.
-
-###### Investigation Archetypes
-
-- **The Detective:** This archetype is a master of solving mysteries and uncovering hidden truths. They can find clues that others might overlook, connect seemingly unrelated pieces of information, and deduce complex solutions to puzzles and mysteries.
-- **The Forensic Analyst:** Specializing in analyzing physical evidence, the Forensic Analyst can determine the cause of a crime or accident by examining clues such as fingerprints, bloodstains, and ballistic data.
-- **The Archaeologist:** Focusing on uncovering the past, the Archaeologist can discover ancient artifacts, decipher inscriptions, and piece together historical events based on archaeological evidence.
-- **The Cryptographer:** Skilled in deciphering codes and ciphers, the Cryptographer can break secret messages and uncover hidden information. They excel in unraveling the mysteries of encrypted texts.
-- **The Tracker:** This archetype specializes in following tracks and signs left by people or creatures. They can determine the direction and speed of travel, identify the number of individuals, and even predict their intentions based on their tracks.
-- **The Criminal Profiler:** Specializing in understanding the psychology of criminals, the Criminal Profiler can create detailed profiles of suspects based on their actions and behaviors. They are experts in identifying patterns and motives.
-- **The Puzzle Solver:** Focusing on solving intricate puzzles and riddles, the Puzzle Solver can decipher cryptic clues, unlock hidden doors, and navigate through complex traps and mazes.
-- **The Cyber Sleuth:** In a modern or futuristic setting, the Cyber Sleuth can investigate digital mysteries, uncover online secrets, and track down cybercriminals using their knowledge of computer systems and hacking techniques.
-- **The Mythologist:** Skilled in uncovering the myths and legends of different cultures, the Mythologist can decipher ancient stories and folklore to extract hidden meanings and insights into the past.
-- **The Conspiracy Theorist:** Known for their ability to uncover hidden plots and conspiracies, the Conspiracy Theorist can connect seemingly unrelated events, reveal covert operations, and expose hidden agendas.
-- **The Cartographer:** Focusing on mapmaking and navigation, the Cartographer can create detailed maps, identify geographical features, and deduce the best routes for travel based on terrain and landmarks.
-- **The Linguist:** This version of the Cryptographer specializes in deciphering ancient languages and scripts. They can unlock the meanings of forgotten texts and inscriptions.
-- **The Riddle Master:** In a fantasy or mystical setting, the Riddle Master excels in solving magical riddles and enigmatic puzzles that guard valuable treasures or lead to hidden realms.
-- **The Time Traveler:** In a time-bending setting, the Time Traveler can uncover hidden clues and information by navigating different historical eras and unraveling the threads of time.
-
-###### Specializations for Investigation
-
-1. **Crime Scene Analysis**: Examining a crime scene to gather and interpret evidence.
-2. **Forensic Pathology**: Determining cause of death or injury through examination of wounds or conditions.
-3. **Puzzle Solving**: Ability to solve complex puzzles or riddles.
-4. **Trap Detection**: Identifying and understanding mechanical or magical traps.
-5. **Document Analysis**: Scrutinizing documents for authenticity, hidden messages, or clues.
-6. **Cyber Investigation**: Tracing digital footprints and analyzing electronic data.
-7. **Archaeological Assessment**: Investigating ancient sites or artifacts for historical clues.
-8. **Tactical Analysis**: Evaluating situations or locations for strategic advantages or weaknesses.
-9. **Geological Survey**: Investigating the composition and structure of rock formations or terrain.
-10. **Chemical Analysis**: Identifying substances through chemical testing.
-11. **Behavioral Profiling**: Understanding patterns of behavior to predict future actions.
-12. **Asset Recovery**: Locating stolen or hidden items.
-13. **Urban Exploration**: Skillfully navigating and investigating urban environments for information.
-14. **Cryptography**: Decoding encrypted messages or ciphers.
-15. **Contraband Identification**: Recognizing illegal or restricted items.
-16. **Forgery Detection**: Identifying fake or altered objects and documents.
-17. **Social Engineering**: Gathering information through manipulation or persuasion.
-18. **Astronomical Analysis**: Investigating celestial phenomena for patterns or anomalies.
-19. **Ecological Study**: Investigating natural environments to understand ecological relationships.
-20. **Political Intrigue**: Uncovering secrets or hidden agendas in political settings.
-
-###### Table with Investigation skill and examples for each level of difficulty
-
-| Difficulty        | Investigation                                                                                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trivial           | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
-| Simple            | Spotting a trail of muddy footprints leading to a nearby shed.                                                                                                        |
-| Easy              | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design.                                                                             |
-| Routine           | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database.                                                                      |
-| Average           | Determining the cause of a minor fire by examining burn patterns and evidence in a room.                                                                              |
-| Difficult         | Investigating a complex financial fraud case involving multiple suspects and intricate transactions.                                                                  |
-| Very Difficult    | Deciphering a highly encrypted and encoded message that requires specialized skills and tools.                                                                        |
-| Formidable        | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence.                                                                       |
-| Heroic            | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
-| Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
-| Godly             | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
-
-#### Acuity Characteristics
-
-**Acuity** represents the overall ability of the being to harmonize
-conflicts in their understanding by pushing themselves mentally.
+**Cunning** represents the overall speed at which someone's mind works.   
 
  * * *
 
@@ -1635,6 +1388,252 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 | Heroic            | Developing a groundbreaking mathematical model to explain a natural phenomenon or guess the next card to be drawn in a deck.                                                                                                                                                                                                   |
 | Nearly Impossible | Discovering a novel mathematical principle that revolutionizes a scientific field or an epic feat on which legendary tales are based on. The named masters of a skill come from acts such as these. You will be in the history books.                                                                                          |
 | Godly             | Creating an all-encompassing mathematical theory that unifies disparate branches of mathematics and science or can't be done without assistance unless you're basically a demigod.                                                                                                                                             |
+
+#### Reasoning Characteristics
+
+**Reasoning** represents the overall ability of the being to adapt and manipulate the information they get from the world around them.
+
+ * * *
+
+##### Engineering Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
+</figure>
+</div>
+
+###### Description of the Engineering skill
+
+Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
+
+###### Examples of Engineering from Fiction
+
+In the science fiction TV series "Firefly," Kaylee Frye serves as the chief mechanic aboard the spaceship Serenity, captained by Malcolm Reynolds. Kaylee is a self-taught engineering prodigy, possessing an intuitive understanding of mechanical systems, electronics, and propulsion technologies. Her role is absolutely vital to the crew's survival and success, as she is responsible for keeping the ship operational against all odds. Whether it's a routine maintenance check or an emergency repair in the heat of battle, Kaylee is the go-to expert for anything related to the ship's engineering.
+
+One memorable episode, "Out of Gas," showcases Kaylee's engineering prowess in a life-or-death situation. When the ship's life support system fails, leaving the crew with only a few hours of breathable air, Kaylee's skills are put to the ultimate test. Despite the immense pressure and limited resources, she manages to rig a makeshift solution to buy the crew more time. Her deep understanding of the ship's systems, combined with her ability to improvise, turns her into the crew's lifeline in this dire situation.
+
+In a Table Top Role Playing Game (TTRPG) setting, a character with Kaylee's engineering skills would offer a wide range of problem-solving options. Imagine a scenario where the party's spacecraft is damaged during a skirmish with enemy ships. An Engineering check could determine whether the character successfully reroutes power to essential systems, repairs the ship's thrusters for a quick escape, or even modifies the ship's weapons for a last-ditch counterattack. The possibilities are numerous, and a skilled engineer could tip the scales in the party's favor in countless ways.
+
+Kaylee's engineering expertise goes beyond mere technical skills; her ability to think quickly, adapt to new challenges, and work with limited resources makes her an invaluable member of the Serenity crew. Whether she's patching up bullet holes in the engine room or fine-tuning the ship's systems for better fuel efficiency, Kaylee's contributions are a blend of scientific knowledge and practical know-how. Her character exemplifies how engineering skills can be a game-changer in both everyday operations and high-stakes conflicts.
+
+###### Engineering Archetypes
+
+- **The Tinkerer:** This archetype is known for their knack for inventing and building mechanical devices. They can construct gadgets, traps, and makeshift tools using their engineering expertise.
+- **The Mechanic:** Specializing in the repair and maintenance of machinery, the Mechanic can fix everything from vehicles to intricate mechanical devices. They are skilled in diagnosing and solving technical problems.
+- **The Architect:** Focusing on designing and constructing buildings and structures, the Architect can create impressive architectural marvels, from bridges and fortresses to elegant homes and grand palaces.
+- **The Inventor:** Skilled in creating new technological innovations, the Inventor can develop groundbreaking inventions that revolutionize industries or provide unique advantages to the party.
+- **The Demolition Expert:** This archetype specializes in the safe and controlled destruction of structures and obstacles. They can set up explosive charges, dismantle complex traps, and bring down walls with precision.
+- **The Electrical Engineer:** Focusing on electrical systems and technology, the Electrical Engineer can work with circuits, power sources, and electronic devices. They are essential for tasks involving power generation, security systems, and high-tech gadgets.
+- **The Structural Engineer:** Specializing in the stability and integrity of buildings and infrastructure, the Structural Engineer can assess the safety of structures, reinforce weak points, and design load-bearing components.
+- **The Bridge Builder:** This archetype excels in constructing bridges and other types of crossings. They can create safe and durable pathways over rivers, chasms, and other obstacles.
+- **The Siege Engineer:** Skilled in designing and operating siege weapons and artillery, the Siege Engineer can build and use trebuchets, catapults, and other siege engines for military or defensive purposes.
+- **The Reverse Engineer:** This expert is known for their ability to dismantle and understand complex artifacts, machinery, or technology. They can figure out how to replicate or modify existing devices.
+- **The Robotics Expert:** In a futuristic or sci-fi setting, the Robotics Expert can design, build, and repair robots and autonomous machines. They are essential for tasks involving automation and AI.
+- **The Civil Engineer:** Focusing on infrastructure and public works, the Civil Engineer can plan and oversee the construction of roads, bridges, dams, and other large-scale projects that benefit society.
+- **The Industrial Designer:** This archetype specializes in the aesthetic and ergonomic aspects of product design. They can create visually pleasing and user-friendly devices and structures.
+- **The Environmental Engineer:** Skilled in mitigating environmental impact, the Environmental Engineer can develop solutions for pollution control, resource management, and sustainable practices.
+
+###### Specializations for Engineering
+
+1. **Mechanical Engineering**: Design and maintenance of mechanical systems like engines and machinery.
+2. **Civil Engineering**: Planning and construction of infrastructure such as bridges, roads, and buildings.
+3. **Electrical Engineering**: Understanding and manipulation of electrical systems and circuits.
+4. **Software Engineering**: Development and maintenance of software applications.
+5. **Chemical Engineering**: Manipulation of chemical processes for industrial applications.
+6. **Aerospace Engineering**: Design and construction of aircraft and spacecraft.
+7. **Biomedical Engineering**: Application of engineering principles to healthcare and medical devices.
+8. **Environmental Engineering**: Solutions for environmental issues like waste management and pollution control.
+9. **Structural Engineering**: Specialization in the integrity and durability of buildings and structures.
+10. **Automotive Engineering**: Design and development of vehicles and their subsystems.
+11. **Naval Engineering**: Design and maintenance of ships, submarines, and other watercraft.
+12. **Robotics**: Design and programming of automated machines.
+13. **Cybersecurity Engineering**: Protection of computer systems and networks from cyber threats.
+14. **Telecommunications**: Engineering of systems for transmitting information over a distance.
+15. **Energy Systems**: Design and management of systems for energy production and distribution.
+16. **Material Science**: Study and application of the properties of matter in engineering.
+17. **Acoustical Engineering**: Control and manipulation of sound through engineering.
+18. **Nuclear Engineering**: Specialization in the processes, systems, and instruments of nuclear energy.
+19. **Geotechnical Engineering**: Engineering related to the behavior of earth materials.
+20. **Reverse Engineering**: Deconstruction and analysis of devices to understand their functionality.
+
+###### Table with Engineering skill and examples for each level of difficulty
+
+| Difficulty        | Engineering                                                                                                                                                                                             |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Repairing a simple, everyday household gadget.                                                                                                                                                          |
+| Simple            | Building a small toy or crafting a basic wooden chair.                                                                                                                                                  |
+| Easy              | Repairing a bicycle or constructing a simple wooden cabin.                                                                                                                                              |
+| Routine           | Designing and building a small wooden bridge over a stream.                                                                                                                                             |
+| Average           | Crafting a functional crossbow or constructing a basic irrigation system.                                                                                                                               |
+| Difficult         | Developing and building a mechanical clock or assembling a complex network of electrical circuits.                                                                                                      |
+| Very Difficult    | Designing and constructing a functioning steam-powered engine.                                                                                                                                          |
+| Formidable        | Creating an advanced automaton with artificial intelligence.                                                                                                                                            |
+| Heroic            | Designing and building a fully functional airship for long-distance travel.                                                                                                                             |
+| Nearly Impossible | Developing and constructing a prototype of a teleportation device.                                                                                                                                      |
+| Godly             | Crafting a colossal, self-sustaining city that hovers in the sky or designing and constructing a massive, energy-efficient arcology capable of housing thousands of people in a post-apocalyptic world. |
+
+ * * *
+
+##### Insight Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
+</figure>
+</div>
+
+###### Description of the Insight skill
+
+Insight measures the ability to discern the true intentions and emotions of others, utilizing keen observation, intuition, and analysis of verbal and non-verbal cues. It involves reading between the lines, perceiving subtle changes in behavior, and understanding the unspoken motivations of individuals.
+
+###### Examples of Insight from Fiction
+
+In the science fiction series "Dune" by Frank Herbert, Paul Atreides exhibits an extraordinary level of insight, honed by a combination of his Bene Gesserit training and his own innate abilities. Paul's skill in discerning the true intentions and emotions of others is almost uncanny, allowing him to navigate the complex political and social landscapes of his universe. Whether he's interpreting the subtle body language of a potential ally or detecting the hidden motives behind a seemingly straightforward proposal, Paul's insight is one of his most potent tools.
+
+One notable instance occurs in "Dune" when Paul and his mother, Lady Jessica, are taken captive by the Fremen, the native people of the desert planet Arrakis. Despite being in a perilous situation, Paul uses his insight to quickly gauge the dynamics within the Fremen tribe, identifying who holds real power and who can be trusted. His ability to read between the lines during conversations and negotiations not only earns him the respect of the Fremen but also allows him to rise to a position of leadership among them.
+
+In a TTRPG setting, a character with a high level of insight could be invaluable for various aspects of gameplay. They might be able to discern that an NPC is lying about the location of a hidden treasure, or sense that a supposed ally is actually a traitor. An Insight check could be used to determine the success of these intuitive leaps, influencing the party's decisions and potentially saving them from traps, betrayals, or poor choices.
+
+Paul Atreides' mastery of insight is not just a passive skill but an active tool he employs to shape events around him. His ability to understand the unspoken motivations and hidden agendas of those he interacts with gives him a significant advantage in the intricate power games he finds himself a part of. Whether he's facing political intrigue, complex negotiations, or potential combat, Paul's insight often provides him the edge he needs to come out on top.
+
+###### Insight Archetypes
+
+- **The Detective:** This archetype excels in solving mysteries and uncovering hidden truths. They can deduce motives, unravel complex plots, and see through deception, making them valuable in investigative scenarios.
+- **The Empath:** Specializing in understanding and sensing the emotions of others, the Empath can connect with people on a deep emotional level. They can provide comfort, diffuse tense situations, and offer valuable insights into the feelings of NPCs.
+- **The Profiler:** Focusing on criminal psychology, the Profiler can create detailed psychological profiles of individuals based on their behavior and actions. They can predict future actions and provide valuable information for law enforcement or strategic planning.
+- **The Negotiator:** Skilled in conflict resolution and diplomacy, the Negotiator can read the intentions and desires of opposing parties in negotiations. They can find common ground and broker deals in tense situations.
+- **The Counselor:** This archetype is a master of providing emotional support and guidance to others. They can help characters deal with trauma, make difficult decisions, and overcome personal challenges.
+- **The Persuader:** Specializing in persuasion and influence, the Persuader can read the desires and motivations of individuals and tailor their arguments or appeals to achieve their goals. They are skilled in changing people's minds and gaining their cooperation.
+- **The Interrogator:** Focusing on extracting information from others, the Interrogator can analyze verbal and non-verbal cues to determine if someone is lying or withholding information. They are experts in obtaining valuable intelligence.
+- **The Therapist:** Skilled in providing mental health support, the Therapist can uncover the deep-seated issues and traumas of characters. They can help characters heal and overcome psychological challenges.
+- **The Motivational Speaker:** This archetype excels in inspiring and motivating others. They can understand the desires and aspirations of individuals and use their insights to encourage action and achievement.
+- **The Judge:** Known for their ability to quickly assess the true nature of individuals, the Judge can determine if someone is trustworthy or suspicious. They are skilled in making snap judgments based on limited interactions.
+- **The Mind Reader:** In a mystical or supernatural setting, the Mind Reader possesses psychic or supernatural abilities that allow them to directly access the thoughts and emotions of others. They can uncover hidden secrets and gain access to a wealth of information.
+- **The Cultural Interpreter:** Specializing in understanding and bridging cultural gaps, the Cultural Interpreter can discern the unspoken rules, norms, and values of different societies. They can facilitate cross-cultural understanding and avoid cultural misunderstandings.
+- **The Animal Whisperer:** Skilled in understanding and communicating with animals, the Animal Whisperer can read the intentions and emotions of creatures. They can calm agitated animals, gain their trust, and even influence their behavior.
+
+###### Specializations for Insight
+
+1. **Lie Detection**: Ability to discern when someone is being dishonest.
+2. **Emotional Intelligence**: Understanding and interpreting the emotions of others.
+3. **Motivation Analysis**: Discerning the underlying goals or desires driving someone's actions.
+4. **Body Language**: Reading non-verbal cues to understand feelings or intentions.
+5. **Social Dynamics**: Understanding the unspoken rules and structures within social groups.
+6. **Cultural Insight**: Ability to understand motivations and behaviors within specific cultural contexts.
+7. **Psychological Profiling**: Creating in-depth profiles of individuals based on observed behavior.
+8. **Interrogation**: Skillful questioning to reveal hidden information.
+9. **Conflict Resolution**: Identifying the root causes of disagreements and finding solutions.
+10. **Negotiation**: Ability to influence or arrive at agreements through discussion.
+11. **Empathy**: Deep understanding and sharing of the emotional states of others.
+12. **Intuition**: Relying on gut feelings to make judgments about people or situations.
+13. **Subtext Reading**: Understanding the implied or hidden meanings in spoken or written language.
+14. **Seduction**: Ability to influence others through charm or attraction.
+15. **Manipulation**: Skillfully controlling or influencing others, often without their awareness.
+16. **Political Acumen**: Understanding the motivations and strategies in political or organizational settings.
+17. **Salesmanship**: Ability to persuade others to make purchases or take specific actions.
+18. **Leadership Assessment**: Evaluating the effectiveness and intentions of leaders or authority figures.
+19. **Crisis Prediction**: Ability to foresee social or interpersonal problems before they escalate.
+20. **Animal Behavior**: Understanding the intentions and emotions of animals.
+
+###### Table with Insight skill and examples for each level of difficulty
+
+| Difficulty        | Insight Skill                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Automatically sensing a close friend's mood and emotional state.                                                                                                                                                                                                                                                                                                         |
+| Simple            | Recognizing when someone is trying to hide their nervousness during a casual conversation.                                                                                                                                                                                                                                                                               |
+| Easy              | Picking up on subtle changes in body language to understand that someone is feeling uncomfortable in a group setting.                                                                                                                                                                                                                                                    |
+| Routine           | Assessing that someone is attempting to deceive you through their inconsistent speech patterns.                                                                                                                                                                                                                                                                          |
+| Average           | Noticing that a person is concealing their true feelings during a formal presentation.                                                                                                                                                                                                                                                                                   |
+| Difficult         | Detecting that an individual is plotting something harmful based on their unusual behavior and evasive answers.                                                                                                                                                                                                                                                          |
+| Very Difficult    | Gaining insight into an individual's troubled past and predicting their responses in a therapeutic setting.                                                                                                                                                                                                                                                              |
+| Formidable        | Identifying the manipulative tactics of a skilled con artist and uncovering their true intentions.                                                                                                                                                                                                                                                                       |
+| Heroic            | Successfully predicting the actions of a mastermind criminal behind an intricate series of crimes.                                                                                                                                                                                                                                                                       |
+| Nearly Impossible | Discerning the true identity of a spy who excels in deception, even among a network of intelligence agents.                                                                                                                                                                                                                                                              |
+| Godly             | Understanding the deepest fears and desires of a godlike entity who holds immense power over reality, enabling negotiation and cooperation between mortals and divine beings. Realizing the hidden agendas and ambitions of otherworldly beings influencing entire civilizations and guiding history's course. (e.g., ancient dragons, cosmic entities, ethereal beings) |
+
+ * * *
+
+##### Investigation Knowledge Areas
+
+<div class="col-md-4 mt-3 col-lg-6 float-end">
+<figure class="figure">
+<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
+</figure>
+</div>
+
+###### Description of the Investigation skill
+
+When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse.
+
+###### Examples of Investigation from Fiction
+
+In the classic Western novel "True Grit" by Charles Portis, U.S. Marshal Rooster Cogburn demonstrates a keen sense of investigation. Though he's primarily known for his grit and gunfighting skills, Cogburn's ability to track down outlaws also relies heavily on his investigative prowess. Whether he's following a trail through rugged terrain or piecing together clues from a crime scene, Cogburn uses his experience and intuition to make educated deductions.
+
+One memorable scene involves Cogburn arriving at an abandoned cabin where he suspects an outlaw is hiding. Instead of rushing in guns blazing, he takes a moment to investigate. He observes the tracks leading into the cabin, the state of the horses tied outside, and even the smoke coming from the chimney. These clues allow him to deduce not only that the outlaw is indeed inside but also that he's likely alone and unaware of his pursuers. This Investigation check, so to speak, enables Cogburn to plan his approach more strategically, ultimately leading to the successful capture of the outlaw.
+
+In a TTRPG setting, a character with a high level of Investigation skill could be invaluable in a Western-themed campaign. Imagine the party is tracking down a notorious bandit; an Investigation check could reveal that the tracks they are following are actually a decoy, saving them valuable time and resources. Or perhaps the group finds themselves in a seemingly deserted mining town; a successful Investigation check could uncover clues leading to a hidden stash of gold or the lair of the bandits who raided the town.
+
+Rooster Cogburn's investigative skills complement his more overt abilities, making him a well-rounded character capable of both action and thoughtful analysis. His knack for investigation doesn't just make him a better lawman; it often gives him the upper hand in dangerous situations, allowing him to outthink as well as outshoot his enemies. This balance of brawn and brain makes the skill of Investigation a critical tool in the arsenal of any gunslinger, sheriff, or bounty hunter in the Wild West.
+
+###### Investigation Archetypes
+
+- **The Detective:** This archetype is a master of solving mysteries and uncovering hidden truths. They can find clues that others might overlook, connect seemingly unrelated pieces of information, and deduce complex solutions to puzzles and mysteries.
+- **The Forensic Analyst:** Specializing in analyzing physical evidence, the Forensic Analyst can determine the cause of a crime or accident by examining clues such as fingerprints, bloodstains, and ballistic data.
+- **The Archaeologist:** Focusing on uncovering the past, the Archaeologist can discover ancient artifacts, decipher inscriptions, and piece together historical events based on archaeological evidence.
+- **The Cryptographer:** Skilled in deciphering codes and ciphers, the Cryptographer can break secret messages and uncover hidden information. They excel in unraveling the mysteries of encrypted texts.
+- **The Tracker:** This archetype specializes in following tracks and signs left by people or creatures. They can determine the direction and speed of travel, identify the number of individuals, and even predict their intentions based on their tracks.
+- **The Criminal Profiler:** Specializing in understanding the psychology of criminals, the Criminal Profiler can create detailed profiles of suspects based on their actions and behaviors. They are experts in identifying patterns and motives.
+- **The Puzzle Solver:** Focusing on solving intricate puzzles and riddles, the Puzzle Solver can decipher cryptic clues, unlock hidden doors, and navigate through complex traps and mazes.
+- **The Cyber Sleuth:** In a modern or futuristic setting, the Cyber Sleuth can investigate digital mysteries, uncover online secrets, and track down cybercriminals using their knowledge of computer systems and hacking techniques.
+- **The Mythologist:** Skilled in uncovering the myths and legends of different cultures, the Mythologist can decipher ancient stories and folklore to extract hidden meanings and insights into the past.
+- **The Conspiracy Theorist:** Known for their ability to uncover hidden plots and conspiracies, the Conspiracy Theorist can connect seemingly unrelated events, reveal covert operations, and expose hidden agendas.
+- **The Cartographer:** Focusing on mapmaking and navigation, the Cartographer can create detailed maps, identify geographical features, and deduce the best routes for travel based on terrain and landmarks.
+- **The Linguist:** This version of the Cryptographer specializes in deciphering ancient languages and scripts. They can unlock the meanings of forgotten texts and inscriptions.
+- **The Riddle Master:** In a fantasy or mystical setting, the Riddle Master excels in solving magical riddles and enigmatic puzzles that guard valuable treasures or lead to hidden realms.
+- **The Time Traveler:** In a time-bending setting, the Time Traveler can uncover hidden clues and information by navigating different historical eras and unraveling the threads of time.
+
+###### Specializations for Investigation
+
+1. **Crime Scene Analysis**: Examining a crime scene to gather and interpret evidence.
+2. **Forensic Pathology**: Determining cause of death or injury through examination of wounds or conditions.
+3. **Puzzle Solving**: Ability to solve complex puzzles or riddles.
+4. **Trap Detection**: Identifying and understanding mechanical or magical traps.
+5. **Document Analysis**: Scrutinizing documents for authenticity, hidden messages, or clues.
+6. **Cyber Investigation**: Tracing digital footprints and analyzing electronic data.
+7. **Archaeological Assessment**: Investigating ancient sites or artifacts for historical clues.
+8. **Tactical Analysis**: Evaluating situations or locations for strategic advantages or weaknesses.
+9. **Geological Survey**: Investigating the composition and structure of rock formations or terrain.
+10. **Chemical Analysis**: Identifying substances through chemical testing.
+11. **Behavioral Profiling**: Understanding patterns of behavior to predict future actions.
+12. **Asset Recovery**: Locating stolen or hidden items.
+13. **Urban Exploration**: Skillfully navigating and investigating urban environments for information.
+14. **Cryptography**: Decoding encrypted messages or ciphers.
+15. **Contraband Identification**: Recognizing illegal or restricted items.
+16. **Forgery Detection**: Identifying fake or altered objects and documents.
+17. **Social Engineering**: Gathering information through manipulation or persuasion.
+18. **Astronomical Analysis**: Investigating celestial phenomena for patterns or anomalies.
+19. **Ecological Study**: Investigating natural environments to understand ecological relationships.
+20. **Political Intrigue**: Uncovering secrets or hidden agendas in political settings.
+
+###### Table with Investigation skill and examples for each level of difficulty
+
+| Difficulty        | Investigation                                                                                                                                                         |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trivial           | Automatically noticing an open book on a desk in a well-lit room.                                                                                                     |
+| Simple            | Spotting a trail of muddy footprints leading to a nearby shed.                                                                                                        |
+| Easy              | Finding a hidden compartment in a drawer by noticing a slight irregularity in its design.                                                                             |
+| Routine           | Analyzing a set of fingerprints from a crime scene and matching them to a suspect in a database.                                                                      |
+| Average           | Determining the cause of a minor fire by examining burn patterns and evidence in a room.                                                                              |
+| Difficult         | Investigating a complex financial fraud case involving multiple suspects and intricate transactions.                                                                  |
+| Very Difficult    | Deciphering a highly encrypted and encoded message that requires specialized skills and tools.                                                                        |
+| Formidable        | Profiling a serial killer with an uncanny ability to leave no discernible patterns or evidence.                                                                       |
+| Heroic            | Solving an intricate and convoluted mystery that has stumped the best detectives for months.                                                                          |
+| Nearly Impossible | Uncovering a secret criminal organization operating covertly and avoiding all detection for years.                                                                    |
+| Godly             | Discerning the ultimate mastermind behind a series of international heists who leaves no trace, no witnesses, and has a vast network of operatives at their disposal. |
 
 ### Emotional Aspects
 
