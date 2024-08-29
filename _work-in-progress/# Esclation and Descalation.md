@@ -16,8 +16,6 @@ In essence, the Escalation rule in Dogs in the Vineyard emphasizes the escalatio
 
 ## How should deescalation work
 
-If I were to use the above as an approach to describe deescalation I would come up with the following:
-
 A Deescalation rule is a mechanic that governs conflict resolution by emphasizing the importance of diffusing tense situations. When characters find themselves embroiled in a conflict, whether it be verbal sparring or physical altercation, they have the option to pursue deescalation.  Deescalation allows characters to strive for resolution through peaceful means. When faced with a conflict, if you recognize the potential for escalation and its associated risks, you can opt to deescalate the situation.
 
 Deescalating involves employing diplomacy, negotiation, empathy, or other non-violent tactics to calm tensions and find a mutually acceptable resolution. Instead of adding dice to your pool as in escalation, deescalation involves taking steps to reduce the stakes and lower the intensity of the conflict. Deescalation carries its own set of challenges and risks. It requires finesse, communication skills, and sometimes sacrifice to reach a peaceful resolution. Additionally, not all conflicts can be deescalated successfully, and attempting to do so may leave characters vulnerable or unable to achieve their objectives.
