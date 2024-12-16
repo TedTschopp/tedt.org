@@ -19,11 +19,17 @@
 	{% endif %}
 
 	<title>{{ this_page_title }}</title>
-    <!-- TODO: Add Multiple Authors -->
-    <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
-    <link rel="author" href="/humans.txt">
-    <link rel="copyright" href="/copyright.html">
-    <link rel="canonical" href="{{ site.siteurl }}{{ page.url }}" />
+  <!-- TODO: Add Multiple Authors -->
+  <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
+  <link rel="author" href="/humans.txt">
+  <link rel="copyright" href="/copyright.html">
+  <link rel="canonical" href="{{ site.siteurl }}{{ page.url }}" />
+
+  <!-- Mastodon Meta Data-->
+  <!-- TODO: move to configuration -->
+  <meta name="fediverse:creator" content="@TedT@twit.social">
+  <meta name="fediverse:creator" content="@Ted@tschopp.net">
+
 
 	{% if full-page-url == home-page-url %}
 	    <!-- Search Engine and Browser Meta Tags. -->

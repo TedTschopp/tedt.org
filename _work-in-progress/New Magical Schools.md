@@ -1,114 +1,169 @@
-### Skepticism
-This group embodies the idea that nothing can be truly known and emphasizes the importance of an open mind.
+# Magic in the Marchen Engine
 
-1. **Metaphysics**: You focus on the complexities of sentience and the intricacies of the human mind, exploring subjective experiences that cannot be fully understood or quantified. This aligns with your skeptical view of questioning perceived realities.
-   - **Level 1: Sense Thoughts and Emotions, Empower Self** - You begin to sense the thoughts and emotions around you. You cannot yet read these thoughts, but you can sense their strength and intensity. You can also read psychic impressions left on objects, though without true clarity. You start learning to influence your dreams and shield your mind from others' thoughts.
-   - **Level 2: Read Surface Thoughts, Mental Impulse** - You learn to recognize and read surface thoughts, and you can now leave psychic impressions on objects. You can also send thoughts and emotions into others' subconscious minds, forming a primitive mental link with others of similar skill.
-   - **Level 3: Mental Link, Walk Among Dreams** - You can establish a telepathic link with others, project thoughts and images, and enter the Dream Realms during sleep. Awake, you can invade others' dreams, though this is risky.
-   - **Level 4: Control Conscious Mind, Astral Projection** - You can take over another person's mind and body, change their memories, and control their thoughts. You also gain the ability to project yourself into the astral plane for short periods.
+##
 
-2. **Alchemy / Transformation**: You handle the tangible and often predictable patterns of inorganic matter, but the flexibility and manipulation of these patterns introduce an element of the unknown.
-   - **Level 1: Matter Perceptions** - You begin by recognizing the various Patterns of Matter, detecting hidden structures and properties of objects.
-   - **Level 2: Basic Transformations** - You can transmute one substance into another without altering its state, such as changing water into wine. You can also create simple objects using Prime energy.
-   - **Level 3: Alter Forms** - You can alter the shape, density, and state of matter, reshaping objects as you desire. You can also repair broken items.
-   - **Level 4: Complex Transmutations** - You can perform radical changes to materials, crafting intricate items from rare substances, and transmute the Patterns of Life, Forces, or Prime into Matter.
+### Agency
 
-3. **Elementalism**: You deal with manipulating natural forces, and your understanding and predictability of these forces (like gravity, electricity) provide a reliable framework for your magic, thus fitting the Faith category.
-   - **Level 1: Perceive Forces** - You discern energy patterns and perceive various forms of energy, such as light, sound, and gravity, even beyond the normal sensory range.
-   - **Level 2: Control Minor Forces** - You gain control over minor forces, such as light, sound, and heat, redirecting them or focusing them as needed. Your control is limited to small-scale effects.
-   - **Level 3: Transmute Minor Forces** - You can now change one force into another, create or destroy forces, and perform significant effects like freezing enemies or creating explosions.
-   - **Level 4: Control Major Forces** - You control large-scale forces, manipulating significant energies like redirecting missiles, causing earthquakes, or conjuring massive storms.
+Agency refers to the capacity of individuals to interact with each other, make conscious choices and exert their own free will. It highlights the ability of sentient beings to:
 
-### Faith
-This group represents the belief in reliable, consistent principles or entities that one can depend upon.
+* Make Decisions: Evaluate options and choose a course of action based on reasoning and intent.
+* Interact and Collaborate: Communicate and cooperate with other sentient beings, forming relationships and societies to achieve common goals.
+* Influence Reality: Act upon the world to bring about change, shaping their environment and circumstances.
+* Reflect and Adapt: Engage in self-awareness and adapt behavior based on experiences and insights.
+* Create and Innovate: Generate new ideas, concepts, and creations that did not previously exist.
 
-4. **Arcane**: You engage with the quintessential reality, suggesting an underlying, dependable structure to reality that can be manipulated and relied upon.
-   - **Level 1: Sense Magic** - You perceive basic quintessential energy, such as Nodes, ley-lines, and magical auras.
-   - **Level 2: Harmonize Magical Energy, Fuel Magical Pattern** - You gain control over Quintessential energy, weaving it to create Platonic ideals and transforming it into physical form.
-   - **Level 3: Channel Magical Energy** - You can channel and store Quintessence within yourself or other Patterns, creating powerful magical effects and transferring energy between them.
-   - **Level 4: Create and Control Magical Energy** - You can create raw Quintessence from matter and energy, manipulate the flow of Quintessence in living beings, and even cancel Paradox energies.
+As a player within the Marchen Engine, you will be taking the role of someone and using their agency to drive the narrative.  There will be three main realms where you can do this. 
 
-5. **Theurgy**: You are involved in the study and interaction with divine entities and the sacred, which are typically accepted on faith and seen as reliable spiritual truths.
-   - **Level 1: Sense / See Spirit World** - You gain the ability to sense the Near Umbra, seeing auras, ghosts, and spirits, and reading the strength of the local Gauntlet.
-   - **Level 2: Touch Spirit, Interact with Spirit World** - You can touch spirits and objects in the spirit world, communicate with spirits, and thin or strengthen the Gauntlet.
-   - **Level 3: Enter Spirit World, Rouse & Lull Spirit** - You can enter the Umbra, rouse spirits from slumber, or lull awakened spirits into sleep. You can also create short-lived items from ephemera.
-   - **Level 4: Rend Spirit World, Repair Spirit World, Bind Spirit** - You can tear open the Gauntlet, allowing free passage between the physical world and the Umbra. You can also bind spirits into objects or compel them to obey you.
+Agency within the three realms embodies the collective relationships, interactions, and societal constructs that bind individuals and communities together. It's where culture, traditions, laws, and social norms gain form and influence. While the Mental Realm focuses on individual ideal forms and essences, the Marchen Engine itself represents the shared realities created when minds come together.
 
-6. **Life - Animism / Shamanism / Physical Adept**: You combine the scientific understanding of biological patterns with the mystical and spiritual aspects of life force and spirit interaction.
-   - **Level 1: Sense Life** - You begin by identifying and understanding the Patterns of Life, sensing life forms and their health.
-   - **Level 2: Alter Simple Patterns, Heal Self** - You can alter the structure of basic life forms, heal or harm yourself, and manipulate plant life and invertebrates.
-   - **Level 3: Alter Self, Heal Life, Transform Simple Patterns, Create Simple Patterns** - You can alter your own form, transform simple life forms into others, create new life forms, and heal other beings.
-   - **Level 4: Alter Complex Life Patterns, Transform Self** - You can alter the form of complex life patterns, transforming into other beings or altering others' forms as desired.
+While roleplaying, the intangible aspects of societies—such as trust, hierarchy, and collective belief—manifest as tangible forces that can impact realms and the outcome of the story.  This game serves as the nexus where individual wills converge to create something greater than the sum of their parts.
 
-### Mystery
-This group synthesizes elements of both Skepticism and Faith, dealing with the unknown and the known in equal measure.
 
-7. **{Entropy}**: You deal with the unpredictable elements of decay, rebirth, and the manipulation of probabilities. The inherent uncertainty and your reliance on forces of disorder align with your skepticism that challenges the predictability of outcomes.
-   - **Level 1: Sense Fate & Fortune** - You begin by sensing the currents of fate, discerning strengths, weaknesses, and significant events.
-   - **Level 2: Control Probability** - You gain control over probability, influencing small events like dice rolls, card shuffles, or choosing the winning option.
-   - **Level 3: Affect Predictable Patterns** - You can influence inanimate objects and forces, causing machines to break down or rocks to erode, and blessing or cursing objects.
-   - **Level 4: Affect Life and Thought** - You can influence the random factors of life, blessing or cursing beings, and even subtly influencing thoughts over time to cause paradigm shifts.
+### The Three Realms
 
-8. **{Correspondence}**: You challenge the notion of space as a fixed concept, introducing a mystical element to the manipulation of space and distances.
-   - **Level 1: Immediate Spatial Perceptions** - You gain a keen understanding of spatial relationships, sensing distances and directions intuitively.
-   - **Level 2: Sense and Touch Space** - You can extend your senses beyond your immediate vicinity, grasp small objects through reality, and create barriers to hinder spatial manipulation.
-   - **Level 3: Pierce Space, Co-Locality Perception** - You can make small holes in reality, allowing you to pass through, and perceive multiple locations at once.
-   - **Level 4: Rend Space, Co-Locate Self and Others** - You can create large rents in reality, transporting beings and objects across space, and manifest in multiple locations simultaneously.
+Welcome to the intricate tapestry of our multiverse, where reality is a complex interplay of realms beyond the ordinary senses. Understanding the nature of existence is key to unlocking powers, unraveling mysteries, and forging your destiny. As adventurers and storytellers, you will traverse not just the lands and seas on the face of the earth, but also delve into the deeper layers that influence every aspect of life and reality.
 
-9. **Chronomancy**: You embrace the concept that time is as subjective as space and matter, fitting well with your skepticism as it challenges the conventional understanding of time as a linear, absolute entity.
-   - **Level 1: Time Sense** - You gain a basic awareness of time's flow, detecting temporal phenomena like time rifts or irregularities.
-   - **Level 2: Past and Future Sight** - You can shift your perceptions forward or backward in time, gaining insights into the past or potential futures.
-   - **Level 3: Time Compression or Extension** - You can manipulate the passage of time, speeding it up or slowing it down, and even traveling forward in time by dilating moments.
-   - **Level 4: Time Shift and Time Travel** - You can cause absolute shifts in time, freezing moments or moving objects through time. You can also immunize yourself from time's effects or travel through time, plucking objects or yourself out of the time stream and repositioning them at other points.
+#### The Physical Realm
 
+This is the tangible world where the characters live and events generally unfold. It encompasses all matter and physical forms. The laws of physics operate here, and it's the realm as players we live in and it is the realm most people you encounter in the Marchen Egnine are most familiar with.
+
+Agency influences the Physical Realm by shaping how societies build, destroy, and modify their environments. Collective actions driven by social constructs can lead to the rise of cities, the forging of alliances, or the waging of wars. These physical manifestations are direct reflections of the underlying social dynamics.
+
+#### The Mental Realm
+ 
+This realm represents the world of ideal forms and perfect essences. In this Realm, every object and concept exists in its most complete and unchanging state. It's a plane where the true, immutable nature of things resides, beyond the imperfections and variations found in the physical world. The Mental Realm influences the Physical Realm by serving as the blueprint or archetype for all that exists.
+
+There's a symbiotic relationship between the Agency and Mental Realms. Individual ideals and beliefs contribute to the formation of social constructs, while societal norms and cultures, in turn, shape individual perceptions and ideals. This interplay affects how characters perceive their world and themselves.  Someone with enough agency can modify the concepet of an idea in the mental realm and once modified it will be seen as normal by those who interact with it.  On the flip side if someone's behavior deviates from the constructs found within the mental realm, they will be seen as deviant.  Healers and Conmen both will use this to their advantage.  A healer will take the ideal form of a human and use it to reconstruct the body in the physical realm and the conman will attempt to modify what it means to be a good citizen in the village of Cantor within the conceptual realm.
+
+#### Spiritual Realm
+
+This realm embodies the essence and intrinsic connections between all things. It transcends space and time, holding the collective potentials and possibilities of objects and beings. The Spiritual Realm is the source of magical powers in the universe, where arcane energy originates from. It focuses on the relationships and bonds that link everything in existence.  
+
+Agency enhances the connections between individuals at a fundamental level. Bonds formed through shared experiences and collective identities can strengthen spiritual connections, affecting the flow of arcane energy and potentially unlocking new abilities that are accessible only through communal harmony or shared purpose.
+
+
+#### Three Mystical attributes and 9 arcane branches of study
+
+##### Potency
+
+*Spiritual/magical strength, raw energy output.*
+
+* **{Entropy}** (fate and fortune) - You deal with the unpredictable elements of decay, rebirth, and the manipulation of probabilities. The inherent uncertainty and your reliance on forces of disorder align with your skepticism that challenges the predictability of outcomes.
+  * **Level 1: Sense Fate & Fortune** - You begin by sensing the currents of fate, discerning strengths, weaknesses, and significant events.
+  * **Level 2: Control Probability** - You gain control over probability, influencing small events like dice rolls, card shuffles, or choosing the winning option.
+  * **Level 3: Affect Predictable Patterns** - You can influence inanimate objects and forces, causing machines to break down or rocks to erode, and blessing or cursing objects.
+  * **Level 4: Affect Life and Thought** - You can influence the random factors of life, blessing or cursing beings, and even subtly influencing thoughts over time to cause paradigm shifts.
+
+* **Elementalism** (natural forces) - You deal with manipulating natural forces, and your understanding and predictability of these forces (like gravity, electricity) provide a reliable framework for your magic.
+  * **Level 1: Perceive Forces** - You discern energy patterns and perceive various forms of energy, such as light, sound, and gravity, even beyond the normal sensory range.
+  * **Level 2: Control Minor Forces** - You gain control over minor forces, such as light, sound, and heat, redirecting them or focusing them as needed. Your control is limited to small-scale effects.
+  * **Level 3: Transmute Minor Forces** - You can now change one force into another, create or destroy forces, and perform significant effects like freezing enemies or creating explosions.
+  * **Level 4: Control Major Forces** - You control large-scale forces, manipulating significant energies like redirecting missiles, causing earthquakes, or conjuring massive storms.
+
+* **Arcane (magic)**  - You engage with the actual reality, suggesting an underlying, dependable structure to reality that can be manipulated and relied upon.
+  * **Level 1: Sense Magic** - You perceive basic fundamental energy of the universe, some called nexus points, ley-lines, and magical auras.
+  * **Level 2: Harmonize Magical Energy, Fuel Magical Pattern** - You gain control over the fundamental energy of the universe,  weaving it to create cognitive ideals and before transforming it into physical form.
+  * **Level 3: Channel Magical Energy** - You can channel and store the fundamental energy of the universe, or Arcane energy, within yourself or other cognative patterns, creating powerful magical effects and transferring energy between them.
+  * **Level 4: Create and Control Magical Energy** - You can create raw arcane energy from matter and energy, manipulate the flow of this energy in living beings, and even attune discordant energies.
+
+##### **2. Channeling**  
+
+*Spiritual/magical control, precision, mastery of flow.*
+
+* **Metaphysics** (Mind, thoughts, and emotions) - You focus on the complexities of sentience and the intricacies of the human mind, exploring subjective experiences that cannot be fully understood or quantified. 
+  * **Level 1: Sense Thoughts and Emotions, Empower Self** - You begin to sense the thoughts and emotions around you. You cannot yet read these thoughts, but you can sense their strength and intensity. You can also read psychic impressions left on objects, though without true clarity. You start learning to influence your dreams and shield your mind from others' thoughts.
+  * **Level 2: Read Surface Thoughts, Mental Impulse** - You learn to recognize and read surface thoughts, and you can now leave psychic impressions on objects. You can also send thoughts and emotions into others' subconscious minds, forming a primitive mental link with others of similar skill.
+  * **Level 3: Mental Link, Walk Among Dreams** - You can establish a telepathic link with others, project thoughts and images, and enter the Dream Realms during sleep. Awake, you can invade others' dreams, though this is risky.
+  * **Level 4: Control Conscious Mind, Astral Projection** - You can take over another person's mind and body, change their memories, and control their thoughts. You also gain the ability to project yourself into the astral plane for short periods.
+
+* **Chronomancy** (Time)  - You embrace the concept that time is as subjective as space and matter, requiring a delicate understanding of the precise clockwork that makes up reality.
+
+  * **Level 1: Time Sense** - You gain a basic awareness of time's flow, detecting temporal phenomena like time rifts or irregularities.
+  * **Level 2: Past and Future Sight** - You can shift your perceptions forward or backward in time, gaining insights into the past or potential futures.
+  * **Level 3: Time Compression or Extension** - You can manipulate the passage of time, speeding it up or slowing it down, and even traveling forward in time by dilating moments.
+  * **Level 4: Time Shift and Time Travel** - You can cause absolute shifts in time, freezing moments or moving objects through time. You can also immunize yourself from time's effects or travel through time, plucking objects or yourself out of the time stream and repositioning them at other points.
+
+* **Correspondence** (immediate spatial perceptions)  - You challenge the notion of space as a fixed concept, introducing a mystical element to the manipulation of space and distances.
+  * **Level 1: Immediate Spatial Perceptions** - You gain a keen understanding of spatial relationships, sensing distances and directions intuitively.
+  * **Level 2: Sense and Touch Space** - You can extend your senses beyond your immediate vicinity, grasp small objects through reality, and create barriers to hinder spatial manipulation.
+  * **Level 3: Pierce Space, Co-Locality Perception** - You can make small holes in reality, allowing you to pass through, and perceive multiple locations at once.
+  * **Level 4: Rend Space, Co-Locate Self and Others** - You can create large rends in reality, transporting beings and objects across space, and manifest in multiple locations simultaneously.
+
+
+##### **3. Resonance**
+
+*Spiritual/magical capacity, endurance, harmony with forces.*
+
+* **Theurgy** (the spirit world) - You are involved in the study and interaction with divine entities and the sacred, which are typically accepted on faith and seen as reliable spiritual truths.
+  * **Level 1: Sense / See Spirit World** - You gain the ability to sense the spiritual world, seeing auras, ghosts, and spirits, and reading the strength of the local Gauntlet.
+  * **Level 2: Touch Spirit, Interact with Spirit World** - You can touch spirits and objects in the spirit world, communicate with spirits, and thin or strengthen the Gauntlet.
+  * **Level 3: Enter Spirit World, Rouse & Lull Spirit** - You can enter the spiritual world, rouse spirits from slumber, or lull awakened spirits into sleep. You can also create short-lived items from ephemera.
+  * **Level 4: Rend Spirit World, Repair Spirit World, Bind Spirit** - You can tear open the spiritual world, allowing free passage between the physical world and the spiritual world. You can also bind spirits into objects or compel them to obey you.
+
+* **Life - Animism / Shamanism / Physical Adept** (the life forces around you) - You combine the scientific understanding of biological patterns with the mystical and spiritual aspects of life force and spirit interaction.
+  * **Level 1: Sense Life** - You begin by identifying and understanding the Patterns for Life, sensing life forms and their health.
+  * **Level 2: Alter Simple Patterns, Heal Self** - You can alter the structure of basic life forms, heal or harm yourself, and manipulate plant life and invertebrates.
+  * **Level 3: Alter Self, Heal Life, Transform Simple Patterns, Create Simple Patterns** - You can alter your own form, transform simple life forms into others, create new life forms, and heal other beings.
+  * **Level 4: Alter Complex Life Patterns, Transform Self** - You can alter the form of complex life patterns, transforming into other beings or altering others' forms as desired.
+
+* **Alchemy / Transformation**:   (the essence of matter) - You handle the tangible and often predictable patterns of inorganic matter, but the flexibility and manipulation of these patterns introduce an element of the unknown.
+  * **Level 1: Matter Perceptions** - You begin by recognizing the various Patterns of Matter, detecting hidden structures and properties of objects.
+  * **Level 2: Basic Transformations** - You can transmute one substance into another without altering its state, such as changing water into wine. You can also create simple objects using Arcane energy.
+  * **Level 3: Alter Forms** - You can alter the shape, density, and state of matter, reshaping objects as you desire. You can also repair broken items.
+  * **Level 4: Complex Transmutations** - You can perform radical changes to materials, crafting intricate items from rare substances, and transmute the Patterns of Life, Forces, or Arcane into Matter.
+
+---
+
+**Summary:**
 
 ### Level 1: **Sense** (from Old English *sēns*, from Proto-Germanic *sinnan*, to perceive)
+
 At this level, you begin your stewardship by perceiving and understanding the foundational aspects of magic. For instance:
-- In **Entropy**, you sense fate and fortune.
-- In **Mind**, you sense thoughts and emotions.
-- In **Time**, you have a basic time sense.
-- In **Prime**, you sense magic.
-- In **Spirit**, you see the spirit world.
-- In **Forces**, you perceive natural forces.
-- In **Matter**, you perceive the essence of matter.
-- In **Correspondence**, you gain immediate spatial perceptions.
-- In **Life**, you sense the life forces around you.
+* In **Entropy**, you sense fate and fortune.
+* In **Mind**, you sense thoughts and emotions.
+* In **Time**, you have a basic time sense.
+* In **Prime**, you sense magic.
+* In **Spirit**, you see the spirit world.
+* In **Forces**, you perceive natural forces.
+* In **Matter**, you perceive the essence of matter.
+* In **Correspondence**, you gain immediate spatial perceptions.
+* In **Life**, you sense the life forces around you.
 
 ### Level 2: **Shape** (from Old English *sceapen*, from Proto-Germanic *skapjan*, to create)
 As you grow in knowledge, you shape and adjust elements and energies:
-- In **Entropy**, you control probability.
-- In **Mind**, you read surface thoughts.
-- In **Time**, you experience past and future sight.
-- In **Prime**, you harmonize magical energy.
-- In **Spirit**, you interact with the spirit world.
-- In **Forces**, you control minor forces.
-- In **Matter**, you perform basic transformations.
-- In **Correspondence**, you touch and sense space.
-- In **Life**, you alter simple patterns.
+* In **Entropy**, you control probability.
+* In **Mind**, you read surface thoughts.
+* In **Time**, you experience past and future sight.
+* In **Prime**, you harmonize magical energy.
+* In **Spirit**, you interact with the spirit world.
+* In **Forces**, you control minor forces.
+* In **Matter**, you perform basic transformations.
+* In **Correspondence**, you touch and sense space.
+* In **Life**, you alter simple patterns.
 
 ### Level 3: **Weave** (from Old English *wefan*, from Proto-Germanic *webaną*, to weave)
 You weave different magical aspects together, integrating and manipulating complex patterns:
-- In **Entropy**, you affect predictable patterns.
-- In **Mind**, you create a mental link.
-- In **Time**, you manipulate time compression or extension.
-- In **Prime**, you channel magical energy.
-- In **Spirit**, you enter and influence the spirit world.
-- In **Forces**, you transmute minor forces.
-- In **Matter**, you alter forms.
-- In **Correspondence**, you achieve co-locality perception.
-- In **Life**, you transform simple life patterns.
+* In **Entropy**, you affect predictable patterns.
+* In **Mind**, you create a mental link.
+* In **Time**, you manipulate time compression or extension.
+* In **Prime**, you channel magical energy.
+* In **Spirit**, you enter and influence the spirit world.
+* In **Forces**, you transmute minor forces.
+* In **Matter**, you alter forms.
+* In **Correspondence**, you achieve co-locality perception.
+* In **Life**, you transform simple life patterns.
 
 ### Level 4: **Govern** (from Old English *governan*, from Proto-Germanic *gubernan*, to control or direct)
 At this pinnacle level, you combine the abilities of the previous Level 4 and Level 5, allowing you to craft new realities and exert near-total control:
-- In **Entropy**, you affect life and thought.
-- In **Mind**, you control the conscious mind and forge the psyche.
-- In **Time**, you perform time shifts, govern time, and travel through it.
-- In **Prime**, you create and control magical energy.
-- In **Spirit**, you rend, repair, and forge the spirit world.
-- In **Forces**, you control and transmute major forces.
-- In **Matter**, you achieve complex transmutations and alter properties at will.
-- In **Correspondence**, you co-locate yourself and others, and mutate space.
-- In **Life**, you alter complex life patterns, achieve perfect metamorphosis, and create complex life forms.
+* In **Entropy**, you affect life and thought.
+* In **Mind**, you control the conscious mind and forge the psyche.
+* In **Time**, you perform time shifts, govern time, and travel through it.
+* In **Prime**, you create and control magical energy.
+* In **Spirit**, you rend, repair, and forge the spirit world.
+* In **Forces**, you control and transmute major forces.
+* In **Matter**, you achieve complex transmutations and alter properties at will.
+* In **Correspondence**, you co-locate yourself and others, and mutate space.
+* In **Life**, you alter complex life patterns, achieve perfect metamorphosis, and create complex life forms.
 
 This structure maintains a clear progression while combining the ultimate abilities into a single, more potent level.
 
