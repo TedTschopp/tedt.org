@@ -364,7 +364,7 @@ links:
     # Midjourney
   - Name: Midjourney
     URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
-    Icon-Class: fa-solid fa-midjourney
+    Icon-Class: fa-solid fa-sailboat
     Color: '#19202c'
     Category: 'Creative'
      # GITHUB
