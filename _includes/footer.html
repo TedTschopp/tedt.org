@@ -43,34 +43,36 @@
                 </span>
               </ul>
             </div>
-            <div class="row">
-              {% assign categories = "" | split: "," %}
-              {% for link in site.links %}
-                {% unless categories contains link.Category %}
-                  {% assign categories = categories | push: link.Category %}
-                {% endunless %}
-              {% endfor %}
-              
-              {% for Category in categories %}
-                {% if forloop.first %}
-                  <div class="col-6 col-lg-2 offset-lg-1 mb-3 h-100 ">
-                {% else %}
-                  <div class="col-6 col-lg-2 mb-3 h-100 ">
-                {% endif %}
-                <p class="h5">{{ Category }}</p>
-                  <ul class="list-unstyled">
-                  {% for link in site.links %}
-                    {% if link.Category == Category %}
-                      <li class="mb-2">
-                        <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
-                          <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
-                        </a>
-                      </li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-                </div>
-              {% endfor %}
+            <div class="col-lg-8 mb-3">
+              <div class="row">
+                {% assign categories = "" | split: "," %}
+                {% for link in site.links %}
+                  {% unless categories contains link.Category %}
+                    {% assign categories = categories | push: link.Category %}
+                  {% endunless %}
+                {% endfor %}
+                
+                {% for Category in categories %}
+                  {% if forloop.first %}
+                    <div class="col-6 col-lg-2 offset-lg-1 mb-3 h-100 ">
+                  {% else %}
+                    <div class="col-6 col-lg-2 mb-3 h-100 ">
+                  {% endif %}
+                  <p class="h5">{{ Category }}</p>
+                    <ul class="list-unstyled">
+                    {% for link in site.links %}
+                      {% if link.Category == Category %}
+                        <li class="mb-2">
+                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
+                            <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
+                          </a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                  </div>
+                {% endfor %}
+              </div>
             </div>
           </div>
           <div class="row">
