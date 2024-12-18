@@ -44,7 +44,7 @@
               </ul>
             </div>
             <div class="col-lg-8 mb-3">
-              <div class="row">
+              <div class="row justify-content-end">
                 {% assign categories = "" | split: "," %}
                 {% for link in site.links %}
                   {% unless categories contains link.Category %}

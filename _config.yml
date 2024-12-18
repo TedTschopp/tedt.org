@@ -222,7 +222,7 @@ links:
     URL: 'https://ko-fi.com'
     Username: tedtschopp
     Icon-Class: fa-solid fa-mug-saucer
-    Color: '#FFDD00'
+    Color: '#FF6433'
     Category: 'Support Me'
     # Meetup
   - Name: Meetup
