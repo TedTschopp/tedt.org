@@ -27,7 +27,7 @@ givenname: Ted
 familyname: Tschopp
 
 # job title
-jobtitle: Enterprise Architect
+jobtitle: Senior Enterprise Architect
 
 #Other Names
 othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
@@ -380,28 +380,28 @@ links:
     Username: TedTschopp
     Color: '#6e5494'
     Icon-Class: fa-brands fa-github
-    Category: 'Coding & Gaming'
+    Category: 'Coding'
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
     Username: tedtschopp
     Icon-Class: fa-brands fa-dev
     Color: '#ffffff'
-    Category: 'Coding & Gaming'
+    Category: 'Coding'
     # STEAM
   - Name: Steam
     URL: https://steamcommunity.com/id
     Username: 'theothesilly'
     Color: '#66c0f4'
     Icon-Class: fa-brands fa-steam
-    Category: 'Coding & Gaming'
+    Category: 'Gaming'
     # XBOX
   - Name: xBox
     URL: https://account.xbox.com/en-us/profile?gamertag=
     Username: TheoTheSilly
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
-    Category: 'Coding & Gaming'
+    Category: 'Gaming'
 
 # hcard:
 #   organization: Distribution
