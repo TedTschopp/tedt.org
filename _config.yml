@@ -208,15 +208,22 @@ links:
     # EMAIL
   - Name: Email
     URL: 'mailto:ted@tedt.org'
-    Icon-Class: fas fa-envelope
+    Icon-Class: fa-solid fa-envelope
     Category: 'About Me'
     # BUY ME A COFFEE
   - Name: BuyMeACoffee
     URL: 'https://buymeacoffee.com'
     Username: TedT
-    Icon-Class: fas fa-mug-hot
+    Icon-Class: fa-solid fa-mug-hot
     Color: '#FFDD00'
-    Category: 'About Me'
+    Category: 'Support Me'
+    # Ko-Fi
+  - Name: Ko-Fi
+    URL: 'https://ko-fi.com'
+    Username: tedtschopp
+    Icon-Class: fa-solid fa-mug-saucer
+    Color: '#FFDD00'
+    Category: 'Support Me'
     # Meetup
   - Name: Meetup
     URL: 'https://www.meetup.com/members/'
@@ -228,7 +235,7 @@ links:
   - Name: Foursquare
     URL: https://foursquare.com
     Username: tedtschopp
-    Icon-Class: fab fa-foursquare
+    Icon-Class: fa-brands fa-foursquare
     Color: '#0072b1'
     Category: 'About Me'
     # web.brid.gy
@@ -262,21 +269,21 @@ links:
     URL: https://www.facebook.com
     Username: ted.tschopp
     Color: '#3b5998'
-    Icon-Class: fab fa-facebook
+    Icon-Class: fa-brands fa-facebook
     Category: 'Social Media'
     # INSTAGRAM
   - Name: Instagram
     URL: https://www.instagram.com
     Username: TedTschopp
     Color: '#DD2A7B'
-    Icon-Class: fab fa-instagram
+    Icon-Class: fa-brands fa-instagram
     Category: 'Social Media'
     # MESSENGER
   - Name: Messenger
     URL: https://m.me
     Username: TedTschopp
     Color: '#006AFF'
-    Icon-Class: fab fa-facebook-messenger
+    Icon-Class: fa-brands fa-facebook-messenger
     Category: 'Social Media'
     # TWITTER
   - Name: Twitter
@@ -290,26 +297,26 @@ links:
     URL: https://www.linkedin.com/in
     Username: tedtschopp
     Color: '#2867B2'
-    Icon-Class: fab fa-linkedin-in
+    Icon-Class: fa-brands fa-linkedin-in
     Category: 'Social Media'
     # SNAPCHAT
   - Name: Snapchat
     URL: https://www.snapchat.com/add
     Username: 'TedTschopp'
     Color: '#FFFC00'
-    Icon-Class: fab fa-snapchat-ghost
+    Icon-Class: fa-brands fa-snapchat-ghost
     Category: 'Social Media'
     # REDDIT
   - Name: Reddit
     URL: http://reddit.com/u
     Username: TedTschopp
     Color: '#FF4500'
-    Icon-Class: fab fa-reddit-alien
+    Icon-Class: fa-brands fa-reddit-alien
     Category: 'Social Media'
     # GOODREADS
   - Name: Goodreads
     URL: https://www.goodreads.com/user/show/856383-ted-tschopp
-    Icon-Class: fab fa-goodreads
+    Icon-Class: fa-brands fa-goodreads
     Color: '#e9e5cd'
     Category: 'Creative'
     # PINTEREST
@@ -317,20 +324,20 @@ links:
     URL: https://pinterest.com
     Username: 'tedtschopp'
     Color: '#E60023'
-    Icon-Class: fab fa-pinterest
+    Icon-Class: fa-brands fa-pinterest
     Category: 'Creative'
     # TUMBLR
   - Name: Tumblr
     URL: https://www.tumblr.com/blog
     Username: tedtschopp
     Color: '#35465c'
-    Icon-Class: fab fa-tumblr
+    Icon-Class: fa-brands fa-tumblr
     Category: 'Creative'
     # Quora
   - Name: Quora
     URL: https://www.quora.com/profile
     Username: Ted-Tschopp
-    Icon-Class: fa fa-quora
+    Icon-Class: fa-brands fa-quora
     Color: '#B92B27'
     Category: 'Creative'
     # YOUTUBE
@@ -338,20 +345,20 @@ links:
     URL: https://www.youtube.com/channel
     Username: UC4Q8pXroTVyXrIxg2u82pwg
     Color: '#ff0000'
-    Icon-Class: fab fa-youtube
+    Icon-Class: fa-brands fa-youtube
     Category: 'Creative'
     # TWITCH
   - Name: Twitch
     URL: 'https://twitch.tv'
     Username: tedtschopp
-    Icon-Class: fab fa-twitch
+    Icon-Class: fa-brands fa-twitch
     Color: '#9147fe'
     Category: 'Creative'
     # VIMEO
   - Name: Vimeo
     URL: 'https://vimeo.com'
     Username: TedTschopp
-    Icon-Class: fab fa-vimeo-v
+    Icon-Class: fa-brands fa-vimeo-v
     Color: '#1ab7ea'
     Category: 'Creative'
     # SOUNDCLOUD
@@ -359,7 +366,7 @@ links:
     URL: https://www.soundcloud.com
     Username: ted-tschopp
     Color: '#FE5000'
-    Icon-Class: fab fa-soundcloud
+    Icon-Class: fa-brands fa-soundcloud
     Category: 'Creative'
     # Midjourney
   - Name: Midjourney
@@ -372,13 +379,13 @@ links:
     URL: http://github.com
     Username: TedTschopp
     Color: '#6e5494'
-    Icon-Class: fab fa-github
+    Icon-Class: fa-brands fa-github
     Category: 'Coding & Gaming'
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
     Username: tedtschopp
-    Icon-Class: fab fa-dev
+    Icon-Class: fa-brands fa-dev
     Color: '#ffffff'
     Category: 'Coding & Gaming'
     # STEAM
@@ -386,7 +393,7 @@ links:
     URL: https://steamcommunity.com/id
     Username: 'theothesilly'
     Color: '#66c0f4'
-    Icon-Class: fab fa-steam
+    Icon-Class: fa-brands fa-steam
     Category: 'Coding & Gaming'
     # XBOX
   - Name: xBox
