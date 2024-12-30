@@ -26,7 +26,7 @@ seo-description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The
 
 categories:
   - Role Playing Games
-  - "Märchen Engine, The"
+  - "The Märchen Engine"
 tags:
   - RPG
   - Game Mechanics

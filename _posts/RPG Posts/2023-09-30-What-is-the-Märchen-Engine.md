@@ -28,7 +28,7 @@ seo-description:
 
 categories:
 - Role Playing Games
-- "Märchen Engine, The"
+- "The Märchen Engine"
 tags:
 keywords:
 
@@ -65,7 +65,7 @@ If you are new to roleplaying, you might be asking yourself, “What is a rolepl
 
 In a roleplaying game (RPG) or table top role playing game (TTRPG), you step into the shoes of a character in a fictional world. You're responsible for bringing this character to life, either through actual role-playing or through a series of structured decisions and character growth. The outcomes of your actions are determined by a set of formal rules and guidelines, like those found in the Märchen Engine.
 
-When you play in a session of Märchen Engine, the game unfolds through conversation. One of you takes on the role of the Referee, who not only interprets the rules but also sets the stage for the game's world. The rest of you each control a single character. Together with the Referee, you all weave a narrative. It's akin to the imaginative games of make-believe you might have played as a child, but now with the added elements of dice and structure.
+When you play in a session of The Märchen Engine game unfolds through conversation. One of you takes on the role of the Referee, who not only interprets the rules but also sets the stage for the game's world. The rest of you each control a single character. Together with the Referee, you all weave a narrative. It's akin to the imaginative games of make-believe you might have played as a child, but now with the added elements of dice and structure.
 
 ## What Is the Märchen Engine?
 
@@ -215,7 +215,7 @@ In the Märchen Engine framework, one player is designated to take on the role o
 
 ## Characters
 
-In the Märchen Engine, there are two main categories of heroes: Player Characters (PCs) and Non-Player Characters (NPCs). A Player Character is a fictional figure within the Märchen Engine universe whose actions are directly steered by a human player, rather than being dictated by the game's rules. On the other hand, Non-Player Characters are those not controlled by any of the players. The behavior and actions of these NPCs are usually managed by the Referee.
+In the The Märchen Enginere are two main categories of heroes: Player Characters (PCs) and Non-Player Characters (NPCs). A Player Character is a fictional figure within the Märchen Engine universe whose actions are directly steered by a human player, rather than being dictated by the game's rules. On the other hand, Non-Player Characters are those not controlled by any of the players. The behavior and actions of these NPCs are usually managed by the Referee.
 
 ### Player Characters
 

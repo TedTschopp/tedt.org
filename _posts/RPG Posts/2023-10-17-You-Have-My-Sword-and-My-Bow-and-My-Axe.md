@@ -30,7 +30,7 @@ seo-description: "Master weapon mechanics in the Märchen Engine with our exhaus
 
 categories:
   - Role Playing Games
-  - "Märchen Engine, The"
+  - "The Märchen Engine"
 tags:
   - RPG
   - Weapons
