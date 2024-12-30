@@ -286,7 +286,7 @@
 #   color-inside-hover: "#f8d7da"
 #   color-outside-hover: "#f5c6cb"  
   image: "/img/categories/shadowrun.webp"
-- category: The Märchen Engine
+- category: "Märchen Engine, The"
   title: "The Märchen Engine"
   subtitle: "Fantasy Storytelling Engine"
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
