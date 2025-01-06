@@ -184,18 +184,21 @@ links:
     # Homepage
   - Name: Website
     URL: https://www.tedt.org
+    Type: fontawsome
     Icon-Class: fas fa-home fa-lg fa-fw
     Category: 'About Me'
     # MEDIUM
   - Name: Medium
     URL: 'https://medium.com'
     Username: '@TedTschopp'
+    Type: fontawsome
     Icon-Class: fab fa-medium-m
     Color: '#00ab6c'
     Category: 'About Me'
     # Indie Web Camp
   - Name: Indieweb
     URL: https://indieweb.org/User:Www.tedt.org
+    Type: fontawsome
     Icon-Class: fa-regular fa-window-maximize
     Category: 'About Me'
     # Keybase
@@ -203,17 +206,20 @@ links:
     URL: https://keybase.io
     Username: 'tedtschopp'
     Color: '#4866b0'
+    Type: fontawsome
     Icon-Class: fa-brands fa-keybase
     Category: 'About Me'
     # EMAIL
   - Name: Email
     URL: 'mailto:ted@tedt.org'
+    Type: fontawsome
     Icon-Class: fa-solid fa-envelope
     Category: 'About Me'
     # BUY ME A COFFEE
   - Name: BuyMeACoffee
     URL: 'https://buymeacoffee.com'
     Username: TedT
+    Type: fontawsome
     Icon-Class: fa-solid fa-mug-hot
     Color: '#FFDD00'
     Category: 'Support Me'
@@ -221,6 +227,7 @@ links:
   - Name: Ko-Fi
     URL: 'https://ko-fi.com'
     Username: tedtschopp
+    Type: fontawsome
     Icon-Class: fa-solid fa-mug-saucer
     Color: '#FF6433'
     Category: 'Support Me'
@@ -228,6 +235,7 @@ links:
   - Name: Meetup
     URL: 'https://www.meetup.com/members/'
     Username: 45846/
+    Type: fontawsome
     Icon-Class: fa-brands fa-meetup
     Color: '#ED1C40'
     Category: 'About Me'
@@ -235,6 +243,7 @@ links:
   - Name: Foursquare
     URL: https://foursquare.com
     Username: tedtschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-foursquare
     Color: '#0072b1'
     Category: 'About Me'
@@ -242,12 +251,14 @@ links:
   - Name: web.brid.gy
     URL: https://web.brid.gy/r
     Username: 'https://tedt.org/'
+    Type: fontawsome
     Icon-Class: fa-solid fa-bridge
     Category: 'Social Media'
     # Mastodon
   - Name: Mastodon
     URL: https://twit.social
     Username: '@TedT'
+    Type: fontawsome
     Icon-Class: fa-brands fa-mastodon
     Color: '#595aff'
     Category: 'Social Media'
@@ -255,6 +266,7 @@ links:
   - Name: BlueSky
     URL: https://bsky.app/profile
     Username: tedt.org
+    Type: fontawsome
     Icon-Class: fa-brands fa-bluesky 
     Color: '#0085FF'
     Category: 'Social Media'
@@ -262,6 +274,7 @@ links:
   - Name: Threads
     URL: https://threads.net
     Username: '@TedTschopp'
+    Type: fontawsome
     Icon-Class: fa-brands fa-threads
     Category: 'Social Media'
     # FACEBOOK
@@ -269,6 +282,7 @@ links:
     URL: https://www.facebook.com
     Username: ted.tschopp
     Color: '#3b5998'
+    Type: fontawsome
     Icon-Class: fa-brands fa-facebook
     Category: 'Social Media'
     # INSTAGRAM
@@ -276,6 +290,7 @@ links:
     URL: https://www.instagram.com
     Username: TedTschopp
     Color: '#DD2A7B'
+    Type: fontawsome
     Icon-Class: fa-brands fa-instagram
     Category: 'Social Media'
     # MESSENGER
@@ -283,6 +298,7 @@ links:
     URL: https://m.me
     Username: TedTschopp
     Color: '#006AFF'
+    Type: fontawsome
     Icon-Class: fa-brands fa-facebook-messenger
     Category: 'Social Media'
     # TWITTER
@@ -290,6 +306,7 @@ links:
     URL: https://twitter.com
     Username: TedTschopp
     Color: '#1DA1F2'
+    Type: fontawsome
     Icon-Class: fa-brands fa-x-twitter
     Category: 'Social Media'
     # LINKEDIN
@@ -297,6 +314,7 @@ links:
     URL: https://www.linkedin.com/in
     Username: tedtschopp
     Color: '#2867B2'
+    Type: fontawsome
     Icon-Class: fa-brands fa-linkedin-in
     Category: 'Social Media'
     # SNAPCHAT
@@ -304,6 +322,7 @@ links:
     URL: https://www.snapchat.com/add
     Username: 'TedTschopp'
     Color: '#FFFC00'
+    Type: fontawsome
     Icon-Class: fa-brands fa-snapchat-ghost
     Category: 'Social Media'
     # REDDIT
@@ -311,11 +330,13 @@ links:
     URL: http://reddit.com/u
     Username: TedTschopp
     Color: '#FF4500'
+    Type: fontawsome
     Icon-Class: fa-brands fa-reddit-alien
     Category: 'Social Media'
     # GOODREADS
   - Name: Goodreads
     URL: https://www.goodreads.com/user/show/856383-ted-tschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-goodreads
     Color: '#e9e5cd'
     Category: 'Creative'
@@ -324,6 +345,7 @@ links:
     URL: https://pinterest.com
     Username: 'tedtschopp'
     Color: '#E60023'
+    Type: fontawsome
     Icon-Class: fa-brands fa-pinterest
     Category: 'Creative'
     # TUMBLR
@@ -331,12 +353,14 @@ links:
     URL: https://www.tumblr.com/blog
     Username: tedtschopp
     Color: '#35465c'
+    Type: fontawsome
     Icon-Class: fa-brands fa-tumblr
     Category: 'Creative'
     # Quora
   - Name: Quora
     URL: https://www.quora.com/profile
     Username: Ted-Tschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-quora
     Color: '#B92B27'
     Category: 'Creative'
@@ -345,12 +369,14 @@ links:
     URL: https://www.youtube.com/channel
     Username: UC4Q8pXroTVyXrIxg2u82pwg
     Color: '#ff0000'
+    Type: fontawsome
     Icon-Class: fa-brands fa-youtube
     Category: 'Creative'
     # TWITCH
   - Name: Twitch
     URL: 'https://twitch.tv'
     Username: tedtschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-twitch
     Color: '#9147fe'
     Category: 'Creative'
@@ -358,6 +384,7 @@ links:
   - Name: Vimeo
     URL: 'https://vimeo.com'
     Username: TedTschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-vimeo-v
     Color: '#1ab7ea'
     Category: 'Creative'
@@ -366,11 +393,13 @@ links:
     URL: https://www.soundcloud.com
     Username: ted-tschopp
     Color: '#FE5000'
+    Type: fontawsome
     Icon-Class: fa-brands fa-soundcloud
     Category: 'Creative'
     # Midjourney
   - Name: Midjourney
     URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
+    Type: fontawsome
     Icon-Class: fa-solid fa-sailboat
     Color: '#e6dfd3'
     Category: 'Creative'
@@ -379,6 +408,7 @@ links:
     URL: http://github.com
     Username: TedTschopp
     Color: '#6e5494'
+    Type: fontawsome
     Icon-Class: fa-brands fa-github
     Category: 'Coding'
      # HuggingFace
@@ -386,13 +416,15 @@ links:
     URL: https://huggingface.co
     Username: TedTschopp
     Color: '#6e5494'
-    Icon-Class: emoji 🤗
+    Type: emoji
+    Icon-Class:  🤗
     Category: 'Coding'
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
     Username: tedtschopp
     Icon-Class: fa-brands fa-dev
+    Type: fontawsome
     Color: '#ffffff'
     Category: 'Coding'
     # STEAM
@@ -400,18 +432,21 @@ links:
     URL: https://steamcommunity.com/id
     Username: 'TedTschopp'
     Color: '#66c0f4'
+    Type: fontawsome
     Icon-Class: fa-brands fa-steam
     Category: 'Gaming'
     # XBOX
   - Name: xBox
     URL: https://account.xbox.com/en-us/profile?gamertag=
     Username: TedTschopp
+    Type: fontawsome
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
     Category: 'Gaming'
   - Name: xBox
     URL: https://www.gog.com/u
     Username: TedTschopp
+    Type: fontawsome
     Icon-Class: fa-solid fa-gamepad
     Color: '#86328A'
     Category: 'Gaming'

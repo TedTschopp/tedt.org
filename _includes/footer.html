@@ -64,10 +64,9 @@
                       {% if link.Category == Category %}
                         <li class="mb-2">
                           <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
-                            {% assign is_emoji = link.Icon-Class | slice: 0, 5 == "emoji" %}
-                            {% if is_emoji %}
-                              {{link.Icon-Class | slice: 6}}{{link.Name}}
-                            {% else %}
+                            {% if link.Type == "emoji" %}
+                              {{link.Icon-Class}} {{link.Name}}
+                            {% elsif link.Type == "fontawsome" %}
                               <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
                             {% endif %}
                           </a>
