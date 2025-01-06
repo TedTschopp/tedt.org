@@ -388,9 +388,6 @@ links:
     Color: '#6e5494'
     Icon-Class: emoji 🤗
     Category: 'Coding'
-
-
-
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
