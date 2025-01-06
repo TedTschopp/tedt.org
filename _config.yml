@@ -381,6 +381,16 @@ links:
     Color: '#6e5494'
     Icon-Class: fa-brands fa-github
     Category: 'Coding'
+     # HuggingFace
+  - Name: Hugging Face
+    URL: https://huggingface.co
+    Username: TedTschopp
+    Color: '#6e5494'
+    Icon-Class: emoji 🤗
+    Category: 'Coding'
+
+
+
     # DEV.TO
   - Name: Dev.to
     URL: 'https://dev.to'
