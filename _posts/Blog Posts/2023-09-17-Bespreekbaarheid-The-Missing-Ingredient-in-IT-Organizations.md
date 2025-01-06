@@ -56,6 +56,7 @@ image-title:
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
+mastodon-post-id: 113782781327230004
 
 mathjax:
 
