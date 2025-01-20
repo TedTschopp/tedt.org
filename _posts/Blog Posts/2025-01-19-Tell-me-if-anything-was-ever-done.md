@@ -11,7 +11,7 @@ source: "Original Content"
 source-url: "https://tedt.org/blog/the-tyranny-of-the-possible"
 call-to-action: "Take inspiration from Leonardo: stop waiting for perfection—ship your ideas, share your work, and let your creations inspire others."
 
-date: 2023-10-12 11:49:44
+date: 2025-01-19 22:01:31
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -20,14 +20,13 @@ author:
 
 bullets:
     - Leonardo’s struggle with unfinished projects and perfectionism.
-    - The significance of “done” for creators.
+    - The significance of 'done' for creators.
     - Lessons from Leonardo’s reflections on delivering value.
     - Why sharing imperfect ideas can inspire others.
     - How unfinished ideas shaped art, science, and engineering.
 
-
-
 description: "Explore how Leonardo da Vinci’s unfinished works and perfectionism offer timeless lessons for creators. Learn why shipping your ideas, even when imperfect, can inspire the world and leave a lasting legacy."
+
 seo-description: "Explore how Leonardo da Vinci’s unfinished works and perfectionism offer timeless lessons for creators. Learn why shipping your ideas, even when imperfect, can inspire the world and leave a lasting legacy."
 
 categories: 
