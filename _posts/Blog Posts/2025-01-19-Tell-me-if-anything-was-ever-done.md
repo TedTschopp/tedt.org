@@ -8,7 +8,7 @@ subtitle-url:
 quote: "Tell me if anything was ever done… Tell me if ever I did a thing… Tell me if anything was ever made. — Leonardo da Vinci"
 excerpt: "Leonardo da Vinci’s notebooks show the struggle of a brilliant mind weighed down by perfectionism. His haunting question, "What have I truly accomplished?", inspires creators today to share their ideas, embrace imperfection, and deliver value to the world."
 source: "Original Content"
-source-url: "https://tedt.org/blog/the-tyranny-of-the-possible"
+source-url: "https://tedt.org/blog/Tell-me-if-anything-was-ever-done"
 call-to-action: "Take inspiration from Leonardo: stop waiting for perfection—ship your ideas, share your work, and let your creations inspire others."
 
 date: 2025-01-19 22:01:31
