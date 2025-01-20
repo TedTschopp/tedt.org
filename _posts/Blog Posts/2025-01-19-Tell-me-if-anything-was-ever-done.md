@@ -52,10 +52,10 @@ image-credits-URL: "https://tedt.org/"
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: "Leonardo Quote"
-image-description: "An AI image of Leonardo Di Vinci with a quote: Tell me if anything was ever done…, Tell me if ever I did a thing…, Tell me if anything was ever made…"
+image-description: "An AI image of Leonardo Di Vinci"
 image-title: "Leonardo Quote"
 
-mastodon-post-id: 
+mastodon-post-id: 113859271380786463
 
 ---
 
