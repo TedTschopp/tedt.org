@@ -90,10 +90,10 @@
                               {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                               {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
                               {% assign image_URL = post.image %}
-                              <div class="card p-0 h-100 position-relative" style="max-width: 640px;">
+                              <div class="card p-0 h-100 position-relative" border-0 style="max-width: 640px;">
                                 <div class="row g-0 h-100">
                                   <div class="col-md-4 h-100">
-                                    <img src="{{ image_URL }}" class="img-fluid object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
+                                    <img src="{{ image_URL }}" class="img-fluid pt-3 object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
                                   </div>
                                   <div class="col-md-8 d-flex align-items-center">
                                     <div class="card-body">
@@ -116,7 +116,7 @@
                                 </div>
                               </div>
                             {% else %}
-                              <div class="card p-0 h-100 position-relative" style="max-width: 640px;">
+                              <div class="card p-0 h-100 border-0 position-relative" style="max-width: 640px;">
                                 <div class="row g-0 h-100">
                                   <div class="col-md-12 d-flex align-items-center">
                                     <div class="card-body">
@@ -168,10 +168,10 @@
                           {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                           {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
                           {% assign image_URL = post.image %}
-                          <div class="card p-0 h-100 position-relative" style="max-width: 640px;">
+                          <div class="card border-0 p-0 h-100 position-relative" style="max-width: 640px;">
                             <div class="row g-0 h-100">
                               <div class="col-md-4 h-100">
-                                <img src="{{ image_URL }}" class="img-fluid object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
+                                <img src="{{ image_URL }}" class="img-fluid pt-3 object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
                               </div>
                               <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
@@ -194,7 +194,7 @@
                             </div>
                           </div>
                         {% else %}
-                          <div class="card p-0 h-100 position-relative" style="max-width: 640px;">
+                          <div class="card border-0 p-0 h-100 position-relative" style="max-width: 640px;">
                             <div class="row g-0 h-100">
                               <div class="col-md-12 d-flex align-items-center">
                                 <div class="card-body">
@@ -310,10 +310,10 @@
                                       {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                                       {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
                                       {% assign image_URL = post.image %}
-                                      <div class="card p-0 h-100 position-relative" style="max-width: 640px;">
+                                      <div class="card border-0 p-0 h-100 position-relative" style="max-width: 640px;">
                                         <div class="row g-0 h-100">
                                           <div class="col-md-4 h-100">
-                                              <img src="{{ image_URL }}" class="img-fluid object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
+                                              <img src="{{ image_URL }}" class="img-fluid pt-3 object-fit-cover" alt="{{image_alt}} by {{image_credits}}">
                                           </div>
                                           <div class="col-md-8 d-flex align-items-center">
                                             <div class="card-body">
@@ -336,7 +336,7 @@
                                         </div>
                                       </div>
                                     {% else %}
-                                      <div class="card p-0 h-100 position-relative">
+                                      <div class="card border-0 p-0 h-100 position-relative">
                                         <div class="row g-0 h-100">
                                           <div class="col-md-12 d-flex align-items-center">
                                             <div class="card-body">
