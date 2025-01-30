@@ -1,19 +1,19 @@
 ---
 layout: post
 
-title: Senior Enterprise Architect, Software at Southern California Edison
+title: Senior Enterprise Architect, Artificial Intelligence & Software at Southern California Edison
 title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
 subtitle:
 subtitle-url:
 quote:
-excerpt: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
+excerpt: I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 100 AI models and 500 software products, leveraging multiple architectural models.
 source:
 source-url:
 call-to-action:
 
 date: 2018-06-03 07:11:42-07:00
-update:
-start-date: January 2010
+update: 2025-01-30 08:26:48
+start-date: January 2020
 stop-date: Present
 
 author:

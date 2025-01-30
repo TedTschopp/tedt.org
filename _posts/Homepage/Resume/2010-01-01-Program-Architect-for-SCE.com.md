@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Practice Lead & Solution Architect for SCE.com at Southern California Edison
+title: Senior Solution Architect for SCE.com at Southern California Edison
 title-url: https://www.sce.com/
 subtitle:
 subtitle-url:
@@ -13,9 +13,9 @@ call-to-action:
 company: SCE
 
 date: 2018-06-03 07:11:51-07:00
-update:
-start-date: September 2004
-stop-date: January 2010
+update: 2025-01-30 08:29:38
+start-date: January 2010
+stop-date: January 2020
 
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -23,17 +23,19 @@ author:
     url: https://tedt.org/
 
 bullets:
-- 50% cost savings on SCE’s first mobile app for iOS and Android
-- $12M savings on SCE.com rebranding project’s costs using agile methodologies focusing
-    on expected outcomes
-- Seat on IBM’s Digital Experience Customer Advisory Council
-- 20 index point increase in user satisfaction through a mobile first strategy
-- Developed technology portion of business case for capital program - $70M
-- 40% increase in self-service transactions
-- 10 x increase in mobile page views to +40% of site traffic
-- 75% increase for turn on/off service and 75% decrease in manual order processing
-- Represented SCE’s digital and ecommerce interests on the Utility Information Technology
-    Benchmark (UNITE) group.
+
+- Reduced third-party vendor costs by 50% to deliver SCE’s first mobile app for iPhone and Android. 
+- Cut costs of the SCE.com rebranding project from $13MM to under $1MM by implementing agile methodologies. 
+- Represented SCE’s digital and web interests in the UNITE group and IBM Digital Experience Customer Advisory Council. 
+- Increased user satisfaction ratings by 20 index points through a mobile-first strategy. 
+- Supported business case development for a $70MM capital program. 
+- Supported business case development for a $25MM capital program. 
+- Drove a 40% increase in self-service transaction growth. 
+- Boosted mobile page views by 1000%, reaching 40% of total site traffic. 
+- Improved turn-on/off service transactions by 75% while reducing manual order processing by 70%. 
+- Led the development of user privacy, security, and identity management upgrades.
+
+
 
 description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
 seo-description: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
