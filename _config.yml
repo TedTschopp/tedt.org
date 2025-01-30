@@ -443,7 +443,7 @@ links:
     Icon-Class: fa-brands fa-xbox
     Color: '#107C10'
     Category: 'Gaming'
-  - Name: xBox
+  - Name: GoG
     URL: https://www.gog.com/u
     Username: TedTschopp
     Type: fontawsome
