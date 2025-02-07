@@ -65,7 +65,7 @@
                         <li class="mb-2">
                           <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
                             {% if link.Type == "emoji" %}
-                              {{link.Icon-Class}} {{link.Name}}
+                              <span style="text-decoration: none;">{{link.Icon-Class}} </span>{{link.Name}}
                             {% elsif link.Type == "fontawsome" %}
                               <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}
                             {% endif %}
