@@ -6,7 +6,7 @@ subtitle: "AI isn't about making developers faster—it’s about making teams s
 quote: "The future of development isn’t a factory of coders racing against machines, but a workshop of diverse thinkers creating together."
 excerpt: "AI tools like GitHub Copilot aren’t just about speeding up coding—they’re about making software development more collaborative. This post explores the real impact of AI on teams and how to use it wisely."
 source: "Original Content"
-source-url: ""
+source-url: "https://tedt.org/blog/Tell-me-if-anything-was-ever-done"
 call-to-action: "Rethink how AI fits into your team. It's not just about speed—it's about collaboration."
 
 date: 2025-02-13 12:54:18
