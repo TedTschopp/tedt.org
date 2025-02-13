@@ -2,9 +2,7 @@
 layout: post
 
 title: "Tell me if anything was ever done"
-title-url: 
 subtitle: "Lessons from Leonardo di Vinci"
-subtitle-url: 
 quote: "Tell me if anything was ever done… Tell me if ever I did a thing… Tell me if anything was ever made. — Leonardo da Vinci"
 excerpt: "Leonardo da Vinci’s notebooks show the struggle of a brilliant mind weighed down by perfectionism. His haunting question, 'What have I truly accomplished?', inspires creators today to share their ideas, embrace imperfection, and deliver value to the world."
 source: "Original Content"
@@ -34,6 +32,8 @@ categories:
     - Philosophy
     - Personal Writing
     - Science
+
+
 tags: Leonardo da Vinci, creativity, perfectionism, shipping ideas, productivity tips, legacy, inspiration, unfinished work
 keywords: Leonardo da Vinci, creativity lessons, perfectionism, shipping ideas, creator mindset, unfinished projects, delivering value, inspire others, creative legacy
 
