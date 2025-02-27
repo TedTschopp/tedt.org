@@ -608,18 +608,18 @@
     <script>
         // Common Traveller Skills
         const commonSkills = [
-            "Admin", "Advocate", "Animals", "Athletics", "Art", "Astrogation", "Battle Dress", 
-            "Broker", "Carouse", "Deception", "Diplomat", "Drive", "Electronics", "Engineer", 
-            "Explosives", "Flyer", "Gambler", "Gunner", "Gun Combat", "Heavy Weapons", "Investigate", 
-            "Jack of all Trades", "Language", "Leadership", "Mechanic", "Medic", "Melee", "Navigation", 
-            "Persuade", "Pilot", "Profession", "Recon", "Science", "Seafarer", "Stealth", "Steward", 
-            "Streetwise", "Survival", "Tactics", "Vacc Suit", "Zero-G"
+            "Admin", "Advocate", "Animals", "Art", "Athletics", "Astrogation", "Battle Dress",
+            "Broker", "Carouse", "Deception", "Diplomat", "Drive", "Electronics", "Engineer",
+            "Explosives", "Flyer", "Gambler", "Gun Combat", "Gunner", "Heavy Weapons", "Investigate",
+            "Jack of all Trades", "Language", "Leadership", "Mechanic", "Medic", "Melee", "Navigation",
+            "Persuade", "Pilot", "Profession", "Recon", "Science", "Seafarer", "Stealth", "Steward",
+            "Streetwise", "Survival", "Tactics", "Vacc Suit"
         ];
 
         // Skills that require adding all specializations when one is learned
         const skillsWithMandatorySpecializations = [
             "Athletics", "Drive", "Flyer", "Gunner", "Heavy Weapons", 
-            "Melee", "Pilot", "Seafarer", "Vacc Suit"
+            "Melee", "Pilot", "Seafarer"
         ];
 
         // Common specializations for skills
@@ -629,20 +629,19 @@
             "Athletics": ["Dexterity", "Endurance", "Strength"],
             "Drive": ["Hovercraft", "Mole", "Tracked", "Walker", "Wheeled"],
             "Electronics": ["Comms", "Computers", "Remote Ops", "Sensors"],
-            "Engineer": ["J-Drive", "Life Support", "M-Drive", "Power", "Electronics"],
+            "Engineer": ["J-Drive", "Life Support", "M-Drive", "Power"],
             "Flyer": ["Airship", "Grav", "Ornithopter", "Rotor", "Wing"],
             "Gun Combat": ["Archaic", "Energy", "Slug"],
             "Gunner": ["Capital", "Ortillery", "Screen", "Turret"],
             "Heavy Weapons": ["Artillery", "Man Portable", "Vehicle"],
-            "Language": ["Anglic", "Vilani", "Zdetl", "Oynprith", "Other"],
+            "Language": ["Anglic", "Aslan", "Vargr", "Vilani", "Zdetl", "Oynprith", "Other"],
             "Mechanic": ["Aircraft", "Gravitics", "Mole", "Walker", "Wheeled"],
             "Melee": ["Blade", "Bludgeon", "Natural", "Unarmed"],
             "Pilot": ["Capital Ships", "Small Craft", "Spacecraft"],
             "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
-            "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Robotics", "Sophontology", "Xenology"],
+            "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Physics", "Planetology", "Psionicology", "Robotics", "Sophontology", "Xenology"],
             "Seafarer": ["Ocean Ships", "Personal", "Sail", "Submarine"],
-            "Tactics": ["Military", "Naval"],
-            "Vacc Suit": ["Zero-G"]
+            "Tactics": ["Military", "Naval"]
         };
 
         // Initialize the character sheet
@@ -1291,6 +1290,34 @@
             };
             
             input.click();
+        }
+
+        // Add weapon to the weapons table
+        function addWeapon() {
+            const weaponName = document.getElementById('weaponName').value;
+            const weaponDamage = document.getElementById('weaponDamage').value;
+            const weaponRange = document.getElementById('weaponRange').value;
+            
+            if (!weaponName) return;
+            
+            const weaponsContainer = document.getElementById('weapons-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${weaponName}</td>
+                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
+                <td>${weaponDamage}</td>
+                <td>${weaponRange}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            weaponsContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('weaponName').value = '';
+            document.getElementById('weaponDamage').value = '';
+            document.getElementById('weaponRange').value = '';
         }
     </script>
 </body>
