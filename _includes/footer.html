@@ -63,7 +63,7 @@
                     {% for link in site.links %}
                       {% if link.Category == Category %}
                         <li class="mb-2">
-                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
+                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url {% if link.Type == "emoji" %}no-underline{% endif %}" style="color: {{ link.Text_Color }}"  >
                             {% if link.Type == "emoji" %}
                               <span style="text-decoration: none;">{{link.Icon-Class}} </span>{{link.Name}}
                             {% elsif link.Type == "fontawsome" %}
