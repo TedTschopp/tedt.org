@@ -615,6 +615,12 @@
             "Streetwise", "Survival", "Tactics", "Vacc Suit", "Zero-G"
         ];
 
+        // Skills that require adding all specializations when one is learned
+        const skillsWithMandatorySpecializations = [
+            "Athletics", "Drive", "Flyer", "Gunner", "Heavy Weapons", 
+            "Melee", "Pilot", "Seafarer", "Vacc Suit"
+        ];
+
         // Common specializations for skills
         const skillSpecializations = {
             "Animals": ["Handling", "Training", "Veterinary"],
@@ -634,7 +640,8 @@
             "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
             "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Robotics", "Sophontology", "Xenology"],
             "Seafarer": ["Ocean Ships", "Personal", "Sail", "Submarine"],
-            "Tactics": ["Military", "Naval"]
+            "Tactics": ["Military", "Naval"],
+            "Vacc Suit": ["Zero-G"]
         };
 
         // Initialize the character sheet
@@ -736,71 +743,64 @@
             }
         }
 
-        // Add a skill to the skills list
+        // Modified addSkill function to handle mandatory specializations
         function addSkill() {
             const skillName = document.getElementById('skillSearch').value;
             const specialization = document.getElementById('specializationField').value;
-            const skillLevel = document.getElementById('skillLevel').value;
+            const skillLevel = document.getElementById('skillLevel').value || 0;
             
             if (!skillName) return;
             
-            // Format the skill name with specialization
-            const fullSkillName = specialization ? 
-                `${skillName} (${specialization})` : skillName;
-            
-            // Check if skill with this specialization already exists
-            const existingSkills = document.querySelectorAll('.skill-name');
-            for (let i = 0; i < existingSkills.length; i++) {
-                if (existingSkills[i].textContent === fullSkillName) {
-                    alert('This skill/specialization combination already exists in your list.');
+            // Special handling for skills with mandatory specializations
+            if (skillsWithMandatorySpecializations.includes(skillName)) {
+                if (!specialization && skillSpecializations[skillName]?.length > 0) {
+                    alert(`The skill "${skillName}" requires you to select a specialization.`);
                     return;
+                }
+                
+                // Add all specializations at level 0, with the chosen one at the specified level
+                const specs = skillSpecializations[skillName] || [];
+                if (specs.length > 0) {
+                    // First check if any specializations already exist
+                    const existingSpecs = getExistingSpecializations(skillName);
+                    
+                    // If not all specializations exist yet, add all of them
+                    if (existingSpecs.length < specs.length) {
+                        for (const spec of specs) {
+                            if (!existingSpecs.includes(spec)) {
+                                // This is the chosen specialization, add it with the specified level
+                                if (spec === specialization) {
+                                    addSingleSkill(skillName, spec, skillLevel);
+                                } else {
+                                    // Other specializations are added at level 0
+                                    addSingleSkill(skillName, spec, 0);
+                                }
+                            }
+                        }
+                        alert(`All specializations for ${skillName} have been added to your character sheet.`);
+                        return;
+                    } else {
+                        // If all specializations already exist, just update the level of the chosen one
+                        updateExistingSkill(skillName, specialization, skillLevel);
+                        return;
+                    }
                 }
             }
             
-            const skillsContainer = document.getElementById('skills-container');
-            const skillDiv = document.createElement('div');
-            skillDiv.className = 'skill-item';
-            
-            // Store both skill name and specialization separately for data handling
-            skillDiv.innerHTML = `
-                <span class="skill-name" data-skill="${skillName}" data-specialization="${specialization || ''}">
-                    ${skillName}${specialization ? ` <span class="skill-specialization">(${specialization})</span>` : ''}
-                </span>
-                <div class="d-flex align-items-center">
-                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
-                    <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
-                </div>
-            `;
-            
-            skillsContainer.appendChild(skillDiv);
+            // Standard skill addition for non-special skills
+            addSingleSkill(skillName, specialization, skillLevel);
             
             // Clear inputs
             document.getElementById('skillSearch').value = '';
             document.getElementById('specializationField').value = '';
             document.getElementById('skillLevel').value = 0;
         }
-
-        // Add weapon to the weapons table
-        function addWeapon() {
-            const weaponName = document.getElementById('weaponName').value;
-            const weaponDamage = document.getElementById('weaponDamage').value;
-            const weaponRange = document.getElementById('weaponRange').value;
-            
-            if (!weaponName) return;
-            
-            const weaponsContainer = document.getElementById('weapons-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${weaponName}</td>
-                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
-                <td>${weaponDamage}</td>
-                <td>${weaponRange}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-            
-            weaponsContainer.appendChild(row);
+        
+        // Helper function to add a single skill
+        function addSingleSkill(skillName, specialization, skillLevel) {
+            // Format the skill name with specialization
+            const fullSkillName = specialization ? 
+                `${skillName} (${specialization})` : skillName;
             
             // Clear inputs
             document.getElementById('weaponName').value = '';
