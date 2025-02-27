@@ -961,9 +961,18 @@
                 charName: document.getElementById('charName').value,
                 species: document.getElementById('species').value,
                 age: document.getElementById('age').value,
-                career: document.getElementById('career').value,
-                terms: document.getElementById('terms').value,
-                rank: document.getElementById('rank').value,
+                
+                // Get career details
+                careers: Array.from(document.getElementById('careers-container').querySelectorAll('tr')).map(row => {
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length < 4) return null;
+                    return {
+                        career: cells[0].getAttribute('data-career') || cells[0].textContent,
+                        terms: cells[1].getAttribute('data-terms') || cells[1].textContent,
+                        rank: cells[2].getAttribute('data-rank') || cells[2].textContent,
+                        benefits: cells[3].getAttribute('data-benefits') || cells[3].textContent
+                    };
+                }).filter(c => c !== null),
                 
                 // Characteristics
                 str: document.getElementById('str').value,
@@ -1061,9 +1070,28 @@
                 document.getElementById('charName').value = character.charName || '';
                 document.getElementById('species').value = character.species || 'Human';
                 document.getElementById('age').value = character.age || '18';
-                document.getElementById('career').value = character.career || '';
-                document.getElementById('terms').value = character.terms || '0';
-                document.getElementById('rank').value = character.rank || '';
+                
+                // Clear existing careers
+                document.getElementById('careers-container').innerHTML = '';
+                
+                // Load careers if they exist
+                if (character.careers && character.careers.length) {
+                    character.careers.forEach(careerData => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td data-career="${careerData.career}">${careerData.career}</td>
+                            <td data-terms="${careerData.terms}">${careerData.terms}</td>
+                            <td data-rank="${careerData.rank}">${careerData.rank}</td>
+                            <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                            </td>
+                        `;
+                        document.getElementById('careers-container').appendChild(row);
+                    });
+                    
+                    updateTotalTerms();
+                }
                 
                 // Characteristics
                 document.getElementById('str').value = character.str || '7';
@@ -1186,9 +1214,6 @@
                 document.getElementById('charName').value = '';
                 document.getElementById('species').value = 'Human';
                 document.getElementById('age').value = '18';
-                document.getElementById('career').value = '';
-                document.getElementById('terms').value = '0';
-                document.getElementById('rank').value = '';
                 
                 // Characteristics
                 document.getElementById('str').value = '7';
@@ -1319,6 +1344,191 @@
             document.getElementById('weaponDamage').value = '';
             document.getElementById('weaponRange').value = '';
         }
+
+        // MGT2 Careers from the rulebook
+        const mgt2Careers = [
+            "Agent", "Army", "Citizen", "Drifter", "Entertainer", 
+            "Marine", "Merchant", "Navy", "Noble", "Rogue", 
+            "Scholar", "Scout", "Psion"
+        ];
+        
+        // Additional careers from supplements
+        const supplementCareers = [
+            "Aerospace Defense", "Advocate", "Barbarian", "Belter", "Bureaucrat",
+            "Colony Citizen", "Corsair", "Diplomat", "Doctor", "Explorer", 
+            "Flyer", "Hunter", "Journalist", "Pirate", "Prisoner",
+            "Scientist", "Spacer", "Technician", "Wanderer"
+        ];
+        
+        // Add career to the careers table
+        function addCareer() {
+            const careerName = document.getElementById('careerName').value;
+            const careerTerms = document.getElementById('careerTerms').value;
+            const careerRank = document.getElementById('careerRank').value;
+            const careerBenefits = document.getElementById('careerBenefits').value;
+            
+            if (!careerName) {
+                alert("Please select a career");
+                return;
+            }
+            
+            const careersContainer = document.getElementById('careers-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td data-career="${careerName}">${careerName}</td>
+                <td data-terms="${careerTerms}">${careerTerms}</td>
+                <td data-rank="${careerRank}">${careerRank}</td>
+                <td data-benefits="${careerBenefits}">${careerBenefits}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            careersContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('careerName').selectedIndex = 0;
+            document.getElementById('careerTerms').value = '1';
+            document.getElementById('careerRank').value = '';
+            document.getElementById('careerBenefits').value = '';
+            
+            // Update total terms
+            updateTotalTerms();
+        }
+        
+        // Calculate total terms across all careers
+        function updateTotalTerms() {
+            const careerRows = document.querySelectorAll('#careers-container tr');
+            let totalTerms = 0;
+            
+            careerRows.forEach(row => {
+                const termsCell = row.querySelector('td[data-terms]');
+                if (termsCell) {
+                    totalTerms += parseInt(termsCell.getAttribute('data-terms')) || 0;
+                }
+            });
+            
+            // Update display of total terms somewhere if needed
+            if (document.getElementById('totalTerms')) {
+                document.getElementById('totalTerms').textContent = totalTerms;
+            }
+            
+            // Calculate biological age based on terms
+            if (document.getElementById('age')) {
+                // Base age at character creation is 18
+                const biologicalAge = 18 + (totalTerms * 4);
+                document.getElementById('age').value = biologicalAge;
+            }
+        }
+        
+        // Initialize career dropdown on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Existing init code...
+            
+            // Populate career dropdown
+            const careerSelect = document.getElementById('careerName');
+            
+            // Add optgroup for core rulebook careers
+            const coreGroup = document.createElement('optgroup');
+            coreGroup.label = 'Core Rulebook';
+            mgt2Careers.forEach(career => {
+                const option = document.createElement('option');
+                option.value = career;
+                option.textContent = career;
+                coreGroup.appendChild(option);
+            });
+            careerSelect.appendChild(coreGroup);
+            
+            // Add optgroup for supplement careers
+            const suppGroup = document.createElement('optgroup');
+            suppGroup.label = 'Supplements';
+            supplementCareers.forEach(career => {
+                const option = document.createElement('option');
+                option.value = career;
+                option.textContent = career;
+                suppGroup.appendChild(option);
+            });
+            careerSelect.appendChild(suppGroup);
+        });
+
+        // Update the saveCharacter function to save careers
+        const originalSaveCharacter = saveCharacter;
+        
+        saveCharacter = function() {
+            // Create a character object using the original function's logic
+            const character = {
+                // Basic info
+                charName: document.getElementById('charName').value,
+                species: document.getElementById('species').value,
+                age: document.getElementById('age').value,
+                
+                // Get career details
+                careers: Array.from(document.getElementById('careers-container').querySelectorAll('tr')).map(row => {
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length < 4) return null;
+                    return {
+                        career: cells[0].getAttribute('data-career') || cells[0].textContent,
+                        terms: cells[1].getAttribute('data-terms') || cells[1].textContent,
+                        rank: cells[2].getAttribute('data-rank') || cells[2].textContent,
+                        benefits: cells[3].getAttribute('data-benefits') || cells[3].textContent
+                    };
+                }).filter(c => c !== null),
+                
+                // All other characteristics will remain the same
+            };
+            
+            // Store in localStorage
+            try {
+                localStorage.setItem('traveller-character', JSON.stringify(character));
+                alert('Character saved successfully!');
+            } catch (e) {
+                console.error('Save failed:', e);
+                alert('Failed to save character. Error: ' + e.message);
+            }
+        };
+        
+        // Update the loadCharacter function to load careers
+        const originalLoadCharacter = loadCharacter;
+        
+        loadCharacter = function() {
+            try {
+                const savedCharacter = localStorage.getItem('traveller-character');
+                if (!savedCharacter) {
+                    alert('No saved character found.');
+                    return;
+                }
+                
+                const character = JSON.parse(savedCharacter);
+                
+                // Clear existing careers
+                document.getElementById('careers-container').innerHTML = '';
+                
+                // Load careers if they exist
+                if (character.careers && character.careers.length) {
+                    character.careers.forEach(careerData => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td data-career="${careerData.career}">${careerData.career}</td>
+                            <td data-terms="${careerData.terms}">${careerData.terms}</td>
+                            <td data-rank="${careerData.rank}">${careerData.rank}</td>
+                            <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                            </td>
+                        `;
+                        document.getElementById('careers-container').appendChild(row);
+                    });
+                    
+                    updateTotalTerms();
+                }
+                
+                // Call the original function to load other data
+                originalLoadCharacter();
+            } catch (e) {
+                console.error('Load failed:', e);
+                alert('Failed to load character. Error: ' + e.message);
+            }
+        };
     </script>
 </body>
 </html>
