@@ -176,6 +176,18 @@
                 padding: 10px;
             }
         }
+        
+        /* Add specific style for specializations */
+        .skill-specialization {
+            font-style: italic;
+            color: #555;
+            margin-left: 3px;
+        }
+        
+        /* Specialization dropdown styling */
+        #specializationField {
+            max-width: 150px;
+        }
     </style>
 </head>
 <body>
@@ -303,9 +315,10 @@
         </div>
         
         <div class="row skill-search no-print">
-            <div class="col-md-6 mb-2">
+            <div class="col-md-10 mb-2">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="skillSearch" placeholder="Search or add skill...">
+                    <input type="text" class="form-control" id="skillSearch" placeholder="Skill name...">
+                    <input type="text" class="form-control" id="specializationField" placeholder="Specialization (optional)">
                     <input type="number" class="form-control" id="skillLevel" placeholder="Level" min="0" value="0" style="max-width: 80px;">
                     <button class="btn btn-add" onclick="addSkill()">Add</button>
                 </div>
@@ -502,6 +515,28 @@
             "Streetwise", "Survival", "Tactics", "Vacc Suit", "Zero-G"
         ];
 
+        // Common specializations for skills
+        const skillSpecializations = {
+            "Animals": ["Handling", "Training", "Veterinary"],
+            "Art": ["Performer", "Holography", "Instrument", "Visual Media", "Write"],
+            "Athletics": ["Dexterity", "Endurance", "Strength"],
+            "Drive": ["Hovercraft", "Mole", "Tracked", "Walker", "Wheeled"],
+            "Electronics": ["Comms", "Computers", "Remote Ops", "Sensors"],
+            "Engineer": ["J-Drive", "Life Support", "M-Drive", "Power", "Electronics"],
+            "Flyer": ["Airship", "Grav", "Ornithopter", "Rotor", "Wing"],
+            "Gun Combat": ["Archaic", "Energy", "Slug"],
+            "Gunner": ["Capital", "Ortillery", "Screen", "Turret"],
+            "Heavy Weapons": ["Artillery", "Man Portable", "Vehicle"],
+            "Language": ["Anglic", "Vilani", "Zdetl", "Oynprith", "Other"],
+            "Mechanic": ["Aircraft", "Gravitics", "Mole", "Walker", "Wheeled"],
+            "Melee": ["Blade", "Bludgeon", "Natural", "Unarmed"],
+            "Pilot": ["Capital Ships", "Small Craft", "Spacecraft"],
+            "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
+            "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Robotics", "Sophontology", "Xenology"],
+            "Seafarer": ["Ocean Ships", "Personal", "Sail", "Submarine"],
+            "Tactics": ["Military", "Naval"]
+        };
+
         // Initialize the character sheet
         document.addEventListener('DOMContentLoaded', function() {
             updateDM('str');
@@ -525,6 +560,16 @@
             document.body.appendChild(datalist);
             skillSearch.setAttribute('list', 'skill-list');
             
+            // Add autocomplete handling for specializations
+            const specializationField = document.getElementById('specializationField');
+            const specList = document.createElement('datalist');
+            specList.id = 'specialization-list';
+            document.body.appendChild(specList);
+            specializationField.setAttribute('list', 'specialization-list');
+            
+            // Update specialization options when skill changes
+            skillSearch.addEventListener('input', updateSpecializationOptions);
+            
             // Load character if exists in localStorage
             if (localStorage.getItem('traveller-character')) {
                 const loadNow = confirm('Found a saved character. Load it now?');
@@ -533,6 +578,21 @@
                 }
             }
         });
+
+        // Update specialization options based on selected skill
+        function updateSpecializationOptions() {
+            const skillName = document.getElementById('skillSearch').value;
+            const specList = document.getElementById('specialization-list');
+            specList.innerHTML = '';  // Clear existing options
+            
+            if (skillSpecializations[skillName]) {
+                skillSpecializations[skillName].forEach(spec => {
+                    const option = document.createElement('option');
+                    option.value = spec;
+                    specList.appendChild(option);
+                });
+            }
+        }
 
         // Update the DM (Dice Modifier) based on characteristic value
         function updateDM(stat) {
@@ -579,15 +639,20 @@
         // Add a skill to the skills list
         function addSkill() {
             const skillName = document.getElementById('skillSearch').value;
+            const specialization = document.getElementById('specializationField').value;
             const skillLevel = document.getElementById('skillLevel').value;
             
             if (!skillName) return;
             
-            // Check if skill already exists
+            // Format the skill name with specialization
+            const fullSkillName = specialization ? 
+                `${skillName} (${specialization})` : skillName;
+            
+            // Check if skill with this specialization already exists
             const existingSkills = document.querySelectorAll('.skill-name');
             for (let i = 0; i < existingSkills.length; i++) {
-                if (existingSkills[i].textContent === skillName) {
-                    alert('This skill already exists in your list.');
+                if (existingSkills[i].textContent === fullSkillName) {
+                    alert('This skill/specialization combination already exists in your list.');
                     return;
                 }
             }
@@ -595,8 +660,12 @@
             const skillsContainer = document.getElementById('skills-container');
             const skillDiv = document.createElement('div');
             skillDiv.className = 'skill-item';
+            
+            // Store both skill name and specialization separately for data handling
             skillDiv.innerHTML = `
-                <span class="skill-name">${skillName}</span>
+                <span class="skill-name" data-skill="${skillName}" data-specialization="${specialization || ''}">
+                    ${skillName}${specialization ? ` <span class="skill-specialization">(${specialization})</span>` : ''}
+                </span>
                 <div class="d-flex align-items-center">
                     <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
                     <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
@@ -607,6 +676,7 @@
             
             // Clear inputs
             document.getElementById('skillSearch').value = '';
+            document.getElementById('specializationField').value = '';
             document.getElementById('skillLevel').value = 0;
         }
 
@@ -767,8 +837,10 @@
                 
                 // Skills
                 skills: Array.from(document.querySelectorAll('.skill-item')).map(item => {
+                    const skillElement = item.querySelector('.skill-name');
                     return {
-                        name: item.querySelector('.skill-name').textContent,
+                        name: skillElement.getAttribute('data-skill'),
+                        specialization: skillElement.getAttribute('data-specialization'),
                         level: item.querySelector('input').value
                     };
                 }),
@@ -877,13 +949,15 @@
                 document.getElementById('armor-container').innerHTML = '';
                 document.getElementById('equipment-container').innerHTML = '';
                 
-                // Skills
+                // Skills with specialization support
                 if (character.skills && character.skills.length) {
                     character.skills.forEach(skill => {
                         const skillDiv = document.createElement('div');
                         skillDiv.className = 'skill-item';
                         skillDiv.innerHTML = `
-                            <span class="skill-name">${skill.name}</span>
+                            <span class="skill-name" data-skill="${skill.name}" data-specialization="${skill.specialization || ''}">
+                                ${skill.name}${skill.specialization ? ` <span class="skill-specialization">(${skill.specialization})</span>` : ''}
+                            </span>
                             <div class="d-flex align-items-center">
                                 <input type="number" class="form-control form-control-sm mx-2" value="${skill.level}" min="0" style="width: 60px;">
                                 <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
