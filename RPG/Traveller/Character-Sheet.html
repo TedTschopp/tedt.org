@@ -314,17 +314,42 @@
         </div>
         
         <div class="row">
-            <div class="col-md-4 mb-3">
-                <label for="career" class="form-label">Career</label>
-                <input type="text" class="form-control" id="career">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="terms" class="form-label">Terms</label>
-                <input type="number" class="form-control" id="terms" value="0">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="rank" class="form-label">Rank & Title</label>
-                <input type="text" class="form-control" id="rank">
+            <div class="col-md-12 mb-3">
+                <div class="section-header">
+                    CAREER HISTORY
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Career</th>
+                                <th>Terms</th>
+                                <th>Rank & Title</th>
+                                <th>Benefits</th>
+                                <th class="no-print">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="careers-container">
+                            <!-- Careers will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row mb-3 no-print">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <select class="form-control" id="careerName">
+                                <option value="">Select Career...</option>
+                                <!-- Career options will be populated by JavaScript -->
+                            </select>
+                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1" value="1" style="max-width: 100px;">
+                            <input type="text" class="form-control" id="careerRank" placeholder="Rank & Title">
+                            <input type="text" class="form-control" id="careerBenefits" placeholder="Benefits">
+                            <button class="btn btn-add" onclick="addCareer()">Add Career</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -596,6 +621,7 @@
                 <button class="btn btn-danger" onclick="resetCharacter()">Reset Sheet</button>
                 <button class="btn btn-info" onclick="exportCharacter()">Export Character</button>
                 <button class="btn btn-info" onclick="importCharacter()">Import Character</button>
+                <button class="btn btn-danger" onclick="deleteCharacter()">Delete Saved Character</button>
             </div>
         </div>
         
@@ -1529,6 +1555,19 @@
                 alert('Failed to load character. Error: ' + e.message);
             }
         };
+
+        // Add the deleteCharacter function
+        function deleteCharacter() {
+            if (confirm('Are you sure you want to delete your saved character? This cannot be undone.')) {
+                try {
+                    localStorage.removeItem('traveller-character');
+                    alert('Character deleted successfully from storage.');
+                } catch (e) {
+                    console.error('Delete failed:', e);
+                    alert('Failed to delete character. Error: ' + e.message);
+                }
+            }
+        }
     </script>
 </body>
 </html>
