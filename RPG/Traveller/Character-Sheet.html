@@ -21,6 +21,7 @@
             --traveller-border: #dddddd;
         }
         
+        /* Rest of CSS remains the same */
         body {
             background-color: var(--traveller-background);
             font-family: 'Saira Semi Condensed', sans-serif;
@@ -798,14 +799,69 @@
         
         // Helper function to add a single skill
         function addSingleSkill(skillName, specialization, skillLevel) {
-            // Format the skill name with specialization
-            const fullSkillName = specialization ? 
-                `${skillName} (${specialization})` : skillName;
+            // Check if skill already exists
+            const existingSkills = document.querySelectorAll('.skill-name');
+            for (let i = 0; i < existingSkills.length; i++) {
+                if (existingSkills[i].getAttribute('data-skill') === skillName && 
+                    existingSkills[i].getAttribute('data-specialization') === specialization) {
+                    
+                    // Update existing skill instead of adding duplicate
+                    updateExistingSkill(skillName, specialization, skillLevel);
+                    return;
+                }
+            }
             
-            // Clear inputs
-            document.getElementById('weaponName').value = '';
-            document.getElementById('weaponDamage').value = '';
-            document.getElementById('weaponRange').value = '';
+            const skillsContainer = document.getElementById('skills-container');
+            const skillDiv = document.createElement('div');
+            skillDiv.className = 'skill-item';
+            
+            // Store both skill name and specialization separately for data handling
+            skillDiv.innerHTML = `
+                <span class="skill-name" data-skill="${skillName}" data-specialization="${specialization || ''}">
+                    ${skillName}${specialization ? ` <span class="skill-specialization">(${specialization})</span>` : ''}
+                </span>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
+                    <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
+                </div>
+            `;
+            
+            skillsContainer.appendChild(skillDiv);
+        }
+
+        // Helper function to get existing specializations for a skill
+        function getExistingSpecializations(skillName) {
+            const existingSkills = document.querySelectorAll('.skill-name');
+            const existingSpecs = [];
+            
+            for (let i = 0; i < existingSkills.length; i++) {
+                if (existingSkills[i].getAttribute('data-skill') === skillName) {
+                    const spec = existingSkills[i].getAttribute('data-specialization');
+                    if (spec) {
+                        existingSpecs.push(spec);
+                    }
+                }
+            }
+            
+            return existingSpecs;
+        }
+
+        // Helper function to update an existing skill's level
+        function updateExistingSkill(skillName, specialization, level) {
+            const skillItems = document.querySelectorAll('.skill-item');
+            
+            for (let i = 0; i < skillItems.length; i++) {
+                const skillNameElem = skillItems[i].querySelector('.skill-name');
+                
+                if (skillNameElem.getAttribute('data-skill') === skillName && 
+                    skillNameElem.getAttribute('data-specialization') === specialization) {
+                    const input = skillItems[i].querySelector('input');
+                    input.value = level;
+                    return true;
+                }
+            }
+            
+            return false;
         }
 
         // Add armor to the armor table
