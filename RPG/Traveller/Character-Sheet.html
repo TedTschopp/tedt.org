@@ -8,41 +8,69 @@
     <!-- Add Google Fonts for Traveller-like typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@400;700&family=Saira+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Marcellus&family=Roboto:wght@400;500;700&family=Arimo:wght@400;500;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Mongoose Traveller 2E colors */
-            --traveller-primary: #10325c;
-            --traveller-secondary: #c9a235;
-            --traveller-tertiary: #8b0000;
-            --traveller-background: #f0f0f0;
-            --traveller-text: #333333;
-            --traveller-light: #ffffff;
-            --traveller-border: #dddddd;
+            /* Light Mode (only mode now) */
+            --traveller-primary: #111111;    /* Deep Black for backgrounds, headers, footers */
+            --traveller-secondary: #F0F0F0;  /* Light Grey for text and content background */
+            --traveller-tertiary: #BB0000;   /* Traveller Red for highlights, call to actions */
+            --traveller-supporting: #888888; /* Neutral Grey for supporting elements */
+            --traveller-text-on-dark: #FFFFFF; /* White text for dark backgrounds */
+            --traveller-text-on-light: #333333; /* Dark text for light backgrounds */
+            --traveller-border: #DDDDDD;
+            --traveller-content-bg: #FFFFFF;
+            --traveller-input-bg: #FFFFFF;
+            --traveller-input-border: #CED4DA;
+            --traveller-characteristic-box-bg: #F0F0F0;
+            --traveller-table-bg: #FFFFFF;
+            --traveller-table-border: #DEE2E6;
+            --traveller-table-header-bg: rgba(17, 17, 17, 0.1);
+            
+            /* Font families */
+            --font-headlines: 'Arsenal', sans-serif;
+            --font-titles: 'Marcellus', serif;
+            --font-ui: 'Roboto', sans-serif;
+            --font-standard: 'Arimo', sans-serif;
+            --font-secondary: 'Work Sans', sans-serif;
         }
         
-        /* Rest of CSS remains the same */
         body {
-            background-color: var(--traveller-background);
-            font-family: 'Saira Semi Condensed', sans-serif;
-            color: var(--traveller-text);
+            background-color: var(--traveller-secondary);
+            font-family: var(--font-standard);
+            color: var(--traveller-text-on-light);
+            transition: background-color 0.3s ease;
         }
         
         .character-sheet {
             max-width: 1200px;
             margin: 20px auto;
-            background-color: var(--traveller-light);
+            background-color: var(--traveller-content-bg);
             padding: 20px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
             border-radius: 3px;
             position: relative;
             border: 1px solid var(--traveller-border);
+            transition: all 0.3s ease;
         }
         
-        /* Traveller logo styling */
+        .characteristic-box {
+            border: 2px solid var(--traveller-primary);
+            border-radius: 3px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            background-color: var(--traveller-characteristic-box-bg);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        /* Rest of your existing CSS remains the same, the theme variables will apply automatically */
+        
         .sheet-header {
             background-color: var(--traveller-primary);
-            color: var(--traveller-light);
+            color: var(--traveller-text-on-dark);
             padding: 20px 15px;
             margin-bottom: 25px;
             border-radius: 3px;
@@ -53,8 +81,8 @@
         
         .sheet-header h1 {
             margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 700;
+            font-family: var(--font-titles);
+            font-weight: 400;
             font-size: 2.2rem;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -68,7 +96,7 @@
             left: 0;
             width: 100%;
             height: 6px;
-            background-color: var(--traveller-secondary);
+            background-color: var(--traveller-tertiary);
         }
         
         /* Optional starburst/logo effect */
@@ -79,22 +107,22 @@
             right: -25px;
             width: 150px;
             height: 150px;
-            background: radial-gradient(var(--traveller-secondary) 10%, transparent 65%);
+            background: radial-gradient(var(--traveller-tertiary) 10%, transparent 65%);
             opacity: 0.5;
             border-radius: 50%;
         }
         
         .section-header {
             background-color: var(--traveller-primary);
-            color: var(--traveller-light);
+            color: var(--traveller-text-on-dark);
             padding: 8px 15px;
             margin-top: 20px;
             margin-bottom: 15px;
             border-radius: 3px;
-            font-weight: 600;
-            font-family: 'Rajdhani', sans-serif;
-            letter-spacing: 1px;
-            border-left: 4px solid var(--traveller-secondary);
+            font-weight: 700;
+            font-family: var(--font-headlines);
+            letter-spacing: 0.5px;
+            border-left: 4px solid var(--traveller-tertiary);
         }
         
         .skill-item, .equipment-item, .weapon-item {
@@ -111,7 +139,7 @@
             padding: 15px;
             text-align: center;
             margin-bottom: 15px;
-            background-color: #f8f9fa;
+            background-color: var(--traveller-secondary);
             position: relative;
             overflow: hidden;
         }
@@ -123,128 +151,123 @@
             left: 0;
             right: 0;
             height: 4px;
-            background-color: var(--traveller-secondary);
+            background-color: var(--traveller-tertiary);
         }
         
         .characteristic-box h4 {
             margin: 0;
             color: var(--traveller-primary);
-            font-family: 'Rajdhani', sans-serif;
+            font-family: var(--font-headlines);
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
         
         .characteristic-value {
             font-size: 2rem;
             font-weight: bold;
             color: var(--traveller-primary);
-            font-family: 'Rajdhani', sans-serif;
+            font-family: var(--font-standard);
         }
         
         .characteristic-dm {
             font-size: 1.2rem;
             color: var(--traveller-tertiary);
             font-weight: bold;
+            font-family: var(--font-standard);
         }
         
         .important-stat {
             font-weight: bold;
-            color: var(--traveller-tertiary);
-            font-family: 'Rajdhani', sans-serif;
+            color: var (--traveller-tertiary);
+            font-family: var(--font-headlines);
         }
         
         label.form-label {
-            font-weight: 600;
+            font-weight: 500;
             color: var(--traveller-primary);
+            font-family: var(--font-headlines);
         }
         
+        /* Button styling */
         .dice-btn {
             background-color: var(--traveller-primary);
-            color: white;
+            color: var(--traveller-text-on-dark);
             border: none;
             padding: 5px 15px;
             border-radius: 3px;
             cursor: pointer;
             transition: all 0.3s;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
         }
         
         .dice-btn:hover {
-            background-color: var(--traveller-secondary);
+            background-color: var(--traveller-tertiary);
+        
+        .dice-btn:hover {
+            background-color: var(--traveller-tertiary);
             transform: translateY(-1px);
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         
         .btn-secondary {
-            background-color: #6c757d;
-            border-color: #6c757d;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            background-color: var(--traveller-supporting);
+            border-color: var(--traveller-supporting);
+            color: var(--traveller-text-on-dark);
+            font-family: var(--font-ui);
+            font-weight: 500;
+        .btn-secondary:hover {
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
         }
         
         .btn-info {
-            background-color: #17a2b8;
-            border-color: #17a2b8;
-            color: white;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            background-color: var(--traveller-supporting);
+            border-color: var(--traveller-supporting);
+            color: var(--traveller-text-on-dark);
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .btn-info:hover {
+            background-color: var (--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
         }
         
         .btn-danger {
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        
-        .credits {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #888;
-        }
-        
-        .armor-section {
-            margin-top: 15px;
-        }
-        
-        #roll-result {
-            font-weight: bold;
-            font-size: 1.2rem;
-            min-height: 30px;
-            margin-top: 10px;
-            text-align: center;
-            font-family: 'Rajdhani', sans-serif;
-            color: var(--traveller-primary);
-        }
-        
-        .skill-search {
-            margin-bottom: 15px;
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
         }
         
         .btn-add {
-            background-color: var(--traveller-secondary);
-            color: white;
+            background-color: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
             border: none;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 600;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
         }
         
         .btn-add:hover {
-            background-color: #a98628;
-            color: white;
+            background-color: var(--traveller-tertiary);
+            color: var(--traveller-text-on-dark);
         }
         
         .btn-remove {
             background-color: var(--traveller-tertiary);
-            color: white;
+            color: var (--traveller-text-on-dark);
             border: none;
             padding: 2px 8px;
             font-size: 0.8rem;
             border-radius: 3px;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
         }
         
         .btn-remove:hover {
@@ -252,9 +275,9 @@
         }
         
         table thead th {
-            background-color: rgba(16, 50, 92, 0.1);
+            background-color: rgba(17, 17, 17, 0.1); /* Semitransparent primary */
             color: var(--traveller-primary);
-            font-family: 'Rajdhani', sans-serif;
+            font-family: var(--font-headlines);
             font-weight: 700;
             letter-spacing: 0.5px;
         }
@@ -262,12 +285,15 @@
         .skill-name {
             font-weight: 600;
             color: var(--traveller-primary);
+            font-family: var(--font-standard);
         }
         
         .skill-specialization {
             font-style: italic;
-            color: #555;
+            color: var(--traveller-supporting);
             margin-left: 3px;
+            font-family: var(--font-secondary);
+            font-weight: 400;
         }
         
         #specializationField {
@@ -288,6 +314,48 @@
                 margin: 0;
                 padding: 10px;
             }
+        }
+
+        .credits {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--traveller-supporting);
+            font-family: var(--font-secondary);
+        }
+        
+        #roll-result {
+            font-weight: bold;
+            font-size: 1.2rem;
+            min-height: 30px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: var(--font-ui);
+            color: var(--traveller-tertiary);
+        }
+
+        /* Improved focus styles for accessibility */
+        input:focus, select:focus, textarea:focus, button:focus {
+            outline: 2px solid var(--traveller-tertiary);
+            box-shadow: 0 0 0 2px rgba(187, 0, 0, 0.25);
+        }
+        
+        /* Custom scrollbar to match theme */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--traveller-secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--traveller-supporting);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--traveller-tertiary);
         }
     </style>
 </head>

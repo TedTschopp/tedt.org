@@ -7,11 +7,16 @@
         "givenname",
         "Irwindale",
         "micropubpost",
+        "Psionicology",
         "Rosemead",
+        "Rulebook",
         "Schächental",
         "Shatov",
         "siteurl",
-        "Wampler"
+        "Sophontology",
+        "Vacc",
+        "Wampler",
+        "Xenology"
     ],
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/jekyll-gh-pages.yml"
