@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller 2nd Edition Character Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --traveller-primary: #1a3e6d;
+            --traveller-secondary: #bf9b30;
+            --traveller-tertiary: #8b0000;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .character-sheet {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        .sheet-header {
+            background-color: var(--traveller-primary);
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .sheet-header h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+        
+        .sheet-header::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            height: 3px;
+            background-color: var(--traveller-secondary);
+        }
+        
+        .section-header {
+            background-color: var(--traveller-primary);
+            color: white;
+            padding: 8px 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .skill-item, .equipment-item, .weapon-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .characteristic-box {
+            border: 2px solid var(--traveller-primary);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+        }
+        
+        .characteristic-box h4 {
+            margin: 0;
+            color: var(--traveller-primary);
+        }
+        
+        .characteristic-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--traveller-primary);
+        }
+        
+        .characteristic-dm {
+            font-size: 1.2rem;
+            color: var(--traveller-tertiary);
+        }
+        
+        .important-stat {
+            font-weight: bold;
+            color: var(--traveller-tertiary);
+        }
+        
+        .dice-btn {
+            background-color: var(--traveller-primary);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .dice-btn:hover {
+            background-color: var(--traveller-secondary);
+        }
+        
+        .credits {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        .armor-section {
+            margin-top: 15px;
+        }
+        
+        #roll-result {
+            font-weight: bold;
+            font-size: 1.2rem;
+            min-height: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .skill-search {
+            margin-bottom: 15px;
+        }
+        
+        .btn-add {
+            background-color: var(--traveller-secondary);
+            color: white;
+            border: none;
+        }
+        
+        .btn-add:hover {
+            background-color: #a98628;
+            color: white;
+        }
+        
+        .btn-remove {
+            background-color: var(--traveller-tertiary);
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            font-size: 0.8rem;
+        }
+        
+        .btn-remove:hover {
+            background-color: #700000;
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+            
+            body {
+                background-color: white;
+            }
+            
+            .character-sheet {
+                box-shadow: none;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container character-sheet">
+        <div class="sheet-header">
+            <h1>TRAVELLER 2ND EDITION CHARACTER SHEET</h1>
+        </div>
+        
+        <!-- Character Information -->
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="charName" class="form-label">Character Name</label>
+                <input type="text" class="form-control" id="charName">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="species" class="form-label">Species</label>
+                <input type="text" class="form-control" id="species" value="Human">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" value="18">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="career" class="form-label">Career</label>
+                <input type="text" class="form-control" id="career">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="terms" class="form-label">Terms</label>
+                <input type="number" class="form-control" id="terms" value="0">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="rank" class="form-label">Rank & Title</label>
+                <input type="text" class="form-control" id="rank">
+            </div>
+        </div>
+
+        <!-- Characteristics Section -->
+        <div class="section-header">
+            CHARACTERISTICS
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>STR</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="str" value="7" min="0" max="15" oninput="updateDM('str')">
+                    <span class="characteristic-dm" id="str-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>DEX</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="dex" value="7" min="0" max="15" oninput="updateDM('dex')">
+                    <span class="characteristic-dm" id="dex-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>END</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="end" value="7" min="0" max="15" oninput="updateDM('end')">
+                    <span class="characteristic-dm" id="end-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>INT</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="int" value="7" min="0" max="15" oninput="updateDM('int')">
+                    <span class="characteristic-dm" id="int-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>EDU</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="edu" value="7" min="0" max="15" oninput="updateDM('edu')">
+                    <span class="characteristic-dm" id="edu-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="characteristic-box">
+                    <h4>SOC</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="soc" value="7" min="0" max="15" oninput="updateDM('soc')">
+                    <span class="characteristic-dm" id="soc-dm">-1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Characteristics -->
+        <div class="row mt-3">
+            <div class="col-md-3 mb-3">
+                <label for="endurance" class="form-label important-stat">Endurance</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="endurance" value="0">
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" id="enduranceMax" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="lifeblood" class="form-label important-stat">Lifeblood</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="lifeblood" value="0">
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" id="lifebloodMax" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="resolve" class="form-label important-stat">Resolve</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="resolve" value="0">
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" id="resolveMax" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="psi" class="form-label">PSI</label>
+                <input type="number" class="form-control" id="psi" value="0" min="0">
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section-header d-flex justify-content-between">
+            <div>SKILLS</div>
+        </div>
+        
+        <div class="row skill-search no-print">
+            <div class="col-md-6 mb-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="skillSearch" placeholder="Search or add skill...">
+                    <input type="number" class="form-control" id="skillLevel" placeholder="Level" min="0" value="0" style="max-width: 80px;">
+                    <button class="btn btn-add" onclick="addSkill()">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="skills-container">
+            <!-- Skills will be added here by JavaScript -->
+        </div>
+
+        <!-- Weapons Section -->
+        <div class="section-header">
+            WEAPONS & ATTACKS
+        </div>
+        
+        <div class="row mb-3 no-print">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="weaponName" placeholder="Weapon Name">
+                    <input type="text" class="form-control" id="weaponDamage" placeholder="Damage" style="max-width: 120px;">
+                    <input type="number" class="form-control" id="weaponRange" placeholder="Range" style="max-width: 80px;">
+                    <button class="btn btn-add" onclick="addWeapon()">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Weapon</th>
+                        <th>Skill</th>
+                        <th>Damage</th>
+                        <th>Range</th>
+                        <th class="no-print">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="weapons-container">
+                    <!-- Weapons will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Armor Section -->
+        <div class="section-header">
+            ARMOR
+        </div>
+        
+        <div class="row mb-3 no-print">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="armorName" placeholder="Armor Name">
+                    <input type="number" class="form-control" id="armorRating" placeholder="Rating" style="max-width: 100px;" min="0">
+                    <input type="text" class="form-control" id="armorTL" placeholder="TL" style="max-width: 60px;">
+                    <input type="text" class="form-control" id="armorRadiation" placeholder="Rad" style="max-width: 60px;">
+                    <button class="btn btn-add" onclick="addArmor()">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Armor</th>
+                        <th>Rating</th>
+                        <th>TL</th>
+                        <th>Rad</th>
+                        <th class="no-print">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="armor-container">
+                    <!-- Armor will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Equipment Section -->
+        <div class="section-header">
+            EQUIPMENT
+        </div>
+        
+        <div class="row mb-3 no-print">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="equipmentName" placeholder="Equipment Name">
+                    <input type="text" class="form-control" id="equipmentTL" placeholder="TL" style="max-width: 60px;">
+                    <input type="number" class="form-control" id="equipmentMass" placeholder="Mass" style="max-width: 80px;" step="0.1">
+                    <input type="number" class="form-control" id="equipmentCost" placeholder="Cost" style="max-width: 100px;">
+                    <button class="btn btn-add" onclick="addEquipment()">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Equipment</th>
+                        <th>TL</th>
+                        <th>Mass</th>
+                        <th>Cost (Cr)</th>
+                        <th class="no-print">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="equipment-container">
+                    <!-- Equipment will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Finances -->
+        <div class="section-header">
+            FINANCES
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="credits" class="form-label">Credits</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="credits" value="0">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="pension" class="form-label">Pension</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="pension" value="0">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="debt" class="form-label">Debt</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="debt" value="0">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dice Roller -->
+        <div class="section-header no-print">
+            DICE ROLLER
+        </div>
+        
+        <div class="row no-print">
+            <div class="col-md-12 text-center mb-3">
+                <button class="btn dice-btn" onclick="rollDice(2, 6)">Roll 2D</button>
+                <button class="btn dice-btn" onclick="rollTask(8)">Task (8+)</button>
+                <button class="btn dice-btn" onclick="rollTask(10)">Hard Task (10+)</button>
+                <button class="btn dice-btn" onclick="rollTask(12)">Formidable (12+)</button>
+                <button class="btn dice-btn" onclick="rollTask(14)">Impossible (14+)</button>
+                <div id="roll-result"></div>
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="section-header">
+            NOTES
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <textarea class="form-control" id="notes" rows="5"></textarea>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="row no-print">
+            <div class="col-md-12 text-center">
+                <button class="btn dice-btn" onclick="window.print()">Print Character Sheet</button>
+                <button class="btn btn-secondary" onclick="saveCharacter()">Save Character</button>
+                <button class="btn btn-secondary" onclick="loadCharacter()">Load Character</button>
+            </div>
+        </div>
+        
+        <div class="credits">
+            Traveller is a registered trademark of Far Future Enterprises. This character sheet is unofficial and for personal use only.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Common Traveller Skills
+        const commonSkills = [
+            "Admin", "Advocate", "Animals", "Athletics", "Art", "Astrogation", "Battle Dress", 
+            "Broker", "Carouse", "Deception", "Diplomat", "Drive", "Electronics", "Engineer", 
+            "Explosives", "Flyer", "Gambler", "Gunner", "Gun Combat", "Heavy Weapons", "Investigate", 
+            "Jack of all Trades", "Language", "Leadership", "Mechanic", "Medic", "Melee", "Navigation", 
+            "Persuade", "Pilot", "Profession", "Recon", "Science", "Seafarer", "Stealth", "Steward", 
+            "Streetwise", "Survival", "Tactics", "Vacc Suit", "Zero-G"
+        ];
+
+        // Initialize the character sheet
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDM('str');
+            updateDM('dex');
+            updateDM('end');
+            updateDM('int');
+            updateDM('edu');
+            updateDM('soc');
+            
+            // Add autocomplete to skill search
+            const skillSearch = document.getElementById('skillSearch');
+            const datalist = document.createElement('datalist');
+            datalist.id = 'skill-list';
+            
+            commonSkills.forEach(skill => {
+                const option = document.createElement('option');
+                option.value = skill;
+                datalist.appendChild(option);
+            });
+            
+            document.body.appendChild(datalist);
+            skillSearch.setAttribute('list', 'skill-list');
+            
+            // Load character if exists in localStorage
+            if (localStorage.getItem('traveller-character')) {
+                const loadNow = confirm('Found a saved character. Load it now?');
+                if (loadNow) {
+                    loadCharacter();
+                }
+            }
+        });
+
+        // Update the DM (Dice Modifier) based on characteristic value
+        function updateDM(stat) {
+            const value = parseInt(document.getElementById(stat).value);
+            let dm = 0;
+            
+            if (value === 0) dm = -3;
+            else if (value <= 2) dm = -2;
+            else if (value <= 5) dm = -1;
+            else if (value <= 8) dm = 0;
+            else if (value <= 11) dm = 1;
+            else if (value <= 14) dm = 2;
+            else dm = 3;
+            
+            document.getElementById(`${stat}-dm`).textContent = dm >= 0 ? `+${dm}` : dm;
+            
+            // Update derived stats
+            if (stat === 'end') {
+                document.getElementById('endurance').value = value;
+                document.getElementById('enduranceMax').value = value;
+            }
+            
+            // Update lifeblood (STR + END)/2
+            if (stat === 'str' || stat === 'end') {
+                const str = parseInt(document.getElementById('str').value);
+                const end = parseInt(document.getElementById('end').value);
+                const lifeblood = Math.floor((str + end) / 2);
+                
+                document.getElementById('lifeblood').value = lifeblood;
+                document.getElementById('lifebloodMax').value = lifeblood;
+            }
+
+            // Update resolve (INT + EDU)/2
+            if (stat === 'int' || stat === 'edu') {
+                const int = parseInt(document.getElementById('int').value);
+                const edu = parseInt(document.getElementById('edu').value);
+                const resolve = Math.floor((int + edu) / 2);
+                
+                document.getElementById('resolve').value = resolve;
+                document.getElementById('resolveMax').value = resolve;
+            }
+        }
+
+        // Add a skill to the skills list
+        function addSkill() {
+            const skillName = document.getElementById('skillSearch').value;
+            const skillLevel = document.getElementById('skillLevel').value;
+            
+            if (!skillName) return;
+            
+            // Check if skill already exists
+            const existingSkills = document.querySelectorAll('.skill-name');
+            for (let i = 0; i < existingSkills.length; i++) {
+                if (existingSkills[i].textContent === skillName) {
+                    alert('This skill already exists in your list.');
+                    return;
+                }
+            }
+            
+            const skillsContainer = document.getElementById('skills-container');
+            const skillDiv = document.createElement('div');
+            skillDiv.className = 'skill-item';
+            skillDiv.innerHTML = `
+                <span class="skill-name">${skillName}</span>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
+                    <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
+                </div>
+            `;
+            
+            skillsContainer.appendChild(skillDiv);
+            
+            // Clear inputs
+            document.getElementById('skillSearch').value = '';
+            document.getElementById('skillLevel').value = 0;
+        }
+
+        // Add weapon to the weapons table
+        function addWeapon() {
+            const weaponName = document.getElementById('weaponName').value;
+            const weaponDamage = document.getElementById('weaponDamage').value;
+            const weaponRange = document.getElementById('weaponRange').value;
+            
+            if (!weaponName) return;
+            
+            const weaponsContainer = document.getElementById('weapons-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${weaponName}</td>
+                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
+                <td>${weaponDamage}</td>
+                <td>${weaponRange}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            weaponsContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('weaponName').value = '';
+            document.getElementById('weaponDamage').value = '';
+            document.getElementById('weaponRange').value = '';
+        }
+
+        // Add armor to the armor table
+        function addArmor() {
+            const armorName = document.getElementById('armorName').value;
+            const armorRating = document.getElementById('armorRating').value;
+            const armorTL = document.getElementById('armorTL').value;
+            const armorRadiation = document.getElementById('armorRadiation').value;
+            
+            if (!armorName) return;
+            
+            const armorContainer = document.getElementById('armor-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${armorName}</td>
+                <td>${armorRating}</td>
+                <td>${armorTL}</td>
+                <td>${armorRadiation}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            armorContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('armorName').value = '';
+            document.getElementById('armorRating').value = '';
+            document.getElementById('armorTL').value = '';
+            document.getElementById('armorRadiation').value = '';
+        }
+
+        // Add equipment to the equipment table
+        function addEquipment() {
+            const equipmentName = document.getElementById('equipmentName').value;
+            const equipmentTL = document.getElementById('equipmentTL').value;
+            const equipmentMass = document.getElementById('equipmentMass').value;
+            const equipmentCost = document.getElementById('equipmentCost').value;
+            
+            if (!equipmentName) return;
+            
+            const equipmentContainer = document.getElementById('equipment-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${equipmentName}</td>
+                <td>${equipmentTL}</td>
+                <td>${equipmentMass}</td>
+                <td>${equipmentCost}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            equipmentContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('equipmentName').value = '';
+            document.getElementById('equipmentTL').value = '';
+            document.getElementById('equipmentMass').value = '';
+            document.getElementById('equipmentCost').value = '';
+        }
+
+        // Dice rolling functions
+        function rollDice(num, sides) {
+            let total = 0;
+            let rolls = [];
+            
+            for (let i = 0; i < num; i++) {
+                const roll = Math.floor(Math.random() * sides) + 1;
+                rolls.push(roll);
+                total += roll;
+            }
+            
+            document.getElementById('roll-result').innerHTML = `
+                Result: ${total} (${rolls.join(' + ')})
+            `;
+            
+            return total;
+        }
+
+        function rollTask(target) {
+            const result = rollDice(2, 6);
+            let success = "FAILURE";
+            
+            if (result >= target) {
+                success = "SUCCESS";
+            }
+            
+            document.getElementById('roll-result').innerHTML = `
+                Result: ${result} vs. Target ${target} - ${success}!
+            `;
+        }
+
+        // Save character to localStorage
+        function saveCharacter() {
+            const character = {
+                // Basic info
+                charName: document.getElementById('charName').value,
+                species: document.getElementById('species').value,
+                age: document.getElementById('age').value,
+                career: document.getElementById('career').value,
+                terms: document.getElementById('terms').value,
+                rank: document.getElementById('rank').value,
+                
+                // Characteristics
+                str: document.getElementById('str').value,
+                dex: document.getElementById('dex').value,
+                end: document.getElementById('end').value,
+                int: document.getElementById('int').value,
+                edu: document.getElementById('edu').value,
+                soc: document.getElementById('soc').value,
+                
+                // Secondary characteristics
+                endurance: document.getElementById('endurance').value,
+                enduranceMax: document.getElementById('enduranceMax').value,
+                lifeblood: document.getElementById('lifeblood').value,
+                lifebloodMax: document.getElementById('lifebloodMax').value,
+                resolve: document.getElementById('resolve').value,
+                resolveMax: document.getElementById('resolveMax').value,
+                psi: document.getElementById('psi').value,
+                
+                // Finances
+                credits: document.getElementById('credits').value,
+                pension: document.getElementById('pension').value,
+                debt: document.getElementById('debt').value,
+                
+                // Notes
+                notes: document.getElementById('notes').value,
+                
+                // Skills
+                skills: Array.from(document.querySelectorAll('.skill-item')).map(item => {
+                    return {
+                        name: item.querySelector('.skill-name').textContent,
+                        level: item.querySelector('input').value
+                    };
+                }),
+                
+                // Weapons
+                weapons: Array.from(document.getElementById('weapons-container').querySelectorAll('tr')).map(<!DOCTYPE html>
