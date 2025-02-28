@@ -225,7 +225,7 @@
         .btn-info {
             background-color: var(--traveller-supporting);
             border-color: var(--traveller-supporting);
-            color: var(--traveller-text-on-dark);
+            color: var (--traveller-text-on-dark);
             font-family: var(--font-ui);
             font-weight: 500;
             letter-spacing: 0.25px;
@@ -245,7 +245,7 @@
         }
         
         .btn-add {
-            background-color: var(--traveller-primary);
+            background-color: var(--traveller-tertiary);  /* Changed to red */
             color: var(--traveller-text-on-dark);
             border: none;
             font-family: var(--font-ui);
@@ -254,7 +254,7 @@
         }
         
         .btn-add:hover {
-            background-color: var(--traveller-tertiary);
+            background-color: #000000;  /* Changed to black */
             color: var(--traveller-text-on-dark);
         }
         
@@ -265,7 +265,7 @@
             padding: 2px 8px;
             font-size: 0.8rem;
             border-radius: 3px;
-            font-family: var(--font-ui);
+            font-family: var (--font-ui);
             font-weight: 500;
             letter-spacing: 0.25px;
         }
@@ -330,7 +330,7 @@
             min-height: 30px;
             margin-top: 10px;
             text-align: center;
-            font-family: var(--font-ui);
+            font-family: var (--font-ui);
             color: var(--traveller-tertiary);
         }
 
@@ -381,6 +381,52 @@
             </div>
         </div>
         
+        <!-- Pre-Career Education Section -->
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="section-header">
+                    PRE-CAREER EDUCATION
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Years</th>
+                                <th>Qualification</th>
+                                <th>Skills Gained</th>
+                                <th class="no-print">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="education-container">
+                            <!-- Education entries will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row mb-3 no-print">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <select class="form-control" id="educationType">
+                                <option value="">Select Education Type...</option>
+                                <option value="University">University</option>
+                                <option value="Military Academy">Military Academy</option>
+                                <option value="Technical College">Technical College</option>
+                                <option value="Trade School">Trade School</option>
+                                <option value="Apprenticeship">Apprenticeship</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input type="number" class="form-control" id="educationYears" placeholder="Years" min="1" value="4" style="max-width: 80px;">
+                            <input type="text" class="form-control" id="educationQualification" placeholder="Qualification/Degree">
+                            <input type="text" class="form-control" id="educationSkills" placeholder="Skills Gained">
+                            <button class="btn btn-add" onclick="addEducation()">Add Education</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-md-12 mb-3">
                 <div class="section-header">
@@ -392,6 +438,7 @@
                         <thead>
                             <tr>
                                 <th>Career</th>
+                                <th>Assignment</th>
                                 <th>Terms</th>
                                 <th>Rank & Title</th>
                                 <th>Benefits</th>
@@ -407,12 +454,19 @@
                 <div class="row mb-3 no-print">
                     <div class="col-md-12">
                         <div class="input-group">
-                            <select class="form-control" id="careerName">
+                            <select class="form-control" id="careerName" onchange="updateAssignments()">
                                 <option value="">Select Career...</option>
                                 <!-- Career options will be populated by JavaScript -->
                             </select>
-                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1" value="1" style="max-width: 100px;">
+                            <select class="form-control" id="careerAssignment">
+                                <option value="">Select Assignment...</option>
+                                <!-- Assignments will be populated based on career -->
+                            </select>
+                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1" value="1" style="max-width: 100px;" onchange="suggestRank()">
                             <input type="text" class="form-control" id="careerRank" placeholder="Rank & Title">
+                            <button class="btn btn-info" type="button" onclick="suggestRank()" style="max-width: 40px;">
+                                <i class="fa fa-sync">↻</i>
+                            </button>
                             <input type="text" class="form-control" id="careerBenefits" placeholder="Benefits">
                             <button class="btn btn-add" onclick="addCareer()">Add Career</button>
                         </div>
@@ -471,41 +525,59 @@
             </div>
         </div>
 
-        <!-- Secondary Characteristics -->
-        <div class="row mt-3">
-            <div class="col-md-3 mb-3">
-                <label for="endurance" class="form-label important-stat">Endurance</label>
-                <div class="input-group">
-                    <input type="number" class="form-control" id="endurance" value="0">
-                    <span class="input-group-text">/</span>
-                    <input type="number" class="form-control" id="enduranceMax" value="0">
+        <!-- Additional Characteristics Section (replacing Secondary Characteristics) -->
+        <div class="section-header mt-4">
+            ADDITIONAL CHARACTERISTICS
+        </div>
+        
+        <div class="row">
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>PSI</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="psi" value="7" min="0" max="15" oninput="updateDM('psi')">
+                    <span class="characteristic-dm" id="psi-dm">-1</span>
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="lifeblood" class="form-label important-stat">Lifeblood</label>
-                <div class="input-group">
-                    <input type="number" class="form-control" id="lifeblood" value="0">
-                    <span class="input-group-text">/</span>
-                    <input type="number" class="form-control" id="lifebloodMax" value="0">
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Wealth</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="wlt" value="7" min="0" max="15" oninput="updateDM('wlt')">
+                    <span class="characteristic-dm" id="wlt-dm">-1</span>
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="resolve" class="form-label important-stat">Resolve</label>
-                <div class="input-group">
-                    <input type="number" class="form-control" id="resolve" value="0">
-                    <span class="input-group-text">/</span>
-                    <input type="number" class="form-control" id="resolveMax" value="0">
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Luck</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="lck" value="7" min="0" max="15" oninput="updateDM('lck')">
+                    <span class="characteristic-dm" id="lck-dm">-1</span>
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="psi" class="form-label">PSI</label>
-                <input type="number" class="form-control" id="psi" value="0" min="0">
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Morale</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="mrl" value="7" min="0" max="15" oninput="updateDM('mrl')">
+                    <span class="characteristic-dm" id="mrl-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Sanity</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="sty" value="7" min="0" max="15" oninput="updateDM('sty')">
+                    <span class="characteristic-dm" id="sty-dm">-1</span>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Standing</h4>
+                    <input type="number" class="form-control mb-2 characteristic-value" id="std" value="7" min="0" max="15" oninput="updateDM('std')">
+                    <span class="characteristic-dm" id="std-dm">-1</span>
+                </div>
             </div>
         </div>
 
         <!-- Skills Section -->
-        <div class="section-header d-flex justify-content-between">
-            <div>SKILLS</div>
+        <div class="section-header">
+            SKILLS
         </div>
         
         <div class="row skill-search no-print">
@@ -700,7 +772,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Common Traveller Skills
+        // Common Traveller Skills and data definitions
         const commonSkills = [
             "Admin", "Advocate", "Animals", "Art", "Athletics", "Astrogation", "Battle Dress",
             "Broker", "Carouse", "Deception", "Diplomat", "Drive", "Electronics", "Engineer",
@@ -738,63 +810,691 @@
             "Tactics": ["Military", "Naval"]
         };
 
-        // Initialize the character sheet
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDM('str');
-            updateDM('dex');
-            updateDM('end');
-            updateDM('int');
-            updateDM('edu');
-            updateDM('soc');
-            
-            // Add autocomplete to skill search
-            const skillSearch = document.getElementById('skillSearch');
-            const datalist = document.createElement('datalist');
-            datalist.id = 'skill-list';
-            
-            commonSkills.forEach(skill => {
-                const option = document.createElement('option');
-                option.value = skill;
-                datalist.appendChild(option);
-            });
-            
-            document.body.appendChild(datalist);
-            skillSearch.setAttribute('list', 'skill-list');
-            
-            // Add autocomplete handling for specializations
-            const specializationField = document.getElementById('specializationField');
-            const specList = document.createElement('datalist');
-            specList.id = 'specialization-list';
-            document.body.appendChild(specList);
-            specializationField.setAttribute('list', 'specialization-list');
-            
-            // Update specialization options when skill changes
-            skillSearch.addEventListener('input', updateSpecializationOptions);
-            
-            // Load character if exists in localStorage
-            if (localStorage.getItem('traveller-character')) {
-                const loadNow = confirm('Found a saved character. Load it now?');
-                if (loadNow) {
-                    loadCharacter();
+        // Career data structure with assignment-specific rank structures and discipline level
+        const careerData = {
+            "Agent (1)": {
+                discipline: 0.5,  // Disciplined non-military
+                assignments: {
+                    "Law Enforcement": {
+                        ranks: [
+                            { title: "Rookie", level: 0 },
+                            { title: "Corporal", level: 1 },
+                            { title: "Sergeant", level: 2 },
+                            { title: "Detective", level: 3 },
+                            { title: "Lieutenant", level: 4 },
+                            { title: "Chief", level: 5 },
+                            { title: "Commissioner", level: 6 }
+                        ]
+                    },
+                    "Intelligence": {
+                        ranks: [
+                            { title: " - ", level: 0 },
+                            { title: "Agent", level: 1 },
+                            { title: "Field Agent", level: 2 },
+                            { title: "Field Agent", level: 3 },
+                            { title: "Special Agent Director", level: 4 },
+                            { title: "Assistant Director", level: 5 },
+                            { title: "Director", level: 6 }
+                        ]
+                    },
+                    "Corporate": {
+                        ranks: [
+                            { title: " - ", level: 0 },
+                            { title: "Agent", level: 1 },
+                            { title: "Field Agent", level: 2 },
+                            { title: "Field Agent", level: 3 },
+                            { title: "Special Agent Director", level: 4 },
+                            { title: "Assistant Director", level: 5 },
+                            { title: "Director", level: 6 }
+                        ]
+                    }
                 }
-            }
-        });
+            },
+            "Army (2)": {
+                discipline: 1.0,  // Military
+                assignments: {
+                    "Support": {
+                        ranks: [
+                            { title: "Private", level: 0 },
+                            { title: "Lance Corporal", level: 1 },
+                            { title: "Corporal", level: 2 },
+                            { title: "Lance Sergeant", level: 3 },
+                            { title: "Sergeant", level: 4 },
+                            { title: "Gunnery Sergeant", level: 5 },
+                            { title: "Sergeant Major", level: 6 }
+                        ]
+                    },
+                    "Infantry": {
+                        ranks: [
+                            { title: "Private", level: 0 },
+                            { title: "Lance Corporal", level: 1 },
+                            { title: "Corporal", level: 2 },
+                            { title: "Lance Sergeant", level: 3 },
+                            { title: "Sergeant", level: 4 },
+                            { title: "Gunnery Sergeant", level: 5 },
+                            { title: "Sergeant Major", level: 6 }
+                        ]
+                    },
+                    "Cavalry": {
+                        ranks: [
+                            { title: "Private", level: 0 },
+                            { title: "Lance Corporal", level: 1 },
+                            { title: "Corporal", level: 2 },
+                            { title: "Lance Sergeant", level: 3 },
+                            { title: "Sergeant", level: 4 },
+                            { title: "Gunnery Sergeant", level: 5 },
+                            { title: "Sergeant Major", level: 6 }
+                        ]
+                    },
+                    "Support Officer": {
+                            ranks: [
+                                { title: "Lieutenant", level: 1 },
+                                { title: "Captain", level: 2 },
+                                { title: "Major", level: 3 },
+                                { title: "Lieutenant Colonel", level: 4 },
+                                { title: "Colonel", level: 5 },
+                                { title: "General", level: 6 }
+                            ]
+                        },
+                        "Infantry Officer": {
+                            ranks: [
+                                { title: "Lieutenant", level: 1 },
+                                { title: "Captain", level: 2 },
+                                { title: "Major", level: 3 },
+                                { title: "Lieutenant Colonel", level: 4 },
+                                { title: "Colonel", level: 5 },
+                                { title: "General", level: 6 }
+                            ]
+                        },
+                        "Cavalry Officer": {
+                            ranks: [
+                                { title: "Lieutenant", level: 1 },
+                                { title: "Captain", level: 2 },
+                                { title: "Major", level: 3 },
+                                { title: "Lieutenant Colonel", level: 4 },
+                                { title: "Colonel", level: 5 },
+                                { title: "General", level: 6 }
+                            ]
 
-        // Update specialization options based on selected skill
-        function updateSpecializationOptions() {
-            const skillName = document.getElementById('skillSearch').value;
-            const specList = document.getElementById('specialization-list');
-            specList.innerHTML = '';  // Clear existing options
+
+
+
+                    }
+                }
+            },
+            "Citizen (3)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Corporate": {
+                        ranks: [
+                            { title: "Intern", level: 0 },
+                            { title: "Junior Associate", level: 1 },
+                            { title: "Associate", level: 2 },
+                            { title: "Manager", level: 3 },
+                            { title: "Director", level: 4 },
+                            { title: "Vice President", level: 5 },
+                            { title: "CEO", level: 6 }
+                        ]
+                    },
+                    "Worker": {
+                        ranks: [
+                            { title: "Apprentice", level: 0 },
+                            { title: "Journeyman", level: 1 },
+                            { title: "Professional", level: 2 },
+                            { title: "Master", level: 3 },
+                            { title: "Expert", level: 4 },
+                            { title: "Union Representative", level: 5 },
+                            { title: "Union Leader", level: 6 }
+                        ]
+                    },
+                    "Colonist": {
+                        ranks: [
+                            { title: "Settler", level: 0 },
+                            { title: "Colonist", level: 1 },
+                            { title: "Specialist", level: 2 },
+                            { title: "Colony Coordinator", level: 3 },
+                            { title: "Colony Leader", level: 4 },
+                            { title: "Colony Governor", level: 5 },
+                            { title: "Planetary Governor", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Drifter (4)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Barbarian": {
+                        ranks: [
+                            { title: "Outcast", level: 0 },
+                            { title: "Warrior", level: 1 },
+                            { title: "Weapon Master", level: 2 },
+                            { title: "Champion", level: 3 },
+                            { title: "Chieftain", level: 4 },
+                            { title: "Warlord", level: 5 },
+                            { title: "Tribal King", level: 6 }
+                        ]
+                    },
+                    "Wanderer": {
+                        ranks: [
+                            { title: "Drifter", level: 0 },
+                            { title: "Wanderer", level: 1 },
+                            { title: "Explorer", level: 2 },
+                            { title: "Guide", level: 3 },
+                            { title: "Pathfinder", level: 4 },
+                            { title: "Nomad Leader", level: 5 },
+                            { title: "Nomad Chief", level: 6 }
+                        ]
+                    },
+                    "Scavenger": {
+                        ranks: [
+                            { title: "Scrounger", level: 0 },
+                            { title: "Scavenger", level: 1 },
+                            { title: "Salvager", level: 2 },
+                            { title: "Recovery Expert", level: 3 },
+                            { title: "Salvage Master", level: 4 },
+                            { title: "Recovery Operations Chief", level: 5 },
+                            { title: "Salvage Fleet Commander", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Entertainer (5)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Artist": {
+                        ranks: [
+                            { title: "Student", level: 0 },
+                            { title: "Apprentice", level: 1 },
+                            { title: "Professional", level: 2 },
+                            { title: "Recognized Artist", level: 3 },
+                            { title: "Famous Artist", level: 4 },
+                            { title: "Master Artist", level: 5 },
+                            { title: "Legendary Artist", level: 6 }
+                        ]
+                    },
+                    "Journalist": {
+                        ranks: [
+                            { title: "Intern", level: 0 },
+                            { title: "Junior Reporter", level: 1 },
+                            { title: "Reporter", level: 2 },
+                            { title: "Correspondent", level: 3 },
+                            { title: "Editor", level: 4 },
+                            { title: "Senior Editor", level: 5 },
+                            { title: "Editor in Chief", level: 6 }
+                        ]
+                    },
+                    "Performer": {
+                        ranks: [
+                            { title: "Extra", level: 0 },
+                            { title: "Featured Performer", level: 1 },
+                            { title: "Supporting Cast", level: 2 },
+                            { title: "Lead Performer", level: 3 },
+                            { title: "Star", level: 4 },
+                            { title: "Famous Star", level: 5 },
+                            { title: "Legendary Performer", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Marine (6)": {
+                discipline: 1.0,  // Military
+                assignments: {
+                    "Support": {
+                        ranks: [
+                            { title: "Marine", level: 0 },
+                            { title: "Corporal", level: 1 },
+                            { title: "Sergeant", level: 2 },
+                            { title: "Gunnery Sergeant", level: 3 },
+                            { title: "Sergeant Major", level: 4 },
+                            { title: "Lieutenant", level: 5 },
+                            { title: "Captain", level: 6 }
+                        ]
+                    },
+                    "Star Marine": {
+                        ranks: [
+                            { title: "Star Marine", level: 0 },
+                            { title: "Lieutenant", level: 1 },
+                            { title: "Captain", level: 2 },
+                            { title: "Force Commander", level: 3 },
+                            { title: "Lt Colonel", level: 4 },
+                            { title: "Colonel", level: 5 },
+                            { title: "Brigadier", level: 6 }
+                        ]
+                    },
+                    "Ground Assault": {
+                        ranks: [
+                            { title: "Assault Trooper", level: 0 },
+                            { title: "Assault Leader", level: 1 },
+                            { title: "Strike Commander", level: 2 },
+                            { title: "Assault Commander", level: 3 },
+                            { title: "Strike Colonel", level: 4 },
+                            { title: "Assault Colonel", level: 5 },
+                            { title: "Assault General", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Merchant (7)": {
+                discipline: 0.5,  // Disciplined non-military
+                assignments: {
+                    "Merchant Marine": {
+                        ranks: [
+                            { title: "Crewman", level: 0 },
+                            { title: "Fourth Officer", level: 1 },
+                            { title: "Third Officer", level: 2 },
+                            { title: "Second Officer", level: 3 },
+                            { title: "First Officer", level: 4 },
+                            { title: "Captain", level: 5 },
+                            { title: "Fleet Captain", level: 6 }
+                        ]
+                    },
+                    "Free Trader": {
+                        ranks: [
+                            { title: "Trader", level: 0 },
+                            { title: "Senior Trader", level: 1 },
+                            { title: "Independent Merchant", level: 2 },
+                            { title: "Ship Owner", level: 3 },
+                            { title: "Fleet Owner", level: 4 },
+                            { title: "Merchant Prince", level: 5 },
+                            { title: "Trade Magnate", level: 6 }
+                        ]
+                    },
+                    "Broker": {
+                        ranks: [
+                            { title: "Apprentice", level: 0 },
+                            { title: "Broker", level: 1 },
+                            { title: "Senior Broker", level: 2 },
+                            { title: "Deal-Maker", level: 3 },
+                            { title: "Master Broker", level: 4 },
+                            { title: "Trade Consortium Leader", level: 5 },
+                            { title: "Merchant Guild Master", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Navy (8)": {
+                discipline: 1.0,  // Military
+                assignments: {
+                    "Line/Crew": {
+                        ranks: [
+                            { title: "Crewman", level: 0 },
+                            { title: "Ensign", level: 1 },
+                            { title: "Lieutenant", level: 2 },
+                            { title: "Lt Commander", level: 3 },
+                            { title: "Commander", level: 4 },
+                            { title: "Captain", level: 5 },
+                            { title: "Admiral", level: 6 }
+                        ]
+                    },
+                    "Engineering": {
+                        ranks: [
+                            { title: "Engineer's Mate", level: 0 },
+                            { title: "Junior Engineer", level: 1 },
+                            { title: "Engineer", level: 2 },
+                            { title: "Senior Engineer", level: 3 },
+                            { title: "Chief Engineer", level: 4 },
+                            { title: "Fleet Engineer", level: 5 },
+                            { title: "Engineering Admiral", level: 6 }
+                        ]
+                    },
+                    "Flight": {
+                        ranks: [
+                            { title: "Flight Cadet", level: 0 },
+                            { title: "Flight Ensign", level: 1 },
+                            { title: "Flight Lieutenant", level: 2 },
+                            { title: "Flight Commander", level: 3 },
+                            { title: "Wing Commander", level: 4 },
+                            { title: "Air Group Commander", level: 5 },
+                            { title: "Fleet Air Marshal", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Scout (12)": {
+                discipline: 0.5,  // Disciplined non-military
+                assignments: {
+                    "Courier": {
+                        ranks: [
+                            { title: "Courier", level: 0 },
+                            { title: "Senior Courier", level: 1 },
+                            { title: "Relay Operator", level: 2 },
+                            { title: "Relay Supervisor", level: 3 },
+                            { title: "Courier Chief", level: 4 },
+                            { title: "Courier Director", level: 5 },
+                            { title: "XBoat Network Commander", level: 6 }
+                        ]
+                    },
+                    "Surveyor": {
+                        ranks: [
+                            { title: "Survey Technician", level: 0 },
+                            { title: "Surveyor", level: 1 },
+                            { title: "Senior Surveyor", level: 2 },
+                            { title: "Survey Leader", level: 3 },
+                            { title: "Lead Surveyor", level: 4 },
+                            { title: "Senior Survey Director", level: 5 },
+                            { title: "Head of Survey Operations", level: 6 }
+                        ]
+                    },
+                    "Explorer": {
+                        ranks: [
+                            { title: "Scout", level: 0 },
+                            { title: "Scout Explorer", level: 1 },
+                            { title: "Senior Scout", level: 2 },
+                            { title: "Lead Explorer", level: 3 },
+                            { title: "Exploration Director", level: 4 },
+                            { title: "Senior Scout Director", level: 5 },
+                            { title: "Scout Commander", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Truther (14)": {
+                discipline: 0.0,  // Other - not formally disciplined
+                assignments: {
+                    "Truther": {
+                        ranks: [
+                            { title: "Harmless Crank", level: 0 },
+                            { title: "Typical minor truther", level: 1 },
+                            { title: "Noteable Figure", level: 2 },
+                            { title: "Highly Influential Truther", level: 3 },
+                            { title: "Legend or Public menace", level: 4 }
+                        ]
+                    }
+                }
+            },
+            "Believer (15)": {
+                discipline: 0.5,  // Disciplined non-military (religious orders)
+                assignments: {
+                    "Mainstream Believer": {
+                        ranks: [
+                            { title: "Lay Person", level: 0 },
+                            { title: "Initiate ", level: 1 },
+                            { title: "Lay Preacher", level: 2 },
+                            { title: "Priest/Priestess", level: 3 },
+                            { title: "Senior Priest/Priestess", level: 4 },
+                            { title: "Bishop", level: 5 },
+                            { title: "Archbishop", level: 6 }
+                        ]
+                    },
+                    "Missionary/Humanitarian": {
+                        ranks: [
+                            { title: "Junior Project Worker", level: 0 },
+                            { title: "Project Worker", level: 1 },
+                            { title: "Team Leader", level: 2 },
+                            { title: "Project Leader", level: 3 },
+                            { title: "Project Coordinator", level: 4 },
+                            { title: "Department Director", level: 5 },
+                            { title: "Director", level: 6 }
+                        ]
+                    },
+                    "Holy Warrior": {
+                        ranks: [
+                            { title: "Hopeful", level: 0 },
+                            { title: "Fighter", level: 1 },
+                            { title: "Combat Leader", level: 2 },
+                            { title: "Force Commander", level: 3 },
+                            { title: "Area Commander", level: 4 },
+                            { title: "Movement Sub-Leader", level: 5 },
+                            { title: "Movement Leader", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Noble (9)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Administrator": {
+                        ranks: [
+                            { title: "Courtier", level: 0 },
+                            { title: "Administrator", level: 1 },
+                            { title: "Minister", level: 2 },
+                            { title: "Advisor", level: 3 },
+                            { title: "High Advisor", level: 4 },
+                            { title: "Planetary Governor", level: 5 },
+                            { title: "Sector Governor", level: 6 }
+                        ]
+                    },
+                    "Diplomat": {
+                        ranks: [
+                            { title: "Attaché", level: 0 },
+                            { title: "Diplomat", level: 1 },
+                            { title: "Consul", level: 2 },
+                            { title: "Ambassador", level: 3 },
+                            { title: "High Ambassador", level: 4 },
+                            { title: "Plenipotentiary", level: 5 },
+                            { title: "Imperial Legate", level: 6 }
+                        ]
+                    },
+                    "Dilettante": {
+                        ranks: [
+                            { title: "Wastrel", level: 0 },
+                            { title: "Ingénue", level: 1 },
+                            { title: "Socialite", level: 2 },
+                            { title: "Minor Noble", level: 3 },
+                            { title: "Prominent Noble", level: 4 },
+                            { title: "High Noble", level: 5 },
+                            { title: "Imperial Peer", level: 6 }
+                        ]
+                    }
+                }
+            },
             
-            if (skillSpecializations[skillName]) {
-                skillSpecializations[skillName].forEach(spec => {
-                    const option = document.createElement('option');
-                    option.value = spec;
-                    specList.appendChild(option);
-                });
+            "Rogue (10)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Thief": {
+                        ranks: [
+                            { title: "Pickpocket", level: 0 },
+                            { title: "Burglar", level: 1 },
+                            { title: "Skilled Thief", level: 2 },
+                            { title: "Master Thief", level: 3 },
+                            { title: "Heist Planner", level: 4 },
+                            { title: "Master Planner", level: 5 },
+                            { title: "Legendary Thief", level: 6 }
+                        ]
+                    },
+                    "Enforcer": {
+                        ranks: [
+                            { title: "Thug", level: 0 },
+                            { title: "Bodyguard", level: 1 },
+                            { title: "Enforcer", level: 2 },
+                            { title: "Lieutenant", level: 3 },
+                            { title: "Underboss", level: 4 },
+                            { title: "Consigliere", level: 5 },
+                            { title: "Boss", level: 6 }
+                        ]
+                    },
+                    "Corsair": {
+                        ranks: [
+                            { title: "Pirate", level: 0 },
+                            { title: "Experienced Pirate", level: 1 },
+                            { title: "Leading Hand", level: 2 },
+                            { title: "Ship's Master", level: 3 },
+                            { title: "Notorious Captain", level: 4 },
+                            { title: "Pirate Lord", level: 5 },
+                            { title: "Pirate King", level: 6 }
+                        ]
+                    }
+                }
+            },
+            
+            "Scholar (11)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Researcher": {
+                        ranks: [
+                            { title: "Research Assistant", level: 0 },
+                            { title: "Junior Researcher", level: 1 },
+                            { title: "Researcher", level: 2 },
+                            { title: "Senior Researcher", level: 3 },
+                            { title: "Assistant Professor", level: 4 },
+                            { title: "Associate Professor", level: 5 },
+                            { title: "Professor", level: 6 }
+                        ]
+                    },
+                    "Field Researcher": {
+                        ranks: [
+                            { title: "Field Assistant", level: 0 },
+                            { title: "Field Researcher", level: 1 },
+                            { title: "Experienced Researcher", level: 2 },
+                            { title: "Senior Researcher", level: 3 },
+                            { title: "Lead Researcher", level: 4 },
+                            { title: "Research Director", level: 5 },
+                            { title: "World-Renowned Expert", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Prisoner (13)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Inmate": {
+                        ranks: [
+                            { title: "-", level: 0 },
+                            { title: "-", level: 1 },
+                            { title: "-", level: 2 },
+                            { title: "-", level: 3 },
+                            { title: "-", level: 4 },
+                            { title: "-", level: 5 },
+                            { title: "-", level: 6 }
+                        ]
+                    },
+                    "Thug": {
+                        ranks: [
+                            { title: "-", level: 0 },
+                            { title: "-", level: 1 },
+                            { title: "-", level: 2 },
+                            { title: "-", level: 3 },
+                            { title: "-", level: 4 },
+                            { title: "-", level: 5 },
+                            { title: "-", level: 6 }
+                        ]
+                    },
+                    "Fixer": {
+                        ranks: [
+                            { title: "-", level: 0 },
+                            { title: "-", level: 1 },
+                            { title: "-", level: 2 },
+                            { title: "-", level: 3 },
+                            { title: "-", level: 4 },
+                            { title: "-", level: 5 },
+                            { title: "-", level: 6 }
+                        ]
+                    }
+                }
+            },
+            "Psionic (X)": {
+                discipline: 0.0,  // Other
+                assignments: {
+                    "Wild Talent": {
+                        ranks: [
+                            { title: " - ", level: 0 },
+                            { title: "Survivor", level: 1 },
+                            { title: "Survivor", level: 2 },
+                            { title: "Witch", level: 3 },
+                            { title: "Witch", level: 4 },
+                            { title: "Witch", level: 5 },
+                            { title: "Witch", level: 6 }
+                        ]
+                    },
+                    "Adept": {
+                        ranks: [
+                            { title: " - ", level: 0 },
+                            { title: "Initiate", level: 1 },
+                            { title: "Initiate", level: 2 },
+                            { title: "Acolyte", level: 3 },
+                            { title: "Acolyte", level: 4 },
+                            { title: "Acolyte", level: 5 },
+                            { title: "Master", level: 6 }
+                        ]
+                    },
+                    "Psi-Warrior": {
+                        ranks: [
+                            { title: "Marine", level: 0 },
+                            { title: "Marine", level: 1 },
+                            { title: "Captain", level: 2 },
+                            { title: "Captain", level: 3 },
+                            { title: "Captain", level: 4 },
+                            { title: "Force Commander", level: 5 },
+                            { title: "Force Commander", level: 6 }
+                        ]
+                    }
+                }
+            },
+
+
+
+
+        };
+
+        // Also define discipline levels for supplemental careers
+        const careerDiscipline = {
+            // Military careers (1.0)
+            "Aerospace Defense": 1.0,
+            
+            // Disciplined non-military (0.5)
+            "Advocate": 0.5,
+            "Diplomat": 0.5,
+            "Doctor": 0.5,
+            "Technician": 0.5,
+            
+            // All others (0.0) - just listing a few examples
+            "Barbarian": 0.0,
+            "Belter": 0.0,
+            "Bureaucrat": 0.0,
+            "Colony Citizen": 0.0,
+            "Corsair": 0.0,
+            "Explorer": 0.0,
+            "Flyer": 0.0,
+            "Hunter": 0.0,
+            "Journalist": 0.0,
+            "Pirate": 0.0,
+            "Prisoner": 0.0,
+            "Scientist": 0.0,
+            "Spacer": 0.0,
+            "Wanderer": 0.0
+        };
+        
+        // Helper function to get discipline level for any career
+        function getCareerDiscipline(careerName) {
+            if (careerData[careerName] && typeof careerData[careerName].discipline !== 'undefined') {
+                return careerData[careerName].discipline;
+            } else if (typeof careerDiscipline[careerName] !== 'undefined') {
+                return careerDiscipline[careerName];
+            } else {
+                // Default value for unknown careers
+                return 0.0;
             }
         }
 
+        // Generic data for supplemental careers
+        const genericRankStructure = [
+            { title: "Novice", level: 0 },
+            { title: "Apprentice", level: 1 },
+            { title: "Journeyman", level: 2 },
+            { title: "Expert", level: 3 },
+            { title: "Master", level: 4 },
+            { title: "Senior Master", level: 5 },
+            { title: "Grandmaster", level: 6 }
+        ];
+
+        // MGT2 Careers from the rulebook
+        const mgt2Careers = [
+            "Agent", "Army", "Citizen", "Drifter", "Entertainer", 
+            "Marine", "Merchant", "Navy", "Noble", "Rogue", 
+            "Scholar", "Scout", "Psionic", "Prisoner", "Truther", "Believer"
+        ];
+        
+        // Additional careers from supplements
+        const supplementCareers = [
+            "Aerospace Defense", "Advocate", "Barbarian", "Belter", "Bureaucrat",
+            "Colony Citizen", "Corsair", "Diplomat", "Doctor", "Explorer", 
+            "Flyer", "Hunter", "Journalist", "Pirate", "Prisoner",
+            "Scientist", "Spacer", "Technician", "Wanderer"
+        ];
+
+        // Define core functions before they are used
+        
         // Update the DM (Dice Modifier) based on characteristic value
         function updateDM(stat) {
             const value = parseInt(document.getElementById(stat).value);
@@ -809,32 +1509,230 @@
             else dm = 3;
             
             document.getElementById(`${stat}-dm`).textContent = dm >= 0 ? `+${dm}` : dm;
+        }
+        
+        // Calculate total years across education and careers
+        function updateTotalYears() {
+            // First get education years
+            const educationRows = document.querySelectorAll('#education-container tr');
+            let totalEducationYears = 0;
             
-            // Update derived stats
-            if (stat === 'end') {
-                document.getElementById('endurance').value = value;
-                document.getElementById('enduranceMax').value = value;
+            educationRows.forEach(row => {
+                const yearsCell = row.querySelector('td[data-years]');
+                if (yearsCell) {
+                    totalEducationYears += parseInt(yearsCell.getAttribute('data-years')) || 0;
+                }
+            });
+            
+            // Then get career terms
+            const careerRows = document.querySelectorAll('#careers-container tr');
+            let totalCareerTerms = 0;
+            
+            careerRows.forEach(row => {
+                const termsCell = row.querySelector('td[data-terms]');
+                if (termsCell) {
+                    totalCareerTerms += parseInt(termsCell.getAttribute('data-terms')) || 0;
+                }
+            });
+            
+            // Calculate biological age: base + education years + (career terms * 4)
+            if (document.getElementById('age')) {
+                // Base age at character creation is 18
+                const biologicalAge = 18 + totalEducationYears + (totalCareerTerms * 4);
+                document.getElementById('age').value = biologicalAge;
+            }
+        }
+        
+        // Calculate total terms across all careers
+        function updateTotalTerms() {
+            const careerRows = document.querySelectorAll('#careers-container tr');
+            let totalTerms = 0;
+            
+            careerRows.forEach(row => {
+                const termsCell = row.querySelector('td[data-terms]');
+                if (termsCell) {
+                    totalTerms += parseInt(termsCell.getAttribute('data-terms')) || 0;
+                }
+            });
+            
+            // Update display of total terms somewhere if needed
+            if (document.getElementById('totalTerms')) {
+                document.getElementById('totalTerms').textContent = totalTerms;
             }
             
-            // Update lifeblood (STR + END)/2
-            if (stat === 'str' || stat === 'end') {
-                const str = parseInt(document.getElementById('str').value);
-                const end = parseInt(document.getElementById('end').value);
-                const lifeblood = Math.floor((str + end) / 2);
-                
-                document.getElementById('lifeblood').value = lifeblood;
-                document.getElementById('lifebloodMax').value = lifeblood;
+            // Update age including education years
+            updateTotalYears();
+        }
+        
+        // Update specialization options based on selected skill
+        function updateSpecializationOptions() {
+            const skillName = document.getElementById('skillSearch').value;
+            const specList = document.getElementById('specialization-list');
+            specList.innerHTML = '';  // Clear existing options
+            
+            if (skillSpecializations[skillName]) {
+                skillSpecializations[skillName].forEach(spec => {
+                    const option = document.createElement('option');
+                    option.value = spec;
+                    specList.appendChild(option);
+                });
             }
-
-            // Update resolve (INT + EDU)/2
-            if (stat === 'int' || stat === 'edu') {
-                const int = parseInt(document.getElementById('int').value);
-                const edu = parseInt(document.getElementById('edu').value);
-                const resolve = Math.floor((int + edu) / 2);
+        }
+        
+        // Update assignments dropdown when career is selected
+        function updateAssignments() {
+            const careerName = document.getElementById('careerName').value;
+            const assignmentSelect = document.getElementById('careerAssignment');
+            
+            console.log("Selected career:", careerName); // Debug line
+            
+            // Clear current options
+            assignmentSelect.innerHTML = '<option value="">Select Assignment...</option>';
+            
+            // First try exact match
+            if (careerData[careerName] && careerData[careerName].assignments) {
+                populateAssignments(careerName, assignmentSelect);
+            } 
+            // Try matching without the parenthesized number
+            else {
+                // Try to find a matching career name with numbering
+                const careerKeys = Object.keys(careerData);
+                const matchingCareer = careerKeys.find(key => 
+                    key.startsWith(careerName + " (") || key === careerName
+                );
                 
-                document.getElementById('resolve').value = resolve;
-                document.getElementById('resolveMax').value = resolve;
+                console.log("Matching career found:", matchingCareer); // Debug line
+                
+                if (matchingCareer && careerData[matchingCareer].assignments) {
+                    populateAssignments(matchingCareer, assignmentSelect);
+                }
             }
+            
+            // Clear and update rank field
+            document.getElementById('careerRank').value = '';
+            suggestRank();
+        }
+        
+        // Helper function to populate assignments dropdown
+        function populateAssignments(careerKey, selectElement) {
+            const assignments = Object.keys(careerData[careerKey].assignments);
+            
+            assignments.forEach(assignment => {
+                const option = document.createElement('option');
+                option.value = assignment;
+                option.textContent = assignment;
+                selectElement.appendChild(option);
+            });
+            
+            console.log(`Added ${assignments.length} assignments for ${careerKey}`); // Debug line
+        }
+        
+        // Suggest rank based on career and terms
+        function suggestRank() {
+            const careerName = document.getElementById('careerName').value;
+            const assignment = document.getElementById('careerAssignment').value;
+            const careerTerms = parseInt(document.getElementById('careerTerms').value) || 1;
+            const rankField = document.getElementById('careerRank');
+            
+            // Calculate recommended rank based on terms
+            // Each term potentially allows you to advance one rank level
+            let rankLevel = Math.min(careerTerms - 1, 6);
+            if (rankLevel < 0) rankLevel = 0;
+            
+            // First try exact career name match
+            let careerFound = careerData[careerName];
+            
+            // If not found, try to match without the parenthesized number
+            if (!careerFound) {
+                const careerKeys = Object.keys(careerData);
+                const matchingCareer = careerKeys.find(key => 
+                    key.startsWith(careerName + " (") || key === careerName
+                );
+                
+                if (matchingCareer) {
+                    careerFound = careerData[matchingCareer];
+                }
+            }
+            
+            // Get proper rank title if available
+            if (
+                careerFound && 
+                careerFound.assignments && 
+                assignment && 
+                careerFound.assignments[assignment] &&
+                careerFound.assignments[assignment].ranks &&
+                careerFound.assignments[assignment].ranks[rankLevel]
+            ) {
+                rankField.value = careerFound.assignments[assignment].ranks[rankLevel].title;
+            } else {
+                // Use generic rank structure
+                rankField.value = genericRankStructure[rankLevel].title;
+            }
+        }
+        
+        // Helper functions for skill management
+        function getExistingSpecializations(skillName) {
+            const existingSkills = document.querySelectorAll('.skill-name');
+            const existingSpecs = [];
+            
+            for (let i = 0; i < existingSkills.length; i++) {
+                if (existingSkills[i].getAttribute('data-skill') === skillName) {
+                    const spec = existingSkills[i].getAttribute('data-specialization');
+                    if (spec) {
+                        existingSpecs.push(spec);
+                    }
+                }
+            }
+            
+            return existingSpecs;
+        }
+        
+        function updateExistingSkill(skillName, specialization, level) {
+            const skillItems = document.querySelectorAll('.skill-item');
+            
+            for (let i = 0; i < skillItems.length; i++) {
+                const skillNameElem = skillItems[i].querySelector('.skill-name');
+                
+                if (skillNameElem.getAttribute('data-skill') === skillName && 
+                    skillNameElem.getAttribute('data-specialization') === specialization) {
+                    const input = skillItems[i].querySelector('input');
+                    input.value = level;
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+        
+        function addSingleSkill(skillName, specialization, skillLevel) {
+            // Check if skill already exists
+            const existingSkills = document.querySelectorAll('.skill-name');
+            for (let i = 0; i < existingSkills.length; i++) {
+                if (existingSkills[i].getAttribute('data-skill') === skillName && 
+                    existingSkills[i].getAttribute('data-specialization') === specialization) {
+                    
+                    // Update existing skill instead of adding duplicate
+                    updateExistingSkill(skillName, specialization, skillLevel);
+                    return;
+                }
+            }
+            
+            const skillsContainer = document.getElementById('skills-container');
+            const skillDiv = document.createElement('div');
+            skillDiv.className = 'skill-item';
+            
+            // Store both skill name and specialization separately for data handling
+            skillDiv.innerHTML = `
+                <span class="skill-name" data-skill="${skillName}" data-specialization="${specialization || ''}">
+                    ${skillName}${specialization ? ` <span class="skill-specialization">(${specialization})</span>` : ''}
+                </span>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
+                    <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
+                </div>
+            `;
+            
+            skillsContainer.appendChild(skillDiv);
         }
 
         // Modified addSkill function to handle mandatory specializations
@@ -889,74 +1787,82 @@
             document.getElementById('specializationField').value = '';
             document.getElementById('skillLevel').value = 0;
         }
-        
-        // Helper function to add a single skill
-        function addSingleSkill(skillName, specialization, skillLevel) {
-            // Check if skill already exists
-            const existingSkills = document.querySelectorAll('.skill-name');
-            for (let i = 0; i < existingSkills.length; i++) {
-                if (existingSkills[i].getAttribute('data-skill') === skillName && 
-                    existingSkills[i].getAttribute('data-specialization') === specialization) {
-                    
-                    // Update existing skill instead of adding duplicate
-                    updateExistingSkill(skillName, specialization, skillLevel);
-                    return;
-                }
+
+        // Add education to education table
+        function addEducation() {
+            const educationType = document.getElementById('educationType').value;
+            const educationYears = document.getElementById('educationYears').value;
+            const educationQualification = document.getElementById('educationQualification').value;
+            const educationSkills = document.getElementById('educationSkills').value;
+            
+            if (!educationType) {
+                alert("Please select an education type");
+                return;
             }
             
-            const skillsContainer = document.getElementById('skills-container');
-            const skillDiv = document.createElement('div');
-            skillDiv.className = 'skill-item';
-            
-            // Store both skill name and specialization separately for data handling
-            skillDiv.innerHTML = `
-                <span class="skill-name" data-skill="${skillName}" data-specialization="${specialization || ''}">
-                    ${skillName}${specialization ? ` <span class="skill-specialization">(${specialization})</span>` : ''}
-                </span>
-                <div class="d-flex align-items-center">
-                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
-                    <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
-                </div>
+            const educationContainer = document.getElementById('education-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td data-type="${educationType}">${educationType}</td>
+                <td data-years="${educationYears}">${educationYears}</td>
+                <td data-qualification="${educationQualification}">${educationQualification}</td>
+                <td data-skills="${educationSkills}">${educationSkills}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+                </td>
             `;
             
-            skillsContainer.appendChild(skillDiv);
-        }
-
-        // Helper function to get existing specializations for a skill
-        function getExistingSpecializations(skillName) {
-            const existingSkills = document.querySelectorAll('.skill-name');
-            const existingSpecs = [];
+            educationContainer.appendChild(row);
             
-            for (let i = 0; i < existingSkills.length; i++) {
-                if (existingSkills[i].getAttribute('data-skill') === skillName) {
-                    const spec = existingSkills[i].getAttribute('data-specialization');
-                    if (spec) {
-                        existingSpecs.push(spec);
-                    }
-                }
+            // Clear inputs
+            document.getElementById('educationType').selectedIndex = 0;
+            document.getElementById('educationYears').value = '4';
+            document.getElementById('educationQualification').value = '';
+            document.getElementById('educationSkills').value = '';
+            
+            // Update age based on education years
+            updateTotalYears();
+        }
+        
+        // Add career to the careers table
+        function addCareer() {
+            const careerName = document.getElementById('careerName').value;
+            const careerAssignment = document.getElementById('careerAssignment').value;
+            const careerTerms = document.getElementById('careerTerms').value;
+            const careerRank = document.getElementById('careerRank').value;
+            const careerBenefits = document.getElementById('careerBenefits').value;
+            
+            if (!careerName) {
+                alert("Please select a career");
+                return;
             }
             
-            return existingSpecs;
-        }
-
-        // Helper function to update an existing skill's level
-        function updateExistingSkill(skillName, specialization, level) {
-            const skillItems = document.querySelectorAll('.skill-item');
+            const careersContainer = document.getElementById('careers-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td data-career="${careerName}">${careerName}</td>
+                <td data-assignment="${careerAssignment}">${careerAssignment}</td>
+                <td data-terms="${careerTerms}">${careerTerms}</td>
+                <td data-rank="${careerRank}">${careerRank}</td>
+                <td data-benefits="${careerBenefits}">${careerBenefits}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+                </td>
+            `;
             
-            for (let i = 0; i < skillItems.length; i++) {
-                const skillNameElem = skillItems[i].querySelector('.skill-name');
-                
-                if (skillNameElem.getAttribute('data-skill') === skillName && 
-                    skillNameElem.getAttribute('data-specialization') === specialization) {
-                    const input = skillItems[i].querySelector('input');
-                    input.value = level;
-                    return true;
-                }
-            }
+            careersContainer.appendChild(row);
             
-            return false;
+            // Clear inputs
+            document.getElementById('careerName').selectedIndex = 0;
+            document.getElementById('careerAssignment').innerHTML = '<option value="">Select Assignment...</option>';
+            document.getElementById('careerTerms').value = '1';
+            document.getElementById('careerRank').value = '';
+            document.getElementById('careerBenefits').value = '';
+            
+            // Update total terms
+            updateTotalTerms();
         }
-
+        
         // Add armor to the armor table
         function addArmor() {
             const armorName = document.getElementById('armorName').value;
@@ -986,7 +1892,7 @@
             document.getElementById('armorTL').value = '';
             document.getElementById('armorRadiation').value = '';
         }
-
+        
         // Add equipment to the equipment table
         function addEquipment() {
             const equipmentName = document.getElementById('equipmentName').value;
@@ -1016,7 +1922,35 @@
             document.getElementById('equipmentMass').value = '';
             document.getElementById('equipmentCost').value = '';
         }
-
+        
+        // Add weapon to the weapons table
+        function addWeapon() {
+            const weaponName = document.getElementById('weaponName').value;
+            const weaponDamage = document.getElementById('weaponDamage').value;
+            const weaponRange = document.getElementById('weaponRange').value;
+            
+            if (!weaponName) return;
+            
+            const weaponsContainer = document.getElementById('weapons-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${weaponName}</td>
+                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
+                <td>${weaponDamage}</td>
+                <td>${weaponRange}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            weaponsContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('weaponName').value = '';
+            document.getElementById('weaponDamage').value = '';
+            document.getElementById('weaponRange').value = '';
+        }
+        
         // Dice rolling functions
         function rollDice(num, sides) {
             let total = 0;
@@ -1034,7 +1968,7 @@
             
             return total;
         }
-
+        
         function rollTask(target) {
             const result = rollDice(2, 6);
             let success = "FAILURE";
@@ -1047,8 +1981,10 @@
                 Result: ${result} vs. Target ${target} - ${success}!
             `;
         }
-
-        // Save character to localStorage
+        
+        // Character save/load functions - these MUST be defined after the utility functions
+        
+        // Save character to localStorage - consolidated version 
         function saveCharacter() {
             const character = {
                 // Basic info
@@ -1056,15 +1992,28 @@
                 species: document.getElementById('species').value,
                 age: document.getElementById('age').value,
                 
-                // Get career details
-                careers: Array.from(document.getElementById('careers-container').querySelectorAll('tr')).map(row => {
+                // Get education details
+                education: Array.from(document.getElementById('education-container').querySelectorAll('tr')).map(row => {
                     const cells = row.querySelectorAll('td');
                     if (cells.length < 4) return null;
                     return {
+                        type: cells[0].getAttribute('data-type') || cells[0].textContent,
+                        years: cells[1].getAttribute('data-years') || cells[1].textContent,
+                        qualification: cells[2].getAttribute('data-qualification') || cells[2].textContent,
+                        skills: cells[3].getAttribute('data-skills') || cells[3].textContent
+                    };
+                }).filter(e => e !== null),
+                
+                // Get career details with assignments
+                careers: Array.from(document.getElementById('careers-container').querySelectorAll('tr')).map(row => {
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length < 5) return null;
+                    return {
                         career: cells[0].getAttribute('data-career') || cells[0].textContent,
-                        terms: cells[1].getAttribute('data-terms') || cells[1].textContent,
-                        rank: cells[2].getAttribute('data-rank') || cells[2].textContent,
-                        benefits: cells[3].getAttribute('data-benefits') || cells[3].textContent
+                        assignment: cells[1].getAttribute('data-assignment') || cells[1].textContent,
+                        terms: cells[2].getAttribute('data-terms') || cells[2].textContent,
+                        rank: cells[3].getAttribute('data-rank') || cells[3].textContent,
+                        benefits: cells[4].getAttribute('data-benefits') || cells[4].textContent
                     };
                 }).filter(c => c !== null),
                 
@@ -1076,14 +2025,13 @@
                 edu: document.getElementById('edu').value,
                 soc: document.getElementById('soc').value,
                 
-                // Secondary characteristics
-                endurance: document.getElementById('endurance').value,
-                enduranceMax: document.getElementById('enduranceMax').value,
-                lifeblood: document.getElementById('lifeblood').value,
-                lifebloodMax: document.getElementById('lifebloodMax').value,
-                resolve: document.getElementById('resolve').value,
-                resolveMax: document.getElementById('resolveMax').value,
+                // Additional characteristics
                 psi: document.getElementById('psi').value,
+                wlt: document.getElementById('wlt').value,
+                lck: document.getElementById('lck').value,
+                mrl: document.getElementById('mrl').value,
+                sty: document.getElementById('sty').value,
+                std: document.getElementById('std').value,
                 
                 // Finances
                 credits: document.getElementById('credits').value,
@@ -1149,7 +2097,7 @@
             }
         }
         
-        // Load character from localStorage
+        // Load character from localStorage - consolidated version
         function loadCharacter() {
             try {
                 const savedCharacter = localStorage.getItem('traveller-character');
@@ -1165,6 +2113,26 @@
                 document.getElementById('species').value = character.species || 'Human';
                 document.getElementById('age').value = character.age || '18';
                 
+                // Clear existing education entries
+                document.getElementById('education-container').innerHTML = '';
+                
+                // Load education data if it exists
+                if (character.education && character.education.length) {
+                    character.education.forEach(educationData => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td data-type="${educationData.type}">${educationData.type}</td>
+                            <td data-years="${educationData.years}">${educationData.years}</td>
+                            <td data-qualification="${educationData.qualification}">${educationData.qualification}</td>
+                            <td data-skills="${educationData.skills}">${educationData.skills}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+                            </td>
+                        `;
+                        document.getElementById('education-container').appendChild(row);
+                    });
+                }
+                
                 // Clear existing careers
                 document.getElementById('careers-container').innerHTML = '';
                 
@@ -1174,11 +2142,12 @@
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td data-career="${careerData.career}">${careerData.career}</td>
+                            <td data-assignment="${careerData.assignment || ''}">${careerData.assignment || ''}</td>
                             <td data-terms="${careerData.terms}">${careerData.terms}</td>
                             <td data-rank="${careerData.rank}">${careerData.rank}</td>
                             <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
                             <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
                             </td>
                         `;
                         document.getElementById('careers-container').appendChild(row);
@@ -1203,14 +2172,21 @@
                 updateDM('edu');
                 updateDM('soc');
                 
-                // Secondary characteristics
-                document.getElementById('endurance').value = character.endurance || '0';
-                document.getElementById('enduranceMax').value = character.enduranceMax || '0';
-                document.getElementById('lifeblood').value = character.lifeblood || '0';
-                document.getElementById('lifebloodMax').value = character.lifebloodMax || '0';
-                document.getElementById('resolve').value = character.resolve || '0';
-                document.getElementById('resolveMax').value = character.resolveMax || '0';
-                document.getElementById('psi').value = character.psi || '0';
+                // Additional Characteristics
+                document.getElementById('psi').value = character.psi || '7';
+                document.getElementById('wlt').value = character.wlt || '7';
+                document.getElementById('lck').value = character.lck || '7';
+                document.getElementById('mrl').value = character.mrl || '7';
+                document.getElementById('sty').value = character.sty || '7';
+                document.getElementById('std').value = character.std || '7';
+                
+                // Update DMs for additional characteristics
+                updateDM('psi');
+                updateDM('wlt');
+                updateDM('lck');
+                updateDM('mrl');
+                updateDM('sty');
+                updateDM('std');
                 
                 // Finances
                 document.getElementById('credits').value = character.credits || '0';
@@ -1272,7 +2248,6 @@
                             <td>${armor.radiation}</td>
                             <td class="no-print">
                                 <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                            </td>
                         `;
                         document.getElementById('armor-container').appendChild(row);
                     });
@@ -1317,6 +2292,14 @@
                 document.getElementById('edu').value = '7';
                 document.getElementById('soc').value = '7';
                 
+                // Additional Characteristics
+                document.getElementById('psi').value = '7';
+                document.getElementById('wlt').value = '7';
+                document.getElementById('lck').value = '7';
+                document.getElementById('mrl').value = '7';
+                document.getElementById('sty').value = '7';
+                document.getElementById('std').value = '7';
+                
                 // Update DMs
                 updateDM('str');
                 updateDM('dex');
@@ -1324,6 +2307,14 @@
                 updateDM('int');
                 updateDM('edu');
                 updateDM('soc');
+                
+                // Update DMs for additional characteristics
+                updateDM('psi');
+                updateDM('wlt');
+                updateDM('lck');
+                updateDM('mrl');
+                updateDM('sty');
+                updateDM('std');
                 
                 // Finances
                 document.getElementById('credits').value = '0';
@@ -1411,52 +2402,10 @@
             input.click();
         }
 
-        // Add weapon to the weapons table
-        function addWeapon() {
-            const weaponName = document.getElementById('weaponName').value;
-            const weaponDamage = document.getElementById('weaponDamage').value;
-            const weaponRange = document.getElementById('weaponRange').value;
-            
-            if (!weaponName) return;
-            
-            const weaponsContainer = document.getElementById('weapons-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${weaponName}</td>
-                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
-                <td>${weaponDamage}</td>
-                <td>${weaponRange}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-            
-            weaponsContainer.appendChild(row);
-            
-            // Clear inputs
-            document.getElementById('weaponName').value = '';
-            document.getElementById('weaponDamage').value = '';
-            document.getElementById('weaponRange').value = '';
-        }
-
-        // MGT2 Careers from the rulebook
-        const mgt2Careers = [
-            "Agent", "Army", "Citizen", "Drifter", "Entertainer", 
-            "Marine", "Merchant", "Navy", "Noble", "Rogue", 
-            "Scholar", "Scout", "Psion"
-        ];
-        
-        // Additional careers from supplements
-        const supplementCareers = [
-            "Aerospace Defense", "Advocate", "Barbarian", "Belter", "Bureaucrat",
-            "Colony Citizen", "Corsair", "Diplomat", "Doctor", "Explorer", 
-            "Flyer", "Hunter", "Journalist", "Pirate", "Prisoner",
-            "Scientist", "Spacer", "Technician", "Wanderer"
-        ];
-        
         // Add career to the careers table
         function addCareer() {
             const careerName = document.getElementById('careerName').value;
+            const careerAssignment = document.getElementById('careerAssignment').value;
             const careerTerms = document.getElementById('careerTerms').value;
             const careerRank = document.getElementById('careerRank').value;
             const careerBenefits = document.getElementById('careerBenefits').value;
@@ -1470,11 +2419,12 @@
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td data-career="${careerName}">${careerName}</td>
+                <td data-assignment="${careerAssignment}">${careerAssignment}</td>
                 <td data-terms="${careerTerms}">${careerTerms}</td>
                 <td data-rank="${careerRank}">${careerRank}</td>
                 <td data-benefits="${careerBenefits}">${careerBenefits}</td>
                 <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
                 </td>
             `;
             
@@ -1482,6 +2432,7 @@
             
             // Clear inputs
             document.getElementById('careerName').selectedIndex = 0;
+            document.getElementById('careerAssignment').innerHTML = '<option value="">Select Assignment...</option>';
             document.getElementById('careerTerms').value = '1';
             document.getElementById('careerRank').value = '';
             document.getElementById('careerBenefits').value = '';
@@ -1490,85 +2441,35 @@
             updateTotalTerms();
         }
         
-        // Calculate total terms across all careers
-        function updateTotalTerms() {
-            const careerRows = document.querySelectorAll('#careers-container tr');
-            let totalTerms = 0;
-            
-            careerRows.forEach(row => {
-                const termsCell = row.querySelector('td[data-terms]');
-                if (termsCell) {
-                    totalTerms += parseInt(termsCell.getAttribute('data-terms')) || 0;
-                }
-            });
-            
-            // Update display of total terms somewhere if needed
-            if (document.getElementById('totalTerms')) {
-                document.getElementById('totalTerms').textContent = totalTerms;
-            }
-            
-            // Calculate biological age based on terms
-            if (document.getElementById('age')) {
-                // Base age at character creation is 18
-                const biologicalAge = 18 + (totalTerms * 4);
-                document.getElementById('age').value = biologicalAge;
-            }
-        }
-        
         // Initialize career dropdown on page load
         document.addEventListener('DOMContentLoaded', function() {
-            // Existing init code...
+            // ...existing initialization code...
             
-            // Populate career dropdown
-            const careerSelect = document.getElementById('careerName');
-            
-            // Add optgroup for core rulebook careers
-            const coreGroup = document.createElement('optgroup');
-            coreGroup.label = 'Core Rulebook';
-            mgt2Careers.forEach(career => {
-                const option = document.createElement('option');
-                option.value = career;
-                option.textContent = career;
-                coreGroup.appendChild(option);
-            });
-            careerSelect.appendChild(coreGroup);
-            
-            // Add optgroup for supplement careers
-            const suppGroup = document.createElement('optgroup');
-            suppGroup.label = 'Supplements';
-            supplementCareers.forEach(career => {
-                const option = document.createElement('option');
-                option.value = career;
-                option.textContent = career;
-                suppGroup.appendChild(option);
-            });
-            careerSelect.appendChild(suppGroup);
+            // Add event listener for career terms to suggest ranks
+            document.getElementById('careerTerms').addEventListener('input', suggestRank);
         });
 
-        // Update the saveCharacter function to save careers
+        // Update the saveCharacter function to save careers with assignments
         const originalSaveCharacter = saveCharacter;
         
         saveCharacter = function() {
-            // Create a character object using the original function's logic
             const character = {
-                // Basic info
-                charName: document.getElementById('charName').value,
-                species: document.getElementById('species').value,
-                age: document.getElementById('age').value,
+                // ...existing character data...
                 
-                // Get career details
+                // Get career details with assignments
                 careers: Array.from(document.getElementById('careers-container').querySelectorAll('tr')).map(row => {
                     const cells = row.querySelectorAll('td');
-                    if (cells.length < 4) return null;
+                    if (cells.length < 5) return null;
                     return {
                         career: cells[0].getAttribute('data-career') || cells[0].textContent,
-                        terms: cells[1].getAttribute('data-terms') || cells[1].textContent,
-                        rank: cells[2].getAttribute('data-rank') || cells[2].textContent,
-                        benefits: cells[3].getAttribute('data-benefits') || cells[3].textContent
+                        assignment: cells[1].getAttribute('data-assignment') || cells[1].textContent,
+                        terms: cells[2].getAttribute('data-terms') || cells[2].textContent,
+                        rank: cells[3].getAttribute('data-rank') || cells[3].textContent,
+                        benefits: cells[4].getAttribute('data-benefits') || cells[4].textContent
                     };
                 }).filter(c => c !== null),
                 
-                // All other characteristics will remain the same
+                // ...rest of character data...
             };
             
             // Store in localStorage
@@ -1581,7 +2482,7 @@
             }
         };
         
-        // Update the loadCharacter function to load careers
+        // Update the loadCharacter function to load careers with assignments
         const originalLoadCharacter = loadCharacter;
         
         loadCharacter = function() {
@@ -1603,11 +2504,12 @@
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td data-career="${careerData.career}">${careerData.career}</td>
+                            <td data-assignment="${careerData.assignment || ''}">${careerData.assignment || ''}</td>
                             <td data-terms="${careerData.terms}">${careerData.terms}</td>
                             <td data-rank="${careerData.rank}">${careerData.rank}</td>
                             <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
                             <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
                             </td>
                         `;
                         document.getElementById('careers-container').appendChild(row);
@@ -1624,18 +2526,123 @@
             }
         };
 
-        // Add the deleteCharacter function
-        function deleteCharacter() {
-            if (confirm('Are you sure you want to delete your saved character? This cannot be undone.')) {
-                try {
-                    localStorage.removeItem('traveller-character');
-                    alert('Character deleted successfully from storage.');
-                } catch (e) {
-                    console.error('Delete failed:', e);
-                    alert('Failed to delete character. Error: ' + e.message);
-                }
+        // ...existing code...
+
+        // Create a comprehensive initialization function
+        function initializeCharacterSheet() {
+            console.log("Initializing character sheet...");
+            
+            // Initialize characteristics
+            updateDM('str');
+            updateDM('dex');
+            updateDM('end');
+            updateDM('int');
+            updateDM('edu');
+            updateDM('soc');
+            
+            // Initialize additional characteristics
+            updateDM('psi');
+            updateDM('wlt');
+            updateDM('lck');
+            updateDM('mrl');
+            updateDM('sty');
+            updateDM('std');
+            
+            // Create the skills datalist for autocomplete
+            const skillSearch = document.getElementById('skillSearch');
+            
+            // First check if datalist already exists and remove if so
+            const existingDatalist = document.getElementById('skill-list');
+            if (existingDatalist) {
+                existingDatalist.remove();
             }
+            
+            // Create fresh datalist
+            const datalist = document.createElement('datalist');
+            datalist.id = 'skill-list';
+            
+            commonSkills.forEach(skill => {
+                const option = document.createElement('option');
+                option.value = skill;
+                datalist.appendChild(option);
+            });
+            
+            document.body.appendChild(datalist);
+            
+            // Make sure the input element has the list attribute
+            if (skillSearch) {
+                skillSearch.setAttribute('list', 'skill-list');
+                console.log("Skills datalist connected to input");
+            } else {
+                console.error("Could not find skillSearch element");
+            }
+            
+            // Add autocomplete handling for specializations
+            const specializationField = document.getElementById('specializationField');
+            
+            // First check if specialization datalist already exists
+            const existingSpecList = document.getElementById('specialization-list');
+            if (existingSpecList) {
+                existingSpecList.remove();
+            }
+            
+            // Create fresh specialization datalist
+            const specList = document.createElement('datalist');
+            specList.id = 'specialization-list';
+            document.body.appendChild(specList);
+            
+            if (specializationField) {
+                specializationField.setAttribute('list', 'specialization-list');
+                // Update specialization options when skill changes
+                skillSearch.addEventListener('input', updateSpecializationOptions);
+                console.log("Specialization datalist connected");
+            } else {
+                console.error("Could not find specializationField element");
+            }
+            
+            // Populate career dropdown
+            const careerSelect = document.getElementById('careerName');
+            if (careerSelect) {
+                // Clear existing options except the first one
+                while (careerSelect.options.length > 1) {
+                    careerSelect.remove(1);
+                }
+                
+                // Add optgroup for core rulebook careers
+                const coreGroup = document.createElement('optgroup');
+                coreGroup.label = 'Core Rulebook';
+                mgt2Careers.forEach(career => {
+                    // Look for matching career in careerData (with or without numeric suffix)
+                    const careerKeys = Object.keys(careerData);
+                    const matchingCareer = careerKeys.find(key => 
+                        key.startsWith(career + " (") || key === career
+                    ) || career;
+                    
+                    const option = document.createElement('option');
+                    // Use the exact key from careerData to maintain consistency
+                    option.value = matchingCareer;
+                    // Display the clean career name without the number
+                    option.textContent = matchingCareer.replace(/\s*\(\d+\)$/, '');
+                    coreGroup.appendChild(option);
+                });
+                careerSelect.appendChild(coreGroup);
+                
+                // ...existing supplement career code...
+                
+                // Make sure the event handler is properly attached
+                careerSelect.addEventListener('change', updateAssignments);
+                
+                // ...existing code...
+            }
+            
+            // ...rest of initialization code...
         }
+
+        // Set up event listener to initialize the sheet when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM fully loaded");
+            initializeCharacterSheet();
+        });
     </script>
 </body>
 </html>
