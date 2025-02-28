@@ -214,8 +214,8 @@
         .btn-secondary {
             background-color: var(--traveller-supporting);
             border-color: var(--traveller-supporting);
-            color: var(--traveller-text-on-dark);
-            font-family: var(--font-ui);
+            color: var (--traveller-text-on-dark);
+            font-family: var (--font-ui);
             font-weight: 500;
         .btn-secondary:hover {
             background-color: var(--traveller-tertiary);
@@ -226,7 +226,7 @@
             background-color: var(--traveller-supporting);
             border-color: var(--traveller-supporting);
             color: var (--traveller-text-on-dark);
-            font-family: var(--font-ui);
+            font-family: var (--font-ui);
             font-weight: 500;
             letter-spacing: 0.25px;
         }
@@ -946,24 +946,54 @@
                 <input type="hidden" id="wlt-baseline" value="7" oninput="updateDM('wlt')">
             </div>
             <div class="col-md-3 mb-3">
-                <label for="credits" class="form-label">Credits</label>
+                <label for="credits" class="form-label">Credits in the Bank</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
                     <input type="number" class="form-control" id="credits" value="0">
                 </div>
             </div>
             <div class="col-md-3 mb-3">
-                <label for="pension" class="form-label">Pension</label>
+                <label for="cashOnHand" class="form-label">Cash on Hand</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="cashOnHand" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="pension" class="form-label">Monthly Pension</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
                     <input type="number" class="form-control" id="pension" value="0">
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-3 mb-3">
-                <label for="debt" class="form-label">Debt</label>
+                <label for="debt" class="form-label">Total Personal Debt</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
                     <input type="number" class="form-control" id="debt" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="livingCosts" class="form-label">Living Costs</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="livingCosts" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="shipPayments" class="form-label">Monthly Ship Payments</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="shipPayments" value="0">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="shipCosts" class="form-label">Monthly Ship Costs</label>
+                <div class="input-group">
+                    <span class="input-group-text">Cr</span>
+                    <input type="number" class="form-control" id="shipCosts" value="0">
                 </div>
             </div>
         </div>
@@ -2175,6 +2205,10 @@
                 credits: document.getElementById('credits').value,
                 pension: document.getElementById('pension').value,
                 debt: document.getElementById('debt').value,
+                cashOnHand: document.getElementById('cashOnHand').value,
+                livingCosts: document.getElementById('livingCosts').value,
+                shipPayments: document.getElementById('shipPayments').value,
+                shipCosts: document.getElementById('shipCosts').value,  // Add this line
                 
                 // Notes
                 notes: document.getElementById('notes').value,
@@ -2402,6 +2436,10 @@
                 document.getElementById('credits').value = character.credits || '0';
                 document.getElementById('pension').value = character.pension || '0';
                 document.getElementById('debt').value = character.debt || '0';
+                document.getElementById('cashOnHand').value = character.cashOnHand || '0';
+                document.getElementById('livingCosts').value = character.livingCosts || '0';
+                document.getElementById('shipPayments').value = character.shipPayments || '0';
+                document.getElementById('shipCosts').value = character.shipCosts || '0';  // Add this line
                 
                 // Notes
                 document.getElementById('notes').value = character.notes || '';
@@ -2545,6 +2583,10 @@
                 document.getElementById('credits').value = '0';
                 document.getElementById('pension').value = '0';
                 document.getElementById('debt').value = '0';
+                document.getElementById('cashOnHand').value = '0';
+                document.getElementById('livingCosts').value = '0';
+                document.getElementById('shipPayments').value = '0';
+                document.getElementById('shipCosts').value = '0';  // Add this line
                 
                 // Notes
                 document.getElementById('notes').value = '';
