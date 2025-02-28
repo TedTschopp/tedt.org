@@ -357,6 +357,61 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--traveller-tertiary);
         }
+
+        /* Styles for dual characteristic values */
+        .characteristic-box {
+            /* Adjust padding to fit more content */
+            padding: 12px 10px;
+        }
+        
+        .char-values {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .char-value {
+            flex: 1;
+            padding: 0 2px;
+        }
+        
+        .char-value label {
+            font-size: 0.7rem;
+            display: block;
+            text-align: center;
+            margin: 0;
+            color: var(--traveller-supporting);
+        }
+        
+        .char-value input {
+            padding: 2px;
+            text-align: center;
+            height: auto;
+            font-size: 1.2rem;
+        }
+        
+        .characteristic-dm-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .characteristic-dm-current {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--traveller-tertiary);
+        }
+        
+        .characteristic-dm-baseline {
+            font-size: 0.9rem;
+            color: var(--traveller-supporting);
+        }
+        
+        .characteristic-dm-separator {
+            margin: 0 3px;
+            color: var(--traveller-supporting);
+        }
     </style>
 </head>
 <body>
@@ -381,26 +436,26 @@
             </div>
         </div>
         
-        <!-- Pre-Career Education Section -->
+        <!-- Pre-Career Options Section (renamed from Pre-Career Education) -->
         <div class="row">
             <div class="col-md-12 mb-3">
                 <div class="section-header">
-                    PRE-CAREER EDUCATION
+                    PRE-CAREER OPTIONS
                 </div>
                 
                 <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Type</th>
+                                <th>Option</th>
                                 <th>Years</th>
-                                <th>Qualification</th>
-                                <th>Skills Gained</th>
+                                <th>Outcome</th>
+                                <th>Benefits</th>
                                 <th class="no-print">Actions</th>
                             </tr>
                         </thead>
                         <tbody id="education-container">
-                            <!-- Education entries will be added here by JavaScript -->
+                            <!-- Pre-career options will be added here by JavaScript -->
                         </tbody>
                     </table>
                 </div>
@@ -409,18 +464,22 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <select class="form-control" id="educationType">
-                                <option value="">Select Education Type...</option>
+                                <option value="">Select Pre-Career Option...</option>
                                 <option value="University">University</option>
                                 <option value="Military Academy">Military Academy</option>
-                                <option value="Technical College">Technical College</option>
-                                <option value="Trade School">Trade School</option>
-                                <option value="Apprenticeship">Apprenticeship</option>
-                                <option value="Other">Other</option>
+                                <option value="Colonial Upbringing">Colonial Upbringing</option>
+                                <option value="Merchant Academy">Merchant Academy</option>
+                                <option value="Psionic Community">Psionic Community</option>
+                                <option value="School of Hard Knocks">School of Hard Knocks</option>
+                                <option value="Spacer Community">Spacer Community</option>
                             </select>
                             <input type="number" class="form-control" id="educationYears" placeholder="Years" min="1" value="4" style="max-width: 80px;">
-                            <input type="text" class="form-control" id="educationQualification" placeholder="Qualification/Degree">
-                            <input type="text" class="form-control" id="educationSkills" placeholder="Skills Gained">
-                            <button class="btn btn-add" onclick="addEducation()">Add Education</button>
+                            <select class="form-control" id="educationOutcome">
+                                <option value="Graduate">Graduate</option>
+                                <option value="Graduate with Honors">Graduate with Honors</option>
+                            </select>
+                            <input type="text" class="form-control" id="educationBenefits" placeholder="Benefits">
+                            <button class="btn btn-add" id="addEducationBtn" onclick="addEducation()">Add Option</button>
                         </div>
                     </div>
                 </div>
@@ -484,43 +543,121 @@
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>STR</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="str" value="7" min="0" max="15" oninput="updateDM('str')">
-                    <span class="characteristic-dm" id="str-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="str-current" value="7" min="0" max="15" oninput="updateDM('str')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="str-baseline" value="7" min="0" max="15" oninput="updateDM('str')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="str-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="str-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>DEX</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="dex" value="7" min="0" max="15" oninput="updateDM('dex')">
-                    <span class="characteristic-dm" id="dex-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="dex-current" value="7" min="0" max="15" oninput="updateDM('dex')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="dex-baseline" value="7" min="0" max="15" oninput="updateDM('dex')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="dex-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="dex-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>END</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="end" value="7" min="0" max="15" oninput="updateDM('end')">
-                    <span class="characteristic-dm" id="end-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="end-current" value="7" min="0" max="15" oninput="updateDM('end')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="end-baseline" value="7" min="0" max="15" oninput="updateDM('end')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="end-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="end-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>INT</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="int" value="7" min="0" max="15" oninput="updateDM('int')">
-                    <span class="characteristic-dm" id="int-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="int-current" value="7" min="0" max="15" oninput="updateDM('int')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="int-baseline" value="7" min="0" max="15" oninput="updateDM('int')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="int-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="int-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>EDU</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="edu" value="7" min="0" max="15" oninput="updateDM('edu')">
-                    <span class="characteristic-dm" id="edu-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="edu-current" value="7" min="0" max="15" oninput="updateDM('edu')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="edu-baseline" value="7" min="0" max="15" oninput="updateDM('edu')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="edu-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="edu-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
                     <h4>SOC</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="soc" value="7" min="0" max="15" oninput="updateDM('soc')">
-                    <span class="characteristic-dm" id="soc-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="soc-current" value="7" min="0" max="15" oninput="updateDM('soc')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="soc-baseline" value="7" min="0" max="15" oninput="updateDM('soc')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="soc-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="soc-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -534,43 +671,121 @@
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>PSI</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="psi" value="7" min="0" max="15" oninput="updateDM('psi')">
-                    <span class="characteristic-dm" id="psi-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="psi-current" value="7" min="0" max="15" oninput="updateDM('psi')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="psi-baseline" value="7" min="0" max="15" oninput="updateDM('psi')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="psi-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="psi-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>Wealth</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="wlt" value="7" min="0" max="15" oninput="updateDM('wlt')">
-                    <span class="characteristic-dm" id="wlt-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="wlt-current" value="7" min="0" max="15" oninput="updateDM('wlt')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="wlt-baseline" value="7" min="0" max="15" oninput="updateDM('wlt')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="wlt-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="wlt-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>Luck</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="lck" value="7" min="0" max="15" oninput="updateDM('lck')">
-                    <span class="characteristic-dm" id="lck-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="lck-current" value="7" min="0" max="15" oninput="updateDM('lck')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="lck-baseline" value="7" min="0" max="15" oninput="updateDM('lck')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="lck-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="lck-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>Morale</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="mrl" value="7" min="0" max="15" oninput="updateDM('mrl')">
-                    <span class="characteristic-dm" id="mrl-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="mrl-current" value="7" min="0" max="15" oninput="updateDM('mrl')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="mrl-baseline" value="7" min="0" max="15" oninput="updateDM('mrl')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="mrl-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="mrl-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>Sanity</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="sty" value="7" min="0" max="15" oninput="updateDM('sty')">
-                    <span class="characteristic-dm" id="sty-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="sty-current" value="7" min="0" max="15" oninput="updateDM('sty')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="sty-baseline" value="7" min="0" max="15" oninput="updateDM('sty')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="sty-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="sty-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
                     <h4>Standing</h4>
-                    <input type="number" class="form-control mb-2 characteristic-value" id="std" value="7" min="0" max="15" oninput="updateDM('std')">
-                    <span class="characteristic-dm" id="std-dm">-1</span>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="std-current" value="7" min="0" max="15" oninput="updateDM('std')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="std-baseline" value="7" min="0" max="15" oninput="updateDM('std')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="std-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="std-dm-baseline">+0</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -774,24 +989,48 @@
     <script>
         // Common Traveller Skills and data definitions
         const commonSkills = [
-            "Admin", "Advocate", "Animals", "Art", "Athletics", "Astrogation", "Battle Dress",
+            "Admin", "Advocate", "Animals", "Athletics", "Astrogation", "Battle Dress",
             "Broker", "Carouse", "Deception", "Diplomat", "Drive", "Electronics", "Engineer",
             "Explosives", "Flyer", "Gambler", "Gun Combat", "Gunner", "Heavy Weapons", "Investigate",
             "Jack of all Trades", "Language", "Leadership", "Mechanic", "Medic", "Melee", "Navigation",
-            "Persuade", "Pilot", "Profession", "Recon", "Science", "Seafarer", "Stealth", "Steward",
-            "Streetwise", "Survival", "Tactics", "Vacc Suit"
+            "Persuade", "Pilot",  "Recon",  "Seafarer", "Stealth", "Steward",
+            "Streetwise", "Survival", "Tactics", "Vacc Suit",
+
+            // "Art", 
+            // "Science",
+            // "Profession",
+
+            "Science: Life", "Science: Physical", "Science: Robotic", "Science: Social", "Science: Space",
+
+            "Art: Performing", "Art: Creative", "Art: Presentation",
+            
+            "Profession: Colonist", "Profession: Freeloader", "Profession: Hostile Environment", "Profession: Spacer", "Profession: Sport", "Profession: Worker"
         ];
 
         // Skills that require adding all specializations when one is learned
         const skillsWithMandatorySpecializations = [
             "Athletics", "Drive", "Flyer", "Gunner", "Heavy Weapons", 
-            "Melee", "Pilot", "Seafarer"
+            "Melee", "Pilot", "Seafarer",
+
+            "Art: Performing", "Art: Creative", "Art: Presentation",
+
+            "Science: Life", "Science: Physical", "Science: Robotic", "Science: Social", "Science: Space",
+
+            "Profession: Colonist", "Profession: Freeloader", "Profession: Hostile Environment", "Profession: Spacer", "Profession: Sport", "Profession: Worker"
+
         ];
 
         // Common specializations for skills
         const skillSpecializations = {
             "Animals": ["Handling", "Training", "Veterinary"],
-            "Art": ["Performer", "Holography", "Instrument", "Visual Media", "Write"],
+
+            // Old "Art": ["Performer", "Holography", "Instrument", "Visual Media", "Write"],
+
+            "Art: Performing": ["Performer", "Instrument"],
+            "Art: Creative": ["Visual Media", "Exotic Media"],
+            "Art: Presentation": ["Holography", "Write"],
+
+
             "Athletics": ["Dexterity", "Endurance", "Strength"],
             "Drive": ["Hovercraft", "Mole", "Tracked", "Walker", "Wheeled"],
             "Electronics": ["Comms", "Computers", "Remote Ops", "Sensors"],
@@ -802,10 +1041,26 @@
             "Heavy Weapons": ["Artillery", "Man Portable", "Vehicle"],
             "Language": ["Anglic", "Aslan", "Vargr", "Vilani", "Zdetl", "Oynprith", "Other"],
             "Mechanic": ["Aircraft", "Gravitics", "Mole", "Walker", "Wheeled"],
-            "Melee": ["Blade", "Bludgeon", "Natural", "Unarmed"],
+            "Melee": ["Blade", "Bludgeon", "Natural", "Unarmed", "Grapple", "Striking", "Fencing"],
             "Pilot": ["Capital Ships", "Small Craft", "Spacecraft"],
-            "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
-            "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Physics", "Planetology", "Psionicology", "Robotics", "Sophontology", "Xenology"],
+
+            // old "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
+
+            "Profession: Colonist": ["Farming", "Ranching"],
+            "Profession: Freeloader": ["Scrounging", "Security"],
+            "Profession: Hostile Environment": ["Contaminant", "High-G", "Low-G", "Underwater"],
+            "Profession: Spacer": ["Belter", "Crewmember"],
+            "Profession: Sport": ["Atmosphere Surfing", "Golf", "Motorsport", "Racquet Sports", "Team Ball Sports", "Track & Field"],
+            "Profession: Worker": ["Armourer", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Metalworking", "Polymers"],
+
+            // old "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Physics", "Planetology", "Psionicology", "Robotics", "Sophontology", "Xenology"],
+
+            "Science: Life": ["Biology", "Genetics", "Psionicology", "Xenology"],
+            "Science: Physical": ["Chemistry", "Physics", "Jumpspace Physics"], 
+            "Science: Robotic": ["Cybernetics", "Robotics"],
+            "Science: Social": ["Archaeology", "Economics", "History", "Linguistics", "Philosophy", "Psychology", "Sophontology"],
+            "Science: Space": ["Astronomy", "Cosmology", "Planetology"],
+
             "Seafarer": ["Ocean Ships", "Personal", "Sail", "Submarine"],
             "Tactics": ["Military", "Naval"]
         };
@@ -1195,7 +1450,7 @@
                         ranks: [
                             { title: "Harmless Crank", level: 0 },
                             { title: "Typical minor truther", level: 1 },
-                            { title: "Noteable Figure", level: 2 },
+                            { title: "Notable Figure", level: 2 },
                             { title: "Highly Influential Truther", level: 3 },
                             { title: "Legend or Public menace", level: 4 }
                         ]
@@ -1383,7 +1638,7 @@
                     }
                 }
             },
-            "Psionic (X)": {
+            "Psionic": {
                 discipline: 0.0,  // Other
                 assignments: {
                     "Wild Talent": {
@@ -1427,34 +1682,7 @@
 
         };
 
-        // Also define discipline levels for supplemental careers
-        const careerDiscipline = {
-            // Military careers (1.0)
-            "Aerospace Defense": 1.0,
-            
-            // Disciplined non-military (0.5)
-            "Advocate": 0.5,
-            "Diplomat": 0.5,
-            "Doctor": 0.5,
-            "Technician": 0.5,
-            
-            // All others (0.0) - just listing a few examples
-            "Barbarian": 0.0,
-            "Belter": 0.0,
-            "Bureaucrat": 0.0,
-            "Colony Citizen": 0.0,
-            "Corsair": 0.0,
-            "Explorer": 0.0,
-            "Flyer": 0.0,
-            "Hunter": 0.0,
-            "Journalist": 0.0,
-            "Pirate": 0.0,
-            "Prisoner": 0.0,
-            "Scientist": 0.0,
-            "Spacer": 0.0,
-            "Wanderer": 0.0
-        };
-        
+       
         // Helper function to get discipline level for any career
         function getCareerDiscipline(careerName) {
             if (careerData[careerName] && typeof careerData[careerName].discipline !== 'undefined') {
@@ -1485,30 +1713,48 @@
             "Scholar", "Scout", "Psionic", "Prisoner", "Truther", "Believer"
         ];
         
-        // Additional careers from supplements
-        const supplementCareers = [
-            "Aerospace Defense", "Advocate", "Barbarian", "Belter", "Bureaucrat",
-            "Colony Citizen", "Corsair", "Diplomat", "Doctor", "Explorer", 
-            "Flyer", "Hunter", "Journalist", "Pirate", "Prisoner",
-            "Scientist", "Spacer", "Technician", "Wanderer"
-        ];
-
+        // Remove supplemental careers array - we're only using core rulebook careers
+        
         // Define core functions before they are used
         
         // Update the DM (Dice Modifier) based on characteristic value
         function updateDM(stat) {
-            const value = parseInt(document.getElementById(stat).value);
-            let dm = 0;
+            const currentValue = parseInt(document.getElementById(`${stat}-current`).value);
+            const baselineValue = parseInt(document.getElementById(`${stat}-baseline`).value);
             
-            if (value === 0) dm = -3;
-            else if (value <= 2) dm = -2;
-            else if (value <= 5) dm = -1;
-            else if (value <= 8) dm = 0;
-            else if (value <= 11) dm = 1;
-            else if (value <= 14) dm = 2;
-            else dm = 3;
+            let currentDM = calculateDM(currentValue);
+            let baselineDM = calculateDM(baselineValue);
             
-            document.getElementById(`${stat}-dm`).textContent = dm >= 0 ? `+${dm}` : dm;
+            document.getElementById(`${stat}-dm-current`).textContent = formatDM(currentDM);
+            document.getElementById(`${stat}-dm-baseline`).textContent = formatDM(baselineDM);
+        }
+        
+        // Helper function to calculate DM based on characteristic value
+        function calculateDM(value) {
+            // Use a simple lookup table for DM values
+            const dmTable = [
+                { max: 0,  dm: -3 },
+                { max: 2,  dm: -2 },
+                { max: 5,  dm: -1 },
+                { max: 8,  dm: 0 },
+                { max: 11, dm: 1 },
+                { max: 14, dm: 2 }
+            ];
+            
+            // Find the first range where value <= max
+            for (const entry of dmTable) {
+                if (value <= entry.max) {
+                    return entry.dm;
+                }
+            }
+            
+            // If we get here, value is greater than all ranges (15+)
+            return 3;
+        }
+        
+        // Helper function to format DM with plus sign
+        function formatDM(dm) {
+            return dm >= 0 ? `+${dm}` : `${dm}`;
         }
         
         // Calculate total years across education and careers
@@ -1571,7 +1817,10 @@
             specList.innerHTML = '';  // Clear existing options
             
             if (skillSpecializations[skillName]) {
-                skillSpecializations[skillName].forEach(spec => {
+                // Sort the specializations alphabetically
+                const sortedSpecs = [...skillSpecializations[skillName]].sort();
+                
+                sortedSpecs.forEach(spec => {
                     const option = document.createElement('option');
                     option.value = spec;
                     specList.appendChild(option);
@@ -1617,7 +1866,10 @@
         function populateAssignments(careerKey, selectElement) {
             const assignments = Object.keys(careerData[careerKey].assignments);
             
-            assignments.forEach(assignment => {
+            // Sort assignments alphabetically
+            const sortedAssignments = assignments.sort();
+            
+            sortedAssignments.forEach(assignment => {
                 const option = document.createElement('option');
                 option.value = assignment;
                 option.textContent = assignment;
@@ -1792,11 +2044,18 @@
         function addEducation() {
             const educationType = document.getElementById('educationType').value;
             const educationYears = document.getElementById('educationYears').value;
-            const educationQualification = document.getElementById('educationQualification').value;
-            const educationSkills = document.getElementById('educationSkills').value;
+            const educationOutcome = document.getElementById('educationOutcome').value;
+            const educationBenefits = document.getElementById('educationBenefits').value;
             
             if (!educationType) {
-                alert("Please select an education type");
+                alert("Please select a pre-career option");
+                return;
+            }
+            
+            // Check if we already have 3 pre-career options
+            const existingOptions = document.getElementById('education-container').querySelectorAll('tr');
+            if (existingOptions.length >= 3) {
+                alert("You can only select up to three pre-career options.");
                 return;
             }
             
@@ -1805,10 +2064,10 @@
             row.innerHTML = `
                 <td data-type="${educationType}">${educationType}</td>
                 <td data-years="${educationYears}">${educationYears}</td>
-                <td data-qualification="${educationQualification}">${educationQualification}</td>
-                <td data-skills="${educationSkills}">${educationSkills}</td>
+                <td data-outcome="${educationOutcome}">${educationOutcome}</td>
+                <td data-benefits="${educationBenefits}">${educationBenefits}</td>
                 <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
                 </td>
             `;
             
@@ -1817,174 +2076,29 @@
             // Clear inputs
             document.getElementById('educationType').selectedIndex = 0;
             document.getElementById('educationYears').value = '4';
-            document.getElementById('educationQualification').value = '';
-            document.getElementById('educationSkills').value = '';
+            document.getElementById('educationOutcome').selectedIndex = 0;
+            document.getElementById('educationBenefits').value = '';
             
-            // Update age based on education years
+            // Update button state and age
+            updateEducationButtons();
             updateTotalYears();
         }
         
-        // Add career to the careers table
-        function addCareer() {
-            const careerName = document.getElementById('careerName').value;
-            const careerAssignment = document.getElementById('careerAssignment').value;
-            const careerTerms = document.getElementById('careerTerms').value;
-            const careerRank = document.getElementById('careerRank').value;
-            const careerBenefits = document.getElementById('careerBenefits').value;
+        // Function to update the Add Education button state
+        function updateEducationButtons() {
+            const existingOptions = document.getElementById('education-container').querySelectorAll('tr');
+            const addButton = document.getElementById('addEducationBtn');
             
-            if (!careerName) {
-                alert("Please select a career");
-                return;
+            if (existingOptions.length >= 3) {
+                addButton.disabled = true;
+                addButton.classList.add('disabled');
+            } else {
+                addButton.disabled = false;
+                addButton.classList.remove('disabled');
             }
-            
-            const careersContainer = document.getElementById('careers-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td data-career="${careerName}">${careerName}</td>
-                <td data-assignment="${careerAssignment}">${careerAssignment}</td>
-                <td data-terms="${careerTerms}">${careerTerms}</td>
-                <td data-rank="${careerRank}">${careerRank}</td>
-                <td data-benefits="${careerBenefits}">${careerBenefits}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
-                </td>
-            `;
-            
-            careersContainer.appendChild(row);
-            
-            // Clear inputs
-            document.getElementById('careerName').selectedIndex = 0;
-            document.getElementById('careerAssignment').innerHTML = '<option value="">Select Assignment...</option>';
-            document.getElementById('careerTerms').value = '1';
-            document.getElementById('careerRank').value = '';
-            document.getElementById('careerBenefits').value = '';
-            
-            // Update total terms
-            updateTotalTerms();
         }
         
-        // Add armor to the armor table
-        function addArmor() {
-            const armorName = document.getElementById('armorName').value;
-            const armorRating = document.getElementById('armorRating').value;
-            const armorTL = document.getElementById('armorTL').value;
-            const armorRadiation = document.getElementById('armorRadiation').value;
-            
-            if (!armorName) return;
-            
-            const armorContainer = document.getElementById('armor-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${armorName}</td>
-                <td>${armorRating}</td>
-                <td>${armorTL}</td>
-                <td>${armorRadiation}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-            
-            armorContainer.appendChild(row);
-            
-            // Clear inputs
-            document.getElementById('armorName').value = '';
-            document.getElementById('armorRating').value = '';
-            document.getElementById('armorTL').value = '';
-            document.getElementById('armorRadiation').value = '';
-        }
-        
-        // Add equipment to the equipment table
-        function addEquipment() {
-            const equipmentName = document.getElementById('equipmentName').value;
-            const equipmentTL = document.getElementById('equipmentTL').value;
-            const equipmentMass = document.getElementById('equipmentMass').value;
-            const equipmentCost = document.getElementById('equipmentCost').value;
-            
-            if (!equipmentName) return;
-            
-            const equipmentContainer = document.getElementById('equipment-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${equipmentName}</td>
-                <td>${equipmentTL}</td>
-                <td>${equipmentMass}</td>
-                <td>${equipmentCost}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-            
-            equipmentContainer.appendChild(row);
-            
-            // Clear inputs
-            document.getElementById('equipmentName').value = '';
-            document.getElementById('equipmentTL').value = '';
-            document.getElementById('equipmentMass').value = '';
-            document.getElementById('equipmentCost').value = '';
-        }
-        
-        // Add weapon to the weapons table
-        function addWeapon() {
-            const weaponName = document.getElementById('weaponName').value;
-            const weaponDamage = document.getElementById('weaponDamage').value;
-            const weaponRange = document.getElementById('weaponRange').value;
-            
-            if (!weaponName) return;
-            
-            const weaponsContainer = document.getElementById('weapons-container');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${weaponName}</td>
-                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
-                <td>${weaponDamage}</td>
-                <td>${weaponRange}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-            
-            weaponsContainer.appendChild(row);
-            
-            // Clear inputs
-            document.getElementById('weaponName').value = '';
-            document.getElementById('weaponDamage').value = '';
-            document.getElementById('weaponRange').value = '';
-        }
-        
-        // Dice rolling functions
-        function rollDice(num, sides) {
-            let total = 0;
-            let rolls = [];
-            
-            for (let i = 0; i < num; i++) {
-                const roll = Math.floor(Math.random() * sides) + 1;
-                rolls.push(roll);
-                total += roll;
-            }
-            
-            document.getElementById('roll-result').innerHTML = `
-                Result: ${total} (${rolls.join(' + ')})
-            `;
-            
-            return total;
-        }
-        
-        function rollTask(target) {
-            const result = rollDice(2, 6);
-            let success = "FAILURE";
-            
-            if (result >= target) {
-                success = "SUCCESS";
-            }
-            
-            document.getElementById('roll-result').innerHTML = `
-                Result: ${result} vs. Target ${target} - ${success}!
-            `;
-        }
-        
-        // Character save/load functions - these MUST be defined after the utility functions
-        
-        // Save character to localStorage - consolidated version 
+        // Update saveCharacter function to save the new fields
         function saveCharacter() {
             const character = {
                 // Basic info
@@ -1992,15 +2106,15 @@
                 species: document.getElementById('species').value,
                 age: document.getElementById('age').value,
                 
-                // Get education details
-                education: Array.from(document.getElementById('education-container').querySelectorAll('tr')).map(row => {
+                // Get pre-career options details (updated from education)
+                preCareerOptions: Array.from(document.getElementById('education-container').querySelectorAll('tr')).map(row => {
                     const cells = row.querySelectorAll('td');
                     if (cells.length < 4) return null;
                     return {
                         type: cells[0].getAttribute('data-type') || cells[0].textContent,
                         years: cells[1].getAttribute('data-years') || cells[1].textContent,
-                        qualification: cells[2].getAttribute('data-qualification') || cells[2].textContent,
-                        skills: cells[3].getAttribute('data-skills') || cells[3].textContent
+                        outcome: cells[2].getAttribute('data-outcome') || cells[2].textContent,
+                        benefits: cells[3].getAttribute('data-benefits') || cells[3].textContent
                     };
                 }).filter(e => e !== null),
                 
@@ -2017,21 +2131,23 @@
                     };
                 }).filter(c => c !== null),
                 
-                // Characteristics
-                str: document.getElementById('str').value,
-                dex: document.getElementById('dex').value,
-                end: document.getElementById('end').value,
-                int: document.getElementById('int').value,
-                edu: document.getElementById('edu').value,
-                soc: document.getElementById('soc').value,
-                
-                // Additional characteristics
-                psi: document.getElementById('psi').value,
-                wlt: document.getElementById('wlt').value,
-                lck: document.getElementById('lck').value,
-                mrl: document.getElementById('mrl').value,
-                sty: document.getElementById('sty').value,
-                std: document.getElementById('std').value,
+                // Characteristics - updated to store both current and baseline
+                characteristics: {
+                    str: { current: document.getElementById('str-current').value, baseline: document.getElementById('str-baseline').value },
+                    dex: { current: document.getElementById('dex-current').value, baseline: document.getElementById('dex-baseline').value },
+                    end: { current: document.getElementById('end-current').value, baseline: document.getElementById('end-baseline').value },
+                    int: { current: document.getElementById('int-current').value, baseline: document.getElementById('int-baseline').value },
+                    edu: { current: document.getElementById('edu-current').value, baseline: document.getElementById('edu-baseline').value },
+                    soc: { current: document.getElementById('soc-current').value, baseline: document.getElementById('soc-baseline').value },
+                    
+                    // Additional characteristics
+                    psi: { current: document.getElementById('psi-current').value, baseline: document.getElementById('psi-baseline').value },
+                    wlt: { current: document.getElementById('wlt-current').value, baseline: document.getElementById('wlt-baseline').value },
+                    lck: { current: document.getElementById('lck-current').value, baseline: document.getElementById('lck-baseline').value },
+                    mrl: { current: document.getElementById('mrl-current').value, baseline: document.getElementById('mrl-baseline').value },
+                    sty: { current: document.getElementById('sty-current').value, baseline: document.getElementById('sty-baseline').value },
+                    std: { current: document.getElementById('std-current').value, baseline: document.getElementById('std-baseline').value }
+                },
                 
                 // Finances
                 credits: document.getElementById('credits').value,
@@ -2116,22 +2232,45 @@
                 // Clear existing education entries
                 document.getElementById('education-container').innerHTML = '';
                 
-                // Load education data if it exists
-                if (character.education && character.education.length) {
+                // Load pre-career options data if it exists
+                if (character.preCareerOptions && character.preCareerOptions.length) {
+                    character.preCareerOptions.forEach(optionData => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td data-type="${optionData.type}">${optionData.type}</td>
+                            <td data-years="${optionData.years}">${optionData.years}</td>
+                            <td data-outcome="${optionData.outcome}">${optionData.outcome}</td>
+                            <td data-benefits="${optionData.benefits}">${optionData.benefits}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
+                            </td>
+                        `;
+                        document.getElementById('education-container').appendChild(row);
+                    });
+                } 
+                // Legacy support for old education format
+                else if (character.education && character.education.length) {
                     character.education.forEach(educationData => {
+                        // Convert old format to new format
+                        const outcome = educationData.qualification || "Graduate";
+                        const benefits = educationData.skills || "";
+                        
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td data-type="${educationData.type}">${educationData.type}</td>
                             <td data-years="${educationData.years}">${educationData.years}</td>
-                            <td data-qualification="${educationData.qualification}">${educationData.qualification}</td>
-                            <td data-skills="${educationData.skills}">${educationData.skills}</td>
+                            <td data-outcome="${outcome}">${outcome}</td>
+                            <td data-benefits="${benefits}">${benefits}</td>
                             <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
                             </td>
                         `;
                         document.getElementById('education-container').appendChild(row);
                     });
                 }
+                
+                // Update button state after loading
+                updateEducationButtons();
                 
                 // Clear existing careers
                 document.getElementById('careers-container').innerHTML = '';
@@ -2156,37 +2295,81 @@
                     updateTotalTerms();
                 }
                 
-                // Characteristics
-                document.getElementById('str').value = character.str || '7';
-                document.getElementById('dex').value = character.dex || '7';
-                document.getElementById('end').value = character.end || '7';
-                document.getElementById('int').value = character.int || '7';
-                document.getElementById('edu').value = character.edu || '7';
-                document.getElementById('soc').value = character.soc || '7';
-                
-                // Update DMs after setting characteristics
-                updateDM('str');
-                updateDM('dex');
-                updateDM('end');
-                updateDM('int');
-                updateDM('edu');
-                updateDM('soc');
-                
-                // Additional Characteristics
-                document.getElementById('psi').value = character.psi || '7';
-                document.getElementById('wlt').value = character.wlt || '7';
-                document.getElementById('lck').value = character.lck || '7';
-                document.getElementById('mrl').value = character.mrl || '7';
-                document.getElementById('sty').value = character.sty || '7';
-                document.getElementById('std').value = character.std || '7';
-                
-                // Update DMs for additional characteristics
-                updateDM('psi');
-                updateDM('wlt');
-                updateDM('lck');
-                updateDM('mrl');
-                updateDM('sty');
-                updateDM('std');
+                // Update to load characteristics with current and baseline values
+                if (character.characteristics) {
+                    const chars = character.characteristics;
+                    
+                    // Load the main characteristics
+                    if (chars.str) {
+                        document.getElementById('str-current').value = chars.str.current || '7';
+                        document.getElementById('str-baseline').value = chars.str.baseline || '7';
+                    }
+                    if (chars.dex) {
+                        document.getElementById('dex-current').value = chars.dex.current || '7';
+                        document.getElementById('dex-baseline').value = chars.dex.baseline || '7';
+                    }
+                    if (chars.end) {
+                        document.getElementById('end-current').value = chars.end.current || '7';
+                        document.getElementById('end-baseline').value = chars.end.baseline || '7';
+                    }
+                    if (chars.int) {
+                        document.getElementById('int-current').value = chars.int.current || '7';
+                        document.getElementById('int-baseline').value = chars.int.baseline || '7';
+                    }
+                    if (chars.edu) {
+                        document.getElementById('edu-current').value = chars.edu.current || '7';
+                        document.getElementById('edu-baseline').value = chars.edu.baseline || '7';
+                    }
+                    if (chars.soc) {
+                        document.getElementById('soc-current').value = chars.soc.current || '7';
+                        document.getElementById('soc-baseline').value = chars.soc.baseline || '7';
+                    }
+                    
+                    // Load additional characteristics
+                    if (chars.psi) {
+                        document.getElementById('psi-current').value = chars.psi.current || '7';
+                        document.getElementById('psi-baseline').value = chars.psi.baseline || '7';
+                    }
+                    if (chars.wlt) {
+                        document.getElementById('wlt-current').value = chars.wlt.current || '7';
+                        document.getElementById('wlt-baseline').value = chars.wlt.baseline || '7';
+                    }
+                    if (chars.lck) {
+                        document.getElementById('lck-current').value = chars.lck.current || '7';
+                        document.getElementById('lck-baseline').value = chars.lck.baseline || '7';
+                    }
+                    if (chars.mrl) {
+                        document.getElementById('mrl-current').value = chars.mrl.current || '7';
+                        document.getElementById('mrl-baseline').value = chars.mrl.baseline || '7';
+                    }
+                    if (chars.sty) {
+                        document.getElementById('sty-current').value = chars.sty.current || '7';
+                        document.getElementById('sty-baseline').value = chars.sty.baseline || '7';
+                    }
+                    if (chars.std) {
+                        document.getElementById('std-current').value = chars.std.current || '7';
+                        document.getElementById('std-baseline').value = chars.std.baseline || '7';
+                    }
+                    
+                    // Update all DMs after setting characteristics
+                    updateDM('str');
+                    updateDM('dex');
+                    updateDM('end');
+                    updateDM('int');
+                    updateDM('edu');
+                    updateDM('soc');
+                    
+                    // Update DMs for additional characteristics
+                    updateDM('psi');
+                    updateDM('wlt');
+                    updateDM('lck');
+                    updateDM('mrl');
+                    updateDM('sty');
+                    updateDM('std');
+                } else {
+                    // Legacy support for characters without dual values
+                    // ...load from old format if available...
+                }
                 
                 // Finances
                 document.getElementById('credits').value = character.credits || '0';
@@ -2284,21 +2467,33 @@
                 document.getElementById('species').value = 'Human';
                 document.getElementById('age').value = '18';
                 
-                // Characteristics
-                document.getElementById('str').value = '7';
-                document.getElementById('dex').value = '7';
-                document.getElementById('end').value = '7';
-                document.getElementById('int').value = '7';
-                document.getElementById('edu').value = '7';
-                document.getElementById('soc').value = '7';
+                // Reset both current and baseline for all characteristics
+                document.getElementById('str-current').value = '7';
+                document.getElementById('str-baseline').value = '7';
+                document.getElementById('dex-current').value = '7';
+                document.getElementById('dex-baseline').value = '7';
+                document.getElementById('end-current').value = '7';
+                document.getElementById('end-baseline').value = '7';
+                document.getElementById('int-current').value = '7';
+                document.getElementById('int-baseline').value = '7';
+                document.getElementById('edu-current').value = '7';
+                document.getElementById('edu-baseline').value = '7';
+                document.getElementById('soc-current').value = '7';
+                document.getElementById('soc-baseline').value = '7';
                 
                 // Additional Characteristics
-                document.getElementById('psi').value = '7';
-                document.getElementById('wlt').value = '7';
-                document.getElementById('lck').value = '7';
-                document.getElementById('mrl').value = '7';
-                document.getElementById('sty').value = '7';
-                document.getElementById('std').value = '7';
+                document.getElementById('psi-current').value = '7';
+                document.getElementById('psi-baseline').value = '7';
+                document.getElementById('wlt-current').value = '7';
+                document.getElementById('wlt-baseline').value = '7';
+                document.getElementById('lck-current').value = '7';
+                document.getElementById('lck-baseline').value = '7';
+                document.getElementById('mrl-current').value = '7';
+                document.getElementById('mrl-baseline').value = '7';
+                document.getElementById('sty-current').value = '7';
+                document.getElementById('sty-baseline').value = '7';
+                document.getElementById('std-current').value = '7';
+                document.getElementById('std-baseline').value = '7';
                 
                 // Update DMs
                 updateDM('str');
@@ -2336,12 +2531,18 @@
         
         // Add shortcut for adding typical human characteristics
         function setHumanCharacteristics() {
-            document.getElementById('str').value = '7';
-            document.getElementById('dex').value = '7';
-            document.getElementById('end').value = '7';
-            document.getElementById('int').value = '7';
-            document.getElementById('edu').value = '7';
-            document.getElementById('soc').value = '7';
+            document.getElementById('str-current').value = '7';
+            document.getElementById('str-baseline').value = '7';
+            document.getElementById('dex-current').value = '7';
+            document.getElementById('dex-baseline').value = '7';
+            document.getElementById('end-current').value = '7';
+            document.getElementById('end-baseline').value = '7';
+            document.getElementById('int-current').value = '7';
+            document.getElementById('int-baseline').value = '7';
+            document.getElementById('edu-current').value = '7';
+            document.getElementById('edu-baseline').value = '7';
+            document.getElementById('soc-current').value = '7';
+            document.getElementById('soc-baseline').value = '7';
             
             updateDM('str');
             updateDM('dex');
@@ -2561,7 +2762,10 @@
             const datalist = document.createElement('datalist');
             datalist.id = 'skill-list';
             
-            commonSkills.forEach(skill => {
+            // Sort the skills alphabetically
+            const sortedSkills = [...commonSkills].sort();
+            
+            sortedSkills.forEach(skill => {
                 const option = document.createElement('option');
                 option.value = skill;
                 datalist.appendChild(option);
@@ -2608,10 +2812,11 @@
                     careerSelect.remove(1);
                 }
                 
-                // Add optgroup for core rulebook careers
-                const coreGroup = document.createElement('optgroup');
-                coreGroup.label = 'Core Rulebook';
-                mgt2Careers.forEach(career => {
+                // Sort the careers alphabetically
+                const sortedCareers = [...mgt2Careers].sort();
+                
+                // Add core rulebook careers
+                sortedCareers.forEach(career => {
                     // Look for matching career in careerData (with or without numeric suffix)
                     const careerKeys = Object.keys(careerData);
                     const matchingCareer = careerKeys.find(key => 
@@ -2623,19 +2828,17 @@
                     option.value = matchingCareer;
                     // Display the clean career name without the number
                     option.textContent = matchingCareer.replace(/\s*\(\d+\)$/, '');
-                    coreGroup.appendChild(option);
+                    careerSelect.appendChild(option);
                 });
-                careerSelect.appendChild(coreGroup);
-                
-                // ...existing supplement career code...
                 
                 // Make sure the event handler is properly attached
                 careerSelect.addEventListener('change', updateAssignments);
-                
-                // ...existing code...
             }
             
             // ...rest of initialization code...
+            
+            // Initialize pre-career options button state
+            updateEducationButtons();
         }
 
         // Set up event listener to initialize the sheet when DOM is ready
