@@ -2846,6 +2846,177 @@
             console.log("DOM fully loaded");
             initializeCharacterSheet();
         });
+
+        // Function to add a weapon to the weapons table
+        function addWeapon() {
+            const weaponName = document.getElementById('weaponName').value;
+            const weaponDamage = document.getElementById('weaponDamage').value;
+            const weaponRange = document.getElementById('weaponRange').value;
+            
+            if (!weaponName) {
+                alert("Please enter a weapon name");
+                return;
+            }
+            
+            const weaponsContainer = document.getElementById('weapons-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${weaponName}</td>
+                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
+                <td>${weaponDamage || '-'}</td>
+                <td>${weaponRange || '-'}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            weaponsContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('weaponName').value = '';
+            document.getElementById('weaponDamage').value = '';
+            document.getElementById('weaponRange').value = '';
+        }
+
+        // Function to add armor to the armor table
+        function addArmor() {
+            const armorName = document.getElementById('armorName').value;
+            const armorRating = document.getElementById('armorRating').value;
+            const armorTL = document.getElementById('armorTL').value;
+            const armorRadiation = document.getElementById('armorRadiation').value;
+            
+            if (!armorName) {
+                alert("Please enter armor name");
+                return;
+            }
+            
+            const armorContainer = document.getElementById('armor-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${armorName}</td>
+                <td>${armorRating || '0'}</td>
+                <td>${armorTL || '-'}</td>
+                <td>${armorRadiation || '-'}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            armorContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('armorName').value = '';
+            document.getElementById('armorRating').value = '';
+            document.getElementById('armorTL').value = '';
+            document.getElementById('armorRadiation').value = '';
+        }
+
+        // Function to add equipment to the equipment table
+        function addEquipment() {
+            const equipmentName = document.getElementById('equipmentName').value;
+            const equipmentTL = document.getElementById('equipmentTL').value;
+            const equipmentMass = document.getElementById('equipmentMass').value;
+            const equipmentCost = document.getElementById('equipmentCost').value;
+            
+            if (!equipmentName) {
+                alert("Please enter equipment name");
+                return;
+            }
+            
+            const equipmentContainer = document.getElementById('equipment-container');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${equipmentName}</td>
+                <td>${equipmentTL || '-'}</td>
+                <td>${equipmentMass || '0'}</td>
+                <td>${equipmentCost || '0'}</td>
+                <td class="no-print">
+                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                </td>
+            `;
+            
+            equipmentContainer.appendChild(row);
+            
+            // Clear inputs
+            document.getElementById('equipmentName').value = '';
+            document.getElementById('equipmentTL').value = '';
+            document.getElementById('equipmentMass').value = '';
+            document.getElementById('equipmentCost').value = '';
+        }
+
+        // Functions for dice rolling
+        function rollDice(number, sides) {
+            let total = 0;
+            let rolls = [];
+            
+            for (let i = 0; i < number; i++) {
+                const roll = Math.floor(Math.random() * sides) + 1;
+                rolls.push(roll);
+                total += roll;
+            }
+            
+            const resultDiv = document.getElementById('roll-result');
+            resultDiv.innerHTML = `${number}D${sides}: ${total} (${rolls.join(', ')})`;
+            return total;
+        }
+
+        function rollTask(target) {
+            const roll = rollDice(2, 6);
+            const resultDiv = document.getElementById('roll-result');
+            
+            if (roll >= target) {
+                resultDiv.innerHTML += `<br><strong>SUCCESS!</strong> (Target: ${target}+)`;
+            } else {
+                resultDiv.innerHTML += `<br><strong>FAILURE.</strong> (Target: ${target}+)`;
+            }
+        }
+
+        // Function to delete the saved character
+        function deleteCharacter() {
+            if (confirm('Are you sure you want to delete the saved character? This cannot be undone.')) {
+                try {
+                    localStorage.removeItem('traveller-character');
+                    alert('Character has been deleted.');
+                    // Optionally reset the form
+                    resetCharacter();
+                } catch (e) {
+                    console.error('Delete failed:', e);
+                    alert('Failed to delete character. Error: ' + e.message);
+                }
+            }
+        }
+
+        // Function to sort select options alphabetically
+        function sortSelectOptions(selectElement) {
+            // Get the options as an array
+            const options = Array.from(selectElement.options);
+            
+            // Skip the first option (usually the default/prompt option)
+            const firstOption = options.shift();
+            
+            // Sort the remaining options
+            options.sort((a, b) => a.text.localeCompare(b.text));
+            
+            // Clear the select
+            selectElement.innerHTML = '';
+            
+            // Add the first option back
+            if (firstOption) {
+                selectElement.add(firstOption);
+            }
+            
+            // Add the sorted options
+            options.forEach(option => selectElement.add(option));
+        }
+
+        // Add this to initialization to ensure the pre-career options are sorted
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sort the education type dropdown options
+            const educationTypeSelect = document.getElementById('educationType');
+            if (educationTypeSelect) {
+                sortSelectOptions(educationTypeSelect);
+            }
+        });
     </script>
 </body>
 </html>
