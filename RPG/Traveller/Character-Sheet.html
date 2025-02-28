@@ -412,6 +412,19 @@
             margin: 0 3px;
             color: var(--traveller-supporting);
         }
+
+        /* Add these styles to your existing CSS */
+        .wealth-dm {
+            background-color: var(--traveller-tertiary);
+            color: var(--traveller-text-on-dark);
+            font-weight: bold;
+        }
+
+        small.text-muted {
+            display: block;
+            margin-top: 4px;
+            font-family: var(--font-secondary);
+        }
     </style>
 </head>
 <body>
@@ -670,41 +683,23 @@
         <div class="row">
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
-                    <h4>PSI</h4>
+                    <h4>Morale</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
-                            <input type="number" class="form-control characteristic-value" id="psi-current" value="7" min="0" max="15" oninput="updateDM('psi')">
+                            <input type="number" class="form-control characteristic-value" id="mrl-current" value="7" min="0"
+                                max="15" oninput="updateDM('mrl')">
                         </div>
                         <div class="char-value">
                             <label>Baseline</label>
-                            <input type="number" class="form-control characteristic-value" id="psi-baseline" value="7" min="0" max="15" oninput="updateDM('psi')">
+                            <input type="number" class="form-control characteristic-value" id="mrl-baseline" value="7" min="0"
+                                max="15" oninput="updateDM('mrl')">
                         </div>
                     </div>
                     <div class="characteristic-dm-container">
-                        <span class="characteristic-dm-current" id="psi-dm-current">+0</span>
+                        <span class="characteristic-dm-current" id="mrl-dm-current">+0</span>
                         <span class="characteristic-dm-separator">/</span>
-                        <span class="characteristic-dm-baseline" id="psi-dm-baseline">+0</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="characteristic-box">
-                    <h4>Wealth</h4>
-                    <div class="char-values">
-                        <div class="char-value">
-                            <label>Current</label>
-                            <input type="number" class="form-control characteristic-value" id="wlt-current" value="7" min="0" max="15" oninput="updateDM('wlt')">
-                        </div>
-                        <div class="char-value">
-                            <label>Baseline</label>
-                            <input type="number" class="form-control characteristic-value" id="wlt-baseline" value="7" min="0" max="15" oninput="updateDM('wlt')">
-                        </div>
-                    </div>
-                    <div class="characteristic-dm-container">
-                        <span class="characteristic-dm-current" id="wlt-dm-current">+0</span>
-                        <span class="characteristic-dm-separator">/</span>
-                        <span class="characteristic-dm-baseline" id="wlt-dm-baseline">+0</span>
+                        <span class="characteristic-dm-baseline" id="mrl-dm-baseline">+0</span>
                     </div>
                 </div>
             </div>
@@ -730,26 +725,6 @@
             </div>
             <div class="col-md-2 mb-3">
                 <div class="characteristic-box">
-                    <h4>Morale</h4>
-                    <div class="char-values">
-                        <div class="char-value">
-                            <label>Current</label>
-                            <input type="number" class="form-control characteristic-value" id="mrl-current" value="7" min="0" max="15" oninput="updateDM('mrl')">
-                        </div>
-                        <div class="char-value">
-                            <label>Baseline</label>
-                            <input type="number" class="form-control characteristic-value" id="mrl-baseline" value="7" min="0" max="15" oninput="updateDM('mrl')">
-                        </div>
-                    </div>
-                    <div class="characteristic-dm-container">
-                        <span class="characteristic-dm-current" id="mrl-dm-current">+0</span>
-                        <span class="characteristic-dm-separator">/</span>
-                        <span class="characteristic-dm-baseline" id="mrl-dm-baseline">+0</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="characteristic-box">
                     <h4>Sanity</h4>
                     <div class="char-values">
                         <div class="char-value">
@@ -765,6 +740,50 @@
                         <span class="characteristic-dm-current" id="sty-dm-current">+0</span>
                         <span class="characteristic-dm-separator">/</span>
                         <span class="characteristic-dm-baseline" id="sty-dm-baseline">+0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Charm</h4>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="chr-current" value="7" min="0"
+                                max="15" oninput="updateDM('chr')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="chr-baseline" value="7" min="0"
+                                max="15" oninput="updateDM('chr')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="chr-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="chr-dm-baseline">+0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="characteristic-box">
+                    <h4>Psionics</h4>
+                    <div class="char-values">
+                        <div class="char-value">
+                            <label>Current</label>
+                            <input type="number" class="form-control characteristic-value" id="psi-current" value="7" min="0"
+                                max="15" oninput="updateDM('psi')">
+                        </div>
+                        <div class="char-value">
+                            <label>Baseline</label>
+                            <input type="number" class="form-control characteristic-value" id="psi-baseline" value="7" min="0"
+                                max="15" oninput="updateDM('psi')">
+                        </div>
+                    </div>
+                    <div class="characteristic-dm-container">
+                        <span class="characteristic-dm-current" id="psi-dm-current">+0</span>
+                        <span class="characteristic-dm-separator">/</span>
+                        <span class="characteristic-dm-baseline" id="psi-dm-baseline">+0</span>
                     </div>
                 </div>
             </div>
@@ -917,21 +936,30 @@
         </div>
         
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
+                <label for="wlt-current" class="form-label">Wealth Level</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="wlt-current" value="7" min="0" max="15" oninput="updateDM('wlt')">
+                    <span class="input-group-text wealth-dm" id="wlt-dm-current">+0</span>
+                </div>
+                <small class="text-muted">Baseline: <span id="wlt-baseline-display">7</span> (<span id="wlt-dm-baseline">+0</span>)</small>
+                <input type="hidden" id="wlt-baseline" value="7" oninput="updateDM('wlt')">
+            </div>
+            <div class="col-md-3 mb-3">
                 <label for="credits" class="form-label">Credits</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
                     <input type="number" class="form-control" id="credits" value="0">
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <label for="pension" class="form-label">Pension</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
                     <input type="number" class="form-control" id="pension" value="0">
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <label for="debt" class="form-label">Debt</label>
                 <div class="input-group">
                     <span class="input-group-text">Cr</span>
@@ -1023,14 +1051,9 @@
         // Common specializations for skills
         const skillSpecializations = {
             "Animals": ["Handling", "Training", "Veterinary"],
-
-            // Old "Art": ["Performer", "Holography", "Instrument", "Visual Media", "Write"],
-
             "Art: Performing": ["Performer", "Instrument"],
             "Art: Creative": ["Visual Media", "Exotic Media"],
             "Art: Presentation": ["Holography", "Write"],
-
-
             "Athletics": ["Dexterity", "Endurance", "Strength"],
             "Drive": ["Hovercraft", "Mole", "Tracked", "Walker", "Wheeled"],
             "Electronics": ["Comms", "Computers", "Remote Ops", "Sensors"],
@@ -1043,18 +1066,12 @@
             "Mechanic": ["Aircraft", "Gravitics", "Mole", "Walker", "Wheeled"],
             "Melee": ["Blade", "Bludgeon", "Natural", "Unarmed", "Grapple", "Striking", "Fencing"],
             "Pilot": ["Capital Ships", "Small Craft", "Spacecraft"],
-
-            // old "Profession": ["Belter", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Polymers"],
-
             "Profession: Colonist": ["Farming", "Ranching"],
             "Profession: Freeloader": ["Scrounging", "Security"],
             "Profession: Hostile Environment": ["Contaminant", "High-G", "Low-G", "Underwater"],
             "Profession: Spacer": ["Belter", "Crewmember"],
             "Profession: Sport": ["Atmosphere Surfing", "Golf", "Motorsport", "Racquet Sports", "Team Ball Sports", "Track & Field"],
             "Profession: Worker": ["Armourer", "Biologicals", "Civil Engineering", "Construction", "Hydroponics", "Metalworking", "Polymers"],
-
-            // old "Science": ["Archaeology", "Astronomy", "Biology", "Chemistry", "Cosmology", "Cybernetics", "Economics", "Genetics", "History", "Linguistics", "Mathematics", "Physics", "Political Science", "Psychology", "Physics", "Planetology", "Psionicology", "Robotics", "Sophontology", "Xenology"],
-
             "Science: Life": ["Biology", "Genetics", "Psionicology", "Xenology"],
             "Science: Physical": ["Chemistry", "Physics", "Jumpspace Physics"], 
             "Science: Robotic": ["Cybernetics", "Robotics"],
@@ -1727,6 +1744,10 @@
             
             document.getElementById(`${stat}-dm-current`).textContent = formatDM(currentDM);
             document.getElementById(`${stat}-dm-baseline`).textContent = formatDM(baselineDM);
+
+            if (stat === 'wlt') {
+                updateWealthDisplay();
+            }
         }
         
         // Helper function to calculate DM based on characteristic value
@@ -2146,7 +2167,8 @@
                     lck: { current: document.getElementById('lck-current').value, baseline: document.getElementById('lck-baseline').value },
                     mrl: { current: document.getElementById('mrl-current').value, baseline: document.getElementById('mrl-baseline').value },
                     sty: { current: document.getElementById('sty-current').value, baseline: document.getElementById('sty-baseline').value },
-                    std: { current: document.getElementById('std-current').value, baseline: document.getElementById('std-baseline').value }
+                    std: { current: document.getElementById('std-current').value, baseline: document.getElementById('std-baseline').value },
+                    chr: { current: document.getElementById('chr-current').value, baseline: document.getElementById('chr-baseline').value }
                 },
                 
                 // Finances
@@ -2350,6 +2372,10 @@
                         document.getElementById('std-current').value = chars.std.current || '7';
                         document.getElementById('std-baseline').value = chars.std.baseline || '7';
                     }
+                    if (chars.chr) {
+                        document.getElementById('chr-current').value = chars.chr.current || '7';
+                        document.getElementById('chr-baseline').value = chars.chr.baseline || '7';
+                    }
                     
                     // Update all DMs after setting characteristics
                     updateDM('str');
@@ -2366,6 +2392,7 @@
                     updateDM('mrl');
                     updateDM('sty');
                     updateDM('std');
+                    updateDM('chr');
                 } else {
                     // Legacy support for characters without dual values
                     // ...load from old format if available...
@@ -2494,6 +2521,8 @@
                 document.getElementById('sty-baseline').value = '7';
                 document.getElementById('std-current').value = '7';
                 document.getElementById('std-baseline').value = '7';
+                document.getElementById('chr-current').value = '7';
+                document.getElementById('chr-baseline').value = '7';
                 
                 // Update DMs
                 updateDM('str');
@@ -2510,6 +2539,7 @@
                 updateDM('mrl');
                 updateDM('sty');
                 updateDM('std');
+                updateDM('chr');
                 
                 // Finances
                 document.getElementById('credits').value = '0';
@@ -2748,6 +2778,7 @@
             updateDM('mrl');
             updateDM('sty');
             updateDM('std');
+            updateDM('chr');
             
             // Create the skills datalist for autocomplete
             const skillSearch = document.getElementById('skillSearch');
@@ -2839,6 +2870,7 @@
             
             // Initialize pre-career options button state
             updateEducationButtons();
+            updateWealthDisplay();
         }
 
         // Set up event listener to initialize the sheet when DOM is ready
@@ -3017,6 +3049,31 @@
                 sortSelectOptions(educationTypeSelect);
             }
         });
+
+        // Add this function to your JavaScript
+        function updateWealthDisplay() {
+            const currentValue = document.getElementById('wlt-current').value;
+            const baselineValue = document.getElementById('wlt-baseline').value;
+            
+            document.getElementById('wlt-baseline-display').textContent = baselineValue;
+            document.getElementById('wlt-baseline').value = baselineValue;
+        }
+
+        // Update the original initialization function to call updateWealthDisplay
+        const originalInitializeFunction = initializeCharacterSheet;
+        initializeCharacterSheet = function() {
+            originalInitializeFunction();
+            updateWealthDisplay();
+        };
+
+        // Ensure baseline value stays in sync when DMs are updated
+        const originalUpdateDM = updateDM;
+        updateDM = function(stat) {
+            originalUpdateDM(stat);
+            if (stat === 'wlt') {
+                updateWealthDisplay();
+            }
+        };
     </script>
 </body>
 </html>
