@@ -19,120 +19,22 @@
             <h1>TRAVELLER 2ND EDITION</h1>
         </div>
         
-        <!-- Character Information -->
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <label for="charName" class="form-label">Character Name</label>
-                <input type="text" class="form-control" id="charName">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="species" class="form-label">Species</label>
-                <input type="text" class="form-control" id="species" value="Human">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="age" class="form-label">Age</label>
-                <input type="number" class="form-control" id="age" value="18">
+        <!-- Dice Roller - MOVED FROM BOTTOM -->
+        <div class="section-header no-print">
+            DICE ROLLER
+        </div>
+        
+        <div class="row no-print">
+            <div class="col-md-12 text-center mb-3">
+                <button class="btn dice-btn" onclick="rollDice(2, 6)">Roll 2D</button>
+                <button class="btn dice-btn" onclick="rollTask(8)">Task (8+)</button>
+                <button class="btn dice-btn" onclick="rollTask(10)">Hard Task (10+)</button>
+                <button class="btn dice-btn" onclick="rollTask(12)">Formidable (12+)</button>
+                <button class="btn dice-btn" onclick="rollTask(14)">Impossible (14+)</button>
+                <div id="roll-result"></div>
             </div>
         </div>
         
-        <!-- Pre-Career Options Section (renamed from Pre-Career Education) -->
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <div class="section-header">
-                    PRE-CAREER OPTIONS
-                </div>
-                
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Option</th>
-                                <th>Years</th>
-                                <th>Outcome</th>
-                                <th>Benefits</th>
-                                <th class="no-print">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="education-container">
-                            <!-- Pre-career options will be added here by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="row mb-3 no-print">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                            <select class="form-control" id="educationType">
-                                <option value="">Select Pre-Career Option...</option>
-                                <option value="University">University</option>
-                                <option value="Military Academy">Military Academy</option>
-                                <option value="Colonial Upbringing">Colonial Upbringing</option>
-                                <option value="Merchant Academy">Merchant Academy</option>
-                                <option value="Psionic Community">Psionic Community</option>
-                                <option value="School of Hard Knocks">School of Hard Knocks</option>
-                                <option value="Spacer Community">Spacer Community</option>
-                            </select>
-                            <input type="number" class="form-control" id="educationYears" placeholder="Years" min="1" value="4" style="max-width: 80px;">
-                            <select class="form-control" id="educationOutcome">
-                                <option value="Graduate">Graduate</option>
-                                <option value="Graduate with Honors">Graduate with Honors</option>
-                            </select>
-                            <input type="text" class="form-control" id="educationBenefits" placeholder="Benefits">
-                            <button class="btn btn-add" id="addEducationBtn" onclick="addEducation()">Add Option</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <div class="section-header">
-                    CAREER HISTORY
-                </div>
-                
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Career</th>
-                                <th>Assignment</th>
-                                <th>Terms</th>
-                                <th>Rank & Title</th>
-                                <th>Benefits</th>
-                                <th class="no-print">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="careers-container">
-                            <!-- Careers will be added here by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="row mb-3 no-print">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                            <select class="form-control" id="careerName" onchange="updateAssignments()">
-                                <option value="">Select Career...</option>
-                                <!-- Career options will be populated by JavaScript -->
-                            </select>
-                            <select class="form-control" id="careerAssignment">
-                                <option value="">Select Assignment...</option>
-                                <!-- Assignments will be populated based on career -->
-                            </select>
-                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1" value="1" style="max-width: 100px;" onchange="suggestRank()">
-                            <input type="text" class="form-control" id="careerRank" placeholder="Rank & Title">
-                            <button class="btn btn-info" type="button" onclick="suggestRank()" style="max-width: 40px;">
-                                <i class="fa fa-sync">↻</i>
-                            </button>
-                            <input type="text" class="form-control" id="careerBenefits" placeholder="Benefits">
-                            <button class="btn btn-add" onclick="addCareer()">Add Career</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Characteristics Section -->
         <div class="section-header">
             CHARACTERISTICS
@@ -429,7 +331,6 @@
             </table>
         </div>
         
-        <!-- Skills Section -->
         <div class="section-header">
             SKILLS
         </div>
@@ -447,6 +348,143 @@
         
         <div id="skills-container">
             <!-- Skills will be added here by JavaScript -->
+        </div>
+
+        <!-- Personal Data File Section - NEW SECTION -->
+        <div class="section-header">
+            PERSONAL DATA FILE
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="charName" class="form-label">Character Name</label>
+                <input type="text" class="form-control" id="charName">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="species" class="form-label">Species</label>
+                <input type="text" class="form-control" id="species" value="Human">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" value="18">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <label for="homeworld" class="form-label">Homeworld</label>
+                <input type="text" class="form-control" id="homeworld" placeholder="Planet name">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="homeworldUWP" class="form-label">Home World UWP</label>
+                <input type="text" class="form-control" id="homeworldUWP" placeholder="A123456-7">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="rads" class="form-label">RADS</label>
+                <input type="number" class="form-control" id="rads" value="0" min="0">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="upp" class="form-label">UPP</label>
+                <input type="text" class="form-control" id="upp" placeholder="777777">
+            </div>
+        </div>
+
+        <!-- Pre-Career Options Section (renamed from Pre-Career Education) -->
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="section-header">
+                    PRE-CAREER OPTIONS
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Years</th>
+                                <th>Outcome</th>
+                                <th>Benefits</th>
+                                <th class="no-print">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="education-container">
+                            <!-- Pre-career options will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row mb-3 no-print">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <select class="form-control" id="educationType">
+                                <option value="">Select Pre-Career Option...</option>
+                                <option value="University">University</option>
+                                <option value="Military Academy">Military Academy</option>
+                                <option value="Colonial Upbringing">Colonial Upbringing</option>
+                                <option value="Merchant Academy">Merchant Academy</option>
+                                <option value="Psionic Community">Psionic Community</option>
+                                <option value="School of Hard Knocks">School of Hard Knocks</option>
+                                <option value="Spacer Community">Spacer Community</option>
+                            </select>
+                            <input type="number" class="form-control" id="educationYears" placeholder="Years" min="1" value="4" style="max-width: 80px;">
+                            <select class="form-control" id="educationOutcome">
+                                <option value="Graduate">Graduate</option>
+                                <option value="Graduate with Honors">Graduate with Honors</option>
+                            </select>
+                            <input type="text" class="form-control" id="educationBenefits" placeholder="Benefits">
+                            <button class="btn btn-add" id="addEducationBtn" onclick="addEducation()">Add Option</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="section-header">
+                    CAREER HISTORY
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Career</th>
+                                <th>Assignment</th>
+                                <th>Terms</th>
+                                <th>Rank & Title</th>
+                                <th>Benefits</th>
+                                <th class="no-print">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="careers-container">
+                            <!-- Careers will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row mb-3 no-print">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <select class="form-control" id="careerName" onchange="updateAssignments()">
+                                <option value="">Select Career...</option>
+                                <!-- Career options will be populated by JavaScript -->
+                            </select>
+                            <select class="form-control" id="careerAssignment">
+                                <option value="">Select Assignment...</option>
+                                <!-- Assignments will be populated based on career -->
+                            </select>
+                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1" value="1" style="max-width: 100px;" onchange="suggestRank()">
+                            <input type="text" class="form-control" id="careerRank" placeholder="Rank & Title">
+                            <button class="btn btn-info" type="button" onclick="suggestRank()" style="max-width: 40px;">
+                                <i class="fa fa-sync">↻</i>
+                            </button>
+                            <input type="text" class="form-control" id="careerBenefits" placeholder="Benefits">
+                            <button class="btn btn-add" onclick="addCareer()">Add Career</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Weapons Section -->
@@ -685,22 +723,6 @@
                 </div>
             </div>
          </div>
-
-        <!-- Dice Roller -->
-        <div class="section-header no-print">
-            DICE ROLLER
-        </div>
-        
-        <div class="row no-print">
-            <div class="col-md-12 text-center mb-3">
-                <button class="btn dice-btn" onclick="rollDice(2, 6)">Roll 2D</button>
-                <button class="btn dice-btn" onclick="rollTask(8)">Task (8+)</button>
-                <button class="btn dice-btn" onclick="rollTask(10)">Hard Task (10+)</button>
-                <button class="btn dice-btn" onclick="rollTask(12)">Formidable (12+)</button>
-                <button class="btn dice-btn" onclick="rollTask(14)">Impossible (14+)</button>
-                <div id="roll-result"></div>
-            </div>
-        </div>
 
         <!-- Notes -->
         <div class="section-header">
