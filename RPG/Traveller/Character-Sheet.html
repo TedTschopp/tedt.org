@@ -141,7 +141,7 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>STR</h4>
+                    <h4>Strength</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -161,7 +161,7 @@
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>DEX</h4>
+                    <h4>Dexterity</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -181,7 +181,7 @@
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>END</h4>
+                    <h4>Endurance</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -201,7 +201,7 @@
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>INT</h4>
+                    <h4>Intelligence</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -221,7 +221,7 @@
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>EDU</h4>
+                    <h4>Education</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -241,7 +241,7 @@
             </div>
             <div class="col-md-2">
                 <div class="characteristic-box">
-                    <h4>SOC</h4>
+                    <h4>Social</h4>
                     <div class="char-values">
                         <div class="char-value">
                             <label>Current</label>
@@ -395,6 +395,40 @@
             </div>
         </div>
 
+        <!-- Skills in Training Section - NEW SECTION -->
+        <div class="section-header">
+            SKILLS IN TRAINING
+        </div>
+
+        <div class="row mb-3 no-print">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="trainingSkillSearch" placeholder="Skill name..." list="skill-list">
+                    <input type="text" class="form-control" id="trainingSpecializationField" placeholder="Specialization (optional)" list="specialization-list">
+                    <input type="number" class="form-control" id="trainingWeeks" placeholder="Weeks" min="1" value="1" style="max-width: 80px;">
+                    <input type="number" class="form-control" id="trainingComplete" placeholder="Complete" min="0" value="0" style="max-width: 80px;">
+                    <button class="btn btn-add" onclick="addTrainingSkill()">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Specialization</th>
+                        <th>Weeks Required</th>
+                        <th>Weeks Complete</th>
+                        <th class="no-print">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="training-skills-container">
+                    <!-- Skills in training will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
         <!-- Skills Section -->
         <div class="section-header">
             SKILLS

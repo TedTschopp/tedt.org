@@ -1403,6 +1403,20 @@ function saveCharacter() {
         };
       })
       .filter((e) => e !== null),
+
+    // Skills in Training
+    trainingSkills: Array.from(
+      document.getElementById("training-skills-container").querySelectorAll("tr")
+    )
+      .map(row => {
+        const weeksComplete = row.querySelector('input').value;
+        return {
+          skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
+          specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
+          weeksRequired: row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'),
+          weeksComplete: weeksComplete
+        };
+      })
   };
 
   try {
@@ -1698,6 +1712,26 @@ function loadCharacter() {
                                 <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
                         `;
         document.getElementById("equipment-container").appendChild(row);
+      });
+    }
+
+    // Load training skills if they exist
+    if (character.trainingSkills && character.trainingSkills.length) {
+      character.trainingSkills.forEach(skill => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td data-skill="${skill.skill}">${skill.skill}</td>
+          <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
+          <td data-weeks-required="${skill.weeksRequired}">${skill.weeksRequired}</td>
+          <td data-weeks-complete="${skill.weeksComplete}">
+            <input type="number" class="form-control form-control-sm" value="${skill.weeksComplete}" min="0" max="${skill.weeksRequired}">
+          </td>
+          <td class="no-print">
+            <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+            <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
+          </td>
+        `;
+        document.getElementById("training-skills-container").appendChild(row);
       });
     }
 
@@ -2735,3 +2769,351 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ...existing code...
+
+// Add this function to directly initialize the dropdown elements without relying on dynamic creation
+function initializeDropdowns() {
+  console.log("Initializing all dropdowns...");
+  
+  // Initialize skills dropdown first
+  initializeSkillsDropdownDirect();
+  
+  // Initialize specializations
+  initializeSpecializationsDropdownDirect();
+  
+  // Initialize career dropdown
+  initializeCareerDropdownDirect();
+  
+  console.log("All dropdowns initialized");
+}
+
+// Direct initialization of skills dropdown that doesn't rely on dynamic creation
+function initializeSkillsDropdownDirect() {
+  console.log("Directly initializing skills dropdown...");
+  
+  const skillSearch = document.getElementById("skillSearch");
+  if (!skillSearch) {
+    console.error("Could not find skillSearch input element");
+    return;
+  }
+  
+  // Create datalist element
+  let skillList = document.getElementById("skill-list");
+  if (!skillList) {
+    skillList = document.createElement("datalist");
+    skillList.id = "skill-list";
+    document.body.appendChild(skillList);
+  } else {
+    // Clear existing options
+    skillList.innerHTML = "";
+  }
+  
+  // Add options to datalist
+  commonSkills.sort().forEach(skill => {
+    const option = document.createElement("option");
+    option.value = skill;
+    skillList.appendChild(option);
+  });
+  
+  // Connect input to datalist
+  skillSearch.setAttribute("list", "skill-list");
+  console.log(`Skills dropdown initialized with ${commonSkills.length} options`);
+}
+
+// Direct initialization of specializations dropdown
+function initializeSpecializationsDropdownDirect() {
+  console.log("Directly initializing specialization dropdown...");
+  
+  const specField = document.getElementById("specializationField");
+  if (!specField) {
+    console.error("Could not find specializationField input element");
+    return;
+  }
+  
+  // Create datalist element
+  let specList = document.getElementById("specialization-list");
+  if (!specList) {
+    specList = document.createElement("datalist");
+    specList.id = "specialization-list";
+    document.body.appendChild(specList);
+  } else {
+    // Clear existing options
+    specList.innerHTML = "";
+  }
+  
+  // Connect input to datalist
+  specField.setAttribute("list", "specialization-list");
+  
+  // Add event listener for skill selection to update specializations
+  const skillSearch = document.getElementById("skillSearch");
+  if (skillSearch) {
+    // Remove any existing listeners to prevent duplicates
+    skillSearch.removeEventListener("input", updateSpecializationOptions);
+    skillSearch.addEventListener("input", updateSpecializationOptions);
+    console.log("Added event listener to update specializations");
+  }
+}
+
+// Direct initialization of career dropdown
+function initializeCareerDropdownDirect() {
+  console.log("Directly initializing career dropdown...");
+  
+  const careerSelect = document.getElementById("careerName");
+  if (!careerSelect) {
+    console.error("Could not find careerName select element");
+    return;
+  }
+  
+  // Clear existing options except first one
+  while (careerSelect.options.length > 1) {
+    careerSelect.remove(1);
+  }
+  
+  // Add career options in alphabetical order
+  mgt2Careers.sort().forEach(career => {
+    const option = document.createElement("option");
+    option.value = career;
+    option.textContent = career;
+    careerSelect.appendChild(option);
+  });
+  
+  // Add event listener for career selection
+  careerSelect.removeEventListener("change", updateAssignments);
+  careerSelect.addEventListener("change", updateAssignments);
+  console.log(`Career dropdown initialized with ${mgt2Careers.length} options`);
+}
+
+// Modified updateSpecializationOptions function with better error handling
+function updateSpecializationOptions() {
+  const skillName = document.getElementById("skillSearch")?.value;
+  if (!skillName) return;
+  
+  const specList = document.getElementById("specialization-list");
+  if (!specList) {
+    console.error("Specialization datalist not found");
+    return;
+  }
+  
+  // Clear existing options
+  specList.innerHTML = "";
+  
+  // Add specializations if they exist for this skill
+  if (skillSpecializations[skillName]?.length > 0) {
+    const sortedSpecs = [...skillSpecializations[skillName]].sort();
+    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName}`);
+    
+    sortedSpecs.forEach(spec => {
+      const option = document.createElement("option");
+      option.value = spec;
+      specList.appendChild(option);
+    });
+  }
+}
+
+// Make sure initialization happens immediately and reliably
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM loaded, initializing character sheet components...");
+  
+  // Initialize all character sheet components
+  initializeCharacterSheet();
+  
+  // Directly initialize all dropdowns to ensure they work
+  initializeDropdowns();
+  
+  // Update education buttons initial state
+  updateEducationButtons();
+  
+  // Initialize wealth display
+  updateWealthInfoDisplay();
+});
+
+// Add a fallback initialization that runs after window load
+window.addEventListener("load", function() {
+  console.log("Window loaded, checking if dropdowns need reinitialization...");
+  
+  // Check if our dropdowns are working, if not reinitialize
+  const skillList = document.getElementById("skill-list");
+  const specList = document.getElementById("specialization-list");
+  
+  if (!skillList || !specList || skillList.children.length === 0) {
+    console.log("Dropdowns not properly initialized, reinitializing now...");
+    initializeDropdowns();
+  }
+});
+
+// Fix the original initializeSkillsDropdown function to be more robust
+function initializeSkillsDropdown() {
+  // Now just call our direct initialization function
+  initializeSkillsDropdownDirect();
+}
+
+// Fix the original initializeCareerDropdown function to be more robust
+function initializeCareerDropdown() {
+  // Now just call our direct initialization function
+  initializeCareerDropdownDirect();
+}
+
+// Add function to create a new skill in training
+function addTrainingSkill() {
+  const skillName = document.getElementById("trainingSkillSearch").value;
+  const specialization = document.getElementById("trainingSpecializationField").value;
+  const weeksRequired = document.getElementById("trainingWeeks").value || 1;
+  const weeksComplete = document.getElementById("trainingComplete").value || 0;
+
+  if (!skillName) {
+    alert("Please enter a skill name for training");
+    return;
+  }
+
+  const trainingContainer = document.getElementById("training-skills-container");
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td data-skill="${skillName}">${skillName}</td>
+    <td data-specialization="${specialization}">${specialization || "-"}</td>
+    <td data-weeks-required="${weeksRequired}">${weeksRequired}</td>
+    <td data-weeks-complete="${weeksComplete}">
+      <input type="number" class="form-control form-control-sm" value="${weeksComplete}" min="0" max="${weeksRequired}">
+    </td>
+    <td class="no-print">
+      <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+      <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
+    </td>
+  `;
+
+  trainingContainer.appendChild(row);
+
+  // Clear inputs
+  document.getElementById("trainingSkillSearch").value = "";
+  document.getElementById("trainingSpecializationField").value = "";
+  document.getElementById("trainingWeeks").value = "1";
+  document.getElementById("trainingComplete").value = "0";
+}
+
+// Function to mark a skill training as complete
+function completeTraining(button) {
+  const row = button.closest('tr');
+  
+  // Get skill details from the row
+  const skillName = row.querySelector('td[data-skill]').getAttribute('data-skill');
+  const specialization = row.querySelector('td[data-specialization]').getAttribute('data-specialization');
+  const weeksComplete = parseInt(row.querySelector('input').value);
+  const weeksRequired = parseInt(row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'));
+  
+  // Check if training is complete
+  if (weeksComplete < weeksRequired) {
+    alert(`Training not yet complete. ${weeksRequired - weeksComplete} week(s) remaining.`);
+    return;
+  }
+  
+  // Add the skill to the regular skills
+  addSingleSkill(skillName, specialization !== "-" ? specialization : "", 1);
+  
+  // Remove the training row
+  row.remove();
+  
+  alert(`Training complete! ${skillName}${specialization !== "-" ? ` (${specialization})` : ""} has been added to your skills.`);
+}
+
+// Update the save character function to include skills in training
+const originalSaveCharacterWithTraining = saveCharacter;
+saveCharacter = function() {
+  // Get the existing character data or create new object
+  let character = {};
+  try {
+    const savedCharacter = localStorage.getItem("traveller-character");
+    if (savedCharacter) {
+      character = JSON.parse(savedCharacter);
+    }
+  } catch (e) {
+    console.error("Error parsing saved character:", e);
+  }
+  
+  // Add training skills to the character data
+  character.trainingSkills = Array.from(
+    document.getElementById("training-skills-container").querySelectorAll("tr")
+  )
+    .map(row => {
+      const weeksComplete = row.querySelector('input').value;
+      return {
+        skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
+        specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
+        weeksRequired: row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'),
+        weeksComplete: weeksComplete
+      };
+    });
+  
+  // Store in localStorage
+  localStorage.setItem("traveller-character", JSON.stringify(character));
+  alert("Character saved successfully!");
+};
+
+// Update the load character function to load skills in training
+const originalLoadCharacterWithTraining = loadCharacter;
+loadCharacter = function() {
+  try {
+    const savedCharacter = localStorage.getItem("traveller-character");
+    if (!savedCharacter) {
+      alert("No saved character found.");
+      return;
+    }
+
+    const character = JSON.parse(savedCharacter);
+
+    // Clear existing training skills
+    document.getElementById("training-skills-container").innerHTML = "";
+
+    // Load training skills if they exist
+    if (character.trainingSkills && character.trainingSkills.length) {
+      character.trainingSkills.forEach(skill => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td data-skill="${skill.skill}">${skill.skill}</td>
+          <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
+          <td data-weeks-required="${skill.weeksRequired}">${skill.weeksRequired}</td>
+          <td data-weeks-complete="${skill.weeksComplete}">
+            <input type="number" class="form-control form-control-sm" value="${skill.weeksComplete}" min="0" max="${skill.weeksRequired}">
+          </td>
+          <td class="no-print">
+            <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+            <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
+          </td>
+        `;
+        document.getElementById("training-skills-container").appendChild(row);
+      });
+    }
+
+    // Call the original load function to handle the rest
+    originalLoadCharacterWithTraining();
+  } catch (e) {
+    console.error("Load failed:", e);
+    alert("Failed to load character. Error: " + e.message);
+  }
+};
+
+// Initialize training skill search with same data as regular skill search
+document.addEventListener("DOMContentLoaded", function() {
+  // ...existing initialization code...
+  
+  // Connect the training skill inputs to the same skill lists
+  const trainingSkillSearch = document.getElementById("trainingSkillSearch");
+  const trainingSpecField = document.getElementById("trainingSpecializationField");
+  
+  if (trainingSkillSearch) {
+    trainingSkillSearch.setAttribute("list", "skill-list");
+    trainingSkillSearch.addEventListener("input", function() {
+      updateTrainingSpecializationOptions();
+    });
+  }
+  
+  if (trainingSpecField) {
+    trainingSpecField.setAttribute("list", "specialization-list");
+  }
+});
+
+// Function to update specialization options for training skills
+function updateTrainingSpecializationOptions() {
+  const skillName = document.getElementById("trainingSkillSearch").value;
+  if (!skillName) return;
+  
+  // Use the same specialization list that's already set up
+  updateSpecializationOptions();
+}
