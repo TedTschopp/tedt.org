@@ -920,16 +920,26 @@ function updateTotalTerms() {
 }
 
 // Update specialization options based on selected skill
-function updateSpecializationOptions() {
-  const skillName = document.getElementById("skillSearch").value;
+function updateSpecializationOptions(sourceId = "skillSearch") {
+  // Get the skill name from the appropriate input field
+  const skillName = document.getElementById(sourceId).value;
+  if (!skillName) return;
+  
   const specList = document.getElementById("specialization-list");
-  specList.innerHTML = ""; // Clear existing options
-
-  if (skillSpecializations[skillName]) {
-    // Sort the specializations alphabetically
+  if (!specList) {
+    console.error("Specialization datalist not found");
+    return;
+  }
+  
+  // Clear existing options
+  specList.innerHTML = "";
+  
+  // Add specializations if they exist for this skill
+  if (skillSpecializations[skillName]?.length > 0) {
     const sortedSpecs = [...skillSpecializations[skillName]].sort();
-
-    sortedSpecs.forEach((spec) => {
+    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName}`);
+    
+    sortedSpecs.forEach(spec => {
       const option = document.createElement("option");
       option.value = spec;
       specList.appendChild(option);
@@ -3111,9 +3121,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Function to update specialization options for training skills
 function updateTrainingSpecializationOptions() {
-  const skillName = document.getElementById("trainingSkillSearch").value;
-  if (!skillName) return;
-  
-  // Use the same specialization list that's already set up
-  updateSpecializationOptions();
+  updateSpecializationOptions("trainingSkillSearch");
 }
