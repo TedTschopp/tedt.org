@@ -384,10 +384,8 @@
                         list="skill-list">
                     <input type="text" class="form-control" id="trainingSpecializationField"
                         placeholder="Specialization (optional)" list="specialization-list">
-                    <input type="number" class="form-control" id="trainingWeeks" placeholder="Weeks" min="1" value="1"
-                        style="max-width: 80px;">
-                    <input type="number" class="form-control" id="trainingComplete" placeholder="Complete" min="0"
-                        value="0" style="max-width: 80px;">
+                    <input type="number" class="form-control" id="trainingWeeks" placeholder="Weeks Spent" min="1" value="1"
+                        style="max-width: 120px;">
                     <button class="btn btn-add" onclick="addTrainingSkill()">Add</button>
                 </div>
             </div>
@@ -399,8 +397,7 @@
                     <tr>
                         <th>Skill</th>
                         <th>Specialization</th>
-                        <th>Weeks Required</th>
-                        <th>Weeks Complete</th>
+                        <th>Weeks Spent</th>
                         <th class="no-print">Actions</th>
                     </tr>
                 </thead>
@@ -534,7 +531,8 @@
                             <tr>
                                 <th>Career</th>
                                 <th>Assignment</th>
-                                <th>Terms</th>
+                                <th>Promotions Received</th>
+                                <th>Years in Career</th>
                                 <th>Rank & Title</th>
                                 <th>Benefits</th>
                                 <th class="no-print">Actions</th>
@@ -557,8 +555,10 @@
                                 <option value="">Select Assignment...</option>
                                 <!-- Assignments will be populated based on career -->
                             </select>
-                            <input type="number" class="form-control" id="careerTerms" placeholder="Terms" min="1"
-                                value="1" style="max-width: 100px;" onchange="suggestRank()">
+                            <input type="number" class="form-control" id="careerPromotions" placeholder="Promotions" min="0"
+                                value="0" style="max-width: 100px;" onchange="suggestRank()">
+                            <input type="number" class="form-control" id="careerYears" placeholder="Years" min="1"
+                                value="4" style="max-width: 100px;">
                             <input type="text" class="form-control" id="careerRank" placeholder="Rank & Title">
                             <button class="btn btn-info" type="button" onclick="suggestRank()" style="max-width: 40px;">
                                 <i class="fa fa-sync">↻</i>

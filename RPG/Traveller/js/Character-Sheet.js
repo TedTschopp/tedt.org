@@ -811,8 +811,6 @@ const mgt2Careers = [
   "Believer",
 ];
 
-// Remove supplemental careers array - we're only using core rulebook careers
-
 // Define core functions before they are used
 
 // Update the DM (Dice Modifier) based on characteristic value
@@ -879,21 +877,21 @@ function updateTotalYears() {
     }
   });
 
-  // Then get career terms
+  // Then get career years
   const careerRows = document.querySelectorAll("#careers-container tr");
-  let totalCareerTerms = 0;
+  let totalCareerYears = 0;
 
   careerRows.forEach((row) => {
-    const termsCell = row.querySelector("td[data-terms]");
-    if (termsCell) {
-      totalCareerTerms += parseInt(termsCell.getAttribute("data-terms")) || 0;
+    const yearsCell = row.querySelector("td[data-years]");
+    if (yearsCell) {
+      totalCareerYears += parseInt(yearsCell.getAttribute("data-years")) || 0;
     }
   });
 
-  // Calculate biological age: base + education years + (career terms * 4)
+  // Calculate biological age: base + education years + career years
   if (document.getElementById("age")) {
     // Base age at character creation is 18
-    const biologicalAge = 18 + totalEducationYears + totalCareerTerms * 4;
+    const biologicalAge = 18 + totalEducationYears + totalCareerYears;
     document.getElementById("age").value = biologicalAge;
   }
 }
@@ -921,8 +919,14 @@ function updateTotalTerms() {
 
 // Update specialization options based on selected skill
 function updateSpecializationOptions(sourceId = "skillSearch") {
-  // Get the skill name from the appropriate input field
-  const skillName = document.getElementById(sourceId).value;
+  // Get the skill name from the appropriate input field based on sourceId
+  const skillInput = document.getElementById(sourceId);
+  if (!skillInput) {
+    console.error(`Input element with ID '${sourceId}' not found`);
+    return;
+  }
+  
+  const skillName = skillInput.value;
   if (!skillName) return;
   
   const specList = document.getElementById("specialization-list");
@@ -937,7 +941,7 @@ function updateSpecializationOptions(sourceId = "skillSearch") {
   // Add specializations if they exist for this skill
   if (skillSpecializations[skillName]?.length > 0) {
     const sortedSpecs = [...skillSpecializations[skillName]].sort();
-    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName}`);
+    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName} (source: ${sourceId})`);
     
     sortedSpecs.forEach(spec => {
       const option = document.createElement("option");
@@ -1002,13 +1006,12 @@ function populateAssignments(careerKey, selectElement) {
 function suggestRank() {
   const careerName = document.getElementById("careerName").value;
   const assignment = document.getElementById("careerAssignment").value;
-  const careerTerms =
-    parseInt(document.getElementById("careerTerms").value) || 1;
+  const careerPromotions =
+    parseInt(document.getElementById("careerPromotions").value) || 0;
   const rankField = document.getElementById("careerRank");
 
-  // Calculate recommended rank based on terms
-  // Each term potentially allows you to advance one rank level
-  let rankLevel = Math.min(careerTerms - 1, 6);
+  // Calculate recommended rank based on promotions
+  let rankLevel = Math.min(careerPromotions, 6);
   if (rankLevel < 0) rankLevel = 0;
 
   // First try exact career name match
@@ -1262,21 +1265,22 @@ function saveCharacter() {
       })
       .filter((e) => e !== null),
 
-    // Get career details with assignments
+    // Get career details with assignments and years
     careers: Array.from(
       document.getElementById("careers-container").querySelectorAll("tr")
     )
       .map((row) => {
         const cells = row.querySelectorAll("td");
-        if (cells.length < 5) return null;
+        if (cells.length < 6) return null;
         return {
           career: cells[0].getAttribute("data-career") || cells[0].textContent,
           assignment:
             cells[1].getAttribute("data-assignment") || cells[1].textContent,
-          terms: cells[2].getAttribute("data-terms") || cells[2].textContent,
-          rank: cells[3].getAttribute("data-rank") || cells[3].textContent,
+          promotions: cells[2].getAttribute("data-promotions") || cells[2].textContent,
+          years: cells[3].getAttribute("data-years") || cells[3].textContent,
+          rank: cells[4].getAttribute("data-rank") || cells[4].textContent,
           benefits:
-            cells[4].getAttribute("data-benefits") || cells[4].textContent,
+            cells[5].getAttribute("data-benefits") || cells[5].textContent,
         };
       })
       .filter((c) => c !== null),
@@ -1419,12 +1423,10 @@ function saveCharacter() {
       document.getElementById("training-skills-container").querySelectorAll("tr")
     )
       .map(row => {
-        const weeksComplete = row.querySelector('input').value;
         return {
           skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
           specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
-          weeksRequired: row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'),
-          weeksComplete: weeksComplete
+          weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent')
         };
       })
   };
@@ -1504,30 +1506,26 @@ function loadCharacter() {
     if (character.careers && character.careers.length) {
       character.careers.forEach((careerData) => {
         const row = document.createElement("tr");
+        
+        // Support both new format (with years) and old format (terms only)
+        const years = careerData.years || (careerData.terms * 4).toString();
+        const promotions = careerData.promotions || careerData.terms || "0";
+        
         row.innerHTML = `
-                            <td data-career="${careerData.career}">${
-          careerData.career
-        }</td>
-                            <td data-assignment="${
-                              careerData.assignment || ""
-                            }">${careerData.assignment || ""}</td>
-                            <td data-terms="${careerData.terms}">${
-          careerData.terms
-        }</td>
-                            <td data-rank="${careerData.rank}">${
-          careerData.rank
-        }</td>
-                            <td data-benefits="${careerData.benefits}">${
-          careerData.benefits
-        }</td>
-                            <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
-                            </td>
-                        `;
+          <td data-career="${careerData.career}">${careerData.career}</td>
+          <td data-assignment="${careerData.assignment || ""}">${careerData.assignment || ""}</td>
+          <td data-promotions="${promotions}">${promotions}</td>
+          <td data-years="${years}">${years}</td>
+          <td data-rank="${careerData.rank}">${careerData.rank}</td>
+          <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
+          <td class="no-print">
+              <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+          </td>
+        `;
         document.getElementById("careers-container").appendChild(row);
       });
 
-      updateTotalTerms();
+      updateTotalYears();
     }
 
     // Update to load characteristics with current and baseline values
@@ -1728,14 +1726,14 @@ function loadCharacter() {
     // Load training skills if they exist
     if (character.trainingSkills && character.trainingSkills.length) {
       character.trainingSkills.forEach(skill => {
+        // Handle both old format (with weeksRequired/weeksComplete) and new format (with weeksSpent)
+        const weeksSpent = skill.weeksSpent || skill.weeksComplete || skill.weeksRequired || 1;
+        
         const row = document.createElement("tr");
         row.innerHTML = `
           <td data-skill="${skill.skill}">${skill.skill}</td>
           <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
-          <td data-weeks-required="${skill.weeksRequired}">${skill.weeksRequired}</td>
-          <td data-weeks-complete="${skill.weeksComplete}">
-            <input type="number" class="form-control form-control-sm" value="${skill.weeksComplete}" min="0" max="${skill.weeksRequired}">
-          </td>
+          <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
           <td class="no-print">
             <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
             <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -1907,11 +1905,12 @@ function importCharacter() {
   input.click();
 }
 
-// Add career to the careers table
+// Add career to the careers table - updated with years field
 function addCareer() {
   const careerName = document.getElementById("careerName").value;
   const careerAssignment = document.getElementById("careerAssignment").value;
-  const careerTerms = document.getElementById("careerTerms").value;
+  const careerPromotions = document.getElementById("careerPromotions").value || 0;
+  const careerYears = document.getElementById("careerYears").value || 4;
   const careerRank = document.getElementById("careerRank").value;
   const careerBenefits = document.getElementById("careerBenefits").value;
 
@@ -1925,7 +1924,8 @@ function addCareer() {
   row.innerHTML = `
                 <td data-career="${careerName}">${careerName}</td>
                 <td data-assignment="${careerAssignment}">${careerAssignment}</td>
-                <td data-terms="${careerTerms}">${careerTerms}</td>
+                <td data-promotions="${careerPromotions}">${careerPromotions}</td>
+                <td data-years="${careerYears}">${careerYears}</td>
                 <td data-rank="${careerRank}">${careerRank}</td>
                 <td data-benefits="${careerBenefits}">${careerBenefits}</td>
                 <td class="no-print">
@@ -1939,12 +1939,13 @@ function addCareer() {
   document.getElementById("careerName").selectedIndex = 0;
   document.getElementById("careerAssignment").innerHTML =
     '<option value="">Select Assignment...</option>';
-  document.getElementById("careerTerms").value = "1";
+  document.getElementById("careerPromotions").value = "0";
+  document.getElementById("careerYears").value = "4";
   document.getElementById("careerRank").value = "";
   document.getElementById("careerBenefits").value = "";
 
-  // Update total terms
-  updateTotalTerms();
+  // Update total terms and age
+  updateTotalYears();
 }
 
 // Initialize career dropdown on page load
@@ -2047,8 +2048,6 @@ loadCharacter = function () {
     alert("Failed to load character. Error: " + e.message);
   }
 };
-
-// ...existing code...
 
 // Create a comprehensive initialization function
 function initializeCharacterSheet() {
@@ -2355,351 +2354,121 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Add this function to your JavaScript
-function updateWealthDisplay() {
-  const currentValue = document.getElementById("wlt-current").value;
-  const baselineValue = document.getElementById("wlt-baseline").value;
-
-  document.getElementById("wlt-baseline-display").textContent = baselineValue;
-  document.getElementById("wlt-baseline").value = baselineValue;
-}
-
-// Update the original initialization function to call updateWealthDisplay
-const originalInitializeFunction = initializeCharacterSheet;
-initializeCharacterSheet = function () {
-  originalInitializeFunction();
-  updateWealthDisplay();
-};
-
-// Ensure baseline value stays in sync when DMs are updated
-const originalUpdateDM = updateDM;
-updateDM = function (stat) {
-  originalUpdateDM(stat);
-  if (stat === "wlt") {
-    updateWealthDisplay();
-  }
-};
-
-// Add this improved function to your JavaScript section
-function updateWealthInfoDisplay() {
-  const currentWealthLevel =
-    parseInt(document.getElementById("wlt-current").value) || 0;
-  const baselineWealthLevel =
-    parseInt(document.getElementById("wlt-baseline").value) || 0;
-
-  // Define the wealth values mapping
-  const wealthValues = {
-    0: "0",
-    1: "100",
-    2: "200",
-    3: "400",
-    4: "800",
-    5: "1,200",
-    6: "1,500",
-    7: "2,000",
-    8: "3,000",
-    9: "5,000",
-    10: "7,500",
-    11: "10,000",
-    12: "12,500",
-    13: "15,000",
-    14: "17,500",
-    15: "20,000",
-  };
-
-  // Update the current wealth level display
-  const currentWealthInfo = document.querySelector(
-    ".char-value:first-child .wealth-info"
-  );
-  if (currentWealthInfo) {
-    currentWealthInfo.textContent = `(Cr ${
-      wealthValues[currentWealthLevel] || "?"
-    })`;
-  }
-
-  // Update the baseline wealth level display
-  const baselineWealthInfo = document.querySelector(
-    ".char-value:last-child .wealth-info"
-  );
-  if (baselineWealthInfo) {
-    baselineWealthInfo.textContent = `(Cr ${
-      wealthValues[baselineWealthLevel] || "?"
-    })`;
-  }
-
-  // Update the small reference text below inputs
-  const currentWealthValueElem = document.getElementById(
-    "current-wealth-value"
-  );
-  if (currentWealthValueElem) {
-    currentWealthValueElem.textContent = `Cr ${
-      wealthValues[currentWealthLevel] || "?"
-    } available`;
-  }
-
-  const baselineWealthValueElem = document.getElementById(
-    "baseline-wealth-value"
-  );
-  if (baselineWealthValueElem) {
-    baselineWealthValueElem.textContent = `Cr ${
-      wealthValues[baselineWealthLevel] || "?"
-    } baseline`;
-  }
-}
-
-// Make sure the document ready handler initializes the wealth display
-document.addEventListener("DOMContentLoaded", function () {
-  // Existing initialization code...
-
-  // Initialize the wealth display
-  updateWealthInfoDisplay();
-
-  // Add explicit event listeners to both wealth inputs
-  document
-    .getElementById("wlt-current")
-    .addEventListener("input", updateWealthInfoDisplay);
-  document
-    .getElementById("wlt-baseline")
-    .addEventListener("input", updateWealthInfoDisplay);
-});
-
-// Function to add an augment to the augments table
-function addAugment() {
-  const augmentType = document.getElementById("augmentType").value;
-  const augmentTL = document.getElementById("augmentTL").value;
-  const augmentImprovement =
-    document.getElementById("augmentImprovement").value;
-
-  if (!augmentType) {
-    alert("Please enter augment type");
-    return;
-  }
-
-  const augmentsContainer = document.getElementById("augments-container");
-  const row = document.createElement("tr");
-  row.innerHTML = `
-                <td>${augmentType}</td>
-                <td>${augmentTL || "-"}</td>
-                <td>${augmentImprovement || "-"}</td>
-                <td class="no-print">
-                    <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                </td>
-            `;
-
-  augmentsContainer.appendChild(row);
-
-  // Clear inputs
-  document.getElementById("augmentType").value = "";
-  document.getElementById("augmentTL").value = "";
-  document.getElementById("augmentImprovement").value = "";
-}
-
-// Update the save character function to save augments
-const originalSaveCharacterWithAugments = saveCharacter;
-saveCharacter = function () {
-  // Get the existing character data if any
-  let character = {};
-  try {
-    const savedCharacter = localStorage.getItem("traveller-character");
-    if (savedCharacter) {
-      character = JSON.parse(savedCharacter);
-    }
-  } catch (e) {
-    console.error("Error parsing saved character:", e);
-  }
-
-  // Add augments to the character data
-  character.augments = Array.from(
-    document.getElementById("augments-container").querySelectorAll("tr")
-  )
-    .map((row) => {
-      const cells = row.querySelectorAll("td");
-      if (cells.length < 3) return null;
-      return {
-        type: cells[0].textContent,
-        tl: cells[1].textContent,
-        improvement: cells[2].textContent,
-      };
-    })
-    .filter((a) => a !== null);
-
-  // Call the original save function or store directly
-  localStorage.setItem("traveller-character", JSON.stringify(character));
-  alert("Character saved successfully!");
-};
-
-// Update the load character function to load augments
-const originalLoadCharacterWithAugments = loadCharacter;
-loadCharacter = function () {
-  try {
-    const savedCharacter = localStorage.getItem("traveller-character");
-    if (!savedCharacter) {
-      alert("No saved character found.");
-      return;
-    }
-
-    const character = JSON.parse(savedCharacter);
-
-    // Clear existing augments
-    document.getElementById("augments-container").innerHTML = "";
-
-    // Load augments if they exist
-    if (character.augments && character.augments.length) {
-      character.augments.forEach((augment) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-                            <td>${augment.type}</td>
-                            <td>${augment.tl || "-"}</td>
-                            <td>${augment.improvement || "-"}</td>
-                            <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
-                            </td>
-                        `;
-        document.getElementById("augments-container").appendChild(row);
-      });
-    }
-
-    // Call the original load function to handle the rest
-    originalLoadCharacterWithAugments();
-  } catch (e) {
-    console.error("Load failed:", e);
-    alert("Failed to load character. Error: " + e.message);
-  }
-};
-
-// Modified function to initialize character sheet
-function initializeCharacterSheet() {
-  console.log("Initializing character sheet...");
-
-  // Initialize characteristics DMs
-  updateDM("str");
-  updateDM("dex");
-  updateDM("end");
-  updateDM("int");
-  updateDM("edu");
-  updateDM("soc");
-
-  // Initialize additional characteristics
-  updateDM("psi");
-  updateDM("wlt");
-  updateDM("lck");
-  updateDM("mrl");
-  updateDM("sty");
-  updateDM("std");
-  updateDM("chr");
-
-  // Create and attach the skills datalist for autocomplete
-  initializeSkillsDropdown();
-
+// Add this function to directly initialize the dropdown elements without relying on dynamic creation
+function initializeDropdowns() {
+  console.log("Initializing all dropdowns...");
+  
+  // Initialize skills dropdown first
+  initializeSkillsDropdownDirect();
+  
+  // Initialize specializations
+  initializeSpecializationsDropdownDirect();
+  
   // Initialize career dropdown
-  initializeCareerDropdown();
-
-  // Update education buttons
-  updateEducationButtons();
-  updateWealthDisplay();
-  updateWealthInfoDisplay();
+  initializeCareerDropdownDirect();
+  
+  console.log("All dropdowns initialized");
 }
 
-// New function to properly initialize the skills dropdown
-function initializeSkillsDropdown() {
-  console.log("Setting up skills autocomplete...");
+// Direct initialization of skills dropdown that doesn't rely on dynamic creation
+function initializeSkillsDropdownDirect() {
+  console.log("Directly initializing skills dropdown...");
+  
   const skillSearch = document.getElementById("skillSearch");
-
   if (!skillSearch) {
-    console.error("Could not find skillSearch element");
+    console.error("Could not find skillSearch input element");
     return;
   }
-
-  // Remove any existing datalist
-  let existingDatalist = document.getElementById("skill-list");
-  if (existingDatalist) {
-    existingDatalist.remove();
+  
+  // Create datalist element
+  let skillList = document.getElementById("skill-list");
+  if (!skillList) {
+    skillList = document.createElement("datalist");
+    skillList.id = "skill-list";
+    document.body.appendChild(skillList);
+  } else {
+    // Clear existing options
+    skillList.innerHTML = "";
   }
-
-  // Create fresh datalist
-  const datalist = document.createElement("datalist");
-  datalist.id = "skill-list";
-
-  // Sort the skills alphabetically
-  const sortedSkills = [...commonSkills].sort();
-
+  
   // Add options to datalist
-  sortedSkills.forEach((skill) => {
+  commonSkills.sort().forEach(skill => {
     const option = document.createElement("option");
     option.value = skill;
-    datalist.appendChild(option);
+    skillList.appendChild(option);
   });
-
-  // Append the datalist to the document
-  document.body.appendChild(datalist);
-
+  
   // Connect input to datalist
   skillSearch.setAttribute("list", "skill-list");
-  console.log(
-    `Skills datalist connected to input (${sortedSkills.length} skills)`
-  );
-
-  // Set up specialization dropdown
-  const specializationField = document.getElementById("specializationField");
-  if (!specializationField) {
-    console.error("Could not find specializationField element");
-    return;
-  }
-
-  // Remove any existing specialization datalist
-  existingDatalist = document.getElementById("specialization-list");
-  if (existingDatalist) {
-    existingDatalist.remove();
-  }
-
-  // Create fresh specialization datalist
-  const specList = document.createElement("datalist");
-  specList.id = "specialization-list";
-  document.body.appendChild(specList);
-
-  // Connect input to datalist
-  specializationField.setAttribute("list", "specialization-list");
-
-  // Add event listener to update specializations when skill changes
-  skillSearch.addEventListener("input", function () {
-    updateSpecializationOptions();
-  });
-
-  console.log("Specialization datalist connected");
+  console.log(`Skills dropdown initialized with ${commonSkills.length} options`);
 }
 
-// New function to properly initialize career dropdown
-function initializeCareerDropdown() {
-  console.log("Setting up career dropdown...");
-  const careerSelect = document.getElementById("careerName");
+// Direct initialization of specializations dropdown
+function initializeSpecializationsDropdownDirect() {
+  console.log("Directly initializing specialization dropdown...");
+  
+  const specField = document.getElementById("specializationField");
+  if (!specField) {
+    console.error("Could not find specializationField input element");
+    return;
+  }
+  
+  // Create datalist element
+  let specList = document.getElementById("specialization-list");
+  if (!specList) {
+    specList = document.createElement("datalist");
+    specList.id = "specialization-list";
+    document.body.appendChild(specList);
+  } else {
+    // Clear existing options
+    specList.innerHTML = "";
+  }
+  
+  // Connect input to datalist
+  specField.setAttribute("list", "specialization-list");
+  
+  // Add event listener for skill selection to update specializations
+  const skillSearch = document.getElementById("skillSearch");
+  if (skillSearch) {
+    // Remove any existing listeners to prevent duplicates
+    skillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
+    
+    // Add the event listener
+    skillSearch.addEventListener("input", function() {
+      updateSpecializationOptions("trainingSkillSearch");
+    });
+    
+    console.log("Training skills search connected to skill list and event handler");
+  }
+}
 
+// Direct initialization of career dropdown
+function initializeCareerDropdownDirect() {
+  console.log("Directly initializing career dropdown...");
+  
+  const careerSelect = document.getElementById("careerName");
   if (!careerSelect) {
     console.error("Could not find careerName select element");
     return;
   }
-
-  // Clear existing options except the first one
+  
+  // Clear existing options except first one
   while (careerSelect.options.length > 1) {
     careerSelect.remove(1);
   }
-
-  // Sort the careers alphabetically
-  const sortedCareers = [...mgt2Careers].sort();
-
-  console.log(`Adding ${sortedCareers.length} careers to dropdown`);
-
-  // Add core rulebook careers
-  sortedCareers.forEach((career) => {
+  
+  // Add career options in alphabetical order
+  mgt2Careers.sort().forEach(career => {
     const option = document.createElement("option");
-    option.value = career; // Use the exact career name as the value
+    option.value = career;
     option.textContent = career;
     careerSelect.appendChild(option);
   });
-
-  // Make sure the event handler is properly attached
-  careerSelect.removeEventListener("change", updateAssignments); // Remove any existing listeners
+  
+  // Add event listener for career selection
+  careerSelect.removeEventListener("change", updateAssignments);
   careerSelect.addEventListener("change", updateAssignments);
-  console.log("Career dropdown initialized and event handler attached");
+  console.log(`Career dropdown initialized with ${mgt2Careers.length} options`);
 }
 
 // Improved updateSpecializationOptions function
@@ -2857,9 +2626,14 @@ function initializeSpecializationsDropdownDirect() {
   const skillSearch = document.getElementById("skillSearch");
   if (skillSearch) {
     // Remove any existing listeners to prevent duplicates
-    skillSearch.removeEventListener("input", updateSpecializationOptions);
-    skillSearch.addEventListener("input", updateSpecializationOptions);
-    console.log("Added event listener to update specializations");
+    skillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
+    
+    // Add the event listener
+    skillSearch.addEventListener("input", function() {
+      updateSpecializationOptions("trainingSkillSearch");
+    });
+    
+    console.log("Training skills search connected to skill list and event handler");
   }
 }
 
@@ -2892,9 +2666,16 @@ function initializeCareerDropdownDirect() {
   console.log(`Career dropdown initialized with ${mgt2Careers.length} options`);
 }
 
-// Modified updateSpecializationOptions function with better error handling
-function updateSpecializationOptions() {
-  const skillName = document.getElementById("skillSearch")?.value;
+// Modified updateSpecializationOptions function to properly handle different source inputs
+function updateSpecializationOptions(sourceId = "skillSearch") {
+  // Get the skill name from the appropriate input field based on sourceId
+  const skillInput = document.getElementById(sourceId);
+  if (!skillInput) {
+    console.error(`Input element with ID '${sourceId}' not found`);
+    return;
+  }
+  
+  const skillName = skillInput.value;
   if (!skillName) return;
   
   const specList = document.getElementById("specialization-list");
@@ -2909,7 +2690,7 @@ function updateSpecializationOptions() {
   // Add specializations if they exist for this skill
   if (skillSpecializations[skillName]?.length > 0) {
     const sortedSpecs = [...skillSpecializations[skillName]].sort();
-    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName}`);
+    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName} (source: ${sourceId})`);
     
     sortedSpecs.forEach(spec => {
       const option = document.createElement("option");
@@ -2917,6 +2698,39 @@ function updateSpecializationOptions() {
       specList.appendChild(option);
     });
   }
+}
+
+// Make sure both skill inputs are properly connected during initialization
+document.addEventListener("DOMContentLoaded", function() {
+  // ...existing code...
+  
+  // Connect the training skill inputs to the same skill and specialization lists
+  const trainingSkillSearch = document.getElementById("trainingSkillSearch");
+  const trainingSpecField = document.getElementById("trainingSpecializationField");
+  
+  if (trainingSkillSearch) {
+    trainingSkillSearch.setAttribute("list", "skill-list");
+    
+    // Remove any existing listeners to prevent duplicates
+    trainingSkillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
+    
+    // Add the event listener
+    trainingSkillSearch.addEventListener("input", function() {
+      updateSpecializationOptions("trainingSkillSearch");
+    });
+    
+    console.log("Training skills search connected to skill list and event handler");
+  }
+  
+  if (trainingSpecField) {
+    trainingSpecField.setAttribute("list", "specialization-list");
+    console.log("Training specialization field connected to specialization list");
+  }
+});
+
+// We can simplify this function as it's now just a pass-through
+function updateTrainingSpecializationOptions() {
+  updateSpecializationOptions("trainingSkillSearch");
 }
 
 // Make sure initialization happens immediately and reliably
@@ -2962,12 +2776,11 @@ function initializeCareerDropdown() {
   initializeCareerDropdownDirect();
 }
 
-// Add function to create a new skill in training
+// Add function to create a new skill in training - simplified version without weeks complete
 function addTrainingSkill() {
   const skillName = document.getElementById("trainingSkillSearch").value;
   const specialization = document.getElementById("trainingSpecializationField").value;
-  const weeksRequired = document.getElementById("trainingWeeks").value || 1;
-  const weeksComplete = document.getElementById("trainingComplete").value || 0;
+  const weeksSpent = document.getElementById("trainingWeeks").value || 1;
 
   if (!skillName) {
     alert("Please enter a skill name for training");
@@ -2979,10 +2792,7 @@ function addTrainingSkill() {
   row.innerHTML = `
     <td data-skill="${skillName}">${skillName}</td>
     <td data-specialization="${specialization}">${specialization || "-"}</td>
-    <td data-weeks-required="${weeksRequired}">${weeksRequired}</td>
-    <td data-weeks-complete="${weeksComplete}">
-      <input type="number" class="form-control form-control-sm" value="${weeksComplete}" min="0" max="${weeksRequired}">
-    </td>
+    <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
     <td class="no-print">
       <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
       <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -2995,22 +2805,20 @@ function addTrainingSkill() {
   document.getElementById("trainingSkillSearch").value = "";
   document.getElementById("trainingSpecializationField").value = "";
   document.getElementById("trainingWeeks").value = "1";
-  document.getElementById("trainingComplete").value = "0";
 }
 
-// Function to mark a skill training as complete
+// Updated function to mark a skill training as complete
 function completeTraining(button) {
   const row = button.closest('tr');
   
   // Get skill details from the row
   const skillName = row.querySelector('td[data-skill]').getAttribute('data-skill');
   const specialization = row.querySelector('td[data-specialization]').getAttribute('data-specialization');
-  const weeksComplete = parseInt(row.querySelector('input').value);
-  const weeksRequired = parseInt(row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'));
+  const weeksSpent = parseInt(row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent'));
   
-  // Check if training is complete
-  if (weeksComplete < weeksRequired) {
-    alert(`Training not yet complete. ${weeksRequired - weeksComplete} week(s) remaining.`);
+  // Check if enough training time has been spent (minimum 8 weeks is standard in Traveller)
+  if (weeksSpent < 8) {
+    alert(`Training not yet complete. You've spent ${weeksSpent} weeks, but typically need at least 8 weeks.`);
     return;
   }
   
@@ -3023,7 +2831,7 @@ function completeTraining(button) {
   alert(`Training complete! ${skillName}${specialization !== "-" ? ` (${specialization})` : ""} has been added to your skills.`);
 }
 
-// Update the save character function to include skills in training
+// Update the save character function to include simplified skills in training
 const originalSaveCharacterWithTraining = saveCharacter;
 saveCharacter = function() {
   // Get the existing character data or create new object
@@ -3037,17 +2845,15 @@ saveCharacter = function() {
     console.error("Error parsing saved character:", e);
   }
   
-  // Add training skills to the character data
+  // Add training skills to the character data with simplified structure
   character.trainingSkills = Array.from(
     document.getElementById("training-skills-container").querySelectorAll("tr")
   )
     .map(row => {
-      const weeksComplete = row.querySelector('input').value;
       return {
         skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
         specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
-        weeksRequired: row.querySelector('td[data-weeks-required]').getAttribute('data-weeks-required'),
-        weeksComplete: weeksComplete
+        weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent')
       };
     });
   
@@ -3056,7 +2862,7 @@ saveCharacter = function() {
   alert("Character saved successfully!");
 };
 
-// Update the load character function to load skills in training
+// Update the load character function to load simplified skills in training
 const originalLoadCharacterWithTraining = loadCharacter;
 loadCharacter = function() {
   try {
@@ -3074,14 +2880,14 @@ loadCharacter = function() {
     // Load training skills if they exist
     if (character.trainingSkills && character.trainingSkills.length) {
       character.trainingSkills.forEach(skill => {
+        // Handle both old format (with weeksRequired/weeksComplete) and new format (with weeksSpent)
+        const weeksSpent = skill.weeksSpent || skill.weeksComplete || skill.weeksRequired || 1;
+        
         const row = document.createElement("tr");
         row.innerHTML = `
           <td data-skill="${skill.skill}">${skill.skill}</td>
           <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
-          <td data-weeks-required="${skill.weeksRequired}">${skill.weeksRequired}</td>
-          <td data-weeks-complete="${skill.weeksComplete}">
-            <input type="number" class="form-control form-control-sm" value="${skill.weeksComplete}" min="0" max="${skill.weeksRequired}">
-          </td>
+          <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
           <td class="no-print">
             <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
             <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
