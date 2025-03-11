@@ -1,0 +1,210 @@
+graph TD
+
+Start[(Start)] --> A[Company Strategy]
+Start --> ITC[IT Industry Changes]
+Start --> ED[Emerging Demand]
+
+ED --> OUS[OU Strategy]
+ED --> ITS
+ED --> BAN
+ED --> SR
+
+ITC --> TechRoadMap
+
+%% Top Level Strategy
+
+A --> OUS
+A --> ITS
+
+subgraph Operating Unit Strategy
+
+    OUS --> OTA
+end
+
+subgraph IT Strategy
+    ITS[IT Strategy] --> ITA
+end
+
+subgraph Enterprise Architecture
+
+    TechRoadMap[Technology Roadmap] --> SR
+    SR[Systems Roadmap] --> OUR
+    SR <--> BAN
+    AsIsToBeArch[As is / To Be Architecture] -->SR
+
+    subgraph BAN / Target OU Ambitions
+        OTA[OU Target Ambition] --> C[Business Capabilities As Is]
+        C --> BCTB[Business Capabilities To Be]
+        
+        ITA[IT Target Ambition] --> CB
+
+        %% Transition to To-Be Capabilities
+        BCTB --> CB
+        CB[IT Business Capabilty As Is] --> CT[IT Technology Capabilities To-Be]
+        CT --> AsIsToBeArch
+        CT --> BAN
+    end
+
+end
+
+subgraph OU Roadmaps - Quarterly
+
+    %% Define Value Streams
+    BAN[Business Architecture Narrative] --> OUR[OU Roadmaps]
+    OUR --> V1[IT End-to-End Development Value Stream]
+    OUR --> V2[Business Operational Value Stream]
+
+    %% Value Streams broken down into Components
+    subgraph End-to-End Value Streams
+        V1 --> P1[People]
+        V1 --> P2[Procedures]
+        V1 --> P3[Technology]
+        V2 --> P1
+        V2 --> P2
+        V2 --> P3
+    end
+
+
+end
+
+%% Business Cases Alignment
+subgraph Business Case
+    %% Individual Business Cases
+    OUR --> H
+    H[Business Cases] --> K1[Individual Business Case N of M]
+end
+
+%% General Rate Case
+subgraph General Rate Case
+    OUR --> ITOpPlan[IT Op Plan]
+    ITOpPlan --> GRC[IT General Rate Case]
+end
+
+subgraph Project Execution for project N of M
+    
+    %% EA Outcomes broken down via ArchiMate
+
+    K1 --> BRD1[BRD: IT DEMAND]
+    BRD1 --> BRD2[BRD: DETAILED REQUIREMENTS]
+    BRD2 --> AVD[Architecture Vision]
+
+    AVD --> SADD[Solution Architure Document]
+
+    subgraph Solution Architecture Document
+        
+        SADD --> E
+        SADD --> F
+        SADD --> G
+ 
+        %% Business Layer Breakdown
+        direction LR
+        P1 --> E[Business Layer]
+        P2 --> F[Application Layer]
+        P3 --> G[Technology Layer] 
+
+
+        subgraph Business Layer
+        E --> E1[Roles]
+        E --> E2[Locations]
+        E --> E3[Practices]
+        E --> E4[Metrics]
+        E1 --> E5[Business Architecture]
+        E2 --> E5
+        E3 --> E5
+        E4 --> E5
+        
+        end
+
+        %% Application Layer Breakdown
+        subgraph Application Layer
+        F --> F1[Data]
+        F --> F2[Integration]
+        F --> F3[AI]
+        F --> F4[Applications]
+        F1 --> F5[Application Architecture]
+        F2 --> F5
+        F3 --> F5
+        F4 --> F5
+        end
+
+        %% Technology Layer Breakdown
+        subgraph Technology Layer
+        G --> G1[End Point Devices]
+        G --> G2[Cloud PaaS]
+        G --> G3[On-Prem Infrastructure]
+        G --> G4[Security]
+        G1 --> G5[Technology Architecture]
+        G2 --> G5
+        G3 --> G5
+        G4 --> G5
+        end
+    end
+    BRD2 --> 
+    SRS[System Requirements Specifications] <---> SADD
+
+    subgraph Engineering Specifications
+        E5 --> SES[Solution Engineering Specifications]
+        F5 --> SES
+        G5 --> SES
+    end
+
+    subgraph IT Construction Process
+        SES --> Build[IT Build Process]
+        Build --> Test[IT Test Process]
+    end 
+
+    subgraph Change and Release
+        Test --> CAB[Change and Release] 
+    end
+
+    subgraph Go Live
+        CAB --> GoLive[Project Go Live]
+    end
+
+
+end
+
+
+
+%% Examples of Outcomes
+GoLive -.-> N[Improved Process Efficiency]
+GoLive -.-> O[Enhanced Application Integration/Supportability]
+GoLive -.-> P[Optimized IT Infrastructure]
+
+%% ArchiMate v3.2 Layer Class Definitions
+
+%% Strategy Layer
+classDef strategy fill:#4B88A2,color:#333333,stroke:#333,stroke-width:1px
+
+%% Motivation Layer
+classDef motivation fill:#D5A6BD,color:#333333,stroke:#333,stroke-width:1px
+
+%% Business Layer
+classDef business fill:#F9E79F,color:#333333,stroke:#333,stroke-width:1px
+
+%% Application Layer
+classDef application fill:#F8C471,color:#333333,stroke:#333,stroke-width:1px
+
+%% Technology Layer
+classDef technology fill:#8CD3BB,color:#333333,stroke:#333,stroke-width:1px
+
+%% Implementation and Migration Layer
+classDef implementation fill:#F4B183,color:#ffffff,stroke:#333,stroke-width:1px
+
+%% Physical Layer
+classDef physical fill:#C4A484,color:#333333,stroke:#333,stroke-width:1px
+
+class A,B motivation
+
+class C,CT,C,C1,C2,V1,V2,BAN strategy
+
+class P1,E,E1,E3,E4 business
+
+class P2,F,F1,F2,F3,F4 application
+
+class P3,G,G1,G2,G3,G4 technology
+
+
+class H,I,J,K1,K2,L1,L2,M1,M2 business
+
+class E2 physical
