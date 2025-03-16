@@ -31,7 +31,7 @@ categories:
     - "Computers"
     - "Science"
     - "Opinion"
-    - "Personal Writing "
+    - "Personal Writing"
     - "Philosophy"
 
 tags: AI, Automation, Healthcare, Employment, Innovation, Technology
