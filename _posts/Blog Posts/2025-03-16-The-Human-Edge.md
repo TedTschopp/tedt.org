@@ -51,11 +51,11 @@ image-credits: "Ted Tschopp"
 image-credits-URL: "https://tedt.org/"
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
+image-credits-title: "A Helping Hand"
 image-description: "A Digital Hand and a human hand, holding a map of the world"
 image-title: "A Helping Hand"
 
-mastodon-post-id: 
+mastodon-post-id: 114174613806302241
 
 ---
 
@@ -75,4 +75,4 @@ At a recent private conference, [OpenAI CEO Sam Altman discussed AI's deflationa
 
 You stand at the forefront of this revolution. The question before you is not whether AI will change what we do, but how you will adapt to its inevitable influence. Will you embrace the tools that enhance your capabilities, or resist the tide of change? This year, consider how you can integrate AI into your workflows, upskill to meet new demands, and ensure that, amidst the algorithms and automation, the human element remains central.
 
-In this spring season of transformation, growth, and renewal, let us move forward with spped, thoughtfulness and intention, crafting a future where technology serves humanity, and not the other way around.
+In this spring season of transformation, growth, and renewal, let us move forward with speed, thoughtfulness and intention, crafting a future where technology serves humanity, and not the other way around...

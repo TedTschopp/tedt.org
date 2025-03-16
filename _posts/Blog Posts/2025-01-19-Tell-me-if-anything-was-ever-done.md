@@ -67,9 +67,9 @@ In his youth, Leonardo’s mind teemed with curiosity and ideas. The world was a
 
 Leonardo’s question wasn’t just about producing tangible outcomes—it was about the essence of creation itself. To him, *"done"* may have meant the full realization of an idea, the transformation of thought into something functional, lasting, or inspiring.  
 
-By this measure, his perfectionism often stood in his way. He labored over the *Mona Lisa* for more than 15 years, never declaring it finished. His flying machines never left the ground. His scientific studies, groundbreaking as they were, remained unpublished in his lifetime. 
+By this measure, his perfectionism often stood in his way. He labored over the *Mona Lisa* for more than 15 years, never declaring it finished. His flying machines never left the ground. His scientific studies, groundbreaking as they were, remained unpublished in his lifetime.
 
-His reflections urge us to rethink what it means to finish something. Instead of striving for perfection, we might focus on delivering something of value, learning from it, and building on it over time. 
+His reflections urge us to rethink what it means to finish something. Instead of striving for perfection, we might focus on delivering something of value, learning from it, and building on it over time.
 
 This doesn’t diminish Leonardo’s discipline or insight. Rather, it highlights how perfectionism can hinder progress. His later writings reveal a man troubled by the thought that his ideas—brilliant though they were—might be forgotten because they were never fully realized. As creators, we can learn from this by prioritizing delivery, ensuring we leave a trail of impact that others can build upon.  
 
@@ -79,4 +79,4 @@ For Leonardo, *done* may have been an unattainable ideal—a perfect harmony of 
 
 In the end, Leonardo accomplished far more than he might have realized. His works, both finished and unfinished, shaped art, science, and engineering for centuries. His chaotic, genius-filled notebooks prove that even incomplete ideas can inspire others to bring them to fruition. Through them, Leonardo’s question finds its answer: yes, he *did a thing*, many things, and his brilliance continues to change those it touches.  
 
-Let his story remind you: your unfinished ideas can only inspire the world if you share them.
+Let his story remind you: your unfinished ideas can only inspire the world if you share them
