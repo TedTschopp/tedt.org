@@ -105,12 +105,22 @@
             <option value="jungle">Tropical Jungle</option>
         </select>
         <button id="generate-map">Generate New Map</button>
+        
+        <div style="margin-left: 20px; display: flex; align-items: center;">
+            <label for="view-mode" style="margin-right: 10px;">View Mode:</label>
+            <div class="toggle-container">
+                <input type="radio" id="square-mode" name="view-mode" value="square">
+                <label for="square-mode">Square</label>
+                <input type="radio" id="hex-mode" name="view-mode" value="hex" checked>
+                <label for="hex-mode">Hexagonal</label>
+            </div>
+        </div>
     </div>
     <div id="map-container">
         <canvas id="map-canvas" width="512" height="512"></canvas>
     </div>
     <div class="controls">
-        <div class="hex-controls">
+        <div id="hex-controls" class="hex-controls">
             <div class="key-row">
                 <span class="key">Q</span>
                 <span class="key">W</span>
@@ -121,8 +131,19 @@
                 <span class="key">S</span>
                 <span class="key">D</span>
             </div>
+            <div>for hexagonal movement</div>
         </div>
-        <div>for hexagonal movement</div>
+        <div id="square-controls" style="display: none;">
+            <div class="key-row">
+                <span class="key">↑</span>
+            </div>
+            <div class="key-row">
+                <span class="key">←</span>
+                <span class="key">↓</span>
+                <span class="key">→</span>
+            </div>
+            <div>for square movement</div>
+        </div>
     </div>
 
     <script>
@@ -130,24 +151,42 @@
             const canvas = document.getElementById('map-canvas');
             const ctx = canvas.getContext('2d');
             
+            // View mode (hex or square)
+            let isHexView = true;
+            
             // Hexagon dimensions
             const HEX_SIZE = 28; // Distance from center to corner
             const HEX_WIDTH = HEX_SIZE * Math.sqrt(3);
             const HEX_HEIGHT = HEX_SIZE * 2;
-            const HEX_SIDE = HEX_SIZE;
             const HEX_VERT_DIST = HEX_HEIGHT * 0.75; // Vertical distance between hex centers
+            
+            // Square dimensions
+            const SQUARE_SIZE = 32;
             
             // Map dimensions
             const MAP_WIDTH = 64;
             const MAP_HEIGHT = 64;
             
-            // Calculate display dimensions (how many hexes fit on screen)
-            const DISPLAY_WIDTH = Math.floor(canvas.width / (HEX_WIDTH)) + 1;
-            const DISPLAY_HEIGHT = Math.floor(canvas.height / HEX_VERT_DIST) + 1;
+            // Variables to track viewport position - declare before the function that uses them
+            let viewX, viewY;
+            let DISPLAY_WIDTH, DISPLAY_HEIGHT;
             
-            // Variables to track viewport position - start at the center of the map
-            let viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
-            let viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+            function updateDisplayDimensions() {
+                if (isHexView) {
+                    DISPLAY_WIDTH = Math.floor(canvas.width / (HEX_WIDTH)) + 1;
+                    DISPLAY_HEIGHT = Math.floor(canvas.height / HEX_VERT_DIST) + 1;
+                } else {
+                    DISPLAY_WIDTH = canvas.width / SQUARE_SIZE;
+                    DISPLAY_HEIGHT = canvas.height / SQUARE_SIZE;
+                }
+                
+                // Set view to center of map
+                viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
+                viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+            }
+            
+            // Initialize display dimensions and viewport position
+            updateDisplayDimensions();
             
             // Tile types and their corresponding image paths
             const tileTypes = [
@@ -196,13 +235,34 @@
             // Event listener for map type selection and generation
             document.getElementById('generate-map').addEventListener('click', () => {
                 const mapType = document.getElementById('map-type').value;
-                map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT);
+                map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT, isHexView);
                 
                 // Reset view to center of map
                 viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
                 viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
                 
                 drawMap();
+            });
+            
+            // Event listeners for view mode toggle
+            document.getElementById('hex-mode').addEventListener('change', function() {
+                if (this.checked) {
+                    isHexView = true;
+                    document.getElementById('hex-controls').style.display = '';
+                    document.getElementById('square-controls').style.display = 'none';
+                    updateDisplayDimensions();
+                    drawMap();
+                }
+            });
+            
+            document.getElementById('square-mode').addEventListener('change', function() {
+                if (this.checked) {
+                    isHexView = false;
+                    document.getElementById('hex-controls').style.display = 'none';
+                    document.getElementById('square-controls').style.display = '';
+                    updateDisplayDimensions();
+                    drawMap();
+                }
             });
             
             // Function to draw a hexagon at a given position
@@ -246,69 +306,104 @@
                 ctx.restore();
             }
             
+            // Function to draw a square tile
+            function drawSquare(x, y, tileImage) {
+                ctx.drawImage(
+                    tileImage,
+                    x * SQUARE_SIZE,
+                    y * SQUARE_SIZE,
+                    SQUARE_SIZE,
+                    SQUARE_SIZE
+                );
+            }
+            
             // Function to draw the visible portion of the map
             function drawMap() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 
-                // Draw visible hexagons
-                for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
-                    for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
-                        const mapX = x + viewX;
-                        const mapY = y + viewY;
-                        
-                        // Make sure we're within map bounds
-                        if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
-                            const tileType = map[mapY][mapX];
-                            drawHexagon(x, y, tileImages[tileType]);
+                if (isHexView) {
+                    // Draw visible hexagons
+                    for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
+                        for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
+                            const mapX = x + viewX;
+                            const mapY = y + viewY;
+                            
+                            // Make sure we're within map bounds
+                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
+                                const tileType = map[mapY][mapX];
+                                drawHexagon(x, y, tileImages[tileType]);
+                            }
+                        }
+                    }
+                } else {
+                    // Draw visible squares
+                    for (let y = 0; y < DISPLAY_HEIGHT; y++) {
+                        for (let x = 0; x < DISPLAY_WIDTH; x++) {
+                            const mapX = x + viewX;
+                            const mapY = y + viewY;
+                            
+                            // Make sure we're within map bounds
+                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
+                                const tileType = map[mapY][mapX];
+                                drawSquare(x, y, tileImages[tileType]);
+                            }
                         }
                     }
                 }
             }
             
-            // Handle keyboard input for hexagonal movement
+            // Handle keyboard input
             document.addEventListener('keydown', (e) => {
                 // Store original position to check if it changed
                 const originalX = viewX;
                 const originalY = viewY;
                 
-                // Axial coordinate movement for flat-topped hexagons
-                // Odd rows are offset horizontally
-                const oddRow = viewY % 2 !== 0;
-                
-                switch (e.key.toLowerCase()) {
-                    case 'w': // Up-right
-                        viewY = Math.max(0, viewY - 1);
-                        if (!oddRow) viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
-                        break;
-                    case 'q': // Up-left
-                        viewY = Math.max(0, viewY - 1);
-                        if (oddRow) viewX = Math.max(0, viewX - 1);
-                        break;
-                    case 's': // Down
-                        viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
-                        break;
-                    case 'a': // Left
-                        viewX = Math.max(0, viewX - 1);
-                        break;
-                    case 'd': // Right
-                        viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
-                        break;
-                    case 'e': // Up
-                        viewY = Math.max(0, viewY - 1);
-                        break;
-                    // Keep arrow keys too for easier movement
-                    case 'arrowup':
-                        viewY = Math.max(0, viewY - 1);
-                        break;
-                    case 'arrowdown':
-                        viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
-                        break;
-                    case 'arrowleft':
-                        viewX = Math.max(0, viewX - 1);
-                        break;
-                    case 'arrowright':
-                        viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
-                        break;
+                if (isHexView) {
+                    // Hexagonal movement
+                    const oddRow = viewY % 2 !== 0;
+                    
+                    switch (e.key.toLowerCase()) {
+                        case 'w': // Up-right
+                            viewY = Math.max(0, viewY - 1);
+                            if (!oddRow) viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
+                            break;
+                        case 'q': // Up-left
+                            viewY = Math.max(0, viewY - 1);
+                            if (oddRow) viewX = Math.max(0, viewX - 1);
+                            break;
+                        case 's': // Down
+                            viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
+                            break;
+                        case 'a': // Left
+                            viewX = Math.max(0, viewX - 1);
+                            break;
+                        case 'd': // Right
+                            viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
+                            break;
+                        case 'e': // Up
+                            viewY = Math.max(0, viewY - 1);
+                            break;
+                    }
+                } else {
+                    // Square movement
+                    switch (e.key.toLowerCase()) {
+                        case 'arrowup':
+                        case 'w':
+                            viewY = Math.max(0, viewY - 1);
+                            break;
+                        case 'arrowdown':
+                        case 's':
+                            viewY = Math.min(MAP_HEIGHT - DISPLAY_HEIGHT, viewY + 1);
+                            break;
+                        case 'arrowleft':
+                        case 'a':
+                            viewX = Math.max(0, viewX - 1);
+                            break;
+                        case 'arrowright':
+                        case 'd':
+                            viewX = Math.min(MAP_WIDTH - DISPLAY_WIDTH, viewX + 1);
+                            break;
+                    }
                 }
                 
                 // Apply viewport bounds
@@ -329,6 +424,13 @@
             ctx.font = "20px Arial";
             ctx.textAlign = "center";
             ctx.fillText("Loading map tiles...", canvas.width / 2, canvas.height / 2);
+            
+            // Once all images are loaded, draw the map
+            if (loadedImages === tileTypes.length) {
+                const mapTypeSelect = document.getElementById('map-type');
+                map = MapGenerator.generateMap(mapTypeSelect.value, MAP_WIDTH, MAP_HEIGHT, isHexView);
+                drawMap();
+            }
         });
     </script>
 </body>

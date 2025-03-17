@@ -415,16 +415,18 @@ function generateSimplexNoise(width, height) {
 }
 
 // Function to create a map based on selected type
-function generateMap(mapType, width, height) {
+function generateMap(mapType, width, height, isHexGrid = true) {
     const generator = mapGenerators[mapType] || mapGenerators.island;
     
     // Generate the base map
     const map = generator(width, height);
     
-    // Post-processing for hexagonal grid specifics
-    // Since we're using a flat-top hexagonal grid, we need to ensure coherent terrain transitions
-    // This helps make terrain look more natural in a hexagonal grid layout
-    smoothHexMap(map, width, height);
+    // Post-processing for grid-specific terrain transitions
+    if (isHexGrid) {
+        smoothHexMap(map, width, height);
+    } else {
+        smoothSquareMap(map, width, height);
+    }
     
     return map;
 }
@@ -452,7 +454,7 @@ function smoothHexMap(map, width, height) {
             const waterCount = neighbors.filter(n => waterTypes.includes(n)).length;
             const landCount = neighbors.filter(n => landTypes.includes(n)).length;
             
-            // Apply smoothing rules (this is a simple example)
+            // Apply smoothing rules
             const currentTile = originalMap[y][x];
             
             // Water surrounded by mostly land should become shallow water or swamp
@@ -462,6 +464,45 @@ function smoothHexMap(map, width, height) {
             
             // Land surrounded by mostly water should become shore or swamp
             if (landTypes.includes(currentTile) && waterCount > 3) {
+                map[y][x] = Math.random() < 0.7 ? 3 : 5; // swamp or scrub
+            }
+        }
+    }
+}
+
+// Function to smooth terrain transitions for square grid
+function smoothSquareMap(map, width, height) {
+    // Deep clone the map to avoid modifying during iteration
+    const originalMap = JSON.parse(JSON.stringify(map));
+    
+    // Define terrain compatibility groups (same as hex)
+    const waterTypes = [0, 1, 2]; // Deep, medium, shallow water
+    const landTypes = [4, 5, 6, 7, 13, 14, 15]; // Various land terrain types
+    const specialTypes = [9, 10, 11, 12]; // Dungeons, towns, castles, villages
+    
+    // Iterate through map and apply smoothing
+    for (let y = 1; y < height - 1; y++) {
+        for (let x = 1; x < width - 1; x++) {
+            // Skip special features
+            if (specialTypes.includes(originalMap[y][x])) continue;
+            
+            // Get square neighbors
+            const neighbors = getSquareNeighborTiles(originalMap, x, y, width, height);
+            
+            // Count terrain types in neighborhood
+            const waterCount = neighbors.filter(n => waterTypes.includes(n)).length;
+            const landCount = neighbors.filter(n => landTypes.includes(n)).length;
+            
+            // Apply smoothing rules
+            const currentTile = originalMap[y][x];
+            
+            // Water surrounded by mostly land should become shallow water or swamp
+            if (waterTypes.includes(currentTile) && landCount > 4) {
+                map[y][x] = Math.random() < 0.5 ? 2 : 3; // shallow water or swamp
+            }
+            
+            // Land surrounded by mostly water should become shore or swamp
+            if (landTypes.includes(currentTile) && waterCount > 4) {
                 map[y][x] = Math.random() < 0.7 ? 3 : 5; // swamp or scrub
             }
         }
@@ -479,6 +520,28 @@ function getHexNeighborTiles(map, x, y, width, height) {
     const directions = isOddRow ? 
         [[0, -1], [1, 0], [0, 1], [-1, 1], [-1, 0], [-1, -1]] : 
         [[1, -1], [1, 0], [1, 1], [0, 1], [-1, 0], [0, -1]];
+    
+    for (const [dx, dy] of directions) {
+        const nx = x + dx;
+        const ny = y + dy;
+        
+        if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
+            neighbors.push(map[ny][nx]);
+        }
+    }
+    
+    return neighbors;
+}
+
+// Helper function to get neighboring tiles in a square grid
+function getSquareNeighborTiles(map, x, y, width, height) {
+    const neighbors = [];
+    
+    // 8-way square neighbors (N, NE, E, SE, S, SW, W, NW)
+    const directions = [
+        [0, -1], [1, -1], [1, 0], [1, 1],
+        [0, 1], [-1, 1], [-1, 0], [-1, -1]
+    ];
     
     for (const [dx, dy] of directions) {
         const nx = x + dx;
