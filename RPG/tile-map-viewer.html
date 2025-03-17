@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Map Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+        #map-container {
+            margin: 20px;
+            position: relative;
+        }
+        #map-canvas {
+            border: 2px solid #444;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+        .instructions {
+            margin: 10px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .controls {
+            margin: 10px;
+            text-align: center;
+        }
+        .key {
+            background-color: #444;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tile Map Viewer</h1>
+    <div class="instructions">
+        <p>Use arrow keys to navigate the map</p>
+    </div>
+    <div id="map-container">
+        <canvas id="map-canvas" width="512" height="512"></canvas>
+    </div>
+    <div class="controls">
+        <span class="key">↑</span>
+        <span class="key">↓</span>
+        <span class="key">←</span>
+        <span class="key">→</span>
+        to navigate
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('map-canvas');
+            const ctx = canvas.getContext('2d');
+            const TILE_SIZE = 32;
+            const MAP_WIDTH = 64; // Larger than display to allow scrolling
+            const MAP_HEIGHT = 64;
+            const DISPLAY_WIDTH = canvas.width / TILE_SIZE;
+            const DISPLAY_HEIGHT = canvas.height / TILE_SIZE;
+            
+            // Variables to track viewport position - start at the center of the map
+            let viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
+            let viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+            
+            // Tile types and their corresponding image paths
+            const tileTypes = [
+                "000_deep_water.png",
+                "001_medium_water.png",
+                "002_shallow_water.png",
+                "003_swamp.png",
+                "004_grass.png",
+                "005_scrub.png",
+                "006_forest.png",
+                "007_hill.png",
+                "008_mountain.png",
+                "009_dungeon.png",
+                "010_town.png",
+                "011_keep.png",
+                "012_village.png"
+            ];
+            
+            // Create an array to hold the tile images
+            const tileImages = [];
+            
+            // Generate a random map
+            const map = [];
+            for (let y = 0; y < MAP_HEIGHT; y++) {
+                const row = [];
+                for (let x = 0; x < MAP_WIDTH; x++) {
+                    // Create a pattern based on distance from center for demonstration
+                    const distFromCenter = Math.sqrt(
+                        Math.pow(x - MAP_WIDTH / 2, 2) + 
+                        Math.pow(y - MAP_HEIGHT / 2, 2)
+                    );
+                    
+                    // Create some logical biomes based on distance
+                    let tileIndex;
+                    if (distFromCenter < 5) {
+                        // Center area: water with castle
+                        tileIndex = (x === MAP_WIDTH/2 && y === MAP_HEIGHT/2) ? 11 : 0;
+                    } else if (distFromCenter < 10) {
+                        // Shallow water and swamp ring
+                        tileIndex = Math.random() < 0.7 ? 2 : 3;
+                    } else if (distFromCenter < 15) {
+                        // Grasslands and villages
+                        tileIndex = Math.random() < 0.9 ? 4 : 12;
+                    } else if (distFromCenter < 25) {
+                        // Forest and scrubland area
+                        tileIndex = Math.random() < 0.6 ? 6 : 5;
+                    } else if (distFromCenter < 30) {
+                        // Hills with towns
+                        tileIndex = Math.random() < 0.9 ? 7 : 10;
+                    } else {
+                        // Mountain rim
+                        tileIndex = 8;
+                        // Add some dungeon entrances
+                        if (Math.random() < 0.05) tileIndex = 9;
+                    }
+                    
+                    row.push(tileIndex);
+                }
+                map.push(row);
+            }
+            
+            // Load all tile images before drawing
+            let loadedImages = 0;
+            tileTypes.forEach((tileName, index) => {
+                const img = new Image();
+
+                img.src = `https://tedt.org/RPG/images/U4/32x32x24/shapes-assets/${tileName}`;
+                img.onload = () => {
+                    loadedImages++;
+                    // Once all images are loaded, draw the map
+                    if (loadedImages === tileTypes.length) {
+                        drawMap();
+                    }
+                };
+                tileImages[index] = img;
+            });
+            
+            // Function to draw the visible portion of the map
+            function drawMap() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                for (let y = 0; y < DISPLAY_HEIGHT; y++) {
+                    for (let x = 0; x < DISPLAY_WIDTH; x++) {
+                        const mapX = x + viewX;
+                        const mapY = y + viewY;
+                        
+                        // Make sure we're within map bounds
+                        if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
+                            const tileType = map[mapY][mapX];
+                            ctx.drawImage(
+                                tileImages[tileType], 
+                                x * TILE_SIZE, 
+                                y * TILE_SIZE, 
+                                TILE_SIZE, 
+                                TILE_SIZE
+                            );
+                        }
+                    }
+                }
+            }
+            
+            // Handle keyboard input
+            document.addEventListener('keydown', (e) => {
+                // Store original position to check if it changed
+                const originalX = viewX;
+                const originalY = viewY;
+                
+                switch (e.key) {
+                    case 'ArrowUp':
+                        viewY = Math.max(0, viewY - 1);
+                        break;
+                    case 'ArrowDown':
+                        viewY = Math.min(MAP_HEIGHT - DISPLAY_HEIGHT, viewY + 1);
+                        break;
+                    case 'ArrowLeft':
+                        viewX = Math.max(0, viewX - 1);
+                        break;
+                    case 'ArrowRight':
+                        viewX = Math.min(MAP_WIDTH - DISPLAY_WIDTH, viewX + 1);
+                        break;
+                }
+                
+                // Redraw the map if position changed
+                if (originalX !== viewX || originalY !== viewY) {
+                    drawMap();
+                    e.preventDefault(); // Prevent browser scrolling
+                }
+            });
+            
+            // Initial loading message
+            ctx.fillStyle = "#444";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#fff";
+            ctx.font = "20px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText("Loading map tiles...", canvas.width / 2, canvas.height / 2);
+        });
+    </script>
+</body>
+</html>
