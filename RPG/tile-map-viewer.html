@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tile Map Viewer</title>
+    <title>Hexagon Tile Map Viewer</title>
     <style>
         body {
             margin: 0;
@@ -33,40 +33,117 @@
         .controls {
             margin: 10px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .hex-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .key-row {
+            display: flex;
+            justify-content: center;
         }
         .key {
             background-color: #444;
             padding: 5px 10px;
             border-radius: 4px;
             margin: 0 5px;
+            min-width: 20px;
+            text-align: center;
+        }
+        #map-controls {
+            margin: 20px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        button {
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #777;
+        }
+        select {
+            padding: 8px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 4px;
         }
     </style>
+    <!-- Include the map generator script -->
+    <script src="js/mapGenerator.js"></script>
 </head>
 <body>
-    <h1>Tile Map Viewer</h1>
+    <h1>Hexagon Tile Map Viewer</h1>
     <div class="instructions">
-        <p>Use arrow keys to navigate the map</p>
+        <p>Use keyboard to navigate the hexagonal map</p>
+    </div>
+    <div id="map-controls">
+        <label for="map-type">Map Type:</label>
+        <select id="map-type">
+            <option value="island">Island</option>
+            <option value="continent">Continent</option>
+            <option value="archipelago">Archipelago</option>
+            <option value="desert">Desert Wasteland</option>
+            <option value="forest">Deep Forest</option>
+            <option value="jungle">Tropical Jungle</option>
+        </select>
+        <button id="generate-map">Generate New Map</button>
     </div>
     <div id="map-container">
         <canvas id="map-canvas" width="512" height="512"></canvas>
     </div>
     <div class="controls">
-        <span class="key">↑</span>
-        <span class="key">↓</span>
-        <span class="key">←</span>
-        <span class="key">→</span>
-        to navigate
+        <div class="hex-controls">
+            <div class="key-row">
+                <span class="key">Q</span>
+                <span class="key">W</span>
+                <span class="key">E</span>
+            </div>
+            <div class="key-row">
+                <span class="key">A</span>
+                <span class="key">S</span>
+                <span class="key">D</span>
+            </div>
+        </div>
+        <div>for hexagonal movement</div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const canvas = document.getElementById('map-canvas');
             const ctx = canvas.getContext('2d');
-            const TILE_SIZE = 32;
-            const MAP_WIDTH = 64; // Larger than display to allow scrolling
+            
+            // Hexagon dimensions
+            const HEX_SIZE = 28; // Distance from center to corner
+            const HEX_WIDTH = HEX_SIZE * Math.sqrt(3);
+            const HEX_HEIGHT = HEX_SIZE * 2;
+            const HEX_SIDE = HEX_SIZE;
+            const HEX_VERT_DIST = HEX_HEIGHT * 0.75; // Vertical distance between hex centers
+            
+            // Map dimensions
+            const MAP_WIDTH = 64;
             const MAP_HEIGHT = 64;
-            const DISPLAY_WIDTH = canvas.width / TILE_SIZE;
-            const DISPLAY_HEIGHT = canvas.height / TILE_SIZE;
+            
+            // Calculate display dimensions (how many hexes fit on screen)
+            const DISPLAY_WIDTH = Math.floor(canvas.width / (HEX_WIDTH)) + 1;
+            const DISPLAY_HEIGHT = Math.floor(canvas.height / HEX_VERT_DIST) + 1;
             
             // Variables to track viewport position - start at the center of the map
             let viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
@@ -86,112 +163,157 @@
                 "009_dungeon.png",
                 "010_town.png",
                 "011_keep.png",
-                "012_village.png"
+                "012_village.png",
+                "257_desert.png",
+                "258_plateau.png",
+                "259_jungle.png",
             ];
             
             // Create an array to hold the tile images
             const tileImages = [];
             
-            // Generate a random map
-            const map = [];
-            for (let y = 0; y < MAP_HEIGHT; y++) {
-                const row = [];
-                for (let x = 0; x < MAP_WIDTH; x++) {
-                    // Create a pattern based on distance from center for demonstration
-                    const distFromCenter = Math.sqrt(
-                        Math.pow(x - MAP_WIDTH / 2, 2) + 
-                        Math.pow(y - MAP_HEIGHT / 2, 2)
-                    );
-                    
-                    // Create some logical biomes based on distance
-                    let tileIndex;
-                    if (distFromCenter < 5) {
-                        // Center area: water with castle
-                        tileIndex = (x === MAP_WIDTH/2 && y === MAP_HEIGHT/2) ? 11 : 0;
-                    } else if (distFromCenter < 10) {
-                        // Shallow water and swamp ring
-                        tileIndex = Math.random() < 0.7 ? 2 : 3;
-                    } else if (distFromCenter < 15) {
-                        // Grasslands and villages
-                        tileIndex = Math.random() < 0.9 ? 4 : 12;
-                    } else if (distFromCenter < 25) {
-                        // Forest and scrubland area
-                        tileIndex = Math.random() < 0.6 ? 6 : 5;
-                    } else if (distFromCenter < 30) {
-                        // Hills with towns
-                        tileIndex = Math.random() < 0.9 ? 7 : 10;
-                    } else {
-                        // Mountain rim
-                        tileIndex = 8;
-                        // Add some dungeon entrances
-                        if (Math.random() < 0.05) tileIndex = 9;
-                    }
-                    
-                    row.push(tileIndex);
-                }
-                map.push(row);
-            }
+            // Current map data
+            let map = [];
             
             // Load all tile images before drawing
             let loadedImages = 0;
             tileTypes.forEach((tileName, index) => {
                 const img = new Image();
-
                 img.src = `https://tedt.org/RPG/images/U4/32x32x24/shapes-assets/${tileName}`;
                 img.onload = () => {
                     loadedImages++;
                     // Once all images are loaded, draw the map
                     if (loadedImages === tileTypes.length) {
+                        // Get initial map type
+                        const mapTypeSelect = document.getElementById('map-type');
+                        map = MapGenerator.generateMap(mapTypeSelect.value, MAP_WIDTH, MAP_HEIGHT);
                         drawMap();
                     }
                 };
                 tileImages[index] = img;
             });
             
+            // Event listener for map type selection and generation
+            document.getElementById('generate-map').addEventListener('click', () => {
+                const mapType = document.getElementById('map-type').value;
+                map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT);
+                
+                // Reset view to center of map
+                viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
+                viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+                
+                drawMap();
+            });
+            
+            // Function to draw a hexagon at a given position
+            function drawHexagon(x, y, tileImage) {
+                // Calculate the center position of the hexagon
+                const offsetX = y % 2 === 0 ? 0 : HEX_WIDTH / 2;
+                const centerX = x * HEX_WIDTH + offsetX;
+                const centerY = y * HEX_VERT_DIST;
+                
+                // Draw the tile image clipped to a hexagon shape
+                ctx.save();
+                
+                // Create a hexagon path
+                ctx.beginPath();
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI / 3) + Math.PI / 6; // +30° to make flat-topped
+                    const hx = centerX + HEX_SIZE * Math.cos(angle);
+                    const hy = centerY + HEX_SIZE * Math.sin(angle);
+                    
+                    if (i === 0) {
+                        ctx.moveTo(hx, hy);
+                    } else {
+                        ctx.lineTo(hx, hy);
+                    }
+                }
+                ctx.closePath();
+                
+                // Clip to the hexagon shape and draw the image
+                ctx.clip();
+                
+                // Draw the tile image
+                const imgSize = Math.max(HEX_WIDTH, HEX_HEIGHT) * 1.1; // Make slightly larger to avoid gaps
+                ctx.drawImage(
+                    tileImage,
+                    centerX - imgSize / 2,
+                    centerY - imgSize / 2,
+                    imgSize,
+                    imgSize
+                );
+                
+                ctx.restore();
+            }
+            
             // Function to draw the visible portion of the map
             function drawMap() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 
-                for (let y = 0; y < DISPLAY_HEIGHT; y++) {
-                    for (let x = 0; x < DISPLAY_WIDTH; x++) {
+                // Draw visible hexagons
+                for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
+                    for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
                         const mapX = x + viewX;
                         const mapY = y + viewY;
                         
                         // Make sure we're within map bounds
                         if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
                             const tileType = map[mapY][mapX];
-                            ctx.drawImage(
-                                tileImages[tileType], 
-                                x * TILE_SIZE, 
-                                y * TILE_SIZE, 
-                                TILE_SIZE, 
-                                TILE_SIZE
-                            );
+                            drawHexagon(x, y, tileImages[tileType]);
                         }
                     }
                 }
             }
             
-            // Handle keyboard input
+            // Handle keyboard input for hexagonal movement
             document.addEventListener('keydown', (e) => {
                 // Store original position to check if it changed
                 const originalX = viewX;
                 const originalY = viewY;
                 
-                switch (e.key) {
-                    case 'ArrowUp':
+                // Axial coordinate movement for flat-topped hexagons
+                // Odd rows are offset horizontally
+                const oddRow = viewY % 2 !== 0;
+                
+                switch (e.key.toLowerCase()) {
+                    case 'w': // Up-right
                         viewY = Math.max(0, viewY - 1);
+                        if (!oddRow) viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
                         break;
-                    case 'ArrowDown':
-                        viewY = Math.min(MAP_HEIGHT - DISPLAY_HEIGHT, viewY + 1);
+                    case 'q': // Up-left
+                        viewY = Math.max(0, viewY - 1);
+                        if (oddRow) viewX = Math.max(0, viewX - 1);
                         break;
-                    case 'ArrowLeft':
+                    case 's': // Down
+                        viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
+                        break;
+                    case 'a': // Left
                         viewX = Math.max(0, viewX - 1);
                         break;
-                    case 'ArrowRight':
-                        viewX = Math.min(MAP_WIDTH - DISPLAY_WIDTH, viewX + 1);
+                    case 'd': // Right
+                        viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
+                        break;
+                    case 'e': // Up
+                        viewY = Math.max(0, viewY - 1);
+                        break;
+                    // Keep arrow keys too for easier movement
+                    case 'arrowup':
+                        viewY = Math.max(0, viewY - 1);
+                        break;
+                    case 'arrowdown':
+                        viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
+                        break;
+                    case 'arrowleft':
+                        viewX = Math.max(0, viewX - 1);
+                        break;
+                    case 'arrowright':
+                        viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
                         break;
                 }
+                
+                // Apply viewport bounds
+                viewX = Math.min(Math.max(0, viewX), MAP_WIDTH - DISPLAY_WIDTH);
+                viewY = Math.min(Math.max(0, viewY), MAP_HEIGHT - DISPLAY_HEIGHT);
                 
                 // Redraw the map if position changed
                 if (originalX !== viewX || originalY !== viewY) {
