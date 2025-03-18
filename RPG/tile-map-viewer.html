@@ -86,8 +86,9 @@
             border-radius: 4px;
         }
     </style>
-    <!-- Include the map generator script -->
+    <!-- Include the map generator and weather system scripts -->
     <script src="js/mapGenerator.js"></script>
+    <script src="js/weatherSystem.js"></script>
 </head>
 <body>
     <h1>Hexagon Tile Map Viewer</h1>
@@ -114,6 +115,20 @@
                 <input type="radio" id="hex-mode" name="view-mode" value="hex" checked>
                 <label for="hex-mode">Hexagonal</label>
             </div>
+        </div>
+        
+        <div style="margin-left: 20px; display: flex; align-items: center;">
+            <label for="weather-select" style="margin-right: 10px;">Add Weather:</label>
+            <select id="weather-select">
+                <option value="clear">Clear</option>
+                <option value="cloudy">Cloudy</option>
+                <option value="rain">Rain</option>
+                <option value="storm">Storm</option>
+                <option value="snow">Snow</option>
+                <option value="fog">Fog</option>
+                <option value="sandstorm">Sandstorm</option>
+            </select>
+            <button id="apply-weather" style="margin-left: 5px;">Apply</button>
         </div>
     </div>
     <div id="map-container">
@@ -214,6 +229,9 @@
             // Current map data
             let map = [];
             
+            // Weather system
+            let weatherSystem;
+            
             // Load all tile images before drawing
             let loadedImages = 0;
             tileTypes.forEach((tileName, index) => {
@@ -225,21 +243,43 @@
                     if (loadedImages === tileTypes.length) {
                         // Get initial map type
                         const mapTypeSelect = document.getElementById('map-type');
-                        map = MapGenerator.generateMap(mapTypeSelect.value, MAP_WIDTH, MAP_HEIGHT);
-                        drawMap();
+                        const mapType = mapTypeSelect.value;
+                        map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT, isHexView);
+                        
+                        // Initialize weather system with the map
+                        weatherSystem = new WeatherSystem(canvas, ctx);
+                        weatherSystem.initWeatherMap(MAP_WIDTH, MAP_HEIGHT, map);
+                        
+                        // Start animation loop
+                        lastFrameTime = performance.now();
+                        requestAnimationFrame(animationLoop);
                     }
                 };
                 tileImages[index] = img;
             });
             
+            // Event listener for weather selection
+            document.getElementById('apply-weather').addEventListener('click', function() {
+                if (weatherSystem) {
+                    const weatherType = document.getElementById('weather-select').value;
+                    weatherSystem.setGlobalWeather(weatherType);
+                }
+            });
+            
             // Event listener for map type selection and generation
             document.getElementById('generate-map').addEventListener('click', () => {
-                const mapType = document.getElementById('map-type').value;
+                const mapTypeSelect = document.getElementById('map-type');
+                const mapType = mapTypeSelect.value;
                 map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT, isHexView);
                 
                 // Reset view to center of map
                 viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
                 viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+                
+                // Initialize weather system with the new map
+                if (weatherSystem) {
+                    weatherSystem.initWeatherMap(MAP_WIDTH, MAP_HEIGHT, map);
+                }
                 
                 drawMap();
             });
@@ -430,6 +470,79 @@
                 const mapTypeSelect = document.getElementById('map-type');
                 map = MapGenerator.generateMap(mapTypeSelect.value, MAP_WIDTH, MAP_HEIGHT, isHexView);
                 drawMap();
+            }
+            
+            // Animation variables
+            let lastFrameTime = 0;
+            
+            // Animation loop
+            function animationLoop(timestamp) {
+                // Calculate delta time in seconds
+                const deltaTime = (timestamp - lastFrameTime) / 1000;
+                lastFrameTime = timestamp;
+                
+                // Only redraw if we have a weather system
+                if (weatherSystem) {
+                    // Clear canvas
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                    // Draw base map
+                    drawMapBase();
+                    
+                    // Update weather system view position
+                    if (isHexView) {
+                        weatherSystem.updateView(viewX, viewY, isHexView, 
+                                                null, HEX_WIDTH, HEX_HEIGHT);
+                    } else {
+                        weatherSystem.updateView(viewX, viewY, isHexView, SQUARE_SIZE);
+                    }
+                    
+                    // Update and draw weather effects
+                    weatherSystem.update(deltaTime);
+                    weatherSystem.draw();
+                }
+                
+                // Continue animation loop
+                requestAnimationFrame(animationLoop);
+            }
+            
+            // Function to draw just the base map (without clearing)
+            function drawMapBase() {
+                if (isHexView) {
+                    // Draw visible hexagons
+                    for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
+                        for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
+                            const mapX = x + viewX;
+                            const mapY = y + viewY;
+                            
+                            // Make sure we're within map bounds
+                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
+                                const tileType = map[mapY][mapX];
+                                drawHexagon(x, y, tileImages[tileType]);
+                            }
+                        }
+                    }
+                } else {
+                    // Draw visible squares
+                    for (let y = 0; y < DISPLAY_HEIGHT; y++) {
+                        for (let x = 0; x < DISPLAY_WIDTH; x++) {
+                            const mapX = x + viewX;
+                            const mapY = y + viewY;
+                            
+                            // Make sure we're within map bounds
+                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
+                                const tileType = map[mapY][mapX];
+                                drawSquare(x, y, tileImages[tileType]);
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Update the original drawMap function to use the animation loop
+            function drawMap() {
+                // Just draw the base map - weather will be handled by animation loop
+                drawMapBase();
             }
         });
     </script>
