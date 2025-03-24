@@ -1,0 +1,131 @@
+flowchart TD
+%% Start
+
+Start(START) --> Gluttony
+Start(START) --> Lust
+Start(START) --> Wrath
+Start(START) --> Vanity
+Start(START) --> Sloth
+Start(START) --> Greed
+Start(START) --> Despair
+
+%% Root causes (starting points)
+
+Gluttony(["Gluttony*"]) --> Apathy
+Gluttony --> Decay
+Gluttony --> Selfishness
+
+Lust(["Lust*"]) --> Deception
+Lust --> Obsession
+Lust --> BrokenRelationships[Broken Relationships]
+
+Wrath(["Wrath*"]) --> Violence
+Wrath --> Destruction
+Wrath --> Hatred
+
+Vanity(["Vanity*"]) --> Deception
+Vanity --> Arrogance
+Vanity --> BrokenRelationships[Broken Relationships]
+
+Sloth(["Sloth*"]) --> Failure[Failure]
+Sloth --> Apathy
+Sloth --> Decay
+
+Pride(["Pride*"]) --> Arrogance[Arrogance]
+Pride --> Ignorance
+Pride --> BrokenRelationships
+
+Greed(["Greed*"]) --> Deception
+Greed --> Betrayal
+Greed --> Conflict
+
+Despair(["Despair*"]) --> Apathy
+Despair --> Hopelessness
+Despair --> Decay
+
+
+
+%% Second level connections
+
+Obsession --> BrokenRelationships[Broken Relationships]
+Obsession --> Betrayal
+Obsession --> Conflict
+
+Apathy --> Despair
+Apathy --> Decay
+Apathy --> Failure
+
+Arrogance --> BrokenRelationships[Broken Relationships]
+Arrogance --> Folly
+Arrogance --> Ignorance
+
+Betrayal --> BrokenRelationships[Broken Relationships]
+Betrayal --> Fear
+Betrayal --> LastingWounds[Lasting Wounds]
+
+Bitterness --> Hatred
+Bitterness --> Revenge
+Bitterness --> Apathy
+
+BrokenRelationships --> Apathy
+BrokenRelationships --> Conflict
+BrokenRelationships --> Destruction
+
+Conflict --> Destruction
+Conflict --> Hatred
+Conflict --> Violence
+
+Cowardice --> Failure
+Cowardice --> Apathy
+Cowardice --> Bitterness
+
+Cruelty --> Suffering
+Cruelty --> Conflict
+Cruelty --> Destruction
+
+Decay --> Destruction
+Decay --> Apathy
+Decay --> Despair
+
+Deception --> Betrayal
+Destruction --> Decay
+Destruction --> Despair
+Destruction --> Fear
+Destruction --> Suffering
+Division --> Betrayal
+Division --> Conflict
+Failure --> Bitterness
+Failure --> Despair
+Failure --> Hopelessness
+Folly --> Ignorance
+Folly --> Failure
+Hopelessness --> Apathy
+Hopelessness --> Cowardice
+Hopelessness --> Despair
+Hopelessness --> Failure
+Ignorance --> Bitterness
+Ignorance --> Folly
+Ignorance --> Suffering
+LastingWounds --> Bitterness
+LastingWounds --> Hatred
+Rebellion --> Conflict
+Rebellion --> Destruction
+Revenge --> Hatred
+Revenge --> Violence
+Suffering --> Bitterness
+Suffering --> Conflict
+Suffering --> Decay
+Suffering --> Despair
+Suffering --> Hatred
+Suffering --> Revenge
+Violence --> Destruction
+Violence --> Suffering
+
+%% TO BE SORTED
+Fear --> Cowardice
+Fear --> Betrayal
+Fear --> Despair
+
+Envy --> Bitterness
+Envy --> Conflict
+Envy --> Hatred
