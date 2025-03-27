@@ -1,5 +1,3 @@
-
-
 // Helper function to get discipline level for any career
 function getCareerDiscipline(careerName) {
   if (
@@ -121,9 +119,9 @@ function updateTotalTerms() {
   updateTotalYears();
 }
 
-// Update specialization options based on selected skill
-function updateSpecializationOptions(sourceId = "skillSearch") {
-  // Get the skill name from the appropriate input field based on sourceId
+// Update specialization options based on selected skill - simplify and make more robust
+function updateSpecializationOptions(sourceId = "skillSearch", datalistId = "specialization-list") {
+  // Get the skill name from the input field
   const skillInput = document.getElementById(sourceId);
   if (!skillInput) {
     console.error(`Input element with ID '${sourceId}' not found`);
@@ -133,25 +131,30 @@ function updateSpecializationOptions(sourceId = "skillSearch") {
   const skillName = skillInput.value;
   if (!skillName) return;
   
-  const specList = document.getElementById("specialization-list");
+  // Get or create the datalist element
+  let specList = document.getElementById(datalistId);
   if (!specList) {
-    console.error("Specialization datalist not found");
-    return;
+    specList = document.createElement("datalist");
+    specList.id = datalistId;
+    document.body.appendChild(specList);
+    console.log(`Created new datalist with ID: ${datalistId}`);
   }
   
   // Clear existing options
   specList.innerHTML = "";
   
   // Add specializations if they exist for this skill
-  if (skillSpecializations[skillName]?.length > 0) {
+  if (skillSpecializations[skillName] && skillSpecializations[skillName].length > 0) {
     const sortedSpecs = [...skillSpecializations[skillName]].sort();
-    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName} (source: ${sourceId})`);
+    console.log(`Adding ${sortedSpecs.length} specializations for ${skillName}`);
     
     sortedSpecs.forEach(spec => {
       const option = document.createElement("option");
       option.value = spec;
       specList.appendChild(option);
     });
+  } else {
+    console.log(`No specializations found for skill: ${skillName}`);
   }
 }
 
@@ -630,7 +633,8 @@ function saveCharacter() {
         return {
           skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
           specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
-          weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent')
+          weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent'),
+          weeksTotal: row.querySelector('td[data-weeks-total]').getAttribute('data-weeks-total')
         };
       })
   };
@@ -929,15 +933,19 @@ function loadCharacter() {
 
     // Load training skills if they exist
     if (character.trainingSkills && character.trainingSkills.length) {
+      document.getElementById("training-skills-container").innerHTML = ""; // Clear existing
+      
       character.trainingSkills.forEach(skill => {
-        // Handle both old format (with weeksRequired/weeksComplete) and new format (with weeksSpent)
-        const weeksSpent = skill.weeksSpent || skill.weeksComplete || skill.weeksRequired || 1;
+        // Handle both legacy format and new format
+        const weeksSpent = skill.weeksSpent || skill.weeksComplete || "1";
+        const weeksTotal = skill.weeksTotal || "8"; // Default to 8 weeks if not specified in older saves
         
         const row = document.createElement("tr");
         row.innerHTML = `
           <td data-skill="${skill.skill}">${skill.skill}</td>
           <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
           <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
+          <td data-weeks-total="${weeksTotal}">${weeksTotal}</td>
           <td class="no-print">
             <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
             <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -1152,106 +1160,52 @@ function addCareer() {
   updateTotalYears();
 }
 
-// Initialize career dropdown on page load
+// Consolidate the DOM ready handler for better organization
 document.addEventListener("DOMContentLoaded", function () {
-  // ...existing initialization code...
-
-  // Add event listener for career terms to suggest ranks
-  document.getElementById("careerTerms").addEventListener("input", suggestRank);
-});
-
-// Update the saveCharacter function to save careers with assignments
-const originalSaveCharacter = saveCharacter;
-
-saveCharacter = function () {
-  const character = {
-    // ...existing character data...
-
-    // Get career details with assignments
-    careers: Array.from(
-      document.getElementById("careers-container").querySelectorAll("tr")
-    )
-      .map((row) => {
-        const cells = row.querySelectorAll("td");
-        if (cells.length < 5) return null;
-        return {
-          career: cells[0].getAttribute("data-career") || cells[0].textContent,
-          assignment:
-            cells[1].getAttribute("data-assignment") || cells[1].textContent,
-          terms: cells[2].getAttribute("data-terms") || cells[2].textContent,
-          rank: cells[3].getAttribute("data-rank") || cells[3].textContent,
-          benefits:
-            cells[4].getAttribute("data-benefits") || cells[4].textContent,
-        };
-      })
-      .filter((c) => c !== null),
-
-    // ...rest of character data...
-  };
-
-  // Store in localStorage
+  console.log("DOM loaded, initializing character sheet...");
+  
   try {
-    localStorage.setItem("traveller-character", JSON.stringify(character));
-    alert("Character saved successfully!");
-  } catch (e) {
-    console.error("Save failed:", e);
-    alert("Failed to save character. Error: " + e.message);
-  }
-};
-
-// Update the loadCharacter function to load careers with assignments
-const originalLoadCharacter = loadCharacter;
-
-loadCharacter = function () {
-  try {
-    const savedCharacter = localStorage.getItem("traveller-character");
-    if (!savedCharacter) {
-      alert("No saved character found.");
-      return;
+    // Initialize all character sheet components
+    initializeCharacterSheet();
+    
+    // Directly initialize all dropdowns to ensure they work
+    initializeDropdowns();
+    
+    // Update education buttons initial state
+    updateEducationButtons();
+    
+    // Initialize wealth display
+    if (typeof updateWealthDisplay === "function") {
+      updateWealthDisplay();
     }
-
-    const character = JSON.parse(savedCharacter);
-
-    // Clear existing careers
-    document.getElementById("careers-container").innerHTML = "";
-
-    // Load careers if they exist
-    if (character.careers && character.careers.length) {
-      character.careers.forEach((careerData) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-                            <td data-career="${careerData.career}">${
-          careerData.career
-        }</td>
-                            <td data-assignment="${
-                              careerData.assignment || ""
-                            }">${careerData.assignment || ""}</td>
-                            <td data-terms="${careerData.terms}">${
-          careerData.terms
-        }</td>
-                            <td data-rank="${careerData.rank}">${
-          careerData.rank
-        }</td>
-                            <td data-benefits="${careerData.benefits}">${
-          careerData.benefits
-        }</td>
-                            <td class="no-print">
-                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
-                            </td>
-                        `;
-        document.getElementById("careers-container").appendChild(row);
+    
+    // Connect skill search fields to update specializations
+    const skillSearch = document.getElementById("skillSearch");
+    if (skillSearch) {
+      skillSearch.addEventListener("input", function() {
+        updateSpecializationOptions("skillSearch", "specialization-list");
       });
-
-      updateTotalTerms();
+      console.log("Added input handler to skillSearch field");
     }
-
-    // Call the original function to load other data
-    originalLoadCharacter();
+    
+    // Connect training skill field if it exists
+    const trainingSkillName = document.getElementById("trainingSkillName");
+    if (trainingSkillName) {
+      trainingSkillName.setAttribute("list", "skill-list");
+      trainingSkillName.addEventListener("input", function() {
+        updateSpecializationOptions("trainingSkillName", "specialization-list");
+      });
+    }
+    
+    // Connect promotions input to rank suggestions
+    const careerPromotionsElement = document.getElementById("careerPromotions");
+    if (careerPromotionsElement) {
+      careerPromotionsElement.addEventListener("input", suggestRank);
+    }
   } catch (e) {
-    console.error("Load failed:", e);
-    alert("Failed to load character. Error: " + e.message);
+    console.error("Error in initialization:", e);
   }
-};
+});
 
 // Create a comprehensive initialization function
 function initializeCharacterSheet() {
@@ -1607,10 +1561,11 @@ function initializeSkillsDropdownDirect() {
   console.log(`Skills dropdown initialized with ${commonSkills.length} options`);
 }
 
-// Direct initialization of specializations dropdown
+// Direct initialization of specializations dropdown - Fix the erroneous trainingSkillSearch reference
 function initializeSpecializationsDropdownDirect() {
   console.log("Directly initializing specialization dropdown...");
   
+  // Connect the main skill specialization fields
   const specField = document.getElementById("specializationField");
   if (!specField) {
     console.error("Could not find specializationField input element");
@@ -1635,14 +1590,33 @@ function initializeSpecializationsDropdownDirect() {
   const skillSearch = document.getElementById("skillSearch");
   if (skillSearch) {
     // Remove any existing listeners to prevent duplicates
-    skillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
+    skillSearch.removeEventListener("input", updateSpecializationOptions);
     
-    // Add the event listener
+    // Add proper event listener that updates the correct datalist
     skillSearch.addEventListener("input", function() {
-      updateSpecializationOptions("trainingSkillSearch");
+      updateSpecializationOptions("skillSearch", "specialization-list");
     });
     
-    console.log("Training skills search connected to skill list and event handler");
+    console.log("Main skill search connected to specialization datalist");
+  }
+  
+  // Also connect the training skill fields if they exist
+  const trainingSkillName = document.getElementById("trainingSkillName");
+  const trainingSpecialization = document.getElementById("trainingSpecialization");
+  
+  if (trainingSkillName && trainingSpecialization) {
+    // Connect training skill to the same skill list
+    trainingSkillName.setAttribute("list", "skill-list");
+    
+    // Connect training specialization to the specialization list
+    trainingSpecialization.setAttribute("list", "specialization-list");
+    
+    // Add event listener for training skill selection
+    trainingSkillName.addEventListener("input", function() {
+      updateSpecializationOptions("trainingSkillName", "specialization-list");
+    });
+    
+    console.log("Training skill fields connected to datalists");
   }
 }
 
@@ -1675,203 +1649,8 @@ function initializeCareerDropdownDirect() {
   console.log(`Career dropdown initialized with ${mgt2Careers.length} options`);
 }
 
-// Improved updateSpecializationOptions function
-function updateSpecializationOptions() {
-  const skillName = document.getElementById("skillSearch").value;
-  const specList = document.getElementById("specialization-list");
-  if (!specList) {
-    console.error("Specialization datalist not found");
-    return;
-  }
-
-  // Clear existing options
-  while (specList.firstChild) {
-    specList.removeChild(specList.firstChild);
-  }
-
-  // If we have specializations for this skill, add them
-  if (skillSpecializations[skillName]) {
-    const sortedSpecs = [...skillSpecializations[skillName]].sort();
-    console.log(
-      `Adding ${sortedSpecs.length} specializations for ${skillName}`
-    );
-
-    sortedSpecs.forEach((spec) => {
-      const option = document.createElement("option");
-      option.value = spec;
-      specList.appendChild(option);
-    });
-  }
-}
-
-// Improved updateAssignments function
-function updateAssignments() {
-  const careerName = document.getElementById("careerName").value;
-  const assignmentSelect = document.getElementById("careerAssignment");
-
-  if (!assignmentSelect) {
-    console.error("Could not find careerAssignment select element");
-    return;
-  }
-
-  console.log(`Updating assignments for career: ${careerName}`);
-
-  // Clear current options
-  assignmentSelect.innerHTML = '<option value="">Select Assignment...</option>';
-
-  // If no career is selected, just return
-  if (!careerName) {
-    return;
-  }
-
-  // Check if career exists in our data
-  if (careerData[careerName] && careerData[careerName].assignments) {
-    const assignments = Object.keys(careerData[careerName].assignments);
-    console.log(`Found ${assignments.length} assignments for ${careerName}`);
-
-    // Add assignments in alphabetical order
-    assignments.sort().forEach((assignment) => {
-      const option = document.createElement("option");
-      option.value = assignment;
-      option.textContent = assignment;
-      assignmentSelect.appendChild(option);
-    });
-  } else {
-    console.warn(`No assignment data found for career: ${careerName}`);
-  }
-
-  // Clear and update rank field
-  document.getElementById("careerRank").value = "";
-  suggestRank();
-}
-
-// Make sure initialization happens after DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM fully loaded, initializing character sheet...");
-  setTimeout(initializeCharacterSheet, 0); // Use setTimeout to ensure DOM is ready
-});
-
-// ...existing code...
-
-// Add this function to directly initialize the dropdown elements without relying on dynamic creation
-function initializeDropdowns() {
-  console.log("Initializing all dropdowns...");
-  
-  // Initialize skills dropdown first
-  initializeSkillsDropdownDirect();
-  
-  // Initialize specializations
-  initializeSpecializationsDropdownDirect();
-  
-  // Initialize career dropdown
-  initializeCareerDropdownDirect();
-  
-  console.log("All dropdowns initialized");
-}
-
-// Direct initialization of skills dropdown that doesn't rely on dynamic creation
-function initializeSkillsDropdownDirect() {
-  console.log("Directly initializing skills dropdown...");
-  
-  const skillSearch = document.getElementById("skillSearch");
-  if (!skillSearch) {
-    console.error("Could not find skillSearch input element");
-    return;
-  }
-  
-  // Create datalist element
-  let skillList = document.getElementById("skill-list");
-  if (!skillList) {
-    skillList = document.createElement("datalist");
-    skillList.id = "skill-list";
-    document.body.appendChild(skillList);
-  } else {
-    // Clear existing options
-    skillList.innerHTML = "";
-  }
-  
-  // Add options to datalist
-  commonSkills.sort().forEach(skill => {
-    const option = document.createElement("option");
-    option.value = skill;
-    skillList.appendChild(option);
-  });
-  
-  // Connect input to datalist
-  skillSearch.setAttribute("list", "skill-list");
-  console.log(`Skills dropdown initialized with ${commonSkills.length} options`);
-}
-
-// Direct initialization of specializations dropdown
-function initializeSpecializationsDropdownDirect() {
-  console.log("Directly initializing specialization dropdown...");
-  
-  const specField = document.getElementById("specializationField");
-  if (!specField) {
-    console.error("Could not find specializationField input element");
-    return;
-  }
-  
-  // Create datalist element
-  let specList = document.getElementById("specialization-list");
-  if (!specList) {
-    specList = document.createElement("datalist");
-    specList.id = "specialization-list";
-    document.body.appendChild(specList);
-  } else {
-    // Clear existing options
-    specList.innerHTML = "";
-  }
-  
-  // Connect input to datalist
-  specField.setAttribute("list", "specialization-list");
-  
-  // Add event listener for skill selection to update specializations
-  const skillSearch = document.getElementById("skillSearch");
-  if (skillSearch) {
-    // Remove any existing listeners to prevent duplicates
-    skillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
-    
-    // Add the event listener
-    skillSearch.addEventListener("input", function() {
-      updateSpecializationOptions("trainingSkillSearch");
-    });
-    
-    console.log("Training skills search connected to skill list and event handler");
-  }
-}
-
-// Direct initialization of career dropdown
-function initializeCareerDropdownDirect() {
-  console.log("Directly initializing career dropdown...");
-  
-  const careerSelect = document.getElementById("careerName");
-  if (!careerSelect) {
-    console.error("Could not find careerName select element");
-    return;
-  }
-  
-  // Clear existing options except first one
-  while (careerSelect.options.length > 1) {
-    careerSelect.remove(1);
-  }
-  
-  // Add career options in alphabetical order
-  mgt2Careers.sort().forEach(career => {
-    const option = document.createElement("option");
-    option.value = career;
-    option.textContent = career;
-    careerSelect.appendChild(option);
-  });
-  
-  // Add event listener for career selection
-  careerSelect.removeEventListener("change", updateAssignments);
-  careerSelect.addEventListener("change", updateAssignments);
-  console.log(`Career dropdown initialized with ${mgt2Careers.length} options`);
-}
-
-// Modified updateSpecializationOptions function to properly handle different source inputs
-function updateSpecializationOptions(sourceId = "skillSearch") {
+// Improved updateSpecializationOptions function to handle different source inputs and datalists
+function updateSpecializationOptions(sourceId = "skillSearch", datalistId = "specialization-list") {
   // Get the skill name from the appropriate input field based on sourceId
   const skillInput = document.getElementById(sourceId);
   if (!skillInput) {
@@ -1882,9 +1661,9 @@ function updateSpecializationOptions(sourceId = "skillSearch") {
   const skillName = skillInput.value;
   if (!skillName) return;
   
-  const specList = document.getElementById("specialization-list");
+  const specList = document.getElementById(datalistId);
   if (!specList) {
-    console.error("Specialization datalist not found");
+    console.error(`Specialization datalist with ID '${datalistId}' not found`);
     return;
   }
   
@@ -1909,82 +1688,82 @@ document.addEventListener("DOMContentLoaded", function() {
   // ...existing code...
   
   // Connect the training skill inputs to the same skill and specialization lists
-  const trainingSkillSearch = document.getElementById("trainingSkillSearch");
-  const trainingSpecField = document.getElementById("trainingSpecializationField");
+  const trainingSkillName = document.getElementById("trainingSkillName");
+  const trainingSpecialization = document.getElementById("trainingSpecialization");
   
-  if (trainingSkillSearch) {
-    trainingSkillSearch.setAttribute("list", "skill-list");
+  if (trainingSkillName) {
+    trainingSkillName.setAttribute("list", "skill-list");
     
-    // Remove any existing listeners to prevent duplicates
-    trainingSkillSearch.removeEventListener("input", updateTrainingSpecializationOptions);
-    
-    // Add the event listener
-    trainingSkillSearch.addEventListener("input", function() {
-      updateSpecializationOptions("trainingSkillSearch");
+    // Add proper event handler for training skill name
+    trainingSkillName.addEventListener("input", function() {
+      updateSpecializationOptions("trainingSkillName", "specialization-list");
     });
     
-    console.log("Training skills search connected to skill list and event handler");
+    console.log("Training skill name connected to skill list");
   }
   
-  if (trainingSpecField) {
-    trainingSpecField.setAttribute("list", "specialization-list");
-    console.log("Training specialization field connected to specialization list");
+  if (trainingSpecialization) {
+    trainingSpecialization.setAttribute("list", "specialization-list");
+    console.log("Training specialization connected to specialization list");
   }
 });
 
-// We can simplify this function as it's now just a pass-through
-function updateTrainingSpecializationOptions() {
-  updateSpecializationOptions("trainingSkillSearch");
-}
+// Remove this function as it's now obsolete and causing errors
+// function updateTrainingSpecializationOptions() {
+//   updateSpecializationOptions("trainingSkillSearch", "training-specialization-list");
+// }
 
-// Make sure initialization happens immediately and reliably
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM loaded, initializing character sheet components...");
+// Fix the consolidated DOM ready handler to remove errors
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM loaded, initializing character sheet...");
   
-  // Initialize all character sheet components
-  initializeCharacterSheet();
-  
-  // Directly initialize all dropdowns to ensure they work
-  initializeDropdowns();
-  
-  // Update education buttons initial state
-  updateEducationButtons();
-  
-  // Initialize wealth display
-  updateWealthInfoDisplay();
-});
-
-// Add a fallback initialization that runs after window load
-window.addEventListener("load", function() {
-  console.log("Window loaded, checking if dropdowns need reinitialization...");
-  
-  // Check if our dropdowns are working, if not reinitialize
-  const skillList = document.getElementById("skill-list");
-  const specList = document.getElementById("specialization-list");
-  
-  if (!skillList || !specList || skillList.children.length === 0) {
-    console.log("Dropdowns not properly initialized, reinitializing now...");
+  try {
+    // Initialize all character sheet components
+    initializeCharacterSheet();
+    
+    // Directly initialize all dropdowns to ensure they work
     initializeDropdowns();
+    
+    // Update education buttons initial state
+    updateEducationButtons();
+    
+    // Initialize wealth display
+    if (typeof updateWealthDisplay === "function") {
+      updateWealthDisplay();
+    }
+    
+    // Connect skill search fields to update specializations - fixed
+    const skillSearch = document.getElementById("skillSearch");
+    if (skillSearch) {
+      skillSearch.addEventListener("input", function() {
+        updateSpecializationOptions("skillSearch", "specialization-list");
+      });
+    }
+    
+    // Connect training skill field - fixed
+    const trainingSkillName = document.getElementById("trainingSkillName");
+    if (trainingSkillName) {
+      trainingSkillName.addEventListener("input", function() {
+        updateSpecializationOptions("trainingSkillName", "specialization-list");
+      });
+    }
+    
+    // Connect promotions input to rank suggestions
+    const careerPromotionsElement = document.getElementById("careerPromotions");
+    if (careerPromotionsElement) {
+      careerPromotionsElement.addEventListener("input", suggestRank);
+    }
+  } catch (e) {
+    console.error("Error in initialization:", e);
   }
 });
-
-// Fix the original initializeSkillsDropdown function to be more robust
-function initializeSkillsDropdown() {
-  // Now just call our direct initialization function
-  initializeSkillsDropdownDirect();
-}
-
-// Fix the original initializeCareerDropdown function to be more robust
-function initializeCareerDropdown() {
-  // Now just call our direct initialization function
-  initializeCareerDropdownDirect();
-}
 
 // Add function to create a new skill in training - simplified version without weeks complete
 function addTrainingSkill() {
-  const skillName = document.getElementById("trainingSkillSearch").value;
-  const specialization = document.getElementById("trainingSpecializationField").value;
-  const weeksSpent = document.getElementById("trainingWeeks").value || 1;
+  const skillName = document.getElementById("trainingSkillName").value;
+  const specialization = document.getElementById("trainingSpecialization").value;
+  const weeksSpent = document.getElementById("trainingWeeksSpent").value || 1;
+  const weeksTotal = document.getElementById("trainingWeeksTotal").value || 8;
 
   if (!skillName) {
     alert("Please enter a skill name for training");
@@ -1997,6 +1776,7 @@ function addTrainingSkill() {
     <td data-skill="${skillName}">${skillName}</td>
     <td data-specialization="${specialization}">${specialization || "-"}</td>
     <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
+    <td data-weeks-total="${weeksTotal}">${weeksTotal}</td>
     <td class="no-print">
       <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
       <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -2006,9 +1786,10 @@ function addTrainingSkill() {
   trainingContainer.appendChild(row);
 
   // Clear inputs
-  document.getElementById("trainingSkillSearch").value = "";
-  document.getElementById("trainingSpecializationField").value = "";
-  document.getElementById("trainingWeeks").value = "1";
+  document.getElementById("trainingSkillName").value = "";
+  document.getElementById("trainingSpecialization").value = "";
+  document.getElementById("trainingWeeksSpent").value = "1";
+  document.getElementById("trainingWeeksTotal").value = "8";
 }
 
 // Updated function to mark a skill training as complete
@@ -2019,10 +1800,11 @@ function completeTraining(button) {
   const skillName = row.querySelector('td[data-skill]').getAttribute('data-skill');
   const specialization = row.querySelector('td[data-specialization]').getAttribute('data-specialization');
   const weeksSpent = parseInt(row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent'));
+  const weeksTotal = parseInt(row.querySelector('td[data-weeks-total]').getAttribute('data-weeks-total'));
   
-  // Check if enough training time has been spent (minimum 8 weeks is standard in Traveller)
-  if (weeksSpent < 8) {
-    alert(`Training not yet complete. You've spent ${weeksSpent} weeks, but typically need at least 8 weeks.`);
+  // Check if enough training time has been spent
+  if (weeksSpent < weeksTotal) {
+    alert(`Training not yet complete. You've spent ${weeksSpent} of ${weeksTotal} required weeks.`);
     return;
   }
   
@@ -2035,40 +1817,210 @@ function completeTraining(button) {
   alert(`Training complete! ${skillName}${specialization !== "-" ? ` (${specialization})` : ""} has been added to your skills.`);
 }
 
-// Update the save character function to include simplified skills in training
-const originalSaveCharacterWithTraining = saveCharacter;
-saveCharacter = function() {
-  // Get the existing character data or create new object
-  let character = {};
-  try {
-    const savedCharacter = localStorage.getItem("traveller-character");
-    if (savedCharacter) {
-      character = JSON.parse(savedCharacter);
-    }
-  } catch (e) {
-    console.error("Error parsing saved character:", e);
-  }
-  
-  // Add training skills to the character data with simplified structure
-  character.trainingSkills = Array.from(
-    document.getElementById("training-skills-container").querySelectorAll("tr")
-  )
-    .map(row => {
-      return {
-        skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
-        specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
-        weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent')
-      };
-    });
-  
-  // Store in localStorage
-  localStorage.setItem("traveller-character", JSON.stringify(character));
-  alert("Character saved successfully!");
-};
+// Update the save character function to include the weeks total field
+function saveCharacter() {
+  const character = {
+    // Basic info
+    charName: document.getElementById("charName").value,
+    species: document.getElementById("species").value,
+    age: document.getElementById("age").value,
 
-// Update the load character function to load simplified skills in training
-const originalLoadCharacterWithTraining = loadCharacter;
-loadCharacter = function() {
+    // Get pre-career options details (updated from education)
+    preCareerOptions: Array.from(
+      document.getElementById("education-container").querySelectorAll("tr")
+    )
+      .map((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 4) return null;
+        return {
+          type: cells[0].getAttribute("data-type") || cells[0].textContent,
+          years: cells[1].getAttribute("data-years") || cells[1].textContent,
+          outcome:
+            cells[2].getAttribute("data-outcome") || cells[2].textContent,
+          benefits:
+            cells[3].getAttribute("data-benefits") || cells[3].textContent,
+        };
+      })
+      .filter((e) => e !== null),
+
+    // Get career details with assignments and years
+    careers: Array.from(
+      document.getElementById("careers-container").querySelectorAll("tr")
+    )
+      .map((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 6) return null;
+        return {
+          career: cells[0].getAttribute("data-career") || cells[0].textContent,
+          assignment:
+            cells[1].getAttribute("data-assignment") || cells[1].textContent,
+          promotions: cells[2].getAttribute("data-promotions") || cells[2].textContent,
+          years: cells[3].getAttribute("data-years") || cells[3].textContent,
+          rank: cells[4].getAttribute("data-rank") || cells[4].textContent,
+          benefits:
+            cells[5].getAttribute("data-benefits") || cells[5].textContent,
+        };
+      })
+      .filter((c) => c !== null),
+
+    // Characteristics - updated to store both current and baseline
+    characteristics: {
+      str: {
+        current: document.getElementById("str-current").value,
+        baseline: document.getElementById("str-baseline").value,
+      },
+      dex: {
+        current: document.getElementById("dex-current").value,
+        baseline: document.getElementById("dex-baseline").value,
+      },
+      end: {
+        current: document.getElementById("end-current").value,
+        baseline: document.getElementById("end-baseline").value,
+      },
+      int: {
+        current: document.getElementById("int-current").value,
+        baseline: document.getElementById("int-baseline").value,
+      },
+      edu: {
+        current: document.getElementById("edu-current").value,
+        baseline: document.getElementById("edu-baseline").value,
+      },
+      soc: {
+        current: document.getElementById("soc-current").value,
+        baseline: document.getElementById("soc-baseline").value,
+      },
+
+      // Additional characteristics
+      psi: {
+        current: document.getElementById("psi-current").value,
+        baseline: document.getElementById("psi-baseline").value,
+      },
+      wlt: {
+        current: document.getElementById("wlt-current").value,
+        baseline: document.getElementById("wlt-baseline").value,
+      },
+      lck: {
+        current: document.getElementById("lck-current").value,
+        baseline: document.getElementById("lck-baseline").value,
+      },
+      mrl: {
+        current: document.getElementById("mrl-current").value,
+        baseline: document.getElementById("mrl-baseline").value,
+      },
+      sty: {
+        current: document.getElementById("sty-current").value,
+        baseline: document.getElementById("sty-baseline").value,
+      },
+      std: {
+        current: document.getElementById("std-current").value,
+        baseline: document.getElementById("std-baseline").value,
+      },
+      chr: {
+        current: document.getElementById("chr-current").value,
+        baseline: document.getElementById("chr-baseline").value,
+      },
+    },
+
+    // Finances
+    credits: document.getElementById("credits").value,
+    pension: document.getElementById("pension").value,
+    debt: document.getElementById("debt").value,
+    cashOnHand: document.getElementById("cashOnHand").value,
+    livingCosts: document.getElementById("livingCosts").value,
+    shipPayments: document.getElementById("shipPayments").value,
+    shipCosts: document.getElementById("shipCosts").value, // Add this line
+
+    // Notes
+    notes: document.getElementById("notes").value,
+
+    // Skills
+    skills: Array.from(document.querySelectorAll(".skill-item")).map((item) => {
+      const skillElement = item.querySelector(".skill-name");
+      return {
+        name: skillElement.getAttribute("data-skill"),
+        specialization: skillElement.getAttribute("data-specialization"),
+        level: item.querySelector("input").value,
+      };
+    }),
+
+    // Weapons
+    weapons: Array.from(
+      document.getElementById("weapons-container").querySelectorAll("tr")
+    )
+      .map((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 7) return null;
+        return {
+          name: cells[0].textContent,
+          tl: cells[1].textContent,
+          skill: cells[2].querySelector("input")
+            ? cells[2].querySelector("input").value
+            : "",
+          damage: cells[3].textContent,
+          range: cells[4].textContent,
+          weight: cells[5].textContent,
+          magazine: cells[6].textContent,
+        };
+      })
+      .filter((w) => w !== null),
+
+    // Armor
+    armor: Array.from(
+      document.getElementById("armor-container").querySelectorAll("tr")
+    )
+      .map((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 4) return null;
+        return {
+          name: cells[0].textContent,
+          rating: cells[1].textContent,
+          tl: cells[2].textContent,
+          radiation: cells[3].textContent,
+        };
+      })
+      .filter((a) => a !== null),
+
+    // Equipment
+    equipment: Array.from(
+      document.getElementById("equipment-container").querySelectorAll("tr")
+    )
+      .map((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 4) return null;
+        return {
+          name: cells[0].textContent,
+          tl: cells[1].textContent,
+          mass: cells[2].textContent,
+          cost: cells[3].textContent,
+        };
+      })
+      .filter((e) => e !== null),
+
+    // Skills in Training
+    trainingSkills: Array.from(
+      document.getElementById("training-skills-container").querySelectorAll("tr")
+    )
+      .map(row => {
+        return {
+          skill: row.querySelector('td[data-skill]').getAttribute('data-skill'),
+          specialization: row.querySelector('td[data-specialization]').getAttribute('data-specialization'),
+          weeksSpent: row.querySelector('td[data-weeks-spent]').getAttribute('data-weeks-spent'),
+          weeksTotal: row.querySelector('td[data-weeks-total]').getAttribute('data-weeks-total')
+        };
+      })
+  };
+
+  try {
+    localStorage.setItem("traveller-character", JSON.stringify(character));
+    alert("Character saved successfully!");
+  } catch (e) {
+    console.error("Save failed:", e);
+    alert("Failed to save character. Error: " + e.message);
+  }
+}
+
+// Update the load character function to load the weeks total field
+function loadCharacter() {
   try {
     const savedCharacter = localStorage.getItem("traveller-character");
     if (!savedCharacter) {
@@ -2078,20 +2030,293 @@ loadCharacter = function() {
 
     const character = JSON.parse(savedCharacter);
 
-    // Clear existing training skills
-    document.getElementById("training-skills-container").innerHTML = "";
+    // Basic info
+    document.getElementById("charName").value = character.charName || "";
+    document.getElementById("species").value = character.species || "Human";
+    document.getElementById("age").value = character.age || "18";
+
+    // Clear existing education entries
+    document.getElementById("education-container").innerHTML = "";
+
+    // Load pre-career options data if it exists
+    if (character.preCareerOptions && character.preCareerOptions.length) {
+      character.preCareerOptions.forEach((optionData) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                            <td data-type="${optionData.type}">${optionData.type}</td>
+                            <td data-years="${optionData.years}">${optionData.years}</td>
+                            <td data-outcome="${optionData.outcome}">${optionData.outcome}</td>
+                            <td data-benefits="${optionData.benefits}">${optionData.benefits}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
+                            </td>
+                        `;
+        document.getElementById("education-container").appendChild(row);
+      });
+    }
+    // Legacy support for old education format
+    else if (character.education && character.education.length) {
+      character.education.forEach((educationData) => {
+        // Convert old format to new format
+        const outcome = educationData.qualification || "Graduate";
+        const benefits = educationData.skills || "";
+
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                            <td data-type="${educationData.type}">${educationData.type}</td>
+                            <td data-years="${educationData.years}">${educationData.years}</td>
+                            <td data-outcome="${outcome}">${outcome}</td>
+                            <td data-benefits="${benefits}">${benefits}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
+                            </td>
+                        `;
+        document.getElementById("education-container").appendChild(row);
+      });
+    }
+
+    // Update button state after loading
+    updateEducationButtons();
+
+    // Clear existing careers
+    document.getElementById("careers-container").innerHTML = "";
+
+    // Load careers if they exist
+    if (character.careers && character.careers.length) {
+      character.careers.forEach((careerData) => {
+        const row = document.createElement("tr");
+        
+        // Support both new format (with years) and old format (terms only)
+        const years = careerData.years || (careerData.terms * 4).toString();
+        const promotions = careerData.promotions || careerData.terms || "0";
+        
+        row.innerHTML = `
+          <td data-career="${careerData.career}">${careerData.career}</td>
+          <td data-assignment="${careerData.assignment || ""}">${careerData.assignment || ""}</td>
+          <td data-promotions="${promotions}">${promotions}</td>
+          <td data-years="${years}">${years}</td>
+          <td data-rank="${careerData.rank}">${careerData.rank}</td>
+          <td data-benefits="${careerData.benefits}">${careerData.benefits}</td>
+          <td class="no-print">
+              <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
+          </td>
+        `;
+        document.getElementById("careers-container").appendChild(row);
+      });
+
+      updateTotalYears();
+    }
+
+    // Update to load characteristics with current and baseline values
+    if (character.characteristics) {
+      const chars = character.characteristics;
+
+      // Load the main characteristics
+      if (chars.str) {
+        document.getElementById("str-current").value = chars.str.current || "7";
+        document.getElementById("str-baseline").value =
+          chars.str.baseline || "7";
+      }
+      if (chars.dex) {
+        document.getElementById("dex-current").value = chars.dex.current || "7";
+        document.getElementById("dex-baseline").value =
+          chars.dex.baseline || "7";
+      }
+      if (chars.end) {
+        document.getElementById("end-current").value = chars.end.current || "7";
+        document.getElementById("end-baseline").value =
+          chars.end.baseline || "7";
+      }
+      if (chars.int) {
+        document.getElementById("int-current").value = chars.int.current || "7";
+        document.getElementById("int-baseline").value =
+          chars.int.baseline || "7";
+      }
+      if (chars.edu) {
+        document.getElementById("edu-current").value = chars.edu.current || "7";
+        document.getElementById("edu-baseline").value =
+          chars.edu.baseline || "7";
+      }
+      if (chars.soc) {
+        document.getElementById("soc-current").value = chars.soc.current || "7";
+        document.getElementById("soc-baseline").value =
+          chars.soc.baseline || "7";
+      }
+
+      // Load additional characteristics
+      if (chars.psi) {
+        document.getElementById("psi-current").value = chars.psi.current || "7";
+        document.getElementById("psi-baseline").value =
+          chars.psi.baseline || "7";
+      }
+      if (chars.wlt) {
+        document.getElementById("wlt-current").value = chars.wlt.current || "7";
+        document.getElementById("wlt-baseline").value =
+          chars.wlt.baseline || "7";
+      }
+      if (chars.lck) {
+        document.getElementById("lck-current").value = chars.lck.current || "7";
+        document.getElementById("lck-baseline").value =
+          chars.lck.baseline || "7";
+      }
+      if (chars.mrl) {
+        document.getElementById("mrl-current").value = chars.mrl.current || "7";
+        document.getElementById("mrl-baseline").value =
+          chars.mrl.baseline || "7";
+      }
+      if (chars.sty) {
+        document.getElementById("sty-current").value = chars.sty.current || "7";
+        document.getElementById("sty-baseline").value =
+          chars.sty.baseline || "7";
+      }
+      if (chars.std) {
+        document.getElementById("std-current").value = chars.std.current || "7";
+        document.getElementById("std-baseline").value =
+          chars.std.baseline || "7";
+      }
+      if (chars.chr) {
+        document.getElementById("chr-current").value = chars.chr.current || "7";
+        document.getElementById("chr-baseline").value =
+          chars.chr.baseline || "7";
+      }
+
+      // Update all DMs after setting characteristics
+      updateDM("str");
+      updateDM("dex");
+      updateDM("end");
+      updateDM("int");
+      updateDM("edu");
+      updateDM("soc");
+
+      // Update DMs for additional characteristics
+      updateDM("psi");
+      updateDM("wlt");
+      updateDM("lck");
+      updateDM("mrl");
+      updateDM("sty");
+      updateDM("std");
+      updateDM("chr");
+    } else {
+      // Legacy support for characters without dual values
+      // ...load from old format if available...
+    }
+
+    // Finances
+    document.getElementById("credits").value = character.credits || "0";
+    document.getElementById("pension").value = character.pension || "0";
+    document.getElementById("debt").value = character.debt || "0";
+    document.getElementById("cashOnHand").value = character.cashOnHand || "0";
+    document.getElementById("livingCosts").value = character.livingCosts || "0";
+    document.getElementById("shipPayments").value =
+      character.shipPayments || "0";
+    document.getElementById("shipCosts").value = character.shipCosts || "0"; // Add this line
+
+    // Notes
+    document.getElementById("notes").value = character.notes || "";
+
+    // Clear existing items
+    document.getElementById("skills-container").innerHTML = "";
+    document.getElementById("weapons-container").innerHTML = "";
+    document.getElementById("armor-container").innerHTML = "";
+    document.getElementById("equipment-container").innerHTML = "";
+
+    // Skills with specialization support
+    if (character.skills && character.skills.length) {
+      character.skills.forEach((skill) => {
+        const skillDiv = document.createElement("div");
+        skillDiv.className = "skill-item";
+        skillDiv.innerHTML = `
+                            <span class="skill-name" data-skill="${
+                              skill.name
+                            }" data-specialization="${
+          skill.specialization || ""
+        }">
+                                ${skill.name}${
+          skill.specialization
+            ? ` <span class="skill-specialization">(${skill.specialization})</span>`
+            : ""
+        }
+                            </span>
+                            <div class="d-flex align-items-center">
+                                <input type="number" class="form-control form-control-sm mx-2" value="${
+                                  skill.level
+                                }" min="0" style="width: 60px;">
+                                <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
+                            </div>
+                        `;
+        document.getElementById("skills-container").appendChild(skillDiv);
+      });
+    }
+
+    // Weapons
+    if (character.weapons && character.weapons.length) {
+      character.weapons.forEach((weapon) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                            <td>${weapon.name}</td>
+                            <td>${weapon.tl || "-"}</td>
+                            <td><input type="text" class="form-control form-control-sm" value="${
+                              weapon.skill || ""
+                            }" placeholder="Skill"></td>
+                            <td>${weapon.damage || "-"}</td>
+                            <td>${weapon.range || "-"}</td>
+                            <td>${weapon.weight || "-"}</td>
+                            <td>${weapon.magazine || "-"}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                            </td>
+                        `;
+        document.getElementById("weapons-container").appendChild(row);
+      });
+    }
+
+    // Armor
+    if (character.armor && character.armor.length) {
+      character.armor.forEach((armor) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                            <td>${armor.name}</td>
+                            <td>${armor.rating}</td>
+                            <td>${armor.tl}</td>
+                            <td>${armor.radiation}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                        `;
+        document.getElementById("armor-container").appendChild(row);
+      });
+    }
+
+    // Equipment
+    if (character.equipment && character.equipment.length) {
+      character.equipment.forEach((equipment) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                            <td>${equipment.name}</td>
+                            <td>${equipment.tl}</td>
+                            <td>${equipment.mass}</td>
+                            <td>${equipment.cost}</td>
+                            <td class="no-print">
+                                <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+                        `;
+        document.getElementById("equipment-container").appendChild(row);
+      });
+    }
 
     // Load training skills if they exist
     if (character.trainingSkills && character.trainingSkills.length) {
+      document.getElementById("training-skills-container").innerHTML = ""; // Clear existing
+      
       character.trainingSkills.forEach(skill => {
-        // Handle both old format (with weeksRequired/weeksComplete) and new format (with weeksSpent)
-        const weeksSpent = skill.weeksSpent || skill.weeksComplete || skill.weeksRequired || 1;
+        // Handle both legacy format and new format
+        const weeksSpent = skill.weeksSpent || skill.weeksComplete || "1";
+        const weeksTotal = skill.weeksTotal || "8"; // Default to 8 weeks if not specified in older saves
         
         const row = document.createElement("tr");
         row.innerHTML = `
           <td data-skill="${skill.skill}">${skill.skill}</td>
           <td data-specialization="${skill.specialization}">${skill.specialization || "-"}</td>
           <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
+          <td data-weeks-total="${weeksTotal}">${weeksTotal}</td>
           <td class="no-print">
             <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
             <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -2101,35 +2326,182 @@ loadCharacter = function() {
       });
     }
 
-    // Call the original load function to handle the rest
-    originalLoadCharacterWithTraining();
+    alert("Character loaded successfully!");
   } catch (e) {
     console.error("Load failed:", e);
     alert("Failed to load character. Error: " + e.message);
   }
-};
+}
 
-// Initialize training skill search with same data as regular skill search
-document.addEventListener("DOMContentLoaded", function() {
-  // ...existing initialization code...
+// Function to update specialization options for regular skills - define explicitly
+function updateRegularSpecializationOptions() {
+  updateSpecializationOptions("skillSearch", "specialization-list");
+}
+
+// Function to update specialization options for training skills - define explicitly
+function updateTrainingSpecializationOptions() {
+  updateSpecializationOptions("trainingSkillSearch", "training-specialization-list");
+}
+
+// Add the missing wealth-related functions
+function updateWealthDisplay() {
+  // Get the current wealth level
+  const currentWealth = parseInt(document.getElementById("wlt-current").value) || 7;
+  const baselineWealth = parseInt(document.getElementById("wlt-baseline").value) || 7;
   
-  // Connect the training skill inputs to the same skill lists
-  const trainingSkillSearch = document.getElementById("trainingSkillSearch");
-  const trainingSpecField = document.getElementById("trainingSpecializationField");
+  // Call the info display update function if it exists
+  if (typeof updateWealthInfoDisplay === "function") {
+    updateWealthInfoDisplay();
+  } else {
+    console.log("updateWealthInfoDisplay function not defined, using fallback");
+    // Simple fallback to just update the wealth values
+    updateWealthValues(currentWealth, "current");
+    updateWealthValues(baselineWealth, "baseline");
+  }
+}
+
+// Function to update wealth info display
+function updateWealthInfoDisplay() {
+  // Get the current wealth level
+  const currentWealth = parseInt(document.getElementById("wlt-current").value) || 7;
+  const baselineWealth = parseInt(document.getElementById("wlt-baseline").value) || 7;
   
-  if (trainingSkillSearch) {
-    trainingSkillSearch.setAttribute("list", "skill-list");
-    trainingSkillSearch.addEventListener("input", function() {
-      updateTrainingSpecializationOptions();
-    });
+  // Define wealth values based on characteristic values (wealth table)
+  const wealthTable = {
+    0: "Cr 0",
+    1: "Cr 100",
+    2: "Cr 200", 
+    3: "Cr 300",
+    4: "Cr 500",
+    5: "Cr 800",
+    6: "Cr 1,000",
+    7: "Cr 2,000",
+    8: "Cr 5,000",
+    9: "Cr 10,000",
+    10: "Cr 20,000",
+    11: "Cr 50,000",
+    12: "Cr 100,000",
+    13: "Cr 200,000",
+    14: "Cr 500,000",
+    15: "Cr 1,000,000+"
+  };
+
+  // Update the display text values
+  if (document.getElementById("current-wealth-value")) {
+    document.getElementById("current-wealth-value").textContent = 
+      `${wealthTable[currentWealth] || "Cr 2,000"} available`;
   }
   
-  if (trainingSpecField) {
-    trainingSpecField.setAttribute("list", "specialization-list");
+  if (document.getElementById("baseline-wealth-value")) {
+    document.getElementById("baseline-wealth-value").textContent = 
+      `${wealthTable[baselineWealth] || "Cr 2,000"} baseline`;
   }
+  
+  // Update the wealth info spans
+  const currentWealthInfo = document.querySelector("label .wealth-info");
+  if (currentWealthInfo) {
+    currentWealthInfo.textContent = `(${wealthTable[currentWealth] || "Cr 2,000"})`;
+  }
+  
+  const baselineWealthInfo = document.querySelectorAll("label .wealth-info")[1];
+  if (baselineWealthInfo) {
+    baselineWealthInfo.textContent = `(${wealthTable[baselineWealth] || "Cr 2,000"})`;
+  }
+}
+
+// Helper function for updating wealth values
+function updateWealthValues(value, type) {
+  // Define wealth values based on characteristic values (simplified)
+  const wealthTable = {
+    0: "Cr 0",
+    7: "Cr 2,000",
+    15: "Cr 1,000,000+"
+  };
+  
+  // Default to 7 if out of range
+  if (value < 0) value = 0;
+  if (value > 15) value = 15;
+  
+  // Find closest value in table
+  let wealthValue = wealthTable[value];
+  if (!wealthValue) {
+    // Simple fallback
+    wealthValue = value <= 7 ? "Cr 2,000" : "Cr 10,000";
+  }
+  
+  // Update relevant display element if it exists
+  const displayElement = document.getElementById(`${type}-wealth-value`);
+  if (displayElement) {
+    displayElement.textContent = `${wealthValue} ${type === "current" ? "available" : "baseline"}`;
+  }
+}
+
+// Fix the careerTerms event listener - modify the DOM ready event listener
+document.addEventListener("DOMContentLoaded", function () {
+  // ... existing initialization code ...
+  
+  // Only add event listener if the element exists
+  const careerTermsElement = document.getElementById("careerTerms");
+  if (careerTermsElement) {
+    careerTermsElement.addEventListener("input", suggestRank);
+  }
+  
+  // Update necessary event handlers for the skillSearch field
+  const skillSearch = document.getElementById("skillSearch");
+  if (skillSearch) {
+    // Remove any old listeners first to avoid duplicates
+    const newInputHandler = function() {
+      updateSpecializationOptions("skillSearch", "specialization-list");
+    };
+    
+    // Clean up old listeners if possible
+    skillSearch.removeEventListener("input", updateSpecializationOptions);
+    
+    // Add the new handler
+    skillSearch.addEventListener("input", newInputHandler);
+    console.log("Added input handler to skillSearch field");
+  }
+  
+  // Initialize wealth display right away
+  updateWealthDisplay();
 });
 
-// Function to update specialization options for training skills
-function updateTrainingSpecializationOptions() {
-  updateSpecializationOptions("trainingSkillSearch");
+// Improved initialization function
+function initializeCharacterSheet() {
+  console.log("Initializing character sheet...");
+
+  try {
+    // Initialize characteristics
+    updateDM("str");
+    updateDM("dex");
+    updateDM("end");
+    updateDM("int");
+    updateDM("edu");
+    updateDM("soc");
+
+    // Initialize additional characteristics
+    updateDM("psi");
+    updateDM("lck");
+    updateDM("mrl");
+    updateDM("sty");
+    updateDM("std");
+    updateDM("chr");
+    
+    // Initialize wealth last to ensure updateWealthDisplay is defined
+    if (document.getElementById("wlt-current")) {
+      updateDM("wlt");
+    }
+  } catch (e) {
+    console.error("Error initializing character sheet:", e);
+  }
+
+  // ... rest of the initialization code ...
+  
+  // Initialize pre-career options button state
+  updateEducationButtons();
+  
+  // Make sure wealth is properly initialized
+  if (typeof updateWealthDisplay === "function") {
+    updateWealthDisplay();
+  }
 }

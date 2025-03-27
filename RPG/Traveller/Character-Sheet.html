@@ -372,7 +372,7 @@
             </div>
         </div>
 
-        <!-- Skills in Training Section - NEW SECTION -->
+        <!-- Skills in Training Section -->
         <div class="section-header">
             SKILLS IN TRAINING
         </div>
@@ -380,11 +380,11 @@
         <div class="row mb-3 no-print">
             <div class="col-md-12">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="trainingSkillSearch" placeholder="Skill name..."
-                        list="skill-list">
-                    <input type="text" class="form-control" id="trainingSpecializationField"
-                        placeholder="Specialization (optional)" list="specialization-list">
-                    <input type="number" class="form-control" id="trainingWeeks" placeholder="Weeks Spent" min="1" value="1"
+                    <input type="text" class="form-control" id="trainingSkillName" placeholder="Skill Name">
+                    <input type="text" class="form-control" id="trainingSpecialization" placeholder="Specialization">
+                    <input type="number" class="form-control" id="trainingWeeksSpent" placeholder="Weeks Spent" min="1" value="1"
+                        style="max-width: 120px;">
+                    <input type="number" class="form-control" id="trainingWeeksTotal" placeholder="Weeks Total" min="1" value="8"
                         style="max-width: 120px;">
                     <button class="btn btn-add" onclick="addTrainingSkill()">Add</button>
                 </div>
@@ -398,6 +398,7 @@
                         <th>Skill</th>
                         <th>Specialization</th>
                         <th>Weeks Spent</th>
+                        <th>Weeks Total</th>
                         <th class="no-print">Actions</th>
                     </tr>
                 </thead>
@@ -414,9 +415,9 @@
         <div class="row skill-search no-print">
             <div class="col-md-10 mb-2">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="skillSearch" placeholder="Skill name...">
+                    <input type="text" class="form-control" id="skillSearch" placeholder="Skill name..." list="skill-list">
                     <input type="text" class="form-control" id="specializationField"
-                        placeholder="Specialization (optional)">
+                        placeholder="Specialization (optional)" list="specialization-list">
                     <input type="number" class="form-control" id="skillLevel" placeholder="Level" min="0" value="0"
                         style="max-width: 80px;">
                     <button class="btn btn-add" onclick="addSkill()">Add</button>
