@@ -18,6 +18,10 @@
         #map-container {
             margin: 20px;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
         #map-canvas {
             border: 2px solid #444;
@@ -54,6 +58,7 @@
             margin: 0 5px;
             min-width: 20px;
             text-align: center;
+            cursor: pointer; /* Make keys look clickable */
         }
         #map-controls {
             margin: 20px;
@@ -85,15 +90,86 @@
             border: none;
             border-radius: 4px;
         }
+        /* Mini-map styles */
+        #mini-map-container {
+            background-color: rgba(20, 20, 20, 0.8);
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100%; /* Ensure the container fills its parent */
+            box-sizing: border-box;
+        }
+        .mini-map-title {
+            font-size: 10px;
+            text-align: center;
+            margin-bottom: 3px;
+            color: #aaa;
+        }
+        /* D3 map styles */
+        .mini-map-controls {
+            width: 100%;
+            margin: 3px 0 8px;
+            text-align: center;
+        }
+        #projection-select {
+            font-size: 10px;
+            padding: 2px 4px;
+            background-color: #333;
+            color: #ccc;
+            border: 1px solid #555;
+        }
+        #mini-map-wrapper {
+            position: relative;
+            width: 100%; /* Dynamic width */
+            height: 100%; /* Dynamic height */
+        }
+        #mini-map-svg {
+            width: 100%; /* Fill the container */
+            height: 100%; /* Fill the container */
+        }
+        .graticule {
+            fill: none;
+            stroke: rgba(100, 100, 150, 0.3);
+            stroke-width: 0.5px;
+        }
+        .sphere {
+            fill: #000033;
+            stroke: #336;
+        }
+        #viewport-indicator {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border: 1px solid #ff0;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 0, 0.5);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
     </style>
-    <!-- Include the map generator and weather system scripts -->
+    <!-- Add D3.js libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo-polygon@1.6.0/dist/d3-geo-polygon.min.js"></script>
+    
+    <!-- Include the map generator, weather system, and noise scripts -->
     <script src="js/mapGenerator.js"></script>
     <script src="js/weatherSystem.js"></script>
+    <script src="js/noise.js"></script>
 </head>
 <body>
-    <h1>Hexagon Tile Map Viewer</h1>
-    <div class="instructions">
-        <p>Use keyboard to navigate the hexagonal map</p>
+    <h1>Tile Map Viewer</h1>
+    <button id="toggle-instructions" style="margin-bottom: 10px;">Show Instructions</button>
+    <div class="instructions" style="display: none;">
+        <p>Use keyboard to navigate the map:</p>
+        <p>Default: 1 tile at a time</p>
+        <p>Hold Ctrl: Medium speed (5 tiles)</p>
+        <p>Hold Shift: Fast speed (20 tiles)</p>
     </div>
     <div id="map-controls">
         <label for="map-type">Map Type:</label>
@@ -104,15 +180,16 @@
             <option value="desert">Desert Wasteland</option>
             <option value="forest">Deep Forest</option>
             <option value="jungle">Tropical Jungle</option>
+            <option value="fractal"  selected>Fractal</option> <!-- Added Fractal map type -->
         </select>
         <button id="generate-map">Generate New Map</button>
         
         <div style="margin-left: 20px; display: flex; align-items: center;">
             <label for="view-mode" style="margin-right: 10px;">View Mode:</label>
             <div class="toggle-container">
-                <input type="radio" id="square-mode" name="view-mode" value="square">
+                <input type="radio" id="square-mode" name="view-mode" value="square" checked>
                 <label for="square-mode">Square</label>
-                <input type="radio" id="hex-mode" name="view-mode" value="hex" checked>
+                <input type="radio" id="hex-mode" name="view-mode" value="hex">
                 <label for="hex-mode">Hexagonal</label>
             </div>
         </div>
@@ -132,6 +209,24 @@
         </div>
     </div>
     <div id="map-container">
+        <!-- Mini-map with D3 projection -->
+        <div id="mini-map-container">
+            <div class="mini-map-title">World Map</div>
+            <div class="mini-map-controls">
+                <select id="projection-select">
+
+                    
+                </select>
+            </div>
+            <div id="mini-map-wrapper">
+                <svg id="mini-map-svg"></svg>
+                <div id="viewport-indicator"></div>
+            </div>
+            <div id="mini-globe-wrapper">
+                <svg id="mini-globe-svg"></svg>
+                <div id="globe-viewport-indicator"></div>
+            </div>
+        </div>
         <canvas id="map-canvas" width="512" height="512"></canvas>
     </div>
     <div class="controls">
@@ -166,38 +261,62 @@
             const canvas = document.getElementById('map-canvas');
             const ctx = canvas.getContext('2d');
             
-            // View mode (hex or square)
-            let isHexView = true;
+            // D3 SVG for minimap
+            const miniMapSvg = d3.select("#mini-map-svg");
+            const miniGlobeSvg = d3.select("#mini-globe-svg");
             
-            // Hexagon dimensions
-            const HEX_SIZE = 28; // Distance from center to corner
-            const HEX_WIDTH = HEX_SIZE * Math.sqrt(3);
-            const HEX_HEIGHT = HEX_SIZE * 2;
+            // ====== CONFIGURATION PARAMETERS =======
+            // Map dimensions - modify these to change map size
+            const CONFIG = {
+                // Map dimensions
+                MAP_WIDTH: 1024,     // Width of the world map in tiles
+                MAP_HEIGHT: 512,     // Height of the world map in tiles 
+                
+                // Performance settings
+                CHUNK_SIZE: 64,       // Size of map chunks for performance optimization
+                MINIMAP_SAMPLE_RATE: 128, // Sample every Nth tile for mini-map (adjusted for smaller map)
+                
+                // Movement speeds
+                MOVE_SPEED_SLOW: 1,   // Default speed (one tile at a time)
+                MOVE_SPEED_NORMAL: 5, // Medium speed with Ctrl key
+                MOVE_SPEED_FAST: 20,  // Fast speed with Shift key
+                
+                // Tile dimensions
+                SQUARE_SIZE: 32,      // Size of square tiles in pixels
+                HEX_SIZE: 28,         // Size of hex tiles (distance from center to corner)
+            };
+            
+            // View mode (hex or square) - fix to make square the default
+            let isHexView = false;
+            
+            // Calculate secondary hex dimensions based on HEX_SIZE
+            const HEX_WIDTH = CONFIG.HEX_SIZE * Math.sqrt(3);
+            const HEX_HEIGHT = CONFIG.HEX_SIZE * 2;
             const HEX_VERT_DIST = HEX_HEIGHT * 0.75; // Vertical distance between hex centers
             
-            // Square dimensions
-            const SQUARE_SIZE = 32;
-            
-            // Map dimensions
-            const MAP_WIDTH = 64;
-            const MAP_HEIGHT = 64;
-            
-            // Variables to track viewport position - declare before the function that uses them
+            // Variables to track viewport position
             let viewX, viewY;
             let DISPLAY_WIDTH, DISPLAY_HEIGHT;
             
+            // Visible chunk of the map (for optimization)
+            let visibleMap = [];
+            
+            // Movement speed tracking
+            let currentMoveSpeed = CONFIG.MOVE_SPEED_SLOW; // Default to slow movement
+            
+            // Function to update display dimensions
             function updateDisplayDimensions() {
                 if (isHexView) {
                     DISPLAY_WIDTH = Math.floor(canvas.width / (HEX_WIDTH)) + 1;
                     DISPLAY_HEIGHT = Math.floor(canvas.height / HEX_VERT_DIST) + 1;
                 } else {
-                    DISPLAY_WIDTH = canvas.width / SQUARE_SIZE;
-                    DISPLAY_HEIGHT = canvas.height / SQUARE_SIZE;
+                    DISPLAY_WIDTH = canvas.width / CONFIG.SQUARE_SIZE;
+                    DISPLAY_HEIGHT = canvas.height / CONFIG.SQUARE_SIZE;
                 }
                 
                 // Set view to center of map
-                viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
-                viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+                viewX = Math.floor(CONFIG.MAP_WIDTH/2 - DISPLAY_WIDTH/2);
+                viewY = Math.floor(CONFIG.MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
             }
             
             // Initialize display dimensions and viewport position
@@ -232,6 +351,11 @@
             // Weather system
             let weatherSystem;
             
+            // D3-related variables
+            let geoJsonMap = null;
+            let currentProjection = "orthographic";
+            let projectionRotation = [0, 0, 0];
+            
             // Load all tile images before drawing
             let loadedImages = 0;
             tileTypes.forEach((tileName, index) => {
@@ -244,19 +368,45 @@
                         // Get initial map type
                         const mapTypeSelect = document.getElementById('map-type');
                         const mapType = mapTypeSelect.value;
-                        map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT, isHexView);
                         
-                        // Initialize weather system with the map
-                        weatherSystem = new WeatherSystem(canvas, ctx);
-                        weatherSystem.initWeatherMap(MAP_WIDTH, MAP_HEIGHT, map);
+                        // Generate map with progress indication
+                        showLoadingMessage("Generating world map...");
                         
-                        // Start animation loop
-                        lastFrameTime = performance.now();
-                        requestAnimationFrame(animationLoop);
+                        // Use setTimeout to allow the loading message to render
+                        setTimeout(() => {
+                            // Generate the map
+                            map = MapGenerator.generateMap(mapType, CONFIG.MAP_WIDTH, CONFIG.MAP_HEIGHT, isHexView);
+                            
+                            // Initialize weather system with the map
+                            weatherSystem = new WeatherSystem(canvas, ctx);
+                            weatherSystem.initWeatherMap(CONFIG.MAP_WIDTH, CONFIG.MAP_HEIGHT, map);
+                            
+                            // Convert map to GeoJSON and draw minimap
+                            geoJsonMap = mapToGeoJSON(map);
+                            drawMiniMap();
+                            
+                            // Start animation loop
+                            lastFrameTime = performance.now();
+                            requestAnimationFrame(animationLoop);
+                        }, 100);
                     }
                 };
                 tileImages[index] = img;
             });
+            
+            // Show loading message
+            function showLoadingMessage(message) {
+                ctx.fillStyle = "#444";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#fff";
+                ctx.font = "20px Arial";
+                ctx.textAlign = "center";
+                ctx.fillText(message, canvas.width / 2, canvas.height / 2);
+            }
+            
+            // Update initial display of controls to match default
+            document.getElementById('hex-controls').style.display = 'none';
+            document.getElementById('square-controls').style.display = '';
             
             // Event listener for weather selection
             document.getElementById('apply-weather').addEventListener('click', function() {
@@ -266,22 +416,39 @@
                 }
             });
             
+            // Event listener for minimap projection selection
+            document.getElementById('projection-select').addEventListener('change', function() {
+                currentProjection = this.value;
+                drawMiniMap();
+            });
+            
             // Event listener for map type selection and generation
             document.getElementById('generate-map').addEventListener('click', () => {
                 const mapTypeSelect = document.getElementById('map-type');
                 const mapType = mapTypeSelect.value;
-                map = MapGenerator.generateMap(mapType, MAP_WIDTH, MAP_HEIGHT, isHexView);
                 
-                // Reset view to center of map
-                viewX = Math.floor(MAP_WIDTH/2 - DISPLAY_WIDTH/2);
-                viewY = Math.floor(MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+                // Show loading message while generating
+                showLoadingMessage("Generating new world map...");
                 
-                // Initialize weather system with the new map
-                if (weatherSystem) {
-                    weatherSystem.initWeatherMap(MAP_WIDTH, MAP_HEIGHT, map);
-                }
-                
-                drawMap();
+                // Use setTimeout to allow the loading message to render
+                setTimeout(() => {
+                    map = MapGenerator.generateMap(mapType, CONFIG.MAP_WIDTH, CONFIG.MAP_HEIGHT, isHexView);
+                    
+                    // Reset view to center of map
+                    viewX = Math.floor(CONFIG.MAP_WIDTH/2 - DISPLAY_WIDTH/2);
+                    viewY = Math.floor(CONFIG.MAP_HEIGHT/2 - DISPLAY_HEIGHT/2);
+                    
+                    // Initialize weather system with the new map
+                    if (weatherSystem) {
+                        weatherSystem.initWeatherMap(CONFIG.MAP_WIDTH, CONFIG.MAP_HEIGHT, map);
+                    }
+                    
+                    // Reset GeoJSON map to force regeneration
+                    geoJsonMap = null;
+                    
+                    drawMap();
+                    drawMiniMap(); // Update mini-map after generating a new map
+                }, 100);
             });
             
             // Event listeners for view mode toggle
@@ -292,6 +459,7 @@
                     document.getElementById('square-controls').style.display = 'none';
                     updateDisplayDimensions();
                     drawMap();
+                    drawMiniMap(); // Update mini-map when switching to hex view
                 }
             });
             
@@ -302,6 +470,7 @@
                     document.getElementById('square-controls').style.display = '';
                     updateDisplayDimensions();
                     drawMap();
+                    drawMiniMap(); // Update mini-map when switching to square view
                 }
             });
             
@@ -319,8 +488,8 @@
                 ctx.beginPath();
                 for (let i = 0; i < 6; i++) {
                     const angle = (i * Math.PI / 3) + Math.PI / 6; // +30° to make flat-topped
-                    const hx = centerX + HEX_SIZE * Math.cos(angle);
-                    const hy = centerY + HEX_SIZE * Math.sin(angle);
+                    const hx = centerX + CONFIG.HEX_SIZE * Math.cos(angle);
+                    const hy = centerY + CONFIG.HEX_SIZE * Math.sin(angle);
                     
                     if (i === 0) {
                         ctx.moveTo(hx, hy);
@@ -350,46 +519,17 @@
             function drawSquare(x, y, tileImage) {
                 ctx.drawImage(
                     tileImage,
-                    x * SQUARE_SIZE,
-                    y * SQUARE_SIZE,
-                    SQUARE_SIZE,
-                    SQUARE_SIZE
+                    x * CONFIG.SQUARE_SIZE,
+                    y * CONFIG.SQUARE_SIZE,
+                    CONFIG.SQUARE_SIZE,
+                    CONFIG.SQUARE_SIZE
                 );
             }
             
             // Function to draw the visible portion of the map
             function drawMap() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                
-                if (isHexView) {
-                    // Draw visible hexagons
-                    for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
-                        for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
-                            const mapX = x + viewX;
-                            const mapY = y + viewY;
-                            
-                            // Make sure we're within map bounds
-                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
-                                const tileType = map[mapY][mapX];
-                                drawHexagon(x, y, tileImages[tileType]);
-                            }
-                        }
-                    }
-                } else {
-                    // Draw visible squares
-                    for (let y = 0; y < DISPLAY_HEIGHT; y++) {
-                        for (let x = 0; x < DISPLAY_WIDTH; x++) {
-                            const mapX = x + viewX;
-                            const mapY = y + viewY;
-                            
-                            // Make sure we're within map bounds
-                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
-                                const tileType = map[mapY][mapX];
-                                drawSquare(x, y, tileImages[tileType]);
-                            }
-                        }
-                    }
-                }
+                // Just draw the base map - weather will be handled by animation loop
+                drawMapBase();
             }
             
             // Handle keyboard input
@@ -398,62 +538,82 @@
                 const originalX = viewX;
                 const originalY = viewY;
                 
+                // Check for speed modifier keys
+                if (e.key === 'Shift') {
+                    currentMoveSpeed = CONFIG.MOVE_SPEED_FAST;
+                    return; // Just change speed, don't move yet
+                } else if (e.key === 'Control') {
+                    currentMoveSpeed = CONFIG.MOVE_SPEED_NORMAL;
+                    return; // Just change speed, don't move yet
+                }
+                
                 if (isHexView) {
                     // Hexagonal movement
                     const oddRow = viewY % 2 !== 0;
                     
                     switch (e.key.toLowerCase()) {
                         case 'w': // Up-right
-                            viewY = Math.max(0, viewY - 1);
-                            if (!oddRow) viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
+                            viewY = Math.max(0, viewY - currentMoveSpeed);
+                            if (!oddRow) viewX = Math.min(CONFIG.MAP_WIDTH - 1, viewX + 1);
                             break;
                         case 'q': // Up-left
-                            viewY = Math.max(0, viewY - 1);
+                            viewY = Math.max(0, viewY - currentMoveSpeed);
                             if (oddRow) viewX = Math.max(0, viewX - 1);
                             break;
                         case 's': // Down
-                            viewY = Math.min(MAP_HEIGHT - 1, viewY + 1);
+                            viewY = Math.min(CONFIG.MAP_HEIGHT - 1, viewY + currentMoveSpeed);
                             break;
                         case 'a': // Left
-                            viewX = Math.max(0, viewX - 1);
+                            viewX = Math.max(0, viewX - currentMoveSpeed);
                             break;
                         case 'd': // Right
-                            viewX = Math.min(MAP_WIDTH - 1, viewX + 1);
+                            viewX = Math.min(CONFIG.MAP_WIDTH - 1, viewX + currentMoveSpeed);
                             break;
                         case 'e': // Up
-                            viewY = Math.max(0, viewY - 1);
+                            viewY = Math.max(0, viewY - currentMoveSpeed);
                             break;
                     }
                 } else {
-                    // Square movement
+                    // Square movement with variable speed
                     switch (e.key.toLowerCase()) {
                         case 'arrowup':
                         case 'w':
-                            viewY = Math.max(0, viewY - 1);
+                            viewY = Math.max(0, viewY - currentMoveSpeed);
                             break;
                         case 'arrowdown':
                         case 's':
-                            viewY = Math.min(MAP_HEIGHT - DISPLAY_HEIGHT, viewY + 1);
+                            viewY = Math.min(CONFIG.MAP_HEIGHT - DISPLAY_HEIGHT, viewY + currentMoveSpeed);
                             break;
                         case 'arrowleft':
                         case 'a':
-                            viewX = Math.max(0, viewX - 1);
+                            viewX = Math.max(0, viewX - currentMoveSpeed);
                             break;
                         case 'arrowright':
                         case 'd':
-                            viewX = Math.min(MAP_WIDTH - DISPLAY_WIDTH, viewX + 1);
+                            viewX = Math.min(CONFIG.MAP_WIDTH - DISPLAY_WIDTH, viewX + currentMoveSpeed);
                             break;
                     }
                 }
                 
                 // Apply viewport bounds
-                viewX = Math.min(Math.max(0, viewX), MAP_WIDTH - DISPLAY_WIDTH);
-                viewY = Math.min(Math.max(0, viewY), MAP_HEIGHT - DISPLAY_HEIGHT);
+                viewX = Math.min(Math.max(0, viewX), CONFIG.MAP_WIDTH - DISPLAY_WIDTH);
+                viewY = Math.min(Math.max(0, viewY), CONFIG.MAP_HEIGHT - DISPLAY_HEIGHT);
                 
                 // Redraw the map if position changed
                 if (originalX !== viewX || originalY !== viewY) {
+                    // Update visible map portion
+                    updateVisibleMap();
+                    
                     drawMap();
+                    drawMiniMap(); // Redraw entire minimap instead of just updating viewport
                     e.preventDefault(); // Prevent browser scrolling
+                }
+            });
+            
+            // Reset speed when key is released
+            document.addEventListener('keyup', (e) => {
+                if (e.key === 'Shift' || e.key === 'Control') {
+                    currentMoveSpeed = CONFIG.MOVE_SPEED_SLOW;
                 }
             });
             
@@ -468,7 +628,7 @@
             // Once all images are loaded, draw the map
             if (loadedImages === tileTypes.length) {
                 const mapTypeSelect = document.getElementById('map-type');
-                map = MapGenerator.generateMap(mapTypeSelect.value, MAP_WIDTH, MAP_HEIGHT, isHexView);
+                map = MapGenerator.generateMap(mapTypeSelect.value, CONFIG.MAP_WIDTH, CONFIG.MAP_HEIGHT, isHexView);
                 drawMap();
             }
             
@@ -494,7 +654,7 @@
                         weatherSystem.updateView(viewX, viewY, isHexView, 
                                                 null, HEX_WIDTH, HEX_HEIGHT);
                     } else {
-                        weatherSystem.updateView(viewX, viewY, isHexView, SQUARE_SIZE);
+                        weatherSystem.updateView(viewX, viewY, isHexView, CONFIG.SQUARE_SIZE);
                     }
                     
                     // Update and draw weather effects
@@ -508,16 +668,21 @@
             
             // Function to draw just the base map (without clearing)
             function drawMapBase() {
+                // Only create visibleMap array if needed
+                if (!visibleMap || visibleMap.length === 0) {
+                    updateVisibleMap();
+                }
+                
                 if (isHexView) {
-                    // Draw visible hexagons
+                    // Draw visible hexagons - FIX: corrected loop condition that used y instead of x
                     for (let y = 0; y < DISPLAY_HEIGHT + 1; y++) {
                         for (let x = 0; x < DISPLAY_WIDTH + 1; x++) {
                             const mapX = x + viewX;
                             const mapY = y + viewY;
                             
                             // Make sure we're within map bounds
-                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
-                                const tileType = map[mapY][mapX];
+                            if (mapX >= 0 && mapX < CONFIG.MAP_WIDTH && mapY >= 0 && mapY < CONFIG.MAP_HEIGHT) {
+                                const tileType = getTileTypeAt(mapX, mapY);
                                 drawHexagon(x, y, tileImages[tileType]);
                             }
                         }
@@ -530,8 +695,8 @@
                             const mapY = y + viewY;
                             
                             // Make sure we're within map bounds
-                            if (mapX >= 0 && mapX < MAP_WIDTH && mapY >= 0 && mapY < MAP_HEIGHT) {
-                                const tileType = map[mapY][mapX];
+                            if (mapX >= 0 && mapX < CONFIG.MAP_WIDTH && mapY >= 0 && mapY < CONFIG.MAP_HEIGHT) {
+                                const tileType = getTileTypeAt(mapX, mapY);
                                 drawSquare(x, y, tileImages[tileType]);
                             }
                         }
@@ -539,11 +704,435 @@
                 }
             }
             
-            // Update the original drawMap function to use the animation loop
-            function drawMap() {
-                // Just draw the base map - weather will be handled by animation loop
-                drawMapBase();
+            // Update the visible map chunk for better performance
+            function updateVisibleMap() {
+                // Calculate which part of the map is visible
+                const startX = Math.max(0, viewX);
+                const endX = Math.min(CONFIG.MAP_WIDTH, viewX + DISPLAY_WIDTH + 1);
+                const startY = Math.max(0, viewY);
+                const endY = Math.min(CONFIG.MAP_HEIGHT, viewY + DISPLAY_HEIGHT + 1);
+                
+                // Calculate the chunk boundaries
+                const chunkStartX = Math.floor(startX / CONFIG.CHUNK_SIZE) * CONFIG.CHUNK_SIZE;
+                const chunkEndX = Math.ceil(endX / CONFIG.CHUNK_SIZE) * CONFIG.CHUNK_SIZE;
+                const chunkStartY = Math.floor(startY / CONFIG.CHUNK_SIZE) * CONFIG.CHUNK_SIZE;
+                const chunkEndY = Math.ceil(endY / CONFIG.CHUNK_SIZE) * CONFIG.CHUNK_SIZE;
+                
+                // Create a new array to hold the visible map portion
+                visibleMap = [];
+                
+                // Copy data from the full map to the visible map
+                for (let y = chunkStartY; y < chunkEndY; y++) {
+                    if (y >= 0 && y < CONFIG.MAP_HEIGHT) {
+                        visibleMap[y - chunkStartY] = [];
+                        for (let x = chunkStartX; x < chunkEndX; x++) {
+                            if (x >= 0 && x < CONFIG.MAP_WIDTH) {
+                                visibleMap[y - chunkStartY][x - chunkStartX] = map[y][x];
+                            }
+                        }
+                    }
+                }
+                
+                // Store the visible map offset
+                visibleMap.offsetX = chunkStartX;
+                visibleMap.offsetY = chunkStartY;
             }
+            
+            // Get tile type at specific coordinates (optimized)
+            function getTileTypeAt(x, y) {
+                // Check if we have the coordinates in visibleMap
+                if (visibleMap && 
+                    x >= visibleMap.offsetX && 
+                    x < visibleMap.offsetX + visibleMap[0].length &&
+                    y >= visibleMap.offsetY && 
+                    y < visibleMap.offsetY + visibleMap.length) {
+                    // Return from visibleMap
+                    return visibleMap[y - visibleMap.offsetY][x - visibleMap.offsetX];
+                }
+                
+                // Fallback to full map lookup
+                if (map[y] && map[y][x] !== undefined) {
+                    return map[y][x];
+                }
+                
+                // Default to deep water if out of bounds
+                return 0;
+            }
+            
+            // Convert map tile data to GeoJSON format
+            function mapToGeoJSON(mapData) {
+                const features = [];
+                const skipRate = 8; // Sample every 8th tile for performance
+                
+                for (let y = 0; y < CONFIG.MAP_HEIGHT; y += skipRate) {
+                    for (let x = 0; x < CONFIG.MAP_WIDTH; x += skipRate) {
+                        // Skip if outside bounds or deep water
+                        if (!mapData[y] || mapData[y][x] === undefined || mapData[y][x] === 0) continue;
+                        
+                        // Convert tile coordinates to longitude/latitude
+                        // Map to range: longitude [-180 to 180], latitude [-90 to 90]
+                        const lon = (x / CONFIG.MAP_WIDTH * 360) - 180;
+                        const lat = 90 - (y / CONFIG.MAP_HEIGHT * 180);
+                        
+                        // Create a GeoJSON feature for this tile
+                        features.push({
+                            type: "Feature",
+                            geometry: {
+                                type: "Point",
+                                coordinates: [lon, lat]
+                            },
+                            properties: {
+                                tileType: mapData[y][x],
+                                x: x,
+                                y: y
+                            }
+                        });
+                    }
+                }
+                
+                // Return complete GeoJSON object
+                return {
+                    type: "FeatureCollection",
+                    features: features
+                };
+            }
+            
+            // Get color for a tile type
+            function getTileColor(tileType) {
+                switch(tileType) {
+                    case 0: return "#000066"; // Deep water
+                    case 1: return "#0000AA"; // Medium water
+                    case 2: return "#0066AA"; // Shallow water
+                    case 3: return "#336633"; // Swamp
+                    case 4: return "#33AA33"; // Grass
+                    case 5: return "#669933"; // Scrub
+                    case 6: return "#006600"; // Forest
+                    case 7: return "#996633"; // Hill
+                    case 8: return "#663300"; // Mountain
+                    case 9: return "#990000"; // Dungeon
+                    case 10: return "#FFAA00"; // Town
+                    case 11: return "#FF0000"; // Keep
+                    case 12: return "#AAAA00"; // Village
+                    case 13: return "#DDCC88"; // Desert
+                    case 14: return "#BBAA77"; // Plateau
+                    case 15: return "#009900"; // Jungle
+                    default: return "#666666"; // Unknown
+                }
+            }
+            
+            // Function to draw the mini-map with D3 projection
+            function drawMiniMap() {
+                // Clear the SVG
+                miniMapSvg.html("");
+                
+                // Convert map to GeoJSON if not already done
+                if (!geoJsonMap) {
+                    geoJsonMap = mapToGeoJSON(map);
+                }
+                
+                // Get the current projection
+                const projection = getCurrentProjection();
+                
+                // Create path generator
+                const path = d3.geoPath().projection(projection);
+                
+                // Draw the globe background for the orthographic projection
+                miniMapSvg.append("path")
+                    .datum({type: "Sphere"})
+                    .attr("class", "sphere")
+                    .attr("d", path);
+                
+                // Draw graticule
+                const graticule = d3.geoGraticule().step([30, 30]);
+                miniMapSvg.append("path")
+                    .datum(graticule)
+                    .attr("class", "graticule")
+                    .attr("d", path);
+                
+                // Draw map features
+                miniMapSvg.selectAll(".map-feature")
+                    .data(geoJsonMap.features)
+                    .enter()
+                    .append("circle")
+                    .attr("class", "map-feature")
+                    .attr("transform", d => {
+                        const point = projection(d.geometry.coordinates);
+                        return point ? `translate(${point[0]},${point[1]})` : null;
+                    })
+                    .attr("r", 1.5)
+                    .attr("fill", d => getTileColor(d.properties.tileType))
+                    .attr("stroke", "none")
+                    .attr("opacity", 0.8);
+                
+                // Draw the viewport indicator
+                drawViewportIndicator(projection);
+            }
+            
+            // Draw the current viewport indicator on the mini-map
+            function drawViewportIndicator(projection) {
+                // Calculate the center of the current viewport
+                const viewportCenterX = viewX + DISPLAY_WIDTH/2;
+                const viewportCenterY = viewY + DISPLAY_HEIGHT/2;
+                
+                // Convert to longitude/latitude
+                const lon = (viewportCenterX / CONFIG.MAP_WIDTH * 360) - 180;
+                const lat = 90 - (viewportCenterY / CONFIG.MAP_HEIGHT * 180);
+                
+                // Project the coordinates
+                const point = projection([lon, lat]);
+                
+                // Only show indicator if the point is visible (not on the back of the globe)
+                if (point && !isNaN(point[0]) && !isNaN(point[1])) {
+                    const indicator = document.getElementById('viewport-indicator');
+                    indicator.style.left = `${point[0]}px`;
+                    indicator.style.top = `${point[1]}px`;
+                    indicator.style.display = 'block';
+                } else {
+                    document.getElementById('viewport-indicator').style.display = 'none';
+                }
+            }
+            
+            // Add click handlers for navigation keys
+            function setupKeyControls() {
+                // Get all key elements
+                const keys = document.querySelectorAll('.key');
+                
+                // Add click event listener to each key
+                keys.forEach(key => {
+                    key.addEventListener('click', function() {
+                        // Get the key text content (Q, W, E, etc or arrow symbol)
+                        const keyText = this.textContent;
+                        let keyToSimulate;
+                        
+                        // Map the displayed key to keyboard key
+                        switch(keyText) {
+                            case 'Q': keyToSimulate = 'q'; break;
+                            case 'W': keyToSimulate = 'w'; break;
+                            case 'E': keyToSimulate = 'e'; break;
+                            case 'A': keyToSimulate = 'a'; break;
+                            case 'S': keyToSimulate = 's'; break;
+                            case 'D': keyToSimulate = 'd'; break;
+                            case '↑': keyToSimulate = 'arrowup'; break;
+                            case '←': keyToSimulate = 'arrowleft'; break;
+                            case '↓': keyToSimulate = 'arrowdown'; break;
+                            case '→': keyToSimulate = 'arrowright'; break;
+                            default: return; // Unknown key
+                        }
+                        
+                        // Simulate a keyboard event
+                        const event = new KeyboardEvent('keydown', { 
+                            key: keyToSimulate,
+                            bubbles: true,
+                            cancelable: true
+                        });
+                        
+                        document.dispatchEvent(event);
+                    });
+                });
+            }
+            
+            // Call the setup function once the DOM is loaded
+            setupKeyControls();
+            
+            // Start with a small rotation animation for the globe view
+            setTimeout(() => {
+                const rotateGlobe = () => {
+                    if (currentProjection === 'orthographic') {
+                        projectionRotation[0] += 1;
+                        drawMiniMap();
+                        setTimeout(rotateGlobe, 100);
+                    }
+                };
+                rotateGlobe();
+            }, 2000);
+
+            // Add click event listener to mini-map SVG
+            miniMapSvg.on('click', function(event) {
+                const [mouseX, mouseY] = d3.pointer(event);
+                const projection = getCurrentProjection();
+                const invertedCoords = projection.invert([mouseX, mouseY]);
+
+                if (invertedCoords) {
+                    const [lon, lat] = invertedCoords;
+
+                    // Convert longitude and latitude back to map coordinates
+                    const mapX = Math.floor(((lon + 180) / 360) * CONFIG.MAP_WIDTH);
+                    const mapY = Math.floor((90 - lat) / 180 * CONFIG.MAP_HEIGHT);
+
+                    // Center the viewport around clicked position
+                    viewX = Math.min(Math.max(0, mapX - Math.floor(DISPLAY_WIDTH / 2)), CONFIG.MAP_WIDTH - DISPLAY_WIDTH);
+                    viewY = Math.min(Math.max(0, mapY - Math.floor(DISPLAY_HEIGHT / 2)), CONFIG.MAP_HEIGHT - DISPLAY_HEIGHT);
+
+                    updateVisibleMap();
+                    drawMap();
+                    drawMiniMap();
+                }
+            });
+
+            // Enhanced projections array with additional metadata
+            const projections = [
+                {
+                    name: "Globe",
+                    value: "orthographic",
+                    create: () => d3.geoOrthographic().rotate(projectionRotation),
+                    mapType: "Sci-Fi (Traveller)",
+                    description: "A globe-like projection showing a planet as a sphere, ideal for orbital or planetary views."
+                },
+                {
+                    name: "Mercator",
+                    value: "mercator",
+                    create: () => d3.geoMercator(),
+                    mapType: "Fantasy",
+                    description: "Standard Mercator projection, preserves angles and shapes for local fantasy maps."
+                },
+                {
+                    name: "Transverse Mercator",
+                    value: "transverseMercator",
+                    create: () => d3.geoTransverseMercator(),
+                    mapType: "Fantasy",
+                    description: "Transverse Mercator projection, suitable for elongated fantasy regions."
+                },
+                {
+                    name: "Azimuthal Equidistant",
+                    value: "azimuthalEquidistant",
+                    create: () => d3.geoAzimuthalEquidistant(),
+                    mapType: "Fantasy/Sci-Fi",
+                    description: "Maps centered around a single point, displaying accurate distances outward."
+                },
+                {
+                    name: "Robinson",
+                    value: "robinson",
+                    create: () => d3.geoRobinson(),
+                    mapType: "Fantasy",
+                    description: "Robinson projection, visually appealing for fantasy world-scale maps."
+                },
+                {
+                    name: "Winkel Tripel",
+                    value: "winkel3",
+                    create: () => d3.geoWinkel3(),
+                    mapType: "Fantasy",
+                    description: "Balanced projection with visually pleasing distortion, great for global fantasy maps."
+                },
+                {
+                    name: "Equirectangular",
+                    value: "equirectangular",
+                    create: () => d3.geoEquirectangular(),
+                    mapType: "Sci-Fi (Traveller)",
+                    description: "Simple, grid-friendly projection suitable for Traveller-style planetary hex maps."
+                },
+                {
+                    name: "Mollweide",
+                    value: "mollweide",
+                    create: () => d3.geoMollweide(),
+                    mapType: "Sci-Fi",
+                    description: "Equal-area projection suitable for planetary databases or Sci-Fi planetary references."
+                },
+                {
+                    name: "Gnomonic",
+                    value: "gnomonic",
+                    create: () => d3.geoGnomonic(),
+                    mapType: "Sci-Fi (Traveller)",
+                    description: "Projection where straight lines represent shortest paths, excellent for star maps or jump routes."
+                },
+                {
+                    name: "Stereographic",
+                    value: "stereographic",
+                    create: () => d3.geoStereographic(),
+                    mapType: "Sci-Fi",
+                    description: "Stereographic projection, good for expansive Sci-Fi sectors and exploratory regions."
+                },
+                {
+                    name: "Icosahedral",
+                    value: "icosahedral",
+                    create: () => d3.geoIcosahedral(),
+                    mapType: "Sci-Fi (Traveller)",
+                    description: "Classic Traveller-style planetary map projection unfolded into triangular segments."
+                },
+                {
+                    name: "Natural Earth",
+                    value: "naturalEarth1",
+                    create: () => d3.geoNaturalEarth1(),
+                    mapType: "Fantasy",
+                    description: "Natural Earth projection balancing shape and area distortion, suitable for fantasy and Sci-Fi."
+                },
+                {
+                    name: "Waterman Butterfly",
+                    value: "waterman",
+                    create: () => d3.geoPolyhedralWaterman(),
+                    mapType: "Polyhedral",
+                    description: "Waterman Butterfly projection, offering minimal distortion and artistic appeal."
+                }
+            ];
+
+            // Deduplicate and sort projections by mapType
+            const uniqueProjections = Array.from(
+                new Map(projections.map(p => [p.value, p])).values()
+            ).sort((a, b) => a.mapType.localeCompare(b.mapType));
+
+            // Populate projection select dropdown dynamically
+            const projectionSelect = document.getElementById('projection-select');
+            uniqueProjections.forEach(proj => {
+                const option = document.createElement('option');
+                option.value = proj.value;
+                option.textContent = proj.name;
+                if (proj.value === "icosahedral") {
+                    option.selected = true; // Set Icosahedral as the default selection
+                }
+                projectionSelect.appendChild(option);
+            });
+
+            // Set default projection
+            currentProjection = "icosahedral"; // Default to Icosahedral
+
+            // Event listener for projection selection
+            projectionSelect.addEventListener('change', function() {
+                currentProjection = this.value; // Update currentProjection
+                drawMiniMap(); // Redraw the mini-map with the new projection
+            });
+
+            // Single, correct definition of getCurrentProjection
+            function getCurrentProjection() {
+                const projEntry = uniqueProjections.find(p => p.value === currentProjection);
+                if (!projEntry) {
+                    console.error(`Projection not found: ${currentProjection}`);
+                    return d3.geoOrthographic().rotate(projectionRotation); // Fallback to orthographic
+                }
+                return projEntry.create().fitSize([220, 140], {type: "Sphere"}).precision(0.1);
+            }
+
+            // Toggle instructions visibility
+            const instructions = document.querySelector('.instructions');
+            const toggleButton = document.getElementById('toggle-instructions');
+            toggleButton.addEventListener('click', () => {
+                const isVisible = instructions.style.display === 'block';
+                instructions.style.display = isVisible ? 'none' : 'block';
+                toggleButton.textContent = isVisible ? 'Show Instructions' : 'Hide Instructions';
+            });
+
+            // Adjust the mini-map SVG size dynamically
+            const miniMapWrapper = document.getElementById('mini-map-wrapper');
+            const miniMapSvgElement = document.getElementById('mini-map-svg');
+            const resizeMiniMap = () => {
+                const { width, height } = miniMapWrapper.getBoundingClientRect();
+                miniMapSvgElement.setAttribute('width', width);
+                miniMapSvgElement.setAttribute('height', height);
+            };
+            // Adjust the mini-map SVG size dynamically
+            const miniGlobeWrapper = document.getElementById('mini-globe-wrapper');
+            const miniGlobeSvgElement = document.getElementById('mini-globe-svg');
+            const resizeMiniGlobe = () => {
+                const { width, height } = miniGlobeWrapper.getBoundingClientRect();
+                miniGlobeSvgElement.setAttribute('width', width);
+                miniGlobeSvgElement.setAttribute('height', height);
+            };
+            
+            // Resize on load and window resize
+            resizeMiniMap();
+            window.addEventListener('resize', resizeMiniMap);
+
+            // Resize on load and window resize
+            resizeMiniGlobe();
+            window.addEventListener('resize', resizeMiniGlobe);
         });
     </script>
 </body>

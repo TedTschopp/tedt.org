@@ -50,6 +50,9 @@ const mapGenerators = {
     continent: function(width, height) {
         const newMap = [];
         
+        // Variable to control the amount of water tiles (default: 50%)
+        const waterPercentage = 0.5;
+
         // Create noise-based continent
         const simplexNoise = generateSimplexNoise(width, height);
         
@@ -59,6 +62,9 @@ const mapGenerators = {
                 // Get noise value (0-1 range)
                 let noiseValue = simplexNoise[y * width + x];
                 
+                // Adjust noise value based on waterPercentage
+                noiseValue = (noiseValue * (1 - waterPercentage)) + (waterPercentage / 2);
+
                 // Add falloff toward the edges for continent shape
                 const edgeX = Math.min(x, width - x) / (width * 0.5);
                 const edgeY = Math.min(y, height - y) / (height * 0.5);
@@ -318,7 +324,94 @@ const mapGenerators = {
             newMap.push(row);
         }
         return newMap;
-    }
+    },
+
+    // Fractal map - heightmap-based terrain generation using subdivision
+    fractal: function(width, height) {
+        const size = Math.pow(2, Math.ceil(Math.log2(Math.max(width, height)))) + 1; // Ensure size is a power of 2 + 1
+        const heightMap = Array.from({ length: size }, () => Array(size).fill(0));
+        const waterPercentage = 0.5; // Amount of water on the map (50% initially)
+
+        // Initialize corners
+        heightMap[0][0] = Math.random();
+        heightMap[0][size - 1] = Math.random();
+        heightMap[size - 1][0] = Math.random();
+        heightMap[size - 1][size - 1] = Math.random();
+
+        // Diamond-square algorithm
+        function diamondSquare(stepSize, scale) {
+            const halfStep = stepSize / 2;
+
+            // Diamond step
+            for (let y = halfStep; y < size; y += stepSize) {
+                for (let x = halfStep; x < size; x += stepSize) {
+                    const avg = (
+                        heightMap[y - halfStep][x - halfStep] +
+                        heightMap[y - halfStep][x + halfStep] +
+                        heightMap[y + halfStep][x - halfStep] +
+                        heightMap[y + halfStep][x + halfStep]
+                    ) / 4;
+                    heightMap[y][x] = avg + (Math.random() * 2 - 1) * scale;
+                }
+            }
+
+            // Square step
+            for (let y = 0; y < size; y += halfStep) {
+                for (let x = (y + halfStep) % stepSize; x < size; x += stepSize) {
+                    const avg = (
+                        (y - halfStep >= 0 ? heightMap[y - halfStep][x] : 0) +
+                        (y + halfStep < size ? heightMap[y + halfStep][x] : 0) +
+                        (x - halfStep >= 0 ? heightMap[y][x - halfStep] : 0) +
+                        (x + halfStep < size ? heightMap[y][x + halfStep] : 0)
+                    ) / 4;
+                    heightMap[y][x] = avg + (Math.random() * 2 - 1) * scale;
+
+                    // Wrap edges
+                    if (y === 0) heightMap[size - 1][x] = heightMap[y][x];
+                    if (x === 0) heightMap[y][size - 1] = heightMap[y][x];
+                }
+            }
+        }
+
+        // Perform the algorithm
+        let stepSize = size - 1;
+        let scale = 1;
+        while (stepSize > 1) {
+            diamondSquare(stepSize, scale);
+            stepSize /= 2;
+            scale /= 2;
+        }
+
+        // Map height values to terrain types
+        const newMap = [];
+        const waterThreshold = waterPercentage; // Threshold for water based on percentage
+        for (let y = 0; y < height; y++) {
+            const row = [];
+            for (let x = 0; x < width; x++) {
+                const elevation = heightMap[y][x];
+                let tileIndex;
+
+                if (elevation < waterThreshold) {
+                    tileIndex = 0; // Deep water
+                } else if (elevation < waterThreshold + 0.1) {
+                    tileIndex = 2; // Shallow water
+                } else if (elevation < 0.5) {
+                    tileIndex = 4; // Grass
+                } else if (elevation < 0.7) {
+                    tileIndex = 6; // Forest
+                } else if (elevation < 0.85) {
+                    tileIndex = 7; // Hills
+                } else {
+                    tileIndex = 8; // Mountains
+                }
+
+                row.push(tileIndex);
+            }
+            newMap.push(row);
+        }
+
+        return newMap;
+    },
 };
 
 // Simple Simplex Noise implementation for map generation
