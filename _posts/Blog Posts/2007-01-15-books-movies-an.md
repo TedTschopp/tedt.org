@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: 'ComparingChildren of Men'': Book and Movie Exploration'
+title: 'Comparing Children of Men: Book and Movie Exploration'
 title-url:
 subtitle: An Insightful Analysis of Themes and Differences between the Novel and Film
 subtitle-url:

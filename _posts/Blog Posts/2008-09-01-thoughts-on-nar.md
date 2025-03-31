@@ -1,8 +1,7 @@
 ---
 layout: post
 
-title: 'The Narrative Fallacy inThe Black Swan'': An Exploration of Belief and
-    Reasoning'
+title: 'The Narrative Fallacy in The Black Swan: An Exploration of Belief and Reasoning'
 title-url:
 subtitle: Understanding Inductive Reasoning and Its Impact on Religion
 subtitle-url:

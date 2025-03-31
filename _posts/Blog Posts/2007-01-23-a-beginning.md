@@ -37,17 +37,17 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image: img/2007-01/A-Beginning.png
 image-alt:
-image-artist:
+image-artist: Ted Tschopp
 image-artist-URL:
 image-credits:
 image-credits-URL:
 image-credits-artist:
 image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
+image-credits-title: 
+image-description:  Close-up portrait of a pensive young woman at night, holding a leather-bound journal, stars reflected in her eyes, night-sky in background with bright constellations like gemstones, soft ambient city light and moonlight lighting the frame, mood of longing memory and quiet wonder, Photography, 85mm lens f/1.8 low-light handheld Canon EOS R5 cinematic tone
+image-title: A Beginning
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
