@@ -76,7 +76,15 @@
                                         {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
                                     {% endif %}
                                 {% else %}
-                                    {% assign image_URL = site.featured-image %}
+                                    {if site.image %}
+                                        {% if site.featured-image contains "http" %}
+                                            {% assign image_URL = site.featured-image %}
+                                        {% else %}
+                                            {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
+                                        {% endif %}
+                                    {% else %}
+                                        {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided-image.webp" %}
+                                    {% endif %}
                                 {% endif %}
 
 
