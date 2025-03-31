@@ -47,7 +47,7 @@ Seed (–seed <integer between 0-4294967295>): Specifies a seed number to genera
 
 Stop (–stop <integer between 10-100>): Finishes a job part way through the process. Stopping a job at an earlier percentage can create blurrier, less detailed results.
 
-Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V6.1) is the default setting.  Always us--v6.1
+Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V6.1) is the default setting.  Always use --v6.1
 
 Stylize (–stylize or --s ): Influences how strongly Midjourney’s default aesthetic style is applied to jobs. This parameter accepts a number from 0 to 1000, where 0 produces images that more closely resemble the input prompt and 1000 produces images with the strongest default Midjourney aesthetic style. Stylize's default value is 100.  Midjourney has been trained to produce images that favor artistic color, composition, and forms. The --stylize or --s parameter influences how strongly this training is applied. Low stylization values produce images that closely match the prompt but are less artistic. High stylization values create images that are very artistic but less connected to the prompt.
 
