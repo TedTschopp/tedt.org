@@ -18,12 +18,19 @@
         #map-container {
             margin: 20px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
+            display: flex; /* Change to flex layout */
+            flex-direction: row; /* Arrange children side by side */
+            align-items: flex-start; /* Align items at the top */
+            gap: 15px; /* Add spacing between the map and globe */
+        }
+        #mini-map-container {
+            flex: 1; /* Allow the mini-map to grow */
+        }
+        #mini-globe-wrapper {
+            flex: 0 0 150px; /* Fix the globe's width */
         }
         #map-canvas {
+            flex: 1; /* Allow the map canvas to grow */
             border: 2px solid #444;
             image-rendering: pixelated;
             image-rendering: crisp-edges;
@@ -132,6 +139,47 @@
             width: 100%; /* Fill the container */
             height: 100%; /* Fill the container */
         }
+        /* Globe styles */
+        #mini-globe-wrapper {
+            position: relative;
+            width: 150px; /* Fixed size for the globe */
+            height: 150px;
+            margin: 10px auto 0;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        #mini-globe-svg {
+            width: 100%;
+            height: 100%;
+            background-color: #000033; /* Dark blue background */
+        }
+        .globe-sphere {
+            fill: #000033;
+            stroke: #336;
+        }
+        .globe-graticule {
+            fill: none;
+            stroke: rgba(100, 100, 150, 0.3);
+            stroke-width: 0.5px;
+        }
+        #globe-viewport-indicator {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border: 1px solid #ff0;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 0, 0.5);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+        .globe-title {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+            color: #aaa;
+        }
         .graticule {
             fill: none;
             stroke: rgba(100, 100, 150, 0.3);
@@ -147,7 +195,6 @@
             height: 6px;
             border: 1px solid #ff0;
             border-radius: 50%;
-            background-color: rgba(255, 255, 0, 0.5);
             pointer-events: none;
             transform: translate(-50%, -50%);
         }
@@ -222,6 +269,8 @@
                 <svg id="mini-map-svg"></svg>
                 <div id="viewport-indicator"></div>
             </div>
+            <!-- Globe display -->
+            <div class="globe-title">World Globe</div>
             <div id="mini-globe-wrapper">
                 <svg id="mini-globe-svg"></svg>
                 <div id="globe-viewport-indicator"></div>
@@ -1133,6 +1182,97 @@
             // Resize on load and window resize
             resizeMiniGlobe();
             window.addEventListener('resize', resizeMiniGlobe);
+            
+            // Function to draw the globe with map data
+            function drawGlobe() {
+                // Clear the globe SVG
+                miniGlobeSvg.html("");
+
+                // Convert map to GeoJSON if not already done
+                if (!geoJsonMap) {
+                    geoJsonMap = mapToGeoJSON(map);
+                }
+
+                // Create orthographic projection for the globe
+                const globeProjection = d3.geoOrthographic()
+                    .scale(70) // Adjust scale for the globe size
+                    .translate([75, 75]) // Center the globe in the 150x150 SVG
+                    .rotate(projectionRotation)
+                    .clipAngle(90);
+
+                // Create path generator for the globe
+                const globePath = d3.geoPath().projection(globeProjection);
+
+                // Draw the globe background
+                miniGlobeSvg.append("path")
+                    .datum({ type: "Sphere" })
+                    .attr("class", "globe-sphere")
+                    .attr("d", globePath);
+
+                // Draw graticule lines
+                const graticule = d3.geoGraticule().step([20, 20]);
+                miniGlobeSvg.append("path")
+                    .datum(graticule)
+                    .attr("class", "globe-graticule")
+                    .attr("d", globePath);
+
+                // Draw map features on the globe
+                miniGlobeSvg.selectAll(".globe-feature")
+                    .data(geoJsonMap.features)
+                    .enter()
+                    .append("path")
+                    .attr("class", "globe-feature")
+                    .attr("d", globePath)
+                    .attr("fill", d => getTileColor(d.properties.tileType))
+                    .attr("stroke", "none");
+
+                // Draw the viewport indicator
+                drawGlobeViewportIndicator(globeProjection);
+            }
+
+            // Function to draw the viewport indicator on the globe
+            function drawGlobeViewportIndicator(globeProjection) {
+                // Calculate the center of the current viewport
+                const viewportCenterX = viewX + DISPLAY_WIDTH / 2;
+                const viewportCenterY = viewY + DISPLAY_HEIGHT / 2;
+
+                // Convert to longitude/latitude
+                const lon = (viewportCenterX / CONFIG.MAP_WIDTH) * 360 - 180;
+                const lat = 90 - (viewportCenterY / CONFIG.MAP_HEIGHT) * 180;
+
+                // Project the coordinates
+                const point = globeProjection([lon, lat]);
+
+                // Only draw the indicator if the point is visible
+                if (point && !isNaN(point[0]) && !isNaN(point[1])) {
+                    // Clear any existing viewport indicator
+                    miniGlobeSvg.select("#globe-viewport-indicator").remove();
+
+                    // Draw the new viewport indicator
+                    miniGlobeSvg.append("circle")
+                        .attr("id", "globe-viewport-indicator")
+                        .attr("cx", point[0])
+                        .attr("cy", point[1])
+                        .attr("r", 4)
+                        .attr("fill", "yellow")
+                        .attr("stroke", "black")
+                        .attr("stroke-width", 1);
+                }
+            }
+
+            // Function to animate the globe rotation
+            function animateGlobe() {
+                projectionRotation[0] += 0.5; // Rotate the globe
+                drawGlobe(); // Redraw the globe with the updated rotation
+                requestAnimationFrame(animateGlobe); // Continue animation
+            }
+
+            // Start the globe animation after the map is generated
+            setTimeout(() => {
+                if (geoJsonMap) {
+                    animateGlobe();
+                }
+            }, 1000);
         });
     </script>
 </body>
