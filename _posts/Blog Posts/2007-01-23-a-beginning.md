@@ -96,4 +96,3 @@ She flipped to the beginning of the story and read the first line.
 > &ldquo;It was in the days before the burning gems fill the night sky, when the King and the Queen of all the Earth walked among us still.&rdquo;
 
 The clock started to chime; putting down the manuscript she looked up and realized that it was way past the time she had planned on going to bed.   Tomorrow would be here soon.  She needed sleep.  The university librarian was going to be here there in less than 8 hours to take several boxes of books her grandfather had left them in his will.  Now was not the time to remember the story.  Now was the time for sleep.  
-</p>
