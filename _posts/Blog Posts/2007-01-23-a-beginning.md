@@ -1,41 +1,61 @@
 ---
 layout: post
 
-title: A Beginning
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
+title: "A Beginning"
+subtitle: "A spark from the past lights the path ahead"
+quote: "It was in the days before the burning gems filled the night sky, when the King and the Queen of all the Earth walked among us still."
+excerpt: "A young woman uncovers her grandfather’s journals, unlocking forgotten myths and half-remembered truths in a quiet moment of grief and wonder."
+source: "Original Content"
+source-url: ""
+call-to-action: "Read the first chapter of a new work of fiction—where memory, myth, and the stars converge."
 
 date: 2007-01-23 13:54:06+00:00
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
-    url: https://tedt.org
+    url: https://tedt.org/
 
 bullets:
+    - A return to fiction writing after years of silence
+    - Introduces a mysterious legacy passed down through journals
+    - Explores themes of memory, myth, and wonder
+    - Draws from researched folklore and historical echoes
+    - Sets the stage for a larger tale to unfold
 
-description:
-seo-description:
+description: >
+  Ted Tschopp shares the first chapter of a new fiction project, rooted in memory and myth. A woman sorting through her grandfather’s papers discovers echoes of ancient stories, written in his hand but drawn from deeper wells of human remembrance.
 
-categories:
-- Personal Writing
-tags:
-keywords:
+seo-description: >
+  A new work of fiction begins as a granddaughter unearths her grandfather’s journals and the forgotten myths within. Read the first chapter of Ted Tschopp’s latest story.
 
+categories: 
+    - Personal Writing 
+    - Religion
+    - Folklore
+    - Role Playing Games
 
+tags: 
+    - fiction
+    - journal
+    - mythology
+    - remembrance
+    - stars
+    - beginning
+
+keywords: 
+    - fiction writing
+    - journal discovery
+    - myth and memory
+    - ancient stories
+    - family legacy
+    - folklore-inspired fiction
 
 location:
     name: Temple City, CA
 coordinates:
     latitude: 34.099024
     longitude: -118.069288
-
 
 image: img/2007-01/A-Beginning.png
 image-alt:
