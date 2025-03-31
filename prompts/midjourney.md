@@ -4,13 +4,13 @@ Here is information about Midjourney as well as a prompt guide:
 
 About Midjourney:
 
-Midjourney is an AI text-to-image generator. As the brand’s website states, it aims to ‘explore new mediums of thought and expanding the imaginative powers of the human species’. Midjourney asks you to input a worded prompt for an image, for example ‘a fox wearing a top hat in the style of a Roald Dahl illustration’ and in a few seconds, you’ll be returned multiple attempts at this image in the form of a 4x4 image grid. These models have been taught the relationship shared between an image and the text that is used to describe them. The team behind Midjourney are now on the sixth iteration (V6). V6 offers higher image quality, more diverse outputs, wider stylistic range, support for seamless textures, wider aspect ratios, better image promoting, and dynamic range.
+Midjourney is an AI text-to-image generator. As the brand’s website states, it aims to ‘explore new mediums of thought and expanding the imaginative powers of the human species’. Midjourney asks you to input a worded prompt for an image, for example ‘a fox wearing a top hat in the style of a Roald Dahl illustration’ and in a few seconds, you’ll be returned multiple attempts at this image in the form of a 4x4 image grid. These models have been taught the relationship shared between an image and the text that is used to describe them. The team behind Midjourney are now on the sixth iteration (V6.1). V6.1 offers higher image quality, more diverse outputs, wider stylistic range, support for seamless textures, wider aspect ratios, better image promoting, and dynamic range.
 
 
-Midjourney V6 Prompt Guide:
+Midjourney V6.1 Prompt Guide:
 
-To use Midjourney V6, add the --v 6 parameter to the end of a prompt. This model has very high Coherency, excels at interpreting natural language prompts, is higher resolution, and supports advanced features like –stylize, –chaos, and aspect ratios.
-In --v 6, to generate something other than a photographic image, you will need to reference art movements, artistic techniques, genres, media type, games titles, directors, artist names, influences, time periods, etc. To invoke the aesthetic style of an image, try referencing two or more of these:
+To use Midjourney V6.1, add the --v6.1 parameter to the end of a prompt. This model has very high Coherency, excels at interpreting natural language prompts, is higher resolution, and supports advanced features like –stylize, –chaos, and aspect ratios.
+In --v6.1, to generate something other than a photographic image, you will need to reference art movements, artistic techniques, genres, media type, games titles, directors, artist names, influences, time periods, etc. To invoke the aesthetic style of an image, try referencing two or more of these:
 
 - Art movement: Identifying the art movement in the prompt will introduce its style and techniques. Examples include Impressionism, Surrealism, or Pop Art.
 
@@ -48,9 +48,9 @@ Midjourney has been trained to produce images that favor artistic color, composi
 --stylize's default value is 100.
 To use stylize, Add --stylize <value> or --s <value> to the end of your prompt.
 
-Midjourney V6 Prompt Examples:
+Midjourney V6.1 Prompt Examples:
 
-Now that you know how to prompt in Midjourney V6, here are some example prompts that put all of that information together:
+Now that you know how to prompt in Midjourney V6.1, here are some example prompts that put all of that information together:
 
 Zack Snyder’s Wonderwoman portrait in chiaroscuro black & white graphite pencil, hard-key side light, golden armor, fierce eyes, moody, wet, rain, shiny, hyper realism, cinematic lighting --ar 4:7 --s 555 --c 3 
 
