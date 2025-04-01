@@ -64,29 +64,27 @@
                                 {% endif %}
 
                                 {% if page.image-credits-artist-URL %}
-                                    {% assign image_credits_artist_URL = page.image-credits-artist %}
+                                    {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
                                 {% elsif page.image-artist-URL %}
                                     {% assign image_credits_artist_URL = page.image-artist-URL %}
                                 {% endif %}
 
-                                {% if page.image %}
-                                    {% if page.image contains "http" %}
-                                        {% assign image_URL = page.image %}
+                                {% if page.image contains "http" %}
+                                    {% assign image_URL = page.image %}
+                                {% else %}
+                                    {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                                {% endif %}
+                            {% else %}
+                                {% if site.featured-image %}
+                                    {% if site.featured-image contains "http" %}
+                                        {% assign image_URL = site.featured-image %}
                                     {% else %}
-                                        {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                                        {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
                                     {% endif %}
                                 {% else %}
-                                    {if site.image %}
-                                        {% if site.featured-image contains "http" %}
-                                            {% assign image_URL = site.featured-image %}
-                                        {% else %}
-                                            {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
-                                        {% endif %}
-                                    {% else %}
-                                        {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
-                                    {% endif %}
+                                    {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
                                 {% endif %}
-
+                            {% endif %}
 
                                 <div class="card h-100 position-relative">
                                     <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
