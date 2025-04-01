@@ -25,6 +25,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Ensure Ruby version is 2.5 or newer
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
