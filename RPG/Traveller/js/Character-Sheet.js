@@ -2505,3 +2505,33 @@ function initializeCharacterSheet() {
     updateWealthDisplay();
   }
 }
+
+// Function to add augment to the augments table
+function addAugment() {
+  const augmentType = document.getElementById("augmentType").value;
+  const augmentTL = document.getElementById("augmentTL").value;
+  const augmentImprovement = document.getElementById("augmentImprovement").value;
+
+  if (!augmentType) {
+    alert("Please enter an augment type");
+    return;
+  }
+
+  const augmentsContainer = document.getElementById("augments-container");
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>${augmentType}</td>
+    <td>${augmentTL || "-"}</td>
+    <td>${augmentImprovement || "-"}</td>
+    <td class="no-print">
+      <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
+    </td>
+  `;
+
+  augmentsContainer.appendChild(row);
+
+  // Clear inputs
+  document.getElementById("augmentType").value = "";
+  document.getElementById("augmentTL").value = "";
+  document.getElementById("augmentImprovement").value = "";
+}
