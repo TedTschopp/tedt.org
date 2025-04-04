@@ -179,7 +179,7 @@
                     rgbText.textContent = `RGB: ${recalculatedRgb.join(', ')}`;
 
                     const cmykText = document.createElement('div');
-                    const recalculatedCmyk = rgbToCmyk(...recalculatedRgb);
+                    const recalculatedCmyk = rgbToCmyk(...recalculatedRgb).map(value => isNaN(value) ? 0 : value);
                     cmykText.textContent = `CMYK: ${recalculatedCmyk.join(', ')}`;
 
                     const hlsText = document.createElement('div');
