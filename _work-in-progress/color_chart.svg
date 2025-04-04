@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400">
+  <style>
+    .bold-box {
+      fill: none;
+      stroke: black;
+      stroke-width: 4;
+    }
+    .details {
+      font-size: 8px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+  <rect x="0" y="100" width="100" height="100" fill="#00664F"/>
+  <text x="5" y="115" class="details" fill="#FFFFFF">Name: Deep Green</text>
+  <text x="5" y="125" class="details" fill="#FFFFFF">Pantone: 19-5513</text>
+  <text x="5" y="135" class="details" fill="#FFFFFF">CMYK: 100, 0, 50, 70</text>
+  <text x="5" y="145" class="details" fill="#FFFFFF">HLS: 160, 50%, 20%</text>
+  <text x="5" y="155" class="details" fill="#FFFFFF">RGB: 0, 102, 79</text>
+  <text x="5" y="165" class="details" fill="#FFFFFF">Hex: #00664F</text>
+  <text x="5" y="175" class="details" fill="#FFFFFF">WCAG White: █ (12.63)</text>
+
+  <rect x="100" y="100" width="100" height="100" fill="#FED141"/>
+  <text x="105" y="115" class="details" fill="#000000">Name: Bright Yellow</text>
+  <text x="105" y="125" class="details" fill="#000000">Pantone: 13-0858</text>
+  <text x="105" y="135" class="details" fill="#000000">CMYK: 0, 10, 80, 0</text>
+  <text x="105" y="145" class="details" fill="#000000">HLS: 50, 90%, 60%</text>
+  <text x="105" y="155" class="details" fill="#000000">RGB: 254, 209, 65</text>
+  <text x="105" y="165" class="details" fill="#000000">Hex: #FED141</text>
+  <text x="105" y="175" class="details" fill="#000000">WCAG Black: █ (21.00)</text>
+
+  <rect x="200" y="100" width="100" height="100" fill="#707372"/>
+  <text x="205" y="115" class="details" fill="#FFFFFF">Name: Neutral Gray</text>
+  <text x="205" y="125" class="details" fill="#FFFFFF">Pantone: 18-4006</text>
+  <text x="205" y="135" class="details" fill="#FFFFFF">CMYK: 0, 0, 0, 60</text>
+  <text x="205" y="145" class="details" fill="#FFFFFF">HLS: 160, 5%, 45%</text>
+  <text x="205" y="155" class="details" fill="#FFFFFF">RGB: 112, 115, 114</text>
+  <text x="205" y="165" class="details" fill="#FFFFFF">Hex: #707372</text>
+  <text x="205" y="175" class="details" fill="#FFFFFF">WCAG White: █ (4.53)</text>
+  <text x="205" y="185" class="details" fill="#000000">WCAG Black: █ (4.53)</text>
+
+  <rect x="300" y="100" width="100" height="100" fill="#101820"/>
+  <text x="305" y="115" class="details" fill="#FFFFFF">Name: Rich Black</text>
+  <text x="305" y="125" class="details" fill="#FFFFFF">Pantone: 19-4007</text>
+  <text x="305" y="135" class="details" fill="#FFFFFF">CMYK: 0, 0, 0, 90</text>
+  <text x="305" y="145" class="details" fill="#FFFFFF">HLS: 210, 5%, 10%</text>
+  <text x="305" y="155" class="details" fill="#FFFFFF">RGB: 16, 24, 32</text>
+  <text x="305" y="165" class="details" fill="#FFFFFF">Hex: #101820</text>
+  <text x="305" y="175" class="details" fill="#FFFFFF">WCAG White: █ (15.30)</text>
+
+  <rect x="400" y="100" width="100" height="100" fill="#53565A"/>
+  <text x="405" y="115" class="details" fill="#FFFFFF">Name: Charcoal Gray</text>
+  <text x="405" y="125" class="details" fill="#FFFFFF">Pantone: 18-4005</text>
+  <text x="405" y="135" class="details" fill="#FFFFFF">CMYK: 0, 0, 0, 70</text>
+  <text x="405" y="145" class="details" fill="#FFFFFF">HLS: 210, 5%, 30%</text>
+  <text x="405" y="155" class="details" fill="#FFFFFF">RGB: 83, 86, 90</text>
+  <text x="405" y="165" class="details" fill="#FFFFFF">Hex: #53565A</text>
+  <text x="405" y="175" class="details" fill="#FFFFFF">WCAG White: █ (6.00)</text>
+
+  <rect x="500" y="100" width="100" height="100" fill="#B1B3B3"/>
+  <text x="505" y="115" class="details" fill="#000000">Name: Light Gray</text>
+  <text x="505" y="125" class="details" fill="#000000">Pantone: 14-4102</text>
+  <text x="505" y="135" class="details" fill="#000000">CMYK: 0, 0, 0, 20</text>
+  <text x="505" y="145" class="details" fill="#000000">HLS: 210, 10%, 70%</text>
+  <text x="505" y="155" class="details" fill="#000000">RGB: 177, 179, 179</text>
+  <text x="505" y="165" class="details" fill="#000000">Hex: #B1B3B3</text>
+  <text x="505" y="175" class="details" fill="#000000">WCAG Black: █ (13.00)</text>
+
+  <rect x="600" y="100" width="100" height="100" fill="#006269"/>
+  <text x="605" y="115" class="details" fill="#FFFFFF">Name: Deep Teal</text>
+  <text x="605" y="125" class="details" fill="#FFFFFF">Pantone: 19-4916</text>
+  <text x="605" y="135" class="details" fill="#FFFFFF">CMYK: 100, 0, 50, 70</text>
+  <text x="605" y="145" class="details" fill="#FFFFFF">HLS: 180, 50%, 20%</text>
+  <text x="605" y="155" class="details" fill="#FFFFFF">RGB: 0, 98, 105</text>
+  <text x="605" y="165" class="details" fill="#FFFFFF">Hex: #006269</text>
+  <text x="605" y="175" class="details" fill="#FFFFFF">WCAG White: █ (12.00)</text>
+
+  <rect x="700" y="100" width="100" height="100" fill="#00A9E0"/>
+  <text x="705" y="115" class="details" fill="#000000">Name: Bright Cyan</text>
+  <text x="705" y="125" class="details" fill="#000000">Pantone: 15-4825</text>
+  <text x="705" y="135" class="details" fill="#000000">CMYK: 100, 0, 0, 0</text>
+  <text x="705" y="145" class="details" fill="#000000">HLS: 200, 90%, 50%</text>
+  <text x="705" y="155" class="details" fill="#000000">RGB: 0, 169, 224</text>
+  <text x="705" y="165" class="details" fill="#000000">Hex: #00A9E0</text>
+  <text x="705" y="175" class="details" fill="#000000">WCAG Black: █ (15.00)</text>
+
+  <rect x="800" y="100" width="100" height="100" fill="#3CDBC0"/>
+  <text x="805" y="115" class="details" fill="#000000">Name: Aqua Green</text>
+  <text x="805" y="125" class="details" fill="#000000">Pantone: 14-4811</text>
+  <text x="805" y="135" class="details" fill="#000000">CMYK: 50, 0, 20, 0</text>
+  <text x="805" y="145" class="details" fill="#000000">HLS: 170, 80%, 50%</text>
+  <text x="805" y="155" class="details" fill="#000000">RGB: 60, 219, 192</text>
+  <text x="805" y="165" class="details" fill="#000000">Hex: #3CDBC0</text>
+  <text x="805" y="175" class="details" fill="#000000">WCAG Black: █ (12.00)</text>
+
+  <rect x="900" y="100" width="100" height="100" fill="#D2D755"/>
+  <text x="905" y="115" class="details" fill="#000000">Name: Lime Green</text>
+  <text x="905" y="125" class="details" fill="#000000">Pantone: 14-0446</text>
+  <text x="905" y="135" class="details" fill="#000000">CMYK: 20, 0, 80, 0</text>
+  <text x="905" y="145" class="details" fill="#000000">HLS: 70, 80%, 60%</text>
+  <text x="905" y="155" class="details" fill="#000000">RGB: 210, 215, 85</text>
+  <text x="905" y="165" class="details" fill="#000000">Hex: #D2D755</text>
+  <text x="905" y="175" class="details" fill="#000000">WCAG Black: █ (20.00)</text>
+
+  <rect x="1000" y="100" width="100" height="100" fill="#658D1B"/>
+  <text x="1005" y="115" class="details" fill="#FFFFFF">Name: Olive Green</text>
+  <text x="1005" y="125" class="details" fill="#FFFFFF">Pantone: 18-0527</text>
+  <text x="1005" y="135" class="details" fill="#FFFFFF">CMYK: 50, 0, 100, 50</text>
+  <text x="1005" y="145" class="details" fill="#FFFFFF">HLS: 90, 50%, 30%</text>
+  <text x="1005" y="155" class="details" fill="#FFFFFF">RGB: 101, 141, 27</text>
+  <text x="1005" y="165" class="details" fill="#FFFFFF">Hex: #658D1B</text>
+  <text x="1005" y="175" class="details" fill="#FFFFFF">WCAG White: █ (7.00)</text>
+
+  <rect x="1100" y="100" width="100" height="100" fill="#E87722"/>
+  <text x="1105" y="115" class="details" fill="#000000">Name: Burnt Orange</text>
+  <text x="1105" y="125" class="details" fill="#000000">Pantone: 16-1448</text>
+  <text x="1105" y="135" class="details" fill="#000000">CMYK: 0, 70, 100, 30</text>
+  <text x="1105" y="145" class="details" fill="#000000">HLS: 30, 80%, 50%</text>
+  <text x="1105" y="155" class="details" fill="#000000">RGB: 232, 119, 34</text>
+  <text x="1105" y="165" class="details" fill="#000000">Hex: #E87722</text>
+  <text x="1105" y="175" class="details" fill="#000000">WCAG Black: █ (15.00)</text>
+
+  <rect x="1200" y="100" width="100" height="100" fill="#F0B323"/>
+  <text x="1205" y="115" class="details" fill="#000000">Name: Golden Yellow</text>
+  <text x="1205" y="125" class="details" fill="#000000">Pantone: 14-0848</text>
+  <text x="1205" y="135" class="details" fill="#000000">CMYK: 0, 20, 100, 0</text>
+  <text x="1205" y="145" class="details" fill="#000000">HLS: 40, 90%, 50%</text>
+  <text x="1205" y="155" class="details" fill="#000000">RGB: 240, 179, 35</text>
+  <text x="1205" y="165" class="details" fill="#000000">Hex: #F0B323</text>
+  <text x="1205" y="175" class="details" fill="#000000">WCAG Black: █ (20.00)</text>
+
+  <rect x="1300" y="100" width="100" height="100" fill="#722257"/>
+  <text x="1305" y="115" class="details" fill="#FFFFFF">Name: Deep Burgundy</text>
+  <text x="1305" y="125" class="details" fill="#FFFFFF">Pantone: 19-2025</text>
+  <text x="1305" y="135" class="details" fill="#FFFFFF">CMYK: 0, 100, 50, 50</text>
+  <text x="1305" y="145" class="details" fill="#FFFFFF">HLS: 330, 50%, 30%</text>
+  <text x="1305" y="155" class="details" fill="#FFFFFF">RGB: 114, 34, 87</text>
+  <text x="1305" y="165" class="details" fill="#FFFFFF">Hex: #722257</text>
+  <text x="1305" y="175" class="details" fill="#FFFFFF">WCAG White: █ (10.00)</text>
+
+  <rect x="0" y="100" width="1400" height="100" class="bold-box"/>
+  <!-- Removed rows 1, 3, and 4 -->
+</svg>
