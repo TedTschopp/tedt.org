@@ -14,7 +14,7 @@ layout: null
     <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
     <link>{{ site.url }}</link>{% assign count = 0 %}
       {% assign sorted_posts = site.posts | sort: 'date' | reverse  %}
-      {% for post in sorted_posts | orderby %}{% unless post.link %}
+      {% for post in sorted_posts %}{% unless post.link %}
         {% if post.layout contains "micropubpost" %}
             <!-- Do Nothing -->
             {% continue %}
