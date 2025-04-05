@@ -20,7 +20,41 @@
 
 <body>
     <script>
-        const colors = [
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const cParam = params.get('C');
+            if (cParam) {
+                const normalizedCParam = cParam.trim().toLowerCase();
+                if (normalizedCParam === 'ted' || normalizedCParam === 'teds') {
+                    return [
+                        { hex: '#b1b3b3' },
+                        { hex: '#101820' },
+                        { hex: '#00446f' },
+                        { hex: '#e86027' },
+                        { hex: '#00a9e0' },
+                        { hex: '#007bff' },
+                        { hex: '#f2bc57' },
+                        { hex: '#6f1a07' },
+                        { hex: '#00b339' },
+                        { hex: '#f2bc57' },
+                        { hex: '#f90041' },
+                    ];
+                }
+                const hexColors = cParam.split(',').map(color => {
+                    if (!color.startsWith('#')) {
+                        color = `#${color}`;
+                    }
+                    return color.trim();
+                });
+                if (hexColors.every(color => /^#[0-9A-Fa-f]{6}$/.test(color))) {
+                    return hexColors.map(hex => ({ hex }));
+                }
+            }
+            return null;
+        }
+
+        const urlColors = getUrlParams();
+        const colors = urlColors || [
             { hex: '#00664F' },
             { hex: '#FED141' },
             { hex: '#707372' },
@@ -119,6 +153,25 @@
             // Set padding and margin to 0 for the container
             container.style.padding = '0';
             container.style.margin = '0';
+            container.style.justifyContent = 'center';
+            container.style.gridTemplateColumns = `repeat(${tailwindShades.length}, 200px)`;
+
+            document.body.appendChild(container);
+
+            const headerRow = document.createElement('div');
+            headerRow.style.display = 'grid';
+            headerRow.style.gridTemplateColumns = `repeat(${tailwindShades.length}, 200px)`;
+            headerRow.style.gap = '8px';
+            headerRow.style.fontWeight = 'bold';
+            headerRow.style.textAlign = 'center';
+
+            tailwindShades.forEach(shade => {
+                const headerCell = document.createElement('div');
+                headerCell.textContent = shade;
+                headerRow.appendChild(headerCell);
+            });
+
+            container.insertBefore(headerRow, container.firstChild);
 
             for (const color of colors) {
                 const baseRgbColor = hexToRgb(color.hex);
@@ -156,6 +209,12 @@
                     box.style.textAlign = 'left';
                     box.style.position = 'relative';
 
+                    if (shade === '500') {
+                        box.style.border = '4px solid black';
+                    } else {
+                        box.style.border = '4px solid rgba(0, 0, 0, 0)';
+                    }
+
                     // Ensure recalculatedRgb is initialized before use
                     const recalculatedRgb = hexToRgb(shades[shade]);
 
@@ -163,28 +222,33 @@
                     const dynamicNameText = document.createElement('div');
                     dynamicNameText.textContent = `${dynamicBaseColorName}`;
                     dynamicNameText.style.fontWeight = 'bold';
+                    dynamicNameText.style.textDecoration = 'underline';
                     dynamicNameText.style.fontSize = '12pt';
                     box.appendChild(dynamicNameText);
 
                     const baseColorNameText = document.createElement('div');
-                    baseColorNameText.textContent = `${baseColorName} ${shade}`;
+                    if (shade === '500') {
+                        baseColorNameText.textContent = `Base Color`;
+                    } else {
+                        baseColorNameText.textContent = `${baseColorName} ${shade}`;
+                    }
                     baseColorNameText.style.fontWeight = 'bold';
-                    baseColorNameText.style.fontSize = '12pt';
+                    baseColorNameText.style.fontSize = '10pt';
                     box.appendChild(baseColorNameText);
 
                     const hexText = document.createElement('div');
-                    hexText.textContent = `Hex: ${shades[shade]}`;
+                    hexText.innerHTML = `<strong>Hex:</strong> ${shades[shade].toUpperCase()}`;
 
                     const rgbText = document.createElement('div');
-                    rgbText.textContent = `RGB: ${recalculatedRgb.join(', ')}`;
+                    rgbText.innerHTML = `<strong>RGB:</strong> ${recalculatedRgb.join(', ')}`;
 
                     const cmykText = document.createElement('div');
                     const recalculatedCmyk = rgbToCmyk(...recalculatedRgb).map(value => isNaN(value) ? 0 : value);
-                    cmykText.textContent = `CMYK: ${recalculatedCmyk.join(', ')}`;
+                    cmykText.innerHTML = `<strong>CMYK:</strong> ${recalculatedCmyk.join(', ')}`;
 
                     const hlsText = document.createElement('div');
                     const recalculatedHls = rgbToHls(...recalculatedRgb);
-                    hlsText.textContent = `HLS: ${recalculatedHls.join(', ')}`;
+                    hlsText.innerHTML = `<strong>HLS:</strong> ${recalculatedHls.join(', ')}`;
 
                     box.appendChild(hexText);
                     box.appendChild(rgbText);
@@ -206,11 +270,11 @@
                     }
 
                     const wcagWhiteText = document.createElement('div');
-                    wcagWhiteText.textContent = `WCAG White Ratio: ${recalculatedWcagWhiteRatio}:1`;
+                    wcagWhiteText.innerHTML = `<strong>WCAG:White:</strong> ${recalculatedWcagWhiteRatio}:1`;
                     box.appendChild(wcagWhiteText);
 
                     const wcagBlackText = document.createElement('div');
-                    wcagBlackText.textContent = `WCAG Black Ratio: ${recalculatedWcagBlackRatio}:1`;
+                    wcagBlackText.innerHTML = `<strong>WCAG:Black</strong> ${recalculatedWcagBlackRatio}:1`;
                     box.appendChild(wcagBlackText);
 
                     // Add sample text at the bottom of each box with conditional coloring
