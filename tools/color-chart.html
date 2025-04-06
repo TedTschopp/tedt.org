@@ -20,12 +20,12 @@
 
 <body>
     <script>
-        function getUrlParams() {
-            const params = new URLSearchParams(window.location.search);
-            const cParam = params.get('C');
-            if (cParam) {
-                const normalizedCParam = cParam.trim().toLowerCase();
-                if (normalizedCParam === 'ted' || normalizedCParam === 'teds') {
+        function getUrlParameters() {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const colorParameter = urlSearchParams.get('C');
+            if (colorParameter) {
+                const normalizedColorParameter = colorParameter.trim().toLowerCase();
+                if (normalizedColorParameter === 'ted' || normalizedColorParameter === 'teds') {
                     return [
                         { hex: '#b1b3b3' },
                         { hex: '#101820' },
@@ -40,20 +40,20 @@
                         { hex: '#f90041' },
                     ];
                 }
-                const hexColors = cParam.split(',').map(color => {
+                const hexColorArray = colorParameter.split(',').map(color => {
                     if (!color.startsWith('#')) {
                         color = `#${color}`;
                     }
                     return color.trim();
                 });
-                if (hexColors.every(color => /^#[0-9A-Fa-f]{6}$/.test(color))) {
-                    return hexColors.map(hex => ({ hex }));
+                if (hexColorArray.every(color => /^#[0-9A-Fa-f]{6}$/.test(color))) {
+                    return hexColorArray.map(hex => ({ hex }));
                 }
             }
             return null;
         }
 
-        const colors = (getUrlParams() || [
+        const colorDefinitions = (getUrlParameters() || [
             { hex: '#00664F' },
             { hex: '#FED141' },
             { hex: '#707372' },
@@ -72,10 +72,10 @@
             ...color,
             rgb: tinycolor(color.hex).toRgb(),
             hls: tinycolor(color.hex).toHsl(),
-            cmyk: rgbToCmyk(tinycolor(color.hex).toRgb().r, tinycolor(color.hex).toRgb().g, tinycolor(color.hex).toRgb().b),
+            cmyk: convertRgbToCmyk(tinycolor(color.hex).toRgb().r, tinycolor(color.hex).toRgb().g, tinycolor(color.hex).toRgb().b),
         }));
 
-        const Uses = [
+        const colorUsageDescriptions = [
             "Backgrounds and subtle highlights", // 50
             "Backgrounds and light accents",    // 100
             "Light accents and borders",        // 200
@@ -89,96 +89,93 @@
             "Dark accents and overlays"         // 950
         ];
 
-        function calculateWCAGContrastRatio(rgb1, rgb2) {
-            function luminance(r, g, b) {
-                const a = [r, g, b].map(v => {
-                    v /= 255;
-                    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+        function calculateContrastRatio(rgbColor1, rgbColor2) {
+            function calculateLuminance(r, g, b) {
+                const linearRgb = [r, g, b].map(value => {
+                    value /= 255;
+                    return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
                 });
-                return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+                return linearRgb[0] * 0.2126 + linearRgb[1] * 0.7152 + linearRgb[2] * 0.0722;
             }
 
-            const lum1 = luminance(...rgb1);
-            const lum2 = luminance(...rgb2);
-            const brightest = Math.max(lum1, lum2);
-            const darkest = Math.min(lum1, lum2);
-            return ((brightest + 0.05) / (darkest + 0.05)).toFixed(2);
+            const luminance1 = calculateLuminance(...rgbColor1);
+            const luminance2 = calculateLuminance(...rgbColor2);
+            const brighterLuminance = Math.max(luminance1, luminance2);
+            const darkerLuminance = Math.min(luminance1, luminance2);
+            return ((brighterLuminance + 0.05) / (darkerLuminance + 0.05)).toFixed(2);
         }
 
-        // Note: tinycolor does not directly support CMYK, so rgbToCmyk remains custom
-        function rgbToCmyk(r, g, b) {
-            const c = 1 - r / 255;
-            const m = 1 - g / 255;
-            const y = 1 - b / 255;
-            const k = Math.min(c, m, y);
+        function convertRgbToCmyk(red, green, blue) {
+            const cyan = 1 - red / 255;
+            const magenta = 1 - green / 255;
+            const yellow = 1 - blue / 255;
+            const black = Math.min(cyan, magenta, yellow);
             return [
-                ((c - k) / (1 - k) * 100).toFixed(0),
-                ((m - k) / (1 - k) * 100).toFixed(0),
-                ((y - k) / (1 - k) * 100).toFixed(0),
-                (k * 100).toFixed(0),
+                ((cyan - black) / (1 - black) * 100).toFixed(0),
+                ((magenta - black) / (1 - black) * 100).toFixed(0),
+                ((yellow - black) / (1 - black) * 100).toFixed(0),
+                (black * 100).toFixed(0),
             ];
         }
 
-        async function fetchColorName(hex) {
-            const response = await fetch(`https://api.color.pizza/v1/${hex.substring(1)}`);
+        async function fetchColorNameFromApi(hexColor) {
+            const response = await fetch(`https://api.color.pizza/v1/${hexColor.substring(1)}`);
             const data = await response.json();
             return data.colors[0].name;
         }
 
-        const Shades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
+        const colorShades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
 
-        async function createColorChart() {
-            const container = document.createElement('div');
-            container.style.display = 'grid';
-            container.style.gridTemplateColumns = `repeat(${Shades.length + 1}, 200px)`; // Adjust grid for Shades
-            container.style.gap = '8px';
-            // Set padding and margin to 0 for the container
-            container.style.padding = '0';
-            container.style.margin = '0';
-            container.style.justifyContent = 'center';
-            container.style.gridTemplateColumns = `repeat(${Shades.length}, 200px)`;
+        async function generateColorChart() {
+            const chartContainer = document.createElement('div');
+            chartContainer.style.display = 'grid';
+            chartContainer.style.gridTemplateColumns = `repeat(${colorShades.length + 1}, 200px)`;
+            chartContainer.style.gap = '8px';
+            chartContainer.style.padding = '0';
+            chartContainer.style.margin = '0';
+            chartContainer.style.justifyContent = 'center';
+            chartContainer.style.gridTemplateColumns = `repeat(${colorShades.length}, 200px)`;
 
-            document.body.appendChild(container);
+            document.body.appendChild(chartContainer);
 
             const headerRow = document.createElement('div');
             headerRow.style.display = 'grid';
-            headerRow.style.gridTemplateColumns = `repeat(${Shades.length}, 200px)`;
+            headerRow.style.gridTemplateColumns = `repeat(${colorShades.length}, 200px)`;
             headerRow.style.gap = '8px';
             headerRow.style.fontWeight = 'bold';
             headerRow.style.textAlign = 'center';
 
-            Shades.forEach((shade, index) => {
+            colorShades.forEach((shade, index) => {
                 const headerCell = document.createElement('div');
                 headerCell.style.display = 'flex';
                 headerCell.style.flexDirection = 'column';
                 headerCell.style.alignItems = 'center';
 
-                // Remove the shade number
-                const useText = document.createElement('div');
-                useText.textContent = Uses[index];
-                useText.style.fontSize = '16pt'; // Match font size to sample text
-                useText.style.fontWeight = 'bold'; // Match font weight to sample text
-                useText.style.fontFamily = 'sans-serif'; // Match font family to sample text
-                useText.style.textAlign = 'center';
+                const usageDescription = document.createElement('div');
+                usageDescription.textContent = colorUsageDescriptions[index];
+                usageDescription.style.fontSize = '16pt';
+                usageDescription.style.fontWeight = 'bold';
+                usageDescription.style.fontFamily = 'sans-serif';
+                usageDescription.style.textAlign = 'center';
 
-                headerCell.appendChild(useText);
+                headerCell.appendChild(usageDescription);
                 headerRow.appendChild(headerCell);
             });
 
-            container.insertBefore(headerRow, container.firstChild);
+            chartContainer.insertBefore(headerRow, chartContainer.firstChild);
 
-            for (const color of colors) {
-                const baseRgbColor = tinycolor(color.hex).toRgb();
-                const baseRgbArray = [baseRgbColor.r, baseRgbColor.g, baseRgbColor.b];
-                const baseCmykColor = rgbToCmyk(...baseRgbArray);
-                const baseHlsColor = tinycolor(color.hex).toHsl();
-                const baseWcagWhiteRatio = calculateWCAGContrastRatio(baseRgbArray, [255, 255, 255]);
-                const baseWcagBlackRatio = calculateWCAGContrastRatio(baseRgbArray, [0, 0, 0]);
-                const baseColorName = await fetchColorName(color.hex);
+            for (const color of colorDefinitions) {
+                const baseRgb = tinycolor(color.hex).toRgb();
+                const baseRgbArray = [baseRgb.r, baseRgb.g, baseRgb.b];
+                const baseCmyk = convertRgbToCmyk(...baseRgbArray);
+                const baseHls = tinycolor(color.hex).toHsl();
+                const contrastWithWhite = calculateContrastRatio(baseRgbArray, [255, 255, 255]);
+                const contrastWithBlack = calculateContrastRatio(baseRgbArray, [0, 0, 0]);
+                const baseColorName = await fetchColorNameFromApi(color.hex);
 
-                const shadePromises = Shades.map(async (shade, index) => {
-                    const box = document.createElement('div');
-                    const shades = {
+                const shadeBoxes = colorShades.map(async (shade, index) => {
+                    const colorBox = document.createElement('div');
+                    const shadeColors = {
                         50: tinycolor(color.hex).clone().lighten(45).toHexString(),
                         100: tinycolor(color.hex).clone().lighten(40).toHexString(),
                         200: tinycolor(color.hex).clone().lighten(30).toHexString(),
@@ -191,117 +188,112 @@
                         900: tinycolor(color.hex).clone().darken(40).toHexString(),
                         950: tinycolor(color.hex).clone().darken(45).toHexString(),
                     };
-                    box.style.backgroundColor = shades[shade];
-                    box.style.height = '150px';
-                    box.style.borderRadius = '8px';
-                    box.style.display = 'flex';
-                    box.style.flexDirection = 'column';
-                    box.style.alignItems = 'flex-start';
-                    box.style.justifyContent = 'flex-start';
-                    box.style.padding = '10px';
-                    box.style.fontFamily = 'sans-serif';
-                    box.style.fontSize = '12px';
-                    box.style.textAlign = 'left';
-                    box.style.position = 'relative';
+                    colorBox.style.backgroundColor = shadeColors[shade];
+                    colorBox.style.height = '150px';
+                    colorBox.style.borderRadius = '8px';
+                    colorBox.style.display = 'flex';
+                    colorBox.style.flexDirection = 'column';
+                    colorBox.style.alignItems = 'flex-start';
+                    colorBox.style.justifyContent = 'flex-start';
+                    colorBox.style.padding = '10px';
+                    colorBox.style.fontFamily = 'sans-serif';
+                    colorBox.style.fontSize = '12px';
+                    colorBox.style.textAlign = 'left';
+                    colorBox.style.position = 'relative';
 
                     if (shade === '500') {
-                        box.style.border = '4px solid black';
+                        colorBox.style.border = '4px solid black';
                     } else {
-                        box.style.border = '4px solid rgba(0, 0, 0, 0)';
+                        colorBox.style.border = '4px solid rgba(0, 0, 0, 0)';
                     }
 
-                    // Ensure recalculatedRgb is initialized before use
-                    const recalculatedRgb = tinycolor(shades[shade]).toRgb();
+                    const recalculatedRgb = tinycolor(shadeColors[shade]).toRgb();
                     const recalculatedRgbArray = [recalculatedRgb.r, recalculatedRgb.g, recalculatedRgb.b];
-                    const dynamicBaseColorName = await fetchColorName(shades[shade]);
-                    const dynamicNameText = document.createElement('div');
-                    dynamicNameText.textContent = `${dynamicBaseColorName}`;
-                    dynamicNameText.style.fontWeight = 'bold';
-                    dynamicNameText.style.textDecoration = 'underline';
-                    dynamicNameText.style.fontSize = '12pt';
-                    box.appendChild(dynamicNameText);
+                    const dynamicColorName = await fetchColorNameFromApi(shadeColors[shade]);
+                    const dynamicNameElement = document.createElement('div');
+                    dynamicNameElement.textContent = `${dynamicColorName}`;
+                    dynamicNameElement.style.fontWeight = 'bold';
+                    dynamicNameElement.style.textDecoration = 'underline';
+                    dynamicNameElement.style.fontSize = '12pt';
+                    colorBox.appendChild(dynamicNameElement);
 
-                    const baseColorNameText = document.createElement('div');
+                    const baseColorNameElement = document.createElement('div');
                     if (shade === '500') {
-                        baseColorNameText.textContent = `Base Color`;
+                        baseColorNameElement.textContent = `Base Color`;
                     } else {
-                        baseColorNameText.textContent = `${baseColorName} ${shade}`;
+                        baseColorNameElement.textContent = `${baseColorName} ${shade}`;
                     }
-                    baseColorNameText.style.fontWeight = 'bold';
-                    baseColorNameText.style.fontSize = '10pt';
-                    box.appendChild(baseColorNameText);
+                    baseColorNameElement.style.fontWeight = 'bold';
+                    baseColorNameElement.style.fontSize = '10pt';
+                    colorBox.appendChild(baseColorNameElement);
 
-                    const hexText = document.createElement('div');
-                    hexText.innerHTML = `<strong>Hex:</strong> ${shades[shade].toUpperCase()}`;
+                    const hexElement = document.createElement('div');
+                    hexElement.innerHTML = `<strong>Hex:</strong> ${shadeColors[shade].toUpperCase()}`;
 
-                    const rgbText = document.createElement('div');
-                    rgbText.innerHTML = `<strong>RGB:</strong> ${recalculatedRgbArray.join(', ')}`;
+                    const rgbElement = document.createElement('div');
+                    rgbElement.innerHTML = `<strong>RGB:</strong> ${recalculatedRgbArray.join(', ')}`;
 
-                    const cmykText = document.createElement('div');
-                    const recalculatedCmyk = rgbToCmyk(...recalculatedRgbArray).map(value => isNaN(value) ? 0 : value);
-                    cmykText.innerHTML = `<strong>CMYK:</strong> ${recalculatedCmyk.join(', ')}`;
+                    const cmykElement = document.createElement('div');
+                    const recalculatedCmyk = convertRgbToCmyk(...recalculatedRgbArray).map(value => isNaN(value) ? 0 : value);
+                    cmykElement.innerHTML = `<strong>CMYK:</strong> ${recalculatedCmyk.join(', ')}`;
 
-                    const hlsText = document.createElement('div');
-                    const recalculatedHls = tinycolor(shades[shade]).toHsl();
+                    const hlsElement = document.createElement('div');
+                    const recalculatedHls = tinycolor(shadeColors[shade]).toHsl();
                     const recalculatedHlsArray = [
                         Math.round(recalculatedHls.h),
                         `${Math.round(recalculatedHls.s * 100)}%`,
                         `${Math.round(recalculatedHls.l * 100)}%`
                     ];
-                    hlsText.innerHTML = `<strong>HLS:</strong> ${recalculatedHlsArray.join(', ')}`;
+                    hlsElement.innerHTML = `<strong>HLS:</strong> ${recalculatedHlsArray.join(', ')}`;
 
-                    box.appendChild(hexText);
-                    box.appendChild(rgbText);
-                    box.appendChild(cmykText);
-                    box.appendChild(hlsText);
+                    colorBox.appendChild(hexElement);
+                    colorBox.appendChild(rgbElement);
+                    colorBox.appendChild(cmykElement);
+                    colorBox.appendChild(hlsElement);
 
-                    // Ensure recalculated WCAG ratios are floating point numbers
-                    const recalculatedWcagWhiteRatio = parseFloat(calculateWCAGContrastRatio(recalculatedRgbArray, [255, 255, 255]));
-                    const recalculatedWcagBlackRatio = parseFloat(calculateWCAGContrastRatio(recalculatedRgbArray, [0, 0, 0]));
+                    const contrastWithWhiteRatio = parseFloat(calculateContrastRatio(recalculatedRgbArray, [255, 255, 255]));
+                    const contrastWithBlackRatio = parseFloat(calculateContrastRatio(recalculatedRgbArray, [0, 0, 0]));
 
-                    // Ensure text color is set to the highest WCAG ratio
-                    if (recalculatedWcagWhiteRatio > recalculatedWcagBlackRatio) {
-                        box.style.color = '#ffffff';
-                    } else if (recalculatedWcagBlackRatio > recalculatedWcagWhiteRatio) {
-                        box.style.color = '#000000';
+                    if (contrastWithWhiteRatio > contrastWithBlackRatio) {
+                        colorBox.style.color = '#ffffff';
+                    } else if (contrastWithBlackRatio > contrastWithWhiteRatio) {
+                        colorBox.style.color = '#000000';
                     } else {
-                        // In case of a tie, choose the color with a higher perceived contrast
-                        box.style.color = recalculatedWcagWhiteRatio >= 4.5 ? '#ffffff' : '#000000';
+                        colorBox.style.color = contrastWithWhiteRatio >= 4.5 ? '#ffffff' : '#000000';
                     }
 
-                    const wcagWhiteText = document.createElement('div');
-                    wcagWhiteText.innerHTML = `<strong>WCAG:White:</strong> ${recalculatedWcagWhiteRatio}:1`;
-                    box.appendChild(wcagWhiteText);
+                    const contrastWithWhiteElement = document.createElement('div');
+                    contrastWithWhiteElement.innerHTML = `<strong>WCAG:White:</strong> ${contrastWithWhiteRatio}:1`;
+                    colorBox.appendChild(contrastWithWhiteElement);
 
-                    const wcagBlackText = document.createElement('div');
-                    wcagBlackText.innerHTML = `<strong>WCAG:Black</strong> ${recalculatedWcagBlackRatio}:1`;
-                    box.appendChild(wcagBlackText);
+                    const contrastWithBlackElement = document.createElement('div');
+                    contrastWithBlackElement.innerHTML = `<strong>WCAG:Black</strong> ${contrastWithBlackRatio}:1`;
+                    colorBox.appendChild(contrastWithBlackElement);
 
-                    // Add sample text at the bottom of each box with conditional coloring
-                    const sampleText = document.createElement('div');
-                    sampleText.textContent = 'Gg Aa Rr Qq Ss';
-                    sampleText.style.fontSize = '16pt';
-                    sampleText.style.fontWeight = 'bold';
+                    const sampleTextElement = document.createElement('div');
+                    sampleTextElement.textContent = 'Gg Aa Rr Qq Ss';
+                    sampleTextElement.style.fontSize = '16pt';
+                    sampleTextElement.style.fontWeight = 'bold';
 
-                    box.appendChild(sampleText);
+                    colorBox.appendChild(sampleTextElement);
 
                     if (shade === '900') {
                         const lineBreak = document.createElement('div');
-                        lineBreak.style.gridColumn = `span ${Shades.length + 1}`;
-                        container.appendChild(lineBreak);
+                        lineBreak.style.gridColumn = `span ${colorShades.length + 1}`;
+                        chartContainer.appendChild(lineBreak);
                     }
 
-                    return box;
+                    return colorBox;
                 });
 
-                const boxes = await Promise.all(shadePromises);
-                boxes.forEach(box => container.appendChild(box));
+                const colorBoxes = await Promise.all(shadeBoxes);
+                colorBoxes.forEach(box => chartContainer.appendChild(box));
             }
 
-            document.body.appendChild(container);
+            document.body.appendChild(chartContainer);
         }
 
-        createColorChart();
+        generateColorChart();
     </script>
 </body>
 
