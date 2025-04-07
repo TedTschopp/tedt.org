@@ -167,6 +167,10 @@
             config = normalizeMap(config);
         }
         
+        // Store the original heightmap for use in generating climate maps
+        const originalHeightMap = JSON.parse(JSON.stringify(config.map));
+        const waterLevel = calculateWaterLevel(config);
+        
         // Get the palette configuration
         var palette = config.palette;
         var minHeight = 2147483647;
@@ -202,24 +206,25 @@
         // Calculate water level based on water percentage
         var waterThreshold = Math.floor(config.pct_water / 100 * config.map_len);
         var accumulatedTerrain = 0;
+        var calculatedWaterLevel;
         for (row = 0; row < terrainCount; row++) {
             if (accumulatedTerrain += terrainDistribution[row], accumulatedTerrain > waterThreshold) {
-                var waterLevel = row;
+                calculatedWaterLevel = row;
                 break;
             }
         }
-        waterLevel = Math.floor(waterLevel / heightScale) + minHeight;
+        calculatedWaterLevel = Math.floor(calculatedWaterLevel / heightScale) + minHeight;
         
         // Scale sea and land heights to match palette ranges
-        var seaScale = palette.n_sea / (waterLevel - minHeight + 1);
-        var landScale = palette.n_land / (maxHeight - waterLevel + 1);
+        var seaScale = palette.n_sea / (calculatedWaterLevel - minHeight + 1);
+        var landScale = palette.n_land / (maxHeight - calculatedWaterLevel + 1);
         
         // Apply terrain types to map cells
         for (row = 0; row < config.rows; row++) {
             for (col = 0; col < config.cols; col++) {
-                config.map[row][col] = config.map[row][col] < waterLevel ? 
+                config.map[row][col] = config.map[row][col] < calculatedWaterLevel ? 
                     Math.floor((config.map[row][col] - minHeight) * seaScale) + palette.sea_idx : 
-                    Math.floor((config.map[row][col] - waterLevel) * landScale) + palette.land_idx;
+                    Math.floor((config.map[row][col] - calculatedWaterLevel) * landScale) + palette.land_idx;
             }
         }
         
@@ -269,6 +274,16 @@
         
         // Draw the pixels to the canvas
         draw_pixels(mapImage);
+        
+        // Generate and render the temperature map
+        generateAndRenderTemperatureMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+        
+        // Generate and render the rainfall map
+        generateAndRenderRainfallMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+        
+        // Generate and render the evaporation map
+        generateAndRenderEvaporationMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+        
         timing = markTiming(timing, "image");
         
         // Update timing information in the UI
@@ -279,6 +294,341 @@
         updateTimingElement.call(timingElement, timingText);
     }
     
+    /**
+     * Calculate water level based on water percentage
+     * @param {object} config - The map configuration
+     * @returns {number} - The water level value
+     */
+    function calculateWaterLevel(config) {
+        let minHeight = 2147483647;
+        let maxHeight = 0;
+        
+        // Find min and max height values
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                if (config.map[row][col] < minHeight) {
+                    minHeight = config.map[row][col];
+                }
+                if (config.map[row][col] > maxHeight) {
+                    maxHeight = config.map[row][col];
+                }
+            }
+        }
+        
+        // Calculate terrain distribution
+        const terrainCount = config.palette.n_terrain;
+        const heightScale = (terrainCount - 1) / (maxHeight - minHeight);
+        const terrainDistribution = [];
+        
+        for (let i = 0; i < terrainCount; i++) {
+            terrainDistribution[i] = 0;
+        }
+        
+        // Count cells at each height level
+        for (let row = 1; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                terrainDistribution[Math.floor((config.map[row][col] - minHeight) * heightScale)]++;
+            }
+        }
+        
+        // Calculate water level based on water percentage
+        const waterThreshold = Math.floor(config.pct_water / 100 * config.map_len);
+        let accumulatedTerrain = 0;
+        let waterLevel;
+        
+        for (let i = 0; i < terrainCount; i++) {
+            accumulatedTerrain += terrainDistribution[i];
+            if (accumulatedTerrain > waterThreshold) {
+                waterLevel = i;
+                break;
+            }
+        }
+        
+        return Math.floor(waterLevel / heightScale) + minHeight;
+    }
+    
+    /**
+     * Generate and render the temperature map
+     * @param {object} mapConfig - The map configuration
+     * @param {object} imageConfig - The image configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     */
+    function generateAndRenderTemperatureMap(mapConfig, imageConfig, heightMap, waterLevel) {
+        // Create a copy of the map config for temperature
+        const temperatureConfig = JSON.parse(JSON.stringify(mapConfig));
+        temperatureConfig.palette = applyPalette(palette.temperature);
+        
+        // Generate temperature map based on latitude and elevation
+        const temperatureMap = [];
+        for (let row = 0; row < mapConfig.rows; row++) {
+            temperatureMap[row] = [];
+            
+            // Calculate latitude factor (equator = hot, poles = cold)
+            const latitudeFactor = 1 - Math.abs(row / mapConfig.rows - 0.5) * 2;
+            
+            for (let col = 0; col < mapConfig.cols; col++) {
+                const elevation = heightMap[row][col];
+                const isWater = elevation < waterLevel;
+                
+                // Higher elevations are colder
+                const elevationFactor = isWater ? 
+                    0.2 : // Water has less temperature variation with height
+                    1 - ((elevation - waterLevel) / (mapConfig.rows * 0.25));
+                
+                // Combine factors (latitude has more influence than elevation)
+                let temperature = latitudeFactor * 0.7 + elevationFactor * 0.3;
+                
+                // Clamp temperature value between 0 and 1
+                temperature = Math.max(0, Math.min(1, temperature));
+                
+                // Map to temperature color indices
+                if (isWater) {
+                    // Water areas - use sea palette
+                    temperatureMap[row][col] = Math.floor(temperature * temperatureConfig.palette.n_sea) + temperatureConfig.palette.sea_idx;
+                } else {
+                    // Land areas - use land palette
+                    temperatureMap[row][col] = Math.floor(temperature * temperatureConfig.palette.n_land) + temperatureConfig.palette.land_idx;
+                }
+            }
+        }
+        
+        // Set the temperature map
+        temperatureConfig.map = temperatureMap;
+        
+        // Create the temperature image
+        const temperatureImage = new_image("temperature-map", imageConfig.width, imageConfig.height);
+        
+        // Render the temperature map with the appropriate projection
+        if (mapConfig.projection == "mercator") {
+            renderMercatorProjection(temperatureImage, temperatureConfig, imageConfig);
+        } else if (mapConfig.projection == "transmerc") {
+            renderTransverseMercatorProjection(temperatureImage, temperatureConfig, imageConfig);
+        } else if (mapConfig.projection == "icosahedral") {
+            renderIcosahedralProjection(temperatureImage, temperatureConfig, imageConfig);
+        } else if (mapConfig.projection == "mollweide") {
+            renderMollweideProjection(temperatureImage, temperatureConfig, imageConfig);
+        } else if (mapConfig.projection == "sinusoidal") {
+            renderSinusoidalProjection(temperatureImage, temperatureConfig, imageConfig);
+        } else {
+            // Default square projection
+            renderSquareProjection(temperatureImage, temperatureConfig, imageConfig);
+        }
+        
+        // Draw the pixels to the canvas
+        draw_pixels(temperatureImage);
+    }
+    
+    /**
+     * Generate and render the rainfall map
+     * @param {object} mapConfig - The map configuration
+     * @param {object} imageConfig - The image configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     */
+    function generateAndRenderRainfallMap(mapConfig, imageConfig, heightMap, waterLevel) {
+        // Create a copy of the map config for rainfall
+        const rainfallConfig = JSON.parse(JSON.stringify(mapConfig));
+        rainfallConfig.palette = applyPalette(palette.rainfall);
+        
+        // Generate rainfall map based on latitude, proximity to water, and elevation
+        const rainfallMap = [];
+        const proximityMap = calculateWaterProximity(mapConfig, heightMap, waterLevel);
+        
+        for (let row = 0; row < mapConfig.rows; row++) {
+            rainfallMap[row] = [];
+            
+            // Calculate latitude factor (equator and mid-latitudes get more rain)
+            const latitudeFactor = 1 - Math.pow(Math.abs(row / mapConfig.rows - 0.5) * 2, 2);
+            
+            for (let col = 0; col < mapConfig.cols; col++) {
+                const elevation = heightMap[row][col];
+                const isWater = elevation < waterLevel;
+                
+                // Wind direction effect (west to east in northern hemisphere, east to west in southern)
+                const windCol = row < mapConfig.rows / 2 ? 
+                    (col + mapConfig.cols - 10) % mapConfig.cols : // Northern hemisphere
+                    (col + 10) % mapConfig.cols; // Southern hemisphere
+                
+                // Rain shadow effect - mountains block rainfall on leeward side
+                const windwardSide = row < mapConfig.rows / 2 ?
+                    col > windCol : col < windCol;
+                
+                // Mountains receive more rainfall on windward side
+                const elevationFactor = isWater ? 
+                    0.5 : // Water has moderate rainfall
+                    windwardSide ? 
+                        0.7 + ((elevation - waterLevel) / (mapConfig.rows * 0.5)) * 0.3 : // Windward side
+                        0.3 - ((elevation - waterLevel) / (mapConfig.rows * 0.5)) * 0.3;  // Leeward side
+                
+                // Proximity to water increases rainfall
+                const proximityFactor = isWater ? 1 : proximityMap[row][col];
+                
+                // Combine factors
+                let rainfall = latitudeFactor * 0.4 + elevationFactor * 0.3 + proximityFactor * 0.3;
+                
+                // Clamp rainfall value between 0 and 1
+                rainfall = Math.max(0, Math.min(1, rainfall));
+                
+                // Map to rainfall color indices
+                if (isWater) {
+                    // Water areas - use sea palette
+                    rainfallMap[row][col] = Math.floor(rainfall * rainfallConfig.palette.n_sea) + rainfallConfig.palette.sea_idx;
+                } else {
+                    // Land areas - use land palette
+                    rainfallMap[row][col] = Math.floor(rainfall * rainfallConfig.palette.n_land) + rainfallConfig.palette.land_idx;
+                }
+            }
+        }
+        
+        // Set the rainfall map
+        rainfallConfig.map = rainfallMap;
+        
+        // Create the rainfall image
+        const rainfallImage = new_image("rainfall-map", imageConfig.width, imageConfig.height);
+        
+        // Render the rainfall map with the appropriate projection
+        if (mapConfig.projection == "mercator") {
+            renderMercatorProjection(rainfallImage, rainfallConfig, imageConfig);
+        } else if (mapConfig.projection == "transmerc") {
+            renderTransverseMercatorProjection(rainfallImage, rainfallConfig, imageConfig);
+        } else if (mapConfig.projection == "icosahedral") {
+            renderIcosahedralProjection(rainfallImage, rainfallConfig, imageConfig);
+        } else if (mapConfig.projection == "mollweide") {
+            renderMollweideProjection(rainfallImage, rainfallConfig, imageConfig);
+        } else if (mapConfig.projection == "sinusoidal") {
+            renderSinusoidalProjection(rainfallImage, rainfallConfig, imageConfig);
+        } else {
+            // Default square projection
+            renderSquareProjection(rainfallImage, rainfallConfig, imageConfig);
+        }
+        
+        // Draw the pixels to the canvas
+        draw_pixels(rainfallImage);
+    }
+    
+    /**
+     * Generate and render the evaporation map
+     * @param {object} mapConfig - The map configuration
+     * @param {object} imageConfig - The image configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     */
+    function generateAndRenderEvaporationMap(mapConfig, imageConfig, heightMap, waterLevel) {
+        // Create a copy of the map config for evaporation
+        const evaporationConfig = JSON.parse(JSON.stringify(mapConfig));
+        evaporationConfig.palette = applyPalette(palette.evaporation);
+        
+        // Generate evaporation map based on temperature and water availability
+        const evaporationMap = [];
+        const proximityMap = calculateWaterProximity(mapConfig, heightMap, waterLevel);
+        
+        for (let row = 0; row < mapConfig.rows; row++) {
+            evaporationMap[row] = [];
+            
+            // Temperature factor (equator = high evaporation, poles = low)
+            const temperatureFactor = 1 - Math.abs(row / mapConfig.rows - 0.5) * 2;
+            
+            for (let col = 0; col < mapConfig.cols; col++) {
+                const elevation = heightMap[row][col];
+                const isWater = elevation < waterLevel;
+                
+                // Water bodies have high evaporation, land depends on water availability
+                const waterFactor = isWater ? 
+                    0.8 + 0.2 * (1 - ((waterLevel - elevation) / waterLevel)) : // Shallower water evaporates more
+                    proximityMap[row][col] * 0.7; // Land evaporation depends on water proximity
+                
+                // Combine factors
+                let evaporation = temperatureFactor * 0.6 + waterFactor * 0.4;
+                
+                // Clamp evaporation value between 0 and 1
+                evaporation = Math.max(0, Math.min(1, evaporation));
+                
+                // Map to evaporation color indices
+                if (isWater) {
+                    // Water areas - use sea palette
+                    evaporationMap[row][col] = Math.floor(evaporation * evaporationConfig.palette.n_sea) + evaporationConfig.palette.sea_idx;
+                } else {
+                    // Land areas - use land palette
+                    evaporationMap[row][col] = Math.floor(evaporation * evaporationConfig.palette.n_land) + evaporationConfig.palette.land_idx;
+                }
+            }
+        }
+        
+        // Set the evaporation map
+        evaporationConfig.map = evaporationMap;
+        
+        // Create the evaporation image
+        const evaporationImage = new_image("evaporation-map", imageConfig.width, imageConfig.height);
+        
+        // Render the evaporation map with the appropriate projection
+        if (mapConfig.projection == "mercator") {
+            renderMercatorProjection(evaporationImage, evaporationConfig, imageConfig);
+        } else if (mapConfig.projection == "transmerc") {
+            renderTransverseMercatorProjection(evaporationImage, evaporationConfig, imageConfig);
+        } else if (mapConfig.projection == "icosahedral") {
+            renderIcosahedralProjection(evaporationImage, evaporationConfig, imageConfig);
+        } else if (mapConfig.projection == "mollweide") {
+            renderMollweideProjection(evaporationImage, evaporationConfig, imageConfig);
+        } else if (mapConfig.projection == "sinusoidal") {
+            renderSinusoidalProjection(evaporationImage, evaporationConfig, imageConfig);
+        } else {
+            // Default square projection
+            renderSquareProjection(evaporationImage, evaporationConfig, imageConfig);
+        }
+        
+        // Draw the pixels to the canvas
+        draw_pixels(evaporationImage);
+    }
+    
+    /**
+     * Calculate proximity to water for each land cell
+     * @param {object} mapConfig - The map configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     * @returns {Array} - 2D array with water proximity values (0-1)
+     */
+    function calculateWaterProximity(mapConfig, heightMap, waterLevel) {
+        const proximityMap = [];
+        const searchRadius = Math.floor(mapConfig.rows / 10);
+        
+        // Initialize proximity map
+        for (let row = 0; row < mapConfig.rows; row++) {
+            proximityMap[row] = [];
+            for (let col = 0; col < mapConfig.cols; col++) {
+                proximityMap[row][col] = heightMap[row][col] < waterLevel ? 1 : 0;
+            }
+        }
+        
+        // Calculate proximity for land cells
+        for (let row = 0; row < mapConfig.rows; row++) {
+            for (let col = 0; col < mapConfig.cols; col++) {
+                if (heightMap[row][col] >= waterLevel) {
+                    // Land cell, calculate proximity to water
+                    let minDistance = searchRadius;
+                    
+                    // Search in a square around current cell
+                    for (let r = Math.max(0, row - searchRadius); r < Math.min(mapConfig.rows, row + searchRadius); r++) {
+                        for (let c = Math.max(0, col - searchRadius); c < Math.min(mapConfig.cols, col + searchRadius); c++) {
+                            if (heightMap[r][c] < waterLevel) {
+                                // Water cell found, calculate Manhattan distance
+                                const distance = Math.abs(row - r) + Math.abs(col - c);
+                                if (distance < minDistance) {
+                                    minDistance = distance;
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Convert distance to proximity value (0-1, with 1 being closest to water)
+                    proximityMap[row][col] = 1 - (minDistance / searchRadius);
+                }
+            }
+        }
+        
+        return proximityMap;
+    }
+
     /**
      * Render the map using Mercator projection
      */
