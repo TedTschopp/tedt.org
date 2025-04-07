@@ -5,600 +5,997 @@
 // http://creativecommons.org/licenses/by-nc/3.0/
 
 'use strict';
-((D, A) => A(D))(window, D => {
-    function A() {
+
+/**
+ * Fractal World Generator
+ * This script generates procedural maps with various projections and styles.
+ * It uses prototype.js for DOM manipulation and event handling.
+ */
+((window, initFunction) => {
+    // Make updateMap globally accessible
+    var globalExports = {};
+    
+    initFunction(window, globalExports);
+    
+    // Expose the updateMap function to the global scope
+    window.updateMap = globalExports.updateMap;
+    
+})(window, (window, exports) => {
+    // Event handler functions for UI elements
+    
+    /**
+     * Generates a new random seed and updates the map
+     */
+    function generateNewSeed() {
         $("seed").setValue(random(2147483647));
-        r();
+        updateMap();
     }
 
-    function N() {
-        r();
+    /**
+     * Updates the map when the seed is changed
+     */
+    function onSeedChange() {
+        updateMap();
     }
 
-    function O() {
-        x("pct_water", 0, 100);
-        r();
+    /**
+     * Validates and updates the water percentage
+     */
+    function onWaterPercentageChange() {
+        validateInputValue("pct_water", 0, 100);
+        updateMap();
     }
 
-    function P() {
-        x("pct_ice", 0, 100);
-        r();
+    /**
+     * Validates and updates the ice percentage
+     */
+    function onIcePercentageChange() {
+        validateInputValue("pct_ice", 0, 100);
+        updateMap();
     }
 
-    function Q() {
-        x("height", 100, max_height);
-        r();
+    /**
+     * Validates and updates the map height
+     */
+    function onHeightChange() {
+        validateInputValue("height", 100, max_height);
+        updateMap();
     }
 
-    function R() {
-        x("iter", 1E3, max_iter);
-        r();
+    /**
+     * Validates and updates the iteration count
+     */
+    function onIterationChange() {
+        validateInputValue("iter", 1E3, max_iter);
+        updateMap();
     }
 
-    function S() {
-        x("rotate", 0, 360);
-        r();
+    /**
+     * Validates and updates the rotation angle
+     */
+    function onRotationChange() {
+        validateInputValue("rotate", 0, 360);
+        updateMap();
     }
 
-    function x(a, e, c) {
-        let b = $(a).intValue();
-        if (b < e) {
-            b = e;
+    /**
+     * Validates input values to ensure they're within specified range
+     * @param {string} elementId - The ID of the input element to validate
+     * @param {number} minValue - The minimum allowed value
+     * @param {number} maxValue - The maximum allowed value
+     * @returns {number} - The validated value
+     */
+    function validateInputValue(elementId, minValue, maxValue) {
+        let value = $(elementId).intValue();
+        if (value < minValue) {
+            value = minValue;
         }
-        if (c && b > c) {
-            b = c;
+        if (maxValue && value > maxValue) {
+            value = maxValue;
         }
-        $(a).setValue(b);
-        return b;
+        $(elementId).setValue(value);
+        return value;
     }
 
-    function r() {
-        var a = {
+    /**
+     * Main function to update the map with current settings
+     * Handles map generation, terrain distribution, and rendering
+     */
+    function updateMap() {
+        // Create configuration object with current settings
+        var config = {
             seed: set_Prng_Seed($("seed").intValue()),
-            algorithm: "voss_a7",
+            algorithm: $("algorithm").getValue(), // Get algorithm from dropdown
             iter: $("iter").intValue(),
-            hack_theta: true,
-            erode: true,
+            hack_theta: $("enable_hack_theta").checked, // Get theta hack toggle
+            erode: $("erode").checked, // Get erosion toggle
             pct_water: $("pct_water").intValue(),
             pct_ice: $("pct_ice").intValue(),
             height: $("height").intValue(),
             rotate: $("rotate").intValue() % 360,
             projection: $("projection").getValue(),
             palette: $("palette").getValue(),
+            terrain_variation: $("terrain_variation").intValue(), // Get terrain variation from slider
+            horizontal_factor: $("horizontal_factor").intValue() / 100, // Get horizontal factor (scaled 0-1)
+            vertical_factor: $("vertical_factor").intValue() / 100, // Get vertical factor (scaled 0-1)
             timing: {
                 marks: [],
                 t0: Date.now(),
                 t: Date.now(),
             },
         };
-        var e = a.timing;
-        a = T(a);
-        if (a.algorithm == "voss") {
-            a = E(a);
-        } else if (a.algorithm == "voss_x3") {
-            a = F(3, "x", a);
-        } else if (a.algorithm == "voss_a7") {
-            a = F(7, "a", a);
+        var timing = config.timing;
+        
+        // Apply projection settings
+        config = applyProjection(config);
+        
+        // Generate the heightmap using the selected algorithm
+        if (config.algorithm == "voss") {
+            config = generateVossMap(config);
+        } else if (config.algorithm == "voss_x3") {
+            config = generateVossXMap(3, "x", config);
+        } else if (config.algorithm == "voss_a7") {
+            config = generateVossXMap(7, "a", config);
         }
-        if (a.erode) {
-            var c = B(a, 0),
-                b;
-            for (b = 0; b < a.rows; b++) {
-                var d = void 0;
-                for (d = 0; d < a.cols; d++) {
-                    var g = c[b],
-                        h = d;
-                    var f = a;
-                    var l = b,
-                        m = d;
-                    f = q(f, l - 1, m - 1) + q(f, l, m - 1) + q(f, l + 1, m - 1) + q(f, l - 1, m) + q(f, l, m) + q(f, l + 1, m) + q(f, l - 1, m + 1) + q(f, l, m + 1) + q(f, l + 1, m + 1);
-                    g[h] = f / 9;
+        
+        // Apply erosion if enabled
+        if (config.erode) {
+            var erodedMap = createEmptyMap(config, 0),
+                row;
+            for (row = 0; row < config.rows; row++) {
+                var col;
+                for (col = 0; col < config.cols; col++) {
+                    var mapRow = erodedMap[row],
+                        mapCol = col;
+                    var mapConfig = config;
+                    var currentRow = row,
+                        currentCol = col;
+                    // Average the surrounding cells (3x3 filter)
+                    mapConfig = getMapValue(mapConfig, currentRow - 1, currentCol - 1) + 
+                               getMapValue(mapConfig, currentRow, currentCol - 1) + 
+                               getMapValue(mapConfig, currentRow + 1, currentCol - 1) + 
+                               getMapValue(mapConfig, currentRow - 1, currentCol) + 
+                               getMapValue(mapConfig, currentRow, currentCol) + 
+                               getMapValue(mapConfig, currentRow + 1, currentCol) + 
+                               getMapValue(mapConfig, currentRow - 1, currentCol + 1) + 
+                               getMapValue(mapConfig, currentRow, currentCol + 1) + 
+                               getMapValue(mapConfig, currentRow + 1, currentCol + 1);
+                    mapRow[mapCol] = mapConfig / 9;
                 }
             }
-            a.map = c;
-            a = G(a);
+            config.map = erodedMap;
+            config = normalizeMap(config);
         }
-        g = a.palette;
-        h = 2147483647;
-        for (b = c = 0; b < a.rows; b++) {
-            for (d = 0; d < a.cols; d++) {
-                if (a.map[b][d] < h) {
-                    h = a.map[b][d];
+        
+        // Get the palette configuration
+        var palette = config.palette;
+        var minHeight = 2147483647;
+        var maxHeight = 0;
+        
+        // Find min and max height values
+        for (row = 0; row < config.rows; row++) {
+            for (var col = 0; col < config.cols; col++) {
+                if (config.map[row][col] < minHeight) {
+                    minHeight = config.map[row][col];
                 }
-                if (a.map[b][d] > c) {
-                    c = a.map[b][d];
+                if (config.map[row][col] > maxHeight) {
+                    maxHeight = config.map[row][col];
                 }
             }
         }
-        f = g.n_terrain;
-        l = (f - 1) / (c - h);
-        m = [];
-        for (b = 0; b < f; b++) {
-            m[b] = 0;
+        
+        // Calculate terrain distribution
+        var terrainCount = palette.n_terrain;
+        var heightScale = (terrainCount - 1) / (maxHeight - minHeight);
+        var terrainDistribution = [];
+        for (row = 0; row < terrainCount; row++) {
+            terrainDistribution[row] = 0;
         }
-        for (b = 1; b < a.rows; b++) {
-            for (d = 0; d < a.cols; d++) {
-                m[Math.floor((a.map[b][d] - h) * l)]++;
+        
+        // Count cells at each height level
+        for (row = 1; row < config.rows; row++) {
+            for (col = 0; col < config.cols; col++) {
+                terrainDistribution[Math.floor((config.map[row][col] - minHeight) * heightScale)]++;
             }
         }
-        d = Math.floor(a.pct_water / 100 * a.map_len);
-        var n = 0;
-        for (b = 0; b < f; b++) {
-            if (n += m[b], n > d) {
-                var k = b;
+        
+        // Calculate water level based on water percentage
+        var waterThreshold = Math.floor(config.pct_water / 100 * config.map_len);
+        var accumulatedTerrain = 0;
+        for (row = 0; row < terrainCount; row++) {
+            if (accumulatedTerrain += terrainDistribution[row], accumulatedTerrain > waterThreshold) {
+                var waterLevel = row;
                 break;
             }
         }
-        k = Math.floor(k / l) + h;
-        f = g.n_sea / (k - h + 1);
-        c = g.n_land / (c - k + 1);
-        for (b = 0; b < a.rows; b++) {
-            for (d = 0; d < a.cols; d++) {
-                a.map[b][d] = a.map[b][d] < k ? Math.floor((a.map[b][d] - h) * f) + g.sea_idx : Math.floor((a.map[b][d] - k) * c) + g.land_idx;
+        waterLevel = Math.floor(waterLevel / heightScale) + minHeight;
+        
+        // Scale sea and land heights to match palette ranges
+        var seaScale = palette.n_sea / (waterLevel - minHeight + 1);
+        var landScale = palette.n_land / (maxHeight - waterLevel + 1);
+        
+        // Apply terrain types to map cells
+        for (row = 0; row < config.rows; row++) {
+            for (col = 0; col < config.cols; col++) {
+                config.map[row][col] = config.map[row][col] < waterLevel ? 
+                    Math.floor((config.map[row][col] - minHeight) * seaScale) + palette.sea_idx : 
+                    Math.floor((config.map[row][col] - waterLevel) * landScale) + palette.land_idx;
             }
         }
-        k = a = U(a);
-        e = H(e, "create");
-        a = {};
-        if (k.projection == "mercator" || k.projection == "transmerc") {
-            a.height = k.height;
-            a.width = Math.floor(Math.PI / 2 * k.height);
-        } else if (k.projection == "icosahedral") {
-            a.height = k.height;
-            a.width = Math.floor(2.116950987 * k.height);
-            a.col_w = a.width / 11;
-            a.row_h = a.height / 3;
+        
+        // Apply ice caps based on ice percentage
+        var finalMap = config = applyIce(config);
+        timing = markTiming(timing, "create");
+        
+        // Set up rendering configuration based on projection
+        var imageConfig = {};
+        if (finalMap.projection == "mercator" || finalMap.projection == "transmerc") {
+            imageConfig.height = finalMap.height;
+            imageConfig.width = Math.floor(Math.PI / 2 * finalMap.height);
+        } else if (finalMap.projection == "icosahedral") {
+            imageConfig.height = finalMap.height;
+            imageConfig.width = Math.floor(2.116950987 * finalMap.height);
+            imageConfig.col_w = imageConfig.width / 11;
+            imageConfig.row_h = imageConfig.height / 3;
         } else {
-            a.height = k.rows;
-            a.width = k.cols;
+            imageConfig.height = finalMap.rows;
+            imageConfig.width = finalMap.cols;
         }
-        if (k.projection == "mollweide" || k.projection == "sinusoidal") {
-            a.wd2 = Math.floor(a.width / 2);
+        
+        // Additional settings for certain projections
+        if (finalMap.projection == "mollweide" || finalMap.projection == "sinusoidal") {
+            imageConfig.wd2 = Math.floor(imageConfig.width / 2);
         }
-        g = new_image("map", a.width, a.height);
+        
+        // Create the map image
+        var mapImage = new_image("map", imageConfig.width, imageConfig.height);
         cache_pixels(true);
-        if (k.projection == "mercator") {
-            h = g;
-            c = k.palette.cmap;
-            for (b = 0; b < a.width; b++) {
-                I[b] = Math.floor(b / a.width * k.cols);
-            }
-            for (b = 0; b < a.height; b++) {
-                y[b] = Math.floor((0.5 - Math.atan(Math.sinh((0.5 - b / a.height) * Math.PI)) / Math.PI) * k.rows);
-            }
-            for (b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = t(k, y[d], I[b]);
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
-                }
-            }
-        } else if (k.projection == "transmerc") {
-            for (h = g, c = k.palette.cmap, b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = b / a.width * 2 * Math.PI;
-                    l = 4 * (d / a.height - 0.5);
-                    m = Math.atan(Math.sinh(l) / Math.cos(f));
-                    n = Math.PI / 2;
-                    if (f > n && f <= 3 * n) {
-                        m += Math.PI;
-                    }
-                    f = t(k, Math.floor((0.5 - Math.asin(Math.sin(f) / Math.cosh(l)) / Math.PI) * k.rows), Math.floor(m / (2 * Math.PI) * k.cols));
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
-                }
-            }
-        } else if (k.projection == "icosahedral") {
-            for (h = g, c = k.palette.cmap, b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = Math.floor(b / a.col_w);
-                    l = Math.floor(d / a.row_h);
-                    m = Math.floor(b - f * a.col_w);
-                    n = Math.floor(0.5773502692 * Math.floor(d - l * a.row_h));
-                    let p = -1;
-                    if ((l + f) % 2 == 0) {
-                        m = Math.floor(a.col_w - m);
-                    }
-                    if (l == 0) {
-                        if (f < 10 && m < n) {
-                            p = Math.floor(m / n * a.col_w);
-                        }
-                    } else if (l == 1) {
-                        if (f == 0) {
-                            if (m > n) {
-                                p = m;
-                            }
-                        } else if (f < 10) {
-                            p = m;
-                        } else if (f == 10 && m < n) {
-                            p = m;
-                        }
-                    } else if (l == 2 && f > 0 && m > n) {
-                        m = Math.floor(a.col_w - m);
-                        n = Math.floor(a.col_w - n);
-                        p = Math.floor(m / n * a.col_w);
-                        p = Math.floor(a.col_w - p);
-                    }
-                    if (p > -1) {
-                        if ((l + f) % 2 == 0) {
-                            p = Math.floor(a.col_w - p);
-                        }
-                        p += Math.floor(f * a.col_w);
-                        f = t(k, d, p);
-                    } else {
-                        f = 0;
-                    }
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
-                }
-            }
-        } else if (k.projection == "mollweide") {
-            h = g;
-            c = k.palette.cmap;
-            for (b = 0; b < a.height; b++) {
-                u[b] = Math.sqrt(Math.sin(b / a.height * Math.PI));
-                v[b] = Math.floor(a.wd2 * u[b]);
-                d = Math.asin(2.8284271247 * (0.5 - b / a.height) / Math.sqrt(2));
-                y[b] = Math.floor((0.5 - Math.asin((2 * d + Math.sin(2 * d)) / Math.PI) / Math.PI) * k.rows);
-            }
-            for (b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = b > a.wd2 - v[d] && b < a.wd2 + v[d] ? t(k, y[d], Math.floor((b - a.wd2) / u[d]) + k.cd2) : 0;
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
-                }
-            }
-        } else if (k.projection == "sinusoidal") {
-            h = g;
-            c = k.palette.cmap;
-            for (b = 0; b < a.height; b++) {
-                u[b] = Math.sin(b / a.height * Math.PI);
-                v[b] = Math.floor(a.wd2 * u[b]);
-            }
-            for (b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = b > a.wd2 - v[d] && b < a.wd2 + v[d] ? t(k, d, Math.floor((b - a.wd2) / u[d]) + k.cd2) : 0;
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
-                }
-            }
+        
+        // Render the map with the appropriate projection
+        if (finalMap.projection == "mercator") {
+            renderMercatorProjection(mapImage, finalMap, imageConfig);
+        } else if (finalMap.projection == "transmerc") {
+            renderTransverseMercatorProjection(mapImage, finalMap, imageConfig);
+        } else if (finalMap.projection == "icosahedral") {
+            renderIcosahedralProjection(mapImage, finalMap, imageConfig);
+        } else if (finalMap.projection == "mollweide") {
+            renderMollweideProjection(mapImage, finalMap, imageConfig);
+        } else if (finalMap.projection == "sinusoidal") {
+            renderSinusoidalProjection(mapImage, finalMap, imageConfig);
         } else {
-            for (h = g, c = k.palette.cmap, b = 0; b < a.width; b++) {
-                for (d = 0; d < a.height; d++) {
-                    f = t(k, d, b);
-                    if (f > 0) {
-                        set_pixel(h, b, d, c[f]);
-                    }
+            // Default square projection
+            renderSquareProjection(mapImage, finalMap, imageConfig);
+        }
+        
+        // Draw the pixels to the canvas
+        draw_pixels(mapImage);
+        timing = markTiming(timing, "image");
+        
+        // Update timing information in the UI
+        var timingElement = $("dt");
+        var updateTimingElement = timingElement.update;
+        timing.marks.push("total " + calculateElapsedTime(timing.t0));
+        var timingText = timing.marks.join("; ");
+        updateTimingElement.call(timingElement, timingText);
+    }
+    
+    /**
+     * Render the map using Mercator projection
+     */
+    function renderMercatorProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        // Precalculate column positions
+        for (var row = 0; row < imageConfig.width; row++) {
+            columnPositions[row] = Math.floor(row / imageConfig.width * mapConfig.cols);
+        }
+        
+        // Precalculate row positions with Mercator formula
+        for (row = 0; row < imageConfig.height; row++) {
+            rowPositions[row] = Math.floor((0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows);
+        }
+        
+        // Map pixels
+        for (row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var pixelValue = getRotatedMapValue(mapConfig, rowPositions[col], columnPositions[row]);
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
                 }
             }
         }
-        draw_pixels(g);
-        e = H(e, "image");
-        k = $("dt");
-        a = k.update;
-        e.marks.push("total " + J(e.t0));
-        e = e.marks.join("; ");
-        a.call(k, e);
     }
-
-    function H(a, e) {
-        a.marks.push(`${e} ` + J(a.t));
-        a.t = Date.now();
-        return a;
-    }
-
-    function J(a) {
-        return (Date.now() - a) / 1E3;
-    }
-
-    function T(a) {
-        if (a.projection == "mercator" || a.projection == "transmerc") {
-            a.rows = 2 * a.height;
-            a.cols = 2 * a.rows;
-        } else if (a.projection == "icosahedral") {
-            a.rows = a.height;
-            a.cols = Math.floor(1.9245008973 * a.rows);
-        } else {
-            a.rows = a.height;
-            a.cols = 2 * a.rows;
+    
+    /**
+     * Render the map using Transverse Mercator projection
+     */
+    function renderTransverseMercatorProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        for (var row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var angle = row / imageConfig.width * 2 * Math.PI;
+                var lat = 4 * (col / imageConfig.height - 0.5);
+                var lon = Math.atan(Math.sinh(lat) / Math.cos(angle));
+                var halfPi = Math.PI / 2;
+                
+                if (angle > halfPi && angle <= 3 * halfPi) {
+                    lon += Math.PI;
+                }
+                
+                var pixelValue = getRotatedMapValue(
+                    mapConfig, 
+                    Math.floor((0.5 - Math.asin(Math.sin(angle) / Math.cosh(lat)) / Math.PI) * mapConfig.rows), 
+                    Math.floor(lon / (2 * Math.PI) * mapConfig.cols)
+                );
+                
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
+                }
+            }
         }
-        a.map_len = a.rows * a.cols;
-        a.rl1 = a.rows - 1;
-        a.rd2 = Math.floor(a.rows / 2);
-        a.rdp = Math.floor(a.rows / Math.PI);
-        a.cd2 = Math.floor(a.cols / 2);
-        a.cdp = Math.floor(a.cols / Math.PI);
-        a.rpx = Math.floor(a.rotate / 360 * a.cols);
-        let e;
-        if (e = palette[a.palette]) {
-            a.palette = K(e);
-            let c;
-            if (c = e.set) {
-                Object.keys(c).forEach(b => {
-                    a[b] = c[b];
+    }
+    
+    /**
+     * Render the map using Icosahedral projection
+     */
+    function renderIcosahedralProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        for (var row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var colIndex = Math.floor(row / imageConfig.col_w);
+                var rowIndex = Math.floor(col / imageConfig.row_h);
+                var colOffset = Math.floor(row - colIndex * imageConfig.col_w);
+                var rowOffset = Math.floor(0.5773502692 * Math.floor(col - rowIndex * imageConfig.row_h));
+                let pixelIndex = -1;
+                
+                if ((rowIndex + colIndex) % 2 == 0) {
+                    colOffset = Math.floor(imageConfig.col_w - colOffset);
+                }
+                
+                // Complex icosahedral mapping logic
+                if (rowIndex == 0) {
+                    if (colIndex < 10 && colOffset < rowOffset) {
+                        pixelIndex = Math.floor(colOffset / rowOffset * imageConfig.col_w);
+                    }
+                } else if (rowIndex == 1) {
+                    if (colIndex == 0) {
+                        if (colOffset > rowOffset) {
+                            pixelIndex = colOffset;
+                        }
+                    } else if (colIndex < 10) {
+                        pixelIndex = colOffset;
+                    } else if (colIndex == 10 && colOffset < rowOffset) {
+                        pixelIndex = colOffset;
+                    }
+                } else if (rowIndex == 2 && colIndex > 0 && colOffset > rowOffset) {
+                    colOffset = Math.floor(imageConfig.col_w - colOffset);
+                    rowOffset = Math.floor(imageConfig.col_w - rowOffset);
+                    pixelIndex = Math.floor(colOffset / rowOffset * imageConfig.col_w);
+                    pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+                }
+                
+                if (pixelIndex > -1) {
+                    if ((rowIndex + colIndex) % 2 == 0) {
+                        pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+                    }
+                    pixelIndex += Math.floor(colIndex * imageConfig.col_w);
+                    var pixelValue = getRotatedMapValue(mapConfig, col, pixelIndex);
+                } else {
+                    var pixelValue = 0;
+                }
+                
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
+                }
+            }
+        }
+    }
+    
+    /**
+     * Render the map using Mollweide projection
+     */
+    function renderMollweideProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        // Precalculate ellipse values
+        for (var row = 0; row < imageConfig.height; row++) {
+            sinFactors[row] = Math.sqrt(Math.sin(row / imageConfig.height * Math.PI));
+            ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
+            
+            var theta = Math.asin(2.8284271247 * (0.5 - row / imageConfig.height) / Math.sqrt(2));
+            rowPositions[row] = Math.floor((0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapConfig.rows);
+        }
+        
+        // Map pixels
+        for (row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var pixelValue = 0;
+                
+                if (row > imageConfig.wd2 - ellipseWidths[col] && row < imageConfig.wd2 + ellipseWidths[col]) {
+                    pixelValue = getRotatedMapValue(
+                        mapConfig, 
+                        rowPositions[col], 
+                        Math.floor((row - imageConfig.wd2) / sinFactors[col]) + mapConfig.cd2
+                    );
+                }
+                
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
+                }
+            }
+        }
+    }
+    
+    /**
+     * Render the map using Sinusoidal projection
+     */
+    function renderSinusoidalProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        // Precalculate sine values
+        for (var row = 0; row < imageConfig.height; row++) {
+            sinFactors[row] = Math.sin(row / imageConfig.height * Math.PI);
+            ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
+        }
+        
+        // Map pixels
+        for (row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var pixelValue = 0;
+                
+                if (row > imageConfig.wd2 - ellipseWidths[col] && row < imageConfig.wd2 + ellipseWidths[col]) {
+                    pixelValue = getRotatedMapValue(
+                        mapConfig, 
+                        col, 
+                        Math.floor((row - imageConfig.wd2) / sinFactors[col]) + mapConfig.cd2
+                    );
+                }
+                
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
+                }
+            }
+        }
+    }
+    
+    /**
+     * Render the map using default square projection
+     */
+    function renderSquareProjection(mapImage, mapConfig, imageConfig) {
+        var image = mapImage;
+        var colorMap = mapConfig.palette.cmap;
+        
+        for (var row = 0; row < imageConfig.width; row++) {
+            for (var col = 0; col < imageConfig.height; col++) {
+                var pixelValue = getRotatedMapValue(mapConfig, col, row);
+                if (pixelValue > 0) {
+                    set_pixel(image, row, col, colorMap[pixelValue]);
+                }
+            }
+        }
+    }
+
+    /**
+     * Mark timing for a specific stage of map generation
+     * @param {object} timing - The timing object
+     * @param {string} stage - The stage name
+     * @returns {object} - The updated timing object
+     */
+    function markTiming(timing, stage) {
+        timing.marks.push(`${stage} ` + calculateElapsedTime(timing.t));
+        timing.t = Date.now();
+        return timing;
+    }
+
+    /**
+     * Calculate elapsed time in seconds
+     * @param {number} startTime - Start time in milliseconds
+     * @returns {number} - Elapsed time in seconds
+     */
+    function calculateElapsedTime(startTime) {
+        return (Date.now() - startTime) / 1E3;
+    }
+
+    /**
+     * Apply projection settings to the configuration
+     * @param {object} config - The map configuration
+     * @returns {object} - The updated configuration
+     */
+    function applyProjection(config) {
+        // Set dimensions based on projection type
+        if (config.projection == "mercator" || config.projection == "transmerc") {
+            config.rows = 2 * config.height;
+            config.cols = 2 * config.rows;
+        } else if (config.projection == "icosahedral") {
+            config.rows = config.height;
+            config.cols = Math.floor(1.9245008973 * config.rows);
+        } else {
+            config.rows = config.height;
+            config.cols = 2 * config.rows;
+        }
+        
+        // Calculate derived values
+        config.map_len = config.rows * config.cols;
+        config.rl1 = config.rows - 1;
+        config.rd2 = Math.floor(config.rows / 2);
+        config.rdp = Math.floor(config.rows / Math.PI);
+        config.cd2 = Math.floor(config.cols / 2);
+        config.cdp = Math.floor(config.cols / Math.PI);
+        config.rpx = Math.floor(config.rotate / 360 * config.cols);
+        
+        // Apply palette settings
+        let paletteConfig;
+        if (paletteConfig = palette[config.palette]) {
+            config.palette = applyPalette(paletteConfig);
+            let paletteSettings;
+            if (paletteSettings = paletteConfig.set) {
+                Object.keys(paletteSettings).forEach(key => {
+                    config[key] = paletteSettings[key];
                 });
             }
         } else {
-            a.palette = K(palette.mogensen);
+            config.palette = applyPalette(palette.mogensen);
         }
-        return a;
+        
+        return config;
     }
 
-    function K(a) {
-        var e = {
+    /**
+     * Apply palette settings
+     * @param {object} paletteConfig - The palette configuration
+     * @returns {object} - The processed palette
+     */
+    function applyPalette(paletteConfig) {
+        var palette = {
             n_sea: 50,
             n_land: 100,
             cmap: []
         };
-        e.n_terrain = e.n_sea + e.n_land;
-        e.n_ice = e.n_land + 1;
-        e.sea_idx = 1;
-        e.land_idx = e.sea_idx + e.n_sea;
-        e.ice_idx = e.land_idx + e.n_land;
-        var c = a.sea,
-            b = c.length - 1,
-            d;
-        for (d = e.sea_idx; d < e.land_idx; d++) {
-            var g = (d - e.sea_idx) / e.n_sea * b;
-            let h = Math.floor(g);
-            e.cmap[d] = C(c[h], c[h + 1], g - h);
+        
+        // Set up palette indices
+        palette.n_terrain = palette.n_sea + palette.n_land;
+        palette.n_ice = palette.n_land + 1;
+        palette.sea_idx = 1;
+        palette.land_idx = palette.sea_idx + palette.n_sea;
+        palette.ice_idx = palette.land_idx + palette.n_land;
+        
+        // Interpolate sea colors
+        var seaColors = paletteConfig.sea,
+            seaColorCount = seaColors.length - 1,
+            i;
+        
+        for (i = palette.sea_idx; i < palette.land_idx; i++) {
+            var colorIndex = (i - palette.sea_idx) / palette.n_sea * seaColorCount;
+            let colorFloor = Math.floor(colorIndex);
+            palette.cmap[i] = interpolateColor(seaColors[colorFloor], seaColors[colorFloor + 1], colorIndex - colorFloor);
         }
-        a = a.land;
-        c = a.length - 1;
-        for (b = e.land_idx; b < e.ice_idx; b++) {
-            d = (b - e.land_idx) / e.n_land * c;
-            g = Math.floor(d);
-            e.cmap[b] = C(a[g], a[g + 1], d - g);
+        
+        // Interpolate land colors
+        var landColors = paletteConfig.land;
+        var landColorCount = landColors.length - 1;
+        
+        for (seaColorCount = palette.land_idx; seaColorCount < palette.ice_idx; seaColorCount++) {
+            i = (seaColorCount - palette.land_idx) / palette.n_land * landColorCount;
+            colorIndex = Math.floor(i);
+            palette.cmap[seaColorCount] = interpolateColor(landColors[colorIndex], landColors[colorIndex + 1], i - colorIndex);
         }
-        a = e;
-        e = a.ice_idx + a.n_ice;
-        c = [255, 255, 255];
-        b = [175, 175, 175];
-        for (d = a.ice_idx; d < e; d++) {
-            a.cmap[d] = C(c, b, (d - a.ice_idx) / (a.n_ice - 1));
+        
+        // Interpolate ice colors
+        var iceColors = palette;
+        var iceColorCount = iceColors.ice_idx + iceColors.n_ice;
+        var whiteColor = [255, 255, 255];
+        var grayColor = [175, 175, 175];
+        
+        for (i = iceColors.ice_idx; i < iceColorCount; i++) {
+            iceColors.cmap[i] = interpolateColor(whiteColor, grayColor, (i - iceColors.ice_idx) / (iceColors.n_ice - 1));
         }
-        return a;
+        
+        return palette;
     }
 
-    function C(a, e, c) {
-        return rgb2hex(Math.floor(a[0] + (e[0] - a[0]) * c), Math.floor(a[1] + (e[1] - a[1]) * c), Math.floor(a[2] + (e[2] - a[2]) * c));
+    /**
+     * Interpolate between two colors
+     * @param {Array} color1 - First color [r,g,b]
+     * @param {Array} color2 - Second color [r,g,b]
+     * @param {number} factor - Interpolation factor (0-1)
+     * @returns {string} - Hex color string
+     */
+    function interpolateColor(color1, color2, factor) {
+        return rgb2hex(
+            Math.floor(color1[0] + (color2[0] - color1[0]) * factor),
+            Math.floor(color1[1] + (color2[1] - color1[1]) * factor),
+            Math.floor(color1[2] + (color2[2] - color1[2]) * factor)
+        );
     }
 
-    function E(a) {
-        a.map = B(a, 0);
-        var e = a.cols;
-        var c = [],
-            b;
-        for (b = 0; b < e; b++) {
-            c[b] = Math.sin(b / e * 2 * Math.PI);
+    /**
+     * Generate a Voss fractal map
+     * @param {object} config - The map configuration
+     * @returns {object} - The updated configuration with map data
+     */
+    function generateVossMap(config) {
+        // Create empty map
+        config.map = createEmptyMap(config, 0);
+        
+        var cols = config.cols;
+        var sinValues = [],
+            i;
+        
+        // Precalculate sine values
+        for (i = 0; i < cols; i++) {
+            sinValues[i] = Math.sin(i / cols * 2 * Math.PI);
         }
-        e = c;
-        for (c = 0; c < a.iter; c++) {
-            var d = void 0,
-                g = void 0;
-            b = void 0;
-            var h = e,
-                f = (random(32767) / 32767 - 0.5) * Math.PI,
-                l = random(32767) / 32767 - 0.5;
-            let n = Math.floor(a.cd2 - a.cols * l);
-            f = Math.tan(Math.acos(Math.cos(f) * Math.cos(l * Math.PI)));
-            if (!isNaN(f)) {
-                l = 50 > random(100) ? 1 : -1;
-                if (a.hack_theta) {
-                    b = random(32767) / 32767 * 0.5 + 0.5;
-                    g = Math;
-                    d = g.floor;
-                    var m = (1 - b) * a.rl1;
-                    m *= random(32767) / 32767;
-                    g = d.call(g, m) + 1;
+        
+        // Generate the height map using the Voss algorithm
+        for (i = 0; i < config.iter; i++) {
+            var row, col;
+            var sinArray = sinValues,
+                angle = (random(32767) / 32767 - 0.5) * Math.PI,
+                offset = random(32767) / 32767 - 0.5;
+                
+            let colOffset = Math.floor(config.cd2 - config.cols * offset);
+            angle = Math.tan(Math.acos(Math.cos(angle) * Math.cos(offset * Math.PI)));
+            
+            if (!isNaN(angle)) {
+                offset = 50 > random(100) ? 1 : -1;
+                
+                // Apply theta hack for more interesting terrain
+                if (config.hack_theta) {
+                    var thetaFactor = random(32767) / 32767 * 0.5 + 0.5;
+                    var math = Math;
+                    var mathFloor = math.floor;
+                    var rowOffset = (1 - thetaFactor) * config.rl1;
+                    rowOffset *= random(32767) / 32767;
+                    col = mathFloor.call(math, rowOffset) + 1;
                 }
-                for (d = 0; d < a.cols; d++) {
-                    m = Math.floor(Math.atan(h[(n - d + a.cols) % a.cols] * f) * a.rdp);
-                    if (!isNaN(m)) {
-                        m += a.rd2;
-                        if (a.hack_theta) {
-                            m = Math.floor(m * b) + g;
+                
+                // Apply the height modification to each column
+                for (row = 0; row < config.cols; row++) {
+                    rowOffset = Math.floor(Math.atan(sinArray[(colOffset - row + config.cols) % config.cols] * angle) * config.rdp);
+                    
+                    if (!isNaN(rowOffset)) {
+                        rowOffset += config.rd2;
+                        
+                        if (config.hack_theta) {
+                            rowOffset = Math.floor(rowOffset * thetaFactor) + col;
                         }
-                        a.map[m][d] += l;
+                        
+                        config.map[rowOffset][row] += offset;
                     }
                 }
             }
         }
-        e = a;
-        for (c = 1; c < e.rows; c++) {
-            for (b = 0; b < e.cols; b++) {
-                e.map[c][b] += e.map[c - 1][b];
+        
+        // Integrate rows to create continuous height changes
+        for (i = 1; i < config.rows; i++) {
+            for (var j = 0; j < config.cols; j++) {
+                config.map[i][j] += config.map[i - 1][j];
             }
         }
-        return a = G(e);
+        
+        return normalizeMap(config);
     }
 
-    function B(a, e) {
-        let c = [],
-            b;
-        for (b = 0; b < a.rows; b++) {
-            c[b] = [];
-            let d;
-            for (d = 0; d < a.cols; d++) {
-                c[b][d] = e;
+    /**
+     * Create an empty map with a specified initial value
+     * @param {object} config - The map configuration
+     * @param {number} initialValue - The initial value for all cells
+     * @returns {Array} - A 2D array representing the map
+     */
+    function createEmptyMap(config, initialValue) {
+        let map = [],
+            row;
+            
+        for (row = 0; row < config.rows; row++) {
+            map[row] = [];
+            let col;
+            for (col = 0; col < config.cols; col++) {
+                map[row][col] = initialValue;
             }
         }
-        return c;
+        
+        return map;
     }
 
-    function G(a) {
-        let e = 2147483647,
-            c,
-            b;
-        for (c = 0; c < a.rows; c++) {
-            for (b = 0; b < a.cols; b++) {
-                if (a.map[c][b] < e) {
-                    e = a.map[c][b];
+    /**
+     * Normalize map values to start from 1
+     * @param {object} config - The map configuration
+     * @returns {object} - The updated configuration
+     */
+    function normalizeMap(config) {
+        let minValue = 2147483647,
+            row,
+            col;
+            
+        // Find minimum value
+        for (row = 0; row < config.rows; row++) {
+            for (col = 0; col < config.cols; col++) {
+                if (config.map[row][col] < minValue) {
+                    minValue = config.map[row][col];
                 }
             }
         }
-        for (c = 0; c < a.rows; c++) {
-            for (b = 0; b < a.cols; b++) {
-                a.map[c][b] -= e - 1;
+        
+        // Normalize values to start from 1
+        for (row = 0; row < config.rows; row++) {
+            for (col = 0; col < config.cols; col++) {
+                config.map[row][col] -= minValue - 1;
             }
         }
-        return a;
+        
+        return config;
     }
 
-    function F(a, e, c) {
-        var b = B(c, 1);
-        let d = c.iter;
-        c.iter = Math.floor(d / a);
-        let g;
-        for (g = 0; g < a; g++) {
-            c = E(c);
-            if (e == "x") {
-                var h = void 0,
-                    f = c;
-                for (h = 0; h < f.rows; h++) {
-                    var l = void 0;
-                    for (l = 0; l < f.cols; l++) {
-                        b[h][l] *= f.map[h][l];
+    /**
+     * Generate a Voss X map by combining multiple Voss maps
+     * @param {number} iterations - Number of Voss maps to combine
+     * @param {string} operation - Type of combination ('x' for multiply, 'a' for average)
+     * @param {object} config - The map configuration
+     * @returns {object} - The updated configuration
+     */
+    function generateVossXMap(iterations, operation, config) {
+        var combinedMap = createEmptyMap(config, 1);
+        let originalIterations = config.iter;
+        config.iter = Math.floor(originalIterations / iterations);
+        
+        // Generate and combine multiple Voss maps
+        for (let i = 0; i < iterations; i++) {
+            config = generateVossMap(config);
+            
+            if (operation == "x") {
+                // Multiply maps
+                for (var row = 0; row < config.rows; row++) {
+                    for (var col = 0; col < config.cols; col++) {
+                        combinedMap[row][col] *= config.map[row][col];
                     }
                 }
-            } else if (e == "a") {
-                for (f = c, h = 0; h < f.rows; h++) {
-                    for (l = 0; l < f.cols; l++) {
-                        b[h][l] += f.map[h][l];
-                        b[h][l] /= 2;
+            } else if (operation == "a") {
+                // Average maps
+                for (row = 0; row < config.rows; row++) {
+                    for (col = 0; col < config.cols; col++) {
+                        combinedMap[row][col] += config.map[row][col];
+                        combinedMap[row][col] /= 2;
                     }
                 }
             }
-            c.map = false;
+            
+            config.map = false;
         }
-        c.iter = d;
-        c.map = b;
-        return c;
+        
+        // Restore original iteration count
+        config.iter = originalIterations;
+        config.map = combinedMap;
+        
+        return config;
     }
 
-    function q(a, e, c) {
-        if (0 <= e && e < a.rows && 0 <= c && c < a.cols) {
-            return a.map[e][c];
+    /**
+     * Get map value, handling edge wrapping
+     * @param {object} config - The map configuration
+     * @param {number} row - Row index
+     * @param {number} col - Column index
+     * @returns {number} - Map value at the position
+     */
+    function getMapValue(config, row, col) {
+        if (0 <= row && row < config.rows && 0 <= col && col < config.cols) {
+            return config.map[row][col];
         }
-        e = L(a, e, c);
-        return a.map[e.row][e.col];
+        
+        var wrappedCoords = wrapCoordinates(config, row, col);
+        return config.map[wrappedCoords.row][wrappedCoords.col];
     }
 
-    function M(a, e, c, b) {
-        if (0 <= e && e < a.rows && 0 <= c && c < a.cols) {
-            a.map[e][c] = b;
+    /**
+     * Set map value, handling edge wrapping
+     * @param {object} config - The map configuration
+     * @param {number} row - Row index
+     * @param {number} col - Column index
+     * @param {number} value - Value to set
+     */
+    function setMapValue(config, row, col, value) {
+        if (0 <= row && row < config.rows && 0 <= col && col < config.cols) {
+            config.map[row][col] = value;
         } else {
-            e = L(a, e, c);
-            a.map[e.row][e.col] = b;
+            var wrappedCoords = wrapCoordinates(config, row, col);
+            config.map[wrappedCoords.row][wrappedCoords.col] = value;
         }
     }
 
-    function L(a, e, c) {
-        while (e < 0) {
-            e += 2 * a.rows;
+    /**
+     * Wrap coordinates to stay within map bounds
+     * @param {object} config - The map configuration
+     * @param {number} row - Row index
+     * @param {number} col - Column index
+     * @returns {object} - Wrapped coordinates {row, col}
+     */
+    function wrapCoordinates(config, row, col) {
+        // Handle row wrapping with pole reflection
+        while (row < 0) {
+            row += 2 * config.rows;
         }
-        if (e >= 2 * a.rows) {
-            e %= 2 * a.rows;
+        
+        if (row >= 2 * config.rows) {
+            row %= 2 * config.rows;
         }
-        if (e >= a.rows) {
-            e = 2 * a.rows - (e + 1);
-            c += Math.floor(a.cols / 2);
+        
+        if (row >= config.rows) {
+            row = 2 * config.rows - (row + 1);
+            col += Math.floor(config.cols / 2);
         }
-        while (c < 0) {
-            c += a.cols;
+        
+        // Handle column wrapping
+        while (col < 0) {
+            col += config.cols;
         }
-        if (c >= a.cols) {
-            c %= a.cols;
+        
+        if (col >= config.cols) {
+            col %= config.cols;
         }
+        
         return {
-            row: e,
-            col: c
+            row: row,
+            col: col
         };
     }
 
-    function U(a) {
-        let e = a.palette;
-        if (a.pct_ice > 0) {
-            let c = Math.floor(a.pct_ice / 100 * a.map_len / 2);
+    /**
+     * Apply ice to the map based on the percentage of ice
+     * @param {object} config - The map configuration
+     * @returns {object} - The updated configuration
+     */
+    function applyIce(config) {
+        let palette = config.palette;
+        
+        if (config.pct_ice > 0) {
+            let iceThreshold = Math.floor(config.pct_ice / 100 * config.map_len / 2);
+            
+            // Apply ice to north pole
             (() => {
-                let b = 0,
-                    d;
-                for (d = 0; d < a.rows; d++) {
-                    let g;
-                    for (g = 0; g < a.cols && !(a.map[d][g] < e.ice_idx && (b += w(a, d, g, a.map[d][g], 0)), b > c); g++);
-                    if (b > c) {
-                        break;
+                let iceCount = 0,
+                    row;
+                for (row = 0; row < config.rows; row++) {
+                    let col;
+                    for (col = 0; col < config.cols; col++) {
+                        if (config.map[row][col] < palette.ice_idx) {
+                            iceCount += applyIceAtPoint(config, row, col, config.map[row][col], 0);
+                        }
+                        if (iceCount > iceThreshold) break;
                     }
+                    if (iceCount > iceThreshold) break;
                 }
             })();
+            
+            // Apply ice to south pole
             (() => {
-                let b = 0,
-                    d;
-                for (d = a.rl1; d > 0; d--) {
-                    let g;
-                    for (g = 0; g < a.cols && !(a.map[d][g] < e.ice_idx && (b += w(a, d, g, a.map[d][g], 0)), b > c); g++);
-                    if (b > c) {
-                        break;
+                let iceCount = 0,
+                    row;
+                for (row = config.rl1; row > 0; row--) {
+                    let col;
+                    for (col = 0; col < config.cols; col++) {
+                        if (config.map[row][col] < palette.ice_idx) {
+                            iceCount += applyIceAtPoint(config, row, col, config.map[row][col], 0);
+                        }
+                        if (iceCount > iceThreshold) break;
                     }
+                    if (iceCount > iceThreshold) break;
                 }
             })();
         }
-        return a;
+        
+        return config;
     }
 
-    function w(a, e, c, b, d) {
-        let g = a.palette,
-            h = q(a, e, c),
-            f = 0;
-        if (h == b) {
-            if (h >= g.land_idx) {
-                M(a, e, c, h - g.land_idx + g.ice_idx + 1);
+    /**
+     * Apply ice at a specific point and recursively to neighbors
+     * @param {object} config - The map configuration
+     * @param {number} row - Row index
+     * @param {number} col - Column index
+     * @param {number} originalValue - Original terrain value
+     * @param {number} depth - Recursion depth
+     * @returns {number} - Number of cells converted to ice
+     */
+    function applyIceAtPoint(config, row, col, originalValue, depth) {
+        let palette = config.palette,
+            currentValue = getMapValue(config, row, col),
+            count = 0;
+            
+        if (currentValue == originalValue) {
+            // Convert to ice
+            if (currentValue >= palette.land_idx) {
+                setMapValue(config, row, col, currentValue - palette.land_idx + palette.ice_idx + 1);
             } else {
-                M(a, e, c, g.ice_idx);
+                setMapValue(config, row, col, palette.ice_idx);
             }
-            f++;
-            if (d++ < a.height / 6) {
-                f += w(a, e, c - 1, b, d);
-                f += w(a, e, c + 1, b, d);
-                if (e > 1) {
-                    f += w(a, e - 1, c, b, d);
+            
+            count++;
+            
+            // Recursively apply to neighbors with depth limit
+            if (depth++ < config.height / 6) {
+                count += applyIceAtPoint(config, row, col - 1, originalValue, depth);
+                count += applyIceAtPoint(config, row, col + 1, originalValue, depth);
+                
+                if (row > 1) {
+                    count += applyIceAtPoint(config, row - 1, col, originalValue, depth);
                 }
-                if (e < a.rl1) {
-                    f += w(a, e + 1, c, b, d);
+                
+                if (row < config.rl1) {
+                    count += applyIceAtPoint(config, row + 1, col, originalValue, depth);
                 }
             }
         }
-        return f;
+        
+        return count;
     }
 
-    function t(a, e, c) {
-        c -= a.rpx;
-        if (e < 0) {
-            e = 0;
+    /**
+     * Get map value with rotation applied
+     * @param {object} config - The map configuration
+     * @param {number} row - Row index
+     * @param {number} col - Column index
+     * @returns {number} - Map value at the rotated position
+     */
+    function getRotatedMapValue(config, row, col) {
+        // Apply rotation
+        col -= config.rpx;
+        
+        // Clamp row values
+        if (row < 0) {
+            row = 0;
         }
-        if (e >= a.rows) {
-            e = a.rl1;
+        if (row >= config.rows) {
+            row = config.rl1;
         }
-        while (c < 0) {
-            c += a.cols;
+        
+        // Wrap column values
+        while (col < 0) {
+            col += config.cols;
         }
-        if (c >= a.cols) {
-            c %= a.cols;
+        if (col >= config.cols) {
+            col %= config.cols;
         }
-        return a.map[e][c];
+        
+        return config.map[row][col];
     }
 
-    function V() {
-        let a = $("seed").getValue();
-        save_canvas($("map"), `${a}.png`);
+    /**
+     * Save the current map as a PNG image
+     */
+    function saveMapAsPNG() {
+        let seedValue = $("seed").getValue();
+        save_canvas($("map"), `${seedValue}.png`);
     }
 
-    let z = {
+    /**
+     * Calculate the scaled terrain variation amount using a non-linear curve
+     * This creates a very gradual effect at low percentages
+     * @param {number} variationAmount - Raw variation amount (0-1)
+     * @returns {number} - Scaled variation amount for terrain distortion
+     */
+    function calculateScaledVariation(variationAmount) {
+        // Only apply distortion if variation amount is greater than 0
+        if (variationAmount <= 0) {
+            return 0;
+        }
+        
+        // Apply an extremely gradual exponential curve at the low end
+        // Using power of 4 makes the curve even more extreme at the low end
+        const scaledVariation = Math.pow(variationAmount, 4);
+        
+        // For very small variation (< 5%), apply an additional scaling factor
+        const lowEndMultiplier = variationAmount < 0.05 ? variationAmount * 20 : 1.0;
+        
+        return scaledVariation * lowEndMultiplier;
+    }
+
+    // Configuration for UI elements
+    let uiConfig = {
         projection: {
             square: {
                 title: "Square"
@@ -621,47 +1018,65 @@
         },
         palette
     };
+    
+    // Initialize the UI when the DOM is loaded
     document.observe("dom:loaded", () => {
-        Object.keys(z).forEach(a => {
-            Object.keys(z[a]).forEach(e => {
-                let c = z[a][e].title;
-                var b = $(a),
-                    d = b.insert;
-                e = (new Element("option", {
-                    value: e
-                })).update(c);
-                d.call(b, e);
+        // Populate dropdown menus
+        Object.keys(uiConfig).forEach(configKey => {
+            Object.keys(uiConfig[configKey]).forEach(optionKey => {
+                let optionTitle = uiConfig[configKey][optionKey].title;
+                var selectElement = $(configKey),
+                    insertMethod = selectElement.insert;
+                optionKey = (new Element("option", {
+                    value: optionKey
+                })).update(optionTitle);
+                insertMethod.call(selectElement, optionKey);
             });
         });
-        Object.keys(default_query).forEach(a => {
-            $(a).setValue(default_query[a]);
+        
+        // Set default values
+        Object.keys(default_query).forEach(configKey => {
+            $(configKey).setValue(default_query[configKey]);
         });
-        r();
-        $("seed").observe("change", N);
-        $("new_seed").observe("click", A);
-        Object.keys(z).forEach(a => {
-            $(a).observe("change", r);
+        
+        // Initial map update
+        updateMap();
+        
+        // Set up event handlers
+        $("seed").observe("change", onSeedChange);
+        $("new_seed").observe("click", generateNewSeed);
+        
+        Object.keys(uiConfig).forEach(configKey => {
+            $(configKey).observe("change", updateMap);
         });
-        $("pct_water").observe("change", O);
-        $("pct_ice").observe("change", P);
-        $("height").observe("change", Q);
-        $("iter").observe("change", R);
-        $("rotate").observe("change", S);
-        $("save_map").observe("click", V);
+        
+        $("pct_water").observe("change", onWaterPercentageChange);
+        $("pct_ice").observe("change", onIcePercentageChange);
+        $("height").observe("change", onHeightChange);
+        $("iter").observe("change", onIterationChange);
+        $("rotate").observe("change", onRotationChange);
+        $("save_map").observe("click", saveMapAsPNG);
         $("print_map").observe("click", () => {
             window.print();
         });
     });
+    
+    // Add utility methods to input elements
     Element.addMethods(["INPUT", "SELECT"], {
-        intValue: function(a) {
-            return parseInt($(a).getValue(), 10);
+        intValue: function(element) {
+            return parseInt($(element).getValue(), 10);
         },
-        floatValue: function(a) {
-            return parseFloat($(a).getValue());
+        floatValue: function(element) {
+            return parseFloat($(element).getValue());
         }
     });
-    let u = [],
-        v = [],
-        y = [],
-        I = [];
+    
+    // Array buffers for projection calculations
+    let sinFactors = [],
+        ellipseWidths = [],
+        rowPositions = [],
+        columnPositions = [];
+    
+    // Expose the updateMap function for the export
+    exports.updateMap = updateMap;
 });

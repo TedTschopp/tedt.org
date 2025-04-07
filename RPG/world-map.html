@@ -32,7 +32,13 @@
     'pct_ice':          random(10) + 5,
     'height':           400,
     'iter':             5000,
-    'rotate':           0
+    'rotate':            0,
+    'terrain_variation': 75, // Default terrain variation value (75%)
+    'algorithm':        'voss_a7', // Default algorithm
+    'erode':            true, // Default erosion setting
+    'horizontal_factor': 0.5, // Default horizontal distortion factor
+    'vertical_factor':   0.2, // Default vertical distortion factor
+    'enable_hack_theta': true // Default theta hack setting
   };
   let max_height      = 1000;
   let max_iter        = 25000;
@@ -258,6 +264,22 @@
             margin-left: auto; margin-right: auto;
         }
 
+        /* Slider styles */
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .slider {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        
+        .slider-value {
+            width: 30px;
+            text-align: center;
+        }
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
         /* screen */
 
@@ -308,6 +330,50 @@
           <td class="value"><input id="rotate" size="5" /></td>
         </tr>
         <tr>
+          <td class="key">Terrain Variation:</td>
+          <td colspan="5" class="value">
+            <div class="slider-container">
+              <input type="range" id="terrain_variation" min="0" max="100" step="1" class="slider" value="75" />
+              <span id="terrain_variation_value" class="slider-value">75%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="key">Algorithm:</td>
+          <td class="value">
+            <select id="algorithm">
+              <option value="voss">Basic Voss</option>
+              <option value="voss_x3">Voss x3</option>
+              <option value="voss_a7" selected>Voss a7</option>
+            </select>
+          </td>
+          <td class="key">Apply Erosion:</td>
+          <td class="value"><input type="checkbox" id="erode" checked /></td>
+        </tr>
+        <tr>
+          <td class="key">Enable Theta Hack:</td>
+          <td class="value"><input type="checkbox" id="enable_hack_theta" checked /></td>
+          <td colspan="4"></td>
+        </tr>
+        <tr>
+          <td class="key">Horizontal Factor:</td>
+          <td colspan="5" class="value">
+            <div class="slider-container">
+              <input type="range" id="horizontal_factor" min="0" max="100" step="1" class="slider" value="50" />
+              <span id="horizontal_factor_value" class="slider-value">0.50</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="key">Vertical Factor:</td>
+          <td colspan="5" class="value">
+            <div class="slider-container">
+              <input type="range" id="vertical_factor" min="0" max="100" step="1" class="slider" value="20" />
+              <span id="vertical_factor_value" class="slider-value">0.20</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
           <td colspan="6"></td>
         </tr>
         <tr>
@@ -331,6 +397,61 @@
     <script src = "js/canvas.js"></script>
     <script src = "js/custom-seeded-random.js"></script>
 
+    <script>
+      // Wait for both DOM and all scripts to be fully loaded
+      window.onload = function() {
+        // Check if updateMap function exists before setting up event handlers
+        if (typeof updateMap !== "function") {
+          console.error("Error: updateMap function not available. Make sure world.js is loaded properly.");
+          return;
+        }
+        
+        // Set up terrain variation slider
+        const terrainSlider = $('terrain_variation');
+        const terrainValueDisplay = $('terrain_variation_value');
+        
+        terrainSlider.observe('input', function() {
+          const value = terrainSlider.value;
+          terrainValueDisplay.update(value + '%');
+          // Don't call updateMap directly here as it might trigger too many redraws
+        });
 
+        // Set up terrain variation change event (fires when slider is released)
+        terrainSlider.observe('change', updateMap);
 
+        // Set up horizontal factor slider
+        const horizontalSlider = $('horizontal_factor');
+        const horizontalValueDisplay = $('horizontal_factor_value');
+        
+        horizontalSlider.observe('input', function() {
+          const value = (horizontalSlider.value / 100).toFixed(2);
+          horizontalValueDisplay.update(value);
+          // Don't call updateMap directly here
+        });
+        
+        // Horizontal factor change event
+        horizontalSlider.observe('change', updateMap);
+
+        // Set up vertical factor slider
+        const verticalSlider = $('vertical_factor');
+        const verticalValueDisplay = $('vertical_factor_value');
+        
+        verticalSlider.observe('input', function() {
+          const value = (verticalSlider.value / 100).toFixed(2);
+          verticalValueDisplay.update(value);
+          // Don't call updateMap directly here
+        });
+        
+        // Vertical factor change event
+        verticalSlider.observe('change', updateMap);
+
+        // Set up algorithm dropdown
+        $('algorithm').observe('change', updateMap);
+
+        // Set up checkbox events
+        $('erode').observe('change', updateMap);
+        $('enable_hack_theta').observe('change', updateMap);
+      };
+    </script>
+  </body>
 </html>
