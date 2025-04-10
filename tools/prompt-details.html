@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="text-center">Prompt Details</h1>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <!-- Prompt Details Section -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="card-title">Prompt Title</h2>
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-muted"></i>
+                            <i class="fas fa-star text-muted"></i>
+                            <span>(3.0)</span>
+                        </div>
+                        <a href="#" class="btn btn-primary ms-3" download="prompt-details.txt">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-text">Full description of the prompt goes here. This section provides detailed information about the prompt, including its purpose, usage, and any additional context.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="badge bg-primary"><i class="fas fa-tag"></i> Tag1</span>
+                        <span class="badge bg-secondary"><i class="fas fa-tag"></i> Tag2</span>
+                    </div>
+                </div>
+                <div class="text-end mt-3">
+                    <a href="#" class="btn btn-primary" download="prompt-details.txt">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <!-- Adjusted layout to align 'Prompts in this Series' header on the left and 'Rate this Prompt Series' with 'Download All Prompts in Series' on the right -->
+                <hr class="my-4">
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="card-title">Prompts in this Series</h3>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-muted"></i>
+                                <i class="fas fa-star text-muted"></i>
+                                <span>(No Ratings)</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary ms-3" download="prompt-details.txt">
+                                <i class="fas fa-download"></i> Series
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="card-text">Full description of the prompt series goes here. This section provides detailed information about the
+                    prompt, including its purpose, usage, and any additional context.</p>
+
+                    <div class="d-flex">
+                        <ol class="list-group list-group-numbered flex-grow-1 me-4">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Step 1: Introduction</div>
+                                    A brief description of the first step in the series.
+                                </div>
+                                <span class="badge bg-primary rounded-pill">Step 1</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Step 2: Deep Dive</div>
+                                    A brief description of the second step in the series.
+                                </div>
+                                <span class="badge bg-secondary rounded-pill">Step 2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Step 3: Conclusion</div>
+                                    A brief description of the final step in the series.
+                                </div>
+                                <span class="badge bg-success rounded-pill">Step 3</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Prompts Section -->
+        <div>
+            <h3>Related Prompts</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Related Prompt Title</h5>
+                            <p class="card-text">A brief snippet of the related prompt...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other related prompts -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Prompt Library</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Rating hover effect
+        document.querySelectorAll('.rating i').forEach(star => {
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                document.querySelectorAll('.rating i').forEach(s => {
+                    s.classList.remove('text-warning');
+                    s.classList.add('text-muted');
+                });
+                for (let i = 0; i < rating; i++) {
+                    document.querySelectorAll('.rating i')[i].classList.remove('text-muted');
+                    document.querySelectorAll('.rating i')[i].classList.add('text-warning');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

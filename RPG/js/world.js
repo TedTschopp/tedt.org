@@ -371,10 +371,10 @@
         draw_pixels(mapImage);
         
         // Generate and render the temperature map
-        generateAndRenderTemperatureMap(finalMap, imageConfig, originalHeightMap, waterLevel);
-        
-        // Generate and render the rainfall map
-        generateAndRenderRainfallMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+        const temperatureMap = generateAndRenderTemperatureMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+
+        // Generate and render the rainfall map with temperatureMap
+        generateAndRenderRainfallMap(finalMap, imageConfig, originalHeightMap, waterLevel, temperatureMap);
         
         // Generate and render the evaporation map
         generateAndRenderEvaporationMap(finalMap, imageConfig, originalHeightMap, waterLevel);
@@ -559,6 +559,8 @@
         
         // Draw the pixels to the canvas
         draw_pixels(temperatureImage);
+
+        return temperatureMap;
     }
     
     /**
@@ -567,8 +569,9 @@
      * @param {object} imageConfig - The image configuration
      * @param {Array} heightMap - The original height map data
      * @param {number} waterLevel - The water level
+     * @param {Array} temperatureMap - The temperature map data
      */
-    function generateAndRenderRainfallMap(mapConfig, imageConfig, heightMap, waterLevel) {
+    function generateAndRenderRainfallMap(mapConfig, imageConfig, heightMap, waterLevel, temperatureMap) {
         // Create a copy of the map config for rainfall
         const rainfallConfig = JSON.parse(JSON.stringify(mapConfig));
         rainfallConfig.palette = applyPalette(palette.rainfall);
@@ -579,45 +582,30 @@
         
         for (let row = 0; row < mapConfig.rows; row++) {
             rainfallMap[row] = [];
-            
-            // Calculate latitude factor (equator and mid-latitudes get more rain)
-            const latitudeFactor = 1 - Math.pow(Math.abs(row / mapConfig.rows - 0.5) * 2, 2);
-            
+
             for (let col = 0; col < mapConfig.cols; col++) {
                 const elevation = heightMap[row][col];
                 const isWater = elevation < waterLevel;
-                
-                // Wind direction effect (west to east in northern hemisphere, east to west in southern)
-                const windCol = row < mapConfig.rows / 2 ? 
-                    (col + mapConfig.cols - 10) % mapConfig.cols : // Northern hemisphere
-                    (col + 10) % mapConfig.cols; // Southern hemisphere
-                
-                // Rain shadow effect - mountains block rainfall on leeward side
-                const windwardSide = row < mapConfig.rows / 2 ?
-                    col > windCol : col < windCol;
-                
-                // Mountains receive more rainfall on windward side
-                const elevationFactor = isWater ? 
-                    0.5 : // Water has moderate rainfall
-                    windwardSide ? 
-                        0.7 + ((elevation - waterLevel) / (mapConfig.rows * 0.5)) * 0.3 : // Windward side
-                        0.3 - ((elevation - waterLevel) / (mapConfig.rows * 0.5)) * 0.3;  // Leeward side
-                
-                // Proximity to water increases rainfall
-                const proximityFactor = isWater ? 1 : proximityMap[row][col];
-                
-                // Combine factors
-                let rainfall = latitudeFactor * 0.4 + elevationFactor * 0.3 + proximityFactor * 0.3;
-                
-                // Clamp rainfall value between 0 and 1
-                rainfall = Math.max(0, Math.min(1, rainfall));
-                
-                // Map to rainfall color indices
+
+                // Calculate rain shadow for the current point
+                const rainShadow = calculateRainShadow(
+                    { x: row - 1, y: col, z: elevation, h: heightMap[row - 1]?.[col] || 0 },
+                    { x: row, y: col - 1, z: elevation, h: heightMap[row]?.[col - 1] || 0 },
+                    { x: row, y: col, z: elevation, h: elevation },
+                    150 // Example shade angle
+                );
+
+                // Calculate rainfall with rain shadow effect
+                const rainfall = calculateRainfallWithShadow(
+                    temperatureMap[row][col], // Assuming temperatureMap exists
+                    row / mapConfig.rows, // Latitude as a fraction
+                    rainShadow
+                );
+
+                // Map rainfall to color indices
                 if (isWater) {
-                    // Water areas - use sea palette
                     rainfallMap[row][col] = Math.floor(rainfall * rainfallConfig.palette.n_sea) + rainfallConfig.palette.sea_idx;
                 } else {
-                    // Land areas - use land palette
                     rainfallMap[row][col] = Math.floor(rainfall * rainfallConfig.palette.n_land) + rainfallConfig.palette.land_idx;
                 }
             }
@@ -1909,6 +1897,48 @@
         return { lakeMap, lakeData };
     }
 
+    /**
+     * Calculate approximate rain shadow for a given point
+     * @param {object} a - Vertex a
+     * @param {object} b - Vertex b
+     * @param {object} e - New vertex point
+     * @param {number} shadeAngle - Angle of light for shading
+     * @returns {number} - Calculated rain shadow value
+     */
+    function calculateRainShadow(a, b, e, shadeAngle) {
+        if (e.h <= 0.0) return 0.0;
+
+        const x1 = 0.5 * (a.x + b.x);
+        const y1 = 0.5 * (a.y + b.y);
+        const z1 = 0.5 * (a.z + b.z);
+
+        const l1 = Math.sqrt(x1 * x1 + y1 * y1 + z1 * z1) || 1.0;
+        const tmp = Math.sqrt(1.0 - e.y * e.y) || 0.0001;
+
+        const x2 = e.x * x1 + e.y * y1 + e.z * z1;
+        const z2 = -e.z / tmp * x1 + e.x / tmp * z1;
+
+        if (Math.abs(a.h - b.h) > 0.04) {
+            return (a.shadow + b.shadow - Math.cos(Math.PI * shadeAngle / 180.0) * z2 / l1) / 3.0;
+        } else {
+            return (a.shadow + b.shadow) / 2.0;
+        }
+    }
+
+    /**
+     * Calculate rainfall with rain shadow effect
+     * @param {number} temp - Temperature at the point
+     * @param {number} latitude - Latitude of the point
+     * @param {number} rainShadow - Rain shadow value at the point
+     * @returns {number} - Adjusted rainfall value
+     */
+    function calculateRainfallWithShadow(temp, latitude, rainShadow) {
+        const y2 = Math.abs(latitude) - 0.5;
+        let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
+        rain += 0.03 * rainShadow;
+        return Math.max(0.0, rain); // Ensure rainfall is not negative
+    }
+
     // Configuration for UI elements
     let uiConfig = {
         projection: {
@@ -2018,6 +2048,19 @@
         $("print_map").observe("click", () => {
             window.print();
         });
+
+        // Append the rainfall map canvas to the DOM
+        const rainfallCanvas = $("rainfall-map");
+        if (rainfallCanvas) {
+            const container = document.getElementById("map-container"); // Replace with the actual container ID
+            if (container) {
+                container.appendChild(rainfallCanvas);
+            } else {
+                console.error("Map container not found. Please ensure the container exists in the DOM.");
+            }
+        } else {
+            console.error("Rainfall map canvas not found. Please ensure it is created correctly.");
+        }
     });
     
     // Add utility methods to input elements
