@@ -49,6 +49,21 @@
   let palette = {
     'olsson': {                         // john olsson
       'title':          'Olsson',
+      'sea_RGB': [
+        'rgb(0, 0, 68)', 'rgb(0, 17, 102)', 'rgb(0, 51, 136)',
+        'rgb(0, 85, 170)', 'rgb(0, 119, 187)', 'rgb(0, 153, 221)',
+        'rgb(0, 204, 255)', 'rgb(34, 221, 255)', 'rgb(68, 238, 255)',
+        'rgb(102, 255, 255)', 'rgb(119, 255, 255)', 'rgb(136, 255, 255)',
+        'rgb(153, 255, 255)', 'rgb(170, 255, 255)', 'rgb(187, 255, 255)'
+      ],
+      'land_RGB': [
+        'rgb(0, 68, 0)', 'rgb(34, 102, 0)', 'rgb(34, 136, 0)',
+        'rgb(119, 170, 0)', 'rgb(187, 221, 0)', 'rgb(255, 187, 34)',
+        'rgb(238, 170, 34)', 'rgb(221, 136, 34)', 'rgb(204, 136, 34)',
+        'rgb(187, 102, 34)', 'rgb(170, 85, 34)', 'rgb(153, 85, 34)',
+        'rgb(136, 68, 34)', 'rgb(119, 51, 34)', 'rgb(85, 51, 17)',
+        'rgb(68, 34, 0)'
+      ],
       'sea': [
         [0x00,0x00,0x44], [0x00,0x11,0x66], [0x00,0x33,0x88],
         [0x00,0x55,0xAA], [0x00,0x77,0xBB], [0x00,0x99,0xDD],
@@ -412,9 +427,10 @@
           <td class="value"><input type="checkbox" id="erode" checked /></td>
         </tr>
         <tr>
+          <td class="key">Simulate Ocean Currents:</td>
+          <td class="value"><input type="checkbox" id="ocean_currents" /></td>
           <td class="key">Enable Theta Hack:</td>
           <td class="value"><input type="checkbox" id="enable_hack_theta" checked /></td>
-          <td colspan="4"></td>
         </tr>
         <tr>
           <td class="key">Horizontal Factor:</td>
@@ -463,6 +479,11 @@
       
       <h2>Evaporation Map</h2>
       <canvas id="evaporation-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+      
+      <h2>Lake Map</h2>
+      <canvas id="lake-map" width="1" height="1">
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
@@ -529,6 +550,7 @@
         // Set up checkbox events
         $('erode').observe('change', updateMap);
         $('enable_hack_theta').observe('change', updateMap);
+        $('ocean_currents').observe('change', updateMap);
       };
     </script>
   </body>

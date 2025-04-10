@@ -109,6 +109,7 @@
             iter: $("iter").intValue(),
             hack_theta: $("enable_hack_theta").checked, // Get theta hack toggle
             erode: $("erode").checked, // Get erosion toggle
+            ocean_currents: $("ocean_currents").checked, // Get ocean currents toggle
             pct_water: $("pct_water").intValue(),
             pct_ice: $("pct_ice").intValue(),
             height: $("height").intValue(),
@@ -138,6 +139,93 @@
             config = generateVossXMap(7, "a", config);
         }
         
+        // Identify polar regions early to protect them throughout all processes
+        const polarRegionMap = identifyPolarRegions(config);
+        
+        // Apply ocean currents if enabled
+        if (config.ocean_currents) {
+            // First calculate a rough water level to identify coastal areas
+            const roughWaterLevel = calculateRoughWaterLevel(config);
+            
+            // Create a copy of the map to work with
+            const originalMap = JSON.parse(JSON.stringify(config.map));
+            let coastalCellsCount = 0;
+            
+            // Create a map to track the continental shelf areas (eroded coastlines)
+            const continentalShelfMap = createEmptyMap(config, 0);
+            
+            // Scan for coastal cells (land cells near water)
+            for (let row = 0; row < config.rows; row++) {
+                for (let col = 0; col < config.cols; col++) {
+                    // Skip cells that are already underwater or in polar regions (ice caps)
+                    if (originalMap[row][col] < roughWaterLevel || polarRegionMap[row][col]) {
+                        continue;
+                    }
+                    
+                    // Check if this is a coastal cell by looking for adjacent water cells
+                    let isCoastal = false;
+                    
+                    // Check 8 surrounding cells
+                    for (let dr = -1; dr <= 1; dr++) {
+                        for (let dc = -1; dc <= 1; dc++) {
+                            if (dr === 0 && dc === 0) continue; // Skip self
+                            
+                            // Get the adjacent cell value (with wrapping)
+                            const adjRow = wrapCoordinate(row + dr, config.rows);
+                            const adjCol = wrapCoordinate(col + dc, config.cols);
+                            
+                            // If adjacent cell is water, this is a coastal cell
+                            if (originalMap[adjRow][adjCol] < roughWaterLevel) {
+                                isCoastal = true;
+                                break;
+                            }
+                        }
+                        if (isCoastal) break;
+                    }
+                    
+                    // If this is a coastal cell, apply ocean current erosion
+                    // and mark it as potential continental shelf
+                    if (isCoastal) {
+                        coastalCellsCount++;
+                        
+                        // Calculate elevation difference from water level
+                        const elevDiff = originalMap[row][col] - roughWaterLevel;
+                        
+                        // Small islands and low elevation areas are more susceptible to ocean currents
+                        // The closer to water level, the more erosion occurs
+                        const erosionFactor = Math.max(0, 1 - (elevDiff / 5));
+                        
+                        // Check if this cell should be eroded to continental shelf (underwater)
+                        const erosionAmount = 5 * erosionFactor;
+                        const newHeight = originalMap[row][col] - erosionAmount;
+                        
+                        // If the erosion would put this cell underwater or close to it,
+                        // mark it as continental shelf
+                        if (newHeight <= roughWaterLevel + 0.5) {
+                            continentalShelfMap[row][col] = 1;
+                            
+                            // Make sure it's slightly below water level to appear as continental shelf
+                            config.map[row][col] = roughWaterLevel - 0.2 - (0.3 * Math.random());
+                        } else {
+                            // Normal erosion for areas that remain above water
+                            config.map[row][col] = Math.max(
+                                1, // Ensure we don't go below minimum height
+                                newHeight
+                            );
+                        }
+                    }
+                }
+            }
+            
+            // Apply additional erosion to small islands (but not to ice caps)
+            if (coastalCellsCount > 0) {
+                identifyAndErodeSmallIslands(config, roughWaterLevel, continentalShelfMap, polarRegionMap);
+            }
+            
+            // Extend continental shelf out from the coastline for a more natural look
+            extendContinentalShelf(config, roughWaterLevel, continentalShelfMap, polarRegionMap);
+        }
+        
         // Apply erosion if enabled
         if (config.erode) {
             var erodedMap = createEmptyMap(config, 0),
@@ -147,20 +235,27 @@
                 for (col = 0; col < config.cols; col++) {
                     var mapRow = erodedMap[row],
                         mapCol = col;
-                    var mapConfig = config;
-                    var currentRow = row,
-                        currentCol = col;
-                    // Average the surrounding cells (3x3 filter)
-                    mapConfig = getMapValue(mapConfig, currentRow - 1, currentCol - 1) + 
-                               getMapValue(mapConfig, currentRow, currentCol - 1) + 
-                               getMapValue(mapConfig, currentRow + 1, currentCol - 1) + 
-                               getMapValue(mapConfig, currentRow - 1, currentCol) + 
-                               getMapValue(mapConfig, currentRow, currentCol) + 
-                               getMapValue(mapConfig, currentRow + 1, currentCol) + 
-                               getMapValue(mapConfig, currentRow - 1, currentCol + 1) + 
-                               getMapValue(mapConfig, currentRow, currentCol + 1) + 
-                               getMapValue(mapConfig, currentRow + 1, currentCol + 1);
-                    mapRow[mapCol] = mapConfig / 9;
+                    
+                    // If this is in a polar region (potential ice cap), preserve original height
+                    if (polarRegionMap[row][col]) {
+                        mapRow[mapCol] = config.map[row][col];
+                    } else {
+                        // Apply standard erosion
+                        var mapConfig = config;
+                        var currentRow = row,
+                            currentCol = col;
+                        // Average the surrounding cells (3x3 filter)
+                        mapConfig = getMapValue(mapConfig, currentRow - 1, currentCol - 1) + 
+                                   getMapValue(mapConfig, currentRow, currentCol - 1) + 
+                                   getMapValue(mapConfig, currentRow + 1, currentCol - 1) + 
+                                   getMapValue(mapConfig, currentRow - 1, currentCol) + 
+                                   getMapValue(mapConfig, currentRow, currentCol) + 
+                                   getMapValue(mapConfig, currentRow + 1, currentCol) + 
+                                   getMapValue(mapConfig, currentRow - 1, currentCol + 1) + 
+                                   getMapValue(mapConfig, currentRow, currentCol + 1) + 
+                                   getMapValue(mapConfig, currentRow + 1, currentCol + 1);
+                        mapRow[mapCol] = mapConfig / 9;
+                    }
                 }
             }
             config.map = erodedMap;
@@ -284,6 +379,9 @@
         // Generate and render the evaporation map
         generateAndRenderEvaporationMap(finalMap, imageConfig, originalHeightMap, waterLevel);
         
+        // Generate and render the lake map
+        generateAndRenderLakeMap(finalMap, imageConfig, originalHeightMap, waterLevel);
+        
         timing = markTiming(timing, "image");
         
         // Update timing information in the UI
@@ -347,6 +445,50 @@
         return Math.floor(waterLevel / heightScale) + minHeight;
     }
     
+    /**
+     * Calculate a rough approximation of the water level based on water percentage
+     * This is used for the ocean currents simulation
+     * @param {object} config - The map configuration
+     * @returns {number} - The rough water level value
+     */
+    function calculateRoughWaterLevel(config) {
+        let minHeight = Number.MAX_VALUE;
+        let maxHeight = Number.MIN_VALUE;
+        
+        // Find min and max height values
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                if (config.map[row][col] < minHeight) {
+                    minHeight = config.map[row][col];
+                }
+                if (config.map[row][col] > maxHeight) {
+                    maxHeight = config.map[row][col];
+                }
+            }
+        }
+        
+        // Simple water level calculation based on percentage
+        return minHeight + ((maxHeight - minHeight) * config.pct_water / 100);
+    }
+
+    /**
+     * Utility function to wrap coordinate to stay within bounds
+     * @param {number} value - The coordinate value
+     * @param {number} max - The maximum value
+     * @returns {number} - The wrapped coordinate
+     */
+    function wrapCoordinate(value, max) {
+        while (value < 0) {
+            value += max;
+        }
+        
+        if (value >= max) {
+            value %= max;
+        }
+        
+        return value;
+    }
+
     /**
      * Generate and render the temperature map
      * @param {object} mapConfig - The map configuration
@@ -1206,6 +1348,10 @@
         if (config.pct_ice > 0) {
             let iceThreshold = Math.floor(config.pct_ice / 100 * config.map_len / 2);
             
+            // Record ice regions to protect them from future erosion
+            const polarRegionMap = identifyPolarRegions(config);
+            config.polarRegionMap = polarRegionMap; // Store for later use
+            
             // Apply ice to north pole
             (() => {
                 let iceCount = 0,
@@ -1237,6 +1383,9 @@
                     if (iceCount > iceThreshold) break;
                 }
             })();
+        } else {
+            // Even with no ice, define polar regions to protect them from erosion
+            config.polarRegionMap = identifyPolarRegions(config);
         }
         
         return config;
@@ -1285,6 +1434,260 @@
     }
 
     /**
+     * Identify polar regions that should be protected from erosion (potential ice cap areas)
+     * @param {object} config - The map configuration 
+     * @returns {Array} - 2D map with true for polar regions
+     */
+    function identifyPolarRegions(config) {
+        const polarRegionMap = createEmptyMap(config, false);
+        // Increase polar threshold to ensure proper protection of ice caps
+        const polarThreshold = Math.floor(config.rows * 0.18); // Top and bottom 18% are polar regions
+        
+        // Mark polar regions
+        for (let row = 0; row < config.rows; row++) {
+            const isPolar = row < polarThreshold || row >= config.rows - polarThreshold;
+            
+            for (let col = 0; col < config.cols; col++) {
+                polarRegionMap[row][col] = isPolar;
+            }
+        }
+        
+        return polarRegionMap;
+    }
+
+    /**
+     * Extend continental shelf areas for a more natural look
+     * @param {object} config - The map configuration
+     * @param {number} waterLevel - The water level
+     * @param {Array} continentalShelfMap - Map of continental shelf areas
+     * @param {Array} polarRegionMap - Map of polar regions to protect
+     */
+    function extendContinentalShelf(config, waterLevel, continentalShelfMap, polarRegionMap) {
+        // Create a copy of the map to work with
+        const originalMap = JSON.parse(JSON.stringify(config.map));
+        
+        // Create a new map to track extended shelf areas
+        const extendedShelfMap = JSON.parse(JSON.stringify(continentalShelfMap));
+        
+        // Distance to extend the shelf into the ocean (adjust as needed)
+        const shelfExtendDistance = Math.max(3, Math.floor(config.rows * 0.015)); 
+        
+        // Identify original coastline cells (before erosion)
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                // If this is already marked as shelf and not in polar region, check surrounding water cells
+                if (continentalShelfMap[row][col] === 1 && !polarRegionMap[row][col]) {
+                    // For each shelf cell, extend outward several steps
+                    for (let distance = 1; distance <= shelfExtendDistance; distance++) {
+                        // Calculate shelf depth based on distance from original coastline
+                        // Deeper as we go further from shore
+                        const depthFactor = distance / shelfExtendDistance; // 0.0 to 1.0
+                        
+                        // Apply a gradual depth gradient (shallow near shore, deeper further out)
+                        // Scaled to be between 20% and 80% of the way to deep ocean
+                        // Make sure shelf is definitely underwater by using lower values
+                        const shelfDepth = waterLevel - 0.8 - (depthFactor * 0.6);
+                        
+                        // Check in all 8 directions
+                        for (let dr = -1; dr <= 1; dr++) {
+                            for (let dc = -1; dc <= 1; dc++) {
+                                if (dr === 0 && dc === 0) continue; // Skip center
+                                
+                                // Get position to check
+                                const checkRow = wrapCoordinate(row + (dr * distance), config.rows);
+                                const checkCol = wrapCoordinate(col + (dc * distance), config.cols);
+                                
+                                // Only modify if it's water and not already part of the shelf
+                                if (originalMap[checkRow][checkCol] < waterLevel && 
+                                   extendedShelfMap[checkRow][checkCol] === 0) {
+                                    
+                                    // Mark as extended shelf
+                                    extendedShelfMap[checkRow][checkCol] = 1;
+                                    
+                                    // Set the height to create a sloping shelf
+                                    // Add small random variation for natural look
+                                    // Make sure it's well below water level to appear blue
+                                    config.map[checkRow][checkCol] = shelfDepth - (Math.random() * 0.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Second pass: smooth the transition between shelf and deep ocean
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                // Skip polar regions in smoothing pass too
+                if (extendedShelfMap[row][col] === 1 && !polarRegionMap[row][col]) {
+                    // Check for adjacent deep ocean cells
+                    let adjacentDeepOcean = false;
+                    
+                    for (let dr = -1; dr <= 1 && !adjacentDeepOcean; dr++) {
+                        for (let dc = -1; dc <= 1 && !adjacentDeepOcean; dc++) {
+                            if (dr === 0 && dc === 0) continue;
+                            
+                            const adjRow = wrapCoordinate(row + dr, config.rows);
+                            const adjCol = wrapCoordinate(col + dc, config.cols);
+                            
+                            // If adjacent to deep ocean (not shelf and underwater)
+                            if (extendedShelfMap[adjRow][adjCol] === 0 && 
+                                originalMap[adjRow][adjCol] < waterLevel) {
+                                adjacentDeepOcean = true;
+                            }
+                        }
+                    }
+                    
+                    // If this shelf cell borders deep ocean, make it deeper for a smoother transition
+                    if (adjacentDeepOcean) {
+                        config.map[row][col] = Math.min(
+                            config.map[row][col],
+                            waterLevel - 1.0 - (Math.random() * 0.3)
+                        );
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Identify and erode small islands that would be affected by ocean currents
+     * @param {object} config - The map configuration
+     * @param {number} waterLevel - The water level
+     * @param {Array} continentalShelfMap - Map of continental shelf areas
+     * @param {Array} polarRegionMap - Map of polar regions (to protect ice caps)
+     */
+    function identifyAndErodeSmallIslands(config, waterLevel, continentalShelfMap, polarRegionMap) {
+        // Create a copy of the map to work with
+        const originalMap = JSON.parse(JSON.stringify(config.map));
+        
+        // Create a map to track islands
+        const islandMap = createEmptyMap(config, 0);
+        const islandSizes = {};
+        let islandId = 1;
+        
+        // First pass: identify islands using flood fill
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                // If this is land and not already part of an island and not in a polar region
+                if (originalMap[row][col] >= waterLevel && 
+                    islandMap[row][col] === 0 && 
+                    !polarRegionMap[row][col]) {
+                    // New island found, flood fill it
+                    const size = floodFillIsland(originalMap, islandMap, row, col, islandId, waterLevel, config.rows, config.cols, polarRegionMap);
+                    islandSizes[islandId] = size;
+                    islandId++;
+                }
+            }
+        }
+        
+        // Calculate the threshold for small islands (adjust as needed)
+        // Islands smaller than this threshold will be more heavily eroded
+        const smallIslandThreshold = config.rows * config.cols * 0.005; // 0.5% of map size
+        
+        // Second pass: erode small islands
+        for (let row = 0; row < config.rows; row++) {
+            for (let col = 0; col < config.cols; col++) {
+                const island = islandMap[row][col];
+                if (island > 0 && islandSizes[island] < smallIslandThreshold) {
+                    // This is part of a small island, make it more susceptible to erosion
+                    
+                    // Calculate how much to erode based on island size
+                    // Smaller islands get more erosion
+                    const erosionFactor = 1 - Math.min(1, islandSizes[island] / smallIslandThreshold);
+                    
+                    // Check if this is a coastal cell of the island
+                    let isCoastal = false;
+                    
+                    // Check 8 surrounding cells
+                    for (let dr = -1; dr <= 1 && !isCoastal; dr++) {
+                        for (let dc = -1; dc <= 1 && !isCoastal; dc++) {
+                            if (dr === 0 && dc === 0) continue; // Skip self
+                            
+                            // Get the adjacent cell
+                            const adjRow = wrapCoordinate(row + dr, config.rows);
+                            const adjCol = wrapCoordinate(col + dc, config.cols);
+                            
+                            // If adjacent cell is water, this is a coastal cell
+                            if (islandMap[adjRow][adjCol] === 0) {
+                                isCoastal = true;
+                            }
+                        }
+                    }
+                    
+                    if (isCoastal) {
+                        // Coastal cells of small islands get significant erosion
+                        config.map[row][col] = Math.max(
+                            waterLevel - 1, // Push it below water level
+                            originalMap[row][col] - (10 * erosionFactor) // Adjust erosion strength
+                        );
+                    } else {
+                        // Interior cells get less erosion
+                        config.map[row][col] = Math.max(
+                            1, // Ensure minimum height
+                            originalMap[row][col] - (3 * erosionFactor) // Weaker erosion for interior
+                        );
+                    }
+                }
+            }
+        }
+    }
+    
+    /**
+     * Flood fill an island and return its size
+     * @param {Array} heightMap - The height map
+     * @param {Array} islandMap - The map used to track islands
+     * @param {number} startRow - Starting row
+     * @param {number} startCol - Starting column
+     * @param {number} islandId - The ID to assign to this island
+     * @param {number} waterLevel - The water level
+     * @param {number} maxRows - Maximum number of rows
+     * @param {number} maxCols - Maximum number of columns
+     * @param {Array} polarRegionMap - Map of polar regions (to protect ice caps)
+     * @returns {number} - The size of the island
+     */
+    function floodFillIsland(heightMap, islandMap, startRow, startCol, islandId, waterLevel, maxRows, maxCols, polarRegionMap) {
+        // Use a queue for flood fill to avoid stack overflow
+        const queue = [{row: startRow, col: startCol}];
+        let size = 0;
+        
+        while (queue.length > 0) {
+            const {row, col} = queue.shift();
+            
+            // Skip if out of bounds
+            if (row < 0 || row >= maxRows || col < 0 || col >= maxCols) {
+                continue;
+            }
+            
+            // Skip if water, already processed, or in polar region
+            if (heightMap[row][col] < waterLevel || 
+                islandMap[row][col] !== 0 || 
+                (polarRegionMap && polarRegionMap[row][col])) {
+                continue;
+            }
+            
+            // Mark this cell as part of the island
+            islandMap[row][col] = islandId;
+            size++;
+            
+            // Add neighbors to the queue
+            queue.push({row: row - 1, col: col}); // Up
+            queue.push({row: row + 1, col: col}); // Down
+            queue.push({row: row, col: col - 1}); // Left
+            queue.push({row: row, col: col + 1}); // Right
+            
+            // Add diagonal neighbors (optional but helps with small islands)
+            queue.push({row: row - 1, col: col - 1}); // Up-left
+            queue.push({row: row - 1, col: col + 1}); // Up-right
+            queue.push({row: row + 1, col: col - 1}); // Down-left
+            queue.push({row: row + 1, col: col + 1}); // Down-right
+        }
+        
+        return size;
+    }
+
+    /**
      * Get map value with rotation applied
      * @param {object} config - The map configuration
      * @param {number} row - Row index
@@ -1315,33 +1718,195 @@
     }
 
     /**
-     * Save the current map as a PNG image
+     * Identifies lakes in the map and returns a lake map
+     * @param {object} mapConfig - The map configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     * @param {number} oceanSizeThreshold - Optional minimum size for a water body to be considered an ocean instead of a lake
+     * @returns {object} - Object containing lakeMap and lakeData
      */
-    function saveMapAsPNG() {
-        let seedValue = $("seed").getValue();
-        save_canvas($("map"), `${seedValue}.png`);
-    }
-
-    /**
-     * Calculate the scaled terrain variation amount using a non-linear curve
-     * This creates a very gradual effect at low percentages
-     * @param {number} variationAmount - Raw variation amount (0-1)
-     * @returns {number} - Scaled variation amount for terrain distortion
-     */
-    function calculateScaledVariation(variationAmount) {
-        // Only apply distortion if variation amount is greater than 0
-        if (variationAmount <= 0) {
-            return 0;
+    function identifyLakes(mapConfig, heightMap, waterLevel, oceanSizeThreshold = null) {
+        // If oceanSizeThreshold is not provided, calculate based on map size
+        if (oceanSizeThreshold === null) {
+            oceanSizeThreshold = Math.floor(mapConfig.rows * mapConfig.cols * 0.01); // 1% of map size
         }
         
-        // Apply an extremely gradual exponential curve at the low end
-        // Using power of 4 makes the curve even more extreme at the low end
-        const scaledVariation = Math.pow(variationAmount, 4);
+        // Create maps to track water bodies and visited cells
+        const waterBodyMap = createEmptyMap(mapConfig, 0);
+        const visitedMap = createEmptyMap(mapConfig, false);
+        const lakeMap = createEmptyMap(mapConfig, 0);
         
-        // For very small variation (< 5%), apply an additional scaling factor
-        const lowEndMultiplier = variationAmount < 0.05 ? variationAmount * 20 : 1.0;
+        // Data structures to track water bodies
+        const waterBodies = {};
+        let waterBodyId = 1;
         
-        return scaledVariation * lowEndMultiplier;
+        // First pass: identify all water bodies using flood fill
+        for (let row = 0; row < mapConfig.rows; row++) {
+            for (let col = 0; col < mapConfig.cols; col++) {
+                // If this is water and not already visited
+                if (heightMap[row][col] < waterLevel && !visitedMap[row][col]) {
+                    // Track whether this water body touches the map edge
+                    const waterBodyData = {
+                        id: waterBodyId,
+                        size: 0,
+                        touchesEdge: false,
+                        cells: []
+                    };
+                    
+                    // Perform flood fill to identify all connected water cells
+                    floodFillWaterBody(
+                        heightMap, visitedMap, waterBodyMap, 
+                        row, col, waterLevel, waterBodyId, 
+                        mapConfig.rows, mapConfig.cols, waterBodyData
+                    );
+                    
+                    // Store water body data
+                    waterBodies[waterBodyId] = waterBodyData;
+                    waterBodyId++;
+                }
+            }
+        }
+        
+        // Second pass: identify lakes (water bodies that don't touch the edge and aren't too large)
+        const lakes = {};
+        let lakeId = 1;
+        
+        Object.values(waterBodies).forEach(waterBody => {
+            const isLake = !waterBody.touchesEdge && waterBody.size < oceanSizeThreshold;
+            
+            if (isLake) {
+                lakes[lakeId] = {
+                    id: lakeId,
+                    originalId: waterBody.id,
+                    size: waterBody.size,
+                    cells: waterBody.cells
+                };
+                
+                // Mark all cells of this lake in the lake map
+                waterBody.cells.forEach(cell => {
+                    lakeMap[cell.row][cell.col] = lakeId;
+                });
+                
+                lakeId++;
+            }
+        });
+        
+        return {
+            lakeMap,
+            lakeData: lakes
+        };
+    }
+    
+    /**
+     * Flood fill to identify a water body
+     * @param {Array} heightMap - The height map
+     * @param {Array} visitedMap - Map tracking visited cells
+     * @param {Array} waterBodyMap - Map tracking water body IDs
+     * @param {number} startRow - Starting row
+     * @param {number} startCol - Starting column
+     * @param {number} waterLevel - The water level
+     * @param {number} waterBodyId - The ID to assign to this water body
+     * @param {number} maxRows - Maximum number of rows
+     * @param {number} maxCols - Maximum number of columns
+     * @param {object} waterBodyData - Object to store data about this water body
+     */
+    function floodFillWaterBody(heightMap, visitedMap, waterBodyMap, startRow, startCol, 
+                                waterLevel, waterBodyId, maxRows, maxCols, waterBodyData) {
+        // Use a queue for flood fill to avoid stack overflow
+        const queue = [{row: startRow, col: startCol}];
+        
+        while (queue.length > 0) {
+            const {row, col} = queue.shift();
+            
+            // Skip if out of bounds, not water, or already visited
+            if (row < 0 || row >= maxRows || col < 0 || col >= maxCols ||
+                heightMap[row][col] >= waterLevel || visitedMap[row][col]) {
+                continue;
+            }
+            
+            // Mark this cell as visited and part of the water body
+            visitedMap[row][col] = true;
+            waterBodyMap[row][col] = waterBodyId;
+            waterBodyData.size++;
+            waterBodyData.cells.push({row, col});
+            
+            // Check if this water cell touches the map edge
+            if (row === 0 || row === maxRows - 1 || col === 0 || col === maxCols - 1) {
+                waterBodyData.touchesEdge = true;
+            }
+            
+            // Add adjacent cells to the queue (4-way connectivity)
+            queue.push({row: row - 1, col: col}); // Up
+            queue.push({row: row + 1, col: col}); // Down
+            queue.push({row: row, col: col - 1}); // Left
+            queue.push({row: row, col: col + 1}); // Right
+            
+            // Optionally add diagonal neighbors for 8-way connectivity
+            queue.push({row: row - 1, col: col - 1}); // Up-left
+            queue.push({row: row - 1, col: col + 1}); // Up-right
+            queue.push({row: row + 1, col: col - 1}); // Down-left
+            queue.push({row: row + 1, col: col + 1}); // Down-right
+        }
+    }
+    
+    /**
+     * Generate and render a lake map
+     * @param {object} mapConfig - The map configuration
+     * @param {object} imageConfig - The image configuration
+     * @param {Array} heightMap - The original height map data
+     * @param {number} waterLevel - The water level
+     */
+    function generateAndRenderLakeMap(mapConfig, imageConfig, heightMap, waterLevel) {
+        // Create a copy of the map config for lakes
+        const lakeMapConfig = JSON.parse(JSON.stringify(mapConfig));
+        lakeMapConfig.palette = applyPalette(palette.lakes || palette.blue);
+        
+        // Identify lakes
+        const { lakeMap, lakeData } = identifyLakes(mapConfig, heightMap, waterLevel);
+        
+        // Create a map showing only lakes
+        const lakesOnlyMap = [];
+        for (let row = 0; row < mapConfig.rows; row++) {
+            lakesOnlyMap[row] = [];
+            for (let col = 0; col < mapConfig.cols; col++) {
+                if (lakeMap[row][col] > 0) {
+                    // This is a lake cell - use blue colors
+                    lakesOnlyMap[row][col] = Math.floor(Math.random() * lakeMapConfig.palette.n_sea) + 
+                                           lakeMapConfig.palette.sea_idx;
+                } else {
+                    // Not a lake - transparent or minimal color
+                    lakesOnlyMap[row][col] = 0;
+                }
+            }
+        }
+        
+        // Set the lake map
+        lakeMapConfig.map = lakesOnlyMap;
+        
+        // Create the lake image
+        const lakeImage = new_image("lake-map", imageConfig.width, imageConfig.height);
+        
+        // Render the lake map with the appropriate projection
+        if (mapConfig.projection == "mercator") {
+            renderMercatorProjection(lakeImage, lakeMapConfig, imageConfig);
+        } else if (mapConfig.projection == "transmerc") {
+            renderTransverseMercatorProjection(lakeImage, lakeMapConfig, imageConfig);
+        } else if (mapConfig.projection == "icosahedral") {
+            renderIcosahedralProjection(lakeImage, lakeMapConfig, imageConfig);
+        } else if (mapConfig.projection == "mollweide") {
+            renderMollweideProjection(lakeImage, lakeMapConfig, imageConfig);
+        } else if (mapConfig.projection == "sinusoidal") {
+            renderSinusoidalProjection(lakeImage, lakeMapConfig, imageConfig);
+        } else {
+            // Default square projection
+            renderSquareProjection(lakeImage, lakeMapConfig, imageConfig);
+        }
+        
+        // Draw the pixels to the canvas
+        draw_pixels(lakeImage);
+        
+        // Return the lake data for potential use elsewhere
+        return { lakeMap, lakeData };
     }
 
     // Configuration for UI elements
@@ -1368,6 +1933,50 @@
         },
         palette
     };
+    
+    // Define a default blue palette for lakes
+    palette.blue = {
+        sea: [
+            [0, 0, 128], // Dark blue
+            [0, 0, 255]  // Light blue
+        ],
+        land: [
+            [0, 128, 255], // Sky blue
+            [173, 216, 230] // Light sky blue
+        ]
+    };
+
+    /**
+     * Saves the current map as a PNG image
+     */
+    function saveMapAsPNG() {
+        // Get the map canvas element
+        const mapCanvas = $("map");
+        
+        if (!mapCanvas) {
+            console.error("Map canvas element not found");
+            return;
+        }
+        
+        try {
+            // Create a link element
+            const link = document.createElement('a');
+            
+            // Set the download attribute with a filename
+            link.download = 'world-map-' + $("seed").getValue() + '.png';
+            
+            // Convert the canvas content to a data URL
+            link.href = mapCanvas.toDataURL('image/png');
+            
+            // Append to the document, click it to start the download, and remove it
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (e) {
+            console.error("Error saving map as PNG:", e);
+            alert("Could not save the map as PNG. Your browser may not support this feature.");
+        }
+    }
     
     // Initialize the UI when the DOM is loaded
     document.observe("dom:loaded", () => {
