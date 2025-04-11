@@ -8,8 +8,8 @@ You are a cross-platform content strategist. I will provide you with a blog post
 4. 🌤️ Bluesky  
 5. 💬 Microsoft Teams  
 6. 📬 Email Newsletter  
-7. 🎙️ Podcast / YouTube Shorts / TikTok / Instagram Reels  
-8. 🎙️ Podcast / YouTube Shorts / TikTok / Instagram Reels  
+7. 🎬 YouTube Shorts / TikTok / Instagram Reels
+8. 🎧 Podcast
 9. 🪵 Markdown Output (this one)
 
 Each output should reflect the tone, structure, and audience expectations of that platform. Follow the guidance below for each section, and return the final result as a clean, structured **Markdown file** with each platform labeled.
@@ -101,7 +101,7 @@ Return a single markdown file with this structure:
 
 ---
 
-## 🎙️ YouTube Shorts / TikTok / Instagram Reels  
+## 🎬 YouTube Shorts / TikTok / Instagram Reels 
 - **Script**:  
 {30–60 second script, spoken aloud. Conversational tone. Light smile. Pause for rhythm. Delivered to camera or mic.}  
 - **Caption**:  
@@ -113,7 +113,7 @@ Only return the final output in the Markdown structure shown above — no explan
 
 ---
 
-## 🎙️ Podcast  
+## 🎧 Podcast
 - **Script**:  
 {3 - 5 minute script written for two people, spoken aloud. Conversational tone. Light smile. Pause for rhythm. Delivered to camera or mic.}  
 - **Caption**:  
