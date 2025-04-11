@@ -1,5 +1,3 @@
-## Prompt: Repurpose My Blog Post Across 8 Platforms
-
 You are a cross-platform content strategist. I will provide you with a blog post including a title, subtitle, body content, and (optionally) a description of an accompanying image. Your task is to rewrite the content for the following platforms:
 
 1. 🐘 Mastodon  
