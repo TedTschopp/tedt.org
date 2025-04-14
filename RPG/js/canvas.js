@@ -109,6 +109,7 @@
     n = a;
   };
   g.draw_pixels = function (a) {
+    console.log (a)
     let c = a.canvas.width,
       b = a.getImageData(0, 0, c, a.canvas.height);
     Object.keys(k).forEach((d) => {
