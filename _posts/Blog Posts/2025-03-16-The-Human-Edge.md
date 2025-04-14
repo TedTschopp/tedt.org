@@ -55,6 +55,9 @@ image-credits-title: "A Helping Hand"
 image-description: "A Digital Hand and a human hand, holding a map of the world"
 image-title: "A Helping Hand"
 
+redirect_from:
+  - /computers/science/opinion/personal%20writing/philosophy/The-Human-Edge
+
 mastodon-post-id: 114174613806302241
 
 ---

@@ -30,6 +30,8 @@ categories:
 tags:
 keywords:
 
+redirect_from:
+  - /gamma%20world/role%20playing%20games/Gamma-World-Terrain
 
 
 location:

@@ -56,6 +56,9 @@ image-title:
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
+redirect_from:
+  - /computers/communications/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations
+
 mastodon-post-id: 113782781327230004
 
 mathjax:

@@ -98,6 +98,9 @@ redirect_from:
  - /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
  - /2023/08/20/From-the-Swabian-War-Benedikt-Fontana/
 
+
+
+
 mastodon-post-id: 110924710196764929
 ---
 

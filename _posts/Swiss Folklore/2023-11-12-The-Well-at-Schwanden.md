@@ -58,11 +58,13 @@ image-title:  The Schächental Valley
 
 monster-or-magical-or-religious-ideas: The miraculous creation of a well by a mysterious traveler.
 year-the-event-took-place: unknown
-permalink: /Swiss-Folklore/the-well-at-schwanden
+permalink: /Swiss-Folklore/:title:output_ext
 
 mathjax:
 
 order:
+redirect_from:
+  - /Swiss-Folklore/the-well-at-schwanden
 
 mastodon-post-id: 111404502000070430
 ---

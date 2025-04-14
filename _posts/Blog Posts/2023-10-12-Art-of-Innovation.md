@@ -56,6 +56,11 @@ image-credits-title: "Breaking Free"
 image-description: "Two people leaving the possible behind them"
 image-title: "Breaking Free from the Possible"
 
+
+redirect_from:
+  - /opinion/philosophy/Art-of-Innovation
+
+
 mastodon-post-id: 111223710272362671
 
 ---

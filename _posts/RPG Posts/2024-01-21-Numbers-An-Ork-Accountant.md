@@ -51,6 +51,8 @@ redirect_from:
   - /2024/01/21/Numbers-An-Orkl-Accountant/
   - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant
   - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant/
+  - /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant
+  - /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant/
 
 
 ---

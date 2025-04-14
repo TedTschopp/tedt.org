@@ -55,6 +55,10 @@ image-credits-title: "AI and Teamwork"
 image-description: "A visual representation of AI enhancing collaboration in software teams."
 image-title: "AI in Software Development"
 
+redirect_from:
+  - /computers/opinion/philosophy/projects/science/AI-in-Software-Development-Breaking-Myths-and-Building-Teams
+
+
 mastodon-post-id: 113998922120307948
 
 ---

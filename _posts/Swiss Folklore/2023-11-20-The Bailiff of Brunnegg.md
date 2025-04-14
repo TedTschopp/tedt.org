@@ -64,9 +64,14 @@ image-title: "The Haunting of Brunnegg Castle"
 monster-or-magical-or-religious-ideas: "Haunted castle, supernatural snowstorm, cursed bailiff"
 year-the-event-took-place: [Insert year if known or leave blank]
 
-mathjax:
-order:
+permalink: /Swiss-Folklore/:title:output_ext
 
+mathjax:
+
+order:
+redirect_from:
+  - /folklore/The-Bailiff-of-Brunnegg
+  
 mastodon-post-id: 111443917454528953
 
 ---

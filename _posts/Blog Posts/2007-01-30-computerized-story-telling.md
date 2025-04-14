@@ -54,7 +54,11 @@ image-credits-title: ""
 image-description: "Old desktop computer, books on folklore and code, soft lamplight."
 image-title: "Digital Dreams and Dusty Books"
 
+redirect_from:
+  - /computers/books/philosophy/opinion/computerized-story-telling
+
 mastodon-post-id: 
+
 ---
 I ran across something curious tonight while wandering the links on Digg—a quiet corner of the web where someone asked a question older than silicon: Can a machine tell a story?
 

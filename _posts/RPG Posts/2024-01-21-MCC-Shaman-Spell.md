@@ -43,6 +43,10 @@ year-the-event-took-place:
 mathjax: false
 order:
 
+redirect_from:
+  - /role%20playing%20games/mutant%20crawl%20classics/MCC-Shaman-Spell
+
+
 mastodon-post-id: 111819663872505089
 
 ---

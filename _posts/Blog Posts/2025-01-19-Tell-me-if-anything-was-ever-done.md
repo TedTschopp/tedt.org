@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Tell me if anything was ever done"
+title: "Tell Me if Anything was Ever Done"
 subtitle: "Lessons from Leonardo di Vinci"
 quote: "Tell me if anything was ever done… Tell me if ever I did a thing… Tell me if anything was ever made. — Leonardo da Vinci"
 excerpt: "Leonardo da Vinci’s notebooks show the struggle of a brilliant mind weighed down by perfectionism. His haunting question, 'What have I truly accomplished?', inspires creators today to share their ideas, embrace imperfection, and deliver value to the world."
@@ -54,6 +54,10 @@ image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: "Leonardo Quote"
 image-description: "An AI image of Leonardo Di Vinci"
 image-title: "Leonardo Quote"
+
+redirect_from:
+  - /communications/philosophy/personal%20writing/science/Tell-me-if-anything-was-ever-done
+
 
 mastodon-post-id: 113859271380786463
 

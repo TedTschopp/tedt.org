@@ -55,6 +55,10 @@ monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
 
 
+redirect_from:
+  - /computers/the-google-browseros
+
+
 mathjax:
 
 order:
