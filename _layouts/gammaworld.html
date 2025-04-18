@@ -63,60 +63,66 @@
                               <h1 class="MCC">{{ page.title }}</h1>
                          {% endif %}
 
-                         {% if page.image contains "/RPG/MCC-GW/images/Monster-Manual/" %}
-                              <div class="position-relative col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center"
-                                   style="height: 100%;">
-                                   <figure style="overflow: hidden;">
-                                        <img class="w-100"
-                                             src="{{ site.siteurl }}{{ page.image }}"
-                                             id="jscii-element-image">
-                                        <pre style="overflow: hidden;" id="ascii-container-image"></pre>
-                                   </figure>
-                                   <p class="position-absolute text-danger fs-1 m-5"
-                                        style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
-                                   </p>
-                              </div>
-
-
-                         {% else %}
-                              {% assign current_second = "now" | date: "%S" %}
-                              {% assign random_number = current_second | modulo: 12 | plus: 1 %}
-
-                              <div class="position-relative col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center" style="height: 100%;">
-                                   <figure style="overflow: hidden;">
-                                        <img class="w-100" src="{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png" id="jscii-element-image">
-                                        <pre style="overflow: hidden;" id="ascii-container-image"></pre>
-                                   </figure>
-                                   <p class="position-absolute text-danger fs-1 m-5" style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
-                                   {% if random_number == 1 %}
-                                        Image file not found.
-                                   {% elsif random_number == 2 %}
-                                        Corrupted image file detected.
-                                   {% elsif random_number == 3 %}
-                                        Unsupported image format.
-                                   {% elsif random_number == 4 %}
-                                        Image load failed due to missing file.
-                                   {% elsif random_number == 5 %}
-                                        Error: Unable to display image.
-                                   {% elsif random_number == 6 %}
-                                        Image file is incomplete or damaged.
-                                   {% elsif random_number == 7 %}
-                                        File path does not point to a valid image.
-                                   {% elsif random_number == 8 %}
-                                        Failed to decode image.
-                                   {% elsif random_number == 9 %}
-                                        Image data corrupted or unreadable.
-                                   {% elsif random_number == 10 %}
-                                        Error: Image cannot be rendered.
-                                   {% elsif random_number == 11 %}
-                                        Invalid image file header.
-                                   {% elsif random_number == 12 %}
-                                        Image display error: Resource unavailable.
-                                   {% endif %}
-                                   </p>
-                              </div>
-                         {% endif %}                        
-
+                         {% assign creature_image = page.image %}
+                         {% if creature_image == "" %}
+                             {% assign creature_image = "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
+                         {% endif %}
+                         
+                         {% assign current_second = "now" | date: "%S" %}
+                         {% assign random_number = current_second | modulo: 12 | plus: 1 %}
+                         
+                         <section class="col-12 col-lg-3 pe-lg-4 float-start d-flex align-items-center justify-content-center" aria-label="Creature Image">
+                             <figure class="w-100 overflow-hidden">
+                                 <img 
+                                     class="img-fluid rounded shadow"
+                                     src="{{ site.siteurl }}{{ creature_image }}"
+                                     id="jscii-element-image"
+                                     alt="{{ page.title | default: 'Creature image' }}"
+                                     loading="lazy"
+                                     role="img"
+                                 >
+                                 <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
+                                 <figcaption class="visually-hidden">
+                                     {{ page.title | default: "Creature image" }}
+                                 </figcaption>
+                             </figure>
+                             <p id="image-error-message" class="position-absolute text-danger fs-1 m-5 visually-hidden"
+                                style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
+                                 {% case random_number %}
+                                     {% when 1 %}Image file not found.
+                                     {% when 2 %}Corrupted image file detected.
+                                     {% when 3 %}Unsupported image format.
+                                     {% when 4 %}Image load failed due to missing file.
+                                     {% when 5 %}Error: Unable to display image.
+                                     {% when 6 %}Image file is incomplete or damaged.
+                                     {% when 7 %}File path does not point to a valid image.
+                                     {% when 8 %}Failed to decode image.
+                                     {% when 9 %}Image data corrupted or unreadable.
+                                     {% when 10 %}Error: Image cannot be rendered.
+                                     {% when 11 %}Invalid image file header.
+                                     {% when 12 %}Image display error: Resource unavailable.
+                                 {% endcase %}
+                             </p>
+                         </section>
+                         <script>
+                         function checkImage(url, onSuccess, onError) {
+                             var img = new Image();
+                             img.onload = onSuccess;
+                             img.onerror = onError;
+                             img.src = url;
+                         }
+                         checkImage(
+                             "{{ site.siteurl }}{{ creature_image }}",
+                             function () {
+                                 document.getElementById('jscii-element-image').src = "{{ site.siteurl }}{{ creature_image }}";
+                                 document.getElementById('image-error-message').classList.add('visually-hidden');
+                             },
+                             function () {
+                                 document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                                 document.getElementById('image-error-message').classList.remove('visually-hidden');
+                             }
+                         );
+                         </script>
                          {% if page.author != "" %}
                               <strong>Reported By:</strong> {{ page.author }}
                          {% else %}
