@@ -54,7 +54,7 @@ image-title:
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
-permalink: /Quotes-Database/:title:output_ext
+
 
 mathjax:
 

@@ -59,7 +59,7 @@ with open(in_file_path,'r') as in_json_file:
             yaml.default_flow_style = False
             yaml.dump(json_obj, out_yaml_file)
             out_yaml_file.write("id: "+str(i + 21000 - 1)+"\n")  # id
-            out_yaml_file.write("permalink: /Quotes-Database/:title:output_ext"+"\n")
+            out_yaml_file.write(""+"\n")
             out_yaml_file.write("layout: quotes"+"\n")
             out_yaml_file.write("categories:"+"\n")
             out_yaml_file.write("- Quotes"+"\n")
