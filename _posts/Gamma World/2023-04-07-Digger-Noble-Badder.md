@@ -1,10 +1,10 @@
 ---
 image: ''
 title: Digger Noble «Badder»
-creature_name_index: Badder
+creature_name_index: Digger Noble
 notes: ''
 genericname: ''
-creature_name: Badder
+creature_name: Digger Noble
 common_name: Digger Noble
 other_names: Duggers
 generic_name: Duggers

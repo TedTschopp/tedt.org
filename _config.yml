@@ -18,7 +18,7 @@ keywords: Technology
  - Storytelling
 
 # Permalink 
-# permalink: /:categories/:title
+permalink: /:title/
 
 # First Name / Given Name / Common Name
 givenname: Ted
