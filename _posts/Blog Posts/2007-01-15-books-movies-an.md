@@ -43,20 +43,17 @@ coordinates:
     longitude: -118.069288
 
 
-image:
+image: https://tedt.org/img/2007-01/Seedling-in-the-ashes.png
 image-alt:
-image-artist:
-image-artist-URL:
+image-artist: Ted Tschopp and OpenAI
+image-artist-URL: 
 image-credits:
 image-credits-URL:
 image-credits-artist:
 image-credits-artist-URL:
 image-credits-title:
-image-description: An image that juxtaposes the cover of 'Children of Men' book with
-    a still from the movie. In the background, faded symbols or icons may represent
-    the themes discussed in the article, such as love, hope, religion, family, politics,
-    justice, and freedom.
-image-title:
+image-description: A stark yet hopeful dystopian landscape, set in a fading twilight. Foreground shows an abandoned children's playground—swings rusted and empty, a worn teddy bear lying forgotten on the ground. Beyond, silhouetted figures stand apart, disconnected and isolated, looking toward a distant horizon where a single bright ray of sunlight pierces through heavy clouds, illuminating a small, fragile seedling growing amidst barren earth. The seedling symbolizes hope, fragile yet resilient, amidst decay and isolation.
+image-title: A Seedling in the Ashes
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
