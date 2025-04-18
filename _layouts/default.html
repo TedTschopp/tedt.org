@@ -90,39 +90,39 @@
                               {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                               {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
                               {% assign image_URL = post.image %}
-                                      <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                          <div class="col-md-4">
-                                            <img src="{{ image_URL }}" alt="Example card image" class="img-fluid rounded-start"
-                                              style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                                          </div>
-                                          <div class="col-md-8">
-                                            <div class="card-body">
-                                              <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
-                                              <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
-                                                strip_html }}</p>
-                                              <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
-                                                    datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
-                                                    }}</time></small></p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                              <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="{{ image_URL }}" alt="Example card image" class="img-fluid rounded-start"
+                                      style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+                                      <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
+                                        strip_html }}</p>
+                                      <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
+                                            datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
+                                            }}</time></small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             {% else %}
-                                      <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                          <div class="col-md-12">
-                                            <div class="card-body">
-                                              <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
-                                              <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
-                                                strip_html }}</p>
-                                              <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
-                                                    datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
-                                                    }}</time></small></p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                              <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-12">
+                                    <div class="card-body">
+                                      <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+                                      <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
+                                        strip_html }}</p>
+                                      <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
+                                            datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
+                                            }}</time></small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             {% endif %}
                           </div>
                       </div>
@@ -153,39 +153,39 @@
                           {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                           {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
                           {% assign image_URL = post.image %}
-                                      <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                          <div class="col-md-4">
-                                            <img src="{{ image_URL }}" alt="Example card image" class="img-fluid rounded-start"
-                                              style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                                          </div>
-                                          <div class="col-md-8">
-                                            <div class="card-body">
-                                              <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
-                                              <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
-                                                strip_html }}</p>
-                                              <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
-                                                    datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
-                                                    }}</time></small></p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="{{ image_URL }}" alt="Example card image" class="img-fluid rounded-start"
+                                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+                                  <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
+                                    strip_html }}</p>
+                                  <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
+                                        datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
+                                        }}</time></small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         {% else %}
-                                      <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                          <div class="col-md-12">
-                                            <div class="card-body">
-                                              <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
-                                              <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
-                                                strip_html }}</p>
-                                              <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
-                                                    datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
-                                                    }}</time></small></p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-12">
+                                <div class="card-body">
+                                  <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+                                  <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt |
+                                    strip_html }}</p>
+                                  <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time
+                                        datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y"
+                                        }}</time></small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         {% endif %}
                       </div>
                     </div>
