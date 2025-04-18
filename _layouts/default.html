@@ -319,7 +319,7 @@
     <div class="col-md-8">
       <div class="card-body">
         <h4 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
-        <p class="card-text" style="--lines: 3;">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
+        <p class="card-text text-truncate-2">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
         <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}"
               itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p>
       </div>
