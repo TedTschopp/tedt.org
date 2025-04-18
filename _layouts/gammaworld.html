@@ -65,7 +65,7 @@
 
                          {% assign creature_image = page.image %}
                          {% if creature_image == "" %}
-                             {% assign creature_image = "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
+                             {% assign creature_image = "https://tedt.org/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
                          {% endif %}
                          
                          {% assign current_second = "now" | date: "%S" %}
