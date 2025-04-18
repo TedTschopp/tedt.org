@@ -1,13 +1,13 @@
 ---
 image: ''
-title: Heavy Construction Bot «Engineering Bot, Heavy Duty»
-creature_name_index: Engineering Bot, Heavy Duty
+title: Construction Bot - Heavy «Engineering Bot - Heavy Duty»
+creature_name_index: Engineering Bot - Heavy Duty
 notes: ''
 genericname: ''
-creature_name: Engineering Bot, Heavy Duty
-common_name: Heavy Construction Bot
+creature_name: Engineering Bot - Heavy Duty
+common_name: Construction Bot - Heavy
 other_names: ''
-generic_name: Heavy Construction Bot
+generic_name: Construction Bot - Heavy
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
 author_name: 'James M. Ward'

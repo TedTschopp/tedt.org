@@ -1,13 +1,13 @@
 ---
 image: ''
-title: Light Construction Bot «Engineering Bot, Light Duty»
-creature_name_index: Engineering Bot, Light Duty
+title: Construction Bot - Light «Engineering Bot - Light Duty»
+creature_name_index: Engineering Bot - Light Duty
 notes: ''
 genericname: ''
-creature_name: Engineering Bot, Light Duty
-common_name: Light Construction Bot
+creature_name: Engineering Bot - Light Duty
+common_name: Construction Bot - Light
 other_names: ''
-generic_name: Light Construction Bot
+generic_name: Construction Bot - Light
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
 author_name: 'James M. Ward'

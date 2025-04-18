@@ -1,10 +1,10 @@
 ---
 image: ''
-title: Construction Bot «Engineering Bot, Standard»
-creature_name_index: Engineering Bot, Standard
+title: Construction Bot «Engineering Bot - Standard»
+creature_name_index: Engineering Bot - Standard
 notes: ''
 genericname: ''
-creature_name: Engineering Bot, Standard
+creature_name: Engineering Bot - Standard
 common_name: Construction Bot
 other_names: ''
 generic_name: Construction Bot
