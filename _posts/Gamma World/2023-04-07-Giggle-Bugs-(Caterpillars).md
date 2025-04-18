@@ -1,10 +1,10 @@
 ---
 image: ''
-title: Giggle Bugs (Caterpillars)
-creature_name_index: Giggle Bugs (Caterpillars)
+title: Giggle Bug - Caterpillar
+creature_name_index: Giggle Bug - Caterpillars
 notes: ''
 genericname: ''
-creature_name: Giggle Bugs (Caterpillars)
+creature_name: Giggle Bug - Caterpillars
 common_name: ''
 other_names: ''
 generic_name: ''

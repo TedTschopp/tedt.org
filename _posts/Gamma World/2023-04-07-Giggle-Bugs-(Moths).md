@@ -1,10 +1,10 @@
 ---
 image: ''
-title: Giggle Bugs (Moths)
-creature_name_index: Giggle Bugs (Moths)
+title: Giggle Bug - Moths
+creature_name_index: Giggle Bug - Moths
 notes: ''
 genericname: ''
-creature_name: Giggle Bugs (Moths)
+creature_name: Giggle Bugs - Moths
 common_name: ''
 other_names: ''
 generic_name: ''
