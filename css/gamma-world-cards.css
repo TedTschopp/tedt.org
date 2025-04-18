@@ -1,91 +1,104 @@
-    body {
-        background-color: black;
-        color: #000;
-    }
+/* Gamma World Cards CSS - Updated for semantic HTML and Bootstrap */
+body {
+    background-color: black;
+    color: #000;
+}
 
-    a {
-        color: #000055;
-    }
+a {
+    color: #000055;
+}
 
+/* Tech-V Elements */
+.tech-v h1 {
+    font-family: 'IrwinAllen';
+    line-height: 1.2;
+}
 
+.tech-v h2 {
+    font-family: 'IrwinAllen';
+}
 
+.tech-v h3 {
+    font-family: 'lowwe';
+}
 
-    .tech-v h1 {
-        font-family: 'IrwinAllen';
-        line-height: 1.2;
-    }
+.tech-v p b {
+    font-family: 'Checkbook';
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: normal;
+}
 
-    .tech-v h2 {
-        font-family: 'IrwinAllen';
-    }
+.tech-v p.description {
+    color: inherit;
+}
 
-    .tech-v h3 {
-        font-family: 'lowwe';
-    }
+.tech-v p.background {
+    color: inherit;
+}
 
+.tech-v p.rules {
+    color: inherit;
+    font-style: italic;
+}
 
-    .tech-v p b {
-        font-family: 'Checkbook';
-        color: inherit;
-        font-size: 1.5em;
-        font-weight: normal;
-    }
+/* Paper margins and content area - updated for semantic structure */
+#papermargin_left,
+#papermargin_right {
+    background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.webp);
+    background-repeat: repeat-y;
+    min-height: 100%;
+}
 
-    .tech-v p.description {
-        color: inherit;
-    }
+#paper_printarea {
+    font-size: 1em;
+    text-align: left;
+    font-family: lp1_regular, "Trebuchet MS", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-dark.webp);
+    background-repeat: repeat;
+    text-shadow: 0 0 1px rgba(115, 115, 121, 0.6), 0 0 4px rgba(115, 115, 121, 0.3);
+}
 
-    .tech-v p.background {
-        color: inherit;
-    }
+/* Main heading styling */
+#paper_printarea h1.MCC {
+    margin-bottom: 1.5rem;
+}
 
-    .tech-v p.rules {
-        color: inherit;
-        font-style: italic;
-    }
+/* Additional elements for creature details */
+#paper_printarea section {
+    margin-bottom: 1rem;
+}
 
-    td#papermargin_left,
-    td#papermargin_right {
-        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.webp);
-        background-repeat: repeat-y;
-        width: 33px;
-        min-width: 33px;
-    }
+#paper_printarea dl.row dt {
+    font-weight: 600;
+}
 
-    td#paper_printarea {
-        width: 100%;
-        font-size: 1em;
-        text-align: left;
-        font-family: lp1_regular, "Trebuchet MS", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        background-color: white;
-        padding: 57px 18px 1px 18px;
-        background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-dark.webp);
-        background-repeat: repeat;
-        text-shadow: 0 0 1px rgba(115, 115, 121, 0.6), 0 0 4px rgba(115, 115, 121, 0.3);
-    }
-
+/* Background effects */
 #gw--gradient {
     position: fixed;
     width: 100vw;
     background: #061c17;
     background: radial-gradient(#163c33,#061c17);
-    z-index: 0
+    z-index: 0;
 }
 
 #gw--scanLines {
     position: fixed;
     z-index: 2;
     width: 100vw;
-    pointer-events: none
+    pointer-events: none;
 }
 
-#gw--scanLines:after,#gw--scanLines:before {
+#gw--scanLines:after,
+#gw--scanLines:before {
     display: block;
     pointer-events: none;
     content: "";
-    position: absolute
+    position: absolute;
 }
 
 #gw--scanLines:after {
@@ -99,42 +112,72 @@
     background-image: -moz-repeating-linear-gradient(top,transparent 0,transparent 4px,rgba(6,28,23,.2) 4px,rgba(6,28,23,.2) 6px);
     -moz-background-size: 100% 6px;
     background-image: repeating-linear-gradient(top,transparent 0,transparent 4px,rgba(6,28,23,.2) 4px,rgba(6,28,23,.2) 6px);
-    background-size: 100% 6px
+    background-size: 100% 6px;
 }
 
-#gw--gradient,#gw--scanLines {
-    height: 100vh
+#gw--gradient,
+#gw--scanLines {
+    height: 100vh;
 }
 
 @media (max-device-aspect-ratio: 3 / 4) {
-    #gw--gradient,#gw--scanLines {
-        height:calc(100vw * 1.45297)
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 1.45297);
     }
 }
 
 @media (max-device-aspect-ratio: 2 / 3) {
-    #gw--gradient,#gw--scanLines {
-        height:calc(100vw * 1.635)
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 1.635);
     }
 }
 
 @media (max-device-aspect-ratio: 10 / 16) {
-    #gw--gradient,#gw--scanLines {
-        height:calc(100vw * 2.244)
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 2.244);
     }
 }
 
 @media (max-device-aspect-ratio: 9 / 16) {
-    #gw--gradient,#gw--scanLines {
-        height:calc(100vw * 2.23802)
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 2.23802);
     }
 }
 
+/* Typography */
+.LineType {
+    font-family: lp1_regular, "Trebuchet MS", sans-serif;
+}
 
+/* ASCII art container */
+pre#ascii-container-image { 
+    font: bold 8px/5px monospace; 
+    color: #000; 
+    clear: left; 
+}
 
+/* Responsive image figure */
+figure {
+    margin: 0;
+    position: relative;
+}
 
-    .LineType {
-        font-family: lp1_regular, "Trebuchet MS", sans-serif;
-    }
+/* Navigation styles */
+nav .btn-outline-primary {
+    margin: 0.5rem;
+}
 
-    pre#ascii-container-image { font: bold 8px/5px monospace; color: #000; clear: left; }
+/* Additional creature section styles */
+section[aria-label="Additional Creatures"] h2.MCC {
+    margin-top: 1.5rem;
+}
+
+section[aria-label="Additional Creatures"] h3 {
+    margin-top: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.25rem;
+}
