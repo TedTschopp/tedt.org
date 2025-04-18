@@ -48,6 +48,22 @@ a {
     background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.webp);
     background-repeat: repeat-y;
     min-height: 100%;
+    width: 33px !important; /* Fixed width to match the background image */
+    min-width: 33px;
+    flex: 0 0 33px !important; /* Force flex width to be exactly 33px */
+    padding: 0 !important; /* Remove padding to ensure exact width */
+}
+
+/* Override Bootstrap grid for the main content area to accommodate fixed-width asides */
+.row > #paper_printarea.col-lg-10 {
+    flex: 1 1 auto !important; /* Allow flex-grow to fill remaining space */
+    max-width: calc(100% - 66px); /* Account for both 33px margins */
+}
+
+@media (max-width: 991.98px) {
+    .row > #paper_printarea.col-lg-10 {
+        max-width: 100%; /* Full width on mobile when margins are hidden */
+    }
 }
 
 #paper_printarea {
@@ -164,6 +180,46 @@ pre#ascii-container-image {
 figure {
     margin: 0;
     position: relative;
+}
+
+/* Fix for image sizing and display */
+section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top instead of center */
+    height: auto;
+}
+
+/* Ensure image can grow to proper dimensions */
+section[aria-label="Creature Overview"] figure {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+section[aria-label="Creature Overview"] figure img {
+    max-width: 100%;
+    height: auto;
+    max-height: none; /* Remove any height constraint */
+    object-fit: contain;
+}
+
+/* Adjust layout for better image display on medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section[aria-label="Creature Overview"] .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+        width: 100%;
+        max-width: 500px; /* Reasonable max width for mid-sized images */
+        margin: 0 auto 1.5rem auto;
+    }
+    
+    section[aria-label="Creature Overview"] .col-12.col-lg-8 {
+        width: 100%;
+    }
 }
 
 /* Navigation styles */
