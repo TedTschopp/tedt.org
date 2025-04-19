@@ -63,6 +63,19 @@
 
                     <!-- Creature Image and Overview -->
                     <!-- {{creature_image}} -->
+                    <script>
+                         checkImage(
+                              "{{creature_image}}",
+                              function () {
+                              document.getElementById('jscii-element-image').src = "{{creature_image}}";
+                              document.getElementById('image-error-message').classList.add('visually-hidden');
+                              },
+                                   function () {
+                              document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                              document.getElementById('image-error-message').classList.remove('visually-hidden');
+                              }
+                        );
+                    </script>
 
                     <section class="row mb-4" aria-label="Creature Overview">
                          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
@@ -487,17 +500,6 @@
                img.onerror = onError;
                img.src = url;
           }
-          checkImage(
-               "{{ site.siteurl }}{{ creature_image }}",
-               function () {
-                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}{{ creature_image }}";
-                    document.getElementById('image-error-message').classList.add('visually-hidden');
-               },
-               function () {
-                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
-                    document.getElementById('image-error-message').classList.remove('visually-hidden');
-               }
-          );
      </script>
 </body>
 
