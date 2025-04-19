@@ -54,9 +54,9 @@
                     {% assign creature_image = page.image %}
                     
                     {% if creature_image == "" %}
-                         {% assign creature_image = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
+                         {% assign creature_image = site.siteurl | append: "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
                     {% else %}
-                       {% assign creature_image = "{{ site.siteurl }}{{ creature_image }}" %}
+                         {% assign creature_image = site.siteurl | append: creature_image %}
                     {% endif %}
                     {% assign current_second = "now" | date: "%S" %}
                     {% assign random_number = current_second | modulo: 12 | plus: 1 %}
