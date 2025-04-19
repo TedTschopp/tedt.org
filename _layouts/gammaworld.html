@@ -61,6 +61,9 @@
                     {% assign current_second = "now" | date: "%S" %}
                     {% assign random_number = current_second | modulo: 12 | plus: 1 %}
 
+                    <!-- Creature Image and Overview -->
+                    <!-- {{creature_image}} -->
+
                     <section class="row mb-4" aria-label="Creature Overview">
                          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                               <figure class="w-100 overflow-hidden">
@@ -95,29 +98,29 @@
                                    <p>
                                         <strong>Reported By:</strong>
                                         {% if page.author != "" %}
-                                        {{ page.author }}
+                                             {{ page.author }}
                                         {% elsif page.author_name != "" %}
-                                        {{ page.author_name }}
+                                             {{ page.author_name }}
                                         {% else %}
-                                        {% assign answers = "" | split: "%" %}
-                                        {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ -
-                                        We're unable to retrieve the 'Reported by' information for this creature. This
-                                        data may be corrupted or missing from our records." %}
-                                        {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_
-                                        - The 'Reported by' field for this creature cannot be located. It is possible
-                                        that this information was lost due to data degradation over time." %}
-                                        {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ -
-                                        Attention: The identity of the individual or entity who reported this creature
-                                        is currently unavailable in our database." %}
-                                        {% assign answers = answers | push: "_Incomplete Record Alert: Reporter
-                                        Information Missing_ - This creature's record is incomplete. The 'Reported by'
-                                        field is missing and might have been lost in system errors or data purges." %}
-                                        {% assign answers = answers | push: "_System Notice: Reporter Data Inaccessible_
-                                        - Due to an unknown error, the 'Reported by' information for this creature is
-                                        inaccessible at this time. Please try accessing this data at a later time or
-                                        refer to backup archives if available." %}
-                                        {% assign selectedAnswer = answers | sample %}
-                                        {{ selectedAnswer }}
+                                             {% assign answers = "" | split: "%" %}
+                                             {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ -
+                                                  We're unable to retrieve the 'Reported by' information for this creature. This
+                                                  data may be corrupted or missing from our records." %}
+                                             {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_
+                                                  - The 'Reported by' field for this creature cannot be located. It is possible
+                                                  that this information was lost due to data degradation over time." %}
+                                             {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ -
+                                                  Attention: The identity of the individual or entity who reported this creature
+                                                  is currently unavailable in our database." %}
+                                             {% assign answers = answers | push: "_Incomplete Record Alert: Reporter
+                                                  Information Missing_ - This creature's record is incomplete. The 'Reported by'
+                                                  field is missing and might have been lost in system errors or data purges." %}
+                                             {% assign answers = answers | push: "_System Notice: Reporter Data Inaccessible_
+                                                  - Due to an unknown error, the 'Reported by' information for this creature is
+                                                  inaccessible at this time. Please try accessing this data at a later time or
+                                                  refer to backup archives if available." %}
+                                             {% assign selectedAnswer = answers | sample %}
+                                             {{ selectedAnswer }}
                                         {% endif %}
                                         <br>
                                         <strong>Source:</strong>
