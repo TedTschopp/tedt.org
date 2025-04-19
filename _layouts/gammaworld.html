@@ -64,17 +64,28 @@
                     <!-- Creature Image and Overview -->
                     <!-- {{creature_image}} -->
                     <script>
-                         checkImage(
-                              "{{creature_image}}",
-                              function () {
-                              document.getElementById('jscii-element-image').src = "{{creature_image}}";
-                              document.getElementById('image-error-message').classList.add('visually-hidden');
-                              },
-                                   function () {
-                              document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
-                              document.getElementById('image-error-message').classList.remove('visually-hidden');
+                         document.addEventListener('DOMContentLoaded', function() {
+                              // Define checkImage
+                              function checkImage(url, onSuccess, onError) {
+                                   var img = new window.Image();
+                                   img.onload = onSuccess;
+                                   img.onerror = onError;
+                                   img.src = url;
                               }
-                        );
+
+                              // Image error handling
+                              checkImage(
+                                   "{{creature_image}}",
+                                   function () {
+                                   document.getElementById('jscii-element-image').src = "{{creature_image}}";
+                                   document.getElementById('image-error-message').classList.add('visually-hidden');
+                                   },
+                                        function () {
+                                   document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                                   document.getElementById('image-error-message').classList.remove('visually-hidden');
+                                   }
+                              );
+                         });
                     </script>
 
                     <section class="row mb-4" aria-label="Creature Overview">
@@ -482,7 +493,16 @@
      </footer>
      {% include js-bottom-of-body.html %}
      <script>
-          // Move this to an external JS file for maintainability
+     document.addEventListener('DOMContentLoaded', function() {
+          // Define checkImage
+          function checkImage(url, onSuccess, onError) {
+               var img = new window.Image();
+               img.onload = onSuccess;
+               img.onerror = onError;
+               img.src = url;
+          }
+
+          // Jscii initialization
           var imgJscii = new Jscii({
                width: 150,
                color: true,
@@ -494,12 +514,18 @@
           document.getElementById('jscii-element-image').style.display = 'none';
 
           // Image error handling
-          function checkImage(url, onSuccess, onError) {
-               var img = new window.Image();
-               img.onload = onSuccess;
-               img.onerror = onError;
-               img.src = url;
-          }
+          checkImage(
+               "{{ site.siteurl }}{{ creature_image }}",
+               function () {
+                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}{{ creature_image }}";
+                    document.getElementById('image-error-message').classList.add('visually-hidden');
+               },
+               function () {
+                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                    document.getElementById('image-error-message').classList.remove('visually-hidden');
+               }
+          );
+     });
      </script>
 </body>
 
