@@ -48,16 +48,16 @@ a {
     background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.webp);
     background-repeat: repeat-y;
     min-height: 100%;
-    width: 33px !important; /* Fixed width to match the background image */
-    min-width: 33px;
-    flex: 0 0 33px !important; /* Force flex width to be exactly 33px */
+    width: 35px !important; /* Fixed width to match the background image */
+    min-width: 35px;
+    flex: 0 0 35px !important; /* Force flex width to be exactly 33px */
     padding: 0 !important; /* Remove padding to ensure exact width */
 }
 
 /* Override Bootstrap grid for the main content area to accommodate fixed-width asides */
 .row > #paper_printarea.col-lg-10 {
     flex: 1 1 auto !important; /* Allow flex-grow to fill remaining space */
-    max-width: calc(100% - 66px); /* Account for both 33px margins */
+    max-width: calc(100% - 70px); /* Account for both 35px margins */
 }
 
 @media (max-width: 991.98px) {
