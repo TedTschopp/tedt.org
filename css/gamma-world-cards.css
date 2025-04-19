@@ -176,6 +176,28 @@ pre#ascii-container-image {
     clear: left; 
 }
 
+/* Prevent ASCII art from being clipped */
+#ascii-container-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section[aria-label="Creature Overview"] figure {
+    overflow: visible;
+}
+
+section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+    overflow: visible;
+}
+
 /* Responsive image figure */
 figure {
     margin: 0;
@@ -190,7 +212,6 @@ section[aria-label="Creature Overview"] .col-12.col-lg-4 {
     height: auto;
 }
 
-/* Ensure image can grow to proper dimensions */
 section[aria-label="Creature Overview"] figure {
     max-width: 100%;
     height: auto;
@@ -236,4 +257,11 @@ section[aria-label="Additional Creatures"] h3 {
     margin-top: 1rem;
     border-bottom: 1px solid #dee2e6;
     padding-bottom: 0.25rem;
+}
+
+section[aria-label="Creature Overview"] figure img {
+    max-width: 100%;
+    height: auto;
+    max-height: none; /* Remove any height constraint */
+    object-fit: contain;
 }
