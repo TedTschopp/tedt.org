@@ -54,7 +54,7 @@
                     {% assign creature_image = page.image %}
                     
                     {% if creature_image == "" %}
-                         {% assign creature_image = site.siteurl | append: "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index %}
+                         {% assign creature_image = site.siteurl | append: "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index | append: ".png"%}
                     {% else %}
                          {% assign creature_image = site.siteurl | append: creature_image %}
                     {% endif %}
