@@ -42,420 +42,422 @@
      <header class="container-fluid py-2" role="banner">
           <!-- Optional: Add site navigation or branding here -->
      </header>
+     
+     <main class="container" role="main">
+          <div class="row">
+               <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
+               <section class="col-12 col-lg-10" id="paper_printarea">
+                    {% if page.title != "" %}
+                    <h1 class="MCC">{{ page.title }}</h1>
+                    {% endif %}
 
-     <div class="row">
-          <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
-          <section class="col-12 col-lg-10" id="paper_printarea">
-               {% if page.title != "" %}
-               <h1 class="MCC">{{ page.title }}</h1>
-               {% endif %}
+                    {% assign creature_image = page.image %}
+                    {% if creature_image == "" %}
+                    {% assign creature_image = "https://tedt.org/RPG/MCC-GW/images/Monster-Manual/" | append:
+                    page.creature_name_index %}
+                    {% endif %}
+                    {% assign current_second = "now" | date: "%S" %}
+                    {% assign random_number = current_second | modulo: 12 | plus: 1 %}
 
-               {% assign creature_image = page.image %}
-               {% if creature_image == "" %}
-               {% assign creature_image = "https://tedt.org/RPG/MCC-GW/images/Monster-Manual/" | append:
-               page.creature_name_index %}
-               {% endif %}
-               {% assign current_second = "now" | date: "%S" %}
-               {% assign random_number = current_second | modulo: 12 | plus: 1 %}
-
-               <section class="row mb-4" aria-label="Creature Overview">
-                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
-                         <figure class="w-100 overflow-hidden">
-                              <img class="img-fluid rounded shadow" src="{{ site.siteurl }}{{ creature_image }}"
-                                   id="jscii-element-image" alt="{{ page.title | default: 'Creature image' }}"
-                                   loading="lazy" role="img">
-                              <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
-                              <figcaption class="visually-hidden">
-                                   {{ page.title | default: "Creature image" }}
-                              </figcaption>
-                         </figure>
-                         <p id="image-error-message" class="position-absolute text-danger fs-1 m-5 visually-hidden"
-                              style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
-                              {% case random_number %}
-                              {% when 1 %}Image file not found.
-                              {% when 2 %}Corrupted image file detected.
-                              {% when 3 %}Unsupported image format.
-                              {% when 4 %}Image load failed due to missing file.
-                              {% when 5 %}Error: Unable to display image.
-                              {% when 6 %}Image file is incomplete or damaged.
-                              {% when 7 %}File path does not point to a valid image.
-                              {% when 8 %}Failed to decode image.
-                              {% when 9 %}Image data corrupted or unreadable.
-                              {% when 10 %}Error: Image cannot be rendered.
-                              {% when 11 %}Invalid image file header.
-                              {% when 12 %}Image display error: Resource unavailable.
-                              {% endcase %}
-                         </p>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                         <section aria-label="Creature Details">
-                              <p>
-                                   <strong>Reported By:</strong>
-                                   {% if page.author != "" %}
-                                   {{ page.author }}
-                                   {% elsif page.author_name != "" %}
-                                   {{ page.author_name }}
-                                   {% else %}
-                                   {% assign answers = "" | split: "%" %}
-                                   {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ -
-                                   We're unable to retrieve the 'Reported by' information for this creature. This
-                                   data may be corrupted or missing from our records." %}
-                                   {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_
-                                   - The 'Reported by' field for this creature cannot be located. It is possible
-                                   that this information was lost due to data degradation over time." %}
-                                   {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ -
-                                   Attention: The identity of the individual or entity who reported this creature
-                                   is currently unavailable in our database." %}
-                                   {% assign answers = answers | push: "_Incomplete Record Alert: Reporter
-                                   Information Missing_ - This creature's record is incomplete. The 'Reported by'
-                                   field is missing and might have been lost in system errors or data purges." %}
-                                   {% assign answers = answers | push: "_System Notice: Reporter Data Inaccessible_
-                                   - Due to an unknown error, the 'Reported by' information for this creature is
-                                   inaccessible at this time. Please try accessing this data at a later time or
-                                   refer to backup archives if available." %}
-                                   {% assign selectedAnswer = answers | sample %}
-                                   {{ selectedAnswer }}
-                                   {% endif %}
-                                   <br>
-                                   <strong>Source:</strong>
-                                   {% if page.source != "" %}
-                                   {{ page.source }}
-                                   {% else %}
-                                   {% assign answers = "" | split: "%" %}
-                                   {% assign answers = answers | push: "_Error 503: Source Document Not Found_ -
-                                   The Original Source Document for this creature is currently unavailable. It may
-                                   have been misplaced, lost, or never uploaded to our database." %}
-                                   {% assign answers = answers | push: "_Document Retrieval Error: Blank Entry
-                                   Detected_ - There appears to be a blank entry in the 'Original Source Document'
-                                   field. This could indicate a data input error or a missing document." %}
-                                   {% assign answers = answers | push: "_Alert: Source Document Absent_ - No
-                                   Original Source Document can be found for this creature. This information may
-                                   have been lost due to data decay or archival issues." %}
-                                   {% assign answers = answers | push: "_Record Inconsistency Warning: Missing
-                                   Document Information_ - Warning: The record for this creature is inconsistent
-                                   due to the absence of the Original Source Document. Please consult alternative
-                                   data sources for more information." %}
-                                   {% assign answers = answers | push: "_System Notice: Unable to Access Document
-                                   Data_ - We are currently unable to access the Original Source Document for this
-                                   creature. The file may have been deleted, corrupted, or not properly linked in
-                                   our database." %}
-                                   {% assign selectedAnswer = answers | sample %}
-                                   {{ selectedAnswer }}
-                                   {% endif %}
+                    <section class="row mb-4" aria-label="Creature Overview">
+                         <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+                              <figure class="w-100 overflow-hidden">
+                                   <img class="img-fluid rounded shadow" src="{{ site.siteurl }}{{ creature_image }}"
+                                        id="jscii-element-image" alt="{{ page.title | default: 'Creature image' }}"
+                                        loading="lazy" role="img">
+                                   <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
+                                   <figcaption class="visually-hidden">
+                                        {{ page.title | default: "Creature image" }}
+                                   </figcaption>
+                              </figure>
+                              <p id="image-error-message" class="position-absolute text-danger fs-1 m-5 visually-hidden"
+                                   style="text-align: center; text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;">
+                                   {% case random_number %}
+                                   {% when 1 %}Image file not found.
+                                   {% when 2 %}Corrupted image file detected.
+                                   {% when 3 %}Unsupported image format.
+                                   {% when 4 %}Image load failed due to missing file.
+                                   {% when 5 %}Error: Unable to display image.
+                                   {% when 6 %}Image file is incomplete or damaged.
+                                   {% when 7 %}File path does not point to a valid image.
+                                   {% when 8 %}Failed to decode image.
+                                   {% when 9 %}Image data corrupted or unreadable.
+                                   {% when 10 %}Error: Image cannot be rendered.
+                                   {% when 11 %}Invalid image file header.
+                                   {% when 12 %}Image display error: Resource unavailable.
+                                   {% endcase %}
                               </p>
-                              <p>
-                                   <strong>Role:</strong>
-                                   {% if page.role_in_gamma_world != "" %}
-                                   {{ page.role_in_gamma_world }}
-                                   {% else %}
-                                   {% assign answers = "" | split: "%" %}
-                                   {% assign answers = answers | push: "_Error 410: Ecological Role Data Gone_ -
-                                   The 'Roles in the World/Biome' information for this creature is missing. This
-                                   data may have been permanently lost or was never recorded." %}
-                                   {% assign answers = answers | push: "_Data Integrity Issue: Role Information
-                                   Unavailable_ - We are experiencing an issue accessing the ecological role data
-                                   for this creature. The 'Roles in the World/Biome' field is currently unavailable
-                                   due to potential data corruption." %}
-                                   {% assign answers = answers | push: "_Warning: Missing Biome Role Details_ -
-                                   Attention: The details regarding this creature's role in its world or biome are
-                                   missing. This could be due to incomplete data collection or loss over time." %}
-                                   {% assign answers = answers | push: "_Record Incompletion Notice: Role in
-                                   Ecosystem Not Specified_ - This creature's database entry is incomplete. The
-                                   'Roles in the World/Biome' field has not been specified and may have been
-                                   omitted during data entry." %}
-                                   {% assign answers = answers | push: "_System Retrieval Failure: Ecological Data
-                                   Not Found_ - There is a failure in retrieving the ecological role information
-                                   for this creature. The 'Roles in the World/Biome' data is either not present or
-                                   inaccessible in our current system." %}
-                                   {% assign selectedAnswer = answers | sample %}
-                                   {{ selectedAnswer }}
-                                   {% endif %}
-                                   <br>
-                                   <strong>Base Stock:</strong>
-                                   {% if page.base_stock != "" %}
-                                   {{ page.base_stock }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>MCC Stat Block:</strong>
-                                   {% if page.normal_text != "" %}
-                                   {{ page.normal_text }}
-                                   {% else %}
-                                   Conversion Not Complete
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Mutations:</strong>
-                                   {% if page.mutations != "" %}
-                                   {{ page.mutations }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Number Appearing:</strong>
-                                   {% if page.number_appearing_dice != "" %}
-                                   {{ page.number_appearing_dice }}
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                                   <br>
-                                   <strong>Morale:</strong>
-                                   {% if page.morale != "" %}
-                                   {{ page.morale }}
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                                   <br>
-                                   <strong>Hit Dice:</strong>
-                                   {% if page.new_hd_xdx_plus_minus != "" %}
-                                   {{ page.new_hd_xdx_plus_minus }}
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                                   <br>
-                                   <strong>Armor:</strong>
-                                   {% if page.armor != "" %}
-                                   {{ page.armor }} ({{ page.ac_xx }})
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                                   <br>
-                                   <strong>Size:</strong>
-                                   {% if page.size != "" %}
-                                   {{ page.size }} {% if page.size_measurement != "" %}{{ page.size_measurement
-                                   }}{% endif %}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Movement:</strong>
-                                   {% if page.mv_xx != "" %}
-                                   {{ page.mv_xx }}
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Attack:</strong>
-                                   {% if page.new_attack_1 != "" %}
-                                   {{ page.new_attack_1 }}
-                                   {% if page.new_attack_2 != "" %}
-                                   <br>{{ page.new_attack_2 }}
-                                   {% if page.new_attack_3 != "" %}
-                                   <br>{{ page.new_attack_3 }}
-                                   {% endif %}
-                                   {% endif %}
-                                   {% else %}
-                                   More observations needed
-                                   {% endif %}
-                              </p>
-                              <dl class="row">
-                                   <dt class="col-4 col-md-2">MS:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.ms != "" %}{{ page.ms }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                                   <dt class="col-4 col-md-2">PS:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.ps != "" %}{{ page.ps }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                                   <dt class="col-4 col-md-2">IN:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.in != "" %}{{ page.in }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                                   <dt class="col-4 col-md-2">DX:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.dx != "" %}{{ page.dx }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                                   <dt class="col-4 col-md-2">CH:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.ch != "" %}{{ page.ch }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                                   <dt class="col-4 col-md-2">CN:</dt>
-                                   <dd class="col-8 col-md-4">{% if page.cn != "" %}{{ page.cn }}{% else %}More
-                                        observations needed{% endif %}</dd>
-                              </dl>
-                              {% if page.role_in_gamma_world == "Robot" and page.mission != "" %}
-                              <p><strong>Mission:</strong> {{ page.mission }}</p>
-                              {% endif %}
-                              <p>
-                                   <strong>Frequency:</strong>
-                                   {% if page.frequency != "" %}
-                                   {{ page.frequency }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Organization:</strong>
-                                   {% if page.organization != "" %}
-                                   {{ page.organization }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Activity Cycle:</strong>
-                                   {% if page.activity_cycle != "" %}
-                                   {{ page.activity_cycle }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Diet:</strong>
-                                   {% if page.diet != "" %}
-                                   {{ page.diet }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Habitat:</strong>
-                                   {% if page.habitat != "" %}
-                                   {{ page.habitat }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Tech Level:</strong>
-                                   {% if page.tech_level != 0 %}
-                                   {{ page.tech_level }}
-                                   {% if page.tech_max != 0 %}
-                                   - {{ page.tech_max }}
-                                   {% else %}
-                                   unknown
-                                   {% endif %}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                                   <br>
-                                   <strong>Artifacts:</strong>
-                                   {% if page.artifacts != "" %}
-                                   {{ page.artifacts }}
-                                   {% else %}
-                                   Unknown
-                                   {% endif %}
-                              </p>
-                              {% if page.description != "" %}
-                              <p><strong>Description (Initial Observations):</strong> {{ page.description }}</p>
-                              {% if page.new_description != "" %}
-                              <p><strong>Description (Additional Observations):</strong> {{ page.new_description }}
-                              </p>
-                              {% endif %}
-                              {% endif %}
-                              {% if page.equipment != "" %}
-                              <p><strong>Equipment:</strong> {{ page.equipment }}</p>
-                              {% endif %}
-                              <p>
-                                   <strong>Reactions:</strong>
-                                   {% if page.reactions != "" %}
-                                   {{ page.reactions }}
-                                   {% else %}
-                                   No known interactions
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Behavior:</strong>
-                                   {% if page.behavior != "" %}
-                                   {{ page.behavior }}
-                                   {% else %}
-                                   Behavior modeling incomplete
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Repair and Healing:</strong>
-                                   {% if page.repair_and_healing != "" %}
-                                   {{ page.repair_and_healing }}
-                                   {% else %}
-                                   Behavior not recorded
-                                   {% endif %}
-                              </p>
-                              <p>
-                                   <strong>Society:</strong>
-                                   {% if page.society != "" %}
-                                   {{ page.society }}
-                                   {% else %}
-                                   Anthropological studies incomplete
-                                   {% endif %}
-                              </p>
-                         </section>
-                    </div>
-               </section>
-
-               <hr>
-
-               <!-- Next and Previous Articles -->
-               {% if page.previous.url %}
-               {% assign previous_url = page.previous.url %}
-               {% assign previous_title = page.previous.title %}
-               {% else %}
-               {% assign previous_url = site.siteurl %}
-               {% assign previous_title = "Home" %}
-               {% endif %}
-               {% if page.next.url %}
-               {% assign next_url = page.next.url %}
-               {% assign next_title = page.next.title %}
-               {% else %}
-               {% assign next_url = site.siteurl %}
-               {% assign next_title = "Home" %}
-               {% endif %}
-
-               {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'title' | sort:
-               'source' %}
-               <section aria-label="Additional Creatures">
-                    <h2 class="MCC">Additional Creatures</h2>
-                    <div>
-                         {% assign PreviousBestiarySource = "" %}
-                         {% for Bestiary in gammaWorldPosts %}
-                         {% if Bestiary.categories contains 'Bestiary' %}
-                         {% if Bestiary.source != PreviousBestiarySource %}
-                         {% if forloop.first == false %}</ul>
-                    </div>{% endif %}
-                    <h3 class="text-dark">{{ Bestiary.source }}</h3>
-                    <div class="text-dark w-100 mb-2 mt-1"
-                         style="break-inside: avoid-page; column-width: 30em; column-fill: balance; column-gap: 2em; column-rule: 1px #202122; direction: ltr; display: block; font-size: 1em; line-height: 1.5em;">
-                         <ul class="list-unstyled">
-                              {% assign PreviousBestiarySource = Bestiary.source %}
-                              {% endif %}
-                              {% assign BestiaryTitle = Bestiary.title %}
-                              {% assign strippedString = BestiaryTitle | replace: "«", "" | replace: "»", "" %}
-                              {% assign permalink = strippedString | slugify %}
-                              {% assign words = permalink | split: "-" %}
-                              {% assign capitalizedpermalink = "" %}
-                              {% for word in words %}
-                              {% assign capitalizedWord = word | capitalize %}
-                              {% assign capitalizedpermalink = capitalizedpermalink | append: capitalizedWord %}
-                              {% unless forloop.last %}
-                              {% assign capitalizedpermalink = capitalizedpermalink | append: "-" %}
-                              {% endunless %}
-                              {% endfor %}
-                              {% if Bestiary.title != page.title %}
-                              <li><a href="{{ site.siteurl }}/Gamma-World-Bestiary/{{ capitalizedpermalink }}.html"
-                                        class="text-primary" style="break-inside: avoid-column;">{{ Bestiary.title
-                                        }}</a></li>
-                              {% else %}
-                              <li><strong>🐾🛠️⚙️☢️{{ Bestiary.title }}☢️⚙️🛠️🐾</strong></li>
-                              {% endif %}
-                              {% endif %}
-                              {% endfor %}
-                         </ul>
-                    </div>
-               </section>
-
-               <nav aria-label="Page navigation" class="my-4">
-                    <div class="row">
-                         <div class="col-md-6 text-center">
-                              <a class="btn btn-outline-primary" href="{{ previous_url }}">&laquo; {{
-                                   previous_title }}</a>
                          </div>
-                         <div class="col-md-6 text-center">
-                              <a class="btn btn-outline-primary" href="{{ next_url }}">{{ next_title }} &raquo;</a>
+                         <div class="col-12 col-lg-8">
+                              <section aria-label="Creature Details">
+                                   <p>
+                                        <strong>Reported By:</strong>
+                                        {% if page.author != "" %}
+                                        {{ page.author }}
+                                        {% elsif page.author_name != "" %}
+                                        {{ page.author_name }}
+                                        {% else %}
+                                        {% assign answers = "" | split: "%" %}
+                                        {% assign answers = answers | push: "_Error 404: Reporter Data Unavailable_ -
+                                        We're unable to retrieve the 'Reported by' information for this creature. This
+                                        data may be corrupted or missing from our records." %}
+                                        {% assign answers = answers | push: "_Data Retrieval Failure: Unknown Reporter_
+                                        - The 'Reported by' field for this creature cannot be located. It is possible
+                                        that this information was lost due to data degradation over time." %}
+                                        {% assign answers = answers | push: "_Warning: Reporter Identity Not Found_ -
+                                        Attention: The identity of the individual or entity who reported this creature
+                                        is currently unavailable in our database." %}
+                                        {% assign answers = answers | push: "_Incomplete Record Alert: Reporter
+                                        Information Missing_ - This creature's record is incomplete. The 'Reported by'
+                                        field is missing and might have been lost in system errors or data purges." %}
+                                        {% assign answers = answers | push: "_System Notice: Reporter Data Inaccessible_
+                                        - Due to an unknown error, the 'Reported by' information for this creature is
+                                        inaccessible at this time. Please try accessing this data at a later time or
+                                        refer to backup archives if available." %}
+                                        {% assign selectedAnswer = answers | sample %}
+                                        {{ selectedAnswer }}
+                                        {% endif %}
+                                        <br>
+                                        <strong>Source:</strong>
+                                        {% if page.source != "" %}
+                                        {{ page.source }}
+                                        {% else %}
+                                        {% assign answers = "" | split: "%" %}
+                                        {% assign answers = answers | push: "_Error 503: Source Document Not Found_ -
+                                        The Original Source Document for this creature is currently unavailable. It may
+                                        have been misplaced, lost, or never uploaded to our database." %}
+                                        {% assign answers = answers | push: "_Document Retrieval Error: Blank Entry
+                                        Detected_ - There appears to be a blank entry in the 'Original Source Document'
+                                        field. This could indicate a data input error or a missing document." %}
+                                        {% assign answers = answers | push: "_Alert: Source Document Absent_ - No
+                                        Original Source Document can be found for this creature. This information may
+                                        have been lost due to data decay or archival issues." %}
+                                        {% assign answers = answers | push: "_Record Inconsistency Warning: Missing
+                                        Document Information_ - Warning: The record for this creature is inconsistent
+                                        due to the absence of the Original Source Document. Please consult alternative
+                                        data sources for more information." %}
+                                        {% assign answers = answers | push: "_System Notice: Unable to Access Document
+                                        Data_ - We are currently unable to access the Original Source Document for this
+                                        creature. The file may have been deleted, corrupted, or not properly linked in
+                                        our database." %}
+                                        {% assign selectedAnswer = answers | sample %}
+                                        {{ selectedAnswer }}
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Role:</strong>
+                                        {% if page.role_in_gamma_world != "" %}
+                                        {{ page.role_in_gamma_world }}
+                                        {% else %}
+                                        {% assign answers = "" | split: "%" %}
+                                        {% assign answers = answers | push: "_Error 410: Ecological Role Data Gone_ -
+                                        The 'Roles in the World/Biome' information for this creature is missing. This
+                                        data may have been permanently lost or was never recorded." %}
+                                        {% assign answers = answers | push: "_Data Integrity Issue: Role Information
+                                        Unavailable_ - We are experiencing an issue accessing the ecological role data
+                                        for this creature. The 'Roles in the World/Biome' field is currently unavailable
+                                        due to potential data corruption." %}
+                                        {% assign answers = answers | push: "_Warning: Missing Biome Role Details_ -
+                                        Attention: The details regarding this creature's role in its world or biome are
+                                        missing. This could be due to incomplete data collection or loss over time." %}
+                                        {% assign answers = answers | push: "_Record Incompletion Notice: Role in
+                                        Ecosystem Not Specified_ - This creature's database entry is incomplete. The
+                                        'Roles in the World/Biome' field has not been specified and may have been
+                                        omitted during data entry." %}
+                                        {% assign answers = answers | push: "_System Retrieval Failure: Ecological Data
+                                        Not Found_ - There is a failure in retrieving the ecological role information
+                                        for this creature. The 'Roles in the World/Biome' data is either not present or
+                                        inaccessible in our current system." %}
+                                        {% assign selectedAnswer = answers | sample %}
+                                        {{ selectedAnswer }}
+                                        {% endif %}
+                                        <br>
+                                        <strong>Base Stock:</strong>
+                                        {% if page.base_stock != "" %}
+                                        {{ page.base_stock }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>MCC Stat Block:</strong>
+                                        {% if page.normal_text != "" %}
+                                        {{ page.normal_text }}
+                                        {% else %}
+                                        Conversion Not Complete
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Mutations:</strong>
+                                        {% if page.mutations != "" %}
+                                        {{ page.mutations }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Number Appearing:</strong>
+                                        {% if page.number_appearing_dice != "" %}
+                                        {{ page.number_appearing_dice }}
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                        <br>
+                                        <strong>Morale:</strong>
+                                        {% if page.morale != "" %}
+                                        {{ page.morale }}
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                        <br>
+                                        <strong>Hit Dice:</strong>
+                                        {% if page.new_hd_xdx_plus_minus != "" %}
+                                        {{ page.new_hd_xdx_plus_minus }}
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                        <br>
+                                        <strong>Armor:</strong>
+                                        {% if page.armor != "" %}
+                                        {{ page.armor }} ({{ page.ac_xx }})
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                        <br>
+                                        <strong>Size:</strong>
+                                        {% if page.size != "" %}
+                                        {{ page.size }} {% if page.size_measurement != "" %}{{ page.size_measurement
+                                        }}{% endif %}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Movement:</strong>
+                                        {% if page.mv_xx != "" %}
+                                        {{ page.mv_xx }}
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Attack:</strong>
+                                        {% if page.new_attack_1 != "" %}
+                                        {{ page.new_attack_1 }}
+                                        {% if page.new_attack_2 != "" %}
+                                        <br>{{ page.new_attack_2 }}
+                                        {% if page.new_attack_3 != "" %}
+                                        <br>{{ page.new_attack_3 }}
+                                        {% endif %}
+                                        {% endif %}
+                                        {% else %}
+                                        More observations needed
+                                        {% endif %}
+                                   </p>
+                                   <dl class="row">
+                                        <dt class="col-4 col-md-2">MS:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.ms != "" %}{{ page.ms }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                        <dt class="col-4 col-md-2">PS:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.ps != "" %}{{ page.ps }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                        <dt class="col-4 col-md-2">IN:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.in != "" %}{{ page.in }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                        <dt class="col-4 col-md-2">DX:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.dx != "" %}{{ page.dx }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                        <dt class="col-4 col-md-2">CH:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.ch != "" %}{{ page.ch }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                        <dt class="col-4 col-md-2">CN:</dt>
+                                        <dd class="col-8 col-md-4">{% if page.cn != "" %}{{ page.cn }}{% else %}More
+                                             observations needed{% endif %}</dd>
+                                   </dl>
+                                   {% if page.role_in_gamma_world == "Robot" and page.mission != "" %}
+                                   <p><strong>Mission:</strong> {{ page.mission }}</p>
+                                   {% endif %}
+                                   <p>
+                                        <strong>Frequency:</strong>
+                                        {% if page.frequency != "" %}
+                                        {{ page.frequency }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Organization:</strong>
+                                        {% if page.organization != "" %}
+                                        {{ page.organization }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Activity Cycle:</strong>
+                                        {% if page.activity_cycle != "" %}
+                                        {{ page.activity_cycle }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Diet:</strong>
+                                        {% if page.diet != "" %}
+                                        {{ page.diet }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Habitat:</strong>
+                                        {% if page.habitat != "" %}
+                                        {{ page.habitat }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Tech Level:</strong>
+                                        {% if page.tech_level != 0 %}
+                                        {{ page.tech_level }}
+                                        {% if page.tech_max != 0 %}
+                                        - {{ page.tech_max }}
+                                        {% else %}
+                                        unknown
+                                        {% endif %}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                        <br>
+                                        <strong>Artifacts:</strong>
+                                        {% if page.artifacts != "" %}
+                                        {{ page.artifacts }}
+                                        {% else %}
+                                        Unknown
+                                        {% endif %}
+                                   </p>
+                                   {% if page.description != "" %}
+                                   <p><strong>Description (Initial Observations):</strong> {{ page.description }}</p>
+                                   {% if page.new_description != "" %}
+                                   <p><strong>Description (Additional Observations):</strong> {{ page.new_description }}
+                                   </p>
+                                   {% endif %}
+                                   {% endif %}
+                                   {% if page.equipment != "" %}
+                                   <p><strong>Equipment:</strong> {{ page.equipment }}</p>
+                                   {% endif %}
+                                   <p>
+                                        <strong>Reactions:</strong>
+                                        {% if page.reactions != "" %}
+                                        {{ page.reactions }}
+                                        {% else %}
+                                        No known interactions
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Behavior:</strong>
+                                        {% if page.behavior != "" %}
+                                        {{ page.behavior }}
+                                        {% else %}
+                                        Behavior modeling incomplete
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Repair and Healing:</strong>
+                                        {% if page.repair_and_healing != "" %}
+                                        {{ page.repair_and_healing }}
+                                        {% else %}
+                                        Behavior not recorded
+                                        {% endif %}
+                                   </p>
+                                   <p>
+                                        <strong>Society:</strong>
+                                        {% if page.society != "" %}
+                                        {{ page.society }}
+                                        {% else %}
+                                        Anthropological studies incomplete
+                                        {% endif %}
+                                   </p>
+                              </section>
                          </div>
-                    </div>
-               </nav>
+                    </section>
 
-               <hr>
+                    <hr>
 
-               {% include comments.html %}
-               {% include comments-webmentions.html %}
-          </section>
-          <aside class="d-none d-lg-block col-lg-1" id="papermargin_right" aria-hidden="true"></aside>
-     </div>
+                    <!-- Next and Previous Articles -->
+                    {% if page.previous.url %}
+                    {% assign previous_url = page.previous.url %}
+                    {% assign previous_title = page.previous.title %}
+                    {% else %}
+                    {% assign previous_url = site.siteurl %}
+                    {% assign previous_title = "Home" %}
+                    {% endif %}
+                    {% if page.next.url %}
+                    {% assign next_url = page.next.url %}
+                    {% assign next_title = page.next.title %}
+                    {% else %}
+                    {% assign next_url = site.siteurl %}
+                    {% assign next_title = "Home" %}
+                    {% endif %}
+
+                    {% assign gammaWorldPosts = site.posts | where: 'categories', 'Gamma World' | sort: 'title' | sort:
+                    'source' %}
+                    <section aria-label="Additional Creatures">
+                         <h2 class="MCC">Additional Creatures</h2>
+                         <div>
+                              {% assign PreviousBestiarySource = "" %}
+                              {% for Bestiary in gammaWorldPosts %}
+                              {% if Bestiary.categories contains 'Bestiary' %}
+                              {% if Bestiary.source != PreviousBestiarySource %}
+                              {% if forloop.first == false %}</ul>
+                         </div>{% endif %}
+                         <h3 class="text-dark">{{ Bestiary.source }}</h3>
+                         <div class="text-dark w-100 mb-2 mt-1"
+                              style="break-inside: avoid-page; column-width: 30em; column-fill: balance; column-gap: 2em; column-rule: 1px #202122; direction: ltr; display: block; font-size: 1em; line-height: 1.5em;">
+                              <ul class="list-unstyled">
+                                   {% assign PreviousBestiarySource = Bestiary.source %}
+                                   {% endif %}
+                                   {% assign BestiaryTitle = Bestiary.title %}
+                                   {% assign strippedString = BestiaryTitle | replace: "«", "" | replace: "»", "" %}
+                                   {% assign permalink = strippedString | slugify %}
+                                   {% assign words = permalink | split: "-" %}
+                                   {% assign capitalizedpermalink = "" %}
+                                   {% for word in words %}
+                                   {% assign capitalizedWord = word | capitalize %}
+                                   {% assign capitalizedpermalink = capitalizedpermalink | append: capitalizedWord %}
+                                   {% unless forloop.last %}
+                                   {% assign capitalizedpermalink = capitalizedpermalink | append: "-" %}
+                                   {% endunless %}
+                                   {% endfor %}
+                                   {% if Bestiary.title != page.title %}
+                                   <li><a href="{{ site.siteurl }}/Gamma-World-Bestiary/{{ capitalizedpermalink }}.html"
+                                             class="text-primary" style="break-inside: avoid-column;">{{ Bestiary.title
+                                             }}</a></li>
+                                   {% else %}
+                                   <li><strong>🐾🛠️⚙️☢️{{ Bestiary.title }}☢️⚙️🛠️🐾</strong></li>
+                                   {% endif %}
+                                   {% endif %}
+                                   {% endfor %}
+                              </ul>
+                         </div>
+                    </section>
+
+                    <nav aria-label="Page navigation" class="my-4">
+                         <div class="row">
+                              <div class="col-md-6 text-center">
+                                   <a class="btn btn-outline-primary" href="{{ previous_url }}">&laquo; {{
+                                        previous_title }}</a>
+                              </div>
+                              <div class="col-md-6 text-center">
+                                   <a class="btn btn-outline-primary" href="{{ next_url }}">{{ next_title }} &raquo;</a>
+                              </div>
+                         </div>
+                    </nav>
+
+                    <hr>
+
+                    {% include comments.html %}
+                    {% include comments-webmentions.html %}
+               </section>
+               <aside class="d-none d-lg-block col-lg-1" id="papermargin_right" aria-hidden="true"></aside>
+          </div>
+     </main>
 
      <footer>
           {% include footer.html %}
