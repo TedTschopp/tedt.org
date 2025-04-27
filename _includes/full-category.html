@@ -63,4 +63,4 @@
 {% endcase %}
 
 <a style="text-decoration: none; font-size: x-large;" class="{{class-to-add}}" 
-href="{{site.siteurl}}/{{category[0]}}">{% include category-emoji.html category=category-to-render %} {% if Text-to-Output=="" %}{{ category-to-render }}{%else%}{{Text-to-Output}}{%endif%}{% if include.render-number == true %} ({{ category[1].size }}){%endif %}</a>
+href="{{site.siteurl}}/category/{{category[0]}}">{% include category-emoji.html category=category-to-render %} {% if Text-to-Output=="" %}{{ category-to-render }}{%else%}{{Text-to-Output}}{%endif%}{% if include.render-number == true %} ({{ category[1].size }}){%endif %}</a>
