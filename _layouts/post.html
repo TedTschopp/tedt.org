@@ -247,7 +247,7 @@
 
 
                                         {% for post in site.categories[category] limit:5 %}
-                                            <p class="card-text h5 mb-0"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
+                                            <p class="card-text h6 mb-0"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
                                             {% if post.teaser %}
                                                 <p class="card-text">{{ post.teaser | truncatewords: 20 }}</p>
                                             {% elsif post.description %}
