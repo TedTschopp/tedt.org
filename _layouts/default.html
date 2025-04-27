@@ -170,7 +170,7 @@
                               <div class="col-md-8">
                                 <div class="card-body">
                                   <h4 class="card-title">
-                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h4>
                                   <p class="card-text text-truncate-2">
                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -190,7 +190,7 @@
                               <div class="col-md-12">
                                 <div class="card-body">
                                   <h4 class="card-title">
-                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h4>
                                   <p class="card-text text-truncate-2">
                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -306,7 +306,7 @@
                                           <div class="col-md-8">
                                             <div class="card-body">
                                               <h4 class="card-title">
-                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                                <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                               </h4>
                                               <p class="card-text text-truncate-2">
                                                 {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -326,7 +326,7 @@
                                           <div class="col-md-12">
                                             <div class="card-body">
                                               <h4 class="card-title">
-                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                                <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                               </h4>
                                               <p class="card-text text-truncate-2">
                                                 {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -422,7 +422,7 @@
                           <div class="card-body align-items-center {{ watermark }}">
                             <h3 class="card-title">
                               {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
+                                <a class="text-decoration-none" href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                               {% else %}
                                 {{ this-post-title }}
                               {% endif %}
@@ -440,7 +440,7 @@
                           <div class="card-body align-items-center {{ watermark }}">
                             <h3 class="card-title">
                               {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
+                                <a class="text-decoration-none" href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                               {% else %}
                                 {{ this-post-title }}
                               {% endif %}
