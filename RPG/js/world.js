@@ -673,59 +673,54 @@
     temperatureMap
   ) {
     console.log("Generating rainfall map...");
-    
+
     // Create a copy of the map config for rainfall
     const rainfallConfig = JSON.parse(JSON.stringify(mapConfig));
     rainfallConfig.palette = applyPalette(palette.rainfall);
 
-    // Generate rainfall map based on latitude, proximity to water, and elevation
+    // Generate rainfall map based on planet.c logic
     const rainfallMap = [];
-    const proximityMap = calculateWaterProximity(
-      mapConfig,
-      heightMap,
-      waterLevel
-    );
-
     for (let row = 0; row < mapConfig.rows; row++) {
       rainfallMap[row] = [];
-
+      // Calculate latitude as in planet.c: y = 1 at north pole, -1 at south pole, 0 at equator
+      const y = 1 - 2 * (row / (mapConfig.rows - 1));
+      const sun = Math.sqrt(1.0 - y * y);
       for (let col = 0; col < mapConfig.cols; col++) {
         const elevation = heightMap[row][col];
         const isWater = elevation < waterLevel;
-
-        // Calculate rain shadow for the current point
-        const rainShadow = calculateRainShadow(
-          {
-            x: row - 1,
-            y: col,
-            z: elevation,
-            h: heightMap[row - 1]?.[col] || 0,
-          },
-          {
-            x: row,
-            y: col - 1,
-            z: elevation,
-            h: heightMap[row]?.[col - 1] || 0,
-          },
-          { x: row, y: col, z: elevation, h: elevation },
-          150 // Example shade angle
-        );
-
-        // Calculate rainfall with rain shadow effect
-        const rainfall = calculateRainfallWithShadow(
-          temperatureMap[row][col], // Assuming temperatureMap exists
-          row / mapConfig.rows, // Latitude as a fraction
-          rainShadow
-        );
-
+        // Calculate temperature as in planet.c
+        let temp;
+        if (isWater) {
+          temp = sun / 8.0 + elevation * 0.3;
+        } else {
+          temp = sun / 8.0 - elevation * 1.2;
+        }
+        // Calculate rain shadow (use existing function if available, else 0)
+        let rainShadow = 0;
+        if (typeof calculateRainShadow === 'function') {
+          // Use neighbors for rain shadow
+          const prevRow = (row - 1 + mapConfig.rows) % mapConfig.rows;
+          const prevCol = (col - 1 + mapConfig.cols) % mapConfig.cols;
+          rainShadow = calculateRainShadow(
+            { x: prevRow, y: col, z: elevation, h: heightMap[prevRow][col] },
+            { x: row, y: prevCol, z: elevation, h: heightMap[row][prevCol] },
+            { x: row, y: col, z: elevation, h: elevation },
+            150
+          );
+        }
+        // Calculate rainfall as in planet.c
+        const y2 = Math.abs(y) - 0.5;
+        let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
+        rain += 0.03 * rainShadow;
+        if (rain < 0.0) rain = 0.0;
         // Map rainfall to color indices
         if (isWater) {
           rainfallMap[row][col] =
-            Math.floor(rainfall * rainfallConfig.palette.n_sea) +
+            Math.floor(rain * rainfallConfig.palette.n_sea) +
             rainfallConfig.palette.sea_idx;
         } else {
           rainfallMap[row][col] =
-            Math.floor(rainfall * rainfallConfig.palette.n_land) +
+            Math.floor(rain * rainfallConfig.palette.n_land) +
             rainfallConfig.palette.land_idx;
         }
       }
@@ -733,6 +728,30 @@
 
     // Set the rainfall map
     rainfallConfig.map = rainfallMap;
+
+    // --- Smoothing pass: box blur for rainfall map ---
+    const smoothedRainfallMap = [];
+    for (let row = 0; row < mapConfig.rows; row++) {
+      smoothedRainfallMap[row] = [];
+      for (let col = 0; col < mapConfig.cols; col++) {
+        let sum = 0;
+        let count = 0;
+        // 3x3 box blur
+        for (let dr = -1; dr <= 1; dr++) {
+          for (let dc = -1; dc <= 1; dc++) {
+            const r = row + dr;
+            const c = col + dc;
+            if (r >= 0 && r < mapConfig.rows && c >= 0 && c < mapConfig.cols) {
+              sum += rainfallMap[r][c];
+              count++;
+            }
+          }
+        }
+        smoothedRainfallMap[row][col] = sum / count;
+      }
+    }
+    rainfallConfig.map = smoothedRainfallMap;
+    // --- End smoothing pass ---
 
     // Create the rainfall image
     const rainfallImage = new_image(
@@ -760,7 +779,6 @@
       // Default square projection
       renderSquareProjection(rainfallImage, rainfallConfig, imageConfig);
     }
-
 
     console.log("Drawing rainfall map...");
     // Draw the pixels to the canvas
@@ -1264,95 +1282,10 @@
         });
       }
     } else {
-      config.palette = applyPalette(palette.mogensen);
+      config.palette = applyPalette(palette.mogersen);
     }
 
     return config;
-  }
-
-  /**
-   * Apply palette settings
-   * @param {object} paletteConfig - The palette configuration
-   * @returns {object} - The processed palette
-   */
-  function applyPalette(paletteConfig) {
-    var palette = {
-      n_sea: 50,
-      n_land: 100,
-      cmap: [],
-    };
-
-    // Set up palette indices
-    palette.n_terrain = palette.n_sea + palette.n_land;
-    palette.n_ice = palette.n_land + 1;
-    palette.sea_idx = 1;
-    palette.land_idx = palette.sea_idx + palette.n_sea;
-    palette.ice_idx = palette.land_idx + palette.n_land;
-
-    // Interpolate sea colors
-    var seaColors = paletteConfig.sea,
-      seaColorCount = seaColors.length - 1,
-      i;
-
-    for (i = palette.sea_idx; i < palette.land_idx; i++) {
-      var colorIndex = ((i - palette.sea_idx) / palette.n_sea) * seaColorCount;
-      let colorFloor = Math.floor(colorIndex);
-      palette.cmap[i] = interpolateColor(
-        seaColors[colorFloor],
-        seaColors[colorFloor + 1],
-        colorIndex - colorFloor
-      );
-    }
-
-    // Interpolate land colors
-    var landColors = paletteConfig.land;
-    var landColorCount = landColors.length - 1;
-
-    for (
-      seaColorCount = palette.land_idx;
-      seaColorCount < palette.ice_idx;
-      seaColorCount++
-    ) {
-      i =
-        ((seaColorCount - palette.land_idx) / palette.n_land) * landColorCount;
-      colorIndex = Math.floor(i);
-      palette.cmap[seaColorCount] = interpolateColor(
-        landColors[colorIndex],
-        landColors[colorIndex + 1],
-        i - colorIndex
-      );
-    }
-
-    // Interpolate ice colors
-    var iceColors = palette;
-    var iceColorCount = iceColors.ice_idx + iceColors.n_ice;
-    var whiteColor = [255, 255, 255];
-    var grayColor = [175, 175, 175];
-
-    for (i = iceColors.ice_idx; i < iceColorCount; i++) {
-      iceColors.cmap[i] = interpolateColor(
-        whiteColor,
-        grayColor,
-        (i - iceColors.ice_idx) / (iceColors.n_ice - 1)
-      );
-    }
-
-    return palette;
-  }
-
-  /**
-   * Interpolate between two colors
-   * @param {Array} color1 - First color [r,g,b]
-   * @param {Array} color2 - Second color [r,g,b]
-   * @param {number} factor - Interpolation factor (0-1)
-   * @returns {string} - Hex color string
-   */
-  function interpolateColor(color1, color2, factor) {
-    return rgb2hex(
-      Math.floor(color1[0] + (color2[0] - color1[0]) * factor),
-      Math.floor(color1[1] + (color2[1] - color1[1]) * factor),
-      Math.floor(color1[2] + (color2[2] - color1[2]) * factor)
-    );
   }
 
   /**
@@ -1480,7 +1413,7 @@
   /**
    * Generate a Voss X map by combining multiple Voss maps
    * @param {number} iterations - Number of Voss maps to combine
-   * @param {string} operation - Type of combination ('x' for multiply, 'a' for average)
+   * @
    * @param {object} config - The map configuration
    * @returns {object} - The updated configuration
    */
@@ -1981,6 +1914,10 @@
         islandMap[row][col] !== 0 ||
         (polarRegionMap && polarRegionMap[row][col])
       ) {
+        // If this water body touches the edge of the map
+        if (row === 0 || row === maxRows - 1 || col === 0 || col === maxCols - 1) {
+          waterBodyData.touchesEdge = true;
+        }
         continue;
       }
 
@@ -2034,14 +1971,118 @@
     return config.map[row][col];
   }
 
-  /**
-   * Identifies lakes in the map and returns a lake map
-   * @param {object} mapConfig - The map configuration
-   * @param {Array} heightMap - The original height map data
-   * @param {number} waterLevel - The water level
-   * @param {number} oceanSizeThreshold - Optional minimum size for a water body to be considered an ocean instead of a lake
-   * @returns {object} - Object containing lakeMap and lakeData
-   */
+  // --- BEGIN: Move these functions back inside the IIFE ---
+  function generateAndRenderLakeMap(
+    mapConfig,
+    imageConfig,
+    heightMap,
+    waterLevel
+  ) {
+    // Fix: define polarRegionMap from mapConfig
+    const polarRegionMap = mapConfig.polarRegionMap || null;
+    // If oceanSizeThreshold is not provided, calculate based on map size
+    const oceanSizeThreshold = Math.floor(mapConfig.rows * mapConfig.cols * 0.01); // 1% of map size
+
+    // Create maps to track water bodies and visited cells
+    const waterBodyMap = createEmptyMap(mapConfig, 0);
+    const visitedMap = createEmptyMap(mapConfig, false);
+    const lakeMap = createEmptyMap(mapConfig, 0);
+
+    // Data structures to track water bodies
+    const waterBodies = {};
+    let waterBodyId = 1;
+
+    // First pass: identify all water bodies using flood fill
+    for (let row = 0; row < mapConfig.rows; row++) {
+      for (let col = 0; col < mapConfig.cols; col++) {
+        // If this is water and not already visited
+        if (heightMap[row][col] < waterLevel && !visitedMap[row][col]) {
+          // Track whether this water body touches the map edge
+          const waterBodyData = {
+            id: waterBodyId,
+            size: 0,
+            touchesEdge: false,
+            cells: [],
+          };
+
+          // Perform flood fill to identify all connected water cells
+          floodFillWaterBody(
+            heightMap,
+            visitedMap,
+            waterBodyMap,
+            row,
+            col,
+            waterLevel,
+            waterBodyId,
+            mapConfig.rows,
+            mapConfig.cols,
+            waterBodyData,
+            polarRegionMap
+          );
+
+          // Store water body data
+          waterBodies[waterBodyId] = waterBodyData;
+          waterBodyId++;
+        }
+      }
+    }
+
+    // Second pass: identify lakes (water bodies that don't touch the edge and aren't too large)
+    const lakes = {};
+    let lakeId = 1;
+
+    Object.values(waterBodies).forEach((waterBody) => {
+      const isLake =
+        !waterBody.touchesEdge && waterBody.size < oceanSizeThreshold;
+
+      if (isLake) {
+        lakes[lakeId] = {
+          id: lakeId,
+          originalId: waterBody.id,
+          size: waterBody.size,
+          cells: waterBody.cells,
+        };
+
+        // Mark all cells of this lake in the lake map
+        waterBody.cells.forEach((cell) => {
+          lakeMap[cell.row][cell.col] = lakeId;
+        });
+
+        lakeId++;
+      }
+    });
+
+    // Set the lake map on mapConfig
+    mapConfig.map = lakeMap;
+
+    // Create the lake image
+    const lakeImage = new_image(
+      "lake-map",
+      imageConfig.width,
+      imageConfig.height
+    );
+
+    // Render the lake map with the appropriate projection
+    if (mapConfig.projection == "mercator") {
+      renderMercatorProjection(lakeImage, mapConfig, imageConfig);
+    } else if (mapConfig.projection == "transmerc") {
+      renderTransverseMercatorProjection(lakeImage, mapConfig, imageConfig);
+    } else if (mapConfig.projection == "icosahedral") {
+      renderIcosahedralProjection(lakeImage, mapConfig,imageConfig);
+    } else if (mapConfig.projection == "mollweide") {
+      renderMollweideProjection(lakeImage, mapConfig, imageConfig);
+    } else if (mapConfig.projection == "sinusoidal") {
+      renderSinusoidalProjection(lakeImage, mapConfig, imageConfig);
+    } else {
+      // Default square projection
+      renderSquareProjection(lakeImage,mapConfig, imageConfig);
+    }
+
+    console.log("Drawing lake map...");
+    // Draw the pixels to the canvas
+    draw_pixels(lakeImage);
+  }
+
   function identifyLakes(
     mapConfig,
     heightMap,
@@ -2086,7 +2127,8 @@
             waterBodyId,
             mapConfig.rows,
             mapConfig.cols,
-            waterBodyData
+            waterBodyData,
+            polarRegionMap
           );
 
           // Store water body data
@@ -2127,19 +2169,6 @@
     };
   }
 
-  /**
-   * Flood fill to identify a water body
-   * @param {Array} heightMap - The height map
-   * @param {Array} visitedMap - Map tracking visited cells
-   * @param {Array} waterBodyMap - Map tracking water body IDs
-   * @param {number} startRow - Starting row
-   * @param {number} startCol - Starting column
-   * @param {number} waterLevel - The water level
-   * @param {number} waterBodyId - The ID to assign to this water body
-   * @param {number} maxRows - Maximum number of rows
-   * @param {number} maxCols - Maximum number of columns
-   * @param {object} waterBodyData - Object to store data about this water body
-   */
   function floodFillWaterBody(
     heightMap,
     visitedMap,
@@ -2150,7 +2179,8 @@
     waterBodyId,
     maxRows,
     maxCols,
-    waterBodyData
+    waterBodyData,
+    polarRegionMap = null
   ) {
     // Use a queue for flood fill to avoid stack overflow
     const queue = [{ row: startRow, col: startCol }];
@@ -2158,15 +2188,21 @@
     while (queue.length > 0) {
       const { row, col } = queue.shift();
 
-      // Skip if out of bounds, not water, or already visited
+      // Skip if out of bounds
+      if (row < 0 || row >= maxRows || col < 0 || col >= maxCols) {
+        continue;
+      }
+
+      // Skip if not water, already processed, or in polar region
       if (
-        row < 0 ||
-        row >= maxRows ||
-        col < 0 ||
-        col >= maxCols ||
         heightMap[row][col] >= waterLevel ||
-        visitedMap[row][col]
+        visitedMap[row][col] ||
+        (polarRegionMap && polarRegionMap[row][col])
       ) {
+        // If this water body touches the edge of the map
+        if (row === 0 || row === maxRows - 1 || col === 0 || col === maxCols - 1) {
+          waterBodyData.touchesEdge = true;
+        }
         continue;
       }
 
@@ -2176,151 +2212,25 @@
       waterBodyData.size++;
       waterBodyData.cells.push({ row, col });
 
-      // Check if this water cell touches the map edge
-      if (
-        row === 0 ||
-        row === maxRows - 1 ||
-        col === 0 ||
-        col === maxCols - 1
-      ) {
-        waterBodyData.touchesEdge = true;
-      }
-
-      // Add adjacent cells to the queue (4-way connectivity)
+      // Add neighbors to the queue
       queue.push({ row: row - 1, col: col }); // Up
       queue.push({ row: row + 1, col: col }); // Down
       queue.push({ row: row, col: col - 1 }); // Left
       queue.push({ row: row, col: col + 1 }); // Right
 
-      // Optionally add diagonal neighbors for 8-way connectivity
+      // Add diagonal neighbors (optional but helps with small islands)
       queue.push({ row: row - 1, col: col - 1 }); // Up-left
       queue.push({ row: row - 1, col: col + 1 }); // Up-right
       queue.push({ row: row + 1, col: col - 1 }); // Down-left
       queue.push({ row: row + 1, col: col + 1 }); // Down-right
     }
   }
+  // --- END: Move these functions back inside the IIFE ---
 
-  /**
-   * Generate and render a lake map
-   * @param {object} mapConfig - The map configuration
-   * @param {object} imageConfig - The image configuration
-   * @param {Array} heightMap - The original height map data
-   * @param {number} waterLevel - The water level
-   */
-  function generateAndRenderLakeMap(
-    mapConfig,
-    imageConfig,
-    heightMap,
-    waterLevel
-  ) {
-    // Create a copy of the map config for lakes
-    const lakeMapConfig = JSON.parse(JSON.stringify(mapConfig));
-    lakeMapConfig.palette = applyPalette(palette.lakes || palette.blue);
-
-    // Identify lakes
-    const { lakeMap, lakeData } = identifyLakes(
-      mapConfig,
-      heightMap,
-      waterLevel
-    );
-
-    // Create a map showing only lakes
-    const lakesOnlyMap = [];
-    for (let row = 0; row < mapConfig.rows; row++) {
-      lakesOnlyMap[row] = [];
-      for (let col = 0; col < mapConfig.cols; col++) {
-        if (lakeMap[row][col] > 0) {
-          // This is a lake cell - use blue colors
-          lakesOnlyMap[row][col] =
-            Math.floor(Math.random() * lakeMapConfig.palette.n_sea) +
-            lakeMapConfig.palette.sea_idx;
-        } else {
-          // Not a lake - transparent or minimal color
-          lakesOnlyMap[row][col] = 0;
-        }
-      }
-    }
-
-    // Set the lake map
-    lakeMapConfig.map = lakesOnlyMap;
-
-    // Create the lake image
-    const lakeImage = new_image(
-      "lake-map",
-      imageConfig.width,
-      imageConfig.height
-    );
-
-    // Render the lake map with the appropriate projection
-    if (mapConfig.projection == "mercator") {
-      renderMercatorProjection(lakeImage, lakeMapConfig, imageConfig);
-    } else if (mapConfig.projection == "transmerc") {
-      renderTransverseMercatorProjection(lakeImage, lakeMapConfig, imageConfig);
-    } else if (mapConfig.projection == "icosahedral") {
-      renderIcosahedralProjection(lakeImage, lakeMapConfig, imageConfig);
-    } else if (mapConfig.projection == "mollweide") {
-      renderMollweideProjection(lakeImage, lakeMapConfig, imageConfig);
-    } else if (mapConfig.projection == "sinusoidal") {
-      renderSinusoidalProjection(lakeImage, lakeMapConfig, imageConfig);
-    } else {
-      // Default square projection
-      renderSquareProjection(lakeImage, lakeMapConfig, imageConfig);
-    }
-
-    console.log("Drawing lake map...");
-    // Draw the pixels to the canvas
-    draw_pixels(lakeImage);
-
-    // Return the lake data for potential use elsewhere
-    return { lakeMap, lakeData };
-  }
-
-  /**
-   * Calculate approximate rain shadow for a given point
-   * @param {object} a - Vertex a
-   * @param {object} b - Vertex b
-   * @param {object} e - New vertex point
-   * @param {number} shadeAngle - Angle of light for shading
-   * @returns {number} - Calculated rain shadow value
-   */
-  function calculateRainShadow(a, b, e, shadeAngle) {
-    if (e.h <= 0.0) return 0.0;
-
-    const x1 = 0.5 * (a.x + b.x);
-    const y1 = 0.5 * (a.y + b.y);
-    const z1 = 0.5 * (a.z + b.z);
-
-    const l1 = Math.sqrt(x1 * x1 + y1 * y1 + z1 * z1) || 1.0;
-    const tmp = Math.sqrt(1.0 - e.y * e.y) || 0.0001;
-
-    const x2 = e.x * x1 + e.y * y1 + e.z * z1;
-    const z2 = (-e.z / tmp) * x1 + (e.x / tmp) * z1;
-
-    if (Math.abs(a.h - b.h) > 0.04) {
-      return (
-        (a.shadow +
-          b.shadow -
-          (Math.cos((Math.PI * shadeAngle) / 180.0) * z2) / l1) /
-        3.0
-      );
-    } else {
-      return (a.shadow + b.shadow) / 2.0;
-    }
-  }
-
-  /**
-   * Calculate rainfall with rain shadow effect
-   * @param {number} temp - Temperature at the point
-   * @param {number} latitude - Latitude of the point
-   * @param {number} rainShadow - Rain shadow value at the point
-   * @returns {number} - Adjusted rainfall value
-   */
-  function calculateRainfallWithShadow(temp, latitude, rainShadow) {
-    const y2 = Math.abs(latitude) - 0.5;
-    let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
-    rain += 0.03 * rainShadow;
-    return Math.max(0.0, rain); // Ensure rainfall is not negative
-  }
+  // Attach to window for global access
+  window.generateAndRenderLakeMap = generateAndRenderLakeMap;
+  window.identifyLakes = identifyLakes;
+  window.floodFillWaterBody = floodFillWaterBody;
 
   // Configuration for UI elements
   let uiConfig = {
@@ -2454,3 +2364,123 @@
   // Expose the updateMap function for the export
   exports.updateMap = updateMap;
 });
+
+// Move applyPalette to the true top-level scope so it is available everywhere
+function applyPalette(paletteConfig) {
+  var palette = {
+    n_sea: 50,
+    n_land: 100,
+    cmap: [],
+  };
+
+  // Set up palette indices
+  palette.n_terrain = palette.n_sea + palette.n_land;
+  palette.n_ice = palette.n_land + 1;
+  palette.sea_idx = 1;
+  palette.land_idx = palette.sea_idx + palette.n_sea;
+  palette.ice_idx = palette.land_idx + palette.n_land;
+
+  // Interpolate sea colors
+  var seaColors = paletteConfig.sea,
+    seaColorCount = seaColors.length - 1,
+    i;
+
+  for (i = palette.sea_idx; i < palette.land_idx; i++) {
+    var colorIndex = ((i - palette.sea_idx) / palette.n_sea) * seaColorCount;
+    let colorFloor = Math.floor(colorIndex);
+    palette.cmap[i] = interpolateColor(
+      seaColors[colorFloor],
+      seaColors[colorFloor + 1],
+      colorIndex - colorFloor
+    );
+  }
+
+  // Interpolate land colors
+  var landColors = paletteConfig.land;
+  var landColorCount = landColors.length - 1;
+
+  for (
+    seaColorCount = palette.land_idx;
+    seaColorCount < palette.ice_idx;
+    seaColorCount++
+  ) {
+    i =
+      ((seaColorCount - palette.land_idx) / palette.n_land) * landColorCount;
+    colorIndex = Math.floor(i);
+    palette.cmap[seaColorCount] = interpolateColor(
+      landColors[colorIndex],
+      landColors[colorIndex + 1],
+      i - colorIndex
+    );
+  }
+
+  // Interpolate ice colors
+  var iceColors = palette;
+  var iceColorCount = iceColors.ice_idx + iceColors.n_ice;
+  var whiteColor = [255, 255, 255];
+  var grayColor = [175, 175, 175];
+
+  for (i = iceColors.ice_idx; i < iceColorCount; i++) {
+    iceColors.cmap[i] = interpolateColor(
+      whiteColor,
+      grayColor,
+      (i - iceColors.ice_idx) / (iceColors.n_ice - 1)
+    );
+  }
+
+  return palette;
+}
+
+function interpolateColor(color1, color2, factor) {
+  return rgb2hex(
+    Math.floor(color1[0] + (color2[0] - color1[0]) * factor),
+    Math.floor(color1[1] + (color2[1] - color1[1]) * factor),
+    Math.floor(color1[2] + (color2[2] - color1[2]) * factor)
+  );
+}
+
+function rgb2hex(r, g, b) {
+  function hex(x) {
+    const h = x.toString(16);
+    return h.length === 1 ? '0' + h : h;
+  }
+  return '#' + hex(r) + hex(g) + hex(b);
+}
+
+function calculateRainShadow(a, b, e, shadeAngle) {
+  // Default shadow values to zero if undefined
+  const aShadow = typeof a.shadow === 'number' ? a.shadow : 0;
+  const bShadow = typeof b.shadow === 'number' ? b.shadow : 0;
+  if (e.h <= 0.0) return 0.0;
+
+  const x1 = 0.5 * (a.x + b.x);
+  const y1 = 0.5 * (a.y + b.y);
+  const z1 = 0.5 * (a.z + b.z);
+
+  const l1 = Math.sqrt(x1 * x1 + y1 * y1 + z1 * z1) || 1.0;
+  const tmp = Math.sqrt(1.0 - e.y * e.y) || 0.0001;
+
+  const x2 = e.x * x1 + e.y * y1 + e.z * z1;
+  const z2 = (-e.z / tmp) * x1 + (e.x / tmp) * z1;
+
+  if (Math.abs(a.h - b.h) > 0.04) {
+    return (
+      (aShadow + bShadow - (Math.cos((Math.PI * shadeAngle) / 180.0) * z2) / l1) / 3.0
+    );
+  } else {
+    return (aShadow + bShadow) / 2.0;
+  }
+}
+
+function calculateRainfallWithShadow(temp, latitude, rainShadow) {
+  const y2 = Math.abs(latitude) - 0.5;
+  let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
+  rain += 0.03 * rainShadow;
+  return Math.max(0.0, rain); // Ensure rainfall is not negative
+}
+
+// Expose top-level helpers for use inside the IIFE and globally
+window.generateAndRenderLakeMap = generateAndRenderLakeMap;
+window.identifyLakes = identifyLakes;
+window.floodFillWaterBody = floodFillWaterBody;
+
