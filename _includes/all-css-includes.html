@@ -78,18 +78,22 @@
             max-height: 1.5em; /* Adjust this value based on your line height */
             line-height: 1.5em; /* Adjust this value based on your line height */
         }
+        @media (prefers-color-scheme: light) {  
 
-        .stroke-glow-text {
+            .stroke-glow-text {
+            color: rgb(176, 175, 172);
             text-shadow:
-                -1px -1px 0 White,
-                1px -1px 0 White,
-                -1px  1px 0 White,
-                1px  1px 0 White,
-                0 0 5px rgba(255, 255, 255, 0.8);
+                -1px -1px 0 rgb(176, 175, 172),
+                1px -1px 0 rgb(176, 175, 172),
+                -1px  1px 0 rgb(176, 175, 172),
+                1px  1px 0 rgb(176, 175, 172),
+                0 0 5px rgba(176, 175, 172, 0.8);
         }
+    }
 
         @media (prefers-color-scheme: dark) {
             .stroke-glow-text {
+                color: rgb(176, 175, 172);
                 text-shadow:
                     -1px -1px 0 black,
                     1px -1px 0 black,
