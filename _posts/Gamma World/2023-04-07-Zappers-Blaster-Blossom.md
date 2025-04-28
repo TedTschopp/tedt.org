@@ -1,5 +1,5 @@
 ---
-image: /RPG/MCC-GW/images/Monster-Manual/Blaster Blossoms.png
+image: /RPG/MCC-GW/images/Monster-Manual/Blaster Blossom.png
 title: Zappers «Blaster Blossom»
 creature_name_index: Blaster Blossom
 notes: ''
