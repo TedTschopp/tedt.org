@@ -281,10 +281,13 @@
             // handle missing / alternate variables
             if (!arr.account) {
                 // handling data likely from Shuttlecraft
-                var display_name = arr.attributedTo.split("/");
-                display_name = display_name[display_name.length - 1];
+                var display_name = "Unknown";
+                if (arr.attributedTo && typeof arr.attributedTo === "string") {
+                    var displayNameParts = arr.attributedTo.split("/");
+                    display_name = displayNameParts[displayNameParts.length - 1];
+                }
                 arr.account = {
-                    url: arr.attributedTo,
+                    url: arr.attributedTo || "#",
                     avatar: "",
                     display_name: display_name,
                     username: display_name,
