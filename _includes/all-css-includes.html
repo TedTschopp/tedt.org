@@ -79,7 +79,7 @@
             line-height: 1.5em; /* Adjust this value based on your line height */
         }
 
-        .stroke-glow-text-light {
+        .stroke-glow-text {
             text-shadow:
                 -1px -1px 0 White,
                 1px -1px 0 White,
@@ -88,13 +88,15 @@
                 0 0 5px rgba(255, 255, 255, 0.8);
         }
 
-        .stroke-glow-text-dark {
-            text-shadow:
-                -1px -1px 0 black,
-                1px -1px 0 black,
-                -1px  1px 0 black,
-                1px  1px 0 black,
-                0 0 5px rgba(0, 0, 0, 0.8);
+        @media (prefers-color-scheme: dark) {
+            .stroke-glow-text {
+                text-shadow:
+                    -1px -1px 0 black,
+                    1px -1px 0 black,
+                    -1px  1px 0 black,
+                    1px  1px 0 black,
+                    0 0 5px rgba(0, 0, 0, 0.8);
+            }
         }
 
 
