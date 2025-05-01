@@ -64,8 +64,12 @@
                       {% if link.Category == Category %}
                         {% if link.Type == "emoji" %} 
                           <li class="mb-2">
-                            <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{Link.Name}}" class="u-url no-underline" style="color: {{ link.Text_Color }}"  >
-                              <span style="text-decoration: none;">{{link.Icon-Class}} </span>{{link.Name}}
+                            <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" 
+                              alt="Link to my profile on {{Link.Name}}" class="u-url text-decoration-none" 
+                              style="color: {{ link.Text_Color }}">{{link.Icon-Class}}</a>&nbsp;<a 
+                              href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me"
+                              alt="Link to my profile on {{Link.Name}}" class="u-url"
+                              style="color: {{ link.Text_Color }}">{{link.Name}}</a>
                             </a>
                           </li>
                         {% elsif link.Type == "fontawsome" %}
