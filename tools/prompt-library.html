@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,28 @@
     <meta name="description" content="A curated library of AI prompts. Search, filter, and discover prompts for various use cases. Accessible, responsive, and easy to use.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/logo-and-company-fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/consolidated-fonts.css">
+    <link href="https://tedt.org/css/bootstrap-build.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <style>
         .btn-toggle[aria-pressed="true"] {
             background-color: #0d6efd;
             color: #fff;
         }
         .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
+        .btn-copy-prompt {
+            background-color: #20c997;
+            border: none;
+            color: rgba( 16,  24,  32, 1.00);
+        }
+        .btn-copy-prompt:hover, .btn-copy-prompt:focus {
+            background-color: #29EDA5; /* was #17a589;*/
+            color: rgba(0, 0, 0, 1.00)
+        }
     </style>
-
-    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/logo-and-company-fonts.css">
-    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/consolidated-fonts.css">
-    <link href="https://tedt.org/css/bootstrap-build.css" rel="stylesheet">
-
 </head>
 <body>
     <header class="bg-primary text-white py-3" role="banner">
@@ -68,281 +78,301 @@
                 <!-- {% include prompt-card.html %} -->
                 <!-- Example Prompt Cards -->
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Blog Post Idea Generator">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Blog Post Idea Generator">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Blog Post Idea Generator</h5>
-                            <p class="card-text">Generate creative blog post ideas for any niche or topic.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Content"><i class="fas fa-tag" aria-hidden="true"></i> Content</span>
-                                    <span class="badge bg-secondary" title="Blogging"><i class="fas fa-tag" aria-hidden="true"></i> Blogging</span>
+                            <p class="card-text">Generate creative blog post ideas for any niche or topic. Specify your target audience, preferred tone, and content goals to receive a list of unique, engaging blog post suggestions tailored to your needs. Perfect for overcoming writer's block or planning your editorial calendar.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Content"><i class="fas fa-tag" aria-hidden="true"></i> Content</span>
+                                        <span class="badge bg-secondary" title="Blogging"><i class="fas fa-tag" aria-hidden="true"></i> Blogging</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-muted" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/blog-post-idea-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Blog Post Idea Generator">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/blog-post-idea-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Blog Post Idea Generator">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Resume Bullet Point Enhancer">
-                        <div class="card-body">
-                            <h5 class="card-title">Resume Bullet Point Enhancer</h5>
-                            <p class="card-text">Transform basic resume points into impactful, results-driven statements.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Career"><i class="fas fa-tag" aria-hidden="true"></i> Career</span>
-                                    <span class="badge bg-secondary" title="Resume"><i class="fas fa-tag" aria-hidden="true"></i> Resume</span>
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Resume Bullet Point Enhancer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Resume Bullet Point<br>Enhancer</h5>
+                            <p class="card-text">Transform basic resume points into impactful, results-driven statements. Input your current bullet points and receive improved versions that highlight achievements, quantify results, and use action-oriented language to impress recruiters and hiring managers.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Career"><i class="fas fa-tag" aria-hidden="true"></i> Career</span>
+                                        <span class="badge bg-secondary" title="Resume"><i class="fas fa-tag" aria-hidden="true"></i> Resume</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(5.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(5.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/resume-bullet-point-enhancer.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Resume Bullet Point Enhancer">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/resume-bullet-point-enhancer.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Resume Bullet Point Enhancer">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Email Reply Assistant">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Email Reply Assistant">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Email Reply Assistant</h5>
                             <p class="card-text">Draft polite and professional replies to any email scenario.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Productivity"><i class="fas fa-tag" aria-hidden="true"></i> Productivity</span>
-                                    <span class="badge bg-secondary" title="Email"><i class="fas fa-tag" aria-hidden="true"></i> Email</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Productivity"><i class="fas fa-tag" aria-hidden="true"></i> Productivity</span>
+                                        <span class="badge bg-secondary" title="Email"><i class="fas fa-tag" aria-hidden="true"></i> Email</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4.5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.5)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4.5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.5)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/email-reply-assistant.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Email Reply Assistant">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/email-reply-assistant.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Email Reply Assistant">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Social Media Caption Creator">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Social Media Caption Creator">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Social Media Caption Creator</h5>
                             <p class="card-text">Craft catchy and engaging captions for any social platform.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Social Media"><i class="fas fa-tag" aria-hidden="true"></i> Social Media</span>
-                                    <span class="badge bg-secondary" title="Marketing"><i class="fas fa-tag" aria-hidden="true"></i> Marketing</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Social Media"><i class="fas fa-tag" aria-hidden="true"></i> Social Media</span>
+                                        <span class="badge bg-secondary" title="Marketing"><i class="fas fa-tag" aria-hidden="true"></i> Marketing</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-muted" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/social-media-caption-creator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Social Media Caption Creator">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/social-media-caption-creator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Social Media Caption Creator">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Meeting Agenda Generator">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Meeting Agenda Generator">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Meeting Agenda Generator</h5>
                             <p class="card-text">Quickly create structured agendas for any type of meeting.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Business"><i class="fas fa-tag" aria-hidden="true"></i> Business</span>
-                                    <span class="badge bg-secondary" title="Meetings"><i class="fas fa-tag" aria-hidden="true"></i> Meetings</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Business"><i class="fas fa-tag" aria-hidden="true"></i> Business</span>
+                                        <span class="badge bg-secondary" title="Meetings"><i class="fas fa-tag" aria-hidden="true"></i> Meetings</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4.5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.5)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4.5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.5)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/meeting-agenda-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Meeting Agenda Generator">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/meeting-agenda-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Meeting Agenda Generator">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Product Description Writer">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Product Description Writer">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Product Description Writer</h5>
                             <p class="card-text">Write compelling product descriptions for e-commerce listings.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="E-commerce"><i class="fas fa-tag" aria-hidden="true"></i> E-commerce</span>
-                                    <span class="badge bg-secondary" title="Sales"><i class="fas fa-tag" aria-hidden="true"></i> Sales</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="E-commerce"><i class="fas fa-tag" aria-hidden="true"></i> E-commerce</span>
+                                        <span class="badge bg-secondary" title="Sales"><i class="fas fa-tag" aria-hidden="true"></i> Sales</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-muted" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/product-description-writer.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Product Description Writer">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/product-description-writer.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Product Description Writer">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Code Review Helper">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Code Review Helper">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Code Review Helper</h5>
                             <p class="card-text">Get suggestions for improving code readability and maintainability.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Programming"><i class="fas fa-tag" aria-hidden="true"></i> Programming</span>
-                                    <span class="badge bg-secondary" title="Code Review"><i class="fas fa-tag" aria-hidden="true"></i> Code Review</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Programming"><i class="fas fa-tag" aria-hidden="true"></i> Programming</span>
+                                        <span class="badge bg-secondary" title="Code Review"><i class="fas fa-tag" aria-hidden="true"></i> Code Review</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(5.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(5.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/code-review-helper.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Code Review Helper">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/code-review-helper.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Code Review Helper">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Language Learning Partner">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Language Learning Partner">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Language Learning Partner</h5>
                             <p class="card-text">Practice conversations and get feedback in your target language.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Education"><i class="fas fa-tag" aria-hidden="true"></i> Education</span>
-                                    <span class="badge bg-secondary" title="Language"><i class="fas fa-tag" aria-hidden="true"></i> Language</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Education"><i class="fas fa-tag" aria-hidden="true"></i> Education</span>
+                                        <span class="badge bg-secondary" title="Language"><i class="fas fa-tag" aria-hidden="true"></i> Language</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4.5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.5)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4.5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.5)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/language-learning-partner.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Language Learning Partner">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/language-learning-partner.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Language Learning Partner">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Story Plot Generator">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Story Plot Generator">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Story Plot Generator</h5>
                             <p class="card-text">Generate unique story plots for novels, games, or screenplays.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Writing"><i class="fas fa-tag" aria-hidden="true"></i> Writing</span>
-                                    <span class="badge bg-secondary" title="Storytelling"><i class="fas fa-tag" aria-hidden="true"></i> Storytelling</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Writing"><i class="fas fa-tag" aria-hidden="true"></i> Writing</span>
+                                        <span class="badge bg-secondary" title="Storytelling"><i class="fas fa-tag" aria-hidden="true"></i> Storytelling</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.0)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-muted" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.0)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/story-plot-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Story Plot Generator">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/story-plot-generator.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Story Plot Generator">Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" tabindex="0" aria-label="Prompt: Customer Support Reply Builder">
-                        <div class="card-body">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: Customer Support Reply Builder">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Customer Support Reply Builder</h5>
                             <p class="card-text">Compose empathetic and effective responses to customer inquiries.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div>
-                                    <span class="badge bg-primary" title="Support"><i class="fas fa-tag" aria-hidden="true"></i> Support</span>
-                                    <span class="badge bg-secondary" title="Customer Service"><i class="fas fa-tag" aria-hidden="true"></i> Customer Service</span>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <span class="badge bg-primary" title="Support"><i class="fas fa-tag" aria-hidden="true"></i> Support</span>
+                                        <span class="badge bg-secondary" title="Customer Service"><i class="fas fa-tag" aria-hidden="true"></i> Customer Service</span>
+                                    </div>
+                                    <div>
+                                        <span class="me-1" title="Rating: 4.5 out of 5">
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                            <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
+                                        </span>
+                                        <span>(4.5)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="me-1" title="Rating: 4.5 out of 5">
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star text-warning" aria-hidden="true"></i>
-                                        <i class="fas fa-star-half-alt text-warning" aria-hidden="true"></i>
-                                    </span>
-                                    <span>(4.5)</span>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-copy-prompt btn-sm flex-fill animate__animated" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
+                                    <a href="/prompts/customer-support-reply-builder.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Customer Support Reply Builder">Details</a>
                                 </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary btn-sm flex-fill" aria-label="Copy prompt to clipboard"><i class="fas fa-copy"></i> Copy Prompt</button>
-                                <a href="/prompts/customer-support-reply-builder.html" class="btn btn-outline-secondary btn-sm flex-fill" aria-label="View details for Customer Support Reply Builder">Details</a>
                             </div>
                         </div>
                     </div>
@@ -359,15 +389,6 @@
             <!-- Jekyll include for pagination would go here -->
             <!-- {% include pagination.html %} -->
             <ul class="pagination justify-content-center">
-                <li class="page-item"><a class="page-link" href="#" aria-label="Previous page">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#" aria-label="Next page">Next</a></li>
-            </ul>
-        </nav>
-    </main>
-
     <footer class="bg-light py-3" role="contentinfo">
         <div class="container text-center">
             <p>&copy; 2025 Prompt Library</p>
@@ -384,12 +405,18 @@
             });
         });
         // Example: Copy prompt to clipboard
-        document.querySelectorAll('.btn-outline-primary').forEach(btn => {
+        document.querySelectorAll('.btn-copy-prompt').forEach(btn => {
             btn.addEventListener('click', function() {
                 const promptText = this.closest('.card-body').querySelector('.card-text').innerText;
                 navigator.clipboard.writeText(promptText);
                 this.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                setTimeout(() => { this.innerHTML = '<i class="fas fa-copy"></i> Copy Prompt'; }, 1500);
+                this.classList.remove('animate__pulse');
+                void this.offsetWidth; // trigger reflow for animation restart
+                this.classList.add('animate__pulse');
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-copy"></i> Copy Prompt';
+                    this.classList.remove('animate__pulse');
+                }, 1500);
             });
         });
     </script>
