@@ -74,8 +74,9 @@
                           </li>
                         {% elsif link.Type == "fontawsome" %}
                           <li class="mb-2">
-                            <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" alt="Link to my profile on {{link.Name}}" class="u-url" style="color: {{ link.Text_Color }}"  >
-                              <i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}</a>
+                            <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" rel="me" 
+                            alt="Link to my profile on {{link.Name}}" class="u-url" 
+                            style="color: {{ link.Text_Color }}"><i class="{{ link.Icon-Class }} fa-lg fa-fw" {% if link.Color %}style="color: {{link.Color }}; "{% endif %}></i>{{link.Name}}</a>
                           </li>
                         {% else %}
                           <li class="mb-2">
@@ -95,18 +96,13 @@
           <div class="row">
             <div class="col-lg-3 mb-3 h-100 text-center text-lg-left my-auto">
               <ul class="list-inline mb-2">
-                <li class="list-inline-item">
-                  <a href="{{ site.siteurl }}/About/">About</a>
-                </li>
+                <li class="list-inline-item"><a href="{{ site.siteurl }}/About/">About</a></li>
                 <!--
                 <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#">Terms of Use</a>
-                </li> -->
+                <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                -->
                 <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="{{ site.siteurl }}/Privacy-Policy/">Privacy Policy</a>
-                </li>
+                <li class="list-inline-item"><a href="{{ site.siteurl }}/Privacy-Policy/">Privacy Policy</a></li>
               </ul>
             </div>
 
