@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Details</title>
-    
+
     {% include calculate-variables.html %}
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,31 +45,29 @@
         <div class="card mb-4">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="card-title">Prompt Title</h2>
+                    <h2 class="card-title">{{post.title}}</h2>
                     <div class="d-flex align-items-center">
-                        <div>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-muted"></i>
-                            <i class="fas fa-star text-muted"></i>
-                            <span>(3.0)</span>
+                        <div class="like-container">
+                            <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
+                                <i class="fas fa-heart"></i> <span class="like-count">0</span>
+                            </button>
                         </div>
                         <a href="#" class="btn btn-primary ms-3" download="prompt-details.txt">
                             <i class="fas fa-download"></i>
                         </a>
                     </div>
                 </div>
-                <p class="card-text">Full description of the prompt goes here. This section provides detailed
-                    information about the prompt, including its purpose, usage, and any additional context.</p>
+                <p class="card-text">{{post.description}}.</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
-                        <span class="badge bg-primary"><i class="fas fa-tag"></i> Tag1</span>
-                        <span class="badge bg-secondary"><i class="fas fa-tag"></i> Tag2</span>
+                        {% for tag in post.tags %}
+                            <span class="badge bg-primary"><i class="fas fa-tag"></i> {{ tag }}</span>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="text-end mt-3">
-                    <a href="#" class="btn btn-primary" download="prompt-details.txt">
+                    <a href="data:text/plain;charset=utf-8,{{ post.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3"
+                        download="{{ post.title | slugify }}.txt">
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
@@ -79,13 +77,10 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="card-title">Prompts in this Series</h3>
                         <div class="d-flex align-items-center">
-                            <div>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-muted"></i>
-                                <i class="fas fa-star text-muted"></i>
-                                <span>(No Ratings)</span>
+                            <div class="like-container">
+                                <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt series">
+                                    <i class="fas fa-heart"></i> <span class="like-count">0</span>
+                                </button>
                             </div>
                             <a href="#" class="btn btn-secondary ms-3" download="prompt-details.txt">
                                 <i class="fas fa-download"></i> Series
@@ -250,18 +245,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Rating hover effect
-        document.querySelectorAll('.rating i').forEach(star => {
-            star.addEventListener('mouseover', function () {
-                const rating = this.getAttribute('data-rating');
-                document.querySelectorAll('.rating i').forEach(s => {
-                    s.classList.remove('text-warning');
-                    s.classList.add('text-muted');
-                });
-                for (let i = 0; i < rating; i++) {
-                    document.querySelectorAll('.rating i')[i].classList.remove('text-muted');
-                    document.querySelectorAll('.rating i')[i].classList.add('text-warning');
+        // Like button functionality
+        document.querySelectorAll('.btn-like').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const countSpan = this.querySelector('.like-count');
+                let count = parseInt(countSpan.textContent, 10);
+                if (!this.classList.contains('liked')) {
+                    count++;
+                    this.classList.add('liked');
+                    this.querySelector('i').classList.add('text-danger');
+                } else {
+                    count--;
+                    this.classList.remove('liked');
+                    this.querySelector('i').classList.remove('text-danger');
                 }
+                countSpan.textContent = count;
             });
         });
     </script>

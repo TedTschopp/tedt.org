@@ -37,7 +37,7 @@
                             <i class="fas fa-star text-muted"></i>
                             <span>(3.0)</span>
                         </div>
-                        <a href="#" class="btn btn-primary ms-3" download="prompt-details.txt">
+                        <a href="data:text/plain;charset=utf-8,{{ post.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3" download="{{ post.title | slugify }}.txt">
                             <i class="fas fa-download"></i>
                         </a>
                     </div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="text-end mt-3">
-                    <a href="#" class="btn btn-primary" download="prompt-details.txt">
+                    <a href="data:text/plain;charset=utf-8,{{ post.content | strip_newlines | uri_escape }}" class="btn btn-primary" download="{{ post.title | slugify }}.txt">
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
