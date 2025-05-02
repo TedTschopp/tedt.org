@@ -4,28 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Library – Curated AI Prompts Collection</title>
-    <meta name="description" content="A curated library of AI prompts. Search, filter, and discover prompts for various use cases. Accessible, responsive, and easy to use.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/logo-and-company-fonts.css">
-    <link rel="stylesheet" type="text/css" href="https://tedt.org/css/consolidated-fonts.css">
-    <link href="https://tedt.org/css/bootstrap-build.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    {% include calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include indieauth-and-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags -->
+    {% include feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+    {% include all-css-includes.html %}
+    <!-- END OF CSS INCLUDE -->
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include scripts.html %}
 
     <style>
         .btn-toggle[aria-pressed="true"] {
             background-color: #0d6efd;
             color: #fff;
         }
-        .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
+    
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            border: 0 !important;
+        }
+    
         .btn-copy-prompt {
             background-color: #20c997;
             border: none;
-            color: rgba( 16,  24,  32, 1.00);
+            color: rgba(16, 24, 32, 1.00);
         }
-        .btn-copy-prompt:hover, .btn-copy-prompt:focus {
-            background-color: #29EDA5; /* was #17a589;*/
+    
+        .btn-copy-prompt:hover,
+        .btn-copy-prompt:focus {
+            background-color: #29EDA5;
+            /* was #17a589;*/
             color: rgba(0, 0, 0, 1.00)
         }
     </style>
