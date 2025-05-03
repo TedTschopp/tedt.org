@@ -79,8 +79,8 @@
                                 aria-label="Copy prompt to clipboard">
                                 <i class="fas fa-copy"></i>
                             </button>
-                            <div class="dropdown">
-                                <button class="btn btn-send-chatgpt btn-sm mt-0 me-0 dropdown-toggle d-flex align-items-center" type="button" id="chatgptModelDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Send prompt to ChatGPT">
+                            <div class="btn-group">
+                                <button class="btn btn-send-chatgpt btn-sm mt-0 me-0 d-flex align-items-center" type="button" id="chatgptSendDefault" aria-label="Send prompt to ChatGPT">
                                     <span style="display:inline-block; width:1em; height:1em;">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" fill="currentColor" width="1em" height="1em" aria-hidden="true" focusable="false" role="img">
                                             <title>OpenAI</title>
@@ -89,7 +89,10 @@
                                     </span>
                                     <span class="ms-1">Send to ChatGPT</span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatgptModelDropdown">
+                                <button class="btn btn-send-chatgpt btn-sm mt-0 me-0 dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select ChatGPT model">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatgptSendDefault">
                                     {% for model in page.models-supported %}
                                         <li>
                                             <a class="dropdown-item" href="https://chat.openai.com/?model={{ model }}&q={{ page.title | uri_escape }}" target="_blank" rel="noopener">{{ model }}</a>
@@ -317,6 +320,18 @@
             document.querySelector('#chatgptModelDropdown').addEventListener('click', function(e) {
                 e.stopPropagation();
             });
+
+            // Main ChatGPT button opens default model
+            var chatgptBtn = document.getElementById('chatgptSendDefault');
+            if (chatgptBtn) {
+                chatgptBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var defaultModel = "{{ page.models-supported[0] | default: 'gpt-4' }}";
+                    var promptTitle = encodeURIComponent("{{ page.title }}");
+                    var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptTitle}`;
+                    window.open(url, '_blank', 'noopener');
+                });
+            }
         });
     </script>
 </body>
