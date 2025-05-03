@@ -67,16 +67,21 @@
                 </div>
 
                 <div class="card my-3">
-                    <div class="card-header">
-                        Prompt Example
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Prompt Example</span>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-copy-prompt btn-sm" type="button" aria-label="Copy prompt to clipboard">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                            <button class="btn btn-send-chatgpt btn-sm" type="button" aria-label="Send prompt to ChatGPT">
+                                <i class="fas fa-paper-plane"></i> Send to ChatGPT
+                            </button>
+                        </div>
                     </div>
                     <div class="card-body">
                         <pre class="bg-dark text-white p-3 rounded" style="white-space: pre-wrap; word-break: break-word;">{{page.content}}</pre>
                     </div>
                 </div>
-
-
-
 
                 <div class="text-end mt-3">
                     <a href="data:text/plain;charset=utf-8,{{ page.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3"
@@ -270,6 +275,34 @@
                     this.querySelector('i').classList.remove('text-danger');
                 }
                 countSpan.textContent = count;
+            });
+        });
+
+        // Copy button for Prompt Example
+        document.querySelectorAll('.card-header .btn-copy-prompt').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const pre = this.closest('.card').querySelector('pre');
+                if (pre) {
+                    navigator.clipboard.writeText(pre.innerText);
+                    const original = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {
+                        this.innerHTML = original;
+                    }, 1500);
+                }
+            });
+        });
+
+        // Send to ChatGPT button for Prompt Example
+        document.querySelectorAll('.card-header .btn-send-chatgpt').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const pre = this.closest('.card').querySelector('pre');
+                if (pre) {
+                    const prompt = pre.innerText;
+                    const encoded = encodeURIComponent(prompt);
+                    const url = `https://chat.openai.com/?model=gpt-4&message=${encoded}`;
+                    window.open(url, '_blank', 'noopener');
+                }
             });
         });
     </script>
