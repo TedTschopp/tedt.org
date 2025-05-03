@@ -80,6 +80,8 @@
                     </div>
                     <div class="card-body">
                         <pre class="bg-dark text-white p-3 rounded" style="white-space: pre-wrap; word-break: break-word;">{{page.content}}</pre>
+                        {{page.content | markdownify}}
+
                     </div>
                 </div>
 
