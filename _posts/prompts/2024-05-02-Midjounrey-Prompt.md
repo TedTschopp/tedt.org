@@ -35,6 +35,14 @@ keywords:
   - AI creative tools
   - visual storytelling
 
+models-supported:
+  - gpt-4
+  - gpt-4-mini
+  - gpt-4.5
+  - 03
+  - 04-mini
+  - 04-mini-high
+
 
 mastodon-post-id: 
 
