@@ -65,6 +65,14 @@
                         {% endfor %}
                     </div>
                 </div>
+                <div class="card my-3">
+                    <div class="card-header">
+                        Prompt Example
+                    </div>
+                    <div class="card-body">
+                        <pre><code class="language-markdown">{{page.content}}</code></pre>
+                    </div>
+                </div>
                 <div class="text-end mt-3">
                     <a href="data:text/plain;charset=utf-8,{{ page.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3"
                         download="{{ page.title | slugify }}.txt">
@@ -87,8 +95,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <p class="card-text">{{page.content}}</p>
 
                     <div class="d-flex">
                         <ol class="list-group list-group-numbered flex-grow-1 me-4">
