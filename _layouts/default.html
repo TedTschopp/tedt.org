@@ -76,6 +76,8 @@
                       <!-- Do Nothing -->
                     {% elsif post.layout contains "micropubpost" %}
                       <!-- Do Nothing -->
+                    {% elsif post.layout contains "prompts" %}
+                      <!-- Do Nothing -->
                     {% else %}
                       {% assign count = count | plus: 1 %}
                       {% if count > 3 %}
