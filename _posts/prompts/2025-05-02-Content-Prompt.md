@@ -1,6 +1,3 @@
-Understood. Here's the corrected YAML front matter without referencing the test article and framed generically for your **Cross-Platform Repurposing Template**:
-
-```yaml
 ---
 layout: prompt-details
 title: "Cross-Platform Social Media Repurposing Template"
@@ -47,11 +44,6 @@ models-supported:
 
 mastodon-post-id: 
 ---
-```
-
-Would you like this paired with the full prompt instructions as a downloadable `.md` file?
-
-
 You are a cross-platform content strategist. I will provide you with a blog post including a title, subtitle, body content, and (optionally) a description of an accompanying image. Your task is to rewrite the content for the following platforms:
 
 1. 🐘 Mastodon
