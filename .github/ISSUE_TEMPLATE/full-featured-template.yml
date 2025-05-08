@@ -1,0 +1,108 @@
+name: Feature Request / Bug Report / Task
+description: Use this template to submit a feature request, bug, or other development task.
+title: "[ISSUE] <Short Summary>"
+labels: [triage]
+assignees:
+  - ""
+projects:
+  - ""
+milestone: ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 Issue Summary
+        Please fill out the relevant sections below. Required fields are marked.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact
+      description: Who is reporting this issue?
+      placeholder: ex. @username or team name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of issue is this?
+      options:
+        - Bug
+        - Feature Request
+        - Technical Task
+        - Documentation
+        - Question
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: What environment does this affect?
+      placeholder: ex. Production, Staging, Localhost
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the issue
+      placeholder: A concise description of the problem or feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce (for bugs)
+      description: Provide a step-by-step breakdown of how to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Logs
+      description: Add screenshots or copy/paste logs here (if applicable).
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: Impact
+      description: How is this impacting users or the system?
+      options:
+        - label: Blocking release
+        - label: Causes system crash or data loss
+        - label: Degrades performance
+        - label: Cosmetic or minor
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      description: Link to any related issues or pull requests.
+      placeholder: ex. #123, #456
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thank you for submitting an issue! A team member will review this soon.
