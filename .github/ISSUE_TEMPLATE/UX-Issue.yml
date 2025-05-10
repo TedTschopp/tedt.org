@@ -1,6 +1,6 @@
 name: UX Issue
 description: Template for reporting or suggesting UX improvements.
-title: "UX-XXX: [Short Title of UX Issue]"
+title: "XX-###: [Short Title of UX Issue]"
 labels: ["UX", "needs-triage"]
 body:
   - type: markdown
@@ -9,6 +9,18 @@ body:
         <!-- ========================================= -->
         <!--  UX-XXX : [Short Title of UX Issue] -->
         <!-- ========================================= -->
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Select the type of UX issue.
+      options:
+        - Bug
+        - Enhancement
+        - Feature Request
+        - Other
+    validations:
+      required: true
   - type: input
     id: summary
     attributes:
