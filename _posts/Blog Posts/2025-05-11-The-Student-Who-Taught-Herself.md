@@ -72,7 +72,7 @@ image-title: "The Student Who Taught Herself"
 
 redirect_from:
 
-mastodon-post-id: 
+mastodon-post-id: 114497428586613439
 ---
 
 
