@@ -1,4 +1,4 @@
-    <!-- JQuery -->
+<!-- JQuery -->
     {% include js-jquery.html %}
 
     <!-- Bootstrap -->
@@ -13,25 +13,27 @@
 
     {% if home-page-url == this-url %}
         <script>
-            (function () {
-                const hero = document.getElementById('hero-img');
-                let ticking = false;
-                window.addEventListener('scroll', onScroll, { passive: true });
-                function onScroll() {
-                    if (!ticking) {
-                        window.requestAnimationFrame(() => {
-                            const y = window.scrollY;
-                            // scale scroll to desired range, then cap at 20px
-                            const offset = Math.min(y * 0.2, 20);
-                            hero.style.transform = `translateY(${offset}px)`;
-                            ticking = false;
-                        });
-                        ticking = true;
+            document.addEventListener('DOMContentLoaded', function() {
+                (function () {
+                    const hero = document.getElementById('hero-img');
+                    let ticking = false;
+                    window.addEventListener('scroll', onScroll, { passive: true });
+                    function onScroll() {
+                        if (!ticking) {
+                            window.requestAnimationFrame(() => {
+                                const y = window.scrollY;
+                                // scale scroll to desired range, then cap at 20px
+                                const offset = Math.min(y * 0.2, 20);
+                                hero.style.transform = `translateY(${offset}px)`;
+                                ticking = false;
+                            });
+                            ticking = true;
+                        }
                     }
-                }
-            })();
+                })();
+            });
         </script>
 
     {% else %}
         <script src="/js/add-winer-links-and-header-links.js"></script>
-    {% endif %}  
+    {% endif %}
