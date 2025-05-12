@@ -193,7 +193,3 @@ So we have to ask:
 And maybe—most quietly but most honestly:
 
 **What kind of grace do you give *yourself* when you fail, when you are confronted with something new, or when life asks you to change?**
-
----
-
-Would you like a version of this prepared for slides or spoken delivery with pacing marks and cues?
