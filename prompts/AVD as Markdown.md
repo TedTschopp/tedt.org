@@ -1,11 +1,9 @@
 # Executive Summary
 
 <Purpose>
-
 The Executive Summary provides a high-level, non-technical overview of the solution architecture, tailored for senior leadership, sponsors, and non-technical stakeholders. It captures the essence of the architecture’s purpose, business alignment, strategic goals, and major outcomes without delving into detailed technical descriptions. The Executive Summary ensures that decision-makers quickly understand the value, direction, and critical importance of the architecture within the broader enterprise landscape.
 
 <Instructions>
-
 1. **Summarize the Business Problem and Solution:** Provide a brief, clear description of the business problem or opportunity the architecture addresses. Follow it immediately with a simple explanation of the proposed solution—what it is, what it does, and how it helps.
 2. **Highlight Strategic Alignment:**  Connect the architecture to key organizational strategies, corporate initiatives, or business goals. Show how the solution fits into the company’s long-term plans for growth, operational excellence, risk reduction, or innovation.
 3. **State Key Outcomes and Benefits:**  List the major expected outcomes, such as improved customer satisfaction, increased revenue, operational efficiency, risk mitigation, regulatory compliance, or innovation enablement. Keep the focus on business value rather than technical features.
@@ -14,16 +12,13 @@ The Executive Summary provides a high-level, non-technical overview of the solut
 6. **Keep the Tone Executive-Friendly:**  Write in plain, professional language. Avoid jargon, acronyms without explanation, or deep technical detail. Focus on clarity, brevity, and relevance.
 
 <Example>
-
 The Customer Digital Onboarding Initiative modernizes and streamlines the account creation process for new residential and commercial customers, reducing onboarding time by 50% and improving customer satisfaction by 15%. This solution aligns directly with the company’s strategic goals of operational excellence and digital-first engagement. The architecture leverages cloud-native platforms, secure identity federation, and real-time analytics to deliver a scalable, future-ready customer experience. Approval of this architecture enables faster time-to-market, better customer retention, and positions the enterprise to integrate additional self-service innovations over the next two years.
 
-<References>
-
+<Prerequisites>
 * Business Case Document found in BRD 1 or Demand Intake Form (e.g., “Investment Brief,” “Benefits Realization Plan” “Project Charter” or “Strategic Business Case”)
 * IT Steering or Governance Board Presentations, PPGC Deck, Finance Deck
 
 <Standards>
-
 * **TOGAF Standard – Architecture Vision (Part II, Section 7)**
   Provides guidance on developing executive-level overviews.
   🔗 [TOGAF 10 – Architecture Vision](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html)
@@ -31,39 +26,32 @@ The Customer Digital Onboarding Initiative modernizes and streamlines the accoun
 # Architecture Vision
 
 <Purpose>
-
- The Vision Statement section outlines the overarching goals and aspirations of the architecture project. It provides a clear and concise description of the desired future state that the architecture aims to achieve. This section should inspire and guide stakeholders by articulating the long-term vision and strategic direction.
+The Vision Statement section outlines the overarching goals and aspirations of the architecture project. It provides a clear and concise description of the desired future state that the architecture aims to achieve. This section should inspire and guide stakeholders by articulating the long-term vision and strategic direction.
 
 <Instructions>
-
 1. **Understand the Context:** Review the business goals, strategic objectives, and key drivers for the architecture project. Engage with stakeholders to gather their perspectives and expectations.
 2. **Define the Vision:** Craft a vision statement that is forward-looking, inspirational, and aligned with the organization's strategic goals. Ensure it is clear, concise, and easy to understand.
 3. **Validate the Vision:** Share the draft vision statement with key stakeholders for feedback. Refine the statement based on their input to ensure it resonates with all parties involved.
 4. **Document the Vision:** Write the final vision statement in a structured format, ensuring it is prominently featured in the Architecture Definition Document.
 
 <Example>
-
 "Our vision is to create a robust, scalable, and secure enterprise architecture that enables seamless integration of business processes, enhances operational efficiency, and supports innovation. By leveraging cutting-edge technologies and best practices, we aim to deliver a flexible and adaptive architecture that meets the evolving needs of our organization and drives sustainable growth."
 
-<References>
-
+<Prerequisites>
 * Business Goals section of the Project Charter
 * Vision Statement from Business Owner or BRM Slide Decks
 * Program Briefs from Strategy Office or Portfolio Planning Team
 
 <Standards>
-
 * **TOGAF Standard – Architecture Vision (Section 7.3)**
   🔗 [TOGAF 10 – Architecture Vision](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html#tag_7_3)
 
 ## Business Problem Description
 
 <Purpose>
-
 The Business Problem Description outlines the core business challenge or opportunity that the solution architecture aims to address. This section grounds the technical work in a clear understanding of the business context. A well-defined problem statement helps ensure that the architecture aligns with business needs and delivers meaningful outcomes.
 
 <Instructions>
-
 1. **Clarify the Problem or Opportunity:** Define the key issue or opportunity driving the initiative. Focus on what’s broken, missing, inefficient, or at risk—without jumping into solutions.
 2. **Use Business Terms:** Describe the problem in the language of the business. Avoid technical jargon. Emphasize impacts on business goals, customers, employees, or operations.
 3. **Include Context and Evidence:** Support the description with data points, user stories, workflow diagrams, or references to audits or incidents. Show why this matters now.
@@ -71,18 +59,15 @@ The Business Problem Description outlines the core business challenge or opportu
 5. **Link to Strategic Objectives:** If possible, tie the problem to broader company goals such as growth, risk reduction, cost optimization, or customer satisfaction.
 
 <Example>
-
 **Business Problem:** The company’s customer onboarding process is fragmented across multiple systems, leading to inconsistent experiences, frequent delays, and high manual effort. Customers face a 5–7 day wait time due to handoffs between departments, while internal teams spend an average of 8 hours per onboarding case on redundant data entry and approvals. These inefficiencies contribute to customer churn, lower employee satisfaction, and missed revenue opportunities. The architecture must support streamlining this process through automation, integration, and a unified digital experience.
 
-<References>
-
+<Prerequisites>
 * Problem Statement in Business Case
 * Issue Logs or Audit Findings
 * Voice of Customer Reports
 * Operational Metrics (e.g., from current-state assessments or Lean Six Sigma documentation)
 
 <Standards>
-
 * **ISO/IEC/IEEE 29148:2018 – Requirements Engineering**
   🔗 [ISO 29148 Overview](https://www.iso.org/standard/72089.html)
 * **TOGAF Standard – Business Scenarios**
@@ -91,11 +76,9 @@ The Business Problem Description outlines the core business challenge or opportu
 ### Key Stakeholders
 
 <Purpose>
-
 The Key Stakeholders and Influence vs. Interest Mapping section identifies the main individuals, groups, or roles that have a vested interest in the success of the solution architecture and outlines how their influence and interest shape engagement strategies. Knowing who the stakeholders are and how much power and concern they bring ensures that the architecture meets organizational needs, addresses critical requirements, and secures needed support throughout the project lifecycle.
 
 <Instructions>
-
 1. **Identify Stakeholders:**  Work with project sponsors, business units, and technical leads to build a full list of stakeholders. Focus on individuals or groups who shape requirements, funding, governance, adoption, or maintenance of the solution.
 2. **Describe Stakeholder Roles:**  For each stakeholder or group, explain their role, responsibilities, and how they interact with the architecture. Note whether they act as decision-makers, approvers, contributors, or end users.
 
@@ -114,22 +97,19 @@ Plan how and when stakeholders will be engaged, such as through steering committ
 Review the list and the engagement strategies with the project sponsor and solution delivery leads. Make sure all key parties are captured and correctly categorized.
 
 <Example>
-
 The Executive Sponsor (CIO) holds high influence and high interest. They must be managed closely with regular briefings and active participation in steering committees.  
 The Business Unit Lead for Customer Service holds medium influence and high interest. They should be kept informed through project newsletters and monthly review sessions.  
 The IT Operations Manager holds high influence but medium interest. They should be kept satisfied with quarterly updates and design review touchpoints.  
 The Field Technicians, who will use the solution daily, hold low influence but high interest. They should be included in user testing and training sessions.  
 The Procurement Specialist holds low influence and low interest and requires only minimal updates tied to procurement milestones.
 
-<References>
-
+<Prerequisites>
 * RACI Matrices
 * Stakeholder Registry (maintained by PMO or Change Management)
 * Governance Committee Rosters
 * Project Team Org Chart
 
 <Standards>
-
 * **TOGAF Standard – Stakeholder Management (Section 7.5)**
   🔗 [TOGAF 10: Stakeholder Management](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html#tag_7_5)
 * **ISO/IEC 42010:2011 – Architecture Description**
@@ -138,11 +118,9 @@ The Procurement Specialist holds low influence and low interest and requires onl
 ### Key Contacts
 
 <Purpose>
-
-  The Key Contacts section records the main individuals involved in the solution delivery, including their names, roles, and contact information. This ensures that project team members, stakeholders, auditors, and operational support teams have clear visibility into who holds key responsibilities and how to reach them. A full and accurate Key Contacts list strengthens communication, speeds up decision-making, and supports continuity throughout the project lifecycle and beyond.
+The Key Contacts section records the main individuals involved in the solution delivery, including their names, roles, and contact information. This ensures that project team members, stakeholders, auditors, and operational support teams have clear visibility into who holds key responsibilities and how to reach them. A full and accurate Key Contacts list strengthens communication, speeds up decision-making, and supports continuity throughout the project lifecycle and beyond.
 
 <Instructions>
-
 1. **Gather Contact Information:** Identify all individuals filling critical business and IT roles related to the solution. For each person, collect their full name, role, email address, and phone number.
 2. **Match Contacts to Roles:** Use the defined role list as a guide to ensure full coverage. If a role is unassigned at the time of documentation, note it as "TBD" (To Be Determined) and update it once a contact is confirmed.
 3. **Business Roles:** Document the following contacts for the business side of the solution:
@@ -180,7 +158,6 @@ The Procurement Specialist holds low influence and low interest and requires onl
 7. **Maintain Updates:**  Flag this section for periodic review. Update the contact information as people join or leave the project to keep the section evergreen.
 
 <Example>
-
 Business Unit Representative: John Smith, [john.smith@example.com](mailto:john.smith@example.com), (555) 123-4567  
 Customer Billing – Process Sponsor: Jane Doe, [jane.doe@example.com](mailto:jane.doe@example.com), (555) 987-6543  
 Customer Billing – Process Owner: Mark Johnson, [mark.johnson@example.com](mailto:mark.johnson@example.com), (555) 321-7890  
@@ -191,25 +168,21 @@ Project Manager: Lisa Greene, [lisa.greene@example.com](mailto:lisa.greene@exam
 Project Support Analyst: Victor Zhou, [victor.zhou@example.com](mailto:victor.zhou@example.com), (555) 678-1234  
 ...and so on for each listed role.
 
-<References>
-
+<Prerequisites>
 * Project Team Roster (often in Project Kickoff Deck or PM tool like MS Project/MS Planner)
 * Project Charter or Project Initiation Document
 * Project Contact List in SharePoint or UMT360
 
 <Standards>
-
 * **TOGAF Standard – Architecture Governance**
   🔗 [TOGAF 10: Architecture Governance](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-governance.html)
 
 ### Stakeholder Concerns
 
 <Purpose>
-
- The Stakeholder Concerns section identifies the needs, expectations, worries, and requirements of those affected by the architecture—whether business leaders, end users, IT staff, or external partners. Capturing these concerns helps ensure the architecture reflects real-world priorities and avoids blind spots that may cause resistance or rework later. Addressing concerns early also builds trust and alignment.
+The Stakeholder Concerns section identifies the needs, expectations, worries, and requirements of those affected by the architecture—whether business leaders, end users, IT staff, or external partners. Capturing these concerns helps ensure the architecture reflects real-world priorities and avoids blind spots that may cause resistance or rework later. Addressing concerns early also builds trust and alignment.
 
 <Instructions>
-
 1. **Identify Stakeholders:** List all relevant stakeholder groups—executives, managers, operations, security, compliance, developers, end users, partners, etc.
 2. **Gather Concerns:** Use interviews, surveys, workshops, or past feedback to understand what matters to each group. Look for pain points, unmet needs, and aspirations.
 3. **Summarize by Role or Group:** Organize concerns by stakeholder type. Be concise and specific—focus on what they need, fear, or want from the architecture.
@@ -217,7 +190,6 @@ Project Support Analyst: Victor Zhou, [victor.zhou@example.com](mailto:victor.z
 5. **Validate and Revisit:** Share this section with stakeholders to confirm it reflects their viewpoints accurately. Keep it updated as new concerns emerge.
 
 <Example>
-
 Stakeholder Concerns:
 
 1. **Business Leadership:**
@@ -233,26 +205,22 @@ Stakeholder Concerns:
    * Expect consistent performance and intuitive interfaces across devices
    * Concerned about system downtime affecting productivity
 
-<References>
-
+<Prerequisites>
 * Stakeholder Interviews (documented in stakeholder analysis sessions)
 * Meeting Minutes and Transcripts from Requirements Workshops
 * Feedback Logs
 * Operational Risk Logs (for stakeholder-driven risks)
 
 <Standards>
-
 * **TOGAF Standard – Stakeholder Concerns**
   🔗 [TOGAF 10: Stakeholder Management](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html#tag_7_5)
 
 ### Issues / Scenarios to Be Addressed
 
 <Purpose>
-
- This section outlines the specific problems, challenges, or opportunities that the architecture effort must address. These may include operational pain points, user experience gaps, scalability bottlenecks, or integration limitations. Clearly stating these issues provides context for design choices and ensures the architecture remains grounded in solving real business and technical concerns.
+This section outlines the specific problems, challenges, or opportunities that the architecture effort must address. These may include operational pain points, user experience gaps, scalability bottlenecks, or integration limitations. Clearly stating these issues provides context for design choices and ensures the architecture remains grounded in solving real business and technical concerns.
 
 <Instructions>
-
 1. **Gather Inputs:** Consult with business units, technical teams, and end users to collect known issues and future scenarios. Use existing pain-point analyses, incident logs, audit reports, and customer feedback.
 2. **Prioritize and Scope:** Not all issues are equal—identify those that must be addressed in this initiative. Consider urgency, impact, and alignment with project scope.
 3. **Describe Clearly:** For each issue or scenario, describe the current state, the root cause or context, and what needs to be addressed. Use plain language, and avoid jargon when possible.
@@ -260,7 +228,6 @@ Stakeholder Concerns:
 5. **Validate with Stakeholders:** Review this section with key stakeholders to confirm shared understanding of what problems the architecture must solve.
 
 <Example>
-
 Issues to Be Addressed:
 
 1. **Siloed Data Systems:** Key operational data is split across multiple platforms, leading to duplication, inconsistent reporting, and slow decision-making. The architecture must enable data unification through integration or centralized storage.
@@ -268,33 +235,28 @@ Issues to Be Addressed:
 3. **Inability to Scale:** The current platform cannot handle projected transaction volume growth over the next three years. The architecture must support elastic scalability and horizontal expansion.
 4. **Poor Mobile Experience:** End users report sluggish performance and limited functionality on mobile devices. The new architecture must address responsiveness, performance tuning, and UI design across device types.
 
-<References>
-
+<Prerequisites>
 * Pain Point Analysis / Current State Assessments
 * IT Ops Incident Reports
 * As-Is / To-Be Process Maps
 * Problem Statements from Business Process Engineering initiatives such as Lean Six Sigma Kaizen or DMAIC, or a TPS Kaikaku.
 
 <Standards>
-
 * **TOGAF Standard – Stakeholder Concerns**
   🔗 [TOGAF 10: Stakeholder Management](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html#tag_7_5)
 
 ### Key Change Drivers & Opportunities
 
 <Purpose>
-
- The Key Drivers section identifies and explains the primary factors influencing the architecture project. These drivers can include business goals, technological advancements, regulatory requirements, and market trends. Understanding these drivers is crucial for aligning the architecture with the organization's strategic objectives and ensuring its relevance and effectiveness.
+The Key Drivers section identifies and explains the primary factors influencing the architecture project. These drivers can include business goals, technological advancements, regulatory requirements, and market trends. Understanding these drivers is crucial for aligning the architecture with the organization's strategic objectives and ensuring its relevance and effectiveness.
 
 <Instructions>
-
 1. **Identify Key Drivers:** Engage with stakeholders to gather information on the main factors impacting the architecture project. Consider business objectives, technological trends, regulatory changes, and competitive pressures.
 2. **Analyze Impact:** Assess how each key driver influences the architecture. Determine the implications for design decisions, resource allocation, and project priorities.
 3. **Document Drivers:** Clearly articulate each key driver, providing a detailed explanation of its significance and impact on the architecture. Use structured formats such as bullet points or tables for clarity.
 4. **Validate with Stakeholders:** Share the documented key drivers with stakeholders for feedback. Ensure that all relevant factors are accurately captured and understood.
 
 <Example>
-
 **Key Drivers:**
 
 1. **Business Growth:** The architecture must support the company's strategic goal of expanding into new markets and increasing revenue by 20% over the next five years.
@@ -302,15 +264,13 @@ Issues to Be Addressed:
 3. **Regulatory Compliance:** Ensuring adherence to new data protection regulations to avoid legal penalties and maintain customer trust.
 4. **Competitive Pressure:** Developing a flexible and scalable architecture to quickly respond to market changes and outperform competitors.
 
-<References>
-
+<Prerequisites>
 * Strategy Maps from Strategy or Business Planning Teams
 * Market and Regulatory Impact Analysis
 * Executive Presentations (OKRs, QBRs, Investor Decks)
 * Technology Architecture Roadmaps, Edison International Strategy Teach Roadmaps
 
 <Standards>
-
 * **TOGAF Standard – Drivers, Goals, and Objectives (Phase A)**
   🔗 [TOGAF 10: Architecture Vision](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/architecture-vision.html)
 * **Agile Manifesto**
@@ -323,11 +283,9 @@ Issues to Be Addressed:
 ### Actors with Applicable Roles & Responsibilities
 
 <Purpose>
-
 This section identifies all system actors in scope for the target architecture—both human and non-human. System actors are individuals, organizations, or systems that interact with or are impacted by the solution. Capturing this information is essential to understanding who will use, support, or depend upon the system. Including organizational context such as department or business unit helps clarify ownership, stakeholder alignment, access needs, and change impacts across the enterprise.
 
 <Instructions>
-
 1. **List Human Actors:** Begin by identifying all human users or participants in the architecture. Include both internal and external roles, using examples and categories provided below. Be specific about job titles, responsibilities, and whether the actor belongs to SCE, an affiliate, or an external party.
 2. **Provide Organizational Context:** For each human actor, indicate their organizational affiliation—department, business unit, affiliate, or vendor. This helps map ownership and determine which teams will be affected or responsible for solution support.
 3. **List Non-Human Actors:** Capture any system, computer, or non-human actors relevant to the architecture. Reference or describe these in Section 3, as applicable.
@@ -336,7 +294,6 @@ This section identifies all system actors in scope for the target architecture�
 6. **Validate with Stakeholders:** Confirm this list with business and technical leads to ensure completeness and accuracy. Include emerging roles where relevant.
 
 <Example>
-
 Actors in Scope:
 
 * Human Actors and Roles:**
@@ -363,26 +320,22 @@ Actors in Scope:
 * Computer (System) Actors:**  Include software agents, APIs, integration endpoints, and automated system roles that interact with or are part of the target architecture. Document these in detail in Section 3.
 * Other System Actors:** List any additional relevant actors not covered above (e.g., AI components, decision engines, third-party platforms). Describe these in Section 3, where technical systems are detailed.
 
-<References>
-
+<Prerequisites>
 * Use Case Definitions
 * RACI Diagrams
 * Org Charts with Role Descriptions
 * Process Documentation (e.g., swimlane diagrams)
 
 <Standards>
-
 * **TOGAF Content Framework – Business Architecture Metamodel**
   🔗 [TOGAF 10: Business Layer Concepts](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/content-metamodel.html)
 
 ### Process Description
 
 <Purpose>
-
 The Process Description section outlines the in-scope business processes that are impacted by or relevant to the conceptual architecture. It establishes a baseline understanding of the operational workflows that must be supported, enhanced, or reimagined by the solution. By identifying and describing these processes, the architecture team can ensure alignment with business needs, anticipate integration points, and address any regulatory compliance requirements such as SOX or NERC/CEII.
 
 <Instructions>
-
 1. **Identify In-Scope Business Processes:**  
 Clearly list all business processes that fall within the scope of the architecture effort. Include any front-office, middle-office, or back-office workflows expected to change, integrate, or rely on the target solution. Be explicit about which processes are new, existing, or changing.
 2. **Provide High-Level Diagrams (if required):**  
@@ -397,7 +350,6 @@ Identify any business processes that are subject to **Sarbanes-Oxley (SOX)** c
 Note any processes that must comply with **North American Electric Reliability Corporation (NERC)** or **Critical Energy/Electric Infrastructure Information (CEII)** requirements. Provide a brief explanation of why the process is sensitive and what control measures or isolation patterns are required to meet regulatory standards.
 
 <Example>
-
 Process Description:
 
 1. **In-Scope Processes:**
@@ -497,15 +449,13 @@ flowchart LR
     G3 -->|Rejected| B1
 ```
 
-<References>
-
+<Prerequisites>
 * BPMN Models in Business Process Repository (e.g., Signavio)
 * SOPs (Standard Operating Procedures)
 * Internal Compliance Documentation (e.g., SOX/NERC reports)
 * Process Architecture Models from EA Repository
 
 <Standards>
-
 * **BPMN 2.0 Specification (OMG)**
   🔗 [BPMN Spec](https://www.omg.org/spec/BPMN/2.0/)
 * **Mermaid Script Specification**
@@ -514,11 +464,9 @@ flowchart LR
 ### Business & Technical Environments
 
 <Purpose>
-
 The Business & Technical Environments section defines the operational context in which the solution architecture will function. This section overlays the identified in-scope business processes onto the proposed solution landscape, ensuring that both business and technical environments are fully understood and aligned. Capturing these environments helps anchor the architecture within the real-world systems, departments, and workflows it must support and integrate with. A clear and complete environment description strengthens solution fit, highlights integration needs, and surfaces key constraints early in the process.
 
 <Instructions>
-
 1. **Describe the Business Environment:**  Identify and describe the business units, functions, workflows, and operational areas that fall within the scope of the architecture vision. Clearly state which parts of the business are directly affected and which are indirectly impacted. Include any relevant business drivers, operational goals, or strategic initiatives shaping the environment. If the business environment is still being finalized, indicate it as "TBD" (To Be Determined) but describe the expected areas under consideration.
 2. **Describe the Technology Environment:**  Outline the technology domains, platforms, and systems in scope for the architecture. Examples include Grid Operations systems, Enterprise Resource Planning (ERP) systems, Customer Information Systems (CIS), billing platforms, mobile field service systems, and cloud environments. Specify which systems the architecture will interact with, replace, extend, or depend upon.
 3. **Overlay Business Processes onto Environments:**  Show how the in-scope business processes map onto the business and technology environments. Explain where each key process resides, which systems support them, and any notable gaps, overlaps, or dependencies. Use simple tables, bullet points, or mapping diagrams if necessary to make this relationship clear.
@@ -527,7 +475,6 @@ The Business & Technical Environments section defines the operational context in
 6. **Mandatory Section:**  Completion of this section is **mandatory**. The solution architecture document must not proceed to later design sections without an agreed understanding of the business and technical environments in scope.
 
 <Example>
-
 Business & Technical Environments:
 
 * **Business Environment:**
@@ -546,26 +493,22 @@ Business & Technical Environments:
   * Field service dispatch links Mobile Field Service Application with Grid SCADA for outage management.
   * Regulatory reporting relies on data aggregated across SAP and Grid Systems.
 
-<References>
-
+<Prerequisites>
 * Current State Architecture Models (from Orbus)
 * Business Capability Maps
 * IT Landscape Inventory
 * Application Portfolio Reports
 
 <Standards>
-
 * **TOGAF Standard – Baseline & Target Architecture (Phase B/C)**
   🔗 [TOGAF 10: Architecture Development](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/index.html)
 
 ### Cross Project Dependencies
 
 <Purpose>
-
 The Cross Project Dependencies section identifies other projects that may influence, constrain, or enable the success of the architecture effort. Dependencies can include overlapping system changes, shared resources, timing conflicts, or related initiatives delivering enabling capabilities. Recognizing and managing these dependencies early is critical to ensuring architectural alignment, avoiding rework, and reducing delivery risk. This section also fosters cross-team collaboration and promotes visibility across concurrent enterprise initiatives.
 
 <Instructions>
-
 1. **Identify Related Projects:**  
 Work with the **Enterprise Architecture (EA) Team** and the **Business Relationship Manager (BRM)** to identify other projects within the enterprise that may introduce dependencies. These may be projects that deliver enabling components, share the same systems or teams, or are scheduled to go live in overlapping timeframes.
 2. **Use Formal Identifiers:**  
@@ -578,7 +521,6 @@ The **BRM assigned to this architecture project** must coordinate with BRMs fr
 Dependencies are not static. Establish a regular cadence to review, update, and manage the status of identified cross-project dependencies. Escalate changes in scope or schedule that could impact architectural alignment.
 
 <Example>
-
 Cross Project Dependencies:
 
 1. **Dependent Project:** Customer Digital Experience Platform
@@ -592,15 +534,13 @@ Cross Project Dependencies:
    * **BRMs Involved:** Jane Doe (Current Project), Priya Patel (Dependent Project)
    * **Logged in UMT360:** In Progress
 
-<References>
-
+<Prerequisites>
 * UMT360
 * ETS/BRM Operational Plans
 * Dependency Logs
 * Architecture Review Board (ARB) meeting notes
 
 <Standards>
-
 * **TOGAF Standard – Opportunities and Solutions (Phase E)**
   🔗 [TOGAF 10: Phase E](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/opportunities-and-solutions.html)
 
@@ -609,11 +549,9 @@ Cross Project Dependencies:
 ### Conceptual End-to-End Solution
 
 <Purpose>
-
- The Conceptual End-to-End Solution section defines the high-level architecture that addresses the business needs and capabilities outlined in previous sections. It presents a visual and narrative representation of the target state solution, illustrating how applications, capabilities, and systems interact across the enterprise. This section helps stakeholders understand the big picture before detailed designs are developed and supports alignment between technical delivery teams and business goals.
+The Conceptual End-to-End Solution section defines the high-level architecture that addresses the business needs and capabilities outlined in previous sections. It presents a visual and narrative representation of the target state solution, illustrating how applications, capabilities, and systems interact across the enterprise. This section helps stakeholders understand the big picture before detailed designs are developed and supports alignment between technical delivery teams and business goals.
 
 <Instructions>
-
 1. **Create High-Level Diagrams:**  
 Include architecture diagrams that depict the target conceptual solution. The diagram(s) should show major systems, platforms, integrations, user interaction points, and data flows. Focus on logical relationships and component roles—not implementation detail. Keep the level appropriate for executive and business stakeholder audiences while still informing technical planning.
 2. **Provide Diagram Descriptions:**  
@@ -629,7 +567,6 @@ For each diagram included, write a narrative that explains what the diagram show
 Align this section with related sections such as Business Processes, Actors, and Dependencies. Ensure terminology, system names, and roles are consistent.
 
 <Example>
-
 Conceptual End-to-End Solution:
 
 * **Diagram Included:** High-level architecture map showing:
@@ -725,26 +662,22 @@ flowchart TD
     class LegendReplat replatform;
 ```
 
-<References>
-
+<Prerequisites>
 * High-Level Architecture Diagrams (stored in EA repository or Solution Design docs)
 * Application Lifecycle Reports
 * Capability-to-System Traceability Matrix
 * Previous Solution Design Templates or Patterns
 
 <Standards>
-
 * **TOGAF 10 – Content Metamodel**
   🔗 [TOGAF Content Metamodel](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/content-metamodel.html)
 
 ### Other Architectural Options
 
 <Purpose>
-
 The Other Architectural Options section outlines alternative solution approaches that were considered during the architecture design process. This section documents the evaluation of different architectural paths and provides transparency into why certain options were not selected. Including this analysis helps stakeholders understand trade-offs, supports architectural governance, and ensures the chosen approach was based on a reasoned comparison of alternatives—not just assumed best practices or default patterns.
 
 <Instructions>
-
 1. **Identify Alternative Approaches:** List the architectural approaches, patterns, or platforms that were seriously considered but ultimately not selected. These could include variations in system integration patterns, infrastructure choices (e.g., cloud vs. on-premise), data management strategies, vendor solutions, or service orchestration models.
 2. **Describe Each Option:** For each alternative, provide a brief but clear description. Identify the core idea, the technologies involved, and how the option would have addressed the business and technical requirements.
 3. **Evaluate Strengths and Weaknesses:** For each option, highlight key advantages (e.g., lower cost, faster implementation, vendor alignment) and limitations (e.g., scalability issues, integration complexity, misalignment with roadmap). Include architectural trade-offs and constraints that influenced the decision.
@@ -752,7 +685,6 @@ The Other Architectural Options section outlines alternative solution approaches
 5. **Ensure Traceability and Transparency:** If applicable, cite reference materials, evaluation matrices, or meeting notes where the alternatives were discussed. The goal is to make the decision-making process auditable and repeatable.
 
 <Example>
-
 Other Architectural Options Considered:
 
 1. **Hybrid Cloud Architecture (Cloud for Front-End, On-Prem for Back-End):**
@@ -766,33 +698,28 @@ Other Architectural Options Considered:
    * _Weaknesses:_ Lower flexibility, lack of best-of-breed capabilities in certain domains, vendor lock-in.
    * _Reason Not Selected:_ The suite lacked maturity in several key capability areas needed by the business, and customization requirements would have undermined the advantages of the pre-integrated suite.
 
-<References>
-
+<Prerequisites>
 * Architecture Option Evaluations / Trade-Off Analyses
 * Decision Logs or Architectural Runway Docs
 * Vendor Proposals or RFP Evaluations
 * Meeting Notes from Architecture Working Group
 
 <Standards>
-
 * **TOGAF 10 – Architecture Development Phases B, C, D**
   🔗 [TOGAF 10: Architecture Development](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/index.html)
 
 ### Constraints
 
 <Purpose>
-
 The Constraints section identifies the limitations and restrictions that impact the architecture project. These constraints can be related to budget, time, resources, technology, and regulatory requirements. Understanding these constraints is essential for realistic planning and effective decision-making throughout the project lifecycle.
 
 <Instructions>
-
 1. **Identify Constraints:** Engage with stakeholders to gather information on the limitations affecting the project. Consider factors such as budget restrictions, timelines, resource availability, technological limitations, and regulatory requirements.
 2. **Analyze Impact:** Assess how each constraint influences the architecture. Determine the implications for design decisions, project scope, and resource allocation.
 3. **Document Constraints:** Clearly articulate each constraint, providing a detailed explanation of its significance and impact on the architecture. Use structured formats such as bullet points or tables for clarity.
 4. **Validate with Stakeholders:** Share the documented constraints with stakeholders for feedback. Ensure that all relevant limitations are accurately captured and understood.
 
 <Example>
-
 **Constraints:**
 
 1. **Budget Limitations:** The project budget is capped at $2 million, requiring careful prioritization of features and technologies.
@@ -801,15 +728,13 @@ The Constraints section identifies the limitations and restrictions that impact 
 4. **Technological Limitations:** Existing legacy systems must be integrated, posing challenges for compatibility and performance.
 5. **Regulatory Requirements:** Compliance with industry-specific regulations, such as GDPR, imposes constraints on data handling and security measures.
 
-<References>
-
+<Prerequisites>
 * Project Charter and Budget Constraints
 * Risk Register
 * Procurement and Vendor Management Docs
 * Compliance Checklists
 
 <Standards>
-
 * **PMBOK® Guide (Project Management Institute)**
   Categorizes constraints as any limiting factors that affect the execution of a project—typically scope, schedule, budget, resources, risk, and quality. These are documented in the Project Charter and Scope Statement.
   🔗 [PMI PMBOK Guide](https://www.pmi.org/pmbok-guide-standards/foundational/pmbok)
@@ -835,11 +760,9 @@ The Constraints section identifies the limitations and restrictions that impact 
 ### Dependencies
 
 <Purpose>
-
 The Dependencies section identifies external factors, systems, teams, or initiatives that the success of the solution architecture depends upon. Dependencies can include technology enablers, integration points, vendor deliverables, resource availability, or the outcomes of other projects. Capturing these dependencies ensures risks are surfaced early, timelines are coordinated, and critical assumptions are documented for proper planning and governance.
 
 <Instructions>
-
 1. **Identify All Relevant Dependencies:** List any external elements outside the immediate project team's direct control that the solution relies on. Examples include dependent system upgrades, data availability from other sources, third-party service delivery, enterprise platform readiness, regulatory approvals, or resource commitments from other departments.
 2. **Describe Each Dependency:** For each dependency, describe it in clear, non-technical language. Include what specifically is needed, when it is needed, and who owns it. Be specific enough that readers understand the nature of the reliance without needing further explanation.
 3. **Categorize Dependencies:** Group dependencies into logical categories, such as:
@@ -851,7 +774,6 @@ The Dependencies section identifies external factors, systems, teams, or initiat
 5. **Ensure Alignment and Monitoring:** Engage with owners of each dependency early and set up regular check-ins or monitoring processes. Include dependency tracking in project status updates and risk reviews.
 
 <Example>
-
 Dependencies:
 
 1. **Technical Dependency:**
@@ -871,15 +793,13 @@ Dependencies:
    * **Owner:** Data Platform Program Management
    * **Impact if Not Met:** Analytics capability would be delayed or require interim solution with reduced functionality.
 
-<References>
-
+<Prerequisites>
 * Dependency Logs (UMT360)
 * Integration Test Plans for As Is Components
 * Project Coordination Plans
 * Business Readiness Assessments
 
 <Standards>
-
 * **PMBOK® Guide (Project Management Institute)**
   Defines dependencies as logical relationships between tasks or deliverables, often documented using **Precedence Diagramming Method (PDM)** and represented as Finish-to-Start (FS), Start-to-Start (SS), etc. Also includes internal/external and mandatory/discretionary types.
   🔗 [PMBOK Guide – Dependencies](https://www.pmi.org/pmbok-guide-standards/foundational/pmbok)
@@ -905,18 +825,15 @@ Dependencies:
 ### Assumptions
 
 <Purpose>
-
 The Assumptions section outlines the foundational assumptions that underpin the architecture project. These assumptions are conditions believed to be true and necessary for the project's success. Clearly documenting assumptions helps manage risks and ensures all stakeholders have a shared understanding of the project's basis.
 
 <Instructions>
-
 1. **Identify Assumptions:** Engage with stakeholders to gather information on the key assumptions influencing the project. Consider factors such as market conditions, resource availability, technological capabilities, and organizational readiness.
 2. **Analyze Impact:** Assess how each assumption influences the architecture. Determine the implications for design decisions, project scope, and risk management.
 3. **Document Assumptions:** Clearly articulate each assumption, providing a detailed explanation of its significance and impact on the architecture. Use structured formats such as bullet points or tables for clarity.
 4. **Validate with Stakeholders:** Share the documented assumptions with stakeholders for feedback. Ensure that all relevant assumptions are accurately captured and understood.
 
 <Example>
-
 **Assumptions:**
 
 1. **Market Stability:** The market conditions will remain stable over the next five years, allowing for predictable growth and investment.
@@ -925,15 +842,13 @@ The Assumptions section outlines the foundational assumptions that underpin the 
 4. **Organizational Readiness:** The organization is prepared to adopt and support the new architecture, including necessary training and change management efforts.
 5. **Regulatory Environment:** No major changes in regulations that would impact the architecture are expected during the project timeline.
 
-<References>
-
+<Prerequisites>
 * Project Assumptions Log
 * Risk and Issue Registers
 * Requirements Traceability Matrix (RTM)
 * Pre-Design Architecture Briefs
 
 <Standards>
-
 * **PMBOK® Guide (Project Management Institute)**
   Defines assumptions as factors considered true, real, or certain without proof during planning. They are captured in the **Assumption Log**, used throughout planning and updated in risk assessments.
   🔗 [PMBOK Guide – Assumptions and Constraints](https://www.pmi.org/pmbok-guide-standards/foundational/pmbok)
@@ -956,11 +871,9 @@ The Assumptions section outlines the foundational assumptions that underpin the 
 ### Architectural Principles
 
 <Purpose>
-
 The Architectural Principles section outlines the core guidelines that shape and govern the design of the target architecture. These principles ensure that solution decisions align with broader enterprise goals and provide a consistent foundation for planning, execution, and future scalability. Architectural principles serve as a compass during trade-off discussions, solution evaluation, and design refinement, ensuring that the architecture remains coherent, sustainable, and strategically aligned over time.
 
 <Instructions>
-
 1. **Leverage Enterprise Architecture (EA) Standards:** Use the organization's formal **EA Vision, Mission, and Guiding Principles** as the primary source for selecting architectural principles. These documents establish the broader enterprise intent and should inform every architectural decision made in the project. (https://edisonintl.sharepoint.com/:p:/r/teams/itprocess/Guidelines/EA Vision - Mission - Guiding Principles.pptx?d=w22ad17c70a974813a15b6c74a2654bb7&csf=1&web=1&e=23Da8P)
 2. **Select Relevant Principles:** Identify the specific architectural principles from the enterprise library that are most applicable to the solution being designed. Focus on those principles that directly influence technology choice, integration design, security patterns, scalability, maintainability, or user experience.
 3. **Clearly Describe Each Principle:** For each principle included, provide a short but clear description. Explain what the principle means in the context of this solution and why it matters. Avoid simply copying the enterprise statement verbatim; tailor the explanation to the architecture’s needs.
@@ -969,7 +882,6 @@ The Architectural Principles section outlines the core guidelines that shape and
 6. **Ensure Completeness:** Address principles across the full solution landscape, including areas such as business alignment, technical excellence, data management, security, interoperability, and sustainability.
 
 <Example>
-
 Architectural Principles:
 
 1. **Standardization Over Customization:**
@@ -985,25 +897,21 @@ Architectural Principles:
    * _Description:_ Design solutions that treat data as a critical enterprise asset, ensuring it is accurate, accessible, and governed.
    * _Impact on Architecture:_ Inclusion of metadata tagging, data cataloging, and governance frameworks integrated with enterprise data lakes.
 
-<References>
-
+<Prerequisites>
 * EA Guiding Principles Presentation (internal deck or SharePoint link)
 * Architecture Review Templates
 * Architecture Governance Charter
 
 <Standards>
-
 * **TOGAF – Architecture Principles (Part III, Chapter 20)**
   🔗 [TOGAF 10: Architecture Principles](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/architecture-principles.html)
 
 ### Architectural Standards, Reference Models, Patterns, and Building Blocks
 
 <Purpose>
-
 The Architectural Standards, Reference Models, Patterns, and Building Blocks section describes the reusable guidance, frameworks, and components that inform and support the target architecture. This section ensures that solution designs align with recognized best practices, comply with internal and external standards, and make use of proven architectures wherever possible. Establishing a foundation of standards and patterns helps increase consistency, reduce risk, and improve maintainability across the enterprise.
 
 <Instructions>
-
 1. **Identify Relevant Standards:** Document the standards—both industry-wide (e.g., NIST, ISO, TOGAF) and internal to the organization—that are applicable to the solution architecture. Specify standards for areas such as security, data management, system integration, cloud adoption, application development, and infrastructure design.
 2. **List Applicable Reference Models:** Include any enterprise reference models or frameworks that apply to the solution, such as Information Architecture Models, Security Reference Architectures, Integration Frameworks, or Cloud Adoption Frameworks. Reference official model names or versions where possible.
 3. **Describe Architectural Patterns:** Identify and describe architectural patterns that should guide the solution design. Patterns might include Microservices Architecture, Event-Driven Architecture, Layered Architecture, API Gateway Patterns, or Domain-Driven Design. Explain why each pattern is appropriate and how it contributes to solving the business or technical challenges outlined earlier.
@@ -1012,7 +920,6 @@ The Architectural Standards, Reference Models, Patterns, and Building Blocks sec
 6. **Ensure Alignment and Validation:** Confirm that all listed standards and models align with enterprise strategy and current governance frameworks. Validate the selection with the Enterprise Architecture Team or Architecture Review Board if required.
 
 <Example>
-
 Architectural Standards, Reference Models, Patterns, and Building Blocks:
 
 * **Standards:**
@@ -1030,26 +937,22 @@ Architectural Standards, Reference Models, Patterns, and Building Blocks:
   * _Enterprise Service Bus (ESB):_ Must be used for all synchronous system-to-system messaging where real-time communication is required.
   * _Shared Analytics Platform (based on Azure Databricks):_ Analytics workloads must land in the shared platform to ensure standardization and scalability.
 
-<References>
-
+<Prerequisites>
 * EA Repository (Orbus, iServer)
 * Technology Standards Documents
 * Solution Architecture Templates
 * Integration Framework Documents
 
 <Standards>
-
 * **TOGAF – Architecture Repository (Part VI)**
   🔗 [TOGAF 10: Architecture Repository](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/architecture-repository.html)
 
 ### Architectural Component Types
 
 <Purpose>
-
 The Architectural Component Types section classifies the systems and sub-systems within the solution according to their primary purpose and interaction model. This classification helps frame integration strategies, manage complexity, and align expectations around system behavior. It also highlights areas where system goals may conflict—particularly when combining innovation-driven systems with record-keeping systems—and ensures the architecture accounts for these differences.
 
 <Instructions>
-
 1. **List Systems and Sub-Systems:** Identify all major systems or sub-systems that are part of the solution architecture. Include both newly introduced components and existing components impacted by the project.
 2. **Categorize Each System by Type:** For each system or sub-system, indicate which of the following architectural types it belongs to:
    * **System of Record:** Systems that serve as the authoritative source for business data (e.g., ERP, CRM, Financial Systems).
@@ -1063,7 +966,6 @@ The Architectural Component Types section classifies the systems and sub-systems
 6. **Use Structured Formats for Clarity:** Where useful, present the system listing and type classification in a structured format such as bullet points or a simple list. Tables can also be used for visual clarity but are not mandatory.
 
 <Example>
-
 Architectural Component Types:
 
 * **Customer Information System (CIS):**
@@ -1080,26 +982,22 @@ Architectural Component Types:
   * _Interaction Model:_ Uses machine learning to predict asset failures before they occur. This system drives innovation but creates integration friction when tied directly to the Asset Management System (a System of Record).
   * _Note:_ Integration between the AI Engine and Asset Management will occur through an Engagement Layer that decouples experimental models from authoritative records. A roadmap exists to mature the AI Engine into a validated System of Differentiation over the next 18 months.
 
-<References>
-
+<Prerequisites>
 * Application Portfolio Reports
 * Solution Blueprint Diagrams
 * Integration Strategy Documents
 * System Classification Reports
 
 <Standards>
-
 * **TOGAF Content Metamodel – Application Component Classification**
   🔗 [TOGAF 10 Content Metamodel](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/content-metamodel.html)
 
 ### Architectural Areas of Impact
 
 <Purpose>
-
 The Architectural Areas of Impact section identifies and measures how the proposed solution affects key elements of the existing and planned enterprise architecture. Capturing these impacts ensures that necessary governance reviews, approvals, and technical validations are performed before solution delivery begins. This section enables early risk detection, helps scope effort for integration and support, and informs downstream teams such as Domain Architects, IT Operations, Security, and Infrastructure Services.
 
 <Instructions>
-
 1. **Review Logical Architecture Elements:** Examine the Logical Architecture Elements provided for your solution domain. Determine which technology domains your solution will touch and how your solution will interact with existing architectural patterns, building blocks, or technology services.
 2. **Use the Impact Level Definitions:** Assess each area based on the following impact scale:
    * **Blank:** No impact.
@@ -1123,7 +1021,6 @@ The Architectural Areas of Impact section identifies and measures how the propos
 5. **Prepare for Review:** Depending on the impact level and domains affected, Domain Architecture and Security Architecture reviews may be triggered. Ensure proper routing for QDRT/SDC approvals if necessary.
 
 <Example>
-
 Architectural Areas of Impact:
 
 * **Financial Impact:** Low — Minimal OpEx increase for licensing new SaaS service.
@@ -1137,26 +1034,22 @@ Architectural Areas of Impact:
 * **Infrastructure Impact:** Medium — New hosting required on Azure IaaS; SCE network segmentation adjustment needed for secure app access.
 * **Security Impact:** High — Implementation of new identity federation services for mobile and SaaS applications, changes to existing access control models.
 
-<References>
-
+<Prerequisites>
 * Impact Assessment Worksheets
 * Logical Architecture Assessments
 * QDRT/SDC Templates
 * IT Operational Plan Alignment Documents
 
 <Standards>
-
 * **TOGAF – Architecture Development Phases**
   🔗 [TOGAF 10: Architecture Development](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-development/index.html)
 
 ### Architecture Vision Risk Assessment
 
 <Purpose>
-
 The Architecture Vision Risk Assessment identifies risks associated with the early architectural direction of the project. It ensures that major assumptions, gaps, and dependencies are captured and assessed before significant solution development begins. This process enables better decision-making, highlights risk exposure early, and ensures that risk mitigation strategies are incorporated into the architecture lifecycle. Proper risk identification at the vision stage improves alignment with enterprise risk tolerance and prepares the project for architectural governance review.
 
 <Instructions>
-
 1. **Use UMT360 if Available:**
    * If your project is tracked in **UMT360 (**[UMT360](https://edisonintl.sharepoint.com/sites/umt360/SitePages/Home.aspx)), complete the Architecture Vision Risk Assessment within the tool.
    * Navigate to the **Assessments** tab associated with your project.
@@ -1177,7 +1070,6 @@ The Architecture Vision Risk Assessment identifies risks associated with the ear
    * Ensure that the inserted content is labeled and referenced correctly for traceability during future project reviews or audits.
 
 <Example>
-
 Architecture Vision Risk Assessment:
 
 * **If Using UMT360:**
@@ -1191,15 +1083,13 @@ Architecture Vision Risk Assessment:
     * Identity Provider integration may not meet timeline for onboarding portal launch (medium risk).
     * API Gateway capacity limits require validation under projected peak loads (medium risk).
 
-<References>
-
+<Prerequisites>
 * UMT360 Risk Assessment Tab
 * Risk Assessment Spreadsheet (if UMT360 not used)
 * Architecture Governance Logs
 * Early-phase Tech/Platform Evaluation Notes
 
 <Standards>
-
 * **ISO/IEC 31000 – Risk Management**
   🔗 [ISO 31000 Overview](https://www.iso.org/iso-31000-risk-management.html)
 * **TOGAF – Risk Management Guidelines**
@@ -1208,11 +1098,9 @@ Architecture Vision Risk Assessment:
 ### Software Development Lifecycle Selection
 
 <Purpose>
-
 The Software Development Lifecycle (SDLC) Selection section defines the initial development methodology chosen to guide the solution delivery. Selecting an appropriate SDLC approach ensures that the solution development aligns with the maturity of the platform, complexity of the architecture, and readiness of requirements. This decision also provides a foundation for setting delivery expectations, managing risks, and organizing work across teams and subsystems.
 
 <Instructions>
-
 1. **Assess Platform Status:** Determine whether the solution is based on an existing, approved, and operational platform. If the platform is already mature and running, Agile-based approaches (e.g., Agile-DevOps, Agile-Scrum) may be used immediately. If the platform needs to be created, matured, or heavily customized as part of the project, a more structured SDLC such as Waterfall or Systems Engineering must be considered.
 2. **Evaluate Prior Design and Implementation Considerations:**  Review whether prior designs, architectural models, or decompositions exist. If the design is already well defined and stable, lighter SDLC models can be adopted. If architecture scoping is still immature, or if detailed technical decomposition is needed, a more formal SDLC is required.
 3. **Analyze Maturity of Architecture Scope:** Assess the overall maturity of the solution architecture. Immature or evolving architectures favor structured and phased approaches. Mature and stable architectures support more iterative, Agile methods.
@@ -1229,7 +1117,6 @@ The Software Development Lifecycle (SDLC) Selection section defines the initial 
 7. **Ensure Stakeholder Alignment:**  Share the SDLC selection with key stakeholders, including project sponsors, delivery managers, and technical leads, to ensure broad agreement on development expectations and sequencing.
 
 <Example>
-
 Software Development Lifecycle Selection:
 
 * **Overall Solution SDLC Approach:**
@@ -1240,15 +1127,13 @@ Software Development Lifecycle Selection:
   * _Analytics Data Lake Extension:_ Agile-Kanban, due to a continuous flow of backlog items without strict sprint boundaries.
   * _New Grid Asset Management Platform:_ Systems Engineering, as it involves complex integration of SCADA telemetry, IoT sensor ingestion, and regulatory compliance requirements, requiring detailed upfront decomposition and phased validation.
 
-<References>
-
+<Prerequisites>
 * Project Delivery Framework Selection Tool
 * Platform Maturity Reports
 * SDLC Guidance Documents
 * PMO SDLC Checklist
 
 <Standards>
-
 * **ISO/IEC/IEEE 12207:2017 – Software Lifecycle Processes**
   🔗 [ISO/IEC 12207](https://www.iso.org/standard/63712.html)
 * **Agile Manifesto**
@@ -1261,11 +1146,9 @@ Software Development Lifecycle Selection:
 ## End-to-End Solution
 
 <Purpose>
-
 The End-to-End Solution section provides a high-level description of how the proposed architecture solves the business problem identified earlier. It connects strategic drivers to practical outcomes by offering a conceptual solution overview that spans all architectural layers—from business motivation through application realization. This section ensures that the solution is anchored in business needs, shaped by guiding principles, and presented with a broad but coherent system view.
 
 <Instructions>
-
 1. **Describe the Solution Broadly:**  Summarize the overall solution approach in clear, plain language. Focus on how the architecture addresses the business problem and ties back to the key change drivers, goals, and outcomes described earlier. Keep the description big-picture but specific enough to show how different architecture layers come together to solve the problem.
 2. **Provide a Conceptual Solution Diagram:**  Include a conceptual architecture diagram that visually depicts the end-to-end solution. The diagram should show major components, flows between them, and the roles of key actors. It should be simple enough to be understood by business and technical audiences alike, without requiring deep technical expertise.
 3. **Include Motivational Layer Elements:**  Integrate elements from the **Motivational Layer** into your solution description. Be sure to address:
@@ -1287,7 +1170,6 @@ The End-to-End Solution section provides a high-level description of how the pro
 7. **Ensure Clear Cross-Layer Linkages:**  The narrative should make visible how motivations translate into strategy, strategy into business operations, and business operations into application architecture. Clear traceability across layers strengthens architectural coherence.
 
 <Example>
-
 End-to-End Solution:
 
 * **Solution Overview:**  The solution addresses the business need to streamline customer onboarding by introducing a unified digital experience platform integrated with backend CRM and billing systems. It simplifies user interactions, automates approval processes, and supports real-time reporting for business operations.
@@ -1369,26 +1251,22 @@ flowchart TD
     OutageMgmtSystem --> NotificationService
 ```
 
-<References>
-
+<Prerequisites>
 * Solution Architecture Document (SAD)
 * Business Capability-to-Application Mapping
 * Value Stream Maps
 * High-Level Solution Blueprints
 
 <Standards>
-
 * **TOGAF – Motivation and Strategy Layers**
   🔗 [TOGAF 10: Content Framework](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/index.html)
 
 ### Additional Context
 
 <Purpose>
-
 The Additional Context section provides supporting background information that helps readers fully understand the End-to-End Solution. It captures assumptions, architectural decisions, known risks, and environmental factors that may not be obvious in the diagrams or primary descriptions. Including this context improves transparency, sets expectations, and ensures that future readers, reviewers, and downstream teams can accurately interpret the intent behind the architectural design.
 
 <Instructions>
-
 1. **State Key Assumptions:** Identify any assumptions made during the solution design. This includes platform readiness, resource availability, organizational support, technology maturity, vendor commitments, or user adoption expectations.
 2. **Document Architectural Decisions:**  Summarize critical design choices made during solution development. Focus on decisions that shaped the architecture meaningfully, such as technology selection, major integrations, layering strategies, or trade-offs between agility and control.
 3. **Highlight Known Risks and Issues:**  List known risks, challenges, or unresolved concerns related to the end-to-end solution. Include risks tied to integration complexity, emerging technologies, regulatory changes, scalability limits, or potential stakeholder resistance.
@@ -1396,7 +1274,6 @@ The Additional Context section provides supporting background information that h
 5. **Keep the Focus Clear:**  This section should not repeat the solution description. Focus purely on clarifying the surrounding conditions and "what you should know" points that are essential for understanding and future decision-making.
 
 <Example>
-
 Additional Context:
 
 * **Assumptions:**
@@ -1418,14 +1295,12 @@ Additional Context:
   * New data residency regulations require all customer data for California residents to remain within the state, impacting cloud hosting decisions.
   * Corporate commitment to cloud-first strategy mandated preference for SaaS solutions where possible.
 
-<References>
-
+<Prerequisites>
 * Architecture Decision Records (ADR)
 * Meeting Notes from Architecture Review Boards
 * Integration Risk Logs
 * Compliance Mapping Documents
 
 <Standards>
-
 * **TOGAF – Architecture Vision, Architecture Development, and Governance Content**
   🔗 [TOGAF 10 Overview](https://pubs.opengroup.org/togaf-standard/enterprise-agile/overview.html)
