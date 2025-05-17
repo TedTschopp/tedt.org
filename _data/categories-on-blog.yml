@@ -10,6 +10,19 @@
 #   color-inside-hover: "#f8d7da"
 #   color-outside-hover: "#f5c6cb"
 #   image: "/img/categories/bestiary.webp"
+- category: Artificial Intelligence
+  title: "Artificial Intelligence"
+  subtitle: "Where Intelligence Becomes Imagination, and Imagination Shapes the Future"
+  description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
+  emoji: "🤖"
+  class-to-assign: "AI-Post"
+  Text-to-assign: ""
+  color-inside: "#f8d7da"
+  color-outside: "#f5c6cb"
+  color-inside-hover: "#f8d7da"
+  color-outside-hover: "#f5c6cb"
+  image: "/img/categories/artificial-intelligence.webp"
+
 - category: Bestiary
   title: "Bestiary"
   subtitle: "Creatures and Beasts from All Realms"
