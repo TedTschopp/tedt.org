@@ -21,6 +21,10 @@ author:
 
 bullets:
 
+categories:
+  - Artificial Intelligence
+  - Role Playing Games
+
 description:
 seo-description:
 

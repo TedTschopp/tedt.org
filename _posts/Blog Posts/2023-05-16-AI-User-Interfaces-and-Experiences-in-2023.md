@@ -34,6 +34,8 @@ seo-description:
 
 categories:
 - Computers
+- Artificial Intelligence
+
 tags:
 keywords:
 

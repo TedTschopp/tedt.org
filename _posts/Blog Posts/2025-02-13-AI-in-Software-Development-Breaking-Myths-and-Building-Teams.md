@@ -33,6 +33,8 @@ categories:
     - Philosophy
     - Projects
     - Science
+    - Artificial Intelligence
+
 
 tags: AI in Software Development, GitHub Copilot, Low-Code vs. Pro Dev, Software Teams, AI Collaboration, Technology Leadership
 keywords: AI in coding, GitHub Copilot impact, Low-code vs pro-code, AI in software teams, AI myths in tech, AI and collaboration

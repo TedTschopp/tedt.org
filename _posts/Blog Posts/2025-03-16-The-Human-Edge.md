@@ -33,6 +33,8 @@ categories:
     - "Opinion"
     - "Personal Writing"
     - "Philosophy"
+    - "Artificial Intelligence"
+
 
 tags: AI, Automation, Healthcare, Employment, Innovation, Technology
 keywords: AI, employment, healthcare, artificial intelligence, innovation, automation

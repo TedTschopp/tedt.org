@@ -32,6 +32,7 @@ categories:
     - Religion
     - Opinion
     - Personal Writing
+    - Artificial Intelligence
 
 tags: 
     - AZR
