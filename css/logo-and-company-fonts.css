@@ -1,3 +1,21 @@
+.ai-post {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #5a1a1a;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+  }
+.ai-post:hover {
+  background-color: #f5c6cb;
+  border-color: #f8d7da;
+}
+  
+
+
 .Movies-Post {
     font-family: "Limelight", "Times New Roman", Times, serif;
 }
