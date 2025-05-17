@@ -15,7 +15,6 @@ body:
       label: Type
       description: Select the type of UX issue.
       options:
-        - Bug
         - Enhancement
         - Feature Request
         - Other
