@@ -1,0 +1,105 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Rendering Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .category-description ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+    .category-description li {
+      margin-bottom: 5px;
+    }
+    .category-description p {
+      margin-bottom: 15px;
+    }
+    .test-case {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Markdown Rendering Test</h1>
+  
+  <div class="test-case">
+    <h2>Test 1: Standard Markdown</h2>
+    <div class="category-description">
+      {{ "This is **bold** text and *italic* text.
+      
+      ## Heading 2
+      
+      * List item 1
+      * List item 2
+      * List item 3
+      
+      1. Ordered item 1
+      2. Ordered item 2
+      
+      > This is a blockquote.
+      " | markdownify }}
+    </div>
+  </div>
+  
+  <div class="test-case">
+    <h2>Test 2: AI Category Description</h2>
+    <div class="category-description">
+      {{ "Explore the frontier where technology meets human imagination. In this section, 
+      we dive into the transformative world of Artificial Intelligence—from machine learning 
+      and large language models to real-world applications in business, energy, and everyday life. 
+      Whether you're an enterprise leader, curious innovator, or thoughtful skeptic, our AI content 
+      is designed to challenge assumptions, spark ideas, and help you stay ahead in an accelerating digital era.
+      
+      Popular topics include:
+      
+      * Generative AI tools & frameworks
+      * AI strategy for enterprises
+      * Ethics, safety, and governance in AI
+      * Automation trends across industries
+      * AI's impact on the workforce and society
+      
+      Stay informed. Think critically. Build wisely." | markdownify }}
+    </div>
+  </div>
+  
+  <div class="test-case">
+    <h2>Test 3: Raw HTML Comparison</h2>
+    <div>
+      <p>This is <strong>bold</strong> text and <em>italic</em> text.</p>
+      
+      <h2>Heading 2</h2>
+      
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+      
+      <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+      </ol>
+      
+      <blockquote>
+        <p>This is a blockquote.</p>
+      </blockquote>
+    </div>
+  </div>
+</body>
+</html>
