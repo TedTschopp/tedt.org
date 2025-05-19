@@ -296,7 +296,8 @@
                     /* Style the carousel indicators */
                     .carousel-indicators {
                       position: absolute;
-                      bottom: 10px;
+                      top: 10px;
+                      bottom: auto;
                       margin-bottom: 0;
                       z-index: 5;
                     }
@@ -318,13 +319,6 @@
                       opacity: 1;
                     }
                   </style>
-                  <!-- Add carousel indicators -->
-                  <div class="carousel-indicators">
-                    {% assign categories = site.data['categories-on-blog'] %}
-                    {% for category in categories %}
-                      <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.index}}"></button>
-                    {% endfor %}
-                  </div>
                   <div class="carousel-inner">
                     {% assign categories = site.data['categories-on-blog'] %}
                     {% for category in categories %}
@@ -334,10 +328,18 @@
                       {% assign category_data_img = category.image %}
                       <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
                         <div class="card-group">
-                          <div class="card">
+                          <div class="card">                              
                             <div class="position-relative">
                               <div class="ratio ratio-3x1">
                                 <img src="{{ site.siteurl }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
+                              </div>
+                              
+                              <!-- Carousel indicators -->
+                              <div class="carousel-indicators">
+                                {% assign categories = site.data['categories-on-blog'] %}
+                                {% for category in categories %}
+                                  <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.index}}"></button>
+                                {% endfor %}
                               </div>
 
                               <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
