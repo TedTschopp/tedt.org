@@ -51,6 +51,24 @@ function addAnchorTagsToParagraphs(html) {
     closingAnchor.href = `#`+firstFiveLetters;
     closingAnchor.textContent = `¶`;
     closingAnchor.classList.add("Winerlink");
+    
+    // Check if pilcrow should be visible based on cookie
+    try {
+      const getCookieValue = function(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
+      };
+      
+      // Apply initial visibility state based on the cookie
+      const pilcrowVisible = getCookieValue('pilcrowVisible') !== 'false'; // Default to visible if cookie not set
+      closingAnchor.style.display = pilcrowVisible ? 'inline' : 'none';
+    } catch (e) {
+      // If there's an error, default to showing the pilcrows
+      console.warn("Error reading pilcrow visibility cookie:", e);
+    }
+    
     paragraph.appendChild(closingAnchor);
   });
 

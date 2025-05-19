@@ -7,6 +7,72 @@
     <!-- Toggle DarkMode-->
     {% include js-toggle-theme.html %}
 
+    <!-- Toggle Pilcrow (paragraph markers) -->
+    <script>
+      // Function to get a cookie value by name
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
+      }
+
+      // Global variable to track current pilcrow visibility state
+      let pilcrowVisible = getCookie('pilcrowVisible') !== 'false'; // Default to visible if cookie not set
+      
+      // Function to toggle visibility of Winerlinks
+      const togglePilcrow = () => {
+        // Toggle the visibility state
+        pilcrowVisible = !pilcrowVisible;
+        
+        // Apply the visibility state to all Winerlinks
+        document.querySelectorAll('.Winerlink').forEach(link => {
+          link.style.display = pilcrowVisible ? 'inline' : 'none';
+        });
+        
+        // Save the state to a cookie
+        document.cookie = `pilcrowVisible=${pilcrowVisible}; path=/; max-age=31536000`; // expires in 1 year
+      }
+      
+      // Function to apply the pilcrow visibility state
+      const applyPilcrowState = () => {
+        // Use the global pilcrowVisible value
+        document.querySelectorAll('.Winerlink').forEach(link => {
+          link.style.display = pilcrowVisible ? 'inline' : 'none';
+        });
+      }
+
+      // Create a MutationObserver to watch for when Winerlinks are added to the DOM
+      const setupPilcrowObserver = () => {
+        // Create an observer instance
+        const observer = new MutationObserver((mutations) => {
+          let winerlinksAdded = false;
+          
+          // Check if Winerlinks were added in any of the mutations
+          mutations.forEach(mutation => {
+            if (mutation.addedNodes.length) {
+              const addedWinerlinks = document.querySelectorAll('.Winerlink');
+              if (addedWinerlinks.length > 0) {
+                winerlinksAdded = true;
+              }
+            }
+          });
+          
+          // If Winerlinks were added, apply the visibility state
+          if (winerlinksAdded) {
+            applyPilcrowState();
+          }
+        });
+        
+        // Start observing the document with the configured parameters
+        observer.observe(document.body, { childList: true, subtree: true });
+      };
+      
+      // Initialize when the DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        setupPilcrowObserver();
+      });
+    </script>
 
     <!-- Bottom of the Body include core JavaScript -->
     {% assign this-url = site.siteurl | append: page.url %}
