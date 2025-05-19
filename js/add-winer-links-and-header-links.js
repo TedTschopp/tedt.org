@@ -13,7 +13,19 @@ $(document).ready(function() {
 });
 
 function addLinksToHeaders(elementId) {
-  var htmlContent = '<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end">&#x2191;</a>';
+  // Function to get a cookie value by name
+  const getCookieValue = function(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+    return null;
+  };
+  
+  // Get the visibility state from cookie - default to hidden if not set
+  const tocArrowsVisible = getCookieValue('tocArrowsVisible') === 'true';
+  
+  // Create the back-to-TOC link with appropriate display style
+  const htmlContent = `<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end" style="display: ${tocArrowsVisible ? 'inline-block' : 'none'};">&#x2191;</a>`;
 
   // Select all headline tags (h1 to h6) within the specified element
   $(`#${elementId} :header`).each(function() {
@@ -62,11 +74,12 @@ function addAnchorTagsToParagraphs(html) {
       };
       
       // Apply initial visibility state based on the cookie
-      const pilcrowVisible = getCookieValue('pilcrowVisible') !== 'false'; // Default to visible if cookie not set
+      const pilcrowVisible = getCookieValue('pilcrowVisible') === 'true'; // Default to hidden if cookie not set
       closingAnchor.style.display = pilcrowVisible ? 'inline' : 'none';
     } catch (e) {
-      // If there's an error, default to showing the pilcrows
+      // If there's an error, default to hiding the pilcrows
       console.warn("Error reading pilcrow visibility cookie:", e);
+      closingAnchor.style.display = 'none';
     }
     
     paragraph.appendChild(closingAnchor);

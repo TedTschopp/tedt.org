@@ -18,7 +18,7 @@
       }
 
       // Global variable to track current pilcrow visibility state
-      let pilcrowVisible = getCookie('pilcrowVisible') !== 'false'; // Default to visible if cookie not set
+      let pilcrowVisible = getCookie('pilcrowVisible') === 'true'; // Default to hidden if cookie not set
       
       // Function to toggle visibility of Winerlinks
       const togglePilcrow = () => {
@@ -71,6 +71,53 @@
       // Initialize when the DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
         setupPilcrowObserver();
+      });
+    </script>
+
+    <!-- Toggle Back to Table of Contents arrows -->
+    <script>
+      // Global variable to track current back-to-TOC arrows visibility state
+      let tocArrowsVisible = getCookie('tocArrowsVisible') === 'true'; // Default to hidden if cookie not set
+      
+      // Function to toggle visibility of back-to-table-of-contents arrows
+      const toggleBackToTableofContents = () => {
+        // Toggle the visibility state
+        tocArrowsVisible = !tocArrowsVisible;
+        
+        // Apply the visibility state to all back-to-TOC arrows
+        applyTocArrowsState();
+        
+        // Save the state to a cookie
+        document.cookie = `tocArrowsVisible=${tocArrowsVisible}; path=/; max-age=31536000`; // expires in 1 year
+      }
+      
+      // Function to apply the TOC arrows visibility state
+      const applyTocArrowsState = () => {
+        // Find all header links that point to the table of contents
+        document.querySelectorAll('h1 a[href="#Top-of-Table-of-Contents"], h2 a[href="#Top-of-Table-of-Contents"], h3 a[href="#Top-of-Table-of-Contents"], h4 a[href="#Top-of-Table-of-Contents"], h5 a[href="#Top-of-Table-of-Contents"], h6 a[href="#Top-of-Table-of-Contents"]').forEach(link => {
+          link.style.display = tocArrowsVisible ? 'inline-block' : 'none';
+        });
+      }
+      
+      // Create a MutationObserver to watch for when header TOC arrows are added to the DOM
+      const setupTocArrowsObserver = () => {
+        // Create an observer instance
+        const observer = new MutationObserver(() => {
+          // Apply current visibility state to any TOC arrows found
+          applyTocArrowsState();
+        });
+        
+        // Start observing the document with the configured parameters
+        observer.observe(document.body, { childList: true, subtree: true });
+      };
+      
+      // Initialize when the DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        // Apply initial visibility state
+        applyTocArrowsState();
+        
+        // Set up observer for dynamically added TOC arrows
+        setupTocArrowsObserver();
       });
     </script>
 
