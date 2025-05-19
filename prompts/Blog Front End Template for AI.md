@@ -1,5 +1,5 @@
 
-This is my AI Template!
+This is my Blog Template for AI
 
 
 ---
@@ -32,7 +32,7 @@ description: ""
 seo-description: ""
 
 categories: 
-    - {"Bestiary" | "Books" | "Communications" | "Computers" | "Dungeon Crawl Classics" | "Dungeons & Dragons" | "ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore" | "Gamma World" | "GURPS" | "Home" | "Maps" | "Middle-eartH" | "Mobile" | "Monsters" | "Movies" | "Mutant Crawl Classics" | "Opinion" | "Personal Writing " | "Philosophy" | "Projects " | "Quotes" | "Religion" | "Reprint" | "Role Playing Games" | "Science" | "Shadowrun" | "The Märchen Engine"} # Pick alll that apply from this list 
+    - {"AI" | "Bestiary" | "Books" | "Communications" | "Computers" | "Dungeon Crawl Classics" | "Dungeons & Dragons" | "ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore" | "Gamma World" | "GURPS" | "Home" | "Maps" | "Middle-eartH" | "Mobile" | "Monsters" | "Movies" | "Mutant Crawl Classics" | "Opinion" | "Personal Writing " | "Philosophy" | "Projects " | "Quotes" | "Religion" | "Reprint" | "Role Playing Games" | "Science" | "Shadowrun" | "The Märchen Engine"} # Pick alll that apply from this list 
 
 tags: 
 keywords: 
