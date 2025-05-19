@@ -293,6 +293,7 @@
                     }
                   
                     /* Style the carousel indicators */
+                    /*
                     .carousel-indicators {
                       position: absolute;
                       top: 10px;
@@ -317,6 +318,7 @@
                       background-color: rgba(255, 255, 255, 0.9);
                       opacity: 1;
                     }
+                    */
                   </style>
                   <div class="carousel-inner">
                     {% assign categories = site.data['categories-on-blog'] %}
@@ -334,12 +336,19 @@
                               </div>
                               
                               <!-- Carousel indicators -->
-                              <div class="carousel-indicators">
-                                {% assign categories = site.data['categories-on-blog'] %}
-                                {% for category in categories %}
-                                  <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.index}}"></button>
-                                {% endfor %}
-                              </div>
+                              <div class="carousel-action-bar">
+                                <button type="button" class="btn btn-icon carousel-control-play-pause pause" data-bs-target="#carouselExamplePause"
+                                  data-bs-play-text="Play Carousel" data-bs-pause-text="Pause Carousel" title="Pause Carousel">
+                                  <span class="visually-hidden">Pause Carousel</span>
+                                </button>
+
+                                <div class="carousel-indicators">
+                                  {% assign categories = site.data['categories-on-blog'] %}
+                                  {% for category in categories %}
+                                    <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.index}}"></button>
+                                  {% endfor %}
+                                </div>
+                               </div>
 
                               <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
