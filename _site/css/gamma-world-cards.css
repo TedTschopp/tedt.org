@@ -1,0 +1,267 @@
+/* Gamma World Cards CSS - Updated for semantic HTML and Bootstrap */
+body {
+    background-color: black;
+    color: #000;
+}
+
+a {
+    color: #000055;
+}
+
+/* Tech-V Elements */
+.tech-v h1 {
+    font-family: 'IrwinAllen';
+    line-height: 1.2;
+}
+
+.tech-v h2 {
+    font-family: 'IrwinAllen';
+}
+
+.tech-v h3 {
+    font-family: 'lowwe';
+}
+
+.tech-v p b {
+    font-family: 'Checkbook';
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.tech-v p.description {
+    color: inherit;
+}
+
+.tech-v p.background {
+    color: inherit;
+}
+
+.tech-v p.rules {
+    color: inherit;
+    font-style: italic;
+}
+
+/* Paper margins and content area - updated for semantic structure */
+#papermargin_left,
+#papermargin_right {
+    background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-margin-dark.webp);
+    background-repeat: repeat-y;
+    min-height: 100%;
+    width: 36px !important; /* Updated to match actual image width */
+    min-width: 36px;
+    flex: 0 0 36px !important; /* Force flex width to match the image width */
+    padding: 0 !important; /* Remove padding to ensure exact width */
+}
+
+/* Override Bootstrap grid for the main content area to accommodate fixed-width asides */
+.row > #paper_printarea.col-lg-10 {
+    flex: 1 1 auto !important; /* Allow flex-grow to fill remaining space */
+    max-width: calc(100% - 72px); /* Account for both 36px margins */
+}
+
+@media (max-width: 991.98px) {
+    .row > #paper_printarea.col-lg-10 {
+        max-width: 100%; /* Full width on mobile when margins are hidden */
+    }
+}
+
+#paper_printarea {
+    font-size: 1em;
+    text-align: left;
+    font-family: lp1_regular, "Trebuchet MS", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    background-image: url(https://tedt.org/RPG/MCC-GW/media/paper-dark.webp);
+    background-repeat: repeat;
+    text-shadow: 0 0 1px rgba(115, 115, 121, 0.6), 0 0 4px rgba(115, 115, 121, 0.3);
+}
+
+/* Main heading styling */
+#paper_printarea h1.MCC {
+    margin-bottom: 1.5rem;
+}
+
+/* Additional elements for creature details */
+#paper_printarea section {
+    margin-bottom: 1rem;
+}
+
+#paper_printarea dl.row dt {
+    font-weight: 600;
+}
+
+/* Background effects */
+#gw--gradient {
+    position: fixed;
+    width: 100vw;
+    background: #061c17;
+    background: radial-gradient(#163c33,#061c17);
+    z-index: 0;
+}
+
+#gw--scanLines {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    pointer-events: none;
+}
+
+#gw--scanLines:after,
+#gw--scanLines:before {
+    display: block;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+}
+
+#gw--scanLines:after {
+    z-index: 2147483648;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-repeating-linear-gradient(top,transparent 0,transparent 4px,rgba(6,28,23,.2) 4px,rgba(6,28,23,.2) 6px);
+    -webkit-background-size: 100% 6px;
+    background-image: -moz-repeating-linear-gradient(top,transparent 0,transparent 4px,rgba(6,28,23,.2) 4px,rgba(6,28,23,.2) 6px);
+    -moz-background-size: 100% 6px;
+    background-image: repeating-linear-gradient(top,transparent 0,transparent 4px,rgba(6,28,23,.2) 4px,rgba(6,28,23,.2) 6px);
+    background-size: 100% 6px;
+}
+
+#gw--gradient,
+#gw--scanLines {
+    height: 100vh;
+}
+
+@media (max-device-aspect-ratio: 3 / 4) {
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 1.45297);
+    }
+}
+
+@media (max-device-aspect-ratio: 2 / 3) {
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 1.635);
+    }
+}
+
+@media (max-device-aspect-ratio: 10 / 16) {
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 2.244);
+    }
+}
+
+@media (max-device-aspect-ratio: 9 / 16) {
+    #gw--gradient,
+    #gw--scanLines {
+        height:calc(100vw * 2.23802);
+    }
+}
+
+/* Typography */
+.LineType {
+    font-family: lp1_regular, "Trebuchet MS", sans-serif;
+}
+
+/* ASCII art container */
+pre#ascii-container-image { 
+    font: bold 8px/5px monospace; 
+    color: #000; 
+    clear: left; 
+}
+
+/* Prevent ASCII art from being clipped */
+#ascii-container-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section[aria-label="Creature Overview"] figure {
+    overflow: visible;
+}
+
+section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+    overflow: visible;
+}
+
+/* Responsive image figure */
+figure {
+    margin: 0;
+    position: relative;
+}
+
+/* Fix for image sizing and display */
+section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top instead of center */
+    height: auto;
+}
+
+section[aria-label="Creature Overview"] figure {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+section[aria-label="Creature Overview"] figure img {
+    max-width: 100%;
+    height: auto;
+    max-height: none; /* Remove any height constraint */
+    object-fit: contain;
+}
+
+/* Adjust layout for better image display on medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section[aria-label="Creature Overview"] .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section[aria-label="Creature Overview"] .col-12.col-lg-4 {
+        width: 100%;
+        max-width: 500px; /* Reasonable max width for mid-sized images */
+        margin: 0 auto 1.5rem auto;
+    }
+    
+    section[aria-label="Creature Overview"] .col-12.col-lg-8 {
+        width: 100%;
+    }
+}
+
+/* Navigation styles */
+nav .btn-outline-primary {
+    margin: 0.5rem;
+}
+
+/* Additional creature section styles */
+section[aria-label="Additional Creatures"] h2.MCC {
+    margin-top: 1.5rem;
+}
+
+section[aria-label="Additional Creatures"] h3 {
+    margin-top: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.25rem;
+}
+
+section[aria-label="Creature Overview"] figure img {
+    max-width: 100%;
+    height: auto;
+    max-height: none; /* Remove any height constraint */
+    object-fit: contain;
+}

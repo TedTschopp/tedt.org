@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tedtschopp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tedt.org
+  * I am tedtschopp (https://keybase.io/tedtschopp) on keybase.
+  * I have a public key ASBwVc3l3puiNCpM_P_aTfS9mYJsgStt_KEM6VnwACmhywo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ec415380f0332b992fb43dacba05606dcb0f1365376967c1b2d66170daf2d23d0a",
+      "host": "keybase.io",
+      "kid": "01207055cde5de9ba2342a4cfcffda4df4bd99826c812b6dfca10ce959f00029a1cb0a",
+      "uid": "22c08f5ad57e72c0e3db9cd5a2cd6c19",
+      "username": "tedtschopp"
+    },
+    "merkle_root": {
+      "ctime": 1526432358,
+      "hash": "b4113e0532413669af07e0b6b249e70c461f832ad09e7d8f4094abd9b9abf66efa74e0e55cfa4cda7b6294fb7573548dbd8e29953dda99da0751f3321f76810c",
+      "hash_meta": "aeb7341f314dde4f809de5bf4feb6c30510dfb1b7f725bde9e5b3a0159d266ee",
+      "seqno": 2748788
+    },
+    "service": {
+      "entropy": "zGWDU8VniqFjwr27GYQHXHKn",
+      "hostname": "www.tedt.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1526432380,
+  "expire_in": 504576000,
+  "prev": "5e22afdd87fb9163e4bbde514ae5f33f43a90f4d20319ff2c81b93fb2db181e0",
+  "seqno": 43,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgcFXN5d6bojQqTPz/2k30vZmCbIErbfyhDOlZ8AApocsKp3BheWxvYWTESpcCK8QgXiKv3Yf7kWPku95RSuXzP0OpD00gMZ/yyBuT+y2xgeDEIDBIEZNQYYrYrUdNmzzWCIlrA1KSb5APSZ+XPnqOeFk9AgHCo3NpZ8RAcGVElhsjxdwKYgZhTVKUER4Ix7NTbLMaG2MC8AIaAIbGF8DTOuVF274xRenNR05jxAsTUKFmUoBv8gUCMve1DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMVMNjBH5U57W4cFeyZkwnXZ6qu9CYWzc5j706/vk7QSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tedtschopp
+
+==================================================================

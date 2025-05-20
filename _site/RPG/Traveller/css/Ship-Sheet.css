@@ -1,0 +1,30 @@
+/*
+ * Ship-Sheet.css
+ * Inherits look and feel from Character-Sheet.css for Traveller Ship Sheet
+ * You can add ship-specific overrides below if needed
+ */
+@import url('Character-Sheet.css');
+
+/* Add ship-specific styles below if needed */
+.ship-sheet {
+  /* Use the same max-width, background, and padding as character-sheet */
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: var(--traveller-content-bg);
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Example: ship-specific section header */
+.ship-sheet .section-header {
+  background-color: var(--traveller-primary);
+  color: var(--traveller-text-on-dark);
+  padding: 8px 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family: var(--font-headlines);
+  letter-spacing: 0.5px;
+  border-left: 4px solid var(--traveller-tertiary);
+}
