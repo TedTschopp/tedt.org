@@ -1,0 +1,15 @@
+/* The link is a Dave Winer Link */
+.Winerlink {
+    cursor: pointer;
+    display: inline;
+    height: auto;
+    line-height: 30px;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: auto;
+    float: right
+}
+.WinerAnchor {
+    /* So as to ensure that its not at the top of the page where menu bars might be on top of it*/
+    scroll-margin-top: 100px;
+}

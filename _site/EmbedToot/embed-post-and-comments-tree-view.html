@@ -1,0 +1,607 @@
+<html>
+<head>
+<title>Collapsable Toot Tree View of Comments Embed</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<!-- created by Patrick Curry 2022 -->
+</head>
+<style>
+<!--
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.template {
+  display: none;
+}
+.author {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 2px;
+  grid-column-gap: 10px;
+}
+.authorReply {
+  padding-top: 10px;
+}
+.authorLink {
+  text-decoration: none;
+}
+.avatar {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+.content {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.displayName {
+  color: black;
+  font-size: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  grid-column: 2;
+  grid-row: 1;
+}
+.displayName:hover {
+  text-decoration: underline;
+}
+.displayNameLink {
+  color: black;
+}
+.userName {
+  font-size: 80%;
+  text-decoration: none;
+  grid-column: 2;
+  grid-row: 2;
+}
+.createdAt {
+  grid-column: 2;
+  grid-row: 3;
+}
+.avatarImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: gray;
+}
+.avatarImgReply {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: gray;
+}
+.createdAtLink {
+  font-size: 80%;
+  text-decoration: none;
+}
+.createdAtLink:hover {
+  text-decoration: underline;
+}
+/* .tootReply { */
+.displayTootAndReplies {
+  margin-left: 5px;
+  border-left: 1px solid blue;
+  padding-left: 5px;
+}
+.hideReplies {
+  font-size: 50%;
+}
+.showReplies {
+  font-size: 50%;
+  margin-top: 2px;
+}
+.showTootTemplate {
+  display: none;
+}
+
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+    var originalAuthorId;
+    var originalAuthorUsername;
+    var originalAuthorUsernameWithInstance;
+    var previousAuthorId;
+    var lastUrl;
+    var lastRepliesUrl;
+    var tootReplyHtml;
+
+    function loadTootThread(url, element) {
+    var xmlhttp = new XMLHttpRequest();
+    if (url.indexOf("/api/v") == -1 && url.indexOf("/m/") == -1) {
+        if (url.indexOf("http") != 0) {
+        // console.log("This doesn't look like a valid URL: " + url);
+        url = "https://" + url;
+        }
+        var splitUrl = url.split("/");
+        // url = splitUrl[0] + '//' + splitUrl[2] + '/b api/v1/statuses/';
+        url = splitUrl[0] + "//" + splitUrl[2] + "/api/v1/statuses/";
+        // support different URL syntaxes for links to toots
+        if (splitUrl[3] && splitUrl[3] == "users") {
+        url += splitUrl[6];
+        } else if (splitUrl[3] && splitUrl[3] == "web") {
+        url += splitUrl[5];
+        } else {
+        url += splitUrl[4];
+        }
+        if (splitUrl[3] == "notes") {
+        // Shuttlecraft
+        url = splitUrl[0] + "//" + splitUrl[2] + "/m/" + splitUrl[4];
+        }
+        lastUrl = url;
+        // console.log(url);
+    }
+
+    xmlhttp.onreadystatechange = function () {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        displayToot(myArr, element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader(
+        "Accept",
+        'application/ld+json; profile="https://www.w3.org/ns/activitystreams"'
+    );
+    xmlhttp.send();
+    }
+
+    function loadTootReplies(arr, element) {
+    var xmlhttp = new XMLHttpRequest();
+
+    // TODO: figure out the URL
+    // var url = 'https://mastodon.social/api/v1/statuses/108195817029536656/context';
+    var url = lastUrl + "/context";
+    if (lastUrl.indexOf("/m/") != -1) {
+        url = lastUrl + "/replies";
+    }
+    if (lastRepliesUrl == url) {
+        // TODO: this is hinky when considering multiple different ways you can request original toot URL
+        // return;
+    }
+    lastRepliesUrl = url;
+
+    xmlhttp.onreadystatechange = function () {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        displayTootReplies(myArr, element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader(
+        "Accept",
+        'application/ld+json; profile="https://www.w3.org/ns/activitystreams"'
+    );
+    xmlhttp.send();
+    }
+
+    var topOfThreadId = -1;
+    var firstPost;
+    // TODO: display or link to attachments
+    function displayToot(arr, element) {
+    // var displayJson = JSON.stringify(arr, null, 2);
+    // handle missing / alternate variables
+    if (!arr.account) {
+        // handling data likely from Shuttlecraft
+        var display_name = arr.attributedTo.split("/");
+        display_name = display_name[display_name.length - 1];
+        arr.account = {
+        url: arr.attributedTo,
+        avatar: "",
+        display_name: display_name,
+        username: display_name,
+        };
+    }
+    if (!arr.created_at) {
+        arr.created_at = arr.published;
+    }
+    // figure out multiple authors in comments thread
+    var instanceName = arr.url
+        .replaceAll("http://", "")
+        .replaceAll("https://", "")
+        .split("/")[0];
+    originalAuthorId = arr.account.id;
+    previousAuthorId = arr.account.id;
+    originalAuthorUsername = arr.account.username;
+    originalAuthorUsernameWithInstance =
+        "@" + originalAuthorUsername + "@" + instanceName;
+    topOfThreadId = arr.id;
+    var displayToot;
+    if (typeof element === "string") {
+        displayToot = document.getElementById(element);
+    }
+    // backup the reply template, then remove old replies
+    if (!tootReplyHtml) {
+        tootReplyHtml =
+        document.getElementById("displayTootTemplate").outerHTML + "";
+    }
+    // actually display content
+    document.getElementsByClassName("tootReplies")[0].innerHTML = "";
+    function ge(cn) {
+        return displayToot.getElementsByClassName(cn)[0];
+    }
+    // ge('authorLink').href = arr.account.url;
+    displayToot.id = arr.id; // new for trees
+    ge("avatarImg").src = "";
+    ge("avatarImg").src = arr.account.avatar;
+    ge("displayNameSpan").innerHTML = arr.account.display_name;
+    ge("userNameSpan").innerHTML = "@" + arr.account.username;
+    ge("instanceNameSpan").innerHTML = "@" + instanceName;
+    ge("content").innerHTML = formatToot(arr.content);
+    ge("createdAtLink").innerHTML = arr.created_at;
+    ge("createdAtLink").href = arr.url;
+    var links = document.getElementsByClassName("authorLink");
+    for (var i = 0; i < links.length; i++) {
+        links[i].href = arr.account.url;
+    }
+    firstPost = arr;
+    loadTootReplies(arr, document.getElementsByClassName("tootReplies")[0]);
+    // console.log('Displayed original toot');
+    }
+
+    var combineRepliesFromSameAuthor = false; // changed for /tree -- different from /thread
+    var indentCountDefault = 1;
+
+    var baseElement;
+    var indentCount = indentCountDefault;
+    var previousTootId = -1;
+    var previousParentTootId = -1;
+
+    function displayTootReplies(threadArr, element) {
+    // console.log(threadArr);
+    // var displayJson = JSON.stringify(arr, null, 2);
+    var arr;
+    //console.log(baseElement);
+    // for Shuttlecraft
+    if (!threadArr.descendants) {
+        threadArr = { descendants: threadArr };
+    }
+
+    function compareTootDates(a, b) {
+        if (a.created_at < b.created_at) {
+        return -1;
+        }
+        if (a.created_at > b.created_at) {
+        return 1;
+        }
+        return 0;
+    }
+
+    function sortRepliesByDate(arr) {
+        var returnArr = [];
+        for (var i = 0; i < arr.length; i++) {
+        returnArr[i] = arr[i];
+        }
+        // first sort by data may be redundant
+        returnArr.sort(compareTootDates);
+        return returnArr;
+    }
+
+    threadArr.descendants = sortRepliesByDate(threadArr.descendants); // sortRepliesIntoTree(threadArr.descendants);
+
+    threadArr = threadArr.descendants;
+    for (var i = 0; i < threadArr.length; i++) {
+        displayTootReply(threadArr[i], element);
+    }
+
+    // console.log('Displayed ' + threadArr.descendants.length + ' replies');
+    }
+
+    var stackObjects = [];
+    var stackIndexes = [];
+    var stackElements = [];
+    var currentIndex = 0;
+
+    var bulkTootReplyHtml = "";
+    var lastPostElem;
+    var skippedFirst = false;
+
+    function displayTootReply(arr, element) {
+    if (typeof element === "string") {
+        baseElement = document.getElementById(element);
+    } else {
+        baseElement = element;
+    }
+
+    // handle missing / alternate variables
+    if (!arr.account) {
+        // handling data likely from Shuttlecraft
+        display_name = arr.actor.name;
+        arr.account = {
+        url: arr.actor.url,
+        avatar: arr.actor.image.url,
+        display_name: arr.actor.name,
+        username: arr.actor.preferredUsername,
+        };
+    }
+    if (!arr.created_at) {
+        arr.created_at = arr.published;
+    }
+    if (!arr.url) {
+        arr.url = arr.note.url;
+    }
+    if (!arr.content) {
+        arr.content = arr.note.content;
+    }
+
+    var instanceName = arr.url
+        .replaceAll("http://", "")
+        .replaceAll("https://", "")
+        .split("/")[0];
+    var displayToot = document.createElement("div");
+    displayToot.innerHTML = tootReplyHtml;
+    function ge(cn) {
+        return displayToot.getElementsByClassName(cn)[0];
+    }
+    var contentObj = ge("content");
+    contentObj.innerHTML = formatToot(arr.content);
+    if (contentObj.innerText.indexOf(originalAuthorUsernameWithInstance) == 0) {
+        // console.log("Post starts with original author's username");
+        contentObj.getElementsByTagName("a")[0].style.display = "none";
+    }
+    // console.log(displayToot);
+    baseElement.appendChild(displayToot);
+    // when someone else comments and jumps into the thread, show their info
+    if (!(combineRepliesFromSameAuthor && arr.account.id == previousAuthorId)) {
+        // TODO: promising but needs refinement
+        if (arr.in_reply_to_id == topOfThreadId) {
+        indentCount == indentCountDefault;
+        }
+        if (arr.in_reply_to_id == previousTootId) {
+        indentCount++;
+        } else if (arr.in_reply_to_id == previousParentTootId) {
+        // do nothing
+        } else {
+        // OLD -- indentCount--;
+        indentCount = getIndentCount(arr.in_reply_to_id);
+        }
+        if (indentCount <= indentCountDefault) {
+        indentCount = indentCountDefault;
+        }
+
+        // displayToot.style.marginLeft = '10px'; // don't need to increase over time -- (indentCount*5) + 'px'; // TODO: magic number
+        displayToot.id = arr.id; // new for trees
+        displayToot.className = "displayTootAndReplies";
+        ge("author").style.display = "grid";
+        ge("authorLink").href = arr.account.url;
+        ge("avatarImg").src = "";
+        ge("avatarImg").src = arr.account.avatar;
+        ge("displayNameSpan").innerHTML = arr.account.display_name;
+        ge("userNameSpan").innerHTML = "@" + arr.account.username;
+        ge("instanceNameSpan").innerHTML = "@" + instanceName;
+        ge("createdAtLink").innerHTML = arr.created_at;
+        ge("createdAtLink").href = "#url=" + arr.url; // blorg
+        var links = displayToot.getElementsByClassName("authorLink");
+        for (var n = 0; n < links.length; n++) {
+        links[n].href = arr.account.url;
+        }
+    } else {
+        ge("author").style.display = "none";
+    }
+    previousAuthorId = arr.account.id;
+    previousTootId = arr.id;
+    previousParentTootId = arr.in_reply_to_id;
+    setIndentCount(arr.in_reply_to_id, indentCount);
+    bulkTootReplyHtml += displayToot.innerHTML;
+    displayToot.style.display = "block";
+
+    // Use HTML hierarchy to show embedded replies
+    if (arr.in_reply_to_id) {
+        var potentialParentElement = document.getElementById(arr.in_reply_to_id);
+        if (potentialParentElement) {
+        //blorg
+        potentialParentElement.appendChild(displayToot);
+        }
+    }
+
+    return displayToot;
+    }
+
+    var indentCountPerId = [];
+    function setIndentCount(id, count) {
+    indentCountPerId[id] = count;
+    }
+    function getIndentCount(id) {
+    if (indentCountPerId[id]) {
+        return indentCountPerId[id];
+    }
+    return indentCountDefault; // TODO: could be -1 or some error code?
+    }
+
+    function formatToot(html) {
+    if (html.indexOf("<p>") != 0) {
+        html = "<p>" + html + "</p>";
+    }
+    html = html.replaceAll("<br>", "</p><p>");
+    return html;
+    }
+
+    function getHashVariable(variable) {
+    query = window.location.hash.substr(1);
+    vars = query.split("&");
+    for (i = 0; i < vars.length; i++) {
+        pair = vars[i].split("=");
+        if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+        }
+    }
+    return "";
+    }
+
+    // Examples:
+    // loadToot('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot'); // Load via user-face URL
+    // loadToot('https://mastodon.social/api/v1/statuses/108195817029536656','displayToot'); // Load via API URL
+
+    function processHash() {
+    var url = getHashVariable("url");
+    if (url != "" && url != lastUrl) {
+        lastUrl = url;
+        loadTootThread(url, "displayToot");
+    } else {
+        loadTootThread(
+            "https://tschopp.net/@Ted/111796991086841890",
+            "displayToot"
+        );
+    }
+    }
+
+    window.onload = processHash;
+    window.onhashchange = function () {
+    location.reload();
+    };
+
+    function clickOnReply(element) {
+    //console.log(element);
+    if (
+        element.parentElement &&
+        element.parentElement.parentElement &&
+        element.parentElement.parentElement.parentElement &&
+        element.parentElement.parentElement.parentElement.parentElement &&
+        true
+    ) {
+        var elem = element.parentElement.parentElement.parentElement.parentElement;
+        elem.style.height = "14px"; // 'none';
+        elem.style.overflow = "hidden";
+        elem.style.backgroundColor = "#eeeeee";
+        var showHtml = document.getElementById("showTootTemplate").innerHTML;
+        //console.log(showHtml);
+        elem.innerHTML = showHtml + elem.innerHTML;
+        return false;
+    }
+    }
+
+    function clickOnReplyShow(element) {
+    //console.log(element);
+    if (element.parentElement && element.parentElement.parentElement && true) {
+        var elem = element.parentElement.parentElement;
+        elem.style.height = "";
+        elem.style.overflow = "show";
+        elem.style.backgroundColor = "";
+        elem.getElementsByClassName("showReplies")[0].outerHTML = "";
+        return false;
+    }
+    }
+
+//-->
+</script>
+<body>
+    <div class="tootThread" id="displayTootThread">
+        <div class="toot" id="displayToot">
+            <div class="author">
+                <div class="avatar">
+                    <a href="" class="authorLink" target="_blank">
+                        <img src="" class="avatarImg" alt="" border="0" />
+                    </a>
+                </div>
+                <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
+                <div class="userName">
+                    <a href="" class="authorLink" target="_blank">
+                        <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+                    </a>
+                </div>
+                <div class="createdAt">
+                    <a href="" target="_blank" class="createdAtLink"></a>
+                </div>
+            </div>
+            <div class="content"></div>
+            <div class="bodyText"></div>
+        </div>
+        <div class="tootReplies">
+            <div class="tootReply" id="displayTootTemplate">
+                <div class="author authorReply">
+                    <div class="avatar">
+                        <a href="" class="authorLink" target="_blank">
+                            <img src="" class="avatarImg avatarImgReply" alt="" border="0" />
+                        </a>
+                    </div>
+                    <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
+                    <div class="userName">
+                        <a href="" class="authorLink" target="_blank">
+                            <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+                        </a>
+                    </div>
+                    <div class="createdAt">
+                        <a href="" X-target="_blank" class="createdAtLink"></a>
+            <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;">Hide Post</a></span>
+                    </div>
+                </div>
+                <div class="content"></div>
+            <div class="tootSubReplies"></div>
+            </div>
+        </div>
+    <div id="showTootTemplate" class="showTootTemplate">
+        <div class="showReplies" >
+            <a href="" onclick="clickOnReplyShow(this);return false;">Show Post</a>
+        </div>
+    </div>
+    </div>
+
+<!--
+<section id="comments-test" class="article-content">
+  <div class="row g-0 p-0 m-0 d-flex align-items-start">
+    <div class="col-1 pt-2 d-flex align-items-center justify-content-center" style="max-width: 4.5em;">
+      <a title="View profile at @TedT@twit.social" rel="external nofollow" href="https://twit.social/@TedT" class="avatar-link">
+        <img class="m-1" style="height: 2.5em;" alt="@TedT@twit.social avatar" src="https://cdn.masto.host/tschoppnet/cache/accounts/avatars/109/798/021/090/912/767/original/316bb8601ff162ca.webp" class="avatar">
+      </a>
+    </div>
+    <div class="col-11">
+      <div class="card p-0 m-0">
+          <div class="card-header ">
+              <div class="card-body p-0 m-0">
+                <p class="text-start p-0 m-0 ">Ted Tschopp</p>
+                <p class="text-start p-0 m-0 ">@Tedt@Twit.Social</p>
+              </div>
+          </div>
+          <div class="card-body p-0 m-0">
+            <div class="row w-100 p-0 m-0 ">
+                <p class="card-title p-3 m-0 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia lectus eu feugiat feugiat. Donec molestie neque eget erat bibendum fermentum. Nunc luctus id sem in ullamcorper. Phasellus sagittis turpis eget orci finibus tempus. Nam arcu ligula, accumsan eget euismod sit amet, laoreet vel risus. Suspendisse malesuada magna sed porta luctus. Proin lorem nunc, tincidunt sed vehicula sit amet, placerat eu magna. Donec enim enim, semper non arcu quis, auctor sodales ipsum. Pellentesque habitant morbi sit.</p>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <div class="row w-100">
+              <div class="col-3 text-center d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-reply"></i>
+              </div>
+              <div class="col-3 text-center d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-retweet"></i>
+              </div>
+              <div class="col-3 text-center d-flex align-items-center justify-content-center">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="col-3 text-center d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+
+</body>
+</html>
