@@ -633,7 +633,7 @@ Assessing availability ensures that business processes remain accessible and ope
 | Low                | 5–20%                   | 2                          | Unlikely; occurs less than once/year to more than once every 10 years |
 | Very Low           | 0–4%                    | 0                          | Highly unlikely; occurs less than once every 10 years                 |
 
-4. **Risk Impact:** Evaluate the potential impact of each risk using the following scale:
+5. **Risk Impact:** Evaluate the potential impact of each risk using the following scale:
 
 | Qualitative Values | Quantitative Values (%) | Quantitative Values (1-10) | Description                                                                                                                                                                                                      |
 | ------------------ | ----------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -643,7 +643,7 @@ Assessing availability ensures that business processes remain accessible and ope
 | Low                | 5–20                    | 2                          | Limited adverse effects; minor operational degradation, minimal safety incidents, limited regulatory and reputational impacts, minor financial consequences, few legal implications                              |
 | Very Low           | 0–4                     | 0                          | Negligible adverse effects; minimal operational interruptions, negligible safety, regulatory, reputational, financial, and legal impacts                                                                         |
 
-5. **Risk Exposure:** Assess the risk level combining likelihood and impact using this matrix:
+6. **Risk Exposure:** Assess the risk level combining likelihood and impact using this matrix:
 
 |                      | Very Low Impact | Low Impact    | Moderate Impact | High Impact   | Very High Impact |
 | -------------------- | --------------- | ------------- | --------------- | ------------- | ---------------- |
@@ -653,13 +653,13 @@ Assessing availability ensures that business processes remain accessible and ope
 | Low Likelihood       | Very Low Risk   | Low Risk      | Low Risk        | Low Risk      | Moderate Risk    |
 | Very Low Likelihood  | Very Low Risk   | Very Low Risk | Very Low Risk   | Low Risk      | Low Risk         |
 
-6. **Risk Mitigation:** Describe steps or approaches the solution will adopt to mitigate the risk in the form of formal requirements language.
+7. **Risk Mitigation:** Describe steps or approaches the solution will adopt to mitigate the risk in the form of formal requirements language.
 
-7. **Risk Trigger / Monitoring Threshold:** Specify mechanisms or indicators within the solution for triggering risk alerts and monitoring in the form of formal requirements language.
+8. **Risk Trigger / Monitoring Threshold:** Specify mechanisms or indicators within the solution for triggering risk alerts and monitoring in the form of formal requirements language.
 
-8. **Risk Ownership / Source:** Identify the team or individual accountable for managing each risk.
+9. **Risk Ownership / Source:** Identify the team or individual accountable for managing each risk.
 
-9. **Risk Review / Audit:** Document who identified the risk, audit/review frequency, and details involved in conducting risk reviews in the form of formal requirements language.
+10. **Risk Review / Audit:** Document who identified the risk, audit/review frequency, and details involved in conducting risk reviews in the form of formal requirements language.
 </Instructions>
 <Example>
 **1. Data Breach Risk**
@@ -735,7 +735,7 @@ This section identifies all system actors in scope for the target architecture�
 <Instructions>
 1. **List Human Actors:** Begin by identifying all human users or participants in the architecture. Include both internal and external roles, using examples and categories provided below. Be specific about job titles, responsibilities, and whether the actor belongs to SCE, an affiliate, or an external party.
 2. **Provide Organizational Context:** For each human actor, indicate their organizational affiliation—department, business unit, affiliate, or vendor. This helps map ownership and determine which teams will be affected or responsible for solution support.
-3. **List Non-Human Actors:** Capture any system, computer, or non-human actors relevant to the architecture. Reference or describe these in Section 3, as applicable.
+3. **List Non-Human Actors:** Capture any system, computer, or non-human actors relevant to the architecture.
 4. **Ensure Role Clarity:** Clarify whether each actor is expected to use the system directly, provide data, receive outputs, support the platform, or govern outcomes.
 5. **Use Structured Formats:** Use bullet points, tables, or a role matrix for clarity. Group actors by type or function.
 6. **Validate with Stakeholders:** Confirm this list with business and technical leads to ensure completeness and accuracy. Include emerging roles where relevant.
@@ -774,4 +774,72 @@ Actors in Scope:
 * Process Documentation (e.g., swimlane diagrams)
 * **TOGAF Content Framework – Business Architecture Metamodel**
   🔗 [TOGAF 10: Business Layer Concepts](https://pubs.opengroup.org/togaf-standard/enterprise-agile/architecture-content/content-metamodel.html)
+</Standards>
+
+### Actors with Applicable Roles & Responsibilities
+
+<Purpose>  
+This section estimates and documents the number of individuals—both business and IT actors—who will directly or indirectly interact with each process of the the proposed IT solution. Capturing the scale of user engagement helps determine infrastructure requirements, user experience design, security and access management strategies, and long-term scalability planning. The projection should reflect anticipated growth over a five-year horizon, aligning with the project's capitalization period.
+</Purpose>
+<Instructions>  
+0. Identify all the processes in this solution.  Then for each process do the following.
+1. Identify all categories of users, including both business and IT actors, who will require access to or interact with the solution.  
+2. Estimate the total number of users at the point of solution maturity (typically five years post-implementation).  
+3. Express this number in base-10 logarithmic format:  
+   - Example: 10 users = log(10) = **1**, 1,000 users = log(1,000) = **3**, 10 million users = log(10,000,000) = **7**  
+4. Clearly differentiate between internal users (employees, contractors) and external users (customers, partners, regulators).  
+5. Highlight user growth assumptions and key drivers influencing adoption.  
+6. Validate this projection with input from Business, IT, and Capacity Planning stakeholders.
+</Instructions>
+<Example>  
+**User Category:** Internal Customer Service Representatives  
+* **Current Estimate (Year 1):** ~120 users  
+* **Five-Year Projection:** 250 users  
+* **Log(Number of Actors):** log(250) ≈ **2.4**
+</Example>
+
+### Experience Level of Actors
+
+<Purpose>  
+This section evaluates and documents the collective experience level of the actors who will interact with or be impacted by the IT solution. Understanding actor experience is essential to ensure proper change management, design intuitive user experiences, determine training needs, and gauge potential adoption challenges. This insight helps inform planning across implementation, support, and ongoing operations.
+</Purpose>
+<Instructions>  
+1. Identify key categories of actors (e.g., business users, IT staff, customer service reps, external partners).  
+2. Assess and document the average experience level for each category using the provided qualitative and quantitative scale.  
+3. Consider both formal education and practical hands-on experience relevant to the business process or role.  
+4. Highlight how experience levels may impact adoption, training, and system usability.  
+5. Use this information to recommend training, support, or transition strategies if needed.  
+6. Validate actor experience estimates with input from functional managers or HR where appropriate.
+</Instructions>
+<Example>  
+**Actor Group:** Customer Service Representatives  
+* **Experience Level:** Moderate  
+* **Quantitative Score:** 5 (21–79)  
+* **Description:** Most representatives have 3–5 years of on-the-job experience handling customer interactions and using legacy CRM tools. Limited exposure to digital or AI-enabled platforms suggests a need for robust onboarding and training support.
+
+
+Actor Group: IT System Administrators
+* Experience Level: Very Experienced
+* Quantitative Score: 10 (96–100)
+* Description: This group includes senior technical staff with over 15 years of experience managing enterprise systems and integration platforms. They are likely to serve as internal champions during technical rollout and provide key architectural feedback.
+
+Actor Group: External Partners (Third-Party Field Technicians)
+* Experience Level: Low
+* Quantitative Score: 2 (5–20)
+* Description: Technicians are generally new to the system and processes introduced by the solution. Early pilot programs and job aids will be critical to minimize disruption and ensure adoption.
+</Example>
+<Standards>  
+* Experience levels must be assessed using a consistent rubric across all actor groups.  
+* Ratings must use the following scale:
+
+Qualitative Values	Quantitative Values	Description
+Very Experienced	10 (96–100)	Considered world-class experts in the process or system domain
+Experienced	8 (80–95)	Advanced credentials or decades of relevant professional experience
+Moderate	5 (21–79)	Professional background with solid operational familiarity
+Low	2 (5–20)	Some applicable experience but lacking full operational depth
+Very Low	0 (0–4)	No meaningful experience in the domain; significant onboarding or enablement required
+
+* Align this section with organizational change management (OCM) strategies and workforce enablement planning.
+* 	Include this data in user readiness assessments and transition risk evaluations.
+* 	Where possible, leverage HR or workforce development data to substantiate estimates.
 </Standards>
