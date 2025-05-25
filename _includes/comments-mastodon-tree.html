@@ -1,5 +1,68 @@
 
 {% if page.mastodon-post-id != null or page.mastodon-post-id != empty %}
+    <!-- Mastodon Interaction Button Styles -->
+    <style>
+        /* Mastodon interaction button styling */
+        .show-replies-btn, .hide-replies-btn, .reply-btn, .boost-btn, .favorite-btn, .bookmark-btn {
+            transition: all 0.2s ease-in-out;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .show-replies-btn:hover, .hide-replies-btn:hover, .reply-btn:hover, 
+        .boost-btn:hover, .favorite-btn:hover, .bookmark-btn:hover {
+            background-color: rgba(0, 123, 255, 0.1);
+            transform: scale(1.1);
+        }
+
+        .show-replies-btn.active, .hide-replies-btn.active {
+            background-color: rgba(23, 162, 184, 0.2);
+        }
+
+        .reply-btn.active {
+            background-color: rgba(40, 167, 69, 0.2);
+        }
+
+        .boost-btn.active {
+            background-color: rgba(255, 193, 7, 0.2);
+        }
+
+        .favorite-btn.active {
+            background-color: rgba(220, 53, 69, 0.2);
+        }
+
+        .bookmark-btn.active {
+            background-color: rgba(23, 162, 184, 0.2);
+        }
+
+        /* Button feedback animations */
+        .btn-primary { background-color: #007bff !important; }
+        .btn-success { background-color: #28a745 !important; }
+        .btn-info { background-color: #17a2b8 !important; }
+        .btn-warning { background-color: #ffc107 !important; }
+        .btn-danger { background-color: #dc3545 !important; }
+        .btn-secondary { background-color: #6c757d !important; }
+
+        /* Accessibility improvements */
+        button[data-action]:focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+
+        /* Hide/show replies animation */
+        .tootReplies, .tootSubReplies {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .tootReplies[style*="display: none"], .tootSubReplies[style*="display: none"] {
+            opacity: 0;
+        }
+    </style>
+
     <section id="comments" class="article-content">
         <h2 id="Comments-Header">Comments</h2>
         <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{site.mastodon_comments.host}}/@{{.site.mastodon_comments.username }}/{{page.mastodon-post-id}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
@@ -45,28 +108,64 @@
                     <div class="row w-100 p-0 m-0 attachments">
                     </div>
                 </div>
-                <div class="card-footer text-muted">
-                    <div class="row w-100">
+                <footer class="card-footer text-muted" role="contentinfo">
+                    <nav class="row w-100" role="navigation" aria-label="Post interactions">
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-eye"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 show-replies-btn" 
+                                    aria-label="Show replies" 
+                                    data-action="show-replies"
+                                    data-post-id="">
+                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-reply"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 reply-btn" 
+                                    aria-label="Reply to post" 
+                                    data-action="reply"
+                                    data-post-url="">
+                                <i class="fa-solid fa-reply" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-retweet"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 boost-btn" 
+                                    aria-label="Boost post" 
+                                    data-action="boost"
+                                    data-post-url="">
+                                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-regular fa-heart"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 favorite-btn" 
+                                    aria-label="Favorite post" 
+                                    data-action="favorite"
+                                    data-post-url="">
+                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-bookmark"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 bookmark-btn" 
+                                    aria-label="Bookmark post" 
+                                    data-action="bookmark"
+                                    data-post-url="">
+                                <i class="fa-solid fa-bookmark" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-eye-slash"></i>
+                            <button type="button" 
+                                    class="btn btn-link p-0 border-0 hide-replies-btn" 
+                                    aria-label="Hide replies" 
+                                    data-action="hide-replies"
+                                    data-post-id="">
+                                <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
+                            </button>
                         </div>
-                    </div>
-                </div>
+                    </nav>
+                </footer>
                 <div class="card-body p-0 m-0">
                     <div class="row w-100 p-0 m-0 tootReplies">
                         <div class="row g-0 p-0 m-0 d-flex align-items-start tootReply" id="displayTootTemplate">
@@ -98,28 +197,64 @@
                                     <div class="row w-100 p-0 m-0 attachments">
                                     </div>
                                 </div>
-                                <div class="card-footer text-muted">
-                                    <div class="row w-100">
+                                <footer class="card-footer text-muted" role="contentinfo">
+                                    <nav class="row w-100" role="navigation" aria-label="Reply interactions">
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <span class="hideReplies"><a href="" onclick="clickOnReply(this);return false;"><i class="fa-solid fa-eye"></i></a></span>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 show-replies-btn" 
+                                                    aria-label="Show replies" 
+                                                    data-action="show-replies"
+                                                    data-post-id="">
+                                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                            </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <i class="fa-solid fa-reply"></i>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 reply-btn" 
+                                                    aria-label="Reply to post" 
+                                                    data-action="reply"
+                                                    data-post-url="">
+                                                <i class="fa-solid fa-reply" aria-hidden="true"></i>
+                                            </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <i class="fa-solid fa-retweet"></i>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 boost-btn" 
+                                                    aria-label="Boost post" 
+                                                    data-action="boost"
+                                                    data-post-url="">
+                                                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                                            </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <i class="fa-regular fa-heart"></i>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 favorite-btn" 
+                                                    aria-label="Favorite post" 
+                                                    data-action="favorite"
+                                                    data-post-url="">
+                                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                                            </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <i class="fa-solid fa-bookmark"></i>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 bookmark-btn" 
+                                                    aria-label="Bookmark post" 
+                                                    data-action="bookmark"
+                                                    data-post-url="">
+                                                <i class="fa-solid fa-bookmark" aria-hidden="true"></i>
+                                            </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
-                                            <i class="fa-solid fa-eye-slash"></i>
+                                            <button type="button" 
+                                                    class="btn btn-link p-0 border-0 hide-replies-btn" 
+                                                    aria-label="Hide replies" 
+                                                    data-action="hide-replies"
+                                                    data-post-id="">
+                                                <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
+                                            </button>
                                         </div>
-                                    </div>
-                                </div>
+                                    </nav>
+                                </footer>
                                 <div class="card-body p-0 m-0">
                                     <div class="row w-100 p-0 m-0 tootSubReplies">
                                         <!-- insert nested card.-->
@@ -133,8 +268,307 @@
         </div>
     </section>
     <script>
-        //I think this is ready for testing, however I still need to wire it into the displayToot function.  
-        //I also need to update the createCarousel function to use the new design.
+        /**
+         * MastodonInteractions class handles all interaction functionality for Mastodon posts
+         * including show/hide replies, reply, boost, favorite, and bookmark actions.
+         */
+        class MastodonInteractions {
+            constructor() {
+                this.hiddenReplies = new Set();
+                this.favoriteStates = new Map();
+                this.bookmarkStates = new Map();
+                this.boostStates = new Map();
+                this.replyStates = new Map();
+                this.setupEventListeners();
+            }
+
+            /**
+             * Sets up event listeners for all interaction buttons
+             */
+            setupEventListeners() {
+                // Use event delegation for dynamically created content
+                document.addEventListener('click', (event) => {
+                    const button = event.target.closest('button[data-action]');
+                    if (!button) return;
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const action = button.getAttribute('data-action');
+                    const postId = button.getAttribute('data-post-id');
+                    const postUrl = button.getAttribute('data-post-url');
+
+                    switch (action) {
+                        case 'show-replies':
+                            this.handleShowReplies(button, postId);
+                            break;
+                        case 'hide-replies':
+                            this.handleHideReplies(button, postId);
+                            break;
+                        case 'reply':
+                            this.handleReply(button, postUrl);
+                            break;
+                        case 'boost':
+                            this.handleBoost(button, postUrl, postId);
+                            break;
+                        case 'favorite':
+                            this.handleFavorite(button, postUrl, postId);
+                            break;
+                        case 'bookmark':
+                            this.handleBookmark(button, postUrl, postId);
+                            break;
+                    }
+                });
+            }
+
+            /**
+             * Handles showing replies for a post
+             */
+            handleShowReplies(button, postId) {
+                if (!postId) return;
+
+                const postElement = document.getElementById(postId);
+                if (!postElement) return;
+
+                const repliesContainer = postElement.querySelector('.tootReplies, .tootSubReplies');
+                if (repliesContainer) {
+                    repliesContainer.style.display = 'block';
+                    this.hiddenReplies.delete(postId);
+                    
+                    // Update button states
+                    this.updateReplyButtonStates(postElement, true);
+                }
+
+                // Add visual feedback
+                this.addButtonFeedback(button, 'success');
+            }
+
+            /**
+             * Handles hiding replies for a post
+             */
+            handleHideReplies(button, postId) {
+                if (!postId) return;
+
+                const postElement = document.getElementById(postId);
+                if (!postElement) return;
+
+                const repliesContainer = postElement.querySelector('.tootReplies, .tootSubReplies');
+                if (repliesContainer) {
+                    repliesContainer.style.display = 'none';
+                    this.hiddenReplies.add(postId);
+                    
+                    // Update button states
+                    this.updateReplyButtonStates(postElement, false);
+                }
+
+                // Add visual feedback
+                this.addButtonFeedback(button, 'info');
+            }
+
+            /**
+             * Updates the visibility state of show/hide reply buttons
+             */
+            updateReplyButtonStates(postElement, repliesVisible) {
+                const showBtn = postElement.querySelector('.show-replies-btn');
+                const hideBtn = postElement.querySelector('.hide-replies-btn');
+
+                if (showBtn && hideBtn) {
+                    if (repliesVisible) {
+                        showBtn.style.opacity = '0.5';
+                        hideBtn.style.opacity = '1';
+                        showBtn.setAttribute('aria-pressed', 'true');
+                        hideBtn.setAttribute('aria-pressed', 'false');
+                    } else {
+                        showBtn.style.opacity = '1';
+                        hideBtn.style.opacity = '0.5';
+                        showBtn.setAttribute('aria-pressed', 'false');
+                        hideBtn.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            /**
+             * Handles reply action - opens post in new tab for reply
+             */
+            handleReply(button, postUrl) {
+                if (!postUrl) return;
+
+                // Open the post in a new tab for replying
+                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                
+                // Add visual feedback and track state
+                this.addButtonFeedback(button, 'primary');
+                const postId = this.getPostIdFromButton(button);
+                this.replyStates.set(postId, true);
+                this.updateButtonState(button, true);
+            }
+
+            /**
+             * Handles boost action - opens post in new tab for boosting
+             */
+            handleBoost(button, postUrl, postId) {
+                if (!postUrl) return;
+
+                // Toggle boost state
+                const currentState = this.boostStates.get(postId) || false;
+                const newState = !currentState;
+                this.boostStates.set(postId, newState);
+
+                // Open the post in a new tab for boosting
+                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                
+                // Update button appearance
+                this.updateButtonState(button, newState);
+                this.addButtonFeedback(button, newState ? 'warning' : 'secondary');
+            }
+
+            /**
+             * Handles favorite action - opens post in new tab for favoriting
+             */
+            handleFavorite(button, postUrl, postId) {
+                if (!postUrl) return;
+
+                // Toggle favorite state
+                const currentState = this.favoriteStates.get(postId) || false;
+                const newState = !currentState;
+                this.favoriteStates.set(postId, newState);
+
+                // Open the post in a new tab for favoriting
+                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                
+                // Update button appearance and icon
+                this.updateButtonState(button, newState);
+                this.updateFavoriteIcon(button, newState);
+                this.addButtonFeedback(button, newState ? 'danger' : 'secondary');
+            }
+
+            /**
+             * Handles bookmark action - opens post in new tab for bookmarking
+             */
+            handleBookmark(button, postUrl, postId) {
+                if (!postUrl) return;
+
+                // Toggle bookmark state
+                const currentState = this.bookmarkStates.get(postId) || false;
+                const newState = !currentState;
+                this.bookmarkStates.set(postId, newState);
+
+                // Open the post in a new tab for bookmarking
+                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                
+                // Update button appearance
+                this.updateButtonState(button, newState);
+                this.addButtonFeedback(button, newState ? 'info' : 'secondary');
+            }
+
+            /**
+             * Updates button visual state based on active/inactive status
+             */
+            updateButtonState(button, isActive) {
+                if (isActive) {
+                    button.classList.add('active');
+                    button.style.opacity = '1';
+                    button.setAttribute('aria-pressed', 'true');
+                } else {
+                    button.classList.remove('active');
+                    button.style.opacity = '0.7';
+                    button.setAttribute('aria-pressed', 'false');
+                }
+            }
+
+            /**
+             * Updates favorite button icon between filled and regular heart
+             */
+            updateFavoriteIcon(button, isFavorited) {
+                const icon = button.querySelector('i');
+                if (icon) {
+                    if (isFavorited) {
+                        icon.className = 'fa-solid fa-heart';
+                        icon.style.color = '#dc3545'; // Bootstrap danger color
+                    } else {
+                        icon.className = 'fa-regular fa-heart';
+                        icon.style.color = '';
+                    }
+                }
+            }
+
+            /**
+             * Adds temporary visual feedback to button
+             */
+            addButtonFeedback(button, type) {
+                const originalClass = button.className;
+                button.classList.add('btn-' + type);
+                
+                setTimeout(() => {
+                    button.className = originalClass;
+                }, 200);
+            }
+
+            /**
+             * Extracts post ID from button's closest post container
+             */
+            getPostIdFromButton(button) {
+                const postContainer = button.closest('[id]');
+                return postContainer ? postContainer.id : null;
+            }
+
+            /**
+             * Initializes buttons for a newly created post element
+             * Called from displayToot and displayTootReply functions
+             */
+            initializePostButtons(postElement, postData) {
+                if (!postElement || !postData) return;
+
+                const postId = postData.id;
+                const postUrl = postData.url;
+
+                // Set data attributes for all buttons
+                const buttons = postElement.querySelectorAll('button[data-action]');
+                buttons.forEach(button => {
+                    const action = button.getAttribute('data-action');
+                    
+                    // Set post-specific data attributes
+                    if (action === 'show-replies' || action === 'hide-replies') {
+                        button.setAttribute('data-post-id', postId);
+                    } else {
+                        button.setAttribute('data-post-url', postUrl);
+                        button.setAttribute('data-post-id', postId);
+                    }
+
+                    // Initialize button states
+                    this.initializeButtonState(button, action, postId);
+                });
+
+                // Initialize reply visibility state
+                this.updateReplyButtonStates(postElement, true);
+            }
+
+            /**
+             * Initializes individual button state
+             */
+            initializeButtonState(button, action, postId) {
+                switch (action) {
+                    case 'favorite':
+                        const isFavorited = this.favoriteStates.get(postId) || false;
+                        this.updateButtonState(button, isFavorited);
+                        this.updateFavoriteIcon(button, isFavorited);
+                        break;
+                    case 'bookmark':
+                        const isBookmarked = this.bookmarkStates.get(postId) || false;
+                        this.updateButtonState(button, isBookmarked);
+                        break;
+                    case 'boost':
+                        const isBoosted = this.boostStates.get(postId) || false;
+                        this.updateButtonState(button, isBoosted);
+                        break;
+                    default:
+                        this.updateButtonState(button, false);
+                }
+            }
+        }
+
+        // Initialize the MastodonInteractions instance
+        let mastodonInteractions;
 
         function createCarouselNew(media_attachments, id) {
 
@@ -203,7 +637,7 @@
                         var imagePreviewUrl = currentItem.imagePreviewUrl;
                         var text = currentItem.text;
                         var imageID = currentItem.id;
-                        var imagePositionX = currentItem.imagePositionY;
+                        var imagePositionX = currentItem.imagePositionX;
                         var imagePositionY = currentItem.imagePositionY;
 
                         cardGroup.appendChild(createCard(imageID, imagePreviewUrl, imageUrl, imagePositionX, imagePositionY, text));
@@ -471,6 +905,12 @@
             for (var i = 0; i < links.length; i++) {
                 links[i].href = arr.account.url;
             }
+            
+            // Initialize interaction buttons with the MastodonInteractions class
+            if (mastodonInteractions) {
+                mastodonInteractions.initializePostButtons(displayToot, arr);
+            }
+            
             firstPost = arr;
             loadTootReplies(arr, document.getElementsByClassName("tootReplies")[0]);
             // console.log('Displayed original toot');
@@ -702,6 +1142,11 @@
                 for (var n = 0; n < links.length; n++) {
                     links[n].href = arr.account.url;
                 }
+                
+                // Initialize interaction buttons for this reply
+                if (mastodonInteractions) {
+                    mastodonInteractions.initializePostButtons(displayToot, arr);
+                }
             } else {
                 // ge("author").style.display = "none";
             }
@@ -881,7 +1326,11 @@
 
         var indentCountPerId = [];
 
-        window.onload = processHash;	
+        // Initialize MastodonInteractions and load content when window loads
+        window.onload = function() {
+            mastodonInteractions = new MastodonInteractions();
+            processHash();
+        };	
     </script>
 
 
