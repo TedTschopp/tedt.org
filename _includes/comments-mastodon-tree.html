@@ -115,6 +115,8 @@
                                     class="btn btn-link p-0 border-0 show-replies-btn" 
                                     aria-label="Show replies" 
                                     data-action="show-replies"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-id="">
                                 <i class="fa-solid fa-comments" aria-hidden="true"></i>
                             </button>
@@ -124,6 +126,8 @@
                                     class="btn btn-link p-0 border-0 reply-btn" 
                                     aria-label="Reply to post" 
                                     data-action="reply"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-url="">
                                 <i class="fa-solid fa-reply" aria-hidden="true"></i>
                             </button>
@@ -133,6 +137,8 @@
                                     class="btn btn-link p-0 border-0 boost-btn" 
                                     aria-label="Boost post" 
                                     data-action="boost"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-url="">
                                 <i class="fa-solid fa-rocket" aria-hidden="true"></i>
                             </button>
@@ -142,6 +148,8 @@
                                     class="btn btn-link p-0 border-0 favorite-btn" 
                                     aria-label="Favorite post" 
                                     data-action="favorite"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-url="">
                                 <i class="fa-regular fa-heart" aria-hidden="true"></i>
                             </button>
@@ -151,6 +159,8 @@
                                     class="btn btn-link p-0 border-0 bookmark-btn" 
                                     aria-label="Bookmark post" 
                                     data-action="bookmark"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-url="">
                                 <i class="fa-solid fa-bookmark" aria-hidden="true"></i>
                             </button>
@@ -160,11 +170,23 @@
                                     class="btn btn-link p-0 border-0 hide-replies-btn" 
                                     aria-label="Hide replies" 
                                     data-action="hide-replies"
+                                    disabled
+                                    style="opacity: 0.3;"
                                     data-post-id="">
                                 <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
                             </button>
                         </div>
                     </nav>
+                    <!-- View on Mastodon Link -->
+                    <div class="row w-100 mt-2">
+                        <div class="col-12 text-center">
+                            <a href="" class="btn btn-primary btn-sm view-on-mastodon-btn" target="_blank" rel="noopener noreferrer"
+                                aria-label="View original post on Mastodon">
+                                <i class="fa-brands fa-mastodon" aria-hidden="true"></i>
+                                View on Mastodon
+                            </a>
+                        </div>
+                    </div>
                 </footer>
                 <div class="card-body p-0 m-0">
                     <div class="row w-100 p-0 m-0 tootReplies">
@@ -270,7 +292,7 @@
                                     <div class="row w-100 mt-2">
                                         <div class="col-12 text-center">
                                             <a href="" 
-                                               class="btn btn-outline-primary btn-sm view-on-mastodon-btn" 
+                                               class="btn btn-primary btn-sm view-on-mastodon-btn" 
                                                target="_blank" 
                                                rel="noopener noreferrer"
                                                aria-label="View original post on Mastodon">
