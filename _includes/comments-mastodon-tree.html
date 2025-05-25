@@ -320,7 +320,43 @@
             }
 
             /**
-             * Constructs the interaction URL for Mastodon actions
+             * Constructs the proper Mastodon API URL for interactions
+             * @param {string} postUrl - The original post URL
+             * @param {string} actionType - The type of action (favourite, reblog, bookmark, reply)
+             * @returns {string} The constructed API URL
+             */
+            buildApiUrl(postUrl, actionType) {
+                const { instance, tootId } = this.parsePostUrl(postUrl);
+                
+                if (!instance || !tootId) {
+                    console.error('Could not parse post URL for interaction:', postUrl);
+                    return null;
+                }
+                
+                // Build proper Mastodon API endpoints according to official docs
+                switch (actionType) {
+                    case 'favourite':
+                        return `${instance}/api/v1/statuses/${tootId}/favourite`;
+                    case 'unfavourite':
+                        return `${instance}/api/v1/statuses/${tootId}/unfavourite`;
+                    case 'reblog':
+                        return `${instance}/api/v1/statuses/${tootId}/reblog`;
+                    case 'unreblog':
+                        return `${instance}/api/v1/statuses/${tootId}/unreblog`;
+                    case 'bookmark':
+                        return `${instance}/api/v1/statuses/${tootId}/bookmark`;
+                    case 'unbookmark':
+                        return `${instance}/api/v1/statuses/${tootId}/unbookmark`;
+                    case 'reply':
+                        return `${instance}/api/v1/statuses`; // POST endpoint for creating new status
+                    default:
+                        console.error('Unknown action type:', actionType);
+                        return null;
+                }
+            }
+
+            /**
+             * Constructs the fallback interaction URL for browsers without proper authentication
              * @param {string} postUrl - The original post URL
              * @param {string} actionType - The type of action (reblog, like, bookmark, reply)
              * @returns {string} The constructed interaction URL
@@ -333,7 +369,86 @@
                     return postUrl; // Fallback to original URL
                 }
                 
-                return `${instance}/interact/${tootId}?type=${actionType}`;
+                // Map action types to the correct interaction types
+                const interactionMap = {
+                    'favourite': 'like',
+                    'reblog': 'reblog', 
+                    'bookmark': 'bookmark',
+                    'reply': 'reply'
+                };
+                
+                const interactionType = interactionMap[actionType] || actionType;
+                return `${instance}/interact/${tootId}?type=${interactionType}`;
+            }
+
+            /**
+             * Attempts to perform the interaction using the proper Mastodon API
+             * Falls back to opening interaction page if API call fails
+             * @param {string} postUrl - The original post URL
+             * @param {string} actionType - The type of action
+             * @param {function} onSuccess - Callback for successful API call
+             * @param {function} onError - Callback for failed API call
+             */
+            async performApiInteraction(postUrl, actionType, onSuccess, onError) {
+                const apiUrl = this.buildApiUrl(postUrl, actionType);
+                
+                if (!apiUrl) {
+                    console.error('Could not build API URL for interaction');
+                    onError && onError('Invalid API URL');
+                    return false;
+                }
+
+                try {
+                    // First, try to detect if we're on the same instance
+                    const { instance } = this.parsePostUrl(postUrl);
+                    const currentOrigin = window.location.origin;
+                    const sameInstance = instance === currentOrigin;
+                    
+                    if (!sameInstance) {
+                        // Different instance - API call will likely fail due to CORS and auth
+                        console.log('Cross-instance interaction detected, skipping API call');
+                        onError && onError('Cross-instance interaction requires fallback');
+                        return false;
+                    }
+
+                    // Note: This will only work if the user is logged into the same instance
+                    // and the website has proper CORS configuration
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            // Note: Authorization Bearer token would need to be obtained through OAuth flow
+                            // For now, we rely on session cookies
+                        },
+                        credentials: 'include', // Include cookies for authentication
+                    });
+
+                    if (response.ok) {
+                        const result = await response.json();
+                        console.log(`${actionType} API call successful:`, result);
+                        onSuccess && onSuccess(result);
+                        return true;
+                    } else if (response.status === 401) {
+                        console.log('API call failed: User not authenticated');
+                        onError && onError('Authentication required');
+                        return false;
+                    } else if (response.status === 403) {
+                        console.log('API call failed: Insufficient permissions');
+                        onError && onError('Insufficient permissions');
+                        return false;
+                    } else {
+                        throw new Error(`API call failed with status: ${response.status} ${response.statusText}`);
+                    }
+                } catch (error) {
+                    if (error.name === 'TypeError' && error.message.includes('CORS')) {
+                        console.log('API interaction failed due to CORS policy, falling back to interaction page');
+                    } else {
+                        console.warn('API interaction failed, falling back to interaction page:', error);
+                    }
+                    onError && onError(error);
+                    return false;
+                }
             }
 
             /**
@@ -442,91 +557,172 @@
             }
 
             /**
-             * Handles reply action - opens post in new tab for reply
+             * Handles reply action - attempts API call first, falls back to interaction URL
              */
-            /**
-             * Handles reply action - opens post in new tab for reply using interact URL
-             */
-            handleReply(button, postUrl, postId) {
+            async handleReply(button, postUrl, postId) {
                 if (!postUrl) return;
 
-                // Build the interaction URL for reply
+                // Add loading state
+                this.setButtonLoading(button, true);
+
+                // For replies, we would need to prompt for content, so we'll use the interaction URL approach
+                // as the API requires the actual reply content to be posted
                 const interactionUrl = this.buildInteractionUrl(postUrl, 'reply');
                 
                 // Open the interaction URL in a new tab for replying
                 window.open(interactionUrl, '_blank', 'noopener,noreferrer');
                 
-                // Add visual feedback and track state
+                // Remove loading state and add visual feedback
+                this.setButtonLoading(button, false);
                 this.addButtonFeedback(button, 'primary');
                 this.replyStates.set(postId, true);
                 this.updateButtonState(button, true);
             }
 
             /**
-             * Handles boost action - opens post in new tab for boosting using interact URL
+             * Handles boost action - attempts API call first, falls back to interaction URL
              */
-            handleBoost(button, postUrl, postId) {
+            async handleBoost(button, postUrl, postId) {
                 if (!postUrl) return;
 
                 // Toggle boost state
                 const currentState = this.boostStates.get(postId) || false;
                 const newState = !currentState;
-                this.boostStates.set(postId, newState);
+                
+                // Add loading state
+                this.setButtonLoading(button, true);
 
-                // Build the interaction URL for reblog/boost
-                const interactionUrl = this.buildInteractionUrl(postUrl, 'reblog');
-                
-                // Open the interaction URL in a new tab for boosting
-                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
-                
-                // Update button appearance
-                this.updateButtonState(button, newState);
-                this.addButtonFeedback(button, newState ? 'warning' : 'secondary');
+                // Determine the correct action type based on current state
+                const actionType = newState ? 'reblog' : 'unreblog';
+
+                // Attempt API interaction first
+                const apiSuccess = await this.performApiInteraction(
+                    postUrl, 
+                    actionType,
+                    (result) => {
+                        // API success callback
+                        console.log('Boost API call successful:', result);
+                        this.boostStates.set(postId, result.reblogged || false);
+                        this.updateButtonState(button, result.reblogged || false);
+                        this.addButtonFeedback(button, result.reblogged ? 'warning' : 'secondary');
+                    },
+                    (error) => {
+                        // API error callback
+                        console.warn('Boost API call failed:', error);
+                    }
+                );
+
+                // If API call failed, fall back to interaction URL
+                if (!apiSuccess) {
+                    const interactionUrl = this.buildInteractionUrl(postUrl, 'reblog');
+                    window.open(interactionUrl, '_blank', 'noopener,noreferrer');
+                    
+                    // Update local state since we can't know the server state
+                    this.boostStates.set(postId, newState);
+                    this.updateButtonState(button, newState);
+                    this.addButtonFeedback(button, newState ? 'warning' : 'secondary');
+                }
+
+                // Remove loading state
+                this.setButtonLoading(button, false);
             }
 
             /**
-             * Handles favorite action - opens post in new tab for favoriting using interact URL
+             * Handles favorite action - attempts API call first, falls back to interaction URL
              */
-            handleFavorite(button, postUrl, postId) {
+            async handleFavorite(button, postUrl, postId) {
                 if (!postUrl) return;
 
                 // Toggle favorite state
                 const currentState = this.favoriteStates.get(postId) || false;
                 const newState = !currentState;
-                this.favoriteStates.set(postId, newState);
+                
+                // Add loading state
+                this.setButtonLoading(button, true);
 
-                // Build the interaction URL for like/favorite
-                const interactionUrl = this.buildInteractionUrl(postUrl, 'like');
-                
-                // Open the interaction URL in a new tab for favoriting
-                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
-                
-                // Update button appearance and icon
-                this.updateButtonState(button, newState);
-                this.updateFavoriteIcon(button, newState);
-                this.addButtonFeedback(button, newState ? 'danger' : 'secondary');
+                // Determine the correct action type based on current state
+                const actionType = newState ? 'favourite' : 'unfavourite';
+
+                // Attempt API interaction first
+                const apiSuccess = await this.performApiInteraction(
+                    postUrl, 
+                    actionType,
+                    (result) => {
+                        // API success callback
+                        console.log('Favorite API call successful:', result);
+                        this.favoriteStates.set(postId, result.favourited || false);
+                        this.updateButtonState(button, result.favourited || false);
+                        this.updateFavoriteIcon(button, result.favourited || false);
+                        this.addButtonFeedback(button, result.favourited ? 'danger' : 'secondary');
+                    },
+                    (error) => {
+                        // API error callback
+                        console.warn('Favorite API call failed:', error);
+                    }
+                );
+
+                // If API call failed, fall back to interaction URL
+                if (!apiSuccess) {
+                    const interactionUrl = this.buildInteractionUrl(postUrl, 'favourite');
+                    window.open(interactionUrl, '_blank', 'noopener,noreferrer');
+                    
+                    // Update local state since we can't know the server state
+                    this.favoriteStates.set(postId, newState);
+                    this.updateButtonState(button, newState);
+                    this.updateFavoriteIcon(button, newState);
+                    this.addButtonFeedback(button, newState ? 'danger' : 'secondary');
+                }
+
+                // Remove loading state
+                this.setButtonLoading(button, false);
             }
 
             /**
-             * Handles bookmark action - opens post in new tab for bookmarking using interact URL
+             * Handles bookmark action - attempts API call first, falls back to interaction URL
              */
-            handleBookmark(button, postUrl, postId) {
+            async handleBookmark(button, postUrl, postId) {
                 if (!postUrl) return;
 
                 // Toggle bookmark state
                 const currentState = this.bookmarkStates.get(postId) || false;
                 const newState = !currentState;
-                this.bookmarkStates.set(postId, newState);
+                
+                // Add loading state
+                this.setButtonLoading(button, true);
 
-                // Build the interaction URL for bookmark
-                const interactionUrl = this.buildInteractionUrl(postUrl, 'bookmark');
-                
-                // Open the interaction URL in a new tab for bookmarking
-                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
-                
-                // Update button appearance
-                this.updateButtonState(button, newState);
-                this.addButtonFeedback(button, newState ? 'info' : 'secondary');
+                // Determine the correct action type based on current state
+                const actionType = newState ? 'bookmark' : 'unbookmark';
+
+                // Attempt API interaction first
+                const apiSuccess = await this.performApiInteraction(
+                    postUrl, 
+                    actionType,
+                    (result) => {
+                        // API success callback
+                        console.log('Bookmark API call successful:', result);
+                        this.bookmarkStates.set(postId, result.bookmarked || false);
+                        this.updateButtonState(button, result.bookmarked || false);
+                        this.addButtonFeedback(button, result.bookmarked ? 'info' : 'secondary');
+                    },
+                    (error) => {
+                        // API error callback
+                        console.warn('Bookmark API call failed:', error);
+                    }
+                );
+
+                // If API call failed, fall back to interaction URL
+                if (!apiSuccess) {
+                    const interactionUrl = this.buildInteractionUrl(postUrl, 'bookmark');
+                    window.open(interactionUrl, '_blank', 'noopener,noreferrer');
+                    
+                    // Update local state since we can't know the server state
+                    this.bookmarkStates.set(postId, newState);
+                    this.updateButtonState(button, newState);
+                    this.addButtonFeedback(button, newState ? 'info' : 'secondary');
+                }
+
+                // Remove loading state
+                this.setButtonLoading(button, false);
             }
 
             /**
@@ -570,6 +766,34 @@
                 setTimeout(() => {
                     button.className = originalClass;
                 }, 200);
+            }
+
+            /**
+             * Sets button loading state with spinner
+             */
+            setButtonLoading(button, isLoading) {
+                if (isLoading) {
+                    button.disabled = true;
+                    button.setAttribute('aria-busy', 'true');
+                    
+                    // Store original content
+                    if (!button.hasAttribute('data-original-html')) {
+                        button.setAttribute('data-original-html', button.innerHTML);
+                    }
+                    
+                    // Add spinner
+                    button.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>';
+                } else {
+                    button.disabled = false;
+                    button.setAttribute('aria-busy', 'false');
+                    
+                    // Restore original content
+                    const originalHtml = button.getAttribute('data-original-html');
+                    if (originalHtml) {
+                        button.innerHTML = originalHtml;
+                        button.removeAttribute('data-original-html');
+                    }
+                }
             }
 
             /**
