@@ -202,8 +202,10 @@
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 show-replies-btn" 
-                                                    aria-label="Show replies" 
+                                                    aria-label="Show replies (disabled)" 
                                                     data-action="show-replies"
+                                                    disabled
+                                                    style="opacity: 0.3;"
                                                     data-post-id="">
                                                 <i class="fa-solid fa-comments" aria-hidden="true"></i>
                                             </button>
@@ -211,8 +213,10 @@
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 reply-btn" 
-                                                    aria-label="Reply to post" 
+                                                    aria-label="Reply to post (disabled)" 
                                                     data-action="reply"
+                                                    disabled
+                                                    style="opacity: 0.3;"
                                                     data-post-url="">
                                                 <i class="fa-solid fa-reply" aria-hidden="true"></i>
                                             </button>
@@ -220,40 +224,61 @@
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 boost-btn" 
-                                                    aria-label="Boost post" 
+                                                    aria-label="Boost post (disabled)" 
                                                     data-action="boost"
-                                                    data-post-url="">
+                                                    data-post-url=""
+                                                    disabled
+                                                    style="opacity: 0.3;">
                                                 <i class="fa-solid fa-rocket" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 favorite-btn" 
-                                                    aria-label="Favorite post" 
+                                                    aria-label="Favorite post (disabled)" 
                                                     data-action="favorite"
-                                                    data-post-url="">
+                                                    data-post-url=""
+                                                    disabled
+                                                    style="opacity: 0.3;">
                                                 <i class="fa-regular fa-heart" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 bookmark-btn" 
-                                                    aria-label="Bookmark post" 
+                                                    aria-label="Bookmark post (disabled)" 
                                                     data-action="bookmark"
-                                                    data-post-url="">
+                                                    data-post-url=""
+                                                    disabled
+                                                    style="opacity: 0.3;">
                                                 <i class="fa-solid fa-bookmark" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                         <div class="col-2 text-center d-flex align-items-center justify-content-center">
                                             <button type="button" 
                                                     class="btn btn-link p-0 border-0 hide-replies-btn" 
-                                                    aria-label="Hide replies" 
+                                                    aria-label="Hide replies (disabled)" 
                                                     data-action="hide-replies"
+                                                    disabled
+                                                    style="opacity: 0.3;"
                                                     data-post-id="">
                                                 <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                     </nav>
+                                    <!-- View on Mastodon Link -->
+                                    <div class="row w-100 mt-2">
+                                        <div class="col-12 text-center">
+                                            <a href="" 
+                                               class="btn btn-outline-primary btn-sm view-on-mastodon-btn" 
+                                               target="_blank" 
+                                               rel="noopener noreferrer"
+                                               aria-label="View original post on Mastodon">
+                                                <i class="fa-brands fa-mastodon" aria-hidden="true"></i>
+                                                View on Mastodon
+                                            </a>
+                                        </div>
+                                    </div>
                                 </footer>
                                 <div class="card-body p-0 m-0">
                                     <div class="row w-100 p-0 m-0 tootSubReplies">
@@ -460,6 +485,13 @@
                     const button = event.target.closest('button[data-action]');
                     if (!button) return;
 
+                    // Skip disabled buttons
+                    if (button.disabled) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return;
+                    }
+
                     event.preventDefault();
                     event.stopPropagation();
 
@@ -478,13 +510,16 @@
                             this.handleReply(button, postUrl, postId);
                             break;
                         case 'boost':
-                            this.handleBoost(button, postUrl, postId);
+                            // Disabled - no action
+                            console.log('Boost functionality is disabled');
                             break;
                         case 'favorite':
-                            this.handleFavorite(button, postUrl, postId);
+                            // Disabled - no action
+                            console.log('Favorite functionality is disabled');
                             break;
                         case 'bookmark':
-                            this.handleBookmark(button, postUrl, postId);
+                            // Disabled - no action
+                            console.log('Bookmark functionality is disabled');
                             break;
                     }
                 });
@@ -830,6 +865,12 @@
                     // Initialize button states
                     this.initializeButtonState(button, action, postId);
                 });
+
+                // Set the "View on Mastodon" link URL
+                const viewOnMastodonBtn = postElement.querySelector('.view-on-mastodon-btn');
+                if (viewOnMastodonBtn && postUrl) {
+                    viewOnMastodonBtn.href = postUrl;
+                }
 
                 // Initialize reply visibility state
                 this.updateReplyButtonStates(postElement, true);
