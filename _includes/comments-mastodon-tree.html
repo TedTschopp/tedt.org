@@ -283,6 +283,60 @@
             }
 
             /**
+             * Extracts the instance URL and toot ID from a Mastodon post URL
+             * @param {string} postUrl - The original Mastodon post URL
+             * @returns {Object} Object containing instance and tootId
+             */
+            parsePostUrl(postUrl) {
+                try {
+                    const url = new URL(postUrl);
+                    const instance = `${url.protocol}//${url.host}`;
+                    
+                    // Extract toot ID from various URL patterns
+                    const pathParts = url.pathname.split('/');
+                    let tootId = null;
+                    
+                    // Handle different URL formats:
+                    // https://instance.social/@user/123456789
+                    // https://instance.social/users/user/statuses/123456789
+                    // https://instance.social/web/statuses/123456789
+                    
+                    if (pathParts.includes('statuses')) {
+                        // Find the part after 'statuses'
+                        const statusIndex = pathParts.indexOf('statuses');
+                        if (statusIndex + 1 < pathParts.length) {
+                            tootId = pathParts[statusIndex + 1];
+                        }
+                    } else {
+                        // For @user/tootId format, get the last part
+                        tootId = pathParts[pathParts.length - 1];
+                    }
+                    
+                    return { instance, tootId };
+                } catch (error) {
+                    console.error('Error parsing post URL:', error);
+                    return { instance: null, tootId: null };
+                }
+            }
+
+            /**
+             * Constructs the interaction URL for Mastodon actions
+             * @param {string} postUrl - The original post URL
+             * @param {string} actionType - The type of action (reblog, like, bookmark, reply)
+             * @returns {string} The constructed interaction URL
+             */
+            buildInteractionUrl(postUrl, actionType) {
+                const { instance, tootId } = this.parsePostUrl(postUrl);
+                
+                if (!instance || !tootId) {
+                    console.error('Could not parse post URL for interaction:', postUrl);
+                    return postUrl; // Fallback to original URL
+                }
+                
+                return `${instance}/interact/${tootId}?type=${actionType}`;
+            }
+
+            /**
              * Sets up event listeners for all interaction buttons
              */
             setupEventListeners() {
@@ -306,7 +360,7 @@
                             this.handleHideReplies(button, postId);
                             break;
                         case 'reply':
-                            this.handleReply(button, postUrl);
+                            this.handleReply(button, postUrl, postId);
                             break;
                         case 'boost':
                             this.handleBoost(button, postUrl, postId);
@@ -390,21 +444,26 @@
             /**
              * Handles reply action - opens post in new tab for reply
              */
-            handleReply(button, postUrl) {
+            /**
+             * Handles reply action - opens post in new tab for reply using interact URL
+             */
+            handleReply(button, postUrl, postId) {
                 if (!postUrl) return;
 
-                // Open the post in a new tab for replying
-                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                // Build the interaction URL for reply
+                const interactionUrl = this.buildInteractionUrl(postUrl, 'reply');
+                
+                // Open the interaction URL in a new tab for replying
+                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
                 
                 // Add visual feedback and track state
                 this.addButtonFeedback(button, 'primary');
-                const postId = this.getPostIdFromButton(button);
                 this.replyStates.set(postId, true);
                 this.updateButtonState(button, true);
             }
 
             /**
-             * Handles boost action - opens post in new tab for boosting
+             * Handles boost action - opens post in new tab for boosting using interact URL
              */
             handleBoost(button, postUrl, postId) {
                 if (!postUrl) return;
@@ -414,8 +473,11 @@
                 const newState = !currentState;
                 this.boostStates.set(postId, newState);
 
-                // Open the post in a new tab for boosting
-                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                // Build the interaction URL for reblog/boost
+                const interactionUrl = this.buildInteractionUrl(postUrl, 'reblog');
+                
+                // Open the interaction URL in a new tab for boosting
+                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
                 
                 // Update button appearance
                 this.updateButtonState(button, newState);
@@ -423,7 +485,7 @@
             }
 
             /**
-             * Handles favorite action - opens post in new tab for favoriting
+             * Handles favorite action - opens post in new tab for favoriting using interact URL
              */
             handleFavorite(button, postUrl, postId) {
                 if (!postUrl) return;
@@ -433,8 +495,11 @@
                 const newState = !currentState;
                 this.favoriteStates.set(postId, newState);
 
-                // Open the post in a new tab for favoriting
-                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                // Build the interaction URL for like/favorite
+                const interactionUrl = this.buildInteractionUrl(postUrl, 'like');
+                
+                // Open the interaction URL in a new tab for favoriting
+                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
                 
                 // Update button appearance and icon
                 this.updateButtonState(button, newState);
@@ -443,7 +508,7 @@
             }
 
             /**
-             * Handles bookmark action - opens post in new tab for bookmarking
+             * Handles bookmark action - opens post in new tab for bookmarking using interact URL
              */
             handleBookmark(button, postUrl, postId) {
                 if (!postUrl) return;
@@ -453,8 +518,11 @@
                 const newState = !currentState;
                 this.bookmarkStates.set(postId, newState);
 
-                // Open the post in a new tab for bookmarking
-                window.open(postUrl, '_blank', 'noopener,noreferrer');
+                // Build the interaction URL for bookmark
+                const interactionUrl = this.buildInteractionUrl(postUrl, 'bookmark');
+                
+                // Open the interaction URL in a new tab for bookmarking
+                window.open(interactionUrl, '_blank', 'noopener,noreferrer');
                 
                 // Update button appearance
                 this.updateButtonState(button, newState);
@@ -825,22 +893,22 @@
         }
  
         /**
-         * Displays a "toot" (a post or comment) in a specified HTML element.
-         *
-         * @param {Object} arr - An object containing the data of the toot.
-         * The arr object should have the following properties:
-         * - account: An object containing the account information of the user who made the toot. If this property is not present, the function will try to use the attributedTo property instead.
-         * - created_at: The date and time when the toot was created. If this property is not present, the function will use the published property instead.
-         * - url: The URL of the toot.
-         * - content: The content of the toot.
-         *
-         * @param {string|HTMLElement} element - The ID of an HTML element or the HTML element itself where the toot will be displayed.
-         *
-         * The function fills the specified element with the toot data, including the author's avatar, display name, username, instance name, the toot content, and the time since the toot was created. It also sets the href attribute of all elements with the class "authorLink" to the URL of the author's account.
-         *
-         * @returns {void}
-         */        
-         function displayToot(arr, element) {
+        * Displays a "toot" (a post or comment) in a specified HTML element.
+        *
+        * @param {Object} arr - An object containing the data of the toot.
+        * The arr object should have the following properties:
+        * - account: An object containing the account information of the user who made the toot. If this property is not present, the function will try to use the attributedTo property instead.
+        * - created_at: The date and time when the toot was created. If this property is not present, the function will use the published property instead.
+        * - url: The URL of the toot.
+        * - content: The content of the toot.
+        *
+        * @param {string|HTMLElement} element - The ID of an HTML element or the HTML element itself where the toot will be displayed.
+        *
+        * The function fills the specified element with the toot data, including the author's avatar, display name, username, instance name, the toot content, and the time since the toot was created. It also sets the href attribute of all elements with the class "authorLink" to the URL of the author's account.
+        *
+        * @returns {void}
+        */        
+        function displayToot(arr, element) {
             console.log("displayToot()");
             console.log(arr);
             // var displayJson = JSON.stringify(arr, null, 2);
@@ -891,7 +959,6 @@
             } else {
                 ge("attachments").style.display = "none";
             }
-
 
             ge("avatarImg").src = "";
             ge("avatarImg").src = arr.account.avatar;
