@@ -40,7 +40,51 @@ If unclear:
 
 ---
 
-### 3. **Decompose the User Story / Goal **  
+### 3. **Clarify End User Definition & Modeling**
+
+Interpret the end-user’s identity, context, and behavioral patterns using:
+* User Role Modeling (context, characteristics, criteria)
+* Persona Modeling (goals, environment, attitudes, pain points)
+* Contextual Enrichment of User Story Syntax
+
+If unclear or vague:
+* Ask up to 3 targeted clarification questions
+* If no response:
+* Flag as undefined-user
+* List key assumptions
+* Generate a minimum viable user model, tagged assumed-persona
+
+✅ Methods of Clarification
+
+1. Expand the User Story Syntax
+Add meaningful context directly into the user story statement (Connextra format):
+* ✅ “As a first-time homebuyer researching mortgage options…”
+* ✅ “As a back-office assistant managing insurance claims…”
+* ❌ Avoid generic: “As a user…” — unless role is singular, well-defined, and domain-specific.
+
+2. End-User Role Modeling
+Formalize the user’s functional role in the system:
+* Context: Where and how they engage (environment, access, domain knowledge)
+* Characteristics: Frequency, timing, volume, emotional/mental state
+* Success Criteria: What constitutes a “good experience” for this role?
+
+3. Persona Modeling (for high-consideration systems/products only)
+Deepen empathy by creating realistic archetypes for complex user roles:
+* Name, job title, demographics
+* Goals, daily tasks, and tools used
+* Attitudes, motivations, skills, and challenges
+* Typical scenarios and preferred communication channels
+* Quote to anchor tone and mindset
+
+Example Output Tags
+
+If end-user is vague:
+* undefined-user: No role, context, or behavior identified
+* assumed-persona: Generated based on inferred characteristics
+* multi-user: More than one user role must be modeled separately
+
+
+### 4. **Decompose the User Story / Goal **  
 Break the clarified goal into 3–7 actionable sub-user stories using one or more:  
 - IF-THEN Chains  
 - SMART Goal Expansion  
@@ -69,7 +113,7 @@ Following each User Story and Sub-User Story include Acceptance Criteria that is
 
 ---
 
-### 4. **Self-Review & Reframing**  
+### 5. **Self-Review & Reframing**  
 Reflect on your output:  
 - “Any flawed assumptions?”  
 - “Any user stories unclear or unrealistic?”  
@@ -84,8 +128,8 @@ If written from a dev lens, try a stakeholder lens:
 
 ---
 
-### 5. **Per-User story Output Format**  
-Each sub-user story must include:
+### 6. **Per-User story Output Format**  
+1. Each sub-user story must include:
 
 - **Method:** e.g., SMART, HTN, FrameNet  
 
@@ -99,19 +143,19 @@ Review the entire user story list for:
 [ ] Small: Some user stories can be too big, some can be too small, and some can be just right. User story size does matter because if stories are too large or too small you cannot use them in planning. The ultimate determination of whether a user story is appropriately sized is based on the team, its capabilities, and the technologies in use. Good user stories tend to be small. User stories typically represent at most a few person-weeks’ worth of work. (Some teams restrict them to a few person-days of work.) Above this size, and it seems to be too hard to know what’s in the user story’s scope. Saying, “it would take me more than a month” often implicitly adds, “as I don’t understand what-all it would entail.” Smaller user stories are much more well-understood and tend to get more accurate estimates. User story descriptions can be small too (and putting them on an index card helps make that happen). Alistair Cockburn described the cards as tokens promising a future conversation. Remember, the details can be elaborated through conversations with the customer.
 [ ] Testable: User stories must be written so as to be testable. Successfully passing its tests proves that a user story has been successfully developed. If the user story cannot be tested, how can the developers know when they have finished coding? 	A good user story is testable. Writing a user story card carries an implicit promise: “I understand what I want well enough that I could write a test for it.” Several teams have reported that by requiring customer tests before implementing a user story, the team is more productive. “Testability” has always been a characteristic of good requirements; actually writing the tests early helps us know whether this goal is met. If a customer doesn’t know how to test something, this may indicate that the user story isn’t clear enough, or that it doesn’t reflect something valuable to them, or that the customer just needs help in testing. A team can treat non-functional requirements (such as performance and usability) as things that need to be tested. Figure out how to operationalize these tests will help the team learn the true needs. For all these attributes, the feedback cycle of proposing, estimating, and implementing user stories will help teach the team what it needs to know. Similar to the statement made about the Value criteria for well-written user stories, we want single user stories to be independently testable. We don’t want to have to wait for multiple other downstream user stories to be complete before enough functionality aggregates to be testable.
 
-Time Estimate: e.g., “~2 days for 2-person UX team”
+3. Time Estimate: e.g., “~2 days for 2-person UX team”
 
-Confidence Score (1–5):
+4. Confidence Score (1–5):
 
 1 = Low (many unknowns or vague input)
 3 = Moderate (acceptable but incomplete)
 5 = High (fully scoped and realistic)
 
-Optional Comparison Prompt:
+5. Optional Comparison Prompt:
 
 “Compare two decompositions—what’s stronger about version 2?”
 
-Halt Conditions:
+6. Halt Conditions:
 
 If >50% of user stories are Score ≤2 or tagged uncertainty, pause
 
@@ -122,7 +166,7 @@ Conclude with a short explanation of your planning logic (1–2 sentences).
 Add an optional TL;DR for non-technical stakeholders.
 Label each user story with complexity:basic or complexity:advanced where useful. Suggest escalating from basic to advanced only when warranted.
 
-Multi-Turn Memory
+8. Multi-Turn Memory
 Use recall anchors like: “User confirmed onboarding is mobile-only.”
 
 Reuse prior clarifications when context repeats.
@@ -169,7 +213,6 @@ After: “Tag with uncertainty if no clarification is possible; flag assumptions
 
 Contrarian Frame (Optional)
 Alternate framing idea: Convert the flow into a conversational chain-of-thought that walks the user through decomposition interactively instead of outputting a plan in one pass.
-
 
 ### Reflection:
 This version trims cognitive load without losing structure, includes JSON for developer use, reduces redundancy, and makes failure cases, framing shifts, and user story scoring easier to apply in both novice and expert contexts.
