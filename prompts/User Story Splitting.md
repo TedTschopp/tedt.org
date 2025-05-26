@@ -24,14 +24,16 @@ Start with a vague or high-level input (e.g., “Fix user onboarding” or as sp
 
 ---
 
-### 2. **Clarify Intent**  
+#### 1.1 **Clarify Intent**  
 Interpret user intent using:  
+
 - Intent Classification  
 - Semantic Role Labeling  
 - Contextual Disambiguation  
 - Socratic Questioning
 
-If unclear:  
+If unclear, lets do this step-by-step:
+
 - Ask up to 3 concise clarification questions  
 - If no response:  
   - Flag as `too vague`  
@@ -40,50 +42,51 @@ If unclear:
 
 ---
 
-### 3. **Clarify End User Definition & Modeling**
+#### 1.2 **Clarify End User Definition & Modeling**
 
 Interpret the end-user’s identity, context, and behavioral patterns using:
-* User Role Modeling (context, characteristics, criteria)
-* Persona Modeling (goals, environment, attitudes, pain points)
-* Contextual Enrichment of User Story Syntax
 
-If unclear or vague:
-* Ask up to 3 targeted clarification questions
-* If no response:
-* Flag as undefined-user
-* List key assumptions
-* Generate a minimum viable user model, tagged assumed-persona
+- User Role Modeling (context, characteristics, criteria)
+- Persona Modeling (goals, environment, attitudes, pain points)
+- Contextual Enrichment of User Story Syntax
+
+If unclear or vague, lets do this step-by-step:
+- Ask up to 3 targeted clarification questions
+- If no response:
+  - Flag as undefined-user
+  - List key assumptions
+  - Generate a minimum viable user model, tagged assumed-persona
 
 ✅ Methods of Clarification
 
 1. Expand the User Story Syntax
 Add meaningful context directly into the user story statement (Connextra format):
-* ✅ “As a first-time homebuyer researching mortgage options…”
-* ✅ “As a back-office assistant managing insurance claims…”
-* ❌ Avoid generic: “As a user…” — unless role is singular, well-defined, and domain-specific.
+- ✅ “As a first-time homebuyer researching mortgage options…”
+- ✅ “As a back-office assistant managing insurance claims…”
+- ❌ Avoid generic: “As a user…” — unless role is singular, well-defined, and domain-specific.
 
-2. End-User Role Modeling
+1. End-User Role Modeling
 Formalize the user’s functional role in the system:
-* Context: Where and how they engage (environment, access, domain knowledge)
-* Characteristics: Frequency, timing, volume, emotional/mental state
-* Success Criteria: What constitutes a “good experience” for this role?
+- Context: Where and how they engage (environment, access, domain knowledge)
+- Characteristics: Frequency, timing, volume, emotional/mental state
+- Success Criteria: What constitutes a “good experience” for this role?
 
-3. Persona Modeling (for high-consideration systems/products only)
+1. Persona Modeling (for high-consideration systems/products only)
 Deepen empathy by creating realistic archetypes for complex user roles:
-* Name, job title, demographics
-* Goals, daily tasks, and tools used
-* Attitudes, motivations, skills, and challenges
-* Typical scenarios and preferred communication channels
-* Quote to anchor tone and mindset
+- Name, job title, demographics
+- Goals, daily tasks, and tools used
+- Attitudes, motivations, skills, and challenges
+- Typical scenarios and preferred communication channels
+- Quote to anchor tone and mindset
 
 Example Output Tags
 
-If end-user is vague:
-* undefined-user: No role, context, or behavior identified
-* assumed-persona: Generated based on inferred characteristics
-* multi-user: More than one user role must be modeled separately
+If end-user is vague, lets do this step-by-step::
+- undefined-user: No role, context, or behavior identified
+- assumed-persona: Generated based on inferred characteristics
+- multi-user: More than one user role must be modeled separately
 
-### 4. **Decompose the User Story / Goal**  
+### 2. **Decompose the User Story / Goal**  
 Break the clarified goal into 3–7 actionable sub-user stories using one or more of the following techniques:
 
 - **IF-THEN Chains**: Identify conditional flows or cause-effect dependencies.
@@ -121,7 +124,7 @@ Following each User Story and Sub-User Story include Acceptance Criteria that is
 
 ---
 
-### 5. **Self-Review & Reframing**  
+### 3. **Self-Review & Reframing**  
 Reflect on your output:  
 - “Any flawed assumptions?”  
 - “Any user stories unclear or unrealistic?”  
@@ -136,7 +139,7 @@ If written from a dev lens, try a stakeholder lens:
 
 ---
 
-### 6. **Per-User Story Output Format**
+### 4. **Per-User Story Output Format**
 
 Each sub-user story must include:
 
@@ -173,7 +176,7 @@ If >50% of user stories are Score ≤2 or tagged uncertainty, pause
 If clarification is unavailable, halt silently and list fallback assumptions only
 
 7. Strategy Summary
-Conclude with a short explanation of your planning logic (1–2 sentences).
+Conclude with a short explanation of your planning logic (3 – 5 sentences).
 Add an optional TL;DR for non-technical stakeholders.
 Label each user story with complexity:basic or complexity:advanced where useful. Suggest escalating from basic to advanced only when warranted.
 
@@ -183,6 +186,9 @@ Use recall anchors like: “User confirmed onboarding is mobile-only.”
 Reuse prior clarifications when context repeats.
 
 If user updates goal or constraints, restart at Step 2.
+
+9. Clarifying Questions
+Collect all Clarifying questions that were not answered from the output so far and present them here as potential next steps.  Also make sure to validate that the personas identified so far are valid and give examples of additional Users and motivations they may have.
 
 ## Feedback Loop
 
