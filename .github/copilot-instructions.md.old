@@ -1,0 +1,98 @@
+### Coding Best Practices
+
+#### Use Semantic HTML
+
+- Write clean, semantic HTML to improve accessibility and SEO.
+- Use Semantic Elements in HTML instead of generic `<div>` and `<span>` tags where possible.
+    - Use `<article>`, `<aside>`, `<nav>`, `<section>`, and `<figure>` for better structure.
+- Use appropriate tags like `<header>`, `<footer>`, `<main>`, and `<section>`.
+
+#### **Organize Your Code
+
+- Follow a consistent file and folder structure.
+- Separate CSS, JavaScript, and HTML files for better maintainability.
+- Put all documentation in the `docs` folder.
+- Use meaningful names for files and folders.
+- Use a consistent naming convention 
+    - kebab-case for files and folders
+    - use Snake_Case for variables and functions in JavaScript.
+    - Use PascalCase for class names in CSS.
+ 
+#### **Leverage Bootstrap
+
+- Use Bootstrap's 5.3 pre-built components and utilities to reduce custom code.
+- Avoid overriding Bootstrap styles unnecessarily.
+- Use Bootstrap's grid system and responsive utilities.
+- Test responsiveness across various devices and screen sizes.
+
+#### **Use Jekyll Features
+
+- Utilize Jekyll includes and layouts to avoid code duplication.
+- Use the proper Jekyll folders
+    - `_includes` for reusable components
+    - `_layouts` for page templates
+    - `_data` for site-wide data files
+- Use `_config.yml` for site configuration and settings.
+- Use Jekyll's front matter to define page-specific variables and metadata.
+- Use Jekyll's built-in plugins for common tasks like pagination, SEO, and sitemaps.
+- Use Jekyll's Liquid templating language for dynamic content rendering.
+
+#### **Write Clean Code
+- Use comments to explain complex code sections.
+- Use consistent indentation and spacing.
+- Avoid inline styles and scripts; keep them in separate files.
+
+
+
+
+#### **Test Locally
+
+- Validate your HTML, CSS, and JavaScript for errors.
+- Put all test code in the `tests` folder.
+
+
+### Design Best Practices
+
+#### Keep It Simple
+
+- Follow a minimalist design approach.
+- Avoid clutter and focus on essential elements.
+- Use whitespace effectively to enhance readability.
+- Use a limited color palette to create a cohesive look.
+- Use a consistent font family and size for text.
+- Use clear and concise language in all text content.
+- Use clear and descriptive labels for buttons and links.
+- Use icons and images sparingly to enhance, not distract.
+- Use a consistent layout for all pages.
+- Use a grid system to align elements consistently.
+
+#### Ensure Accessibility
+
+- Use ARIA roles and attributes
+- Ensure sufficient color contrast and readable font sizes.
+
+#### Maintain Consistency
+
+- Use consistent colors, fonts, and spacing throughout the site.
+- Leverage Bootstrap's design system for uniformity.
+
+#### Focus on Performance
+
+- Use lazy loading for images and videos.
+- Optimize CSS and JavaScript to reduce page load times.
+
+#### Mobile-First Design
+
+- Use Bootstrap's responsive utilities
+
+#### SEO Optimization**
+
+- Use descriptive meta tags and titles.
+
+
+
+
+
+--- Version 2
+
+
