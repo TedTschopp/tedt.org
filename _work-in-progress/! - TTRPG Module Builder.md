@@ -178,6 +178,18 @@ The story opens in a snow-covered village at dawn. The sky is bruised purple, an
 
 
 
+
+
+
+## Linear / Railroaded
+
+- Inciting Incident
+- Point of Engagement
+- Initial Stakes
+- Call to Action
+
+
+
 ## Sandbox
 
 - World Map or Region Outline: 3–5 key locations, 2+ factions.
