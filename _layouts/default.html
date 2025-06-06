@@ -115,7 +115,7 @@
                                 <div class="col-md-8">
                                   <div class="card-body">
                                     <h5 class="card-title">
-                                      <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
                                     <p class="card-text text-truncate-2">
                                       {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -135,7 +135,7 @@
                                 <div class="col-md-12">
                                   <div class="card-body">
                                     <h5 class="card-title">
-                                      <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
                                     <p class="card-text text-truncate-2">
                                       {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -163,7 +163,7 @@
                   <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.siteurl }}/img/home/Folklore.webp" />
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
-                  <h2 class="card-title" id="folklore"><a class="text-decoration-none" href="/category/Folklore">Swiss Folklore</a></h2>
+                  <h2 class="card-title" id="folklore"><a href="/category/Folklore">Swiss Folklore</a></h2>
                   <h3 class="text-muted card-subtitle mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
                   <p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
@@ -186,7 +186,7 @@
                               <div class="col-md-8">
                                 <div class="card-body">
                                   <h5 class="card-title">
-                                    <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
                                   <p class="card-text text-truncate-2">
                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -206,7 +206,7 @@
                               <div class="col-md-12">
                                 <div class="card-body">
                                   <h5 class="card-title">
-                                    <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
                                   <p class="card-text text-truncate-2">
                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -362,7 +362,7 @@
                             </div>
 
                             <div class="card-body pt-2 pb-2 p-4">
-                              <h2 class="card-title"><a class="text-decoration-none" href="/category/{{ category.category }}">{{ category_data_title }}</a></h2>
+                              <h2 class="card-title"><a href="/category/{{ category.category }}">{{ category_data_title }}</a></h2>
                               <h3 class="text-muted card-subtitle mb-2">{{ category_data_subtitle }}</h3>
                               <p class="card-text">{{ category_data_description }}</p>
                             </div>
@@ -386,7 +386,7 @@
                                           <div class="col-md-8">
                                             <div class="card-body">
                                               <h5 class="card-title">
-                                                <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                               </h5>
                                               <p class="card-text text-truncate-2">
                                                 {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -406,7 +406,7 @@
                                           <div class="col-md-12">
                                             <div class="card-body">
                                               <h5 class="card-title">
-                                                <a class="text-decoration-none" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                               </h5>
                                               <p class="card-text text-truncate-2">
                                                 {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
@@ -502,7 +502,7 @@
                           <div class="card-body align-items-center {{ watermark }}">
                             <h4 class="card-title">
                               {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                <a class="text-decoration-none" href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
+                                <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                               {% else %}
                                 {{ this-post-title }}
                               {% endif %}
@@ -520,7 +520,7 @@
                           <div class="card-body align-items-center {{ watermark }}">
                             <h4 class="card-title">
                               {% if post.title-url and post.title-url != "" and post.title-url != nil %}
-                                <a class="text-decoration-none" href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
+                                <a href="{{post.title-url}}" target="_blank" rel="noopener nofollow noreferrer">{{ this-post-title }}</a>
                               {% else %}
                                 {{ this-post-title }}
                               {% endif %}

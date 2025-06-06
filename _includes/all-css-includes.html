@@ -28,9 +28,16 @@
                 font-stretch: condensed;
             }
 
+            a { 
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+            }
+            a:hover, a:focus { 
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+            }
+
         </style>
-
-
     {% else %}    
         <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/blog-post.css">
         <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/solarized-dark.css" >
