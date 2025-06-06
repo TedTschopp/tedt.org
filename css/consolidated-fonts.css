@@ -330,7 +330,6 @@
 	font-family: "tschopp-housemark-optimum";
 	font-style: normal;
 	font-weight: normal;
-	speak: never;
   
 	display: inline-block;
 	text-decoration: inherit;
@@ -427,7 +426,7 @@
 	font-style: normal;
 	font-display: swap;
   }
-
+  
 
 
   /* Thin – 100 */
