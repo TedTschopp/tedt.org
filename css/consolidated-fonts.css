@@ -368,7 +368,7 @@
   /* Thin – 100 */
 @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Thin.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Thin.otf') format('opentype');
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;              /* avoids invisible text */
@@ -377,7 +377,7 @@
   /* Light – 300 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Light.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Light.otf') format('opentype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -386,7 +386,7 @@
   /* Regular – 400 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Regular.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Regular.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -395,7 +395,7 @@
   /* Medium – 500 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Medium.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Medium.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -404,7 +404,7 @@
   /* Bold – 700 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Bold.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Bold.otf') format('opentype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -413,7 +413,7 @@
   /* Ultra / ExtraBold – 800 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Ultra.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Ultra.otf') format('opentype');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -422,7 +422,7 @@
   /* Black – 900 */
   @font-face {
 	font-family: 'Manuka';
-	src: url('/fonts/Manuka/Manuka-Black.otf') format('opentype');
+	src: url('https://tedt.org/fonts/Manuka/Manuka-Black.otf') format('opentype');
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
@@ -433,7 +433,7 @@
   /* Thin – 100 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Thin.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Thin.otf') format('opentype');
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;              /* avoids invisible text */
@@ -442,7 +442,7 @@
   /* Light – 300 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Light.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Light.otf') format('opentype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -451,7 +451,7 @@
   /* Regular – 400 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Regular.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Regular.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -460,7 +460,7 @@
   /* Medium – 500 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Medium.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Medium.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -469,7 +469,7 @@
   /* Bold – 700 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Bold.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Bold.otf') format('opentype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -478,7 +478,7 @@
   /* Ultra / ExtraBold – 800 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Ultra.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Ultra.otf') format('opentype');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -487,7 +487,7 @@
   /* Black – 900 */
   @font-face {
 	font-family: 'ManukaCondensed';
-	src: url('/fonts/ManukaCondensed/ManukaCondensed-Black.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaCondensed/ManukaCondensed-Black.otf') format('opentype');
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
@@ -497,7 +497,7 @@
   /* Thin – 100 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Thin.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Thin.otf') format('opentype');
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;              /* avoids invisible text */
@@ -506,7 +506,7 @@
   /* Light – 300 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Light.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Light.otf') format('opentype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -515,7 +515,7 @@
   /* Regular – 400 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Regular.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Regular.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -524,7 +524,7 @@
   /* Medium – 500 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Medium.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Medium.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -533,7 +533,7 @@
   /* Bold – 700 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Bold.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Bold.otf') format('opentype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -542,7 +542,7 @@
   /* Ultra / ExtraBold – 800 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Ultra.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Ultra.otf') format('opentype');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -551,7 +551,7 @@
   /* Black – 900 */
   @font-face {
 	font-family: 'ManukaSlab';
-	src: url('/fonts/Manuka Slab/ManukaSlab-Black.otf') format('opentype');
+	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Black.otf') format('opentype');
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
