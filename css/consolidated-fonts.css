@@ -46,60 +46,6 @@
 	text-rendering: optimizeLegibility;
 }
 @font-face {
-    font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
-    font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum-Bold.otf')  format('opentype')
-	     url('https://tedt.org/fonts/QTOptimum-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
-    font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum-Italic.otf')   format('opentype'),
-	     url('https://tedt.org/fonts/QTOptimum-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
-    font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum-BoldItalic.otf')   format('opentype'),
-	     url('https://tedt.org/fonts/QTOptimum-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
-	font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
-	font-family: 'Optimum';
-    src: url('https://tedt.org/fonts/QTOptimum.otf')   format('opentype'),
-	     url('https://tedt.org/fonts/QTOptimum.woff2') format('woff2');
-	font-weight: 400;
-	font-style: Italic;
-	text-rendering: optimizeLegibility;
-
-}
-@font-face {
     font-family: 'Checkbook';
     src: url('https://tedt.org/fonts/CHECKBK0.otf')   format('opentype'),
 		 url('https://tedt.org/fonts/CHECKBK0.ttf')   format('truetype'),
@@ -552,6 +498,176 @@
 	font-family: 'ManukaSlab';
 	src: url('https://tedt.org/fonts/ManukaSlab/ManukaSlab-Black.otf') format('opentype');
 	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+  }
+
+
+/* ─── Core weights ───────────────────────────────────────────── */
+@font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProLight.otf") format("opentype");
+	font-weight: 300;            /* Light */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProRegular.otf") format("opentype");
+	font-weight: 400;            /* Regular */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProMedium.otf") format("opentype");
+	font-weight: 500;            /* Medium */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProDemi.otf") format("opentype");
+	font-weight: 600;            /* Demi */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProBold.otf") format("opentype");
+	font-weight: 700;            /* Bold */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProHeavy.otf") format("opentype");
+	font-weight: 800;            /* Heavy (Extra-Bold) */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProBlack.otf") format("opentype");
+	font-weight: 900;            /* Black */
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  /* ─── Italics ────────────────────────────────────────────────── */
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProLightItalic.otf") format("opentype");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProItalic.otf") format("opentype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProMediumItalic.otf") format("opentype");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProDemiItalic.otf") format("opentype");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProBoldItalic.otf") format("opentype");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProHeavyItalic.otf") format("opentype");
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProBlackItalic.otf") format("opentype");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+  }
+  
+  /* ─── Condensed faces ────────────────────────────────────────── */
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProCondensed.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProLightCond.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProMediumCond.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProDemiCond.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: "Optima";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProBoldCond.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+  }
+  
+  /* ─── Specialty face (Titling) ───────────────────────────────── */
+  @font-face {
+	font-family: "Optima Titling";
+	src: url("/fonts/OptimaNova/OptimaNovaLTProTitlingInit.otf") format("opentype");
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
   }
