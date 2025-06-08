@@ -1,3 +1,63 @@
+---
+layout: post
+
+title: "What AI in 2024 Means for Us in 2025"
+title-url:
+subtitle: "How last year's AI breakthroughs are shaping the future for utilities and IT organizations"
+subtitle-url:
+quote: "AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader access—are reshaping what’s possible in 2025."
+excerpt: "A practical look at how 2024's AI advances are transforming the electric utility sector and IT, and what you should do to prepare."
+source: "Original Content"
+source-url: ""
+call-to-action: "Learn how to prepare your organization for the next wave of AI."
+
+date: 2025-01-05 00:00:00-08:00
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - "GPT-4-class models now run on laptops, making advanced AI accessible to more organizations."
+    - "Multimodal AI is mainstream, expanding use cases across text, audio, video, and images."
+    - "LLM token costs have dropped, enabling broader experimentation and adoption."
+    - "Data quality and governance are now critical for effective AI deployment."
+
+description: "An in-depth analysis of how 2024's AI advances impact electric utilities and IT, with actionable steps for readiness and success."
+seo-description: "Explore how AI breakthroughs in 2024 are transforming utilities and IT, and discover strategies to prepare for the future."
+
+categories:
+    - "Computers"
+    - "Science"
+    - "Opinion"
+    - "Artificial Intelligence"
+    - "Technology"
+
+tags: AI, LLM, Utilities, IT, Technology, 2025
+keywords: AI, LLM, artificial intelligence, utilities, IT, technology, 2025
+
+draft-status: draft
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: https://tedt.org/img/2025-01/AI-in-2024.webp
+image-alt: "AI transforming the utility and IT landscape in 2025"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "What AI in 2024 Means for Us in 2025"
+image-description: "Digital art representing the intersection of AI, utilities, and IT in 2025."
+image-title: "What AI in 2024 Means for Us in 2025"
+---
+
 _**Bottom Line Up Front:** AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader access—are reshaping what’s possible in 2025. For electric utilities and IT organizations, this means new opportunities in efficiency, customer service, and sustainability, but also new responsibilities around governance, training, and data quality. Success will depend not just on adopting AI, but on deploying it thoughtfully, with the right infrastructure, collaboration, and readiness across the organization._
 
 **What AI in 2024 Means for Us in 2025?**
@@ -60,5 +120,3 @@ The rapid progression of AI in 2024 signals a new era of opportunity and respons
 **Call to Action**
 
 How are you preparing yourself and your organization for the AI revolution? Share your strategies and insights in the comments below!
-
-see less

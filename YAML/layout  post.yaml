@@ -22,17 +22,17 @@ bullets:
 description: 
 seo-description:
 
-categories:
+categories: ( Artificial Intelligence | Bestiary| Books | Communications | Computers | Dungeon Crawl Classics | Dungeons & Dragons | ᚠᛟᛚᚲ ᛚᛟᚱᛖ | Gamma World | GURPS | Home | Maps | Middle-eartH | Mobile | Monsters | Movies | Mutant Crawl Classics | Opinion | Personal Writing | Philosophy | Projects | Prompts | Quotes | Religion | Reprint | Role Playing Games | Science | Shadowrun | The Märchen Engine )
 tags:
 keywords: 
 
 draft-status: 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: 
 image-alt: 
@@ -45,3 +45,7 @@ image-credits-artist-URL:
 image-credits-title:
 image-description:
 image-title: 
+
+
+
+

@@ -1,3 +1,63 @@
+---
+layout: post
+
+title: "AI in 2024 – A Year in Review"
+title-url:
+subtitle: "How rapid advances in AI reshaped the landscape and what comes next"
+subtitle-url:
+quote: "AI in 2024 became faster, cheaper, and more accessible—bringing powerful tools to more people than ever."
+excerpt: "A sweeping look at the breakthroughs, challenges, and lessons from a transformative year in artificial intelligence."
+source: "Original Content"
+source-url: ""
+call-to-action: "Explore the key trends and what they mean for your organization."
+
+date: 2025-01-02 00:00:00-08:00
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - "18 organizations achieved GPT-4-class model breakthroughs, signaling a new era of innovation."
+    - "LLM prices dropped dramatically—up to 27 times cheaper than previous years."
+    - "GPT-4-class models can now run on standard laptops, reducing reliance on expensive infrastructure."
+    - "Multimodal AI is now mainstream, enabling interaction across text, images, audio, and video."
+
+description: "A comprehensive review of AI's rapid evolution in 2024, highlighting technical advances, accessibility, and the challenges that remain."
+seo-description: "Discover how AI in 2024 became faster, cheaper, and more accessible, and what organizations must do to turn potential into measurable value."
+
+categories:
+    - "Computers"
+    - "Science"
+    - "Opinion"
+    - "Artificial Intelligence"
+    - "Technology"
+
+tags: AI, LLM, Multimodal, Technology, Review
+keywords: AI, LLM, artificial intelligence, review, technology, 2024
+
+draft-status: draft
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: https://tedt.org/img/2025-01/AI-in-2024.webp
+image-alt: "Abstract representation of AI progress in 2024"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "AI in 2024 – A Year in Review"
+image-description: "Abstract digital art symbolizing the acceleration and democratization of AI in 2024."
+image-title: "AI in 2024 – A Year in Review"
+---
+
 _**Bottom Line Up Front:**_ _AI in 2024 became faster, cheaper, and more accessible—bringing powerful tools to more people than ever. But uneven adoption, quality issues, and rising environmental costs remain. For SCE, the focus in 2025 must be on closing usage gaps, improving data quality, and turning AI potential into measurable value._
 
 **AI in 2024: A Year in Review**
