@@ -45,7 +45,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: https://tedt.org/img/2024-01/90mm_De_Bange_in_1898.webp
+image: https://tedt.org/img/2025-01/90mm-De-Bange-in-1898.webp
 image-alt: "AI and cross-functional teams shaping the future of utilities"
 image-artist: "Etienne-Prosper Berne-Bellecourt"
 image-artist-URL: "https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour"
