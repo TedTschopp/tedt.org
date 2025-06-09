@@ -8,10 +8,10 @@
               <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a href="{{ site.siteurl }}/profile/" class="nav-link m-2 menu-item">Profile</a>
+                    <a href="{{ site.siteurl }}/profile/" class="nav-link m-2 menu-item" style="font-size: 20px;">Profile</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#career" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#career" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px;">
                       Career
                     </a>
                     <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -43,9 +43,9 @@
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}" style="font-size: 20px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
                             {% else %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}" style="font-size: 20px;">{{ this-post-title }}</a></li>
                             {% endif %}
                           {% endif %}
                         {% endfor %}
@@ -53,7 +53,7 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link m-2 menu-item dropdown-toggle" href="{{ site.siteurl }}/#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px;">
                       Projects
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -82,9 +82,9 @@
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}" style="font-size: 20px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
                             {% else %}
-                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}">{{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.siteurl }}/#{{ post.title | slugify}}" style="font-size: 20px;">{{ this-post-title }}</a></li>
                             {% endif %}
                             {% assign first_entry = false %}
                           {% endif %}
@@ -93,19 +93,19 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                      <a href="{{ site.siteurl }}/category/Folklore" class="nav-link m-2 menu-item">Folklore</a>
+                      <a href="{{ site.siteurl }}/category/Folklore" class="nav-link m-2 menu-item" style="font-size: 20px;">Folklore</a>
                   </li>
                   <li class="nav-item">
-                      <a href="{{ site.siteurl }}/RPG/MCC-GW/" class="nav-link m-2 menu-item nav-active"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a>
+                      <a href="{{ site.siteurl }}/RPG/MCC-GW/" class="nav-link m-2 menu-item nav-active" style="font-size: 20px;"><span class="DCC">Dungeon Crawl Classics</span>,&nbsp;&nbsp;<span class="MCC">Mutant Crawl Classics</span>, &amp; <span class="GammaWorld">Gamma World</span></a>
                   </li>
                   <li class="nav-item">
-                    <a onclick="toggleTheme()" class="text-bg-secondary rounded nav-link m-2 menu-item" rel="noindex nofollow" style="cursor: pointer;"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    <a onclick="toggleTheme()" class="text-bg-secondary rounded nav-link m-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px;"><i class="fa-solid fa-circle-half-stroke" style="font-size: 20px;"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a onclick="togglePilcrow()" class="text-bg-secondary rounded nav-link m-2 menu-item" rel="noindex nofollow" style="cursor: pointer;"><i class="fa-solid fa-paragraph"></i></a>
+                    <a onclick="togglePilcrow()" class="text-bg-secondary rounded nav-link m-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px;"><i class="fa-solid fa-paragraph" style="font-size: 20px;"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a onclick="toggleBackToTableofContents()" class="text-bg-secondary rounded nav-link m-2 menu-item" rel="noindex nofollow" style="cursor: pointer;"><i class="fa-solid fa-section"></i></a>
+                    <a onclick="toggleBackToTableofContents()" class="text-bg-secondary rounded nav-link m-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px;"><i class="fa-solid fa-section" style="font-size: 20px;"></i></a>
                   </li>
                 </ul>
               </div>
