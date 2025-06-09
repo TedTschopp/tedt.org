@@ -119,7 +119,7 @@ If the goals are technology, system, engineering, or tool centric, use a Require
 
 Format all the User Stories, and Sub-User Stories in the following format: 
 
-"As a [User Role Who wants to do something], I want to [Action the User wants to do], so that [Outcome, Benefit, or Value Created]."
+"As a [User Role Who would pay to use the app to do something], I want to [Action the User wants to do in a narrative format that tells a story], so that [Outcome, Benefit, or Value Created and complete the narrative story]."
 
 Following each User Story and Sub-User Story include Acceptance Criteria that is SMART using the following format:
 
