@@ -79,6 +79,7 @@
   * Is this already solved in the project?
   * Is the library **well-maintained and lightweight**?
   * Will it create **conflicts** or add unnecessary complexity?
+  
 * Document why any new package is introduced and how it's used.
 * Use tools like `npm audit` or `dependabot` to track vulnerabilities.
 * Avoid pinning dependency versions unless required for stability.
