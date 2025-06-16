@@ -714,6 +714,7 @@ Describing the operating environment is a recommended practice in requirements d
 ## Product Architecture Overview
 
 ### Purpose
+
 Present the high‑level technical architecture—major components, data flows, and architectural patterns—so that engineers share a common blueprint and non‑technical stakeholders grasp how the solution hangs together.
 
 ### Instructions
@@ -753,6 +754,7 @@ Present the high‑level technical architecture—major components, data flows, 
 * Security review of proposed patterns (e.g., event bus encryption, API rate‑limiting).
 
 ### Standards & Best Practices
+
 C4 model, ISO/IEC/IEEE 42010 (architecture description), Azure Well-Architected Framework, NIST Cloud Security guidance, **TOGAF (The Open Group Architecture Framework)**.
 
 ## Assumptions & Dependencies
@@ -885,8 +887,6 @@ To outline the high-level timeline for the project, including key milestones and
 * **Q2 2026:** *Full Deployment* – **Milestone: Full Go-Live** by March 15, 2026 (deploy to all field crews statewide). Provide on-call support for any post-launch issues through April.
 * **Post-Launch:** *Stabilization & Next Phase Planning* – March–April 2026 monitor system stability, gather enhancement requests. **Milestone:** Project retrospective and transition to maintenance by May 2026. Any deferred “nice-to-have” features will be evaluated and possibly scheduled for a Phase 2 in the second half of 2026 (not covered in this PRD).
 
-*(Dates above are illustrative; actual schedule to be adjusted based on project start date and resources.)*
-
 ### Prerequisites
 
 * Alignment with project management on realistic timelines (maybe a separate project plan exists; ensure this section reflects it accurately).
@@ -963,9 +963,11 @@ Including references in a requirements document is part of IEEE recommendations 
 ## Open Questions / Issues Log
 
 ### Purpose
+
 Track unanswered questions and pending decisions so that nothing critical is overlooked and owners are accountable for resolution.
 
 ### Instructions
+
  1. Maintain a rolling list with ID, Question, Owner, Needed‑by Date, Status.
  2. Review at each sprint planning or stakeholder meeting.
  3. Promote resolved items to assumptions, requirements, or risks sections as appropriate.
@@ -986,4 +988,5 @@ Track unanswered questions and pending decisions so that nothing critical is ove
 * Agreement from stakeholders to supply timely responses.
 
 ### Standards & Best Practices
+
 PMBOK issue‑log practice; Agile “parking lot” technique; RACI for ownership clarity.
