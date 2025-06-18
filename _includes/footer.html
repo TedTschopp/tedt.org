@@ -51,12 +51,20 @@
                     {% assign categories = categories | push: link.Category %}
                   {% endunless %}
                 {% endfor %}
+
+                {%- assign categories_count = categories | size -%}
+                {%- assign NumberOfColumns = 12 | divided_by: categories_count -%}
+                {%- if 12 | modulo: categories_count != 0 -%}
+                  {%- assign NumberOfColumns = NumberOfColumns | plus: 1 -%}
+                {%- endif -%}
+                {% comment %} NumberOfColumns is now 12/categories rounded up{% endcomment %}
+                
                 
                 {% for Category in categories %}
                   {% if forloop.first %}
-                    <div class="col mb-3 h-100 ">
+                    <div class="col-{{ NumberOfColumns }} mb-3 h-100 ">
                   {% else %}
-                    <div class="col mb-3 h-100 ">
+                    <div class="col-{{ NumberOfColumns }} mb-3 h-100 ">
                   {% endif %}
                   <p class="h5">{{ Category }}</p>
                     <ul class="list-unstyled">
