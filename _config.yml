@@ -216,7 +216,7 @@ links:
     Icon-Class: fa-solid fa-envelope
     Category: 'About Me'
     # BUY ME A COFFEE
-  - Name: BuyMeACoffee
+  - Name: Buy<wbr>Me<wbr>A<wbr>Coffee
     URL: 'https://buymeacoffee.com'
     Username: TedT
     Type: fontawsome
