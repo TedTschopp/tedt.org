@@ -196,13 +196,13 @@ links:
     Color: '#00ab6c'
     Category: 'About Me'
     # Indie Web Camp
-  - Name: Indieweb
+  - Name: Indie<wbr>web
     URL: https://indieweb.org/User:Www.tedt.org
     Type: fontawsome
     Icon-Class: fa-regular fa-window-maximize
     Category: 'About Me'
     # Keybase
-  - Name: Keybase
+  - Name: Key<wbr>base
     URL: https://keybase.io
     Username: 'tedtschopp'
     Color: '#4866b0'
@@ -224,7 +224,7 @@ links:
     Color: '#FFDD00'
     Category: 'Support Me'
     # Ko-Fi
-  - Name: Ko-Fi
+  - Name: Ko-<wbr>Fi
     URL: 'https://ko-fi.com'
     Username: tedtschopp
     Type: fontawsome
@@ -248,7 +248,7 @@ links:
     Color: '#0072b1'
     Category: 'About Me'
     # web.brid.gy
-  - Name: web.brid.gy
+  - Name: web.<wbr>brid.<wbr>gy
     URL: https://web.brid.gy/r
     Username: 'https://tedt.org/'
     Type: fontawsome
@@ -263,7 +263,7 @@ links:
     Color: '#595aff'
     Category: 'Social Media'
     # BlueSky
-  - Name: BlueSky
+  - Name: Blue<wbr>Sky
     URL: https://bsky.app/profile
     Username: tedt.org
     Type: fontawsome
@@ -278,7 +278,7 @@ links:
     Icon-Class: fa-brands fa-threads
     Category: 'Social Media'
     # FACEBOOK
-  - Name: Facebook
+  - Name: Face<wbr>book
     URL: https://www.facebook.com
     Username: ted.tschopp
     Color: '#3b5998'
@@ -286,7 +286,7 @@ links:
     Icon-Class: fa-brands fa-facebook
     Category: 'Social Media'
     # INSTAGRAM
-  - Name: Instagram
+  - Name: Insta<wbr>gram
     URL: https://www.instagram.com
     Username: TedTschopp
     Color: '#DD2A7B'
@@ -310,7 +310,7 @@ links:
     Icon-Class: fa-brands fa-x-twitter
     Category: 'Social Media'
     # LINKEDIN
-  - Name: LinkedIn
+  - Name: Linked<wbr>In
     URL: https://www.linkedin.com/in
     Username: tedtschopp
     Color: '#2867B2'
@@ -318,7 +318,7 @@ links:
     Icon-Class: fa-brands fa-linkedin-in
     Category: 'Social Media'
     # SNAPCHAT
-  - Name: Snapchat
+  - Name: Snap<wbr>chat
     URL: https://www.snapchat.com/add
     Username: 'TedTschopp'
     Color: '#FFFC00'
@@ -334,14 +334,14 @@ links:
     Icon-Class: fa-brands fa-reddit-alien
     Category: 'Social Media'
     # GOODREADS
-  - Name: Goodreads
+  - Name: Good<wbr>reads
     URL: https://www.goodreads.com/user/show/856383-ted-tschopp
     Type: fontawsome
     Icon-Class: fa-brands fa-goodreads
     Color: '#e9e5cd'
     Category: 'Creative'
     # PINTEREST
-  - Name: Pinterest
+  - Name: Pin<wbr>terest
     URL: https://pinterest.com
     Username: 'tedtschopp'
     Color: '#E60023'
@@ -365,7 +365,7 @@ links:
     Color: '#B92B27'
     Category: 'Creative'
     # YOUTUBE
-  - Name: YouTube
+  - Name: You<wbr>Tube
     URL: https://www.youtube.com/channel
     Username: UC4Q8pXroTVyXrIxg2u82pwg
     Color: '#ff0000'
@@ -389,7 +389,7 @@ links:
     Color: '#1ab7ea'
     Category: 'Creative'
     # SOUNDCLOUD
-  - Name: SoundCloud
+  - Name: Sound<wbr>Cloud
     URL: https://www.soundcloud.com
     Username: ted-tschopp
     Color: '#FE5000'
@@ -397,14 +397,14 @@ links:
     Icon-Class: fa-brands fa-soundcloud
     Category: 'Creative'
     # Midjourney
-  - Name: Midjourney
+  - Name: Mid<wbr>journey
     URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
     Type: fontawsome
     Icon-Class: fa-solid fa-sailboat
     Color: '#e6dfd3'
     Category: 'Creative'
      # GITHUB
-  - Name: GitHub
+  - Name: Git<wbr>Hub
     URL: http://github.com
     Username: TedTschopp
     Color: '#6e5494'
