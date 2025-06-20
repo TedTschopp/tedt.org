@@ -1,3 +1,20 @@
+*This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). The Data Architecture defines how data is structured, sourced, governed, and flows across the enterprise to support business capabilities and strategic objectives. It ensures alignment with enterprise principles, regulatory requirements, and operational needs by documenting logical models, data lifecycle, quality controls, and security measures. This foundation enables consistent, trustworthy, and well-governed data usage across applications, processes, and stakeholders.*
+
+**Use of AI:** This template has been built to be used by Large Language Models to help you create the template and for you to perform a quality check on your template.  Finally LLMs can give you impact analysis on the quality check that it performed.  Here are several prompts to use with this template.
+
+```markdown
+Prompt to Build:  Be an Product Owner Responsible for building an Data Architecture.  Use the Data Architecture Template below to build out the Data Architecture.  I have attached documents that cover many of the information needed to fill out the template.  Read this attached information and then read over the template and then ask me questions until you get enough information and then start filling out the template. 
+<Data Architecture Template>
+{Insert this template here}
+```
+
+```markdown
+Prompt to perform a QDRT:  Be an member of a Quality Design Review Team who is trying to determine if a Data Architecture is complete enough to proceed into Construction.  Use the Data Architecture Template below to compare the attached Data Architecture to standards.  Use your own knowledge and the attached template to perform your assessment.  The review should contain an assessment of quality using a 6 point scale from Excellent to Unacceptable.  It should contain an assessment of Clarity and Completeness using a 3 point scale from Exceeds Expectations to Does Not Meet Expectations. It should contain an assessment of Recommended Next Steps that Include: Approved as-is to proceed to human review, Approved with Minor Revisions, Unapproved with Major Revisions.  It should then list out each item that does not meet expectations.  Finally, each piece of Feedback should have each of the following sections under each piece of feedback.  Feedback Item / Description: Briefly describe what is missing or unclear.  Impact: Describe the impact to the overall effort if not addressed in terms a non-technical college student could understand. Recommendation: Suggest specific corrective actions. Priority: Critical, High, Medium, Low.  Estimation Time To Fix: Number of hours it commonly takes to address this shortcoming.
+
+<Data Architecture Template>
+{Insert this template here}
+```
+
 # Information Systems Architecture: Data
 
 ## Strategic Alignment & Principles

@@ -1,5 +1,3 @@
-# Product Requirements Document (PRD) Template – Power Platform Solutions
-
 **Note:** This template is designed for internal IT software products built on Microsoft Power Platform (e.g. Power Apps, Power Automate, DataVerse). It is intended to be used by both IT teams and Business-Led Developers. Each section below includes its **Purpose**, **Instructions** on how to fill it out, an **Example**, **Prerequisites** needed before completing the section, and relevant **Standards/Best Practices** to consider. This template follows Agile / XP best practices, emphasizing clarity, collaboration, and compliance needs. _Please keep language clear and accessible, as non-IT professionals may be contributors and readers._
 
 **Use of AI:** This template has been built to be used by Large Language Models to help you create the template and for you to perform a quality check on your template.  Finally LLMs can give you impact analysis on the quality check that it performed.  Here are several prompts to use with this template.
@@ -16,6 +14,8 @@ Prompt to perform a QDRT:  Be an member of a Quality Design Review Team who is t
 <PRD Template>
 {Insert this template here}
 ```
+
+# Product Requirements Document (PRD) Template – Power Platform Solutions
 
 ## 1\. Executive Summary
 

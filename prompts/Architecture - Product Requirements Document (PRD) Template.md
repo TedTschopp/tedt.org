@@ -1,5 +1,3 @@
-# Product Requirements Document (PRD) Template (Utility Company – Internal Software)
-
 *This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). A PRD is a guide that defines a product’s purpose, features, functionality, and behavior. It communicates what will be built, who it is for, and how it benefits the end users, aligning development teams and stakeholders on scope and requirements.*
 
 **Use of AI:** This template has been built to be used by Large Language Models to help you create the template and for you to perform a quality check on your template.  Finally LLMs can give you impact analysis on the quality check that it performed.  Here are several prompts to use with this template.
@@ -16,6 +14,8 @@ Prompt to perform a QDRT:  Be an member of a Quality Design Review Team who is t
 <PRD Template>
 {Insert this template here}
 ```
+
+# Product Requirements Document (PRD) Template (Utility Company – Internal Software)
 
 ## Document Information & Revision History
 
