@@ -188,7 +188,7 @@ Project Support Analyst: Victor Zhou, [victor.zhou@example.com](mailto:victor.z
 <Prerequisites>
 * Project Team Roster (often in Project Kickoff Deck or PM tool like MS Project/MS Planner)
 * Project Charter or Project Initiation Document
-* Project Contact List in SharePoint or UMT360
+* Project Contact List in SharePoint
 
 <Standards>
 * **TOGAF Standard – Architecture Governance**
@@ -529,30 +529,30 @@ The Cross Project Dependencies section identifies other projects that may influe
 1. **Identify Related Projects:**  
 Work with the **Enterprise Architecture (EA) Team** and the **Business Relationship Manager (BRM)** to identify other projects within the enterprise that may introduce dependencies. These may be projects that deliver enabling components, share the same systems or teams, or are scheduled to go live in overlapping timeframes.
 2. **Use Formal Identifiers:**  
-For each dependency, reference the unique project identifier (where available) from formal planning systems such as **UMT360**, **PPM**, or **ETS Operational Plan**. Include both the name and ID for traceability.
-3. **Describe the Nature of the Dependency:**  
+For each dependency, reference the unique project identifier (where available) from formal planning systems such as **PPM**, or **ETS Operational Plan**. Include both the name and ID for traceability.
+1. **Describe the Nature of the Dependency:**  
 Provide a short description explaining how the success or timeline of your architecture project depends on, or is influenced by, the other project. Clarify whether the dependency is technical (e.g., shared APIs or infrastructure), business-driven (e.g., shared business process or customer impact), or resource-based (e.g., shared delivery teams or SMEs).
-4. **Engage Peer BRMs:**  
-The **BRM assigned to this architecture project** must coordinate with BRMs from the dependent projects. Together with the Solution Architect, they ensure the dependency is logged and tracked. Dependencies must be entered into **UMT360** to ensure visibility in planning and governance processes.
-5. **Ensure Ongoing Monitoring:**  
+1. **Engage Peer BRMs:**  
+The **BRM assigned to this architecture project** must coordinate with BRMs from the dependent projects. Together with the Solution Architect, they ensure the dependency is logged and tracked. Dependencies must be entered into Portfolio Management Toolto ensure visibility in planning and governance processes.
+1. **Ensure Ongoing Monitoring:**  
 Dependencies are not static. Establish a regular cadence to review, update, and manage the status of identified cross-project dependencies. Escalate changes in scope or schedule that could impact architectural alignment.
 
 <Example>
 Cross Project Dependencies:
 
 1. **Dependent Project:** Customer Digital Experience Platform
-   * **Project ID:** UMT360-04578
+   * **Project ID:** PPM360-04578
    * **Dependency Description:** This platform is responsible for delivering the unified customer identity layer that this architecture depends on for authentication and personalization features. Any delays or changes to their API contract would directly impact our timeline.
    * **BRMs Involved:** Jane Doe (Current Project), Mark Smith (Dependent Project)
-   * **Logged in UMT360:** Yes
+   * **Logged in Portfolio Management:** Yes
 2. **Dependent Project:** Grid Modernization Data Hub
    * **Project ID:** PPM-22143
    * **Dependency Description:** Our architecture relies on streaming data pipelines built as part of this initiative. Coordination is needed to ensure compatibility with our planned analytics services.
    * **BRMs Involved:** Jane Doe (Current Project), Priya Patel (Dependent Project)
-   * **Logged in UMT360:** In Progress
+   * **Logged in Portfolio Management:**  In Progress
 
 <Prerequisites>
-* UMT360
+* Portfolio Management Tooling
 * ETS/BRM Operational Plans
 * Dependency Logs
 * Architecture Review Board (ARB) meeting notes
@@ -806,12 +806,12 @@ Dependencies:
    * **Owner:** QA Center of Excellence
    * **Impact if Not Met:** Increased manual testing effort, higher risk of undetected defects, potential project schedule slip.
 4. **Project-to-Project Dependency:**
-   * **Description:** Data Lake Expansion Project (UMT360 ID: 33421) must complete Phase 1 to enable data ingestion for real-time analytics dashboard.
+   * **Description:** Data Lake Expansion Project (Portfolio Management ID: 33421) must complete Phase 1 to enable data ingestion for real-time analytics dashboard.
    * **Owner:** Data Platform Program Management
    * **Impact if Not Met:** Analytics capability would be delayed or require interim solution with reduced functionality.
 
 <Prerequisites>
-* Dependency Logs (UMT360)
+* Dependency Logs in Portfolio Management Tool
 * Integration Test Plans for As Is Components
 * Project Coordination Plans
 * Business Readiness Assessments
@@ -1026,7 +1026,6 @@ The Architectural Areas of Impact section identifies and measures how the propos
 3. **Complete the Table:** Fill out the Architectural Areas of Impact table, indicating the appropriate impact level for each category. Provide supporting notes or clarifications where needed.
 4. **Address Each Architectural Area:** Evaluate and document impacts across the following domains:
    * **Financial Impacts – IT Op Plan** e.g., Does the solution require OpEx or CapEx budget adjustments?
-   * **Grid Impacts** e.g., Does the solution affect grid operations, field devices, or energy data flow?
    * **Information Systems: Data** e.g., Enhances or creates new Data Objects to be added to Systems of Record.
    * **Information Systems – Machine Learning** e.g., Solution uses or develops new Machine Learning models.
    * **Information Systems – Artificial Intelligence** e.g., Solution incorporates Purchased AI Model solutions to create business outcomes.
@@ -1041,7 +1040,6 @@ The Architectural Areas of Impact section identifies and measures how the propos
 Architectural Areas of Impact:
 
 * **Financial Impact:** Low — Minimal OpEx increase for licensing new SaaS service.
-* **Grid Impact:** Blank — No impact on core grid systems or operations.
 * **Data Impact:** Medium — Enhancing existing Customer Account Objects to support new digital onboarding workflows.
 * **Machine Learning Impact:** Very Low — Utilizing existing ML models for customer churn prediction.
 * **Artificial Intelligence Impact:** Low — Consuming off-the-shelf AI models for chatbot customer support without model retraining.
@@ -1067,14 +1065,14 @@ Architectural Areas of Impact:
 The Architecture Vision Risk Assessment identifies risks associated with the early architectural direction of the project. It ensures that major assumptions, gaps, and dependencies are captured and assessed before significant solution development begins. This process enables better decision-making, highlights risk exposure early, and ensures that risk mitigation strategies are incorporated into the architecture lifecycle. Proper risk identification at the vision stage improves alignment with enterprise risk tolerance and prepares the project for architectural governance review.
 
 <Instructions>
-1. **Use UMT360 if Available:**
-   * If your project is tracked in **UMT360 (**[UMT360](https://edisonintl.sharepoint.com/sites/umt360/SitePages/Home.aspx)), complete the Architecture Vision Risk Assessment within the tool.
+1. **Use The Portfolio Management Tool if Available:**
+   * If your project is tracked in the Portfolio Management Tool, complete the Architecture Vision Risk Assessment within the tool.
    * Navigate to the **Assessments** tab associated with your project.
-   * Locate and complete the Architecture Vision Risk Assessment form provided in UMT360.
-   * No additional documentation needs to be inserted into the Solution Architecture Document (SAD) if completed and stored in UMT360.
-2. **Follow Manual Process if UMT360 is Not Used:**  If UMT360 is not being used for your project, you must manually complete the risk assessment by following the steps below:
+   * Locate and complete the Architecture Vision Risk Assessment form provided in the Portfolio Management Tool.
+   * No additional documentation needs to be inserted into the Solution Architecture Document (SAD) if completed and stored in the Portfolio Management Tool.
+2. **Follow Manual Process if the Portfolio Management Tool is Not Used:**  If the Portfolio Management Tool is not being used for your project, you must manually complete the risk assessment by following the steps below:
    * **Step 1:** Open the Architecture Vision Risk Assessment – Template ([_Architecture Risk Assessment – Template_](https://edisonintl.sharepoint.com/:x:/r/teams/itprocess/Process%20Templates%20%20Doc%20Library/Architecture%20Risk%20Assessment%20-%20Template.xlsx?d=w7e3d4fbf6c5149bcae2c93d7beab6d05&csf=1&web=1&e=HSwgKt)).
-   * **Step 2:** Save a local copy of the template into the project's document repository (such as UMT360, Octane, SharePoint, or another system of record).
+   * **Step 2:** Save a local copy of the template into the project's document repository (such as the Portfolio Management Tool, Octane, SharePoint, or another system of record).
       * Replace the word "Template" in the filename with the official project name to ensure clear traceability.
    * **Step 3:** Complete the **Architecture Vision** tab within the assessment spreadsheet.
       * Address all required fields, evaluating risks associated with architecture readiness, platform maturity, integration points, technology choices, regulatory alignment, and other key concerns.
@@ -1083,17 +1081,17 @@ The Architecture Vision Risk Assessment identifies risks associated with the ear
       * Paste the copied cells as a **picture** into this section of the Solution Architecture Document.
       * Ensure the picture is clear, properly formatted, and legible in both screen and print views.
 3. **Inserting the Risk Assessment into the SAD:**
-   * If not using UMT360, insert the pasted picture of the completed Architecture Vision Risk Assessment here, directly beneath this section heading.
+   * If not using the Portfolio Management Tool, insert the pasted picture of the completed Architecture Vision Risk Assessment here, directly beneath this section heading.
    * Ensure that the inserted content is labeled and referenced correctly for traceability during future project reviews or audits.
 
 <Example>
 Architecture Vision Risk Assessment:
 
-* **If Using UMT360:**
+* **If Using the Portfolio Management Tool:**
   * Assessment completed under Project ID 32456.
   * Risk categories assessed: Platform Readiness, Data Migration Complexity, External Vendor Dependencies.
   * No medium or high risks identified requiring escalation at this time.
-* **If Not Using UMT360:**
+* **If Not Using the Portfolio Management Tool:**
   * Pasted Image of Completed Architecture Vision Risk Assessment – Architecture Vision Tab inserted below.
   * Filename: "CustomerOnboardingPortal\_ArchitectureVisionRiskAssessment\_v1.xlsx"
   * Key Risks Highlighted:
@@ -1101,8 +1099,8 @@ Architecture Vision Risk Assessment:
     * API Gateway capacity limits require validation under projected peak loads (medium risk).
 
 <Prerequisites>
-* UMT360 Risk Assessment Tab
-* Risk Assessment Spreadsheet (if UMT360 not used)
+* the Portfolio Management Tool Risk Assessment Tab
+* Risk Assessment Spreadsheet (if the Portfolio Management Tool not used)
 * Architecture Governance Logs
 * Early-phase Tech/Platform Evaluation Notes
 
