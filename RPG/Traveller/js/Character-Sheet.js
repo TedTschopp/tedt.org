@@ -325,6 +325,32 @@ function addSingleSkill(skillName, specialization, skillLevel) {
             `;
 
   skillsContainer.appendChild(skillDiv);
+  sortSkillsContainer();
+}
+
+// Helper to sort the Skills section alphabetically by skill name and specialization
+function sortSkillsContainer() {
+  const container = document.getElementById("skills-container");
+  if (!container) return;
+  
+  const items = Array.from(container.querySelectorAll(".skill-item"));
+  items.sort((a, b) => {
+    const aName = a.querySelector(".skill-name").getAttribute("data-skill") || "";
+    const bName = b.querySelector(".skill-name").getAttribute("data-skill") || "";
+    const aSpec = a.querySelector(".skill-name").getAttribute("data-specialization") || "";
+    const bSpec = b.querySelector(".skill-name").getAttribute("data-specialization") || "";
+    
+    // First sort by skill name
+    if (aName.toLowerCase() === bName.toLowerCase()) {
+      // If skill names are the same, sort by specialization
+      return aSpec.toLowerCase().localeCompare(bSpec.toLowerCase());
+    }
+    return aName.toLowerCase().localeCompare(bName.toLowerCase());
+  });
+  
+  // Remove all and re-append in sorted order
+  container.innerHTML = "";
+  items.forEach(item => container.appendChild(item));
 }
 
 // Modified addSkill function to handle mandatory specializations
@@ -875,6 +901,8 @@ function loadCharacter() {
                         `;
         document.getElementById("skills-container").appendChild(skillDiv);
       });
+      // Sort skills alphabetically after loading
+      sortSkillsContainer();
     }
 
     // Weapons
@@ -1227,99 +1255,11 @@ function initializeCharacterSheet() {
   updateDM("sty");
   updateDM("std");
   updateDM("chr");
-
-  // Create the skills datalist for autocomplete
-  const skillSearch = document.getElementById("skillSearch");
-
-  // First check if datalist already exists and remove if so
-  const existingDatalist = document.getElementById("skill-list");
-  if (existingDatalist) {
-    existingDatalist.remove();
+  
+  // Initialize wealth last to ensure updateWealthDisplay is defined
+  if (document.getElementById("wlt-current")) {
+    updateDM("wlt");
   }
-
-  // Create fresh datalist
-  const datalist = document.createElement("datalist");
-  datalist.id = "skill-list";
-
-  // Sort the skills alphabetically
-  const sortedSkills = [...commonSkills].sort();
-
-  sortedSkills.forEach((skill) => {
-    const option = document.createElement("option");
-    option.value = skill;
-    datalist.appendChild(option);
-  });
-
-  document.body.appendChild(datalist);
-
-  // Make sure the input element has the list attribute
-  if (skillSearch) {
-    skillSearch.setAttribute("list", "skill-list");
-    console.log("Skills datalist connected to input");
-  } else {
-    console.error("Could not find skillSearch element");
-  }
-
-  // Add autocomplete handling for specializations
-  const specializationField = document.getElementById("specializationField");
-
-  // First check if specialization datalist already exists
-  const existingSpecList = document.getElementById("specialization-list");
-  if (existingSpecList) {
-    existingSpecList.remove();
-  }
-
-  // Create fresh specialization datalist
-  const specList = document.createElement("datalist");
-  specList.id = "specialization-list";
-  document.body.appendChild(specList);
-
-  if (specializationField) {
-    specializationField.setAttribute("list", "specialization-list");
-    // Update specialization options when skill changes
-    skillSearch.addEventListener("input", updateSpecializationOptions);
-    console.log("Specialization datalist connected");
-  } else {
-    console.error("Could not find specializationField element");
-  }
-
-  // Populate career dropdown
-  const careerSelect = document.getElementById("careerName");
-  if (careerSelect) {
-    // Clear existing options except the first one
-    while (careerSelect.options.length > 1) {
-      careerSelect.remove(1);
-    }
-
-    // Sort the careers alphabetically
-    const sortedCareers = [...mgt2Careers].sort();
-
-    // Add core rulebook careers
-    sortedCareers.forEach((career) => {
-      // Look for matching career in careerData (with or without numeric suffix)
-      const careerKeys = Object.keys(careerData);
-      const matchingCareer =
-        careerKeys.find(
-          (key) => key.startsWith(career + " (") || key === career
-        ) || career;
-
-      const option = document.createElement("option");
-      // Use the exact key from careerData to maintain consistency
-      option.value = matchingCareer;
-      // Display the clean career name without the number
-      option.textContent = matchingCareer.replace(/\s*\(\d+\)$/, "");
-      careerSelect.appendChild(option);
-    });
-
-    // Make sure the event handler is properly attached
-    careerSelect.addEventListener("change", updateAssignments);
-  }
-
-  // ...rest of initialization code...
-
-  // Initialize pre-career options button state
-  updateEducationButtons();
-  updateWealthDisplay();
 }
 
 // Set up event listener to initialize the sheet when DOM is ready
@@ -2246,6 +2186,8 @@ function loadCharacter() {
                         `;
         document.getElementById("skills-container").appendChild(skillDiv);
       });
+      // Sort skills alphabetically after loading
+      sortSkillsContainer();
     }
 
     // Weapons
@@ -2481,6 +2423,7 @@ function initializeCharacterSheet() {
 
     // Initialize additional characteristics
     updateDM("psi");
+    updateDM("wlt");
     updateDM("lck");
     updateDM("mrl");
     updateDM("sty");
@@ -2495,8 +2438,93 @@ function initializeCharacterSheet() {
     console.error("Error initializing character sheet:", e);
   }
 
-  // ... rest of the initialization code ...
-  
+  // Create the skills datalist for autocomplete
+  const skillSearch = document.getElementById("skillSearch");
+
+  // First check if datalist already exists and remove if so
+  const existingDatalist = document.getElementById("skill-list");
+  if (existingDatalist) {
+    existingDatalist.remove();
+  }
+
+  // Create fresh datalist
+  const datalist = document.createElement("datalist");
+  datalist.id = "skill-list";
+
+  // Sort the skills alphabetically
+  const sortedSkills = [...commonSkills].sort();
+
+  sortedSkills.forEach((skill) => {
+    const option = document.createElement("option");
+    option.value = skill;
+    datalist.appendChild(option);
+  });
+
+  document.body.appendChild(datalist);
+
+  // Make sure the input element has the list attribute
+  if (skillSearch) {
+    skillSearch.setAttribute("list", "skill-list");
+    console.log("Skills datalist connected to input");
+  } else {
+    console.error("Could not find skillSearch element");
+  }
+
+  // Add autocomplete handling for specializations
+  const specializationField = document.getElementById("specializationField");
+
+  // First check if specialization datalist already exists
+  const existingSpecList = document.getElementById("specialization-list");
+  if (existingSpecList) {
+    existingSpecList.remove();
+  }
+
+  // Create fresh specialization datalist
+  const specList = document.createElement("datalist");
+  specList.id = "specialization-list";
+  document.body.appendChild(specList);
+
+  if (specializationField) {
+    specializationField.setAttribute("list", "specialization-list");
+    // Update specialization options when skill changes
+    skillSearch.addEventListener("input", updateSpecializationOptions);
+    console.log("Specialization datalist connected");
+  } else {
+    console.error("Could not find specializationField element");
+  }
+
+  // Populate career dropdown
+  const careerSelect = document.getElementById("careerName");
+  if (careerSelect) {
+    // Clear existing options except the first one
+    while (careerSelect.options.length > 1) {
+      careerSelect.remove(1);
+    }
+
+    // Sort the careers alphabetically
+    const sortedCareers = [...mgt2Careers].sort();
+
+    // Add core rulebook careers
+    sortedCareers.forEach((career) => {
+      // Look for matching career in careerData (with or without numeric suffix)
+      const careerKeys = Object.keys(careerData);
+      const matchingCareer =
+        careerKeys.find(
+          (key) => key.startsWith(career + " (") || key === career
+        ) || career;
+
+      const option = document.createElement("option");
+      // Use the exact key from careerData to maintain consistency
+      option.value = matchingCareer;
+      // Display the clean career name without the number
+      option.textContent = matchingCareer.replace(/\s*\(\d+\)$/, "");
+      careerSelect.appendChild(option);
+    });
+
+    // Make sure the event handler is properly attached
+    careerSelect.addEventListener("change", updateAssignments);
+  }
+
   // Initialize pre-career options button state
   updateEducationButtons();
   
