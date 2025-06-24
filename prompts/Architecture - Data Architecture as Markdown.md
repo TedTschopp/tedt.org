@@ -1,3 +1,5 @@
+# Information Systems Architecture: Data
+
 *This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). The Data Architecture defines how data is structured, sourced, governed, and flows across the enterprise to support business capabilities and strategic objectives. It ensures alignment with enterprise principles, regulatory requirements, and operational needs by documenting logical models, data lifecycle, quality controls, and security measures. This foundation enables consistent, trustworthy, and well-governed data usage across applications, processes, and stakeholders.*
 
 **Use of AI:** This template has been built to be used by Large Language Models to help you create the template and for you to perform a quality check on your template.  Finally LLMs can give you impact analysis on the quality check that it performed.  Here are several prompts to use with this template.
@@ -14,9 +16,6 @@ Prompt to perform a QDRT:  Be an member of a Quality Design Review Team who is t
 <Data Architecture Template>
 {Insert this template here}
 ```
-
-# Information Systems Architecture: Data
-
 ## Strategic Alignment & Principles
 
 \<Purpose\>
@@ -977,7 +976,7 @@ For example, a solution’s data dissemination might be broken down into the fol
 \<Standards\>
   
 * **TOGAF Standard – Data Dissemination Diagram:** Focuses on how data is distributed and consumed across different systems and user groups:contentReference[oaicite:8]{index=8}. By cataloging all output channels (as we have done here), we adhere to the spirit of this standard artifact – ensuring that for every data element processed, its path to end consumers is documented and aligned with business objectives. This helps in verifying that the architecture meets all data distribution requirements and maintains consistency with enterprise data flow practices.
- 
+
 ## Data Security, Privacy & Governance
 
 \<Purpose\>
@@ -994,6 +993,7 @@ This section ensures that the architecture includes the necessary "guardrails" f
 \<Example\>
   
 For a **customer analytics platform** that will handle personal data, robust security and privacy measures are embedded into the architecture:  
+
 * **Data Security Controls:** All customer-related data stored in the analytics database is encrypted at rest using the enterprise-approved encryption standard (AES-256). In transit, data moves only over HTTPS or secure VPN tunnels. Access to sensitive data is strictly controlled via role-based access controls integrated with the corporate Identity and Access Management system (*Okta*); only authorized analysts with a business need can query the detailed data, and even then, direct identifiers like names or emails are masked in their view. The company’s **Data Loss Prevention (DLP)** policy is enforced by the cloud storage service – for instance, any attempt to download more than 1000 records of sensitive data triggers an alert and requires a business justification. The analytics environment is monitored by the Security Operations Center: logs from database queries and exports feed into a SIEM system where any anomalous access patterns (e.g., a user accessing an unusual amount of data at odd hours) generate alerts for investigation. Regular security reviews are scheduled to re-certify user access and to update encryption keys, aligning with IT governance requirements.  
 * **Impacted Business Processes:** These security measures affect several business processes. For example, the **Customer Onboarding** process (within the Customer Management capability) now has an added step where customer data is classified and tagged upon entry in the CRM, which then informs the analytics platform to mask certain fields. The **Marketing Analytics** process, which uses this platform, must incorporate a check that any datasets exported for marketing campaigns exclude personal identifiers (as per the new rules). We can summarize this in a table:
 
@@ -1082,7 +1082,7 @@ This section identifies the business processes that are impacted by the data-foc
 
 \<Example\>
   
-For a data architecture focused on customer data protection, multiple business processes across different capabilities are affected by new data governance measures. The Customer Onboarding & Profile Management process (under the Customer Management capability) now includes additional steps for identity verification and consent capture, which have been integrated into the CRM system and the customer web portal. Similarly, the Product Lifecycle Management process (within Product Management) requires classifying product data by sensitivity in the product catalog and ERP, ensuring that confidential product information is properly labeled and access is restricted. 
+For a data architecture focused on customer data protection, multiple business processes across different capabilities are affected by new data governance measures. The Customer Onboarding & Profile Management process (under the Customer Management capability) now includes additional steps for identity verification and consent capture, which have been integrated into the CRM system and the customer web portal. Similarly, the Product Lifecycle Management process (within Product Management) requires classifying product data by sensitivity in the product catalog and ERP, ensuring that confidential product information is properly labeled and access is restricted.
 
 Marketing Campaign Management processes (part of the Marketing capability) must incorporate checks against the centralized consent management system when analysts pull customer segments from the data warehouse, so that customers who have opted out of communications are automatically excluded from campaign lists. Additionally, the Order Fulfillment & Tracking process (under the Order Management capability) has been enhanced to improve data traceability in the analytics dashboard, which means the order management system now feeds certain transactional data into a governed analytics data store. These changes ensure that each department’s workflows remain compliant with the new data protection standards while continuing to support business operations efficiently.
 
