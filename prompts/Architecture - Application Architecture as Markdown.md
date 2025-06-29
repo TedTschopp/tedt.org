@@ -115,6 +115,77 @@ In the target architecture, each major application is **logically decomposed** i
 
 In conclusion, the Application Architecture is structured into distinct components aligned with business functions. We’ve chosen the right type of solution for each (build or buy) based on strategic fit and reuse potential. By breaking applications into services/modules, we improve maintainability and scalability – each component can evolve on its own. And by eliminating redundant systems and consolidating capabilities, we simplify the application landscape and reduce costs over time. Each component described will be designed and implemented in accordance with these principles, ensuring a clean, service-oriented architecture.
 
+### UI/UX Design Specification [TODO - Deduplicate]
+
+<Purpose>
+
+This section defines the user‑interface (UI) and user‑experience (UX) approach for all applications in scope. It ensures that every screen, workflow, and interaction:  
+
+* Aligns with business goals by enabling users (employees, customers, partners) to complete tasks efficiently and with satisfaction.
+* Reinforces the enterprise brand through a consistent visual language, tone of voice, and interaction style across web, mobile, and desktop channels.
+* Meets accessibility, usability, and responsiveness standards so that all users—including those with disabilities—can successfully leverage the solution on any device or assistive technology.
+* Integrates seamlessly with the overall Application Architecture by specifying UX patterns and component libraries that can be reused across micro‑front‑ends, portals, and native applications, thereby reducing design debt and accelerating development.
+
+* Business alignment – Screens and workflows help users (employees, customers, field technicians, partners) complete tasks quickly and accurately.
+* Brand consistency – All channels share one visual language, tone of voice, and interaction style.
+* Accessibility & inclusivity – Solutions conform to at least WCAG 2.2 AA so that people of all abilities and devices can succeed.
+* Reuse & efficiency – Shared design‑system components and interaction patterns reduce design / code debt across micro‑front‑ends, native apps, and portals.
+* Performance & quality – Clear budgets and usability KPIs drive lightweight, responsive, and continuously improved experiences.
+
+<Instructions>
+
+1. **Reference Personas & Journeys** – Summarize key user personas (e.g., “Customer Alice,” “Operations Bob”) and the critical journeys each application must support. Map every major UI flow to a business capability or service described earlier.  One‑page persona cards; end‑to‑end journey maps	Map each major UI flow to a business capability or service.
+2. **Reference Design Principles** - Up‑front principles (e.g., mobile‑first, glove‑friendly controls, minimal data entry)	Principles guide all later decisions.
+3. **Specify Design System Components** – Identify the design system (e.g., internal Design System X, Material 3, Carbon) and list the atomic components, templates, and micro‑front‑end shells to be reused. Link to the component repository and usage guidelines.  
+4. **Reference Visual & Interaction Standards** - Color palette, typography, spacing, iconography; navigation, input controls, error handling, data‑viz, offline banners	Cite corporate style guide; document break‑points and responsive grid.
+5. **Define Interaction Patterns** – Document standard navigation (global header, side‑rail, breadcrumb), input controls, error handling, data‑visualization patterns, and responsive break‑points. Explain how these patterns support the principles of clarity, efficiency, and forgiveness.  
+6. **Accessibility & Inclusivity** – State conformance targets (WCAG 2.2 AA minimum) and describe how color contrast, keyboard navigation, focus management, ARIA roles, and alternative text will be implemented and verified.  
+7. **Usability Metrics & Validation** – Establish KPIs such as task‑completion rate, System Usability Scale (SUS) score, Net Promoter Score (NPS), and time‑on‑task. Outline the cadence for usability testing (prototype tests, A/B experiments, post‑launch surveys) and the feedback loop to product backlogs.  
+8. **Performance & Responsiveness** – Define UI performance budgets (e.g., 100 ms input latency, 2 s Largest Contentful Paint on 3G) and responsive behavior across break‑points (mobile‑first, fluid grids).  
+9. **Internationalization & Localization** – Describe how text, date/time, number formats, and right‑to‑left layouts will be externalized and managed to support future languages and regions.  
+10. **Artifact Handoff & Governance** – Detail the toolchain (Figma/Sketch ↔ Storybook ↔ Git) and the review gates (Design Critique, Accessibility Audit, UX Sign‑off) required before a UI is considered “development‑ready.”
+
+<Example>
+
+* The **Customer Self‑Service Portal (A5)** will adopt the company’s **“Nimbus” design system**:  
+
+| **Aspect**               | **Application Example**                                                                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Consistent Look & Feel** | Global header with brand logo, search, and profile dropdown; left‑hand navigation collapsible at <768 px. |
+| **Design Principles**    | Field‑friendly: all touch targets ≥ 44 × 44 px; primary buttons left‑aligned for one‑handed thumb use.                                          |
+| **Visual Standards**     | Primary action color Blue Fire #00A9E0; body text 16 pt; icons from internal set.                                                               |
+| **Reusable Components**  | “Nimbus Button,” “Nimbus Data‑Table,” and “Swipe‑to‑complete” pattern published in Storybook.                                                   |
+| **Accessibility**        | All static text ≥ 4.5 : 1 contrast; modal dialogs trap focus; voice‑over labels on every icon. Every form element auto‑receives ARIA labels; color palette has been pre‑tested for 4.5:1 contrast; modal dialogs trap focus until dismissed                                                 |
+| **Responsive Pattern**   | Portal catalog: 4‑column (desktop), 2‑column (tablet), 1‑column (mobile) with src‑set WebP fallback.                                            |
+| **Performance Budget**   | Largest Contentful Paint < 1.8 s (3 G); bundle ≤ 250 KB.                                                                                        |
+| **Usability Validation** | Sprint‑3 usability test (8 users) → SUS 88; multi‑step checkout merged into one screen, reducing median task time from 2 min 45 s → 1 min 30 s. age weight capped at 250 KB (gzipped) per route; lazy‑load non‑critical images. Largest Contentful Paint is consistently under 1.8 s on throttled 3G per Lighthouse CI in the pipeline.|
+| **KPIs (snapshot)**      | Task completion ≥ 95 %; first‑time success ≥ 90 %; work‑order time < 3 min; SUS ≥ 75; offline‑sync success ≥ 99 %.                              |
+| **Governance**.          | A pull‑request adding a new UI pattern must include a link to the updated Figma frame, accessibility checklist, and automated visual‑regression screenshots before merge.|
+
+<Prerequisites>  
+
+* **Approved Personas, Journey Maps, and Service Blueprints** from Business Architecture.  
+* **Enterprise Brand & Style Guide** (logos, typography, color tokens) from Corporate Style Guide.  
+* **Established Design System or Component Library** with versioning and contribution workflow from Figma and Knapsack.  
+* **Accessibility Policy & Target Conformance Level** endorsed by Ethics & Compliance.  
+* **Front‑end Technology Stack Decision** (React + TypeScript, Angular, Flutter, etc.) and corresponding coding standards from Technology Domain Architecture Team.  
+* **Tooling Set Up:** Collaboration (Figma), component documentation (Storybook), automated accessibility testing (axe‑core, pa11y), performance monitoring (Lighthouse CI, Web Vitals).  
+* **Stakeholder Alignment** on UX success metrics and governance gates (Design Review Board schedule, gating criteria).
+* **Device/environment constraints** (sunlight readability, glove use, offline mode, etc.).
+* **Stakeholder agreement** on UX success metrics and design governance gates.
+
+<Standards & Best Practices>
+
+* Accessibility: WCAG 2.2 AA, ARIA 1.2, Section 508 (where applicable).
+* Usability & Human‑Centered Design: ISO 9241‑210, Nielsen‑Norman Heuristics, cognitive load minimization, Hick’s Law, Fitts’s Law.
+* Design Tokens & System: Use scalable design tokens (color, spacing, typography) stored in a single source and synced to code via CI.
+* Responsive & Mobile‑First: CSS Flexbox/Grid with min‑width break‑point strategy, fluid typography, touch‑target ≥ 44 px.
+* Performance: Core Web Vitals thresholds (LCP ≤ 2.5 s, CLS ≤ 0.1, INP ≤ 200 ms); lazy‑load, tree‑shaking, HTTP/2 multiplexing, image compression (AVIF/WebP).
+* Security: OWASP Secure Design Principles for front‑end (e.g., encode output, enforce CSP, anti‑XSS libraries).
+* Internationalization: Unicode UTF‑8 throughout, externalized resource bundles, plurals handling, Bidirectional I18N support.
+* Design Ops & Governance: Version‑controlled design files, automated visual‑regression testing (Chromatic/BackstopJS), linting for a11y rules in CI, and quarterly UX health audits.
+* Documentation & Handoff: OpenAPI/Swagger for any UX‑facing APIs, zero‑handoff design‑to‑code workflows (e.g., Figma → CSS/React code snippets), and living style‑guide portals updated with each CI build.
+
 ### Current State Architecture
 
 <Purpose>
