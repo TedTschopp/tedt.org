@@ -1,3 +1,78 @@
+---
+layout: post
+
+title: "The Salmon Made Me Do It"
+subtitle: "How a family dinner taught me the real secret to building trust in AI at work"
+quote: "People in enterprises don't just need AI access. They need permission to use it."
+excerpt: "This article uses a simple family dinner to illustrate a deeper enterprise truth: building trust in AI starts with small, low-risk interactions, encouraging employees to solve 'salmon-sized problems' before applying AI to complex, high-stakes decisions."
+source: "Original Content"
+source-url: ""
+call-to-action: "What's one small step you can take right now toward building trust in AI?"
+
+date: 2025-04-13
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Building AI trust starts with small, low-risk interactions like cooking dinner rather than high-stakes business decisions
+    - Organizations need to create safe spaces for AI experimentation beyond just providing access
+    - AI collaboration feels conversational—like having a patient sous-chef who adapts to your specific needs
+    - Employees need permission to ask AI small questions and develop decision-making muscle memory
+    - Trust grows through repeated practice with "salmon-sized problems" before tackling complex challenges
+
+description: "A personal story about using AI to cook a family salmon dinner that reveals deeper insights about how enterprises can build employee trust in AI through small, safe experimentation rather than diving into high-stakes applications."
+
+seo-description: "Learn how to build AI trust in enterprises through small experiments. Personal story shows why organizations need safe spaces for AI practice before high-stakes decisions."
+
+categories: 
+    - AI
+    - Opinion
+    - Personal Writing 
+
+tags: 
+    - AI trust
+    - enterprise AI
+    - family dinner
+    - salmon cooking
+    - AI collaboration
+    - workplace AI
+    - AI experimentation
+    - organizational change
+    - AI adoption
+    - practical AI
+    - AI culture
+    - trust building
+    - low-risk AI
+    - AI permission
+    - conversational AI
+
+keywords: AI trust building, enterprise AI adoption, workplace AI culture, AI experimentation, organizational AI trust, practical AI applications
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Family gathered around dinner table with perfectly cooked salmon, representing successful AI collaboration"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: "Visual metaphor for how small, successful AI interactions build trust and confidence in larger applications"
+image-title: "The Trust-Building Power of Salmon-Sized Problems"
+
+mastodon-post-id: 
+
+---
+
 _**Bottom Line Up Front:**_ _This article uses a simple family dinner to illustrate a deeper enterprise truth: building trust in AI starts with small, low-risk interactions. You’ll learn why organizations must go beyond access and actively create space for experimentation—encouraging employees to solve “salmon-sized problems” before applying AI to complex, high-stakes decisions. Trust, like competence, grows through repeated practice. This story makes the case for embedding safe, practical AI use into daily workflows—one question, one outcome, one success at a time._
 
   

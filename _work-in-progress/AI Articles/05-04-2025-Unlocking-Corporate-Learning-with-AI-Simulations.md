@@ -1,3 +1,78 @@
+---
+layout: post
+
+title: "Unlocking Corporate Learning with AI Simulations"
+subtitle: "How recursion principles mirror the design of meaningful AI-driven training experiences"
+quote: "So, what scenario would you design today, and what hidden note might your learners uncover within it?"
+excerpt: "Learn about recursion—a powerful concept of breaking down complex problems into simpler, repeatable steps—and how it mirrors the use of AI-driven simulations in corporate training to help learners practice essential skills."
+source: "Original Content"
+source-url: ""
+call-to-action: "Try the Simulation Creator prompt to design your own AI-driven corporate training scenarios"
+
+date: 2025-05-04
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Recursion breaks complex problems into simpler, repeatable steps—just like AI simulations break learning into manageable interactions
+    - AI serves as both Game Master and Mentor, creating scenarios for practicing negotiation, hiring, and pitching skills
+    - Simulations offer three distinct scenarios tailored to individual skill levels and learning objectives
+    - Six conversational turns guide participants through meaningful decisions before providing balanced feedback
+    - Includes practical Simulation Creator prompt for designing custom AI-driven corporate training experiences
+
+description: "Explore how recursion principles guide the design of AI-driven corporate simulations, creating meaningful practice opportunities for essential business skills through thoughtful, iterative dialogue between learners and AI mentors."
+
+seo-description: "Discover how to use AI simulations for corporate training. Learn recursion principles and get a practical prompt for creating custom AI-driven learning scenarios for business skills."
+
+categories: 
+    - AI
+    - Opinion
+    - Projects 
+
+tags: 
+    - AI simulations
+    - corporate training
+    - recursion
+    - AI mentoring
+    - business skills
+    - Enterprise Architecture
+    - AI dialogue
+    - simulation design
+    - corporate learning
+    - AI prompting
+    - role-playing
+    - skill development
+    - Copilot
+    - training scenarios
+    - educational technology
+
+keywords: AI corporate training, AI simulations, recursion learning, corporate skill development, AI mentoring, business training simulations
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Nested boxes representing recursion concept, symbolizing AI simulation layers in corporate learning"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: "Visual metaphor of nested boxes representing how AI simulations break complex learning into manageable layers"
+image-title: "The Art of Recursive Learning: AI Simulations in Corporate Training"
+
+mastodon-post-id: 
+
+---
+
 _**Bottom Line Up Front:**_ _In this article, you'll learn about recursion—a powerful concept of breaking down complex problems into simpler, repeatable steps—and how it mirrors the use of AI-driven simulations in corporate training. You'll also understand how to effectively design and utilize AI simulations to help learners practice essential corporate skills._
 
   

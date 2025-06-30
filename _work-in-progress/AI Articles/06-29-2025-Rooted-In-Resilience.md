@@ -1,4 +1,78 @@
-Title: “Rooted in Resilience: Navigating the AI Revolution in Enterprise SaaS”
+---
+layout: post
+
+title: "Rooted in Resilience"
+subtitle: "Navigating the AI Revolution in Enterprise SaaS"
+quote: "Deep roots don't fear storms—they welcome them."
+excerpt: "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally."
+source: "Original Content"
+source-url: ""
+call-to-action: "Share your thoughts on how AI is transforming your enterprise software strategies"
+
+date: 2025-06-29
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - AI is transforming enterprise software from static solutions to dynamic, just-in-time capabilities
+    - Large enterprises must shift from infrastructure-bound systems to agile, adaptive platforms
+    - The change mirrors historical electrification - utilities can lead by embracing transformation
+    - Sam Altman's vision of AI-generated software challenges traditional SaaS business models
+    - Success requires proactive adaptation with awareness of both opportunities and challenges
+
+description: "Exploring how artificial intelligence is revolutionizing enterprise SaaS and what utilities and large organizations must do to thrive in this new landscape of just-in-time software solutions."
+
+seo-description: "Discover how AI is transforming enterprise SaaS and learn strategies for utilities and large enterprises to navigate the shift from static software to dynamic, AI-driven solutions."
+
+categories: 
+    - AI
+    - Opinion
+    - Philosophy
+
+tags: 
+    - artificial intelligence
+    - enterprise software
+    - SaaS transformation
+    - utility companies
+    - digital transformation
+    - Sam Altman
+    - OpenAI
+    - just-in-time software
+    - business strategy
+    - technology leadership
+
+keywords: AI revolution, enterprise SaaS, utility software, digital transformation, artificial intelligence strategy, just-in-time software, Sam Altman, OpenAI, enterprise technology, business resilience
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Deep-rooted tree weathering a storm, symbolizing enterprise resilience during AI transformation"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: "Metaphorical representation of how enterprises with deep roots can weather the storm of AI transformation"
+image-title: "Enterprise Resilience in the AI Storm"
+
+mastodon-post-id: 
+
+---
+
+**Bottom Line Up Front:**
+*Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. To thrive, organizations must shift from static, infrastructure-bound solutions toward agile, adaptive systems empowered by AI-driven, "just-in-time" capabilities. Embracing this transformation proactively, with awareness of both opportunities and inherent challenges, will be essential for resilience and sustained innovation.*e: “Rooted in Resilience: Navigating the AI Revolution in Enterprise SaaS”
+
+**Bottom Line Up Front:**
+*Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. To thrive, organizations must shift from static, infrastructure-bound solutions toward agile, adaptive systems empowered by AI-driven, "just-in-time" capabilities. Embracing this transformation proactively, with awareness of both opportunities and inherent challenges, will be essential for resilience and sustained innovation.*
 
 Every autumn, when the Santa Ana winds sweep across Southern California, I watch how the landscape responds. Some trees and plants stand firm, deeply rooted, unaffected by the fierce gusts. Others, fragile or poorly anchored, bend and break under the relentless force. Observing this annual dance, I’m reminded how resilience—whether in nature, our communities, or our enterprises—depends profoundly on how deeply and securely we anchor ourselves when inevitable storms arrive.
 

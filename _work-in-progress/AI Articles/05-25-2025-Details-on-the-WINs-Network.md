@@ -1,3 +1,76 @@
+---
+layout: post
+
+title: "Details on the WINs Network"
+subtitle: "A practical framework for identifying AI opportunities in your workflows"
+quote: "AI isn't just about efficiency—it's about freeing your teams to focus more on meaningful, creative, and inherently human activities, driving your organization toward a more purposeful and productive future."
+excerpt: "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization."
+source: "Original Content"
+source-url: ""
+call-to-action: "Reach out if you're interested in conducting a personalized WINS evaluation for your workflows"
+
+date: 2025-05-25
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - WINS framework categorizes work into four types: AI-Automatable, AI-Accelerated, AI-Supported, and AI-Ignorable processes
+    - Evaluate workflows by both percentage scope and cost to identify highest ROI opportunities
+    - 2x2 matrix plots High/Low Cost vs High/Low Scope to create strategic AI adoption priorities
+    - Immediate AI Impact quadrant requires rapid adoption for competitive relevance
+    - Framework helps organizations focus AI investment where it delivers greatest business value
+
+description: "A comprehensive guide to the WINS (Words, Images, Numbers, Sounds) framework for evaluating AI opportunities in organizational workflows, including practical categorization methods and strategic implementation guidance."
+
+seo-description: "Learn the WINS framework for AI strategy: categorize workflows, evaluate costs vs scope, and prioritize AI adoption for maximum ROI. Includes 2x2 matrix analysis and utility industry examples."
+
+categories: 
+    - AI
+    - Opinion
+    - Projects 
+
+tags: 
+    - WINS framework
+    - AI strategy
+    - workflow analysis
+    - digital transformation
+    - AI adoption
+    - utility industry
+    - automation
+    - business strategy
+    - ROI analysis
+    - organizational change
+    - generative AI
+    - process optimization
+    - workforce planning
+
+keywords: WINS framework, AI workflow analysis, AI strategy framework, digital transformation, AI ROI, utility AI adoption, workflow categorization, AI automation
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "2x2 matrix diagram showing WINS framework categories for AI workflow analysis"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: "Visual representation of the WINS framework matrix for categorizing AI opportunities by cost and scope"
+image-title: "WINS Framework: Strategic AI Adoption Matrix"
+
+mastodon-post-id: 
+
+---
+
 This week's post is a departure from my typical approach, moving from broader reflections into the specifics of actionable frameworks. Last week, I introduced the [WINS (Words, Images, Numbers, Sounds) framework](https://engage.cloud.microsoft.mcas.ms/main/org/sce.com/threads/eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzMzMjYyNjU4ODg1MjIyNCJ9?trk_copy_link=V2&McasTsid=11522&McasCtx=4), highlighting its potential to clarify and focus your organization's generative AI strategy. Today, we'll dive deeper, taking a serious and practical look at how this method can concretely identify the impacts—and opportunities—AI brings to your everyday work. If you're interested in understanding how WINS applies to your specific workflows, reach out—I'd be happy to help you conduct a personalized WINS evaluation.
 
   

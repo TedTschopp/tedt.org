@@ -1,3 +1,76 @@
+---
+layout: post
+
+title: "Riding the AI Wave"
+subtitle: "This Isn't Just Another Trend"
+quote: "As we guide these technologies into the future, may we do so with the same mix of curiosity, competence, and care that Pieter showed—not just moving fast, but moving wisely."
+excerpt: "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed."
+source: "Original Content"
+source-url: ""
+call-to-action: "Share how you're navigating AI adoption in your workplace—are you taking the high-performance route or the exploratory Sunday drive?"
+
+date: 2025-06-01
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - ChatGPT reached 800 million weekly users in just 17 months—8x growth since inception
+    - Tech giants increased AI infrastructure spending by 63% year-over-year
+    - AI adoption is surpassing even the internet boom of the late '90s and early 2000s
+    - AI agents are streamlining complex tasks like document summarization and customer service
+    - Workers can approach AI as either a high-performance tool or exploratory learning experience
+
+description: "Exploring Mary Meeker's latest AI trends report through the lens of a father-son camping trip, examining how unprecedented AI adoption rates are transforming workplaces and what it means for employees across all industries."
+
+seo-description: "Mary Meeker's AI trends report shows unprecedented adoption rates. Learn how AI is transforming workplaces faster than the internet boom and practical approaches for navigating this shift."
+
+categories: 
+    - AI
+    - Opinion
+    - Personal Writing 
+
+tags: 
+    - Mary Meeker
+    - AI trends
+    - ChatGPT adoption
+    - workplace transformation
+    - artificial intelligence
+    - tech investment
+    - employee adaptation
+    - camping metaphor
+    - father-son
+    - AI agents
+    - digital transformation
+    - venture capital
+    - Queen of the Internet
+
+keywords: Mary Meeker AI report, AI adoption trends, ChatGPT growth, workplace AI transformation, tech infrastructure investment, AI agents, employee AI training
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Father and son navigating terrain during camping trip, symbolizing AI navigation in the workplace"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: "Metaphor for navigating AI adoption with the same thoughtful approach as exploring new terrain"
+image-title: "Navigating the AI Wave with Wisdom and Curiosity"
+
+mastodon-post-id: 
+
+---
+
 Bottom Line Up Front: Mary Meeker’s latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history. AI is no longer a futuristic concept or mere hype—it’s a present reality being adopted at unprecedented speed, transforming how people work, communicate, and make decisions. This post reflects on how these trends, backed by significant investment and rapid adoption, intersect with the everyday experiences of employees across industries, viewed through the lens of a weekend campout with my son. Whether you’re navigating complexity intentionally or exploring new tools with curiosity, AI’s trajectory will impact your role, your workflow, and your future.
  
 ---

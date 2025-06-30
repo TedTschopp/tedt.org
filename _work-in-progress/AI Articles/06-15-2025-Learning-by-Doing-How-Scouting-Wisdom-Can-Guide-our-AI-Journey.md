@@ -1,3 +1,75 @@
+---
+layout: post
+
+title: "Learning by Doing"
+subtitle: "How Scouting Wisdom Can Guide our AI Journey"
+quote: "Let's move forward together, thoughtfully, eagerly, and openly, into this new, hopeful chapter of our shared learning journey."
+excerpt: "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation."
+source: "Original Content"
+source-url: ""
+call-to-action: "Share how you're integrating AI learning into your daily work routine"
+
+date: 2025-06-15
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - AI learning happens naturally through daily practice, like learning to speak or ride a bike
+    - AI becomes a co-creator, generating interactive scenarios and responsive simulations
+    - Real-time AI guidance provides compassionate support without fear of costly mistakes
+    - AI handles routine tasks, freeing humans for deeper work requiring creativity and judgment
+    - Four-step journey: Reflect & Identify, Partner & Create, Experiment & Learn, Share & Grow
+
+description: "Exploring how the principles of Scout camp—personalized guidance, real-world practice, and adaptive learning—can transform how we approach AI training and integration in the workplace."
+
+seo-description: "Learn how Scout camp principles can guide AI learning in the workplace. Discover practical steps for integrating AI training through personalized guidance and real-world application."
+
+categories: 
+    - AI
+    - Opinion
+    - Personal Writing 
+
+tags: 
+    - artificial intelligence
+    - learning methodology
+    - workplace training
+    - scouting
+    - AI integration
+    - human-AI partnership
+    - professional development
+    - adaptive learning
+    - Father's Day
+    - BSA Scout camp
+    - employee training
+    - Fortune magazine
+
+keywords: AI learning, Scout camp wisdom, workplace AI training, human-AI partnership, adaptive learning, AI integration, personalized guidance, real-time learning, professional development
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: ""
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+
+mastodon-post-id: 
+
+---
+
 Yesterday for Father’s Day, I took Pieter to his first week-long BSA Scout camp. He’s excited, filled with anticipation, and perhaps a hint of anxiety. He knows he has moved up from Cub Scouts into a new adventure—learning knots, mastering the art of fire-building, exploring navigation, and absorbing crucial first-aid skills. The curriculum he'll engage with this week focuses on the fundamentals of Outdoor Scouting. However, this week isn’t an end unto itself; it will prepare him for what comes next—a focus on the softer skills of leadership, service, teamwork, communication, conflict resolution, respect, and mentoring. Having participated in the program myself as a kid, I know his camp counselors won't just be instructors; they'll be attentive guides, sensitive to each scout’s unique story, background, and pace, adjusting and tailoring their teaching to offer personalized paths to mastery.
 
 Recently, Fortune reminded us of something profoundly simple yet easily overlooked—[mastering AI isn't just a skill like fire-building or navigation](https://fortune.com/2025/06/11/ai-employee-training-simulation-labor/). It’s a skill that prepares you for what's next, a way of working where learning with AI is woven seamlessly into the tapestry of your daily tasks. Like learning to speak or ride a bike, this happens naturally, moment by moment. Companies aren't merely instructing employees on "how" to operate AI; they’re inviting them into a dynamic partnership, where technology and human intuition grow together, deeply intertwined. This isn’t about static training manuals or rigid workshops. Instead, it’s about real-time adaptation, exploration, and discovery alongside the very tools shaping our work.
