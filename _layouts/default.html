@@ -25,6 +25,27 @@
     {% include all-css-includes.html %}
     <!-- END OF CSS INCLUDE -->
 
+    <style>
+      h3.3-line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+
+        height: calc(1.2em * 3);         /* exactly line-height × number of lines (1.2em × 3) */
+      }
+      p.3-line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+
+        height: calc(var(--bs-body-line-height) * 3);         /* exactly line-height × number of lines (1.2em × 3) */
+      }
+    </style>
+
+
+
     <!-- Scripts that need to be at the end of the header -->
     {% include scripts.html %}
   </head>
@@ -71,8 +92,8 @@
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
                   <h2 class="card-title" id="blog">Blog</h2>
-                  <h3 class="text-muted card-subtitle mb-2">Exploring the Intersection of Tech, Theology, and Imagination</h3>
-                  <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
+                  <h3 class="text-muted card-subtitle mb-2 3-line-clamp">Exploring the Intersection of Tech, Theology, and Imagination</h3>
+                  <p class="card-text 3-line-clamp">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
                   {% assign count = 0 %}
@@ -164,8 +185,8 @@
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
                   <h2 class="card-title" id="folklore"><a href="/category/Folklore">Swiss Folklore</a></h2>
-                  <h3 class="text-muted card-subtitle mb-2">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
-                  <p class="card-text">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
+                  <h3 class="text-muted card-subtitle mb-2 3-line-clamp">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
+                  <p class="card-text 3-line-clamp">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
                   {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" | sort: "date" | reverse %}
@@ -363,8 +384,8 @@
 
                             <div class="card-body pt-2 pb-2 p-4">
                               <h2 class="card-title"><a href="/category/{{ category.category }}">{{ category_data_title }}</a></h2>
-                              <h3 class="text-muted card-subtitle mb-2">{{ category_data_subtitle }}</h3>
-                              <p class="card-text">{{ category_data_description }}</p>
+                              <h3 class="text-muted card-subtitle mb-2 3-line-clamp">{{ category_data_subtitle }}</h3>
+                              <p class="card-text 3-line-clamp">{{ category_data_description }}</p>
                             </div>
 
                             <div class="card-footer p-0">
