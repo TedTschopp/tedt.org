@@ -37,6 +37,24 @@
                 text-decoration-thickness: 3px;
             }
 
+            h3.three-line-clamp {
+                display: -webkit-box;
+                -webkit-line-clamp: 3; 
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+
+                height: calc(1.2em * 3);         /* exactly line-height × number of lines (1.2em × 3) */
+            }
+            p.three-line-clamp {
+                display: -webkit-box;
+                -webkit-line-clamp: 3; 
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+
+                height: calc(var(--bs-body-line-height) * 3);         /* exactly line-height × number of lines (1.2em × 3) */
+            }
+
+
         </style>
     {% else %}    
         <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/blog-post.css">
