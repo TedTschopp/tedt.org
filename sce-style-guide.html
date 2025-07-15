@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCE Design System - Style Guide</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --sce-bg: #f1f0ee;
+            --sce-dark: #101828;
+            --sce-text: #161616;
+            --sce-text-muted: rgba(22, 22, 22, 0.6);
+            --sce-black: #000000;
+            --sce-primary: #0066cc;
+            --sce-secondary: #6c757d;
+            --sce-success: #28a745;
+            --sce-warning: #ffc107;
+            --sce-danger: #dc3545;
+            --sce-info: #17a2b8;
+            --sce-light: #f8f9fa;
+            --sce-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--sce-bg);
+            color: var(--sce-text);
+        }
+        
+        .font-light { font-weight: 300; }
+        .font-normal { font-weight: 400; }
+        .font-semibold { font-weight: 600; }
+        .font-bold { font-weight: 700; }
+        .font-extrabold { font-weight: 800; }
+        
+        .text-italic { font-style: italic; }
+        
+        .sce-logo {
+            width: 40px;
+            height: 40px;
+            background-color: var(--sce-black);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .color-swatch {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .color-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .typography-sample {
+            border-left: 4px solid var(--sce-primary);
+            padding-left: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .component-showcase {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        
+        .icon-item {
+            text-align: center;
+            padding: 16px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-item:hover {
+            background-color: #f8f9fa;
+            border-color: var(--sce-primary);
+        }
+        
+        .icon-item i {
+            font-size: 24px;
+            color: var(--sce-dark);
+            margin-bottom: 8px;
+        }
+        
+        .spacing-example {
+            background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+                        linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+                        linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+                        linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+            border: 1px solid #dee2e6;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--sce-dark) !important;
+        }
+        
+        .section-header {
+            border-bottom: 2px solid var(--sce-primary);
+            padding-bottom: 12px;
+            margin-bottom: 32px;
+        }
+        
+        .btn-sce-primary {
+            background-color: var(--sce-primary);
+            border-color: var(--sce-primary);
+            color: white;
+        }
+        
+        .btn-sce-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            color: white;
+        }
+        
+        .btn-sce-outline {
+            color: var(--sce-primary);
+            border-color: var(--sce-primary);
+        }
+        
+        .btn-sce-outline:hover {
+            background-color: var(--sce-primary);
+            border-color: var(--sce-primary);
+            color: white;
+        }
+        
+        .form-control:focus {
+            border-color: var(--sce-primary);
+            box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+        }
+        
+        .table-sce th {
+            background-color: var(--sce-dark);
+            color: white;
+            border: none;
+        }
+        
+        .table-sce td {
+            border-color: #e9ecef;
+        }
+        
+        @media (max-width: 768px) {
+            .icon-grid {
+                grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+                gap: 12px;
+            }
+            
+            .component-showcase {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="sce-logo me-3">SEC</div>
+                <span class="font-bold">SCE Design System</span>
+                <small class="text-muted ms-2">Style Guide</small>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#colors">Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#typography">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#components">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#icons">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#spacing">Spacing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4 py-5">
+        <!-- Hero Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="text-center py-5">
+                    <h1 class="display-4 font-light text-italic text-sce-dark mb-3">
+                        SCE Design System Style Guide
+                    </h1>
+                    <p class="lead font-light text-italic text-sce-muted">
+                        A comprehensive guide to Southern California Edison's design language, 
+                        components, and visual standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Palette Section -->
+        <section id="colors" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-header font-semibold text-sce-dark">Color Palette</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Primary Colors -->
+                <div class="col-12 mb-4">
+                    <h3 class="h5 font-semibold text-sce-dark mb-3">Primary Colors</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <div class="color-swatch" style="background-color: var(--sce-primary);">
+                                <div class="color-info">
+                                    <div>Primary</div>
+                                    <div>#0066cc</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="color-swatch" style="background-color: var(--sce-dark);">
+                                <div class="color-info">
+                                    <div>Dark</div>
+                                    <div>#101828</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="color-swatch" style="background-color: var(--sce-text);">
+                                <div class="color-info">
+                                    <div>Text</div>
+                                    <div>#161616</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="color-swatch" style="background-color: var(--sce-bg);">
+                                <div class="color-info" style="background: rgba(0,0,0,0.6);">
+                                    <div>Background</div>
+                                    <div>#f1f0ee</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility Colors -->
+                <div class="col-12 mb-4">
+                    <h3 class="h5 font-semibold text-sce-dark mb-3">Utility Colors</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-success);">
+                                <div class="color-info">
+                                    <div>Success</div>
+                                    <div>#28a745</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-warning);">
+                                <div class="color-info" style="background: rgba(0,0,0,0.6);">
+                                    <div>Warning</div>
+                                    <div>#ffc107</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-danger);">
+                                <div class="color-info">
+                                    <div>Danger</div>
+                                    <div>#dc3545</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-info);">
+                                <div class="color-info">
+                                    <div>Info</div>
+                                    <div>#17a2b8</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-light);">
+                                <div class="color-info" style="background: rgba(0,0,0,0.6);">
+                                    <div>Light</div>
+                                    <div>#f8f9fa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="color-swatch" style="background-color: var(--sce-white);">
+                                <div class="color-info" style="background: rgba(0,0,0,0.6);">
+                                    <div>White</div>
+                                    <div>#ffffff</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-header font-semibold text-sce-dark">Typography</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="typography-sample">
+                        <h1 class="display-1 font-light text-italic text-sce-dark">Display 1</h1>
+                        <p class="text-muted">Font: Open Sans Light Italic, Size: 6rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <h1 class="font-bold text-sce-dark">Heading 1</h1>
+                        <p class="text-muted">Font: Open Sans Bold, Size: 2.5rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <h2 class="font-semibold text-sce-dark">Heading 2</h2>
+                        <p class="text-muted">Font: Open Sans Semibold, Size: 2rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <h3 class="font-semibold text-sce-dark">Heading 3</h3>
+                        <p class="text-muted">Font: Open Sans Semibold, Size: 1.75rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <h4 class="font-semibold text-sce-dark">Heading 4</h4>
+                        <p class="text-muted">Font: Open Sans Semibold, Size: 1.5rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <h5 class="font-semibold text-sce-dark">Heading 5</h5>
+                        <p class="text-muted">Font: Open Sans Semibold, Size: 1.25rem, Line Height: 1.2</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <p class="font-normal text-sce-text">Body Text Regular</p>
+                        <p class="text-muted">Font: Open Sans Regular, Size: 1rem, Line Height: 1.5</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <p class="font-light text-italic text-sce-muted">Body Text Light Italic</p>
+                        <p class="text-muted">Font: Open Sans Light Italic, Size: 1rem, Line Height: 1.5</p>
+                    </div>
+                    
+                    <div class="typography-sample">
+                        <small class="font-normal text-sce-muted">Small Text</small>
+                        <p class="text-muted">Font: Open Sans Regular, Size: 0.875rem, Line Height: 1.5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Section -->
+        <section id="components" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-header font-semibold text-sce-dark">Components</h2>
+                </div>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Buttons</h3>
+                <div class="row g-3">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sce-primary">Primary Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sce-outline">Outline Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-secondary">Secondary Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-success">Success Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger">Danger Button</button>
+                    </div>
+                </div>
+                
+                <div class="row g-3 mt-3">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sce-primary btn-lg">Large Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sce-primary">Regular Button</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sce-primary btn-sm">Small Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forms -->
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Form Elements</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="exampleInput" class="form-label font-semibold">Input Label</label>
+                            <input type="text" class="form-control" id="exampleInput" placeholder="Enter text here">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleSelect" class="form-label font-semibold">Select</label>
+                            <select class="form-select" id="exampleSelect">
+                                <option selected>Choose an option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleTextarea" class="form-label font-semibold">Textarea</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Default checked radio
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Cards</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title font-semibold">Card Title</h5>
+                                <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-sce-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header font-semibold">
+                                Featured
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title font-semibold">Special title treatment</h5>
+                                <p class="card-text font-light">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-sce-outline">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title font-semibold text-primary">Primary Card</h5>
+                                <p class="card-text font-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tables -->
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Tables</h3>
+                <div class="table-responsive">
+                    <table class="table table-sce">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Icons Section -->
+        <section id="icons" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-header font-semibold text-sce-dark">Icons</h2>
+                    <p class="text-muted mb-4">Bootstrap Icons are used throughout the design system for consistency and accessibility.</p>
+                </div>
+            </div>
+            
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Common Icons</h3>
+                <div class="icon-grid">
+                    <div class="icon-item">
+                        <i class="bi bi-house-door"></i>
+                        <div class="small font-semibold">Home</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-person"></i>
+                        <div class="small font-semibold">User</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-gear"></i>
+                        <div class="small font-semibold">Settings</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-envelope"></i>
+                        <div class="small font-semibold">Mail</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-search"></i>
+                        <div class="small font-semibold">Search</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-bell"></i>
+                        <div class="small font-semibold">Notification</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-download"></i>
+                        <div class="small font-semibold">Download</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-upload"></i>
+                        <div class="small font-semibold">Upload</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-heart"></i>
+                        <div class="small font-semibold">Heart</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-star"></i>
+                        <div class="small font-semibold">Star</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-check-circle"></i>
+                        <div class="small font-semibold">Success</div>
+                    </div>
+                    <div class="icon-item">
+                        <i class="bi bi-x-circle"></i>
+                        <div class="small font-semibold">Error</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing Section -->
+        <section id="spacing" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-header font-semibold text-sce-dark">Spacing Scale</h2>
+                    <p class="text-muted mb-4">Consistent spacing creates visual rhythm and hierarchy in your designs.</p>
+                </div>
+            </div>
+            
+            <div class="component-showcase">
+                <h3 class="h5 font-semibold text-sce-dark mb-3">Bootstrap Spacing Scale</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 4px; min-height: 20px;"></div>
+                            <small class="font-semibold">0.25rem (4px) - xs</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 8px; min-height: 20px;"></div>
+                            <small class="font-semibold">0.5rem (8px) - sm</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 16px; min-height: 20px;"></div>
+                            <small class="font-semibold">1rem (16px) - md</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 24px; min-height: 20px;"></div>
+                            <small class="font-semibold">1.5rem (24px) - lg</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 48px; min-height: 20px;"></div>
+                            <small class="font-semibold">3rem (48px) - xl</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="spacing-example me-3" style="width: 80px; min-height: 20px;"></div>
+                            <small class="font-semibold">5rem (80px) - xxl</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4 mt-5">
+        <div class="container-fluid px-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0 font-light">
+                        &copy; 2025 Southern California Edison. Design System Style Guide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth Scrolling for Navigation -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
