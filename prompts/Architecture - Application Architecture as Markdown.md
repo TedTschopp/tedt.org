@@ -49,12 +49,25 @@ By meeting these prerequisites and adhering to standards, the Application Archit
 ### Application Portfolio Catalog
 
 <Purpose>
-TODO
+The Application Portfolio Catalog records **all business‑facing and technical applications that the enterprise relies on today or plans to introduce**.
+Its objectives are to:
+
+1. **Provide a single source of truth** for architects, product managers, risk owners, and finance regarding what applications exist, what they do, and who owns them.
+2. **Enable impact and dependency analysis** when changes are proposed (e.g., upgrades, decommissioning, mergers, cloud migration).
+3. **Support strategic decisions** such as rationalisation, investment prioritisation, technical debt reduction, cyber‑resilience, and licence optimisation.
+4. **Demonstrate governance compliance** with TOGAF, IT4IT, NIST, SOX, and internal policy requirements for asset management.
 
 <Instructions>
-TODO
+1. **Scope = Enterprise applications** that are used directly or indirectly to enable business capabilities. Exclude end‑user productivity tools unless they provide unique business logic (e.g., specialised engineering calculation spreadsheets).
+2. **Capture one line per discrete application or major SaaS subscription.**
+3. **Populate each mandatory column** exactly as defined in the *Standards* section below. Optional enrichment fields (e.g., data classification, criticality, integration interfaces) may be added but must follow the same conventions.
+4. **Use authoritative data sources**: CMDB, contract repository, architectural diagrams, vendor portals, and interviews with system owners.
+5. **Update cadence**
 
-Complete list of key enterprise applications with descriptions, ownership, platform, and lifecycle status:
+   * Quarterly for evergreen SaaS and critical systems
+   * Whenever a project stage gate moves an application into a new lifecycle stage
+   * Immediately after an acquisition or divestiture
+6. **Review & sign‑off**: Catalogue steward circulates the updated file to Domain Architects and Business Owners for confirmation; Enterprise Architecture (EA) retains final approval.
 
 <Example>
 | ID   | Application                              | Description                                                           | Owner/Business Unit              | Platform             | Lifecycle Stage       |
@@ -67,11 +80,38 @@ Complete list of key enterprise applications with descriptions, ownership, platf
 
 <Prerequisites>
 
-TODO
+Before populating or refreshing this catalog, ensure the following artefacts are in place or updated:
+
+| Artefact                              | Purpose in Relation to Catalog                                                                                         | Typical Source/Owner                 |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| **Business Capability Map**           | Defines the capability hierarchy used to map each application to business value.                                       | Business Architecture                |
+| **Application Reference Model (ARM)** | Provides the standard categorisation (e.g., Core, Commodity, Differentiating) that is cross‑referenced in the catalog. | EA / TOGAF ADM Phase C               |
+| **Technology Reference Model (TRM)**  | Lists approved hosting patterns (e.g., Cloud SaaS, Cloud PaaS, On‑Prem VM, Mainframe).                                 | EA / Infrastructure Architecture     |
+| **CMDB baseline**                     | Supplies technical inventory, instance counts, environments, and support contacts.                                     | IT Service Management                |
+| **Project & Demand Register**         | Identifies applications in Idea or Planned stage.                                                                      | Portfolio Management Office          |
+| **End‑of‑Life (EoL) Components List** | Highlights ageing OS / DB / middleware driving lifecycle status changes.                                               | Infrastructure & Security Governance |
 
 <Standards>
 
-TODO
+* The Open Group TOGAF® Standard, 10th Edition (2022)
+* The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)
+* ISO/IEC 19770‑1:2017 — IT Asset Management
+* ISO/IEC 20000‑1:2018 — IT Service Management
+* ISO/IEC 27001:2022 — Information Security Management Systems
+* ISO/IEC 27017:2015 — Security Controls for Cloud Services
+* ISO/IEC 27018:2019 — Protection of Personally Identifiable Information (PII) in Public Clouds
+* ISO/IEC 38500:2015 — Governance of IT for the Organization
+* ISO/IEC 42010:2011 — Systems and Software Engineering — Architecture Description
+* ISO 55000:2014 — Asset Management Principles and Terminology
+* ISO/IEC 12207:2017 — Software Life‑Cycle Processes
+* COBIT® 2019 Framework — Governance & Management of Enterprise IT
+* ITIL® 4 — IT Service Management Best Practice
+* NIST SP 800‑53 Rev. 5 — Security & Privacy Controls for Information Systems
+* NIST Cybersecurity Framework (CSF) 2.0 — 2024 Edition
+* CMMI® V2.2 — Capability Maturity Model Integration (Development & Services)
+* SOC 2 (AICPA) — Trust Services Criteria for Service Organizations
+* Sarbanes‑Oxley Act (SOX) Section 404 — Internal Control over Financial Reporting
+* ISO 9001:2015 — Quality Management Systems
 
 ### Application Components & Services
 
@@ -115,7 +155,7 @@ In the target architecture, each major application is **logically decomposed** i
 
 In conclusion, the Application Architecture is structured into distinct components aligned with business functions. We’ve chosen the right type of solution for each (build or buy) based on strategic fit and reuse potential. By breaking applications into services/modules, we improve maintainability and scalability – each component can evolve on its own. And by eliminating redundant systems and consolidating capabilities, we simplify the application landscape and reduce costs over time. Each component described will be designed and implemented in accordance with these principles, ensuring a clean, service-oriented architecture.
 
-### UI/UX Design Specification [TODO - Deduplicate]
+### UI/UX Design Specification
 
 <Purpose>
 
@@ -242,24 +282,59 @@ In summary, the as-is application architecture is functional but fragmented. It 
 ### Application Gap Analysis Matrix
 
 <Purpose>
-TODO
+
+Provide a **structured, traceable view of the delta between today’s application landscape (Baseline Architecture Building Blocks – ABBs) and the target architecture (Solution Building Blocks – SBBs)**.
+The matrix is used to
+
+1. **Expose functional, technical, security, and compliance shortfalls** that block a capability from meeting current or projected business needs.
+2. **Prioritise remediation or investment options** by linking each gap to business value, risk, and cost.
+3. **Feed the transition roadmap** with clearly scoped work packages, ensuring alignment with enterprise strategy, portfolio budgeting, and risk governance.
 
 <Instructions>
-TODO
 
-<Example>
+1. **Confirm Scope** : Select the business capabilities, value streams, or products within the engagement scope (e.g., “Order‑to‑Cash”). Ensure the Capability Map version is frozen for this analysis cycle.                                                                                                                                                                                                                                                                                                                    |
+2. **Gather Baseline Data** : Pull the current ABB list from the *Application Portfolio Catalog* and validate with system owners; harvest current KPIs, technical debt items, known constraints, and service levels (ITIL 4 SLAs/OLAs).                                                                                                                                                                                                                                                                                                 |
+3. **Identify Gap Types** : For each capability/application pairing, assess gaps across:<br>• **Functional** (missing features, workflow inefficiencies)<br>• **Data & Integration** (real‑time needs, data quality)<br>• **Non‑Functional** (ISO/IEC 25010 quality attributes such as performance, availability, usability)<br>• **Security & Compliance** (ISO/IEC 27001 controls, privacy requirements)<br>• **Technical Debt & Obsolescence** (unsupported versions, EoL tech list)<br>Record gaps in plain, measurable language. |
+4. **Define Target SBBs** : Propose one or more SBBs that close each gap. Map every SBB to at least one standard pattern from the Technology Reference Model (e.g., “Cloud SaaS CRM”, “Event‑Driven Order Service”).                                                                                                                                                                                                                                                                                                                  |
+5. **Assess Severity & Priority** : Rate each gap’s business impact and risk likelihood (e.g., High / Med / Low) and assign an urgency class (NIST CSF P1–P4 or custom).                                                                                                                                                                                                                                                                                                                                                                      |
+6. **Validate with Stakeholders** : Review the draft matrix with Business Capability Owners, Domain Architects, Security, and FinOps. Capture approvals or dissenting comments.                                                                                                                                                                                                                                                                                                                                                               |
+7. **Publish & Maintain** : Store the signed‑off matrix in the EA repository; update at each major project milestone or quarterly architecture review.                                                                                                                                                                                                                                                                                                                                                                                |
 
-| Capability             | Current State         | Gaps Identified                                | Future State (SBB)     |
-|------------------------|------------------------|--------------------------------------------------|-------------------------|
-| Manage Customers       | On-Prem CRM (SBB)      | No modern UI, no API, batch integrations         | A1 Cloud CRM (SBB)      |
-| Process Orders         | Order App (SBB)        | No real-time inventory, high technical debt      | A2 Order Service (SBB)  |
-| Product Management     | Excel/Access DB (SBB)  | Data inconsistency, no API access                | A4 Catalog Svc (SBB)    |
+*Formatting rules*
+
+* Use one row per **Capability** (not per application) to keep the view business‑centred.
+* Reference applications by unique **ID** from the Application Portfolio Catalog.
+* Keep descriptions ≤ 120 characters; deeper detail belongs in supporting worksheets.
+* Colour‑code the “Gaps Identified” cell by severity if the template allows conditional formatting.
 
 <Prerequisites>
-TODO
+
+1. **Latest Capability Map** (approved by Business Architecture).
+2. **Current Application Portfolio Catalog** with lifecycle status and owners.
+3. **Architecture Principles & Policies** (TOGAF/IT4IT).
+4. **Quality Attribute Baselines** (ISO/IEC 25010 metrics).
+5. **Risk Register & Control Library** (aligned to NIST CSF and ISO/IEC 27001).
+6. **Technology Reference Model & Approved Patterns**.
+7. **Business Strategy & Roadmap** documents to anchor target‑state assumptions.
+8. **EoL Technology List** issued by Infrastructure & Security Governance.
 
 <Standards>
-TODO
+
+International and de‑facto standards that guide the creation and maintenance of an Application Gap Analysis Matrix:
+
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** – ADM Phases B–D artefacts
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** – Strategy‑to‑Portfolio & Requirement‑to‑Deploy value streams
+* **ISO/IEC 42010:2011** – Architecture Description
+* **ISO/IEC 25010:2023** – System & Software Quality Models
+* **ISO/IEC 12207:2017** – Software Life‑Cycle Processes
+* **ISO/IEC 19770‑1:2017** – IT Asset Management (for accurate ABB baselining)
+* **ISO/IEC 27001:2022** – Information Security Management (for security gap criteria)
+* **NIST Cybersecurity Framework (CSF) 2.0 (2024)** – Risk & control alignment
+* **NIST SP 800‑53 Rev. 5 (2020)** – Security & Privacy Control Catalog
+* **COBIT® 2019** – Governance & Management Objectives (APO, BAI, DSS, MEA)
+* **ITIL® 4 (2019)** – Service Value Chain & Continual Improvement practices
+* **ISO/IEC 20000‑1:2018** – IT Service Management requirements (service gaps)
+* **ISO 55000:2014** – Asset Management principles (to support lifecycle decisions)
 
 ### Future State Architecture
 
@@ -335,16 +410,27 @@ By adhering to these standards, the future state architecture will not only meet
 
 ## Integration Architecture
 
+
+## Integration Architecture
+
 ### Application Communication Diagram
 
 <Purpose>
-Illustration of communication flows between the applications (labeled arrows indicate key data/process exchanges):
+
+Illustrates—in **one coherent view—the run‑time data and process flows between applications**, the boundaries they cross, and the integration patterns in use. The diagram is the definitive reference for architects, developers, risk owners, and operations teams when they assess change impact, security exposure, or performance constraints.
 
 <Instructions>
-TODO
+
+1. **Define Viewpoint & Scope** : Choose an Integration‑ or Application‑centric viewpoint per ISO/IEC/IEEE 42010. Show only the applications, channels, and endpoints relevant to the project or capability in scope.                                                                                                                                                           |
+2. **Select Modelling Notation** : Use an **internationally standardised notation** (ISO/IEC 19540 ArchiMate 3.2 *Application Collaboration View*, or ISO/IEC 19505 UML 2.5 *Component*/*Deployment* diagrams). Mermaid or C4 can be used for lightweight documentation, but the canonical model must exist in the EA repository.                                                |
+3. **Represent Applications** : Label each application with its unique ID from the *Application Portfolio Catalog* (AP‑nnn). Group them in logical zones (Core, Edge, Third‑Party, Cloud, DMZ).                                                                                                                                                                               |
+4. **Draw Flows** : One arrow per **logical interface**. Annotate with:<br>• **Pattern** (Sync Req/Resp, Async Event, Batch, File Drop)<br>• **Primary Protocol** (REST/HTTP, gRPC, MQTT, AMQP, SFTP, JDBC, etc.)<br>• **Key Payload** or process (e.g., “POST /order”, “CustomerCreated event”)<br>• **Direction** and **frequency** (real‑time, hourly, daily). |
+5. **Indicate Quality & Security** : Where relevant, colour‑code or tag the flow for:<br>• **Criticality** (per ISO/IEC 20000 SLAs)<br>• **Data Classification** (ISO/IEC 27001)<br>• **Latency target** (e.g., <100 ms).                                                                                                                                                          |
+6. **Show Boundaries** : Use dashed boxes or swim‑lanes to visualise trust zones, VPCs, or geographic regions (per ISO/IEC 27033‑3 network security architecture).                                                                                                                                                                                                     |
+7. **Version & Trace** : Stamp the diagram with model version, date, and author. Maintain traceability to the Interface Catalog via interface IDs.                                                                                                                                                                                                                     |
+8. **Validate & Publish** : Review with Domain Architects, Integration Platform team, and Cyber‑Security. Store the approved diagram in the EA tool; export a PNG/SVG for solution‑level documents.                                                                                                                                                                       |
 
 <Example>
-
 **As Is Application Communications Diagram**
 
 ```mermaid
@@ -376,27 +462,93 @@ flowchart LR
 ```
 
 <Prerequisites>
-TODO
+
+1. **Updated Application Portfolio Catalog** (IDs, owners).
+2. **List of Active Interfaces** from the Interface Catalog.
+3. **Integration Principles & Patterns** adopted by the organisation.
+4. **Data Classification Matrix** and **Trust‑Zone Definitions**.
+5. **Current Network & Security Architecture** (zones, firewalls, gateways).
+6. **SLA/SLO Baselines** for latency, throughput, availability.
+7. **Technology Reference Model** indicating approved protocols and middleware.
 
 <Standards>
-TODO
+
+* **ISO/IEC/IEEE 42010:2011** — Systems & Software Engineering — Architecture Description
+* **ISO/IEC 19540‑1/‑2:2020** — ArchiMate® 3.2 Notation for Architecture Modelling
+* **ISO/IEC 19505‑1/‑2:2012** — UML® 2.5 Infrastructure & Superstructure
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** — ADM Phase C (Data/Application) viewpoints
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil value stream integration views
+* **ISO/IEC 27033‑3:2020** — Network Security Architecture (segmentation and trust‑zones)
+* **ISO/IEC 25010:2023** — Quality Model (interoperability, performance, security)
+* **ISO/IEC 27001:2022** — Information Security Management (classification & control requirements)
 
 ### Interface Catalog
 
 <Purpose>
-TODO
+
+A **comprehensive inventory of every logical interface between two applications or between an application and an external party**. The catalog supports impact analysis, capacity planning, contract management, audit, and risk assessments by detailing owners, protocols, payloads, SLAs, and security classifications.
 
 <Instructions>
-TODO
+
+| Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
+| --------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
+| **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
+| **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
+| **Pattern**                 | Yes        | *Sync‑Request/Response*, *Async‑Event*, *Batch*, *File*, *Streaming*.                                                        |
+| **Transport Protocol**      | Yes        | HTTP/1.1, HTTP/2, gRPC, AMQP 1.0, MQTT 3.1.1, SFTP, JDBC, etc. Must appear in the approved protocol list.                    |
+| **Data Contract**           | Yes        | Reference to schema artefact (e.g., OpenAPI 3.1 YAML, AsyncAPI 2.6 YAML, XSD, Avro). Provide repository URI and version tag. |
+| **Frequency / Trigger**     | Yes        | “Real‑time”, “Every 5 min”, “Nightly @ 00:30 UTC”, “On Event <name>”.                                                        |
+| **Data Classification**     | Yes        | *Public*, *Internal*, *Confidential*, *Restricted* (per ISO/IEC 27001).                                                      |
+| **SLA / SLO**               | Yes        | Availability, latency, throughput targets (aligned to ITIL 4 service metrics).                                               |
+| **Error & Retry Policy**    | Yes        | Idempotency rules, exponential back‑off, dead‑letter queue, etc.                                                             |
+| **Owning Team / Contact**   | Yes        | Single accountable team (email, Slack, PagerDuty).                                                                           |
+| **Lifecycle Status**        | Yes        | *Designed*, *Implemented*, *Live*, *Deprecated*, *Retired*.                                                                  |
+| **Last Reviewed**           | Yes        | ISO 8601 date when details were last validated.                                                                              |
+
+*Process*
+
+1. **Create a new entry** whenever a change request adds, modifies, or retires an interface.
+2. **Peer‑review** each entry for completeness and compliance with approved patterns.
+3. **Synchronise** with the CMDB and API Gateway catalogue through nightly ETL jobs.
+4. **Audit** quarterly for SOX and ISO/IEC 27001 control effectiveness.
 
 <Example>
-TODO
+
+| Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
+| ------------ | --------------- | ------------ | --------------------- | --------------- | ------------------------ | ----------------------- | ------------ | --------------------- | ------------- | -------- |
+| INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
+| INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
+| INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
+| INT‑045      | AP05 HRMS       | AP03 ERP     | File                  | SFTP            | `hrms‑erp‑payroll‑xsd`   | Semi‑monthly            | Restricted   | 99.8 % / N/A          | HR IT         | Designed |
 
 <Prerequisites>
-TODO
+
+1. **Approved Interface Naming & Versioning Policy** (OpenAPI/AsyncAPI or WSDL).
+2. **Data Classification & Handling Policy** (ISO/IEC 27001 Annex A).
+3. **Protocol & Pattern Allow‑List** within the Integration Platform Standards.
+4. **Authoritative Application IDs** from the Application Portfolio Catalog.
+5. **SLA/SLO Framework** aligned with ITIL 4 and ISO/IEC 20000‑1.
+6. **Repository of Schemas & Contracts** (Git, Artefact Repo, API Gateway).
+7. **Change & Release Management Process** (COBIT 2019 BAI06 / ITIL 4 Change Enablement).
 
 <Standards>
-TODO
+
+* **ISO/IEC/IEEE 42010:2011** — Architecture Description (view & model definitions)
+* **ISO/IEC 19770‑1:2017** — IT Asset Management (inventory discipline)
+* **ISO/IEC 20000‑1:2018** — IT Service Management (SLA/OLA requirements)
+* **ISO/IEC 27001:2022** — Information Security Management (data classification & controls)
+* **ISO/IEC 27002:2022** — Security Controls guidance (Annex A mapping)
+* **ISO/IEC 20922:2016** — MQTT (messaging protocol reference)
+* **ISO 20022:2013** — Universal financial industry message scheme (where financial data is exchanged)
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** — Interface Catalog artefact (Phase C)
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil data flows
+* **OAS OpenAPI Specification 3.1 (2023)** — REST interface contract format
+* **AsyncAPI Specification 2.6 (2024)** — Event‑driven and streaming interface contracts
+* **W3C XML Schema 1.1 & WSDL 2.0** — SOAP/XML interface definition standards
+* **JSON Schema (2020‑12)** — JSON data contract standard
+* **ITIL® 4 (2019)** — Service Design & Transition practices
+* **COBIT® 2019** — Governance & Management of Enterprise IT (BAI & DSS domains)
 
 ### Application Interaction Requirements & APIs
 
@@ -435,7 +587,6 @@ Each interface is designed using API-first principles, emphasizing clear contrac
 
 These patterns are selected based on latency, decoupling needs, system boundaries, and data ownership.
 
----
 
 #### API Architectures
 
@@ -635,24 +786,70 @@ In conclusion, the lifecycle and governance approach ensures our applications no
 * **Methodology Standards:** Agile is our chosen method. We align with enterprise agile standards – e.g., use of Scrum ceremonies (daily stand-up, sprint review, retrospective). Possibly follow Scaled Agile Framework (if multiple teams, coordinate via a Scrum of Scrums or PI planning). We also integrate QA and security early (standard shift-left testing). Code style guidelines are followed so that maintenance is easier.
 * **Retirement Policy:** Adhere to policy for data retention on retired systems. For instance, company policy might require keeping data for 7 years for compliance. Thus, when we retire the legacy CRM, we archived its data in read-only form in compliance with that policy before decommissioning the server. Similarly, any time we plan to retire an app, we’ll follow the official checklist (take backup, verify archive readability, notify users X months ahead, etc.).
 
-By following these standards and processes, we ensure that the management of our application architecture is not ad-hoc but systematically handled, with proper oversight and alignment to corporate governance frameworks. This reduces operational risk and ensures the application portfolio remains lean, up-to-date, and business-aligned over the long term. Good governance ultimately helps the IT organization deliver value continuously and predictably, avoiding the “wild west” of unmanaged apps.
-
 ### Standards Information Base
 
 <Purpose>
-TODO
+
+Provide a **single, authoritative catalogue of all external and internal standards, regulations, frameworks, and reference architectures** that govern the full lifecycle of applications—from ideation and design through build, run, change, retirement, and audit.
+The Standards Information Base (SIB) enables:
+
+1. **Design‑time guidance** – architects and engineers know which rules, patterns, and controls they must follow.
+2. **Lifecycle governance & risk management** – every standard is mapped to the phases or gates in which compliance must be demonstrated.
+3. **Audit & evidence** – auditors and regulators can trace how each requirement is addressed by architecture artefacts, processes, and controls.
+4. **Continual improvement** – obsolete or superseded standards are flagged and replaced in a controlled manner.
 
 <Instructions>
-TODO
+
+| Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ----- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1** | **Define Classification Scheme** | Group standards into domains such as *Architecture & Modelling*, *Security & Privacy*, *Quality & Service Management*, *Cloud & DevOps*, *Data & Integration*, *Legal & Regulatory*.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **2** | **Collect Candidate Standards**  | Harvest from enterprise policy library, legal / regulatory obligations register, industry bodies (ISO, IEC, IEEE, NIST, ETSI, W3C, IETF), and internal pattern repositories.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **3** | **Screen & Approve**             | EA Governance Board reviews each candidate for relevance, overlap, and currency. Approved items receive a unique **SIB‑ID**.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **4** | **Record Metadata**              | For every standard capture:<br>• **SIB‑ID**<br>• **Standard / Regulation** (official title, version, year)<br>• **Issuer / Body** (e.g., ISO, NIST)<br>• **Domain**<br>• **Mandatory / Recommended** status<br>• **Lifecycle Phase(s)** where compliance is checked (Plan, Design, Build, Deploy, Operate, Retire)<br>• **Primary Control Mapping** (e.g., NIST CSF Function, ISO 27001 Annex A control, COBIT objective)<br>• **Internal Policy Link** (URL or repository path)<br>• **Review Cycle** (e.g., 1 yr, 3 yrs)<br>• **Owner** (role/team responsible for monitoring revisions) |
+| **5** | **Publish & Integrate**          | Store the SIB in the EA tool or GRC platform. Provide API or export for CI/CD pipelines and project templates so standards are injected automatically.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **6** | **Maintain & Retire**            | Track revision dates; when an external body issues an update, log an action item to assess impact. Retired standards remain in the SIB for historical traceability but are marked “Superseded”.                                                                                                                                                                                                                                                                                                                                                                                            |
+
+*Formatting notes*
+
+* Use a table or database view; filterable by Domain and Lifecycle Phase.
+* Colour‑code “Mandatory” entries or approaching review dates.
+* Version‑stamp the SIB itself (vX.Y, date, author).
 
 <Example>
-TODO
+
+| SIB‑ID  | Standard / Regulation                         | Version | Issuer     | Domain                       | Status      | Lifecycle Phase(s)      | Control Mapping / Notes                         | Review Cycle | Owner       |
+| ------- | --------------------------------------------- | ------- | ---------- | ---------------------------- | ----------- | ----------------------- | ----------------------------------------------- | ------------ | ----------- |
+| SIB‑001 | ISO/IEC/IEEE 42010 – Architecture Description | 2011    | ISO        | Architecture & Modelling     | Mandatory   | Plan, Design            | Basis for architecture viewpoints & artefacts   | 3 yrs        | EA Office   |
+| SIB‑014 | ISO/IEC 27001 – Information Security Mgmt     | 2022    | ISO        | Security & Privacy           | Mandatory   | Design, Deploy, Operate | Mapped to NIST CSF & internal control library   | 1 yr         | CISO Team   |
+| SIB‑021 | TOGAF® Standard, 10th Edition                 | 2022    | Open Group | Architecture & Governance    | Recommended | Plan, Design            | ADM artefact templates adopted enterprise‑wide  | 3 yrs        | EA Office   |
+| SIB‑032 | ISO/IEC 25010 – Systems & SW Quality Model    | 2023    | ISO        | Quality & Service Management | Mandatory   | Design, Build, Test     | Drives NFR checklists & acceptance criteria     | 2 yrs        | QA CoE      |
+| SIB‑045 | NIST SP 800‑53 Rev. 5 – Security Controls     | 2020    | NIST       | Security & Privacy           | Mandatory   | Design, Deploy, Operate | Referenced in cloud landing‑zone guardrails     | 1 yr         | CISO Team   |
+| SIB‑067 | ISO/IEC 20000‑1 – IT Service Management       | 2018    | ISO        | Quality & Service Management | Mandatory   | Operate, Improve        | SLA / OLA structure; linked to ITIL 4 practices | 3 yrs        | ITSM Lead   |
+| SIB‑083 | ETSI NFV‑MANO – GS NFV‑MANO 006               | 2023    | ETSI       | Cloud & DevOps               | Recommended | Deploy, Operate         | Guidance for VNF lifecycle automation           | 2 yrs        | DevOps Lead |
 
 <Prerequisites>
-TODO
+
+1. **Enterprise Policy & Control Library** – master list of internal policies mapped to external standards.
+2. **Regulatory Obligations Register** – legal / compliance requirements by jurisdiction and industry.
+3. **EA Governance Charter & RACI** – defines approval authority for adding or retiring standards.
+4. **Tooling** – repository (e.g., GRC system, EA tool, Confluence) with version control and access management.
+5. **Change‑Control Process** – mechanism for triggering SIB updates when external bodies publish new versions.
 
 <Standards>
-TODO
+
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** – defines the SIB concept and its role in Architecture Governance.
+* **ISO/IEC/IEEE 42010:2011** – ensures architectural descriptions, viewpoints, and models used in the SIB are consistent and traceable.
+* **ISO/IEC 19770‑1:2017** – IT Asset Management principles for cataloguing and lifecycle control of standard artefacts.
+* **ISO/IEC 27001:2022 & ISO/IEC 27002:2022** – information security management and controls for protecting the integrity and availability of the SIB.
+* **ISO 9001:2015** – Quality Management System requirements for document control and continual improvement.
+* **ISO/IEC 20000‑1:2018** – Service Management requirements informing review cycles and change management for the SIB.
+* **COBIT® 2019 (APO01, APO03, EDM03)** – governance objectives covering policy management, enterprise architecture, and compliance assurance.
+* **NIST Cybersecurity Framework 2.0 (2024)** – Identify & Protect functions guide classification, access control, and review cadence.
+
+
+
+
+
 
 ### Risks, Constraints, and Compliance
 
@@ -886,12 +1083,142 @@ In conclusion, the models and views presented provide a complete and standardize
 
 ### Application Interaction Matrix (CRUD)
 
+## Integration Architecture
+
+### Application Communication Diagram
+
 <Purpose>
-Matrix of applications versus key data entities, showing which systems create, read, update, or delete each entity
-Summary view of applications versus business capabilities, including current lifecycle stage and risk level (🔴 high risk, 🟡 medium, 🟢 low):
+
+Illustrates—in **one coherent view—the run‑time data and process flows between applications**, the boundaries they cross, and the integration patterns in use. The diagram is the definitive reference for architects, developers, risk owners, and operations teams when they assess change impact, security exposure, or performance constraints.
 
 <Instructions>
-TODO 
+
+| Step  | Task                            | Guidance & Expected Content                                                                                                                                                                                                                                                                                                                   |
+| ----- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1** | **Define Viewpoint & Scope**    | Choose an Integration‑ or Application‑centric viewpoint per ISO/IEC/IEEE 42010. Show only the applications, channels, and endpoints relevant to the project or capability in scope.                                                                                                                                                           |
+| **2** | **Select Modelling Notation**   | Use an **internationally standardised notation** (ISO/IEC 19540 ArchiMate 3.2 *Application Collaboration View*, or ISO/IEC 19505 UML 2.5 *Component*/*Deployment* diagrams). Mermaid or C4 can be used for lightweight documentation, but the canonical model must exist in the EA repository.                                                |
+| **3** | **Represent Applications**      | Label each application with its unique ID from the *Application Portfolio Catalog* (AP‑nnn). Group them in logical zones (Core, Edge, Third‑Party, Cloud, DMZ).                                                                                                                                                                               |
+| **4** | **Draw Flows**                  | One arrow per **logical interface**. Annotate with:<br>• **Pattern** (Sync Req/Resp, Async Event, Batch, File Drop)<br>• **Primary Protocol** (REST/HTTP, gRPC, MQTT, AMQP, SFTP, JDBC, etc.)<br>• **Key Payload** or process (e.g., “POST /order”, “CustomerCreated event”)<br>• **Direction** and **frequency** (real‑time, hourly, daily). |
+| **5** | **Indicate Quality & Security** | Where relevant, colour‑code or tag the flow for:<br>• **Criticality** (per ISO/IEC 20000 SLAs)<br>• **Data Classification** (ISO/IEC 27001)<br>• **Latency target** (e.g., <100 ms).                                                                                                                                                          |
+| **6** | **Show Boundaries**             | Use dashed boxes or swim‑lanes to visualise trust zones, VPCs, or geographic regions (per ISO/IEC 27033‑3 network security architecture).                                                                                                                                                                                                     |
+| **7** | **Version & Trace**             | Stamp the diagram with model version, date, and author. Maintain traceability to the Interface Catalog via interface IDs.                                                                                                                                                                                                                     |
+| **8** | **Validate & Publish**          | Review with Domain Architects, Integration Platform team, and Cyber‑Security. Store the approved diagram in the EA tool; export a PNG/SVG for solution‑level documents.                                                                                                                                                                       |
+
+<Prerequisites>
+
+1. **Updated Application Portfolio Catalog** (IDs, owners).
+2. **List of Active Interfaces** from the Interface Catalog.
+3. **Integration Principles & Patterns** adopted by the organisation.
+4. **Data Classification Matrix** and **Trust‑Zone Definitions**.
+5. **Current Network & Security Architecture** (zones, firewalls, gateways).
+6. **SLA/SLO Baselines** for latency, throughput, availability.
+7. **Technology Reference Model** indicating approved protocols and middleware.
+
+<Standards>
+
+International and recognised standards that govern creation and maintenance of the Application Communication Diagram:
+
+* **ISO/IEC/IEEE 42010:2011** — Systems & Software Engineering — Architecture Description
+* **ISO/IEC 19540‑1/‑2:2020** — ArchiMate® 3.2 Notation for Architecture Modelling
+* **ISO/IEC 19505‑1/‑2:2012** — UML® 2.5 Infrastructure & Superstructure
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** — ADM Phase C (Data/Application) viewpoints
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil value stream integration views
+* **ISO/IEC 27033‑3:2020** — Network Security Architecture (segmentation and trust‑zones)
+* **ISO/IEC 25010:2023** — Quality Model (interoperability, performance, security)
+* **ISO/IEC 27001:2022** — Information Security Management (classification & control requirements)
+
+### Interface Catalog
+
+<Purpose>
+
+A **comprehensive inventory of every logical interface between two applications or between an application and an external party**. The catalog supports impact analysis, capacity planning, contract management, audit, and risk assessments by detailing owners, protocols, payloads, SLAs, and security classifications.
+
+<Instructions>
+
+| Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
+| --------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
+| **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
+| **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
+| **Pattern**                 | Yes        | *Sync‑Request/Response*, *Async‑Event*, *Batch*, *File*, *Streaming*.                                                        |
+| **Transport Protocol**      | Yes        | HTTP/1.1, HTTP/2, gRPC, AMQP 1.0, MQTT 3.1.1, SFTP, JDBC, etc. Must appear in the approved protocol list.                    |
+| **Data Contract**           | Yes        | Reference to schema artefact (e.g., OpenAPI 3.1 YAML, AsyncAPI 2.6 YAML, XSD, Avro). Provide repository URI and version tag. |
+| **Frequency / Trigger**     | Yes        | “Real‑time”, “Every 5 min”, “Nightly @ 00:30 UTC”, “On Event <name>”.                                                        |
+| **Data Classification**     | Yes        | *Public*, *Internal*, *Confidential*, *Restricted* (per ISO/IEC 27001).                                                      |
+| **SLA / SLO**               | Yes        | Availability, latency, throughput targets (aligned to ITIL 4 service metrics).                                               |
+| **Error & Retry Policy**    | Yes        | Idempotency rules, exponential back‑off, dead‑letter queue, etc.                                                             |
+| **Owning Team / Contact**   | Yes        | Single accountable team (email, Teams).                                                                           |
+| **Lifecycle Status**        | Yes        | *Designed*, *Implemented*, *Live*, *Deprecated*, *Retired*.                                                                  |
+| **Last Reviewed**           | Yes        | ISO 8601 date when details were last validated.                                                                              |
+
+*Process*
+
+1. **Create a new entry** whenever a change request adds, modifies, or retires an interface.
+2. **Peer‑review** each entry for completeness and compliance with approved patterns.
+3. **Synchronise** with the CMDB and API Gateway catalogue through nightly ETL jobs.
+4. **Audit** quarterly for SOX and ISO/IEC 27001 control effectiveness.
+
+<Example>
+
+| Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
+| ------------ | --------------- | ------------ | --------------------- | --------------- | ------------------------ | ----------------------- | ------------ | --------------------- | ------------- | -------- |
+| INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
+| INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
+| INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
+| INT‑045      | AP05 HRMS       | AP03 ERP     | File                  | SFTP            | `hrms‑erp‑payroll‑xsd`   | Semi‑monthly            | Restricted   | 99.8 % / N/A          | HR IT         | Designed |
+
+<Prerequisites>
+
+1. **Approved Interface Naming & Versioning Policy** (OpenAPI/AsyncAPI or WSDL).
+2. **Data Classification & Handling Policy** (ISO/IEC 27001 Annex A).
+3. **Protocol & Pattern Allow‑List** within the Integration Platform Standards.
+4. **Authoritative Application IDs** from the Application Portfolio Catalog.
+5. **SLA/SLO Framework** aligned with ITIL 4 and ISO/IEC 20000‑1.
+6. **Repository of Schemas & Contracts** (Git, Artefact Repo, API Gateway).
+7. **Change & Release Management Process** (COBIT 2019 BAI06 / ITIL 4 Change Enablement).
+
+<Standards>
+
+* **ISO/IEC/IEEE 42010:2011** — Architecture Description (view & model definitions)
+* **ISO/IEC 19770‑1:2017** — IT Asset Management (inventory discipline)
+* **ISO/IEC 20000‑1:2018** — IT Service Management (SLA/OLA requirements)
+* **ISO/IEC 27001:2022** — Information Security Management (data classification & controls)
+* **ISO/IEC 27002:2022** — Security Controls guidance (Annex A mapping)
+* **ISO/IEC 20922:2016** — MQTT (messaging protocol reference)
+* **ISO 20022:2013** — Universal financial industry message scheme (where financial data is exchanged)
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** — Interface Catalog artefact (Phase C)
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil data flows
+* **OAS OpenAPI Specification 3.1 (2023)** — REST interface contract format
+* **AsyncAPI Specification 2.6 (2024)** — Event‑driven and streaming interface contracts
+* **W3C XML Schema 1.1 & WSDL 2.0** — SOAP/XML interface definition standards
+* **JSON Schema (2020‑12)** — JSON data contract standard
+* **ITIL® 4 (2019)** — Service Design & Transition practices
+* **COBIT® 2019** — Governance & Management of Enterprise IT (BAI & DSS domains)
+
+### **Application–Entity & Capability Coverage Matrices**
+
+<Purpose>
+
+* **Application × Data‑Entity Interaction Matrix (CRUD)** – reveals which systems **Create (C), Read (R), Update (U), or Delete (D)** each enterprise data entity, highlighting master‑data ownership, redundancies, and integration‑impact areas.
+* **Application × Business‑Capability Summary Matrix** – maps every application to the capability(‑ies) it supports and overlays **lifecycle stage** and **inherent risk level** to aid rationalisation, investment / retirement decisions, and control prioritisation.
+
+<Instructions>
+
+| Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                               |
+| ----- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1** | **Freeze Reference Models**      | Confirm latest versions of the **Enterprise Data Model** (entities) and the **Business Capability Map** (capabilities).                                                                                                                                                                                                                        |
+| **2** | **Extract Application List**     | Use the authoritative *Application Portfolio Catalog* (AP‑IDs, owners, lifecycle stage, risk score).                                                                                                                                                                                                                                           |
+| **3** | **Populate CRUD Matrix**         | <br>1. For each entity, mark the role of every application with **C / R / U / D**. <br>2. If an application is the *single source of truth* (SSoT) for an entity, append **(M)** after the letter(s) – e.g., **C(M), U(M)**. <br>3. Leave blank where no interaction exists to maintain visual clarity.                                        |
+| **4** | **Populate Capability Matrix**   | <br>1. Place a **✓** where the application delivers significant functionality for that capability (do *not* mark incidental data sharing). <br>2. Copy **Lifecycle Stage** (Idea, Planned, Development, Live, Sunset in‑Progress, Retired) and **Risk Level** (🔴 High, 🟡 Medium, 🟢 Low) directly from the catalog to preserve data lineage. |
+| **5** | **Quality & Consistency Checks** | <br>• Each entity must have at least one application flagged **C(M)** to avoid orphan data. <br>• Each capability should map to one or more live or planned applications; gaps indicate unmet needs. <br>• Cross‑validate risk colour‑coding with the Enterprise Risk Register.                                                                |
+| **6** | **Review & Sign‑off**            | Present draft matrices to Data Governance, Business Architecture, Security, and Domain Owners for validation. Record approvals and any dissenting comments.                                                                                                                                                                                    |
+| **7** | **Publish & Maintain**           | Store the signed‑off matrices in the EA repository (e.g., LeanIX, Sparx, Confluence). Update quarterly or whenever an application changes lifecycle stage or risk rating.                                                                                                                                                                      |
+
+*Formatting notes*
+
+* Use conditional formatting or emojis for risk levels (🔴 / 🟡 / 🟢) and lifecycle stages to enable rapid scanning.
+* Keep cell text ≤ 6 characters; detailed notes belong in supporting sheets or tooltips.
+* Version‑stamp each matrix (author, date, version).
 
 <Example>
 
@@ -917,15 +1244,49 @@ TODO
 
 <Prerequisites>
 
+1. **Enterprise Data Model** with approved entity definitions and owners.
+2. **Business Capability Map** (current, version‑controlled).
+3. **Application Portfolio Catalog** (IDs, lifecycle stages, risk ratings).
+4. **Risk Register & Control Library** to assign risk levels consistently.
+5. **Data Classification Scheme** (ISO/IEC 27001 Annex A) if entities carry sensitivity labels.
+6. **Integration Architecture Artefacts** (Interface Catalog and Communication Diagram) to verify CRUD assignments.
+7. **Change‑Control Records** for pending application introductions or decommissions.
+
 <Standards>
 
-### Capability Realization Mapping and Gap - TODO
+* **ISO/IEC/IEEE 42010:2011** – Architecture description framework for defining viewpoints, models, and correspondence.
+* **The Open Group TOGAF® Standard, 10th Edition (2022)** – *Application Interaction Matrix* & *Application/Capability Matrix* artefacts (ADM Phase C).
+* **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** – Strategy‑to‑Portfolio and Requirement‑to‑Deploy value streams for catalog and risk data.
+* **ISO/IEC 19540‑1/‑2:2020 (ArchiMate® 3.2)** – Application, Data, and Capability elements & relationships.
+* **ISO/IEC 19770‑1:2017** – IT Asset Management principles ensuring complete and auditable inventories.
+* **ISO/IEC 27001:2022** – Information Security Management for risk rating and data‑entity classification.
+* **ISO/IEC 25010:2023** – System & Software Quality Models (reliability and maintainability factors informing risk).
+* **COBIT® 2019** – Governance & Management objectives (APO02, BAI02) governing architecture and risk alignment.
+* **ITIL® 4 (2019)** – Service configuration & risk management practices feeding lifecycle and risk status.
+
+### Capability Realisation Mapping & Gap Analysis
 
 <Purpose>
-TODO
+
+1. Verifies coverage — proves every critical capability has at least one enabling application or planned solution.
+2. Highlights duplication and shortfalls — reveals overlap, under‑investment, or missing functionality so that rationalisation or new investment can be justified.
+3. Feeds the transition roadmap — each documented gap becomes a scoped work package or architectural decision.
+4. Supports audit & compliance — demonstrates alignment of technology assets with strategy, governance principles, and risk controls.
 
 <Instructions>
-TODO
+
+1. Establish Reference Baselines: Freeze the latest Business Capability Map and Application Portfolio Catalog (incl. lifecycle stage & risk).
+2. Identify Realising Assets: For every capability in scope, record the application(s) or platform services that directly deliver or enable that capability. Assign the artefact type: ABB (current/baseline) or SBB (target/solution).
+3. Assess Coverage & Quality: Examine each mapping against:• Functional fit (all required features?)• Non‑functional fit (ISO/IEC 25010 attributes: performance, security, usability, etc.)• Strategic fit (alignment with architecture principles, cloud strategy, data strategy).
+4. Document Gaps : Where coverage is insufficient, capture concise gap notes:• Nature of shortfall (e.g., “manual process”, “module obsolete”, “no API”)• Severity (🔴 High / 🟡 Medium / 🟢 Low)• Reference to risk register item or control deficiency, if applicable.
+5. Propose Remediation : For each gap, indicate next action: Enhance, Replace, Retire, New Build, or No Action (with rationale). Where known, reference the target SBB or project ID.
+6. Validate with Stakeholders : Review draft with Business Capability Owners, Domain Architects, Cyber‑Security, and Portfolio Management. Collect approvals and date‑stamp.
+7. Publish & Maintain : Store the approved matrix in the EA repository; update quarterly or whenever capability scope, application lifecycle, or risk posture changes. Version every update (vX.Y, date, author).
+
+Formatting rules
+* Use one row per Business Capability. If multiple applications jointly realise a capability, list them comma‑separated or create additional rows with clear identifiers (e.g., “CRM + Billing”).
+* Keep “Gap Notes” ≤ 120 characters; deeper detail belongs in an issue tracker or roadmap.
+* Colour‑code gap severity to aid rapid scanning.
 
 <Example>
 
@@ -937,10 +1298,28 @@ TODO
 | Financial Reporting     | Billing (A3)      | SBB     | ERP module aging – replacement in roadmap |
 
 <Prerequisites>
-TODO
+
+1. Approved Business Capability Map (with owners and priority tier).
+2. Current Application Portfolio Catalog (IDs, lifecycle stage, risk rating).
+3. Enterprise Architecture Principles & Reference Models (Technology, Data, Security).
+4. Risk Register and Control Library for mapping gaps to risk appetite.
+5. Transition or Investment Roadmap to anchor remediation actions.
+6. Quality Attribute Baselines (ISO/IEC 25010 metrics) for target‑state comparison.
+7. Change‑Control Records & Project Backlog for in‑flight initiatives affecting capabilities.
 
 <Standards>
-TODO
+
+International and industry frameworks guiding structure, notation, and governance of the Capability Realisation Mapping:
+* The Open Group TOGAF® Standard, 10th Ed. (2022) – Capability–to‑Solution mapping artefact (ADM Phases B–C, and Gap Analysis in Phase E).
+* The Open Group IT4IT™ Reference Architecture, v3.0 (2022) – Strategy‑to‑Portfolio value stream for capability alignment and demand governance.
+* ISO/IEC/IEEE 42010:2011 – Architecture description (viewpoints, views, correspondence).
+* ISO/IEC 19540‑1/‑2:2020 (ArchiMate® 3.2) – Modelling Business Capability, Application Component, and Realisation relationships.
+* ISO/IEC 25010:2023 – Systems & Software Quality Models for assessing non‑functional gaps.
+* ISO/IEC 19770‑1:2017 – IT Asset Management, ensuring accurate ABB/SBB inventories.
+* ISO/IEC 33001 & 33020:2015 – Process assessment for capability maturity (if maturity scoring is applied).
+* COBIT® 2019 – Governance & Management Objectives (APO03 “Manage Enterprise Architecture”, BAI02 “Manage Requirements Definition”).
+* ITIL® 4 (2019) – Service Value Chain alignment, especially Plan and Improve stages influencing gap remediation.
+* NIST Cybersecurity Framework 2.0 (2024) & ISO/IEC 27001:2022 – Risk categorisation and control mapping for security‑related capability gaps.
 
 ### Stakeholder Concerns & Viewpoints
 
@@ -1087,7 +1466,20 @@ Captures the key concerns of different stakeholders and shows how the Applicatio
 * Refer to `Application Interaction Matrix`, `Data Standards`, and `Risks & Constraints`
 
 <Prerequisites>
-TODO
+1. Stakeholder Register with roles, contact details, authority levels.
+2. Business Strategy & Objectives to ensure concerns align with strategic drivers.
+3. Enterprise Risk Register and current Risk Appetite Statement.
+4. Regulatory & Compliance Obligations catalogue (e.g., SOX, PCI‑DSS, GDPR).
+5. Architecture Repository containing current viewpoints, principles, and decision logs.
+6. Quality Attribute Baseline (ISO/IEC 25010 metrics) for performance, security, etc.
+7. Change‑Control & Incident Records to surface emerging stakeholder concerns.
 
 <Standards>
-TODO
+* ISO/IEC/IEEE 42010:2011 — Systems & Software Engineering — Architecture Description (stakeholder, concern, and viewpoint definitions).
+* The Open Group TOGAF® Standard, 10th Edition (2022) — Stakeholder Management and Architecture Viewpoints (ADM Phase A & Part IV).
+* ISO 21502:2020 — Project, Programme, and Portfolio Management — Guidance on Stakeholder Engagement.
+* ISO/IEC 25010:2023 — System & Software Quality Models (provides the quality attributes that typically drive concerns).
+* COBIT® 2019 — Governance & Management Objectives (APO08 “Manage Relationships”, APO12 “Manage Risk”).
+* ITIL® 4 (2019) — Stakeholder Value Management and Continual Improvement practices.
+* ISO/IEC 27001:2022 — Information Security Management (security stakeholder concerns, controls, and residual risk treatment).
+* ISO 9001:2015 — Quality Management Systems (customer focus and stakeholder satisfaction requirements).
