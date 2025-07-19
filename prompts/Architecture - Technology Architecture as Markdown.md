@@ -107,10 +107,10 @@
        1. [Asset Management (Identify)](#asset-management-identify)
        2. [Identity and Access Control (Protect)](#identity-and-access-control-protect)
        3. [Threat Detection and Response (Detect/Respond)](#threat-detection-and-response-detectrespond)
-          1. [Data Protection and Encryption (Protect)](#data-protection-and-encryption-protect)
-          2. [System and Communications Protection (Protect)](#system-and-communications-protection-protect)
-          3. [Security Continuous Monitoring (Detect)](#security-continuous-monitoring-detect)
-          4. [Recovery Planning (Recover)](#recovery-planning-recover)
+       4. [Data Protection and Encryption (Protect)](#data-protection-and-encryption-protect)
+       5. [System and Communications Protection (Protect)](#system-and-communications-protection-protect)
+       6. [Security Continuous Monitoring (Detect)](#security-continuous-monitoring-detect)
+       7. [Recovery Planning (Recover)](#recovery-planning-recover)
 
 ## Introduction and Scope
 
@@ -571,7 +571,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 * *Response Tools and Capabilities:* *(Placeholder – list tools that aid in incident response, such as forensic analysis tools, incident tracking systems, or automated response platforms. E.g., “Use of EDR allows immediate isolation of infected hosts,” or “Backup and restore tools are in place to recover data quickly if ransomware is detected.”)*
 * *Communication and Reporting:* *(Placeholder – note how incidents are reported and escalated. E.g., “Alerts from the SIEM trigger notifications to on-call security personnel 24/7,” and “There is a defined communication plan to inform management, regulators, or customers as needed during significant incidents.” Include any integration with broader enterprise incident management.)*
 
-#### Data Protection and Encryption (Protect)
+### Data Protection and Encryption (Protect)
 
 *(These measures ensure that **data is securely handled and stored**. By encrypting data at rest and in transit, and by controlling access, the architecture reduces the risk of data breaches or leaks. Even in a breach scenario, encrypted data would be less likely to be usable by an attacker.)*
 
@@ -583,7 +583,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 * *Data Loss Prevention (DLP):* *(Placeholder – if relevant, mention any DLP measures in place to prevent exfiltration or unauthorized copying of sensitive data. E.g., “Email and endpoint DLP solutions prevent sending of customer data outside authorized channels,” or “Cloud storage buckets have policies to prevent public exposure.”)*
 * *Integrity and Backup:* *(Placeholder – mention how data integrity is ensured. E.g., checksums or integrity monitoring on critical files, database consistency checks. Also, tie in backup strategy: “Regular backups are performed and encrypted. Backup restoration is tested periodically to ensure data integrity and availability in case of corruption or loss.”)*
 
-#### System and Communications Protection (Protect)
+### System and Communications Protection (Protect)
 
 *(By implementing these measures, the architecture **secures system boundaries and communications**. Network segments are protected by firewalls and only necessary traffic is allowed, reducing the attack surface. Systems are hardened and equipped with protective controls (like NAC, firewalls, anti-malware) to prevent and deter attacks on the infrastructure.)*
 
@@ -595,7 +595,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 * *Protective Technologies:* *(Placeholder – list any additional security tools deployed to protect systems. E.g., **Intrusion Prevention Systems (IPS)** on network ingress/egress, **anti-malware/endpoint protection** on servers, integrity monitoring tools (file integrity monitoring on critical systems), and DDoS protection services for public-facing endpoints. Note resiliency mechanisms as well: “The system design includes redundancy and failover mechanisms to achieve resilience against infrastructure attacks.”)*
 * *Communications Monitoring:* *(Placeholder – mention if communications are monitored for security purposes. E.g., “Network traffic is monitored for suspicious patterns using an IDS and anomalies trigger alerts in the SIEM.” This might overlap with the Detection section, but here emphasize protection of comm channels.)*
 
-#### Security Continuous Monitoring (Detect)
+### Security Continuous Monitoring (Detect)
 
 *(This continuous monitoring ensures that the organization can **detect anomalies or malicious activity quickly**. It goes beyond reactive detection, by also keeping an eye on system health and compliance on an ongoing basis. For a critical infrastructure company, continuous monitoring is key to early warning of cyber threats.)*
 
@@ -607,7 +607,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 * *Third-Party and Supply Chain Monitoring:* *(Placeholder – if relevant, mention oversight of third-party connections or services. E.g., “Connections to third-party service providers are monitored and those providers are required to report any security incidents. We also monitor software supply chain by using only vetted dependencies and scanning container images for vulnerabilities.”)*
 * *Continuous Improvement:* *(Placeholder – state that monitoring results feed back into improving security. E.g., “Regular security reviews are conducted using the data from monitoring to adjust firewall rules, update training, and improve response processes.”)*
 
-#### Recovery Planning (Recover)
+### Recovery Planning (Recover)
 
 *(With a solid recovery capability, the organization can **restore normal operations quickly after an incident**. This includes having up-to-date recovery plans and regular drills. In the context of NIST CSF, this section ensures the **Recover** function is addressed by planning for various disaster/incident scenarios and how to bounce back from them.)*
 
