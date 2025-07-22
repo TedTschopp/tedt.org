@@ -47,6 +47,8 @@ models-supported:
   - claude-3-haiku
   - gemini-pro
   - gemini-pro-vision
+  - github
+  - microsoft
 
 prompt_content: |
   <Role>
