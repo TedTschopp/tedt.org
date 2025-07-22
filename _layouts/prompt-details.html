@@ -52,7 +52,7 @@
                                 <i class="fas fa-heart"></i> <span class="like-count">0</span>
                             </button>
                         </div>
-                        <a href="data:text/plain;charset=utf-8,{{ page.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3"
+                        <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}" class="btn btn-primary ms-3"
                             download="{{ page.title | slugify }}.txt">
                             <i class="fas fa-download"></i>
                         </a>
@@ -105,14 +105,14 @@
                     <div class="card-body p-1" markdown="0">
                         <pre class="bg-dark text-white rounded" style="white-space: pre-wrap; word-break: break-word;">
 <code class="language-markdown">
-{{page.content | escape}}
+{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}
 </code>
                         </pre>
                     </div>
                 </div>
 
                 <div class="text-end mt-3">
-                    <a href="data:text/plain;charset=utf-8,{{ page.content | strip_newlines | uri_escape }}" class="btn btn-primary ms-3"
+                    <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}" class="btn btn-primary ms-3"
                         download="{{ page.title | slugify }}.txt">
                         <i class="fas fa-download"></i>
                     </a>
