@@ -91,17 +91,19 @@
             gap: 0.5rem;
         }
         
-        .ai-provider-buttons .btn svg {
-            width: 1.2em;
-            height: 1.2em;
-            margin-right: 0.5rem;
-            fill: currentColor;
-        }
-        
         .ai-provider-buttons .btn {
             display: flex;
             align-items: center;
+            justify-content: center;
             padding: 0.375rem 0.75rem;
+            min-width: 2.5rem;
+            height: 2.25rem;
+        }
+        
+        .ai-provider-buttons .btn img {
+            width: 1.5rem;
+            height: 1.5rem;
+            object-fit: contain;
         }
     </style>
     
@@ -161,8 +163,7 @@
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
                             <button class="btn btn-send-chatgpt btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="chatgptSendDefault" aria-label="Send prompt to ChatGPT">
-                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" style="width: 1.2em; height: 1.2em;">
-                                <span>OpenAI</span>
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo">
                             </button>
                             {% endif %}
 
@@ -170,8 +171,7 @@
                             {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
                             {% if anthropic_models.size > 0 %}
                             <button class="btn btn-send-claude btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="claudeSendDefault" aria-label="Send prompt to Claude">
-                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" style="width: 1.2em; height: 1.2em;">
-                                <span>Anthropic</span>
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo">
                             </button>
                             {% endif %}
 
@@ -179,8 +179,7 @@
                             {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
                             {% if google_models.size > 0 %}
                             <button class="btn btn-send-gemini btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="geminiSendDefault" aria-label="Send prompt to Gemini">
-                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" style="width: 1.2em; height: 1.2em;">
-                                <span>Google</span>
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo">
                             </button>
                             {% endif %}
 
@@ -188,8 +187,7 @@
                             {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
                             {% if microsoft_models.size > 0 %}
                             <button class="btn btn-send-microsoft btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="microsoftSendDefault" aria-label="Send prompt to Microsoft Copilot">
-                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" style="width: 1.2em; height: 1.2em;">
-                                <span>Microsoft</span>
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo">
                             </button>
                             {% endif %}
 
@@ -197,8 +195,7 @@
                             {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
                             {% if github_models.size > 0 %}
                             <button class="btn btn-send-github btn-sm mt-0 me-0 d-flex align-items-center" type="button" id="githubSendDefault" aria-label="Send prompt to GitHub Copilot">
-                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" style="width: 1.2em; height: 1.2em;">
-                                <span>GitHub</span>
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo">
                             </button>
                             {% endif %}
                             </div> <!-- Close ai-provider-buttons -->
