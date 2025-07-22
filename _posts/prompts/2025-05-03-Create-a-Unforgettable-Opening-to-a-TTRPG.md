@@ -37,11 +37,16 @@ keywords:
 
 models-supported:
   - gpt-4
-  - gpt-4-mini
   - gpt-4.5
+  - gpt-4-mini
   - 03
   - 04-mini
   - 04-mini-high
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gemini-pro
+  - gemini-pro-vision
 
 prompt_content: |
   <Role>

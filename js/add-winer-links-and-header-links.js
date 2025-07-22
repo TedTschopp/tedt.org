@@ -1,15 +1,19 @@
 $(document).ready(function() {
-    // Generate the Table of Contents
-    GenerateTableOfContents();
+    // Only run TOC generation if the element exists
+    if (document.getElementById('insert-table-of-contents-here')) {
+        GenerateTableOfContents();
+    }
 
-    // Link up the Table of Contents to each of the proper Header Tags.
-    // Call the function with the ID of the element you want to add links to
-    addLinksToHeaders('main_content');
+    // Only run header linking if the element exists
+    if (document.getElementById('main_content')) {
+        // Link up the Table of Contents to each of the proper Header Tags.
+        // Call the function with the ID of the element you want to add links to
+        addLinksToHeaders('main_content');
 
-    // Step 2: Add Winer Tags to Paragraphs
-    var main_content = document.getElementById('main_content');
-    main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
-
+        // Step 2: Add Winer Tags to Paragraphs
+        var main_content = document.getElementById('main_content');
+        main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+    }
 });
 
 function addLinksToHeaders(elementId) {
@@ -117,6 +121,13 @@ function concatenateFirstLetters(text) {
 
 function GenerateTableOfContents() {  
   const toc = document.getElementById('insert-table-of-contents-here');
+  
+  // Exit early if TOC element doesn't exist
+  if (!toc) {
+    console.log('Table of Contents element not found - skipping TOC generation');
+    return;
+  }
+  
   const headers = document.querySelectorAll('#main_content h1, #main_content h2, #main_content h3, #main_content h4, #main_content h5, #main_content h6');
   
   // Determine the level of the first header to calculate the offset

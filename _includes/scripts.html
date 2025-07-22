@@ -30,8 +30,25 @@
     <!-- Winerlinks code-->
     <script src="/js/winerlinks.js" async></script>
 
-    <!-- blurhash -->
-    <script src="https://cdn.jsdelivr.net/npm/blurhash@2.0.5/dist/index.min.js"></script>
+    <!-- blurhash - load conditionally to avoid module errors -->
+    <script>
+        // Only load blurhash if we're in a proper module context or if needed
+        try {
+            // Check if we're in a context that supports modules
+            if (typeof window !== 'undefined' && typeof window.BlurHash === 'undefined') {
+                // Load the script dynamically
+                const script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/blurhash@2.0.5/dist/index.min.js';
+                script.async = true;
+                script.onerror = function() {
+                    console.warn('BlurhHash library failed to load - image lazy loading may not work optimally');
+                };
+                document.head.appendChild(script);
+            }
+        } catch (e) {
+            console.warn('BlurhHash loading skipped due to compatibility issues:', e);
+        }
+    </script>
 
     <!-- Start Clarity Code -->
     {% include js-clarity.html %}
