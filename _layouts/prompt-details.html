@@ -433,7 +433,7 @@
             if (chatgptBtn) {
                 chatgptBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var defaultModel = "{{ page.models-supported | where_exp: 'model', 'model contains \"gpt\" or model contains \"03\" or model contains \"04\" or model contains \"o1\"' | first | default: 'gpt-4' }}";
+                    var defaultModel = "gpt-4"; // Default fallback
                     var promptTitle = encodeURIComponent("{{ page.title }}");
                     var promptContent = encodeURIComponent(getPromptContent());
                     var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptTitle}%0A%0A${promptContent}`;
