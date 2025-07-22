@@ -43,6 +43,11 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gemini-pro
+  - gemini-pro-vision
 
 prompt_content: |
   You are a cross-platform content strategist. I will provide you with a blog post including a title, subtitle, body content, and (optionally) a description of an accompanying image. Your task is to rewrite the content for the following platforms:
