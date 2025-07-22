@@ -6,6 +6,8 @@ permalink: /prompts/ai-tutoring-prompt-designer/
 tags: [tutoring, instructional-design, coaching, adaptive-learning, ai-education]
 categories: [Prompts]
 
+mastodon-post-id:
+
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
@@ -62,6 +64,4 @@ prompt_content: |
   * Explain after the code block prompt (and not in the code block) that this is a draft and that the user should copy and paste the prompt into a new chat and test it out with the user in mind (someone who is a novice to the topic) and refine it
   * Do not explain what you'll do once you have the information, just do it e.g. do not explain what the prompt will include
   * Do not mention learning styles. This is an educational myth
-
-mastodon-post-id:
 ---
