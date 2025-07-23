@@ -258,7 +258,7 @@
         <div>
             <h3>Related Prompts</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {% comment %}
+                <!-- 
                 Dynamic Related Prompts based on tag overlap
                 1. Get all prompt pages from site.pages
                 2. Filter for pages with layout: prompt-details 
@@ -266,33 +266,34 @@
                 4. Calculate tag overlap score for each
                 5. Sort by overlap score descending
                 6. Limit to top 9 results
-                {% endcomment %}
+                -->
                 
                 {% assign current_tags = page.tags | default: '' %}
                 {% assign related_prompts = '' | split: '' %}
-                
-                {% comment %} Build array of related prompts with overlap scores {% endcomment %}
+
+                <!-- Build array of related prompts with overlap scores -->
                 {% for prompt_page in site.pages %}
                     {% if prompt_page.layout == 'prompt-details' and prompt_page.url != page.url %}
                         {% assign prompt_tags = prompt_page.tags | default: '' %}
                         {% assign overlap_count = 0 %}
-                        
-                        {% comment %} Calculate tag overlap {% endcomment %}
+
+                        <!-- Calculate tag overlap -->
                         {% for current_tag in current_tags %}
                             {% if prompt_tags contains current_tag %}
                                 {% assign overlap_count = overlap_count | plus: 1 %}
                             {% endif %}
                         {% endfor %}
                         
-                        {% comment %} Only include prompts with at least 1 overlapping tag {% endcomment %}
+                        <!-- Only include prompts with at least 1 overlapping tag -->
                         {% if overlap_count > 0 %}
                             {% assign prompt_with_score = prompt_page | append: '|' | append: overlap_count %}
                             {% assign related_prompts = related_prompts | push: prompt_with_score %}
                         {% endif %}
                     {% endif %}
                 {% endfor %}
-                
-                {% comment %} Sort by overlap score (descending) and limit to 9 results {% endcomment %}
+
+
+                <!-- Sort by overlap score (descending) and limit to 9 results -->
                 {% assign sorted_prompts = related_prompts | sort | reverse %}
                 {% assign max_prompts = 9 %}
                 {% assign prompt_count = 0 %}
@@ -325,12 +326,12 @@
                     {% endif %}
                 {% endfor %}
                 
-                {% comment %} If no related prompts found with tag overlap, show fallback message {% endcomment %}
+                <!-- If no related prompts found with tag overlap, show fallback message --->
                 {% if prompt_count == 0 %}
                     <div class="col-12">
                         <div class="alert alert-info" role="alert">
                             <h5 class="alert-heading">No Related Prompts Found</h5>
-                            <p class="mb-0">We couldn't find any prompts with overlapping tags. <a href="/prompts/" class="alert-link">Browse all prompts</a> to discover more.</p>
+                            <p class="mb-0">We couldn't find any prompts with overlapping tags. <a href="https://tedt.org/category/Prompts/" class="alert-link">Browse all prompts</a> to discover more.</p>
                         </div>
                     </div>
                 {% endif %}
