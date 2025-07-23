@@ -3,7 +3,7 @@ layout: prompt-details
 title: "Artistic Analysis Prompt – Deep Analysis of Artistic Works"
 description: "A layered, multidimensional prompt for AI to generate scholarly, symbolically-rich, and culturally contextual analyses of artistic works across any medium—visual, auditory, or performative."
 permalink: /prompts/artistic-Analysis/
-tags: [art-analysis, interdisciplinary, cultural-commentary, literary-criticism, aesthetic-theory]
+tags: [art-analysis, prompt-template, interdisciplinary, cultural-commentary, literary-criticism, aesthetic-theory]
 categories: [Prompts]
 
 mastodon-post-id:

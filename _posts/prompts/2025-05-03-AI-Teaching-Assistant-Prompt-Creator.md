@@ -3,7 +3,7 @@ layout: prompt-details
 title: "AI Teaching Assistant Prompt Creator"
 description: "A structured dialogue-based prompt designed to help teachers build custom AI teaching assistants that streamline lesson planning, quiz generation, grading, or other instructional tasks."
 permalink: /prompts/ai-teaching-assistant-prompt-creator/
-tags: [education, instructional-design, ai-assistants]
+tags: [education, prompt-template, instructional-design, ai-assistants]
 categories: [Prompts]
 
 mastodon-post-id:

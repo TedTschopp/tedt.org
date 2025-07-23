@@ -3,7 +3,7 @@ layout: prompt-details
 title: "AI Simulation Creator Prompt – Roleplay-Based Learning Scenarios"
 description: "An instructional AI prompt template for generating roleplay-based simulations with an AI mentor guiding students through practical skill-building scenarios such as negotiations, hiring, and pitching."
 permalink: /prompts/ai-simulation-creator-roleplay-prompt/
-tags: [simulation, roleplay, instructional-design, ai-mentor, experiential-learning]
+tags: [simulation, prompt-template, roleplay, instructional-design, ai-mentor, experiential-learning]
 categories: [Prompts]
 
 mastodon-post-id:
