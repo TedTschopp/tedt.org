@@ -275,6 +275,11 @@
                 {% for prompt_page in site.pages %}
                     {% if prompt_page.layout == 'prompt-details' and prompt_page.url != page.url %}
                         {% assign prompt_tags = prompt_page.tags | default: '' %}
+                        <!--
+                        
+                        prompt_page.tags: {{ prompt_tags | join: ', ' }}
+                        
+                        -->
                         {% assign overlap_count = 0 %}
 
                         <!-- Calculate tag overlap -->
