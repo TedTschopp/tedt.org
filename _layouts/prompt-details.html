@@ -258,82 +258,99 @@
         <div>
             <h3>Related Prompts</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- 
-                Dynamic Related Prompts based on tag overlap
-                1. Get all prompt pages from site.pages
-                2. Filter for pages with layout: prompt-details 
-                3. Exclude current page
-                4. Calculate tag overlap score for each
-                5. Sort by overlap score descending
-                6. Limit to top 9 results
-                -->
                 
-                {% assign current_tags = page.tags | default: '' %}
-                {% assign related_prompts = '' | split: '' %}
-
-                <!-- Build array of related prompts with overlap scores -->
-                {% for prompt_page in site.pages %}
-                    {% if prompt_page.layout == 'prompt-details' and prompt_page.url != page.url %}
-                        {% assign prompt_tags = prompt_page.tags | default: '' %}
-                        <!--
-                        
-                        prompt_page.tags: {{ prompt_tags | join: ', ' }}
-                        
-                        -->
-                        {% assign overlap_count = 0 %}
-
-                        <!-- Calculate tag overlap -->
-                        {% for current_tag in current_tags %}
-                            {% if prompt_tags contains current_tag %}
-                                {% assign overlap_count = overlap_count | plus: 1 %}
-                                <!-- overlap_count: {{ overlap_count }} -->
+                <!-- Simple debugging version -->
+                {% assign current_tags = page.tags | default: empty %}
+                {% assign found_prompts = 0 %}
+                {% assign total_checked = 0 %}
+                
+                <!-- First, let's just show what we're working with -->
+                <div class="col-12 mb-3">
+                    <div class="alert alert-info">
+                        <h6>Debug Info:</h6>
+                        <p><strong>Current page:</strong> {{ page.title }}</p>
+                        <p><strong>Current tags:</strong> 
+                            {% if current_tags.size > 0 %}
+                                {% for tag in current_tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                            {% else %}
+                                No tags
                             {% endif %}
-                        {% endfor %}
-                        
-                        <!-- Only include prompts with at least 1 overlapping tag -->
-                        {% if overlap_count > 0 %}
-                            {% assign prompt_with_score = prompt_page | append: '|' | append: overlap_count %}
-                            {% assign related_prompts = related_prompts | push: prompt_with_score %}
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-
-
-                <!-- Sort by overlap score (descending) and limit to 9 results -->
-                {% assign sorted_prompts = related_prompts | sort | reverse %}
-                {% assign max_prompts = 9 %}
-                {% assign prompt_count = 0 %}
+                        </p>
+                        <p><strong>Current layout:</strong> {{ page.layout }}</p>
+                    </div>
+                </div>
                 
-                {% for prompt_with_score in sorted_prompts %}
-                    {% if prompt_count < max_prompts %}
-                        {% assign prompt_data = prompt_with_score | split: '|' %}
-                        {% assign prompt = prompt_data[0] %}
-                        {% assign overlap_score = prompt_data[1] %}
+                <!-- Check site.posts for prompts -->
+                {% for post in site.posts %}
+                    {% assign total_checked = total_checked | plus: 1 %}
+                    {% if post.layout == 'prompt-details' and post.url != page.url %}
+                        {% assign post_tags = post.tags | default: empty %}
+                        {% assign overlap_count = 0 %}
                         
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <a href="{{ prompt.url | relative_url }}" class="text-decoration-none text-reset">
-                                        <h5 class="card-title">{{ prompt.title | default: "Untitled Prompt" }}</h5>
-                                    </a>
-                                    <p class="card-text">{{ prompt.description | default: prompt.excerpt | strip_html | truncate: 120 }}</p>
-                                    {% if prompt.tags and prompt.tags.size > 0 %}
+                        <!-- Calculate overlap -->
+                        {% if current_tags.size > 0 and post_tags.size > 0 %}
+                            {% for current_tag in current_tags %}
+                                {% for post_tag in post_tags %}
+                                    {% if current_tag == post_tag %}
+                                        {% assign overlap_count = overlap_count | plus: 1 %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                        
+                        <!-- Show if we have overlap -->
+                        {% if overlap_count > 0 %}
+                            {% assign found_prompts = found_prompts | plus: 1 %}
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <a href="{{ post.url | relative_url }}" class="text-decoration-none text-reset">
+                                            <h5 class="card-title">{{ post.title }}</h5>
+                                        </a>
+                                        <p class="card-text">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
                                         <div class="mt-2">
-                                            {% for tag in prompt.tags limit: 3 %}
+                                            {% for tag in post_tags limit: 3 %}
                                                 <span class="badge bg-secondary me-1">{{ tag }}</span>
                                             {% endfor %}
                                         </div>
-                                    {% endif %}
+                                        <small class="text-muted d-block mt-2">Overlap: {{ overlap_count }} tag(s)</small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endif %}
                         
-                        {% assign prompt_count = prompt_count | plus: 1 %}
+                        <!-- Show all prompts for debugging (limit to first 3) -->
+                        {% if found_prompts < 3 and overlap_count == 0 %}
+                            <div class="col-12">
+                                <div class="alert alert-warning">
+                                    <small>
+                                        <strong>Checked:</strong> {{ post.title }}<br>
+                                        <strong>Tags:</strong> 
+                                        {% if post_tags.size > 0 %}
+                                            {% for tag in post_tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                                        {% else %}
+                                            No tags
+                                        {% endif %}<br>
+                                        <strong>Overlap:</strong> {{ overlap_count }}
+                                    </small>
+                                </div>
+                            </div>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
                 
-                <!-- If no related prompts found with tag overlap, show fallback message --->
-                {% if prompt_count == 0 %}
+                <!-- Summary -->
+                <div class="col-12 mt-3">
+                    <div class="alert alert-success">
+                        <h6>Summary:</h6>
+                        <p><strong>Total posts checked:</strong> {{ total_checked }}</p>
+                        <p><strong>Related prompts found:</strong> {{ found_prompts }}</p>
+                    </div>
+                </div>
+                
+                <!-- Fallback message if no results -->
+                {% if found_prompts == 0 %}
                     <div class="col-12">
                         <div class="alert alert-info" role="alert">
                             <h5 class="alert-heading">No Related Prompts Found</h5>
