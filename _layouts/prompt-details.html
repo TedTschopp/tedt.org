@@ -281,6 +281,7 @@
                         {% for current_tag in current_tags %}
                             {% if prompt_tags contains current_tag %}
                                 {% assign overlap_count = overlap_count | plus: 1 %}
+                                <!-- overlap_count: {{ overlap_count }} -->
                             {% endif %}
                         {% endfor %}
                         
