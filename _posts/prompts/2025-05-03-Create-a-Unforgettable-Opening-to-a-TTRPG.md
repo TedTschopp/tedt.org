@@ -3,8 +3,13 @@ layout: prompt-details
 title: "Create a Unforgettable Opening to a TTRPG"
 description: "An advanced prompt designed to generate richly layered, culturally resonant TTRPG session openings across artistic media—blending worldbuilding with deep artistic analysis and narrative design."
 permalink: /prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/
-tags: [ttrpg, prompt-template, storytelling, art-analysis, worldbuilding]
 categories: [Prompts]
+tags: 
+  - TTRPG
+  - Prompt Template
+  - Storytelling
+  - Art Analysis
+  - Worldbuilding
 
 mastodon-post-id:
 

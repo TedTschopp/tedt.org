@@ -3,8 +3,14 @@ layout: prompt-details
 title: "AI Tutoring Prompt Designer – Help Others Learn What You Know"
 description: "A structured AI prompt template to help users design effective tutoring dialogues that assess prior knowledge, guide learners with open-ended questions, and provide adaptive support for mastering a topic."
 permalink: /prompts/ai-tutoring-prompt-designer/
-tags: [tutoring, prompt-template, instructional-design, coaching, adaptive-learning, ai-education]
 categories: [Prompts]
+tags: 
+  - Tutoring
+  - Prompt Template
+  - Instructional Design
+  - Coaching
+  - Adaptive Learning
+  - AI Education
 
 mastodon-post-id:
 

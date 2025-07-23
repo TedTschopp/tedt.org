@@ -3,8 +3,13 @@ layout: prompt-details
 title: "AI Simulation Creator – Scenario-Based Skill Practice"
 description: "A dynamic prompt framework for generating AI-led roleplay simulations, where learners practice applying key skills like negotiation, hiring, or pitching through structured scenarios and guided mentorship."
 permalink: /prompts/ai-simulation-creator/
-tags: [simulation, roleplay, instructional-design, ai-mentor, skill-building]
 categories: [Prompts]
+tags: 
+  - Simulation
+  - Roleplay
+  - Instructional Design
+  - AI Mentor
+  - Skill Building
 
 mastodon-post-id:
 

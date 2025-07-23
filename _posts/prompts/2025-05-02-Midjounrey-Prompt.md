@@ -3,8 +3,10 @@ layout: prompt-details
 title: "Midjourney V6.1 Prompt Generator Template"
 description: "A structured, weight-based system to generate high-quality prompts for Midjourney V6.1 image creation. Includes detailed formatting, keyword layering, and parameter explanations."
 permalink: /prompts/midjourney-v6.1-prompt-template/
-tags: [midjourney, image-generation]
 categories: [Prompts]
+tags: 
+  - Midjourney
+  - Image Generation
 
 mastodon-post-id:
 

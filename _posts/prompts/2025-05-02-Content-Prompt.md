@@ -3,8 +3,10 @@ layout: prompt-details
 title: "Cross-Platform Social Media Repurposing Template"
 description: "A structured, platform-aware markdown framework to repurpose blog content for LinkedIn, Instagram, Threads, Mastodon, and more—tailored to match tone, format, and audience expectations."
 permalink: /prompts/social-media-repurposing-template/
-tags: [content-strategy, social-media]
 categories: [Prompts]
+tags: 
+  - Content Strategy
+  - Social Media
 
 mastodon-post-id:
 

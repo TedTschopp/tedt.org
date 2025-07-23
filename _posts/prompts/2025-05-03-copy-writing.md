@@ -3,8 +3,13 @@ layout: prompt-details
 title: "Marketing Copy Evaluation & Rewrite Template"
 description: "A prompt for critically evaluating and rewriting web marketing copy using 15 weighted copywriting criteria based on clarity, persuasion, and customer relevance."
 permalink: /prompts/marketing-copy-evaluation-template/
-tags: [copywriting, prompt-template, marketing, content-evaluation, web-strategy]
 categories: [Prompts]
+tags: 
+  - Copywriting
+  - Prompt Template
+  - Marketing
+  - Content Evaluation
+  - Web Strategy
 
 mastodon-post-id:
 
