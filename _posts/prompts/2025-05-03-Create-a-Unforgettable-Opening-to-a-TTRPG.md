@@ -6,7 +6,8 @@ permalink: /prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/
 categories: [Prompts]
 tags: 
   - TTRPG
-  - Prompt Template
+  - Roleplay
+  - Roleplaying
   - Storytelling
   - Art Analysis
   - Worldbuilding

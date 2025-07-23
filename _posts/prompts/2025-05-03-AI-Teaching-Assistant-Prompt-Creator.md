@@ -6,7 +6,6 @@ permalink: /prompts/ai-teaching-assistant-prompt-creator/
 categories: [Prompts]
 tags: 
   - Education
-  - Prompt Template
   - Instructional Design
   - AI Assistants
 

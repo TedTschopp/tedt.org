@@ -6,7 +6,6 @@ permalink: /prompts/ai-tutoring-prompt-designer/
 categories: [Prompts]
 tags: 
   - Tutoring
-  - Prompt Template
   - Instructional Design
   - Coaching
   - Adaptive Learning

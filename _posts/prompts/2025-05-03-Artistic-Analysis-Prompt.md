@@ -6,7 +6,6 @@ permalink: /prompts/artistic-Analysis/
 categories: [Prompts]
 tags: 
    - Art Analysis
-   - Prompt Template
    - Interdisciplinary
    - Cultural Commentary
    - Literary Criticism

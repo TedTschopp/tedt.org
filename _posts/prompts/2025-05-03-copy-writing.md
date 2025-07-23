@@ -6,7 +6,6 @@ permalink: /prompts/marketing-copy-evaluation-template/
 categories: [Prompts]
 tags: 
   - Copywriting
-  - Prompt Template
   - Marketing
   - Content Evaluation
   - Web Strategy

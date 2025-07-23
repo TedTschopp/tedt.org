@@ -6,7 +6,6 @@ permalink: /prompts/ai-simulation-creator-roleplay-prompt/
 categories: [Prompts]
 tags: 
   - simulation
-  - Prompt Template
   - Roleplay
   - Instructional Design
   - AI Mentor
