@@ -258,113 +258,82 @@
         <div>
             <h3>Related Prompts</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Creative Ad Slogan Generator</h5>
-                            </a>
-                            <p class="card-text">Generate catchy and original slogans for your next advertising
-                                campaign.</p>
+                {% comment %}
+                Dynamic Related Prompts based on tag overlap
+                1. Get all prompt pages from site.pages
+                2. Filter for pages with layout: prompt-details 
+                3. Exclude current page
+                4. Calculate tag overlap score for each
+                5. Sort by overlap score descending
+                6. Limit to top 9 results
+                {% endcomment %}
+                
+                {% assign current_tags = page.tags | default: '' %}
+                {% assign related_prompts = '' | split: '' %}
+                
+                {% comment %} Build array of related prompts with overlap scores {% endcomment %}
+                {% for prompt_page in site.pages %}
+                    {% if prompt_page.layout == 'prompt-details' and prompt_page.url != page.url %}
+                        {% assign prompt_tags = prompt_page.tags | default: '' %}
+                        {% assign overlap_count = 0 %}
+                        
+                        {% comment %} Calculate tag overlap {% endcomment %}
+                        {% for current_tag in current_tags %}
+                            {% if prompt_tags contains current_tag %}
+                                {% assign overlap_count = overlap_count | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% comment %} Only include prompts with at least 1 overlapping tag {% endcomment %}
+                        {% if overlap_count > 0 %}
+                            {% assign prompt_with_score = prompt_page | append: '|' | append: overlap_count %}
+                            {% assign related_prompts = related_prompts | push: prompt_with_score %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% comment %} Sort by overlap score (descending) and limit to 9 results {% endcomment %}
+                {% assign sorted_prompts = related_prompts | sort | reverse %}
+                {% assign max_prompts = 9 %}
+                {% assign prompt_count = 0 %}
+                
+                {% for prompt_with_score in sorted_prompts %}
+                    {% if prompt_count < max_prompts %}
+                        {% assign prompt_data = prompt_with_score | split: '|' %}
+                        {% assign prompt = prompt_data[0] %}
+                        {% assign overlap_score = prompt_data[1] %}
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <a href="{{ prompt.url | relative_url }}" class="text-decoration-none text-reset">
+                                        <h5 class="card-title">{{ prompt.title | default: "Untitled Prompt" }}</h5>
+                                    </a>
+                                    <p class="card-text">{{ prompt.description | default: prompt.excerpt | strip_html | truncate: 120 }}</p>
+                                    {% if prompt.tags and prompt.tags.size > 0 %}
+                                        <div class="mt-2">
+                                            {% for tag in prompt.tags limit: 3 %}
+                                                <span class="badge bg-secondary me-1">{{ tag }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% assign prompt_count = prompt_count | plus: 1 %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% comment %} If no related prompts found with tag overlap, show fallback message {% endcomment %}
+                {% if prompt_count == 0 %}
+                    <div class="col-12">
+                        <div class="alert alert-info" role="alert">
+                            <h5 class="alert-heading">No Related Prompts Found</h5>
+                            <p class="mb-0">We couldn't find any prompts with overlapping tags. <a href="/prompts/" class="alert-link">Browse all prompts</a> to discover more.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Interview Question Builder</h5>
-                            </a>
-                            <p class="card-text">Create tailored interview questions for any job role or industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Newsletter Content Planner</h5>
-                            </a>
-                            <p class="card-text">Plan engaging newsletter content for your subscribers with ease.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">YouTube Video Script Assistant</h5>
-                            </a>
-                            <p class="card-text">Draft compelling scripts for your YouTube videos, tailored to your
-                                audience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Customer Testimonial Request</h5>
-                            </a>
-                            <p class="card-text">Generate polite and effective requests for customer testimonials or
-                                reviews.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Event Invitation Writer</h5>
-                            </a>
-                            <p class="card-text">Write engaging invitations for events, parties, or webinars.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">FAQ Generator</h5>
-                            </a>
-                            <p class="card-text">Automatically generate frequently asked questions and answers for your
-                                product or service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Personal Bio Creator</h5>
-                            </a>
-                            <p class="card-text">Craft a professional and engaging personal bio for your website or
-                                social media.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Product Comparison Table Builder</h5>
-                            </a>
-                            <p class="card-text">Easily create comparison tables for products or services to help
-                                customers decide.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <a href="prompt-details.html" class="text-decoration-none text-reset">
-                                <h5 class="card-title">Daily Journal Prompt</h5>
-                            </a>
-                            <p class="card-text">Get a new thought-provoking journal prompt every day to inspire
-                                reflection and growth.</p>
-                        </div>
-                    </div>
-                </div>
+                {% endif %}
             </div>
         </div>
     </main>
