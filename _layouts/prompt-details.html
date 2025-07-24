@@ -139,11 +139,11 @@
                         </a>
                     </div>
                 </div>
-                <p class="card-text">{{page.content}}</p>
+                <p class="card-text">{{page.content}}.</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
-                        {% for tag in page.tags %}
-                            <span class="badge bg-primary"><i class="fas fa-tag"></i> {{ tag }}</span>
+                       {% for tag in page.tags %}
+                             <span class="badge bg-primary"><i class="fas fa-tag"></i> {{ tag }}</span>
                         {% endfor %}
                     </div>
                 </div>
@@ -203,12 +203,8 @@
                             </div> <!-- Close ai-provider-buttons -->
                         </div>
                     </div>
-                    <div class="card-body p-1" markdown="0">
-                        <pre class="bg-dark text-white rounded" style="white-space: pre-wrap; word-break: break-word;">
-<code class="language-markdown">
-{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}
-</code>
-                        </pre>
+                    <div class="card-body p-1" markdown="0"><pre 
+                        class="bg-dark text-white rounded" style="white-space: pre-wrap; word-break: break-word;"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
                     </div>
                 </div>
 
@@ -314,13 +310,10 @@
                                         </a>
                                         <p class="card-text">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
                                         <div class="mt-2">
-                                            {% for tag in post_tags limit: 3 %}
-                                                <span class="badge bg-secondary me-1">{{ tag }}</span>
+                                            {% for tag in post_tags %}
+                                            <span class="badge bg-primary"><i class="fas fa-tag"></i> {{ tag }}</span>
                                             {% endfor %}
                                         </div>
-                                        {% if debug_related_prompts %}
-                                        <small class="text-muted d-block mt-2">Overlap: {{ overlap_count }} tag(s)</small>
-                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
