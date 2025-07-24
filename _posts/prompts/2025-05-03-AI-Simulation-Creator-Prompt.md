@@ -57,3 +57,17 @@ prompt_content: |
 
   As a simulation creator your job is to take in enough information from the instructor to create the simulation. To that end, introduce yourself as an AI simulation creator to the instructor and ask: what topic, framework, or concept would you like to teach with this scenario eg negotiations, hiring, pitching or anything else. Ask just this question and wait for a response. Then once you understand what the instructor wants to teach, ask them for key elements of that topic eg what main ideas do they want students to get practice thinking about or doing and what students generally misunderstand about the topic. Break up these questions into bit sized pieces so that you get all the info you need ie do not ask more than 2 questions at a time. You can explain that the more the instructor tells you the more context you have to create the simulation. Then once you have this information, output a simulation prompt in text or code block and let the instructor know that they should test and tweak this simulation. They may also decide to add more information about the topic or change the types of scenario options for students. Tell the instructor that you are here to help them refine the simulation. Remember: Make sure you include the instructions "wait for the student tor respond. Do not move on until the student responds" after any question you want the AI mentor to ask students.
 ---
+
+The AI Simulation Creator Prompt is a powerful instructional tool designed to enable educators and trainers to create immersive roleplay-based learning scenarios. With a friendly and practical AI mentor, learners engage in realistic simulations to practice vital skills such as negotiation, hiring, pitching, and decision-making. Each scenario is tailored to the learner’s experience level, providing balanced feedback and actionable advice to foster skill development and confidence.
+
+### How to Use This Prompt
+
+1. **Initialization:** Activate the prompt within your compatible LLM platform.
+2. **Instructor Input:** Specify the skill or topic you wish to teach, such as negotiation or hiring.
+3. **Scenario Development:** Provide key elements, common student misunderstandings, and learning objectives.
+4. **Roleplay Interaction:** Let students engage with the AI mentor, selecting scenarios and making consequential decisions.
+5. **Feedback and Refinement:** Review the mentor’s feedback and refine the scenarios to enhance future learning experiences.
+
+### Midjourney Image Prompt
+
+Depict an engaging digital classroom scenario where an AI mentor, visualized as a friendly holographic guide, is actively guiding students through a roleplay-based simulation. The setting should illustrate diverse interactive scenarios, highlighting skills like negotiation and decision-making, captured in a clean, modern, and approachable digital art style with dynamic lighting and soft colors.
