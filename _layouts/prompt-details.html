@@ -126,6 +126,107 @@
         <div class="card mb-4">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
+
+
+
+
+                    <div class="card h-100 no-padding">
+                        {% if page.image %}
+                            {% if page.image-alt %}
+                                {% assign image_alt = page.image-alt %}
+                                {% elsif page.image-description %}
+                                {% assign image_alt = page.image-description %}
+                            {% else %}
+                                {% assign image_alt = page.title %}
+                            {% endif %}
+                    
+                            {% if page.image-credits-title %}
+                                {% assign image_credits_title = page.image-credits-title %}
+                            {% elsif page.image-title %}
+                                {% assign image_credits_title = page.image-title %}
+                            {% else %}
+                                {% assign image_credits_title = "Unknown" %}
+                            {% endif %}
+                    
+                            {% if page.image-credits-artist %}
+                                {% assign image_credits = page.image-credits-artist %}
+                            {% elsif page.image-artist %}
+                                {% assign image_credits = page.image-artist %}
+                            {% else %}
+                                {% assign image_credits = "Unknown" %}
+                            {% endif %}
+                        
+                            {% if page.image-credits-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
+                            {% elsif page.image-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-artist-URL %}
+                            {% endif %}
+                        
+                            {% if page.image contains "http" %}
+                                {% assign image_URL = page.image %}
+                            {% else %}
+                                {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                            {% endif %}
+                        {% else %}
+                            {% if site.featured-image %}
+                                {% if site.featured-image contains "http" %}
+                                    {% assign image_URL = site.featured-image %}
+                                {% else %}
+                                    {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
+                                {% endif %}
+                            {% else %}
+                                {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
+                            {% endif %}
+
+                            {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually
+                            uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures,
+                            earthy palette with luminous highlights" %}
+                            {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
+                            {% assign image_credits = "Ted Tschopp" %}
+                            {% assign image_credits_artist_URL = "https://tedt.org/" %}
+                        {% endif %}
+                        <div class="card h-100 position-relative">
+                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
+                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                <div class="position-absolute top-0 start-0 w-100 h-100"
+                                    style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;"></div>
+                    
+                                <h1 class="card-title p-name stroke-glow-text" style="z-index: 2; position: relative;">{{ page.title }}</h1>
+                                {% if page.subtitle %}<p class="stroke-glow-text card-subtitle h2 text-muted mb-2"
+                                    style="z-index: 2; position: relative;">{{page.subtitle}}</p>{% endif %}
+                    
+                                <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
+                                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
+                                    {% if page.author.name %}
+                                    <p class="card-text">written by <a rel="author" class="p-author h-card"
+                                            href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;"
+                                                class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                                    {% else %}
+                                    <p class="card-text">written by <a rel="author" class="p-author h-card"
+                                            href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;"
+                                                class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                                    {% endif %}
+                                </div>
+                    
+                                <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
+                                    {% if image-credits-URL contains "http" %}
+                                        <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
+                                    {% else %}
+                                        <cite>{{image_credits_title}}</cite>
+                                    {% endif %}
+                                    {% if image-credits-artist-URL contains "http" %}
+                                        <span class="vcard">
+                                            <address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new"
+                                                    class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address>
+                                        </span>
+                                    {% else %}
+                                        :&nbsp;an image by {{image_credits}}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h2 class="card-title">{{page.title}}</h2>
                     <div class="d-flex align-items-center">
                         <div class="like-container">
