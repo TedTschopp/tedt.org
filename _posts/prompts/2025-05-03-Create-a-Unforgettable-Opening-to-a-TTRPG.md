@@ -58,15 +58,10 @@ models-supported:
 
 image: "/img/prompts/TTRPG-Opening-Scene.png"
 image-alt: "An illustrated TTRPG setting depicting a vibrant, detailed blue market building with bustling activity, stairs, lanterns, and annotated notes for game design."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Bustling Blue Market Scene for TTRPG Adventure"
 image-description: "This illustration presents an intricately detailed scene intended as a tabletop roleplaying game (TTRPG) opening scenario. The central feature is a vivid, blue-painted market building bustling with activity, featuring multiple floors and outdoor staircases connecting levels. Warm lantern lights illuminate various market stalls and interior spaces, creating an inviting and immersive atmosphere. Figures interact in small groups around crates and tables, suggesting active engagement and layered storytelling opportunities. Surrounding the image are handwritten annotations and design notes, hinting at hidden secrets, puzzles, and narrative possibilities integral to immersive gameplay. This richly illustrated environment enhances player engagement and narrative depth, perfect for detailed exploration in a TTRPG session."
 image-title: "Bustling Blue Market Scene for TTRPG Adventure"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 
 prompt_content: |

@@ -205,15 +205,10 @@ prompt_content: |
 
 image: "/img/prompts/Cross-Platform-Content.png"
 image-alt: "Illustration of social media icons scattered across a dark, textured surface with a dramatic depth-of-field effect."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Unified Social Media Presence Across Platforms"
 image-description: "A dynamic visual representation featuring various social media platform icons, including LinkedIn, YouTube, Pinterest, Twitter, and Facebook, dispersed across a dark, textured background. The icons appear as circular, glossy bubbles of different colors and sizes, rendered with a shallow depth of field, giving the impression of interconnectedness and highlighting cross-platform social media strategies."
 image-title: "Unified Social Media Presence Across Platforms"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 --- 
 

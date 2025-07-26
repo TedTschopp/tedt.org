@@ -59,15 +59,10 @@ prompt_content: |
 
 image: "/img/prompts/Immersive-AI-Simulation.png"
 image-alt: "Close-up of an engaged student interacting with a glowing, translucent AI hologram in a modern classroom, symbolizing immersive, technology-driven experiential learning."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Immersive AI Roleplay Simulation"
 image-description: "A captivated student interacts with a shimmering, holographic AI mentor during an immersive roleplay-based simulation. Set within a contemporary classroom, the student is fully engaged, experiencing an innovative, experiential approach to skill development and decision-making guided by advanced AI technology."
 image-title: "Immersive AI Roleplay Simulation"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 ---
 

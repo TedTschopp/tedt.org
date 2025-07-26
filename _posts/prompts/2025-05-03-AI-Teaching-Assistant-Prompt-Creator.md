@@ -71,15 +71,10 @@ prompt_content: |
 
 image: "/img/prompts/Immersive-AI-Simulation.png"
 image-alt: "A female student sits at a classroom desk facing a large screen displaying a male AI teaching assistant. The classroom is bright, filled with greenery, and features modern educational technology."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "AI Teaching Assistant"
 image-description: "Illustration of a modern, bright classroom where a female student is seated at a desk, attentively interacting with a virtual AI teaching assistant displayed on a large digital screen. The room features abundant natural lighting, lush indoor plants, and minimalist wooden desks, conveying a futuristic yet welcoming educational environment."
 image-title: "AI Teaching Assistant"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 ---
 The AI Teaching Assistant Prompt Creator enables educators to efficiently design customized AI teaching assistants for various instructional tasks, such as lesson planning, quiz generation, grading, and parent communication. By facilitating a structured, dialogue-based interaction, this prompt allows teachers to clearly articulate their specific instructional needs, resulting in tailored, automated processes that enhance productivity and effectiveness in the classroom.

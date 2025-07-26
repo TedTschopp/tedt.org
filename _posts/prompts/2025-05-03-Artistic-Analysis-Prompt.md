@@ -52,15 +52,10 @@ models-supported:
 
 image: "/img/prompts/Artistic-Scholar.png"
 image-alt: "Illustration of an elderly scholar with glasses seated among stacks of books and luminous bottles, set against an abstract, vibrant cityscape filled with swirling colors and intricate patterns."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
+image-title: "The Contemplative Scholar"
+image-description: "An artistic illustration depicting a distinguished elderly scholar seated thoughtfully in a grand chair, surrounded by meticulously stacked books and glowing, oversized bottles. The backdrop is a mesmerizing cityscape composed of abstract shapes, swirling patterns, and radiant golden-yellow and teal hues, invoking a sense of intellectual depth, wonder, and scholarly contemplation."
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "The Contemplative Scholar"
-image-description: "An artistic illustration depicting a distinguished elderly scholar seated thoughtfully in a grand chair, surrounded by meticulously stacked books and glowing, oversized bottles. The backdrop is a mesmerizing cityscape composed of abstract shapes, swirling patterns, and radiant golden-yellow and teal hues, invoking a sense of intellectual depth, wonder, and scholarly contemplation."
-image-title: "The Contemplative Scholar"
 
 prompt_content: |
   <Role>

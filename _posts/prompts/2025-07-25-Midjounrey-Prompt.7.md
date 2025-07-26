@@ -158,15 +158,10 @@ prompt_content: |
 
 image: "/img/prompts/Image-Prompt-Engineering.png"
 image-alt: "Woman with magenta hair working on a glowing digital map in a futuristic sci-fi lab surrounded by monitors, tools, and cybernetic equipment"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Image Prompt Architect at the Edge of the Future"
 image-description: "In a high-tech workspace bathed in blue hues and electric shadows, a woman with vibrant magenta hair intently works at a glowing, map-like interface surrounded by a ring of dynamic data screens and sci-fi engineering tools. Her posture conveys focus and determination as she drafts or analyzes complex information on the illuminated surface. The environment is both cluttered and purposeful, a visual symphony of wires, mechanical limbs, and interactive holograms, embodying the convergence of creativity, technology, and exploration. The scene blends cyberpunk aesthetics with narrative-driven futurism, evoking themes of prompt engineering, space navigation, and digital craftsmanship."
 image-title: "Image Prompt Architect at the Edge of the Future"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 ---
 The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailored exactly to your specifications.

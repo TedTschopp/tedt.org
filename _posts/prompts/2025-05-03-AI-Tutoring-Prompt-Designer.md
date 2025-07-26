@@ -72,15 +72,10 @@ prompt_content: |
 
 image: "/img/prompts/Immersive-AI-Simulation.png"
 image-alt: "A female student sits at a classroom desk facing a large screen displaying a male AI teaching assistant. The classroom is bright, filled with greenery, and features modern educational technology."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "AI Teaching Assistant"
 image-description: "Illustration of a modern, bright classroom where a female student is seated at a desk, attentively interacting with a virtual AI teaching assistant displayed on a large digital screen. The room features abundant natural lighting, lush indoor plants, and minimalist wooden desks, conveying a futuristic yet welcoming educational environment."
 image-title: "AI Teaching Assistant"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 ---
 The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify learners’ prior knowledge, clear up misconceptions, and promote active knowledge construction. This interactive AI-based tutoring prompt is ideal for educators, coaches, or anyone looking to facilitate deeper, more meaningful learning experiences.

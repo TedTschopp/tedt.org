@@ -105,15 +105,10 @@ prompt_content: |
 
 image: "/img/prompts/Analysis-Analytics-and-Reports.png"
 image-alt: "A 3D illustration depicting various stylized interfaces, analytics dashboards, graphs, charts, and modular content blocks in pastel colors arranged dynamically."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Digital Analytics"
 image-description: "This image shows a visually engaging 3D illustration of multiple digital interfaces and analytical dashboards floating in space. Various elements including charts, graphs, content blocks, and interactive buttons are rendered in pastel shades of purple, orange, yellow, and green, set against a neutral gradient background. Soft, ambient lighting and semi-transparent materials give the image a futuristic, clean, and professional look, reflecting the processes involved in digital analytics and reporting"
 image-title: "Digital Analytics"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
 
 
 
