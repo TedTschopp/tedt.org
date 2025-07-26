@@ -32,12 +32,12 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: RPG/MCC-GW/images/c3p0_and_r2d2_by_skywalkergirl1_d3ajxp7-fullview.webp
-image-alt: C3P0 and R2D2 in the drawing skywalkergirl1
-image-title: C3P0 and R2D2
-image-description: "C3P0 and R2D2 in the drawing skywalkergirl1"
-image-credits-artist: skywalkergirl1
-image-credits-artist-URL: https://www.deviantart.com/skywalkergirl1/art/C3P0-and-R2D2-199124827
+image: https://tedt.org/img/TTRPG/MCC-GW/Hard-Hologram-R2D2-C3PO.png
+image-alt: Stylized illustration of Star Wars droids C-3PO and R2-D2 in a futuristic, high-tech control room with glowing screens and detailed machinery.
+image-title: C-3PO and R2-D2 has Hard Holograms from Mutant Crawl Classics
+image-description: "This vibrant and detailed digital illustration showcases iconic Star Wars droids C-3PO and R2-D2 standing closely together in a futuristic, technological environment reminiscent of a spaceship or advanced command center. C-3PO, with his shiny gold plating and expressive illuminated eyes, contrasts sharply with R2-D2’s familiar white and blue cylindrical shape and blinking red indicator. Behind them, complex panels of glowing blue and red screens and intricate machinery add depth and realism to the scene. The style blends precise line art with digital coloring, evoking both nostalgia and a futuristic aesthetic ideal for fans of science fiction and the Star Wars universe."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
 
 monster-or-magical-or-religious-ideas:  
 year-the-event-took-place:
