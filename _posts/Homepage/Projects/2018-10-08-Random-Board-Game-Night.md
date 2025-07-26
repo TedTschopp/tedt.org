@@ -37,10 +37,10 @@ keywords:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/home/Ted-Tschopp-board-game-table.webp
 image-alt: Board game table in the style of dark purple and brown, tilt-shift photography

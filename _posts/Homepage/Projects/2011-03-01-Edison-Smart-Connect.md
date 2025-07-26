@@ -36,10 +36,10 @@ keywords: ASP, Oracle, Microsoft Site Server, Windows Server, HTML, ASP, .NET, F
 
 
 location:
-    name:
+    name: La Palma, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 33.8621672
+    longitude: -118.0312011
 
 image: img/2011-03/smart-connect.webp
 image-alt:

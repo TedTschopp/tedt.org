@@ -36,10 +36,10 @@ keywords: Plumtree, C#, B.NET, J2EE
 
 
 location:
-    name:
+    name: Irwindale, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.124192468540095
+    longitude: -117.92754621529434
 
 image: img/2011-02/plumtree_2dportal_1.webp
 image-alt:

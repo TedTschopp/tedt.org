@@ -36,10 +36,10 @@ keywords: ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML
 
 
 location:
-    name:
+    name: Irwindale, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.124192468540095
+    longitude: -117.92754621529434
 
 image: img/2011-02/www-edison-com.webp
 image-alt:

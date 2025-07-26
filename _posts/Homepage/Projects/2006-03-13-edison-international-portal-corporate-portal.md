@@ -36,10 +36,10 @@ keywords: Edison International, corporate portal, SAP Portal, Java, XHTMLB, HTML
 
 
 location:
-    name:
+    name: Irwindale, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.124192468540095
+    longitude: -117.92754621529434
 
 image: img/2011-02/edisonintl_2dlogon.webp
 image-alt:

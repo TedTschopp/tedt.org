@@ -37,10 +37,10 @@ keywords:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/home/RPG-Map.webp
 image-alt: RPG Map from the 1980s.

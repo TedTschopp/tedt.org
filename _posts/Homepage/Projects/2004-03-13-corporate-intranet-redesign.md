@@ -35,11 +35,11 @@ keywords: HTML, XML, RSS, AJAX, Perl, Netscape Web Server, Sybase database
 
 
 
-location:
-    name:
+location: 
+    name: Irwindale, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.124192468540095
+    longitude: -117.92754621529434
 
 image: img/2011-02/edna-sce-com_1.webp
 image-alt:
