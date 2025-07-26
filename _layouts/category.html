@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
 
-    {% include calculate-variables.html %}
+    {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <!-- IndieAuth and WebMentions Metadata -->
-    {% include indieauth-and-webmentions-metadata.html %}
+    {% include seo/indieauth-webmentions-metadata.html %}
 
     <!-- SEO Metadata -->
-    {% include meta-data-seo.html %}
+    {% include seo/meta-data-seo.html %}
 
     <!-- PWA Header Includes -->
-    {% include pwa-header-includes.html %}
+    {% include pwa/pwa-header-includes.html %}
 
     <!-- News Feed Meta Tags. -->
-    {% include feeds.html %}
+    {% include feeds/feeds.html %}
 
     <!-- START OF CSS INCLUDE -->
 
-    {% include all-css-includes.html %}
+    {% include assets/all-css-includes.html %}
 
     <!-- END OF CSS INCLUDE -->
 
     <!-- Scripts that need to be at the end of the header -->
-    {% include scripts.html %}
+    {% include assets/scripts.html %}
 
 
   </head>
 
   <body>
-    {% include top-nav-bar.html %}
+    {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
     <div class="container">
@@ -44,7 +44,7 @@
                 <!-- Blog Post -->
                 <article class="h-entry">
                     <!-- Title -->
-                    <h1 class="p-name">Category: {% include category-emoji.html category=page.title %} {{ page.title }}</h1>
+                    <h1 class="p-name">Category: {% include utility/category-emoji.html category=page.title %} {{ page.title }}</h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
@@ -179,9 +179,9 @@
                 </article>
 
                 <hr>
-                {% include comments.html %}
+                {% include social/comments.html %}
 
-                {% include comments-webmentions.html %}
+                {% include social/comments-webmentions.html %}
 
             </div>
 
@@ -198,7 +198,7 @@
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
                                 {% assign category-to-render = category[0] %}
-                                {% include full-category.html category=category-to-render render-number=true%}
+                                {% include utility/full-category.html category=category-to-render render-number=true%}
                             </li>
                           {% endfor %}
                         </ul>
@@ -215,9 +215,9 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    {% include footer.html %}
+    {% include layout/footer.html %}
 
-    {% include js-bottom-of-body.html %}
+    {% include assets/js-bottom-of-body.html %}
 
   </body>
 </html>

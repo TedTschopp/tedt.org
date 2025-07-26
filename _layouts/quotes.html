@@ -3,39 +3,39 @@
   <head>
     <meta charset="utf-8">
 
-    {% include calculate-variables.html %}
+    {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <!-- IndieAuth and WebMentions Metadata -->
-    {% include indieauth-and-webmentions-metadata.html %}
+    {% include seo/indieauth-webmentions-metadata.html %}
 
     <!-- SEO Metadata -->
-    {% include meta-data-seo.html %}
+    {% include seo/meta-data-seo.html %}
 
     <!-- PWA Header Includes -->
-    {% include pwa-header-includes.html %}
+    {% include pwa/pwa-header-includes.html %}
 
     <!-- News Feed Meta Tags. -->
-    {% include feeds.html %}
+    {% include feeds/feeds.html %}
 
     <!-- START OF CSS INCLUDE -->
 
-    {% include all-css-includes.html %}
+    {% include assets/all-css-includes.html %}
 
     <!-- END OF CSS INCLUDE -->
 
     <!-- Scripts that need to be at the end of the header -->
-    {% include scripts.html %}
+    {% include assets/scripts.html %}
   </head>
 
   <body>
     <!-- Legacy Browser Redirect & Google Tag Manager -->
-    {% include top-of-body.html %}
+    {% include layout/top-of-body.html %}
 
-    {% include top-nav-bar.html %}
+    {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
     <div class="container">
@@ -82,7 +82,7 @@
 
 
                     <hr>
-                    {% include publish-and-update-date-time-v2.html %}
+                    {% include content/publish-and-update-date-time-v2.html %}
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
                     {% for category in categories %}<span class="p-category">
@@ -142,7 +142,7 @@
                 </article>
 
                 <!--Next and Previous Articles -->
-                {% include next_and_previous.html %}
+                {% include content/next-and-previous.html %}
 
                 <hr>
 
@@ -179,10 +179,10 @@
 
 
   <!-- Footer -->
-  {% include footer.html %}
+  {% include layout/footer.html %}
 
   <!-- Bootstrap core JavaScript -->
-  {% include js-bottom-of-body.html %}
+  {% include assets/js-bottom-of-body.html %}
 
   </body>
 

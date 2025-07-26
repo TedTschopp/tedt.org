@@ -3,31 +3,31 @@
   <head>
     <meta charset="utf-8">
 
-    {% include calculate-variables.html %}
+    {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <!-- IndieAuth and WebMentions Metadata -->
-    {% include indieauth-and-webmentions-metadata.html %}
+    {% include seo/indieauth-webmentions-metadata.html %}
 
     <!-- SEO Metadata -->
-    {% include meta-data-seo.html %}
+    {% include seo/meta-data-seo.html %}
 
     <!-- PWA Header Includes -->
-    {% include pwa-header-includes.html %}
+    {% include pwa/pwa-header-includes.html %}
 
     <!-- News Feed Meta Tags. -->
-    {% include feeds.html %}
+    {% include feeds/feeds.html %}
 
-    {% include all-css-includes.html %}
+    {% include assets/all-css-includes.html %}
 
     <!-- Scripts that need to be at the end of the header -->
-    {% include scripts.html %}
+    {% include assets/scripts.html %}
   </head>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
-    {% include top-nav-bar.html %}
+    {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
     <div class="container">
@@ -128,7 +128,7 @@
                         <div class="card-body pt-1 p-4 h-100">
 
                             {% comment %}<p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>{% endcomment %}
-                            {% comment %}{% include publish-and-update-date-time-v2.html %}{% endcomment %}
+                            {% comment %}{% include content/publish-and-update-date-time-v2.html %}{% endcomment %}
         
                             <div class="d-flex align-items-center">
                                 <p class="card-text">
@@ -149,17 +149,17 @@
                                         {% if should_continue == true %}
                                             {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                                             {% if forloop.length == 1 %}
-                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" >{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" >{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
                                                 {% assign should_continue = false %}
                                             {% elsif forloop.last and forloop.length == 2 %}
-                                                and <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                and <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
                                                 {% assign should_continue = false %}
                                             {% elsif forloop.first and forloop.length == 2 %}
-                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
+                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
                                             {% elsif forloop.last %}
-                                                and <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
+                                                and <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
                                             {% else %}
-                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
+                                                <a href="/category/{{ thiscategory }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
                                             {% endif %}
                                             {% if thiscategory == "draft" or thiscategory == "Draft" %}
                                                 {% assign this_is_a_draft = true %}
@@ -172,7 +172,7 @@
                             
                             <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
 
-                            {% include progress-bar.html %}
+                            {% include content/progress-bar.html %}
                             <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
                                 <div class="col-12">
                                     <div class="card h-100 position-relative">
@@ -197,13 +197,13 @@
 
                 </article>
 
-                {% include comments-mastodon-tree.html %}
+                {% include social/comments-mastodon-tree.html %}
                 <hr>
 
-                {% include comments-webmentions.html %}
+                {% include social/comments-webmentions.html %}
 
                 <!--Next and Previous Articles -->
-                {% include next_and_previous.html %}
+                {% include content/next-and-previous.html %}
 
             </div>
 
@@ -227,7 +227,7 @@
                                             <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{category}}">
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.siteurl }}/category/{{category|slugize}}"><span class="p-category">{{category}}</span> {% include category-emoji.html category=category %}</a></p>
+                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.siteurl }}/category/{{category|slugize}}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -277,10 +277,10 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    {% include footer.html %}
+    {% include layout/footer.html %}
 
     <!-- Bootstrap core JavaScript -->
-    {% include js-bottom-of-body.html %}
+    {% include assets/js-bottom-of-body.html %}
 
   </body>
 </html>

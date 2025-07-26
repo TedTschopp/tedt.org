@@ -184,7 +184,7 @@ Each Level in a knowledge area represents a grade level with level 0 being the k
 
 ##### Ranged Combat Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Ranged Combat.webp"
     file="https://tedt.org/img/skills/vertical/Ranged Combat.webp"
@@ -261,7 +261,7 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 ##### Athletics Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Athletics.webp"
     file="https://tedt.org/img/skills/vertical/Athletics.webp"
@@ -339,7 +339,7 @@ Brienne's athletic abilities add significant depth to her character. They make h
 
 ##### Melee Combat Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Melee Combat.webp"
     file="https://tedt.org/img/skills/vertical/Melee Combat.webp"
@@ -422,7 +422,7 @@ Agility represents the overall flexibility and grace of movement of the being.
 
 ##### Stealth Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Stealth.webp"
     file="https://tedt.org/img/skills/vertical/Stealth.webp"
@@ -500,7 +500,7 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 
 ##### Acrobatics Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Acrobatics.webp"
     file="https://tedt.org/img/skills/vertical/Acrobatics.webp"
@@ -580,7 +580,7 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 ##### Sleight of Hand Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Slight of Hand.webp"
     file="https://tedt.org/img/skills/vertical/Slight of Hand.webp"
@@ -662,7 +662,7 @@ Stamina represents the overall ability that being can push themselves physically
 
 ##### Drive / Ride / Pilot Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"
     file="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"
@@ -741,7 +741,7 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 ##### Ruggedness Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Ruggedness.webp"
     file="https://tedt.org/img/skills/vertical/Ruggedness.webp"
@@ -820,7 +820,7 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 ##### Unarmed Combat Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"
     file="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"
@@ -905,7 +905,7 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ##### Social Sciences Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Social Sciences.webp"
     file="https://tedt.org/img/skills/vertical/Social Sciences.webp"
@@ -983,7 +983,7 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 ##### Life Sciences Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Life Sciences.webp"
     file="https://tedt.org/img/skills/vertical/Life Sciences.webp"

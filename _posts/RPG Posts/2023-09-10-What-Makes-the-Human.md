@@ -1513,7 +1513,7 @@ Marv's expertise in unarmed combat adds a gritty, visceral layer to his characte
 
 ##### Social Sciences Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Social Sciences.webp"
     file="https://tedt.org/img/skills/vertical/Social Sciences.webp"
@@ -1591,7 +1591,7 @@ Tyrion Lannister's proficiency in the social sciences adds a rich layer of compl
 
 ##### Life Sciences Knowledge Areas
 
-{% include figure.html
+{% include content/figure.html
     div-class="col-md-3 mt-3 col-lg-3 float-end"
     url="https://tedt.org/img/skills/vertical/Life Sciences.webp"
     file="https://tedt.org/img/skills/vertical/Life Sciences.webp"

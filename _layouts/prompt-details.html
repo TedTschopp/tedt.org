@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Details</title>
 
-    {% include calculate-variables.html %}
+    {% include utility/calculate-variables.html %}
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     
     <!-- IndieAuth and WebMentions Metadata -->
-    {% include indieauth-and-webmentions-metadata.html %}
+    {% include seo/indieauth-webmentions-metadata.html %}
     
     <!-- SEO Metadata -->
-    {% include meta-data-seo.html %}
+    {% include seo/meta-data-seo.html %}
     
     <!-- PWA Header Includes -->
-    {% include pwa-header-includes.html %}
+    {% include pwa/pwa-header-includes.html %}
     
     <!-- News Feed Meta Tags -->
-    {% include feeds.html %}
+    {% include feeds/feeds.html %}
     
     <!-- START OF CSS INCLUDE -->
-    {% include all-css-includes.html %}
+    {% include assets/all-css-includes.html %}
     <!-- END OF CSS INCLUDE -->
     
     <!-- Custom AI Provider Button Styles -->
@@ -110,7 +110,7 @@
     </style>
     
     <!-- Scripts that need to be at the end of the header -->
-    {% include scripts.html %}
+    {% include assets/scripts.html %}
 
 
 </head>
@@ -119,7 +119,7 @@
     data-bs-offset="70">
 
     <!-- Navbar -->
-    {% include top-nav-bar.html %}
+    {% include layout/top-nav-bar.html %}
 
     <main class="container my-4">
         <!-- Prompt Details Section -->
@@ -456,10 +456,10 @@
     </main>
 
     <!-- Footer -->
-    {% include footer.html %}
+    {% include layout/footer.html %}
 
     <!-- Bootstrap core JavaScript -->
-    {% include js-bottom-of-body.html %}
+    {% include assets/js-bottom-of-body.html %}
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
