@@ -126,6 +126,10 @@
         <div class="card mb-4">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
+
+
+
+
                     <div class="card h-100 no-padding">
                         {% if page.image %}
                             {% if page.image-alt %}
@@ -187,6 +191,7 @@
                                 <div class="position-absolute top-0 start-0 w-100 h-100"
                                     style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;"></div>
                     
+                                <h1 class="card-title p-name stroke-glow-text" style="z-index: 2; position: relative;">{{ page.title }}</h1>
                                 {% if page.subtitle %}<p class="stroke-glow-text card-subtitle h2 text-muted mb-2"
                                     style="z-index: 2; position: relative;">{{page.subtitle}}</p>{% endif %}
                     
@@ -222,7 +227,7 @@
                         </div>
                     </div>
 
-                    <h2 class="card-title">{{page.title}}</h2>
+
                     <div class="d-flex align-items-center">
                         <div class="like-container">
                             <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
