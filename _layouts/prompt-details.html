@@ -397,7 +397,7 @@
                             <div class="col">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <a href="{{ post.url | relative_url }}" class="text-decoration-none text-reset">
+                                        <a href="{{ post.url | relative_url }}">
                                             <h5 class="card-title">{{ post.title }}</h5>
                                         </a>
                                         <p class="card-text">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
