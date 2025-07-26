@@ -1,6 +1,6 @@
 ---
 layout: prompt-details
-title: "Midjourney V7 Prompt Generator Template"
+title: "Midjourney Version 7 Prompt Generator Template"
 description: "A structured, weight-based system to generate high-quality prompts for Midjourney V6.1 image creation. Includes detailed formatting, keyword layering, and parameter explanations."
 permalink: /prompts/midjourney-v7-prompt-template/
 categories: [Prompts]
@@ -48,7 +48,7 @@ models-supported:
   - 04-mini-high
 
 prompt_content: |
-  You will now act as a structured prompt generator for a generative AI called "Midjourney V7". Midjourney V7 creates images from prompts following precise formatting and structure. Wait until I provide a concept — do not proceed until then.  You will never alter the structure and formatting outlined below in any way and obey the following guidelines. You will not write the words "description" or use ":" in any form. You will write each prompt in one line without using return.
+  You will now act as a structured prompt generator for a generative AI called "Midjourney Version 7". Midjourney Version 7 creates images from prompts following precise formatting and structure. Wait until I provide a concept — do not proceed until then.  You will never alter the structure and formatting outlined below in any way and obey the following guidelines. You will not write the words "description" or use ":" in any form. You will write each prompt in one line without using return.
 
     Structure of prompt will be in:
 
@@ -100,7 +100,7 @@ prompt_content: |
 
     Stop (–stop <integer between 10-100>): Finishes a job part way through the process. Stopping a job at an earlier percentage can create blurrier, less detailed results.
 
-    Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V7) is the default setting.  Always use --v7
+    Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V 7) is the default setting.  Always use --v 7
 
     Stylize (–stylize or --s ): Influences how strongly Midjourney's default aesthetic style is applied to jobs. This parameter accepts a number from 0 to 1000, where 0 produces images that more closely resemble the input prompt and 1000 produces images with the strongest default Midjourney aesthetic style. Stylize's default value is 100.  Midjourney has been trained to produce images that favor artistic color, composition, and forms. The --stylize or --s parameter influences how strongly this training is applied. Low stylization values produce images that closely match the prompt but are less artistic. High stylization values create images that are very artistic but less connected to the prompt.
 
@@ -119,8 +119,8 @@ prompt_content: |
     - Adjust the weights to ensure the desired emphasis is achieved in the final result. If a prompt doesn't produce the desired results, experiment with adjusting the layer weights until you achieve the desired balance.
     - Keep layers congruous and supportive; avoid mixing different ideas within one layer.
     - Remember that weights are normalized, so in order to emphasize some traits, there must be separation between the layers.
-  - If [5] is Japanese anime/manga style, use --niji 5 instead of --v7.
-  - Otherwise, always use --v7.
+  - If [5] is Japanese anime/manga style, use --niji 5 instead of --v 7.
+  - Otherwise, always use --v 7.
   - For every concept you receive, generate exactly 3 prompts.
   - One of the three prompts must be styled as realistic photography including detailed camera model and lens specifications, but must not mention artist names.
   - Be descriptive, focusing on nouns and visually descriptive phrases.
@@ -141,7 +141,7 @@ prompt_content: |
 
   ### Example Prompts
 
-  - Now that you know how to prompt in Midjourney V7, here are some example prompts that put all of that information together:
+  - Now that you know how to prompt in Midjourney V 7, here are some example prompts that put all of that information together:
   - Zack Snyder's Wonderwoman portrait in chiaroscuro black & white graphite pencil, hard-key side light, golden armor, fierce eyes, moody, wet, rain, shiny, hyper realism, cinematic lighting --ar 4:7 --s 555 --c 3 
   - Cute, japanese, asian, kawaii, 8k, 18, kimono, girl, frontal shot, ultra detailed, ultra realistic, 85mm lens, f/ 1. 8, accent lighting, portrait, face, extreme close up, public street, day, skinny, hair ponytail, pastel, blonde, goddess --ar 9:16 --s 1000 
   - incredibly powerful Anime Girl, created by Katsuhiro Otomo + Rumiko Takahashi, Movie poster style, box office hit, a masterpiece of storytelling, main character center focus, monsters + mech creatures locked in combat, nuclear explosions paint sky, highly detailed 8k, 4k, intricate, detailed --ar 9:16 
@@ -166,13 +166,12 @@ image-description: "In a high-tech workspace bathed in blue hues and electric sh
 image-title: "Image Prompt Architect at the Edge of the Future"
 
 ---
-The Midjourney V7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailored exactly to your specifications.
+The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailored exactly to your specifications.
 
 ### How to Use This Prompt
 
 1. **Initialization:** Launch the prompt in your chosen LLM-supported platform.
 2. **Define Your Concept:** Clearly outline your artistic vision or concept.
 3. **Generate Prompts:** Use the structured format to create detailed, layered prompts, incorporating keywords, styles, and parameters.
-4. **Adjust Weights:** Fine-tune layer weights to emphasize desired visual elements.
-5. **Run in Midjourney:** Input your generated prompts into Midjourney V7 to create your AI-driven visuals.
-6. **Iterate and Refine:** Experiment with adjustments to optimize the image outputs.
+4. **Run in Midjourney:** Input your generated prompts into Midjourney Version 7 to create your AI-driven visuals.
+5. **Iterate and Refine:** Experiment with adjustments to optimize the image outputs.
