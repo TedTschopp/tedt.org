@@ -75,7 +75,6 @@ image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: "Futurist Learning Lab"
 image-description: "This image showcases a futuristic creative workspace where natural and digital worlds converge. A person sits cross-legged on a minimalist wooden platform beside a warm fire pit, immersed in work on a tablet. Surrounding him are vast transparent aquarium walls filled with glowing cyan water, behind which are illuminated scientific equations and sketches that appear as though written on the glass or within the water itself. The room blends rustic wooden beams and tables with cutting-edge technology and a tranquil ambiance, portraying a harmonious balance between introspection, innovation, and the natural world."
 image-title: "Futurist Learning Lab"
-
 ---
 
 This AI Simulation Creator prompt offers educators and trainers a powerful tool to build interactive roleplay simulations led by an AI Game Master. Designed to enhance experiential learning, this prompt guides learners through structured scenarios to practice essential skills such as negotiation, hiring, or pitching. Participants receive personalized mentorship, tailored scenarios based on their experience, and comprehensive, balanced feedback aimed at improving performance and understanding.
