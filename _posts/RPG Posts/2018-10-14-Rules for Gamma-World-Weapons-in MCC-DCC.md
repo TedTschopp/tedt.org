@@ -37,10 +37,10 @@ keywords:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2018-10/seth-justus-huntersalienguns.webp
 image-alt:

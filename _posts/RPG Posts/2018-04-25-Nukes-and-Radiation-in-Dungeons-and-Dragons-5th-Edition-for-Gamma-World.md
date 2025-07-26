@@ -41,10 +41,10 @@ keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2018-04/Third-Edition.webp
 image-alt:

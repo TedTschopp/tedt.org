@@ -37,10 +37,10 @@ tags:
 keywords: Skills, Career, Adaptability, Learning, Professional Development
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2023-07/FAME.webp
 image-alt: Photo by Ted Tschopp using Midjourney

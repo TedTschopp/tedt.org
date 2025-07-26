@@ -36,10 +36,10 @@ keywords:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2023-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.webp
 image-alt: Painting of Wodan coming down the a large river sitting on a water horse

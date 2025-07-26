@@ -44,10 +44,10 @@ keywords:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2023-01/merian-switzerland-stein-am-rhein.webp
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland

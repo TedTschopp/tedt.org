@@ -38,7 +38,7 @@ keywords:
 location:
     name:
 coordinates:
-    latitude:
+    latitude: 
     longitude:
 
 image: img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp

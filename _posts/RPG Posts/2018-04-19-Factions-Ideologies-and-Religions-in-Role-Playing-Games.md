@@ -43,10 +43,10 @@ keywords: Role playing games, Ideologies, Factions. Religions, World-building, G
     Master
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2018-04/Sunset on this ideology.webp
 image-alt: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City
@@ -57,7 +57,6 @@ image-title: Sunset on this ideology - Užhorod - Sunset near the border (Slovac
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:
-
 
 mathjax:
 

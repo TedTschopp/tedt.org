@@ -29,10 +29,10 @@ tags:
 keywords:
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image:
 image-alt:

@@ -37,10 +37,10 @@ coordinates:
 
 
 location:
-    name:
+    name: Bradbury, CA
 coordinates:
-    latitude:
-    longitude:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
 image-alt: Gamma World 1st Edition RPG Books and dice
