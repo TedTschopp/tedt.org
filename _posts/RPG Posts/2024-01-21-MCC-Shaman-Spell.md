@@ -31,12 +31,13 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
+
 image: RPG/MCC-GW/images/c3p0_and_r2d2_by_skywalkergirl1_d3ajxp7-fullview.webp
 image-alt: C3P0 and R2D2 in the drawing skywalkergirl1
-image-artist: skywalkergirl1
-image-artist-URL: https://www.deviantart.com/skywalkergirl1/art/C3P0-and-R2D2-199124827
-image-description: "C3P0 and R2D2 in the drawing skywalkergirl1"
 image-title: C3P0 and R2D2
+image-description: "C3P0 and R2D2 in the drawing skywalkergirl1"
+image-credits-artist: skywalkergirl1
+image-credits-artist-URL: https://www.deviantart.com/skywalkergirl1/art/C3P0-and-R2D2-199124827
 
 monster-or-magical-or-religious-ideas:  
 year-the-event-took-place:

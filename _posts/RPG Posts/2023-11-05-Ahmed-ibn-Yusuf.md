@@ -32,12 +32,15 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
+
 image: img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.webp
-image-alt: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
-image-artist: Ted Tschopp
-image-artist-URL: https://tedt.org/
-image-description: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
-image-title: "a porter who works for the Great Library in Bagdad in 1258, carrying a large chest, stuffed with books, and treasure"
+image-alt: "Portrait of Ahmed ibn Yusuf, a porter of Baghdad’s Great Library (Bayt al‑Hikmah), carrying scroll-laden boxes amid richly detailed Islamic architecture."
+image-description: "This evocative illustration portrays Ahmed ibn Yusuf, a devoted porter at the illustrious Bayt al‑Hikmah (House of Wisdom) in 13th-century Baghdad. He stands poised, shouldering numerous crates or scroll chests amid an opulent library interior rendered in stylized Islamic motifs—arched shelves, ornate latticework, and shelves lined with manuscripts. The composition reflects a balance of solemn dignity and everyday labor, connecting a humble figure to the grandeur of medieval intellectual life. The rich textures of wood and parchment, his expressive gaze, and the ambient light filtering through lattice windows combine to evoke a sense of cultural purpose, scholarly depth, and the human scale of knowledge‑keeping during the Islamic Golden Age. This depiction aligns with the character concept of a young, dutiful man working within the world-renowned Great Library of Baghdad, as featured in Ted Tschopp’s portfolio."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-title: "Ahmed ibn Yusuf, Porter at the House of Wisdom"
+
+
 monster-or-magical-or-religious-ideas:  
 year-the-event-took-place:
 mathjax: false

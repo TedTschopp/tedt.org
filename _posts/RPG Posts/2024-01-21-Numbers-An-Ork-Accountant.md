@@ -33,11 +33,11 @@ coordinates:
     longitude: -117.9709
 
 image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
-image-alt: 
-image-artist: Ted Tschopp
-image-artist-URL: 
-image-description: "Numbers, an Ork Satyr"
-image-title: Numbers
+image-alt: Exterior of a cyberpunk nightclub in Los Angeles, lit by neon signs, wet reflective streets, futuristic cityscape backdrop
+image-title: Neon Night at a Cyberpunk Clubfront in Los Angeles
+image-description: "The image captures a gritty, futuristic Los Angeles nightlife scene outside a cyberpunk club. Neon signs in electric blues, purples, and pinks cast glowing reflections on rain‑slicked sidewalks. The club façade displays bold, futuristic lettering alongside holographic projections. Figures in cyberpunk style—coats with illuminated trims, augmented limbs, visored eyewear—linger under flickering streetlights and cyber-ads. Behind them, a misty city skyline bristles with massive holographic billboards, hover vehicles cruising overhead, and dense architecture layered with pipes and neon conduits. The atmosphere is tense yet magnetic, combining urban decay with high-tech allure, setting the stage for clandestine meetings or narrative entry into a dark techno-future."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
 
 monster-or-magical-or-religious-ideas:  
 year-the-event-took-place:

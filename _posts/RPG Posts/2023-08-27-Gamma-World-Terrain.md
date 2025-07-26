@@ -40,15 +40,11 @@ coordinates:
     latitude:
     longitude:
 
+
 image: img/Gamma-World-Midjourney.png
-image-alt: 
-image-artist: Ted Tschopp
-image-artist-URL:
-image-credits: Ted Tschopp
-image-credits-URL: 
-image-credits-artist: 
-image-credits-artist-URL:
-image-credits-title: 
+image-alt: An artist carving a statue of a man out of a giant mountain
+image-artist: Ted Tschopp using Midjourney
+image-artist-URL: https://tedt.org/
 image-description: An ancient, rusted piece of advanced technology, half-buried in the ground, with glowing circuits and strange symbols. Inspired by Gamma World TTRPG, combining elements of steampunk and sci-fi, Spelling out "Gamma World"
 image-title: Gamma World Smart Brick
 
@@ -61,9 +57,6 @@ mathjax:
 order:
 
 mastodon-post-id: 110963006446543896
-
-
-
 
 ---
 The following was a prompt experiment in Midjourney.  My goal was to create a series of background or header images that felt like they were imagery from Gamma World.  Here is a what came out.

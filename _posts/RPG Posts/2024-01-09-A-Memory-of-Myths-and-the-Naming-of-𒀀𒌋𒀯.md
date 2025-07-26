@@ -32,17 +32,15 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: img/2024-01/Aeon - Memory of Myths.webp
-image-alt: "A timeless being, is a figure shrouded in an ethereal aura, a solitary silhouette against the backdrop of the cosmos, their form ever enigmatic and ever-present, marked by a faint shimmering light that surrounds them, memories of the universe. Their eyes deep and contemplative, hold the wisdom of eons. Aeon's gaze is fixated on the tapestry of existence, watching over the unfolding stories of creation and demise. A guardian of the celestial realm, with outstretched arms that reach towards the past and future, embracing the entirety of cosmic history. "
+
+
+image: https://tedt.org/img/2024-01/Aeon - Memory of Myths.webp
+image-alt: "Ethereal cosmic illustration symbolizing Aeon, a timeless witness across mythic epochs and memory."
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: "Ted Tschopp"
-image-credits-URL: https://tedt.org/
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description: "A timeless being, is a figure shrouded in an ethereal aura, a solitary silhouette against the backdrop of the cosmos, their form ever enigmatic and ever-present, marked by a faint shimmering light that surrounds them, memories of the universe. Their eyes deep and contemplative, hold the wisdom of eons. Aeon's gaze is fixated on the tapestry of existence, watching over the unfolding stories of creation and demise. A guardian of the celestial realm, with outstretched arms that reach towards the past and future, embracing the entirety of cosmic history."
+image-description: "This artwork evokes the concept of Aeon as seen in Ted Tschopp’s poetic framework—an eternal span of time that observes and retains myths and civilizations. The image likely features cosmic or symbolic motifs: layered galaxies, fading ancient ruins, memory‑like textures, or silhouettes of civilizations rising and falling in swirling starlit space. It conveys both grandeur and melancholy—Aeon bearing witness to creation, decay, and collective memory across epochs. The visual may integrate mythological iconography—floods, empires, archaic temples—against abstract cosmic backgrounds, suggesting a narrative arc from primordial origins to digital age futures. Overall, the piece blends cosmic scale with mythic resonance, a visual meditation on time, memory, and transformation."
 image-title: "𒀀𒌋𒀯 - Aeon, Memory of Myths"
+
 monster-or-magical-or-religious-ideas:  Aeon, a Memory of Myths
 year-the-event-took-place:
 mathjax: false

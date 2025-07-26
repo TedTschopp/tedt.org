@@ -10,9 +10,16 @@ I want to change my old format to a new format.
 
 Please see below for the old and new format. 
 
-If the old format is not present or has unexpected values, then please do nothing, except add a comment to the file indicating that the old format has unexpected values.
+If the new format is already present, then please do nothing and move to the next file.
 
-Only look at files in the _posts/Prompts directory
+If the old format has unexpected values, then please do nothing, except add a comment to the file indicating that the old format has unexpected values.
+
+If the old format is not present, then please do nothing, except add a comment to the file indicating that there is no image data.
+
+If the old data format is not present, then please add the new format, but with blank values after the comment mentioning that there is no image data.
+
+Do this for files in the _posts/RPG Posts directory
+
 
 ### Old Format
 image: "/img/prompts/Artistic-Scholar.png"
@@ -39,3 +46,9 @@ image-credits-artist-URL: "https://tedt.org/"
 ### Unexpected Values
 
 # The old format for images has unexpected values. Please review the old format and ensure it matches the expected
+
+### No Image vaules
+
+# The data for images is not present.  Please add image data.
+
+

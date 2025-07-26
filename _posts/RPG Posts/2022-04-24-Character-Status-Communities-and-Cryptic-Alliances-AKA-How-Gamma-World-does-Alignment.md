@@ -47,6 +47,8 @@ coordinates:
     latitude:
     longitude:
 
+# Need to Fix these images
+
 image: img/2022-04/community-life.webp
 image-alt:
 image-artist:

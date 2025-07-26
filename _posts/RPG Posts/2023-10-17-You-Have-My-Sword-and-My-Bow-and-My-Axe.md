@@ -48,10 +48,10 @@ coordinates:
 
 image: img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp
 image-alt: A blacksmith making fictional weapons.
-image-artist: Ted Tschopp
-image-artist-URL: https://tedt.org/
-image-description: "A blacksmith making fictional weapons."
 image-title: "Warcraft"
+image-description: "A blacksmith making fictional weapons."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
 
 monster-or-magical-or-religious-ideas:
 year-the-event-took-place:

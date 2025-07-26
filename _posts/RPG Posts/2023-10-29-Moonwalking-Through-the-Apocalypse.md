@@ -52,10 +52,10 @@ coordinates:
 
 image: img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp
 image-alt: "The imposing figure of Michael-JX in a barren wasteland"
-image-artist: Ted Tschopp
-image-artist-URL: https://tedt.org/
-image-description: "Michael-JX stands tall, a relic from the past and a harbinger of uncertain futures."
 image-title: "Michael-JX: Moonwalking Through the Apocalypse"
+image-description: "Michael-JX stands tall, a relic from the past and a harbinger of uncertain futures."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
 
 monster-or-magical-or-religious-ideas: Michael-JX as a Mythic Figure 
 year-the-event-took-place:
