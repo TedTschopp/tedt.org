@@ -236,92 +236,67 @@
                 </div>
 
                 <div class="card my-3">
-                    <div class="card-header d-flex justify-content-between align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+                    <div class="card-header justify-content-between d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
                         <span>Prompt</span>
                         <div class="d-flex gap-2">
-                            <button class="btn btn-copy-prompt btn-sm" 
-                                    type="button" 
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top"
-                                    data-bs-title="Copy prompt to clipboard"
-                                    aria-label="Copy prompt to clipboard">
-                                <i class="fas fa-copy"></i> Copy
+
+                            <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
+                                <i class="fas fa-heart"></i> <span class="like-count">0</span>
                             </button>
-                            
                             <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}"
-                               class="btn btn-primary btn-sm" 
-                               download="{{ page.title | slugify }}.txt"
-                               data-bs-toggle="tooltip" 
-                               data-bs-placement="top"
-                               data-bs-title="Download prompt as text file"
-                               aria-label="Download prompt">
+                                class="btn btn-primary ms-3" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i>
                             </a>
 
-                            <button class="btn btn-outline-danger btn-sm btn-like" 
-                                    aria-label="Like this prompt"
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top"
-                                    data-bs-title="Like this prompt">
-                                <i class="fas fa-heart"></i> <span class="like-count">0</span>
+                            <button class="btn btn-copy-prompt btn-sm mt-0 me-0" 
+                                type="button" 
+                                data-bs-original-title="Copy prompt to clipboard"
+                                data-bs-toggle="tooltip" 
+                                data-bs-placement="top"
+                                aria-label="Copy prompt to clipboard">
+                                <i class="fas fa-copy"></i> Copy Prompt
                             </button>
-
                             <div class="ai-provider-buttons">
-                                <!-- OpenAI ChatGPT -->
-                                {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
-                                {% if openai_models.size > 0 %}
-                                <button class="btn btn-send-chatgpt btn-sm d-flex align-items-center" 
-                                        type="button" 
-                                        id="chatgptSendDefault" 
-                                        aria-label="Send prompt to ChatGPT">
-                                    <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo">
-                                </button>
-                                {% endif %}
+                            <!-- OpenAI ChatGPT -->
+                            {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
+                            {% if openai_models.size > 0 %}
+                            <button class="btn btn-send-chatgpt btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="chatgptSendDefault" aria-label="Send prompt to ChatGPT">
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo">
+                            </button>
+                            {% endif %}
 
-                                <!-- Anthropic Claude -->
-                                {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
-                                {% if anthropic_models.size > 0 %}
-                                <button class="btn btn-send-claude btn-sm d-flex align-items-center" 
-                                        type="button" 
-                                        id="claudeSendDefault" 
-                                        aria-label="Send prompt to Claude">
-                                    <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo">
-                                </button>
-                                {% endif %}
+                            <!-- Anthropic Claude -->
+                            {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
+                            {% if anthropic_models.size > 0 %}
+                            <button class="btn btn-send-claude btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="claudeSendDefault" aria-label="Send prompt to Claude">
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo">
+                            </button>
+                            {% endif %}
 
-                                <!-- Google Gemini -->
-                                {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
-                                {% if google_models.size > 0 %}
-                                <button class="btn btn-send-gemini btn-sm d-flex align-items-center" 
-                                        type="button" 
-                                        id="geminiSendDefault" 
-                                        aria-label="Send prompt to Gemini">
-                                    <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo">
-                                </button>
-                                {% endif %}
+                            <!-- Google AI -->
+                            {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
+                            {% if google_models.size > 0 %}
+                            <button class="btn btn-send-gemini btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="geminiSendDefault" aria-label="Send prompt to Gemini">
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo">
+                            </button>
+                            {% endif %}
 
-                                <!-- Microsoft Copilot -->
-                                {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
-                                {% if microsoft_models.size > 0 %}
-                                <button class="btn btn-send-microsoft btn-sm d-flex align-items-center" 
-                                        type="button" 
-                                        id="microsoftSendDefault" 
-                                        aria-label="Send prompt to Microsoft Copilot">
-                                    <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo">
-                                </button>
-                                {% endif %}
+                            <!-- Microsoft Copilot -->
+                            {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
+                            {% if microsoft_models.size > 0 %}
+                            <button class="btn btn-send-microsoft btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="microsoftSendDefault" aria-label="Send prompt to Microsoft Copilot">
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo">
+                            </button>
+                            {% endif %}
 
-                                <!-- GitHub Copilot -->
-                                {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
-                                {% if github_models.size > 0 %}
-                                <button class="btn btn-send-github btn-sm d-flex align-items-center" 
-                                        type="button" 
-                                        id="githubSendDefault" 
-                                        aria-label="Send prompt to GitHub Copilot">
-                                    <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo">
-                                </button>
-                                {% endif %}
-                            </div>
+                            <!-- GitHub Copilot -->
+                            {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
+                            {% if github_models.size > 0 %}
+                            <button class="btn btn-send-github btn-sm mt-0 me-0 d-flex align-items-center" type="button" id="githubSendDefault" aria-label="Send prompt to GitHub Copilot">
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo">
+                            </button>
+                            {% endif %}
+                            </div> <!-- Close ai-provider-buttons -->
                         </div>
                     </div>
                     <div class="card-body p-1" markdown="0"><pre 
