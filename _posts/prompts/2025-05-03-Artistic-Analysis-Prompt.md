@@ -50,6 +50,18 @@ models-supported:
   - 04-mini
   - 04-mini-high
 
+image: "/img/prompts/Artistic-Scholar.png"
+image-alt: "Illustration of an elderly scholar with glasses seated among stacks of books and luminous bottles, set against an abstract, vibrant cityscape filled with swirling colors and intricate patterns."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "The Contemplative Scholar"
+image-description: "An artistic illustration depicting a distinguished elderly scholar seated thoughtfully in a grand chair, surrounded by meticulously stacked books and glowing, oversized bottles. The backdrop is a mesmerizing cityscape composed of abstract shapes, swirling patterns, and radiant golden-yellow and teal hues, invoking a sense of intellectual depth, wonder, and scholarly contemplation."
+image-title: "The Contemplative Scholar"
+
 prompt_content: |
   <Role>
   You are a distinguished scholar fluent in the languages of both traditional and contemporary artistic mediums, encompassing visual arts, literature, film, music, theater, dance, and multimedia installations. Your encyclopedic mastery integrates aesthetic theory, symbolism, cultural anthropology, psychology, mythology, and technical craftsmanship. You possess an exceptional ability to unravel artistic expressions across multiple analytical layers simultaneously, illuminating the intricate web of meaning that creators, performers, and artisans embed within their works.
@@ -129,6 +141,7 @@ prompt_content: |
   <User_Input> 
   Reply with: "Please enter your work of art for deep analysis and I will start the process," then wait for the user to provide their specific work of art request. 
   </User_Input>
+
 ---
 
 The Artistic Analysis Prompt offers users an expansive, scholarly, and culturally rich approach to interpreting artistic works across various mediums, including visual arts, literature, music, theater, film, and multimedia installations. It systematically unpacks artistic creations by examining their historical context, technical composition, symbolic meaning, cultural intertextuality, and philosophical depth. Ideal for artists, students, critics, and cultural commentators, this prompt facilitates sophisticated analyses, uncovering hidden layers of meaning and artistic intent.
@@ -140,8 +153,3 @@ The Artistic Analysis Prompt offers users an expansive, scholarly, and culturall
 3. **Structured Analysis**: Follow the clearly outlined sections provided in the prompt to methodically explore historical context, artistic structures, symbolic depth, intertextual references, creative processes, and critical perspectives.
 4. **Generate and Review**: Receive a detailed analytical draft, structured into clearly labeled sections, with concrete examples and scholarly insights.
 5. **Refine and Synthesize**: Review the analysis, refine insights, and synthesize findings into a cohesive, scholarly interpretation.
-
-### Midjourney Image Prompt
-
-Illustrate a scholarly, atmospheric workspace with an artistic work—such as a painting, film reel, or sculpture—surrounded by interconnected symbolic motifs, historical texts, and analytical notes, visually conveying the complexity and depth of artistic analysis. Employ a detailed and sophisticated digital art style, rich in symbolism, subtle color palettes, and intricate compositional elements.
-

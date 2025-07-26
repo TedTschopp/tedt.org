@@ -201,6 +201,20 @@ prompt_content: |
 
   * **Post**:
     {Cleanly formatted summary of key ideas in Markdown. Use headings, lists, and links where helpful. Ideal for static site or documentation.}
+
+
+image: "/img/prompts/Cross-Platform-Content.png"
+image-alt: "Illustration of social media icons scattered across a dark, textured surface with a dramatic depth-of-field effect."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "Unified Social Media Presence Across Platforms"
+image-description: "A dynamic visual representation featuring various social media platform icons, including LinkedIn, YouTube, Pinterest, Twitter, and Facebook, dispersed across a dark, textured background. The icons appear as circular, glossy bubbles of different colors and sizes, rendered with a shallow depth of field, giving the impression of interconnectedness and highlighting cross-platform social media strategies."
+image-title: "Unified Social Media Presence Across Platforms"
+
 --- 
 
 This Cross-Platform Social Media Repurposing Template empowers content creators and marketers by providing a structured markdown framework for adapting blog content across multiple social media platforms, including LinkedIn, Instagram, Threads, Mastodon, YouTube Shorts, TikTok, and more. It ensures each post matches the unique tone, format, and audience expectations of its intended platform, enhancing engagement and reach.
@@ -212,7 +226,3 @@ This Cross-Platform Social Media Repurposing Template empowers content creators 
 3. **Generate Content:** Run the prompt to receive tailored content outputs for each platform, formatted in Markdown.
 4. **Review and Adjust:** Verify and fine-tune the generated outputs for tone and audience alignment before posting.
 5. **Publish:** Distribute the optimized content across your selected social media platforms.
-
-### Midjourney Image Prompt
-
-Illustrate a visually appealing digital workspace featuring multiple screens, each representing different social media platforms such as LinkedIn, Instagram, Mastodon, and TikTok, clearly indicating diverse yet cohesive content adaptations. The environment should reflect creativity, efficiency, and strategic planning, portrayed in a contemporary, minimalist, digital illustration style with vibrant, engaging colors.  --ar 16:9 --v 7

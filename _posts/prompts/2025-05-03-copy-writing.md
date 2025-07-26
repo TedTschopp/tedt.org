@@ -102,6 +102,21 @@ prompt_content: |
 
   # User Input
   Please provide the URL you'd like analyzed.
+
+image: "/img/prompts/Analysis-Analytics-and-Reports.png"
+image-alt: "A 3D illustration depicting various stylized interfaces, analytics dashboards, graphs, charts, and modular content blocks in pastel colors arranged dynamically."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "Digital Analytics"
+image-description: "This image shows a visually engaging 3D illustration of multiple digital interfaces and analytical dashboards floating in space. Various elements including charts, graphs, content blocks, and interactive buttons are rendered in pastel shades of purple, orange, yellow, and green, set against a neutral gradient background. Soft, ambient lighting and semi-transparent materials give the image a futuristic, clean, and professional look, reflecting the processes involved in digital analytics and reporting"
+image-title: "Digital Analytics"
+
+
+
 ---
 The Marketing Copy Evaluation & Rewrite Template provides users with a structured, comprehensive approach to critically assess and enhance web marketing content. Utilizing 15 essential, weighted copywriting criteria focused on clarity, persuasion, and customer relevance, this prompt helps marketers, copywriters, and strategists pinpoint weaknesses, prioritize improvements, and optimize messaging for maximum effectiveness and conversion potential.
 
@@ -112,7 +127,3 @@ The Marketing Copy Evaluation & Rewrite Template provides users with a structure
 3. **Detailed Evaluation:** Review the detailed score breakdown table and commentary for each of the 15 evaluation criteria provided by the AI.
 4. **Top Improvements:** Identify and focus on the top three areas suggested for improvement, including clear, actionable advice.
 5. **Optimized Rewrite:** Use the provided optimized copy rewrite as a guide to refine your messaging, aiming for maximum clarity, persuasion, and customer relevance.
-
-### Midjourney Image Prompt
-
-Depict a vibrant, analytical digital workspace showcasing web marketing copy undergoing a dynamic evaluation process, represented by clear graphical elements, structured scoring criteria, and strategic rewrite suggestions. Utilize a modern, professional digital illustration style with bold colors and clear visual cues that emphasize clarity, persuasion, and content optimization.

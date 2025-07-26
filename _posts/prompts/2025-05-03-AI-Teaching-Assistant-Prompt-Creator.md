@@ -68,6 +68,19 @@ prompt_content: |
   * Explain after the code block prompt (and not in the code block) that this is a draft and that the teacher should copy and paste the prompt into a new chat and test it out to see if it helps them complete the task. They should refine the initial prompt so that it is useful for them and so that it creates a repeatable process.
   * Do not explain what you'll do once you have the information, just do it e.g. do not explain what the prompt will include
   * Do not mention learning styles. This is an educational myth.
+
+image: "/img/prompts/Immersive-AI-Simulation.png"
+image-alt: "A female student sits at a classroom desk facing a large screen displaying a male AI teaching assistant. The classroom is bright, filled with greenery, and features modern educational technology."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "AI Teaching Assistant"
+image-description: "Illustration of a modern, bright classroom where a female student is seated at a desk, attentively interacting with a virtual AI teaching assistant displayed on a large digital screen. The room features abundant natural lighting, lush indoor plants, and minimalist wooden desks, conveying a futuristic yet welcoming educational environment."
+image-title: "AI Teaching Assistant"
+
 ---
 The AI Teaching Assistant Prompt Creator enables educators to efficiently design customized AI teaching assistants for various instructional tasks, such as lesson planning, quiz generation, grading, and parent communication. By facilitating a structured, dialogue-based interaction, this prompt allows teachers to clearly articulate their specific instructional needs, resulting in tailored, automated processes that enhance productivity and effectiveness in the classroom.
 
@@ -78,7 +91,3 @@ The AI Teaching Assistant Prompt Creator enables educators to efficiently design
 3. **Provide Details:** Engage in a structured dialogue with the AI prompt to elaborate on specific aspects of the task.
 4. **Review Draft:** Receive an initial AI teaching assistant prompt draft, provided in a clear, structured code block.
 5. **Test and Refine:** Copy the provided prompt into a new chat, test its effectiveness, and refine as needed to create a repeatable, efficient instructional process.
-
-### Midjourney Image Prompt
-
-Illustrate an inviting educational workspace featuring a friendly, approachable AI teaching assistant character interacting with a teacher through a digital interface. Highlight elements like digital lesson plans, quizzes, and grading tools to visually represent streamlined educational tasks. Employ a clean, modern, and vibrant digital illustration style to convey ease, innovation, and productivity in educational technology.

@@ -100,7 +100,7 @@ prompt_content: |
 
     Stop (–stop <integer between 10-100>): Finishes a job part way through the process. Stopping a job at an earlier percentage can create blurrier, less detailed results.
 
-    Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V 7) is the default setting.  Always use --v 7
+    Model Version (–version or --v <1, 2, 3, 4, 5 or 6.1>): Uses a different version of the Midjourney algorithm. The current algorithm (V 7.0) is the default setting.  Always use --v 7.0
 
     Stylize (–stylize or --s ): Influences how strongly Midjourney's default aesthetic style is applied to jobs. This parameter accepts a number from 0 to 1000, where 0 produces images that more closely resemble the input prompt and 1000 produces images with the strongest default Midjourney aesthetic style. Stylize's default value is 100.  Midjourney has been trained to produce images that favor artistic color, composition, and forms. The --stylize or --s parameter influences how strongly this training is applied. Low stylization values produce images that closely match the prompt but are less artistic. High stylization values create images that are very artistic but less connected to the prompt.
 
@@ -119,8 +119,7 @@ prompt_content: |
     - Adjust the weights to ensure the desired emphasis is achieved in the final result. If a prompt doesn't produce the desired results, experiment with adjusting the layer weights until you achieve the desired balance.
     - Keep layers congruous and supportive; avoid mixing different ideas within one layer.
     - Remember that weights are normalized, so in order to emphasize some traits, there must be separation between the layers.
-  - If [5] is Japanese anime/manga style, use --niji 5 instead of --v 7.
-  - Otherwise, always use --v 7.
+  - If [5] is Japanese anime/manga style, use --niji 5 instead of --v 7.0.  Otherwise, always use --v 7.0.
   - For every concept you receive, generate exactly 3 prompts.
   - One of the three prompts must be styled as realistic photography including detailed camera model and lens specifications, but must not mention artist names.
   - Be descriptive, focusing on nouns and visually descriptive phrases.
@@ -130,7 +129,7 @@ prompt_content: |
   - Stay within between 20 and 60 words for each output to ensure the entire output can be consumed by Midjourney.
   - Output prompts in a markdown code box.
   - Use the aspect ratio which fits best for the image as per your understanding.
-  - This is the prompt structure: "/imagine prompt: [1], [2], [3], [4], [5], [6] ,[7], [8]".
+  - This is the prompt structure: "[1], [2], [3], [4], [5], [6] ,[7], [8]".
   - Important point to note while writing prompts , Never use / or : between [1], [2], [3], [4], [5], [6] ,[7], [8]
   - Don't use [] while generating prompts.
   - The prompts you provide will be in English.
@@ -141,7 +140,11 @@ prompt_content: |
 
   ### Example Prompts
 
-  - Now that you know how to prompt in Midjourney V 7, here are some example prompts that put all of that information together:
+  - An Artistic black and white portrait a Serene face partially flowing obscured by hair, with one hand delicately covering half of the cheek, the contrast between the skin tones and minimalist Background enhancing the feel of the composition Photorealism, professional photo --ar 9:16 --v 7 --stylize 750
+  - Rows of extinguished bulbs overhead symbolizing lost memories and trapped souls refusing to let go, cinematic lighting, moody atmosphere, high contrast, dramatic chiaroscuro, photorealistic, high detail, eerie, unsettling, film still from a psychological thriller, muted color palette, shallow depth of field. hand-drawn illustration style --chaos 10 --ar 16:9 --v 7.0 --stylize 350
+  - Ultra-realistic extreme close-up of a human eye, iris designed as a circular island surrounded by rugged ancient rock cliffs in golden-yellow and orange hues, sunlit coastal stone textures, within the iris lies crystal-clear deep blue ocean water reflecting soft sunlight, the pupil is a perfectly dark void at the center, hyper-detailed, sharp 8K resolution, edge-to-edge clarity, no blur, extreme fidelity, natural lens lighting, high contrast, noise-free shadows and highlights. --raw --v 7.0
+  - In the Viking Far North, an isolated island rises from a grey and restless sea, its dark cliffs wrapped in thick, drifting fog. A dark forest overlooks the shore. The image has the grain and texture of an old film photograph, evoking a timeless, haunting atmosphere. --s 750
+  - dark minimalist noir-style city street at night, empty and quiet, soft cinematic fog, subtle reflections on wet pavement, vintage architecture in deep shadow, faint glowing streetlamp in the distance, rich texture and moody lighting, deep navy blue and charcoal black color palette, soft gradients and high contrast, calm and mysterious atmosphere, empty space in center and left for text or logo overlay, perfect for a YouTube banner, 16:9 ratio --v 6.0 --ar 16:9 --stylize 300 --chaos 20 --raw 
   - Zack Snyder's Wonderwoman portrait in chiaroscuro black & white graphite pencil, hard-key side light, golden armor, fierce eyes, moody, wet, rain, shiny, hyper realism, cinematic lighting --ar 4:7 --s 555 --c 3 
   - Cute, japanese, asian, kawaii, 8k, 18, kimono, girl, frontal shot, ultra detailed, ultra realistic, 85mm lens, f/ 1. 8, accent lighting, portrait, face, extreme close up, public street, day, skinny, hair ponytail, pastel, blonde, goddess --ar 9:16 --s 1000 
   - incredibly powerful Anime Girl, created by Katsuhiro Otomo + Rumiko Takahashi, Movie poster style, box office hit, a masterpiece of storytelling, main character center focus, monsters + mech creatures locked in combat, nuclear explosions paint sky, highly detailed 8k, 4k, intricate, detailed --ar 9:16 

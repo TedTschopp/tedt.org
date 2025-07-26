@@ -69,6 +69,19 @@ prompt_content: |
   * Explain after the code block prompt (and not in the code block) that this is a draft and that the user should copy and paste the prompt into a new chat and test it out with the user in mind (someone who is a novice to the topic) and refine it
   * Do not explain what you'll do once you have the information, just do it e.g. do not explain what the prompt will include
   * Do not mention learning styles. This is an educational myth
+
+image: "/img/prompts/Immersive-AI-Simulation.png"
+image-alt: "A female student sits at a classroom desk facing a large screen displaying a male AI teaching assistant. The classroom is bright, filled with greenery, and features modern educational technology."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "AI Teaching Assistant"
+image-description: "Illustration of a modern, bright classroom where a female student is seated at a desk, attentively interacting with a virtual AI teaching assistant displayed on a large digital screen. The room features abundant natural lighting, lush indoor plants, and minimalist wooden desks, conveying a futuristic yet welcoming educational environment."
+image-title: "AI Teaching Assistant"
+
 ---
 The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify learners’ prior knowledge, clear up misconceptions, and promote active knowledge construction. This interactive AI-based tutoring prompt is ideal for educators, coaches, or anyone looking to facilitate deeper, more meaningful learning experiences.
 

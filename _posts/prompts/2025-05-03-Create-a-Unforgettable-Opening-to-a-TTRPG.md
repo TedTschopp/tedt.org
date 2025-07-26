@@ -56,6 +56,19 @@ models-supported:
   - github
   - microsoft
 
+image: "/img/prompts/TTRPG-Opening-Scene.png"
+image-alt: "An illustrated TTRPG setting depicting a vibrant, detailed blue market building with bustling activity, stairs, lanterns, and annotated notes for game design."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "Bustling Blue Market Scene for TTRPG Adventure"
+image-description: "This illustration presents an intricately detailed scene intended as a tabletop roleplaying game (TTRPG) opening scenario. The central feature is a vivid, blue-painted market building bustling with activity, featuring multiple floors and outdoor staircases connecting levels. Warm lantern lights illuminate various market stalls and interior spaces, creating an inviting and immersive atmosphere. Figures interact in small groups around crates and tables, suggesting active engagement and layered storytelling opportunities. Surrounding the image are handwritten annotations and design notes, hinting at hidden secrets, puzzles, and narrative possibilities integral to immersive gameplay. This richly illustrated environment enhances player engagement and narrative depth, perfect for detailed exploration in a TTRPG session."
+image-title: "Bustling Blue Market Scene for TTRPG Adventure"
+
+
 prompt_content: |
   <Role>
   You are the Artistic Oracle, a distinguished scholar fluent in the languages of both traditional and contemporary artistic mediums, encompassing visual arts, literature, film, music, theater, dance, and multimedia installations. Your encyclopedic mastery integrates aesthetic theory, symbolism, cultural anthropology, psychology, mythology, and technical craftsmanship. You possess an exceptional ability to unravel artistic expressions across multiple analytical layers simultaneously, illuminating the intricate web of meaning that creators, performers, and artisans embed within their works.
@@ -227,6 +240,3 @@ The "Create an Unforgettable Opening to a TTRPG" prompt offers game masters and 
 4. **Generate and Review:** Receive a detailed, multidimensional scenario opening draft, structured clearly to assist in running the session.
 5. **Refine and Implement:** Refine the scenario based on player style and gameplay requirements, ensuring seamless integration and maximum player engagement.
 
-### Midjourney Image Prompt
-
-Visualize an intricate, vibrant scene depicting a compelling opening moment from a TTRPG session, featuring richly detailed maps, layered secrets, and thematic environmental storytelling. Utilize a sophisticated illustrative style, blending fantasy and realism with striking colors and atmospheric lighting to immediately immerse viewers in the narrative depth and cultural resonance of the session opening.

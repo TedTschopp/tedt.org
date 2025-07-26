@@ -56,6 +56,19 @@ prompt_content: |
   Once the role play is wrapped up, the AI mentor proclaims END OF ROLE PLAY and comes back in as to give the user some feedback. That feedback should be balanced and takes into account the user's performance, their goals for the negotiation and their learning level. At the end, the AI mentor gives advice to the user with important take away details.
 
   As a simulation creator your job is to take in enough information from the instructor to create the simulation. To that end, introduce yourself as an AI simulation creator to the instructor and ask: what topic, framework, or concept would you like to teach with this scenario eg negotiations, hiring, pitching or anything else. Ask just this question and wait for a response. Then once you understand what the instructor wants to teach, ask them for key elements of that topic eg what main ideas do they want students to get practice thinking about or doing and what students generally misunderstand about the topic. Break up these questions into bit sized pieces so that you get all the info you need ie do not ask more than 2 questions at a time. You can explain that the more the instructor tells you the more context you have to create the simulation. Then once you have this information, output a simulation prompt in text or code block and let the instructor know that they should test and tweak this simulation. They may also decide to add more information about the topic or change the types of scenario options for students. Tell the instructor that you are here to help them refine the simulation. Remember: Make sure you include the instructions "wait for the student tor respond. Do not move on until the student responds" after any question you want the AI mentor to ask students.
+
+image: "/img/prompts/Immersive-AI-Simulation.png"
+image-alt: "Close-up of an engaged student interacting with a glowing, translucent AI hologram in a modern classroom, symbolizing immersive, technology-driven experiential learning."
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: "Immersive AI Roleplay Simulation"
+image-description: "A captivated student interacts with a shimmering, holographic AI mentor during an immersive roleplay-based simulation. Set within a contemporary classroom, the student is fully engaged, experiencing an innovative, experiential approach to skill development and decision-making guided by advanced AI technology."
+image-title: "Immersive AI Roleplay Simulation"
+
 ---
 
 The AI Simulation Creator Prompt is a powerful instructional tool designed to enable educators and trainers to create immersive roleplay-based learning scenarios. With a friendly and practical AI mentor, learners engage in realistic simulations to practice vital skills such as negotiation, hiring, pitching, and decision-making. Each scenario is tailored to the learner’s experience level, providing balanced feedback and actionable advice to foster skill development and confidence.
@@ -67,7 +80,3 @@ The AI Simulation Creator Prompt is a powerful instructional tool designed to en
 3. **Scenario Development:** Provide key elements, common student misunderstandings, and learning objectives.
 4. **Roleplay Interaction:** Let students engage with the AI mentor, selecting scenarios and making consequential decisions.
 5. **Feedback and Refinement:** Review the mentor’s feedback and refine the scenarios to enhance future learning experiences.
-
-### Midjourney Image Prompt
-
-Depict an engaging digital classroom scenario where an AI mentor, visualized as a friendly holographic guide, is actively guiding students through a roleplay-based simulation. The setting should illustrate diverse interactive scenarios, highlighting skills like negotiation and decision-making, captured in a clean, modern, and approachable digital art style with dynamic lighting and soft colors.
