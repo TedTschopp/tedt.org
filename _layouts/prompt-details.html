@@ -124,66 +124,62 @@
     <main class="container my-4">
         <!-- Prompt Details Section -->
         <div class="card mb-4">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
 
-
-
-
+            <div class="card-header d-flex justify-content-between align-items-center">
                     <div class="card h-100 no-padding">
                         {% if page.image %}
-                            {% if page.image-alt %}
-                                {% assign image_alt = page.image-alt %}
-                                {% elsif page.image-description %}
-                                {% assign image_alt = page.image-description %}
-                            {% else %}
-                                {% assign image_alt = page.title %}
-                            {% endif %}
-                    
-                            {% if page.image-credits-title %}
-                                {% assign image_credits_title = page.image-credits-title %}
-                            {% elsif page.image-title %}
-                                {% assign image_credits_title = page.image-title %}
-                            {% else %}
-                                {% assign image_credits_title = "Unknown" %}
-                            {% endif %}
-                    
-                            {% if page.image-credits-artist %}
-                                {% assign image_credits = page.image-credits-artist %}
-                            {% elsif page.image-artist %}
-                                {% assign image_credits = page.image-artist %}
-                            {% else %}
-                                {% assign image_credits = "Unknown" %}
-                            {% endif %}
-                        
-                            {% if page.image-credits-artist-URL %}
-                                {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
-                            {% elsif page.image-artist-URL %}
-                                {% assign image_credits_artist_URL = page.image-artist-URL %}
-                            {% endif %}
-                        
-                            {% if page.image contains "http" %}
-                                {% assign image_URL = page.image %}
-                            {% else %}
-                                {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
-                            {% endif %}
+                        {% if page.image-alt %}
+                        {% assign image_alt = page.image-alt %}
+                        {% elsif page.image-description %}
+                        {% assign image_alt = page.image-description %}
                         {% else %}
-                            {% if site.featured-image %}
-                                {% if site.featured-image contains "http" %}
-                                    {% assign image_URL = site.featured-image %}
-                                {% else %}
-                                    {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
-                                {% endif %}
-                            {% else %}
-                                {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
-                            {% endif %}
-
-                            {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually
-                            uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures,
-                            earthy palette with luminous highlights" %}
-                            {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
-                            {% assign image_credits = "Ted Tschopp" %}
-                            {% assign image_credits_artist_URL = "https://tedt.org/" %}
+                        {% assign image_alt = page.title %}
+                        {% endif %}
+                    
+                        {% if page.image-credits-title %}
+                        {% assign image_credits_title = page.image-credits-title %}
+                        {% elsif page.image-title %}
+                        {% assign image_credits_title = page.image-title %}
+                        {% else %}
+                        {% assign image_credits_title = "Unknown" %}
+                        {% endif %}
+                    
+                        {% if page.image-credits-artist %}
+                        {% assign image_credits = page.image-credits-artist %}
+                        {% elsif page.image-artist %}
+                        {% assign image_credits = page.image-artist %}
+                        {% else %}
+                        {% assign image_credits = "Unknown" %}
+                        {% endif %}
+                    
+                        {% if page.image-credits-artist-URL %}
+                        {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
+                        {% elsif page.image-artist-URL %}
+                        {% assign image_credits_artist_URL = page.image-artist-URL %}
+                        {% endif %}
+                    
+                        {% if page.image contains "http" %}
+                        {% assign image_URL = page.image %}
+                        {% else %}
+                        {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                        {% endif %}
+                        {% else %}
+                        {% if site.featured-image %}
+                        {% if site.featured-image contains "http" %}
+                        {% assign image_URL = site.featured-image %}
+                        {% else %}
+                        {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
+                        {% endif %}
+                        {% else %}
+                        {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
+                        {% endif %}
+                    
+                        {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually
+                        uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures,
+                        earthy palette with luminous highlights" %}
+                        {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
+                        {% assign image_credits = "Ted Tschopp" %}
+                        {% assign image_credits_artist_URL = "https://tedt.org/" %}
                         {% endif %}
                         <div class="card h-100 position-relative">
                             <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{image_alt}} by {{image_credits}}">
@@ -210,23 +206,26 @@
                     
                                 <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
                                     {% if image-credits-URL contains "http" %}
-                                        <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
+                                    <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
                                     {% else %}
-                                        <cite>{{image_credits_title}}</cite>
+                                    <cite>{{image_credits_title}}</cite>
                                     {% endif %}
                                     {% if image-credits-artist-URL contains "http" %}
-                                        <span class="vcard">
-                                            <address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new"
-                                                    class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address>
-                                        </span>
+                                    <span class="vcard">
+                                        <address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new"
+                                                class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address>
+                                    </span>
                                     {% else %}
-                                        :&nbsp;an image by {{image_credits}}
+                                    :&nbsp;an image by {{image_credits}}
                                     {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
-                <p class="card-text">{{page.content | trim}}</p>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text">{{page.content | trim}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                        {% for tag in page.tags %}
