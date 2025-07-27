@@ -34,5 +34,12 @@
     ],
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/jekyll-gh-pages.yml"
-    ]
+    ],
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".github": false,
+        ".vscode": false,
+        ".well-known": false
+    }
 }
