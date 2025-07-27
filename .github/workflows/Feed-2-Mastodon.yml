@@ -1,4 +1,4 @@
-name: Feed → Mastodon
+name: Feed 2 Mastodon
 on:
   push:            # run every time you publish
     branches: [main]
