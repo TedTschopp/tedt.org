@@ -151,3 +151,21 @@
             }
         }
     </style>
+
+    <meta id="theme-meta" name="theme-color" content="#101820">
+    
+    <script>
+        function setThemeColor() {
+            const styles = getComputedStyle(document.documentElement);
+            const rgb = styles.getPropertyValue('--bs-dark-rgb').trim();   // e.g. "33,37,41"
+            const opacity = styles.getPropertyValue('--bs-bg-opacity').trim() || '1';
+            document
+                .querySelector('#theme-meta')
+                .setAttribute('content', `rgba(${rgb},${opacity})`);
+        }
+
+        setThemeColor();                         // first paint
+        matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', setThemeColor); // keep in sync
+        /* call setThemeColor() again whenever you toggle a .dark class, etc. */
+    </script>
