@@ -36,29 +36,55 @@
         try {
             // Check if we're in a browser context and blurhash isn't already loaded
             if (typeof window !== 'undefined' && typeof window.BlurHash === 'undefined') {
-                // Temporarily define module as undefined to prevent module detection errors
+                // Store original values
                 const originalModule = window.module;
-                window.module = undefined;
+                const originalExports = window.exports;
+                
+                // Create a temporary module environment for the library
+                window.module = { exports: {} };
+                window.exports = window.module.exports;
                 
                 // Load the script dynamically
                 const script = document.createElement('script');
                 script.src = 'https://cdn.jsdelivr.net/npm/blurhash@2.0.5/dist/index.min.js';
                 script.async = true;
                 script.onload = function() {
-                    // Restore original module value after loading
+                    // Extract the blurhash functions from module.exports and make them globally available
+                    if (window.module && window.module.exports) {
+                        window.BlurHash = window.module.exports;
+                        // Also expose individual functions globally for easier access
+                        if (window.module.exports.decode) {
+                            window.decode = window.module.exports.decode;
+                        }
+                        if (window.module.exports.encode) {
+                            window.encode = window.module.exports.encode;
+                        }
+                    }
+                    
+                    // Restore original values
                     if (originalModule !== undefined) {
                         window.module = originalModule;
                     } else {
                         delete window.module;
                     }
+                    if (originalExports !== undefined) {
+                        window.exports = originalExports;
+                    } else {
+                        delete window.exports;
+                    }
                 };
                 script.onerror = function() {
                     console.warn('BlurHash library failed to load - image lazy loading may not work optimally');
-                    // Restore original module value on error too
+                    // Restore original values on error too
                     if (originalModule !== undefined) {
                         window.module = originalModule;
                     } else {
                         delete window.module;
+                    }
+                    if (originalExports !== undefined) {
+                        window.exports = originalExports;
+                    } else {
+                        delete window.exports;
                     }
                 };
                 document.head.appendChild(script);

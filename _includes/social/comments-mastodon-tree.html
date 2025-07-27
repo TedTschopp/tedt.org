@@ -1270,14 +1270,31 @@
             // console.log('Displayed original toot');
         }
 
-        function getImageFromBlurHash(blurhash) {
-            const pixels = decode(blurhash, width, height);
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const imageData = ctx.createImageData(width, height);
-            imageData.data.set(pixels);
-            ctx.putImageData(imageData, 0, 0);
-            return canvas.toDataURL();
+        function getImageFromBlurHash(blurhash, width = 32, height = 32) {
+            // Check if decode function is available
+            if (typeof decode === 'undefined' && window.BlurHash && window.BlurHash.decode) {
+                window.decode = window.BlurHash.decode;
+            }
+            
+            if (typeof decode === 'undefined') {
+                console.warn('BlurHash decode function not available');
+                return null;
+            }
+            
+            try {
+                const pixels = decode(blurhash, width, height);
+                const canvas = document.createElement('canvas');
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                const imageData = ctx.createImageData(width, height);
+                imageData.data.set(pixels);
+                ctx.putImageData(imageData, 0, 0);
+                return canvas.toDataURL();
+            } catch (error) {
+                console.warn('Error decoding BlurHash:', error);
+                return null;
+            }
         }
 
         /**
