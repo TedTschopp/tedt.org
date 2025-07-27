@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Test</title>
+    
+    <!-- jQuery - Load early to ensure availability -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+    </script>
+
+    <!-- blurhash - load conditionally to avoid module errors -->
+    <script>
+        // Only load blurhash if we're in a proper browser context
+        try {
+            // Check if we're in a browser context and blurhash isn't already loaded
+            if (typeof window !== 'undefined' && typeof window.BlurHash === 'undefined') {
+                // Store original values
+                const originalModule = window.module;
+                const originalExports = window.exports;
+                
+                // Create a temporary module environment for the library
+                window.module = { exports: {} };
+                window.exports = window.module.exports;
+                
+                // Load the script dynamically
+                const script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/blurhash@2.0.5/dist/index.min.js';
+                script.async = true;
+                script.onload = function() {
+                    // Extract the blurhash functions from module.exports and make them globally available
+                    if (window.module && window.module.exports) {
+                        window.BlurHash = window.module.exports;
+                        // Also expose individual functions globally for easier access
+                        if (window.module.exports.decode) {
+                            window.decode = window.module.exports.decode;
+                        }
+                        if (window.module.exports.encode) {
+                            window.encode = window.module.exports.encode;
+                        }
+                    }
+                    
+                    // Restore original values
+                    if (originalModule !== undefined) {
+                        window.module = originalModule;
+                    } else {
+                        delete window.module;
+                    }
+                    if (originalExports !== undefined) {
+                        window.exports = originalExports;
+                    } else {
+                        delete window.exports;
+                    }
+                };
+                script.onerror = function() {
+                    console.warn('BlurHash library failed to load - image lazy loading may not work optimally');
+                    // Restore original values on error too
+                    if (originalModule !== undefined) {
+                        window.module = originalModule;
+                    } else {
+                        delete window.module;
+                    }
+                    if (originalExports !== undefined) {
+                        window.exports = originalExports;
+                    } else {
+                        delete window.exports;
+                    }
+                };
+                document.head.appendChild(script);
+            }
+        } catch (e) {
+            console.warn('BlurHash loading skipped due to compatibility issues:', e);
+        }
+    </script>
+</head>
+<body>
+    <h1>jQuery and Bootstrap Test</h1>
+    <p>This page tests if jQuery loads properly before document ready calls.</p>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+        crossorigin="anonymous">
+    </script>
+    
+    <!-- Test jQuery -->
+    <script>
+        $(document).ready(() => {
+            console.log('jQuery is working!');
+            $('body').append('<div class="alert alert-success">jQuery loaded successfully!</div>');
+        });
+    </script>
+</body>
+</html>
