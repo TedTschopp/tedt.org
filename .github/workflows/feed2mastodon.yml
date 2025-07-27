@@ -14,5 +14,5 @@ jobs:
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
           feedUrl:      "https://tedt.org/feed.json"
-          mastodonInstance: "https://mastodon.social"   # your home
+          mastodonInstance: "https://tschopp.net"   # your home
           mastodonToken:  ${{ secrets.MASTODON_TOKEN }}
