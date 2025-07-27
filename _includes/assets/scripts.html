@@ -1,5 +1,8 @@
   {% include assets/js-fontawesome.html %}
 
+    <!-- jQuery - Load early to ensure availability -->
+    {% include assets/js-jquery.html %}
+
   {% if page.mathjax %}
     <!-- mathjax -->
     <script type="text/javascript" async
