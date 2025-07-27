@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8">
-    <title>jQuery Test</title>
+    <title>jQuery and Bootstrap Test</title>
     
     <!-- jQuery - Load early to ensure availability -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
@@ -52,6 +52,8 @@
                     } else {
                         delete window.exports;
                     }
+                    
+                    console.log('✅ BlurHash loaded successfully');
                 };
                 script.onerror = function() {
                     console.warn('BlurHash library failed to load - image lazy loading may not work optimally');
@@ -75,23 +77,49 @@
     </script>
 </head>
 <body>
-    <h1>jQuery and Bootstrap Test</h1>
-    <p>This page tests if jQuery loads properly before document ready calls.</p>
+    <div class="container mt-5">
+        <h1>jQuery, Bootstrap, and BlurHash Test</h1>
+        <p>This page tests if all libraries load without errors.</p>
+        
+        <div class="alert alert-info" role="alert">
+            Testing libraries...
+        </div>
+        
+        <!-- Bootstrap Dropdown Test -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bootstrap Dropdown Test
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+        </div>
+    </div>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
         crossorigin="anonymous">
     </script>
     
-    <!-- Test jQuery -->
+    <!-- Test jQuery and Bootstrap -->
     <script>
         $(document).ready(() => {
-            console.log('jQuery is working!');
-            $('body').append('<div class="alert alert-success">jQuery loaded successfully!</div>');
+            console.log('✅ jQuery is working!');
+            $('.alert-info').removeClass('alert-info').addClass('alert-success').text('✅ jQuery loaded successfully!');
+            
+            // Test Bootstrap
+            if (typeof bootstrap !== 'undefined') {
+                console.log('✅ Bootstrap is working!');
+                $('body').append('<div class="alert alert-success mt-3">✅ Bootstrap loaded successfully!</div>');
+            } else {
+                console.error('❌ Bootstrap failed to load');
+                $('body').append('<div class="alert alert-danger mt-3">❌ Bootstrap failed to load</div>');
+            }
         });
     </script>
 </body>
