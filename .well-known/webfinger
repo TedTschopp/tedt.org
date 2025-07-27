@@ -1,0 +1,11 @@
+{
+  "subject": "acct:ted@tedt.org",
+  "aliases": [
+    "https://twit.social/@TedT"
+  ],
+  "links": [{
+    "rel": "self",
+    "type": "application/activity+json",
+    "href": "https://twit.social/users/TedT"
+  }]
+}
