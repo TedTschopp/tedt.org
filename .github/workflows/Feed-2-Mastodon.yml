@@ -13,6 +13,6 @@ jobs:
       - name: Post new items
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
-          feedUrl:      "https://tedt.org/feed.json"
+          feedUrl: "https://tedt.org/feed.json"
           mastodonInstance: "https://tschopp.net"   # your home
-          mastodonToken:  ${{ secrets.MASTODON_TOKEN }}
+          mastodonToken: ${{ secrets.MASTODON_TOKEN }}
