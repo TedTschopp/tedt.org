@@ -197,4 +197,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-For questions or feedback, you can reach me via [Mastodon](https://mastodon.social/@tedt) or through the contact form on the site.
+For questions or feedback, you can reach me via [Mastodon](https://twit.social/@tedt) or through the contact form on the site.
