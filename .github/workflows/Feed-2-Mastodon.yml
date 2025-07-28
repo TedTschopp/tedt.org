@@ -1,4 +1,8 @@
 name: Feed 2 Mastodon
+
+permissions:
+  contents: read
+
 on:
   push:            # run every time you publish
     branches: [main]
