@@ -244,7 +244,7 @@
                             -->
 
                             <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}"
-                                class="btn btn-primary ms-3" download="{{ page.title | slugify }}.txt">
+                                class="btn btn-primary btn-sm mt-0 me-0 ms-3" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i> Download Prompt
                             </a>
 
@@ -256,6 +256,7 @@
                                 aria-label="Copy prompt to clipboard">
                                 <i class="fas fa-copy"></i> Copy Prompt
                             </button>
+
                             <div class="ai-provider-buttons">
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
