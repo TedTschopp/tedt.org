@@ -1,3 +1,36 @@
+1. [Information Systems Architecture: Data](#information-systems-architecture-data)
+   1. [Strategic Alignment \& Principles](#strategic-alignment--principles)
+      1. [Architecture Vision Alignment](#architecture-vision-alignment)
+      2. [Applicable Data Principles](#applicable-data-principles)
+      3. [Metadata and Master Data Strategy](#metadata-and-master-data-strategy)
+      4. [Data Lifecycle and Retention](#data-lifecycle-and-retention)
+   2. [Foundational Data Inputs](#foundational-data-inputs)
+      1. [Data Sourcing Details](#data-sourcing-details)
+         1. [\[Data Source Name\] – Details](#datasourcename--details)
+      2. [Data Selection](#data-selection)
+      3. [Stakeholder and Data Steward Approval](#stakeholder-and-data-steward-approval)
+   3. [Data Quality \& Bias Evaluations](#data-quality--bias-evaluations)
+      1. [Data Quality](#data-quality)
+         1. [Bias Evaluation Plan](#bias-evaluation-plan)
+         2. [Data Quality \& Bias](#data-quality--bias)
+         3. [Data Cleaning Approach](#data-cleaning-approach)
+            1. [Data Quality Impact: Completeness](#data-quality-impact-completeness)
+            2. [Data Quality Impact: Consistency](#data-quality-impact-consistency)
+   4. [Logical Data Architecture](#logical-data-architecture)
+      1. [Logical Data Model](#logical-data-model)
+      2. [Logical Entity List and CRUD](#logical-entity-list-and-crud)
+      3. [Data Model-to-Application Mapping](#data-model-to-application-mapping)
+      4. [Data Movement and Processing Flow](#data-movement-and-processing-flow)
+         1. [End-to-End Data Flow Diagram](#end-to-end-data-flow-diagram)
+         2. [Data Processing Stages](#data-processing-stages)
+      5. [Data Dissemination Channels](#data-dissemination-channels)
+   5. [Data Security, Privacy \& Governance](#data-security-privacy--governance)
+      1. [Data Security and Protection](#data-security-and-protection)
+      2. [Impacted Business Process](#impacted-business-process)
+      3. [Data Minimization](#data-minimization)
+
+
+
 # Information Systems Architecture: Data
 
 *This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). The Data Architecture defines how data is structured, sourced, governed, and flows across the enterprise to support business capabilities and strategic objectives. It ensures alignment with enterprise principles, regulatory requirements, and operational needs by documenting logical models, data lifecycle, quality controls, and security measures. This foundation enables consistent, trustworthy, and well-governed data usage across applications, processes, and stakeholders.*

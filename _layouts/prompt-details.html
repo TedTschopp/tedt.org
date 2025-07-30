@@ -514,7 +514,7 @@
                     var defaultModel = "gpt-4"; // Default fallback
                     var promptTitle = encodeURIComponent("{{ page.title }}");
                     var promptContent = encodeURIComponent(getPromptContent());
-                    var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptTitle}%0A%0A${promptContent}`;
+                    var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
                 });
             }
@@ -575,15 +575,10 @@
             if (githubBtn) {
                 githubBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getPromptContent();
-                    var fullPrompt = promptTitle + "\n\n" + promptContent;
-                    
-                    // Copy to clipboard and show instruction
-                    navigator.clipboard.writeText(fullPrompt).then(function() {
-                        alert('Prompt copied to clipboard! Please paste it into your IDE with GitHub Copilot');
-                        window.open('https://github.com/features/copilot', '_blank', 'noopener');
-                    });
+                    var promptTitle = encodeURIComponent("{{ page.title }}");
+                    var promptContent = encodeURIComponent(getPromptContent());
+                    var url = `https://github.com/copilot?&prompt=${promptContent}`;
+                    window.open(url, '_blank', 'noopener');
                 });
             }
         });
