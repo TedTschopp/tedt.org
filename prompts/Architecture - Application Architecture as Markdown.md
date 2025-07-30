@@ -32,7 +32,7 @@
    6. [Integration Architecture](#integration-architecture-2)
       1. [Application Communication Diagram](#application-communication-diagram-1)
       2. [Interface Catalog](#interface-catalog-1)
-      3. [**Application–Entity \& Capability Coverage Matrices**](#applicationentity--capability-coverage-matrices)
+      3. [Application–Entity \& Capability Coverage Matrices](#applicationentity--capability-coverage-matrices)
       4. [Capability Realisation Mapping \& Gap Analysis](#capability-realisation-mapping-gap-analysis)
       5. [Stakeholder Concerns \& Viewpoints](#stakeholder-concerns--viewpoints)
          1. [Security Architect](#security-architect)
@@ -92,8 +92,6 @@ Finally, these principles and scope decisions align with the broader enterprise 
 * **Scope Definition:** A formal **Statement of Architecture Work** or equivalent document outlines the scope of this architecture effort. It defines what’s included/excluded and is approved by governance, preventing scope creep.
 * **Compliance Standards:** The architecture will comply with relevant standards such as ISO 25010 for software quality (ensuring maintainability, security), and any industry-specific standards (for example, HL7 in healthcare, or the Open Travel Alliance standards if in travel industry). These standards inform requirements for the applications (e.g. performance, interoperability) from the outset.
 
-By meeting these prerequisites and adhering to standards, the Application Architecture is positioned to effectively align with business strategy and conform to enterprise-wide guidelines.
-
 ### Application Portfolio Catalog
 
 <Purpose>
@@ -119,7 +117,7 @@ Its objectives are to:
 
 <Example>
 | ID   | Application                              | Description                                                           | Owner/Business Unit              | Platform             | Lifecycle Stage       |
-| ---- | ---------------------------------------- | --------------------------------------------------------------------- | -------------------------------- | -------------------- | --------------------- |
+|------|------------------------------------------|-----------------------------------------------------------------------|----------------------------------|----------------------|-----------------------|
 | AP01 | Customer Relationship Management (CRM)   | Manages customer accounts, sales pipeline, and support interactions.  | Sales & Customer Service         | Cloud (SaaS)         | Live                  |
 | AP02 | Online E-Commerce Platform               | Online platform for digital sales and customer self-service.          | Digital Marketing & Commerce     | Cloud (PaaS)         | Live                  |
 | AP03 | Enterprise Resource Planning (ERP)       | Core system for finance, accounting, inventory, and order management. | Finance & Operations             | On-Premises          | Live                  |
@@ -131,7 +129,7 @@ Its objectives are to:
 Before populating or refreshing this catalog, ensure the following artefacts are in place or updated:
 
 | Artefact                              | Purpose in Relation to Catalog                                                                                         | Typical Source/Owner                 |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | **Business Capability Map**           | Defines the capability hierarchy used to map each application to business value.                                       | Business Architecture                |
 | **Application Reference Model (ARM)** | Provides the standard categorisation (e.g., Core, Commodity, Differentiating) that is cross‑referenced in the catalog. | EA / TOGAF ADM Phase C               |
 | **Technology Reference Model (TRM)**  | Lists approved hosting patterns (e.g., Cloud SaaS, Cloud PaaS, On‑Prem VM, Mainframe).                                 | EA / Infrastructure Architecture     |
@@ -184,7 +182,7 @@ In the target architecture, each major application is **logically decomposed** i
 * **Customer Self-Service Portal** – *Type: Custom Web App.* The portal itself can be thought of as composed of front-end components corresponding to features: **Profile Management UI**, **Product Catalog UI**, **Order Entry UI**, **Order Tracking UI**. These map to services on the back-end (Profile UI talks to CRM, Order UI talks to Order service, etc.). We maintain a separation of concerns: the portal focuses on presentation, while all business logic resides in aforementioned back-end services. If the organization has a design system or reusable UI components, the portal uses those (for consistency and faster development). *Reuse:* We plan to reuse any existing web components (e.g., maybe the company already has a payment widget or a maps address widget). Also, the portal itself could be extended to other user groups (for example, a dealer portal in the future) by reusing the same underlying architecture.
 
 | Business Function         | CRM | E-Commerce | ERP | HRMS | EDW |
-| ------------------------- | --- | ---------- | --- | ---- | --- |
+|---------------------------|-----|------------|-----|------|-----|
 | Sales & Marketing         | ✔   | ✔          |     |      |     |
 | Customer Service          | ✔   |            |     |      |     |
 | Order Fulfillment         |     |            | ✔   |      |     |
@@ -237,18 +235,18 @@ This section defines the user‑interface (UI) and user‑experience (UX) approa
 
 * The **Customer Self‑Service Portal (A5)** will adopt the company’s **“Nimbus” design system**:  
 
-| **Aspect**               | **Application Example**                                                                                                                         |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Consistent Look & Feel** | Global header with brand logo, search, and profile dropdown; left‑hand navigation collapsible at <768 px. |
-| **Design Principles**    | Field‑friendly: all touch targets ≥ 44 × 44 px; primary buttons left‑aligned for one‑handed thumb use.                                          |
-| **Visual Standards**     | Primary action color Blue Fire #00A9E0; body text 16 pt; icons from internal set.                                                               |
-| **Reusable Components**  | “Nimbus Button,” “Nimbus Data‑Table,” and “Swipe‑to‑complete” pattern published in Storybook.                                                   |
-| **Accessibility**        | All static text ≥ 4.5 : 1 contrast; modal dialogs trap focus; voice‑over labels on every icon. Every form element auto‑receives ARIA labels; color palette has been pre‑tested for 4.5:1 contrast; modal dialogs trap focus until dismissed                                                 |
-| **Responsive Pattern**   | Portal catalog: 4‑column (desktop), 2‑column (tablet), 1‑column (mobile) with src‑set WebP fallback.                                            |
-| **Performance Budget**   | Largest Contentful Paint < 1.8 s (3 G); bundle ≤ 250 KB.                                                                                        |
-| **Usability Validation** | Sprint‑3 usability test (8 users) → SUS 88; multi‑step checkout merged into one screen, reducing median task time from 2 min 45 s → 1 min 30 s. age weight capped at 250 KB (gzipped) per route; lazy‑load non‑critical images. Largest Contentful Paint is consistently under 1.8 s on throttled 3G per Lighthouse CI in the pipeline.|
-| **KPIs (snapshot)**      | Task completion ≥ 95 %; first‑time success ≥ 90 %; work‑order time < 3 min; SUS ≥ 75; offline‑sync success ≥ 99 %.                              |
-| **Governance**.          | A pull‑request adding a new UI pattern must include a link to the updated Figma frame, accessibility checklist, and automated visual‑regression screenshots before merge.|
+| **Aspect**                 | **Application Example**                                                                                                                                                                                                                                                                                                                 |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Consistent Look & Feel** | Global header with brand logo, search, and profile dropdown; left‑hand navigation collapsible at <768 px.                                                                                                                                                                                                                               |
+| **Design Principles**      | Field‑friendly: all touch targets ≥ 44 × 44 px; primary buttons left‑aligned for one‑handed thumb use.                                                                                                                                                                                                                                  |
+| **Visual Standards**       | Primary action color Blue Fire #00A9E0; body text 16 pt; icons from internal set.                                                                                                                                                                                                                                                       |
+| **Reusable Components**    | “Nimbus Button,” “Nimbus Data‑Table,” and “Swipe‑to‑complete” pattern published in Storybook.                                                                                                                                                                                                                                           |
+| **Accessibility**          | All static text ≥ 4.5 : 1 contrast; modal dialogs trap focus; voice‑over labels on every icon. Every form element auto‑receives ARIA labels; color palette has been pre‑tested for 4.5:1 contrast; modal dialogs trap focus until dismissed                                                                                             |
+| **Responsive Pattern**     | Portal catalog: 4‑column (desktop), 2‑column (tablet), 1‑column (mobile) with src‑set WebP fallback.                                                                                                                                                                                                                                    |
+| **Performance Budget**     | Largest Contentful Paint < 1.8 s (3 G); bundle ≤ 250 KB.                                                                                                                                                                                                                                                                                |
+| **Usability Validation**   | Sprint‑3 usability test (8 users) → SUS 88; multi‑step checkout merged into one screen, reducing median task time from 2 min 45 s → 1 min 30 s. age weight capped at 250 KB (gzipped) per route; lazy‑load non‑critical images. Largest Contentful Paint is consistently under 1.8 s on throttled 3G per Lighthouse CI in the pipeline. |
+| **KPIs (snapshot)**        | Task completion ≥ 95 %; first‑time success ≥ 90 %; work‑order time < 3 min; SUS ≥ 75; offline‑sync success ≥ 99 %.                                                                                                                                                                                                                      |
+| **Governance**.            | A pull‑request adding a new UI pattern must include a link to the updated Figma frame, accessibility checklist, and automated visual‑regression screenshots before merge.                                                                                                                                                               |
 
 <Prerequisites>  
 
@@ -411,7 +409,7 @@ To achieve these outcomes, the future architecture aligns with modern **referenc
 The following table lists the **future-state applications** and key details, grouped by capability domain:
 
 | Application ID | Application Name                 | Capability                         | Technical Debt (Future) | Reference Architecture Pattern Used        | Integrated With (Application IDs)             |
-| -------------- | -------------------------------- | ---------------------------------- | ----------------------- | ------------------------------------------ | --------------------------------------------- |
+|----------------|----------------------------------|------------------------------------|-------------------------|--------------------------------------------|-----------------------------------------------|
 | **A1**         | **Cloud CRM Platform**           | Customer Management                | Very Low (new SaaS)     | SaaS CRM (Cloud-based, modular)            | Integrates with A2, A5 (via API)              |
 | **A2**         | **Order Management Service**     | Order Processing                   | Low (new build)         | Microservice (Cloud-native, containerized) | Integrates with A1, A3, A4, A5 (API & Events) |
 | **A3**         | **Billing System Module**        | Billing/Finance                    | Moderate (some legacy)  | COTS ERP Module (exposed via API)          | Integrates with A2, A1 (via API)              |
@@ -539,7 +537,7 @@ A **comprehensive inventory of every logical interface between two applications 
 <Instructions>
 
 | Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
-| --------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------|------------|------------------------------------------------------------------------------------------------------------------------------|
 | **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
 | **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
 | **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
@@ -564,7 +562,7 @@ A **comprehensive inventory of every logical interface between two applications 
 <Example>
 
 | Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
-| ------------ | --------------- | ------------ | --------------------- | --------------- | ------------------------ | ----------------------- | ------------ | --------------------- | ------------- | -------- |
+|--------------|-----------------|--------------|-----------------------|-----------------|--------------------------|-------------------------|--------------|-----------------------|---------------|----------|
 | INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
 | INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
 | INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
@@ -626,7 +624,7 @@ Each interface is designed using API-first principles, emphasizing clear contrac
 #### Integration Patterns
 
 | Type         | Pattern                | Use Case Example                                                |
-| ------------ | ---------------------- | --------------------------------------------------------------- |
+|--------------|------------------------|-----------------------------------------------------------------|
 | Synchronous  | RESTful APIs (JSON)    | Portal calls CRM to retrieve customer data.                     |
 | Synchronous  | gRPC/Internal REST     | Order service queries Inventory service for stock validation.   |
 | Asynchronous | Event-Driven Messaging | `OrderPlaced` event triggers Billing and Notification services. |
@@ -682,7 +680,7 @@ All external calls are abstracted through **adapter services**, isolating the re
 #### Middleware and Tools
 
 | Component               | Purpose                                                                 |
-| ----------------------- | ----------------------------------------------------------------------- |
+|-------------------------|-------------------------------------------------------------------------|
 | API Gateway             | Ingress control, rate limiting, security enforcement                    |
 | Message Broker          | Kafka/SNS/SQS for async, decoupled messaging                            |
 | Enterprise Service Bus  | Integration with legacy apps, complex routing, transformation           |
@@ -849,7 +847,7 @@ The Standards Information Base (SIB) enables:
 <Instructions>
 
 | Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ----- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|-------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1** | **Define Classification Scheme** | Group standards into domains such as *Architecture & Modelling*, *Security & Privacy*, *Quality & Service Management*, *Cloud & DevOps*, *Data & Integration*, *Legal & Regulatory*.                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **2** | **Collect Candidate Standards**  | Harvest from enterprise policy library, legal / regulatory obligations register, industry bodies (ISO, IEC, IEEE, NIST, ETSI, W3C, IETF), and internal pattern repositories.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **3** | **Screen & Approve**             | EA Governance Board reviews each candidate for relevance, overlap, and currency. Approved items receive a unique **SIB‑ID**.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -866,7 +864,7 @@ The Standards Information Base (SIB) enables:
 <Example>
 
 | SIB‑ID  | Standard / Regulation                         | Version | Issuer     | Domain                       | Status      | Lifecycle Phase(s)      | Control Mapping / Notes                         | Review Cycle | Owner       |
-| ------- | --------------------------------------------- | ------- | ---------- | ---------------------------- | ----------- | ----------------------- | ----------------------------------------------- | ------------ | ----------- |
+|---------|-----------------------------------------------|---------|------------|------------------------------|-------------|-------------------------|-------------------------------------------------|--------------|-------------|
 | SIB‑001 | ISO/IEC/IEEE 42010 – Architecture Description | 2011    | ISO        | Architecture & Modelling     | Mandatory   | Plan, Design            | Basis for architecture viewpoints & artefacts   | 3 yrs        | EA Office   |
 | SIB‑014 | ISO/IEC 27001 – Information Security Mgmt     | 2022    | ISO        | Security & Privacy           | Mandatory   | Design, Deploy, Operate | Mapped to NIST CSF & internal control library   | 1 yr         | CISO Team   |
 | SIB‑021 | TOGAF® Standard, 10th Edition                 | 2022    | Open Group | Architecture & Governance    | Recommended | Plan, Design            | ADM artefact templates adopted enterprise‑wide  | 3 yrs        | EA Office   |
@@ -1142,7 +1140,7 @@ Illustrates—in **one coherent view—the run‑time data and process flows bet
 <Instructions>
 
 | Step  | Task                            | Guidance & Expected Content                                                                                                                                                                                                                                                                                                                   |
-| ----- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1** | **Define Viewpoint & Scope**    | Choose an Integration‑ or Application‑centric viewpoint per ISO/IEC/IEEE 42010. Show only the applications, channels, and endpoints relevant to the project or capability in scope.                                                                                                                                                           |
 | **2** | **Select Modelling Notation**   | Use an **internationally standardised notation** (ISO/IEC 19540 ArchiMate 3.2 *Application Collaboration View*, or ISO/IEC 19505 UML 2.5 *Component*/*Deployment* diagrams). Mermaid or C4 can be used for lightweight documentation, but the canonical model must exist in the EA repository.                                                |
 | **3** | **Represent Applications**      | Label each application with its unique ID from the *Application Portfolio Catalog* (AP‑nnn). Group them in logical zones (Core, Edge, Third‑Party, Cloud, DMZ).                                                                                                                                                                               |
@@ -1184,7 +1182,7 @@ A **comprehensive inventory of every logical interface between two applications 
 <Instructions>
 
 | Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
-| --------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------|------------|------------------------------------------------------------------------------------------------------------------------------|
 | **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
 | **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
 | **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
@@ -1195,7 +1193,7 @@ A **comprehensive inventory of every logical interface between two applications 
 | **Data Classification**     | Yes        | *Public*, *Internal*, *Confidential*, *Restricted* (per ISO/IEC 27001).                                                      |
 | **SLA / SLO**               | Yes        | Availability, latency, throughput targets (aligned to ITIL 4 service metrics).                                               |
 | **Error & Retry Policy**    | Yes        | Idempotency rules, exponential back‑off, dead‑letter queue, etc.                                                             |
-| **Owning Team / Contact**   | Yes        | Single accountable team (email, Teams).                                                                           |
+| **Owning Team / Contact**   | Yes        | Single accountable team (email, Teams).                                                                                      |
 | **Lifecycle Status**        | Yes        | *Designed*, *Implemented*, *Live*, *Deprecated*, *Retired*.                                                                  |
 | **Last Reviewed**           | Yes        | ISO 8601 date when details were last validated.                                                                              |
 
@@ -1209,7 +1207,7 @@ A **comprehensive inventory of every logical interface between two applications 
 <Example>
 
 | Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
-| ------------ | --------------- | ------------ | --------------------- | --------------- | ------------------------ | ----------------------- | ------------ | --------------------- | ------------- | -------- |
+|--------------|-----------------|--------------|-----------------------|-----------------|--------------------------|-------------------------|--------------|-----------------------|---------------|----------|
 | INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
 | INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
 | INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
@@ -1243,7 +1241,7 @@ A **comprehensive inventory of every logical interface between two applications 
 * **ITIL® 4 (2019)** — Service Design & Transition practices
 * **COBIT® 2019** — Governance & Management of Enterprise IT (BAI & DSS domains)
 
-### **Application–Entity & Capability Coverage Matrices**
+### Application–Entity & Capability Coverage Matrices
 
 <Purpose>
 
@@ -1253,7 +1251,7 @@ A **comprehensive inventory of every logical interface between two applications 
 <Instructions>
 
 | Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                               |
-| ----- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1** | **Freeze Reference Models**      | Confirm latest versions of the **Enterprise Data Model** (entities) and the **Business Capability Map** (capabilities).                                                                                                                                                                                                                        |
 | **2** | **Extract Application List**     | Use the authoritative *Application Portfolio Catalog* (AP‑IDs, owners, lifecycle stage, risk score).                                                                                                                                                                                                                                           |
 | **3** | **Populate CRUD Matrix**         | <br>1. For each entity, mark the role of every application with **C / R / U / D**. <br>2. If an application is the *single source of truth* (SSoT) for an entity, append **(M)** after the letter(s) – e.g., **C(M), U(M)**. <br>3. Leave blank where no interaction exists to maintain visual clarity.                                        |
@@ -1273,7 +1271,7 @@ A **comprehensive inventory of every logical interface between two applications 
 **Application Interaction Matrix (CRUD)**
 
 | Data Entity | CRM     | E-Commerce | ERP        | HRMS       | EDW |
-| ----------- | ------- | ---------- | ---------- | ---------- | --- |
+|-------------|---------|------------|------------|------------|-----|
 | Customer    | C, R, U | C, R, U    | R          |            | R   |
 | Order       | C, R, U | C, R, U    | C, R, U    |            | R   |
 | Product     | R       | R          | C, R, U, D |            | R   |
@@ -1283,7 +1281,7 @@ A **comprehensive inventory of every logical interface between two applications 
 **Application Capability Summary Matrix**
 
 | Application | Customer Mgmt | Sales & Marketing | Digital Commerce | Order Fulfillment | Financial Mgmt | HR Mgmt | Analytics & Reporting | Stage      | Risk      |
-| ----------- | ------------- | ----------------- | ---------------- | ----------------- | -------------- | ------- | --------------------- | ---------- | --------- |
+|-------------|---------------|-------------------|------------------|-------------------|----------------|---------|-----------------------|------------|-----------|
 | CRM         | ✓             | ✓                 |                  |                   |                |         |                       | Live 🟢    | Low 🟢    |
 | E-Commerce  |               | ✓                 | ✓                |                   |                |         |                       | Live 🟢    | Medium 🟡 |
 | ERP         |               |                   |                  | ✓                 | ✓              |         |                       | Live 🟢    | High 🔴   |
@@ -1338,12 +1336,12 @@ Formatting rules
 
 <Example>
 
-| Business Capability     | Realized By (App) | ABB/SBB | Gap Notes                          |
-|-------------------------|-------------------|---------|------------------------------------|
-| Manage Customers        | CRM (A1)          | SBB     | None – mapped 1:1                  |
-| Process Orders          | Order Svc (A2)    | SBB     | Inventory logic not modularized    |
-| Product Management      | Catalog Svc (A4)  | SBB     | UI Admin tooling TBD               |
-| Financial Reporting     | Billing (A3)      | SBB     | ERP module aging – replacement in roadmap |
+| Business Capability | Realized By (App) | ABB/SBB | Gap Notes                                 |
+|---------------------|-------------------|---------|-------------------------------------------|
+| Manage Customers    | CRM (A1)          | SBB     | None – mapped 1:1                         |
+| Process Orders      | Order Svc (A2)    | SBB     | Inventory logic not modularized           |
+| Product Management  | Catalog Svc (A4)  | SBB     | UI Admin tooling TBD                      |
+| Financial Reporting | Billing (A3)      | SBB     | ERP module aging – replacement in roadmap |
 
 <Prerequisites>
 
