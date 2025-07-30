@@ -237,12 +237,15 @@
                         <span>Prompt</span>
                         <div class="d-flex gap-2">
 
+                            <!--
                             <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
                                 <i class="fas fa-heart"></i> <span class="like-count">0</span>
                             </button>
+                            -->
+
                             <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}"
                                 class="btn btn-primary ms-3" download="{{ page.title | slugify }}.txt">
-                                <i class="fas fa-download"></i>
+                                <i class="fas fa-download"></i> Download Prompt
                             </a>
 
                             <button class="btn btn-copy-prompt btn-sm mt-0 me-0" 
@@ -558,10 +561,10 @@
             if (microsoftBtn) {
                 microsoftBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getPromptContent();
-                    var fullPrompt = promptTitle + "\n\n" + promptContent;
-                    
+                    var promptTitle = encodeURIComponent("{{ page.title }}");
+                    var promptContent = encodeURIComponent(getPromptContent());
+                    var url = `https://copilot.microsoft.com/?prompt=${promptContent}`;
+                    window.open(url, '_blank', 'noopener');
                     // Copy to clipboard and show instruction
                     navigator.clipboard.writeText(fullPrompt).then(function() {
                         alert('Prompt copied to clipboard! Please paste it into Microsoft Copilot');
@@ -577,7 +580,7 @@
                     e.preventDefault();
                     var promptTitle = encodeURIComponent("{{ page.title }}");
                     var promptContent = encodeURIComponent(getPromptContent());
-                    var url = `https://github.com/copilot?&prompt=${promptContent}`;
+                    var url = `https://github.com/copilot?prompt=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
                 });
             }
