@@ -1,0 +1,139 @@
+{% comment %}
+Dynamic Prompt Variables Form Component
+Generates interactive forms based on variables defined in page front matter
+{% endcomment %}
+
+{% if page.variables and page.variables.size > 0 %}
+<div class="card mb-3" id="prompt-variables-card" style="display: none;">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-sliders-h"></i> Customize Prompt Variables</span>
+        <div class="d-flex gap-2">
+            <button class="btn btn-outline-secondary btn-sm" type="button" id="reset-variables-btn">
+                <i class="fas fa-undo"></i> Reset
+            </button>
+            <button class="btn btn-primary btn-sm" type="button" id="update-prompt-btn">
+                <i class="fas fa-sync"></i> Update Prompt
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <form id="prompt-variables-form">
+            <div class="row">
+                {% for variable in page.variables %}
+                <div class="col-md-6 mb-3">
+                    <label for="var-{{ variable.name }}" class="form-label">
+                        {{ variable.label }}
+                        {% if variable.required %}
+                        <span class="text-danger">*</span>
+                        {% endif %}
+                    </label>
+                    
+                    {% case variable.type %}
+                    {% when 'text' %}
+                        <input type="text" 
+                               class="form-control prompt-variable" 
+                               id="var-{{ variable.name }}" 
+                               name="{{ variable.name }}"
+                               data-variable="{{ variable.name }}"
+                               {% if variable.placeholder %}placeholder="{{ variable.placeholder }}"{% endif %}
+                               {% if variable.default %}value="{{ variable.default }}"{% endif %}
+                               {% if variable.required %}required{% endif %}>
+                    
+                    {% when 'textarea' %}
+                        <textarea class="form-control prompt-variable" 
+                                  id="var-{{ variable.name }}" 
+                                  name="{{ variable.name }}"
+                                  data-variable="{{ variable.name }}"
+                                  rows="{{ variable.rows | default: 3 }}"
+                                  {% if variable.placeholder %}placeholder="{{ variable.placeholder }}"{% endif %}
+                                  {% if variable.required %}required{% endif %}>{% if variable.default %}{{ variable.default }}{% endif %}</textarea>
+                    
+                    {% when 'number' %}
+                        <input type="number" 
+                               class="form-control prompt-variable" 
+                               id="var-{{ variable.name }}" 
+                               name="{{ variable.name }}"
+                               data-variable="{{ variable.name }}"
+                               {% if variable.min %}min="{{ variable.min }}"{% endif %}
+                               {% if variable.max %}max="{{ variable.max }}"{% endif %}
+                               {% if variable.step %}step="{{ variable.step }}"{% endif %}
+                               {% if variable.default %}value="{{ variable.default }}"{% endif %}
+                               {% if variable.required %}required{% endif %}>
+                    
+                    {% when 'select' %}
+                        <select class="form-select prompt-variable" 
+                                id="var-{{ variable.name }}" 
+                                name="{{ variable.name }}"
+                                data-variable="{{ variable.name }}"
+                                {% if variable.required %}required{% endif %}>
+                            {% unless variable.required %}
+                            <option value="">Choose an option...</option>
+                            {% endunless %}
+                            {% for option in variable.options %}
+                            <option value="{{ option }}" {% if variable.default == option %}selected{% endif %}>
+                                {{ option | capitalize }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    
+                    {% when 'radio' %}
+                        {% for option in variable.options %}
+                        <div class="form-check">
+                            <input class="form-check-input prompt-variable" 
+                                   type="radio" 
+                                   name="{{ variable.name }}" 
+                                   id="var-{{ variable.name }}-{{ forloop.index }}"
+                                   data-variable="{{ variable.name }}"
+                                   value="{{ option }}"
+                                   {% if variable.default == option %}checked{% endif %}
+                                   {% if variable.required %}required{% endif %}>
+                            <label class="form-check-label" for="var-{{ variable.name }}-{{ forloop.index }}">
+                                {{ option | capitalize }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                    
+                    {% when 'checkbox' %}
+                        {% for option in variable.options %}
+                        <div class="form-check">
+                            <input class="form-check-input prompt-variable" 
+                                   type="checkbox" 
+                                   name="{{ variable.name }}[]" 
+                                   id="var-{{ variable.name }}-{{ forloop.index }}"
+                                   data-variable="{{ variable.name }}"
+                                   value="{{ option }}"
+                                   {% if variable.default contains option %}checked{% endif %}>
+                            <label class="form-check-label" for="var-{{ variable.name }}-{{ forloop.index }}">
+                                {{ option | capitalize }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                    
+                    {% else %}
+                        <input type="text" 
+                               class="form-control prompt-variable" 
+                               id="var-{{ variable.name }}" 
+                               name="{{ variable.name }}"
+                               data-variable="{{ variable.name }}"
+                               {% if variable.placeholder %}placeholder="{{ variable.placeholder }}"{% endif %}
+                               {% if variable.default %}value="{{ variable.default }}"{% endif %}
+                               {% if variable.required %}required{% endif %}>
+                    {% endcase %}
+                    
+                    {% if variable.help %}
+                    <div class="form-text">{{ variable.help }}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Toggle button for showing/hiding the variables form -->
+<div class="d-flex justify-content-center mb-3">
+    <button class="btn btn-outline-primary btn-sm" type="button" id="toggle-variables-btn">
+        <i class="fas fa-sliders-h"></i> Customize Prompt Variables
+    </button>
+</div>
+{% endif %}

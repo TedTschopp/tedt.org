@@ -109,6 +109,9 @@
         }
     </style>
     
+    <!-- Prompt Variables Styles -->
+    {% include prompt-variables-styles.html %}
+    
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
 
@@ -232,6 +235,9 @@
                     {% endfor %}
                 </div>
 
+                <!-- Prompt Variables Form -->
+                {% include prompt-variables-form.html %}
+
                 <div class="card my-3">
                     <div class="card-header justify-content-between d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
                         <span>Prompt</span>
@@ -243,7 +249,7 @@
                             </button>
                             -->
 
-                            <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}"
+                            <a href="#" id="download-prompt-link"
                                 class="btn btn-primary btn-sm mt-0 me-0 ms-3" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i> Download Prompt
                             </a>
@@ -300,13 +306,17 @@
                             </div> <!-- Close ai-provider-buttons -->
                         </div>
                     </div>
-                    <div class="card-body p-1" markdown="0"><pre 
-                        class="bg-dark text-white rounded" style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                    <div class="card-body p-1" markdown="0">
+                        <!-- Original prompt (hidden when variables are customized) -->
+                        <pre id="original-prompt" class="bg-dark text-white rounded" style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                        
+                        <!-- Customized prompt (shown when variables are filled) -->
+                        <pre id="customized-prompt" class="bg-dark text-white rounded" style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word; display: none;"><code class="language-markdown" id="customized-prompt-content">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
                     </div>
                 </div>
 
                 <div class="text-end mt-3">
-                    <a href="data:text/plain;charset=utf-8,{% if page.prompt_content %}{{ page.prompt_content | strip_newlines | uri_escape }}{% else %}{{ page.content | strip_newlines | uri_escape }}{% endif %}" class="btn btn-primary ms-3"
+                    <a href="#" id="download-prompt-link-bottom" class="btn btn-primary ms-3"
                         download="{{ page.title | slugify }}.txt">
                         <i class="fas fa-download"></i>
                     </a>
@@ -468,6 +478,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Global variables for prompt management
+        let originalPrompt = `{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}`;
+        let customizedPrompt = originalPrompt;
+        let variableDefinitions = [];
+        
+        {% if page.variables and page.variables.size > 0 %}
+        variableDefinitions = [
+            {% for variable in page.variables %}
+            {
+                name: "{{ variable.name }}",
+                label: "{{ variable.label }}",
+                type: "{{ variable.type }}",
+                default: {% if variable.default %}"{{ variable.default }}"{% else %}""{% endif %},
+                required: {{ variable.required | default: false }},
+                options: {% if variable.options %}{{ variable.options | jsonify }}{% else %}[]{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ];
+        {% endif %}
+
         // Like button functionality
         document.querySelectorAll('.btn-like').forEach(btn => {
             btn.addEventListener('click', function(e) {
@@ -490,9 +520,9 @@
         // Copy button for Prompt Example
         document.querySelectorAll('.card-header .btn-copy-prompt').forEach(btn => {
             btn.addEventListener('click', function() {
-                const pre = this.closest('.card').querySelector('pre');
+                const pre = document.querySelector('#customized-prompt:not([style*="display: none"]) pre, #original-prompt pre');
                 if (pre) {
-                    navigator.clipboard.writeText(pre.innerText);
+                    navigator.clipboard.writeText(getCurrentPromptContent());
                     const original = this.innerHTML;
                     this.innerHTML = '<i class="fas fa-check"></i> Copied!';
                     setTimeout(() => {
@@ -502,22 +532,204 @@
             });
         });
 
+        // Helper function to get current prompt content (original or customized)
+        function getCurrentPromptContent() {
+            const customizedElement = document.getElementById('customized-prompt');
+            if (customizedElement && customizedElement.style.display !== 'none') {
+                return customizedPrompt;
+            }
+            return originalPrompt;
+        }
+
+        // Function to replace variables in prompt content
+        function replaceVariables(content, variables) {
+            let result = content;
+            for (const [key, value] of Object.entries(variables)) {
+                // Handle both {{variable}} and {{ variable }} formats
+                const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
+                result = result.replace(regex, value || `{{${key}}}`);
+            }
+            return result;
+        }
+
+        // Function to collect current variable values
+        function collectVariableValues() {
+            const values = {};
+            variableDefinitions.forEach(variable => {
+                if (variable.type === 'checkbox') {
+                    const checkboxes = document.querySelectorAll(`input[data-variable="${variable.name}"]:checked`);
+                    values[variable.name] = Array.from(checkboxes).map(cb => cb.value).join(', ');
+                } else if (variable.type === 'radio') {
+                    const radio = document.querySelector(`input[data-variable="${variable.name}"]:checked`);
+                    values[variable.name] = radio ? radio.value : '';
+                } else {
+                    const element = document.querySelector(`[data-variable="${variable.name}"]`);
+                    values[variable.name] = element ? element.value : '';
+                }
+            });
+            return values;
+        }
+
+        // Function to update prompt preview
+        function updatePromptPreview() {
+            if (variableDefinitions.length === 0) return;
+            
+            const variables = collectVariableValues();
+            customizedPrompt = replaceVariables(originalPrompt, variables);
+            
+            const customizedElement = document.getElementById('customized-prompt-content');
+            const originalElement = document.getElementById('original-prompt');
+            const customizedContainer = document.getElementById('customized-prompt');
+            
+            if (customizedElement && customizedContainer) {
+                customizedElement.textContent = customizedPrompt;
+                
+                // Show customized version if any variables have been filled
+                const hasValues = Object.values(variables).some(value => value && value.trim() !== '');
+                if (hasValues) {
+                    originalElement.style.display = 'none';
+                    customizedContainer.style.display = 'block';
+                } else {
+                    originalElement.style.display = 'block';
+                    customizedContainer.style.display = 'none';
+                }
+            }
+        }
+
+        // Function to validate form
+        function validateForm() {
+            let isValid = true;
+            variableDefinitions.forEach(variable => {
+                if (variable.required) {
+                    const value = collectVariableValues()[variable.name];
+                    const element = document.querySelector(`[data-variable="${variable.name}"]`);
+                    
+                    if (!value || value.trim() === '') {
+                        element?.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        element?.classList.remove('is-invalid');
+                        element?.classList.add('is-valid');
+                    }
+                }
+            });
+            return isValid;
+        }
+
+        // Function to reset form to defaults
+        function resetForm() {
+            variableDefinitions.forEach(variable => {
+                if (variable.type === 'checkbox') {
+                    const checkboxes = document.querySelectorAll(`input[data-variable="${variable.name}"]`);
+                    checkboxes.forEach(cb => {
+                        cb.checked = variable.default && variable.default.includes(cb.value);
+                    });
+                } else if (variable.type === 'radio') {
+                    const radios = document.querySelectorAll(`input[data-variable="${variable.name}"]`);
+                    radios.forEach(radio => {
+                        radio.checked = radio.value === variable.default;
+                    });
+                } else {
+                    const element = document.querySelector(`[data-variable="${variable.name}"]`);
+                    if (element) {
+                        element.value = variable.default || '';
+                        element.classList.remove('is-invalid', 'is-valid');
+                    }
+                }
+            });
+            updatePromptPreview();
+        }
+
         // Initialize functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Helper function to get prompt content
-            function getPromptContent() {
-                const pre = document.querySelector('pre code');
-                return pre ? pre.innerText : '';
+            // Toggle variables form
+            const toggleBtn = document.getElementById('toggle-variables-btn');
+            const variablesCard = document.getElementById('prompt-variables-card');
+            
+            if (toggleBtn && variablesCard) {
+                toggleBtn.addEventListener('click', function() {
+                    if (variablesCard.style.display === 'none') {
+                        variablesCard.style.display = 'block';
+                        variablesCard.classList.add('show');
+                        toggleBtn.classList.add('active');
+                        toggleBtn.innerHTML = '<i class="fas fa-times"></i> Hide Variables';
+                    } else {
+                        variablesCard.style.display = 'none';
+                        variablesCard.classList.remove('show');
+                        toggleBtn.classList.remove('active');
+                        toggleBtn.innerHTML = '<i class="fas fa-sliders-h"></i> Customize Prompt Variables';
+                    }
+                });
             }
+
+            // Update prompt button
+            const updateBtn = document.getElementById('update-prompt-btn');
+            if (updateBtn) {
+                updateBtn.addEventListener('click', function() {
+                    if (validateForm()) {
+                        updatePromptPreview();
+                        this.classList.add('btn-loading');
+                        setTimeout(() => {
+                            this.classList.remove('btn-loading');
+                        }, 500);
+                    }
+                });
+            }
+
+            // Reset button
+            const resetBtn = document.getElementById('reset-variables-btn');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', resetForm);
+            }
+
+            // Real-time updates for form inputs
+            document.querySelectorAll('.prompt-variable').forEach(input => {
+                ['input', 'change', 'keyup'].forEach(eventType => {
+                    input.addEventListener(eventType, function() {
+                        // Clear validation classes on input
+                        this.classList.remove('is-invalid', 'is-valid');
+                        
+                        // Update preview in real-time (debounced)
+                        clearTimeout(this.updateTimeout);
+                        this.updateTimeout = setTimeout(updatePromptPreview, 300);
+                    });
+                });
+            });
+
+            // Initialize with default values
+            if (variableDefinitions.length > 0) {
+                updatePromptPreview();
+            }
+
+            // Setup download links
+            function setupDownloadLinks() {
+                const downloadLinks = document.querySelectorAll('#download-prompt-link, #download-prompt-link-bottom');
+                downloadLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const content = getCurrentPromptContent();
+                        const blob = new Blob([content], { type: 'text/plain' });
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = "{{ page.title | slugify }}.txt";
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(url);
+                    });
+                });
+            }
+            setupDownloadLinks();
 
             // OpenAI ChatGPT button handler
             var chatgptBtn = document.getElementById('chatgptSendDefault');
             if (chatgptBtn) {
                 chatgptBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var defaultModel = "gpt-4"; // Default fallback
+                    var defaultModel = "gpt-4";
                     var promptTitle = encodeURIComponent("{{ page.title }}");
-                    var promptContent = encodeURIComponent(getPromptContent());
+                    var promptContent = encodeURIComponent(getCurrentPromptContent());
                     var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
                 });
@@ -529,10 +741,9 @@
                 claudeBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getPromptContent();
+                    var promptContent = getCurrentPromptContent();
                     var fullPrompt = promptTitle + "\n\n" + promptContent;
                     
-                    // Copy to clipboard and show instruction
                     navigator.clipboard.writeText(fullPrompt).then(function() {
                         alert('Prompt copied to clipboard! Please paste it into Claude.ai');
                         window.open('https://claude.ai/', '_blank', 'noopener');
@@ -546,10 +757,9 @@
                 geminiBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getPromptContent();
+                    var promptContent = getCurrentPromptContent();
                     var fullPrompt = promptTitle + "\n\n" + promptContent;
                     
-                    // Copy to clipboard and show instruction
                     navigator.clipboard.writeText(fullPrompt).then(function() {
                         alert('Prompt copied to clipboard! Please paste it into Gemini');
                         window.open('https://gemini.google.com/', '_blank', 'noopener');
@@ -562,11 +772,10 @@
             if (microsoftBtn) {
                 microsoftBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var promptTitle = encodeURIComponent("{{ page.title }}");
-                    var promptContent = encodeURIComponent(getPromptContent());
-                    var url = `https://copilot.microsoft.com/?prompt=${promptContent}`;
-                    window.open(url, '_blank', 'noopener');
-                    // Copy to clipboard and show instruction
+                    var promptTitle = "{{ page.title | escape }}";
+                    var promptContent = getCurrentPromptContent();
+                    var fullPrompt = promptTitle + "\n\n" + promptContent;
+                    
                     navigator.clipboard.writeText(fullPrompt).then(function() {
                         alert('Prompt copied to clipboard! Please paste it into Microsoft Copilot');
                         window.open('https://copilot.microsoft.com/', '_blank', 'noopener');
@@ -580,7 +789,7 @@
                 githubBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     var promptTitle = encodeURIComponent("{{ page.title }}");
-                    var promptContent = encodeURIComponent(getPromptContent());
+                    var promptContent = encodeURIComponent(getCurrentPromptContent());
                     var url = `https://github.com/copilot?prompt=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
                 });
