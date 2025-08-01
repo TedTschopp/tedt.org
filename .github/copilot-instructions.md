@@ -41,6 +41,13 @@
   * `camelCase` for JavaScript variables and functions
   * `PascalCase` for CSS class names
 
+## Architecture & Design Patterns
+
+* Use **modular design**—break down complex components into smaller, reusable parts.
+* Follow the **Single Responsibility Principle**—each module or component should have one clear purpose.
+* Document all architectural decisions and design patterns used in the project using the ADR format in the `/docs/adr/` directory.
+* If you need to do any planning please place it in the `/docs/planning/` directory.
+
 ## Jekyll Best Practices
 
 * Use:
@@ -54,13 +61,6 @@
 * Avoid duplication using **Jekyll includes and layouts**.
 * Leverage Jekyll plugins for **pagination**, **SEO**, and **sitemaps**.
 * Define metadata and configuration using **front matter** at the top of each file.
-
-## Architecture & Design Patterns
-
-* Use **modular design**—break down complex components into smaller, reusable parts.
-* Follow the **Single Responsibility Principle**—each module or component should have one clear purpose.
-* Document all architectural decisions and design patterns used in the project using the ADR format in the '/docs/adr/' directory.
-
 
 ## Testing & Environment
 
