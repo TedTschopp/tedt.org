@@ -11,7 +11,7 @@ date: 2025-01-31
 categories: [Prompts]
 tags: [content-creation, demo, variables, writing, customization]
 models-supported: [gpt-4, gpt-4-turbo, gpt-3.5-turbo, claude-3-opus, claude-3-sonnet, claude-3-haiku, gemini-pro, gemini-ultra, copilot, microsoft-copilot]
-image: "/img/prompt-variable-demo.png"
+image: "/img/prompts/prompt-variable-demo.png"
 image-alt: "A futuristic interface showing dynamic form elements and variables being processed"
 image-credits-title: "Dynamic Prompt Variables Interface"
 image-credits: "Ted Tschopp"
