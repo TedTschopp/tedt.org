@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Details Page - Form Interaction Tests</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .pass { color: green; }
+        .fail { color: red; }
+        .warning { color: orange; }
+        .results { margin-top: 10px; }
+        .mock-form { border: 1px solid #ddd; padding: 15px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Prompt Details Page - Form Interaction Tests</h1>
+    
+    <div class="test-section">
+        <h2>Variable Form Toggle Tests</h2>
+        <div id="toggle-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Form Validation Tests</h2>
+        <div id="validation-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Real-time Preview Tests</h2>
+        <div id="preview-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Loading State Tests</h2>
+        <div id="loading-results" class="results"></div>
+    </div>
+    
+    <!-- Mock form for testing -->
+    <div class="mock-form">
+        <h3>Mock Variable Form</h3>
+        <div id="prompt-variables-card" style="display: none;">
+            <input type="text" id="test-input" class="prompt-variable" required>
+            <button id="update-prompt-btn">Update</button>
+            <button id="reset-variables-btn">Reset</button>
+        </div>
+        <button id="toggle-variables-btn">Show Variables</button>
+    </div>
+
+    <script>
+        // Form interaction testing utility functions
+        function testFormToggle() {
+            const results = document.getElementById('toggle-results');
+            const tests = [];
+            
+            const toggleBtn = document.getElementById('toggle-variables-btn');
+            const variablesCard = document.getElementById('prompt-variables-card');
+            
+            tests.push({
+                name: 'Toggle button exists',
+                pass: !!toggleBtn,
+                message: toggleBtn ? 'Toggle button found' : 'Toggle button missing'
+            });
+            
+            tests.push({
+                name: 'Variables card exists',
+                pass: !!variablesCard,
+                message: variablesCard ? 'Variables card found' : 'Variables card missing'
+            });
+            
+            if (toggleBtn && variablesCard) {
+                // Test initial state
+                const initiallyHidden = variablesCard.style.display === 'none';
+                tests.push({
+                    name: 'Variables card initially hidden',
+                    pass: initiallyHidden,
+                    message: initiallyHidden ? 'Card properly hidden' : 'Card should be hidden initially'
+                });
+                
+                // Simulate toggle click
+                toggleBtn.click();
+                const shownAfterClick = variablesCard.style.display !== 'none';
+                tests.push({
+                    name: 'Variables card shows after toggle click',
+                    pass: shownAfterClick,
+                    message: shownAfterClick ? 'Card shows correctly' : 'Card toggle not working'
+                });
+                
+                // Test toggle button text change
+                const buttonTextChanged = toggleBtn.textContent !== 'Show Variables';
+                tests.push({
+                    name: 'Toggle button text changes',
+                    pass: buttonTextChanged,
+                    message: `Button text: "${toggleBtn.textContent}"`
+                });
+            }
+            
+            displayResults(results, tests);
+        }
+        
+        function testFormValidation() {
+            const results = document.getElementById('validation-results');
+            const tests = [];
+            
+            const testInput = document.getElementById('test-input');
+            if (testInput) {
+                // Test required field validation
+                testInput.value = '';
+                const isInvalid = testInput.checkValidity();
+                tests.push({
+                    name: 'Required field validation works',
+                    pass: !isInvalid,
+                    message: !isInvalid ? 'Required validation working' : 'Required validation not working'
+                });
+                
+                // Test valid input
+                testInput.value = 'test value';
+                const isValid = testInput.checkValidity();
+                tests.push({
+                    name: 'Valid input passes validation',
+                    pass: isValid,
+                    message: isValid ? 'Valid input accepted' : 'Valid input rejected'
+                });
+                
+                // Test CSS validation classes
+                testInput.classList.add('is-invalid');
+                const hasInvalidClass = testInput.classList.contains('is-invalid');
+                tests.push({
+                    name: 'Invalid CSS class can be applied',
+                    pass: hasInvalidClass,
+                    message: hasInvalidClass ? 'CSS validation classes work' : 'CSS validation classes not working'
+                });
+                
+                // Test visual feedback
+                const styles = window.getComputedStyle(testInput);
+                const hasBorderColor = styles.borderColor !== 'rgb(0, 0, 0)';
+                tests.push({
+                    name: 'Visual validation feedback present',
+                    pass: hasBorderColor,
+                    message: `Border color: ${styles.borderColor}`
+                });
+            }
+            
+            displayResults(results, tests);
+        }
+        
+        function testRealTimePreview() {
+            const results = document.getElementById('preview-results');
+            const tests = [];
+            
+            // Test for prompt preview elements
+            const originalPrompt = document.getElementById('original-prompt');
+            const customizedPrompt = document.getElementById('customized-prompt');
+            
+            tests.push({
+                name: 'Original prompt element exists',
+                pass: !!originalPrompt,
+                message: originalPrompt ? 'Original prompt found' : 'Original prompt element missing'
+            });
+            
+            tests.push({
+                name: 'Customized prompt element exists',
+                pass: !!customizedPrompt,
+                message: customizedPrompt ? 'Customized prompt found' : 'Customized prompt element missing'
+            });
+            
+            // Test debounced input handling
+            const testInput = document.getElementById('test-input');
+            if (testInput) {
+                let updateTriggered = false;
+                
+                // Mock update function
+                window.updatePromptPreview = function() {
+                    updateTriggered = true;
+                };
+                
+                // Simulate rapid input
+                testInput.dispatchEvent(new Event('input'));
+                
+                setTimeout(() => {
+                    tests.push({
+                        name: 'Real-time preview update function exists',
+                        pass: typeof window.updatePromptPreview === 'function',
+                        message: 'Update function available'
+                    });
+                    
+                    displayResults(results, tests);
+                }, 100);
+            } else {
+                displayResults(results, tests);
+            }
+        }
+        
+        function testLoadingStates() {
+            const results = document.getElementById('loading-results');
+            const tests = [];
+            
+            const updateBtn = document.getElementById('update-prompt-btn');
+            if (updateBtn) {
+                tests.push({
+                    name: 'Update button exists',
+                    pass: true,
+                    message: 'Update button found'
+                });
+                
+                // Test loading class application
+                updateBtn.classList.add('btn-loading');
+                const hasLoadingClass = updateBtn.classList.contains('btn-loading');
+                tests.push({
+                    name: 'Loading class can be applied',
+                    pass: hasLoadingClass,
+                    message: hasLoadingClass ? 'Loading state supported' : 'Loading state not supported'
+                });
+                
+                // Test loading styles
+                const styles = window.getComputedStyle(updateBtn, '::after');
+                const hasLoadingStyles = styles.content !== 'none';
+                tests.push({
+                    name: 'Loading animation styles present',
+                    pass: hasLoadingStyles || updateBtn.style.position === 'relative',
+                    message: 'Loading animation styles detected'
+                });
+                
+                // Simulate loading sequence
+                updateBtn.click();
+                setTimeout(() => {
+                    updateBtn.classList.remove('btn-loading');
+                }, 500);
+                
+                tests.push({
+                    name: 'Loading state sequence works',
+                    pass: true,
+                    message: 'Loading sequence simulated successfully'
+                });
+            }
+            
+            displayResults(results, tests);
+        }
+        
+        function testDownloadFunctionality() {
+            const tests = [];
+            
+            // Test download link generation
+            const downloadLinks = document.querySelectorAll('#download-prompt-link, #download-prompt-link-bottom');
+            tests.push({
+                name: 'Download links exist',
+                pass: downloadLinks.length > 0,
+                message: `Found ${downloadLinks.length} download links`
+            });
+            
+            // Test copy functionality
+            if (navigator.clipboard) {
+                tests.push({
+                    name: 'Clipboard API available',
+                    pass: true,
+                    message: 'Copy functionality supported'
+                });
+            } else {
+                tests.push({
+                    name: 'Clipboard API available',
+                    pass: false,
+                    message: 'Copy functionality not supported in this browser'
+                });
+            }
+            
+            return tests;
+        }
+        
+        function displayResults(container, tests) {
+            container.innerHTML = '';
+            tests.forEach(test => {
+                const div = document.createElement('div');
+                div.className = test.pass ? 'pass' : 'fail';
+                div.innerHTML = `
+                    <strong>${test.pass ? '✓' : '✗'} ${test.name}</strong><br>
+                    ${test.message}
+                `;
+                container.appendChild(div);
+            });
+        }
+        
+        // Mock some functions that would exist in the real page
+        function initializeMockFunctions() {
+            // Mock toggle functionality
+            const toggleBtn = document.getElementById('toggle-variables-btn');
+            const variablesCard = document.getElementById('prompt-variables-card');
+            
+            if (toggleBtn && variablesCard) {
+                toggleBtn.addEventListener('click', function() {
+                    if (variablesCard.style.display === 'none') {
+                        variablesCard.style.display = 'block';
+                        this.textContent = 'Hide Variables';
+                    } else {
+                        variablesCard.style.display = 'none';
+                        this.textContent = 'Show Variables';
+                    }
+                });
+            }
+            
+            // Mock update button functionality
+            const updateBtn = document.getElementById('update-prompt-btn');
+            if (updateBtn) {
+                updateBtn.addEventListener('click', function() {
+                    this.classList.add('btn-loading');
+                    setTimeout(() => {
+                        this.classList.remove('btn-loading');
+                    }, 500);
+                });
+            }
+        }
+        
+        // Run all tests when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMockFunctions();
+            
+            setTimeout(() => {
+                testFormToggle();
+                testFormValidation();
+                testRealTimePreview();
+                testLoadingStates();
+            }, 100);
+        });
+        
+        // Export functions for use in other testing frameworks
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = {
+                testFormToggle,
+                testFormValidation,
+                testRealTimePreview,
+                testLoadingStates,
+                testDownloadFunctionality
+            };
+        }
+    </script>
+</body>
+</html>

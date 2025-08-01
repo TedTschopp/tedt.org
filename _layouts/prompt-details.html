@@ -126,7 +126,7 @@
 
     <main class="container my-4">
         <!-- Prompt Details Section -->
-        <div class="card mb-4">
+        <div class="card mb-4 prompt-details-card">
 
             <div class="card-header d-flex justify-content-between align-items-center">
                     <div class="card h-100 no-padding">
@@ -240,8 +240,13 @@
                         <div class="d-flex align-items-center gap-3">
                             <span>Prompt</span>
                             {% if page.variables and page.variables.size > 0 %}
-                            <button class="btn btn-outline-primary btn-sm" type="button" id="toggle-variables-btn">
-                                <i class="fas fa-sliders-h"></i> Customize
+                            <button class="btn btn-outline-primary btn-sm" 
+                                    type="button" 
+                                    id="toggle-variables-btn"
+                                    aria-expanded="false"
+                                    aria-controls="prompt-variables-card"
+                                    aria-label="Show customization options for prompt variables">
+                                <i class="fas fa-sliders-h" aria-hidden="true"></i> Customize
                             </button>
                             {% endif %}
                         </div>
@@ -263,48 +268,69 @@
                                 data-bs-original-title="Copy prompt to clipboard"
                                 data-bs-toggle="tooltip" 
                                 data-bs-placement="top"
-                                aria-label="Copy prompt to clipboard">
-                                <i class="fas fa-copy"></i> Copy Prompt
+                                aria-label="Copy current prompt to clipboard"
+                                title="Copy prompt to clipboard">
+                                <i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt
                             </button>
 
-                            <div class="ai-provider-buttons">
+                            <div class="ai-provider-buttons" role="group" aria-label="Send prompt to AI providers">
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
-                            <button class="btn btn-send-chatgpt btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="chatgptSendDefault" aria-label="Send prompt to ChatGPT">
-                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo">
+                            <button class="btn btn-send-chatgpt btn-sm mt-0 me-2 d-flex align-items-center" 
+                                    type="button" 
+                                    id="chatgptSendDefault" 
+                                    aria-label="Send prompt to ChatGPT"
+                                    title="Send prompt to OpenAI ChatGPT">
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="20" height="20">
                             </button>
                             {% endif %}
 
                             <!-- Anthropic Claude -->
                             {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
                             {% if anthropic_models.size > 0 %}
-                            <button class="btn btn-send-claude btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="claudeSendDefault" aria-label="Send prompt to Claude">
-                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo">
+                            <button class="btn btn-send-claude btn-sm mt-0 me-2 d-flex align-items-center" 
+                                    type="button" 
+                                    id="claudeSendDefault" 
+                                    aria-label="Send prompt to Claude"
+                                    title="Send prompt to Anthropic Claude">
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" width="20" height="20">
                             </button>
                             {% endif %}
 
                             <!-- Google AI -->
                             {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
                             {% if google_models.size > 0 %}
-                            <button class="btn btn-send-gemini btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="geminiSendDefault" aria-label="Send prompt to Gemini">
-                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo">
+                            <button class="btn btn-send-gemini btn-sm mt-0 me-2 d-flex align-items-center" 
+                                    type="button" 
+                                    id="geminiSendDefault" 
+                                    aria-label="Send prompt to Gemini"
+                                    title="Send prompt to Google Gemini">
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" width="20" height="20">
                             </button>
                             {% endif %}
 
                             <!-- Microsoft Copilot -->
                             {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
                             {% if microsoft_models.size > 0 %}
-                            <button class="btn btn-send-microsoft btn-sm mt-0 me-2 d-flex align-items-center" type="button" id="microsoftSendDefault" aria-label="Send prompt to Microsoft Copilot">
-                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo">
+                            <button class="btn btn-send-microsoft btn-sm mt-0 me-2 d-flex align-items-center" 
+                                    type="button" 
+                                    id="microsoftSendDefault" 
+                                    aria-label="Send prompt to Microsoft Copilot"
+                                    title="Send prompt to Microsoft Copilot">
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="20" height="20">
                             </button>
                             {% endif %}
 
                             <!-- GitHub Copilot -->
                             {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
                             {% if github_models.size > 0 %}
-                            <button class="btn btn-send-github btn-sm mt-0 me-0 d-flex align-items-center" type="button" id="githubSendDefault" aria-label="Send prompt to GitHub Copilot">
-                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo">
+                            <button class="btn btn-send-github btn-sm mt-0 me-0 d-flex align-items-center" 
+                                    type="button" 
+                                    id="githubSendDefault" 
+                                    aria-label="Send prompt to GitHub Copilot"
+                                    title="Send prompt to GitHub Copilot">
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="20" height="20">
                             </button>
                             {% endif %}
                             </div> <!-- Close ai-provider-buttons -->
@@ -314,12 +340,25 @@
                     <!-- Prompt Variables Form -->
                     {% include prompt-variables-form.html %}
                     
-                    <div class="card-body p-1" markdown="0">
+                    <div class="card-body p-1 prompt-content-section" markdown="0">
                         <!-- Original prompt (hidden when variables are customized) -->
-                        <pre id="original-prompt" class="bg-dark text-white rounded" style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                        <pre id="original-prompt" 
+                             class="bg-dark text-white rounded" 
+                             style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"
+                             role="region"
+                             aria-label="Original prompt content"
+                             tabindex="0"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
                         
                         <!-- Customized prompt (shown when variables are filled) -->
-                        <pre id="customized-prompt" class="bg-dark text-white rounded" style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word; display: none;"><code class="language-markdown" id="customized-prompt-content">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                        <pre id="customized-prompt" 
+                             class="bg-dark text-white rounded" 
+                             style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word; display: none;"
+                             role="region"
+                             aria-label="Customized prompt content with your variables"
+                             tabindex="0"><code class="language-markdown" id="customized-prompt-content">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                        
+                        <!-- Status region for screen readers -->
+                        <div class="visually-hidden" id="form-status" role="status" aria-live="polite"></div>
                     </div>
                 </div>
 
@@ -604,23 +643,64 @@
             }
         }
 
-        // Function to validate form
+        // Enhanced form validation with accessibility
         function validateForm() {
             let isValid = true;
+            const errors = [];
+            
             variableDefinitions.forEach(variable => {
                 if (variable.required) {
                     const value = collectVariableValues()[variable.name];
                     const element = document.querySelector(`[data-variable="${variable.name}"]`);
+                    const errorElement = document.getElementById(`error-${variable.name}`);
+                    const successElement = document.getElementById(`success-${variable.name}`);
                     
                     if (!value || value.trim() === '') {
                         element?.classList.add('is-invalid');
+                        element?.classList.remove('is-valid');
+                        
+                        if (errorElement) {
+                            errorElement.textContent = `${variable.label} is required`;
+                            errorElement.style.display = 'block';
+                        }
+                        if (successElement) {
+                            successElement.style.display = 'none';
+                        }
+                        
+                        // Add to ARIA description
+                        element?.setAttribute('aria-describedby', `error-${variable.name} help-${variable.name}`);
+                        element?.setAttribute('aria-invalid', 'true');
+                        
+                        errors.push(`${variable.label} is required`);
                         isValid = false;
                     } else {
                         element?.classList.remove('is-invalid');
                         element?.classList.add('is-valid');
+                        
+                        if (errorElement) {
+                            errorElement.style.display = 'none';
+                        }
+                        if (successElement) {
+                            successElement.style.display = 'block';
+                        }
+                        
+                        // Update ARIA description
+                        element?.setAttribute('aria-describedby', `help-${variable.name}`);
+                        element?.setAttribute('aria-invalid', 'false');
                     }
                 }
             });
+            
+            // Announce validation results to screen readers
+            const statusElement = document.getElementById('form-status');
+            if (statusElement) {
+                if (isValid) {
+                    statusElement.textContent = 'All form fields are valid';
+                } else {
+                    statusElement.textContent = `Form has ${errors.length} errors: ${errors.join(', ')}`;
+                }
+            }
+            
             return isValid;
         }
 
@@ -650,36 +730,86 @@
 
         // Initialize functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Toggle variables form
+            // Enhanced toggle variables form with accessibility
             const toggleBtn = document.getElementById('toggle-variables-btn');
             const variablesCard = document.getElementById('prompt-variables-card');
             
             if (toggleBtn && variablesCard) {
                 toggleBtn.addEventListener('click', function() {
-                    if (variablesCard.style.display === 'none') {
+                    const isHidden = variablesCard.style.display === 'none';
+                    
+                    if (isHidden) {
                         variablesCard.style.display = 'block';
                         variablesCard.classList.add('show');
                         toggleBtn.classList.add('active');
-                        toggleBtn.innerHTML = '<i class="fas fa-times"></i> Hide Variables';
+                        toggleBtn.innerHTML = '<i class="fas fa-times" aria-hidden="true"></i> Hide Variables';
+                        toggleBtn.setAttribute('aria-expanded', 'true');
+                        toggleBtn.setAttribute('aria-label', 'Hide customization options for prompt variables');
+                        
+                        // Focus management for accessibility
+                        setTimeout(() => {
+                            const firstInput = variablesCard.querySelector('.prompt-variable');
+                            if (firstInput) {
+                                firstInput.focus();
+                            }
+                        }, 100);
                     } else {
                         variablesCard.style.display = 'none';
                         variablesCard.classList.remove('show');
                         toggleBtn.classList.remove('active');
-                        toggleBtn.innerHTML = '<i class="fas fa-sliders-h"></i> Customize Prompt Variables';
+                        toggleBtn.innerHTML = '<i class="fas fa-sliders-h" aria-hidden="true"></i> Customize';
+                        toggleBtn.setAttribute('aria-expanded', 'false');
+                        toggleBtn.setAttribute('aria-label', 'Show customization options for prompt variables');
+                    }
+                });
+                
+                // Escape key handler for better UX
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && variablesCard.style.display !== 'none') {
+                        toggleBtn.click();
+                        toggleBtn.focus();
                     }
                 });
             }
 
-            // Update prompt button
+            // Enhanced update prompt button with loading states
             const updateBtn = document.getElementById('update-prompt-btn');
             if (updateBtn) {
                 updateBtn.addEventListener('click', function() {
                     if (validateForm()) {
-                        updatePromptPreview();
+                        // Show loading state
                         this.classList.add('btn-loading');
+                        this.setAttribute('aria-label', 'Updating prompt preview...');
+                        this.disabled = true;
+                        
+                        // Update the preview
+                        updatePromptPreview();
+                        
+                        // Announce success to screen readers
+                        const statusElement = document.getElementById('form-status');
+                        if (statusElement) {
+                            statusElement.textContent = 'Prompt preview updated successfully';
+                        }
+                        
+                        // Remove loading state
                         setTimeout(() => {
                             this.classList.remove('btn-loading');
+                            this.setAttribute('aria-label', 'Update prompt with current variable values');
+                            this.disabled = false;
+                            
+                            // Clear status after delay
+                            setTimeout(() => {
+                                if (statusElement) {
+                                    statusElement.textContent = '';
+                                }
+                            }, 3000);
                         }, 500);
+                    } else {
+                        // Focus on first invalid field for accessibility
+                        const firstInvalid = document.querySelector('.is-invalid');
+                        if (firstInvalid) {
+                            firstInvalid.focus();
+                        }
                     }
                 });
             }
@@ -690,17 +820,60 @@
                 resetBtn.addEventListener('click', resetForm);
             }
 
-            // Real-time updates for form inputs
+            // Enhanced real-time updates with accessibility feedback
             document.querySelectorAll('.prompt-variable').forEach(input => {
                 ['input', 'change', 'keyup'].forEach(eventType => {
                     input.addEventListener(eventType, function() {
                         // Clear validation classes on input
                         this.classList.remove('is-invalid', 'is-valid');
+                        this.setAttribute('aria-invalid', 'false');
+                        
+                        // Clear any existing error messages
+                        const errorElement = document.getElementById(`error-${this.dataset.variable}`);
+                        if (errorElement) {
+                            errorElement.style.display = 'none';
+                        }
                         
                         // Update preview in real-time (debounced)
                         clearTimeout(this.updateTimeout);
-                        this.updateTimeout = setTimeout(updatePromptPreview, 300);
+                        this.updateTimeout = setTimeout(() => {
+                            updatePromptPreview();
+                            
+                            // Announce update to screen readers (throttled)
+                            if (!this.lastAnnouncement || Date.now() - this.lastAnnouncement > 2000) {
+                                const statusElement = document.getElementById('form-status');
+                                if (statusElement) {
+                                    statusElement.textContent = 'Prompt preview updated';
+                                    setTimeout(() => {
+                                        if (statusElement.textContent === 'Prompt preview updated') {
+                                            statusElement.textContent = '';
+                                        }
+                                    }, 1500);
+                                }
+                                this.lastAnnouncement = Date.now();
+                            }
+                        }, 300);
                     });
+                });
+                
+                // Enhanced focus handling for better UX
+                input.addEventListener('focus', function() {
+                    this.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.classList.remove('focused');
+                    
+                    // Validate individual field on blur if it has content
+                    if (this.value.trim() && this.hasAttribute('required')) {
+                        this.classList.add('is-valid');
+                        this.setAttribute('aria-invalid', 'false');
+                        
+                        const successElement = document.getElementById(`success-${this.dataset.variable}`);
+                        if (successElement) {
+                            successElement.style.display = 'block';
+                        }
+                    }
                 });
             });
 
@@ -728,7 +901,60 @@
                     });
                 });
             }
-            setupDownloadLinks();
+            // Setup copy button functionality with improved feedback
+            const copyBtn = document.querySelector('.btn-copy-prompt');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', function() {
+                    const content = getCurrentPromptContent();
+                    
+                    // Update loading state and accessibility
+                    this.classList.add('btn-loading');
+                    this.setAttribute('aria-label', 'Copying prompt...');
+                    
+                    navigator.clipboard.writeText(content).then(() => {
+                        // Success feedback
+                        this.classList.remove('btn-loading');
+                        this.classList.add('copied');
+                        this.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied!';
+                        this.setAttribute('aria-label', 'Prompt copied successfully');
+                        
+                        // Announce to screen readers
+                        const statusElement = document.getElementById('form-status');
+                        if (statusElement) {
+                            statusElement.textContent = 'Prompt copied to clipboard successfully';
+                        }
+                        
+                        // Reset after 2 seconds
+                        setTimeout(() => {
+                            this.classList.remove('copied');
+                            this.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt';
+                            this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                            if (statusElement) {
+                                statusElement.textContent = '';
+                            }
+                        }, 2000);
+                    }).catch(err => {
+                        // Error feedback
+                        this.classList.remove('btn-loading');
+                        this.innerHTML = '<i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Error';
+                        this.setAttribute('aria-label', 'Failed to copy prompt');
+                        
+                        const statusElement = document.getElementById('form-status');
+                        if (statusElement) {
+                            statusElement.textContent = 'Failed to copy prompt to clipboard';
+                        }
+                        
+                        // Reset after 2 seconds
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt';
+                            this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                            if (statusElement) {
+                                statusElement.textContent = '';
+                            }
+                        }, 2000);
+                    });
+                });
+            }
 
             // OpenAI ChatGPT button handler
             var chatgptBtn = document.getElementById('chatgptSendDefault');
