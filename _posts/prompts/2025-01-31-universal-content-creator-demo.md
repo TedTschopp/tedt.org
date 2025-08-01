@@ -127,15 +127,11 @@ prompt_content: |
   - Format: {{format_type}}
   - Priority: {{urgency_level}} priority
 
-  {% raw %}{% if content_description %}{% endraw %}
   **Detailed Description:**
   {{content_description}}
-  {% raw %}{% endif %}{% endraw %}
 
-  {% raw %}{% if content_features %}{% endraw %}
   **Include These Features:**
   {{content_features}}
-  {% raw %}{% endif %}{% endraw %}
 
   **Instructions:**
   1. Research the topic thoroughly and ensure accuracy

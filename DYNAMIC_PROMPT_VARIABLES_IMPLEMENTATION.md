@@ -90,6 +90,24 @@ variables:
 
 Variables in prompt content are replaced using the format `{{variable_name}}`. The system handles both `{{variable}}` and `{{ variable }}` formats for flexibility.
 
+**Important Notes:**
+- Variables are replaced by JavaScript on the client side after page load
+- Empty variables will show as `{{variable_name}}` until filled by the user
+- All variables in the prompt content will be replaced, regardless of whether they have values
+- For optional sections, it's better to use clear placeholder text rather than conditional logic
+
+**Example:**
+```
+Write about {{topic}} for {{audience}} in a {{style}} tone.
+Use approximately {{word_count}} words.
+```
+
+When the user fills in the form, this becomes:
+```
+Write about artificial intelligence for students in a conversational tone.
+Use approximately 800 words.
+```
+
 ## Demo Prompts Created
 
 ### 1. Universal Content Creator Demo
