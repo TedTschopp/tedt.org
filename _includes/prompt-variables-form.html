@@ -29,7 +29,7 @@ Enhanced with accessibility and mobile responsiveness
         <form id="prompt-variables-form" novalidate aria-labelledby="variables-card-title">
             <div class="row prompt-variables-grid">
                 {% for variable in page.variables %}
-                <div class="col-md-6 mb-3">
+                <div class="col-12 col-md-6 mb-3">
                     <label for="var-{{ variable.name }}" class="form-label">
                         {{ variable.label }}
                         {% if variable.required %}
