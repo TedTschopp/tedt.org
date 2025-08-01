@@ -240,7 +240,7 @@
                         <div class="d-flex align-items-center gap-3">
                             <span>Prompt</span>
                             {% if page.variables and page.variables.size > 0 %}
-                            <button class="btn btn-outline-primary btn-sm" 
+                            <button class="btn btn-primary btn-sm" 
                                     type="button" 
                                     id="toggle-variables-btn"
                                     aria-expanded="false"
@@ -259,11 +259,11 @@
                             -->
 
                             <a href="#" id="download-prompt-link"
-                                class="btn btn-primary btn-sm mt-0 me-0 ms-3" download="{{ page.title | slugify }}.txt">
+                                class="btn btn-primary btn-sm" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i> Download Prompt
                             </a>
 
-                            <button class="btn btn-copy-prompt btn-sm mt-0 me-0" 
+                            <button class="btn btn-primary btn-copy-prompt btn-sm" 
                                 type="button" 
                                 data-bs-original-title="Copy prompt to clipboard"
                                 data-bs-toggle="tooltip" 
