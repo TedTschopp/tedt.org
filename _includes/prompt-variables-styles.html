@@ -13,7 +13,23 @@
 
 .prompt-variable {
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    min-height: 44px; /* Minimum touch target size */
+    min-height: 38px; /* Touch target compliance but not excessive */
+    font-size: 0.875rem; /* Standard form size */
+    padding: 0.375rem 0.75rem; /* Bootstrap standard padding */
+}
+
+/* Specific sizing for textareas */
+.prompt-variable[type="textarea"],
+textarea.prompt-variable {
+    min-height: 80px; /* Reasonable height for textareas */
+    resize: vertical; /* Allow vertical resize only */
+    line-height: 1.5;
+}
+
+/* Specific sizing for select elements */
+select.prompt-variable {
+    min-height: 38px;
+    padding-right: 2rem; /* Space for dropdown arrow */
 }
 
 .prompt-variable:focus {
@@ -37,10 +53,10 @@
 #toggle-variables-btn {
     transition: all 0.3s ease;
     border-radius: 20px;
-    padding: 0.5rem 1rem;
+    padding: 0.375rem 0.75rem; /* More reasonable padding */
     font-size: 0.875rem;
-    min-height: 44px; /* Touch target compliance */
-    min-width: 44px;
+    min-height: 38px; /* Touch target compliance */
+    min-width: auto; /* Remove excessive width requirement */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -95,27 +111,29 @@
     
     #toggle-variables-btn {
         font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-        width: 100%;
-        max-width: 200px;
+        padding: 0.25rem 0.5rem; /* Smaller on mobile but still usable */
+        width: auto; /* Don't force full width */
+        max-width: none;
     }
     
-    /* Improve form layout on mobile */
+    /* Better form layout on mobile */
     .prompt-variable {
         font-size: 16px; /* Prevent zoom on iOS */
-        padding: 0.75rem;
-    }
-    
-    /* Better spacing for form elements */
-    .form-label {
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        padding: 0.5rem 0.75rem; /* Reasonable mobile padding */
+        min-height: 44px; /* Touch target on mobile */
     }
     
     /* Enhanced button group layout */
     .card-header .d-flex.gap-2 {
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+    
+    /* Better spacing for form elements */
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem; /* Slightly smaller on mobile */
     }
 }
 
@@ -169,9 +187,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
-    min-width: 44px;
-    min-height: 44px;
+    padding: 0.375rem 0.5rem; /* More reasonable padding */
+    min-width: 38px; /* Reasonable touch target */
+    min-height: 38px;
     border-radius: 0.375rem;
     transition: all 0.2s ease;
 }
@@ -201,7 +219,9 @@
     .ai-provider-buttons .btn {
         flex: 1;
         max-width: calc(50% - 0.25rem);
-        min-width: 60px;
+        min-width: 44px; /* Keep mobile touch target */
+        min-height: 44px;
+        padding: 0.5rem; /* Larger padding on small mobile */
     }
 }
 
@@ -265,10 +285,12 @@
 .btn-copy-prompt, 
 #download-prompt-link,
 #download-prompt-link-bottom {
-    min-height: 44px;
-    min-width: 44px;
+    min-height: 38px; /* Reasonable size */
+    min-width: auto; /* Don't force width */
     transition: all 0.2s ease;
     position: relative;
+    padding: 0.375rem 0.75rem; /* Standard button padding */
+    font-size: 0.875rem;
 }
 
 .btn-copy-prompt:focus,
@@ -301,6 +323,18 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1rem;
+    }
+    
+    /* Desktop-specific form sizing */
+    .prompt-variable {
+        min-height: 38px;
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .form-label {
+        font-size: 0.875rem;
+        font-weight: 600;
     }
 }
 
