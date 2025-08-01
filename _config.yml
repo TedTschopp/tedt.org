@@ -1,5 +1,6 @@
 include:
   - ".well-known"
+  - "_pages"
 
 # markdown: kramdown
 plugins:
@@ -11,7 +12,8 @@ siteurl: https://tedt.org
 #description of the site for meta tags
 description: "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution."
 
-keywords: Technology
+keywords: 
+ - Technology
  - Theology
  - Creativity
  - Religion
@@ -70,7 +72,6 @@ facebook_app_id: 1939132006351436
 # Build Settings
 sass:
   sass_dir: _sass
-include: ['_pages']
 
 wlinks:
   symbol: #
@@ -89,7 +90,7 @@ collections:
    output: true
    permalink: /:collection/:title
 
-# Varaibles that will be used elsewhere
+# Variables that will be used elsewhere
 # Use {% assign author = site.authors[page.author] %} to get author which author
 authors:
   tschopp:
