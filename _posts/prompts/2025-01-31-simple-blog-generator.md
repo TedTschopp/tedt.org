@@ -4,9 +4,9 @@ title: "Simple Blog Post Generator"
 subtitle: "Basic example with essential variables"
 description: "A straightforward blog post generator demonstrating basic variable functionality."
 author:
-  name: "Ted Tschopp"
-  url: "https://tedt.org/"
-  avatar: "/img/ted-tschopp-2024.jpg"
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 date: 2025-01-31
 categories: [Prompts]
 tags: [blogging, writing, simple, basic]

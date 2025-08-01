@@ -4,9 +4,9 @@ title: "Universal Content Creator - Variable Types Demo"
 subtitle: "A comprehensive demonstration of all variable input types"
 description: "This prompt demonstrates all supported variable types including text, textarea, number, select, radio, and checkbox inputs for dynamic content creation."
 author:
-  name: "Ted Tschopp"
-  url: "https://tedt.org/"
-  avatar: "/img/ted-tschopp-2024.jpg"
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 date: 2025-01-31
 categories: [Prompts]
 tags: [content-creation, demo, variables, writing, customization]
