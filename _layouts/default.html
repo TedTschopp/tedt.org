@@ -49,7 +49,7 @@
 
     <header>
       <section class="showcase position-relative">
-        <div class="container-fluid">
+        <div class="container-fluid position-relative">
           <img 
             src="/img/categories/home.webp" 
             id="hero-img" 
@@ -57,8 +57,8 @@
             alt="Image of Ted Tschopp sitting by a lake">
           <video 
             id="hero-video"
-            class="img-fluid w-100 h-100"
-            style="display: none; position: absolute; top: 0; left: 0; object-fit: cover;"
+            class="img-fluid w-100 h-100 position-absolute top-0 start-0"
+            style="display: none; object-fit: cover;"
             muted
             loop
             playsinline
@@ -569,10 +569,22 @@
         const heroImg = document.getElementById('hero-img');
         const heroVideo = document.getElementById('hero-video');
         
+        if (!heroImg || !heroVideo) return;
+        
         // Wait for page to fully load including images and other assets
         window.addEventListener('load', function() {
           // Add a small delay to ensure everything is settled
           setTimeout(function() {
+            // Set up the video to match the image exactly
+            heroVideo.style.display = 'block';
+            heroVideo.style.opacity = '0';
+            heroVideo.style.position = 'absolute';
+            heroVideo.style.top = '0';
+            heroVideo.style.left = '0';
+            heroVideo.style.width = '100%';
+            heroVideo.style.height = '100%';
+            heroVideo.style.objectFit = 'cover';
+            
             // Preload the video
             heroVideo.load();
             
@@ -580,36 +592,35 @@
             heroVideo.addEventListener('canplay', function() {
               // Start playing the video
               heroVideo.play().then(function() {
-                // Smoothly fade out the image and fade in the video
-                heroImg.style.transition = 'opacity 0.5s ease-in-out';
-                heroVideo.style.transition = 'opacity 0.5s ease-in-out';
-                heroVideo.style.display = 'block';
-                heroVideo.style.opacity = '0';
+                // Set up smooth transition
+                heroImg.style.transition = 'opacity 0.8s ease-in-out';
+                heroVideo.style.transition = 'opacity 0.8s ease-in-out';
                 
-                // Trigger the transition
-                requestAnimationFrame(function() {
+                // Trigger the transition after a small delay
+                setTimeout(function() {
                   heroImg.style.opacity = '0';
                   heroVideo.style.opacity = '1';
-                });
+                }, 100);
                 
-                // Remove the image from the layout after transition
-                setTimeout(function() {
-                  heroImg.style.display = 'none';
-                }, 500);
+                // Optional: Remove the image from DOM after transition completes
+                // but keep it for fallback purposes
+                
               }).catch(function(error) {
                 console.log('Video autoplay prevented:', error);
-                // If autoplay fails, keep the image
+                // If autoplay fails, hide the video and keep the image
+                heroVideo.style.display = 'none';
               });
             }, { once: true });
             
-            // Fallback: if video doesn't load within 3 seconds, keep the image
+            // Fallback: if video doesn't load within 5 seconds, hide it
             setTimeout(function() {
-              if (heroVideo.style.display === 'none') {
-                console.log('Video load timeout, keeping image');
+              if (heroVideo.style.opacity === '0' || heroVideo.style.opacity === '') {
+                console.log('Video load timeout, keeping image only');
+                heroVideo.style.display = 'none';
               }
-            }, 3000);
+            }, 5000);
             
-          }, 1000); // 1 second delay after page load
+          }, 1500); // 1.5 second delay after page load
         });
       });
     </script>
