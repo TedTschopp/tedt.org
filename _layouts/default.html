@@ -55,6 +55,16 @@
             id="hero-img" 
             class="img-fluid w-100 h-100"
             alt="Image of Ted Tschopp sitting by a lake">
+          <video 
+            id="hero-video"
+            class="img-fluid w-100 h-100"
+            style="display: none; position: absolute; top: 0; left: 0; object-fit: cover;"
+            muted
+            loop
+            playsinline
+            preload="metadata">
+            <source src="/img/categories/home.mp4" type="video/mp4">
+          </video>
         </div>
       </section>
     </header>
@@ -552,6 +562,57 @@
 
     <!-- Bootstrap core JavaScript -->
     {% include assets/js-bottom-of-body.html %}
+
+    <script>
+      // Hero image to video transition
+      document.addEventListener('DOMContentLoaded', function() {
+        const heroImg = document.getElementById('hero-img');
+        const heroVideo = document.getElementById('hero-video');
+        
+        // Wait for page to fully load including images and other assets
+        window.addEventListener('load', function() {
+          // Add a small delay to ensure everything is settled
+          setTimeout(function() {
+            // Preload the video
+            heroVideo.load();
+            
+            // When video can play, start the transition
+            heroVideo.addEventListener('canplay', function() {
+              // Start playing the video
+              heroVideo.play().then(function() {
+                // Smoothly fade out the image and fade in the video
+                heroImg.style.transition = 'opacity 0.5s ease-in-out';
+                heroVideo.style.transition = 'opacity 0.5s ease-in-out';
+                heroVideo.style.display = 'block';
+                heroVideo.style.opacity = '0';
+                
+                // Trigger the transition
+                requestAnimationFrame(function() {
+                  heroImg.style.opacity = '0';
+                  heroVideo.style.opacity = '1';
+                });
+                
+                // Remove the image from the layout after transition
+                setTimeout(function() {
+                  heroImg.style.display = 'none';
+                }, 500);
+              }).catch(function(error) {
+                console.log('Video autoplay prevented:', error);
+                // If autoplay fails, keep the image
+              });
+            }, { once: true });
+            
+            // Fallback: if video doesn't load within 3 seconds, keep the image
+            setTimeout(function() {
+              if (heroVideo.style.display === 'none') {
+                console.log('Video load timeout, keeping image');
+              }
+            }, 3000);
+            
+          }, 1000); // 1 second delay after page load
+        });
+      });
+    </script>
 
   </body>
 </html>
