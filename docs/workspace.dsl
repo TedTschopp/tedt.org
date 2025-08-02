@@ -67,6 +67,13 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
                 feedGeneration = component "Feed Generation" "RSS/Atom/JSON feed creation" "Jekyll Plugins"
                 socialSharing = component "Social Sharing" "Content sharing to social platforms" "Web Share API"
             }
+            
+            # Development Environment
+            devEnvironment = container "Development Environment" "Local development and testing setup" "Jekyll, Ruby, Build Tools" {
+                localJekyll = component "Local Jekyll Server" "Development server for testing" "Jekyll, Ruby"
+                buildTools = component "Build Tools" "Asset compilation and optimization" "Jekyll, SASS, JavaScript"
+                testingSuite = component "Testing Suite" "HTML/CSS/JS validation and testing" "Validation Tools"
+            }
         }
         
         # External Services
@@ -76,18 +83,11 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         mastodonInstance = softwareSystem "Mastodon Instance" "Decentralized social media platform for comments" "External"
         webmentionService = softwareSystem "Webmention.io" "Webmention processing and storage service" "External"
         
-        # Development Environment
-        devEnvironment = softwareSystem "Development Environment" "Local development and testing setup" {
-            localJekyll = container "Local Jekyll Server" "Development server for testing" "Jekyll, Ruby"
-            buildTools = container "Build Tools" "Asset compilation and optimization" "Jekyll, SASS, JavaScript"
-            testingSuite = container "Testing Suite" "HTML/CSS/JS validation and testing" "Validation Tools"
-        }
-        
         # Relationships - User Interactions
         user -> website.frontend "Visits website, reads content, uses features"
         reader -> website.frontend.blogSystem "Reads blog posts and articles"
         promptUser -> website.frontend.promptLibrary "Uses AI prompt templates and variables"
-        developer -> devEnvironment "Develops and tests changes"
+        developer -> website.devEnvironment "Develops and tests changes"
         developer -> github "Commits code changes"
         
         # Frontend Component Relationships
@@ -135,9 +135,9 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         developer -> github "Version control and collaboration"
         
         # Development Workflow
-        devEnvironment.localJekyll -> website.contentManagement "Local development testing"
-        devEnvironment.buildTools -> website.contentManagement "Asset processing"
-        devEnvironment.testingSuite -> website.frontend "Quality assurance"
+        website.devEnvironment.localJekyll -> website.contentManagement "Local development testing"
+        website.devEnvironment.buildTools -> website.contentManagement "Asset processing"
+        website.devEnvironment.testingSuite -> website.frontend "Quality assurance"
         
         # SEO and Performance
         website.frontend -> seoBot "Crawlable content and metadata"
@@ -162,11 +162,7 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         deploymentEnvironment "development" {
             deploymentNode "Local Machine" {
                 deploymentNode "Jekyll Server" {
-                    containerInstance devEnvironment.localJekyll
-                }
-                deploymentNode "Build Environment" {
-                    containerInstance devEnvironment.buildTools
-                    containerInstance devEnvironment.testingSuite
+                    containerInstance website.devEnvironment
                 }
             }
         }
@@ -199,6 +195,11 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         }
         
         component website.dataStorage "DataStorageComponents" {
+            include *
+            autoLayout
+        }
+        
+        component website.devEnvironment "DevelopmentComponents" {
             include *
             autoLayout
         }
