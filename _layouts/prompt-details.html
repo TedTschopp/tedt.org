@@ -607,16 +607,32 @@
         function collectVariableValues() {
             const values = {};
             variableDefinitions.forEach(variable => {
+                let value = '';
+                
                 if (variable.type === 'checkbox') {
                     const checkboxes = document.querySelectorAll(`input[data-variable="${variable.name}"]:checked`);
-                    values[variable.name] = Array.from(checkboxes).map(cb => cb.value).join(', ');
+                    if (checkboxes.length > 0) {
+                        value = Array.from(checkboxes).map(cb => cb.value).join(', ');
+                    } else if (variable.default && Array.isArray(variable.default)) {
+                        value = variable.default.join(', ');
+                    }
                 } else if (variable.type === 'radio') {
                     const radio = document.querySelector(`input[data-variable="${variable.name}"]:checked`);
-                    values[variable.name] = radio ? radio.value : (variable.default || '');
+                    if (radio) {
+                        value = radio.value;
+                    } else {
+                        value = variable.default || '';
+                    }
                 } else {
                     const element = document.querySelector(`[data-variable="${variable.name}"]`);
-                    values[variable.name] = element ? element.value : (variable.default || '');
+                    if (element && element.value) {
+                        value = element.value;
+                    } else {
+                        value = variable.default || '';
+                    }
                 }
+                
+                values[variable.name] = value;
             });
             return values;
         }
@@ -635,9 +651,14 @@
             if (customizedElement && customizedContainer) {
                 customizedElement.textContent = customizedPrompt;
                 
-                // Show customized version if any variables have been filled
-                const hasValues = Object.values(variables).some(value => value && value.trim() !== '');
-                if (hasValues) {
+                // Check if any variables have been filled with non-default values
+                const formExists = document.querySelector('.prompt-variable');
+                const hasCustomValues = formExists && Object.entries(variables).some(([key, value]) => {
+                    const variable = variableDefinitions.find(v => v.name === key);
+                    return value && value.trim() !== '' && value !== (variable?.default || '');
+                });
+                
+                if (hasCustomValues) {
                     originalElement.style.display = 'none';
                     customizedContainer.style.display = 'block';
                 } else {
