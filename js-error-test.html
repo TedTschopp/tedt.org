@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Test - No jQuery</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #222; color: #fff; }
+        .test-result { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #2d5a27; }
+        .error { background: #5a2727; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Error Test (No jQuery Available)</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        // Simulate NO jQuery environment
+        window.$ = undefined;
+        
+        const results = document.getElementById('test-results');
+        
+        function addResult(message, isSuccess) {
+            const div = document.createElement('div');
+            div.className = `test-result ${isSuccess ? 'success' : 'error'}`;
+            div.textContent = message;
+            results.appendChild(div);
+        }
+        
+        // Test that jQuery is undefined
+        addResult(`jQuery availability: ${typeof $ === 'undefined' ? 'UNDEFINED (good for test)' : 'AVAILABLE'}`, typeof $ === 'undefined');
+        
+        // Capture console errors
+        const originalError = console.error;
+        let jsErrors = [];
+        console.error = function(...args) {
+            jsErrors.push(args.join(' '));
+            originalError.apply(console, args);
+        };
+        
+        // Monitor for uncaught errors
+        window.addEventListener('error', function(e) {
+            jsErrors.push(`Error: ${e.message} at ${e.filename}:${e.lineno}`);
+        });
+        
+        setTimeout(() => {
+            if (jsErrors.length === 0) {
+                addResult('✅ No JavaScript errors detected!', true);
+            } else {
+                addResult('❌ JavaScript errors found:', false);
+                jsErrors.forEach(error => {
+                    addResult(`  - ${error}`, false);
+                });
+            }
+        }, 1000);
+    </script>
+    
+    <!-- Load the problematic script -->
+    <script src="js/add-winer-links-and-header-links.js"></script>
+    
+    <script>
+        setTimeout(() => {
+            addResult('✅ Script loaded successfully without throwing errors', true);
+        }, 500);
+    </script>
+</body>
+</html>

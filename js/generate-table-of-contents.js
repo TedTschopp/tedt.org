@@ -1,8 +1,12 @@
-$(document).ready(function() {
-  const toc = document.getElementById('insert-table-of-contents-here');
-  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-  let tocItems = ['<ol>']; // Start with an opening <ol> tag
-  let currentLevel = 1;
+// Safe jQuery initialization - check if jQuery is available
+(function() {
+  function generateTableOfContents() {
+    const toc = document.getElementById('insert-table-of-contents-here');
+    if (!toc) return; // Exit if TOC element doesn't exist
+    
+    const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    let tocItems = ['<ol>']; // Start with an opening <ol> tag
+    let currentLevel = 1;
 
   headers.forEach(header => {
     const level = parseInt(header.tagName.substring(1), 10); // Get numeric part of heading tag (h1, h2, etc.)
@@ -35,7 +39,20 @@ $(document).ready(function() {
   toc.innerHTML = tocItems.map(escapeHTML).join('');
   toc.setAttribute('role', 'navigation');
   toc.setAttribute('aria-label', 'Table of contents');
-});
+  }
+
+  // Try jQuery first, fallback to DOMContentLoaded
+  if (typeof $ !== 'undefined' && $.fn.ready) {
+    $(document).ready(generateTableOfContents);
+  } else {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', generateTableOfContents);
+    } else {
+      generateTableOfContents();
+    }
+  }
+})();
+
 function escapeHTML(str) {
   var div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
