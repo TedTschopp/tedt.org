@@ -349,7 +349,7 @@
                              style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"
                              role="region"
                              aria-label="Original prompt content"
-                             tabindex="0"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                             tabindex="0"><code class="language-markdown">{% if page.prompt_content %}{{ page.prompt_content }}{% else %}{{ page.content }}{% endif %}</code></pre>
                         
                         <!-- Customized prompt (shown when variables are filled) -->
                         <pre id="customized-prompt" 
@@ -357,7 +357,7 @@
                              style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word; display: none;"
                              role="region"
                              aria-label="Customized prompt content with your variables"
-                             tabindex="0"><code class="language-markdown" id="customized-prompt-content">{% if page.prompt_content %}{{ page.prompt_content | escape }}{% else %}{{ page.content | escape }}{% endif %}</code></pre>
+                             tabindex="0"><code class="language-markdown" id="customized-prompt-content">{% if page.prompt_content %}{{ page.prompt_content }}{% else %}{{ page.content }}{% endif %}</code></pre>
                         
                         <!-- Status region for screen readers -->
                         <div class="visually-hidden" id="form-status" role="status" aria-live="polite"></div>
