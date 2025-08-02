@@ -1,20 +1,34 @@
-$(document).ready(function() {
-    // Only run TOC generation if the element exists
-    if (document.getElementById('insert-table-of-contents-here')) {
-        GenerateTableOfContents();
+// Safe jQuery initialization - check if jQuery is available
+(function() {
+    function initializePageFeatures() {
+        // Only run TOC generation if the element exists
+        if (document.getElementById('insert-table-of-contents-here')) {
+            GenerateTableOfContents();
+        }
+
+        // Only run header linking if the element exists
+        if (document.getElementById('main_content')) {
+            // Link up the Table of Contents to each of the proper Header Tags.
+            // Call the function with the ID of the element you want to add links to
+            addLinksToHeaders('main_content');
+
+            // Step 2: Add Winer Tags to Paragraphs
+            var main_content = document.getElementById('main_content');
+            main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+        }
     }
 
-    // Only run header linking if the element exists
-    if (document.getElementById('main_content')) {
-        // Link up the Table of Contents to each of the proper Header Tags.
-        // Call the function with the ID of the element you want to add links to
-        addLinksToHeaders('main_content');
-
-        // Step 2: Add Winer Tags to Paragraphs
-        var main_content = document.getElementById('main_content');
-        main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+    // Try jQuery first, fallback to DOMContentLoaded
+    if (typeof $ !== 'undefined' && $.fn.ready) {
+        $(document).ready(initializePageFeatures);
+    } else {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePageFeatures);
+        } else {
+            initializePageFeatures();
+        }
     }
-});
+})();
 
 function addLinksToHeaders(elementId) {
   // Function to get a cookie value by name

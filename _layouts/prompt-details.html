@@ -593,12 +593,17 @@
         // Function to replace variables in prompt content
         function replaceVariables(content, variables) {
             let result = content;
+            
+            // Only replace variables that have actual values (not empty or just default values)
             for (const [key, value] of Object.entries(variables)) {
-                // Handle both {{variable}} and {{ variable }} formats
-                const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
-                // If value is empty, keep the placeholder, otherwise replace with the value
-                const replacement = value && value.trim() !== '' ? value : `{{${key}}}`;
-                result = result.replace(regex, replacement);
+                const variable = variableDefinitions.find(v => v.name === key);
+                const hasRealValue = value && value.trim() !== '' && value !== (variable?.default || '');
+                
+                if (hasRealValue) {
+                    // Handle both {{variable}} and {{ variable }} formats
+                    const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
+                    result = result.replace(regex, value);
+                }
             }
             return result;
         }
@@ -642,29 +647,28 @@
             if (variableDefinitions.length === 0) return;
             
             const variables = collectVariableValues();
-            customizedPrompt = replaceVariables(originalPrompt, variables);
+            
+            // Check if any variables have been filled with actual user input (not just defaults)
+            const hasUserInput = Object.entries(variables).some(([key, value]) => {
+                const variable = variableDefinitions.find(v => v.name === key);
+                return value && value.trim() !== '' && value !== (variable?.default || '');
+            });
             
             const customizedElement = document.getElementById('customized-prompt-content');
             const originalElement = document.getElementById('original-prompt');
             const customizedContainer = document.getElementById('customized-prompt');
             
-            if (customizedElement && customizedContainer) {
+            if (hasUserInput && customizedElement && customizedContainer) {
+                // Only replace variables and show customized version if user has actual input
+                customizedPrompt = replaceVariables(originalPrompt, variables);
                 customizedElement.textContent = customizedPrompt;
                 
-                // Check if any variables have been filled with non-default values
-                const formExists = document.querySelector('.prompt-variable');
-                const hasCustomValues = formExists && Object.entries(variables).some(([key, value]) => {
-                    const variable = variableDefinitions.find(v => v.name === key);
-                    return value && value.trim() !== '' && value !== (variable?.default || '');
-                });
-                
-                if (hasCustomValues) {
-                    originalElement.style.display = 'none';
-                    customizedContainer.style.display = 'block';
-                } else {
-                    originalElement.style.display = 'block';
-                    customizedContainer.style.display = 'none';
-                }
+                originalElement.style.display = 'none';
+                customizedContainer.style.display = 'block';
+            } else {
+                // Show original prompt with placeholders intact
+                originalElement.style.display = 'block';
+                customizedContainer.style.display = 'none';
             }
         }
 
@@ -904,7 +908,9 @@
 
             // Initialize with default values
             if (variableDefinitions.length > 0) {
-                updatePromptPreview();
+                // Don't call updatePromptPreview() on initial load to avoid showing partial replacements
+                // The original prompt should be shown until user actually customizes variables
+                console.log('Variables initialized, but keeping original prompt visible');
             }
 
             // Setup download links
