@@ -19,7 +19,7 @@
     }
 
     // Try jQuery first, fallback to DOMContentLoaded
-    if (typeof $ !== 'undefined' && $.fn.ready) {
+    if (typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && $.fn.ready) {
         $(document).ready(initializePageFeatures);
     } else {
         if (document.readyState === 'loading') {

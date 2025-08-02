@@ -42,10 +42,22 @@
     </div>
 
     <div>
-        <h2>Original Prompt (should show placeholders):</h2>
+        <h2>Original Prompt (should show placeholders AND XML tags):</h2>
         <div class="prompt-content" id="original-prompt">**Critique Level:** {{critique_depth}}
 **Paper Title:** {{paper_title}}
 **Author(s):** {{author_names}}
+
+## Introduction
+
+&lt;Purpose&gt;
+* Clearly introduce the critique by summarizing the paper's identity and key message.
+* State explicitly the main point or argument presented by the original author.
+&lt;/Purpose&gt;
+
+&lt;Instructions&gt;
+* Identify and state the full name(s) of the paper's author(s) exactly as listed on the paper.
+* Provide the complete, accurately formatted title of the article being critiqued.
+&lt;/Instructions&gt;
 
 This is a test prompt with variables that should show as placeholders until user fills them.</div>
         
@@ -58,6 +70,18 @@ This is a test prompt with variables that should show as placeholders until user
         let originalPrompt = `**Critique Level:** {{critique_depth}}
 **Paper Title:** {{paper_title}}
 **Author(s):** {{author_names}}
+
+## Introduction
+
+<Purpose>
+* Clearly introduce the critique by summarizing the paper's identity and key message.
+* State explicitly the main point or argument presented by the original author.
+</Purpose>
+
+<Instructions>
+* Identify and state the full name(s) of the paper's author(s) exactly as listed on the paper.
+* Provide the complete, accurately formatted title of the article being critiqued.
+</Instructions>
 
 This is a test prompt with variables that should show as placeholders until user fills them.`;
         
