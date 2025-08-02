@@ -18,7 +18,8 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
             frontend = container "Frontend Web Application" "Static Jekyll-generated website with responsive design" "HTML5, CSS3, Bootstrap 5.3.0, JavaScript ES6+" {
                 homepage = component "Homepage" "Main landing page with hero section and navigation" "Jekyll Layout"
                 blogSystem = component "Blog System" "Multi-category blog with posts and pagination" "Jekyll Layouts & Liquid"
-                promptLibrary = component "Prompt Library" "AI prompt templates with dynamic variables" "JavaScript, HTML Forms"
+                promptLibrary = component "Prompt Library" "AI prompt templates with dynamic series workflows and variable substitution" "JavaScript, HTML Forms, Liquid Templating"
+                promptSeries = component "Prompt Series System" "Dynamic multi-step workflow navigation for related prompts" "Liquid Templating, YAML Front Matter"
                 projectPortfolio = component "Project Portfolio" "Showcase of technical projects and work" "Jekyll Collections"
                 categorySystem = component "Category System" "Organized content categorization and filtering" "Jekyll Categories"
                 searchInterface = component "Search Interface" "Site-wide search functionality" "JavaScript, Google Custom Search"
@@ -40,7 +41,8 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
             
             # Data Storage Layer  
             dataStorage = container "Content Storage" "Git-based content management and version control" "Git, Markdown, YAML, JSON" {
-                posts = component "Blog Posts" "Markdown files organized by category" "Markdown, YAML Front Matter"
+                posts = component "Blog Posts" "Markdown files organized by category with series workflow metadata" "Markdown, YAML Front Matter"
+                promptContent = component "Prompt Content" "AI prompt templates with series definitions and workflow steps" "Markdown, YAML Front Matter"
                 pages = component "Static Pages" "About, contact, and other static content" "Markdown, HTML"
                 dataFiles = component "Data Files" "Structured content and configuration" "YAML, JSON, CSV"
                 assets = component "Media Assets" "Images, documents, and downloadable content" "Static Files"
@@ -92,6 +94,8 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         website.frontend.homepage -> website.frontend.categorySystem "Links to categorized content"
         website.frontend.blogSystem -> website.frontend.commentSystem "Enables reader engagement"
         website.frontend.promptLibrary -> website.frontend.searchInterface "Searchable prompt collection"
+        website.frontend.promptLibrary -> website.frontend.promptSeries "Uses dynamic series navigation"
+        website.frontend.promptSeries -> website.dataStorage.promptContent "Reads series workflow definitions"
         website.frontend.commentSystem -> mastodonInstance "Fetches comments via API"
         website.frontend.webmentions -> webmentionService "Processes social mentions"
         
@@ -104,6 +108,8 @@ workspace "Ted Tschopp's Personal Website" "TedT.org" {
         
         # Data Storage Relationships
         website.dataStorage.posts -> website.frontend.blogSystem "Provides blog content"
+        website.dataStorage.promptContent -> website.frontend.promptLibrary "Provides prompt templates"
+        website.dataStorage.promptContent -> website.frontend.promptSeries "Provides series workflow data"
         website.dataStorage.dataFiles -> website.frontend.categorySystem "Provides categorization data"
         website.dataStorage.includes -> website.contentManagement.includeSystem "Reusable component library"
         website.dataStorage.layouts -> website.contentManagement.liquidTemplates "Page structure templates"
