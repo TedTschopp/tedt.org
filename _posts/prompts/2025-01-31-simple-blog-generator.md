@@ -12,6 +12,17 @@ categories: [Prompts]
 tags: [blogging, writing, simple, basic]
 models-supported: [gpt-4, claude-3-sonnet, gemini-pro]
 
+series:
+  - step: 1
+    title: "Content Generation"
+    description: "Create initial blog post content based on your topic and audience"
+    prompt_file: "2025-01-31-simple-blog-generator.md"
+    current: true
+  - step: 2
+    title: "Content Critique"
+    description: "Analyze and improve the generated content for quality and effectiveness"
+    prompt_file: "2025-08-01-Critique-Content.md"
+
 variables:
   - name: "blog_topic"
     label: "Blog Topic"

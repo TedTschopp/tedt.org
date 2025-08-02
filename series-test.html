@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #222; color: #fff; }
+        .test-series { background: #333; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .list-group { list-style: none; padding: 0; }
+        .list-group-item { background: #444; margin: 5px 0; padding: 15px; border-radius: 3px; display: flex; justify-content: space-between; align-items: center; }
+        .list-group-item.table-active { background: #0066cc; }
+        .badge { background: #666; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.8em; }
+        .badge.bg-primary { background: #0066cc !important; }
+        .badge.bg-secondary { background: #666 !important; }
+        .fw-bold { font-weight: bold; }
+        .text-muted { color: #aaa; }
+        .small { font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Series Test</h1>
+    
+    <div class="test-series">
+        <h3>Example Series: Content Creation Workflow</h3>
+        
+        <!-- Simulated series data -->
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item table-active">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">
+                        <a href="#" style="color: white; text-decoration: none;">
+                            Step 1: Content Generation
+                        </a>
+                    </div>
+                    <div class="text-muted small">Create initial blog post content based on your topic and audience</div>
+                </div>
+                <span class="badge bg-primary">Current</span>
+            </li>
+            
+            <li class="list-group-item">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">
+                        <a href="#" style="color: #66ccff; text-decoration: none;">
+                            Step 2: Content Critique
+                        </a>
+                    </div>
+                    <div class="text-muted small">Analyze and improve the generated content for quality and effectiveness</div>
+                </div>
+                <span class="badge bg-secondary">Step 2</span>
+            </li>
+        </ol>
+    </div>
+
+    <div class="test-series">
+        <h3>Series Features Demonstrated:</h3>
+        <ul>
+            <li>✅ Dynamic step numbering</li>
+            <li>✅ Current step highlighting</li>
+            <li>✅ Linked step titles</li>
+            <li>✅ Descriptive step information</li>
+            <li>✅ Flexible badge system</li>
+            <li>✅ Responsive design</li>
+        </ul>
+    </div>
+
+    <div class="test-series">
+        <h3>Implementation Status:</h3>
+        <ul>
+            <li>📋 Template updated with dynamic Liquid logic</li>
+            <li>📋 Front matter schema defined</li>
+            <li>📋 Simple Blog Generator updated with series info</li>
+            <li>📋 Critique Content updated with series info</li>
+            <li>📋 Universal Content Creator updated with series info</li>
+            <li>📋 DSL documentation created</li>
+            <li>📋 ADR documentation created</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -17,6 +17,17 @@ image-credits-title: "Dynamic Prompt Variables Interface"
 image-credits: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
 
+series:
+  - step: 1
+    title: "Content Planning"
+    description: "Comprehensive content creation with all customization options"
+    prompt_file: "2025-01-31-universal-content-creator-demo.md"
+    current: true
+  - step: 2
+    title: "Content Critique"
+    description: "Analyze and improve the generated content for quality and effectiveness"
+    prompt_file: "2025-08-01-Critique-Content.md"
+
 variables:
   - name: "topic"
     label: "Content Topic"

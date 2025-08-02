@@ -370,7 +370,8 @@
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
-                <!-- Adjusted layout to align 'Prompts in this Series' header on the left and 'Rate this Prompt Series' with 'Download All Prompts in Series' on the right -->
+                <!-- Dynamic Prompts in Series Section -->
+                {% if page.series and page.series.size > 0 %}
                 <div class="mt-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="card-title">Prompts in this Series</h3>
@@ -378,30 +379,46 @@
 
                     <div class="d-flex">
                         <ol class="list-group list-group-numbered flex-grow-1 me-4">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Step 1: Introduction</div>
-                                    A brief description of the first step in the series.
-                                </div>
-                                <span class="badge bg-primary rounded-pill">Step 1</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Step 2: Deep Dive</div>
-                                    A brief description of the second step in the series.
-                                </div>
-                                <span class="badge bg-secondary rounded-pill">Step 2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Step 3: Conclusion</div>
-                                    A brief description of the final step in the series.
-                                </div>
-                                <span class="badge bg-success rounded-pill">Step 3</span>
-                            </li>
+                            {% assign sorted_series = page.series | sort: 'step' %}
+                            {% for series_item in sorted_series %}
+                                {% comment %}Find the referenced prompt file{% endcomment %}
+                                {% assign series_prompt = null %}
+                                {% for post in site.posts %}
+                                    {% assign post_filename = post.path | split: '/' | last %}
+                                    {% if post_filename == series_item.prompt_file %}
+                                        {% assign series_prompt = post %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                
+                                <li class="list-group-item d-flex justify-content-between align-items-start {% if series_item.current %}table-active{% endif %}">
+                                    <div class="ms-2 me-auto">
+                                        {% if series_prompt %}
+                                            <div class="fw-bold">
+                                                <a href="{{ series_prompt.url | relative_url }}" class="text-decoration-none">
+                                                    Step {{ series_item.step }}: {{ series_item.title }}
+                                                </a>
+                                            </div>
+                                            <div class="text-muted small">{{ series_item.description }}</div>
+                                        {% else %}
+                                            <div class="fw-bold text-danger">
+                                                Step {{ series_item.step }}: {{ series_item.title }}
+                                                <small class="text-muted">(File not found: {{ series_item.prompt_file }})</small>
+                                            </div>
+                                            <div class="text-muted small">{{ series_item.description }}</div>
+                                        {% endif %}
+                                    </div>
+                                    {% if series_item.current %}
+                                        <span class="badge bg-primary rounded-pill">Current</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary rounded-pill">Step {{ series_item.step }}</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
                         </ol>
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
 
