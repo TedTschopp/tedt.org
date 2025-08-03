@@ -29,6 +29,8 @@ seo-description: "Learn strategies for integrating AI into enterprise roles, emp
 
 categories:
     - Artificial Intelligence
+    - Opinion
+    - Personal Writing
 
 tags:
     - artificial intelligence
