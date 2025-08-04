@@ -64,7 +64,7 @@ image-credits-title: ""
 image-description: "Metaphorical representation of organizational skill-building and adaptation in the face of AI-driven changes"
 image-title: "Navigating Complexity with Confidence"
 
-mastodon-post-id:
+mastodon-post-id: 114497428586613439
 
 ---
 
