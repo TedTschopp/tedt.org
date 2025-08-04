@@ -1,4 +1,68 @@
-_**Bottom Line Up Front:**_  _This article offers a hands-on guide to writing AI prompts that elevate architectural thinking and improve the quality of enterprise IT reviews. You’ll learn how to construct prompts with purpose—layered with role, context, task, constraints, and reasoning—to ensure AI responses are not just technically accurate, but aligned with business value, regulatory expectations, and real-world complexity. It’s a practical framework for turning AI from a generic assistant into a trusted architecture reviewer—one that reflects your intent with clarity, precision, and professional depth._
+---
+layout: post
+
+title: "Crafting Conversations with AI"
+subtitle: "A Practical Guide to Enterprise Architecture Prompt Engineering"
+quote: "Like sharing coffee with a trusted colleague or discussing life's mysteries beside a quiet evening fire, clarity and depth matter."
+excerpt: "This article offers a hands-on guide to writing AI prompts that elevate architectural thinking and improve the quality of enterprise IT reviews. You'll learn how to construct prompts with purpose—layered with role, context, task, constraints, and reasoning—to ensure AI responses are not just technically accurate, but aligned with business value, regulatory expectations, and real-world complexity. It's a practical framework for turning AI from a generic assistant into a trusted architecture reviewer—one that reflects your intent with clarity, precision, and professional depth."
+source: "Original Content"
+source-url: ""
+call-to-action: "Try crafting your own structured prompts using the role-context-task framework"
+
+date: 2025-03-24
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Structure prompts with clear role definition, rich context, and specific tasks
+    - Layer prompts with constraints and reasoning to ensure business-aligned responses
+    - Treat AI prompting as genuine conversation requiring clarity and depth
+    - Transform AI from generic assistant to trusted enterprise architecture reviewer
+    - Use structured framework: role, context, task, constraints, and reasoning
+
+description: "A comprehensive guide to crafting effective AI prompts for enterprise architecture work, providing a structured framework for creating prompts that deliver technically accurate, business-aligned responses for IT reviews and architectural thinking."
+
+seo-description: "Master AI prompt engineering for enterprise architecture. Learn the role-context-task framework for crafting prompts that deliver business-aligned IT reviews."
+
+categories: 
+    - AI
+    - Projects 
+
+tags: 
+    - prompt engineering
+    - enterprise architecture
+    - AI conversation
+    - IT reviews
+    - business alignment
+
+keywords: AI prompt engineering, enterprise architecture prompts, IT architecture review, business-aligned AI, prompt crafting, architectural thinking AI
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Professional conversation between human architect and AI, representing structured prompt engineering"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+
+mastodon-post-id: 
+
+---
+
+_**Bottom Line Up Front:**_  _This article offers a hands-on guide to writing AI prompts that elevate architectural thinking and improve the quality of enterprise IT reviews. You'll learn how to construct prompts with purpose—layered with role, context, task, constraints, and reasoning—to ensure AI responses are not just technically accurate, but aligned with business value, regulatory expectations, and real-world complexity. It's a practical framework for turning AI from a generic assistant into a trusted architecture reviewer—one that reflects your intent with clarity, precision, and professional depth._**Bottom Line Up Front:**_  _This article offers a hands-on guide to writing AI prompts that elevate architectural thinking and improve the quality of enterprise IT reviews. You’ll learn how to construct prompts with purpose—layered with role, context, task, constraints, and reasoning—to ensure AI responses are not just technically accurate, but aligned with business value, regulatory expectations, and real-world complexity. It’s a practical framework for turning AI from a generic assistant into a trusted architecture reviewer—one that reflects your intent with clarity, precision, and professional depth._
 
   
 

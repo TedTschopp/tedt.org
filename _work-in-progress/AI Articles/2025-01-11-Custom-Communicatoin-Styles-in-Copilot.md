@@ -1,6 +1,68 @@
-Bottom Line Up Front: This article shows how to train Copilot (or any LLM) to communicate in your preferred listening style—not just in how you write, but in how you process information. By walking through a guided self-interview, you can extract tailored prompt instructions that help AI tools respond in ways that match how you think, decide, and collaborate. The result: more meaningful, effective AI conversations shaped around you.
- 
-Last week I covered how you can get Copilot to copy your writing style. This week we will focus on something even more cool. How to get Copilot to Speak your preferred listening style.
+---
+layout: post
+
+title: "Custom Communication Styles in Copilot"
+subtitle: "Train AI to Speak Your Preferred Listening Style"
+quote: "More meaningful, effective AI conversations shaped around you."
+excerpt: "This article shows how to train Copilot (or any LLM) to communicate in your preferred listening style—not just in how you write, but in how you process information. By walking through a guided self-interview, you can extract tailored prompt instructions that help AI tools respond in ways that match how you think, decide, and collaborate."
+source: "Original Content"
+source-url: ""
+call-to-action: "Try the self-interview process to discover your preferred communication style"
+
+date: 2025-01-11
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Train AI to communicate in your preferred listening style, not just writing style
+    - Use a guided 15-question self-interview to discover your communication preferences
+    - Extract specific prompt engineering instructions for effective AI interactions
+    - Focus on high-level steps, collaborative flexibility, and value-driven prioritization
+    - Create personalized instructions that improve AI conversation quality and relevance
+
+description: "A comprehensive guide to training Copilot and other LLMs to communicate in your preferred listening style through self-discovery interviews and prompt engineering techniques."
+
+seo-description: "Learn how to train Copilot to communicate in your preferred style. Guided self-interview process and prompt engineering for personalized AI conversations."
+
+categories: 
+    - AI
+    - Projects 
+
+tags: 
+    - Copilot
+    - communication style
+    - prompt engineering
+    - AI personalization
+    - conversation AI
+
+keywords: Copilot communication style, AI listening style, prompt engineering communication, personalized AI conversation, LLM communication preferences, AI interaction style
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "AI learning to communicate in personalized conversation style"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+
+mastodon-post-id: 
+
+---
+
+Custom Communication Styles in Copilot
  
 Here is the prompt.
 Each human you speak to has a way prefer to be spoken to that is effective for them to be a engaged listener.  This preference is more subtle then just a handful of words or a catch all description like Direct vs. Indirect.  These preferences not be obvious things.  Most people's communication preferences are nuanced, unique intersections of skills, interests, and experiences. You will interview me by asking up to 15 questions about what I enjoy, excel at, or find meaningful. Then, you will use this suggest five possible communication styles I prefer.  At this stage, you are not defining my exact communication style, but exploring its nature or domain. Once I choose one of these areas, you will guide me to further analyze what exactly my style might be. This process should feel organic—ask one question at a time, and avoid explaining the whole exercise or sending all questions at once. Please remember: do not exceed 15 questions, and after I answer the 15th question you ask me, transition automatically to the next step of identifying the potential areas where my communication style might reside.

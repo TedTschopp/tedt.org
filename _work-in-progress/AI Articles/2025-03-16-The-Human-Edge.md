@@ -1,3 +1,67 @@
+---
+layout: post
+
+title: "The Human Edge"
+subtitle: "Embracing AI While Preserving What Makes Us Human"
+quote: "In this spring season of transformation, growth, and renewal, let us move forward with speed, thoughtfulness and intention, crafting a future where technology serves humanity, and not the other way around."
+excerpt: "In the quiet stillness of morning, as the sun casts its gentle glow over Southern California, you find yourselves at the cusp of a new era. The world around you is shifting, reshaped by the relentless march of artificial intelligence. From the bustling factories of China to the serene halls of hospitals, AI's touch is both profound and pervasive."
+source: "Original Content"
+source-url: ""
+call-to-action: "How will you adapt to AI's inevitable influence while keeping the human element central?"
+
+date: 2025-03-16
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Xiaomi's fully automated factory operates without human workers, raising employment questions
+    - AI nurses like Ana offer respite from healthcare burnout while sparking care authenticity debates
+    - Brain-computer interfaces enable paralyzed patients to control robotic arms with thoughts
+    - JPMorgan Chase reports 20% productivity boost from AI coding assistants
+    - The question isn't whether AI will change work, but how we'll adapt while preserving humanity
+
+description: "A contemplation of AI's profound impact across industries—from automated factories to AI nurses to brain-computer interfaces—exploring how we can embrace technological advancement while preserving the essential human elements of empathy, creativity, and connection."
+
+seo-description: "Explore AI's impact across industries: automated factories, AI nurses, brain-computer interfaces, and coding assistants. Learn how to preserve humanity while embracing change."
+
+categories: 
+    - AI
+    - Philosophy
+
+tags: 
+    - human-AI collaboration
+    - workplace transformation
+    - AI ethics
+    - technology adaptation
+    - human resilience
+
+keywords: AI human edge, automated factories, AI nurses, brain computer interface, JPMorgan AI coding, technology humanity balance, AI workplace transformation
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Human hands reaching toward technological innovation, representing the balance between AI and humanity"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+
+mastodon-post-id: 
+
+---
+
 In the quiet stillness of morning, as the sun casts its gentle glow over Southern California, you find yourselves at the cusp of a new era. The world around you is shifting, reshaped by the relentless march of artificial intelligence. From the bustling factories of China to the serene halls of hospitals, AI's touch is both profound and pervasive.
 
   

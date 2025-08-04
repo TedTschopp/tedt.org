@@ -1,4 +1,68 @@
-Bottom Line Up Front: AI breakthroughs like OpenAI’s o1 and o3 models introduce dynamic, inference-time intelligence—redefining how compute can boost output quality. But unlocking their value depends on empowering the right people—“barrels”—who can drive AI initiatives forward. As super-capable AI becomes widely available, organizations that fail to identify and equip their key talent risk falling behind. Success won’t come from having the best tools alone—it will come from knowing how to aim them.
+---
+layout: post
+
+title: "Barrels, Ammunition, & the Future of AI in the Electric Utility Industry"
+subtitle: "Part 1 of 2: Empowering Key Talent in the Age of Inference-Time Intelligence"
+quote: "Success won't come from having the best tools alone—it will come from knowing how to aim them."
+excerpt: "AI breakthroughs like OpenAI's o1 and o3 models introduce dynamic, inference-time intelligence—redefining how compute can boost output quality. But unlocking their value depends on empowering the right people—'barrels'—who can drive AI initiatives forward. As super-capable AI becomes widely available, organizations that fail to identify and equip their key talent risk falling behind."
+source: "Original Content"
+source-url: ""
+call-to-action: "Identify and empower the 'barrels' in your organization to lead AI initiatives"
+
+date: 2025-01-13
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - OpenAI's o1 and o3 models enable dynamic inference-time intelligence for higher quality outputs
+    - "Barrels and ammunition" metaphor highlights importance of identifying key talent over just tools
+    - o3 achieved 87.5% on ARC prize with high-compute configuration—a breakthrough in AI capabilities
+    - Cost-performance improvements expected to make AI competitive with human labor soon
+    - Organizations must identify and empower "barrels" who can drive AI initiatives from concept to completion
+
+description: "An exploration of how OpenAI's breakthrough o1 and o3 models with inference-time scaling change the AI landscape, and why identifying and empowering key organizational talent ('barrels') is crucial for success in the electric utility industry."
+
+seo-description: "Learn about OpenAI's o1 and o3 inference-time scaling models and why identifying 'barrels' (key talent) is crucial for AI success in electric utilities."
+
+categories: 
+    - AI
+    - Opinion
+
+tags: 
+    - OpenAI o1
+    - OpenAI o3
+    - inference-time scaling
+    - utility AI strategy
+    - organizational talent
+
+keywords: OpenAI o1 o3, inference-time scaling, barrels ammunition metaphor, utility AI implementation, ARC prize, AI breakthrough, electric utility technology
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: "Visual metaphor of barrels and ammunition representing talent and AI tools"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+
+mastodon-post-id: 
+
+---
+
+PART 1 OF 2: Barrels, Ammunition, & the Future of AI in the Electric Utility Industrytom Line Up Front: AI breakthroughs like OpenAI’s o1 and o3 models introduce dynamic, inference-time intelligence—redefining how compute can boost output quality. But unlocking their value depends on empowering the right people—“barrels”—who can drive AI initiatives forward. As super-capable AI becomes widely available, organizations that fail to identify and equip their key talent risk falling behind. Success won’t come from having the best tools alone—it will come from knowing how to aim them.
  
 PART 1 OF 2: Barrels, Ammunition, & the Future of AI in the Electric Utility Industry
  
