@@ -28,7 +28,7 @@ description: "A comprehensive guide to the WINS (Words, Images, Numbers, Sounds)
 seo-description: "Learn the WINS framework for AI strategy: categorize workflows, evaluate costs vs scope, and prioritize AI adoption for maximum ROI. Includes 2x2 matrix analysis and utility industry examples."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Projects 
 

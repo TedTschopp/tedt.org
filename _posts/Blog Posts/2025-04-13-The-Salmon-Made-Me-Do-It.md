@@ -28,7 +28,7 @@ description: "A personal story about using AI to cook a family salmon dinner tha
 seo-description: "Learn how to build AI trust in enterprises through small experiments. Personal story shows why organizations need safe spaces for AI practice before high-stakes decisions."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Personal Writing 
 

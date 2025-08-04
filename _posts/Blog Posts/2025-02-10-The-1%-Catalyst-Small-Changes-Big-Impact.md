@@ -28,7 +28,7 @@ description: "An analysis of Sam Altman's insights on AI progress and their appl
 seo-description: "Learn from Sam Altman's AI insights for energy sector leadership. Discover how exponential innovation and small changes drive big impact in utility transformation."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
 
 tags: 

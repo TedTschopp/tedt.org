@@ -28,7 +28,7 @@ description: "A comprehensive review of AI advancements in 2024, including break
 seo-description: "Discover the major AI breakthroughs of 2024: GPT-4-class models, 27x price drops, laptop-runnable AI, multimodal capabilities, and what it means for 2025."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Science
 
 tags: 

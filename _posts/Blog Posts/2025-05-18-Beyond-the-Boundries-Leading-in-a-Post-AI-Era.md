@@ -28,7 +28,7 @@ description: "A contemplative exploration of how AI's dissolution of traditional
 seo-description: "Discover how AI's convergence across modalities redefines human work and leadership. Learn why the post-WINS era elevates rather than eliminates the need for human empathy, wisdom, and connection."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Philosophy
     - Personal Writing 

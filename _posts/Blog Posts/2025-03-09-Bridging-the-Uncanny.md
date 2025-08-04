@@ -28,7 +28,7 @@ description: "An exploration of the uncanny valley in AI voice technology, exami
 seo-description: "Explore the uncanny valley of AI voice technology. Learn how nearly human AI voices challenge authenticity and what preserves our unique humanity."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Philosophy
 
 tags: 

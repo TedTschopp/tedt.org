@@ -28,7 +28,7 @@ description: "Exploring how artificial intelligence is revolutionizing enterpris
 seo-description: "Discover how AI is transforming enterprise SaaS and learn strategies for utilities and large enterprises to navigate the shift from static software to dynamic, AI-driven solutions."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Philosophy
 

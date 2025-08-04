@@ -28,7 +28,7 @@ description: "A practical demonstration of how AI prompt engineering can extract
 seo-description: "Learn how AI prompt engineering transforms messy meeting transcripts into clear business requirements through structured prompts, user journey mapping, and quality feedback."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Computers
     - Opinion
 

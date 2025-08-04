@@ -28,7 +28,7 @@ description: "A comprehensive technical breakdown of DeepSeek R1's revolutionary
 seo-description: "Learn DeepSeek R1's groundbreaking 5-step AI training pipeline: cold-start reinforcement learning, supervised fine-tuning, large-scale RL, rejection sampling, and final optimization for reasoning AI models."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Computers
     - Science
 

@@ -28,7 +28,7 @@ description: "An exploration of how GPT-4.5's advanced capabilities are quietly 
 seo-description: "Discover how GPT-4.5 is quietly revolutionizing the workplace. Learn about AI's impact on roles, authenticity, and the elevation of human creativity and empathy."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
 
 tags: 

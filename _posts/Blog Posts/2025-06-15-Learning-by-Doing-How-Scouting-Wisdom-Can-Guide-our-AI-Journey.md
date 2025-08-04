@@ -28,7 +28,7 @@ description: "Exploring how the principles of Scout camp—personalized guidance
 seo-description: "Learn how Scout camp principles can guide AI learning in the workplace. Discover practical steps for integrating AI training through personalized guidance and real-world application."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Personal Writing 
 

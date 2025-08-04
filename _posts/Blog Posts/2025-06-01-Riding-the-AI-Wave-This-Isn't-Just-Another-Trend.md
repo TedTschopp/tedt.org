@@ -28,7 +28,7 @@ description: "Exploring Mary Meeker's latest AI trends report through the lens o
 seo-description: "Mary Meeker's AI trends report shows unprecedented adoption rates. Learn how AI is transforming workplaces faster than the internet boom and practical approaches for navigating this shift."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Personal Writing 
 

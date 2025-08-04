@@ -28,7 +28,7 @@ description: "A comprehensive guide to crafting effective AI prompts for enterpr
 seo-description: "Master AI prompt engineering for enterprise architecture. Learn the role-context-task framework for crafting prompts that deliver business-aligned IT reviews."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Projects 
 
 tags: 

@@ -28,7 +28,7 @@ description: "Explore how recursion principles guide the design of AI-driven cor
 seo-description: "Discover how to use AI simulations for corporate training. Learn recursion principles and get a practical prompt for creating custom AI-driven learning scenarios for business skills."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Projects 
 

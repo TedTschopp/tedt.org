@@ -28,7 +28,7 @@ description: "A framework for AI prompting based on crucial conversation princip
 seo-description: "Learn crucial prompting skills for AI. Discover how human communication principles create better AI interactions using structured prompting frameworks."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Projects 
 
 tags: 

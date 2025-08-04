@@ -62,7 +62,7 @@ mastodon-post-id:
 
 ---
 
-Custom Writing Styles in Copilottom Line Up Front: You can train Copilot to write in your personal voice by feeding it samples of your past writing. This article walks you through how to capture your tone, structure, and storytelling style—then turn that into a reusable prompt. The result? AI that doesn’t just help you write—it writes like you.
+Bottom Line Up Front: You can train Copilot to write in your personal voice by feeding it samples of your past writing. This article walks you through how to capture your tone, structure, and storytelling style—then turn that into a reusable prompt. The result? AI that doesn’t just help you write—it writes like you.
  
 ```markdown
 Here is a superpower for you to enhance your use of Copilot. You can have Copilot write something in your own style of writing.  Click on the link and head on over to Copilot for Web and use this prompt.  Make changes 

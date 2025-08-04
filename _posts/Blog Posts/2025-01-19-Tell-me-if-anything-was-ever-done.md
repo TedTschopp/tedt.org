@@ -32,6 +32,7 @@ categories:
     - Philosophy
     - Personal Writing
     - Science
+    - Artificial Intelligence
 
 
 tags: Leonardo da Vinci, creativity, perfectionism, shipping ideas, productivity tips, legacy, inspiration, unfinished work

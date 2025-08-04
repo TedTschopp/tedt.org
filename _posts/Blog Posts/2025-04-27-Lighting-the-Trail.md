@@ -28,7 +28,7 @@ description: "A personal case study of using AI to develop and execute a complet
 seo-description: "Learn how AI can support curriculum development and training. Real-world case study of using AI for Cub Scout Arrow of Light program, including ceremony design and cultural sensitivity."
 
 categories: 
-    - AI
+    - Artificial Intelligence
     - Opinion
     - Personal Writing 
 
