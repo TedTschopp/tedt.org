@@ -46,7 +46,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
+image: img/AI/Superagents.webp
 image-alt: "AI superagents transforming various industries and workflows"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
