@@ -5,7 +5,7 @@ description: "An instructional AI prompt template for generating roleplay-based 
 permalink: /prompts/ai-simulation-creator-roleplay-prompt/
 categories: [Prompts]
 tags: 
-  - simulation
+  - Simulation
   - Roleplay
   - Instructional Design
   - AI Mentor

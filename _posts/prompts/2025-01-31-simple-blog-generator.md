@@ -9,7 +9,12 @@ author:
   url: https://tedt.org/
 date: 2025-01-31
 categories: [Prompts]
-tags: [blogging, writing, simple, basic]
+tags: 
+  - Blogging
+  - Writing 
+  - Simple 
+  - Basic
+
 models-supported: [gpt-4, claude-3-sonnet, gemini-pro]
 
 series:

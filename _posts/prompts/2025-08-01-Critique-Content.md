@@ -9,8 +9,28 @@ author:
   url: https://tedt.org/
 date: 2025-08-01
 categories: [Prompts]
-tags: [academic-writing, critique, analysis, evaluation, research, scholarly-writing, peer-review, assessment]
-models-supported: [gpt-4, gpt-4-turbo, gpt-3.5-turbo, claude-3-opus, claude-3-sonnet, claude-3-haiku, gemini-pro, gemini-ultra, copilot, microsoft-copilot]
+tags: [
+  - Academic Writing
+  - Critique
+  - Analysis
+  - Evaluation
+  - Research
+  - Scholarly Writing
+  - Peer Review
+  - Assessment
+
+models-supported: 
+  - gpt-4
+  - gpt-4-turbo
+  - gpt-3.5-turbo
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gemini-pro
+  - gemini-ultra
+  - copilot
+  - microsoft-copilot
+
 image: "/img/prompts/academic-critique-template.png"
 image-alt: "A scholarly desk with papers, books, and evaluation forms representing academic critique and analysis"
 image-credits-title: "Academic Critique and Analysis"
