@@ -231,7 +231,11 @@
                 
                 <div class="w-100 mb-3">
                     {% for tag in page.tags %}
-                        <span class="badge bg-primary me-1 mb-1"><i class="fas fa-tag"></i> {{ tag }}</span>
+                        <a href="/tools/prompt-library.html?filter={{ tag | downcase | slugify }}" 
+                           class="badge bg-primary me-1 mb-1 text-decoration-none"
+                           title="Filter prompts by {{ tag }}">
+                            <i class="fas fa-tag"></i> {{ tag }}
+                        </a>
                     {% endfor %}
                 </div>
 
