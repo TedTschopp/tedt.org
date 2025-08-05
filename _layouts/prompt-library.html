@@ -174,7 +174,8 @@
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <div>
                                         {% if post.tags %}
-                                            {% for tag in post.tags limit: 2 %}
+                                            {% assign sorted_tags = post.tags | sort %}
+                                            {% for tag in sorted_tags %}
                                                 <button class="badge bg-primary tag-filter-btn" 
                                                         title="Filter by {{ tag }}"
                                                         data-tag="{{ tag | downcase | slugify }}"
