@@ -253,10 +253,36 @@
             allCards = Array.from(document.querySelectorAll('.col[data-tags]'));
             filteredCards = [...allCards];
             
+            // Check for URL parameters to set initial filter
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterParam = urlParams.get('filter');
+            
+            if (filterParam) {
+                // Find and activate the filter button for the parameter
+                const filterButton = document.querySelector(`[data-filter="${filterParam}"]`);
+                if (filterButton) {
+                    // Reset all buttons
+                    document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                    // Activate the target filter
+                    filterButton.setAttribute('aria-pressed', 'true');
+                    currentFilter = filterParam;
+                } else {
+                    // If filter not found, default to "all"
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                    currentFilter = 'all';
+                }
+            } else {
+                // No filter parameter, default to "all"
+                document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                currentFilter = 'all';
+            }
+            
             // Set initial sort dropdown value
             document.getElementById('sort-select').value = currentSort;
             
+            // Apply initial filters and show page
             updatePagination();
+            applyFiltersAndSort();
             showPage(1);
             
             // Add hover tooltips to tag buttons
@@ -274,6 +300,16 @@
                 
                 currentFilter = this.getAttribute('data-filter').toLowerCase();
                 currentPage = 1;
+                
+                // Update URL with filter parameter
+                const url = new URL(window.location);
+                if (currentFilter === 'all') {
+                    url.searchParams.delete('filter');
+                } else {
+                    url.searchParams.set('filter', currentFilter);
+                }
+                window.history.pushState({}, '', url);
+                
                 applyFiltersAndSort();
             });
         });
@@ -284,6 +320,12 @@
             document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
             currentFilter = 'all';
             currentPage = 1;
+            
+            // Remove filter parameter from URL
+            const url = new URL(window.location);
+            url.searchParams.delete('filter');
+            window.history.pushState({}, '', url);
+            
             applyFiltersAndSort();
         });
 
@@ -310,6 +352,16 @@
                 }
                 
                 currentPage = 1;
+                
+                // Update URL with filter parameter
+                const url = new URL(window.location);
+                if (currentFilter === 'all') {
+                    url.searchParams.delete('filter');
+                } else {
+                    url.searchParams.set('filter', currentFilter);
+                }
+                window.history.pushState({}, '', url);
+                
                 applyFiltersAndSort();
                 
                 // Scroll to top of results
