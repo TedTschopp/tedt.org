@@ -59,6 +59,19 @@
             /* was #17a589;*/
             color: rgba(0, 0, 0, 1.00)
         }
+
+        .tag-filter-btn {
+            transition: all 0.2s ease;
+        }
+
+        .tag-filter-btn:hover {
+            background-color: #0056b3 !important;
+            transform: scale(1.05);
+        }
+
+        .tag-filter-btn:active {
+            transform: scale(0.95);
+        }
     </style>
 </head>
 <body>
@@ -162,9 +175,12 @@
                                     <div>
                                         {% if post.tags %}
                                             {% for tag in post.tags limit: 2 %}
-                                                <span class="badge bg-primary" title="{{ tag }}">
+                                                <button class="badge bg-primary tag-filter-btn" 
+                                                        title="Filter by {{ tag }}"
+                                                        data-tag="{{ tag | slugify }}"
+                                                        style="cursor: pointer; border: none;">
                                                     <i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}
-                                                </span>
+                                                </button>
                                             {% endfor %}
                                         {% endif %}
                                     </div>
@@ -237,6 +253,12 @@
             filteredCards = [...allCards];
             updatePagination();
             showPage(1);
+            
+            // Add hover tooltips to tag buttons
+            document.querySelectorAll('.tag-filter-btn').forEach(btn => {
+                const tagName = btn.textContent.trim().replace('🏷️ ', '').replace(' ', '');
+                btn.setAttribute('title', `Click to filter by ${tagName}`);
+            });
         });
 
         // Toggle filter button active state and filter prompts
@@ -258,6 +280,36 @@
             currentFilter = 'all';
             currentPage = 1;
             applyFiltersAndSort();
+        });
+
+        // Tag filter buttons in cards
+        document.querySelectorAll('.tag-filter-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent card click
+                
+                const tagFilter = this.getAttribute('data-tag');
+                
+                // Reset all filter buttons
+                document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                
+                // Find and activate the corresponding filter button
+                const filterButton = document.querySelector(`[data-filter="${tagFilter}"]`);
+                if (filterButton) {
+                    filterButton.setAttribute('aria-pressed', 'true');
+                    currentFilter = tagFilter;
+                } else {
+                    // If no matching filter button exists, show all
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                    currentFilter = 'all';
+                }
+                
+                currentPage = 1;
+                applyFiltersAndSort();
+                
+                // Scroll to top of results
+                document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+            });
         });
 
         // Search functionality

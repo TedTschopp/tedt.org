@@ -98,20 +98,27 @@ filteredCards.sort((a, b) => {
 - Updates data attributes for sorting
 - Triggers re-sort when likes change during "highest" sort
 
-### 5. Filter Integration
+### 5. Advanced Filtering & Search ✅
 
-**Combined Operations:**
-1. Start with all cards
-2. Apply category filter
-3. Apply search filter  
-4. Apply sorting
-5. Update pagination
-6. Show current page
+**Filtering Features:**
+- **Category Filtering**: Dynamic buttons based on post tags
+- **Clickable Tag Badges**: Tags in prompt cards are clickable and trigger filtering
+- **Real-time Search**: Search titles and descriptions instantly
+- **Combined Operations**: Search + category + sorting work together
+- **State Persistence**: Resets to page 1 when filters change
+- **No Results Handling**: Shows/hides "No prompts found" message
 
-**State Reset:**
-- Returns to page 1 when filters/search changes
-- Maintains filter state across pagination
-- Shows "No results" message when appropriate
+**Tag Integration:**
+- **Interactive Tags**: Converted static span badges to clickable buttons
+- **Visual Feedback**: Hover effects and cursor pointer for better UX
+- **Filter Activation**: Clicking tag automatically activates corresponding filter button
+- **Smooth Navigation**: Auto-scroll to top when tag filter is applied
+
+**Technical Implementation:**
+- Central `applyFiltersAndSort()` function handles all operations
+- Filter chain: All cards → Category filter → Search filter → Sort → Paginate
+- Efficient DOM manipulation for performance with large collections
+- Event delegation for dynamically generated tag buttons
 
 ## User Experience Improvements
 
