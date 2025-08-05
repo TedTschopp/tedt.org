@@ -16,7 +16,7 @@ tags:
   - Writing
   - Customization
 
-models-supported: [gpt-4, gpt-4-turbo, gpt-3.5-turbo, claude-3-opus, claude-3-sonnet, claude-3-haiku, gemini-pro, gemini-ultra, copilot, microsoft-copilot]
+models-supported: [gpt-4, gpt-4-turbo, gpt-3.5-turbo, gpt-4-mini, microsoft-copilot, github]
 image: "/img/prompts/prompt-variable-demo.png"
 image-alt: "A futuristic interface showing dynamic form elements and variables being processed"
 image-credits-title: "Dynamic Prompt Variables Interface"
@@ -188,6 +188,6 @@ The prompt dynamically updates as you fill in the variables, allowing you to see
 - **Help Text** - Guidance for each variable
 - **Reset Functionality** - Easily return to default values
 - **Copy/Download** - Get your customized prompt for use
-- **AI Provider Integration** - Send directly to ChatGPT, Claude, Gemini, etc.
+- **AI Provider Integration** - Send directly to ChatGPT, Microsoft Copilot, GitHub Copilot, etc.
 
 This system makes prompts more accessible and user-friendly while maintaining the flexibility needed for different use cases and audiences.

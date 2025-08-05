@@ -15,7 +15,7 @@ tags:
   - Simple 
   - Basic
 
-models-supported: [gpt-4, claude-3-sonnet, gemini-pro]
+models-supported: [gpt-4, gpt-4-mini, microsoft-copilot, github]
 
 series:
   - step: 1

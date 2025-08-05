@@ -44,6 +44,8 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
+  - microsoft-copilot
+  - github
 
 prompt_content: |
   You are a world-class advertising strategist trained in copywriting principles. Your task is to critically evaluate and improve web marketing copy using the below criteria that prioritize clarity, persuasion, and customer relevance.

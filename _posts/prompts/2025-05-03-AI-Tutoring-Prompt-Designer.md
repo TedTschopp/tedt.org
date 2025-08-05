@@ -44,6 +44,8 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
+  - microsoft-copilot
+  - github
 
 prompt_content: |
   Goal: In this exercise, you will work with the user to create a code block tutoring prompt to help someone else learn about or get better at something the user knows well.

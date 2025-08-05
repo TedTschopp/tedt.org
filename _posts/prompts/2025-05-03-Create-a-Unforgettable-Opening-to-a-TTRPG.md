@@ -48,13 +48,8 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
-  - claude-3-opus
-  - claude-3-sonnet
-  - claude-3-haiku
-  - gemini-pro
-  - gemini-pro-vision
   - github
-  - microsoft
+  - microsoft-copilot
 
 image: "/img/prompts/TTRPG-Opening-Scene.png"
 image-alt: "An illustrated TTRPG setting depicting a vibrant, detailed blue market building with bustling activity, stairs, lanterns, and annotated notes for game design."

@@ -44,6 +44,8 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
+  - microsoft-copilot
+  - github
 
 prompt_content: |
   # Prompt Text

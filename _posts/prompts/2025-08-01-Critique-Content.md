@@ -23,13 +23,9 @@ models-supported:
   - gpt-4
   - gpt-4-turbo
   - gpt-3.5-turbo
-  - claude-3-opus
-  - claude-3-sonnet
-  - claude-3-haiku
-  - gemini-pro
-  - gemini-ultra
-  - copilot
+  - gpt-4-mini
   - microsoft-copilot
+  - github
 
 image: "/img/prompts/academic-critique-template.png"
 image-alt: "A scholarly desk with papers, books, and evaluation forms representing academic critique and analysis"

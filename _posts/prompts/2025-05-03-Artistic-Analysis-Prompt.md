@@ -49,6 +49,8 @@ models-supported:
   - 03
   - 04-mini
   - 04-mini-high
+  - microsoft-copilot
+  - github
 
 image: "/img/prompts/Artistic-Scholar.png"
 image-alt: "Illustration of an elderly scholar with glasses seated among stacks of books and luminous bottles, set against an abstract, vibrant cityscape filled with swirling colors and intricate patterns."
