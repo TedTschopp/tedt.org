@@ -231,7 +231,7 @@
                 
                 <div class="w-100 mb-3">
                     {% for tag in page.tags %}
-                        <a href="/tools/prompt-library.html?filter={{ tag | downcase | slugify }}" 
+                        <a href="/prompt-library.html?filter={{ tag | downcase | slugify }}" 
                            class="badge bg-primary me-1 mb-1 text-decoration-none"
                            title="Filter prompts by {{ tag }}">
                             <i class="fas fa-tag"></i> {{ tag }}
@@ -531,7 +531,7 @@
                     <div class="col-12">
                         <div class="alert alert-info" role="alert">
                             <h5 class="alert-heading">No Related Prompts Found</h5>
-                            <p class="mb-0">We couldn't find any prompts with overlapping tags. <a href="/tools/prompt-library.html" class="alert-link">Browse all prompts</a> to discover more.</p>
+                            <p class="mb-0">We couldn't find any prompts with overlapping tags. <a href="/prompt-library.html" class="alert-link">Browse all prompts</a> to discover more.</p>
                         </div>
                     </div>
                 {% endif %}
