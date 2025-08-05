@@ -334,7 +334,7 @@
                       {% assign category_data_subtitle = category.subtitle %}
                       {% assign category_data_description = category.description %}
                       {% assign category_data_img = category.image %}
-                      <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
+                      <div class="carousel-item" data-bs-interval="2000" data-category-index="{{ forloop.index0 }}">
                         <div class="card-group">
                           <div class="card">                              
                             <div class="position-relative">
@@ -622,6 +622,30 @@
             
           }, 1500); // 1.5 second delay after page load
         });
+      });
+
+      // Random carousel start position
+      document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.getElementById('carousel-of-all-blog-categories');
+        if (!carousel) return;
+        
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        if (carouselItems.length === 0) return;
+        
+        // Generate random index
+        const randomIndex = Math.floor(Math.random() * carouselItems.length);
+        
+        // Set random item as active
+        carouselItems[randomIndex].classList.add('active');
+        
+        // Initialize Bootstrap carousel with the random starting position
+        const bootstrapCarousel = new bootstrap.Carousel(carousel, {
+          interval: 2000,
+          ride: false
+        });
+        
+        // Go to the random slide (this ensures proper initialization)
+        bootstrapCarousel.to(randomIndex);
       });
     </script>
 
