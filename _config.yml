@@ -90,6 +90,14 @@ collections:
    output: true
    permalink: /:collection/:title
 
+# Defaults for different types of posts
+defaults:
+  - scope:
+      path: "_posts/Prompts"
+      type: "posts"
+    values:
+      permalink: "/prompts/:slug/"
+
 # Variables that will be used elsewhere
 # Use {% assign author = site.authors[page.author] %} to get author which author
 authors:
