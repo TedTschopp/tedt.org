@@ -600,9 +600,10 @@
 
         // Helper function to get current prompt content (original or customized)
         function getCurrentPromptContent() {
-            const customizedElement = document.getElementById('customized-prompt');
-            if (customizedElement && customizedElement.style.display !== 'none') {
-                return customizedPrompt;
+            // If we have variables, always return the version with defaults/user values applied
+            if (variableDefinitions.length > 0) {
+                const variables = collectVariableValues();
+                return replaceVariables(originalPrompt, variables);
             }
             return originalPrompt;
         }
@@ -611,16 +612,19 @@
         function replaceVariables(content, variables) {
             let result = content;
             
-            // Only replace variables that have actual values (not empty or just default values)
+            // Replace all variables with their values (user input or defaults)
             for (const [key, value] of Object.entries(variables)) {
                 const variable = variableDefinitions.find(v => v.name === key);
-                const hasRealValue = value && value.trim() !== '' && value !== (variable?.default || '');
+                let replacementValue = value;
                 
-                if (hasRealValue) {
-                    // Handle both {{variable}} and {{ variable }} formats
-                    const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
-                    result = result.replace(regex, value);
+                // If no user value provided, use the default
+                if (!replacementValue || replacementValue.trim() === '') {
+                    replacementValue = variable?.default || '';
                 }
+                
+                // Handle both {{variable}} and {{ variable }} formats
+                const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
+                result = result.replace(regex, replacementValue);
             }
             return result;
         }
@@ -635,8 +639,13 @@
                     const checkboxes = document.querySelectorAll(`input[data-variable="${variable.name}"]:checked`);
                     if (checkboxes.length > 0) {
                         value = Array.from(checkboxes).map(cb => cb.value).join(', ');
-                    } else if (variable.default && Array.isArray(variable.default)) {
-                        value = variable.default.join(', ');
+                    } else if (variable.default) {
+                        // Handle both array and string defaults for checkboxes
+                        if (Array.isArray(variable.default)) {
+                            value = variable.default.join(', ');
+                        } else {
+                            value = variable.default;
+                        }
                     }
                 } else if (variable.type === 'radio') {
                     const radio = document.querySelector(`input[data-variable="${variable.name}"]:checked`);
@@ -647,7 +656,7 @@
                     }
                 } else {
                     const element = document.querySelector(`[data-variable="${variable.name}"]`);
-                    if (element && element.value) {
+                    if (element && element.value && element.value.trim() !== '') {
                         value = element.value;
                     } else {
                         value = variable.default || '';
@@ -668,7 +677,23 @@
             // Check if any variables have been filled with actual user input (not just defaults)
             const hasUserInput = Object.entries(variables).some(([key, value]) => {
                 const variable = variableDefinitions.find(v => v.name === key);
-                return value && value.trim() !== '' && value !== (variable?.default || '');
+                const defaultValue = variable?.default || '';
+                
+                // For form elements, check if current value differs from default
+                if (variable.type === 'checkbox') {
+                    const checkboxes = document.querySelectorAll(`input[data-variable="${variable.name}"]:checked`);
+                    const currentSelection = Array.from(checkboxes).map(cb => cb.value);
+                    const defaultSelection = Array.isArray(defaultValue) ? defaultValue : (defaultValue ? [defaultValue] : []);
+                    return JSON.stringify(currentSelection.sort()) !== JSON.stringify(defaultSelection.sort());
+                } else if (variable.type === 'radio') {
+                    const radio = document.querySelector(`input[data-variable="${variable.name}"]:checked`);
+                    const currentValue = radio ? radio.value : '';
+                    return currentValue !== defaultValue;
+                } else {
+                    const element = document.querySelector(`[data-variable="${variable.name}"]`);
+                    const currentValue = element ? element.value : '';
+                    return currentValue !== defaultValue;
+                }
             });
             
             const customizedElement = document.getElementById('customized-prompt-content');
@@ -676,14 +701,14 @@
             const customizedContainer = document.getElementById('customized-prompt');
             
             if (hasUserInput && customizedElement && customizedContainer) {
-                // Only replace variables and show customized version if user has actual input
+                // Show customized version when user has made changes
                 customizedPrompt = replaceVariables(originalPrompt, variables);
                 customizedElement.textContent = customizedPrompt;
                 
                 originalElement.style.display = 'none';
                 customizedContainer.style.display = 'block';
             } else {
-                // Show original prompt with placeholders intact
+                // Show original prompt with placeholders intact for UI purposes
                 originalElement.style.display = 'block';
                 customizedContainer.style.display = 'none';
             }
