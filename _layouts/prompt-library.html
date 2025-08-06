@@ -129,7 +129,7 @@
                 {% endfor %}
                 
                 {% assign sorted_tags = all_tags | sort %}
-                {% for tag in sorted_tags limit: 20 %}
+                {% for tag in sorted_tags %}
                     <button class="btn btn-outline-secondary btn-toggle flex-fill" 
                             style="min-width: 140px;" 
                             aria-pressed="false" 
