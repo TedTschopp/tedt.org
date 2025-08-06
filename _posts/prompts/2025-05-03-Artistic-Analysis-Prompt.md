@@ -21,26 +21,10 @@ author:
 date: 2025-05-04
 
 keywords:
-  - art criticism
-  - visual analysis
-  - symbolic interpretation
-  - cultural anthropology
-  - mythological themes
-  - multidisciplinary analysis
-  - deep art commentary
-  - artistic theory
-  - structural analysis
-  - film analysis
-  - music interpretation
-  - literary deconstruction
-  - performance art insights
-  - intertextual reading
-  - aesthetic psychology
-  - creative intent
-  - philosophical themes in art
-  - technical craftsmanship
-  - narrative architecture
-  - contemporary vs classical art
+  - Art Criticism
+  - Visual Analysis
+  - Symbolic Interpretation
+
 
 models-supported:
   - gpt-4

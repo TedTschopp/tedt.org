@@ -23,23 +23,11 @@ date: 2025-05-03
 
 keywords:
   - TTRPG
-  - story prompts
-  - worldbuilding
-  - session openings
-  - visual storytelling
+  - Story Prompts
+  - Worldbuilding
+  - Visual Storytelling
   - narrative design
-  - symbolic analysis
-  - mythological references
-  - cultural immersion
-  - creative maps
-  - player engagement
-  - ambient storytelling
-  - artistic theory
-  - multimedia analysis
-  - immersive design
-  - theatrical environments
-  - puzzle integration
-  - environmental storytelling
+
 
 models-supported:
   - gpt-4

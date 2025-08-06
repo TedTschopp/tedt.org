@@ -20,22 +20,10 @@ author:
 date: 2025-05-03
 
 keywords:
-  - marketing copy
-  - advertising strategy
-  - content optimization
-  - conversion copywriting
-  - copy critique
-  - website messaging
-  - UX writing
-  - persuasive language
-  - prompt engineering
-  - clarity and persuasion
-  - copy scoring
-  - headline testing
-  - CTA optimization
-  - storytelling
-  - brand positioning
-  - digital marketing
+  - Marketing
+  - Advertising Strategy
+  - Copy Critique
+
 
 models-supported:
   - gpt-4

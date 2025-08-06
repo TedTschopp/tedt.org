@@ -1,7 +1,7 @@
 ---
 layout: prompt-details
 title: "Midjourney Version 7 Prompt Generator Template"
-description: "A structured, weight-based system to generate high-quality prompts for Midjourney V6.1 image creation. Includes detailed formatting, keyword layering, and parameter explanations."
+description: "A structured, weight-based system to generate high-quality prompts for Midjourney V7 image creation. Includes detailed formatting, keyword layering, and parameter explanations."
 permalink: /prompts/midjourney-v7-prompt-template/
 categories: [Prompts]
 tags: 
@@ -19,24 +19,8 @@ date: 2025-07-25
 
 keywords:
   - Midjourney
-  - Midjourney V6.1
-  - prompt engineering
-  - generative AI
   - AI image generation
   - AI art
-  - prompt structure
-  - image prompts
-  - style guide
-  - aspect ratio
-  - chaos parameter
-  - stylize parameter
-  - seed value
-  - negative prompting
-  - photorealistic prompts
-  - anime prompts
-  - prompt layering
-  - structured prompt
-  - AI creative tools
   - visual storytelling
 
 models-supported:
