@@ -46,19 +46,6 @@
             clip: rect(0, 0, 0, 0) !important;
             border: 0 !important;
         }
-    
-        .btn-copy-prompt {
-            background-color: #20c997;
-            border: none;
-            color: rgba(16, 24, 32, 1.00);
-        }
-    
-        .btn-copy-prompt:hover,
-        .btn-copy-prompt:focus {
-            background-color: #29EDA5;
-            /* was #17a589;*/
-            color: rgba(0, 0, 0, 1.00)
-        }
 
         .tag-filter-btn {
             transition: all 0.2s ease;
@@ -71,6 +58,86 @@
 
         .tag-filter-btn:active {
             transform: scale(0.95);
+        }
+
+        /* AI Provider Button Styles - matching prompt-details.html */
+        .btn-send-chatgpt {
+            background-color: #10a37f;
+            border-color: #10a37f;
+            color: white;
+        }
+        .btn-send-chatgpt:hover, .btn-send-chatgpt:focus {
+            background-color: #0d8f6c;
+            border-color: #0d8f6c;
+            color: white;
+        }
+        
+        .btn-send-claude {
+            background-color: #575754;
+            border-color: #575754;
+            color: white;
+        }
+        .btn-send-claude:hover, .btn-send-claude:focus {
+            background-color: #6E6E6B;
+            border-color: #6E6E6B;
+            color: white;
+        }
+        
+        .btn-send-gemini {
+            background-color: #1f1f1f;
+            border-color: #1f1f1f;
+            color: white;
+        }
+        .btn-send-gemini:hover, .btn-send-gemini:focus {
+            background-color: #0d0d0d;
+            border-color: #0d0d0d;
+            color: white;
+        }
+        
+        .btn-send-microsoft {
+            background-color: #00a1f1;
+            border-color: #00a1f1;
+            color: white;
+        }
+        .btn-send-microsoft:hover, .btn-send-microsoft:focus {
+            background-color: #008ed0;
+            border-color: #008ed0;
+            color: white;
+        }
+        
+        .btn-send-github {
+            background-color: #08872B;
+            border-color: #08872B;
+            color: white;
+        }
+        .btn-send-github:hover, .btn-send-github:focus {
+            background-color: #5FED83;
+            border-color: #5FED83;
+            color: white;
+        }
+        
+        .ai-provider-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        .ai-provider-buttons .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.25rem 0.5rem;
+            min-width: 2rem;
+            height: 1.75rem;
+            border-radius: 0.25rem;
+        }
+        
+        .ai-provider-buttons .btn img {
+            height: 0.75rem;
+            width: auto;
+            object-fit: contain;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -194,13 +261,60 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-copy-prompt btn-sm w-100 animate__animated" 
+                                <div class="ai-provider-buttons" role="group" aria-label="Prompt actions">
+                                    <!-- Download Button -->
+                                    <button class="btn btn-primary btn-sm btn-download-prompt animate__animated" 
+                                            aria-label="Download prompt"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Download prompt as text file">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    
+                                    <!-- Copy Button -->
+                                    <button class="btn btn-primary btn-sm btn-copy-prompt animate__animated" 
                                             aria-label="Copy prompt to clipboard"
                                             data-prompt-url="{{ post.url | relative_url }}"
-                                            data-prompt-title="{{ post.title }}">
-                                        <i class="fas fa-copy"></i> Copy Prompt
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Copy prompt to clipboard">
+                                        <i class="fas fa-copy"></i>
                                     </button>
+
+                                    <!-- OpenAI ChatGPT -->
+                                    {% assign openai_models = post.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
+                                    {% if openai_models.size > 0 %}
+                                    <button class="btn btn-send-chatgpt btn-sm btn-send-openai animate__animated" 
+                                            aria-label="Send prompt to ChatGPT"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to OpenAI ChatGPT">
+                                        <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="12" height="12">
+                                    </button>
+                                    {% endif %}
+
+                                    <!-- Microsoft Copilot -->
+                                    {% assign microsoft_models = post.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
+                                    {% if microsoft_models.size > 0 %}
+                                    <button class="btn btn-send-microsoft btn-sm btn-send-microsoft animate__animated" 
+                                            aria-label="Send prompt to Microsoft Copilot"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to Microsoft Copilot">
+                                        <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="12" height="12">
+                                    </button>
+                                    {% endif %}
+
+                                    <!-- GitHub Copilot -->
+                                    {% assign github_models = post.models-supported | where_exp: "model", "model contains 'github'" %}
+                                    {% if github_models.size > 0 %}
+                                    <button class="btn btn-send-github btn-sm btn-send-github animate__animated" 
+                                            aria-label="Send prompt to GitHub Copilot"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to GitHub Copilot">
+                                        <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="12" height="12">
+                                    </button>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -526,6 +640,323 @@
             });
         }
 
+        // Download prompt functionality
+        document.querySelectorAll('.btn-download-prompt').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const promptUrl = this.getAttribute('data-prompt-url');
+                const promptTitle = this.getAttribute('data-prompt-title');
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Create download
+                    const blob = new Blob([promptContent], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `${promptTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.txt`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-download"></i>';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to download prompt: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-download"></i>';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // OpenAI ChatGPT send functionality
+        document.querySelectorAll('.btn-send-openai').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Open ChatGPT with prompt
+                    const defaultModel = "gpt-4";
+                    const encodedPrompt = encodeURIComponent(promptContent);
+                    const url = `https://chat.openai.com/?model=${defaultModel}&q=${encodedPrompt}`;
+                    window.open(url, '_blank', 'noopener');
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to ChatGPT: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // Microsoft Copilot send functionality
+        document.querySelectorAll('.btn-send-microsoft').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const promptTitle = this.getAttribute('data-prompt-title');
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Copy to clipboard and open Microsoft Copilot
+                    const fullPrompt = promptTitle + "\n\n" + promptContent;
+                    navigator.clipboard.writeText(fullPrompt).then(() => {
+                        alert('Prompt copied to clipboard! Please paste it into Microsoft Copilot');
+                        window.open('https://copilot.microsoft.com/', '_blank', 'noopener');
+                    });
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to Microsoft Copilot: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // GitHub Copilot send functionality
+        document.querySelectorAll('.btn-send-github').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Open GitHub Copilot with prompt
+                    const encodedPrompt = encodeURIComponent(promptContent);
+                    const url = `https://github.com/copilot?prompt=${encodedPrompt}`;
+                    window.open(url, '_blank', 'noopener');
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to GitHub Copilot: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+        });
+
         // Copy prompt to clipboard - enhanced to use prompt content with default variables
         document.querySelectorAll('.btn-copy-prompt').forEach(btn => {
             btn.addEventListener('click', function() {
@@ -579,12 +1010,12 @@
                     // Copy to clipboard
                     navigator.clipboard.writeText(promptContent).then(() => {
                         // Success feedback
-                        this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                        this.innerHTML = '<i class="fas fa-check"></i>';
                         this.classList.remove('animate__pulse');
                         void this.offsetWidth;
                         this.classList.add('animate__pulse');
                         setTimeout(() => {
-                            this.innerHTML = '<i class="fas fa-copy"></i> Copy Prompt';
+                            this.innerHTML = '<i class="fas fa-copy"></i>';
                             this.classList.remove('animate__pulse');
                             this.disabled = false;
                         }, 1500);
@@ -669,12 +1100,12 @@
                         })
                         .then(() => {
                             // Success feedback
-                            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                            this.innerHTML = '<i class="fas fa-check"></i>';
                             this.classList.remove('animate__pulse');
                             void this.offsetWidth;
                             this.classList.add('animate__pulse');
                             setTimeout(() => {
-                                this.innerHTML = '<i class="fas fa-copy"></i> Copy Prompt';
+                                this.innerHTML = '<i class="fas fa-copy"></i>';
                                 this.classList.remove('animate__pulse');
                                 this.disabled = false;
                             }, 1500);
@@ -686,13 +1117,13 @@
                             const textToCopy = `${promptTitle}\n\n${promptDescription}\n\nView full prompt: ${window.location.origin}${promptUrl}`;
                             
                             navigator.clipboard.writeText(textToCopy).then(() => {
-                                this.innerHTML = '<i class="fas fa-link"></i> Link Copied';
+                                this.innerHTML = '<i class="fas fa-link"></i>';
                             }).catch(() => {
-                                this.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
+                                this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
                             });
                             
                             setTimeout(() => {
-                                this.innerHTML = '<i class="fas fa-copy"></i> Copy Prompt';
+                                this.innerHTML = '<i class="fas fa-copy"></i>';
                                 this.disabled = false;
                             }, 1500);
                         });
