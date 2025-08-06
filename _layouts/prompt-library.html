@@ -119,7 +119,7 @@
         .ai-provider-buttons {
             display: flex;
             flex-wrap: nowrap;
-            gap: 0;
+            gap: 2px;
             width: 100%;
         }
         
@@ -130,20 +130,9 @@
             padding: 0.25rem 0.5rem;
             flex: 1;
             height: 1.75rem;
-            border-radius: 0;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.25rem;
         }
         
-        .ai-provider-buttons .btn:first-child {
-            border-top-left-radius: 0.25rem;
-            border-bottom-left-radius: 0.25rem;
-        }
-        
-        .ai-provider-buttons .btn:last-child {
-            border-top-right-radius: 0.25rem;
-            border-bottom-right-radius: 0.25rem;
-            border-right: none;
-        }
         
         .ai-provider-buttons .btn img {
             height: 0.75rem;
@@ -187,7 +176,7 @@
                 </form>
                 <div class="flex-shrink-0" style="min-width:200px;">
                     <label for="sort-select" class="visually-hidden">Sort prompts</label>
-                    <select class="form-select" id="sort-select" aria-label="Sort prompts">
+                    <select class="form-select" id="sort-select" aria-label="Sort prompts" disabled>
                         <option value="newest">Sort by Newest</option>
                         <option value="highest">Sort by Highest Rating</option>
                         <option value="alphabetical">Sort Alphabetically</option>
@@ -266,12 +255,6 @@
                                                 </button>
                                             {% endfor %}
                                         {% endif %}
-                                    </div>
-                                    <div class="like-container">
-                                        <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
-                                            <i class="fas fa-heart"></i> 
-                                            <span class="like-count">0</span>
-                                        </button>
                                     </div>
                                 </div>
                                 <div class="ai-provider-buttons" role="group" aria-label="Prompt actions">
