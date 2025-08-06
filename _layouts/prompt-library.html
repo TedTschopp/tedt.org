@@ -118,8 +118,9 @@
         
         .ai-provider-buttons {
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.25rem;
+            flex-wrap: nowrap;
+            gap: 0;
+            width: 100%;
         }
         
         .ai-provider-buttons .btn {
@@ -127,9 +128,21 @@
             align-items: center;
             justify-content: center;
             padding: 0.25rem 0.5rem;
-            min-width: 2rem;
+            flex: 1;
             height: 1.75rem;
-            border-radius: 0.25rem;
+            border-radius: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .ai-provider-buttons .btn:first-child {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        
+        .ai-provider-buttons .btn:last-child {
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+            border-right: none;
         }
         
         .ai-provider-buttons .btn img {
