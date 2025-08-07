@@ -9,7 +9,7 @@ author:
   url: https://tedt.org/
 date: 2025-08-01
 categories: [Prompts]
-tags: [
+tags: 
   - Academic Writing
   - Critique
   - Analysis
