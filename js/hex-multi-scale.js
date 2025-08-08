@@ -99,12 +99,26 @@
     const targetSpan = Math.min(width, height) * 0.9;
     const baseSizePerMile = (targetSpan / Math.sqrt(3)) / largestMiles;
 
+    let totalHexes = 0;
     SCALES.forEach(scale => {
       const size = baseSizePerMile * scale.miles;
       const layout = new Layout(Layout.pointy, new Point(size, size), new Point(0, 0));
       const hexes = tileHexes(layout, width, height);
+      totalHexes += hexes.length;
       hexes.forEach(h => drawHex(ctx, layout, h, scale.stroke, scale.fill, scale.lineWidth, scale.dash));
     });
+
+    // Center marker (debug)
+    ctx.save();
+    ctx.fillStyle = 'red';
+    ctx.beginPath();
+    ctx.arc(0, 0, 4 / state.zoom, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    if (window.HEX_DEBUG) {
+      console.log('[hex-multi-scale] render', { width, height, ratio, totalHexes, zoom: state.zoom, panX: state.panX, panY: state.panY });
+    }
 
     ctx.restore();
   }
