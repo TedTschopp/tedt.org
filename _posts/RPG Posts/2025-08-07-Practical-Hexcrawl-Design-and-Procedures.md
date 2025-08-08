@@ -123,6 +123,61 @@ This streamlined model keeps only three practical tiers: a broad strategic frame
 
 {% include utility/hex-multi-scale.html %}
 
+<script>
+// Debug script specifically for the blog post
+window.HEX_DEBUG = true; // Enable debug mode for hex-multi-scale.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('[blog-debug] DOM loaded, checking hex canvas state...');
+    
+    // Wait a moment for hex initialization
+    setTimeout(function() {
+        const canvas = document.getElementById('hex-multi-scale');
+        if (!canvas) {
+            console.error('[blog-debug] Canvas not found!');
+            return;
+        }
+        
+        console.log('[blog-debug] Canvas found:', {
+            width: canvas.width,
+            height: canvas.height,
+            styleWidth: canvas.style.width,
+            styleHeight: canvas.style.height,
+            initialized: canvas.dataset.initialized,
+            visible: canvas.offsetWidth > 0 && canvas.offsetHeight > 0
+        });
+        
+        // Check if hex.js dependencies are available
+        console.log('[blog-debug] Dependencies:', {
+            Layout: typeof Layout !== 'undefined',
+            Hex: typeof Hex !== 'undefined',
+            Point: typeof Point !== 'undefined'
+        });
+        
+        // Try to get canvas context and check for drawn content
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+            console.log('[blog-debug] Canvas context available');
+            
+            // Try a simple test draw
+            ctx.save();
+            ctx.fillStyle = 'yellow';
+            ctx.fillRect(10, 10, 20, 20);
+            ctx.restore();
+            console.log('[blog-debug] Test yellow rectangle drawn');
+        }
+        
+        // Force a re-render if hex functions are available
+        if (typeof Layout !== 'undefined' && typeof Hex !== 'undefined' && typeof Point !== 'undefined') {
+            console.log('[blog-debug] Attempting manual render...');
+            // Trigger a window resize event to force re-render
+            window.dispatchEvent(new Event('resize'));
+        }
+        
+    }, 1000);
+});
+</script>
+
 ---
 
 ## Layer 3: Minimal Base Stocking

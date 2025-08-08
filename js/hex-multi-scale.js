@@ -272,18 +272,76 @@
   }
 
   function init() {
+    console.log('[hex-multi-scale] Starting initialization...');
+    
     const canvas = document.getElementById('hex-multi-scale');
-    if (!canvas) return;
-    ensureHiDpi(canvas);
-    render(canvas);
-    buildLegend();
-    attachControls(canvas);
-    window.addEventListener('resize', () => { ensureHiDpi(canvas); render(canvas); });
+    if (!canvas) {
+      console.warn('[hex-multi-scale] Canvas element not found');
+      return;
+    }
+    
+    console.log('[hex-multi-scale] Canvas found, dimensions:', canvas.offsetWidth, 'x', canvas.offsetHeight);
+    
+    try {
+      ensureHiDpi(canvas);
+      console.log('[hex-multi-scale] HiDPI setup complete');
+      
+      render(canvas);
+      console.log('[hex-multi-scale] Initial render complete');
+      
+      buildLegend();
+      console.log('[hex-multi-scale] Legend built');
+      
+      attachControls(canvas);
+      console.log('[hex-multi-scale] Controls attached');
+      
+      // Mark as initialized
+      canvas.dataset.initialized = 'true';
+      
+      window.addEventListener('resize', () => { 
+        console.log('[hex-multi-scale] Window resized, re-rendering');
+        ensureHiDpi(canvas); 
+        render(canvas); 
+      });
+      
+      console.log('[hex-multi-scale] Initialization complete');
+    } catch (error) {
+      console.error('[hex-multi-scale] Error during initialization:', error);
+    }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
+  // Multiple attempts to initialize to handle different loading scenarios
+  function attemptInit() {
+    if (typeof Layout === 'undefined' || typeof Hex === 'undefined' || typeof Point === 'undefined') {
+      console.warn('[hex-multi-scale] Dependencies not ready, retrying in 100ms...');
+      setTimeout(attemptInit, 100);
+      return;
+    }
+    
+    const canvas = document.getElementById('hex-multi-scale');
+    if (!canvas) {
+      console.warn('[hex-multi-scale] Canvas not ready, retrying in 100ms...');
+      setTimeout(attemptInit, 100);
+      return;
+    }
+    
     init();
   }
+
+  // Try multiple initialization strategies
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attemptInit);
+  } else {
+    attemptInit();
+  }
+  
+  // Also try after window load as a fallback
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (!document.getElementById('hex-multi-scale')?.dataset.initialized) {
+        console.log('[hex-multi-scale] Fallback initialization attempt');
+        attemptInit();
+      }
+    }, 500);
+  });
 })();
