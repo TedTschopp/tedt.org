@@ -79,8 +79,10 @@
     const { width, height } = canvas;
     ctx.clearRect(0, 0, width, height);
 
-    ctx.save();
-    ctx.translate(width / 2, height / 2);
+  ctx.save();
+  ctx.translate(width / 2, height / 2);
+  ctx.scale(state.zoom, state.zoom);
+  ctx.translate(state.panX, state.panY);
 
     SCALES.forEach(scale => {
       const layout = new Layout(Layout.pointy, new Point(scale.size, scale.size), new Point(0, 0));
@@ -104,11 +106,60 @@
     }
   }
 
+  const state = {
+    zoom: 1,
+    panX: 0,
+    panY: 0,
+    isDragging: false,
+    dragStartX: 0,
+    dragStartY: 0
+  };
+
+  function attachControls(canvas) {
+    const zoomIn = document.getElementById('hex-zoom-in');
+    const zoomOut = document.getElementById('hex-zoom-out');
+    const resetBtn = document.getElementById('hex-reset');
+    function applyZoom(factor) {
+      const newZoom = Math.min(4, Math.max(0.25, state.zoom * factor));
+      state.zoom = newZoom;
+      render(canvas);
+    }
+    zoomIn && zoomIn.addEventListener('click', () => applyZoom(1.25));
+    zoomOut && zoomOut.addEventListener('click', () => applyZoom(0.8));
+    resetBtn && resetBtn.addEventListener('click', () => { state.zoom = 1; state.panX = 0; state.panY = 0; render(canvas); });
+
+    // Drag to pan
+    canvas.addEventListener('mousedown', e => {
+      state.isDragging = true;
+      state.dragStartX = e.clientX;
+      state.dragStartY = e.clientY;
+      canvas.style.cursor = 'grabbing';
+    });
+    window.addEventListener('mouseup', () => {
+      state.isDragging = false;
+      canvas.style.cursor = 'grab';
+    });
+    window.addEventListener('mousemove', e => {
+      if (!state.isDragging) return;
+      const dx = e.clientX - state.dragStartX;
+      const dy = e.clientY - state.dragStartY;
+      state.dragStartX = e.clientX;
+      state.dragStartY = e.clientY;
+      // Convert screen delta to world delta
+      state.panX += dx / state.zoom;
+      state.panY += dy / state.zoom;
+      render(canvas);
+    });
+    // Set initial cursor
+    canvas.style.cursor = 'grab';
+  }
+
   function init() {
     const canvas = document.getElementById('hex-multi-scale');
     if (!canvas) return;
     ensureHiDpi(canvas);
     render(canvas);
+  attachControls(canvas);
     window.addEventListener('resize', () => { ensureHiDpi(canvas); render(canvas); });
   }
 
