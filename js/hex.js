@@ -1,12 +1,14 @@
 // Generated code -- http://www.redblobgames.com/grids/hexagons/
 (function (factory) {
-    if (typeof module === "object" && typeof module.exports === "object") {
-        var v = factory(require, exports);
+    // Use CommonJS only if both module.exports and a real require() are present
+    if (typeof module === "object" && typeof module.exports === "object" && typeof require === "function") {
+        var v = factory(require, module.exports);
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
         define(["require", "exports"], factory);
     } else {
+        // Browser global fallback: expose onto window
         factory(null, window);
     }
 })(function (require, exports) {
