@@ -201,8 +201,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         logLayout('after-test');
     }, 500);
-        
-    }, 1000);
 });
 </script>
 
