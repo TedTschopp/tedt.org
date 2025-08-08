@@ -76,22 +76,30 @@
 
   function render(canvas) {
     const ctx = canvas.getContext('2d');
-    const { width, height } = canvas;
-    ctx.clearRect(0, 0, width, height);
+    const ratio = window.devicePixelRatio || 1;
+    const physicalW = canvas.width;   // actual backing store size
+    const physicalH = canvas.height;
+    const width = physicalW / ratio;  // logical (CSS) size
+    const height = physicalH / ratio;
 
-  ctx.save();
-  ctx.translate(width / 2, height / 2);
-  ctx.scale(state.zoom, state.zoom);
-  ctx.translate(state.panX, state.panY);
+    // Reset transform and clear entire backing store.
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, physicalW, physicalH);
 
-    // Determine base size so largest hex roughly fits inside canvas.
+    // Re-apply hiDPI scale so 1 unit == 1 CSS pixel.
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+    ctx.save();
+    ctx.translate(width / 2, height / 2);
+    ctx.scale(state.zoom, state.zoom);
+    ctx.translate(state.panX, state.panY);
+
+    // Determine base size so largest hex roughly fits inside visible logical canvas.
     const largestMiles = SCALES[0].miles; // 36
-    // choose target width (90% of min dimension)
     const targetSpan = Math.min(width, height) * 0.9;
-    // width of a hex in pixels is sqrt(3) * size; we want largest hex width == targetSpan
     const baseSizePerMile = (targetSpan / Math.sqrt(3)) / largestMiles;
 
-  SCALES.forEach(scale => {
+    SCALES.forEach(scale => {
       const size = baseSizePerMile * scale.miles;
       const layout = new Layout(Layout.pointy, new Point(size, size), new Point(0, 0));
       const hexes = tileHexes(layout, width, height);
@@ -107,8 +115,6 @@
     if (canvas.width !== rect.width * ratio) {
       canvas.width = rect.width * ratio;
       canvas.height = rect.height * ratio;
-      const ctx = canvas.getContext('2d');
-      ctx.scale(ratio, ratio);
     }
   }
 
