@@ -11,22 +11,39 @@
 
   // Ordered largest -> smallest so smaller scales render on top with priority
   const SCALES = [
-    { miles: 72, radius: 5,  size: 8,   stroke: 'hsla(280,40%,45%,0.55)', fill: 'hsla(280,40%,55%,0.035)', label: false, lineWidth: 1.25, dash: [6,4] },
-    { miles: 36, radius: 6,  size: 10,  stroke: 'hsla(255,45%,48%,0.55)', fill: 'hsla(255,45%,55%,0.035)', label: false, lineWidth: 1.15, dash: [5,4] },
-    { miles: 24, radius: 7,  size: 12,  stroke: 'hsla(300,55%,60%,0.55)', fill: 'hsla(300,55%,60%,0.04)',  label: false, lineWidth: 1.1 },
-    { miles: 12, radius: 9,  size: 18,  stroke: 'hsla(15,80%,55%,0.55)',  fill: 'hsla(15,80%,55%,0.04)',  label: false, lineWidth: 1 },
-    { miles: 6,  radius: 11, size: 26,  stroke: 'hsla(48,90%,45%,0.55)',  fill: 'hsla(48,90%,45%,0.05)',  label: false, lineWidth: 0.9 },
-    { miles: 3,  radius: 14, size: 34,  stroke: 'hsla(140,60%,45%,0.55)', fill: 'hsla(140,60%,45%,0.06)',  label: false, lineWidth: 0.85 },
-    { miles: 1,  radius: 18, size: 44,  stroke: 'hsla(200,80%,50%,0.65)', fill: 'hsla(200,80%,50%,0.08)',  label: true,  lineWidth: 0.8 }
+    // Larger scales rendered first (underlay)
+    { miles: 36, size: 40, stroke: 'hsla(255,45%,48%,0.55)', fill: 'hsla(255,45%,55%,0.03)', label: false, lineWidth: 1.2, dash: [6,5] },
+    { miles: 6,  size: 14, stroke: 'hsla(48,90%,45%,0.55)',  fill: 'hsla(48,90%,45%,0.045)', label: false, lineWidth: 0.95 },
+    { miles: 1,  size: 6,  stroke: 'hsla(200,80%,50%,0.70)', fill: 'hsla(200,80%,50%,0.07)', label: false, lineWidth: 0.7 }
   ];
 
-  function shapeHexagon(size) {
+  // Compute all hexes whose polygon intersects the canvas rectangle.
+  function tileHexes(layout, width, height) {
     const hexes = [];
-    for (let q = -size; q <= size; q++) {
-      const r1 = Math.max(-size, -q - size);
-      const r2 = Math.min(size, -q + size);
-      for (let r = r1; r <= r2; r++) {
-        hexes.push(new Hex(q, r, -q - r));
+    // Estimate bounds in axial coordinates.
+    const size = layout.size; // Point
+    const hexWidth = Math.sqrt(3) * size.x;
+    const hexHeight = 2 * size.y * 0.75 + size.y * 0.25; // approx (since vertical spacing 1.5 * size.y)
+    const maxQ = Math.ceil((width / hexWidth)) + 2;
+    const maxR = Math.ceil((height / (size.y * 1.5))) + 2;
+    // Translate canvas center origin; we'll check polygon corners after translation.
+    for (let q = -maxQ; q <= maxQ; q++) {
+      for (let r = -maxR; r <= maxR; r++) {
+        const s = -q - r;
+        // basic axial validity (not strictly needed because we allow all triples summing to zero)
+        const hex = new Hex(q, r, s);
+        const corners = layout.polygonCorners(hex);
+        // If any corner inside bounds, keep.
+        let inside = false;
+        for (const p of corners) {
+          if (p.x >= -width/2 && p.x <= width/2 && p.y >= -height/2 && p.y <= height/2) { inside = true; break; }
+        }
+        if (!inside) {
+          // also keep if center within bounds
+          const center = layout.hexToPixel(hex);
+          if (center.x >= -width/2 && center.x <= width/2 && center.y >= -height/2 && center.y <= height/2) inside = true;
+        }
+        if (inside) hexes.push(hex);
       }
     }
     return hexes;
@@ -67,12 +84,10 @@
 
     SCALES.forEach(scale => {
       const layout = new Layout(Layout.pointy, new Point(scale.size, scale.size), new Point(0, 0));
-      const hexes = shapeHexagon(scale.radius);
-  hexes.forEach(h => drawHex(ctx, layout, h, scale.stroke, scale.fill, scale.lineWidth, scale.dash));
-      if (scale.label) {
-        // label only the center for smallest scale to avoid noise
-        drawLabel(ctx, layout, new Hex(0,0,0), scale.miles + ' mi');
-      }
+      const hexes = tileHexes(layout, width, height);
+      hexes.forEach(h => drawHex(ctx, layout, h, scale.stroke, scale.fill, scale.lineWidth, scale.dash));
+      // Optionally label origin for each scale (disabled to avoid clutter). Uncomment if desired.
+      // drawLabel(ctx, layout, new Hex(0,0,0), scale.miles + ' mi');
     });
 
     ctx.restore();

@@ -79,83 +79,52 @@ Write three sentences answering those. Everything else hangs off them. Put them 
 
 ## Layer 2: Scale & Discipline
 
-### **Nested Hex Zoom Cascade (No 2 or 5 Mile Levels)**
+### **Three-Level Hex Zoom Cascade (36 → 6 → 1 Mile)**
 
-#### **72 Miles per Hex – Continental Overview**
+This streamlined model keeps only three practical tiers: a broad strategic frame (36), the classic daily exploration layer (6), and the tactically precise local layer (1). Fewer tiers = faster prep and clearer player mental maps.
 
-* **Use:** Map whole continents, oceans, and the largest landmasses. Each hex = several days’ travel.
-* **Tactical Zoom Trigger:** Choose a region of interest (like a frontier or war zone) and drop to 36-mile hexes to begin regional planning.
-* **Example Settings:**
+#### **36 Miles per Hex – Strategic Region**
 
-  * Europe in the Age of Exploration
-  * North America for a post-apocalyptic campaign
-  * Pan-continental trade routes in a fantasy empire
+- **Use:** Map large territories spanning multiple polities or sweeping frontier zones; establish macro terrain, major routes, and anchor regions.
+- **Tactical Zoom Trigger:** When players focus on a borderland, frontier, or specific kingdom segment — zoom to 6-mile hexes for wilderness-ready play.
+- **Example Settings:**
 
-#### **36 Miles per Hex – Multi-Country Regions**
+  - Iberian Peninsula (Reconquista arc)
+  - British Isles (Viking or Saxon pressures)
+  - Silk Road steppe / caravan corridor
 
-* **Use:** Map large territories with multiple countries or massive wilderness zones.
-* **Tactical Zoom Trigger:** Identify a single kingdom or major region and zoom to 24-mile hexes for detailed political and geographic features.
-* **Example Settings:**
+#### **6 Miles per Hex – Wilderness Exploration Core**
 
-  * Iberian Peninsula during the Reconquista
-  * British Isles during the Viking Age
-  * Central Asia in a Silk Road campaign
+- **Use:** Primary hexcrawl layer; one hex ≈ a day’s mixed-foot travel (adjust for terrain). Stock anchors, active sites, and anomalies here.
+- **Tactical Zoom Trigger:** Approaching a keyed site cluster, settlement environs, complex valley, or battlefield — zoom to 1-mile hexes for spatial choices.
+- **Example Settings:**
 
-#### **24 Miles per Hex – Large Country / Multi-Province**
+  - Contested marches / border counties
+  - Mountain basins & upland plateaus
+  - Great forest interiors / national parks analogs
 
-* **Use:** Show entire nations, key trade routes, and macro-political boundaries.
-* **Tactical Zoom Trigger:** When players move into a specific province or borderland, zoom to 12-mile hexes to reveal cities, fortresses, and regional hazards.
-* **Example Settings:**
+#### **1 Mile per Hex – Local Tactical Detail**
 
-  * France during the Hundred Years’ War
-  * Imperial Japan in the Edo period
-  * Multi-province fantasy kingdom
+- **Use:** Site adjacency, farmland rings, fortress approaches, hamlet clusters, environmental micro-features; supports precise approach vectors.
+- **Tactical Zoom Trigger:** Entering settlement limits, staging an assault, micro‑navigating hazards, or transitioning to dungeon / structure / battle maps.
+- **Example Settings:**
 
-#### **12 Miles per Hex – Kingdom Level**
-
-* **Use:** Map a single kingdom or major province in enough detail to plan multi-day travel.
-* **Tactical Zoom Trigger:** Entering a wilderness region, contested zone, or area for a war campaign — zoom to 6-mile hexes for terrain and encounter detail.
-* **Example Settings:**
-
-  * Medieval Wales or Scotland
-  * Fantasy kingdom borderlands
-  * Large island nations like Ireland or Taiwan
-
-#### **6 Miles per Hex – County / Wilderness Exploration**
-
-* **Use:** Classic wilderness hex crawl scale. A single day’s travel by foot per hex is easy to manage.
-* **Tactical Zoom Trigger:** Approaching a dungeon site, key valley, or settlement — zoom to 1-mile hexes to position encounter areas.
-* **Example Settings:**
-
-  * Border counties in civil war
-  * Remote mountain valleys
-  * Large national parks or wildlands
-
-#### **1 Mile per Hex – Local Detail**
-
-* **Use:** Map villages, small towns, fortresses, and surrounding countryside with individual features marked.
-* **Tactical Zoom Trigger:** Moving into a settlement or fort — swap to building maps, tactical battle maps, or property layouts.
-* **Example Settings:**
-
-  * Walled city and surrounding fields
-  * Large battlefield layouts
-  * Estate and farmland mapping
+  - Walled town + fields + mills
+  - Fortified pass choke & watch towers
+  - Estate, quarry, or battlefield layout
 
 ### **Integrated Scale Cascade Table**
 
-| Tier | Hex Size  | Scope                | Tactical Zoom Trigger           | Examples                          |
-| ---- | --------- | -------------------- | ------------------------------- | --------------------------------- |
-| 1    | **72 mi** | Continent            | Pick a major region             | Europe, North America             |
-| 2    | **36 mi** | Multi-country region | Focus on a nation               | Iberian Peninsula, British Isles  |
-| 3    | **24 mi** | Large country        | Focus on a province             | France, Japan                     |
-| 4    | **12 mi** | Kingdom              | Focus on wilderness zone        | Wales, Fantasy realm              |
-| 5    | **6 mi**  | County / wilderness  | Approach a key site             | Border counties, mountain valleys |
-| 6    | **1 mi**  | Local detail         | Enter settlement or battlefield | Villages, forts, estates          |
+| Tier | Hex Size | Scope              | Tactical Zoom Trigger             | Examples                         |
+| ---- | -------- | ------------------ | --------------------------------- | -------------------------------- |
+| 1    | **36 mi**| Strategic region   | Focus narrows to frontier zone    | Iberian Peninsula, British Isles |
+| 2    | **6 mi** | Wilderness core    | Approach a keyed/local site area  | Border counties, mountain basins |
+| 3    | **1 mi** | Local tactical     | Enter settlement / assault / setup| Town fields, forts, estates      |
 
 {% include utility/hex-multi-scale.html %}
 
-
 ---
+
 ## Layer 3: Minimal Base Stocking
 
 Stop trying to lovingly handcraft every cell. Seed with **density bands**:
@@ -170,6 +139,7 @@ Stop trying to lovingly handcraft every cell. Seed with **density bands**:
 You only fully key Anchors and the first wave of Actives. Lurking slots get a **one-line seed**. Empties get a **terrain note + a travel complication die**.
 
 ---
+
 ## Layer 4: Terrain = Decision Pressure
 
 Every terrain tag should do work:
@@ -182,6 +152,7 @@ Every terrain tag should do work:
 Add **one anomaly per 6–8 hexes**: inverted waterfall, glassed crater ridge, migrating sinkholes. Players remember anomalies more than generic forests.
 
 ---
+
 ## Layer 5: Encounter Architecture
 
 Encounters are not random events; they’re **state probes**.
