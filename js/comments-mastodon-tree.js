@@ -1,5 +1,4 @@
----
----
+// (Removed YAML front matter markers accidentally introduced)
 
         //I think this is ready for testing, however I still need to wire it into the displayToot function.  
         //I also need to update the createCarousel function to use the new design.
@@ -279,12 +278,15 @@
             console.log(arr);
             // var displayJson = JSON.stringify(arr, null, 2);
             // handle missing / alternate variables
+            if (!arr) { return; }
             if (!arr.account) {
                 // handling data likely from Shuttlecraft
                 var display_name = "Unknown";
                 if (arr.attributedTo && typeof arr.attributedTo === "string") {
-                    var displayNameParts = arr.attributedTo.split("/");
-                    display_name = displayNameParts[displayNameParts.length - 1];
+                    try {
+                        var displayNameParts = arr.attributedTo.split("/");
+                        display_name = displayNameParts[displayNameParts.length - 1] || display_name;
+                    } catch(e) {}
                 }
                 arr.account = {
                     url: arr.attributedTo || "#",
@@ -293,9 +295,8 @@
                     username: display_name,
                 };
             }
-            if (!arr.created_at) {
-                arr.created_at = arr.published;
-            }
+            if (!arr.created_at) { arr.created_at = arr.published || ''; }
+            if (!arr.url) { arr.url = '#'; }
             // figure out multiple authors in comments thread
             var instanceName = arr.url
                 .replaceAll("http://", "")

@@ -274,8 +274,20 @@ function displayTootAccount(arr, element) {
 
 // TODO: display or link to attachments
 function displayToot(arr, element) {
+    if (!arr || (!arr.account && !arr.attributedTo)) { return; }
+    // Defensive defaults
+    if (!arr.account) {
+        let displayName = 'Unknown';
+        if (typeof arr.attributedTo === 'string') {
+            const parts = arr.attributedTo.split('/');
+            displayName = parts[parts.length-1] || displayName;
+        }
+        arr.account = { url: arr.attributedTo || '#', avatar: '', display_name: displayName, username: displayName, id: '' };
+    }
+    if (!arr.url) { arr.url = '#'; }
+    if (!arr.created_at) { arr.created_at = arr.published || ''; }
     // var displayJson = JSON.stringify(arr, null, 2);
-    var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+    var instanceName = (arr.url||'').replaceAll('http://','').replaceAll('https://','').split('/')[0] || '';
     originalAuthorId = arr.account.id;
     previousAuthorId = arr.account.id;
     originalAuthorUsername = arr.account.username;

@@ -7,8 +7,11 @@
       <button type="button" class="btn btn-sm btn-light border" id="hex-zoom-out" aria-label="Zoom out" title="Zoom out (-)">−</button>
       <button type="button" class="btn btn-sm btn-light border" id="hex-reset" aria-label="Reset view" title="Reset view">⟳</button>
     </div>
+  <div id="hex-legend" class="hex-legend bg-body-tertiary rounded shadow-sm p-2 small" style="position:absolute;left:.5rem;top:.5rem;max-width:55%;line-height:1.1;pointer-events:none;">
+      <!-- Legend populated by hex-multi-scale.js -->
+    </div>
   </div>
-  <figcaption class="visually-hidden">Drag to pan. Use buttons to zoom or reset.</figcaption>
+  <figcaption class="visually-hidden">Drag to pan. Use buttons, mouse wheel, pinch (touch) to zoom, or reset.</figcaption>
 </figure>
 <script src="/js/hex.js"></script>
 <script src="/js/hex-multi-scale.js" defer></script>

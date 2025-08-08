@@ -197,7 +197,9 @@
 
                 </article>
 
-                {% include social/comments-mastodon-tree.html %}
+                                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                                    {% include social/comments-mastodon-tree.html %}
+                                {% endif %}
                 <hr>
 
                 {% include social/comments-webmentions.html %}
