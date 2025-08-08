@@ -82,6 +82,14 @@
     const width = physicalW / ratio;  // logical (CSS) size
     const height = physicalH / ratio;
 
+    // Safety check: don't render if dimensions are invalid
+    if (width <= 0 || height <= 0 || !isFinite(width) || !isFinite(height)) {
+      if (window.HEX_DEBUG) {
+        console.warn('[hex-multi-scale] Skipping render: invalid dimensions', { width, height, physicalW, physicalH, ratio });
+      }
+      return;
+    }
+
     // Reset transform and clear entire backing store.
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, physicalW, physicalH);
@@ -298,10 +306,20 @@
       // Mark as initialized
       canvas.dataset.initialized = 'true';
       
+      let resizeTimeout;
       window.addEventListener('resize', () => { 
-        console.log('[hex-multi-scale] Window resized, re-rendering');
-        ensureHiDpi(canvas); 
-        render(canvas); 
+        // Debounce resize events to prevent excessive rendering
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          console.log('[hex-multi-scale] Window resized, re-rendering');
+          const rect = canvas.getBoundingClientRect();
+          if (rect.width > 0 && rect.height > 0) {
+            ensureHiDpi(canvas); 
+            render(canvas);
+          } else if (window.HEX_DEBUG) {
+            console.warn('[hex-multi-scale] Skipping resize render: canvas has zero dimensions', rect);
+          }
+        }, 16); // ~60fps throttling
       });
       
       console.log('[hex-multi-scale] Initialization complete');
