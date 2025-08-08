@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ted Tschopp -- Owner / Author -- @TedTschopp
+
+# THANKS
+
+    Open-source contributors and the Jekyll community
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Bootstrap 5
+    Jekyll, Liquid templating
+    Python, YAML

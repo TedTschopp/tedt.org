@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Details Page - Accessibility Tests</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .pass { color: green; }
+        .fail { color: red; }
+        .warning { color: orange; }
+        .results { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Prompt Details Page - Accessibility Tests</h1>
+    
+    <div class="test-section">
+        <h2>Keyboard Navigation Tests</h2>
+        <div id="keyboard-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>ARIA Labels and Descriptions Tests</h2>
+        <div id="aria-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Color Contrast Tests</h2>
+        <div id="contrast-results" class="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Form Accessibility Tests</h2>
+        <div id="form-results" class="results"></div>
+    </div>
+
+    <script>
+        // Accessibility testing utility functions
+        function testKeyboardNavigation() {
+            const results = document.getElementById('keyboard-results');
+            const tests = [];
+            
+            // Test for focusable elements
+            const focusableElements = document.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            
+            tests.push({
+                name: 'All interactive elements are focusable',
+                pass: focusableElements.length > 0,
+                message: `Found ${focusableElements.length} focusable elements`
+            });
+            
+            // Test for proper focus indicators
+            let hasFocusIndicators = true;
+            focusableElements.forEach(el => {
+                const styles = window.getComputedStyle(el, ':focus');
+                if (!styles.outline && !styles.boxShadow && !styles.backgroundColor) {
+                    hasFocusIndicators = false;
+                }
+            });
+            
+            tests.push({
+                name: 'Elements have visible focus indicators',
+                pass: hasFocusIndicators,
+                message: hasFocusIndicators ? 'All elements have focus indicators' : 'Some elements missing focus indicators'
+            });
+            
+            displayResults(results, tests);
+        }
+        
+        function testARIALabels() {
+            const results = document.getElementById('aria-results');
+            const tests = [];
+            
+            // Test for buttons with proper labels
+            const buttons = document.querySelectorAll('button');
+            let buttonsWithLabels = 0;
+            buttons.forEach(btn => {
+                if (btn.getAttribute('aria-label') || btn.textContent.trim() || btn.getAttribute('aria-labelledby')) {
+                    buttonsWithLabels++;
+                }
+            });
+            
+            tests.push({
+                name: 'Buttons have accessible labels',
+                pass: buttonsWithLabels === buttons.length,
+                message: `${buttonsWithLabels}/${buttons.length} buttons have proper labels`
+            });
+            
+            // Test for form elements with labels
+            const formInputs = document.querySelectorAll('input, select, textarea');
+            let inputsWithLabels = 0;
+            formInputs.forEach(input => {
+                const hasLabel = document.querySelector(`label[for="${input.id}"]`) || 
+                                input.getAttribute('aria-label') || 
+                                input.getAttribute('aria-labelledby');
+                if (hasLabel) inputsWithLabels++;
+            });
+            
+            tests.push({
+                name: 'Form inputs have associated labels',
+                pass: inputsWithLabels === formInputs.length,
+                message: `${inputsWithLabels}/${formInputs.length} inputs have proper labels`
+            });
+            
+            displayResults(results, tests);
+        }
+        
+        function testColorContrast() {
+            const results = document.getElementById('contrast-results');
+            const tests = [];
+            
+            // This is a simplified test - in real scenarios, use tools like axe-core
+            const textElements = document.querySelectorAll('p, span, div, h1, h2, h3, h4, h5, h6, button, a');
+            let contrastWarnings = 0;
+            
+            textElements.forEach(el => {
+                const styles = window.getComputedStyle(el);
+                const color = styles.color;
+                const backgroundColor = styles.backgroundColor;
+                
+                // Simple check for obvious contrast issues (very basic)
+                if (color === 'rgb(255, 255, 255)' && backgroundColor === 'rgb(255, 255, 255)') {
+                    contrastWarnings++;
+                }
+            });
+            
+            tests.push({
+                name: 'Basic color contrast check',
+                pass: contrastWarnings === 0,
+                message: contrastWarnings === 0 ? 'No obvious contrast issues found' : `${contrastWarnings} potential contrast issues`
+            });
+            
+            displayResults(results, tests);
+        }
+        
+        function testFormAccessibility() {
+            const results = document.getElementById('form-results');
+            const tests = [];
+            
+            // Test for required field indicators
+            const requiredFields = document.querySelectorAll('[required]');
+            let requiredWithIndicators = 0;
+            requiredFields.forEach(field => {
+                const label = document.querySelector(`label[for="${field.id}"]`);
+                if (label && (label.textContent.includes('*') || field.getAttribute('aria-required'))) {
+                    requiredWithIndicators++;
+                }
+            });
+            
+            tests.push({
+                name: 'Required fields have visual indicators',
+                pass: requiredWithIndicators === requiredFields.length,
+                message: `${requiredWithIndicators}/${requiredFields.length} required fields have indicators`
+            });
+            
+            // Test for error message association
+            const errorElements = document.querySelectorAll('.is-invalid');
+            let errorsWithMessages = 0;
+            errorElements.forEach(el => {
+                if (el.getAttribute('aria-describedby') || el.nextElementSibling?.classList.contains('invalid-feedback')) {
+                    errorsWithMessages++;
+                }
+            });
+            
+            tests.push({
+                name: 'Form errors have associated messages',
+                pass: errorElements.length === 0 || errorsWithMessages === errorElements.length,
+                message: errorElements.length === 0 ? 'No form errors present' : `${errorsWithMessages}/${errorElements.length} errors have messages`
+            });
+            
+            displayResults(results, tests);
+        }
+        
+        function displayResults(container, tests) {
+            container.innerHTML = '';
+            tests.forEach(test => {
+                const div = document.createElement('div');
+                div.className = test.pass ? 'pass' : 'fail';
+                div.innerHTML = `
+                    <strong>${test.pass ? '✓' : '✗'} ${test.name}</strong><br>
+                    ${test.message}
+                `;
+                container.appendChild(div);
+            });
+        }
+        
+        // Run all tests when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            testKeyboardNavigation();
+            testARIALabels();
+            testColorContrast();
+            testFormAccessibility();
+        });
+        
+        // Export functions for use in other testing frameworks
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = {
+                testKeyboardNavigation,
+                testARIALabels,
+                testColorContrast,
+                testFormAccessibility
+            };
+        }
+    </script>
+</body>
+</html>

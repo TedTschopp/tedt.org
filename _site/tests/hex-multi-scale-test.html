@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Multi-Scale Overlay Test - Ted Tschopp</title>
+    
+    <!-- Bootstrap CSS for basic styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        .test-header {
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+        .test-badge {
+            background: #007bff;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.875rem;
+        }
+        
+        /* Canvas and hex-specific styles */
+        canvas {
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+        
+        .hex-controls button {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .hex-controls button:hover {
+            background: #f8f9fa;
+            border-color: #007bff;
+        }
+        
+        .hex-legend {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #dee2e6;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <div class="d-flex justify-content-between align-items-start">
+                <div>
+                    <span class="test-badge">Test</span>
+                    <h1 class="mt-2 mb-1">Hex Multi-Scale Overlay Test</h1>
+                    
+                    <p class="text-muted mb-0">This page isolates the multi-scale hex canvas for visual verification of all supported tiers (1 / 3 / 6 / 12 / 24 / 36 / 72 mile).</p>
+                    
+                </div>
+                <div class="text-end">
+                    <small class="text-muted">
+                        <strong>File:</strong> tests/hex-multi-scale-test.html<br>
+                        <strong>Generated:</strong> 2025-08-08 10:07:08
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-content">
+            <h1>Hex Multi-Scale Overlay Test</h1>
+<p>This page isolates the multi-scale hex canvas for visual verification of all supported tiers (1 / 3 / 6 / 12 / 24 / 36 / 72 mile).</p>
+
+<figure class="hex-multi-scale my-3 position-relative" style="max-width:640px;">
+  <figcaption class="small text-muted mb-1">Multi-scale hex overlay (36 / 6 / 1 mile reference)</figcaption>
+  <div class="position-relative">
+    <canvas id="hex-multi-scale" style="width:100%;height:480px;aspect-ratio:4/3;display:block;border:1px solid var(--bs-border-color,#ccc);background:radial-gradient(circle at 50% 50%, #fafafa,#f0f0f3);"></canvas>
+    <div class="hex-controls" style="position:absolute;top:.5rem;right:.5rem;display:flex;flex-direction:column;gap:.25rem;">
+      <button type="button" class="btn btn-sm btn-light border" id="hex-zoom-in" aria-label="Zoom in" title="Zoom in (+)">+</button>
+      <button type="button" class="btn btn-sm btn-light border" id="hex-zoom-out" aria-label="Zoom out" title="Zoom out (-)">−</button>
+      <button type="button" class="btn btn-sm btn-light border" id="hex-reset" aria-label="Reset view" title="Reset view">⟳</button>
+    </div>
+  <div id="hex-legend" class="hex-legend bg-body-tertiary rounded shadow-sm p-2 small" style="position:absolute;left:.5rem;top:.5rem;max-width:55%;line-height:1.1;pointer-events:none;">
+      <!-- Legend populated by hex-multi-scale.js -->
+    </div>
+  </div>
+  <figcaption class="visually-hidden">Drag to pan. Use buttons, mouse wheel, pinch (touch) to zoom, or reset.</figcaption>
+</figure>
+<script src="/js/hex.js"></script>
+<script src="/js/hex-multi-scale.js" defer></script>
+
+
+<div class="mt-4">
+    <h3>Test Expectations</h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <strong>✓ Visual Check:</strong> You should see nested colored hex outlines with multiple scales
+        </li>
+        <li class="list-group-item">
+            <strong>✓ Interactivity:</strong> Zoom controls (+, -, reset) should be functional
+        </li>
+        <li class="list-group-item">
+            <strong>✓ Pan/Drag:</strong> Canvas should be draggable for panning
+        </li>
+        <li class="list-group-item">
+            <strong>✓ Legend:</strong> Scale legend should appear in top-left corner
+        </li>
+        <li class="list-group-item">
+            <strong>✓ Responsive:</strong> Canvas should scale with container width
+        </li>
+    </ul>
+</div>
+
+<div class="mt-4">
+    <h3>Debug Console</h3>
+    <div id="hex-debug-console" class="border rounded p-3 bg-light" style="font-family: monospace; font-size: 0.875rem; height: 200px; overflow-y: auto;">
+        <div>Loading hex debug information...</div>
+    </div>
+</div>
+
+<!-- Enhanced debug script for hex visualization -->
+<script src="/js/hex-debug.js"></script>
+<script>
+// Override console.log for this page to show debug info
+(function() {
+    const debugConsole = document.getElementById('hex-debug-console');
+    const originalLog = console.log;
+    
+    const addToDebugConsole = (message, type = 'log') => {
+        if (debugConsole) {
+            const div = document.createElement('div');
+            div.className = `debug-${type}`;
+            div.style.color = type === 'error' ? 'red' : type === 'warn' ? 'orange' : 'black';
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            debugConsole.appendChild(div);
+            debugConsole.scrollTop = debugConsole.scrollHeight;
+        }
+    };
+    
+    console.log = function(...args) {
+        originalLog.apply(console, args);
+        addToDebugConsole(args.join(' '));
+    };
+    
+    console.error = function(...args) {
+        originalLog.apply(console, args);
+        addToDebugConsole(args.join(' '), 'error');
+    };
+    
+    console.warn = function(...args) {
+        originalLog.apply(console, args);
+        addToDebugConsole(args.join(' '), 'warn');
+    };
+    
+    // Clear the loading message
+    setTimeout(() => {
+        if (debugConsole) {
+            debugConsole.innerHTML = '<div>Debug console ready...</div>';
+        }
+    }, 100);
+})();
+</script>
+
+        </div>
+        
+        <div class="debug-info mt-4">
+            <strong>Debug Information:</strong><br>
+            <span id="debug-output">Loading debug information...</span>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Debug script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const debugOutput = document.getElementById('debug-output');
+            const info = [];
+            
+            info.push(`Page loaded at: ${new Date().toLocaleString()}`);
+            info.push(`User Agent: ${navigator.userAgent}`);
+            info.push(`Screen: ${screen.width}x${screen.height}`);
+            info.push(`Viewport: ${window.innerWidth}x${window.innerHeight}`);
+            info.push(`Document ready state: ${document.readyState}`);
+            
+            debugOutput.innerHTML = info.join('<br>');
+        });
+    </script>
+</body>
+</html>

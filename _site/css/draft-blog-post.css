@@ -1,0 +1,95 @@
+
+@font-face {
+	font-family: 'Fredericka the Great';
+}
+article > h1,
+article > h2,
+article > h3,
+article > h4,
+article > h5,
+article > h6,
+article > .h1,
+article > .h2,
+article > .h3,
+article > .h4,
+article > .h5,
+article > .h6 {
+    font-family: 'Fredericka the Great';
+  	color: inherit;
+}
+/*
+0. Documentation and Notes - LightGrey
+
+1. Unit testing - D4 16 16
+2. Integration testing - CF 1A 92
+3. Component testing - 90 1D CA
+4. System Testing - 21 21 C5
+5. Operational Testing - Alpha - 24 8C C0
+6. Operational Testing - Beta - 28 BB BC
+7. Operational Testing - Pre-release - 2B B6 2B
+8. Released - Black
+
+
+| No. | Use                               | Original RGB  |  Opposite RGB |
+|-----|-----------------------------------|---------------|---------------|
+| 1   | Unit Testing                      | D4 16 16      | 2B E9 E9      |
+| 2   | Integration Testing               | CF 1A 92      | 30 E5 6D      |
+| 3   | Component Testing                 | 90 1D CA      | 6F E2 35      |
+| 4   | System Testing                    | 21 21 C5      | DE DE 3A      |
+| 5   | Operational Testing - Alpha       | 24 8C C0      | DB 73 3F      |
+| 6   | Operational Testing - Beta        | 28 BB BC      | D7 44 43      |
+| 7   | Operational Testing - Pre-release | 2B B6 2B      | D4 49 D4      |
+| 8   | Released - Black                  | 00 00 00      | FF FF FF      |
+
+*/
+
+.progress > .draft-notes {
+	background-color: LightGrey;
+	color: #222222  
+}
+.progress > .unit {
+	background-color: #D41616;
+	color: #222222  
+}
+.progress > .integration {
+	background-color: #CF1A92;
+	color: #222222  
+}
+.progress > .component {
+	background-color: #901DCA;
+	color: #222222  
+}
+.progress > .system {
+	background-color: #2121C5;
+	color: #DEDE3A;
+}
+.progress > .alpha {
+	background-color: #248CC0;
+	color: #DEDE3A;
+}
+.progress > .beta {
+	background-color: #28BBBC;
+	color: #222222  
+}
+.progress > .prerelease {
+	background-color: #2BB62B;
+	color: #222222  
+}
+
+.progress-clear {
+	background-color: transparent;
+	border: transparent;
+	box-sizing: border-box;
+	color: rgb(51,51,51);
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.progress-bar-clear {
+	display: block;
+	float: left;
+	text-align: center;
+}

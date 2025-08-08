@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>Toot Thread Embed</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<!-- created by Patrick Curry 2022 -->
+</head>
+<style>
+<!--
+.toot {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.author {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 10px;
+}
+.authorLink {
+    text-decoration: none;
+}
+.avatar {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+.content {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.displayName {
+    font-size:100%;
+    font-weight: bold;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1;
+}
+.displayName:hover {
+    text-decoration: underline;
+}
+.userName {
+    font-size:80%;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 2;
+}
+.createdAt {
+    grid-column: 2;
+    grid-row: 3;
+}
+.avatarImg { width: 48px; height: 48px; border-radius: 4px; background-color: gray;}
+.createdAtLink { font-size:80%; text-decoration: none; }
+.createdAtLink:hover { text-decoration: underline; }
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+var originalAuthorId;
+var originalAuthorUsername;
+var lastUrl;
+
+function loadTootThread(url, element) {
+    var xmlhttp = new XMLHttpRequest();
+    if (url.indexOf('/api/v') == -1) {
+        if (url.indexOf('http') != 0) {
+            // console.log("This doesn't look like a valid URL: " + url);
+            url = 'https://' + url;
+        }
+        var splitUrl = url.split('/');
+        url = splitUrl[0] + '//' + splitUrl[2] + '/api/v1/statuses/';
+        // support different URL syntaxes for links to toots
+        if (splitUrl[3] && splitUrl[3] == 'users') {
+            url += splitUrl[6];
+        }
+        else if (splitUrl[3] && splitUrl[3] == 'web') {
+            url += splitUrl[5];
+        } else {
+            url += splitUrl[4];
+        }        
+        lastUrl = url;
+        // console.log(url);
+    }
+
+    xmlhttp.onreadystatechange = function() {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            displayToot(myArr,element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+}
+
+function loadTootReplies(arr, element) {
+    var xmlhttp = new XMLHttpRequest();
+
+    // TODO: figure out the URL
+    // var url = 'https://mastodon.social/api/v1/statuses/108195817029536656/context';
+    var url = lastUrl + '/context';
+
+    xmlhttp.onreadystatechange = function() {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            displayTootReplies(myArr,element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+}
+
+function displayToot(arr, element) {
+    // var displayJson = JSON.stringify(arr, null, 2);
+    var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+    originalAuthorId = arr.account.id;
+    originalAuthorUsername = arr.account.username;
+    var displayToot;
+    if (typeof element === 'string') {
+        displayToot = document.getElementById(element);
+    }
+    function ge(cn) { return displayToot.getElementsByClassName(cn)[0]; }
+    // ge('authorLink').href = arr.account.url;
+    ge('avatarImg').src = '';
+    ge('avatarImg').src = arr.account.avatar;
+    ge('displayNameSpan').innerHTML = arr.account.display_name;
+    ge('userNameSpan').innerHTML = '@' + arr.account.username;
+    ge('instanceNameSpan').innerHTML = '@' + instanceName;
+    ge('content').innerHTML = arr.content;
+    ge('createdAtLink').innerHTML = arr.created_at;
+    ge('createdAtLink').href = arr.url;
+    var links = document.getElementsByClassName('authorLink');
+    for (var i=0; i < links.length; i++) {
+        links[i].href = arr.account.url;
+    }
+    loadTootReplies(arr, element);
+}
+
+// TODO: FIXME
+function displayTootReplies(threadArr, element) {
+    // var displayJson = JSON.stringify(arr, null, 2);
+    var tootReplyHtml = document.getElementById('displayTootTemplate').outerHTML;
+    var arr;
+    var baseElement;
+    if (typeof element === 'string') {
+        baseElement = document.getElementById(element);
+    } else {
+        baseElement = element;
+    }
+    //console.log(baseElement);
+
+    for (var i=0; i < threadArr.descendants.length; i++) {
+        arr = threadArr.descendants[i];
+        // var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+        // var displayToot;
+        // if (typeof element === 'string') {
+        //    displayToot = document.getElementById(element);
+        // }
+        if (arr.account.id != originalAuthorId || arr.account.username != originalAuthorUsername) {
+            continue;
+        }
+        if (arr.in_reply_to_account_id != originalAuthorId) {
+            continue;
+        }
+        var displayToot = document.createElement('div');
+        displayToot.innerHTML = tootReplyHtml;
+        // console.log(displayToot);
+        function ge(cn) { return displayToot.getElementsByClassName(cn)[0]; }
+        ge('content').innerHTML = arr.content;
+        // console.log(displayToot);
+        baseElement.appendChild(displayToot);
+        /***
+        ge('authorLink').href = arr.account.url;
+        ge('avatarImg').src = '';
+        ge('avatarImg').src = arr.account.avatar;
+        ge('displayName').innerHTML = arr.account.display_name;
+        ge('userNameSpan').innerHTML = '@' + arr.account.username;
+        ge('instanceNameSpan').innerHTML = '@' + instanceName;
+        ge('createdAtLink').innerHTML = arr.created_at;
+        ge('createdAtLink').href = arr.url;
+        ***/
+    }
+
+}
+
+function getHashVariable(variable) {
+    query = window.location.hash.substr(1); 
+    vars = query.split('&');
+    for (i = 0; i < vars.length; i++) {
+        pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    //console.log('Hash variable %s not found', variable);
+    return("");
+}
+
+// Examples:
+// loadToot('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot'); // Load via user-face URL
+// loadToot('https://mastodon.social/api/v1/statuses/108195817029536656','displayToot'); // Load via API URL
+
+function processHash() {
+    var url = getHashVariable('url');
+    if (url != '') {
+        loadTootThread(url,'displayToot');
+    } else {
+        loadTootThread('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot');
+    }
+}
+
+window.onload = processHash;
+window.onhashchange = processHash;
+
+//-->
+</script>
+<body>
+    <div class="tootThread" id="displayTootThread">
+        <div class="toot" id="displayToot">
+            <div class="author">
+                <div class="avatar">
+                    <a href="" class="authorLink" target="_blank">
+                        <img src="" class="avatarImg" alt="" border="0" />
+                    </a>
+                </div>
+                <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
+                <div class="userName">
+                    <a href="" class="authorLink" target="_blank">
+                        <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+                    </a>
+                </div>
+                <div class="createdAt">
+                    <a href="" target="_blank" class="createdAtLink"></a>
+                </div>
+            </div>
+            <div class="content"></div>
+            <div class="bodyText"></div>
+        </div>
+        <div class="tootReplies">
+            <div class="tootReply" id="displayTootTemplate"><div class="content"></div></div>
+        </div>
+    </div>
+</body>
+</html>

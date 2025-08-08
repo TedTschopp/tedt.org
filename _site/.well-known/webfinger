@@ -1,0 +1,56 @@
+/* Old
+{
+  "subject": "acct:ted@tedt.org",
+  "aliases": [
+    "https://twit.social/@TedT"
+  ],
+  "links": [{
+    "rel": "self",
+    "type": "application/activity+json",
+    "href": "https://twit.social/users/TedT"
+  }]
+}
+*/
+{
+  "subject": "acct:ted@tedt.org",
+
+  /* —— All publicly visible representations of “Ted” —— */
+  "aliases": [
+    "https://twit.social/@TedT",         // canonical account
+    "https://tschopp.net/@Ted",          // extra instance
+
+    /* Optional, but nice for completeness: */
+    "acct:TedT@twit.social",
+    "acct:Ted@tschopp.net"
+  ],
+
+  /* —— Links —— */
+  "links": [
+    /* 1️⃣  Canonical ActivityPub actor  */
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://twit.social/users/TedT"
+    },
+
+    /* 2️⃣  HTML profile page for the extra instance */
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://tschopp.net/@Ted"
+    },
+
+    /* 3️⃣  Alternate ActivityPub actor for the extra instance */
+    {
+      "rel": "alternate",
+      "type": "application/activity+json",
+      "href": "https://tschopp.net/users/Ted"
+    },
+
+    /* 4️⃣  Remote‑follow template (optional but helpful) */
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://tschopp.net/authorize_interaction?uri={uri}"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+#insert-table-of-contents-here ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+#insert-table-of-contents-here li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+#insert-table-of-contents-here li:before {
+    content: counters(item, ".") " ";
+    display: table-cell;
+    padding-right: 0.6em;
+    font-family: monospace; /* Add this line */
+}
+
+#insert-table-of-contents-here li li {
+    margin: 0;
+}
+
+#insert-table-of-contents-here li li:before {
+    content: counters(item, ".") " ";
+}

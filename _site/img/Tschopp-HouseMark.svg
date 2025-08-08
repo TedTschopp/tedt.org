@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 444">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: black;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: black;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: black;
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: black;
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: black;
+        stroke-width: 0px;
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="100%" height="100%">
+      <rect x="0" y="0" width="100%" height="100%" fill="white" />
+      <ellipse class="cls-5" cx="90" cy="220" rx="42" ry="51" />
+    </mask>
+  </defs>
+  <rect class="cls-1" x="136" width="60" height="444" />
+  <rect class="cls-2" x="34" y="318" width="265" height="60" />
+  <rect class="cls-3" x="34" y="66" width="265" height="60" />
+  <ellipse class="cls-4" cx="75" cy="220" rx="75" ry="88" mask="url(#mask)" />
+</svg>

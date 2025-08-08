@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://tedt.org/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <title>Ted Tschopp's Homepage - Articles</title>
+        
+    <description>Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution.</description>
+    <link>http://localhost:4000</link>
+      
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Draft - Practical Hexcrawl Design and Procedures</title>
+          <description>A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.</description>
+          <pubDate>Thu, 07 Aug 2025 02:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Practical-Hexcrawl-Design-and-Procedures/</link>
+          <guid isPermaLink="true">http://localhost:4000/Practical-Hexcrawl-Design-and-Procedures/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Building a Lego Cat</title>
+          <description>The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change.</description>
+          <pubDate>Sun, 03 Aug 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Building-a-Lego-Cat/</link>
+          <guid isPermaLink="true">http://localhost:4000/Building-a-Lego-Cat/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Academic Content Critique Template</title>
+          <description>The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks.
+</description>
+          <pubDate>Fri, 01 Aug 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/critique-content/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/critique-content/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Midjourney Version 7 Prompt Generator Template</title>
+          <description>The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailored exactly to your specifications.
+</description>
+          <pubDate>Fri, 25 Jul 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/midjourney-v7-prompt-template/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/midjourney-v7-prompt-template/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Rooted in Resilience</title>
+          <description>Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.</description>
+          <pubDate>Sun, 29 Jun 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Rooted-In-Resilience/</link>
+          <guid isPermaLink="true">http://localhost:4000/Rooted-In-Resilience/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Learning by Doing</title>
+          <description>Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation.</description>
+          <pubDate>Sun, 15 Jun 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/</link>
+          <guid isPermaLink="true">http://localhost:4000/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Riding the AI Wave</title>
+          <description>Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed.</description>
+          <pubDate>Sun, 01 Jun 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/</link>
+          <guid isPermaLink="true">http://localhost:4000/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Details on the WINs Network</title>
+          <description>Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization.</description>
+          <pubDate>Sun, 25 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Details-on-the-WINs-Network/</link>
+          <guid isPermaLink="true">http://localhost:4000/Details-on-the-WINs-Network/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Beyond the Boundaries: Leading in a Post-AI Era</title>
+          <description>As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom.</description>
+          <pubDate>Sun, 18 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/</link>
+          <guid isPermaLink="true">http://localhost:4000/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>The Student Who Taught Herself</title>
+          <description>A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again.</description>
+          <pubDate>Sun, 11 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/The-Student-Who-Taught-Herself/</link>
+          <guid isPermaLink="true">http://localhost:4000/The-Student-Who-Taught-Herself/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Artistic Analysis Prompt – Deep Analysis of Artistic Works</title>
+          <description>The Artistic Analysis Prompt offers users an expansive, scholarly, and culturally rich approach to interpreting artistic works across various mediums, including visual arts, literature, music, theater, film, and multimedia installations. It systematically unpacks artistic creations by examining their historical context, technical composition, symbolic meaning, cultural intertextuality, and philosophical depth. Ideal for artists, students, critics, and cultural commentators, this prompt facilitates sophisticated analyses, uncovering hidden layers of meaning and artistic intent.
+</description>
+          <pubDate>Sun, 04 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/artistic-Analysis/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/artistic-Analysis/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>Unlocking Corporate Learning with AI Simulations</title>
+          <description>Learn about recursion—a powerful concept of breaking down complex problems into simpler, repeatable steps—and how it mirrors the use of AI-driven simulations in corporate training to help learners practice essential skills.</description>
+          <pubDate>Sun, 04 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/Unlocking-Corporate-Learning-with-AI-Simulations/</link>
+          <guid isPermaLink="true">http://localhost:4000/Unlocking-Corporate-Learning-with-AI-Simulations/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>AI Tutoring Prompt Designer – Help Others Learn What You Know</title>
+          <description>The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify learners’ prior knowledge, clear up misconceptions, and promote active knowledge construction. This interactive AI-based tutoring prompt is ideal for educators, coaches, or anyone looking to facilitate deeper, more meaningful learning experiences.
+</description>
+          <pubDate>Sun, 04 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/ai-tutoring-prompt-designer/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/ai-tutoring-prompt-designer/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>AI Teaching Assistant Prompt Creator</title>
+          <description>The AI Teaching Assistant Prompt Creator enables educators to efficiently design customized AI teaching assistants for various instructional tasks, such as lesson planning, quiz generation, grading, and parent communication. By facilitating a structured, dialogue-based interaction, this prompt allows teachers to clearly articulate their specific instructional needs, resulting in tailored, automated processes that enhance productivity and effectiveness in the classroom.
+</description>
+          <pubDate>Sun, 04 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/ai-teaching-assistant-prompt-creator/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/ai-teaching-assistant-prompt-creator/</guid>
+        </item>
+      
+        
+          
+          
+          
+         <!-- Calculate the pages Exerpt if one isn't present -->
+          
+        
+        <item>
+          <title>AI Simulation Creator Prompt – Roleplay-Based Learning Scenarios</title>
+          <description>The AI Simulation Creator Prompt is a powerful instructional tool designed to enable educators and trainers to create immersive roleplay-based learning scenarios. With a friendly and practical AI mentor, learners engage in realistic simulations to practice vital skills such as negotiation, hiring, pitching, and decision-making. Each scenario is tailored to the learner’s experience level, providing balanced feedback and actionable advice to foster skill development and confidence.
+</description>
+          <pubDate>Sun, 04 May 2025 00:00:00 -0700</pubDate>
+          <link>http://localhost:4000/prompts/ai-simulation-creator-roleplay-prompt/</link>
+          <guid isPermaLink="true">http://localhost:4000/prompts/ai-simulation-creator-roleplay-prompt/</guid>
+        </item>
+      
+        
+          
+          
+              
+  </channel>
+</rss>

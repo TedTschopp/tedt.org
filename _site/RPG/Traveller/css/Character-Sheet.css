@@ -1,0 +1,434 @@
+        :root {
+            /* Light Mode (only mode now) */
+            --traveller-primary: #111111;    /* Deep Black for backgrounds, headers, footers */
+            --traveller-secondary: #F0F0F0;  /* Light Grey for text and content background */
+            --traveller-tertiary: #BB0000;   /* Traveller Red for highlights, call to actions */
+            --traveller-supporting: #888888; /* Neutral Grey for supporting elements */
+            --traveller-text-on-dark: #FFFFFF; /* White text for dark backgrounds */
+            --traveller-text-on-light: #333333; /* Dark text for light backgrounds */
+            --traveller-border: #DDDDDD;
+            --traveller-content-bg: #FFFFFF;
+            --traveller-input-bg: #FFFFFF;
+            --traveller-input-border: #CED4DA;
+            --traveller-characteristic-box-bg: #F0F0F0;
+            --traveller-table-bg: #FFFFFF;
+            --traveller-table-border: #DEE2E6;
+            --traveller-table-header-bg: rgba(17, 17, 17, 0.1);
+            
+            /* Font families */
+            --font-headlines: 'Arsenal', sans-serif;
+            --font-titles: 'Marcellus', serif;
+            --font-ui: 'Roboto', sans-serif;
+            --font-standard: 'Arimo', sans-serif;
+            --font-secondary: 'Work Sans', sans-serif;
+        }
+        
+        body {
+            background-color: var(--traveller-secondary);
+            font-family: var(--font-standard);
+            color: var(--traveller-text-on-light);
+            transition: background-color 0.3s ease;
+        }
+        
+        .character-sheet {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: var(--traveller-content-bg);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            border-radius: 3px;
+            position: relative;
+            border: 1px solid var(--traveller-border);
+            transition: all 0.3s ease;
+        }
+        
+        .characteristic-box {
+            border: 2px solid var(--traveller-primary);
+            border-radius: 3px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            background-color: var(--traveller-characteristic-box-bg);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        /* Rest of your existing CSS remains the same, the theme variables will apply automatically */
+        
+        .sheet-header {
+            background-color: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
+            padding: 20px 15px;
+            margin-bottom: 25px;
+            border-radius: 3px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sheet-header h1 {
+            margin: 0;
+            font-family: var(--font-titles);
+            font-weight: 400;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .sheet-header::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: var(--traveller-tertiary);
+        }
+        
+        /* Optional starburst/logo effect */
+        .sheet-header::before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(var(--traveller-tertiary) 10%, transparent 65%);
+            opacity: 0.5;
+            border-radius: 50%;
+        }
+        
+        .section-header {
+            background-color: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
+            padding: 8px 15px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-family: var(--font-headlines);
+            letter-spacing: 0.5px;
+            border-left: 4px solid var(--traveller-tertiary);
+        }
+        
+        .skill-item, .equipment-item, .weapon-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid var(--traveller-border);
+        }
+        
+        .characteristic-box {
+            border: 2px solid var(--traveller-primary);
+            border-radius: 3px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            background-color: var(--traveller-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .characteristic-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: var(--traveller-tertiary);
+        }
+        
+        .characteristic-box h4 {
+            margin: 0;
+            color: var(--traveller-primary);
+            font-family: var(--font-headlines);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .characteristic-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--traveller-primary);
+            font-family: var(--font-standard);
+        }
+        
+        .characteristic-dm {
+            font-size: 1.2rem;
+            color: var(--traveller-tertiary);
+            font-weight: bold;
+            font-family: var(--font-standard);
+        }
+        
+        .important-stat {
+            font-weight: bold;
+            color: var (--traveller-tertiary);
+            font-family: var(--font-headlines);
+        }
+        
+        label.form-label {
+            font-weight: 500;
+            color: var(--traveller-primary);
+            font-family: var(--font-headlines);
+        }
+        
+        /* Button styling */
+        .dice-btn {
+            background-color: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
+            border: none;
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .dice-btn:hover {
+            background-color: var(--traveller-tertiary);
+        }
+        
+        .dice-btn:hover {
+            background-color: var(--traveller-tertiary);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background-color: var(--traveller-supporting);
+            border-color: var(--traveller-supporting);
+            color: var (--traveller-text-on-dark);
+            font-family: var (--font-ui);
+            color: var (--traveller-text-on-dark);
+            font-family: var (--font-ui);
+            font-weight: 500;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+        }
+        
+        .btn-info {
+            background-color: var(--traveller-supporting);
+            border-color: var(--traveller-supporting);
+            color: var (--traveller-text-on-dark);
+            font-family: var (--font-ui);
+            font-family: var (--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .btn-info:hover {
+            background-color: var (--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+        }
+        
+        .btn-danger {
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .btn-add {
+            background-color: var(--traveller-tertiary);  /* Changed to red */
+            color: var(--traveller-text-on-dark);
+            border: none;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .btn-add:hover {
+            background-color: #000000;  /* Changed to black */
+            color: var(--traveller-text-on-dark);
+        }
+        
+        .btn-remove {
+            background-color: var(--traveller-tertiary);
+            color: var (--traveller-text-on-dark);
+            border: none;
+            padding: 2px 8px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            font-family: var (--font-ui);
+            font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        
+        .btn-remove:hover {
+            background-color: #700000;
+        }
+        
+        table thead th {
+            background-color: rgba(17, 17, 17, 0.1); /* Semitransparent primary */
+            color: var(--traveller-primary);
+            font-family: var(--font-headlines);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .skill-name {
+            font-weight: 600;
+            color: var(--traveller-primary);
+            font-family: var(--font-standard);
+        }
+        
+        .skill-specialization {
+            font-style: italic;
+            color: var(--traveller-supporting);
+            margin-left: 3px;
+            font-family: var(--font-secondary);
+            font-weight: 400;
+        }
+        
+        #specializationField {
+            max-width: 150px;
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+            
+            body {
+                background-color: white;
+            }
+            
+            .character-sheet {
+                box-shadow: none;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+
+        .credits {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--traveller-supporting);
+            font-family: var(--font-secondary);
+        }
+        
+        #roll-result {
+            font-weight: bold;
+            font-size: 1.2rem;
+            min-height: 30px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: var (--font-ui);
+            color: var(--traveller-tertiary);
+        }
+
+        /* Improved focus styles for accessibility */
+        input:focus, select:focus, textarea:focus, button:focus {
+            outline: 2px solid var(--traveller-tertiary);
+            box-shadow: 0 0 0 2px rgba(187, 0, 0, 0.25);
+        }
+        
+        /* Custom scrollbar to match theme */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--traveller-secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--traveller-supporting);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--traveller-tertiary);
+        }
+
+        /* Styles for dual characteristic values */
+        .characteristic-box {
+            /* Adjust padding to fit more content */
+            padding: 12px 10px;
+        }
+        
+        .char-values {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .char-value {
+            flex: 1;
+            padding: 0 2px;
+        }
+        
+        .char-value label {
+            font-size: 0.7rem;
+            display: block;
+            text-align: center;
+            margin: 0;
+            color: var(--traveller-supporting);
+        }
+        
+        .char-value input {
+            padding: 2px;
+            text-align: center;
+            height: auto;
+            font-size: 1.2rem;
+        }
+        
+        .characteristic-dm-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .characteristic-dm-current {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--traveller-tertiary);
+        }
+        
+        .characteristic-dm-baseline {
+            font-size: 0.9rem;
+            color: var(--traveller-supporting);
+        }
+        
+        .characteristic-dm-separator {
+            margin: 0 3px;
+            color: var(--traveller-supporting);
+        }
+
+        /* Add these styles to your existing CSS */
+        .wealth-dm {
+            background-color: var(--traveller-tertiary);
+            color: var(--traveller-text-on-dark);
+            font-weight: bold;
+        }
+
+        small.text-muted {
+            display: block;
+            margin-top: 4px;
+            font-family: var(--font-secondary);
+        }
+
+        .wealth-info {
+            font-size: 0.7rem;
+            color: var(--traveller-supporting);
+            font-style: italic;
+        }
+        
+        .wealth-reference {
+            display: block;
+            margin-top: 2px;
+            font-size: 0.75rem;
+            text-align: center;
+        }

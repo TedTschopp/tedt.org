@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Simple Toot Embed</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<!-- created by Patrick Curry 2022 -->
+</head>
+<style>
+<!--
+.toot {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.author {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-row-gap: 2px;
+    grid-column-gap: 10px;
+}
+.authorLink {
+    text-decoration: none;
+}
+.avatar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.content {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.displayName {
+    font-size:100%;
+    font-weight: bold;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1;
+}
+.displayName:hover {
+    text-decoration: underline;
+}
+.userName {
+    font-size:80%;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 2;
+}
+.avatarImg { width: 48px; height: 48px; border-radius: 4px; background-color: gray;}
+.createdAtLink { font-size:80%; text-decoration: none; }
+.createdAtLink:hover { text-decoration: underline; }
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+function loadToot(url, element) {
+    var xmlhttp = new XMLHttpRequest();
+    if (url.indexOf('/api/v') == -1) {
+        if (url.indexOf('http') != 0) {
+            // console.log("This doesn't look like a valid URL: " + url);
+            url = 'https://' + url;
+        }
+        var splitUrl = url.split('/');
+        url = splitUrl[0] + '//' + splitUrl[2] + '/api/v1/statuses/' + splitUrl[4];
+	if (splitUrl[3] == 'notes') {
+		// Shuttlecraft
+		url = splitUrl[0] + '//' + splitUrl[2] + '/m/' + splitUrl[4];
+	}
+        console.log(url);
+    }
+
+    xmlhttp.onreadystatechange = function() {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+	    console.log(this.responseText);
+            var myArr = JSON.parse(this.responseText);
+            displayToot(myArr,element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader("Accept",'application/ld+json; profile="https://www.w3.org/ns/activitystreams"');
+    xmlhttp.send();
+}
+
+function displayToot(arr, element) {
+    console.log(arr);
+    var displayJson = JSON.stringify(arr, null, 2);
+    var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+    console.log(instanceName);
+    var displayToot;
+    if (typeof element === 'string') {
+        displayToot = document.getElementById(element);
+    }
+    function ge(cn) { return displayToot.getElementsByClassName(cn)[0]; }
+    // handle missing / alternate variables
+    if (!arr.account) {
+	// handling data likely from Shuttlecraft
+        var display_name = arr.attributedTo.split('/');
+        display_name = display_name[display_name.length-1];
+	arr.account = { url:arr.attributedTo,avatar:'',display_name:display_name,username:display_name };
+    }
+    if (!arr.created_at) {
+	arr.created_at = arr.published;
+    }
+    // actually display stuff
+    ge('authorLink').href = arr.account.url;
+    ge('avatarImg').src = '';
+    ge('avatarImg').src = arr.account.avatar;
+    ge('displayName').innerHTML = arr.account.display_name;
+    ge('userNameSpan').innerHTML = '@' + arr.account.username;
+    ge('instanceNameSpan').innerHTML = '@' + instanceName;
+    ge('content').innerHTML = arr.content;
+    ge('createdAt').innerHTML = arr.created_at;
+    ge('createdAtLink').href = arr.url;
+}
+
+function getHashVariable(variable) {
+    query = window.location.hash.substr(1); 
+    vars = query.split('&');
+    for (i = 0; i < vars.length; i++) {
+        pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    //console.log('Hash variable %s not found', variable);
+    return("");
+}
+
+// Examples:
+// loadToot('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot'); // Load via user-face URL
+// loadToot('https://mastodon.social/api/v1/statuses/108195817029536656','displayToot'); // Load via API URL
+
+function processHash() {
+    var url = getHashVariable('url');
+    if (url != '') {
+        loadToot(url,'displayToot');
+    } else {
+        loadToot('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot');
+    }
+}
+
+window.onload = processHash;
+window.onhashchange = processHash;
+//-->
+</script>
+<body>
+<div class="toot" id="displayToot">
+    <a href="" target="_blank" class="authorLink">
+        <div class="author">
+            <div class="avatar">
+                <img src="" class="avatarImg" alt="" />
+            </div>
+            <div class="displayName"></div>
+            <div class="userName">
+                <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+            </div>
+        </div>
+    </a>
+    <div class="content"></div>
+    <div class="bodyText"></div>
+    <a href="" target="_blank" class="createdAtLink">
+        <div class="createdAt"></div>
+    </a>
+</div>
+</body>
+</html>

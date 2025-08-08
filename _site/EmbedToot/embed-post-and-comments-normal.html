@@ -1,0 +1,395 @@
+<html>
+<head>
+<title>Toot Comments Embed</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<!-- created by Patrick Curry 2022 -->
+</head>
+<style>
+<!--
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.template {
+    display:none;
+}
+.author {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 10px;
+}
+.authorReply {
+    padding-top: 10px;
+}
+.authorLink {
+    text-decoration: none;
+}
+.avatar {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+.content {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.displayName {
+    color: black;
+    font-size:100%;
+    font-weight: bold;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1;
+}
+.displayName:hover {
+    text-decoration: underline;
+}
+.displayNameLink {
+    color: black;
+}
+.userName {
+    font-size:80%;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 2;
+}
+.createdAt {
+    grid-column: 2;
+    grid-row: 3;
+}
+.avatarImg { width: 48px; height: 48px; border-radius: 4px; background-color: gray;}
+.avatarImgReply { width: 36px; height: 36px; border-radius: 4px; background-color: gray;}
+.createdAtLink { font-size:80%; text-decoration: none; }
+.createdAtLink:hover { text-decoration: underline; }
+.tootReply {
+    /*
+    border-left: 1px solid blue;
+    padding-left: 10px;
+    */
+}
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+var originalAuthorId;
+var originalAuthorUsername;
+var originalAuthorUsernameWithInstance;
+var previousAuthorId;
+var lastUrl;
+var lastRepliesUrl;
+var tootReplyHtml;
+
+function loadTootThread(url, element) {
+    var xmlhttp = new XMLHttpRequest();
+    if (url.indexOf('/api/v') == -1 && url.indexOf('/m/') == -1) {
+        if (url.indexOf('http') != 0) {
+            // console.log("This doesn't look like a valid URL: " + url);
+            url = 'https://' + url;
+        }
+        var splitUrl = url.split('/');
+        // url = splitUrl[0] + '//' + splitUrl[2] + '/b api/v1/statuses/';
+        url = splitUrl[0] + '//' + splitUrl[2] + '/api/v1/statuses/';
+        // support different URL syntaxes for links to toots
+        if (splitUrl[3] && splitUrl[3] == 'users') {
+            url += splitUrl[6];
+        }
+        else if (splitUrl[3] && splitUrl[3] == 'web') {
+            url += splitUrl[5];
+        } else {
+            url += splitUrl[4];
+        }        
+        if (splitUrl[3] == 'notes') {
+                // Shuttlecraft
+                url = splitUrl[0] + '//' + splitUrl[2] + '/m/' + splitUrl[4];
+        }
+        lastUrl = url;
+        console.log(url);
+    }
+
+    xmlhttp.onreadystatechange = function() {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            displayToot(myArr,element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader("Accept",'application/ld+json; profile="https://www.w3.org/ns/activitystreams"');
+    xmlhttp.send();
+
+}
+
+function loadTootReplies(arr, element) {
+    var xmlhttp = new XMLHttpRequest();
+
+    // TODO: figure out the URL
+    // var url = 'https://mastodon.social/api/v1/statuses/108195817029536656/context';
+    var url = lastUrl + '/context';
+    if (lastUrl.indexOf('/m/') != -1) {
+	url = lastUrl + '/replies';
+    }
+    if (lastRepliesUrl == url) {
+        // TODO: this is hinky when considering multiple different ways you can request original toot URL
+        // return;
+    }
+    lastRepliesUrl = url;
+
+    xmlhttp.onreadystatechange = function() {
+        //console.log('xmlhttp.onreadystatechange()');
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            displayTootReplies(myArr,element);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader("Accept",'application/ld+json; profile="https://www.w3.org/ns/activitystreams"');
+    xmlhttp.send();
+
+}
+
+// TODO: display or link to attachments
+function displayToot(arr, element) {
+    // var displayJson = JSON.stringify(arr, null, 2);
+    // handle missing / alternate variables
+    if (!arr.account) {
+        // handling data likely from Shuttlecraft
+        var display_name = arr.attributedTo.split('/');
+        display_name = display_name[display_name.length-1];
+        arr.account = { url:arr.attributedTo,avatar:'',display_name:display_name,username:display_name };
+    }
+    if (!arr.created_at) {
+        arr.created_at = arr.published;
+    }
+    // figure out multiple authors in comments thread
+    var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+    originalAuthorId = arr.account.id;
+    previousAuthorId = arr.account.id;
+    originalAuthorUsername = arr.account.username;
+    originalAuthorUsernameWithInstance = '@' + originalAuthorUsername + '@' + instanceName;
+    var displayToot;
+    if (typeof element === 'string') {
+        displayToot = document.getElementById(element);
+    }
+    // backup the reply template, then remove old replies
+    if (!tootReplyHtml) {
+        tootReplyHtml = document.getElementById('displayTootTemplate').outerHTML + '';
+    }
+    // actually display content
+    document.getElementsByClassName('tootReplies')[0].innerHTML = '';
+    function ge(cn) { return displayToot.getElementsByClassName(cn)[0]; }
+    // ge('authorLink').href = arr.account.url;
+    ge('avatarImg').src = '';
+    ge('avatarImg').src = arr.account.avatar;
+    ge('displayNameSpan').innerHTML = arr.account.display_name;
+    ge('userNameSpan').innerHTML = '@' + arr.account.username;
+    ge('instanceNameSpan').innerHTML = '@' + instanceName;
+    ge('content').innerHTML = formatToot(arr.content);
+    ge('createdAtLink').innerHTML = arr.created_at;
+    ge('createdAtLink').href = arr.url;
+    var links = document.getElementsByClassName('authorLink');
+    for (var i=0; i < links.length; i++) {
+        links[i].href = arr.account.url;
+    }
+    loadTootReplies(arr, document.getElementsByClassName('tootReplies')[0]);
+    // console.log('Displayed original toot');
+}
+
+var combineRepliesFromSameAuthor = true;
+
+function displayTootReplies(threadArr, element) {
+    // var displayJson = JSON.stringify(arr, null, 2);
+    var arr;
+    var baseElement;
+    var indentCount = 0;
+    var previousTootId = -1;
+    if (typeof element === 'string') {
+        baseElement = document.getElementById(element);
+    } else {
+        baseElement = element;
+    }
+    //console.log(baseElement);
+    // for Shuttlecraft
+    if (!threadArr.descendants) {
+	threadArr = { descendants:threadArr };
+    }
+    for (var i=0; i < threadArr.descendants.length; i++) {
+        arr = threadArr.descendants[i];
+
+    // handle missing / alternate variables
+    if (!arr.account) {
+        // handling data likely from Shuttlecraft
+	/***
+        var display_name = arr.attributedTo.split('/');
+        display_name = display_name[display_name.length-1];
+	***/
+	display_name = arr.actor.name;
+        arr.account = { url:arr.actor.url,avatar:arr.actor.image.url,display_name:arr.actor.name,username:arr.actor.preferredUsername };
+    }
+    if (!arr.created_at) {
+        arr.created_at = arr.published;
+    }
+    if (!arr.url) {
+	arr.url = arr.note.url;
+    }
+    if (!arr.content) {
+	arr.content = arr.note.content;
+    }
+
+        var instanceName = arr.url.replaceAll('http://','').replaceAll('https://','').split('/')[0];
+        // var displayToot;
+        // if (typeof element === 'string') {
+        //    displayToot = document.getElementById(element);
+        // }
+        var displayToot = document.createElement('div');
+        displayToot.innerHTML = tootReplyHtml;
+        // console.log(displayToot);
+        function ge(cn) { return displayToot.getElementsByClassName(cn)[0]; }
+	var contentObj = ge('content');
+        contentObj.innerHTML = formatToot(arr.content);
+	// console.log(contentObj.innerHTML);
+	// console.log(contentObj.innerText);
+	// remove mention of original author when it's at the start of the post
+	if (contentObj.innerText.indexOf(originalAuthorUsernameWithInstance) == 0) {
+		// console.log("Post starts with original author's username");
+		contentObj.getElementsByTagName('a')[0].style.display = 'none';
+	}
+        // console.log(displayToot);
+        baseElement.appendChild(displayToot);
+        // when someone else comments and jumps into the thread, show their info
+        if ( !(combineRepliesFromSameAuthor && arr.account.id == previousAuthorId) ) {
+            /***
+            // && arr.account.id != originalAuthorId || arr.account.username != originalAuthorUsername || arr.in_reply_to_account_id != originalAuthorId ) {
+            // the API returns the list of replies chronologically, like classic Twitter
+            // to make them threaded, would need to re-order each toot, putting it under and indenting to the one it replies to
+            if (arr.in_reply_to_id != previousTootId) {
+                indentCount++;
+            } else {
+                indentCount--;
+            }
+            ***/
+            displayToot.style.marginLeft = (indentCount*10) + 'px';
+            ge('author').style.display = 'grid';
+            ge('authorLink').href = arr.account.url;
+            ge('avatarImg').src = '';
+            ge('avatarImg').src = arr.account.avatar;
+            ge('displayNameSpan').innerHTML = arr.account.display_name;
+            ge('userNameSpan').innerHTML = '@' + arr.account.username;
+            ge('instanceNameSpan').innerHTML = '@' + instanceName;
+            ge('createdAtLink').innerHTML = arr.created_at;
+            ge('createdAtLink').href = arr.url;
+        } else {
+            ge('author').style.display = 'none';
+        }
+        previousAuthorId = arr.account.id;
+        previousTootId = arr.id;
+        displayToot.style.display = 'block';
+    }
+    // console.log('Displayed ' + threadArr.descendants.length + ' replies');
+}
+
+function formatToot(html) {
+    if (html.indexOf('<p>') != 0) {
+        html = '<p>' + html + '</p>';
+    }
+    html = html.replaceAll('<br>','</p><p>');
+    return html;
+}
+
+function getHashVariable(variable) {
+    query = window.location.hash.substr(1); 
+    vars = query.split('&');
+    for (i = 0; i < vars.length; i++) {
+        pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    //console.log('Hash variable %s not found', variable);
+    return("");
+}
+
+// Examples:
+// loadToot('https://mastodon.social/@patrickmcurry/108195817029536656','displayToot'); // Load via user-face URL
+// loadToot('https://mastodon.social/api/v1/statuses/108195817029536656','displayToot'); // Load via API URL
+
+function processHash() {
+    var url = getHashVariable('url');
+    if (url != '' && url != lastUrl) {
+        lastUrl = url;
+        loadTootThread(url,'displayToot');
+    } else {
+        loadTootThread('https://mastodon.social/@patrickmcurry/108139550806578067','displayToot');
+    }
+}
+
+window.onload = processHash;
+window.onhashchange = processHash;
+
+//-->
+</script>
+<body>
+    <div class="tootThread" id="displayTootThread">
+        <div class="toot" id="displayToot">
+            <div class="author">
+                <div class="avatar">
+                    <a href="" class="authorLink" target="_blank">
+                        <img src="" class="avatarImg" alt="" border="0" />
+                    </a>
+                </div>
+                <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
+                <div class="userName">
+                    <a href="" class="authorLink" target="_blank">
+                        <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+                    </a>
+                </div>
+                <div class="createdAt">
+                    <a href="" target="_blank" class="createdAtLink"></a>
+                </div>
+            </div>
+            <div class="content"></div>
+            <div class="bodyText"></div>
+        </div>
+        <div class="tootReplies">
+            <div class="tootReply" id="displayTootTemplate">
+                <div class="author authorReply">
+                    <div class="avatar">
+                        <a href="" class="authorLink" target="_blank">
+                            <img src="" class="avatarImg avatarImgReply" alt="" border="0" />
+                        </a>
+                    </div>
+                    <div class="displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></div>
+                    <div class="userName">
+                        <a href="" class="authorLink" target="_blank">
+                            <span class="userNameSpan"></span><span class="instanceNameSpan"></span>
+                        </a>
+                    </div>
+                    <div class="createdAt">
+                        <a href="" target="_blank" class="createdAtLink"></a>
+                    </div>
+                </div>
+            <div class="content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
