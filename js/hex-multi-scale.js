@@ -11,10 +11,10 @@
 
   // Ordered largest -> smallest so smaller scales render on top with priority
   const SCALES = [
-    // Larger scales rendered first (underlay)
-    { miles: 36, size: 40, stroke: 'hsla(255,45%,48%,0.55)', fill: 'hsla(255,45%,55%,0.03)', label: false, lineWidth: 1.2, dash: [6,5] },
-    { miles: 6,  size: 14, stroke: 'hsla(48,90%,45%,0.55)',  fill: 'hsla(48,90%,45%,0.045)', label: false, lineWidth: 0.95 },
-    { miles: 1,  size: 6,  stroke: 'hsla(200,80%,50%,0.70)', fill: 'hsla(200,80%,50%,0.07)', label: false, lineWidth: 0.7 }
+    // Larger first (underlay). Sizes now computed dynamically for proportional scaling.
+    { miles: 36, stroke: 'hsla(255,45%,48%,0.55)', fill: 'hsla(255,45%,55%,0.025)', label: false, lineWidth: 1.1, dash: [7,6] },
+    { miles: 6,  stroke: 'hsla(48,90%,45%,0.55)',  fill: 'hsla(48,90%,45%,0.04)',  label: false, lineWidth: 0.85 },
+    { miles: 1,  stroke: 'hsla(200,80%,50%,0.70)', fill: 'hsla(200,80%,50%,0.065)', label: false, lineWidth: 0.65 }
   ];
 
   // Compute all hexes whose polygon intersects the canvas rectangle.
@@ -84,12 +84,18 @@
   ctx.scale(state.zoom, state.zoom);
   ctx.translate(state.panX, state.panY);
 
+    // Determine base size so largest hex roughly fits inside canvas.
+    const largestMiles = SCALES[0].miles; // 36
+    // choose target width (90% of min dimension)
+    const targetSpan = Math.min(width, height) * 0.9;
+    // width of a hex in pixels is sqrt(3) * size; we want largest hex width == targetSpan
+    const baseSizePerMile = (targetSpan / Math.sqrt(3)) / largestMiles;
+
     SCALES.forEach(scale => {
-      const layout = new Layout(Layout.pointy, new Point(scale.size, scale.size), new Point(0, 0));
+      const size = baseSizePerMile * scale.miles;
+      const layout = new Layout(Layout.pointy, new Point(size, size), new Point(0, 0));
       const hexes = tileHexes(layout, width, height);
       hexes.forEach(h => drawHex(ctx, layout, h, scale.stroke, scale.fill, scale.lineWidth, scale.dash));
-      // Optionally label origin for each scale (disabled to avoid clutter). Uncomment if desired.
-      // drawLabel(ctx, layout, new Hex(0,0,0), scale.miles + ' mi');
     });
 
     ctx.restore();
