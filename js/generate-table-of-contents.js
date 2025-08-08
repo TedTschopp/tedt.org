@@ -1,4 +1,4 @@
-// Safe jQuery initialization - check if jQuery is available
+// Vanilla TOC generator (no jQuery dependency)
 (function() {
   function generateTableOfContents() {
     const toc = document.getElementById('insert-table-of-contents-here');
@@ -41,15 +41,10 @@
   toc.setAttribute('aria-label', 'Table of contents');
   }
 
-  // Try jQuery first, fallback to DOMContentLoaded
-  if (typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && $.fn.ready) {
-    $(document).ready(generateTableOfContents);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', generateTableOfContents);
   } else {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', generateTableOfContents);
-    } else {
-      generateTableOfContents();
-    }
+    generateTableOfContents();
   }
 })();
 

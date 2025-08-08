@@ -1,54 +1,37 @@
-// Safe jQuery initialization - check if jQuery is available
+// Vanilla initialization (jQuery optional but not required)
 (function() {
-    function initializePageFeatures() {
-        // Only run TOC generation if the element exists
-        if (document.getElementById('insert-table-of-contents-here')) {
-            GenerateTableOfContents();
-        }
-
-        // Only run header linking if the element exists
-        if (document.getElementById('main_content')) {
-            // Link up the Table of Contents to each of the proper Header Tags.
-            // Call the function with the ID of the element you want to add links to
-            addLinksToHeaders('main_content');
-
-            // Step 2: Add Winer Tags to Paragraphs
-            var main_content = document.getElementById('main_content');
-            main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
-        }
+  function initializePageFeatures() {
+    if (document.getElementById('insert-table-of-contents-here')) {
+      GenerateTableOfContents();
     }
-
-    // Try jQuery first, fallback to DOMContentLoaded
-    if (typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && $.fn.ready) {
-        $(document).ready(initializePageFeatures);
-    } else {
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializePageFeatures);
-        } else {
-            initializePageFeatures();
-        }
+    if (document.getElementById('main_content')) {
+      addLinksToHeaders('main_content');
+      const main_content = document.getElementById('main_content');
+      main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
     }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializePageFeatures);
+  } else {
+    initializePageFeatures();
+  }
 })();
 
 function addLinksToHeaders(elementId) {
-  // Function to get a cookie value by name
+  const root = document.getElementById(elementId);
+  if (!root) return;
   const getCookieValue = function(name) {
-    const value = "; " + document.cookie;
-    const parts = value.split("; " + name + "=");
-    if (parts.length === 2) return parts.pop().split(";").shift();
+    const value = '; ' + document.cookie;
+    const parts = value.split('; ' + name + '=');
+    if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
   };
-  
-  // Get the visibility state from cookie - default to hidden if not set
   const tocArrowsVisible = getCookieValue('tocArrowsVisible') === 'true';
-  
-  // Create the back-to-TOC link with appropriate display style
-  const htmlContent = `<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end" style="display: ${tocArrowsVisible ? 'inline-block' : 'none'};">&#x2191;</a>`;
-
-  // Select all headline tags (h1 to h6) within the specified element
-  $(`#${elementId} :header`).each(function() {
-      // Insert the HTML content as the first child of each headline tag
-      $(this).prepend(htmlContent);
+  const htmlContent = `<a href="#Top-of-Table-of-Contents" class="text-decoration-none float-end" style="display:${tocArrowsVisible ? 'inline-block' : 'none'};">&#x2191;</a>`;
+  root.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(h => {
+    if (!h.firstElementChild || h.firstElementChild.getAttribute('href') !== '#Top-of-Table-of-Contents') {
+      h.insertAdjacentHTML('afterbegin', htmlContent);
+    }
   });
 }
 
