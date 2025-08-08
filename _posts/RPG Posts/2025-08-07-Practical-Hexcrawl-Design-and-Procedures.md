@@ -124,42 +124,74 @@ This streamlined model keeps only three practical tiers: a broad strategic frame
 {% include utility/hex-multi-scale.html %}
 
 <script>
-// Debug script specifically for the blog post
+// Enhanced debug script for layout monitoring
 window.HEX_DEBUG = true; // Enable debug mode for hex-multi-scale.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('[blog-debug] DOM loaded, checking hex canvas state...');
+    console.log('[blog-debug] DOM loaded, monitoring canvas layout...');
     
-    // Wait a moment for hex initialization
-    setTimeout(function() {
-        const canvas = document.getElementById('hex-multi-scale');
-        if (!canvas) {
-            console.error('[blog-debug] Canvas not found!');
-            return;
-        }
+    const canvas = document.getElementById('hex-multi-scale');
+    if (!canvas) {
+        console.error('[blog-debug] Canvas not found!');
+        return;
+    }
+    
+    const container = canvas.parentElement;
+    const figure = container.parentElement;
+    
+    function logLayout(event = 'check') {
+        const canvasRect = canvas.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        const figureRect = figure.getBoundingClientRect();
         
-        console.log('[blog-debug] Canvas found:', {
-            width: canvas.width,
-            height: canvas.height,
-            styleWidth: canvas.style.width,
-            styleHeight: canvas.style.height,
-            initialized: canvas.dataset.initialized,
-            visible: canvas.offsetWidth > 0 && canvas.offsetHeight > 0
+        console.log(`[blog-debug] Layout ${event}:`, {
+            canvas: {
+                width: canvas.width, height: canvas.height,
+                style: { width: canvas.style.width, height: canvas.style.height },
+                rect: { width: canvasRect.width, height: canvasRect.height }
+            },
+            container: {
+                style: container.getAttribute('style'),
+                rect: { width: containerRect.width, height: containerRect.height }
+            },
+            figure: {
+                style: figure.getAttribute('style'),
+                rect: { width: figureRect.width, height: figureRect.height }
+            }
         });
-        
-        // Check if hex.js dependencies are available
+    }
+    
+    // Initial layout check
+    setTimeout(() => logLayout('initial'), 100);
+    
+    // Monitor for layout changes
+    const resizeObserver = new ResizeObserver(entries => {
+        for (let entry of entries) {
+            if (entry.target === canvas) {
+                logLayout('canvas-resize');
+            } else if (entry.target === container) {
+                logLayout('container-resize');
+            } else if (entry.target === figure) {
+                logLayout('figure-resize');
+            }
+        }
+    });
+    
+    resizeObserver.observe(canvas);
+    resizeObserver.observe(container);
+    resizeObserver.observe(figure);
+    
+    // Check dependencies and try manual render
+    setTimeout(function() {
         console.log('[blog-debug] Dependencies:', {
             Layout: typeof Layout !== 'undefined',
             Hex: typeof Hex !== 'undefined',
             Point: typeof Point !== 'undefined'
         });
         
-        // Try to get canvas context and check for drawn content
         const ctx = canvas.getContext('2d');
         if (ctx) {
             console.log('[blog-debug] Canvas context available');
-            
-            // Try a simple test draw
             ctx.save();
             ctx.fillStyle = 'yellow';
             ctx.fillRect(10, 10, 20, 20);
@@ -167,12 +199,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('[blog-debug] Test yellow rectangle drawn');
         }
         
-        // Force a re-render if hex functions are available
-        if (typeof Layout !== 'undefined' && typeof Hex !== 'undefined' && typeof Point !== 'undefined') {
-            console.log('[blog-debug] Attempting manual render...');
-            // Trigger a window resize event to force re-render
-            window.dispatchEvent(new Event('resize'));
-        }
+        logLayout('after-test');
+    }, 500);
         
     }, 1000);
 });
