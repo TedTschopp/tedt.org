@@ -51,48 +51,35 @@
                         {% if this-post.mf-like-of[0] contains "http" %}
                             {% assign post-url = this-post.mf-like-of[0] %}
                             {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
+                                                        <script type="text/javascript">
+                                                            // jQuery removed: attempt lightweight fetch for OpenGraph data (commented out to avoid API spam)
+                                                            (function(){
+                                                                // Placeholder left intentionally; OG scraping via FB Graph often blocked without proper tokens.
+                                                                // const url = '{{post-url}}';
+                                                                // const apiUrl = 'https://graph.facebook.com/?ids=' + encodeURIComponent(url);
+                                                                // fetch(apiUrl).then(r=>r.json()).then(result => {
+                                                                //   for (const key in result) {
+                                                                //     const val = result[key];
+                                                                //     const title = val?.og_object?.title;
+                                                                //     const desc = val?.og_object?.description;
+                                                                //     if (title) document.getElementById('social-share-{{this-post.slug}}').textContent = '🔗 - ' + title;
+                                                                //     if (desc) document.getElementById('social-share-content-{{this-post.slug}}').textContent = desc;
+                                                                //   }
+                                                                // }).catch(()=>{});
+                                                            })();
+                                                        </script>
                         {% elsif this-post.mf-in-reply-to[0] contains "http" %}
                             {% assign post-url = this-post.mf-in-reply-to[0] %}
                             {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
+                                                        <script type="text/javascript">
+                                                            (function(){ /* See note above about OG scraping. */ })();
+                                                        </script>
                         {% elsif this-post.mf-repost-of[0] contains "http" %}
                             {% assign post-url = this-post.mf-repost-of[0] %}
                             {% assign post-title = "🔗 " | post-url %}
-                            <script type="text/javascript">
-                                $(document).ready(function() {
-                                     var url = '{{post-url}}';
-                                     var apiUrl = 'https://graph.facebook.com/?ids='+url;
-                                     $.ajax({url: apiUrl, success: function(result){
-                                        $.each( result, function( key, val ) {
-                                            $("#social-share-{{this-post.slug}}").html("🔗 - " + val['og_object']['title']);
-                                            $("#social-share-content-{{this-post.slug}}").html(val['og_object']['description']);
-                                        });
-                                    }});
-                                });
-                            </script>
+                                                        <script type="text/javascript">
+                                                            (function(){ /* See note above about OG scraping. */ })();
+                                                        </script>
                         {% endif %}
 
                         {% if this-post.mf-itinerary[0].type[0] contains "h-leg" %}
