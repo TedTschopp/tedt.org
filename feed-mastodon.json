@@ -23,9 +23,9 @@ layout: null
     {%- capture raw_excerpt -%}{{ post.excerpt | default: post.content | strip_html | strip_newlines }}{%- endcapture -%}
     {%- assign url_len = canonical_url | size -%}
   {%- assign max_total = 480 -%}{% comment %} headroom under 500 for safety {% endcomment %}
-  {%- assign budget = max_total | minus: url_len | minus: 1 -%} {# space before URL #}
+  {%- assign budget = max_total | minus: url_len | minus: 1 -%}
   {%- if budget < 0 -%}{%- assign budget = 0 -%}{%- endif -%}
-    {%- if budget > 400 -%}{%- assign budget = 400 -%}{%- endif -%} {# cap so we don't over-grow #}
+  {%- if budget > 400 -%}{%- assign budget = 400 -%}{%- endif -%}
     {%- comment -%}
       Use Liquid's truncate filter with dynamic budget so excerpt + space + URL always fits within max_total chars.
       If URL itself is huge (rare), fallback to just the URL.

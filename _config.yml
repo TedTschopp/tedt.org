@@ -1,26 +1,28 @@
 include:
-  - ".well-known"
-  - "_pages"
+- ".well-known"
+- "_pages"
 
 # markdown: kramdown
 plugins:
-  - jekyll-redirect-from
+- jekyll-redirect-from
 
-#baseurl: https://tedt.org/
-siteurl: https://tedt.org
+# Jekyll expects 'url' (not siteurl) for absolute_url; leave baseurl blank (root)
+url: https://tedt.org
+# baseurl: ""   # keep commented / blank since site is served at domain root
+siteurl: https://tedt.org  # legacy key still referenced in layouts; keep as alias to prevent blank URLs
 
 #description of the site for meta tags
 description: "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution."
 
-keywords: 
- - Technology
- - Theology
- - Creativity
- - Religion
- - digital age
- - UI/UX
- - Collaboration tools
- - Storytelling
+keywords:
+- Technology
+- Theology
+- Creativity
+- Religion
+- digital age
+- UI/UX
+- Collaboration tools
+- Storytelling
 
 # Permalink 
 permalink: /:title/
@@ -39,9 +41,9 @@ othernames: Þeodor Tʃopp | टेड चप | Фёдор Чоп | تد شُپ 
 
 #Biography 
 biography:
-  - I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
-  - Before joining Edison, I owned a business featured in Wired Magazine.  I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
-  - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+- I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
+- Before joining Edison, I owned a business featured in Wired Magazine.  I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
+- I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
 
 # The Logo of the site
 logo: https://tedt.org/img/Site-Logo.webp
@@ -84,19 +86,18 @@ mastodon_comments:
   host: tschopp.net
   username: Ted
 
-
 collections:
   GammaWorld:
-   output: true
-   permalink: /:collection/:title
+    output: true
+    permalink: /:collection/:title
 
 # Defaults for different types of posts
 defaults:
-  - scope:
-      path: "_posts/Prompts"
-      type: "posts"
-    values:
-      permalink: "/prompts/:slug/"
+- scope:
+    path: "_posts/Prompts"
+    type: "posts"
+  values:
+    permalink: "/prompts/:slug/"
 
 # Variables that will be used elsewhere
 # Use {% assign author = site.authors[page.author] %} to get author which author
@@ -109,11 +110,11 @@ authors:
     familyname: Tschopp
     othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
     biography:
-      - I am the enterprise architect focused on the IT portfolio, Product Engineering, and Product Development at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with the IT portfolio and how we Engineer and Construct solutions for our business partners. I have been at SCE for over 20 years.
-      - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I was the Director of Technical Services for a market research company focused on the automotive industry.
-      - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+    - I am the enterprise architect focused on the IT portfolio, Product Engineering, and Product Development at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with the IT portfolio and how we Engineer and Construct solutions for our business partners. I have been at SCE for over 20 years.
+    - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I was the Director of Technical Services for a market research company focused on the automotive industry.
+    - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
     email: ted@tschopp.org
-    phonenumber: 
+    phonenumber:
     keybaseio_username: tedtschopp
     twitter_username: TedTschopp
     github_username: TedTschopp
@@ -137,11 +138,11 @@ author:
   familyname: Tschopp
   othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
   biography:
-    - I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.
-    - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.
-    - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+  - I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.
+  - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.
+  - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
   email: ted@tschopp.org
-  phonenumber: 
+  phonenumber:
   keybaseio_username: tedtschopp
   twitter_username: TedTschopp
   github_username: TedTschopp
@@ -159,329 +160,326 @@ author:
 #  google_username: TedTschopp
 
 email: ted@tschopp.org
-phonenumber: 
-indiewebcamp_username: Www.tedt.org                                    # Done
-github_username: TedTschopp                                            # Done
-quora_username: Ted-Tschopp                                            # Done
-pinterest_username: TedTschopp                                         # Done
-youtube_username: TedTschopp                                           # done
-linkedin_username: tedtschopp                                          # Done
-facebook_username: ted.tschopp                                         # Done
-reddit_username: tedtschopp                                            # Done
-twitter_username: TedTschopp                                           # Done
-threads_username: TedTschopp@threads.net                               # Done
-mastodon_username: TedT@twit.social                                    # Done
-instagram_username: tedtschopp                                         # Done
-foursquare: //foursquare.com/tedtschopp                                # Done
-goodreads: //www.goodreads.com/TedTschopp                              # Done
-instagram: www.instagram.com/tedtschopp/                               # Done
-meetup: //www.meetup.com/members/45846/                                # Done
-soundcloud: //soundcloud.com/ted-tschopp                               # Done
-twitch: https://www.twitch.tv/tedtschopp                               # Done
-tumblr: https://www.tumblr.com/blog/tedtschopp                         # Done
-vimeo: //vimeo.com/tedtschop                                           # Done
+phonenumber:
+indiewebcamp_username: Www.tedt.org # Done
+github_username: TedTschopp # Done
+quora_username: Ted-Tschopp # Done
+pinterest_username: TedTschopp # Done
+youtube_username: TedTschopp # done
+linkedin_username: tedtschopp # Done
+facebook_username: ted.tschopp # Done
+reddit_username: tedtschopp # Done
+twitter_username: TedTschopp # Done
+threads_username: TedTschopp@threads.net # Done
+mastodon_username: TedT@twit.social # Done
+instagram_username: tedtschopp # Done
+foursquare: //foursquare.com/tedtschopp # Done
+goodreads: //www.goodreads.com/TedTschopp # Done
+instagram: www.instagram.com/tedtschopp/ # Done
+meetup: //www.meetup.com/members/45846/ # Done
+soundcloud: //soundcloud.com/ted-tschopp # Done
+twitch: https://www.twitch.tv/tedtschopp # Done
+tumblr: https://www.tumblr.com/blog/tedtschopp # Done
+vimeo: //vimeo.com/tedtschop # Done
 xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
-Steam: //steamcommunity.com/id/theothesilly/                           # Done
-keybaseio_username: tedtschopp                                         # Done  
-
+Steam: //steamcommunity.com/id/theothesilly/ # Done
+keybaseio_username: tedtschopp # Done  
 
 fitbit: //www.fitbit.com/user/242JHZ
-runkeeper: //runkeeper.com/user/TedTschopp                            
+runkeeper: //runkeeper.com/user/TedTschopp
 angellist: tedtschopp
 
 # SOCIAL MEDIA
 # IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
 
 links:
-    # Homepage
-  - Name: Website
-    URL: https://www.tedt.org
-    Type: fontawsome
-    Icon-Class: fas fa-home fa-lg fa-fw
-    Category: 'About Me'
-    # MEDIUM
-  - Name: Medium
-    URL: 'https://medium.com'
-    Username: '@TedTschopp'
-    Type: fontawsome
-    Icon-Class: fab fa-medium-m
-    Color: '#00ab6c'
-    Category: 'About Me'
-    # Indie Web Camp
-  - Name: Indie<wbr>web
-    URL: https://indieweb.org/User:Www.tedt.org
-    Type: fontawsome
-    Icon-Class: fa-regular fa-window-maximize
-    Category: 'About Me'
-    # Keybase
-  - Name: Key<wbr>base
-    URL: https://keybase.io
-    Username: 'tedtschopp'
-    Color: '#4866b0'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-keybase
-    Category: 'About Me'
-    # EMAIL
-  - Name: Email
-    URL: 'mailto:ted@tedt.org'
-    Type: fontawsome
-    Icon-Class: fa-solid fa-envelope
-    Category: 'About Me'
-    # BUY ME A COFFEE
-  - Name: Buy<wbr>Me<wbr>A<wbr>Coffee
-    URL: 'https://buymeacoffee.com'
-    Username: TedT
-    Type: fontawsome
-    Icon-Class: fa-solid fa-mug-hot
-    Color: '#FFDD00'
-    Category: 'Support Me'
-    # Ko-Fi
-  - Name: Ko-<wbr>Fi
-    URL: 'https://ko-fi.com'
-    Username: tedtschopp
-    Type: fontawsome
-    Icon-Class: fa-solid fa-mug-saucer
-    Color: '#FF6433'
-    Category: 'Support Me'
-    # Meetup
-  - Name: Meetup
-    URL: 'https://www.meetup.com/members/'
-    Username: 45846/
-    Type: fontawsome
-    Icon-Class: fa-brands fa-meetup
-    Color: '#ED1C40'
-    Category: 'About Me'
-    # Foursquare
-  - Name: Foursquare
-    URL: https://foursquare.com
-    Username: tedtschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-foursquare
-    Color: '#0072b1'
-    Category: 'About Me'
-    # web.brid.gy
-  - Name: web.<wbr>brid.<wbr>gy
-    URL: https://web.brid.gy/r
-    Username: 'https://tedt.org/'
-    Type: fontawsome
-    Icon-Class: fa-solid fa-bridge
-    Category: 'Social Media'
-    # Mastodon
-  - Name: Mastodon
-    URL: https://twit.social
-    Username: '@TedT'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-mastodon
-    Color: '#595aff'
-    Category: 'Social Media'
-    # BlueSky
-  - Name: Blue<wbr>Sky
-    URL: https://bsky.app/profile
-    Username: tedt.org
-    Type: fontawsome
-    Icon-Class: fa-brands fa-bluesky 
-    Color: '#0085FF'
-    Category: 'Social Media'
-    # Threads
-  - Name: Threads
-    URL: https://threads.net
-    Username: '@TedTschopp'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-threads
-    Category: 'Social Media'
-    # FACEBOOK
-  - Name: Face<wbr>book
-    URL: https://www.facebook.com
-    Username: ted.tschopp
-    Color: '#3b5998'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-facebook
-    Category: 'Social Media'
-    # INSTAGRAM
-  - Name: Insta<wbr>gram
-    URL: https://www.instagram.com
-    Username: TedTschopp
-    Color: '#DD2A7B'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-instagram
-    Category: 'Social Media'
-    # MESSENGER
-  - Name: Messenger
-    URL: https://m.me
-    Username: TedTschopp
-    Color: '#006AFF'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-facebook-messenger
-    Category: 'Social Media'
-    # TWITTER
-  - Name: Twitter
-    URL: https://twitter.com
-    Username: TedTschopp
-    Color: '#1DA1F2'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-x-twitter
-    Category: 'Social Media'
-    # LINKEDIN
-  - Name: Linked<wbr>In
-    URL: https://www.linkedin.com/in
-    Username: tedtschopp
-    Color: '#2867B2'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-linkedin-in
-    Category: 'Social Media'
-    # SNAPCHAT
-  - Name: Snap<wbr>chat
-    URL: https://www.snapchat.com/add
-    Username: 'TedTschopp'
-    Color: '#FFFC00'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-snapchat-ghost
-    Category: 'Social Media'
-    # REDDIT
-  - Name: Reddit
-    URL: http://reddit.com/u
-    Username: TedTschopp
-    Color: '#FF4500'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-reddit-alien
-    Category: 'Social Media'
-    # GOODREADS
-  - Name: Good<wbr>reads
-    URL: https://www.goodreads.com/user/show/856383-ted-tschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-goodreads
-    Color: '#e9e5cd'
-    Category: 'Creative'
-    # PINTEREST
-  - Name: Pin<wbr>terest
-    URL: https://pinterest.com
-    Username: 'tedtschopp'
-    Color: '#E60023'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-pinterest
-    Category: 'Creative'
-    # TUMBLR
-  - Name: Tumblr
-    URL: https://www.tumblr.com/blog
-    Username: tedtschopp
-    Color: '#35465c'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-tumblr
-    Category: 'Creative'
-    # Quora
-  - Name: Quora
-    URL: https://www.quora.com/profile
-    Username: Ted-Tschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-quora
-    Color: '#B92B27'
-    Category: 'Creative'
-    # YOUTUBE
-  - Name: You<wbr>Tube
-    URL: https://www.youtube.com/channel
-    Username: UC4Q8pXroTVyXrIxg2u82pwg
-    Color: '#ff0000'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-youtube
-    Category: 'Creative'
-    # TWITCH
-  - Name: Twitch
-    URL: 'https://twitch.tv'
-    Username: tedtschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-twitch
-    Color: '#9147fe'
-    Category: 'Creative'
-    # VIMEO
-  - Name: Vimeo
-    URL: 'https://vimeo.com'
-    Username: TedTschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-vimeo-v
-    Color: '#1ab7ea'
-    Category: 'Creative'
-    # SOUNDCLOUD
-  - Name: Sound<wbr>Cloud
-    URL: https://www.soundcloud.com
-    Username: ted-tschopp
-    Color: '#FE5000'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-soundcloud
-    Category: 'Creative'
-    # Midjourney
-  - Name: Mid<wbr>journey
-    URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
-    Type: fontawsome
-    Icon-Class: fa-solid fa-sailboat
-    Color: '#e6dfd3'
-    Category: 'Creative'
-     # GITHUB
-  - Name: Git<wbr>Hub
-    URL: http://github.com
-    Username: TedTschopp
-    Color: '#6e5494'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-github
-    Category: 'Coding'
-     # HuggingFace
-  - Name: Hugging Face
-    URL: https://huggingface.co
-    Username: TedTschopp
-    Color: '#6e5494'
-    Type: emoji
-    Icon-Class: 🤗
-    Category: 'Coding'
-    # DEV.TO
-  - Name: Dev.to
-    URL: 'https://dev.to'
-    Username: tedtschopp
-    Icon-Class: fa-brands fa-dev
-    Type: fontawsome
-    Color: '#ffffff'
-    Category: 'Coding'
-    # STEAM
-  - Name: Steam
-    URL: https://steamcommunity.com/id
-    Username: 'TedTschopp'
-    Color: '#66c0f4'
-    Type: fontawsome
-    Icon-Class: fa-brands fa-steam
-    Category: 'Gaming'
-    # XBOX
-  - Name: xBox
-    URL: https://account.xbox.com/en-us/profile?gamertag=
-    Username: TedTschopp
-    Type: fontawsome
-    Icon-Class: fa-brands fa-xbox
-    Color: '#107C10'
-    Category: 'Gaming'
-  - Name: GoG
-    URL: https://www.gog.com/u
-    Username: TedTschopp
-    Type: fontawsome
-    Icon-Class: fa-solid fa-gamepad
-    Color: '#86328A'
-    Category: 'Gaming'
+# Homepage
+- Name: Website
+  URL: https://www.tedt.org
+  Type: fontawsome
+  Icon-Class: fas fa-home fa-lg fa-fw
+  Category: 'About Me'
+  # MEDIUM
+- Name: Medium
+  URL: 'https://medium.com'
+  Username: '@TedTschopp'
+  Type: fontawsome
+  Icon-Class: fab fa-medium-m
+  Color: '#00ab6c'
+  Category: 'About Me'
+  # Indie Web Camp
+- Name: Indie<wbr>web
+  URL: https://indieweb.org/User:Www.tedt.org
+  Type: fontawsome
+  Icon-Class: fa-regular fa-window-maximize
+  Category: 'About Me'
+  # Keybase
+- Name: Key<wbr>base
+  URL: https://keybase.io
+  Username: 'tedtschopp'
+  Color: '#4866b0'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-keybase
+  Category: 'About Me'
+  # EMAIL
+- Name: Email
+  URL: 'mailto:ted@tedt.org'
+  Type: fontawsome
+  Icon-Class: fa-solid fa-envelope
+  Category: 'About Me'
+  # BUY ME A COFFEE
+- Name: Buy<wbr>Me<wbr>A<wbr>Coffee
+  URL: 'https://buymeacoffee.com'
+  Username: TedT
+  Type: fontawsome
+  Icon-Class: fa-solid fa-mug-hot
+  Color: '#FFDD00'
+  Category: 'Support Me'
+  # Ko-Fi
+- Name: Ko-<wbr>Fi
+  URL: 'https://ko-fi.com'
+  Username: tedtschopp
+  Type: fontawsome
+  Icon-Class: fa-solid fa-mug-saucer
+  Color: '#FF6433'
+  Category: 'Support Me'
+  # Meetup
+- Name: Meetup
+  URL: 'https://www.meetup.com/members/'
+  Username: 45846/
+  Type: fontawsome
+  Icon-Class: fa-brands fa-meetup
+  Color: '#ED1C40'
+  Category: 'About Me'
+  # Foursquare
+- Name: Foursquare
+  URL: https://foursquare.com
+  Username: tedtschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-foursquare
+  Color: '#0072b1'
+  Category: 'About Me'
+  # web.brid.gy
+- Name: web.<wbr>brid.<wbr>gy
+  URL: https://web.brid.gy/r
+  Username: 'https://tedt.org/'
+  Type: fontawsome
+  Icon-Class: fa-solid fa-bridge
+  Category: 'Social Media'
+  # Mastodon
+- Name: Mastodon
+  URL: https://twit.social
+  Username: '@TedT'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-mastodon
+  Color: '#595aff'
+  Category: 'Social Media'
+  # BlueSky
+- Name: Blue<wbr>Sky
+  URL: https://bsky.app/profile
+  Username: tedt.org
+  Type: fontawsome
+  Icon-Class: fa-brands fa-bluesky
+  Color: '#0085FF'
+  Category: 'Social Media'
+  # Threads
+- Name: Threads
+  URL: https://threads.net
+  Username: '@TedTschopp'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-threads
+  Category: 'Social Media'
+  # FACEBOOK
+- Name: Face<wbr>book
+  URL: https://www.facebook.com
+  Username: ted.tschopp
+  Color: '#3b5998'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-facebook
+  Category: 'Social Media'
+  # INSTAGRAM
+- Name: Insta<wbr>gram
+  URL: https://www.instagram.com
+  Username: TedTschopp
+  Color: '#DD2A7B'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-instagram
+  Category: 'Social Media'
+  # MESSENGER
+- Name: Messenger
+  URL: https://m.me
+  Username: TedTschopp
+  Color: '#006AFF'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-facebook-messenger
+  Category: 'Social Media'
+  # TWITTER
+- Name: Twitter
+  URL: https://twitter.com
+  Username: TedTschopp
+  Color: '#1DA1F2'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-x-twitter
+  Category: 'Social Media'
+  # LINKEDIN
+- Name: Linked<wbr>In
+  URL: https://www.linkedin.com/in
+  Username: tedtschopp
+  Color: '#2867B2'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-linkedin-in
+  Category: 'Social Media'
+  # SNAPCHAT
+- Name: Snap<wbr>chat
+  URL: https://www.snapchat.com/add
+  Username: 'TedTschopp'
+  Color: '#FFFC00'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-snapchat-ghost
+  Category: 'Social Media'
+  # REDDIT
+- Name: Reddit
+  URL: http://reddit.com/u
+  Username: TedTschopp
+  Color: '#FF4500'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-reddit-alien
+  Category: 'Social Media'
+  # GOODREADS
+- Name: Good<wbr>reads
+  URL: https://www.goodreads.com/user/show/856383-ted-tschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-goodreads
+  Color: '#e9e5cd'
+  Category: 'Creative'
+  # PINTEREST
+- Name: Pin<wbr>terest
+  URL: https://pinterest.com
+  Username: 'tedtschopp'
+  Color: '#E60023'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-pinterest
+  Category: 'Creative'
+  # TUMBLR
+- Name: Tumblr
+  URL: https://www.tumblr.com/blog
+  Username: tedtschopp
+  Color: '#35465c'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-tumblr
+  Category: 'Creative'
+  # Quora
+- Name: Quora
+  URL: https://www.quora.com/profile
+  Username: Ted-Tschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-quora
+  Color: '#B92B27'
+  Category: 'Creative'
+  # YOUTUBE
+- Name: You<wbr>Tube
+  URL: https://www.youtube.com/channel
+  Username: UC4Q8pXroTVyXrIxg2u82pwg
+  Color: '#ff0000'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-youtube
+  Category: 'Creative'
+  # TWITCH
+- Name: Twitch
+  URL: 'https://twitch.tv'
+  Username: tedtschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-twitch
+  Color: '#9147fe'
+  Category: 'Creative'
+  # VIMEO
+- Name: Vimeo
+  URL: 'https://vimeo.com'
+  Username: TedTschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-vimeo-v
+  Color: '#1ab7ea'
+  Category: 'Creative'
+  # SOUNDCLOUD
+- Name: Sound<wbr>Cloud
+  URL: https://www.soundcloud.com
+  Username: ted-tschopp
+  Color: '#FE5000'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-soundcloud
+  Category: 'Creative'
+  # Midjourney
+- Name: Mid<wbr>journey
+  URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
+  Type: fontawsome
+  Icon-Class: fa-solid fa-sailboat
+  Color: '#e6dfd3'
+  Category: 'Creative' # GITHUB
+- Name: Git<wbr>Hub
+  URL: http://github.com
+  Username: TedTschopp
+  Color: '#6e5494'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-github
+  Category: 'Coding' # HuggingFace
+- Name: Hugging Face
+  URL: https://huggingface.co
+  Username: TedTschopp
+  Color: '#6e5494'
+  Type: emoji
+  Icon-Class: 🤗
+  Category: 'Coding'
+  # DEV.TO
+- Name: Dev.to
+  URL: 'https://dev.to'
+  Username: tedtschopp
+  Icon-Class: fa-brands fa-dev
+  Type: fontawsome
+  Color: '#ffffff'
+  Category: 'Coding'
+  # STEAM
+- Name: Steam
+  URL: https://steamcommunity.com/id
+  Username: 'TedTschopp'
+  Color: '#66c0f4'
+  Type: fontawsome
+  Icon-Class: fa-brands fa-steam
+  Category: 'Gaming'
+  # XBOX
+- Name: xBox
+  URL: https://account.xbox.com/en-us/profile?gamertag=
+  Username: TedTschopp
+  Type: fontawsome
+  Icon-Class: fa-brands fa-xbox
+  Color: '#107C10'
+  Category: 'Gaming'
+- Name: GoG
+  URL: https://www.gog.com/u
+  Username: TedTschopp
+  Type: fontawsome
+  Icon-Class: fa-solid fa-gamepad
+  Color: '#86328A'
+  Category: 'Gaming'
 
 # hcard:
 #   organization: Distribution
 #   name: Jayne Cobb
-# 
+#
 #   # email_type: office
 #   # email_address: name@example.com
 #   emails:
 #     - type: office
 #       address: name@example.com
-# 
+#
 #   # phone_type: cell
 #   # phone_number: 555-123-4567
 #   phone_numbers:
 #     - type: cell
 #       number: 555-123-4567
-# 
+#
 #     - type: office
 #       number: 555-987-6543
-# 
+#
 #   address:
 #     street: 418 Code St.
 #     extended: Suite 503       ## AKA suite, apartment, etc.
@@ -490,16 +488,16 @@ links:
 #     locality: Server Request  ## AKA city
 #     region: ZZ                ## AKA state
 #     postal_code: 12345        ## AKA zip
-# 
+#
 #   # link_label: 'example'
 #   # link_url: https://example.com
 #   links:
 #     - label: 'example one'
 #       url: https://example.com
-# 
+#
 #     - label: 'example two'
 #       url: https://example.com
-# 
+#
 #     - label: 'example three'
 #       url: https://example.com
-# 
+#
