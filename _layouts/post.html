@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row w-100">
             <!-- Blog Post Content Column -->
-            <div class="col-xxxl-9" id="content-column">
+            <div class="col-12 col-lg-9 col-xxl-9" id="content-column">
                 <!-- Blog Post -->
                 <article class="h-entry">
 
@@ -187,7 +187,7 @@
 
                                 </div>
                             </div>                   
-                            <div class="e-content" id="main_content">{{ content }}</div>
+                            <div class="e-content" id="main_content">{{ content }}</div><!-- main post content including hex include -->
 
                         </div>
                         <!--<div class="card-footer p-4 py-3 h-100"></div>-->
@@ -197,9 +197,9 @@
 
                 </article>
 
-                                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
-                                    {% include social/comments-mastodon-tree.html %}
-                                {% endif %}
+                    {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                        {% include social/comments-mastodon-tree.html %}
+                    {% endif %}
                 <hr>
 
                 {% include social/comments-webmentions.html %}
@@ -210,7 +210,7 @@
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
-            <div class="col-xxxl-3">
+            <div class="col-12 col-lg-3 col-xxl-3">
 
                 <!-- Blog Categories Well -->
                 <div class="well">
