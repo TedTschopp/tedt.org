@@ -290,42 +290,93 @@
     
     console.log('[hex-multi-scale] Canvas found, dimensions:', canvas.offsetWidth, 'x', canvas.offsetHeight);
     
-    try {
-      ensureHiDpi(canvas);
-      console.log('[hex-multi-scale] HiDPI setup complete');
-      
-      render(canvas);
-      console.log('[hex-multi-scale] Initial render complete');
-      
-      buildLegend();
-      console.log('[hex-multi-scale] Legend built');
-      
-      attachControls(canvas);
-      console.log('[hex-multi-scale] Controls attached');
-      
-      // Mark as initialized
-      canvas.dataset.initialized = 'true';
-      
-      let resizeTimeout;
-      window.addEventListener('resize', () => { 
-        // Debounce resize events to prevent excessive rendering
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-          console.log('[hex-multi-scale] Window resized, re-rendering');
+    // Helper: wait until canvas has non-zero rendered size before first draw.
+    function waitForRenderableSize(maxMs = 2000) {
+      const start = performance.now();
+      return new Promise((resolve, reject) => {
+        (function check() {
           const rect = canvas.getBoundingClientRect();
-          if (rect.width > 0 && rect.height > 0) {
-            ensureHiDpi(canvas); 
-            render(canvas);
-          } else if (window.HEX_DEBUG) {
-            console.warn('[hex-multi-scale] Skipping resize render: canvas has zero dimensions', rect);
-          }
-        }, 16); // ~60fps throttling
+            if (rect.width > 4 && rect.height > 4) { // small guard threshold
+              return resolve(rect);
+            }
+            if (performance.now() - start > maxMs) {
+              return reject(new Error('Timed out waiting for non-zero canvas size'));
+            }
+            requestAnimationFrame(check);
+        })();
       });
-      
-      console.log('[hex-multi-scale] Initialization complete');
-    } catch (error) {
-      console.error('[hex-multi-scale] Error during initialization:', error);
     }
+
+    // Fallback: observe parent visibility changes (e.g., CSS layout shifts)
+    const parent = canvas.parentElement;
+    let resizeObserver;
+    try {
+      resizeObserver = new ResizeObserver(entries => {
+        for (const entry of entries) {
+          if (entry.target === canvas || entry.target === parent) {
+            const rect = canvas.getBoundingClientRect();
+            if (rect.width > 0 && rect.height > 0) {
+              ensureHiDpi(canvas);
+              render(canvas);
+            }
+          }
+        }
+      });
+      resizeObserver.observe(canvas);
+      if (parent) resizeObserver.observe(parent);
+    } catch(e) {
+      // Ignore if ResizeObserver unsupported
+    }
+
+    function doFirstPaint() {
+      try {
+        ensureHiDpi(canvas);
+        console.log('[hex-multi-scale] HiDPI setup complete');
+        render(canvas);
+        console.log('[hex-multi-scale] Initial render complete');
+        buildLegend();
+        console.log('[hex-multi-scale] Legend built');
+        attachControls(canvas);
+        console.log('[hex-multi-scale] Controls attached');
+        canvas.dataset.initialized = 'true';
+        console.log('[hex-multi-scale] Initialization complete');
+      } catch (error) {
+        console.error('[hex-multi-scale] Error during initialization:', error);
+      }
+    }
+
+    waitForRenderableSize().then(rect => {
+      if (window.HEX_DEBUG) console.log('[hex-multi-scale] Size ready for initial render', rect);
+      doFirstPaint();
+    }).catch(err => {
+      console.warn('[hex-multi-scale] Proceeding without confirmed size:', err.message);
+      doFirstPaint();
+    });
+
+    // Add debounced window resize listener (kept after first paint)
+    let resizeTimeout;
+    window.addEventListener('resize', () => { 
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const rect = canvas.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+          if (window.HEX_DEBUG) console.log('[hex-multi-scale] Window resize re-render', rect);
+          ensureHiDpi(canvas); 
+          render(canvas);
+        }
+      }, 50);
+    });
+    
+    // Scheduled re-renders in case of late style injections (e.g., fonts/layout shifts)
+    [250, 750, 1500].forEach(delay => setTimeout(() => {
+      if (!canvas.isConnected) return;
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width > 0 && rect.height > 0) {
+        if (window.HEX_DEBUG) console.log('[hex-multi-scale] Scheduled re-render', { delay, rect });
+        ensureHiDpi(canvas);
+        render(canvas);
+      }
+    }, delay));
   }
 
   // Multiple attempts to initialize to handle different loading scenarios
