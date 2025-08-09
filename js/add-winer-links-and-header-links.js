@@ -54,14 +54,14 @@ function addAnchorTagsToParagraphNodes(root) {
     const firstFiveLetters = concatenateFirstLetters(firstFiveWords);
 
     // Create the opening anchor tag
-    const openingAnchor = doc.createElement("a");
+  const openingAnchor = document.createElement("a");
     openingAnchor.classList.add("WinerAnchor");
     openingAnchor.id = firstFiveLetters;
     openingAnchor.name = firstFiveLetters;
     paragraph.insertBefore(openingAnchor, paragraph.firstChild);
 
     // Create the closing anchor tag
-    const closingAnchor = doc.createElement("a");
+  const closingAnchor = document.createElement("a");
     closingAnchor.href = `#`+firstFiveLetters;
     closingAnchor.textContent = `¶`;
     closingAnchor.classList.add("Winerlink");
