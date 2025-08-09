@@ -1,60 +1,51 @@
----
 layout: post
-
 title: Draft - Practical Hexcrawl Design and Procedures
 subtitle: Turning Blank Wilderness into Living Adventure Space
-quote:
 excerpt: "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep."
-source:
-source-url:
-call-to-action:
-
 date: 2025-08-07 09:00:00
-update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
     url: https://tedt.org/
-
-bullets:
-
-description: A grounded guide to building, stocking, and running an evocative hexcrawl using layered density, repeatable procedures, and emergent play loops.
-seo-description: A grounded guide to building, stocking, and running an evocative hexcrawl using layered density, repeatable procedures, and emergent play loops.
-
 categories:
-- Role Playing Games
-- Maps
-
+    - Role Playing Games
+    - Maps
 tags:
-- hexcrawl
-- wilderness
-- procedures
-- emergent play
-- mapping
+    - hexcrawl
+    - wilderness
+    - procedures
+    - emergent play
+    - mapping
 keywords: Hexcrawl, wilderness exploration, referee procedures, emergent play, mapping discipline, encounter design
-
-redirect_from:
-
 location:
     name: Bradbury, CA
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-
 image: img/2025-08/hex-map-seeded-frontier.webp
 image-alt: A weathered campaign hex map with rivers, ridges, ruins, and colored exploration annotations
 image-artist: Ted Tschopp (concept + Midjourney assist)
 image-artist-URL: https://tedt.org/
 image-description: Faded parchment style hex map of a frontier region with layered icons and subtle marginalia notes.
 image-title: Seeded Frontier Hex Map
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-mathjax:
-
-order:
 ---
+
+<script>
+// Ancestor layout diagnostics (below front matter)
+window.HEX_DEBUG = true;
+document.addEventListener('DOMContentLoaded', function() {
+    const canvas = document.getElementById('hex-multi-scale');
+    if (!canvas) return;
+    const figure = canvas.closest('figure');
+    const container = canvas.parentElement;
+    function rect(el){ if(!el) return null; const r = el.getBoundingClientRect(); return {w:r.width,h:r.height,disp:getComputedStyle(el).display,pos:getComputedStyle(el).position}; }
+    function chain(el){ const parts=[]; let cur=el; let depth=0; while(cur && depth<8){ parts.push({tag:cur.tagName.toLowerCase(), id:cur.id||'', cls:cur.className||'', rect:rect(cur)}); cur=cur.parentElement; depth++; } return parts; }
+    function log(label){ console.log('[blog-debug] layout '+label, { figure:rect(figure), container:rect(container), canvas:rect(canvas), chain:chain(figure) }); }
+    log('initial');
+    [figure,container,canvas].forEach(el=>{ if(!el) return; new ResizeObserver(()=>log(el.tagName.toLowerCase()+'-resize')).observe(el); });
+    setTimeout(()=>log('t+500'),500);
+    setTimeout(()=>{ if(figure && figure.getBoundingClientRect().width===0){ figure.style.width='640px'; figure.style.minHeight='480px'; figure.style.outline='2px dashed orange'; console.warn('[blog-debug] forced provisional size'); log('after-force'); } },800);
+});
+</script>
 
 ## Why Hexcrawl?
 
