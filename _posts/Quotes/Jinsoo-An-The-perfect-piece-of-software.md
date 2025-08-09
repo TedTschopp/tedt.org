@@ -12,7 +12,7 @@ source: Chat Transcript with Jinsoo An
 source-url:
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Jinsoo An

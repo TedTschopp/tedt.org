@@ -305,3 +305,10 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Ruby / Bundler (local installs & caches)
+vendor/bundle/
+vendor/ruby/
+vendor/cache/
+.bundle/
+

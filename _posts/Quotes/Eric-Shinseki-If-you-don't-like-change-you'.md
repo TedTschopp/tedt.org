@@ -11,7 +11,7 @@ source: Article in the New York Times
 source-url: https://www.nytimes.com/2009/11/11/us/politics/11vets.html
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Eric Shinseki

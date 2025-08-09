@@ -11,7 +11,7 @@ source: Beyond Interactive Voice Response
 source-url: https://www.infoworld.com/article/2673038/beyond-interactive-voice-response.html
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Jon Udell

@@ -12,7 +12,7 @@ source: Twitter Feed
 source-url: https://twitter.com/greatdismal/status/453367121754333184?s=61&t=xLITO7YGW5a-jEqio72W9A'
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: William Gibson

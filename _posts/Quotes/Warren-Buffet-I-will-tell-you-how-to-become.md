@@ -12,7 +12,7 @@ source: Chairman's Letter to Shareholders, 1986
 source-url: https://www.berkshirehathaway.com/letters/1986.html
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Warren Buffett

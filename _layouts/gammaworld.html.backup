@@ -26,7 +26,7 @@
 
      <!-- Scripts that need to be at the end of the header -->
      {% include assets/scripts.html %}
-     <script src="{{ site.siteurl }}/js/jscii.js"></script>
+     <script src="{{ site.url }}/js/jscii.js"></script>
 
      <style>
           a[hreflang]:after {
@@ -54,9 +54,9 @@
                     {% assign creature_image = page.image %}
                     
                     {% if creature_image == "" %}
-                         {% assign creature_image = site.siteurl | append: "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index | append: ".png"%}
+                         {% assign creature_image = site.url | append: "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index | append: ".png"%}
                     {% else %}
-                         {% assign creature_image = site.siteurl | append: creature_image %}
+                         {% assign creature_image = site.url | append: creature_image %}
                     {% endif %}
                     {% assign current_second = "now" | date: "%S" %}
                     {% assign random_number = current_second | modulo: 12 | plus: 1 %}
@@ -81,7 +81,7 @@
                                    document.getElementById('image-error-message').classList.add('visually-hidden');
                                    },
                                         function () {
-                                   document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                                   document.getElementById('jscii-element-image').src = "{{ site.url }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
                                    document.getElementById('image-error-message').classList.remove('visually-hidden');
                                    }
                               );
@@ -414,14 +414,14 @@
                     {% assign previous_url = page.previous.url %}
                     {% assign previous_title = page.previous.title %}
                     {% else %}
-                    {% assign previous_url = site.siteurl %}
+                    {% assign previous_url = site.url %}
                     {% assign previous_title = "Home" %}
                     {% endif %}
                     {% if page.next.url %}
                     {% assign next_url = page.next.url %}
                     {% assign next_title = page.next.title %}
                     {% else %}
-                    {% assign next_url = site.siteurl %}
+                    {% assign next_url = site.url %}
                     {% assign next_title = "Home" %}
                     {% endif %}
 
@@ -455,7 +455,7 @@
                                    {% endunless %}
                                    {% endfor %}
                                    {% if Bestiary.title != page.title %}
-                                   <li><a href="{{ site.siteurl }}/Gamma-World-Bestiary/{{ capitalizedpermalink }}.html"
+                                   <li><a href="{{ site.url }}/Gamma-World-Bestiary/{{ capitalizedpermalink }}.html"
                                              class="text-primary" style="break-inside: avoid-column;">{{ Bestiary.title
                                              }}</a></li>
                                    {% else %}
@@ -515,13 +515,13 @@
 
           // Image error handling
           checkImage(
-               "{{ site.siteurl }}{{ creature_image }}",
+               "{{ site.url }}{{ creature_image }}",
                function () {
-                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}{{ creature_image }}";
+                    document.getElementById('jscii-element-image').src = "{{ site.url }}{{ creature_image }}";
                     document.getElementById('image-error-message').classList.add('visually-hidden');
                },
                function () {
-                    document.getElementById('jscii-element-image').src = "{{ site.siteurl }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
+                    document.getElementById('jscii-element-image').src = "{{ site.url }}/RPG/MCC-GW/images/Monster-Manual/Creature Image Error {{ random_number }}.png";
                     document.getElementById('image-error-message').classList.remove('visually-hidden');
                }
           );

@@ -12,7 +12,7 @@ source: January 24, 2000 interview with Fortune Magazine
 source-url: https://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Steve Jobs

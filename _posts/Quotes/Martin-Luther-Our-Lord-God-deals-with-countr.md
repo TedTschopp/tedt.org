@@ -12,7 +12,7 @@ source: Table Talk - of Countries and Cities DCCCXXXVIII
 source-url: https://www.ccel.org/ccel/luther/tabletalk.v.xliv.html
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Martin Luther

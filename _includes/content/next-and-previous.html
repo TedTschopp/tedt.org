@@ -19,14 +19,14 @@
 	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
 		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign previous_image = site.siteurl | append: "/" | append: page.previous.image  %}
+		{% assign previous_image = site.url | append: "/" | append: page.previous.image  %}
 	{% endif %}
 
 	{% assign previous_url = page.previous.url %}
 {% else %}
-	{% assign previous_url = site.siteurl %}
+	{% assign previous_url = site.url %}
 	{% assign previous_title = "Home" %}
-	{% assign previous_image = site.siteurl | append: "/" | append: "webpage_thumbnail.webp" %}
+	{% assign previous_image = site.url | append: "/" | append: "webpage_thumbnail.webp" %}
 	{% assign previous_subtitle = site.subtitle %}
 {% endif %}
 
@@ -51,16 +51,16 @@
 	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
 		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign next_image = site.siteurl | append: "/" | append: page.next.image  %}
+		{% assign next_image = site.url | append: "/" | append: page.next.image  %}
 	{% endif %}
 
 	{% assign next_url = page.next.url %}
 
 {% else %}
 
-	{% assign next_url = site.siteurl %}
+	{% assign next_url = site.url %}
 	{% assign next_title = "Home" %}
-	{% assign next_image = site.siteurl | append: "/img/" | append: "webpage_thumbnail.webp" %}
+	{% assign next_image = site.url | append: "/img/" | append: "webpage_thumbnail.webp" %}
 	{% assign next_subtitle = site.subtitle %}
 
 {% endif %}

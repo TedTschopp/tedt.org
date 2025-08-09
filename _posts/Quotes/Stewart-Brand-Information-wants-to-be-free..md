@@ -11,7 +11,7 @@ source: 1984 at the first Hackers’ Conference - Printed in May 1985 Whole Eart
 source-url:
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Stewart Brand

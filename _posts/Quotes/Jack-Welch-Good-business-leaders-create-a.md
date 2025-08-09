@@ -13,7 +13,7 @@ source: Interview with Harvard Business Review - source - 'Interview with Harvar
 source-url: https://hbr.org/2015/01/what-makes-a-great-leader
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Jack Welch

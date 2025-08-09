@@ -119,7 +119,7 @@
     </script>
 
     <!-- Bottom of the Body include core JavaScript -->
-    {% assign this-url = site.siteurl | append: page.url %}
+  {% assign this-url = site.url | append: page.url %}
 
     {% if home-page-url == this-url %}
         <script>

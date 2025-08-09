@@ -1,0 +1,39 @@
+name: Build and Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-validate:
+    runs-on: ubuntu-latest
+    env:
+      RUBYOPT: -rdate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Build Jekyll
+        run: bundle exec jekyll build --quiet
+      - name: Legacy key check
+        run: ruby tests/check_no_legacy_siteurl.rb
+      - name: Normalize Dates (microsecond timestamps)
+        run: ruby _code/normalize_dates.rb
+      - name: Feed integrity
+        run: ruby tests/check_feed_integrity.rb
+      - name: HTML Proofer (links & images)
+        run: |
+          bundle exec htmlproofer ./_site --check-html --allow-missing-href || (echo 'HTML Proofer issues found'; exit 1)
+      - name: Validate Mastodon Feed
+        run: ruby tests/validate_mastodon_feed.rb
+      - name: Mastodon toot length stats (informational)
+        run: ruby tests/report_mastodon_feed_lengths.rb
+      - name: Image Path Audit
+        run: |
+          ruby tests/check_image_paths.rb || true
+      - name: Fail if feed invalid (marker file)
+        run: |
+          if [ ! -f _site/feed-mastodon.json ]; then echo "Missing mastodon feed"; exit 1; fi

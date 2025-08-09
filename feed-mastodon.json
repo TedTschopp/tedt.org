@@ -45,7 +45,15 @@ layout: null
       {% endif %}
       "content_text": {{ masto_text | strip | jsonify }},
       "url": "{{ post.url | absolute_url }}",
-      {% if post.image.size > 1 %}"image": {{ post.image | jsonify }},{% endif %}
+  {% if post.image and post.image.size > 1 %}
+  {%- assign img_path = post.image -%}
+  {%- if img_path contains '://' -%}
+  "image": {{ img_path | jsonify }},
+  {%- else -%}
+  {%- if img_path | slice: 0,1 != '/' -%}{% assign img_path = '/' | append: img_path %}{%- endif -%}
+  "image": "{{ img_path | absolute_url }}",
+  {%- endif -%}
+  {% endif %}
       {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
       "date_published": "{{ post.date | date_to_xmlschema }}",
       "date_modified": "{{ post.date | date_to_xmlschema }}",

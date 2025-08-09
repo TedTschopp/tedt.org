@@ -51,7 +51,7 @@
                     {% assign category = page.category | downcase | slugify %}
                     {% assign image = category | append: ".webp" %}
                     <figure>
-                        <img class="img-responsive img-thumbnail" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{page.category}}">
+                        <img class="img-responsive img-thumbnail" src="{{ site.url }}/img/categories/{{ image }}" alt="{{page.category}}">
                     </figure>
                     <!-- Calculate the pages description if one isn't present -->
                     {% if page.description == null or page.description == empty %}
@@ -108,7 +108,7 @@
                                         {% if post.image contains "http" %}
                                             {% assign image_URL = post.image %}
                                         {% else %}
-                                            {% assign image_URL = site.siteurl | append: "/" | append: post.image %}
+                                            {% assign image_URL = site.url | append: "/" | append: post.image %}
                                         {% endif %}
                                     {% else %}
                                         {% assign image_URL = site.featured-image %}

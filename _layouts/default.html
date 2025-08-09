@@ -77,7 +77,7 @@
             <div class="col">
               <div class="card h-100">
                 <div class="ratio ratio-3x1">
-                  <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Ted sitting at a computer in Nature" src="{{ site.siteurl }}/img/home/blog.webp" />
+                  <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Ted sitting at a computer in Nature" src="{{ site.url }}/img/home/blog.webp" />
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
                   <h2 class="card-title" id="blog">Blog</h2>
@@ -170,7 +170,7 @@
             <div class="col">
               <div class="card h-100">
                 <div class="ratio ratio-3x1">
-                  <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.siteurl }}/img/home/Folklore.webp" />
+                  <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.url }}/img/home/Folklore.webp" />
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
                   <h2 class="card-title" id="folklore"><a href="/category/Folklore">Swiss Folklore</a></h2>
@@ -339,7 +339,7 @@
                           <div class="card">                              
                             <div class="position-relative">
                               <div class="ratio ratio-3x1">
-                                <img src="{{ site.siteurl }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
+                                <img src="{{ site.url }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                               </div>
                               
                               <!-- Carousel indicators -->
@@ -506,7 +506,7 @@
                     <div class="row g-0 align-items-center">
                       {% if mod != 1 %}<!-- odd -->
                         <div class="col-md-4 d-flex align-items-center">
-                          <img src="{{ site.siteurl }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                          <img src="{{ site.url }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body align-items-center {{ watermark }}">
@@ -544,7 +544,7 @@
                           </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
-                          <img src="{{ site.siteurl }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                          <img src="{{ site.url }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                         </div>
                       {% endif %}
                     </div>

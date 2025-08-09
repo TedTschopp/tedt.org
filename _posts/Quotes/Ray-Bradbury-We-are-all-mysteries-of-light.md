@@ -12,7 +12,7 @@ source: I Am Not Afraid of Robots. I Am afraid Of People.
 source-url:
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Ray Bradbury

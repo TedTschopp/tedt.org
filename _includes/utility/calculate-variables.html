@@ -1,6 +1,6 @@
 <!-- We need to be able to differentiate between when we are rendering the homepage and the current page's full url -->
-{% assign full-page-url = site.siteurl | append: page.url %}
-{% assign home-page-url = site.siteurl | append: "/" %}
+{% assign full-page-url = site.url | append: page.url %}
+{% assign home-page-url = site.url | append: "/" %}
 
 <!-- strip HTML Content and empty spaces out of the pages content -->
 {% assign stripped-content = page.content | strip_html | strip %} 

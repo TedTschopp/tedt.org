@@ -64,7 +64,7 @@
 
                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
 
-                    <img class="webmention-svg" height="1em" src="{{ site.siteurl }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+                    <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
 
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
@@ -84,7 +84,7 @@
                         {% endif %}</span>
                     {% endfor %}</br>
 
-                    <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+                    <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
                     <hr>
 
@@ -99,7 +99,7 @@
 
                     {% if page.image %}
                     <figure>
-                    <img class="img-responsive img-thumbnail" src="{{ site.siteurl }}{{ page.image }}" alt="{{page.image-alt}} by {{page.image_credits}}">
+                    <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ page.image }}" alt="{{page.image-alt}} by {{page.image_credits}}">
                       <figcaption>
                         {% if page.image-credits-URL or page.image-credits-title %}
                             <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
@@ -265,12 +265,12 @@
                     <div class="post-categories">
                         {% assign categories = page.categories %}
                         {% for category in categories %}
-                            <h4>Latest in <a href="{{ site.siteurl }}/category/{{category|slugize}}">{{category}}</a></h4>
+                            <h4>Latest in <a href="{{ site.url }}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
                                 <div class="col-lg-12">
                                     <ul lass="list-unstyled">
                                         {% for post in site.categories[category] limit:5 %}
-                                        <li><a href="{{ site.siteurl }}{{ post.url }}">{{ post.title }}</a></li>
+                                        <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </div>

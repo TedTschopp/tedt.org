@@ -72,17 +72,17 @@
                                 {% if page.image contains "http" %}
                                     {% assign image_URL = page.image %}
                                 {% else %}
-                                    {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                                    {% assign image_URL = site.url | append: "/" | append: page.image %}
                                 {% endif %}
                             {% else %}
                                 {% if site.featured-image %}
                                     {% if site.featured-image contains "http" %}
                                         {% assign image_URL = site.featured-image %}
                                     {% else %}
-                                        {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
+                                        {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
                                     {% endif %}
                                 {% else %}
-                                    {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
+                                    {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
                                 {% endif %}
                                 {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto.  The brushwork has rich textures, earthy palette with luminous highlights" %}
                                 {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
@@ -134,7 +134,7 @@
                                 <p class="card-text">
                                     <!--
                                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
-                                    <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.siteurl }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
+                                    <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.url }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
                                     -->
 
                                     {% comment %}
@@ -170,16 +170,16 @@
                                 </p>
                             </div>
                             
-                            <span class="hidden aria-hidden u-url">{{ site.siteurl }}{{ page.url }}</span>
+                            <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
                             {% include content/progress-bar.html %}
                             <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
                                 <div class="col-12">
                                     <div class="card h-100 position-relative">
-                                        <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/table-of-contents.webp" alt="{{category}}">
+                                        <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{category}}">
                                         <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                             <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.siteurl }}/category/{{category|slugize}}">Table of Contents 📖</a></p>
+                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.url }}/category/{{category|slugize}}">Table of Contents 📖</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,10 +226,10 @@
                                 <div class="card h-100">
                                     <div class="col-12">
                                         <div class="card h-100 position-relative">
-                                            <img class="card-img-top w-100 d-block" src="{{ site.siteurl }}/img/categories/{{ image }}" alt="{{category}}">
+                                            <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}">
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.siteurl }}/category/{{category|slugize}}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>
+                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.url }}/category/{{category|slugize}}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>
                                             </div>
                                         </div>
                                     </div>

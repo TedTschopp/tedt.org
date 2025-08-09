@@ -1,17 +1,17 @@
     <!-- Global Bootstrap 5.3 CSS File from SCSS-->
-    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/bootstrap-build.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/bootstrap-build.css">
 
     <!-- Fonts: Consolidate all Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/consolidated-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/consolidated-fonts.css">
 
     <!-- Logos: Consolidate all Logo Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/logo-and-company-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/logo-and-company-fonts.css">
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url %}
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/main-landing-page.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/timeline.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/Link-Tree.css"> 
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main-landing-page.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/Link-Tree.css"> 
         <style>
             h1, .h1  { 
                 font-family:  "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -65,16 +65,16 @@
 
         </style>
     {% else %}    
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/blog-post.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/solarized-dark.css" >
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/comments-Mastodon.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/web-mention.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/Winerlink.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.siteurl }}/css/table-of-contents.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/blog-post.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/solarized-dark.css" >
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/comments-Mastodon.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/web-mention.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/Winerlink.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/table-of-contents.css">
     {% endif %}
 
     {% if this_is_a_draft == true %}
-        <link href="{{ site.siteurl }}/css/draft-blog-post.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/draft-blog-post.css" rel="stylesheet">
     {% endif %}
 
     <style>

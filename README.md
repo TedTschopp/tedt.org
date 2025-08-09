@@ -1,5 +1,7 @@
 # TedT.org
 
+[![CI Validation](https://github.com/TedTschopp/tedt.org/actions/workflows/ci-validation.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/ci-validation.yml)
+
 Welcome to the repository for my personal homepage, [TedT.org](https://tedt.org). This site is a collection of my projects, writings, and interests, built using Jekyll and various open-source tools.
 
 ## Features
@@ -13,13 +15,26 @@ This site includes:
 
 ## Table of Contents
 
-- [Repository Structure](#repository-structure)
-- [Include Standards](#include-standards)
-- [Acknowledgments](#acknowledgments)
-- [Custom Scripts](#custom-scripts)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
-- [Contact](#contact)
+1. [TedT.org](#tedtorg)
+   1. [Features](#features)
+   2. [Table of Contents](#table-of-contents)
+   3. [Repository Structure](#repository-structure)
+   4. [Include Standards](#include-standards)
+      1. [Directory Structure](#directory-structure)
+      2. [Directory Purposes](#directory-purposes)
+      3. [Naming Conventions](#naming-conventions)
+      4. [Usage Examples](#usage-examples)
+      5. [Adding New Includes](#adding-new-includes)
+      6. [Migration from Old Structure](#migration-from-old-structure)
+      7. [Quick Reference](#quick-reference)
+   5. [Acknowledgments](#acknowledgments)
+   6. [Custom Scripts](#custom-scripts)
+   7. [How to Contribute](#how-to-contribute)
+      1. [Local Development](#local-development)
+      2. [Testing](#testing)
+   8. [Quality Gates](#quality-gates)
+   9. [License](#license)
+   10. [Contact](#contact)
 
 ## Repository Structure
 
@@ -190,6 +205,20 @@ To run the site locally:
 - Use Lighthouse for performance and accessibility testing.
 - When adding new includes, ensure they follow the [Include Standards](#include-standards).
 - Test that include paths are correct and files render properly.
+
+## Quality Gates
+
+Automated validations run on every push via the CI Validation workflow (badge above):
+
+- Build & date normalization
+- Legacy key guard (blocks reintroduction of removed config keys)
+- Feed integrity (primary JSON feed absolute URLs)
+- Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
+- Mastodon toot length statistics report (non-blocking metrics)
+- Image path audit (flags path anomalies)
+- HTML Proofer (links, images, basic HTML correctness)
+
+Run locally with: `make qa`
 
 ## License
 

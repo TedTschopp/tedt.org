@@ -1,5 +1,5 @@
 	
-<!--  site.siteurl = {{ site.siteurl | append: "/" }} -->
+<!-- legacy site.siteurl removed -->
 <!--  full-page-url = {{full-page-url }} -->
 
 	{% assign this_page = page %}
@@ -23,7 +23,7 @@
   <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
   <link rel="author" href="/humans.txt">
   <link rel="copyright" href="/Copyright/">
-  <link rel="canonical" href="{{ site.siteurl }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
   <!-- Mastodon Meta Data-->
   <!-- TODO: move to configuration -->
@@ -49,7 +49,7 @@
 
 	{% if full-page-url == home-page-url %}
 	    <meta property="fb:app_id"           content="{{site.facebook_app_id}}" />
-	    <meta property="og:image"            content="{{ site.siteurl }}/img/webpage_thumbnail.webp">
+      <meta property="og:image"            content="{{ site.url }}/img/webpage_thumbnail.webp">
 	    <meta property="og:image:alt"        content="{{site.name}}">
 	    <meta property="og:site_name"        content="{{ site.name }}">
 	    <meta property="og:title"            content="{{ this_page_title }}">
@@ -63,10 +63,10 @@
 	{% else %}
 		<!-- Open Graph Meta Tags (ogp.me) -->
 	    {% if page.image %}
-	        <meta property="og:image"            content="{{ site.siteurl }}{{ page.image }}">
+          <meta property="og:image"            content="{{ site.url }}{{ page.image }}">
 	        <meta property="og:image:alt"        content="{{ page.title }}">
 	    {% else %}
-	        <meta property="og:image"            content="{{ site.siteurl }}/img/home/logo-Tschopp.webp">
+          <meta property="og:image"            content="{{ site.url }}/img/home/logo-Tschopp.webp">
 	        <meta property="og:image:alt"        content="{{ site.name }}">
 	    {% endif %}
 	    <meta property="fb:app_id"           content="{{facebook_app_id}}" />
@@ -74,7 +74,7 @@
 	    <meta property="og:title"            content="{{ page.title }} - {{ site.name }}">
 	    <meta property="og:description"      content="{{ SEO-description }}">  
 	    <meta property="og:type"             content="article">  
-	    <meta property="og:url"              content="{{ site.siteurl }}/{{ page.url }}"> 
+      <meta property="og:url"              content="{{ site.url }}/{{ page.url }}"> 
 	    <meta property="og:locale"           content="en_US">    
 	{% endif %}
 
@@ -82,10 +82,10 @@
 	<!-- Twitter Meta Tags. -->
 	{% if full-page-url == home-page-url %}
 		<!-- Home Page Twitter Data -->
-	    <meta name="twitter:url"             content="{{ site.siteurl }}">
+      <meta name="twitter:url"             content="{{ site.url }}">
 	    <meta name="twitter:title"           content="{{ site.title }}">
 	    <meta name="twitter:description"     content="{{ site.description }}">
-	    <meta name="twitter:image"           content="{{ site.siteurl }}/img/apple-touch-icon-144x144.webp">
+      <meta name="twitter:image"           content="{{ site.url }}/img/apple-touch-icon-144x144.webp">
 	    <meta name="twitter:image:alt"       content="{{ site.logo-alt}}">
 	{% else %}
 		<!-- Post Twitter Data -->
@@ -93,14 +93,14 @@
 	    <meta name="twitter:site"            content="@{{ site.twitter_username }}">
 	    <meta name="twitter:creator"         content="@{{ site.twitter_username }}">
 
-	    <meta name="twitter:url"             content="{{ site.siteurl }}{{ page.url }}">
+      <meta name="twitter:url"             content="{{ site.url }}{{ page.url }}">
 	    <meta name="twitter:title"           content="{{ page.title }} - {{ site.title }}">
 	    <meta name="twitter:description"     content="{{ SEO-description }}">
 
 	    {% if page.image %}
-	        <meta property="twitter:image"            content="{{ site.siteurl }}{{ page.image }}">
+          <meta property="twitter:image"            content="{{ site.url }}{{ page.image }}">
 	    {% else %}
-	        <meta property="twitter:image"            content="{{ site.siteurl }}/img/home/logo-Tschopp.webp">
+          <meta property="twitter:image"            content="{{ site.url }}/img/home/logo-Tschopp.webp">
 	    {% endif %}
 
 	    {% if page.image-credits %}
@@ -111,12 +111,12 @@
 	{% endif %}
 
     <!-- Favicon Meta Tags.  -->
-    <link rel="shortcut icon" href="{{ site.siteurl }}/img/favicon.ico">
-    <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-196x196.webp" sizes="196x196" />
-    <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-96x96.webp" sizes="96x96" />
-    <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-32x32.webp" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-16x16.webp" sizes="16x16" />
-    <link rel="icon" type="image/png" href="{{ site.siteurl }}/img/favicon-128.webp" sizes="128x128" />
+  <link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon-196x196.webp" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon-96x96.webp" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon-32x32.webp" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon-16x16.webp" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ site.url }}/img/favicon-128.webp" sizes="128x128" />
 
 
     <!-- Apple iOS Settings. -->
@@ -130,23 +130,23 @@
     <meta name="format-detection"                      content="telephone=no">
 
     <!-- iPhone icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.siteurl }}/img/apple-touch-icon-57x57.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.siteurl }}/img/apple-touch-icon-114x114.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.siteurl }}/img/apple-touch-icon-72x72.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.siteurl }}/img/apple-touch-icon-144x144.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.siteurl }}/img/apple-touch-icon-60x60.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.siteurl }}/img/apple-touch-icon-120x120.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.siteurl }}/img/apple-touch-icon-76x76.webp" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.siteurl }}/img/apple-touch-icon-152x152.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/img/apple-touch-icon-57x57.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114x114.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72x72.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/img/apple-touch-icon-144x144.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/img/apple-touch-icon-60x60.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/img/apple-touch-icon-120x120.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/img/apple-touch-icon-76x76.webp" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/img/apple-touch-icon-152x152.webp" />
 
 
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="{{ site.siteurl }}/img/mstile-144x144.webp" />
-    <meta name="msapplication-square70x70logo" content="{{ site.siteurl }}/img/mstile-70x70.webp" />
-    <meta name="msapplication-square150x150logo" content="{{ site.siteurl }}/img/mstile-150x150.webp" />
-    <meta name="msapplication-wide310x150logo" content="{{ site.siteurl }}/img/mstile-310x150.webp" />
-    <meta name="msapplication-square310x310logo" content="{{ site.siteurl }}/img/mstile-310x310.webp" />
+  <meta name="msapplication-TileImage" content="{{ site.url }}/img/mstile-144x144.webp" />
+  <meta name="msapplication-square70x70logo" content="{{ site.url }}/img/mstile-70x70.webp" />
+  <meta name="msapplication-square150x150logo" content="{{ site.url }}/img/mstile-150x150.webp" />
+  <meta name="msapplication-wide310x150logo" content="{{ site.url }}/img/mstile-310x150.webp" />
+  <meta name="msapplication-square310x310logo" content="{{ site.url }}/img/mstile-310x310.webp" />
 
     <!-- Google Chrome. -->
 

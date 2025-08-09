@@ -12,7 +12,7 @@ source: 1928 April, The Forum, Volume 79, Number 4, My Philosophy of Industry by
 source-url:
 call-to-action:
 
-date: 2023-04-23 11:44:45.180083
+date: 2023-04-23 11:44:45
 update:
 author:
     name: Henry Ford

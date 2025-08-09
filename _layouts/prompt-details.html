@@ -164,17 +164,17 @@
                         {% if page.image contains "http" %}
                         {% assign image_URL = page.image %}
                         {% else %}
-                        {% assign image_URL = site.siteurl | append: "/" | append: page.image %}
+                        {% assign image_URL = site.url | append: "/" | append: page.image %}
                         {% endif %}
                         {% else %}
                         {% if site.featured-image %}
                         {% if site.featured-image contains "http" %}
                         {% assign image_URL = site.featured-image %}
                         {% else %}
-                        {% assign image_URL = site.siteurl | append: "/" | append: site.featured-image %}
+                        {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
                         {% endif %}
                         {% else %}
-                        {% assign image_URL = site.siteurl | append: "/img/No-Image-Provided.png" %}
+                        {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
                         {% endif %}
                     
                         {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually
