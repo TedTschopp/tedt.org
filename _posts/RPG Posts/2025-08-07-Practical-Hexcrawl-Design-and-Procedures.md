@@ -1,3 +1,4 @@
+---
 layout: post
 title: Draft - Practical Hexcrawl Design and Procedures
 subtitle: Turning Blank Wilderness into Living Adventure Space
