@@ -12,7 +12,7 @@ module FixtureHelper
   FIXTURE_ROOT = File.expand_path(File.join(File.dirname(__FILE__), "fixtures"))
 
   def fixture(path)
-    IO.read(fixture_path(path))
+    File.read(fixture_path(path))
   end
 
   def fixture_path(path)
