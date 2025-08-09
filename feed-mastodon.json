@@ -1,0 +1,52 @@
+---
+layout: null
+---
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ site.title | xml_escape }} (Mastodon Lite)",
+  "home_page_url": "{{ "/" | absolute_url }}",
+  "feed_url": "{{ "/feed-mastodon.json" | absolute_url }}",
+  "description": {{ site.description | jsonify }},
+  "icon": "{{ "/img/apple-touch-icon-144x144.webp" | absolute_url }}",
+  "favicon": "{{ "/favicon.ico" | absolute_url }}",
+  "expired": false,
+  {% if site.author %}
+  "author": {% if site.author.name %} {
+    "name": "{{ site.author.name }}",
+    "url": {% if site.author.url %}"{{ site.author.url }}"{% else %}null{% endif %},
+    "avatar": {% if site.author.avatar %}"{{ site.author.avatar }}"{% else %}null{% endif %}
+  },{% else %}"{{ site.author }}",{% endif %}
+  {% endif %}
+  "items": [
+  {% for post in site.posts limit:12 %}
+    {%- capture masto_text -%}{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 400, '…' }} {{ post.url | absolute_url }}{%- endcapture -%}
+    {
+      "id": "{{ post.url | absolute_url | sha1 }}",
+      "title": {{ post.title | jsonify }},
+      {% if post.SEO-description %}
+      "summary": {{ post.SEO-description | jsonify }},
+      {% elsif post.excerpt %}
+      "summary": {{ post.excerpt | strip_html | strip_newlines | truncate: 300, '…' | jsonify }},
+      {% endif %}
+      "content_text": {{ masto_text | strip | jsonify }},
+      "url": "{{ post.url | absolute_url }}",
+      {% if post.image.size > 1 %}"image": {{ post.image | jsonify }},{% endif %}
+      {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
+      "date_published": "{{ post.date | date_to_xmlschema }}",
+      "date_modified": "{{ post.date | date_to_xmlschema }}",
+      {% if post.author %}
+        {% assign lookup = site.authors[post.author] %}
+        {% if lookup %}
+          "author": {{ lookup | jsonify }}
+        {% elsif post.author.name or post.author.url or post.author.avatar %}
+          "author": {{ post.author | jsonify }}
+        {% else %}
+          "author": { "name": {{ post.author | jsonify }} }
+        {% endif %}
+      {% else %}
+        "author": {{ site.author | jsonify }}
+      {% endif %}
+    }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+  ]
+}

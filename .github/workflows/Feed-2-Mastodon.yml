@@ -1,22 +1,45 @@
 name: Feed 2 Mastodon
 
 permissions:
-  contents: read
+  contents: write
 
 on:
-  push:            # run every time you publish
+  push:
     branches: [main]
-  schedule:        # …or on a cron if you prefer
+  schedule:
     - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
 jobs:
   toot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Pull latest (ensure cache freshness)
+        run: git pull --ff-only || true
 
       - name: Post new items
+        id: feed2mastodon
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
-          feedUrl: "https://tedt.org/feed.json"
-          mastodonInstance: "https://tschopp.net"   # your home
+          feedUrl: "https://tedt.org/feed-mastodon.json"
+          mastodonInstance: "https://tschopp.net"
           mastodonToken: ${{ secrets.MASTODON_TOKEN }}
+          ignoreFirstRun: false
+          itemChoiceStrategy: newest
+          globalDelayToots: 60
+          delayTootsSameItem: 2880
+
+      - name: Commit and push cache
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Mastodon cache"
+          file_pattern: cache/*.json
+
+      - name: Show toot URL
+        if: steps.feed2mastodon.outputs.tootUrl
+        run: |
+          echo "Toot created: ${{ steps.feed2mastodon.outputs.tootUrl }}"
