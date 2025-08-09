@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hex Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Theme-aware styles for hex visualization */
+        .hex-multi-scale {
+            width: 100%;
+            max-width: 640px;
+            display: block;
+        }
+
+        .hex-multi-scale .position-relative {
+            width: 100%;
+            aspect-ratio: 4/3;
+            min-height: 200px;
+        }
+
+        .hex-multi-scale canvas {
+            background: var(--bs-body-bg, #ffffff) !important;
+        }
+
+        .hex-controls .btn {
+            background: var(--bs-body-bg, #ffffff);
+            color: var(--bs-body-color, #212529);
+            border-color: var(--bs-border-color, #dee2e6);
+        }
+
+        .hex-legend {
+            background: rgba(var(--bs-body-bg-rgb, 255, 255, 255), 0.95) !important;
+            color: var(--bs-body-color, #212529);
+            border: 1px solid var(--bs-border-color, #dee2e6);
+        }
+    </style>
+</head>
+<body class="container py-4">
+    <h1>Direct Hex Test</h1>
+    <p>This is a direct test of the hex visualization with our latest fixes:</p>
+    
+    <figure class="hex-multi-scale my-3 position-relative" style="width:100% !important;max-width:640px !important;display:block !important;">
+      <figcaption class="small text-muted mb-1">Multi-scale hex overlay (36 / 6 / 1 mile reference)</figcaption>
+      <div class="position-relative" style="width:100% !important;aspect-ratio:4/3 !important;min-height:200px !important;">
+        <canvas id="hex-multi-scale" style="width:100%;height:100%;display:block;border:1px solid var(--bs-border-color,#ccc);background:var(--bs-body-bg,#ffffff);"></canvas>
+        <div class="hex-controls" style="position:absolute;top:.5rem;right:.5rem;display:flex;flex-direction:column;gap:.25rem;">
+          <button type="button" class="btn btn-sm btn-outline-secondary border" id="hex-zoom-in" aria-label="Zoom in" title="Zoom in (+)">+</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary border" id="hex-zoom-out" aria-label="Zoom out" title="Zoom out (-)">−</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary border" id="hex-reset" aria-label="Reset view" title="Reset view">⟳</button>
+        </div>
+      <div id="hex-legend" class="hex-legend bg-body-tertiary rounded shadow-sm p-2 small" style="position:absolute;left:.5rem;top:.5rem;max-width:55%;line-height:1.1;pointer-events:none;">
+          <!-- Legend populated by hex-multi-scale.js -->
+        </div>
+      </div>
+      <figcaption class="visually-hidden">Drag to pan. Use buttons, mouse wheel, pinch (touch) to zoom, or reset.</figcaption>
+    </figure>
+
+    <script>
+    // Debug layout monitoring
+    window.HEX_DEBUG = true;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('[direct-test] DOM loaded, checking layout...');
+        
+        const canvas = document.getElementById('hex-multi-scale');
+        const container = canvas.parentElement;
+        const figure = container.parentElement;
+        
+        function logLayout(event = 'check') {
+            const canvasRect = canvas.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+            const figureRect = figure.getBoundingClientRect();
+            
+            console.log(`[direct-test] Layout ${event}:`, {
+                canvas: {
+                    width: canvas.width, height: canvas.height,
+                    style: { width: canvas.style.width, height: canvas.style.height },
+                    rect: { width: canvasRect.width, height: canvasRect.height }
+                },
+                container: {
+                    style: container.getAttribute('style'),
+                    rect: { width: containerRect.width, height: containerRect.height }
+                },
+                figure: {
+                    style: figure.getAttribute('style'),
+                    rect: { width: figureRect.width, height: figureRect.height }
+                }
+            });
+        }
+        
+        setTimeout(() => logLayout('initial'), 100);
+        setTimeout(() => logLayout('after-scripts'), 2000);
+    });
+    </script>
+
+    <script src="/js/hex.js"></script>
+    <script src="/js/hex-multi-scale.js"></script>
+</body>
+</html>
