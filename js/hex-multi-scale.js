@@ -102,10 +102,14 @@
     ctx.scale(state.zoom, state.zoom);
     ctx.translate(state.panX, state.panY);
 
-    // Determine base size so largest hex roughly fits inside visible logical canvas.
-    const largestMiles = SCALES[0].miles; // 36
-    const targetSpan = Math.min(width, height) * 0.9;
-    const baseSizePerMile = (targetSpan / Math.sqrt(3)) / largestMiles;
+  // Determine base size so a configurable number of the largest hexes span the viewport.
+  const largestMiles = SCALES[0].miles; // 36
+  const targetSpan = Math.min(width, height) * 0.9;
+  const LARGEST_HEXES_ACROSS = 3; // show 3 largest hexes across (previously ~1)
+  // Width (flat-to-flat) of a pointy hex = sqrt(3) * size.x. We want that * LARGEST_HEXES_ACROSS ~= targetSpan
+  const largestHexPixelWidth = targetSpan / LARGEST_HEXES_ACROSS;
+  const largestHexSize = largestHexPixelWidth / Math.sqrt(3);
+  const baseSizePerMile = largestHexSize / largestMiles;
 
     let totalHexes = 0;
     SCALES.forEach(scale => {
