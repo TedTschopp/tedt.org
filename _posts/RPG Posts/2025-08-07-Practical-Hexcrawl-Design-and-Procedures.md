@@ -129,21 +129,21 @@ window.HEX_DEBUG = true; // Enable debug mode for hex-multi-scale.js
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('[blog-debug] DOM loaded, monitoring canvas layout...');
-    
+
     const canvas = document.getElementById('hex-multi-scale');
     if (!canvas) {
         console.error('[blog-debug] Canvas not found!');
         return;
     }
-    
+
     const container = canvas.parentElement;
     const figure = container.parentElement;
-    
+
     function logLayout(event = 'check') {
         const canvasRect = canvas.getBoundingClientRect();
         const containerRect = container.getBoundingClientRect();
         const figureRect = figure.getBoundingClientRect();
-        
+
         console.log(`[blog-debug] Layout ${event}:`, {
             canvas: {
                 width: canvas.width, height: canvas.height,
@@ -160,10 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Initial layout check
     setTimeout(() => logLayout('initial'), 100);
-    
+
     // Monitor for layout changes
     const resizeObserver = new ResizeObserver(entries => {
         for (let entry of entries) {
@@ -176,11 +176,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
+
     resizeObserver.observe(canvas);
     resizeObserver.observe(container);
     resizeObserver.observe(figure);
-    
+
     // Check dependencies and try manual render
     setTimeout(function() {
         console.log('[blog-debug] Dependencies:', {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             Hex: typeof Hex !== 'undefined',
             Point: typeof Point !== 'undefined'
         });
-        
+
         const ctx = canvas.getContext('2d');
         if (ctx) {
             console.log('[blog-debug] Canvas context available');
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ctx.restore();
             console.log('[blog-debug] Test yellow rectangle drawn');
         }
-        
+
         logLayout('after-test');
     }, 500);
 });
@@ -261,7 +261,7 @@ Encounter Table Structure (d12):
 Each result should **ask a question back**: Who sent them? What do you do with it? Do you press on? If a result doesn't change player calculus it's ornamental; cut it.
 
 ---
- 
+
 ## Layer 6: Time & Clocks
 
 Keep three visible pressure dials:
@@ -275,7 +275,7 @@ Keep three visible pressure dials:
 Mark segments on triggered encounters. When a clock fills, it **re-keys 3–5 hexes** (change occupants / conditions) and you tell the players what shifted. The world moves.
 
 ---
- 
+
 ## Layer 7: Travel Turn Loop (Referee Card)
 
 I keep a simple loop card:
@@ -294,7 +294,7 @@ HEX TURN LOOP
 Players learn this rhythm and start **pre-planning actions at step 1**.
 
 ---
- 
+
 ## Layer 8: Information Economy
 
 Players decide better when **information has tiers**:
@@ -307,7 +307,7 @@ Players decide better when **information has tiers**:
 Reward triangulation: if they collect three independent confirms, grant a **tactical advantage tag** (e.g. +1 initiative in that hex type, skip first hazard roll, negotiate from strength).
 
 ---
- 
+
 ## Layer 9: Resource Tension Without Bean Counting
 
 Track only deltas that affect decisions:
@@ -319,7 +319,7 @@ Track only deltas that affect decisions:
 Abstract ammo unless the fiction demands scarcity. Let **weather + terrain** be your meaningful attrition.
 
 ---
- 
+
 ## Layer 10: Factions as Mobile Terrain
 
 Treat factions like shifting terrain overlays:
@@ -331,7 +331,7 @@ Treat factions like shifting terrain overlays:
 Give each major faction a **stance matrix** (Need, Fear, Leverage). An encounter can flip one cell. Progress visible.
 
 ---
- 
+
 ## Layer 11: Emergent Sites On Demand
 
 When players laser-focus an empty-ish hex:
@@ -344,7 +344,7 @@ When players laser-focus an empty-ish hex:
 This keeps prep elastic and responsive.
 
 ---
- 
+
 ## Layer 12: Mapping Conventions Players See
 
 Show them a cleaned layer (rivers, coasts, major ridges). Let **player map evolves** with:
@@ -357,7 +357,7 @@ Show them a cleaned layer (rivers, coasts, major ridges). Let **player map evolv
 They will begin setting their own vector goals. Momentum happens when **I ask less “What now?” and more “Are you changing plan?”**
 
 ---
- 
+
 ## Layer 13: Failure Is Cartographic
 
 Missed navigation? Don’t say “You’re lost.” Say: “You emerge at a basalt rim with steam fissures—this is Hex H13; your intended vector shifts one column east unless you backtrack (costs 1 watch). Proceed?”
@@ -365,7 +365,7 @@ Missed navigation? Don’t say “You’re lost.” Say: “You emerge at a basa
 Failure produces **new known geography** plus a resource or time tax. Nothing dead-ends. Even ambushes should teach about faction reach or terrain teeth.
 
 ---
- 
+
 ## Layer 14: Session Close State Log
 
 At end of session capture:
@@ -380,7 +380,7 @@ At end of session capture:
 This lets you re-key or escalate **surgically**, not wholesale.
 
 ---
- 
+
 ## Quick Reference Tables
 
 ### Terrain Complication (d8)
@@ -405,10 +405,10 @@ This lets you re-key or escalate **surgically**, not wholesale.
 
 ### Weather Shift (d10)
 
-1 Static. 2 Pressure drop omen. 3 Sudden wind shear. 4 Horizon wall cloud. 5 Needle rain. 6 Radiant cold inversion. 7 Lightning crawl along ground. 8 Rolling fog banks. 9 Skyglow aurora thread. 10 Cycle reset with anomaly.
+1 Static. 2 Pressure drop omen. 3 Sudden wind shear. 4 Horizon wall cloud. 5 Needle rain. 6 Radiant cold inversion. 7 Lightning crawl along ground. 8 Rolling fog banks. 9 Sky glow aurora thread. 10 Cycle reset with anomaly.
 
 ---
- 
+
 ## Closing Principle
 
 A hexcrawl thrives when **procedures produce fiction** the players want to interrogate. If you feel like you’re pushing them, pull back. Tighten your loops, sharpen anomalies, surface clearer questions. The wilderness will start talking. Let them choose how to answer.
