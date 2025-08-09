@@ -259,6 +259,34 @@ section[aria-label="Additional Creatures"] h3 {
     padding-bottom: 0.25rem;
 }
 
+/* Image error message styling extracted from inline */
+.gw-image-error {
+    text-align: center;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+}
+
+/* Multi-column bestiary listing */
+.gw-bestiary-columns {
+    break-inside: avoid-page;
+    column-width: 30em;
+    column-fill: balance;
+    column-gap: 2em;
+    column-rule: 1px #202122 solid;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.gw-bestiary-item {
+    break-inside: avoid-column;
+    padding: 0 0 .25rem 0;
+}
+
+/* Grouped stats sections */
+.gw-stats + .gw-stats { margin-top: .75rem; }
+.gw-stats dl { margin-bottom: .5rem; }
+.gw-stats dt { font-weight: 600; }
+.gw-stats dd { margin-bottom: .25rem; }
+
 section[aria-label="Creature Overview"] figure img {
     max-width: 100%;
     height: auto;
