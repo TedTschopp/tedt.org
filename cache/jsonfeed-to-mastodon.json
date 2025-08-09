@@ -79,7 +79,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115000110261317161"
+    ],
+    "lastTootTimestamp": 1754762424747
   },
   "/prompts/midjourney-v7-prompt-template/": {
     "id": "/prompts/midjourney-v7-prompt-template/",
