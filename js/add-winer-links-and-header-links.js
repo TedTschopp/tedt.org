@@ -7,7 +7,7 @@
     if (document.getElementById('main_content')) {
       addLinksToHeaders('main_content');
       const main_content = document.getElementById('main_content');
-      main_content.innerHTML = addAnchorTagsToParagraphs(main_content.innerHTML);
+      addAnchorTagsToParagraphNodes(main_content);
     }
   }
   if (document.readyState === 'loading') {
@@ -41,12 +41,13 @@ function stripURLHash(urlToParse) {
   return url.href;           // get the href without the anchor
 }
 
-function addAnchorTagsToParagraphs(html) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, "text/html");
-  const paragraphs = doc.querySelectorAll("p");
-
-  paragraphs.forEach((paragraph) => {
+// Non-destructive: operate directly on existing paragraph nodes inside root
+function addAnchorTagsToParagraphNodes(root) {
+  if (!root || root.dataset.paragraphAnchorsAugmented === 'yes') return;
+  const paragraphs = root.querySelectorAll('p');
+  paragraphs.forEach(paragraph => {
+    // Skip paragraphs inside the hex figure to avoid layout side-effects
+    if (paragraph.closest('figure.hex-multi-scale')) return;
     const paragraphText = paragraph.textContent.trim();
     const words = paragraphText.split(" ");
     const firstFiveWords = words.slice(0, 5).join(" ");
@@ -85,8 +86,7 @@ function addAnchorTagsToParagraphs(html) {
     
     paragraph.appendChild(closingAnchor);
   });
-
-  return doc.documentElement.innerHTML;
+  root.dataset.paragraphAnchorsAugmented = 'yes';
 }
 
 function concatenateFirstLetters(text) {
