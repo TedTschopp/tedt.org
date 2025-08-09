@@ -50,7 +50,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/114999779123830024"
+    ],
+    "lastTootTimestamp": 1754757371969
   },
   "/Critique-Content/": {
     "id": "/Critique-Content/",
