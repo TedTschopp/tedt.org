@@ -293,16 +293,32 @@
     // Helper: wait until canvas has non-zero rendered size before first draw.
     function waitForRenderableSize(maxMs = 2000) {
       const start = performance.now();
+      let appliedFallback = false;
       return new Promise((resolve, reject) => {
         (function check() {
           const rect = canvas.getBoundingClientRect();
-            if (rect.width > 4 && rect.height > 4) { // small guard threshold
-              return resolve(rect);
+          if (rect.width > 4 && rect.height > 4) { // small guard threshold
+            return resolve(rect);
+          }
+          const elapsed = performance.now() - start;
+          // Apply a one-time fallback explicit size if layout hasn't provided one after 500ms.
+          if (!appliedFallback && elapsed > 500) {
+            appliedFallback = true;
+            if (window.HEX_DEBUG) console.warn('[hex-multi-scale] Applying fallback size (layout still zero after 500ms)');
+            // Prefer the figure/container ancestry for sizing if present.
+            const container = canvas.parentElement;
+            if (container && container.style) {
+              if (!container.style.width) container.style.width = '640px';
+              if (!container.style.minHeight) container.style.minHeight = '480px';
             }
-            if (performance.now() - start > maxMs) {
-              return reject(new Error('Timed out waiting for non-zero canvas size'));
-            }
-            requestAnimationFrame(check);
+            // Directly size the canvas as a last resort.
+            canvas.style.width = canvas.style.width || '640px';
+            canvas.style.height = canvas.style.height || '480px';
+          }
+          if (elapsed > maxMs) {
+            return reject(new Error('Timed out waiting for non-zero canvas size'));
+          }
+          requestAnimationFrame(check);
         })();
       });
     }
