@@ -43,6 +43,9 @@ jobs:
       - name: Image Path Audit
         run: |
           ruby tests/check_image_paths.rb || true
+      - name: Image Alt Text Safety
+        run: |
+          ruby tests/check_image_alt_text.rb
       - name: Fail if feed invalid (marker file)
         run: |
           if [ ! -f _site/feed-mastodon.json ]; then echo "Missing mastodon feed"; exit 1; fi
