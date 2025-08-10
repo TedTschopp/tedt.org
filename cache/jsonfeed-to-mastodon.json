@@ -406,7 +406,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115003055074249913"
+    ],
+    "lastTootTimestamp": 1754807359034
   },
   "https://tedt.org/prompts/midjourney-v7-prompt-template/": {
     "id": "https://tedt.org/prompts/midjourney-v7-prompt-template/",
