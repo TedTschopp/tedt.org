@@ -332,7 +332,7 @@
     "summary": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.",
     "content_text": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep. https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/",
     "url": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/",
-    "image": "img/2025-08/hex-map-seeded-frontier.webp",
+    "image": "https://tedt.org/img/2025-08/hex-map-seeded-frontier.webp",
     "tags": [
       "hexcrawl",
       "wilderness",
@@ -357,7 +357,7 @@
     "summary": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change.",
     "content_text": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change. https://tedt.org/Building-a-Lego-Cat/",
     "url": "https://tedt.org/Building-a-Lego-Cat/",
-    "image": "img/AI/Hannah-with-a-cat-no-title.webp",
+    "image": "https://tedt.org/img/AI/Hannah-with-a-cat-no-title.webp",
     "tags": [
       "artificial intelligence",
       "organizational change",
@@ -377,7 +377,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115001966397685023"
+    ],
+    "lastTootTimestamp": 1754790747164
   },
   "https://tedt.org/Critique-Content/": {
     "id": "https://tedt.org/Critique-Content/",
@@ -385,7 +388,7 @@
     "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
     "content_text": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Critique-Content/",
     "url": "https://tedt.org/Critique-Content/",
-    "image": "/img/prompts/academic-critique-template.png",
+    "image": "https://tedt.org//img/prompts/academic-critique-template.png",
     "tags": [
       "Academic Writing",
       "Critique",
@@ -411,7 +414,7 @@
     "summary": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this tem…",
     "content_text": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailo… https://tedt.org/prompts/midjourney-v7-prompt-template/",
     "url": "https://tedt.org/prompts/midjourney-v7-prompt-template/",
-    "image": "/img/prompts/Image-Prompt-Engineering.png",
+    "image": "https://tedt.org//img/prompts/Image-Prompt-Engineering.png",
     "tags": [
       "Midjourney",
       "Image Generation"
@@ -431,7 +434,7 @@
     "summary": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.",
     "content_text": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. https://tedt.org/Rooted-In-Resilience/",
     "url": "https://tedt.org/Rooted-In-Resilience/",
-    "image": "img/AI/Rooted-in-Resilience.webp",
+    "image": "https://tedt.org/img/AI/Rooted-in-Resilience.webp",
     "tags": [
       "artificial intelligence",
       "enterprise software",
@@ -459,7 +462,7 @@
     "summary": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation.",
     "content_text": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation. https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
     "url": "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
-    "image": "img/AI/Learning-by-Doing.webp",
+    "image": "https://tedt.org/img/AI/Learning-by-Doing.webp",
     "tags": [
       "artificial intelligence",
       "learning methodology",
@@ -489,7 +492,7 @@
     "summary": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed.",
     "content_text": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed. https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
     "url": "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
-    "image": "img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp",
+    "image": "https://tedt.org/img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp",
     "tags": [
       "Mary Meeker",
       "AI trends",
@@ -520,7 +523,7 @@
     "summary": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization.",
     "content_text": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization. https://tedt.org/Details-on-the-WINs-Network/",
     "url": "https://tedt.org/Details-on-the-WINs-Network/",
-    "image": "img/AI/WINS-4-Quandrents.webp",
+    "image": "https://tedt.org/img/AI/WINS-4-Quandrents.webp",
     "tags": [
       "WINS framework",
       "AI strategy",
@@ -551,7 +554,7 @@
     "summary": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom.",
     "content_text": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom. https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
     "url": "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
-    "image": "img/AI/Beyond-the-Boundries.webp",
+    "image": "https://tedt.org/img/AI/Beyond-the-Boundries.webp",
     "tags": [
       "post-AI leadership",
       "WINS framework",
@@ -584,7 +587,7 @@
     "summary": "A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again.",
     "content_text": "A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again. https://tedt.org/The-Student-Who-Taught-Herself/",
     "url": "https://tedt.org/The-Student-Who-Taught-Herself/",
-    "image": "/img/2025-05/Hannah Doing Math.webp",
+    "image": "https://tedt.org//img/2025-05/Hannah%20Doing%20Math.webp",
     "tags": [
       "AZR",
       "AI Education",
@@ -607,7 +610,7 @@
     "summary": "The Artistic Analysis Prompt offers users an expansive, scholarly, and culturally rich approach to interpreting artistic works across various mediums, including visual arts, literature, music, theater, film, and multimedia installations. It systematically unpacks artistic creations by examining the…",
     "content_text": "The Artistic Analysis Prompt offers users an expansive, scholarly, and culturally rich approach to interpreting artistic works across various mediums, including visual arts, literature, music, theater, film, and multimedia installations. It systematically unpacks artistic creations by examining their historical context, technical composition, symbolic meaning, cultural intertextuality, and philos… https://tedt.org/prompts/artistic-Analysis/",
     "url": "https://tedt.org/prompts/artistic-Analysis/",
-    "image": "/img/prompts/Artistic-Scholar.png",
+    "image": "https://tedt.org//img/prompts/Artistic-Scholar.png",
     "tags": [
       "Art Analysis",
       "Interdisciplinary",
@@ -630,7 +633,7 @@
     "summary": "The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify l…",
     "content_text": "The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify learners’ prior knowledge, clear up misconceptions, and promote active knowledge construction. This i… https://tedt.org/prompts/ai-tutoring-prompt-designer/",
     "url": "https://tedt.org/prompts/ai-tutoring-prompt-designer/",
-    "image": "/img/prompts/Immersive-AI-Simulation.png",
+    "image": "https://tedt.org//img/prompts/Immersive-AI-Simulation.png",
     "tags": [
       "Tutoring",
       "Instructional Design",
