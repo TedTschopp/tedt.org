@@ -2,6 +2,10 @@ include:
 - ".well-known"
 - "_pages"
 
+# Exclude editor backup copies of posts (e.g., *.md.bak) so they don't generate duplicate URLs
+exclude:
+- "**/*.bak"
+
 # markdown: kramdown
 plugins:
 - jekyll-redirect-from

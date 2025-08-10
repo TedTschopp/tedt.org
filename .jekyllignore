@@ -1,0 +1,2 @@
+# Ignore editor/backup shadow copies that were being treated as posts
+**/*.bak
