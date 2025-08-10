@@ -1,73 +1,72 @@
 ---
 layout: post
-
-title: "Building a Lego Cat"
-subtitle: "Navigating Talent and Organizational Change"
-quote: "Complexity becomes manageable when guided by experienced hands."
-excerpt: "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change."
-source: "Original Content"
-source-url: ""
-call-to-action: "How is your organization preparing for AI-driven workforce changes? Share your insights."
-
+title: Building a Lego Cat
+subtitle: Navigating Talent and Organizational Change
+quote: Complexity becomes manageable when guided by experienced hands.
+excerpt: The integration of AI into enterprise supporting capabilities reshapes workforce
+  roles, emphasizing distinctly human skills and proactive organizational change.
+source: Original Content
+source-url: ''
+call-to-action: How is your organization preparing for AI-driven workforce changes?
+  Share your insights.
 date: 2025-08-03
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - AI integration significantly impacts workforce roles, emphasizing human-centered skills
-    - Structured experiential learning is critical for smooth organizational transitions
-    - Management skills now include overseeing virtual AI colleagues
-    - AI requires proactive reconfiguration of existing workflows
-    - Legacy enterprises must rethink processes, adopting AI best practices
-
-description: "Examining the transformative impact of AI on enterprise workforce roles and highlighting strategies to navigate this transition effectively."
-
-seo-description: "Learn strategies for integrating AI into enterprise roles, emphasizing essential human skills, structured experiential learning, and proactive workflow adaptations."
-
+- AI integration significantly impacts workforce roles, emphasizing human-centered
+  skills
+- Structured experiential learning is critical for smooth organizational transitions
+- Management skills now include overseeing virtual AI colleagues
+- AI requires proactive reconfiguration of existing workflows
+- Legacy enterprises must rethink processes, adopting AI best practices
+description: Examining the transformative impact of AI on enterprise workforce roles
+  and highlighting strategies to navigate this transition effectively.
+seo-description: Learn strategies for integrating AI into enterprise roles, emphasizing
+  essential human skills, structured experiential learning, and proactive workflow
+  adaptations.
 categories:
-    - Artificial Intelligence
-    - Opinion
-    - Personal Writing
-
+- Artificial Intelligence
+- Opinion
+- Personal Writing
 tags:
-    - artificial intelligence
-    - organizational change
-    - workforce management
-    - human skills
-    - digital transformation
-    - experiential learning
-    - Joseph Fuller
-    - Ronnie Chatterji
-    - talent strategy
-    - leadership development
-
-keywords: AI workforce impact, enterprise change management, organizational adaptation, human skills, generative AI, experiential learning, Joseph Fuller, Ronnie Chatterji, talent transformation, digital leadership
-
+- artificial intelligence
+- organizational change
+- workforce management
+- human skills
+- digital transformation
+- experiential learning
+- Joseph Fuller
+- Ronnie Chatterji
+- talent strategy
+- leadership development
+keywords: AI workforce impact, enterprise change management, organizational adaptation,
+  human skills, generative AI, experiential learning, Joseph Fuller, Ronnie Chatterji,
+  talent transformation, digital leadership
 location:
-    name: Bradbury, CA
-    coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  name: Bradbury, CA
+  coordinates: null
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Hannah-with-a-cat-no-title.webp
-image-alt: "Child carefully building a complex Lego Tuxedo Cat, symbolizing organizational resilience during AI integration"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: "Metaphorical representation of organizational skill-building and adaptation in the face of AI-driven changes"
-image-title: "Navigating Complexity with Confidence"
-
+image-alt: Child carefully building a complex Lego Tuxedo Cat, symbolizing organizational
+  resilience during AI integration
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: Metaphorical representation of organizational skill-building and
+  adaptation in the face of AI-driven changes
+image-title: Navigating Complexity with Confidence
 mastodon-post-id: 114497428586613439
-
+image_width: 1920
+image_height: 1080
 ---
-
 ## Bottom Line Up Front
 
 *This article draws from notes taken during a discussion between a Harvard Business School professor, [Joeseph Fuller](https://en.wikipedia.org/wiki/Joseph_B._Fuller). and OpenAI’s Chief Economist, [Ronnie Chatterji](https://en.wikipedia.org/wiki/Aaron_Chatterji) on the future of work and talent in an AI-driven world.* 

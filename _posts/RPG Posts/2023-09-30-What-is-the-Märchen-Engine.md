@@ -1,60 +1,50 @@
 ---
 layout: post
-
-title: What is the Märchen Engine?
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+title: "What is the M\xE4rchen Engine?"
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2023-09-30 14:03:56
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
-description: Welcome to the Märchen Engine, which outlines the core rules used by
-    this Gaming System. This Introduction provides you with an overview of what the
-    Märchen Engine is and how it works, while the later chapters show you how to create
-    characters and  embark on your own exciting adventures.
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: "Welcome to the M\xE4rchen Engine, which outlines the core rules used\
+  \ by this Gaming System. This Introduction provides you with an overview of what\
+  \ the M\xE4rchen Engine is and how it works, while the later chapters show you how\
+  \ to create characters and  embark on your own exciting adventures."
+seo-description: null
 categories:
 - Role Playing Games
-- "The Märchen Engine"
-tags:
-keywords:
-
+- "The M\xE4rchen Engine"
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-07/FAME.webp
 image-alt: Photo by Ted Tschopp using Midjourney
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-credits: Photo by Ted Tschopp using Midjourney
-image-description:
+image-description: null
 image-title: FAME - Fitness, Academics, Mystical, Emotional
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-
-order:
+order: null
+image_width: 1024
+image_height: 1024
 ---
-
 # Introduction
 
 Welcome to the ***Märchen Engine***, your guide to the core rules of this Gaming System. This introduction gives you a snapshot of what the Märchen Engine entails and how it functions. As you delve into the subsequent chapters, you'll learn how to craft characters and set out on thrilling adventures of your own.

@@ -1,70 +1,62 @@
 ---
 layout: post
-
-title: "From Politics to Artistry - The Evolution of the Art of the Possible"
-title-url: 
-subtitle: "The Dangers of Compromise"
-subtitle-url: 
-quote: "Reject the mundane and dare to dream bigger."
-excerpt: "A deep dive into the dangers of settling for the 'possible' and the perils of pragmatism that curtail our true potential."
-source: "Original Content"
-source-url: "https://tedt.org/blog/the-tyranny-of-the-possible"
-call-to-action: "Dare to break free from mediocrity. Read on to discover how."
-
+title: From Politics to Artistry - The Evolution of the Art of the Possible
+title-url: null
+subtitle: The Dangers of Compromise
+subtitle-url: null
+quote: Reject the mundane and dare to dream bigger.
+excerpt: A deep dive into the dangers of settling for the 'possible' and the perils
+  of pragmatism that curtail our true potential.
+source: Original Content
+source-url: https://tedt.org/blog/the-tyranny-of-the-possible
+call-to-action: Dare to break free from mediocrity. Read on to discover how.
 date: 2023-10-12 11:49:44
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - Unveiling the mirage of pragmatism
-    - The artistic cost of compromise
-    - Mediocrity vs. Mastery
-
-description: "A thought-provoking analysis on the hidden dangers of the 'art of the possible' and how it impedes genuine progress and innovation."
-seo-description: "Challenging the accepted wisdom of the 'art of the possible' and its impact on creativity, innovation, and progress."
-
-categories: 
-    - Opinion
-    - Philosophy
+- Unveiling the mirage of pragmatism
+- The artistic cost of compromise
+- Mediocrity vs. Mastery
+description: A thought-provoking analysis on the hidden dangers of the 'art of the
+  possible' and how it impedes genuine progress and innovation.
+seo-description: Challenging the accepted wisdom of the 'art of the possible' and
+  its impact on creativity, innovation, and progress.
+categories:
+- Opinion
+- Philosophy
 tags:
-    - Idealism
-    - Pragmatism
-    - Creativity
-keywords: 
-    - Art of the Possible
-    - Compromise in art
-    - Idealism vs Pragmatism
-
+- Idealism
+- Pragmatism
+- Creativity
+keywords:
+- Art of the Possible
+- Compromise in art
+- Idealism vs Pragmatism
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: "/img/2023-10/art-of-the-possible.webp"
-image-alt: "Breaking Free from the Possible"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Breaking Free"
-image-description: "Two people leaving the possible behind them"
-image-title: "Breaking Free from the Possible"
-
-
+  latitude: 34.147
+  longitude: -117.9709
+image: /img/2023-10/art-of-the-possible.webp
+image-alt: Breaking Free from the Possible
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: Breaking Free
+image-description: Two people leaving the possible behind them
+image-title: Breaking Free from the Possible
 redirect_from:
-  - /opinion/philosophy/Art-of-Innovation
-
-
+- /opinion/philosophy/Art-of-Innovation
 mastodon-post-id: 111223710272362671
-
+image_width: 1232
+image_height: 928
 ---
-
 The phrase "Art of the Possible" evokes a sense of visionary capability, of realizing potentials that may not yet be fully recognized. Tracing its etymology, the term finds its roots not in the realm of vision or innovation, but in the world of politics and bureaucracy. Otto von Bismarck, the Prussian statesman of the 19th century, said, "Politics is the art of the possible." In this context, Bismarck emphasized the importance of pragmatism in politics; understanding the limitations and potentials of a situation and acting accordingly, even if it means compromising one's ideals, achieving very little, and maintaining the status quo.
 
 Over time, this phrase transcended its origin in the bureaucracy, morphing into a broader ideology employed across fields from business strategy to technological to scientific innovation. It underscores a seemingly wise principle: while one might envision an ideal or perfect solution, it's crucial to navigate the complexities and limitations of our reality, seeking solutions that, while perhaps not perfect, are feasible and effective. This notion of optimizing within constraints, at first glance, appears grounded in realism and foresight.

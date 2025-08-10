@@ -1,63 +1,55 @@
 ---
 layout: post
-
 title: Increasing in Rank in MCC with Archaic Alliances
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: The following is an integration of rules for Gamma World's Rank Advancement
+  with Mutant Crawl Classic.
+source: null
+source-url: null
+call-to-action: null
 date: 2018-11-02 10:37:12-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
-description: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
-seo-description: The following is an integration of rules for Gamma World's Rank Advancement with Mutant Crawl Classic.
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: The following is an integration of rules for Gamma World's Rank Advancement
+  with Mutant Crawl Classic.
+seo-description: The following is an integration of rules for Gamma World's Rank Advancement
+  with Mutant Crawl Classic.
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
-tags:
-keywords:
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: /RPG/MCC-GW/images/Gamma_Alien_large.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 redirect_from:
-  - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances.html
-  - /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances/
-  - /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances/
-  - /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances
-
-mathjax: 
-
-order: 
-
+- /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances.html
+- /2018/11/02/Increasing-in-Rank-MCC-with-Archaic-Alliances/
+- /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances/
+- /role%20playing%20games/gamma%20world/mutant%20crawl%20classics/Increasing-in-Rank-MCC-with-Archaic-Alliances
+mathjax: null
+order: null
+image_width: 480
+image_height: 282
 ---
-
 # Character Status
 As characters have adventures, they will gain a reputation, fame, and status.  You can track this growth in the campaign using Status Points.  Status Points, like experience points, are accumulated into a new number on your character sheet called Rank.  Rank is a measure of how your character's reputation, fame, and status affect the reactions of NPC's in different situations.  Unlike experience points, which represents how capable a character is, status points represent how capable the society around the characters feel the character is.
 

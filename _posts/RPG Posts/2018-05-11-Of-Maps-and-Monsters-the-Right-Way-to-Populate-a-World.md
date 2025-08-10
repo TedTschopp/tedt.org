@@ -1,57 +1,54 @@
 ---
 layout: post
-
 title: Of Maps and Monsters, the Right way to Populate a World Part I
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: "This work is the beginning of a collection of notes on Monsters and Maps. In the future I will split this out into several different sections.  I wanted to start wtih what I had here and start working my thoughts out while getting some of this out of my head and into a place I can review and look at."
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: This work is the beginning of a collection of notes on Monsters and Maps.
+  In the future I will split this out into several different sections.  I wanted to
+  start wtih what I had here and start working my thoughts out while getting some
+  of this out of my head and into a place I can review and look at.
+source: null
+source-url: null
+call-to-action: null
 date: 2018-05-11 21:04:42-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
-description: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
-seo-description: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: A guide for game masters and designers on creating immersive worlds in
+  role-playing games with effective use of maps and monsters.
+seo-description: A guide for game masters and designers on creating immersive worlds
+  in role-playing games with effective use of maps and monsters.
 categories:
 - Role Playing Games
 - Maps
 - Monsters
-tags:
+tags: null
 keywords: Role playing games,  World-building, Game Master, Maps, Monsters, Storytelling
-
-
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-05/Ebstorfer-stich2.webp
-image-alt: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious bishoprics, and text describing the world's creation, animals, and historical elements. 
+image-alt: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious
+  bishoprics, and text describing the world's creation, animals, and historical elements.
 image-artist: Gervase of Ebstorf
 image-artist-URL: https://en.wikipedia.org/wiki/Gervase_of_Ebstorf
-image-description: Medieval map of the world "Ebstorf Map" featuring countries, cities, arious bishoprics, and text describing the world's creation, animals, and historical elements.
+image-description: Medieval map of the world "Ebstorf Map" featuring countries, cities,
+  arious bishoprics, and text describing the world's creation, animals, and historical
+  elements.
 image-title: Ebstorf Map
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: true
-
-order:
+order: null
+image_width: 1000
+image_height: 999
 ---
 <style>
 .dccvsdnd thead tr th {

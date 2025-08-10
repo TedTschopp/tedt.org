@@ -1,62 +1,70 @@
 ---
 layout: post
-title: Menelaos 'Numbers' Primatos - A Shadowrun Ork Accountant 
-title-url: 
-subtitle: From Corporate Suits to Nightclub Beats - The Unconventional Journey of Numbers, the Ork Executive
-subtitle-url: 
-quote:   
-excerpt:  
+title: Menelaos 'Numbers' Primatos - A Shadowrun Ork Accountant
+title-url: null
+subtitle: From Corporate Suits to Nightclub Beats - The Unconventional Journey of
+  Numbers, the Ork Executive
+subtitle-url: null
+quote: null
+excerpt: null
 source: tedt.org
-source-url: 
-call-to-action: 
+source-url: null
+call-to-action: null
 date: 2024-01-21 16:13:24
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-bullets:
-description: Meet Numbers, a Satyr Ork aiming to shake up California's nightclub scene by merging his business savvy with his passion for music and culture. Dive into his journey from an executive background to revolutionizing nightlife in a magic-filled Shadowrun world.
-seo-description: 
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: Meet Numbers, a Satyr Ork aiming to shake up California's nightclub scene
+  by merging his business savvy with his passion for music and culture. Dive into
+  his journey from an executive background to revolutionizing nightlife in a magic-filled
+  Shadowrun world.
+seo-description: null
 categories:
-  - Role Playing Games
-  - Shadowrun
+- Role Playing Games
+- Shadowrun
 tags:
-  - RPG
-  - Character
-keywords: ""
-
+- RPG
+- Character
+keywords: ''
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
-image-alt: Exterior of a cyberpunk nightclub in Los Angeles, lit by neon signs, wet reflective streets, futuristic cityscape backdrop
+image-alt: Exterior of a cyberpunk nightclub in Los Angeles, lit by neon signs, wet
+  reflective streets, futuristic cityscape backdrop
 image-title: Neon Night at a Cyberpunk Clubfront in Los Angeles
-image-description: "The image captures a gritty, futuristic Los Angeles nightlife scene outside a cyberpunk club. Neon signs in electric blues, purples, and pinks cast glowing reflections on rain‑slicked sidewalks. The club façade displays bold, futuristic lettering alongside holographic projections. Figures in cyberpunk style—coats with illuminated trims, augmented limbs, visored eyewear—linger under flickering streetlights and cyber-ads. Behind them, a misty city skyline bristles with massive holographic billboards, hover vehicles cruising overhead, and dense architecture layered with pipes and neon conduits. The atmosphere is tense yet magnetic, combining urban decay with high-tech allure, setting the stage for clandestine meetings or narrative entry into a dark techno-future."
+image-description: "The image captures a gritty, futuristic Los Angeles nightlife\
+  \ scene outside a cyberpunk club. Neon signs in electric blues, purples, and pinks\
+  \ cast glowing reflections on rain\u2011slicked sidewalks. The club fa\xE7ade displays\
+  \ bold, futuristic lettering alongside holographic projections. Figures in cyberpunk\
+  \ style\u2014coats with illuminated trims, augmented limbs, visored eyewear\u2014\
+  linger under flickering streetlights and cyber-ads. Behind them, a misty city skyline\
+  \ bristles with massive holographic billboards, hover vehicles cruising overhead,\
+  \ and dense architecture layered with pipes and neon conduits. The atmosphere is\
+  \ tense yet magnetic, combining urban decay with high-tech allure, setting the stage\
+  \ for clandestine meetings or narrative entry into a dark techno-future."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-
-monster-or-magical-or-religious-ideas:  
-year-the-event-took-place:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-order:
-
+order: null
 mastodon-post-id: 111796991086841890
-
 redirect_from:
-  - /2024/01/21/Numbers-An-Orkl-Accountant.html
-  - /2024/01/21/Numbers-An-Orkl-Accountant/
-  - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant
-  - /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant/
-  - /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant
-  - /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant/
-
-
+- /2024/01/21/Numbers-An-Orkl-Accountant.html
+- /2024/01/21/Numbers-An-Orkl-Accountant/
+- /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant
+- /role%20playing%20games/shadowrun/Numbers-An-Orkl-Accountant/
+- /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant
+- /role%20playing%20games/shadowrun/Numbers-An-Ork-Accountant/
+image_width: 1456
+image_height: 816
 ---
-
 I was in an online discussion about Shadowrun and a friend made an offhand comments about the uselessness of an Ork Accountant in Shadowrun.  This was my response.  Numbers is an Ork, of the Satyr variety found mainly in Europe.  His parents are corporate executives and fast tracked him into being an executive as well.  He got his degree in business administration with a focus on accounting and audits.  He had a full backstory about working for a nightclub doing their books and dreaming of owning a whole chain of clubs across California.  
 
 ## Early Life and Education (2030 - 2050)

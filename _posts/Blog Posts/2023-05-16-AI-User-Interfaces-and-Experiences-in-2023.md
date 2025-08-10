@@ -1,73 +1,60 @@
 ---
 layout: post
-
 title: AI User Interfaces and Experiences in 2023
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: The original computer output interface was the printer.  You entered a program
-    into the computer, and the computer responded on a printer with the answers.  Overtime
-    this changed to a screen, but the idea of a program that you enter and the computer
-    responds with an answer is still the fundamental idea of one User Interface paradigm.
-source:
-source-url:
-call-to-action:
-
+  into the computer, and the computer responded on a printer with the answers.  Overtime
+  this changed to a screen, but the idea of a program that you enter and the computer
+  responds with an answer is still the fundamental idea of one User Interface paradigm.
+source: null
+source-url: null
+call-to-action: null
 date: 2023-05-16 08:28:17-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: An in-depth analysis of Google's response to the AI competition and its
-    impact on the tech landscape. Exploring the shift from traditional search to AI-driven
-    solutions, the article delves into the battle between Google, OpenAI, and other
-    tech giants. It also reflects on the evolution of user interfaces, from printers
-    to text boxes, and the fundamental role of search in our daily lives. With insights
-    into Google's product strategies, the text questions if the company can reclaim
-    its edge in the new era of AI-driven answers.
-seo-description:
-
+  impact on the tech landscape. Exploring the shift from traditional search to AI-driven
+  solutions, the article delves into the battle between Google, OpenAI, and other
+  tech giants. It also reflects on the evolution of user interfaces, from printers
+  to text boxes, and the fundamental role of search in our daily lives. With insights
+  into Google's product strategies, the text questions if the company can reclaim
+  its edge in the new era of AI-driven answers.
+seo-description: null
 categories:
 - Computers
 - Artificial Intelligence
-
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/printing-press-hannes-wolf-unsplash.webp
 image-alt: Photo by Hannes Wolf on Unsplash
-image-artist:
-image-artist-URL:
-image-credits:
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://unsplash.com/photos/n2ILm0aTCYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 image-credits-artist: Hannes Wolf
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: Printing Press
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 6016
+image_height: 4000
 ---
-
 Last week was Google IO, and I'm a little disappointed.   Google has been getting their lunch eaten by OpenAI and GPT-3, and I think they are starting to fighting back with new product launches and features are going to start coming very fast and furious.  But a lot of this stuff is coming soon or coming this fall. That's the evidence that Google is behind the eight ball on this.  This also suggests that over the last six months there really was a massive internal shift at Google towards getting this stuff out the door.  The open question is can Google out code Microsoft at this point.
  
 As all this stuff sort of comes out, I think that many vastly under estimated how fundamental certain user interface ideas are.

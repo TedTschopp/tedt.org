@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Brutorz.png
-title: Big Walkers «Brutorz»
+title: "Big Walkers \xABBrutorz\xBB"
 creature_name_index: Brutorz
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Big Walkers
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -97,8 +97,8 @@ monster_name: Brutorz 'Big Walkers'
 number_appearing: 2d6 (7)
 number_appearing_single: '7'
 init: '+4'
-monster_name_xx_number_if_applicable_init_+-x: "Brutorz 'Big Walkers' (2d6 (7)): Init\
-  \ +4"
+monster_name_xx_number_if_applicable_init_+-x: 'Brutorz ''Big Walkers'' (2d6 (7)):
+  Init +4'
 ps_-_c: '80'
 dx_-_c: '10'
 cn_-_c: '13'
@@ -164,9 +164,9 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref +0, Will +0
 fort_save: '1'
 ref_save: '0'
 will: '0'
-normal_text: "Brutorz 'Big Walkers' (2d6 (7)): Init +4; atk bite melee +8 (1d5+6)\
-  \ and 2 x kicks melee +8 (1d4+6); AC 13; HD 8D7 hp 32 each; MV 40' ; 1d20; SV Fort\
-  \ +1, Ref +0, Will +0"
+normal_text: 'Brutorz ''Big Walkers'' (2d6 (7)): Init +4; atk bite melee +8 (1d5+6)
+  and 2 x kicks melee +8 (1d4+6); AC 13; HD 8D7 hp 32 each; MV 40'' ; 1d20; SV Fort
+  +1, Ref +0, Will +0'
 description_output: 'Description: A two meter tall horse that can carry 900lbs for
   long distances without tiring.  Behavior:The Brutorz will willingly serve as a riding,
   pack or dray animal if they are well treated.  They will turn on a cruel master.  They
@@ -189,53 +189,52 @@ description_output: 'Description: A two meter tall horse that can carry 900lbs f
   the brutorz as an ally. Brutorz willingly serve as draft animals, but refuse bits.
   bridles, or confining harnesses. They have a PS of 26 and can carry three normal
   men comfortably'
-final_output: "Brutorz 'Big Walkers' (2d6 (7)): Init +4; atk bite melee +8 (1d5+6)\
-  \ and 2 x kicks melee +8 (1d4+6); AC 13; HD 8D7 hp 32 each; MV 40' ; 1d20; SV Fort\
-  \ +1, Ref +0, Will +0(M) Precognition, TelepathyDescription: A two meter tall horse\
-  \ that can carry 900lbs for long distances without tiring.  Behavior:The Brutorz\
-  \ will willingly serve as a riding, pack or dray animal if they are well treated.\
-  \  They will turn on a cruel master.  They are particularly fond of humans.Combat:\
-  \ The brutorz prefers peaceful coexistence with other animals and intelligent plants,\
-  \ but it never backs down from a fight when peaceful options are exhausted. These\
-  \ massive beasts attack with a bite or with two kicks with their front legs. If\
-  \ attacked from the back, the brutorz can strike with its two back hooves. As an\
-  \ attack of last resort, the brutorz can trample with his four feet, causing 3d6\
-  \ points of damage per hoof. (The GM should roll a 1d4 to determine how many hooves\
-  \ strike the opponent). The brutorz uses its intuition and telepathy to great advantage\
-  \ in combat. It always seems to known what an opponent is going to do before he\
-  \ does it. Frequently, brutorz taunt their enemies telepathically, trying to get\
-  \ them to break and run.Society: Brutorz live in herds, much like their ancestors.\
-  \ While they are smart enough to use technology, they disdain its use. They also\
-  \ lack the opposable manipulative digits needed to effectively use most technology.\
-  \ They live to run free and wild. If approached in a congenial manner, a brutorz\
-  \ may befriend a humanoid. Brutorz refuse to ally with humanoids and creatures who\
-  \ do not respect them. In a like manner, characters who plan to use a brutorz for\
-  \ their own means, without a thought toward the creature, can never hope to gain\
-  \ the brutorz as an ally. Brutorz willingly serve as draft animals, but refuse bits.\
-  \ bridles, or confining harnesses. They have a PS of 26 and can carry three normal\
-  \ men comfortably"
-players: "Brutorz; 'Big Walkers';Description: A two meter tall horse that can carry\
-  \ 900lbs for long distances without tiring.  Behavior:The Brutorz will willingly\
-  \ serve as a riding, pack or dray animal if they are well treated.  They will turn\
-  \ on a cruel master.  They are particularly fond of humans.Combat: The brutorz prefers\
-  \ peaceful coexistence with other animals and intelligent plants, but it never backs\
-  \ down from a fight when peaceful options are exhausted. These massive beasts attack\
-  \ with a bite or with two kicks with their front legs. If attacked from the back,\
-  \ the brutorz can strike with its two back hooves. As an attack of last resort,\
-  \ the brutorz can trample with his four feet, causing 3d6 points of damage per hoof.\
-  \ (The GM should roll a 1d4 to determine how many hooves strike the opponent). The\
-  \ brutorz uses its intuition and telepathy to great advantage in combat. It always\
-  \ seems to known what an opponent is going to do before he does it. Frequently,\
-  \ brutorz taunt their enemies telepathically, trying to get them to break and run.Society:\
-  \ Brutorz live in herds, much like their ancestors. While they are smart enough\
-  \ to use technology, they disdain its use. They also lack the opposable manipulative\
-  \ digits needed to effectively use most technology. They live to run free and wild.\
-  \ If approached in a congenial manner, a brutorz may befriend a humanoid. Brutorz\
-  \ refuse to ally with humanoids and creatures who do not respect them. In a like\
-  \ manner, characters who plan to use a brutorz for their own means, without a thought\
-  \ toward the creature, can never hope to gain the brutorz as an ally. Brutorz willingly\
-  \ serve as draft animals, but refuse bits. bridles, or confining harnesses. They\
-  \ have a PS of 26 and can carry three normal men comfortably|"
+final_output: 'Brutorz ''Big Walkers'' (2d6 (7)): Init +4; atk bite melee +8 (1d5+6)
+  and 2 x kicks melee +8 (1d4+6); AC 13; HD 8D7 hp 32 each; MV 40'' ; 1d20; SV Fort
+  +1, Ref +0, Will +0(M) Precognition, TelepathyDescription: A two meter tall horse
+  that can carry 900lbs for long distances without tiring.  Behavior:The Brutorz will
+  willingly serve as a riding, pack or dray animal if they are well treated.  They
+  will turn on a cruel master.  They are particularly fond of humans.Combat: The brutorz
+  prefers peaceful coexistence with other animals and intelligent plants, but it never
+  backs down from a fight when peaceful options are exhausted. These massive beasts
+  attack with a bite or with two kicks with their front legs. If attacked from the
+  back, the brutorz can strike with its two back hooves. As an attack of last resort,
+  the brutorz can trample with his four feet, causing 3d6 points of damage per hoof.
+  (The GM should roll a 1d4 to determine how many hooves strike the opponent). The
+  brutorz uses its intuition and telepathy to great advantage in combat. It always
+  seems to known what an opponent is going to do before he does it. Frequently, brutorz
+  taunt their enemies telepathically, trying to get them to break and run.Society:
+  Brutorz live in herds, much like their ancestors. While they are smart enough to
+  use technology, they disdain its use. They also lack the opposable manipulative
+  digits needed to effectively use most technology. They live to run free and wild.
+  If approached in a congenial manner, a brutorz may befriend a humanoid. Brutorz
+  refuse to ally with humanoids and creatures who do not respect them. In a like manner,
+  characters who plan to use a brutorz for their own means, without a thought toward
+  the creature, can never hope to gain the brutorz as an ally. Brutorz willingly serve
+  as draft animals, but refuse bits. bridles, or confining harnesses. They have a
+  PS of 26 and can carry three normal men comfortably'
+players: 'Brutorz; ''Big Walkers'';Description: A two meter tall horse that can carry
+  900lbs for long distances without tiring.  Behavior:The Brutorz will willingly serve
+  as a riding, pack or dray animal if they are well treated.  They will turn on a
+  cruel master.  They are particularly fond of humans.Combat: The brutorz prefers
+  peaceful coexistence with other animals and intelligent plants, but it never backs
+  down from a fight when peaceful options are exhausted. These massive beasts attack
+  with a bite or with two kicks with their front legs. If attacked from the back,
+  the brutorz can strike with its two back hooves. As an attack of last resort, the
+  brutorz can trample with his four feet, causing 3d6 points of damage per hoof. (The
+  GM should roll a 1d4 to determine how many hooves strike the opponent). The brutorz
+  uses its intuition and telepathy to great advantage in combat. It always seems to
+  known what an opponent is going to do before he does it. Frequently, brutorz taunt
+  their enemies telepathically, trying to get them to break and run.Society: Brutorz
+  live in herds, much like their ancestors. While they are smart enough to use technology,
+  they disdain its use. They also lack the opposable manipulative digits needed to
+  effectively use most technology. They live to run free and wild. If approached in
+  a congenial manner, a brutorz may befriend a humanoid. Brutorz refuse to ally with
+  humanoids and creatures who do not respect them. In a like manner, characters who
+  plan to use a brutorz for their own means, without a thought toward the creature,
+  can never hope to gain the brutorz as an ally. Brutorz willingly serve as draft
+  animals, but refuse bits. bridles, or confining harnesses. They have a PS of 26
+  and can carry three normal men comfortably|'
 id: 71089
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -244,4 +243,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 864
+image_height: 1032
 ---

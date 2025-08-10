@@ -1,62 +1,56 @@
 ---
 layout: post
-
 title: Sucks to be me - From Blackberry to iPhone to Blackberry Again
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-08-17 16:29:55+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
-description: An unexpected visit to the Apple Store after shattering an iPhone screen, revealing surprising service inconsistencies and policy variations across locations. Learn about the challenges and costs of cosmetic damage, the difficulty in obtaining a loaner device, and insights on customer service in the tech industry.
-seo-description: An unexpected visit to the Apple Store after shattering an iPhone screen, revealing surprising service inconsistencies and policy variations across locations. Learn about the challenges and costs of cosmetic damage, the difficulty in obtaining a loaner device, and insights on customer service in the tech industry.
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
+description: An unexpected visit to the Apple Store after shattering an iPhone screen,
+  revealing surprising service inconsistencies and policy variations across locations.
+  Learn about the challenges and costs of cosmetic damage, the difficulty in obtaining
+  a loaner device, and insights on customer service in the tech industry.
+seo-description: An unexpected visit to the Apple Store after shattering an iPhone
+  screen, revealing surprising service inconsistencies and policy variations across
+  locations. Learn about the challenges and costs of cosmetic damage, the difficulty
+  in obtaining a loaner device, and insights on customer service in the tech industry.
 categories:
 - Computers
 - Mobile
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/iPhone-and-Blackbery.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
 image-title: IPhone and Blackberry
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1200
+image_height: 630
 ---
 Well I broke my iPhone. I dropped it at lunch today and the glass shattered. 
 

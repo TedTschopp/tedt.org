@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Canopus Plague Victim.png
-title: Zombie «Canopus Plague Victim»
+title: "Zombie \xABCanopus Plague Victim\xBB"
 creature_name_index: Canopus Plague Victim
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: The Albuquerque Starport
 author: ''
-author_name: 'Paul Reiche III'
+author_name: Paul Reiche III
 url: ''
 avatar: ''
 mcc_race: Human
@@ -93,8 +93,8 @@ monster_name: Canopus Plague Victim 'Zombie'
 number_appearing: 1d6 (3)
 number_appearing_single: '3'
 init: '+2'
-monster_name_xx_number_if_applicable_init_+-x: "Canopus Plague Victim 'Zombie' (1d6\
-  \ (3)): Init +2"
+monster_name_xx_number_if_applicable_init_+-x: 'Canopus Plague Victim ''Zombie'' (1d6
+  (3)): Init +2'
 ps_-_c: '11'
 dx_-_c: '11'
 cn_-_c: '11'
@@ -160,77 +160,76 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will +0
 fort_save: '0'
 ref_save: '0'
 will: '0'
-normal_text: "Canopus Plague Victim 'Zombie' (1d6 (3)): Init +2; atk 2 x fists melee\
-  \ +1 (1d3); AC 10; HD 4D5 hp 12 each; MV 11' ; 1d20; SV Fort +0, Ref +0, Will +0"
-description_output: "Description: The figure appears humanoid and is clothed in a\
-  \ plain jumpsuit.  It seems to have no other possessions.  Its body quivers and\
-  \ shakes in a very inhuman way. It appears to be made of a dark brown, glistening,\
-  \ gelatinous substance. The disgusting creature will attack the party by bashing\
-  \ characters with its two misshapen fists. Behavior:It is a plague zombie, a victim\
-  \ of the horrible Canopus plague. Each attack does only 1d2 points of damage, but\
-  \ anyone struck will be coated with some of the creature's gooey substance.  The\
-  \ brown material will eat away at the victim's flesh, causing 1d6 points of damage\
-  \ per round. If the damage taken exceeds the victim's total number of hit points,\
-  \ the victim will become a plague zombie and attack the rest of the party. The only\
-  \ way to stop the plague from taking over a body is to remove the affected flesh\
-  \ with a sharp object, causing 1d4 points of damage per affected area. Once the\
-  \ plague has taken over a body, there is no cure. The Canopus plague is an alien\
-  \ disease brought back to Earth by long-range scout ships in the early 2300's. It\
-  \ is highly contagious and causes its victims' flesh to change into a viscous, pudding-like\
-  \ material. Once the plague has totally taken over a body, the victim becomes a\
-  \ zombie, interested only in seeking out healthy humans and infecting them with\
-  \ the foul disease. The Canopus Plague never broke out in epidemic proportions on\
-  \ Earth, but many space stations such as this were completely contaminated. When\
-  \ this station was infected, the survivors were lucky enough to escape and leave\
-  \ the plague-zombies behind. The space station has remained functioning, but plague\
-  \ zombies wander the rooms and halls in an endless search for uninfected humans."
-final_output: "Canopus Plague Victim 'Zombie' (1d6 (3)): Init +2; atk 2 x fists melee\
-  \ +1 (1d3); AC 10; HD 4D5 hp 12 each; MV 11' ; 1d20; SV Fort +0, Ref +0, Will +0(P)\
-  \ Canopus Plague CarrierDescription: The figure appears humanoid and is clothed\
-  \ in a plain jumpsuit.  It seems to have no other possessions.  Its body quivers\
-  \ and shakes in a very inhuman way. It appears to be made of a dark brown, glistening,\
-  \ gelatinous substance. The disgusting creature will attack the party by bashing\
-  \ characters with its two misshapen fists. Behavior:It is a plague zombie, a victim\
-  \ of the horrible Canopus plague. Each attack does only 1d2 points of damage, but\
-  \ anyone struck will be coated with some of the creature's gooey substance.  The\
-  \ brown material will eat away at the victim's flesh, causing 1d6 points of damage\
-  \ per round. If the damage taken exceeds the victim's total number of hit points,\
-  \ the victim will become a plague zombie and attack the rest of the party. The only\
-  \ way to stop the plague from taking over a body is to remove the affected flesh\
-  \ with a sharp object, causing 1d4 points of damage per affected area. Once the\
-  \ plague has taken over a body, there is no cure. The Canopus plague is an alien\
-  \ disease brought back to Earth by long-range scout ships in the early 2300's. It\
-  \ is highly contagious and causes its victims' flesh to change into a viscous, pudding-like\
-  \ material. Once the plague has totally taken over a body, the victim becomes a\
-  \ zombie, interested only in seeking out healthy humans and infecting them with\
-  \ the foul disease. The Canopus Plague never broke out in epidemic proportions on\
-  \ Earth, but many space stations such as this were completely contaminated. When\
-  \ this station was infected, the survivors were lucky enough to escape and leave\
-  \ the plague-zombies behind. The space station has remained functioning, but plague\
-  \ zombies wander the rooms and halls in an endless search for uninfected humans."
-players: "Canopus Plague Victim; 'Zombie';Description: The figure appears humanoid\
-  \ and is clothed in a plain jumpsuit.  It seems to have no other possessions.  Its\
-  \ body quivers and shakes in a very inhuman way. It appears to be made of a dark\
-  \ brown, glistening, gelatinous substance. The disgusting creature will attack the\
-  \ party by bashing characters with its two misshapen fists. Behavior:It is a plague\
-  \ zombie, a victim of the horrible Canopus plague. Each attack does only 1d2 points\
-  \ of damage, but anyone struck will be coated with some of the creature's gooey\
-  \ substance.  The brown material will eat away at the victim's flesh, causing 1d6\
-  \ points of damage per round. If the damage taken exceeds the victim's total number\
-  \ of hit points, the victim will become a plague zombie and attack the rest of the\
-  \ party. The only way to stop the plague from taking over a body is to remove the\
-  \ affected flesh with a sharp object, causing 1d4 points of damage per affected\
-  \ area. Once the plague has taken over a body, there is no cure. The Canopus plague\
-  \ is an alien disease brought back to Earth by long-range scout ships in the early\
-  \ 2300's. It is highly contagious and causes its victims' flesh to change into a\
-  \ viscous, pudding-like material. Once the plague has totally taken over a body,\
-  \ the victim becomes a zombie, interested only in seeking out healthy humans and\
-  \ infecting them with the foul disease. The Canopus Plague never broke out in epidemic\
-  \ proportions on Earth, but many space stations such as this were completely contaminated.\
-  \ When this station was infected, the survivors were lucky enough to escape and\
-  \ leave the plague-zombies behind. The space station has remained functioning, but\
-  \ plague zombies wander the rooms and halls in an endless search for uninfected\
-  \ humans.|"
+normal_text: 'Canopus Plague Victim ''Zombie'' (1d6 (3)): Init +2; atk 2 x fists melee
+  +1 (1d3); AC 10; HD 4D5 hp 12 each; MV 11'' ; 1d20; SV Fort +0, Ref +0, Will +0'
+description_output: 'Description: The figure appears humanoid and is clothed in a
+  plain jumpsuit.  It seems to have no other possessions.  Its body quivers and shakes
+  in a very inhuman way. It appears to be made of a dark brown, glistening, gelatinous
+  substance. The disgusting creature will attack the party by bashing characters with
+  its two misshapen fists. Behavior:It is a plague zombie, a victim of the horrible
+  Canopus plague. Each attack does only 1d2 points of damage, but anyone struck will
+  be coated with some of the creature''s gooey substance.  The brown material will
+  eat away at the victim''s flesh, causing 1d6 points of damage per round. If the
+  damage taken exceeds the victim''s total number of hit points, the victim will become
+  a plague zombie and attack the rest of the party. The only way to stop the plague
+  from taking over a body is to remove the affected flesh with a sharp object, causing
+  1d4 points of damage per affected area. Once the plague has taken over a body, there
+  is no cure. The Canopus plague is an alien disease brought back to Earth by long-range
+  scout ships in the early 2300''s. It is highly contagious and causes its victims''
+  flesh to change into a viscous, pudding-like material. Once the plague has totally
+  taken over a body, the victim becomes a zombie, interested only in seeking out healthy
+  humans and infecting them with the foul disease. The Canopus Plague never broke
+  out in epidemic proportions on Earth, but many space stations such as this were
+  completely contaminated. When this station was infected, the survivors were lucky
+  enough to escape and leave the plague-zombies behind. The space station has remained
+  functioning, but plague zombies wander the rooms and halls in an endless search
+  for uninfected humans.'
+final_output: 'Canopus Plague Victim ''Zombie'' (1d6 (3)): Init +2; atk 2 x fists
+  melee +1 (1d3); AC 10; HD 4D5 hp 12 each; MV 11'' ; 1d20; SV Fort +0, Ref +0, Will
+  +0(P) Canopus Plague CarrierDescription: The figure appears humanoid and is clothed
+  in a plain jumpsuit.  It seems to have no other possessions.  Its body quivers and
+  shakes in a very inhuman way. It appears to be made of a dark brown, glistening,
+  gelatinous substance. The disgusting creature will attack the party by bashing characters
+  with its two misshapen fists. Behavior:It is a plague zombie, a victim of the horrible
+  Canopus plague. Each attack does only 1d2 points of damage, but anyone struck will
+  be coated with some of the creature''s gooey substance.  The brown material will
+  eat away at the victim''s flesh, causing 1d6 points of damage per round. If the
+  damage taken exceeds the victim''s total number of hit points, the victim will become
+  a plague zombie and attack the rest of the party. The only way to stop the plague
+  from taking over a body is to remove the affected flesh with a sharp object, causing
+  1d4 points of damage per affected area. Once the plague has taken over a body, there
+  is no cure. The Canopus plague is an alien disease brought back to Earth by long-range
+  scout ships in the early 2300''s. It is highly contagious and causes its victims''
+  flesh to change into a viscous, pudding-like material. Once the plague has totally
+  taken over a body, the victim becomes a zombie, interested only in seeking out healthy
+  humans and infecting them with the foul disease. The Canopus Plague never broke
+  out in epidemic proportions on Earth, but many space stations such as this were
+  completely contaminated. When this station was infected, the survivors were lucky
+  enough to escape and leave the plague-zombies behind. The space station has remained
+  functioning, but plague zombies wander the rooms and halls in an endless search
+  for uninfected humans.'
+players: 'Canopus Plague Victim; ''Zombie'';Description: The figure appears humanoid
+  and is clothed in a plain jumpsuit.  It seems to have no other possessions.  Its
+  body quivers and shakes in a very inhuman way. It appears to be made of a dark brown,
+  glistening, gelatinous substance. The disgusting creature will attack the party
+  by bashing characters with its two misshapen fists. Behavior:It is a plague zombie,
+  a victim of the horrible Canopus plague. Each attack does only 1d2 points of damage,
+  but anyone struck will be coated with some of the creature''s gooey substance.  The
+  brown material will eat away at the victim''s flesh, causing 1d6 points of damage
+  per round. If the damage taken exceeds the victim''s total number of hit points,
+  the victim will become a plague zombie and attack the rest of the party. The only
+  way to stop the plague from taking over a body is to remove the affected flesh with
+  a sharp object, causing 1d4 points of damage per affected area. Once the plague
+  has taken over a body, there is no cure. The Canopus plague is an alien disease
+  brought back to Earth by long-range scout ships in the early 2300''s. It is highly
+  contagious and causes its victims'' flesh to change into a viscous, pudding-like
+  material. Once the plague has totally taken over a body, the victim becomes a zombie,
+  interested only in seeking out healthy humans and infecting them with the foul disease.
+  The Canopus Plague never broke out in epidemic proportions on Earth, but many space
+  stations such as this were completely contaminated. When this station was infected,
+  the survivors were lucky enough to escape and leave the plague-zombies behind. The
+  space station has remained functioning, but plague zombies wander the rooms and
+  halls in an endless search for uninfected humans.|'
 id: 71100
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -239,4 +238,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1868
+image_height: 828
 ---

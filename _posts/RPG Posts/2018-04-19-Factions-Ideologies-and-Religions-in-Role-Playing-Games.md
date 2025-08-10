@@ -1,68 +1,61 @@
 ---
 layout: post
-
 title: Factions, Ideologies, and Religions in Role Playing Games
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: 'Most societies are formed around a given ideology or way of thinking.  These
-    ideologies can be broken up into several different categories.  At the higher
-    tech levels where people have more freetime, those societies will have multiple
-    ideologies from all four segments operating together within their borders.  Each
-    group will have various taboos, symbols, concepts, hierarchies, buildings, trade
-    goods, occupations, equipment, stories, and legends that they have a monopoly
-    on.   It should be noted that ideologies can exist with other ideologies.
+  ideologies can be broken up into several different categories.  At the higher tech
+  levels where people have more freetime, those societies will have multiple ideologies
+  from all four segments operating together within their borders.  Each group will
+  have various taboos, symbols, concepts, hierarchies, buildings, trade goods, occupations,
+  equipment, stories, and legends that they have a monopoly on.   It should be noted
+  that ideologies can exist with other ideologies.
 
-    '
-source:
-source-url:
-call-to-action:
-
+  '
+source: null
+source-url: null
+call-to-action: null
 date: 2018-04-19 03:13:00+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: Explore the complexities of ideologies, factions, and religions in role-playing
-    games. Understand how to create a multi-layered world that engages players in
-    political, economic, and religious dimensions.
-seo-description:
-
+  games. Understand how to create a multi-layered world that engages players in political,
+  economic, and religious dimensions.
+seo-description: null
 categories:
 - Role Playing Games
 - Religion
 - Gamma World
 - Mutant Crawl Classics
-tags:
+tags: null
 keywords: Role playing games, Ideologies, Factions. Religions, World-building, Game
-    Master
-
+  Master
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-04/Sunset on this ideology.webp
-image-alt: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City
-image-artist: Giorgio Minguzzi 
+image-alt: "Sunset on this ideology - U\u017Ehorod - Sunset near the border (Slovack\
+  \ Rep. Ukaine) - Ukraine, Uzgorod City"
+image-artist: Giorgio Minguzzi
 image-artist-URL: https://www.flickr.com/photos/iz4aks/4005020863
 image-description: Sunset of a patriotic statue of a nan and a flag
-image-title: Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukraine) - Ukraine, Uzgorod City
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-mathjax:
-
-order:
+image-title: "Sunset on this ideology - U\u017Ehorod - Sunset near the border (Slovack\
+  \ Rep. Ukraine) - Ukraine, Uzgorod City"
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1024
+image_height: 677
 ---
-
 # Notes
 
 The following ideas have been written down from notes I have taken over the years and merged with Gamma World's concepts of Cryptic Socieities.  The goal here is to create some rules that can be easily moved from one setting to another and from one system to another on their creation.  Things that need to be done:

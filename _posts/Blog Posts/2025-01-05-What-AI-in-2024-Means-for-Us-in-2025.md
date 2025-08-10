@@ -1,67 +1,68 @@
 ---
 layout: post
-
-title: "What AI in 2024 Means for Us in 2025"
-subtitle: "From Breakthrough to Implementation - The Path Forward for Utilities"
-quote: "Success will depend not just on adopting AI, but on deploying it thoughtfully, with the right infrastructure, collaboration, and readiness across the organization."
-excerpt: "AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader access—are reshaping what's possible in 2025. For electric utilities and IT organizations, this means new opportunities in efficiency, customer service, and sustainability, but also new responsibilities around governance, training, and data quality."
-source: "Original Content"
-source-url: ""
-call-to-action: "Share how your organization is preparing for AI implementation in 2025"
-
+title: What AI in 2024 Means for Us in 2025
+subtitle: From Breakthrough to Implementation - The Path Forward for Utilities
+quote: Success will depend not just on adopting AI, but on deploying it thoughtfully,
+  with the right infrastructure, collaboration, and readiness across the organization.
+excerpt: "AI breakthroughs in 2024\u2014cheaper models, multimodal capabilities, and\
+  \ broader access\u2014are reshaping what's possible in 2025. For electric utilities\
+  \ and IT organizations, this means new opportunities in efficiency, customer service,\
+  \ and sustainability, but also new responsibilities around governance, training,\
+  \ and data quality."
+source: Original Content
+source-url: ''
+call-to-action: Share how your organization is preparing for AI implementation in
+  2025
 date: 2025-01-05
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - GPT-4-class models running on laptops eliminate expensive infrastructure requirements
-    - Multimodal AI integration across text, audio, video, and images expands use cases dramatically
-    - LLM token cost reduction opens doors to wider adoption and experimentation
-    - Data quality becomes increasingly critical for reliable AI outputs and decision-making
-    - IT organizations must balance innovation with operational stability and governance
-
-description: "An analysis of how 2024's AI breakthroughs translate into practical opportunities and challenges for electric utilities and IT organizations in 2025, focusing on operational efficiency, customer experience, and strategic implementation."
-
-seo-description: "Learn how AI breakthroughs in 2024 impact utility operations in 2025. Discover opportunities in efficiency, customer service, and sustainability plus implementation strategies."
-
-categories: 
-    - Artificial Intelligence
-    - Opinion
-
-tags: 
-    - utility AI
-    - enterprise AI
-    - AI implementation
-    - multimodal AI
-    - data quality
-
-keywords: utility AI implementation, enterprise AI strategy, electric utility technology, AI deployment 2025, utility customer service AI, operational efficiency AI
-
+- GPT-4-class models running on laptops eliminate expensive infrastructure requirements
+- Multimodal AI integration across text, audio, video, and images expands use cases
+  dramatically
+- LLM token cost reduction opens doors to wider adoption and experimentation
+- Data quality becomes increasingly critical for reliable AI outputs and decision-making
+- IT organizations must balance innovation with operational stability and governance
+description: An analysis of how 2024's AI breakthroughs translate into practical opportunities
+  and challenges for electric utilities and IT organizations in 2025, focusing on
+  operational efficiency, customer experience, and strategic implementation.
+seo-description: Learn how AI breakthroughs in 2024 impact utility operations in 2025.
+  Discover opportunities in efficiency, customer service, and sustainability plus
+  implementation strategies.
+categories:
+- Artificial Intelligence
+- Opinion
+tags:
+- utility AI
+- enterprise AI
+- AI implementation
+- multimodal AI
+- data quality
+keywords: utility AI implementation, enterprise AI strategy, electric utility technology,
+  AI deployment 2025, utility customer service AI, operational efficiency AI
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/What-AI-in-2024-Means-for-Us-in-2025.webp
-image-alt: "Utility infrastructure enhanced with AI capabilities"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-
-mastodon-post-id: 
-
+image-alt: Utility infrastructure enhanced with AI capabilities
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: ''
+image-title: ''
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 ## Bottom Line Up Front
 
 AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader access—are reshaping what’s possible in 2025. For electric utilities and IT organizations, this means new opportunities in efficiency, customer service, and sustainability, but also new responsibilities around governance, training, and data quality. Success will depend not just on adopting AI, but on deploying it thoughtfully, with the right infrastructure, collaboration, and readiness across the organization.

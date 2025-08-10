@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Bearcat.png
-title: Grizlion «Bearcat»
+title: "Grizlion \xABBearcat\xBB"
 creature_name_index: Bearcat
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: 5th Edition
 author: ''
-author_name: 'Andy Collins and Jeff Grubb'
+author_name: Andy Collins and Jeff Grubb
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -89,8 +89,8 @@ monster_name: Bearcat 'Grizlion'
 number_appearing: 1d4 (2)
 number_appearing_single: '2'
 init: '+6'
-monster_name_xx_number_if_applicable_init_+-x: "Bearcat 'Grizlion' (1d4 (2)): Init\
-  \ +6"
+monster_name_xx_number_if_applicable_init_+-x: 'Bearcat ''Grizlion'' (1d4 (2)): Init
+  +6'
 ps_-_c: '9'
 dx_-_c: '13'
 cn_-_c: '10'
@@ -156,66 +156,65 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will +0
 fort_save: '0'
 ref_save: '1'
 will: '0'
-normal_text: "Bearcat 'Grizlion' (1d4 (2)): Init +6; atk bite melee +3 (1d16) and\
-  \ 2 x claws melee +3 (1d8); AC 13; HD 9D7 hp 36 each; MV 8' ; 1d20+1d14; SV Fort\
-  \ +0, Ref +1, Will +0"
-description_output: "Description: Also called the grizlion, this fearsome predator\
-  \ is actually neither bear nor cat, but rather a giant mutation of the wolverine.\
-  \  If anything its ferocity has increased with size.  The griozlion is fully 3 meters\
-  \ from nose to tail and over 1.5 meters tall at the shouldder.  Its fur is black\
-  \ and dark brown, often with dark yellowish coloration around the face or haunches.\
-  \  It has vicious claws, and its mouth of razor-sharp teeth is usually twisted in\
-  \ a snarling grimace.Combat: The bearcat is most often encountered hunting for food.\
-  \ Though it prefers meat, bearcats consume almost anything when hungrysome have\
-  \ been cut open to reveal cloth, wood, or even metal within. When it attacks, it\
-  \ attempts to lock its jaws onto its prey and then disembowel with its great claws.\
-  \ A hit with the bite attack grants two claw attacks, with a 1, 2, or 3 bonus based\
-  \ on the success of the bite. Despite the bearcat's bloodthirsty nature, it is remarkably\
-  \ clever (for an animal) and often stalks prey for some time before striking.  It\
-  \ often preys on large animals slowed by illness, injury, or age. It never shies\
-  \ away from a fight, however, no matter how large its opponent. Society: Thankfully,\
-  \ bearcats live in forested hills and mountains, usually far from civilization.\
-  \ During particularly harsh winters, however, bearcats have been known to come down\
-  \ to lower altitudes and find food in or near settled areas."
-final_output: "Bearcat 'Grizlion' (1d4 (2)): Init +6; atk bite melee +3 (1d16) and\
-  \ 2 x claws melee +3 (1d8); AC 13; HD 9D7 hp 36 each; MV 8' ; 1d20+1d14; SV Fort\
-  \ +0, Ref +1, Will +0Enhanced Metabolism, Toxin ToleranceDescription: Also called\
-  \ the grizlion, this fearsome predator is actually neither bear nor cat, but rather\
-  \ a giant mutation of the wolverine.  If anything its ferocity has increased with\
-  \ size.  The griozlion is fully 3 meters from nose to tail and over 1.5 meters tall\
-  \ at the shouldder.  Its fur is black and dark brown, often with dark yellowish\
-  \ coloration around the face or haunches.  It has vicious claws, and its mouth of\
-  \ razor-sharp teeth is usually twisted in a snarling grimace.Combat: The bearcat\
-  \ is most often encountered hunting for food. Though it prefers meat, bearcats consume\
-  \ almost anything when hungrysome have been cut open to reveal cloth, wood, or even\
-  \ metal within. When it attacks, it attempts to lock its jaws onto its prey and\
-  \ then disembowel with its great claws. A hit with the bite attack grants two claw\
-  \ attacks, with a 1, 2, or 3 bonus based on the success of the bite. Despite the\
-  \ bearcat's bloodthirsty nature, it is remarkably clever (for an animal) and often\
-  \ stalks prey for some time before striking.  It often preys on large animals slowed\
-  \ by illness, injury, or age. It never shies away from a fight, however, no matter\
-  \ how large its opponent. Society: Thankfully, bearcats live in forested hills and\
-  \ mountains, usually far from civilization. During particularly harsh winters, however,\
-  \ bearcats have been known to come down to lower altitudes and find food in or near\
-  \ settled areas."
-players: "Bearcat; 'Grizlion';Description: Also called the grizlion, this fearsome\
-  \ predator is actually neither bear nor cat, but rather a giant mutation of the\
-  \ wolverine.  If anything its ferocity has increased with size.  The griozlion is\
-  \ fully 3 meters from nose to tail and over 1.5 meters tall at the shouldder.  Its\
-  \ fur is black and dark brown, often with dark yellowish coloration around the face\
-  \ or haunches.  It has vicious claws, and its mouth of razor-sharp teeth is usually\
-  \ twisted in a snarling grimace.Combat: The bearcat is most often encountered hunting\
-  \ for food. Though it prefers meat, bearcats consume almost anything when hungrysome\
-  \ have been cut open to reveal cloth, wood, or even metal within. When it attacks,\
-  \ it attempts to lock its jaws onto its prey and then disembowel with its great\
-  \ claws. A hit with the bite attack grants two claw attacks, with a 1, 2, or 3 bonus\
-  \ based on the success of the bite. Despite the bearcat's bloodthirsty nature, it\
-  \ is remarkably clever (for an animal) and often stalks prey for some time before\
-  \ striking.  It often preys on large animals slowed by illness, injury, or age.\
-  \ It never shies away from a fight, however, no matter how large its opponent. Society:\
-  \ Thankfully, bearcats live in forested hills and mountains, usually far from civilization.\
-  \ During particularly harsh winters, however, bearcats have been known to come down\
-  \ to lower altitudes and find food in or near settled areas. |"
+normal_text: 'Bearcat ''Grizlion'' (1d4 (2)): Init +6; atk bite melee +3 (1d16) and
+  2 x claws melee +3 (1d8); AC 13; HD 9D7 hp 36 each; MV 8'' ; 1d20+1d14; SV Fort
+  +0, Ref +1, Will +0'
+description_output: 'Description: Also called the grizlion, this fearsome predator
+  is actually neither bear nor cat, but rather a giant mutation of the wolverine.  If
+  anything its ferocity has increased with size.  The griozlion is fully 3 meters
+  from nose to tail and over 1.5 meters tall at the shouldder.  Its fur is black and
+  dark brown, often with dark yellowish coloration around the face or haunches.  It
+  has vicious claws, and its mouth of razor-sharp teeth is usually twisted in a snarling
+  grimace.Combat: The bearcat is most often encountered hunting for food. Though it
+  prefers meat, bearcats consume almost anything when hungrysome have been cut open
+  to reveal cloth, wood, or even metal within. When it attacks, it attempts to lock
+  its jaws onto its prey and then disembowel with its great claws. A hit with the
+  bite attack grants two claw attacks, with a 1, 2, or 3 bonus based on the success
+  of the bite. Despite the bearcat''s bloodthirsty nature, it is remarkably clever
+  (for an animal) and often stalks prey for some time before striking.  It often preys
+  on large animals slowed by illness, injury, or age. It never shies away from a fight,
+  however, no matter how large its opponent. Society: Thankfully, bearcats live in
+  forested hills and mountains, usually far from civilization. During particularly
+  harsh winters, however, bearcats have been known to come down to lower altitudes
+  and find food in or near settled areas.'
+final_output: 'Bearcat ''Grizlion'' (1d4 (2)): Init +6; atk bite melee +3 (1d16) and
+  2 x claws melee +3 (1d8); AC 13; HD 9D7 hp 36 each; MV 8'' ; 1d20+1d14; SV Fort
+  +0, Ref +1, Will +0Enhanced Metabolism, Toxin ToleranceDescription: Also called
+  the grizlion, this fearsome predator is actually neither bear nor cat, but rather
+  a giant mutation of the wolverine.  If anything its ferocity has increased with
+  size.  The griozlion is fully 3 meters from nose to tail and over 1.5 meters tall
+  at the shouldder.  Its fur is black and dark brown, often with dark yellowish coloration
+  around the face or haunches.  It has vicious claws, and its mouth of razor-sharp
+  teeth is usually twisted in a snarling grimace.Combat: The bearcat is most often
+  encountered hunting for food. Though it prefers meat, bearcats consume almost anything
+  when hungrysome have been cut open to reveal cloth, wood, or even metal within.
+  When it attacks, it attempts to lock its jaws onto its prey and then disembowel
+  with its great claws. A hit with the bite attack grants two claw attacks, with a
+  1, 2, or 3 bonus based on the success of the bite. Despite the bearcat''s bloodthirsty
+  nature, it is remarkably clever (for an animal) and often stalks prey for some time
+  before striking.  It often preys on large animals slowed by illness, injury, or
+  age. It never shies away from a fight, however, no matter how large its opponent.
+  Society: Thankfully, bearcats live in forested hills and mountains, usually far
+  from civilization. During particularly harsh winters, however, bearcats have been
+  known to come down to lower altitudes and find food in or near settled areas.'
+players: 'Bearcat; ''Grizlion'';Description: Also called the grizlion, this fearsome
+  predator is actually neither bear nor cat, but rather a giant mutation of the wolverine.  If
+  anything its ferocity has increased with size.  The griozlion is fully 3 meters
+  from nose to tail and over 1.5 meters tall at the shouldder.  Its fur is black and
+  dark brown, often with dark yellowish coloration around the face or haunches.  It
+  has vicious claws, and its mouth of razor-sharp teeth is usually twisted in a snarling
+  grimace.Combat: The bearcat is most often encountered hunting for food. Though it
+  prefers meat, bearcats consume almost anything when hungrysome have been cut open
+  to reveal cloth, wood, or even metal within. When it attacks, it attempts to lock
+  its jaws onto its prey and then disembowel with its great claws. A hit with the
+  bite attack grants two claw attacks, with a 1, 2, or 3 bonus based on the success
+  of the bite. Despite the bearcat''s bloodthirsty nature, it is remarkably clever
+  (for an animal) and often stalks prey for some time before striking.  It often preys
+  on large animals slowed by illness, injury, or age. It never shies away from a fight,
+  however, no matter how large its opponent. Society: Thankfully, bearcats live in
+  forested hills and mountains, usually far from civilization. During particularly
+  harsh winters, however, bearcats have been known to come down to lower altitudes
+  and find food in or near settled areas. |'
 id: 71059
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -224,4 +223,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 758
+image_height: 908
 ---

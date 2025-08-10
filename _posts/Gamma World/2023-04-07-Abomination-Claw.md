@@ -1,16 +1,16 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Abomination Claw.png'
+image: /RPG/MCC-GW/images/Monster-Manual/Abomination Claw.png
 title: Abomination Claw
 creature_name_index: Abomination Claw
 notes: ''
-genericname: Yes
+genericname: true
 creature_name: Abomination Claw
 common_name: ''
 other_names: ''
 generic_name: Claws of the Abomination
 source: GW07 Module
 author: ''
-author_name: 'Bruce Nesmith'
+author_name: Bruce Nesmith
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -140,16 +140,16 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will +3
 fort_save: '0'
 ref_save: '0'
 will: '3'
-normal_text: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;\
-  \ HD 4D5 hp 12; MV 3' ; 1d20; SV Fort +0, Ref +0, Will +3"
+normal_text: 'Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;
+  HD 4D5 hp 12; MV 3'' ; 1d20; SV Fort +0, Ref +0, Will +3'
 description_output: 'Description: Large claws attached to tendrils that act as legs.Behavior:Can
   leap 2 meters in any direction each turn'
-final_output: "Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;\
-  \ HD 4D5 hp 12; MV 3' ; 1d20; SV Fort +0, Ref +0, Will +3Description: Large claws\
-  \ attached to tendrils that act as legs.Behavior:Can leap 2 meters in any direction\
-  \ each turn"
-players: "Abomination Claw; '';Description: Large claws attached to tendrils that\
-  \ act as legs.Behavior:Can leap 2 meters in any direction each turn|"
+final_output: 'Abomination Claw (1): Init +2; atk 2 x claws melee +1 (1d5); AC 17;
+  HD 4D5 hp 12; MV 3'' ; 1d20; SV Fort +0, Ref +0, Will +3Description: Large claws
+  attached to tendrils that act as legs.Behavior:Can leap 2 meters in any direction
+  each turn'
+players: 'Abomination Claw; '''';Description: Large claws attached to tendrils that
+  act as legs.Behavior:Can leap 2 meters in any direction each turn|'
 id: 71001
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -158,4 +158,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1024
+image_height: 640
 ---

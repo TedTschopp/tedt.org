@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Zeeth.png'
-title: Gamma Grass «Zeeth»
+image: /RPG/MCC-GW/images/Monster-Manual/Zeeth.png
+title: "Gamma Grass \xABZeeth\xBB"
 creature_name_index: Zeeth
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Gamma Grass
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -74,17 +74,17 @@ behavior: When one or more warm-blooded entities approach within 30 meters of th
   range impartially.
 repair_and_healing: ''
 new_description: ''
-combat: "Zeeth have a unique means of reproduction: they can sense the presence of\
-  \ warm-blooded creatures within 20 meters. When they sense one, they attempt to\
-  \ teleport their seeds into the creatures body. The zeeth must make a Willpower\
-  \ feat check, opposed by the character's Willpower Resistance Modifier. If successful,\
-  \ it has implanted one or more seeds. The character feels a sharp pain, but suffers\
-  \ no damage initially. Treat the seeds as a disease with a strength based on the\
-  \ zeeth's success with its Willpower feat check (so if the zeeth got a Good result,\
-  \ the seeds are Good strength). After the onset time, the character must make a\
-  \ Constitution feat check, modified by the strength of the seeds. If the character\
-  \ recovers, his body has rejected and destroyed the seeds. A victim that dies becomes\
-  \ host to a new cluster of zeeth, which sprout from the corpse."
+combat: 'Zeeth have a unique means of reproduction: they can sense the presence of
+  warm-blooded creatures within 20 meters. When they sense one, they attempt to teleport
+  their seeds into the creatures body. The zeeth must make a Willpower feat check,
+  opposed by the character''s Willpower Resistance Modifier. If successful, it has
+  implanted one or more seeds. The character feels a sharp pain, but suffers no damage
+  initially. Treat the seeds as a disease with a strength based on the zeeth''s success
+  with its Willpower feat check (so if the zeeth got a Good result, the seeds are
+  Good strength). After the onset time, the character must make a Constitution feat
+  check, modified by the strength of the seeds. If the character recovers, his body
+  has rejected and destroyed the seeds. A victim that dies becomes host to a new cluster
+  of zeeth, which sprout from the corpse.'
 society: Zeeth are usually found in clumps or clusters on open plains and clearings
   in temperate environments. They go to seed in summer, dying out in the autumn and
   winter, with new zeeth sprouting from their hosts in the spring.
@@ -97,8 +97,8 @@ monster_name: Zeeth 'Gamma Grass'
 number_appearing: 5d20 (52)
 number_appearing_single: '52'
 init: '-3'
-monster_name_xx_number_if_applicable_init_+-x: "Zeeth 'Gamma Grass' (5d20 (52)): Init\
-  \ -3"
+monster_name_xx_number_if_applicable_init_+-x: 'Zeeth ''Gamma Grass'' (5d20 (52)):
+  Init -3'
 ps_-_c: '0'
 dx_-_c: '0'
 cn_-_c: '2'
@@ -164,88 +164,87 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort -3, Ref -3, Will +0
 fort_save: '-3'
 ref_save: '-3'
 will: '0'
-normal_text: "Zeeth 'Gamma Grass' (5d20 (52)): Init -3; atk seed melee -3 (1d3-3);\
-  \ AC 10; HD 1D5 hp 3 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will +0"
-description_output: "Description: Zeeth are blades of purple grass that grow up to\
-  \ a meter tall. Mature zeeth have tassles like other grasses.Behavior:When one or\
-  \ more warm-blooded entities approach within 30 meters of this grass, the individual\
-  \ stalks will each try to teleport 25% of their seeds into the bodies of those that\
-  \ approached the grass.  Seeds that miss will drop to the ground dead.  Those that\
-  \ enter the body cause damage immediately and secrete dissolving juices that cause\
-  \ Progressive damage (+1d) per day for seven days.  If the victim is not dead, the\
-  \ seed will no longer be viable.  Damage from the Zeethh can not be healed until\
-  \ the seed has been removed.  If the host dies while infected, the seeds cause a\
-  \ Zeeth to sprout from the body within an hour and the blades grow tassles within\
-  \ three days.  Teleported seeds are replaced at a rate of one per day.  If there\
-  \ is more than one target in range, a field of Zeeth will attack everyone within\
-  \ range impartially.Combat: Zeeth have a unique means of reproduction: they can\
-  \ sense the presence of warm-blooded creatures within 20 meters. When they sense\
-  \ one, they attempt to teleport their seeds into the creatures body. The zeeth must\
-  \ make a Willpower feat check, opposed by the character's Willpower Resistance Modifier.\
-  \ If successful, it has implanted one or more seeds. The character feels a sharp\
-  \ pain, but suffers no damage initially. Treat the seeds as a disease with a strength\
-  \ based on the zeeth's success with its Willpower feat check (so if the zeeth got\
-  \ a Good result, the seeds are Good strength). After the onset time, the character\
-  \ must make a Constitution feat check, modified by the strength of the seeds. If\
-  \ the character recovers, his body has rejected and destroyed the seeds. A victim\
-  \ that dies becomes host to a new cluster of zeeth, which sprout from the corpse.Society:\
-  \ Zeeth are usually found in clumps or clusters on open plains and clearings in\
-  \ temperate environments. They go to seed in summer, dying out in the autumn and\
-  \ winter, with new zeeth sprouting from their hosts in the spring."
-final_output: "Zeeth 'Gamma Grass' (5d20 (52)): Init -3; atk seed melee -3 (1d3-3);\
-  \ AC 10; HD 1D5 hp 3 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will +0See BehaviorDescription:\
-  \ Zeeth are blades of purple grass that grow up to a meter tall. Mature zeeth have\
-  \ tassles like other grasses.Behavior:When one or more warm-blooded entities approach\
-  \ within 30 meters of this grass, the individual stalks will each try to teleport\
-  \ 25% of their seeds into the bodies of those that approached the grass.  Seeds\
-  \ that miss will drop to the ground dead.  Those that enter the body cause damage\
-  \ immediately and secrete dissolving juices that cause Progressive damage (+1d)\
-  \ per day for seven days.  If the victim is not dead, the seed will no longer be\
-  \ viable.  Damage from the Zeethh can not be healed until the seed has been removed.\
-  \  If the host dies while infected, the seeds cause a Zeeth to sprout from the body\
-  \ within an hour and the blades grow tassles within three days.  Teleported seeds\
-  \ are replaced at a rate of one per day.  If there is more than one target in range,\
-  \ a field of Zeeth will attack everyone within range impartially.Combat: Zeeth have\
-  \ a unique means of reproduction: they can sense the presence of warm-blooded creatures\
-  \ within 20 meters. When they sense one, they attempt to teleport their seeds into\
-  \ the creatures body. The zeeth must make a Willpower feat check, opposed by the\
-  \ character's Willpower Resistance Modifier. If successful, it has implanted one\
-  \ or more seeds. The character feels a sharp pain, but suffers no damage initially.\
-  \ Treat the seeds as a disease with a strength based on the zeeth's success with\
-  \ its Willpower feat check (so if the zeeth got a Good result, the seeds are Good\
-  \ strength). After the onset time, the character must make a Constitution feat check,\
-  \ modified by the strength of the seeds. If the character recovers, his body has\
-  \ rejected and destroyed the seeds. A victim that dies becomes host to a new cluster\
-  \ of zeeth, which sprout from the corpse.Society: Zeeth are usually found in clumps\
-  \ or clusters on open plains and clearings in temperate environments. They go to\
-  \ seed in summer, dying out in the autumn and winter, with new zeeth sprouting from\
-  \ their hosts in the spring."
-players: "Zeeth; 'Gamma Grass';Description: Zeeth are blades of purple grass that\
-  \ grow up to a meter tall. Mature zeeth have tassles like other grasses.Behavior:When\
-  \ one or more warm-blooded entities approach within 30 meters of this grass, the\
-  \ individual stalks will each try to teleport 25% of their seeds into the bodies\
-  \ of those that approached the grass.  Seeds that miss will drop to the ground dead.\
-  \  Those that enter the body cause damage immediately and secrete dissolving juices\
-  \ that cause Progressive damage (+1d) per day for seven days.  If the victim is\
-  \ not dead, the seed will no longer be viable.  Damage from the Zeethh can not be\
-  \ healed until the seed has been removed.  If the host dies while infected, the\
-  \ seeds cause a Zeeth to sprout from the body within an hour and the blades grow\
-  \ tassles within three days.  Teleported seeds are replaced at a rate of one per\
-  \ day.  If there is more than one target in range, a field of Zeeth will attack\
-  \ everyone within range impartially.Combat: Zeeth have a unique means of reproduction:\
-  \ they can sense the presence of warm-blooded creatures within 20 meters. When they\
-  \ sense one, they attempt to teleport their seeds into the creatures body. The zeeth\
-  \ must make a Willpower feat check, opposed by the character's Willpower Resistance\
-  \ Modifier. If successful, it has implanted one or more seeds. The character feels\
-  \ a sharp pain, but suffers no damage initially. Treat the seeds as a disease with\
-  \ a strength based on the zeeth's success with its Willpower feat check (so if the\
-  \ zeeth got a Good result, the seeds are Good strength). After the onset time, the\
-  \ character must make a Constitution feat check, modified by the strength of the\
-  \ seeds. If the character recovers, his body has rejected and destroyed the seeds.\
-  \ A victim that dies becomes host to a new cluster of zeeth, which sprout from the\
-  \ corpse.Society: Zeeth are usually found in clumps or clusters on open plains and\
-  \ clearings in temperate environments. They go to seed in summer, dying out in the\
-  \ autumn and winter, with new zeeth sprouting from their hosts in the spring.|"
+normal_text: 'Zeeth ''Gamma Grass'' (5d20 (52)): Init -3; atk seed melee -3 (1d3-3);
+  AC 10; HD 1D5 hp 3 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will +0'
+description_output: 'Description: Zeeth are blades of purple grass that grow up to
+  a meter tall. Mature zeeth have tassles like other grasses.Behavior:When one or
+  more warm-blooded entities approach within 30 meters of this grass, the individual
+  stalks will each try to teleport 25% of their seeds into the bodies of those that
+  approached the grass.  Seeds that miss will drop to the ground dead.  Those that
+  enter the body cause damage immediately and secrete dissolving juices that cause
+  Progressive damage (+1d) per day for seven days.  If the victim is not dead, the
+  seed will no longer be viable.  Damage from the Zeethh can not be healed until the
+  seed has been removed.  If the host dies while infected, the seeds cause a Zeeth
+  to sprout from the body within an hour and the blades grow tassles within three
+  days.  Teleported seeds are replaced at a rate of one per day.  If there is more
+  than one target in range, a field of Zeeth will attack everyone within range impartially.Combat:
+  Zeeth have a unique means of reproduction: they can sense the presence of warm-blooded
+  creatures within 20 meters. When they sense one, they attempt to teleport their
+  seeds into the creatures body. The zeeth must make a Willpower feat check, opposed
+  by the character''s Willpower Resistance Modifier. If successful, it has implanted
+  one or more seeds. The character feels a sharp pain, but suffers no damage initially.
+  Treat the seeds as a disease with a strength based on the zeeth''s success with
+  its Willpower feat check (so if the zeeth got a Good result, the seeds are Good
+  strength). After the onset time, the character must make a Constitution feat check,
+  modified by the strength of the seeds. If the character recovers, his body has rejected
+  and destroyed the seeds. A victim that dies becomes host to a new cluster of zeeth,
+  which sprout from the corpse.Society: Zeeth are usually found in clumps or clusters
+  on open plains and clearings in temperate environments. They go to seed in summer,
+  dying out in the autumn and winter, with new zeeth sprouting from their hosts in
+  the spring.'
+final_output: 'Zeeth ''Gamma Grass'' (5d20 (52)): Init -3; atk seed melee -3 (1d3-3);
+  AC 10; HD 1D5 hp 3 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will +0See BehaviorDescription:
+  Zeeth are blades of purple grass that grow up to a meter tall. Mature zeeth have
+  tassles like other grasses.Behavior:When one or more warm-blooded entities approach
+  within 30 meters of this grass, the individual stalks will each try to teleport
+  25% of their seeds into the bodies of those that approached the grass.  Seeds that
+  miss will drop to the ground dead.  Those that enter the body cause damage immediately
+  and secrete dissolving juices that cause Progressive damage (+1d) per day for seven
+  days.  If the victim is not dead, the seed will no longer be viable.  Damage from
+  the Zeethh can not be healed until the seed has been removed.  If the host dies
+  while infected, the seeds cause a Zeeth to sprout from the body within an hour and
+  the blades grow tassles within three days.  Teleported seeds are replaced at a rate
+  of one per day.  If there is more than one target in range, a field of Zeeth will
+  attack everyone within range impartially.Combat: Zeeth have a unique means of reproduction:
+  they can sense the presence of warm-blooded creatures within 20 meters. When they
+  sense one, they attempt to teleport their seeds into the creatures body. The zeeth
+  must make a Willpower feat check, opposed by the character''s Willpower Resistance
+  Modifier. If successful, it has implanted one or more seeds. The character feels
+  a sharp pain, but suffers no damage initially. Treat the seeds as a disease with
+  a strength based on the zeeth''s success with its Willpower feat check (so if the
+  zeeth got a Good result, the seeds are Good strength). After the onset time, the
+  character must make a Constitution feat check, modified by the strength of the seeds.
+  If the character recovers, his body has rejected and destroyed the seeds. A victim
+  that dies becomes host to a new cluster of zeeth, which sprout from the corpse.Society:
+  Zeeth are usually found in clumps or clusters on open plains and clearings in temperate
+  environments. They go to seed in summer, dying out in the autumn and winter, with
+  new zeeth sprouting from their hosts in the spring.'
+players: 'Zeeth; ''Gamma Grass'';Description: Zeeth are blades of purple grass that
+  grow up to a meter tall. Mature zeeth have tassles like other grasses.Behavior:When
+  one or more warm-blooded entities approach within 30 meters of this grass, the individual
+  stalks will each try to teleport 25% of their seeds into the bodies of those that
+  approached the grass.  Seeds that miss will drop to the ground dead.  Those that
+  enter the body cause damage immediately and secrete dissolving juices that cause
+  Progressive damage (+1d) per day for seven days.  If the victim is not dead, the
+  seed will no longer be viable.  Damage from the Zeethh can not be healed until the
+  seed has been removed.  If the host dies while infected, the seeds cause a Zeeth
+  to sprout from the body within an hour and the blades grow tassles within three
+  days.  Teleported seeds are replaced at a rate of one per day.  If there is more
+  than one target in range, a field of Zeeth will attack everyone within range impartially.Combat:
+  Zeeth have a unique means of reproduction: they can sense the presence of warm-blooded
+  creatures within 20 meters. When they sense one, they attempt to teleport their
+  seeds into the creatures body. The zeeth must make a Willpower feat check, opposed
+  by the character''s Willpower Resistance Modifier. If successful, it has implanted
+  one or more seeds. The character feels a sharp pain, but suffers no damage initially.
+  Treat the seeds as a disease with a strength based on the zeeth''s success with
+  its Willpower feat check (so if the zeeth got a Good result, the seeds are Good
+  strength). After the onset time, the character must make a Constitution feat check,
+  modified by the strength of the seeds. If the character recovers, his body has rejected
+  and destroyed the seeds. A victim that dies becomes host to a new cluster of zeeth,
+  which sprout from the corpse.Society: Zeeth are usually found in clumps or clusters
+  on open plains and clearings in temperate environments. They go to seed in summer,
+  dying out in the autumn and winter, with new zeeth sprouting from their hosts in
+  the spring.|'
 id: 71712
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -254,4 +253,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 954
+image_height: 626
 ---

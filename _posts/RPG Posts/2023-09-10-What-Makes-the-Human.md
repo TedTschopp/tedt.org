@@ -1,69 +1,58 @@
 ---
 layout: post
-
 title: What Makes a Human?
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: This draft on TTRPG Characters delves into the complex and multi-faceted
-    nature of human identity, exploring it through the lenses of biology, philosophy,
-    and culture. The author argues that being human is not solely defined by our biological
-    makeup but is a combination of our cognitive abilities, emotional experiences,
-    and social interactions.
-source:
-source-url:
-call-to-action:
-
+  nature of human identity, exploring it through the lenses of biology, philosophy,
+  and culture. The author argues that being human is not solely defined by our biological
+  makeup but is a combination of our cognitive abilities, emotional experiences, and
+  social interactions.
+source: null
+source-url: null
+call-to-action: null
 date: 2023-07-22 18:51:10-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: This draft on TTRPG Characters delves into the complex and multi-faceted
-    nature of human identity, exploring it through the lenses of biology, philosophy,
-    and culture. The author argues that being human is not solely defined by our biological
-    makeup but is a combination of our cognitive abilities, emotional experiences,
-    and social interactions.
-seo-description:
-
+  nature of human identity, exploring it through the lenses of biology, philosophy,
+  and culture. The author argues that being human is not solely defined by our biological
+  makeup but is a combination of our cognitive abilities, emotional experiences, and
+  social interactions.
+seo-description: null
 categories:
 - Role Playing Games
-- "The Märchen Engine"
-tags:
-keywords:
-
+- "The M\xE4rchen Engine"
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-09/Ted_Tschopp_an_artist_carving_a_statue_of_a_man_out_of_a_giant__69369890-053d-4fb9-9da5-bbc40c12675e.webp
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-artist: Ted Tschopp using Midjourney
 image-artist-URL: https://tedt.org/
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: true
-order:
-
+order: null
 redirect_from:
-  - /2023/07/22/What-Makes-the-Human.html
-  - /2023/07/What-Makes-the-Human.html
-  - /2023/What-Makes-the-Human.html
-  - /What-Makes-the-Human.html
-
-
+- /2023/07/22/What-Makes-the-Human.html
+- /2023/07/What-Makes-the-Human.html
+- /2023/What-Makes-the-Human.html
+- /What-Makes-the-Human.html
+image_width: 1584
+image_height: 752
 ---
 ## Character Sheet - Work in Progress
 

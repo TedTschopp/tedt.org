@@ -1,67 +1,67 @@
 ---
 layout: post
-
-title: "Bridging the Uncanny"
-subtitle: "Navigating the Valley of AI Voice Technology"
-quote: "The question isn't just how realistic AI can sound, but how we preserve and prioritize what makes us distinctly human in a world of near-perfect imitation."
-excerpt: "This article explores the uncanny valley of AI-generated voice—where advanced technologies like GPT-4.5 blur the line between digital and human. Through a conversation with 'Maya,' a nearly human AI voice, you'll reflect on how realism in AI challenges our assumptions about authenticity, trust, and connection. As enterprises adopt voice AI and generative models, the responsibility extends beyond implementation to thoughtful stewardship."
-source: "Original Content"
-source-url: ""
-call-to-action: "Reflect on how you can preserve human authenticity while embracing AI advancement"
-
+title: Bridging the Uncanny
+subtitle: Navigating the Valley of AI Voice Technology
+quote: The question isn't just how realistic AI can sound, but how we preserve and
+  prioritize what makes us distinctly human in a world of near-perfect imitation.
+excerpt: "This article explores the uncanny valley of AI-generated voice\u2014where\
+  \ advanced technologies like GPT-4.5 blur the line between digital and human. Through\
+  \ a conversation with 'Maya,' a nearly human AI voice, you'll reflect on how realism\
+  \ in AI challenges our assumptions about authenticity, trust, and connection. As\
+  \ enterprises adopt voice AI and generative models, the responsibility extends beyond\
+  \ implementation to thoughtful stewardship."
+source: Original Content
+source-url: ''
+call-to-action: Reflect on how you can preserve human authenticity while embracing
+  AI advancement
 date: 2025-03-09
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - The uncanny valley occurs when AI voices become nearly perfect but not quite human
-    - GPT-4.5 brings us closer to indistinguishable human-AI interactions
-    - Voices in the ambiguous middle ground can trigger discomfort, confusion, or mistrust
-    - Our humanity lies in flawed, imperfect, beautifully genuine connection
-    - AI might amplify rather than replace our human depth and empathy
-
-description: "An exploration of the uncanny valley in AI voice technology, examining how nearly human AI voices challenge our understanding of authenticity and what makes us uniquely human in an age of advanced artificial intelligence."
-
-seo-description: "Explore the uncanny valley of AI voice technology. Learn how nearly human AI voices challenge authenticity and what preserves our unique humanity."
-
-categories: 
-    - Artificial Intelligence
-    - Philosophy
-
-tags: 
-    - uncanny valley
-    - AI voice technology
-    - GPT-4.5
-    - human authenticity
-    - voice AI
-
-keywords: uncanny valley AI voice, GPT-4.5 voice technology, AI human interaction, voice AI authenticity, artificial intelligence humanity, AI conversation
-
+- The uncanny valley occurs when AI voices become nearly perfect but not quite human
+- GPT-4.5 brings us closer to indistinguishable human-AI interactions
+- Voices in the ambiguous middle ground can trigger discomfort, confusion, or mistrust
+- Our humanity lies in flawed, imperfect, beautifully genuine connection
+- AI might amplify rather than replace our human depth and empathy
+description: An exploration of the uncanny valley in AI voice technology, examining
+  how nearly human AI voices challenge our understanding of authenticity and what
+  makes us uniquely human in an age of advanced artificial intelligence.
+seo-description: Explore the uncanny valley of AI voice technology. Learn how nearly
+  human AI voices challenge authenticity and what preserves our unique humanity.
+categories:
+- Artificial Intelligence
+- Philosophy
+tags:
+- uncanny valley
+- AI voice technology
+- GPT-4.5
+- human authenticity
+- voice AI
+keywords: uncanny valley AI voice, GPT-4.5 voice technology, AI human interaction,
+  voice AI authenticity, artificial intelligence humanity, AI conversation
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Bridging-the-Uncanny.webp
-image-alt: "Visual representation of the uncanny valley between human and AI voices"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-
-mastodon-post-id: 
-
+image-alt: Visual representation of the uncanny valley between human and AI voices
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: ''
+image-title: ''
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 **Bottom Line Up Front:**_ _This article explores the uncanny valley of AI-generated voice—where advanced technologies like GPT-4.5 blur the line between digital and human. Through a conversation with “Maya,” a nearly human AI voice, you'll reflect on how realism in AI challenges our assumptions about authenticity, trust, and connection. As enterprises adopt voice AI and generative models, the responsibility extends beyond implementation to thoughtful stewardship. The question isn’t just how realistic AI can sound, but how we preserve and prioritize what makes us distinctly human in a world of near-perfect imitation._
 
 Voices surround you daily. They echo through hallways, resonate in conference rooms, and whisper from your devices, guiding and shaping your understanding of the world. But what happens when those voices become just a little too real—so close to human, yet distinctly not?

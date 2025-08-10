@@ -1,69 +1,65 @@
 ---
 layout: post
-
-title: "The Human Edge"
-subtitle: "Navigating the Promise, Peril, and Potential of AI in a Changing World"
-quote: "The question is not whether AI changes what we do, but how you adapt to its influence."
-excerpt: "AI reshapes industries from automated factories to healthcare and beyond, compelling us to reconsider the nature of work, human interaction, and technological advancement."
-source: "Original Content"
-source-url: ""
-call-to-action: "Explore how AI can empower your future."
-
+title: The Human Edge
+subtitle: Navigating the Promise, Peril, and Potential of AI in a Changing World
+quote: The question is not whether AI changes what we do, but how you adapt to its
+  influence.
+excerpt: AI reshapes industries from automated factories to healthcare and beyond,
+  compelling us to reconsider the nature of work, human interaction, and technological
+  advancement.
+source: Original Content
+source-url: ''
+call-to-action: Explore how AI can empower your future.
 date: 2025-03-16 15:56:22
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - "Factories without human workers are no longer hypothetical—AI runs Xiaomi's Changping facility."
-    - "AI nurses like Ana ease hospital staffing pressures but spark debates on empathy and care."
-    - "Brain-computer interfaces restore independence, merging humanity with advanced technology."
-    - "AI coding assistants at JPMorgan Chase boost software engineers' productivity by 20%."
-    - "Niantic Spatial leverages AI and GIS to create a detailed geospatial model of Earth."
-
-description: "Exploring the transformative impact of artificial intelligence on industries, employment, healthcare, and the human experience."
-
-seo-description: "Discover how AI-driven automation, healthcare innovation, brain-computer interfaces, and productivity tools redefine our future."
-
-categories: 
-    - "Computers"
-    - "Science"
-    - "Opinion"
-    - "Personal Writing"
-    - "Philosophy"
-    - "Artificial Intelligence"
-
-
+- "Factories without human workers are no longer hypothetical\u2014AI runs Xiaomi's\
+  \ Changping facility."
+- AI nurses like Ana ease hospital staffing pressures but spark debates on empathy
+  and care.
+- Brain-computer interfaces restore independence, merging humanity with advanced technology.
+- AI coding assistants at JPMorgan Chase boost software engineers' productivity by
+  20%.
+- Niantic Spatial leverages AI and GIS to create a detailed geospatial model of Earth.
+description: Exploring the transformative impact of artificial intelligence on industries,
+  employment, healthcare, and the human experience.
+seo-description: Discover how AI-driven automation, healthcare innovation, brain-computer
+  interfaces, and productivity tools redefine our future.
+categories:
+- Computers
+- Science
+- Opinion
+- Personal Writing
+- Philosophy
+- Artificial Intelligence
 tags: AI, Automation, Healthcare, Employment, Innovation, Technology
 keywords: AI, employment, healthcare, artificial intelligence, innovation, automation
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: "/img/2025-03/A-Helping-Hand.png"
-image-alt: "A Digital Hand and a human hand, holding a map of the world"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "A Helping Hand"
-image-description: "A Digital Hand and a human hand, holding a map of the world"
-image-title: "A Helping Hand"
-
+  latitude: 34.147
+  longitude: -117.9709
+image: /img/2025-03/A-Helping-Hand.png
+image-alt: A Digital Hand and a human hand, holding a map of the world
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: A Helping Hand
+image-description: A Digital Hand and a human hand, holding a map of the world
+image-title: A Helping Hand
 redirect_from:
-  - /computers/science/opinion/personal%20writing/philosophy/The-Human-Edge
-
+- /computers/science/opinion/personal%20writing/philosophy/The-Human-Edge
 mastodon-post-id: 114174613806302241
-
+image_width: 1456
+image_height: 816
 ---
-
 In the quiet stillness of morning, as the sun casts its gentle glow over Southern California, you find yourselves at the cusp of a new era. The world around you is shifting, reshaped by the relentless march of artificial intelligence. From the bustling factories of China to the serene halls of hospitals, AI's touch is both profound and pervasive.
 
 Imagine, for a moment, a factory floor bathed in the soft hum of machinery, where not a single human footstep echoes. This is the reality in Changping, where [Xiaomi's fully automated, AI-driven facility](https://www.news.com.au/finance/business/manufacturing/chinese-companys-dark-factory-will-no-human-workers-soon-be-the-norm/news-story/9468c5bc380108deba4e55a95d6c28d4) operates tirelessly, crafting smartphones with precision and speed. It's a testament to human ingenuity, yet it raises a poignant question: What becomes of the human hands that once toiled here? The workers at the previous factories wanted these jobs because they were much higher paying then the others that were available to them.  This overall presents a difficult question, about the future of employment and the delicate balance between innovation and livelihood.

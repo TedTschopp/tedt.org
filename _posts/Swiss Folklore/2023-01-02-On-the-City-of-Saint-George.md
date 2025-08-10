@@ -1,35 +1,30 @@
 ---
 layout: post
-
 title: On the Mountain of Saint George
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: Wodan, the god of the winds, is also the god of the creatures of the night.
-    In Christian times, St. George, the patron Saint of knights and rich lords, often
-    took his place.
-source:
-source-url:
-call-to-action:
-
+  In Christian times, St. George, the patron Saint of knights and rich lords, often
+  took his place.
+source: null
+source-url: null
+call-to-action: null
 date: 2023-01-02 09:26:36-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: On the Mountain of Saint George, discover a rich tapestry of legends
-    weaving together Wodan, the god of winds, and St. George, the patron Saint of
-    knights. Explore ancient cultural sites, immeasurable treasures, and hidden secrets
-    within the mountain. Witness tales of fiery dragons, brave knights, restless spirits,
-    and the intriguing connection between ancient gods, rituals, and natural treasures,
-    in a region that bridges Germany, Switzerland, and the old Habsburg empire.
-seo-description:
-
+  weaving together Wodan, the god of winds, and St. George, the patron Saint of knights.
+  Explore ancient cultural sites, immeasurable treasures, and hidden secrets within
+  the mountain. Witness tales of fiery dragons, brave knights, restless spirits, and
+  the intriguing connection between ancient gods, rituals, and natural treasures,
+  in a region that bridges Germany, Switzerland, and the old Habsburg empire.
+seo-description: null
 categories:
 - Folklore
 tags:
@@ -39,39 +34,33 @@ tags:
 - Venetian
 - Treasure
 - Men in Black
-keywords:
-
-
-
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-01/merian-switzerland-stein-am-rhein.webp
 image-alt: Birdeye view of Stein am Rhein, Lake Constance between Germany and Switzerland
-    with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
-    of Matthaeus Merian.
-image-artist:
-image-artist-URL:
-image-credits:
+  with the Castle Hohenklingen in background. Copper engraving from Theatrum Helvetiae
+  of Matthaeus Merian.
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://www.vintage-maps.com/en/antique-maps/europe/switzerland/merian-switzerland-stein-am-rhein-1645::158
-image-credits-artist: Matthäus Merian (*1593 - †1650)
-image-credits-artist-URL:
-image-credits-title: Stein am Rhein – Stenium ad Rhenum
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
+image-credits-artist: "Matth\xE4us Merian (*1593 - \u20201650)"
+image-credits-artist-URL: null
+image-credits-title: "Stein am Rhein \u2013 Stenium ad Rhenum"
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 1200
+image_height: 728
 ---
-
 > <ins>Legends of the Canton St. Gallen</ins>
 > 
 > by Jakob Kuoni

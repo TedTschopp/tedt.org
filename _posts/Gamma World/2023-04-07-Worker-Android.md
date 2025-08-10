@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Android.png
-title: Worker «Android»
+title: "Worker \xABAndroid\xBB"
 creature_name_index: Android
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth Worker
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-author_name: 'James M. Ward'
+author_name: James M. Ward
 url: ''
 avatar: ''
 mcc_race: 'PSH: Rover'
@@ -77,14 +77,15 @@ monster_name: Android 'Worker'
 number_appearing: 2d4 (5)
 number_appearing_single: '5'
 init: '+3'
-monster_name_xx_number_if_applicable_init_+-x: "Android 'Worker' (2d4 (5)): Init +3"
+monster_name_xx_number_if_applicable_init_+-x: 'Android ''Worker'' (2d4 (5)): Init
+  +3'
 ps_-_c: '18'
 dx_-_c: '10'
 cn_-_c: '18'
 ms_-_c: '10'
 ch_-_c: '8'
 in_-_c: '8'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '0'
 plus_to_range_from_level: '3'
 plus_to_range: '3'
@@ -143,8 +144,8 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +3, Ref +0, Will +0
 fort_save: '3'
 ref_save: '0'
 will: '0'
-normal_text: "Android 'Worker' (2d4 (5)): Init +3; atk weapon melee +5 (1d3+3); AC\
-  \ 12; HD 6D6 hp 21 each; MV 30' ; 1d20; SV Fort +3, Ref +0, Will +0"
+normal_text: 'Android ''Worker'' (2d4 (5)): Init +3; atk weapon melee +5 (1d3+3);
+  AC 12; HD 6D6 hp 21 each; MV 30'' ; 1d20; SV Fort +3, Ref +0, Will +0'
 description_output: 'Description: Man-made beings with red hued skin and blank stares.Behavior:They
   generally consider humans to be their enemies, and will fight to the death.  When
   an android dies they will dissolve into a pool of red protoplasm.Combat: Worker
@@ -152,22 +153,22 @@ description_output: 'Description: Man-made beings with red hued skin and blank s
   orders from first Thinkers and then warriors in the event of combat situations.  They
   will selflessly sacrificed themselves for the good of the mission or cause.Society:
   Androids do not have a society.  They serve whomever created them.'
-final_output: "Android 'Worker' (2d4 (5)): Init +3; atk weapon melee +5 (1d3+3); AC\
-  \ 12; HD 6D6 hp 21 each; MV 30' ; 1d20; SV Fort +3, Ref +0, Will +0NoneDescription:\
-  \ Man-made beings with red hued skin and blank stares.Behavior:They generally consider\
-  \ humans to be their enemies, and will fight to the death.  When an android dies\
-  \ they will dissolve into a pool of red protoplasm.Combat: Worker Androids are the\
-  \ manual laborers the Ancient Ones deployed.  They receive their orders from first\
-  \ Thinkers and then warriors in the event of combat situations.  They will selflessly\
-  \ sacrificed themselves for the good of the mission or cause.Society: Androids do\
-  \ not have a society.  They serve whomever created them."
-players: "Android; 'Worker';Description: Man-made beings with red hued skin and blank\
-  \ stares.Behavior:They generally consider humans to be their enemies, and will fight\
-  \ to the death.  When an android dies they will dissolve into a pool of red protoplasm.Combat:\
-  \ Worker Androids are the manual laborers the Ancient Ones deployed.  They receive\
-  \ their orders from first Thinkers and then warriors in the event of combat situations.\
-  \  They will selflessly sacrificed themselves for the good of the mission or cause.Society:\
-  \ Androids do not have a society.  They serve whomever created them.|"
+final_output: 'Android ''Worker'' (2d4 (5)): Init +3; atk weapon melee +5 (1d3+3);
+  AC 12; HD 6D6 hp 21 each; MV 30'' ; 1d20; SV Fort +3, Ref +0, Will +0NoneDescription:
+  Man-made beings with red hued skin and blank stares.Behavior:They generally consider
+  humans to be their enemies, and will fight to the death.  When an android dies they
+  will dissolve into a pool of red protoplasm.Combat: Worker Androids are the manual
+  laborers the Ancient Ones deployed.  They receive their orders from first Thinkers
+  and then warriors in the event of combat situations.  They will selflessly sacrificed
+  themselves for the good of the mission or cause.Society: Androids do not have a
+  society.  They serve whomever created them.'
+players: 'Android; ''Worker'';Description: Man-made beings with red hued skin and
+  blank stares.Behavior:They generally consider humans to be their enemies, and will
+  fight to the death.  When an android dies they will dissolve into a pool of red
+  protoplasm.Combat: Worker Androids are the manual laborers the Ancient Ones deployed.  They
+  receive their orders from first Thinkers and then warriors in the event of combat
+  situations.  They will selflessly sacrificed themselves for the good of the mission
+  or cause.Society: Androids do not have a society.  They serve whomever created them.|'
 id: 71013
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -176,4 +177,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 838
+image_height: 1522
 ---

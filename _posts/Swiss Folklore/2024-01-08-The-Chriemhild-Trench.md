@@ -1,31 +1,28 @@
 ---
-
 layout: post
-
 title: The Chriemhild Trench
 subtitle: A Swiss Legend of Magic and Retribution
-quote: "A tale of envy, magic, and redemption, set by the Türlersee."
-excerpt: A wandering scholar, having learned sorcery in Salamanca, traveled the world with the devil's aid.
-source:  
-source-url:  
-
-call-to-action: Discover the legendary tale of the Chriemhild Trench, a story of magic, envy, and divine intervention.
-
+quote: "A tale of envy, magic, and redemption, set by the T\xFCrlersee."
+excerpt: A wandering scholar, having learned sorcery in Salamanca, traveled the world
+  with the devil's aid.
+source: null
+source-url: null
+call-to-action: Discover the legendary tale of the Chriemhild Trench, a story of magic,
+  envy, and divine intervention.
 date: 2024-01-08 08:18:51
 update: 2024-01-08 08:18:51
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
 bullets:
 - A wandering scholar versed in magic from Salamanca
 - A vengeful woman named Chriemhild
 - Divine intervention by a holy pilgrim
-
-description: The Chriemhild Trench is a Swiss legend about dark magic, envy, and a miraculous twist of fate by the Türlersee.
-seo-description: Explore the Swiss legend of The Chriemhild Trench, a tale of dark magic, envy, and redemption by the Türlersee.
-
+description: "The Chriemhild Trench is a Swiss legend about dark magic, envy, and\
+  \ a miraculous twist of fate by the T\xFCrlersee."
+seo-description: "Explore the Swiss legend of The Chriemhild Trench, a tale of dark\
+  \ magic, envy, and redemption by the T\xFCrlersee."
 categories:
 - Folklore
 tags:
@@ -33,43 +30,37 @@ tags:
 - Magic
 - Envy
 - Divine Intervention
-
-keywords: Chriemhild Trench, Swiss folklore, magic, envy, Türlersee
-
+keywords: "Chriemhild Trench, Swiss folklore, magic, envy, T\xFCrlersee"
 location:
-    address:
-    city: Zurich
-    country: Switzerland
-    name: Türlersee
-    on-map: yes
-    place-names: Chriemhild Trench, Türlersee
-    state:
-    zip:
+  address: null
+  city: Zurich
+  country: Switzerland
+  name: "T\xFCrlersee"
+  on-map: true
+  place-names: "Chriemhild Trench, T\xFCrlersee"
+  state: null
+  zip: null
 coordinates:
-    latitude: 47.2849
-    longitude: 8.4634
-
+  latitude: 47.2849
+  longitude: 8.4634
 image: img/Swiss/Turlersee-Lake.webp
-image-alt: An image of Türlersee-Lake taken by someone from shore.
+image-alt: "An image of Tu\u0308rlersee-Lake taken by someone from shore."
 image-artist: Leandros at German Wikipedia
-image-artist-URL: https://commons.wikimedia.org/wiki/File:Türlersee1.webp
-image-credits:
-image-credits-URL:
-image-credits-artist: 
-image-credits-artist-URL:
-image-credits-title: 
-image-description:
-image-title:
-
+image-artist-URL: "https://commons.wikimedia.org/wiki/File:T\xFCrlersee1.webp"
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
 monster-or-magical-or-religious-ideas: Magical transformation, divine punishment
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 > <ins>Schweizerisches Sagenbuch. Nach mündlichen Überlieferungen, Chroniken und anderen gedruckten und handschriftlichen Quellen.</ins>
 > 
 > by C. Kohlrusch

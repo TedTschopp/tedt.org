@@ -1,61 +1,49 @@
 ---
 layout: post
-
 title: A Little Calendar App I'm building
-title-url:
+title-url: null
 subtitle: Crafting Time - Journey of Building a JavaScript Calendar
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-04-07 17:57:34+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
-description:
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
+description: null
+seo-description: null
 categories:
 - Computers
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: /img/2006-04/calendar.png
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 708
+image_height: 604
 ---
 The following code is a calendar application I’m building in JavaScript. It needs a couple rounds of refactoring (to get rid of document.writes and to make it more object friendly).  The next step will be to make it handle iCal files (which will be a trick).  This is posted for all to enjoy. See the link at the end of this document.
 

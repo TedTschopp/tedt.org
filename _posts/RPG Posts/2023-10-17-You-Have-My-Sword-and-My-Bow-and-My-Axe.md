@@ -1,67 +1,61 @@
 ---
 layout: post
-
-title: "The Comprehensive Guide to Weapon Mechanics in Tabletop RPGs"
-title-url: 
-subtitle: "From Melee to Cosmic: Understanding Weapon Attributes, Types, and Classifications"
-subtitle-url: 
-quote: "Your choice of weapon is more than a damage dealer; it's a narrative tool."
-excerpt: "This exhaustive guide covers every conceivable weapon property and classification from melee to cosmic weaponry. Whether you're a player or a game master, this is your go-to resource."
+title: The Comprehensive Guide to Weapon Mechanics in Tabletop RPGs
+title-url: null
+subtitle: 'From Melee to Cosmic: Understanding Weapon Attributes, Types, and Classifications'
+subtitle-url: null
+quote: Your choice of weapon is more than a damage dealer; it's a narrative tool.
+excerpt: This exhaustive guide covers every conceivable weapon property and classification
+  from melee to cosmic weaponry. Whether you're a player or a game master, this is
+  your go-to resource.
 source: Ted Tschopp's Blog
-source-url: 
-call-to-action: 
-
+source-url: null
+call-to-action: null
 date: 2023-10-17 20:20:08
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-  - "Weapon Properties"
-  - "Range vs. Melee Weapons"
-  - "Weapon Materials"
-  - "Damage Types"
-  - "Weapon Classifications"
-
-description: "A comprehensive guide to understanding weapon mechanics in the Märchen Engine, covering properties, materials, damage types, and classifications."
-seo-description: "Master weapon mechanics in the Märchen Engine with our exhaustive guide covering everything from properties to cosmic-level classifications."
-
+- Weapon Properties
+- Range vs. Melee Weapons
+- Weapon Materials
+- Damage Types
+- Weapon Classifications
+description: "A comprehensive guide to understanding weapon mechanics in the M\xE4\
+  rchen Engine, covering properties, materials, damage types, and classifications."
+seo-description: "Master weapon mechanics in the M\xE4rchen Engine with our exhaustive\
+  \ guide covering everything from properties to cosmic-level classifications."
 categories:
-  - Role Playing Games
-  - "The Märchen Engine"
+- Role Playing Games
+- "The M\xE4rchen Engine"
 tags:
-  - RPG
-  - Weapons
-  - Game Mechanics
+- RPG
+- Weapons
+- Game Mechanics
 keywords:
-  - Weapon Mechanics
-  - RPG Weapons
-  - Game Master Guide
-
+- Weapon Mechanics
+- RPG Weapons
+- Game Master Guide
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp
 image-alt: A blacksmith making fictional weapons.
-image-title: "Warcraft"
-image-description: "A blacksmith making fictional weapons."
+image-title: Warcraft
+image-description: A blacksmith making fictional weapons.
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-
-order:
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 # Introduction
 
 In the expansive universe of tabletop role-playing games, your choice of weapon is more than a mere instrument of destruction; it's a narrative tool, an extension of your character's personality, history, and aspirations. Whether it's a rustic blade handed down through generations or a state-of-the-art laser cannon with cosmic capabilities, each weapon carries its own set of features, mechanics, and lore that can profoundly impact how your character interacts with the game world. 

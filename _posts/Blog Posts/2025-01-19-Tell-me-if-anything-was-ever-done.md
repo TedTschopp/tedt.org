@@ -1,69 +1,67 @@
 ---
 layout: post
-
-title: "Tell Me if Anything was Ever Done"
-subtitle: "Lessons from Leonardo di Vinci"
-quote: "Tell me if anything was ever done… Tell me if ever I did a thing… Tell me if anything was ever made. — Leonardo da Vinci"
-excerpt: "Leonardo da Vinci’s notebooks show the struggle of a brilliant mind weighed down by perfectionism. His haunting question, 'What have I truly accomplished?', inspires creators today to share their ideas, embrace imperfection, and deliver value to the world."
-source: "Original Content"
-source-url: "https://tedt.org/blog/Tell-me-if-anything-was-ever-done"
-call-to-action: "Take inspiration from Leonardo: stop waiting for perfection—ship your ideas, share your work, and let your creations inspire others."
-
+title: Tell Me if Anything was Ever Done
+subtitle: Lessons from Leonardo di Vinci
+quote: "Tell me if anything was ever done\u2026 Tell me if ever I did a thing\u2026\
+  \ Tell me if anything was ever made. \u2014 Leonardo da Vinci"
+excerpt: "Leonardo da Vinci\u2019s notebooks show the struggle of a brilliant mind\
+  \ weighed down by perfectionism. His haunting question, 'What have I truly accomplished?',\
+  \ inspires creators today to share their ideas, embrace imperfection, and deliver\
+  \ value to the world."
+source: Original Content
+source-url: https://tedt.org/blog/Tell-me-if-anything-was-ever-done
+call-to-action: "Take inspiration from Leonardo: stop waiting for perfection\u2014\
+  ship your ideas, share your work, and let your creations inspire others."
 date: 2025-01-19 22:01:31
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - Leonardo’s struggle with unfinished projects and perfectionism.
-    - The significance of 'done' for creators.
-    - Lessons from Leonardo’s reflections on delivering value.
-    - Why sharing imperfect ideas can inspire others.
-    - How unfinished ideas shaped art, science, and engineering.
-
-description: "Explore how Leonardo da Vinci’s unfinished works and perfectionism offer timeless lessons for creators. Learn why shipping your ideas, even when imperfect, can inspire the world and leave a lasting legacy."
-
-seo-description: "Explore how Leonardo da Vinci’s unfinished works and perfectionism offer timeless lessons for creators. Learn why shipping your ideas, even when imperfect, can inspire the world and leave a lasting legacy."
-
-categories: 
-    - Communications
-    - Philosophy
-    - Personal Writing
-    - Science
-    - Artificial Intelligence
-
-
-tags: Leonardo da Vinci, creativity, perfectionism, shipping ideas, productivity tips, legacy, inspiration, unfinished work
-keywords: Leonardo da Vinci, creativity lessons, perfectionism, shipping ideas, creator mindset, unfinished projects, delivering value, inspire others, creative legacy
-
+- "Leonardo\u2019s struggle with unfinished projects and perfectionism."
+- The significance of 'done' for creators.
+- "Lessons from Leonardo\u2019s reflections on delivering value."
+- Why sharing imperfect ideas can inspire others.
+- How unfinished ideas shaped art, science, and engineering.
+description: "Explore how Leonardo da Vinci\u2019s unfinished works and perfectionism\
+  \ offer timeless lessons for creators. Learn why shipping your ideas, even when\
+  \ imperfect, can inspire the world and leave a lasting legacy."
+seo-description: "Explore how Leonardo da Vinci\u2019s unfinished works and perfectionism\
+  \ offer timeless lessons for creators. Learn why shipping your ideas, even when\
+  \ imperfect, can inspire the world and leave a lasting legacy."
+categories:
+- Communications
+- Philosophy
+- Personal Writing
+- Science
+- Artificial Intelligence
+tags: Leonardo da Vinci, creativity, perfectionism, shipping ideas, productivity tips,
+  legacy, inspiration, unfinished work
+keywords: Leonardo da Vinci, creativity lessons, perfectionism, shipping ideas, creator
+  mindset, unfinished projects, delivering value, inspire others, creative legacy
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: "/img/2025-01/Leo.png"
-image-alt: "Leonardo Quote"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Leonardo Quote"
-image-description: "An AI image of Leonardo Di Vinci"
-image-title: "Leonardo Quote"
-
+  latitude: 34.147
+  longitude: -117.9709
+image: /img/2025-01/Leo.png
+image-alt: Leonardo Quote
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: Leonardo Quote
+image-description: An AI image of Leonardo Di Vinci
+image-title: Leonardo Quote
 redirect_from:
-  - /communications/philosophy/personal%20writing/science/Tell-me-if-anything-was-ever-done
-
-
+- /communications/philosophy/personal%20writing/science/Tell-me-if-anything-was-ever-done
 mastodon-post-id: 113859271380786463
-
+image_width: 1456
+image_height: 816
 ---
-
 Many of Leonardo da Vinci's notebooks bear a haunting scrawl, written years later: *"Tell me if anything was ever done…"*, *"Tell me if ever I did a thing…"*, *"Tell me if anything was ever made…"* These pleas reveal his deep understanding of the need to bring ideas to fruition. Despite his genius, he seemed to sense that his legacy and his contribution to humanity were diminished because so much of his work remained unfinished.  
 
 Leonardo’s life brimmed with brilliance but was marked by incomplete works and abandoned projects. His imagination seemed boundless, yet he was painfully aware of the gap between what he envisioned and what he completed. His question cuts to a core human concern: *What have I truly accomplished?*

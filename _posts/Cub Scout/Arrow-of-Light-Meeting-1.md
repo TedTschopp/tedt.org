@@ -1,63 +1,54 @@
 ---
 layout: post
-
 title: Introduction to the Patrol Method and Scouting Skills
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: 'Help Arrow of Light Cub Scouts understand and experience key elements of Scouts BSA, including the Patrol Method, Scout Oath and Law, Scout sign, salute, handshake, and developing their own patrol identity and code of conduct.'
-
-source:
-source-url: 
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: Help Arrow of Light Cub Scouts understand and experience key elements of
+  Scouts BSA, including the Patrol Method, Scout Oath and Law, Scout sign, salute,
+  handshake, and developing their own patrol identity and code of conduct.
+source: null
+source-url: null
+call-to-action: null
 date: 2024-06-03 17:43:28-0700
-update: 
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
-description: 'Handout for Arrow of Light Meeting 1'
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: Handout for Arrow of Light Meeting 1
+seo-description: null
 categories:
 - Scouting
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2024-06/stargate.webp
 image-alt: Picture of the Stargate
-image-artist:
-image-artist-URL:
-image-credits:
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: null
 image-credits-artist: MGM
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: Stargate
-image-description: An image of a Stargate from the TV show 'Stargate'. The Stargate is a large, circular ring with intricate symbols around its edge, standing upright on a platform, with a glowing blue event horizon in the center.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-description: An image of a Stargate from the TV show 'Stargate'. The Stargate
+  is a large, circular ring with intricate symbols around its edge, standing upright
+  on a platform, with a glowing blue event horizon in the center.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1200
+image_height: 675
 ---
-
 ## Introduction to the Patrol Method and Scouting Skills
 
 ---

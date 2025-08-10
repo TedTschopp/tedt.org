@@ -1,67 +1,68 @@
 ---
 layout: post
-
-title: "AI in 2024: A Year in Review"
-subtitle: "Faster, Cheaper, More Accessible - But What's Next?"
-quote: "The rapid democratization of AI is reshaping the industry - but with great power comes great responsibility."
-excerpt: "AI in 2024 became faster, cheaper, and more accessible—bringing powerful tools to more people than ever. But uneven adoption, quality issues, and rising environmental costs remain. For SCE, the focus in 2025 must be on closing usage gaps, improving data quality, and turning AI potential into measurable value."
-source: "Original Content"
-source-url: ""
-call-to-action: "Share your thoughts on how AI advancements in 2024 have impacted your work and organization"
-
+title: 'AI in 2024: A Year in Review'
+subtitle: Faster, Cheaper, More Accessible - But What's Next?
+quote: The rapid democratization of AI is reshaping the industry - but with great
+  power comes great responsibility.
+excerpt: "AI in 2024 became faster, cheaper, and more accessible\u2014bringing powerful\
+  \ tools to more people than ever. But uneven adoption, quality issues, and rising\
+  \ environmental costs remain. For SCE, the focus in 2025 must be on closing usage\
+  \ gaps, improving data quality, and turning AI potential into measurable value."
+source: Original Content
+source-url: ''
+call-to-action: Share your thoughts on how AI advancements in 2024 have impacted your
+  work and organization
 date: 2025-01-02
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - 18 organizations achieved GPT-4-class model breakthroughs, signaling a new era of innovation
-    - LLM prices dropped dramatically—up to 27 times cheaper than previous years
-    - GPT-4-class models can now run on standard laptops, reducing infrastructure dependency
-    - Multimodal AI became mainstream, enabling interaction across text, images, audio, and video
-    - Context lengths expanded from 4K to 2M tokens, allowing vastly more complex inputs
-
-description: "A comprehensive review of AI advancements in 2024, including breakthrough models, dramatic cost reductions, accessibility improvements, and multimodal capabilities that are reshaping the industry landscape."
-
-seo-description: "Discover the major AI breakthroughs of 2024: GPT-4-class models, 27x price drops, laptop-runnable AI, multimodal capabilities, and what it means for 2025."
-
-categories: 
-    - Artificial Intelligence
-    - Science
-
-tags: 
-    - AI review
-    - technology trends
-    - GPT-4 class models
-    - multimodal AI
-    - AI accessibility
-
-keywords: AI 2024 review, GPT-4 class models, LLM price drops, multimodal AI, AI democratization, machine learning breakthroughs, artificial intelligence trends
-
+- 18 organizations achieved GPT-4-class model breakthroughs, signaling a new era of
+  innovation
+- "LLM prices dropped dramatically\u2014up to 27 times cheaper than previous years"
+- GPT-4-class models can now run on standard laptops, reducing infrastructure dependency
+- Multimodal AI became mainstream, enabling interaction across text, images, audio,
+  and video
+- Context lengths expanded from 4K to 2M tokens, allowing vastly more complex inputs
+description: A comprehensive review of AI advancements in 2024, including breakthrough
+  models, dramatic cost reductions, accessibility improvements, and multimodal capabilities
+  that are reshaping the industry landscape.
+seo-description: 'Discover the major AI breakthroughs of 2024: GPT-4-class models,
+  27x price drops, laptop-runnable AI, multimodal capabilities, and what it means
+  for 2025.'
+categories:
+- Artificial Intelligence
+- Science
+tags:
+- AI review
+- technology trends
+- GPT-4 class models
+- multimodal AI
+- AI accessibility
+keywords: AI 2024 review, GPT-4 class models, LLM price drops, multimodal AI, AI democratization,
+  machine learning breakthroughs, artificial intelligence trends
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/What-AI-in-2024-Means-for-Us-in-2025.webp
-image-alt: "Visual representation of AI breakthroughs in 2024"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-
-mastodon-post-id: 
-
+image-alt: Visual representation of AI breakthroughs in 2024
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: ''
+image-title: ''
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 ## Executive Summary:
 
 ### Big Picture

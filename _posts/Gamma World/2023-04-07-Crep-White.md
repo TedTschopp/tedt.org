@@ -1,5 +1,5 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Crep, Red.png'
+image: /RPG/MCC-GW/images/Monster-Manual/Crep, Red.png
 title: Crep,White
 creature_name_index: Crep,White
 notes: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW10 Module
 author: ''
-author_name: 'Kim Eastland'
+author_name: Kim Eastland
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -153,4 +153,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1018
+image_height: 912
 ---

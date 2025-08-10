@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Blaster Blossom.png
-title: Zappers «Blaster Blossom»
+title: "Zappers \xABBlaster Blossom\xBB"
 creature_name_index: Blaster Blossom
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-author_name: 'James M. Ward'
+author_name: James M. Ward
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -92,8 +92,8 @@ monster_name: Blaster Blossom 'Zappers'
 number_appearing: 1d10 (5)
 number_appearing_single: '5'
 init: '+9'
-monster_name_xx_number_if_applicable_init_+-x: "Blaster Blossom 'Zappers' (1d10 (5)):\
-  \ Init +9"
+monster_name_xx_number_if_applicable_init_+-x: 'Blaster Blossom ''Zappers'' (1d10
+  (5)): Init +9'
 ps_-_c: '7.5'
 dx_-_c: '7.5'
 cn_-_c: '11'
@@ -158,8 +158,8 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref -1, Will -3
 fort_save: '0'
 ref_save: '-1'
 will: '-3'
-normal_text: "Blaster Blossom 'Zappers' (1d10 (5)): Init +9; atk see description;\
-  \ AC 17; HD 26D5 hp 78 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref -1, Will -3"
+normal_text: 'Blaster Blossom ''Zappers'' (1d10 (5)): Init +9; atk see description;
+  AC 17; HD 26D5 hp 78 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref -1, Will -3'
 description_output: 'Description: The few expeditions that have made it to the lunar
   surface and back tell dreadful tales of the strange life forms that developed after
   the inhabitants of Tycho Center, the Moons only manned base, were slain by disease.
@@ -179,48 +179,47 @@ description_output: 'Description: The few expeditions that have made it to the l
   or,4) energy negation activated for 2-20 action turns, within a 15 m radius. If
   the spores ever kill the creature who touched the plant, they will grow in the dead
   body and become 1-3 new blaster blossoms within three days.'
-final_output: "Blaster Blossom 'Zappers' (1d10 (5)): Init +9; atk see description;\
-  \ AC 17; HD 26D5 hp 78 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref -1, Will -3(P)\
-  \ Spore cloudDescription: The few expeditions that have made it to the lunar surface\
-  \ and back tell dreadful tales of the strange life forms that developed after the\
-  \ inhabitants of Tycho Center, the Moons only manned base, were slain by disease.\
-  \ (See A World Gone Mad, DRAGONissue #86, and A Field Guide To Lunar Mutants,\"\
-  \ DRAGON issue #87.) One of the mutant plants now found at Tycho Center is the so-called\
-  \ blaster blossom, a mutant orchid.The blaster blossom is a reactive mutant, using\
-  \ its powers whenever it is touched. It has two attacks. The first is a spore cloud\
-  \ (treated as intensity 17 con- tact poison) that can slay victims with relative\
-  \ ease. This is fired whenever anything touches the blossom. The sec- ond attack\
-  \ is a actually a series of ran- dom energy attacks, fired whenever any metallic\
-  \ object (such as a robot) touches the plant. In a random manner, it will use one\
-  \ of the following attacks (roll1d4, one attack for one action turn):1) inflict\
-  \ 3d10 heat damage up to 3 m from the blossoms flower stalk, in the direction of\
-  \ the thing that touched it; 2) fire an electrical bolt doing 2d26 damage up to\
-  \ 10 m from the blossoms flower stalk, in the direction of the thing that touched\
-  \ it;3) fire an energy-draining bolt that instantly reduces all power cells within\
-  \ 5 m of the blossom to half energy; or,4) energy negation activated for 2-20 action\
-  \ turns, within a 15 m radius. If the spores ever kill the creature who touched\
-  \ the plant, they will grow in the dead body and become 1-3 new blaster blossoms\
-  \ within three days."
-players: "Blaster Blossom; 'Zappers';Description: The few expeditions that have made\
-  \ it to the lunar surface and back tell dreadful tales of the strange life forms\
-  \ that developed after the inhabitants of Tycho Center, the Moons only manned base,\
-  \ were slain by disease. (See A World Gone Mad, DRAGONissue #86, and A Field Guide\
-  \ To Lunar Mutants,\" DRAGON issue #87.) One of the mutant plants now found at Tycho\
-  \ Center is the so-called blaster blossom, a mutant orchid.The blaster blossom is\
-  \ a reactive mutant, using its powers whenever it is touched. It has two attacks.\
-  \ The first is a spore cloud (treated as intensity 17 con- tact poison) that can\
-  \ slay victims with relative ease. This is fired whenever anything touches the blossom.\
-  \ The sec- ond attack is a actually a series of ran- dom energy attacks, fired whenever\
-  \ any metallic object (such as a robot) touches the plant. In a random manner, it\
-  \ will use one of the following attacks (roll1d4, one attack for one action turn):1)\
-  \ inflict 3d10 heat damage up to 3 m from the blossoms flower stalk, in the direction\
-  \ of the thing that touched it; 2) fire an electrical bolt doing 2d26 damage up\
-  \ to 10 m from the blossoms flower stalk, in the direction of the thing that touched\
-  \ it;3) fire an energy-draining bolt that instantly reduces all power cells within\
-  \ 5 m of the blossom to half energy; or,4) energy negation activated for 2-20 action\
-  \ turns, within a 15 m radius. If the spores ever kill the creature who touched\
-  \ the plant, they will grow in the dead body and become 1-3 new blaster blossoms\
-  \ within three days.|"
+final_output: 'Blaster Blossom ''Zappers'' (1d10 (5)): Init +9; atk see description;
+  AC 17; HD 26D5 hp 78 each; NO MOVEMENT; 1d20+1d20; SV Fort +0, Ref -1, Will -3(P)
+  Spore cloudDescription: The few expeditions that have made it to the lunar surface
+  and back tell dreadful tales of the strange life forms that developed after the
+  inhabitants of Tycho Center, the Moons only manned base, were slain by disease.
+  (See A World Gone Mad, DRAGONissue #86, and A Field Guide To Lunar Mutants," DRAGON
+  issue #87.) One of the mutant plants now found at Tycho Center is the so-called
+  blaster blossom, a mutant orchid.The blaster blossom is a reactive mutant, using
+  its powers whenever it is touched. It has two attacks. The first is a spore cloud
+  (treated as intensity 17 con- tact poison) that can slay victims with relative ease.
+  This is fired whenever anything touches the blossom. The sec- ond attack is a actually
+  a series of ran- dom energy attacks, fired whenever any metallic object (such as
+  a robot) touches the plant. In a random manner, it will use one of the following
+  attacks (roll1d4, one attack for one action turn):1) inflict 3d10 heat damage up
+  to 3 m from the blossoms flower stalk, in the direction of the thing that touched
+  it; 2) fire an electrical bolt doing 2d26 damage up to 10 m from the blossoms flower
+  stalk, in the direction of the thing that touched it;3) fire an energy-draining
+  bolt that instantly reduces all power cells within 5 m of the blossom to half energy;
+  or,4) energy negation activated for 2-20 action turns, within a 15 m radius. If
+  the spores ever kill the creature who touched the plant, they will grow in the dead
+  body and become 1-3 new blaster blossoms within three days.'
+players: 'Blaster Blossom; ''Zappers'';Description: The few expeditions that have
+  made it to the lunar surface and back tell dreadful tales of the strange life forms
+  that developed after the inhabitants of Tycho Center, the Moons only manned base,
+  were slain by disease. (See A World Gone Mad, DRAGONissue #86, and A Field Guide
+  To Lunar Mutants," DRAGON issue #87.) One of the mutant plants now found at Tycho
+  Center is the so-called blaster blossom, a mutant orchid.The blaster blossom is
+  a reactive mutant, using its powers whenever it is touched. It has two attacks.
+  The first is a spore cloud (treated as intensity 17 con- tact poison) that can slay
+  victims with relative ease. This is fired whenever anything touches the blossom.
+  The sec- ond attack is a actually a series of ran- dom energy attacks, fired whenever
+  any metallic object (such as a robot) touches the plant. In a random manner, it
+  will use one of the following attacks (roll1d4, one attack for one action turn):1)
+  inflict 3d10 heat damage up to 3 m from the blossoms flower stalk, in the direction
+  of the thing that touched it; 2) fire an electrical bolt doing 2d26 damage up to
+  10 m from the blossoms flower stalk, in the direction of the thing that touched
+  it;3) fire an energy-draining bolt that instantly reduces all power cells within
+  5 m of the blossom to half energy; or,4) energy negation activated for 2-20 action
+  turns, within a 15 m radius. If the spores ever kill the creature who touched the
+  plant, they will grow in the dead body and become 1-3 new blaster blossoms within
+  three days.|'
 id: 71071
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -229,4 +228,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 568
+image_height: 870
 ---

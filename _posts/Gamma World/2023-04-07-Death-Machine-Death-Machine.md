@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Death Machine.png'
-title: Death Machine «Death Machine»
+image: /RPG/MCC-GW/images/Monster-Manual/Death Machine.png
+title: "Death Machine \xABDeath Machine\xBB"
 creature_name_index: Death Machine
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Death Machine
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'
@@ -99,8 +99,8 @@ monster_name: Death Machine 'Death Machine'
 number_appearing: '1'
 number_appearing_single: '1'
 init: '+12'
-monster_name_xx_number_if_applicable_init_+-x: "Death Machine 'Death Machine' (1):\
-  \ Init +12"
+monster_name_xx_number_if_applicable_init_+-x: 'Death Machine ''Death Machine'' (1):
+  Init +12'
 ps_-_c: '152'
 dx_-_c: '16'
 cn_-_c: '16'
@@ -165,82 +165,81 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +3, Ref +2, Will +0
 fort_save: '3'
 ref_save: '2'
 will: '0'
-normal_text: "Death Machine 'Death Machine' (1): Init +12; atk see description; AC\
-  \ 19; HD 63D12 hp 410; MV Treads 150' or GravPods 300' ; 1d20+1d20; SV Fort +3,\
-  \ Ref +2, Will +0"
-description_output: "Description: This 15 meter long, 9 meter wide, 3 meter high killing\
-  \ machine is covered with knobby projections housing sensors and weapons. It floats\
-  \ on antigrav pods.  It can also move around on the ground on treads.  When activated,\
-  \ its gun ports rotate constantly cycling through all potential targets it can sense.Behavior:Death\
-  \ Machines are very rare and will only be found near CI's that they are assigned\
-  \ to defend and from which they take orders. They almost always attack those who\
-  \ can't show Stage V I.D.Mission: To accomplish assigned military objectives, including,\
-  \ but not limited to the destruction of men and materials of the enemy while defending\
-  \ the men and materials of its own and allied bases.  Secondarily to avoid harming\
-  \ innocent noncombatants.Equiptment: 2 x Blaster Cannons that do 25d6 damage at\
-  \ a 3000 meter range. 6 x Black Ray Guns with a 300-meter range. 4 x Trek Guns that\
-  \ do the same damage as Trek Bombs and have a range of 200 meters16 x Mark VII Blaster\
-  \ Batteries of 4 guns each. 10 x Mark CII MasterBlasters 500m Range of 4 guns each.\
-  \  8 x Laser Batteries of 4 guns each (10d6 & 750m, 20d6 &1500m, 15d6 & 3000m) 6\
-  \ Mini-missile Launchers with 5d20 missiles fired individually1 x Fusion Bomb Launcher\
-  \ with 5d10 Fusion Bombs with 3000m Range 1 x Energy Damping Field fuses the circuits\
-  \ of Robots coming within 50 meters of the Death Machine and does 20 points of damage\
-  \ to all Energy Screens except its own within that range. The Death Machine's own\
-  \ Energy Screen can take 400 points of damage. Healing / Repair: A Death Machine\
-  \ can repair 5 point of Damage per turn until it suffers half damager then it can\
-  \ only repair 1 hitpoint of damage per minute.  When reduced to less than 50 hit\
-  \ points it can only repair 1 hitpoint a minute.  Some death machines may shutdown\
-  \ when reduced to 20 hit points so that they may repair themselves and attack later."
-final_output: "Death Machine 'Death Machine' (1): Init +12; atk see description; AC\
-  \ 19; HD 63D12 hp 410; MV Treads 150' or GravPods 300' ; 1d20+1d20; SV Fort +3,\
-  \ Ref +2, Will +0NoneDescription: This 15 meter long, 9 meter wide, 3 meter high\
-  \ killing machine is covered with knobby projections housing sensors and weapons.\
-  \ It floats on antigrav pods.  It can also move around on the ground on treads.\
-  \  When activated, its gun ports rotate constantly cycling through all potential\
-  \ targets it can sense.Behavior:Death Machines are very rare and will only be found\
-  \ near CI's that they are assigned to defend and from which they take orders. They\
-  \ almost always attack those who can't show Stage V I.D.Mission: To accomplish assigned\
-  \ military objectives, including, but not limited to the destruction of men and\
-  \ materials of the enemy while defending the men and materials of its own and allied\
-  \ bases.  Secondarily to avoid harming innocent noncombatants.Equiptment: 2 x Blaster\
-  \ Cannons that do 25d6 damage at a 3000 meter range. 6 x Black Ray Guns with a 300-meter\
-  \ range. 4 x Trek Guns that do the same damage as Trek Bombs and have a range of\
-  \ 200 meters16 x Mark VII Blaster Batteries of 4 guns each. 10 x Mark CII MasterBlasters\
-  \ 500m Range of 4 guns each.  8 x Laser Batteries of 4 guns each (10d6 & 750m, 20d6\
-  \ &1500m, 15d6 & 3000m) 6 Mini-missile Launchers with 5d20 missiles fired individually1\
-  \ x Fusion Bomb Launcher with 5d10 Fusion Bombs with 3000m Range 1 x Energy Damping\
-  \ Field fuses the circuits of Robots coming within 50 meters of the Death Machine\
-  \ and does 20 points of damage to all Energy Screens except its own within that\
-  \ range. The Death Machine's own Energy Screen can take 400 points of damage. Healing\
-  \ / Repair: A Death Machine can repair 5 point of Damage per turn until it suffers\
-  \ half damager then it can only repair 1 hitpoint of damage per minute.  When reduced\
-  \ to less than 50 hit points it can only repair 1 hitpoint a minute.  Some death\
-  \ machines may shutdown when reduced to 20 hit points so that they may repair themselves\
-  \ and attack later."
-players: "Death Machine; 'Death Machine';Description: This 15 meter long, 9 meter\
-  \ wide, 3 meter high killing machine is covered with knobby projections housing\
-  \ sensors and weapons. It floats on antigrav pods.  It can also move around on the\
-  \ ground on treads.  When activated, its gun ports rotate constantly cycling through\
-  \ all potential targets it can sense.Behavior:Death Machines are very rare and will\
-  \ only be found near CI's that they are assigned to defend and from which they take\
-  \ orders. They almost always attack those who can't show Stage V I.D.Mission: To\
-  \ accomplish assigned military objectives, including, but not limited to the destruction\
-  \ of men and materials of the enemy while defending the men and materials of its\
-  \ own and allied bases.  Secondarily to avoid harming innocent noncombatants.Equiptment:\
-  \ 2 x Blaster Cannons that do 25d6 damage at a 3000 meter range. 6 x Black Ray Guns\
-  \ with a 300-meter range. 4 x Trek Guns that do the same damage as Trek Bombs and\
-  \ have a range of 200 meters16 x Mark VII Blaster Batteries of 4 guns each. 10 x\
-  \ Mark CII MasterBlasters 500m Range of 4 guns each.  8 x Laser Batteries of 4 guns\
-  \ each (10d6 & 750m, 20d6 &1500m, 15d6 & 3000m) 6 Mini-missile Launchers with 5d20\
-  \ missiles fired individually1 x Fusion Bomb Launcher with 5d10 Fusion Bombs with\
-  \ 3000m Range 1 x Energy Damping Field fuses the circuits of Robots coming within\
-  \ 50 meters of the Death Machine and does 20 points of damage to all Energy Screens\
-  \ except its own within that range. The Death Machine's own Energy Screen can take\
-  \ 400 points of damage. Healing / Repair: A Death Machine can repair 5 point of\
-  \ Damage per turn until it suffers half damager then it can only repair 1 hitpoint\
-  \ of damage per minute.  When reduced to less than 50 hit points it can only repair\
-  \ 1 hitpoint a minute.  Some death machines may shutdown when reduced to 20 hit\
-  \ points so that they may repair themselves and attack later.|"
+normal_text: 'Death Machine ''Death Machine'' (1): Init +12; atk see description;
+  AC 19; HD 63D12 hp 410; MV Treads 150'' or GravPods 300'' ; 1d20+1d20; SV Fort +3,
+  Ref +2, Will +0'
+description_output: 'Description: This 15 meter long, 9 meter wide, 3 meter high killing
+  machine is covered with knobby projections housing sensors and weapons. It floats
+  on antigrav pods.  It can also move around on the ground on treads.  When activated,
+  its gun ports rotate constantly cycling through all potential targets it can sense.Behavior:Death
+  Machines are very rare and will only be found near CI''s that they are assigned
+  to defend and from which they take orders. They almost always attack those who can''t
+  show Stage V I.D.Mission: To accomplish assigned military objectives, including,
+  but not limited to the destruction of men and materials of the enemy while defending
+  the men and materials of its own and allied bases.  Secondarily to avoid harming
+  innocent noncombatants.Equiptment: 2 x Blaster Cannons that do 25d6 damage at a
+  3000 meter range. 6 x Black Ray Guns with a 300-meter range. 4 x Trek Guns that
+  do the same damage as Trek Bombs and have a range of 200 meters16 x Mark VII Blaster
+  Batteries of 4 guns each. 10 x Mark CII MasterBlasters 500m Range of 4 guns each.  8
+  x Laser Batteries of 4 guns each (10d6 & 750m, 20d6 &1500m, 15d6 & 3000m) 6 Mini-missile
+  Launchers with 5d20 missiles fired individually1 x Fusion Bomb Launcher with 5d10
+  Fusion Bombs with 3000m Range 1 x Energy Damping Field fuses the circuits of Robots
+  coming within 50 meters of the Death Machine and does 20 points of damage to all
+  Energy Screens except its own within that range. The Death Machine''s own Energy
+  Screen can take 400 points of damage. Healing / Repair: A Death Machine can repair
+  5 point of Damage per turn until it suffers half damager then it can only repair
+  1 hitpoint of damage per minute.  When reduced to less than 50 hit points it can
+  only repair 1 hitpoint a minute.  Some death machines may shutdown when reduced
+  to 20 hit points so that they may repair themselves and attack later.'
+final_output: 'Death Machine ''Death Machine'' (1): Init +12; atk see description;
+  AC 19; HD 63D12 hp 410; MV Treads 150'' or GravPods 300'' ; 1d20+1d20; SV Fort +3,
+  Ref +2, Will +0NoneDescription: This 15 meter long, 9 meter wide, 3 meter high killing
+  machine is covered with knobby projections housing sensors and weapons. It floats
+  on antigrav pods.  It can also move around on the ground on treads.  When activated,
+  its gun ports rotate constantly cycling through all potential targets it can sense.Behavior:Death
+  Machines are very rare and will only be found near CI''s that they are assigned
+  to defend and from which they take orders. They almost always attack those who can''t
+  show Stage V I.D.Mission: To accomplish assigned military objectives, including,
+  but not limited to the destruction of men and materials of the enemy while defending
+  the men and materials of its own and allied bases.  Secondarily to avoid harming
+  innocent noncombatants.Equiptment: 2 x Blaster Cannons that do 25d6 damage at a
+  3000 meter range. 6 x Black Ray Guns with a 300-meter range. 4 x Trek Guns that
+  do the same damage as Trek Bombs and have a range of 200 meters16 x Mark VII Blaster
+  Batteries of 4 guns each. 10 x Mark CII MasterBlasters 500m Range of 4 guns each.  8
+  x Laser Batteries of 4 guns each (10d6 & 750m, 20d6 &1500m, 15d6 & 3000m) 6 Mini-missile
+  Launchers with 5d20 missiles fired individually1 x Fusion Bomb Launcher with 5d10
+  Fusion Bombs with 3000m Range 1 x Energy Damping Field fuses the circuits of Robots
+  coming within 50 meters of the Death Machine and does 20 points of damage to all
+  Energy Screens except its own within that range. The Death Machine''s own Energy
+  Screen can take 400 points of damage. Healing / Repair: A Death Machine can repair
+  5 point of Damage per turn until it suffers half damager then it can only repair
+  1 hitpoint of damage per minute.  When reduced to less than 50 hit points it can
+  only repair 1 hitpoint a minute.  Some death machines may shutdown when reduced
+  to 20 hit points so that they may repair themselves and attack later.'
+players: 'Death Machine; ''Death Machine'';Description: This 15 meter long, 9 meter
+  wide, 3 meter high killing machine is covered with knobby projections housing sensors
+  and weapons. It floats on antigrav pods.  It can also move around on the ground
+  on treads.  When activated, its gun ports rotate constantly cycling through all
+  potential targets it can sense.Behavior:Death Machines are very rare and will only
+  be found near CI''s that they are assigned to defend and from which they take orders.
+  They almost always attack those who can''t show Stage V I.D.Mission: To accomplish
+  assigned military objectives, including, but not limited to the destruction of men
+  and materials of the enemy while defending the men and materials of its own and
+  allied bases.  Secondarily to avoid harming innocent noncombatants.Equiptment: 2
+  x Blaster Cannons that do 25d6 damage at a 3000 meter range. 6 x Black Ray Guns
+  with a 300-meter range. 4 x Trek Guns that do the same damage as Trek Bombs and
+  have a range of 200 meters16 x Mark VII Blaster Batteries of 4 guns each. 10 x Mark
+  CII MasterBlasters 500m Range of 4 guns each.  8 x Laser Batteries of 4 guns each
+  (10d6 & 750m, 20d6 &1500m, 15d6 & 3000m) 6 Mini-missile Launchers with 5d20 missiles
+  fired individually1 x Fusion Bomb Launcher with 5d10 Fusion Bombs with 3000m Range
+  1 x Energy Damping Field fuses the circuits of Robots coming within 50 meters of
+  the Death Machine and does 20 points of damage to all Energy Screens except its
+  own within that range. The Death Machine''s own Energy Screen can take 400 points
+  of damage. Healing / Repair: A Death Machine can repair 5 point of Damage per turn
+  until it suffers half damager then it can only repair 1 hitpoint of damage per minute.  When
+  reduced to less than 50 hit points it can only repair 1 hitpoint a minute.  Some
+  death machines may shutdown when reduced to 20 hit points so that they may repair
+  themselves and attack later.|'
 id: 71156
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -249,4 +248,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 2274
+image_height: 1124
 ---

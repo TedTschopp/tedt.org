@@ -1,69 +1,58 @@
 ---
 layout: post
-
 title: 'Exploring Taxonomy: A Thought-Provoking Talk by Alex Wright'
-title-url:
+title-url: null
 subtitle: Understanding the Universality of Taxonomies in Human Cultures
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: What are your thoughts on the universal structure of taxonomies? Have
-    you ever considered how categorization plays a role in our understanding of the
-    world? Share your thoughts and insights in the comments below. Let's engage in
-    a thought-provoking discussion!
-
+  you ever considered how categorization plays a role in our understanding of the
+  world? Share your thoughts and insights in the comments below. Let's engage in a
+  thought-provoking discussion!
 date: 2007-09-26 16:31:50+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article delves into a talk by Alex Wright at the Long Now Foundation,
-    exploring the fascinating concept of taxonomy across different societies. It questions
-    why taxonomies are universally 5 or 6 levels deep and examines theories, including
-    connections to family structure and genetics.
-seo-description:
-
+  exploring the fascinating concept of taxonomy across different societies. It questions
+  why taxonomies are universally 5 or 6 levels deep and examines theories, including
+  connections to family structure and genetics.
+seo-description: null
 categories:
 - Computers
 - Science
-tags:
+tags: null
 keywords: taxonomy, Alex Wright, Long Now Foundation, anthropology, sociology, human
-    cultures, family structure, genetics, categorization
-
-
-
+  cultures, family structure, genetics, categorization
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2007-09/taxonomy.png
-image-alt:
+image-alt: null
 image-artist: Alex Wright
 image-artist-URL: https://alexwright.com
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description: A folk Taxonomy showing the hierarchy of animals, mammals, cats, and Tabby.
-image-title: Animal Folksonomy 
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: A folk Taxonomy showing the hierarchy of animals, mammals, cats,
+  and Tabby.
+image-title: Animal Folksonomy
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 2358
+image_height: 1268
 ---
 I recently heard [Alex Wright](http://www.alexwright.org/) speak at the [Long Now Foundation](http://www.longnow.org/)&#160;via their [podcast](http://www.longnow.org/projects/seminars/SALT.xml).
 

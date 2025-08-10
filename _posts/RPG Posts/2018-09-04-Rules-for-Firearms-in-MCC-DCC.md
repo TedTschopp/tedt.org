@@ -1,70 +1,54 @@
 ---
 layout: post
-
 title: Firearms in MCC & DCC
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: "The following rules are what I have collected from around the internet for\
-    \ the use of firearms in MCC & DCC.  I will be playtesting these by converting\
-    \ a Gamma World module to MCC. \n"
-source:
-source-url:
-call-to-action:
-
+  \ the use of firearms in MCC & DCC.  I will be playtesting these by converting a\
+  \ Gamma World module to MCC. \n"
+source: null
+source-url: null
+call-to-action: null
 date: 2018-09-04 17:37:12-07:00
 update: 2018-09-04 16:44:34-07:00
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: "The following rules are what I have collected from around the internet\
-    \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
-    \ a Gamma World module to MCC. \n"
+  \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
+  \ a Gamma World module to MCC. \n"
 seo-description: "The following rules are what I have collected from around the internet\
-    \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
-    \ a Gamma World module to MCC. \n"
-
+  \ for the use of firearms in MCC & DCC.  I will be playtesting these by converting\
+  \ a Gamma World module to MCC. \n"
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-09/MCC-Guns.webp
-image-alt:
+image-alt: null
 image-artist: Matthew Harris
 image-artist-URL: https://megalomatthew.artstation.com/
-image-description:
+image-description: null
 image-title: Weapon & Prop Concepts
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1920
+image_height: 1113
 ---
-
-
-
-
-
 # Notes
 
 The following rules are what I have collected from around the Internet for the use of firearms in MCC & DCC.  I will be playtesting these by converting a Gamma World module to MCC. 

@@ -1,83 +1,67 @@
 ---
 layout: post
-
 title: Mutations in Gamma World
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: 'During the days of Tech Level VI, a lot of time was spent by Artificial
-    Intelligences and bioengineers to come up with ways to modify humans, animals,
-    and plants.  During this time all sort of transhumanism and animal / plant uplifting
-    took place.  After the cataclysm many of these strains granted their species advantages
-    in survival.   The following attempts to recreate the understanding these people
-    had and make sense of this information.
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
 
-    '
-source:
-source-url:
-call-to-action:
-
+  '
+source: null
+source-url: null
+call-to-action: null
 date: 2018-07-27 17:37:12-07:00
 update: 2018-07-28 16:44:34-07:00
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: 'During the days of Tech Level VI, a lot of time was spent by Artificial
-    Intelligences and bioengineers to come up with ways to modify humans, animals,
-    and plants.  During this time all sort of transhumanism and animal / plant uplifting
-    took place.  After the cataclysm many of these strains granted their species advantages
-    in survival.   The following attempts to recreate the understanding these people
-    had and make sense of this information.
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
 
-    '
+  '
 seo-description: 'During the days of Tech Level VI, a lot of time was spent by Artificial
-    Intelligences and bioengineers to come up with ways to modify humans, animals,
-    and plants.  During this time all sort of transhumanism and animal / plant uplifting
-    took place.  After the cataclysm many of these strains granted their species advantages
-    in survival.   The following attempts to recreate the understanding these people
-    had and make sense of this information.
+  Intelligences and bioengineers to come up with ways to modify humans, animals, and
+  plants.  During this time all sort of transhumanism and animal / plant uplifting
+  took place.  After the cataclysm many of these strains granted their species advantages
+  in survival.   The following attempts to recreate the understanding these people
+  had and make sense of this information.
 
-    '
-
+  '
 categories:
 - Role Playing Games
 - Gamma World
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-07/ola-larsson-genlabbalpha.webp
-image-alt:
+image-alt: null
 image-artist: Ola Larsson
 image-artist-URL: https://larsson.artstation.com/projects/qOJQn
-image-description:
+image-description: null
 image-title: Genelab Alpha
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1571
+image_height: 1752
 ---
-
-
-
-
-
 # Notes
 
 The following are my notes and the attempt to put together my thoughts on Mutations in Gamma World and evolving it into D&D 5e. A lot of work is needed here, but I thought I'd release it.   

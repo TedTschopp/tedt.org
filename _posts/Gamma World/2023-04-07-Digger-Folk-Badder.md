@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Badder.png
-title: Digger Folk «Badder»
+title: "Digger Folk \xABBadder\xBB"
 creature_name_index: Badder
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: Diggers
 generic_name: Diggers
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -103,15 +103,15 @@ monster_name: Badder 'Digger Folk'
 number_appearing: 3d6 (10)
 number_appearing_single: '10'
 init: '+5'
-monster_name_xx_number_if_applicable_init_+-x: "Badder 'Digger Folk' (3d6 (10)): Init\
-  \ +5"
+monster_name_xx_number_if_applicable_init_+-x: 'Badder ''Digger Folk'' (3d6 (10)):
+  Init +5'
 ps_-_c: '10'
 dx_-_c: '18'
 cn_-_c: '11'
 ms_-_c: '16'
 ch_-_c: '7'
 in_-_c: '11'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '3'
 plus_to_range_from_level: ''
 plus_to_range: '4'
@@ -170,9 +170,9 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +3, Will +2
 fort_save: '0'
 ref_save: '3'
 will: '2'
-normal_text: "Badder 'Digger Folk' (3d6 (10)): Init +5; atk weapon melee +1 (1d6)\
-  \ and bite melee +1 (1d3); AC 15; HD 3D7 hp 12 each; MV 30' or Burrow 10' ; 1d20;\
-  \ SV Fort +0, Ref +3, Will +2"
+normal_text: 'Badder ''Digger Folk'' (3d6 (10)): Init +5; atk weapon melee +1 (1d6)
+  and bite melee +1 (1d3); AC 15; HD 3D7 hp 12 each; MV 30'' or Burrow 10'' ; 1d20;
+  SV Fort +0, Ref +3, Will +2'
 description_output: 'Description: 1.5 Meter-tall humanoid badgers. Badders wear chainmail
   and ring mail armor.  They walk erect.Behavior:Badders are often of evil disposition,
   given to raiding their neighbors and gleefully engaging in wanton destruction.  They
@@ -197,59 +197,56 @@ description_output: 'Description: 1.5 Meter-tall humanoid badgers. Badders wear 
   who will fight without weapons, and young. They are able to trade with other humanoids
   or intelligent creatures, since their reputation as thieves and brigands precedes
   them. This causes them to steal and kill for equipment even more.'
-final_output: "Badder 'Digger Folk' (3d6 (10)): Init +5; atk weapon melee +1 (1d6)\
-  \ and bite melee +1 (1d3); AC 15; HD 3D7 hp 12 each; MV 30' or Burrow 10' ; 1d20;\
-  \ SV Fort +0, Ref +3, Will +2(M) EmpathyDescription: 1.5 Meter-tall humanoid badgers.\
-  \ Badders wear chainmail and ring mail armor.  They walk erect.Behavior:Badders\
-  \ are often of evil disposition, given to raiding their neighbors and gleefully\
-  \ engaging in wanton destruction.  They always have Tech Level 2 weapons.  There\
-  \ is a 10% chance they will have Tech Level 3 weapons.  Badders have a keen sense\
-  \ of smell, but are hard of hearing.  They speak in a snarling language, though\
-  \ some members of a society will speak trade languages.  A Badder village or steadings\
-  \ consist of underground earthen tunnel complexes containing 10d01 males of fighting\
-  \ age and their spouses, who will fight without weapons, and one child per female.\
-  \  For every 20 Badders, there will be one noble.Combat: Badders prefer to swarm\
-  \ their opponents. By overpowering their enemies with the sheer frenzy of their\
-  \ attacks, they hope to confuse them.   Their battle fury is so impressive that\
-  \ their opponents make all morale checks at -2 to their base morale score. Player\
-  \ characters do not have to make morale checks. Most of these creatures carry Tech\
-  \ Level III weapons, but some (usually nobility) possess Tech Level IV weapons as\
-  \ well. A few have Tech Level V artifacts. Fortunately, Badders do not known how\
-  \ to use these artifacts unless shown by their captives.Society: Badders have a\
-  \ feudal society, with barons, counts, and the like as their leaders. The nobility\
-  \ makes the rules and is usually obeyed without question. Any Badders questioning\
-  \ rules or orders are killed immediately, and placed on display as an example for\
-  \ the rest of the society. Badder villages and steadings consist of underground,\
-  \ earthen tunnel complexes containing up to 100 males of fighting age, an equal\
-  \ number of females who will fight without weapons, and young. They are able to\
-  \ trade with other humanoids or intelligent creatures, since their reputation as\
-  \ thieves and brigands precedes them. This causes them to steal and kill for equipment\
-  \ even more."
-players: "Badder; 'Digger Folk';Description: 1.5 Meter-tall humanoid badgers. Badders\
-  \ wear chainmail and ring mail armor.  They walk erect.Behavior:Badders are often\
-  \ of evil disposition, given to raiding their neighbors and gleefully engaging in\
-  \ wanton destruction.  They always have Tech Level 2 weapons.  There is a 10% chance\
-  \ they will have Tech Level 3 weapons.  Badders have a keen sense of smell, but\
-  \ are hard of hearing.  They speak in a snarling language, though some members of\
-  \ a society will speak trade languages.  A Badder village or steadings consist of\
-  \ underground earthen tunnel complexes containing 10d01 males of fighting age and\
-  \ their spouses, who will fight without weapons, and one child per female.  For\
-  \ every 20 Badders, there will be one noble.Combat: Badders prefer to swarm their\
-  \ opponents. By overpowering their enemies with the sheer frenzy of their attacks,\
-  \ they hope to confuse them.   Their battle fury is so impressive that their opponents\
-  \ make all morale checks at -2 to their base morale score. Player characters do\
-  \ not have to make morale checks. Most of these creatures carry Tech Level III weapons,\
-  \ but some (usually nobility) possess Tech Level IV weapons as well. A few have\
-  \ Tech Level V artifacts. Fortunately, Badders do not known how to use these artifacts\
-  \ unless shown by their captives.Society: Badders have a feudal society, with barons,\
-  \ counts, and the like as their leaders. The nobility makes the rules and is usually\
-  \ obeyed without question. Any Badders questioning rules or orders are killed immediately,\
-  \ and placed on display as an example for the rest of the society. Badder villages\
-  \ and steadings consist of underground, earthen tunnel complexes containing up to\
-  \ 100 males of fighting age, an equal number of females who will fight without weapons,\
-  \ and young. They are able to trade with other humanoids or intelligent creatures,\
-  \ since their reputation as thieves and brigands precedes them. This causes them\
-  \ to steal and kill for equipment even more.|"
+final_output: 'Badder ''Digger Folk'' (3d6 (10)): Init +5; atk weapon melee +1 (1d6)
+  and bite melee +1 (1d3); AC 15; HD 3D7 hp 12 each; MV 30'' or Burrow 10'' ; 1d20;
+  SV Fort +0, Ref +3, Will +2(M) EmpathyDescription: 1.5 Meter-tall humanoid badgers.
+  Badders wear chainmail and ring mail armor.  They walk erect.Behavior:Badders are
+  often of evil disposition, given to raiding their neighbors and gleefully engaging
+  in wanton destruction.  They always have Tech Level 2 weapons.  There is a 10% chance
+  they will have Tech Level 3 weapons.  Badders have a keen sense of smell, but are
+  hard of hearing.  They speak in a snarling language, though some members of a society
+  will speak trade languages.  A Badder village or steadings consist of underground
+  earthen tunnel complexes containing 10d01 males of fighting age and their spouses,
+  who will fight without weapons, and one child per female.  For every 20 Badders,
+  there will be one noble.Combat: Badders prefer to swarm their opponents. By overpowering
+  their enemies with the sheer frenzy of their attacks, they hope to confuse them.   Their
+  battle fury is so impressive that their opponents make all morale checks at -2 to
+  their base morale score. Player characters do not have to make morale checks. Most
+  of these creatures carry Tech Level III weapons, but some (usually nobility) possess
+  Tech Level IV weapons as well. A few have Tech Level V artifacts. Fortunately, Badders
+  do not known how to use these artifacts unless shown by their captives.Society:
+  Badders have a feudal society, with barons, counts, and the like as their leaders.
+  The nobility makes the rules and is usually obeyed without question. Any Badders
+  questioning rules or orders are killed immediately, and placed on display as an
+  example for the rest of the society. Badder villages and steadings consist of underground,
+  earthen tunnel complexes containing up to 100 males of fighting age, an equal number
+  of females who will fight without weapons, and young. They are able to trade with
+  other humanoids or intelligent creatures, since their reputation as thieves and
+  brigands precedes them. This causes them to steal and kill for equipment even more.'
+players: 'Badder; ''Digger Folk'';Description: 1.5 Meter-tall humanoid badgers. Badders
+  wear chainmail and ring mail armor.  They walk erect.Behavior:Badders are often
+  of evil disposition, given to raiding their neighbors and gleefully engaging in
+  wanton destruction.  They always have Tech Level 2 weapons.  There is a 10% chance
+  they will have Tech Level 3 weapons.  Badders have a keen sense of smell, but are
+  hard of hearing.  They speak in a snarling language, though some members of a society
+  will speak trade languages.  A Badder village or steadings consist of underground
+  earthen tunnel complexes containing 10d01 males of fighting age and their spouses,
+  who will fight without weapons, and one child per female.  For every 20 Badders,
+  there will be one noble.Combat: Badders prefer to swarm their opponents. By overpowering
+  their enemies with the sheer frenzy of their attacks, they hope to confuse them.   Their
+  battle fury is so impressive that their opponents make all morale checks at -2 to
+  their base morale score. Player characters do not have to make morale checks. Most
+  of these creatures carry Tech Level III weapons, but some (usually nobility) possess
+  Tech Level IV weapons as well. A few have Tech Level V artifacts. Fortunately, Badders
+  do not known how to use these artifacts unless shown by their captives.Society:
+  Badders have a feudal society, with barons, counts, and the like as their leaders.
+  The nobility makes the rules and is usually obeyed without question. Any Badders
+  questioning rules or orders are killed immediately, and placed on display as an
+  example for the rest of the society. Badder villages and steadings consist of underground,
+  earthen tunnel complexes containing up to 100 males of fighting age, an equal number
+  of females who will fight without weapons, and young. They are able to trade with
+  other humanoids or intelligent creatures, since their reputation as thieves and
+  brigands precedes them. This causes them to steal and kill for equipment even more.|'
 id: 71039
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -258,4 +255,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 976
+image_height: 1222
 ---

@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Android.png
-title: Body Guard «Android»
+title: "Body Guard \xABAndroid\xBB"
 creature_name_index: Android
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth Body Guard
 source: GW07 Module
 author: ''
-author_name: 'Bruce Nesmith'
+author_name: Bruce Nesmith
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'
@@ -75,15 +75,15 @@ monster_name: Android 'Body Guard'
 number_appearing: 1d3 (2)
 number_appearing_single: '2'
 init: '+6'
-monster_name_xx_number_if_applicable_init_+-x: "Android 'Body Guard' (1d3 (2)): Init\
-  \ +6"
+monster_name_xx_number_if_applicable_init_+-x: 'Android ''Body Guard'' (1d3 (2)):
+  Init +6'
 ps_-_c: '19'
 dx_-_c: '18'
 cn_-_c: '19'
 ms_-_c: '16'
 ch_-_c: '12'
 in_-_c: '12'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '3'
 plus_to_range_from_level: ''
 plus_to_range: '6'
@@ -142,19 +142,19 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +3, Ref +3, Will +2
 fort_save: '3'
 ref_save: '3'
 will: '2'
-normal_text: "Android 'Body Guard' (1d3 (2)): Init +6; atk weapon melee +6 (1d10+3);\
-  \ AC 19; HD 6D12 hp 39 each; MV 30' ; 1d20; SV Fort +3, Ref +3, Will +2"
+normal_text: 'Android ''Body Guard'' (1d3 (2)): Init +6; atk weapon melee +6 (1d10+3);
+  AC 19; HD 6D12 hp 39 each; MV 30'' ; 1d20; SV Fort +3, Ref +3, Will +2'
 description_output: 'Description: Man-made beings with red hued skin and blank stares.Behavior:equipment:
   Powered Battle Armor, Laser Pistol, Vibro Blade, Stun Whip, 2 Stun Grenades, Accelera
   dose, Interra Shot'
-final_output: "Android 'Body Guard' (1d3 (2)): Init +6; atk weapon melee +6 (1d10+3);\
-  \ AC 19; HD 6D12 hp 39 each; MV 30' ; 1d20; SV Fort +3, Ref +3, Will +2NoneDescription:\
-  \ Man-made beings with red hued skin and blank stares.Behavior:equipment: Powered\
-  \ Battle Armor, Laser Pistol, Vibro Blade, Stun Whip, 2 Stun Grenades, Accelera\
-  \ dose, Interra Shot"
-players: "Android; 'Body Guard';Description: Man-made beings with red hued skin and\
-  \ blank stares.Behavior:equipment: Powered Battle Armor, Laser Pistol, Vibro Blade,\
-  \ Stun Whip, 2 Stun Grenades, Accelera dose, Interra Shot|"
+final_output: 'Android ''Body Guard'' (1d3 (2)): Init +6; atk weapon melee +6 (1d10+3);
+  AC 19; HD 6D12 hp 39 each; MV 30'' ; 1d20; SV Fort +3, Ref +3, Will +2NoneDescription:
+  Man-made beings with red hued skin and blank stares.Behavior:equipment: Powered
+  Battle Armor, Laser Pistol, Vibro Blade, Stun Whip, 2 Stun Grenades, Accelera dose,
+  Interra Shot'
+players: 'Android; ''Body Guard'';Description: Man-made beings with red hued skin
+  and blank stares.Behavior:equipment: Powered Battle Armor, Laser Pistol, Vibro Blade,
+  Stun Whip, 2 Stun Grenades, Accelera dose, Interra Shot|'
 id: 71016
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -163,4 +163,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 838
+image_height: 1522
 ---

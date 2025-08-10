@@ -1,82 +1,81 @@
 ---
 layout: post
-
-title: "The Student Who Taught Herself"
-subtitle: "My daughter taught herself math. This week, so did AI."
-quote: "She didn’t need a teacher in that moment. She needed feedback. She needed space to think."
-excerpt: "A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again."
-source: "Original Content"
-source-url: ""
-call-to-action: "What kind of grace do you give yourself when you're learning something new?"
-
+title: The Student Who Taught Herself
+subtitle: My daughter taught herself math. This week, so did AI.
+quote: "She didn\u2019t need a teacher in that moment. She needed feedback. She needed\
+  \ space to think."
+excerpt: "A quiet moment watching my daughter struggle through a math problem opened\
+  \ a window into the future of AI\u2014one where machines teach themselves by doing,\
+  \ failing, and trying again."
+source: Original Content
+source-url: ''
+call-to-action: What kind of grace do you give yourself when you're learning something
+  new?
 date: 2025-05-11
 update: 2025-05-11
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - A new AI model, AZR, learned without any external training data
-    - It outperformed traditional models in math and coding tasks
-    - The process mirrors how humans—like my daughter—learn through feedback, not instruction
-    - The model shows signs of emergent reasoning and reflection
-    - Raises critical questions about how we shape AI, and how we treat ourselves when learning
-
-description: "Watching my daughter learn math reminded me of a breakthrough in AI—AZR, a self-teaching model that reasons and grows without external data. This post reflects on learning, AI, and grace."
-seo-description: "AZR, a new AI model, trains without human data and learns through self-generated tasks. What does this mean for the future of machine reasoning—and how we learn?"
-
-categories: 
-    - Philosophy
-    - Science
-    - Religion
-    - Opinion
-    - Personal Writing
-    - Artificial Intelligence
-
-tags: 
-    - AZR
-    - AI Education
-    - Self-Taught Learning
-    - Reinforcement Learning
-    - Human-Machine Reflection
-
-keywords: 
-    - AI
-    - machine learning
-    - AZR
-    - self-learning AI
-    - math reasoning
-    - human and AI comparison
-    - parenting
-    - teaching
-    - failure
-    - grace
-
+- A new AI model, AZR, learned without any external training data
+- It outperformed traditional models in math and coding tasks
+- "The process mirrors how humans\u2014like my daughter\u2014learn through feedback,\
+  \ not instruction"
+- The model shows signs of emergent reasoning and reflection
+- Raises critical questions about how we shape AI, and how we treat ourselves when
+  learning
+description: "Watching my daughter learn math reminded me of a breakthrough in AI\u2014\
+  AZR, a self-teaching model that reasons and grows without external data. This post\
+  \ reflects on learning, AI, and grace."
+seo-description: "AZR, a new AI model, trains without human data and learns through\
+  \ self-generated tasks. What does this mean for the future of machine reasoning\u2014\
+  and how we learn?"
+categories:
+- Philosophy
+- Science
+- Religion
+- Opinion
+- Personal Writing
+- Artificial Intelligence
+tags:
+- AZR
+- AI Education
+- Self-Taught Learning
+- Reinforcement Learning
+- Human-Machine Reflection
+keywords:
+- AI
+- machine learning
+- AZR
+- self-learning AI
+- math reasoning
+- human and AI comparison
+- parenting
+- teaching
+- failure
+- grace
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: "/img/2025-05/Hannah Doing Math.webp"
-image-alt: "A Young Girl Solves a Math Problem by herself"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "The Student Who Taught Herself"
-image-description: "A Young Girl Solves a Math Problem by herself"
-image-title: "The Student Who Taught Herself"
-
-redirect_from:
-
+  latitude: 34.147
+  longitude: -117.9709
+image: /img/2025-05/Hannah Doing Math.webp
+image-alt: A Young Girl Solves a Math Problem by herself
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: The Student Who Taught Herself
+image-description: A Young Girl Solves a Math Problem by herself
+image-title: The Student Who Taught Herself
+redirect_from: null
 mastodon-post-id: 114497428586613439
+image_width: 1980
+image_height: 1080
 ---
-
-
 ## **Bottom Line Up Front:**
 
 Last week, researchers unveiled AZR (Absolute Zero Reasoner)—a groundbreaking AI model that trains itself entirely without external data or human guidance. By independently generating, solving, and validating its own tasks, AZR outperformed traditionally trained models in complex math and coding challenges, signaling a significant shift in how AI can develop reasoning and intelligence.

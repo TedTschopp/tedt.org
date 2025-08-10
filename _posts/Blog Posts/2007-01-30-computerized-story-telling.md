@@ -1,64 +1,58 @@
 ---
 layout: post
-
-title: "The Machine That Dreamed in Plot"
-subtitle: "Early Steps Toward Artificial Storytelling"
-quote: "Forget the thousand monkeys. What if a single silicon mind could write Shakespeare?"
-excerpt: "A quiet note on machine-made tales, hidden potential, and what it might mean to create when you're not human."
-source: "Original Content"
-source-url: ""
-call-to-action: "Download the papers. Ponder the future. Watch the edges of the map."
-
+title: The Machine That Dreamed in Plot
+subtitle: Early Steps Toward Artificial Storytelling
+quote: Forget the thousand monkeys. What if a single silicon mind could write Shakespeare?
+excerpt: A quiet note on machine-made tales, hidden potential, and what it might mean
+  to create when you're not human.
+source: Original Content
+source-url: ''
+call-to-action: Download the papers. Ponder the future. Watch the edges of the map.
 date: 2007-01-30 00:34:46+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - Computers aren't just crunching numbers—they're whispering stories.
-    - The line between human creativity and machine patterning grows thin.
-    - Music has already crossed that threshold. Storytelling is next.
-    - Can a machine truly *create*? Or is it just echoing us?
-    - Two research papers worth your quiet time and a mug of coffee.
-
-description: "Reflections on computer-based storytelling models like BRUTUS, MINSTREL, and MEXICA, alongside thoughts on creativity, authorship, and the soul of narrative."
-
-seo-description: "In 2007, Ted Tschopp explores early computer storytelling experiments and what they might mean for the future of creativity and narrative."
-
-categories: 
-    - Computers
-    - Books
-    - Philosophy
-    - Opinion
-
-tags: 
-keywords: computer storytelling, BRUTUS, MINSTREL, MEXICA, AI creativity, narrative models, artificial intelligence, 2007 tech trends
-
+- "Computers aren't just crunching numbers\u2014they're whispering stories."
+- The line between human creativity and machine patterning grows thin.
+- Music has already crossed that threshold. Storytelling is next.
+- Can a machine truly *create*? Or is it just echoing us?
+- Two research papers worth your quiet time and a mug of coffee.
+description: Reflections on computer-based storytelling models like BRUTUS, MINSTREL,
+  and MEXICA, alongside thoughts on creativity, authorship, and the soul of narrative.
+seo-description: In 2007, Ted Tschopp explores early computer storytelling experiments
+  and what they might mean for the future of creativity and narrative.
+categories:
+- Computers
+- Books
+- Philosophy
+- Opinion
+tags: null
+keywords: computer storytelling, BRUTUS, MINSTREL, MEXICA, AI creativity, narrative
+  models, artificial intelligence, 2007 tech trends
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2007-01/Digital-Dreams-and-Dusty-Books.png
-image-alt: "An early-2000s computer resting on a writing desk with books and coffee"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: "Old desktop computer, books on folklore and code, soft lamplight."
-image-title: "Digital Dreams and Dusty Books"
-
+image-alt: An early-2000s computer resting on a writing desk with books and coffee
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: Old desktop computer, books on folklore and code, soft lamplight.
+image-title: Digital Dreams and Dusty Books
 redirect_from:
-  - /computers/books/philosophy/opinion/computerized-story-telling
-
-mastodon-post-id: 
-
+- /computers/books/philosophy/opinion/computerized-story-telling
+mastodon-post-id: null
+image_width: 1536
+image_height: 1024
 ---
 I ran across something curious tonight while wandering the links on Digg—a quiet corner of the web where someone asked a question older than silicon: Can a machine tell a story?
 

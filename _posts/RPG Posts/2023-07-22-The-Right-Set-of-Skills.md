@@ -1,68 +1,55 @@
 ---
 layout: post
-
 title: The Right Set of Skills
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: 'All beings have four aspects of their existence. These define the
-    highest categorical breakdown of a being. They are Physical, Mental,
-    Social, and Spiritual. They each have a numeric score The higher the
-    score, the more potential that being has in that aspect of their
-    existence. These numbers also represent how much damage the character
-    can take. These aspects can be broken down into your traditional
-    Characteristics.'
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: All beings have four aspects of their existence. These define the highest
+  categorical breakdown of a being. They are Physical, Mental, Social, and Spiritual.
+  They each have a numeric score The higher the score, the more potential that being
+  has in that aspect of their existence. These numbers also represent how much damage
+  the character can take. These aspects can be broken down into your traditional Characteristics.
+source: null
+source-url: null
+call-to-action: null
 date: 2023-07-22 18:51:10-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: Explore the essential skills needed in today's fast-paced environment.
-    Learn how to adapt and grow in your career with the right set of skills.
-seo-description:
-
+  Learn how to adapt and grow in your career with the right set of skills.
+seo-description: null
 categories:
 - Role Playing Games
-- "The Märchen Engine"
-tags:
+- "The M\xE4rchen Engine"
+tags: null
 keywords: Skills, Career, Adaptability, Learning, Professional Development
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-07/FAME.webp
 image-alt: Photo by Ted Tschopp using Midjourney
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-description:
+image-description: null
 image-title: FAME - Fitness, Academics, Mystical, Emotional
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: true
-order:
-
+order: null
 redirect_from:
-  - /2023/07/22/The-Right-Set-of-Skills.html
-  - /2023/07/The-Right-Set-of-Skills.html
-  - /2023/The-Right-Set-of-Skills.html
-  - /The-Right-Set-of-Skills.html
-
-
+- /2023/07/22/The-Right-Set-of-Skills.html
+- /2023/07/The-Right-Set-of-Skills.html
+- /2023/The-Right-Set-of-Skills.html
+- /The-Right-Set-of-Skills.html
+image_width: 1024
+image_height: 1024
 ---
 <style>
 .dccvsdnd thead tr th {

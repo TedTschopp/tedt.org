@@ -1,67 +1,51 @@
 ---
 layout: post
-
 title: Gamma World Weapons in MCC & DCC
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: "The following is a conversion of rules for Gamma World's Traditional weapons\
-    \ in Mutant Crawl Classic.  \n"
-source:
-source-url:
-call-to-action:
-
+  \ in Mutant Crawl Classic.  \n"
+source: null
+source-url: null
+call-to-action: null
 date: 2018-10-14 17:37:12-07:00
 update: 2018-10-14 16:44:34-07:00
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: "The following is a conversion of rules for Gamma World's Traditional\
-    \ weapons in Mutant Crawl Classic.  \n"
+  \ weapons in Mutant Crawl Classic.  \n"
 seo-description: "The following is a conversion of rules for Gamma World's Traditional\
-    \ weapons in Mutant Crawl Classic.  \n"
-
+  \ weapons in Mutant Crawl Classic.  \n"
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
 - Dungeon Crawl Classics
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-10/seth-justus-huntersalienguns.webp
-image-alt:
+image-alt: null
 image-artist: Seth Justus
 image-artist-URL: https://www.artstation.com/artwork/lqz25
-image-description:
+image-description: null
 image-title: Hunters Alien Weapons and Devices
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1754
+image_height: 1240
 ---
-
-
-
-
-
 # Notes
 
 The following rules are based on my play testing of running Gamma World in MCC.  I want to make sure the feel and flavor of Gamma World's weapons is available to people who want it in MCC. 

@@ -1,71 +1,60 @@
 ---
 layout: post
-
 title: 'Building Engaging Conversations: From Clueless to Creators'
-title-url:
+title-url: null
 subtitle: A Four-Step Approach to Involve and Engage Your Audience
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: Ready to turn your audience from clueless to creators? Share your
-    thoughts or ask questions in the comments below. Let's build engaging conversations
-    together!
-
+  thoughts or ask questions in the comments below. Let's build engaging conversations
+  together!
 date: 2009-07-17 11:50:58+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article reveals the four categories of people in conversations and
-    explores strategies to transform clueless individuals into engaged consumers,
-    commenters, and creators. By breaking down barriers and using the right tools,
-    readers are guided to build a dynamic environment where content is shared, commented
-    on, and created, fostering a truly engaging community.
-seo-description:
-
+  explores strategies to transform clueless individuals into engaged consumers, commenters,
+  and creators. By breaking down barriers and using the right tools, readers are guided
+  to build a dynamic environment where content is shared, commented on, and created,
+  fostering a truly engaging community.
+seo-description: null
 categories:
 - Computers
 - Communications
-tags:
+tags: null
 keywords: engagement, conversations, clueless, consumers, commenters, creators, content,
-    tools, barriers, community building, invitation, party analogy
-
-
-
+  tools, barriers, community building, invitation, party analogy
 location:
-    name: Phillips Ranch, CA
+  name: Phillips Ranch, CA
 coordinates:
-    latitude: 34.024550
-    longitude: -117.767693
-
+  latitude: 34.02455
+  longitude: -117.767693
 image: img/2013-06/four-is-the-new-three.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An illustrative diagram showing the transformation from 'Clueless'
-    to 'Consumers', 'Commenters', and 'Creators'. This visual metaphor represents
-    the journey of individuals through different engagement levels, emphasizing the
-    importance of content, tools, and openness in the conversation process.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  to 'Consumers', 'Commenters', and 'Creators'. This visual metaphor represents the
+  journey of individuals through different engagement levels, emphasizing the importance
+  of content, tools, and openness in the conversation process.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 732
+image_height: 447
 ---
 I’m going to start out by being honest.  I lied to you.  There are not three separate categories of people, there are four.  This last category is the people who don’t know about your conversation.  Lets call them the clueless.  These are the people who were not invited to the party.  The best way to increase the size of your entire pyramid is to increase the number of people involved.  This is the invitation.
 

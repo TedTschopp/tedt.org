@@ -1,30 +1,25 @@
 ---
 layout: post
-
 title: From the Swabian War - Benedikt Fontana
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: Watch out, the cow milkers will surely come again!
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2023-08-20 16:22:38
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: The legend of the Swabian War narrates the valor of Benedikt Fontana
-    and the Swiss Confederates in the face of Austrian aggression. The story combines
-    elements of heroism, divine justice, and the battle for freedom.
-seo-description:
-
+  and the Swiss Confederates in the face of Austrian aggression. The story combines
+  elements of heroism, divine justice, and the battle for freedom.
+seo-description: null
 categories:
 - Folklore
 tags:
@@ -34,7 +29,7 @@ tags:
 - 15th Century
 - Warfare
 - Legend
-- Graubünden
+- "Graub\xFCnden"
 - Heroism
 - Kaiser Maximilian
 - Ritter von Randeck
@@ -49,61 +44,50 @@ tags:
 - Swiss Confederation
 - Tirol
 keywords: Swabian War, Benedikt Fontana, Swiss legend, heroism, battle, freedom, Austrian
-    rule, divine justice, historical folklore
-
-
-
+  rule, divine justice, historical folklore
 location:
-    address:
-    city:
-    country:
-    name:
-    on-map: Constance (47.6592° N, 9.1753° E)
-    place-names: Various locations in Switzerland, including the city of Constance
-    state:
-    zip:
+  address: null
+  city: null
+  country: null
+  name: null
+  on-map: "Constance (47.6592\xB0 N, 9.1753\xB0 E)"
+  place-names: Various locations in Switzerland, including the city of Constance
+  state: null
+  zip: null
 coordinates:
-    latitude: 9.1753
-    longitude: 47.6592
-
+  latitude: 9.1753
+  longitude: 47.6592
 image: img/Swiss/A_battlefield_scene_from_the_Swiss_Alps.webp
 image-alt: A captivating battlefield scene from the Swiss Alps. Benedikt Fontana leads
-    a group of resolute Swiss fighters, storming the bulwark with swords raised high,
-    expressions fierce and determined. The backdrop portrays majestic mountains, clouded
-    in the ominous smoke of the battlefield. The Swiss warriors' eyes gleam with determination
-    and resolve as they fight for their freedom. Their armor glints in the fleeting
-    sunlight, and their battle cries resonate with the passion for their land. The
-    scene encapsulates the spirit, courage, and will of a people unyielding in their
-    fight for independence.
-image-artist:
-image-artist-URL:
-image-credits:
+  a group of resolute Swiss fighters, storming the bulwark with swords raised high,
+  expressions fierce and determined. The backdrop portrays majestic mountains, clouded
+  in the ominous smoke of the battlefield. The Swiss warriors' eyes gleam with determination
+  and resolve as they fight for their freedom. Their armor glints in the fleeting
+  sunlight, and their battle cries resonate with the passion for their land. The scene
+  encapsulates the spirit, courage, and will of a people unyielding in their fight
+  for independence.
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: 'Storming the Bulwark: Benedikt Fontana and Swiss Warriors''
-    Fight for Freedom in the Swiss Alps'
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
+  Fight for Freedom in the Swiss Alps'
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
-
-redirect_from: 
- - /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
- - /2023/08/20/From-the-Swabian-War-Benedikt-Fontana/
-
-
-
-
+mathjax: null
+order: null
+redirect_from:
+- /2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/
+- /2023/08/20/From-the-Swabian-War-Benedikt-Fontana/
 mastodon-post-id: 110924710196764929
+image_width: 1456
+image_height: 816
 ---
-
 > <ins> Swiss Legends and Heroic Tales</ins>
 > 
 > by Meinrad Lienert

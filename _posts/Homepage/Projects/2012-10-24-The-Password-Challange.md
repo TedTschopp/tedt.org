@@ -1,46 +1,40 @@
 ---
 layout: post
-
 title: The Password Challenge
 title-url: https://The-Password-Challange.tedt.org
-subtitle:
-subtitle-url:
-quote:
-excerpt: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
-source:
-source-url:
-call-to-action:
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: Check the strength of your password based on mathematical models that take
+  into account the latest hacking techniques!
+source: null
+source-url: null
+call-to-action: null
 company: Tschopp
-
 date: 2012-10-24 07:11:42-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
 - Includes a dictionary of the most common passwords
 - Includes a dictionary of the most common English words
 - Includes a dictionary of the most common passwords that have been hacked already
-
-description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
-seo-description: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
-
-categories: 
+description: Check the strength of your password based on mathematical models that
+  take into account the latest hacking techniques!
+seo-description: Check the strength of your password based on mathematical models
+  that take into account the latest hacking techniques!
+categories:
 - Projects
 - Home
 tags: Project
-keywords:
-
-
-
+keywords: null
 location:
-    name: Irwindale, CA
+  name: Irwindale, CA
 coordinates:
-    latitude: 34.100312005266936
-    longitude: 117.97887669665452
-
+  latitude: 34.100312005266936
+  longitude: 117.97887669665452
 image: img/home/password.webp
 image-alt: List of Passwords used in my password challenge application
 image-artist: Ted Tschopp
@@ -52,16 +46,13 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: Password List
 image-description: List of Passwords used in my password challenge application
 image-title: Password List
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
 order: 13
+image_width: 1500
+image_height: 1000
 ---
-
 **Overview:** Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
 
 * Includes a dictionary of the most common passwords

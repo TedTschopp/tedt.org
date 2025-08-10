@@ -1,57 +1,45 @@
 ---
 layout: post
-
 title: Microsoft teams with Creative Commons
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-06-23 23:50:37+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
-description:
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: null
+seo-description: null
 categories:
 - Computers
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2006-06/The-Microsoft-Logo-The-Creative-Commons-Logo-Hugging.webp
-image-alt:
+image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits-title: Microsoft teams with Creative Commons 
-image-description: Microsoft teams with Creative Commons 
-image-title: Microsoft teams with Creative Commons 
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-credits-title: Microsoft teams with Creative Commons
+image-description: Microsoft teams with Creative Commons
+image-title: Microsoft teams with Creative Commons
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
 Microsoft tonight [announced a new partnership](http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx) with [Creative Commons](http://creativecommons.org/), the organization dedicated to providing content producers a legal alternative to “all rights reserved” copyright law, to offer a new tool for easy insertion of Creative Commons licenses into works created with Microsoft Office.
 

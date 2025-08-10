@@ -1,69 +1,58 @@
 ---
 layout: post
-
 title: 'Theme Parks and Mobile OS: A Comparative Analysis'
-title-url:
+title-url: null
 subtitle: Knott's Berry Farm, iOS, and Android - Bridging the Experience Gap
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: Explore the intriguing connection between theme parks and mobile operating
-    systems, and join the conversation on what defines innovation and excellence in
-    both fields. Share your thoughts and opinions with us!
-
+  systems, and join the conversation on what defines innovation and excellence in
+  both fields. Share your thoughts and opinions with us!
 date: 2011-12-24 09:12:25+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article explores the parallels between theme parks like Knott's
-    Berry Farm and tech giants Apple and Android. It highlights the experiences, attention
-    to details, and innovation that define both worlds, and opens a dialogue on what
-    it takes to be a game-changer in both the theme park industry and the world of
-    mobile technology.
-seo-description:
-
+  Berry Farm and tech giants Apple and Android. It highlights the experiences, attention
+  to details, and innovation that define both worlds, and opens a dialogue on what
+  it takes to be a game-changer in both the theme park industry and the world of mobile
+  technology.
+seo-description: null
 categories:
 - Computers
 - Mobile
-tags:
+tags: null
 keywords: Knott's Berry Farm, theme parks, Apple, iOS, Android, Disneyland, experience
-    design, mobile operating systems, technology comparison, innovation, user experience,
-    Ghost Rider, Six Flags, Walt Disney, Steve Jobs
-
-
-
+  design, mobile operating systems, technology comparison, innovation, user experience,
+  Ghost Rider, Six Flags, Walt Disney, Steve Jobs
 location:
-    name: Blanchard Canyon Road
+  name: Blanchard Canyon Road
 coordinates:
-    latitude: 34.256278
-    longitude: -118.267083
-
+  latitude: 34.256278
+  longitude: -118.267083
 image: img/2013-06/main-street-disney-mickey-statue-e1371582793846.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1412
+image_height: 981
 ---
 I recently had an opportunity to return to Knott's Berry Farm after many years. I had a wonderful time with the family and due to my AAA membership I was able to get in for around $40. I felt it was money well spent. However on my trip around the part I noticed a couple things that caused me to pause and think.
 

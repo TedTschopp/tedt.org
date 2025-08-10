@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Android.png
-title: High Thinker «Android»
+title: "High Thinker \xABAndroid\xBB"
 creature_name_index: Android
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth High Thinker
 source: GW07 Module
 author: ''
-author_name: 'Bruce Nesmith'
+author_name: Bruce Nesmith
 url: ''
 avatar: ''
 mcc_race: 'PSH: Shamen'
@@ -74,14 +74,15 @@ monster_name: Android 'High Thinker'
 number_appearing: '1'
 number_appearing_single: '1'
 init: '+7'
-monster_name_xx_number_if_applicable_init_+-x: "Android 'High Thinker' (1): Init +7"
+monster_name_xx_number_if_applicable_init_+-x: 'Android ''High Thinker'' (1): Init
+  +7'
 ps_-_c: '9'
 dx_-_c: '15'
 cn_-_c: '12'
 ms_-_c: '21'
 ch_-_c: '18'
 in_-_c: '21'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '1'
 plus_to_range_from_level: ''
 plus_to_range: '3'
@@ -140,17 +141,17 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +1, Will +4
 fort_save: '0'
 ref_save: '1'
 will: '4'
-normal_text: "Android 'High Thinker' (1): Init +7; atk weapon melee +2 (1d4); AC 11;\
-  \ HD 11D4 hp 28; MV 30' ; 1d20+1d16; SV Fort +0, Ref +1, Will +4"
+normal_text: 'Android ''High Thinker'' (1): Init +7; atk weapon melee +2 (1d4); AC
+  11; HD 11D4 hp 28; MV 30'' ; 1d20+1d16; SV Fort +0, Ref +1, Will +4'
 description_output: 'Description: Man-made beings with red hued skin and blank stares.Behavior:equipment:
   Communicator, Control Baton, Stim Dose, Mind Booster'
-final_output: "Android 'High Thinker' (1): Init +7; atk weapon melee +2 (1d4); AC\
-  \ 11; HD 11D4 hp 28; MV 30' ; 1d20+1d16; SV Fort +0, Ref +1, Will +4NoneDescription:\
-  \ Man-made beings with red hued skin and blank stares.Behavior:equipment: Communicator,\
-  \ Control Baton, Stim Dose, Mind Booster"
-players: "Android; 'High Thinker';Description: Man-made beings with red hued skin\
-  \ and blank stares.Behavior:equipment: Communicator, Control Baton, Stim Dose, Mind\
-  \ Booster|"
+final_output: 'Android ''High Thinker'' (1): Init +7; atk weapon melee +2 (1d4); AC
+  11; HD 11D4 hp 28; MV 30'' ; 1d20+1d16; SV Fort +0, Ref +1, Will +4NoneDescription:
+  Man-made beings with red hued skin and blank stares.Behavior:equipment: Communicator,
+  Control Baton, Stim Dose, Mind Booster'
+players: 'Android; ''High Thinker'';Description: Man-made beings with red hued skin
+  and blank stares.Behavior:equipment: Communicator, Control Baton, Stim Dose, Mind
+  Booster|'
 id: 71014
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -159,4 +160,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 838
+image_height: 1522
 ---

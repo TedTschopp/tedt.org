@@ -1,53 +1,66 @@
 ---
 layout: post
-title: Ahmed ibn Yusuf - Porter at Bayt al-Ḥikmah
-title-url: 
+title: "Ahmed ibn Yusuf - Porter at Bayt al-\u1E24ikmah"
+title-url: null
 subtitle: Porter at Bayt al
-subtitle-url: 
-quote: "Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library in Baghdad in 1258."
-excerpt: Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library in Baghdad in 1258.
+subtitle-url: null
+quote: Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library
+  in Baghdad in 1258.
+excerpt: Character Concept of Ahmed ibn Yusuf,a porter who works for the Great Library
+  in Baghdad in 1258.
 source: tedt.org
-source-url: 
-call-to-action: 
+source-url: null
+call-to-action: null
 date: 2023-11-05 09:21:36
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-bullets:
-description: Character Concept of Ahmed ibn Yusuf, a porter who works for the Great Library in Baghdad in 1258.
-seo-description: 
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: Character Concept of Ahmed ibn Yusuf, a porter who works for the Great
+  Library in Baghdad in 1258.
+seo-description: null
 categories:
-  - Role Playing Games
-  - Gurps
+- Role Playing Games
+- Gurps
 tags:
-  - RPG
-  - Game Mechanics
-  - Gurps 4th Edition
-keywords: ""
-
+- RPG
+- Game Mechanics
+- Gurps 4th Edition
+keywords: ''
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.webp
-image-alt: "Portrait of Ahmed ibn Yusuf, a porter of Baghdad’s Great Library (Bayt al‑Hikmah), carrying scroll-laden boxes amid richly detailed Islamic architecture."
-image-description: "This evocative illustration portrays Ahmed ibn Yusuf, a devoted porter at the illustrious Bayt al‑Hikmah (House of Wisdom) in 13th-century Baghdad. He stands poised, shouldering numerous crates or scroll chests amid an opulent library interior rendered in stylized Islamic motifs—arched shelves, ornate latticework, and shelves lined with manuscripts. The composition reflects a balance of solemn dignity and everyday labor, connecting a humble figure to the grandeur of medieval intellectual life. The rich textures of wood and parchment, his expressive gaze, and the ambient light filtering through lattice windows combine to evoke a sense of cultural purpose, scholarly depth, and the human scale of knowledge‑keeping during the Islamic Golden Age. This depiction aligns with the character concept of a young, dutiful man working within the world-renowned Great Library of Baghdad, as featured in Ted Tschopp’s portfolio."
+  latitude: 34.147
+  longitude: -117.9709
+image: img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the
+  Great Library in Bagdad.webp
+image-alt: "Portrait of Ahmed ibn Yusuf, a porter of Baghdad\u2019s Great Library\
+  \ (Bayt al\u2011Hikmah), carrying scroll-laden boxes amid richly detailed Islamic\
+  \ architecture."
+image-description: "This evocative illustration portrays Ahmed ibn Yusuf, a devoted\
+  \ porter at the illustrious Bayt al\u2011Hikmah (House of Wisdom) in 13th-century\
+  \ Baghdad. He stands poised, shouldering numerous crates or scroll chests amid an\
+  \ opulent library interior rendered in stylized Islamic motifs\u2014arched shelves,\
+  \ ornate latticework, and shelves lined with manuscripts. The composition reflects\
+  \ a balance of solemn dignity and everyday labor, connecting a humble figure to\
+  \ the grandeur of medieval intellectual life. The rich textures of wood and parchment,\
+  \ his expressive gaze, and the ambient light filtering through lattice windows combine\
+  \ to evoke a sense of cultural purpose, scholarly depth, and the human scale of\
+  \ knowledge\u2011keeping during the Islamic Golden Age. This depiction aligns with\
+  \ the character concept of a young, dutiful man working within the world-renowned\
+  \ Great Library of Baghdad, as featured in Ted Tschopp\u2019s portfolio."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-image-title: "Ahmed ibn Yusuf, Porter at the House of Wisdom"
-
-
-monster-or-magical-or-religious-ideas:  
-year-the-event-took-place:
+image-title: Ahmed ibn Yusuf, Porter at the House of Wisdom
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-order:
-
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 # Ahmed ibn Yusuf - Porter at Bayt al-Ḥikmah - GURPS 4th Edition Character Sheet
 
 ## Attributes:

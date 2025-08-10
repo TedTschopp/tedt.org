@@ -1,76 +1,65 @@
 ---
 layout: post
-
 title: 'The Future of Web-Based Computing: Revolutionizing the Creative Industry'
-title-url:
+title-url: null
 subtitle: How HTML5 and JavaScript Are Bringing Hollywood and Gaming Tools to Your
-    Browser
-subtitle-url:
-quote:
+  Browser
+subtitle-url: null
+quote: null
 excerpt: 'What you are seeing is an HTML5 / JavaScript version of Windows 7 running
-    in the cloud they launch Photoshop and then a 3D game using the Unreal tournament
-    engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running
-    in Firefox using just using HTML5 and JavaScript.
+  in the cloud they launch Photoshop and then a 3D game using the Unreal tournament
+  engine Sutodesk 3D Studio, the tool used to make the Transformers Movies, running
+  in Firefox using just using HTML5 and JavaScript.
 
 
-    Let that sink in for a moment.
+  Let that sink in for a moment.
 
-    '
-source:
-source-url:
-call-to-action:
-
+  '
+source: null
+source-url: null
+call-to-action: null
 date: 2013-11-27 14:34:55+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article showcases videos of a MacBook Pro running Windows 7 that
-    launches complex applications like Photoshop and Unreal tournament engine entirely
-    through a browser using HTML5 and JavaScript. With the backing of influential
-    advisors, companies like oToy are working towards making advanced tools accessible
-    via browsers. The article predicts that within the next 3-5 years, most desktop
-    applications will have web versions, marking a significant shift in the industry.
-seo-description:
-
+  launches complex applications like Photoshop and Unreal tournament engine entirely
+  through a browser using HTML5 and JavaScript. With the backing of influential advisors,
+  companies like oToy are working towards making advanced tools accessible via browsers.
+  The article predicts that within the next 3-5 years, most desktop applications will
+  have web versions, marking a significant shift in the industry.
+seo-description: null
 categories:
 - Computers
-tags:
+tags: null
 keywords: HTML5, JavaScript, web-based computing, MacBook Pro, Windows 7, Photoshop,
-    Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser
-    technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft
-
-
-
+  Unreal tournament engine, Autodesk 3D Studio, Adobe, IBM, Google, Mozilla, browser
+  technology, oToy, cloud computing, Desktop as a Service, Azure, Microsoft
 location:
-    name: Blanchard Canyon Road
+  name: Blanchard Canyon Road
 coordinates:
-    latitude: 34.256278
-    longitude: -118.267083
-
+  latitude: 34.256278
+  longitude: -118.267083
 image: img/2013-11/javascript.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1280
+image_height: 960
 ---
 Take a look at the following video:
 

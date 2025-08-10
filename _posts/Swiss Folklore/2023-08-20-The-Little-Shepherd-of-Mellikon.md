@@ -1,30 +1,25 @@
 ---
 layout: post
-
 title: The Little Shepherd of Mellikon
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: The people simply know him as the Little Shepherd.
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2023-08-20 16:54:49
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: The legend of the Little Shepherd of Mellikon, a tale of theft, sudden
-    death, and a haunting spirit. Discover the history, folklore, and mystery that
-    surround this Aargau legend.
-seo-description:
-
+  death, and a haunting spirit. Discover the history, folklore, and mystery that surround
+  this Aargau legend.
+seo-description: null
 categories:
 - Folklore
 tags:
@@ -49,47 +44,41 @@ tags:
 - Rural Life
 - Cultural Heritage
 keywords: Mellikon, Little Shepherd, Aargau, Swiss Legends, ghost, haunting, Capuchin
-    monk, Neuburgerhalde, folklore, mystery
-
-
-
+  monk, Neuburgerhalde, folklore, mystery
 location:
-    address:
-    city:
-    country:
-    name:
-    on-map: Mellikon (47.6070° N, 8.2884° E)
-    place-names: Mellikon, Zurzach District, Aargau, Switzerland
-    state:
-    zip:
+  address: null
+  city: null
+  country: null
+  name: null
+  on-map: "Mellikon (47.6070\xB0 N, 8.2884\xB0 E)"
+  place-names: Mellikon, Zurzach District, Aargau, Switzerland
+  state: null
+  zip: null
 coordinates:
-    latitude: 47.607
-    longitude: 8.2884
-
+  latitude: 47.607
+  longitude: 8.2884
 image: img/Swiss/A_ghost_of_a_young_Shepherd_emerges.webp
 image-alt: A mysterious cave in the Neuburgerhalde, obscured by shadows and mist.
-    In the foreground, villagers peer upward, faces etched with curiosity and fear.
-    The hole in the rock looms ominously, embodying the legend of the Little Shepherd
-    who still haunts the area.
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
+  In the foreground, villagers peer upward, faces etched with curiosity and fear.
+  The hole in the rock looms ominously, embodying the legend of the Little Shepherd
+  who still haunts the area.
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: The Legend of the Little Shepherd
-image-description:
-image-title:
-
+image-description: null
+image-title: null
 monster-or-magical-or-religious-ideas: Haunting of granary, banishment of spirit
-year-the-event-took-place:
+year-the-event-took-place: null
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 > <ins>Swiss Legends from Aargau, Volume 1, Page 293</ins>
 > 
 > by Ernst L. Rochholz

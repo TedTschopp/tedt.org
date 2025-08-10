@@ -1,29 +1,24 @@
 ---
 layout: post
-
-title: The Weatherman in Pörtlialp
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title: "The Weatherman in P\xF6rtlialp"
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: Whenever people heard a yodel from the 'Beerdli,' bad weather is coming.
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2023-09-23 15:04:59
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
-description: A Swiss German folk tale about a mysterious ghostly weatherman who appears
-    in Pörtlialp that is believed to bring bad weather.
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
+description: "A Swiss German folk tale about a mysterious ghostly weatherman who appears\
+  \ in P\xF6rtlialp that is believed to bring bad weather."
+seo-description: null
 categories:
 - Folklore
 tags:
@@ -31,45 +26,39 @@ tags:
 - Mystery
 - Weather
 - Swiss Culture
-keywords: Swiss German, Folk Tale, Weatherman, Pörtlialp, Bad Weather
-
-
-
+keywords: "Swiss German, Folk Tale, Weatherman, P\xF6rtlialp, Bad Weather"
 location:
-    address:
-    city:
-    country:
-    name:
-    on-map: Betten (46.7758° N, 8.5942° E)
-    place-names: Pörtlialp, Uri, Switzerland
-    state:
-    zip:
+  address: null
+  city: null
+  country: null
+  name: null
+  on-map: "Betten (46.7758\xB0 N, 8.5942\xB0 E)"
+  place-names: "P\xF6rtlialp, Uri, Switzerland"
+  state: null
+  zip: null
 coordinates:
-    latitude: '46.7758'
-    longitude: '8.5942'
-
+  latitude: '46.7758'
+  longitude: '8.5942'
 image: img/Swiss/An_illustration_of_a_large_heavy_man_wearing_a_large_hat.webp
 image-alt: An illustration of a large, heavy man wearing a large hat, walking in a
-    forest.
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
+  forest.
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
-image-credits-title: The Weatherman in Pörtlialp
-image-description:
-image-title:
-
+image-credits-artist-URL: null
+image-credits-title: "The Weatherman in P\xF6rtlialp"
+image-description: null
+image-title: null
 monster-or-magical-or-religious-ideas: Mysterious Weatherman
-year-the-event-took-place:
+year-the-event-took-place: null
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 > <ins>Legends from Uri 1 - 3</ins>
 > 
 > by Hanns Bächtold-Stäubli; Robert Wildhaber

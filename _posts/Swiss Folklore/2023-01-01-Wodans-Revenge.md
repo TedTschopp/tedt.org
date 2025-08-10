@@ -1,71 +1,60 @@
 ---
 layout: post
-
 title: Wodan's Revenge
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: Thus sank Wodan, once worshipped by the people as a holy god.
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2023-01-01 17:18:27-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: Wodan's Revenge narrates the tale of the once-worshipped pagan god Wodan,
-    who sought vengeance against those who turned to Christianity. This rich folklore
-    describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling
-    the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
-seo-description:
-
+  who sought vengeance against those who turned to Christianity. This rich folklore
+  describes Wodan's wrath and the legends of nocturnal ghostly processions, unveiling
+  the transformation of myth through time and beliefs, as noted by C. Kohlrusch.
+seo-description: null
 categories:
 - Folklore
 tags:
 - Odin
-- Rhône
-keywords:
-
-
-
+- "Rh\xF4ne"
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-01/Painting-of-Wodan-coming-down-a-large-river-sitting-on-a-water-horse.webp
-image-alt: Painting of Wodan coming down the a large river sitting on a water horse
-    holding a battle sword in one hand and the globe in the other the river floods
-    the bank and devastates a medieval city. In the style of antichrist, dark yellow
-    and light red, jarosław jaśnikowski, monumental murals, god rays, gustave buchet,
-    hercules seghers
-image-artist:
-image-artist-URL:
-image-credits:
+image-alt: "Painting of Wodan coming down the a large river sitting on a water horse\
+  \ holding a battle sword in one hand and the globe in the other the river floods\
+  \ the bank and devastates a medieval city. In the style of antichrist, dark yellow\
+  \ and light red, jaros\u0142aw ja\u015Bnikowski, monumental murals, god rays, gustave\
+  \ buchet, hercules seghers"
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: Woden's Revenge
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 1024
+image_height: 1024
 ---
-
 > <ins>**The Swiss Book of Legends**</ins>
 >
 > According to oral traditions, chronicles and other printed and handwritten sources and is accompanied by explanatory notes.

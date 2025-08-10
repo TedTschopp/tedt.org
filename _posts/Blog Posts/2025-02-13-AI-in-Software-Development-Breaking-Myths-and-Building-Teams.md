@@ -1,70 +1,69 @@
 ---
 layout: post
-
-title: "AI in Software Development - Breaking Myths and Building Teams"
-subtitle: "AI isn't about making developers faster—it’s about making teams stronger."
-quote: "The future of development isn’t a factory of coders racing against machines, but a workshop of diverse thinkers creating together."
-excerpt: "AI tools like GitHub Copilot aren’t just about speeding up coding—they’re about making software development more collaborative. This post explores the real impact of AI on teams and how to use it wisely."
-source: "Original Content"
-source-url: "https://tedt.org/blog/AI-in-Software-Development-Breaking-Myths-and-Building-Teams"
-call-to-action: "Rethink how AI fits into your team. It's not just about speed—it's about collaboration."
-
+title: AI in Software Development - Breaking Myths and Building Teams
+subtitle: "AI isn't about making developers faster\u2014it\u2019s about making teams\
+  \ stronger."
+quote: "The future of development isn\u2019t a factory of coders racing against machines,\
+  \ but a workshop of diverse thinkers creating together."
+excerpt: "AI tools like GitHub Copilot aren\u2019t just about speeding up coding\u2014\
+  they\u2019re about making software development more collaborative. This post explores\
+  \ the real impact of AI on teams and how to use it wisely."
+source: Original Content
+source-url: https://tedt.org/blog/AI-in-Software-Development-Breaking-Myths-and-Building-Teams
+call-to-action: "Rethink how AI fits into your team. It's not just about speed\u2014\
+  it's about collaboration."
 date: 2025-02-13 12:54:18
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - AI coding tools empower non-developers, not just speed up developers.
-    - Low-code and no-code tools don’t equally benefit all teams.
-    - AI fosters collaboration by breaking down silos in software teams.
-    - Developers will spend more time reviewing AI-generated code, not less.
-    - AI is a bridge for more inclusive, dynamic teams—not a replacement for expertise.
-
-description: "AI in software development isn’t about replacing developers or making them code faster. It’s about transforming teams, fostering collaboration, and expanding who can contribute to software creation."
-
-seo-description: "AI coding tools like GitHub Copilot aren’t just about speed—they make software development more collaborative. Learn how AI is reshaping team dynamics, not replacing developers."
-
-categories: 
-    - Computers
-    - Opinion
-    - Philosophy
-    - Projects
-    - Science
-    - Artificial Intelligence
-
-
-tags: AI in Software Development, GitHub Copilot, Low-Code vs. Pro Dev, Software Teams, AI Collaboration, Technology Leadership
-keywords: AI in coding, GitHub Copilot impact, Low-code vs pro-code, AI in software teams, AI myths in tech, AI and collaboration
-
+- AI coding tools empower non-developers, not just speed up developers.
+- "Low-code and no-code tools don\u2019t equally benefit all teams."
+- AI fosters collaboration by breaking down silos in software teams.
+- Developers will spend more time reviewing AI-generated code, not less.
+- "AI is a bridge for more inclusive, dynamic teams\u2014not a replacement for expertise."
+description: "AI in software development isn\u2019t about replacing developers or\
+  \ making them code faster. It\u2019s about transforming teams, fostering collaboration,\
+  \ and expanding who can contribute to software creation."
+seo-description: "AI coding tools like GitHub Copilot aren\u2019t just about speed\u2014\
+  they make software development more collaborative. Learn how AI is reshaping team\
+  \ dynamics, not replacing developers."
+categories:
+- Computers
+- Opinion
+- Philosophy
+- Projects
+- Science
+- Artificial Intelligence
+tags: AI in Software Development, GitHub Copilot, Low-Code vs. Pro Dev, Software Teams,
+  AI Collaboration, Technology Leadership
+keywords: AI in coding, GitHub Copilot impact, Low-code vs pro-code, AI in software
+  teams, AI myths in tech, AI and collaboration
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-image: "/img/2025-02/AI-in-Software-Development.png"
-image-alt: "A team collaborating on software development with AI tools."
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "AI and Teamwork"
-image-description: "A visual representation of AI enhancing collaboration in software teams."
-image-title: "AI in Software Development"
-
+  latitude: 34.147
+  longitude: -117.9709
+image: /img/2025-02/AI-in-Software-Development.png
+image-alt: A team collaborating on software development with AI tools.
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: AI and Teamwork
+image-description: A visual representation of AI enhancing collaboration in software
+  teams.
+image-title: AI in Software Development
 redirect_from:
-  - /computers/opinion/philosophy/projects/science/AI-in-Software-Development-Breaking-Myths-and-Building-Teams
-
-
+- /computers/opinion/philosophy/projects/science/AI-in-Software-Development-Breaking-Myths-and-Building-Teams
 mastodon-post-id: 113998922120307948
-
+image_width: 1456
+image_height: 816
 ---
-
 ## Summary
 
 AI is reshaping software development teams in unexpected ways. Contrary to the hype, the true promise of AI coding tools isn’t about making experienced developers churn out code faster – it’s about empowering *non-developers* to contribute in ways that once required programming expertise. This shift has led to some misunderstandings about AI’s role in programming teams, with fears of “AI replacing developers” or oversimplified beliefs that *low-code/no-code* tools will magically boost every team’s productivity. In reality, AI’s greatest impact is in fostering collaboration and breaking down the silos of specialization. By enabling cross-functional team members to participate in coding tasks, AI is helping blend skills and perspectives on a project. Developers are not becoming obsolete; instead, they’re guiding a more diverse team of “citizen developers” and domain experts working together. This blog post clears up common myths and highlights how embracing AI can lead to more inclusive, dynamic software teams rather than isolated, faster coders.

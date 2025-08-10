@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Drac.png'
-title: Bat Folk «Dracus»
+image: /RPG/MCC-GW/images/Monster-Manual/Drac.png
+title: "Bat Folk \xABDracus\xBB"
 creature_name_index: Dracus
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: Drac's
 generic_name: ''
 source: Dragon 98 - Ares Section June 1985 - GW2
 author: ''
-author_name: 'William Tracy'
+author_name: William Tracy
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -91,8 +91,8 @@ monster_name: Dracus 'Bat Folk'
 number_appearing: 1d8 (4)
 number_appearing_single: '4'
 init: '+4'
-monster_name_xx_number_if_applicable_init_+-x: "Dracus 'Bat Folk' (1d8 (4)): Init\
-  \ +4"
+monster_name_xx_number_if_applicable_init_+-x: 'Dracus ''Bat Folk'' (1d8 (4)): Init
+  +4'
 ps_-_c: '8'
 dx_-_c: '16'
 cn_-_c: '8'
@@ -158,9 +158,9 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort -1, Ref +2, Will +1
 fort_save: '-1'
 ref_save: '2'
 will: '1'
-normal_text: "Dracus 'Bat Folk' (1d8 (4)): Init +4; atk bite melee  (1d4-1) and 2\
-  \ x claws melee  (1d3-1); AC 17; HD 3D7 hp 12 each; MV 3' or Fly 18' ; 1d20; SV\
-  \ Fort -1, Ref +2, Will +1"
+normal_text: 'Dracus ''Bat Folk'' (1d8 (4)): Init +4; atk bite melee  (1d4-1) and
+  2 x claws melee  (1d3-1); AC 17; HD 3D7 hp 12 each; MV 3'' or Fly 18'' ; 1d20; SV
+  Fort -1, Ref +2, Will +1'
 description_output: 'Description: Dracs are mutant, humanoid-shaped bats, with hollow
   bones and wings allowing them to fly normally. Their hands form part of their wings,
   so they cannot grasp an item and fly at the same time.At night dracs go in search
@@ -178,45 +178,44 @@ description_output: 'Description: Dracs are mutant, humanoid-shaped bats, with h
   tools or equipment, though a rare one, usually the leader of a hunting pack, will
   have some equipment of Tech Level II. Dracs will only associate with their own kind.
   They will never become hirelings or followers.'
-final_output: "Dracus 'Bat Folk' (1d8 (4)): Init +4; atk bite melee  (1d4-1) and 2\
-  \ x claws melee  (1d3-1); AC 17; HD 3D7 hp 12 each; MV 3' or Fly 18' ; 1d20; SV\
-  \ Fort -1, Ref +2, Will +1Beguiling, dark dependency, fear generation, infravision,\
-  \ intuition, new body parts (hands and long legs), regeneration, sonic blast, weather\
-  \ manipulationDescription: Dracs are mutant, humanoid-shaped bats, with hollow bones\
-  \ and wings allowing them to fly normally. Their hands form part of their wings,\
-  \ so they cannot grasp an item and fly at the same time.At night dracs go in search\
-  \ of mamma- lian prey, locating it from the air and surrounding their victims with\
-  \ fog using weather manipulation. They will then use infravision to aim sonic blasts\
-  \ at their victims while staying out of reach. If cornered, they will use their\
-  \ fear generation talent to defend themselves. They will flee rather than fight,\
-  \ if at all possible. After a victim is dead or dis- abled, dracs will land and\
-  \ use their hollow fangs to draw all the blood from the bodies, draining 1d4 hit\
-  \ points per action turn from living victims until twice the number of hit points\
-  \ a victim possesses has been drained (leaving the victim dead and without any blood).It\
-  \ has been suspected that dracs were purposefully engineered by unknown beings,\
-  \ given their strong resemblance to the Ancients concept of vampires. Whether or\
-  \ not this is so remains to be seen. They do not appear to work for any higher power.Dracs\
-  \ will usually not carry any tools or equipment, though a rare one, usually the\
-  \ leader of a hunting pack, will have some equipment of Tech Level II. Dracs will\
-  \ only associate with their own kind. They will never become hirelings or followers."
-players: "Dracus; 'Bat Folk';Description: Dracs are mutant, humanoid-shaped bats,\
-  \ with hollow bones and wings allowing them to fly normally. Their hands form part\
-  \ of their wings, so they cannot grasp an item and fly at the same time.At night\
-  \ dracs go in search of mamma- lian prey, locating it from the air and surrounding\
-  \ their victims with fog using weather manipulation. They will then use infravision\
-  \ to aim sonic blasts at their victims while staying out of reach. If cornered,\
-  \ they will use their fear generation talent to defend themselves. They will flee\
-  \ rather than fight, if at all possible. After a victim is dead or dis- abled, dracs\
-  \ will land and use their hollow fangs to draw all the blood from the bodies, draining\
-  \ 1d4 hit points per action turn from living victims until twice the number of hit\
-  \ points a victim possesses has been drained (leaving the victim dead and without\
-  \ any blood).It has been suspected that dracs were purposefully engineered by unknown\
-  \ beings, given their strong resemblance to the Ancients concept of vampires. Whether\
-  \ or not this is so remains to be seen. They do not appear to work for any higher\
-  \ power.Dracs will usually not carry any tools or equipment, though a rare one,\
-  \ usually the leader of a hunting pack, will have some equipment of Tech Level II.\
-  \ Dracs will only associate with their own kind. They will never become hirelings\
-  \ or followers.|"
+final_output: 'Dracus ''Bat Folk'' (1d8 (4)): Init +4; atk bite melee  (1d4-1) and
+  2 x claws melee  (1d3-1); AC 17; HD 3D7 hp 12 each; MV 3'' or Fly 18'' ; 1d20; SV
+  Fort -1, Ref +2, Will +1Beguiling, dark dependency, fear generation, infravision,
+  intuition, new body parts (hands and long legs), regeneration, sonic blast, weather
+  manipulationDescription: Dracs are mutant, humanoid-shaped bats, with hollow bones
+  and wings allowing them to fly normally. Their hands form part of their wings, so
+  they cannot grasp an item and fly at the same time.At night dracs go in search of
+  mamma- lian prey, locating it from the air and surrounding their victims with fog
+  using weather manipulation. They will then use infravision to aim sonic blasts at
+  their victims while staying out of reach. If cornered, they will use their fear
+  generation talent to defend themselves. They will flee rather than fight, if at
+  all possible. After a victim is dead or dis- abled, dracs will land and use their
+  hollow fangs to draw all the blood from the bodies, draining 1d4 hit points per
+  action turn from living victims until twice the number of hit points a victim possesses
+  has been drained (leaving the victim dead and without any blood).It has been suspected
+  that dracs were purposefully engineered by unknown beings, given their strong resemblance
+  to the Ancients concept of vampires. Whether or not this is so remains to be seen.
+  They do not appear to work for any higher power.Dracs will usually not carry any
+  tools or equipment, though a rare one, usually the leader of a hunting pack, will
+  have some equipment of Tech Level II. Dracs will only associate with their own kind.
+  They will never become hirelings or followers.'
+players: 'Dracus; ''Bat Folk'';Description: Dracs are mutant, humanoid-shaped bats,
+  with hollow bones and wings allowing them to fly normally. Their hands form part
+  of their wings, so they cannot grasp an item and fly at the same time.At night dracs
+  go in search of mamma- lian prey, locating it from the air and surrounding their
+  victims with fog using weather manipulation. They will then use infravision to aim
+  sonic blasts at their victims while staying out of reach. If cornered, they will
+  use their fear generation talent to defend themselves. They will flee rather than
+  fight, if at all possible. After a victim is dead or dis- abled, dracs will land
+  and use their hollow fangs to draw all the blood from the bodies, draining 1d4 hit
+  points per action turn from living victims until twice the number of hit points
+  a victim possesses has been drained (leaving the victim dead and without any blood).It
+  has been suspected that dracs were purposefully engineered by unknown beings, given
+  their strong resemblance to the Ancients concept of vampires. Whether or not this
+  is so remains to be seen. They do not appear to work for any higher power.Dracs
+  will usually not carry any tools or equipment, though a rare one, usually the leader
+  of a hunting pack, will have some equipment of Tech Level II. Dracs will only associate
+  with their own kind. They will never become hirelings or followers.|'
 id: 71171
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -225,4 +224,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 676
+image_height: 644
 ---

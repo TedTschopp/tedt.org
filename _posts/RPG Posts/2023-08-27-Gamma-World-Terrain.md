@@ -1,63 +1,51 @@
 ---
 layout: post
-
 title: Gamma World Terrain Backdrops
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: null
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2023-08-27 10:55:48
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: A collection of images to use as backdrops for Gamma World, inspired
-    by Pixel Art and Retro Video Games
-seo-description:
-
+  by Pixel Art and Retro Video Games
+seo-description: null
 categories:
 - Gamma World
 - Role Playing Games
-tags:
-keywords:
-
+tags: null
+keywords: null
 redirect_from:
-  - /gamma%20world/role%20playing%20games/Gamma-World-Terrain
-
-
+- /gamma%20world/role%20playing%20games/Gamma-World-Terrain
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/Gamma-World-Midjourney.png
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-artist: Ted Tschopp using Midjourney
 image-artist-URL: https://tedt.org/
-image-description: An ancient, rusted piece of advanced technology, half-buried in the ground, with glowing circuits and strange symbols. Inspired by Gamma World TTRPG, combining elements of steampunk and sci-fi, Spelling out "Gamma World"
+image-description: An ancient, rusted piece of advanced technology, half-buried in
+  the ground, with glowing circuits and strange symbols. Inspired by Gamma World TTRPG,
+  combining elements of steampunk and sci-fi, Spelling out "Gamma World"
 image-title: Gamma World Smart Brick
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
 mastodon-post-id: 110963006446543896
-
+image_width: 1456
+image_height: 816
 ---
 The following was a prompt experiment in Midjourney.  My goal was to create a series of background or header images that felt like they were imagery from Gamma World.  Here is a what came out.
 

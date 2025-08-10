@@ -1,71 +1,76 @@
 ---
 layout: post
-
-title: "From Chaos to Clarity"
-subtitle: "Transforming Meeting Transcripts into Business Requirements with AI Prompt Engineering"
-quote: "Each prompt is a small act of hope, a careful step toward clarity, richer understanding, and a future shaped intentionally, thoughtfully, and perhaps just a little poetically."
-excerpt: "This article demonstrates how AI-powered prompt engineering can transform everyday business tasks—like distilling clear requirements from messy meeting transcripts—into opportunities for clarity, empathy, and improvement."
-source: "Original Content"
-source-url: ""
-call-to-action: "Explore the attached prompts and outputs to deepen your understanding and try your own hand at prompt engineering."
-
+title: From Chaos to Clarity
+subtitle: Transforming Meeting Transcripts into Business Requirements with AI Prompt
+  Engineering
+quote: Each prompt is a small act of hope, a careful step toward clarity, richer understanding,
+  and a future shaped intentionally, thoughtfully, and perhaps just a little poetically.
+excerpt: "This article demonstrates how AI-powered prompt engineering can transform\
+  \ everyday business tasks\u2014like distilling clear requirements from messy meeting\
+  \ transcripts\u2014into opportunities for clarity, empathy, and improvement."
+source: Original Content
+source-url: ''
+call-to-action: Explore the attached prompts and outputs to deepen your understanding
+  and try your own hand at prompt engineering.
 date: 2025-04-06
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - AI prompt engineering transforms mundane business tasks into opportunities for clarity and insight
-    - Three-step approach: extract requirements, visualize user journeys, and provide critical feedback
-    - Structured prompts create dialogue between human intent and AI capability
-    - Meeting transcripts contain hidden gems that can be revealed through thoughtful AI interaction
-    - Prompt engineering is about crafting hope and intentional steps toward understanding
-
-description: "A practical demonstration of how AI prompt engineering can extract clear business requirements from cluttered meeting transcripts, showing how three carefully crafted prompts can transform chaos into clarity, empathy, and actionable insights."
-
-seo-description: "Learn how AI prompt engineering transforms messy meeting transcripts into clear business requirements through structured prompts, user journey mapping, and quality feedback."
-
-categories: 
-    - Artificial Intelligence
-    - Computers
-    - Opinion
-
-tags: 
-    - prompt engineering
-    - business requirements
-    - meeting transcripts
-    - AI workflow
-    - clarity
-    - empathy
-    - user journey mapping
-    - quality review
-
-keywords: AI prompt engineering, business requirements extraction, meeting transcript analysis, user journey mapping, AI workflow optimization, prompt crafting, business clarity, AI empathy, requirements quality review
-
+- AI prompt engineering transforms mundane business tasks into opportunities for clarity
+  and insight
+- Three-step approach: extract requirements, visualize user journeys, and provide
+    critical feedback
+- Structured prompts create dialogue between human intent and AI capability
+- Meeting transcripts contain hidden gems that can be revealed through thoughtful
+  AI interaction
+- Prompt engineering is about crafting hope and intentional steps toward understanding
+description: A practical demonstration of how AI prompt engineering can extract clear
+  business requirements from cluttered meeting transcripts, showing how three carefully
+  crafted prompts can transform chaos into clarity, empathy, and actionable insights.
+seo-description: Learn how AI prompt engineering transforms messy meeting transcripts
+  into clear business requirements through structured prompts, user journey mapping,
+  and quality feedback.
+categories:
+- Artificial Intelligence
+- Computers
+- Opinion
+tags:
+- prompt engineering
+- business requirements
+- meeting transcripts
+- AI workflow
+- clarity
+- empathy
+- user journey mapping
+- quality review
+keywords: AI prompt engineering, business requirements extraction, meeting transcript
+  analysis, user journey mapping, AI workflow optimization, prompt crafting, business
+  clarity, AI empathy, requirements quality review
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/From-Chaos-to-Clarity.webp
-image-alt: "Abstract visualization of transforming chaotic meeting notes into clear structured requirements"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "From Chaos to Clarity"
-image-description: "Visual representation of AI transforming messy meeting transcripts into organized business requirements"
-image-title: "From Chaos to Clarity: AI Prompt Engineering"
-
-mastodon-post-id: 
-
+image-alt: Abstract visualization of transforming chaotic meeting notes into clear
+  structured requirements
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: From Chaos to Clarity
+image-description: Visual representation of AI transforming messy meeting transcripts
+  into organized business requirements
+image-title: 'From Chaos to Clarity: AI Prompt Engineering'
+mastodon-post-id: null
+image_width: 1536
+image_height: 1024
 ---
-
 _**Bottom Line Up Front:**_ _This article demonstrates how AI-powered prompt engineering can transform everyday business tasks—like distilling clear requirements from messy meeting transcripts—into opportunities for clarity, empathy, and improvement. You’ll learn how structured prompts can extract key insights, visualize user journeys, and even offer critical feedback on requirements quality._
 
 _For those interested, the prompts and the resulting outputs from each step have been attached to the bottom of this article. You are invited to explore these materials to deepen your understanding and perhaps try your own hand at prompt engineering._

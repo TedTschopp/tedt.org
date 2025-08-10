@@ -1,70 +1,57 @@
 ---
 layout: post
-
 title: Nukes and Radiation in Dungeons and Dragons 5th Edition for Gamma World
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: 'I plan on having two systems for Radiation Damage in my D&D 5e Gamma World
-    system.  The first is a realisitic system that will be used for dramatic purposes...
-    ...the second system will basically set a CON Save vs a DC that is based on the
-    Radiation Intensity
+  system.  The first is a realisitic system that will be used for dramatic purposes...
+  ...the second system will basically set a CON Save vs a DC that is based on the
+  Radiation Intensity
 
-    '
-source:
-source-url:
-call-to-action:
-
+  '
+source: null
+source-url: null
+call-to-action: null
 date: 2018-04-25 02:20:00+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: A comprehensive guide on implementing nukes and radiation in Dungeons
-    and Dragons 5th Edition for Gamma World. Learn about radiation damage, new stats,
-    and the effects of nuclear blasts in your game.
-seo-description:
-
+  and Dragons 5th Edition for Gamma World. Learn about radiation damage, new stats,
+  and the effects of nuclear blasts in your game.
+seo-description: null
 categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
-tags:
+tags: null
 keywords: Dungeons and Dragons, Gamma World, Radiation, Nukes, 5th Edition, Role playing
-    games, Game Master
-
-
-
+  games, Game Master
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-04/Third-Edition.webp
-image-alt:
+image-alt: null
 image-artist: Keith Parkinson
 image-artist-URL: https://www.keithparkinson.com/
 image-credits: The Ultimate A.T.V. by Keith Parkinson -  https://www.keithparkinson.com/
-image-description: A humanoid in technology powered armor riding on a giant mutated wolverine on top of a mountain. 
+image-description: A humanoid in technology powered armor riding on a giant mutated
+  wolverine on top of a mountain.
 image-title: The Ultimate A.T.V.
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 866
+image_height: 1024
 ---
-
-
-
 # Notes
 
 This work is incomplete.  It still needs to be drawn together and form a consistant whole.  I plan on having two systems for Radiation Damage in my D&D 5e Gamma World system.  The first is a realisitic system that will be used for dramatic purposes.  This will be a system that will model the idea of someone who is so radiated that they are going to die, but it will take them weeks or months to do so.  This will give the player the option of finding a cure with some sort of Ancient Tech or revenge a wrong before dying.  The other system will mirror the radiation systems found in 1st and 2nd editions of Gamma World.  This system is not complete yet, as the math is still being done.  This second system will basically set a CON Save vs a DC that is based on the Radiation Intensity plus any modifiers based on armor or whatnot and give you an outcome that can either be mitigated by damage, mutation, or exhaustion effects.  I also plan on having a new damage type that will track to radiation damage in the realistic / dramatic system.  Radiation Damage effects will be able to be mitigated by Ancient Tech Medicine whcih will either repair your radiation stat or your remove various effects and negative bonuses to CON rolls.   

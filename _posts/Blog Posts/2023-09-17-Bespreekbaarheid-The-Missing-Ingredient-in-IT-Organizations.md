@@ -1,72 +1,58 @@
 ---
 layout: post
-
 title: 'Bespreekbaarheid: The Missing Ingredient in IT Organizations'
-title-url:
+title-url: null
 subtitle: A Path to Openness in IT
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2023-09-17 16:48:28
 update: 2025-01-06 10:32:09
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: Explore the concept of Bespreekbaarheid, a Dutch term that encourages
-    open dialogue and transparency, and discover why it's crucial for success in IT
-    organizations. Learn how it fosters innovation, enhances problem-solving, and
-    builds trust among team members.
-seo-description:
-
+  open dialogue and transparency, and discover why it's crucial for success in IT
+  organizations. Learn how it fosters innovation, enhances problem-solving, and builds
+  trust among team members.
+seo-description: null
 categories:
 - Computers
 - Communications
-tags:
+tags: null
 keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
-    Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
-
-
-
+  Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-    
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-09/Ted_Tschopp_Pop_Art_Modern_Office.webp
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
-image-artist:
-image-artist-URL:
-image-credits:
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: Modern Office
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 redirect_from:
-  - /computers/communications/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations
-
+- /computers/communications/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations
 mastodon-post-id: 113782781327230004
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
-
-
 ### Bespreekbaarheid: A Path to Openness in IT
 
 Over the weekend, I stumbled upon a Dutch word that lingers in my mind like a melody I can’t shake—**Bespreekbaarheid**. It’s more than just a word; it’s a philosophy that encourages open dialogue and transparency. It resonated deeply with me, not only because of my wife’s Dutch heritage but because of its profound implications for my work in IT. I began to wonder: what would change if we brought this ethos into our workplaces? What if the freedom to speak openly became the foundation of how we worked together?

@@ -1,72 +1,61 @@
 ---
 layout: post
-
 title: 'Motorola''s Project Ara: The Future of Modular Smartphones or a Doomed Venture?'
-title-url:
+title-url: null
 subtitle: An Exploration of the Commodification of Smartphone Components and Why it
-    May Fail
-subtitle-url:
-quote:
+  May Fail
+subtitle-url: null
+quote: null
 excerpt: 'Today TechCruch covered a direction Motorola is taking with a project called
-    Ara.  The idea here is that a smart phone can be broken up into individual components
-    and you can buy each of them individually.  This looks really intriguing from
-    a business perspective as well as the perspective of a technologist such as myself.  However
-    cool this idea is, I think it is doomed to failure. '
-source:
-source-url:
-call-to-action:
-
+  Ara.  The idea here is that a smart phone can be broken up into individual components
+  and you can buy each of them individually.  This looks really intriguing from a
+  business perspective as well as the perspective of a technologist such as myself.  However
+  cool this idea is, I think it is doomed to failure. '
+source: null
+source-url: null
+call-to-action: null
 date: 2013-11-22 12:47:26+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: The article explores Motorola's project Ara, an ambitious idea of creating
-    smartphones with individual, purchasable components. While intriguing, the author
-    argues that this model may be doomed due to its contrast with the existing commodification
-    in the tech industry, highlighting the practical challenges and the rise of wearable
-    computing as a more likely direction.
-seo-description:
-
+  smartphones with individual, purchasable components. While intriguing, the author
+  argues that this model may be doomed due to its contrast with the existing commodification
+  in the tech industry, highlighting the practical challenges and the rise of wearable
+  computing as a more likely direction.
+seo-description: null
 categories:
 - Computers
 - Mobile
-tags:
+tags: null
 keywords: Motorola, Project Ara, modular smartphones, commodification, device components,
-    TechCrunch, wearable computing, Bluetooth 4.0 LE, PC industry, technology trends,
-    smartphone innovation, disruption, customization
-
-
-
+  TechCrunch, wearable computing, Bluetooth 4.0 LE, PC industry, technology trends,
+  smartphone innovation, disruption, customization
 location:
-    name: Blanchard Canyon Road
+  name: Blanchard Canyon Road
 coordinates:
-    latitude: 34.256278
-    longitude: -118.267083
-
+  latitude: 34.256278
+  longitude: -118.267083
 image: img/2013-11/modules-283e329ee51bbee11f4765c3501e7d1b.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1140
+image_height: 570
 ---
 Today <a href="http://techcrunch.com/2013/11/22/motorola-taps-3d-systems-to-produce-parts-for-its-crazy-modular-smartphones/" target="_blank" rel="noopener noreferrer">TechCruch covered a direction Motorola is taking</a> with a project called <a href="http://www.dscout.com/ara#" target="_blank" rel="noopener noreferrer">Ara</a>.  The idea here is that a smart phone can be broken up into individual components and you can buy each of them individually.  This looks really intriguing from a business perspective as well as the perspective of a technologist such as myself.  However cool this idea is, I think it is doomed to failure.
 

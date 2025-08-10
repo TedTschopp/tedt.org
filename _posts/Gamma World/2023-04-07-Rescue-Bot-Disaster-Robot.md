@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Disaster Robot.png'
-title: Rescue Bot «Disaster Robot»
+image: /RPG/MCC-GW/images/Monster-Manual/Disaster Robot.png
+title: "Rescue Bot \xABDisaster Robot\xBB"
 creature_name_index: Disaster Robot
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Rescue Bot
 source: 4th Edition
 author: ''
-author_name: 'Bruce Nesmith and James M. Ward'
+author_name: Bruce Nesmith and James M. Ward
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'
@@ -97,8 +97,8 @@ monster_name: Disaster Robot 'Rescue Bot'
 number_appearing: 2d6 (7)
 number_appearing_single: '7'
 init: '+3'
-monster_name_xx_number_if_applicable_init_+-x: "Disaster Robot 'Rescue Bot' (2d6 (7)):\
-  \ Init +3"
+monster_name_xx_number_if_applicable_init_+-x: 'Disaster Robot ''Rescue Bot'' (2d6
+  (7)): Init +3'
 ps_-_c: '25'
 dx_-_c: '15'
 cn_-_c: '16'
@@ -164,73 +164,71 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +2, Ref +1, Will +0
 fort_save: '2'
 ref_save: '1'
 will: '0'
-normal_text: "Disaster Robot 'Rescue Bot' (2d6 (7)): Init +3; atk 2 x hands melee\
-  \ +8 (1d4+6) and 2 x tentacles melee +8 (1d10+6); AC 16; HD 4D12 hp 26 each; MV\
-  \ GravPods 63' ; 1d20; SV Fort +2, Ref +1, Will +0"
-description_output: "Description: The top of this oval robot looks like a serving\
-  \ plate.  A smooth mass of metal hangs down a full meter below this concave area.\
-  \  Two 2-meter-long retractable tentacles are mounted along the edges.  It floats\
-  \ on antigrav pods.  It uses a calm, smooth female voice for victims, anda bold,\
-  \ authortative male voice for bystanders.Behavior:Upon arriving at the scene, the\
-  \ robot spends a few rounds questioning observers, if any, while searching for signs\
-  \ of life.  It then determines the most effective course of action to save the most\
-  \ lives.  Only after all lives are accounted for willit concern itself with preventing\
-  \ property damage.  Each person located is placed on the robot's upper surface and\
-  \ weak force field encloses them.  Fresh air is pumped in and emergency medical\
-  \ treatment is rendered if necessary.  The robot carries each reduced individual\
-  \ to safety and then gives and gets the next one.  Medical care is not given once\
-  \ the victim is safe from the disaster scene.  The robot will politely, but forcefully,\
-  \ remove looters or other dangerous individuals from the scene, using a stun ray\
-  \ or screamer.Mission: To save human lives and prevent or minimize property damage\
-  \ in the event of a natural disaster, such as fire, flood, earthquake, industrial\
-  \ accident, explosion, plane crash, etc.Equiptment: 8x Telescopic Cameras8x IR Cameras4\
-  \ x Spotlights1 x Lifeforce Detector1 x Communicator1 x Envirolizer1 x Geiger Counter,1\
-  \ x Medkit Tech Level 51 x Remote Hand4 x Fire Extinguishers4 x Air Fliters4 x oxygen\
-  \ tanks1 x Stun Ray Pistol1 x laser Pistol1 x screamer1 x chainsaw"
-final_output: "Disaster Robot 'Rescue Bot' (2d6 (7)): Init +3; atk 2 x hands melee\
-  \ +8 (1d4+6) and 2 x tentacles melee +8 (1d10+6); AC 16; HD 4D12 hp 26 each; MV\
-  \ GravPods 63' ; 1d20; SV Fort +2, Ref +1, Will +0NoneDescription: The top of this\
-  \ oval robot looks like a serving plate.  A smooth mass of metal hangs down a full\
-  \ meter below this concave area.  Two 2-meter-long retractable tentacles are mounted\
-  \ along the edges.  It floats on antigrav pods.  It uses a calm, smooth female voice\
-  \ for victims, anda bold, authortative male voice for bystanders.Behavior:Upon arriving\
-  \ at the scene, the robot spends a few rounds questioning observers, if any, while\
-  \ searching for signs of life.  It then determines the most effective course of\
-  \ action to save the most lives.  Only after all lives are accounted for willit\
-  \ concern itself with preventing property damage.  Each person located is placed\
-  \ on the robot's upper surface and weak force field encloses them.  Fresh air is\
-  \ pumped in and emergency medical treatment is rendered if necessary.  The robot\
-  \ carries each reduced individual to safety and then gives and gets the next one.\
-  \  Medical care is not given once the victim is safe from the disaster scene.  The\
-  \ robot will politely, but forcefully, remove looters or other dangerous individuals\
-  \ from the scene, using a stun ray or screamer.Mission: To save human lives and\
-  \ prevent or minimize property damage in the event of a natural disaster, such as\
-  \ fire, flood, earthquake, industrial accident, explosion, plane crash, etc.Equiptment:\
-  \ 8x Telescopic Cameras8x IR Cameras4 x Spotlights1 x Lifeforce Detector1 x Communicator1\
-  \ x Envirolizer1 x Geiger Counter,1 x Medkit Tech Level 51 x Remote Hand4 x Fire\
-  \ Extinguishers4 x Air Fliters4 x oxygen tanks1 x Stun Ray Pistol1 x laser Pistol1\
-  \ x screamer1 x chainsaw"
-players: "Disaster Robot; 'Rescue Bot';Description: The top of this oval robot looks\
-  \ like a serving plate.  A smooth mass of metal hangs down a full meter below this\
-  \ concave area.  Two 2-meter-long retractable tentacles are mounted along the edges.\
-  \  It floats on antigrav pods.  It uses a calm, smooth female voice for victims,\
-  \ anda bold, authortative male voice for bystanders.Behavior:Upon arriving at the\
-  \ scene, the robot spends a few rounds questioning observers, if any, while searching\
-  \ for signs of life.  It then determines the most effective course of action to\
-  \ save the most lives.  Only after all lives are accounted for willit concern itself\
-  \ with preventing property damage.  Each person located is placed on the robot's\
-  \ upper surface and weak force field encloses them.  Fresh air is pumped in and\
-  \ emergency medical treatment is rendered if necessary.  The robot carries each\
-  \ reduced individual to safety and then gives and gets the next one.  Medical care\
-  \ is not given once the victim is safe from the disaster scene.  The robot will\
-  \ politely, but forcefully, remove looters or other dangerous individuals from the\
-  \ scene, using a stun ray or screamer.Mission: To save human lives and prevent or\
-  \ minimize property damage in the event of a natural disaster, such as fire, flood,\
-  \ earthquake, industrial accident, explosion, plane crash, etc.Equiptment: 8x Telescopic\
-  \ Cameras8x IR Cameras4 x Spotlights1 x Lifeforce Detector1 x Communicator1 x Envirolizer1\
-  \ x Geiger Counter,1 x Medkit Tech Level 51 x Remote Hand4 x Fire Extinguishers4\
-  \ x Air Fliters4 x oxygen tanks1 x Stun Ray Pistol1 x laser Pistol1 x screamer1\
-  \ x chainsaw|"
+normal_text: 'Disaster Robot ''Rescue Bot'' (2d6 (7)): Init +3; atk 2 x hands melee
+  +8 (1d4+6) and 2 x tentacles melee +8 (1d10+6); AC 16; HD 4D12 hp 26 each; MV GravPods
+  63'' ; 1d20; SV Fort +2, Ref +1, Will +0'
+description_output: 'Description: The top of this oval robot looks like a serving
+  plate.  A smooth mass of metal hangs down a full meter below this concave area.  Two
+  2-meter-long retractable tentacles are mounted along the edges.  It floats on antigrav
+  pods.  It uses a calm, smooth female voice for victims, anda bold, authortative
+  male voice for bystanders.Behavior:Upon arriving at the scene, the robot spends
+  a few rounds questioning observers, if any, while searching for signs of life.  It
+  then determines the most effective course of action to save the most lives.  Only
+  after all lives are accounted for willit concern itself with preventing property
+  damage.  Each person located is placed on the robot''s upper surface and weak force
+  field encloses them.  Fresh air is pumped in and emergency medical treatment is
+  rendered if necessary.  The robot carries each reduced individual to safety and
+  then gives and gets the next one.  Medical care is not given once the victim is
+  safe from the disaster scene.  The robot will politely, but forcefully, remove looters
+  or other dangerous individuals from the scene, using a stun ray or screamer.Mission:
+  To save human lives and prevent or minimize property damage in the event of a natural
+  disaster, such as fire, flood, earthquake, industrial accident, explosion, plane
+  crash, etc.Equiptment: 8x Telescopic Cameras8x IR Cameras4 x Spotlights1 x Lifeforce
+  Detector1 x Communicator1 x Envirolizer1 x Geiger Counter,1 x Medkit Tech Level
+  51 x Remote Hand4 x Fire Extinguishers4 x Air Fliters4 x oxygen tanks1 x Stun Ray
+  Pistol1 x laser Pistol1 x screamer1 x chainsaw'
+final_output: 'Disaster Robot ''Rescue Bot'' (2d6 (7)): Init +3; atk 2 x hands melee
+  +8 (1d4+6) and 2 x tentacles melee +8 (1d10+6); AC 16; HD 4D12 hp 26 each; MV GravPods
+  63'' ; 1d20; SV Fort +2, Ref +1, Will +0NoneDescription: The top of this oval robot
+  looks like a serving plate.  A smooth mass of metal hangs down a full meter below
+  this concave area.  Two 2-meter-long retractable tentacles are mounted along the
+  edges.  It floats on antigrav pods.  It uses a calm, smooth female voice for victims,
+  anda bold, authortative male voice for bystanders.Behavior:Upon arriving at the
+  scene, the robot spends a few rounds questioning observers, if any, while searching
+  for signs of life.  It then determines the most effective course of action to save
+  the most lives.  Only after all lives are accounted for willit concern itself with
+  preventing property damage.  Each person located is placed on the robot''s upper
+  surface and weak force field encloses them.  Fresh air is pumped in and emergency
+  medical treatment is rendered if necessary.  The robot carries each reduced individual
+  to safety and then gives and gets the next one.  Medical care is not given once
+  the victim is safe from the disaster scene.  The robot will politely, but forcefully,
+  remove looters or other dangerous individuals from the scene, using a stun ray or
+  screamer.Mission: To save human lives and prevent or minimize property damage in
+  the event of a natural disaster, such as fire, flood, earthquake, industrial accident,
+  explosion, plane crash, etc.Equiptment: 8x Telescopic Cameras8x IR Cameras4 x Spotlights1
+  x Lifeforce Detector1 x Communicator1 x Envirolizer1 x Geiger Counter,1 x Medkit
+  Tech Level 51 x Remote Hand4 x Fire Extinguishers4 x Air Fliters4 x oxygen tanks1
+  x Stun Ray Pistol1 x laser Pistol1 x screamer1 x chainsaw'
+players: 'Disaster Robot; ''Rescue Bot'';Description: The top of this oval robot looks
+  like a serving plate.  A smooth mass of metal hangs down a full meter below this
+  concave area.  Two 2-meter-long retractable tentacles are mounted along the edges.  It
+  floats on antigrav pods.  It uses a calm, smooth female voice for victims, anda
+  bold, authortative male voice for bystanders.Behavior:Upon arriving at the scene,
+  the robot spends a few rounds questioning observers, if any, while searching for
+  signs of life.  It then determines the most effective course of action to save the
+  most lives.  Only after all lives are accounted for willit concern itself with preventing
+  property damage.  Each person located is placed on the robot''s upper surface and
+  weak force field encloses them.  Fresh air is pumped in and emergency medical treatment
+  is rendered if necessary.  The robot carries each reduced individual to safety and
+  then gives and gets the next one.  Medical care is not given once the victim is
+  safe from the disaster scene.  The robot will politely, but forcefully, remove looters
+  or other dangerous individuals from the scene, using a stun ray or screamer.Mission:
+  To save human lives and prevent or minimize property damage in the event of a natural
+  disaster, such as fire, flood, earthquake, industrial accident, explosion, plane
+  crash, etc.Equiptment: 8x Telescopic Cameras8x IR Cameras4 x Spotlights1 x Lifeforce
+  Detector1 x Communicator1 x Envirolizer1 x Geiger Counter,1 x Medkit Tech Level
+  51 x Remote Hand4 x Fire Extinguishers4 x Air Fliters4 x oxygen tanks1 x Stun Ray
+  Pistol1 x laser Pistol1 x screamer1 x chainsaw|'
 id: 71168
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -239,4 +237,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 714
+image_height: 820
 ---

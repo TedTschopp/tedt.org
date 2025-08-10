@@ -1,5 +1,5 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Cycloptron.png'
+image: /RPG/MCC-GW/images/Monster-Manual/Cycloptron.png
 title: Cycloptron
 creature_name_index: Cycloptron
 notes: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 075
 author: ''
-author_name: 'Roger Moore'
+author_name: Roger Moore
 url: ''
 avatar: ''
 mcc_race: ''
@@ -151,4 +151,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 614
+image_height: 1022
 ---

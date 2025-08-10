@@ -1,68 +1,50 @@
 ---
 layout: post
-
 title: Getting an AI to Run Your Next TTRPG
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: "How I have used AI Chatbots to help generate content and ideas for Table\
-    \ Top Role Playing Games.   \n"
-source:
-source-url:
-call-to-action:
-
+  \ Top Role Playing Games.   \n"
+source: null
+source-url: null
+call-to-action: null
 date: 2022-12-23 16:15:17-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 categories:
-  - Artificial Intelligence
-  - Role Playing Games
-
-description:
-seo-description:
-
+- Artificial Intelligence
+- Role Playing Games
+description: null
+seo-description: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-
-
-location:
-    name: Bradbury, CA
-coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
 image-alt: Gamma World 1st Edition RPG Books and dice
-image-artist:
-image-artist-URL:
-image-credits:
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: https://www.facebook.com/mudpuppycomics
 image-credits-artist: Jim Wampler
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: OSR Role Playing Game Dice
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 598
+image_height: 626
 ---
-
 I have spent a long part of my Christmas vacation figuring out how to drive an AI Chatbot (https://chat.openai.com/chat) to help people run Role Playing Games. 
 
 ## Paranoia 

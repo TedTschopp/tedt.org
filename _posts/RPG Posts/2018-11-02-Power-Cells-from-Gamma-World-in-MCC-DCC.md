@@ -1,62 +1,50 @@
 ---
 layout: post
-
 title: Power Cells from Gamma World in MCC & DCC
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: "The following is an integration of rules for Gamma World's Power Cells with\
-    \  Mutant Crawl Classic.  \n"
-source:
-source-url:
-call-to-action:
-
+  \  Mutant Crawl Classic.  \n"
+source: null
+source-url: null
+call-to-action: null
 date: 2018-11-02 10:37:12-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: "The following is an integration of rules for Gamma World's Power Cells\
-    \ with  Mutant Crawl Classic.  \n"
+  \ with  Mutant Crawl Classic.  \n"
 seo-description: "The following is an integration of rules for Gamma World's Power\
-    \ Cells with  Mutant Crawl Classic.  \n"
-
+  \ Cells with  Mutant Crawl Classic.  \n"
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name:
+  name: null
 coordinates:
-    latitude: 
-    longitude:
-
+  latitude: null
+  longitude: null
 image: img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp
-image-alt:
+image-alt: null
 image-artist: Josh Haberman
 image-artist-URL: https://www.artstation.com/artwork/lqz25
-image-description:
+image-description: null
 image-title: District 9 Alien Fuel Cell
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 628
+image_height: 640
 ---
-
 # POWER CELLS
 
 ## C-CELL

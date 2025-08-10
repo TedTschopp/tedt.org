@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Ameebies as humanoid.png
-title: Shapeless Ones «Ameebies (as blob)»
+title: "Shapeless Ones \xABAmeebies (as blob)\xBB"
 creature_name_index: Ameebies (as blob)
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-author_name: 'Dan Snuffin'
+author_name: Dan Snuffin
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -100,8 +100,8 @@ monster_name: Ameebies (as blob) 'Shapeless Ones'
 number_appearing: '1'
 number_appearing_single: '1'
 init: '+2'
-monster_name_xx_number_if_applicable_init_+-x: "Ameebies (as blob) 'Shapeless Ones'\
-  \ (1): Init +2"
+monster_name_xx_number_if_applicable_init_+-x: 'Ameebies (as blob) ''Shapeless Ones''
+  (1): Init +2'
 ps_-_c: '15'
 dx_-_c: '10'
 cn_-_c: '10'
@@ -166,95 +166,92 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +0, Ref +0, Will -2
 fort_save: '0'
 ref_save: '0'
 will: '-2'
-normal_text: "Ameebies (as blob) 'Shapeless Ones' (1): Init +2; atk see description;\
-  \ AC 18; HD 4D7 hp 16; MV 4' ; 1d20; SV Fort +0, Ref +0, Will -2"
-description_output: "Description: Ameebies may be descended from giant microbes produced\
-  \ in genetic-engineering laboratories during the Shadow Years, though little else\
-  \ is known of their origins. An ameebie has two forms. The first is that of an amophous\
-  \ blob, roughly 2-3 m in diameter. The blob is omnivorous and attacks living prey\
-  \ by attempting to stretch out, envelope, and smother the victim. A successful to\
-  \ hit roll means the ameebie has extended a pseudopod and successfully covered the\
-  \ victims face. (Being rather intelligent, the ameebie knows where to aim.) The\
-  \ victim takes 2d6 damage per Action Turn there- after until either it or the ameebie\
-  \ is slain. Blunt weapons (clubs, maces, etc.) do no damage to the ameebie in this\
-  \ form, as it can reshape itself to absorb the blows impact.The ameebie's second\
-  \ form is that of a humanoid being, devoid of facial features, hair, and so forth.\
-  \ This form is about 1.5 m tall, and takes 2 Action Turns without interruption to\
-  \ assume. In this form, the ameebie cannot digest prey, as it is using all of its\
-  \ energy to maintain the humanoid shape. It is not known if ameebies can assume\
-  \ other forms.Ameebies cannot be affected by cold. They automatically form a hard,\
-  \ rubbery surface when subjected to cold tempera- tures, and actually gain 1 armor\
-  \ class level for every 10 hit points of cold damagethey absorb (even from mutant\
-  \ cold-generating powers). The lowest armor class they can attain is AC 3.Ameebies\
-  \ are quite intelligent and may join adventuring parties out of curiosity. They\
-  \ see by using thousands of minute eyespots over their bodies. Though severely myopic\
-  \ (missing all objects fur- ther than 10 m away), they cannot be surprised within\
-  \ their limited visual range. Ameebies are deaf, but have normal senses of touch.\
-  \ They eat any organic matter, being immune to poisons. Some ameebies have learned\
-  \ to communicate with other beings using very rudimentary sign language. They also\
-  \ regenerate any physical damage they take.Nothing is known about how ameebies reproduce,\
-  \ though it is guessed that they use budding or fission. Ameebies cannot be contacted\
-  \ by using telepathic powers of any sort. For some reason, they seem to avoid their\
-  \ own kind, and are only encountered singly."
-final_output: "Ameebies (as blob) 'Shapeless Ones' (1): Init +2; atk see description;\
-  \ AC 18; HD 4D7 hp 16; MV 4' ; 1d20; SV Fort +0, Ref +0, Will -2Description: Ameebies\
-  \ may be descended from giant microbes produced in genetic-engineering laboratories\
-  \ during the Shadow Years, though little else is known of their origins. An ameebie\
-  \ has two forms. The first is that of an amophous blob, roughly 2-3 m in diameter.\
-  \ The blob is omnivorous and attacks living prey by attempting to stretch out, envelope,\
-  \ and smother the victim. A successful to hit roll means the ameebie has extended\
-  \ a pseudopod and successfully covered the victims face. (Being rather intelligent,\
-  \ the ameebie knows where to aim.) The victim takes 2d6 damage per Action Turn there-\
-  \ after until either it or the ameebie is slain. Blunt weapons (clubs, maces, etc.)\
-  \ do no damage to the ameebie in this form, as it can reshape itself to absorb the\
-  \ blows impact.The ameebie's second form is that of a humanoid being, devoid of\
-  \ facial features, hair, and so forth. This form is about 1.5 m tall, and takes\
-  \ 2 Action Turns without interruption to assume. In this form, the ameebie cannot\
-  \ digest prey, as it is using all of its energy to maintain the humanoid shape.\
-  \ It is not known if ameebies can assume other forms.Ameebies cannot be affected\
-  \ by cold. They automatically form a hard, rubbery surface when subjected to cold\
-  \ tempera- tures, and actually gain 1 armor class level for every 10 hit points\
-  \ of cold damagethey absorb (even from mutant cold-generating powers). The lowest\
-  \ armor class they can attain is AC 3.Ameebies are quite intelligent and may join\
-  \ adventuring parties out of curiosity. They see by using thousands of minute eyespots\
-  \ over their bodies. Though severely myopic (missing all objects fur- ther than\
-  \ 10 m away), they cannot be surprised within their limited visual range. Ameebies\
-  \ are deaf, but have normal senses of touch. They eat any organic matter, being\
-  \ immune to poisons. Some ameebies have learned to communicate with other beings\
-  \ using very rudimentary sign language. They also regenerate any physical damage\
-  \ they take.Nothing is known about how ameebies reproduce, though it is guessed\
-  \ that they use budding or fission. Ameebies cannot be contacted by using telepathic\
-  \ powers of any sort. For some reason, they seem to avoid their own kind, and are\
-  \ only encountered singly."
-players: "Ameebies (as blob); 'Shapeless Ones';Description: Ameebies may be descended\
-  \ from giant microbes produced in genetic-engineering laboratories during the Shadow\
-  \ Years, though little else is known of their origins. An ameebie has two forms.\
-  \ The first is that of an amophous blob, roughly 2-3 m in diameter. The blob is\
-  \ omnivorous and attacks living prey by attempting to stretch out, envelope, and\
-  \ smother the victim. A successful to hit roll means the ameebie has extended a\
-  \ pseudopod and successfully covered the victims face. (Being rather intelligent,\
-  \ the ameebie knows where to aim.) The victim takes 2d6 damage per Action Turn there-\
-  \ after until either it or the ameebie is slain. Blunt weapons (clubs, maces, etc.)\
-  \ do no damage to the ameebie in this form, as it can reshape itself to absorb the\
-  \ blows impact.The ameebie's second form is that of a humanoid being, devoid of\
-  \ facial features, hair, and so forth. This form is about 1.5 m tall, and takes\
-  \ 2 Action Turns without interruption to assume. In this form, the ameebie cannot\
-  \ digest prey, as it is using all of its energy to maintain the humanoid shape.\
-  \ It is not known if ameebies can assume other forms.Ameebies cannot be affected\
-  \ by cold. They automatically form a hard, rubbery surface when subjected to cold\
-  \ tempera- tures, and actually gain 1 armor class level for every 10 hit points\
-  \ of cold damagethey absorb (even from mutant cold-generating powers). The lowest\
-  \ armor class they can attain is AC 3.Ameebies are quite intelligent and may join\
-  \ adventuring parties out of curiosity. They see by using thousands of minute eyespots\
-  \ over their bodies. Though severely myopic (missing all objects fur- ther than\
-  \ 10 m away), they cannot be surprised within their limited visual range. Ameebies\
-  \ are deaf, but have normal senses of touch. They eat any organic matter, being\
-  \ immune to poisons. Some ameebies have learned to communicate with other beings\
-  \ using very rudimentary sign language. They also regenerate any physical damage\
-  \ they take.Nothing is known about how ameebies reproduce, though it is guessed\
-  \ that they use budding or fission. Ameebies cannot be contacted by using telepathic\
-  \ powers of any sort. For some reason, they seem to avoid their own kind, and are\
-  \ only encountered singly.|"
+normal_text: 'Ameebies (as blob) ''Shapeless Ones'' (1): Init +2; atk see description;
+  AC 18; HD 4D7 hp 16; MV 4'' ; 1d20; SV Fort +0, Ref +0, Will -2'
+description_output: 'Description: Ameebies may be descended from giant microbes produced
+  in genetic-engineering laboratories during the Shadow Years, though little else
+  is known of their origins. An ameebie has two forms. The first is that of an amophous
+  blob, roughly 2-3 m in diameter. The blob is omnivorous and attacks living prey
+  by attempting to stretch out, envelope, and smother the victim. A successful to
+  hit roll means the ameebie has extended a pseudopod and successfully covered the
+  victims face. (Being rather intelligent, the ameebie knows where to aim.) The victim
+  takes 2d6 damage per Action Turn there- after until either it or the ameebie is
+  slain. Blunt weapons (clubs, maces, etc.) do no damage to the ameebie in this form,
+  as it can reshape itself to absorb the blows impact.The ameebie''s second form is
+  that of a humanoid being, devoid of facial features, hair, and so forth. This form
+  is about 1.5 m tall, and takes 2 Action Turns without interruption to assume. In
+  this form, the ameebie cannot digest prey, as it is using all of its energy to maintain
+  the humanoid shape. It is not known if ameebies can assume other forms.Ameebies
+  cannot be affected by cold. They automatically form a hard, rubbery surface when
+  subjected to cold tempera- tures, and actually gain 1 armor class level for every
+  10 hit points of cold damagethey absorb (even from mutant cold-generating powers).
+  The lowest armor class they can attain is AC 3.Ameebies are quite intelligent and
+  may join adventuring parties out of curiosity. They see by using thousands of minute
+  eyespots over their bodies. Though severely myopic (missing all objects fur- ther
+  than 10 m away), they cannot be surprised within their limited visual range. Ameebies
+  are deaf, but have normal senses of touch. They eat any organic matter, being immune
+  to poisons. Some ameebies have learned to communicate with other beings using very
+  rudimentary sign language. They also regenerate any physical damage they take.Nothing
+  is known about how ameebies reproduce, though it is guessed that they use budding
+  or fission. Ameebies cannot be contacted by using telepathic powers of any sort.
+  For some reason, they seem to avoid their own kind, and are only encountered singly.'
+final_output: 'Ameebies (as blob) ''Shapeless Ones'' (1): Init +2; atk see description;
+  AC 18; HD 4D7 hp 16; MV 4'' ; 1d20; SV Fort +0, Ref +0, Will -2Description: Ameebies
+  may be descended from giant microbes produced in genetic-engineering laboratories
+  during the Shadow Years, though little else is known of their origins. An ameebie
+  has two forms. The first is that of an amophous blob, roughly 2-3 m in diameter.
+  The blob is omnivorous and attacks living prey by attempting to stretch out, envelope,
+  and smother the victim. A successful to hit roll means the ameebie has extended
+  a pseudopod and successfully covered the victims face. (Being rather intelligent,
+  the ameebie knows where to aim.) The victim takes 2d6 damage per Action Turn there-
+  after until either it or the ameebie is slain. Blunt weapons (clubs, maces, etc.)
+  do no damage to the ameebie in this form, as it can reshape itself to absorb the
+  blows impact.The ameebie''s second form is that of a humanoid being, devoid of facial
+  features, hair, and so forth. This form is about 1.5 m tall, and takes 2 Action
+  Turns without interruption to assume. In this form, the ameebie cannot digest prey,
+  as it is using all of its energy to maintain the humanoid shape. It is not known
+  if ameebies can assume other forms.Ameebies cannot be affected by cold. They automatically
+  form a hard, rubbery surface when subjected to cold tempera- tures, and actually
+  gain 1 armor class level for every 10 hit points of cold damagethey absorb (even
+  from mutant cold-generating powers). The lowest armor class they can attain is AC
+  3.Ameebies are quite intelligent and may join adventuring parties out of curiosity.
+  They see by using thousands of minute eyespots over their bodies. Though severely
+  myopic (missing all objects fur- ther than 10 m away), they cannot be surprised
+  within their limited visual range. Ameebies are deaf, but have normal senses of
+  touch. They eat any organic matter, being immune to poisons. Some ameebies have
+  learned to communicate with other beings using very rudimentary sign language. They
+  also regenerate any physical damage they take.Nothing is known about how ameebies
+  reproduce, though it is guessed that they use budding or fission. Ameebies cannot
+  be contacted by using telepathic powers of any sort. For some reason, they seem
+  to avoid their own kind, and are only encountered singly.'
+players: 'Ameebies (as blob); ''Shapeless Ones'';Description: Ameebies may be descended
+  from giant microbes produced in genetic-engineering laboratories during the Shadow
+  Years, though little else is known of their origins. An ameebie has two forms. The
+  first is that of an amophous blob, roughly 2-3 m in diameter. The blob is omnivorous
+  and attacks living prey by attempting to stretch out, envelope, and smother the
+  victim. A successful to hit roll means the ameebie has extended a pseudopod and
+  successfully covered the victims face. (Being rather intelligent, the ameebie knows
+  where to aim.) The victim takes 2d6 damage per Action Turn there- after until either
+  it or the ameebie is slain. Blunt weapons (clubs, maces, etc.) do no damage to the
+  ameebie in this form, as it can reshape itself to absorb the blows impact.The ameebie''s
+  second form is that of a humanoid being, devoid of facial features, hair, and so
+  forth. This form is about 1.5 m tall, and takes 2 Action Turns without interruption
+  to assume. In this form, the ameebie cannot digest prey, as it is using all of its
+  energy to maintain the humanoid shape. It is not known if ameebies can assume other
+  forms.Ameebies cannot be affected by cold. They automatically form a hard, rubbery
+  surface when subjected to cold tempera- tures, and actually gain 1 armor class level
+  for every 10 hit points of cold damagethey absorb (even from mutant cold-generating
+  powers). The lowest armor class they can attain is AC 3.Ameebies are quite intelligent
+  and may join adventuring parties out of curiosity. They see by using thousands of
+  minute eyespots over their bodies. Though severely myopic (missing all objects fur-
+  ther than 10 m away), they cannot be surprised within their limited visual range.
+  Ameebies are deaf, but have normal senses of touch. They eat any organic matter,
+  being immune to poisons. Some ameebies have learned to communicate with other beings
+  using very rudimentary sign language. They also regenerate any physical damage they
+  take.Nothing is known about how ameebies reproduce, though it is guessed that they
+  use budding or fission. Ameebies cannot be contacted by using telepathic powers
+  of any sort. For some reason, they seem to avoid their own kind, and are only encountered
+  singly.|'
 id: 71010
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -263,4 +260,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 492
+image_height: 732
 ---

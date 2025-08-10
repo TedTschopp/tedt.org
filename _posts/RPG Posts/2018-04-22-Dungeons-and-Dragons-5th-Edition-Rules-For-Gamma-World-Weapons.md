@@ -1,64 +1,52 @@
 ---
 layout: post
-
 title: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
-source:
-source-url:
-call-to-action:
-
+source: null
+source-url: null
+call-to-action: null
 date: 2018-04-22 10:04:00+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor.
-seo-description:
-
+seo-description: null
 categories:
 - Role Playing Games
 - Gamma World
 - Dungeons & Dragons
-tags:
-keywords:
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-04/The-Leviathan.webp
-image-alt:
+image-alt: null
 image-artist: Larry Elmore
 image-artist-URL: http://www.larryelmore.com/
-image-description: An oil painting of two tanks on snowy terrain, in the style of reminiscent retro sci-fi scenes, Larry Elmore
+image-description: An oil painting of two tanks on snowy terrain, in the style of
+  reminiscent retro sci-fi scenes, Larry Elmore
 image-title: The Leviathan
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
-
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
 redirect_from:
- - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons.html
- - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/
- - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons
-
+- /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons.html
+- /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/
+- /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons
+image_width: 1024
+image_height: 497
 ---
-
-
 # Notes
 
 The following is being play-tested by myself and a couple others.  There are no rules yet for radiation, as those will be posted separately.  I also have an entire list of weapons and armor that need to be posted as well. 

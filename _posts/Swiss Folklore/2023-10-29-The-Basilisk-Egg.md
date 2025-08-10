@@ -1,75 +1,66 @@
 ---
 layout: post
-
 title: The Basilisk
 subtitle: Tales from Basel, Switzerland
-quote: "The only way to kill a Basilisk is to show it its own reflection."
-excerpt: In 1474, in Basel, a rooster and its mysterious egg were burned in front of a crowd due to the fear of birthing a Basilisk—a creature so deadly, its gaze alone could kill.
-source: 
+quote: The only way to kill a Basilisk is to show it its own reflection.
+excerpt: "In 1474, in Basel, a rooster and its mysterious egg were burned in front\
+  \ of a crowd due to the fear of birthing a Basilisk\u2014a creature so deadly, its\
+  \ gaze alone could kill."
+source: null
 source-url: https://www.maerchenstiftung.ch/de/maerchen_aus_aller_welt/schweizer_maerchen_zum_lesen_und_vorlesen/maerchensuche/6597/das-basiliskenei
 call-to-action: Explore more Swiss Folklore
-
 date: 2023-10-29 15:47:59
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
 bullets:
-    - Year: 1474
-    - Location: Basel, Switzerland
-    - Category: Sage
-
-description: This Swiss folklore tale from 1474 revolves around the dangerous Basilisk, a creature born from a rooster's egg, feared for its deadly gaze.
-seo-description: A captivating tale of the Basilisk, born from a rooster's egg, whose gaze could kill.
-
+- Year: 1474
+- Location: Basel, Switzerland
+- Category: Sage
+description: This Swiss folklore tale from 1474 revolves around the dangerous Basilisk,
+  a creature born from a rooster's egg, feared for its deadly gaze.
+seo-description: A captivating tale of the Basilisk, born from a rooster's egg, whose
+  gaze could kill.
 categories:
 - Folklore
 tags:
 - Swiss
 - Basel
 - Basilisk
-
 keywords: Swiss folklore, Basel, Basilisk, 1474
-
-
-
 location:
-    address:
-    city: Basel
-    country: Switzerland
-    name:
-    on-map: Basel (47.5596° N, 7.5886° E)
-    place-names: Kohliberg, Basel, Switzerland
-    state:
-    zip:
+  address: null
+  city: Basel
+  country: Switzerland
+  name: null
+  on-map: "Basel (47.5596\xB0 N, 7.5886\xB0 E)"
+  place-names: Kohliberg, Basel, Switzerland
+  state: null
+  zip: null
 coordinates:
-    latitude: '47.5596'
-    longitude: '7.5886'
-
+  latitude: '47.5596'
+  longitude: '7.5886'
 image: img/2023-10/Basilisk_mit_Basler_Wappen.webp
-image-alt: 
+image-alt: null
 image-artist: Andreas Schwarzkopf
 image-artist-URL: https://commons.wikimedia.org/wiki/User:Andreas_Schwarzkopf
-image-credits: 
+image-credits: null
 image-credits-URL: https://commons.wikimedia.org/wiki/File:Basilisk_mit_Basler_Wappen.webp
 image-credits-artist: Ted Tschopp and Midjourney
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: The Burning of the Basilisk Egg
 image-description: Sculpture in front of the Lange Erlen Zoo, a basilisk.
 image-title: Sculpture in front of the Lange Erlen Zoo, a basilisk.
 monster-or-magical-or-religious-ideas: Basilisk
-
 year-the-event-took-place: 1474
 permalink: /Swiss-Folklore/The-Basilisk-Egg
-
-mathjax:
-
-order:
+mathjax: null
+order: null
+image_width: 2640
+image_height: 2742
 ---
-
-
 > <ins> Swiss Book of Legends: Based on oral traditions, chronicles, and other printed and handwritten sources</ins>
 > 
 > by C. Kohlrusch

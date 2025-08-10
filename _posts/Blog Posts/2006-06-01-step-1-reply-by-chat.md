@@ -1,56 +1,44 @@
 ---
 layout: post
-
 title: Step 1 - Reply by Chat
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-06-01 21:33:53+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
-description:
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
+description: null
+seo-description: null
 categories:
 - Computers
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2006-06/Reply-By-Chat.webp
-image-alt:
+image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-description: Reply by Chat as a Cartoon
 image-title: Reply by Chat
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
 I have always thought that the logical direction for chat and email was the same. At some point in the future the only difference between them will be if you are there to answer the chat. Looks like Google gets this as well.
 

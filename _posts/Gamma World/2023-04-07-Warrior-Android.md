@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Android.png
-title: Warrior «Android»
+title: "Warrior \xABAndroid\xBB"
 creature_name_index: Android
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth Warrior
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-author_name: 'James M. Ward'
+author_name: James M. Ward
 url: ''
 avatar: ''
 mcc_race: 'PSH: Sentinel'
@@ -99,15 +99,15 @@ monster_name: Android 'Warrior'
 number_appearing: 1d6 (3)
 number_appearing_single: '3'
 init: '+6'
-monster_name_xx_number_if_applicable_init_+-x: "Android 'Warrior' (1d6 (3)): Init\
-  \ +6"
+monster_name_xx_number_if_applicable_init_+-x: 'Android ''Warrior'' (1d6 (3)): Init
+  +6'
 ps_-_c: '18'
 dx_-_c: '18'
 cn_-_c: '18'
 ms_-_c: '14'
 ch_-_c: '14'
 in_-_c: '18'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '3'
 plus_to_range_from_level: ''
 plus_to_range: '6'
@@ -166,8 +166,8 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +3, Ref +3, Will +1
 fort_save: '3'
 ref_save: '3'
 will: '1'
-normal_text: "Android 'Warrior' (1d6 (3)): Init +6; atk weapon melee +6 (1d10+3);\
-  \ AC 13; HD 5D12 hp 33 each; MV 30' ; 1d20; SV Fort +3, Ref +3, Will +1"
+normal_text: 'Android ''Warrior'' (1d6 (3)): Init +6; atk weapon melee +6 (1d10+3);
+  AC 13; HD 5D12 hp 33 each; MV 30'' ; 1d20; SV Fort +3, Ref +3, Will +1'
 description_output: 'Description: Man-made beings with red hued skin and blank stares.Behavior:They
   generally consider humans to be their enemies, and will fight to the death.  When
   an android dies they will dissolve into a pool of red protoplasm.Combat: Warrior
@@ -175,22 +175,21 @@ description_output: 'Description: Man-made beings with red hued skin and blank s
   proficient in these outcomes and will selflessly sacrificed themselves for the good
   of their mission or team.Society: Androids do not have a society.  They serve whomever
   created them.'
-final_output: "Android 'Warrior' (1d6 (3)): Init +6; atk weapon melee +6 (1d10+3);\
-  \ AC 13; HD 5D12 hp 33 each; MV 30' ; 1d20; SV Fort +3, Ref +3, Will +1NoneDescription:\
-  \ Man-made beings with red hued skin and blank stares.Behavior:They generally consider\
-  \ humans to be their enemies, and will fight to the death.  When an android dies\
-  \ they will dissolve into a pool of red protoplasm.Combat: Warrior Androids are\
-  \ focused on protection and defense as their mission.  They are quite proficient\
-  \ in these outcomes and will selflessly sacrificed themselves for the good of their\
-  \ mission or team.Society: Androids do not have a society.  They serve whomever\
-  \ created them."
-players: "Android; 'Warrior';Description: Man-made beings with red hued skin and blank\
-  \ stares.Behavior:They generally consider humans to be their enemies, and will fight\
-  \ to the death.  When an android dies they will dissolve into a pool of red protoplasm.Combat:\
-  \ Warrior Androids are focused on protection and defense as their mission.  They\
-  \ are quite proficient in these outcomes and will selflessly sacrificed themselves\
-  \ for the good of their mission or team.Society: Androids do not have a society.\
-  \  They serve whomever created them.|"
+final_output: 'Android ''Warrior'' (1d6 (3)): Init +6; atk weapon melee +6 (1d10+3);
+  AC 13; HD 5D12 hp 33 each; MV 30'' ; 1d20; SV Fort +3, Ref +3, Will +1NoneDescription:
+  Man-made beings with red hued skin and blank stares.Behavior:They generally consider
+  humans to be their enemies, and will fight to the death.  When an android dies they
+  will dissolve into a pool of red protoplasm.Combat: Warrior Androids are focused
+  on protection and defense as their mission.  They are quite proficient in these
+  outcomes and will selflessly sacrificed themselves for the good of their mission
+  or team.Society: Androids do not have a society.  They serve whomever created them.'
+players: 'Android; ''Warrior'';Description: Man-made beings with red hued skin and
+  blank stares.Behavior:They generally consider humans to be their enemies, and will
+  fight to the death.  When an android dies they will dissolve into a pool of red
+  protoplasm.Combat: Warrior Androids are focused on protection and defense as their
+  mission.  They are quite proficient in these outcomes and will selflessly sacrificed
+  themselves for the good of their mission or team.Society: Androids do not have a
+  society.  They serve whomever created them.|'
 id: 71015
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -199,4 +198,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 838
+image_height: 1522
 ---

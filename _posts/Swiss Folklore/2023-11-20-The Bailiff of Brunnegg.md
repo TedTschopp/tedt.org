@@ -1,81 +1,79 @@
---- 
+---
 layout: post
-
-title: "The Bailiff of Brunnegg: A Swiss Legend"
-subtitle: "The Haunting Tale of the Bailiff's Hunt"
-quote: "A terrible snowstorm broke out, sweeping and burying them all together; none returned to the castle."
-excerpt: "Explore the eerie legend of the Bailiff of Brunnegg, a tale of a ruthless hunt and a mysterious snowstorm in the Swiss Aargau."
-source: 
-source-url: 
-
-call-to-action: "Discover the haunting story of Brunnegg Castle's mysterious bailiff."
-
+title: 'The Bailiff of Brunnegg: A Swiss Legend'
+subtitle: The Haunting Tale of the Bailiff's Hunt
+quote: A terrible snowstorm broke out, sweeping and burying them all together; none
+  returned to the castle.
+excerpt: Explore the eerie legend of the Bailiff of Brunnegg, a tale of a ruthless
+  hunt and a mysterious snowstorm in the Swiss Aargau.
+source: null
+source-url: null
+call-to-action: Discover the haunting story of Brunnegg Castle's mysterious bailiff.
 date: 2023-11-20 07:59:43
-update: 
+update: null
 author:
-    avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
-    name: "Ted Tschopp"
-    url: "https://tedt.org"
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
 bullets:
-  - The chilling winter hunt of the Bailiff of Brunnegg
-  - The legend's connection to historical figures
-  - The mysterious snowstorm and its eternal curse
-
-description: "An in-depth look at the legend of the Bailiff of Brunnegg, a tale of mystery and horror from the Swiss region of Aargau."
-seo-description: "Explore the legend of the Bailiff of Brunnegg, a haunting tale from Swiss folklore, featuring an eerie hunt and a supernatural snowstorm."
-
+- The chilling winter hunt of the Bailiff of Brunnegg
+- The legend's connection to historical figures
+- The mysterious snowstorm and its eternal curse
+description: An in-depth look at the legend of the Bailiff of Brunnegg, a tale of
+  mystery and horror from the Swiss region of Aargau.
+seo-description: Explore the legend of the Bailiff of Brunnegg, a haunting tale from
+  Swiss folklore, featuring an eerie hunt and a supernatural snowstorm.
 categories:
 - Folklore
 tags:
-  - Swiss Legends
-  - Brunnegg Castle
-  - Historical Folklore
-
-keywords: 
-  - Bailiff of Brunnegg
-  - Swiss Legends
-  - Aargau Folklore
-  - Haunted Castles
-  - Historical Folktales
-
+- Swiss Legends
+- Brunnegg Castle
+- Historical Folklore
+keywords:
+- Bailiff of Brunnegg
+- Swiss Legends
+- Aargau Folklore
+- Haunted Castles
+- Historical Folktales
 location:
-    address: "Brunnegg Castle"
-    city: "Aargau"
-    country: "Switzerland"
-    name: "Brunnegg Castle"
-    on-map: true
-    place-names: "Brunnegg"
-    state: 
-    zip:
+  address: Brunnegg Castle
+  city: Aargau
+  country: Switzerland
+  name: Brunnegg Castle
+  on-map: true
+  place-names: Brunnegg
+  state: null
+  zip: null
 coordinates:
-    latitude: 47.422161
-    longitude: 8.214489
-
+  latitude: 47.422161
+  longitude: 8.214489
 image: img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp
-image-alt: "A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle looms in the background, partially obscured by a fierce, swirling snowstorm. The landscape is eerily lit by a full moon, casting long sinister shadows. The bailiff should appear as a figure from Swiss folklore, wearing traditional, historical attire, and his face should be shrouded in mystery, a sense of foreboding and the supernatural, highlighting the legend's themes of a cursed hunt and a tragic tale. "
-image-artist: Ted Tschopp 
+image-alt: 'A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh
+  winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle
+  looms in the background, partially obscured by a fierce, swirling snowstorm. The
+  landscape is eerily lit by a full moon, casting long sinister shadows. The bailiff
+  should appear as a figure from Swiss folklore, wearing traditional, historical attire,
+  and his face should be shrouded in mystery, a sense of foreboding and the supernatural,
+  highlighting the legend''s themes of a cursed hunt and a tragic tale. '
+image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org
-image-credits-artist: Ted Tschopp 
+image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org
-image-credits-title: "The Bailiff of Brunnegg"
-image-title: "The Haunting of Brunnegg Castle"
-
-monster-or-magical-or-religious-ideas: "Haunted castle, supernatural snowstorm, cursed bailiff"
-year-the-event-took-place: [Insert year if known or leave blank]
-
+image-credits-title: The Bailiff of Brunnegg
+image-title: The Haunting of Brunnegg Castle
+monster-or-magical-or-religious-ideas: Haunted castle, supernatural snowstorm, cursed
+  bailiff
+year-the-event-took-place:
+- Insert year if known or leave blank
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
 redirect_from:
-  - /folklore/The-Bailiff-of-Brunnegg
-  
+- /folklore/The-Bailiff-of-Brunnegg
 mastodon-post-id: 111443917454528953
-
+image_width: 1456
+image_height: 816
 ---
-
 > <ins> Swiss Legends from Aargau, Volume 1</ins>
 > 
 > by Ernst L. Rochholz

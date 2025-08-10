@@ -1,71 +1,56 @@
 ---
 layout: post
-
-title: 'Thoughts on a Potential Google Internet OS'
-title-url:
+title: Thoughts on a Potential Google Internet OS
+title-url: null
 subtitle: Exploring the Potential of a Web-Based Operating System form Google
-subtitle-url:
-quote: "Google will be the first company to bring the Internet to the Internet like the Internet was brought to the PC's during the 90's. Give us 5 – 7 years and we will be well along in the process."
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: "Google will be the first company to bring the Internet to the Internet like\
+  \ the Internet was brought to the PC's during the 90's. Give us 5 \u2013 7 years\
+  \ and we will be well along in the process."
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2004-08-25 16:08:24
-update:  2004-08-26 16:08:24
+update: 2004-08-26 16:08:24
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: An in-depth analysis of Google's potential development of a web-based
-    operating system that integrates Mail, Blog, Social Network, Pictures, Search,
-    and more. Drawing parallels with the early PC market, this article explores how
-    Google might shape the future of the Internet.
-seo-description:
-
+  operating system that integrates Mail, Blog, Social Network, Pictures, Search, and
+  more. Drawing parallels with the early PC market, this article explores how Google
+  might shape the future of the Internet.
+seo-description: null
 categories:
 - Computers
-tags:
+tags: null
 keywords: Google, Internet OS, Web Applications, .NET, Browser-based OS, Future of
-    Internet, Online Games, Mail Integration, Social Network, Search
-
-
-
+  Internet, Online Games, Mail Integration, Social Network, Search
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image: '/img/2004-08/Illustrative_diagram_in_the_style_of_a_modern_infogram.webp'
-image-alt:
-image-artist: 'Ted Tschopp and Midjourney'
-image-artist-URL: 'https://tedt.org/'
+  latitude: 34.099024
+  longitude: -118.069288
+image: /img/2004-08/Illustrative_diagram_in_the_style_of_a_modern_infogram.webp
+image-alt: null
+image-artist: Ted Tschopp and Midjourney
+image-artist-URL: https://tedt.org/
 image-description: An illustrative diagram depicting Google's envisioned web-based
-    operating system, highlighting various integrated components such as Mail, Blog,
-    Social Network, and Pictures. The interconnected nature of these services symbolizes
-    a unified and easily accessible platform for the future of web applications.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+  operating system, highlighting various integrated components such as Mail, Blog,
+  Social Network, and Pictures. The interconnected nature of these services symbolizes
+  a unified and easily accessible platform for the future of web applications.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 redirect_from:
-  - /computers/the-google-browseros
-
-
-mathjax:
-
-order:
-
+- /computers/the-google-browseros
+mathjax: null
+order: null
 mastodon-post-id: 111179921177417786
-
-
+image_width: 1456
+image_height: 816
 ---
 I've been a firm believer that Google is making an OS with a set of applications. Think of a system which ties all their properties together. Mail, Blog, Social Network, Pictures, Search, etc&#8230; Into one usable application which can be accessed from anywhere on the planet as long as you have a browser.
 

@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Cren Tosh.png'
-title: Lizard Fish «Cren Tosh»
+image: /RPG/MCC-GW/images/Monster-Manual/Cren Tosh.png
+title: "Lizard Fish \xABCren Tosh\xBB"
 creature_name_index: Cren Tosh
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Lizard Fish
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -89,8 +89,8 @@ monster_name: Cren Tosh 'Lizard Fish'
 number_appearing: 1d3 (2)
 number_appearing_single: '2'
 init: '+1'
-monster_name_xx_number_if_applicable_init_+-x: "Cren Tosh 'Lizard Fish' (1d3 (2)):\
-  \ Init +1"
+monster_name_xx_number_if_applicable_init_+-x: 'Cren Tosh ''Lizard Fish'' (1d3 (2)):
+  Init +1'
 ps_-_c: '14'
 dx_-_c: '5'
 cn_-_c: '7'
@@ -156,9 +156,9 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort -1, Ref -2, Will -1
 fort_save: '-1'
 ref_save: '-2'
 will: '-1'
-normal_text: "Cren Tosh 'Lizard Fish' (1d3 (2)): Init +1; atk bite melee +3 (1d4+1);\
-  \ AC 17; HD 5D7 hp 20 each; MV 30' or Swim 60' ; 1d20; SV Fort -1, Ref -2, Will\
-  \ -1"
+normal_text: 'Cren Tosh ''Lizard Fish'' (1d3 (2)): Init +1; atk bite melee +3 (1d4+1);
+  AC 17; HD 5D7 hp 20 each; MV 30'' or Swim 60'' ; 1d20; SV Fort -1, Ref -2, Will
+  -1'
 description_output: 'Description: The cren tosh (or "lizard fish" as it is sometimes
   known) is a 2 meter long fish with silvery-green scales and a relatively flat body.
   With its mutant shapechanging ability, it can appear as various other creatures
@@ -177,46 +177,45 @@ description_output: 'Description: The cren tosh (or "lizard fish" as it is somet
   tunnels into the muddy banks to use as a nest. They line their nests with shiny
   pebbles and objects they have collected, and lay their eggs there. They defend the
   nest fiercely until the eggs hatch, then the young cren tosh are left on their own.'
-final_output: "Cren Tosh 'Lizard Fish' (1d3 (2)): Init +1; atk bite melee +3 (1d4+1);\
-  \ AC 17; HD 5D7 hp 20 each; MV 30' or Swim 60' ; 1d20; SV Fort -1, Ref -2, Will\
-  \ -1(P) Shapechange into LizardDescription: The cren tosh (or \"lizard fish\" as\
-  \ it is sometimes known) is a 2 meter long fish with silvery-green scales and a\
-  \ relatively flat body. With its mutant shapechanging ability, it can appear as\
-  \ various other creatures and even operate on land for up to 24 hours at a time.\
-  \ Behavior:The transformation power can only be used once every 24 hours.  In the\
-  \ water the fish lives under the overhanging banks where it makes its nest which\
-  \ it lines with shiny objects.  It is a vegetarian.Combat: Cren tosh are only marginally\
-  \ intelligent, and generally harmless toward other creatures (they are placid plant-eaters),\
-  \ but they are drawn to small, shiny objects which they use to decorate their lairs.\
-  \ A cren tosh is likely to try and steal such objects and escape with them, including\
-  \ metal coins, jewelry, and some Ancient items. They fight only when cornered, otherwise\
-  \ using all their abilities to escape. Cren tosh can use their Metamorphosis mutation\
-  \ to assume the form of any reptile of approximately their mass, gaining all of\
-  \ that creatures abilities (including physical ability scores and mutations, but\
-  \ not mental ability scores or mutations).Society: Cren tosh live in lakes, rivers,\
-  \ or steams, burrowing long tunnels into the muddy banks to use as a nest. They\
-  \ line their nests with shiny pebbles and objects they have collected, and lay their\
-  \ eggs there. They defend the nest fiercely until the eggs hatch, then the young\
-  \ cren tosh are left on their own."
-players: "Cren Tosh; 'Lizard Fish';Description: The cren tosh (or \"lizard fish\"\
-  \ as it is sometimes known) is a 2 meter long fish with silvery-green scales and\
-  \ a relatively flat body. With its mutant shapechanging ability, it can appear as\
-  \ various other creatures and even operate on land for up to 24 hours at a time.\
-  \ Behavior:The transformation power can only be used once every 24 hours.  In the\
-  \ water the fish lives under the overhanging banks where it makes its nest which\
-  \ it lines with shiny objects.  It is a vegetarian.Combat: Cren tosh are only marginally\
-  \ intelligent, and generally harmless toward other creatures (they are placid plant-eaters),\
-  \ but they are drawn to small, shiny objects which they use to decorate their lairs.\
-  \ A cren tosh is likely to try and steal such objects and escape with them, including\
-  \ metal coins, jewelry, and some Ancient items. They fight only when cornered, otherwise\
-  \ using all their abilities to escape. Cren tosh can use their Metamorphosis mutation\
-  \ to assume the form of any reptile of approximately their mass, gaining all of\
-  \ that creatures abilities (including physical ability scores and mutations, but\
-  \ not mental ability scores or mutations).Society: Cren tosh live in lakes, rivers,\
-  \ or steams, burrowing long tunnels into the muddy banks to use as a nest. They\
-  \ line their nests with shiny pebbles and objects they have collected, and lay their\
-  \ eggs there. They defend the nest fiercely until the eggs hatch, then the young\
-  \ cren tosh are left on their own.|"
+final_output: 'Cren Tosh ''Lizard Fish'' (1d3 (2)): Init +1; atk bite melee +3 (1d4+1);
+  AC 17; HD 5D7 hp 20 each; MV 30'' or Swim 60'' ; 1d20; SV Fort -1, Ref -2, Will
+  -1(P) Shapechange into LizardDescription: The cren tosh (or "lizard fish" as it
+  is sometimes known) is a 2 meter long fish with silvery-green scales and a relatively
+  flat body. With its mutant shapechanging ability, it can appear as various other
+  creatures and even operate on land for up to 24 hours at a time. Behavior:The transformation
+  power can only be used once every 24 hours.  In the water the fish lives under the
+  overhanging banks where it makes its nest which it lines with shiny objects.  It
+  is a vegetarian.Combat: Cren tosh are only marginally intelligent, and generally
+  harmless toward other creatures (they are placid plant-eaters), but they are drawn
+  to small, shiny objects which they use to decorate their lairs. A cren tosh is likely
+  to try and steal such objects and escape with them, including metal coins, jewelry,
+  and some Ancient items. They fight only when cornered, otherwise using all their
+  abilities to escape. Cren tosh can use their Metamorphosis mutation to assume the
+  form of any reptile of approximately their mass, gaining all of that creatures abilities
+  (including physical ability scores and mutations, but not mental ability scores
+  or mutations).Society: Cren tosh live in lakes, rivers, or steams, burrowing long
+  tunnels into the muddy banks to use as a nest. They line their nests with shiny
+  pebbles and objects they have collected, and lay their eggs there. They defend the
+  nest fiercely until the eggs hatch, then the young cren tosh are left on their own.'
+players: 'Cren Tosh; ''Lizard Fish'';Description: The cren tosh (or "lizard fish"
+  as it is sometimes known) is a 2 meter long fish with silvery-green scales and a
+  relatively flat body. With its mutant shapechanging ability, it can appear as various
+  other creatures and even operate on land for up to 24 hours at a time. Behavior:The
+  transformation power can only be used once every 24 hours.  In the water the fish
+  lives under the overhanging banks where it makes its nest which it lines with shiny
+  objects.  It is a vegetarian.Combat: Cren tosh are only marginally intelligent,
+  and generally harmless toward other creatures (they are placid plant-eaters), but
+  they are drawn to small, shiny objects which they use to decorate their lairs. A
+  cren tosh is likely to try and steal such objects and escape with them, including
+  metal coins, jewelry, and some Ancient items. They fight only when cornered, otherwise
+  using all their abilities to escape. Cren tosh can use their Metamorphosis mutation
+  to assume the form of any reptile of approximately their mass, gaining all of that
+  creatures abilities (including physical ability scores and mutations, but not mental
+  ability scores or mutations).Society: Cren tosh live in lakes, rivers, or steams,
+  burrowing long tunnels into the muddy banks to use as a nest. They line their nests
+  with shiny pebbles and objects they have collected, and lay their eggs there. They
+  defend the nest fiercely until the eggs hatch, then the young cren tosh are left
+  on their own.|'
 id: 71136
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -225,4 +224,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 992
+image_height: 966
 ---

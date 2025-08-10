@@ -1,5 +1,5 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Cyber-netter.png'
+image: /RPG/MCC-GW/images/Monster-Manual/Cyber-netter.png
 title: Cyber-netter
 creature_name_index: Cyber-netter
 notes: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 075
 author: ''
-author_name: 'Roger Moore'
+author_name: Roger Moore
 url: ''
 avatar: ''
 mcc_race: 'PHS: Human'
@@ -200,37 +200,37 @@ description_output: 'Description: Adventurers in the Great Lakes region of North
   are taken or what happens to them after that. The machine emits coded radio signals
   from time to time, but they are not decipherable, and no receiving station is known.'
 final_output: '#N/A'
-players: "Cyber-netter; '';Description: Adventurers in the Great Lakes region of North\
-  \ America have reported a new, apparently post-holocaust robot type that is occasionally\
-  \ found as far as 200 kilome- ters from Lake Superiors shorelines. Observors believe\
-  \ that it is being manu- factured by one or more unknown PCIs for unknown reasons.The\
-  \ Cyber-Netter, as the locals call it, is a flattened sphere 6 meters in diame-\
-  \ ter and 3 meters tall. Eight legs project out from the sides of the body at regular\
-  \ intervals, lifting the body some 8 meters off the ground. Its armament is lighter\
-  \ than for other types of robots or warbots, but effective nonetheless. The mechanism\
-  \ has two batteries of Mark VII blaster rifles (3 guns each) that each do 20d6 damage\
-  \ out to 500 meters, 15d6 out to 1,000 meters, 10d6 out to 1,500 meters, and 5d6\
-  \ out to the maximum range of 2,000 meters. It also has a grenade launcherthat can\
-  \ fire 50 rounds of stun grenades out to 100 meters.Peculiar to the Cyber-Netter\
-  \ is a special sort of weapon (of non-lethal design) called a webber. A single barrel,\
-  \ pro- jecting from the front of the Cyber-Netter, is capable of ejecting long strands\
-  \ of sticky material onto a target or targets, like water from a fire hose. Everything\
-  \ within a 60-degree arc to the front of the Cyber-Netter, out to a maximum range\
-  \ of 20 meters, has an 80% chance of being caught in the sticky masses of material\
-  \ when the webber is used.Victims caught in the mess may attempt to pull free; their\
-  \ base chance of succeeding is equal to their physical strength doubled and expressed\
-  \ as a per- centage. Only one attempt may be made to pull free; failure means that\
-  \ the victim is trapped for the time being.The webs are not flammable in the least,\
-  \ and the strands harden in five min- utes to the consistency of a steel-mesh net.\
-  \ The Cyber-Netter may then recover the captives at its leisure, lifting them out\
-  \ with a tractor/presser beam on the under- side of the body (able to move 500 kg\
-  \ at 20 meters) after cutting away the strands with the atomic torches mounted on\
-  \ the ends of the two front legs. When not in use, the torches retract into the\
-  \ mechani- cal foot-pad at the end of the legs.Captives are deposited inside the\
-  \ Cyber- Netter through doors on the underside of the body by the tractor/presser\
-  \ beam equipment, and then carried away. No one knows where they are taken or what\
-  \ happens to them after that. The machine emits coded radio signals from time to\
-  \ time, but they are not decipherable, and no receiving station is known.|"
+players: 'Cyber-netter; '''';Description: Adventurers in the Great Lakes region of
+  North America have reported a new, apparently post-holocaust robot type that is
+  occasionally found as far as 200 kilome- ters from Lake Superiors shorelines. Observors
+  believe that it is being manu- factured by one or more unknown PCIs for unknown
+  reasons.The Cyber-Netter, as the locals call it, is a flattened sphere 6 meters
+  in diame- ter and 3 meters tall. Eight legs project out from the sides of the body
+  at regular intervals, lifting the body some 8 meters off the ground. Its armament
+  is lighter than for other types of robots or warbots, but effective nonetheless.
+  The mechanism has two batteries of Mark VII blaster rifles (3 guns each) that each
+  do 20d6 damage out to 500 meters, 15d6 out to 1,000 meters, 10d6 out to 1,500 meters,
+  and 5d6 out to the maximum range of 2,000 meters. It also has a grenade launcherthat
+  can fire 50 rounds of stun grenades out to 100 meters.Peculiar to the Cyber-Netter
+  is a special sort of weapon (of non-lethal design) called a webber. A single barrel,
+  pro- jecting from the front of the Cyber-Netter, is capable of ejecting long strands
+  of sticky material onto a target or targets, like water from a fire hose. Everything
+  within a 60-degree arc to the front of the Cyber-Netter, out to a maximum range
+  of 20 meters, has an 80% chance of being caught in the sticky masses of material
+  when the webber is used.Victims caught in the mess may attempt to pull free; their
+  base chance of succeeding is equal to their physical strength doubled and expressed
+  as a per- centage. Only one attempt may be made to pull free; failure means that
+  the victim is trapped for the time being.The webs are not flammable in the least,
+  and the strands harden in five min- utes to the consistency of a steel-mesh net.
+  The Cyber-Netter may then recover the captives at its leisure, lifting them out
+  with a tractor/presser beam on the under- side of the body (able to move 500 kg
+  at 20 meters) after cutting away the strands with the atomic torches mounted on
+  the ends of the two front legs. When not in use, the torches retract into the mechani-
+  cal foot-pad at the end of the legs.Captives are deposited inside the Cyber- Netter
+  through doors on the underside of the body by the tractor/presser beam equipment,
+  and then carried away. No one knows where they are taken or what happens to them
+  after that. The machine emits coded radio signals from time to time, but they are
+  not decipherable, and no receiving station is known.|'
 id: 71144
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -239,4 +239,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 576
+image_height: 642
 ---

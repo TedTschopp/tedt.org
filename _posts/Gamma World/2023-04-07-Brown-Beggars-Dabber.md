@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Dabber.png'
-title: Brown Beggars «Dabber»
+image: /RPG/MCC-GW/images/Monster-Manual/Dabber.png
+title: "Brown Beggars \xABDabber\xBB"
 creature_name_index: Dabber
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: Thief Beast
 generic_name: Trash Pandas
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-author_name: 'James M. Ward'
+author_name: James M. Ward
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -95,15 +95,15 @@ monster_name: Dabber 'Brown Beggars'
 number_appearing: 2d10 (11)
 number_appearing_single: '11'
 init: '+1'
-monster_name_xx_number_if_applicable_init_+-x: "Dabber 'Brown Beggars' (2d10 (11)):\
-  \ Init +1"
+monster_name_xx_number_if_applicable_init_+-x: 'Dabber ''Brown Beggars'' (2d10 (11)):
+  Init +1'
 ps_-_c: '10'
 dx_-_c: '10'
 cn_-_c: '7'
 ms_-_c: '14'
 ch_-_c: '5'
 in_-_c: '10'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '0'
 plus_to_range_from_level: ''
 plus_to_range: '1'
@@ -162,9 +162,9 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort -1, Ref +0, Will +1
 fort_save: '-1'
 ref_save: '0'
 will: '1'
-normal_text: "Dabber 'Brown Beggars' (2d10 (11)): Init +1; atk weapon melee +1 (1d8)\
-  \ and bite melee +1 (1d3); AC 15; HD 2D7 hp 8 each; MV 20' ; 1d20; SV Fort -1, Ref\
-  \ +0, Will +1"
+normal_text: 'Dabber ''Brown Beggars'' (2d10 (11)): Init +1; atk weapon melee +1 (1d8)
+  and bite melee +1 (1d3); AC 15; HD 2D7 hp 8 each; MV 20'' ; 1d20; SV Fort -1, Ref
+  +0, Will +1'
 description_output: 'Description: One Meter tall mutated racoons that walk upright
   and have manipulative paws.  Behavior:These Trash Pandas are highly intelligent
   and will usually be found in small family groups carrying Tech Level 3 equipment
@@ -185,50 +185,49 @@ description_output: 'Description: One Meter tall mutated racoons that walk uprig
   If turned away cruelly, the dabber runs away. Often (90% of the time), the dabber
   then comes back with up to seven friends to take the object, and anything else that
   strikes his and their fancy.'
-final_output: "Dabber 'Brown Beggars' (2d10 (11)): Init +1; atk weapon melee +1 (1d8)\
-  \ and bite melee +1 (1d3); AC 15; HD 2D7 hp 8 each; MV 20' ; 1d20; SV Fort -1, Ref\
-  \ +0, Will +1(P) Light Generation(M) Empathy, Illusion Generation, Repulsion Field,\
-  \ Telekinesis, TelepathyDescription: One Meter tall mutated racoons that walk upright\
-  \ and have manipulative paws.  Behavior:These Trash Pandas are highly intelligent\
-  \ and will usually be found in small family groups carrying Tech Level 3 equipment\
-  \ (but not armor)Combat: Dabbers sometimes carry Tech Level III and IV equipment\
-  \ and weapons. Occasionally, they even known how to use them (20% ). When dabbers\
-  \ fight, they use their Repulsion field mutation to ward off small projectile weapons.\
-  \ They use their telekinesis to lift the items to their hands. Their illusion generation\
-  \ is particularly strong. They can muster up visions of warbots or horrible monsters\
-  \ to scare their opponents off when they are at a combative disadvantage. Their\
-  \ telepathy and empathy give them a tremendous advantage when dealing with their\
-  \ opponents. They are almost impossible to ambush. As a rule, they engage in combat\
-  \ only to acquire fun little baubles or in self-defense if cornered.Society: abbers\
-  \ are found in small, family-oriented groups. These groups, in turn, are only a\
-  \ small section of a larger clan. These clans, or cities, consist of up to 100 dabber\
-  \ families. Dabbers are intrigued with anything shiny. If they see another creature\
-  \ with an object, they approach cautiously, asking for it. If turned down nicely,\
-  \ the dabber leaves distraught, but understanding and accepting that the object\
-  \ is cherished by its current owner. If turned away cruelly, the dabber runs away.\
-  \ Often (90% of the time), the dabber then comes back with up to seven friends to\
-  \ take the object, and anything else that strikes his and their fancy."
-players: "Dabber; 'Brown Beggars';Description: One Meter tall mutated racoons that\
-  \ walk upright and have manipulative paws.  Behavior:These Trash Pandas are highly\
-  \ intelligent and will usually be found in small family groups carrying Tech Level\
-  \ 3 equipment (but not armor)Combat: Dabbers sometimes carry Tech Level III and\
-  \ IV equipment and weapons. Occasionally, they even known how to use them (20% ).\
-  \ When dabbers fight, they use their Repulsion field mutation to ward off small\
-  \ projectile weapons. They use their telekinesis to lift the items to their hands.\
-  \ Their illusion generation is particularly strong. They can muster up visions of\
-  \ warbots or horrible monsters to scare their opponents off when they are at a combative\
-  \ disadvantage. Their telepathy and empathy give them a tremendous advantage when\
-  \ dealing with their opponents. They are almost impossible to ambush. As a rule,\
-  \ they engage in combat only to acquire fun little baubles or in self-defense if\
-  \ cornered.Society: abbers are found in small, family-oriented groups. These groups,\
-  \ in turn, are only a small section of a larger clan. These clans, or cities, consist\
-  \ of up to 100 dabber families. Dabbers are intrigued with anything shiny. If they\
-  \ see another creature with an object, they approach cautiously, asking for it.\
-  \ If turned down nicely, the dabber leaves distraught, but understanding and accepting\
-  \ that the object is cherished by its current owner. If turned away cruelly, the\
-  \ dabber runs away. Often (90% of the time), the dabber then comes back with up\
-  \ to seven friends to take the object, and anything else that strikes his and their\
-  \ fancy.|"
+final_output: 'Dabber ''Brown Beggars'' (2d10 (11)): Init +1; atk weapon melee +1
+  (1d8) and bite melee +1 (1d3); AC 15; HD 2D7 hp 8 each; MV 20'' ; 1d20; SV Fort
+  -1, Ref +0, Will +1(P) Light Generation(M) Empathy, Illusion Generation, Repulsion
+  Field, Telekinesis, TelepathyDescription: One Meter tall mutated racoons that walk
+  upright and have manipulative paws.  Behavior:These Trash Pandas are highly intelligent
+  and will usually be found in small family groups carrying Tech Level 3 equipment
+  (but not armor)Combat: Dabbers sometimes carry Tech Level III and IV equipment and
+  weapons. Occasionally, they even known how to use them (20% ). When dabbers fight,
+  they use their Repulsion field mutation to ward off small projectile weapons. They
+  use their telekinesis to lift the items to their hands. Their illusion generation
+  is particularly strong. They can muster up visions of warbots or horrible monsters
+  to scare their opponents off when they are at a combative disadvantage. Their telepathy
+  and empathy give them a tremendous advantage when dealing with their opponents.
+  They are almost impossible to ambush. As a rule, they engage in combat only to acquire
+  fun little baubles or in self-defense if cornered.Society: abbers are found in small,
+  family-oriented groups. These groups, in turn, are only a small section of a larger
+  clan. These clans, or cities, consist of up to 100 dabber families. Dabbers are
+  intrigued with anything shiny. If they see another creature with an object, they
+  approach cautiously, asking for it. If turned down nicely, the dabber leaves distraught,
+  but understanding and accepting that the object is cherished by its current owner.
+  If turned away cruelly, the dabber runs away. Often (90% of the time), the dabber
+  then comes back with up to seven friends to take the object, and anything else that
+  strikes his and their fancy.'
+players: 'Dabber; ''Brown Beggars'';Description: One Meter tall mutated racoons that
+  walk upright and have manipulative paws.  Behavior:These Trash Pandas are highly
+  intelligent and will usually be found in small family groups carrying Tech Level
+  3 equipment (but not armor)Combat: Dabbers sometimes carry Tech Level III and IV
+  equipment and weapons. Occasionally, they even known how to use them (20% ). When
+  dabbers fight, they use their Repulsion field mutation to ward off small projectile
+  weapons. They use their telekinesis to lift the items to their hands. Their illusion
+  generation is particularly strong. They can muster up visions of warbots or horrible
+  monsters to scare their opponents off when they are at a combative disadvantage.
+  Their telepathy and empathy give them a tremendous advantage when dealing with their
+  opponents. They are almost impossible to ambush. As a rule, they engage in combat
+  only to acquire fun little baubles or in self-defense if cornered.Society: abbers
+  are found in small, family-oriented groups. These groups, in turn, are only a small
+  section of a larger clan. These clans, or cities, consist of up to 100 dabber families.
+  Dabbers are intrigued with anything shiny. If they see another creature with an
+  object, they approach cautiously, asking for it. If turned down nicely, the dabber
+  leaves distraught, but understanding and accepting that the object is cherished
+  by its current owner. If turned away cruelly, the dabber runs away. Often (90% of
+  the time), the dabber then comes back with up to seven friends to take the object,
+  and anything else that strikes his and their fancy.|'
 id: 71151
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -237,4 +236,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 746
+image_height: 796
 ---

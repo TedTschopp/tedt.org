@@ -1,73 +1,80 @@
 ---
 layout: post
-
-title: "Practical On-Prem AI: What OpenAI’s GPT-OSS 20B & 120B Mean for Utilities"
-subtitle: "Running strong reasoning models locally for safer, auditable field operations"
-quote: "These are strong, accessible reasoning engines—small enough to run on common hardware, cheap enough to experiment with, and good enough at reasoning to matter."
-excerpt: "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers."
-source: "Original Content"
-source-url: ""
-call-to-action: "Pilot GPT-OSS 20B on a sandbox utility workflow using the harmony format, log structured reasoning, and evaluate latency, safety gating, and auditability."
-
+title: "Practical On-Prem AI: What OpenAI\u2019s GPT-OSS 20B & 120B Mean for Utilities"
+subtitle: Running strong reasoning models locally for safer, auditable field operations
+quote: "These are strong, accessible reasoning engines\u2014small enough to run on\
+  \ common hardware, cheap enough to experiment with, and good enough at reasoning\
+  \ to matter."
+excerpt: "OpenAI\u2019s open-weight GPT-OSS 20B & 120B models make serious on-prem\
+  \ reasoning and agent workflows practical for utilities\u2014while reopening debates\
+  \ on safety, risk, and fast-followers."
+source: Original Content
+source-url: ''
+call-to-action: Pilot GPT-OSS 20B on a sandbox utility workflow using the harmony
+  format, log structured reasoning, and evaluate latency, safety gating, and auditability.
 date: 2025-08-10
-update:
+update: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
-
 bullets:
-  - Open-weight GPT-OSS 20B & 120B enable serious local reasoning + tool use on modest hardware.
-  - Mixture-of-Experts + 4.25-bit quantization keeps active params + memory footprints manageable.
-  - Utility field use cases: briefings, alarm triage, procedure synthesis, offline resilience.
-  - Safety: below OpenAI “High capability” threshold—but misuse & distillation risks persist.
-  - Strategic tension: accelerates open ecosystem while narrowing proprietary lead.
-
-description: "How GPT-OSS 20B & 120B shift practical on-prem AI for utilities: capabilities, safety framing, infrastructure sizing, and concrete field automation patterns."
-seo-description: "Analysis of OpenAI’s GPT-OSS 20B & 120B: local reasoning models for utility workflows, hardware sizing, safety trade-offs, and on-prem agent design."
-
+- Open-weight GPT-OSS 20B & 120B enable serious local reasoning + tool use on modest
+  hardware.
+- Mixture-of-Experts + 4.25-bit quantization keeps active params + memory footprints
+  manageable.
+- Utility field use cases: briefings, alarm triage, procedure synthesis, offline resilience.
+- Safety: "below OpenAI \u201CHigh capability\u201D threshold\u2014but misuse & distillation\
+    \ risks persist."
+- Strategic tension: accelerates open ecosystem while narrowing proprietary lead.
+description: 'How GPT-OSS 20B & 120B shift practical on-prem AI for utilities: capabilities,
+  safety framing, infrastructure sizing, and concrete field automation patterns.'
+seo-description: "Analysis of OpenAI\u2019s GPT-OSS 20B & 120B: local reasoning models\
+  \ for utility workflows, hardware sizing, safety trade-offs, and on-prem agent design."
 categories:
-  - Artificial-Intelligence
-  - Computers
-
+- Artificial-Intelligence
+- Computers
 tags:
-  - openai
-  - gpt-oss
-  - open-weight
-  - mixture-of-experts
-  - reasoning
-  - chain-of-thought
-  - utilities
-  - on-prem
-  - safety
-  - preparedness-framework
-  - agentic-tool-use
-
-keywords: openai, gpt-oss, gpt-oss-20b, gpt-oss-120b, open weight models, mixture of experts, utility ai, on-prem ai, chain of thought, safety, field automation
-
+- openai
+- gpt-oss
+- open-weight
+- mixture-of-experts
+- reasoning
+- chain-of-thought
+- utilities
+- on-prem
+- safety
+- preparedness-framework
+- agentic-tool-use
+keywords: openai, gpt-oss, gpt-oss-20b, gpt-oss-120b, open weight models, mixture
+  of experts, utility ai, on-prem ai, chain of thought, safety, field automation
 location:
   name: Bradbury, CA
 coordinates:
-  latitude: 34.1470
+  latitude: 34.147
   longitude: -117.9709
-
 image: img/AI/OSS.webp
-image-alt: "A split-brain illustration with the left side featuring science and research symbols, and the right side containing technology and data icons, surrounded by interconnected lines, gears, and interface elements.
-"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Symphony of Circuits and Synapses"
-image-description: "A vector graphic depicting a stylized human brain divided into two halves—one side highlighting science and research symbols such as beakers and molecules, and the other focusing on technology with computer screens, graphs, and gears. The brain is surrounded by interconnected lines and icons representing data flow, digital tools, and automation, symbolizing the integration of AI, technology, and scientific research."
-image-title: "Symphony of Circuits and Synapses"
-
-mastodon-post-id:
-
+image-alt: 'A split-brain illustration with the left side featuring science and research
+  symbols, and the right side containing technology and data icons, surrounded by
+  interconnected lines, gears, and interface elements. '
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: Symphony of Circuits and Synapses
+image-description: "A vector graphic depicting a stylized human brain divided into\
+  \ two halves\u2014one side highlighting science and research symbols such as beakers\
+  \ and molecules, and the other focusing on technology with computer screens, graphs,\
+  \ and gears. The brain is surrounded by interconnected lines and icons representing\
+  \ data flow, digital tools, and automation, symbolizing the integration of AI, technology,\
+  \ and scientific research."
+image-title: Symphony of Circuits and Synapses
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 *Updated: Aug 10, 2025*
 
 *Bottom Line Up Front:* OpenAI has released powerful, open-weight AI models designed specifically for local, on-premises use, ideal for utility companies aiming to boost field productivity, enhance safety, and streamline operations. These models, GPT-OSS-20B and GPT-OSS-120B, can run on standard hardware, making them perfect for embedding directly into field devices like substation controllers, rugged tablets, or drones. With customized local training, they can autonomously generate crew briefings, validate safety checks, intelligently triage equipment alarms, and translate plain-language requests into structured, auditable procedures—always ensuring humans retain final oversight. This offers utilities a practical way to keep critical data secure, improve offline resilience during outages, and reduce human error in complex field workflows.

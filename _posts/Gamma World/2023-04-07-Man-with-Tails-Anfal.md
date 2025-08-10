@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Ark.png
-title: Man with Tails «Anfal»
+title: "Man with Tails \xABAnfal\xBB"
 creature_name_index: Anfal
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: GW09 Module
 author: ''
-author_name: 'Kim Eastland'
+author_name: Kim Eastland
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -74,8 +74,8 @@ monster_name: Anfal 'Man with Tails'
 number_appearing: 1d12 (6)
 number_appearing_single: '6'
 init: '-3'
-monster_name_xx_number_if_applicable_init_+-x: "Anfal 'Man with Tails' (1d12 (6)):\
-  \ Init -3"
+monster_name_xx_number_if_applicable_init_+-x: 'Anfal ''Man with Tails'' (1d12 (6)):
+  Init -3'
 ps_-_c: ''
 dx_-_c: ''
 cn_-_c: ''
@@ -140,11 +140,11 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort -3, Ref -3, Will -3
 fort_save: '-3'
 ref_save: '-3'
 will: '-3'
-normal_text: "Anfal 'Man with Tails' (1d12 (6)): Init -3; atk see description; AC\
-  \ 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
+normal_text: 'Anfal ''Man with Tails'' (1d12 (6)): Init -3; atk see description; AC
+  10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 description_output: ''
-final_output: "Anfal 'Man with Tails' (1d12 (6)): Init -3; atk see description; AC\
-  \ 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3"
+final_output: 'Anfal ''Man with Tails'' (1d12 (6)): Init -3; atk see description;
+  AC 10; HD 1D7 hp 4 each; NO MOVEMENT; 1d20; SV Fort -3, Ref -3, Will -3'
 players: Anfal; 'Man with Tails';|
 id: 71017
 permalink: /Gamma-World-Bestiary/:title:output_ext
@@ -154,4 +154,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 956
+image_height: 946
 ---

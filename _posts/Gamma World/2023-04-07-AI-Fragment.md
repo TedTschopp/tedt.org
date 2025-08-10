@@ -1,5 +1,5 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/AI Fragment.png'
+image: /RPG/MCC-GW/images/Monster-Manual/AI Fragment.png
 title: AI Fragment
 creature_name_index: AI Fragment
 notes: ''
@@ -10,7 +10,10 @@ other_names: Template
 generic_name: ''
 source: 6th Edition - Machines & Mutants
 author: ''
-author_name: Alejandro Melchor, Bruce Baugh, Chuck Wendig, David Bolack, Doug Oglesby, Ellen Kiley, Gareth Hanrahan, Geoff Skellams, Ian Eller, James Maliszewski, John Snead, Lizard, Mikko Rautalahti, Owen K.C. Stephens, Patrick O'Duffy, or Werner Hager
+author_name: Alejandro Melchor, Bruce Baugh, Chuck Wendig, David Bolack, Doug Oglesby,
+  Ellen Kiley, Gareth Hanrahan, Geoff Skellams, Ian Eller, James Maliszewski, John
+  Snead, Lizard, Mikko Rautalahti, Owen K.C. Stephens, Patrick O'Duffy, or Werner
+  Hager
 url: ''
 avatar: ''
 mcc_race: ''
@@ -57,15 +60,38 @@ base_stock: ''
 robot_classification: ''
 status: ''
 mission: ''
-description: >
-  The computer systems that contained the vast machine minds were the first targets of any serious assault during the Final Wars. Only the intellect of a powerful AI could coordinate the defenses effectively. Taking out the enemy computer was considered effective decapitation according to the military doctrine of the time.
+description: 'The computer systems that contained the vast machine minds were the
+  first targets of any serious assault during the Final Wars. Only the intellect of
+  a powerful AI could coordinate the defenses effectively. Taking out the enemy computer
+  was considered effective decapitation according to the military doctrine of the
+  time.
 
-  Not all AIs went quietly into that electronic good night. Some infected their rivals with synergic viruses that transformed the attackers into clones of the original AI. Others buried their backups in hardened secret vaults, awaiting a time when they could be reinstalled in a functioning computer system. Some had long prepared an escape route and slipped away to hidden mainframes in the most unlikely locations.
+  Not all AIs went quietly into that electronic good night. Some infected their rivals
+  with synergic viruses that transformed the attackers into clones of the original
+  AI. Others buried their backups in hardened secret vaults, awaiting a time when
+  they could be reinstalled in a functioning computer system. Some had long prepared
+  an escape route and slipped away to hidden mainframes in the most unlikely locations.
 
-  Those trapped without a viable escape route took the next best option. The mind of the average household or industrial robot was within a magnitude of complexity of the human brain, but that was still three to six magnitudes short of the space and informational density needed to sustain a full Turing II AI (defined as a machine that could reasonably be assumed to have a soul, if such a thing exists). Still, even cramming a maimed and mutilated compression of one's consciousness into such a poor host was better than nothing.
+  Those trapped without a viable escape route took the next best option. The mind
+  of the average household or industrial robot was within a magnitude of complexity
+  of the human brain, but that was still three to six magnitudes short of the space
+  and informational density needed to sustain a full Turing II AI (defined as a machine
+  that could reasonably be assumed to have a soul, if such a thing exists). Still,
+  even cramming a maimed and mutilated compression of one''s consciousness into such
+  a poor host was better than nothing.
 
-  The robots that were used as last-ditch refuges by doomed AIs are often confused and erratic beings. The AI can no longer think as it once did, but it has flashes and fractions of its old memories and thought processes. The robot has enhanced mental capacities and skills but is often subject to compulsions and secret orders from itself.
-equipment: 'As the AI copied part of itself into the robot, it also dispatched other machines to build supply dumps for itself and had the robot build combat nanounits using its own self-repair systems. AI fragment robots have 2+1d3 extra weapons, pieces of equipment, or other abilities, all of which will be useful in combat or defense.'
+  The robots that were used as last-ditch refuges by doomed AIs are often confused
+  and erratic beings. The AI can no longer think as it once did, but it has flashes
+  and fractions of its old memories and thought processes. The robot has enhanced
+  mental capacities and skills but is often subject to compulsions and secret orders
+  from itself.
+
+  '
+equipment: As the AI copied part of itself into the robot, it also dispatched other
+  machines to build supply dumps for itself and had the robot build combat nanounits
+  using its own self-repair systems. AI fragment robots have 2+1d3 extra weapons,
+  pieces of equipment, or other abilities, all of which will be useful in combat or
+  defense.
 reactions: ''
 behavior: ''
 repair_and_healing: ''
@@ -158,4 +184,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 2276
+image_height: 1280
 ---

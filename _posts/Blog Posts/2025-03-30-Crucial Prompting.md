@@ -1,67 +1,69 @@
 ---
 layout: post
-
-title: "Crucial Prompting"
-subtitle: "AI Communication as a Human Skill"
-quote: "Ask any parent who's tried to get a straight answer from a teenager, or a team lead struggling with an open-ended ask from a VP. Vague begets vague. And it's no different with AI."
-excerpt: "This article reframes AI prompting as a communication skill—akin to having a crucial conversation. You'll learn how effective prompts mirror strong human dialogue: clear, intentional, structured, and grounded in real outcomes. Whether you're shaping AI output or shaping culture, the same principle applies—ask well to get what matters. Using the 'building' metaphor, you'll walk through a layered, practical framework for crafting prompts that reduce confusion, increase alignment, and produce smarter, more useful results."
-source: "Original Content"
-source-url: ""
-call-to-action: "Practice the 'building' metaphor framework in your next AI conversation"
-
+title: Crucial Prompting
+subtitle: AI Communication as a Human Skill
+quote: Ask any parent who's tried to get a straight answer from a teenager, or a team
+  lead struggling with an open-ended ask from a VP. Vague begets vague. And it's no
+  different with AI.
+excerpt: "This article reframes AI prompting as a communication skill\u2014akin to\
+  \ having a crucial conversation. You'll learn how effective prompts mirror strong\
+  \ human dialogue: clear, intentional, structured, and grounded in real outcomes.\
+  \ Whether you're shaping AI output or shaping culture, the same principle applies\u2014\
+  ask well to get what matters. Using the 'building' metaphor, you'll walk through\
+  \ a layered, practical framework for crafting prompts that reduce confusion, increase\
+  \ alignment, and produce smarter, more useful results."
+source: Original Content
+source-url: ''
+call-to-action: Practice the 'building' metaphor framework in your next AI conversation
 date: 2025-03-30
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - AI prompting mirrors crucial conversation skills - clarity, intention, and respect
-    - Effective prompts are structured like buildings with foundation, framework, and finishing
-    - The hardest part isn't getting an answer—it's asking the question well
-    - Vague prompts lead to vague results, whether with humans or machines
-    - Communication principles that work with people also work with AI
-
-description: "A framework for AI prompting based on crucial conversation principles, teaching how to structure effective prompts using the 'building' metaphor with foundation, framework, and finishing layers for clearer, more useful AI interactions."
-
-seo-description: "Learn crucial prompting skills for AI. Discover how human communication principles create better AI interactions using structured prompting frameworks."
-
-categories: 
-    - Artificial Intelligence
-    - Projects 
-
-tags: 
-    - crucial conversations
-    - prompt engineering
-    - AI communication
-    - conversation skills
-    - structured prompting
-
-keywords: crucial prompting, AI communication skills, prompt engineering framework, crucial conversations AI, structured AI prompts, clear AI communication
-
+- AI prompting mirrors crucial conversation skills - clarity, intention, and respect
+- Effective prompts are structured like buildings with foundation, framework, and
+  finishing
+- "The hardest part isn't getting an answer\u2014it's asking the question well"
+- Vague prompts lead to vague results, whether with humans or machines
+- Communication principles that work with people also work with AI
+description: A framework for AI prompting based on crucial conversation principles,
+  teaching how to structure effective prompts using the 'building' metaphor with foundation,
+  framework, and finishing layers for clearer, more useful AI interactions.
+seo-description: Learn crucial prompting skills for AI. Discover how human communication
+  principles create better AI interactions using structured prompting frameworks.
+categories:
+- Artificial Intelligence
+- Projects
+tags:
+- crucial conversations
+- prompt engineering
+- AI communication
+- conversation skills
+- structured prompting
+keywords: crucial prompting, AI communication skills, prompt engineering framework,
+  crucial conversations AI, structured AI prompts, clear AI communication
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Crucial-Prompting.webp
-image-alt: "Construction metaphor showing the building blocks of effective AI prompting"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-
-mastodon-post-id: 
-
+image-alt: Construction metaphor showing the building blocks of effective AI prompting
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: ''
+image-title: ''
+mastodon-post-id: null
+image_width: 1536
+image_height: 1024
 ---
-
 ## Bottom Line Up Front
 
 This article reframes AI prompting as a communication skill—akin to having a crucial conversation. You'll learn how effective prompts mirror strong human dialogue: clear, intentional, structured, and grounded in real outcomes. Whether you're shaping AI output or shaping culture, the same principle applies—ask well to get what matters. Using the "building" metaphor, you'll walk through a layered, practical framework for crafting prompts that reduce confusion, increase alignment, and produce smarter, more useful results.

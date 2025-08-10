@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Deng Kheshes.png'
-title: Spiny Recluses «Deng Kheshes»
+image: /RPG/MCC-GW/images/Monster-Manual/Deng Kheshes.png
+title: "Spiny Recluses \xABDeng Kheshes\xBB"
 creature_name_index: Deng Kheshes
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-author_name: 'John M. Maxstadt'
+author_name: John M. Maxstadt
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -98,8 +98,8 @@ monster_name: Deng Kheshes 'Spiny Recluses'
 number_appearing: 1d12 (6)
 number_appearing_single: '6'
 init: '+3'
-monster_name_xx_number_if_applicable_init_+-x: "Deng Kheshes 'Spiny Recluses' (1d12\
-  \ (6)): Init +3"
+monster_name_xx_number_if_applicable_init_+-x: 'Deng Kheshes ''Spiny Recluses'' (1d12
+  (6)): Init +3'
 ps_-_c: '15'
 dx_-_c: '6'
 cn_-_c: '14'
@@ -164,88 +164,86 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref -1, Will -1
 fort_save: '1'
 ref_save: '-1'
 will: '-1'
-normal_text: "Deng Kheshes 'Spiny Recluses' (1d12 (6)): Init +3; atk see description;\
-  \ AC 14; HD 7D5 hp 21 each; NO MOVEMENT; 1d20; SV Fort +1, Ref -1, Will -1"
-description_output: "Description:  Garrels are agile mam- mals of reasonable intelligence\
-  \ that have developed several special skills to foil predators. They are intensely\
-  \ curious beings, and they love to collect small pieces of both metal and plastic,\
-  \ espe- cially if they are shiny, have strange shapes, or are in some other way\
-  \ attrac- tive to the garrel. Because of this, gar- rels often unwittingly have\
-  \ one or two small artifacts in their possession, mak- ing them targets for treasure\
-  \ hunters(especially for Archivists). However, it is unlikely that the garrels need\
-  \ fear extinction at the hands of such as these.When not gathering food, a garrel\
-  \ is always on the lookout for new items to add to its collection. Anyone who camps\
-  \ in or near a forest inhabited by garrels can expect at least one of these creatures\
-  \ to be lurking nearby, just out of sight. The garrel will wait until it sees something\
-  \ attractive thats also unguarded. It will then use its teleport object ability\
-  \ to gain possession of the item and will then return to its lair, most often a\
-  \ hollow tree trunk or a small burrow, where the garrel will put the item with the\
-  \ others it has accumulated.If a garrel is attacked, either by a predator or by\
-  \ angry beings whose equipment has been borrowed,' its first reaction will be to\
-  \ flee, holding any treasures it has acquired for as long as it can, using its speed,\
-  \ agility, tree-climbing skills, and any available foliage to speed its escape.\
-  \ Garrels prefer forests with a thick blanket of undergrowth so that they can lose\
-  \ pursuit with a minimum of effort. During the chase, the garrel will trust its\
-  \ displacement ability to send it to safety if it is at any time in imminent danger\
-  \ of being killed.If displacement cannot be used, the garrel will then use its stunning\
-  \ force to buy time. Garrels are immune to the effects of another garrels stunning\
-  \ force attack. If both of the previous powers have been used and the garrel is\
-  \ still in danger, it will then attack its pursuer, biting with its sharp teeth\
-  \ and never relenting."
-final_output: "Deng Kheshes 'Spiny Recluses' (1d12 (6)): Init +3; atk see description;\
-  \ AC 14; HD 7D5 hp 21 each; NO MOVEMENT; 1d20; SV Fort +1, Ref -1, Will -1Chemical\
-  \ sense, mobility (variant), sonic blast, and thorns/spikes (variant)Description:\
-  \  Garrels are agile mam- mals of reasonable intelligence that have developed several\
-  \ special skills to foil predators. They are intensely curious beings, and they\
-  \ love to collect small pieces of both metal and plastic, espe- cially if they are\
-  \ shiny, have strange shapes, or are in some other way attrac- tive to the garrel.\
-  \ Because of this, gar- rels often unwittingly have one or two small artifacts in\
-  \ their possession, mak- ing them targets for treasure hunters(especially for Archivists).\
-  \ However, it is unlikely that the garrels need fear extinction at the hands of\
-  \ such as these.When not gathering food, a garrel is always on the lookout for new\
-  \ items to add to its collection. Anyone who camps in or near a forest inhabited\
-  \ by garrels can expect at least one of these creatures to be lurking nearby, just\
-  \ out of sight. The garrel will wait until it sees something attractive thats also\
-  \ unguarded. It will then use its teleport object ability to gain possession of\
-  \ the item and will then return to its lair, most often a hollow tree trunk or a\
-  \ small burrow, where the garrel will put the item with the others it has accumulated.If\
-  \ a garrel is attacked, either by a predator or by angry beings whose equipment\
-  \ has been borrowed,' its first reaction will be to flee, holding any treasures\
-  \ it has acquired for as long as it can, using its speed, agility, tree-climbing\
-  \ skills, and any available foliage to speed its escape. Garrels prefer forests\
-  \ with a thick blanket of undergrowth so that they can lose pursuit with a minimum\
-  \ of effort. During the chase, the garrel will trust its displacement ability to\
-  \ send it to safety if it is at any time in imminent danger of being killed.If displacement\
-  \ cannot be used, the garrel will then use its stunning force to buy time. Garrels\
-  \ are immune to the effects of another garrels stunning force attack. If both of\
-  \ the previous powers have been used and the garrel is still in danger, it will\
-  \ then attack its pursuer, biting with its sharp teeth and never relenting."
-players: "Deng Kheshes; 'Spiny Recluses';Description:  Garrels are agile mam- mals\
-  \ of reasonable intelligence that have developed several special skills to foil\
-  \ predators. They are intensely curious beings, and they love to collect small pieces\
-  \ of both metal and plastic, espe- cially if they are shiny, have strange shapes,\
-  \ or are in some other way attrac- tive to the garrel. Because of this, gar- rels\
-  \ often unwittingly have one or two small artifacts in their possession, mak- ing\
-  \ them targets for treasure hunters(especially for Archivists). However, it is unlikely\
-  \ that the garrels need fear extinction at the hands of such as these.When not gathering\
-  \ food, a garrel is always on the lookout for new items to add to its collection.\
-  \ Anyone who camps in or near a forest inhabited by garrels can expect at least\
-  \ one of these creatures to be lurking nearby, just out of sight. The garrel will\
-  \ wait until it sees something attractive thats also unguarded. It will then use\
-  \ its teleport object ability to gain possession of the item and will then return\
-  \ to its lair, most often a hollow tree trunk or a small burrow, where the garrel\
-  \ will put the item with the others it has accumulated.If a garrel is attacked,\
-  \ either by a predator or by angry beings whose equipment has been borrowed,' its\
-  \ first reaction will be to flee, holding any treasures it has acquired for as long\
-  \ as it can, using its speed, agility, tree-climbing skills, and any available foliage\
-  \ to speed its escape. Garrels prefer forests with a thick blanket of undergrowth\
-  \ so that they can lose pursuit with a minimum of effort. During the chase, the\
-  \ garrel will trust its displacement ability to send it to safety if it is at any\
-  \ time in imminent danger of being killed.If displacement cannot be used, the garrel\
-  \ will then use its stunning force to buy time. Garrels are immune to the effects\
-  \ of another garrels stunning force attack. If both of the previous powers have\
-  \ been used and the garrel is still in danger, it will then attack its pursuer,\
-  \ biting with its sharp teeth and never relenting.|"
+normal_text: 'Deng Kheshes ''Spiny Recluses'' (1d12 (6)): Init +3; atk see description;
+  AC 14; HD 7D5 hp 21 each; NO MOVEMENT; 1d20; SV Fort +1, Ref -1, Will -1'
+description_output: 'Description:  Garrels are agile mam- mals of reasonable intelligence
+  that have developed several special skills to foil predators. They are intensely
+  curious beings, and they love to collect small pieces of both metal and plastic,
+  espe- cially if they are shiny, have strange shapes, or are in some other way attrac-
+  tive to the garrel. Because of this, gar- rels often unwittingly have one or two
+  small artifacts in their possession, mak- ing them targets for treasure hunters(especially
+  for Archivists). However, it is unlikely that the garrels need fear extinction at
+  the hands of such as these.When not gathering food, a garrel is always on the lookout
+  for new items to add to its collection. Anyone who camps in or near a forest inhabited
+  by garrels can expect at least one of these creatures to be lurking nearby, just
+  out of sight. The garrel will wait until it sees something attractive thats also
+  unguarded. It will then use its teleport object ability to gain possession of the
+  item and will then return to its lair, most often a hollow tree trunk or a small
+  burrow, where the garrel will put the item with the others it has accumulated.If
+  a garrel is attacked, either by a predator or by angry beings whose equipment has
+  been borrowed,'' its first reaction will be to flee, holding any treasures it has
+  acquired for as long as it can, using its speed, agility, tree-climbing skills,
+  and any available foliage to speed its escape. Garrels prefer forests with a thick
+  blanket of undergrowth so that they can lose pursuit with a minimum of effort. During
+  the chase, the garrel will trust its displacement ability to send it to safety if
+  it is at any time in imminent danger of being killed.If displacement cannot be used,
+  the garrel will then use its stunning force to buy time. Garrels are immune to the
+  effects of another garrels stunning force attack. If both of the previous powers
+  have been used and the garrel is still in danger, it will then attack its pursuer,
+  biting with its sharp teeth and never relenting.'
+final_output: 'Deng Kheshes ''Spiny Recluses'' (1d12 (6)): Init +3; atk see description;
+  AC 14; HD 7D5 hp 21 each; NO MOVEMENT; 1d20; SV Fort +1, Ref -1, Will -1Chemical
+  sense, mobility (variant), sonic blast, and thorns/spikes (variant)Description:  Garrels
+  are agile mam- mals of reasonable intelligence that have developed several special
+  skills to foil predators. They are intensely curious beings, and they love to collect
+  small pieces of both metal and plastic, espe- cially if they are shiny, have strange
+  shapes, or are in some other way attrac- tive to the garrel. Because of this, gar-
+  rels often unwittingly have one or two small artifacts in their possession, mak-
+  ing them targets for treasure hunters(especially for Archivists). However, it is
+  unlikely that the garrels need fear extinction at the hands of such as these.When
+  not gathering food, a garrel is always on the lookout for new items to add to its
+  collection. Anyone who camps in or near a forest inhabited by garrels can expect
+  at least one of these creatures to be lurking nearby, just out of sight. The garrel
+  will wait until it sees something attractive thats also unguarded. It will then
+  use its teleport object ability to gain possession of the item and will then return
+  to its lair, most often a hollow tree trunk or a small burrow, where the garrel
+  will put the item with the others it has accumulated.If a garrel is attacked, either
+  by a predator or by angry beings whose equipment has been borrowed,'' its first
+  reaction will be to flee, holding any treasures it has acquired for as long as it
+  can, using its speed, agility, tree-climbing skills, and any available foliage to
+  speed its escape. Garrels prefer forests with a thick blanket of undergrowth so
+  that they can lose pursuit with a minimum of effort. During the chase, the garrel
+  will trust its displacement ability to send it to safety if it is at any time in
+  imminent danger of being killed.If displacement cannot be used, the garrel will
+  then use its stunning force to buy time. Garrels are immune to the effects of another
+  garrels stunning force attack. If both of the previous powers have been used and
+  the garrel is still in danger, it will then attack its pursuer, biting with its
+  sharp teeth and never relenting.'
+players: 'Deng Kheshes; ''Spiny Recluses'';Description:  Garrels are agile mam- mals
+  of reasonable intelligence that have developed several special skills to foil predators.
+  They are intensely curious beings, and they love to collect small pieces of both
+  metal and plastic, espe- cially if they are shiny, have strange shapes, or are in
+  some other way attrac- tive to the garrel. Because of this, gar- rels often unwittingly
+  have one or two small artifacts in their possession, mak- ing them targets for treasure
+  hunters(especially for Archivists). However, it is unlikely that the garrels need
+  fear extinction at the hands of such as these.When not gathering food, a garrel
+  is always on the lookout for new items to add to its collection. Anyone who camps
+  in or near a forest inhabited by garrels can expect at least one of these creatures
+  to be lurking nearby, just out of sight. The garrel will wait until it sees something
+  attractive thats also unguarded. It will then use its teleport object ability to
+  gain possession of the item and will then return to its lair, most often a hollow
+  tree trunk or a small burrow, where the garrel will put the item with the others
+  it has accumulated.If a garrel is attacked, either by a predator or by angry beings
+  whose equipment has been borrowed,'' its first reaction will be to flee, holding
+  any treasures it has acquired for as long as it can, using its speed, agility, tree-climbing
+  skills, and any available foliage to speed its escape. Garrels prefer forests with
+  a thick blanket of undergrowth so that they can lose pursuit with a minimum of effort.
+  During the chase, the garrel will trust its displacement ability to send it to safety
+  if it is at any time in imminent danger of being killed.If displacement cannot be
+  used, the garrel will then use its stunning force to buy time. Garrels are immune
+  to the effects of another garrels stunning force attack. If both of the previous
+  powers have been used and the garrel is still in danger, it will then attack its
+  pursuer, biting with its sharp teeth and never relenting.|'
 id: 71163
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -254,4 +252,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 458
+image_height: 976
 ---

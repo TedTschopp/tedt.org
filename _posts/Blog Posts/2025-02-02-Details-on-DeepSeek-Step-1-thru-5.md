@@ -1,75 +1,84 @@
 ---
 layout: post
-
-title: "Details on DeepSeek: Step 1 through 5"
-subtitle: "A Deep Dive into the Revolutionary Five-Step Training Pipeline Behind DeepSeek R1's Reasoning Capabilities"
-quote: "Think of this like training a dog. You give a command, the dog responds, and if it does the right thing, you give it a treat. Over time, it learns which actions lead to rewards and improves its behavior."
-excerpt: "An in-depth technical analysis of DeepSeek R1's groundbreaking five-step training methodology, using dog training metaphors to explain complex reinforcement learning concepts that created the first open-weight reasoning model trained from scratch."
-source: "Original Content"
-source-url: ""
-call-to-action: "Explore each step of the DeepSeek training pipeline to understand how revolutionary AI reasoning models are built from the ground up."
-
+title: 'Details on DeepSeek: Step 1 through 5'
+subtitle: A Deep Dive into the Revolutionary Five-Step Training Pipeline Behind DeepSeek
+  R1's Reasoning Capabilities
+quote: Think of this like training a dog. You give a command, the dog responds, and
+  if it does the right thing, you give it a treat. Over time, it learns which actions
+  lead to rewards and improves its behavior.
+excerpt: An in-depth technical analysis of DeepSeek R1's groundbreaking five-step
+  training methodology, using dog training metaphors to explain complex reinforcement
+  learning concepts that created the first open-weight reasoning model trained from
+  scratch.
+source: Original Content
+source-url: ''
+call-to-action: Explore each step of the DeepSeek training pipeline to understand
+  how revolutionary AI reasoning models are built from the ground up.
 date: 2025-02-02
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - DeepSeek R1-Zero is the first open-weight model trained exclusively with large-scale reinforcement learning from scratch
-    - Five-step training pipeline combines cold-start RL, supervised fine-tuning, large-scale RL, rejection sampling, and final RL
-    - Dog training metaphors make complex AI concepts accessible to general audiences
-    - Reinforcement learning training time directly impacts model performance, not just inference time
-    - Agile-style training with thousands of rapid updates accelerates reasoning model development
-
-description: "A comprehensive technical breakdown of DeepSeek R1's revolutionary five-step training methodology, explaining how the first open-weight reasoning model was built from scratch using reinforcement learning, with accessible dog training metaphors to illustrate complex AI concepts."
-
-seo-description: "Learn DeepSeek R1's groundbreaking 5-step AI training pipeline: cold-start reinforcement learning, supervised fine-tuning, large-scale RL, rejection sampling, and final optimization for reasoning AI models."
-
-categories: 
-    - Artificial Intelligence
-    - Computers
-    - Science
-
-tags: 
-    - DeepSeek
-    - reinforcement learning
-    - AI training
-    - reasoning models
-    - machine learning
-    - R1-Zero
-    - supervised fine-tuning
-    - rejection sampling
-    - PPO algorithm
-    - RLHF
-    - cold-start training
-    - model optimization
-
-keywords: DeepSeek R1, reinforcement learning, AI training pipeline, reasoning models, open-weight models, supervised fine-tuning, rejection sampling, PPO algorithm, RLHF, cold-start training, machine learning methodology
-
+- DeepSeek R1-Zero is the first open-weight model trained exclusively with large-scale
+  reinforcement learning from scratch
+- Five-step training pipeline combines cold-start RL, supervised fine-tuning, large-scale
+  RL, rejection sampling, and final RL
+- Dog training metaphors make complex AI concepts accessible to general audiences
+- Reinforcement learning training time directly impacts model performance, not just
+  inference time
+- Agile-style training with thousands of rapid updates accelerates reasoning model
+  development
+description: A comprehensive technical breakdown of DeepSeek R1's revolutionary five-step
+  training methodology, explaining how the first open-weight reasoning model was built
+  from scratch using reinforcement learning, with accessible dog training metaphors
+  to illustrate complex AI concepts.
+seo-description: 'Learn DeepSeek R1''s groundbreaking 5-step AI training pipeline:
+  cold-start reinforcement learning, supervised fine-tuning, large-scale RL, rejection
+  sampling, and final optimization for reasoning AI models.'
+categories:
+- Artificial Intelligence
+- Computers
+- Science
+tags:
+- DeepSeek
+- reinforcement learning
+- AI training
+- reasoning models
+- machine learning
+- R1-Zero
+- supervised fine-tuning
+- rejection sampling
+- PPO algorithm
+- RLHF
+- cold-start training
+- model optimization
+keywords: DeepSeek R1, reinforcement learning, AI training pipeline, reasoning models,
+  open-weight models, supervised fine-tuning, rejection sampling, PPO algorithm, RLHF,
+  cold-start training, machine learning methodology
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Deep-Seek.webp
-image-alt: "Diagram showing the five-step DeepSeek R1 training pipeline with dog training metaphors"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "DeepSeek R1 Training Pipeline"
-image-description: "Visual representation of the five-step DeepSeek training methodology using dog training analogies to explain AI concepts"
-image-title: "DeepSeek R1: Five Steps to Reasoning AI"
-
-mastodon-post-id: 
-
+image-alt: Diagram showing the five-step DeepSeek R1 training pipeline with dog training
+  metaphors
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: DeepSeek R1 Training Pipeline
+image-description: Visual representation of the five-step DeepSeek training methodology
+  using dog training analogies to explain AI concepts
+image-title: 'DeepSeek R1: Five Steps to Reasoning AI'
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 **Step 1: Training R1-Zero with Synthetic Data to Initialize R1**
 
 _Example for Step 1_

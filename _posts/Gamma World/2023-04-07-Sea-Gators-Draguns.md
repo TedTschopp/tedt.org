@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Draguns.png'
-title: Sea Gators «Draguns»
+image: /RPG/MCC-GW/images/Monster-Manual/Draguns.png
+title: "Sea Gators \xABDraguns\xBB"
 creature_name_index: Draguns
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: ''
 source: Dragon Magazine 108
 author: ''
-author_name: 'Danny Moynihan'
+author_name: Danny Moynihan
 url: ''
 avatar: ''
 mcc_race: Animal
@@ -58,38 +58,38 @@ base_stock: American alligator
 robot_classification: ''
 status: ''
 mission: ''
-description: "Draguns still resemble their ancestral alligator forms, though they\
-  \ are much larger and cannot leave the water. They establish territorial areas across\
-  \ sea beds, defending them fiercely (even against ships and submarines just passing\
-  \ by). Being particularly stupid and rather clumsy, draguns may be slowed and stopped\
-  \ by heavy, steel cable nets dropped across their paths. They seem to like basking\
-  \ on the surface of the ocean during sunny days, and they are often encountered\
-  \ during these times.Draguns possess a rudimentary form of communication consisting\
-  \ of bellows, croaks, and grunts, all of which are uttered while the dragun is floating\
-  \ on the surface. Mutant reptiles may learn to imitate these sounds with some success\
-  \ (50% chance of getting a vocalization correct), and this technique, coupled with\
-  \ an amplifier, has been used to attract or drive away these beasts.Draguns have\
-  \ three forms of attack. They prefer to bite and swallow prey that is man sized\
-  \ or smaller, there being a 15% chance per bite that such prey is gulped down whole.\
-  \ A swallowed character takes 2d6 damage per action turn from slow suffocation and\
-  \ drowning on water the dragun swallowed, plus an amount equal to his or her base\
-  \ AC from digestive acids. The victim may only attack with daggers. claws, or teeth\
-  \ against the dragun's insides (AC 9). The dragun must be slain in order for a victim\
-  \ to be removed. Once this is done, 100 points of damage must be inflicted on the\
-  \ dead dragun's midsection, either by persons outside the dragun or by a swallowed\
-  \ victim, to free the captive. Note that a dead dragun floats easily and can be\
-  \ towed to land.Draguns also like to ram ships and other creatures that are floating\
-  \ on the surface of the water, using their snouts as battering rams. A vessel of\
-  \ sailboat size or smaller is 90% likely to capsize if rammed; a ship the size of\
-  \ a sailed frigate would have a 5% chance of rolling over.Finally, draguns have\
-  \ a New Body Part: a gizzard that collects large stones and can expel them forcefully\
-  \ out of the dragun's open mouth. A fired stone weighs 2d4 kilograms, has a 40 meter\
-  \ range, and does 6d6 points of damage to whatever it strikes. Draguns only fire\
-  \ stones when floating, not underwater. Because of this effect, and because of the\
-  \ blasting sound made when the stone is launched, the original name of `dragon'was\
-  \ modified to its current form. A dragun has 1d4 such stones which may be fired\
-  \ at any particular time.If a dragun senses any sort of poison gas on the water's\
-  \ surface, it immediately submerges and flees the area."
+description: 'Draguns still resemble their ancestral alligator forms, though they
+  are much larger and cannot leave the water. They establish territorial areas across
+  sea beds, defending them fiercely (even against ships and submarines just passing
+  by). Being particularly stupid and rather clumsy, draguns may be slowed and stopped
+  by heavy, steel cable nets dropped across their paths. They seem to like basking
+  on the surface of the ocean during sunny days, and they are often encountered during
+  these times.Draguns possess a rudimentary form of communication consisting of bellows,
+  croaks, and grunts, all of which are uttered while the dragun is floating on the
+  surface. Mutant reptiles may learn to imitate these sounds with some success (50%
+  chance of getting a vocalization correct), and this technique, coupled with an amplifier,
+  has been used to attract or drive away these beasts.Draguns have three forms of
+  attack. They prefer to bite and swallow prey that is man sized or smaller, there
+  being a 15% chance per bite that such prey is gulped down whole. A swallowed character
+  takes 2d6 damage per action turn from slow suffocation and drowning on water the
+  dragun swallowed, plus an amount equal to his or her base AC from digestive acids.
+  The victim may only attack with daggers. claws, or teeth against the dragun''s insides
+  (AC 9). The dragun must be slain in order for a victim to be removed. Once this
+  is done, 100 points of damage must be inflicted on the dead dragun''s midsection,
+  either by persons outside the dragun or by a swallowed victim, to free the captive.
+  Note that a dead dragun floats easily and can be towed to land.Draguns also like
+  to ram ships and other creatures that are floating on the surface of the water,
+  using their snouts as battering rams. A vessel of sailboat size or smaller is 90%
+  likely to capsize if rammed; a ship the size of a sailed frigate would have a 5%
+  chance of rolling over.Finally, draguns have a New Body Part: a gizzard that collects
+  large stones and can expel them forcefully out of the dragun''s open mouth. A fired
+  stone weighs 2d4 kilograms, has a 40 meter range, and does 6d6 points of damage
+  to whatever it strikes. Draguns only fire stones when floating, not underwater.
+  Because of this effect, and because of the blasting sound made when the stone is
+  launched, the original name of `dragon''was modified to its current form. A dragun
+  has 1d4 such stones which may be fired at any particular time.If a dragun senses
+  any sort of poison gas on the water''s surface, it immediately submerges and flees
+  the area.'
 equipment: ''
 reactions: ''
 behavior: ''
@@ -106,8 +106,8 @@ monster_name: Draguns 'Sea Gators'
 number_appearing: 1d4-2 (0)
 number_appearing_single: '0'
 init: '+7'
-monster_name_xx_number_if_applicable_init_+-x: "Draguns 'Sea Gators' (1d4-2 (0)):\
-  \ Init +7"
+monster_name_xx_number_if_applicable_init_+-x: 'Draguns ''Sea Gators'' (1d4-2 (0)):
+  Init +7'
 ps_-_c: '61'
 dx_-_c: '2'
 cn_-_c: '13'
@@ -173,111 +173,108 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref -3, Will -2
 fort_save: '1'
 ref_save: '-3'
 will: '-2'
-normal_text: "Draguns 'Sea Gators' (1d4-2 (0)): Init +7; atk bite melee +11 (1d30+6)\
-  \ and ram melee +11 (1d30+6); AC 12; HD 28D7 hp 112; MV Swim 40' ; 1d20+1d20; SV\
-  \ Fort +1, Ref -3, Will -2"
-description_output: "Description: Draguns still resemble their ancestral alligator\
-  \ forms, though they are much larger and cannot leave the water. They establish\
-  \ territorial areas across sea beds, defending them fiercely (even against ships\
-  \ and submarines just passing by). Being particularly stupid and rather clumsy,\
-  \ draguns may be slowed and stopped by heavy, steel cable nets dropped across their\
-  \ paths. They seem to like basking on the surface of the ocean during sunny days,\
-  \ and they are often encountered during these times.Draguns possess a rudimentary\
-  \ form of communication consisting of bellows, croaks, and grunts, all of which\
-  \ are uttered while the dragun is floating on the surface. Mutant reptiles may learn\
-  \ to imitate these sounds with some success (50% chance of getting a vocalization\
-  \ correct), and this technique, coupled with an amplifier, has been used to attract\
-  \ or drive away these beasts.Draguns have three forms of attack. They prefer to\
-  \ bite and swallow prey that is man sized or smaller, there being a 15% chance per\
-  \ bite that such prey is gulped down whole. A swallowed character takes 2d6 damage\
-  \ per action turn from slow suffocation and drowning on water the dragun swallowed,\
-  \ plus an amount equal to his or her base AC from digestive acids. The victim may\
-  \ only attack with daggers. claws, or teeth against the dragun's insides (AC 9).\
-  \ The dragun must be slain in order for a victim to be removed. Once this is done,\
-  \ 100 points of damage must be inflicted on the dead dragun's midsection, either\
-  \ by persons outside the dragun or by a swallowed victim, to free the captive. Note\
-  \ that a dead dragun floats easily and can be towed to land.Draguns also like to\
-  \ ram ships and other creatures that are floating on the surface of the water, using\
-  \ their snouts as battering rams. A vessel of sailboat size or smaller is 90% likely\
-  \ to capsize if rammed; a ship the size of a sailed frigate would have a 5% chance\
-  \ of rolling over.Finally, draguns have a New Body Part: a gizzard that collects\
-  \ large stones and can expel them forcefully out of the dragun's open mouth. A fired\
-  \ stone weighs 2d4 kilograms, has a 40 meter range, and does 6d6 points of damage\
-  \ to whatever it strikes. Draguns only fire stones when floating, not underwater.\
-  \ Because of this effect, and because of the blasting sound made when the stone\
-  \ is launched, the original name of `dragon'was modified to its current form. A\
-  \ dragun has 1d4 such stones which may be fired at any particular time.If a dragun\
-  \ senses any sort of poison gas on the water's surface, it immediately submerges\
-  \ and flees the area."
-final_output: "Draguns 'Sea Gators' (1d4-2 (0)): Init +7; atk bite melee +11 (1d30+6)\
-  \ and ram melee +11 (1d30+6); AC 12; HD 28D7 hp 112; MV Swim 40' ; 1d20+1d20; SV\
-  \ Fort +1, Ref -3, Will -2Gills, new body part (projectile-firing digestive system),\
-  \ taller, and water dependencyDescription: Draguns still resemble their ancestral\
-  \ alligator forms, though they are much larger and cannot leave the water. They\
-  \ establish territorial areas across sea beds, defending them fiercely (even against\
-  \ ships and submarines just passing by). Being particularly stupid and rather clumsy,\
-  \ draguns may be slowed and stopped by heavy, steel cable nets dropped across their\
-  \ paths. They seem to like basking on the surface of the ocean during sunny days,\
-  \ and they are often encountered during these times.Draguns possess a rudimentary\
-  \ form of communication consisting of bellows, croaks, and grunts, all of which\
-  \ are uttered while the dragun is floating on the surface. Mutant reptiles may learn\
-  \ to imitate these sounds with some success (50% chance of getting a vocalization\
-  \ correct), and this technique, coupled with an amplifier, has been used to attract\
-  \ or drive away these beasts.Draguns have three forms of attack. They prefer to\
-  \ bite and swallow prey that is man sized or smaller, there being a 15% chance per\
-  \ bite that such prey is gulped down whole. A swallowed character takes 2d6 damage\
-  \ per action turn from slow suffocation and drowning on water the dragun swallowed,\
-  \ plus an amount equal to his or her base AC from digestive acids. The victim may\
-  \ only attack with daggers. claws, or teeth against the dragun's insides (AC 9).\
-  \ The dragun must be slain in order for a victim to be removed. Once this is done,\
-  \ 100 points of damage must be inflicted on the dead dragun's midsection, either\
-  \ by persons outside the dragun or by a swallowed victim, to free the captive. Note\
-  \ that a dead dragun floats easily and can be towed to land.Draguns also like to\
-  \ ram ships and other creatures that are floating on the surface of the water, using\
-  \ their snouts as battering rams. A vessel of sailboat size or smaller is 90% likely\
-  \ to capsize if rammed; a ship the size of a sailed frigate would have a 5% chance\
-  \ of rolling over.Finally, draguns have a New Body Part: a gizzard that collects\
-  \ large stones and can expel them forcefully out of the dragun's open mouth. A fired\
-  \ stone weighs 2d4 kilograms, has a 40 meter range, and does 6d6 points of damage\
-  \ to whatever it strikes. Draguns only fire stones when floating, not underwater.\
-  \ Because of this effect, and because of the blasting sound made when the stone\
-  \ is launched, the original name of `dragon'was modified to its current form. A\
-  \ dragun has 1d4 such stones which may be fired at any particular time.If a dragun\
-  \ senses any sort of poison gas on the water's surface, it immediately submerges\
-  \ and flees the area."
-players: "Draguns; 'Sea Gators';Description: Draguns still resemble their ancestral\
-  \ alligator forms, though they are much larger and cannot leave the water. They\
-  \ establish territorial areas across sea beds, defending them fiercely (even against\
-  \ ships and submarines just passing by). Being particularly stupid and rather clumsy,\
-  \ draguns may be slowed and stopped by heavy, steel cable nets dropped across their\
-  \ paths. They seem to like basking on the surface of the ocean during sunny days,\
-  \ and they are often encountered during these times.Draguns possess a rudimentary\
-  \ form of communication consisting of bellows, croaks, and grunts, all of which\
-  \ are uttered while the dragun is floating on the surface. Mutant reptiles may learn\
-  \ to imitate these sounds with some success (50% chance of getting a vocalization\
-  \ correct), and this technique, coupled with an amplifier, has been used to attract\
-  \ or drive away these beasts.Draguns have three forms of attack. They prefer to\
-  \ bite and swallow prey that is man sized or smaller, there being a 15% chance per\
-  \ bite that such prey is gulped down whole. A swallowed character takes 2d6 damage\
-  \ per action turn from slow suffocation and drowning on water the dragun swallowed,\
-  \ plus an amount equal to his or her base AC from digestive acids. The victim may\
-  \ only attack with daggers. claws, or teeth against the dragun's insides (AC 9).\
-  \ The dragun must be slain in order for a victim to be removed. Once this is done,\
-  \ 100 points of damage must be inflicted on the dead dragun's midsection, either\
-  \ by persons outside the dragun or by a swallowed victim, to free the captive. Note\
-  \ that a dead dragun floats easily and can be towed to land.Draguns also like to\
-  \ ram ships and other creatures that are floating on the surface of the water, using\
-  \ their snouts as battering rams. A vessel of sailboat size or smaller is 90% likely\
-  \ to capsize if rammed; a ship the size of a sailed frigate would have a 5% chance\
-  \ of rolling over.Finally, draguns have a New Body Part: a gizzard that collects\
-  \ large stones and can expel them forcefully out of the dragun's open mouth. A fired\
-  \ stone weighs 2d4 kilograms, has a 40 meter range, and does 6d6 points of damage\
-  \ to whatever it strikes. Draguns only fire stones when floating, not underwater.\
-  \ Because of this effect, and because of the blasting sound made when the stone\
-  \ is launched, the original name of `dragon'was modified to its current form. A\
-  \ dragun has 1d4 such stones which may be fired at any particular time.If a dragun\
-  \ senses any sort of poison gas on the water's surface, it immediately submerges\
-  \ and flees the area.|"
+normal_text: 'Draguns ''Sea Gators'' (1d4-2 (0)): Init +7; atk bite melee +11 (1d30+6)
+  and ram melee +11 (1d30+6); AC 12; HD 28D7 hp 112; MV Swim 40'' ; 1d20+1d20; SV
+  Fort +1, Ref -3, Will -2'
+description_output: 'Description: Draguns still resemble their ancestral alligator
+  forms, though they are much larger and cannot leave the water. They establish territorial
+  areas across sea beds, defending them fiercely (even against ships and submarines
+  just passing by). Being particularly stupid and rather clumsy, draguns may be slowed
+  and stopped by heavy, steel cable nets dropped across their paths. They seem to
+  like basking on the surface of the ocean during sunny days, and they are often encountered
+  during these times.Draguns possess a rudimentary form of communication consisting
+  of bellows, croaks, and grunts, all of which are uttered while the dragun is floating
+  on the surface. Mutant reptiles may learn to imitate these sounds with some success
+  (50% chance of getting a vocalization correct), and this technique, coupled with
+  an amplifier, has been used to attract or drive away these beasts.Draguns have three
+  forms of attack. They prefer to bite and swallow prey that is man sized or smaller,
+  there being a 15% chance per bite that such prey is gulped down whole. A swallowed
+  character takes 2d6 damage per action turn from slow suffocation and drowning on
+  water the dragun swallowed, plus an amount equal to his or her base AC from digestive
+  acids. The victim may only attack with daggers. claws, or teeth against the dragun''s
+  insides (AC 9). The dragun must be slain in order for a victim to be removed. Once
+  this is done, 100 points of damage must be inflicted on the dead dragun''s midsection,
+  either by persons outside the dragun or by a swallowed victim, to free the captive.
+  Note that a dead dragun floats easily and can be towed to land.Draguns also like
+  to ram ships and other creatures that are floating on the surface of the water,
+  using their snouts as battering rams. A vessel of sailboat size or smaller is 90%
+  likely to capsize if rammed; a ship the size of a sailed frigate would have a 5%
+  chance of rolling over.Finally, draguns have a New Body Part: a gizzard that collects
+  large stones and can expel them forcefully out of the dragun''s open mouth. A fired
+  stone weighs 2d4 kilograms, has a 40 meter range, and does 6d6 points of damage
+  to whatever it strikes. Draguns only fire stones when floating, not underwater.
+  Because of this effect, and because of the blasting sound made when the stone is
+  launched, the original name of `dragon''was modified to its current form. A dragun
+  has 1d4 such stones which may be fired at any particular time.If a dragun senses
+  any sort of poison gas on the water''s surface, it immediately submerges and flees
+  the area.'
+final_output: 'Draguns ''Sea Gators'' (1d4-2 (0)): Init +7; atk bite melee +11 (1d30+6)
+  and ram melee +11 (1d30+6); AC 12; HD 28D7 hp 112; MV Swim 40'' ; 1d20+1d20; SV
+  Fort +1, Ref -3, Will -2Gills, new body part (projectile-firing digestive system),
+  taller, and water dependencyDescription: Draguns still resemble their ancestral
+  alligator forms, though they are much larger and cannot leave the water. They establish
+  territorial areas across sea beds, defending them fiercely (even against ships and
+  submarines just passing by). Being particularly stupid and rather clumsy, draguns
+  may be slowed and stopped by heavy, steel cable nets dropped across their paths.
+  They seem to like basking on the surface of the ocean during sunny days, and they
+  are often encountered during these times.Draguns possess a rudimentary form of communication
+  consisting of bellows, croaks, and grunts, all of which are uttered while the dragun
+  is floating on the surface. Mutant reptiles may learn to imitate these sounds with
+  some success (50% chance of getting a vocalization correct), and this technique,
+  coupled with an amplifier, has been used to attract or drive away these beasts.Draguns
+  have three forms of attack. They prefer to bite and swallow prey that is man sized
+  or smaller, there being a 15% chance per bite that such prey is gulped down whole.
+  A swallowed character takes 2d6 damage per action turn from slow suffocation and
+  drowning on water the dragun swallowed, plus an amount equal to his or her base
+  AC from digestive acids. The victim may only attack with daggers. claws, or teeth
+  against the dragun''s insides (AC 9). The dragun must be slain in order for a victim
+  to be removed. Once this is done, 100 points of damage must be inflicted on the
+  dead dragun''s midsection, either by persons outside the dragun or by a swallowed
+  victim, to free the captive. Note that a dead dragun floats easily and can be towed
+  to land.Draguns also like to ram ships and other creatures that are floating on
+  the surface of the water, using their snouts as battering rams. A vessel of sailboat
+  size or smaller is 90% likely to capsize if rammed; a ship the size of a sailed
+  frigate would have a 5% chance of rolling over.Finally, draguns have a New Body
+  Part: a gizzard that collects large stones and can expel them forcefully out of
+  the dragun''s open mouth. A fired stone weighs 2d4 kilograms, has a 40 meter range,
+  and does 6d6 points of damage to whatever it strikes. Draguns only fire stones when
+  floating, not underwater. Because of this effect, and because of the blasting sound
+  made when the stone is launched, the original name of `dragon''was modified to its
+  current form. A dragun has 1d4 such stones which may be fired at any particular
+  time.If a dragun senses any sort of poison gas on the water''s surface, it immediately
+  submerges and flees the area.'
+players: 'Draguns; ''Sea Gators'';Description: Draguns still resemble their ancestral
+  alligator forms, though they are much larger and cannot leave the water. They establish
+  territorial areas across sea beds, defending them fiercely (even against ships and
+  submarines just passing by). Being particularly stupid and rather clumsy, draguns
+  may be slowed and stopped by heavy, steel cable nets dropped across their paths.
+  They seem to like basking on the surface of the ocean during sunny days, and they
+  are often encountered during these times.Draguns possess a rudimentary form of communication
+  consisting of bellows, croaks, and grunts, all of which are uttered while the dragun
+  is floating on the surface. Mutant reptiles may learn to imitate these sounds with
+  some success (50% chance of getting a vocalization correct), and this technique,
+  coupled with an amplifier, has been used to attract or drive away these beasts.Draguns
+  have three forms of attack. They prefer to bite and swallow prey that is man sized
+  or smaller, there being a 15% chance per bite that such prey is gulped down whole.
+  A swallowed character takes 2d6 damage per action turn from slow suffocation and
+  drowning on water the dragun swallowed, plus an amount equal to his or her base
+  AC from digestive acids. The victim may only attack with daggers. claws, or teeth
+  against the dragun''s insides (AC 9). The dragun must be slain in order for a victim
+  to be removed. Once this is done, 100 points of damage must be inflicted on the
+  dead dragun''s midsection, either by persons outside the dragun or by a swallowed
+  victim, to free the captive. Note that a dead dragun floats easily and can be towed
+  to land.Draguns also like to ram ships and other creatures that are floating on
+  the surface of the water, using their snouts as battering rams. A vessel of sailboat
+  size or smaller is 90% likely to capsize if rammed; a ship the size of a sailed
+  frigate would have a 5% chance of rolling over.Finally, draguns have a New Body
+  Part: a gizzard that collects large stones and can expel them forcefully out of
+  the dragun''s open mouth. A fired stone weighs 2d4 kilograms, has a 40 meter range,
+  and does 6d6 points of damage to whatever it strikes. Draguns only fire stones when
+  floating, not underwater. Because of this effect, and because of the blasting sound
+  made when the stone is launched, the original name of `dragon''was modified to its
+  current form. A dragun has 1d4 such stones which may be fired at any particular
+  time.If a dragun senses any sort of poison gas on the water''s surface, it immediately
+  submerges and flees the area.|'
 id: 71172
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -286,4 +283,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1416
+image_height: 606
 ---

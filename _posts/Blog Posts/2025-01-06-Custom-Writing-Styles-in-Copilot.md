@@ -1,67 +1,63 @@
 ---
 layout: post
-
-title: "Custom Writing Styles in Copilot"
-subtitle: "Train AI to Write in Your Personal Voice"
-quote: "AI that doesn't just help you write—it writes like you."
-excerpt: "You can train Copilot to write in your personal voice by feeding it samples of your past writing. This article walks you through how to capture your tone, structure, and storytelling style—then turn that into a reusable prompt. The result? AI that doesn't just help you write—it writes like you."
-source: "Original Content"
-source-url: ""
-call-to-action: "Try the prompt with your own writing samples and share your results"
-
+title: Custom Writing Styles in Copilot
+subtitle: Train AI to Write in Your Personal Voice
+quote: "AI that doesn't just help you write\u2014it writes like you."
+excerpt: "You can train Copilot to write in your personal voice by feeding it samples\
+  \ of your past writing. This article walks you through how to capture your tone,\
+  \ structure, and storytelling style\u2014then turn that into a reusable prompt.\
+  \ The result? AI that doesn't just help you write\u2014it writes like you."
+source: Original Content
+source-url: ''
+call-to-action: Try the prompt with your own writing samples and share your results
 date: 2025-01-06
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - Feed Copilot samples of your past writing to capture your unique voice and style
-    - Extract specific instructions for sentence structure, tone, and voice characteristics
-    - Create reusable prompts that consistently generate content in your personal style
-    - Use well-received blog posts or effective work communications as training examples
-    - Transform AI from generic assistant to personalized writing partner
-
-description: "A step-by-step guide to training Copilot to write in your personal voice by analyzing your past writing samples and creating reusable style prompts for consistent, authentic AI-generated content."
-
-seo-description: "Learn how to train Copilot to write in your personal voice. Step-by-step guide with prompts to capture your writing style for authentic AI content generation."
-
-categories: 
-    - AI
-    - Projects 
-
-tags: 
-    - Copilot
-    - writing style
-    - AI prompts
-    - content creation
-    - personal voice
-
-keywords: Copilot writing style, AI personal voice, custom writing prompts, Copilot training, AI content creation, writing automation, personalized AI
-
+- Feed Copilot samples of your past writing to capture your unique voice and style
+- Extract specific instructions for sentence structure, tone, and voice characteristics
+- Create reusable prompts that consistently generate content in your personal style
+- Use well-received blog posts or effective work communications as training examples
+- Transform AI from generic assistant to personalized writing partner
+description: A step-by-step guide to training Copilot to write in your personal voice
+  by analyzing your past writing samples and creating reusable style prompts for consistent,
+  authentic AI-generated content.
+seo-description: Learn how to train Copilot to write in your personal voice. Step-by-step
+  guide with prompts to capture your writing style for authentic AI content generation.
+categories:
+- AI
+- Projects
+tags:
+- Copilot
+- writing style
+- AI prompts
+- content creation
+- personal voice
+keywords: Copilot writing style, AI personal voice, custom writing prompts, Copilot
+  training, AI content creation, writing automation, personalized AI
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Custom-Writing-Styles.webp
-image-alt: "AI writing assistant learning personal style from text samples"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-
-mastodon-post-id: 
-
+image-alt: AI writing assistant learning personal style from text samples
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: ''
+image-title: ''
+mastodon-post-id: null
+image_width: 1456
+image_height: 816
 ---
-
 Bottom Line Up Front: You can train Copilot to write in your personal voice by feeding it samples of your past writing. This article walks you through how to capture your tone, structure, and storytelling style—then turn that into a reusable prompt. The result? AI that doesn’t just help you write—it writes like you.
  
 ```markdown

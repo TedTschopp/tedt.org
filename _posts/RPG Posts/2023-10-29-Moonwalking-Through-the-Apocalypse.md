@@ -1,70 +1,62 @@
 ---
 layout: post
-
 title: Michael-JX - Moonwalking Through the Apocalypse
-title-url: 
+title-url: null
 subtitle: A Legendary Encounter for Your TTRPG Campaign
-subtitle-url: 
-quote: ""
-excerpt: ""
-source: 
-source-url: 
-call-to-action: 
-
+subtitle-url: null
+quote: ''
+excerpt: ''
+source: null
+source-url: null
+call-to-action: null
 date: 2023-10-29 09:41:57
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-  - "Introduce Michael-JX, The Wandering Entertainment Unit"
-  - "Stat Blocks for Gamma World and D&D 5E"
-  - "Dynamic Music Mechanics for Combat"
-  - "Rumors, Lore, and Quest Hooks"
-
-description: "Michael-JX: Moonwalking Through the Apocalypse brings a legendary animatronic into your TTRPG campaign."
-seo-description: "A unique TTRPG encounter featuring Michael-JX, a 50-foot tall animatronic with dynamic music mechanics."
-
-
+- Introduce Michael-JX, The Wandering Entertainment Unit
+- Stat Blocks for Gamma World and D&D 5E
+- Dynamic Music Mechanics for Combat
+- Rumors, Lore, and Quest Hooks
+description: 'Michael-JX: Moonwalking Through the Apocalypse brings a legendary animatronic
+  into your TTRPG campaign.'
+seo-description: A unique TTRPG encounter featuring Michael-JX, a 50-foot tall animatronic
+  with dynamic music mechanics.
 categories:
-  - Role Playing Games
-  - Gamma World
-  - Mutant Crawl Classics
+- Role Playing Games
+- Gamma World
+- Mutant Crawl Classics
 tags:
-  - RPG
-  - Game Mechanics
-  - Post-Apocalyptic
-  - Michael-JX
+- RPG
+- Game Mechanics
+- Post-Apocalyptic
+- Michael-JX
 keywords:
-  - Michael-JX
-  - RPG
-  - TTRPG
-  - Post-Apocalyptic
-
+- Michael-JX
+- RPG
+- TTRPG
+- Post-Apocalyptic
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp
-image-alt: "The imposing figure of Michael-JX in a barren wasteland"
-image-title: "Michael-JX: Moonwalking Through the Apocalypse"
-image-description: "Michael-JX stands tall, a relic from the past and a harbinger of uncertain futures."
+image-alt: The imposing figure of Michael-JX in a barren wasteland
+image-title: 'Michael-JX: Moonwalking Through the Apocalypse'
+image-description: Michael-JX stands tall, a relic from the past and a harbinger of
+  uncertain futures.
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-
-monster-or-magical-or-religious-ideas: Michael-JX as a Mythic Figure 
-year-the-event-took-place:
-
+monster-or-magical-or-religious-ideas: Michael-JX as a Mythic Figure
+year-the-event-took-place: null
 mathjax: false
-
-order:
+order: null
+image_width: 1456
+image_height: 816
 ---
-
 "Gather 'round, gather 'round. Have you ever traveled through the Ashen Flats at night? No? Well, some say it's a land bewitched by technology and ancient sorcery. But even more talk of a legend, a phantasm that walks the scorched earth where no other dares. They call it Michael-JX, The Moonwalking Colossus. 
  
 "Oh, don't laugh. This ain't no jest, my friends. Picture it—fifty feet of gleaming metal, advanced circuits, and a visage resembling the King of Pop himself. Imagine it striding through the wasteland, its feet sending tremors across the dunes, each step synced to a beat only it can hear.

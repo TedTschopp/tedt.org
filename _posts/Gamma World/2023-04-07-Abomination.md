@@ -1,16 +1,16 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Abomination.png'
+image: /RPG/MCC-GW/images/Monster-Manual/Abomination.png
 title: Abomination
 creature_name_index: Abomination
 notes: ''
-genericname: Yes
+genericname: true
 creature_name: Abomination
 common_name: ''
 other_names: ''
 generic_name: Abomination
 source: GW07 Module
 author: ''
-author_name: 'Bruce Nesmith'
+author_name: Bruce Nesmith
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -150,43 +150,43 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +4, Ref +0, Will +3
 fort_save: '4'
 ref_save: '0'
 will: '3'
-normal_text: "Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD\
-  \ 9D5 hp 27; MV 11' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3"
-description_output: "Description: The abomination is part plant and part lizard. \
-  \ Its origin is lost in the mists of time, but it is known that no other creature\
-  \ like it exists on the continent.  The scaled / bark body has no defined shape\
-  \ to it, 3 foot long claws tipped limbs stick out at seemingly random places.  Its\
-  \ head is flat bony protrusion with a mass of short thick tentacle / branches surrounding\
-  \ it like a collar.  Its mouth is toothless, merely an entrance to the acid filled\
-  \ belly.Behavior:While using life leech, any of its temporal fugue copies are not\
-  \ affected.  They are affected by anybody else's life leech as individual creatures.\
-  \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
-  \ needs four limbs to remain mobile, the others will leave and attack on their own."
-final_output: "Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD\
-  \ 9D5 hp 27; MV 11' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3(P) Photosynthetic Skin\
-  \ (28), Skeltal enhancement (18), Speed Increase (14), Duality (15), Enhanced Smell\
-  \ (12)(PL) Divisional body segments (15)(M) Phobia - Androids (16), Fear Generation\
-  \ (10), Temporal Fugue (12), Life Leech (14), Cryokinesis(8)Description: The abomination\
-  \ is part plant and part lizard.  Its origin is lost in the mists of time, but it\
-  \ is known that no other creature like it exists on the continent.  The scaled /\
-  \ bark body has no defined shape to it, 3 foot long claws tipped limbs stick out\
-  \ at seemingly random places.  Its head is flat bony protrusion with a mass of short\
-  \ thick tentacle / branches surrounding it like a collar.  Its mouth is toothless,\
-  \ merely an entrance to the acid filled belly.Behavior:While using life leech, any\
-  \ of its temporal fugue copies are not affected.  They are affected by anybody else's\
-  \ life leech as individual creatures.  This is not the same as the anti-life leech\
-  \ mutation.When in combat, the abomination needs four limbs to remain mobile, the\
-  \ others will leave and attack on their own."
-players: "Abomination; '';Description: The abomination is part plant and part lizard.\
-  \  Its origin is lost in the mists of time, but it is known that no other creature\
-  \ like it exists on the continent.  The scaled / bark body has no defined shape\
-  \ to it, 3 foot long claws tipped limbs stick out at seemingly random places.  Its\
-  \ head is flat bony protrusion with a mass of short thick tentacle / branches surrounding\
-  \ it like a collar.  Its mouth is toothless, merely an entrance to the acid filled\
-  \ belly.Behavior:While using life leech, any of its temporal fugue copies are not\
-  \ affected.  They are affected by anybody else's life leech as individual creatures.\
-  \  This is not the same as the anti-life leech mutation.When in combat, the abomination\
-  \ needs four limbs to remain mobile, the others will leave and attack on their own.|"
+normal_text: 'Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD
+  9D5 hp 27; MV 11'' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3'
+description_output: 'Description: The abomination is part plant and part lizard.  Its
+  origin is lost in the mists of time, but it is known that no other creature like
+  it exists on the continent.  The scaled / bark body has no defined shape to it,
+  3 foot long claws tipped limbs stick out at seemingly random places.  Its head is
+  flat bony protrusion with a mass of short thick tentacle / branches surrounding
+  it like a collar.  Its mouth is toothless, merely an entrance to the acid filled
+  belly.Behavior:While using life leech, any of its temporal fugue copies are not
+  affected.  They are affected by anybody else''s life leech as individual creatures.  This
+  is not the same as the anti-life leech mutation.When in combat, the abomination
+  needs four limbs to remain mobile, the others will leave and attack on their own.'
+final_output: 'Abomination (1): Init +5; atk 9 x claws melee +9 (1d5+6); AC 17; HD
+  9D5 hp 27; MV 11'' ; 1d20+1d14; SV Fort +4, Ref +0, Will +3(P) Photosynthetic Skin
+  (28), Skeltal enhancement (18), Speed Increase (14), Duality (15), Enhanced Smell
+  (12)(PL) Divisional body segments (15)(M) Phobia - Androids (16), Fear Generation
+  (10), Temporal Fugue (12), Life Leech (14), Cryokinesis(8)Description: The abomination
+  is part plant and part lizard.  Its origin is lost in the mists of time, but it
+  is known that no other creature like it exists on the continent.  The scaled / bark
+  body has no defined shape to it, 3 foot long claws tipped limbs stick out at seemingly
+  random places.  Its head is flat bony protrusion with a mass of short thick tentacle
+  / branches surrounding it like a collar.  Its mouth is toothless, merely an entrance
+  to the acid filled belly.Behavior:While using life leech, any of its temporal fugue
+  copies are not affected.  They are affected by anybody else''s life leech as individual
+  creatures.  This is not the same as the anti-life leech mutation.When in combat,
+  the abomination needs four limbs to remain mobile, the others will leave and attack
+  on their own.'
+players: 'Abomination; '''';Description: The abomination is part plant and part lizard.  Its
+  origin is lost in the mists of time, but it is known that no other creature like
+  it exists on the continent.  The scaled / bark body has no defined shape to it,
+  3 foot long claws tipped limbs stick out at seemingly random places.  Its head is
+  flat bony protrusion with a mass of short thick tentacle / branches surrounding
+  it like a collar.  Its mouth is toothless, merely an entrance to the acid filled
+  belly.Behavior:While using life leech, any of its temporal fugue copies are not
+  affected.  They are affected by anybody else''s life leech as individual creatures.  This
+  is not the same as the anti-life leech mutation.When in combat, the abomination
+  needs four limbs to remain mobile, the others will leave and attack on their own.|'
 id: 71000
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -195,4 +195,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1024
+image_height: 512
 ---

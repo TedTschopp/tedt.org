@@ -1,75 +1,63 @@
 ---
 layout: post
-
 title: 'Enhancing Collaboration in the Corporate World: A Comprehensive Model'
-title-url:
+title-url: null
 subtitle: 'Understanding the Role of IT in Collaboration: Bridging Gaps and Leaving
-    Lasting Artifacts'
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+  Lasting Artifacts'
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: Do you recognize these collaboration challenges in your workplace?
-    How have you addressed them? Share your thoughts and experiences in the comments,
-    and join us in the pursuit of more effective and meaningful collaboration.
-
+  How have you addressed them? Share your thoughts and experiences in the comments,
+  and join us in the pursuit of more effective and meaningful collaboration.
 date: 2009-08-11 15:09:58+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article explores the intricate dynamics of collaboration in a modern
-    corporate environment. Through the lens of Information Technology, it identifies
-    key problems and offers a detailed model for improving collaboration. The model
-    categorizes collaboration by audience, artifact, and time, creating a practical
-    framework for understanding and improving the collaboration process.
-seo-description:
-
+  corporate environment. Through the lens of Information Technology, it identifies
+  key problems and offers a detailed model for improving collaboration. The model
+  categorizes collaboration by audience, artifact, and time, creating a practical
+  framework for understanding and improving the collaboration process.
+seo-description: null
 categories:
 - Computers
 - Communications
 tags:
 - linkedin
 keywords: collaboration, corporate environment, Information Technology, mediation
-    gap, artifacts, communication, knowledge management, email, written, verbal, visual,
-    real time, queued, long term, static, permanent
-
-
-
+  gap, artifacts, communication, knowledge management, email, written, verbal, visual,
+  real time, queued, long term, static, permanent
 location:
-    name: Phillips Ranch, CA
+  name: Phillips Ranch, CA
 coordinates:
-    latitude: 34.024550
-    longitude: -117.767693
-
+  latitude: 34.02455
+  longitude: -117.767693
 image: img/2013-06/screen-shot-2013-06-12-at-4-04-09-pm.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: A well-structured diagram showcasing the Model for Collaboration,
-    highlighting the three properties - Audience, Artifacts, and Time - and their
-    respective categories. This visual representation serves as a concise overview
-    of the collaboration process, emphasizing the intricate interplay between these
-    elements.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  highlighting the three properties - Audience, Artifacts, and Time - and their respective
+  categories. This visual representation serves as a concise overview of the collaboration
+  process, emphasizing the intricate interplay between these elements.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 2256
+image_height: 1256
 ---
 Over the last year I have given a version of this article as a presentation to many different groups explaining the role of collaboration tools in a corporate environment.  I hope that this model makes sense to readers.
 

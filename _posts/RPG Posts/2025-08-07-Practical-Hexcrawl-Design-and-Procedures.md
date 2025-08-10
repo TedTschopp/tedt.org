@@ -2,34 +2,39 @@
 layout: post
 title: Draft - Practical Hexcrawl Design and Procedures
 subtitle: Turning Blank Wilderness into Living Adventure Space
-excerpt: "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep."
+excerpt: A practical, procedural, table-driven approach to running engaging hexcrawls
+  without getting lost in prep.
 date: 2025-08-07 09:00:00
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    url: https://tedt.org/
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  url: https://tedt.org/
 categories:
-    - Role Playing Games
-    - Maps
+- Role Playing Games
+- Maps
 tags:
-    - hexcrawl
-    - wilderness
-    - procedures
-    - emergent play
-    - mapping
-keywords: Hexcrawl, wilderness exploration, referee procedures, emergent play, mapping discipline, encounter design
+- hexcrawl
+- wilderness
+- procedures
+- emergent play
+- mapping
+keywords: Hexcrawl, wilderness exploration, referee procedures, emergent play, mapping
+  discipline, encounter design
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2025-08/hex-map-seeded-frontier.webp
-image-alt: A weathered campaign hex map with rivers, ridges, ruins, and colored exploration annotations
+image-alt: A weathered campaign hex map with rivers, ridges, ruins, and colored exploration
+  annotations
 image-artist: Ted Tschopp (concept + Midjourney assist)
 image-artist-URL: https://tedt.org/
-image-description: Faded parchment style hex map of a frontier region with layered icons and subtle marginalia notes.
+image-description: Faded parchment style hex map of a frontier region with layered
+  icons and subtle marginalia notes.
 image-title: Seeded Frontier Hex Map
+image_width: 1456
+image_height: 816
 ---
-
 <script>
 // Ancestor layout diagnostics (below front matter)
 window.HEX_DEBUG = true;

@@ -1,75 +1,70 @@
 ---
 layout: post
-
-title: The Well in the Schächental Valley
+title: "The Well in the Sch\xE4chental Valley"
 subtitle: A Swiss Folktale from Uri
-quote: 
-excerpt: This folktale from the Schächental valley in Uri tells the story of how a miraculous well came to be, thanks to the intervention of a mysterious traveler and the faith of the local people.
-source: 
-source-url: 
+quote: null
+excerpt: "This folktale from the Sch\xE4chental valley in Uri tells the story of how\
+  \ a miraculous well came to be, thanks to the intervention of a mysterious traveler\
+  \ and the faith of the local people."
+source: null
+source-url: null
 call-to-action: Discover the magic and wisdom in Swiss folktales.
-
 date: 2023-11-13 07:55:47
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
 bullets:
 - A tale of faith and mystery in the Swiss Alps.
 - The story of a well that defies the natural elements.
 - A blend of folklore and the power of kindness.
-
-description: A Swiss folktale depicting the mysterious creation of an ever-flowing well in the Schächental valley.
-seo-description: Explore the enchanting story of "The Well at Schwanden", a Swiss folktale filled with mystery, faith, and the enduring power of kindness.
-
+description: "A Swiss folktale depicting the mysterious creation of an ever-flowing\
+  \ well in the Sch\xE4chental valley."
+seo-description: Explore the enchanting story of "The Well at Schwanden", a Swiss
+  folktale filled with mystery, faith, and the enduring power of kindness.
 categories:
 - Folklore
-
-
-tags: [Swiss Folklore, Mystical Wells, Alpine Tales, Uri Legends]
-
+tags:
+- Swiss Folklore
+- Mystical Wells
+- Alpine Tales
+- Uri Legends
 keywords: Swiss Folklore, Well at Schwanden, Alpine Legends, Miraculous Wells
-
 location:
-    address: 
-    city: U
-    country: 
-    name: 
-    on-map:
-    place-names: Schächental, Uri
-    state:
-    zip:
+  address: null
+  city: U
+  country: null
+  name: null
+  on-map: null
+  place-names: "Sch\xE4chental, Uri"
+  state: null
+  zip: null
 coordinates:
-    latitude: 46.864
-    longitude: 8.761
-
+  latitude: 46.864
+  longitude: 8.761
 image: img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp
-image-alt: The Schächental Valley
+image-alt: "The Sch\xE4chental Valley"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: 
-image-credits-URL: 
+image-credits: null
+image-credits-URL: null
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-image-credits-title: The Schächental Valley
-image-description:  The Schächental Valley
-image-title:  The Schächental Valley
-
-monster-or-magical-or-religious-ideas: The miraculous creation of a well by a mysterious traveler.
+image-credits-title: "The Sch\xE4chental Valley"
+image-description: "The Sch\xE4chental Valley"
+image-title: "The Sch\xE4chental Valley"
+monster-or-magical-or-religious-ideas: The miraculous creation of a well by a mysterious
+  traveler.
 year-the-event-took-place: unknown
 permalink: /Swiss-Folklore/:title:output_ext
-
-mathjax:
-
-order:
+mathjax: null
+order: null
 redirect_from:
-  - /Swiss-Folklore/the-well-at-schwanden
-
+- /Swiss-Folklore/the-well-at-schwanden
 mastodon-post-id: 111404502000070430
+image_width: 1500
+image_height: 1000
 ---
-
-
 > <ins> Legends from Uri 1-3. Vols. 1-2 ed. Hanns Bächtold-Stäubli; Vol. 3 ed. Robert Wildhaber.</ins>
 > 
 > by Josef  Müller

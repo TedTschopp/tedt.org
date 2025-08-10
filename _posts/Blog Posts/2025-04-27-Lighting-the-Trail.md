@@ -1,78 +1,86 @@
 ---
 layout: post
-
-title: "Lighting the Trail"
-subtitle: "How AI can support real-world training and curriculum development with clarity, empathy, and purpose"
-quote: "AI cannot walk the path for you. It cannot teach love, or courage, or the weight of a promise made beneath the stars. But it can carry the lamp."
-excerpt: "This article explores how AI can support real-world training and curriculum development, especially in environments with limited time and high expectations, showing how AI tools can break down complex goals into clear weekly steps while preserving the human heart of leadership."
-source: "Original Content"
-source-url: ""
-call-to-action: "Consider how AI might help you organize and scale your own teaching or leadership challenges"
-
+title: Lighting the Trail
+subtitle: How AI can support real-world training and curriculum development with clarity,
+  empathy, and purpose
+quote: AI cannot walk the path for you. It cannot teach love, or courage, or the weight
+  of a promise made beneath the stars. But it can carry the lamp.
+excerpt: This article explores how AI can support real-world training and curriculum
+  development, especially in environments with limited time and high expectations,
+  showing how AI tools can break down complex goals into clear weekly steps while
+  preserving the human heart of leadership.
+source: Original Content
+source-url: ''
+call-to-action: Consider how AI might help you organize and scale your own teaching
+  or leadership challenges
 date: 2025-04-27
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - AI can break down complex goals into clear, manageable weekly steps for curriculum development
-    - Used AI to create full Cub Scout Arrow of Light curriculum with handouts, activities, and tasks
-    - AI helped design a culturally sensitive Bridging ceremony that honored faith and avoided past mistakes
-    - The technology serves as a lantern, not a crutch—illuminating the path while preserving human leadership
-    - Successfully guided an entire den to earn Arrow of Light badges with no one left behind
-
-description: "A personal case study of using AI to develop and execute a complete Cub Scout Arrow of Light curriculum, demonstrating how artificial intelligence can support human leadership in training and ceremony design while maintaining cultural sensitivity and educational effectiveness."
-
-seo-description: "Learn how AI can support curriculum development and training. Real-world case study of using AI for Cub Scout Arrow of Light program, including ceremony design and cultural sensitivity."
-
-categories: 
-    - Artificial Intelligence
-    - Opinion
-    - Personal Writing 
-
-tags: 
-    - Cub Scouts
-    - Arrow of Light
-    - curriculum development
-    - AI training
-    - educational technology
-    - Bridging ceremony
-    - youth leadership
-    - Scouting
-    - cultural sensitivity
-    - AI applications
-    - training plans
-    - ceremony design
-    - educational planning
-    - youth development
-    - AI ethics
-
-keywords: AI curriculum development, Cub Scout training, Arrow of Light program, AI educational planning, ceremony design with AI, youth leadership
-
+- AI can break down complex goals into clear, manageable weekly steps for curriculum
+  development
+- Used AI to create full Cub Scout Arrow of Light curriculum with handouts, activities,
+  and tasks
+- AI helped design a culturally sensitive Bridging ceremony that honored faith and
+  avoided past mistakes
+- "The technology serves as a lantern, not a crutch\u2014illuminating the path while\
+  \ preserving human leadership"
+- Successfully guided an entire den to earn Arrow of Light badges with no one left
+  behind
+description: A personal case study of using AI to develop and execute a complete Cub
+  Scout Arrow of Light curriculum, demonstrating how artificial intelligence can support
+  human leadership in training and ceremony design while maintaining cultural sensitivity
+  and educational effectiveness.
+seo-description: Learn how AI can support curriculum development and training. Real-world
+  case study of using AI for Cub Scout Arrow of Light program, including ceremony
+  design and cultural sensitivity.
+categories:
+- Artificial Intelligence
+- Opinion
+- Personal Writing
+tags:
+- Cub Scouts
+- Arrow of Light
+- curriculum development
+- AI training
+- educational technology
+- Bridging ceremony
+- youth leadership
+- Scouting
+- cultural sensitivity
+- AI applications
+- training plans
+- ceremony design
+- educational planning
+- youth development
+- AI ethics
+keywords: AI curriculum development, Cub Scout training, Arrow of Light program, AI
+  educational planning, ceremony design with AI, youth leadership
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/AI/Lighting-the-Trail.webp
-image-alt: "Cub Scouts around a campfire during Arrow of Light ceremony, representing AI-supported traditional values"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: "Visual representation of how AI can support traditional learning and ceremonial experiences while preserving their human essence"
-image-title: "Lighting the Trail: AI as a Lamp for Human Leadership"
-
-mastodon-post-id: 
-
+image-alt: Cub Scouts around a campfire during Arrow of Light ceremony, representing
+  AI-supported traditional values
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: ''
+image-description: Visual representation of how AI can support traditional learning
+  and ceremonial experiences while preserving their human essence
+image-title: 'Lighting the Trail: AI as a Lamp for Human Leadership'
+mastodon-post-id: null
+image_width: 1536
+image_height: 1024
 ---
-
 _**Bottom Line Up Front:**_ _This article explores how AI can support real-world training and curriculum development, especially in environments with limited time and high expectations. You’ll learn how AI tools can break down complex goals into clear weekly steps, generate support materials like worksheets and activities, and even help design ceremonies or milestones that reflect your values. It’s a case study in using AI not to replace human leadership, but to scale it — with clarity, empathy, and purpose._
 
 This year, I had the honor of serving as the Cub Scout Leader for our city's Arrow of Light den — a small band of kids standing at the edge of something they could not yet name. The path before them stretched wide and full of old hopes. But this year, the trail was steeper. The requirements grew harder, the demands greater. And since we could only gather when the school doors opened to us, the clock began ticking loudly from the very start.

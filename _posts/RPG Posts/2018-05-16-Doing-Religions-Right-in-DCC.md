@@ -1,70 +1,59 @@
 ---
 layout: post
-
 title: Doing Religions Right in DCC
-title-url:
-subtitle:
-subtitle-url:
-quote:
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
 excerpt: "Every role playing game that I have ever run into with the exception of\
-    \ Dogs in the Vineyard has done religions wrong in role playing games.  These\
-    \ are my notes on how to get DCC closer to a relgious system that works for a\
-    \ believer and a role player.   \n"
-source:
-source-url:
-call-to-action:
-
+  \ Dogs in the Vineyard has done religions wrong in role playing games.  These are\
+  \ my notes on how to get DCC closer to a relgious system that works for a believer\
+  \ and a role player.   \n"
+source: null
+source-url: null
+call-to-action: null
 date: 2018-05-16 17:37:12-07:00
 update: 2018-05-23 16:44:34-07:00
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: "Every role playing game that I have ever run into with the exception\
-    \ of Dogs in the Vineyard has done religions wrong in role playing games.  These\
-    \ are my notes on how to get DCC closer to a relgious system that works for a\
-    \ believer and a role player.   \n"
+  \ of Dogs in the Vineyard has done religions wrong in role playing games.  These\
+  \ are my notes on how to get DCC closer to a relgious system that works for a believer\
+  \ and a role player.   \n"
 seo-description: "Every role playing game that I have ever run into with the exception\
-    \ of Dogs in the Vineyard has done religions wrong in role playing games.  These\
-    \ are my notes on how to get DCC closer to a relgious system that works for a\
-    \ believer and a role player.   \n"
-
+  \ of Dogs in the Vineyard has done religions wrong in role playing games.  These\
+  \ are my notes on how to get DCC closer to a relgious system that works for a believer\
+  \ and a role player.   \n"
 categories:
 - Role Playing Games
 - Dungeon Crawl Classics
 - Religion
 - Middle-earth
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2018-05/the-valar.webp
-image-alt: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
+image-alt: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine
+  icons.
 image-artist: Dan Hainsworth
 image-artist-URL: https://www.etsy.com/shop/dthains
-image-description: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons.
+image-description: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of
+  Byzantine icons.
 image-title: The Valar
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 3456
+image_height: 2880
 ---
-
-
 # Notes
 
 Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games.  These are my notes on how to get Dungeon Crawl Classic (DCC) closer to a religious system that works for a believer and a role player.   

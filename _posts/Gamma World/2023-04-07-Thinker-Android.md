@@ -1,6 +1,6 @@
 ---
 image: /RPG/MCC-GW/images/Monster-Manual/Android.png
-title: Thinker «Android»
+title: "Thinker \xABAndroid\xBB"
 creature_name_index: Android
 notes: ''
 genericname: y
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Synth Thinker
 source: 0th Edition -  Metamorphosis Alpha
 author: ''
-author_name: 'James M. Ward'
+author_name: James M. Ward
 url: ''
 avatar: ''
 mcc_race: 'PSH: Shamen'
@@ -105,15 +105,15 @@ monster_name: Android 'Thinker'
 number_appearing: 1d4 (2)
 number_appearing_single: '2'
 init: '+6'
-monster_name_xx_number_if_applicable_init_+-x: "Android 'Thinker' (1d4 (2)): Init\
-  \ +6"
+monster_name_xx_number_if_applicable_init_+-x: 'Android ''Thinker'' (1d4 (2)): Init
+  +6'
 ps_-_c: '14'
 dx_-_c: '14'
 cn_-_c: '14'
 ms_-_c: '18'
 ch_-_c: '14'
 in_-_c: '18'
-weapon: YES
+weapon: true
 plus_to_hit_and_damage_range_from_stats: '1'
 plus_to_range_from_level: ''
 plus_to_range: '3'
@@ -172,8 +172,8 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref +1, Will +3
 fort_save: '1'
 ref_save: '1'
 will: '3'
-normal_text: "Android 'Thinker' (1d4 (2)): Init +6; atk weapon melee +3 (1d4+1); AC\
-  \ 11; HD 9D4 hp 23 each; MV 30' ; 1d20+1d14; SV Fort +1, Ref +1, Will +3"
+normal_text: 'Android ''Thinker'' (1d4 (2)): Init +6; atk weapon melee +3 (1d4+1);
+  AC 11; HD 9D4 hp 23 each; MV 30'' ; 1d20+1d14; SV Fort +1, Ref +1, Will +3'
 description_output: 'Description: Man-made beings with red hued skin and blank stares.Behavior:They
   generally consider humans to be their enemies, and will fight to the death.  When
   an android dies they will dissolve into a pool of red protoplasm.Combat: Thinker
@@ -186,32 +186,33 @@ description_output: 'Description: Man-made beings with red hued skin and blank s
   computers that dispatched them on their mission if things go wrong.  They see Warrior
   and Worker Androids as tools to accomplish and report back on their missions.Society:
   Androids do not have a society.  They serve whomever created them.'
-final_output: "Android 'Thinker' (1d4 (2)): Init +6; atk weapon melee +3 (1d4+1);\
-  \ AC 11; HD 9D4 hp 23 each; MV 30' ; 1d20+1d14; SV Fort +1, Ref +1, Will +3NoneDescription:\
-  \ Man-made beings with red hued skin and blank stares.Behavior:They generally consider\
-  \ humans to be their enemies, and will fight to the death.  When an android dies\
-  \ they will dissolve into a pool of red protoplasm.Combat: Thinker Androids are\
-  \ artificial life forms that are given the task of doing research and science. \
-  \ Their focus is on anything that require a lot of thought and planning.  They are\
-  \ not equipped to deal with combat and will defer to Warriors and Workers first\
-  \ in the event of combat.  Thinkers are equipped with additional memory cells that\
-  \ allow them to record and capture the memories of the other Androids under their\
-  \ command.  In the event of danger, they will attempt to get back to the humans\
-  \ or computers that dispatched them on their mission if things go wrong.  They see\
-  \ Warrior and Worker Androids as tools to accomplish and report back on their missions.Society:\
-  \ Androids do not have a society.  They serve whomever created them."
-players: "Android; 'Thinker';Description: Man-made beings with red hued skin and blank\
-  \ stares.Behavior:They generally consider humans to be their enemies, and will fight\
-  \ to the death.  When an android dies they will dissolve into a pool of red protoplasm.Combat:\
-  \ Thinker Androids are artificial life forms that are given the task of doing research\
-  \ and science.  Their focus is on anything that require a lot of thought and planning.\
-  \  They are not equipped to deal with combat and will defer to Warriors and Workers\
-  \ first in the event of combat.  Thinkers are equipped with additional memory cells\
-  \ that allow them to record and capture the memories of the other Androids under\
-  \ their command.  In the event of danger, they will attempt to get back to the humans\
-  \ or computers that dispatched them on their mission if things go wrong.  They see\
-  \ Warrior and Worker Androids as tools to accomplish and report back on their missions.Society:\
-  \ Androids do not have a society.  They serve whomever created them.|"
+final_output: 'Android ''Thinker'' (1d4 (2)): Init +6; atk weapon melee +3 (1d4+1);
+  AC 11; HD 9D4 hp 23 each; MV 30'' ; 1d20+1d14; SV Fort +1, Ref +1, Will +3NoneDescription:
+  Man-made beings with red hued skin and blank stares.Behavior:They generally consider
+  humans to be their enemies, and will fight to the death.  When an android dies they
+  will dissolve into a pool of red protoplasm.Combat: Thinker Androids are artificial
+  life forms that are given the task of doing research and science.  Their focus is
+  on anything that require a lot of thought and planning.  They are not equipped to
+  deal with combat and will defer to Warriors and Workers first in the event of combat.  Thinkers
+  are equipped with additional memory cells that allow them to record and capture
+  the memories of the other Androids under their command.  In the event of danger,
+  they will attempt to get back to the humans or computers that dispatched them on
+  their mission if things go wrong.  They see Warrior and Worker Androids as tools
+  to accomplish and report back on their missions.Society: Androids do not have a
+  society.  They serve whomever created them.'
+players: 'Android; ''Thinker'';Description: Man-made beings with red hued skin and
+  blank stares.Behavior:They generally consider humans to be their enemies, and will
+  fight to the death.  When an android dies they will dissolve into a pool of red
+  protoplasm.Combat: Thinker Androids are artificial life forms that are given the
+  task of doing research and science.  Their focus is on anything that require a lot
+  of thought and planning.  They are not equipped to deal with combat and will defer
+  to Warriors and Workers first in the event of combat.  Thinkers are equipped with
+  additional memory cells that allow them to record and capture the memories of the
+  other Androids under their command.  In the event of danger, they will attempt to
+  get back to the humans or computers that dispatched them on their mission if things
+  go wrong.  They see Warrior and Worker Androids as tools to accomplish and report
+  back on their missions.Society: Androids do not have a society.  They serve whomever
+  created them.|'
 id: 71012
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -220,4 +221,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 838
+image_height: 1522
 ---

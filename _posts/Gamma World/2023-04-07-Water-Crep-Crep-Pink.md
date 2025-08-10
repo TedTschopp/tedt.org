@@ -1,6 +1,6 @@
 ---
-image: '/RPG/MCC-GW/images/Monster-Manual/Crep, Pink.png'
-title: Water Crep «Crep, Pink»
+image: /RPG/MCC-GW/images/Monster-Manual/Crep, Pink.png
+title: "Water Crep \xABCrep, Pink\xBB"
 creature_name_index: Crep, Pink
 notes: ''
 genericname: ''
@@ -10,7 +10,7 @@ other_names: ''
 generic_name: Water Lilly
 source: 1st Edition
 author: ''
-author_name: 'James M. Ward and Gary Jaquet'
+author_name: James M. Ward and Gary Jaquet
 url: ''
 avatar: ''
 mcc_race: Plant
@@ -91,8 +91,8 @@ monster_name: Crep, Pink 'Water Crep'
 number_appearing: 1d4 (2)
 number_appearing_single: '2'
 init: '+4'
-monster_name_xx_number_if_applicable_init_+-x: "Crep, Pink 'Water Crep' (1d4 (2)):\
-  \ Init +4"
+monster_name_xx_number_if_applicable_init_+-x: 'Crep, Pink ''Water Crep'' (1d4 (2)):
+  Init +4'
 ps_-_c: '5'
 dx_-_c: '7'
 cn_-_c: '15'
@@ -158,72 +158,69 @@ sv_fort_+-x_ref_+-x_will_+-x: SV Fort +1, Ref -1, Will +1
 fort_save: '1'
 ref_save: '-1'
 will: '1'
-normal_text: "Crep, Pink 'Water Crep' (1d4 (2)): Init +4; atk 6-8 x vines melee +1\
-  \ (1d3-2); AC 17; HD 9D5 hp 27 each; MV Swim 5' ; 1d20+1d14; SV Fort +1, Ref -1,\
-  \ Will +1"
-description_output: "Description: The water crep has a pink flower and lives submerged\
-  \ in freshwater lakes and swamps. Surrounding the plant's bulbous flower is a mass\
-  \ of strong, leafy vines. The crep can move about (slowly) on its thick, flexible\
-  \ roots, seeking better \"hunting grounds\". The crep's vines are mobile and quite\
-  \ dexterous (although the plant is largely blind, and not very intelligent).Behavior:Yexils\
-  \ are slow witted, but friendly.  Their size and ability to loose a laser blast\
-  \ from their eyes (per laser rifle) discourages predators.  Yexils are immune to\
-  \ cold attacks.  They eat manufactured clothing of all types and find synthetics\
-  \ especially tasty.  In fact, the snappier the outfit, the better yexils like the\
-  \ taste.  They will often trade 'useless' artifacts for 'food' of this type.Combat:\
-  \ Crep plants feed on other living creatures using their Life Leech mutation. They\
-  \ generally trap a creature with their tendrils, then drain its life force. The\
-  \ crep uses the drained life force to seed, dropping off mobile seeds that burrow\
-  \ into the ground to become new crep plants. Crep uses their tendrils the defend\
-  \ themselves and ward off predators. In desparate situations they use their Death\
-  \ Field mutation for defense.Society: Crep are found in still freshwater, along\
-  \ shores, and in moist, temperate climates. They migrate slowly, killing off local\
-  \ animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
-  \ crep plants grow rooted for a season before gaining mobility and moving off on\
-  \ their own in search of prey."
-final_output: "Crep, Pink 'Water Crep' (1d4 (2)): Init +4; atk 6-8 x vines melee +1\
-  \ (1d3-2); AC 17; HD 9D5 hp 27 each; MV Swim 5' ; 1d20+1d14; SV Fort +1, Ref -1,\
-  \ Will +1(P) Modified Vines - Mobility, Symbiosis(M) Death Field Generation, Life\
-  \ Leech, Molecular DisruptionDescription: The water crep has a pink flower and lives\
-  \ submerged in freshwater lakes and swamps. Surrounding the plant's bulbous flower\
-  \ is a mass of strong, leafy vines. The crep can move about (slowly) on its thick,\
-  \ flexible roots, seeking better \"hunting grounds\". The crep's vines are mobile\
-  \ and quite dexterous (although the plant is largely blind, and not very intelligent).Behavior:Yexils\
-  \ are slow witted, but friendly.  Their size and ability to loose a laser blast\
-  \ from their eyes (per laser rifle) discourages predators.  Yexils are immune to\
-  \ cold attacks.  They eat manufactured clothing of all types and find synthetics\
-  \ especially tasty.  In fact, the snappier the outfit, the better yexils like the\
-  \ taste.  They will often trade 'useless' artifacts for 'food' of this type.Combat:\
-  \ Crep plants feed on other living creatures using their Life Leech mutation. They\
-  \ generally trap a creature with their tendrils, then drain its life force. The\
-  \ crep uses the drained life force to seed, dropping off mobile seeds that burrow\
-  \ into the ground to become new crep plants. Crep uses their tendrils the defend\
-  \ themselves and ward off predators. In desparate situations they use their Death\
-  \ Field mutation for defense.Society: Crep are found in still freshwater, along\
-  \ shores, and in moist, temperate climates. They migrate slowly, killing off local\
-  \ animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
-  \ crep plants grow rooted for a season before gaining mobility and moving off on\
-  \ their own in search of prey."
-players: "Crep, Pink; 'Water Crep';Description: The water crep has a pink flower and\
-  \ lives submerged in freshwater lakes and swamps. Surrounding the plant's bulbous\
-  \ flower is a mass of strong, leafy vines. The crep can move about (slowly) on its\
-  \ thick, flexible roots, seeking better \"hunting grounds\". The crep's vines are\
-  \ mobile and quite dexterous (although the plant is largely blind, and not very\
-  \ intelligent).Behavior:Yexils are slow witted, but friendly.  Their size and ability\
-  \ to loose a laser blast from their eyes (per laser rifle) discourages predators.\
-  \  Yexils are immune to cold attacks.  They eat manufactured clothing of all types\
-  \ and find synthetics especially tasty.  In fact, the snappier the outfit, the better\
-  \ yexils like the taste.  They will often trade 'useless' artifacts for 'food' of\
-  \ this type.Combat: Crep plants feed on other living creatures using their Life\
-  \ Leech mutation. They generally trap a creature with their tendrils, then drain\
-  \ its life force. The crep uses the drained life force to seed, dropping off mobile\
-  \ seeds that burrow into the ground to become new crep plants. Crep uses their tendrils\
-  \ the defend themselves and ward off predators. In desparate situations they use\
-  \ their Death Field mutation for defense.Society: Crep are found in still freshwater,\
-  \ along shores, and in moist, temperate climates. They migrate slowly, killing off\
-  \ local animal life and leaving a \"trail\" of crep seedlings in their path. Immature\
-  \ crep plants grow rooted for a season before gaining mobility and moving off on\
-  \ their own in search of prey.|"
+normal_text: 'Crep, Pink ''Water Crep'' (1d4 (2)): Init +4; atk 6-8 x vines melee
+  +1 (1d3-2); AC 17; HD 9D5 hp 27 each; MV Swim 5'' ; 1d20+1d14; SV Fort +1, Ref -1,
+  Will +1'
+description_output: 'Description: The water crep has a pink flower and lives submerged
+  in freshwater lakes and swamps. Surrounding the plant''s bulbous flower is a mass
+  of strong, leafy vines. The crep can move about (slowly) on its thick, flexible
+  roots, seeking better "hunting grounds". The crep''s vines are mobile and quite
+  dexterous (although the plant is largely blind, and not very intelligent).Behavior:Yexils
+  are slow witted, but friendly.  Their size and ability to loose a laser blast from
+  their eyes (per laser rifle) discourages predators.  Yexils are immune to cold attacks.  They
+  eat manufactured clothing of all types and find synthetics especially tasty.  In
+  fact, the snappier the outfit, the better yexils like the taste.  They will often
+  trade ''useless'' artifacts for ''food'' of this type.Combat: Crep plants feed on
+  other living creatures using their Life Leech mutation. They generally trap a creature
+  with their tendrils, then drain its life force. The crep uses the drained life force
+  to seed, dropping off mobile seeds that burrow into the ground to become new crep
+  plants. Crep uses their tendrils the defend themselves and ward off predators. In
+  desparate situations they use their Death Field mutation for defense.Society: Crep
+  are found in still freshwater, along shores, and in moist, temperate climates. They
+  migrate slowly, killing off local animal life and leaving a "trail" of crep seedlings
+  in their path. Immature crep plants grow rooted for a season before gaining mobility
+  and moving off on their own in search of prey.'
+final_output: 'Crep, Pink ''Water Crep'' (1d4 (2)): Init +4; atk 6-8 x vines melee
+  +1 (1d3-2); AC 17; HD 9D5 hp 27 each; MV Swim 5'' ; 1d20+1d14; SV Fort +1, Ref -1,
+  Will +1(P) Modified Vines - Mobility, Symbiosis(M) Death Field Generation, Life
+  Leech, Molecular DisruptionDescription: The water crep has a pink flower and lives
+  submerged in freshwater lakes and swamps. Surrounding the plant''s bulbous flower
+  is a mass of strong, leafy vines. The crep can move about (slowly) on its thick,
+  flexible roots, seeking better "hunting grounds". The crep''s vines are mobile and
+  quite dexterous (although the plant is largely blind, and not very intelligent).Behavior:Yexils
+  are slow witted, but friendly.  Their size and ability to loose a laser blast from
+  their eyes (per laser rifle) discourages predators.  Yexils are immune to cold attacks.  They
+  eat manufactured clothing of all types and find synthetics especially tasty.  In
+  fact, the snappier the outfit, the better yexils like the taste.  They will often
+  trade ''useless'' artifacts for ''food'' of this type.Combat: Crep plants feed on
+  other living creatures using their Life Leech mutation. They generally trap a creature
+  with their tendrils, then drain its life force. The crep uses the drained life force
+  to seed, dropping off mobile seeds that burrow into the ground to become new crep
+  plants. Crep uses their tendrils the defend themselves and ward off predators. In
+  desparate situations they use their Death Field mutation for defense.Society: Crep
+  are found in still freshwater, along shores, and in moist, temperate climates. They
+  migrate slowly, killing off local animal life and leaving a "trail" of crep seedlings
+  in their path. Immature crep plants grow rooted for a season before gaining mobility
+  and moving off on their own in search of prey.'
+players: 'Crep, Pink; ''Water Crep'';Description: The water crep has a pink flower
+  and lives submerged in freshwater lakes and swamps. Surrounding the plant''s bulbous
+  flower is a mass of strong, leafy vines. The crep can move about (slowly) on its
+  thick, flexible roots, seeking better "hunting grounds". The crep''s vines are mobile
+  and quite dexterous (although the plant is largely blind, and not very intelligent).Behavior:Yexils
+  are slow witted, but friendly.  Their size and ability to loose a laser blast from
+  their eyes (per laser rifle) discourages predators.  Yexils are immune to cold attacks.  They
+  eat manufactured clothing of all types and find synthetics especially tasty.  In
+  fact, the snappier the outfit, the better yexils like the taste.  They will often
+  trade ''useless'' artifacts for ''food'' of this type.Combat: Crep plants feed on
+  other living creatures using their Life Leech mutation. They generally trap a creature
+  with their tendrils, then drain its life force. The crep uses the drained life force
+  to seed, dropping off mobile seeds that burrow into the ground to become new crep
+  plants. Crep uses their tendrils the defend themselves and ward off predators. In
+  desparate situations they use their Death Field mutation for defense.Society: Crep
+  are found in still freshwater, along shores, and in moist, temperate climates. They
+  migrate slowly, killing off local animal life and leaving a "trail" of crep seedlings
+  in their path. Immature crep plants grow rooted for a season before gaining mobility
+  and moving off on their own in search of prey.|'
 id: 71137
 permalink: /Gamma-World-Bestiary/:title:output_ext
 layout: gammaworld
@@ -232,4 +229,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+image_width: 1018
+image_height: 912
 ---

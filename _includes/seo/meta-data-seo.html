@@ -2,44 +2,42 @@
 <!-- legacy site.siteurl removed -->
 <!--  full-page-url = {{full-page-url }} -->
 
-	{% assign this_page = page %}
-	{% assign page_layout = this_page.layout %}
-	{% if this_page.title == null or this_page.title == empty or this_page.title == '' %}
-		{% if page_layout == 'micropubpost' %}
-			{% assign this_page_title = 'Checked Into ' | append: this_page.mf-checkin[0].properties.name[0] %}
-		{% else %}
-			{% if site.title == null or site.title == empty or site.title == '' %}
-				{% assign this_page_title = "Title: NA" %}
-			{% else %}
-				{% assign this_page_title = site.title %}
-			{% endif %}
-		{% endif %}
-	{% else%}
-		{% assign this_page_title = this_page.title %}
-	{% endif %}
+{% assign this_page = page %}
+{% assign page_layout = this_page.layout %}
+{% if this_page.title == null or this_page.title == empty or this_page.title == '' %}
+  {% if page_layout == 'micropubpost' and this_page.mf-checkin and this_page.mf-checkin[0] %}
+    {% assign this_page_title = 'Checked Into ' | append: this_page.mf-checkin[0].properties.name[0] %}
+  {% else %}
+    {% assign this_page_title = site.title | default: 'Title: NA' %}
+  {% endif %}
+{% else %}
+  {% assign this_page_title = this_page.title %}
+{% endif %}
 
 	<title>{{ this_page_title }}</title>
   <!-- TODO: Add Multiple Authors -->
   <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
   <link rel="author" href="/humans.txt">
   <link rel="copyright" href="/Copyright/">
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ page.url | relative_url | absolute_url }}" />
 
   <!-- Mastodon Meta Data-->
-  <!-- TODO: move to configuration -->
+  <!-- TODO: move to configuration _config.yml once you figure out multiple accounts.  -->
   <meta name="fediverse:creator" content="@TedT@twit.social">
   <meta name="fediverse:creator" content="@Ted@tschopp.net">
 
 
-	{% if full-page-url == home-page-url %}
-	    <!-- Search Engine and Browser Meta Tags. -->
-	    <meta name="description" content="{{ site.description }}">
-	    <meta name="abstract"    content="{{ site.name }}">
-	{% else %}
-	    <!-- Search Engine and Browser Meta Tags. -->
-	    <meta name="description" content="{{ SEO-description }}"> 
-	    <meta name="abstract"    content="{{ site.name }}"> 
-  {% endif %}
+{% comment %} Compute meta description precedence: page.summary > page.seo-description > page['seo-description'] > page.description > site.description; then fallback to generated excerpt/content if still blank. {% endcomment %}
+{% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: site.description | to_s | strip %}
+{% if meta_description == '' %}
+  {% comment %} Use Jekyll's excerpt or raw content, strip HTML/whitespace, collapse spaces. {% endcomment %}
+  {% assign raw_excerpt = page.excerpt | default: page.content %}
+  {% assign generated_desc = raw_excerpt | strip_html | replace:'\n',' ' | replace:'  ',' ' | strip %}
+  {% comment %} Ensure we don't overshoot typical meta description length; keep original full version for OG/Twitter (300) via filters later. {% endcomment %}
+  {% assign meta_description = generated_desc %}
+{% endif %}
+<meta name="description" content="{{ meta_description | strip | truncate: 160 }}">
+<meta name="abstract" content="{{ site.name }}">
 
   {% if page.keywords %}
       <meta name="keywords" content="{{ page.keywords }}">
@@ -47,68 +45,124 @@
       <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
   {% endif %}
 
-	{% if full-page-url == home-page-url %}
-	    <meta property="fb:app_id"           content="{{site.facebook_app_id}}" />
-      <meta property="og:image"            content="{{ site.url }}/img/webpage_thumbnail.webp">
-	    <meta property="og:image:alt"        content="{{site.name}}">
-	    <meta property="og:site_name"        content="{{ site.name }}">
-	    <meta property="og:title"            content="{{ this_page_title }}">
-	    <meta property="og:description"      content="{{ site.description }}">
-	    <meta property="og:type"             content="website">
-	    <meta property="og:url"              content="{{ home-page-url }}">
-	    <meta property="og:locale"           content="en_US">
-	    <meta property="og:email"            content="{{ site.email }}">
-	    <meta property="og:phone_number"     content="{{ site.phonenumber }}">
+{% comment %} Open Graph logic unified {% endcomment %}
+{% assign raw_page_image = page.image %}
+{% if raw_page_image %}
+  {% if raw_page_image contains '://' %}
+    {% assign og_image_url = raw_page_image %}
+  {% else %}
+    {% assign og_image_url = raw_page_image | relative_url | absolute_url %}
+  {% endif %}
+{% else %}
+  {% assign og_image_fallback = site.title_image | default: '/img/home/logo-Tschopp.webp' %}
+  {% if og_image_fallback contains '://' %}
+    {% assign og_image_url = og_image_fallback %}
+  {% else %}
+    {% assign og_image_url = og_image_fallback | relative_url | absolute_url %}
+  {% endif %}
+{% endif %}
+<meta property="og:image" content="{{ og_image_url }}">
+<meta property="og:image:alt" content="{{ page['image-alt'] | default: page.title | default: site.name | escape }}">
+{% if page.image_width and page.image_height %}
+  <meta property="og:image:width" content="{{ page.image_width }}">
+  <meta property="og:image:height" content="{{ page.image_height }}">
+  <meta name="twitter:image:width" content="{{ page.image_width }}">
+  <meta name="twitter:image:height" content="{{ page.image_height }}">
+{% endif %}
+<meta property="og:site_name" content="{{ site.name }}">
+{% if full-page-url == home-page-url %}
+  <meta property="og:title" content="{{ this_page_title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ home-page-url }}">
+{% else %}
+  <meta property="og:title" content="{{ this_page_title }} - {{ site.name }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | relative_url | absolute_url }}">
+{% endif %}
+<meta property="og:locale" content="en_US">
+{% if site.facebook_app_id %}<meta property="fb:app_id" content="{{ site.facebook_app_id }}">{% endif %}
 
-	{% else %}
-		<!-- Open Graph Meta Tags (ogp.me) -->
-	    {% if page.image %}
-          <meta property="og:image"            content="{{ site.url }}{{ page.image }}">
-	        <meta property="og:image:alt"        content="{{ page.title }}">
-	    {% else %}
-          <meta property="og:image"            content="{{ site.url }}/img/home/logo-Tschopp.webp">
-	        <meta property="og:image:alt"        content="{{ site.name }}">
-	    {% endif %}
-	    <meta property="fb:app_id"           content="{{facebook_app_id}}" />
-	    <meta property="og:site_name"        content="{{ site.name }}">
-	    <meta property="og:title"            content="{{ page.title }} - {{ site.name }}">
-	    <meta property="og:description"      content="{{ SEO-description }}">  
-	    <meta property="og:type"             content="article">  
-      <meta property="og:url"              content="{{ site.url }}/{{ page.url }}"> 
-	    <meta property="og:locale"           content="en_US">    
-	{% endif %}
 
+{%- comment -%}
+Twitter Card Metadata (merged from twitter-card-metadata.html)
+Order: site, creator, title, description, image, url.
+Description precedence: page.summary > page.seo-description > page.description > site.description
+{%- endcomment -%}
+{% assign twitter_description = page.summary | default: meta_description %}
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+{% if page.author and page.author.twitter %}
+  <meta name="twitter:creator" content="@{{ page.author.twitter }}">
+{% elsif site.author and site.author.twitter %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{% endif %}
+<meta name="twitter:title" content="{{ this_page_title }}">
+<meta name="twitter:description" content="{{ twitter_description | strip | truncate: 300 }}">
+{% assign twitter_raw_img = page.image | default: site.title_image %}
+{% if twitter_raw_img %}
+  {% if twitter_raw_img contains '://' %}
+    {% assign twitter_image_url = twitter_raw_img %}
+  {% else %}
+    {% assign twitter_image_url = twitter_raw_img | relative_url | absolute_url %}
+  {% endif %}
+  {% if page.image %}
+    <meta name="twitter:card" content="summary_large_image">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+  {% endif %}
+  <meta name="twitter:image" content="{{ twitter_image_url }}">
+  <meta name="twitter:image:alt" content="{{ page['image-alt'] | default: site['title-image-alt'] | default: this_page_title | escape }}">
+{% endif %}
+{% if page.url %}<meta name="twitter:url" content="{{ page.url | relative_url | absolute_url }}">{% endif %}
 
-	<!-- Twitter Meta Tags. -->
-	{% if full-page-url == home-page-url %}
-		<!-- Home Page Twitter Data -->
-      <meta name="twitter:url"             content="{{ site.url }}">
-	    <meta name="twitter:title"           content="{{ site.title }}">
-	    <meta name="twitter:description"     content="{{ site.description }}">
-      <meta name="twitter:image"           content="{{ site.url }}/img/apple-touch-icon-144x144.webp">
-	    <meta name="twitter:image:alt"       content="{{ site.logo-alt}}">
-	{% else %}
-		<!-- Post Twitter Data -->
-	    <meta name="twitter:card"            content="summary">
-	    <meta name="twitter:site"            content="@{{ site.twitter_username }}">
-	    <meta name="twitter:creator"         content="@{{ site.twitter_username }}">
+{%- comment -%}
+Article-specific meta (Open Graph): published, modified, section, tags.
+{%- endcomment -%}
+{% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+{% if page.update %}
+  <meta property="article:modified_time" content="{{ page.update | date_to_xmlschema }}">
+{% endif %}
+{% if page.categories %}
+  {% assign primary_section = page.categories | first %}
+  {% if primary_section %}<meta property="article:section" content="{{ primary_section }}">{% endif %}
+{% endif %}
+{% if page.tags %}
+  {% for t in page.tags limit:12 %}<meta property="article:tag" content="{{ t }}">{% endfor %}
+{% endif %}
 
-      <meta name="twitter:url"             content="{{ site.url }}{{ page.url }}">
-	    <meta name="twitter:title"           content="{{ page.title }} - {{ site.title }}">
-	    <meta name="twitter:description"     content="{{ SEO-description }}">
-
-	    {% if page.image %}
-          <meta property="twitter:image"            content="{{ site.url }}{{ page.image }}">
-	    {% else %}
-          <meta property="twitter:image"            content="{{ site.url }}/img/home/logo-Tschopp.webp">
-	    {% endif %}
-
-	    {% if page.image-credits %}
-	        <meta name="twitter:image:alt"       content="{{ page.image-credits }}">
-	    {% else %}
-	        <meta name="twitter:image:alt"       content="{{ page.title }}">
-	    {% endif %}
-	{% endif %}
+{%- comment -%}
+JSON-LD Article / WebSite structured data.
+If it's the homepage treat as WebSite only; else add Article object.
+{%- endcomment -%}
+{% assign is_home = full-page-url == home-page-url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {% if is_home %}
+  "@type": "WebSite",
+  "url": "{{ home-page-url }}",
+  "name": "{{ site.title | escape }}",
+  "description": {{ meta_description | jsonify }},
+  "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"}
+  {% else %}
+  "@type": "Article",
+  "headline": {{ this_page_title | jsonify }},
+  "description": {{ meta_description | jsonify }},
+  "url": "{{ page.url | relative_url | absolute_url }}",
+  {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
+  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
+  "author": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
+  "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
+  {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
+  {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
+  "mainEntityOfPage": {"@type":"WebPage","@id":"{{ page.url | relative_url | absolute_url }}"}
+  {% endif %}
+}
+</script>
 
     <!-- Favicon Meta Tags.  -->
   <link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico">
@@ -130,23 +184,23 @@
     <meta name="format-detection"                      content="telephone=no">
 
     <!-- iPhone icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/img/apple-touch-icon-57x57.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114x114.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72x72.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/img/apple-touch-icon-144x144.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/img/apple-touch-icon-60x60.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/img/apple-touch-icon-120x120.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/img/apple-touch-icon-76x76.webp" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/img/apple-touch-icon-152x152.webp" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/apple-touch-icon-57x57.webp" />
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114x114.webp" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72x72.webp" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/apple-touch-icon-144x144.webp" />
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/img/apple-touch-icon-60x60.webp" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/img/apple-touch-icon-120x120.webp" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/apple-touch-icon-76x76.webp" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/apple-touch-icon-152x152.webp" />
 
 
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="{{ site.url }}/img/mstile-144x144.webp" />
-  <meta name="msapplication-square70x70logo" content="{{ site.url }}/img/mstile-70x70.webp" />
-  <meta name="msapplication-square150x150logo" content="{{ site.url }}/img/mstile-150x150.webp" />
-  <meta name="msapplication-wide310x150logo" content="{{ site.url }}/img/mstile-310x150.webp" />
-  <meta name="msapplication-square310x310logo" content="{{ site.url }}/img/mstile-310x310.webp" />
+    <meta name="msapplication-TileImage" content="{{ site.url }}/img/mstile-144x144.webp" />
+    <meta name="msapplication-square70x70logo" content="{{ site.url }}/img/mstile-70x70.webp" />
+    <meta name="msapplication-square150x150logo" content="{{ site.url }}/img/mstile-150x150.webp" />
+    <meta name="msapplication-wide310x150logo" content="{{ site.url }}/img/mstile-310x150.webp" />
+    <meta name="msapplication-square310x310logo" content="{{ site.url }}/img/mstile-310x310.webp" />
 
     <!-- Google Chrome. -->
 

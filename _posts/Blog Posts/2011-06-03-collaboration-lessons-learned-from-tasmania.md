@@ -1,70 +1,68 @@
 ---
 layout: post
-
 title: 'The Tasmanian Paradox: A Lesson in Collaboration and Innovation'
-title-url:
+title-url: null
 subtitle: 'Understanding the Historical Divide: What Tasmania''s Isolation Can Teach
-    Us About Collaboration and Technology'
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+  Us About Collaboration and Technology'
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: How has collaboration shaped your industry or personal growth? Are
-    there barriers in your environment hindering collaboration? Share your thoughts
-    and join the conversation below. Let's learn from history and strive for adaptability,
-    innovation, and collaboration in our rapidly evolving world.
-
+  there barriers in your environment hindering collaboration? Share your thoughts
+  and join the conversation below. Let's learn from history and strive for adaptability,
+  innovation, and collaboration in our rapidly evolving world.
 date: 2011-06-03 16:35:45+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: An insightful look into the isolation of Tasmania's Aboriginal people
-    10,000 years ago and the loss of their technologies. This article explores the
-    profound lessons that can be drawn from this historical event, particularly in
-    the context of collaboration, technology development, and adaptability in modern
-    times.
-seo-description:
-
+  10,000 years ago and the loss of their technologies. This article explores the profound
+  lessons that can be drawn from this historical event, particularly in the context
+  of collaboration, technology development, and adaptability in modern times.
+seo-description: null
 categories:
 - Communications
 tags:
 - linkedin
 keywords: Tasmania, Aborigines, collaboration, technology development, isolation,
-    innovation, adaptability, history, lessons learned, modern implications
-
-
-
+  innovation, adaptability, history, lessons learned, modern implications
 location:
-    name: Blanchard Canyon Road
+  name: Blanchard Canyon Road
 coordinates:
-    latitude: 34.256278
-    longitude: -118.267083
-
+  latitude: 34.256278
+  longitude: -118.267083
 image: img/2011-06/Tessellated_Pavement_Sunrise_Landscape.webp
-image-alt:
-image-artist: JJ Harrison 
+image-alt: null
+image-artist: JJ Harrison
 image-artist-URL: https://www.jjharrison.com.au/
-image-credits:
-image-credits-URL:
-image-credits-artist: JJ Harrison 
+image-credits: null
+image-credits-URL: null
+image-credits-artist: JJ Harrison
 image-credits-artist-URL: https://en.wikipedia.org/wiki/File:Tessellated_Pavement_Sunrise_Landscape.webp
-image-credits-title:
-image-description: Sunrise, “Tessellated Pavement”, Eaglehawk Neck, Tasman Peninsula, Tasmania, Australia. The „Tesselated Pavement“ is the result of an orthogonal joint pattern in the rock. On the picture it shows the so called “pan formation”, where the rock in the immediate vicinity of the joints is more resistant to erosion than the rock that is more distant to the joints, This is due to alterations of the rock along the joints by hydrothermal (or similar) solutions when the rock was still buried deeply below the surface millions of years ago. When no alterations or alterations that lower the erosional resistivity have taken place in the geological past, the rock along the joints will erode faster than the rock that is more distant to the joints. In that case the so called “loaf formation” of “Tessellated Pavement” will form.
+image-credits-title: null
+image-description: "Sunrise, \u201CTessellated Pavement\u201D, Eaglehawk Neck, Tasman\
+  \ Peninsula, Tasmania, Australia. The \u201ETesselated Pavement\u201C is the result\
+  \ of an orthogonal joint pattern in the rock. On the picture it shows the so called\
+  \ \u201Cpan formation\u201D, where the rock in the immediate vicinity of the joints\
+  \ is more resistant to erosion than the rock that is more distant to the joints,\
+  \ This is due to alterations of the rock along the joints by hydrothermal (or similar)\
+  \ solutions when the rock was still buried deeply below the surface millions of\
+  \ years ago. When no alterations or alterations that lower the erosional resistivity\
+  \ have taken place in the geological past, the rock along the joints will erode\
+  \ faster than the rock that is more distant to the joints. In that case the so called\
+  \ \u201Cloaf formation\u201D of \u201CTessellated Pavement\u201D will form."
 image-title: Tessellated Pavement
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 3587
+image_height: 2391
 ---
 Tasmania is an island off the coast of Australia which was attached to Australia until about 10,000 years ago with the end of the last glacial period.  The island is home to many interesting animals and was home to the Tasmanian Aborigines.  These people became isolated from the mainland about 10,000 years ago.  It is this isolation and these people I want to focus on.
 

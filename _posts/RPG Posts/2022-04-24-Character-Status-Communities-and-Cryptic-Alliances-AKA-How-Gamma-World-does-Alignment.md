@@ -1,73 +1,58 @@
 ---
 layout: post
-
 title: Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does
-    Alignment
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: 'As characters have adventures, they will gain a reputation, fame, and status.
-    You can track this growth in the campaign using Status Points. Status Points,
-    like experience points, are accumulated into a new number on your character sheet
-    called Rank. Rank is a measure of how your character’s reputation, fame, and status
-    affect the reactions of NPC’s in different situations. Unlike experience points,
-    which represents how capable a character is, status points represent how capable
-    the society around the characters feel the character is.
-
-    '
-source:
-source-url:
-call-to-action:
-
+  Alignment
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: "As characters have adventures, they will gain a reputation, fame, and status.\
+  \ You can track this growth in the campaign using Status Points. Status Points,\
+  \ like experience points, are accumulated into a new number on your character sheet\
+  \ called Rank. Rank is a measure of how your character\u2019s reputation, fame,\
+  \ and status affect the reactions of NPC\u2019s in different situations. Unlike\
+  \ experience points, which represents how capable a character is, status points\
+  \ represent how capable the society around the characters feel the character is.\n"
+source: null
+source-url: null
+call-to-action: null
 date: 2022-04-24 17:42:44-07:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: null
-seo-description:
-
+seo-description: null
 categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
-# Need to Fix these images
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2022-04/community-life.webp
-image-alt:
-image-artist:
-image-artist-URL:
+image-alt: null
+image-artist: null
+image-artist-URL: null
 image-credits: Art from Gamma World 6th Edition
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: true
-
-order:
+order: null
+image_width: 1402
+image_height: 1018
 ---
 <style>
 .dccvsdnd thead tr th {

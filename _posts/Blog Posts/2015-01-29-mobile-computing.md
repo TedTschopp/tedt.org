@@ -1,74 +1,62 @@
 ---
 layout: post
-
 title: 'The Revolution of Mobile Computing: From Mainframes to Smartphones'
-title-url:
+title-url: null
 subtitle: How Smartphones Changed Every Aspect of Life and Business
-subtitle-url:
-quote:
+subtitle-url: null
+quote: null
 excerpt: 'The trend in computing is to be more and more personable.  When you went
-    from a mainframe to a PC, what was compelling about that was that it was accessible
-    to more people. Then from a desktop to a laptop, it was not just accessible to
-    more people, but accessible in more places.  And this was the beginning of mobile
-    computing.
+  from a mainframe to a PC, what was compelling about that was that it was accessible
+  to more people. Then from a desktop to a laptop, it was not just accessible to more
+  people, but accessible in more places.  And this was the beginning of mobile computing.
 
-    '
-source:
-source-url:
-call-to-action:
-
+  '
+source: null
+source-url: null
+call-to-action: null
 date: 2015-01-29 12:17:59+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article explores the evolution of computing from mainframes to PCs,
-    laptops, and ultimately to mobile phones. The author emphasizes how smartphones
-    have become an essential part of daily life, offering all-in-one functionality
-    and complete mobility. By examining trends in China and the shift in major companies
-    like Microsoft and Sony, the article provides a comprehensive overview of the
-    impact of mobile computing on contemporary society.
-seo-description:
-
+  laptops, and ultimately to mobile phones. The author emphasizes how smartphones
+  have become an essential part of daily life, offering all-in-one functionality and
+  complete mobility. By examining trends in China and the shift in major companies
+  like Microsoft and Sony, the article provides a comprehensive overview of the impact
+  of mobile computing on contemporary society.
+seo-description: null
 categories:
 - Computers
 - Mobile
-tags:
+tags: null
 keywords: mobile computing, smartphones, mainframes, PCs, laptops, China, gadgets,
-    all-in-one, Xbox, PlayStation, Microsoft, Sony, mobile applications, cloud computing,
-    modern technology
-
-
-
+  all-in-one, Xbox, PlayStation, Microsoft, Sony, mobile applications, cloud computing,
+  modern technology
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2015-01/7348035690_d483c5e3e0_o.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 983
+image_height: 696
 ---
 The trend in computing is to be more and more personable.
 

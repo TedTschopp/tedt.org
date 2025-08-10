@@ -1,72 +1,61 @@
 ---
 layout: post
-
 title: 'The Three Types of People in Conversations: A Guide to Engaging Your Audience'
-title-url:
+title-url: null
 subtitle: Understanding Conversation Starters, Participants, and Observers in the
-    Digital World
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action: Are you a conversation starter, participant, or observer? Share your
-    insights or experiences in the comments below. Let’s continue the conversation
-    and learn how we can better engage with each other online!
-
+  Digital World
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: "Are you a conversation starter, participant, or observer? Share your\
+  \ insights or experiences in the comments below. Let\u2019s continue the conversation\
+  \ and learn how we can better engage with each other online!"
 date: 2009-07-09 10:48:39+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: 'This article examines the three fundamental roles in any conversation:
-    starters, participants, and observers. Drawing parallels between social gatherings
-    and website engagement, it explores how these roles dynamically change and offers
-    insights into creating a platform that encourages all types of engagement, from
-    starting conversations to lurking.'
-seo-description:
-
+  starters, participants, and observers. Drawing parallels between social gatherings
+  and website engagement, it explores how these roles dynamically change and offers
+  insights into creating a platform that encourages all types of engagement, from
+  starting conversations to lurking.'
+seo-description: null
 categories:
 - Communications
 - Computers
-tags:
+tags: null
 keywords: conversations, conversation starters, participants, observers, website engagement,
-    digital community, blog, comments, listeners, social dynamics
-
-
-
+  digital community, blog, comments, listeners, social dynamics
 location:
-    name: Phillips Ranch, CA
+  name: Phillips Ranch, CA
 coordinates:
-    latitude: 34.024550
-    longitude: -117.767693
-
+  latitude: 34.02455
+  longitude: -117.767693
 image: img/2013-06/screen-shot-2013-06-12-at-4-12-47-pm.webp
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: 'An illustration of the three types of people: Conversation Starters
-    initiating dialogue, Participants actively engaging, and Observers silently listening.
-    These images symbolize the dynamic roles that individuals play at social events
-    and within online communities.'
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  initiating dialogue, Participants actively engaging, and Observers silently listening.
+  These images symbolize the dynamic roles that individuals play at social events
+  and within online communities.'
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1182
+image_height: 704
 ---
 The first is that there are three basic types of people.  There are people who start conversations.  There are people who participate in conversations.  Finally there are people who listen to conversations.
 

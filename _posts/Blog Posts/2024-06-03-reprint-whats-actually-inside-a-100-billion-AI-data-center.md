@@ -1,63 +1,55 @@
 ---
 layout: post
-
-title: 2024 Reprint - What's Actually Inside a $100 Billion AI Data Center? 
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt: 'So the same code that runs when you load a web page is actually very similar to the code that runs when Google is trying to compile a very complicated machine learning problem down to run on their TPUs...'
-
-source:
+title: 2024 Reprint - What's Actually Inside a $100 Billion AI Data Center?
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: So the same code that runs when you load a web page is actually very similar
+  to the code that runs when Google is trying to compile a very complicated machine
+  learning problem down to run on their TPUs...
+source: null
 source-url: https://www.youtube.com/watch?v=vZMjvpWFQvk
-call-to-action:
-
+call-to-action: null
 date: 2024-06-03 17:43:28-0700
-update: 
+update: null
 author:
-    avatar: https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D
-    name: Dr. Waku
-    url: https://linktr.ee/seriouself
-
-bullets:
-
-description: 'REPRINT: Overview of what it will take for Microsoft to Build out Project Stargate, a $100 Billion data center.'
-seo-description:
-
+  avatar: https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D
+  name: Dr. Waku
+  url: https://linktr.ee/seriouself
+bullets: null
+description: 'REPRINT: Overview of what it will take for Microsoft to Build out Project
+  Stargate, a $100 Billion data center.'
+seo-description: null
 categories:
 - Reprint
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2024-06/stargate.webp
 image-alt: Picture of the Stargate
-image-artist:
-image-artist-URL:
-image-credits:
+image-artist: null
+image-artist-URL: null
+image-credits: null
 image-credits-URL: null
 image-credits-artist: MGM
-image-credits-artist-URL:
+image-credits-artist-URL: null
 image-credits-title: Stargate
-image-description: An image of a Stargate from the TV show 'Stargate'. The Stargate is a large, circular ring with intricate symbols around its edge, standing upright on a platform, with a glowing blue event horizon in the center.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+image-description: An image of a Stargate from the TV show 'Stargate'. The Stargate
+  is a large, circular ring with intricate symbols around its edge, standing upright
+  on a platform, with a glowing blue event horizon in the center.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1200
+image_height: 675
 ---
-
 ### Intro
 
 Leaked reports indicate that Microsoft, in partnership with OpenAI, is planning to invest an astounding $100 billion into a new AI data center. This massive amount is more than double the global annual expenditure on data centers. What cutting-edge technologies and innovations might go into this facility, and what special considerations must be tackled when spending such significant sums on AI-centric infrastructure? Keep watching to learn more. This has three parts: "Data Center Gold Rush," "So You Want to Build a Data Center," and "The Hardware Secret Sauce."

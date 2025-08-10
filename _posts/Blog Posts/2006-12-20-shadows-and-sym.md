@@ -1,66 +1,54 @@
 ---
 layout: post
-
 title: 'From Shadows to Light: A Journey Through Fantasy Literature'
-title-url:
+title-url: null
 subtitle: Exploring the Love of Fantasy, Romanticism, and the Quest for Meaning
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-12-20 11:32:34+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article delves into the author's lifelong fascination with fantasy
-    literature, starting from childhood favorites like 'The Chronicles of Narnia'
-    and 'The Hobbit.' It explores the transition from innocent wonder to darker themes,
-    ultimately leading to a profound understanding of the light and symbols behind
-    the shadows.
-seo-description:
-
+  literature, starting from childhood favorites like 'The Chronicles of Narnia' and
+  'The Hobbit.' It explores the transition from innocent wonder to darker themes,
+  ultimately leading to a profound understanding of the light and symbols behind the
+  shadows.
+seo-description: null
 categories:
 - Books
-tags:
+tags: null
 keywords: Fantasy Literature, Romanticism, Shadows, Light, Chronicles of Narnia, The
-    Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love,
-    Symbolism, Newbery Awards
-
-
-
+  Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love, Symbolism,
+  Newbery Awards
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2006-12/An-open-book-intricate-shadows-symbolic-shapes.webp
-image-alt:
+image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-credits-title: Symbolic Book
 image-description: An image of an open book, with intricate shadows cast from symbolic
-    shapes above. The shadows twist and slither on the page, drawing attention to
-    the hidden shapes that create them. A soft light emanates from the background,
-    symbolizing the overarching theme of light and understanding explored in the article.
+  shapes above. The shadows twist and slither on the page, drawing attention to the
+  hidden shapes that create them. A soft light emanates from the background, symbolizing
+  the overarching theme of light and understanding explored in the article.
 image-title: Symbolic Book
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
 > &ldquo;It must be more than thirty years ago that I bought &mdash; almost unwilling, for I had looked at the column on that bookstall and rejected it on a dozen previous occasions &mdash; the Everyman edition of _Phantastes_. A few hours later I knew that I had crossed a great frontier. I had already been waist deep in Romanticism, and likely enough, at any moment, to flounder into its darker and more evil forms, slithering down the steep descent that leads from the love of strangeness to that of eccentricity and thence to that of perversity.&rdquo; &mdash; C.S. Lewis Preface to _George MacDonald: an Anthology_
 

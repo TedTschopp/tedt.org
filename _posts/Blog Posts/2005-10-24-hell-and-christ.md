@@ -1,64 +1,52 @@
 ---
 layout: post
-
 title: 'Contemplating the Afterlife: Understanding Hell from Various Perspectives'
-title-url:
+title-url: null
 subtitle: A Personal Reflection on the Concepts of Hell and Its Existence in Belief
-    Systems
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+  Systems
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2005-10-24 14:05:54+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: 'This article explores the unsettling and universal idea of hell, examining
-    two main positions regarding the afterlife for unbelievers: annihilation and eternal
-    damnation. The author''s personal struggle with these concepts provides a thought-provoking
-    analysis of human culture and religious beliefs.'
-seo-description:
-
+  two main positions regarding the afterlife for unbelievers: annihilation and eternal
+  damnation. The author''s personal struggle with these concepts provides a thought-provoking
+  analysis of human culture and religious beliefs.'
+seo-description: null
 categories:
 - Religion
-tags:
+tags: null
 keywords: Hell, Afterlife, Annihilation, Eternal Damnation, Religion, Belief Systems,
-    Christian Viewpoint, Pagan Literature, Symbolism, Punishment
-
-
-
+  Christian Viewpoint, Pagan Literature, Symbolism, Punishment
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
+  latitude: 34.099024
+  longitude: -118.069288
 image: img/2005-10/Two-concepts-of-hell.webp
-image-alt: 
+image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-description: 'An abstract representation of the two concepts of hell: annihilation
-    and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing
-    the profound and uncomfortable nature of these beliefs. It conveys the universality
-    and nightmarish quality of hell in human culture.'
+  and eternal torment. The imagery is dark and unsettling, yet artful, symbolizing
+  the profound and uncomfortable nature of these beliefs. It conveys the universality
+  and nightmarish quality of hell in human culture.'
 image-title: Two Concepts of Hell
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+image_width: 1456
+image_height: 816
 ---
 I posted this elsewhere, and ran into it today, and thought about reposting it here:
 

@@ -1,52 +1,73 @@
 ---
 layout: post
-title: Mehmet Al-Mansur - Former Member of the Sultan's Sihirbaz Yeniçerileri
+title: "Mehmet Al-Mansur - Former Member of the Sultan's Sihirbaz Yeni\xE7erileri"
 title-url: https://tedt.org/2023/10/29/Mehmet-Al-Mansur.html
 subtitle: Ottoman Imperial Refugee and Sorcerer
-subtitle-url: 
-quote: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920s. He is a former member of the Sultan's Sihirbaz Yeniçerileri, a sorcerer corps, skilled in mystical arts and in combat."
-excerpt: Mehmet Al-Mansur is dedicated to providing safe passage for magical creatures and djinn to the Western world for eventual resettlement in the Americas, possessing skills acquired during his service as an Ottoman soldier.
+subtitle-url: null
+quote: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early\
+  \ 1920s. He is a former member of the Sultan's Sihirbaz Yeni\xE7erileri, a sorcerer\
+  \ corps, skilled in mystical arts and in combat."
+excerpt: Mehmet Al-Mansur is dedicated to providing safe passage for magical creatures
+  and djinn to the Western world for eventual resettlement in the Americas, possessing
+  skills acquired during his service as an Ottoman soldier.
 source: tedt.org
 source-url: https://tedt.org/2023/10/29/Mehmet-Al-Mansur.html
-call-to-action: 
+call-to-action: null
 date: 2023-11-05 09:14:49
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-bullets:
-description: Character Concept of Mehmet Al-Mansur, an Ottoman imperial refugee in Paris during the early 1920s, skilled in mystical arts and combat, dedicated to aiding magical beings' resettlement in the Americas.
-seo-description: 
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
+description: Character Concept of Mehmet Al-Mansur, an Ottoman imperial refugee in
+  Paris during the early 1920s, skilled in mystical arts and combat, dedicated to
+  aiding magical beings' resettlement in the Americas.
+seo-description: null
 categories:
-  - Role Playing Games
-  - Gurps
+- Role Playing Games
+- Gurps
 tags:
-  - RPG
-  - Game Mechanics
-  - Gurps 4th Edition
-keywords: "Mehmet Al-Mansur, Sultan's Sihirbaz Yeniçerileri, Ottoman imperial refugee, mystical arts, magical creatures resettlement, Ottoman soldier"
-
+- RPG
+- Game Mechanics
+- Gurps 4th Edition
+keywords: "Mehmet Al-Mansur, Sultan's Sihirbaz Yeni\xE7erileri, Ottoman imperial refugee,\
+  \ mystical arts, magical creatures resettlement, Ottoman soldier"
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: img/2023-11/Mehmet Al-Mansur.webp
-image-alt: "Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair, deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman patterns, wisdom and curiosity"
-image-title: "Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920"
-image-description: "This richly detailed portrait captures Mehmet Al‑Mansur, depicted as an Ottoman imperial refugee living in Paris in the early 1920s. Formerly a member of the Sultan’s elite Sihirbaz Yeniçerileri (magic‑user corps), he is shown with a thoughtful, intense expression framed by a neatly trimmed beard and traditional turban. His attire blends Ottoman formality with subtle modern touches—dark, tailored garments that hint at adaptation and exile. The overall lighting casts soft shadows across his face, highlighting determined eyes that speak to both hardship and spiritual resolve. The background is muted and out‑of‑focus, emphasizing the figure’s prominence and inner strength.Evocatively, this portrait balances cultural dichotomies: the weight of imperial legacy and mystical training against the tension of displacement. It conveys dignified resilience, arcane knowledge, and an enduring mission—his lifelong dedication to aiding magical beings and negotiating the complexities of a Europe in transition."
+image-alt: Man in his late 30s, Ottoman art style, olive-skinned, dark and wavy hair,
+  deep brown eyes, mustache and short beard, well-tailored earth-toned clothing, traditional
+  Ottoman or Turkish garments like a fez, baggy trousers, and a tunic, intricate Ottoman
+  patterns, wisdom and curiosity
+image-title: Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the
+  early 1920
+image-description: "This richly detailed portrait captures Mehmet Al\u2011Mansur,\
+  \ depicted as an Ottoman imperial refugee living in Paris in the early 1920s. Formerly\
+  \ a member of the Sultan\u2019s elite Sihirbaz Yeni\xE7erileri (magic\u2011user\
+  \ corps), he is shown with a thoughtful, intense expression framed by a neatly trimmed\
+  \ beard and traditional turban. His attire blends Ottoman formality with subtle\
+  \ modern touches\u2014dark, tailored garments that hint at adaptation and exile.\
+  \ The overall lighting casts soft shadows across his face, highlighting determined\
+  \ eyes that speak to both hardship and spiritual resolve. The background is muted\
+  \ and out\u2011of\u2011focus, emphasizing the figure\u2019s prominence and inner\
+  \ strength.Evocatively, this portrait balances cultural dichotomies: the weight\
+  \ of imperial legacy and mystical training against the tension of displacement.\
+  \ It conveys dignified resilience, arcane knowledge, and an enduring mission\u2014\
+  his lifelong dedication to aiding magical beings and negotiating the complexities\
+  \ of a Europe in transition."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-
-monster-or-magical-or-religious-ideas:  
-year-the-event-took-place:
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-order:
-
+order: null
+image_width: 960
+image_height: 1200
 ---
-
 # Character Sheet
 
 **Character Concept:** Mehmet Al-Mansur, an Ottoman imperial refugee living in Paris in the early 1920s. He is a former member of the Sultan\'s Sihirbaz Yeniçerileri, a sorcerer corps, skilled in mystical arts and in combat. He is is dedicated to providing safe passage for magical creatures and djinn to the Western world for eventual resettlement in the Americas. He also possesses skills acquired during his service as an Ottoman soldier.
