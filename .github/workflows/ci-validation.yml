@@ -16,11 +16,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
-      - name: Show Ruby & Bundler versions
+          bundler-cache: false
+      - name: Add Linux platform to lockfile
         run: |
           ruby -v
           bundler -v
+          bundle lock --add-platform x86_64-linux || true
+          bundle lock --add-platform ruby || true
+      - name: Install Gems
+        run: bundle install --jobs 4 --path vendor/bundle
       - name: Build Jekyll
         run: bundle exec jekyll build --quiet
       - name: Legacy key check
