@@ -664,5 +664,170 @@
       "url": "https://tedt.org/"
     },
     "toots": []
+  },
+  "https://tedt.org/OpenAIs-GPT-OSS-Explained.md/": {
+    "id": "https://tedt.org/OpenAIs-GPT-OSS-Explained.md/",
+    "title": "Practical On-Prem AI: What OpenAI’s GPT-OSS 20B & 120B Mean for Utilities",
+    "summary": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers.",
+    "content_text": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers. https://tedt.org/OpenAIs-GPT-OSS-Explained.md/",
+    "url": "https://tedt.org/OpenAIs-GPT-OSS-Explained.md/",
+    "image": "https://tedt.org/img/AI/OSS.webp",
+    "tags": [
+      "openai",
+      "gpt-oss",
+      "open-weight",
+      "mixture-of-experts",
+      "reasoning",
+      "chain-of-thought",
+      "utilities",
+      "on-prem",
+      "safety",
+      "preparedness-framework",
+      "agentic-tool-use"
+    ],
+    "date_published": "2025-08-10T00:00:00-07:00",
+    "date_modified": "2025-08-10T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115007009056996308"
+    ],
+    "lastTootTimestamp": 1754867692042
+  },
+  "https://tedt.org/OpenAIs-GPT-OSS-Explained/": {
+    "id": "https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+    "title": "Practical On-Prem AI: What OpenAI’s GPT-OSS 20B & 120B Mean for Utilities",
+    "summary": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers.",
+    "content_text": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers. https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+    "url": "https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+    "image": "https://tedt.org/img/AI/OSS.webp",
+    "tags": [
+      "openai",
+      "gpt-oss",
+      "open-weight",
+      "mixture-of-experts",
+      "reasoning",
+      "chain-of-thought",
+      "utilities",
+      "on-prem",
+      "safety",
+      "preparedness-framework",
+      "agentic-tool-use"
+    ],
+    "date_published": "2025-08-10T00:00:00-07:00",
+    "date_modified": "2025-08-10T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/": {
+    "id": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/",
+    "title": "Draft - Practical Hexcrawl Design and Procedures",
+    "summary": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.",
+    "content_text": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep. https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/",
+    "url": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/",
+    "image": "https://tedt.org/img/2025-08/hex-map-seeded-frontier.webp",
+    "tags": [
+      "hexcrawl",
+      "wilderness",
+      "procedures",
+      "emergent play",
+      "mapping"
+    ],
+    "date_published": "2025-08-07T02:00:00-07:00",
+    "date_modified": "2025-08-07T02:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Building-a-Lego-Cat.md/": {
+    "id": "https://tedt.org/Building-a-Lego-Cat.md/",
+    "title": "Building a Lego Cat",
+    "summary": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change.",
+    "content_text": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change. https://tedt.org/Building-a-Lego-Cat.md/",
+    "url": "https://tedt.org/Building-a-Lego-Cat.md/",
+    "image": "https://tedt.org/img/AI/Hannah-with-a-cat-no-title.webp",
+    "tags": [
+      "artificial intelligence",
+      "organizational change",
+      "workforce management",
+      "human skills",
+      "digital transformation",
+      "experiential learning",
+      "Joseph Fuller",
+      "Ronnie Chatterji",
+      "talent strategy",
+      "leadership development"
+    ],
+    "date_published": "2025-08-03T00:00:00-07:00",
+    "date_modified": "2025-08-03T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Critique-Content.md/": {
+    "id": "https://tedt.org/Critique-Content.md/",
+    "title": "Academic Content Critique Template",
+    "summary": "The \"Academic Content Critique Template\" is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
+    "content_text": "The \"Academic Content Critique Template\" is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Critique-Content.md/",
+    "url": "https://tedt.org/Critique-Content.md/",
+    "image": "https://tedt.org//img/prompts/academic-critique-template.png",
+    "tags": [
+      "Academic Writing",
+      "Critique",
+      "Analysis",
+      "Evaluation",
+      "Research",
+      "Scholarly Writing",
+      "Peer Review",
+      "Assessment"
+    ],
+    "date_published": "2025-08-01T00:00:00-07:00",
+    "date_modified": "2025-08-01T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Rooted-In-Resilience.md/": {
+    "id": "https://tedt.org/Rooted-In-Resilience.md/",
+    "title": "Rooted in Resilience",
+    "summary": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.",
+    "content_text": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. https://tedt.org/Rooted-In-Resilience.md/",
+    "url": "https://tedt.org/Rooted-In-Resilience.md/",
+    "image": "https://tedt.org/img/AI/Rooted-in-Resilience.webp",
+    "tags": [
+      "artificial intelligence",
+      "enterprise software",
+      "SaaS transformation",
+      "utility companies",
+      "digital transformation",
+      "Sam Altman",
+      "OpenAI",
+      "just-in-time software",
+      "business strategy",
+      "technology leadership"
+    ],
+    "date_published": "2025-06-29T00:00:00-07:00",
+    "date_modified": "2025-06-29T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
