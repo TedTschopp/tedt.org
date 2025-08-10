@@ -493,7 +493,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115006307407887240"
+    ],
+    "lastTootTimestamp": 1754856985662
   },
   "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
     "id": "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
