@@ -15,7 +15,12 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: '3.2'
           bundler-cache: true
+      - name: Show Ruby & Bundler versions
+        run: |
+          ruby -v
+          bundler -v
       - name: Build Jekyll
         run: bundle exec jekyll build --quiet
       - name: Legacy key check

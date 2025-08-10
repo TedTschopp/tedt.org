@@ -194,6 +194,7 @@ Utilities can also embed the **20B** model directly into edge gear—substation 
 | Apple  | iPad Pro (M4) 11-/13-inch                               |       Tablet       |      Shipping       | **M4**; **8 GB** (256/512 GB) or **16 GB** (1–2 TB)                                                           | **Yes (16 GB configs only)‡** |                   No                   | **From \$1,599 (11″)**                              |
 | Apple  | “Next” iPad Pro (M5, 2025)                              |       Tablet       |       Rumored       | **M5**; 2025 fall window; memory likely similar tiers to M4 (final RAM TBD).                                  | **Yes (16 GB configs only)‡** |                   No                   | **From \$1,599 (11″)**                              |
 | Apple  | iPad Pro (M6, \~H1 2027)                                |       Tablet       |       Rumored       | **M6**; early **2027** refresh. **16–32 GB**                                                                  |            **Yes**            |                   No                   | **From \$9,99 (11″)**                               |
+{: .well .table .table-striped }
 
 **Notes & sources (workstations):**
 * “Good for 20B” assumes you can allocate ~16 GB to the model. Any recent Mac with at least 16 GB unified memory qualifies; on Windows/Linux, a 16 GB-VRAM GPU or enough system RAM for CPU inference will work, with lower throughput. ([OpenAI][computer_table_1], [GitHub][computer_table_2])
