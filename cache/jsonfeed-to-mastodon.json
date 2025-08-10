@@ -460,7 +460,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115005878057980331"
+    ],
+    "lastTootTimestamp": 1754850434344
   },
   "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
     "id": "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
