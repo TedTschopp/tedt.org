@@ -527,7 +527,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115006701859534200"
+    ],
+    "lastTootTimestamp": 1754863004518
   },
   "https://tedt.org/Details-on-the-WINs-Network/": {
     "id": "https://tedt.org/Details-on-the-WINs-Network/",
