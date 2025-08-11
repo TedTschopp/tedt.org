@@ -10,35 +10,35 @@ call-to-action: "Share how you envision using GPT-5 in your team or the field."
 date: 2025-08-10
 update: 
 author:
-	avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-	name: Ted Tschopp
-	url: https://tedt.org/
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-	- "Mentorship metaphor: GPT-5 as an ever-present expert guide."
-	- Massive 256K context enables whole reports & codebases in one session.
-	- Higher factual accuracy & candid uncertainty reduce hallucination risk.
-	- Multimodal (text + images) boosts field diagnostics & office workflows.
-	- Transforms both Fortune 500 knowledge work and utility field operations.
+  - "Mentorship metaphor: GPT-5 as an ever-present expert guide."
+  - Massive 256K context enables whole reports & codebases in one session.
+  - Higher factual accuracy & candid uncertainty reduce hallucination risk.
+  - Multimodal (text + images) boosts field diagnostics & office workflows.
+  - Transforms both Fortune 500 knowledge work and utility field operations.
 description: "How ChatGPT 5 shifts from generic chatbot to trusted expert partner for Fortune 500 teams and utility field crews—expanding context, reasoning, vision, and reliability."
 seo-description: "Exploring ChatGPT 5’s impact on enterprise knowledge work and utility field operations: long context, reasoning mode, multimodal insight, honesty, and real-time mentorship."
 categories:
-	- Artificial Intelligence
-	- Opinion
+  - Artificial Intelligence
+  - Opinion
 tags:
-	- ChatGPT5
-	- GPT-5
-	- AI
-	- Utilities
-	- Field Service
-	- Knowledge Management
-	- Enterprise
-	- Productivity
+  - ChatGPT5
+  - GPT-5
+  - AI
+  - Utilities
+  - Field Service
+  - Knowledge Management
+  - Enterprise
+  - Productivity
 keywords: ChatGPT 5,GPT-5,AI mentorship,enterprise AI,utility field service,knowledge management,long context,multimodal AI
 location:
-	name: Bradbury, CA
-coordinates:
-	latitude: 34.1470
-	longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
 image: img/AI/Night-Routine.webp
 image-alt: "Stylized family at bedtime with anxious expressions dad with beard mom with curly hair three kids one holding a toothbrush teal and warm-orange textured look"
 image-artist: "Ted Tschopp"
