@@ -199,6 +199,9 @@ image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 image_width: 1456
 image_height: 816
+
+mastodon-post-id: 115004510228909088
+
 ---
 The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailored exactly to your specifications.
 

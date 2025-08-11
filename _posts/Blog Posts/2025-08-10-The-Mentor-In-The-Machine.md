@@ -47,13 +47,16 @@ image-credits: "Ted Tschopp"
 image-credits-URL: "https://tedt.org/"
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
+image-credits-title: "Nightly Routine"
 image-description: "A painterly, textured illustration shows five figures indoors: a bespectacled boy holding a toothbrush at left, a bearded father center-left, a girl with long dark hair center, a curly-haired mother at right, and a younger girl with pigtails foreground right. Shelves, jars, and framed wall art set a homey bathroom or hallway scene. The palette mixes cool teal shadows with warm golden highlights, giving a duotone, stippled, almost impasto surface. Everyone looks concerned or uncertain, suggesting a tense bedtime moment."
 image-title: "Nightly Routine"
 image_width: 1456
 image_height: 816
 
-mastodon-post-id: 
+mastodon-post-id: 115008734813143020
+
+
+
 ---
 
 ## A Bedtime Lesson in Humility and Patience

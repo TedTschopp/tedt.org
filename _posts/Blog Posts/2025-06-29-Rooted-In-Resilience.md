@@ -68,7 +68,7 @@ image-credits-title: ''
 image-description: Metaphorical representation of how enterprises with deep roots
   can weather the storm of AI transformation
 image-title: Enterprise Resilience in the AI Storm
-mastodon-post-id: null
+mastodon-post-id: 115005878057980331
 image_width: 1536
 image_height: 1024
 ---

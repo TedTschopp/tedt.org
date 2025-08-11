@@ -326,6 +326,8 @@ prompt_content: "Act as an academic reviewer and critique the content provided u
   * **Bloom\u2019s Taxonomy for Critical Thinking**\n"
 image_width: 1456
 image_height: 816
+
+mastodon-post-id: 115003055074249913
 ---
 The "Academic Content Critique Template" is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks.
 

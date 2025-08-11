@@ -71,7 +71,7 @@ image-description: "A vector graphic depicting a stylized human brain divided in
   \ data flow, digital tools, and automation, symbolizing the integration of AI, technology,\
   \ and scientific research."
 image-title: Symphony of Circuits and Synapses
-mastodon-post-id: null
+mastodon-post-id: 115010188906731164
 image_width: 1456
 image_height: 816
 ---

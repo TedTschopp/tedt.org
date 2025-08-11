@@ -34,6 +34,8 @@ image-description: Faded parchment style hex map of a frontier region with layer
 image-title: Seeded Frontier Hex Map
 image_width: 1456
 image_height: 816
+
+mastodon-post-id: 115001029386322961
 ---
 <script>
 // Ancestor layout diagnostics (below front matter)

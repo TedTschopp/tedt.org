@@ -71,7 +71,7 @@ image-credits-title: ''
 image-description: Metaphor for navigating AI adoption with the same thoughtful approach
   as exploring new terrain
 image-title: Navigating the AI Wave with Wisdom and Curiosity
-mastodon-post-id: null
+mastodon-post-id: 115006701859534200
 image_width: 1536
 image_height: 1024
 ---
