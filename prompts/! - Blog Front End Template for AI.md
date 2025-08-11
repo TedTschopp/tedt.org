@@ -54,6 +54,8 @@ image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: ""
 image-description: ""
 image-title: ""
+image_width: 
+image_height: 
 
 mastodon-post-id: 
 
