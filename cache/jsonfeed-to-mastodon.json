@@ -597,7 +597,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115012762666720141"
+    ],
+    "lastTootTimestamp": 1754955485108
   },
   "https://tedt.org/The-Student-Who-Taught-Herself/": {
     "id": "https://tedt.org/The-Student-Who-Taught-Herself/",
