@@ -906,5 +906,34 @@
       "https://tschopp.net/users/Ted/statuses/115008734813143020"
     ],
     "lastTootTimestamp": 1754894024970
+  },
+  "https://tedt.org/Academic-Critique-Content/": {
+    "id": "https://tedt.org/Academic-Critique-Content/",
+    "title": "Academic Content Critique Template",
+    "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
+    "content_text": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Academic-Critique-Content/",
+    "url": "https://tedt.org/Academic-Critique-Content/",
+    "image": "https://tedt.org//img/prompts/academic-critique-template.png",
+    "tags": [
+      "Academic Writing",
+      "Critique",
+      "Analysis",
+      "Evaluation",
+      "Research",
+      "Scholarly Writing",
+      "Peer Review",
+      "Assessment"
+    ],
+    "date_published": "2025-08-01T00:00:00-07:00",
+    "date_modified": "2025-08-01T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115011492237667959"
+    ],
+    "lastTootTimestamp": 1754936099914
   }
 }
