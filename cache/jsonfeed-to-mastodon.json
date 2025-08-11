@@ -561,7 +561,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115010724959169608"
+    ],
+    "lastTootTimestamp": 1754924392164
   },
   "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/": {
     "id": "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
