@@ -70,7 +70,7 @@ image-credits-title: ''
 image-description: Visual representation of the WINS framework matrix for categorizing
   AI opportunities by cost and scope
 image-title: 'WINS Framework: Strategic AI Adoption Matrix'
-mastodon-post-id: null
+mastodon-post-id: 115010724959169608
 image_width: 1836
 image_height: 932
 ---
