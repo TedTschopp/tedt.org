@@ -871,5 +871,34 @@
       "https://tschopp.net/users/Ted/statuses/115007412669760738"
     ],
     "lastTootTimestamp": 1754873850693
+  },
+  "https://tedt.org/The-Mentor-In-The-Machine/": {
+    "id": "https://tedt.org/The-Mentor-In-The-Machine/",
+    "title": "The Mentor in the Machine",
+    "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
+    "content_text": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike. https://tedt.org/The-Mentor-In-The-Machine/",
+    "url": "https://tedt.org/The-Mentor-In-The-Machine/",
+    "image": "https://tedt.org/img/AI/Night-Routine.webp",
+    "tags": [
+      "ChatGPT5",
+      "GPT-5",
+      "AI",
+      "Utilities",
+      "Field Service",
+      "Knowledge Management",
+      "Enterprise",
+      "Productivity"
+    ],
+    "date_published": "2025-08-10T00:00:00-07:00",
+    "date_modified": "2025-08-10T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115008734813143020"
+    ],
+    "lastTootTimestamp": 1754894024970
   }
 }
