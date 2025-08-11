@@ -31,6 +31,7 @@
   </head>
 
   <body>
+    <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include layout/top-of-body.html %}
 
@@ -46,16 +47,16 @@
             <div class="col-lg-12">
               <!-- Blog Post -->
 
-                <article class="h-entry">
+                <main class="h-entry" role="main">
                   <!-- Title -->
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                   <h1 class="p-name lead"><a href="{{page.mf-syndication}}"> Checked into {{page.mf-checkin[0].properties.name}}</a></h1>
 
-                  {% if page.author.name == null or page.author.name == empty %}
-                      <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
-                  {% else %}
-                      <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
-                  {% endif %}
+          {% if page.author.name == null or page.author.name == empty %}
+            <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></p>
+          {% else %}
+            <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>
+          {% endif %}
 
                   <hr>
 
@@ -63,7 +64,7 @@
 
                   <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
 
-                  <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+                  <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg" alt="Webmention logo">&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
 
                   <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                   {% assign categories = page-categories-collection %}
@@ -91,10 +92,10 @@
 
                         -->
 
-                  {% if mf-photo %}
+                  {% if page.mf-photo %}
                     {% for photo in page.mf-photo %}
                       <figure>
-                          <img class="img-responsive img-thumbnail" src="{{photo}}">
+                          <img class="img-responsive img-thumbnail" src="{{photo}}" alt="Check-in photo {{ forloop.index }} of {{ page.mf-photo.size }}">
                       </figure>
                     {% endfor %}
                   {% endif %}
@@ -137,26 +138,42 @@
                   {% endcomment %}
 
 
-                    <div id="mapid"></div>
-                    <script>
-                        var mymap = L.map('mapid')
-                                     .setView([ {{ map-latitude-one }} , 
-                                                {{ map-longitude-one }}    ], 15);
+                    <div id="mapid" 
+                         data-lat-one="{{ map-latitude-one }}" 
+                         data-lon-one="{{ map-longitude-one }}"
+                         {% if draw-map-two == true %}data-lat-two="{{ map-latitude-two }}" data-lon-two="{{ map-longitude-two }}"{% endif %}>
+                    </div>
+          <script>
+            // Obtain coordinates from data attributes to avoid Liquid math parsing edge cases with hyphenated names
+            const mapEl = document.getElementById('mapid');
+            const MAP_LAT_ONE = parseFloat(mapEl.dataset.latOne);
+            const MAP_LON_ONE = parseFloat(mapEl.dataset.lonOne);
+            const HAS_SECOND = mapEl.dataset.latTwo !== undefined && mapEl.dataset.lonTwo !== undefined;
+            let MAP_LAT_TWO, MAP_LON_TWO;
+            if (HAS_SECOND) {
+              MAP_LAT_TWO = parseFloat(mapEl.dataset.latTwo);
+              MAP_LON_TWO = parseFloat(mapEl.dataset.lonTwo);
+            }
+            var mymap = L.map('mapid')
+                   .setView([ MAP_LAT_ONE, MAP_LON_ONE ], 15);
                         L.tileLayer(
                           'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp', {attribution: 
                           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
                          .addTo(mymap);
 
-                        L.marker([ {{ map-latitude-one }} , {{ map-longitude-one }} ])
+                        L.marker([ MAP_LAT_ONE, MAP_LON_ONE ])
                          .addTo(mymap)
                          .bindPopup("<b>{{ map-name-one }}</b>")
                          .openPopup();
 
+                        /* Liquid conditional controls second marker presence */
                         {% if draw-map-two == true %}
-                        L.marker([ {{ map-latitude-two }} , {{ map-longitude-two }} ])
-                         .addTo(mymap)
-                         .bindPopup("<b>{{ map-name-two }}</b>")
-                         .openPopup();
+                        if (HAS_SECOND) {
+                          L.marker([ MAP_LAT_TWO, MAP_LON_TWO ])
+                           .addTo(mymap)
+                           .bindPopup("<b>{{ map-name-two }}</b>")
+                           .openPopup();
+                        }
                         {% endif %}
 
                         var popup = L.popup();
@@ -172,7 +189,7 @@
                   <span class="e-content">{{ content }}</span>
                   <hr>
                   {% endif %}
-                </article>
+                </main>
  
 
                 <!--Next and Previous Articles -->
@@ -186,34 +203,7 @@
 
             </div>
             
-            {% comment %}
-            <!-- Blog Sidebar Widgets Column -->
-            <div class="col-md-4">
-                <!-- Blog Search Well -->
-                <div class="well">
-                    <h4>Blog Search</h4>
-                    {% include utility/google-search.html %}
-                </div>
-                <!-- Blog Categories Well -->
-                <!-- TODO: Add Social -->
-                <div class="well">
-                    <div class="post-categories">
-                        {% assign categories = page-categories-collection %}
-                        {% for category in categories %}
-                            <h4>Latest in <a href="{{ site.url }}/categories/#{{category|slugize}}">{{category | capitalize}}</a></h4>
-                              <div class="row">
-                              <div class="col-lg-12">
-                                  <ul lass="list-unstyled">
-                                    {% for post in site.categories[category] limit:5 %}
-                                        <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-                                    {% endfor %}
-                                  </ul>
-                              </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>    {% endcomment %}
+            
         </div>
 
         <!-- /.row -->

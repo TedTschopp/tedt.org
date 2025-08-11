@@ -34,6 +34,7 @@
   </head>
 
   <body>
+    <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
     {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
@@ -42,7 +43,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                <article class="h-entry">
+                <main class="h-entry" role="main">
                     <!-- Title -->
                     <h1 class="p-name">Category: {% include utility/category-emoji.html category=page.title %} {{ page.title }}</h1>
                     {% if page.subtitle %}
@@ -67,7 +68,7 @@
                     <p>{{ SEO-description }}</p>
 
                     <span class="e-content" id="main_content">
-                      <ol>
+                      <ol class="list-unstyled" aria-label="Posts in category {{ page.category }}">
                         {% for post in site.categories[page.category] %}
                             <li class="list-item-custom">
                               <div class="container">
@@ -176,7 +177,7 @@
                         </ol>                    
                       </span>
 
-                </article>
+                </main>
 
                 <hr>
                 {% include social/comments.html %}

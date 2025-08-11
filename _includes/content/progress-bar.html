@@ -26,89 +26,41 @@
             <strong>Pre-Release:</strong>
             <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
         {% endif %}
-        <div class="progress-clear">
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "notes" or draftstatus == "" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "unit" or draftstatus == "" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "integration" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "component" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "system" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "alpha" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "beta" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-            <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                {% if draftstatus == "pre-release" %}
-                    <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
-                {% else %}
-                    &nbsp;
-                {% endif %}
-            </div>
-        </div>                            
-        <div class="progress">
-            <div class="progress-bar draft-notes" role="progressbar" style="width:12.5%">
-                Notes
-            </div>
-            <div class="progress-bar unit" role="progressbar" style="width:12.5%">
-                Unit
-            </div>
-            <div class="progress-bar integration" role="progressbar" style="width:12.5%">
-                Int.
-            </div>
-            <div class="progress-bar component" role="progressbar" style="width:12.5%">
-                Comp.
-            </div>
-            <div class="progress-bar system" role="progressbar" style="width:12.5%">
-                System
-            </div>
-            <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
-                Alpha
-            </div>
-            <div class="progress-bar beta" role="progressbar" style="width:12.5%">
-                Beta
-            </div>
-            <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
-                Pre.
-            </div>
-        </div>
+        <ul class="progress-clear list-unstyled d-flex flex-wrap" aria-label="Draft progress stages" role="list">
+            <li class="progress-bar-clear"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "notes" or draftstatus == "" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Notes stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "unit" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Unit stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "integration" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Integration stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "component" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Component stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "system" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">System stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "alpha" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Alpha stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "beta" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Beta stage</span>{% endif %}
+            </li>
+            <li class="progress-bar-clear"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">
+                {% if draftstatus == "pre-release" %}<i class="fa fa-map-marker text-white" aria-hidden="true"></i><span class="visually-hidden">Pre-release stage</span>{% endif %}
+            </li>
+        </ul>
+        <ul class="progress list-unstyled d-flex flex-wrap" aria-label="Draft stage labels" role="list">
+            <li class="progress-bar draft-notes"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">Notes</li>
+            <li class="progress-bar unit"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">Unit</li>
+            <li class="progress-bar integration"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">Int.</li>
+            <li class="progress-bar component"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">Comp.</li>
+            <li class="progress-bar system"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">System</li>
+            <li class="progress-bar alpha"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">Alpha</li>
+            <li class="progress-bar beta"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">Beta</li>
+            <li class="progress-bar prerelease"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">Pre.</li>
+        </ul>
     </aside>
     {% endif %}

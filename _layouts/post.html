@@ -25,8 +25,10 @@
 
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
+    {% include seo/article-jsonld.html %}
   </head>
-  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+        <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
     {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
@@ -35,7 +37,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-12 col-lg-9 col-xxl-9" id="content-column">
                 <!-- Blog Post -->
-                <article class="h-entry">
+                <main class="h-entry" role="main">
 
                     <div class="card h-100 no-padding">
                             {% if page.image %}
@@ -90,7 +92,7 @@
                                 {% assign image_credits_artist_URL = "https://tedt.org/" %}
                             {% endif %}
                             <div class="card h-100 position-relative">
-                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}">
+                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
                                 <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
 
@@ -100,9 +102,9 @@
                                     <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
                                         <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                                         {% if page.author.name %}
-                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
+                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>
                                         {% else %}
-                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
+                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></p>
                                         {% endif %}
                                     </div>
 
@@ -176,7 +178,7 @@
                             <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
                                 <div class="col-12">
                                     <div class="card h-100 position-relative">
-                                        <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{category}}">
+                                        <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{category}}" loading="lazy">
                                         <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                             <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
                                             <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.url }}/category/{{category|slugize}}">Table of Contents 📖</a></p>
@@ -187,7 +189,18 @@
 
                                 </div>
                             </div>                   
-                            <div class="e-content" id="main_content">{{ content }}</div><!-- main post content including hex include -->
+                                                                                    {%- comment -%}
+                                                                                        Add loading="lazy" to all images inside post content except the first one.
+                                                                                        Strategy: temporarily replace the first image tag with a unique placeholder, add lazy to remaining image tags, then restore the first.
+                                                                                    {%- endcomment -%}
+                                                        {% capture processed_content %}
+                                                            {%- assign placeholder = 'UNIQUE-IMG-PLACEHOLDER-XYZ' -%}
+                                                            {%- assign step1 = content | replace_first: '<img', placeholder -%}
+                                                            {%- assign step2 = step1 | replace: '<img', '<img loading="lazy"' -%}
+                                                            {%- assign final = step2 | replace: placeholder, '<img' -%}
+                                                            {{ final }}
+                                                        {% endcapture %}
+                                                        <div class="e-content" id="main_content">{{ processed_content }}</div><!-- main post content including hex include -->
 
                         </div>
                         <!--<div class="card-footer p-4 py-3 h-100"></div>-->
@@ -195,7 +208,7 @@
 
                     <hr>
 
-                </article>
+                </main>
 
                     {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
                         {% include social/comments-mastodon-tree.html %}
@@ -226,7 +239,7 @@
                                 <div class="card h-100">
                                     <div class="col-12">
                                         <div class="card h-100 position-relative">
-                                            <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}">
+                                            <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}" loading="lazy">
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
                                                 <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.url }}/category/{{category|slugize}}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>

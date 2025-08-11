@@ -36,7 +36,8 @@
 
   </head>
 
-  <body>
+    <body>
+        <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include layout/top-of-body.html %}
 
@@ -48,14 +49,14 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                <article class="h-entry">
+                <main class="h-entry" role="main">
                     <!-- Title -->
                     <h1 class="p-name">{{ page.title }}</h1>
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author.name %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo">{{page.author.name}}</a></p>
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>
                     {% else %}
-                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo">{{site.author.name}}</a></p>
+                        <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></p>
                     {% endif %}
 
                     <hr>
@@ -64,7 +65,7 @@
 
                     <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#disqus_thread">&nbsp;Comments</a></br>
 
-                    <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg"></i>&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
+                    <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg" alt="Webmention logo">&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
 
                     <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
@@ -143,90 +144,66 @@
                                 <strong>Pre-Release:</strong>
                                 <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
                             {% endif %}
-                            <div class="progress-clear">
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                            <ul class="progress-clear list-unstyled d-flex flex-wrap" aria-label="Draft progress stages" role="list">
+                                <li class="progress-bar-clear"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "notes" or draftstatus == "" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Notes stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
-                                    {% if draftstatus == "unit" or draftstatus == "" %}
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">
+                                    {% if draftstatus == "unit" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Unit stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "integration" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Integration stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "component" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Component stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "system" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">System stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "alpha" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Alpha stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "beta" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Beta stage</span>
                                     {% endif %}
-                                </div>
-                                <div class="progress-bar-clear" role="progressbar" style="width:12.5%">
+                                </li>
+                                <li class="progress-bar-clear"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">
                                     {% if draftstatus == "pre-release" %}
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    {% else %}
-                                        &nbsp;
+                                        <span class="visually-hidden">Pre-release stage</span>
                                     {% endif %}
-                                </div>
-                            </div>                            
-                            <div class="progress">
-                                <div class="progress-bar notes" role="progressbar" style="width:12.5%">
-                                    Notes
-                                </div>
-                                <div class="progress-bar unit" role="progressbar" style="width:12.5%">
-                                    Unit
-                                </div>
-                                <div class="progress-bar integration" role="progressbar" style="width:12.5%">
-                                    Int.
-                                </div>
-                                <div class="progress-bar component" role="progressbar" style="width:12.5%">
-                                    Comp.
-                                </div>
-                                <div class="progress-bar system" role="progressbar" style="width:12.5%">
-                                    System
-                                </div>
-                                <div class="progress-bar alpha" role="progressbar" style="width:12.5%">
-                                    Alpha
-                                </div>
-                                <div class="progress-bar beta" role="progressbar" style="width:12.5%">
-                                    Beta
-                                </div>
-                                <div class="progress-bar prerelease" role="progressbar" style="width:12.5%">
-                                    Pre.
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
+                            <ul class="progress list-unstyled d-flex flex-wrap" aria-label="Draft stage labels" role="list">
+                                <li class="progress-bar notes"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">Notes</li>
+                                <li class="progress-bar unit"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">Unit</li>
+                                <li class="progress-bar integration"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">Int.</li>
+                                <li class="progress-bar component"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">Comp.</li>
+                                <li class="progress-bar system"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">System</li>
+                                <li class="progress-bar alpha"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">Alpha</li>
+                                <li class="progress-bar beta"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">Beta</li>
+                                <li class="progress-bar prerelease"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">Pre.</li>
+                            </ul>
                         </aside>
                         {% endif %}
 
@@ -237,7 +214,7 @@
                     <span class="e-content">{{ content }}</span>
 
                     <hr>
-                </article>
+                </main>
 
                 <!--Next and Previous Articles -->
                 {% include content/next-and-previous.html %}
@@ -268,7 +245,7 @@
                             <h4>Latest in <a href="{{ site.url }}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
                                 <div class="col-lg-12">
-                                    <ul lass="list-unstyled">
+                                    <ul class="list-unstyled">
                                         {% for post in site.categories[category] limit:5 %}
                                         <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
                                         {% endfor %}

@@ -138,6 +138,20 @@ JSON-LD Article / WebSite structured data.
 If it's the homepage treat as WebSite only; else add Article object.
 {%- endcomment -%}
 {% assign is_home = full-page-url == home-page-url %}
+{% assign breadcrumb_position = 1 %}
+{% assign breadcrumb_items = '' %}
+{% if page.categories and page.categories != empty %}
+  {% assign first_cat = page.categories | first %}
+  {% capture breadcrumb_items %}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ first_cat | jsonify }},
+      "item": "{{ site.url }}/category/{{ first_cat | slugify }}"
+    }
+  {% endcapture %}
+  {% assign breadcrumb_position = breadcrumb_position | plus: 1 %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -148,18 +162,34 @@ If it's the homepage treat as WebSite only; else add Article object.
   "description": {{ meta_description | jsonify }},
   "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"}
   {% else %}
-  "@type": "Article",
-  "headline": {{ this_page_title | jsonify }},
-  "description": {{ meta_description | jsonify }},
-  "url": "{{ page.url | relative_url | absolute_url }}",
-  {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
-  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-  {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
-  "author": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
-  "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
-  {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
-  {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
-  "mainEntityOfPage": {"@type":"WebPage","@id":"{{ page.url | relative_url | absolute_url }}"}
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "url": "{{ home-page-url }}",
+      "name": "{{ site.title | escape }}",
+      "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"}
+    },
+    {
+      "@type": "Article",
+      "headline": {{ this_page_title | jsonify }},
+      "description": {{ meta_description | jsonify }},
+      "url": "{{ page.url | relative_url | absolute_url }}",
+      {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
+      {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+      {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
+      "author": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
+      "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
+      {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
+      {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
+      "mainEntityOfPage": {"@type":"WebPage","@id":"{{ page.url | relative_url | absolute_url }}"}
+    }
+    {% if breadcrumb_items != '' %},
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [ {{ breadcrumb_items }} ]
+    }
+    {% endif %}
+  ]
   {% endif %}
 }
 </script>
@@ -184,6 +214,7 @@ If it's the homepage treat as WebSite only; else add Article object.
     <meta name="format-detection"                      content="telephone=no">
 
     <!-- iPhone icons -->
+  <!-- Apple touch icons (all inside head) -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/apple-touch-icon-57x57.webp" />
   <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114x114.webp" />
   <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72x72.webp" />

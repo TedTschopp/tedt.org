@@ -1,0 +1,37 @@
+{%- comment -%}
+  Article / BlogPosting JSON-LD structured data.
+  Included only on individual post pages.
+{%- endcomment -%}
+{%- assign article_image = image_URL | default: page.image | default: site.featured-image -%}
+{%- if article_image and article_image contains 'http' == false -%}
+  {%- assign article_image = site.url | append: '/' | append: article_image | replace: '//', '/' -%}
+{%- endif -%}
+{%- assign publish_date = page.date | date_to_xmlschema -%}
+{%- assign modified_date = page.last_modified_at | default: page.date | date_to_xmlschema -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "headline": {{ page.title | jsonify }},
+  {% if page.subtitle %}"alternativeHeadline": {{ page.subtitle | jsonify }}, {% endif %}
+  "description": {{ page.excerpt | default: page.description | default: page.subtitle | default: page.title | strip_html | strip_newlines | jsonify }},
+  {% if article_image %}"image": [ {{ article_image | jsonify }} ],{% endif %}
+  "datePublished": "{{ publish_date }}",
+  "dateModified": "{{ modified_date }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author.name | default: site.author.name | jsonify }},
+    {% if page.author.url or site.author.url %}"url": {{ page.author.url | default: site.author.url | jsonify }},{% endif %}
+    {% if page.author.avatar or site.author.avatar %}"image": {{ page.author.avatar | default: site.author.avatar | absolute_url | jsonify }}{% endif %}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | default: site.name | jsonify }},
+    {% if site.logo %}"logo": { "@type": "ImageObject", "url": {{ site.logo | absolute_url | jsonify }} }{% endif %}
+  }
+}
+</script>

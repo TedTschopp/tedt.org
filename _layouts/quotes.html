@@ -31,7 +31,8 @@
     {% include assets/scripts.html %}
   </head>
 
-  <body>
+    <body>
+        <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include layout/top-of-body.html %}
 
@@ -43,7 +44,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                <article class="h-entry">
+                <main class="h-entry" role="main">
                     <!-- Title -->
                     <!-- First get the first 7 words of the Content -->
 
@@ -139,7 +140,7 @@
     
 
                     <hr>
-                </article>
+                </main>
 
                 <!--Next and Previous Articles -->
                 {% include content/next-and-previous.html %}
@@ -159,7 +160,7 @@
                             <h4>Latest in <a href="{{ site.url }}/category/{{category|slugize}}">{{category}}</a></h4>
                                 <div class="row">
                                 <div class="col-lg-12">
-                                    <ul lass="list-unstyled">
+                                    <ul class="list-unstyled">
                                         {% for post in site.categories[category] limit:5 %}
                                         <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
                                         {% endfor %}
