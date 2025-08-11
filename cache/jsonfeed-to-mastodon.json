@@ -724,7 +724,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115010188906731164"
+    ],
+    "lastTootTimestamp": 1754916212644
   },
   "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/": {
     "id": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures.md/",
