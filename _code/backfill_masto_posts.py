@@ -187,8 +187,24 @@ def main():
             continue
         to_process.append((path, fm, body))
 
-    # Oldest first for chronological catch-up
-    to_process.sort(key=lambda t: t[1].get('date') or '')
+    # Oldest first for chronological catch-up; normalize date values to ISO strings
+    def _sort_key(item):
+        fm = item[1]
+        val = fm.get('date')
+        if isinstance(val, dt.datetime):  # full datetime -> date component
+            val = val.date()
+        if isinstance(val, dt.date):
+            return val.isoformat()
+        # Attempt to parse string YYYY-MM-DD
+        if isinstance(val, str) and len(val) >= 10:
+            ds = val[:10]
+            try:
+                dt.date.fromisoformat(ds)
+                return ds
+            except ValueError:
+                pass
+        return '9999-12-31'  # unknown/invalid dates sorted last
+    to_process.sort(key=_sort_key)
     if args.limit is not None:
         to_process = to_process[: args.limit]
 
