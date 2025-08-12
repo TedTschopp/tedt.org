@@ -86,7 +86,7 @@ jobs:
       - name: Image Path Audit
         run: |
           ruby tests/check_image_paths.rb || true
-      - name: Image Alt Text Safety
+      - name: Image Alt Text Safety 
         run: |
           ruby tests/check_image_alt_text.rb
       - name: Fail if feed invalid (marker file)
