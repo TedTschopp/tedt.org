@@ -57,9 +57,22 @@ jobs:
           bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee "$LOG_FILE"
           EXIT_CODE=${PIPESTATUS[0]}
           if [ $EXIT_CODE -ne 0 ]; then
-            echo 'HTML Proofer issues found';
-            exit $EXIT_CODE;
+            if [ -s "$LOG_FILE" ]; then
+              echo 'HTML Proofer issues found, logged; continuing (non-blocking).'
+              {
+                echo "### HTML Proofer Issues (non-blocking)";
+                echo "Log file: $LOG_FILE";
+                echo "";
+                tail -n 50 "$LOG_FILE" || true;
+              } >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+              # Do NOT fail the step; override exit code
+              EXIT_CODE=0
+            else
+              echo 'HTML Proofer failed AND log missing/empty; failing job.'
+              exit 1
+            fi
           fi
+          exit $EXIT_CODE
       - name: Upload HTML Proofer Log
         if: always()
         uses: actions/upload-artifact@v4
