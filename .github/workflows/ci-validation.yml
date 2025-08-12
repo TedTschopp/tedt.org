@@ -51,7 +51,7 @@ jobs:
           set -o pipefail
           mkdir -p logs
           TS=$(date -u +"%Y-%m-%dT%H-%M-%S")
-          LOG_FILE="logs/${TS}-HTML-Logging.txt"
+          LOG_FILE="logs/${TS}-HTML Logging.txt"
           echo "Saving HTML Proofer output to $LOG_FILE"
           # Pre-create log with header so -s test will succeed even if tool aborts early (will append later)
           echo "HTML Proofer run at $(date -u --rfc-3339=seconds)" > "$LOG_FILE"
@@ -83,7 +83,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: html-proofer-logs
-          path: logs/*-HTML-Logging.txt
+          path: |
+            logs/*-HTML-Logging.txt
+            logs/*-HTML Logging.txt
+      - name: List HTML Proofer Logs
+        if: always()
+        run: |
+          echo "### Collected HTML Proofer Logs" >> "$GITHUB_STEP_SUMMARY"
+          ls -1 "logs" >> "$GITHUB_STEP_SUMMARY" || echo "(no logs directory)" >> "$GITHUB_STEP_SUMMARY"
       - name: Validate Mastodon Feed
         run: ruby tests/validate_mastodon_feed.rb
       - name: Mastodon toot length stats (informational)
