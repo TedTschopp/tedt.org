@@ -623,7 +623,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115014387522364255"
+    ],
+    "lastTootTimestamp": 1754980278494
   },
   "https://tedt.org/prompts/artistic-Analysis/": {
     "id": "https://tedt.org/prompts/artistic-Analysis/",
