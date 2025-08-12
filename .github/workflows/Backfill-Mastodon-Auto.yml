@@ -1,0 +1,84 @@
+name: Automated Mastodon Backfill
+
+on:
+  schedule:
+    # Run every 2 hours
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      batch_limit:
+        description: Posts to process this run (default 5)
+        required: false
+      delay:
+        description: Seconds delay between posts (5-10)
+        required: false
+      dry_run:
+        description: 'Set to false to actually post'
+        default: 'true'
+        required: true
+
+jobs:
+  auto-backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Determine parameters
+        id: params
+        run: |
+          BATCH=${{ github.event.inputs.batch_limit || '' }}
+          if [ -z "$BATCH" ]; then BATCH=5; fi
+          DELAY=${{ github.event.inputs.delay || '' }}
+          if [ -z "$DELAY" ]; then DELAY=8; fi
+          if [ "$DELAY" -lt 5 ]; then DELAY=5; fi
+          if [ "$DELAY" -gt 10 ]; then DELAY=10; fi
+          echo "batch=$BATCH" >> $GITHUB_OUTPUT
+          echo "delay=$DELAY" >> $GITHUB_OUTPUT
+          echo "dry_run=${{ github.event.inputs.dry_run || 'true' }}" >> $GITHUB_OUTPUT
+      - name: Pre-run audit JSON
+        run: |
+          python3 _code/audit_masto_frontmatter.py --json > audit-before.json
+          cat audit-before.json
+      - name: Parse missing count
+        id: audit
+        run: |
+          MISSING=$(python3 -c "import json,sys;print(json.load(open('audit-before.json'))['missing_count'])")
+          echo "missing=$MISSING" >> $GITHUB_OUTPUT
+          echo "Remaining posts without mastodon-post-id: $MISSING"
+      - name: Skip if nothing to do
+        if: steps.audit.outputs.missing == '0'
+        run: echo "No remaining posts. Exiting."
+      - name: Backfill batch
+        if: steps.audit.outputs.missing != '0'
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          WRITE_FLAG=""
+          if [ "${{ steps.params.outputs.dry_run }}" = "false" ]; then WRITE_FLAG="--write"; fi
+          echo "Processing up to ${{ steps.params.outputs.batch }} posts (delay=${{ steps.params.outputs.delay }}s, dry_run=${{ steps.params.outputs.dry_run }})"
+          python3 _code/backfill_masto_posts.py --limit ${{ steps.params.outputs.batch }} $WRITE_FLAG --rate ${{ steps.params.outputs.delay }}
+      - name: Post-run audit JSON
+        if: steps.audit.outputs.missing != '0'
+        run: |
+          python3 _code/audit_masto_frontmatter.py --json > audit-after.json
+          cat audit-after.json
+      - name: Append history (live only)
+        if: steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false'
+        run: |
+          mkdir -p Logs
+          python3 _code/audit_masto_frontmatter.py --csv Logs/mastodon-missing-after-batch.csv || true
+      - name: Commit batch (live only)
+        if: steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: automated mastodon backfill batch"
+          file_pattern: cache/*.json _posts/**/*.md Logs/*.csv
+      - name: Summary
+        run: |
+          echo "### Mastodon Backfill Automated Run" >> $GITHUB_STEP_SUMMARY
+          echo "Dry run: ${{ steps.params.outputs.dry_run }}" >> $GITHUB_STEP_SUMMARY
+          echo "Batch size: ${{ steps.params.outputs.batch }}" >> $GITHUB_STEP_SUMMARY
+          echo "Delay: ${{ steps.params.outputs.delay }}s" >> $GITHUB_STEP_SUMMARY
+          if [ -f audit-before.json ]; then echo "#### Before" >> $GITHUB_STEP_SUMMARY; cat audit-before.json >> $GITHUB_STEP_SUMMARY; fi
+          if [ -f audit-after.json ]; then echo "#### After" >> $GITHUB_STEP_SUMMARY; cat audit-after.json >> $GITHUB_STEP_SUMMARY; fi
