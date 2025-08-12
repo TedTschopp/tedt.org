@@ -86,12 +86,14 @@
   },
   "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/": {
     "id": "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:15.419Z",
         "id": "115017521261400996",
         "url": "https://tschopp.net/@Ted/115017521261400996"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017521261400996"
     ]
   },
   "/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯/": {
@@ -103,22 +105,26 @@
   },
   "/AI-User-Interfaces-and-Experiences-in-2023/": {
     "id": "/AI-User-Interfaces-and-Experiences-in-2023/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:55.803Z",
         "id": "115017669397965166",
         "url": "https://tschopp.net/@Ted/115017669397965166"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017669397965166"
     ]
   },
   "/AI-in-2024-A-Year-in-Review/": {
     "id": "/AI-in-2024-A-Year-in-Review/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:09.236Z",
         "id": "115017674210477849",
         "url": "https://tschopp.net/@Ted/115017674210477849"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017674210477849"
     ]
   },
   "/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
@@ -160,12 +166,14 @@
   },
   "/Ahmed-ibn-Yusuf/": {
     "id": "/Ahmed-ibn-Yusuf/",
+    "lastTootTimestamp": 1755033068631,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:54.564Z",
         "id": "115017673248894592",
         "url": "https://tschopp.net/@Ted/115017673248894592"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017673248894592"
     ]
   },
   "/Art-of-Innovation/": {
@@ -177,12 +185,14 @@
   },
   "/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
     "id": "/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:45.955Z",
         "id": "115017676616763064",
         "url": "https://tschopp.net/@Ted/115017676616763064"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017676616763064"
     ]
   },
   "/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations/": {
@@ -229,18 +239,21 @@
         "created_at": "2025-08-12T20:29:21.053Z",
         "id": "115017682849175352",
         "url": "https://tschopp.net/@Ted/115017682849175352"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017682849175352"
     ],
     "url": "/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/"
   },
   "/Bridging-the-Uncanny/": {
     "id": "/Bridging-the-Uncanny/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:29.843Z",
         "id": "115017679493139246",
         "url": "https://tschopp.net/@Ted/115017679493139246"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017679493139246"
     ]
   },
   "/Building-a-Lego-Cat/": {
@@ -278,22 +291,26 @@
   },
   "/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/": {
     "id": "/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:41.105Z",
         "id": "115017668434710719",
         "url": "https://tschopp.net/@Ted/115017668434710719"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017668434710719"
     ]
   },
   "/Crafting-Conversations-with-AI/": {
     "id": "/Crafting-Conversations-with-AI/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:37.172Z",
         "id": "115017679973397661",
         "url": "https://tschopp.net/@Ted/115017679973397661"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017679973397661"
     ]
   },
   "/Critique-Content/": {
@@ -328,52 +345,62 @@
   },
   "/Crucial Prompting/": {
     "id": "/Crucial Prompting/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:44.477Z",
         "id": "115017680452230236",
         "url": "https://tschopp.net/@Ted/115017680452230236"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017680452230236"
     ]
   },
   "/Custom-Communicatoin-Styles-in-Copilot/": {
     "id": "/Custom-Communicatoin-Styles-in-Copilot/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:38.552Z",
         "id": "115017676131786071",
         "url": "https://tschopp.net/@Ted/115017676131786071"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017676131786071"
     ]
   },
   "/Custom-Writing-Styles-in-AI/": {
     "id": "/Custom-Writing-Styles-in-AI/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:23.878Z",
         "id": "115017675170052132",
         "url": "https://tschopp.net/@Ted/115017675170052132"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017675170052132"
     ]
   },
   "/Custom-Writing-Styles-in-Copilot/": {
     "id": "/Custom-Writing-Styles-in-Copilot/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:31.195Z",
         "id": "115017675649485702",
         "url": "https://tschopp.net/@Ted/115017675649485702"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017675649485702"
     ]
   },
   "/Details-on-DeepSeek-Step-1-thru-5/": {
     "id": "/Details-on-DeepSeek-Step-1-thru-5/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:07.919Z",
         "id": "115017678056365520",
         "url": "https://tschopp.net/@Ted/115017678056365520"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017678056365520"
     ]
   },
   "/Details-on-the-WINs-Network/": {
@@ -412,42 +439,50 @@
   },
   "/Doing-Religions-Right-in-DCC/": {
     "id": "/Doing-Religions-Right-in-DCC/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:55.630Z",
         "id": "115017535693153105",
         "url": "https://tschopp.net/@Ted/115017535693153105"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017535693153105"
     ]
   },
   "/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/": {
     "id": "/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:33.639Z",
         "id": "115017534251932304",
         "url": "https://tschopp.net/@Ted/115017534251932304"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017534251932304"
     ]
   },
   "/Factions-Ideologies-and-Religions-in-Role-Playing-Games/": {
     "id": "/Factions-Ideologies-and-Religions-in-Role-Playing-Games/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:26.303Z",
         "id": "115017533771213614",
         "url": "https://tschopp.net/@Ted/115017533771213614"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017533771213614"
     ]
   },
   "/From-Chaos-to-Clarity/": {
     "id": "/From-Chaos-to-Clarity/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:51.792Z",
         "id": "115017680931535411",
         "url": "https://tschopp.net/@Ted/115017680931535411"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017680931535411"
     ]
   },
   "/Gamma-World-Terrain/": {
@@ -459,22 +494,26 @@
   },
   "/Getting-an-AI-to-run-your-next-TTRPG/": {
     "id": "/Getting-an-AI-to-run-your-next-TTRPG/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:48.500Z",
         "id": "115017668919305508",
         "url": "https://tschopp.net/@Ted/115017668919305508"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017668919305508"
     ]
   },
   "/Increasing-in-Rank-MCC-with-Archaic-Alliances/": {
     "id": "/Increasing-in-Rank-MCC-with-Archaic-Alliances/",
+    "lastTootTimestamp": 1755033068631,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:18.911Z",
         "id": "115017666980182415",
         "url": "https://tschopp.net/@Ted/115017666980182415"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017666980182415"
     ]
   },
   "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
@@ -512,12 +551,14 @@
   },
   "/Lighting-the-Trail/": {
     "id": "/Lighting-the-Trail/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:29:06.427Z",
         "id": "115017681890709542",
         "url": "https://tschopp.net/@Ted/115017681890709542"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017681890709542"
     ]
   },
   "/MCC-Shaman-Spell/": {
@@ -529,42 +570,50 @@
   },
   "/Mehmet Al-Mansur/": {
     "id": "/Mehmet Al-Mansur/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:47.254Z",
         "id": "115017672769844009",
         "url": "https://tschopp.net/@Ted/115017672769844009"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017672769844009"
     ]
   },
   "/Moonwalking-Through-the-Apocalypse/": {
     "id": "/Moonwalking-Through-the-Apocalypse/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:39.922Z",
         "id": "115017672289348777",
         "url": "https://tschopp.net/@Ted/115017672289348777"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017672289348777"
     ]
   },
   "/Mutations-in-Gamma-World/": {
     "id": "/Mutations-in-Gamma-World/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:52:02.947Z",
         "id": "115017536172669708",
         "url": "https://tschopp.net/@Ted/115017536172669708"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017536172669708"
     ]
   },
   "/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/": {
     "id": "/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/",
+    "lastTootTimestamp": 1755033068631,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:40.975Z",
         "id": "115017534732823490",
         "url": "https://tschopp.net/@Ted/115017534732823490"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017534732823490"
     ]
   },
   "/Numbers-An-Ork-Accountant/": {
@@ -576,22 +625,26 @@
   },
   "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/": {
     "id": "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:26.307Z",
         "id": "115017667464901844",
         "url": "https://tschopp.net/@Ted/115017667464901844"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017667464901844"
     ]
   },
   "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/": {
     "id": "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:48.297Z",
         "id": "115017535212567970",
         "url": "https://tschopp.net/@Ted/115017535212567970"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017535212567970"
     ]
   },
   "/OpenAIs-GPT-OSS-Explained/": {
@@ -629,12 +682,14 @@
   },
   "/Power-Cells-from-Gamma-World-in-MCC-DCC/": {
     "id": "/Power-Cells-from-Gamma-World-in-MCC-DCC/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:11.583Z",
         "id": "115017666499956372",
         "url": "https://tschopp.net/@Ted/115017666499956372"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017666499956372"
     ]
   },
   "/Practical-Hexcrawl-Design-and-Procedures/": {
@@ -665,22 +720,26 @@
   },
   "/Project Stargate Unveiled - OpenAI’s $500 Billion Bet on an AI-Driven Future with a Data Center of Unprecedented Scale/": {
     "id": "/Project Stargate Unveiled - OpenAI’s $500 Billion Bet on an AI-Driven Future with a Data Center of Unprecedented Scale/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:00.578Z",
         "id": "115017677575205659",
         "url": "https://tschopp.net/@Ted/115017677575205659"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017677575205659"
     ]
   },
   "/Reprint-ICBM-by-Hanson-W-Baldwin/": {
     "id": "/Reprint-ICBM-by-Hanson-W-Baldwin/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T20:25:33.701Z",
         "id": "115017667949378301",
         "url": "https://tschopp.net/@Ted/115017667949378301"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017667949378301"
     ]
   },
   "/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
@@ -750,32 +809,38 @@
   },
   "/Rules for Gamma-World-Weapons-in MCC-DCC/": {
     "id": "/Rules for Gamma-World-Weapons-in MCC-DCC/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:52:17.564Z",
         "id": "115017537130688934",
         "url": "https://tschopp.net/@Ted/115017537130688934"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017537130688934"
     ]
   },
   "/Rules-for-Firearms-in-MCC-DCC/": {
     "id": "/Rules-for-Firearms-in-MCC-DCC/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T19:52:10.255Z",
         "id": "115017536651633587",
         "url": "https://tschopp.net/@Ted/115017536651633587"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017536651633587"
     ]
   },
   "/Superagents-The-Next-Big-Leap-in-Technology/": {
     "id": "/Superagents-The-Next-Big-Leap-in-Technology/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:53.263Z",
         "id": "115017677095846821",
         "url": "https://tschopp.net/@Ted/115017677095846821"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017677095846821"
     ]
   },
   "/Swiss-Folklore/:title:output_ext/": {
@@ -798,22 +863,26 @@
   },
   "/The Quiet Revolution/": {
     "id": "/The Quiet Revolution/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:22.535Z",
         "id": "115017679014141903",
         "url": "https://tschopp.net/@Ted/115017679014141903"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017679014141903"
     ]
   },
   "/The-1%-Catalyst-Small-Changes-Big-Impact/": {
     "id": "/The-1%-Catalyst-Small-Changes-Big-Impact/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:15.224Z",
         "id": "115017678535030229",
         "url": "https://tschopp.net/@Ted/115017678535030229"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017678535030229"
     ]
   },
   "/The-Human-Edge/": {
@@ -857,22 +926,26 @@
   },
   "/The-Right-Set-of-Skills/": {
     "id": "/The-Right-Set-of-Skills/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:03.125Z",
         "id": "115017669877782924",
         "url": "https://tschopp.net/@Ted/115017669877782924"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017669877782924"
     ]
   },
   "/The-Salmon-Made-Me-Do-It/": {
     "id": "/The-Salmon-Made-Me-Do-It/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:28:59.120Z",
         "id": "115017681411855831",
         "url": "https://tschopp.net/@Ted/115017681411855831"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017681411855831"
     ]
   },
   "/The-Student-Who-Taught-Herself/": {
@@ -904,322 +977,386 @@
   },
   "/Toot-RPG-Design/": {
     "id": "/Toot-RPG-Design/",
+    "lastTootTimestamp": 1755033068631,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:32.601Z",
         "id": "115017671809563862",
         "url": "https://tschopp.net/@Ted/115017671809563862"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017671809563862"
     ]
   },
   "/Unlocking-Corporate-Learning-with-AI-Simulations/": {
     "id": "/Unlocking-Corporate-Learning-with-AI-Simulations/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:29:13.743Z",
         "id": "115017682370158224",
         "url": "https://tschopp.net/@Ted/115017682370158224"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017682370158224"
     ]
   },
   "/What-AI-in-2024-Means-for-Us-in-2025/": {
     "id": "/What-AI-in-2024-Means-for-Us-in-2025/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:16.548Z",
         "id": "115017674689715289",
         "url": "https://tschopp.net/@Ted/115017674689715289"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017674689715289"
     ]
   },
   "/What-Makes-the-Human/": {
     "id": "/What-Makes-the-Human/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:10.535Z",
         "id": "115017670363496709",
         "url": "https://tschopp.net/@Ted/115017670363496709"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017670363496709"
     ]
   },
   "/What-is-the-Märchen-Engine/": {
     "id": "/What-is-the-Märchen-Engine/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:17.895Z",
         "id": "115017670845770830",
         "url": "https://tschopp.net/@Ted/115017670845770830"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017670845770830"
     ]
   },
   "/You-Have-My-Sword-and-My-Bow-and-My-Axe/": {
     "id": "/You-Have-My-Sword-and-My-Bow-and-My-Axe/",
+    "lastTootTimestamp": 1755033068630,
     "toots": [
       {
         "created_at": "2025-08-12T20:26:25.276Z",
         "id": "115017671329578145",
         "url": "https://tschopp.net/@Ted/115017671329578145"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017671329578145"
     ]
   },
   "/a-beginning/": {
     "id": "/a-beginning/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:00.717Z",
         "id": "115017520297982074",
         "url": "https://tschopp.net/@Ted/115017520297982074"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017520297982074"
     ]
   },
   "/a-little-calend/": {
     "id": "/a-little-calend/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:54.518Z",
         "id": "115017515959514808",
         "url": "https://tschopp.net/@Ted/115017515959514808"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017515959514808"
     ]
   },
   "/a-model-for-collaboration-tools/": {
     "id": "/a-model-for-collaboration-tools/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:20.385Z",
         "id": "115017529451236410",
         "url": "https://tschopp.net/@Ted/115017529451236410"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017529451236410"
     ]
   },
   "/a-new-keyboard/": {
     "id": "/a-new-keyboard/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:42.313Z",
         "id": "115017530888331874",
         "url": "https://tschopp.net/@Ted/115017530888331874"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017530888331874"
     ]
   },
   "/android-is-knotts-berry-farm-as-ios-is-to-disneyland/": {
     "id": "/android-is-knotts-berry-farm-as-ios-is-to-disneyland/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:49.626Z",
         "id": "115017531367589233",
         "url": "https://tschopp.net/@Ted/115017531367589233"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017531367589233"
     ]
   },
   "/books-movies-an/": {
     "id": "/books-movies-an/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:46.065Z",
         "id": "115017519337686597",
         "url": "https://tschopp.net/@Ted/115017519337686597"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017519337686597"
     ]
   },
   "/collaboration-lessons-learned-from-tasmania/": {
     "id": "/collaboration-lessons-learned-from-tasmania/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:35.005Z",
         "id": "115017530409317677",
         "url": "https://tschopp.net/@Ted/115017530409317677"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017530409317677"
     ]
   },
   "/computerized-story-telling/": {
     "id": "/computerized-story-telling/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:30.041Z",
         "id": "115017522219764904",
         "url": "https://tschopp.net/@Ted/115017522219764904"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017522219764904"
     ]
   },
   "/currently-liste/": {
     "id": "/currently-liste/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:25.251Z",
         "id": "115017514041451501",
         "url": "https://tschopp.net/@Ted/115017514041451501"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017514041451501"
     ]
   },
   "/dehydrated/": {
     "id": "/dehydrated/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:51.126Z",
         "id": "115017527533713200",
         "url": "https://tschopp.net/@Ted/115017527533713200"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017527533713200"
     ]
   },
   "/example-of-xmlhttprequest/": {
     "id": "/example-of-xmlhttprequest/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:32.560Z",
         "id": "115017514520460817",
         "url": "https://tschopp.net/@Ted/115017514520460817"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017514520460817"
     ]
   },
   "/fasting-for-len/": {
     "id": "/fasting-for-len/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:29.106Z",
         "id": "115017526090553643",
         "url": "https://tschopp.net/@Ted/115017526090553643"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017526090553643"
     ]
   },
   "/film-snob/": {
     "id": "/film-snob/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:44.970Z",
         "id": "115017523198072838",
         "url": "https://tschopp.net/@Ted/115017523198072838"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017523198072838"
     ]
   },
   "/four-is-the-new-three/": {
     "id": "/four-is-the-new-three/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:13.073Z",
         "id": "115017528971976274",
         "url": "https://tschopp.net/@Ted/115017528971976274"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017528971976274"
     ]
   },
   "/happy-advent/": {
     "id": "/happy-advent/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:17.860Z",
         "id": "115017513557078745",
         "url": "https://tschopp.net/@Ted/115017513557078745"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017513557078745"
     ]
   },
   "/hell-and-christ/": {
     "id": "/hell-and-christ/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:39.883Z",
         "id": "115017515000457930",
         "url": "https://tschopp.net/@Ted/115017515000457930"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017515000457930"
     ]
   },
   "/html5-javascript-version-of-of-windows/": {
     "id": "/html5-javascript-version-of-of-windows/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:11.586Z",
         "id": "115017532806708198",
         "url": "https://tschopp.net/@Ted/115017532806708198"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017532806708198"
     ]
   },
   "/ideas-of-things-i-need-to-think-about-garden-state/": {
     "id": "/ideas-of-things-i-need-to-think-about-garden-state/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:14.468Z",
         "id": "115017525131320024",
         "url": "https://tschopp.net/@Ted/115017525131320024"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017525131320024"
     ]
   },
   "/ideas-to-think-about-life-and-taxes/": {
     "id": "/ideas-to-think-about-life-and-taxes/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:21.779Z",
         "id": "115017525610399181",
         "url": "https://tschopp.net/@Ted/115017525610399181"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017525610399181"
     ]
   },
   "/man-is-a-verbav/": {
     "id": "/man-is-a-verbav/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:38.741Z",
         "id": "115017518857718439",
         "url": "https://tschopp.net/@Ted/115017518857718439"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017518857718439"
     ]
   },
   "/martin-luther-on-beer/": {
     "id": "/martin-luther-on-beer/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:37.366Z",
         "id": "115017522699802057",
         "url": "https://tschopp.net/@Ted/115017522699802057"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017522699802057"
     ]
   },
   "/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/": {
     "id": "/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:09.231Z",
         "id": "115017516923701585",
         "url": "https://tschopp.net/@Ted/115017516923701585"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017516923701585"
     ]
   },
   "/mobile-computing/": {
     "id": "/mobile-computing/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:18.971Z",
         "id": "115017533290733423",
         "url": "https://tschopp.net/@Ted/115017533290733423"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017533290733423"
     ]
   },
   "/more-on-the-fas/": {
     "id": "/more-on-the-fas/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:36.428Z",
         "id": "115017526570423644",
         "url": "https://tschopp.net/@Ted/115017526570423644"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017526570423644"
     ]
   },
   "/one-plus-one-eq/": {
     "id": "/one-plus-one-eq/",
+    "lastTootTimestamp": 1755033068624,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:08.035Z",
         "id": "115017520777589778",
         "url": "https://tschopp.net/@Ted/115017520777589778"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017520777589778"
     ]
   },
   "/playing-it-cool-playing-it-fast/": {
     "id": "/playing-it-cool-playing-it-fast/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:31.351Z",
         "id": "115017518373375822",
         "url": "https://tschopp.net/@Ted/115017518373375822"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017518373375822"
     ]
   },
   "/prompts/ai-tutoring-prompt-designer/": {
@@ -1293,82 +1430,98 @@
   },
   "/putting-first-things-first/": {
     "id": "/putting-first-things-first/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:05.758Z",
         "id": "115017528492588860",
         "url": "https://tschopp.net/@Ted/115017528492588860"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017528492588860"
     ]
   },
   "/rain-in-los-ang/": {
     "id": "/rain-in-los-ang/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:16.544Z",
         "id": "115017517403043715",
         "url": "https://tschopp.net/@Ted/115017517403043715"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017517403043715"
     ]
   },
   "/reprint-whats-actually-inside-a-100-billion-AI-data-center/": {
     "id": "/reprint-whats-actually-inside-a-100-billion-AI-data-center/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T20:27:01.895Z",
         "id": "115017673729319697",
         "url": "https://tschopp.net/@Ted/115017673729319697"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017673729319697"
     ]
   },
   "/sex-gardening-a/": {
     "id": "/sex-gardening-a/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:53.385Z",
         "id": "115017519817384353",
         "url": "https://tschopp.net/@Ted/115017519817384353"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017519817384353"
     ]
   },
   "/shadows-and-sym/": {
     "id": "/shadows-and-sym/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:23.948Z",
         "id": "115017517888250747",
         "url": "https://tschopp.net/@Ted/115017517888250747"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017517888250747"
     ]
   },
   "/step-1-reply-by-chat/": {
     "id": "/step-1-reply-by-chat/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:47:01.848Z",
         "id": "115017516439904758",
         "url": "https://tschopp.net/@Ted/115017516439904758"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017516439904758"
     ]
   },
   "/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/": {
     "id": "/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:07.146Z",
         "id": "115017524651376565",
         "url": "https://tschopp.net/@Ted/115017524651376565"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017524651376565"
     ]
   },
   "/the-component-smart-phone-and-why-it-will-fail/": {
     "id": "/the-component-smart-phone-and-why-it-will-fail/",
+    "lastTootTimestamp": 1755033068628,
     "toots": [
       {
         "created_at": "2025-08-12T19:51:04.255Z",
         "id": "115017532326285566",
         "url": "https://tschopp.net/@Ted/115017532326285566"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017532326285566"
     ]
   },
   "/the-google-browseros/": {
@@ -1380,82 +1533,428 @@
   },
   "/the-path-west/": {
     "id": "/the-path-west/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:46:47.184Z",
         "id": "115017515478931431",
         "url": "https://tschopp.net/@Ted/115017515478931431"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017515478931431"
     ]
   },
   "/the-purpose-of-community-protection-of-the-commons/": {
     "id": "/the-purpose-of-community-protection-of-the-commons/",
+    "lastTootTimestamp": 1755033068626,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:27.690Z",
         "id": "115017529929927411",
         "url": "https://tschopp.net/@Ted/115017529929927411"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017529929927411"
     ]
   },
   "/thoughts-on-corporate-collaboration-tools/": {
     "id": "/thoughts-on-corporate-collaboration-tools/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:58.447Z",
         "id": "115017528013492008",
         "url": "https://tschopp.net/@Ted/115017528013492008"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017528013492008"
     ]
   },
   "/thoughts-on-nar/": {
     "id": "/thoughts-on-nar/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:49:43.784Z",
         "id": "115017527052505070",
         "url": "https://tschopp.net/@Ted/115017527052505070"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017527052505070"
     ]
   },
   "/too-many-feeds/": {
     "id": "/too-many-feeds/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:59.752Z",
         "id": "115017524166887133",
         "url": "https://tschopp.net/@Ted/115017524166887133"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017524166887133"
     ]
   },
   "/user-interfaces-in-2017-2/": {
     "id": "/user-interfaces-in-2017-2/",
+    "lastTootTimestamp": 1755033068625,
     "toots": [
       {
         "created_at": "2025-08-12T19:50:56.945Z",
         "id": "115017531847231875",
         "url": "https://tschopp.net/@Ted/115017531847231875"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017531847231875"
     ]
   },
   "/web-services-we/": {
     "id": "/web-services-we/",
+    "lastTootTimestamp": 1755033068629,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:22.740Z",
         "id": "115017521741298875",
         "url": "https://tschopp.net/@Ted/115017521741298875"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017521741298875"
     ]
   },
   "/what-should-google-buy/": {
     "id": "/what-should-google-buy/",
+    "lastTootTimestamp": 1755033068627,
     "toots": [
       {
         "created_at": "2025-08-12T19:48:52.348Z",
         "id": "115017523681590098",
         "url": "https://tschopp.net/@Ted/115017523681590098"
-      }
+      },
+      "https://tschopp.net/users/Ted/statuses/115017523681590098"
     ]
+  },
+  "https://tedt.org/The-Mentor-In-The-Machine/": {
+    "id": "/The-Mentor-In-The-Machine/",
+    "title": "The Mentor in the Machine",
+    "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
+    "content_text": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike. https://tedt.org/The-Mentor-In-The-Machine/",
+    "url": "https://tedt.org/The-Mentor-In-The-Machine/",
+    "image": "https://tedt.org/img/AI/Night-Routine.webp",
+    "tags": [
+      "ChatGPT5",
+      "GPT-5",
+      "AI",
+      "Utilities",
+      "Field Service",
+      "Knowledge Management",
+      "Enterprise",
+      "Productivity"
+    ],
+    "date_published": "2025-08-10T00:00:00-07:00",
+    "date_modified": "2025-08-10T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115017847250965410"
+    ],
+    "lastTootTimestamp": 1755033069728
+  },
+  "https://tedt.org/OpenAIs-GPT-OSS-Explained/": {
+    "id": "/OpenAIs-GPT-OSS-Explained/",
+    "title": "Practical On-Prem AI: What OpenAI’s GPT-OSS 20B & 120B Mean for Utilities",
+    "summary": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers.",
+    "content_text": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers. https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+    "url": "https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+    "image": "https://tedt.org/img/AI/OSS.webp",
+    "tags": [
+      "openai",
+      "gpt-oss",
+      "open-weight",
+      "mixture-of-experts",
+      "reasoning",
+      "chain-of-thought",
+      "utilities",
+      "on-prem",
+      "safety",
+      "preparedness-framework",
+      "agentic-tool-use"
+    ],
+    "date_published": "2025-08-10T00:00:00-07:00",
+    "date_modified": "2025-08-10T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/": {
+    "id": "/Practical-Hexcrawl-Design-and-Procedures/",
+    "title": "Draft - Practical Hexcrawl Design and Procedures",
+    "summary": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.",
+    "content_text": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep. https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/",
+    "url": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/",
+    "image": "https://tedt.org/img/2025-08/hex-map-seeded-frontier.webp",
+    "tags": [
+      "hexcrawl",
+      "wilderness",
+      "procedures",
+      "emergent play",
+      "mapping"
+    ],
+    "date_published": "2025-08-07T02:00:00-07:00",
+    "date_modified": "2025-08-07T02:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Building-a-Lego-Cat/": {
+    "id": "/Building-a-Lego-Cat/",
+    "title": "Building a Lego Cat",
+    "summary": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change.",
+    "content_text": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change. https://tedt.org/Building-a-Lego-Cat/",
+    "url": "https://tedt.org/Building-a-Lego-Cat/",
+    "image": "https://tedt.org/img/AI/Hannah-with-a-cat-no-title.webp",
+    "tags": [
+      "artificial intelligence",
+      "organizational change",
+      "workforce management",
+      "human skills",
+      "digital transformation",
+      "experiential learning",
+      "Joseph Fuller",
+      "Ronnie Chatterji",
+      "talent strategy",
+      "leadership development"
+    ],
+    "date_published": "2025-08-03T00:00:00-07:00",
+    "date_modified": "2025-08-03T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Academic-Critique-Content/": {
+    "id": "/Academic-Critique-Content/",
+    "title": "Academic Content Critique Template",
+    "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
+    "content_text": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Academic-Critique-Content/",
+    "url": "https://tedt.org/Academic-Critique-Content/",
+    "image": "https://tedt.org//img/prompts/academic-critique-template.png",
+    "tags": [
+      "Academic Writing",
+      "Critique",
+      "Analysis",
+      "Evaluation",
+      "Research",
+      "Scholarly Writing",
+      "Peer Review",
+      "Assessment"
+    ],
+    "date_published": "2025-08-01T00:00:00-07:00",
+    "date_modified": "2025-08-01T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/prompts/midjourney-v7-prompt-template/": {
+    "id": "/prompts/midjourney-v7-prompt-template/",
+    "title": "Midjourney Version 7 Prompt Generator Template",
+    "summary": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this tem…",
+    "content_text": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailo… https://tedt.org/prompts/midjourney-v7-prompt-template/",
+    "url": "https://tedt.org/prompts/midjourney-v7-prompt-template/",
+    "image": "https://tedt.org//img/prompts/Image-Prompt-Engineering.png",
+    "tags": [
+      "Midjourney",
+      "Image Generation"
+    ],
+    "date_published": "2025-07-25T00:00:00-07:00",
+    "date_modified": "2025-07-25T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Rooted-In-Resilience/": {
+    "id": "/Rooted-In-Resilience/",
+    "title": "Rooted in Resilience",
+    "summary": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.",
+    "content_text": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. https://tedt.org/Rooted-In-Resilience/",
+    "url": "https://tedt.org/Rooted-In-Resilience/",
+    "image": "https://tedt.org/img/AI/Rooted-in-Resilience.webp",
+    "tags": [
+      "artificial intelligence",
+      "enterprise software",
+      "SaaS transformation",
+      "utility companies",
+      "digital transformation",
+      "Sam Altman",
+      "OpenAI",
+      "just-in-time software",
+      "business strategy",
+      "technology leadership"
+    ],
+    "date_published": "2025-06-29T00:00:00-07:00",
+    "date_modified": "2025-06-29T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
+    "id": "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "title": "Learning by Doing",
+    "summary": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation.",
+    "content_text": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation. https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "url": "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "image": "https://tedt.org/img/AI/Learning-by-Doing.webp",
+    "tags": [
+      "artificial intelligence",
+      "learning methodology",
+      "workplace training",
+      "scouting",
+      "AI integration",
+      "human-AI partnership",
+      "professional development",
+      "adaptive learning",
+      "Father's Day",
+      "BSA Scout camp",
+      "employee training",
+      "Fortune magazine"
+    ],
+    "date_published": "2025-06-15T00:00:00-07:00",
+    "date_modified": "2025-06-15T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
+    "id": "/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "title": "Riding the AI Wave",
+    "summary": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed.",
+    "content_text": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed. https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "url": "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "image": "https://tedt.org/img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp",
+    "tags": [
+      "Mary Meeker",
+      "AI trends",
+      "ChatGPT adoption",
+      "workplace transformation",
+      "artificial intelligence",
+      "tech investment",
+      "employee adaptation",
+      "camping metaphor",
+      "father-son",
+      "AI agents",
+      "digital transformation",
+      "venture capital",
+      "Queen of the Internet"
+    ],
+    "date_published": "2025-06-01T00:00:00-07:00",
+    "date_modified": "2025-06-01T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Details-on-the-WINs-Network/": {
+    "id": "/Details-on-the-WINs-Network/",
+    "title": "Details on the WINs Network",
+    "summary": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization.",
+    "content_text": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization. https://tedt.org/Details-on-the-WINs-Network/",
+    "url": "https://tedt.org/Details-on-the-WINs-Network/",
+    "image": "https://tedt.org/img/AI/WINS-4-Quandrents.webp",
+    "tags": [
+      "WINS framework",
+      "AI strategy",
+      "workflow analysis",
+      "digital transformation",
+      "AI adoption",
+      "utility industry",
+      "automation",
+      "business strategy",
+      "ROI analysis",
+      "organizational change",
+      "generative AI",
+      "process optimization",
+      "workforce planning"
+    ],
+    "date_published": "2025-05-25T00:00:00-07:00",
+    "date_modified": "2025-05-25T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/": {
+    "id": "/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
+    "title": "Beyond the Boundaries: Leading in a Post-AI Era",
+    "summary": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom.",
+    "content_text": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom. https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
+    "url": "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
+    "image": "https://tedt.org/img/AI/Beyond-the-Boundries.webp",
+    "tags": [
+      "post-AI leadership",
+      "WINS framework",
+      "AI convergence",
+      "human empathy",
+      "leadership philosophy",
+      "modality boundaries",
+      "Hawaii reflection",
+      "family moments",
+      "human connection",
+      "AI transformation",
+      "enterprise AI",
+      "customer service",
+      "regulatory compliance",
+      "human values",
+      "wisdom leadership"
+    ],
+    "date_published": "2025-05-18T00:00:00-07:00",
+    "date_modified": "2025-05-18T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/The-Student-Who-Taught-Herself/": {
+    "id": "/The-Student-Who-Taught-Herself/",
+    "title": "The Student Who Taught Herself",
+    "summary": "A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again.",
+    "content_text": "A quiet moment watching my daughter struggle through a math problem opened a window into the future of AI—one where machines teach themselves by doing, failing, and trying again. https://tedt.org/The-Student-Who-Taught-Herself/",
+    "url": "https://tedt.org/The-Student-Who-Taught-Herself/",
+    "image": "https://tedt.org//img/2025-05/Hannah%20Doing%20Math.webp",
+    "tags": [
+      "AZR",
+      "AI Education",
+      "Self-Taught Learning",
+      "Reinforcement Learning",
+      "Human-Machine Reflection"
+    ],
+    "date_published": "2025-05-11T00:00:00-07:00",
+    "date_modified": "2025-05-11T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
