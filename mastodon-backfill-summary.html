@@ -1,0 +1,61 @@
+---
+layout: page
+title: Mastodon Backfill Summary
+permalink: /mastodon-backfill-summary/
+---
+
+<h1>Mastodon Backfill Summary</h1>
+<p>This page renders a live summary derived from the history data file. For the raw markdown log (as committed by live runs) see <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>.</p>
+{% include utility/masto-backfill-badge.html %}
+{%- assign history = site.data.masto_backfill_history | default: [] -%}
+{%- if history.size == 0 -%}
+<p>No history recorded yet.</p>
+{%- else -%}
+{%- assign first = history.first -%}
+{%- assign last = history.last -%}
+{%- assign initial_missing = first.missing_before | plus: 0 -%}
+{%- assign current_missing = last.missing_after | plus: 0 -%}
+{%- assign processed_total = initial_missing | minus: current_missing -%}
+{%- assign total_runs = history.size -%}
+{%- assign total_processed_field = 0 -%}
+{%- for r in history -%}
+  {%- assign total_processed_field = total_processed_field | plus: r.processed | plus: 0 -%}
+{%- endfor -%}
+{%- if initial_missing > 0 -%}
+  {%- assign pct_overall = processed_total | times: 100 | divided_by: initial_missing -%}
+{%- else -%}
+  {%- assign pct_overall = 0 -%}
+{%- endif -%}
+<ul>
+  <li>Last run (UTC): {{ last.timestamp }} (dry_run={{ last.dry_run }}, processed={{ last.processed }})</li>
+  <li>Total runs: {{ total_runs }}</li>
+  <li>Initial missing: {{ initial_missing }}</li>
+  <li>Current missing: {{ current_missing }}</li>
+  <li>Total processed (live runs): {{ processed_total }}</li>
+  <li>Aggregate processed reported: {{ total_processed_field }}</li>
+  <li>Completion: {{ processed_total }}/{{ initial_missing }} ({{ pct_overall }}%)</li>
+</ul>
+<h2>Recent Runs</h2>
+{%- assign start_index = history.size | minus: 5 -%}
+{%- if start_index < 0 -%}{%- assign start_index = 0 -%}{%- endif -%}
+<table>
+  <thead>
+    <tr><th>Timestamp</th><th>Dry</th><th>Delay</th><th>Limit</th><th>Since</th><th>Missing Before</th><th>Missing After</th><th>Processed</th></tr>
+  </thead>
+  <tbody>
+  {%- for i in (start_index..history.size | minus: 1) -%}
+    {%- assign r = history[i] -%}
+    <tr>
+      <td>{{ r.timestamp }}</td>
+      <td>{{ r.dry_run }}</td>
+      <td>{{ r.delay }}</td>
+      <td>{{ r.limit }}</td>
+      <td>{{ r.since }}</td>
+      <td>{{ r.missing_before }}</td>
+      <td>{{ r.missing_after }}</td>
+      <td>{{ r.processed }}</td>
+    </tr>
+  {%- endfor -%}
+  </tbody>
+</table>
+{%- endif -%}

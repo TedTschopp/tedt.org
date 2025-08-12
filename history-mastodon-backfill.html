@@ -6,6 +6,9 @@ permalink: /mastodon-backfill-history/
 
 <h1>Mastodon Backfill History</h1>
 <p>This page renders the accumulated backfill run history. Only live (non-dry-run) runs reduce the missing count.</p>
+<p>Machine-readable snapshot: <a href="/mastodon-backfill-progress.json">/mastodon-backfill-progress.json</a></p>
+<p>Summary view: <a href="/mastodon-backfill-summary/">/mastodon-backfill-summary/</a> | Raw markdown: <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a></p>
+{% include utility/masto-backfill-badge.html %}
 
 {% assign history = site.data.masto_backfill_history | default: [] %}
 {% if history.size == 0 %}
@@ -50,6 +53,45 @@ permalink: /mastodon-backfill-history/
   {% endfor %}
   </tbody>
 </table>
+
+<noscript><p>(Full table shown. Enable JavaScript for pagination.)</p></noscript>
+<div id="history-pagination" aria-label="Backfill history pagination" class="pagination" data-page-size="50"></div>
+<script>
+(function(){
+  const table = document.querySelector('table');
+  if(!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const pagerContainer = document.getElementById('history-pagination');
+  if(!pagerContainer) return;
+  const pageSize = parseInt(pagerContainer.getAttribute('data-page-size')||'50',10);
+  if(rows.length <= pageSize) return; // No need
+  let current = 0;
+  function render(){
+    rows.forEach((r,i)=>{ r.style.display = (i >= current*pageSize && i < (current+1)*pageSize) ? '' : 'none'; });
+    buildPager();
+  }
+  function buildPager(){
+    const totalPages = Math.ceil(rows.length / pageSize);
+    pagerContainer.innerHTML='';
+    function btn(label, target, disabled){
+      const b=document.createElement('button');
+      b.textContent=label; b.type='button'; b.disabled=!!disabled; b.addEventListener('click',()=>{current=target; render();});
+      pagerContainer.appendChild(b);
+    }
+    btn('⟨ Prev', Math.max(0,current-1), current===0);
+    for(let i=0;i<totalPages;i++){
+      const b=document.createElement('button');
+      b.type='button'; b.textContent=(i+1);
+      if(i===current) b.setAttribute('aria-current','page');
+      b.addEventListener('click',()=>{current=i; render();});
+      pagerContainer.appendChild(b);
+    }
+    btn('Next ⟩', Math.min(totalPages-1,current+1), current===totalPages-1);
+  }
+  render();
+})();
+</script>
 
 <h2>Summary</h2>
 {% assign last = history.last %}

@@ -1,0 +1,21 @@
+{%- comment -%}
+Mastodon backfill progress badge.
+Usage: {% include utility/masto-backfill-badge.html %}
+Relies on site.data.masto_backfill_history (array) produced by workflow.
+{%- endcomment -%}
+{%- assign history = site.data.masto_backfill_history | default: [] -%}
+{%- if history.size > 0 -%}
+  {%- assign first = history.first -%}
+  {%- assign last = history.last -%}
+  {%- assign initial_missing = first.missing_before | plus: 0 -%}
+  {%- assign current_missing = last.missing_after | plus: 0 -%}
+  {%- assign processed_total = initial_missing | minus: current_missing -%}
+  {%- if initial_missing > 0 -%}
+    {%- assign pct_overall = processed_total | times: 100 | divided_by: initial_missing -%}
+  {%- else -%}
+    {%- assign pct_overall = 0 -%}
+  {%- endif -%}
+  <span class="badge" title="Backfill completion {{ processed_total }}/{{ initial_missing }} posts">Backfill: {{ pct_overall }}%</span>
+{%- else -%}
+  <span class="badge" title="No backfill history yet">Backfill: n/a</span>
+{%- endif -%}

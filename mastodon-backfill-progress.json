@@ -1,0 +1,50 @@
+---
+layout: null
+permalink: /mastodon-backfill-progress.json
+---
+{%- assign history = site.data.masto_backfill_history | default: [] -%}
+{%- if history.size == 0 -%}
+{
+  "has_history": false,
+  "runs": 0,
+  "initial_missing": 0,
+  "current_missing": 0,
+  "total_processed": 0,
+  "completion_percent": 0
+  ,
+    "last_updated": "{{ site.time | date_to_xmlschema }}"
+}
+{%- else -%}
+{%- assign first = history.first -%}
+{%- assign last = history.last -%}
+{%- assign initial_missing = first.missing_before | plus: 0 -%}
+{%- assign current_missing = last.missing_after | plus: 0 -%}
+{%- assign processed_total = initial_missing | minus: current_missing -%}
+{%- if initial_missing > 0 -%}
+  {%- assign pct_overall = processed_total | times: 100 | divided_by: initial_missing -%}
+{%- else -%}
+  {%- assign pct_overall = 0 -%}
+{%- endif -%}
+{
+  "has_history": true,
+  "runs": {{ history.size }},
+  "initial_missing": {{ initial_missing }},
+  "current_missing": {{ current_missing }},
+  "total_processed": {{ processed_total }},
+  "completion_percent": {{ pct_overall }},
+  "last_updated": "{{ site.time | date_to_xmlschema }}",
+  "last_run": {
+    "timestamp": "{{ last.timestamp }}",
+    "run_id": "{{ last.run_id }}",
+    "run_number": "{{ last.run_number }}",
+    "commit_sha": "{{ last.commit_sha }}",
+    "dry_run": "{{ last.dry_run }}",
+    "delay": "{{ last.delay }}",
+    "limit": "{{ last.limit }}",
+    "since": "{{ last.since }}",
+    "missing_before": {{ last.missing_before | plus: 0 }},
+    "missing_after": {{ last.missing_after | plus: 0 }},
+    "processed": {{ last.processed | plus: 0 }}
+  }
+}
+{%- endif -%}
