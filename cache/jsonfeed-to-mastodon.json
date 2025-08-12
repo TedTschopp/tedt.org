@@ -938,5 +938,47 @@
       "https://tschopp.net/users/Ted/statuses/115011492237667959"
     ],
     "lastTootTimestamp": 1754936099914
+  },
+  "https://tedt.org/2025-07-25-Midjounrey-Prompt.7/": {
+    "id": "https://tedt.org/2025-07-25-Midjounrey-Prompt.7/",
+    "title": null,
+    "summary": "",
+    "content_text": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailo… https://tedt.org/2025-07-25-Midjounrey-Prompt.7/",
+    "url": "https://tedt.org/2025-07-25-Midjounrey-Prompt.7/",
+    "date_published": "2025-08-11T16:41:27-07:00",
+    "date_modified": "2025-08-11T16:41:27-07:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/",
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "givenname": "Ted",
+      "familyname": "Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
+      "biography": [
+        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
+        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
+        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
+      ],
+      "email": "ted@tschopp.org",
+      "phonenumber": null,
+      "keybaseio_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "github_username": "TedTschopp",
+      "linkedin_username": "tedtschopp",
+      "facebook_username": "ted.tschopp",
+      "google_username": "TedTschopp",
+      "youtube_username": "TedTschopp",
+      "pinterest_username": "TedTschopp",
+      "reddit_username": "tedtschopp",
+      "instagram_username": "tedtschopp",
+      "quora_username": "Ted-Tschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "mastodon_username": "TedT@twit.social",
+      "threads_username": "tedtschopp"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115013238776831038"
+    ],
+    "lastTootTimestamp": 1754962749978
   }
 }
