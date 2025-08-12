@@ -57,8 +57,6 @@ layout: null
     {%- endif -%}
     {
       "id": "{{ canonical_path }}",
-      "_canonical_url": "{{ canonical_url }}",
-      "_canonical_path": "{{ canonical_path }}",
       "title": {{ post.title | jsonify }},
       {% if post.SEO-description %}
       "summary": {{ post.SEO-description | jsonify }},

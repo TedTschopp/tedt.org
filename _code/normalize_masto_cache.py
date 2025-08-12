@@ -106,6 +106,7 @@ def parse_front_matter(path: pathlib.Path):
         return None, None, None
 
 def main():
+    dry_run = os.environ.get('DRY_RUN','').lower() in ('1','true','yes')
     original = load_cache()
     merged: dict[str, dict] = {}
 
@@ -131,8 +132,11 @@ def main():
                 merged[norm]['toots'].append(toot_url)
             merged[norm].setdefault('lastTootTimestamp', epoch_ms())
 
+    # Optional cleanup: drop keys that looked like raw .md exposures (already normalized into merged)
+    legacy_md_keys = [k for k in original.keys() if k.endswith('.md') or '.md/' in k]
+
     new_keys = set(merged.keys())
-    old_norm_keys = {normalize_path(k) for k in original.keys()}
+    old_norm_keys = {normalize_path(k) for k in original.keys() if k not in legacy_md_keys}
     changed = new_keys != old_norm_keys
     if not changed:
         for k in new_keys:
@@ -143,18 +147,23 @@ def main():
                 break
 
     if changed:
-        tmp = CACHE_FILE.with_suffix('.tmp')
-        with tmp.open('w', encoding='utf-8') as f:
-            json.dump(merged, f, indent=2, ensure_ascii=False, sort_keys=True)
-            f.write('\n')
-        tmp.replace(CACHE_FILE)
-        FLAG_FILE.write_text('normalized\n', encoding='utf-8')
-        print(f"Normalized cache written. Entries: {len(merged)} (was {len(original)})")
+        if dry_run:
+            print(f"[DRY-RUN] Would write normalized cache. Entries: {len(merged)} (was {len(original)})")
+        else:
+            tmp = CACHE_FILE.with_suffix('.tmp')
+            with tmp.open('w', encoding='utf-8') as f:
+                json.dump(merged, f, indent=2, ensure_ascii=False, sort_keys=True)
+                f.write('\n')
+            tmp.replace(CACHE_FILE)
+            FLAG_FILE.write_text('normalized\n', encoding='utf-8')
+            print(f"Normalized cache written. Entries: {len(merged)} (was {len(original)})")
+            if legacy_md_keys:
+                print(f"Removed legacy .md variant keys: {len(legacy_md_keys)}")
     else:
         print("Cache already normalized; no changes written.")
 
     gha_out = os.environ.get('GITHUB_OUTPUT')
-    if gha_out:
+    if gha_out and not dry_run:
         with open(gha_out, 'a', encoding='utf-8') as f:
             f.write(f"ignore_first_run={'true' if changed else 'false'}\n")
 

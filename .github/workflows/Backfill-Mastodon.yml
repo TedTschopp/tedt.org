@@ -1,0 +1,105 @@
+name: One-Off Mastodon Backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: Only process posts dated on/after (YYYY-MM-DD)
+        required: false
+      limit:
+        description: Max number of posts to backfill this run
+        required: false
+      delay:
+        description: Seconds delay between posts (5-10 recommended)
+        default: '8'
+        required: true
+      dry_run:
+        description: Set to 'false' to actually post (defaults true)
+        default: 'true'
+        required: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate pre-backfill audit CSV
+        run: |
+          mkdir -p Logs
+          python3 _code/audit_masto_frontmatter.py --csv Logs/mastodon-missing-before.csv || true
+      - name: Show parameters
+        run: |
+          echo "since=${{ github.event.inputs.since }}"
+          echo "limit=${{ github.event.inputs.limit }}"
+          echo "delay=${{ github.event.inputs.delay }}"
+          echo "dry_run=${{ github.event.inputs.dry_run }}"
+      - name: Run backfill (dry-run or live)
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          ARGS=""
+          [ -n "${{ github.event.inputs.since }}" ] && ARGS="$ARGS --since ${{ github.event.inputs.since }}"
+          [ -n "${{ github.event.inputs.limit }}" ] && ARGS="$ARGS --limit ${{ github.event.inputs.limit }}"
+          DELAY=${{ github.event.inputs.delay }}
+          # Constrain delay to 5-10 seconds
+          if [ "$DELAY" -lt 5 ]; then DELAY=5; fi
+          if [ "$DELAY" -gt 10 ]; then DELAY=10; fi
+          if [ "${{ github.event.inputs.dry_run }}" = "false" ]; then WRITE_FLAG="--write"; else WRITE_FLAG=""; fi
+          echo "Executing: python3 _code/backfill_masto_posts.py $ARGS $WRITE_FLAG --rate $DELAY"
+          python3 _code/backfill_masto_posts.py $ARGS $WRITE_FLAG --rate $DELAY
+      - name: Generate post-backfill audit CSV
+        run: |
+          python3 _code/audit_masto_frontmatter.py --csv Logs/mastodon-missing-after.csv || true
+      - name: Append aggregate history log
+        run: |
+          set -e
+          HISTORY=Logs/mastodon-backfill-history.csv
+          BEFORE_CSV=Logs/mastodon-missing-before.csv
+          AFTER_CSV=Logs/mastodon-missing-after.csv
+          # Calculate missing counts (subtract header if file exists)
+          missing_before=0
+          missing_after=0
+          if [ -f "$BEFORE_CSV" ]; then
+            lines=$(wc -l < "$BEFORE_CSV" | tr -d ' ')
+            [ "$lines" -gt 0 ] && missing_before=$((lines-1))
+          fi
+          if [ -f "$AFTER_CSV" ]; then
+            lines=$(wc -l < "$AFTER_CSV" | tr -d ' ')
+            [ "$lines" -gt 0 ] && missing_after=$((lines-1))
+          fi
+          processed=0
+          if [ "${{ github.event.inputs.dry_run }}" = "false" ]; then
+            processed=$(( missing_before - missing_after ))
+            if [ $processed -lt 0 ]; then processed=0; fi
+          fi
+          timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          run_id=${{ github.run_id }}
+            run_num=${{ github.run_number }}
+          since_input=${{ github.event.inputs.since || '""' }}
+          limit_input=${{ github.event.inputs.limit || '""' }}
+          delay_input=${{ github.event.inputs.delay }}
+          dry_run_flag=${{ github.event.inputs.dry_run }}
+          sha=${{ github.sha }}
+          # Write header if new
+          if [ ! -f "$HISTORY" ]; then
+            echo "timestamp,run_id,run_number,commit_sha,dry_run,delay,limit,since,missing_before,missing_after,processed" > "$HISTORY"
+          fi
+          echo "$timestamp,$run_id,$run_num,$sha,$dry_run_flag,$delay_input,$limit_input,$since_input,$missing_before,$missing_after,$processed" >> "$HISTORY"
+          echo "Appended history entry (missing_before=$missing_before missing_after=$missing_after processed=$processed)"
+      - name: Convert history to _data JSON for site
+        run: python3 _code/masto_history_to_data.py || true
+      - name: Generate rolling markdown summary
+        run: python3 _code/masto_history_summary.py || true
+      - name: Upload audit CSV artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mastodon-audit-${{ github.run_id }}
+          path: Logs/*.csv
+      - name: Commit updates (only if live)
+        if: github.event.inputs.dry_run == 'false'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: backfill mastodon-post-id (batch)"
+          file_pattern: cache/*.json _posts/**/*.md Logs/*.csv Logs/*.md _data/masto_backfill_history.json

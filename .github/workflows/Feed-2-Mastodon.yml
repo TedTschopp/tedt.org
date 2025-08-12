@@ -38,14 +38,42 @@ jobs:
           globalDelayToots: 60
           delayTootsSameItem: 2880
 
-      - name: Commit and push cache
+      - name: Resolve canonical path for toot
+        if: steps.feed2mastodon.outputs.tootUrl
+        id: resolve-canonical
+        env:
+          TOOT_URL: ${{ steps.feed2mastodon.outputs.tootUrl }}
+        run: |
+          python3 _code/resolve_canonical_path.py > /dev/null || true
+
+      - name: Update mastodon-post-id in source markdown
+        if: steps.feed2mastodon.outputs.tootUrl
+        id: update-frontmatter
+        env:
+          TOOT_URL: ${{ steps.feed2mastodon.outputs.tootUrl }}
+          ITEM_URL: ''
+          ITEM_ID: ${{ steps.resolve-canonical.outputs.CANONICAL_PATH || '' }}
+        run: |
+          python3 _code/update_masto_frontmatter.py || true
+
+      - name: Commit and push cache & updated post
         if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update Mastodon cache"
-          file_pattern: cache/*.json
+          commit_message: "chore: update Mastodon cache & post front matter"
+          file_pattern: cache/*.json _posts/**/*.md
 
       - name: Show toot URL
         if: steps.feed2mastodon.outputs.tootUrl
         run: |
           echo "Toot created: ${{ steps.feed2mastodon.outputs.tootUrl }}"
+
+  scripts-test:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'schedule' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run script sanity tests
+        run: |
+          python3 tests/_code/test_scripts.py

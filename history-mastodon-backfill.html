@@ -1,0 +1,69 @@
+---
+layout: page
+title: Mastodon Backfill History
+permalink: /mastodon-backfill-history/
+---
+
+<h1>Mastodon Backfill History</h1>
+<p>This page renders the accumulated backfill run history. Only live (non-dry-run) runs reduce the missing count.</p>
+
+{% assign history = site.data.masto_backfill_history | default: [] %}
+{% if history.size == 0 %}
+<p>No history recorded yet.</p>
+{% else %}
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp (UTC)</th>
+      <th>Run ID</th>
+      <th>Dry Run</th>
+      <th>Delay</th>
+      <th>Limit</th>
+      <th>Since</th>
+      <th>Missing Before</th>
+      <th>Missing After</th>
+      <th>Processed</th>
+      <th>Completion %</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign initial_missing = history.first.missing_before | plus: 0 %}
+  {% for row in history %}
+    {% assign processed_total = initial_missing | minus: row.missing_after %}
+    {% if initial_missing > 0 %}
+      {% assign pct = processed_total | times: 100 | divided_by: initial_missing %}
+    {% else %}
+      {% assign pct = 0 %}
+    {% endif %}
+    <tr>
+      <td>{{ row.timestamp }}</td>
+      <td>{{ row.run_id }}</td>
+      <td>{{ row.dry_run }}</td>
+      <td>{{ row.delay }}</td>
+      <td>{{ row.limit }}</td>
+      <td>{{ row.since }}</td>
+      <td>{{ row.missing_before }}</td>
+      <td>{{ row.missing_after }}</td>
+      <td>{{ row.processed }}</td>
+      <td>{{ pct }}%</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>Summary</h2>
+{% assign last = history.last %}
+{% assign current_missing = last.missing_after | plus: 0 %}
+{% assign processed_total = initial_missing | minus: current_missing %}
+{% if initial_missing > 0 %}
+  {% assign pct_overall = processed_total | times: 100 | divided_by: initial_missing %}
+{% else %}
+  {% assign pct_overall = 0 %}
+{% endif %}
+<ul>
+  <li>Initial missing: {{ initial_missing }}</li>
+  <li>Current missing: {{ current_missing }}</li>
+  <li>Total processed: {{ processed_total }}</li>
+  <li>Completion: {{ processed_total }}/{{ initial_missing }} ({{ pct_overall }}%)</li>
+</ul>
+{% endif %}
