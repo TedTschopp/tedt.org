@@ -34,12 +34,14 @@ layout: null
     {%- if canonical_path contains '://' -%}
       {%- assign canonical_path = canonical_path | replace: site.url, '' -%}
     {%- endif -%}
-    {%- if canonical_path endswith '.md' -%}
+  {%- assign last_three = canonical_path | slice: -3, 3 -%}
+    {%- if last_three == '.md' -%}
       {%- assign canonical_path = canonical_path | replace: '.md', '' -%}
     {%- endif -%}
-    {%- unless canonical_path endswith '/' -%}
+  {%- assign last_char = canonical_path | slice: -1, 1 -%}
+    {%- if last_char != '/' -%}
       {%- assign canonical_path = canonical_path | append: '/' -%}
-    {%- endunless -%}
+    {%- endif -%}
     {%- capture raw_excerpt -%}{{ post.excerpt | default: post.content | strip_html | strip_newlines }}{%- endcapture -%}
     {%- assign url_len = canonical_url | size -%}
   {%- assign max_total = 480 -%}{% comment %} headroom under 500 for safety {% endcomment %}

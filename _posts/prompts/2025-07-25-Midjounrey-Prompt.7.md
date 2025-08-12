@@ -10,7 +10,8 @@ categories:
 tags:
 - Midjourney
 - Image Generation
-mastodon-post-id: null
+## NOTE: mastodon-post-id initial placeholder removed; actual id appears later.
+## (Removed original 'mastodon-post-id: null')
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
@@ -30,7 +31,7 @@ models-supported:
 - 04-mini-high
 - microsoft-copilot
 - github
-prompt_content:|-
+prompt_content: |-
   Developer: # Role and Objective
   - Create structured text prompts for Midjourney Version 7 image generation, strictly following the specified format and integrating detailed scene, style, and parameter specifications.
 
