@@ -40,6 +40,7 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
+mastodon-post-id: '115017516923701585'
 ---
 Microsoft tonight [announced a new partnership](http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx) with [Creative Commons](http://creativecommons.org/), the organization dedicated to providing content producers a legal alternative to “all rights reserved” copyright law, to offer a new tool for easy insertion of Creative Commons licenses into works created with Microsoft Office.
 

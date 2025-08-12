@@ -57,6 +57,7 @@ mathjax: null
 order: null
 image_width: 1920
 image_height: 1200
+mastodon-post-id: '115017529929927411'
 ---
 Recently I saw the movie Robin Hood staring Russell Crow. The movie itself isn’t great or grand, but it serves as a wonderful jumping off point for a point I’m trying to make. The movie itself is a story of how Robin Hood became an outlaw and what motivates him to do what he does. Upon returning from the crusades Robin finds himself in a community under attack on all sides. The rightful Lord of Nottingham is dead on the battle fields of France, and his father is a weak old blind man. His wife, now single, turns out to have married him right before he left for the crusades. The church is demanding its tithe and King John is demanding taxes to pay for an army to protect the realm from the French. The old, dying father of Lord of Nottingham asks Robin to protect His son’s community.
 

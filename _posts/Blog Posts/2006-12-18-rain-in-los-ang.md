@@ -2,8 +2,7 @@
 layout: post
 title: 'Winter Rains in Los Angeles: A Reflection on Longing, Home, and Hope'
 title-url: null
-subtitle: "A Spiritual Journey through Nature\u2019s Beauty, Connecting Earth and\
-  \ Soul"
+subtitle: A Spiritual Journey through Nature’s Beauty, Connecting Earth and Soul
 subtitle-url: null
 quote: null
 excerpt: null
@@ -48,6 +47,7 @@ mathjax: null
 order: null
 image_width: 1921
 image_height: 1080
+mastodon-post-id: '115017517403043715'
 ---
 It’s amazing how winter rains can highlight some of Los Angeles’s best qualities.  This morning, as I went out to my car, I could smell the clean air.  I took a deep breath and let the blast of cold hit my lungs.  I was awake and alive.  The sky was a striking blue accented with white clouds.  As I made my way to the office I could see the snow capped mountains that make up the borders to the LA basin.
 

@@ -53,6 +53,7 @@ mathjax: null
 order: null
 image_width: 1344
 image_height: 896
+mastodon-post-id: '115017527533713200'
 ---
 I was asked to put together a short story describing someone in a world not unlike the one presented to us in X-Files or Fringe. This is the first draft after about 60 minutes of work. Perhaps I'll do more in the future. The story is titled Dehydrated.
 

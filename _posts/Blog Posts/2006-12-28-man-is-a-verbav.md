@@ -1,65 +1,51 @@
 ---
 layout: post
-
 title: 'Word-Eater: Exploring Identity Through Words and Symbols'
-title-url:
+title-url: null
 subtitle: A Reflection on Reading, Storytelling, Customs, and Finding Ourselves in
-    Language
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+  Language
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-12-28 17:55:10+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: The article explores the idea of man as a 'word-eater,' delving into
-    the love of reading and the power of words. It invites readers to ponder their
-    own words, stories, customs, and symbols that define them, and to consider core
-    questions about their identity and place in the world.
-seo-description:
-
+  the love of reading and the power of words. It invites readers to ponder their own
+  words, stories, customs, and symbols that define them, and to consider core questions
+  about their identity and place in the world.
+seo-description: null
 categories:
 - Religion
-tags:
+tags: null
 keywords: Word-Eater, Reading, Books, Storytelling, Identity, Symbols, Customs, Language,
-    Self-Reflection, Personal Growth, Communication
-
-
-
+  Self-Reflection, Personal Growth, Communication
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
 image-description: An image of a person engrossed in reading a large book, with symbolic
-    icons and words floating around them. The symbols represent different facets of
-    the individual's identity, customs, and stories. The backdrop might contain a
-    world map, clock, or other visuals to reflect the core questions posed in the
-    article.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  icons and words floating around them. The symbols represent different facets of
+  the individual's identity, customs, and stories. The backdrop might contain a world
+  map, clock, or other visuals to reflect the core questions posed in the article.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017518857718439'
 ---
 Last night I was listening to a radio program that a former pastor of mine is featured on and they brought up the fact that man is a “word-eater.”  I don’t know about the rest of you, but I know that I look forward to reading large books and thinking about the thoughts of others communicated via words.
 

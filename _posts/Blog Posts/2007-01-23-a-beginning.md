@@ -4,12 +4,12 @@ title: A Beginning
 subtitle: A spark from the past lights the path ahead
 quote: It was in the days before the burning gems filled the night sky, when the King
   and the Queen of all the Earth walked among us still.
-excerpt: "A young woman uncovers her grandfather\u2019s journals, unlocking forgotten\
-  \ myths and half-remembered truths in a quiet moment of grief and wonder."
+excerpt: A young woman uncovers her grandfather’s journals, unlocking forgotten myths
+  and half-remembered truths in a quiet moment of grief and wonder.
 source: Original Content
 source-url: ''
-call-to-action: "Read the first chapter of a new work of fiction\u2014where memory,\
-  \ myth, and the stars converge."
+call-to-action: Read the first chapter of a new work of fiction—where memory, myth,
+  and the stars converge.
 date: 2007-01-23 13:54:06+00:00
 update: null
 author:
@@ -22,13 +22,16 @@ bullets:
 - Explores themes of memory, myth, and wonder
 - Draws from researched folklore and historical echoes
 - Sets the stage for a larger tale to unfold
-description: "Ted Tschopp shares the first chapter of a new fiction project, rooted\
-  \ in memory and myth. A woman sorting through her grandfather\u2019s papers discovers\
-  \ echoes of ancient stories, written in his hand but drawn from deeper wells of\
-  \ human remembrance.\n"
-seo-description: "A new work of fiction begins as a granddaughter unearths her grandfather\u2019\
-  s journals and the forgotten myths within. Read the first chapter of Ted Tschopp\u2019\
-  s latest story.\n"
+description: 'Ted Tschopp shares the first chapter of a new fiction project, rooted
+  in memory and myth. A woman sorting through her grandfather’s papers discovers echoes
+  of ancient stories, written in his hand but drawn from deeper wells of human remembrance.
+
+  '
+seo-description: 'A new work of fiction begins as a granddaughter unearths her grandfather’s
+  journals and the forgotten myths within. Read the first chapter of Ted Tschopp’s
+  latest story.
+
+  '
 categories:
 - Personal Writing
 - Religion
@@ -74,6 +77,7 @@ mathjax: null
 order: null
 image_width: 1536
 image_height: 1024
+mastodon-post-id: '115017520297982074'
 ---
 One of my resolutions this year was to start writing fiction again.  I have done it several times in my past, but I have never let people read it publicly.  The only thing that ever came close to public viewing was the several Role Playing Games I have run.  Additionally I posted one [poem](https://tedt.org/personal%20writing/the-path-west) I had written about 5 years ago.
 

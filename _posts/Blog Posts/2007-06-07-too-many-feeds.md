@@ -1,70 +1,57 @@
 ---
 layout: post
-
 title: 'The Complexity of Managing 212 RSS Feeds: A Blogger''s Challenge'
-title-url:
+title-url: null
 subtitle: 'Navigating the Maze of Information: Tools, Workflows, and Overload'
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-06-07 18:53:36+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+bullets: null
 description: The author shares their experience with managing 212 different RSS feeds
-    and blogs, highlighting the struggles with taxonomy, workflow, scanning articles,
-    linkblogs, and the limits of current feed reading applications. This article provides
-    a unique perspective on the challenges faced by avid content consumers and hints
-    at potential areas for improvement in RSS reader technology.
-seo-description:
-
+  and blogs, highlighting the struggles with taxonomy, workflow, scanning articles,
+  linkblogs, and the limits of current feed reading applications. This article provides
+  a unique perspective on the challenges faced by avid content consumers and hints
+  at potential areas for improvement in RSS reader technology.
+seo-description: null
 categories:
 - Computers
-tags:
+tags: null
 keywords: RSS feeds, blogs, content management, FeedDemon, taxonomy, workflow, GTD,
-    linkblogs, reading overload, scanning articles, information overload, feed reading
-    applications
-
-
-
+  linkblogs, reading overload, scanning articles, information overload, feed reading
+  applications
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An organized visual representation of the author's feed reading
-    structure, featuring icons for different feeds, linkblogs, folders, and watches,
-    and arrows illustrating the complex workflow. This diagram helps to illustrate
-    the depth of the management challenge the author faces.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  structure, featuring icons for different feeds, linkblogs, folders, and watches,
+  and arrows illustrating the complex workflow. This diagram helps to illustrate the
+  depth of the management challenge the author faces.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017524166887133'
 ---
 I am at a dangerous point in blogging.&#160; I have 212 different RSS feeds / blogs that I read.&#160; I know [others](http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/) manage a whole lot more but I’m not as good as they are.&#160;&#160;At one point back in 2000 or so I had only one feed that I subscribed to via the My Netscape Portal.&#160; It was the news feed from the site I use to run, at [www.theonering.com](http://www.theonering.com)&#160;(they no longer syndicate their news sadly).&#160; Over the last 7 years or so, the number of feeds I read has increased.&#160; &#160;It is now at the point where it takes an hour to read everything each day.&#160; I am now starting to run into a barrier of having too many feeds and I need to change something.&#160; I am running into several problems.&#160; 
 

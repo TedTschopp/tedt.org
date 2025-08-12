@@ -1,31 +1,26 @@
 ---
 layout: post
-
 title: 'Martin Luther on Beer: A Historical Perspective'
-title-url:
+title-url: null
 subtitle: 'The Theological Brew: Reflections and Quotes on Beer and Moderation'
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-02-16 10:24:23+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article explores various quotes and letters of Martin Luther concerning
-    beer, sobriety, and the Christian perspective on drinking. From humorous anecdotes
-    to serious reflections on moderation, the text provides a unique insight into
-    the thoughts of one of Christianity's most prominent figures.
-seo-description:
-
+  beer, sobriety, and the Christian perspective on drinking. From humorous anecdotes
+  to serious reflections on moderation, the text provides a unique insight into the
+  thoughts of one of Christianity's most prominent figures.
+seo-description: null
 categories:
 - Quotes
 - Religion
@@ -33,38 +28,30 @@ tags:
 - Beer
 - Martin Luther
 keywords: Martin Luther, beer, moderation, Christianity, theology, history, soberness,
-    gluttony, drunkenness, quotations, Lutheran tradition
-
-
-
+  gluttony, drunkenness, quotations, Lutheran tradition
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An image of a vintage beer mug juxtaposed with an old parchment
-    containing Martin Luther's handwriting, symbolizing the historical connection
-    between theological reflections and beer in Luther's time.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  containing Martin Luther's handwriting, symbolizing the historical connection between
+  theological reflections and beer in Luther's time.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017522699802057'
 ---
 A couple weeks ago, I mentioned the following letter of Martin Luther to a friend of mine after drinking some beer that disagreed with us.  Last night we went out for some more beer, and he brought the letter up again.  I told him to check my blog and I would post the text of the letter.  I figured I might as well, cross post this to several of my blogs.
 

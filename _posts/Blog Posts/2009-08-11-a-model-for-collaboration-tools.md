@@ -58,6 +58,7 @@ mathjax: null
 order: null
 image_width: 2256
 image_height: 1256
+mastodon-post-id: '115017529451236410'
 ---
 Over the last year I have given a version of this article as a presentation to many different groups explaining the role of collaboration tools in a corporate environment.  I hope that this model makes sense to readers.
 

@@ -1,70 +1,57 @@
 ---
 layout: post
-
 title: What Should Google Buy Next? A Strategic Insight into Future Investments
-title-url:
+title-url: null
 subtitle: 'From Data Mining to Real-World Integration: A Comprehensive Analysis'
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-05-23 01:51:30+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: In this article, the author revisits a previous conversation on what
-    Google should invest in next, covering aspects like data mining, pattern recognition,
-    GIS, real-time monitoring, algorithms, and the connection between content creators
-    and consumers. The insights provided offer a thoughtful look at potential areas
-    of growth and innovation for the tech giant.
-seo-description:
-
+  Google should invest in next, covering aspects like data mining, pattern recognition,
+  GIS, real-time monitoring, algorithms, and the connection between content creators
+  and consumers. The insights provided offer a thoughtful look at potential areas
+  of growth and innovation for the tech giant.
+seo-description: null
 categories:
 - Computers
-tags:
+tags: null
 keywords: Google, investment strategy, data mining, GIS, real-time monitoring, pattern
-    recognition, algorithms, advertising, branding, content creation, content consumption,
-    real-world information, online integration
-
-
-
+  recognition, algorithms, advertising, branding, content creation, content consumption,
+  real-world information, online integration
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An intricate diagram illustrating the key areas of investment suggested
-    for Google, including icons and visual elements representing data mining, GIS,
-    real-time monitoring, algorithms, and the connection between real-world and online
-    information, symbolizing the multifaceted approach to growth and innovation.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  for Google, including icons and visual elements representing data mining, GIS, real-time
+  monitoring, algorithms, and the connection between real-world and online information,
+  symbolizing the multifaceted approach to growth and innovation.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017523681590098'
 ---
 A while back someone asked me what I think Google should buy next.&#160; I was reminded of the conversation today by a co-worker so I dug up my response.&#160; The post still makes a whole lot of sense even if it’s over two years old.
 

@@ -9,9 +9,9 @@ quote: null
 excerpt: null
 source: null
 source-url: null
-call-to-action: "Are you a conversation starter, participant, or observer? Share your\
-  \ insights or experiences in the comments below. Let\u2019s continue the conversation\
-  \ and learn how we can better engage with each other online!"
+call-to-action: Are you a conversation starter, participant, or observer? Share your
+  insights or experiences in the comments below. Let’s continue the conversation and
+  learn how we can better engage with each other online!
 date: 2009-07-09 10:48:39+00:00
 update: null
 author:
@@ -56,6 +56,7 @@ mathjax: null
 order: null
 image_width: 1182
 image_height: 704
+mastodon-post-id: '115017528492588860'
 ---
 The first is that there are three basic types of people.  There are people who start conversations.  There are people who participate in conversations.  Finally there are people who listen to conversations.
 

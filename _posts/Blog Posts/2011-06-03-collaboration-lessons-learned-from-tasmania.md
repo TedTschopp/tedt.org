@@ -45,17 +45,17 @@ image-credits-URL: null
 image-credits-artist: JJ Harrison
 image-credits-artist-URL: https://en.wikipedia.org/wiki/File:Tessellated_Pavement_Sunrise_Landscape.webp
 image-credits-title: null
-image-description: "Sunrise, \u201CTessellated Pavement\u201D, Eaglehawk Neck, Tasman\
-  \ Peninsula, Tasmania, Australia. The \u201ETesselated Pavement\u201C is the result\
-  \ of an orthogonal joint pattern in the rock. On the picture it shows the so called\
-  \ \u201Cpan formation\u201D, where the rock in the immediate vicinity of the joints\
-  \ is more resistant to erosion than the rock that is more distant to the joints,\
-  \ This is due to alterations of the rock along the joints by hydrothermal (or similar)\
-  \ solutions when the rock was still buried deeply below the surface millions of\
-  \ years ago. When no alterations or alterations that lower the erosional resistivity\
-  \ have taken place in the geological past, the rock along the joints will erode\
-  \ faster than the rock that is more distant to the joints. In that case the so called\
-  \ \u201Cloaf formation\u201D of \u201CTessellated Pavement\u201D will form."
+image-description: Sunrise, “Tessellated Pavement”, Eaglehawk Neck, Tasman Peninsula,
+  Tasmania, Australia. The „Tesselated Pavement“ is the result of an orthogonal joint
+  pattern in the rock. On the picture it shows the so called “pan formation”, where
+  the rock in the immediate vicinity of the joints is more resistant to erosion than
+  the rock that is more distant to the joints, This is due to alterations of the rock
+  along the joints by hydrothermal (or similar) solutions when the rock was still
+  buried deeply below the surface millions of years ago. When no alterations or alterations
+  that lower the erosional resistivity have taken place in the geological past, the
+  rock along the joints will erode faster than the rock that is more distant to the
+  joints. In that case the so called “loaf formation” of “Tessellated Pavement” will
+  form.
 image-title: Tessellated Pavement
 monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
@@ -63,6 +63,7 @@ mathjax: null
 order: null
 image_width: 3587
 image_height: 2391
+mastodon-post-id: '115017530409317677'
 ---
 Tasmania is an island off the coast of Australia which was attached to Australia until about 10,000 years ago with the end of the last glacial period.  The island is home to many interesting animals and was home to the Tasmanian Aborigines.  These people became isolated from the mainland about 10,000 years ago.  It is this isolation and these people I want to focus on.
 

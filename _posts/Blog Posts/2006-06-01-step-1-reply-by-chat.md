@@ -39,6 +39,7 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
+mastodon-post-id: '115017516439904758'
 ---
 I have always thought that the logical direction for chat and email was the same. At some point in the future the only difference between them will be if you are there to answer the chat. Looks like Google gets this as well.
 

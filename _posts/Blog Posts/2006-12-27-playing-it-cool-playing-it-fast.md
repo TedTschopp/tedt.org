@@ -1,56 +1,43 @@
 ---
 layout: post
-
 title: Playing it Cool, Playing it Fast! Playing it on the Computer
-title-url:
-subtitle:
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+title-url: null
+subtitle: null
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2006-12-27 23:50:07+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
-description:
-seo-description:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
+description: null
+seo-description: null
 categories:
 - Computers
-tags:
-keywords:
-
-
-
+tags: null
+keywords: null
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-description:
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-description: null
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017518373375822'
 ---
 So I copied my entire iTunes music library to my iBook today. I had to leave my podcasts and my audible subscriptions and audio books on the PC as they took up about 20gb. After everything was transferred I installed [Tangerine](http://www.potionfactory.com/tangerine/)and pointed it at my iTunes collection. The program takes a look at each song and figures out the beats per minute and the intensity of each beat. It will then allow you to put together playlists based on the tempo of the music. So if you are in a mellow mood you can have it pick all slow songs. If you are racing around with your head in your hands trying to get everything done, crank the BPM up to above 130. This application is very cool, and I hope that Apple will fold this functionality into iTunes in the future. Additionally, I hope someone comes out with a decent version for the PC. I tried several Windows applications that were like Tangerine, but none of them could compare.
 

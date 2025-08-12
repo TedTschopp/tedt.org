@@ -51,6 +51,7 @@ mathjax: null
 order: null
 image_width: 800
 image_height: 600
+mastodon-post-id: '115017531847231875'
 ---
 I am reminded of the thought experiments I went through years ago when the sound cards went from 8 bit to 16bit to being able to reproduce CD quality sound and better. Now days no one thinks about a computer that can't reproduce sound with sub-CD quality. I remember talking about how this would change games, music, and entertainment as we knew it. But there were things that were not brought up as I look back. I didn't think about how sound quality of this nature would make just about every sound emitting platform into a software problem. Now granted not every problem in the sound arena has been solved. We still have not reproduced the human voice synthetically without using another human as the input. But this is about it. Our computers can speak to us, but in the end, they sound like computers. This isn't necessarily a bad thing, and its only a matter of years until this synthetic distinction is a matter of choice.
 

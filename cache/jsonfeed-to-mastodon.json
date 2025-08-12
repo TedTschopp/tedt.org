@@ -84,6 +84,16 @@
     ],
     "url": "https://tedt.org/2025-08-10-The-Mentor-In-The-Machine/"
   },
+  "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/": {
+    "id": "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:15.419Z",
+        "id": "115017521261400996",
+        "url": "https://tschopp.net/@Ted/115017521261400996"
+      }
+    ]
+  },
   "/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯/": {
     "id": "/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯/",
     "lastTootTimestamp": 1755014718787,
@@ -275,6 +285,36 @@
     ],
     "url": "/Details-on-the-WINs-Network/"
   },
+  "/Doing-Religions-Right-in-DCC/": {
+    "id": "/Doing-Religions-Right-in-DCC/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:55.630Z",
+        "id": "115017535693153105",
+        "url": "https://tschopp.net/@Ted/115017535693153105"
+      }
+    ]
+  },
+  "/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/": {
+    "id": "/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:33.639Z",
+        "id": "115017534251932304",
+        "url": "https://tschopp.net/@Ted/115017534251932304"
+      }
+    ]
+  },
+  "/Factions-Ideologies-and-Religions-in-Role-Playing-Games/": {
+    "id": "/Factions-Ideologies-and-Religions-in-Role-Playing-Games/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:26.303Z",
+        "id": "115017533771213614",
+        "url": "https://tschopp.net/@Ted/115017533771213614"
+      }
+    ]
+  },
   "/Gamma-World-Terrain/": {
     "id": "/Gamma-World-Terrain/",
     "lastTootTimestamp": 1755014718788,
@@ -322,11 +362,41 @@
       "https://tschopp.net/users/Ted/statuses/111819663872505089"
     ]
   },
+  "/Mutations-in-Gamma-World/": {
+    "id": "/Mutations-in-Gamma-World/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:52:02.947Z",
+        "id": "115017536172669708",
+        "url": "https://tschopp.net/@Ted/115017536172669708"
+      }
+    ]
+  },
+  "/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/": {
+    "id": "/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:40.975Z",
+        "id": "115017534732823490",
+        "url": "https://tschopp.net/@Ted/115017534732823490"
+      }
+    ]
+  },
   "/Numbers-An-Ork-Accountant/": {
     "id": "/Numbers-An-Ork-Accountant/",
     "lastTootTimestamp": 1755014718787,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/111796991086841890"
+    ]
+  },
+  "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/": {
+    "id": "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:48.297Z",
+        "id": "115017535212567970",
+        "url": "https://tschopp.net/@Ted/115017535212567970"
+      }
     ]
   },
   "/OpenAIs-GPT-OSS-Explained/": {
@@ -453,6 +523,26 @@
     ],
     "url": "/Rooted-In-Resilience/"
   },
+  "/Rules for Gamma-World-Weapons-in MCC-DCC/": {
+    "id": "/Rules for Gamma-World-Weapons-in MCC-DCC/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:52:17.564Z",
+        "id": "115017537130688934",
+        "url": "https://tschopp.net/@Ted/115017537130688934"
+      }
+    ]
+  },
+  "/Rules-for-Firearms-in-MCC-DCC/": {
+    "id": "/Rules-for-Firearms-in-MCC-DCC/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:52:10.255Z",
+        "id": "115017536651633587",
+        "url": "https://tschopp.net/@Ted/115017536651633587"
+      }
+    ]
+  },
   "/Swiss-Folklore/:title:output_ext/": {
     "id": "/Swiss-Folklore/:title:output_ext/",
     "lastTootTimestamp": 1755014718867,
@@ -537,6 +627,266 @@
     ],
     "url": "/The-Student-Who-Taught-Herself/"
   },
+  "/a-beginning/": {
+    "id": "/a-beginning/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:00.717Z",
+        "id": "115017520297982074",
+        "url": "https://tschopp.net/@Ted/115017520297982074"
+      }
+    ]
+  },
+  "/a-little-calend/": {
+    "id": "/a-little-calend/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:54.518Z",
+        "id": "115017515959514808",
+        "url": "https://tschopp.net/@Ted/115017515959514808"
+      }
+    ]
+  },
+  "/a-model-for-collaboration-tools/": {
+    "id": "/a-model-for-collaboration-tools/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:20.385Z",
+        "id": "115017529451236410",
+        "url": "https://tschopp.net/@Ted/115017529451236410"
+      }
+    ]
+  },
+  "/a-new-keyboard/": {
+    "id": "/a-new-keyboard/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:42.313Z",
+        "id": "115017530888331874",
+        "url": "https://tschopp.net/@Ted/115017530888331874"
+      }
+    ]
+  },
+  "/android-is-knotts-berry-farm-as-ios-is-to-disneyland/": {
+    "id": "/android-is-knotts-berry-farm-as-ios-is-to-disneyland/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:49.626Z",
+        "id": "115017531367589233",
+        "url": "https://tschopp.net/@Ted/115017531367589233"
+      }
+    ]
+  },
+  "/books-movies-an/": {
+    "id": "/books-movies-an/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:46.065Z",
+        "id": "115017519337686597",
+        "url": "https://tschopp.net/@Ted/115017519337686597"
+      }
+    ]
+  },
+  "/collaboration-lessons-learned-from-tasmania/": {
+    "id": "/collaboration-lessons-learned-from-tasmania/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:35.005Z",
+        "id": "115017530409317677",
+        "url": "https://tschopp.net/@Ted/115017530409317677"
+      }
+    ]
+  },
+  "/computerized-story-telling/": {
+    "id": "/computerized-story-telling/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:30.041Z",
+        "id": "115017522219764904",
+        "url": "https://tschopp.net/@Ted/115017522219764904"
+      }
+    ]
+  },
+  "/currently-liste/": {
+    "id": "/currently-liste/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:25.251Z",
+        "id": "115017514041451501",
+        "url": "https://tschopp.net/@Ted/115017514041451501"
+      }
+    ]
+  },
+  "/dehydrated/": {
+    "id": "/dehydrated/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:51.126Z",
+        "id": "115017527533713200",
+        "url": "https://tschopp.net/@Ted/115017527533713200"
+      }
+    ]
+  },
+  "/example-of-xmlhttprequest/": {
+    "id": "/example-of-xmlhttprequest/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:32.560Z",
+        "id": "115017514520460817",
+        "url": "https://tschopp.net/@Ted/115017514520460817"
+      }
+    ]
+  },
+  "/fasting-for-len/": {
+    "id": "/fasting-for-len/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:29.106Z",
+        "id": "115017526090553643",
+        "url": "https://tschopp.net/@Ted/115017526090553643"
+      }
+    ]
+  },
+  "/film-snob/": {
+    "id": "/film-snob/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:44.970Z",
+        "id": "115017523198072838",
+        "url": "https://tschopp.net/@Ted/115017523198072838"
+      }
+    ]
+  },
+  "/four-is-the-new-three/": {
+    "id": "/four-is-the-new-three/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:13.073Z",
+        "id": "115017528971976274",
+        "url": "https://tschopp.net/@Ted/115017528971976274"
+      }
+    ]
+  },
+  "/happy-advent/": {
+    "id": "/happy-advent/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:17.860Z",
+        "id": "115017513557078745",
+        "url": "https://tschopp.net/@Ted/115017513557078745"
+      }
+    ]
+  },
+  "/hell-and-christ/": {
+    "id": "/hell-and-christ/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:39.883Z",
+        "id": "115017515000457930",
+        "url": "https://tschopp.net/@Ted/115017515000457930"
+      }
+    ]
+  },
+  "/html5-javascript-version-of-of-windows/": {
+    "id": "/html5-javascript-version-of-of-windows/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:11.586Z",
+        "id": "115017532806708198",
+        "url": "https://tschopp.net/@Ted/115017532806708198"
+      }
+    ]
+  },
+  "/ideas-of-things-i-need-to-think-about-garden-state/": {
+    "id": "/ideas-of-things-i-need-to-think-about-garden-state/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:14.468Z",
+        "id": "115017525131320024",
+        "url": "https://tschopp.net/@Ted/115017525131320024"
+      }
+    ]
+  },
+  "/ideas-to-think-about-life-and-taxes/": {
+    "id": "/ideas-to-think-about-life-and-taxes/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:21.779Z",
+        "id": "115017525610399181",
+        "url": "https://tschopp.net/@Ted/115017525610399181"
+      }
+    ]
+  },
+  "/man-is-a-verbav/": {
+    "id": "/man-is-a-verbav/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:38.741Z",
+        "id": "115017518857718439",
+        "url": "https://tschopp.net/@Ted/115017518857718439"
+      }
+    ]
+  },
+  "/martin-luther-on-beer/": {
+    "id": "/martin-luther-on-beer/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:37.366Z",
+        "id": "115017522699802057",
+        "url": "https://tschopp.net/@Ted/115017522699802057"
+      }
+    ]
+  },
+  "/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/": {
+    "id": "/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:09.231Z",
+        "id": "115017516923701585",
+        "url": "https://tschopp.net/@Ted/115017516923701585"
+      }
+    ]
+  },
+  "/mobile-computing/": {
+    "id": "/mobile-computing/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:18.971Z",
+        "id": "115017533290733423",
+        "url": "https://tschopp.net/@Ted/115017533290733423"
+      }
+    ]
+  },
+  "/more-on-the-fas/": {
+    "id": "/more-on-the-fas/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:36.428Z",
+        "id": "115017526570423644",
+        "url": "https://tschopp.net/@Ted/115017526570423644"
+      }
+    ]
+  },
+  "/one-plus-one-eq/": {
+    "id": "/one-plus-one-eq/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:08.035Z",
+        "id": "115017520777589778",
+        "url": "https://tschopp.net/@Ted/115017520777589778"
+      }
+    ]
+  },
+  "/playing-it-cool-playing-it-fast/": {
+    "id": "/playing-it-cool-playing-it-fast/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:31.351Z",
+        "id": "115017518373375822",
+        "url": "https://tschopp.net/@Ted/115017518373375822"
+      }
+    ]
+  },
   "/prompts/ai-tutoring-prompt-designer/": {
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
@@ -606,11 +956,161 @@
     ],
     "url": "/prompts/midjourney-v7-prompt-template/"
   },
+  "/putting-first-things-first/": {
+    "id": "/putting-first-things-first/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:05.758Z",
+        "id": "115017528492588860",
+        "url": "https://tschopp.net/@Ted/115017528492588860"
+      }
+    ]
+  },
+  "/rain-in-los-ang/": {
+    "id": "/rain-in-los-ang/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:16.544Z",
+        "id": "115017517403043715",
+        "url": "https://tschopp.net/@Ted/115017517403043715"
+      }
+    ]
+  },
+  "/sex-gardening-a/": {
+    "id": "/sex-gardening-a/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:53.385Z",
+        "id": "115017519817384353",
+        "url": "https://tschopp.net/@Ted/115017519817384353"
+      }
+    ]
+  },
+  "/shadows-and-sym/": {
+    "id": "/shadows-and-sym/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:23.948Z",
+        "id": "115017517888250747",
+        "url": "https://tschopp.net/@Ted/115017517888250747"
+      }
+    ]
+  },
+  "/step-1-reply-by-chat/": {
+    "id": "/step-1-reply-by-chat/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:47:01.848Z",
+        "id": "115017516439904758",
+        "url": "https://tschopp.net/@Ted/115017516439904758"
+      }
+    ]
+  },
+  "/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/": {
+    "id": "/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:07.146Z",
+        "id": "115017524651376565",
+        "url": "https://tschopp.net/@Ted/115017524651376565"
+      }
+    ]
+  },
+  "/the-component-smart-phone-and-why-it-will-fail/": {
+    "id": "/the-component-smart-phone-and-why-it-will-fail/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:51:04.255Z",
+        "id": "115017532326285566",
+        "url": "https://tschopp.net/@Ted/115017532326285566"
+      }
+    ]
+  },
   "/the-google-browseros/": {
     "id": "/the-google-browseros/",
     "lastTootTimestamp": 1755014718784,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/111179921177417786"
+    ]
+  },
+  "/the-path-west/": {
+    "id": "/the-path-west/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:46:47.184Z",
+        "id": "115017515478931431",
+        "url": "https://tschopp.net/@Ted/115017515478931431"
+      }
+    ]
+  },
+  "/the-purpose-of-community-protection-of-the-commons/": {
+    "id": "/the-purpose-of-community-protection-of-the-commons/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:27.690Z",
+        "id": "115017529929927411",
+        "url": "https://tschopp.net/@Ted/115017529929927411"
+      }
+    ]
+  },
+  "/thoughts-on-corporate-collaboration-tools/": {
+    "id": "/thoughts-on-corporate-collaboration-tools/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:58.447Z",
+        "id": "115017528013492008",
+        "url": "https://tschopp.net/@Ted/115017528013492008"
+      }
+    ]
+  },
+  "/thoughts-on-nar/": {
+    "id": "/thoughts-on-nar/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:49:43.784Z",
+        "id": "115017527052505070",
+        "url": "https://tschopp.net/@Ted/115017527052505070"
+      }
+    ]
+  },
+  "/too-many-feeds/": {
+    "id": "/too-many-feeds/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:59.752Z",
+        "id": "115017524166887133",
+        "url": "https://tschopp.net/@Ted/115017524166887133"
+      }
+    ]
+  },
+  "/user-interfaces-in-2017-2/": {
+    "id": "/user-interfaces-in-2017-2/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:50:56.945Z",
+        "id": "115017531847231875",
+        "url": "https://tschopp.net/@Ted/115017531847231875"
+      }
+    ]
+  },
+  "/web-services-we/": {
+    "id": "/web-services-we/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:22.740Z",
+        "id": "115017521741298875",
+        "url": "https://tschopp.net/@Ted/115017521741298875"
+      }
+    ]
+  },
+  "/what-should-google-buy/": {
+    "id": "/what-should-google-buy/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T19:48:52.348Z",
+        "id": "115017523681590098",
+        "url": "https://tschopp.net/@Ted/115017523681590098"
+      }
     ]
   }
 }

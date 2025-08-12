@@ -51,6 +51,7 @@ mathjax: null
 order: null
 image_width: 1040
 image_height: 770
+mastodon-post-id: '115017530888331874'
 ---
 I got one of the new ZAAG / Logitech keyboard cases for my iPad last night. I am writing this to you from the new device. I really like this device, its a bit bulky and turns the iPad into a laptop, but I really think that at some point that is what is needed.
 

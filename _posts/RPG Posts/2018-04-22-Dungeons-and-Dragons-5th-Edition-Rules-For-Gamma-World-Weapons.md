@@ -46,6 +46,7 @@ redirect_from:
 - /2018/04/22/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons
 image_width: 1024
 image_height: 497
+mastodon-post-id: '115017534251932304'
 ---
 # Notes
 

@@ -1,69 +1,55 @@
 ---
 layout: post
-
 title: 'Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective'
-title-url:
+title-url: null
 subtitle: Exploring the Existence of External Standards and Human Value
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-01-26 12:49:19+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article delves into the concept of universal standards for intelligence,
-    wisdom, beauty, and manners, comparing them to a measurable external standard.
-    It further emphasizes the intrinsic value of individuals irrespective of their
-    adherence to these standards, and ties into broader themes of history, religion,
-    and politics.
-seo-description:
-
+  wisdom, beauty, and manners, comparing them to a measurable external standard. It
+  further emphasizes the intrinsic value of individuals irrespective of their adherence
+  to these standards, and ties into broader themes of history, religion, and politics.
+seo-description: null
 categories:
 - Religion
-tags:
+tags: null
 keywords: Universal Standards, Intelligence, Wisdom, Beauty, Manners, Human Value,
-    Religion, Politics
-
-
-
+  Religion, Politics
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An image of a balanced scale, symbolizing the universal standards
-    by which characteristics like intelligence, wisdom, beauty, and manners are measured.
-    The scale rests on a book representing history, with shadows of iconic historical
-    figures looming in the background.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  by which characteristics like intelligence, wisdom, beauty, and manners are measured.
+  The scale rests on a book representing history, with shadows of iconic historical
+  figures looming in the background.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017520777589778'
 ---
 Some people are just idiots, other people are rude, and finally some people are just downright ugly.&nbsp; This means that there are some people who are brilliant, there are others who are considerate, and there is such a thing as beauty.&nbsp;&nbsp;I&rsquo;m not trying to say that I am brilliant, or considerate, or beautiful.&nbsp; To the contrary, most of the time I am not any of these things.&nbsp; 
 

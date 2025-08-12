@@ -1,66 +1,54 @@
 ---
 layout: post
-
 title: 'The Power of Choice: A Reflection on Free Will and Fasting'
-title-url:
+title-url: null
 subtitle: An Exploration of Conscious Decisions During Lenten Season
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
 call-to-action: Feel free to share your thoughts on free will and the choices we make
-    every day. How do you exercise your freedom? Join the conversation in the comments
-    below!
-
+  every day. How do you exercise your freedom? Join the conversation in the comments
+  below!
 date: 2008-02-19 17:45:53+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: An insightful examination of free will, personal choice, fasting, and
-    spiritual reflection, connecting these concepts with religion and personal responsibility.
-seo-description:
-
+  spiritual reflection, connecting these concepts with religion and personal responsibility.
+seo-description: null
 categories:
 - Religion
-tags:
+tags: null
 keywords: free will, choice, fasting, Lent, religion, Jonathan Edwards, Freedom of
-    the Will, spirituality, self-control, ethics, morality
-
-
-
+  the Will, spirituality, self-control, ethics, morality
 location:
-    name: Phillips Ranch, CA
+  name: Phillips Ranch, CA
 coordinates:
-    latitude: 34.024550
-    longitude: -117.767693
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.02455
+  longitude: -117.767693
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An image of a fork in the road, symbolizing the choices we make
-    in life, with a subtle overlay of a fasting plate or spiritual symbols to represent
-    the connection between choice and faith.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  in life, with a subtle overlay of a fasting plate or spiritual symbols to represent
+  the connection between choice and faith.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017526570423644'
 ---
 > And therefore I observe, that the Will (without any metaphysical refining) is, That by which the mind chooses any thing. The faculty of the will, is that power, or principle of mind, by which it is capable of choosing: an act of the will is the same as an act of choosing or choice. &ndash; Jonathan Edwards in _Freedom of the Will_
 

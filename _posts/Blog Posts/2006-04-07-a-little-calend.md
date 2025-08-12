@@ -44,6 +44,7 @@ mathjax: null
 order: null
 image_width: 708
 image_height: 604
+mastodon-post-id: '115017515959514808'
 ---
 The following code is a calendar application I’m building in JavaScript. It needs a couple rounds of refactoring (to get rid of document.writes and to make it more object friendly).  The next step will be to make it handle iCal files (which will be a trick).  This is posted for all to enjoy. See the link at the end of this document.
 

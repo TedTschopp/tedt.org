@@ -56,6 +56,7 @@ mathjax: null
 order: null
 image_width: 1140
 image_height: 570
+mastodon-post-id: '115017532326285566'
 ---
 Today <a href="http://techcrunch.com/2013/11/22/motorola-taps-3d-systems-to-produce-parts-for-its-crazy-modular-smartphones/" target="_blank" rel="noopener noreferrer">TechCruch covered a direction Motorola is taking</a> with a project called <a href="http://www.dscout.com/ara#" target="_blank" rel="noopener noreferrer">Ara</a>.  The idea here is that a smart phone can be broken up into individual components and you can buy each of them individually.  This looks really intriguing from a business perspective as well as the perspective of a technologist such as myself.  However cool this idea is, I think it is doomed to failure.
 

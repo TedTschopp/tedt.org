@@ -1,71 +1,58 @@
 ---
 layout: post
-
 title: 'Sex, Gardening, and Science: Reflections on Humanity, Family, and Theology'
-title-url:
+title-url: null
 subtitle: A Theological Exploration of Sexuality, Science, Relationships, and the
-    Nature of Evil in the Light of Genesis
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+  Nature of Evil in the Light of Genesis
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-01-16 11:10:00+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: This article presents an intricate examination of the themes present
-    in 'Children of Men,' including humanity, family, sexuality, science, and relationships.
-    Drawing connections to the Garden of Eden's story, the author explores the nature
-    of evil and the eternal aspects of our existence, ultimately tying it to the Christian
-    faith and the promise of redemption.
-seo-description:
-
+  in 'Children of Men,' including humanity, family, sexuality, science, and relationships.
+  Drawing connections to the Garden of Eden's story, the author explores the nature
+  of evil and the eternal aspects of our existence, ultimately tying it to the Christian
+  faith and the promise of redemption.
+seo-description: null
 categories:
 - Religion
-tags:
+tags: null
 keywords: Children of Men, Theology, Humanity, Family, Sexuality, Science, Relationships,
-    Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith
-
-
-
+  Nature of Evil, Garden of Eden, Genesis, Redemption, Christian Faith
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An image combining the book cover of 'Children of Men,' a depiction
-    of the Garden of Eden, and symbolic representations of the themes such as a DNA
-    helix for science, intertwined hands for relationships, and an apple for temptation.
-    The collage symbolizes the multifaceted exploration of the book's themes in relation
-    to theology.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  of the Garden of Eden, and symbolic representations of the themes such as a DNA
+  helix for science, intertwined hands for relationships, and an apple for temptation.
+  The collage symbolizes the multifaceted exploration of the book's themes in relation
+  to theology.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017519817384353'
 ---
 I just finished [Children of Men](http://www.amazon.com/exec/obidos/ASIN/0307279901/wwwtschoppnet-20)&nbsp;the book this weekend and it got me thinking about humanity, family, sexuality, science, and relationships, and the nature of evil.&nbsp; Here is where my thoughts led me.
 

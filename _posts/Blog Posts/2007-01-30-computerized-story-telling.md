@@ -15,7 +15,7 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- "Computers aren't just crunching numbers\u2014they're whispering stories."
+- Computers aren't just crunching numbers—they're whispering stories.
 - The line between human creativity and machine patterning grows thin.
 - Music has already crossed that threshold. Storytelling is next.
 - Can a machine truly *create*? Or is it just echoing us?
@@ -50,7 +50,7 @@ image-description: Old desktop computer, books on folklore and code, soft lampli
 image-title: Digital Dreams and Dusty Books
 redirect_from:
 - /computers/books/philosophy/opinion/computerized-story-telling
-mastodon-post-id: null
+mastodon-post-id: '115017522219764904'
 image_width: 1536
 image_height: 1024
 ---

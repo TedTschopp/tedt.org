@@ -1,69 +1,56 @@
 ---
 layout: post
-
 title: Exploring Web Services, Computing Theory, and the Future of Technology
-title-url:
+title-url: null
 subtitle: A Comprehensive Insight into the Next Generation of Online Integration
-subtitle-url:
-quote:
-excerpt:
-source:
-source-url:
-call-to-action:
-
+subtitle-url: null
+quote: null
+excerpt: null
+source: null
+source-url: null
+call-to-action: null
 date: 2007-01-26 15:27:06+00:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org
-
-bullets:
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org
+bullets: null
 description: An in-depth article providing an understanding of web services, computing
-    theory, and a look at the future. Geared towards those in the enterprise and web
-    development sectors, this article explains web services from a practical standpoint
-    and explores future opportunities in dividing them into data, calculation, and
-    display services.
-seo-description:
-
+  theory, and a look at the future. Geared towards those in the enterprise and web
+  development sectors, this article explains web services from a practical standpoint
+  and explores future opportunities in dividing them into data, calculation, and display
+  services.
+seo-description: null
 categories:
 - Computers
-tags:
+tags: null
 keywords: web services, enterprise architecture, computing theory, data services,
-    calculation services, display services, technology convergence, security, quality
-    assurance, web development
-
-
-
+  calculation services, display services, technology convergence, security, quality
+  assurance, web development
 location:
-    name: Temple City, CA
+  name: Temple City, CA
 coordinates:
-    latitude: 34.099024
-    longitude: -118.069288
-
-
-image:
-image-alt:
-image-artist:
-image-artist-URL:
-image-credits:
-image-credits-URL:
-image-credits-artist:
-image-credits-artist-URL:
-image-credits-title:
+  latitude: 34.099024
+  longitude: -118.069288
+image: null
+image-alt: null
+image-artist: null
+image-artist-URL: null
+image-credits: null
+image-credits-URL: null
+image-credits-artist: null
+image-credits-artist-URL: null
+image-credits-title: null
 image-description: An image illustrating the interconnectivity between computers through
-    web services. It can depict servers communicating through a web interface, symbolizing
-    the various aspects of data services, calculation services, and display services.
-image-title:
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
-
-mathjax:
-
-order:
+  web services. It can depict servers communicating through a web interface, symbolizing
+  the various aspects of data services, calculation services, and display services.
+image-title: null
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
+mathjax: null
+order: null
+mastodon-post-id: '115017521741298875'
 ---
 **<u>Background  
 </u>**Over the last couple of years I have been working on large enterprise projects for a large corporation.&nbsp; I am recognised at the company a leading web developer.&nbsp; I am being groomed to become an Enterprise Architect. One of the things that keeps me up at night is a convergence of a technology called Web Services.
