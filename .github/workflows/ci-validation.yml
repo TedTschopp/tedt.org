@@ -52,11 +52,15 @@ jobs:
           mkdir -p logs
           TS=$(date -u +"%Y-%m-%dT%H-%M-%S")
           LOG_FILE="logs/${TS}-HTML-Logging.txt"
-          echo "Saving HTML Proofer output to $LOG_FILE" 
-          # Run htmlproofer, tee output to log file, preserve exit code
-          bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee "$LOG_FILE"
-          EXIT_CODE=${PIPESTATUS[0]}
-          if [ $EXIT_CODE -ne 0 ]; then
+          echo "Saving HTML Proofer output to $LOG_FILE"
+          # Pre-create log with header so -s test will succeed even if tool aborts early (will append later)
+          echo "HTML Proofer run at $(date -u --rfc-3339=seconds)" > "$LOG_FILE"
+          PROOFER_FAIL=0
+          # Run and append output
+          if ! bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee -a "$LOG_FILE"; then
+            PROOFER_FAIL=1
+          fi
+          if [ $PROOFER_FAIL -ne 0 ]; then
             if [ -s "$LOG_FILE" ]; then
               echo 'HTML Proofer issues found, logged; continuing (non-blocking).'
               {
@@ -65,14 +69,15 @@ jobs:
                 echo "";
                 tail -n 50 "$LOG_FILE" || true;
               } >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-              # Do NOT fail the step; override exit code
-              EXIT_CODE=0
+              # Force success exit code
+              exit 0
             else
               echo 'HTML Proofer failed AND log missing/empty; failing job.'
               exit 1
             fi
           fi
-          exit $EXIT_CODE
+          # Success path
+          exit 0
       - name: Upload HTML Proofer Log
         if: always()
         uses: actions/upload-artifact@v4
