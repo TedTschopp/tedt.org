@@ -48,7 +48,24 @@ jobs:
         run: ruby tests/check_feed_integrity.rb
       - name: HTML Proofer (links & images)
         run: |
-          bundle exec htmlproofer ./_site --check-html --allow-missing-href || (echo 'HTML Proofer issues found'; exit 1)
+          set -o pipefail
+          mkdir -p logs
+          TS=$(date -u +"%Y-%m-%dT%H-%M-%S")
+          LOG_FILE="logs/${TS}-HTML-Logging.txt"
+          echo "Saving HTML Proofer output to $LOG_FILE" 
+          # Run htmlproofer, tee output to log file, preserve exit code
+          bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee "$LOG_FILE"
+          EXIT_CODE=${PIPESTATUS[0]}
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo 'HTML Proofer issues found';
+            exit $EXIT_CODE;
+          fi
+      - name: Upload HTML Proofer Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-proofer-logs
+          path: logs/*-HTML-Logging.txt
       - name: Validate Mastodon Feed
         run: ruby tests/validate_mastodon_feed.rb
       - name: Mastodon toot length stats (informational)
