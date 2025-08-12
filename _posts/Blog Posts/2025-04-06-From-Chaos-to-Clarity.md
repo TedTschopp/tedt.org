@@ -5,9 +5,9 @@ subtitle: Transforming Meeting Transcripts into Business Requirements with AI Pr
   Engineering
 quote: Each prompt is a small act of hope, a careful step toward clarity, richer understanding,
   and a future shaped intentionally, thoughtfully, and perhaps just a little poetically.
-excerpt: "This article demonstrates how AI-powered prompt engineering can transform\
-  \ everyday business tasks\u2014like distilling clear requirements from messy meeting\
-  \ transcripts\u2014into opportunities for clarity, empathy, and improvement."
+excerpt: This article demonstrates how AI-powered prompt engineering can transform
+  everyday business tasks—like distilling clear requirements from messy meeting transcripts—into
+  opportunities for clarity, empathy, and improvement.
 source: Original Content
 source-url: ''
 call-to-action: Explore the attached prompts and outputs to deepen your understanding
@@ -67,7 +67,7 @@ image-credits-title: From Chaos to Clarity
 image-description: Visual representation of AI transforming messy meeting transcripts
   into organized business requirements
 image-title: 'From Chaos to Clarity: AI Prompt Engineering'
-mastodon-post-id: null
+mastodon-post-id: '115017680931535411'
 image_width: 1536
 image_height: 1024
 ---

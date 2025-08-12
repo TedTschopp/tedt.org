@@ -4,12 +4,12 @@ title: Bridging the Uncanny
 subtitle: Navigating the Valley of AI Voice Technology
 quote: The question isn't just how realistic AI can sound, but how we preserve and
   prioritize what makes us distinctly human in a world of near-perfect imitation.
-excerpt: "This article explores the uncanny valley of AI-generated voice\u2014where\
-  \ advanced technologies like GPT-4.5 blur the line between digital and human. Through\
-  \ a conversation with 'Maya,' a nearly human AI voice, you'll reflect on how realism\
-  \ in AI challenges our assumptions about authenticity, trust, and connection. As\
-  \ enterprises adopt voice AI and generative models, the responsibility extends beyond\
-  \ implementation to thoughtful stewardship."
+excerpt: This article explores the uncanny valley of AI-generated voice—where advanced
+  technologies like GPT-4.5 blur the line between digital and human. Through a conversation
+  with 'Maya,' a nearly human AI voice, you'll reflect on how realism in AI challenges
+  our assumptions about authenticity, trust, and connection. As enterprises adopt
+  voice AI and generative models, the responsibility extends beyond implementation
+  to thoughtful stewardship.
 source: Original Content
 source-url: ''
 call-to-action: Reflect on how you can preserve human authenticity while embracing
@@ -58,7 +58,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017679493139246'
 image_width: 1456
 image_height: 816
 ---

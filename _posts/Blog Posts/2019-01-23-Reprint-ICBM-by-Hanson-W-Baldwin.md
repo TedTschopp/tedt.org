@@ -6,10 +6,12 @@ title-url: null
 subtitle: null
 subtitle-url: null
 quote: null
-excerpt: "IT WILL not be long. In ten years\u2014five years, perhaps only two or three\
-  \ \u2014the historic count-down will start: \"Ten \u2014 nine \u2014 eight \u2014\
-  \ seven \u2014 six \u2014 five \u2014 four \u2014 three \u2014 two \u2014 one \u2014\
-  \" At zero a new era will open up on the earth\u2014the era of push-button war.\n"
+excerpt: 'IT WILL not be long. In ten years—five years, perhaps only two or three
+  —the historic count-down will start: "Ten — nine — eight — seven — six — five —
+  four — three — two — one —" At zero a new era will open up on the earth—the era
+  of push-button war.
+
+  '
 source: null
 source-url: null
 call-to-action: null
@@ -54,6 +56,7 @@ mathjax: null
 order: null
 image_width: 1280
 image_height: 1696
+mastodon-post-id: '115017667949378301'
 ---
 IT WILL not be long. In ten years—five years, perhaps only two or three —the historic count-down will start: "Ten — nine — eight — seven — six — five — four — three — two — one —" At zero a new era will open up on the earth—the era of push-button war. A giant rocket, 100 to 135 feet high, will lift slowly from its launching pad and, with voice of thunder, tongue of flame, disappear into the stratosphere. Some 20 to 30 minutes later and 5,000 miles away, the world's first intercontinental ballistic missile will plunge toward the earth. 
 

@@ -23,13 +23,13 @@ bullets:
 - Weapon Materials
 - Damage Types
 - Weapon Classifications
-description: "A comprehensive guide to understanding weapon mechanics in the M\xE4\
-  rchen Engine, covering properties, materials, damage types, and classifications."
-seo-description: "Master weapon mechanics in the M\xE4rchen Engine with our exhaustive\
-  \ guide covering everything from properties to cosmic-level classifications."
+description: A comprehensive guide to understanding weapon mechanics in the Märchen
+  Engine, covering properties, materials, damage types, and classifications.
+seo-description: Master weapon mechanics in the Märchen Engine with our exhaustive
+  guide covering everything from properties to cosmic-level classifications.
 categories:
 - Role Playing Games
-- "The M\xE4rchen Engine"
+- The Märchen Engine
 tags:
 - RPG
 - Weapons
@@ -55,6 +55,7 @@ mathjax: false
 order: null
 image_width: 1456
 image_height: 816
+mastodon-post-id: '115017671329578145'
 ---
 # Introduction
 

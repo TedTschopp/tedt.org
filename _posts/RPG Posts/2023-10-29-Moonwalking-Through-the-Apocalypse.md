@@ -56,6 +56,7 @@ mathjax: false
 order: null
 image_width: 1456
 image_height: 816
+mastodon-post-id: '115017672289348777'
 ---
 "Gather 'round, gather 'round. Have you ever traveled through the Ashen Flats at night? No? Well, some say it's a land bewitched by technology and ancient sorcery. But even more talk of a legend, a phantasm that walks the scorched earth where no other dares. They call it Michael-JX, The Moonwalking Colossus. 
  

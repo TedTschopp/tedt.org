@@ -1,64 +1,60 @@
 ---
 layout: post
-
-title: "Custom Communication Styles in AI"
-title-url:
-subtitle: "How to train AI to match your listening and communication preferences"
-subtitle-url:
-quote: "This article shows how to train AI to communicate in your preferred listening style—not just in how you write, but in how you process information."
-excerpt: "A practical guide to extracting your communication style and using prompt engineering to make AI tools respond in ways that work for you."
-source: "Original Content"
-source-url: ""
-call-to-action: "Discover how to make AI conversations more meaningful and effective for you."
-
+title: Custom Communication Styles in AI
+title-url: null
+subtitle: How to train AI to match your listening and communication preferences
+subtitle-url: null
+quote: This article shows how to train AI to communicate in your preferred listening
+  style—not just in how you write, but in how you process information.
+excerpt: A practical guide to extracting your communication style and using prompt
+  engineering to make AI tools respond in ways that work for you.
+source: Original Content
+source-url: ''
+call-to-action: Discover how to make AI conversations more meaningful and effective
+  for you.
 date: 2025-01-11 00:00:00-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - "Train AI to communicate in your preferred listening style."
-    - "Use guided self-interviews to extract tailored prompt instructions."
-    - "Make AI conversations more effective and meaningful."
-    - "Prompt engineering can personalize how AI responds to you."
-
-description: "Learn how to identify your unique communication style and use prompt engineering to make AI tools adapt to your preferences."
-seo-description: "Find out how to train AI to match your communication style using prompt engineering and self-interview techniques."
-
+- Train AI to communicate in your preferred listening style.
+- Use guided self-interviews to extract tailored prompt instructions.
+- Make AI conversations more effective and meaningful.
+- Prompt engineering can personalize how AI responds to you.
+description: Learn how to identify your unique communication style and use prompt
+  engineering to make AI tools adapt to your preferences.
+seo-description: Find out how to train AI to match your communication style using
+  prompt engineering and self-interview techniques.
 categories:
-    - "Computers"
-    - "Artificial Intelligence"
-    - "Opinion"
-    - "Personal Writing"
-    - "Technology"
-
+- Computers
+- Artificial Intelligence
+- Opinion
+- Personal Writing
+- Technology
 tags: AI, AI, Communication, Personalization, Technology
 keywords: AI, AI, communication, personal style, technology, 2025
-
 draft-status: draft
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: https://tedt.org/img/2025-01/ai-communication-style.webp
-image-alt: "AI adapting to a user's communication style"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Custom Communication Styles in AI"
-image-description: "Digital art showing 4 people interacting in their own communication style."
-image-title: "Custom Communication Styles in AI"
+image-alt: AI adapting to a user's communication style
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: Custom Communication Styles in AI
+image-description: Digital art showing 4 people interacting in their own communication
+  style.
+image-title: Custom Communication Styles in AI
+mastodon-post-id: '115017676131786071'
 ---
-
-
 _**Bottom Line Up Front:** This article shows how to train AI to communicate in your preferred listening style—not just in how you write, but in how you process information. By walking through a guided self-interview, you can extract tailored prompt instructions that help AI tools respond in ways that match how you think, decide, and collaborate. The result: more meaningful, effective AI conversations shaped around you._
 
 Last week I covered how you can get AI to copy your writing style. This week we will focus on something even more cool. How to get AI to Speak your preferred listening style.

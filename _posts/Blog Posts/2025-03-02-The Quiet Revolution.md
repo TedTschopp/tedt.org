@@ -4,13 +4,12 @@ title: The Quiet Revolution
 subtitle: GPT-4.5 and the Transformation of Modern Work
 quote: 'The challenge now is not adoption, but intentional integration: how will your
   organization pair AI''s precision with human purpose?'
-excerpt: "This article explores the quiet but transformative arrival of GPT-4.5 in\
-  \ the modern workplace\u2014an AI capable not just of completing tasks, but of reflecting\
-  \ tone, intention, and human nuance. You'll learn how this shift is reshaping roles,\
-  \ decentralizing expertise, and elevating the human contributions of creativity,\
-  \ empathy, and leadership. Rather than replacing human effort, GPT-4.5 invites a\
-  \ redefinition of work\u2014where strategic insight and authentic communication\
-  \ take center stage."
+excerpt: This article explores the quiet but transformative arrival of GPT-4.5 in
+  the modern workplace—an AI capable not just of completing tasks, but of reflecting
+  tone, intention, and human nuance. You'll learn how this shift is reshaping roles,
+  decentralizing expertise, and elevating the human contributions of creativity, empathy,
+  and leadership. Rather than replacing human effort, GPT-4.5 invites a redefinition
+  of work—where strategic insight and authentic communication take center stage.
 source: Original Content
 source-url: ''
 call-to-action: How is your organization preparing for the intentional integration
@@ -63,7 +62,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017679014141903'
 image_width: 1456
 image_height: 816
 ---

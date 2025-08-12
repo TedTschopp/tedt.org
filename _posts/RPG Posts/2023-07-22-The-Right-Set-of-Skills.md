@@ -25,7 +25,7 @@ description: Explore the essential skills needed in today's fast-paced environme
 seo-description: null
 categories:
 - Role Playing Games
-- "The M\xE4rchen Engine"
+- The Märchen Engine
 tags: null
 keywords: Skills, Career, Adaptability, Learning, Professional Development
 location:
@@ -50,6 +50,7 @@ redirect_from:
 - /The-Right-Set-of-Skills.html
 image_width: 1024
 image_height: 1024
+mastodon-post-id: '115017669877782924'
 ---
 <style>
 .dccvsdnd thead tr th {

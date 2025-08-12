@@ -35,8 +35,8 @@ coordinates:
   latitude: 34.147
   longitude: -117.9709
 image: img/2018-05/Ebstorfer-stich2.webp
-image-alt: >-
-  Medieval map of the world (Ebstorf Map) with decorative illustrations and Latin labels.
+image-alt: Medieval map of the world (Ebstorf Map) with decorative illustrations and
+  Latin labels.
 image-artist: Gervase of Ebstorf
 image-artist-URL: null
 image-description: null
@@ -47,6 +47,7 @@ mathjax: true
 order: null
 image_width: 1000
 image_height: 999
+mastodon-post-id: '115017667464901844'
 ---
 <style>
 .dccvsdnd thead tr th {

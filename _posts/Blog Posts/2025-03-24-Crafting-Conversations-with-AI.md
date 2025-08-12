@@ -4,14 +4,13 @@ title: Crafting Conversations with AI
 subtitle: A Practical Guide to Enterprise Architecture Prompt Engineering
 quote: Like sharing coffee with a trusted colleague or discussing life's mysteries
   beside a quiet evening fire, clarity and depth matter.
-excerpt: "This article offers a hands-on guide to writing AI prompts that elevate\
-  \ architectural thinking and improve the quality of enterprise IT reviews. You'll\
-  \ learn how to construct prompts with purpose\u2014layered with role, context, task,\
-  \ constraints, and reasoning\u2014to ensure AI responses are not just technically\
-  \ accurate, but aligned with business value, regulatory expectations, and real-world\
-  \ complexity. It's a practical framework for turning AI from a generic assistant\
-  \ into a trusted architecture reviewer\u2014one that reflects your intent with clarity,\
-  \ precision, and professional depth."
+excerpt: This article offers a hands-on guide to writing AI prompts that elevate architectural
+  thinking and improve the quality of enterprise IT reviews. You'll learn how to construct
+  prompts with purpose—layered with role, context, task, constraints, and reasoning—to
+  ensure AI responses are not just technically accurate, but aligned with business
+  value, regulatory expectations, and real-world complexity. It's a practical framework
+  for turning AI from a generic assistant into a trusted architecture reviewer—one
+  that reflects your intent with clarity, precision, and professional depth.
 source: Original Content
 source-url: ''
 call-to-action: Try crafting your own structured prompts using the role-context-task
@@ -63,7 +62,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017679973397661'
 image_width: 1456
 image_height: 816
 ---

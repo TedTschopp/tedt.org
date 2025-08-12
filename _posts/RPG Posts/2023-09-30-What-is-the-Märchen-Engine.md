@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is the M\xE4rchen Engine?"
+title: What is the Märchen Engine?
 title-url: null
 subtitle: null
 subtitle-url: null
@@ -16,14 +16,14 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets: null
-description: "Welcome to the M\xE4rchen Engine, which outlines the core rules used\
-  \ by this Gaming System. This Introduction provides you with an overview of what\
-  \ the M\xE4rchen Engine is and how it works, while the later chapters show you how\
-  \ to create characters and  embark on your own exciting adventures."
+description: Welcome to the Märchen Engine, which outlines the core rules used by
+  this Gaming System. This Introduction provides you with an overview of what the
+  Märchen Engine is and how it works, while the later chapters show you how to create
+  characters and  embark on your own exciting adventures.
 seo-description: null
 categories:
 - Role Playing Games
-- "The M\xE4rchen Engine"
+- The Märchen Engine
 tags: null
 keywords: null
 location:
@@ -44,6 +44,7 @@ mathjax: false
 order: null
 image_width: 1024
 image_height: 1024
+mastodon-post-id: '115017670845770830'
 ---
 # Introduction
 

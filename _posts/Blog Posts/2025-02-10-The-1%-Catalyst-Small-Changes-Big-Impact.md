@@ -2,13 +2,12 @@
 layout: post
 title: The 1% Catalyst
 subtitle: Small Changes, Big Impact - Lessons from Sam Altman for the Energy Sector
-quote: "As AI reshapes how we work, the challenge isn't just to adapt\u2014but to\
-  \ lead the transformation."
-excerpt: "Sam Altman's insights on AI highlight how exponential innovation, cost drops,\
-  \ and small shifts can drive massive impact. This article connects those lessons\
-  \ to the energy sector, showing how we can respond with resilience, creativity,\
-  \ and leadership. As AI reshapes how we work, the challenge isn't just to adapt\u2014\
-  but to lead the transformation."
+quote: As AI reshapes how we work, the challenge isn't just to adapt—but to lead the
+  transformation.
+excerpt: Sam Altman's insights on AI highlight how exponential innovation, cost drops,
+  and small shifts can drive massive impact. This article connects those lessons to
+  the energy sector, showing how we can respond with resilience, creativity, and leadership.
+  As AI reshapes how we work, the challenge isn't just to adapt—but to lead the transformation.
 source: Original Content
 source-url: ''
 call-to-action: How is your organization preparing to lead rather than just adapt
@@ -60,7 +59,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017678535030229'
 image_width: 1456
 image_height: 816
 ---

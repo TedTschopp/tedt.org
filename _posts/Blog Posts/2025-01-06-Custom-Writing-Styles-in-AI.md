@@ -1,63 +1,58 @@
 ---
 layout: post
-
-title: "Custom Writing Styles in AI"
-title-url:
-subtitle: "How to teach AI your unique voice and make AI write like you"
-subtitle-url:
-quote: "You can train AI to write in your personal voice by feeding it samples of your past writing."
-excerpt: "A step-by-step guide to capturing your writing style and using it to generate authentic, personalized content with AI."
-source: "Original Content"
-source-url: ""
-call-to-action: "Start training AI to write in your own style today."
-
+title: Custom Writing Styles in AI
+title-url: null
+subtitle: How to teach AI your unique voice and make AI write like you
+subtitle-url: null
+quote: You can train AI to write in your personal voice by feeding it samples of your
+  past writing.
+excerpt: A step-by-step guide to capturing your writing style and using it to generate
+  authentic, personalized content with AI.
+source: Original Content
+source-url: ''
+call-to-action: Start training AI to write in your own style today.
 date: 2025-01-06 00:00:00-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - "You can teach AI your writing style by providing examples."
-    - "Summarize your style in bullet points for easy reuse."
-    - "Use prompts to have AI generate content in your voice."
-    - "Personalized AI writing boosts authenticity and engagement."
-
-description: "Learn how to capture your unique writing style and use AI to generate content that sounds like you."
-seo-description: "Discover how to train AI to write in your personal style, making AI-generated content more authentic and engaging."
-
+- You can teach AI your writing style by providing examples.
+- Summarize your style in bullet points for easy reuse.
+- Use prompts to have AI generate content in your voice.
+- Personalized AI writing boosts authenticity and engagement.
+description: Learn how to capture your unique writing style and use AI to generate
+  content that sounds like you.
+seo-description: Discover how to train AI to write in your personal style, making
+  AI-generated content more authentic and engaging.
 categories:
-    - "Computers"
-    - "Artificial Intelligence"
-    - "Opinion"
-    - "Personal Writing"
-    - "Technology"
-
+- Computers
+- Artificial Intelligence
+- Opinion
+- Personal Writing
+- Technology
 tags: AI, Writing, Personalization, Technology
 keywords: AI, writing, personal style, technology, 2025
-
 draft-status: draft
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: https://tedt.org/img/2025-01/Custom-Writing-Styles.webp
-image-alt: "AI learning and writing in a personal style"
-image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: "Custom Writing Styles in AI"
-image-description: "Digital art showing AI adapting to a user's writing style."
-image-title: "Custom Writing Styles in AI"
+image-alt: AI learning and writing in a personal style
+image-artist: Ted Tschopp
+image-artist-URL: https://tedt.org/
+image-credits: Ted Tschopp
+image-credits-URL: https://tedt.org/
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image-credits-title: Custom Writing Styles in AI
+image-description: Digital art showing AI adapting to a user's writing style.
+image-title: Custom Writing Styles in AI
+mastodon-post-id: '115017675170052132'
 ---
-
 _Bottom Line Up Front: You can train AI to write in your personal voice by feeding it samples of your past writing. This article walks you through how to capture your tone, structure, and storytelling style—then turn that into a reusable prompt. The result? AI that doesn’t just help you write—it writes like you._
  
 Here is a superpower for you to enhance your use of AI. You can have AI write something in your own style of writing.  Click on the link and head on over to AI for Web and use this prompt.  Make changes 

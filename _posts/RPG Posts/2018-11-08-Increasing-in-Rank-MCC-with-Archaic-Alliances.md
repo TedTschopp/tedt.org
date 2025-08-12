@@ -49,6 +49,7 @@ mathjax: null
 order: null
 image_width: 480
 image_height: 282
+mastodon-post-id: '115017666980182415'
 ---
 # Character Status
 As characters have adventures, they will gain a reputation, fame, and status.  You can track this growth in the campaign using Status Points.  Status Points, like experience points, are accumulated into a new number on your character sheet called Rank.  Rank is a measure of how your character's reputation, fame, and status affect the reactions of NPC's in different situations.  Unlike experience points, which represents how capable a character is, status points represent how capable the society around the characters feel the character is.

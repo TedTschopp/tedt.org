@@ -2,11 +2,11 @@
 layout: post
 title: Custom Writing Styles in Copilot
 subtitle: Train AI to Write in Your Personal Voice
-quote: "AI that doesn't just help you write\u2014it writes like you."
-excerpt: "You can train Copilot to write in your personal voice by feeding it samples\
-  \ of your past writing. This article walks you through how to capture your tone,\
-  \ structure, and storytelling style\u2014then turn that into a reusable prompt.\
-  \ The result? AI that doesn't just help you write\u2014it writes like you."
+quote: AI that doesn't just help you write—it writes like you.
+excerpt: You can train Copilot to write in your personal voice by feeding it samples
+  of your past writing. This article walks you through how to capture your tone, structure,
+  and storytelling style—then turn that into a reusable prompt. The result? AI that
+  doesn't just help you write—it writes like you.
 source: Original Content
 source-url: ''
 call-to-action: Try the prompt with your own writing samples and share your results
@@ -54,7 +54,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017675649485702'
 image_width: 1456
 image_height: 816
 ---

@@ -5,9 +5,9 @@ subtitle: How recursion principles mirror the design of meaningful AI-driven tra
   experiences
 quote: So, what scenario would you design today, and what hidden note might your learners
   uncover within it?
-excerpt: "Learn about recursion\u2014a powerful concept of breaking down complex problems\
-  \ into simpler, repeatable steps\u2014and how it mirrors the use of AI-driven simulations\
-  \ in corporate training to help learners practice essential skills."
+excerpt: Learn about recursion—a powerful concept of breaking down complex problems
+  into simpler, repeatable steps—and how it mirrors the use of AI-driven simulations
+  in corporate training to help learners practice essential skills.
 source: Original Content
 source-url: ''
 call-to-action: Try the Simulation Creator prompt to design your own AI-driven corporate
@@ -19,8 +19,8 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- "Recursion breaks complex problems into simpler, repeatable steps\u2014just like\
-  \ AI simulations break learning into manageable interactions"
+- Recursion breaks complex problems into simpler, repeatable steps—just like AI simulations
+  break learning into manageable interactions
 - AI serves as both Game Master and Mentor, creating scenarios for practicing negotiation,
   hiring, and pitching skills
 - Simulations offer three distinct scenarios tailored to individual skill levels and
@@ -75,7 +75,7 @@ image-credits-title: ''
 image-description: Visual metaphor of nested boxes representing how AI simulations
   break complex learning into manageable layers
 image-title: 'The Art of Recursive Learning: AI Simulations in Corporate Training'
-mastodon-post-id: null
+mastodon-post-id: '115017682370158224'
 image_width: 1904
 image_height: 640
 ---

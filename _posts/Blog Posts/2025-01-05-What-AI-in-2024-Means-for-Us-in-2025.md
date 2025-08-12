@@ -4,11 +4,10 @@ title: What AI in 2024 Means for Us in 2025
 subtitle: From Breakthrough to Implementation - The Path Forward for Utilities
 quote: Success will depend not just on adopting AI, but on deploying it thoughtfully,
   with the right infrastructure, collaboration, and readiness across the organization.
-excerpt: "AI breakthroughs in 2024\u2014cheaper models, multimodal capabilities, and\
-  \ broader access\u2014are reshaping what's possible in 2025. For electric utilities\
-  \ and IT organizations, this means new opportunities in efficiency, customer service,\
-  \ and sustainability, but also new responsibilities around governance, training,\
-  \ and data quality."
+excerpt: AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader
+  access—are reshaping what's possible in 2025. For electric utilities and IT organizations,
+  this means new opportunities in efficiency, customer service, and sustainability,
+  but also new responsibilities around governance, training, and data quality.
 source: Original Content
 source-url: ''
 call-to-action: Share how your organization is preparing for AI implementation in
@@ -59,7 +58,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017674689715289'
 image_width: 1456
 image_height: 816
 ---

@@ -6,13 +6,15 @@ title-url: null
 subtitle: null
 subtitle-url: null
 quote: null
-excerpt: "As characters have adventures, they will gain a reputation, fame, and status.\
-  \ You can track this growth in the campaign using Status Points. Status Points,\
-  \ like experience points, are accumulated into a new number on your character sheet\
-  \ called Rank. Rank is a measure of how your character\u2019s reputation, fame,\
-  \ and status affect the reactions of NPC\u2019s in different situations. Unlike\
-  \ experience points, which represents how capable a character is, status points\
-  \ represent how capable the society around the characters feel the character is.\n"
+excerpt: 'As characters have adventures, they will gain a reputation, fame, and status.
+  You can track this growth in the campaign using Status Points. Status Points, like
+  experience points, are accumulated into a new number on your character sheet called
+  Rank. Rank is a measure of how your character’s reputation, fame, and status affect
+  the reactions of NPC’s in different situations. Unlike experience points, which
+  represents how capable a character is, status points represent how capable the society
+  around the characters feel the character is.
+
+  '
 source: null
 source-url: null
 call-to-action: null
@@ -53,6 +55,7 @@ mathjax: true
 order: null
 image_width: 1402
 image_height: 1018
+mastodon-post-id: '115017668434710719'
 ---
 <style>
 .dccvsdnd thead tr th {

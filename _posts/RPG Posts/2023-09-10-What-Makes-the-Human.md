@@ -28,7 +28,7 @@ description: This draft on TTRPG Characters delves into the complex and multi-fa
 seo-description: null
 categories:
 - Role Playing Games
-- "The M\xE4rchen Engine"
+- The Märchen Engine
 tags: null
 keywords: null
 location:
@@ -53,6 +53,7 @@ redirect_from:
 - /What-Makes-the-Human.html
 image_width: 1584
 image_height: 752
+mastodon-post-id: '115017670363496709'
 ---
 ## Character Sheet - Work in Progress
 

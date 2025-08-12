@@ -5,10 +5,9 @@ subtitle: Where human work becomes most meaningful as AI dissolves the boundarie
   between Words, Images, Numbers, and Sounds
 quote: May we never forget the quiet things. And may we always seek that place where
   everything feels right.
-excerpt: "As AI effortlessly moves between modalities, dissolving the boundaries that\
-  \ once defined human work, we discover that the most meaningful work lies precisely\
-  \ where computers cannot venture\u2014in the realm of human connection, empathy,\
-  \ and wisdom."
+excerpt: As AI effortlessly moves between modalities, dissolving the boundaries that
+  once defined human work, we discover that the most meaningful work lies precisely
+  where computers cannot venture—in the realm of human connection, empathy, and wisdom.
 source: Original Content
 source-url: ''
 call-to-action: Reflect on where your most meaningful work lies in this post-WINS
@@ -76,7 +75,7 @@ image-credits-title: ''
 image-description: Metaphor for preserving human moments and wisdom that transcend
   AI capabilities
 image-title: 'Holding What Matters: Human Wisdom in the Post-AI Era'
-mastodon-post-id: null
+mastodon-post-id: '115017682849175352'
 image_width: 1536
 image_height: 1024
 ---

@@ -24,8 +24,8 @@ bullets:
   than high-stakes business decisions
 - Organizations need to create safe spaces for AI experimentation beyond just providing
   access
-- "AI collaboration feels conversational\u2014like having a patient sous-chef who\
-  \ adapts to your specific needs"
+- AI collaboration feels conversational—like having a patient sous-chef who adapts
+  to your specific needs
 - Employees need permission to ask AI small questions and develop decision-making
   muscle memory
 - Trust grows through repeated practice with "salmon-sized problems" before tackling
@@ -76,7 +76,7 @@ image-credits-title: ''
 image-description: Visual metaphor for how small, successful AI interactions build
   trust and confidence in larger applications
 image-title: The Trust-Building Power of Salmon-Sized Problems
-mastodon-post-id: null
+mastodon-post-id: '115017681411855831'
 image_width: 1536
 image_height: 1024
 ---

@@ -1,58 +1,52 @@
 ---
 layout: post
-
-title: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics
-title-url: 
+title: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's
+  Expert FAME Mechanics
+title-url: null
 subtitle: Unleashing Creativity in Brief Bursts
-subtitle-url: 
-quote: ""
-excerpt: ""
+subtitle-url: null
+quote: ''
+excerpt: ''
 source: Ted's Mastodon Account
 source-url: https://twit.social/@TedT/110290084270087905
-call-to-action: 
-
+call-to-action: null
 date: 2023-10-27 09:41:57
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-  - ""
-
-description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics"
-seo-description: "A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics"
-
+- ''
+description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen
+  Engine's Expert FAME Mechanics
+seo-description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen
+  Engine's Expert FAME Mechanics
 categories:
-  - Role Playing Games
-  - "The Märchen Engine"
+- Role Playing Games
+- The Märchen Engine
 tags:
-  - RPG
-  - Game Mechanics
-keywords:
-
+- RPG
+- Game Mechanics
+keywords: null
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: https://tedt.org/img/2023-07/FAME.webp
-image-alt: "Photo by Ted Tschopp using Midjourney"
+image-alt: Photo by Ted Tschopp using Midjourney
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-description: "Four people who are experts in Fitness, Academics, Mystical, and Emotional skills"
-image-title: "FAME - Fitness, Academics, Mystical, Emotional"
-
-monster-or-magical-or-religious-ideas:
-year-the-event-took-place:
-
+image-description: Four people who are experts in Fitness, Academics, Mystical, and
+  Emotional skills
+image-title: FAME - Fitness, Academics, Mystical, Emotional
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: null
 mathjax: false
-
-order:
+order: null
+mastodon-post-id: '115017671809563862'
 ---
-
 ```md
 FAME #TootRPG #TTRPG #TTRPGDesign
 

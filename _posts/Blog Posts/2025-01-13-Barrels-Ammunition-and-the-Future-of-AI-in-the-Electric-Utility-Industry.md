@@ -1,62 +1,60 @@
 ---
 layout: post
-
-title: "Barrels, Ammunition, & the Future of AI in the Electric Utility Industry"
-title-url:
-subtitle: "How cross-functional talent and modern infrastructure will shape AI's impact on utilities"
-subtitle-url:
-quote: "AI is poised to transform the electric utility industry—but success depends on identifying and empowering 'barrels,' the individuals who can lead AI adoption, drive real-time insights, and bridge operational and technical domains."
-excerpt: "A practical look at how utilities and IT teams can prepare for the next wave of AI, focusing on talent, data, and collaboration."
-source: "Original Content"
-source-url: ""
-call-to-action: "Learn how to prepare your team and infrastructure for the future of AI in utilities."
-
+title: Barrels, Ammunition, & the Future of AI in the Electric Utility Industry
+title-url: null
+subtitle: How cross-functional talent and modern infrastructure will shape AI's impact
+  on utilities
+subtitle-url: null
+quote: AI is poised to transform the electric utility industry—but success depends
+  on identifying and empowering 'barrels,' the individuals who can lead AI adoption,
+  drive real-time insights, and bridge operational and technical domains.
+excerpt: A practical look at how utilities and IT teams can prepare for the next wave
+  of AI, focusing on talent, data, and collaboration.
+source: Original Content
+source-url: ''
+call-to-action: Learn how to prepare your team and infrastructure for the future of
+  AI in utilities.
 date: 2025-01-13 00:00:00-08:00
-update:
+update: null
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    name: Ted Tschopp
-    url: https://tedt.org/
-
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
 bullets:
-    - "AI can enhance grid reliability, optimize energy distribution, and accelerate renewables."
-    - "Success depends on empowering 'barrels'—cross-functional leaders who drive adoption."
-    - "Modernizing infrastructure and data strategy is essential for AI readiness."
-    - "IT and operations must collaborate to align AI with business goals."
-
-description: "Explore how utilities can leverage AI by investing in cross-functional talent, modern infrastructure, and collaborative strategies."
-seo-description: "Discover how the future of AI in utilities depends on empowering key talent, modernizing infrastructure, and fostering IT/operations collaboration."
-
+- AI can enhance grid reliability, optimize energy distribution, and accelerate renewables.
+- Success depends on empowering 'barrels'—cross-functional leaders who drive adoption.
+- Modernizing infrastructure and data strategy is essential for AI readiness.
+- IT and operations must collaborate to align AI with business goals.
+description: Explore how utilities can leverage AI by investing in cross-functional
+  talent, modern infrastructure, and collaborative strategies.
+seo-description: Discover how the future of AI in utilities depends on empowering
+  key talent, modernizing infrastructure, and fostering IT/operations collaboration.
 categories:
-    - "Computers"
-    - "Artificial Intelligence"
-    - "Opinion"
-    - "Technology"
-    - "Science"
-
+- Computers
+- Artificial Intelligence
+- Opinion
+- Technology
+- Science
 tags: AI, Utilities, IT, Leadership, Technology, 2024
 keywords: AI, utilities, electric utility, IT, technology, leadership, 2024
-
 draft-status: draft
-
 location:
-    name: Bradbury, CA
+  name: Bradbury, CA
 coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+  latitude: 34.147
+  longitude: -117.9709
 image: https://tedt.org/img/2025-01/90mm-De-Bange-in-1898.webp
-image-alt: "AI and cross-functional teams shaping the future of utilities"
-image-artist: "Etienne-Prosper Berne-Bellecourt"
-image-artist-URL: "https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour"
-image-credits: "Etienne-Prosper Berne-Bellecourt"
-image-credits-URL: "https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour"
-image-credits-artist: "Etienne-Prosper Berne-Bellecourt"
-image-credits-artist-URL: "https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour"
-image-description: "A 90mm de Bange artillery piece, in 1898"
-image-title: "A 90mm de Bange artillery piece"
+image-alt: AI and cross-functional teams shaping the future of utilities
+image-artist: Etienne-Prosper Berne-Bellecourt
+image-artist-URL: https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour
+image-credits: Etienne-Prosper Berne-Bellecourt
+image-credits-URL: https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour
+image-credits-artist: Etienne-Prosper Berne-Bellecourt
+image-credits-artist-URL: https://en.wikipedia.org/wiki/Étienne-Prosper_Berne-Bellecour
+image-description: A 90mm de Bange artillery piece, in 1898
+image-title: A 90mm de Bange artillery piece
+mastodon-post-id: '115017676616763064'
 ---
-
 _**Bottom Line Up Front:** AI breakthroughs like OpenAI’s o1 and o3 models introduce dynamic, inference-time intelligence—redefining how compute can boost output quality. But unlocking their value depends on empowering the right people—“barrels”—who can drive AI initiatives forward. As super-capable AI becomes widely available, organizations that fail to identify and equip their key talent risk falling behind. Success won’t come from having the best tools alone—it will come from knowing how to aim them._
 
 **Executive Summary:**

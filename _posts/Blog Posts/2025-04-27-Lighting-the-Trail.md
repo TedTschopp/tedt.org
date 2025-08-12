@@ -26,8 +26,8 @@ bullets:
   and tasks
 - AI helped design a culturally sensitive Bridging ceremony that honored faith and
   avoided past mistakes
-- "The technology serves as a lantern, not a crutch\u2014illuminating the path while\
-  \ preserving human leadership"
+- The technology serves as a lantern, not a crutch—illuminating the path while preserving
+  human leadership
 - Successfully guided an entire den to earn Arrow of Light badges with no one left
   behind
 description: A personal case study of using AI to develop and execute a complete Cub
@@ -77,7 +77,7 @@ image-credits-title: ''
 image-description: Visual representation of how AI can support traditional learning
   and ceremonial experiences while preserving their human essence
 image-title: 'Lighting the Trail: AI as a Lamp for Human Leadership'
-mastodon-post-id: null
+mastodon-post-id: '115017681890709542'
 image_width: 1536
 image_height: 1024
 ---

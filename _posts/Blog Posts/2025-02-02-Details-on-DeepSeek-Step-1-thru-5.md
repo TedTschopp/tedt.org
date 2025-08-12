@@ -75,7 +75,7 @@ image-credits-title: DeepSeek R1 Training Pipeline
 image-description: Visual representation of the five-step DeepSeek training methodology
   using dog training analogies to explain AI concepts
 image-title: 'DeepSeek R1: Five Steps to Reasoning AI'
-mastodon-post-id: null
+mastodon-post-id: '115017678056365520'
 image_width: 1456
 image_height: 816
 ---

@@ -5,13 +5,13 @@ subtitle: AI Communication as a Human Skill
 quote: Ask any parent who's tried to get a straight answer from a teenager, or a team
   lead struggling with an open-ended ask from a VP. Vague begets vague. And it's no
   different with AI.
-excerpt: "This article reframes AI prompting as a communication skill\u2014akin to\
-  \ having a crucial conversation. You'll learn how effective prompts mirror strong\
-  \ human dialogue: clear, intentional, structured, and grounded in real outcomes.\
-  \ Whether you're shaping AI output or shaping culture, the same principle applies\u2014\
-  ask well to get what matters. Using the 'building' metaphor, you'll walk through\
-  \ a layered, practical framework for crafting prompts that reduce confusion, increase\
-  \ alignment, and produce smarter, more useful results."
+excerpt: 'This article reframes AI prompting as a communication skill—akin to having
+  a crucial conversation. You''ll learn how effective prompts mirror strong human
+  dialogue: clear, intentional, structured, and grounded in real outcomes. Whether
+  you''re shaping AI output or shaping culture, the same principle applies—ask well
+  to get what matters. Using the ''building'' metaphor, you''ll walk through a layered,
+  practical framework for crafting prompts that reduce confusion, increase alignment,
+  and produce smarter, more useful results.'
 source: Original Content
 source-url: ''
 call-to-action: Practice the 'building' metaphor framework in your next AI conversation
@@ -25,7 +25,7 @@ bullets:
 - AI prompting mirrors crucial conversation skills - clarity, intention, and respect
 - Effective prompts are structured like buildings with foundation, framework, and
   finishing
-- "The hardest part isn't getting an answer\u2014it's asking the question well"
+- The hardest part isn't getting an answer—it's asking the question well
 - Vague prompts lead to vague results, whether with humans or machines
 - Communication principles that work with people also work with AI
 description: A framework for AI prompting based on crucial conversation principles,
@@ -60,7 +60,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017680452230236'
 image_width: 1536
 image_height: 1024
 ---

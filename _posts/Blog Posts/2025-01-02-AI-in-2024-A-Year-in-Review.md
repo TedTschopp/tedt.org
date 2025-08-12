@@ -4,10 +4,10 @@ title: 'AI in 2024: A Year in Review'
 subtitle: Faster, Cheaper, More Accessible - But What's Next?
 quote: The rapid democratization of AI is reshaping the industry - but with great
   power comes great responsibility.
-excerpt: "AI in 2024 became faster, cheaper, and more accessible\u2014bringing powerful\
-  \ tools to more people than ever. But uneven adoption, quality issues, and rising\
-  \ environmental costs remain. For SCE, the focus in 2025 must be on closing usage\
-  \ gaps, improving data quality, and turning AI potential into measurable value."
+excerpt: AI in 2024 became faster, cheaper, and more accessible—bringing powerful
+  tools to more people than ever. But uneven adoption, quality issues, and rising
+  environmental costs remain. For SCE, the focus in 2025 must be on closing usage
+  gaps, improving data quality, and turning AI potential into measurable value.
 source: Original Content
 source-url: ''
 call-to-action: Share your thoughts on how AI advancements in 2024 have impacted your
@@ -21,7 +21,7 @@ author:
 bullets:
 - 18 organizations achieved GPT-4-class model breakthroughs, signaling a new era of
   innovation
-- "LLM prices dropped dramatically\u2014up to 27 times cheaper than previous years"
+- LLM prices dropped dramatically—up to 27 times cheaper than previous years
 - GPT-4-class models can now run on standard laptops, reducing infrastructure dependency
 - Multimodal AI became mainstream, enabling interaction across text, images, audio,
   and video
@@ -59,7 +59,7 @@ image-credits-artist-URL: https://tedt.org/
 image-credits-title: ''
 image-description: ''
 image-title: ''
-mastodon-post-id: null
+mastodon-post-id: '115017674210477849'
 image_width: 1456
 image_height: 816
 ---

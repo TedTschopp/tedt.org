@@ -101,6 +101,26 @@
       "https://tschopp.net/users/Ted/statuses/111784156309273441"
     ]
   },
+  "/AI-User-Interfaces-and-Experiences-in-2023/": {
+    "id": "/AI-User-Interfaces-and-Experiences-in-2023/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:55.803Z",
+        "id": "115017669397965166",
+        "url": "https://tschopp.net/@Ted/115017669397965166"
+      }
+    ]
+  },
+  "/AI-in-2024-A-Year-in-Review/": {
+    "id": "/AI-in-2024-A-Year-in-Review/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:09.236Z",
+        "id": "115017674210477849",
+        "url": "https://tschopp.net/@Ted/115017674210477849"
+      }
+    ]
+  },
   "/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
     "id": "/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/",
     "lastTootTimestamp": 1755014718785,
@@ -138,11 +158,31 @@
     ],
     "url": "https://tedt.org/Academic-Critique-Content/"
   },
+  "/Ahmed-ibn-Yusuf/": {
+    "id": "/Ahmed-ibn-Yusuf/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:54.564Z",
+        "id": "115017673248894592",
+        "url": "https://tschopp.net/@Ted/115017673248894592"
+      }
+    ]
+  },
   "/Art-of-Innovation/": {
     "id": "/Art-of-Innovation/",
     "lastTootTimestamp": 1755014718783,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/111223710272362671"
+    ]
+  },
+  "/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
+    "id": "/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:45.955Z",
+        "id": "115017676616763064",
+        "url": "https://tschopp.net/@Ted/115017676616763064"
+      }
     ]
   },
   "/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations/": {
@@ -184,9 +224,24 @@
     ],
     "title": "Beyond the Boundaries: Leading in a Post-AI Era",
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115012762666720141"
+      "https://tschopp.net/users/Ted/statuses/115012762666720141",
+      {
+        "created_at": "2025-08-12T20:29:21.053Z",
+        "id": "115017682849175352",
+        "url": "https://tschopp.net/@Ted/115017682849175352"
+      }
     ],
     "url": "/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/"
+  },
+  "/Bridging-the-Uncanny/": {
+    "id": "/Bridging-the-Uncanny/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:29.843Z",
+        "id": "115017679493139246",
+        "url": "https://tschopp.net/@Ted/115017679493139246"
+      }
+    ]
   },
   "/Building-a-Lego-Cat/": {
     "author": {
@@ -221,6 +276,26 @@
     ],
     "url": "/Building-a-Lego-Cat/"
   },
+  "/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/": {
+    "id": "/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:41.105Z",
+        "id": "115017668434710719",
+        "url": "https://tschopp.net/@Ted/115017668434710719"
+      }
+    ]
+  },
+  "/Crafting-Conversations-with-AI/": {
+    "id": "/Crafting-Conversations-with-AI/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:37.172Z",
+        "id": "115017679973397661",
+        "url": "https://tschopp.net/@Ted/115017679973397661"
+      }
+    ]
+  },
   "/Critique-Content/": {
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
@@ -250,6 +325,56 @@
       "https://tschopp.net/users/Ted/statuses/115003055074249913"
     ],
     "url": "/Critique-Content/"
+  },
+  "/Crucial Prompting/": {
+    "id": "/Crucial Prompting/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:44.477Z",
+        "id": "115017680452230236",
+        "url": "https://tschopp.net/@Ted/115017680452230236"
+      }
+    ]
+  },
+  "/Custom-Communicatoin-Styles-in-Copilot/": {
+    "id": "/Custom-Communicatoin-Styles-in-Copilot/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:38.552Z",
+        "id": "115017676131786071",
+        "url": "https://tschopp.net/@Ted/115017676131786071"
+      }
+    ]
+  },
+  "/Custom-Writing-Styles-in-AI/": {
+    "id": "/Custom-Writing-Styles-in-AI/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:23.878Z",
+        "id": "115017675170052132",
+        "url": "https://tschopp.net/@Ted/115017675170052132"
+      }
+    ]
+  },
+  "/Custom-Writing-Styles-in-Copilot/": {
+    "id": "/Custom-Writing-Styles-in-Copilot/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:31.195Z",
+        "id": "115017675649485702",
+        "url": "https://tschopp.net/@Ted/115017675649485702"
+      }
+    ]
+  },
+  "/Details-on-DeepSeek-Step-1-thru-5/": {
+    "id": "/Details-on-DeepSeek-Step-1-thru-5/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:07.919Z",
+        "id": "115017678056365520",
+        "url": "https://tschopp.net/@Ted/115017678056365520"
+      }
+    ]
   },
   "/Details-on-the-WINs-Network/": {
     "author": {
@@ -315,11 +440,41 @@
       }
     ]
   },
+  "/From-Chaos-to-Clarity/": {
+    "id": "/From-Chaos-to-Clarity/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:51.792Z",
+        "id": "115017680931535411",
+        "url": "https://tschopp.net/@Ted/115017680931535411"
+      }
+    ]
+  },
   "/Gamma-World-Terrain/": {
     "id": "/Gamma-World-Terrain/",
     "lastTootTimestamp": 1755014718788,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/110963006446543896"
+    ]
+  },
+  "/Getting-an-AI-to-run-your-next-TTRPG/": {
+    "id": "/Getting-an-AI-to-run-your-next-TTRPG/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:48.500Z",
+        "id": "115017668919305508",
+        "url": "https://tschopp.net/@Ted/115017668919305508"
+      }
+    ]
+  },
+  "/Increasing-in-Rank-MCC-with-Archaic-Alliances/": {
+    "id": "/Increasing-in-Rank-MCC-with-Archaic-Alliances/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:18.911Z",
+        "id": "115017666980182415",
+        "url": "https://tschopp.net/@Ted/115017666980182415"
+      }
     ]
   },
   "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
@@ -355,11 +510,41 @@
     ],
     "url": "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/"
   },
+  "/Lighting-the-Trail/": {
+    "id": "/Lighting-the-Trail/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:29:06.427Z",
+        "id": "115017681890709542",
+        "url": "https://tschopp.net/@Ted/115017681890709542"
+      }
+    ]
+  },
   "/MCC-Shaman-Spell/": {
     "id": "/MCC-Shaman-Spell/",
     "lastTootTimestamp": 1755014718788,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/111819663872505089"
+    ]
+  },
+  "/Mehmet Al-Mansur/": {
+    "id": "/Mehmet Al-Mansur/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:47.254Z",
+        "id": "115017672769844009",
+        "url": "https://tschopp.net/@Ted/115017672769844009"
+      }
+    ]
+  },
+  "/Moonwalking-Through-the-Apocalypse/": {
+    "id": "/Moonwalking-Through-the-Apocalypse/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:39.922Z",
+        "id": "115017672289348777",
+        "url": "https://tschopp.net/@Ted/115017672289348777"
+      }
     ]
   },
   "/Mutations-in-Gamma-World/": {
@@ -387,6 +572,16 @@
     "lastTootTimestamp": 1755014718787,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/111796991086841890"
+    ]
+  },
+  "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/": {
+    "id": "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:26.307Z",
+        "id": "115017667464901844",
+        "url": "https://tschopp.net/@Ted/115017667464901844"
+      }
     ]
   },
   "/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/": {
@@ -432,6 +627,16 @@
     ],
     "url": "https://tedt.org/OpenAIs-GPT-OSS-Explained.md/"
   },
+  "/Power-Cells-from-Gamma-World-in-MCC-DCC/": {
+    "id": "/Power-Cells-from-Gamma-World-in-MCC-DCC/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:11.583Z",
+        "id": "115017666499956372",
+        "url": "https://tschopp.net/@Ted/115017666499956372"
+      }
+    ]
+  },
   "/Practical-Hexcrawl-Design-and-Procedures/": {
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
@@ -457,6 +662,26 @@
       "https://tschopp.net/users/Ted/statuses/115001029386322961"
     ],
     "url": "/Practical-Hexcrawl-Design-and-Procedures/"
+  },
+  "/Project Stargate Unveiled - OpenAI’s $500 Billion Bet on an AI-Driven Future with a Data Center of Unprecedented Scale/": {
+    "id": "/Project Stargate Unveiled - OpenAI’s $500 Billion Bet on an AI-Driven Future with a Data Center of Unprecedented Scale/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:00.578Z",
+        "id": "115017677575205659",
+        "url": "https://tschopp.net/@Ted/115017677575205659"
+      }
+    ]
+  },
+  "/Reprint-ICBM-by-Hanson-W-Baldwin/": {
+    "id": "/Reprint-ICBM-by-Hanson-W-Baldwin/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:25:33.701Z",
+        "id": "115017667949378301",
+        "url": "https://tschopp.net/@Ted/115017667949378301"
+      }
+    ]
   },
   "/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
     "author": {
@@ -543,6 +768,16 @@
       }
     ]
   },
+  "/Superagents-The-Next-Big-Leap-in-Technology/": {
+    "id": "/Superagents-The-Next-Big-Leap-in-Technology/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:53.263Z",
+        "id": "115017677095846821",
+        "url": "https://tschopp.net/@Ted/115017677095846821"
+      }
+    ]
+  },
   "/Swiss-Folklore/:title:output_ext/": {
     "id": "/Swiss-Folklore/:title:output_ext/",
     "lastTootTimestamp": 1755014718867,
@@ -559,6 +794,26 @@
     "lastTootTimestamp": 1755014718785,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/113859271380786463"
+    ]
+  },
+  "/The Quiet Revolution/": {
+    "id": "/The Quiet Revolution/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:22.535Z",
+        "id": "115017679014141903",
+        "url": "https://tschopp.net/@Ted/115017679014141903"
+      }
+    ]
+  },
+  "/The-1%-Catalyst-Small-Changes-Big-Impact/": {
+    "id": "/The-1%-Catalyst-Small-Changes-Big-Impact/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:15.224Z",
+        "id": "115017678535030229",
+        "url": "https://tschopp.net/@Ted/115017678535030229"
+      }
     ]
   },
   "/The-Human-Edge/": {
@@ -600,6 +855,26 @@
     ],
     "url": "https://tedt.org/The-Mentor-In-The-Machine/"
   },
+  "/The-Right-Set-of-Skills/": {
+    "id": "/The-Right-Set-of-Skills/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:03.125Z",
+        "id": "115017669877782924",
+        "url": "https://tschopp.net/@Ted/115017669877782924"
+      }
+    ]
+  },
+  "/The-Salmon-Made-Me-Do-It/": {
+    "id": "/The-Salmon-Made-Me-Do-It/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:28:59.120Z",
+        "id": "115017681411855831",
+        "url": "https://tschopp.net/@Ted/115017681411855831"
+      }
+    ]
+  },
   "/The-Student-Who-Taught-Herself/": {
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
@@ -626,6 +901,66 @@
       "https://tschopp.net/users/Ted/statuses/114497428586613439"
     ],
     "url": "/The-Student-Who-Taught-Herself/"
+  },
+  "/Toot-RPG-Design/": {
+    "id": "/Toot-RPG-Design/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:32.601Z",
+        "id": "115017671809563862",
+        "url": "https://tschopp.net/@Ted/115017671809563862"
+      }
+    ]
+  },
+  "/Unlocking-Corporate-Learning-with-AI-Simulations/": {
+    "id": "/Unlocking-Corporate-Learning-with-AI-Simulations/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:29:13.743Z",
+        "id": "115017682370158224",
+        "url": "https://tschopp.net/@Ted/115017682370158224"
+      }
+    ]
+  },
+  "/What-AI-in-2024-Means-for-Us-in-2025/": {
+    "id": "/What-AI-in-2024-Means-for-Us-in-2025/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:16.548Z",
+        "id": "115017674689715289",
+        "url": "https://tschopp.net/@Ted/115017674689715289"
+      }
+    ]
+  },
+  "/What-Makes-the-Human/": {
+    "id": "/What-Makes-the-Human/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:10.535Z",
+        "id": "115017670363496709",
+        "url": "https://tschopp.net/@Ted/115017670363496709"
+      }
+    ]
+  },
+  "/What-is-the-Märchen-Engine/": {
+    "id": "/What-is-the-Märchen-Engine/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:17.895Z",
+        "id": "115017670845770830",
+        "url": "https://tschopp.net/@Ted/115017670845770830"
+      }
+    ]
+  },
+  "/You-Have-My-Sword-and-My-Bow-and-My-Axe/": {
+    "id": "/You-Have-My-Sword-and-My-Bow-and-My-Axe/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:26:25.276Z",
+        "id": "115017671329578145",
+        "url": "https://tschopp.net/@Ted/115017671329578145"
+      }
+    ]
   },
   "/a-beginning/": {
     "id": "/a-beginning/",
@@ -973,6 +1308,16 @@
         "created_at": "2025-08-12T19:47:16.544Z",
         "id": "115017517403043715",
         "url": "https://tschopp.net/@Ted/115017517403043715"
+      }
+    ]
+  },
+  "/reprint-whats-actually-inside-a-100-billion-AI-data-center/": {
+    "id": "/reprint-whats-actually-inside-a-100-billion-AI-data-center/",
+    "toots": [
+      {
+        "created_at": "2025-08-12T20:27:01.895Z",
+        "id": "115017673729319697",
+        "url": "https://tschopp.net/@Ted/115017673729319697"
       }
     ]
   },
