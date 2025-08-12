@@ -20,6 +20,11 @@ jobs:
       - name: Pull latest (ensure cache freshness)
         run: git pull --ff-only || true
 
+      - name: Normalize Mastodon cache
+        id: normalize-cache
+        run: |
+          python3 _code/normalize_masto_cache.py || true
+
       - name: Post new items
         id: feed2mastodon
         uses: nhoizey/github-action-feed-to-mastodon@v2
@@ -27,7 +32,8 @@ jobs:
           feedUrl: "https://tedt.org/feed-mastodon.json"
           mastodonInstance: "https://tschopp.net"
           mastodonToken: ${{ secrets.MASTODON_TOKEN }}
-          ignoreFirstRun: false
+          # During first normalized run, suppress reposting by honoring script output
+          ignoreFirstRun: ${{ steps.normalize-cache.outputs.ignore_first_run || 'false' }}
           itemChoiceStrategy: newest
           globalDelayToots: 60
           delayTootsSameItem: 2880
