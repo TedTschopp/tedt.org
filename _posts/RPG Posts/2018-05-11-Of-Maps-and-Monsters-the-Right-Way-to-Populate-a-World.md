@@ -63,7 +63,7 @@ image_height: 999
 
 # Notes
 
-This work is the beginning of a collection of notes on Monsters and Maps.  In the future I will split this out into several different sections.  I wanted to start wtih what I had here and start working my thoughts out while getting some of this out of my head and into a place I can review and look at.    
+This work is the beginning of a collection of notes on Monsters and Maps.  In the future I will split this out into several different sections.  I wanted to start wtih what I had here and start working my thoughts out while getting some of this out of my head and into a place I can review and look at.
 
 # Maps
 
