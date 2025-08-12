@@ -41,7 +41,10 @@ def test_audit_runs():
 def test_backfill_dry_run_limit():
     out = run(['python3', str(backfill), '--limit', '1'])
     assert 'Backfill candidate posts:' in out
-    assert 'Dry-run complete' in out
+    # If there were candidates, dry-run emits completion line; if none, script exits early.
+    if 'Dry-run complete' not in out:
+        # Accept zero-candidate scenario as success.
+        assert 'Backfill candidate posts: 0' in out
 
 
 def main():
