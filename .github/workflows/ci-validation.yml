@@ -118,7 +118,7 @@ jobs:
           fi
       - name: Commit persisted HTML Proofer logs
         if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "chore(ci): persist latest HTML Proofer log"
           file_pattern: Logs/htmlproofer/*.txt Logs/htmlproofer/*.md

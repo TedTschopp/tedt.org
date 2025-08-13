@@ -70,7 +70,7 @@ jobs:
           python3 _code/audit_masto_frontmatter.py --csv Logs/mastodon-missing-after-batch.csv || true
       - name: Commit batch (live only)
         if: steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "chore: automated mastodon backfill batch"
           file_pattern: cache/*.json _posts/**/*.md Logs/*.csv
