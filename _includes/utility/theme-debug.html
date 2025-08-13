@@ -1,0 +1,36 @@
+{%- comment -%}
+Debug overlay: shows current color scheme preference & applied data attribute.
+Usage: {% include utility/theme-debug.html %}
+Toggle visibility: add ?debug-theme=1 to URL or run localStorage.setItem('debugTheme','1').
+{%- endcomment -%}
+<style>
+  #theme-debug-badge{position:fixed;bottom:.5rem;right:.5rem;z-index:9999;font:12px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:rgba(0,0,0,.6);color:#fff;padding:.55rem .65rem;border-radius:.6rem;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 4px 12px -2px rgba(0,0,0,.4);display:none;max-width:220px;}
+  #theme-debug-badge.theme-light{background:rgba(255,255,255,.75);color:#111;border:1px solid rgba(0,0,0,.15);} 
+  #theme-debug-badge code{font-family:ui-monospace,monospace;font-size:11px;background:rgba(0,0,0,.25);padding:2px 4px;border-radius:4px;color:#fff;}
+  #theme-debug-badge.theme-light code{background:rgba(0,0,0,.05);color:#111;}
+  #theme-debug-badge button{background:none;border:0;color:inherit;font:inherit;padding:0;margin:0;cursor:pointer;text-decoration:underline;}
+</style>
+<div id="theme-debug-badge" aria-live="polite" aria-label="Theme debug status"></div>
+<script>
+(()=>{
+  const qs=new URLSearchParams(location.search);const enable=qs.get('debug-theme')==='1'||localStorage.getItem('debugTheme')==='1';
+  if(!enable) return; const el=document.getElementById('theme-debug-badge'); if(!el) return; el.style.display='block';
+  const prefersDark=matchMedia('(prefers-color-scheme: dark)');
+  function info(){
+     const attrDoc=document.documentElement.getAttribute('data-bs-theme');
+     const nowDark=prefersDark.matches;
+     const forced=(attrDoc==='dark'?'(forced)':'');
+     const styleBg=getComputedStyle(document.documentElement).getPropertyValue('--bs-body-bg').trim();
+     el.classList.toggle('theme-light', !nowDark);
+     el.innerHTML=`<strong>Theme Debug</strong><br>`+
+       `prefers-color-scheme: <code>${nowDark?'dark':'light'}</code><br>`+
+       `data-bs-theme attr: <code>${attrDoc||'(none)'}</code> ${forced}<br>`+
+       `bg var: <code>${styleBg||'n/a'}</code><br>`+
+       `<button type=\"button\" id=\"themeDebugClose\" aria-label=\"Hide theme debug\">hide</button>`;
+     const btn=document.getElementById('themeDebugClose');
+     if(btn){btn.onclick=()=>{el.remove();localStorage.removeItem('debugTheme');};}
+  }
+  prefersDark.addEventListener('change', info);
+  info();
+})();
+</script>

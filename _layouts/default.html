@@ -651,4 +651,9 @@
     </script>
 
   </body>
+  {%- if page.debug_theme or site.debug_theme -%}
+    {% include utility/theme-debug.html %}
+  {%- else -%}
+    {% include utility/theme-debug.html %}
+  {%- endif -%}
 </html>
