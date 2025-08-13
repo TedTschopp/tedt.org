@@ -9,6 +9,9 @@
   Uses _data/category_styles.yml for mapping class + optional display text.
 {%- endcomment -%}
 {% assign raw_category = include.category | to_s | strip %}
+{%- comment -%} Reset per-invocation variables to avoid leakage across includes {%- endcomment -%}
+{% assign label_text = '' %}
+{% assign class-to-add = '' %}
 {% assign style_map = site.data.category_styles[raw_category] %}
 {%- if style_map == nil -%}
   {%- comment -%} Attempt case-insensitive lookup {%- endcomment -%}
