@@ -1,6 +1,5 @@
 Artificial Intelligence:
   class: AI-Post
-
 Bestiary:
   class: Bestiary-Post
 Books:
@@ -66,6 +65,10 @@ Opinion:
   class: Opinion
 Shadowrun:
   class: Shadowrun
+
+Quote:
+  class: Quotes
+  text: Quotes
 
 # Fallback behavior (documentation):
 # Categories not listed here will use a slugified class and original text.

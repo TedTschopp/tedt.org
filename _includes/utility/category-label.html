@@ -8,8 +8,18 @@
     text_override (string, optional) - force display text
   Uses _data/category_styles.yml for mapping class + optional display text.
 {%- endcomment -%}
-{% assign raw_category = include.category %}
+{% assign raw_category = include.category | to_s | strip %}
 {% assign style_map = site.data.category_styles[raw_category] %}
+{%- if style_map == nil -%}
+  {%- comment -%} Attempt case-insensitive lookup {%- endcomment -%}
+  {% for k in site.data.category_styles %}
+    {% assign key_name = k[0] %}
+    {% if key_name downcase == raw_category downcase %}
+      {% assign style_map = site.data.category_styles[key_name] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{%- endif -%}
 {% if style_map %}
   {% assign class-to-add = style_map.class %}
   {% if style_map.text %}{% assign label_text = style_map.text %}{% endif %}
@@ -27,4 +37,4 @@
 {% else %}
   {% assign element = include.as | default: 'span' %}
 {% endif %}
-<{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>
+<{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>{% if include.debug %}<!-- raw:'{{raw_category}}' mapped:'{{style_map}}' class:'{{class-to-add}}' text:'{{label_text}}' -->{% endif %}
