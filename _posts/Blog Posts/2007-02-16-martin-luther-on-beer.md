@@ -34,7 +34,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: /2007-02/Martin-Luther.webp
+image: 2007-02/Martin-Luther.webp
 image-alt: Martin Luther, in black robes, plays a lute at the center of a wood-paneled room; Katharina von Bora cradles a sleeping child at left, an older scholar (Philipp Melanchthon) sits at a table, and three children at right sing from a sheet beside a green tiled stove.
 image-artist: Gustav (Gustav Adolf) Spangenberg
 image-artist-URL: (https://de.wikipedia.org/wiki/Gustav_Spangenberg_(Maler))
