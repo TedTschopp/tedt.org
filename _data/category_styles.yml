@@ -1,4 +1,4 @@
-"Artificial Intelligence":
+Artificial Intelligence:
   class: AI-Post
 
 Bestiary:
@@ -13,8 +13,10 @@ Draft:
   class: Draft-Post
 Dungeon Crawl Classics:
   class: DCC
+  text: DCC
 Dungeons & Dragons:
   class: DnD
+  text: D&D
 Folklore:
   class: Folklore
   text: "ᚠᛟᛚᚲ ᛚᛟᚱᛖ"
