@@ -1,19 +1,4 @@
 
-
-/* Dark mode */
-@media (prefers-color-scheme: dark){
-  .category-title.ai{ color: var(--ai-text-dark); }
-  .category-badge.ai{ color: var(--ai-text-dark); border-color: rgba(167,139,250,.45); }
-}
-
-  .ai-post:hover {
-  background-color: #f5c6cb;
-  border-color: #f8d7da;
-}
-  
-
-
-
 .Movies-Post {
     font-family: "Limelight", "Times New Roman", Times, serif;
 }
