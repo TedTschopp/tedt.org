@@ -13,24 +13,62 @@ Toggle visibility: add ?debug-theme=1 to URL or run localStorage.setItem('debugT
 <div id="theme-debug-badge" aria-live="polite" aria-label="Theme debug status"></div>
 <script>
 (()=>{
-  const qs=new URLSearchParams(location.search);const enable=qs.get('debug-theme')==='1'||localStorage.getItem('debugTheme')==='1';
-  if(!enable) return; const el=document.getElementById('theme-debug-badge'); if(!el) return; el.style.display='block';
+  const qs=new URLSearchParams(location.search);
+  const enable=qs.get('debug-theme')==='1'||localStorage.getItem('debugTheme')==='1';
+  if(!enable) return;
+  const el=document.getElementById('theme-debug-badge'); if(!el) return; el.style.display='block';
   const prefersDark=matchMedia('(prefers-color-scheme: dark)');
-  function info(){
+  let lastHTMLAttr=null, lastCookieTheme=null;
+  function readCookieTheme(){
+    const m=document.cookie.match(/(?:^|; )theme=([^;]+)/);return m?decodeURIComponent(m[1]):null;
+  }
+  function info(reason='init'){
      const attrDoc=document.documentElement.getAttribute('data-bs-theme');
      const nowDark=prefersDark.matches;
-     const forced=(attrDoc==='dark'?'(forced)':'');
+     const cookieTheme=readCookieTheme();
      const styleBg=getComputedStyle(document.documentElement).getPropertyValue('--bs-body-bg').trim();
+     const forced=(attrDoc==='dark'&& !cookieTheme?'(attr forced)':'');
      el.classList.toggle('theme-light', !nowDark);
      el.innerHTML=`<strong>Theme Debug</strong><br>`+
+       `reason: <code>${reason}</code><br>`+
        `prefers-color-scheme: <code>${nowDark?'dark':'light'}</code><br>`+
        `data-bs-theme attr: <code>${attrDoc||'(none)'}</code> ${forced}<br>`+
+       `cookie theme: <code>${cookieTheme||'(none)'}</code><br>`+
        `bg var: <code>${styleBg||'n/a'}</code><br>`+
        `<button type=\"button\" id=\"themeDebugClose\" aria-label=\"Hide theme debug\">hide</button>`;
      const btn=document.getElementById('themeDebugClose');
      if(btn){btn.onclick=()=>{el.remove();localStorage.removeItem('debugTheme');};}
+     lastHTMLAttr=attrDoc; lastCookieTheme=cookieTheme;
   }
-  prefersDark.addEventListener('change', info);
+  // Respond to system preference changes
+  prefersDark.addEventListener('change', () => info('media-change'));
+  // Observe attribute changes for data-bs-theme
+  new MutationObserver(muts=>{
+    for(const m of muts){
+      if(m.type==='attributes' && m.attributeName==='data-bs-theme'){
+        if(document.documentElement.getAttribute('data-bs-theme')!==lastHTMLAttr){
+          info('attr-change');
+        }
+      }
+    }
+  }).observe(document.documentElement,{attributes:true,attributeFilter:['data-bs-theme']});
+  // Hook into theme toggle if defined
+  if(window.toggleTheme){
+    const original=window.toggleTheme;
+    window.toggleTheme=function(){
+      const r=original.apply(this,arguments);
+      setTimeout(()=>info('toggleTheme'),0);
+      return r;
+    }
+  }
+  // Periodic cookie check (in case of external change)
+  setInterval(()=>{
+    const current=readCookieTheme();
+    if(current!==lastCookieTheme){ info('cookie-change'); }
+  }, 3000);
+  // Navigation change detection (simple popstate & visibility re-check)
+  window.addEventListener('popstate',()=>info('popstate'));
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) info('visibility'); });
   info();
 })();
 </script>
