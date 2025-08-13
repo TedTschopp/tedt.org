@@ -372,7 +372,7 @@
                             </div>
 
                             <div class="card-body pt-2 pb-2 p-4">
-                              <h2 class="card-title"><a href="/category/{{ category.category }}">{{ category_data_title }}</a></h2>
+                              <h2 class="card-title">{% include utility/category-label.html category=category.category href="/category/{{ category.category }}" class_extra="text-decoration-none" text_override=category_data_title %}</h2>
                               <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ category_data_subtitle }}</h3>
                               <p class="card-text three-line-clamp">{{ category_data_description }}</p>
                             </div>

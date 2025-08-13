@@ -1,0 +1,66 @@
+Bestiary:
+  class: Bestiary-Post
+Books:
+  class: Book-Post
+Communications:
+  class: Communications
+Computers:
+  class: Computer-Post
+Draft:
+  class: Draft-Post
+Dungeon Crawl Classics:
+  class: DCC
+Dungeons & Dragons:
+  class: DnD
+Folklore:
+  class: Folklore
+  text: "ᚠᛟᛚᚲ ᛚᛟᚱᛖ"
+Gamma World:
+  class: GammaWorld
+GURPS:
+  class: GURPS
+Gurps:
+  class: GURPS
+Home:
+  class: Home
+Maps:
+  class: Maps
+Middle-earth:
+  class: LotR
+  text: Middle-eartH
+Mobile:
+  class: Mobile
+Monsters:
+  class: Monster-Post
+Movies:
+  class: Movies-Post
+Mutant Crawl Classics:
+  class: MCC
+Personal Writing:
+  class: Personal-Writing-Post
+Projects:
+  class: Projects
+Prompts:
+  class: Prompts
+  text: Prompts
+Quotes:
+  class: Quotes
+Religion:
+  class: Religion
+Reprint:
+  class: Reprint-Post
+Role Playing Games:
+  class: RPGS
+Science:
+  class: Science
+The Märchen Engine:
+  class: marchen
+Philosophy:
+  class: Philosophy
+Opinion:
+  class: Opinion
+Shadowrun:
+  class: Shadowrun
+
+# Fallback behavior (documentation):
+# Categories not listed here will use a slugified class and original text.

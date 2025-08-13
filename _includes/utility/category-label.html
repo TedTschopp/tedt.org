@@ -1,0 +1,30 @@
+{%- comment -%}
+  Outputs a styled category label (optionally as a link).
+  Params:
+    category (string) - required raw category name
+    as (string, optional) - HTML element to use (default: span). Overridden to 'a' if href provided.
+    href (string, optional) - if provided, renders an anchor tag with this href
+    class_extra (string, optional) - extra classes to append
+    text_override (string, optional) - force display text
+  Uses _data/category_styles.yml for mapping class + optional display text.
+{%- endcomment -%}
+{% assign raw_category = include.category %}
+{% assign style_map = site.data.category_styles[raw_category] %}
+{% if style_map %}
+  {% assign class-to-add = style_map.class %}
+  {% if style_map.text %}{% assign label_text = style_map.text %}{% endif %}
+{% else %}
+  {% assign class-to-add = raw_category | slugify %}
+{% endif %}
+{% if label_text == nil or label_text == '' %}
+  {% assign label_text = raw_category %}
+{% endif %}
+{% if include.text_override %}
+  {% assign label_text = include.text_override %}
+{% endif %}
+{% if include.href and include.href != '' %}
+  {% assign element = 'a' %}
+{% else %}
+  {% assign element = include.as | default: 'span' %}
+{% endif %}
+<{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>
