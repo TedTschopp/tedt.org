@@ -17,6 +17,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Decide if we should post (latest already tooted?)
+        id: guard
+        run: |
+          python3 _code/should_post_latest.py > guard.json || true
+          echo "Guard output:" && cat guard.json || true
+          SHOULD=$(python3 -c "import json;print(json.load(open('guard.json')).get('should_post','false'))" || echo false)
+          echo "should_post=$SHOULD" >> $GITHUB_OUTPUT
+
       - name: Pull latest (ensure cache freshness)
         run: git pull --ff-only || true
 
@@ -27,6 +35,7 @@ jobs:
 
       - name: Post new items
         id: feed2mastodon
+        if: steps.guard.outputs.should_post == 'true'
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
           feedUrl: "https://tedt.org/feed-mastodon.json"
@@ -37,6 +46,11 @@ jobs:
           itemChoiceStrategy: newest
           globalDelayToots: 60
           delayTootsSameItem: 2880
+
+      - name: Skip note
+        if: steps.guard.outputs.should_post != 'true'
+        run: |
+          echo "Skipping feed-to-mastodon: latest post already has mastodon-post-id."
 
       - name: Resolve canonical path for toot
         if: steps.feed2mastodon.outputs.tootUrl
