@@ -42,69 +42,6 @@
     ],
     "url": "https://tedt.org/2025-07-25-Midjounrey-Prompt.7/"
   },
-  "/2025-08-10-The-Mentor-In-The-Machine/": {
-    "author": {
-      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
-      "biography": [
-        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
-        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
-        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
-      ],
-      "email": "ted@tschopp.org",
-      "facebook_username": "ted.tschopp",
-      "familyname": "Tschopp",
-      "github_username": "TedTschopp",
-      "givenname": "Ted",
-      "google_username": "TedTschopp",
-      "indiewebcamp_username": "Www.tedt.org",
-      "instagram_username": "tedtschopp",
-      "keybaseio_username": "tedtschopp",
-      "linkedin_username": "tedtschopp",
-      "mastodon_username": "TedT@twit.social",
-      "name": "Ted Tschopp",
-      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
-      "phonenumber": null,
-      "pinterest_username": "TedTschopp",
-      "quora_username": "Ted-Tschopp",
-      "reddit_username": "tedtschopp",
-      "threads_username": "tedtschopp",
-      "twitter_username": "TedTschopp",
-      "url": "https://tedt.org/",
-      "youtube_username": "TedTschopp"
-    },
-    "content_text": "ChatGPT 5 – The Mentor in the MachineI remember a winter night years ago, riding with a senior lineworker after a storm knocked out a neighborhood’s power. I fumbled through a heavy manual by flashlight, looking for the right procedure. My mentor glanced over, calm and confident: “Don’t worry, we’ll figure it out,” he said. He had done this a hundred times and knew just where to look and whom to … https://tedt.org/2025-08-10-The-Mentor-In-The-Machine/",
-    "date_modified": "2025-08-10T17:11:32-07:00",
-    "date_published": "2025-08-10T17:11:32-07:00",
-    "id": "/2025-08-10-The-Mentor-In-The-Machine/",
-    "image": "https://tedt.org/img/AI/Night-Routine.webp",
-    "lastTootTimestamp": 1755088923484,
-    "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
-    "tags": [
-      "ChatGPT5",
-      "GPT-5",
-      "AI",
-      "Utilities",
-      "Field Service",
-      "Knowledge Management",
-      "Enterprise",
-      "Productivity"
-    ],
-    "title": "The Mentor in the Machine",
-    "toots": [
-      "https://tschopp.net/users/Ted/statuses/115007412669760738",
-      "https://tschopp.net/users/Ted/statuses/115021507682771339",
-      "https://tschopp.net/users/Ted/statuses/115008734813143020",
-      "https://tschopp.net/users/Ted/statuses/115016883524414856",
-      "https://tschopp.net/users/Ted/statuses/115017216237999843",
-      "https://tschopp.net/users/Ted/statuses/115017469593962433",
-      "https://tschopp.net/users/Ted/statuses/115017847250965410",
-      "https://tschopp.net/users/Ted/statuses/115018907825581787",
-      "https://tschopp.net/users/Ted/statuses/115019148145793781",
-      "https://tschopp.net/users/Ted/statuses/115019756177627226",
-      "https://tschopp.net/users/Ted/statuses/115020050316525775"
-    ],
-    "url": "https://tedt.org/2025-08-10-The-Mentor-In-The-Machine/"
-  },
   "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/": {
     "id": "/93-year-old-blogger-it-bothers-me-that-i-have-to-go/",
     "lastTootTimestamp": 1755033068627,
@@ -919,6 +856,69 @@
     "toots": [
       "https://tschopp.net/users/Ted/statuses/114174613806302241"
     ]
+  },
+  "/The-Mentor-In-The-Machine/": {
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "biography": [
+        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
+        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
+        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
+      ],
+      "email": "ted@tschopp.org",
+      "facebook_username": "ted.tschopp",
+      "familyname": "Tschopp",
+      "github_username": "TedTschopp",
+      "givenname": "Ted",
+      "google_username": "TedTschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "instagram_username": "tedtschopp",
+      "keybaseio_username": "tedtschopp",
+      "linkedin_username": "tedtschopp",
+      "mastodon_username": "TedT@twit.social",
+      "name": "Ted Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
+      "phonenumber": null,
+      "pinterest_username": "TedTschopp",
+      "quora_username": "Ted-Tschopp",
+      "reddit_username": "tedtschopp",
+      "threads_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "url": "https://tedt.org/",
+      "youtube_username": "TedTschopp"
+    },
+    "content_text": "ChatGPT 5 – The Mentor in the MachineI remember a winter night years ago, riding with a senior lineworker after a storm knocked out a neighborhood’s power. I fumbled through a heavy manual by flashlight, looking for the right procedure. My mentor glanced over, calm and confident: “Don’t worry, we’ll figure it out,” he said. He had done this a hundred times and knew just where to look and whom to … https://tedt.org/2025-08-10-The-Mentor-In-The-Machine/",
+    "date_modified": "2025-08-10T17:11:32-07:00",
+    "date_published": "2025-08-10T17:11:32-07:00",
+    "id": "/The-Mentor-In-The-Machine/",
+    "image": "https://tedt.org/img/AI/Night-Routine.webp",
+    "lastTootTimestamp": 1755094025952,
+    "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
+    "tags": [
+      "ChatGPT5",
+      "GPT-5",
+      "AI",
+      "Utilities",
+      "Field Service",
+      "Knowledge Management",
+      "Enterprise",
+      "Productivity"
+    ],
+    "title": "The Mentor in the Machine",
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115021507682771339",
+      "https://tschopp.net/users/Ted/statuses/115007412669760738",
+      "https://tschopp.net/users/Ted/statuses/115008734813143020",
+      "https://tschopp.net/users/Ted/statuses/115016883524414856",
+      "https://tschopp.net/users/Ted/statuses/115017216237999843",
+      "https://tschopp.net/users/Ted/statuses/115017469593962433",
+      "https://tschopp.net/users/Ted/statuses/115017847250965410",
+      "https://tschopp.net/users/Ted/statuses/115018907825581787",
+      "https://tschopp.net/users/Ted/statuses/115019148145793781",
+      "https://tschopp.net/users/Ted/statuses/115019756177627226",
+      "https://tschopp.net/users/Ted/statuses/115020050316525775"
+    ],
+    "url": "https://tedt.org/2025-08-10-The-Mentor-In-The-Machine/"
   },
   "/The-Right-Set-of-Skills/": {
     "id": "/The-Right-Set-of-Skills/",

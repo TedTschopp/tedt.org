@@ -9,6 +9,7 @@ source-url: ""
 call-to-action: "Share how you envision using GPT-5 in your team or the field."
 date: 2025-08-10
 update: 
+permalink: /The-Mentor-In-The-Machine/
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
@@ -54,8 +55,6 @@ image_width: 1456
 image_height: 816
 
 mastodon-post-id: 115021507682771339
-
-
 
 ---
 

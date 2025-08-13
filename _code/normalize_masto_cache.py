@@ -123,8 +123,7 @@ def main():
                 continue
             # Determine preferred canonical path.
             # If a permalink is declared, honor it.
-            # Else, if a date-prefixed variant already exists in cache, prefer that (prevents re-toots
-            # when feed used date slug previously). Otherwise fall back to slug-only path.
+            # Else prefer slug-only path; date-prefixed variant will be merged into slug later.
             if permalink:
                 norm = normalize_path(permalink)
             else:
@@ -138,10 +137,7 @@ def main():
                     date_slug_match = date_variant
                 slug_only = normalize_path('/' + (slug or fname_base) + '/')
                 # Prefer whichever already exists in merged (so we don't create a duplicate key)
-                if date_slug_match and date_slug_match in merged:
-                    norm = date_slug_match
-                else:
-                    norm = slug_only
+                norm = slug_only
             merged.setdefault(norm, {'id': norm})
             toot_url = f"{MASTO_INSTANCE}{USER_HANDLE_PATH}{masto_id}"
             merged[norm].setdefault('toots', [])
@@ -152,9 +148,8 @@ def main():
     # Optional cleanup: drop keys that looked like raw .md exposures (already normalized into merged)
     legacy_md_keys = [k for k in original.keys() if k.endswith('.md') or '.md/' in k]
 
-    # Additional de-duplication: merge slug-only and date-prefixed variants of same post.
-    # We prefer the date-prefixed path IF it exists because feed IDs may have used it, avoiding re-posts.
-    # Pattern: /YYYY-MM-DD-slug/  vs /slug/
+    # Additional de-duplication: merge date-prefixed variants into slug-only canonical path.
+    # Pattern: /YYYY-MM-DD-slug/  -> /slug/
     date_slug_re = re.compile(r'^/(\d{4}-\d{2}-\d{2})-([A-Za-z0-9-]+)/$')
     to_delete = []
     for k in list(merged.keys()):
@@ -163,10 +158,12 @@ def main():
             continue
         slug_part = dm.group(2)
         slug_key = f'/{slug_part}/'
-        if slug_key in merged and slug_key != k:
-            # Merge toot lists & metadata into date key k
-            merge_entry(merged[k], merged[slug_key])
-            to_delete.append(slug_key)
+        # If slug key exists, merge date entry into slug; else rename date entry to slug key.
+        if slug_key in merged:
+            merge_entry(merged[slug_key], merged[k])
+            to_delete.append(k)
+        else:
+            merged[slug_key] = merged.pop(k)
     if to_delete:
         for dk in to_delete:
             del merged[dk]
