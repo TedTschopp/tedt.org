@@ -1,3 +1,5 @@
+  *  image  does not have an alt attribute (line 1099)
+  *  image  does not have an alt attribute (line 1210)
   *  image has no src or srcset attribute (line 1099)
   *  image has no src or srcset attribute (line 1210)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 977)
@@ -185,8 +187,6 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
-  *  External link https://www.linkedin.com/in/tedtschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  image  does not have an alt attribute (line 1100)
@@ -197,4 +197,4 @@
   *  linking to internal hash # that does not exist (line 3797)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7803 failures!
+HTML-Proofer found 7801 failures!
