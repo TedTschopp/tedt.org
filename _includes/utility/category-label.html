@@ -24,7 +24,26 @@
   {% assign class-to-add = style_map.class %}
   {% if style_map.text %}{% assign label_text = style_map.text %}{% endif %}
 {% else %}
-  {% assign class-to-add = raw_category | slugify %}
+  {%- comment -%} Fallback: search categories-on-blog.yml {%- endcomment -%}
+  {% assign cob_entries = site.data['categories-on-blog'] %}
+  {% assign found = false %}
+  {% for entry in cob_entries %}
+    {% if entry.category and entry.category downcase == raw_category downcase %}
+      {% if entry['class-to-assign'] %}
+        {% assign class-to-add = entry['class-to-assign'] %}
+      {% else %}
+        {% assign class-to-add = raw_category | slugify %}
+      {% endif %}
+      {% if entry.title %}
+        {% assign label_text = entry.title %}
+      {% endif %}
+      {% assign found = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if found == false %}
+    {% assign class-to-add = raw_category | slugify %}
+  {% endif %}
 {% endif %}
 {% if label_text == nil or label_text == '' %}
   {% assign label_text = raw_category %}

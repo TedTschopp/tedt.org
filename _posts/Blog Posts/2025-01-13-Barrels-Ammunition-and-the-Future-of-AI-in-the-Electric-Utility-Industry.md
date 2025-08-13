@@ -33,7 +33,6 @@ categories:
 - Computers
 - Artificial Intelligence
 - Opinion
-- Technology
 - Science
 tags: AI, Utilities, IT, Leadership, Technology, 2024
 keywords: AI, utilities, electric utility, IT, technology, leadership, 2024

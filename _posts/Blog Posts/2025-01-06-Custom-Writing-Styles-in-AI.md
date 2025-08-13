@@ -31,7 +31,6 @@ categories:
 - Artificial Intelligence
 - Opinion
 - Personal Writing
-- Technology
 tags: AI, Writing, Personalization, Technology
 keywords: AI, writing, personal style, technology, 2025
 draft-status: draft

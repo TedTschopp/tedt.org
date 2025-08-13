@@ -28,7 +28,7 @@ description: A step-by-step guide to training Copilot to write in your personal 
 seo-description: Learn how to train Copilot to write in your personal voice. Step-by-step
   guide with prompts to capture your writing style for authentic AI content generation.
 categories:
-- AI
+- Artificial Intelligence
 - Projects
 tags:
 - Copilot

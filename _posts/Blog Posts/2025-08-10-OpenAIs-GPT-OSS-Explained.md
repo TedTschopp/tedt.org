@@ -32,7 +32,7 @@ description: 'How GPT-OSS 20B & 120B shift practical on-prem AI for utilities: c
 seo-description: "Analysis of OpenAI\u2019s GPT-OSS 20B & 120B: local reasoning models\
   \ for utility workflows, hardware sizing, safety trade-offs, and on-prem agent design."
 categories:
-- Artificial-Intelligence
+- Artificial Intelligence
 - Computers
 tags:
 - openai

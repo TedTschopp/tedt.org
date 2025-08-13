@@ -35,7 +35,6 @@ categories:
 - Computers
 - Artificial Intelligence
 - Opinion
-- Technology
 - Science
 tags: AI, OpenAI, Project Stargate, Data Center, Technology, 2025
 keywords: AI, OpenAI, Project Stargate, data center, infrastructure, technology, 2025
