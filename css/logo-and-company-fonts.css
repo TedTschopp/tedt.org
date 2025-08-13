@@ -261,7 +261,41 @@ a:hover .MCC {
      Usage examples:
          <h1 class="category-title ai-post">AI</h1>
          <span class="ai-post category-badge"><span class="badge-dot"></span>AI</span>
-     ========================================================== */
+     ========================================================== 
+      TODO / Integration Checklist to fully align AI styling:
+         1. Class naming consistency:
+             - Current mapping (_data/category_styles.yml) uses class: ai-post.
+             - New title/badge selectors look for .category-title.ai and .category-badge.ai OR combined forms .ai-post.category-title / .ai-post.category-badge.
+             - Decide one canonical approach: (A) keep ai-post everywhere and only add modifier classes (category-title / category-badge), OR (B) add a plain 'ai' class in markup for semantic grouping. Recommendation: use existing ai-post + modifier classes to avoid extra markup edits.
+         2. Remove conflicting legacy style (optional):
+             - Original .ai-post block at top sets monospace (Fira Code), uppercase, background + border.
+             - If new aesthetic replaces pill label style, either:
+                  a) Delete or comment out the original .ai-post rules, OR
+                  b) Scope old style only to inline label context, e.g. `.ai-post.inline-label { ...old styles... }` and add that class where needed.
+         3. Markup adjustments:
+             - For page / category header: wrap category name with element having classes: `ai-post category-title` (or add plain `ai` if you chose option B).
+             - For small badge usage (lists / sidebars): use `ai-post category-badge` and include a child `<span class="badge-dot"></span>` before the text for the gradient dot.
+         4. Text source:
+             - _data/category_styles.yml already sets text: AI for "Artificial Intelligence"; ensure no `text_override` passed in includes that would re-expand to full phrase.
+         5. Include update (if header needs special class):
+             - If using `{% include utility/category-label.html %}` for headers, pass `class_extra='category-title'` (and optionally `category-badge`) depending on context, e.g.:
+                  `{% include utility/category-label.html category=page.categories[0] class_extra='category-title' %}`
+             - For badges in loops: `class_extra='category-badge'`.
+         6. Accessibility considerations:
+             - Ensure sufficient color contrast: test gradient underline + text in light/dark mode (target WCAG AA ~4.5:1 for body-size text). Adjust `--ai-text-light` or dark token if needed.
+         7. Browser support:
+             - `text-wrap: balance;` is not fully supported in older browsers; optionally add fallbacks: `overflow-wrap: anywhere;` directly before it.
+         8. Performance / redundancy:
+             - Consolidate duplicated font-family declarations by creating a utility class (e.g., `.font-inter-strong`) if reused elsewhere.
+         9. Dark mode verification:
+             - Confirm no global dark mode styles override the gradient. If issues, add `background-clip: padding-box;` to badge for clarity.
+        10. Reduced motion:
+             - If future animations are added (e.g., shimmer underline), wrap them in a `@media (prefers-reduced-motion: no-preference)` block.
+        11. Purge / cleanup:
+             - After confirming new look, remove obsolete AI-specific borders/backgrounds from original .ai-post to avoid confusion.
+        12. Document:
+             - Add a short note in docs/ (or comment above mapping) explaining ai-post usage + modifier classes.
+      */
 /* Root design tokens (only define if not elsewhere) */
 :root {
     --ai-accent-start:#06b6d4; /* cyan-500 */
