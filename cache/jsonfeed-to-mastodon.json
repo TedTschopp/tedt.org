@@ -910,7 +910,7 @@
     "date_published": "2025-08-10T00:00:00-07:00",
     "id": "/The-Mentor-In-The-Machine/",
     "image": "https://tedt.org/img/AI/Night-Routine.webp",
-    "lastTootTimestamp": 1755062197662,
+    "lastTootTimestamp": 1755066685830,
     "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
     "tags": [
       "ChatGPT5",
@@ -931,7 +931,8 @@
       "https://tschopp.net/users/Ted/statuses/115017847250965410",
       "https://tschopp.net/users/Ted/statuses/115018907825581787",
       "https://tschopp.net/users/Ted/statuses/115019148145793781",
-      "https://tschopp.net/users/Ted/statuses/115019756177627226"
+      "https://tschopp.net/users/Ted/statuses/115019756177627226",
+      "https://tschopp.net/users/Ted/statuses/115020050316525775"
     ],
     "url": "https://tedt.org/The-Mentor-In-The-Machine/"
   },
@@ -1663,9 +1664,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115020050316525775"
+      "https://tschopp.net/users/Ted/statuses/115021507682771339"
     ],
-    "lastTootTimestamp": 1755066685830
+    "lastTootTimestamp": 1755088923484
   },
   "https://tedt.org/OpenAIs-GPT-OSS-Explained/": {
     "id": "/OpenAIs-GPT-OSS-Explained/",
