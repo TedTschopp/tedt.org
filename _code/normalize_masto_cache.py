@@ -121,10 +121,27 @@ def main():
             masto_id, permalink, slug = parse_front_matter(md)
             if not masto_id:
                 continue
+            # Determine preferred canonical path.
+            # If a permalink is declared, honor it.
+            # Else, if a date-prefixed variant already exists in cache, prefer that (prevents re-toots
+            # when feed used date slug previously). Otherwise fall back to slug-only path.
             if permalink:
                 norm = normalize_path(permalink)
             else:
-                norm = normalize_path('/' + slug + '/')
+                # Build both possibilities
+                fname_base = md.name[:-3]  # strip .md
+                date_slug_match = None
+                m = re.match(r'^(\d{4}-\d{2}-\d{2}-.+)$', fname_base)
+                if m:
+                    date_slug = m.group(1)
+                    date_variant = normalize_path('/' + date_slug + '/')
+                    date_slug_match = date_variant
+                slug_only = normalize_path('/' + (slug or fname_base) + '/')
+                # Prefer whichever already exists in merged (so we don't create a duplicate key)
+                if date_slug_match and date_slug_match in merged:
+                    norm = date_slug_match
+                else:
+                    norm = slug_only
             merged.setdefault(norm, {'id': norm})
             toot_url = f"{MASTO_INSTANCE}{USER_HANDLE_PATH}{masto_id}"
             merged[norm].setdefault('toots', [])
@@ -135,9 +152,34 @@ def main():
     # Optional cleanup: drop keys that looked like raw .md exposures (already normalized into merged)
     legacy_md_keys = [k for k in original.keys() if k.endswith('.md') or '.md/' in k]
 
+    # Additional de-duplication: merge slug-only and date-prefixed variants of same post.
+    # We prefer the date-prefixed path IF it exists because feed IDs may have used it, avoiding re-posts.
+    # Pattern: /YYYY-MM-DD-slug/  vs /slug/
+    date_slug_re = re.compile(r'^/(\d{4}-\d{2}-\d{2})-([A-Za-z0-9-]+)/$')
+    to_delete = []
+    for k in list(merged.keys()):
+        dm = date_slug_re.match(k)
+        if not dm:
+            continue
+        slug_part = dm.group(2)
+        slug_key = f'/{slug_part}/'
+        if slug_key in merged and slug_key != k:
+            # Merge toot lists & metadata into date key k
+            merge_entry(merged[k], merged[slug_key])
+            to_delete.append(slug_key)
+    if to_delete:
+        for dk in to_delete:
+            del merged[dk]
+
     new_keys = set(merged.keys())
     old_norm_keys = {normalize_path(k) for k in original.keys() if k not in legacy_md_keys}
     changed = new_keys != old_norm_keys
+    # If duplicate normalized keys collapsed (count differs) mark changed
+    if not changed and len(original.keys()) != len(old_norm_keys):
+        changed = True
+    # If we removed any slug duplicates explicitly
+    if not changed and to_delete:
+        changed = True
     if not changed:
         for k in new_keys:
             old_entry = original.get(k) or next((original[ok] for ok in original if normalize_path(ok)==k), {})
