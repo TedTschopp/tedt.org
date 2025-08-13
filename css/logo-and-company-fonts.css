@@ -291,7 +291,7 @@ a:hover .MCC {
 }
 
 /* Page / section title treatment (retain generic selector for future markup) */
-.category-title.ai, .ai-post.category-title {
+h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title {
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 800;
     font-size: clamp(1.9rem, 1.2rem + 2.5vw, 3.2rem);
@@ -302,7 +302,7 @@ a:hover .MCC {
     margin: 0 0 .35rem;
     position: relative;
 }
-.category-title.ai::after, .ai-post.category-title::after {
+h2 .ai-post::after, .h2 .ai-post::after, .category-title.ai::after, .ai-post.category-title::after {
     content:"";
     display:block;
     height: .35rem;
