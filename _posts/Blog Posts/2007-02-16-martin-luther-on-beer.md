@@ -34,19 +34,20 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
-image-artist: null
-image-artist-URL: null
+image: /2007-02/Martin-Luther.webp
+image-alt: Martin Luther, in black robes, plays a lute at the center of a wood-paneled room; Katharina von Bora cradles a sleeping child at left, an older scholar (Philipp Melanchthon) sits at a table, and three children at right sing from a sheet beside a green tiled stove.
+image-artist: Gustav (Gustav Adolf) Spangenberg
+image-artist-URL: (https://de.wikipedia.org/wiki/Gustav_Spangenberg_(Maler))
 image-credits: null
 image-credits-URL: null
 image-credits-artist: null
 image-credits-artist-URL: null
-image-credits-title: null
-image-description: An image of a vintage beer mug juxtaposed with an old parchment
-  containing Martin Luther's handwriting, symbolizing the historical connection between
-  theological reflections and beer in Luther's time.
-image-title: null
+image-credits-title: Luther in the Circle of His Family
+image-description: A 19th-century historicist scene by Gustav Spangenberg depicting Martin Luther leading family music-making at home—an image that highlights domestic piety and the central place of congregational song in Lutheran life. The composition includes Luther’s wife, Katharina, several children singing, and (at the table) his colleague Philipp Melanchthon; the green Kachelofen and simple furnishings evoke a middle-class German interior. The best-known version is dated 1866 and is held by the Museum der bildenden Künste in Leipzig; another version dated 1875 exists in a private collection. 
+image-title: Luther in the Circle of His Family
+image_width: 4961  
+Image_height: 3411
+
 monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
