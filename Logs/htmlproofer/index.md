@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-14T23:07:19Z
+Last update: 2025-08-14T23:19:14Z
 \n## Latest Summary (tail 50 lines)\n
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
                                 ^ (line 2931)
@@ -50,8 +50,9 @@ Last update: 2025-08-14T23:07:19Z
   *  linking to internal hash # that does not exist (line 3801)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7890 failures!
+HTML-Proofer found 7889 failures!
 \n## Available Historical Logs\n
+- 2025-08-14T23-15-56-HTML Logging.txt
 - 2025-08-14T23-04-08-HTML Logging.txt
 - 2025-08-14T22-52-32-HTML Logging.txt
 - 2025-08-14T21-46-28-HTML Logging.txt
