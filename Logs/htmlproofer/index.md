@@ -1,6 +1,7 @@
 # HTML Proofer Logs
-Last update: 2025-08-14T21:01:29Z
+Last update: 2025-08-14T21:08:30Z
 \n## Latest Summary (tail 50 lines)\n
+                  <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
                                 ^ (line 2931)
   *  3657:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
@@ -39,7 +40,6 @@ Last update: 2025-08-14T21:01:29Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  image  does not have an alt attribute (line 1104)
@@ -50,8 +50,9 @@ Last update: 2025-08-14T21:01:29Z
   *  linking to internal hash # that does not exist (line 3801)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7836 failures!
+HTML-Proofer found 7835 failures!
 \n## Available Historical Logs\n
+- 2025-08-14T21-05-25-HTML Logging.txt
 - 2025-08-14T20-58-24-HTML Logging.txt
 - 2025-08-14T20-44-15-HTML Logging.txt
 - 2025-08-14T17-53-27-HTML Logging.txt
