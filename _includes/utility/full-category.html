@@ -1,6 +1,7 @@
 {%- comment -%}
   Unified category link w/ count using category_registry.yml
-  Usage (example): {% include utility/full-category.html category=pair[0] category_obj=pair[1] render_number=true %}
+  Usage (example - pseudo): include utility/full-category.html category=pair[0] category_obj=pair[1] render_number=true
+  (Deliberately shown without Liquid tag braces to avoid parser issues.)
   Params:
     category (string) - raw name, variant, or canonical slug
     category_obj (array) - optional category posts array (for size)
