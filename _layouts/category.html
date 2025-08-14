@@ -196,26 +196,18 @@
                 <div class="well">
                     <div class="post-categories">
                         <h4>All Categories</h4>
-                        <ul>
-                            {% assign sorted_categories = site.categories | sort %}
-                            {% for cat_pair in sorted_categories %}
-                              {%- assign cat_name = cat_pair[0] -%}
-                              {%- assign posts_arr = cat_pair[1] -%}
-                              {%- assign slug = cat_name | slugify -%}
-                              {%- if slug == 'schema' and cat_name contains '$schema' -%}
-                                {%- continue -%}
-                              {%- endif -%}
-                              {%- assign reg_entry = site.data.category_registry[slug] -%}
-                              {%- if reg_entry and reg_entry.hide_from_category_list -%}
-                                {%- continue -%}
-                              {%- endif -%}
-                              {%- comment -%} Derive label (prefer label, then title, fallback raw name) {%- endcomment -%}
-                              {%- assign label = reg_entry.label | default: reg_entry.title | default: cat_name -%}
-                              {%- assign klass = reg_entry.class | default: slug -%}
-                              <li style="list-style: none;">
-                                <a style="text-decoration: none; font-size: x-large;" class="{{ klass }} category-badge" href="{{ site.url }}/category/{{ slug }}">{% include utility/category-emoji.html category=label %} {{ label }} ({{ posts_arr.size }})</a>
-                              </li>
-                            {% endfor %}
+                        <ul class="list-unstyled" aria-label="All site categories">
+                          {%- capture _cat_list_sidebar -%}{% include utility/category-slugs.html filter='category_list' %}{%- endcapture -%}
+                          {%- assign _cat_slugs = _cat_list_sidebar | split: ',' | sort -%}
+                          {%- for slug in _cat_slugs -%}
+                            {%- assign reg_entry = site.data.category_registry[slug] -%}
+                            {%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}
+                            {%- assign klass = reg_entry.class | default: slug -%}
+                            {%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}
+                            <li>
+                              <a class="{{ klass }} category-badge text-decoration-none" href="{{ site.url }}/category/{{ slug }}/" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
+                            </li>
+                          {%- endfor -%}
                         </ul>
 
                       </div>

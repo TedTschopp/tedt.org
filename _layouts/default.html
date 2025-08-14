@@ -347,27 +347,15 @@
                   </style>
                   <div class="carousel-inner">
                     {% assign registry = site.data.category_registry %}
-                    {%- comment -%} Transform registry hash to an array preserving key as canonical slug {%- endcomment -%}
-                    {% assign categories = '' | split: '' %}
-                    {% for pair in registry %}
-                      {% assign slug = pair[0] %}
-                      {% assign data = pair[1] %}
-                      {%- comment -%} Skip metadata / non-category keys (e.g. $schema) {%- endcomment -%}
-                      {% if slug | slice: 0 == '$' %}{% continue %}{% endif %}
-                      {% assign categories = categories | push: slug %}
-                    {% endfor %}
-                    {%- comment -%} Optional: sort by title for stable order {%- endcomment -%}
-                    {% assign categories = categories | sort %}
+                    {% capture _cat_list %}{% include utility/category-slugs.html filter='carousel' %}{% endcapture %}
+                    {% assign categories = _cat_list | split: ',' | sort %}
                     {% for slug in categories %}
                       {% assign entry = registry[slug] %}
-                      {% if entry.hide_from_carousel %}
-                        {% continue %}
-                      {% endif %}
                       {% assign category_data_title = entry.title %}
                       {% assign category_data_subtitle = entry.subtitle %}
                       {% assign category_data_description = entry.description %}
                       {% assign category_data_img = entry.image %}
-                      <div class="carousel-item" data-bs-interval="2000" data-category-index="{{ forloop.index0 }}">
+                      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ categories.size }}" data-bs-interval="2000" data-category-index="{{ forloop.index0 }}">
                         <div class="card-group">
                           <div class="card">                              
                             <div class="position-relative">

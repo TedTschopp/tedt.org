@@ -1,0 +1,21 @@
+{%- comment -%}
+  Emits a comma-separated list of category slugs from category_registry.
+  Params:
+    filter: 'carousel' | 'category_list' (optional) to respect hide flags
+  Rules:
+    - Skip keys starting with '$'
+    - If filter == 'carousel' skip entries with hide_from_carousel
+    - If filter == 'category_list' skip entries with hide_from_category_list
+{%- endcomment -%}
+{%- assign registry = site.data.category_registry -%}
+{%- assign out = '' -%}
+{%- for pair in registry -%}
+  {%- assign slug = pair[0] -%}
+  {%- if slug | slice: 0 == '$' -%}{%- continue -%}{%- endif -%}
+  {%- assign entry = pair[1] -%}
+  {%- if include.filter == 'carousel' and entry.hide_from_carousel -%}{%- continue -%}{%- endif -%}
+  {%- if include.filter == 'category_list' and entry.hide_from_category_list -%}{%- continue -%}{%- endif -%}
+  {%- if out != '' -%}{%- assign out = out | append: ',' -%}{%- endif -%}
+  {%- assign out = out | append: slug -%}
+{%- endfor -%}
+{{ out }}
