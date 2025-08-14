@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.3.2'
+gem 'jekyll', '~> 4.4.1'
 gem 'jekyll-redirect-from'
 # NOTE: Patched versions of nokogiri (>=1.18.9) and google-protobuf (>=3.25.5)
 # require Ruby >= 3.1. Local dev Ruby is 2.6.10, so we let Dependabot/CI on Ruby 3.2
