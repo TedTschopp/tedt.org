@@ -196,17 +196,21 @@
                         <h4>All Categories</h4>
                         <ul>
                             {% assign sorted_categories = site.categories | sort %}
-                            {% for category in sorted_categories %}
-                            <li style="list-style: none;">
-                                {% assign category_to_render = category[0] %}
-                                {% assign reg_entry = site.data.category_registry[category_to_render | slugify] %}
-                                {% if reg_entry and reg_entry.hide_from_category_list %}
-                                  {% continue %}
-                                {% endif %}
-                                {% assign category_posts = site.categories[category_to_render] %}
-                                {% include utility/full-category.html category=category_to_render category_obj=category_posts render_number=true %}
-                            </li>
-                          {% endfor %}
+                            {% for cat_pair in sorted_categories %}
+                              {%- assign cat_name = cat_pair[0] -%}
+                              {%- assign posts_arr = cat_pair[1] -%}
+                              {%- assign slug = cat_name | slugify -%}
+                              {%- assign reg_entry = site.data.category_registry[slug] -%}
+                              {%- if reg_entry and reg_entry.hide_from_category_list -%}
+                                {%- continue -%}
+                              {%- endif -%}
+                              {%- comment -%} Derive label (prefer label, then title, fallback raw name) {%- endcomment -%}
+                              {%- assign label = reg_entry.label | default: reg_entry.title | default: cat_name -%}
+                              {%- assign klass = reg_entry.class | default: slug -%}
+                              <li style="list-style: none;">
+                                <a style="text-decoration: none; font-size: x-large;" class="{{ klass }}" href="{{ site.url }}/category/{{ slug }}">{% include utility/category-emoji.html category=label %} {{ label }} ({{ posts_arr.size }})</a>
+                              </li>
+                            {% endfor %}
                         </ul>
 
                       </div>
