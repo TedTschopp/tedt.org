@@ -1,6 +1,11 @@
 {%- comment -%}
   Unified category link w/ count using category_registry.yml
-  Usage: {% include utility/full-category.html category=raw_name_or_slug render-number=true category=pair[0] category_obj=pair[1] %}
+  Usage (example): {% include utility/full-category.html category=pair[0] category_obj=pair[1] render_number=true %}
+  Params:
+    category (string) - raw name, variant, or canonical slug
+    category_obj (array) - optional category posts array (for size)
+    render_number (boolean) - set true to show count
+  Note: legacy parameter name 'render-number' still supported.
 {%- endcomment -%}
 {% assign registry = site.data.category_registry %}
 {% assign raw = include.category | to_s %}
@@ -15,7 +20,7 @@
     {% if canonical %}{% break %}{% endif %}
     {% if data.raw_names %}
       {% for variant in data.raw_names %}
-        {% if variant and variant downcase == lower %}
+        {% if variant and variant | downcase == lower %}
           {% assign canonical = slug %}
           {% break %}
         {% endif %}
@@ -27,4 +32,10 @@
 {% assign entry = registry[canonical] %}
 {% assign display = entry.label | default: entry.title | default: raw %}
 {% assign klass = entry.class | default: canonical %}
-<a style="text-decoration: none; font-size: x-large;" class="{{klass}}" href="{{site.url}}/category/{{canonical}}">{% include utility/category-emoji.html category=display %} {{ display }}{% if include.render-number == true and include.category_obj %} ({{ include.category_obj.size }}){%endif %}</a>
+{%- assign render_count = false -%}
+{%- if include.render_number -%}
+  {%- assign render_count = include.render_number -%}
+{%- elsif include['render-number'] -%}
+  {%- assign render_count = include['render-number'] -%}
+{%- endif -%}
+<a style="text-decoration: none; font-size: x-large;" class="{{klass}}" href="{{site.url}}/category/{{canonical}}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>
