@@ -2,7 +2,11 @@
 layout: null
 permalink: /mastodon-backfill-progress.json
 ---
-{%- assign history = site.data.masto_backfill_history | default: [] -%}
+{%- if site.data.masto_backfill_history -%}
+  {%- assign history = site.data.masto_backfill_history -%}
+{%- else -%}
+  {%- assign history = '' | split: '' -%}
+{%- endif -%}
 {%- if history.size == 0 -%}
 {
   "has_history": false,

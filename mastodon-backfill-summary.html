@@ -7,7 +7,11 @@ permalink: /mastodon-backfill-summary/
 <h1>Mastodon Backfill Summary</h1>
 <p>This page renders a live summary derived from the history data file. For the raw markdown log (as committed by live runs) see <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>.</p>
 {% include utility/masto-backfill-badge.html %}
-{%- assign history = site.data.masto_backfill_history | default: [] -%}
+{%- if site.data.masto_backfill_history -%}
+  {%- assign history = site.data.masto_backfill_history -%}
+{%- else -%}
+  {%- assign history = '' | split: '' -%}
+{%- endif -%}
 {%- if history.size == 0 -%}
 <p>No history recorded yet.</p>
 {%- else -%}
@@ -43,7 +47,8 @@ permalink: /mastodon-backfill-summary/
     <tr><th>Timestamp</th><th>Dry</th><th>Delay</th><th>Limit</th><th>Since</th><th>Missing Before</th><th>Missing After</th><th>Processed</th></tr>
   </thead>
   <tbody>
-  {%- for i in (start_index..history.size | minus: 1) -%}
+  {%- assign end_index = history.size | minus: 1 -%}
+  {%- for i in (start_index..end_index) -%}
     {%- assign r = history[i] -%}
     <tr>
       <td>{{ r.timestamp }}</td>

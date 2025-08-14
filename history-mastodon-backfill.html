@@ -10,7 +10,11 @@ permalink: /mastodon-backfill-history/
 <p>Summary view: <a href="/mastodon-backfill-summary/">/mastodon-backfill-summary/</a> | Raw markdown: <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a></p>
 {% include utility/masto-backfill-badge.html %}
 
-{% assign history = site.data.masto_backfill_history | default: [] %}
+{%- if site.data.masto_backfill_history -%}
+  {%- assign history = site.data.masto_backfill_history -%}
+{%- else -%}
+  {%- assign history = '' | split: '' -%}
+{%- endif -%}
 {% if history.size == 0 %}
 <p>No history recorded yet.</p>
 {% else %}
