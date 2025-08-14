@@ -19,7 +19,7 @@
     {% if canonical %}{% break %}{% endif %}
     {% if data.raw_names %}
       {% for variant in data.raw_names %}
-        {% if variant and variant downcase == lower %}
+        {% if variant and variant | downcase == lower %}
           {% assign canonical = slug %}
           {% break %}
         {% endif %}
