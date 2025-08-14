@@ -45,15 +45,15 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    <h1 class="p-name">Category: {% include utility/category-emoji.html category=page.title %} {{ page.title }}</h1>
+                    <h1 class="p-name">Category: {% include utility/category-label.html category=page.title href=page.url class_extra='text-decoration-none' %}</h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
                     {% assign category = page.category | downcase | slugify %}
                     {% assign image = category | append: ".webp" %}
-                    <figure>
-                        <img class="img-responsive img-thumbnail" src="{{ site.url }}/img/categories/{{ image }}" alt="{{page.category}}">
-                    </figure>
+          <figure>
+            <img class="img-responsive img-thumbnail category-theme" data-cat="{{ page.category | slugify }}" src="{{ site.url }}/img/categories/{{ image }}" alt="{{page.category}}">
+          </figure>
                     <!-- Calculate the pages description if one isn't present -->
                     {% if page.description == null or page.description == empty %}
                       {% if page.excerpt != "" %}

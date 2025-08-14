@@ -175,12 +175,28 @@
                   <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Swiss Children Playing with a Doll" src="{{ site.url }}/img/home/Folklore.webp" />
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
-                  <h2 class="card-title" id="folklore"><a href="/category/Folklore">Swiss Folklore</a></h2>
+                  <h2 class="card-title" id="folklore">{% include utility/category-label.html category='Folklore' href='/category/folklore' class_extra='text-decoration-none' %} Swiss Folklore</h2>
                   <h3 class="text-muted card-subtitle mb-2 three-line-clamp">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
                   <p class="card-text three-line-clamp">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
-                  {% assign posts-drafts = site.posts | where_exp: "post", "post.categories contains 'Folklore'" | sort: "date" | reverse %}
+                  {%- assign posts-drafts = '' | split: '' -%}
+                  {%- assign folklore_variants = 'Folklore,ᚠᛟᛚᚲ ᛚᛟᚱᛖ' | split: ',' -%}
+                  {%- for p in site.posts -%}
+                    {%- assign matched = false -%}
+                    {%- if p.categories -%}
+                      {%- for v in folklore_variants -%}
+                        {%- if p.categories contains v -%}
+                          {%- assign matched = true -%}
+                          {%- break -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+                    {%- if matched -%}
+                      {%- assign posts-drafts = posts-drafts | push: p -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- assign posts-drafts = posts-drafts | sort: 'date' | reverse -%}
                   {% for post in posts-drafts limit:3 %}
                     <div class="container">
                       <div class="row align-items-stretch">
