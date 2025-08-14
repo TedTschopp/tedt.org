@@ -358,6 +358,9 @@
                     {% assign categories = categories | sort %}
                     {% for slug in categories %}
                       {% assign entry = registry[slug] %}
+                      {% if entry.hide_from_carousel %}
+                        {% continue %}
+                      {% endif %}
                       {% assign category_data_title = entry.title %}
                       {% assign category_data_subtitle = entry.subtitle %}
                       {% assign category_data_description = entry.description %}

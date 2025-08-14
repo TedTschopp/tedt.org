@@ -199,6 +199,10 @@
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
                                 {% assign category_to_render = category[0] %}
+                                {% assign reg_entry = site.data.category_registry[category_to_render | slugify] %}
+                                {% if reg_entry and reg_entry.hide_from_category_list %}
+                                  {% continue %}
+                                {% endif %}
                                 {% assign category_posts = site.categories[category_to_render] %}
                                 {% include utility/full-category.html category=category_to_render category_obj=category_posts render_number=true %}
                             </li>

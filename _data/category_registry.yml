@@ -9,6 +9,8 @@
 #   image: hero/category image path
 #   palette: { start, end, fontTitle?, titleColor?, titleShadow?, titleHoverColor?, titleHoverShadow?, titleStyle?, titleSize?, titleTransform? }
 #   description, subtitle: optional descriptive metadata
+#   hide_from_carousel: true (optional) exclude from homepage category carousel
+#   hide_from_category_list: true (optional) exclude from category sidebar list
 
 ai:
   title: Artificial Intelligence
@@ -32,6 +34,8 @@ movies:
   description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
   image: /img/categories/movies.webp
   palette: { start: "#eab308", end: "#f97316", fontTitle: '"Limelight","Times New Roman",Times,serif' }
+  # hide_from_carousel: true
+  # hide_from_category_list: true
 
 bestiary:
   title: Bestiary
