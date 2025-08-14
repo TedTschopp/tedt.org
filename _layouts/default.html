@@ -330,12 +330,22 @@
                     }
                   </style>
                   <div class="carousel-inner">
-                    {% assign categories = site.data['categories-on-blog'] %}
-                    {% for category in categories %}
-                      {% assign category_data_title = category.title %}
-                      {% assign category_data_subtitle = category.subtitle %}
-                      {% assign category_data_description = category.description %}
-                      {% assign category_data_img = category.image %}
+                    {% assign registry = site.data.category_registry %}
+                    {%- comment -%} Transform registry hash to an array preserving key as canonical slug {%- endcomment -%}
+                    {% assign categories = '' | split: '' %}
+                    {% for pair in registry %}
+                      {% assign slug = pair[0] %}
+                      {% assign data = pair[1] %}
+                      {% assign categories = categories | push: slug %}
+                    {% endfor %}
+                    {%- comment -%} Optional: sort by title for stable order {%- endcomment -%}
+                    {% assign categories = categories | sort %}
+                    {% for slug in categories %}
+                      {% assign entry = registry[slug] %}
+                      {% assign category_data_title = entry.title %}
+                      {% assign category_data_subtitle = entry.subtitle %}
+                      {% assign category_data_description = entry.description %}
+                      {% assign category_data_img = entry.image %}
                       <div class="carousel-item" data-bs-interval="2000" data-category-index="{{ forloop.index0 }}">
                         <div class="card-group">
                           <div class="card">                              
@@ -344,21 +354,7 @@
                                 <img src="{{ site.url }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
                               </div>
                               
-                              <!-- Carousel indicators -->
-                              <!-- 
-                              <div class="carousel-action-bar">
-                                <button type="button" class="btn btn-icon carousel-control-play-pause pause" data-bs-target="#carouselExamplePause"
-                                  data-bs-play-text="Play Carousel" data-bs-pause-text="Pause Carousel" title="Pause Carousel">
-                                  <span class="visually-hidden">Pause Carousel</span>
-                                </button>
-
-                                <div class="carousel-indicators">
-                                  {% assign categories = site.data['categories-on-blog'] %}
-                                  {% for category in categories %}
-                                    <button type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.index}}"></button>
-                                  {% endfor %}
-                                </div>
-                               </div>-->
+                              <!-- Carousel indicators removed; will be reintroduced using registry if needed -->
 
 
                               <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
@@ -374,14 +370,32 @@
                             </div>
 
                             <div class="card-body pt-2 pb-2 p-4">
-                              {% assign category_href = '/category/' | append: category.category %}
-                              <h2 class="card-title">{% include utility/category-label.html category=category.category href=category_href class_extra='text-decoration-none' %}</h2>
+                              {% assign category_href = '/category/' | append: slug %}
+                              <h2 class="card-title">{% include utility/category-label.html category=slug href=category_href class_extra='text-decoration-none' %}</h2>
                               <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ category_data_subtitle }}</h3>
                               <p class="card-text three-line-clamp">{{ category_data_description }}</p>
                             </div>
 
                             <div class="card-footer p-0">
-                              {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains category.category" | sort: "date" | reverse %}
+                              {%- comment -%} Build array of match variants: registry title + raw_names {%- endcomment -%}
+                              {% assign variants = entry.raw_names | default: '' %}
+                              {% assign variants = variants | push: category_data_title %}
+                              {% assign filtered_posts = '' | split: '' %}
+                              {% for p in site.posts %}
+                                {% assign matched = false %}
+                                {% if p.categories %}
+                                  {% for v in variants %}
+                                    {% if p.categories contains v %}
+                                      {% assign matched = true %}
+                                      {% break %}
+                                    {% endif %}
+                                  {% endfor %}
+                                {% endif %}
+                                {% if matched %}
+                                  {% assign filtered_posts = filtered_posts | push: p %}
+                                {% endif %}
+                              {% endfor %}
+                              {% assign filtered_posts = filtered_posts | sort: 'date' | reverse %}
                               {% for post in filtered_posts limit: 3 %}
                                 <div class="container">
                                   <div class="row align-items-stretch">
@@ -521,7 +535,7 @@
                               {% endif %}
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
-                            <ul>{% for bullet in post.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+                            <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}<div class="bullet-item" role="listitem">{{ bullet }}</div>{%- endfor -%}</div>
                           </div>
                         </div>
                       {% else %}
@@ -535,7 +549,7 @@
                               {% endif %}
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
-                            <ul>{% for bullet in post.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+                            <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}<div class="bullet-item" role="listitem">{{ bullet }}</div>{%- endfor -%}</div>
                           </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">

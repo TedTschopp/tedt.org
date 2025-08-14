@@ -1,65 +1,43 @@
 {%- comment -%}
-  Outputs a styled category label (optionally as a link).
+  Unified category label renderer (uses category_registry.yml)
   Params:
-    category (string) - required raw category name
-    as (string, optional) - HTML element to use (default: span). Overridden to 'a' if href provided.
-    href (string, optional) - if provided, renders an anchor tag with this href
-    class_extra (string, optional) - extra classes to append
-    text_override (string, optional) - force display text
-  Uses _data/category_styles.yml for mapping class + optional display text.
+    category (string) - required raw name or canonical slug
+    as, href, class_extra, text_override, debug (same as before)
 {%- endcomment -%}
 {% assign raw_category = include.category | to_s | strip %}
-{%- comment -%} Reset per-invocation variables to avoid leakage across includes {%- endcomment -%}
-{% assign label_text = '' %}
-{% assign class-to-add = '' %}
-{% assign style_map = site.data.category_styles[raw_category] %}
-{%- if style_map == nil -%}
-  {%- comment -%} Attempt case-insensitive lookup {%- endcomment -%}
-  {% for k in site.data.category_styles %}
-    {% assign key_name = k[0] %}
-    {% if key_name downcase == raw_category downcase %}
-      {% assign style_map = site.data.category_styles[key_name] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{%- endif -%}
-{% if style_map %}
-  {% assign class-to-add = style_map.class %}
-  {% if style_map.text %}{% assign label_text = style_map.text %}{% endif %}
+{% assign registry = site.data.category_registry %}
+{%- assign canonical = nil -%}
+{%- comment -%} First try direct key (already a slug) {%- endcomment -%}
+{% if registry[raw_category] %}
+  {% assign canonical = raw_category %}
 {% else %}
-  {%- comment -%} Fallback: search categories-on-blog.yml {%- endcomment -%}
-  {% assign cob_entries = site.data['categories-on-blog'] %}
-  {% assign found = false %}
-  {% for entry in cob_entries %}
-    {% if entry.category and entry.category downcase == raw_category downcase %}
-      {% if entry['class-to-assign'] %}
-        {% assign class-to-add = entry['class-to-assign'] %}
-      {% else %}
-        {% assign class-to-add = raw_category | slugify %}
-      {% endif %}
-      {% if entry.title %}
-        {% assign label_text = entry.title %}
-      {% endif %}
-      {% assign found = true %}
-      {% break %}
+  {%- comment -%} Search raw_names arrays case-insensitively {%- endcomment -%}
+  {% assign lower = raw_category | downcase %}
+  {% for pair in registry %}
+    {% assign slug = pair[0] %}
+    {% assign data = pair[1] %}
+    {% if canonical %}{% break %}{% endif %}
+    {% if data.raw_names %}
+      {% for variant in data.raw_names %}
+        {% if variant and variant downcase == lower %}
+          {% assign canonical = slug %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
     {% endif %}
   {% endfor %}
-  {% if found == false %}
-    {% assign class-to-add = raw_category | slugify %}
-  {% endif %}
 {% endif %}
-{% if label_text == nil or label_text == '' %}
-  {% assign label_text = raw_category %}
+{% if canonical == nil %}
+  {% assign canonical = raw_category | slugify %}
 {% endif %}
-{% if include.text_override %}
-  {% assign label_text = include.text_override %}
-{% endif %}
+{% assign entry = registry[canonical] %}
+{% assign label_text = include.text_override | default: entry.label | default: entry.title | default: raw_category %}
+{% assign class_to_add = entry.class | default: canonical %}
 {% if include.href and include.href != '' %}
   {% assign element = 'a' %}
 {% else %}
   {% assign element = include.as | default: 'span' %}
 {% endif %}
-{%- assign data_slug = class-to-add | slugify -%}
-<span class="category-theme" data-category="{{ raw_category | escape }}" data-cat="{{ data_slug }}">
-  <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>
-</span>{% if include.debug %}<!-- raw:'{{raw_category}}' mapped:'{{style_map}}' class:'{{class-to-add}}' text:'{{label_text}}' data-cat:'{{data_slug}}' -->{% endif %}
+<span class="category-theme" data-category="{{ raw_category | escape }}" data-cat="{{ canonical }}">
+  <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class_to_add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>
+</span>{% if include.debug %}<!-- raw:'{{raw_category}}' canonical:'{{canonical}}' class:'{{class_to_add}}' text:'{{label_text}}' -->{% endif %}

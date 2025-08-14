@@ -6,41 +6,23 @@
    ========================================================== */
 // Category Theming Module (exports for potential reuse/testing)
 (() => {
-  // Prefer server-provided alias map if present
-  const EXPLICIT_ALIAS = (function(){
-    try {
-      const el = document.getElementById('category-aliases-data');
-      if (el) return JSON.parse(el.textContent || '{}');
-    } catch(_) {}
-    return {
-    "D&D":"dnd",
-    "Gamma World":"gamma-world",
-    "Mutant Crawl Classics":"mutant-crawl-classics",
-    "Role Playing Games":"role-playing-games",
-    "Personal Writing":"personal-writing",
-    "Middle-eartH":"middle-earth",
-    "The Märchen Engine":"marchen-engine",
-    "ᚠᛟᛚᚲ ᛚᛟᚱᛖ":"folklore", // your runes → folklore
-    // Legacy post wrappers that might show up as data-category values
-    "Movies-Post":"movies",
-    "Bestiary-Post":"bestiary",
-    "Monster-Post":"monsters",
-    "Computer-Post":"computers",
-    "Book-Post":"books",
-    "Reprint-Post":"reprint",
-    "GammaWorld":"gamma-world",
-    "Shadowrun":"shadowrun",
-    "MCC":"mutant-crawl-classics",
-    "DCC":"dcc",
-    "DnD":"dnd",
-    "GURPS":"gurps",
-    "LotR":"middle-earth",
-    "Maps":"maps",
-    "Mobile":"mobile",
-    "RPGS":"role-playing-games",
-    "marchen":"marchen-engine",
-    "draft":"draft"
-  }; })();
+  // Build alias + palette from unified registry if present
+  let EXPLICIT_ALIAS = {};
+  let PALETTE = {};
+  try {
+    const regEl = document.getElementById('category-registry-data');
+    if (regEl) {
+      const registry = JSON.parse(regEl.textContent || '{}');
+      for (const slug in registry) {
+        const item = registry[slug];
+        if (item.raw_names) {
+          item.raw_names.forEach(rn => { if (rn) EXPLICIT_ALIAS[rn] = slug; });
+        }
+        if (item.class) EXPLICIT_ALIAS[item.class] = slug; // legacy class mapping
+        if (item.palette) PALETTE[slug] = item.palette;
+      }
+    }
+  } catch(_) {}
 
   function slugify(name){
     return name
@@ -52,13 +34,8 @@
   }
 
   /* Per-category gradient + legacy font/shadow preferences */
-  // Prefer server-provided palette if present
-  const PALETTE = (function(){
-    try {
-      const el = document.getElementById('category-palette-data');
-      if (el) return JSON.parse(el.textContent || '{}');
-    } catch(_) {}
-    return {
+  if (Object.keys(PALETTE).length === 0) {
+    PALETTE = {
     "ai":                    { start:"#06b6d4", end:"#a78bfa" },
 
     "movies":                { start:"#eab308", end:"#f97316", fontTitle:'"Limelight","Times New Roman",Times,serif' },
@@ -113,7 +90,8 @@
     },
     "marchen-engine":        { start:"#a21caf", end:"#f59e0b", fontTitle:'"IM Fell DW Pica",serif', titleStyle:"italic" },
     "draft":                 { start:"#64748b", end:"#94a3b8", fontTitle:'"Fredericka the Great",serif' }
-  }; })();
+    };
+  }
 
   function applyTheme(el, slug){
     const cfg = PALETTE[slug];

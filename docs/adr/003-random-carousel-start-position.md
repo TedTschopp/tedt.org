@@ -6,7 +6,7 @@
 
 ## Context
 
-The homepage carousel currently displays blog categories in a fixed order, always starting with the first category defined in the `categories-on-blog.yml` data file. This creates an imbalance in visibility, as the first category receives significantly more exposure than others, especially for users who don't interact with the carousel controls.
+Originally, the homepage carousel displayed blog categories in a fixed order seeded by the legacy `categories-on-blog.yml` data file (now deprecated in favor of `category_registry.yml`). This created an imbalance in visibility, as the first category received significantly more exposure than others, especially for users who didn't interact with the carousel controls.
 
 **Business Drivers:**
 

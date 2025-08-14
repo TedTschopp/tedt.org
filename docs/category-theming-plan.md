@@ -13,7 +13,7 @@ Unify all category visual treatments under a single, data-driven theming system 
 ### Phase 0 (Complete)
 
 - Introduce wrapper output in `category-label.html` include.
-- Add `_data/category_aliases.yml`.
+- Create unified `_data/category_registry.yml` (replacing separate alias, palette, styles, and categories-on-blog files).
 - Export JS theming helpers & runtime wrapper upgrade for legacy classes.
 - Early theme init script to respect user/system preference.
 
@@ -30,8 +30,7 @@ Unify all category visual treatments under a single, data-driven theming system 
 
 ### Phase 3
 
-- Generate `EXPLICIT_ALIAS` object automatically from `_data/category_aliases.yml` during build (simple Liquid -> JS serialization include or prebuild script).
-- Add test (liquid or script) that fails build if alias data and JS diverge.
+- (Simplified) JS now derives alias map from `raw_names` in registry; no separate generation step required. Potential future enhancement: build-time precomputation of CSS custom properties to drop JS for static theming.
 
 ### Phase 4
 
@@ -43,16 +42,15 @@ Unify all category visual treatments under a single, data-driven theming system 
 - Remove unused palette entries & consolidate gradients for performance.
 - Lighthouse / bundle size audit to quantify CSS reduction.
 
-## Data Sources
+## Data Source
 
-- `_data/category_aliases.yml` authoritative for raw → canonical.
-- Future `_data/category_palette.yml` (not yet created) to become source of truth for start/end colors & font/shadow metadata.
+- `_data/category_registry.yml` authoritative for raw → canonical (`raw_names`), palette, typography, label overrides, emoji, subtitle, description, and imagery.
 
 ## Risk & Mitigation
 
 | Risk | Mitigation |
 |------|------------|
-| Alias drift between JS and data file | Move to generated JS from data file in Phase 3 |
+| Alias drift between JS and data file | Eliminated by deriving from unified registry |
 | FOUC of wrong theme | Optionally inline early init script in `<head>` or server‑render theme attribute once preference cookie known |
 | Legacy templates missed | Add temporary console warnings for elements with legacy classes not wrapped after Phase 1 |
 | Performance regression (extra wrappers) | Later consolidate by merging wrapper + inner element if markup becomes redundant |
@@ -62,7 +60,7 @@ Unify all category visual treatments under a single, data-driven theming system 
 - 0 occurrences of legacy category class usage in templates (excluding controlled bridge CSS) by end of Phase 2.
 - No visual diffs (manual spot check + screenshot compare for key categories) between legacy and unified system.
 - < 5% increase (prefer decrease) in total CSS size after pruning.
-- Single source for alias + palette data.
+- Single source for alias + palette + metadata in registry file.
 
 ## Open Questions
 

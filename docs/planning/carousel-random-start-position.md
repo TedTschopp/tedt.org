@@ -8,7 +8,7 @@ Implement functionality to make the homepage carousel start on a random category
 
 - Carousel currently uses Jekyll liquid templating with `{% if forloop.first %}active{% endif %}` to set the first item as active
 - Bootstrap carousel initialization happens automatically via `data-bs-ride="false"`
-- Carousel contains multiple blog categories from `site.data['categories-on-blog']`
+- Carousel now sourced from unified `site.data.category_registry` (legacy `categories-on-blog.yml` deprecated)
 
 ## Proposed Solution
 
