@@ -18,6 +18,10 @@ gem 'jekyll-redirect-from'
 if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('3.1.0')
 	gem 'nokogiri', '>= 1.18.9'
 	gem 'google-protobuf', '>= 3.25.5', '< 4.0'
+	# sass-embedded pulls in google-protobuf (~> 3.x). Older versions (e.g. 1.58.x)
+	# constrain protobuf to < 3.25.5. Requiring a newer sass-embedded ensures the
+	# updated google-protobuf can be resolved.
+	gem 'sass-embedded', '>= 1.77.0'
 end
 
 # NOTE: If you wish to force security even on older Ruby, upgrade Ruby locally
