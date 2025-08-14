@@ -1,7 +1,3 @@
-  *  image  does not have an alt attribute (line 1103)
-  *  image  does not have an alt attribute (line 1214)
-  *  image has no src or srcset attribute (line 1103)
-  *  image has no src or srcset attribute (line 1214)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 981)
 - ./_site/thoughts-on-corporate-collaboration-tools/index.html
   *  2952:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
@@ -186,7 +182,11 @@
              It's possible libcurl couldn't connect to the server or perhaps the request timed out.
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
-  *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://vimeo.com/TedTschopp failed: 403 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
+  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
+  *  External link https://www.linkedin.com/in/tedtschopp failed: 999 No error
+  *  External link https://www.linkedin.com/in/tedtschopp/ failed: 999 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  image  does not have an alt attribute (line 1104)
@@ -197,4 +197,4 @@
   *  linking to internal hash # that does not exist (line 3801)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7835 failures!
+HTML-Proofer found 7839 failures!
