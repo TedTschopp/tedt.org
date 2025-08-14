@@ -45,7 +45,8 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    <h1 class="p-name">Category: {% include utility/category-label.html category=page.title href=page.url kind='title' class_extra='text-decoration-none' %}</h1>
+                    {% assign __cat_slug = page.title | slugify %}
+                    <h1 class="p-name">Category: {% include utility/category-label.html category=page.title href='/category/' | append: __cat_slug | append: '/' kind='title' class_extra='text-decoration-none' %}</h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
