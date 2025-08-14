@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
 
@@ -27,6 +27,19 @@
 
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
+    <script>
+      // Early theme initialization (moved to head for minimal FOUC) (Item C)
+      (function(){
+        try {
+          const cookie = document.cookie.match(/(?:^|; )site_theme=([^;]+)/);
+          let pref = cookie ? decodeURIComponent(cookie[1]) : 'auto';
+          if(!['light','dark','auto'].includes(pref)) pref = 'auto';
+          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const mode = pref === 'auto' ? (systemDark ? 'dark':'light') : pref;
+          document.documentElement.setAttribute('data-bs-theme', mode);
+        } catch(e){}
+      })();
+    </script>
   </head>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
 
@@ -35,17 +48,6 @@
 
     <!-- Page Content -->
     <!-- Masthead -->
-<!--
-    <header>
-      <section class="showcase position-relative">
-        <div class="g-0 w-100 container-fluid">
-          <div class="w-100 position-relative">
-            <img src="/img/categories/home.webp" id="hero-img" class="img-fluid w-100 h-100" alt="Image of Ted Tschopp sitting by a lake">
-          </div>
-        </div>
-      </section>
-    </header>
--->
 
     <header>
       <section class="showcase position-relative">
@@ -519,11 +521,7 @@
                               {% endif %}
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
-                            <ul>    
-                              {% for bullet in post.bullets %}
-                                <li>{{ bullet }}</li>
-                              {% endfor %}
-                            </ul>
+                            <ul>{% for bullet in post.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
                           </div>
                         </div>
                       {% else %}
@@ -537,11 +535,7 @@
                               {% endif %}
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
-                            <ul>    
-                              {% for bullet in post.bullets %}
-                                <li>{{ bullet }}</li>
-                              {% endfor %}
-                            </ul>
+                            <ul>{% for bullet in post.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
                           </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
@@ -651,9 +645,5 @@
     </script>
 
   </body>
-  {%- if page.debug_theme or site.debug_theme -%}
-    {% include utility/theme-debug.html %}
-  {%- else -%}
-    {% include utility/theme-debug.html %}
-  {%- endif -%}
+  {% include utility/theme-debug.html %}
 </html>

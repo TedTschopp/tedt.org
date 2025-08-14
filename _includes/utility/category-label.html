@@ -59,4 +59,7 @@
 {% else %}
   {% assign element = include.as | default: 'span' %}
 {% endif %}
-<{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>{% if include.debug %}<!-- raw:'{{raw_category}}' mapped:'{{style_map}}' class:'{{class-to-add}}' text:'{{label_text}}' -->{% endif %}
+{%- assign data_slug = class-to-add | slugify -%}
+<span class="category-theme" data-category="{{ raw_category | escape }}" data-cat="{{ data_slug }}">
+  <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class-to-add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}">{{ label_text }}</{{element}}>
+</span>{% if include.debug %}<!-- raw:'{{raw_category}}' mapped:'{{style_map}}' class:'{{class-to-add}}' text:'{{label_text}}' data-cat:'{{data_slug}}' -->{% endif %}

@@ -40,25 +40,25 @@
             h3.three-line-clamp {
                 display: -webkit-box;
                 -webkit-line-clamp: 3; 
+                line-clamp: 3;
                 -webkit-box-orient: vertical;  
                 overflow: hidden;
-
                 height: calc(1.2em * 3);         /* exactly line-height × number of lines (1.2em × 3) */
             }
             h5.three-line-clamp {
                 display: -webkit-box;
                 -webkit-line-clamp: 3; 
+                line-clamp: 3;
                 -webkit-box-orient: vertical;  
                 overflow: hidden;
-
                 height: calc(1.2em * 3);         /* exactly line-height × number of lines (1.2em × 3) */
             }
             p.three-line-clamp {
                 display: -webkit-box;
                 -webkit-line-clamp: 3; 
+                line-clamp: 3;
                 -webkit-box-orient: vertical;  
                 overflow: hidden;
-
                 height: calc(var(--bs-body-line-height) * 3);         /* exactly line-height × number of lines (1.2em × 3) */
             }
 
@@ -169,3 +169,8 @@
             .addEventListener('change', setThemeColor); // keep in sync
         /* call setThemeColor() again whenever you toggle a .dark class, etc. */
     </script>
+    <!-- Category Theme Data (application/json blocks for safe parsing) -->
+    <script type="application/json" id="category-palette-data">{{ site.data.category_palette | jsonify }}</script>
+    <script type="application/json" id="category-aliases-data">{{ site.data.category_aliases | jsonify }}</script>
+    <!-- Category Theme Initializer -->
+        <script src="/js/category-theme.js"></script>
