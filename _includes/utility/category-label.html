@@ -2,7 +2,15 @@
   Unified category label renderer (uses category_registry.yml)
   Params:
     category (string) - required raw name or canonical slug
-    as, href, class_extra, text_override, debug (same as before)
+    kind (string) - 'title' | 'badge' (adds category-title or category-badge class for theming bridge)
+    as (string) - force element name if no href (default span)
+    href (string) - if provided, element becomes an <a>
+    class_extra (string) - extra classes appended
+    text_override (string) - override visible label
+    debug (bool) - append HTML comment with resolution info
+  Notes:
+    - Adding kind="title" ensures CSS selectors like [data-cat] .category-title apply.
+    - Adding kind="badge" enables badge styling; you can wrap externally if needed.
 {%- endcomment -%}
 {% assign raw_category = include.category | to_s | strip %}
 {% assign registry = site.data.category_registry %}
@@ -33,6 +41,11 @@
 {% assign entry = registry[canonical] %}
 {% assign label_text = include.text_override | default: entry.label | default: entry.title | default: raw_category %}
 {% assign class_to_add = entry.class | default: canonical %}
+{%- if include.kind == 'title' -%}
+  {% assign class_to_add = class_to_add | append: ' category-title' %}
+{%- elsif include.kind == 'badge' -%}
+  {% assign class_to_add = class_to_add | append: ' category-badge' %}
+{%- endif -%}
 {% if include.href and include.href != '' %}
   {% assign element = 'a' %}
 {% else %}

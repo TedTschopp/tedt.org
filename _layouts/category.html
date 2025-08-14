@@ -45,7 +45,7 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    <h1 class="p-name">Category: {% include utility/category-label.html category=page.title href=page.url class_extra='text-decoration-none' %}</h1>
+                    <h1 class="p-name">Category: {% include utility/category-label.html category=page.title href=page.url kind='title' class_extra='text-decoration-none' %}</h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
