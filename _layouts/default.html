@@ -352,6 +352,8 @@
                     {% for pair in registry %}
                       {% assign slug = pair[0] %}
                       {% assign data = pair[1] %}
+                      {%- comment -%} Skip metadata / non-category keys (e.g. $schema) {%- endcomment -%}
+                      {% if slug | slice: 0 == '$' %}{% continue %}{% endif %}
                       {% assign categories = categories | push: slug %}
                     {% endfor %}
                     {%- comment -%} Optional: sort by title for stable order {%- endcomment -%}

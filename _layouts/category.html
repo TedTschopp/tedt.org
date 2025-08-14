@@ -202,6 +202,9 @@
                               {%- assign cat_name = cat_pair[0] -%}
                               {%- assign posts_arr = cat_pair[1] -%}
                               {%- assign slug = cat_name | slugify -%}
+                              {%- if slug == 'schema' and cat_name contains '$schema' -%}
+                                {%- continue -%}
+                              {%- endif -%}
                               {%- assign reg_entry = site.data.category_registry[slug] -%}
                               {%- if reg_entry and reg_entry.hide_from_category_list -%}
                                 {%- continue -%}
