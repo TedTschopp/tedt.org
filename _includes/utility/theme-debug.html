@@ -18,22 +18,44 @@ Toggle visibility: add ?debug-theme=1 to URL or run localStorage.setItem('debugT
   if(!enable) return;
   const el=document.getElementById('theme-debug-badge'); if(!el) return; el.style.display='block';
   const prefersDark=matchMedia('(prefers-color-scheme: dark)');
-  let lastHTMLAttr=null, lastCookieTheme=null;
+  let lastHTMLAttr=null, lastCookieTheme=null, renderScheduled=false;
+  const eventHistory=[]; // {reason, t}
+  const MAX_HISTORY=6;
+  let pendingReasons=new Set();
+  let toggleHooked=false; let togglePollCount=0;
+
   function readCookieTheme(){
     const m=document.cookie.match(/(?:^|; )theme=([^;]+)/);return m?decodeURIComponent(m[1]):null;
   }
-  function info(reason='init'){
+  function record(reason){
+    pendingReasons.add(reason);
+    if(!renderScheduled){
+      renderScheduled=true;
+      // Debounce cluster of fast events
+      setTimeout(()=>{ const combined=[...pendingReasons].join(','); pendingReasons.clear(); doRender(combined); },80);
+    }
+  }
+  function doRender(reasonCombined){
+     renderScheduled=false;
      const attrDoc=document.documentElement.getAttribute('data-bs-theme');
      const nowDark=prefersDark.matches;
      const cookieTheme=readCookieTheme();
+     const systemTheme=nowDark?'dark':'light';
+     const chosen=attrDoc || cookieTheme || systemTheme;
+     const overridden = chosen !== systemTheme;
      const styleBg=getComputedStyle(document.documentElement).getPropertyValue('--bs-body-bg').trim();
-     const forced=(attrDoc==='dark'&& !cookieTheme?'(attr forced)':'');
-     el.classList.toggle('theme-light', !nowDark);
+     const ts=performance.now();
+     eventHistory.push({reason:reasonCombined,t:ts});
+     while(eventHistory.length>MAX_HISTORY) eventHistory.shift();
+     el.classList.toggle('theme-light', chosen==='light');
+     const historyLine=eventHistory.map(e=>e.reason).join(' → ');
      el.innerHTML=`<strong>Theme Debug</strong><br>`+
-       `reason: <code>${reason}</code><br>`+
-       `prefers-color-scheme: <code>${nowDark?'dark':'light'}</code><br>`+
-       `data-bs-theme attr: <code>${attrDoc||'(none)'}</code> ${forced}<br>`+
+       `last reasons: <code>${historyLine}</code><br>`+
+       `prefers-color-scheme (system): <code>${systemTheme}</code><br>`+
+       `data-bs-theme attr: <code>${attrDoc||'(none)'}</code><br>`+
        `cookie theme: <code>${cookieTheme||'(none)'}</code><br>`+
+       `effective theme: <code>${chosen}</code><br>`+
+       `override active: <code>${overridden}</code><br>`+
        `bg var: <code>${styleBg||'n/a'}</code><br>`+
        `<button type=\"button\" id=\"themeDebugClose\" aria-label=\"Hide theme debug\">hide</button>`;
      const btn=document.getElementById('themeDebugClose');
@@ -41,34 +63,37 @@ Toggle visibility: add ?debug-theme=1 to URL or run localStorage.setItem('debugT
      lastHTMLAttr=attrDoc; lastCookieTheme=cookieTheme;
   }
   // Respond to system preference changes
-  prefersDark.addEventListener('change', () => info('media-change'));
+  prefersDark.addEventListener('change', () => record('media-change'));
   // Observe attribute changes for data-bs-theme
   new MutationObserver(muts=>{
     for(const m of muts){
       if(m.type==='attributes' && m.attributeName==='data-bs-theme'){
         if(document.documentElement.getAttribute('data-bs-theme')!==lastHTMLAttr){
-          info('attr-change');
+          record('attr-change');
         }
       }
     }
   }).observe(document.documentElement,{attributes:true,attributeFilter:['data-bs-theme']});
-  // Hook into theme toggle if defined
-  if(window.toggleTheme){
-    const original=window.toggleTheme;
-    window.toggleTheme=function(){
-      const r=original.apply(this,arguments);
-      setTimeout(()=>info('toggleTheme'),0);
-      return r;
+  // Late-hook theme toggle if defined after load
+  const hookToggle=()=>{
+    if(toggleHooked) return;
+    if(typeof window.toggleTheme==='function'){
+      const original=window.toggleTheme;
+      window.toggleTheme=function(){
+        const r=original.apply(this,arguments);
+        record('toggleTheme');
+        return r;
+      }; toggleHooked=true;
     }
-  }
-  // Periodic cookie check (in case of external change)
-  setInterval(()=>{
-    const current=readCookieTheme();
-    if(current!==lastCookieTheme){ info('cookie-change'); }
-  }, 3000);
-  // Navigation change detection (simple popstate & visibility re-check)
-  window.addEventListener('popstate',()=>info('popstate'));
-  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) info('visibility'); });
-  info();
+  };
+  hookToggle();
+  const togglePoll=setInterval(()=>{ if(toggleHooked || ++togglePollCount>20){ clearInterval(togglePoll); } else { hookToggle(); } },500);
+  // Periodic cookie check
+  setInterval(()=>{ const current=readCookieTheme(); if(current!==lastCookieTheme){ record('cookie-change'); } },3000);
+  // Navigation / visibility
+  window.addEventListener('popstate',()=>record('popstate'));
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) record('visibility'); });
+  // Initial render
+  record('init');
 })();
 </script>
