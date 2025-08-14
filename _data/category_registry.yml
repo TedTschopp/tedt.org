@@ -204,7 +204,7 @@ personal-writing:
   subtitle: "From the Heart"
   description: "Personal essays and creative pieces that offer a glimpse into the writer's mind and heart. Explore intimate stories, reflections, and imaginative works."
   image: /img/categories/personal-writing.webp
-  palette: { start: "#f43f5e", end: "#a78bfa", fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif', titleSize: "1.5rem" }
+  palette: { start: "#f43f5e", end: "#a78bfa", fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif' }
 
 philosophy:
   title: Philosophy
