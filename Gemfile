@@ -2,12 +2,27 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'
 gem 'jekyll-redirect-from'
-# NOTE: Patched versions of nokogiri (>=1.18.9) and google-protobuf (>=3.25.5)
-# require Ruby >= 3.1. Local dev Ruby is 2.6.10, so we let Dependabot/CI on Ruby 3.2
-# raise & merge updates; do not pin here to avoid resolution failure locally.
-# Security overrides for vulnerable transient dependencies
-# NOTE: nokogiri & google-protobuf security upgrades require newer Ruby than local (2.6.10).
-# CI (Ruby 3.2) will surface updated versions via Dependabot; local pin skipped to avoid resolution failure.
+
+# ---------------------------------------------------------------------------
+# Security: enforce minimum patched versions for transitive dependencies
+#   Vulnerabilities (bundler-audit):
+#     - google-protobuf CVE-2024-7254 (update to >= 3.25.5)
+#     - nokogiri multiple GHSA advisories (update to >= 1.18.9)
+# These newer versions require a newer Ruby (>= 3.1). To avoid breaking local
+# developers still on Ruby 2.6.x, only apply the hard constraints when running
+# on a sufficiently new Ruby. CI (GitHub Actions) already uses Ruby >= 3.1 so
+# the secure versions will be resolved and the lockfile updated there.
+# Once local environments upgrade Ruby, this conditional can be removed and
+# the constraints made unconditional.
+# ---------------------------------------------------------------------------
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('3.1.0')
+	gem 'nokogiri', '>= 1.18.9'
+	gem 'google-protobuf', '>= 3.25.5', '< 4.0'
+end
+
+# NOTE: If you wish to force security even on older Ruby, upgrade Ruby locally
+# first; modern nokogiri no longer supports EOL Ruby 2.6.
+
 # Add any other plugins you need explicitly here
 group :development do
 	gem 'html-proofer', '~> 3.19'
