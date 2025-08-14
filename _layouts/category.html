@@ -198,8 +198,8 @@
                             {% assign sorted_categories = site.categories | sort %}
                             {% for category in sorted_categories %}
                             <li style="list-style: none;">
-                                {% assign category-to-render = category[0] %}
-                                {% include utility/full-category.html category=category-to-render category_obj=site.categories[category-to-render] render_number=true %}
+                                {% assign category_to_render = category[0] %}
+                                {% include utility/full-category.html category=category_to_render category_obj=site.categories[category_to_render] render_number=true %}
                             </li>
                           {% endfor %}
                         </ul>
