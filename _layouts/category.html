@@ -210,7 +210,7 @@
                               {%- assign label = reg_entry.label | default: reg_entry.title | default: cat_name -%}
                               {%- assign klass = reg_entry.class | default: slug -%}
                               <li style="list-style: none;">
-                                <a style="text-decoration: none; font-size: x-large;" class="{{ klass }}" href="{{ site.url }}/category/{{ slug }}">{% include utility/category-emoji.html category=label %} {{ label }} ({{ posts_arr.size }})</a>
+                                <a style="text-decoration: none; font-size: x-large;" class="{{ klass }} category-badge" href="{{ site.url }}/category/{{ slug }}">{% include utility/category-emoji.html category=label %} {{ label }} ({{ posts_arr.size }})</a>
                               </li>
                             {% endfor %}
                         </ul>
