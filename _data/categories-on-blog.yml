@@ -3,7 +3,7 @@
 #   subtitle: "Creatures and Beasts from All Realms"
 #   description: "Detailed lore, stats, and vivid descriptions of mythical and game creatures. Enhance your adventures and campaigns with rich information on various beasts."
 #   emoji: "🐾"
-### Deprecated: category metadata consolidated into category_registry.yml (subtitle, description, emoji, image). ###
+ 
   #   color-outside-hover: "#f5c6cb"
   image: "/img/categories/middle-earth.webp"
 - category: Mobile
