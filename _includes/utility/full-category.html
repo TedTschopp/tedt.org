@@ -45,4 +45,4 @@
 {%- else -%}
   {%- assign __href = '/category/' | append: canonical | append: '/' -%}
 {%- endif -%}
-<a style="text-decoration: none; font-size: x-large;" class="{{klass}}" href="{{site.url}}{{ __href }}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>
+<a style="text-decoration: none; font-size: x-large;{% if entry.inline_style and entry.inline_style != '' %} {{ entry.inline_style }}{% endif %}" class="{{klass}}" href="{{site.url}}{{ __href }}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>

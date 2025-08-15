@@ -11,6 +11,7 @@
 #   hide_from_carousel: true (optional) exclude from homepage category carousel
 #   hide_from_category_list: true (optional) exclude from category sidebar list
 #   category_home_page: canonical URL path to the rendered category page
+#   inline_style: optional CSS string to apply inline to rendered category labels/links
 
 ai:
   title: Artificial Intelligence

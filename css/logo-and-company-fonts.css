@@ -244,11 +244,11 @@ a:hover .MCC {
    ========================================================== 
 /* Root design tokens (only define if not elsewhere) */
 :root {
-    --ai-accent-start:#06b6d4; /* cyan-500 */
-    --ai-accent-end:#a78bfa;   /* violet-400 */
-    --ai-text-light:#0f172a;   /* slate-900 */
-    --ai-text-dark:#e5e7eb;    /* slate-200 */
-    --ai-badge-border:rgba(99,102,241,.35); /* indigo-ish */
+    --ai-accent-start: #06b6d4;               /* cyan-500 */
+    --ai-accent-end:   #a78bfa;               /* violet-400 */
+    --ai-text-light:   #0f172a;               /* slate-900 */
+    --ai-text-dark:    #e5e7eb;               /* slate-200 */
+    --ai-badge-border: rgba(99,102,241,.35);  /* indigo-ish */
 }
 
 /* Page / section title treatment (retain generic selector for future markup) */

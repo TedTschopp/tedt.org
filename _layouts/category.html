@@ -208,6 +208,7 @@
                               {%- assign reg_entry = site.data.category_registry[slug] -%}
                               {%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}
                               {%- assign klass = reg_entry.class | default: slug -%}
+                              {%- assign inline_style = reg_entry.inline_style -%}
                               {%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}
                               <li>
                                 {%- if reg_entry and reg_entry.category_home_page -%}
@@ -215,7 +216,7 @@
                                 {%- else -%}
                                   {%- assign _href = '/category/' | append: slug | append: '/' -%}
                                 {%- endif -%}
-                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
+                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
                               </li>
                             {%- endfor -%}
                           {%- else -%}
@@ -226,6 +227,7 @@
                               {%- if reg_entry.hide_from_category_list -%}{%- continue -%}{%- endif -%}
                               {%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}
                               {%- assign klass = reg_entry.class | default: slug -%}
+                              {%- assign inline_style = reg_entry.inline_style -%}
                               {%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}
                               <li>
                                 {%- if reg_entry.category_home_page -%}
@@ -233,7 +235,7 @@
                                 {%- else -%}
                                   {%- assign _href = '/category/' | append: slug | append: '/' -%}
                                 {%- endif -%}
-                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
+                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
                               </li>
                             {%- endfor -%}
                           {%- endif -%}
