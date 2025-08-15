@@ -136,6 +136,7 @@ folklore:
   class: Folklore
   label: "ᚠᛟᛚᚲ ᛚᛟᚱᛖ"
   emoji: "📜"
+  image: /img/home/Folklore.webp
   palette: { start: "#92400e", end: "#f59e0b", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
   hide_from_carousel: false
   hide_from_category_list: false
