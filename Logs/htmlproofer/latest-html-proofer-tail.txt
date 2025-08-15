@@ -1,15 +1,45 @@
+^ (line 1497)
+  *  1755:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1755)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/midjourney-v6.1-prompt-template/index.html
+  *  1498:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1498)
+  *  1864:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1864)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/midjourney-v7-prompt-template/index.html
+  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1497)
+  *  1729:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1729)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/social-media-repurposing-template/index.html
+  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1497)
+  *  1929:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1929)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/putting-first-things-first/index.html
+  *  2970:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 2970)
+  *  2974:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2974)
-  *  image  does not have an alt attribute (line 1110)
-  *  image  does not have an alt attribute (line 1221)
   *  image has no src or srcset attribute (line 1110)
   *  image has no src or srcset attribute (line 1221)
 - ./_site/rain-in-los-ang/index.html
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image  does not have an alt attribute (line 1112)
-  *  image  does not have an alt attribute (line 1223)
   *  image has no src or srcset attribute (line 1112)
   *  image has no src or srcset attribute (line 1223)
 - ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
@@ -17,8 +47,6 @@
     </div>
     ^ (line 2969)
   *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
-  *  image  does not have an alt attribute (line 1182)
-  *  image  does not have an alt attribute (line 1293)
   *  image has no src or srcset attribute (line 1182)
   *  image has no src or srcset attribute (line 1293)
 - ./_site/sex-gardening-a/index.html
@@ -26,16 +54,12 @@
     </div>
     ^ (line 2911)
   *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
-  *  image  does not have an alt attribute (line 1109)
-  *  image  does not have an alt attribute (line 1220)
   *  image has no src or srcset attribute (line 1109)
   *  image has no src or srcset attribute (line 1220)
 - ./_site/shadows-and-sym/index.html
   *  2905:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2905)
-  *  image  does not have an alt attribute (line 1108)
-  *  image  does not have an alt attribute (line 1219)
   *  image has no src or srcset attribute (line 1108)
   *  image has no src or srcset attribute (line 1219)
 - ./_site/simple-blog-generator/index.html
@@ -50,8 +74,6 @@
   *  2906:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2906)
-  *  image  does not have an alt attribute (line 1104)
-  *  image  does not have an alt attribute (line 1215)
   *  image has no src or srcset attribute (line 1104)
   *  image has no src or srcset attribute (line 1215)
 - ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
@@ -61,8 +83,6 @@
   *  2987:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2987)
-  *  image  does not have an alt attribute (line 1123)
-  *  image  does not have an alt attribute (line 1234)
   *  image has no src or srcset attribute (line 1123)
   *  image has no src or srcset attribute (line 1234)
 - ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
@@ -73,8 +93,6 @@
     </div>
     ^ (line 2970)
   *  External link http://www.dscout.com/ara# failed: 404 No error
-  *  image  does not have an alt attribute (line 1106)
-  *  image  does not have an alt attribute (line 1217)
   *  image has no src or srcset attribute (line 1106)
   *  image has no src or srcset attribute (line 1217)
 - ./_site/the-google-browseros/index.html
@@ -82,16 +100,12 @@
     </div>
     ^ (line 2908)
   *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
-  *  image  does not have an alt attribute (line 1106)
-  *  image  does not have an alt attribute (line 1217)
   *  image has no src or srcset attribute (line 1106)
   *  image has no src or srcset attribute (line 1217)
 - ./_site/the-path-west/index.html
   *  2946:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2946)
-  *  image  does not have an alt attribute (line 1144)
-  *  image  does not have an alt attribute (line 1255)
   *  image has no src or srcset attribute (line 1144)
   *  image has no src or srcset attribute (line 1255)
 - ./_site/the-purpose-of-community-protection-of-the-commons/index.html
@@ -101,8 +115,6 @@
   *  2972:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2972)
-  *  image  does not have an alt attribute (line 1108)
-  *  image  does not have an alt attribute (line 1219)
   *  image has no src or srcset attribute (line 1108)
   *  image has no src or srcset attribute (line 1219)
 - ./_site/thoughts-on-corporate-collaboration-tools/index.html
@@ -113,16 +125,12 @@
     </div>
     ^ (line 2965)
   *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
-  *  image  does not have an alt attribute (line 1101)
-  *  image  does not have an alt attribute (line 1212)
   *  image has no src or srcset attribute (line 1101)
   *  image has no src or srcset attribute (line 1212)
 - ./_site/thoughts-on-nar/index.html
   *  2902:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2902)
-  *  image  does not have an alt attribute (line 1105)
-  *  image  does not have an alt attribute (line 1216)
   *  image has no src or srcset attribute (line 1105)
   *  image has no src or srcset attribute (line 1216)
 - ./_site/too-many-feeds/index.html
@@ -130,8 +138,6 @@
     </div>
     ^ (line 2901)
   *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
-  *  image  does not have an alt attribute (line 1099)
-  *  image  does not have an alt attribute (line 1210)
   *  image has no src or srcset attribute (line 1099)
   *  image has no src or srcset attribute (line 1210)
 - ./_site/tools/prompt-library/index.html
@@ -159,16 +165,12 @@
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image  does not have an alt attribute (line 1112)
-  *  image  does not have an alt attribute (line 1223)
   *  image has no src or srcset attribute (line 1112)
   *  image has no src or srcset attribute (line 1223)
 - ./_site/web-services-we/index.html
   *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2910)
-  *  image  does not have an alt attribute (line 1108)
-  *  image  does not have an alt attribute (line 1219)
   *  image has no src or srcset attribute (line 1108)
   *  image has no src or srcset attribute (line 1219)
 - ./_site/what-should-google-buy/index.html
@@ -190,11 +192,9 @@
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  image  does not have an alt attribute (line 1109)
-  *  image  does not have an alt attribute (line 1220)
   *  image has no src or srcset attribute (line 1109)
   *  image has no src or srcset attribute (line 1220)
   *  linking to internal hash # that does not exist (line 3807)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 4099 failures!
+HTML-Proofer found 3880 failures!

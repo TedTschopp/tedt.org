@@ -1,6 +1,12 @@
 # HTML Proofer Logs
-Last update: 2025-08-15T18:18:22Z
+Last update: 2025-08-15T18:29:09Z
 \n## Latest Summary (tail 50 lines)\n
+                                                                                                ^ (line 17)
+  *  internal script js/hex-implementation.js does not exist (line 24)
+  *  internal script js/hex.js does not exist (line 23)
+  *  internally linking to icon.webp, which does not exist (line 10)
+     <link rel="apple-touch-icon" href="icon.webp">
+- ./_site/universal-content-creator-demo/index.html
   *  1513:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1513)
@@ -12,16 +18,12 @@ Last update: 2025-08-15T18:18:22Z
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image  does not have an alt attribute (line 1112)
-  *  image  does not have an alt attribute (line 1223)
   *  image has no src or srcset attribute (line 1112)
   *  image has no src or srcset attribute (line 1223)
 - ./_site/web-services-we/index.html
   *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2910)
-  *  image  does not have an alt attribute (line 1108)
-  *  image  does not have an alt attribute (line 1219)
   *  image has no src or srcset attribute (line 1108)
   *  image has no src or srcset attribute (line 1219)
 - ./_site/what-should-google-buy/index.html
@@ -43,15 +45,14 @@ Last update: 2025-08-15T18:18:22Z
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  image  does not have an alt attribute (line 1109)
-  *  image  does not have an alt attribute (line 1220)
   *  image has no src or srcset attribute (line 1109)
   *  image has no src or srcset attribute (line 1220)
   *  linking to internal hash # that does not exist (line 3807)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 4099 failures!
+HTML-Proofer found 3880 failures!
 \n## Available Historical Logs\n
+- 2025-08-15T18-25-55-HTML Logging.txt
 - 2025-08-15T18-15-09-HTML Logging.txt
 - 2025-08-15T03-20-26-HTML Logging.txt
 - 2025-08-15T03-12-46-HTML Logging.txt
