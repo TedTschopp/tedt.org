@@ -47,8 +47,8 @@ Toggle visibility: add ?debug-theme=1 to URL or run localStorage.setItem('debugT
      const ts=performance.now();
      eventHistory.push({reason:reasonCombined,t:ts});
      while(eventHistory.length>MAX_HISTORY) eventHistory.shift();
-     el.classList.toggle('theme-light', chosen==='light');
-     const historyLine=eventHistory.map(e=>e.reason).join(' → ');
+  el.classList.toggle('theme-light', chosen==='light');
+  const historyLine=eventHistory.map(e=>e.reason).join(' → ');
      el.innerHTML=`<strong>Theme Debug</strong><br>`+
        `last reasons: <code>${historyLine}</code><br>`+
        `prefers-color-scheme (system): <code>${systemTheme}</code><br>`+
