@@ -432,44 +432,53 @@
         });
       });
 
-      // Random carousel start position
+      // Random carousel start position with resilient Bootstrap init
       document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.getElementById('carousel-of-all-blog-categories');
         if (!carousel) return;
-        
+
         const carouselItems = carousel.querySelectorAll('.carousel-item');
         if (carouselItems.length === 0) return;
-        
+
         // Generate random index
         const randomIndex = Math.floor(Math.random() * carouselItems.length);
-        
-        // Set random item as active
-        carouselItems[randomIndex].classList.add('active');
-        
-        // Initialize Bootstrap carousel with the random starting position when Bootstrap is available
-        const initCarousel = () => {
+
+        // Ensure only one active slide: remove any existing actives, then set random as active
+        carouselItems.forEach((item, idx) => {
+          if (idx === randomIndex) {
+            item.classList.add('active');
+            item.setAttribute('aria-current', 'true');
+          } else {
+            item.classList.remove('active');
+            item.removeAttribute('aria-current');
+          }
+        });
+
+        // Initialize Bootstrap carousel with retry until the script is available
+        const tryInit = () => {
           try {
-            const bootstrapCarousel = new bootstrap.Carousel(carousel, {
-              interval: 2000,
-              ride: false
-            });
-            bootstrapCarousel.to(randomIndex);
-          } catch (e) {
-            console.warn('Bootstrap carousel init failed:', e);
+            const bs = window.bootstrap;
+            if (!bs || typeof bs.Carousel !== 'function') return false;
+            const instance = new bs.Carousel(carousel, { interval: 2000, ride: false });
+            instance.to(randomIndex);
+            return true;
+          } catch (_) {
+            return false;
           }
         };
 
-        if (window.bootstrap && typeof bootstrap.Carousel === 'function') {
-          initCarousel();
-        } else {
-          // Fallback: wait until window load to see if CDN script finishes
-          window.addEventListener('load', function() {
-            if (window.bootstrap && typeof bootstrap.Carousel === 'function') {
-              initCarousel();
-            } else {
-              console.warn('Bootstrap not available; skipping carousel initialization.');
+        if (!tryInit()) {
+          // Retry for a short period in case the CDN script finishes slightly later
+          let attempts = 0;
+          const maxAttempts = 50; // ~5 seconds at 100ms
+          const timer = setInterval(() => {
+            attempts++;
+            if (tryInit() || attempts >= maxAttempts) {
+              clearInterval(timer);
             }
-          });
+          }, 100);
+          // One more attempt on window load
+          window.addEventListener('load', () => { tryInit(); }, { once: true });
         }
       });
     </script>
