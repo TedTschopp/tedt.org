@@ -1,6 +1,12 @@
 # HTML Proofer Logs
-Last update: 2025-08-15T18:29:09Z
+Last update: 2025-08-15T19:13:37Z
 \n## Latest Summary (tail 50 lines)\n
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
+^ (line 622)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1004)
+- ./_site/tools/todo_hex.html
+  *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
+                <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
                                                                                                 ^ (line 17)
   *  internal script js/hex-implementation.js does not exist (line 24)
   *  internal script js/hex.js does not exist (line 23)
@@ -18,14 +24,10 @@ Last update: 2025-08-15T18:29:09Z
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image has no src or srcset attribute (line 1112)
-  *  image has no src or srcset attribute (line 1223)
 - ./_site/web-services-we/index.html
   *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2910)
-  *  image has no src or srcset attribute (line 1108)
-  *  image has no src or srcset attribute (line 1219)
 - ./_site/what-should-google-buy/index.html
   *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -45,13 +47,12 @@ Last update: 2025-08-15T18:29:09Z
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  image has no src or srcset attribute (line 1109)
-  *  image has no src or srcset attribute (line 1220)
   *  linking to internal hash # that does not exist (line 3807)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3880 failures!
+HTML-Proofer found 3661 failures!
 \n## Available Historical Logs\n
+- 2025-08-15T19-10-14-HTML Logging.txt
 - 2025-08-15T18-25-55-HTML Logging.txt
 - 2025-08-15T18-15-09-HTML Logging.txt
 - 2025-08-15T03-20-26-HTML Logging.txt

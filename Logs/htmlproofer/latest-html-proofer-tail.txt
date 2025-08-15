@@ -1,3 +1,37 @@
+        </div>
+        ^ (line 1667)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
+  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1497)
+  *  1689:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1689)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/ai-tutoring-prompt-designer/index.html
+  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1502)
+  *  1700:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1700)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/artistic-Analysis/index.html
+  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1497)
+  *  1805:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1805)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+- ./_site/prompts/index.html
+  *  622:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
+^ (line 622)
+- ./_site/prompts/marketing-copy-evaluation-template/index.html
+  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
 ^ (line 1497)
   *  1755:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
@@ -34,34 +68,24 @@
   *  2974:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2974)
-  *  image has no src or srcset attribute (line 1110)
-  *  image has no src or srcset attribute (line 1221)
 - ./_site/rain-in-los-ang/index.html
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image has no src or srcset attribute (line 1112)
-  *  image has no src or srcset attribute (line 1223)
 - ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
   *  2969:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2969)
   *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
-  *  image has no src or srcset attribute (line 1182)
-  *  image has no src or srcset attribute (line 1293)
 - ./_site/sex-gardening-a/index.html
   *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2911)
   *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
-  *  image has no src or srcset attribute (line 1109)
-  *  image has no src or srcset attribute (line 1220)
 - ./_site/shadows-and-sym/index.html
   *  2905:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2905)
-  *  image has no src or srcset attribute (line 1108)
-  *  image has no src or srcset attribute (line 1219)
 - ./_site/simple-blog-generator/index.html
   *  1487:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
@@ -74,8 +98,6 @@
   *  2906:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2906)
-  *  image has no src or srcset attribute (line 1104)
-  *  image has no src or srcset attribute (line 1215)
 - ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
   *  2983:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -83,8 +105,6 @@
   *  2987:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2987)
-  *  image has no src or srcset attribute (line 1123)
-  *  image has no src or srcset attribute (line 1234)
 - ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
   *  2966:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -93,21 +113,15 @@
     </div>
     ^ (line 2970)
   *  External link http://www.dscout.com/ara# failed: 404 No error
-  *  image has no src or srcset attribute (line 1106)
-  *  image has no src or srcset attribute (line 1217)
 - ./_site/the-google-browseros/index.html
   *  2908:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2908)
   *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
-  *  image has no src or srcset attribute (line 1106)
-  *  image has no src or srcset attribute (line 1217)
 - ./_site/the-path-west/index.html
   *  2946:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2946)
-  *  image has no src or srcset attribute (line 1144)
-  *  image has no src or srcset attribute (line 1255)
 - ./_site/the-purpose-of-community-protection-of-the-commons/index.html
   *  2968:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -115,8 +129,6 @@
   *  2972:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2972)
-  *  image has no src or srcset attribute (line 1108)
-  *  image has no src or srcset attribute (line 1219)
 - ./_site/thoughts-on-corporate-collaboration-tools/index.html
   *  2961:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -125,21 +137,15 @@
     </div>
     ^ (line 2965)
   *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
-  *  image has no src or srcset attribute (line 1101)
-  *  image has no src or srcset attribute (line 1212)
 - ./_site/thoughts-on-nar/index.html
   *  2902:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2902)
-  *  image has no src or srcset attribute (line 1105)
-  *  image has no src or srcset attribute (line 1216)
 - ./_site/too-many-feeds/index.html
   *  2901:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2901)
   *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
-  *  image has no src or srcset attribute (line 1099)
-  *  image has no src or srcset attribute (line 1210)
 - ./_site/tools/prompt-library/index.html
   *  622:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
@@ -165,14 +171,10 @@
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-  *  image has no src or srcset attribute (line 1112)
-  *  image has no src or srcset attribute (line 1223)
 - ./_site/web-services-we/index.html
   *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2910)
-  *  image has no src or srcset attribute (line 1108)
-  *  image has no src or srcset attribute (line 1219)
 - ./_site/what-should-google-buy/index.html
   *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -192,9 +194,7 @@
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  image has no src or srcset attribute (line 1109)
-  *  image has no src or srcset attribute (line 1220)
   *  linking to internal hash # that does not exist (line 3807)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3880 failures!
+HTML-Proofer found 3661 failures!
