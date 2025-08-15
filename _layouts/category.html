@@ -215,7 +215,7 @@
                                 {%- else -%}
                                   {%- assign _href = '/category/' | append: slug | append: '/' -%}
                                 {%- endif -%}
-                                <a class="{{ klass }} category-badge text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
+                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
                               </li>
                             {%- endfor -%}
                           {%- else -%}
@@ -233,7 +233,7 @@
                                 {%- else -%}
                                   {%- assign _href = '/category/' | append: slug | append: '/' -%}
                                 {%- endif -%}
-                                <a class="{{ klass }} category-badge text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
+                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts">{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
                               </li>
                             {%- endfor -%}
                           {%- endif -%}
