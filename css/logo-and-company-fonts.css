@@ -378,7 +378,6 @@ h2 .ai-post,
 .category-title.ai,
 .ai-post.category-title{
   font-family:var(--theme-font-title);
-  font-weight:800;
   font-size:var(--theme-title-size);
   font-style:var(--theme-title-style);
   text-transform:var(--theme-title-transform);
@@ -389,6 +388,7 @@ h2 .ai-post,
   overflow-wrap:anywhere;
   margin:0 0 .35rem;
   position:relative;
+  white-space: nowrap;
 }
 @supports (text-wrap: balance){
   .category-theme .category-title,
