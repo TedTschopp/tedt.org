@@ -146,6 +146,8 @@ folklore:
   class: Folklore
   label: "ᚠᛟᛚᚲ ᛚᛟᚱᛖ"
   emoji: "📜"
+  subtitle: "Whispers from the Alps: Navigating Swiss Folk Tales"
+  description: "A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate."
   image: /img/home/Folklore.webp
   palette: { start: "#92400e", end: "#f59e0b", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
   category_home_page: /category/Folklore/
