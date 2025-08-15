@@ -26,7 +26,16 @@ sitemap:
 <ul>
     {% for category in unique_categories %}
         {% if category != "" %}
-            <li>{% include utility/category-label.html category=category href='/category/' | append: category kind='badge' %}</li>
+            {% capture _slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+            {% assign _slug = _slug | strip %}
+            {% if _slug == '' %}{% assign _slug = category | slugify %}{% endif %}
+                        {% assign _entry = site.data.category_registry[_slug] %}
+                        {% if _entry and _entry.category_home_page %}
+                            {% assign _href = _entry.category_home_page %}
+                        {% else %}
+                            {% assign _href = '/category/' | append: _slug | append: '/' %}
+                        {% endif %}
+            <li>{% include utility/category-label.html category=_slug href=_href kind='badge' %}</li>
         {% endif %}
     {% endfor %}
 </ul>

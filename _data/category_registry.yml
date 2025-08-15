@@ -10,6 +10,7 @@
 #   description, subtitle: optional descriptive metadata
 #   hide_from_carousel: true (optional) exclude from homepage category carousel
 #   hide_from_category_list: true (optional) exclude from category sidebar list
+#   category_home_page: canonical URL path to the rendered category page
 
 ai:
   title: Artificial Intelligence
@@ -23,6 +24,7 @@ ai:
     end: "#a78bfa"
   subtitle: "Where Intelligence Becomes Imagination, & Imagination Shapes the Future"
   description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
+  category_home_page: /category/Artificial Intelligence/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -35,6 +37,7 @@ movies:
   description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
   image: /img/categories/movies.webp
   palette: { start: "#eab308", end: "#f97316", fontTitle: '"Limelight","Times New Roman",Times,serif' }
+  category_home_page: /category/Movies/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -47,6 +50,7 @@ bestiary:
   description: "Detailed lore, stats, and vivid descriptions of mythical and game creatures. Enhance your adventures and campaigns with rich information on various beasts."
   image: /img/categories/bestiary.webp
   palette: { start: "#16a34a", end: "#f59e0b", fontTitle: '"Bestiary",sans-serif' }
+  category_home_page: /category/Bestiary/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -59,6 +63,7 @@ monsters:
   description: "Information, strategies, and detailed descriptions of various monsters found in role-playing games. Learn how to tackle these creatures in your campaigns."
   image: /img/categories/monsters.webp
   palette: { start: "#ec4899", end: "#7e22ce", fontTitle: '"Bestiary",sans-serif' }
+  category_home_page: /category/Monsters/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -71,6 +76,7 @@ books:
   description: "Thoughts, ideas, and reflections on books that ignite the imagination and inspire great thoughts. Explore a variety of genres and authors."
   image: /img/categories/books.webp
   palette: { start: "#6366f1", end: "#f43f5e", fontTitle: '"Cormorant Garamond","Times New Roman",Times,serif' }
+  category_home_page: /category/Books/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -83,6 +89,7 @@ communications:
   description: "Essays, tips, and strategies on effective communication in our age. Learn how to foster meaningful connections and enhance your interactions."
   image: /img/categories/communications.webp
   palette: { start: "#0ea5e9", end: "#06b6d4" }
+  category_home_page: /category/Communications/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -95,6 +102,7 @@ computers:
   description: "Advice, insights, and guides on utilizing computers for gaming, writing, and other creative endeavors. Discover new tools and techniques for your projects."
   image: /img/categories/computers.webp
   palette: { start: "#84cc16", end: "#22c55e", fontTitle: '"Checkbook",monospace' }
+  category_home_page: /category/Computers/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -114,6 +122,7 @@ dcc:
     titleColor: "rgba(255,0,27,1)"
     titleShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1)"
     titleHoverShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1),-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
+  category_home_page: /category/Dungeon Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -127,6 +136,7 @@ dnd:
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
   image: /img/categories/dungeons-dragons.webp
   palette: { start: "#ef4444", end: "#eab308", fontTitle: '"Quentin","Souvenir Demi",serif' }
+  category_home_page: "/category/Dungeons & Dragons/"
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -138,6 +148,7 @@ folklore:
   emoji: "📜"
   image: /img/home/Folklore.webp
   palette: { start: "#92400e", end: "#f59e0b", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
+  category_home_page: /category/Folklore/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -159,6 +170,7 @@ gamma-world:
     titleHoverColor: "#212529"
   hide_from_carousel: false
   hide_from_category_list: false
+  category_home_page: /category/Gamma World/
 
 gurps:
   title: GURPS
@@ -169,6 +181,7 @@ gurps:
   description: "Explorations, adventures, and guides using the versatile GURPS system. Learn how to create dynamic and flexible campaigns that can fit any setting."
   image: /img/categories/gurps.webp
   palette: { start: "#64748b", end: "#eab308", fontTitle: '"Egyptienne MN Condensed Bold",serif', titleTransform: uppercase }
+  category_home_page: /category/Gurps/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -180,6 +193,7 @@ home:
   subtitle: "Landing Page"
   description: "Primary site landing content and featured highlights."
   palette: { start: "#f472b6", end: "#f43f5e" }
+  category_home_page: /category/Home/
   hide_from_carousel: true
   hide_from_category_list: true
 
@@ -192,6 +206,7 @@ maps:
   description: "Intricate and detailed maps for various games and adventures. Use these visual aids to enhance your campaigns and guide your journeys with precision."
   image: /img/categories/maps.webp
   palette: { start: "#14b8a6", end: "#22c55e", fontTitle: '"MedievalSharp"' }
+  category_home_page: /category/Maps/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -205,6 +220,7 @@ middle-earth:
   description: "Articles, guides, and in-depth explorations of Tolkien's Middle-earth. Immerse yourself in the lore, characters, and landscapes of this beloved fantasy world."
   image: /img/categories/middle-earth.webp
   palette: { start: "#166534", end: "#d97706", fontTitle: '"Ringbearer",serif' }
+  category_home_page: /category/Middle-earth/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -217,6 +233,7 @@ mobile:
   description: "Insights, tips, and guides on mobile gaming and effective communication on the go. Stay connected and entertained wherever you are."
   image: /img/categories/mobile.webp
   palette: { start: "#8b5cf6", end: "#0ea5e9", fontTitle: '"PalmPilot"' }
+  category_home_page: /category/Mobile/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -229,6 +246,7 @@ opinion:
   description: "Personal essays, musings, and reflections on a variety of topics. Gain unique perspectives and insights from thoughtful commentary and analysis."
   image: /img/categories/opinion.webp
   palette: { start: "#94a3b8", end: "#0ea5e9" }
+  category_home_page: /category/Opinion/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -241,6 +259,7 @@ personal-writing:
   description: "Personal essays and creative pieces that offer a glimpse into the writer's mind and heart. Explore intimate stories, reflections, and imaginative works."
   image: /img/categories/personal-writing.webp
   palette: { start: "#f43f5e", end: "#a78bfa", fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif' }
+  category_home_page: /category/Personal Writing/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -253,6 +272,7 @@ philosophy:
   description: "In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire."
   image: /img/categories/philosophy.webp
   palette: { start: "#334155", end: "#6366f1" }
+  category_home_page: /category/Philosophy/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -265,11 +285,12 @@ projects:
   description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
   image: /img/categories/projects.webp
   palette: { start: "#3b82f6", end: "#22c55e" }
+  category_home_page: /category/Projects/
   hide_from_carousel: true
   hide_from_category_list: true
 
 prompts:
-  title: Prompts
+  title: Prompt Library
   raw_names: [ "Prompts" ]
   class: Prompts
   label: Prompts
@@ -277,6 +298,8 @@ prompts:
   subtitle: "Inspiration Starters"
   description: "Prompt ideas and seeds to kickstart writing, world-building, or creative exploration."
   palette: { start: "#a78bfa", end: "#f472b6" }
+  image: /img/categories/prompt_library.webp
+  category_home_page: /category/Prompts/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -289,6 +312,7 @@ quotes:
   description: "A curated collection of meaningful quotes and sayings to inspire, motivate, and provoke thought. Draw wisdom from the words of great minds."
   image: /img/categories/quotes.webp
   palette: { start: "#06b6d4", end: "#3b82f6" }
+  category_home_page: /category/Quotes/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -301,6 +325,7 @@ religion:
   description: "Discussions and explorations of various religious topics, beliefs, and practices. Delve into the spiritual aspects that shape cultures and individuals."
   image: /img/categories/religion.webp
   palette: { start: "#eab308", end: "#7e22ce" }
+  category_home_page: /category/Religion/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -313,6 +338,7 @@ reprint:
   description: "Reprints and discussions of classic writings, bringing timeless works to a new audience. Rediscover the enduring value of these literary gems."
   image: /img/categories/reprint.webp
   palette: { start: "#94a3b8", end: "#64748b", fontTitle: '"lp1_regular",monospace' }
+  category_home_page: /category/Reprint/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -325,6 +351,7 @@ role-playing-games:
   description: "Writings on current Role Playing Games, ranging from rough ideas to polished adventures. Discover insights, tips, and creative content to enhance your campaigns."
   image: /img/categories/role-playing-games.webp
   palette: { start: "#7e22ce", end: "#ef4444", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
+  category_home_page: /category/Role Playing Games/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -337,6 +364,7 @@ science:
   description: "Articles, essays, and discussions delving into various scientific topics. Uncover new insights and explore the wonders of the natural and technological world."
   image: /img/categories/science.webp
   palette: { start: "#0ea5e9", end: "#14b8a6" }
+  category_home_page: /category/Science/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -349,6 +377,7 @@ shadowrun:
   description: "Adventures, guides, and insights into the world of Shadowrun. Blend cyberpunk and magic in your campaigns with expert tips and engaging narratives."
   image: /img/categories/shadowrun.webp
   palette: { start: "#c9412f", end: "#000000", fontTitle: '"Shadowrun","Helvetica Neue",Helvetica,Arial,sans-serif' }
+  category_home_page: /category/Shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -367,6 +396,7 @@ mutant-crawl-classics:
     titleColor: "rgba(1,130,73,1)"
     titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
     titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
+  category_home_page: /category/Mutant Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -379,6 +409,7 @@ marchen-engine:
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
   image: /img/categories/the-märchen-engine.webp
   palette: { start: "#a21caf", end: "#f59e0b", fontTitle: '"IM Fell DW Pica",serif', titleStyle: italic }
+  category_home_page: "/category/The Märchen Engine/"
   hide_from_carousel: false
   hide_from_category_list: false
 
@@ -390,5 +421,6 @@ draft:
   subtitle: "Work In Progress"
   description: "Unfinished or exploratory writings not yet ready for prime time."
   palette: { start: "#64748b", end: "#94a3b8", fontTitle: '"Fredericka the Great",serif' }
+  category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true

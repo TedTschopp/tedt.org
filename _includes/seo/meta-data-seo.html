@@ -142,12 +142,21 @@ If it's the homepage treat as WebSite only; else add Article object.
 {% assign breadcrumb_items = '' %}
 {% if page.categories and page.categories != empty %}
   {% assign first_cat = page.categories | first %}
+  {% capture _crumb_slug %}{% include utility/map-category-to-registry.html key=first_cat %}{% endcapture %}
+  {% assign _crumb_slug = _crumb_slug | strip %}
+  {% if _crumb_slug == '' %}{% assign _crumb_slug = first_cat | slugify %}{% endif %}
+  {% assign _crumb_entry = site.data.category_registry[_crumb_slug] %}
+  {% if _crumb_entry and _crumb_entry.category_home_page %}
+    {% assign _crumb_href = _crumb_entry.category_home_page %}
+  {% else %}
+    {% assign _crumb_href = '/category/' | append: _crumb_slug | append: '/' %}
+  {% endif %}
   {% capture breadcrumb_items %}
     {
       "@type": "ListItem",
       "position": 1,
       "name": {{ first_cat | jsonify }},
-      "item": "{{ site.url }}/category/{{ first_cat | slugify }}"
+      "item": "{{ site.url }}{{ _crumb_href }}"
     }
   {% endcapture %}
   {% assign breadcrumb_position = breadcrumb_position | plus: 1 %}

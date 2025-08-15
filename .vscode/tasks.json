@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Clean build + HTMLProofer (internal)",
+			"type": "shell",
+			"command": "rm -rf _site && bundle exec jekyll build --quiet && SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href",
+			"isBackground": false,
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Jekyll clean prod build (tee log)",
+			"type": "shell",
+			"command": "set -e\nmkdir -p Logs Logs/htmlproofer\nrm -rf _site\nbundle check || bundle install --path vendor/bundle\nJEKYLL_ENV=production bundle exec jekyll build --trace | tee Logs/build-latest.txt",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

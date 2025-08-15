@@ -242,14 +242,21 @@
                     <div class="post-categories">
                         {% assign categories = page.categories %}
                         {% for category in categories %}
-                            <h4>Latest in <a href="{{ site.url }}/category/{{category|slugize}}">{{category}}</a></h4>
+                            {% capture __slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                            {% assign __slug = __slug | strip %}
+                            {% if __slug == '' %}{% assign __slug = category | slugify %}{% endif %}
+                            {% assign __entry = site.data.category_registry[__slug] %}
+                                                        {% if __entry and __entry.category_home_page %}
+                                                            {% assign __href = __entry.category_home_page %}
+                                                        {% else %}
+                                                            {% assign __href = '/category/' | append: __slug | append: '/' %}
+                                                        {% endif %}
+                            <h4>Latest in <a href="{{ site.url }}{{ __href }}">{{category}}</a></h4>
                                 <div class="row">
                                 <div class="col-lg-12">
-                                    <ul class="list-unstyled">
-                                        {% for post in site.categories[category] limit:5 %}
+                                    <ul class="list-unstyled">{%- for post in site.categories[category] limit:5 -%}
                                         <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-                                        {% endfor %}
-                                    </ul>
+                                    {%- endfor -%}</ul>
                                 </div>
                             </div>
                         {% endfor %}

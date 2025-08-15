@@ -39,4 +39,10 @@
 {%- elsif include['render-number'] -%}
   {%- assign render_count = include['render-number'] -%}
 {%- endif -%}
-<a style="text-decoration: none; font-size: x-large;" class="{{klass}}" href="{{site.url}}/category/{{canonical}}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>
+{%- assign __href = nil -%}
+{%- if entry and entry.category_home_page and entry.category_home_page != '' -%}
+  {%- assign __href = entry.category_home_page -%}
+{%- else -%}
+  {%- assign __href = '/category/' | append: canonical | append: '/' -%}
+{%- endif -%}
+<a style="text-decoration: none; font-size: x-large;" class="{{klass}}" href="{{site.url}}{{ __href }}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>

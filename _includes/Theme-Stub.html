@@ -2,8 +2,18 @@
 <article class="category-theme" data-category="DCC">
   <header>
     <h2 class="card-title">
-      <!-- Use .category-title for new system; legacy classes still work -->
-      <a href="/category/DCC"><span class="category-title DCC">DCC</span></a>
+   <!-- Use .category-title for new system; legacy classes still work.
+     Example: derive the canonical link from category_registry with a fallback. -->
+   {% capture __stub_slug %}{% include utility/map-category-to-registry.html key='DCC' %}{% endcapture %}
+   {% assign __stub_slug = __stub_slug | strip %}
+   {% if __stub_slug == '' %}{% assign __stub_slug = 'DCC' | slugify %}{% endif %}
+   {% assign __stub_entry = site.data.category_registry[__stub_slug] %}
+   {% if __stub_entry and __stub_entry.category_home_page %}
+     {% assign __stub_href = __stub_entry.category_home_page %}
+   {% else %}
+     {% assign __stub_href = '/category/' | append: __stub_slug | append: '/' %}
+   {% endif %}
+   <a href="{{ site.url }}{{ __stub_href }}"><span class="category-title DCC">DCC</span></a>
     </h2>
     <span class="category-badge">
       <span class="badge-dot" aria-hidden="true"></span>

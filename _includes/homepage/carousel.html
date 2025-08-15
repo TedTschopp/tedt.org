@@ -87,7 +87,11 @@
       </div>
                 </div>
                 <div class="card-body pt-2 pb-2 p-4">
-                  {% assign category_href = '/category/' | append: slug %}
+                  {% if entry and entry.category_home_page %}
+                    {% assign category_href = entry.category_home_page %}
+                  {% else %}
+                    {% assign category_href = '/category/' | append: slug | append: '/' %}
+                  {% endif %}
                   <h2 class="card-title">{% include utility/category-label.html category=slug href=category_href kind='title' class_extra='text-decoration-none' %}</h2>
                   <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ category_data_subtitle }}</h3>
                   <p class="card-text three-line-clamp">{{ category_data_description }}</p>
