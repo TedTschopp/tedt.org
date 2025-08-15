@@ -4,24 +4,24 @@
   *  image has no src or srcset attribute (line 1214)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 981)
 - ./_site/thoughts-on-corporate-collaboration-tools/index.html
-  *  2952:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2946:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 2952)
-  *  2956:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 2946)
+  *  2950:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2956)
-  *  2972:142: ERROR: Tag contains multiple attributes with the same name.
+    ^ (line 2950)
+  *  2966:142: ERROR: Tag contains multiple attributes with the same name.
                   <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2972)
-  *  2979:33: ERROR: Tag contains multiple attributes with the same name.
+                                                                                                                                             ^ (line 2966)
+  *  2973:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2979)
-  *  2984:33: ERROR: Tag contains multiple attributes with the same name.
+                                ^ (line 2973)
+  *  2978:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2984)
-  *  3710:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                                ^ (line 2978)
+  *  3704:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
-                            ^ (line 3710)
+                            ^ (line 3704)
   *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
   *  image  does not have an alt attribute (line 1096)
   *  image  does not have an alt attribute (line 1207)
@@ -29,42 +29,42 @@
   *  image has no src or srcset attribute (line 1207)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
 - ./_site/thoughts-on-nar/index.html
-  *  2895:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2892:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2895)
-  *  2911:142: ERROR: Tag contains multiple attributes with the same name.
+    ^ (line 2892)
+  *  2908:142: ERROR: Tag contains multiple attributes with the same name.
                   <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2911)
-  *  2918:33: ERROR: Tag contains multiple attributes with the same name.
+                                                                                                                                             ^ (line 2908)
+  *  2915:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2918)
-  *  2923:33: ERROR: Tag contains multiple attributes with the same name.
+                                ^ (line 2915)
+  *  2920:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2923)
-  *  3649:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                                ^ (line 2920)
+  *  3646:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
-                            ^ (line 3649)
+                            ^ (line 3646)
   *  image  does not have an alt attribute (line 1100)
   *  image  does not have an alt attribute (line 1211)
   *  image has no src or srcset attribute (line 1100)
   *  image has no src or srcset attribute (line 1211)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
 - ./_site/too-many-feeds/index.html
-  *  2894:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2891:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2894)
-  *  2910:142: ERROR: Tag contains multiple attributes with the same name.
+    ^ (line 2891)
+  *  2907:142: ERROR: Tag contains multiple attributes with the same name.
                   <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2910)
-  *  2917:33: ERROR: Tag contains multiple attributes with the same name.
+                                                                                                                                             ^ (line 2907)
+  *  2914:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2917)
-  *  2922:33: ERROR: Tag contains multiple attributes with the same name.
+                                ^ (line 2914)
+  *  2919:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2922)
-  *  3648:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                                ^ (line 2919)
+  *  3645:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
-                            ^ (line 3648)
+                            ^ (line 3645)
   *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
   *  image  does not have an alt attribute (line 1094)
   *  image  does not have an alt attribute (line 1205)
@@ -117,48 +117,6 @@
                             ^ (line 9119)
   *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1469)
 - ./_site/user-interfaces-in-2017-2/index.html
-  *  2907:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2907)
-  *  2923:142: ERROR: Tag contains multiple attributes with the same name.
-                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2923)
-  *  2930:33: ERROR: Tag contains multiple attributes with the same name.
-                  <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2930)
-  *  2935:33: ERROR: Tag contains multiple attributes with the same name.
-                  <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2935)
-  *  3661:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
-                            </a>
-                            ^ (line 3661)
-  *  image  does not have an alt attribute (line 1107)
-  *  image  does not have an alt attribute (line 1218)
-  *  image has no src or srcset attribute (line 1107)
-  *  image has no src or srcset attribute (line 1218)
-  *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 981)
-- ./_site/web-services-we/index.html
-  *  2903:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2903)
-  *  2919:142: ERROR: Tag contains multiple attributes with the same name.
-                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2919)
-  *  2926:33: ERROR: Tag contains multiple attributes with the same name.
-                  <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2926)
-  *  2931:33: ERROR: Tag contains multiple attributes with the same name.
-                  <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2931)
-  *  3657:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
-                            </a>
-                            ^ (line 3657)
-  *  image  does not have an alt attribute (line 1103)
-  *  image  does not have an alt attribute (line 1214)
-  *  image has no src or srcset attribute (line 1103)
-  *  image has no src or srcset attribute (line 1214)
-  *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
-- ./_site/what-should-google-buy/index.html
   *  2904:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2904)
@@ -174,6 +132,48 @@
   *  3658:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
                             ^ (line 3658)
+  *  image  does not have an alt attribute (line 1107)
+  *  image  does not have an alt attribute (line 1218)
+  *  image has no src or srcset attribute (line 1107)
+  *  image has no src or srcset attribute (line 1218)
+  *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 981)
+- ./_site/web-services-we/index.html
+  *  2900:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2900)
+  *  2916:142: ERROR: Tag contains multiple attributes with the same name.
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
+                                                                                                                                             ^ (line 2916)
+  *  2923:33: ERROR: Tag contains multiple attributes with the same name.
+                  <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
+                                ^ (line 2923)
+  *  2928:33: ERROR: Tag contains multiple attributes with the same name.
+                  <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
+                                ^ (line 2928)
+  *  3654:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                            </a>
+                            ^ (line 3654)
+  *  image  does not have an alt attribute (line 1103)
+  *  image  does not have an alt attribute (line 1214)
+  *  image has no src or srcset attribute (line 1103)
+  *  image has no src or srcset attribute (line 1214)
+  *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
+- ./_site/what-should-google-buy/index.html
+  *  2901:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2901)
+  *  2917:142: ERROR: Tag contains multiple attributes with the same name.
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
+                                                                                                                                             ^ (line 2917)
+  *  2924:33: ERROR: Tag contains multiple attributes with the same name.
+                  <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
+                                ^ (line 2924)
+  *  2929:33: ERROR: Tag contains multiple attributes with the same name.
+                  <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
+                                ^ (line 2929)
+  *  3655:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                            </a>
+                            ^ (line 3655)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -194,7 +194,7 @@
   *  image has no src or srcset attribute (line 1104)
   *  image has no src or srcset attribute (line 1215)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
-  *  linking to internal hash # that does not exist (line 3801)
+  *  linking to internal hash # that does not exist (line 3798)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7835 failures!
+HTML-Proofer found 7862 failures!

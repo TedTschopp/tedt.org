@@ -1,32 +1,32 @@
 # HTML Proofer Logs
-Last update: 2025-08-14T23:44:33Z
+Last update: 2025-08-15T03:16:08Z
 \n## Latest Summary (tail 50 lines)\n
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2931)
-  *  3657:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                                ^ (line 2928)
+  *  3654:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
-                            ^ (line 3657)
+                            ^ (line 3654)
   *  image  does not have an alt attribute (line 1103)
   *  image  does not have an alt attribute (line 1214)
   *  image has no src or srcset attribute (line 1103)
   *  image has no src or srcset attribute (line 1214)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
 - ./_site/what-should-google-buy/index.html
-  *  2904:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2901:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2904)
-  *  2920:142: ERROR: Tag contains multiple attributes with the same name.
+    ^ (line 2901)
+  *  2917:142: ERROR: Tag contains multiple attributes with the same name.
                   <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"  href="https://tedt.org" rel="me" class="u-url u-uid">
-                                                                                                                                             ^ (line 2920)
-  *  2927:33: ERROR: Tag contains multiple attributes with the same name.
+                                                                                                                                             ^ (line 2917)
+  *  2924:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title">Senior Enterprise Architect</p>
-                                ^ (line 2927)
-  *  2932:33: ERROR: Tag contains multiple attributes with the same name.
+                                ^ (line 2924)
+  *  2929:33: ERROR: Tag contains multiple attributes with the same name.
                   <p class="h5" class="p-job-title"><span class="p-locality">Los Angeles</span>,
-                                ^ (line 2932)
-  *  3658:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
+                                ^ (line 2929)
+  *  3655:29: ERROR: End tag 'a' isn't allowed here. Currently open tags: html, body, footer, div, div, div, div, div, ul, li.
                             </a>
-                            ^ (line 3658)
+                            ^ (line 3655)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -47,11 +47,12 @@ Last update: 2025-08-14T23:44:33Z
   *  image has no src or srcset attribute (line 1104)
   *  image has no src or srcset attribute (line 1215)
   *  image https://tedt.org/img/categories/table-of-contents.webp does not have an alt attribute (line 976)
-  *  linking to internal hash # that does not exist (line 3801)
+  *  linking to internal hash # that does not exist (line 3798)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 7835 failures!
+HTML-Proofer found 7862 failures!
 \n## Available Historical Logs\n
+- 2025-08-15T03-12-46-HTML Logging.txt
 - 2025-08-14T23-41-10-HTML Logging.txt
 - 2025-08-14T23-32-07-HTML Logging.txt
 - 2025-08-14T23-15-56-HTML Logging.txt
