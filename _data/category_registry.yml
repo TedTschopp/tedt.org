@@ -402,6 +402,7 @@ mutant-crawl-classics:
   category_home_page: /category/Mutant Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "white-space: nowrap;"
 
 marchen-engine:
   title: The Märchen Engine
