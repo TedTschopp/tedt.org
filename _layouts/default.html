@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 
+  <!-- LAYOUT TOKEN XYZ 20250814-1 -->
+
     {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,6 +44,8 @@
     </script>
   </head>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+  <!-- SENTINEL: default layout active (injected for debugging) -->
+  <!-- BODY TOKEN ABC 20250814 -->
 
     <!-- Navbar -->
     {% include layout/top-nav-bar.html %}
@@ -169,6 +173,7 @@
                 </div>
               </div>
             </div>
+            <!-- SENTINEL-A AFTER BLOG CARD -->
             <div class="col">
               <div class="card h-100">
                 <div class="ratio ratio-3x1">
@@ -180,307 +185,15 @@
                   <p class="card-text three-line-clamp">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
-                  {%- assign posts-drafts = '' | split: '' -%}
-                  {%- assign folklore_variants = 'Folklore,ᚠᛟᛚᚲ ᛚᛟᚱᛖ' | split: ',' -%}
-                  {%- for p in site.posts -%}
-                    {%- assign matched = false -%}
-                    {%- if p.categories -%}
-                      {%- for v in folklore_variants -%}
-                        {%- if p.categories contains v -%}
-                          {%- assign matched = true -%}
-                          {%- break -%}
-                        {%- endif -%}
-                      {%- endfor -%}
-                    {%- endif -%}
-                    {%- if matched -%}
-                      {%- assign posts-drafts = posts-drafts | push: p -%}
-                    {%- endif -%}
-                  {%- endfor -%}
-                  {%- assign posts-drafts = posts-drafts | sort: 'date' | reverse -%}
-                  {% for post in posts-drafts limit:3 %}
-                    <div class="container">
-                      <div class="row align-items-stretch">
-                        {% if post.image %}
-                          {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
-                          {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
-                          {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
-                          {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
-                          {% assign image_URL = post.image %}
-                          <div class="card rounded-0 px-0"> <!-- style="max-width: 540px;" -->
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="{{ image_URL }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title three-line-clamp">
-                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                  </h5>
-                                  <p class="card-text text-truncate-3">
-                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                  </p>
-                                  <p class="card-text">
-                                    Posted on <small class="text-muted text-body-secondary">
-                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                    </small>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        {% else %}
-                          <div class="card rounded-0 px-0"> <!-- style="max-width: 540px;" -->
-                            <div class="row g-0">
-                              <div class="col-md-12">
-                                <div class="card-body">
-                                  <h5 class="card-title three-line-clamp">
-                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                  </h5>
-                                  <p class="card-text text-truncate-3">
-                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                  </p>
-                                  <p class="card-text">
-                                    Posted on <small class="text-muted text-body-secondary">
-                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                    </small>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        {% endif %}
-                      </div>
-                    </div>
-                  {% endfor %}
+                  <!-- Folklore posts loop temporarily disabled for debugging truncation -->
+                  <!-- BEGIN FOLKLORE DEBUG BLOCK -->
+                  <div class="p-2 text-muted small">[Folklore recent posts temporarily hidden - debug]</div>
+                  <!-- END FOLKLORE DEBUG BLOCK -->
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card h-100 d-flex flex-column"> <!-- style="max-width: 640px;"-->
-                <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false">
-                  <style>
-                    .carousel-control-prev-icon,
-                    .carousel-control-next-icon {
-                      filter: invert(100%);
-                    }
-                  
-                    .carousel-control-prev,
-                    .carousel-control-next {
-                      width: 8%;
-                      z-index: 10;
-                    }
-                  
-                    .carousel-control-prev-icon,
-                    .carousel-control-next-icon {
-                      background-color: rgba(0, 0, 0, 0.5);
-                      /* Add a semi-transparent background */
-                      border-radius: 0;
-                      /* Remove circle shape */
-                      padding: 30px 10px;
-                      /* Taller padding to create vertical bars */
-                      width: 20px;
-                      /* Narrower width */
-                      height: 100px;
-                      /* Taller height */
-                      transition: background-color 0.3s;
-                      /* Smooth transition */
-                    }
-                  
-                    .carousel-control-prev-icon {
-                      border-top-right-radius: 4px;
-                      /* Slight rounding on the outside edges */
-                      border-bottom-right-radius: 4px;
-                    }
-                  
-                    .carousel-control-next-icon {
-                      border-top-left-radius: 4px;
-                      /* Slight rounding on the outside edges */
-                      border-bottom-left-radius: 4px;
-                    }
-                  
-                    .carousel-control-prev:hover .carousel-control-prev-icon,
-                    .carousel-control-next:hover .carousel-control-next-icon {
-                      background-color: rgba(0, 0, 0, 0.8);
-                      /* Darker background on hover */
-                    }
-                  
-                    .carousel-control-prev,
-                    .carousel-control-next {
-                      outline: none;
-                    }
-                  
-                    .carousel-control-prev-icon:after,
-                    .carousel-control-next-icon:after {
-                      content: '';
-                      display: block;
-                      width: 100%;
-                      height: 100%;
-                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                      /* Add a shadow */
-                    }
-                  
-                    /* Style the carousel indicators */
-                    .carousel-indicators {
-                      position: absolute;
-                      top: 10px;
-                      bottom: auto;
-                      margin-bottom: 0;
-                      z-index: 5;
-                    }
-                  
-                    .carousel-indicators button {
-                      background-color: rgba(255, 255, 255, 0.5);
-                      height: 4px;
-                      width: 30px;
-                      margin-right: 3px;
-                      margin-left: 3px;
-                      opacity: 0.5;
-                      transition: opacity 0.3s;
-                      border: none;
-                    }
-                  
-                    .carousel-indicators button.active {
-                      background-color: rgba(255, 255, 255, 0.9);
-                      opacity: 1;
-                    }
-                  </style>
-                  <div class="carousel-inner">
-                    {% assign registry = site.data.category_registry %}
-                    {% capture _cat_list %}{% include utility/category-slugs.html filter='carousel' %}{% endcapture %}
-                    {% assign categories = _cat_list | split: ',' | reject: '' | sort %}
-                    {% if categories == empty or categories.size == 0 %}
-                      {%- comment -%} Fallback: build categories from registry (excluding $* and hidden) {%- endcomment -%}
-                      {% assign categories = '' | split: '' %}
-                      {% for pair in registry %}
-                        {% assign slug = pair[0] %}
-                        {% assign entry = pair[1] %}
-                        {% if slug | slice: 0 == '$' %}{% continue %}{% endif %}
-                        {% if entry.hide_from_carousel %}{% continue %}{% endif %}
-                        {% assign categories = categories | push: slug %}
-                      {% endfor %}
-                      {% assign categories = categories | sort %}
-                    {% endif %}
-                    {% for slug in categories %}
-                      {% assign entry = registry[slug] %}
-                      {% assign category_data_title = entry.title %}
-                      {% assign category_data_subtitle = entry.subtitle %}
-                      {% assign category_data_description = entry.description %}
-                      {% assign category_data_img = entry.image %}
-                      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ categories.size }}" data-bs-interval="2000" data-category-index="{{ forloop.index0 }}">
-                        <div class="card-group">
-                          <div class="card">                              
-                            <div class="position-relative">
-                              <div class="ratio ratio-3x1">
-                                <img src="{{ site.url }}{{category_data_img}}" class="object-fit-cover card-img-top" alt="{{ category_data_title | capitalize }} Image">
-                              </div>
-                              
-                              <!-- Carousel indicators removed; will be reintroduced using registry if needed -->
-
-
-                              <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                              </button>
-
-                              <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                              </button>
-
-                            </div>
-
-                            <div class="card-body pt-2 pb-2 p-4">
-                              {% assign category_href = '/category/' | append: slug %}
-                              <h2 class="card-title">{% include utility/category-label.html category=slug href=category_href kind='title' class_extra='text-decoration-none' %}</h2>
-                              <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ category_data_subtitle }}</h3>
-                              <p class="card-text three-line-clamp">{{ category_data_description }}</p>
-                            </div>
-
-                            <div class="card-footer p-0">
-                              {%- comment -%} Build array of match variants: registry title + raw_names {%- endcomment -%}
-                              {% assign variants = entry.raw_names | default: '' %}
-                              {% assign variants = variants | push: category_data_title %}
-                              {% assign filtered_posts = '' | split: '' %}
-                              {% for p in site.posts %}
-                                {% assign matched = false %}
-                                {% if p.categories %}
-                                  {% for v in variants %}
-                                    {% if p.categories contains v %}
-                                      {% assign matched = true %}
-                                      {% break %}
-                                    {% endif %}
-                                  {% endfor %}
-                                {% endif %}
-                                {% if matched %}
-                                  {% assign filtered_posts = filtered_posts | push: p %}
-                                {% endif %}
-                              {% endfor %}
-                              {% assign filtered_posts = filtered_posts | sort: 'date' | reverse %}
-                              {% for post in filtered_posts limit: 3 %}
-                                <div class="container">
-                                  <div class="row align-items-stretch">
-                                    {% if post.image != nil and post.image != empty and post.image != "" %}
-                                      {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
-                                      {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
-                                      {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
-                                      {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
-                                      {% assign image_URL = post.image %}
-                                      <div class="card rounded-0 px-0">  <!-- style="max-width: 540px;" -->
-                                        <div class="row g-0">
-                                          <div class="col-md-4">
-                                            <img src="{{ image_URL }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                                          </div>
-                                          <div class="col-md-8">
-                                            <div class="card-body">
-                                              <h5 class="card-title three-line-clamp">
-                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                              </h5>
-                                              <p class="card-text text-truncate-3">
-                                                {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                              </p>
-                                              <p class="card-text">
-                                                Posted on <small class="text-muted text-body-secondary">
-                                                  <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                                </small>
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    {% else %}
-                                      <div class="card rounded-0 px-0"> <!-- style="max-width: 540px;" -->
-                                        <div class="row g-0">
-                                          <div class="col-md-12">
-                                            <div class="card-body">
-                                              <h5 class="card-title three-line-clamp">
-                                                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                              </h5>
-                                              <p class="card-text text-truncate-3">
-                                                {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                              </p>
-                                              <p class="card-text">
-                                                Posted on <small class="text-muted text-body-secondary">
-                                                  <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                                </small>
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    {% endif %}
-                                  </div>
-                                </div>
-                              {% endfor %}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
-            </div>
+            {% include homepage/carousel.html %}
           </div>
         </div>
       </section>

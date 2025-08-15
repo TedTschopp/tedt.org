@@ -10,7 +10,8 @@
 {%- assign registry = site.data.category_registry -%}
 {%- assign out = '' -%}
 {%- for pair in registry -%}
-  {%- assign slug = pair[0] -%}
+  {%- assign slug = pair[0] | to_s -%}
+  {%- if slug == '' or slug == nil -%}{%- continue -%}{%- endif -%}
   {%- if slug | slice: 0 == '$' -%}{%- continue -%}{%- endif -%}
   {%- assign entry = pair[1] -%}
   {%- if include.filter == 'carousel' and entry.hide_from_carousel -%}{%- continue -%}{%- endif -%}
@@ -19,3 +20,6 @@
   {%- assign out = out | append: slug -%}
 {%- endfor -%}
 {{ out }}
+{%- if include.debug -%}
+<!-- category-slugs-debug: '{{ out }}' -->
+{%- endif -%}

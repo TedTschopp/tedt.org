@@ -1,4 +1,3 @@
-"$schema": "category-registry/v1"
 # Unified Category Registry (palette + typography + alias + display metadata)
 # Each top-level key is a canonical slug.
 # Fields:

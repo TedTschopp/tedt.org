@@ -1,0 +1,167 @@
+  <!-- Category Carousel -->
+<div class="col">
+  <div class="card h-100 d-flex flex-column">
+    <div id="carousel-of-all-blog-categories" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-labelledby="carousel-categories-heading" aria-describedby="carousel-categories-instructions">
+      <style>
+        .carousel-control-prev-icon,.carousel-control-next-icon{filter:invert(100%)}
+        .carousel-control-prev,.carousel-control-next{width:8%;z-index:10}
+        .carousel-control-prev-icon,.carousel-control-next-icon{background-color:rgba(0,0,0,.5);padding:30px 10px;width:20px;height:100px;transition:background-color .3s}
+        .carousel-control-prev-icon{border-top-right-radius:4px;border-bottom-right-radius:4px}
+        .carousel-control-next-icon{border-top-left-radius:4px;border-bottom-left-radius:4px}
+        .carousel-control-prev:hover .carousel-control-prev-icon,.carousel-control-next:hover .carousel-control-next-icon{background-color:rgba(0,0,0,.8)}
+        .carousel-control-prev,.carousel-control-next{outline:none}
+        .carousel-indicators{position:absolute;top:10px;bottom:auto;margin-bottom:0;z-index:5}
+        .carousel-indicators button{background-color:rgba(255,255,255,.5);height:4px;width:30px;margin:0 3px;opacity:.5;transition:opacity .3s;border:none}
+        .carousel-indicators button.active{background-color:rgba(255,255,255,.9);opacity:1}
+    </style>
+    <h2 id="carousel-categories-heading" class="visually-hidden">Browse blog categories</h2>
+    <p id="carousel-categories-instructions" class="visually-hidden">Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.</p>
+  <div class="carousel-inner" role="list" aria-live="polite">
+  {%- assign registry = site.data.category_registry -%}
+  {%- comment -%} Pass 1: count qualifying categories directly from registry (avoid push filter entirely). {%- endcomment -%}
+  {%- assign total = 0 -%}
+  {%- for pair in registry -%}
+    {%- assign slug = pair[0] | to_s | strip -%}
+    {%- assign entry = pair[1] -%}
+  {%- if slug == '' -%}{%- continue -%}{%- endif -%}
+    {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
+    {%- assign has_posts = false -%}
+    {%- for p in site.posts -%}
+      {%- if p.categories -%}
+        {%- assign matched = false -%}
+        {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
+        {%- if matched == false and p.categories contains slug -%}{%- assign matched = true -%}{%- endif -%}
+        {%- if matched == false and entry.raw_names -%}
+          {%- if entry.raw_names.first -%}
+            {%- for rn in entry.raw_names -%}
+              {%- if p.categories contains rn -%}{%- assign matched = true -%}{%- break -%}{%- endif -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- if p.categories contains entry.raw_names -%}{%- assign matched = true -%}{%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if matched -%}{%- assign has_posts = true -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if has_posts -%}{%- assign total = total | plus: 1 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if total == 0 -%}<div class="p-3 text-muted small">No categories with posts yet.</div>{%- endif -%}
+  {%- comment -%} Pass 2: render slides with index tracking (no push). {%- endcomment -%}
+  {%- assign index = 0 -%}
+  {%- for pair in registry -%}
+    {%- assign slug = pair[0] | to_s | strip -%}
+    {%- assign entry = pair[1] -%}
+  {%- if slug == '' -%}{%- continue -%}{%- endif -%}
+    {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
+    {%- assign has_posts = false -%}
+    {%- assign category_data_title = entry.title -%}
+    {%- assign category_data_subtitle = entry.subtitle -%}
+    {%- assign category_data_description = entry.description -%}
+    {%- assign category_data_img = entry.image | default: '/img/categories/default.webp' -%}
+    {%- comment -%} Determine if any posts exist for this category. {%- endcomment -%}
+    {%- for p in site.posts -%}
+      {%- if p.categories -%}
+        {%- assign matched = false -%}
+        {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
+        {%- if matched == false and p.categories contains slug -%}{%- assign matched = true -%}{%- endif -%}
+        {%- if matched == false and entry.raw_names -%}
+          {%- if entry.raw_names.first -%}
+            {%- for rn in entry.raw_names -%}
+              {%- if p.categories contains rn -%}{%- assign matched = true -%}{%- break -%}{%- endif -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- if p.categories contains entry.raw_names -%}{%- assign matched = true -%}{%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if matched -%}{%- assign has_posts = true -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- unless has_posts -%}{%- continue -%}{%- endunless -%}
+    {%- assign index = index | plus: 1 -%}
+    <div class="carousel-item{% if index == 1 %} active{% endif %}" role="listitem" aria-roledescription="slide" aria-label="Slide {{ index }} of {{ total }}: {{ category_data_title | escape }}" {% if index == 1 %}aria-current="true"{% endif %} data-bs-interval="4000" data-category-index="{{ index | minus: 1 }}">
+            <div class="card-group">
+              <div class="card">
+                <div class="position-relative">
+                  <div class="ratio ratio-3x1">
+                    <img src="{{ site.url }}{{ category_data_img }}" class="object-fit-cover card-img-top" alt="{{ category_data_title | escape }} image">
+      </div>
+                </div>
+                <div class="card-body pt-2 pb-2 p-4">
+                  {% assign category_href = '/category/' | append: slug %}
+                  <h2 class="card-title">{% include utility/category-label.html category=slug href=category_href kind='title' class_extra='text-decoration-none' %}</h2>
+                  <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ category_data_subtitle }}</h3>
+                  <p class="card-text three-line-clamp">{{ category_data_description }}</p>
+                </div>
+                <div class="card-footer p-0">
+                  {%- assign displayed = 0 -%}
+                  {%- assign posts_sorted = site.posts | sort: 'date' | reverse -%}
+                  {%- for post in posts_sorted -%}
+                    {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
+                    {%- assign post_match = false -%}
+                    {%- if post.categories -%}
+                      {%- if post.categories contains entry.title -%}{%- assign post_match = true -%}{%- endif -%}
+                      {%- if post_match == false and post.categories contains slug -%}{%- assign post_match = true -%}{%- endif -%}
+                      {%- if post_match == false and entry.raw_names -%}
+                        {%- if entry.raw_names.first -%}
+                          {%- for rn in entry.raw_names -%}
+                            {%- if post.categories contains rn -%}{%- assign post_match = true -%}{%- break -%}{%- endif -%}
+                          {%- endfor -%}
+                        {%- else -%}
+                          {%- if post.categories contains entry.raw_names -%}{%- assign post_match = true -%}{%- endif -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                    {%- unless post_match -%}{%- continue -%}{%- endunless -%}
+                    {%- assign displayed = displayed | plus: 1 -%}
+                    <div class="container">
+                      <div class="row align-items-stretch">
+                        {%- if post.image and post.image != '' -%}
+                          {%- assign image_alt = post.image-alt | default: post.image-description | default: post.title -%}
+                          {%- assign image_credits = post.image-credits-artist | default: post.image-artist | default: 'Unknown' -%}
+                          <div class="card rounded-0 px-0">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="{{ post.image }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title three-line-clamp"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
+                                  <p class="card-text text-truncate-3">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
+                                  <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %d, %Y' }}</time></small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        {%- else -%}
+                          <div class="card rounded-0 px-0">
+                            <div class="row g-0">
+                              <div class="col-md-12">
+                                <div class="card-body">
+                                  <h5 class="card-title three-line-clamp"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
+                                  <p class="card-text text-truncate-3">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
+                                  <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %d, %Y' }}</time></small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          </div>
+  {%- endfor -%}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous category</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next category</span>
+      </button>
+    </div>
+  </div>
+</div>

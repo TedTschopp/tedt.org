@@ -1,75 +1,51 @@
-{%- assign __cat_raw = include.category | to_s | strip -%}
-{%- comment -%} Normalize rune / variant labels to canonical titles for emoji mapping {%- endcomment -%}
-{%- if __cat_raw == 'Middle-eartH' -%}
-  {%- assign __cat_norm = 'Middle-earth' -%}
-{%- elsif __cat_raw == 'ᚠᛟᛚᚲ ᛚᛟᚱᛖ' -%}
-  {%- assign __cat_norm = 'Folklore' -%}
+{%- comment -%}
+  Dynamic emoji resolution using unified category_registry.yml
+  Supports input as:
+    - slug (e.g. 'gamma-world')
+    - canonical title (e.g. 'Gamma World')
+    - label / variant (e.g. 'Middle-eartH', runic Folklore)
+{%- endcomment -%}
+{%- assign __input = include.category | to_s | strip -%}
+{%- if __input == '' -%}{% comment %} nothing to render {% endcomment %}{% endif %}
+{%- assign registry = site.data.category_registry -%}
+{%- assign found_slug = nil -%}
+{%- assign input_slug = __input | slugify -%}
+{%- if registry[input_slug] and input_slug != '' -%}
+  {%- assign found_slug = input_slug -%}
 {%- else -%}
-  {%- assign __cat_norm = __cat_raw -%}
+  {%- comment -%} Iterate to match by title, label, or raw_names variants {%- endcomment -%}
+  {%- for pair in registry -%}
+    {%- assign slug = pair[0] -%}
+    {%- if slug | slice: 0,1 == '$' -%}{%- continue -%}{%- endif -%}
+    {%- assign entry = pair[1] -%}
+    {%- assign entry_title = entry.title | default: '' -%}
+    {%- assign entry_label = entry.label | default: '' -%}
+    {%- assign match = false -%}
+    {%- if __input == entry_title or __input == entry_label -%}
+      {%- assign match = true -%}
+    {%- endif -%}
+    {%- if match == false and entry.raw_names -%}
+      {%- for alt in entry.raw_names -%}
+        {%- if __input == alt -%}
+          {%- assign match = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if match -%}
+      {%- assign found_slug = slug -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
 {%- endif -%}
-{% case __cat_norm %}
-  {% when "Artificial Intelligence" %}
-    <span role="img" aria-label="Robot" title="Artificial Intelligence">🤖</span>
-  {% when "Bestiary" %}
-    <span role="img" aria-label="Animal Tracks" title="Bestiary">🐾</span>
-  {% when "Books" %}
-    <span role="img" aria-label="Books" title="Books">📚</span>
-  {% when "Communications" %}
-    <span role="img" aria-label="Telephone" title="Communications">📞</span>
-  {% when "Computers" %}
-    <span role="img" aria-label="Computer" title="Computers">💻</span>
-  {% when "Draft" %}
-    <span role="img" aria-label="Memo" title="Draft">📝</span>
-  {% when "Dungeon Crawl Classics" %}
-    <span role="img" aria-label="Dice" title="Dungeon Crawl Classics">🎲</span>
-  {% when "Dungeons & Dragons" %}
-    <span role="img" aria-label="Dragon" title="Dungeons & Dragons">🐉</span>
-  {% when "Folklore" %}
-    <span role="img" aria-label="Scroll" title="Folklore">📜</span>
-  {% when "Gamma World" %}
-    <span role="img" aria-label="Radioactive" title="Gamma World">☢️</span>
-  {% when "GURPS" or "Gurps" %}
-    <span role="img" aria-label="Shield" title="Gurps">🛡️</span>
-  {% when "Home" %}
-    <span role="img" aria-label="House" title="Home">🏠</span>
-  {% when "Maps" %}
-    <span role="img" aria-label="World Map" title="Maps">🗺️</span>
-  {% when "Middle-earth" %}
-    <span role="img" aria-label="Volcano" title="Middle-earth">🌋</span>
-  {% when "Mobile" %}
-    <span role="img" aria-label="Mobile Phone" title="Mobile">📱</span>
-  {% when "Monsters" %}
-    <span role="img" aria-label="Ogre" title="Monsters">👹</span>
-  {% when "Movies" %}
-    <span role="img" aria-label="Clapper Board" title="Movies">🎬</span>
-  {% when "Mutant Crawl Classics" %}
-    <span role="img" aria-label="DNA" title="Mutant Crawl Classics">🧬</span>
-  {% when "Personal Writing" %}
-    <span role="img" aria-label="Fountain Pen" title="Personal Writing">🖋️</span>
-  {% when "Projects" %}
-    <span role="img" aria-label="Projects" title="Projects">🛠️</span>
-  {% when "Prompts" %}
-    <span role="img" aria-label="Prompts" title="Prompts">🤖</span>
-  {% when "Quotes" %}
-    <span role="img" aria-label="Speech Balloon" title="Quotes">💬</span>
-  {% when "Religion" %}
-    <span role="img" aria-label="Latin Cross" title="Religion">✝️</span>
-  {% when "Reprint" %}
-    <span role="img" aria-label="Repeat" title="Reprint">🔄</span>
-  {% when "Role Playing Games" %}
-    <span role="img" aria-label="Performing Arts" title="Role Playing Games">🎭</span>
-  {% when "Science" %}
-    <span role="img" aria-label="Microscope" title="Science">🔬</span>
-  {% when "Scouting" %}
-    <span role="img" aria-label="Backpack" title="Scouting">🎒</span>
-  {% when "The Märchen Engine" %}
-    <span role="img" aria-label="Fairy" title="The Märchen Engine">🧚</span>
-  {% when "Philosophy" %}
-    <span role="img" aria-label="Thinker" title="Philosophy">🤔</span>
-  {% when "Opinion" %}
-    <span role="img" aria-label="Exclamation" title="Opinion">❗</span>
- {% when "Shadowrun" %}
-    <span role="img" aria-label="Cityscape at Dusk" title="Shadowrun">🌆</span>
-  {% else %}
-    <!-- Output something else if the category doesn't match -->
-{% endcase %}
+
+{%- if found_slug -%}
+  {%- assign entry = registry[found_slug] -%}
+  {%- assign emoji = entry.emoji | default: '' -%}
+  {%- assign title = entry.title | default: __input -%}
+  {%- if emoji != '' -%}
+    <span class="category-emoji" role="img" aria-label="{{ title }}" title="{{ title }}" data-cat="{{ found_slug }}">{{ emoji }}</span>
+  {%- endif -%}
+{%- else -%}
+  {%- comment -%} Fallback: no match found; intentionally silent to avoid noise {%- endcomment -%}
+{%- endif -%}

@@ -1,0 +1,33 @@
+{%- comment -%}
+Emit the canonical registry slug (or blank) matching an incoming category key.
+Usage: {% capture slug %}{% include utility/map-category-to-registry.html key=cat_key %}{% endcapture %}
+{%- endcomment -%}
+{%- assign incoming = key | to_s | strip -%}
+{%- assign incoming_norm = incoming | downcase -%}
+{%- assign out = '' -%}
+{%- assign reg = site.data.category_registry -%}
+{%- for pair in reg -%}
+  {%- assign slug = pair[0] | to_s | strip -%}
+  {%- if slug == '' -%}{%- continue -%}{%- endif -%}
+  {%- if slug | slice: 0,1 == '$' -%}{%- continue -%}{%- endif -%}
+  {%- assign entry = pair[1] -%}
+  {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
+  {%- assign title = entry.title | to_s -%}
+  {%- assign title_norm = title | downcase -%}
+  {%- if incoming_norm == slug or incoming_norm == title_norm -%}
+    {%- assign out = slug -%}
+    {%- break -%}
+  {%- endif -%}
+  {%- assign raw_list = entry.raw_names | default: '' -%}
+  {%- if raw_list and raw_list != '' -%}
+    {%- for r in raw_list -%}
+      {%- assign r_norm = r | downcase -%}
+      {%- if incoming_norm == r_norm -%}
+        {%- assign out = slug -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if out != '' -%}{%- break -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{{ out }}

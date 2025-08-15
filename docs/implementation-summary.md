@@ -171,3 +171,48 @@ prompts/
 The integration successfully connects the existing `prompt-library` layout with your Jekyll posts collection, creating a fully dynamic, searchable, and filterable prompt library interface. All existing functionality is preserved while adding powerful new features for browsing your growing collection of AI prompts.
 
 The implementation follows Jekyll best practices and maintains the existing design system and accessibility features.
+
+---
+
+## Homepage Category Carousel Refactor & Accessibility Enhancements (2025-08-14)
+
+## Overview
+
+Refactored the homepage category carousel to be fully driven by `_data/category_registry.yml`, eliminating legacy duplication and adding comprehensive accessibility semantics.
+
+## Key Changes
+
+- Data source unification: replaced deprecated `categories-on-blog.yml`; all slide metadata sourced from `category_registry.yml`.
+- Two-pass Liquid rendering: first counts qualifying categories; second renders slides (no Liquid `push`).
+- Robust post matching: matches by registry title, slug, and any `raw_names` alias (array or scalar) in `post.categories`.
+- Accessibility: region + roledescription; hidden heading & instructions; list/listitem semantics; descriptive `aria-label`; single control pair; `aria-live="polite"`.
+- Random start compatibility: first slide active for fallback; client script (ADR-003) randomizes on load.
+
+## Rationale
+
+The previous attempt to assemble a filtered array of categories using Liquid `push` produced empty collections in build output, harming reliability. A two-pass direct scan is clearer and resilient while keeping build-time static generation for SEO and non-JS users. Centralizing metadata prevents divergence with theming system (see Category Theming ADR).
+
+## Outcomes
+
+- 27 qualifying category slides rendered at time of implementation.
+- Zero duplication of category metadata across templates.
+- Reduced keyboard tab stops (single control pair vs per-slide duplicates).
+- Clear, descriptive slide labels improve screen reader navigation.
+
+## Files Modified
+
+- `_includes/homepage/carousel.html` (logic + ARIA refactor)
+- Added ADR `docs/adr/006-carousel-registry-driven-accessibility.md` documenting decisions.
+
+## Follow-Up Opportunities
+
+- Optional pause/play control if auto-rotation is later introduced.
+- Add automated HTMLProofer / custom test to assert presence of required ARIA attributes.
+- Potential precomputation of random start server-side if deterministic shuffling desired per build.
+
+## References
+
+- ADR-006 (this change) – registry & accessibility.
+- ADR-003 – random start position.
+- Category Theming Unification ADR – registry establishment.
+
