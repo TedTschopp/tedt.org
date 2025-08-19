@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-15T21:14:50Z
+Last update: 2025-08-15T23:57:27Z
 \n## Latest Summary (tail 50 lines)\n
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
 ^ (line 622)
@@ -50,8 +50,9 @@ Last update: 2025-08-15T21:14:50Z
   *  linking to internal hash # that does not exist (line 3807)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3660 failures!
+HTML-Proofer found 3659 failures!
 \n## Available Historical Logs\n
+- 2025-08-15T23-54-21-HTML Logging.txt
 - 2025-08-15T21-11-31-HTML Logging.txt
 - 2025-08-15T20-46-15-HTML Logging.txt
 - 2025-08-15T20-28-48-HTML Logging.txt
