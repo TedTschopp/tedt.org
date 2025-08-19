@@ -69,8 +69,8 @@ prompt_content: |
   **Input:** Ask the user for input regarding what they are looking to clarify.
   **Plan:** Interpret input → Clarify intent → Clarify End User Definition & Modeling -> Decompose into smaller units → Self review and Reflection
   **Audience:** Mixed stakeholder environments (tech + non-tech)
-  **Tone:** tone:formal
-  **Creative Mode:** divergent_mode:on (explore multiple valid paths)
+  **Tone:** `tone:formal`
+  **Creative Mode:** `divergent_mode:on` (explore multiple valid paths)
 
   ### User input
 
@@ -92,9 +92,9 @@ prompt_content: |
   * Ask up to 3 concise clarification questions
   * If no response:
 
-    * Flag as too vague
+    * Flag as `too vague`
     * List key assumptions
-    * Generate a *minimum viable plan*, tagged uncertainty
+    * Generate a *minimum viable plan*, tagged `uncertainty`
 
   #### Clarify End User Definition & Modeling
 
@@ -212,7 +212,7 @@ prompt_content: |
   * **Spikes without Outcomes** – research effort never translates to code. Spike story closed with “we learned X” but no follow‑up story created. Make the definition of done for a spike: produce a decision document, prototype, or a concrete implementation ticket.
 
   Use these techniques iteratively and flexibly to ensure each sub-story delivers user value, reduces risk, or unlocks learning.
-  Use divergent_mode:on if multiple valid paths exist (e.g., design-first vs. dev-first). Offer parallel plans when valuable.
+  Use `divergent_mode:on` if multiple valid paths exist (e.g., design-first vs. dev-first). Offer parallel plans when valuable.
 
   When creating backlog items follow these rules:
 
@@ -220,18 +220,18 @@ prompt_content: |
   2. **Domain (optional)** – add a hyphenated sub‑system code if needed (PAY, INV, USR).
   3. **Artifact type** – use one of: US (User Story), REQ (Requirement/Feature), AC (Acceptance Criterion), E (Epic), C (Capability/Feature), VC (Verification Criterion), VL (Validation Criterion).
   4. **Hierarchy** – always start the ID with its parent’s full ID, then a hyphen.
-     * Example: a story under Epic E12 → APP-US-E12-.
-     * A VC under that story → APP-US‑E12‑001‑VC‑01.
+     * Example: a story under Epic E12 → `APP-US-E12-`.
+     * A VC under that story → `APP-US‑E12‑001‑VC‑01`.
   5. **Sequence numbers** –
-     * Epics / Capabilities: two digits (E01, C04).
-     * Requirements: three digits within the capability (REQ‑C02‑005).
-     * User Stories: three digits within the epic (US‑E12‑017).
-     * Acceptance Criteria: two digits after “AC” (…‑AC‑02).
-     * Verification Criteria: two digits after “VC” (…‑VC‑03).
-     * Validation Criteria: single digit after “VL” (…‑VL‑1).
+     * Epics / Capabilities: two digits (`E01`, `C04`).
+     * Requirements: three digits within the capability (`REQ‑C02‑005`).
+     * User Stories: three digits within the epic (`US‑E12‑017`).
+     * Acceptance Criteria: two digits after “AC” (`…‑AC‑02`).
+     * Verification Criteria: two digits after “VC” (`…‑VC‑03`).
+     * Validation Criteria: single digit after “VL” (`…‑VL‑1`).
   6. **Zero‑pad** all numeric parts so lexical sorting works (e.g., 001, 010).
-  7. **Revision suffix** – only add -R<number> when the text of the item itself changes after baseline (never for added test data or minor wording).
-  8. **Characters allowed** – upper‑case letters, digits, hyphen (-) and underscore (_). No spaces.
+  7. **Revision suffix** – only add `-R<number>` when the text of the item itself changes after baseline (never for added test data or minor wording).
+  8. **Characters allowed** – upper‑case letters, digits, hyphen (`-`) and underscore (`_`). No spaces.
   9. **Immutability** – once an ID is assigned it never changes; only a revision suffix may be appended later.
   10. **Linking rule** – the parent‑first format makes every ID self‑describing, so any tool can infer the relationship simply by parsing the string (no extra lookup table required).
 
@@ -249,14 +249,14 @@ prompt_content: |
 
   | Element                                                                  | Format                                                                                                                                                                                                                                                                                         | Example                              |
   | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-  | **Product prefix** - The Change Management Database ID for the product   | 5 uppercase letters                                                                                                                                                                                                                                                                            | APP, WEB                         |
-  | **Domain (optional)**                                                    | Hyphenated subsystem code                                                                                                                                                                                                                                                                      | PAY, INV                         |
-  | **Artifact type**                                                        | One of: <br>• US – User Story <br>• REQ – Requirement/Feature <br>• AC – Acceptance Criterion <br>• E – Epic <br>• C – Capability <br>• VC – Verification Criterion <br>• VL – Validation Criterion                                                                                                | US, REQ                          |
-  | **Hierarchy**                                                            | Begin with the parent’s full ID, followed by a hyphen                                                                                                                                                                                                                                          | APP‑US‑E12‑ (story under Epic E12) |
-  | **Sequence numbers**                                                     | Zero‑padded numeric part <br>• Epics / Capabilities: 2 digits (E01, C04) <br>• Requirements: 3 digits within capability (REQ‑C02‑005) <br>• User Stories: 3 digits within epic (US‑E12‑017) <br>• AC: 2 digits (…‑AC‑02) <br>• VC: 2 digits (…‑VC‑03) <br>• VL: 1 digit (…‑VL‑1)     | APP‑REQ‑C02‑005                    |
-  | **Revision suffix** *(only when the item’s text changes after baseline)* | -R<number>                                                                                                                                                                                                                                                                                   | APP‑US‑E12‑017‑R2                  |
+  | **Product prefix** - The Change Management Database ID for the product   | 5 uppercase letters                                                                                                                                                                                                                                                                            | `APP`, `WEB`                         |
+  | **Domain (optional)**                                                    | Hyphenated subsystem code                                                                                                                                                                                                                                                                      | `PAY`, `INV`                         |
+  | **Artifact type**                                                        | One of: <br>• US – User Story <br>• REQ – Requirement/Feature <br>• AC – Acceptance Criterion <br>• E – Epic <br>• C – Capability <br>• VC – Verification Criterion <br>• VL – Validation Criterion                                                                                                | `US`, `REQ`                          |
+  | **Hierarchy**                                                            | Begin with the parent’s full ID, followed by a hyphen                                                                                                                                                                                                                                          | `APP‑US‑E12‑` (story under Epic E12) |
+  | **Sequence numbers**                                                     | Zero‑padded numeric part <br>• Epics / Capabilities: 2 digits (`E01`, `C04`) <br>• Requirements: 3 digits within capability (`REQ‑C02‑005`) <br>• User Stories: 3 digits within epic (`US‑E12‑017`) <br>• AC: 2 digits (`…‑AC‑02`) <br>• VC: 2 digits (`…‑VC‑03`) <br>• VL: 1 digit (`…‑VL‑1`)     | `APP‑REQ‑C02‑005`                    |
+  | **Revision suffix** *(only when the item’s text changes after baseline)* | `-R<number>`                                                                                                                                                                                                                                                                                   | `APP‑US‑E12‑017‑R2`                  |
 
-  *Allowed characters:* A–Z, 0–9, hyphen (-) and underscore (_). No spaces.
+  *Allowed characters:* A–Z, 0–9, hyphen (`-`) and underscore (`_`). No spaces.
   *Immutability:* Once assigned, an ID never changes except for the optional revision suffix.
 
   ##### 2. When to Use Which Artifact
@@ -276,13 +276,13 @@ prompt_content: |
 
   ###### 3.1 User Stories & Sub‑Stories
 
-  Markdown
+  ```Markdown
   "As a [User Role Who would pay to use the app to do something], I want to [Action the User wants to do in a narrative format that tells a story], so that [Outcome, Benefit, or Value Created and complete the narrative story]."
-  
+  ```
 
   *Acceptance Criteria – Gherkin style:*
 
-  Cucumber
+  ```Cucumber
   Scenario: <Brief description>
     Given <starting condition / preconditions>
       And <additional context if needed>
@@ -290,13 +290,13 @@ prompt_content: |
     Then <expected outcome>
       And <optional second outcome>
       And <optional third outcome>
-  
+  ```
 
   ###### 3.2 Requirements & Sub‑Requirements
 
-  Markdown
+  ```Markdown
   "The [System that this requirement is assigned to] [Shall {for requirements} | Will {for facts or declaration of purpose} | Should = {for goals}] [Do some capability or create some business outcome] while [some set of conditions need to be met that can be measured] [under some measurable constraint]
-  
+  ```
 
   *Verification & Validation (V&V) statements:*
 
