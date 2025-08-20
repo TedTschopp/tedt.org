@@ -185,7 +185,7 @@ For the **Customer Experience Platform (CEP)** initiative, the Technology Archit
 **In‑Scope**
 
 | Domain                           | Components / Services Included                                                                     | Notes                         |
-| -------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------- |
+|----------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------|
 | **Compute & Container Platform** | Managed Kubernetes clusters (prod, non‑prod), node groups, cluster add‑ons (Ingress, service mesh) | Multi‑AZ, auto‑scaling        |
 | **Storage & Data**               | Object store buckets, relational DBaaS (PostgreSQL), distributed cache, secrets vault              | Sized for 3‑year growth       |
 | **Networking**                   | Virtual networks, subnets, route tables, ingress/egress gateways, app‑level WAF, API gateway       | Peered to enterprise hub      |
@@ -242,17 +242,17 @@ Clear articulation of these elements provides stakeholders with a shared underst
 
 <Example> – **Customer Experience Platform (CEP)**
 
-| Domain                | **Baseline (As‑Is)**                                      | **Target (To‑Be)**                                                      | **Gap / Required Change**                                        |
-| --------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Compute**           | On‑prem VMware cluster, 60 % utilised, single data‑centre | Managed Kubernetes (multi‑AZ) + serverless functions                    | Migrate VMs to containers; adopt IaC; decommission ageing blades |
-| **Storage & Data**    | SQL Server 2012 on SAN; unmanaged file share              | Managed PostgreSQL, object storage (versioned), encrypted secrets vault | Data migration & schema refactor; implement encryption‑at‑rest   |
-| **Networking**        | Flat L2 network; firewalls at perimeter only              | Hub‑and‑spoke VPC with micro‑segmentation, WAF, API gateway             | Re‑architect network; apply zero‑trust controls and service mesh |
-| **Security & IAM**    | Local AD groups; manual key rotation                      | Centralised IAM (SAML/OIDC), KMS, automated secrets rotation            | Integrate with enterprise SSO; enforce MFA and least privilege   |
-| **Integration**       | Point‑to‑point SOAP, batch file drops                     | REST/GraphQL APIs, event streaming bus                                  | Build API gateway; convert batch → real‑time events              |
-| **Observability**     | Basic VM syslogs; no tracing                              | Unified log/metrics/tracing stack with SLO dashboards                   | Deploy observability platform; instrument code and infra         |
-| **Automation & CICD** | Manual deployments via RDP                                | GitOps pipelines, blue‑green deployments                                | Create pipelines; train teams on Git workflows                   |
-| **Resilience & DR**   | Single DC; nightly tape backup                            | Multi‑AZ + cross‑region failover; RPO 15 min, RTO 1 hr                  | Implement continuous replication; automate failover drills       |
-| **Compliance**        | Ad‑hoc audits; configs drift                              | Policy‑as‑Code, CIS‑hardened images, continuous compliance scans        | Embed compliance in pipeline; remediate baseline drift           |
+| Domain                 | **Baseline (As‑Is)**                                      | **Target (To‑Be)**                                                      | **Gap / Required Change**                                        |
+|------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------|
+| **Compute**            | On‑prem VMware cluster, 60 % utilised, single data‑centre | Managed Kubernetes (multi‑AZ) + serverless functions                    | Migrate VMs to containers; adopt IaC; decommission ageing blades |
+| **Storage & Data**     | SQL Server 2012 on SAN; unmanaged file share              | Managed PostgreSQL, object storage (versioned), encrypted secrets vault | Data migration & schema refactor; implement encryption‑at‑rest   |
+| **Networking**         | Flat L2 network; firewalls at perimeter only              | Hub‑and‑spoke VPC with micro‑segmentation, WAF, API gateway             | Re‑architect network; apply zero‑trust controls and service mesh |
+| **Security & IAM**     | Local AD groups; manual key rotation                      | Centralised IAM (SAML/OIDC), KMS, automated secrets rotation            | Integrate with enterprise SSO; enforce MFA and least privilege   |
+| **Integration**        | Point‑to‑point SOAP, batch file drops                     | REST/GraphQL APIs, event streaming bus                                  | Build API gateway; convert batch → real‑time events              |
+| **Observability**      | Basic VM syslogs; no tracing                              | Unified log/metrics/tracing stack with SLO dashboards                   | Deploy observability platform; instrument code and infra         |
+| **Automation & CI-CD** | Manual deployments via RDP                                | GitOps pipelines, blue‑green deployments                                | Create pipelines; train teams on Git workflows                   |
+| **Resilience & DR**    | Single DC; nightly tape backup                            | Multi‑AZ + cross‑region failover; RPO 15 min, RTO 1 hr                  | Implement continuous replication; automate failover drills       |
+| **Compliance**         | Ad‑hoc audits; configs drift                              | Policy‑as‑Code, CIS‑hardened images, continuous compliance scans        | Embed compliance in pipeline; remediate baseline drift           |
 
 **Gap Summary**
 
@@ -283,7 +283,6 @@ Clear articulation of these elements provides stakeholders with a shared underst
 * **Gap Closure Governance** – Each remediation item enters the Architecture Roadmap and is tracked via the Architecture Review Board (ARB).
 * **Metric‑Driven Validation** – Success measured by SLO attainment (availability ≥99.9 %, latency ≤200 ms), security posture (no critical CVEs), and compliance audit pass rates.
 
-
 ### Baseline Architecture:
 
 <Purpose>  
@@ -299,7 +298,7 @@ Document the **current‑state technology landscape** for the solution so stakeh
 <Example> – **Customer Experience Platform (CEP) – Current State**
 
 | Domain                 | Technology Components (Version / Vendor)                                  | Deployment & Ops                                            | Known Issues & Risks                                                            |
-| ---------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------- |
+|------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------|
 | **Compute**            | 22 × VMware ESXi 6.5 VMs (Ubuntu 18.04 LTS), 4 vCPU/8 GB each             | Single on‑prem data‑centre; manual provisioning via vSphere | 80 % CPU at peak, no auto‑scaling; ESXi 6.5 reaches EoS in Oct 2025             |
 | **Storage**            | SAN array (NetApp FAS2552) for DB & file shares; 45 TB used               | Weekly full + nightly incremental backups to tape           | Thin provisioning exhausted; restores exceed 6 hrs; tape media nearing capacity |
 | **Database**           | Microsoft SQL Server 2012 Standard                                        | Active‑Passive failover cluster                             | Out of extended support; no encryption‑at‑rest; 300 ms P99 query latency        |
@@ -346,7 +345,7 @@ Define the **future‑state technology landscape** that will realise the solutio
 <Example> – **Customer Experience Platform (CEP) – Future State**
 
 | Domain                      | **Target Components & Services**                                                                                                         | **Key Improvements over Baseline**                                              | **Business / NFR Alignment**                                                       |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | **Compute**                 | Managed **Kubernetes Service** (EKS/AKS/GKE) with autoscaling node groups; **FaaS** layer for event‑driven tasks                         | Elastic scaling; no patching of OS/VMs; canary & blue‑green deployments         | Handles seasonal traffic surges; supports CI/CD velocity; reduces Ops toil         |
 | **Storage & Data**          | **Aurora PostgreSQL** (multi‑AZ), **Object Storage** (S3) with lifecycle & versioning, **Secrets Vault** (HSM‑backed), **Redis Cluster** | Managed, encrypted‑at‑rest; automated backups; microsecond latency cache        | Meets data privacy, RPO ≤ 15 min; accelerates page loads to < 150 ms               |
 | **Networking**              | **Hub‑and‑Spoke VPC** with **Service Mesh** (mTLS), **API Gateway**, **Global WAF/CDN**, private link to SaaS partners                   | Zero‑trust segmentation; edge DDoS protection; consistent traffic observability | Reduces lateral‑movement risk; improves end‑user latency 30 %                      |
@@ -403,7 +402,7 @@ Convert the **delta between “as‑is” and “to‑be”** into a clear, acti
 <Example> – **Customer Experience Platform (CEP)**
 
 | #  | Domain          | **Gap Description**                                     | **Type**          | **Remediation / Action**                                                              | **Work Package / Wave**          | **Priority** | **Dependencies / Risks**              |
-| -- | --------------- | ------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------- | -------------------------------- | ------------ | ------------------------------------- |
+|----|-----------------|---------------------------------------------------------|-------------------|---------------------------------------------------------------------------------------|----------------------------------|--------------|---------------------------------------|
 | 1  | Compute         | On‑prem VMs lack elastic scaling; ESXi 6.5 EoS Oct 2025 | Retire / Add      | Containerise workloads; deploy to managed K8s                                         | WP‑01 “Platform Foundation”      | Critical     | Landing Zone provisioned; K8s skills  |
 | 2  | Database        | SQL Server 2012 unsupported & unencrypted               | Enhance           | Schema refactor; migrate to Aurora PostgreSQL (TLS & KMS)                             | WP‑02 “Data Modernisation”       | High         | Data mapping; downtime window         |
 | 3  | Networking      | Flat VLAN → no micro‑segmentation; manual FW updates    | Enhance           | Build hub‑and‑spoke VPC, service mesh (mTLS), IaC FW rules                            | WP‑01 “Platform Foundation”      | High         | IAM uplift; change‑control approvals  |
@@ -452,7 +451,7 @@ This section catalogues the **core infrastructure platform services**—compute,
 <Example> – **Customer Experience Platform (CEP)**
 
 | Domain                      | **Service / Component**            | **Baseline (As‑Is)**              | **Target (To‑Be)**                                                      | **Key Attributes & Notes**                                 |
-| --------------------------- | ---------------------------------- | --------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------- |
+|-----------------------------|------------------------------------|-----------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------|
 | **Compute**                 | Virtual Machines (VMware ESXi 6.5) | 22 VMs, manual patching           | **Managed Kubernetes** (EKS) + **Lambda** functions                     | K8s v1.30, autoscaling node groups; FaaS for event workers |
 |                             | On‑Prem Blade Servers              | 5 × Dell R730                     | *Retire*                                                                | Decommission after container cut‑over                      |
 | **Storage & Data**          | SAN (NetApp FAS2552)               | 45 TB used, thick‑provisioned     | **S3 Object Storage** + **Aurora PostgreSQL**                           | S3 with versioning & lifecycle; Aurora multi‑AZ, TLS, KMS  |
@@ -477,7 +476,7 @@ This section catalogues the **core infrastructure platform services**—compute,
 **Service Ownership & SLAs**
 
 | Service            | Owner         | SLA (Target) | Support Model                  |
-| ------------------ | ------------- | ------------ | ------------------------------ |
+|--------------------|---------------|--------------|--------------------------------|
 | Managed Kubernetes | Platform Team | 99.9 %       | 24×7 DevOps on‑call            |
 | Aurora PostgreSQL  | Data Services | 99.95 %      | Cloud provider premium support |
 | SD‑WAN             | Network Ops   | 99.5 %       | Co‑managed with carrier        |
@@ -511,7 +510,7 @@ Capture the **processing layer** that powers the solution—virtual machines, co
 <Example> – **Customer Experience Platform (CEP) – Compute Overview**
 
 | Domain                 | **Baseline (As‑Is)**                                                        | **Target (To‑Be)**                                                                                                                 | **Key Improvements & Rationale**                                                                         |
-| ---------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+|------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Virtual Machines**   | 22 × VMware ESXi 6.5 VMs (Ubuntu 18.04), 4 vCPU / 8 GB RAM; manual patching | *Retire* – workload lifted to containers                                                                                           | Eliminates EoS hypervisor, reduces patch toil, enables autoscaling                                       |
 | **Container Platform** | N/A                                                                         | **Managed Kubernetes** (EKS v1.30) across 3 AZs; 2 node groups: *GP* (8 vCPU/32 GB) & *HI‑MEM* (16 vCPU/64 GB); Cluster Autoscaler | Horizontal & vertical autoscaling meets 99.9 % availability; pod security policies enforce CIS hardening |
 | **Serverless / FaaS**  | N/A                                                                         | **AWS Lambda** (ARM Graviton2), 512 MB–3 GB memory range; provisioned concurrency for latency‑sensitive functions                  | Event‑driven tasks scale to zero; lower cost for burst workloads                                         |
@@ -522,7 +521,7 @@ Capture the **processing layer** that powers the solution—virtual machines, co
 **Compute Sizing & Scaling Policy**
 
 | Environment | Baseline Capacity    | Target Initial Capacity                                | Scaling Strategy                                  |
-| ----------- | -------------------- | ------------------------------------------------------ | ------------------------------------------------- |
+|-------------|----------------------|--------------------------------------------------------|---------------------------------------------------|
 | Dev & QA    | 8 vCPU / 32 GB (VMs) | 2 GP nodes (spot) + 1 HI‑MEM node                      | 1 → 4 nodes based on CPU > 60 %                   |
 | Staging     | 16 vCPU / 64 GB      | 3 GP + 2 HI‑MEM nodes                                  | 3 → 6 nodes, HPA on requests > 70 %               |
 | Production  | 64 vCPU / 128 GB     | 6 GP + 3 HI‑MEM nodes + 200 provisioned Lambda conc.   | 6 → 12 nodes; provisioned conc. auto‑tuned weekly |
@@ -566,7 +565,7 @@ Document the **data‑persistence layer** for the solution, covering relational 
 <Example> – **Customer Experience Platform (CEP)**
 
 | Domain                     | **Baseline (Current State)**                      | **Target (Future State)**                                  | **Key Improvements & Rationale**                            |
-| -------------------------- | ------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- |
+|----------------------------|---------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------|
 | **Transactional Database** | SQL Server 2012 Std, 2‑node cluster on SAN (2 TB) | **Aurora PostgreSQL 15** (multi‑AZ), auto‑scales 3 → 12 TB | Eliminates EoS risk; continuous backup; 4× read throughput  |
 | **Object & File Storage**  | NetApp CIFS share (15 TB)                         | **Amazon S3 Standard** → S3 IA / Glacier                   | 11×9’s durability; lifecycle tiering cuts cost \~40 %       |
 | **In‑Memory Cache**        | None                                              | **ElastiCache Redis 7.2** (cluster mode, 3 × 6 GB)         | P95 response < 150 ms; multi‑AZ failover < 30 s             |
@@ -579,7 +578,7 @@ Document the **data‑persistence layer** for the solution, covering relational 
 **Capacity, Performance & Durability Targets**
 
 | Metric                   | Baseline    | Target                       |
-| ------------------------ | ----------- | ---------------------------- |
+|--------------------------|-------------|------------------------------|
 | DB Read Throughput       | 3 k r/s     | 15 k r/s (Aurora + replicas) |
 | Object Retrieval Latency | 80 ms       | 30 ms (S3 + CDN)             |
 | Data Durability          | 99.9 %      | 99.999999999 %               |
@@ -615,7 +614,7 @@ Define the **connectivity layer**—LAN/WAN, cloud VPCs, load balancers, DNS, CD
 <Example> – **Customer Experience Platform (CEP)**
 
 | Domain                     | **Baseline (Current State)**                            | **Target (Future State)**                                                            | **Key Improvements & Rationale**                                           |
-| -------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+|----------------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | **Core LAN / Data‑Centre** | Flat VLAN; 1 Gb switches; north‑south ASA firewall only | *Retire workload* (cloud migration); keep small mgmt VLAN                            | Shrinks attack surface; reduces on‑prem OPEX                               |
 | **Cloud VPC**              | N/A                                                     | **Hub‑and‑Spoke VPC** (10.10.0.0/16) with env‑spoke /24 subnets; **Transit Gateway** | Centralised routing, inspection, and segmentation; simplifies multi‑region |
 | **WAN / Hybrid**           | MPLS 100 Mbps + IPSec VPN to AWS                        | **SD‑WAN overlay** + **Direct Connect 1 Gb** (VPN fail‑over)                         | 10× bandwidth, 40 % cost reduction, dynamic latency routing                |
@@ -629,7 +628,7 @@ Define the **connectivity layer**—LAN/WAN, cloud VPCs, load balancers, DNS, CD
 **Performance, Resilience & Security Targets**
 
 | Metric                            | Baseline    | Target                   |
-| --------------------------------- | ----------- | ------------------------ |
+|-----------------------------------|-------------|--------------------------|
 | Public API Latency (P95, US‑East) | 320 ms      | ≤ 150 ms                 |
 | East‑West Encryption Coverage     | 0 %         | 100 % (mTLS)             |
 | WAN Bandwidth to Cloud            | 100 Mbps    | 1 Gb + 200 Mbps backup   |
@@ -663,12 +662,10 @@ Capture how **employee devices and workspaces**—laptops, desktops, tablets, sm
 4. **Map to Business & NFRs** – Explain how the target improves user experience, security compliance, remote‑work enablement, and TCO.  
 5. **Reference Governance** – Asset‑management system, configuration‑as‑code (Intune/Workspace ONE), endpoint‑security baselines, lifecycle refresh policy.
 
----
-
 <Example> – **Customer Experience Platform (CEP)**
 
 | Domain                           | **Baseline (Current State)**                                                    | **Target (Future State)**                                                                                           | **Key Improvements & Rationale**                                                                   |
-| -------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+|----------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | **Laptop / Desktop Fleet**       | Dell Latitude 5480 (2017), Windows 10 21H2 Pro; imaged manually by Service Desk | **Dell Latitude 5450 + MacBook Air M3** (choice); Windows 11 23H2 or macOS 15; **Autopilot / Apple DEP zero‑touch** | Hardware refresh → +35 % battery life; self‑service enrolment cuts setup time from 90 min → 10 min |
 | **Mobile Devices**               | BYOD iOS/Android; basic ActiveSync email profile                                | **Corporate‑issued iPhone 15 & Samsung S24** (role‑based); **Intune MDM** with Conditional Access, per‑app VPN      | Full device encryption, remote wipe, phishing‑resistant MFA; reduces data‑loss risk                |
 | **Virtual Desktop / DaaS**       | On‑prem Citrix 7.15; 200 persistent VDIs; VPN required                          | **Azure Virtual Desktop (AVD)** pooled host pools; FSLogix profiles; 300 seats; HTML5 client                        | Elastic scaling for contractors; global PoP access; 25 % cost reduction vs. on‑prem                |
@@ -678,19 +675,15 @@ Capture how **employee devices and workspaces**—laptops, desktops, tablets, sm
 | **Asset Lifecycle & Support**    | 4‑yr refresh, break‑fix via Service Desk; tickets by phone/email                | **3‑yr refresh** with buy‑back; ServiceNow portal, self‑service KB, AI chatbot; Smart Locker parts vending          | MTTR ↓ 30 %; 15 % capex saved via resale; 40 % tickets deflected by self‑help                      |
 | **Remote Access**                | Cisco AnyConnect VPN for all traffic                                            | **Zscaler Zero Trust Network Access (ZTNA)**; split‑tunnel for SaaS                                                 | Least‑privilege app access; 60 % bandwidth reduction on VPN concentrators                          |
 
----
-
 **Experience, Security & Cost Metrics**
 
 | Metric                                       | Baseline | Target                |
-| -------------------------------------------- | -------- | --------------------- |
+|----------------------------------------------|----------|-----------------------|
 | Device Deployment Time                       | 90 min   | ≤ 10 min (zero‑touch) |
 | Patch Compliance (≤ 7 days)                  | 62 %     | ≥ 95 %                |
 | Mean Time to Resolve EUC Ticket              | 6 h      | ≤ 4 h                 |
 | Endpoint Ransomware Protection Score (MITRE) | 45 %     | ≥ 85 %                |
 | Total Cost per User / Year                   | \$2 150  | \$1 820 (‑15 %)       |
-
----
 
 <Prerequisites>  
 * **Autopilot / DEP Tenant Enrollment** and device‑serial pre‑registration.  
@@ -698,8 +691,6 @@ Capture how **employee devices and workspaces**—laptops, desktops, tablets, sm
 * **Enterprise Agreement Upgrade** to Microsoft 365 E5 and Defender P2.  
 * **ServiceNow Digital Workplace Catalog** configured with EUC request items.  
 * **Asset Disposal Vendor Contract** for 3‑year buy‑back program.
-
----
 
 <Standards>  
 * **Hardware Tiers:** Tier 1 (developers/power users) vs. Tier 2 (standard staff) specs published in EUC catalog.  
@@ -726,7 +717,7 @@ Define the **standard device and workspace platforms** offered to employees—la
 <Example> – **Customer Experience Platform (CEP)**
 
 | Device Class                 | **Baseline (Current State)**                   | **Target Standard**                                                                                                               | **User Personas**                          | **Management & Security**                                                                    |
-| ---------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
+|------------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------------------------------------------|
 | **Laptop**                   | Dell Latitude 5480 (2017), Windows 10 21H2 Pro | **Dell Latitude 5450** (Intel i7, 16 GB) **or** **MacBook Air M3** (16 GB) running **Windows 11 23H2 Enterprise** or **macOS 15** | Knowledge workers, execs, devs             | Windows: Intune + Autopilot, BitLocker, Defender EDR; Mac: Jamf Pro, FileVault, Defender EDR |
 | **Desktop / Workstation**    | Dell OptiPlex 7060, Windows 10                 | **HP Z2 G9** Workstation, Windows 11 23H2                                                                                         | CAD/graphics power users                   | Intune co‑management, Nvidia drivers via ConfigMgr                                           |
 | **Mobile (Corporate‑Owned)** | Mixed BYOD, ActiveSync only                    | **iPhone 15 (iOS 18)** or **Samsung S24 (Android 15)**; 128 GB                                                                    | Field sales, managers                      | Intune MDM, Conditional Access, per‑app VPN; full‑device encryption                          |
@@ -771,7 +762,7 @@ Define **how workforce devices are sourced, imaged/enrolled, configured, and kep
 <Example> – **Customer Experience Platform (CEP)**
 
 | Step                               | **Baseline (As‑Is)**                                            | **Target Process & Tooling**                                                                                            | **Benefit / Rationale**                                                   |
-| ---------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+|------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | **1. Sourcing**                    | Bulk orders delivered to IT warehouse; manual asset tag & image | **Drop‑ship direct from Dell / Apple** to employee’s address; serial pre‑registered in Autopilot / DEP                  | 4‑day reduction in device lead time; eliminates warehouse touch           |
 | **2. Enrollment / Imaging**        | MDT PXE imaging (90 min); GPO joins domain                      | **Windows Autopilot** or **Apple DEP** zero‑touch; Azure AD Join; device‑based cert pushed via Intune SCEP              | Setup time ↓ 90 min → 10 min; consistent build; remote‑work ready         |
 | **3. Configuration Baseline**      | GPO & login scripts; Mac manually configured                    | **Intune** (Windows/iOS/Android) & **Jamf Cloud** (macOS) deliver CIS Level 1 baseline and OEM firmware updates         | Policy‑as‑code; drift detection; firmware patched within 48 h             |
@@ -812,7 +803,7 @@ Establish a **single, authoritative framework** for authenticating, configuring,
 <Example> – **Customer Experience Platform (CEP)**
 
 | Domain                          | **Baseline (Current State)**                                    | **Target Device‑Management Service**                                                                         | **Policy Highlights & Benefits**                                                                        |
-| ------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+|---------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Identity & Directory**        | On‑prem AD (2012 R2); AD FS for cloud SSO                       | **Azure AD (Entra ID) P1** – password‑less MFA, Conditional Access, Hybrid Join                              | Unified cloud/hybrid auth, phishing‑resistant credentials (FIDO2), device compliance gates              |
 | **Unified Endpoint Management** | SCCM for Windows, Jamf On‑Prem for macOS, AirWatch for Mobile   | **Intune (Windows 11/iOS/Android) + Jamf Cloud (macOS)**; connected via Intune‑Jamf integration              | Single compliance score per device, cross‑platform policy reporting, zero‑touch DEP/Autopilot           |
 | **Patching & Update Rings**     | WSUS manual approval; Macs patched ad‑hoc                       | **Windows Autopatch** rings (Canary/Pilot/Prod); **Jamf Patch** Smart Groups; **Intune MDM** for iOS/Android | 95 % critical‑patch compliance within 7 days; automated rollback; staged rollouts minimise blast radius |
@@ -827,7 +818,7 @@ Establish a **single, authoritative framework** for authenticating, configuring,
 **Key Outcomes & KPI Targets**
 
 | Metric                                | Baseline      | Target   |
-| ------------------------------------- | ------------- | -------- |
+|---------------------------------------|---------------|----------|
 | Critical Patch Compliance (≤ 7 days)  | 62 %          | ≥ 95 %   |
 | Devices with Full‑Disk Encryption     | 71 %          | 100 %    |
 | Endpoint EDR Coverage                 | 45 %          | 100 %    |
@@ -864,7 +855,7 @@ Describe the **digital‑workspace services**—productivity, collaboration, sto
 <Example> – **Customer Experience Platform (CEP)**
 
 | Service Domain                  | **Baseline (Current State)**          | **Target Service / Platform**                                 | **Access Path & Controls**                                   | **Key Benefits & Rationale**                                      |
-| ------------------------------- | ------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
+|---------------------------------|---------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|
 | **Office Productivity**         | Office 2016 ProPlus (on‑prem KMS)     | **Microsoft 365 Apps for Enterprise** (semi‑annual channel)   | Direct internet via split‑tunnel; Intune app config          | Cloud co‑authoring, evergreen updates, 35 % fewer support tickets |
 | **Email & Calendar**            | Exchange 2016 on‑prem                 | **Exchange Online** (E5)                                      | Direct internet (M365 optimized); MFA & Conditional Access   | 99.9 % SLA, 100 GB mailbox, zero server maintenance               |
 | **Chat, Meetings & Voice**      | Skype for Business on‑prem; Cisco PBX | **Microsoft Teams Phone** with Operator Connect               | Direct internet; Intune‑managed Teams client; QoS via SD‑WAN | Unified comms; retire PBX; 25 % telco cost reduction              |
@@ -879,7 +870,7 @@ Describe the **digital‑workspace services**—productivity, collaboration, sto
 **Experience, Security & Compliance Targets**
 
 | Metric                            | Baseline             | Target                                 |
-| --------------------------------- | -------------------- | -------------------------------------- |
+|-----------------------------------|----------------------|----------------------------------------|
 | Availability (core collaboration) | 99.5 %               | ≥ 99.9 % (M365 SLA)                    |
 | Email Phishing Click‑Through Rate | 12 %                 | ≤ 4 % (MFA + Safe Links)               |
 | Remote Meeting Join Success       | 88 %                 | ≥ 98 %                                 |
@@ -900,7 +891,6 @@ Describe the **digital‑workspace services**—productivity, collaboration, sto
 * **Acceptable‑Use Policy Enforcement:** Intune App Protection (WIP) for BYOD; block copy/paste out of corp context.  
 * **Service Catalogue & SLA Reporting:** Monthly M365 service‑health review; incident metrics fed to ITSM.  
 * **Change Governance:** M365 feature releases monitored via Message Center; adoption communications scheduled; opt‑out process for critical periods.
-
 
 ### Operational Endpoint Device Services
 
@@ -1198,7 +1188,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 ### Security Standards
 
 | Domain             | Standard Product/Technology     | Version | Notes                 |
-| ------------------ | ------------------------------- | ------- | --------------------- |
+|--------------------|---------------------------------|---------|-----------------------|
 | End-User Device OS | Windows 11, macOS, iOS, Android | -       | Managed via MDM/UEM   |
 | IoT Protocols      | MQTT, Zigbee, DNP3, LTE Cat-M   | -       | Used in AMI/FAN/SCADA |
 
@@ -1224,7 +1214,7 @@ Mention if the organization tests user device recovery (like periodic fire drill
 *(Placeholder – for each major technology or platform in this architecture, indicate its lifecycle state within the organization. For example, note if a technology is **“Strategic (Growing)”**, **“Tactical (Current)”**, **“Contain (Limited use)”**, or **“Retiring”**. Alternatively, use classifications like **Emerging**, **Current**, **Obsolescent**. Provide a table or list, e.g.:)*
 
   | Technology Component            | Lifecycle State    | Notes                                                         |
-  | ------------------------------- | ------------------ | ------------------------------------------------------------- |
+  |---------------------------------|--------------------|---------------------------------------------------------------|
   | Mainframe Batch System          | Retiring           | To be decommissioned by 2026 (replaced by cloud solution).    |
   | Customer Info Database (Oracle) | Current (Standard) | Standard platform, will upgrade to latest version in Phase 3. |
   | Cloud Analytics Platform        | Emerging/Adopt     | New introduction, pilot in progress (strategic direction).    |
