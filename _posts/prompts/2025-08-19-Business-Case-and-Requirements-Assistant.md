@@ -1,6 +1,7 @@
 ---
 layout: prompt-details
-title: "Business Case and Requirements Assistant – Agile Backlog Decomposition & Verification and Validation"
+title: "Business Case and Requirements Assistant"
+subtitle: "Agile Backlog Decomposition & Verification and Validation"
 description: "A rigorous, step-by-step Agile coaching prompt that transforms vague goals into clear user stories, requirements, and SMART acceptance criteria—complete with verification and validation approaches."
 permalink: /prompts/business-case-and-requirements-assistant/
 categories:
@@ -453,19 +454,17 @@ prompt_content: |
 
   **Minimum Viable Product(MVP):**
 
-  * MCP 1 of n
+  * MVP 1 of n
 
     * Capability 1 of n (a capability is something a company engages in not something the user sees or needs)
     * Feature 1 of n (a feature is a thing a customer is willing to pay money for as it is valuable to them)
 
   **Additional MVPs:**
 
-  * MCP 2 of n
-
+  * MVP 2 of n
     * Capability 1 of n (a capability is something a company engages in not something the user sees or needs)
     * Feature 1 of n (a feature is a thing a customer is willing to pay money for as it is valuable to them)
-  * MCP n of n
-
+  * MVP n of n
     * Capability 1 of n (a capability is something a company engages in not something the user sees or needs)
     * Feature 1 of n (a feature is a thing a customer is willing to pay money for as it is valuable to them)
 
@@ -483,12 +482,10 @@ prompt_content: |
       * **Acceptance Criteria N of N (if needed):** "\[Scenario: A labor for the behavior being described]: Given \[The Starting Condition for the scenario to test, include any preconditions, environmental details, or relevant information], When \[A specific action that the user takes or an automated process takes within the system takes]. Then \[The expected outcome of the "When", which could be used as confirmation that something happened correctly or a failure of it] And \[Chain together up to three Given, When, Then statements]."
       * **Time Estimate** - (Note the team members involved in this work, and the typical amount of time this work should take to complete the activity and perform the acceptance criteria, verification, and validation steps.  Use the following format:  2 man UI-UX team 1 week development, 1 week acceptance criteria)
   * **User Story N of N (if needed):** "As a \[User Role Who would pay to use the app to do something], I want to \[Action the User wants to do in a narrative format that tells a story], so that \[Outcome, Benefit, or Value Created and complete the narrative story]."
-
     * **Acceptance Criteria 1 of N:** "\[Scenario: A labor for the behavior being described]: Given \[The Starting Condition for the scenario to test, include any preconditions, environmental details, or relevant information], When \[A specific action that the user takes or an automated process takes within the system takes]. Then \[The expected outcome of the "When", which could be used as confirmation that something happened correctly or a failure of it] And \[Chain together up to three Given, When, Then statements]."
     * **Acceptance Criteria N of N (if needed):** "\[Scenario: A labor for the behavior being described]: Given \[The Starting Condition for the scenario to test, include any preconditions, environmental details, or relevant information], When \[A specific action that the user takes or an automated process takes within the system takes]. Then \[The expected outcome of the "When", which could be used as confirmation that something happened correctly or a failure of it] And \[Chain together up to three Given, When, Then statements]."
     * **Time Estimate** - (Note the team members involved in this work, and the typical amount of time this work should take to complete the activity and perform the acceptance criteria, verification, and validation steps.  Use the following format:  2 man UI-UX team 1 week development, 1 week acceptance criteria)
     * **Sub User Story 1 of N (if needed):** "As a \[User Role Who would pay to use the app to do something], I want to \[Action the User wants to do in a narrative format that tells a story], so that \[Outcome, Benefit, or Value Created and complete the narrative story]."
-
       * **Acceptance Criteria 1 of N:** "\[Scenario: A labor for the behavior being described]: Given \[The Starting Condition for the scenario to test, include any preconditions, environmental details, or relevant information], When \[A specific action that the user takes or an automated process takes within the system takes]. Then \[The expected outcome of the "When", which could be used as confirmation that something happened correctly or a failure of it] And \[Chain together up to three Given, When, Then statements]."
       * **Acceptance Criteria N of N (if needed):** "\[Scenario: A labor for the behavior being described]: Given \[The Starting Condition for the scenario to test, include any preconditions, environmental details, or relevant information], When \[A specific action that the user takes or an automated process takes within the system takes]. Then \[The expected outcome of the "When", which could be used as confirmation that something happened correctly or a failure of it] And \[Chain together up to three Given, When, Then statements]."
       * **Time Estimate** - (Note the team members involved in this work, and the typical amount of time this work should take to complete the activity and perform the acceptance criteria, verification, and validation steps.  Use the following format:  2 man UI-UX team 1 week development, 1 week acceptance criteria)
