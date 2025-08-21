@@ -1,8 +1,8 @@
 # HTML Proofer Logs
-Last update: 2025-08-19T21:19:12Z
+Last update: 2025-08-21T23:29:49Z
 \n## Latest Summary (tail 50 lines)\n
-^ (line 622)
-  *  internal image ../img/categories/prompt_library.webp does not exist (line 1004)
+^ (line 629)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1011)
 - ./_site/tools/todo_hex.html
   *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
                 <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
@@ -12,25 +12,25 @@ Last update: 2025-08-19T21:19:12Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1513:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1519:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1513)
-  *  4983:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1519)
+  *  4985:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4983)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1469)
+        ^ (line 4985)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1475)
 - ./_site/user-interfaces-in-2017-2/index.html
+  *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2917)
+- ./_site/web-services-we/index.html
+  *  2913:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2913)
+- ./_site/what-should-google-buy/index.html
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-- ./_site/web-services-we/index.html
-  *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2910)
-- ./_site/what-should-google-buy/index.html
-  *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2911)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -47,11 +47,12 @@ Last update: 2025-08-19T21:19:12Z
   *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3807)
+  *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
 HTML-Proofer found 3664 failures!
 \n## Available Historical Logs\n
+- 2025-08-21T23-26-29-HTML Logging.txt
 - 2025-08-19T21-16-06-HTML Logging.txt
 - 2025-08-19T21-02-08-HTML Logging.txt
 - 2025-08-19T19-12-33-HTML Logging.txt
