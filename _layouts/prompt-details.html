@@ -242,7 +242,7 @@
                     {% endfor %}
                 </div>
 
-                <div class="card my-3 prompt-shell">
+                <div class="card my-3 mb-0prompt-shell">
                     <div class="prompt-toolbar card-header d-flex w-100 justify-content-between flex-wrap gap-3 ps-3 pe-3 py-2">
 
                         <div class="d-flex align-items-center gap-3 flex-wrap">
@@ -273,9 +273,12 @@
                                 title="Copy prompt to clipboard">
                                 <i class="fas fa-copy" aria-hidden="true"></i> <span class="d-none d-sm-inline">Copy Prompt</span>
                             </button>
+                            <!--
                         </div>
 
-                        <div class="ai-provider-buttons d-flex" role="group" aria-label="Send prompt to AI providers">
+                        <div class="ai-provider-buttons d-flex" role="group" aria-label="Send prompt to AI providers">-->
+
+                            
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
@@ -284,7 +287,7 @@
                                     id="chatgptSendDefault" 
                                     aria-label="Send prompt to ChatGPT"
                                     title="Send prompt to OpenAI ChatGPT">
-                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="32" height="32">
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo">
                             </button>
                             {% endif %}
 
@@ -296,7 +299,7 @@
                                     id="claudeSendDefault" 
                                     aria-label="Send prompt to Claude"
                                     title="Send prompt to Anthropic Claude">
-                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" width="32" height="32">
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo">
                             </button>
                             {% endif %}
 
@@ -308,7 +311,7 @@
                                     id="geminiSendDefault" 
                                     aria-label="Send prompt to Gemini"
                                     title="Send prompt to Google Gemini">
-                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" width="32" height="32">
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo">
                             </button>
                             {% endif %}
 
@@ -320,7 +323,7 @@
                                     id="microsoftSendDefault" 
                                     aria-label="Send prompt to Microsoft Copilot"
                                     title="Send prompt to Microsoft Copilot">
-                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="32" height="32">
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo">
                             </button>
                             {% endif %}
 
@@ -332,7 +335,7 @@
                                     id="githubSendDefault" 
                                     aria-label="Send prompt to GitHub Copilot"
                                     title="Send prompt to GitHub Copilot">
-                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="32" height="32">
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo">
                             </button>
                             {% endif %}
                             </div> <!-- Close ai-provider-buttons -->
