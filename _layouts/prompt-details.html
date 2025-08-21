@@ -242,11 +242,11 @@
                     {% endfor %}
                 </div>
 
-                <div class="card my-3">
-                    <div class="card-header justify-content-between d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+                <div class="card my-3 prompt-shell">
+                    <div class="prompt-toolbar card-header d-flex w-100 justify-content-between flex-wrap gap-3 ps-3 pe-3 py-2">
 
-                        <div class="d-flex align-items-center gap-3">
-                            <span>Prompt</span>
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <span class="prompt-label">Prompt</span>
                             {% if page.variables and page.variables.size > 0 %}
                             <button class="btn btn-secondary btn-sm" 
                                     type="button" 
@@ -259,18 +259,11 @@
                             {% endif %}
                         </div>
 
-                        <div class="d-flex align-items-center gap-3 prompt-control-buttons" role="group" aria-label="Download or Copy Prompt">
-                            <!--
-                            <button class="btn btn-outline-danger btn-sm btn-like" aria-label="Like this prompt">
-                                <i class="fas fa-heart"></i> <span class="like-count">0</span>
-                            </button>
-                            -->
-
+                        <div class="d-flex align-items-center gap-2 prompt-control-buttons flex-wrap" role="group" aria-label="Download or Copy Prompt">
                             <a href="#" id="download-prompt-link"
                                 class="btn btn-primary btn-sm" download="{{ page.title | slugify }}.txt">
-                                <i class="fas fa-download"></i> Download Prompt
+                                <i class="fas fa-download"></i> <span class="d-none d-sm-inline">Download Prompt</span>
                             </a>
-
                             <button class="btn btn-primary btn-copy-prompt btn-sm" 
                                 type="button" 
                                 data-bs-original-title="Copy prompt to clipboard"
@@ -278,68 +271,68 @@
                                 data-bs-placement="top"
                                 aria-label="Copy current prompt to clipboard"
                                 title="Copy prompt to clipboard">
-                                <i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt
+                                <i class="fas fa-copy" aria-hidden="true"></i> <span class="d-none d-sm-inline">Copy Prompt</span>
                             </button>
                         </div>
 
-                        <div class="ai-provider-buttons" role="group" aria-label="Send prompt to AI providers">
+                        <div class="ai-provider-buttons d-flex" role="group" aria-label="Send prompt to AI providers">
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
-                            <button class="btn btn-send-chatgpt btn-sm mt-0 me-2 d-flex align-items-center" 
+                            <button class="btn btn-send-chatgpt mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="chatgptSendDefault" 
                                     aria-label="Send prompt to ChatGPT"
                                     title="Send prompt to OpenAI ChatGPT">
-                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="20" height="20">
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="32" height="32">
                             </button>
                             {% endif %}
 
                             <!-- Anthropic Claude -->
                             {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
                             {% if anthropic_models.size > 0 %}
-                            <button class="btn btn-send-claude btn-sm mt-0 me-2 d-flex align-items-center" 
+                            <button class="btn btn-send-claude mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="claudeSendDefault" 
                                     aria-label="Send prompt to Claude"
                                     title="Send prompt to Anthropic Claude">
-                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" width="20" height="20">
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" width="32" height="32">
                             </button>
                             {% endif %}
 
                             <!-- Google AI -->
                             {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
                             {% if google_models.size > 0 %}
-                            <button class="btn btn-send-gemini btn-sm mt-0 me-2 d-flex align-items-center" 
+                            <button class="btn btn-send-gemini mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="geminiSendDefault" 
                                     aria-label="Send prompt to Gemini"
                                     title="Send prompt to Google Gemini">
-                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" width="20" height="20">
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" width="32" height="32">
                             </button>
                             {% endif %}
 
                             <!-- Microsoft Copilot -->
                             {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
                             {% if microsoft_models.size > 0 %}
-                            <button class="btn btn-send-microsoft btn-sm mt-0 me-2 d-flex align-items-center" 
+                            <button class="btn btn-send-microsoft mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="microsoftSendDefault" 
                                     aria-label="Send prompt to Microsoft Copilot"
                                     title="Send prompt to Microsoft Copilot">
-                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="20" height="20">
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="32" height="32">
                             </button>
                             {% endif %}
 
                             <!-- GitHub Copilot -->
                             {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
                             {% if github_models.size > 0 %}
-                            <button class="btn btn-send-github btn-sm mt-0 me-0 d-flex align-items-center" 
+                            <button class="btn btn-send-github mt-0 me-0 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="githubSendDefault" 
                                     aria-label="Send prompt to GitHub Copilot"
                                     title="Send prompt to GitHub Copilot">
-                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="20" height="20">
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="32" height="32">
                             </button>
                             {% endif %}
                             </div> <!-- Close ai-provider-buttons -->
