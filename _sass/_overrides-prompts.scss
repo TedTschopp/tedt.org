@@ -31,8 +31,19 @@
 
 /* Keep provider icons contained inside buttons */
 .ai-provider-buttons .btn img {
-  max-width: 1.25rem;
-  height: auto;
+  /* Increased icon size for better legibility */
+  width: 1.75rem;
+  height: 1.75rem;
+  max-width: none;
+  object-fit: contain;
+}
+
+/* Improve overall AI provider button sizing & spacing */
+.ai-provider-buttons .btn {
+  gap: .35rem;
+  line-height: 1.2;
+  padding: .5rem .75rem;
+  height: auto; /* allow height to grow with larger icon */
 }
 
 /* Contain and wrap long code/prompt content */
@@ -59,3 +70,9 @@ img, video {
     overflow-x: hidden;
   }
 }
+
+/* Site-wide micro horizontal overflow guard (safe because internal scrollable areas like pre blocks manage their own overflow) */
+html {
+  overflow-x: hidden;
+}
+
