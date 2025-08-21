@@ -1,155 +1,155 @@
-        ^ (line 1689)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1691)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/ai-tutoring-prompt-designer/index.html
-  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1508:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1502)
-  *  1700:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1508)
+  *  1702:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1700)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1702)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/artistic-Analysis/index.html
-  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1503:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1497)
-  *  1805:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1503)
+  *  1807:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1805)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1807)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/business-case-and-requirements-assistant/index.html
-  *  1498:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1505:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1498)
-  *  2616:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1505)
+  *  2615:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 2616)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 2615)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1475)
 - ./_site/prompts/index.html
-  *  622:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+  *  629:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
-^ (line 622)
+^ (line 629)
 - ./_site/prompts/marketing-copy-evaluation-template/index.html
-  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1503:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1497)
-  *  1755:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1503)
+  *  1757:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1755)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1757)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/midjourney-v6.1-prompt-template/index.html
-  *  1498:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1504:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1498)
-  *  1864:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1504)
+  *  1866:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1864)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1866)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/midjourney-v7-prompt-template/index.html
-  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1503:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1497)
-  *  1729:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1503)
+  *  1731:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1729)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1731)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/prompts/social-media-repurposing-template/index.html
-  *  1497:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1503:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1497)
-  *  1929:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1503)
+  *  1931:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1929)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1468)
+        ^ (line 1931)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1474)
 - ./_site/putting-first-things-first/index.html
-  *  2970:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2973:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 2970)
-  *  2974:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 2973)
+  *  2977:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2974)
+    ^ (line 2977)
 - ./_site/rain-in-los-ang/index.html
-  *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2914)
+    ^ (line 2917)
 - ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
-  *  2969:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2969)
-  *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
-- ./_site/sex-gardening-a/index.html
-  *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2911)
-  *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
-- ./_site/shadows-and-sym/index.html
-  *  2905:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2905)
-- ./_site/simple-blog-generator/index.html
-  *  1487:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
-</p>
-^ (line 1487)
-  *  4535:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
-        </div>
-        ^ (line 4535)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1466)
-- ./_site/step-1-reply-by-chat/index.html
-  *  2906:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2906)
-- ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
-  *  2983:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 2983)
-  *  2987:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2987)
-- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
-  *  2966:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 2966)
-  *  2970:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2970)
-  *  External link http://www.dscout.com/ara# failed: 404 No error
-- ./_site/the-google-browseros/index.html
-  *  2908:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2908)
-  *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
-- ./_site/the-path-west/index.html
-  *  2946:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2946)
-- ./_site/the-purpose-of-community-protection-of-the-commons/index.html
-  *  2968:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 2968)
   *  2972:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2972)
-- ./_site/thoughts-on-corporate-collaboration-tools/index.html
-  *  2961:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 2961)
-  *  2965:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
+- ./_site/sex-gardening-a/index.html
+  *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2965)
+    ^ (line 2914)
+  *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
+- ./_site/shadows-and-sym/index.html
+  *  2908:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2908)
+- ./_site/simple-blog-generator/index.html
+  *  1493:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1493)
+  *  4537:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4537)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1472)
+- ./_site/step-1-reply-by-chat/index.html
+  *  2909:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2909)
+- ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
+  *  2986:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 2986)
+  *  2990:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2990)
+- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
+  *  2969:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 2969)
+  *  2973:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2973)
+  *  External link http://www.dscout.com/ara# failed: 404 No error
+- ./_site/the-google-browseros/index.html
+  *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2911)
+  *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
+- ./_site/the-path-west/index.html
+  *  2949:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2949)
+- ./_site/the-purpose-of-community-protection-of-the-commons/index.html
+  *  2971:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 2971)
+  *  2975:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2975)
+- ./_site/thoughts-on-corporate-collaboration-tools/index.html
+  *  2964:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 2964)
+  *  2968:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2968)
   *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
 - ./_site/thoughts-on-nar/index.html
-  *  2902:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2905:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2902)
+    ^ (line 2905)
 - ./_site/too-many-feeds/index.html
-  *  2901:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2904:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2901)
+    ^ (line 2904)
   *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
 - ./_site/tools/prompt-library/index.html
-  *  622:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+  *  629:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
-^ (line 622)
-  *  internal image ../img/categories/prompt_library.webp does not exist (line 1004)
+^ (line 629)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1011)
 - ./_site/tools/todo_hex.html
   *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
                 <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
@@ -159,25 +159,25 @@
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1513:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1519:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1513)
-  *  4983:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1519)
+  *  4985:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4983)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1469)
+        ^ (line 4985)
+  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1475)
 - ./_site/user-interfaces-in-2017-2/index.html
+  *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2917)
+- ./_site/web-services-we/index.html
+  *  2913:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2913)
+- ./_site/what-should-google-buy/index.html
   *  2914:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2914)
-- ./_site/web-services-we/index.html
-  *  2910:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2910)
-- ./_site/what-should-google-buy/index.html
-  *  2911:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2911)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -194,7 +194,7 @@
   *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3807)
+  *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
 HTML-Proofer found 3664 failures!
