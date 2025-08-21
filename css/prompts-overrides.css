@@ -1,0 +1,62 @@
+/* Prompts UI: mobile overflow/wrapping fixes */
+
+/* Prevent long titles and headings from overflowing */
+.prompt-details-card h1,
+.prompt-details-card .card-title,
+.card .card-title,
+.h1,
+.h2,
+.h3 {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Wrap control/button rows on narrow screens */
+.prompt-control-buttons,
+.ai-provider-buttons {
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+/* Allow buttons to shrink and wrap text if needed */
+.prompt-control-buttons .btn,
+.ai-provider-buttons .btn,
+.card .btn {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Keep provider icons contained inside buttons */
+.ai-provider-buttons .btn img {
+  max-width: 1.25rem;
+  height: auto;
+}
+
+/* Contain and wrap long code/prompt content */
+.prompt-content-section pre,
+.prompt-content-section code,
+#original-prompt,
+#original-prompt code {
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+}
+
+/* General safety: media scale to container */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: guard against tiny global horizontal jitter on mobile without breaking modals */
+@media (max-width: 576px) {
+  body.page-prompts,
+  .prompt-details-card {
+    overflow-x: hidden;
+  }
+}

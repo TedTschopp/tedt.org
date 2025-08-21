@@ -51,3 +51,6 @@
 // Utilities
 @import "utilities/api";
 // scss-docs-end import-stack
+
+/* Site-specific overrides (keep last so they win) */
+@import "overrides-prompts";

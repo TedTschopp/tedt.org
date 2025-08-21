@@ -118,7 +118,7 @@
         
         .ai-provider-buttons {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap; /* changed from nowrap to wrap for mobile */
             gap: 2px;
             width: 100%;
         }
@@ -128,9 +128,11 @@
             align-items: center;
             justify-content: center;
             padding: 0.25rem 0.5rem;
-            flex: 1;
+            flex: 1 1 auto; /* allow flex items to shrink/wrap */
+            min-width: 2.25rem;
             height: 1.75rem;
             border-radius: 0.25rem;
+            white-space: normal; /* allow text wrapping if labels added later */
         }
         
         
