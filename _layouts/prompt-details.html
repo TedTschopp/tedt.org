@@ -91,24 +91,21 @@
             gap: 0.5rem;
         }
         
-        .ai-provider-buttons .btn {
+        .ai-provider-buttons .btn { /* align with standard .btn-sm sizing */
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem 0.75rem; /* match SCSS override */
-            min-width: 2.75rem;
-            height: auto; /* allow growth */
-            white-space: normal; /* permit label wrapping */
-            gap: .35rem;
+            gap: .25rem;
+            padding: 0.25rem 0.5rem; /* align with .btn-sm */
             line-height: 1.2;
+            height: auto;
         }
-        
-        .ai-provider-buttons .btn img {
-            height: 1.75rem; /* enlarged for visibility */
-            width: 1.75rem;
+        .ai-provider-buttons .btn img { /* natural width ratio */
+            height: 1.1rem;
+            width: auto;
             object-fit: contain;
             display: block;
-            margin: auto;
+            margin: 0 auto;
         }
     </style>
     
@@ -278,7 +275,7 @@
 
                         <div class="ai-provider-buttons d-flex" role="group" aria-label="Send prompt to AI providers">-->
 
-                            
+
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
