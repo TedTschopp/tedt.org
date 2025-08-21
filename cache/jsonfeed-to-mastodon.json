@@ -1414,7 +1414,7 @@
     "date_published": "2025-08-19T00:00:00-07:00",
     "id": "/prompts/business-case-and-requirements-assistant/",
     "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.png",
-    "lastTootTimestamp": 1755636078598,
+    "lastTootTimestamp": 1755779968030,
     "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
     "tags": [
       "Agile",
@@ -1429,7 +1429,15 @@
     "title": "Business Case and Requirements Assistant – Agile Backlog Decomposition & Verification and Validation",
     "toots": [
       "https://tschopp.net/users/Ted/statuses/115057045710395565",
-      "https://tschopp.net/users/Ted/statuses/115057366040803036"
+      "https://tschopp.net/users/Ted/statuses/115057366040803036",
+      "https://tschopp.net/users/Ted/statuses/115058487831695932",
+      "https://tschopp.net/users/Ted/statuses/115058786004587657",
+      "https://tschopp.net/users/Ted/statuses/115059681047520868",
+      "https://tschopp.net/users/Ted/statuses/115061135160495043",
+      "https://tschopp.net/users/Ted/statuses/115062506636007603",
+      "https://tschopp.net/users/Ted/statuses/115064146049661120",
+      "https://tschopp.net/users/Ted/statuses/115065377513020364",
+      "https://tschopp.net/users/Ted/statuses/115066795979232158"
     ],
     "url": "https://tedt.org/prompts/business-case-and-requirements-assistant/"
   },
@@ -1657,7 +1665,7 @@
   },
   "https://tedt.org/prompts/business-case-and-requirements-assistant/": {
     "id": "/prompts/business-case-and-requirements-assistant/",
-    "title": "Business Case and Requirements Assistant – Agile Backlog Decomposition & Verification and Validation",
+    "title": "Business Case and Requirements Assistant",
     "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
     "content_text": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART user stories or system requirements. It also bakes in rigorous acceptance criteria plus fit‑for‑purpos… https://tedt.org/prompts/business-case-and-requirements-assistant/",
     "url": "https://tedt.org/prompts/business-case-and-requirements-assistant/",
@@ -1680,9 +1688,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115058487831695932"
+      "https://tschopp.net/users/Ted/statuses/115068164571817289"
     ],
-    "lastTootTimestamp": 1755653195766
+    "lastTootTimestamp": 1755800851090
   },
   "https://tedt.org/The-Mentor-In-The-Machine/": {
     "id": "/The-Mentor-In-The-Machine/",
