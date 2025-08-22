@@ -1,6 +1,7 @@
 # HTML Proofer Logs
-Last update: 2025-08-22T14:50:41Z
+Last update: 2025-08-22T14:55:39Z
 \n## Latest Summary (tail 50 lines)\n
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
 ^ (line 629)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 1011)
 - ./_site/tools/todo_hex.html
@@ -44,14 +45,14 @@ Last update: 2025-08-22T14:50:41Z
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.instagram.com/TedTschopp failed: 429 No error
-  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3651 failures!
+HTML-Proofer found 3650 failures!
 \n## Available Historical Logs\n
+- 2025-08-22T14-52-30-HTML Logging.txt
 - 2025-08-22T14-47-07-HTML Logging.txt
 - 2025-08-22T00-36-51-HTML Logging.txt
 - 2025-08-21T23-46-17-HTML Logging.txt
