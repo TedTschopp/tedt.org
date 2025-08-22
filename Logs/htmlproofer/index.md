@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-21T23:49:22Z
+Last update: 2025-08-22T00:40:22Z
 \n## Latest Summary (tail 50 lines)\n
 ^ (line 629)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 1011)
@@ -12,13 +12,12 @@ Last update: 2025-08-21T23:49:22Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1516:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1518:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1516)
-  *  4982:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1518)
+  *  4974:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4982)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1472)
+        ^ (line 4974)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -44,14 +43,16 @@ Last update: 2025-08-21T23:49:22Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3664 failures!
+HTML-Proofer found 3652 failures!
 \n## Available Historical Logs\n
+- 2025-08-22T00-36-51-HTML Logging.txt
 - 2025-08-21T23-46-17-HTML Logging.txt
 - 2025-08-21T23-26-29-HTML Logging.txt
 - 2025-08-19T21-16-06-HTML Logging.txt

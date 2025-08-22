@@ -1,65 +1,66 @@
-        ^ (line 1688)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
-- ./_site/prompts/ai-tutoring-prompt-designer/index.html
-  *  1505:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
-</p>
-^ (line 1505)
-  *  1699:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1664:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1699)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
-- ./_site/prompts/artistic-Analysis/index.html
-  *  1500:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
-</p>
-^ (line 1500)
-  *  1804:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
-        </div>
-        ^ (line 1804)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
-- ./_site/prompts/business-case-and-requirements-assistant/index.html
+        ^ (line 1664)
+- ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
   *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1502)
-  *  2612:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1686:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 2612)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1472)
+        ^ (line 1686)
+- ./_site/prompts/ai-tutoring-prompt-designer/index.html
+  *  1507:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1507)
+  *  1697:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1697)
+- ./_site/prompts/artistic-Analysis/index.html
+  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1502)
+  *  1802:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1802)
+- ./_site/prompts/business-case-and-requirements-assistant/index.html
+  *  1504:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1504)
+  *  2610:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2610)
 - ./_site/prompts/index.html
   *  629:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
 ^ (line 629)
 - ./_site/prompts/marketing-copy-evaluation-template/index.html
-  *  1500:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1500)
-  *  1754:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1502)
+  *  1752:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1754)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
+        ^ (line 1752)
 - ./_site/prompts/midjourney-v6.1-prompt-template/index.html
-  *  1501:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1503:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1501)
-  *  1863:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1503)
+  *  1861:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1863)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
+        ^ (line 1861)
 - ./_site/prompts/midjourney-v7-prompt-template/index.html
-  *  1500:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1500)
-  *  1728:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1502)
+  *  1726:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1728)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
+        ^ (line 1726)
 - ./_site/prompts/social-media-repurposing-template/index.html
-  *  1500:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1500)
-  *  1928:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1502)
+  *  1926:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1928)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1471)
+        ^ (line 1926)
 - ./_site/putting-first-things-first/index.html
   *  2973:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -86,13 +87,12 @@
     </div>
     ^ (line 2908)
 - ./_site/simple-blog-generator/index.html
-  *  1490:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1492:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1490)
-  *  4534:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1492)
+  *  4526:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4534)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1469)
+        ^ (line 4526)
 - ./_site/step-1-reply-by-chat/index.html
   *  2909:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -159,13 +159,12 @@
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1516:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1518:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1516)
-  *  4982:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1518)
+  *  4974:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4982)
-  *  image https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g does not have an alt attribute (line 1472)
+        ^ (line 4974)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -191,10 +190,11 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3664 failures!
+HTML-Proofer found 3652 failures!
