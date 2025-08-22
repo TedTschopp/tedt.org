@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-22T00:40:22Z
+Last update: 2025-08-22T14:50:41Z
 \n## Latest Summary (tail 50 lines)\n
 ^ (line 629)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 1011)
@@ -12,12 +12,12 @@ Last update: 2025-08-22T00:40:22Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1518:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1519:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1518)
-  *  4974:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1519)
+  *  4975:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4974)
+        ^ (line 4975)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2917:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -50,8 +50,9 @@ Last update: 2025-08-22T00:40:22Z
   *  linking to internal hash # that does not exist (line 3810)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3652 failures!
+HTML-Proofer found 3651 failures!
 \n## Available Historical Logs\n
+- 2025-08-22T14-47-07-HTML Logging.txt
 - 2025-08-22T00-36-51-HTML Logging.txt
 - 2025-08-21T23-46-17-HTML Logging.txt
 - 2025-08-21T23-26-29-HTML Logging.txt
