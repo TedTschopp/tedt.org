@@ -85,27 +85,28 @@
             color: white;
         }
         
-        .ai-provider-buttons {
-            display: flex;
-            flex-wrap: wrap; /* allow wrapping on narrow screens */
-            gap: 0.5rem;
-        }
-        
-        .ai-provider-buttons .btn { /* align with standard .btn-sm sizing */
+        /* Provider buttons: the original wrapper class was .ai-provider-buttons (now removed),
+           so target the existing toolbar group to ensure uniform sizing */
+        .prompt-control-buttons .btn-send-chatgpt,
+        .prompt-control-buttons .btn-send-claude,
+        .prompt-control-buttons .btn-send-gemini,
+        .prompt-control-buttons .btn-send-microsoft,
+        .prompt-control-buttons .btn-send-github {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: .25rem;
-            padding: 0.25rem 0.5rem; /* align with .btn-sm */
-            line-height: 1.2;
-            height: auto;
+            padding: 0.25rem 0.5rem; /* mirror .btn-sm */
+            line-height: 1.2; /* tighter so icon centers like text */
         }
-        .ai-provider-buttons .btn img { /* keep inline parity with SCSS */
-            height: 1rem;
+        .prompt-control-buttons .btn-send-chatgpt img,
+        .prompt-control-buttons .btn-send-claude img,
+        .prompt-control-buttons .btn-send-gemini img,
+        .prompt-control-buttons .btn-send-microsoft img,
+        .prompt-control-buttons .btn-send-github img {
+            height: 1rem; /* roughly text height in .btn-sm */
             width: auto;
-            object-fit: contain;
             display: block;
-            margin: 0 auto;
+            object-fit: contain;
         }
     </style>
     
@@ -198,11 +199,11 @@
                                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                                     {% if page.author.name %}
                                     <p class="card-text">written by <a rel="author" class="p-author h-card"
-                                            href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;"
+                                            href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" alt="Avatar of {{page.author.name | escape}}"
                                                 class="img-fluid align-self-center u-photo">{{page.author.name}}</a></p>
                                     {% else %}
                                     <p class="card-text">written by <a rel="author" class="p-author h-card"
-                                            href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;"
+                                            href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" alt="Avatar of {{site.author.name | escape}}"
                                                 class="img-fluid align-self-center u-photo">{{site.author.name}}</a></p>
                                     {% endif %}
                                 </div>
@@ -361,8 +362,9 @@
 
                 <div class="text-end mt-3">
                     <a href="#" id="download-prompt-link-bottom" class="btn btn-primary ms-3"
-                        download="{{ page.title | slugify }}.txt">
-                        <i class="fas fa-download"></i>
+                        download="{{ page.title | slugify }}.txt" aria-label="Download Prompt" title="Download Prompt">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        <span class="visually-hidden">Download Prompt</span>
                     </a>
                 </div>
                 <!-- Dynamic Prompts in Series Section -->
@@ -373,9 +375,8 @@
                     </div>
 
                     <div class="d-flex">
-                        <ol class="list-group list-group-numbered flex-grow-1 me-4">
-                            {% assign sorted_series = page.series | sort: 'step' %}
-                            {% for series_item in sorted_series %}
+                        {% assign sorted_series = page.series | sort: 'step' %}
+                        <ol class="list-group list-group-numbered flex-grow-1 me-4">{%- for series_item in sorted_series -%}
                                 {% comment %}Find the referenced prompt file{% endcomment %}
                                 {% assign series_prompt = null %}
                                 {% for post in site.posts %}
@@ -409,7 +410,7 @@
                                         <span class="badge bg-secondary rounded-pill">Step {{ series_item.step }}</span>
                                     {% endif %}
                                 </li>
-                            {% endfor %}
+                            {%- endfor -%}
                         </ol>
                     </div>
                 </div>
