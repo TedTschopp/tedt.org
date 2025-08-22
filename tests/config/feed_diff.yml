@@ -1,0 +1,20 @@
+# Feed diff regression guard configuration
+# Thresholds for detecting feed changes
+
+# Item count thresholds
+max_removed_items: 0        # No items should be removed unintentionally
+max_added_items: 5          # Allow up to 5 new items per build
+
+# Content change thresholds
+max_title_delta: 0          # Titles should not mutate retroactively
+max_content_length_change_pct: 10  # Allow 10% change in content length
+
+# Fields to ignore during diff (these are expected to change)
+ignore_fields:
+  - date_published
+  - date_modified
+  - build_timestamp
+
+# Validation settings
+require_all_feeds: true     # Require both main and mastodon feeds to exist
+validate_feed_structure: true  # Validate basic feed structure before diffing
