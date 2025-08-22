@@ -92,18 +92,19 @@
         .prompt-control-buttons .btn-send-gemini,
         .prompt-control-buttons .btn-send-microsoft,
         .prompt-control-buttons .btn-send-github {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0.25rem 0.5rem; /* mirror .btn-sm */
-            line-height: 1.2; /* tighter so icon centers like text */
+            padding: var(--bs-btn-padding-y,.25rem) var(--bs-btn-padding-x,.5rem); /* exactly like .btn-sm */
+            line-height: var(--bs-btn-line-height,1.5); /* match text button line-height */
+            font-size: var(--bs-btn-font-size,.875rem); /* ensure variable present */
         }
         .prompt-control-buttons .btn-send-chatgpt img,
         .prompt-control-buttons .btn-send-claude img,
         .prompt-control-buttons .btn-send-gemini img,
         .prompt-control-buttons .btn-send-microsoft img,
         .prompt-control-buttons .btn-send-github img {
-            height: 1rem; /* roughly text height in .btn-sm */
+            height: 1em; /* scales with font-size of .btn-sm */
             width: auto;
             display: block;
             object-fit: contain;
