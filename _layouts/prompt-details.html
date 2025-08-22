@@ -100,8 +100,8 @@
             line-height: 1.2;
             height: auto;
         }
-        .ai-provider-buttons .btn img { /* natural width ratio */
-            height: 1.1rem;
+        .ai-provider-buttons .btn img { /* keep inline parity with SCSS */
+            height: 1rem;
             width: auto;
             object-fit: contain;
             display: block;
@@ -270,16 +270,11 @@
                                 title="Copy prompt to clipboard">
                                 <i class="fas fa-copy" aria-hidden="true"></i> <span class="d-none d-sm-inline">Copy Prompt</span>
                             </button>
-                            <!--
-                        </div>
-
-                        <div class="ai-provider-buttons d-flex" role="group" aria-label="Send prompt to AI providers">-->
-
 
                             <!-- OpenAI ChatGPT -->
                             {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
                             {% if openai_models.size > 0 %}
-                            <button class="btn btn-send-chatgpt mt-0 me-2 d-flex align-items-center justify-content-center" 
+                            <button class="btn btn-sm btn-send-chatgpt mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="chatgptSendDefault" 
                                     aria-label="Send prompt to ChatGPT"
@@ -291,7 +286,7 @@
                             <!-- Anthropic Claude -->
                             {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
                             {% if anthropic_models.size > 0 %}
-                            <button class="btn btn-send-claude mt-0 me-2 d-flex align-items-center justify-content-center" 
+                            <button class="btn btn-sm btn-send-claude mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="claudeSendDefault" 
                                     aria-label="Send prompt to Claude"
@@ -303,7 +298,7 @@
                             <!-- Google AI -->
                             {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
                             {% if google_models.size > 0 %}
-                            <button class="btn btn-send-gemini mt-0 me-2 d-flex align-items-center justify-content-center" 
+                            <button class="btn btn-sm btn-send-gemini mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="geminiSendDefault" 
                                     aria-label="Send prompt to Gemini"
@@ -315,7 +310,7 @@
                             <!-- Microsoft Copilot -->
                             {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
                             {% if microsoft_models.size > 0 %}
-                            <button class="btn btn-send-microsoft mt-0 me-2 d-flex align-items-center justify-content-center" 
+                            <button class="btn btn-sm btn-send-microsoft mt-0 me-2 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="microsoftSendDefault" 
                                     aria-label="Send prompt to Microsoft Copilot"
@@ -327,7 +322,7 @@
                             <!-- GitHub Copilot -->
                             {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
                             {% if github_models.size > 0 %}
-                            <button class="btn btn-send-github mt-0 me-0 d-flex align-items-center justify-content-center" 
+                            <button class="btn btn-sm btn-send-github mt-0 me-0 d-flex align-items-center justify-content-center" 
                                     type="button" 
                                     id="githubSendDefault" 
                                     aria-label="Send prompt to GitHub Copilot"
