@@ -93,3 +93,76 @@ html {
   overflow-x: hidden;
 }
 
+/* =============================================
+   AI Provider Buttons (shared across layouts)
+   - Consolidated from inline styles formerly in
+     prompt-details.html & prompt-library.html
+   - Ensures uniform height equal to .btn-sm text buttons
+   ============================================= */
+
+// Provider brand color treatments
+.btn-send-chatgpt { background-color: #10a37f; border-color: #10a37f; color: #fff; }
+.btn-send-chatgpt:hover,
+.btn-send-chatgpt:focus { background-color: #0d8f6c; border-color: #0d8f6c; color: #fff; }
+
+.btn-send-claude { background-color: #575754; border-color: #575754; color: #fff; }
+.btn-send-claude:hover,
+.btn-send-claude:focus { background-color: #6E6E6B; border-color: #6E6E6B; color: #fff; }
+
+.btn-send-gemini { background-color: #1f1f1f; border-color: #1f1f1f; color: #fff; }
+.btn-send-gemini:hover,
+.btn-send-gemini:focus { background-color: #0d0d0d; border-color: #0d0d0d; color: #fff; }
+
+.btn-send-microsoft { background-color: #00a1f1; border-color: #00a1f1; color: #fff; }
+.btn-send-microsoft:hover,
+.btn-send-microsoft:focus { background-color: #008ed0; border-color: #008ed0; color: #fff; }
+
+.btn-send-github { background-color: #08872B; border-color: #08872B; color: #fff; }
+.btn-send-github:hover,
+.btn-send-github:focus { background-color: #5FED83; border-color: #5FED83; color: #fff; }
+
+// Unified sizing logic applied when buttons appear inside either toolbar wrapper
+.prompt-control-buttons .btn-send-chatgpt,
+.prompt-control-buttons .btn-send-claude,
+.prompt-control-buttons .btn-send-gemini,
+.prompt-control-buttons .btn-send-microsoft,
+.prompt-control-buttons .btn-send-github,
+.ai-provider-buttons .btn-send-chatgpt,
+.ai-provider-buttons .btn-send-claude,
+.ai-provider-buttons .btn-send-gemini,
+.ai-provider-buttons .btn-send-microsoft,
+.ai-provider-buttons .btn-send-github {
+  --_btn-font-size: var(--bs-btn-font-size, .875rem);
+  --_btn-line-height: var(--bs-btn-line-height, 1.5);
+  --_btn-pad-y: var(--bs-btn-padding-y, .25rem);
+  --_btn-content-height: calc(var(--_btn-font-size) * var(--_btn-line-height));
+  --_btn-total-height: calc(var(--_btn-pad-y) * 2 + var(--_btn-content-height));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--_btn-pad-y) var(--bs-btn-padding-x, .5rem);
+  font-size: var(--_btn-font-size);
+  line-height: var(--_btn-line-height);
+  min-height: var(--_btn-total-height);
+  height: var(--_btn-total-height);
+  box-sizing: border-box;
+}
+
+.prompt-control-buttons .btn-send-chatgpt img,
+.prompt-control-buttons .btn-send-claude img,
+.prompt-control-buttons .btn-send-gemini img,
+.prompt-control-buttons .btn-send-microsoft img,
+.prompt-control-buttons .btn-send-github img,
+.ai-provider-buttons .btn-send-chatgpt img,
+.ai-provider-buttons .btn-send-claude img,
+.ai-provider-buttons .btn-send-gemini img,
+.ai-provider-buttons .btn-send-microsoft img,
+.ai-provider-buttons .btn-send-github img {
+  height: var(--_btn-content-height);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+

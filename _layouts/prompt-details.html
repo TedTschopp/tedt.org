@@ -28,89 +28,7 @@
     {% include assets/all-css-includes.html %}
     <!-- END OF CSS INCLUDE -->
     
-    <!-- Custom AI Provider Button Styles -->
-    <style>
-        .btn-send-chatgpt {
-            background-color: #10a37f;
-            border-color: #10a37f;
-            color: white;
-        }
-        .btn-send-chatgpt:hover, .btn-send-chatgpt:focus {
-            background-color: #0d8f6c;
-            border-color: #0d8f6c;
-            color: white;
-        }
-        
-        .btn-send-claude {
-            background-color: #575754;
-            border-color: #575754;
-            color: white;
-        }
-        .btn-send-claude:hover, .btn-send-claude:focus {
-            background-color: #6E6E6B ;
-            border-color: #6E6E6B;
-            color: white;
-        }
-        
-        .btn-send-gemini {
-            background-color: #1f1f1f;
-            border-color: #1f1f1f;
-            color: white;
-        }
-        .btn-send-gemini:hover, .btn-send-gemini:focus {
-            background-color: #0d0d0d;
-            border-color: #0d0d0d;
-            color: white;
-        }
-        
-        .btn-send-microsoft {
-            background-color: #00a1f1;
-            border-color: #00a1f1;
-            color: white;
-        }
-        .btn-send-microsoft:hover, .btn-send-microsoft:focus {
-            background-color: #008ed0;
-            border-color: #008ed0;
-            color: white;
-        }
-        
-        .btn-send-github {
-            background-color: #08872B;
-            border-color: #08872B;
-            color: white;
-        }
-        .btn-send-github:hover, .btn-send-github:focus {
-            background-color: #5FED83;
-            border-color: #5FED83;
-            color: white;
-        }
-        
-        /* Provider buttons: the original wrapper class was .ai-provider-buttons (now removed),
-           so target the existing toolbar group to ensure uniform sizing */
-        .prompt-control-buttons .btn-send-chatgpt,
-        .prompt-control-buttons .btn-send-claude,
-        .prompt-control-buttons .btn-send-gemini,
-        .prompt-control-buttons .btn-send-microsoft,
-        .prompt-control-buttons .btn-send-github {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--bs-btn-padding-y,.25rem) var(--bs-btn-padding-x,.5rem); /* exactly like .btn-sm */
-            line-height: var(--bs-btn-line-height,1.5); /* match text button line-height */
-            font-size: var(--bs-btn-font-size,.875rem); /* ensure variable present */
-        }
-        .prompt-control-buttons .btn-send-chatgpt img,
-        .prompt-control-buttons .btn-send-claude img,
-        .prompt-control-buttons .btn-send-gemini img,
-        .prompt-control-buttons .btn-send-microsoft img,
-        .prompt-control-buttons .btn-send-github img {
-            /* height: auto; */ /* scales with font-size of .btn-sm */
-            width: auto;
-            display: block;
-            object-fit: contain;
-            line-height: var(--bs-btn-line-height,1.5);
-        }
-    </style>
+    <!-- AI Provider Button Styles moved to _sass/_overrides-prompts.scss -->
     
     <!-- Prompt Variables Styles -->
     {% include prompt-variables-styles.html %}
@@ -378,7 +296,7 @@
 
                     <div class="d-flex">
                         {% assign sorted_series = page.series | sort: 'step' %}
-                        <ol class="list-group list-group-numbered flex-grow-1 me-4">{%- for series_item in sorted_series -%}
+                        <div class="list-group list-group-numbered flex-grow-1 me-4" role="list">{%- for series_item in sorted_series -%}
                                 {% comment %}Find the referenced prompt file{% endcomment %}
                                 {% assign series_prompt = null %}
                                 {% for post in site.posts %}
@@ -389,7 +307,7 @@
                                     {% endif %}
                                 {% endfor %}
                                 
-                                <li class="list-group-item d-flex justify-content-between align-items-start {% if series_item.current %}table-active{% endif %}">
+                                <div class="list-group-item d-flex justify-content-between align-items-start {% if series_item.current %}table-active{% endif %}" role="listitem">
                                     <div class="ms-2 me-auto">
                                         {% if series_prompt %}
                                             <div class="fw-bold">
@@ -411,9 +329,9 @@
                                     {% else %}
                                         <span class="badge bg-secondary rounded-pill">Step {{ series_item.step }}</span>
                                     {% endif %}
-                                </li>
-                            {%- endfor -%}
-                        </ol>
+                                </div>
+                        {%- endfor -%}
+                        {%- endfor -%}</div>
                     </div>
                 </div>
                 {% endif %}
