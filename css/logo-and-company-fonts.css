@@ -315,6 +315,17 @@ h2 .ai-post::after, .h2 .ai-post::after, .category-title.ai::after, .ai-post.cat
     }
 }
 
+/* Explicit light mode reset (optional; ensures correct color if dark block loaded earlier or user toggles themes) */
+@media (prefers-color-scheme: light){
+  h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title {
+    color: var(--ai-text-light);
+    text-shadow: none; /* maintain original light style */
+  }
+  .category-badge.ai, .ai-post.category-badge {
+    color: var(--ai-text-light);
+  }
+}
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce){
     h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title,
@@ -473,6 +484,22 @@ h2 .ai-post::after,
       color-mix(in srgb, var(--theme-accent-end) 34%, transparent)
     );
     box-shadow:0 0 0 1px rgba(255,255,255,.05), 0 2px 6px -1px rgba(0,0,0,.7);
+  }
+}
+
+/* Explicit light mode reset (guards against persistent light text if user switches from dark to light without full reload) */
+@media (prefers-color-scheme: light){
+  .category-theme .category-title,
+  h2 .category-title,
+  .h2 .category-title,
+  h2 .ai-post,
+  .h2 .ai-post{
+    color: var(--theme-text-light);
+    text-shadow: var(--theme-title-shadow);
+  }
+  .category-theme .category-badge,
+  .category-badge{
+    color: var(--theme-text-light);
   }
 }
 
