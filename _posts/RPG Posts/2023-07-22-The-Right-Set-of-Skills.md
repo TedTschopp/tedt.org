@@ -59,6 +59,7 @@ mastodon-post-id: '115017669877782924'
 </style>
 
 
+
 # Creating Characters
 
 The attributes of a character are given as numerical values which can
@@ -352,7 +353,7 @@ Uhtred's prowess in melee combat adds a rich layer to his character. It reflects
 
 - **The Swordsman:** This archetype is a master of the blade, whether it's a longsword, rapier, or katana. They are often noble or trained warriors, focusing on precision and technique. Legendary figures like Miyamoto Musashi or fictional characters like Aragorn fit this archetype.
 - **The Berserker:** Fueled by rage or adrenaline, the Berserker excels in chaotic, close-quarters combat. They often use heavy or dual weapons and rely on brute force rather than finesse. In mythology, Norse berserkers embody this archetype.
-- **The Duelist:** Specializing in one-on-one combat, the Duelist is all about finesse and quick reflexes. They often use lighter weapons like rapiers or smallswords and are experts in parrying and counter-attacking. Characters like Inigo Montoya from "The Princess Bride" exemplify this archetype.
+- **The Duelist:** Specializing in one-on-one combat, the Duelist is all about finesse and quick reflexes. They often use lighter weapons like rapiers or small swords and are experts in parrying and counter-attacking. Characters like Inigo Montoya from "The Princess Bride" exemplify this archetype.
 - **The Brawler:** This archetype is less about traditional weapons and more about using whatever is at hand. They are experts in improvised weapons and hand-to-hand combat. In modern settings, this could be a street fighter or a barroom brawler.
 - **The Knight:** Clad in armor and often on horseback, the Knight is a well-rounded melee combatant. They are trained in a variety of weapons, including lances for jousting, and are often bound by a code of chivalry. Historical knights or characters like Sir Lancelot fit this mold.
 - **The Monk:** Drawing from Eastern traditions, the Monk uses their body as a weapon, employing martial arts techniques that require extreme discipline and control. They may also use simple weapons like staves or nunchaku. Characters from martial arts films or figures like Shaolin monks embody this archetype.
@@ -1051,12 +1052,12 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 
 ##### Physical Sciences / Survival Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Physical Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Physical Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Physical Sciences.webp"
+  url="https://tedt.org/img/skills/vertical/Physical Sciences.webp"
+  alt-text="A vertical poster‑style illustration symbolizing the physical sciences, with motifs of matter, motion, and measurement."
+  caption="Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky" %}
 
 ###### Description of Physical Sciences/Survival
 
@@ -1135,12 +1136,12 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 ##### Traditions Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Traditions.webp"><img src="https://tedt.org/img/skills/vertical/Traditions.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about. --G.K Chesterton, Orthodoxy </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Traditions.webp"
+  url="https://tedt.org/img/skills/vertical/Traditions.webp"
+  alt-text="An evocative vertical artwork representing traditions, suggesting heritage, ritual, and inherited wisdom."
+  caption="Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about. --G.K Chesterton, Orthodoxy" %}
 
 ###### Description of the Traditions skill
 
@@ -1216,12 +1217,18 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 
 ##### Perception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Perception.webp"><img src="https://tedt.org/img/skills/vertical/Perception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Perception.webp"
+  url="https://tedt.org/img/skills/vertical/Perception.webp"
+  alt-text="A focused composition evoking sharpened senses and attentive observation."
+  caption="The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats" %}
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Perception.webp"
+  url="https://tedt.org/img/skills/vertical/Perception.webp"
+  alt-text="A focused composition evoking sharpened senses and attentive observation."
+  caption="The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats" %}
 
 ###### Description of the Perception skill
 
@@ -1298,12 +1305,18 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 
 ##### Formal Sciences Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Formal Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Formal Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Formal Sciences.webp"
+  url="https://tedt.org/img/skills/vertical/Formal Sciences.webp"
+  alt-text="An abstract, orderly design alluding to logic, mathematics, and structured systems."
+  caption="Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead" %}
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Formal Sciences.webp"
+  url="https://tedt.org/img/skills/vertical/Formal Sciences.webp"
+  alt-text="An abstract, orderly design alluding to logic, mathematics, and structured systems."
+  caption="Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead" %}
 
 ###### Description of Formal Sciences Skill
 
@@ -1385,13 +1398,12 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 
 ##### Engineering Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
-</figure>
-</div>
-
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Engineering.webp"
+  url="https://tedt.org/img/skills/vertical/Engineering.webp"
+  alt-text="An industrial‑themed illustration conveying design, construction, and problem‑solving."
+  caption="Science is about knowing; engineering is about doing. - Henry Petroski" %}
 ###### Description of the Engineering skill
 
 Engineering measures the ability to apply technological knowledge and expertise to build, modify, and repair various devices and structures. It encompasses a wide range of disciplines and is crucial in almost every trade, craft, or occupation that involves constructing something. An Engineering check might be required to reverse engineer a complex artifact, build a sturdy bridge, repair intricate machinery, or disarm an elaborate trap.
@@ -1466,12 +1478,12 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 
 ##### Insight Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Insight.webp"
+  url="https://tedt.org/img/skills/vertical/Insight.webp"
+  alt-text="A contemplative image suggesting sudden understanding, pattern‑finding, and inner clarity."
+  caption="Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo" %}
 
 ###### Description of the Insight skill
 
@@ -1546,12 +1558,12 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 
 ##### Investigation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Investigation.webp"
+  url="https://tedt.org/img/skills/vertical/Investigation.webp"
+  alt-text="A scene evoking clues, inquiry, and methodical evidence‑gathering."
+  caption="You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four" %}
 
 ###### Description of the Investigation skill
 
@@ -1634,12 +1646,12 @@ understand the world around them
 
 ##### Style Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Style.webp"><img src="https://tedt.org/img/skills/vertical/Style.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Style is knowing who you are, what you want to say, and not giving a damn. -- Orsen Welles </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Style.webp"
+  url="https://tedt.org/img/skills/vertical/Style.webp"
+  alt-text="A fashion‑forward composition highlighting poise, aesthetics, and personal expression."
+  caption="Style is knowing who you are, what you want to say, and not giving a damn. -- Orsen Welles" %}
 
 ###### Description of Style Skill
 
@@ -1717,12 +1729,12 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 
 ##### Performance Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Performance.webp"><img src="https://tedt.org/img/skills/vertical/Performance.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">The stage is not merely the meeting place of all the arts, but is also the return of art to life. -- Oscar Wilde </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Performance.webp"
+  url="https://tedt.org/img/skills/vertical/Performance.webp"
+  alt-text="A stage‑like image capturing the energy of acting, music, or dance before an audience."
+  caption="The stage is not merely the meeting place of all the arts, but is also the return of art to life. -- Oscar Wilde" %}
 
 ###### Description of the Performance skill
 
@@ -1799,12 +1811,12 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 
 ##### Etiquette Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Etiquette.webp"><img src="https://tedt.org/img/skills/vertical/Etiquette.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">I was raised right — I talk about people behind their backs. It's called manners.  -- Kathy Griffin</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Etiquette.webp"
+  url="https://tedt.org/img/skills/vertical/Etiquette.webp"
+  alt-text="A refined visual hinting at courtesy, protocol, and social grace."
+  caption="I was raised right — I talk about people behind their backs. It's called manners.  -- Kathy Griffin" %}
 
 ###### Description of the Etiquette skill
 
@@ -1886,12 +1898,12 @@ their own actions to create the outcomes they want.
 
 ##### Deception Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Deception.webp"><img src="https://tedt.org/img/skills/vertical/Deception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Man is not what he thinks he is, he is what he hides. --André Malraux  </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Deception.webp"
+  url="https://tedt.org/img/skills/vertical/Deception.webp"
+  alt-text="A sly, shadowed image suggesting disguise, misdirection, and hidden motives."
+  caption="Man is not what he thinks he is, he is what he hides. --André Malraux" %}
 
 ###### Description of the Deception Skill
 
@@ -1968,12 +1980,12 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 ##### Persuasion Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Persuasion.webp"><img src="https://tedt.org/img/skills/vertical/Persuasion.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Don't raise your voice, improve your argument. -- Desmond Tutu </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Persuasion.webp"
+  url="https://tedt.org/img/skills/vertical/Persuasion.webp"
+  alt-text="A confident, engaging scene evoking rhetoric, charisma, and winning hearts and minds."
+  caption="Don't raise your voice, improve your argument. -- Desmond Tutu" %}
 
 ###### Description of the Persuasion Skill
 
@@ -2050,12 +2062,12 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 ##### Intimidation Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Intimidation.webp"><img src="https://tedt.org/img/skills/vertical/Intimidation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">If you want to control someone, all you have to do is to make them feel afraid.  -- Paulo Coelho</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Intimidation.webp"
+  url="https://tedt.org/img/skills/vertical/Intimidation.webp"
+  alt-text="A stark, high‑contrast image conveying threat, dominance, and pressure."
+  caption="If you want to control someone, all you have to do is to make them feel afraid.  -- Paulo Coelho" %}
 
 ###### Description of the Intimidation Skill
 
@@ -2136,12 +2148,12 @@ Vito Corleone's mastery of Intimidation is a cornerstone of his power and influe
 
 ##### Bureaucracy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Bureaucracy.webp"><img src="https://tedt.org/img/skills/vertical/Bureaucracy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Bureaucracies, I've suggested, are not themselves forms of stupidity so much as they are ways of organizing stupidity--of managing relationships that are already characterized by extremely unequal structures of imagination... --  David Graeber</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Bureaucracy.webp"
+  url="https://tedt.org/img/skills/vertical/Bureaucracy.webp"
+  alt-text="An orderly composition of forms and files symbolizing process, policy, and red tape."
+  caption="Bureaucracies, I've suggested, are not themselves forms of stupidity so much as they are ways of organizing stupidity--of managing relationships that are already characterized by extremely unequal structures of imagination... --  David Graeber" %}
 
 ###### Description of the Bureaucracy
 
@@ -2219,12 +2231,12 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 
 ##### Animal Handling Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Animal Handling.webp"><img src="https://tedt.org/img/skills/vertical/Animal Handling.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">How you treat animals will tell me what kind of person you are. -— Karen Becker </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Animal Handling.webp"
+  url="https://tedt.org/img/skills/vertical/Animal Handling.webp"
+  alt-text="A nature‑leaning image evoking calm control and rapport with animals."
+  caption="How you treat animals will tell me what kind of person you are. -— Karen Becker" %}
 
 ###### Description of the Animal Handling
 
@@ -2301,12 +2313,12 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 
 ##### Leadership Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Leadership.webp"><img src="https://tedt.org/img/skills/vertical/Leadership.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Our chief want is someone who will inspire us to be what we know we could be. –- Ralph Waldo Emerson</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Leadership.webp"
+  url="https://tedt.org/img/skills/vertical/Leadership.webp"
+  alt-text="A commanding composition suggesting vision, guidance, and rallying a group."
+  caption="Our chief want is someone who will inspire us to be what we know we could be. –- Ralph Waldo Emerson" %}
 
 ###### Description of the Leadership
 
@@ -2398,12 +2410,12 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 ##### Arcane Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Ethereal.webp"><img src="https://tedt.org/img/skills/vertical/Ethereal.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Ethereal.webp"
+  url="https://tedt.org/img/skills/vertical/Ethereal.webp"
+  alt-text="A luminous, otherworldly image hinting at spirits, veils, and the unseen."
+  caption="They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan" %}
 
 In the school of Arcane magic, you become a master of manipulating mystical energies and the fundamental forces of nature, reaching past the classic arts to elemental magic. This discipline equips you to weave these potent pieces of elemental energies into various forms, crafting everything from searing blasts of fire to intricate enchantments that command the elemental forces.
 
@@ -2575,12 +2587,12 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 ##### Gnosis Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Gnosis.webp"><img src="https://tedt.org/img/skills/vertical/Gnosis.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Gnosis.webp"
+  url="https://tedt.org/img/skills/vertical/Gnosis.webp"
+  alt-text="A mystical, contemplative scene evoking hidden knowledge and direct revelation."
+  caption="Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore" %}
 
 As you delve into the realm of Gnostic magic and mysticism, you embrace a path that transcends conventional beliefs. Gnosticism encourages you to seek direct, personal knowledge of the divine through inner revelation and insight. It is a journey of self-awareness, where you come to know yourself deeply, empowering you to connect with the divine spark within and liberate yourself from the illusions of the material world.
 
@@ -2736,12 +2748,12 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 ##### Chaos Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Chaos.webp"><img src="https://tedt.org/img/skills/vertical/Chaos.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Chaos.webp"
+  url="https://tedt.org/img/skills/vertical/Chaos.webp"
+  alt-text="A turbulent, dynamic composition suggesting unpredictability, entropy, and flux."
+  caption="Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine" %}
 
 In the enticing realm of Chaos magic, you find yourself captivated by the unpredictable and interconnected nature of the universe. Embracing chaos as a source of power, you break free from traditional boundaries and forge your own path, guided by intuition and instinct. Chaos magic encourages you to transcend limitations, blending symbols, deities, and techniques from various traditions to create a personalized system that resonates with your soul.
 
@@ -2826,12 +2838,12 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 ##### Theurgy Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Theurgy.webp"><img src="https://tedt.org/img/skills/vertical/Theurgy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Theurgy.webp"
+  url="https://tedt.org/img/skills/vertical/Theurgy.webp"
+  alt-text="A sacred, ritualistic image hinting at divine rites, seals, and invoked power."
+  caption="A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph" %}
 
 In your pursuit of Theurgy, a mystical branch of magic, you embark on a profound journey of spiritual exploration and divine connection. Theurgy leads you to seek guidance from sacred texts and esoteric teachings, encouraging you to delve into your consciousness and awaken latent powers within. Through intricate rituals and practices, you sense the presence of unseen forces and learn that Theurgy is not mere trickery, but a sacred art requiring sincerity and devotion.
 
@@ -2882,12 +2894,12 @@ These unique Theurgy spells showcase the character's special connection to the d
 
 ##### Adept Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Adept.webp"><img src="https://tedt.org/img/skills/vertical/Adept.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Adept.webp"
+  url="https://tedt.org/img/skills/vertical/Adept.webp"
+  alt-text="A focused, disciplined portrait conveying mastery, training, and practiced skill."
+  caption="Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill" %}
 
 You awaken your inner essence, becoming an Adept, a master of magic and mysticism. Your body and mind harmoniously blend, allowing you to perform superhuman feats through the manipulation of vital energy within your body known as "Chi" or "Qi." This connection between mind and muscle enables you to push your physical limits and perceive the world differently, spotting subtle energies invisible to others.
 
@@ -2938,12 +2950,12 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 ##### Order Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Order.webp"><img src="https://tedt.org/img/skills/vertical/Order.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Order.webp"
+  url="https://tedt.org/img/skills/vertical/Order.webp"
+  alt-text="Geometric lattice of interlocking runic rings and sigils evoking disciplined, structured arcane order."
+  caption="For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious. — C. S. Lewis, The Abolition of Man" %}
 
 In the realm of Order, you immerse yourself in a world of structured and organized magic. Your approach is methodical and disciplined, grounded in logic and reason. Every aspect of your practice, from rituals to components, is meticulously designed and purposeful. You find strength and control in the precise execution of your spells.
 
@@ -3023,12 +3035,12 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 ##### Metaphysics Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Metaphysics.webp"><img src="https://tedt.org/img/skills/vertical/Metaphysics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Metaphysics.webp"
+  url="https://tedt.org/img/skills/vertical/Metaphysics.webp"
+  alt-text="Meditating silhouette framed by concentric energy waves symbolizing mind, consciousness, and unseen planes."
+  caption="Metaphysics involves intuitive knowledge of unprovable starting-points, concepts, and truth, and demonstrative knowledge of what follows from them. — Aristotle" %}
 
 In the realm of Metaphysics, you explore the captivating world of Parapsychology, ESP, and Psionics. Extra-Sensory Perception (ESP) opens your mind to extraordinary abilities like telepathy, clairvoyance, precognition, and telekinesis. With telepathy, you forge a silent connection, understanding the thoughts and emotions of others. Clairvoyance grants you the ability to perceive events and people beyond time and space, while precognition offers glimpses of the future, guiding your choices in life.
 
@@ -3082,12 +3094,12 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 ##### Animism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Animism.webp"><img src="https://tedt.org/img/skills/vertical/Animism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Animism.webp"
+  url="https://tedt.org/img/skills/vertical/Animism.webp"
+  alt-text="Radiant world-tree whose roots and branches blend into animal and spirit forms, representing living world souls."
+  caption="We belong to the community of life on this planet—it doesn't belong to us. We got confused about that; now it's time to set the record straight. — Daniel Quinn, Providence" %}
 
 In the enchanting realm of Animism, you discover a belief system that views everything in existence as possessing a distinct spiritual essence. Nature, objects, and creatures are all intertwined with a profound life force, connecting them in a way that transcends the physical world. Through this belief, you awaken an innate ability to communicate with and harness the magic of the spirits dwelling within each entity.
 
@@ -3140,12 +3152,12 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 ##### Shamanism Knowledge Areas
 
-<div class="col-md-4 mt-3 col-lg-6 float-end">
-<figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Shamanism.webp"><img src="https://tedt.org/img/skills/vertical/Shamanism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
-<figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
-</figure>
-</div>
+{% include content/figure.html
+  div-class="col-md-4 mt-3 col-lg-6 float-end"
+  file="https://tedt.org/img/skills/vertical/Shamanism.webp"
+  url="https://tedt.org/img/skills/vertical/Shamanism.webp"
+  alt-text="A mystical, trance-like illustration evoking journeys between spirit and material realms."
+  caption="The spiritual world is none other than the natural world seen with the inward eye. — A. M. Mack" %}
 
 Shamanism is a profound branch of magic that involves becoming a conduit between the physical and metaphysical realms. As a shaman, you deeply connect with the natural world, recognizing the sacredness of nature and the energies that bind all living beings. Your journey involves mastering rituals and techniques to communicate with spirits, forming relationships with them to harness their powers.
 

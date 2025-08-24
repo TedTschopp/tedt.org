@@ -264,8 +264,9 @@
           const imgEl = document.getElementById('jscii-element-image');
           const asciiEl = document.getElementById('ascii-container-image');
           const errorMsg = document.getElementById('image-error-message');
-          const relativeImagePath = "{{ creature_image }}"; // site-relative path
-          const absoluteImageUrl = "{{ site.url }}" + relativeImagePath;
+          const relativeImagePath = "{{ creature_image }}"; // site-relative path (may start with one or more leading slashes)
+          // Normalize to ensure exactly one slash between site.url and path (avoid https://example.com//path)
+          const absoluteImageUrl = ("{{ site.url | append: '/' }}") + relativeImagePath.replace(/^\/+/, '');
           const errorImageNumber = Math.floor(Math.random() * 12) + 1; // 1..12 per visit
           const errorMessages = [
                'Image file not found.',

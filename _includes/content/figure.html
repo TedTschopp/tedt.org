@@ -1,62 +1,48 @@
+{%- comment -%}
+Figure include
+Parameters supported (any optional):
+   div-class: wrapper class list
+   url: link target around image (optional)
+   file: image src (required for image)
+   alt-text / alt-txt: preferred alt text (alt-text takes precedence)
+   caption: figure caption text (also used as alt fallback if no explicit alt provided)
+Accessibility / robustness improvements:
+   * Accept both alt-text and legacy alt-txt keys.
+   * Fallback to caption (stripped) when no alt provided so image is not empty-alt unless decorative.
+   * If explicitly passed alt-text == 'decorative' (case-insensitive), render empty alt for purely decorative imagery.
+{%- endcomment -%}
+<!-- FIGURE-DEBUG-MARKER -->
 <div class="{{ include.div-class }}">
-<figure class="figure">
-   <a href="{{ include.url }}">
-   <img src="{{ include.file }}" class="img-fluid img-thumbnail figure-img float-end" 
-      alt="{{ include.alt-txt }}"/>
-   </a>
-   <figcaption class="figure-caption">{{ include.caption }}</figcaption>
-</figure>
+   <figure class="figure">
+      {%- comment -%}
+         Order tweak: dash keys first because existing content uses alt-text; ensure we don't stop on an empty string.
+      {%- endcomment -%}
+      {%- assign _alt_candidates = '' -%}
+      {%- assign _alt_dash = include["alt-text"] | default: include["alt-txt"] -%}
+      {%- if _alt_dash and _alt_dash != '' -%}
+         {%- assign _alt_candidates = _alt_dash -%}
+      {%- elsif include.alt and include.alt != '' -%}
+         {%- assign _alt_candidates = include.alt -%}
+      {%- elsif include.alt_text and include.alt_text != '' -%}
+         {%- assign _alt_candidates = include.alt_text -%}
+      {%- endif -%}
+      {%- assign _alt = _alt_candidates -%}
+      {%- comment -%}Compute final alt inline to avoid unexplained blanking of _alt_final{%- endcomment -%}
+      {%- capture _alt_final -%}
+         {%- if _alt and _alt != '' and _alt | downcase != 'decorative' -%}
+            {{ _alt }}
+         {%- elsif _alt and _alt != '' and _alt | downcase == 'decorative' -%}
+         {%- else -%}
+            {{ include.caption | strip_newlines | strip }}
+         {%- endif -%}
+      {%- endcapture -%}
+      {%- assign _alt_final = _alt_final | strip -%}
+      <!-- ALT-DEBUG alt:[{{ _alt | truncate: 60 }}] final:[{{ _alt_final | truncate: 60 }}] -->
+      {%- if include.url and include.url != '' -%}<a href="{{ include.url }}">{%- endif -%}
+         <img src="{{ include.file }}" class="img-fluid img-thumbnail figure-img float-end" alt="{{ _alt_final }}" data-alt-original="{{ _alt }}"/>
+      {%- if include.url and include.url != '' -%}</a>{%- endif -%}
+      {%- if include.caption and include.caption != '' -%}
+         <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+      {%- endif -%}
+   </figure>
 </div>
-{% comment %}
-<!--
-
-<figure>
-  <figcaption>Get browser details using <code>navigator</code>.</figcaption>
-  <pre>
-function NavigatorExample() {
-  var txt;
-  txt = "Browser CodeName: " + navigator.appCodeName + "; ";
-  txt+= "Browser Name: " + navigator.appName + "; ";
-  txt+= "Browser Version: " + navigator.appVersion  + "; ";
-  txt+= "Cookies Enabled: " + navigator.cookieEnabled  + "; ";
-  txt+= "Platform: " + navigator.platform  + "; ";
-  txt+= "User-agent header: " + navigator.userAgent  + "; ";
-  console.log("NavigatorExample", txt);
-}
-  </pre>
-</figure>
-
-<figure>
-  <figcaption><b>Edsger Dijkstra:</b></figcaption>
-  <blockquote>
-    If debugging is the process of removing software bugs, then programming must
-    be the process of putting them in.
-  </blockquote>
-</figure>
-
-<figure>
-  <p style="white-space:pre">
-    Bid me discourse, I will enchant thine ear, Or like a fairy trip upon the
-    green, Or, like a nymph, with long dishevelled hair, Dance on the sands, and
-    yet no footing seen: Love is a spirit all compact of fire, Not gross to
-    sink, but light, and will aspire.
-  </p>
-  <figcaption><cite>Venus and Adonis</cite>, by William Shakespeare</figcaption>
-</figure>
-
-
-<figure>
-   <picture>
-      <source srcset="image-big.webp" type="image/png" media="(min-width:1920px)"> 
-      <source srcset="image-med.webp" type="image/png" media="(min-width:1200px)"> 
-      <source srcset="image-small.webp" type="image/png" media="(min-width:700px)"> 
-      <img src="backup.webp" alt="Test" class="abc">
-   </picture>
-   <figcaption>Caption</figcaption>
-</figure>
-
-
-
-
---->
-{% endcomment %}
