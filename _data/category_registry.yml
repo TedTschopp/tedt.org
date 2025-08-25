@@ -6,7 +6,7 @@
 #   class: legacy CSS class (for backward compatibility)
 #   emoji: optional emoji
 #   image: hero/category image path
-#   palette: { start, end, fontTitle?, titleColor?, titleShadow?, titleHoverColor?, titleHoverShadow?, titleStyle?, titleSize?, titleTransform? }
+#   palette: { start, end, fontTitle?, titleColor?, titleShadow?, titleHoverColor?, titleHoverShadow?, titleStyle?, titleSize?, titleTransform?, titleWeight? }
 #   description, subtitle: optional descriptive metadata
 #   hide_from_carousel: true (optional) exclude from homepage category carousel
 #   hide_from_category_list: true (optional) exclude from category sidebar list
@@ -37,7 +37,10 @@ movies:
   subtitle: "Cinema for the Imaginative"
   description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
   image: /img/categories/movies.webp
-  palette: { start: "#eab308", end: "#f97316", fontTitle: '"Limelight","Times New Roman",Times,serif' }
+  palette:
+    start: "#eab308"
+    end: "#f97316"
+    fontTitle: '"Limelight","Times New Roman",Times,serif'
   category_home_page: /category/Movies/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -50,7 +53,10 @@ bestiary:
   subtitle: "Creatures and Beasts from All Realms"
   description: "Detailed lore, stats, and vivid descriptions of mythical and game creatures. Enhance your adventures and campaigns with rich information on various beasts."
   image: /img/categories/bestiary.webp
-  palette: { start: "#16a34a", end: "#f59e0b", fontTitle: '"Bestiary",sans-serif' }
+  palette:
+    start: "#16a34a"
+    end: "#f59e0b"
+    fontTitle: '"Bestiary",sans-serif'
   category_home_page: /category/Bestiary/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -63,7 +69,10 @@ monsters:
   subtitle: "Terrifying Creatures and How to Defeat Them"
   description: "Information, strategies, and detailed descriptions of various monsters found in role-playing games. Learn how to tackle these creatures in your campaigns."
   image: /img/categories/monsters.webp
-  palette: { start: "#ec4899", end: "#7e22ce", fontTitle: '"Bestiary",sans-serif' }
+  palette:
+    start: "#ec4899"
+    end: "#7e22ce"
+    fontTitle: '"Bestiary",sans-serif'
   category_home_page: /category/Monsters/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -76,7 +85,10 @@ books:
   subtitle: "Reading for the Adventurous Mind"
   description: "Thoughts, ideas, and reflections on books that ignite the imagination and inspire great thoughts. Explore a variety of genres and authors."
   image: /img/categories/books.webp
-  palette: { start: "#6366f1", end: "#f43f5e", fontTitle: '"Cormorant Garamond","Times New Roman",Times,serif' }
+  palette:
+    start: "#6366f1"
+    end: "#f43f5e"
+    fontTitle: '"Cormorant Garamond","Times New Roman",Times,serif'
   category_home_page: /category/Books/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -89,7 +101,9 @@ communications:
   subtitle: "Staying Connected in a Disconnected World"
   description: "Essays, tips, and strategies on effective communication in our age. Learn how to foster meaningful connections and enhance your interactions."
   image: /img/categories/communications.webp
-  palette: { start: "#0ea5e9", end: "#06b6d4" }
+  palette:
+    start: "#0ea5e9"
+    end: "#06b6d4"
   category_home_page: /category/Communications/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -102,7 +116,10 @@ computers:
   subtitle: "The Heart of Modern Adventures"
   description: "Advice, insights, and guides on utilizing computers for gaming, writing, and other creative endeavors. Discover new tools and techniques for your projects."
   image: /img/categories/computers.webp
-  palette: { start: "#84cc16", end: "#22c55e", fontTitle: '"Checkbook",monospace' }
+  palette:
+    start: "#84cc16"
+    end: "#22c55e"
+    fontTitle: '"Checkbook",monospace'
   category_home_page: /category/Computers/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -136,7 +153,10 @@ dnd:
   subtitle: "The Quintessential Role Playing Game"
   description: "Comprehensive resources, stories, and guides for mastering Dungeons & Dragons campaigns. From beginner tips to advanced strategies, find everything you need."
   image: /img/categories/dungeons-dragons.webp
-  palette: { start: "#ef4444", end: "#eab308", fontTitle: '"Quentin","Souvenir Demi",serif' }
+  palette:
+    start: "#ef4444"
+    end: "#eab308"
+    fontTitle: '"Quentin","Souvenir Demi",serif'
   category_home_page: "/category/Dungeons & Dragons/"
   hide_from_carousel: false
   hide_from_category_list: false
@@ -150,7 +170,12 @@ folklore:
   subtitle: "Whispers from the Alps: Navigating Swiss Folk Tales"
   description: "A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate."
   image: /img/home/Folklore.webp
-  palette: { start: "#92400e", end: "#f59e0b", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
+  palette:
+    start: "#92400e"
+    end: "#f59e0b"
+    fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
+    titleStyle: italic
+    titleWeight: 600
   category_home_page: /category/Folklore/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -183,7 +208,11 @@ gurps:
   subtitle: "Generic Universal RolePlaying System"
   description: "Explorations, adventures, and guides using the versatile GURPS system. Learn how to create dynamic and flexible campaigns that can fit any setting."
   image: /img/categories/gurps.webp
-  palette: { start: "#64748b", end: "#eab308", fontTitle: '"Egyptienne MN Condensed Bold",serif', titleTransform: uppercase }
+  palette:
+    start: "#64748b"
+    end: "#eab308"
+    fontTitle: '"Egyptienne MN Condensed Bold",serif'
+    titleTransform: uppercase
   category_home_page: /category/Gurps/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -208,7 +237,10 @@ maps:
   subtitle: "Guiding Your Adventures"
   description: "Intricate and detailed maps for various games and adventures. Use these visual aids to enhance your campaigns and guide your journeys with precision."
   image: /img/categories/maps.webp
-  palette: { start: "#14b8a6", end: "#22c55e", fontTitle: '"MedievalSharp"' }
+  palette:
+    start: "#14b8a6"
+    end: "#22c55e"
+    fontTitle: '"MedievalSharp"'
   category_home_page: /category/Maps/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -222,7 +254,10 @@ middle-earth:
   subtitle: "Exploring Tolkien's World"
   description: "Articles, guides, and in-depth explorations of Tolkien's Middle-earth. Immerse yourself in the lore, characters, and landscapes of this beloved fantasy world."
   image: /img/categories/middle-earth.webp
-  palette: { start: "#166534", end: "#d97706", fontTitle: '"Ringbearer",serif' }
+  palette:
+    start: "#166534"
+    end: "#d97706"
+    fontTitle: '"Ringbearer",serif'
   category_home_page: /category/Middle-earth/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -235,7 +270,10 @@ mobile:
   subtitle: "Gaming and Communication on the Go"
   description: "Insights, tips, and guides on mobile gaming and effective communication on the go. Stay connected and entertained wherever you are."
   image: /img/categories/mobile.webp
-  palette: { start: "#8b5cf6", end: "#0ea5e9", fontTitle: '"PalmPilot"' }
+  palette:
+    start: "#8b5cf6"
+    end: "#0ea5e9"
+    fontTitle: '"PalmPilot"'
   category_home_page: /category/Mobile/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -248,7 +286,9 @@ opinion:
   subtitle: "Thoughts and Musings"
   description: "Personal essays, musings, and reflections on a variety of topics. Gain unique perspectives and insights from thoughtful commentary and analysis."
   image: /img/categories/opinion.webp
-  palette: { start: "#94a3b8", end: "#0ea5e9" }
+  palette:
+    start: "#94a3b8"
+    end: "#0ea5e9"
   category_home_page: /category/Opinion/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -261,7 +301,10 @@ personal-writing:
   subtitle: "From the Heart"
   description: "Personal essays and creative pieces that offer a glimpse into the writer's mind and heart. Explore intimate stories, reflections, and imaginative works."
   image: /img/categories/personal-writing.webp
-  palette: { start: "#f43f5e", end: "#a78bfa", fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif' }
+  palette:
+    start: "#f43f5e"
+    end: "#a78bfa"
+    fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif'
   category_home_page: /category/Personal Writing/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -287,7 +330,9 @@ projects:
   subtitle: "Work in Progress & Completed Builds"
   description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
   image: /img/categories/projects.webp
-  palette: { start: "#3b82f6", end: "#22c55e" }
+  palette:
+    start: "#3b82f6"
+    end: "#22c55e"
   category_home_page: /category/Projects/
   hide_from_carousel: true
   hide_from_category_list: true
@@ -300,7 +345,9 @@ prompts:
   emoji: "💡"
   subtitle: "Inspiration Starters"
   description: "Prompt ideas and seeds to kickstart writing, world-building, or creative exploration."
-  palette: { start: "#a78bfa", end: "#f472b6" }
+  palette:
+    start: "#a78bfa"
+    end: "#f472b6"
   image: /img/categories/prompt_library.webp
   category_home_page: /category/Prompts/
   hide_from_carousel: false
@@ -314,7 +361,9 @@ quotes:
   subtitle: "Words of Wisdom"
   description: "A curated collection of meaningful quotes and sayings to inspire, motivate, and provoke thought. Draw wisdom from the words of great minds."
   image: /img/categories/quotes.webp
-  palette: { start: "#06b6d4", end: "#3b82f6" }
+  palette:
+    start: "#06b6d4"
+    end: "#3b82f6"
   category_home_page: /category/Quotes/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -327,7 +376,9 @@ religion:
   subtitle: "Faith and Belief"
   description: "Discussions and explorations of various religious topics, beliefs, and practices. Delve into the spiritual aspects that shape cultures and individuals."
   image: /img/categories/religion.webp
-  palette: { start: "#eab308", end: "#7e22ce" }
+  palette:
+    start: "#eab308"
+    end: "#7e22ce"
   category_home_page: /category/Religion/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -340,7 +391,10 @@ reprint:
   subtitle: "Bringing Back the Classics"
   description: "Reprints and discussions of classic writings, bringing timeless works to a new audience. Rediscover the enduring value of these literary gems."
   image: /img/categories/reprint.webp
-  palette: { start: "#94a3b8", end: "#64748b", fontTitle: '"lp1_regular",monospace' }
+  palette:
+    start: "#94a3b8"
+    end: "#64748b"
+    fontTitle: '"lp1_regular",monospace'
   category_home_page: /category/Reprint/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -353,7 +407,11 @@ role-playing-games:
   subtitle: "Rolling the Dice: Rough Sketches to Refined Adventures"
   description: "Writings on current Role Playing Games, ranging from rough ideas to polished adventures. Discover insights, tips, and creative content to enhance your campaigns."
   image: /img/categories/role-playing-games.webp
-  palette: { start: "#7e22ce", end: "#ef4444", fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif', titleStyle: italic }
+  palette:
+    start: "#7e22ce"
+    end: "#ef4444"
+    fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
+    titleStyle: italic
   category_home_page: /category/Role Playing Games/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -366,7 +424,9 @@ science:
   subtitle: "Exploring the Unknown"
   description: "Articles, essays, and discussions delving into various scientific topics. Uncover new insights and explore the wonders of the natural and technological world."
   image: /img/categories/science.webp
-  palette: { start: "#0ea5e9", end: "#14b8a6" }
+  palette:
+    start: "#0ea5e9"
+    end: "#14b8a6"
   category_home_page: /category/Science/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -379,7 +439,10 @@ shadowrun:
   subtitle: "Cyberpunk and Magic"
   description: "Adventures, guides, and insights into the world of Shadowrun. Blend cyberpunk and magic in your campaigns with expert tips and engaging narratives."
   image: /img/categories/shadowrun.webp
-  palette: { start: "#c9412f", end: "#000000", fontTitle: '"Shadowrun","Helvetica Neue",Helvetica,Arial,sans-serif' }
+  palette:
+    start: "#c9412f"
+    end: "#000000"
+    fontTitle: '"Shadowrun","Helvetica Neue",Helvetica,Arial,sans-serif'
   category_home_page: /category/Shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -412,7 +475,11 @@ marchen-engine:
   subtitle: "Fantasy Storytelling Engine"
   description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
   image: /img/categories/the-märchen-engine.webp
-  palette: { start: "#a21caf", end: "#f59e0b", fontTitle: '"IM Fell DW Pica",serif', titleStyle: italic }
+  palette:
+    start: "#a21caf"
+    end: "#f59e0b"
+    fontTitle: '"IM Fell DW Pica",serif'
+    titleStyle: italic
   category_home_page: "/category/The Märchen Engine/"
   hide_from_carousel: false
   hide_from_category_list: false
@@ -424,7 +491,10 @@ draft:
   emoji: "📝"
   subtitle: "Work In Progress"
   description: "Unfinished or exploratory writings not yet ready for prime time."
-  palette: { start: "#64748b", end: "#94a3b8", fontTitle: '"Fredericka the Great",serif' }
+  palette:
+    start: "#64748b"
+    end: "#94a3b8"
+    fontTitle: '"Fredericka the Great",serif'
   category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true
@@ -442,5 +512,6 @@ blog:
     end: "#6366f1"
     fontTitle: '"Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif'
     titleStyle: italic
-  hide_from_carousel: false
-  hide_from_category_list: false
+    titleWeight: 500
+  hide_from_carousel: true
+  hide_from_category_list: true
