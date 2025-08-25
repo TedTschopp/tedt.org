@@ -105,6 +105,7 @@
     if (cfg.titleSize)         el.style.setProperty("--theme-title-size",         cfg.titleSize);
     if (cfg.titleStyle)        el.style.setProperty("--theme-title-style",        cfg.titleStyle);
     if (cfg.titleTransform)    el.style.setProperty("--theme-title-transform",    cfg.titleTransform);
+  if (cfg.titleWeight)       el.style.setProperty("--theme-title-weight",       cfg.titleWeight);
     if (cfg.titleColor)        el.style.setProperty("--theme-title-color",        cfg.titleColor);
     if (cfg.titleShadow)       el.style.setProperty("--theme-title-shadow",       cfg.titleShadow);
     if (cfg.titleHoverColor)   el.style.setProperty("--theme-title-hover-color",  cfg.titleHoverColor);

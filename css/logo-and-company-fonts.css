@@ -91,6 +91,9 @@
   --theme-text-dark:#e5e7eb;    /* slate-200 */
   --theme-badge-border:rgba(99,102,241,.35);
 
+  /* Title weight (allows per-category override via registry palette.titleWeight) */
+  --theme-title-weight:600; /* matches typical h2 default */
+
   /* Title styling tokens (overridable) */
   --theme-font-title:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   --theme-title-size:clamp(1.9rem,1.2rem + 2.5vw,3.2rem);
@@ -108,6 +111,7 @@ h2 .category-title,
 .h2 .category-title,
 .category-title.ai{
   font-family:var(--theme-font-title);
+  font-weight:var(--theme-title-weight,600);
   font-size:var(--theme-title-size);
   font-style:var(--theme-title-style);
   text-transform:var(--theme-title-transform);
@@ -118,12 +122,15 @@ h2 .category-title,
   overflow-wrap:anywhere;
   margin:0 0 .35rem;
   position:relative;
+  display:inline-block; /* ensure ::after underline spans width of title only */
   white-space: nowrap;
 }
 @supports (text-wrap: balance){
   .category-theme .category-title,
   h2 .category-title,
-  .h2 .category-title }
+  .h2 .category-title{
+    text-wrap:balance;
+  }
 }
 
 /* Underline accent bar */
