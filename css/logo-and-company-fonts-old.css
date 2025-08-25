@@ -1,6 +1,190 @@
-/* ==========================================================
-   Themes for resume backgrounds and drop down backgrounds.
-   ========================================================== */
+
+.Movies-Post {
+    font-family: "Limelight", "Times New Roman", Times, serif;
+}
+
+.Bestiary-Post {
+    font-family: "Bestiary", sans-serif;
+}
+.Monster-Post {
+    font-family: "Bestiary", sans-serif;
+}
+
+.Draft-Post {
+    font-family: "Fredericka the Great", serif;
+    font-style: normal;
+}
+
+.Computer-Post {
+    font-family: "Checkbook", monospace;
+    font-style: normal;
+}
+
+.Personal-Writing-Post {
+    font-family: "Cedarville Cursive", "Chalkduster", "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5rem;
+}
+
+.Book-Post {
+    font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+    font-style: normal;
+}
+
+.RPGS {
+    font-family: "IM Fell DW Pica", "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.Reprint-Post {
+    font-family: "lp1_regular", monospace;
+    font-style: normal;
+}
+
+.DnD {
+	font-family: "Quentin", "Souvenir Demi", serif;
+}
+.GURPS {
+	font-family: "Egyptienne MN Condensed Bold", serif;
+    text-transform: uppercase;
+}
+.LotR {
+	font-family: "Ringbearer", serif;
+}
+.marchen {
+    font-family: "IM Fell DW Pica", serif;
+    font-style: italic;
+}
+.marchen {
+    font-family: "IM Fell DW Pica", serif;
+    font-style: normal;
+}
+.draft {
+    font-family: "Fredericka the Great", serif;
+    font-style: normal;
+}
+.computers {
+    font-family: "Checkbook", monospace;
+    font-style: normal;
+}
+.Maps {
+    font-family: "MedievalSharp";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Mobile {
+    font-family: "PalmPilot";
+    font-style: normal;
+}
+
+.DCC {
+	font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: -2px -2px 0px rgba(234, 226, 33, 1), 
+				  2px  2px 0px rgba(234, 226, 33, 1), 
+				  2px -2px 0px rgba(234, 226, 33, 1), 
+			     -2px  2px 0px rgba(234, 226, 33, 1), 
+				  0px  2px 0px rgba(234, 226, 33, 1), 
+				  0px -2px 0px rgba(234, 226, 33, 1), 
+				  2px  0px 0px rgba(234, 226, 33, 1), 
+			     -2px  0px 0px rgba(234, 226, 33, 1);
+				
+	color: rgba(255, 0, 27, 1);
+}
+a:hover .DCC {
+    font-family: "Duvall", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow:-2px -2px 0px rgba(234, 226, 33, 1), 
+                 2px  2px 0px rgba(234, 226, 33, 1), 
+                 2px -2px 0px rgba(234, 226, 33, 1), 
+                -2px  2px 0px rgba(234, 226, 33, 1), 
+                 0px  2px 0px rgba(234, 226, 33, 1), 
+                 0px -2px 0px rgba(234, 226, 33, 1), 
+                 2px  0px 0px rgba(234, 226, 33, 1), 
+                -2px  0px 0px rgba(234, 226, 33, 1), 
+                
+                -3px -3px 0px rgba(255, 0, 27, 1), 
+                 3px  3px 0px rgba(255, 0, 27, 1), 
+                 3px -3px 0px rgba(255, 0, 27, 1), 
+                -3px  3px 0px rgba(255, 0, 27, 1), 
+                 0px  3px 0px rgba(255, 0, 27, 1), 
+                 0px -3px 0px rgba(255, 0, 27, 1), 
+                 3px  0px 0px rgba(255, 0, 27, 1), 
+                -3px  0px 0px rgba(255, 0, 27, 1);
+        color: rgba(255, 0, 27, 1);
+ }
+ .Shadowrun {
+    font-family: "Shadowrun", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: -1px -1px 0px rgba(201, 65, 47, 1), 
+                  1px  1px 0px rgba(201, 65, 47, 1), 
+                  1px -1px 0px rgba(201, 65, 47, 1), 
+                 -1px  1px 0px rgba(201, 65, 47, 1), 
+                  0px  2px 0px rgba(201, 65, 47, 1), 
+                  0px -1px 0px rgba(201, 65, 47, 1), 
+                  1px  0px 0px rgba(201, 65, 47, 1), 
+                 -1px  0px 0px rgba(201, 65, 47, 1);
+    color:                     rgba(  0,  0,  0, 1);
+}
+
+.MCC {
+	font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: -2px -2px 0px rgba(255, 226, 5, 1), 
+				  2px  2px 0px rgba(255, 226, 5, 1), 
+				  2px -2px 0px rgba(255, 226, 5, 1), 
+			     -2px  2px 0px rgba(255, 226, 5, 1), 
+				  0px  2px 0px rgba(255, 226, 5, 1), 
+				  0px -2px 0px rgba(255, 226, 5, 1), 
+				  2px  0px 0px rgba(255, 226, 5, 1), 
+			     -2px  0px 0px rgba(255, 226, 5, 1); 
+	color: rgba(1, 130, 73, 1);
+}
+a:hover .MCC {
+    font-family: "IrwinAllen", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow:  -2px -2px 0px rgba(255, 226, 5, 1), 
+                   2px  2px 0px rgba(255, 226, 5, 1), 
+                   2px -2px 0px rgba(255, 226, 5, 1), 
+                  -2px  2px 0px rgba(255, 226, 5, 1), 
+                   0px  2px 0px rgba(255, 226, 5, 1), 
+                   0px -2px 0px rgba(255, 226, 5, 1), 
+                   2px  0px 0px rgba(255, 226, 5, 1), 
+                  -2px  0px 0px rgba(255, 226, 5, 1), 
+                 
+                  -3px -3px 0px rgba(1, 130, 73, 1), 
+                   3px  3px 0px rgba(1, 130, 73, 1),
+                   3px -3px 0px rgba(1, 130, 73, 1), 
+                  -3px  3px 0px rgba(1, 130, 73, 1), 
+                   0px  3px 0px rgba(1, 130, 73, 1), 
+                   0px -3px 0px rgba(1, 130, 73, 1), 
+                   3px  0px 0px rgba(1, 130, 73, 1), 
+                  -3px  0px 0px rgba(1, 130, 73, 1);
+         color: rgba(1, 130, 73, 1);
+ }
+
+
+ .GammaWorld {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #DC143C; 
+	font-weight: bold;
+	text-shadow: -3px -3px 0px rgba(255, 0, 27, 0), 
+				  3px  3px 0px rgba(255, 0, 27, 0),
+				  3px -3px 0px rgba(255, 0, 27, 0), 
+				 -3px  3px 0px rgba(255, 0, 27, 0), 
+				  0px  3px 0px rgba(255, 0, 27, 0), 
+				  0px -3px 0px rgba(255, 0, 27, 0), 
+				  3px  0px 0px rgba(255, 0, 27, 0), 
+				 -3px  0px 0px rgba(255, 0, 27, 0);
+ }
+ a:hover .GammaWorld {
+	font-family: "lowwe", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	text-shadow: -3px -3px 0px rgba(255, 0, 27, 1), 
+				  3px  3px 0px rgba(255, 0, 27, 1),
+				  3px -3px 0px rgba(255, 0, 27, 1), 
+				 -3px  3px 0px rgba(255, 0, 27, 1), 
+				  0px  3px 0px rgba(255, 0, 27, 1), 
+				  0px -3px 0px rgba(255, 0, 27, 1), 
+				  3px  0px 0px rgba(255, 0, 27, 1), 
+				 -3px  0px 0px rgba(255, 0, 27, 1);
+	color: #212529; 
+}
 
 
 .Dohring-watermark, .TORC-watermark, .SCE-watermark, .Tschopp-watermark {
@@ -55,6 +239,100 @@
     background-size: contain; /* Ensures the entire image is displayed */
 }
 
+/* ==========================================================
+     AI CATEGORY ENHANCED STYLES for ai-post and .ai-post.category-badge
+   ========================================================== 
+/* Root design tokens (only define if not elsewhere) */
+:root {
+    --ai-accent-start: #06b6d4;               /* cyan-500 */
+    --ai-accent-end:   #a78bfa;               /* violet-400 */
+    --ai-text-light:   #0f172a;               /* slate-900 */
+    --ai-text-dark:    #e5e7eb;               /* slate-200 */
+    --ai-badge-border: rgba(99,102,241,.35);  /* indigo-ish */
+}
+
+/* Page / section title treatment (retain generic selector for future markup) */
+h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title {
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.9rem, 1.2rem + 2.5vw, 3.2rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ai-text-light);
+    /* Fallback then modern balanced wrapping (progressive enhancement) */
+    overflow-wrap: anywhere;
+    margin: 0 0 .35rem;
+    position: relative;
+}
+@supports (text-wrap: balance) {
+    h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title { text-wrap: balance; }
+}
+h2 .ai-post::after, .h2 .ai-post::after, .category-title.ai::after, .ai-post.category-title::after {
+    content:"";
+    display:block;
+    height: .35rem;
+    margin-top: .5rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--ai-accent-start), var(--ai-accent-end));
+    box-shadow: 0 4px 24px rgba(167,139,250,.35);
+}
+
+/* Badge style (for list / index pages) */
+.category-badge.ai, .ai-post.category-badge {
+    display:inline-flex; align-items:center; gap:.5ch;
+    font: 600 12px/1 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing:.12em; text-transform:uppercase;
+    padding:.4rem .66rem; border-radius:999px;
+    border:1px solid var(--ai-badge-border);
+    background: linear-gradient(90deg, rgba(6,182,212,.07), rgba(167,139,250,.07));
+    color: var(--ai-text-light);
+}
+.category-badge.ai .badge-dot, .ai-post.category-badge .badge-dot {
+    width:.5rem; height:.5rem; border-radius:50%;
+    background: radial-gradient(circle at 30% 30%, var(--ai-accent-start), var(--ai-accent-end));
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark){
+    /* Enhanced dark mode contrast for AI category */
+    h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title {
+        color: var(--ai-text-dark); 
+        text-shadow: 0 1px 2px rgba(0,0,0,.55);
+    }
+    /* Brighter underline & slightly stronger glow in dark mode */
+    h2 .ai-post::after, .h2 .ai-post::after, .category-title.ai::after, .ai-post.category-title::after {
+        background: linear-gradient(90deg, var(--ai-accent-start) 0%, var(--ai-accent-end) 70%, rgba(255,255,255,.85) 140%);
+        box-shadow: 0 0 0 1px rgba(255,255,255,.05), 0 4px 18px -2px rgba(167,139,250,.55), 0 0 12px -2px rgba(6,182,212,.45);
+    }
+    .category-badge.ai, .ai-post.category-badge {
+        color: var(--ai-text-dark); 
+        border-color: rgba(167,139,250,.65);
+        background: linear-gradient(90deg, rgba(6,182,212,.24), rgba(167,139,250,.24));
+        box-shadow: 0 0 0 1px rgba(255,255,255,.05), 0 2px 6px -1px rgba(0,0,0,.7);
+    }
+    .category-badge.ai .badge-dot, .ai-post.category-badge .badge-dot {
+        box-shadow: 0 0 4px 1px rgba(167,139,250,.6);
+    }
+}
+
+/* Explicit light mode reset (optional; ensures correct color if dark block loaded earlier or user toggles themes) */
+@media (prefers-color-scheme: light){
+  h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title {
+    color: var(--ai-text-light);
+    text-shadow: none; /* maintain original light style */
+  }
+  .category-badge.ai, .ai-post.category-badge {
+    color: var(--ai-text-light);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+    h2 .ai-post, .h2 .ai-post, .category-title.ai, .ai-post.category-title,
+    .category-badge.ai, .ai-post.category-badge { transition: none !important; }
+}
+
+
 /* New AI Generated Code for Consolidating Style Sheets */
 
 /* ==========================================================
@@ -106,7 +384,10 @@
 .category-theme .category-title,
 h2 .category-title,
 .h2 .category-title,
-.category-title.ai{
+h2 .ai-post,
+.h2 .ai-post,
+.category-title.ai,
+.ai-post.category-title{
   font-family:var(--theme-font-title);
   font-size:var(--theme-title-size);
   font-style:var(--theme-title-style);
@@ -123,13 +404,17 @@ h2 .category-title,
 @supports (text-wrap: balance){
   .category-theme .category-title,
   h2 .category-title,
-  .h2 .category-title }
+  .h2 .category-title,
+  h2 .ai-post,
+  .h2 .ai-post{ text-wrap:balance; }
 }
 
 /* Underline accent bar */
 .category-theme .category-title::after,
 h2 .category-title::after,
-.h2 .category-title::after{
+.h2 .category-title::after,
+h2 .ai-post::after,
+.h2 .ai-post::after{
   content:"";
   display:block;
   height:.35rem;
@@ -168,14 +453,18 @@ h2 .category-title::after,
 @media (prefers-color-scheme: dark){
   .category-theme .category-title,
   h2 .category-title,
-  .h2 .category-title{
+  .h2 .category-title,
+  h2 .ai-post,
+  .h2 .ai-post{
     color:var(--theme-text-dark);
     /* respect explicit category shadow, else subtle lift */
     text-shadow:var(--theme-title-shadow, 0 1px 2px rgba(0,0,0,.55));
   }
   .category-theme .category-title::after,
   h2 .category-title::after,
-  .h2 .category-title::after{
+  .h2 .category-title::after,
+  h2 .ai-post::after,
+  .h2 .ai-post::after{
     background:linear-gradient(90deg,
       var(--theme-accent-start) 0%,
       var(--theme-accent-end) 70%,
@@ -202,7 +491,9 @@ h2 .category-title::after,
 @media (prefers-color-scheme: light){
   .category-theme .category-title,
   h2 .category-title,
-  .h2 .category-title{
+  .h2 .category-title,
+  h2 .ai-post,
+  .h2 .ai-post{
     color: var(--theme-text-light);
     text-shadow: var(--theme-title-shadow);
   }
@@ -217,6 +508,8 @@ h2 .category-title::after,
   .category-theme .category-title,
   h2 .category-title,
   .h2 .category-title,
+  h2 .ai-post,
+  .h2 .ai-post,
   .category-theme .category-badge,
   .category-badge{ transition:none !important; }
 }
