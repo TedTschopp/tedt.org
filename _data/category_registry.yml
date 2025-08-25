@@ -23,6 +23,10 @@ ai:
   palette:
     start: "#06b6d4"
     end: "#a78bfa"
+    titleColorLight: "#a78bfa"
+    titleColorDark: "#06b6d4"
+    titleHoverColorLight: "#a78bfa"
+    titleHoverColorDark: "#06b6d4"
     titleWeight: 500
   subtitle: "Where Intelligence Becomes Imagination, & Imagination Shapes the Future"
   description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
@@ -42,6 +46,10 @@ movies:
     start: "#eab308"
     end: "#f97316"
     fontTitle: '"Limelight","Times New Roman",Times,serif'
+    titleColorLight: "#f97316"
+    titleColorDark: "#eab308"
+    titleHoverColorLight: "#f97316"
+    titleHoverColorDark: "#eab308"
     titleWeight: 500
   category_home_page: /category/Movies/
   hide_from_carousel: false
@@ -59,6 +67,10 @@ bestiary:
     start: "#16a34a"
     end: "#f59e0b"
     fontTitle: '"Bestiary",sans-serif'
+    titleColorLight: "#f59e0b"
+    titleColorDark: "#16a34a"
+    titleHoverColorLight: "#f59e0b"
+    titleHoverColorDark: "#16a34a"
     titleWeight: 500
   category_home_page: /category/Bestiary/
   hide_from_carousel: false
@@ -76,6 +88,10 @@ monsters:
     start: "#ec4899"
     end: "#7e22ce"
     fontTitle: '"Bestiary",sans-serif'
+    titleColorLight: "#7e22ce"
+    titleColorDark: "#ec4899"
+    titleHoverColorLight: "#7e22ce"
+    titleHoverColorDark: "#ec4899"
     titleWeight: 500
   category_home_page: /category/Monsters/
   hide_from_carousel: false
@@ -93,6 +109,10 @@ books:
     start: "#6366f1"
     end: "#f43f5e"
     fontTitle: '"Cormorant Garamond","Times New Roman",Times,serif'
+    titleColorLight: "#f43f5e"
+    titleColorDark: "#6366f1"
+    titleHoverColorLight: "#f43f5e"
+    titleHoverColorDark: "#6366f1"
     titleWeight: 500
   category_home_page: /category/Books/
   hide_from_carousel: false
@@ -109,6 +129,10 @@ communications:
   palette:
     start: "#0ea5e9"
     end: "#06b6d4"
+    titleColorLight: "#06b6d4"
+    titleColorDark: "#0ea5e9"
+    titleHoverColorLight: "#06b6d4"
+    titleHoverColorDark: "#0ea5e9"
     titleWeight: 500
   category_home_page: /category/Communications/
   hide_from_carousel: false
@@ -126,6 +150,10 @@ computers:
     start: "#84cc16"
     end: "#22c55e"
     fontTitle: '"Checkbook",monospace'
+    titleColorLight: "#22c55e"
+    titleColorDark: "#84cc16"
+    titleHoverColorLight: "#22c55e"
+    titleHoverColorDark: "#84cc16"
     titleWeight: 500
   category_home_page: /category/Computers/
   hide_from_carousel: false
@@ -144,7 +172,10 @@ dcc:
     start: "#eae221"
     end: "#ff001b"
     fontTitle: '"Duvall","Helvetica Neue",Helvetica,Arial,sans-serif'
-    titleColor: "rgba(255,0,27,1)"
+    titleColorDark: "rgba(255,0,27,1)"
+    titleColorLight: "rgba(255,40,55,1)"
+    titleHoverColorLight: "rgba(255,40,55,1)"
+    titleHoverColorDark: "rgba(255,0,27,1)"
     titleShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1)"
     titleHoverShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1),-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
     titleWeight: 500
@@ -165,6 +196,10 @@ dnd:
     start: "#ef4444"
     end: "#eab308"
     fontTitle: '"Quentin","Souvenir Demi",serif'
+    titleColorLight: "#eab308"
+    titleColorDark: "#ef4444"
+    titleHoverColorLight: "#eab308"
+    titleHoverColorDark: "#ef4444"
     titleWeight: 500
   category_home_page: "/category/Dungeons & Dragons/"
   hide_from_carousel: false
@@ -184,6 +219,10 @@ folklore:
     end: "#f59e0b"
     fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
     titleStyle: italic
+    titleColorLight: "#f59e0b"
+    titleColorDark: "#92400e"
+    titleHoverColorLight: "#f59e0b"
+    titleHoverColorDark: "#92400e"
     titleWeight: 500
   category_home_page: /category/Folklore/
   hide_from_carousel: false
@@ -201,10 +240,12 @@ gamma-world:
     start: "#dc143c"
     end: "#212529"
     fontTitle: '"lowwe","Helvetica Neue",Helvetica,Arial,sans-serif'
-    titleColor: "#DC143C"
+    titleColorDark: "#DC143C"
+    titleColorLight: "#ff2e55"
+    titleHoverColorLight: "#ff2e55"
+    titleHoverColorDark: "#DC143C"
     titleShadow: "-3px -3px 0px rgba(255,0,27,0),3px 3px 0px rgba(255,0,27,0),3px -3px 0px rgba(255,0,27,0),-3px 3px 0px rgba(255,0,27,0),0px 3px 0px rgba(255,0,27,0),0px -3px 0px rgba(255,0,27,0),3px 0px 0px rgba(255,0,27,0),-3px 0px 0px rgba(255,0,27,0)"
     titleHoverShadow: "-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
-    titleHoverColor: "#212529"
     titleWeight: 500
   hide_from_carousel: false
   hide_from_category_list: false
@@ -223,6 +264,10 @@ gurps:
     end: "#eab308"
     fontTitle: '"Egyptienne MN Condensed Bold",serif'
     titleTransform: uppercase
+    titleColorLight: "#eab308"
+    titleColorDark: "#64748b"
+    titleHoverColorLight: "#eab308"
+    titleHoverColorDark: "#64748b"
     titleWeight: 500
   category_home_page: /category/Gurps/
   hide_from_carousel: false
@@ -238,6 +283,10 @@ home:
   palette:
     start: "#f472b6"
     end: "#f43f5e"
+    titleColorLight: "#f43f5e"
+    titleColorDark: "#f472b6"
+    titleHoverColorLight: "#f43f5e"
+    titleHoverColorDark: "#f472b6"
     titleWeight: 500
   category_home_page: /category/Home/
   hide_from_carousel: true
@@ -255,6 +304,10 @@ maps:
     start: "#14b8a6"
     end: "#22c55e"
     fontTitle: '"MedievalSharp"'
+    titleColorLight: "#22c55e"
+    titleColorDark: "#14b8a6"
+    titleHoverColorLight: "#22c55e"
+    titleHoverColorDark: "#14b8a6"
     titleWeight: 500
   category_home_page: /category/Maps/
   hide_from_carousel: false
@@ -273,6 +326,10 @@ middle-earth:
     start: "#166534"
     end: "#d97706"
     fontTitle: '"Ringbearer",serif'
+    titleColorLight: "#d97706"
+    titleColorDark: "#166534"
+    titleHoverColorLight: "#d97706"
+    titleHoverColorDark: "#166534"
     titleWeight: 500
   category_home_page: /category/Middle-earth/
   hide_from_carousel: false
@@ -290,6 +347,10 @@ mobile:
     start: "#8b5cf6"
     end: "#0ea5e9"
     fontTitle: '"PalmPilot"'
+    titleColorLight: "#0ea5e9"
+    titleColorDark: "#8b5cf6"
+    titleHoverColorLight: "#0ea5e9"
+    titleHoverColorDark: "#8b5cf6"
     titleWeight: 500
   category_home_page: /category/Mobile/
   hide_from_carousel: false
@@ -306,6 +367,10 @@ opinion:
   palette:
     start: "#94a3b8"
     end: "#0ea5e9"
+    titleColorLight: "#0ea5e9"
+    titleColorDark: "#94a3b8"
+    titleHoverColorLight: "#0ea5e9"
+    titleHoverColorDark: "#94a3b8"
     titleWeight: 500
   category_home_page: /category/Opinion/
   hide_from_carousel: false
@@ -323,6 +388,10 @@ personal-writing:
     start: "#f43f5e"
     end: "#a78bfa"
     fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif'
+    titleColorLight: "#a78bfa"
+    titleColorDark: "#f43f5e"
+    titleHoverColorLight: "#a78bfa"
+    titleHoverColorDark: "#f43f5e"
     titleWeight: 500
   category_home_page: /category/Personal Writing/
   hide_from_carousel: false
@@ -339,6 +408,10 @@ philosophy:
   palette:
     start: "#334155"
     end: "#6366f1"
+    titleColorLight: "#6366f1"
+    titleColorDark: "#334155"
+    titleHoverColorLight: "#6366f1"
+    titleHoverColorDark: "#334155"
     titleWeight: 500
   category_home_page: /category/Philosophy/
   hide_from_carousel: false
@@ -355,6 +428,10 @@ projects:
   palette:
     start: "#3b82f6"
     end: "#22c55e"
+    titleColorLight: "#22c55e"
+    titleColorDark: "#3b82f6"
+    titleHoverColorLight: "#22c55e"
+    titleHoverColorDark: "#3b82f6"
     titleWeight: 500
   category_home_page: /category/Projects/
   hide_from_carousel: true
@@ -371,6 +448,10 @@ prompts:
   palette:
     start: "#a78bfa"
     end: "#f472b6"
+    titleColorLight: "#f472b6"
+    titleColorDark: "#a78bfa"
+    titleHoverColorLight: "#f472b6"
+    titleHoverColorDark: "#a78bfa"
     titleWeight: 500
   image: /img/categories/prompt_library.webp
   category_home_page: /category/Prompts/
@@ -388,6 +469,10 @@ quotes:
   palette:
     start: "#06b6d4"
     end: "#3b82f6"
+    titleColorLight: "#3b82f6"
+    titleColorDark: "#06b6d4"
+    titleHoverColorLight: "#3b82f6"
+    titleHoverColorDark: "#06b6d4"
     titleWeight: 500
   category_home_page: /category/Quotes/
   hide_from_carousel: false
@@ -404,6 +489,10 @@ religion:
   palette:
     start: "#eab308"
     end: "#7e22ce"
+    titleColorLight: "#7e22ce"
+    titleColorDark: "#eab308"
+    titleHoverColorLight: "#7e22ce"
+    titleHoverColorDark: "#eab308"
     titleWeight: 500
   category_home_page: /category/Religion/
   hide_from_carousel: false
@@ -421,6 +510,10 @@ reprint:
     start: "#94a3b8"
     end: "#64748b"
     fontTitle: '"lp1_regular",monospace'
+    titleColorLight: "#64748b"
+    titleColorDark: "#94a3b8"
+    titleHoverColorLight: "#64748b"
+    titleHoverColorDark: "#94a3b8"
     titleWeight: 500
   category_home_page: /category/Reprint/
   hide_from_carousel: false
@@ -439,6 +532,10 @@ role-playing-games:
     end: "#ef4444"
     fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
     titleStyle: italic
+    titleColorLight: "#ef4444"
+    titleColorDark: "#7e22ce"
+    titleHoverColorLight: "#ef4444"
+    titleHoverColorDark: "#7e22ce"
     titleWeight: 500
   category_home_page: /category/Role Playing Games/
   hide_from_carousel: false
@@ -455,6 +552,10 @@ science:
   palette:
     start: "#0ea5e9"
     end: "#14b8a6"
+    titleColorLight: "#14b8a6"
+    titleColorDark: "#0ea5e9"
+    titleHoverColorLight: "#14b8a6"
+    titleHoverColorDark: "#0ea5e9"
     titleWeight: 500
   category_home_page: /category/Science/
   hide_from_carousel: false
@@ -472,6 +573,10 @@ shadowrun:
     start: "#c9412f"
     end: "#000000"
     fontTitle: '"Shadowrun","Helvetica Neue",Helvetica,Arial,sans-serif'
+    titleColorLight: "#c9412f"
+    titleColorDark: "#000000"
+    titleHoverColorLight: "#c9412f"
+    titleHoverColorDark: "#000000"
     titleWeight: 500
   category_home_page: /category/Shadowrun/
   hide_from_carousel: false
@@ -489,7 +594,10 @@ mutant-crawl-classics:
     start: "#ffe205"
     end: "#018249"
     fontTitle: '"IrwinAllen","Helvetica Neue",Helvetica,Arial,sans-serif'
-    titleColor: "rgba(1,130,73,1)"
+    titleColorDark: "rgba(1,130,73,1)"
+    titleColorLight: "#01a865"
+    titleHoverColorLight: "#01a865"
+    titleHoverColorDark: "rgba(1,130,73,1)"
     titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
     titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
     titleWeight: 500
@@ -511,6 +619,10 @@ marchen-engine:
     end: "#f59e0b"
     fontTitle: '"IM Fell DW Pica",serif'
     titleStyle: italic
+    titleColorLight: "#f59e0b"
+    titleColorDark: "#a21caf"
+    titleHoverColorLight: "#f59e0b"
+    titleHoverColorDark: "#a21caf"
     titleWeight: 500
   category_home_page: "/category/The Märchen Engine/"
   hide_from_carousel: false
@@ -527,6 +639,10 @@ draft:
     start: "#64748b"
     end: "#94a3b8"
     fontTitle: '"Fredericka the Great",serif'
+    titleColorLight: "#94a3b8"
+    titleColorDark: "#64748b"
+    titleHoverColorLight: "#94a3b8"
+    titleHoverColorDark: "#64748b"
     titleWeight: 500
   category_home_page: /category/Draft/
   hide_from_carousel: true
@@ -544,6 +660,10 @@ blog:
     start: "#0ea5e9"
     end: "#6366f1"
     fontTitle: '"Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif'
-    titleWeight: 500
+    titleColorLight: "#6366f1"
+    titleColorDark: "#0ea5e9"
+    titleHoverColorLight: "#6366f1"
+    titleHoverColorDark: "#0ea5e9"
+    titleWeight: 600
   hide_from_carousel: true
   hide_from_category_list: true
