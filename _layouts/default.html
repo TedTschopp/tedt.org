@@ -89,13 +89,14 @@
                   {%- assign __blog_slug = 'blog' -%}
                   {%- assign __blog_entry = site.data.category_registry[__blog_slug] -%}
                   {%- if __blog_entry and __blog_entry.category_home_page -%}
-                    {%- assign __blog_href = __blog_entry.category_home_page -%}
+                    <h2 class="card-title" id="blog">
+                      {% include utility/category-label.html category='blog' href=__blog_entry.category_home_page kind='title' class_extra='text-decoration-none' %}
+                    </h2>
                   {%- else -%}
-                    {%- assign __blog_href = '/category/' | append: __blog_slug | append: '/' -%}
+                    <h2 class="card-title" id="blog">
+                      {% include utility/category-label.html category='blog' kind='title' class_extra='text-decoration-none' %}
+                    </h2>
                   {%- endif -%}
-                  <h2 class="card-title" id="blog">
-                    {% include utility/category-label.html category='blog' href=__blog_href kind='title' class_extra='text-decoration-none' %}
-                  </h2>
                   <h3 class="text-muted card-subtitle mb-2 three-line-clamp">Exploring the Intersection of Tech, Theology, and Imagination</h3>
                   <p class="card-text three-line-clamp">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
                 </div>
@@ -192,11 +193,14 @@
                   {%- assign __folklore_slug = 'folklore' -%}
                   {%- assign __folklore_entry = site.data.category_registry[__folklore_slug] -%}
                   {%- if __folklore_entry and __folklore_entry.category_home_page -%}
-                    {%- assign __folklore_href = __folklore_entry.category_home_page -%}
+                    <h2 class="card-title" id="folklore">
+                      {% include utility/category-label.html category='folklore' href=__folklore_entry.category_home_page kind='title' class_extra='text-decoration-none' text_override='Swiss Folklore' %}
+                    </h2>
                   {%- else -%}
-                    {%- assign __folklore_href = '/category/' | append: __folklore_slug | append: '/' -%}
+                    <h2 class="card-title" id="folklore">
+                      {% include utility/category-label.html category='folklore' kind='title' class_extra='text-decoration-none' text_override='Swiss Folklore' %}
+                    </h2>
                   {%- endif -%}
-                  <h2 class="card-title" id="folklore">{% include utility/category-label.html category='folklore' href=__folklore_href kind='title' class_extra='text-decoration-none' text_override='Swiss Folklore' %}</h2>
                   <h3 class="text-muted card-subtitle mb-2 three-line-clamp">Whispers from the Alps: Navigating Swiss Folk Tales</h3>
                   <p class="card-text three-line-clamp">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>

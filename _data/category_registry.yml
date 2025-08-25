@@ -440,8 +440,7 @@ blog:
   palette:
     start: "#0ea5e9"
     end: "#6366f1"
-    fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
+    fontTitle: '"Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif'
     titleStyle: italic
-  category_home_page: /category/Blog/
   hide_from_carousel: false
   hide_from_category_list: false
