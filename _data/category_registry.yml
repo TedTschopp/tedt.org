@@ -23,6 +23,7 @@ ai:
   palette:
     start: "#06b6d4"
     end: "#a78bfa"
+    titleWeight: 500
   subtitle: "Where Intelligence Becomes Imagination, & Imagination Shapes the Future"
   description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
   category_home_page: /category/Artificial Intelligence/
@@ -41,6 +42,7 @@ movies:
     start: "#eab308"
     end: "#f97316"
     fontTitle: '"Limelight","Times New Roman",Times,serif'
+    titleWeight: 500
   category_home_page: /category/Movies/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -57,6 +59,7 @@ bestiary:
     start: "#16a34a"
     end: "#f59e0b"
     fontTitle: '"Bestiary",sans-serif'
+    titleWeight: 500
   category_home_page: /category/Bestiary/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -73,6 +76,7 @@ monsters:
     start: "#ec4899"
     end: "#7e22ce"
     fontTitle: '"Bestiary",sans-serif'
+    titleWeight: 500
   category_home_page: /category/Monsters/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -89,6 +93,7 @@ books:
     start: "#6366f1"
     end: "#f43f5e"
     fontTitle: '"Cormorant Garamond","Times New Roman",Times,serif'
+    titleWeight: 500
   category_home_page: /category/Books/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -104,6 +109,7 @@ communications:
   palette:
     start: "#0ea5e9"
     end: "#06b6d4"
+    titleWeight: 500
   category_home_page: /category/Communications/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -120,6 +126,7 @@ computers:
     start: "#84cc16"
     end: "#22c55e"
     fontTitle: '"Checkbook",monospace'
+    titleWeight: 500
   category_home_page: /category/Computers/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -140,6 +147,7 @@ dcc:
     titleColor: "rgba(255,0,27,1)"
     titleShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1)"
     titleHoverShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1),-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
+    titleWeight: 500
   category_home_page: /category/Dungeon Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -157,6 +165,7 @@ dnd:
     start: "#ef4444"
     end: "#eab308"
     fontTitle: '"Quentin","Souvenir Demi",serif'
+    titleWeight: 500
   category_home_page: "/category/Dungeons & Dragons/"
   hide_from_carousel: false
   hide_from_category_list: false
@@ -196,6 +205,7 @@ gamma-world:
     titleShadow: "-3px -3px 0px rgba(255,0,27,0),3px 3px 0px rgba(255,0,27,0),3px -3px 0px rgba(255,0,27,0),-3px 3px 0px rgba(255,0,27,0),0px 3px 0px rgba(255,0,27,0),0px -3px 0px rgba(255,0,27,0),3px 0px 0px rgba(255,0,27,0),-3px 0px 0px rgba(255,0,27,0)"
     titleHoverShadow: "-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
     titleHoverColor: "#212529"
+    titleWeight: 500
   hide_from_carousel: false
   hide_from_category_list: false
   category_home_page: /category/Gamma World/
@@ -213,6 +223,7 @@ gurps:
     end: "#eab308"
     fontTitle: '"Egyptienne MN Condensed Bold",serif'
     titleTransform: uppercase
+    titleWeight: 500
   category_home_page: /category/Gurps/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -224,7 +235,10 @@ home:
   emoji: "🏠"
   subtitle: "Landing Page"
   description: "Primary site landing content and featured highlights."
-  palette: { start: "#f472b6", end: "#f43f5e" }
+  palette:
+    start: "#f472b6"
+    end: "#f43f5e"
+    titleWeight: 500
   category_home_page: /category/Home/
   hide_from_carousel: true
   hide_from_category_list: true
@@ -241,6 +255,7 @@ maps:
     start: "#14b8a6"
     end: "#22c55e"
     fontTitle: '"MedievalSharp"'
+    titleWeight: 500
   category_home_page: /category/Maps/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -258,6 +273,7 @@ middle-earth:
     start: "#166534"
     end: "#d97706"
     fontTitle: '"Ringbearer",serif'
+    titleWeight: 500
   category_home_page: /category/Middle-earth/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -274,6 +290,7 @@ mobile:
     start: "#8b5cf6"
     end: "#0ea5e9"
     fontTitle: '"PalmPilot"'
+    titleWeight: 500
   category_home_page: /category/Mobile/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -289,6 +306,7 @@ opinion:
   palette:
     start: "#94a3b8"
     end: "#0ea5e9"
+    titleWeight: 500
   category_home_page: /category/Opinion/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -305,6 +323,7 @@ personal-writing:
     start: "#f43f5e"
     end: "#a78bfa"
     fontTitle: '"Cedarville Cursive","Chalkduster","Comic Sans MS",cursive,sans-serif'
+    titleWeight: 500
   category_home_page: /category/Personal Writing/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -317,7 +336,10 @@ philosophy:
   subtitle: "Thinking Deeply"
   description: "In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire."
   image: /img/categories/philosophy.webp
-  palette: { start: "#334155", end: "#6366f1" }
+  palette:
+    start: "#334155"
+    end: "#6366f1"
+    titleWeight: 500
   category_home_page: /category/Philosophy/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -333,6 +355,7 @@ projects:
   palette:
     start: "#3b82f6"
     end: "#22c55e"
+    titleWeight: 500
   category_home_page: /category/Projects/
   hide_from_carousel: true
   hide_from_category_list: true
@@ -348,6 +371,7 @@ prompts:
   palette:
     start: "#a78bfa"
     end: "#f472b6"
+    titleWeight: 500
   image: /img/categories/prompt_library.webp
   category_home_page: /category/Prompts/
   hide_from_carousel: false
@@ -364,6 +388,7 @@ quotes:
   palette:
     start: "#06b6d4"
     end: "#3b82f6"
+    titleWeight: 500
   category_home_page: /category/Quotes/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -379,6 +404,7 @@ religion:
   palette:
     start: "#eab308"
     end: "#7e22ce"
+    titleWeight: 500
   category_home_page: /category/Religion/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -395,6 +421,7 @@ reprint:
     start: "#94a3b8"
     end: "#64748b"
     fontTitle: '"lp1_regular",monospace'
+    titleWeight: 500
   category_home_page: /category/Reprint/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -412,6 +439,7 @@ role-playing-games:
     end: "#ef4444"
     fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
     titleStyle: italic
+    titleWeight: 500
   category_home_page: /category/Role Playing Games/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -427,6 +455,7 @@ science:
   palette:
     start: "#0ea5e9"
     end: "#14b8a6"
+    titleWeight: 500
   category_home_page: /category/Science/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -443,6 +472,7 @@ shadowrun:
     start: "#c9412f"
     end: "#000000"
     fontTitle: '"Shadowrun","Helvetica Neue",Helvetica,Arial,sans-serif'
+    titleWeight: 500
   category_home_page: /category/Shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -462,6 +492,7 @@ mutant-crawl-classics:
     titleColor: "rgba(1,130,73,1)"
     titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
     titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
+    titleWeight: 500
   category_home_page: /category/Mutant Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -480,6 +511,7 @@ marchen-engine:
     end: "#f59e0b"
     fontTitle: '"IM Fell DW Pica",serif'
     titleStyle: italic
+    titleWeight: 500
   category_home_page: "/category/The Märchen Engine/"
   hide_from_carousel: false
   hide_from_category_list: false
@@ -495,6 +527,7 @@ draft:
     start: "#64748b"
     end: "#94a3b8"
     fontTitle: '"Fredericka the Great",serif'
+    titleWeight: 500
   category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true
@@ -511,7 +544,6 @@ blog:
     start: "#0ea5e9"
     end: "#6366f1"
     fontTitle: '"Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif'
-    titleStyle: italic
     titleWeight: 500
   hide_from_carousel: true
   hide_from_category_list: true
