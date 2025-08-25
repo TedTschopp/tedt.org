@@ -1414,7 +1414,7 @@
     "date_published": "2025-08-19T00:00:00-07:00",
     "id": "/prompts/business-case-and-requirements-assistant/",
     "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.png",
-    "lastTootTimestamp": 1756057783555,
+    "lastTootTimestamp": 1756103520719,
     "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
     "tags": [
       "Agile",
@@ -1457,7 +1457,9 @@
       "https://tschopp.net/users/Ted/statuses/115082321964788834",
       "https://tschopp.net/users/Ted/statuses/115083770213915174",
       "https://tschopp.net/users/Ted/statuses/115084736375485769",
-      "https://tschopp.net/users/Ted/statuses/115085002898157350"
+      "https://tschopp.net/users/Ted/statuses/115085002898157350",
+      "https://tschopp.net/users/Ted/statuses/115086845916689671",
+      "https://tschopp.net/users/Ted/statuses/115088000325517903"
     ],
     "url": "https://tedt.org/prompts/business-case-and-requirements-assistant/"
   },
@@ -1708,9 +1710,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115086845916689671"
+      "https://tschopp.net/users/Ted/statuses/115089449049635489"
     ],
-    "lastTootTimestamp": 1756085905831
+    "lastTootTimestamp": 1756125626492
   },
   "https://tedt.org/The-Mentor-In-The-Machine/": {
     "id": "/The-Mentor-In-The-Machine/",
