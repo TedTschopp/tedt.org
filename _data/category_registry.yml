@@ -393,6 +393,7 @@ personal-writing:
     titleHoverColorLight: "#a78bfa"
     titleHoverColorDark: "#f43f5e"
     titleWeight: 500
+    titleSize: 2rem
   category_home_page: /category/Personal Writing/
   hide_from_carousel: false
   hide_from_category_list: false

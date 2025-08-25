@@ -97,9 +97,10 @@
                   {%- assign __blog_entry = site.data.category_registry[__blog_slug] -%}
                   {%- if __blog_entry and __blog_entry.category_home_page -%}
                     <h2 class="card-title cat-dynamic-title" id="blog"
-                        {% if __blog_entry.palette.titleWeight or __blog_entry.palette.titleColorLight or __blog_entry.palette.titleColorDark or __blog_entry.palette.titleHoverColorLight or __blog_entry.palette.titleHoverColorDark %}
+                        {% if __blog_entry.palette.titleWeight or __blog_entry.palette.titleColorLight or __blog_entry.palette.titleColorDark or __blog_entry.palette.titleHoverColorLight or __blog_entry.palette.titleHoverColorDark or __blog_entry.palette.titleSize %}
                         style="
                           {% if __blog_entry.palette.titleWeight %}font-weight: {{ __blog_entry.palette.titleWeight }} !important;{% endif %}
+                          {% if __blog_entry.palette.titleSize %}font-size: {{ __blog_entry.palette.titleSize }};{% endif %}
                           {% if __blog_entry.palette.titleColorLight %}--cat-title-color-light: {{ __blog_entry.palette.titleColorLight }};{% endif %}
                           {% if __blog_entry.palette.titleColorDark %}--cat-title-color-dark: {{ __blog_entry.palette.titleColorDark }};{% endif %}
                           {% if __blog_entry.palette.titleHoverColorLight %}--cat-title-hover-color-light: {{ __blog_entry.palette.titleHoverColorLight }};{% endif %}
@@ -109,9 +110,10 @@
                     </h2>
                   {%- else -%}
                     <h2 class="card-title cat-dynamic-title" id="blog"
-                        {% if __blog_entry and (__blog_entry.palette.titleWeight or __blog_entry.palette.titleColorLight or __blog_entry.palette.titleColorDark or __blog_entry.palette.titleHoverColorLight or __blog_entry.palette.titleHoverColorDark) %}
+                        {% if __blog_entry and (__blog_entry.palette.titleWeight or __blog_entry.palette.titleColorLight or __blog_entry.palette.titleColorDark or __blog_entry.palette.titleHoverColorLight or __blog_entry.palette.titleHoverColorDark or __blog_entry.palette.titleSize) %}
                         style="
                           {% if __blog_entry.palette.titleWeight %}font-weight: {{ __blog_entry.palette.titleWeight }} !important;{% endif %}
+                          {% if __blog_entry.palette.titleSize %}font-size: {{ __blog_entry.palette.titleSize }};{% endif %}
                           {% if __blog_entry.palette.titleColorLight %}--cat-title-color-light: {{ __blog_entry.palette.titleColorLight }};{% endif %}
                           {% if __blog_entry.palette.titleColorDark %}--cat-title-color-dark: {{ __blog_entry.palette.titleColorDark }};{% endif %}
                           {% if __blog_entry.palette.titleHoverColorLight %}--cat-title-hover-color-light: {{ __blog_entry.palette.titleHoverColorLight }};{% endif %}
@@ -217,9 +219,10 @@
                   {%- assign __folklore_entry = site.data.category_registry[__folklore_slug] -%}
                   {%- if __folklore_entry and __folklore_entry.category_home_page -%}
                     <h2 class="card-title cat-dynamic-title" id="folklore"
-                        {% if __folklore_entry.palette.titleWeight or __folklore_entry.palette.titleColorLight or __folklore_entry.palette.titleColorDark or __folklore_entry.palette.titleHoverColorLight or __folklore_entry.palette.titleHoverColorDark %}
+                        {% if __folklore_entry.palette.titleWeight or __folklore_entry.palette.titleColorLight or __folklore_entry.palette.titleColorDark or __folklore_entry.palette.titleHoverColorLight or __folklore_entry.palette.titleHoverColorDark or __folklore_entry.palette.titleSize %}
                         style="
                           {% if __folklore_entry.palette.titleWeight %}font-weight: {{ __folklore_entry.palette.titleWeight }} !important;{% endif %}
+                          {% if __folklore_entry.palette.titleSize %}font-size: {{ __folklore_entry.palette.titleSize }};{% endif %}
                           {% if __folklore_entry.palette.titleColorLight %}--cat-title-color-light: {{ __folklore_entry.palette.titleColorLight }};{% endif %}
                           {% if __folklore_entry.palette.titleColorDark %}--cat-title-color-dark: {{ __folklore_entry.palette.titleColorDark }};{% endif %}
                           {% if __folklore_entry.palette.titleHoverColorLight %}--cat-title-hover-color-light: {{ __folklore_entry.palette.titleHoverColorLight }};{% endif %}
@@ -229,9 +232,10 @@
                     </h2>
                   {%- else -%}
                     <h2 class="card-title cat-dynamic-title" id="folklore"
-                        {% if __folklore_entry and (__folklore_entry.palette.titleWeight or __folklore_entry.palette.titleColorLight or __folklore_entry.palette.titleColorDark or __folklore_entry.palette.titleHoverColorLight or __folklore_entry.palette.titleHoverColorDark) %}
+                        {% if __folklore_entry and (__folklore_entry.palette.titleWeight or __folklore_entry.palette.titleColorLight or __folklore_entry.palette.titleColorDark or __folklore_entry.palette.titleHoverColorLight or __folklore_entry.palette.titleHoverColorDark or __folklore_entry.palette.titleSize) %}
                         style="
                           {% if __folklore_entry.palette.titleWeight %}font-weight: {{ __folklore_entry.palette.titleWeight }} !important;{% endif %}
+                          {% if __folklore_entry.palette.titleSize %}font-size: {{ __folklore_entry.palette.titleSize }};{% endif %}
                           {% if __folklore_entry.palette.titleColorLight %}--cat-title-color-light: {{ __folklore_entry.palette.titleColorLight }};{% endif %}
                           {% if __folklore_entry.palette.titleColorDark %}--cat-title-color-dark: {{ __folklore_entry.palette.titleColorDark }};{% endif %}
                           {% if __folklore_entry.palette.titleHoverColorLight %}--cat-title-hover-color-light: {{ __folklore_entry.palette.titleHoverColorLight }};{% endif %}
