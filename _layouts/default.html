@@ -28,8 +28,16 @@
     <!-- END OF CSS INCLUDE -->
     <style>
       /* Dynamic category title colors */
-      [data-bs-theme="light"] .cat-dynamic-title { color: var(--cat-title-color-light, var(--cat-title-color-dark, inherit)); }
-      [data-bs-theme="dark"] .cat-dynamic-title { color: var(--cat-title-color-dark, var(--cat-title-color-light, inherit)); }
+      [data-bs-theme="light"] .cat-dynamic-title,
+      [data-bs-theme="light"] .cat-dynamic-title a,
+      [data-bs-theme="light"] .cat-dynamic-title a:visited {
+        color: var(--cat-title-color-light, var(--cat-title-color-dark, inherit));
+      }
+      [data-bs-theme="dark"] .cat-dynamic-title,
+      [data-bs-theme="dark"] .cat-dynamic-title a,
+      [data-bs-theme="dark"] .cat-dynamic-title a:visited {
+        color: var(--cat-title-color-dark, var(--cat-title-color-light, inherit));
+      }
       [data-bs-theme="light"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-light, var(--cat-title-color-light, inherit)); }
       [data-bs-theme="dark"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-dark, var(--cat-title-color-dark, inherit)); }
     </style>
