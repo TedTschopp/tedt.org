@@ -1,4 +1,4 @@
-.PHONY: build normalize validate_mastodon feed_check legacy_check length_report proofer qa all clean
+.PHONY: build normalize validate_mastodon feed_check legacy_check length_report feed_diff proofer qa all clean
 
 build:
 	bundle exec jekyll build --quiet
@@ -18,10 +18,13 @@ legacy_check:
 length_report:
 	ruby tests/report_mastodon_feed_lengths.rb
 
+feed_diff:
+	ruby tests/diff_feeds.rb
+
 proofer:
 	bundle exec htmlproofer ./_site --check-html --allow-missing-href $(if $(SKIP_EXTERNAL),--disable-external,)
 
-qa: normalize build legacy_check feed_check validate_mastodon length_report
+qa: normalize build legacy_check feed_check validate_mastodon length_report feed_diff
 
 all: qa proofer
 
