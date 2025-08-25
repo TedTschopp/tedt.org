@@ -184,7 +184,7 @@ folklore:
     end: "#f59e0b"
     fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
     titleStyle: italic
-    titleWeight: 600
+    titleWeight: 500
   category_home_page: /category/Folklore/
   hide_from_carousel: false
   hide_from_category_list: false
