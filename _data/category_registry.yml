@@ -428,3 +428,20 @@ draft:
   category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true
+
+blog:
+  title: Blog
+  raw_names: [ "Blog" ]
+  class: Blog
+  emoji: "📰"
+  subtitle: "Exploring the Intersection of Tech, Theology, and Imagination"
+  description: "This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling."
+  image: /img/home/blog.webp
+  palette:
+    start: "#0ea5e9"
+    end: "#6366f1"
+    fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
+    titleStyle: italic
+  category_home_page: /category/Blog/
+  hide_from_carousel: false
+  hide_from_category_list: false
