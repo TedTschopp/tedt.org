@@ -151,6 +151,11 @@ h2 .category-title,
   background:linear-gradient(90deg,var(--theme-accent-start),var(--theme-accent-end));
   box-shadow:0 4px 24px rgba(167,139,250,.35);
 }
+/* Suppress underline when explicitly requested */
+.category-theme.no-underline::after,
+.no-category-underline .category-theme::after{
+  display:none !important;
+}
 
 /* Fallback underline only if NOT already wrapped in .category-theme */
 h2 .category-title:not(.wrapped-by-theme)::after,

@@ -67,6 +67,6 @@
   {% assign element = include.as | default: 'span' %}
 {% endif %}
 {% assign inline_style = entry.inline_style %}
-<span class="category-theme" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}">
+<span class="category-theme{% if include.wrapper_class_extra %} {{ include.wrapper_class_extra }}{% endif %}" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}">
   <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class_to_add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{{ label_text }}</{{element}}>
 </span>{% if include.debug %}<!-- raw:'{{raw_category}}' canonical:'{{__canonical}}' class:'{{class_to_add}}' text:'{{label_text}}' style:'{{inline_style}}' legacy:'{{use_legacy}}' -->{% endif %}
