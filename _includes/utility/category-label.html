@@ -46,11 +46,20 @@
 {% endif %}
 {% assign entry = registry[__canonical] %}
 {% assign label_text = include.text_override | default: entry.label | default: entry.title | default: raw_category %}
-{% assign class_to_add = entry.class | default: __canonical %}
+{%- comment -%} Optional: disable legacy CSS class (which may impose fixed colors) for full registry variable control {%- endcomment -%}
+{% assign use_legacy = include.legacy_class | default: 'true' %}
+{% if use_legacy == true or use_legacy == 'true' %}
+  {% assign base_class = entry.class | default: __canonical %}
+{% else %}
+  {% assign base_class = '' %}
+{% endif %}
+{% assign class_to_add = base_class %}
 {%- if include.kind == 'title' -%}
-  {% assign class_to_add = class_to_add | append: ' category-title' %}
+  {% if class_to_add != '' %}{% assign class_to_add = class_to_add | append: ' ' %}{% endif %}
+  {% assign class_to_add = class_to_add | append: 'category-title' %}
 {%- elsif include.kind == 'badge' -%}
-  {% assign class_to_add = class_to_add | append: ' category-badge' %}
+  {% if class_to_add != '' %}{% assign class_to_add = class_to_add | append: ' ' %}{% endif %}
+  {% assign class_to_add = class_to_add | append: 'category-badge' %}
 {%- endif -%}
 {% if include.href and include.href != '' %}
   {% assign element = 'a' %}
@@ -60,4 +69,4 @@
 {% assign inline_style = entry.inline_style %}
 <span class="category-theme" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}">
   <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class_to_add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{{ label_text }}</{{element}}>
-</span>{% if include.debug %}<!-- raw:'{{raw_category}}' canonical:'{{__canonical}}' class:'{{class_to_add}}' text:'{{label_text}}' style:'{{inline_style}}' -->{% endif %}
+</span>{% if include.debug %}<!-- raw:'{{raw_category}}' canonical:'{{__canonical}}' class:'{{class_to_add}}' text:'{{label_text}}' style:'{{inline_style}}' legacy:'{{use_legacy}}' -->{% endif %}

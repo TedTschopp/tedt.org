@@ -2,6 +2,7 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
+  <title>{{ page.title | escape }} – {{ site.title }}</title>
 
     {% include utility/calculate-variables.html %}
 
@@ -54,14 +55,19 @@
                     {% else %}
                       {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
                     {% endif %}
-                    <h1 class="p-name">Category: {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' %}</h1>
+                    <h1 class="p-name">Category: {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' legacy_class=false %}</h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}
                     {% assign category = page.category | downcase | slugify %}
-                    {% assign image = category | append: ".webp" %}
-          <figure>
-            <img class="img-responsive img-thumbnail category-theme" data-cat="{{ page.category | slugify }}" src="{{ site.url }}/img/categories/{{ image }}" alt="{{page.category}}">
+                    {% assign registry_entry = site.data.category_registry[category] %}
+                    {% if registry_entry and registry_entry.image %}
+                      {% assign image_path = registry_entry.image %}
+                    {% else %}
+                      {% assign image_path = '/img/categories/' | append: category | append: '.webp' %}
+                    {% endif %}
+          <figure class="category-theme" data-category="{{ page.category }}" data-cat="{{ category }}">
+            <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ image_path }}" alt="{{ registry_entry.title | default: page.category }}">
           </figure>
                     <!-- Calculate the pages description if one isn't present -->
                     {% if page.description == null or page.description == empty %}
@@ -180,8 +186,7 @@
 
                                 </div>
                               </div>
-          </li>
-        {%- endfor -%}</ol>                    
+          </li>{%- endfor -%}</ol>                    
                       </span>
 
                 </main>
@@ -201,45 +206,7 @@
                 <div class="well">
                     <div class="post-categories">
                         <h4>All Categories</h4>
-                        <ul class="list-unstyled" aria-label="All site categories">{%- capture _cat_list_sidebar -%}{% include utility/category-slugs.html filter='category_list' %}{%- endcapture -%}
-                          {%- assign _cat_slugs = _cat_list_sidebar | split: ',' | sort -%}
-                          {%- if _cat_list_sidebar and _cat_list_sidebar != '' and _cat_slugs.size > 0 and _cat_slugs[0] != '' -%}
-                            {%- for slug in _cat_slugs -%}
-                              {%- assign reg_entry = site.data.category_registry[slug] -%}
-                              {%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}
-                              {%- assign klass = reg_entry.class | default: slug -%}
-                              {%- assign inline_style = reg_entry.inline_style -%}
-                              {%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}
-                              <li>
-                                {%- if reg_entry and reg_entry.category_home_page -%}
-                                  {%- assign _href = reg_entry.category_home_page -%}
-                                {%- else -%}
-                                  {%- assign _href = '/category/' | append: slug | append: '/' -%}
-                                {%- endif -%}
-                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
-                              </li>
-                            {%- endfor -%}
-                          {%- else -%}
-                            {%- comment -%} Fallback: iterate registry directly if include produced nothing {%- endcomment -%}
-                            {%- for pair in site.data.category_registry -%}
-                              {%- assign slug = pair[0] -%}
-                              {%- assign reg_entry = pair[1] -%}
-                              {%- if reg_entry.hide_from_category_list -%}{%- continue -%}{%- endif -%}
-                              {%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}
-                              {%- assign klass = reg_entry.class | default: slug -%}
-                              {%- assign inline_style = reg_entry.inline_style -%}
-                              {%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}
-                              <li>
-                                {%- if reg_entry.category_home_page -%}
-                                  {%- assign _href = reg_entry.category_home_page -%}
-                                {%- else -%}
-                                  {%- assign _href = '/category/' | append: slug | append: '/' -%}
-                                {%- endif -%}
-                                <a class="{{ klass }} text-decoration-none" href="{{ site.url }}{{ _href }}" aria-label="{{ label }} category with {{ posts_arr.size | default: 0 }} posts"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{% include utility/category-emoji.html category=label %} <span class="category-label">{{ label }}</span> <span class="visually-hidden">posts:</span> ({{ posts_arr.size | default: 0 }})</a>
-                              </li>
-                            {%- endfor -%}
-                          {%- endif -%}
-                        </ul>
+                        <ul class="list-unstyled" aria-label="All site categories">{%- for pair in site.data.category_registry -%}{%- assign slug = pair[0] -%}{%- assign reg_entry = pair[1] -%}{%- if reg_entry.hide_from_category_list -%}{%- continue -%}{%- endif -%}{%- assign label = reg_entry.label | default: reg_entry.title | default: slug -%}{%- assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] -%}{%- if reg_entry.category_home_page -%}{%- assign _href = reg_entry.category_home_page -%}{%- else -%}{%- assign _href = '/category/' | append: slug | append: '/' -%}{%- endif -%}<li>{% include utility/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none' %} <span class="text-muted small">({{ posts_arr.size | default: 0 }})</span></li>{%- endfor -%}</ul>
 
                       </div>
                 </div>

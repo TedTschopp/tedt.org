@@ -152,9 +152,9 @@ h2 .category-title,
   box-shadow:0 4px 24px rgba(167,139,250,.35);
 }
 
-/* Fallback: titles without wrapper keep original inline underline width */
-h2 .category-title::after,
-.h2 .category-title::after{
+/* Fallback underline only if NOT already wrapped in .category-theme */
+h2 .category-title:not(.wrapped-by-theme)::after,
+.h2 .category-title:not(.wrapped-by-theme)::after{
   content:"";
   display:block;
   height:.35rem;
