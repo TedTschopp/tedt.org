@@ -99,7 +99,7 @@ jobs:
           path: Logs/*.csv
       - name: Commit updates (only if live)
         if: github.event.inputs.dry_run == 'false'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "chore: backfill mastodon-post-id (batch)"
           file_pattern: cache/*.json _posts/**/*.md Logs/*.csv Logs/*.md _data/masto_backfill_history.json
