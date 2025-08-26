@@ -120,10 +120,9 @@ h2 .category-title,
   color:var(--theme-title-color);
   text-shadow:var(--theme-title-shadow);
   overflow-wrap:anywhere;
-  margin:0 0 .35rem;
+  margin:0; /* container will manage spacing */
   position:relative;
-  display:inline-block; /* ensure ::after underline spans width of title only */
-  white-space: nowrap;
+  display:inline; /* inline text; underline now attached to container */
 }
 @supports (text-wrap: balance){
   .category-theme .category-title,
@@ -133,8 +132,27 @@ h2 .category-title,
   }
 }
 
-/* Underline accent bar */
-.category-theme .category-title::after,
+/* Underline accent bar
+   - For wrapped titles: apply to the .category-theme wrapper so it spans full container width
+   - For legacy/unwrapped headings (h2 .category-title) keep existing text-width underline */
+
+/* Container wrapper gets full-width underline */
+.category-theme{
+  position:relative;
+  display:block;
+  padding-bottom:.85rem; /* space for underline + gap below text */
+}
+.category-theme::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:.35rem;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--theme-accent-start),var(--theme-accent-end));
+  box-shadow:0 4px 24px rgba(167,139,250,.35);
+}
+
+/* Fallback: titles without wrapper keep original inline underline width */
 h2 .category-title::after,
 .h2 .category-title::after{
   content:"";
