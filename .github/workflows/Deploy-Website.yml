@@ -30,7 +30,7 @@ jobs:
         with:
           ruby-version: '3.1' # Ensure Ruby version is 2.5 or newer
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
