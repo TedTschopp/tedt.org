@@ -108,8 +108,7 @@
 /* ---------- Title treatment (modern + legacy compat) ---------- */
 .category-theme .category-title,
 h2 .category-title,
-.h2 .category-title,
-.category-title.ai{
+.h2 .category-title{
   font-family:var(--theme-font-title);
   font-weight:var(--theme-title-weight,600);
   font-size:var(--theme-title-size);
@@ -157,17 +156,7 @@ h2 .category-title,
   display:none !important;
 }
 
-/* Fallback underline only if NOT already wrapped in .category-theme */
-h2 .category-title:not(.wrapped-by-theme)::after,
-.h2 .category-title:not(.wrapped-by-theme)::after{
-  content:"";
-  display:block;
-  height:.35rem;
-  margin-top:.5rem;
-  border-radius:999px;
-  background:linear-gradient(90deg,var(--theme-accent-start),var(--theme-accent-end));
-  box-shadow:0 4px 24px rgba(167,139,250,.35);
-}
+/* Removed legacy fallback underline to avoid double bars; only wrapper supplies underline now */
 
 /* Badges */
 .category-theme .category-badge,
@@ -203,19 +192,7 @@ h2 .category-title:not(.wrapped-by-theme)::after,
     /* respect explicit category shadow, else subtle lift */
     text-shadow:var(--theme-title-shadow, 0 1px 2px rgba(0,0,0,.55));
   }
-  .category-theme .category-title::after,
-  h2 .category-title::after,
-  .h2 .category-title::after{
-    background:linear-gradient(90deg,
-      var(--theme-accent-start) 0%,
-      var(--theme-accent-end) 70%,
-      rgba(255,255,255,.85) 140%
-    );
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.05),
-      0 4px 18px -2px color-mix(in srgb, var(--theme-accent-end) 55%, transparent),
-      0 0 12px -2px color-mix(in srgb, var(--theme-accent-start) 45%, transparent);
-  }
+  /* Underline styling handled by wrapper only (no duplicate element underline) */
   .category-theme .category-badge,
   .category-badge{
     color:var(--theme-text-dark);
