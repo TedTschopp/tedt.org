@@ -239,6 +239,19 @@ h2 .category-title,
   font-family:"Limelight","Times New Roman",Times,serif;
 }
 
+/* ================= NAV BAR OVERRIDES =================
+   Ensure category titles placed in the top nav (with wrapper class .nav-rpg-label)
+   do NOT use the large --theme-title-size scaling; inherit normal nav-link sizing. */
+.nav-rpg-label .category-title{
+  font-size:inherit !important; /* match surrounding .nav-link */
+  font-weight:inherit;          /* keep nav weight */
+  line-height:inherit;          /* align vertically */
+  font-family:inherit;          /* do not substitute category font here */
+  text-shadow:none;             /* prevent large display shadows in nav */
+}
+.navbar .nav-link .nav-rpg-label.category-theme{padding-bottom:0;}
+.navbar .nav-link .nav-rpg-label.category-theme::after{display:none !important;}
+
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
 [data-cat="monsters"] .category-title,
