@@ -264,7 +264,30 @@ h2 .category-title,
 /* Full-width badge variant used in All Categories sidebar */
 .full-width-badge.category-theme{display:block; padding-bottom:0;}
 .full-width-badge.category-theme::after{display:none !important;} /* ensure no underline */
-.full-width-badge .category-badge{display:block; width:100%; font-family:var(--theme-font-title, inherit); font-weight:var(--theme-title-weight,600); font-style:var(--theme-title-style,normal); text-transform:var(--theme-title-transform,uppercase); letter-spacing:.05em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.full-width-badge .category-badge{
+  display:block; width:100%;
+  font-family:var(--theme-font-title, inherit);
+  font-weight:var(--theme-title-weight,600);
+  font-style:var(--theme-title-style,normal);
+  text-transform:var(--theme-title-transform,uppercase);
+  letter-spacing:.05em;
+  font-size:1.5rem; line-height:1.2;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  /* Use registry-defined title colors */
+  color:var(--theme-title-color, var(--theme-title-color-light, inherit));
+}
+.full-width-badge .category-badge:hover{
+  color:var(--theme-title-hover-color, var(--theme-title-hover-color-light, var(--theme-title-color, inherit)));
+  text-shadow:var(--theme-title-hover-shadow, var(--theme-title-shadow));
+}
+@media (prefers-color-scheme: dark){
+  .full-width-badge .category-badge{
+    color:var(--theme-title-color-dark, var(--theme-title-color, var(--theme-title-color-light, inherit)));
+  }
+  .full-width-badge .category-badge:hover{
+    color:var(--theme-title-hover-color-dark, var(--theme-title-hover-color, var(--theme-title-color-dark, var(--theme-title-color))));
+  }
+}
 
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
