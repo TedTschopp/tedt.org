@@ -55,7 +55,15 @@
                     {% else %}
                       {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
                     {% endif %}
-                    <h1 class="p-name">Category: {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' legacy_class=false %}</h1>
+                    <h1 class="p-name">
+                      {% include utility/category-label.html 
+                          category=__cat_slug 
+                          href=__cat_href 
+                          kind='title' 
+                          class_extra='text-decoration-none' 
+                          wrapper_class_extra='category-page-head no-underline' 
+                          legacy_class=false %}
+                    </h1>
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}

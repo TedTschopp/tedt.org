@@ -289,6 +289,28 @@ h2 .category-title,
   }
 }
 
+/* Category page headline styling honoring registry colors */
+.category-page-head .category-title{
+  display:inline-block;
+  font-size:clamp(2.25rem,5vw,3.5rem);
+  line-height:1.1;
+  color:var(--theme-title-color-light, var(--theme-title-color, inherit));
+  text-shadow:var(--theme-title-shadow, none);
+  text-decoration:none;
+}
+.category-page-head .category-title:hover,.category-page-head .category-title:focus{
+  color:var(--theme-title-hover-color-light, var(--theme-title-hover-color, var(--theme-title-color-light, var(--theme-title-color))));
+  text-shadow:var(--theme-title-hover-shadow, var(--theme-title-shadow));
+}
+@media (prefers-color-scheme: dark){
+  .category-page-head .category-title{
+    color:var(--theme-title-color-dark, var(--theme-title-color, var(--theme-title-color-light, inherit)));
+  }
+  .category-page-head .category-title:hover,.category-page-head .category-title:focus{
+    color:var(--theme-title-hover-color-dark, var(--theme-title-hover-color, var(--theme-title-color-dark, var(--theme-title-color))));
+  }
+}
+
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
 [data-cat="monsters"] .category-title,
