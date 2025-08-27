@@ -116,12 +116,12 @@ h2 .category-title,
   text-transform:var(--theme-title-transform);
   line-height:1.1;
   letter-spacing:-0.01em;
-  color:var(--theme-title-color);
+  color:var(--theme-title-color, var(--theme-title-color-light, var(--theme-text-light)));
   text-shadow:var(--theme-title-shadow);
   overflow-wrap:anywhere;
-  margin:0; /* container will manage spacing */
+  margin:0;
   position:relative;
-  display:inline; /* inline text; underline now attached to container */
+  display:inline;
 }
 @supports (text-wrap: balance){
   .category-theme .category-title,
@@ -179,8 +179,8 @@ h2 .category-title,
 
 /* Hover escalation for title (lets legacy “hover glow” live on) */
 .category-theme a:hover .category-title{
-  color:var(--theme-title-hover-color);
-  text-shadow:var(--theme-title-hover-shadow);
+  color:var(--theme-title-hover-color, var(--theme-title-hover-color-light, var(--theme-title-color)));
+  text-shadow:var(--theme-title-hover-shadow, var(--theme-title-shadow));
 }
 
 /* ---------- Dark mode ---------- */
@@ -188,11 +188,14 @@ h2 .category-title,
   .category-theme .category-title,
   h2 .category-title,
   .h2 .category-title{
-    color:var(--theme-text-dark);
-    /* respect explicit category shadow, else subtle lift */
+    color:var(--theme-title-color-dark, var(--theme-title-color, var(--theme-text-dark)));
     text-shadow:var(--theme-title-shadow, 0 1px 2px rgba(0,0,0,.55));
   }
   /* Underline styling handled by wrapper only (no duplicate element underline) */
+  .category-theme a:hover .category-title{
+    color:var(--theme-title-hover-color-dark, var(--theme-title-hover-color, var(--theme-title-color-dark, var(--theme-title-color))));
+    text-shadow:var(--theme-title-hover-shadow, var(--theme-title-shadow));
+  }
   .category-theme .category-badge,
   .category-badge{
     color:var(--theme-text-dark);

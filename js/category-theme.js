@@ -154,15 +154,21 @@
                  el.style.setProperty("--theme-accent-start",       cfg.start);
                  el.style.setProperty("--theme-accent-end",         endColor);
 
-    if (cfg.fontTitle)         el.style.setProperty("--theme-font-title",         cfg.fontTitle);
-    if (cfg.titleSize)         el.style.setProperty("--theme-title-size",         cfg.titleSize);
-    if (cfg.titleStyle)        el.style.setProperty("--theme-title-style",        cfg.titleStyle);
-    if (cfg.titleTransform)    el.style.setProperty("--theme-title-transform",    cfg.titleTransform);
-  if (cfg.titleWeight)       el.style.setProperty("--theme-title-weight",       cfg.titleWeight);
-    if (cfg.titleColor)        el.style.setProperty("--theme-title-color",        cfg.titleColor);
-    if (cfg.titleShadow)       el.style.setProperty("--theme-title-shadow",       cfg.titleShadow);
-    if (cfg.titleHoverColor)   el.style.setProperty("--theme-title-hover-color",  cfg.titleHoverColor);
-    if (cfg.titleHoverShadow)  el.style.setProperty("--theme-title-hover-shadow", cfg.titleHoverShadow);
+  if (cfg.fontTitle)         el.style.setProperty("--theme-font-title",         cfg.fontTitle);
+  if (cfg.titleSize)         el.style.setProperty("--theme-title-size",         cfg.titleSize);
+  if (cfg.titleStyle)        el.style.setProperty("--theme-title-style",        cfg.titleStyle);
+  if (cfg.titleTransform)    el.style.setProperty("--theme-title-transform",    cfg.titleTransform);
+	if (cfg.titleWeight)       el.style.setProperty("--theme-title-weight",       cfg.titleWeight);
+  // Base color (legacy single value)
+  if (cfg.titleColor)        el.style.setProperty("--theme-title-color",        cfg.titleColor);
+  // Light / Dark variants
+  if (cfg.titleColorLight)   el.style.setProperty("--theme-title-color-light",  cfg.titleColorLight);
+  if (cfg.titleColorDark)    el.style.setProperty("--theme-title-color-dark",   cfg.titleColorDark);
+  if (cfg.titleHoverColor)        el.style.setProperty("--theme-title-hover-color",        cfg.titleHoverColor);
+  if (cfg.titleHoverColorLight)   el.style.setProperty("--theme-title-hover-color-light",  cfg.titleHoverColorLight);
+  if (cfg.titleHoverColorDark)    el.style.setProperty("--theme-title-hover-color-dark",   cfg.titleHoverColorDark);
+  if (cfg.titleShadow)       el.style.setProperty("--theme-title-shadow",       cfg.titleShadow);
+  if (cfg.titleHoverShadow)  el.style.setProperty("--theme-title-hover-shadow", cfg.titleHoverShadow);
 
     // Derive a badge border from end color for cohesion
     try {
