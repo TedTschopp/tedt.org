@@ -261,6 +261,11 @@ h2 .category-title,
 .navbar .dropdown-item{white-space:normal; line-height:1.25; padding-right:1rem;}
 .navbar .dropdown-item img{vertical-align:middle; margin-right:.25rem;}
 
+/* Full-width badge variant used in All Categories sidebar */
+.full-width-badge.category-theme{display:block; padding-bottom:0;}
+.full-width-badge.category-theme::after{display:none !important;} /* ensure no underline */
+.full-width-badge .category-badge{display:block; width:100%; font-family:var(--theme-font-title, inherit); font-weight:var(--theme-title-weight,600); font-style:var(--theme-title-style,normal); text-transform:var(--theme-title-transform,uppercase); letter-spacing:.05em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
 [data-cat="monsters"] .category-title,
