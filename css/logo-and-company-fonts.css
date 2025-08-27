@@ -253,6 +253,10 @@ h2 .category-title,
 .navbar .nav-link .nav-rpg-label.category-theme::after{display:none !important;}
 /* Make nav RPG labels flow inline on one line */
 .navbar .nav-link .nav-rpg-label.category-theme{display:inline-block;}
+/* Dropdown containment tweaks */
+.navbar .dropdown-menu{max-width:420px; width:max-content; overflow-wrap:break-word; white-space:normal;}
+.navbar .dropdown-item{white-space:normal; line-height:1.25; padding-right:1rem;}
+.navbar .dropdown-item img{vertical-align:middle; margin-right:.25rem;}
 
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
