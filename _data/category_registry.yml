@@ -256,7 +256,7 @@ gurps:
   raw_names: [ "GURPS", "Gurps" ]
   class: GURPS
   emoji: "🛡️"
-  subtitle: "Generic Universal RolePlaying System"
+  subtitle: "Generic Universal Role Playing System"
   description: "Explorations, adventures, and guides using the versatile GURPS system. Learn how to create dynamic and flexible campaigns that can fit any setting."
   image: /img/categories/gurps.webp
   palette:

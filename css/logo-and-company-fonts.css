@@ -251,6 +251,8 @@ h2 .category-title,
 }
 .navbar .nav-link .nav-rpg-label.category-theme{padding-bottom:0;}
 .navbar .nav-link .nav-rpg-label.category-theme::after{display:none !important;}
+/* Make nav RPG labels flow inline on one line */
+.navbar .nav-link .nav-rpg-label.category-theme{display:inline-block;}
 
 /* Bestiary + Monsters share 'Bestiary' face */
 [data-cat="bestiary"] .category-title,
