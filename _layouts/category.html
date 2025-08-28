@@ -91,8 +91,23 @@
                     <p>{{ SEO-description }}</p>
 
                     <span class="e-content" id="main_content">
+                      {% assign primary_category = page.category %}
+                      {% assign posts_arr = site.categories[primary_category] %}
+                      {% if (posts_arr == nil or posts_arr == empty) and registry_entry %}
+                        {% if registry_entry.title and (posts_arr == nil or posts_arr == empty) %}
+                          {% assign posts_arr = site.categories[registry_entry.title] | default: posts_arr %}
+                        {% endif %}
+                        {% if (posts_arr == nil or posts_arr == empty) and registry_entry.raw_names %}
+                          {% for variant in registry_entry.raw_names %}
+                            {% if site.categories[variant] and site.categories[variant] != empty %}
+                              {% assign posts_arr = site.categories[variant] %}
+                              {% break %}
+                            {% endif %}
+                          {% endfor %}
+                        {% endif %}
+                      {% endif %}
                       <ol class="list-unstyled" aria-label="Posts in category {{ page.category }}">
-                        {% for post in site.categories[page.category] %}
+                        {% for post in posts_arr %}
                         <li class="list-item-custom">
                               <div class="container">
                                 <div class="row align-items-stretch">
@@ -224,6 +239,14 @@
                             {% if reg_entry.hide_from_category_list %}{% continue %}{% endif %}
                             {% assign label = reg_entry.label | default: reg_entry.title | default: slug %}
                             {% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}
+                            {% if (posts_arr == nil or posts_arr == empty) and reg_entry.raw_names %}
+                              {% for variant in reg_entry.raw_names %}
+                                {% if site.categories[variant] and site.categories[variant] != empty %}
+                                  {% assign posts_arr = site.categories[variant] %}
+                                  {% break %}
+                                {% endif %}
+                              {% endfor %}
+                            {% endif %}
                             {% assign count = posts_arr.size | default: 0 %}
                             {% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}
                             {% if reg_entry.category_home_page %}
