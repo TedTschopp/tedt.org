@@ -1,4 +1,87 @@
-# **From Industrial-Age Utility to AI-Centric Utility**
+---
+layout: post
+title: "From Industrial-Age Utility to AI-Centric Utility"
+subtitle: "A White Paper on Platform Strategy, Data Flow, and Workforce Design for the Next Five Years"
+quote: "Treat data like a grid asset; standardize on opinionated platforms; design our workforce for the AI era."
+excerpt: "A pragmatic five-year strategy to move a century-old utility from paper-era workflows to AI‑centric operations: standardized platforms, an edge‑to‑cloud data fabric with preserved context, and a Mechanics & Drivers operating model anchored by measurable Time‑to‑Exit and edge‑to‑decision latency."
+source: "Original Content"
+source-url: ""
+call-to-action: "Adopt the Platform Tenets and baseline edge→decision latency across your top 20 systems this quarter."
+date: 2025-08-28
+update: 2025-08-28
+author:
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+
+bullets:
+  - "Data, not paper, must carry the work; make edge→decision latency a first‑class reliability metric."
+  - "Consolidate to primary + secondary ecosystems; enforce Time‑to‑Exit (TTE) ≤ 18 months."
+  - "Preserve context in an edge‑to‑cloud data fabric; standardize CI/CD, identity, and observability."
+  - "Shift to a Mechanics (specialists) & Drivers (business) model, augmented by AI copilots."
+  - "Govern via opinionated platform tenets, policy‑as‑code, and capability‑based contracts."
+
+description: "White paper for utility leaders on consolidating platforms, building an edge‑to‑cloud data fabric with preserved context, and redesigning the workforce for AI—measured by edge→decision latency, TTE, reliability, compliance velocity, and customer outcomes."
+
+seo-description: "AI‑centric utility strategy: opinionated platforms, edge‑to‑cloud data fabric, Mechanics & Drivers model, and TTE ≤ 18 months to cut latency, risk, and handoffs."
+
+categories:
+  - "AI"
+  - "Computers"
+  - "Opinion"
+  - "Science"
+
+tags:
+  - "enterprise-architecture"
+  - "platform-engineering"
+  - "data-fabric"
+  - "hyperscalers"
+  - "time-to-exit"
+  - "edge-to-decision-latency"
+  - "grid-reliability"
+  - "wildfire-resilience"
+  - "regulatory-compliance"
+  - "customer-experience"
+  - "mechanics-and-drivers"
+  - "policy-as-code"
+  - "finops"
+  - "arb"
+  - "zero-trust"
+
+keywords:
+  - "AI"
+  - "utility strategy"
+  - "platform strategy"
+  - "data fabric"
+  - "hyperscaler consolidation"
+  - "time to exit"
+  - "TTE"
+  - "edge to decision latency"
+  - "enterprise architecture"
+  - "grid reliability"
+  - "wildfire resilience"
+  - "regulatory compliance"
+
+location:
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+image: "img/2025-08/Transmission-and-Data.webp"
+image-alt: "Transmission towers with a digital data overlay representing edge‑to‑cloud flow and context preservation."
+image-artist: "Ted Tschopp"
+image-artist-URL: https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: https://tedt.org/"
+image-credits-title: "From Industrial-Age Utility to AI-Centric Utility"
+image-description: "A visual metaphor for transforming a traditional utility into an AI‑centric enterprise: electrons and data moving end‑to‑end with minimal latency."
+image-title: "From Industrial-Age Utility to AI-Centric Utility"
+image_width: 1456 
+image_height:  566
+mastodon-post-id: ""
+---
 
 ### A White Paper on Platform Strategy, Data Flow, and Workforce Design for the Next Five Years
 
@@ -209,4 +292,4 @@ To support the clean energy transition and a safer, more reliable, more customer
 > * “We should have multiple relationships… not for the reasons we do it today… but to provide executives with optionality… ‘It’s only going to take us **18 months** and we can get off you and move.’”
 > * “I’m personally of the opinion that we’re nearing the end of the information technology transformation… AI is kind of the final piece… It’s going to be one giant data blob in the cloud.”
 > * “We’re not an IT company… we’re in the business of shipping electrons for a fair and equitable price… that’s what we need to focus on.”
-> “There are certain aspects of IT that are the mechanic… and others like the driver… at some point we’re just going to expect everybody in the company to know how to do it… software development and testing are probably in the business; infrastructure, operating systems, and high‑end data remain specialist.”
+>   “There are certain aspects of IT that are the mechanic… and others like the driver… at some point we’re just going to expect everybody in the company to know how to do it… software development and testing are probably in the business; infrastructure, operating systems, and high‑end data remain specialist.”
