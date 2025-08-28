@@ -136,7 +136,7 @@ Two structural changes now favor standardization:
 
 1. **AI‑assisted code and platform translation.** Modern AI can translate between languages and frameworks (“nibbling the elephant”), reducing switching costs and enabling **rapid retraining** of talent. This blunts the “we prefer X” argument.
 
-2. **Hyperscaler standardization.** Operating models, identity, observability, networking, and data services are now sufficiently mature and repeatable to run **disciplined, opinionated platforms** at scale.  The only differentuation between hyperscalers these days is their AI offerings, not the rest of the stack.
+2. **Hyperscaler standardization.** Operating models, identity, observability, networking, and data services are now sufficiently mature and repeatable to run **disciplined, opinionated platforms** at scale.  The only differentiation between hyperscalers these days is their AI offerings, not the rest of the stack.
 
 **Strategic conclusion:** Consolidate onto **one primary** and **one secondary** ecosystem to deepen expertise, reduce variance, and preserve negotiating leverage.
 
