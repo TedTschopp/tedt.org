@@ -443,6 +443,42 @@
       "https://tschopp.net/users/Ted/statuses/115017680931535411"
     ]
   },
+  "/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "content_text": "A pragmatic five-year strategy to move a century-old utility from paper-era workflows to AI‑centric operations: standardized platforms, an edge‑to‑cloud data fabric with preserved context, and a Mechanics & Drivers operating model anchored by measurable Time‑to‑Exit and edge‑to‑decision latency. https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
+    "date_modified": "2025-08-28T00:00:00-07:00",
+    "date_published": "2025-08-28T00:00:00-07:00",
+    "id": "/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
+    "image": "https://tedt.org/img/2025-08/Transmission-and-Data.webp",
+    "lastTootTimestamp": 1756430659303,
+    "summary": "A pragmatic five-year strategy to move a century-old utility from paper-era workflows to AI‑centric operations: standardized platforms, an edge‑to‑cloud data fabric with preserved context, and a Mechanics & Drivers operating model anchored by measurable Time‑to‑Exit and edge‑to‑decision latency.",
+    "tags": [
+      "enterprise-architecture",
+      "platform-engineering",
+      "data-fabric",
+      "hyperscalers",
+      "time-to-exit",
+      "edge-to-decision-latency",
+      "grid-reliability",
+      "wildfire-resilience",
+      "regulatory-compliance",
+      "customer-experience",
+      "mechanics-and-drivers",
+      "policy-as-code",
+      "finops",
+      "arb",
+      "zero-trust"
+    ],
+    "title": "From Industrial-Age Utility to AI-Centric Utility",
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115109439680455489"
+    ],
+    "url": "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/"
+  },
   "/Gamma-World-Terrain/": {
     "id": "/Gamma-World-Terrain/",
     "lastTootTimestamp": 1755014718788,
@@ -1740,9 +1776,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115109439680455489"
+      "https://tschopp.net/users/Ted/statuses/115110636106983273"
     ],
-    "lastTootTimestamp": 1756430659303
+    "lastTootTimestamp": 1756448915289
   },
   "https://tedt.org/prompts/business-case-and-requirements-assistant/": {
     "id": "/prompts/business-case-and-requirements-assistant/",
