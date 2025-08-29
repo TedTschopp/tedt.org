@@ -319,6 +319,9 @@ h2 .category-title,
   font-family:"Bestiary",sans-serif;
 }
 
+/* NAVBAR HEIGHT REDUCTION: remove vertical margins added by utility classes */
+.navbar .nav-link { margin-top: 0 !important; margin-bottom: 0 !important; }
+
 /* Draft */
 [data-cat="draft"] .category-title,
 .Draft-Post,
