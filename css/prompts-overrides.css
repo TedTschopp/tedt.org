@@ -46,6 +46,12 @@
   overflow-x: auto;
 }
 
+/* Remove top border radius from the prompt content section so it aligns flush with header */
+.prompt-content-section {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
 /* General safety: media scale to container */
 img,
 video {
