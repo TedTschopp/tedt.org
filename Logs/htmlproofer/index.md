@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-30T22:20:02Z
+Last update: 2025-08-30T22:41:49Z
 \n## Latest Summary (tail 50 lines)\n
 ^ (line 573)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 997)
@@ -15,9 +15,9 @@ Last update: 2025-08-30T22:20:02Z
   *  1480:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1480)
-  *  4942:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5020:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4942)
+        ^ (line 5020)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -52,6 +52,7 @@ Last update: 2025-08-30T22:20:02Z
 
 HTML-Proofer found 3617 failures!
 \n## Available Historical Logs\n
+- 2025-08-30T22-38-22-HTML Logging.txt
 - 2025-08-30T22-16-59-HTML Logging.txt
 - 2025-08-28T21-51-26-HTML Logging.txt
 - 2025-08-27T04-49-48-HTML Logging.txt
