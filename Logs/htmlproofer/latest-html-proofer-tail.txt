@@ -1,34 +1,34 @@
-  *  1626:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1695:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1626)
+        ^ (line 1695)
 - ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
   *  1464:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1464)
-  *  1648:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1717:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1648)
+        ^ (line 1717)
 - ./_site/prompts/ai-tutoring-prompt-designer/index.html
   *  1469:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1469)
-  *  1659:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1728:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1659)
+        ^ (line 1728)
 - ./_site/prompts/artistic-Analysis/index.html
   *  1464:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1464)
-  *  1764:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1833:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1764)
+        ^ (line 1833)
 - ./_site/prompts/business-case-and-requirements-assistant/index.html
   *  1466:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1466)
-  *  2572:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  2641:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 2572)
+        ^ (line 2641)
 - ./_site/prompts/index.html
   *  573:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
@@ -37,30 +37,30 @@
   *  1464:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1464)
-  *  1714:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1783:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1714)
+        ^ (line 1783)
 - ./_site/prompts/midjourney-v6.1-prompt-template/index.html
   *  1465:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1465)
-  *  1823:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1892:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1823)
+        ^ (line 1892)
 - ./_site/prompts/midjourney-v7-prompt-template/index.html
   *  1464:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1464)
-  *  1688:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1757:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1688)
+        ^ (line 1757)
 - ./_site/prompts/social-media-repurposing-template/index.html
   *  1464:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1464)
-  *  1888:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  1957:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 1888)
+        ^ (line 1957)
 - ./_site/putting-first-things-first/index.html
   *  3016:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
@@ -90,9 +90,9 @@
   *  1454:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1454)
-  *  4494:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  4572:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4494)
+        ^ (line 4572)
 - ./_site/step-1-reply-by-chat/index.html
   *  2952:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -162,9 +162,9 @@
   *  1480:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1480)
-  *  4942:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5020:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4942)
+        ^ (line 5020)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
