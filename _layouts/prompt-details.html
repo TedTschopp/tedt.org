@@ -261,7 +261,7 @@
                     <div class="card-body p-0 prompt-content-section" markdown="0">
                         <!-- Original prompt (hidden when variables are customized) -->
                         <pre id="original-prompt" 
-                             class="bg-dark text-white rounded p-3" 
+                             class="bg-dark text-white p-3" 
                              style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word;"
                              role="region"
                              aria-label="Original prompt content"
@@ -269,7 +269,7 @@
                         
                         <!-- Customized prompt (shown when variables are filled) -->
                         <pre id="customized-prompt" 
-                             class="bg-dark text-white rounded p-3" 
+                             class="bg-dark text-white p-3" 
                              style="margin-bottom: 0px; white-space: pre-wrap; word-break: break-word; display: none;"
                              role="region"
                              aria-label="Customized prompt content with your variables"
@@ -277,6 +277,97 @@
                         
                         <!-- Status region for screen readers -->
                         <div class="visually-hidden" id="form-status" role="status" aria-live="polite"></div>
+                    </div>
+                    <!-- Duplicate Prompt Toolbar (Bottom) -->
+                    <div class="prompt-toolbar card-header d-flex w-100 justify-content-between flex-wrap gap-3 ps-3 pe-3 py-2 mt-0">
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <span class="prompt-label">Prompt</span>
+                            {% if page.variables and page.variables.size > 0 %}
+                            <button class="btn btn-secondary btn-sm" 
+                                    type="button" 
+                                    id="toggle-variables-btn-bottom"
+                                    aria-expanded="false"
+                                    aria-controls="prompt-variables-card"
+                                    aria-label="Show customization options for prompt variables (bottom toolbar)">
+                                <i class="fas fa-sliders-h" aria-hidden="true"></i> Customize
+                            </button>
+                            {% endif %}
+                        </div>
+                        <div class="d-flex align-items-center gap-2 prompt-control-buttons flex-wrap" role="group" aria-label="Download or Copy Prompt (bottom toolbar)">
+                            <a href="#" id="download-prompt-link-bottom-toolbar"
+                                class="btn btn-primary btn-sm" download="{{ page.title | slugify }}.txt">
+                                <i class="fas fa-download"></i> <span class="d-none d-sm-inline">Download Prompt</span>
+                            </a>
+                            <button class="btn btn-primary btn-copy-prompt btn-sm" 
+                                type="button" 
+                                data-bs-original-title="Copy prompt to clipboard"
+                                data-bs-toggle="tooltip" 
+                                data-bs-placement="top"
+                                aria-label="Copy current prompt to clipboard (bottom toolbar)"
+                                title="Copy prompt to clipboard">
+                                <i class="fas fa-copy" aria-hidden="true"></i> <span class="d-none d-sm-inline">Copy Prompt</span>
+                            </button>
+
+                            <!-- OpenAI ChatGPT (bottom) -->
+                            {% assign openai_models = page.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
+                            {% if openai_models.size > 0 %}
+                            <button class="btn btn-sm btn-send-chatgpt mt-0 me-2 d-flex align-items-center justify-content-center" 
+                                    type="button" 
+                                    id="chatgptSendDefaultBottom" 
+                                    aria-label="Send prompt to ChatGPT (bottom toolbar)"
+                                    title="Send prompt to OpenAI ChatGPT">
+                                <img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" style="height: 1.5rem;">
+                            </button>
+                            {% endif %}
+
+                            <!-- Anthropic Claude (bottom) -->
+                            {% assign anthropic_models = page.models-supported | where_exp: "model", "model contains 'claude'" %}
+                            {% if anthropic_models.size > 0 %}
+                            <button class="btn btn-sm btn-send-claude mt-0 me-2 d-flex align-items-center justify-content-center" 
+                                    type="button" 
+                                    id="claudeSendDefaultBottom" 
+                                    aria-label="Send prompt to Claude (bottom toolbar)"
+                                    title="Send prompt to Anthropic Claude">
+                                <img src="/img/logos/Claude-AI-Logo.svg" alt="Claude AI Logo" style="height: 1.5rem;">
+                            </button>
+                            {% endif %}
+
+                            <!-- Google Gemini (bottom) -->
+                            {% assign google_models = page.models-supported | where_exp: "model", "model contains 'gemini'" %}
+                            {% if google_models.size > 0 %}
+                            <button class="btn btn-sm btn-send-gemini mt-0 me-2 d-flex align-items-center justify-content-center" 
+                                    type="button" 
+                                    id="geminiSendDefaultBottom" 
+                                    aria-label="Send prompt to Gemini (bottom toolbar)"
+                                    title="Send prompt to Google Gemini">
+                                <img src="/img/logos/Google-Gemini-Logo.svg" alt="Google Gemini Logo" style="height: 1.5rem;">
+                            </button>
+                            {% endif %}
+
+                            <!-- Microsoft Copilot (bottom) -->
+                            {% assign microsoft_models = page.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
+                            {% if microsoft_models.size > 0 %}
+                            <button class="btn btn-sm btn-send-microsoft mt-0 me-2 d-flex align-items-center justify-content-center" 
+                                    type="button" 
+                                    id="microsoftSendDefaultBottom" 
+                                    aria-label="Send prompt to Microsoft Copilot (bottom toolbar)"
+                                    title="Send prompt to Microsoft Copilot">
+                                <img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" style="height: 1.5rem;">
+                            </button>
+                            {% endif %}
+
+                            <!-- GitHub Copilot (bottom) -->
+                            {% assign github_models = page.models-supported | where_exp: "model", "model contains 'github'" %}
+                            {% if github_models.size > 0 %}
+                            <button class="btn btn-sm btn-send-github mt-0 me-0 d-flex align-items-center justify-content-center" 
+                                    type="button" 
+                                    id="githubSendDefaultBottom" 
+                                    aria-label="Send prompt to GitHub Copilot (bottom toolbar)"
+                                    title="Send prompt to GitHub Copilot">
+                                <img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" style="height: 1.5rem;">
+                            </button>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
 
