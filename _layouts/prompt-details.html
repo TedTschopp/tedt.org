@@ -284,17 +284,6 @@
                     <!-- Duplicate Prompt Toolbar (Bottom) -->
                     <div class="prompt-toolbar card-header d-flex w-100 justify-content-between flex-wrap gap-3 ps-3 pe-3 py-2 mt-0">
                         <div class="d-flex align-items-center gap-3 flex-wrap">
-                            <span class="prompt-label">Prompt</span>
-                            {% if page.variables and page.variables.size > 0 %}
-                            <button class="btn btn-secondary btn-sm" 
-                                    type="button" 
-                                    id="toggle-variables-btn-bottom"
-                                    aria-expanded="false"
-                                    aria-controls="prompt-variables-card"
-                                    aria-label="Show customization options for prompt variables (bottom toolbar)">
-                                <i class="fas fa-sliders-h" aria-hidden="true"></i> Customize
-                            </button>
-                            {% endif %}
                         </div>
                         <div class="d-flex align-items-center gap-2 prompt-control-buttons flex-wrap" role="group" aria-label="Download or Copy Prompt (bottom toolbar)">
                             <a href="#" id="download-prompt-link-bottom-toolbar"
@@ -374,13 +363,6 @@
                     </div>
                 </div>
 
-                <div class="text-end mt-3">
-                    <a href="#" id="download-prompt-link-bottom" class="btn btn-primary ms-3"
-                        download="{{ page.title | slugify }}.txt" aria-label="Download Prompt" title="Download Prompt">
-                        <i class="fas fa-download" aria-hidden="true"></i>
-                        <span class="visually-hidden">Download Prompt</span>
-                    </a>
-                </div>
                 <!-- Dynamic Prompts in Series Section -->
                 {% if page.series and page.series.size > 0 %}
                 <div class="mt-4">
@@ -587,20 +569,7 @@
             });
         });
 
-        // Copy button for Prompt Example
-        document.querySelectorAll('.card-header .btn-copy-prompt').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const pre = document.querySelector('#customized-prompt:not([style*="display: none"]) pre, #original-prompt pre');
-                if (pre) {
-                    navigator.clipboard.writeText(getCurrentPromptContent());
-                    const original = this.innerHTML;
-                    this.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                    setTimeout(() => {
-                        this.innerHTML = original;
-                    }, 1500);
-                }
-            });
-        });
+    // (Removed older copy handler block; unified logic implemented inside DOMContentLoaded for all toolbars)
 
         // Helper function to get current prompt content (original or customized)
         function getCurrentPromptContent() {
@@ -959,10 +928,12 @@
                 console.log('Variables initialized, but keeping original prompt visible');
             }
 
-            // Setup download links
+            // Setup download links (top + bottom toolbars)
             function setupDownloadLinks() {
-                const downloadLinks = document.querySelectorAll('#download-prompt-link, #download-prompt-link-bottom');
+                const downloadLinks = document.querySelectorAll('#download-prompt-link, #download-prompt-link-bottom-toolbar');
                 downloadLinks.forEach(link => {
+                    if (link.dataset.boundDownload) return; // prevent duplicate binding
+                    link.dataset.boundDownload = 'true';
                     link.addEventListener('click', function(e) {
                         e.preventDefault();
                         const content = getCurrentPromptContent();
@@ -978,133 +949,105 @@
                     });
                 });
             }
-            // Setup copy button functionality with improved feedback
-            const copyBtn = document.querySelector('.btn-copy-prompt');
-            if (copyBtn) {
-                copyBtn.addEventListener('click', function() {
-                    const content = getCurrentPromptContent();
-                    
-                    // Update loading state and accessibility
-                    this.classList.add('btn-loading');
-                    this.setAttribute('aria-label', 'Copying prompt...');
-                    
-                    navigator.clipboard.writeText(content).then(() => {
-                        // Success feedback
-                        this.classList.remove('btn-loading');
-                        this.classList.add('copied');
-                        this.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied!';
-                        this.setAttribute('aria-label', 'Prompt copied successfully');
-                        
-                        // Announce to screen readers
+
+            // Unified copy button functionality (top + bottom) with consistent width to avoid layout shift
+            function setupCopyButtons() {
+                document.querySelectorAll('.btn-copy-prompt').forEach(btn => {
+                    if (btn.dataset.boundCopy) return; // avoid double binding
+                    btn.dataset.boundCopy = 'true';
+                    // Store original label
+                    if (!btn.dataset.originalHtml) {
+                        btn.dataset.originalHtml = btn.innerHTML;
+                    }
+                    btn.addEventListener('click', function() {
+                        const content = getCurrentPromptContent();
                         const statusElement = document.getElementById('form-status');
-                        if (statusElement) {
-                            statusElement.textContent = 'Prompt copied to clipboard successfully';
-                        }
-                        
-                        // Reset after 2 seconds
-                        setTimeout(() => {
-                            this.classList.remove('copied');
-                            this.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt';
-                            this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                        // Lock width to prevent button jitter
+                        const currentWidth = this.offsetWidth;
+                        this.style.minWidth = currentWidth + 'px';
+                        this.classList.add('btn-loading');
+                        this.setAttribute('aria-label', 'Copying prompt...');
+                        navigator.clipboard.writeText(content).then(() => {
+                            this.classList.remove('btn-loading');
+                            this.classList.add('copied');
+                            this.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied!';
+                            this.setAttribute('aria-label', 'Prompt copied successfully');
                             if (statusElement) {
-                                statusElement.textContent = '';
+                                statusElement.textContent = 'Prompt copied to clipboard successfully';
                             }
-                        }, 2000);
-                    }).catch(err => {
-                        // Error feedback
-                        this.classList.remove('btn-loading');
-                        this.innerHTML = '<i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Error';
-                        this.setAttribute('aria-label', 'Failed to copy prompt');
-                        
-                        const statusElement = document.getElementById('form-status');
-                        if (statusElement) {
-                            statusElement.textContent = 'Failed to copy prompt to clipboard';
-                        }
-                        
-                        // Reset after 2 seconds
-                        setTimeout(() => {
-                            this.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i> Copy Prompt';
-                            this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                            setTimeout(() => {
+                                this.classList.remove('copied');
+                                this.innerHTML = this.dataset.originalHtml;
+                                this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                                if (statusElement) {
+                                    statusElement.textContent = '';
+                                }
+                            }, 2000);
+                        }).catch(() => {
+                            this.classList.remove('btn-loading');
+                            this.innerHTML = '<i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Error';
+                            this.setAttribute('aria-label', 'Failed to copy prompt');
                             if (statusElement) {
-                                statusElement.textContent = '';
+                                statusElement.textContent = 'Failed to copy prompt to clipboard';
                             }
-                        }, 2000);
+                            setTimeout(() => {
+                                this.innerHTML = this.dataset.originalHtml;
+                                this.setAttribute('aria-label', 'Copy current prompt to clipboard');
+                                if (statusElement) {
+                                    statusElement.textContent = '';
+                                }
+                            }, 2000);
+                        });
                     });
                 });
             }
 
-            // OpenAI ChatGPT button handler
-            var chatgptBtn = document.getElementById('chatgptSendDefault');
-            if (chatgptBtn) {
-                chatgptBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
+            setupDownloadLinks();
+            setupCopyButtons();
+
+            // Provider button handlers (top + bottom)
+            function bindProviderButtons() {
+                function openChatGPT() {
                     var defaultModel = "gpt-4";
-                    var promptTitle = encodeURIComponent("{{ page.title }}");
                     var promptContent = encodeURIComponent(getCurrentPromptContent());
                     var url = `https://chat.openai.com/?model=${defaultModel}&q=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
-                });
-            }
-
-            // Anthropic Claude button handler
-            var claudeBtn = document.getElementById('claudeSendDefault');
-            if (claudeBtn) {
-                claudeBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
+                }
+                function copyAndOpen(url, alertMsg) {
                     var promptTitle = "{{ page.title | escape }}";
                     var promptContent = getCurrentPromptContent();
                     var fullPrompt = promptTitle + "\n\n" + promptContent;
-                    
                     navigator.clipboard.writeText(fullPrompt).then(function() {
-                        alert('Prompt copied to clipboard! Please paste it into Claude.ai');
-                        window.open('https://claude.ai/', '_blank', 'noopener');
+                        alert(alertMsg);
+                        window.open(url, '_blank', 'noopener');
                     });
-                });
-            }
-
-            // Google Gemini button handler
-            var geminiBtn = document.getElementById('geminiSendDefault');
-            if (geminiBtn) {
-                geminiBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getCurrentPromptContent();
-                    var fullPrompt = promptTitle + "\n\n" + promptContent;
-                    
-                    navigator.clipboard.writeText(fullPrompt).then(function() {
-                        alert('Prompt copied to clipboard! Please paste it into Gemini');
-                        window.open('https://gemini.google.com/', '_blank', 'noopener');
-                    });
-                });
-            }
-
-            // Microsoft Copilot button handler
-            var microsoftBtn = document.getElementById('microsoftSendDefault');
-            if (microsoftBtn) {
-                microsoftBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var promptTitle = "{{ page.title | escape }}";
-                    var promptContent = getCurrentPromptContent();
-                    var fullPrompt = promptTitle + "\n\n" + promptContent;
-                    
-                    navigator.clipboard.writeText(fullPrompt).then(function() {
-                        alert('Prompt copied to clipboard! Please paste it into Microsoft Copilot');
-                        window.open('https://copilot.microsoft.com/', '_blank', 'noopener');
-                    });
-                });
-            }
-
-            // GitHub Copilot button handler
-            var githubBtn = document.getElementById('githubSendDefault');
-            if (githubBtn) {
-                githubBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var promptTitle = encodeURIComponent("{{ page.title }}");
+                }
+                function openGitHubCopilot() {
                     var promptContent = encodeURIComponent(getCurrentPromptContent());
                     var url = `https://github.com/copilot?prompt=${promptContent}`;
                     window.open(url, '_blank', 'noopener');
+                }
+                const mapping = [
+                    { ids: ['chatgptSendDefault','chatgptSendDefaultBottom'], handler: () => openChatGPT() },
+                    { ids: ['claudeSendDefault','claudeSendDefaultBottom'], handler: () => copyAndOpen('https://claude.ai/','Prompt copied to clipboard! Please paste it into Claude.ai') },
+                    { ids: ['geminiSendDefault','geminiSendDefaultBottom'], handler: () => copyAndOpen('https://gemini.google.com/','Prompt copied to clipboard! Please paste it into Gemini') },
+                    { ids: ['microsoftSendDefault','microsoftSendDefaultBottom'], handler: () => copyAndOpen('https://copilot.microsoft.com/','Prompt copied to clipboard! Please paste it into Microsoft Copilot') },
+                    { ids: ['githubSendDefault','githubSendDefaultBottom'], handler: () => openGitHubCopilot() }
+                ];
+                mapping.forEach(group => {
+                    group.ids.forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el && !el.dataset.boundProvider) {
+                            el.dataset.boundProvider = 'true';
+                            el.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                group.handler();
+                            });
+                        }
+                    });
                 });
             }
+            bindProviderButtons();
         });
     </script>
 </body>
