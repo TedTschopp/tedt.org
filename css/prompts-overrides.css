@@ -52,6 +52,13 @@
   border-top-right-radius: 0 !important;
 }
 
+/* Prompt toolbar: keep top rounding from parent card; only remove bottom corners */
+.prompt-toolbar.card-header {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  /* allow inherited top-left/right radius */
+}
+
 /* General safety: media scale to container */
 img,
 video {
