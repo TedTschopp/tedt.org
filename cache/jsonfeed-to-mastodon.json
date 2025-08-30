@@ -454,7 +454,7 @@
     "date_published": "2025-08-28T00:00:00-07:00",
     "id": "/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
     "image": "https://tedt.org/img/2025-08/Transmission-and-Data.webp",
-    "lastTootTimestamp": 1756478233826,
+    "lastTootTimestamp": 1756491894303,
     "summary": "A pragmatic five-year strategy to move a century-old utility from paper-era workflows to AI‑centric operations: standardized platforms, an edge‑to‑cloud data fabric with preserved context, and a Mechanics & Drivers operating model anchored by measurable Time‑to‑Exit and edge‑to‑decision latency.",
     "tags": [
       "enterprise-architecture",
@@ -478,7 +478,8 @@
       "https://tschopp.net/users/Ted/statuses/115109439680455489",
       "https://tschopp.net/users/Ted/statuses/115110636106983273",
       "https://tschopp.net/users/Ted/statuses/115112089573135421",
-      "https://tschopp.net/users/Ted/statuses/115112557524952547"
+      "https://tschopp.net/users/Ted/statuses/115112557524952547",
+      "https://tschopp.net/users/Ted/statuses/115113452780689718"
     ],
     "url": "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/"
   },
@@ -1779,9 +1780,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115113452780689718"
+      "https://tschopp.net/users/Ted/statuses/115115086187696350"
     ],
-    "lastTootTimestamp": 1756491894303
+    "lastTootTimestamp": 1756516818167
   },
   "https://tedt.org/prompts/business-case-and-requirements-assistant/": {
     "id": "/prompts/business-case-and-requirements-assistant/",
