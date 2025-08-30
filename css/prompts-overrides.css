@@ -59,6 +59,12 @@
   /* allow inherited top-left/right radius */
 }
 
+/* Prompt shell outer card: keep top rounding, remove bottom rounding */
+.prompt-shell {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
 /* General safety: media scale to container */
 img,
 video {
