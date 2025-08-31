@@ -11,7 +11,7 @@ source: 'Press Release'
 source-url: 'https://www.blackberry.com/us/en/company/newsroom/press-releases'
 call-to-action: ''
 
-date: 
+date: 2014-05-13
 update:
 author:
     name: Blackberry PR

@@ -11,7 +11,7 @@ source: 'Corporate Antibodies'
 source-url: ''
 call-to-action: ''
 
-date: 
+date: 2012-06-20
 update:
 author:
     name: Horace Dediu

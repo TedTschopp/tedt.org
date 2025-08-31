@@ -11,7 +11,7 @@ source: 'Aphorisms'
 source-url: ''
 call-to-action: ''
 
-date: 
+date: 0400-01-01
 update:
 author:
     name: Hippocrates

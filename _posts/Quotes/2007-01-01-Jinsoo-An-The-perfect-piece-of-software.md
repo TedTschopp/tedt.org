@@ -11,12 +11,12 @@ source: 'Chat Transcript with Jinsoo An'
 source-url: ''
 call-to-action: ''
 
-date: 
+date: 2007-01-01
 update:
 author:
     name: Jinsoo An
     avatar: 
-    url: ''
+    url: 'https://www.linkedin.com/in/jinsooan/details/experience/'
 
 bullets:
 
