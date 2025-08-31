@@ -159,7 +159,11 @@
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
                                     <p class="card-text text-truncate-3">
-                                      {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                      {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                      {%- if __summary == nil or __summary == '' -%}
+                                        {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                      {%- endif -%}
+                                      {{ __summary | strip_html }}
                                     </p>
                                     <p class="card-text">
                                       Posted on <small class="text-muted text-body-secondary">
@@ -179,7 +183,11 @@
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
                                     <p class="card-text text-truncate-3">
-                                      {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                      {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                      {%- if __summary == nil or __summary == '' -%}
+                                        {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                      {%- endif -%}
+                                      {{ __summary | strip_html }}
                                     </p>
                                     <p class="card-text">
                                       Posted on <small class="text-muted text-body-secondary">
@@ -247,7 +255,11 @@
                                     <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
                                   <p class="card-text text-truncate-3">
-                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                    {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                    {%- if __summary == nil or __summary == '' -%}
+                                      {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                    {%- endif -%}
+                                    {{ __summary | strip_html }}
                                   </p>
                                   <p class="card-text">
                                     Posted on <small class="text-muted text-body-secondary">
@@ -267,7 +279,11 @@
                                     <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
                                   <p class="card-text text-truncate-3">
-                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                    {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                    {%- if __summary == nil or __summary == '' -%}
+                                      {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                    {%- endif -%}
+                                    {{ __summary | strip_html }}
                                   </p>
                                   <p class="card-text">
                                     Posted on <small class="text-muted text-body-secondary">

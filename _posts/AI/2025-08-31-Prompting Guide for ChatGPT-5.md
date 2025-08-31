@@ -13,9 +13,9 @@ call-to-action: "Discuss on Mastodon"
 date: "2025-08-31 10:56:40 -0700"
 update: "2025-08-31 10:56:40 -0700"
 author:
-avatar: [https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512\&d=mp\&r=g](https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g)
-name: Ted Tschopp
-url: [https://tedt.org/](https://tedt.org/)
+  name: "Ted Tschopp"
+  avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
+  url: "https://tedt.org/"
 
 bullets:
   - GPT‑5 behaves like a router model; results improve when you set reasoning and verbosity dials.
@@ -64,12 +64,12 @@ keywords:
   - brand kit prompt
 
 location:
-   name: Bradbury, CA
-   coordinates:
-      latitude: 34.1470
-      longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
 
-image:
+image: "img/2025-08/GPT-5-router-model.webp"
 image-alt: "Guide for prompting GPT-5 with tools and optimizer"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
@@ -79,9 +79,9 @@ image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: ""
 image-description: ""
-image-title: ""
-image\_width:
-image\_height:
+image-title: "GPT-5 Router Model"
+image_width: 1456 
+image_height:  816
 
 mastodon-post-id:
 
