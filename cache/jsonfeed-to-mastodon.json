@@ -583,12 +583,13 @@
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
     "id": "/Horace-Dediu-Think-of-the-company-as-an-org/",
-    "lastTootTimestamp": 1756643703348,
+    "lastTootTimestamp": 1756664665847,
     "summary": "",
     "title": null,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/115121950660537165",
-      "https://tschopp.net/users/Ted/statuses/115123401736603936"
+      "https://tschopp.net/users/Ted/statuses/115123401736603936",
+      "https://tschopp.net/users/Ted/statuses/115124775536282766"
     ],
     "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/"
   },
@@ -1915,9 +1916,9 @@
       "threads_username": "tedtschopp"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115124775536282766"
+      "https://tschopp.net/users/Ted/statuses/115125617244360204"
     ],
-    "lastTootTimestamp": 1756664665847
+    "lastTootTimestamp": 1756677509318
   },
   "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/": {
     "id": "/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
