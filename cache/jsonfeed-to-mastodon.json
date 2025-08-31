@@ -167,7 +167,7 @@
     "content_text": "In life you have to do a lot of things you don’t fucking want to do. Many times, that’s what the fuck life is… one vile fucking task after another. https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
-    "id": "/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
+    "id": "/Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
     "summary": "",
     "title": null,
     "toots": [],
@@ -582,12 +582,13 @@
     "content_text": "Think of the company as an organism. Inside this organism there are entities – be they people, budgets, processes, or rules in binders. These are things that are designed to eat up innovation. To eat up changes to the core business. Companies do this not because they are stupid, but because they see this newcomer, this entrant, as a pathogen. It is seen as something that’s damaging the organism. … https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
-    "id": "/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
-    "lastTootTimestamp": 1756621561679,
+    "id": "/Horace-Dediu-Think-of-the-company-as-an-org/",
+    "lastTootTimestamp": 1756643703348,
     "summary": "",
     "title": null,
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115121950660537165"
+      "https://tschopp.net/users/Ted/statuses/115121950660537165",
+      "https://tschopp.net/users/Ted/statuses/115123401736603936"
     ],
     "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/"
   },
@@ -800,7 +801,7 @@
     "content_text": "The highest moment in a man’s career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life. https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
-    "id": "/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
+    "id": "/Oscar-Wilde-The-highest-moment-in-a-mans/",
     "summary": "",
     "title": null,
     "toots": [],
@@ -1914,9 +1915,9 @@
       "threads_username": "tedtschopp"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115123401736603936"
+      "https://tschopp.net/users/Ted/statuses/115124775536282766"
     ],
-    "lastTootTimestamp": 1756643703348
+    "lastTootTimestamp": 1756664665847
   },
   "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/": {
     "id": "/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
