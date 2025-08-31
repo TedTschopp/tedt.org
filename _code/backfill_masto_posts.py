@@ -162,6 +162,52 @@ def save_cache(cache: Dict[str, Any]):
         json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
 
 
+def cache_variants_for_post(fm: dict, path: str) -> list[str]:
+    """Generate possible cache keys for a post so we can detect prior toots
+    even if front matter lacks mastodon-post-id or canonical form changed.
+
+    Variants considered:
+      * Declared permalink (normalized with trailing slash)
+      * Slug-only (/slug/)
+      * Date-prefixed (/YYYY-MM-DD-slug/) based on filename
+    """
+    variants: list[str] = []
+    permalink = fm.get('permalink') or ''
+    if isinstance(permalink, str) and permalink:
+        p = permalink if permalink.startswith('/') else '/' + permalink
+        if not p.endswith('/'):
+            p += '/'
+        variants.append(p)
+    base = os.path.basename(path)
+    m = re.match(r"(\d{4}-\d{2}-\d{2})-(.*)\.md", base)
+    if m:
+        date_part, slug_part = m.group(1), m.group(2)
+        variants.append(f"/{slug_part}/")
+        variants.append(f"/{date_part}-{slug_part}/")
+    else:
+        slug_part = base.rsplit('.',1)[0]
+        variants.append(f"/{slug_part}/")
+    # Deduplicate while preserving order
+    seen = set()
+    ordered = []
+    for v in variants:
+        if v not in seen:
+            seen.add(v)
+            ordered.append(v)
+    return ordered
+
+
+def cache_indicates_posted(cache: dict[str, any], fm: dict, path: str) -> bool:
+    for key in cache_variants_for_post(fm, path):
+        entry = cache.get(key)
+        if not entry:
+            continue
+        toots = entry.get('toots') if isinstance(entry, dict) else None
+        if isinstance(toots, list) and len(toots) > 0:
+            return True
+    return False
+
+
 def main():
     args = parse_args()
     site_url = args.site_url or read_config_site_url() or 'https://tedt.org'
@@ -175,7 +221,12 @@ def main():
     to_process = []
     for path in list_markdown(args.dirs):
         fm, body, raw = extract_front(path)
+        # Skip if front matter already has an id (original behavior)
         if fm.get('mastodon-post-id'):
+            continue
+        # New: skip if cache already shows any toot for this content (prevents duplicates)
+        if cache_indicates_posted(cache, fm, path):
+            print(f"SKIP (already tooted per cache) -> {path}")
             continue
         # date gating
         date_str = str(fm.get('date') or '')

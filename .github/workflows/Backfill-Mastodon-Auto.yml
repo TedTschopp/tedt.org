@@ -40,12 +40,24 @@ jobs:
         run: |
           python3 _code/audit_masto_frontmatter.py --json > audit-before.json
           cat audit-before.json
+      - name: Normalize Mastodon cache (pre)
+        run: |
+          python3 _code/normalize_masto_cache.py || true
       - name: Parse missing count
         id: audit
         run: |
           MISSING=$(python3 -c "import json,sys;print(json.load(open('audit-before.json'))['missing_count'])")
           echo "missing=$MISSING" >> $GITHUB_OUTPUT
           echo "Remaining posts without mastodon-post-id: $MISSING"
+      - name: Preview mastodon-post-id sync (dry-run)
+        id: sync_preview
+        run: |
+          python3 _code/sync_masto_ids_from_cache.py --gha || true
+      - name: Sync mastodon-post-id from cache (live only)
+        if: ${{ steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false' }}
+        id: sync_live
+        run: |
+          python3 _code/sync_masto_ids_from_cache.py --write --gha || true
       - name: Skip if nothing to do
         if: steps.audit.outputs.missing == '0'
         run: echo "No remaining posts. Exiting."
@@ -63,6 +75,14 @@ jobs:
         run: |
           python3 _code/audit_masto_frontmatter.py --json > audit-after.json
           cat audit-after.json
+      - name: Normalize Mastodon cache (post)
+        if: ${{ steps.audit.outputs.missing != '0' }}
+        run: |
+          python3 _code/normalize_masto_cache.py || true
+      - name: Sync mastodon-post-id from cache (post, live only)
+        if: ${{ steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false' }}
+        run: |
+          python3 _code/sync_masto_ids_from_cache.py --write || true
       - name: Append history (live only)
         if: steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false'
         run: |
@@ -80,5 +100,7 @@ jobs:
           echo "Dry run: ${{ steps.params.outputs.dry_run }}" >> $GITHUB_STEP_SUMMARY
           echo "Batch size: ${{ steps.params.outputs.batch }}" >> $GITHUB_STEP_SUMMARY
           echo "Delay: ${{ steps.params.outputs.delay }}s" >> $GITHUB_STEP_SUMMARY
+          echo "Sync candidates (preview): ${{ steps.sync_preview.outputs.sync_candidates || '0' }}" >> $GITHUB_STEP_SUMMARY
+          echo "Sync updated (live applied): ${{ steps.sync_live.outputs.sync_updated || '0' }}" >> $GITHUB_STEP_SUMMARY
           if [ -f audit-before.json ]; then echo "#### Before" >> $GITHUB_STEP_SUMMARY; cat audit-before.json >> $GITHUB_STEP_SUMMARY; fi
           if [ -f audit-after.json ]; then echo "#### After" >> $GITHUB_STEP_SUMMARY; cat audit-after.json >> $GITHUB_STEP_SUMMARY; fi
