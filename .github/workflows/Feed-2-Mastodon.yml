@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Decide if we should post (latest already tooted?)
         id: guard
@@ -87,7 +87,7 @@ jobs:
     if: ${{ github.event_name != 'schedule' }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Run script sanity tests
         run: |
           python3 tests/_code/test_scripts.py
