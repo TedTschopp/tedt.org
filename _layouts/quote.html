@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include seo/indieauth-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include seo/meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa/pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds/feeds.html %}
+
+    {% include assets/all-css-includes.html %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include assets/scripts.html %}
+    {%- comment -%}
+      Auto-title logic: If no explicit page.title, derive from author + first words of quote.
+    {%- endcomment -%}
+    {% unless page.title %}
+      {% assign __q_plain = page.quote | strip | strip_html | replace: '\n', ' ' %}
+      {% assign __q_words = __q_plain | split: ' ' %}
+      {% assign __q_snip = __q_words | slice: 0, 6 | join: ' ' %}
+      {% assign __derived_title = page.author | append: ': "' | append: __q_snip | append: '…"' %}
+      <title>{{ __derived_title | escape }}</title>
+    {% endunless %}
+    {% if page.title %}
+      <title>{{ page.title | escape }}</title>
+    {% endif %}
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
+    {% include layout/top-nav-bar.html %}
+
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12 col-lg-9 col-xxl-9" id="content-column">
+          <main class="h-entry" role="main">
+            <article class="card h-100 no-padding">
+              <div class="card-body pt-3 p-4 h-100">
+                {%- comment -%} Title & meta {%- endcomment -%}
+                <header class="mb-3">
+                  {% if page.title %}
+                    <h1 class="p-name card-title">{{ page.title }}</h1>
+                  {% else %}
+                    <h1 class="p-name card-title">{{ __derived_title }}</h1>
+                  {% endif %}
+                  <p class="card-subtitle text-muted mb-2">
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                    {% if page.updated %}
+                      (updated <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: "%B %d, %Y" }}</time>)
+                    {% endif %}
+                  </p>
+                  {% if page.source-url and page.source %}
+                    <p class="mb-2">Source: <a class="u-url" href="{{ page.source-url }}" target="_new" rel="noopener">{{ page.source }}</a></p>
+                  {% elsif page.source %}
+                    <p class="mb-2">Source: {{ page.source }}</p>
+                  {% endif %}
+                </header>
+
+                {%- comment -%} Quote block {%- endcomment -%}
+                {% assign __quote_text = page.quote | default: page.content %}
+                <figure class="mb-4">
+                  <blockquote class="blockquote fs-4">{{ __quote_text | markdownify }}</blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    <span class="p-author h-card">{{ page.author | default: 'Unknown' }}</span>
+                    {% if page.tags and page.tags != '' %}<span class="ms-2">• {{ page.tags }}</span>{% endif %}
+                  </figcaption>
+                </figure>
+
+                {%- if page.content and page.content != '' and page.content != page.quote -%}
+                  <div class="mt-4 e-content" id="main_content">
+                    {{ page.content }}
+                  </div>
+                {%- else -%}
+                  <div id="main_content"></div>
+                {%- endif -%}
+
+                <!-- Categories / taxonomy -->
+                {% if page.categories %}
+                  <div class="mt-4 small">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    {% assign categories = page.categories %}
+                    {% for category in categories %}
+                      {% capture thiscategory %}{{ category | strip }}{% endcapture %}
+                      {% capture __slug %}{% include utility/map-category-to-registry.html key=thiscategory %}{% endcapture %}
+                      {% assign __slug = __slug | strip %}
+                      {% if __slug == '' %}{% assign __slug = thiscategory | slugify %}{% endif %}
+                      {% assign __entry = site.data.category_registry[__slug] %}
+                      {% if __entry and __entry.category_home_page %}
+                        {% assign __href = __entry.category_home_page %}
+                      {% else %}
+                        {% assign __href = '/category/' | append: __slug | append: '/' %}
+                      {% endif %}
+                      <a class="text-decoration-none" href="{{ site.url }}{{ __href }}">{% include utility/category-emoji.html category=thiscategory %} {{ thiscategory }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+              </div>
+            </article>
+
+            <hr>
+            {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+              {% include social/comments-mastodon-tree.html %}
+              <hr>
+            {% endif %}
+            {% include social/comments-webmentions.html %}
+            <hr>
+            {% include content/next-and-previous.html %}
+          </main>
+        </div>
+
+        <div class="col-12 col-lg-3 col-xxl-3">
+          <!-- Sidebar: latest in Quotes category (or current categories) -->
+          <div class="well">
+            <div class="post-categories">
+              {% assign sidebar_cats = page.categories | default: 'Quotes' %}
+              {% for category in sidebar_cats %}
+                {% capture __s_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                {% assign __s_slug = __s_slug | strip %}
+                {% if __s_slug == '' %}{% assign __s_slug = category | slugify %}{% endif %}
+                {% assign __s_entry = site.data.category_registry[__s_slug] %}
+                {% if __s_entry and __s_entry.category_home_page %}
+                  {% assign __s_href = __s_entry.category_home_page %}
+                {% else %}
+                  {% assign __s_href = '/category/' | append: __s_slug | append: '/' %}
+                {% endif %}
+                <div class="card h-100 mb-3">
+                  <div class="card-body pt-2 pb-2 p-4">
+                    <h4 class="card-title mb-2"><a class="text-decoration-none" href="{{ site.url }}{{ __s_href }}">{{ category }}</a></h4>
+        {%- comment -%}
+          Dynamic recent items list:
+          - Collect latest posts that share this category (e.g., "Quotes").
+          - Exclude the current page.
+          - Limit to 8.
+          Whitespace is trimmed using Liquid hyphen syntax (e.g., {%- tag -%}) to avoid stray text nodes that
+          previously upset HTMLProofer list validation.
+        {%- endcomment -%}
+        {%- assign __cat_posts = site.posts | where_exp: "p","p.categories contains category" -%}
+        {%- assign __cat_posts = __cat_posts | sort: 'date' | reverse -%}
+        <div class="recent-quotes" role="list" aria-label="Recent quotes">
+          {%- assign __shown = 0 -%}
+          {%- for p in __cat_posts -%}
+            {%- if p.url != page.url and __shown < 8 -%}
+              <div role="listitem" class="mb-1"><a href="{{ p.url | relative_url }}" class="text-decoration-none">{{ p.title | default: p.slug }}</a></div>
+              {%- assign __shown = __shown | plus: 1 -%}
+            {%- endif -%}
+            {%- if __shown == 8 -%}{% break %}{%- endif -%}
+          {%- endfor -%}
+          {%- if __shown == 0 -%}
+            <div role="listitem" class="mb-1 text-muted">No other recent items.</div>
+          {%- endif -%}
+        </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    {% include layout/footer.html %}
+    {% include assets/js-bottom-of-body.html %}
+  </body>
+</html>

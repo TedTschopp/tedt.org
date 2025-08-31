@@ -1,0 +1,12 @@
+# Minimal config for quote layout test build
+exclude:
+- 'RPG'
+- 'GammaWorld'
+- 'MCC-GW'
+- '_GammaWorld'
+- 'node_modules'
+- 'vendor'
+plugins:
+- jekyll-redirect-from
+permalink: /:title/
+url: http://localhost:4000
