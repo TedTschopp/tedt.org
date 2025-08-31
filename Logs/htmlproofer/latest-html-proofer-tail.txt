@@ -75,9 +75,9 @@
     </div>
     ^ (line 2960)
 - ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
-  *  3015:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3020:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3015)
+    ^ (line 3020)
   *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
 - ./_site/sex-gardening-a/index.html
   *  2957:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
@@ -92,9 +92,9 @@
   *  1454:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1454)
-  *  4764:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  4773:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4764)
+        ^ (line 4773)
 - ./_site/step-1-reply-by-chat/index.html
   *  2952:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -164,9 +164,9 @@
   *  1480:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1480)
-  *  5212:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5221:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5212)
+        ^ (line 5221)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -197,4 +197,4 @@
   *  linking to internal hash # that does not exist (line 3853)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3621 failures!
+HTML-Proofer found 3642 failures!

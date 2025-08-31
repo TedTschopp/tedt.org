@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-08-31T02:58:17Z
+Last update: 2025-08-31T22:54:52Z
 \n## Latest Summary (tail 50 lines)\n
   *  573:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
@@ -17,9 +17,9 @@ Last update: 2025-08-31T02:58:17Z
   *  1480:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1480)
-  *  5212:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5221:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5212)
+        ^ (line 5221)
 - ./_site/user-interfaces-in-2017-2/index.html
   *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -50,8 +50,9 @@ Last update: 2025-08-31T02:58:17Z
   *  linking to internal hash # that does not exist (line 3853)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3621 failures!
+HTML-Proofer found 3642 failures!
 \n## Available Historical Logs\n
+- 2025-08-31T22-51-08-HTML Logging.txt
 - 2025-08-31T02-54-39-HTML Logging.txt
 - 2025-08-31T00-10-23-HTML Logging.txt
 - 2025-08-30T22-52-37-HTML Logging.txt
