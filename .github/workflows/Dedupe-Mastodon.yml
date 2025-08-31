@@ -1,0 +1,77 @@
+name: Daily Mastodon Dedupe
+
+# Runs daily at 10:00 UTC (~3:00 AM Pacific during DST; ~2:00 AM standard time)
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+    inputs:
+      max_delete:
+        description: Max deletions this run (default 8)
+        required: false
+      delay:
+        description: Seconds delay between deletions (default 3)
+        required: false
+      dry_run_only:
+        description: 'true to skip live deletions'
+        default: 'false'
+        required: true
+
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    concurrency:
+      group: mastodon-dedupe
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve parameters
+        id: params
+        run: |
+          MAX=${{ github.event.inputs.max_delete || '' }}
+          if [ -z "$MAX" ]; then MAX=8; fi
+          DELAY=${{ github.event.inputs.delay || '' }}
+          if [ -z "$DELAY" ]; then DELAY=3; fi
+          DRY=${{ github.event.inputs.dry_run_only || 'false' }}
+          echo "max=$MAX" >> $GITHUB_OUTPUT
+          echo "delay=$DELAY" >> $GITHUB_OUTPUT
+          echo "dry_run_only=$DRY" >> $GITHUB_OUTPUT
+      - name: Dry-run duplicate scan
+        id: scan
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          set -e
+          python3 _code/dedupe_masto_statuses.py --max-delete ${{ steps.params.outputs.max }} --delay ${{ steps.params.outputs.delay }} > dry_run.log 2>&1 || true
+          echo '--- Dry Run Output (truncated to last 400 lines) ---'
+          tail -n 400 dry_run.log
+          # Extract planned deletions count
+          planned=$(grep -E 'Planned deletions' dry_run.log | tail -n1 | sed -E 's/.*: ([0-9]+).*/\1/' || echo 0)
+          echo "planned=$planned" >> $GITHUB_OUTPUT
+      - name: Live deletions
+        if: ${{ steps.scan.outputs.planned != '0' && steps.params.outputs.dry_run_only == 'false' }}
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          python3 _code/dedupe_masto_statuses.py --write --max-delete ${{ steps.params.outputs.max }} --delay ${{ steps.params.outputs.delay }} > live_delete.log 2>&1 || true
+          echo '--- Live Delete Output (truncated to last 400 lines) ---'
+          tail -n 400 live_delete.log
+          deleted=$(grep -E '^Deleted ' live_delete.log | wc -l | tr -d ' ')
+          echo "deleted=$deleted" >> $GITHUB_ENV
+      - name: Summary
+        run: |
+          echo "### Daily Mastodon Dedupe" >> $GITHUB_STEP_SUMMARY
+          echo "Scheduled run: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+            echo "Max delete cap: ${{ steps.params.outputs.max }}" >> $GITHUB_STEP_SUMMARY
+          echo "Delay: ${{ steps.params.outputs.delay }}s" >> $GITHUB_STEP_SUMMARY
+          echo "Dry run only: ${{ steps.params.outputs.dry_run_only }}" >> $GITHUB_STEP_SUMMARY
+          echo "Planned deletions (dry-run): ${{ steps.scan.outputs.planned }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.params.outputs.dry_run_only }}" = "false" ]; then
+            echo "Deleted this run: ${deleted:-0}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "Note: Cron time 10:00 UTC ≈ 3:00 AM Pacific (DST) / 2:00 AM (Standard). Adjust if needed." >> $GITHUB_STEP_SUMMARY
+      - name: Warn if secret missing
+        if: ${{ success() && steps.scan.outputs.planned == '' }}
+        run: echo 'MASTODON_TOKEN secret may be missing or invalid; no results parsed.'
