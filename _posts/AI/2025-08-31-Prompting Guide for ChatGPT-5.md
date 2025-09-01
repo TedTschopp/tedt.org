@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: "Prompting ChatGPT-5 (Specifically): 6 Moves That Consistently Work"
 subtitle: "Set reasoning, verbosity, tools, and a private quality loop to get reliable results."
