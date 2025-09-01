@@ -583,7 +583,7 @@
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
     "id": "/Horace-Dediu-Think-of-the-company-as-an-org/",
-    "lastTootTimestamp": 1756682870999,
+    "lastTootTimestamp": 1756686787447,
     "summary": "",
     "title": null,
     "toots": [
@@ -591,7 +591,8 @@
       "https://tschopp.net/users/Ted/statuses/115123401736603936",
       "https://tschopp.net/users/Ted/statuses/115124775536282766",
       "https://tschopp.net/users/Ted/statuses/115125617244360204",
-      "https://tschopp.net/users/Ted/statuses/115125968629410197"
+      "https://tschopp.net/users/Ted/statuses/115125968629410197",
+      "https://tschopp.net/users/Ted/statuses/115126225295180054"
     ],
     "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/"
   },
@@ -900,7 +901,7 @@
     "content_text": "Why this works: GPT-5 is a router model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you set the dials (reasoning + verbosity), name the tools, and force a quality loop. OpenAI’s own guides and product notes back this approach. (OpenAI Cookbook, OpenAI Platform, OpenAI)1) Set the Reasoning Dial (every time)Use explicit levels so the model doesn’t… https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
     "date_modified": "2025-08-31T15:50:38-07:00",
     "date_published": "2025-08-31T15:50:38-07:00",
-    "id": "/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
+    "id": "/Prompting-Guide-for-ChatGPT-5/",
     "summary": "",
     "title": null,
     "toots": [],
@@ -1919,164 +1920,40 @@
       "https://tschopp.net/users/Ted/statuses/115017523681590098"
     ]
   },
-  "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/": {
-    "id": "/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
-    "title": null,
-    "summary": "",
-    "content_text": "Think of the company as an organism. Inside this organism there are entities – be they people, budgets, processes, or rules in binders. These are things that are designed to eat up innovation. To eat up changes to the core business. Companies do this not because they are stupid, but because they see this newcomer, this entrant, as a pathogen. It is seen as something that’s damaging the organism. … https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
-    "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
-    "date_published": "2025-08-31T16:27:41-07:00",
-    "date_modified": "2025-08-31T16:27:41-07:00",
+  "https://tedt.org/Prompting-Guide-for-ChatGPT-5/": {
+    "id": "/Prompting-Guide-for-ChatGPT-5/",
+    "title": "Prompting ChatGPT-5 (Specifically): 6 Moves That Consistently Work",
+    "summary": "Six proven moves to get consistent, high‑quality results from GPT‑5: set the reasoning and verbosity dials, name tools and outputs, enforce a self‑review loop, and use the official optimizer. Includes copy‑paste blueprints for research, code, branding, and a one‑page brief.",
+    "content_text": "Six proven moves to get consistent, high‑quality results from GPT‑5: set the reasoning and verbosity dials, name tools and outputs, enforce a self‑review loop, and use the official optimizer. Includes copy‑paste blueprints for research, code, branding, and a one‑page brief. https://tedt.org/Prompting-Guide-for-ChatGPT-5/",
+    "url": "https://tedt.org/Prompting-Guide-for-ChatGPT-5/",
+    "image": "https://tedt.org/img/2025-08/GPT-5-router-model.webp",
+    "tags": [
+      "GPT-5",
+      "ChatGPT",
+      "prompt engineering",
+      "prompting",
+      "metaprompting",
+      "self-reflection",
+      "web browsing",
+      "code interpreter",
+      "Canvas",
+      "ChatGPT Agent",
+      "prompt optimizer",
+      "research workflow",
+      "decision brief",
+      "brand kit"
+    ],
+    "date_published": "2025-08-31T10:56:40-07:00",
+    "date_modified": "2025-08-31T10:56:40-07:00",
     "author": {
       "name": "Ted Tschopp",
-      "url": "https://tedt.org/",
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
-      "givenname": "Ted",
-      "familyname": "Tschopp",
-      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
-      "biography": [
-        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
-        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
-        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
-      ],
-      "email": "ted@tschopp.org",
-      "phonenumber": null,
-      "keybaseio_username": "tedtschopp",
-      "twitter_username": "TedTschopp",
-      "github_username": "TedTschopp",
-      "linkedin_username": "tedtschopp",
-      "facebook_username": "ted.tschopp",
-      "google_username": "TedTschopp",
-      "youtube_username": "TedTschopp",
-      "pinterest_username": "TedTschopp",
-      "reddit_username": "tedtschopp",
-      "instagram_username": "tedtschopp",
-      "quora_username": "Ted-Tschopp",
-      "indiewebcamp_username": "Www.tedt.org",
-      "mastodon_username": "TedT@twit.social",
-      "threads_username": "tedtschopp"
+      "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115126225295180054"
+      "https://tschopp.net/users/Ted/statuses/115126509048262358"
     ],
-    "lastTootTimestamp": 1756686787447
-  },
-  "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/": {
-    "id": "/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
-    "title": null,
-    "summary": "",
-    "content_text": "In life you have to do a lot of things you don’t fucking want to do. Many times, that’s what the fuck life is… one vile fucking task after another. https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
-    "url": "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
-    "date_published": "2025-08-31T16:27:41-07:00",
-    "date_modified": "2025-08-31T16:27:41-07:00",
-    "author": {
-      "name": "Ted Tschopp",
-      "url": "https://tedt.org/",
-      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
-      "givenname": "Ted",
-      "familyname": "Tschopp",
-      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
-      "biography": [
-        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
-        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
-        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
-      ],
-      "email": "ted@tschopp.org",
-      "phonenumber": null,
-      "keybaseio_username": "tedtschopp",
-      "twitter_username": "TedTschopp",
-      "github_username": "TedTschopp",
-      "linkedin_username": "tedtschopp",
-      "facebook_username": "ted.tschopp",
-      "google_username": "TedTschopp",
-      "youtube_username": "TedTschopp",
-      "pinterest_username": "TedTschopp",
-      "reddit_username": "tedtschopp",
-      "instagram_username": "tedtschopp",
-      "quora_username": "Ted-Tschopp",
-      "indiewebcamp_username": "Www.tedt.org",
-      "mastodon_username": "TedT@twit.social",
-      "threads_username": "tedtschopp"
-    },
-    "toots": []
-  },
-  "https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/": {
-    "id": "/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
-    "title": null,
-    "summary": "",
-    "content_text": "The highest moment in a man’s career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life. https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
-    "url": "https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
-    "date_published": "2025-08-31T16:27:41-07:00",
-    "date_modified": "2025-08-31T16:27:41-07:00",
-    "author": {
-      "name": "Ted Tschopp",
-      "url": "https://tedt.org/",
-      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
-      "givenname": "Ted",
-      "familyname": "Tschopp",
-      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
-      "biography": [
-        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
-        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
-        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
-      ],
-      "email": "ted@tschopp.org",
-      "phonenumber": null,
-      "keybaseio_username": "tedtschopp",
-      "twitter_username": "TedTschopp",
-      "github_username": "TedTschopp",
-      "linkedin_username": "tedtschopp",
-      "facebook_username": "ted.tschopp",
-      "google_username": "TedTschopp",
-      "youtube_username": "TedTschopp",
-      "pinterest_username": "TedTschopp",
-      "reddit_username": "tedtschopp",
-      "instagram_username": "tedtschopp",
-      "quora_username": "Ted-Tschopp",
-      "indiewebcamp_username": "Www.tedt.org",
-      "mastodon_username": "TedT@twit.social",
-      "threads_username": "tedtschopp"
-    },
-    "toots": []
-  },
-  "https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/": {
-    "id": "/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
-    "title": null,
-    "summary": "",
-    "content_text": "Why this works: GPT-5 is a router model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you set the dials (reasoning + verbosity), name the tools, and force a quality loop. OpenAI’s own guides and product notes back this approach. (OpenAI Cookbook, OpenAI Platform, OpenAI)1) Set the Reasoning Dial (every time)Use explicit levels so the model doesn’t… https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
-    "url": "https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
-    "date_published": "2025-08-31T16:27:41-07:00",
-    "date_modified": "2025-08-31T16:27:41-07:00",
-    "author": {
-      "name": "Ted Tschopp",
-      "url": "https://tedt.org/",
-      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
-      "givenname": "Ted",
-      "familyname": "Tschopp",
-      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
-      "biography": [
-        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
-        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
-        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
-      ],
-      "email": "ted@tschopp.org",
-      "phonenumber": null,
-      "keybaseio_username": "tedtschopp",
-      "twitter_username": "TedTschopp",
-      "github_username": "TedTschopp",
-      "linkedin_username": "tedtschopp",
-      "facebook_username": "ted.tschopp",
-      "google_username": "TedTschopp",
-      "youtube_username": "TedTschopp",
-      "pinterest_username": "TedTschopp",
-      "reddit_username": "tedtschopp",
-      "instagram_username": "tedtschopp",
-      "quora_username": "Ted-Tschopp",
-      "indiewebcamp_username": "Www.tedt.org",
-      "mastodon_username": "TedT@twit.social",
-      "threads_username": "tedtschopp"
-    },
-    "toots": []
+    "lastTootTimestamp": 1756691117151
   },
   "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
     "id": "/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
@@ -2281,6 +2158,95 @@
     ],
     "date_published": "2025-07-25T00:00:00-07:00",
     "date_modified": "2025-07-25T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Rooted-In-Resilience/": {
+    "id": "/Rooted-In-Resilience/",
+    "title": "Rooted in Resilience",
+    "summary": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.",
+    "content_text": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. https://tedt.org/Rooted-In-Resilience/",
+    "url": "https://tedt.org/Rooted-In-Resilience/",
+    "image": "https://tedt.org/img/AI/Rooted-in-Resilience.webp",
+    "tags": [
+      "artificial intelligence",
+      "enterprise software",
+      "SaaS transformation",
+      "utility companies",
+      "digital transformation",
+      "Sam Altman",
+      "OpenAI",
+      "just-in-time software",
+      "business strategy",
+      "technology leadership"
+    ],
+    "date_published": "2025-06-29T00:00:00-07:00",
+    "date_modified": "2025-06-29T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
+    "id": "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "title": "Learning by Doing",
+    "summary": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation.",
+    "content_text": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation. https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "url": "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+    "image": "https://tedt.org/img/AI/Learning-by-Doing.webp",
+    "tags": [
+      "artificial intelligence",
+      "learning methodology",
+      "workplace training",
+      "scouting",
+      "AI integration",
+      "human-AI partnership",
+      "professional development",
+      "adaptive learning",
+      "Father's Day",
+      "BSA Scout camp",
+      "employee training",
+      "Fortune magazine"
+    ],
+    "date_published": "2025-06-15T00:00:00-07:00",
+    "date_modified": "2025-06-15T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
+    "id": "/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "title": "Riding the AI Wave",
+    "summary": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed.",
+    "content_text": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed. https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "url": "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+    "image": "https://tedt.org/img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp",
+    "tags": [
+      "Mary Meeker",
+      "AI trends",
+      "ChatGPT adoption",
+      "workplace transformation",
+      "artificial intelligence",
+      "tech investment",
+      "employee adaptation",
+      "camping metaphor",
+      "father-son",
+      "AI agents",
+      "digital transformation",
+      "venture capital",
+      "Queen of the Internet"
+    ],
+    "date_published": "2025-06-01T00:00:00-07:00",
+    "date_modified": "2025-06-01T00:00:00-07:00",
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "name": "Ted Tschopp",
