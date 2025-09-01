@@ -1,7 +1,6 @@
 ---
-
+---
 layout: post
-
 title: "Prompting ChatGPT-5 (Specifically): 6 Moves That Consistently Work"
 subtitle: "Set reasoning, verbosity, tools, and a private quality loop to get reliable results."
 quote: "GPT-5 is a router model that can think, browse, code, write, and orchestrate tools."
@@ -9,66 +8,58 @@ excerpt: "Six proven moves to get consistent, high‑quality results from GPT‑
 source: "Original Content"
 source-url: ""
 call-to-action: "Discuss on Mastodon"
-
 date: "2025-08-31 10:56:40 -0700"
 update: "2025-08-31 10:56:40 -0700"
 author:
-  name: "Ted Tschopp"
-  avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
-  url: "https://tedt.org/"
-
+   name: "Ted Tschopp"
+   avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
+   url: "https://tedt.org/"
 bullets:
-  - GPT‑5 behaves like a router model; results improve when you set reasoning and verbosity dials.
-  - Name tools and deliverables so ChatGPT coordinates browsing, code, files, and images in one pass.
-  - Add a private self‑reflection rubric and iterate to a clear quality threshold before delivery.
-  - Repair weak outputs with metaprompting—fix the prompt, not just the answer.
-  - Finish with OpenAI’s official Prompt Optimizer to tighten prompts.
-  - Includes copy‑paste blueprints for research briefs, production features, and brand kits.
-
+   - "GPT‑5 behaves like a router model; results improve when you set reasoning and verbosity dials."
+   - "Name tools and deliverables so ChatGPT coordinates browsing, code, files, and images in one pass."
+   - "Add a private self‑reflection rubric and iterate to a clear quality threshold before delivery."
+   - "Repair weak outputs with metaprompting—fix the prompt, not just the answer."
+   - "Finish with OpenAI’s official Prompt Optimizer to tighten prompts."
+   - "Includes copy‑paste blueprints for research briefs, production features, and brand kits."
 description: "GPT‑5 acts as a router model that can think, browse, code, write, and orchestrate tools. This guide distills six moves that reliably raise output quality: set the reasoning and verbosity dials, explicitly name tools and deliverables, enforce a private self‑review rubric, repair prompts with metaprompting, and finish with OpenAI’s prompt optimizer. It also includes copy‑paste blueprints for research briefs, production features, and brand kits, plus a one‑page prompt for doing it right."
 seo-description: "A practical GPT‑5 prompting guide: set reasoning/verbosity dials, name tools, add a quality loop, use meta‑prompting, and finish with OpenAI’s optimizer."
-
 categories:
-  - AI
-  - Computers
-  - Communications
-
+   - AI
+   - Computers
+   - Communications
 tags:
-  - GPT-5
-  - ChatGPT
-  - prompt engineering
-  - prompting
-  - metaprompting
-  - self-reflection
-  - web browsing
-  - code interpreter
-  - Canvas
-  - ChatGPT Agent
-  - prompt optimizer
-  - research workflow
-  - decision brief
-  - brand kit
-
+   - GPT-5
+   - ChatGPT
+   - prompt engineering
+   - prompting
+   - metaprompting
+   - self-reflection
+   - web browsing
+   - code interpreter
+   - Canvas
+   - ChatGPT Agent
+   - prompt optimizer
+   - research workflow
+   - decision brief
+   - brand kit
 keywords:
-  - GPT-5 prompting
-  - ChatGPT-5 prompts
-  - prompt engineering guide
-  - self-reflection rubric
-  - metaprompt
-  - prompt optimizer
-  - web browsing tool
-  - code interpreter
-  - ChatGPT agent
-  - OpenAI Canvas
-  - decision brief template
-  - brand kit prompt
-
+   - GPT-5 prompting
+   - ChatGPT-5 prompts
+   - prompt engineering guide
+   - self-reflection rubric
+   - metaprompt
+   - prompt optimizer
+   - web browsing tool
+   - code interpreter
+   - ChatGPT agent
+   - OpenAI Canvas
+   - decision brief template
+   - brand kit prompt
 location:
-  name: Bradbury, CA
-  coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
-
+   name: "Bradbury, CA"
+coordinates:
+   latitude: 34.1470
+   longitude: -117.9709
 image: "img/2025-08/GPT-5-router-model.webp"
 image-alt: "Guide for prompting GPT-5 with tools and optimizer"
 image-artist: "Ted Tschopp"
@@ -80,11 +71,9 @@ image-credits-artist-URL: "https://tedt.org/"
 image-credits-title: ""
 image-description: ""
 image-title: "GPT-5 Router Model"
-image_width: 1456 
-image_height:  816
-
-mastodon-post-id:
-
+image_width: 1456
+image_height: 816
+mastodon-post-id: ""
 ---
 > Why this works: GPT-5 is a *router* model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you **set the dials** (reasoning + verbosity), **name the tools**, and **force a quality loop**. OpenAI’s own guides and product notes back this approach. ([OpenAI Cookbook][1], [OpenAI Platform][2], [OpenAI][3])
 

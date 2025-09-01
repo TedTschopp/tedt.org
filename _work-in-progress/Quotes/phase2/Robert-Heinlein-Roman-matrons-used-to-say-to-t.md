@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Come Back with Your Shield or On It – Robert Heinlein'
 title-url: ''

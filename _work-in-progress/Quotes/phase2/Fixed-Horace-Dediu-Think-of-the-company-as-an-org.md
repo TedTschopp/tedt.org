@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Corporate Antibodies Against Innovation – Horace Dediu'
 title-url: ''

@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Doubts Before and After Decisions – Karl Kraus'
 title-url: ''

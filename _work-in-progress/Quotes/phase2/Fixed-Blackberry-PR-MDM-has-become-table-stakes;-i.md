@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'MDM Is No Longer a Differentiator – BlackBerry PR'
 title-url: ''

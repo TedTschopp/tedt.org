@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Impossible or Only Difficult – Samuel Johnson'
 title-url: ''

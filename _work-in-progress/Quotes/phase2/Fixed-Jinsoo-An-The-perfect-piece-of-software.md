@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'The Perfect Software Is Sterile – Jinsoo An'
 title-url: ''

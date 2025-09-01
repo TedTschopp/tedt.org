@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Do Not Confuse Motion with Progress – Alfred A. Montapert'
 title-url: ''

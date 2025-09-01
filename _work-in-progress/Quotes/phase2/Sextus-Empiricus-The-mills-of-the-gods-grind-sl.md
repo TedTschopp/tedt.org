@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'The Mills of the Gods – Sextus Empiricus'
 title-url: ''

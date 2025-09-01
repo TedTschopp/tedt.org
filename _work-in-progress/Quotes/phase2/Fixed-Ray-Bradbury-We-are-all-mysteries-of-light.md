@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Mysteries of Light and Dark – Ray Bradbury'
 title-url: ''

@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Science Has Great Beauty – Marie Curie'
 title-url: ''

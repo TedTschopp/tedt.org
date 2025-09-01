@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Ode to the Quick Computer – Ray Bradbury'
 title-url: ''

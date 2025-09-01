@@ -1,4 +1,6 @@
+---
 layout: quote
+published: false
 
 title: 'Life Is Short, Art Long – Hippocrates'
 title-url: ''

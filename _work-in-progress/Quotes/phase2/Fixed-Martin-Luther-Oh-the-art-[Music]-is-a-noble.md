@@ -1,5 +1,6 @@
 ---
 layout: quote
+published: false
 
 title: 'Music Is a Noble Commodity – Martin Luther'
 title-url: ''
