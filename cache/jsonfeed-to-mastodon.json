@@ -583,14 +583,15 @@
     "date_modified": "2025-08-30T19:54:03-07:00",
     "date_published": "2025-08-30T19:54:03-07:00",
     "id": "/Horace-Dediu-Think-of-the-company-as-an-org/",
-    "lastTootTimestamp": 1756677509318,
+    "lastTootTimestamp": 1756682870999,
     "summary": "",
     "title": null,
     "toots": [
       "https://tschopp.net/users/Ted/statuses/115121950660537165",
       "https://tschopp.net/users/Ted/statuses/115123401736603936",
       "https://tschopp.net/users/Ted/statuses/115124775536282766",
-      "https://tschopp.net/users/Ted/statuses/115125617244360204"
+      "https://tschopp.net/users/Ted/statuses/115125617244360204",
+      "https://tschopp.net/users/Ted/statuses/115125968629410197"
     ],
     "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/"
   },
@@ -865,6 +866,45 @@
     "toots": [
       "https://tschopp.net/users/Ted/statuses/115017677575205659"
     ]
+  },
+  "/Prompting-Guide-for-ChatGPT-5/": {
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "biography": [
+        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
+        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
+        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
+      ],
+      "email": "ted@tschopp.org",
+      "facebook_username": "ted.tschopp",
+      "familyname": "Tschopp",
+      "github_username": "TedTschopp",
+      "givenname": "Ted",
+      "google_username": "TedTschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "instagram_username": "tedtschopp",
+      "keybaseio_username": "tedtschopp",
+      "linkedin_username": "tedtschopp",
+      "mastodon_username": "TedT@twit.social",
+      "name": "Ted Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
+      "phonenumber": null,
+      "pinterest_username": "TedTschopp",
+      "quora_username": "Ted-Tschopp",
+      "reddit_username": "tedtschopp",
+      "threads_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "url": "https://tedt.org/",
+      "youtube_username": "TedTschopp"
+    },
+    "content_text": "Why this works: GPT-5 is a router model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you set the dials (reasoning + verbosity), name the tools, and force a quality loop. OpenAI’s own guides and product notes back this approach. (OpenAI Cookbook, OpenAI Platform, OpenAI)1) Set the Reasoning Dial (every time)Use explicit levels so the model doesn’t… https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
+    "date_modified": "2025-08-31T15:50:38-07:00",
+    "date_published": "2025-08-31T15:50:38-07:00",
+    "id": "/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
+    "summary": "",
+    "title": null,
+    "toots": [],
+    "url": "https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/"
   },
   "/Reprint-ICBM-by-Hanson-W-Baldwin/": {
     "id": "/Reprint-ICBM-by-Hanson-W-Baldwin/",
@@ -1885,8 +1925,8 @@
     "summary": "",
     "content_text": "Think of the company as an organism. Inside this organism there are entities – be they people, budgets, processes, or rules in binders. These are things that are designed to eat up innovation. To eat up changes to the core business. Companies do this not because they are stupid, but because they see this newcomer, this entrant, as a pathogen. It is seen as something that’s damaging the organism. … https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
     "url": "https://tedt.org/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org/",
-    "date_published": "2025-08-31T15:50:38-07:00",
-    "date_modified": "2025-08-31T15:50:38-07:00",
+    "date_published": "2025-08-31T16:27:41-07:00",
+    "date_modified": "2025-08-31T16:27:41-07:00",
     "author": {
       "name": "Ted Tschopp",
       "url": "https://tedt.org/",
@@ -1917,9 +1957,9 @@
       "threads_username": "tedtschopp"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115125968629410197"
+      "https://tschopp.net/users/Ted/statuses/115126225295180054"
     ],
-    "lastTootTimestamp": 1756682870999
+    "lastTootTimestamp": 1756686787447
   },
   "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/": {
     "id": "/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
@@ -1927,8 +1967,8 @@
     "summary": "",
     "content_text": "In life you have to do a lot of things you don’t fucking want to do. Many times, that’s what the fuck life is… one vile fucking task after another. https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
     "url": "https://tedt.org/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
-    "date_published": "2025-08-31T15:50:38-07:00",
-    "date_modified": "2025-08-31T15:50:38-07:00",
+    "date_published": "2025-08-31T16:27:41-07:00",
+    "date_modified": "2025-08-31T16:27:41-07:00",
     "author": {
       "name": "Ted Tschopp",
       "url": "https://tedt.org/",
@@ -1966,8 +2006,8 @@
     "summary": "",
     "content_text": "The highest moment in a man’s career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life. https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
     "url": "https://tedt.org/1905-01-01-Oscar-Wilde-The-highest-moment-in-a-mans/",
-    "date_published": "2025-08-31T15:50:38-07:00",
-    "date_modified": "2025-08-31T15:50:38-07:00",
+    "date_published": "2025-08-31T16:27:41-07:00",
+    "date_modified": "2025-08-31T16:27:41-07:00",
     "author": {
       "name": "Ted Tschopp",
       "url": "https://tedt.org/",
@@ -2005,8 +2045,8 @@
     "summary": "",
     "content_text": "Why this works: GPT-5 is a router model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you set the dials (reasoning + verbosity), name the tools, and force a quality loop. OpenAI’s own guides and product notes back this approach. (OpenAI Cookbook, OpenAI Platform, OpenAI)1) Set the Reasoning Dial (every time)Use explicit levels so the model doesn’t… https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
     "url": "https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/",
-    "date_published": "2025-08-31T15:50:38-07:00",
-    "date_modified": "2025-08-31T15:50:38-07:00",
+    "date_published": "2025-08-31T16:27:41-07:00",
+    "date_modified": "2025-08-31T16:27:41-07:00",
     "author": {
       "name": "Ted Tschopp",
       "url": "https://tedt.org/",
