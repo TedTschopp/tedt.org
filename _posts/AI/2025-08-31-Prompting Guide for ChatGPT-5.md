@@ -82,10 +82,11 @@ Use explicit levels so the model doesn’t “guess.”
 
 **Snippet (drop in any task)**
 
-```
+```markdown
 Reasoning: <think | think harder | ultra think>.
 Before answering, produce an internal plan, resolve ambiguities, surface trade-offs, and justify choices.
 ```
+{: .wrap }
 
 Why: OpenAI’s GPT-5 prompting guide calls out insufficient reasoning and recommends prompt optimization to correct it; explicitly requesting deeper reasoning improves outcomes. ([OpenAI Cookbook][1])
 
@@ -95,10 +96,11 @@ Pin the length and structure so you get the depth you want.
 
 **Snippet**
 
-```
+```markdown
 Verbosity: <low | medium | high>.
 Format: <bullets | numbered steps | sections + tables>.
 ```
+{: .wrap }
 
 Why: OpenAI’s prompt-engineering guides encourage clear format/length instructions; GPT-5’s optimizer also standardizes this in the revised prompt. ([OpenAI Help Center][4], [OpenAI Cookbook][5])
 
@@ -108,7 +110,7 @@ Tell ChatGPT which skills to invoke and what artifacts to return.
 
 **Template**
 
-```
+```markdown
 Tools to use in one pass:
 1) Web browsing: gather 8–12 recent, reputable sources; note dates.
 2) Data/Code: run Python to analyze and produce a CSV.
@@ -118,6 +120,7 @@ Tools to use in one pass:
 Return: links to files/embeds for each output.
 Reasoning: think harder. Verbosity: medium.
 ```
+{: .WRAP }
 
 Why: ChatGPT can coordinate multiple tools/skills in a single run (web, code, files, images, etc.), a capability surfaced in OpenAI’s docs on tools and the ChatGPT Agent. ([OpenAI Platform][2], [OpenAI][3])
 
@@ -127,12 +130,13 @@ Make the model quietly grade and fix its own work *before* you see it.
 
 **Drop-in block**
 
-```
+```markdown
 Self-reflection (private): Create a 5–7 category rubric for this task
 (e.g., Goal coverage, Factual accuracy with citations, Completeness, Technical quality, Readability/UX, Testability, Constraints met). 
 Iterate until the draft would score ≥90% overall, with no category <80%.
 Do not show the rubric or scores—only the improved result.
 ```
+{: .WRAP }
 
 Why: OpenAI’s GPT-5 prompting materials and optimizer emphasize evaluation loops; adding an internal rubric turns “one-shot” into “plan-draft-review-revise.” ([OpenAI Cookbook][1])
 
@@ -142,12 +146,13 @@ Fix the *prompt*, not just the output.
 
 **Repair prompt**
 
-```
+```markdown
 Metaprompt:
 Desired behavior: <what you wanted>.
 Undesired behavior: <what you got that you don't like>.
 Question: Provide minimal edits/additions to my original prompt so it consistently meets the desired behavior while preserving most wording. Return the revised prompt only.
 ```
+{: .WRAP }
 
 Why: “Meta-prompting” (have the model improve your prompt) is a documented best practice and pairs well with OpenAI’s prompt optimizer. ([OpenAI Platform][6], [OpenAI Cookbook][5])
 
@@ -159,7 +164,7 @@ Paste your final prompt into OpenAI’s optimizer; use the tightened version goi
 
 ### A) Decision Brief (research + data + PDF + citations)
 
-```
+```markdown
 Goal: Produce a decision brief on <topic>.
 Audience: execs.
 Reasoning: ultra think. Verbosity: high.
@@ -180,12 +185,13 @@ Structure:
 Self-reflection (private): coverage, credibility/recency, synthesis clarity, decision usefulness, risk balance, measurability. Iterate to ≥90%.
 Deliver: Markdown brief + CSV + PDF + bibliography with live links.
 ```
+{: .WRAP }
 
 Cite recency and credibility per OpenAI’s browsing/capabilities guidance. ([OpenAI Platform][2], [OpenAI Help Center][7])
 
 ### B) Production-Grade Feature (design → code → tests → verification)
 
-```
+```markdown
 Goal: Implement <feature> in <tech stack>.
 Reasoning: think harder. Verbosity: medium.
 
@@ -197,12 +203,13 @@ Outputs:
 
 Self-reflection (private): correctness, robustness, readability, security, test coverage, DX. Revise until all categories ≥80%.
 ```
+{: .WRAP }
 
 Backed by OpenAI tool docs (code execution/tools) and prompt-engineering guidance. ([OpenAI Platform][2], [OpenAI Help Center][4])
 
 ### C) Brand Kit (logo + PDF + posts + competitor table)
 
-```
+```markdown
 Goal: “<Name>” mini brand kit.
 Reasoning: think harder. Verbosity: medium.
 
@@ -214,6 +221,7 @@ Tools:
 
 Self-reflection (private): distinctiveness, legibility, consistency, practicality, copy clarity, differentiation. Iterate, then deliver links to assets.
 ```
+{: .WRAP }
 
 Leverages images, docs, browsing, and copy in one run; see tools and agent references. ([OpenAI Platform][2], [OpenAI][3])
 
@@ -254,7 +262,7 @@ Leverages images, docs, browsing, and copy in one run; see tools and agent refer
 
 Use this when you want reliable, citable research + a polished brief in one go.
 
-```
+```markdown
 Goal: Create a decision brief on <topic>.
 Audience: senior leadership.
 Reasoning: ultra think. Verbosity: high.
@@ -280,6 +288,7 @@ Constraints:
 Self-reflection (private): coverage, credibility/recency, synthesis clarity, decision usefulness, risk balance, measurability. Iterate until ≥90% overall; no category <80%.
 Deliver: links to PDF + CSV + Markdown + full reference list with live URLs.
 ```
+{: .WRAP }
 
 Justification: aligns directly with OpenAI’s tools/browsing guidance and prompt-optimization practices. ([OpenAI Platform][2], [OpenAI Cookbook][5])
 
