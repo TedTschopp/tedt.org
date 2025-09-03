@@ -128,20 +128,13 @@
                                                                                 {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
                                                                             {% endif %}
                                                                         {% endif %}
-                                                                        <h1 class="p-name card-title" style="z-index: 2; position: relative;">
-                                                                            {% if __cat_slug %}
-                                                                                {% include utility/category-label.html 
-                                                                                        category=__cat_slug 
-                                                                                        href=__cat_href 
-                                                                                        kind='title' 
-                                                                                        class_extra='text-decoration-none' 
-                                                                                        wrapper_class_extra='category-page-head' 
-                                                                                        legacy_class=false %}
-                                                                            {% else %}
-                                                                                {{ page.title }}
-                                                                            {% endif %}
-                                                                        </h1>
-                                                                        {% if page.subtitle %}<p class="card-subtitle h2 text-muted mb-2" style="z-index: 2; position: relative;">{{page.subtitle}}</p>{% endif %}
+                                                                        {%- comment -%}
+                                                                            The previous revision replaced the post title with a styled category label.
+                                                                            Requirement: revert to showing the real post title, keep palette styling,
+                                                                            remove underline from the title, and apply styled underline to the subtitle.
+                                                                        {%- endcomment -%}
+                                                                        <h1 class="p-name card-title" style="z-index:2; position:relative; text-decoration:none;">{{ page.title }}</h1>
+                                                                        {% if page.subtitle %}<p class="card-subtitle h2 mb-2 fw-semibold" style="z-index:2; position:relative; text-decoration:underline; text-underline-offset:.18em;">{{ page.subtitle }}</p>{% endif %}
 
                                     <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
                                         <!-- Author TODO: Fix this to be dynamic for more than one author. -->
