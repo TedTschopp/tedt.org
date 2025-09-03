@@ -20,12 +20,15 @@
     <p id="carousel-categories-instructions" class="visually-hidden">Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.</p>
   <div class="carousel-inner" role="list" aria-live="polite">
   {%- assign registry = site.data.category_registry -%}
-  {%- comment -%} Pass 1: count qualifying categories directly from registry (avoid push filter entirely). {%- endcomment -%}
-  {%- assign total = 0 -%}
+  {%- comment -%}
+    Build a sorted list of qualifying categories (those not hidden and having at least one post).
+    We store entries as slug||Title so we can sort naturally by the human-facing title/label.
+  {%- endcomment -%}
+  {%- assign cat_items = '' | split: '' -%}
   {%- for pair in registry -%}
     {%- assign slug = pair[0] | to_s | strip -%}
     {%- assign entry = pair[1] -%}
-  {%- if slug == '' -%}{%- continue -%}{%- endif -%}
+    {%- if slug == '' -%}{%- continue -%}{%- endif -%}
     {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
     {%- assign has_posts = false -%}
     {%- for p in site.posts -%}
@@ -45,40 +48,24 @@
         {%- if matched -%}{%- assign has_posts = true -%}{%- break -%}{%- endif -%}
       {%- endif -%}
     {%- endfor -%}
-    {%- if has_posts -%}{%- assign total = total | plus: 1 -%}{%- endif -%}
+    {%- if has_posts -%}
+      {%- assign title_for_sort = entry.label | default: entry.title | default: slug -%}
+      {%- assign composite = slug | append: '||' | append: title_for_sort -%}
+      {%- assign cat_items = cat_items | push: composite -%}
+    {%- endif -%}
   {%- endfor -%}
+  {%- assign cat_items = cat_items | sort_natural -%}
+  {%- assign total = cat_items.size -%}
   {%- if total == 0 -%}<div class="p-3 text-muted small">No categories with posts yet.</div>{%- endif -%}
-  {%- comment -%} Pass 2: render slides with index tracking (no push). {%- endcomment -%}
   {%- assign index = 0 -%}
-  {%- for pair in registry -%}
-    {%- assign slug = pair[0] | to_s | strip -%}
-    {%- assign entry = pair[1] -%}
-  {%- if slug == '' -%}{%- continue -%}{%- endif -%}
-    {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
-    {%- assign has_posts = false -%}
+  {%- for composite in cat_items -%}
+    {%- assign parts = composite | split: '||' -%}
+    {%- assign slug = parts[0] -%}
+    {%- assign entry = registry[slug] -%}
     {%- assign category_data_title = entry.title -%}
     {%- assign category_data_subtitle = entry.subtitle -%}
     {%- assign category_data_description = entry.description -%}
     {%- assign category_data_img = entry.image | default: '/img/categories/default.webp' -%}
-    {%- comment -%} Determine if any posts exist for this category. {%- endcomment -%}
-    {%- for p in site.posts -%}
-      {%- if p.categories -%}
-        {%- assign matched = false -%}
-        {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
-        {%- if matched == false and p.categories contains slug -%}{%- assign matched = true -%}{%- endif -%}
-        {%- if matched == false and entry.raw_names -%}
-          {%- if entry.raw_names.first -%}
-            {%- for rn in entry.raw_names -%}
-              {%- if p.categories contains rn -%}{%- assign matched = true -%}{%- break -%}{%- endif -%}
-            {%- endfor -%}
-          {%- else -%}
-            {%- if p.categories contains entry.raw_names -%}{%- assign matched = true -%}{%- endif -%}
-          {%- endif -%}
-        {%- endif -%}
-        {%- if matched -%}{%- assign has_posts = true -%}{%- break -%}{%- endif -%}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- unless has_posts -%}{%- continue -%}{%- endunless -%}
     {%- assign index = index | plus: 1 -%}
     <div class="carousel-item{% if index == 1 %} active{% endif %}" role="listitem" aria-roledescription="slide" aria-label="Slide {{ index }} of {{ total }}: {{ category_data_title | escape }}" {% if index == 1 %}aria-current="true"{% endif %} data-bs-interval="4000" data-category-index="{{ index | minus: 1 }}">
             <div class="card-group">
