@@ -33,6 +33,7 @@ ai:
   category_home_page: /category/Artificial Intelligence/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 movies:
   title: Movies
@@ -54,6 +55,7 @@ movies:
   category_home_page: /category/Movies/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 bestiary:
   title: Bestiary
@@ -75,6 +77,7 @@ bestiary:
   category_home_page: /category/Bestiary/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 monsters:
   title: Monsters
@@ -96,6 +99,7 @@ monsters:
   category_home_page: /category/Monsters/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 books:
   title: Books
@@ -117,6 +121,7 @@ books:
   category_home_page: /category/Books/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 communications:
   title: Communications
@@ -137,6 +142,7 @@ communications:
   category_home_page: /category/Communications/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 computers:
   title: Computers
@@ -158,6 +164,7 @@ computers:
   category_home_page: /category/Computers/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 dcc:
   title: Dungeon Crawl Classics
@@ -182,6 +189,7 @@ dcc:
   category_home_page: /category/Dungeon Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 dnd:
   title: Dungeons & Dragons
@@ -204,6 +212,7 @@ dnd:
   category_home_page: "/category/Dungeons & Dragons/"
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 folklore:
   title: Folklore
@@ -227,6 +236,7 @@ folklore:
   category_home_page: /category/Folklore/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 gamma-world:
   title: Gamma World
@@ -250,6 +260,7 @@ gamma-world:
   hide_from_carousel: false
   hide_from_category_list: false
   category_home_page: /category/Gamma World/
+  inline_style: "vertical-align: middle;"
 
 gurps:
   title: GURPS
@@ -272,6 +283,7 @@ gurps:
   category_home_page: /category/Gurps/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 home:
   title: Home
@@ -291,6 +303,7 @@ home:
   category_home_page: /category/Home/
   hide_from_carousel: true
   hide_from_category_list: true
+  inline_style: "vertical-align: middle;"
 
 maps:
   title: Maps
@@ -312,6 +325,7 @@ maps:
   category_home_page: /category/Maps/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 middle-earth:
   title: Middle-earth
@@ -334,6 +348,7 @@ middle-earth:
   category_home_page: /category/Middle-earth/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 mobile:
   title: Mobile
@@ -355,6 +370,7 @@ mobile:
   category_home_page: /category/Mobile/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 opinion:
   title: Opinion
@@ -375,6 +391,7 @@ opinion:
   category_home_page: /category/Opinion/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 personal-writing:
   title: Personal Writing
@@ -397,6 +414,7 @@ personal-writing:
   category_home_page: /category/Personal Writing/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 philosophy:
   title: Philosophy
@@ -417,6 +435,7 @@ philosophy:
   category_home_page: /category/Philosophy/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 projects:
   title: Projects
@@ -437,6 +456,7 @@ projects:
   category_home_page: /category/Projects/
   hide_from_carousel: true
   hide_from_category_list: true
+  inline_style: "vertical-align: middle;"
 
 prompts:
   title: Prompt Library
@@ -458,6 +478,7 @@ prompts:
   category_home_page: /category/Prompts/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 quotes:
   title: Quotes
@@ -478,6 +499,7 @@ quotes:
   category_home_page: /category/Quotes/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 religion:
   title: Religion
@@ -498,6 +520,7 @@ religion:
   category_home_page: /category/Religion/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 reprint:
   title: Reprint
@@ -519,6 +542,7 @@ reprint:
   category_home_page: /category/Reprint/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 role-playing-games:
   title: Role Playing Games
@@ -541,6 +565,7 @@ role-playing-games:
   category_home_page: /category/Role Playing Games/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 science:
   title: Science
@@ -561,6 +586,7 @@ science:
   category_home_page: /category/Science/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 shadowrun:
   title: Shadowrun
@@ -582,6 +608,7 @@ shadowrun:
   category_home_page: /category/Shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 mutant-crawl-classics:
   title: Mutant Crawl Classics
@@ -605,7 +632,7 @@ mutant-crawl-classics:
   category_home_page: /category/Mutant Crawl Classics/
   hide_from_carousel: false
   hide_from_category_list: false
-  inline_style: "white-space: nowrap;"
+  inline_style: "white-space: nowrap; vertical-align: middle;"
 
 marchen-engine:
   title: The Märchen Engine
@@ -628,6 +655,7 @@ marchen-engine:
   category_home_page: "/category/The Märchen Engine/"
   hide_from_carousel: false
   hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
 
 draft:
   title: Draft
@@ -648,6 +676,7 @@ draft:
   category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true
+  inline_style: "vertical-align: middle;"
 
 blog:
   title: Blog
@@ -668,3 +697,4 @@ blog:
     titleWeight: 600
   hide_from_carousel: true
   hide_from_category_list: true
+  inline_style: "vertical-align: middle;"

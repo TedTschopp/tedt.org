@@ -114,6 +114,9 @@
          url('https://tedt.org/fonts/DuvallSmallCaps.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-variant-numeric: oldstyle-nums ordinal;
+	font-feature-settings: "smcp" 1, "c2sc" 1;
 }
 @font-face {
     font-family: 'GameEmpire';
