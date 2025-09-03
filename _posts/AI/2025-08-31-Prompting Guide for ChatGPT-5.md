@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Prompting ChatGPT-5 (Specifically): 6 Moves That Consistently Work"
-subtitle: "Set reasoning, verbosity, tools, and a private quality loop to get reliable results."
+title: "Prompting ChatGPT-5 Specifically"
+subtitle: "6 Moves That Consistently Work"
 quote: "GPT-5 is a router model that can think, browse, code, write, and orchestrate tools."
 excerpt: "Six proven moves to get consistent, high‑quality results from GPT‑5: set the reasoning and verbosity dials, name tools and outputs, enforce a self‑review loop, and use the official optimizer. Includes copy‑paste blueprints for research, code, branding, and a one‑page brief."
 source: "Original Content"
@@ -73,6 +73,10 @@ image-title: "GPT-5 Router Model"
 image_width: 1456
 image_height: 816
 mastodon-post-id: ""
+
+redirect_from:
+  - /Prompting-Guide-for-ChatGPT-5/
+
 ---
 > Why this works: GPT-5 is a *router* model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you **set the dials** (reasoning + verbosity), **name the tools**, and **force a quality loop**. OpenAI’s own guides and product notes back this approach. ([OpenAI Cookbook][1], [OpenAI Platform][2], [OpenAI][3])
 
