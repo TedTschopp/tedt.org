@@ -109,6 +109,18 @@
                                                                             {% capture __cat_slug %}{% include utility/map-category-to-registry.html key=__primary_category_raw %}{% endcapture %}
                                                                             {% assign __cat_slug = __cat_slug | strip %}
                                                                             {% if __cat_slug == '' %}{% assign __cat_slug = __primary_category_raw | slugify %}{% endif %}
+                                                                                                                                                        {%- comment -%} Fallback: if slug not found in registry, try matching by registry title {%- endcomment -%}
+                                                                                                                                                        {% if site.data.category_registry[__cat_slug] == nil %}
+                                                                                                                                                            {% assign __title_norm = __primary_category_raw | downcase %}
+                                                                                                                                                            {% for pair in site.data.category_registry %}
+                                                                                                                                                                {% assign _slug = pair[0] %}
+                                                                                                                                                                {% assign _entry = pair[1] %}
+                                                                                                                                                                {% if _entry.title and _entry.title | downcase == __title_norm %}
+                                                                                                                                                                    {% assign __cat_slug = _slug %}
+                                                                                                                                                                    {% break %}
+                                                                                                                                                                {% endif %}
+                                                                                                                                                            {% endfor %}
+                                                                                                                                                        {% endif %}
                                                                             {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
                                                                             {% if __cat_entry and __cat_entry.category_home_page %}
                                                                                 {% assign __cat_href = __cat_entry.category_home_page %}

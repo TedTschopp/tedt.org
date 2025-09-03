@@ -30,7 +30,7 @@ ai:
     titleWeight: 800
   subtitle: "Where Intelligence Becomes Imagination, & Imagination Shapes the Future"
   description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
-  category_home_page: /category/Artificial Intelligence/
+  category_home_page: /category/ai/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -52,7 +52,7 @@ movies:
     titleHoverColorLight: "#f97316"
     titleHoverColorDark: "#eab308"
     titleWeight: 500
-  category_home_page: /category/Movies/
+  category_home_page: /category/movies/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -74,7 +74,7 @@ bestiary:
     titleHoverColorLight: "#f59e0b"
     titleHoverColorDark: "#16a34a"
     titleWeight: 500
-  category_home_page: /category/Bestiary/
+  category_home_page: /category/bestiary/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -96,7 +96,7 @@ monsters:
     titleHoverColorLight: "#7e22ce"
     titleHoverColorDark: "#ec4899"
     titleWeight: 500
-  category_home_page: /category/Monsters/
+  category_home_page: /category/monsters/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -118,14 +118,14 @@ books:
     titleHoverColorLight: "#f43f5e"
     titleHoverColorDark: "#6366f1"
     titleWeight: 500
-  category_home_page: /category/Books/
+  category_home_page: /category/books/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
 communications:
   title: Communications
-  raw_names: [ "Communications" ]
+  raw_names: [ "Communications", "Collaboration", "Collaborations" ]
   class: Communications
   emoji: "📞"
   subtitle: "Staying Connected in a Disconnected World"
@@ -139,14 +139,14 @@ communications:
     titleHoverColorLight: "#06b6d4"
     titleHoverColorDark: "#0ea5e9"
     titleWeight: 500
-  category_home_page: /category/Communications/
+  category_home_page: /category/communications/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
 computers:
   title: Computers
-  raw_names: [ "Computers", "Computer-Post" ]
+  raw_names: [ "Computers", "Computer-Post", "Internet History", "Internet-History" ]
   class: Computer-Post
   emoji: "💻"
   subtitle: "The Heart of Modern Adventures"
@@ -161,7 +161,7 @@ computers:
     titleHoverColorLight: "#22c55e"
     titleHoverColorDark: "#84cc16"
     titleWeight: 500
-  category_home_page: /category/Computers/
+  category_home_page: /category/computers/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -186,7 +186,7 @@ dcc:
     titleShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1)"
     titleHoverShadow: "-2px -2px 0px rgba(234,226,33,1),2px 2px 0px rgba(234,226,33,1),2px -2px 0px rgba(234,226,33,1),-2px 2px 0px rgba(234,226,33,1),0px 2px 0px rgba(234,226,33,1),0px -2px 0px rgba(234,226,33,1),2px 0px 0px rgba(234,226,33,1),-2px 0px 0px rgba(234,226,33,1),-3px -3px 0px rgba(255,0,27,1),3px 3px 0px rgba(255,0,27,1),3px -3px 0px rgba(255,0,27,1),-3px 3px 0px rgba(255,0,27,1),0px 3px 0px rgba(255,0,27,1),0px -3px 0px rgba(255,0,27,1),3px 0px 0px rgba(255,0,27,1),-3px 0px 0px rgba(255,0,27,1)"
     titleWeight: 500
-  category_home_page: /category/Dungeon Crawl Classics/
+  category_home_page: /category/dcc/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -209,7 +209,7 @@ dnd:
     titleHoverColorLight: "#eab308"
     titleHoverColorDark: "#ef4444"
     titleWeight: 500
-  category_home_page: "/category/Dungeons & Dragons/"
+  category_home_page: /category/dnd/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -233,7 +233,7 @@ folklore:
     titleHoverColorLight: "#f59e0b"
     titleHoverColorDark: "#92400e"
     titleWeight: 500
-  category_home_page: /category/Folklore/
+  category_home_page: /category/folklore/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -259,7 +259,7 @@ gamma-world:
     titleWeight: 500
   hide_from_carousel: false
   hide_from_category_list: false
-  category_home_page: /category/Gamma World/
+  category_home_page: /category/gamma-world/
   inline_style: "vertical-align: middle;"
 
 gurps:
@@ -280,7 +280,7 @@ gurps:
     titleHoverColorLight: "#eab308"
     titleHoverColorDark: "#64748b"
     titleWeight: 500
-  category_home_page: /category/Gurps/
+  category_home_page: /category/gurps/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -300,7 +300,7 @@ home:
     titleHoverColorLight: "#f43f5e"
     titleHoverColorDark: "#f472b6"
     titleWeight: 500
-  category_home_page: /category/Home/
+  category_home_page: /category/home/
   hide_from_carousel: true
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
@@ -322,14 +322,14 @@ maps:
     titleHoverColorLight: "#22c55e"
     titleHoverColorDark: "#14b8a6"
     titleWeight: 500
-  category_home_page: /category/Maps/
+  category_home_page: /category/maps/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
 middle-earth:
   title: Middle-earth
-  raw_names: [ "Middle-earth", "LotR", "Middle-eartH" ]
+  raw_names: [ "Middle-earth", "LotR", "Middle-eartH", "Tolkien", "tolkien" ]
   class: LotR
   label: "Middle-eartH"
   emoji: "🌋"
@@ -345,7 +345,7 @@ middle-earth:
     titleHoverColorLight: "#d97706"
     titleHoverColorDark: "#166534"
     titleWeight: 500
-  category_home_page: /category/Middle-earth/
+  category_home_page: /category/middle-earth/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -367,7 +367,7 @@ mobile:
     titleHoverColorLight: "#0ea5e9"
     titleHoverColorDark: "#8b5cf6"
     titleWeight: 500
-  category_home_page: /category/Mobile/
+  category_home_page: /category/mobile/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -388,7 +388,7 @@ opinion:
     titleHoverColorLight: "#0ea5e9"
     titleHoverColorDark: "#94a3b8"
     titleWeight: 500
-  category_home_page: /category/Opinion/
+  category_home_page: /category/opinion/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -411,7 +411,27 @@ personal-writing:
     titleHoverColorDark: "#f43f5e"
     titleWeight: 500
     titleSize: 2rem
-  category_home_page: /category/Personal Writing/
+  category_home_page: /category/personal-writing/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
+fandom:
+  title: Fandom
+  raw_names: [ "Fandom" ]
+  class: Fandom
+  emoji: "⭐"
+  subtitle: "Celebrating Fan Culture & Communities"
+  description: "Explorations of fan culture across books, films, games, and digital communities—analysis, commentary, and the stories fans tell together."
+  palette:
+    start: "#ec4899"
+    end: "#6366f1"
+    titleColorLight: "#6366f1"
+    titleColorDark: "#ec4899"
+    titleHoverColorLight: "#6366f1"
+    titleHoverColorDark: "#ec4899"
+    titleWeight: 500
+  category_home_page: /category/fandom/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -432,7 +452,7 @@ philosophy:
     titleHoverColorLight: "#6366f1"
     titleHoverColorDark: "#334155"
     titleWeight: 500
-  category_home_page: /category/Philosophy/
+  category_home_page: /category/philosophy/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -453,7 +473,7 @@ projects:
     titleHoverColorLight: "#22c55e"
     titleHoverColorDark: "#3b82f6"
     titleWeight: 500
-  category_home_page: /category/Projects/
+  category_home_page: /category/projects/
   hide_from_carousel: true
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
@@ -475,7 +495,7 @@ prompts:
     titleHoverColorDark: "#a78bfa"
     titleWeight: 500
   image: /img/categories/prompt_library.webp
-  category_home_page: /category/Prompts/
+  category_home_page: /category/prompts/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -496,7 +516,7 @@ quotes:
     titleHoverColorLight: "#3b82f6"
     titleHoverColorDark: "#06b6d4"
     titleWeight: 500
-  category_home_page: /category/Quotes/
+  category_home_page: /category/quotes/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -517,7 +537,7 @@ religion:
     titleHoverColorLight: "#7e22ce"
     titleHoverColorDark: "#eab308"
     titleWeight: 500
-  category_home_page: /category/Religion/
+  category_home_page: /category/religion/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -539,7 +559,7 @@ reprint:
     titleHoverColorLight: "#64748b"
     titleHoverColorDark: "#94a3b8"
     titleWeight: 500
-  category_home_page: /category/Reprint/
+  category_home_page: /category/reprint/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -562,7 +582,7 @@ role-playing-games:
     titleHoverColorLight: "#ef4444"
     titleHoverColorDark: "#7e22ce"
     titleWeight: 500
-  category_home_page: /category/Role Playing Games/
+  category_home_page: /category/role-playing-games/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -583,7 +603,7 @@ science:
     titleHoverColorLight: "#14b8a6"
     titleHoverColorDark: "#0ea5e9"
     titleWeight: 500
-  category_home_page: /category/Science/
+  category_home_page: /category/science/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -605,7 +625,7 @@ shadowrun:
     titleHoverColorLight: "#c9412f"
     titleHoverColorDark: "#000000"
     titleWeight: 500
-  category_home_page: /category/Shadowrun/
+  category_home_page: /category/shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -629,7 +649,7 @@ mutant-crawl-classics:
     titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
     titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
     titleWeight: 500
-  category_home_page: /category/Mutant Crawl Classics/
+  category_home_page: /category/mutant-crawl-classics/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "white-space: nowrap; vertical-align: middle;"
@@ -652,7 +672,7 @@ marchen-engine:
     titleHoverColorLight: "#f59e0b"
     titleHoverColorDark: "#a21caf"
     titleWeight: 500
-  category_home_page: "/category/The Märchen Engine/"
+  category_home_page: /category/marchen-engine/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -673,7 +693,7 @@ draft:
     titleHoverColorLight: "#94a3b8"
     titleHoverColorDark: "#64748b"
     titleWeight: 500
-  category_home_page: /category/Draft/
+  category_home_page: /category/draft/
   hide_from_carousel: true
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
