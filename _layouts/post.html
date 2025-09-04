@@ -109,21 +109,21 @@
                                                                             {% capture __cat_slug %}{% include utility/map-category-to-registry.html key=__primary_category_raw %}{% endcapture %}
                                                                             {% assign __cat_slug = __cat_slug | strip %}
                                                                             {% if __cat_slug == '' %}{% assign __cat_slug = __primary_category_raw | slugify %}{% endif %}
-                                                                                                                                                        {%- comment -%} Fallback: if slug not found in registry, try matching by registry title {%- endcomment -%}
-                                                                                                                                                        {% if site.data.category_registry[__cat_slug] == nil %}
-                                                                                                                                                            {% assign __title_norm = __primary_category_raw | downcase %}
-                                                                                                                                                            {% for pair in site.data.category_registry %}
-                                                                                                                                                                {% assign _slug = pair[0] %}
-                                                                                                                                                                {% assign _entry = pair[1] %}
-                                                                                                                                                                {% if _entry.title %}
-                                                                                                                                                                    {% assign _entry_title_down = _entry.title | downcase %}
-                                                                                                                                                                    {% if _entry_title_down == __title_norm %}
-                                                                                                                                                                        {% assign __cat_slug = _slug %}
-                                                                                                                                                                        {% break %}
-                                                                                                                                                                    {% endif %}
-                                                                                                                                                                {% endif %}
-                                                                                                                                                            {% endfor %}
-                                                                                                                                                        {% endif %}
+                                                                                {%- comment -%} Fallback: if slug not found in registry, try matching by registry title {%- endcomment -%}
+                                                                                {% if site.data.category_registry[__cat_slug] == nil %}
+                                                                                    {% assign __title_norm = __primary_category_raw | downcase %}
+                                                                                    {% for pair in site.data.category_registry %}
+                                                                                        {% assign _slug = pair[0] %}
+                                                                                        {% assign _entry = pair[1] %}
+                                                                                        {% if _entry.title %}
+                                                                                            {% assign _entry_title_down = _entry.title | downcase %}
+                                                                                            {% if _entry_title_down == __title_norm %}
+                                                                                                {% assign __cat_slug = _slug %}
+                                                                                                {% break %}
+                                                                                            {% endif %}
+                                                                                        {% endif %}
+                                                                                    {% endfor %}
+                                                                                {% endif %}
                                                                             {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
                                                                             {% if __cat_entry and __cat_entry.category_home_page %}
                                                                                 {% assign __cat_href = __cat_entry.category_home_page %}
@@ -261,12 +261,12 @@
                                             {% capture __cat_slug %}{% include utility/map-category-to-registry.html key=thiscategory %}{% endcapture %}
                                             {% assign __cat_slug = __cat_slug | strip %}
                                             {% if __cat_slug == '' %}{% assign __cat_slug = thiscategory | slugify %}{% endif %}
-                                                                                        {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
-                                                                                        {% if __cat_entry and __cat_entry.category_home_page %}
-                                                                                            {% assign __cat_href = __cat_entry.category_home_page %}
-                                                                                        {% else %}
-                                                                                            {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
-                                                                                        {% endif %}
+                                                {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
+                                                {% if __cat_entry and __cat_entry.category_home_page %}
+                                                    {% assign __cat_href = __cat_entry.category_home_page %}
+                                                {% else %}
+                                                    {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
+                                                {% endif %}
 
                                             {% if forloop.length == 1 %}
                                                 <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" >{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
@@ -336,11 +336,11 @@
                     <hr>
 
                 </main>
-
-                    {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
-                        {% include social/comments-mastodon-tree.html %}
-                    {% endif %}
                 <hr>
+
+                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                    {% include social/comments-mastodon-tree.html %}
+                {% endif %}
 
                 {% include social/comments-webmentions.html %}
 

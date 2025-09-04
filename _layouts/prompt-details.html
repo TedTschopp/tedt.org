@@ -527,6 +527,15 @@
         </div>
     </main>
 
+    <hr>
+
+    {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+        {% include social/comments-mastodon-tree.html %}
+    {% endif %}
+    
+    {% include social/comments-webmentions.html %}
+
+
     <!-- Footer -->
     {% include layout/footer.html %}
 

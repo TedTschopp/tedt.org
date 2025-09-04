@@ -220,10 +220,11 @@
                 {% include content/next-and-previous.html %}
 
                 <hr>
+                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                    {% include social/comments-mastodon-tree.html %}
+                {% endif %}
 
                 {% include social/comments-webmentions.html %}
-
-                {% include social/comments.html %}
 
             </div>
 

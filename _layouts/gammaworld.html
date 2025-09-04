@@ -247,8 +247,10 @@
                     </nav>
 
                     <hr>
+                    {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                         {% include social/comments-mastodon-tree.html %}
+                    {% endif %}
 
-                    {% include social/comments.html %}
                     {% include social/comments-webmentions.html %}
                </section>
                <aside class="d-none d-lg-block col-lg-1" id="papermargin_right" aria-hidden="true"></aside>
