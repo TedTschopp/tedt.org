@@ -115,9 +115,12 @@
                                                                                                                                                             {% for pair in site.data.category_registry %}
                                                                                                                                                                 {% assign _slug = pair[0] %}
                                                                                                                                                                 {% assign _entry = pair[1] %}
-                                                                                                                                                                {% if _entry.title and _entry.title | downcase == __title_norm %}
-                                                                                                                                                                    {% assign __cat_slug = _slug %}
-                                                                                                                                                                    {% break %}
+                                                                                                                                                                {% if _entry.title %}
+                                                                                                                                                                    {% assign _entry_title_down = _entry.title | downcase %}
+                                                                                                                                                                    {% if _entry_title_down == __title_norm %}
+                                                                                                                                                                        {% assign __cat_slug = _slug %}
+                                                                                                                                                                        {% break %}
+                                                                                                                                                                    {% endif %}
                                                                                                                                                                 {% endif %}
                                                                                                                                                             {% endfor %}
                                                                                                                                                         {% endif %}
