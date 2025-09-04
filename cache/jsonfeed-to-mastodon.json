@@ -903,7 +903,7 @@
     "date_published": "2025-08-31T15:50:38-07:00",
     "id": "/Prompting-Guide-for-ChatGPT-5/",
     "image": "https://tedt.org/img/2025-08/GPT-5-router-model.webp",
-    "lastTootTimestamp": 1756948819136,
+    "lastTootTimestamp": 1756967262974,
     "summary": "Six proven moves to get consistent, high‑quality results from GPT‑5: set the reasoning and verbosity dials, name tools and outputs, enforce a self‑review loop, and use the official optimizer. Includes copy‑paste blueprints for research, code, branding, and a one‑page brief.",
     "tags": [
       "GPT-5",
@@ -936,7 +936,8 @@
       "https://tschopp.net/users/Ted/statuses/115140164623896392",
       "https://tschopp.net/users/Ted/statuses/115140456730025140",
       "https://tschopp.net/users/Ted/statuses/115141769640442742",
-      "https://tschopp.net/users/Ted/statuses/115143397804323451"
+      "https://tschopp.net/users/Ted/statuses/115143397804323451",
+      "https://tschopp.net/users/Ted/statuses/115144606537749794"
     ],
     "url": "https://tedt.org/2025-08-31-Prompting-Guide-for-ChatGPT-5/"
   },
@@ -1984,9 +1985,9 @@
       "url": "https://tedt.org/"
     },
     "toots": [
-      "https://tschopp.net/users/Ted/statuses/115144606537749794"
+      "https://tschopp.net/users/Ted/statuses/115146055025905388"
     ],
-    "lastTootTimestamp": 1756967262974
+    "lastTootTimestamp": 1756989365106
   },
   "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
     "id": "/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
