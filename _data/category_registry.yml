@@ -23,6 +23,7 @@ ai:
   palette:
     start: "#06b6d4"
     end: "#a78bfa"
+    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'
     titleColorLight: "#a78bfa"
     titleColorDark: "#06b6d4"
     titleHoverColorLight: "#a78bfa"
@@ -31,28 +32,6 @@ ai:
   subtitle: "Where Intelligence Becomes Imagination, & Imagination Shapes the Future"
   description: "Discover how artificial intelligence is reshaping the world—from generative tools to enterprise strategy and ethical impact."
   category_home_page: /category/ai/
-  hide_from_carousel: false
-  hide_from_category_list: false
-  inline_style: "vertical-align: middle;"
-
-movies:
-  title: Movies
-  raw_names: [ "Movies", "Movies-Post" ]
-  class: Movies-Post
-  emoji: "🎬"
-  subtitle: "Cinema for the Imaginative"
-  description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
-  image: /img/categories/movies.webp
-  palette:
-    start: "#eab308"
-    end: "#f97316"
-    fontTitle: '"Limelight","Times New Roman",Times,serif'
-    titleColorLight: "#f97316"
-    titleColorDark: "#eab308"
-    titleHoverColorLight: "#f97316"
-    titleHoverColorDark: "#eab308"
-    titleWeight: 500
-  category_home_page: /category/movies/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -75,28 +54,6 @@ bestiary:
     titleHoverColorDark: "#16a34a"
     titleWeight: 500
   category_home_page: /category/bestiary/
-  hide_from_carousel: false
-  hide_from_category_list: false
-  inline_style: "vertical-align: middle;"
-
-monsters:
-  title: Monsters
-  raw_names: [ "Monsters", "Monster-Post" ]
-  class: Monster-Post
-  emoji: "👹"
-  subtitle: "Terrifying Creatures and How to Defeat Them"
-  description: "Information, strategies, and detailed descriptions of various monsters found in role-playing games. Learn how to tackle these creatures in your campaigns."
-  image: /img/categories/monsters.webp
-  palette:
-    start: "#ec4899"
-    end: "#7e22ce"
-    fontTitle: '"Bestiary",sans-serif'
-    titleColorLight: "#7e22ce"
-    titleColorDark: "#ec4899"
-    titleHoverColorLight: "#7e22ce"
-    titleHoverColorDark: "#ec4899"
-    titleWeight: 500
-  category_home_page: /category/monsters/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -134,6 +91,7 @@ communications:
   palette:
     start: "#0ea5e9"
     end: "#06b6d4"
+    fontTitle: '"Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;'
     titleColorLight: "#06b6d4"
     titleColorDark: "#0ea5e9"
     titleHoverColorLight: "#06b6d4"
@@ -214,6 +172,27 @@ dnd:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+fandom:
+  title: Fandom
+  raw_names: [ "Fandom" ]
+  class: Fandom
+  emoji: "⭐"
+  subtitle: "Celebrating Fan Culture & Communities"
+  description: "Explorations of fan culture across books, films, games, and digital communities—analysis, commentary, and the stories fans tell together."
+  palette:
+    start: "#ec4899"
+    end: "#6366f1"
+    fontTitle: '"Bangers", Impact, "Arial Black", sans-serif;'
+    titleColorLight: "#6366f1"
+    titleColorDark: "#ec4899"
+    titleHoverColorLight: "#6366f1"
+    titleHoverColorDark: "#ec4899"
+    titleWeight: 500
+  category_home_page: /category/fandom/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
 folklore:
   title: Folklore
   raw_names: [ "Folklore", "FolkLore", "ᚠᛟᛚᚲ ᛚᛟᚱᛖ" ]
@@ -285,26 +264,6 @@ gurps:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
-home:
-  title: Home
-  raw_names: [ "Home" ]
-  class: Home
-  emoji: "🏠"
-  subtitle: "Landing Page"
-  description: "Primary site landing content and featured highlights."
-  palette:
-    start: "#f472b6"
-    end: "#f43f5e"
-    titleColorLight: "#f43f5e"
-    titleColorDark: "#f472b6"
-    titleHoverColorLight: "#f43f5e"
-    titleHoverColorDark: "#f472b6"
-    titleWeight: 500
-  category_home_page: /category/home/
-  hide_from_carousel: true
-  hide_from_category_list: true
-  inline_style: "vertical-align: middle;"
-
 maps:
   title: Maps
   raw_names: [ "Maps" ]
@@ -323,6 +282,29 @@ maps:
     titleHoverColorDark: "#14b8a6"
     titleWeight: 500
   category_home_page: /category/maps/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
+marchen-engine:
+  title: The Märchen Engine
+  raw_names: [ "The Märchen Engine", "marchen" ]
+  class: marchen
+  emoji: "🧚"
+  subtitle: "Fantasy Storytelling Engine"
+  description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
+  image: /img/categories/the-märchen-engine.webp
+  palette:
+    start: "#a21caf"
+    end: "#f59e0b"
+    fontTitle: '"IM Fell DW Pica",serif'
+    titleStyle: italic
+    titleColorLight: "#f59e0b"
+    titleColorDark: "#a21caf"
+    titleHoverColorLight: "#f59e0b"
+    titleHoverColorDark: "#a21caf"
+    titleWeight: 500
+  category_home_page: /category/marchen-engine/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
@@ -372,6 +354,74 @@ mobile:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+monsters:
+  title: Monsters
+  raw_names: [ "Monsters", "Monster-Post" ]
+  class: Monster-Post
+  emoji: "👹"
+  subtitle: "Terrifying Creatures and How to Defeat Them"
+  description: "Information, strategies, and detailed descriptions of various monsters found in role-playing games. Learn how to tackle these creatures in your campaigns."
+  image: /img/categories/monsters.webp
+  palette:
+    start: "#ec4899"
+    end: "#7e22ce"
+    fontTitle: '"Bestiary",sans-serif'
+    titleColorLight: "#7e22ce"
+    titleColorDark: "#ec4899"
+    titleHoverColorLight: "#7e22ce"
+    titleHoverColorDark: "#ec4899"
+    titleWeight: 500
+  category_home_page: /category/monsters/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
+movies:
+  title: Movies
+  raw_names: [ "Movies", "Movies-Post" ]
+  class: Movies-Post
+  emoji: "🎬"
+  subtitle: "Cinema for the Imaginative"
+  description: "Reviews, discussions, and reflections on films that spark imagination and offer rich storytelling. Explore a variety of genres and discover new favorites."
+  image: /img/categories/movies.webp
+  palette:
+    start: "#eab308"
+    end: "#f97316"
+    fontTitle: '"Limelight","Times New Roman",Times,serif'
+    titleColorLight: "#f97316"
+    titleColorDark: "#eab308"
+    titleHoverColorLight: "#f97316"
+    titleHoverColorDark: "#eab308"
+    titleWeight: 500
+  category_home_page: /category/movies/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
+mutant-crawl-classics:
+  title: Mutant Crawl Classics
+  raw_names: [ "Mutant Crawl Classics", "MCC" ]
+  class: MCC
+  emoji: "🧬"
+  subtitle: "Adventures in a Post-Apocalyptic World"
+  description: "Guides and explorations for thrilling adventures in the world of Mutant Crawl Classics. Delve into post-apocalyptic scenarios and enhance your gameplay."
+  image: /img/categories/mutant-crawl-classics.webp
+  palette:
+    start: "#ffe205"
+    end: "#018249"
+    fontTitle: '"IrwinAllen","Helvetica Neue",Helvetica,Arial,sans-serif'
+    titleColorDark: "rgba(1,130,73,1)"
+    titleColorLight: "#01a865"
+    titleHoverColorLight: "#01a865"
+    titleHoverColorDark: "rgba(1,130,73,1)"
+    titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
+    titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
+    titleWeight: 500
+  category_home_page: /category/mutant-crawl-classics/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "white-space: nowrap; vertical-align: middle;"
+
 opinion:
   title: Opinion
   raw_names: [ "Opinion" ]
@@ -383,6 +433,7 @@ opinion:
   palette:
     start: "#94a3b8"
     end: "#0ea5e9"
+    fontTitle: '"Libre Baskerville", Baskerville, Georgia, serif'
     titleColorLight: "#0ea5e9"
     titleColorDark: "#94a3b8"
     titleHoverColorLight: "#0ea5e9"
@@ -416,26 +467,6 @@ personal-writing:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
-fandom:
-  title: Fandom
-  raw_names: [ "Fandom" ]
-  class: Fandom
-  emoji: "⭐"
-  subtitle: "Celebrating Fan Culture & Communities"
-  description: "Explorations of fan culture across books, films, games, and digital communities—analysis, commentary, and the stories fans tell together."
-  palette:
-    start: "#ec4899"
-    end: "#6366f1"
-    titleColorLight: "#6366f1"
-    titleColorDark: "#ec4899"
-    titleHoverColorLight: "#6366f1"
-    titleHoverColorDark: "#ec4899"
-    titleWeight: 500
-  category_home_page: /category/fandom/
-  hide_from_carousel: false
-  hide_from_category_list: false
-  inline_style: "vertical-align: middle;"
-
 philosophy:
   title: Philosophy
   raw_names: [ "Philosophy" ]
@@ -447,6 +478,7 @@ philosophy:
   palette:
     start: "#334155"
     end: "#6366f1"
+    fontTitle: '"Cardo", "Palatino Linotype", "Book Antiqua", Palatino, serif;'
     titleColorLight: "#6366f1"
     titleColorDark: "#334155"
     titleHoverColorLight: "#6366f1"
@@ -455,27 +487,6 @@ philosophy:
   category_home_page: /category/philosophy/
   hide_from_carousel: false
   hide_from_category_list: false
-  inline_style: "vertical-align: middle;"
-
-projects:
-  title: Projects
-  raw_names: [ "Projects" ]
-  class: Projects
-  emoji: "🛠️"
-  subtitle: "Work in Progress & Completed Builds"
-  description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
-  image: /img/categories/projects.webp
-  palette:
-    start: "#3b82f6"
-    end: "#22c55e"
-    titleColorLight: "#22c55e"
-    titleColorDark: "#3b82f6"
-    titleHoverColorLight: "#22c55e"
-    titleHoverColorDark: "#3b82f6"
-    titleWeight: 500
-  category_home_page: /category/projects/
-  hide_from_carousel: true
-  hide_from_category_list: true
   inline_style: "vertical-align: middle;"
 
 prompts:
@@ -489,6 +500,7 @@ prompts:
   palette:
     start: "#a78bfa"
     end: "#f472b6"
+    fontTitle: '"Kalam", "Patrick Hand", cursive;'
     titleColorLight: "#f472b6"
     titleColorDark: "#a78bfa"
     titleHoverColorLight: "#f472b6"
@@ -511,6 +523,7 @@ quotes:
   palette:
     start: "#06b6d4"
     end: "#3b82f6"
+    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif;'
     titleColorLight: "#3b82f6"
     titleColorDark: "#06b6d4"
     titleHoverColorLight: "#3b82f6"
@@ -532,6 +545,7 @@ religion:
   palette:
     start: "#eab308"
     end: "#7e22ce"
+    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif;'
     titleColorLight: "#7e22ce"
     titleColorDark: "#eab308"
     titleHoverColorLight: "#7e22ce"
@@ -598,6 +612,7 @@ science:
   palette:
     start: "#0ea5e9"
     end: "#14b8a6"
+    fontTitle: '"Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;'
     titleColorLight: "#14b8a6"
     titleColorDark: "#0ea5e9"
     titleHoverColorLight: "#14b8a6"
@@ -630,52 +645,48 @@ shadowrun:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
-mutant-crawl-classics:
-  title: Mutant Crawl Classics
-  raw_names: [ "Mutant Crawl Classics", "MCC" ]
-  class: MCC
-  emoji: "🧬"
-  subtitle: "Adventures in a Post-Apocalyptic World"
-  description: "Guides and explorations for thrilling adventures in the world of Mutant Crawl Classics. Delve into post-apocalyptic scenarios and enhance your gameplay."
-  image: /img/categories/mutant-crawl-classics.webp
-  palette:
-    start: "#ffe205"
-    end: "#018249"
-    fontTitle: '"IrwinAllen","Helvetica Neue",Helvetica,Arial,sans-serif'
-    titleColorDark: "rgba(1,130,73,1)"
-    titleColorLight: "#01a865"
-    titleHoverColorLight: "#01a865"
-    titleHoverColorDark: "rgba(1,130,73,1)"
-    titleShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1)"
-    titleHoverShadow: "-2px -2px 0px rgba(255,226,5,1),2px 2px 0px rgba(255,226,5,1),2px -2px 0px rgba(255,226,5,1),-2px 2px 0px rgba(255,226,5,1),0px 2px 0px rgba(255,226,5,1),0px -2px 0px rgba(255,226,5,1),2px 0px 0px rgba(255,226,5,1),-2px 0px 0px rgba(255,226,5,1),-3px -3px 0px rgba(1,130,73,1),3px 3px 0px rgba(1,130,73,1),3px -3px 0px rgba(1,130,73,1),-3px 3px 0px rgba(1,130,73,1),0px 3px 0px rgba(1,130,73,1),0px -3px 0px rgba(1,130,73,1),3px 0px 0px rgba(1,130,73,1),-3px 0px 0px rgba(1,130,73,1)"
-    titleWeight: 500
-  category_home_page: /category/mutant-crawl-classics/
-  hide_from_carousel: false
-  hide_from_category_list: false
-  inline_style: "white-space: nowrap; vertical-align: middle;"
+# Utility Designs
 
-marchen-engine:
-  title: The Märchen Engine
-  raw_names: [ "The Märchen Engine", "marchen" ]
-  class: marchen
-  emoji: "🧚"
-  subtitle: "Fantasy Storytelling Engine"
-  description: "Resources, guides, and tools for using The Märchen Engine to create captivating and immersive fantasy tales. Enhance your storytelling with this unique system."
-  image: /img/categories/the-märchen-engine.webp
+home:
+  title: Home
+  raw_names: [ "Home" ]
+  class: Home
+  emoji: "🏠"
+  subtitle: "Landing Page"
+  description: "Primary site landing content and featured highlights."
   palette:
-    start: "#a21caf"
-    end: "#f59e0b"
-    fontTitle: '"IM Fell DW Pica",serif'
-    titleStyle: italic
-    titleColorLight: "#f59e0b"
-    titleColorDark: "#a21caf"
-    titleHoverColorLight: "#f59e0b"
-    titleHoverColorDark: "#a21caf"
+    start: "#f472b6"
+    end: "#f43f5e"
+    titleColorLight: "#f43f5e"
+    titleColorDark: "#f472b6"
+    titleHoverColorLight: "#f43f5e"
+    titleHoverColorDark: "#f472b6"
     titleWeight: 500
-  category_home_page: /category/marchen-engine/
-  hide_from_carousel: false
-  hide_from_category_list: false
+  category_home_page: /category/home/
+  hide_from_carousel: true
+  hide_from_category_list: true
   inline_style: "vertical-align: middle;"
+
+  projects:
+    title: Projects
+    raw_names: [ "Projects" ]
+    class: Projects
+    emoji: "🛠️"
+    subtitle: "Work in Progress & Completed Builds"
+    description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
+    image: /img/categories/projects.webp
+    palette:
+      start: "#3b82f6"
+      end: "#22c55e"
+      titleColorLight: "#22c55e"
+      titleColorDark: "#3b82f6"
+      titleHoverColorLight: "#22c55e"
+      titleHoverColorDark: "#3b82f6"
+      titleWeight: 500
+    category_home_page: /category/projects/
+    hide_from_carousel: true
+    hide_from_category_list: true
+    inline_style: "vertical-align: middle;"
 
 draft:
   title: Draft
