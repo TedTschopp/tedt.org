@@ -342,10 +342,7 @@ h2 .ai-post::after, .h2 .ai-post::after, .category-title.ai::after, .ai-post.cat
    - Works with .category-theme[data-category="..."] wrappers
    ========================================================== */
 
-/* Load common Google fonts you referenced (custom fonts via @font-face below) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Limelight&family=Fredericka+the+Great&family=Cedarville+Cursive&family=Cormorant+Garamond:wght@400;700&family=IM+Fell+DW+Pica:ital@0;1&family=MedievalSharp&display=swap');
-
-/* If you host custom fonts, uncomment/add your @font-face blocks:
+   /* If you host custom fonts, uncomment/add your @font-face blocks:
 
 @font-face { font-family: "Bestiary"; src: url("/fonts/Bestiary.woff2") format("woff2"); font-display: swap; }
 @font-face { font-family: "Checkbook"; src: url("/fonts/Checkbook.woff2") format("woff2"); font-display: swap; }
