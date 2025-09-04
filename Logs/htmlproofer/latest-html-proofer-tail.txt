@@ -1,3 +1,4 @@
+^ (line 1464)
   *  1686:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
         ^ (line 1686)
@@ -77,7 +78,6 @@
     </div>
     ^ (line 3084)
   *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
-  *  External link https://tedt.org/category/reprint/ failed: 404 No error
 - ./_site/sex-gardening-a/index.html
   *  3021:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -113,7 +113,6 @@
     </div>
     ^ (line 3080)
   *  External link http://www.dscout.com/ara# failed: 404 No error
-  *  External link https://tedt.org/category/mobile/ failed: 404 No error
 - ./_site/the-google-browseros/index.html
   *  3018:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
@@ -192,9 +191,10 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3917)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3944 failures!
+HTML-Proofer found 3666 failures!
