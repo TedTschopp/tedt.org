@@ -23,7 +23,7 @@ ai:
   palette:
     start: "#06b6d4"
     end: "#a78bfa"
-    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'
+    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
     titleColorLight: "#a78bfa"
     titleColorDark: "#06b6d4"
     titleHoverColorLight: "#a78bfa"
@@ -91,7 +91,7 @@ communications:
   palette:
     start: "#0ea5e9"
     end: "#06b6d4"
-    fontTitle: '"Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;'
+    fontTitle: '"Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif'
     titleColorLight: "#06b6d4"
     titleColorDark: "#0ea5e9"
     titleHoverColorLight: "#06b6d4"
@@ -182,7 +182,7 @@ fandom:
   palette:
     start: "#ec4899"
     end: "#6366f1"
-    fontTitle: '"Bangers", Impact, "Arial Black", sans-serif;'
+    fontTitle: '"Bangers", Impact, "Arial Black", sans-serif'
     titleColorLight: "#6366f1"
     titleColorDark: "#ec4899"
     titleHoverColorLight: "#6366f1"
@@ -478,7 +478,7 @@ philosophy:
   palette:
     start: "#334155"
     end: "#6366f1"
-    fontTitle: '"Cardo", "Palatino Linotype", "Book Antiqua", Palatino, serif;'
+    fontTitle: '"Cardo", "Palatino Linotype", "Book Antiqua", Palatino, serif'
     titleColorLight: "#6366f1"
     titleColorDark: "#334155"
     titleHoverColorLight: "#6366f1"
@@ -500,7 +500,7 @@ prompts:
   palette:
     start: "#a78bfa"
     end: "#f472b6"
-    fontTitle: '"Kalam", "Patrick Hand", cursive;'
+    fontTitle: '"Kalam", "Patrick Hand", cursive'
     titleColorLight: "#f472b6"
     titleColorDark: "#a78bfa"
     titleHoverColorLight: "#f472b6"
@@ -523,7 +523,7 @@ quotes:
   palette:
     start: "#06b6d4"
     end: "#3b82f6"
-    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif;'
+    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif'
     titleColorLight: "#3b82f6"
     titleColorDark: "#06b6d4"
     titleHoverColorLight: "#3b82f6"
@@ -545,7 +545,7 @@ religion:
   palette:
     start: "#eab308"
     end: "#7e22ce"
-    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif;'
+    fontTitle: '"Playfair Display", Georgia, "Times New Roman", serif'
     titleColorLight: "#7e22ce"
     titleColorDark: "#eab308"
     titleHoverColorLight: "#7e22ce"
@@ -612,7 +612,7 @@ science:
   palette:
     start: "#0ea5e9"
     end: "#14b8a6"
-    fontTitle: '"Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;'
+    fontTitle: '"Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif'
     titleColorLight: "#14b8a6"
     titleColorDark: "#0ea5e9"
     titleHoverColorLight: "#14b8a6"
