@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-04T18:47:16Z
+Last update: 2025-09-05T00:26:04Z
 \n## Latest Summary (tail 50 lines)\n
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
 ^ (line 573)
@@ -13,24 +13,24 @@ Last update: 2025-09-04T18:47:16Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1480:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1480)
-  *  5212:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1526)
+  *  5258:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5212)
+        ^ (line 5258)
 - ./_site/user-interfaces-in-2017-2/index.html
-  *  3024:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3008:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3024)
+    ^ (line 3008)
 - ./_site/web-services-we/index.html
-  *  3020:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3004:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3020)
+    ^ (line 3004)
 - ./_site/what-should-google-buy/index.html
-  *  3021:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3005:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3021)
+    ^ (line 3005)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -47,11 +47,12 @@ Last update: 2025-09-04T18:47:16Z
   *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3917)
+  *  linking to internal hash # that does not exist (line 3901)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3666 failures!
+HTML-Proofer found 3670 failures!
 \n## Available Historical Logs\n
+- 2025-09-05T00-22-34-HTML Logging.txt
 - 2025-09-04T18-44-03-HTML Logging.txt
 - 2025-09-03T13-48-31-HTML Logging.txt
 - 2025-09-03T13-38-17-HTML Logging.txt
