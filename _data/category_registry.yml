@@ -179,7 +179,7 @@ fandom:
   emoji: "⭐"
   subtitle: "Celebrating Fan Culture & Communities"
   description: "Explorations of fan culture across books, films, games, and digital communities—analysis, commentary, and the stories fans tell together."
-  image: /img/home/fandom.webp
+  image: /img/categories/fandom.webp
   palette:
     start: "#ec4899"
     end: "#6366f1"
