@@ -110,16 +110,17 @@
                                                 <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
                                             {% endif %}
                                         </div>
-                                        <div class="small">
+                                        <div class="small image-credits">
+                                            {% comment %}Ensure no space before colon after the title by placing colon immediately after </cite>{% endcomment %}
                                             {% if image-credits-URL contains "http" %}
-                                                <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
+                                                <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
                                             {% else %}
-                                                <cite>{{image_credits_title}}</cite>
+                                                <cite>{{image_credits_title}}</cite>:&nbsp;an image by
                                             {% endif %}
                                             {% if image-credits-artist-URL contains "http" %}
-                                                <span class="vcard"><address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                                <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
                                             {% else %}
-                                                Image by {{image_credits}}
+                                                {{image_credits}}
                                             {% endif %}
                                         </div>
                                     </div>
