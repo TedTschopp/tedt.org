@@ -20,8 +20,9 @@ bullets:
 - A blend of folklore and the power of kindness.
 description: "A Swiss folktale depicting the mysterious creation of an ever-flowing\
   \ well in the Sch\xE4chental valley."
-seo-description: Explore the enchanting story of "The Well at Schwanden", a Swiss
-  folktale filled with mystery, faith, and the enduring power of kindness.
+seo-description: >-
+  Explore the enchanting story of the Well at Schwanden, a Swiss folktale filled
+  with mystery, faith, and the enduring power of kindness.
 categories:
 - Folklore
 tags:
