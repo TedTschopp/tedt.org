@@ -1,9 +1,10 @@
 # HTML Proofer Logs
-Last update: 2025-09-05T16:15:46Z
+Last update: 2025-09-05T23:15:46Z
 \n## Latest Summary (tail 50 lines)\n
+  *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
-^ (line 573)
-  *  internal image ../img/categories/prompt_library.webp does not exist (line 997)
+^ (line 575)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 999)
 - ./_site/tools/todo_hex.html
   *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
                 <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
@@ -13,24 +14,24 @@ Last update: 2025-09-05T16:15:46Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1528:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1526)
-  *  5258:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1528)
+  *  5260:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5258)
+        ^ (line 5260)
 - ./_site/user-interfaces-in-2017-2/index.html
+  *  2966:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2966)
+- ./_site/web-services-we/index.html
   *  2962:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2962)
-- ./_site/web-services-we/index.html
-  *  2958:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2958)
 - ./_site/what-should-google-buy/index.html
-  *  2959:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2963:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2959)
+    ^ (line 2963)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -44,14 +45,14 @@ Last update: 2025-09-05T16:15:46Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3855)
+  *  linking to internal hash # that does not exist (line 3859)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2026 failures!
+HTML-Proofer found 2025 failures!
 \n## Available Historical Logs\n
+- 2025-09-05T23-12-25-HTML Logging.txt
 - 2025-09-05T16-12-29-HTML Logging.txt
 - 2025-09-05T16-04-09-HTML Logging.txt
 - 2025-09-05T15-53-06-HTML Logging.txt
