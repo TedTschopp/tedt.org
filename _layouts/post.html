@@ -22,6 +22,8 @@
     {% include feeds/feeds.html %}
 
     {% include assets/all-css-includes.html %}
+    <!-- WCAG contrast utility styles -->
+    <link rel="stylesheet" href="/css/WCAG.css">
 
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
@@ -101,9 +103,9 @@
                                             Removed category palette / typography overrides.
                                     {%- endcomment -%}
                                     <div class="post-hero">
-                                        <h1 class="p-name card-title post-title">{{ page.title }}</h1>
+                                        <h1 class="p-name card-title wcag-glow aa post-title">{{ page.title }}</h1>
                                         {% if page.subtitle %}
-                                            <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
+                                            <p class="card-subtitle h2 mb-2 fw-normal wcag-glow aa post-subtitle">{{ page.subtitle }}</p>
                                         {% endif %}
                                     </div>
 

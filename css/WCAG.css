@@ -1,0 +1,37 @@
+/* WCAG Contrast Utility Styles */
+/* Base: compliant micro‑scrim + feathered glow */
+.wcag-glow {
+  --text: #000;
+  --scrim-rgb: 255,255,255;
+  --scrim-alpha: 0.22;
+  --pad-y: 0.18em;
+  --pad-x: 0.35em;
+  --radius: 0.25em;
+  --glow-spread: 0.6em;
+  --glow-blur: 0.6em;
+  position: relative;
+  display: inline;
+  color: var(--text);
+  z-index: 0;
+  isolation: isolate;
+  background: rgba(var(--scrim-rgb), var(--scrim-alpha));
+  padding: var(--pad-y) var(--pad-x);
+  border-radius: var(--radius);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.wcag-glow::after {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--glow-spread));
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(closest-side,
+    rgba(var(--scrim-rgb), calc(var(--scrim-alpha) * 0.5)) 0%,
+    rgba(var(--scrim-rgb), 0) 100%);
+  filter: blur(var(--glow-blur));
+}
+.wcag-glow.aa { --scrim-alpha: 0.22; }
+.wcag-glow.large { font-weight: 700; --scrim-alpha: 0.12; }
+.wcag-glow.aaa { --scrim-alpha: 0.32; }
+.wcag-glow.light-on-dark { --text: #fff; --scrim-rgb: 0,0,0; --scrim-alpha: 0.85; }
