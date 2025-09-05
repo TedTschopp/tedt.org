@@ -197,4 +197,4 @@
   *  linking to internal hash # that does not exist (line 3859)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2025 failures!
+HTML-Proofer found 2026 failures!
