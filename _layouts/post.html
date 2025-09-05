@@ -95,44 +95,34 @@
                             {% endif %}
                             <div class="card h-100 position-relative">
                                 <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
-                                <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end wcag-glow aa flat-top p-0 ps-2">
-                                    <!--
-                                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                    -->
-
-                                    {%- comment -%}
-                                            Simplified: Always use global styling for post title/subtitle.
-                                            Removed category palette / typography overrides.
-                                    {%- endcomment -%}
-                                    <div class="post-hero">
-                                        <h1 class="p-name card-title post-title">{{ page.title }}</h1>
-                                        {% if page.subtitle %}
-                                            <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
-                                        {% endif %}
+                                <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                    <div class="wcag-glow aa flat-top mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
+                                        <div class="post-hero mb-1">
+                                            <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
+                                            {% if page.subtitle %}
+                                                <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
+                                            {% endif %}
+                                        </div>
+                                        <div class="small mb-1">
+                                            {% if page.author.name %}
+                                                <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
+                                            {% else %}
+                                                <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
+                                            {% endif %}
+                                        </div>
+                                        <div class="small">
+                                            {% if image-credits-URL contains "http" %}
+                                                <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
+                                            {% else %}
+                                                <cite>{{image_credits_title}}</cite>
+                                            {% endif %}
+                                            {% if image-credits-artist-URL contains "http" %}
+                                                <span class="vcard"><address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                            {% else %}
+                                                :&nbsp;an image by {{image_credits}}
+                                            {% endif %}
+                                        </div>
                                     </div>
-
-                                    <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
-                                        <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                                        {% if page.author.name %}
-                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>
-                                        {% else %}
-                                            <p class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></p>
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="d-flex align-items-center" style="z-index: 2; position: relative;">
-                                        {% if image-credits-URL contains "http" %}
-                                            <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>
-                                        {% else %}
-                                            <cite>{{image_credits_title}}</cite>
-                                        {% endif %}
-                                        {% if image-credits-artist-URL contains "http" %}
-                                            <span class="vcard"><address style="display: inline;" class="author">:&nbsp;an image by <a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
-                                        {% else %}
-                                            :&nbsp;an image by {{image_credits}}
-                                        {% endif %}
-                                    </div>
-
                                 </div>
                             </div>
 
