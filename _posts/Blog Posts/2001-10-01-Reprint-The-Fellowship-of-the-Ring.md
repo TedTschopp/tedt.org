@@ -29,6 +29,7 @@ categories:
   - Dungeons & Dragons
   - Movies
   - Role Playing Games
+  - Fandom
 
 tags:
   - tolkien

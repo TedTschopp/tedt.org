@@ -24,6 +24,7 @@ description: This article delves into the author's lifelong fascination with fan
 seo-description: null
 categories:
 - Books
+- Fandom
 tags: null
 keywords: Fantasy Literature, Romanticism, Shadows, Light, Chronicles of Narnia, The
   Hobbit, C.S. Lewis, George MacDonald, Imagination, Perversity, Childish Love, Symbolism,
