@@ -1,4 +1,3 @@
-        ^ (line 1732)
 - ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
   *  1510:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
@@ -192,9 +191,10 @@
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.instagram.com/TedTschopp failed: 429 No error
+  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3901)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3670 failures!
+HTML-Proofer found 3671 failures!
