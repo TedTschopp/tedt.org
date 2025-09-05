@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-05T01:12:35Z
+Last update: 2025-09-05T03:22:39Z
 \n## Latest Summary (tail 50 lines)\n
 ^ (line 573)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 997)
@@ -50,8 +50,9 @@ Last update: 2025-09-05T01:12:35Z
   *  linking to internal hash # that does not exist (line 3901)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 3671 failures!
+HTML-Proofer found 3673 failures!
 \n## Available Historical Logs\n
+- 2025-09-05T03-19-22-HTML Logging.txt
 - 2025-09-05T01-09-27-HTML Logging.txt
 - 2025-09-05T00-22-34-HTML Logging.txt
 - 2025-09-04T18-44-03-HTML Logging.txt
