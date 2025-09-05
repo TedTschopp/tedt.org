@@ -274,6 +274,8 @@ h2 .category-title,
   /* Use registry-defined title colors */
   color:var(--theme-title-color, var(--theme-title-color-light, inherit));
 }
+/* DCC font has tall cap height causing slight optical lift; nudge via padding */
+[data-cat="dcc"] .full-width-badge .category-badge{padding-top:.55rem; padding-bottom:.30rem;}
 .full-width-badge .category-badge:hover{
   color:var(--theme-title-hover-color, var(--theme-title-hover-color-light, var(--theme-title-color, inherit)));
   text-shadow:var(--theme-title-hover-shadow, var(--theme-title-shadow));

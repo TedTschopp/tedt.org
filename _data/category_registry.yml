@@ -641,6 +641,10 @@ shadowrun:
     titleHoverColorLight: "#c9412f"
     titleHoverColorDark: "#000000"
     titleWeight: 500
+  # Provide red outline (multi-direction shadow) matching other category outlines.
+  # Base (1px) outline for normal state; 2px on hover for emphasis.
+  titleShadow: "-1px -1px 0 #c9412f,1px 1px 0 #c9412f,1px -1px 0 #c9412f,-1px 1px 0 #c9412f,0 1px 0 #c9412f,0 -1px 0 #c9412f,1px 0 0 #c9412f,-1px 0 0 #c9412f"
+  titleHoverShadow: "-2px -2px 0 #c9412f,2px 2px 0 #c9412f,2px -2px 0 #c9412f,-2px 2px 0 #c9412f,0 2px 0 #c9412f,0 -2px 0 #c9412f,2px 0 0 #c9412f,-2px 0 0 #c9412f"
   category_home_page: /category/shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
