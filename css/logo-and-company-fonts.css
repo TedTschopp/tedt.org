@@ -262,13 +262,14 @@ h2 .category-title,
 .full-width-badge.category-theme{display:block; padding-bottom:0;}
 .full-width-badge.category-theme::after{display:none !important;} /* ensure no underline */
 .full-width-badge .category-badge{
-  display:block; width:100%;
+  /* Use flex to vertically center diverse fonts (all-caps, tall ascenders, etc.) */
+  display:flex; align-items:center; width:100%;
   font-family:var(--theme-font-title, inherit);
   font-weight:var(--theme-title-weight,600);
   font-style:var(--theme-title-style,normal);
   text-transform:var(--theme-title-transform,uppercase);
   letter-spacing:.05em;
-  font-size:1.5rem; line-height:1.2;
+  font-size:1.5rem; line-height:1; /* tighter line-height improves optical centering */
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
   /* Use registry-defined title colors */
   color:var(--theme-title-color, var(--theme-title-color-light, inherit));
