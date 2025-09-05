@@ -78,8 +78,15 @@
                         {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
                       </h1>
                     {% endif %}
-                    {% if page.subtitle %}
-                    <h2>{{page.subtitle}}</h2>
+                    {%- comment -%} Subtitle: prefer registry entry subtitle, fallback to page.subtitle {%- endcomment -%}
+                    {% assign _subtitle = '' %}
+                    {% if __cat_entry and __cat_entry.subtitle %}
+                      {% assign _subtitle = __cat_entry.subtitle %}
+                    {% elsif page.subtitle %}
+                      {% assign _subtitle = page.subtitle %}
+                    {% endif %}
+                    {% if _subtitle != '' %}
+                      <h2 class="category-subtitle">{{ _subtitle }}</h2>
                     {% endif %}
                     {% assign category = page.category | downcase | slugify %}
                     {% assign registry_entry = site.data.category_registry[category] %}
