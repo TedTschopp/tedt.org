@@ -1,7 +1,6 @@
 # HTML Proofer Logs
-Last update: 2025-09-05T23:30:57Z
+Last update: 2025-09-05T23:41:21Z
 \n## Latest Summary (tail 50 lines)\n
-  *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
 ^ (line 575)
   *  internal image ../img/categories/prompt_library.webp does not exist (line 999)
@@ -45,13 +44,15 @@ Last update: 2025-09-05T23:30:57Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 3859)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2026 failures!
+HTML-Proofer found 2027 failures!
 \n## Available Historical Logs\n
+- 2025-09-05T23-38-02-HTML Logging.txt
 - 2025-09-05T23-27-39-HTML Logging.txt
 - 2025-09-05T23-12-25-HTML Logging.txt
 - 2025-09-05T16-12-29-HTML Logging.txt
