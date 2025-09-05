@@ -35,3 +35,9 @@
 .wcag-glow.large { font-weight: 700; --scrim-alpha: 0.12; }
 .wcag-glow.aaa { --scrim-alpha: 0.32; }
 .wcag-glow.light-on-dark { --text: #fff; --scrim-rgb: 0,0,0; --scrim-alpha: 0.85; }
+
+/* Variant: remove rounding on top corners while preserving others */
+.wcag-glow.flat-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
