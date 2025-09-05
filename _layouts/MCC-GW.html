@@ -45,7 +45,18 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    <h1 class="p-name">{{ page.title }}</h1>
+                                        {% assign __primary_category = page.categories | first %}
+                                        {% if __primary_category %}
+                                            {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
+                                            {% assign __slug = __slug | strip %}
+                                            {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                                            {% assign __entry = site.data.category_registry[__slug] %}
+                                        {% endif %}
+                                        {% if __entry %}
+                                            {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='p-name post-title' wrapper_class='mccgw-hero' %}
+                                        {% else %}
+                                            <h1 class="p-name">{{ page.title }}</h1>
+                                        {% endif %}
                     <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                     {% if page.author.name %}
                         <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>

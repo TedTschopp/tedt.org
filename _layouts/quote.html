@@ -51,10 +51,25 @@
               <div class="card-body pt-3 p-4 h-100">
                 {%- comment -%} Title & meta {%- endcomment -%}
                 <header class="mb-3">
-                  {% if page.title %}
-                    <h1 class="p-name card-title">{{ page.title }}</h1>
+                  {% assign __primary_category = page.categories | first %}
+                  {% if __primary_category %}
+                    {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
+                    {% assign __slug = __slug | strip %}
+                    {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                    {% assign __entry = site.data.category_registry[__slug] %}
+                  {% endif %}
+                  {% if __entry %}
+                    {% if page.title %}
+                      {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero' %}
+                    {% else %}
+                      {% include utility/category-palette-apply.html entry=__entry title=__derived_title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero' %}
+                    {% endif %}
                   {% else %}
-                    <h1 class="p-name card-title">{{ __derived_title }}</h1>
+                    {% if page.title %}
+                      <h1 class="p-name card-title">{{ page.title }}</h1>
+                    {% else %}
+                      <h1 class="p-name card-title">{{ __derived_title }}</h1>
+                    {% endif %}
                   {% endif %}
                   <p class="card-subtitle text-muted mb-2">
                     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>

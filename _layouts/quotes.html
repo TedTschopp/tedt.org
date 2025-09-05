@@ -103,13 +103,27 @@
                     {% endfor %}</br>
                     <hr>
 
-                    {% if page.source-url %}
-                        <h1 class="p-name"><a href="{{page.source-url}}" target="_new">{{ page.source }}</a>&NonBreakingSpace;<a href="{{page.source-url}}" target="_new"><i class="fa fa-external-link" aria-hidden="true"></i></a></h1>
-                    {% elsif page.source %}
-                        <h1 class="p-name">{{ page.source }}</h1>
-                    {% else %}
-                        <h1 class="p-name">Source: Unknown</h1>
-                    {% endif %}
+                                        {% assign __primary_category = page.categories | first %}
+                                        {% if __primary_category %}
+                                            {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
+                                            {% assign __slug = __slug | strip %}
+                                            {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                                            {% assign __entry = site.data.category_registry[__slug] %}
+                                        {% endif %}
+                                        {% capture _quotes_title %}
+                                            {% if page.source-url %}
+                                                <span class="p-name"><a href="{{page.source-url}}" target="_new">{{ page.source }}</a>&NonBreakingSpace;<a href="{{page.source-url}}" target="_new"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            {% elsif page.source %}
+                                                <span class="p-name">{{ page.source }}</span>
+                                            {% else %}
+                                                <span class="p-name">Source: Unknown</span>
+                                            {% endif %}
+                                        {% endcapture %}
+                                        {% if __entry %}
+                                            {% include utility/category-palette-apply.html entry=__entry title_html=_quotes_title title_tag='div' title_class='quotes-page-title post-title' wrapper_class='quotes-hero' %}
+                                        {% else %}
+                                            {{ _quotes_title }}
+                                        {% endif %}
 
                     <h3><u>{{ page.author }}</u></h3> 
 

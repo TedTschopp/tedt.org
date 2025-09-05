@@ -48,7 +48,18 @@
                <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
                <section class="col-12 col-lg-10" id="paper_printarea">
                     {% if page.title != "" %}
-                    <h1 class="MCC">{{ page.title }}</h1>
+                                                  {% assign __primary_category = page.categories | first %}
+                                                  {% if __primary_category %}
+                                                       {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
+                                                       {% assign __slug = __slug | strip %}
+                                                       {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                                                       {% assign __entry = site.data.category_registry[__slug] %}
+                                                  {% endif %}
+                                                  {% if __entry %}
+                                                       {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='MCC post-title' wrapper_class='gammaworld-hero' %}
+                                                  {% else %}
+                                                       <h1 class="MCC">{{ page.title }}</h1>
+                                                  {% endif %}
                     {% endif %}
 
                                    {%- comment -%}
