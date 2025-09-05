@@ -41,3 +41,10 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* When wcag-glow is used alongside Bootstrap's .card-img-overlay, retain overlay behavior */
+.card-img-overlay.wcag-glow {
+  position: absolute; /* override relative so it truly overlays image */
+  inset: 0; /* ensure full overlay box (can be constrained by padding utility classes) */
+  z-index: 2; /* above the image (default stacking) */
+}
