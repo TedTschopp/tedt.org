@@ -91,18 +91,19 @@
           <figure class="category-theme" data-category="{{ page.category }}" data-cat="{{ category }}">
             <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ image_path }}" alt="{{ registry_entry.title | default: page.category }}">
           </figure>
-                    <!-- Calculate the pages description if one isn't present -->
-                    {% if page.description == null or page.description == empty %}
-                      {% if page.excerpt != "" %}
-                          {% assign SEO-description = page.excerpt | strip_html %}
-                      {% else %}
-                          {% assign SEO-description = stripped-content %}
-                      {% endif %}
+                    <!-- Determine description: prefer registry entry, fall back to page.description, then excerpt, then stripped content -->
+                    {% if registry_entry and registry_entry.description %}
+                      {% assign SEO-description = registry_entry.description %}
+                    {% elsif page.description and page.description != '' %}
+                      {% assign SEO-description = page.description %}
+                    {% elsif page.excerpt != '' %}
+                      {% assign SEO-description = page.excerpt | strip_html %}
                     {% else %}
-                        {% assign SEO-description = page.description %}
+                      {% assign SEO-description = stripped-content %}
                     {% endif %}
-
-                    <p>{{ SEO-description }}</p>
+                    {% if SEO-description %}
+                      <p class="category-description">{{ SEO-description }}</p>
+                    {% endif %}
 
                     <span class="e-content" id="main_content">
                       {% assign primary_category = page.category %}
