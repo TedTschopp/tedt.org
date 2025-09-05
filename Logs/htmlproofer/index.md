@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-05T23:15:46Z
+Last update: 2025-09-05T23:30:57Z
 \n## Latest Summary (tail 50 lines)\n
   *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
@@ -50,8 +50,9 @@ Last update: 2025-09-05T23:15:46Z
   *  linking to internal hash # that does not exist (line 3859)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2025 failures!
+HTML-Proofer found 2026 failures!
 \n## Available Historical Logs\n
+- 2025-09-05T23-27-39-HTML Logging.txt
 - 2025-09-05T23-12-25-HTML Logging.txt
 - 2025-09-05T16-12-29-HTML Logging.txt
 - 2025-09-05T16-04-09-HTML Logging.txt
