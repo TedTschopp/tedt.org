@@ -70,15 +70,14 @@
                     {% else %}
                       {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
                     {% endif %}
-                    <h1 class="p-name">
-            {% include utility/category-label.html 
-              category=__cat_slug 
-              href=__cat_href 
-              kind='title' 
-              class_extra='text-decoration-none' 
-              wrapper_class_extra='category-page-head' 
-              legacy_class=false %}
-                    </h1>
+                    {% if __cat_entry %}
+                      {% capture _title_html %}{% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
+                      {% include utility/category-palette-apply.html entry=__cat_entry title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
+                    {% else %}
+                      <h1 class="p-name">
+                        {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
+                      </h1>
+                    {% endif %}
                     {% if page.subtitle %}
                     <h2>{{page.subtitle}}</h2>
                     {% endif %}

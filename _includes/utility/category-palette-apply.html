@@ -1,0 +1,87 @@
+{%- comment -%}
+  Centralized category palette & font application and optional hero/title rendering.
+  Params:
+    entry (required): registry entry object.
+    title: plain text title (ignored if title_html provided)
+    title_html: raw HTML for title content (optional)
+    subtitle: plain text subtitle (optional)
+    wrapper_tag: element for wrapper (default 'div')
+    wrapper_class: classes for wrapper (default 'category-hero')
+    title_tag: element for title (default 'h1')
+    title_class: classes for title (default 'post-title')
+    subtitle_tag: element for subtitle (default 'p')
+    subtitle_class: classes for subtitle (default 'post-subtitle')
+    emit_wrapper: if false, only emit script expecting previous sibling to have data-* attributes.
+  Output: Wrapper with data-* palette attributes + script that applies styles dynamically (supports dark mode toggle via data-bs-theme).
+{%- endcomment -%}
+{%- assign _e = include.entry -%}
+{%- if _e -%}
+  {%- assign _light = _e.palette.titleColorLight | default: _e.palette.titleColor | default: _e.palette.start | default: '#ffffff' -%}
+  {%- assign _dark  = _e.palette.titleColorDark  | default: _e.palette.titleColor | default: _e.palette.end   | default: _light -%}
+  {%- assign _hover_light = _e.palette.titleHoverColorLight | default: _light -%}
+  {%- assign _hover_dark  = _e.palette.titleHoverColorDark  | default: _dark  -%}
+  {%- assign _shadow = _e.palette.titleShadow -%}
+  {%- assign _shadow_hover = _e.palette.titleHoverShadow | default: _shadow -%}
+  {%- assign _weight = _e.palette.titleWeight | default: '600' -%}
+  {%- assign _size = _e.palette.titleSize | default: '2.25rem' -%}
+  {%- assign _style = _e.palette.titleStyle | default: 'normal' -%}
+  {%- assign _transform = _e.palette.titleTransform | default: 'none' -%}
+  {%- assign _font = _e.palette.fontTitle | replace:';','' -%}
+  {%- assign _wrapper_tag = include.wrapper_tag | default: 'div' -%}
+  {%- assign _wrapper_class = include.wrapper_class | default: 'category-hero' -%}
+  {%- assign _title_tag = include.title_tag | default: 'h1' -%}
+  {%- assign _title_class = include.title_class | default: 'post-title' -%}
+  {%- assign _subtitle_tag = include.subtitle_tag | default: 'p' -%}
+  {%- assign _subtitle_class = include.subtitle_class | default: 'post-subtitle' -%}
+  {%- assign _emit = include.emit_wrapper | default: true -%}
+  {%- if _emit == true or _emit == 'true' -%}
+  <{{ _wrapper_tag }} class="{{ _wrapper_class }}" data-color-light="{{ _light }}" data-color-dark="{{ _dark }}" data-color-hover-light="{{ _hover_light }}" data-color-hover-dark="{{ _hover_dark }}"{% if _shadow %} data-shadow="{{ _shadow }}"{% endif %}{% if _shadow_hover %} data-shadow-hover="{{ _shadow_hover }}"{% endif %} data-weight="{{ _weight }}" data-size="{{ _size }}" data-style="{{ _style }}" data-transform="{{ _transform }}"{% if _font %} data-font="{{ _font | replace:'"','&quot;' }}"{% endif %}>
+    <{{ _title_tag }} class="{{ _title_class }}">{% if include.title_html %}{{ include.title_html }}{% else %}{{ include.title }}{% endif %}</{{ _title_tag }}>
+    {%- if include.subtitle and include.subtitle != '' -%}
+      <{{ _subtitle_tag }} class="{{ _subtitle_class }}">{{ include.subtitle }}</{{ _subtitle_tag }}>
+    {%- endif -%}
+  </{{ _wrapper_tag }}>
+  {%- endif -%}
+  <script>
+    (function(){
+      const scriptEl=document.currentScript;
+      const wrapper=scriptEl.previousElementSibling;
+      if(!wrapper) return;
+      const root=document.documentElement;
+      function apply(){
+        const isDark=root.getAttribute('data-bs-theme')==='dark';
+        const color=wrapper.dataset[isDark?'colorDark':'colorLight'];
+        const hoverColor=wrapper.dataset[isDark?'colorHoverDark':'colorHoverLight']||color;
+        const shadow=wrapper.dataset.shadow||'none';
+        const shadowHover=wrapper.dataset.shadowHover||shadow;
+        const weight=wrapper.dataset.weight||'600';
+        const size=wrapper.dataset.size||'2.25rem';
+        const style=wrapper.dataset.style||'normal';
+        const transform=wrapper.dataset.transform||'none';
+        let font=(wrapper.dataset.font||'').replace(/;+/g,'').trim();
+        const title=wrapper.querySelector('.post-title, .category-title, h1');
+        const subtitle=wrapper.querySelector('.post-subtitle');
+        if(title){
+          title.style.color=color;
+          title.style.fontWeight=weight;
+          title.style.fontSize=size;
+          title.style.fontStyle=style;
+          title.style.textTransform=transform;
+          title.style.textShadow=shadow;
+          if(font) title.style.fontFamily=font;
+          title.onmouseenter=()=>{title.style.color=hoverColor;title.style.textShadow=shadowHover;};
+          title.onmouseleave=()=>{title.style.color=color;title.style.textShadow=shadow;};
+        }
+        if(subtitle){
+          subtitle.style.color=color;
+          subtitle.style.fontWeight=weight;
+          subtitle.onmouseenter=()=>{subtitle.style.color=hoverColor;};
+          subtitle.onmouseleave=()=>{subtitle.style.color=color;};
+        }
+      }
+      const mo=new MutationObserver(apply);
+      mo.observe(root,{attributes:true,attributeFilter:['data-bs-theme']});
+      apply();
+    })();
+  </script>
+{%- endif -%}
