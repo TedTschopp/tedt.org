@@ -1,3 +1,4 @@
+        </div>
         ^ (line 1734)
 - ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
   *  1512:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
@@ -60,33 +61,33 @@
         </div>
         ^ (line 1996)
 - ./_site/putting-first-things-first/index.html
-  *  3022:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3018:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 3022)
-  *  3026:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 3018)
+  *  3022:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3026)
+    ^ (line 3022)
 - ./_site/rain-in-los-ang/index.html
-  *  2966:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2962:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2966)
+    ^ (line 2962)
 - ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
-  *  3024:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3020:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3024)
+    ^ (line 3020)
   *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
 - ./_site/sex-gardening-a/index.html
-  *  2963:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2959:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2963)
+    ^ (line 2959)
   *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
 - ./_site/shadows-and-sym/index.html
-  *  3007:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3003:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 3007)
-  *  3011:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 3003)
+  *  3007:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3011)
+    ^ (line 3007)
 - ./_site/simple-blog-generator/index.html
   *  1502:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
@@ -95,56 +96,56 @@
         </div>
         ^ (line 4812)
 - ./_site/step-1-reply-by-chat/index.html
+  *  2952:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2952)
+- ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
+  *  3029:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 3029)
+  *  3033:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 3033)
+- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
+  *  3014:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        </div>
+        ^ (line 3014)
+  *  3018:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 3018)
+  *  External link http://www.dscout.com/ara# failed: 404 No error
+- ./_site/the-google-browseros/index.html
   *  2956:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2956)
-- ./_site/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/index.html
-  *  3033:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 3033)
-  *  3037:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 3037)
-- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
-  *  3018:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-        </div>
-        ^ (line 3018)
-  *  3022:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 3022)
-  *  External link http://www.dscout.com/ara# failed: 404 No error
-- ./_site/the-google-browseros/index.html
-  *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2960)
   *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
 - ./_site/the-path-west/index.html
-  *  3000:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2996:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3000)
+    ^ (line 2996)
 - ./_site/the-purpose-of-community-protection-of-the-commons/index.html
-  *  3020:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3016:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 3020)
-  *  3024:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 3016)
+  *  3020:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3024)
+    ^ (line 3020)
 - ./_site/thoughts-on-corporate-collaboration-tools/index.html
-  *  3013:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  3009:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
         </div>
-        ^ (line 3013)
-  *  3017:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+        ^ (line 3009)
+  *  3013:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 3017)
+    ^ (line 3013)
   *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
 - ./_site/thoughts-on-nar/index.html
-  *  2954:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2950:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2954)
+    ^ (line 2950)
 - ./_site/too-many-feeds/index.html
-  *  2953:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2949:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2953)
+    ^ (line 2949)
   *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
 - ./_site/tools/prompt-library/index.html
   *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
@@ -167,17 +168,17 @@
         </div>
         ^ (line 5260)
 - ./_site/user-interfaces-in-2017-2/index.html
-  *  2966:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2966)
-- ./_site/web-services-we/index.html
   *  2962:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2962)
-- ./_site/what-should-google-buy/index.html
-  *  2963:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+- ./_site/web-services-we/index.html
+  *  2958:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2963)
+    ^ (line 2958)
+- ./_site/what-should-google-buy/index.html
+  *  2959:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2959)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -191,10 +192,9 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3859)
+  *  linking to internal hash # that does not exist (line 3855)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2027 failures!
+HTML-Proofer found 2026 failures!
