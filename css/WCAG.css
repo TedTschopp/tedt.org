@@ -10,7 +10,7 @@
   --glow-spread: 0.6em;
   --glow-blur: 0.6em;
   position: relative;
-  display: inline;
+  display: inline-block; /* changed from inline per request to allow padding/height respect */
   color: var(--text);
   z-index: 0;
   isolation: isolate;
