@@ -1,0 +1,311 @@
+{
+  "author": {
+    "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+    "name": "Ted Tschopp",
+    "url": "https://tedt.org/"
+  },
+  "description": "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution.",
+  "expired": false,
+  "favicon": "https://tedt.org/favicon.ico",
+  "feed_url": "https://tedt.org/feed-mastodon.json",
+  "home_page_url": "https://tedt.org/",
+  "icon": "https://tedt.org/img/apple-touch-icon-144x144.webp",
+  "items": [
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART user stories or system requirements. It also bakes in rigorous acceptance criteria plus fit‑for‑purpos… https://tedt.org/prompts/business-case-and-requirements-assistant/",
+      "id": "/prompts/business-case-and-requirements-assistant/",
+      "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.png",
+      "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
+      "tags": [
+        "Agile",
+        "Product Management",
+        "Requirements Engineering",
+        "Backlog Refinement",
+        "User Stories",
+        "Acceptance Criteria",
+        "Verification & Validation",
+        "MBSE"
+      ],
+      "title": "Business Case and Requirements Assistant",
+      "url": "https://tedt.org/prompts/business-case-and-requirements-assistant/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike. https://tedt.org/The-Mentor-In-The-Machine/",
+      "id": "/The-Mentor-In-The-Machine/",
+      "image": "https://tedt.org/img/AI/Night-Routine.webp",
+      "summary": "From boardrooms to midnight utility repairs, ChatGPT 5 steps in like a seasoned mentor—offering reasoning, long‑context recall, multimodal insight, and honest answers that elevate decision‑making and field safety alike.",
+      "tags": [
+        "ChatGPT5",
+        "GPT-5",
+        "AI",
+        "Utilities",
+        "Field Service",
+        "Knowledge Management",
+        "Enterprise",
+        "Productivity"
+      ],
+      "title": "The Mentor in the Machine",
+      "url": "https://tedt.org/The-Mentor-In-The-Machine/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers. https://tedt.org/OpenAIs-GPT-OSS-Explained/",
+      "id": "/OpenAIs-GPT-OSS-Explained/",
+      "image": "https://tedt.org/img/AI/OSS.webp",
+      "summary": "OpenAI’s open-weight GPT-OSS 20B & 120B models make serious on-prem reasoning and agent workflows practical for utilities—while reopening debates on safety, risk, and fast-followers.",
+      "tags": [
+        "openai",
+        "gpt-oss",
+        "open-weight",
+        "mixture-of-experts",
+        "reasoning",
+        "chain-of-thought",
+        "utilities",
+        "on-prem",
+        "safety",
+        "preparedness-framework",
+        "agentic-tool-use"
+      ],
+      "title": "Practical On-Prem AI: What OpenAI’s GPT-OSS 20B & 120B Mean for Utilities",
+      "url": "https://tedt.org/OpenAIs-GPT-OSS-Explained/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep. https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/",
+      "id": "/Practical-Hexcrawl-Design-and-Procedures/",
+      "image": "https://tedt.org/img/2025-08/hex-map-seeded-frontier.webp",
+      "summary": "A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.",
+      "tags": [
+        "hexcrawl",
+        "wilderness",
+        "procedures",
+        "emergent play",
+        "mapping"
+      ],
+      "title": "Draft - Practical Hexcrawl Design and Procedures",
+      "url": "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change. https://tedt.org/Building-a-Lego-Cat/",
+      "id": "/Building-a-Lego-Cat/",
+      "image": "https://tedt.org/img/AI/Hannah-with-a-cat-no-title.webp",
+      "summary": "The integration of AI into enterprise supporting capabilities reshapes workforce roles, emphasizing distinctly human skills and proactive organizational change.",
+      "tags": [
+        "artificial intelligence",
+        "organizational change",
+        "workforce management",
+        "human skills",
+        "digital transformation",
+        "experiential learning",
+        "Joseph Fuller",
+        "Ronnie Chatterji",
+        "talent strategy",
+        "leadership development"
+      ],
+      "title": "Building a Lego Cat",
+      "url": "https://tedt.org/Building-a-Lego-Cat/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Academic-Critique-Content/",
+      "id": "/Academic-Critique-Content/",
+      "image": "https://tedt.org/img/prompts/academic-critique-template.png",
+      "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
+      "tags": [
+        "Academic Writing",
+        "Critique",
+        "Analysis",
+        "Evaluation",
+        "Research",
+        "Scholarly Writing",
+        "Peer Review",
+        "Assessment"
+      ],
+      "title": "Academic Content Critique Template",
+      "url": "https://tedt.org/Academic-Critique-Content/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailo… https://tedt.org/prompts/midjourney-v7-prompt-template/",
+      "id": "/prompts/midjourney-v7-prompt-template/",
+      "image": "https://tedt.org/img/prompts/Image-Prompt-Engineering.png",
+      "summary": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this tem…",
+      "tags": [
+        "Midjourney",
+        "Image Generation"
+      ],
+      "title": "Midjourney Version 7 Prompt Generator Template",
+      "url": "https://tedt.org/prompts/midjourney-v7-prompt-template/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. https://tedt.org/Rooted-In-Resilience/",
+      "id": "/Rooted-In-Resilience/",
+      "image": "https://tedt.org/img/AI/Rooted-in-Resilience.webp",
+      "summary": "Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally.",
+      "tags": [
+        "artificial intelligence",
+        "enterprise software",
+        "SaaS transformation",
+        "utility companies",
+        "digital transformation",
+        "Sam Altman",
+        "OpenAI",
+        "just-in-time software",
+        "business strategy",
+        "technology leadership"
+      ],
+      "title": "Rooted in Resilience",
+      "url": "https://tedt.org/Rooted-In-Resilience/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation. https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+      "id": "/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/",
+      "image": "https://tedt.org/img/AI/Learning-by-Doing.webp",
+      "summary": "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training—it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation.",
+      "tags": [
+        "artificial intelligence",
+        "learning methodology",
+        "workplace training",
+        "scouting",
+        "AI integration",
+        "human-AI partnership",
+        "professional development",
+        "adaptive learning",
+        "Father's Day",
+        "BSA Scout camp",
+        "employee training",
+        "Fortune magazine"
+      ],
+      "title": "Learning by Doing",
+      "url": "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed. https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+      "id": "/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/",
+      "image": "https://tedt.org/img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp",
+      "summary": "Mary Meeker's latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history, transforming how people work, communicate, and make decisions at unprecedented speed.",
+      "tags": [
+        "Mary Meeker",
+        "AI trends",
+        "ChatGPT adoption",
+        "workplace transformation",
+        "artificial intelligence",
+        "tech investment",
+        "employee adaptation",
+        "camping metaphor",
+        "father-son",
+        "AI agents",
+        "digital transformation",
+        "venture capital",
+        "Queen of the Internet"
+      ],
+      "title": "Riding the AI Wave",
+      "url": "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization. https://tedt.org/Details-on-the-WINs-Network/",
+      "id": "/Details-on-the-WINs-Network/",
+      "image": "https://tedt.org/img/AI/WINS-4-Quandrents.webp",
+      "summary": "Moving from broader reflections into actionable frameworks, this deep dive into the WINS (Words, Images, Numbers, Sounds) framework provides a practical method to identify where AI can have the most impact in your organization.",
+      "tags": [
+        "WINS framework",
+        "AI strategy",
+        "workflow analysis",
+        "digital transformation",
+        "AI adoption",
+        "utility industry",
+        "automation",
+        "business strategy",
+        "ROI analysis",
+        "organizational change",
+        "generative AI",
+        "process optimization",
+        "workforce planning"
+      ],
+      "title": "Details on the WINs Network",
+      "url": "https://tedt.org/Details-on-the-WINs-Network/"
+    },
+    {
+      "author": {
+        "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+        "name": "Ted Tschopp",
+        "url": "https://tedt.org/"
+      },
+      "content_text": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom. https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
+      "id": "/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/",
+      "image": "https://tedt.org/img/AI/Beyond-the-Boundries.webp",
+      "summary": "As AI effortlessly moves between modalities, dissolving the boundaries that once defined human work, we discover that the most meaningful work lies precisely where computers cannot venture—in the realm of human connection, empathy, and wisdom.",
+      "tags": [
+        "post-AI leadership",
+        "WINS framework",
+        "AI convergence",
+        "human empathy",
+        "leadership philosophy",
+        "modality boundaries",
+        "Hawaii reflection",
+        "family moments",
+        "human connection",
+        "AI transformation",
+        "enterprise AI",
+        "customer service",
+        "regulatory compliance",
+        "human values",
+        "wisdom leadership"
+      ],
+      "title": "Beyond the Boundaries: Leading in a Post-AI Era",
+      "url": "https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/"
+    }
+  ],
+  "title": "Ted Tschopp (Mastodon Lite)",
+  "version": "https://jsonfeed.org/version/1"
+}
