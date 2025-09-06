@@ -42,94 +42,90 @@
                 <main class="h-entry" role="main">
 
                     <div class="card h-100 no-padding">
-                            {% if page.image %}
-                                {% if page.image-alt %}
-                                    {% assign image_alt = page.image-alt %}
-                                {% elsif page.image-description %}
-                                    {% assign image_alt = page.image-description %}
-                                {% else %}
-                                    {% assign image_alt = page.title %}
-                                {% endif %}
+                        {% if page.image %}
+                            {% if page.image-alt %}
+                                {% assign image_alt = page.image-alt %}
+                            {% elsif page.image-description %}
+                                {% assign image_alt = page.image-description %}
+                            {% else %}
+                                {% assign image_alt = page.title %}
+                            {% endif %}
 
-                                {% if page.image-credits-title %}
-                                    {% assign image_credits_title = page.image-credits-title %}
-                                {% elsif page.image-title %}
-                                    {% assign image_credits_title = page.image-title %}
-                                {% else %}
-                                    {% assign image_credits_title = "Unknown" %}
-                                {% endif %}
+                            {% if page.image-credits-title %}
+                                {% assign image_credits_title = page.image-credits-title %}
+                            {% elsif page.image-title %}
+                                {% assign image_credits_title = page.image-title %}
+                            {% else %}
+                                {% assign image_credits_title = "Unknown" %}
+                            {% endif %}
 
-                                {% if page.image-credits-artist %}
-                                    {% assign image_credits = page.image-credits-artist %}
-                                {% elsif page.image-artist %}
-                                    {% assign image_credits = page.image-artist %}
-                                {% else %}
-                                    {% assign image_credits = "Unknown" %}
-                                {% endif %}
+                            {% if page.image-credits-artist %}
+                                {% assign image_credits = page.image-credits-artist %}
+                            {% elsif page.image-artist %}
+                                {% assign image_credits = page.image-artist %}
+                            {% else %}
+                                {% assign image_credits = "Unknown" %}
+                            {% endif %}
 
-                                {% if page.image-credits-artist-URL %}
-                                    {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
-                                {% elsif page.image-artist-URL %}
-                                    {% assign image_credits_artist_URL = page.image-artist-URL %}
-                                {% endif %}
+                            {% if page.image-credits-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
+                            {% elsif page.image-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-artist-URL %}
+                            {% endif %}
 
-                                {% if page.image contains "http" %}
-                                    {% assign image_URL = page.image %}
+                            {% if page.image contains "http" %}
+                                {% assign image_URL = page.image %}
+                            {% else %}
+                                {% assign image_URL = site.url | append: "/" | append: page.image %}
+                            {% endif %}
+                        {% else %}
+                            {% if site.featured-image %}
+                                {% if site.featured-image contains "http" %}
+                                    {% assign image_URL = site.featured-image %}
                                 {% else %}
-                                    {% assign image_URL = site.url | append: "/" | append: page.image %}
+                                    {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
                                 {% endif %}
                             {% else %}
-                                {% if site.featured-image %}
-                                    {% if site.featured-image contains "http" %}
-                                        {% assign image_URL = site.featured-image %}
-                                    {% else %}
-                                        {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
-                                    {% endif %}
-                                {% else %}
-                                    {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
-                                {% endif %}
-                                {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto.  The brushwork has rich textures, earthy palette with luminous highlights" %}
-                                {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
-                                {% assign image_credits = "Ted Tschopp" %}
-                                {% assign image_credits_artist_URL = "https://tedt.org/" %}
+                                {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
                             {% endif %}
-                            <div class="card h-100 position-relative">
-                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
-                                <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
-                                    <div class="wcag-glow aaa mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
-                                        <div class="post-hero mb-1">
-                                            <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
-                                            {% if page.subtitle %}
-                                                <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
-                                            {% endif %}
-                                        </div>
-                                        <div class="small mb-1">
-                                            {% if page.author.name %}
-                                                <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
-                                            {% else %}
-                                                <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
-                                            {% endif %}
-                                        </div>
-                                        <div class="small image-credits">
-                                            {% comment %}Ensure no space before colon after the title by placing colon immediately after </cite>{% endcomment %}
-                                            {% if image-credits-URL contains "http" %}
-                                                <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
-                                            {% else %}
-                                                <cite>{{image_credits_title}}</cite>:&nbsp;an image by
-                                            {% endif %}
-                                            {% if image-credits-artist-URL contains "http" %}
-                                                <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
-                                            {% else %}
-                                                {{image_credits}}
-                                            {% endif %}
-                                        </div>
+                            {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto.  The brushwork has rich textures, earthy palette with luminous highlights" %}
+                            {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
+                            {% assign image_credits = "Ted Tschopp" %}
+                            {% assign image_credits_artist_URL = "https://tedt.org/" %}
+                        {% endif %}
+                        <div class="card h-100 position-relative">
+                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
+                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
+                                <div class="wcag-glow aaa mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
+                                    <div class="post-hero mb-1">
+                                        <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
+                                        {% if page.subtitle %}
+                                            <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
+                                        {% endif %}
+                                    </div>
+                                    <div class="small mb-1">
+                                        {% if page.author.name %}
+                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
+                                        {% else %}
+                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="small image-credits">
+                                        {% comment %}Ensure no space before colon after the title by placing colon immediately after </cite>{% endcomment %}
+                                        {% if image-credits-URL contains "http" %}
+                                            <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
+                                        {% else %}
+                                            <cite>{{image_credits_title}}</cite>:&nbsp;an image by
+                                        {% endif %}
+                                        {% if image-credits-artist-URL contains "http" %}
+                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                        {% else %}
+                                            {{image_credits}}
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
-
-                            <!--<div class="card-header"></div>-->
-
-                            
+                        </div>
                         <div class="card-body pt-1 p-4 h-100">
 
                             {# Removed obsolete excerpt and publish/include code #}
@@ -184,9 +180,8 @@
                                 {{ final }}
                             {% endcapture %}
                             <div class="e-content" id="main_content">{{ processed_content }}</div><!-- main post content including hex include -->
-
                         </div>
-                        <!--<div class="card-footer p-4 py-3 h-100"></div>-->
+
                     </div>
 
                 </main>
@@ -256,7 +251,6 @@
                                             {% endif %}
                                         {% endfor %}                                        
                                     </div>
-                                    </div>
                                 </div>
                             {% endfor %}
                         </div>
@@ -265,11 +259,8 @@
             </div>
 
         </div>
-        <!-- /.row -->
-
         <hr>
     </div>
-    <!-- /.container -->
 
     <!-- Footer -->
     {% include layout/footer.html %}
