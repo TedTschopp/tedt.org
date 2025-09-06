@@ -38,7 +38,6 @@ categories:
 - Science
 tags: AI, OpenAI, Project Stargate, Data Center, Technology, 2025
 keywords: AI, OpenAI, Project Stargate, data center, infrastructure, technology, 2025
-draft-status: draft
 location:
   name: Bradbury, CA
 coordinates:

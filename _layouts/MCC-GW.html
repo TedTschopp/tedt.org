@@ -46,6 +46,45 @@
             <div class="col-lg-8">
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
+                    <!-- Hero Image (restored) -->
+                                        {% comment %}Robust hero image handling (supports absolute/relative, fallback) {% endcomment %}
+                                        {% assign image_URL = nil %}
+                                        {% if page.image %}
+                                            {% assign _img = page.image | strip %}
+                                            {% if _img contains '://' %}
+                                                {% assign image_URL = _img %}
+                                            {% else %}
+                                                {% assign image_URL = _img | absolute_url %}
+                                            {% endif %}
+                                            {% assign image_alt = page.image-alt | default: page.image-description | default: page.title %}
+                                            {% assign image_credits_title = page.image-credits-title | default: page.image-title %}
+                                            {% assign image_credits = page.image-credits-artist | default: page.image-artist | default: site.author.name %}
+                                            {% assign image_credits_artist_URL = page.image-credits-artist-URL | default: page.image-artist-URL | default: site.author.url %}
+                                        {% elsif site.featured-image %}
+                                            {% assign _fimg = site.featured-image | strip %}
+                                            {% if _fimg contains '://' %}
+                                                {% assign image_URL = _fimg %}
+                                            {% else %}
+                                                {% assign image_URL = _fimg | absolute_url %}
+                                            {% endif %}
+                                            {% assign image_alt = page.title | default: site.title %}
+                                            {% assign image_credits_title = site.title %}
+                                            {% assign image_credits = site.author.name %}
+                                            {% assign image_credits_artist_URL = site.author.url %}
+                                        {% else %}
+                                            {% assign image_URL = '/img/No-Image-Provided.png' | absolute_url %}
+                                            {% assign image_alt = page.title | default: 'No image provided' %}
+                                            {% assign image_credits_title = 'No Image Provided' %}
+                                            {% assign image_credits = site.author.name %}
+                                            {% assign image_credits_artist_URL = site.author.url %}
+                                        {% endif %}
+                                        <figure class="mb-3 position-relative">
+                                            <img class="img-fluid w-100" src="{{ image_URL }}" alt="{{ image_alt | escape }}" loading="eager">
+                                            <figcaption class="small text-muted mt-1">
+                                                {% if image_credits_title %}<cite>{{ image_credits_title }}</cite>{% if image_credits %}: {% endif %}{% endif %}
+                                                {% if image_credits %}{% if image_credits_artist_URL %}<a target="_new" href="{{ image_credits_artist_URL }}">{{ image_credits }}</a>{% else %}{{ image_credits }}{% endif %}{% endif %}
+                                            </figcaption>
+                                        </figure>
                     <!-- Title -->
                                         {% assign __primary_category = page.categories | first %}
                                         {% if __primary_category %}
@@ -74,7 +113,7 @@
 
                     <img class="webmention-svg" height="1em" src="{{ site.url }}/img/webmention-logo.svg" alt="Webmention logo">&nbsp;<a href="{{ page.url }}#webmention_thread">&nbsp;Webmentions</a></br>
 
-                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Categories:
                     {% assign categories = page.categories %}
                     {% for category in categories %}<span class="p-category">
                         {% capture thiscategory %}{{ category | strip }}{% endcapture %}
@@ -87,132 +126,7 @@
                         {% else %}
                             {{thiscategory}}, 
                         {% endif %}
-                        {% if thiscategory == "draft" or thiscategory == "Draft" %}
-                            {% assign this_is_a_draft = true %}
-                        {% endif %}</span>
-                    {% endfor %}</br>
-
-                    <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
-
-                    <hr>
-
-                    <!-- <p class="lead">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p> -->
-
-                    <!-- Preview Image -->
-                    <!--
-                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
-                        and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
-
-                        -->
-
-                    {% if page.image %}
-                    <figure>
-                    <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ page.image }}" alt="{{page.image-alt}} by {{page.image_credits}}">
-                      <figcaption>
-                        {% if page.image-credits-URL or page.image-credits-title %}
-                            <a target="_new" href="{{page.image-credits-URL}}">"{{page.image-credits-title}}" by {{page.image-credits-artist}}</a>
-                        {% elsif page.image-credits %}
-                          {{page.image-alt}} by {{page.image_credits}}
-                        {% else %}
-                            Unknown
-                        {% endif %}
-                      </figcaption>
-                    </figure>
-                    {% endif %}
-
-                    <hr>
-
-                    <!-- In the event of a draft include a progress bar -->
-                    {% assign draftstatus = page.draft-status %}
-                    {% if this_is_a_draft == true %}
-                        <aside class="well">
-                            {% if draftstatus == "notes" or draftstatus == "" %}
-                                <strong>Notes:</strong>
-                                <p>This project is a collection of notes, links, and ideas that need to be brought together in one unit so it can be read and digested as one complete section of a larger work.</p>
-                            {% elsif draftstatus == "unit" %}
-                                <strong>Unit Testing:</strong>
-                                <p>This project is a unit that can stand on it's own, but it needs more context within a larger set of work.</p>
-                            {% elsif draftstatus == "integration" %}
-                                <strong>Integration Testing:</strong>
-                                <p>This project is a being edited to bring it into a larger work.  It could also being made generic so as to be used in multiple places.</p>
-                            {% elsif draftstatus == "component" %}
-                                <strong>Component Testing:</strong>
-                                <p>This project is now a complete component ready for the larger work.  At this point, it can be published as a complete </p>
-                            {% elsif draftstatus == "system" %}
-                                <strong>System Testing:</strong>
-                                <p>This project is a complete system, article, paper, or work.  It has yet to be shared with others to gain their feedback </p>
-                            {% elsif draftstatus == "alpha" %}
-                                <strong>Alpha Testing:</strong>
-                                <p>This project is complete and it has had feedback from colleagues, friends, and friendly audiences.</p>
-                            {% elsif draftstatus == "beta" %}
-                                <strong>Beta Testing:</strong>
-                                <p>This project is complete and it has had feedback from the public. </p>
-                            {% elsif draftstatus == "pre-release" %}
-                                <strong>Pre-Release:</strong>
-                                <p>This project is complete and ready for publishing or selling, and it is considered to be complete.</p>
-                            {% endif %}
-                            <ul class="progress-clear list-unstyled d-flex flex-wrap" aria-label="Draft progress stages" role="list">
-                                <li class="progress-bar-clear"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "notes" or draftstatus == "" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Notes stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "unit" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Unit stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "integration" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Integration stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "component" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Component stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "system" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">System stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "alpha" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Alpha stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "beta" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Beta stage</span>
-                                    {% endif %}
-                                </li>
-                                <li class="progress-bar-clear"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">
-                                    {% if draftstatus == "pre-release" %}
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="visually-hidden">Pre-release stage</span>
-                                    {% endif %}
-                                </li>
-                            </ul>
-                            <ul class="progress list-unstyled d-flex flex-wrap" aria-label="Draft stage labels" role="list">
-                                <li class="progress-bar notes"{% if draftstatus == "notes" or draftstatus == "" %} aria-current="step"{% endif %} style="width:12.5%">Notes</li>
-                                <li class="progress-bar unit"{% if draftstatus == "unit" %} aria-current="step"{% endif %} style="width:12.5%">Unit</li>
-                                <li class="progress-bar integration"{% if draftstatus == "integration" %} aria-current="step"{% endif %} style="width:12.5%">Int.</li>
-                                <li class="progress-bar component"{% if draftstatus == "component" %} aria-current="step"{% endif %} style="width:12.5%">Comp.</li>
-                                <li class="progress-bar system"{% if draftstatus == "system" %} aria-current="step"{% endif %} style="width:12.5%">System</li>
-                                <li class="progress-bar alpha"{% if draftstatus == "alpha" %} aria-current="step"{% endif %} style="width:12.5%">Alpha</li>
-                                <li class="progress-bar beta"{% if draftstatus == "beta" %} aria-current="step"{% endif %} style="width:12.5%">Beta</li>
-                                <li class="progress-bar prerelease"{% if draftstatus == "pre-release" %} aria-current="step"{% endif %} style="width:12.5%">Pre.</li>
-                            </ul>
-                        </aside>
-                        {% endif %}
+                        {# removed legacy draft category handling #}
 
 
 
@@ -264,7 +178,8 @@
                                 <div class="col-lg-12">
                                     <ul class="list-unstyled">{%- for post in site.categories[category] limit:5 -%}
                                         <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-                                    {%- endfor -%}</ul>
+{%- endfor -%}
+                                    </ul>
                                 </div>
                             </div>
                         {% endfor %}

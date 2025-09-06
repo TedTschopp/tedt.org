@@ -36,7 +36,6 @@ categories:
 - Science
 tags: AI, Utilities, IT, Leadership, Technology, 2024
 keywords: AI, utilities, electric utility, IT, technology, leadership, 2024
-draft-status: draft
 location:
   name: Bradbury, CA
 coordinates:

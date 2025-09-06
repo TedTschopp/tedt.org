@@ -111,7 +111,6 @@
                                         {% endif %}
                                     </div>
                                     <div class="small image-credits">
-                                        {% comment %}Ensure no space before colon after the title by placing colon immediately after </cite>{% endcomment %}
                                         {% if image-credits-URL contains "http" %}
                                             <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
                                         {% else %}
@@ -127,18 +126,10 @@
                             </div>
                         </div>
                         <div class="card-body pt-1 p-4 h-100">
-
-                            {# Removed obsolete excerpt and publish/include code #}
-        
-                            <div class="d-flex align-items-center">
-                                <p class="card-text">
-                                    {# Removed legacy category listing logic (superseded) #}
-                                </p>
-                            </div>
-                            
+                           
                             <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
-                            {% include content/progress-bar.html %}
+                            {# removed draft progress bar include #}
 
                             <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end">
                                 <div class="col-12">

@@ -1,11 +1,11 @@
 layout: post
 
-title: 
+title:
 title-url:
 subtitle:
 subtitle-url:
 quote:
-excerpt: 
+excerpt:
 source:
 source-url:
 call-to-action:
@@ -19,14 +19,12 @@ author:
 
 bullets:
 
-description: 
+description:
 seo-description:
 
 categories: ( Artificial Intelligence | Bestiary| Books | Communications | Computers | Dungeon Crawl Classics | Dungeons & Dragons | ᚠᛟᛚᚲ ᛚᛟᚱᛖ | Gamma World | GURPS | Home | Maps | Middle-eartH | Mobile | Monsters | Movies | Mutant Crawl Classics | Opinion | Personal Writing | Philosophy | Projects | Prompts | Quotes | Religion | Reprint | Role Playing Games | Science | Shadowrun | The Märchen Engine )
 tags:
-keywords: 
-
-draft-status: 
+keywords:
 
 location:
     name: Bradbury, CA
@@ -34,18 +32,16 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
-image-alt: 
+image:
+image-alt:
 image-artist:
 image-artist-URL:
-image-credits: 
+image-credits:
 image-credits-URL:
-image-credits-artist: 
-image-credits-artist-URL: 
+image-credits-artist:
+image-credits-artist-URL:
 image-credits-title:
 image-description:
-image-title: 
-
-
+image-title:
 
 

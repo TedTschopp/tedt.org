@@ -33,7 +33,6 @@ categories:
 - Personal Writing
 tags: AI, Writing, Personalization, Technology
 keywords: AI, writing, personal style, technology, 2025
-draft-status: draft
 location:
   name: Bradbury, CA
 coordinates:

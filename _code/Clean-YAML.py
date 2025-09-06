@@ -5,7 +5,7 @@ import yaml
 post_directory = "_posts"
 
 # Define the list of standard YAML fields
-standard_fields = ["layout", "title", "title-url", "subtitle", "subtitle-url", "quote", "excerpt", "source", "source-url", "call-to-action", "date", "update", "author", "bullets", "description", "seo-description", "categories", "tags", "keywords", "draft-status", "location", "coordinates", "image", "image-alt", "image-author", "image-author-URL", "image-credits", "image-credits-URL", "image-credits-artist", "image-credits-artist-URL", "image-credits-title", "image-description", "image-title", "monster-or-magical-or-religious-ideas", "year-the-event-took-place", "permalink", "mathjax", "order"]
+standard_fields = ["layout", "title", "title-url", "subtitle", "subtitle-url", "quote", "excerpt", "source", "source-url", "call-to-action", "date", "update", "author", "bullets", "description", "seo-description", "categories", "tags", "keywords", "location", "coordinates", "image", "image-alt", "image-author", "image-author-URL", "image-credits", "image-credits-URL", "image-credits-artist", "image-credits-artist-URL", "image-credits-title", "image-description", "image-title", "monster-or-magical-or-religious-ideas", "year-the-event-took-place", "permalink", "mathjax", "order"]
 
 # Define the subfields for the author field
 author_subfields = ["avatar", "name", "url"]
