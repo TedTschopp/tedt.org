@@ -70,28 +70,7 @@
     <!-- Page Content -->
     <!-- Masthead -->
 
-    <header>
-      <section class="showcase position-relative">
-        <div class="container-fluid position-relative">
-          <img 
-            src="/img/categories/home.webp" 
-            id="hero-img" 
-            class="img-fluid w-100 h-100"
-            alt="Image of Ted Tschopp sitting by a lake">
-          <video 
-            id="hero-video"
-            class="img-fluid w-100 h-100 position-absolute top-0 start-0"
-            style="display: none; object-fit: cover;"
-            muted
-            loop
-            playsinline
-            preload="metadata">
-            <source src="/img/categories/home.mp4" type="video/mp4">
-          </video>
-        </div>
-      </section>
-    </header>
-
+    {% include homepage/hero-random.html %}
 
     <div class="container py-4 py-xl-5">
       <section>
@@ -128,7 +107,7 @@
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
                       <!-- Do Nothing -->
-                    {% elsif post.categories contains "Quotes" or post.category == "Quotes" or post.category == "quote" or post.category == "Quote" %}
+                    {% elsif post.categories contains "Quotes" or post.category == "Quote" or post.category == "quote" %}
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Home" or post.category == "Home" %}
                       <!-- Do Nothing -->

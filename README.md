@@ -220,6 +220,60 @@ Automated validations run on every push via the CI Validation workflow (badge ab
 
 Run locally with: `make qa`
 
+## Homepage Hero System & Caching
+
+The homepage hero (image/video) is selected randomly on each load using a data-driven include.
+
+### How It Works
+
+1. Data Source: `_data/homepage_heroes.yml` – each entry supplies a `base` (filename stem) and optional `alt` text.
+2. Include: `_includes/homepage/hero-random.html` – renders a lightweight placeholder banner, then JavaScript selects a random hero and swaps in the appropriate `.webp` and (where available) `.mp4` assets. Respects `prefers-reduced-motion` (skips video autoplay).
+3. Accessibility: Alt text pulled from YAML (falls back to a generic description if absent).
+4. Transition: Fade-in once assets are loaded for a smooth appearance.
+5. Caching: A service worker (`sw.js`) precaches all hero `.webp` and `.mp4` files with a cache‑first strategy for near‑instant subsequent loads.
+
+### Adding / Updating a Hero
+
+1. Export/create two assets with the same base name:
+   - `img/categories/home-hero-images/<base>.webp`
+   - `img/categories/home-hero-images/<base>.mp4` (optional if no motion variant)
+2. Add an entry to `_data/homepage_heroes.yml`:
+   ```yaml
+   - base: hero-new-example
+     alt: "Short descriptive alt text for screen readers"
+   ```
+3. Build the site. The service worker precache list is generated automatically from the YAML; no manual edit needed.
+4. Deploy. Clients will receive the updated `sw.js` (its version hash changes when the list changes) and precache the new media.
+
+### Removing a Hero
+
+1. Delete (or comment out) the entry in `_data/homepage_heroes.yml`.
+2. (Optional) Remove the corresponding media files to save repository space.
+3. Rebuild & deploy. Old caches are purged automatically because the cache name includes a content hash.
+
+### Service Worker Details
+
+- File: `sw.js` (processed by Jekyll with front matter; served at `/sw.js`).
+- Strategy: Cache-first for hero media (ideal for large but immutable decorative assets).
+- Versioning: Cache namespace includes a base64 hash of the ordered hero list – any addition/removal triggers a new cache.
+- Fallback: If the network fails during first fetch and nothing is cached yet, the request just fails normally (acceptable for non-critical decoration).
+
+### Troubleshooting
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| New hero not appearing randomly | Browser still using old SW | Hard refresh (Shift+Reload) or wait for activate lifecycle |
+| Video never plays | User has `prefers-reduced-motion` enabled | Working as designed |
+| 404 on hero media | File name mismatch with YAML `base` | Ensure filenames match exactly (case-sensitive) |
+
+### Potential Future Enhancements
+
+- Add runtime fallback poster for video-first heroes when video fetch fails.
+- Introduce stale-while-revalidate for videos (currently unnecessary due to immutability assumption).
+- Integrate Workbox if broader asset strategies are required beyond hero media.
+
+If you extend the hero system, keep logic centralized in the include and data file—avoid scattering hero knowledge across layouts.
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
