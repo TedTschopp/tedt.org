@@ -1,0 +1,28 @@
+# List of homepage hero media variants.
+# Each entry must have a `base` that corresponds to files:
+#   /img/categories/home-hero-images/<base>.webp
+#   /img/categories/home-hero-images/<base>.mp4
+# Optional: alt (override alt text). If omitted, alt is derived from base.
+# To add a new hero: add a new item here with its base name after adding the media files.
+- base: hero-data-center
+  alt: Data center servers aisle (hero image)
+- base: hero-dice
+  alt: Polyhedral RPG dice on a game table (hero image)
+- base: hero-digital-twin-power-grid
+  alt: Digital twin visualization of an electric power grid (hero image)
+- base: hero-family
+  alt: Family together on a walk (hero image)
+- base: hero-forest
+  alt: Forest trail with sunlight filtering through trees (hero image)
+- base: hero-hardware
+  alt: Circuit board and hardware components (hero image)
+- base: hero-lake
+  alt: Quiet lakeside scene (hero image)
+- base: hero-landscape
+  alt: Mountain landscape panorama (hero image)
+- base: hero-library
+  alt: Library stacks filled with books (hero image)
+- base: hero-powerlines
+  alt: Power transmission lines at sunset (hero image)
+- base: hero-village
+  alt: Scenic village view (hero image)

@@ -1,0 +1,81 @@
+{%- comment -%}
+  Random Homepage Hero Include
+  Usage: {% include homepage/hero-random.html %}
+  Data source: _data/homepage_heroes.yml
+  Adds a hero <section> plus JS to randomly select a hero image/video pair.
+{%- endcomment -%}
+
+{%- assign heroes = site.data.homepage_heroes | where_exp: 'h','h.base' -%}
+{%- if heroes and heroes.size > 0 -%}
+<header>
+  <section class="showcase position-relative">
+    <div class="container-fluid position-relative">
+      <img 
+        src="/img/categories/home.webp" 
+        id="hero-img" 
+        class="img-fluid w-100 h-100"
+        alt="Default homepage hero image">
+      <video 
+        id="hero-video"
+        class="img-fluid w-100 h-100 position-absolute top-0 start-0"
+        style="display: none; object-fit: cover;"
+        muted
+        loop
+        playsinline
+        preload="metadata">
+        <source src="/img/categories/home.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+</header>
+<script type="application/json" id="hero-variants-data">{{ heroes | jsonify }}</script>
+<script>
+(function(){
+  const heroImg = document.getElementById('hero-img');
+  const heroVideo = document.getElementById('hero-video');
+  if(!heroImg || !heroVideo) return;
+  let variantsRaw = document.getElementById('hero-variants-data');
+  if(!variantsRaw) return;
+  let HERO_VARIANTS = [];
+  try { HERO_VARIANTS = JSON.parse(variantsRaw.textContent.trim()); } catch(e){ console.warn('Hero variants JSON parse failed', e); }
+  if(!Array.isArray(HERO_VARIANTS) || !HERO_VARIANTS.length) return;
+  const HERO_FOLDER = '/img/categories/home-hero-images';
+  const chosen = HERO_VARIANTS[Math.floor(Math.random()*HERO_VARIANTS.length)];
+  const imgSrcWebp = `${HERO_FOLDER}/${chosen.base}.webp`;
+  const videoSrcMp4 = `${HERO_FOLDER}/${chosen.base}.mp4`;
+  const altText = chosen.alt || (function(file){ try { let core=file.replace(/^hero-/,'').replace(/-/g,' '); return core.charAt(0).toUpperCase()+core.slice(1)+' (hero image)'; } catch(_){ return 'Homepage hero image'; } })(chosen.base);
+  heroImg.src = imgSrcWebp;
+  heroImg.alt = altText;
+  let sourceEl = heroVideo.querySelector('source');
+  if(!sourceEl){ sourceEl=document.createElement('source'); heroVideo.appendChild(sourceEl); }
+  sourceEl.src = videoSrcMp4;
+  sourceEl.type = 'video/mp4';
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(prefersReducedMotion){ heroVideo.style.display='none'; return; }
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      heroVideo.style.display='block';
+      heroVideo.style.opacity='0';
+      heroVideo.style.position='absolute';
+      heroVideo.style.top='0'; heroVideo.style.left='0';
+      heroVideo.style.width='100%'; heroVideo.style.height='100%';
+      heroVideo.style.objectFit='cover';
+      heroVideo.load();
+      heroVideo.addEventListener('canplay', function(){
+        heroVideo.play().then(function(){
+          heroImg.style.transition='opacity 0.8s ease-in-out';
+          heroVideo.style.transition='opacity 0.8s ease-in-out';
+          setTimeout(function(){ heroImg.style.opacity='0'; heroVideo.style.opacity='1'; }, 100);
+        }).catch(function(err){ console.log('Video autoplay prevented:', err); heroVideo.style.display='none'; });
+      }, { once: true });
+      setTimeout(function(){
+        if(heroVideo.style.opacity==='0' || heroVideo.style.opacity===''){
+          console.log('Video load timeout, keeping image only');
+          heroVideo.style.display='none';
+        }
+      }, 5000);
+    }, 1500);
+  });
+})();
+</script>
+{%- endif -%}

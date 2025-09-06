@@ -59,7 +59,7 @@
         } catch(e){}
       })();
     </script>
-  </head>
+  // (Hero image/video randomization moved to include `homepage/hero-random.html`)
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
   <!-- SENTINEL: default layout active (injected for debugging) -->
   <!-- BODY TOKEN ABC 20250814 -->
@@ -418,18 +418,70 @@
     {% include assets/js-bottom-of-body.html %}
 
     <script>
-      // Hero image to video transition
+      // Random hero selection + image->video transition
       document.addEventListener('DOMContentLoaded', function() {
         const heroImg = document.getElementById('hero-img');
         const heroVideo = document.getElementById('hero-video');
-        
         if (!heroImg || !heroVideo) return;
-        
-        // Wait for page to fully load including images and other assets
+
+        // --- Random Hero Variant Selection ---
+        // List of base filenames WITHOUT extension (must have matching .webp/.mp4 in folder)
+        // To add a new hero: drop hero-<name>.webp & hero-<name>.mp4 into the folder and add 'hero-<name>' here.
+        const HERO_FOLDER = '/img/categories/home-hero-images';
+        const HERO_VARIANTS = [
+          'hero-data-center',
+          'hero-dice',
+            'hero-digital-twin-power-grid',
+          'hero-family',
+          'hero-forest',
+          'hero-hardware',
+          'hero-lake',
+          'hero-landscape',
+          'hero-library',
+          'hero-powerlines',
+          'hero-village'
+        ];
+
+        // Pick one at random each page load
+        const chosen = HERO_VARIANTS[Math.floor(Math.random() * HERO_VARIANTS.length)];
+        const imgSrcWebp = `${HERO_FOLDER}/${chosen}.webp`;
+        const videoSrcMp4 = `${HERO_FOLDER}/${chosen}.mp4`;
+
+        // Derive a simple alt text from file name if not manually curated
+        const altText = (function(file){
+          try {
+            let core = file.replace(/^hero-/, '').replace(/-/g, ' ');
+            core = core.charAt(0).toUpperCase() + core.slice(1);
+            return core + ' (hero image)';
+          } catch(_) { return 'Homepage hero image'; }
+        })(chosen);
+
+        // Swap image source ASAP (keeps original as placeholder until this runs)
+        heroImg.src = imgSrcWebp;
+        heroImg.alt = altText;
+
+        // Ensure the <source> inside the video uses the random variant
+        let sourceEl = heroVideo.querySelector('source');
+        if (!sourceEl) {
+          sourceEl = document.createElement('source');
+          heroVideo.appendChild(sourceEl);
+        }
+        sourceEl.setAttribute('src', videoSrcMp4);
+        sourceEl.setAttribute('type', 'video/mp4');
+
+        // Respect prefers-reduced-motion: skip autoplay video if user prefers less motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // --- Existing transition logic (slightly adapted) ---
+        if (prefersReducedMotion) {
+          // Don't auto-play video, keep static image
+          heroVideo.parentElement && (heroVideo.parentElement.style.position = 'relative');
+          heroVideo.style.display = 'none';
+          return; // Exit early
+        }
+
         window.addEventListener('load', function() {
-          // Add a small delay to ensure everything is settled
           setTimeout(function() {
-            // Set up the video to match the image exactly
             heroVideo.style.display = 'block';
             heroVideo.style.opacity = '0';
             heroVideo.style.position = 'absolute';
@@ -438,43 +490,32 @@
             heroVideo.style.width = '100%';
             heroVideo.style.height = '100%';
             heroVideo.style.objectFit = 'cover';
-            
-            // Preload the video
+
+            // (Re)load the newly assigned video source
             heroVideo.load();
-            
-            // When video can play, start the transition
+
             heroVideo.addEventListener('canplay', function() {
-              // Start playing the video
               heroVideo.play().then(function() {
-                // Set up smooth transition
                 heroImg.style.transition = 'opacity 0.8s ease-in-out';
                 heroVideo.style.transition = 'opacity 0.8s ease-in-out';
-                
-                // Trigger the transition after a small delay
                 setTimeout(function() {
                   heroImg.style.opacity = '0';
                   heroVideo.style.opacity = '1';
                 }, 100);
-                
-                // Optional: Remove the image from DOM after transition completes
-                // but keep it for fallback purposes
-                
               }).catch(function(error) {
                 console.log('Video autoplay prevented:', error);
-                // If autoplay fails, hide the video and keep the image
                 heroVideo.style.display = 'none';
               });
             }, { once: true });
-            
-            // Fallback: if video doesn't load within 5 seconds, hide it
+
+            // Fallback timeout
             setTimeout(function() {
               if (heroVideo.style.opacity === '0' || heroVideo.style.opacity === '') {
                 console.log('Video load timeout, keeping image only');
                 heroVideo.style.display = 'none';
               }
             }, 5000);
-            
-          }, 1500); // 1.5 second delay after page load
+          }, 1500); // existing 1.5s delay
         });
       });
 
