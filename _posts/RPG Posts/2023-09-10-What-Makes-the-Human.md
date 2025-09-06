@@ -751,7 +751,7 @@ This aspect focuses on emotional intelligence and social skills, divided into Ma
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure float-end">
-<a href="https://tedt.org/img/skills/vertical/Ranged Combat.webp"><img src="https://tedt.org/img/skills/vertical/Ranged Combat.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Ranged Combat.webp"><img src="https://tedt.org/img/skills/vertical/Ranged Combat.webp" alt="Ranged combat skill icon showing stylized ranged weapon symbolism" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">No wise man ever took a handgun to a gun fight.  Fast is fine, but accuracy is final.  -- Wyatt Earp</figcaption>
 </figure>
 </div>
@@ -832,7 +832,7 @@ Legolas's mastery of ranged combat not only makes him a formidable warrior but a
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Athletics.webp"><img src="https://tedt.org/img/skills/vertical/Athletics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Athletics.webp"><img src="https://tedt.org/img/skills/vertical/Athletics.webp" alt="Athletics skill icon representing physical training and exertion" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The road to athletic greatness is not marked by perfection but by the ability to constantly overcome adversity and failure. -- Nike</figcaption>
 </figure>
 </div>
@@ -914,7 +914,7 @@ Brienne's athletic abilities add significant depth to her character. They make h
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Melee Combat.webp"><img src="https://tedt.org/img/skills/vertical/Melee Combat.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Melee Combat.webp"><img src="https://tedt.org/img/skills/vertical/Melee Combat.webp" alt="Melee combat skill icon depicting close quarters weapon fighting" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">A sword never kills anybody; it is a tool in the killer's hand. -- Seneca</figcaption>
 </figure>
 </div>
@@ -1000,7 +1000,7 @@ Agility represents the overall flexibility and grace of movement of the being.
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Stealth.webp"><img src="https://tedt.org/img/skills/vertical/Stealth.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Stealth.webp"><img src="https://tedt.org/img/skills/vertical/Stealth.webp" alt="Stealth skill icon with shadowy figure suggesting concealment" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The trick to not being discovered until it is too late is to become part of the expected surroundings. Stealth is more the art of blending in with the background than sneaking through dark shadows.  Raymond E. Feist</figcaption>
 </figure>
 </div>
@@ -1082,7 +1082,7 @@ Edmond Dantès' skill in stealth adds a complex layer to his character. It's not
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Acrobatics.webp"><img src="https://tedt.org/img/skills/vertical/Acrobatics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Acrobatics.webp"><img src="https://tedt.org/img/skills/vertical/Acrobatics.webp" alt="Acrobatics skill icon showing agile inverted figure" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Risking your own life in order to entertain others is the height of stupidity. -- Mokokoma Mokhonoana</figcaption>
 </figure>
 </div>
@@ -1166,7 +1166,7 @@ The acrobatic skills of the Assassins in "Assassin's Creed" not only make for en
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Slight of Hand.webp"><img src="https://tedt.org/img/skills/vertical/Slight of Hand.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Slight of Hand.webp"><img src="https://tedt.org/img/skills/vertical/Slight of Hand.webp" alt="Sleight of Hand skill icon highlighting dexterous fingers" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Just never forget to be dexterous and deft. And never mix up your right foot with your left. And will you succeed? Yes! You will, indeed! (98 and 3/4 percent guaranteed.)” -- Dr. Seuss </figcaption>
 </figure>
 </div>
@@ -1251,7 +1251,7 @@ Stamina represents the overall ability that being can push themselves physically
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"><img src="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp"><img src="https://tedt.org/img/skills/vertical/Drive-Ride-Pilot.webp" alt="Drive Ride Pilot skill icon combining wheel reins and flight motif" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">On my tombstone they will carve, "IT NEVER GOT FAST ENOUGH FOR ME." -- Hunter S. Thompson</figcaption>
 </figure>
 </div>
@@ -1331,7 +1331,7 @@ Captain Marko Ramius's skill in piloting adds a layer of depth to his character,
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Ruggedness.webp"><img src="https://tedt.org/img/skills/vertical/Ruggedness.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Ruggedness.webp"><img src="https://tedt.org/img/skills/vertical/Ruggedness.webp" alt="Ruggedness skill icon symbolizing endurance and resilience" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Not all that have fallen are vanquished. -- J.R.R. Tolkien</figcaption>
 </figure>
 </div>
@@ -1414,7 +1414,7 @@ Santiago's ruggedness adds a profound layer to his character. It's not just a ph
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"><img src="https://tedt.org/img/skills/vertical/Unarmed Combat.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Unarmed Combat.webp"><img src="https://tedt.org/img/skills/vertical/Unarmed Combat.webp" alt="Unarmed combat skill icon showing defensive striking stance" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">My arms are too short to box with God. -- Johnny Cash</figcaption>
 </figure>
 </div>
