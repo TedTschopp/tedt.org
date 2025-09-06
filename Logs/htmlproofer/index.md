@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-05T23:47:30Z
+Last update: 2025-09-06T00:39:38Z
 \n## Latest Summary (tail 50 lines)\n
   *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
@@ -21,17 +21,17 @@ Last update: 2025-09-05T23:47:30Z
         </div>
         ^ (line 5260)
 - ./_site/user-interfaces-in-2017-2/index.html
-  *  2962:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2962)
+    ^ (line 2960)
 - ./_site/web-services-we/index.html
-  *  2958:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2956:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2958)
+    ^ (line 2956)
 - ./_site/what-should-google-buy/index.html
-  *  2959:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+  *  2957:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
-    ^ (line 2959)
+    ^ (line 2957)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -47,11 +47,12 @@ Last update: 2025-09-05T23:47:30Z
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3855)
+  *  linking to internal hash # that does not exist (line 3853)
      <a href="#">Terms of Use</a>
 
-HTML-Proofer found 2026 failures!
+HTML-Proofer found 2025 failures!
 \n## Available Historical Logs\n
+- 2025-09-06T00-36-23-HTML Logging.txt
 - 2025-09-05T23-44-06-HTML Logging.txt
 - 2025-09-05T23-38-02-HTML Logging.txt
 - 2025-09-05T23-27-39-HTML Logging.txt
