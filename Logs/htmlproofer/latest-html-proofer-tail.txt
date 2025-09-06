@@ -1,4 +1,3 @@
-                              <li><a class="dropdown-item" href="https://tedt.org/#director-of-technical-services-at-the-dohring-company" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Dohring.webp" alt="Company Logo for Dohring" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Director of Technical Services at The Dohring Company</a></li>
                                                                                                                                                                                                                                                                                                                                  ^ (line 653)
   *  784:255: ERROR: Tag contains multiple attributes with the same name.
                               <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
@@ -192,9 +191,10 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 1040)
+  *  linking to internal hash # that does not exist (line 1030)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
 HTML-Proofer found 35197 failures!
