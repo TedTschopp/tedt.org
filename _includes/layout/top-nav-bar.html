@@ -43,7 +43,7 @@
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
-                              <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
                             {% else %}
                               <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;">{{ this-post-title }}</a></li>
                             {% endif %}
@@ -82,7 +82,7 @@
                               <li><hr class="dropdown-divider"></li>
                             {% endif %}
                             {% if watermark != "no-watermark" %}
-                              <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
+                              <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;"> - {{ this-post-title }}</a></li>
                             {% else %}
                               <li><a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="font-size: 20px; text-decoration-thickness: 1px;">{{ this-post-title }}</a></li>
                             {% endif %}
