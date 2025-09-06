@@ -69,23 +69,64 @@
                                    Keep creature_image as a site-relative path (leading slash) so we can safely
                                    prepend site.url only where absolute URLs are required. Avoid double-prefix bugs.
                                    {%- endcomment -%}
-                                   {% assign creature_image = page.image %}
-                                   {% if creature_image == "" %}
-                                        {% assign creature_image = "/RPG/MCC-GW/images/Monster-Manual/" | append: page.creature_name_index | append: ".png" %}
-                                   {% endif %}
+                                   {%- comment -%}
+                                   Resolve creature image with existence check.
+                                   Strategy:
+                                   1. If front matter supplies page.image AND it exists in site.static_files, use it.
+                                   2. Else build candidate names from page.creature_name_index with normalization attempts:
+                                      original, downcased with spaces->-, apostrophes removed, slugified.
+                                   3. First candidate whose PNG exists under /RPG/MCC-GW/images/Monster-Manual/ is selected.
+                                   4. If none exist, creature_image becomes empty (no <img> tag rendered) to avoid 404s.
+                                   NOTE: site.static_files paths are site-root relative and begin with a single leading slash.
+                                   {%- endcomment -%}
+                                   {%- assign creature_image = '' -%}
+                                   {%- assign supplied_image = page.image | strip -%}
+                                   {%- if supplied_image != '' -%}
+                                        {%- assign supplied_match = site.static_files | where: 'path', supplied_image | first -%}
+                                        {%- if supplied_match -%}
+                                             {%- assign creature_image = supplied_image -%}
+                                        {%- endif -%}
+                                   {%- endif -%}
+                                   {%- if creature_image == '' -%}
+                                        {%- assign base_raw = page.creature_name_index | strip -%}
+                                        {%- assign cand_original = base_raw -%}
+                                        {%- assign cand_downcase = base_raw | downcase | replace: ' ', '-' | replace: "'", '' | replace: '’', '' -%}
+                                        {%- assign cand_slug = base_raw | slugify -%}
+                                        {%- assign candidate_string = cand_original | append: '||' | append: cand_downcase | append: '||' | append: cand_slug -%}
+                                        {%- assign candidate_list = candidate_string | split: '||' | uniq -%}
+                                        {%- assign found_image = '' -%}
+                                        {%- for nm in candidate_list -%}
+                                             {%- assign attempt_path = '/RPG/MCC-GW/images/Monster-Manual/' | append: nm | append: '.png' -%}
+                                             {%- assign attempt_match = site.static_files | where: 'path', attempt_path | first -%}
+                                             {%- if attempt_match -%}
+                                                  {%- assign found_image = attempt_path -%}
+                                                  {%- break -%}
+                                             {%- endif -%}
+                                        {%- endfor -%}
+                                        {%- if found_image != '' -%}
+                                             {%- assign creature_image = found_image -%}
+                                        {%- endif -%}
+                                   {%- endif -%}
 
                     <!-- Creature Image and Overview -->
                     <!-- creature_image: {{ creature_image }} -->
 
                     <section class="row mb-4" aria-label="Creature Overview">
                          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
-                              <figure class="w-100 overflow-hidden">
-                                   <img class="img-fluid rounded shadow" src="{{ creature_image }}"
-                                        id="jscii-element-image" alt="{{ page.title | default: 'Creature image' }}"
-                                        loading="lazy">
-                                   <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
-                                   <figcaption class="visually-hidden">{{ page.title | default: "Creature image" }}</figcaption>
-                              </figure>
+                                   <figure class="w-100 overflow-hidden">
+                                        {%- if creature_image != '' -%}
+                                             <img class="img-fluid rounded shadow" src="{{ creature_image }}"
+                                                  id="jscii-element-image" alt="{{ page.title | default: 'Creature image' }}"
+                                                  loading="lazy">
+                                             <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
+                                             <figcaption class="visually-hidden">{{ page.title | default: "Creature image" }}</figcaption>
+                                        {%- else -%}
+                                             <div class="ratio ratio-1x1 bg-light d-flex align-items-center justify-content-center rounded shadow border text-muted small" style="min-height:200px">
+                                                  <span>No image available for {{ page.title | default: 'creature' }}</span>
+                                             </div>
+                                             <figcaption class="visually-hidden">No image available</figcaption>
+                                        {%- endif -%}
+                                   </figure>
                               <p id="image-error-message" class="position-absolute text-danger fs-1 m-5 visually-hidden gw-image-error" aria-live="polite">
                                    <!-- Filled dynamically on error -->
                               </p>
@@ -277,6 +318,7 @@
      <script>
      document.addEventListener('DOMContentLoaded', function() {
           const imgEl = document.getElementById('jscii-element-image');
+          if (!imgEl) { return; } // No image rendered (no valid file found); abort JS image logic
           const asciiEl = document.getElementById('ascii-container-image');
           const errorMsg = document.getElementById('image-error-message');
           const relativeImagePath = "{{ creature_image }}"; // site-relative path (may start with one or more leading slashes)

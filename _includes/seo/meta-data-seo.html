@@ -30,13 +30,21 @@
 {% comment %} Compute meta description precedence: page.summary > page.seo-description > page['seo-description'] > page.description > site.description; then fallback to generated excerpt/content if still blank. {% endcomment %}
 {% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: site.description | to_s | strip %}
 {% if meta_description == '' %}
-  {% comment %} Use Jekyll's excerpt or raw content, strip HTML/whitespace, collapse spaces. {% endcomment %}
+  {% comment %}Fallback: derive from excerpt/content when explicit description absent.{% endcomment %}
   {% assign raw_excerpt = page.excerpt | default: page.content %}
-  {% assign generated_desc = raw_excerpt | strip_html | replace:'\n',' ' | replace:'  ',' ' | strip %}
-  {% comment %} Ensure we don't overshoot typical meta description length; keep original full version for OG/Twitter (300) via filters later. {% endcomment %}
-  {% assign meta_description = generated_desc %}
+  {% assign meta_description = raw_excerpt | strip_html | replace:'\n',' ' | replace:'\r',' ' %}
 {% endif %}
-<meta name="description" content="{{ meta_description | strip | truncate: 160 }}">
+{% comment %}
+  Normalize description once (collapse whitespace, limit runaway length) then reuse.
+  - meta_description_clean_160 for standard meta tag
+  - meta_description_clean_300 for OG / Twitter
+  Escaping done at point-of-use (attribute context) via | escape.
+{% endcomment %}
+{% capture _md_work %}{{ meta_description | strip_html | replace:'\n',' ' | replace:'\r',' ' | replace:'  ',' ' | replace:'  ',' ' | strip }}{% endcapture %}
+{% assign meta_description_clean = _md_work | truncate: 500 %}
+{% assign meta_description_clean_160 = meta_description_clean | truncate:160 %}
+{% assign meta_description_clean_300 = meta_description_clean | truncate:300 %}
+<meta name="description" content="{{ meta_description_clean_160 | escape }}">
 <meta name="abstract" content="{{ site.name }}">
 
   {% if page.keywords %}
@@ -72,12 +80,12 @@
 <meta property="og:site_name" content="{{ site.name }}">
 {% if full-page-url == home-page-url %}
   <meta property="og:title" content="{{ this_page_title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description | strip_html | replace:'\n',' ' | replace:'\r',' ' | replace:'  ',' ' | strip | truncate:300 | escape }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ home-page-url }}">
 {% else %}
   <meta property="og:title" content="{{ this_page_title }} - {{ site.name }}">
-  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:description" content="{{ meta_description_clean_300 | escape }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ page.url | relative_url | absolute_url }}">
 {% endif %}
@@ -90,7 +98,7 @@ Twitter Card Metadata (merged from twitter-card-metadata.html)
 Order: site, creator, title, description, image, url.
 Description precedence: page.summary > page.seo-description > page.description > site.description
 {%- endcomment -%}
-{% assign twitter_description = page.summary | default: meta_description %}
+{% assign twitter_description = page.summary | default: meta_description_clean_300 %}
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 {% if page.author and page.author.twitter %}
   <meta name="twitter:creator" content="@{{ page.author.twitter }}">
@@ -98,7 +106,7 @@ Description precedence: page.summary > page.seo-description > page.description >
   <meta name="twitter:creator" content="@{{ site.author.twitter }}">
 {% endif %}
 <meta name="twitter:title" content="{{ this_page_title }}">
-<meta name="twitter:description" content="{{ twitter_description | strip | truncate: 300 }}">
+<meta name="twitter:description" content="{{ twitter_description | strip | truncate:300 | escape }}">
 {% assign twitter_raw_img = page.image | default: site.title_image %}
 {% if twitter_raw_img %}
   {% if twitter_raw_img contains '://' %}
@@ -181,7 +189,7 @@ If it's the homepage treat as WebSite only; else add Article object.
     {
       "@type": "Article",
       "headline": {{ this_page_title | jsonify }},
-      "description": {{ meta_description | jsonify }},
+  "description": {{ meta_description_clean | jsonify }},
       "url": "{{ page.url | relative_url | absolute_url }}",
       {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
       {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
