@@ -132,57 +132,11 @@
                             
                         <div class="card-body pt-1 p-4 h-100">
 
-                            {% comment %}<p class="card-text">{{ page.excerpt | strip_html}}  {{ page.content | strip_html | truncatewords:75 }}</p>{% endcomment %}
-                            {% comment %}{% include content/publish-and-update-date-time-v2.html %}{% endcomment %}
+                            {# Removed obsolete excerpt and publish/include code #}
         
                             <div class="d-flex align-items-center">
                                 <p class="card-text">
-                                    <!--
-                                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;<a href="{{ page.url }}#Comments">Comments</a>
-                                    <img style="height: 1em;" class="img-fluid align-self-center" src="{{ site.url }}/img/webmention-logo.svg">&nbsp;<a href="{{ page.url }}#webmention_thread">Webmentions</a>
-                                    -->
-
-                                    {% comment %}
-                                    {% if page.category %}
-                                        {% assign categories = page.category %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Category:-->
-                                    {% else %}
-                                        {% assign categories = page.categories %}<i class="fa fa-th-large" aria-hidden="true"></i><!--&nbsp;Categories:-->
-                                    {% endif %}
-
-                                    {% assign should_continue = true %}
-                                    {% for category in categories %}
-                                        {% if should_continue == true %}
-                                            {% capture thiscategory %}{{ category | strip }}{% endcapture %}
-                                            {%- comment -%} Resolve canonical href via category_registry with fallback {%- endcomment -%}
-                                            {% capture __cat_slug %}{% include utility/map-category-to-registry.html key=thiscategory %}{% endcapture %}
-                                            {% assign __cat_slug = __cat_slug | strip %}
-                                            {% if __cat_slug == '' %}{% assign __cat_slug = thiscategory | slugify %}{% endif %}
-                                                {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
-                                                {% if __cat_entry and __cat_entry.category_home_page %}
-                                                    {% assign __cat_href = __cat_entry.category_home_page %}
-                                                {% else %}
-                                                    {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
-                                                {% endif %}
-
-                                            {% if forloop.length == 1 %}
-                                                <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" >{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                                {% assign should_continue = false %}
-                                            {% elsif forloop.last and forloop.length == 2 %}
-                                                and <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                                {% assign should_continue = false %}
-                                            {% elsif forloop.first and forloop.length == 2 %}
-                                                <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>
-                                            {% elsif forloop.last %}
-                                                and <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}} </a>
-                                            {% else %}
-                                                <a href="{{ site.url }}{{ __cat_href }}"><span class="text-decoration-none" ></span>{% include utility/category-emoji.html category=thiscategory %} </span>{{thiscategory}}</a>, 
-                                            {% endif %}
-                                            {% if thiscategory == "draft" or thiscategory == "Draft" %}
-                                                {% assign this_is_a_draft = true %}
-                                            {% endif %}
-                                        {% endif %}
-                                    {% endfor %}
-                                    {% endcomment%}
+                                    {# Removed legacy category listing logic (superseded) #}
                                 </p>
                             </div>
                             
@@ -198,13 +152,18 @@
                                             {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
                                             {% assign __toc_slug = __toc_slug | strip %}
                                             {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
-                                                                                        {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
-                                                                                        {% if __toc_entry and __toc_entry.category_home_page %}
-                                                                                            {% assign __toc_href = __toc_entry.category_home_page %}
-                                                                                        {% else %}
-                                                                                            {% assign __toc_href = '/category/' | append: __toc_slug | append: '/' %}
-                                                                                        {% endif %}
-                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ site.url }}{{ __toc_href }}">Table of Contents 📖</a></p>
+                                            {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
+                                            {% if __toc_entry and __toc_entry.category_home_page %}
+                                                {% assign __toc_href = __toc_entry.category_home_page %}
+                                            {% else %}
+                                                {% assign __toc_href = '#' %}
+                                            {% endif %}
+                                            {% if __toc_href == '#' or __toc_href == '' %}
+                                                {% assign __toc_final_href = '#' %}
+                                            {% else %}
+                                                {% assign __toc_final_href = site.url | append: __toc_href %}
+                                            {% endif %}
+                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents 📖</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -265,12 +224,12 @@
                                                 {% capture __card_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
                                                 {% assign __card_slug = __card_slug | strip %}
                                                 {% if __card_slug == '' %}{% assign __card_slug = category | slugify %}{% endif %}
-                                                                                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
-                                                                                                {% if __card_entry and __card_entry.category_home_page %}
-                                                                                                    {% assign __card_href = __card_entry.category_home_page %}
-                                                                                                {% else %}
-                                                                                                    {% assign __card_href = '/category/' | append: __card_slug | append: '/' %}
-                                                                                                {% endif %}
+                                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
+                                                {% if __card_entry and __card_entry.category_home_page %}
+                                                    {% assign __card_href = __card_entry.category_home_page %}
+                                                {% else %}
+                                                    {% assign __card_href = '/category/' | append: __card_slug | append: '/' %}
+                                                {% endif %}
                                                 <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.url }}{{ __card_href }}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>
                                             </div>
                                         </div>
@@ -285,11 +244,6 @@
                                             <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
                                         {% endif %}                                        
 
-                                        {% comment %}
-                                            <p class="card-text">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
-                                        {% endcomment %}
-
-
                                         {% for post in site.categories[category] limit:5 %}
                                             <p class="card-text h6 mb-0 text-decoration-none"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
                                             {% if post.teaser %}
@@ -301,10 +255,6 @@
                                             {% endif %}
                                         {% endfor %}                                        
                                     </div>
-                                    {% comment %}
-                                    <div class="card-footer p-4 py-3 h-100">
-                                    {% endcomment %}
-
                                     </div>
                                 </div>
                             {% endfor %}

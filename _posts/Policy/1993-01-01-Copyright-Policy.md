@@ -14,7 +14,7 @@ call-to-action:
 date: 1993-01-01 08:41:00+00:00
 update:
 author:
-    name: Ted Tschopp
+    name:
     avatar:
     url:
 
