@@ -11,10 +11,11 @@
   <section class="showcase position-relative">
     <div class="container-fluid position-relative">
       <img 
-        src="/img/categories/home.webp" 
         id="hero-img" 
         class="img-fluid w-100 h-100"
-        alt="Default homepage hero image">
+        alt="Homepage hero" 
+        style="opacity:0; transition: opacity 0.6s ease-in-out;"
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
       <video 
         id="hero-video"
         class="img-fluid w-100 h-100 position-absolute top-0 start-0"
@@ -44,8 +45,14 @@
   const imgSrcWebp = `${HERO_FOLDER}/${chosen.base}.webp`;
   const videoSrcMp4 = `${HERO_FOLDER}/${chosen.base}.mp4`;
   const altText = chosen.alt || (function(file){ try { let core=file.replace(/^hero-/,'').replace(/-/g,' '); return core.charAt(0).toUpperCase()+core.slice(1)+' (hero image)'; } catch(_){ return 'Homepage hero image'; } })(chosen.base);
-  heroImg.src = imgSrcWebp;
-  heroImg.alt = altText;
+  // Preload chosen hero image before swapping to avoid placeholder flash
+  const preload = new Image();
+  preload.onload = function(){
+    heroImg.alt = altText;
+    heroImg.src = preload.src;
+    requestAnimationFrame(()=> { heroImg.style.opacity='1'; });
+  };
+  preload.src = imgSrcWebp;
   let sourceEl = heroVideo.querySelector('source');
   if(!sourceEl){ sourceEl=document.createElement('source'); heroVideo.appendChild(sourceEl); }
   sourceEl.src = videoSrcMp4;
