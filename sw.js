@@ -1,3 +1,4 @@
+---
 layout: null
 permalink: /sw.js
 ---
@@ -18,7 +19,7 @@ const HERO_MEDIA = [
 ];
 
 // Generate a simple version hash from the concatenated list (small heuristic to bust cache when list changes)
-const SW_VERSION = 'v2-hero-cache-' + (function(list){
+const SW_VERSION = 'v3-hero-cache-' + (function(list){
   try { return btoa(list.join('|')).replace(/=+$/,'').slice(0,16); } catch(_){ return Date.now().toString(36);} 
 })(HERO_MEDIA);
 const HERO_CACHE = 'hero-media-cache-' + SW_VERSION;
