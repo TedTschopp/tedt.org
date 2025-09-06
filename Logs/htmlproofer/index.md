@@ -1,10 +1,11 @@
 # HTML Proofer Logs
-Last update: 2025-09-06T00:39:38Z
+Last update: 2025-09-06T20:21:30Z
 \n## Latest Summary (tail 50 lines)\n
-  *  575:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+- ./_site/tools/prompt-library/index.html
+  *  582:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
-^ (line 575)
-  *  internal image ../img/categories/prompt_library.webp does not exist (line 999)
+^ (line 582)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1006)
 - ./_site/tools/todo_hex.html
   *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
                 <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
@@ -14,24 +15,24 @@ Last update: 2025-09-06T00:39:38Z
   *  internally linking to icon.webp, which does not exist (line 10)
      <link rel="apple-touch-icon" href="icon.webp">
 - ./_site/universal-content-creator-demo/index.html
-  *  1528:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+  *  1535:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
-^ (line 1528)
-  *  5260:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+^ (line 1535)
+  *  5267:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5260)
+        ^ (line 5267)
 - ./_site/user-interfaces-in-2017-2/index.html
-  *  2960:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2960)
-- ./_site/web-services-we/index.html
-  *  2956:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
-    </div>
-    ^ (line 2956)
-- ./_site/what-should-google-buy/index.html
   *  2957:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
     </div>
     ^ (line 2957)
+- ./_site/web-services-we/index.html
+  *  2953:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2953)
+- ./_site/what-should-google-buy/index.html
+  *  2954:5: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body.
+    </div>
+    ^ (line 2954)
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -39,7 +40,6 @@ Last update: 2025-09-06T00:39:38Z
   *  External link https://indieweb.org/User:Www.tedt.org/ failed: 404 No error
   *  External link https://kit.fontawesome.com/dcb78fdf66.js failed: 403 No error
   *  External link https://ko-fi.com/tedtschopp failed: 403 No error
-  *  External link https://tedt.org/category// failed: 404 No error
   *  External link https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816 failed: response code 0 means something's wrong.
              It's possible libcurl couldn't connect to the server or perhaps the request timed out.
              Sometimes, making too many requests at once also breaks things.
@@ -47,11 +47,12 @@ Last update: 2025-09-06T00:39:38Z
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 3853)
-     <a href="#">Terms of Use</a>
+  *  linking to internal hash # that does not exist (line 1035)
+     <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 2025 failures!
+HTML-Proofer found 2022 failures!
 \n## Available Historical Logs\n
+- 2025-09-06T20-17-52-HTML Logging.txt
 - 2025-09-06T00-36-23-HTML Logging.txt
 - 2025-09-05T23-44-06-HTML Logging.txt
 - 2025-09-05T23-38-02-HTML Logging.txt
