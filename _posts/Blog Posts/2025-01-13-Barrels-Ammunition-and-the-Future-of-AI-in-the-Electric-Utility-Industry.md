@@ -2,18 +2,13 @@
 layout: post
 title: Barrels, Ammunition, & the Future of AI in the Electric Utility Industry
 title-url: null
-subtitle: How cross-functional talent and modern infrastructure will shape AI's impact
-  on utilities
+subtitle: How cross-functional talent and modern infrastructure will shape AI's impact on utilities
 subtitle-url: null
-quote: AI is poised to transform the electric utility industry—but success depends
-  on identifying and empowering 'barrels,' the individuals who can lead AI adoption,
-  drive real-time insights, and bridge operational and technical domains.
-excerpt: A practical look at how utilities and IT teams can prepare for the next wave
-  of AI, focusing on talent, data, and collaboration.
+quote: AI is poised to transform the electric utility industry—but success depends on identifying and empowering 'barrels,' the individuals who can lead AI adoption, drive real-time insights, and bridge operational and technical domains.
+excerpt: A practical look at how utilities and IT teams can prepare for the next wave of AI, focusing on talent, data, and collaboration.
 source: Original Content
 source-url: ''
-call-to-action: Learn how to prepare your team and infrastructure for the future of
-  AI in utilities.
+call-to-action: Learn how to prepare your team and infrastructure for the future of AI in utilities.
 date: 2025-01-13 00:00:00-08:00
 update: null
 author:
@@ -21,19 +16,17 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- AI can enhance grid reliability, optimize energy distribution, and accelerate renewables.
-- Success depends on empowering 'barrels'—cross-functional leaders who drive adoption.
-- Modernizing infrastructure and data strategy is essential for AI readiness.
-- IT and operations must collaborate to align AI with business goals.
-description: Explore how utilities can leverage AI by investing in cross-functional
-  talent, modern infrastructure, and collaborative strategies.
-seo-description: Discover how the future of AI in utilities depends on empowering
-  key talent, modernizing infrastructure, and fostering IT/operations collaboration.
+  - AI can enhance grid reliability, optimize energy distribution, and accelerate renewables.
+  - Success depends on empowering 'barrels'—cross-functional leaders who drive adoption.
+  - Modernizing infrastructure and data strategy is essential for AI readiness.
+  - IT and operations must collaborate to align AI with business goals.
+description: Explore how utilities can leverage AI by investing in cross-functional talent, modern infrastructure, and collaborative strategies.
+seo-description: Discover how the future of AI in utilities depends on empowering key talent, modernizing infrastructure, and fostering IT/operations collaboration.
 categories:
-- Computers
-- Artificial Intelligence
-- Opinion
-- Science
+  - Computers
+  - Artificial Intelligence
+  - Opinion
+  - Science
 tags: AI, Utilities, IT, Leadership, Technology, 2024
 keywords: AI, utilities, electric utility, IT, technology, leadership, 2024
 location:
@@ -55,17 +48,17 @@ mastodon-post-id: '115017676616763064'
 ---
 _**Bottom Line Up Front:** AI breakthroughs like OpenAI’s o1 and o3 models introduce dynamic, inference-time intelligence—redefining how compute can boost output quality. But unlocking their value depends on empowering the right people—“barrels”—who can drive AI initiatives forward. As super-capable AI becomes widely available, organizations that fail to identify and equip their key talent risk falling behind. Success won’t come from having the best tools alone—it will come from knowing how to aim them._
 
-**Executive Summary:**
+## Executive Summary
 
 Recent advancements in AI, particularly OpenAI’s o1 and o3 models, are redefining the way organizations can enhance productivity and adaptability. The “barrels and ammunition” metaphor illustrates a critical lesson: true organizational success relies on identifying and empowering key individuals (“barrels”) who can lead initiatives from concept to completion, leveraging tools (“ammunition”) like AI to achieve outcomes.
 
-**Blog Post**
+## Blog Post
 
 A decade ago, Standford University and YCombinator created a course offereed at Stanford called "How to Start a Startup." Sam Altman, who is now had of OpenAI, brought together a group of people to talk about how to run a startup. The focus of this write up is Lecture 14 - How to Operate. And specifically on an idea in there called "Barrels and Ammunition".
 
 Watch now: [Barrels and Ammunition]("https://www.youtube.com/watch?v=6fQHLK1aIBs")
 
-**The o1 Breakthru**
+### The o1 Breakthru
 
 Traditionally, LLMs improved their performance through scale during training: larger models required more resources but delivered greater accuracy by processing more information. Once trained, the accuracy of these models was fixed, and additional compute during inference only made generating answers faster, not better.
 
@@ -73,7 +66,7 @@ With "o1," there's a game-changing approach. Accuracy can improve during inferen
 
 In essence, "o1" introduces a new way of thinking about compute resources: not just as a means to support the model but as a way to actively enhance the quality of outputs. This makes inference compute more like a dynamic memory system, enabling deeper exploration and refinement. For organizations, this represents a significant opportunity to leverage compute power more strategically for higher-quality AI-driven insights.
 
-**o3 significantly outperforms o1**
+### o3 significantly outperforms o1
 
 The o3 model demonstrates significant performance improvements over o1, with the degree of outperformance directly tied to the amount of compute allocated to the task. A striking example of this is o3's exceptional results on the ARC prize, a visual puzzle test specifically designed to be straightforward for humans but challenging for LLMs:
 
@@ -101,7 +94,7 @@ However, if a given industry remains immune to AI transformation venture capital
 
 Meanwhile, traditional enterprises will struggle to integrate AI meaningfully in the near term, except in scenarios where job replacement at scale (similar to the mainframe era) is achievable. For enterprises with deep real-world differentiation, true AI adoption will likely be a long-term process. This perspective is not meant to downplay the significance of AI. Rather, as the saying goes, "the future is here, but it's not evenly distributed." Ironically, the larger and more established a company is, the less it may initially benefit from AI.
 
-**What Barrels, Ammunition, & the Future of AI in the Electric Utility Industry Means for SCE**
+### What Barrels, Ammunition, & the Future of AI in the Electric Utility Industry Means for SCE
 
 SCE faces unique challenges: managing aging infrastructure, meeting sustainability goals, and navigating regulatory complexities. AI advancements, particularly those that improve task adaptability and decision-making precision, can significantly enhance grid reliability, optimize energy distribution, and accelerate renewable energy integration.
 
@@ -113,7 +106,7 @@ However, the successful adoption of AI will depend on identifying and nurturing 
 
 Utilities that recognize and invest in their barrels will be better positioned to harness AI’s transformative potential.
 
-**What This Means for IT**
+### What This Means for IT
 
 IT organizations within the electric utility sector must evolve to support these changes. The rapid development of AI models like o1 and o3 requires:
 
@@ -124,7 +117,7 @@ IT organizations within the electric utility sector must evolve to support these
 
 By becoming strategic partners in AI adoption, IT organizations can drive meaningful outcomes and position themselves as indispensable enablers of innovation.
 
-**What I Should Do to Get Ready for This Change**
+### What I Should Do to Get Ready for This Change
 
 Here are actionable steps:
 

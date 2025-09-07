@@ -19,19 +19,17 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- Train AI to communicate in your preferred listening style.
-- Use guided self-interviews to extract tailored prompt instructions.
-- Make AI conversations more effective and meaningful.
-- Prompt engineering can personalize how AI responds to you.
-description: Learn how to identify your unique communication style and use prompt
-  engineering to make AI tools adapt to your preferences.
-seo-description: Find out how to train AI to match your communication style using
-  prompt engineering and self-interview techniques.
+  - Train AI to communicate in your preferred listening style.
+  - Use guided self-interviews to extract tailored prompt instructions.
+  - Make AI conversations more effective and meaningful.
+  - Prompt engineering can personalize how AI responds to you.
+description: Learn how to identify your unique communication style and use prompt engineering to make AI tools adapt to your preferences.
+seo-description: Find out how to train AI to match your communication style using prompt engineering and self-interview techniques.
 categories:
-- Computers
-- Artificial Intelligence
-- Opinion
-- Personal Writing
+  - Computers
+  - Artificial Intelligence
+  - Opinion
+  - Personal Writing
 tags: AI, AI, Communication, Personalization, Technology
 keywords: AI, AI, communication, personal style, technology, 2025
 location:
@@ -105,6 +103,7 @@ Here is the final output on how I like communications:
    - Use direct and straightforward language. Provide detailed and specific feedback or instructions.
    - Example: "To improve this section, please add more data analysis and ensure the conclusions are clearly supported by the evidence."
 ```
+
 As for the question I Asked:
 
 ```markdown

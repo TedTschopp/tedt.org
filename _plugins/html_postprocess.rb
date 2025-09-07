@@ -1,20 +1,16 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Post-render HTML sanitation helpers.
-# Performs two main tasks:
-# 1. Adds alt attributes to <img> tags that are missing them.
-#    - Derives a basic alt from the filename (e.g., Physical Sciences.webp -> "Physical Sciences skill icon").
-#    - For skill icons (/img/skills/vertical/NAME.webp) we append " skill icon".
-#    - Falls back to a generic "Image" if filename cannot be determined.
-# 2. Normalizes malformed absolute URLs and stray quoted entities inside href/src attributes.
-#    - Collapses duplicated host prefixes (https://tedt.org/https://tedt.org/ -> https://tedt.org/)
-#    - Collapses double slashes after the host (https://tedt.org//RPG -> https://tedt.org/RPG)
-#    - Removes leading &quot; or trailing &quot; artifacts surrounding URLs.
-#    - Fixes href attributes like href="&quot;https://example.com...&quot;".
-#
-# This is intentionally conservative (regex-based) to avoid bringing in Nokogiri
-# on older Ruby installations (< 3.1) where newer Nokogiri versions are not available.
+# Post-render HTML sanitation helpers (minimal edition).
+# We intentionally REMOVED all automatic / heuristic alt generation & mutation.
+# Many legacy passes had begun to accumulate, causing exponential duplication of
+# alt attributes ( <img ... alt=".." alt="" alt="Image" ...> ) across multi-pass builds.
+# Remaining responsibilities:
+#   * Ensure empty src replaced with data URI placeholder.
+#   * Collapse duplicate alt attributes WITHOUT inventing new text.
+#   * Normalize malformed URLs (host duplication, stray &quot; entities, double slashes).
+# NOTE: If you need smarter accessibility behavior, implement it upstream in the
+# templates / content, not via post-render regex hacks.
 
 module TedtOrg
   module HtmlPostProcess
@@ -42,20 +38,7 @@ module TedtOrg
       end
     end
 
-    def self.clean_duplicate_alts(tag)
-  alt_count = tag.scan(/\balt=/i).size
-  return tag if alt_count <= 1
-  # Collect candidate alts (prefer first non-empty, non-generic)
-  alts = tag.scan(/alt=("')(.*?)\1/i).map { |m| sanitize_alt(m[1]) }
-  chosen = alts.find { |a| a !~ /no image provided/i && !a.strip.empty? } || alts.find { |a| !a.strip.empty? } || 'Image'
-  # Remove all alt attributes entirely
-  stripped = tag.gsub(/\s*alt=("')[^>]*?\1/i,'')
-  # Tidy repeated whitespace
-  stripped.gsub!(/\s{2,}/,' ')
-  # Remove any space directly before closing > or />
-  stripped.gsub!(/\s+(\/?>)/,'\1')
-  rebuild_with_alt(stripped, chosen)
-    end
+  # (Deprecated) clean_duplicate_alts removed – superseded by collapse_duplicate_alts.
 
     def self.fix_empty_img_src(html)
       return html unless html.include?('<img')
@@ -67,50 +50,7 @@ module TedtOrg
       end
     end
 
-    def self.derive_alt(src)
-      return 'Image' unless src
-      # Extract file name
-      fname = src.split('/').last.to_s
-      base = fname.sub(/\.[a-zA-Z0-9]{1,5}$/,'')
-      base = base.gsub(/[%_]/,' ').gsub(/[-]+/,' ').strip
-      return 'Image' if base.empty?
-      if src.include?('/img/skills/vertical/')
-        # Preserve internal capitalization / spacing
-        return base + ' skill icon'
-      end
-      base
-    end
-
-    def self.add_missing_img_alts(html)
-      return html unless html.include?("<img")
-      html.gsub(IMG_TAG_REGEX) do |tag|
-        tag = clean_duplicate_alts(tag) if tag.scan(/\balt=/i).size > 1
-        if tag =~ ALT_ATTR_REGEX
-          tag = tag.sub(ALT_ATTR_REGEX) do
-            q=$1; val=$2
-            sanitized = sanitize_alt(val)
-            "alt=#{q}#{sanitized}#{q}"
-          end
-          if tag =~ /\balt=("')(?:\s*|Image)(\1)/i
-            src = (tag[SRC_ATTR_REGEX, 2] rescue nil)
-            if src && !src.empty? && src != PLACEHOLDER_DATA_URI
-              alt_text = sanitize_alt(derive_alt(src))
-              tag = tag.sub(/\balt=("')(?:\s*|Image)(\1)/i, "alt=\"#{alt_text}\"")
-            else
-              tag = tag.sub(/\balt=("')(?:\s*|Image)(\1)/i, 'alt=""')
-            end
-          end
-          next tag
-        end
-        src = (tag[SRC_ATTR_REGEX, 2] rescue nil)
-        if src == PLACEHOLDER_DATA_URI || src.nil? || src.empty?
-          rebuild_with_alt(tag, '')
-        else
-          alt_text = sanitize_alt(derive_alt(src))
-          rebuild_with_alt(tag, alt_text)
-        end
-      end
-    end
+  # Removed derive_alt & add_missing_img_alts – alt authoring lives in content now.
 
     def self.normalize_urls(html)
       # Fix duplicated host prefixes inside href/src attributes and stray &quot;
@@ -137,114 +77,46 @@ module TedtOrg
       end
     end
 
-    # Final safety pass: collapse any residual multiple alt attributes that slipped through earlier
-    def self.finalize_img_alts(html)
-      return html unless html.include?('<img')
-      removed = 0
-      result = html.gsub(IMG_TAG_REGEX) do |tag|
-        alt_matches = tag.scan(/alt=("')(.*?)\1/i)
-        # Fast path: already zero or one alt
-        if alt_matches.size <= 1
-          next tag
-        end
-        removed += (alt_matches.size - 1)
-
-        # Pick best alt: first non-empty, non-generic; else first; else empty
-        chosen = alt_matches.map { |(_, v)| sanitize_alt(v) }
-                             .find { |v| !v.strip.empty? && v !~ /no image provided/i } ||
-                 alt_matches.map { |(_, v)| sanitize_alt(v) }.find { |v| !v.strip.empty? } || ''
-
-        # Strip ALL alt= attributes (even multiline / with odd spacing)
-        stripped = tag.gsub(/\s*alt=("')[^>]*?\1/i, '')
-        stripped.gsub!(/\s{2,}/,' ')
-        stripped.gsub!(/\s+(\/?>)/,'\1')
-
-        # Ensure we don't already have an alt left from a malformed removal
-        if stripped !~ /\balt=/i
-          stripped = rebuild_with_alt(stripped, chosen)
-        end
-        stripped
-      end
-      if removed > 0
-        warn "[html_postprocess] finalize_img_alts removed #{removed} duplicate alt attributes"
-      end
-      result
-    end
-
-    # Deterministic unifier: regardless of earlier passes, ensure exactly ONE alt attribute per <img> tag.
-    # Strategy:
-    #  * Gather all existing alt values (in order).
-    #  * Pick the first non-empty alt that is not a generic 'Image'/'image'.
-    #  * Else pick the first non-empty alt.
-    #  * Else derive from filename (if any) or fallback to empty string.
-    #  * Strip ALL existing alt= attributes and re-insert a single clean alt= value near the end of the tag.
-    def self.unify_image_alts(html)
-      return html unless html.include?('<img')
-      multi_before = 0
-      processed = html.gsub(IMG_TAG_REGEX) do |tag|
-        src = (tag[SRC_ATTR_REGEX, 2] rescue nil)
-        raw_alts = tag.scan(ALT_ATTR_REGEX).map { |m| sanitize_alt(m[1]) }
-        multi_before += 1 if raw_alts.size > 1
-        chosen = raw_alts.find { |a| !a.empty? && a !~ /^image$/i }
-        chosen ||= raw_alts.find { |a| !a.empty? }
-        if (chosen.nil? || chosen.empty?)
-          if src && !src.empty? && src != PLACEHOLDER_DATA_URI
-            chosen = sanitize_alt(derive_alt(src))
-          else
-            chosen = ''
-          end
-        end
-        # Aggressively strip all alt= attributes via iterative sub to avoid edge cases
-        stripped = tag.dup
-        loop do
-          before = stripped.dup
-            # alt attribute pattern: leading optional whitespace then alt=quote...quote (quotes balanced)
-          stripped.sub!(/\s*alt=("')[^"']*?\1/i, '')
-          break if stripped == before
-        end
-        # Fallback: remove any remaining alt= (including those with embedded quotes) using broader pattern
-        stripped.gsub!(/\s*alt=("')[\s\S]*?\1/i, '') if stripped =~ /\balt=/i
-        stripped.gsub!(/\s{2,}/, ' ')
-        stripped.gsub!(/\s+(\/?>)/, '\1')
-        # Rebuild with a single alt
-        rebuild_with_alt(stripped, chosen)
-      end
-      if multi_before > 0 && processed =~ /<img[^>]*\balt=[^>]*\balt=/i
-        warn "[html_postprocess] unify_image_alts WARNING: residual multi-alt after unify (#{multi_before} candidates)"
-      elsif multi_before > 0
-        warn "[html_postprocess] unify_image_alts collapsed #{multi_before} multi-alt tags"
-      end
-      processed
-    end
+  # Removed finalize_img_alts & unify_image_alts – complex heuristics caused duplication loops.
 
     def self.process(html)
       return html unless html.is_a?(String)
-      # Forced cleanup mode bypasses marker guard entirely
-      force = ENV['HTML_POSTPROCESS_FORCE'] == '1'
-      unless force
-        # Idempotence guard: if marker present AND no evidence of duplicate alt attributes, skip.
-        # We still want to re-run if historical duplicates remain from earlier passes.
-        if html.include?('<!-- html-postprocess:ok -->')
-          has_multi_alt = html.match(/<img[^>]*\balt=[^>]*\balt=/i)
-          return html unless has_multi_alt
-        end
-      end
-      pre_count = html.scan(/<img[^>]*\balt=[^>]*\balt=/i).size
       updated = fix_empty_img_src(html)
-      # Preserve existing staged logic, then unify deterministically as final pass.
-      updated = add_missing_img_alts(updated)
-      updated = finalize_img_alts(updated)
-      mid_count = updated.scan(/<img[^>]*\balt=[^>]*\balt=/i).size
+      updated = collapse_duplicate_alts(updated)
       updated = normalize_urls(updated)
-      updated = unify_image_alts(updated)
-      post_count = updated.scan(/<img[^>]*\balt=[^>]*\balt=/i).size
-      if pre_count > 0 || mid_count > 0 || post_count > 0
-        warn "[html_postprocess] duplicate-alt counts pre=#{pre_count} mid=#{mid_count} post=#{post_count}"
-      end
-      unless updated.include?('<!-- html-postprocess:ok -->')
-        updated = updated.sub(/<\/head>/i, "<!-- html-postprocess:ok --></head>")
-      end
+      updated = updated.sub(/<\/head>/i, "<!-- html-postprocess:ok --><\/head>") unless updated.include?('<!-- html-postprocess:ok -->')
       updated
+    end
+
+    # New minimal pass: collapse duplicate alt attributes without creating new alts or deriving from filenames.
+    # Strategy:
+    #  * If 0 or 1 alt attributes, leave tag unchanged.
+    #  * If >1, keep the first non-empty, non-generic (not exactly 'image' case-insensitive) alt; else first; else empty string.
+    #  * Strip all existing alt attributes and reinsert ONLY the chosen one (unless none existed originally).
+    def self.collapse_duplicate_alts(html)
+      return html unless html.include?('<img')
+      html.gsub(IMG_TAG_REGEX) do |tag|
+        # Fast path: 0 or 1 alt present
+        alt_markers = tag.scan(/\balt=/i)
+        next tag if alt_markers.size <= 1
+
+        # Extract ALL alt values (allow newlines) using broad pattern
+        values = tag.scan(/alt=("')(.*?)\1/i).map { |m| sanitize_alt(m[1]) }
+        chosen = values.find { |v| !v.empty? && v.downcase != 'image' } || values.find { |v| !v.empty? } || ''
+
+        # Aggressively strip any alt= attribute (tolerate malformed spacing)
+        stripped = tag.dup
+        loop do
+          before = stripped.dup
+          stripped.sub!(/\s*alt=("')[^"']*?\1/i, '')
+          break if stripped == before
+        end
+        # Fallback broad removal (handles potential embedded quotes captured earlier)
+        stripped.gsub!(/\s*alt=("')[\s\S]*?\1/i, '') if stripped =~ /\balt=/i
+        stripped.gsub!(/\s{2,}/, ' ')
+        stripped.gsub!(/\s+(\/?>)/, '\1')
+        rebuild_with_alt(stripped, chosen)
+      end
     end
   end
 end
